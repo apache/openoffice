@@ -971,12 +971,14 @@ msgid  "~Delete"
 msgstr "Fshije..."
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Dokumenti \"$(DOC)\" duhet të modifikohet.\nDëshiron të ruani ndryshimet tuaja?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Dokumenti \"$(DOC)\" duhet të modifikohet.\nDëshiron të ruani ndryshimet tuaja?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1293,12 +1295,10 @@ msgid  "Line of text"
 msgstr "Vizato tekstin "
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "Ngjyrat"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
-#, fuzzy
 msgid  "Source color"
 msgstr "Ngjyra e Fontit"
 
@@ -1307,17 +1307,14 @@ msgid  "Tolerance"
 msgstr ""
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_3.FixedText.Text
-#, fuzzy
 msgid  "Replace with..."
 msgstr "Zëvendëso 1/2 ...me..."
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.CBX_TRANS.CheckBox.Text
-#, fuzzy
 msgid  "Tr~ansparency"
 msgstr "Transparencë"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.BTN_EXEC.PushButton.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "Zëvendëso"
 
@@ -1330,12 +1327,10 @@ msgid  "Color Replacer"
 msgstr ""
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK_STR_TRANSP.String.Text
-#, fuzzy
 msgid  "Transparent"
 msgstr "Transparente"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK_STR_SOURCECOLOR.String.Text
-#, fuzzy
 msgid  "Source Color"
 msgstr "Ngjyra e Fontit"
 
@@ -1395,8 +1390,9 @@ msgid  "Status of recovered documents:"
 msgstr "Shtypi të gjitha dokumentet"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
+#, fuzzy
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Emër i ri i dokumentit"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -3856,8 +3852,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Dokumenti \"$(DOC)\" duhet të modifikohet.\nDëshiron të ruani ndryshimet tuaja?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -4395,522 +4392,418 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
-#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "Krijo objekt të rrotulluar 3D"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Shto objektin(tet)"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
-#, fuzzy
 msgid  "Number of segments"
 msgstr "Numri i segmenteve"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
-#, fuzzy
 msgid  "Object depth"
 msgstr "Thellësia e objektit"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
-#, fuzzy
 msgid  "Focal length"
 msgstr "Gjatësia fokale"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
-#, fuzzy
 msgid  "Camera position"
 msgstr "Pozicioni i kamerës"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
-#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "Rrotullo 3D objektin"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
-#, fuzzy
 msgid  "Create extrusion object"
 msgstr "Krijo objekt të dalur"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
-#, fuzzy
 msgid  "Create rotation object"
 msgstr "Krijo objekt të rrotulluar"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
-#, fuzzy
 msgid  "Split 3D object"
 msgstr "Ndaj 3D objektin"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
-#, fuzzy
 msgid  "3D Attributes"
 msgstr "3D Vetitë"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "3D Efektet"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Geometry"
 msgstr "Gjeometri"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Shading"
 msgstr "Hijezimi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Illumination"
 msgstr "Ndriçimi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Textures"
 msgstr "Teksturat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Material"
 msgstr "Material "
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Update"
 msgstr "Azhuro"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Assign"
 msgstr "Cakto"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to 3D"
 msgstr "Shndërro në 3D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "Shëndrro në Objekt Listelë"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "Perspektiva Kyqyr/Ç'kyqur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
-#, fuzzy
 msgid  "Geometry"
 msgstr "Gjeometri"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
-#, fuzzy
 msgid  "R~ounded edges"
 msgstr "Skajet e rrumbullaksuara"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
-#, fuzzy
 msgid  "~Scaled depth"
 msgstr "Thellësi e shkallëzuar"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "~Rotation angle"
 msgstr "Këndi i rrotullimit"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr "shkallë"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Depth"
 msgstr "Thellësi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
-#, fuzzy
 msgid  "Segments"
 msgstr "Segmentet"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "Horizontal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "Vertikal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
-#, fuzzy
 msgid  "Normals"
 msgstr "Normalet"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Objekt-Specifik"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Flat"
 msgstr "Rrafsh"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Spherical"
 msgstr "Sferike"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Invert Normals"
 msgstr "Përmbys Normalet"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "Ndriçim i dyanshëm"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided"
 msgstr "I dyanshëm"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "Modi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
-#, fuzzy
 msgid  "Flat"
 msgstr "Rrafsh"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
-#, fuzzy
 msgid  "Phong"
 msgstr "Phong"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
-#, fuzzy
 msgid  "Gouraud"
 msgstr "Gouraud"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Hije"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "Hijezimi 3D Kyqyr/Ç'kyqur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
-#, fuzzy
 msgid  "S~urface angle"
 msgstr "Këndi i sipërfaqes"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr "shkallë"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
-#, fuzzy
 msgid  "Camera"
 msgstr "Kamera"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "Distancë"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
-#, fuzzy
 msgid  "~Focal length"
 msgstr "Gjatësia fokale"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Shading"
 msgstr "Hijezimi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "Burimi i dritës"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 1"
 msgstr "Burimi i Dritës 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 2"
 msgstr "Burimi i Dritës 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 3"
 msgstr "Burimi i Dritës 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 4"
 msgstr "Burimi i Dritës 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 5"
 msgstr "Burimi i Dritës 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 6"
 msgstr "Burimi i Dritës 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 7"
 msgstr "Burimi i Dritës 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 8"
 msgstr "Burimi i Dritës 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Dialogu i Ngjyrave"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "Drita e ambientit"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Dialogu i Ngjyrave"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "Ndriçimi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "Lloji"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Black & White"
 msgstr "Bardh e Zi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Color"
 msgstr "Ngjyra"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "Modi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Only Texture"
 msgstr "Vetëm Tekstura"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture and Shading"
 msgstr "Tekstura dhe Hijezimi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "Teksturë, Hije dhe Ngjyra"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
-#, fuzzy
 msgid  "~Projection X"
 msgstr "Projekcioni X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Objekt-Specifik"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "Paralel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Rrethor"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
-#, fuzzy
 msgid  "P~rojection Y"
 msgstr "Projeksioni Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Objekt-Specifik"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "Paralel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Rrethor"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
-#, fuzzy
 msgid  "~Filtering"
 msgstr "Filtrimi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "Filtrimi Kyçyr/Ç'kyçur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
-#, fuzzy
 msgid  "Textures"
 msgstr "Teksturat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
-#, fuzzy
 msgid  "~Favorites"
 msgstr "Të preferuar"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
-#, fuzzy
 msgid  "User-defined"
 msgstr "Definuar nga shfrytëzuesi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
-#, fuzzy
 msgid  "Metal"
 msgstr "Metal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
-#, fuzzy
 msgid  "Gold"
 msgstr "Artë"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
-#, fuzzy
 msgid  "Chrome"
 msgstr "Krom"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
-#, fuzzy
 msgid  "Plastic"
 msgstr "Plastikë"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
-#, fuzzy
 msgid  "Wood"
 msgstr "Dru"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Object color"
 msgstr "Ngjyra e Objektit"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Dialogu i Ngjyrave"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
-#, fuzzy
 msgid  "~Illumination color"
 msgstr "Ngjyra e ndriçimit"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Dialogu i Ngjyrave"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
-#, fuzzy
 msgid  "Specular"
 msgstr "Përfytyrim"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "Ngjyra"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Dialogu i Ngjyrave"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
-#, fuzzy
 msgid  "I~ntensity"
 msgstr "Intensiteti"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
-#, fuzzy
 msgid  "Material"
 msgstr "Material "
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
-#, fuzzy
 msgid  "Favorite"
 msgstr "E Preferuar"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
-#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
-#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
-#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
-#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -4919,87 +4812,70 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
-#, fuzzy
 msgid  "Delete Rows"
 msgstr "Fshij Rreshtat"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
-#, fuzzy
 msgid  "Save Record"
 msgstr "Ruaje shënimin"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "Zhbëj: Futjen e të Dhënave"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Column"
 msgstr "Shto kolonën"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "Kutia e tekstit"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "Kutia për kontrollim"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "Combo Kuti"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "Kuti e listës"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "Fusha e datës"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "Fusha e Kohës"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "Fushë numerike"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "Fusha e valutave"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "Fusha e modelit"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "Fusha e Formatuar"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Date and Time Field"
 msgstr "Fusha e datës dhe kohës"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Replace with"
 msgstr "Zëvendëso me:"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Fshije kolonën"
 
@@ -5008,355 +4884,286 @@ msgid  "~Hide Column"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
-#, fuzzy
 msgid  "~More..."
 msgstr "Më shumë..."
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~All"
 msgstr "Të gjitha"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Columns"
 msgstr "Paraqit Kolonat"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Column..."
 msgstr "Kolona..."
 
 #: source/form/fmstring.src#RID_ERR_CONTEXT_ADDFORM.String.Text
-#, fuzzy
 msgid  "Error while creating form"
 msgstr "Gabim gjatë krijimit të formularit"
 
 #: source/form/fmstring.src#RID_ERR_FIELDREQUIRED.String.Text
-#, fuzzy
 msgid  "Input required in field '#'. Please enter a value."
 msgstr "Kërkohet hyrje në fushën ‘#’. Ju lutemi shënoni një vlerë."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Hyrja tanimë ekziston.\nJu lutemi zgjedhni një emër tjetër."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
-#, fuzzy
 msgid  "Forms"
 msgstr "Formularët"
 
 #: source/form/fmstring.src#RID_STR_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No control selected"
 msgstr "Nuk është zgjedhur asnjë kontroll"
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_CONTROL.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "Vetitë:"
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_FORM.String.Text
-#, fuzzy
 msgid  "Form Properties"
 msgstr "Vetitë e fromularit"
 
 #: source/form/fmstring.src#RID_STR_FMEXPLORER.String.Text
-#, fuzzy
 msgid  "Form Navigator"
 msgstr "Orientuesi i formularit"
 
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
-#, fuzzy
 msgid  "Form"
 msgstr "Formular"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabelë"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.2.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Pyetësor"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.3.String.Text
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/form/fmstring.src#RID_STR_STDFORMNAME.String.Text
-#, fuzzy
 msgid  "Form"
 msgstr "Formular"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden Control"
 msgstr "Kontroll i Fshehur"
 
 #: source/form/fmstring.src#RID_STR_CONTROL.String.Text
-#, fuzzy
 msgid  "Control"
 msgstr "Kontrolli"
 
 #: source/form/fmstring.src#RID_STR_REC_TEXT.String.Text
-#, fuzzy
 msgid  "Record"
 msgstr "Shënim"
 
 #: source/form/fmstring.src#RID_STR_REC_FROM_TEXT.String.Text
-#, fuzzy
 msgid  "of"
 msgstr "nga"
 
 #: source/form/fmstring.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "Shto fushën:"
 
 #: source/form/fmstring.src#RID_STR_WRITEERROR.String.Text
-#, fuzzy
 msgid  "Error writing data to database"
 msgstr "Gabim gjatë shkrimit të të dhënave në bazën e të dhënave"
 
 #: source/form/fmstring.src#RID_STR_SYNTAXERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in query expression"
 msgstr "Gabim sintaksor në shprehje e pyetësorit"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORD.String.Text
-#, fuzzy
 msgid  "You intend to delete 1 record."
 msgstr "Ju tentoni të fshini 1 shënim."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORDS.String.Text
-#, fuzzy
 msgid  "# records will be deleted."
 msgstr "# shënimet do të fshihen"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Nëse klikoni Po, nuk do të jeni në gjendje ta zhbëni këtë veprim!\nA dëshironi të vazhdoni gjithsesi?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
-#, fuzzy
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
 msgstr "Zgjedhni një hyrje nga lista ose futni një tekst që i përket njërës nga pikat e listës."
 
 #: source/form/fmstring.src#RID_STR_GROUPBOX.String.Text
-#, fuzzy
 msgid  "Frame element"
 msgstr "Elementi i kornizës"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "Orientimi"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATIONBAR.String.Text
-#, fuzzy
 msgid  "Navigation bar"
 msgstr "Shiriti i orientimit"
 
 #: source/form/fmstring.src#RID_STR_COLUMN.String.Text
-#, fuzzy
 msgid  "Col"
 msgstr "Col"
 
 #: source/form/fmstring.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Set property '#'"
 msgstr "Vendos vetinë '#'"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert in container"
 msgstr "Fute në konteiner"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE.String.Text
-#, fuzzy
 msgid  "Delete #"
 msgstr "Fshije #"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE_MULTIPLE.String.Text
-#, fuzzy
 msgid  "Delete # objects"
 msgstr "Fshij # objektet"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace a container element"
 msgstr "Zëvendëso një element të konteinerit"
 
 #: source/form/fmstring.src#RID_STR_UNDO_DELETE_LOGICAL.String.Text
-#, fuzzy
 msgid  "Delete structure"
 msgstr "Fshije strukturën"
 
 #: source/form/fmstring.src#RID_STR_UNDO_MODEL_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace Control"
 msgstr "Zëvendëso Kontrollin"
 
 #: source/form/fmstring.src#RID_STR_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/form/fmstring.src#RID_STR_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "Koha"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
-#, fuzzy
 msgid  "Push Button"
 msgstr "Butoni"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
-#, fuzzy
 msgid  "Option Button"
 msgstr "Butoni opcional"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "Kutia për kontrollim"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "Fushë për emërim"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
-#, fuzzy
 msgid  "Group Box"
 msgstr "Kuti grupi"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_EDIT.String.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "Kutia e tekstit"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "Fusha e Formatuar"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_LISTBOX.String.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "Kuti e listës"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "Combo Kuti"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
-#, fuzzy
 msgid  "Image Button"
 msgstr "Butoni i fotografisë"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "Kontrolli i fotografisë"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
-#, fuzzy
 msgid  "File Selection"
 msgstr "Zgjedhja e fajllit"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "Fusha e datës"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "Fusha e Kohës"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "Fushë numerike"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "Fusha e valutave"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "Fusha e modelit"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DBGRID.String.Text
-#, fuzzy
 msgid  "Table Control "
 msgstr "Kontrolli i Tabelës"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SCROLLBAR.String.Text
-#, fuzzy
 msgid  "Scrollbar"
 msgstr "Madhësi e njëjtë e fontit"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SPINBUTTON.String.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "Buton rrotullues"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NAVBAR.String.Text
-#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Shiriti i orientimit"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "Zgjedhje e shumëfishtë"
 
 #: source/form/fmstring.src#RID_STR_NODATACONTROLS.String.Text
-#, fuzzy
 msgid  "No data-related controls in the current form!"
 msgstr "Në formularin aktual nuk ka kontrolle të lidhura për të dhëna!"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_DATE.String.Text
-#, fuzzy
 msgid  " (Date)"
 msgstr "(Data)"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_TIME.String.Text
-#, fuzzy
 msgid  " (Time)"
 msgstr "(Koha)"
 
 #: source/form/fmstring.src#RID_STR_FILTER_NAVIGATOR.String.Text
-#, fuzzy
 msgid  "Filter navigator"
 msgstr "Orientuesi i filtrit"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_FOR.String.Text
-#, fuzzy
 msgid  "Filter for"
 msgstr "Filtri për"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_OR.String.Text
-#, fuzzy
 msgid  "Or"
 msgstr "Ose"
 
 #: source/form/fmstring.src#RID_STR_NOCONTROLS_FOR_EXTERNALDISPLAY.String.Text
-#, fuzzy
 msgid  "Valid bound controls which can be used in the table view do not exist in the current form."
 msgstr "Kontrollet e vlefshme të lidhjes të cilat mund të përdoren në shqyrtim të tabelës nuk ekzistojnë në formularin aktual."
 
 #: source/form/fmstring.src#RID_STR_AUTOFIELD.String.Text
-#, fuzzy
 msgid  "<AutoField>"
 msgstr "<AutoField>"
 
@@ -5365,82 +5172,66 @@ msgid  "The content of the current form has been modified.\\nDo you want to save
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
-#, fuzzy
 msgid  "LIKE"
 msgstr "Tingëllon si (Japonisht)"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.2.String.Text
-#, fuzzy
 msgid  "NOT"
 msgstr "JO"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.3.String.Text
-#, fuzzy
 msgid  "EMPTY"
 msgstr "<bosh>"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.4.String.Text
-#, fuzzy
 msgid  "TRUE"
 msgstr "SAKTË"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.5.String.Text
-#, fuzzy
 msgid  "FALSE"
 msgstr "PASAKTË"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.6.String.Text
-#, fuzzy
 msgid  "IS"
 msgstr "Është baraz me"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.7.String.Text
-#, fuzzy
 msgid  "BETWEEN"
 msgstr "në mes"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.8.String.Text
-#, fuzzy
 msgid  "OR"
 msgstr "OSE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.9.String.Text
-#, fuzzy
 msgid  "AND"
 msgstr "DHE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.10.String.Text
-#, fuzzy
 msgid  "Average"
 msgstr "Average"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.11.String.Text
-#, fuzzy
 msgid  "Count"
 msgstr "Numëro"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.12.String.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "Maksimum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.13.String.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "Minimum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.14.String.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "Shuma"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.15.String.Text
-#, fuzzy
 msgid  "Every"
 msgstr "Çdo"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.16.String.Text
-#, fuzzy
 msgid  "Any"
 msgstr "Çfardo regjistrimi"
 
@@ -5449,7 +5240,6 @@ msgid  "Some"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.18.String.Text
-#, fuzzy
 msgid  "STDDEV_POP"
 msgstr "Pop Art"
 
@@ -5458,12 +5248,10 @@ msgid  "STDDEV_SAMP"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.20.String.Text
-#, fuzzy
 msgid  "VAR_SAMP"
 msgstr "Var (mostër)"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.21.String.Text
-#, fuzzy
 msgid  "VAR_POP"
 msgstr "Pop Art"
 
@@ -5476,32 +5264,26 @@ msgid  "Fusion"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.24.String.Text
-#, fuzzy
 msgid  "Intersection"
 msgstr "Prerje"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Gabim sintaksor ne formulimin SQL"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_VALUE_NO_LIKE.String.Text
-#, fuzzy
 msgid  "The value #1 cannot be used with LIKE."
 msgstr "Vlera #1 nuk mund të përdoret me LIKE!"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_FIELD_NO_LIKE.String.Text
-#, fuzzy
 msgid  "LIKE cannot be used with this field."
 msgstr "LIKE nuk mund të përdoret në këtë fushë."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ACCESS_DAT_NO_VALID.String.Text
-#, fuzzy
 msgid  "The value entered is not a valid date. Please enter a date in a valid format, for example, MM/DD/YY."
 msgstr "Vlera e vendosur nuk është e vlefshme. Ju lutem futni një datë në format të vlefshëm, për shembull, MM/DD/YY"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_INT_NO_VALID.String.Text
-#, fuzzy
 msgid  "The field cannot be compared with an integer."
 msgstr "Fusha nuk mund të krahasohet me një numër të plotë (integer)."
 
@@ -5522,32 +5304,26 @@ msgid  "The database already contains a query with name \"#\"."
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_COLUMN.String.Text
-#, fuzzy
 msgid  "The column \"#1\" is unknown in the table \"#2\"."
 msgstr "Kolona \"#\" është e panjohur në tabelën \"#\"!"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_REAL_NO_VALID.String.Text
-#, fuzzy
 msgid  "The field cannot be compared with a floating point number."
 msgstr "Fusha nuk mund të krahasohet me numrin me pikë lëvizëse."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_CRIT_NO_COMPARE.String.Text
-#, fuzzy
 msgid  "The entered criterion cannot be compared with this field."
 msgstr "Kriteriumi i shënuar nuk mund të krahasohet me këtë fushë."
 
 #: source/form/fmstring.src#RID_STR_DATANAVIGATOR.String.Text
-#, fuzzy
 msgid  "Data Navigator"
 msgstr "Orientuesi i të dhënave..."
 
 #: source/form/fmstring.src#RID_STR_READONLY_VIEW.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr "(vetëm lexo)"
 
 #: source/form/fmstring.src#RID_STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Fajli tanimë ekziston. Të mbishkruhet?"
 
@@ -5556,332 +5332,266 @@ msgid  "#object# label"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "E re"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_FORM.MenuItem.Text
-#, fuzzy
 msgid  "Form"
 msgstr "Formular"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_HIDDEN.MenuItem.Text
-#, fuzzy
 msgid  "Hidden Control"
 msgstr "Kontroll i Fshehur"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_CHANGECONTROLTYPE.MenuItem.Text
-#, fuzzy
 msgid  "Replace with"
 msgstr "Zëvendëso me"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "Fshije..."
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_TAB_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "Tab Order..."
 msgstr "Rendi i Tab-it..."
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "Riemëro"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies"
 msgstr "Vetitë"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_OPEN_READONLY.MenuItem.Text
-#, fuzzy
 msgid  "Open in Design Mode"
 msgstr "Hape në modin e disenjimit"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_AUTOCONTROLFOCUS.MenuItem.Text
-#, fuzzy
 msgid  "Automatic Control Focus"
 msgstr "Kontrollë Automatike e Fokusit"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Text Box"
 msgstr "Kutia e tekstit"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_BUTTON.MenuItem.Text
-#, fuzzy
 msgid  "~Button"
 msgstr "Buton"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FIXEDTEXT.MenuItem.Text
-#, fuzzy
 msgid  "La~bel field"
 msgstr "Fusha e Emërimit"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_GROUPBOX.MenuItem.Text
-#, fuzzy
 msgid  "G~roup Box"
 msgstr "Kutia e Grupit"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "L~ist Box"
 msgstr "Kutia e Listës"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "~Check Box"
 msgstr "Kutia e zgjedhjes"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_RADIOBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "~Radio Button"
 msgstr "Radio buton"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Bo~x"
 msgstr "Kombo Kuti"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGEBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "I~mage Button"
 msgstr "Butoni i fotografisë"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FILECONTROL.MenuItem.Text
-#, fuzzy
 msgid  "~File Selection"
 msgstr "Zgjedhja e Fajlit"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_DATE.MenuItem.Text
-#, fuzzy
 msgid  "~Date Field"
 msgstr "Fusha e datës"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Tim~e Field"
 msgstr "Fusha e Kohës"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NUMERIC.MenuItem.Text
-#, fuzzy
 msgid  "~Numerical Field"
 msgstr "Fusha  Numerike"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CURRENCY.MenuItem.Text
-#, fuzzy
 msgid  "C~urrency Field"
 msgstr "Fusha e Valutës"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_PATTERN.MenuItem.Text
-#, fuzzy
 msgid  "~Pattern Field"
 msgstr "Fusha e modelit"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGECONTROL.MenuItem.Text
-#, fuzzy
 msgid  "Ima~ge Control"
 msgstr "Kontrolli i fotografisë"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FORMATTED.MenuItem.Text
-#, fuzzy
 msgid  "Fo~rmatted Field"
 msgstr "Fushë e Formatuar"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SCROLLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Scroll bar"
 msgstr "Shirit rrëshqitës"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SPINBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "Buton rrotullues"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NAVIGATIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Shiriti i orientimit"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.GB_PATH.GroupBox.Text
-#, fuzzy
 msgid  "Path"
 msgstr "Shtegu"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.HelpButton.Text
-#, fuzzy
 msgid  "Select form"
 msgstr "Selekto formularin"
 
 #: source/form/fmexpl.src#RID_SVX_FMEXPLORER.DockingWindow.Text
-#, fuzzy
 msgid  "Form Navigator"
 msgstr "Orientuesi i formularit"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "Stili"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_ALIGNMENT.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "Mbështetja"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_SPACING.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "Hapësira në mes të rreshtave"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Karakter"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Fonti"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Efektet e fontit"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Pozicion"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.TabDialog.Text
-#, fuzzy
 msgid  "Paragraph"
 msgstr "Paragraf"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Kryereshtat dhe Hapësirat"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Mbështetje"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "Tipografi Aziatike"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_TABULATOR.PageItem.Text
-#, fuzzy
 msgid  "Tabs"
 msgstr "Tabet"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "Fshije..."
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "Edito"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NULL.MenuItem.Text
-#, fuzzy
 msgid  "~Is Null"
 msgstr "Është e zbraztë"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NOT_NULL.MenuItem.Text
-#, fuzzy
 msgid  "I~s not Null"
 msgstr "Nuk është e zbraztë"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "Shto "
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "Shto elementin"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "Shto atributin"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Edito"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Fshije"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
-#, fuzzy
 msgid  "~Models"
 msgstr "Modelet"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "Shto..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "Edito..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "Largo"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "Instancat"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
-#, fuzzy
 msgid  "Submissions"
 msgstr "Pranimet"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
-#, fuzzy
 msgid  "Bindings"
 msgstr "Ndërlidhjet"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
-#, fuzzy
 msgid  "~Instances"
 msgstr "Instancat"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "Shto..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "Edito..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "Largo"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Details"
 msgstr "Trego Detajet"
 
@@ -5898,7 +5608,6 @@ msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "Vertet deshironi te fshini atributin '$name$'?"
 
@@ -5915,307 +5624,246 @@ msgid  "This instance is linked with the form.\\n\\nThe changes you make to this
 msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
 msgstr "Emri '%1' nuk është valid në XML. Ju lutem shënoni tjetër emër."
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLPREFIX.ErrorBox.Message
-#, fuzzy
 msgid  "The prefix '%1' is not valid in XML. Please enter a different prefix."
 msgstr "Prefiksi '%1' nuk është valid në XML. Ju lutem shënoni prefiks tjetër."
 
 #: source/form/datanavi.src#RID_ERR_DOUBLE_MODELNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' already exists. Please enter a new name."
 msgstr "Emri '%1' tanimë ekziston.\nJu lutem shkruani një emër të ri."
 
 #: source/form/datanavi.src#RID_ERR_EMPTY_SUBMISSIONNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The submission must have a name."
 msgstr "Emri duhet tw shkruhet gjithsesi."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
-#, fuzzy
 msgid  "Item"
 msgstr "Njësia"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "Emri"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default Value"
 msgstr "Vlera standarde"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_SETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Parametrat"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
-#, fuzzy
 msgid  "~Data Type"
 msgstr "Tipi i të dhënave"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "~Required"
 msgstr "I kërkuar"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Kushti"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_RELEVANT.CheckBox.Text
-#, fuzzy
 msgid  "R~elevant"
 msgstr "Relevant"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Kushti"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
-#, fuzzy
 msgid  "~Constraint"
 msgstr "Kufizimet"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Kushti"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "Read-~only"
 msgstr "Vetëm lexim"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Kushti"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
-#, fuzzy
 msgid  "Calc~ulate"
 msgstr "Kalkulo"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Kushti"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
-#, fuzzy
 msgid  "Element"
 msgstr "Elementi"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Attribute"
 msgstr "Atribut"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_BINDING.String.Text
-#, fuzzy
 msgid  "Binding"
 msgstr "Ndërlidhjet"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDTEXT_BINDING.String.Text
-#, fuzzy
 msgid  "Binding expression"
 msgstr "Duke ndërlidhur shprehjen"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "Shto "
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "Shto elementin"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "Shto atributin"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Edito"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Fshije"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
-#, fuzzy
 msgid  "Add Condition"
 msgstr "Shto kushtin"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
-#, fuzzy
 msgid  "~Condition"
 msgstr "Kusht"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
-#, fuzzy
 msgid  "~Result"
 msgstr "Rezultat "
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.PB_EDIT_NAMESPACES.PushButton.Text
-#, fuzzy
 msgid  "~Edit Namespaces..."
 msgstr "Edito hapësirat e emrave"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.ModalDialog.Text
-#, fuzzy
 msgid  "Namespaces for Forms"
 msgstr "Hapësirat e emrave për formular"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.FT_NAMESPACES.FixedText.Text
-#, fuzzy
 msgid  "~Namespaces"
 msgstr "Hapësirat e emrit"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "Shto..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "Edito..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_DELETE_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "Fshije..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_PREFIX.String.Text
-#, fuzzy
 msgid  "Prefix"
 msgstr "Parashtesë"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.ModalDialog.Text
-#, fuzzy
 msgid  "Add Namespace"
 msgstr "Shto Hapësirën e emrave"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_PREFIX.FixedText.Text
-#, fuzzy
 msgid  "~Prefix"
 msgstr "Parashtesa"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Namespace"
 msgstr "Edito Hapësirën e Emrave"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
-#, fuzzy
 msgid  "Add Submission"
 msgstr "Shto paraqitjen"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
-#, fuzzy
 msgid  "Submission"
 msgstr "Pranim"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "Emri"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_ACTION.FixedText.Text
-#, fuzzy
 msgid  "~Action"
 msgstr "Veprim "
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_METHOD.FixedText.Text
-#, fuzzy
 msgid  "~Method"
 msgstr "Metodë"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REF.FixedText.Text
-#, fuzzy
 msgid  "Binding e~xpression"
 msgstr "Shprehja e ndërlidhjeve"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.PB_SUBMIT_REF.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_BIND.FixedText.Text
-#, fuzzy
 msgid  "~Binding"
 msgstr "Ndërlidhjet"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "Zëvendëso"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_POST.String.Text
-#, fuzzy
 msgid  "Post"
 msgstr "Posto"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_PUT.String.Text
-#, fuzzy
 msgid  "Put"
 msgstr "Vendos"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_GET.String.Text
-#, fuzzy
 msgid  "Get"
 msgstr "Merr"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_NONE.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Asnjë"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_INST.String.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "Instancat"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_DOC.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "Dokument"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.ModalDialog.Text
-#, fuzzy
 msgid  "Add Model"
 msgstr "Shto modelin"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FL_INSTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Model"
 msgstr "Modeli"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FT_INST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "Emri"
 
@@ -6224,403 +5872,326 @@ msgid  "Model data updates change document's modification status"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Model"
 msgstr "Riemërtoni modelin"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.ModalDialog.Text
-#, fuzzy
 msgid  "Add Instance"
 msgstr "Shto Instancën"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FL_INSTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "Instancat"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "Emri"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_URL.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.CB_INST_LINKINST.CheckBox.Text
-#, fuzzy
 msgid  "~Link instance"
 msgstr "Instanca e lidhjes"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Instance"
 msgstr "Instanca e lidhjes"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_PARENT.String.Text
-#, fuzzy
 msgid  "Submission: "
 msgstr "Paraqitja:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ID.String.Text
-#, fuzzy
 msgid  "ID: "
 msgstr "ID:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_BIND.String.Text
-#, fuzzy
 msgid  "Binding: "
 msgstr "Ndërlidhjet:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REF.String.Text
-#, fuzzy
 msgid  "Reference: "
 msgstr "Referenca:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ACTION.String.Text
-#, fuzzy
 msgid  "Action: "
 msgstr "Veprimi:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_METHOD.String.Text
-#, fuzzy
 msgid  "Method: "
 msgstr "Metoda"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace: "
 msgstr "Zëvendëso:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ELEMENT.String.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "Shto elementin"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ELEMENT.String.Text
-#, fuzzy
 msgid  "Edit Element"
 msgstr "Edito elementin"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ELEMENT.String.Text
-#, fuzzy
 msgid  "Delete Element"
 msgstr "Fshij elementin"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "Shto atributin"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Edit Attribute"
 msgstr "Edito atributin"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Delete Attribute"
 msgstr "Fshij atributin"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_BINDING.String.Text
-#, fuzzy
 msgid  "Add Binding"
 msgstr "Shto ndërlidhjen"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_BINDING.String.Text
-#, fuzzy
 msgid  "Edit Binding"
 msgstr "Edito ndërlidhjen"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_BINDING.String.Text
-#, fuzzy
 msgid  "Delete Binding"
 msgstr "Fshij ndërlidhjen"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Add Submission"
 msgstr "Shto paraqitjen"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Edit Submission"
 msgstr "Edito paraqitjen"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Delete Submission"
 msgstr "Fshij paraqitjen"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_LINKWARN_BUTTON.String.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "Edito"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
-#, fuzzy
 msgid  "Gallery"
 msgstr "Galeria"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
-#, fuzzy
 msgid  "Update"
 msgstr "Azhuro"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
-#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "Fajlli nuk mund të hapet"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
-#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "Emër i pavlefshëm i Temës!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "A dëshironi vërtetë \ntë fshini këtë objekt?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "A dëshironi vërtetë \ntë fshini këtë temë?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
-#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "Wave - Fajll Zëri"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
-#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "Audio Interchange Fajll Format"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
-#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU – Fajll i zërit"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
-#, fuzzy
 msgid  "Graphics filter"
 msgstr "Filtër i grafikave"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
-#, fuzzy
 msgid  "Length:"
 msgstr "Gjatësia:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "Madhësia:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
-#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "A dëshironi të fshini fajllin e lidhur?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Ky fajll nuk mund të hapet.\nA dëshironi të futni shteg tjetër të kërkimit?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
-#, fuzzy
 msgid  "New Theme"
 msgstr "Temë e Re"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "Organizuesi"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Ky emër i temës tanimë ekziston.\nJu lutemi zgjedhni një emër tjetër."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
-#, fuzzy
 msgid  "I~mport..."
 msgstr "Importo..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
-#, fuzzy
 msgid  "New Theme..."
 msgstr "Temë e Re..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
-#, fuzzy
 msgid  "Assign ID"
 msgstr "Cakto ID-në"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Titulli"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
-#, fuzzy
 msgid  "Path"
 msgstr "Shtegu"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
-#, fuzzy
 msgid  "Icon View"
 msgstr "Paraqitje me ikona"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
-#, fuzzy
 msgid  "Detailed View"
 msgstr "Vështrim i detajizuar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "Azhuro"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "Fshije..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "Riemëro"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
-#, fuzzy
 msgid  "Assign ~ID"
 msgstr "Cakto ID-në"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "Vetitë..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "Shto"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "Kopjo"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Link"
 msgstr "Link"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Bac~kground"
 msgstr "Sfondi"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "Shikim paraprak"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "Titulli"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "Fshije..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "Kopjo"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "Shto"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "3D Efektet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
-#, fuzzy
 msgid  "Animations"
 msgstr "Animacionet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
-#, fuzzy
 msgid  "Bullets"
 msgstr "Pikat"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
-#, fuzzy
 msgid  "Office"
 msgstr "Zyrë"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
-#, fuzzy
 msgid  "Flags"
 msgstr "Flamurët"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLOWCHARTS.String.Text
-#, fuzzy
 msgid  "Flow Charts"
 msgstr "Bllok Diagramet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
-#, fuzzy
 msgid  "Emoticons"
 msgstr "Emocionet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
-#, fuzzy
 msgid  "Pictures"
 msgstr "Fotografi"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
-#, fuzzy
 msgid  "Backgrounds"
 msgstr "Sfondet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
-#, fuzzy
 msgid  "Homepage"
 msgstr "Faqja fillestare"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
-#, fuzzy
 msgid  "Interaction"
 msgstr "Bashkëveprim"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
-#, fuzzy
 msgid  "Maps"
 msgstr "Hartat"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
-#, fuzzy
 msgid  "People"
 msgstr "Njerëz"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
-#, fuzzy
 msgid  "Surfaces"
 msgstr "Sipërfaqet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
-#, fuzzy
 msgid  "Rulers"
 msgstr "Vizoret"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
-#, fuzzy
 msgid  "Computers"
 msgstr "Kompjuterët"
 
@@ -6645,62 +6216,50 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
-#, fuzzy
 msgid  "Sounds"
 msgstr "Zërat"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
-#, fuzzy
 msgid  "Symbols"
 msgstr "Simbolet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
-#, fuzzy
 msgid  "My Theme"
 msgstr "Tema Ime"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
-#, fuzzy
 msgid  "Arrows"
 msgstr "Shigjetat"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
-#, fuzzy
 msgid  "Balloons"
 msgstr "Balonat"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
-#, fuzzy
 msgid  "Keyboard"
 msgstr "Tastiera"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "Koha"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "Prezantim"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Kalendari"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "Orientimi"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
-#, fuzzy
 msgid  "Communication"
 msgstr "Komunikimi"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
-#, fuzzy
 msgid  "Finances"
 msgstr "Financat"
 
@@ -6709,52 +6268,42 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
-#, fuzzy
 msgid  "Climate"
 msgstr "Klimë "
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
-#, fuzzy
 msgid  "School & University"
 msgstr "Shkolla dhe Universiteti"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
-#, fuzzy
 msgid  "Problem Solving"
 msgstr "Zgjdhja e problemit"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SCREENBEANS.String.Text
-#, fuzzy
 msgid  "Screen Beans"
 msgstr "Pikat e ekranit"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR) gjatë ekzekutimit të thesarit të fjalëve"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) gjatë ekzekutimit të kontrollit të drejtshkrimit"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR) gjatë ekzekutimit të hifenacionit."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) gjatë krijimit të fjalorit."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) gjatë vendosjes së atributeve të prapavisë."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) gjatë ngarkimit të grafikave."
 
@@ -6767,77 +6316,62 @@ msgid  "$(ARG1) is not supported by the spellcheck function or is not presently 
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "Kontrollimi i drejtshkrimit nuk është në dispozicion"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "Bashkangjitja me vizë nuk është në dispozicion"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "Fjalori i përshtatur $(ARG1) nuk mund të lexohet."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "Fjalori i përshtatur $(ARG1) nuk mund të krijohet."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "Grafika $(ARG1) nuk mund të gjendet."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "Një grafikë e palidhur nuk mund të ngarkohet"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "Nuk është caktuar një gjuhë për shprehjen e zgjedhur."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Layer-i i formularit nuk është ngarkuar pasi që shërbimi IO (stardiv.uno.io.*) nuk mund të ilustrohet me një shembull konkret"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Shtresa e formularit nuk është shkruar pasi që shërbimi IO (stardiv.uno.io.*) nuk mund të ilustrohet me një shembull konkret"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "Ka ndodhur një gabim gjetë leximit të kontrollave të formularit. Shtresa e formularit nuk është ngarkuar"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "Ka ndodhur një gabim gjatë shkrimit të kontrollave të formularit. Shtresa e formularit nuk është ruajtur."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
-#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "Ka ndodhur një gabim gjetë leximit të njërës nga pikat. Jo të gjitha pikat kanë mundur të ngarkohen."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "Të gjitha ndryshimet në Basic Code janë humbur. Në vend të saj është ruajtur VBA Macro Code origjinal."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "VBA Macro Code origjinal që përmban dokumenti nuk do të mund të ruhet."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "Fjalëkalimi është jokorrekt. Dokumenti nuk mund të hapet."
 
@@ -7459,7 +6993,6 @@ msgid  "Character background"
 msgstr "Prapavija e shkronjës"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
-#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "Ky veprim nuk mund të ekzekutohet. Moduli i programit %PRODUCTNAME që kërkohet për këtë veprim nuk është instaluar aktualisht."
 
@@ -7936,27 +7469,22 @@ msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactiv
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
-#, fuzzy
 msgid  "INSRT"
 msgstr "INSRT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
-#, fuzzy
 msgid  "OVER"
 msgstr "OVER"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
-#, fuzzy
 msgid  "STD"
 msgstr "STD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
-#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
-#, fuzzy
 msgid  "ADD"
 msgstr "ADD"
 
@@ -7985,572 +7513,458 @@ msgid  "Digital Signature: The document signature and the certificate are OK, bu
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
-#, fuzzy
 msgid  "Optimal"
 msgstr "Optimale"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
-#, fuzzy
 msgid  "Page Width"
 msgstr "Gjerësi e faqes"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Entire Page"
 msgstr "E gjithë faqja"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
-#, fuzzy
 msgid  "Average"
 msgstr "Average"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
-#, fuzzy
 msgid  "CountA"
 msgstr "CountA"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
-#, fuzzy
 msgid  "Count"
 msgstr "Numëro"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "Maksimum"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "Minimum"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "Shuma"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
-#, fuzzy
 msgid  "None"
 msgstr "Asnjë"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
-#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "Nënshkrim digjital..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
-#, fuzzy
 msgid  "draw object"
 msgstr "vizato objektin"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "vizato objektet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
-#, fuzzy
 msgid  "group object"
 msgstr "grupo objektin"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
-#, fuzzy
 msgid  "group objects"
 msgstr "grupo objektet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "blank group object"
 msgstr "objekt grupor bosh"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "Blank group objects"
 msgstr "objekte grupore bosh"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Rreshti"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
-#, fuzzy
 msgid  "horizontal line"
 msgstr "Vijë horizontale"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
-#, fuzzy
 msgid  "Vertical line"
 msgstr "Vijë vertikale"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
-#, fuzzy
 msgid  "diagonal line"
 msgstr "Vijë diagonale"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "Rreshtat"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
-#, fuzzy
 msgid  "Rectangle"
 msgstr "Drejtkëndësh"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
-#, fuzzy
 msgid  "Rectangles"
 msgstr "Drejtkëndëshat"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
-#, fuzzy
 msgid  "Square"
 msgstr "Katror"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
-#, fuzzy
 msgid  "Squares"
 msgstr "Katrorët"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
-#, fuzzy
 msgid  "Parallelogram"
 msgstr "Paralelogram"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
-#, fuzzy
 msgid  "Parallelograms"
 msgstr "Paralelograme"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombus"
 msgstr "Romb"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombuses"
 msgstr "Rombet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "Katërkëndësh me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "Katërkëndësha me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
-#, fuzzy
 msgid  "rounded square"
 msgstr "Katror me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
-#, fuzzy
 msgid  "Rounded Squares"
 msgstr "Katrorët me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "Paralelogram me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "Paralelograme me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
-#, fuzzy
 msgid  "rounded rhombus"
 msgstr "Rromb me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
-#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "Rrombe me kënde rrethore"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
-#, fuzzy
 msgid  "Circle"
 msgstr "Rreth "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
-#, fuzzy
 msgid  "Circles"
 msgstr "Rrathët"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
-#, fuzzy
 msgid  "Circle sector"
 msgstr "Sektor i rrethit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
-#, fuzzy
 msgid  "Circle sectors"
 msgstr "Sektore të rrethit"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "Arc"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
-#, fuzzy
 msgid  "Arcs"
 msgstr "Harqe"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "Segment i rrethit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
-#, fuzzy
 msgid  "Circle segments"
 msgstr "Segmente të rrethit"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipse"
 msgstr "Elips"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipses"
 msgstr "Elipsat"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Kulaq elipsë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "Kulaq i Elipsës"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arc"
 msgstr "Hark eliptik"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "Harqet eliptike"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "Segment i elipsës"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "Segmentet e Elipsës"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
-#, fuzzy
 msgid  "Polygon"
 msgstr "Shumëkëndësh"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
-#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "Shumëkëndësh %N kënde"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
-#, fuzzy
 msgid  "Polygons"
 msgstr "Shumëkëndësh "
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
-#, fuzzy
 msgid  "Polyline"
 msgstr "Shumëlinjësh"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
-#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "Shumëlinjësh me %N kënde"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
-#, fuzzy
 msgid  "Polylines"
 msgstr "Shumëlinjash"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier lakore"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier lakoret"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier lakore"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier lakoret"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "Linjë me formë të lirë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Linjat me formë të lirë"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "Linjë me formë të lirë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Linjat me formë të lirë"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "Hark"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "Objektet e lakores"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "Hark"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "Objektet e lakores"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Spline"
 msgstr "Vizore natyrale"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Splines"
 msgstr "Vizoret natyrale"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Spline"
 msgstr "Vizore periodike"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Splines"
 msgstr "Vizore periodike"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "Korniza e tekstit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "Korniza e tekstit"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frame"
 msgstr "Kornizë e lidhur e tekstit "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frames"
 msgstr "Kornizat e lidhura të tekstit "
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Përshtate sipas madhësisë tekst objektin "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Përshtati sipas madhësisë tekst objektet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Përshtate sipas madhësisë tekst objektin "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Përshtati sipas madhësisë tekst objektet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title text"
 msgstr "Teksti i titullit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title texts"
 msgstr "Tekstet e titullit"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Text"
 msgstr "Teksti i Konturës"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Texts"
 msgstr "Tekstet e Konturës"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
-#, fuzzy
 msgid  "graphic"
 msgstr "grafikë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
-#, fuzzy
 msgid  "graphics"
 msgstr "grafikat"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphic"
 msgstr "Grafika të lidhura"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphics"
 msgstr "Grafikat e lidhura "
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic object"
 msgstr "Objekt grafik bosh"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "Objekte grafike bosh"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "Grafikë e lidhur bosh"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "Grafika të lidhura bosh"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafile"
 msgstr "Metafajll"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafiles"
 msgstr "Metafajlle"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafile"
 msgstr "Metafajll i lidhur"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "Metafajlla të lidhur"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "Bitmap"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "Bitmap me tejdukshmëri"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "Bitmap i lidhur"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "Bitmap i lidhur me tejdukshmëri"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmaps"
 msgstr "Bitmapet"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "Bitmape me tejdukshmëri"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "Bitampe të lidhura"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "Bitmape të lidhura me tejdukshmëri"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "Trajtë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shapes"
 msgstr "Trajtat"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphic"
 msgstr "Mac grafikë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphics"
 msgstr "Mac grafikat"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "Mac grafikë e lidhur"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "Mac grafika të lidhura"
 
@@ -8563,1987 +7977,1590 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
-#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "objekt i ngjitur (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
-#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "Objekte të ngjitura (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
-#, fuzzy
 msgid  "Control"
 msgstr "Kontrolli"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
-#, fuzzy
 msgid  "Controls"
 msgstr "Kontrollet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
-#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "objekt i lidhur i ngjitur (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
-#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "Objekte të lidhura të ngjitura (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "Objekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Kornizë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
-#, fuzzy
 msgid  "Frames"
 msgstr "Kornizat"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Kornizë"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "Konektorët e objektit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "Konektorët e objektit"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
-#, fuzzy
 msgid  "Callout"
 msgstr "Thirrje"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "Thirrjet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
-#, fuzzy
 msgid  "Preview object"
 msgstr "Shikim paraprak i objektit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
-#, fuzzy
 msgid  "Preview objects"
 msgstr "Shikime paraprake të objekteve"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
-#, fuzzy
 msgid  "Dimension line"
 msgstr "Vija e dimensionit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
-#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "Dimenzionimi i objekteve"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "vizato objektet"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
-#, fuzzy
 msgid  "No draw object"
 msgstr "Asnjë objekt vizatimi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
-#, fuzzy
 msgid  "and"
 msgstr "dhe"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
-#, fuzzy
 msgid  "draw object(s)"
 msgstr "vizato objektin(tet)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
-#, fuzzy
 msgid  "3D cube"
 msgstr "3D kub"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
-#, fuzzy
 msgid  "3D cubes"
 msgstr "3D kube"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion object"
 msgstr "Objekt i dalur"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion objects"
 msgstr "Objekte të dalura"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
-#, fuzzy
 msgid  "3D text"
 msgstr "3D tekst"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
-#, fuzzy
 msgid  "3D texts"
 msgstr "3D tekste"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
-#, fuzzy
 msgid  "rotation object"
 msgstr "objekt i rrotullimit "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
-#, fuzzy
 msgid  "rotation objects"
 msgstr "objekte të rrotullimit"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
-#, fuzzy
 msgid  "3D object"
 msgstr "3D objekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
-#, fuzzy
 msgid  "3D objects"
 msgstr "3D objekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
-#, fuzzy
 msgid  "3D polygons"
 msgstr "3D shumëkëndësha"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
-#, fuzzy
 msgid  "3D scene"
 msgstr "3D skenë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
-#, fuzzy
 msgid  "3D scenes"
 msgstr "3D skena"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
-#, fuzzy
 msgid  "sphere"
 msgstr "sferë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
-#, fuzzy
 msgid  "spheres"
 msgstr "sferat"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
-#, fuzzy
 msgid  "with copy"
 msgstr "me kopje"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
-#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "Cakto pozitën dhe madhësinë për %O"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
-#, fuzzy
 msgid  "Delete %1"
 msgstr "Fshije..."
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
-#, fuzzy
 msgid  "Move %1 forward"
 msgstr "Lëviz %O përpara"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 further back"
 msgstr "Lëviz  %O mëtutje prapa"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
-#, fuzzy
 msgid  "Move %1 to front"
 msgstr "Lëviz  %O në ballë"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 to back"
 msgstr "Lëviz  %O nga prapa"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
-#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "Përmbys renditjen e %O"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "Lëvize"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "Ndryshë madhësinë"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "Rrotullo"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Rrotullo horizontalisht"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Rrokullis %O vertikalisht"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Rrokullis %O diagonalisht"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Rrokullis %O me dorë të lirë"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Shtrembëro %O (pjerrtësi)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Rregullo %O në rreth"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Lakore %O në rreth"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "Shtrembëro %O"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
-#, fuzzy
 msgid  "Undo %1"
 msgstr "Zhbëj%O"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Ndrysho bézier karakteristikat e %O"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Ndrysho bézier karakteristikat e %O"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
-#, fuzzy
 msgid  "Close %1"
 msgstr "Mbylle"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
-#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "Cakto drejtimin e daljes për %O"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
-#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "Cakto atributet relative tek %O"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
-#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "Cakto pikën e referimit për %O"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
-#, fuzzy
 msgid  "Group %1"
 msgstr "Grupi"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
-#, fuzzy
 msgid  "Ungroup %1"
 msgstr "Zhgrupo"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
-#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "Apliko atributet në %O"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
-#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "Apliko stilet  në %O"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
-#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "Largo Stilin nga %O"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "Shëndrro %O në shumëkëndësh"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "Shëndrro %O në shumëkëndësha"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
-#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "Shndërro në lakore"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
-#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "Shndërro %O në lakore"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
-#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "Shndërro në konturë"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
-#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "Shëndrro %O në kontura"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
-#, fuzzy
 msgid  "Align %1"
 msgstr "Mbështet %O"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
-#, fuzzy
 msgid  "Align %1 to top"
 msgstr "Mbështet %O nga kreu"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
-#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "Mbështet %O nga fundi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
-#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "Qendërzo horizontalisht %O"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
-#, fuzzy
 msgid  "Align %1 to left"
 msgstr "Mbështet %O nga e majta "
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
-#, fuzzy
 msgid  "Align %1 to right"
 msgstr "Mbështet %O nga e djathta"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
-#, fuzzy
 msgid  "Vertically center %1"
 msgstr "Qendërzo vertikalisht %O"
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
-#, fuzzy
 msgid  "Center %1"
 msgstr "Qendër"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
-#, fuzzy
 msgid  "Transform %1"
 msgstr "Transformo"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr "Kombino %O"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
-#, fuzzy
 msgid  "Merge %1"
 msgstr "Bashko"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
-#, fuzzy
 msgid  "Subtract %1"
 msgstr "Zbrit"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
-#, fuzzy
 msgid  "Intersect %1"
 msgstr "Pikëprerje %O"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
-#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "Shpërndaj objektet e zgjedhura"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr "Kombino %O"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "Ndaj"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "Ndaj"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "Ndaj"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Shto objektin(tet)"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
-#, fuzzy
 msgid  "Cut %1"
 msgstr "Preje"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
-#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "Lësho Clipboardin"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
-#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "Tërhiq dhe Lësho"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
-#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "Shto Tërheqjen dhe Lëshimin"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
-#, fuzzy
 msgid  "Insert point to %1"
 msgstr "Shto pikën tek %O"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
-#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "Shto pikën ngjitëse tek %O"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
-#, fuzzy
 msgid  "Move reference-point"
 msgstr "Lëviz pikën-referente"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
-#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "Ndrysho gjeometrikisht %O"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "Lëvize"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "Ndryshë madhësinë"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "Rrotullo"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Rrotullo horizontalisht"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Rrokullis %O vertikalisht"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Rrokullis %O diagonalisht"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Rrokullis %O me dorë të lirë"
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
-#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr "Gradienti bashkëveprues për %O"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
-#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr "Tejdukshmëria bashkëvepruese për %O"
 
 #: source/svdraw/svdstr.src#STR_DragMethShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Shtrembëro %O (pjerrtësi)"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Rregullo %O në rreth"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Lakore %O në rreth"
 
 #: source/svdraw/svdstr.src#STR_DragMethDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "Shtrembëro %O"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
-#, fuzzy
 msgid  "Crop %O"
 msgstr "Preje"
 
 #: source/svdraw/svdstr.src#STR_DragRectEckRad.String.Text
-#, fuzzy
 msgid  "Alter radius by %1"
 msgstr "Ndrysho rrezen me %O"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "Ndrysho %O"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "Ndryshë madhësinë"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "Lëvize"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
-#, fuzzy
 msgid  "Move end point of %1"
 msgstr "Lëviz pikën e fundit të %O"
 
 #: source/svdraw/svdstr.src#STR_DragCircAngle.String.Text
-#, fuzzy
 msgid  "Adjust angle by %1"
 msgstr "Përshtate këndin për %O"
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "Ndrysho %O"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
-#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "TextEdit: Paragrafi %a, Reshti %z, Shtylla %s"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
-#, fuzzy
 msgid  "%1 selected"
 msgstr "%O zgjedhur "
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
-#, fuzzy
 msgid  "Point from %1"
 msgstr "Pika nga %O"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
-#, fuzzy
 msgid  "%2 points from %1"
 msgstr "%N pika nga %O"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
-#, fuzzy
 msgid  "Glue point from %1"
 msgstr "Pika ngjitëse nga %O"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
-#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "%N pika ngjtëse nga %O"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
-#, fuzzy
 msgid  "Mark objects"
 msgstr "Shenjo objektet"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
-#, fuzzy
 msgid  "Mark additional objects"
 msgstr "Shenjo objektet shtesë"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
-#, fuzzy
 msgid  "Mark points"
 msgstr "Shenjo pikat"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
-#, fuzzy
 msgid  "Mark additional points"
 msgstr "Shenjo pikat shtesë"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
-#, fuzzy
 msgid  "Mark glue points"
 msgstr "Shenjo pikat ngjitëse "
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
-#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "Shenjo pikat  ngjitëse shtesë"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
-#, fuzzy
 msgid  "Create %1"
 msgstr "Krijo..."
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
-#, fuzzy
 msgid  "Insert %1"
 msgstr "Shto"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
-#, fuzzy
 msgid  "Copy %1"
 msgstr "Kopje"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
-#, fuzzy
 msgid  "Change object order of %1"
 msgstr "Ndrysho renditjen e objektit %O"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
-#, fuzzy
 msgid  "Edit text of %1"
 msgstr "Edito tekstin nga %O"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
-#, fuzzy
 msgid  "Insert page"
 msgstr "Shto faqen"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
-#, fuzzy
 msgid  "Delete page"
 msgstr "Fshij faqen"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
-#, fuzzy
 msgid  "Copy page"
 msgstr "Kopjo faqen"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
-#, fuzzy
 msgid  "Change order of pages"
 msgstr "Ndrysho renditjen e faqeve"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Assign background page"
 msgstr "Cakto faqen prapavi"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "Shlyej caktimin e faqes prapavi"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Move background page assignment"
 msgstr "Lëviz caktimin e faqes prapavi"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Change background page assignment"
 msgstr "Ndrysho caktimin e faqes prapavi"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
-#, fuzzy
 msgid  "Insert document"
 msgstr "Shto dokumentin"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
-#, fuzzy
 msgid  "Insert Layer"
 msgstr "Shto shtresën"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
-#, fuzzy
 msgid  "Delete layer"
 msgstr "Fshije shtresën"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
-#, fuzzy
 msgid  "Change order of layers"
 msgstr "Nrysho renditjen e shtresave"
 
 #: source/svdraw/svdstr.src#STR_UndoObjName.String.Text
-#, fuzzy
 msgid  "Change object name of %1 to"
 msgstr "Ndrysho renditjen e objektit %O"
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
-#, fuzzy
 msgid  "Change object title of %1"
 msgstr "Ndrysho renditjen e objektit %O"
 
 #: source/svdraw/svdstr.src#STR_UndoObjDescription.String.Text
-#, fuzzy
 msgid  "Change object description of %1"
 msgstr "Ndrysho renditjen e objektit %O"
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "Standarde"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
-#, fuzzy
 msgid  "on"
 msgstr "kyçur"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "ç'kyqur"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
-#, fuzzy
 msgid  "yes"
 msgstr "po"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "No"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
-#, fuzzy
 msgid  "Type 1"
 msgstr "Tip 1"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
-#, fuzzy
 msgid  "Type 2"
 msgstr "Tip 2"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
-#, fuzzy
 msgid  "Type 3"
 msgstr "Tip 3"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
-#, fuzzy
 msgid  "Type 4"
 msgstr "Tip 4"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Horizontal"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikal"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatike"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
-#, fuzzy
 msgid  "Off"
 msgstr "Ç'kyçur"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
-#, fuzzy
 msgid  "Proportional"
 msgstr "Proporcionale"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEALLLINES.String.Text
-#, fuzzy
 msgid  "Fit to size (all rows separately) "
 msgstr "Përkufizo me madhësi (të gjithë reshtat ndarazi)"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
-#, fuzzy
 msgid  "Use hard attributes"
 msgstr "Përdor atribute të forta"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "Lartë"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "Qendër"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "Poshtë"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire height"
 msgstr "Përdor tërë lartësinë "
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "I zgjatur"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "Majtas"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "Qendër"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "Djathtas"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire width"
 msgstr "Përdor tërë gjerësinë "
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "I zgjatur"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "ç'kyqur"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
-#, fuzzy
 msgid  "flash"
 msgstr "flash"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SCROLL.String.Text
-#, fuzzy
 msgid  "Scroll Through"
 msgstr "Lëviz Nëpërmjet"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_ALTERNATE.String.Text
-#, fuzzy
 msgid  "alternating"
 msgstr "duke ndërruar"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SLIDE.String.Text
-#, fuzzy
 msgid  "Scroll In"
 msgstr "Rrëshqit"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
-#, fuzzy
 msgid  "left"
 msgstr "majtas"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
-#, fuzzy
 msgid  "up"
 msgstr "lartë"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
-#, fuzzy
 msgid  "right"
 msgstr "djathtas"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
-#, fuzzy
 msgid  "down"
 msgstr "poshtë"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
-#, fuzzy
 msgid  "Standard Connector"
 msgstr "Konektor standard"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_THREELINES.String.Text
-#, fuzzy
 msgid  "Line Connector"
 msgstr "Konektor Linjë "
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
-#, fuzzy
 msgid  "Straight Connector"
 msgstr "Konektor i Drejtë"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
-#, fuzzy
 msgid  "Curved Connector"
 msgstr "Konektor i Lakuar"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "Standarde"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
-#, fuzzy
 msgid  "Radius"
 msgstr "Radius"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "automatik"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTLEFTOUTSIDE.String.Text
-#, fuzzy
 msgid  "left outside"
 msgstr "majtas jashtë"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTINSIDE.String.Text
-#, fuzzy
 msgid  "inside (centered)"
 msgstr "brenda (qendërzuar)"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTRIGHTOUTSID.String.Text
-#, fuzzy
 msgid  "right outside"
 msgstr "djathtas jashtë"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "automatik"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
-#, fuzzy
 msgid  "on the line"
 msgstr "në vijë"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
-#, fuzzy
 msgid  "broken line"
 msgstr "vijë e këputur"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
-#, fuzzy
 msgid  "below the line"
 msgstr "nën vijë"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
-#, fuzzy
 msgid  "centered"
 msgstr "në qëndër"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
-#, fuzzy
 msgid  "full circle"
 msgstr "rreth i plotë"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_SECT.String.Text
-#, fuzzy
 msgid  "Circle Pie"
 msgstr "Kulaq rrethor"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "Segment i rrethit"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "Arc"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Hije"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "Ngjyrë e hijes"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Horizontal shadow outline"
 msgstr "Përvijim horizontal i hijes"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "Përvijim vertikal i hijes"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Tejdukshmëria e hijezimit "
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "3D hije"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Hije perspektivë"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Callout type"
 msgstr "Tipi i thirrjeve"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Given angle"
 msgstr "Këndi i dhënë"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Angle"
 msgstr "Këndi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "Boshllëk"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Exit direction"
 msgstr "Drejtimi i daljes"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit position"
 msgstr "Pozita relative e daljes"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "Pozicioni Dalës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "Pozicioni Dalës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Line length"
 msgstr "Gjatësia e vijës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "Auto line length"
 msgstr "Gjatësia e Automatike e vijës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "Rrezja e këndit"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left border spacing"
 msgstr "Hapësira rrethuese e majtë "
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right border spacing"
 msgstr "Hapësira rrethuese e djathtë"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper border spacing"
 msgstr "Hapësira rrethuese më e lartë"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower border spacing"
 msgstr "Hapësira rrethuese më e ulët"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit frame height"
 msgstr "Përshtate Automatikisht lartësinë e kornizës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Min. frame height"
 msgstr "Lartësia min. e kornizës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Max. frame height"
 msgstr "Lartësia maks. e kornizës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit frame width"
 msgstr "Përshtate Automatikisht gjerësinë e kornizës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Min. frame width"
 msgstr "Gjerësia min. e kornizës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Max. frame width"
 msgstr "Gjerësia maks. e kornizës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Spiranca vertikale e tekstit"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Spiranca horizontale e tekstit"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Përshtate tekstin sipas kornizës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "Kuq"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "Gjelbërt"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "Kaltër"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "Shkëlqimi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "Kontrasti"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "Gama"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Transparencë"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "Anasjelltas"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "Modi grafik"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
-#, fuzzy
 msgid  "Various attributes"
 msgstr "Atribute të ndryshme"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Position protected"
 msgstr "Pozita e mbrojtur"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Size Protection"
 msgstr "Mbrojtje e Madhësisë"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Don't print"
 msgstr "Mos shtyp"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
-#, fuzzy
 msgid  "Layer Indicator"
 msgstr "Indikatori i shtresës"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Le~vel"
 msgstr "Nivel"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "Emri i objektit"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "Fillo këndin"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
-#, fuzzy
 msgid  "Final angle"
 msgstr "Këndi përfundimtar"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
-#, fuzzy
 msgid  "X Position"
 msgstr "Pozita X"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
-#, fuzzy
 msgid  "Y Position"
 msgstr "Pozita Y"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "Gjerësia"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "Lartësia"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Rotation angle"
 msgstr "Këndi i rrotullimit"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Shear angle"
 msgstr "Këndi i prerjes "
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
-#, fuzzy
 msgid  "Unknown attribute"
 msgstr "Atribut  panjohur"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
-#, fuzzy
 msgid  "Line style"
 msgstr "Stili i linjës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
-#, fuzzy
 msgid  "Line pattern"
 msgstr "Modeli i vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
-#, fuzzy
 msgid  "Line width"
 msgstr "Gjerësia e vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "Ngjyra e vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
-#, fuzzy
 msgid  "Line head"
 msgstr "Kreu i vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
-#, fuzzy
 msgid  "Line end"
 msgstr "Fundi i vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
-#, fuzzy
 msgid  "Line head width"
 msgstr "Gjerësia e kreut të vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
-#, fuzzy
 msgid  "Line end width"
 msgstr "Gjerësia e fundit të vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowhead"
 msgstr "Qendërzo kreun e shigjetës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowend"
 msgstr "Qendërzo fundin e shigjetës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Line transparency"
 msgstr "Tejdukshmëria e linjës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
-#, fuzzy
 msgid  "Line joint"
 msgstr "Lidhja e vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED2.String.Text
-#, fuzzy
 msgid  "Line reserved for 2"
 msgstr "Vija e rezervuar për 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED3.String.Text
-#, fuzzy
 msgid  "Line reserved for 3"
 msgstr "Vija e rezervuar për 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED4.String.Text
-#, fuzzy
 msgid  "Line reserved for 4"
 msgstr "Vija e rezervuar për 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED5.String.Text
-#, fuzzy
 msgid  "Line reserved for 5"
 msgstr "Vija e rezervuar për 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Line reserved for 6"
 msgstr "Vija e rezervuar për 6"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
-#, fuzzy
 msgid  "Line attributes"
 msgstr "Atributet e vijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
-#, fuzzy
 msgid  "Fill style"
 msgstr "Stili i mbushjes"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fillcolor"
 msgstr "Ngjyra e mbushjes"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
-#, fuzzy
 msgid  "Gradient"
 msgstr "Shkallëzim"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLHATCH.String.Text
-#, fuzzy
 msgid  "Hatching"
 msgstr "Vijëzim"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBITMAP.String.Text
-#, fuzzy
 msgid  "Fillbitmap"
 msgstr "Fillbitmap"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Transparencë"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
-#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "Numri i hapave të shkallëzimit"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILE.String.Text
-#, fuzzy
 msgid  "Tile fill"
 msgstr "Mbushje pllakore"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POS.String.Text
-#, fuzzy
 msgid  "Fillbitmap position"
 msgstr "Pozicioni i Fillbitmap "
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEX.String.Text
-#, fuzzy
 msgid  "Fillbitmap width"
 msgstr "Gjerësia e Fillbitmap "
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEY.String.Text
-#, fuzzy
 msgid  "Height of fillbitmap"
 msgstr "Lartësia e Fillbitmap "
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparent gradient"
 msgstr "Shkallëzimi transparent"
 
 #: source/svdraw/svdstr.src#SIP_XA_SECONDARYFILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill reserved for 2"
 msgstr "Mbushja e rezervuar për 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZELOG.String.Text
-#, fuzzy
 msgid  "Tile size not in %"
 msgstr "Madhësia e pllakës nuk është në %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile offset X in %"
 msgstr "Ngritja X e pllakës në %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile offset Y in %"
 msgstr "Ngritja Y e pllakës në %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_STRETCH.String.Text
-#, fuzzy
 msgid  "Bitmap scaling"
 msgstr "Rritje e bitmap-it"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED3.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 3"
 msgstr "Bitmap i rezervuar për 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED4.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 4"
 msgstr "Bitmap i rezervuar për 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED5.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 5"
 msgstr "Bitmap i rezervuar për 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED6.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 6"
 msgstr "Bitmap i rezervuar për 6"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED7.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 7"
 msgstr "Bitmap i rezervuar për 7"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED8.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 8"
 msgstr "Bitmap i rezervuar për 8"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile position X in %"
 msgstr "Pozicioni X i pllakës në %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile position Y in %"
 msgstr "Pozicioni Y i pllakës në %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
-#, fuzzy
 msgid  "Background fill"
 msgstr "Mbushja e prapavijës"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED10.String.Text
-#, fuzzy
 msgid  "Fill reserved for 10"
 msgstr "Mbushja e rezervuar për 10"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED11.String.Text
-#, fuzzy
 msgid  "Fill reserved for 11"
 msgstr "Mbushja e rezervuar për 11"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fill reserved for 12"
 msgstr "Mbushja e rezervuar për 12"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
-#, fuzzy
 msgid  "Area attributes"
 msgstr "Atributet e zonës"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
-#, fuzzy
 msgid  "Fontwork style"
 msgstr "Stili i punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
-#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "Rreshtimi i punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
-#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "Hapësira e punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTART.String.Text
-#, fuzzy
 msgid  "Fontwork font begin"
 msgstr "Fillimi i fontit i punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
-#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "Parqyra e punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTOUTLINE.String.Text
-#, fuzzy
 msgid  "Fontwork outline"
 msgstr "Përvijim i punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
-#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "Hijëzimi i punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
-#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "Ngjyra e hijëzimit të punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWXVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset X"
 msgstr "Ngritja X e hijëzimit të punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWYVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset Y"
 msgstr "NgritjaY e hijëzimit të punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
-#, fuzzy
 msgid  "Fontwork default form"
 msgstr "Forma e parazgjedhur e punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
-#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "Fshehe përvijimin e punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
-#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "Tejdukshmëria e hijëzimit të punës me fonte"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED2.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 2"
 msgstr "Puna me fonte e rezervuar për 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED3.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 3"
 msgstr "Puna me fonte e rezervuar për 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED4.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 4"
 msgstr "Puna me fonte e rezervuar për 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED5.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 5"
 msgstr "Puna me fonte e rezervuar për 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 6"
 msgstr "Puna me fonte e rezervuar për 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Hije"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "Ngjyrë e hijes"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "Hapësirë e hijes X"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "Hapësirë e hijes y"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Tejdukshmëria e hijezimit "
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "3D hije"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Hije perspektivë"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Type of legend"
 msgstr "Tipi i legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "Këndi i palëvizshëm i legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Legend angle"
 msgstr "Këndi i legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Legend lines spacing"
 msgstr "Hapësira e linjave të legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Legend exit alignment"
 msgstr "Rreshtimi i daljes së legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Legjendë relative e daljes"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Legjendë relative e daljes"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "Dalje absolute e legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Legend line length"
 msgstr "Gjatësia e rreshtit të legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "AutoLength of legend lines"
 msgstr "AutoGjatësia e linjave të legjendës"
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "Rrezja e këndit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Minimal frame height"
 msgstr "Lartësia Minimale e kornizës"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit height"
 msgstr "Përshtate Automatikisht lartësinë"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Përshtate tekstin sipas kornizës"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "Hapësira e majtë e kornizës së tekstit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "Hapësira e djathtë e kornizës së tekstit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "Hapësira e epërme e kornizës së tekstit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "Hapësira e poshtme e kornizës së tekstit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Spiranca vertikale e tekstit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Maximal frame height"
 msgstr "Lartësia maksimale e kornizës"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Minimal frame width"
 msgstr "Gjerësia minimale e kornizës"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Maximal frame width"
 msgstr "Gjerësia maksimale e kornizës"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit width"
 msgstr "Përshtate Automatikisht gjerësinë"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Spiranca horizontale e tekstit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIKIND.String.Text
-#, fuzzy
 msgid  "Ticker"
 msgstr "Lavjerrës"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDIRECTION.String.Text
-#, fuzzy
 msgid  "Ticker direction"
 msgstr "Drejtimi i lavjerrësit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTARTINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker start inside"
 msgstr "Fillimi i lavjerrësit brenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTOPINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker stop inside"
 msgstr "Ndalimi i lavjerrësit brenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANICOUNT.String.Text
-#, fuzzy
 msgid  "Number of ticker runs"
 msgstr "Numri i luhatjeve të lavjerrësit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDELAY.String.Text
-#, fuzzy
 msgid  "Speed of ticker"
 msgstr "Shpejtësia e lavjerrësit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIAMOUNT.String.Text
-#, fuzzy
 msgid  "Ticker step size"
 msgstr "Madhësia e hapit të lajverrësit"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_CONTOURFRAME.String.Text
-#, fuzzy
 msgid  "Outline text flow"
 msgstr "Rrjedhja e tekstit"
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
-#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "Përshtatja e AutoFormës"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
-#, fuzzy
 msgid  "User-defined attributes"
 msgstr "Atributet e definuara nga shfrytëzuesi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
-#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "Përdor hapësirat mes rreshtave të pavarura nga fonti"
 
 #: source/svdraw/svdstr.src#SIP_SA_WORDWRAP.String.Text
-#, fuzzy
 msgid  "Word wrap text in shape"
 msgstr "Përshtat tekstin për formë"
 
 #: source/svdraw/svdstr.src#SIP_SA_AUTOGROWSIZE.String.Text
-#, fuzzy
 msgid  "Auto grow shape to fit text"
 msgstr "Rritje automatike e formës për ta nxënë tekstin"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE18.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 18"
 msgstr "SvDraw e rezervuar për 18"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE19.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 19"
 msgstr "SvDraw e rezervuar për 19"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
-#, fuzzy
 msgid  "Type of connector"
 msgstr "Tipi i konektorit"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 1"
 msgstr "Objekt i hapësirës horiz. 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 1"
 msgstr "Objekt i hapësirës vert. 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 2"
 msgstr "Objekt i hapësirës horiz. 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 2"
 msgstr "Objekt i hapësirës vert. 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 1"
 msgstr "Objekt i hapësirës së ngjitjes 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 2"
 msgstr "Objekt i hapësirës së ngjitjes 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
-#, fuzzy
 msgid  "Number of movable lines"
 msgstr "Numri i vijave të lëvizshme"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE1DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 1"
 msgstr "Vija e kompensimit 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE2DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 2"
 msgstr "Vija e kompensimit 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE3DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 3"
 msgstr "Vija e kompensimit 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
-#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "Tipi i dimensionimit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTHPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - horizontal position"
 msgstr "Vlera e dimensionit - pozitë horizontale"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTVPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - vertical position"
 msgstr "Vlera e dimensionit - pozitë vertikale"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURELINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension line space"
 msgstr "Hapësira e vijës së dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension help line overhang"
 msgstr "E dalura e vijës ndihmëse të dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension help line spacing"
 msgstr "Hapësirë e vijës ndihmëse të dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE1LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 1"
 msgstr "E pabëra e vijës ndihmëse të dimensionit 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE2LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 2"
 msgstr "E pabëra e vijës ndihmëse të dimensionit 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREBELOWREFEDGE.String.Text
-#, fuzzy
 msgid  "Lower edge dimensioning"
 msgstr "Dimenzionimi i skajit të poshtëm"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
-#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "Vlerat e dimensionit përtej vijës së dimensionit"
 
@@ -10552,117 +9569,94 @@ msgid  "Rotate dimension value by 180 degree"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension line overhang"
 msgstr "Dalje e vijës së dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit"
 msgstr "Njësi matëse"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
-#, fuzzy
 msgid  "Additional scale factor"
 msgstr "Koeficient shtesë i shkallëzimit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit display"
 msgstr "Parqitja e njësisë matëse"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREFORMATSTRING.String.Text
-#, fuzzy
 msgid  "Dimension value format"
 msgstr "Formati i vlerës së dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLE.String.Text
-#, fuzzy
 msgid  "AutoPositioning of the dimension value"
 msgstr "Autopozicionimi i vlerës së dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLEVIEW.String.Text
-#, fuzzy
 msgid  "Angle for the automatic positioning of the dimension value"
 msgstr "Këndi për pozicionim automatik të vlerës së dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTISFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Determination of the dimension value angle"
 msgstr "Përcaktimi i këndit të vlerës së dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Angle of the dimension value"
 msgstr "Këndi i vlerës së dimensionit"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREDECIMALPLACES.String.Text
-#, fuzzy
 msgid  "Decimal places"
 msgstr "Vendet decimale"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE05.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved 5"
 msgstr "Dimenzionimi i rezervuar 5"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE06.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 6"
 msgstr "Dimenzionimi i rezervuar për 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE07.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 7"
 msgstr "Dimenzionimi i rezervuar për 7"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
-#, fuzzy
 msgid  "Type of circle"
 msgstr "Tipi i rrethit"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "Fillo këndin"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
-#, fuzzy
 msgid  "End angle"
 msgstr "Përfundo këndin"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE0.String.Text
-#, fuzzy
 msgid  "Circle reserved for 0"
 msgstr "Rrethi i rezervuar për 0"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE1.String.Text
-#, fuzzy
 msgid  "Circle reserved for 1"
 msgstr "Rrethi i rezervuar për 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE2.String.Text
-#, fuzzy
 msgid  "Circle reserved for 2"
 msgstr "Rrethi i rezervuar për 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE3.String.Text
-#, fuzzy
 msgid  "Circle reserved for 3"
 msgstr "Rrethi i rezervuar për 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object position"
 msgstr "Pozita e mbrojtur e objektit"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object size"
 msgstr "Madhësi e mbrojtur e objektit"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Object, printable"
 msgstr "Objekt, që shtypet"
 
@@ -10671,237 +9665,190 @@ msgid  "Object, visible"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
-#, fuzzy
 msgid  "Level ID"
 msgstr "ID e nivelit"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Layer"
 msgstr "Shtresë"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "Emri i objektit"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONX.String.Text
-#, fuzzy
 msgid  "Position X, complete"
 msgstr "Pozicion X, e përfunduar"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y, complete"
 msgstr "Pozicion Y, e përfunduar"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Total Width"
 msgstr "Gjerësi Totale"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height, complete"
 msgstr "Lartësi, komplete"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONX.String.Text
-#, fuzzy
 msgid  "Single position X"
 msgstr "Pozicioni i vetëm X"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONY.String.Text
-#, fuzzy
 msgid  "Single position Y"
 msgstr "Pozicioni i vetëm Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Single width"
 msgstr "Gjerësi e vetme"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Single height"
 msgstr "Lartësi e vetme"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Logical width"
 msgstr "Gjerësi logjike"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Logical height"
 msgstr "Lartësi logjike"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Single rotation angle"
 msgstr "Këndi i vetëm i rrotullimit"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Single shear angle"
 msgstr "Këndi i vetëm i prerjes"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
-#, fuzzy
 msgid  "Move horizontally"
 msgstr "Lëviz horizontalisht"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
-#, fuzzy
 msgid  "Move vertically"
 msgstr "Lëviz vertikalisht"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
-#, fuzzy
 msgid  "Resize X, single"
 msgstr "Rivendos madhësinë X, e vetme"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
-#, fuzzy
 msgid  "Resize Y, single"
 msgstr "Rivendos madhësinë Y, e vetme"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEONE.String.Text
-#, fuzzy
 msgid  "Single rotation"
 msgstr "Rrotullim i vetëm"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARONE.String.Text
-#, fuzzy
 msgid  "Single horizontal shear"
 msgstr "Prerje e vetme horizontale"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARONE.String.Text
-#, fuzzy
 msgid  "Single vertical shear"
 msgstr "Prerje e vetme verikale"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
-#, fuzzy
 msgid  "Resize X, complete"
 msgstr "Rivendosja e madhësisë X, e përfunduar"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
-#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Rivendosja e madhësisë Y, e përfunduar"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
-#, fuzzy
 msgid  "Rotate all"
 msgstr "Rrotullo të gjitha"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear horizontal, complete"
 msgstr "Prerja horizontale, e kompletuar"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear vertical, complete"
 msgstr "Prerja vertikale, e kompletuar"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1X.String.Text
-#, fuzzy
 msgid  "Reference point 1 X"
 msgstr "Pika referuese 1 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1Y.String.Text
-#, fuzzy
 msgid  "Reference point 1 Y"
 msgstr "Pika referuese 1 Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2X.String.Text
-#, fuzzy
 msgid  "Reference point 2 X"
 msgstr "Pika referuese 2 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2Y.String.Text
-#, fuzzy
 msgid  "Reference point 2 Y"
 msgstr "Pika referuese 2 Y"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "Hifenacion"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
-#, fuzzy
 msgid  "Display bullets"
 msgstr "Paraqit pikat"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
-#, fuzzy
 msgid  "Numbering indents"
 msgstr "Kryerreshtat numëror"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
-#, fuzzy
 msgid  "Numbering level"
 msgstr "Niveli numëror"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
-#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "Pikat dhe numërimi"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
-#, fuzzy
 msgid  "Indents"
 msgstr "Kryerreshtat"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
-#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "Hapësira e paragrafit"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
-#, fuzzy
 msgid  "Line spacing"
 msgstr "Hapësira në mes rreshtave"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
-#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "Mbështetha e paragrafit"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
-#, fuzzy
 msgid  "Tabulators"
 msgstr "Tabulatorët"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "Ngjyra e Fontit"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
-#, fuzzy
 msgid  "Character set"
 msgstr "Komplet karakteresh"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
-#, fuzzy
 msgid  "Font size"
 msgstr "Madhësia e fontit"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
-#, fuzzy
 msgid  "Font width"
 msgstr "Gjerësia e fontit"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
-#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "E trashur (trashësia)"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "Nënvizim"
 
@@ -10910,197 +9857,158 @@ msgid  "Overline"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "Vizuar nëpërmes"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "Italike"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "Konturë"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
-#, fuzzy
 msgid  "Font shadow"
 msgstr "Hije e fontit"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
-#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "Mbishkrim/nënshkrim"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
-#, fuzzy
 msgid  "Kerning"
 msgstr "Kernimi"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
-#, fuzzy
 msgid  "Manual kerning"
 msgstr "Rregullim me dorë i hapsirës së karaktereve"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
-#, fuzzy
 msgid  "No underline for spaces"
 msgstr "Pa nënvizim për hapësirat"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
-#, fuzzy
 msgid  "Tabulator"
 msgstr "Tabulatori"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_LINEBR.String.Text
-#, fuzzy
 msgid  "Optional line break"
 msgstr "Ndërprerje opcionale e rreshtit"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
-#, fuzzy
 msgid  "Non-convertible character"
 msgstr "Karakter i pa konvertueshëm"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "Fushat"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "Kuq"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "Gjelbërt"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "Kaltër"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "Shkëlqimi"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "Kontrasti"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "Gama"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Transparencë"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "Anasjelltas"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "Modi grafik"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "Preje"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
-#, fuzzy
 msgid  "Media object"
 msgstr "Media objekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
-#, fuzzy
 msgid  "Media objects"
 msgstr "Adapto objektet"
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
-#, fuzzy
 msgid  "Apply table attributes"
 msgstr "Zbato atributet e tabelës"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
-#, fuzzy
 msgid  "AutoFormat table"
 msgstr "AutoFormatizo tabelën"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
-#, fuzzy
 msgid  "Insert column"
 msgstr "Shto kolonën"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "Shto rreshtin"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
-#, fuzzy
 msgid  "Delete column"
 msgstr "Fshije kolonën"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "Fshije rreshtin"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
-#, fuzzy
 msgid  "Split cells"
 msgstr "Ndaj qelizat"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
-#, fuzzy
 msgid  "Merge cells"
 msgstr "Bashko qelizat"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
-#, fuzzy
 msgid  "Format cell"
 msgstr "Formato qelizën"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
-#, fuzzy
 msgid  "Distribute rows"
 msgstr "Shprëndaj rreshtat barabartë"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
-#, fuzzy
 msgid  "Distribute columns"
 msgstr "~Shprëndaj kolonat barabartë"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
-#, fuzzy
 msgid  "Table style"
 msgstr "Stili i linjës"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
-#, fuzzy
 msgid  "Table style settings"
 msgstr "Parametrat e shfaqjes së sllajdeve..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabelë"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabelat"
 
@@ -11113,62 +10021,50 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
-#, fuzzy
 msgid  "Table Design Styles"
 msgstr "Stilet e zbatuara të paragrafeve"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "No Fill"
 msgstr "Pa mbushje"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
-#, fuzzy
 msgid  "Pattern"
 msgstr "Model"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Kufinjtë"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
-#, fuzzy
 msgid  "Border Style"
 msgstr "Stili i Kufirit"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
-#, fuzzy
 msgid  "Border Color"
 msgstr "Ngjyra e Kufirit"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
-#, fuzzy
 msgid  "Highlighting"
 msgstr "Hijezimi"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Sfond"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatike"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
-#, fuzzy
 msgid  "Pages"
 msgstr "Faqet"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
-#, fuzzy
 msgid  "Clear formatting"
 msgstr "Pastro formatimin"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
-#, fuzzy
 msgid  "More..."
 msgstr "Më shumë..."
 
@@ -11177,137 +10073,110 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "Drejtimi i daljes"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "Perspektivë"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
-#, fuzzy
 msgid  "P~arallel"
 msgstr "Paralele"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
-#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "Dalje Veri-Perëndim"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
-#, fuzzy
 msgid  "Extrusion North"
 msgstr "Dalje në Veri"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
-#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "Dalje në Veri-Lindje"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
-#, fuzzy
 msgid  "Extrusion West"
 msgstr "Dalje në Perëndim"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
-#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "Dalje së prapthi"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
-#, fuzzy
 msgid  "Extrusion East"
 msgstr "Dalje në Lindje"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
-#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "Dalje Jug-Perëndim"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
-#, fuzzy
 msgid  "Extrusion South"
 msgstr "Dalje në Jug"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
-#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "Dalje Jug-Lindje"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Thellësia e daljes"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "Përshtatur"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
-#, fuzzy
 msgid  "~Infinity"
 msgstr "Pakufi"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "Ndriçim i dalur"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
-#, fuzzy
 msgid  "~Bright"
 msgstr "Ndriçimi"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "Normal"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
-#, fuzzy
 msgid  "~Dim"
 msgstr "Dim"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "Sipërfaqe e dalur"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
-#, fuzzy
 msgid  "~Wire Frame"
 msgstr "Kornizë objekti"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
-#, fuzzy
 msgid  "~Matt"
 msgstr "Matt"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
-#, fuzzy
 msgid  "~Plastic"
 msgstr "Plastikë"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
-#, fuzzy
 msgid  "Me~tal"
 msgstr "Metal"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Thellësia e daljes"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "Vlera"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Extrusion Color"
 msgstr "Ngjyrë e dalur"
 
@@ -11328,127 +10197,102 @@ msgid  "~5 cm"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
-#, fuzzy
 msgid  "10 ~cm"
 msgstr "Titullimi 10"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
-#, fuzzy
 msgid  "0 inch"
 msgstr "0 inç"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
-#, fuzzy
 msgid  "0.~5 inch"
 msgstr "0.5 inç"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
-#, fuzzy
 msgid  "~1 inch"
 msgstr "1 inç"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
-#, fuzzy
 msgid  "~2 inch"
 msgstr "2 inç"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
-#, fuzzy
 msgid  "~4 inch"
 msgstr "4 inç"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "Galeria e fonteve"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
-#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "Zgjedh stilin e fontit:"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
-#, fuzzy
 msgid  "Click to edit text"
 msgstr "Kliko për editimin e tekstit"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "Mbështetja e fonteve"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
-#, fuzzy
 msgid  "~Left Align"
 msgstr "Rradhit në të majtë"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "Qendër"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
-#, fuzzy
 msgid  "~Right Align"
 msgstr "Rradhit në të djathtë"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
-#, fuzzy
 msgid  "~Word Justify"
 msgstr "Bashkërenditje e fjalës"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
-#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "Bashkrenditur në tërheqje"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Hapësira e karaktereve të fontit"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
-#, fuzzy
 msgid  "~Very Tight"
 msgstr "Shumë ngusht"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
-#, fuzzy
 msgid  "~Tight"
 msgstr "Afër"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "Normal"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
-#, fuzzy
 msgid  "~Loose"
 msgstr "Humbë"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
-#, fuzzy
 msgid  "Very ~Loose"
 msgstr "Shumë çlirë"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "Përshtatur"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_KERN_PAIRS.String.Text
-#, fuzzy
 msgid  "~Kern Character Pairs"
 msgstr "Kern çifte karakteresh"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Hapësira e karaktereve të fontit"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "Vlera"
 
@@ -11457,57 +10301,46 @@ msgid  "Find"
 msgstr ""
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
-#, fuzzy
 msgid  "Filters"
 msgstr "Filtrat"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics Mode"
 msgstr "Modi grafik"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "Kuq"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "Gjelbërt"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "Kaltër"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "Shkëlqimi"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "Kontrasti"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "Gama"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Transparencë"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "Preje"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "Ngjyrat"
 
@@ -11516,112 +10349,90 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Zhbëj ndryshimet e ndarjeve"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Zhbëj ndryshimet e ndarjeve"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Zhbëj ndryshimet e ndarjeve"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Zhbëj ndryshimet e ndarjeve"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
-#, fuzzy
 msgid  "Extrusion"
 msgstr "Objekt i dalur"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
-#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "Zbato daljen Kyçur/Ç'kyçur"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
-#, fuzzy
 msgid  "Tilt Down"
 msgstr "Lëviz Poshtë"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
-#, fuzzy
 msgid  "Tilt Up"
 msgstr "Lëviz lartë"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
-#, fuzzy
 msgid  "Tilt Left"
 msgstr "Lëviz në të majtë"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
-#, fuzzy
 msgid  "Tilt Right"
 msgstr "Lëviz në të djathtë"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
-#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "Ndrysho thellësinë e daljes"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
-#, fuzzy
 msgid  "Change Orientation"
 msgstr "Ndrysho orientimin"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
-#, fuzzy
 msgid  "Change Projection Type"
 msgstr "Ndrysho tipin e projeksionit"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
-#, fuzzy
 msgid  "Change Lighting"
 msgstr "Ndrysho ndriçimin"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
-#, fuzzy
 msgid  "Change Brightness"
 msgstr "Ndrysho ndriçimin"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
-#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "Ndrysho sipërfaqen dalëse"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "Ndrysho ngjyrën dalëse"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
-#, fuzzy
 msgid  "Fontwork"
 msgstr "Puna me fonte"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "Zbato trajtat e fonteve"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "Zbato madhësitë e njëjta të fonteve"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "Zbato rradhitjen e fonteve"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "Zbato hapësirën e karaktereve të fontit"
 

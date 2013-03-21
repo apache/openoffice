@@ -37,7 +37,7 @@ msgstr "Bu komuta erişme..."
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">Bu komuta erişme...</variable>"
 
 #: source/text/sdraw/01/04010000.xhp#tit
 msgid  "Insert Page"
@@ -45,11 +45,11 @@ msgstr "Sayfa Ekle"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\">Sayfa Ekle</link>"
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
 msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seitetext\">Seçilmiş sayfadan sonra boş bir sayfa ekler.</variable>"
 
 #: source/text/sdraw/04/01020000.xhp#tit
 msgid  "Shortcut Keys for Drawings"
@@ -57,11 +57,11 @@ msgstr "Çizim için Kısayollar"
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3156441
 msgid  "\<bookmark_value\>shortcut keys;in drawings\</bookmark_value\>         \<bookmark_value\>drawings; shortcut keys\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>kısayol tuşları;çizimlerde</bookmark_value><bookmark_value>çizimler; kısayol tuşları</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
 msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_keys\"><link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\">Çizim için Kısayollar</link></variable>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
@@ -81,7 +81,7 @@ msgstr "Kısayol tuşları"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153713.6
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekt</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150044.7
 msgid  "F2"
@@ -121,7 +121,7 @@ msgstr "F4"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149406.16
 msgid  "Opens the \<emph\>Position and Size\</emph\> dialog."
-msgstr ""
+msgstr "<emph>Konum ve Boyut</emph> iletişim penceresini açar."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3148870.21
 msgid  "F5"
@@ -129,7 +129,7 @@ msgstr "F5"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153917.22
 msgid  "Opens the \<emph\>Navigator\</emph\>."
-msgstr ""
+msgstr "<emph>Gezgin</emph> iletişim penceresini açar."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3157982.25
 msgid  "F7"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154765.28
 msgid  "Opens the \<emph\>Thesaurus\</emph\>."
-msgstr ""
+msgstr "<emph>Eşanlamlılar</emph> iletişim penceresini açar."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146962.29
 msgid  "F8"
@@ -185,7 +185,7 @@ msgstr "Kısayol Tuşları"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3146323.43
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekt</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149946.44
 msgid  "Plus(+) Key"
@@ -293,8 +293,9 @@ msgid  "Shortcut Keys"
 msgstr "Kısayol Tuşları"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155370.70
+#, fuzzy
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekt</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AD7
 #, fuzzy
@@ -1149,7 +1150,6 @@ msgid  "Click \<emph\>Open\</emph\> to insert the picture."
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#tit
-#, fuzzy
 msgid  "Grouping Objects"
 msgstr "Nesneleri Grupla"
 
@@ -1394,7 +1394,6 @@ msgid  "Working with Layers"
 msgstr ""
 
 #: source/text/sdraw/guide/main.xhp#hd_id3145585.5
-#, fuzzy
 msgid  "Miscellaneous"
 msgstr "Diğer"
 
@@ -1411,7 +1410,6 @@ msgid  "\<variable id=\"rotate_object\"\>\<link href=\"text/sdraw/guide/rotate_o
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149262.13
-#, fuzzy
 msgid  "You can rotate an object around its default pivot point (center point) or a pivot point that you designate."
 msgstr "Bir objeyi, orta noktası ya da kendi belirlediğiniz nokta etrafında döndürebilirsiniz."
 
@@ -1524,7 +1522,6 @@ msgid  "Now you can resize the text box to change the size and shape of the text
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3155955.58
-#, fuzzy
 msgid  "Text Tied to a Graphic"
 msgstr "Belirtme çizgisi"
 
@@ -1593,156 +1590,145 @@ msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</em
 msgstr ""
 
 #: source/text/sdraw/main0000.xhp#tit
-#, fuzzy
 msgid  "Welcome to the $[officename] Draw Help"
 msgstr "$[officename] Draw Yardıma Hoş Geldiniz"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
 msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
-msgstr ""
+msgstr "<switchinline select=\"appl\"> <caseinline select=\"DRAW\"/> </switchinline>$[officename] Draw Yardıma Hoş Geldiniz"
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
-#, fuzzy
 msgid  "How to Work With $[officename] Draw"
 msgstr "$[officename] Draw ile nasıl çalışılır"
 
 #: source/text/sdraw/main0000.xhp#hd_id3150363.5
-#, fuzzy
 msgid  "$[officename] Draw Menus, Toolbars, and Keys"
 msgstr "$[officename] Draw Menüleri, Araç çubukları, ve Kısayollar"
 
 #: source/text/sdraw/main0000.xhp#hd_id3166430.4
-#, fuzzy
 msgid  "Help about the Help"
 msgstr "Yardım hakkında Yardım"
 
 #: source/text/sdraw/main0100.xhp#tit
-#, fuzzy
 msgid  "Menus"
 msgstr "Menüler"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/sdraw/main0100.xhp\" name=\"Menus\">Menüler</link></variable>"
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
-#, fuzzy
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
 msgstr "Tüm $[officename] Draw menüleri, alt menüleri ve bunların iletişim pencereleri ile ilgili açıklama."
 
 #: source/text/sdraw/main0101.xhp#tit
-#, fuzzy
 msgid  "File"
 msgstr "Dosya"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
 msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"File\">Dosya</link>"
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
 msgid  "This menu contains general commands for working with Draw documents, such as open, close and print. To close $[officename] Draw, click \<emph\>Exit\</emph\>."
-msgstr ""
+msgstr "Bu menü Draw belgeleri ile çalışırken kullanılan genel komutları içerir. Örneğin aç, kapat, yazdır. $[officename] Draw programından çıkmak için <emph>Çıkış</emph>'ı tıklayın."
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Open\">Aç</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Farklı Kaydet</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\">Dışa Aktar</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\">Sürümler</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\">Özellikler</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"Print\">Yazdır</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\">Yazıcı Ayarları</link>"
 
 #: source/text/sdraw/main0102.xhp#tit
-#, fuzzy
 msgid  "Edit"
 msgstr "Düzenle"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\">Düzenle</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
-#, fuzzy
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
 msgstr "Menüdeki bu komutlar Draw belgelerini düzenleyebilmek için kullanılırlar. (kopyala yapıştır gibi)"
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\">Özel Yapıştır</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\">Bul ve Değiştir</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Points\">Noktalar</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
-#, fuzzy
 msgid  "Enables you to edit points on your drawing."
 msgstr "Çizim üzerinde noktaları düzenlemenizi sağlar."
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\">Yapışma noktaları</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
-#, fuzzy
 msgid  "Enables you to edit glue points on your drawing."
 msgstr "Çizim üzerinde yapışma noktalarını düzenlemenizi sağlar."
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\">Eşini yarat</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\">Çapraz-perdeleme</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\">Alanlar</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"Links\">Bağlantılar</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\">Görüntü Haritası</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\">Köprü</link>"
 
 #: source/text/sdraw/main0103.xhp#tit
-#, fuzzy
 msgid  "View"
 msgstr "Görünüm"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"File\">Dosya</link>"
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
 #, fuzzy
@@ -1770,8 +1756,9 @@ msgid  "Switch to the master page view."
 msgstr "Asıl sayfa görünümüne geçer."
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Open\">Aç</link>"
 
 #: source/text/sdraw/main0104.xhp#tit
 #, fuzzy
@@ -1779,8 +1766,9 @@ msgid  "Insert"
 msgstr "Ekle"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\">Ekle</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
 #, fuzzy
@@ -1788,36 +1776,44 @@ msgid  "This menu allows you to insert elements, such as graphics and guides, in
 msgstr "Bu menü Draw belgelerinize çeşitli elemanlar eklemenizi sağlar. Örneğin, grafikler veya kılavuzlar gibi."
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\">Slayt</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\">Katman</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\">Kavrama Noktası/Çizgisi Ekle</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\">Yorum</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\">Özel Karakter</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\">Köprü</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"File\">Dosya</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\">Çizelge</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
 #, fuzzy
@@ -1825,12 +1821,14 @@ msgid  "Inserts a chart."
 msgstr "Tablo ekler."
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\">Kayan Çerçeve</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"File\">Dosya</link>"
 
 #: source/text/sdraw/main0105.xhp#tit
 #, fuzzy
@@ -1838,8 +1836,9 @@ msgid  "Format"
 msgstr "Biçim"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0105.xhp\" name=\"Format\">Biçim</link>"
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
 #, fuzzy
@@ -1847,40 +1846,49 @@ msgid  "Contains commands for formatting the layout and the contents of your doc
 msgstr "Belgenizin genel görünümünü ve içeriğini biçimlendirebilmeniz için gerekli komutları içerir."
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Character\">Karakter</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\">Paragraf</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\">Madde İşaretleme ve Numaralama</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\">Sayfa</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\">Konum ve Boyut</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"Line\">Çizgi</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"Area\">Alan</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"Text\">Metin</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\">Katman</link>"
 
 #: source/text/sdraw/main0106.xhp#tit
 #, fuzzy
@@ -1888,8 +1896,9 @@ msgid  "Tools"
 msgstr "Araçlar"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\">Araçlar</link>"
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
 #, fuzzy
@@ -1897,12 +1906,14 @@ msgid  "This menu provides tools for $[officename] Draw as well as access to lan
 msgstr "Bu menü çeşitli dil ve sistem seçeneklerinin yanı sıra, $[officename] Draw için de araçlar içerir."
 
 #: source/text/sdraw/main0106.xhp#hd_id3153415.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\">Otomatik Düzeltme Seçenekleri</link>"
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\">Özelleştir</link>"
 
 #: source/text/sdraw/main0200.xhp#tit
 #, fuzzy
@@ -1910,8 +1921,9 @@ msgid  "Toolbars"
 msgstr "Araç çubukları"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
+#, fuzzy
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\">Araç çubukları</link></variable>"
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
 #, fuzzy
@@ -1924,8 +1936,9 @@ msgid  "Line and Filling Bar"
 msgstr "Çizgi ve Dolgu Çubuğu"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\">Çizgi ve Dolgu Çubuğu</link>"
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
 #, fuzzy
@@ -1933,24 +1946,29 @@ msgid  "The Line and Filling bar contains commands for the current editing mode.
 msgstr "Çizgi ve Dolgu Çubuğu güncel düzenleme kipi için komutlar içerir."
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\">Çizgi Biçemi</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\">Çizgi Kalınlığı</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\">Çizgi Rengi</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\">Alan Biçemi / Doldurma</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\">Gölge</link>"
 
 #: source/text/sdraw/main0210.xhp#tit
 #, fuzzy
@@ -1958,16 +1976,19 @@ msgid  "Drawing Bar"
 msgstr "Ana Araç Çubuğu"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\">Çizim Çubuğu</link>"
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
+#, fuzzy
 msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
-msgstr ""
+msgstr "<emph>Çizim</emph> araç çubuğu temel çizim araçlarını barındırır."
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Metin</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
 #, fuzzy
@@ -1975,8 +1996,9 @@ msgid  "Draws a filled rectangle where you drag in the current document. Click w
 msgstr "Geçerli belgenizin üzerinde, içi dolu dikdörtgen çizmenize yarar. Dikdörtgenin köşeşinin başlamasını istediğiniz noktayı tıklayın ve istediğiniz ölçüde sürükleyin. Eğer bir kare çizmek istiyorsanız Shift tuşunu basılı tutun."
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Metin</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
 #, fuzzy
@@ -1984,8 +2006,9 @@ msgid  "Draws a filled oval where you drag in the current document. Click where 
 msgstr "Geçerli belgenizin üzerinde, içi dolu bir oval çizmenize yarar. Ovalin başlamasını istediğiniz noktayı tıklayın ve istediğiniz ölçüde sürükleyin. Eğer bir çember çizmek istiyorsanız Shift tuşunu basılı tutun."
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Metin</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
 #, fuzzy
@@ -1993,8 +2016,9 @@ msgid  "Draws a text box where you click or drag in the current document. Click 
 msgstr "Geçerli belgenizin üzerinde, metin kutusu çizmenize yarar. Belge üzerinde herhangi bir yeri tıklayın sonra da içine yazın veya kopyaladığınız bir metni yapıştırın."
 
 #: source/text/sdraw/main0210.xhp#par_idN107C8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\"\>Lines and Arrows\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\">Çizgiler ve Oklar</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN126D7
 #, fuzzy
@@ -2002,8 +2026,9 @@ msgid  "Opens the Arrows toolbar to insert lines and arrows."
 msgstr "Oklar menüsünü açar, çizgiler ve oklar eklemek için."
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Points\">Noktalar</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
 #, fuzzy
@@ -2011,8 +2036,9 @@ msgid  "Enables you to edit points on your drawing."
 msgstr "Çizim üzerinde noktaları düzenlemenizi sağlar."
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\">Yapışma Noktaları</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
 #, fuzzy
@@ -2020,16 +2046,19 @@ msgid  "Enables you to edit glue points on your drawing."
 msgstr "Çizim üzerinde yapışma noktalarını düzenlemenizi sağlar."
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\">Özelleştir</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\">Sürümler</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
+#, fuzzy
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">Çıkarma Açık/Kapalı</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
 #, fuzzy
@@ -2042,48 +2071,59 @@ msgid  "Options Bar"
 msgstr "Seçenek çubuğu"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\">Çizim Çubuğu</link>"
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
+#, fuzzy
 msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "<emph>Seçenekler</emph> araç çubuğuna <emph>Görünüm - Araç Çubukları - Seçenekler</emph> menüsü altından ulaşılabilir."
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\">Izgaraya Uydur</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\">Taşıma Sırasında Yardımcı Çizgiler</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\">Izgaraya Uydur</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\">Rehbere Uydur</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\">Sayfa Kenarlarına Uydur</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\">Nesne Çerçevesine uydur</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\">Nesne Noktalarına Uydur</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\">Hızlı Düzenlemeye İzin Ver</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\">Yalnızca Metin Alanı Seç</link>"
 
 #: source/text/sdraw/main0503.xhp#tit
 #, fuzzy
@@ -2091,8 +2131,9 @@ msgid  "$[officename] Draw Features"
 msgstr "$[officename] Draw Özellikleri"
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
+#, fuzzy
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\">$[officename] Draw Özellikleri</link></variable>"
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
 #, fuzzy

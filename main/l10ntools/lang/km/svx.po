@@ -941,11 +941,11 @@ msgstr "លុប​"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ផែនទី​រូបភាព​ត្រូវ​បាន​កែប្រែ ។​\nតើ​អ្នក​ចង់​រក្សាទុក​ការ​ផ្លាស់ប្តូរ​​ដែរ​ឬ​ទេ ?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ផែនទី​រូបភាព​ត្រូវ​បាន​កែប្រែ ។​\nតើ​អ្នក​ចង់​រក្សាទុក​ការ​ផ្លាស់ប្តូរ​ដែរ​​ឬ​ទេ ?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "​ការ​សង្គ្រោះ​ឯកសារ %PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "សូម​ចុច 'ចាប់ផ្តើម​សង្គ្រោះ' ដើម្បី​ចាប់ផ្តើម​ដំណើរការ​សង្គ្រោះ​ឯកសារ​ដែល​បាន​រាយ​ខាងក្រោម ។ \n\nជួរឈរ 'ស្ថានភាព' បង្ហាញ​ថាតើ​ឯកសារ​អាច​ត្រូវ​បាន​សង្គ្រោះ​ឬ​អត់ ។"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "ស្ថានភាព​ឯកសារ​ដែល​បាន​ស
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "ស្ថានភាព​ឈ្មោះ​ឯកសារ\t"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "របាយការណ៍​គាំង​ត្រូវ​បាន
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "ការ​សង្គ្រោះ​ឯកសារ​របស់​អ្នក​ត្រូវ​បាន​បញ្ចប់ ។\nចុច 'បញ្ចប់' ដើម្បី​មើល​ឯកសារ​របស់​អ្នក ។"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "តើ​អ្នក​ពិត​ជា​ចង់​បោះបង
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "ដំណើរការ​សង្គ្រោះ​ស្វ័យប្រវត្តិ​ត្រូវ​បាន​ផ្អាក ។\n\nបើ​អ្នក​ចុច 'រក្សាទុក' ឯកសារ​ដែល​បាន​រាយ​ខាង​ក្រោម នឹង​ត្រូវ​បាន​រក្សាទុក​ក្នុង​ថត​ដែល​បាន​ចំណាំ​ខាង​ក្រោម ។ ចុច 'បោះបង់' ដើម្បី​បិទ​អ្នក​ជំនួយការ​ដោយ​មិន​រក្សាទុក​ឯកសារ ។"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "សូម​ស្វាគមន៍​មក​កាន់របាយ
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "ឧបករណ៍​របាយការណ៍​កំហុស​នេះ ប្រមូល​ព័ត៌មាន​អំពី​របៀប​ដែល %PRODUCTNAME កំពុង​ធ្វើ​ការ និង​ផ្ញើ​វា​ទៅ​កាន់ Oracle ដើម្បី​ជួយ​ធ្វើ​ឲ្យ​កំណែ​អនាគត​កាន់​តែ​ប្រសើរ ។\n\nងាយស្រួល​ណាស់ - គ្រាន់តែ​ផ្ញើ​របាយការណ៍ ដោយ​ចុច 'ផ្ញើ' ក្នុង​ប្រអប់​បន្ទាប់ ឬ អ្នក​អាច​ពណ៌នា​យ៉ាង​សង្ខេប​ថា​តើ​កំហុស​បាន​កើតឡើង​យ៉ាង​ដូចម្តេច ហើយ​បន្ទាប់​មក​ចុច 'ផ្ញើ' ។ បើ​អ្នក​ចង់​មើល​របាយការណ៍ ចុច​ប៊ូតុង 'បង្ហាញ​របាយការណ៍' ។ បើ​អ្នក​ចុច \"កុំ​ផ្ញើ\" នោះ​ទិន្នន័យ​នឹង​មិន​ត្រូវ​បាន​ផ្ញើ ។\n\nភាព​ឯកជន​របស់​អតិថិជន\nយើង​ប្រមូល​តែ​ព័ត៌មាន​ដែល​ទាក់ទង​នឹង​ស្ថានភាព​របស់ %PRODUCTNAME %PRODUCTVERSION នៅ​ពេល​ដែល​កំហុស​បាន​កើតឡើង​ប៉ុណ្ណោះ ។ ព័ត៌មាន​ផ្សេង​ទៀត​អំពី​ពាក្យ​សម្ងាត់ ឬ មាតិកា​​ឯកសារ​នឹង​មិន​ត្រូវ​បាន​ប្រមូល​ឡើយ ។\n\nព័ត៌មាន​នឹង​ត្រូវ​បាន​ប្រើ​តែ​ដើម្បី​ធ្វើ​ឲ្យ​គុណភាព %PRODUCTNAME កាន់​តែ​ប្រសើរ​ប៉ុណ្ណោះ និង​មិន​ត្រូវ​បាន​ចែក​ទៅ​ឲ្យ​អ្នក​ទីបី​ឡើយ ។\nសម្រាប់​ព័ត៌មាន​បន្ថែម​ស្តី​អំពី​គោលការណ៍​ភាព​ឯកជន​របស់ Oracle ​សូម​មើល\nhttp://www.sun.com/privacy/"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "ជម្រើស... "
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "ខ្ញុំ​​អនុញ្ញាត​​ឲ្យ Oracle ​​​ទាក់​ទង​​​​​ជា​មួយ​​​​​ខ្ញុំ​​​​ ​ស្តី​អំពី​​របាយ​​ការណ៍​​​នេះ ។"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "ច្រក "
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "ឧបករណ៍​របាយការណ៍​កំហុស %PRODUCTNAME ចាំបាច់​ត្រូវ​តភ្ជាប់​ទៅ​អ៊ីនធឺណិត ដើម្បី​អាច​ផ្ញើ​របាយការណ៍​កំហុស ។\nក្រុមហ៊ុន​ទាំងឡាយ​ជារឿយៗ​ប្រើ​ម៉ាស៊ីន​បម្រើ​ប្រូកស៊ី ភ្ជាប់​ជាមួយ​ជញ្ជាំង​ភ្លើង ដើម្បី​ការពារ​បណ្តាញ ។\nប្រសិនបើ​វា​កើត​ឡើង​ចំពោះ​អ្នក អ្នក​ត្រូវ​តែ​បញ្ជាក់​អាសយដ្ឋាន និង​​ច្រក​សម្រាប់​ម៉ាស៊ីន​បម្រើ ។"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "វណ្ឌវង្ក​​ត្រូវ​បាន​​​កែប្រែ ។​\nតើ​​អ្នក​ចង់​រក្សាទុក​ការ​ផ្លាស់ប្តូរ​ឬ​ទេ ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "តើ​អ្នក​ចង់​បង្កើត​វណ្ឌវ
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "ការ​កំណត់​តំបន់​ការងារ​ថ្មី​​មួយ​នឹង​\nបណ្តាល​ឲ្យ​វណ្ឌវង្ក​ត្រូវ​បាន​លុប ។​\nតើ​អ្នក​ពិត​ជា​ចង់​បន្ត​ឬ​ ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "ទាមទារ​ការ​បញ្ចូល​ក្នុងវ
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "ធាតុ​​មាន​រួច​ហើយ ។​\nសូម​ជ្រើស​ឈ្មោះ​ផ្សេង​ទៀត ។"
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# កំណត់ត្រា​នឹង​ត្រូវ​បាន�
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "ប្រសិន​បើ​អ្នក​ចុច 'បាទ/ចាស' អ្នក​នឹង​មិន​អាច​មិនធ្វើ​វិញ​​ប្រតិបត្តិការ​នេះ​បាន​ទេ !​\nយ៉ាង​ណា​ក៏​ដោយ តើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "ឈ្មោះ​រូបរាង​មិន​ត្រឹមត្
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "តើ​អ្នក​ពិត​ជា​ចង់​​\nលុប​វត្ថុ​នេះ​ឬ​ទេ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "តើ​អ្នក​ពិត​ជា​ចង់​\n​លុប​រូបរាង​នេះ​ឬទេ​ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "តើ​អ្នក​ចង់​លុប​ឯកសារ​ដែ
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "មិន​អាច​បើក​ឯកសារ​នេះ​ ។​\nតើ​អ្នក​ចង់​បញ្ចូល​ផ្លូវ​ស្វែងរក​មួយ​ផ្សេង​ទៀត​ឬ​ទេ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "អ្នក​រៀប​ចំ ​... "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "ឈ្មោះ​​រូបរាង​នេះ​មាន​រួច​ហើយ ។​\nសូម​ជ្រើស​​​មួយ​ផ្សេង​ទៀត ។"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -6521,7 +6521,7 @@ msgstr "ឧបករណ៍​ដែល​បានបញ្ជាក់​មិ
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
 msgid  "The object cannot be accessed\\ndue to insufficient user rights."
-msgstr ""
+msgstr "វត្ថុ​មិន​អាច​ចូល​ដំណើរការ​បាន​ទេ\nដោយ​សារ​តែ​សិទ្ធិ​អ្នក​ប្រើ​មិន​គ្រប់គ្រាន់ ។"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
 msgid  "Sharing violation while accessing the object."
@@ -6533,7 +6533,7 @@ msgstr "មិន​មាន​ទំហំ​បន្ថែម​នៅ​ល
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
 msgid  "This operation cannot be run on\\nfiles containing wildcards."
-msgstr ""
+msgstr "ប្រតិបត្តិការ​នេះ​មិន​អាច​ដំណើរការ​នៅ​លើ\nឯកសារ​ដែល​មាន​តួអក្សរ​ជំនួស​បាន​ទេ ។"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
 msgid  "This operation is not supported on this operating system."
@@ -6617,7 +6617,7 @@ msgstr "ឯកសារ​មិន​អាច​ត្រូវ​បាន​
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
 msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
-msgstr ""
+msgstr "ព័ត៌មាន​ឯកសារ​មិន​អាច​ត្រូ​វបាន​អាន​ពី​ឯកសារ​បាន​ទេ ពីព្រោះ\nមិន​ស្គាល់​​ទ្រង់ទ្រាយ​ព័ត៌មាន​ឯកសារ​មិន​ស្គាល់\nឬ​មិនាមន​ព័ត៌មាន​ឯកសារ ។"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
 msgid  "This document has already been opened for editing."
@@ -6649,11 +6649,11 @@ msgstr "មិន​អាច​បង្កើត​ការ​តភ្ជា
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
 msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "កំហុស​ក្នុងការ​អាន​ទិន្នន័យ​ពី​អ៊ីនធឺណិត ។\nសារ​កំហុស​ម៉ាស៊ីន​បម្រើ ៖ $(ARG1) ។"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
 msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "កំហុស​ក្នុង​ការ​ផ្ទេរ​ឯកសារ​ទៅ​អ៊ីនធឺណិត ។\nសារ​កំហុស​ម៉ាស៊ីន​បម្រើ ៖ $(ARG1) ។"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
 msgid  "General Internet error has occurred."
@@ -6765,7 +6765,7 @@ msgstr "ថត​ជាវ​​ត្រូវ​បាន​ទាមទារ
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
 msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
-msgstr ""
+msgstr "ឯកសារ​នេះ​មាន​គុណលក្ខណៈ​ដែល​មិន​អាច​ត្រូវ​បាន​រក្សាទុក​នៅ​ក្នុង​ទ្រង់ទ្រាយ​ដែល​បាន​ជ្រើស ។\nសូម​រក្សាទុក​ឯកសារ​ជា​ទ្រង់ទ្រាយ %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
 msgid  "The file $(FILENAME) cannot be saved. Please check your system settings. You can find an automatically generated backup copy of this file in folder $(PATH) named $(BACKUPNAME)."
@@ -6781,19 +6781,19 @@ msgstr "មិន​អាច​បង្កើត​ច្បាប់ចម្
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
 msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
-msgstr ""
+msgstr "ព្យាយាម​ដែល​ត្រូវ​បាន​ធ្វើ​ ដើម្បី​ប្រតិបត្តិ​ម៉ាក្រូ ។\nដើម្បី​សុវត្ថិភាព ការ​គាំទ្រ​ម៉ាក្រូ​ត្រូវ​បាន​បិទ ។"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
 msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
-msgstr ""
+msgstr "ឯកសារ​នេះ​មាន​ម៉ាក្រូ ។\n\nម៉ាក្រូ​​អាច​មាន​មេរោគ ។ ការ​អនុវត្ត​ម៉ាក្រូ​ត្រូវ​បានបិទ​ដោយ​សារ​ទេ​ការ​កំណត់​សុវត្ថិភាព​ម៉ាក្រូ​នៅ​ក្នុង ឧបករណ៍ - ជម្រើស - %PRODUCTNAME - សុវត្ថិភាព ។\n\nដូច្នេះ មុខងារ​មួយ​ចំនួន​អាច​ប្រើ​មិន​បាន ។"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
 msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "មាតិកា និង/ឬ​ម៉ាក្រូ​​ឯកសារ​ដែល​បាន​ចុះ​ហត្ថ​លេខ​ឌីជីថល​មិន​ត្រូវ​គ្នា​នឹង​ហត្ថលេខា​របស់​ឯកសារ​បច្ចុប្បន្ន​ទេ ។\n\nវា​អាច​ជា​លទ្ធផល​នៃ​ការ​គណនា​ឯកសារ​ ឬ​ខូច​ខាត​ឯកសារ​រចនាសម្ព័ន្ធ​ដោយ​សារ​តែ​ការ​បញ្ជូន ។\n\nយើង​ផ្ដល់​អនុសាសន៍​ថា អ្នក​កុំ​ជឿ​លើ​មាតិការ​របស់​ឯកសារ​បច្ចុប្បន្ន ។\nការ​អនុវត្ត​ម៉ាក្រូ​ត្រូវ​បានបិទ​សម្រាប់​ឯកសារ​នេះ ។\n "
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
 msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "ឯកសារ​ដែលបាន​អ៊ិនគ្រីប​មាន​ស្ទ្រី​ម​ដែល​មិនបាន​អ៊ិនគ្រីប ។\n\nវា​​អាច​ជា​លទ្ធផល​នៃ​ការ​គណនា​ឯកសារ ។\n\nយើង​ផ្ដល់​អនុសាសន៍ថា អ្នកកុំ​ទុកចិត្តលើ​មាតិកា​របស់​ឯកសារ​បច្ចុប្បន្ន ។\nការ​អនុវត្ត​ម៉ាក្រូ​ត្រូវ​បានបិទ​សម្រាប់​ឯកសារ​នេះ ។\n "
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
 msgid  "Invalid data length."
@@ -6821,7 +6821,7 @@ msgstr "មិន​អាច​មានមុខងារ ៖ ការ​ព
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
 msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
-msgstr ""
+msgstr "ពាក្យ​សម្ងាត់​របស់​សៀវភៅ​បញ្ជី​ដែល​បាន​ចែករំលែក​មិន​អាច​ត្រូវ​បាន​កំណត់ ឬ​បានផ្លាស់ប្ដូរ ។\nធ្វើ​ឲ្យ​​របៀប​​​ចែករំលែក​របៀប​​អសកម្ម​សិន ។"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
 msgid  "INSRT"

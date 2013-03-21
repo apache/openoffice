@@ -53,19 +53,19 @@ msgstr "Ath-shuidhich"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~Glè àrd.\nCha bhi cead-ruith ach aig macrothan o thùsan earbsach. Bidh macro sam bith eile, soidhneadh ann no às, à comas."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "À~rd.\nCha bhi cead-ruith ach aig macrothan soidhnichte o thùsan earbsach. Bidh macrothan gun soidhneadh à comas."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~Meadhanach.\nIarraidh sinn cead ort mus cuir sinn gu dol macro o thùs nach eil earbsach."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "Ì~seal (cha mholamaid seo).\nThèid macro sam bith a chur gu dol gun dearbhadh. Na cleachd an roghainn seo ach ma tha thu làn-chinnteach gum bi gach sgrìobhainn a dh'fhosglas tu sàbhailte."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "Teisteanasan earbsach"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "Air fhoillseachadh airson\tAir fhoillseachadh le\tFalbhaidh an ùine air"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "Chuir na leanas soidhneadh ris a' phacaid seo:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tAir a shoidhneadh le\tID digiteach air fhoillseachadh le\tCeann-là"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "Cha b' urrainn dhuinn an teisteanas seo a dhearbhadh."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "Raon \tLuach"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "Tagh an teisteanas a bu toigh leat cleachdadh a chum soidhnidh"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "Air fhoillseachadh airson\tAir fhoillseachadh le\tFalbhaidh an ùine air"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

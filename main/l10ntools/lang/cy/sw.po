@@ -1169,7 +1169,7 @@ msgstr "Mae eich dogfen yn cynnwys meysydd cyfeiriadau cronfa ddata. Hoffech chi
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "Heb ganfod ffynhonnell data \\'%1\\'. Felly nid oedd modd canfod y cysylltiad i'r ffynhonnell data.\n\nGwiriwch osodiadau'r cysylltiadau."
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "Gosodiadau Defnyddiwr"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "Hoffech chi newid dewisiadau cydweddu'r templed rhagosodedig?\nBydd hyn yn effeithio ar holl ddogfennau newydd sy'n seiliedig ar y templed rhagosodedig."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "Pennawd"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "Ychwanegu:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Nodyn:\n Rhannu cyfeiriadau e-bost gyda hanner colon (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "Golygu Dogfen"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Ysgrifennwch neu golygwch eich dogfen os nad ydych wedi gwneud hynny'n barod. Bydd y newidiadau'n effeithio ar yr holl ddogfennau i'w cyfuno.\n\nBydd clicio ar 'Golygu Dogfen...' yn lleihau'r dewin dros dro i ffenestr fechan fel bod modd i chi olygu'r ddogfen cyfuno. Wedi golygu'r fddogfen, dychwelwch i'r dewin drwy glicio 'Dychwelyd i'r Dewin Cyfuno Post' ."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "Pori..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Defnyddiwch y deialog yma i newid y cronfeydd data rydych yn cael mynediad iddynt yn eich dogfen drwy feysydd y gronfa ddata, gyda chronfeydd data eraill. Dim ond un newid ar y tro sy'n bosibl. Mae dewisiadau niferus yn bosib yn y rhestr ar y chwith.\nDefnyddiwch y botwm pori i ddewis ffeil cronfa ddata."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "AwtoFformat"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "AwtoFformat wedi ei gwblhau.\nMedrwch dderbyn neu wrthod pob newid\neu rhai unigol."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "Swm"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Rydych wedi rhoi enw annilys.\nNid oedd modd creu'r AwtoFformat.\nCeisiwch eto gan ddefnyddio enw arall."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "~Colofn gyntaf fel pennawd"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Os nad yw'r celloedd dewiswyd yn cynnwys y data angenrheidiol, dewiswch yr ystod data.\n\nCynhwyswch y celloedd sy'n cynnwys labeli colofn a rhes os ydych am eu cynnwys yn eich siart."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr "[System]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "Mae'r gwiriwr sillafu rhyngweithiol eisoes yn\nweithredol mewn dogfen arall"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "Mae'r cyplysnodi rhyngweithiol eisoes yn\nweithredol mewn dogfen arall"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

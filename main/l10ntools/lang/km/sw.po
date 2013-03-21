@@ -1169,7 +1169,7 @@ msgstr "ឯកសារ​របស់​អ្នក​ មាន​វាល�
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "រក​មិន​ឃើញ​ប្រភព​ទិន្នន័យ \\'%1\\' ។ ដូច្នេះ​ការ​តភ្ជាប់​ទៅ​កាន់​ប្រភព​ទិន្នន័យ​ មិន​អាច​បង្កើត​បាន​ឡើយ ។ \n\nសូម​ពិនិត្យ​មើល​ការ​កំណត់​តភ្ជាប់ ។"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "<​កំណត់​របស់​អ្នក​ប្រើ​>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "តើ​អ្នក​ចង់​ផ្លាស់ប្តូរ​ជម្រើស​ឆប​គ្នា នៃ​ពុម្ព​លំនាំដើម​ឬ​ទេ ?​\nនេះ​នឹង​ជះឥទ្ធិពល​ដល់​ឯកសារ​ទាំងអស់ ដែល​ពឹង​ផ្អែក​លើ​ពុម្ព​លំនាំដើម ។"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "ចំណងជើង"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "បន្ថែម​ចំណងជើង​ដោយ​ស្វ័យប្រវត្តិ​\nនៅ​ពេល​បញ្ចូល ៖"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "លាក់ "
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "ចំណាំ ៖\nបំបែក​អាសយដ្ឋាន​អ៊ីមែល​ដោយ​ចំណុច​ក្បៀស (;) ។"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "កែសម្រួល​ឯកសារ"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "សរសេរ ឬ កែសម្រួល​ឯកសារ​របស់​អ្នក​ឥឡូវ ប្រសិន​បើ​អ្នក​មិនទាន់​ធ្វើ ឬ មិនទាន់​ធ្វើ​​ហើយ ។ ការ​ផ្លាស់​ប្តូរ​នឹង​មាន​ប្រសិទ្ធិភាព​ចំពោះ​ឯកសារ​ដែល​បញ្ចូល​គ្នា​ទាំង​អស់ ។\n\nចុច 'កែសម្រួល​​ឯកសារ...' នឹង​បន្ថយ​អ្នក​ជំនួយការ​ទៅ​ជា​​បង្អួច​តួច​មួយ​បណ្តោះ​អាសន្ន ដូច្នេះ​អ្នក​អាច​កែ​សម្រួល​ឯកសារ​សំបុត្រ​សំណុំ​បែប​បទ​បាន ។ បន្ទាប់​ពី​កែ​សម្រួល​ឯកសារ ត្រឡប់​ទៅ​អ្នក​ជំនួយការ​ដោយ​ចុច 'ត្រឡប់​ទៅ​អ្នកជំនួយការ​សំណុំ​បែប​បទ' ក្នុង​បង្អួច​តូច​ ។"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "រក​មើល..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "ប្រើ​ប្រអប់​នេះ ដើម្បី​ជំនួស​មូលដ្ឋាន​ទិន្នន័យ​ដែល​អ្នក​ចូល​ដំណើរការ​ក្នុង​ឯកសារ​របស់​អ្នក ​តាម​រយៈ​វាល​មូលដ្ឋាន​ ដោយ​មូលដ្ឋាន​ទិន្នន័យ​ផ្សេងទៀត ។ អ្នក​អាច​ធ្វើ​ការ​ផ្លាស់​ប្តូរ​តែ​មួយ នៅ​ក្នុង​រយៈពេល​មួយ ។ ជម្រើស​ច្រើនគឺអាច​ធ្វើ​ទៅ​បាន​ ក្នុង​បញ្ជី​នៅ​ខាង​ឆ្វេង ។\nប្រើ​ប៊ូតុង​កម្មវិធី​រុករក ដើម្បី​ជ្រើស​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ ។"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "កែ​ស្វ័យ​ប្រវត្តិ"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "កែ​ស្វ័យ​ប្រវត្តិ​បាន​បញ្ចប់ ។\nអ្នក​អាច​ទទួល ឬច្រាន​ចោល​ការ​ផ្លាស់ប្ដូរ​ទាំងអស់\nឬ​ទទួល ឬ​ច្រាន​ចោល​ការ​ផ្លាស់ប្ដូរ​ជាក់លាក់ ។"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "ផលបូក"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "អ្នក​បាន​បញ្ចូល​ឈ្មោះ​មិន​ត្រឹមត្រូវ​មួយ​ ។​\nមិន​អាច​បង្កើត​ទ្រង់ទ្រាយ​ស្វ័យប្រវត្តិ​ដែល​ចង់​បាន ។​\nព្យាយាម​ម្តង​ទៀត ដោយ​ប្រើ​ឈ្មោះ​ផ្សេង ។"
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "ជួរ​ឈរ​ទី​មួយ​ជា​ចំណងជើង
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "ប្រសិន​​បើ​ក្រឡា​ដែល​បាន​ជ្រើស​មិន​មាន​ទិន្នន័យ​ដែល​ចង់​បាន​ ជ្រើស​ជួរ​ទិន្នន័យ​ឥឡូវ​នេះ​ ។​\n\nរួមបញ្ចូល​ក្រឡា​ដែល​មាន​ស្លាក​ជួរឈរ​ និង​ជួរដេក ​បើ​អ្នក​ចង់​បញ្ចូល​ពួក​វា​ក្នុង​គំនូសតាង​របស់​អ្នក ។"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr "[ប្រព័ន្ធ]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "ការ​ពិនិត្យ​​​អក្ខ​រាវិរុទ្ធ​​​អន្តរ​សកម្ម មាន​សកម្មភាព​រួច​ហើយ\nក្នុង​ឯកសារ​មួយ​ផ្សេង​ទៀត"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "ការ​ដាក់​សហសញ្ញា​អន្តរ​សកម្ម មាន​សកម្មភាព​រួច​ហើយ\nក្នុង​ឯកសារ​មួយ​ផ្សេង​ទៀត"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

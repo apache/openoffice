@@ -117,7 +117,7 @@ msgstr "འཛུལ་སྤྱོད་ཐོབ་དབང་ཚུ་བར
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr " %PRODUCTNAME རིམ་སྒྲིག་གནད་སྡུད་ འཛུལ་སྤྱོད་འབད་ནི་ནང་ལུ་འཛོལ་བ་འབྱུངམ་ལས་བརྟེན་  %PRODUCTNAME འདི་ འགོ་བཙུགས་མི་ཚུགས།\n\nཁྱོད་རའི་རིམ་ལུགས་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,39 +145,42 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "འགྲུལ་ལམ་འཛིན་སྐྱོང་པ་འདི་ ཐོབ་མི་ཚུགས།\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "ཌིཀསི་བར་སྟོང་དལཝ་མ་ལངམ་ལས་  %PRODUCTNAME ལག་ལེན་པའི་གཞི་བཙུགས་འདི་  མཇུག་བསྡུ་མ་ཚུགས།  འོག་གི་གནས་ཁོངས་ནང་ ཌིཀསི་བར་སྟོང་མངམ་བཟོ་ནི་དང་  %PRODUCTNAME ལོག་འགོ་བཙུགས་གནང་:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "འཛུལ་སྤྱོད་དབང་ཆ་བརླག་སྟོར་ཞུགས་ཡོདཔ་ལས་  %PRODUCTNAME ལག་ལེན་པའི་གཞི་བཙུགས་འདི་  ལས་སྦྱོར་འབད་མ་ཚུགས།  འོག་གི་གནས་ཁོངས་དང་  %PRODUCTNAME ལོག་འགོ་བཙུགས་ཀྱི་དོན་ལས་   ཁྱོད་ལུ་  འཛུལ་སྤྱོད་དབང་ཆ་ལངམ་འབད་འོང་དགོཔ་ངེས་བདེན་འབད་གནང་:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "རྒྱ་བསྐྱེད་ $NAME གི་ འཐོན་རིམ་ $NEW འདི་ཁྱོད་ཀྱིས་གཞི་བཙུགས་འབད་ནི་འབད་དོ།  འཐོན་རིམ་གསརཔ་ $DEPLOYED འདི་ཧེ་མ་ལས་གཞི་བཙུགས་འབད་ནུག།\nགཞི་བཙུགས་འབད་དེ་ཡོད་པའི་རྒྱ་བསྐྱེད་འདི་ཚབ་བཙུགས་ནི་དོན་ལུ་  བཏུབ་གུ་ཨེབ་གཏང་འབད།\nགཞི་བཙུགས་འབད་ནི་འདི་བར་བཤོལ་འབད་ནི་ལུ་  ཆ་མེད་གཏང་འདི་ཨེབ་གཏང་འབད།"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "རྒྱ་བསྐྱེད་ $NAME གི་འཐོན་རིམ་ $NEW འདི་  ཁྱོད་ཀྱིས་གཞི་བཙུགས་འབད་ནི་འབད་དོ།  འཐོན་རིམ་འདི་ཧེ་མ་ལས་རང་གཞི་བཙུགས་འབད་ནུག\nགཞི་བཙུགས་འབད་དེ་ཡོད་པའི་ རྒྱ་བསྐྱེད་འདི་ཚབ་བཙུགས་ནི་ལུ་ བཏུབ་ཨེབ་གཏང་འབད།\nགཞི་བཙུགས་འབད་ནི་འདི་བར་བཤོལ་འབད་ནི་ལུ་  ཆ་མེད་གཏང་འདི་ཨེབ་གཏང་འབད།"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "རྒྱ་བསྐྱེད་ $NAME གི་འཐོན་རིམ་ $NEW འདི་  ཁྱོད་ཀྱིས་གཞི་བཙུགས་འབད་ནི་འབད་དོ།  འཐོན་རིམ་རྙིངམ་ $DEPLOYED འདི་  ཧེ་མ་ལས་གཞི་བཙུགས་འབད་ནུག\nགཞི་བཙུགས་འབད་དེ་ཡོད་པའི་རྒྱ་བསྐྱེད་འདི་  ཚབ་བཙུགས་ནི་ལུ་  བཏུབ་ཨེབ་གཏང་འབད།\nགཞི་བཙུགས་འབད་ནི་འདི་བར་བཤོལ་འབད་ནི་ལུ་  ཆ་མེད་གཏང་འདི་ཨེབ་གཏང་འབད།"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
 msgid  "System dependencies check"
@@ -185,7 +188,7 @@ msgstr "རིམ་ལུགས་རྟེན་འབྲེལ་ཞིབ་
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "འོག་གི་རིམ་ལུགས་རྟེན་འབྲེལ་ཚུ་འགྲུབ་མ་ཚུགསཔ་ལས་ \nརྒྱ་བསྐྱེད་འདི་གཞི་བཙུགས་འབད་མི་བཏུབ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -273,42 +276,34 @@ msgid  "Extension Software License Agreement"
 msgstr "རྒྱ་བསྐྱེད་མཉེན་ཆས་ཆོག་ཐམ་གན་འཛིན་"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
 msgstr "རྒྱ་བསྐྱེད་ཀྱི་གཞི་བཙུགས་དང་བཅས་འཕྲོ་མཐུད་ནི་ལུ་  འོག་གི་རིམ་ཚུ་རྗེས་སུ་འབྲང་གནང་:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "༡."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
 msgstr "མཇུག་བསྡུ་ཆོག་ཐམ་གན་འཛིན་འདི་ལྷག་ད།  ཆོག་ཐམ་ཚིག་ཡིག་ཆ་ཚང་བལྟ་ནི་ལུ་  ཌའི་ལོག་ནང་ བཤུད་ཕྲ་ཡང་ན་  \\'Scroll Down\\' ཨེབ་རྟ་འདི་ལག་ལེན་འཐབ་གནང་།"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "༢."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
 msgstr "རྒྱ་བསྐྱེད་ཀྱི་དོན་ལུ་\\'Accept\\' ཨེབ་རྟ་འདི་ཨེབ་ཐོག་ལས་  ཆོག་ཐམ་གན་འཛིན་འདི་དང་ལེན་འབད།"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "~Scroll Down"
 msgstr "མར་སྒྲིལ།(~S)"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
-#, fuzzy
 msgid  "Accept"
 msgstr "དང་ལེན་"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
-#, fuzzy
 msgid  "Decline"
 msgstr "ཉམས་ནི་"
 
@@ -579,27 +574,22 @@ msgid  "Make sure that no further users are working with the same %PRODUCTNAME, 
 msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "འདྲ་བཤུས་བརྐྱབ་དོ:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "ཁ་སྐོང་བརྐྱབ་པའི་བསྒང་འཛོལ་བ:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "རྩ་བསྐྲད་གཏང་པའི་བསྒང་འཛོལ་བ:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "རྒྱ་བསྐྱེད་འདི་ཧེ་མ་ལས་ཁ་སྐོང་བརྐྱབ་ནུག:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "རྒྱ་བསྐྱེད་གཏང་ནུག་ཟེར་མིན་འདུག:"
 
@@ -608,7 +598,6 @@ msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "Unknown"
 
@@ -621,47 +610,38 @@ msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERS
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "ལྕོགས་ཅན་བཟོ་ནོ:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "ལྕོགས་མེད་བཟོ་དོ:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "བརྡ་ལམ་-དབྱེ་བ་ སྐྱོན་འཛིན་འབད་མི་ཚུགས་: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "བརྡ་ལམ་-དབྱེ་བ་འདི་ རྒྱབ་སྐྱོར་མ་འབད་: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "ལྕོགས་ཅན་བཟོ་བའི་བསྒང་ འཛོལ་བ་འབྱུང་ནུག:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "ལྕོགས་མེད་བཟོ་བའི་བསྒང་  འཛོལ་བ་འབྱུང་ནུག:"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "ཡུ་ཨེན་ཨོ་ ནུས་ཅན་ དཔེ་མཛོད་ ཆ་ཤས།"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "ཡུ་ཨེན་ཨོ་ ཇ་བ་ ཆ་ཤས།"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "ཡུ་ཨེན་ཨོ་ པ་ཡི་ཐཱོན་ ཆ་ཤས།"
 
@@ -670,22 +650,18 @@ msgid  "UNO Components"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "ཡུ་ཨེན་ཨོ་ ཨར་ཌི་བི་ དབྱེ་བ་ དཔེ་མཛོད།"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "ཡུ་ཨེན་ཨོ་ ཇ་བ་ དབྱེ་བ་ དཔེ་མཛོད།"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "རིམ་སྒྲིག་ ལས་འཆར།"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "རིམ་སྒྲིག་ གནད་སྡུད།"
 
@@ -702,32 +678,26 @@ msgid  "The extension will not be installed because an error occurred in the Hel
 msgstr ""
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "རྒྱ་བསྐྱེད་"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME གཞི་རྩའི་དཔེ་མཛོད།"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "ཌའི་ལོག་ དཔེ་མཛོད།"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "དཔེ་མཛོད་ཀྱི་མིང་ གཏན་འབེབས་བཟོ་མ་ཚུགས།"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "དཔེ་མཛོད་འདི་གི་མིང་ ཧེ་མ་ལས་རང་ཡོདཔ་ཨིན། མིང་སོ་སོར་གདམ་ཁ་བརྐྱབ་གནང་།"
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "%MACROLANG དཔེ་མཛོད།"
 
@@ -736,37 +706,30 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-#, fuzzy
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr "[Enter \"yes\" or \"no\"]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-#, fuzzy
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Your input was not correct. Please enter \"yes\" or \"no\":"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "YES"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "NO"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
@@ -779,50 +742,42 @@ msgid  "ERROR: "
 msgstr ""
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ལུ་ འབྱོན་པ་ལེགས་སོ།"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "བྱོན་པ་ལེགས་སོ།"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "ཆོག་ཐམ་འགན་འཛིན།"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "རང་དོན་གྱི་གནས་སྡུད།"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "ལག་ལེན་པའི་མིང་།"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "གློག་ཐོག་དུས་མཐུན་བཟོ་"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "ཐོ་འགོད།"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "ཝི་ཛརཌི་འདི་གིས་ཁྱོད་ལུ་ ཆོག་ཐམ་འགན་འཛིན་ལས་བརྒྱུད་དེ་ %OLD_VERSION ནང་ལས་ ལག་ལེན་པའི་གནད་སྡུད་ གནས་སོར་གཏང་ནི་དང་  %PRODUCTNAME གི་ཐོ་འགོད་གཉིས་ལུ་ ལམ་སྟོན་འབད་འོང་།\n\nའཕྲོ་མཐུད་ནིའི་དོན་ལུ་ 'ཤུལ་མམ་' ལུ་ ཨེབ་གཏང་འབད།"
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "ཝི་ཛརཌི་འདི་གིས་ ཆོག་ཐམ་འགན་འཛིན་ལས་བརྒྱུད་དེ་ ཁྱོད་ལུ་ལམ་སྟོན་འབད་འོང་ དེ་ལས་%PRODUCTNAME ཐོ་འགོད་འབད་ནི་ལུ་ཡང་ ལམ་སྟོན་འབད་འོང་།\nའཕྲོ་མཐུད་ནིའི་དོན་ལུ་ 'ཤུལ་མམ་'  ལུ་ཨེབ་གཏང་འབད།"
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "མཇུག་བསྡུ།(~F)"
 
@@ -835,144 +790,120 @@ msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODU
 msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "ཁྱོད་ཀྱིས་འཐད་རི་འབའ་རི་ ཁ་མི་བཟེད་ནི་ཨིན་ན?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ལུ་ བྱོན་པ་ལེགས་སོ།"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "ཝི་ཛརཌི་འདི་གིས་ ཆོག་ཐམ་འགན་འཛིན་ལས་བརྒྱུད་དེ་ ཁྱོད་ལུ་ལམ་སྟོན་འབད་འོང་ དེ་ལས་%PRODUCTNAME ཐོ་འགོད་འབད་ནི་ལུ་ཡང་ ལམ་སྟོན་འབད་འོང་།\nའཕྲོ་མཐུད་ནིའི་དོན་ལུ་ 'ཤུལ་མམ་'  ལུ་ཨེབ་གཏང་འབད།"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "ཆོག་ཐམ་དང་ལེན་འབད་ནིའི་དོན་ལུ་ རིམ་པ་ཚུ་རྗེས་སུ་འབྲང་གནང་།"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "༡་"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "ཆོག་ཐམ་འགན་འཛིན་ཆ་ཚང་ སྟོན། ཌའི་ལོག་འདི་ནང་ ཆོག་ཐམ་གྱི་ཚིག་ཡིག་ཧྲིལ་བུ་སྟོན་ནིའི་དོན་ལུ་ བཤུད་ཕྲ་ལག་ལེན་འཐབ་ ཡང་ན་  '%PAGEDOWN' ཨེབ་རྟ་འདི་ ལག་ལེན་འཐབ་གནང་།"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "༢་"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "འགན་འཛིན་གྱི་ལམ་ལུགས་ཚུ་ དང་ལེན་འབད་ནིའི་དོན་ལུ་ 'དང་ལེན་' འདི་ ཨེབ་གཏང་འབད།"
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "མར་སྒྲིལ།(~w)"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "དང་ལེན།(~A)"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "ཁ་མི་བཟེད་ནི།(~D)"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "རང་དོན་གྱི་གནད་སྡུད་ གནས་སོར་གཏང་།"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr " %OLDPRODUCT གཞི་བཙུགས་ནང་ལས་ རང་དོན་གྱི་གནད་སྡུད་མང་ཤོས་རང་ %PRODUCTNAME %PRODUCTVERSION ནང་ལུ་ བསྐྱར་སྤྱོད་འབད་བཏུབ་ཨིན།\n\nཁྱོད་ཀྱིས་ %PRODUCTNAME  %PRODUCTVERSION ནང་ལུ་ སྒྲིག་སྟངས་ཚུ་ག་ནི་ཡང་བསྐྱར་བཅོས་མ་འབད་བ་ཅིན་ ཞིབ་དཔྱད་སྒྲོམ་ལུ་ རྟགས་བཀལ་ནི་བཤོལ།"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "རང་དོན་གྱི་གནད་སྡུད་ གནས་སོར་གཏང་།"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "གློག་ཐོག་དུས་མཐུན་བཟོ་"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME དེ་གིས་ ཐོན་རིམ་གསརཔ་ཚུ་གི་དོན་ལུ་  དུས་རྒྱུན་བར་མཚམས་ལུ་རང་བཞིན་གྱིས་འབད་འཚོལཝ་ཨིན། \nདེ་འབད་མི་འདི་གིས་  གློག་ཐོག་དུས་མཐུན་དེ་གིས་  རང་དོན་གནས་སྡུད་གནས་སོར་མི་འབད། \nཐོན་རིམ་གསརཔ་འདི་ཐོབ་ཚུགསཔ་ཡོདཔ་ཅིན་  ཁྱོད་ལུ་བརྡ་བསྐུལ་འབད་འོང་། \n\nཁྱོད་ཀྱིས་  ཁྱད་རྣམ་འདི་  ལག་ཆས་ཚུ་ / གདམ་ཁ་ཚུ་... / %PRODUCTNAME / གློག་ཐོག་དུས་མཐུན་ལུ་  རིམ་སྒྲིག་འབད་ཚུགས།"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "དུས་མཐུན་གྱི་དོན་ལུ་  རང་བཞིན་གྱིས་ཞིབ་དཔྱད་འབད།(~C)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "ཁྱོད་རའི་མིང་ཆ་ཚང་དང་ མིང་རྟགས་བསྡུས་པ་ཚུ་ འོག་ལུ་བཀོད།"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
-#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "ལག་ལེན་པའི་མིང་འདི་ ཡིག་ཆའི་རྒྱུ་དངོས་ཚུ་དང་ ཊེམ་པེལེཊིསི་ནང་ལུ་ དེ་ལས་ ཡིག་ཆ་ལུ་བསྒྱུར་བཅོས་འབད་ནི་ཚུ་ དྲན་ཐོ་བཀོད་པའི་བསྒང་ལུ་ ལག་ལེན་འཐབ་ནི་ཨིན།"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "འགོ་མིང་།(~F)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "མཇུག་མིང་།(~L)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "མིང་རྟགས་བསྡུས་པ་ཚུ།(~I)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "ཨ་པའི་མིང་།(~F)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME ཐོ་འགོད།"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "ད་ ཁྱོད་ལུ་ %PRODUCTNAME གི་ལག་ལེན་པ་འབད་ ཐོ་འགོད་འབད་ནིའི་གོ་སྐབས་ཡོད། ཐོ་འགོད་འདི་ ཁས་བླང་གི་སྒོ་ལས་ཨིན་ དེ་འབདཝ་ད་ འཁྲི་འགན་མེད་པ་ཨིན\n\nཁྱོད་ཀྱིས་ཐོ་འགོད་འབད་ནི་ཨིན་པ་ཅིན་ ང་བཅས་ཀྱིས་ཁྱོད་ལུ་ ཐོན་སྐྱེད་འདི་དང་འབྲེལ་བ་ཡོད་པའི་གོང་འཕེལ་གསརཔ་ཚུའི་སྐོར་ལས་ བརྡ་སླབ་འབད་འོང།"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "ང་ ད་ལྟོ་རང་ཐོ་འགོད་འབད་ནི་ཨིན།(~n)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "ང་ ཤུལ་ལས་ཐོ་འགོད་འབད་ནི་ཨིན།(~l)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "ང་ ཐོ་འགོད་མི་འབད།(~r)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "ང་བཅས་ཀྱིས་ ཁྱོད་ %PRODUCTNAME དང་གཅིག་ཁར་ སྤྲོ་བའི་སྒོ་ལས་ལཱ་འབད་འོང་མནོ་བའི་རེ་བ་ཡོད།\n\nཝི་ཛརཌི་ཕྱིར་ཐོན་གྱི་དོན་ལུ་ 'མཇུག་བསྡུ་' ལུ་ཨེབ་གཏང་འབད།"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -991,42 +922,34 @@ msgid  "Cannot find Office installation."
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Setup"
 msgstr "གཞི་སྒྲིག"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "%PRODUCTNAME གཞི་སྒྲིག"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "དྲན་ཚད་ཀྱིས་ མདའ་མ་ཟུནཔ།"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "གཞི་སྒྲིག་གིས་ ཨེམ་ཨེསི་ཨའི་ཐུམ་སྒྲིལ་ འཚོལ་མ་ཚུགས་པས།"
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "གཞི་སྒྲིག་འདི་ ཆ་མེད་བཏང་ཡི།"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
-#, fuzzy
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
 msgstr "ཝིན་ཌོསི་གཞི་བཙུགས་པ་ ཡར་བསྐྱེད་ཀྱི་དོན་ལུ་ བདག་སྐྱོང་པའི་ཁེ་དབང་ཚུ་དགོས་མཁོ་ཡོདཔ་ཨིན།"
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "གཞི་སྒྲིག་གིས་ ཡིག་སྣོད་ '%s' འདི་ འཚོལ་མ་ཐོབ་པས།"
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
-#, fuzzy
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "ནུས་མེད་ཀྱི་ བརྡ་བཀོད་གྲལ་རིམ་ གདམ་ཁ་ '%s'། གྲོགས་རམ་གྱི་དོན་ལུ་ '/?' ལག་ལེན་འཐབ།"
 
@@ -1043,117 +966,94 @@ msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrati
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "ཧེ་མ་ལས་ གཞི་སྒྲིག་ལས་སྦྱོར་ གཡོག་བཀོལ་ཏེ་ཡོད།"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "མ་ཤེས་པའི་འཛོལ་བ་ཅིག་ བྱུང་ཡི་!"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "ནུས་མེད་ ཡང་ན་ ཆ་མ་ཚང་བའི་གསལ་སྡུད།"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "མ་ཤེས་པའི་སྐད་ཡིག་: %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "རྒྱ་ནག་གི་(སྔར་སྲོལ་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "ཅེཛི།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "ཌེ་ནིཤ།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "ཇར་མཱན(ཇར་མ་ནི་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "གི་རིཀ།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "ཨིང་ལིཤ་(ཨུ་ཨེསི་ཨེ་)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "སིཔེ་ནིཤི་(སིཔེན་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "ཕིན་ནིཤ།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "ཕིརེནཆི་(ཕརཱནསི་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "ཧེབ་བིརིའུ།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "ཧང་ག་རི་ཡཱན།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "ཨི་ཊ་ལི་ཡཱན་(ཨི་ཊ་ལི་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "ཇ་པ་ནིསི།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "ཀོ་རི་ཡའིན།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "ཌཆ་(ནེ་དར་ལེནཌིསི་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "ནོར་ཝེ་ཇི་ཡཱན་( བོཀ་མཱལ་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "པོ་ལིཤ།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "པོར་ཊུ་གིསི་(བ་ར་ཛིལ་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "ར་ཤི་ཡཱན།"
 
@@ -1162,31 +1062,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "སུའི་ཌིཤི་(སུའི་ཌེན་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "ཐཱའི།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "ཊར་ཀིཤ།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "ཨིསི་ཊོ་ནི་ཡཱན།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "རྒྱ་ནག་གི་(འཇམ་སམ་བཟོ་བཟོཝ་)།"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "པོར་ཊུ་གིསི་(པོར་ཊུ་གཱལ་)།"

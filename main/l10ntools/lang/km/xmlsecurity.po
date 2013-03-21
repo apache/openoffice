@@ -53,19 +53,19 @@ msgstr "កំណត់​ឡើង​វិញ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "ខ្ពស់ណាស់ ។\nតែ​ម៉ាក្រូ​ពី​ទីតាំង​ឯកសារ​ដែល​ទុកចិត្ត​ប៉ុណ្ណោះ នឹង​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​រត់ ។ ម៉ាក្រូ​ផ្សេង​ទៀត​ទាំងអស់ មិន​ខ្វល់​ថាតើ​វា​ត្រូវ​បាន​ចុះ​ហត្ថលេខា ឬ អត់ នឹង​ត្រូវ​បាន​ធ្វើ​ឲ្យ​ប្រើ​លែង​បាន ។"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "ខ្ពស់ ។ \nតែ​ម៉ាក្រូ​ដែល​បាន​ចុះ​ហត្ថលេខា​ពី​ប្រភព​ដែល​ជឿ​ទុកចិត្ត​ប៉ុណ្ណោះ នឹង​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​រត់ ។ ម៉ាក្រូ​ដែល​មិន​បាន​ចុះ​ហត្ថលេខា នឹង​ត្រូវ​បាន​ធ្វើ​ឲ្យ​ប្រើ​លែង​បាន ។"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "មធ្យម ។\nទាមទារ​ការ​អះអាង មុន​ពេល​ប្រតិបត្តិ​ម៉ាក្រូ​ពី​ប្រភព​ដែល​មិន​គួរ​ឲ្យ​ទុក​ចិត្ត ។"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "ទាប (មិន​មែន​ជា​អនុសាសន៍) ។\\ម៉ាក្រូ​ទាំងអស់​នឹង​ត្រូវបាន​ប្រតិបត្តិដោយ​គ្មាន​ការ​អះអាង ។ ប្រើ​តែ​ការ​កំណត់​នេះ ប្រសិនបើ​អ្នក​ប្រាកដ​ថា​ឯកសារ​ទាំងអស់ នឹង​ត្រូវ​បាន​បើក​ដោយសុវត្ថិភាព ។"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "វិញ្ញា​បនបត្រ​ដែល​​​ជឿ​ទ
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "ចេញផ្សាយ​ចំពោះ\tចេញផ្សាយ​ដោយ\tកាលបរិច្ឆេទ​ផុត​កំណត់"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "​ខាង​ក្រោម​បាន​ចុះ​ហត្ថល
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tចុះហត្ថលេខា​ដោយ\tចេញផ្សាយ​លេខសម្គាល់​ជាលេខ​ដោយ\tកាលបរិច្ឆេទ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "មិន​អាច​ធ្វើ​ឲ្យ​វិញ្ញាប
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "វាល\tតម្លៃ"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "ជ្រើស​វិញ្ញាបនបត្រ​ដែល​អ
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "ចេញផ្សាយ​ចំពោះ\tចេញផ្សាយ​ដោយ\tកាលបរិច្ឆេទ​ផុត​កំណត់"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

@@ -73,7 +73,7 @@ msgstr "डेटा-स्रोत बचे दा नेईं हा. क�
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "दित्ते दा आदेश SELECT कथन नेईं ऐ.\\ सिर्फ पुच्छें दी इजाज़त ऐ. "
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "डेटाबेस च नेह् टेबल न,जिं’द�
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "एह् गल्ती करने आह्‌ला SQL आदेश ऐ:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -1621,7 +1621,7 @@ msgstr "\"$name$\" डेटा स्रोत कन्नै जोड़न�
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "डरैक्टरी \n\n$path$\n\\मजूद नेईं ऐ. क्या एह् सिरजी जानी चाहिदी? "
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1809,7 +1809,7 @@ msgstr "डेटाबेस "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "ख’लके सफें पर,तुस कनैक्शन लेई तफलीली सैट्टिंगां बनाई सकदे ओ. n\nनमियां सैट्टिंगां तुस बनांदे ओ तां ओह् थुआढ़ी मजूद सैट्टिंगें गी ओवरराइट करी देङन.   "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1825,7 +1825,7 @@ msgstr "प्रोग्राम लाइब्रेरी #lib# लोड 
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "डेटा स्रोत दी एह् किस्म इस प्लेटफार्म पर समर्थत नेईं ऐ. \\ सैट्टिंगां बदलने दी तुसें गी इजाज़त ऐ, पर खबरै तुस डेटाबेस कन्नै जोड़ने च समर्थ नेईं होगेओ. "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -2389,7 +2389,7 @@ msgstr "MySQL डेटाबेस कन्नै कनैक्शन सै
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "तुस ODBC जां JDBC बरतियै MySQL डेटाबेस कनैक्शन नेईं जोड़ी सकदे. \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ. "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "JDBC बरतियै MySQL डेटाबेस कन्नै क�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC बरतियै MySQL डेटाबेस कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो.नोट करो जे JDBC ड्राईवर जमात थुआढ़े  सिस्टम पर प्रस्थापत ऐ ते   %PRODUCTNAME कन्नै पंजीकृत ऐ .  \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2517,7 +2517,7 @@ msgstr "LDAP डरैक्टरी कन्नै कनैक्शन स�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "LDAP डरैक्टरी कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो. \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "अडबॅस D कन्नै कनैक्शन सैट्ट 
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "जिस अडबॅस D डेटाबेस कन्नै कनैक्शन जोड़ना चांह्‌दे ओ, उसदा नां प्रविश्ट करो. n %PRODUCTNAME च पैह्‌लें शा पंजीकृत  अडबॅस D डेटाबेस चुनने लेई ‘ तपाशो ... .’ पर क्लिक करो."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "ADO डेटाबेस कन्नै कनैक्शन सै�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ADO   डेटा  स्रोत कन्नै कनैक्शन जोड़ना चांह्‌दे ओ, कृपया उसदा URL प्रविश्ट करो.  nप्रदाता-निर्धारित सैट्टिंगें दे संरूपण लेई  ‘ तपाशो ’ पर क्लिक करो.\n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "ODBC डेटाबेस कन्नै कनैक्शन सै�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "जिस ODBC डेटाबेस कन्नै कनैक्शन जोड़ना चांह्‌दे ओ, उसदा नां प्रविश्ट करो..\n%PRODUCTNAME च पैह्‌लें शा पंजीकृत  ODBC डेटाबेस चुनने लेई ‘ तपाशो ... .’ पर क्लिक करो.\n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "JDBC डेटाबेस कन्नै कनैक्शन सै�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC डेटाबेस कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो.\n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ. "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "JDBC ओरेकल ~ड्राईवर जमात "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "  ओरेकल डेटाबेस कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो.\\ नोट करो जे JDBC ड्राईवर जमात थुआढ़े  सिस्टम पर प्रस्थापत ते   %PRODUCTNAME कन्नै पंजीकृत लोड़दी ऐ  .  \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ.   "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "स्प्रैडशीटें कन्नै कनैक्श�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "%PRODUCTNAME स्प्रैडशीट जां माईक्रोसाफ्ट एक्सैल वर्कबुक चुनने लेई ‘ तपाशो ’ पर क्लिक करो.\n%PRODUCTNAME   फाइल गी सिर्फ पढ़न-जोग अवस्था च खोह्‌ल्लग."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2813,7 +2813,7 @@ msgstr "डेटा स्रोत कन्नै कनैक्शन ज�
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "'$#$' नांऽ पैह्‌लें गै मजूद ऐ.\n किरपा करियै इक दूआ नांऽ प्रविश्ट करो. "
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
@@ -2829,7 +2829,7 @@ msgstr "टाइप रूप-रचनाकरण "
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "ख’लके खेतर पैह्‌लें गै प्राइमरी कुंजियें दे तौरा पर सैट न:\n "
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 msgid  "Assign columns"
@@ -2881,11 +2881,11 @@ msgstr "प्राईमरी कुंजी"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "स्रोत टेबल: \n "
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "मंजल- टेबल: \n "
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 msgid  "~All"
@@ -3421,11 +3421,11 @@ msgstr "रूप-रचना उदाहरण "
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "इक मुल्ल चुनो ,जेह्‌ड़ा सभनें नमें रकाडें च बिलानिर्देश  लब्भना ऐ. \nजेकर  खेतर च बिलानिर्देश मुल्ल नेईं होऐ तां सक्खनी अक्खर -लड़ी चुनो. "
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "इस खेतरै लेई बिलानिर्देश –मुल्ल प्रविश्ट करो. \n\\बाद च जिसलै टेबल च डेटा प्रविश्ट करदेओ, एह् अक्खर-लड़ी चनोए दे खेतरै लेई हर नमें रकाड च बरतोग.इसलेई इन सैल्ल रूप-रचना जिसी हेठ प्रविश्ट करने दी लोड़ ऐ, दे अनुकूल होना चाहिदा. "
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
@@ -3441,7 +3441,7 @@ msgstr "नंबर रूप-रचना प्रविश्ट करो."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "इस खेतर दी डेटा-लम्बाई तैऽ करो. \n\nजेकर इशारिया खेतर न तां नंबरें दी बद्धोबद्ध लम्बाई प्रविश्ट करनी होग,जेकर खेतर बाईनरी न तां लम्बाई डेटा –ब्लाक जिन्नी होग.  \\Nजिसलै मुल्ल इस डेटाबेस दे बद्धोबद्ध शा बद्ध होई  जंदा ऐ तां मुल्ल उसदे मताबक स्हेई होई जाग. "
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3457,7 +3457,7 @@ msgstr "एह् ओह् थां ऐ ,जित्थै  तुस डे�
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "जेकर इस खेतरै च स्वचलत बढ़ोतरी मुल्ल होने चाहिदे तां तालो . \n\nइस किस्मा दे खेतरें च डेटा प्रविश्ट नेईं करी सकदे.हर इक नमें रकाड गी अपने आप इक अंदरूनी मुल्ल निर्दिश्ट होई जाग. (पिछले रकाड दी बढ़ोतरी दे फलसरूप). "
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
@@ -3513,7 +3513,7 @@ msgstr " कोई प्राइमरी कुंजी नेईं"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "इस डेटाबेस च डेटा रकाड शनाख्त लेई इक नोखी इंडैक्स जां प्राइमरी कुंजी  लोड़दी ऐ. \nतुस इस टेबल च डेटा सिर्फ उसलै प्रविश्ट करी सकदे ओ जिसलै एह् दोऐ ढांचागत शर्तां पूरियां होन. \n\nक्या प्राइमरी कुंजी हूनै सिरजनी चाहिदी? "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
@@ -3541,11 +3541,11 @@ msgstr "स्वचलत बढ़ोतरी कथन"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "स्वचलत बढ़ोतरी खेतरा लेई SQLकथन प्रविश्ट करो  .\n\nजिसलै टेबल सरजोग तां इस  कथन दा तबादला सिद्धे डेटाबेस च होई जाग. "
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "कुसै बी किस्मा दी जानकारी डेटाबेस चा वापस हासल नेईं होई सकी. N इस डेटा स्रोत लेई टेबल डजैन अवस्था उपलब्ध नेईं ऐ."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"

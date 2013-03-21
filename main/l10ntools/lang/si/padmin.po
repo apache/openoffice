@@ -61,7 +61,7 @@ msgstr "ෆොන්ට එක් කරන්න"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "ඔබට ඇත්තටම මෙම ෆොන්ට ගොනුව මත ලිවීමට අවශ්‍යද?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "කිසිවක් නැත"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "%s ෆොන්ටය සඳහා හැඩතල ගොනුවක් (.afm දිගුවක් සහිත) හමු නොවුණු නිසා \n‍ෆොන්ටය ස්ථාපනය කිරීමට නොහැක. හැඩතල ගොනු ghostscript මඟින් සාදගත හැක, උදාහරණයක් ලෙස සහ ෆොන්ට ගොනු හෝ ඒවායේ afm උප බහලුම් පිහිටි බහලුමේහිම පිහිටීමට අවශ්‍යය."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "%s ෆොන්ට ගොනුව සඳහා ප්‍රමිති ගොනුව\nපිටපත් කිරීමට නොහැකි විය. ෆොන්ටය ස්ථාපනය නොවනු ඇත."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ෆොන්ට ගොනුව\n%s\n ගොනුව පිටපත් කිරීමට නොහැකි විය. ෆොන්ට ස්ථාපනය නොවනු ඇත."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "ගොනුවේ ප්‍රමිතියක් අඩංගු න
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "මෙට්‍රික්\n\n%s\n\nපහත හේතුව නිසා අනුවර්තනය කල නොහැක:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "\"%s\"  ධාවකය සෑම විටම අවශ්‍ය වන
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr " \"%s1\"ධාවකය ඉවත් කිරීමට නොහැකි විය. ගොනුව ඉවත් කිරීමට නොහැකි විය.\n\n%s2"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

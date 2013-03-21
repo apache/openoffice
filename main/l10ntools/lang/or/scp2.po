@@ -618,8 +618,9 @@ msgid  "&Install"
 msgstr "& ପ୍ରତିଷ୍ଠପନକର"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO60_CONFIGFILE
+#, fuzzy
 msgid  "OpenOffice.org 1.1 Configuration File"
-msgstr ""
+msgstr "%SXWFORMATNAME %SXWFORMATVERSION ସଂରଚନା ଫାଇଲ"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
@@ -627,8 +628,9 @@ msgid  "StarOffice 5.0 Template"
 msgstr "ସ୍ଟାର୍ଅଫିସ୍ ୫.୦ ନମୁନା"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+#, fuzzy
 msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
+msgstr "OpenOffice.org"
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -701,52 +703,42 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "ବିନା ପ୍ରଦର୍ଶନୀରେ %PRODUCTNAME ର ବ୍ୟବହାରକୁ ସକ୍ରିୟ କରିବା ପାଇଁ ଥିବା ଉପାଦାନ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "ସୂଚନା"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "ଇଣ୍ଟରନେଟ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "ଫନ୍ ଏବଂ ଅଧିକ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "ଭ୍ରମଣ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "ଅଧ୍ଯାଯଗୁଡିକ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "ଫାଇଲଗୁଡିକ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "ନମୁନାରୁ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "ଦଲିଲ ଖୋଲନ୍ତୁ"
 
@@ -1596,12 +1588,14 @@ msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSIONରେ ସସ୍କୃତ ସମର୍ଥନକୁ ସ୍ଥାପନ କରିଥାଏ"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
+#, fuzzy
 msgid  "Persian"
-msgstr ""
+msgstr "ଫାର୍ସି"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FA
+#, fuzzy
 msgid  "Installs Persian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONରେ ଫାର୍ସି ସମର୍ଥନକୁ ସ୍ଥାପନ କରିଥାଏ"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FO
 #, fuzzy
@@ -1907,181 +1901,145 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "E-mail Mailmerge"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "%PRODUCTNAME E-mail Mailmerge ବିଶେଷଗୁଣ ପାଇଁ ଏକକାଂଶ"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "ପାଇଥୋନ୍-UNO ବ୍ରିଜ"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
 msgstr "ପାଇଥନ୍ ସ୍କ୍ରିପଟିଙ୍ଗ ଭାଷା ସହିତ %PRODUCTNAMEକୁ ସ୍ବଯଂଚାଳିତ ସକ୍ଷମ କରିବା ପାଇଁ ମିଶାଅ୤ http://udk.openoffice.org/python/python-bridge.html କୁ ଦେଖନ୍ତୁ୤ଏକ ସଂପୂର୍ଣ୍ଣ ପ୍ରାମାଣ୍ଯ ଦଲିଲ ପାଇଁ ୤"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "ଶୀଘ୍ର ସ୍ଟାଟର୍"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSIONର ଆରମ୍ଭ ସମଯକୁ ତ୍ବରାନ୍ବିତକରିବାକୁ ଆରମ୍ଭ  ସିସ୍ଟମରେ ମୌଳିକ ଉପାଂଶଗୁଡିକ ଲୋଡ କର୤"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "ସଫ୍ଟୱେର ବିକାଶ କିଟ (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 msgstr "SDK ସମସ୍ତ ଆବଶ୍ୟକୀୟ ସାଧନ ପ୍ରଦାନ କରିଥାଏ, ଉଦାହରଣ ଏବଂ ଦଲିଲିକରଣ ଏବଂ ଅଫିସ ସହିତ।"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "ଉଇଣ୍ଡୋଜ ଏକ୍ସପ୍ଲୋର ବିସ୍ତାର"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
 msgstr "ଥମ୍ବନେଲ୍ ପୂର୍ବଦୃଶ୍ଯଗୁଡିକ ପରି,%PRODUCTNAME ଦଲିଲଗୁଡିକ ବିଷଯରେ ସୂଚନା ଦେଖାଇବା ପାଇଁ ମାଇକ୍ରୋସଫଟ୍ ଉଇଣ୍ଡୋଜ ଏକ୍ସପ୍ଲୋର୍ ସକ୍ଷମ ଅଟେ୤"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML ଦଲିଲ"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "ଟେକ୍ସଟ  ଦଲିଲ"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
-#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "ରାଇଟର ଉପୟୋଗ କରି  ପତ୍ରଗୁଡିକରେ, ରିପୋର୍ଟରେ,ଦଲିଲଗୁଡିକରେ ଏବଂ ଉଏବ୍ ପୃଷ୍ଠାଗୁଡିକରେ ଟେକ୍ସଟ ଏବଂ  ଲେଖାଚିତ୍ରଗୁଡିକୁ ସୃଷ୍ଟି ଏବଂ ସମ୍ପାଦନ କର ୤"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
 msgid  "&New"
 msgstr "ନୂତନ (&N)"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION ପାଠ୍ୟ ଦଲିଲ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION ମୂଖ୍ୟ ଦଲିଲ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION ପାଠ୍ୟ ଦଲିଲ ନମୁନା"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "ଖୋଲାଦଲିଲ ଟେକ୍ସଟ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "ଖୋଲାଦଲିଲ ଟେକ୍ସଟ  ନମୁନା  "
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "ଖୋଲାଦଲିଲ ମାଷ୍ଟର  ଦଲିଲ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTML ଦଲିଲ ନମୁନା"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "Microsoft Word 97-2003 ଦଲିଲ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "Microsoft Word ଦଲିଲ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "Microsoft Word 97-2003 ନମୁନା"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "ମାଇକ୍ରୋସଫଟ ଉଆର୍ଡ ନମୁନା"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "ପାଠ୍ୟବହୁଳ ଦଲିଲ"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ଲେଖକ"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
-#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
 msgstr "%PRODUCTNAME  ରାଇଟରକୁ ଉପୟୋଗକରି ପତ୍ରଗୁଡିକ,ରିପୋର୍ଟଗୁଡିକ ଏବଂ ଉଏବ ପୃଷ୍ଠାଗୁଡିକରେ ଟେକ୍ସଟ ଏବଂ ଲେଖାଚିତ୍ରଗୁଡିକୁ ସୃଷ୍ଟି କର ଏବଂ ସମ୍ପାଦନ କର୤"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "ପୋଗ୍ରାମ ମୋଡ୍ଯୁଲ୍"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ରାଇଟର୍ ପ୍ରଯୋଗ"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME ରାଇଟର୍ ସାହାୟ୍ଯ"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ରାଇଟର୍ ବିଷଯରେ ସାହାୟ୍ଯ"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX ରତ୍ପାନୀ"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "LaTeX ଲେଖକ ଦଲିଲ ପାଇଁ ରପ୍ତାନି ଛାଣକ।"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT ନମୁନା ଫିଲ୍ଟରଗୁଡିକ"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT ନମୁନା ଫିଲ୍ଟରଗୁଡିକ"

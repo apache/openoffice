@@ -53,19 +53,19 @@ msgstr "ફરી ગોઠવો"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "ખૂબ ઉચ્ચ (~V).\nમાત્ર વિશ્વાસુ ફાઈલ સ્થાનોમાંના મેક્રો જ માન્ય છે. બાકીના બધાંજ મેક્રો, તે સહી થયેલ હોય કે ના હોય, પરંતુ તેઓ નિષ્ક્રિય કરાયેલ છે."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "ઉચ્ચ (~i).\nવિશ્વાસુ સ્રોતોમાંથી માત્ર સહી કરાયેલ મેક્રો જ ચલાવવા માટે માન્ય છે. સહી વિનાના મેક્રો નિષ્ક્રિય કરાયેલ છે."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "મધ્યમ (~M).\nઅવિશ્વાસુ સ્રોતોમાંથી મેક્રો ચલાવવા પહેલાં ખાતરી જરૂરી છે."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "નીચું (આગ્રહણીય નથી) (~L).\nબધા મેક્રો ખાતરી વિના ચલાવવામાં આવશે. જો તમને ખાતરી હોય કે બધા દસ્તાવેજો સુરક્ષિત રીતે ખૂલશે તો જ આ વિકલ્પ વાપરો."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "ભરોસાપાત્ર પ્રમાણપત્રો"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "આને આપેલ છે\tઆના દ્વારા આપેલ છે\tસમાપ્તિ તારીખ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "નીચેનાંઓએ દસ્તાવેજ પેકેજ પ
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "આનાં દ્વારા સહી કરેલ\tડિજીટલ ઓળખ આનાં દ્રારા આપેલ\tતારીખ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "આ પ્રમાણપત્ર માન્ય રાખવામા
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "ક્ષેત્ર\tકિંમત"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "તમે સહી માટે જે પ્રમાણપત્ર�
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "આને આપેલ છે\tઆના દ્રારા આપેલ છે\tસમાપ્તિ તારીખ"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

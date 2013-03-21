@@ -61,7 +61,7 @@ msgstr "अक्षरगणान् योजय"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "किं भवान् वास्तविकरुपेण अस्या अक्षरगणसंचिकायाः उपरि लेखनं कर्तुम् इच्छति ?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "न किञ्चिदपि"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "एका संघटना संचिका (एकेन .afm विस्तारेण सह) अक्षरगणस्य कृते न मिलितः \n%s\n अतः, अक्षरगणान् संस्थापितं न कर्तुं शक्यते । ghostscript माध्यमेन अक्षरगणसंचिकायाः निर्माणं न भवितुं शक्नोति, उदाहरणार्थ, समाननिर्देशिकायां स्थिता अक्षरगणसंचिकायाः सदृशा अथवा अस्याः afm उपनिर्देशिकायाः सदृशा ।"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "अक्षरगणसंचिकायाः कृते मेट्रिक संचिका \n    %s\nप्रतिलिपिः न अभवत्। अक्षरगणः संस्थापितं न भविष्यति।"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "अक्षरगणसंचिका\n   %s\nप्रतिलिपिः न अभवत्। अक्षरगणः संस्थापितं न भविष्यति ।"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "संचिकायां मेट्रिक नास्ति ।
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "मेट्रिक\n\n%s\n\nनिम्नकारणात् न परिवर्तितुं शक्यते ।:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "चालकस्य \"%s\"  सर्वदा आवश्यकत�
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "चालकः \"%s1\"  न अपनयितुं अशक्यत । संचिकायाः अपनयं संभवः न आसीत्\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

@@ -145,7 +145,7 @@ msgstr "Campos de coluna"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "Campos\nde linha"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2269,7 +2269,7 @@ msgstr "~Descartar"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "A entrada\n#\ndeve ser excluída?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2713,7 +2713,7 @@ msgstr "Ocultar ~tudo"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "A proteção de célula terá efeito apenas depois que a planilha atual estiver protegida. \n\nSelecione 'Proteger documento' no menu 'Ferramentas' e especifique 'Planilha'."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3233,7 +3233,7 @@ msgstr "Nenhuma operação a executar"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "O intervalo não contém cabeçalhos de colunas.\nDeseja utilizar a primeira linha como cabeçalho de coluna?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3297,7 +3297,7 @@ msgstr "Chave de pesquisa não encontrada."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "Meta atingida.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3309,11 +3309,11 @@ msgstr ") na célula atual?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "Meta não atingida.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "Nenhum valor exato foi encontrado. \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3781,7 +3781,7 @@ msgstr "Operações múltiplas"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Você inseriu um nome inválido.\nNão foi possível criar o autoformato. \nTente novamente utilizando um nome diferente."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 msgid  "Range"
@@ -3813,7 +3813,7 @@ msgstr "Imprimir"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "Para aplicar um autoformato,\num intervalo da tabela de ao menos\n3x3 células deve ser selecionado."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 msgid  "(nested)"
@@ -3913,7 +3913,7 @@ msgstr "Relatório1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "não está disponível para a verificação ortográfica.\nVerifique a sua instalação e instale \no idioma desejado, se necessário"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 msgid  "Thesaurus can only be used in text cells!"
@@ -3925,7 +3925,7 @@ msgstr "Deseja continuar a verificação a partir do início da planilha atual?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "não está disponível para o dicionário de sinônimos.\nVerifique sua instalação e instale \no idioma desejado se necessário"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 msgid  "The spellcheck of this sheet has been completed."
@@ -4197,11 +4197,11 @@ msgstr "ativado"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "Este arquivo contém vínculos para outros arquivos.\nDeseja que eles sejam atualizados?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "Esse arquivo contém consultas. Os resultados dessas consultas não foram salvos.\nDeseja repetir essas consultas?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 msgid  "Too many conditions"
@@ -4209,7 +4209,7 @@ msgstr "Excesso de condições"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "Células preenchidas não podem ser deslocadas\nalém da planilha."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 msgid  "The table could not be inserted."
@@ -4229,7 +4229,7 @@ msgstr "Não há espaço suficiente na planilha para inserir aqui."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "O conteúdo da área de transferência é maior do que o intervalo selecionado.\nDeseja inseri-lo mesmo assim?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 msgid  "No references found."
@@ -4273,7 +4273,7 @@ msgstr "Comparar #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "O número máximo de células inválidas foi excedido.\nNem todas as células inválidas foram marcadas."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 msgid  "Delete contents"
@@ -4377,7 +4377,7 @@ msgstr "Sair da gravação"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "uEsta ação sairá do modo de gravação de alterações.\nTodas as informações sobre alterações serão perdidas.\n\nSair do modo de gravação de alterações?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 msgid  "The document can not be closed while a link is being updated."
@@ -4393,7 +4393,7 @@ msgstr "Fórmula da matriz  %1 L x %2 C"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "Este documento contém chamadas de macros.\nDeseja executá-las?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 msgid  "Hangul/Hanja Conversion"
@@ -4497,31 +4497,31 @@ msgstr "Sua planilha foi atualizada com alterações salvas por outros usuários
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "A planilha deve ser salva agora para ativar o modo compartilhado.\n\nDeseja continuar?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Conflitos de mesclagem previamente resolvidos serão perdidos e suas alterações na planilha compartilhada não serão salvas.\n\nDeseja continuar?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Desativar o modo de compartilhamento impede a todos os demais usuários da planilha compartilhada de mesclarem seus trabalhos. \n\nDeseja continuar mesmo assim?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "Esta planilha não está mais no modo compartilhado.\n\nSalve seu documento em um arquivo separado e mescle manualmente suas alterações com a planilha compartilhada."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "A planilha está no modo compartilhado. Isso permite que vários usuários possam acessar e editar a planilha ao mesmo tempo.\n\nAlterações nos atributos de formatação tais como fontes, cores, e formatos numéricos não serão salvos e algumas funcionalidades tais como edição de gráficos e desenho de objetos não estarão disponíveis no modo compartilhado. Desative o modo compartilhado para obter o acesso exclusivo, necessário para essas alterações e funcionalidades."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "O arquivo de planilha compartilhado está travado devido a uma mesclagem em andamento feita pelo usuário '%1' \n\nO modo de compartilhamento em um arquivo travado não pode ser desativado. Tente mais tarde."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "O arquivo de planilha compartilhado está travado devido a uma mesclagem em andamento feita pelo usuário '%1' \n\nTente salvar suas alterações mais tarde."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 msgid  "Unknown User"
@@ -4685,7 +4685,7 @@ msgstr "Excluir autoformatação"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "Deseja mesmo excluir o autoformato #?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
 msgid  "~Close"
@@ -11493,7 +11493,7 @@ msgstr "Atributos da fonte"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "Há grande quantidade de dados salvos na área de transferência.\nDeseja disponibilizar esse conteúdo para outros aplicativos?"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -11561,7 +11561,7 @@ msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "O %PRODUCTNAME Calc encontrou um erro na fórmula inserida.\nDeseja aceitar a correção proposta abaixo?\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -11605,7 +11605,7 @@ msgstr "Planilhas ~selecionadas"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "Você está colando dados em células que já contém dados.\nDeseja realmente substituir os dados existentes?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"

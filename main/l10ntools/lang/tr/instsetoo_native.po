@@ -1072,97 +1072,78 @@ msgid  "Volume"
 msgstr "Birim"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_1
-#, fuzzy
 msgid  "Advertising application"
 msgstr "Örnek uygulama"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_2
-#, fuzzy
 msgid  "Allocating registry space"
 msgstr "Kayıt boşluğu ayarlanıyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_3
-#, fuzzy
 msgid  "Free space: [1]"
 msgstr "Boş alan: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_4
-#, fuzzy
 msgid  "Searching for installed applications"
 msgstr "Kurulu uygulamalar aranıyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_5
-#, fuzzy
 msgid  "Property: [1], Signature: [2]"
 msgstr "Özellik: [1], İmza: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_6
-#, fuzzy
 msgid  "Binding executables"
 msgstr "Çalıştırılabilir programlar bağlanıyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_7
-#, fuzzy
 msgid  "File: [1]"
 msgstr "Dosya:[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_8
-#, fuzzy
 msgid  "Creating IIS Virtual Roots..."
 msgstr "IIS Sanal Kökleri Oluşturuluyor..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_9
-#, fuzzy
 msgid  "Removing IIS Virtual Roots..."
 msgstr "IIS Sanal Kökleri Siliniyor..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
-#, fuzzy
 msgid  "Searching for qualifying products"
 msgstr "Nitelenen ürünler aranıyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
-#, fuzzy
 msgid  "Computing space requirements"
 msgstr "Boşluk gereksinimleri hesaplanıyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
-#, fuzzy
 msgid  "Computing space requirements"
 msgstr "Boşluk gereksinimleri hesaplanıyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_13
-#, fuzzy
 msgid  "Creating folders"
 msgstr "Klasörler oluşturuluyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_14
-#, fuzzy
 msgid  "Folder: [1]"
 msgstr "Klasör: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_15
-#, fuzzy
 msgid  "Creating shortcuts"
 msgstr "Kısayollar oluşturuluyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_16
-#, fuzzy
 msgid  "Shortcut: [1]"
 msgstr "Kısayol: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_17
-#, fuzzy
 msgid  "Deleting services"
 msgstr "Hizmetler siliniyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_18
-#, fuzzy
 msgid  "Service: [1]"
 msgstr "Hizmet: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_19
-#, fuzzy
 msgid  "Creating duplicate files"
 msgstr "Çift dosyalar oluşturuluyor"
 
@@ -1712,8 +1693,9 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION 'ı indirdiğiniz için teşekkür ederiz."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
+#, fuzzy
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
-msgstr ""
+msgstr "Yükleme için dosyalar açılarak sabit diskinize kopyalanacaktır. Sonra, %PRODUCTNAME yükleme işlemi otomatik olarak başlayacaktır.\r\n\r\nDevam etmek için \\'İleri\\' yi tıklayın."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
 #, fuzzy
@@ -2276,8 +2258,9 @@ msgid  "Cancel"
 msgstr "İptal"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_124
+#, fuzzy
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
-msgstr ""
+msgstr "Bu program Apache Community üyeleri tarafından desteklenen \"Apache Open Office(incubating)\" çalışmasına dayalıdır. Bakınız: http://www.openoffice.org/welcome/credits.html"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_125
 #, fuzzy
@@ -2965,16 +2948,19 @@ msgid  "Check the destination folder."
 msgstr "Hedef dizini yeniden kontrol edin."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
+#, fuzzy
 msgid  "To continue, click \"Next\"."
-msgstr ""
+msgstr "Devam etmek için tıklayın "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
+#, fuzzy
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr ""
+msgstr "Başka sürümü seçmek için tıklayın "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
+#, fuzzy
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
+msgstr "Başka dizini seçmek için tıklayın "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
 #, fuzzy

@@ -445,7 +445,7 @@ msgstr "Шаблон створаны з дапамогай <wizard_name> (ка�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Не ўдалося стартаваць Майстра, таму што не былі знойдзены неабходныя файлы.\nУ пункце \"Прылады - Настаўленні - %PRODUCTNAME - Шляхі\" націсніце кнопку \"Прадвызначана\" каб вярнуць шляхі да прадвызначэнняў.\nТады стартуйце Майстра нанова."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Палі ў форме"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Бінарныя палі заўсёды пералічаны ў спісе злева, і пазначаць іх можна тамсама.\nКалі магчыма, яны інтэрпрэтуюцца як выявы."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Падформа гэта форма, якая ўстаўляецца ў іншую форму.\nУжывайце падформы каб паказваць даныя з табліц ці зваротаў кшталту \"адзін-да-многіх\"."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Палі ў форме"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Спалучэнне <FIELDNAME1> і <FIELDNAME2> было абрана двойчы.\nАле спалучэнне можна ўжываць толькі аднойчы."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Наставіць назву формы"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Форма з назвай '%FORMNAME' ужо існуе.\nВыберыце іншую назву."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Немагчыма ўставіць поле, таму што гэта �
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Назва '%TABLENAME' ужо занята.\nВыберыце іншую назву."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Майстар Сеціва"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Гэты Майстар дапамагае публікаваць дакументы ў Сеціве.\n\nЁн ператворыць дакументы так, каб іх можна было аглядаць у сеціўных браўзерах. Таксама ён створыць старонку Зместу, з спасылкамі на паасобныя дакументы. Майстар дапаможа дапрацаваць дызайн і структуру вашай пляцоўкі.\n\nВы зможаце захоўваць адпаведнасць між арыгіналамі і апублікаваным у Сеціве, і, калі заўгодна, дадаваць ці выдаляць апублікаваныя дакументы."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Перадпаказ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Абраныя настаўленні будуць сцёрты.\n\nЦі сапраўды жадаеце сцерці гэтыя настаўленні? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Не ўдалося стварыць каталог FTP '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Каталог FTP '%FILENAME' не існуе. \nЦі трэба стварыць яго зараз?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Немагчыма стварыць архіўны файл Zip '%FILENA
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Немагчыма стварыць тутэйшы каталог '%FILENAME'. \nСпраўдзіце ваш дазвол на запіс."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Тутэйшы каталог '%FILENAME' не існуе. \nЦі трэба стварыць яго зараз?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

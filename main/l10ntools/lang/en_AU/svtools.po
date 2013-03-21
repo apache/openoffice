@@ -742,8 +742,9 @@ msgid  "Can't open directory"
 msgstr "Can't open directory"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
+#, fuzzy
 msgid  "This file already exists. \\nOverwrite ?"
-msgstr ""
+msgstr "This file already exists. \nOverwrite ?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 #, fuzzy
@@ -1871,8 +1872,9 @@ msgid  "The picture needs about %1 KB of memory."
 msgstr "The picture needs about %1 KB of memory."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
+#, fuzzy
 msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
-msgstr ""
+msgstr "The picture needs about %1 KB of memory,\n\n the file size is %2 KB."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
 #, fuzzy
@@ -2100,20 +2102,24 @@ msgid  "Database"
 msgstr "Database"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
 #, fuzzy
@@ -2151,32 +2157,39 @@ msgid  "MS PowerPoint Show"
 msgstr "Microsoft PowerPoint Show"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
 #, fuzzy

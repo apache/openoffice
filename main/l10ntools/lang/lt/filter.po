@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr ""
+msgstr "„%productname% %formatversion%“ teksto dokumentas"
 
 #: source/config/fragments/filters/StarWriter_5_0_GlobalDocument_ui.xcu#StarWriter 5.0/GlobalDocument.UIName
 msgid  "StarWriter 5.0 Master Document"
@@ -81,7 +81,7 @@ msgstr "„StarDraw 3.0“ šablonas"
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr ""
+msgstr "„%productname% %formatversion%“ pagrindinis dokumentas "
 
 #: source/config/fragments/filters/UOF_presentation_ui.xcu#UOF presentation.UIName
 msgid  "Unified Office Format presentation"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#impress_StarOffice_XML_Draw.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr ""
+msgstr "„%productname% %formatversion%“ grafikos dokumentas („%productname%“ pateikčių rengyklė)"
 
 #: source/config/fragments/filters/writerglobal8_ui.xcu#writerglobal8.UIName
 msgid  "ODF Master Document"
@@ -165,7 +165,7 @@ msgstr "HTML dokumentas („%productname%“ pagrindinis dokumentas)"
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#writer_web_StarOffice_XML_Writer_Web_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr ""
+msgstr "„%productname% %formatversion%“ HTML šablonas"
 
 #: source/config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS Word 97 Vorlage.UIName
 msgid  "Microsoft Word 97/2000/XP Template"
@@ -173,7 +173,7 @@ msgstr "„Microsoft Word 97, 2000, XP“ šablonas"
 
 #: source/config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#draw_StarOffice_XML_Draw_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr ""
+msgstr "„%productname% %formatversion%“ grafikos šablonas"
 
 #: source/config/fragments/filters/writerweb8_writer_ui.xcu#writerweb8_writer.UIName
 msgid  "%productname% Text (%productname% Writer/Web)"
@@ -181,7 +181,7 @@ msgstr "„%productname%“ grynasis tekstas („%productname%“ tinklalapių r
 
 #: source/config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#calc_StarOffice_XML_Calc_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr ""
+msgstr "„%productname% %formatversion%“ skaičiuoklės šablonas"
 
 #: source/config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF spreadsheet.UIName
 msgid  "Unified Office Format spreadsheet"
@@ -193,7 +193,7 @@ msgstr "„StarImpress 5.0“ šablonas"
 
 #: source/config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#writer_StarOffice_XML_Writer_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr ""
+msgstr "„%productname% %formatversion%“ teksto šablonas"
 
 #: source/config/fragments/filters/chart8_ui.xcu#chart8.UIName
 msgid  "ODF Chart"
@@ -341,11 +341,11 @@ msgstr "Unifikuoto formato teksto dokumentas"
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#writer_web_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr ""
+msgstr "„%productname% %formatversion%“ teksto dokumentas („%productname%“ tinklalapių rengyklė)"
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#impress_StarOffice_XML_Impress_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr ""
+msgstr "„%productname% %formatversion%“ pateikties šablonas"
 
 #: source/config/fragments/filters/StarDraw_5_0_Vorlage__StarImpress__ui.xcu#StarDraw 5.0 Vorlage (StarImpress).UIName
 msgid  "StarDraw 5.0 Template (%productname% Impress)"
@@ -617,7 +617,7 @@ msgstr "„Macromedia Flash“ (SWF) parinktys"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\\n100: max. quality"
-msgstr ""
+msgstr "1: maž. kokybė\n100: did. kokybė"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\\nas some are at a higher level!"
@@ -629,7 +629,6 @@ msgid  "Export as PDF"
 msgstr "Eksportuoti PDF formatu"
 
 #: source/pdf/impdialog.src#STR_PDF_EXPORT.String.Text
-#, fuzzy
 msgid  "E~xport"
 msgstr "~Eksportuoti"
 
@@ -1168,217 +1167,174 @@ msgid  "Transparencies removed"
 msgstr "Skaidrūs objektai pašalinti"
 
 #: source/t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.String.Text
-#, fuzzy
 msgid  "Settings for T602 import"
 msgstr "T602 importo nuostatos"
 
 #: source/t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.String.Text
-#, fuzzy
 msgid  "Encoding"
 msgstr "Koduotė"
 
 #: source/t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatiškai"
 
 #: source/t602/t602filter.src#T602FILTER_STR_ENCODING_CP852.String.Text
-#, fuzzy
 msgid  "CP852 (Latin2)"
 msgstr "CP852 (Latin2)"
 
 #: source/t602/t602filter.src#T602FILTER_STR_ENCODING_CP895.String.Text
-#, fuzzy
 msgid  "CP895 (KEYB2CS, Kamenicky)"
 msgstr "CP895 (KEYB2CS, Kamenicky)"
 
 #: source/t602/t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.String.Text
-#, fuzzy
 msgid  "KOI8 CS2"
 msgstr "KOI8 CS2"
 
 #: source/t602/t602filter.src#T602FILTER_STR_CYRILLIC_MODE.String.Text
-#, fuzzy
 msgid  "Mode for Russian language (Cyrillic)"
 msgstr "Rusų kalbos veiksena (Cyrillic)"
 
 #: source/t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.String.Text
-#, fuzzy
 msgid  "Reformat the text"
 msgstr "Performatuoti tekstą"
 
 #: source/t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.String.Text
-#, fuzzy
 msgid  "Display dot commands"
 msgstr "Rodyti taško komandas"
 
 #: source/t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Atsisakyti"
 
 #: source/t602/t602filter.src#T602FILTER_STR_OK_BUTTON.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "Gerai"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.ModalDialog.Text
-#, fuzzy
 msgid  "Test XML Filter: %s"
 msgstr "Tikrinti XML filtrą: %s"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FixedLine.Text
-#, fuzzy
 msgid  "Export"
 msgstr "Eksportas"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for export"
 msgstr "XSLT, skirtas eksportui"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FixedText.Text
-#, fuzzy
 msgid  "Transform document"
 msgstr "Keisti dokumentą"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "~Parinkti..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PushButton.Text
-#, fuzzy
 msgid  "~Current Document"
 msgstr "~Veikiamasis dokumentas"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "Importas"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for import"
 msgstr "XSLT, skirtas importui"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Template for import"
 msgstr "Šablonas importui"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FixedText.Text
-#, fuzzy
 msgid  "Transform file"
 msgstr "Keisti failą"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CheckBox.Text
-#, fuzzy
 msgid  "~Display source"
 msgstr "~Rodyti šaltinį"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "B~rowse..."
 msgstr "~Parinkti..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PushButton.Text
-#, fuzzy
 msgid  "~Recent File"
 msgstr "~Paskutinis atvertas failas"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PushButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Užverti"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TabPage.Text
-#, fuzzy
 msgid  "Transformation"
 msgstr "Transformacijos"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FixedText.Text
-#, fuzzy
 msgid  "DocType"
 msgstr "Dokumentų tipas"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FixedText.Text
-#, fuzzy
 msgid  "DTD"
 msgstr "DTD"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Parinkti..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for export"
 msgstr "XSLT, skirtas eksportui"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Parinkti..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for import"
 msgstr "XSLT, skirtas importui"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Parinkti..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Template for import"
 msgstr "Šablonas importui"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Parinkti..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WorkWindow.Text
-#, fuzzy
 msgid  "XML Filter Settings"
 msgstr "XML filtro nuostatos"
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "~Naujas..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Taisyti..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PushButton.Text
-#, fuzzy
 msgid  "~Test XSLTs..."
 msgstr "~Tikrinti XSLT..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete..."
 msgstr "~Šalinti..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PushButton.Text
-#, fuzzy
 msgid  "~Save as Package..."
 msgstr "~Įrašyti kaip paketą..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PushButton.Text
-#, fuzzy
 msgid  "~Open Package..."
 msgstr "~Atverti paketą..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PushButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Užverti"
 
@@ -1387,170 +1343,137 @@ msgid  "XML Filter List"
 msgstr ""
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TabDialog.Text
-#, fuzzy
 msgid  "XML Filter: %s"
 msgstr "XML Filtras: %s"
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "Bendrosios"
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PageItem.Text
-#, fuzzy
 msgid  "Transformation"
 msgstr "Transformacijos"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Vardas"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tipas"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "Nežinoma"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.String.Text
-#, fuzzy
 msgid  "import filter"
 msgstr "importuoti filtrą"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.String.Text
-#, fuzzy
 msgid  "import/export filter"
 msgstr "importuoti bei eksportuoti filtrą"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.String.Text
-#, fuzzy
 msgid  "export filter"
 msgstr "eksportuoti filtrą"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
-#, fuzzy
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
 msgstr "Ar tikrai norite pašalinti XML filtrą „%s“? Šio veiksmo nebus galima atšaukti."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
-#, fuzzy
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
 msgstr "XML filtras, pavadintas „%s“, jau yra. Parinkite kitą vardą."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
-#, fuzzy
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
 msgstr "Naudotojo sąsajos vardas „%s1“ jau yra priskirtas XML filtrui „%s2“. Parinkite kitą vardą."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The DTD could not be found. Please enter a valid path."
 msgstr "DTD nepavyko rasti. Įveskite teisingą adresą."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The XSLT for export cannot be found. Please enter a valid path."
 msgstr "Eksportavimui reikalingas XSLT nerastas. Įveskite teisingą adresą."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The XSLT for import cannot be found. Please enter a valid path."
 msgstr "Importavimui reikalingas XSLT nerastas. Įveskite teisingą adresą."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "Nurodyto importo šablono negalima rasti. Nurodykite teisingą adresą."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.String.Text
-#, fuzzy
 msgid  "Not specified"
 msgstr "Nenurodytas"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.String.Text
-#, fuzzy
 msgid  "New Filter"
 msgstr "Naujas filtras"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "Be pavadinimo"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.String.Text
-#, fuzzy
 msgid  "undefined filter"
 msgstr "neapibrėžtas filtras"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.String.Text
-#, fuzzy
 msgid  "The XML filter '%s' has been saved as package '%s'. "
 msgstr "XML filtras „%s“ įrašytas paketu „%s“. "
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.String.Text
-#, fuzzy
 msgid  "%s XML filters have been saved in the package '%s'."
 msgstr "„%s“ XML filtrai įrašyti pakete „%s“."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.String.Text
-#, fuzzy
 msgid  "XSLT filter package"
 msgstr "XSLT filtrų paketas"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.String.Text
-#, fuzzy
 msgid  "The XML filter '%s' has been installed successfully."
 msgstr "XML filtras „%s“ sėkmingai įdiegtas."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.String.Text
-#, fuzzy
 msgid  "%s XML filters have been installed successfully."
 msgstr "„%s“ XML filtrai sėkmingai įdiegti."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
-#, fuzzy
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
 msgstr "Nepavyko įdiegti jokių XML filtrų, nes pakete „%s“ nėra XML filtrų."
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
-#, fuzzy
 msgid  "General"
 msgstr "Bendrosios"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FixedText.Text
-#, fuzzy
 msgid  "Filter name"
 msgstr "Filtro vardas"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FixedText.Text
-#, fuzzy
 msgid  "Application"
 msgstr "Programa"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\\nfile type"
-msgstr ""
+msgstr "Failo tipo\nvardas"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
-#, fuzzy
 msgid  "File extension"
 msgstr "Failo prievardis"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FixedText.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "Komentarai"
 
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WorkWindow.Text
-#, fuzzy
 msgid  "XML Filter output"
 msgstr "XML filtro išvedimas"
 
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
-#, fuzzy
 msgid  "~Validate"
 msgstr "~Patvirtinti"

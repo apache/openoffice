@@ -53,19 +53,19 @@ msgstr "রিসেট"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "অনেক বেশি (~V)।\nকেবল বিশ্বস্ত ফাইল অবস্হান থেকে macro চলবে। অন্যান্য macro চলবে না।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "বেশি (~i)।\nকেবল বিশ্বস্ত ফাইল অবস্হান থেকে স্বাক্ষরিত macro চলবে। অস্বাক্ষরিত macro চলবে না।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "মধ্যম (~M)।\nঅবিশ্বস্ত সূত্র হতে macro চালাতে নিশ্চতকরণ লাগবে।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "কম(~L)(পরামর্শিত নয়)।\nসব macro নিশ্চতকরণ ছাড়া চলবে। ......"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "বিশ্বস্ত সার্টিফিকেটসমূহ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "যার কাছে ইস্যু করা হয়েছে\tইস্যু করেছেন\tমেয়াদউত্তীর্ণ হবে"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "প্যাকেআগুলো স্বাক্ষর করেছ�
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tস্বাক্ষর করেছেন\tডিজিটাল আইডি ইস্যু করেছেন\tতারিখ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "এ সার্টিফিকেট বৈধ করা গেল ন�
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "ক্ষেত্র\tমান"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "স্বাক্ষরের জন্য সার্টিফিক�
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "যার কাছে ইস্যু করা হয়েছে\tইস্যু করেছেন\tমেয়াদউত্তীর্ণ হবে"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

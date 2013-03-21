@@ -37,7 +37,7 @@ msgstr "Pro přístup k tomuto příkazu..."
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">Pro přístup k tomuto příkazu...</variable>"
 
 #: source/text/sdraw/01/04010000.xhp#tit
 msgid  "Insert Page"
@@ -45,11 +45,11 @@ msgstr "Vložit stránku"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Vložit stránku\">Vložit stránku</link>"
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
 msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seitetext\">Vloží prázdnou stránku za vybranou stránku.</variable>"
 
 #: source/text/sdraw/04/01020000.xhp#tit
 msgid  "Shortcut Keys for Drawings"
@@ -57,11 +57,11 @@ msgstr "Klávesové zkratky pro kreslení"
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3156441
 msgid  "\<bookmark_value\>shortcut keys;in drawings\</bookmark_value\>         \<bookmark_value\>drawings; shortcut keys\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>klávesové zkratky;v kresbách</bookmark_value><bookmark_value>kresby; klávesové zkratky</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
 msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_keys\"><link href=\"text/sdraw/04/01020000.xhp\" name=\"Klávesové zkratky pro kreslení\">Klávesové zkratky pro kreslení</link></variable>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
@@ -69,7 +69,7 @@ msgstr "Tato část nápovědy obsahuje seznam klávesových zkratek, které se 
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154730.103
 msgid  "You can also use the \<link href=\"text/shared/04/01010000.xhp\" name=\"general shortcut keys for $[officename]\"\>general shortcut keys for $[officename]\</link\>."
-msgstr ""
+msgstr "Kromě těchto kláves lze použít také <link href=\"text/shared/04/01010000.xhp\" name=\"obecné klávesové zkratky $[officename]\">obecné klávesové zkratky $[officename]</link>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149121.3
 msgid  "Function Keys for Drawings"
@@ -81,7 +81,7 @@ msgstr "Klávesová zkratka"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153713.6
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Akce</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150044.7
 msgid  "F2"
@@ -101,7 +101,7 @@ msgstr "Otevře skupinu pro úpravu jednotlivých objektů."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155113.11
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3159238.12
 msgid  "Close group editor."
@@ -113,7 +113,7 @@ msgstr "Shift+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152994.14
 msgid  "Opens the \<emph\>Duplicate\</emph\> dialog."
-msgstr ""
+msgstr "Otevře dialog <emph>Duplikovat</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154488.15
 msgid  "F4"
@@ -121,7 +121,7 @@ msgstr "F4"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149406.16
 msgid  "Opens the \<emph\>Position and Size\</emph\> dialog."
-msgstr ""
+msgstr "Otevře dialog <emph>Umístění a velikost</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3148870.21
 msgid  "F5"
@@ -129,7 +129,7 @@ msgstr "F5"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153917.22
 msgid  "Opens the \<emph\>Navigator\</emph\>."
-msgstr ""
+msgstr "Otevře <emph>Navigátor</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3157982.25
 msgid  "F7"
@@ -141,11 +141,11 @@ msgstr "Zkontroluje pravopis."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152869.27
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F7"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F7"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154765.28
 msgid  "Opens the \<emph\>Thesaurus\</emph\>."
-msgstr ""
+msgstr "Otevře <emph>Slovník synonym</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146962.29
 msgid  "F8"
@@ -157,7 +157,7 @@ msgstr "Zapnutí/vypnutí režimu Upravit body "
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149317.31
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+F8"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+F8"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147250.32
 msgid  "Fits to frame."
@@ -165,7 +165,7 @@ msgstr "Přizpůsobení textu rozměru rámce."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150434.35
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+T\</caseinline\>\<defaultinline\>F11\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+T</caseinline><defaultinline>F11</defaultinline></switchinline>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3151389.36
 msgid  "Opens Styles and Formatting window."
@@ -173,7 +173,7 @@ msgstr "Otevře okno Styly a formátování."
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3150393
 msgid  "\<bookmark_value\>zooming;shortcut keys\</bookmark_value\>      \<bookmark_value\>drawings; zoom function in\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>lupa; klávesové zkratky</bookmark_value><bookmark_value>kresby; použití lupy</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150393.41
 msgid  "Shortcut Keys for Drawings"
@@ -185,7 +185,7 @@ msgstr "Klávesová zkratka"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3146323.43
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Akce</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149946.44
 msgid  "Plus(+) Key"
@@ -221,7 +221,7 @@ msgstr "Přiblíží současný výběr."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150867.52
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+G"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+G"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149250.53
 msgid  "Groups selected objects."
@@ -229,7 +229,7 @@ msgstr "Seskupí vybrané objekty."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149955.54
 msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+A"
-msgstr ""
+msgstr "Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+A"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148582.55
 msgid  "Ungroups selected group."
@@ -237,7 +237,7 @@ msgstr "Zruší označenou skupinu."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146852.56
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153110.57
 msgid  "Combines selected objects."
@@ -245,7 +245,7 @@ msgstr "Složí vybrané objekty."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153567.58
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147366.59
 msgid  "Uncombines selected objects."
@@ -253,7 +253,7 @@ msgstr "Rozloží vybrané objekty."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153730.60
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155928.61
 msgid  "Bring to front."
@@ -261,7 +261,7 @@ msgstr "Přenést do popředí."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145245.62
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148393.63
 msgid  "Bring forward."
@@ -269,7 +269,7 @@ msgstr "Přenést blíž."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150928.64
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156062.65
 msgid  "Send backward."
@@ -277,7 +277,7 @@ msgstr "Odsunout dál."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145298.66
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149028.67
 msgid  "Send to back."
@@ -293,7 +293,7 @@ msgstr "Klávesová zkratka"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155370.70
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Akce</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AD7
 msgid  "Page Up"
@@ -313,7 +313,7 @@ msgstr "Přepnout na následující stránku"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AED
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Up"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AFD
 msgid  "Switch to previous layer"
@@ -321,7 +321,7 @@ msgstr "Přepnout do předchozí vrstvy"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF8
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Down"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Down"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF2
 msgid  "Switch to next layer"
@@ -337,7 +337,7 @@ msgstr "Posune vybraný objekt ve směru šipky."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156259.73
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Arrow Key"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+kurzorové klávesy"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147171.74
 msgid  "Moves the page view in the direction of the arrow key."
@@ -345,7 +345,7 @@ msgstr "Pohybuje stránkou ve směru šipky."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152484.79
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>-click while dragging an object. Note: you must first enable the \<link href=\"text/shared/optionen/01070500.xhp\" name=\"Copy when moving\"\>Copy when moving\</link\> option in \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - %PRODUCTNAME Draw - General to use this shortcut key."
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+klepnutí během přetažení objektu. Poznámka: nejprve musíte povolit možnost <link href=\"text/shared/optionen/01070500.xhp\" name=\"Kopírovat při přesunu\">Kopírovat při přesunu</link> v nabídce <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Nástroje - Volby</defaultinline></switchinline> - %PRODUCTNAME Draw - Obecné."
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149450.80
 msgid  "Creates a copy of the dragged object when mouse button is released."
@@ -353,7 +353,7 @@ msgstr "Při uvolnění tlačítka myši vytvoří kopii přetahovaného objektu
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154643.104
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter with keyboard focus (F6) on a drawing object icon on Tools bar"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>l+Enter při zaměření klávesnice (F6) na objekt na Panelu nástrojů"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3150756.105
 msgid  "Inserts a drawing object of default size into the center of the current view."
@@ -385,7 +385,7 @@ msgstr "Je-li vybrán textový objekt, přepne do textového režimu."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155851.112
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154046.113
 msgid  "Enters text mode if a text object is selected. If there are no text objects or if you have cycled through all of the text objects on the page, a new page is inserted."
@@ -393,15 +393,15 @@ msgstr "Je-li vybrán textový objekt, přepne do textového režimu. Neexistuje
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149977.81
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152812.82
 msgid  "Press the \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> key and drag with the mouse to draw or resize an object from the center of the object outward."
-msgstr ""
+msgstr "Stiskněte klávesu <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> a přetáhněte myší, chcete-li nakreslit nebo změnit velikost objektu ze středu objektu."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3143232.83
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> + click on an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> + klepnutí na objekt"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156007.84
 msgid  "Selects the object behind the currently selected object."
@@ -409,7 +409,7 @@ msgstr "Vybere objekt za aktuálně vybraným objektem."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3147252.85
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>+Shift+click an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Shift+klepnutí na objekt"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3145666.86
 msgid  "Selects the object in front of the currently selected object."
@@ -469,11 +469,11 @@ msgstr "Uspořádání, zarovnání a rozložení objektů"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3149656.73
 msgid  "\<variable id=\"align_arrange\"\>\<link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Arranging and Aligning Objects\"\>Arranging, Aligning and Distributing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"align_arrange\"><link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Uspořádání a zarovnání objektů\">Uspořádání a zarovnání objektů</link></variable>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#bm_id3125863
 msgid  "\<bookmark_value\>arranging; objects (guide)\</bookmark_value\>\<bookmark_value\>objects;aligning\</bookmark_value\>\<bookmark_value\>distributing draw objects\</bookmark_value\>\<bookmark_value\>aligning;draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>uspořádání; objekty</bookmark_value><bookmark_value>objekty; zarovnání</bookmark_value><bookmark_value>rozdělení; objekty kresby</bookmark_value><bookmark_value>zarovnání; objekty kresby</bookmark_value>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3125863.17
 msgid  "Arranging Objects"
@@ -489,27 +489,27 @@ msgstr "Klepněte na objekt, jehož umístění chcete změnit."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150327.78
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to bring up the context menu and choose one of the arrange options:"
-msgstr ""
+msgstr "Zvolte nabídku <item type=\"menuitem\">Změnit - Uspořádat</item> a vyberte jednu z možností:"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107E6
 msgid  "\<emph\>Bring to Front\</emph\> places the object on top of all other objects"
-msgstr ""
+msgstr "<emph>Přenést do popředí</emph> umístí objekt nad všechny ostatní objekty"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107EC
 msgid  "\<emph\>Bring Forward\</emph\> places the object one place forward in the stack of objects"
-msgstr ""
+msgstr "<emph>Přenést blíž</emph> umístí objekt o jednu vrstvu výše"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F2
 msgid  "\<emph\>Send Backward\</emph\> places the object one place back in the stack of objects"
-msgstr ""
+msgstr "<emph>Odsunout dál</emph> umístí objekt o jednu vrstvu níže"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F8
 msgid  "\<emph\>Send to Back\</emph\> places the object behind all other objects"
-msgstr ""
+msgstr "<emph>Odsunout do pozadí</emph> umístí objekt za všechny ostatní objekty"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107FE
 msgid  "\<emph\>Behind Object\</emph\> places the object behind another object that you select"
-msgstr ""
+msgstr "<emph>Za objekt</emph> umístí objekt za jiný objekt, který vyberete"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3155766.79
 msgid  "Arranging an Object Behind Another Object"
@@ -521,7 +521,7 @@ msgstr "Klepněte na objekt, jehož umístění chcete změnit."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3154253.80
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Behind Object\</emph\>. The mouse pointer changes to a hand."
-msgstr ""
+msgstr "Zvolte nabídku <item type=\"menuitem\">Změnit - Uspořádat</item> a vyberte možnost <emph>Za objekt</emph>. Kurzor myši se změní na ruku."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3149126.81
 msgid  "Click the object behind which you want to place the selected object."
@@ -537,7 +537,7 @@ msgstr "Vyberte oba objekty - podržte Shift a klepněte na oba objekty."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3155114.84
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Reverse\</emph\>."
-msgstr ""
+msgstr "Zvolte nabídku <item type=\"menuitem\">Změnit - Uspořádat</item> a vyberte možnost <emph>Přehodit</emph>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3166425.21
 msgid  "Aligning Objects"
@@ -545,7 +545,7 @@ msgstr "Zarovnání objektů"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3152994.22
 msgid  "The \<emph\>Alignment\</emph\> function enables you to align objects relative to each other or relative to the page."
-msgstr ""
+msgstr "Funkce <emph>Zarovnání</emph> vám umožňuje zarovnat objekty vzhledem k sobě navzájem nebo vzhledem ke stránce."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A3
 msgid  "Select an object to align it to the page or select multiple objects to align them relative to each other."
@@ -553,7 +553,7 @@ msgstr "Chcete-li zarovnat objekt ke stránce, vyberte jej. Pokud chcete zarovna
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A7
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Alignment\</item\> and select one of the alignment options."
-msgstr ""
+msgstr "Zvolte nabídku <item type=\"menuitem\">Změnit - Zarovnání</item> a vyberte jednu z možností zarovnání."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108AE
 msgid  "Distributing Objects"
@@ -561,7 +561,7 @@ msgstr "Rozložení objektů"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3151390.71
 msgid  "If you select three or more objects in Draw, you can also use the \<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\"\>\<emph\>Distribution\</emph\>\</link\> command to distribute the vertical and horizontal spacing evenly between the objects."
-msgstr ""
+msgstr "Pokud v Draw vyberete tři a více objektů, je také možné použít příkaz <link href=\"text/shared/01/05360000.xhp\" name=\"Rozmístit\"><emph>Rozmístit</emph></link>, kde je možné určit rovnoměrné svislé a vodorovné rozestupy objektů."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108CE
 msgid  "Select three or more objects to be distributed."
@@ -569,15 +569,15 @@ msgstr "Vyberte tři nebo více objektů, které chcete rozmístit."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108D2
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Distribution\</item\>."
-msgstr ""
+msgstr "Zvolte nabídku <item type=\"menuitem\">Změnit - Rozmístit</item>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108DA
 msgid  "Select the horizontal and vertical distribution option and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Nastavte možnosti pro svislé a vodorovné rozmístění a klepněte na <emph>OK</emph>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150535.72
 msgid  "Selected objects are distributed evenly along the horizontal or vertical axis. The two outermost objects are used as reference points and do not move when the \<emph\>Distribution\</emph\> command is applied."
-msgstr ""
+msgstr "Vybrané objekty se rovnoměrně rozmístí podél svislé a vodorovné osy. Dva nejkrajnější objekty se použijí jako referenční body a při použití příkazu <emph>Rozmístit</emph> se nepřesunují."
 
 #: source/text/sdraw/guide/color_define.xhp#tit
 msgid  "Defining Custom Colors"
@@ -585,11 +585,11 @@ msgstr "Definice vlastních barev"
 
 #: source/text/sdraw/guide/color_define.xhp#bm_id3149263
 msgid  "\<bookmark_value\>colors; defining and saving\</bookmark_value\>      \<bookmark_value\>user-defined colors\</bookmark_value\>      \<bookmark_value\>custom colors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>barvy; definice a ukládání</bookmark_value><bookmark_value>uživatelem definované barvy</bookmark_value><bookmark_value>vlastní barvy</bookmark_value>"
 
 #: source/text/sdraw/guide/color_define.xhp#hd_id3149263.7
 msgid  "\<variable id=\"color_define\"\>\<link href=\"text/sdraw/guide/color_define.xhp\" name=\"Defining Custom Colors\"\>Defining Custom Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"color_define\"><link href=\"text/sdraw/guide/color_define.xhp\" name=\"Definice vlastních barev\">Definice vlastních barev</link></variable>"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154511.8
 msgid  "If you want, you can mix a custom color and add it to a color table."
@@ -601,7 +601,7 @@ msgstr "K určení vlastní barvy"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3150327.25
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Colors\</emph\> tab. A table of the predefined colors is displayed."
-msgstr ""
+msgstr "Zvolte nabídku <emph>Formát  - Oblast</emph> a klepněte na záložku <emph>Barvy</emph>. Zobrazí se tabulka předdefinovaných barev."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154657.13
 msgid  "Changes made to the standard color table are permanent and are saved automatically."
@@ -629,7 +629,7 @@ msgstr "Do polí vedle barevných složek zadejte číselné hodnoty. Nová barv
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152871.18
 msgid  "You can also create a color using a color spectrum. Click the \<emph\>Edit\</emph\> button to open the \<link href=\"text/shared/optionen/01010501.xhp\" name=\"Color\"\>\<emph\>Color\</emph\>\</link\> dialog. Click a color. Use the Hue, Saturation, and Brightness boxes to adjust your color selection."
-msgstr ""
+msgstr "Barvu je možné připravit také s pomocí barevného spektra. Klepnutím na tlačítko <emph>Upravit</emph> otevřete dialog <link href=\"text/shared/optionen/01010501.xhp\" name=\"Barva\"><emph>Barva</emph></link>. Klepněte na barvu a poté OK. Pomocí polí Tón, Nasycení a Jas je možné váš výběr doladit."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3153011.19
 msgid  "Do one of the following:"
@@ -637,15 +637,15 @@ msgstr "Udělejte jedno z následujícího:"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3147244.26
 msgid  "If you want to replace the color in the standard color table that your custom color is based on, click \<emph\>Modify\</emph\>."
-msgstr ""
+msgstr "Pokud si přejete nahradit barvu ve standardní tabulce barev podobnou barvou, klepněte na <emph>Upravit</emph>."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145116.20
 msgid  "If you want to add your custom color to the standard color table, enter a name in the \<emph\>Name\</emph\> text box and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Pokud si přejete přidat vlastní barvu do standardní tabulky barev, zadejte jméno do pole <emph>Název</emph> a klepněte na <emph>Přidat</emph>."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145236.23
 msgid  "\<link href=\"text/shared/01/03170000.xhp\" name=\"Color bar\"\>Color bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03170000.xhp\" name=\"Panel barev\">Panel barev</link>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#tit
 msgid  "Combining Objects and Constructing Shapes"
@@ -653,11 +653,11 @@ msgstr "Skládání objektů a konstrukce tvarů"
 
 #: source/text/sdraw/guide/combine_etc.xhp#bm_id3156443
 msgid  "\<bookmark_value\>combining; draw objects\</bookmark_value\>\<bookmark_value\>merging; draw objects\</bookmark_value\>\<bookmark_value\>connecting; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; combining\</bookmark_value\>\<bookmark_value\>intersecting draw objects\</bookmark_value\>\<bookmark_value\>polygons; intersecting/subtracting/merging\</bookmark_value\>\<bookmark_value\>subtracting polygons\</bookmark_value\>\<bookmark_value\>constructing shapes\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>skládání; objekty kresby</bookmark_value><bookmark_value>sloučení; objekty kresby</bookmark_value><bookmark_value>spojení; objekty kresby</bookmark_value><bookmark_value>objekty kresby; skládání</bookmark_value><bookmark_value>průnik objektů kresby</bookmark_value><bookmark_value>polygony; průnik/rozdíl/sloučení</bookmark_value><bookmark_value>rozdíl polygonů</bookmark_value><bookmark_value>konstrukce tvarů</bookmark_value>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3156443.64
 msgid  "\<variable id=\"combine_etc\"\>\<link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Combining Objects and Constructing Shapes\"\>Combining Objects and Constructing Shapes\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"combine_etc\"><link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Skládání objektů a konstrukce tvarů\">Skládání objektů a konstrukce tvarů</link></variable>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3149020.65
 msgid  "Combined drawing objects act as grouped objects, except that you cannot enter the group to edit the individual objects. "
@@ -677,7 +677,7 @@ msgstr "Vyberte dva nebo více 2D objektů."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145587.67
 msgid  "Choose \<emph\>Modify - Combine\</emph\>."
-msgstr ""
+msgstr "Zvolte nabídku <emph>Změnit - Složit</emph>."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3146978.33
 msgid  "Unlike groups, a combined object takes on the properties of the lowermost object in the stacking order. You can split apart combined objects, but the original object properties are lost."
@@ -689,7 +689,7 @@ msgstr "Když složíte objekty, objeví se díry v místech, kde se objekty př
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3156019
 msgid  " \<image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"\>\<alt id=\"alt_id3157978\"\>Illustration for combining objects\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"212.46mm\" height=\"63.5mm\"><alt id=\"alt_id3157978\">Obrázek ke skládání objektů</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153249.35
 msgid  "In the illustration, the uncombined objects are on the left and the combined objects on the right."
@@ -701,7 +701,7 @@ msgstr "Konstrukce tvarů"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150049.63
 msgid  "You can construct shapes by applying the \<link href=\"text/simpress/01/13180000.xhp\" name=\"Shapes\"\>\<emph\>Shapes\</emph\>\</link\> \<emph\>- Merge, Subtract and Intersect\</emph\> commands to two or more drawing objects."
-msgstr ""
+msgstr "Tvary je možné vytvářet pomocí příkazů <link href=\"text/simpress/01/13180000.xhp\" name=\"Tvary\"><emph>Tvary</emph></link><emph> - Sloučit, Odečíst a Průnik</emph> aplikovaných na dva či více objektů."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3147403.88
 msgid  "Shape commands only work on 2D objects."
@@ -721,19 +721,19 @@ msgstr "Vyberte dva nebo více 2D objektů."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150650.70
 msgid  "Choose \<emph\>Modify - Shapes\</emph\> and one of the following:"
-msgstr ""
+msgstr "Zvolte nabídku <emph>Změnit - Tvary</emph> a jedno z následujícího:"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145829.91
 msgid  " \<emph\>Merge\</emph\> "
-msgstr ""
+msgstr "<emph>Sloučit</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3154680.92
 msgid  " \<emph\>Subtract\</emph\> "
-msgstr ""
+msgstr "<emph>Odečíst</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153034.93
 msgid  " \<emph\>Intersect\</emph\>."
-msgstr ""
+msgstr "<emph>Průnik</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3145144.94
 msgid  "Shape Commands"
@@ -749,7 +749,7 @@ msgstr "Tvary - Sloučit"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3148585
 msgid  " \<image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3145593\"\>Illustration for merging shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"88.37mm\" height=\"33.34mm\"><alt id=\"alt_id3145593\">Obrázek pro sloučení tvarů</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150001.73
 msgid  "Adds the area of the selected objects to the area of the lowermost object in the stacking order."
@@ -761,7 +761,7 @@ msgstr "Tvary - Odečíst"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150338
 msgid  " \<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3154505\"\>Illustration for subtracting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"88.11mm\" height=\"33.34mm\"><alt id=\"alt_id3154505\">Obrázek k odčítání tvarů</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150022.75
 msgid  "Subtracts the area of the selected objects from the area of the lowermost object in the stacking order."
@@ -773,7 +773,7 @@ msgstr "Tvary - Průnik"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150570
 msgid  " \<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"\>\<alt id=\"alt_id3150658\"\>Illustration for intersecting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"87.05mm\" height=\"33.07mm\"><alt id=\"alt_id3150658\">Obrázek průniku tvarů</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157972.79
 msgid  "The overlapping area of the selected objects creates the new shape."
@@ -789,11 +789,11 @@ msgstr "Přechod tvarů dvou objektů"
 
 #: source/text/sdraw/guide/cross_fading.xhp#bm_id3150715
 msgid  "\<bookmark_value\>draw objects; cross-fading two objects\</bookmark_value\>\<bookmark_value\>cross-fading; two draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>objekty kresby; přechod tvarů</bookmark_value><bookmark_value>přechod tvarů; dva objekty kresby</bookmark_value>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#hd_id3150715.17
 msgid  "\<variable id=\"cross_fading\"\>\<link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Cross-Fading Two Objects\"\>Cross-Fading Two Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"cross_fading\"><link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Přechod tvarů dvou objektů\">Přechod tvarů dvou objektů</link></variable>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154754.18
 msgid  "Cross-fading creates shapes and distributes them by uniform increments between two drawing objects."
@@ -813,15 +813,15 @@ msgstr "Podržte klávesu Shift a klepněte na každý objekt."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3166428.22
 msgid  "Choose \<emph\>Edit - Cross-fading\</emph\>."
-msgstr ""
+msgstr "Zvolte příkaz <emph>Úpravy - Přechod tvarů</emph>."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3156450.44
 msgid  "Enter a value to specify the number of objects between the start and end of the cross-fade in the \<emph\>Increments\</emph\> box."
-msgstr ""
+msgstr "Zadejte hodnotu, která určuje počet objektů mezi počátečním a koncovým objektem, do pole <emph>Přírůstky</emph>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3149405.23
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Klepněte na <emph>OK</emph>."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3151240.24
 msgid  "A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed."
@@ -829,15 +829,15 @@ msgstr "Zobrazí se skupina obsahující oba původní objekty a určený počet
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3159203
 msgid  "\<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"\>\<alt id=\"alt_id3150210\"\>Illustration for crossfading\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"><alt id=\"alt_id3150210\">Obrázek přechodu tvarů</alt></image>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154766.25
 msgid  "You can edit the individual objects of a group by selecting the group and pressing F3. Press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3 to exit the group editing mode."
-msgstr ""
+msgstr "Jednotlivé objekty ze skupiny je možné upravit, pokud vyberete skupinu a stisknete F3. Stisknutím <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3 ukončíte režim úprav skupiny."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3155760.42
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Editing - Cross-fading\"\>Editing - Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Úpravy - Přechod tvarů\">Úpravy - Přechod tvarů</link>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#tit
 msgid  "Drawing Sectors and Segments"
@@ -845,15 +845,15 @@ msgstr "Kreslení výsečí a úsečí"
 
 #: source/text/sdraw/guide/draw_sector.xhp#bm_id3146974
 msgid  "\<bookmark_value\>sectors of circles/ellipses\</bookmark_value\>\<bookmark_value\>segments of circles/ellipses\</bookmark_value\>\<bookmark_value\>circle segments\</bookmark_value\>\<bookmark_value\>ellipses; segments\</bookmark_value\>\<bookmark_value\>drawing; sectors and segments\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>výseče kruhu/elipsy</bookmark_value><bookmark_value>úseče kruhu/elipsy</bookmark_value><bookmark_value>kruhy; úseče</bookmark_value><bookmark_value>elipsy; úseče</bookmark_value><bookmark_value>kreslení; výseče a úseče</bookmark_value>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3146974.30
 msgid  "\<variable id=\"draw_sector\"\>\<link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Drawing Sectors and Segments\"\>Drawing Sectors and Segments\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_sector\"><link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Kreslení výsečí a úsečí\">Kreslení výsečí a úsečí</link></variable>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3147396.31
 msgid  "The \<emph\>Ellipse\</emph\> toolbar contains tools for drawing ellipses and circles. You can also draw segments and sectors of circles and ellipses."
-msgstr ""
+msgstr "Panel nástrojů <emph>Elipsa</emph> obsahuje nástroje pro kreslení elips a kruhů. Také je možné kreslit výseče a úseče kruhů a elips."
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3151075.32
 msgid  "To draw a sector of a circle or an ellipse:"
@@ -861,7 +861,7 @@ msgstr "Chcete-li nakreslit výseč kruhu nebo elipsy:"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3155335.33
 msgid  "Open the \<emph\>Ellipses\</emph\> toolbar and click one of the \<emph\>Circle Pie\</emph\> or \<emph\>Ellipse Pie\</emph\> icons \<image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3155768\"\>Icon\</alt\>\</image\>. The mouse pointer changes to a cross hair with a small icon of a sector."
-msgstr ""
+msgstr "Otevřete panel nástrojů <emph>Elipsy</emph> a klepněte na ikonu <emph>Kruhová výseč</emph> nebo <emph>Eliptická výseč</emph> <image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3155768\">Ikona</alt></image>. Ukazatel myši se změní na křížek s malou ikonou výseče."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3150199.34
 msgid  "Position the pointer at the edge of the circle you want to draw and drag to create the circle."
@@ -869,7 +869,7 @@ msgstr "Umístěte ukazatel na místo, kde si přejete kreslit okraj kruhu, a t�
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3148868.35
 msgid  "To create a circle by dragging from the center, press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> while dragging."
-msgstr ""
+msgstr "Chcete-li vytvořit kruh táhnutím ze středu, podržte během tažení klávesu <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3145361.36
 msgid  "Release the mouse button when the circle has reached the size you want. A line corresponding to the circle radius appears in the circle."
@@ -901,11 +901,11 @@ msgstr "Duplikování objektů"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#bm_id3145750
 msgid  "\<bookmark_value\>doubling draw objects\</bookmark_value\>\<bookmark_value\>draw objects; duplicating\</bookmark_value\>\<bookmark_value\>duplicating draw objects\</bookmark_value\>\<bookmark_value\>multiplying draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>zdvojení objektů kresby</bookmark_value><bookmark_value>objekty kresby; duplikace</bookmark_value><bookmark_value>duplikace objektů kresby</bookmark_value><bookmark_value>znásobení objektů kresby</bookmark_value>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#hd_id3145750.3
 msgid  "\<variable id=\"duplicate_object\"\>\<link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Duplicating Objects\"\>Duplicating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"duplicate_object\"><link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Duplikování objektů\">Duplikování objektů</link></variable>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149400.4
 msgid  "You can create duplicate or multiple copies of an object. The copies can be identical or can differ in size, color, orientation and location."
@@ -917,31 +917,31 @@ msgstr "Následující příklad vytvoří sloupec mincí tak, že několikrát 
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149129.6
 msgid  "Use the \<emph\>Ellipse\</emph\> tool to draw a solid yellow ellipse."
-msgstr ""
+msgstr "Pomocí nástroje <emph>Elipsa</emph> nakreslete vyplněnou žlutou elipsu."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149209.8
 msgid  "Select the ellipse and choose \<emph\>Edit - Duplicate\</emph\>."
-msgstr ""
+msgstr "Vyberte elipsu a zvolte příkaz <emph>Úpravy - Duplikovat</emph>."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3145585.9
 msgid  "Enter 12 as \<emph\>Number of copies.\</emph\>"
-msgstr ""
+msgstr "Zadejte 12 jako <emph>Počet kopií</emph>."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151192.11
 msgid  "Enter a negative value for the \<emph\>Width\</emph\> and \<emph\>Height\</emph\> so that the coins decrease in size as you go up the stack."
-msgstr ""
+msgstr "Zadejte zápornou hodnotu do polí <emph>Šířka</emph> a <emph>Výška</emph>, aby se mince postupně zmenšovaly."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151387.39
 msgid  "To define a color transition for the coins, select different colors in the \<emph\>Start\</emph\> and \<emph\>End\</emph\> boxes. The \<emph\>Start\</emph\> color is applied to the object that you are duplicating."
-msgstr ""
+msgstr "Chcete-li určit barevný přechod, vyberte jinou barvu v polích <emph>Začátek</emph> a <emph>Konec</emph>. Barva v poli <emph>Začátek</emph> platí pro objekt, který duplikujete."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149947.12
 msgid  "Click \<emph\>OK\</emph\> to create the duplicates."
-msgstr ""
+msgstr "Klepnutím na <emph>OK</emph> vytvoříte duplikáty."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3153935.50
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Edit - Duplicate\"\>Edit - Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Upravit - Duplikovat\">Upravit - Duplikovat</link>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#tit
 msgid  "Replacing Colors"
@@ -949,15 +949,15 @@ msgstr "Nahrazování barev"
 
 #: source/text/sdraw/guide/eyedropper.xhp#bm_id3147436
 msgid  "\<bookmark_value\>eyedropper tool\</bookmark_value\>\<bookmark_value\>colors; replacing\</bookmark_value\>\<bookmark_value\>replacing;colors in bitmaps\</bookmark_value\>\<bookmark_value\>metafiles;replacing colors\</bookmark_value\>\<bookmark_value\>bitmaps;replacing colors\</bookmark_value\>\<bookmark_value\>GIF images;replacing colors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>kapátko</bookmark_value><bookmark_value>barvy; nahrazení</bookmark_value><bookmark_value>nahrazování; barvy v bitmapách</bookmark_value><bookmark_value>bitmapy;nahrazování barev</bookmark_value><bookmark_value>GIF;nahrazování barev</bookmark_value>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3147436.38
 msgid  "\<variable id=\"eyedropper\"\>\<link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Replacing Colors\"\>Replacing Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eyedropper\"><link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Nahrazování barev\">Nahrazování barev</link></variable>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3156286.24
 msgid  "You can replace colors in bitmaps with the \<emph\>Color Replacer\</emph\> tool."
-msgstr ""
+msgstr "Pomocí nástroje <emph>Kapátko</emph> je možné nahradit barvy v bitmapách."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3154704.25
 msgid  "Up to four colors can be replaced at once."
@@ -965,11 +965,11 @@ msgstr "Najednou lze nahradit až čtyři barvy."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3147344.26
 msgid  "You can also use the \<emph\>Transparency\</emph\> option to replace the transparent areas of an image with a color."
-msgstr ""
+msgstr "Také je možné pomocí volby <emph>Průhlednost</emph> nahradit průhledné oblasti obrázku barvou."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148488.27
 msgid  "Similarly, you can use the \<emph\>Color Replacer\</emph\> to make a color on your image transparent."
-msgstr ""
+msgstr "Podobně je možné <emph>Kapátko</emph> použít ke zprůhlednění barvy v obrázku."
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3150205.28
 msgid  "To replace colors with the Color Replacer tool"
@@ -981,7 +981,7 @@ msgstr "Ujistěte se, že obrázek je bitmapa (napřííklad BMP, GIF, JPG nebo 
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3150202.30
 msgid  "Choose \<emph\>Tools - Color Replacer\</emph\>."
-msgstr ""
+msgstr "Vyberte <emph>Nástroje - Kapátko</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3155531.31
 msgid  "Click the Color Replacer icon and position the mouse pointer over the color you want to replace in the image. The color appears in the box next to the icon."
@@ -989,23 +989,23 @@ msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3152985.32
 msgid  "Click the color in the image. The color appears in the first \<emph\>Source color\</emph\> box and the check box next to the color is selected."
-msgstr ""
+msgstr "Klepněte na barvu. Barva se zobrazí v prvním poli <emph>Zdrojová barva</emph> a zaškrtne se pole vedle barvy."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148866.33
 msgid  "In the \<emph\>Replace with\</emph\> box, select the new color."
-msgstr ""
+msgstr "V poli <emph>Nahradit za</emph> vyberte novou barvu."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3145362.41
 msgid  "This replaces all occurrences of the \<emph\>Source color\</emph\> in the image."
-msgstr ""
+msgstr "Touto barvou nahradíte všechny výskyty <emph>Zdrojové barvy</emph> v obrázku."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3151191.34
 msgid  "If you want to replace another color while the dialog is open, select the check box in front of \<emph\>Source color\</emph\> in the next row and repeat steps 3 to 5."
-msgstr ""
+msgstr "Pokud si přejete nahradit ještě další barvu, zaškrtněte pole vedle <emph>Zdrojové barvy</emph> v dalším řádku a opakujte kroky 3 až 5."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3149876.36
 msgid  "Click \<emph\>Replace\</emph\>."
-msgstr ""
+msgstr "Klepněte na <emph>Nahradit</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3157871.37
 msgid  "If you want to expand or contract the color selection area, increase or decrease the tolerance of the \<emph\>Color Replacer\</emph\> tool and repeat your selection."
@@ -1013,7 +1013,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3146878.39
 msgid  "\<link href=\"text/shared/01/06030000.xhp\" name=\"Color Replacer\"\>Color Replacer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06030000.xhp\" name=\"Kapátko\">Kapátko</link>"
 
 #: source/text/sdraw/guide/gradient.xhp#tit
 msgid  "Creating Gradient Fills"
@@ -1021,11 +1021,11 @@ msgstr "Vytvoření barevného přechodu"
 
 #: source/text/sdraw/guide/gradient.xhp#bm_id3150792
 msgid  "\<bookmark_value\>gradients; applying and defining\</bookmark_value\>\<bookmark_value\>editing;gradients\</bookmark_value\>\<bookmark_value\>defining;gradients\</bookmark_value\>\<bookmark_value\>custom gradients\</bookmark_value\>\<bookmark_value\>transparency;adjusting\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>přechody; použití a určení</bookmark_value><bookmark_value>úpravy; přechody</bookmark_value><bookmark_value>určení; přechody</bookmark_value><bookmark_value>použití; přechody</bookmark_value><bookmark_value>vlastní přechody</bookmark_value><bookmark_value>průhlednost; úprava</bookmark_value>"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3150792.3
 msgid  "\<variable id=\"gradient\"\>\<link href=\"text/sdraw/guide/gradient.xhp\" name=\"Creating Gradient Fills\"\>Creating Gradient Fills\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"gradient\"><link href=\"text/sdraw/guide/gradient.xhp\" name=\"Vytvoření barevného přechodu\">Vytvoření barevného přechodu</link></variable>"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154012.4
 msgid  "A gradient fill is an incremental blend of two different colors, or shades of the same color, that you can apply to a drawing object."
@@ -1041,11 +1041,11 @@ msgstr "Vyberte požadovaný objekt."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154491.6
 msgid  "Choose \<emph\>Format - Area\</emph\> and select \<emph\>Gradient\</emph\> as the \<emph\>Fill\</emph\> type."
-msgstr ""
+msgstr "Zvolte nabídku <emph>Formát - Oblast</emph> a vyberte v části <emph>Vyplnit</emph> možnost <emph>Přechod</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3153415.7
 msgid  "Select a gradient style from the list and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Vyberte ze seznamu styl přechodu a klepněte na <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3154702.8
 msgid  "Creating Custom Gradients"
@@ -1061,15 +1061,15 @@ msgstr "Pro vytvoření vlastního přechodu:"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3151242.11
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "Vyberte <emph>Formát - Oblast</emph> a klepněte na záložku <emph>Přechody</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150046.12
 msgid  "Select a gradient from the list to use as the basis for your new gradient and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Vyberte ze seznamu přechod, který si přejete použít jako základ svého nového přechodu, a klepněte na <emph>Přidat</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145116.13
 msgid  "Type a name for the gradient in the text box and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Do pole zadejte název přechodu a klepněte na <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id6535843
 msgid  "The name appears at the end of the gradient list and is selected for editing."
@@ -1077,11 +1077,11 @@ msgstr "Nový název se zobrazí na konci seznamu přechodů a vybere pro úprav
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150391.15
 msgid  "Set the gradient properties and click \<emph\>Modify\</emph\> to save the gradient."
-msgstr ""
+msgstr "Nastavte vlastnosti přechodu a klepněte na <emph>Změnit</emph>. Tím přechod uložíte."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3156396.16
 msgid  "Click \<emph\>OK.\</emph\> "
-msgstr ""
+msgstr "Klepněte na <emph>OK.</emph>"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3149947.40
 msgid  "Using Gradients and Transparency"
@@ -1101,15 +1101,15 @@ msgstr "Vyberte objekt s přechodem, který si přejete upravit."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145592.43
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "Vyberte <emph>Formát - Oblast</emph> a klepněte na záložku <emph>Přechody</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_idN107BE
 msgid  "Adjust the values for the gradient to suit your needs and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Upravte hodnoty přechody podle potřeby a klepněte na <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150659.46
 msgid  "To adjust the transparency of an object, select the object, choose \<emph\>Format - Area\</emph\> and click the \<emph\>Transparency\</emph\> tab."
-msgstr ""
+msgstr "Chcete-li upravit průhlednost objektu, vyberte jej, zvolte nabídku <emph>Formát - Oblast</emph> a klepněte na záložku <emph>Průhlednost</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#tit
 msgid  "Inserting Graphics"
@@ -1117,19 +1117,19 @@ msgstr "Vložení obrázku"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#bm_id3156443
 msgid  "\<bookmark_value\>pictures; inserting\</bookmark_value\>\<bookmark_value\>images; inserting\</bookmark_value\>\<bookmark_value\>files; inserting pictures\</bookmark_value\>\<bookmark_value\>inserting;pictures\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>obrázky; vkládání</bookmark_value><bookmark_value>obrázky; vkládání</bookmark_value><bookmark_value>soubory; vkládání obrázků</bookmark_value><bookmark_value>vkládání; obrázky</bookmark_value>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#hd_id3156443.1
 msgid  "\<variable id=\"graphic_insert\"\>\<link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Inserting Graphics\"\>Inserting Pictures\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"graphic_insert\"><link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Vložení obrázku\">Vložení obrázku</link></variable>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155600.2
 msgid  "Choose \<emph\>Insert - Picture - From File\</emph\>."
-msgstr ""
+msgstr "Zvolte <emph>Vložit - Obrázek - Ze souboru</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150749.3
 msgid  "Locate the picture you want to insert. Select the \<emph\>Link\</emph\> check box to insert only a link to the picture. If you want to see the picture before you insert it, select \<emph\>Preview\</emph\>."
-msgstr ""
+msgstr "Vyberte obrázek, který si přejete vložit. Pokud chcete vložit pouze odkaz na obrázek, zaškrtněte pole <emph>Odkaz</emph>. Pokud si chcete obrázek před vložením prohlédnout, zaškrtněte pole <emph>Náhled</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155764.4
 msgid  "After you insert a linked picture, do not change the name of the source picture or move the source picture to another directory."
@@ -1137,7 +1137,7 @@ msgstr "Když vložíte odkaz na obrázek, neměňte jméno zdrojového obrázku
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150044.5
 msgid  "Click \<emph\>Open\</emph\> to insert the picture."
-msgstr ""
+msgstr "Klepnutím na <emph>Otevřít</emph> vložíte obrázek."
 
 #: source/text/sdraw/guide/groups.xhp#tit
 msgid  "Grouping Objects"
@@ -1145,11 +1145,11 @@ msgstr "Seskupení objektů"
 
 #: source/text/sdraw/guide/groups.xhp#bm_id3150793
 msgid  "\<bookmark_value\>grouping; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; grouping\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>seskupení; objekty kresby</bookmark_value><bookmark_value>objekty kresby; seskupení</bookmark_value>"
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150793.26
 msgid  "\<variable id=\"groups\"\>\<link href=\"text/sdraw/guide/groups.xhp\" name=\"Grouping Objects\"\>Grouping Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"groups\"><link href=\"text/sdraw/guide/groups.xhp\" name=\"Seskupení objektů\">Seskupení objektů</link></variable>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3153728.27
 msgid  "You can combine several objects into a group so that they act as a single object. You can move and transform all objects in a group as a single unit. You can also change the properties (for example, line size, fill color) of all objects in a group as a whole or for individual objects in a group. Groups can be temporary or assigned:"
@@ -1173,11 +1173,11 @@ msgstr "Chcete-li seskupit objekty:"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3149018
 msgid  "\<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3145643\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3145643\">Ikonka</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147346.29
 msgid  "Select the objects you want to group and choose \<emph\>Modify - Group\</emph\>."
-msgstr ""
+msgstr "Vyberte objekty, které si přejete seskupit, a zvolte <emph>Změnit - Seskupit</emph>."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3148485.30
 msgid  "For example, you can group all of the objects in a company logo to move and resize the logo as a single object."
@@ -1193,7 +1193,7 @@ msgstr "Výběr objektů ve skupině"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150370
 msgid  "\<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155376\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155376\">Ikonka</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3156450.56
 msgid  "You can select single objects in a group by entering the group. Double-click a group to enter it and click on the object to select it. You can also add or delete objects to and from a group in this mode. The objects that are not part of the group are grayed out."
@@ -1201,7 +1201,7 @@ msgstr "Jednotlivé objekty skupiny je možné vybrat, když vstoupíte do skupi
 
 #: source/text/sdraw/guide/groups.xhp#par_id3151239
 msgid  "\<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155264\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155264\">Ikonka</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150213.58
 msgid  "To exit a group, double-click anywhere outside it."
@@ -1213,11 +1213,11 @@ msgstr "Skládání 3D objektů"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#bm_id3154014
 msgid  "\<bookmark_value\>3D objects; assembling\</bookmark_value\>\<bookmark_value\>assembled objects in 3D\</bookmark_value\>\<bookmark_value\>combining;3D objects\</bookmark_value\>\<bookmark_value\>joining;3D objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>3D objekty; skládání</bookmark_value><bookmark_value>skládání objektů ve 3D</bookmark_value><bookmark_value>spojování; 3D objekty</bookmark_value><bookmark_value>sloučení;3D objekty</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#hd_id3156442.29
 msgid  "\<variable id=\"join_objects3d\"\>\<link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Assembling 3D Objects\"\>Assembling 3D Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects3d\"><link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Skládání 3D objektů\">Skládání 3D objektů</link></variable>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3145251.30
 msgid  "3D objects that each form a 3D scene can be combined into a single 3D scene."
@@ -1229,7 +1229,7 @@ msgstr "Chcete-li sloučit 3D objekty:"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154702.31
 msgid  "Insert a 3D object from the \<emph\>3D Objects\</emph\> toolbar (for example, a cube)."
-msgstr ""
+msgstr "Vložte pomocí panelu nástrojů <emph>3D objekty</emph> nějaký 3D objekt (např. krychli)."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155335.32
 msgid  "Insert a second slightly larger 3D object (for example, a sphere)."
@@ -1237,7 +1237,7 @@ msgstr "Vložte druhý, o něco větší 3D objekt (např. kouli)."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3148488.33
 msgid  "Select the second 3D object (sphere) and choose \<emph\>Edit - Cut\</emph\>."
-msgstr ""
+msgstr "Vyberte druhý 3D objekt (kouli) a zvolte <emph>Úpravy - Vyjmout</emph>."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3149211.34
 msgid  "Double-click the first object (cube) to enter its group."
@@ -1245,7 +1245,7 @@ msgstr "Poklepáním na první objekt (krychli) vstoupíte do jeho skupiny."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154652.35
 msgid  "Choose \<emph\>Edit - Paste\</emph\>. Both objects are now part of the same group. If you want, you can edit the individual objects or change their position within the group."
-msgstr ""
+msgstr "Vyberte <emph>Úpravy - Vložit</emph>. Oba objekty jsou nyní součástí stejné skupiny. Pokud chcete, je možné upravovat jednotlivé objekty nebo měnit jejich pozici ve skupině."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155376.36
 msgid  "Double-click outside the group to exit the group."
@@ -1257,7 +1257,7 @@ msgstr "Provádět průnik či rozdíl 3D objektů není možné."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154537.39
 msgid  "\<link href=\"text/simpress/02/10090000.xhp\" name=\"Objects in 3D\"\>Objects in 3D\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10090000.xhp\" name=\"Objekty v 3D\">Objekty v 3D</link>"
 
 #: source/text/sdraw/guide/join_objects.xhp#tit
 msgid  "Connecting Lines"
@@ -1265,11 +1265,11 @@ msgstr "Spojování čar"
 
 #: source/text/sdraw/guide/join_objects.xhp#bm_id3145799
 msgid  "\<bookmark_value\>draw objects; connecting lines to\</bookmark_value\>\<bookmark_value\>connecting; lines\</bookmark_value\>\<bookmark_value\>lines; connecting objects\</bookmark_value\>\<bookmark_value\>areas; from connected lines\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>objekty kresby; spojování čar</bookmark_value><bookmark_value>spojování; čáry</bookmark_value><bookmark_value>čáry; spojování objektů</bookmark_value><bookmark_value>oblasti; ze spojených čar</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects.xhp#hd_id3145799.1
 msgid  "\<variable id=\"join_objects\"\>\<link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Connecting Lines\"\>Connecting Lines\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects\"><link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Spojování čar\">Spojování čar</link></variable>"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3154512.3
 msgid  "When you connect lines, lines are drawn between neighboring endpoints."
@@ -1285,15 +1285,15 @@ msgstr "Vyberte dvě nebo více čar."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3156383.5
 msgid  "Right-click and choose \<emph\>Modify - Connect\</emph\>."
-msgstr ""
+msgstr "Vyberte <emph>Změnit - Spojit</emph>."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3149257.11
 msgid  "To create a closed object, right-click a line and choose \<emph\>Close Object\</emph\>."
-msgstr ""
+msgstr "Chcete-li vytvořit uzavřený objekt, klepněte pravým tlačítkem myši a vyberte <emph>Uzavřít objekt</emph>."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3150363.9
 msgid  "You can only use the \<emph\>Close Object\</emph\> command on connected lines, \<emph\>Freeform Lines \</emph\>and unfilled \<emph\>Curves\</emph\>."
-msgstr ""
+msgstr "Příkaz <emph>Uzavřít objekt</emph> je možné použít jen na spojené čáry, <emph>Čáry od ruky</emph> nebo nevyplněné <emph>Křivky</emph>."
 
 #: source/text/sdraw/guide/keyboard.xhp#tit
 msgid  "Shortcut Keys for Drawing Objects"
@@ -1301,11 +1301,11 @@ msgstr "Klávesové zkratky pro objekty kresby"
 
 #: source/text/sdraw/guide/keyboard.xhp#bm_id3155628
 msgid  "\<bookmark_value\>accessibility; %PRODUCTNAME Draw\</bookmark_value\>\<bookmark_value\>draw objects; text entry mode\</bookmark_value\>\<bookmark_value\>text entry mode for draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>zpřístupnění; %PRODUCTNAME Draw</bookmark_value><bookmark_value>objekty kresby; zadávání pomocí klávesnice</bookmark_value><bookmark_value>úpravy pomocí klávesnice v objektech kresby</bookmark_value>"
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3155628.1
 msgid  "\<variable id=\"keyboard\"\>\<link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Shortcut Keys for Drawing Objects\"\>Shortcut Keys for Drawing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"keyboard\"><link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Klávesové zkratky pro objekty kresby\">Klávesové zkratky pro objekty kresby</link></variable>"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3148663.13
 msgid  "You can create and edit drawing objects using the keyboard."
@@ -1317,19 +1317,19 @@ msgstr "Pro vytvoření nebo úpravu objektu kresby"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3153188.11
 msgid  "Press \<item type=\"keycode\"\>F6\</item\> to navigate to the \<emph\>Drawing\</emph\> bar."
-msgstr ""
+msgstr "Pomocí klávesy <item type=\"keycode\">F6</item> se přepněte na panel <emph>Kresba</emph>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3146971.10
 msgid  "Press the \<item type=\"keycode\"\>Right\</item\> arrow key until you reach the toolbar icon of a drawing tool."
-msgstr ""
+msgstr "Pomocí šipky <item type=\"keycode\">vpravo</item> se posuňte na ikonu požadovaného nástroje."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_idN106CD
 msgid  "If there is an arrow next to the icon, the drawing tool opens a sub toolbar. Press the \<item type=\"keycode\"\>Up\</item\> or \<item type=\"keycode\"\>Down\</item\> arrow key to open the sub toolbar, then press the \<item type=\"keycode\"\>Right\</item\> or \<item type=\"keycode\"\>Left\</item\> key to select an icon."
-msgstr ""
+msgstr "Je-li vedle ikony šipka, je možno k danému nástroji otevřít další panel nástrojů. Stiskněte šipku <item type=\"keycode\">nahoru</item> nebo <item type=\"keycode\">dolů</item> k otevření panelu, poté stiskem šipek <item type=\"keycode\">vlevo</item> nebo <item type=\"keycode\">vpravo</item> vyberte ikonu."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3147338.8
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter\</item\>."
-msgstr ""
+msgstr "Stiskněte <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3154705.7
 msgid  "The object is created at the center of the current document."
@@ -1337,11 +1337,11 @@ msgstr "Objekt se vytvoří uprostřed aktuálního dokumentu."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155962.6
 msgid  "To return to the document, press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\>."
-msgstr ""
+msgstr "Pro návrat do dokumentu stiskněte <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155062.5
 msgid  "You can use the arrow keys to position the object where you want. To choose a command from the context menu for the object, press \<item type=\"keycode\"\>Shift+F10\</item\>."
-msgstr ""
+msgstr "Pomocí kurzorových šipek je možné objekt přemístit na požadované místo. Chcete-li vybrat příkaz z místní nabídky objektu, stiskněte <item type=\"keycode\">Shift+F10</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3150306.4
 msgid  "To Select an Object"
@@ -1349,11 +1349,11 @@ msgstr "Pro výběr objektu"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3152990.3
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\> to enter the document."
-msgstr ""
+msgstr "Stiskněte <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item> pro návrat do dokumentu."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3145587.2
 msgid  "Press \<item type=\"keycode\"\>Tab\</item\> until you reach the object you want to select."
-msgstr ""
+msgstr "Pomocí klávesy <item type=\"keycode\">Tab</item> se přepínejte mezi objekty, až vyberete potřebný objekt."
 
 #: source/text/sdraw/guide/main.xhp#tit
 msgid  "Instructions for Using $[officename] Draw"
@@ -1361,11 +1361,11 @@ msgstr "Instrukce pro použití $[officename] Draw"
 
 #: source/text/sdraw/guide/main.xhp#bm_id3146119
 msgid  "\<bookmark_value\>Draw instructions\</bookmark_value\>\<bookmark_value\>instructions; $[officename] Draw\</bookmark_value\>\<bookmark_value\>Howtos for Draw\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Draw; instrukce pro použití</bookmark_value><bookmark_value>instrukce; $[officename] Draw</bookmark_value><bookmark_value>Návody pro Draw</bookmark_value>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3146119.1
 msgid  "\<variable id=\"main\"\>\<link href=\"text/sdraw/guide/main.xhp\" name=\"Instructions for Using $[officename] Draw\"\>Instructions for Using $[officename] Draw\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main\"><link href=\"text/sdraw/guide/main.xhp\" name=\"Instrukce pro použití $[officename] Draw\">Instrukce pro použití $[officename] Draw</link></variable>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3143218.2
 msgid  "Editing and Grouping Objects"
@@ -1393,11 +1393,11 @@ msgstr "Otáčení objektů"
 
 #: source/text/sdraw/guide/rotate_object.xhp#bm_id3154684
 msgid  "\<bookmark_value\>rotating; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; rotating\</bookmark_value\>\<bookmark_value\>pivot points of draw objects\</bookmark_value\>\<bookmark_value\>skewing draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>otáčení; objekty kresby</bookmark_value><bookmark_value>objekty kresby; otáčení</bookmark_value><bookmark_value>rotační body objektů kresby</bookmark_value>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#hd_id3154684.12
 msgid  "\<variable id=\"rotate_object\"\>\<link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Rotating Objects\"\>Rotating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"rotate_object\"><link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Otáčení objektů\">Otáčení objektů</link></variable>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149262.13
 msgid  "You can rotate an object around its default pivot point (center point) or a pivot point that you designate."
@@ -1405,11 +1405,11 @@ msgstr "Objekt je možné otáčet kolem výchozího rotačního bodu (střed) n
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3146975
 msgid  "\<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"\>\<alt id=\"alt_id3154729\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"><alt id=\"alt_id3154729\">Icon</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3150716.14
 msgid  "Select the object you want to rotate. On the \<emph\>Mode\</emph\> toolbar in $[officename] Draw or on the \<emph\>Drawing\</emph\> bar in $[officename] Impress, click the \<emph\>Rotate\</emph\> icon."
-msgstr ""
+msgstr "Vyberte objekt, který chcete otočit. Na panelu nástrojů <emph>Režim</emph> v $[officename] Draw nebo na panelu <emph>Kresba</emph> v $[officename] Impress klepněte na ikonu <emph>Rotovat</emph>."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149021.69
 msgid  "Move the pointer to a corner handle so that the pointer changes to a rotate symbol. Drag the handle to rotate the object."
@@ -1425,7 +1425,7 @@ msgstr "Klikněte na objekt pravým tlačítkem myši a otevře se místní nab�
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3155962
 msgid  "\<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"\>\<alt id=\"alt_id3154023\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"><alt id=\"alt_id3154023\">Icon</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3166424.16
 msgid  "To change the pivot point, drag the small circle in the center of the object to a new location."
@@ -1441,11 +1441,11 @@ msgstr "Přidání textu"
 
 #: source/text/sdraw/guide/text_enter.xhp#bm_id3153144
 msgid  "\<bookmark_value\>text frames\</bookmark_value\>      \<bookmark_value\>inserting;text frames\</bookmark_value\>      \<bookmark_value\>copying;text from other documents\</bookmark_value\>      \<bookmark_value\>pasting;text from other documents\</bookmark_value\>      \<bookmark_value\>legends; drawings\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>textové rámce</bookmark_value><bookmark_value>vložení; textové rámce</bookmark_value><bookmark_value>kopírování;text z jiných dokumentů</bookmark_value><bookmark_value>vložení;text z jiných dokumentů</bookmark_value><bookmark_value>legenda; kresby</bookmark_value>"
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3153144.45
 msgid  "\<variable id=\"text_enter\"\>\<link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Adding Text\"\>Adding Text\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"text_enter\"><link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Přidání textu\">Přidání textu</link></variable>"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3145750.46
 msgid  "There are several types of text you can add to a drawing or presentation: "
@@ -1477,7 +1477,7 @@ msgstr "Přidání textového rámce"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3155266.49
 msgid  "Click the \<emph\>Text\</emph\> icon \<image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3156450\"\>Icon\</alt\>\</image\> and move the mouse pointer to where you want to enter the text box."
-msgstr ""
+msgstr "Klepněte na ikonu <emph>Text</emph> <image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3156450\">Icon</alt></image> a přesuňte ukazatel myši na místo, kam chcete zadat text."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3149052.50
 msgid  "Drag a text box to the size you want in your document."
@@ -1501,11 +1501,11 @@ msgstr "Vytvořte textový rámec, jak je popsáno výše."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108A3
 msgid  "With the text object selected, choose \<emph\>Format - Text\</emph\>. The \<emph\>Text\</emph\> dialog opens."
-msgstr ""
+msgstr "Když je vybrán textový objekt, zvolte <emph>Formát - Text</emph>. Otevře se dialog <emph>Text</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108AF
 msgid  "On the \<emph\>Text\</emph\> tab page, clear the \<emph\>Fit height to text\</emph\> checkbox, then select the \<emph\>Fit to frame\</emph\> checkbox. Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Na záložce <emph>Text</emph> zrušte zaškrtnutí pole <emph>Přizpůsobit výšku textu</emph> a poté zaškrtněte pole <emph>Přizpůsobit do rámce</emph>. Klepněte na <emph>OK</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id0610200902133994
 msgid  "Now you can resize the text box to change the size and shape of the text characters."
@@ -1521,11 +1521,11 @@ msgstr "Poklepáním na objekt je možné text přidat do kteréhokoliv grafick�
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id1827448
 msgid  "To determine the position of the text, use the settings in \<emph\>Format - Text\</emph\>."
-msgstr ""
+msgstr "Pro určení pozice textu použijte nastavení v dialogu <emph>Formát - Text</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3147366.59
 msgid  "For example, click the arrow next to the \<emph\>Callouts\</emph\> icon \<image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3154508\"\>Icon\</alt\>\</image\> to open the Callouts toolbar."
-msgstr ""
+msgstr "Např. klepněte na šipku vedle ikony <emph>Bubliny</emph> <image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3154508\">Ikonka</alt></image> a otevře se panel <emph>Bubliny</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108FD
 msgid  "Select a callout and move the mouse pointer to where you want the callout to start."
@@ -1549,7 +1549,7 @@ msgstr "Označte text v dokumentu ve Writeru."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10925
 msgid  "Copy the text to the clipboard (\<emph\>Edit - Copy\</emph\>)."
-msgstr ""
+msgstr "Zkopírujte text do schránky (<emph>Úpravy - Kopírovat</emph>)."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1092D
 msgid  "Click the page or slide where you want to paste the text."
@@ -1557,11 +1557,11 @@ msgstr "Klepněte na stránku nebo snímek, kam chcete text vložit."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10931
 msgid  "Paste the text using \<emph\>Edit - Paste\</emph\> or \<emph\>Edit - Paste special\</emph\>."
-msgstr ""
+msgstr "Vložte text pomocí <emph>Úpravy - Vložit</emph> nebo <emph>Úpravy - Vložit jako</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093C
 msgid  "Using \<emph\>Paste special\</emph\>, you can choose the text format to be pasted. Depending on formats, you can copy different text attributes."
-msgstr ""
+msgstr "Při použití příkazu <emph>Vložit jako</emph> si je možné vybrat, v jakém formátu se text vloží. V závislosti na formátu textu budou zkopírovány různé vlastnosti."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093F
 msgid  "Importing Text"
@@ -1573,11 +1573,11 @@ msgstr "Klepněte na stránku nebo snímek, kam chcete text importovat."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1094A
 msgid  "Choose \<emph\>Insert - File\</emph\>."
-msgstr ""
+msgstr "Zvolte <emph>Vložit - Soubor</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10952
 msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</emph\>. The \<emph\>Insert Text\</emph\> dialog opens. Click \<emph\>OK\</emph\> to insert the text."
-msgstr ""
+msgstr "Zvolte textový soubor (*.txt) nebo HTML soubor a klepněte na <emph>Vložit</emph>. Otevře se dialog <emph>Vložit text</emph>. Klepnutím na <emph>OK</emph> text vložíte."
 
 #: source/text/sdraw/main0000.xhp#tit
 msgid  "Welcome to the $[officename] Draw Help"
@@ -1585,7 +1585,7 @@ msgstr "Vítejte v nápovědě k $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
 msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
-msgstr ""
+msgstr "<switchinline select=\"appl\"> <caseinline select=\"DRAW\"/> </switchinline>Vítejte v nápovědě k $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
 msgid  "How to Work With $[officename] Draw"
@@ -1605,7 +1605,7 @@ msgstr "Nabídky"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/sdraw/main0100.xhp\" name=\"Nabídky\">Nabídky</link></variable>"
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
@@ -1617,39 +1617,39 @@ msgstr "Soubor"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
 msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"Soubor\">Soubor</link>"
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
 msgid  "This menu contains general commands for working with Draw documents, such as open, close and print. To close $[officename] Draw, click \<emph\>Exit\</emph\>."
-msgstr ""
+msgstr "Tato nabídka obsahuje obecné příkazy pro práci s dokumenty Draw, např. otevření, zavření či tisk. Přejete-li si ukončit $[officename] Draw, klepněte na <emph>Ukončit</emph>."
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Otevřít\">Otevřít</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Uložit jako\">Uložit jako</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"Exportovat\">Exportovat</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Verze\">Verze</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"Vlastnosti\">Vlastnosti</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"Tisk\">Tisk</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Nastavení tiskárny\">Nastavení tiskárny</link>"
 
 #: source/text/sdraw/main0102.xhp#tit
 msgid  "Edit"
@@ -1657,7 +1657,7 @@ msgstr "Upravit"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0102.xhp\" name=\"Upravit\">Upravit</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
@@ -1665,15 +1665,15 @@ msgstr "Příkazy v této nabídce se používají pro úpravu dokumentů Draw (
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"Vložit jinak\">Vložit jinak</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"Najít a nahradit\">Najít a nahradit</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Body\">Body</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
 msgid  "Enables you to edit points on your drawing."
@@ -1681,7 +1681,7 @@ msgstr "Umožňuje vám upravit body v kresbě."
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Záchytné body\">Záchytné body</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
 msgid  "Enables you to edit glue points on your drawing."
@@ -1689,27 +1689,27 @@ msgstr "Umožňuje vám upravit záchytné body v kresbě."
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplikovat\">Duplikovat</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Přechod tvarů\">Přechod tvarů</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"Pole\">Pole</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"Odkazy\">Odkazy</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"Obrázková mapa\">Obrázková mapa</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hypertextový odkaz\">Hypertextový odkaz</link>"
 
 #: source/text/sdraw/main0103.xhp#tit
 msgid  "View"
@@ -1717,7 +1717,7 @@ msgstr "Zobrazit"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
 msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0103.xhp\" name=\"Zobrazit\">Zobrazit</link>"
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
 msgid  "Sets the display properties of Draw documents."
@@ -1741,7 +1741,7 @@ msgstr "Přepne na zobrazení předlohy stránky."
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"Lupa\">Lupa</link>"
 
 #: source/text/sdraw/main0104.xhp#tit
 msgid  "Insert"
@@ -1749,7 +1749,7 @@ msgstr "Vložit"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
 msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0104.xhp\" name=\"Vložit\">Vložit</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
 msgid  "This menu allows you to insert elements, such as graphics and guides, into Draw documents."
@@ -1757,35 +1757,35 @@ msgstr "Tato nabídka vám umožňuje vkládat do dokumentů Draw další prvky,
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Snímek\">Snímek</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
 msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04020000.xhp\" name=\"Vrstva\">Vrstva</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
 msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000.xhp\" name=\"Vložit záchytný bod/čáru\">Vložit záchytný bod/čáru</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04050000.xhp\" name=\"Komentář\">Komentář</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"Speciální znak\">Speciální znak</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hypertextový odkaz\">Hypertextový odkaz</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04080100.xhp\" name=\"Tabulka\">Tabulka</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Graf\">Graf</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
 msgid  "Inserts a chart."
@@ -1793,11 +1793,11 @@ msgstr "Vloží graf."
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Plovoucí rámec\">Plovoucí rámec</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"Soubor\">Soubor</link>"
 
 #: source/text/sdraw/main0105.xhp#tit
 msgid  "Format"
@@ -1805,7 +1805,7 @@ msgstr "Formát"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
 msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0105.xhp\" name=\"Formát\">Formát</link>"
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
 msgid  "Contains commands for formatting the layout and the contents of your document."
@@ -1813,39 +1813,39 @@ msgstr "Obsahuje příkazy pro formátování a změnu rozvržení obsahu vašeh
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Znak\">Znak</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Odstavec\">Odstavec</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"Odrážky a číslování\">Odrážky a číslování</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"Stránka\">Stránka</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"Umístění a velikost\">Umístění a velikost</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"Čára\">Čára</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"Oblast\">Oblast</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"Text\">Text</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
 msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05140000.xhp\" name=\"Vrstva\">Vrstva</link>"
 
 #: source/text/sdraw/main0106.xhp#tit
 msgid  "Tools"
@@ -1853,7 +1853,7 @@ msgstr "Nástroje"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
 msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0106.xhp\" name=\"Nástroje\">Nástroje</link>"
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
 msgid  "This menu provides tools for $[officename] Draw as well as access to language and system settings."
@@ -1861,11 +1861,11 @@ msgstr "Tato nabídka vám poskytuje nástroje pro $[officename] Draw a také p�
 
 #: source/text/sdraw/main0106.xhp#hd_id3153415.4
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"Nastavení automatických oprav\">Nastavení automatických oprav</link>"
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Přizpůsobit\">Přizpůsobit</link>"
 
 #: source/text/sdraw/main0200.xhp#tit
 msgid  "Toolbars"
@@ -1873,7 +1873,7 @@ msgstr "Panely nástrojů"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/sdraw/main0200.xhp\" name=\"Panely nástrojů\">Panely nástrojů</link></variable>"
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
 msgid  "This section provides an overview of the toolbars available in $[officename] Draw."
@@ -1885,7 +1885,7 @@ msgstr "Panel nástrojů Čára a výplň"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
 msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0202.xhp\" name=\"Panel nástrojů Čára a výplň\">Panel nástrojů Čára a výplň</link>"
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
 msgid  "The Line and Filling bar contains commands for the current editing mode."
@@ -1893,23 +1893,23 @@ msgstr "Panel nástrojů Čára a výplň obsahuje příkazy pro aktuální rež
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Styl čáry\">Styl čáry</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Tloušťka čáry\">Tloušťka čáry</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Barva čáry\">Barva čáry</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"Styl oblasti / výplň\">Styl oblasti / výplň</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"Stín\">Stín</link>"
 
 #: source/text/sdraw/main0210.xhp#tit
 msgid  "Drawing Bar"
@@ -1917,15 +1917,15 @@ msgstr "Panel kreslení"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
 msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"Panel kreslení\">Panel kreslení</link>"
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
 msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
-msgstr ""
+msgstr "Panel <emph>Kreslení</emph> obsahuje hlavní nástroje pro kreslení."
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10060000.xhp\">Obdélník</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
 msgid  "Draws a filled rectangle where you drag in the current document. Click where you want to place a corner of the rectangle, and drag to the size you want. To draw a square, hold down Shift while you drag."
@@ -1933,7 +1933,7 @@ msgstr "Nakreslí na určeném místě v aktuálním dokumentu vyplněný obdél
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10070000.xhp\">Elipsa</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
 msgid  "Draws a filled oval where you drag in the current document. Click where you want to draw the oval, and drag to the size you want. To draw a circle, hold down Shift while you drag."
@@ -1941,7 +1941,7 @@ msgstr "Nakreslí na určeném místě v aktuálním dokumentu vyplněný ovál.
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Text</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
 msgid  "Draws a text box where you click or drag in the current document. Click anywhere in the document, and then type or paste your text."
@@ -1949,7 +1949,7 @@ msgstr "Nakreslí na vybrané místo v aktuálním dokumentu textový rámec. Kl
 
 #: source/text/sdraw/main0210.xhp#par_idN107C8
 msgid  "\<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\"\>Lines and Arrows\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\">Čáry a šipky</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN126D7
 msgid  "Opens the Arrows toolbar to insert lines and arrows."
@@ -1957,7 +1957,7 @@ msgstr "Otevře panel nástrojů Šipky pro vkládání čar a šipek."
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Body\">Body</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
 msgid  "Enables you to edit points on your drawing."
@@ -1965,7 +1965,7 @@ msgstr "Umožňuje vám upravit body v kresbě."
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Záchytné body\">Záchytné body</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
 msgid  "Enables you to edit glue points on your drawing."
@@ -1973,15 +1973,15 @@ msgstr "Umožňuje vám upravit záchytné body v kresbě."
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"Ze souboru\">Ze souboru</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170000.xhp\" name=\"Ovládací prvky formuláře\">Ovládací prvky formuláře</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">Plastičnost zap/vyp</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
 msgid  "Switches the 3D effects on and off for the selected objects."
@@ -1993,47 +1993,47 @@ msgstr "Panel voleb"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
 msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0213.xhp\" name=\"Panel voleb\">Panel voleb</link>"
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
 msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "Panel  <emph>Volby</emph> je možné zobrazit pomocí nabídky <emph>Zobrazit - Panely nástrojů - Volby</emph>."
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171200.xhp\" name=\"Zobrazovat mřížku\">Zobrazovat mřížku</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"Vodítka při přesouvání\">Vodítka při přesouvání</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Přichytávat do mřížky\">Přichytávat do mřížky</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"Přichytávat k vodítkům\">Přichytávat k vodítkům</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"Zachytit na okraje stránky\">Zachytit na okraje stránky</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"Zachytit na ohraničení objektu\">Zachytit na ohraničení objektu</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13170000.xhp\" name=\"Zachytit na body objektu\">Zachytit na body objektu</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"Povolit rychlou editaci\">Povolit rychlou editaci</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"Vybrat pouze textovou oblast\">Vybrat pouze textovou oblast</link>"
 
 #: source/text/sdraw/main0503.xhp#tit
 msgid  "$[officename] Draw Features"
@@ -2041,7 +2041,7 @@ msgstr "Funkce obsažené v aplikaci $[officename] Draw"
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/sdraw/main0503.xhp\" name=\"Funkce obsažené v aplikaci $[officename] Draw\">Funkce obsažené v aplikaci $[officename] Draw</link></variable>"
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
 msgid  "$[officename] Draw lets you create simple and complex drawings and export them in a number of common image formats. You can also insert tables, charts, formulas and other items created in $[officename] programs into your drawings."

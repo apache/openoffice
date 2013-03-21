@@ -57,7 +57,7 @@ msgstr "Tên nguồn dữ liệu"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME cho bạn có khả năng truy cập dữ liệu địa chỉ đã nằm trên hệ thống của bạn. Để làm như thế, có tạo một nguồn dữ liệu %PRODUCTNAME chứa dữ liệu địa chỉ có dạng bảng.\n\nTrợ lý này giúp đỡ bạn tạo nguồn dữ liệu đó."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Nguồn dữ liệu bên ngoài khác"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Để thiết lập nguồn dữ liệu mới, cần có thêm thông tin.\n\nHãy nhắp vào nút dưới đây để mở hộp thoại và nhập thông tin cần thiết."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Tùy chọn"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Không thể kết nối tới nguồn dữ liệu đó.\nTrước khi tiếp tục, bạn hãy kiểm tra lại thiết lập được tạo, hoặc (trên trang trước) chọn kiểu nguồn dữ liệu địa chỉ khác."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Bạn đã chọn một nguồn dữ liệu ngoài chứa nhiều sổ địa chỉ.\nHãy chọn điều nào bạn muốn thao tác:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "Để hợp nhất dữ liệu địa chỉ vào các mẫu của bạn, %PRODUCTNAME cần biết trường nào chứa dữ liệu gì.\n\nChẳng hạn, bạn có thể lưu địa chỉ thư điện tử vào trường tên  \"thư điện tử\" hoặc \"thư\" hoặc \"địa chỉ thư\" hoặc các mục khác hẳn.\n\nHãy nhấn vào nút bên dưới để mở một hộp thoại khác trong đó bạn có thể nhập thiết lập cho nguồn dữ liệu này."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Gán trường"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Bạn đã nhập hết thông tin cần thiết để hợp nhất dữ liệu địa chỉ đó vào %PRODUCTNAME.\n\nỞ đây chỉ nhập tên cho cái mà bạn muốn đăng kí nguồn dữ liệu này trong %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "Dữ liệu địa chỉ > Gán trường"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Chưa gán trường nào.\nBạn có thể gán trường bây giờ, hoặc gán trường vào lúc sau bằng cách chọn:\n« Tập tin > Biểu mẫu > Nguồn sổ địa chỉ... »"
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "Nguồn dữ liệu"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "Không thể gán những tên cột này:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "Điều khiển"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Bên phải có tất cả các bảng từ nguồn dữ liệu của biểu mẫu.\n\n\nHãy chọn bảng chứa dữ liệu nên được dùng làm cơ bản của nội dung danh sách:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Dữ liệu"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Hiện thời, điều khiển này thuộc về một biểu mẫu chưa được kết hợp (hoặc chưa được kết hợp hoàn toàn) với nguồn dữ liệu.\n\nHãy chọn một nguồn dữ liệu và một bảng.\n\n\nLưu ý rằng thiết lập được tạo trên trang này sẽ có tác dụng ngay khi thoát khỏi trang này."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -817,7 +817,7 @@ msgstr "Biểu mẫu"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Bạn có muốn xoá kiểu dữ liệu '#type#' khỏi mẫu không?\nLưu ý rằng việc này sẽ có tác dụng với mọi điều khiển được kết hợp với kiểu dữ liệu này."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "Nhập tên cho kiểu dữ liệu mới:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "Giới thiệu\nth~iết bị này"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Tạo ô\nxem thử"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Máy quét"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Thiết bị: %s\nNhà sản xuất: %s\nMô hình: %s\nKiểu : %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION là mới nhất."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "Đã có %PRODUCTNAME %NEXTVERSION.\n\nPhiên bản hiện đang cài đặt trên máy này là:\n%PRODUCTNAME %PRODUCTVERSION.\n\nGhi chú : trước khi tải bản cập nhật về, phải chắc chắn rằng bạn có đủ quyền truy cập để cài đặt nó.\nSẽ cần mật khẩu, thường là mật khẩu quản trị hay mật khẩu root."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Tiến trình tải về %PRODUCTNAME %NEXTVERSION bị ngừng chạy �
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Vị trí tải về: %DOWNLOAD_PATH.\n\nCũng có thể thay đổi vị trí tải về trong « Công cụ > Tùy chọn... > %PRODUCTNAME > Cập nhật trực tuyến »."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME đã được tải về %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Việc tự động tải bản cập nhật về hiện không thực hiện được.\n\nNhắp vào « Tải về... » để tự tải %PRODUCTNAME %NEXTVERSION từ địa chỉ WWW."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."

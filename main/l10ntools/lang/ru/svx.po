@@ -941,11 +941,11 @@ msgstr "Удалить"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Сенсорное изображение изменено.\nСохранить эти изменения?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Сенсорное изображение изменено.\nПринять эти изменения?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "Восстановление документа %PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Нажмите «Начать восстановление», чтобы начать процесс восстановления перечисленных ниже документов.\n\nВозможность восстановления документа показана в столбце «Состояние»."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Статус восстановления документов:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Название документа\tСтатус"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "Отчёт об ошибке создан для того, чтобы о
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "Восстановление документов завершено.\nНажмите «Завершить» для просмотра этих документов."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "Вы уверены, что хотите отказаться от во�
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Процесс автоматического восстановления был приостановлен.\n\nПеречисленные ниже документы будут сохранены в папке, указанной ниже, если вы нажмете на «Сохранить». Нажмите «Отменить» для закрытия мастера и отказа от сохранения документов."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "Добро пожаловать в мастер отчёта об оши
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "Средство составления отчёта об ошибках объединяет сведения о работе %PRODUCTNAME и отправляет их в компанию Oracle, чтобы помочь улучшить будущие версии.\n\nМожно просто отправить отчёт без лишних усилий, нажав кнопку «Отправить» в следующем диалоговом окне. Можно кратко описать возникновение ошибки и затем нажать кнопку «Отправить». Чтобы просмотреть отчёт, нажмите кнопку «Показать отчёт». Данные не будут отправлены, если нажать кнопку «Не отправлять».\n\nКонфиденциальность пользователей\nПри возникновении ошибки выполняется только сбор данных о состоянии %PRODUCTNAME %PRODUCTVERSION. Сбор других данных о паролях и содержимом документов не выполняется.\n\nДанные будут использованы только для улучшения качества %PRODUCTNAME и не будут передаваться сторонним компаниям.\nДополнительные сведения о политике конфиденциальности Oracle см. на сайте \nwww.oracle.com/html/services-privacy-policy.html"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "Параметры..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "Я разрешаю Oracle связаться со мной относительно этого отчёта."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "Порт"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Средству отправки сообщений об ошибках в %PRODUCTNAME необходимо подключение к Интернету для отправки отчётов об ошибках.\nДля защиты корпоративных сетей часто используются прокси-серверы вместе с брандмауэром.\nВ этом случае следует указать адрес и порт сервера."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Контур изменён.\nСохранить изменения?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "Создать новый контур?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Установка новой рабочей области\nприведёт к удалению контура.\nПродолжить, несмотря на это?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "Для поля «#» требуется ввод данных.Введ�
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Запись уже существует.\nВыберите другое имя."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# записей будет удалено."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Если нажать кнопку Да, то отменить операцию уже будет невозможно!\nПродолжить, несмотря на это?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Неправильное название темы!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Вы действительно хотите удалить\nэтот объект?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Вы действительно хотите\nудалить эту тему?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "Удалить связанный файл?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Невозможно открыть файл.\nЗадать другой путь поиска? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "Организатор..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Такое название темы уже существует.\nВыберите другое название."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -6521,7 +6521,7 @@ msgstr "Указанное устройство недоступно."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
 msgid  "The object cannot be accessed\\ndue to insufficient user rights."
-msgstr ""
+msgstr "Не разрешен доступ к объекту\nиз-за ограничения прав пользователя."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
 msgid  "Sharing violation while accessing the object."
@@ -6533,7 +6533,7 @@ msgstr "На этом устройстве нет больше свободно�
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
 msgid  "This operation cannot be run on\\nfiles containing wildcards."
-msgstr ""
+msgstr "Невозможно выполнить операцию с файлами, \nсодержащими символы шаблона."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
 msgid  "This operation is not supported on this operating system."
@@ -6617,7 +6617,7 @@ msgstr "Невозможно использовать файл в качеств
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
 msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
-msgstr ""
+msgstr "Невозможно прочесть информацию о документе из файла\n, так как формат документа\nнеизвестен или информации о документе\nне существует."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
 msgid  "This document has already been opened for editing."
@@ -6649,11 +6649,11 @@ msgstr "Невозможно установить интернет-соедин�
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
 msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "Невозможно получить интернет-данные.\nСообщение ошибки сервера: $(ARG1)."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
 msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "Невозможно передать интернет-данные.\nСообщение ошибки сервера: $(ARG1)."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
 msgid  "General Internet error has occurred."
@@ -6765,7 +6765,7 @@ msgstr "Для установки каналов требуется папка �
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
 msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
-msgstr ""
+msgstr "Этот документ содержит атрибуты, которые невозможно сохранить в данном формате.\nСохраните документ в формате %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
 msgid  "The file $(FILENAME) cannot be saved. Please check your system settings. You can find an automatically generated backup copy of this file in folder $(PATH) named $(BACKUPNAME)."
@@ -6781,19 +6781,19 @@ msgstr "Невозможно создать резервную копию."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
 msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
-msgstr ""
+msgstr "Попытка запуска макроса.\nВ целях безопасности поддержка макросов была заблокирована."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
 msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
-msgstr ""
+msgstr "Документ содержит макросы.\n\nМакросы могут содержать вирусы. Выполнение макросов отключено в соответствии с текущими параметрами безопасности макросов в Сервис - Параметры - %PRODUCTNAME - Безопасность.\n\nВ связи с этим некоторая функциональность будет недоступна."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
 msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "Содержимое или макросы документа не соответствуют электронной подписи.\n\nЭто может быть результатом порчи при передаче данных или преднамеренной манипуляции.\n\nНе рекомендуется доверять содержимому данного документа.\nВыполнение макросов для данного документа заблокировано.\n "
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
 msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "Зашифрованный документ содержит непредвиденные незашифрованные данные.\n\nВозможно, это результат подделки документа.\n\nНе рекомендуется доверять содержимому данного документа.\nВыполнение макросов для данного документа заблокировано.\n "
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
 msgid  "Invalid data length."
@@ -6821,7 +6821,7 @@ msgstr "Невозможно выполнить операцию: защита �
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
 msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
-msgstr ""
+msgstr "Пароль совместно используемого табличного документа не может быть установлен или изменён.\nСначала отключите режим совместного использования."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
 msgid  "INSRT"

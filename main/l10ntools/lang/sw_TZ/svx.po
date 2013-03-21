@@ -941,11 +941,11 @@ msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "RamaniTaswira imefanyiwa marekebisho.\nJe, unataka kuhifadhi mabadiliko?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "RamaniTaswira imefanyiwa marekebisho.\nJe, unataka kuhifadhi mabadiliko?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "%PRODUCTNAME Document Recovery"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nPlease help us solve the problem that caused the crash. You can do this by sending the error report created by %PRODUCTNAME. Click 'Next' to open the Error Report tool."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Status of recovered documents:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Document Name\tStatus"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1341,7 +1341,7 @@ msgstr "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Sun Microsystems to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Sun Microsystems' privacy policy, visit\nhttp://www.sun.com/privacy/"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "Chaguzi..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "Nina ruhusu Sun Microsystems kuwasiliana na mimi kuhusu ripoti hii."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "~Port"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Kontua imefanyiwa marekebisho.\nJe, unataka kuhifadhi mabadiliko?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "Je, unataka kuunda kontua mpya?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Kuseti ulingo mpya uta\nsababisha kuntua kufutwa.\nUnauhakika unataka kuendelea?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "Ingiza kinachohitajika katika uga '#'. Tafadhali ingiza thamani."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Ingizo tayari lipo.\nTafadhali chagua jina jengine."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "rekodi # itafutwa."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Kama utabofya Ndio, hutoweza kutengua operesheni hii!\nHatahivyo unataka kuendelea?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Jina Mandhari Batili!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Kweli unataka\nkufuta kiumbile hiki?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Kweli unataka\nkufuta mandhari hii?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "Unataka kufuta faili lililounganishwa?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Faili hili haliwezi kufunguliwa.\nUnataka kuingiza njia nyingine ya kutafuta? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "~Organizer..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Jina hili la mandhari tayari lipo.\nTafadhali chagua jingine."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -9909,11 +9909,11 @@ msgstr "Futa"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "~Traditional Chinese to simplified Chinese"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "~Simplified Chinese to traditional Chinese"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "~Traditional Chinese to simplified Chinese"
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "~Simplified Chinese to traditional Chinese"

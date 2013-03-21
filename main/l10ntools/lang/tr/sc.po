@@ -153,8 +153,9 @@ msgid  "Column Fields"
 msgstr "Sütun Alanları"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "Satır\nAlanlar"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -1173,12 +1174,10 @@ msgid  "Text Import"
 msgstr "İçe aktar (metin)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "İçeri aktarım"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
-#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "~Karakter kümesi"
 
@@ -1187,57 +1186,46 @@ msgid  "Language"
 msgstr ""
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
-#, fuzzy
 msgid  "From ro~w"
 msgstr "Sa~tırdan"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
-#, fuzzy
 msgid  "Separator options"
 msgstr "Ayırıcı seçenekleri"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
-#, fuzzy
 msgid  "~Fixed width"
 msgstr "~Sabit genişlik"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
-#, fuzzy
 msgid  "~Separated by"
 msgstr "~Ayıran"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
-#, fuzzy
 msgid  "~Tab"
 msgstr "~Sekme"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
-#, fuzzy
 msgid  "~Comma"
 msgstr "~Virgül"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
-#, fuzzy
 msgid  "~Other"
 msgstr "~Diğer"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
-#, fuzzy
 msgid  "S~emicolon"
 msgstr "N~oktalı virgül"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "S~pace"
 msgstr "B~oşluk"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
-#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "~Ayraçları birleştir"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
-#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "Me~tin ayırma işareti"
 
@@ -1344,1327 +1332,1062 @@ msgid  "Settings"
 msgstr "Ayarlar"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of sheets:"
 msgstr "Çalışma sayfası sayısı:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of cells:"
 msgstr "Hücre sayısı:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of pages:"
 msgstr "Sayfa sayısı:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Document: "
 msgstr "Belge:"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Varsayılan"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "~Style"
 msgstr "~Biçem"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "~Superscript"
 msgstr "~Üst simge"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "S~ubscript"
 msgstr "~Alt simge"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "~Hizalama"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Sol"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Sağ"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Ortalanmış"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
-#, fuzzy
 msgid  "~Justified"
 msgstr "İ~ki yana hizalı"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Satır aralığı"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "~Köprü..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "Köp~rüyü Kaldır"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "Me~tin..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
-#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "Makro A~ta..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "~Özgün boyut"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Ad..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Tanımla..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "~Yansıt"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "~Dikey"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "~Yatay"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Düzenle"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Öne getir"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "~Geri gönder"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "Sa~bitleyici"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "Sayfa~ya"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "Hücre~ye"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "Hiz~alama"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "Çizim nesne çubuğu"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Text Object Bar"
 msgstr "Metin nesne çubuğu"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "Grafik Araç Çubuğu"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
-#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "Çizim nesneleri için açılan menü"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
-#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "Metin nesneleri için açılan menü"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Ad..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Tanımla..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Düzenle"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Öne getir"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "~Geri gönder"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "Sabit~leyici"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "Sayfa~ya"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "Hücre~ye"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "Hi~zalama"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
-#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "Form nesneleri için popup menü"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Last Used"
 msgstr "Son Kullanılan"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "All"
 msgstr "Tümü"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Database"
 msgstr "Veritabanı"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Date&Time"
 msgstr "Tarih ve Saat"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Financial"
 msgstr "Finansal"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Information"
 msgstr "Bilgi"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Logical"
 msgstr "Mantıksal"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Mathematical"
 msgstr "Matematiksel"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Array"
 msgstr "Dizi"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Statistical"
 msgstr "İstatistiksel"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Hesap Tablosu"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "Metin"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Add-in"
 msgstr "Ekle"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "Funktion in Rechenblatt einfügen"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "İşlevler"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
-#, fuzzy
 msgid  "Range"
 msgstr "Aralık"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Simge Durumuna/Ekranı Kapla"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
-#, fuzzy
 msgid  "Column inserted"
 msgstr "Sütun eklendi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
-#, fuzzy
 msgid  "Row inserted "
 msgstr "Satır eklendi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
-#, fuzzy
 msgid  "Sheet inserted "
 msgstr "Çalışma sayfası eklendi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
-#, fuzzy
 msgid  "Column deleted"
 msgstr "Sütun silindi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
-#, fuzzy
 msgid  "Row deleted"
 msgstr "Satır silindi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
-#, fuzzy
 msgid  "Sheet deleted"
 msgstr "Çalışma sayfası silindi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
-#, fuzzy
 msgid  "Range moved"
 msgstr "Aralık taşındı"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "Değiştirilmiş içerik"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "Değiştirilmiş içerik"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed to "
 msgstr "Değiştirilen"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
-#, fuzzy
 msgid  "Original"
 msgstr "Özgün"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
-#, fuzzy
 msgid  "Changes rejected"
 msgstr "Değişiklikler reddedildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
-#, fuzzy
 msgid  "Accepted"
 msgstr "Kabul edildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
-#, fuzzy
 msgid  "Rejected"
 msgstr "Reddedildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
-#, fuzzy
 msgid  "No Entry"
 msgstr "Girdi yok"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
-#, fuzzy
 msgid  "<empty>"
 msgstr "<empty>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
-#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "Değişiklikleri kabul ya da reddet"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Comment..."
 msgstr "Açıklamayı Düzenle..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
-#, fuzzy
 msgid  "Action"
 msgstr "Eylem"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Konum"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "Author"
 msgstr "Yazan"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Tarih"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Açıklama"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
-#, fuzzy
 msgid  "Sorting"
 msgstr "Sırala"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
-#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "Çakışmaları düzelt"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
-#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "Bu paylaştırılmış hesap tablosunda çakışan değişiklikler var. Çakışmaları çözmek için önce hesap tablosunu kaydedin. Ya kendini ya da diğer değişikliklerin olduğu tabloyu sürdürün."
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "Beni~m Tablomu Sürdür"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Other"
 msgstr "Diğerlerinin Tabl~osunu Sürdür"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
-#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "~Her Zaman Benim Tablomu Sürdür"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
-#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "Her Z~aman Diğerlerinin Tablosunu Sürdür"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
-#, fuzzy
 msgid  "Conflict"
 msgstr "Çakışma"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
-#, fuzzy
 msgid  "Author"
 msgstr "Yazan"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Tarih"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "Bilinmeyen Kullanıcı"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.ModalDialog.Text
-#, fuzzy
 msgid  "Re-type Password"
 msgstr "Şifreyi Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "The document you are about to export has one or more protected items with password that cannot be exported.  Please re-type your password to be able to export your document."
 msgstr "Dışarı aktarmak üzere olduğunuz belge, bir veya daha çok şifre korumalı dolayısıyla aktarılamayacak öğe içermektedir.  Belgenizi dışarı aktarabilmek için, lütfen şifrenizi tekrar giriniz."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_DOCUMENT.FixedLine.Text
-#, fuzzy
 msgid  "Document protection"
 msgstr "Belge koruması"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Durum bilinmiyor"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
-#, fuzzy
 msgid  "Sheet protection"
 msgstr "Çalışma sayfası koruması"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME1.FixedText.Text
-#, fuzzy
 msgid  "Sheet1 has a really long name"
 msgstr "Çalışma Sayfası1'in çok uzun bir adı var"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS1.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Durum bilinmiyor"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
-#, fuzzy
 msgid  "Sheet2"
 msgstr "Çalışma Sayfası2"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS2.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Durum bilinmiyor"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET2.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
-#, fuzzy
 msgid  "Sheet3"
 msgstr "Çalışma Sayfası3"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS3.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Durum bilinmiyor"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET3.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
-#, fuzzy
 msgid  "Sheet4"
 msgstr "Çalışma Sayfası4"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS4.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Durum bilinmiyor"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET4.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PROTECTED.String.Text
-#, fuzzy
 msgid  "Not protected"
 msgstr "Korumalı değil"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PASS_PROTECTED.String.Text
-#, fuzzy
 msgid  "Not password-protected"
 msgstr "Şifre korumalı değil"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_BAD.String.Text
-#, fuzzy
 msgid  "Hash incompatible"
 msgstr "Hash uyumsuz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_GOOD.String.Text
-#, fuzzy
 msgid  "Hash compatible"
 msgstr "Hash uyumlu"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_REGENERATED.String.Text
-#, fuzzy
 msgid  "Hash re-generated"
 msgstr "Hash tekrar üretildi"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.ModalDialog.Text
-#, fuzzy
 msgid  "Re-type Password"
 msgstr "Şifreyi Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_RETYPE_PASSWORD.RadioButton.Text
-#, fuzzy
 msgid  "Re-type password"
 msgstr "Şifreyi Yeniden Yaz"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD1.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "~Şifre"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD2.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "~Teyid et"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_MATCH_OLD_PASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "New password must match the original password."
 msgstr "Yeni şifre özgün şifre ile eşleşmeli."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_REMOVE_PASSWORD.RadioButton.Text
-#, fuzzy
 msgid  "Remove password from this protected item."
 msgstr "Korumalı öğeden şifreyi kaldır."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
-#, fuzzy
 msgid  "Share Document"
 msgstr "Belgeyi Paylaş"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
-#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "Bu hesap tablosunu diğer kullanıcılarla paylaş"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_WARNING.FixedText.Text
-#, fuzzy
 msgid  "Note: Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr "Not: Biçimlendirme öznitelikleri olan yazı tipleri, renkler ve sayı biçimlerindeki değişiklikler kaydedilmeyecektir ve çizelge ve çizim nesneleri gibi bazı işlevlerde paylaştırılmış kipte kullanılamayacaktır. Bu özelliklerinden birinde değişiklik yapabilmek için paylaştırılmış kip kapatılmalıdır."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
-#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "Bu hesap tablosuna erişen kullanıcılar"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Ad"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
-#, fuzzy
 msgid  "Accessed"
 msgstr "Erişim"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
-#, fuzzy
 msgid  "No user data available."
 msgstr "Kullanıcı verisi yok."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "Bilinmeyen Kullanıcı"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
-#, fuzzy
 msgid  "(exclusive access)"
 msgstr "(özel erişim)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Insert Sheet"
 msgstr "Çalışma Sayfası Ekle"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Konum"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
-#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "Geçerli sayfadan önc~e"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
-#, fuzzy
 msgid  "~After current sheet"
 msgstr "Geçerli s~ayfadan sonra"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
-#, fuzzy
 msgid  "Sheet"
 msgstr "Çalışma Sayfası"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
-#, fuzzy
 msgid  "~New sheet"
 msgstr "~Yeni çalışma sayfası"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "Çalışma Sayfası Adeti"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "Na~me"
 msgstr "~Ad"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
-#, fuzzy
 msgid  "~From file"
 msgstr "~Dosyadan "
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "~Gözat..."
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
-#, fuzzy
 msgid  "Lin~k"
 msgstr "Bağ~lantı"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
-#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "~Değişiklikleri hesap tablosunda göster"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
-#, fuzzy
 msgid  "Filter settings"
 msgstr "Süzgeç ayarları"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "~Kabul edilen değişiklikleri göster"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "~Kabul edilmeyen değişiklikleri göster"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Küçült/Büyüt"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
-#, fuzzy
 msgid  "Show Changes"
 msgstr "Değişiklikleri göster"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ModalDialog.Text
-#, fuzzy
 msgid  "Protect Sheet"
 msgstr "Çalışma Sayfasına Koruma Koy"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.BTN_PROTECT.CheckBox.Text
-#, fuzzy
 msgid  "P~rotect this sheet and the contents of locked cells"
 msgstr "Bu çalışma sayfasına ve kilitlenmiş hücrelerin içeriğine koruma koy"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD1.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "~Şifre"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD2.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "~Teyid et"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Seçenekler"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "Allow all users of this sheet to:"
 msgstr "Bu çalışma sayfası kullanıcılarına şunun için izin ver:"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_LOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select locked cells"
 msgstr "Kilitlenmiş hücreleri seç"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_UNLOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select unlocked cells"
 msgstr "Kiliti kaldırılmış hücreleri seç"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
-#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "Harici veri kaynağı adresi"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
-#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(Yerel dosya sistemi ya da internet üzerindeki kaynak belgesinin adresini buraya girin)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
-#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "Mevcut Tablolar/Aralıklar"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
-#, fuzzy
 msgid  "~Update every"
 msgstr "Her zaman güncelle"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "saniye"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
-#, fuzzy
 msgid  "External Data"
 msgstr "Dış Veri"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "Gezgin"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
-#, fuzzy
 msgid  "Row"
 msgstr "Satır"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Row"
 msgstr "Zeile"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Sütun"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
-#, fuzzy
 msgid  "Column"
 msgstr "Spalte"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
-#, fuzzy
 msgid  "Document"
 msgstr "Dokument"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "Veri Aralığı"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Başlat"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "End"
 msgstr "Son"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "İçerikler"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "Değiştir"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
-#, fuzzy
 msgid  "Scenarios"
 msgstr "Senaryolar"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "Sürükleme Kipi"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "Sürükleme Kipi"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
-#, fuzzy
 msgid  "Display"
 msgstr "Göster"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
-#, fuzzy
 msgid  "active"
 msgstr "etkin"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
-#, fuzzy
 msgid  "inactive"
 msgstr "etkisiz"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
-#, fuzzy
 msgid  "hidden"
 msgstr "gizli"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
-#, fuzzy
 msgid  "Active Window"
 msgstr "Etkin Pencere"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
-#, fuzzy
 msgid  "Scenario Name"
 msgstr "Senaryo Adı"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "Açıklama"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "İçerikler"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
-#, fuzzy
 msgid  "Sheets"
 msgstr "Çalışma Sayfaları"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
-#, fuzzy
 msgid  "Range names"
 msgstr "Aralık adları"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
-#, fuzzy
 msgid  "Database Ranges"
 msgstr "Vertabanı Aralıkları"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Grafik"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
-#, fuzzy
 msgid  "OLE objects"
 msgstr "OLE nesneleri"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "Yorumlar"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
-#, fuzzy
 msgid  "Linked areas"
 msgstr "Bağlantılı alanlar"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing objects"
 msgstr "Çizim nesneleri"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "Köprü olarak Ekle"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Link"
 msgstr "Bağlantı olarak Ekle"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Copy"
 msgstr "Kopya olarak Ekle"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Sil"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "Özellikler..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
-#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "Yazdırma Aralıklarını Düzenle"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "Yazdırma aralığı"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- hiçbiri -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- tam sayfa -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- kullanıcı tanımlı -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- selection -"
 msgstr "- seçim -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Küçült"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
-#, fuzzy
 msgid  "Rows to repeat"
 msgstr "Yinelenecek satırlar"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- hiçbiri -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- kullanıcı tanımlı -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Küçült"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
-#, fuzzy
 msgid  "Columns to repeat"
 msgstr "Yinelenecek sütunlar"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- hiçbiri -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- kullanıcı tanımlı -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Küçült"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
-#, fuzzy
 msgid  "~Column and row headers"
 msgstr "Satır ve sütun ~başlıkları"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "~Izgara"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NOTES.CheckBox.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "~Yorumlar"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
-#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "~Nesneler/grafikler"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
-#, fuzzy
 msgid  "Ch~arts"
 msgstr "Çizelgeler"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
-#, fuzzy
 msgid  "~Drawing objects"
 msgstr "~Çizim nesneleri"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
-#, fuzzy
 msgid  "~Formulas"
 msgstr "~Formüller"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
-#, fuzzy
 msgid  "Zero ~values"
 msgstr "Sıfır değer~leri"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Yazdır"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
-#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "~Yukardan aşağı, sonra sağa"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "~Soldan sağa, sonra aşağıya"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
-#, fuzzy
 msgid  "First ~page number"
 msgstr "İlk ~sayfa numarası"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
-#, fuzzy
 msgid  "Page order"
 msgstr "Sayfa sırası"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
-#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "Ölçekle~me kipi"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
-#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "Çıktı küçült/büyüt "
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "Çıktı aralığını genişliğe/yüksekliğe göre uydur"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "Çıktı aralığını sayfa sayısına göre uydur"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
-#, fuzzy
 msgid  "~Scaling factor"
 msgstr "Ö~lçekleme oranı"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width in pages"
 msgstr "Sayfadaki ~genişlik"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight in pages"
 msgstr "Sayfadaki yük~seklik"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
-#, fuzzy
 msgid  "N~umber of pages"
 msgstr "~Sayfaların sayısı"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Ölçek"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
-#, fuzzy
 msgid  "Headers/Footers"
 msgstr "Üst bilgi/Alt bilgi"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
-#, fuzzy
 msgid  "Header"
 msgstr "Üst bilgi"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "Alt bilgi"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Header (right)"
 msgstr "Üst bilgi (sağ)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
-#, fuzzy
 msgid  "Header (left)"
 msgstr "Üst bilgi (sol)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Footer (right)"
 msgstr "Alt bilgi (sağ)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
-#, fuzzy
 msgid  "Footer (left)"
 msgstr "Alt bilgi (sol)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
-#, fuzzy
 msgid  "Headers"
 msgstr "Üst bilgi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
-#, fuzzy
 msgid  "Footers"
 msgstr "Alt bilgi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left area"
 msgstr "~Sol alan"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
-#, fuzzy
 msgid  "~Center area"
 msgstr "~Orta alan"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "R~ight area"
 msgstr "S~ağ alan"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
-#, fuzzy
 msgid  "Hea~der"
 msgstr "Üs~tbilgi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
-#, fuzzy
 msgid  "Custom header"
 msgstr "Özel üst bilgi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Text Attributes"
 msgstr "Textattribute"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Title"
 msgstr "Dateiname"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Başlık"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
-#, fuzzy
 msgid  "File Name"
 msgstr "Dosya Adı"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
-#, fuzzy
 msgid  "Path/File Name"
 msgstr "Yol/dosya adı"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Sheet Name"
 msgstr "Tabellenname"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Page"
 msgstr "Seite"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Pages"
 msgstr "Seiten"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Date"
 msgstr "Datum"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Time"
 msgstr "Uhrzeit"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "Yazı tipini değiştirmek ya da tarih, saat gibi alan komutları eklemek için düğmeleri kullanınız."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Note"
 msgstr "Not"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Düzenle..."
 
@@ -2798,8 +2521,9 @@ msgid  "~Discard"
 msgstr "~Kaydetme"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
+#, fuzzy
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "#\ngirişi silinsin mi?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3292,86 +3016,70 @@ msgid  "~Delete"
 msgstr "~Sil"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
-#, fuzzy
 msgid  "Format Cells"
 msgstr "Hücreleri Biçimlendir"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "Sayı"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Yazı tipi"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Yazı tipi efektleri"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Hizalama"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "Asya Baskı Düzeni"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Kenarlık"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Arkaplan"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
-#, fuzzy
 msgid  "Cell Protection"
 msgstr "Hücre koruması"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
-#, fuzzy
 msgid  "~Protected"
 msgstr "~Koruma altında"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~formula"
 msgstr "~Formulü gizle"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~all"
 msgstr "~Tümünü gizle"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "Hücre koruması, yalnızca aktif sayfada korunmuşsa etkindir.\n\nBunun için 'Araçlar' menüsünden önce 'Belgeyi Koru' sonra 'Çalışma Sayfası' komutunu seçin."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
-#, fuzzy
 msgid  "Protection"
 msgstr "Koruma"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "~Yazdırırken gizle"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
-#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "Geçerli seçimin hücreleri yazdırmaya dahil olmayacak."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Yazdır"
 
@@ -4000,8 +3708,9 @@ msgid  "No operations to execute"
 msgstr "Yürütülecek işlem yok"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
+#, fuzzy
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "Bu aralık, sütun başlıkları içermiyor.\nİlk satır sütun başlığı olarak kullanılsın mı?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -4079,8 +3788,9 @@ msgid  "Search key not found."
 msgstr "Aranan terim bulunamadı."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
+#, fuzzy
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "Hedef değer arama başarılı oldu.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -4093,12 +3803,14 @@ msgid  ") into current cell?"
 msgstr ") seçili hücreye eklensin mi?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
+#, fuzzy
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "Hedef değer arama başarısız oldu.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
+#, fuzzy
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "Kesin bir değer bulunamadı.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4680,8 +4392,9 @@ msgid  "Multiple operations"
 msgstr "Çoklu işlemler"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+#, fuzzy
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Girilen ad geçersiz.\nOtomatik biçimleme oluşturulamadı.\nBaşka bir ad ile yeniden deneyin."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 #, fuzzy
@@ -4719,8 +4432,9 @@ msgid  "Print"
 msgstr "Yazdır"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+#, fuzzy
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "Otomatik biçimlendirmeyi kullanabilmek için\nen az 3x3 hücre büyüklüğünde bir tablo aralığı seçilmiş olmalıdır."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 #, fuzzy
@@ -4842,8 +4556,9 @@ msgid  "Report1"
 msgstr "Rapor1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "denetim için mevcut değil.\nKurulumu kontrol edip\ngerekirse istenen dili yükleyin"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 #, fuzzy
@@ -4856,8 +4571,9 @@ msgid  "Should the spellcheck be continued at the beginning of the current sheet
 msgstr "İmla denetimi sayfa başından devam ettirilsin mi?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+#, fuzzy
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "eşanlamlılar sözlüğü için mevcut değil. \nKurulumu kontrol edip  \ngerekirse istenilen dili yükleyin."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 #, fuzzy
@@ -5193,12 +4909,14 @@ msgid  "on"
 msgstr "açık"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+#, fuzzy
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "Bu dosyada başka dosyalara bağlantılar mevcut.\nBağlantılar güncellensin mi?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+#, fuzzy
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "Bu dosya, sonuçları kaydedilmeyen sorgular içeriyor.\nBU sorgular yinelensin mi?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 #, fuzzy
@@ -5206,8 +4924,9 @@ msgid  "Too many conditions"
 msgstr "Koşul sayısı çok fazla"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+#, fuzzy
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "Dolu hücreler, sayfa dışına\ntaşınamaz."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 #, fuzzy
@@ -5230,8 +4949,9 @@ msgid  "There is not enough space on the sheet to insert here."
 msgstr "Sayfada ekleme için yeterli alan yok."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+#, fuzzy
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "Pano içeriği, seçilen aralıktan daha büyük.\nYine de eklemek istiyor musunuz?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 #, fuzzy
@@ -5284,8 +5004,9 @@ msgid  "Compare #"
 msgstr "Karşılaştır #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+#, fuzzy
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "Maksimum geçersiz hücre sayısı aşıldı.\nGeçersiz hücrelerin tümüü seçilmedi."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 #, fuzzy
@@ -5407,8 +5128,9 @@ msgid  "Exit Recording"
 msgstr "Kayıttan çık"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+#, fuzzy
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Bu işlem ile değişikliklerin izlenmesi sona erdirilecek.\nDaha önceki değişiklikler ile ilgili tüm bilgiler kaybolacak.\n\nKayıt durdurulsun mu?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 #, fuzzy
@@ -5426,8 +5148,9 @@ msgid  "Array formula  %1 R x %2 C"
 msgstr "Dizi formülü %1 Sa x %2 Sü"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+#, fuzzy
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "Belge makro işlev çağrıları içeriyor.\nMakrolar çalıştırılsın mı?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 #, fuzzy
@@ -5554,32 +5277,39 @@ msgid  "Your spreadsheet has been updated with changes saved by other users."
 msgstr "Hesap tablonuz diğer kullanıcıların yaptıkları değişiklikleri kaydetmesiyle güncellendi."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+#, fuzzy
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Paylaşım kipine geçmek için hesap tablosu şimdi kaydedilmelidir.\n\nDevam etmek istiyor musunuz?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+#, fuzzy
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Önceki birleştirme sırasında bazı çakışmalar meydana geldiği için değişiklikler paylaştırılmış hesap tablosuna kaydedilmemiş.\n\nDevam etmek istiyor musunuz?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+#, fuzzy
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Hesap tablosunun paylaştırılmış kipini kapatmak diğer kullanıcıların işlerini hesap tablosu üzerine aktarmalarını engeller.\n\nDevam etmek istiyor musunuz?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+#, fuzzy
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "Bu hesap tablosu artık paylaştırılmış kipte değildir.\n\nHesap tablonuzu ayrı olarak kaydedin ve değişiklikleri daha önceden paylaştırılmış olan dosyaya elle ile birleştirin."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+#, fuzzy
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "Hesap Tablosu paylaştırılmış kipidir. Bu çok kullanıcılı ortamlarda hesap tablosuna birden çok kullanıcının erişimine izin verir.\n\nBiçimlendirme öznitelikleri olan yazı tipleri, renkler ve sayı biçimlerindeki değişiklikler kaydedilmeyecektir ve çizelge ve çizim nesneleri gibi bazı işlevlerde paylaştırılmış kipte kullanılamayacaktır. Bu özelliklerinden birinde değişiklik yapabilmek için paylaştırılmış kip kapatılmalıdır."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "Paylaştırılmış hesap tablosu diğer kullanıcıların birleştirme süreci devam ettiği için kilitlidir: '%1'\n\nPaylaşım kipi dosya kilitli olduğu için kapatılamıyor. Sonra tekrar deneyin."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "Paylaştırılmış hesap tablosu diğer kullanıcıların birleştirme süreci devam ettiği için kilitlidir: '%1'\n\nDeğişikliklerinizi kaydetmek için sonra tekrar deneyin."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 #, fuzzy
@@ -5697,67 +5427,54 @@ msgid  "AutoFormat"
 msgstr "Otomatik Biçimlendirme"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "Biç~im"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
-#, fuzzy
 msgid  "A~utoFit width and height"
 msgstr "Genişlik/yüksekliği ayarla"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
-#, fuzzy
 msgid  "~Borders"
 msgstr "~Kenarlık"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
-#, fuzzy
 msgid  "F~ont"
 msgstr "~Yazı tipi"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
-#, fuzzy
 msgid  "~Pattern"
 msgstr "~Örnek"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
-#, fuzzy
 msgid  "Alignmen~t"
 msgstr "~Hizalama"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
-#, fuzzy
 msgid  "~Number format"
 msgstr "Sayı biçi~mi"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "Biçimlendirme"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~Ekle..."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Sil"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "~Yeniden adlandır"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
-#, fuzzy
 msgid  "Add AutoFormat"
 msgstr "Otomatik Biçimlendirme Ekle"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
-#, fuzzy
 msgid  "Rename AutoFormat"
 msgstr "Otomatik Biçimlendirmeyi Yeniden İsimlendir"
 
@@ -5772,8 +5489,9 @@ msgid  "Delete AutoFormat"
 msgstr "Otomatik Biçimlendirmeyi Sil"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+#, fuzzy
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "# Otomatik biçimleme gerçekten silinsin mi?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
 #, fuzzy
@@ -14215,8 +13933,9 @@ msgid  "Font Attributes"
 msgstr "Yazı Tipi Öznitelikleri"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
+#, fuzzy
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "Panoya büyük miktarda veri aktardınız.\nPano içeriğini başka uygulamalarda kullanmak istiyor musunuz?"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -14297,8 +14016,9 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME Calc, girilen formülde bir hata buldu.\nAşağıda önerilen düzeltmeyi kabul etmek istiyor musunuz?\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -14351,8 +14071,9 @@ msgid  "~Selected sheets"
 msgstr "~Seçilen sayfalar"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
+#, fuzzy
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "Halen veri içeren hücrelere veri yapıştırıyorsunuz. \nMevcut verinin üzerine yazmak istiyor musunuz?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy

@@ -61,11 +61,11 @@ msgstr "无文字"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "输入密码以打开文件：\n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "输入密码以修改文件：\n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "文档正在使用"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "文档文件 '$(ARG1)' 已经被\n\n$(ARG2) 锁定以进行编辑\n\n请稍后再尝试保存文档，或者保存该文档的一个副本。\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "服务器消息："
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "输入用户名和密码：\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "输入用户名和密码：\n在 %1 的\"%2\""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "发送(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "'${HOST}' 服务器要设置一个或多个 Cookie。\nCookie 包含与特定 URL 类有关的信息。如果 %PRODUCTNAME 以后请求一个文档，该文档的 URL 对应于以前设置的某个 Cookie 的类，则 %PRODUCTNAME 将向服务器发送此信息。这样服务器就能够识别 WWW 应用程序的状态（如在线购物时）。\n\n应设置以下 Cookie：\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "域：${DOMAIN}， 路径：${PATH}，Cookie：${COOKIE}。\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "接受 Cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME 为服务器 '${HOST}' 保存了 Cookie，下次请求文档 ${PATH} 时将发送这些 Cookie。\nCookie 包含与特定 URL 类有关的信息。访问特定文档时，某些服务器会向 %PRODUCTNAME 发送这些 Cookie，并将其保存在 %PRODUCTNAME 中。如果 %PRODUCTNAME 加载一个文档，该文档的 URL 对应于以前收到的某个 Cookie 的类，则 %PRODUCTNAME 将向服务器发送此信息。这样服务器就能够追踪 WWW 应用程序的状态（如在线购物时）。\n\n应设置以下 Cookie：\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "域：${DOMAIN}，路径：${PATH}，Cookie：${COOKIE}。\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "文档正在使用"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "文档文件 '$(ARG1)' 已经被\n\n$(ARG2) 锁定以进行编辑\n\n以只读方式打开文档或打开文档的一个副本进行编辑。\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "文档已经被其他人更改"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "在 %PRODUCTNAME 中文件被打开并进行编辑，因此该文件已经被更改。保存您更改后的文档会覆盖其他人所做的修改。\n\n还是要继续保存么？\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME 更新可用"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "该文档是由 %PRODUCTNAME 的一个较新版本创建的。它可能含有您当前版本不支持的功能。\n\n单击“立即更新...”以运行联机更新并获得 %PRODUCTNAME 的最新版本。"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "注意：请确定您记住了设置的主密码。如果您忘记了您
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "文档文件 '$(ARG1)' 已于 $(ARG2) 在不同的系统中被您自己锁定以进行编辑\n\n以只读方式打开文档，或者忽略您自身对文件的锁定，打开文档进行编辑。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "打开(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "文档文件 '$(ARG1)' 已于 $(ARG2) 在不同的系统中被您自己锁定以进行编辑\n\n在其他系统中关闭文档并重新尝试保存它，或者忽略您自身对文件的锁定并保存当前文档。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

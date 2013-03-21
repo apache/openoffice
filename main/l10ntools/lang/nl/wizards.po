@@ -445,7 +445,7 @@ msgstr "Sjabloon gemaakt via <wizard_name> op <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "De Assistent kan niet uitgevoerd worden, omdat belangrijke bestanden niet gevonden zijn.\nKlik op de knop Standaard onder 'Extra - Opties - %PRODUCTNAME - Paden' om de paden op de oorspronkelijke standaardinstellingen terug te zetten.\nVoer de Assistent vervolgens opnieuw uit."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Velden in he~t formulier"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Binaire velden kunnen altijd uit de linkerlijst gekozen worden.\nIndien mogelijk worden ze als afbeeldingen geïnterpreteerd."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Een subformulier is een formulier dat ingevoegd wordt in een ander formulier.\nGebruik subformulieren om gegevens uit tabellen of queries te tonen met een één-op-veel-relatie."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Velden in ~formulier"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "De join <FIELDNAME1> en <FIELDNAME2> is twee keer geselecteerd.\nMaar verbindingen kunnen slechts één keer worden gebruikt."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Stel de naam voor het formulier in"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Er bestaat al een formulier met de naam %FORMNAME.\nKies een andere naam."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Het veld kan niet ingevoegd worden omdat het maximumaantal van %COUNT mo
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "De naam %TABLENAME bestaat reeds.\nVoer een nieuwe naam in."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Webassistent"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Deze webassistent helpt u bij het publiceren van documenten op het internet.\n\nDe documenten worden geconverteerd zodat ze met een webbrowser bekeken kunnen worden. Daarnaast wordt er een inhoudsopgave gegenereerd met koppelingen, voor gemakkelijke toegang tot de documenten. Met de webassistent kunt u ook het ontwerp en de lay-out van uw website aanpassen.\n\nZo kunt u de gepubliceerde documenten up-to-date houden, en naar wens documenten toevoegen of verwijderen."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Voorbeeld"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "De geselecteerde instellingen worden verwijderd.\n\nWilt u deze instellingen echt verwijderen? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "De FTP-map %FILENAME kan niet worden gemaakt."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "De FTP-map %FILENAME bestaat niet. \nDe map nu maken?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Het Zip-bestand %FILENAME kan niet worden gemaakt: er bestaat al een map
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "De lokale map %FILENAME kan niet worden gemaakt. \nControleer uw schrijftoegang."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "De lokale map %FILENAME bestaat niet. \nDe map nu maken?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

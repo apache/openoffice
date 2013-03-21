@@ -217,7 +217,7 @@ msgstr "Pomjeri slajdove"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Nema dovoljno memorije!\nPostupak će biti prekinut."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1233,37 +1233,30 @@ msgid  "Slide Transition"
 msgstr "Prelaz između slajdova"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_APPLY_TRANSITION.FixedLine.Text
-#, fuzzy
 msgid  "Apply to selected slides"
 msgstr "Primijeni na izabrane slajdove"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.Fixedline.Text
-#, fuzzy
 msgid  "Modify transition"
 msgstr "Promijeni prelaz"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FixedText.Text
-#, fuzzy
 msgid  "Speed"
 msgstr "Brzina"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.item1.StringList.item
-#, fuzzy
 msgid  "Slow"
 msgstr "Sporo"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.item2.StringList.item
-#, fuzzy
 msgid  "Medium"
 msgstr "Srednje"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.item3.StringList.item
-#, fuzzy
 msgid  "Fast"
 msgstr "Brzo"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FixedText.Text
-#, fuzzy
 msgid  "Sound"
 msgstr "Zvuk"
 
@@ -1332,87 +1325,70 @@ msgid  "No Transition"
 msgstr "Nema prelaza"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Reply"
 msgstr "~Odgovori"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Bold"
 msgstr "~Masno"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "~Italic"
 msgstr "~Kurziv"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "~Underline"
 msgstr "~Podvučeno"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Strikethrough"
 msgstr "~Precrtano"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "Kopir~aj"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "~Umetni"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Comment"
 msgstr "~Obriši komentar"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete All Comments b~y %1"
 msgstr "Obriši s~ve komentare od %1"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALL_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~All Comments"
 msgstr "Obriši ~sve komentare"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Reply"
 msgstr "~Odgovori"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Comment"
 msgstr "~Obriši komentar"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete All Comments ~by %1"
 msgstr "Obriši ~sve komentare od %1"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALL_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~All Comments"
 msgstr "Obriši ~sve komentare"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_TODAY.String.Text
-#, fuzzy
 msgid  "Today,"
 msgstr "Danas,"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.String.Text
-#, fuzzy
 msgid  "Yesterday,"
 msgstr "Jučer,"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.String.Text
-#, fuzzy
 msgid  "(no author)"
 msgstr "(nema autora)"
 
@@ -1433,122 +1409,98 @@ msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to 
 msgstr ""
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Comment"
 msgstr "Ubaci komentar"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Comment(s)"
 msgstr "Obriši komentar(e)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.String.Text
-#, fuzzy
 msgid  "Move Comment"
 msgstr "Pomjeri komentar"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.String.Text
-#, fuzzy
 msgid  "Edit Comment"
 msgstr "Izmijeni komentar"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.String.Text
-#, fuzzy
 msgid  "Reply to Comment"
 msgstr "Odgovori na komentar"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_REPLY.String.Text
-#, fuzzy
 msgid  "Reply to %1"
 msgstr "Odgovori %1"
 
 #: source/ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "~Graphics"
 msgstr "~Slika"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "~Tabela..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "~Ćelija"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "~Spoji"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "~Podijeli..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Vrh"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "C~entar"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Dno"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "~Red"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "~Ravnomjerno razmakni"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Izaberi"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~Umetni..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "Kolo~na"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "~Ravnomjerno razmakni"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Izaberi"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~Umetni..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
@@ -1853,8 +1805,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Unesite ime za novi vrh strelice:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "Izabrano ime već postoji. \nMolimo, unesite drugo ime."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1942,8 +1895,9 @@ msgid  "Insert slides"
 msgstr "Ubaci slajdove"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Želite li stvarno da obrišete nivo \"$\"?\nNapomena: Svi objekti na tom nivou će biti obrisani."
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -2001,8 +1955,9 @@ msgid  "Insert text frame"
 msgstr "Ubaci okvir sa tekstom"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "Ova funkcija ne može biti pokrenuta \ns odabranim objektima."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -2015,8 +1970,9 @@ msgid  "The file could not be loaded!"
 msgstr "Dokument nije moguće učitati"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Format novih stranica bit će prilagođen\nŽelite li prilagoditi i druge objekte?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -2039,8 +1995,9 @@ msgid  "~Edit"
 msgstr "~Izmijeni"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Ova akcija briše popis akcija koje ne mogu biti vraćene na staro. Prethodne promjene na dokumente su još valjane,\nali ne mogu biti vraćene na staro. želite li nastaviti i\ntime dobiti novi dizajn slajda?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2063,8 +2020,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Na izabranom štampaču nije moguće podesiti format dokumenta."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Grafika je povezana na dokument. \nŽelite li odspojiti grafiku kako biste je mogli uređivati?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2202,8 +2160,9 @@ msgid  " (Outline)"
 msgstr "(Okvir)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Navedena skala je neispravna.\nŽelite li unijeti novu?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2555,8 +2514,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Nije bilo moguće razgrupisati sve predmete crtanja."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "Dizajn s ovim imenom već postoji.\nŽelite li ga zamijeniti?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2699,8 +2659,9 @@ msgid  "Graphics filter"
 msgstr "Filter slike"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "Datoteka %\nnije važeća zvučna datoteka "
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -2967,12 +2928,10 @@ msgid  "Insert Movie"
 msgstr "Ubaci film"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-#, fuzzy
 msgid  "Graphics Styles"
 msgstr "Grafički stilovi"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-#, fuzzy
 msgid  "Presentation Styles"
 msgstr "Stilovi prezentacije"
 
@@ -2990,822 +2949,658 @@ msgid  "All Styles"
 msgstr "Stilovi ćelija"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Distribution..."
 msgstr "~Distribucija..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Drawing View"
 msgstr "Pogled ~crtanja"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Outline View"
 msgstr "~Pregled sa rubovima"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "Sortirač slajdova"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
-#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "Pre~zentacija"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "~Ubaci tačku/crtu ljepljenja..."
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Izmijeni..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "Raspored slajda"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page Setup..."
 msgstr "~Postavke stranice..."
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Slide"
 msgstr "~Novi slajd"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Master"
 msgstr "~Novi master"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Page"
 msgstr "~Nova stranica"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Postavi pozadinsku sliku za slajd..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Display Background of Master"
 msgstr "Postavi pozadinu glavnice"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "Prikaz objekta iz mastera"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Pag~e"
 msgstr "~Stranica"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "Sla~jd"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "P~reimenuj sloj..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Slide"
 msgstr "~Obriši slajd"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Master"
 msgstr "O~briši master"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Page"
 msgstr "~Obriši stranicu"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Slide"
 msgstr "~Preimenuj slajd"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Master"
 msgstr "~Preimenuj master"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Page"
 msgstr "~Preimenuj stranicu"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
-#, fuzzy
 msgid  "L~ine..."
 msgstr "L~inija..."
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
-#, fuzzy
 msgid  "~Area..."
 msgstr "Pov~ršina..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Text..."
 msgstr "~Tekst..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "~Konektor..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
-#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "Vrati smje~r"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Dimen~zije..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
-#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "Položaj i ve~ličina..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "Izmijeni ~tačke"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Arra~nge"
 msgstr "~Rasporedi"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Bring to Front"
 msgstr "P~omjeri na vrh"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Pomjeri ~naprijed"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Pošalji na~zad"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Send to Back"
 msgstr "~Pošalji u pozadinu"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Ispred ~objekta"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "Iza o~bjekta"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "~Reverzno"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "C~haracter..."
 msgstr "Z~nak..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
-#, fuzzy
 msgid  "P~aragraph..."
 msgstr "Odlo~mak..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "~Pismo"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "~Veličina"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "~Stil"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "Masno"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "Kurziv"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Overline"
 msgstr "Nadvučeno"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "Podvučeno"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "Precrtano"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Sjenka"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "~Contour"
 msgstr "~Kontura"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Razmak između redova"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
-#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "Jednostruki prored"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
-#, fuzzy
 msgid  "1.5 Lines"
 msgstr "1,5 prored"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
-#, fuzzy
 msgid  "~Double"
 msgstr "~Dvostruki"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
-#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "~Posebni znak..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "Po~ravnanje"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Lijevo"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Desno"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Centrirano"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
-#, fuzzy
 msgid  "Justified"
 msgstr "Poravnato"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "Al~ignment"
 msgstr "Po~ravnanje"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Lijevo"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Centrirano"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Desno"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Vrh"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "C~entar"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Dno"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "Zatvori ~objekat"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "Izmijeni ~tačke"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Move Points"
 msgstr "Po~mjeri tačke"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Points"
 msgstr "Ubaci ~tačke"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Points"
 msgstr "~Obriši tačke"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "Zatvori ~objekat"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MenuItem.Text
-#, fuzzy
 msgid  "~Split Curve"
 msgstr "~Podijeli krivu"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert to Curve"
 msgstr "Pret~vori u krivu"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MenuItem.Text
-#, fuzzy
 msgid  "~Corner"
 msgstr "~Ugao"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MenuItem.Text
-#, fuzzy
 msgid  "Smoot~h"
 msgstr "~Glatko"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MenuItem.Text
-#, fuzzy
 msgid  "S~ymmetric"
 msgstr "S~imetrično"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MenuItem.Text
-#, fuzzy
 msgid  "~Reduce Points"
 msgstr "~Smanji broj tačaka"
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Grupiši"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Razgrupiši"
 
 #: source/ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MenuItem.Text
-#, fuzzy
 msgid  "Comb~ine"
 msgstr "Komb~iniraj"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MenuItem.Text
-#, fuzzy
 msgid  "~Split"
 msgstr "~Podijeli"
 
 #: source/ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Enter Group"
 msgstr "~Uđi u grupu"
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit Group"
 msgstr "Izađi iz ~grupe"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "~Imenuj predmet..."
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Opis..."
 
 #: source/ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MenuItem.Text
-#, fuzzy
 msgid  "~Rehearse Timings"
 msgstr "~Testiraj usklađenost vremena"
 
 #: source/ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Custom Animation..."
 msgstr "Posebna animacija..."
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "Int~eraction..."
 msgstr "Interakcija..."
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Presentation ~Object..."
 msgstr "Pre~dmet prezentacije..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Uobičajeno"
 
 #: source/ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MenuItem.Text
-#, fuzzy
 msgid  "F~ontwork"
 msgstr "F~ontWork"
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "Izvorna ve~ličina"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "Save as Picture..."
 msgstr "Spremi kao sliku..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MenuItem.Text
-#, fuzzy
 msgid  "Crop Picture..."
 msgstr "Isjeci sliku..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MenuItem.Text
-#, fuzzy
 msgid  "Na~vigator"
 msgstr "~Navigator"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Point"
 msgstr "Ubaci ~tačku"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Lijevo"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Vrh"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Desno"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Dno"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MenuItem.Text
-#, fuzzy
 msgid  "~Adapt Position to Object"
 msgstr "Pril~agodi položaj u odnosu na predmet"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Horizontal Left"
 msgstr "Fiksno ~vodoravno lijevo"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Horizontal ~Center"
 msgstr "Fiksno vodoravno na ~sredini"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Hori~zontal Right"
 msgstr "Fiksno vo~doravno desno"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Vertical Top"
 msgstr "Fiksno ~uspravno gore"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed V~ertical Center"
 msgstr "Fiksno u~spravno centrirano"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Ver~tical Bottom"
 msgstr "Fiksno us~pravno dolje"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Visible Grid"
 msgstr "~Vidljiva mreža"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Grid"
 msgstr "Poravnaj s rešetkom"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Grid to ~Front"
 msgstr "Mreža na ~vrh"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "~Mreža"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Snap Lines Visible"
 msgstr "Vidljive linije za ~ljepljenje"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "Lijepi na linije ljepljenja"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "Linije za ljepljenje na vrh"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Snap Lines"
 msgstr "~Linije ljepljenja"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "Oso~bine..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MenuItem.Text
-#, fuzzy
 msgid  "1Bit ~Threshold"
 msgstr "1-bitno s ~pragom"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MenuItem.Text
-#, fuzzy
 msgid  "1 Bit ~Dithering"
 msgstr "1-bitno ~dithering"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "4-bitne ~nijanse sive"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit ~Color Palette"
 msgstr "4-bitna ~paleta boja"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "8-bitne n~ijanse sive"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit C~olor Palette"
 msgstr "8-bitna p~aleta boja"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MenuItem.Text
-#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "24-bitno (~stvarne boje)"
 
 #: source/ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Color Resolution"
 msgstr "Rezolu~cija boje"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert"
 msgstr "Pre~tvori"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "~Okreni"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MenuItem.Text
-#, fuzzy
 msgid  "~Rotate"
 msgstr "~Rotiraj"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MenuItem.Text
-#, fuzzy
 msgid  "C~onnect"
 msgstr "Pove~ži"
 
 #: source/ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MenuItem.Text
-#, fuzzy
 msgid  "~Break"
 msgstr "~Prijelom"
 
 #: source/ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Style..."
 msgstr "Izmijeni stil..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MenuItem.Text
-#, fuzzy
 msgid  "H~yperlink..."
 msgstr "~Hiperlink..."
 
 #: source/ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Poi~nts"
 msgstr "Ta~čke"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Glue Points"
 msgstr "~Tačke spajanja"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "S~loj"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Ubaci"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "Iz~mijeni"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Obriši"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "P~reimenuj"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
-#, fuzzy
 msgid  "To ~Curve"
 msgstr "U ~krivu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
-#, fuzzy
 msgid  "To ~Polygon"
 msgstr "U ~poligon"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "To C~ontour"
 msgstr "U k~onturu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
-#, fuzzy
 msgid  "To 3~D"
 msgstr "U 3~D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "U bitmapu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
-#, fuzzy
 msgid  "To ~Metafile"
 msgstr "U ~metadatoteku"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "U 3D ~rotacijski predmet"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "~Uspravno"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontally"
 msgstr "~Vodoravno"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~3D Effects"
 msgstr "~3D efekti"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Design"
 msgstr "~Dizajn slajda"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "Prelaz ~slajda"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Show Slide"
 msgstr "~Prikaži slajd"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Slide"
 msgstr "~Sakrij slajd"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Grupiši"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Razgrupiši"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Group"
 msgstr "~Promijeni grupu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit group"
 msgstr "Izađi iz ~grupe"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Grupiši"
 
 #: source/ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Toolbars"
 msgstr "~Trake s alatima"
 
@@ -3830,157 +3625,126 @@ msgid  "Table"
 msgstr "Tabela"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "~Tabela..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "Ć~elija"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "~Spoji"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "~Podijeli..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Vrh"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "C~entar"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Dno"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "~Red"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "~Ravnomjerno razmakni"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Izbor"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "Umetni ć~elije..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "Kolo~na"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "~Ravnomjerno razmakni"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Izbor"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "Umetni ć~elije..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Layer..."
 msgstr "~Ubaci sloj..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "Modify La~yer..."
 msgstr "Pro~mijeni sloj..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Obriši ~sloj..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "~Primijeni na sve slajdove"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "~Primijeni na izabrane slajdove"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "Prikaži ~veliki pregled"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "Prikaži ~mali pregled"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "~Primijeni na sve slajdove"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "~Primijeni na izabrane slajdove"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Master..."
 msgstr "~Izmijeni mastera..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "Prikaži ~veliki pregled"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "Prikaži ~mali pregled"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "~Primijeni na izabrane slajdove"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Slide"
 msgstr "~Ubaci slajd"
 
@@ -4010,447 +3774,358 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME Draw je pretražio sve do početka dokumenta. Želite li nastaviti od kraja?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Novi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
-#, fuzzy
 msgid  "~Export..."
 msgstr "~Izvezi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
-#, fuzzy
 msgid  "Export as PDF..."
 msgstr "Izvezi kao PDF..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
-#, fuzzy
 msgid  "Sen~d"
 msgstr "Po~šalji"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page..."
 msgstr "~Stranica..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Izmijeni"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
-#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Po~sebno umetanje..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "Ko~piraj..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
-#, fuzzy
 msgid  "Cross-fading..."
 msgstr "Pretapanje..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "F~ields..."
 msgstr "~Polja..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Obriši ~sloj..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
-#, fuzzy
 msgid  "Lin~ks..."
 msgstr "Lin~kovi..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
 msgid  "~View"
 msgstr "~Pogled"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "Glavna ~traka s alatima"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "Traka s ~opcijama"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Presentation"
 msgstr "~Prezentacija"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
-#, fuzzy
 msgid  "Customi~ze..."
 msgstr "Po ~desi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "~Rulers"
 msgstr "~Linijari"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes View"
 msgstr "~Pregled bilješki"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout View"
 msgstr "Pregled ~ručki"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "Pre~gled"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
-#, fuzzy
 msgid  "S~lide"
 msgstr "S~lajd"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Master"
 msgstr "~Original slajda"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~Naslov"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes"
 msgstr "~Napomene"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout"
 msgstr "~Ručka"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "S~loj"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Wor~kspace"
 msgstr "Ra~dni prostor"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Master"
 msgstr "~Glavni"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Ubaci"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e..."
 msgstr "Sl~ajd..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "Sla~jd"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "Du~pliciraj slajd"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "Ra~širi slajd"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "Slajd sa sa~žetkom"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "S~loj..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "~Datum (fiksan)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
-#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "D~atum (promjenjiv)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "~Vrijeme (fiksno)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
-#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "Vr~ijeme (promjenjivo)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Page Number"
 msgstr "Redni ~broj stranice"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
-#, fuzzy
 msgid  "~File Name"
 msgstr "Naziv ~datoteke"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "~Autor"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
-#, fuzzy
 msgid  "~Select Source..."
 msgstr "~Izaberi izvor..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
-#, fuzzy
 msgid  "~Request..."
 msgstr "~Zahtjev..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
-#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "Tablični ~proračun"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "From ~File..."
 msgstr "~Iz datoteke..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "Grafikon"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
-#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "Plutajuć~i okvir..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "~Datoteka..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "Fiel~ds"
 msgstr "~Polja"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "F~ormat"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "Te~kst..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Dimen~zije..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "~Konektor..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "S~loj..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "Izmijeni ~izgled..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
-#, fuzzy
 msgid  "Styl~es"
 msgstr "~Stilovi"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
 msgid  "~Tools"
 msgstr "~Alati"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
 msgid  "~Slide Show"
 msgstr "~Prezentacija"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "~Check..."
 msgstr "~Provjeri..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
-#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "~Automatska provjera pravopisa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~Rječnik sinonima..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
-#, fuzzy
 msgid  "~Hyphenation"
 msgstr "~Prijelom riječi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "~Automatsko ispravljanje..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "Postavke ~prezentacije..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "~Prilagođena prezentacija..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Animation"
 msgstr "~Animacija"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Interaction..."
 msgstr "~Interakcija..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck"
 msgstr "~Provjera pravopisa"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "Iz~mijeni"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Pomjeri ~naprijed"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Pošalji na~zad"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Ispred ~objekta"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "Iza o~bjekta"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "~Reverzno"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
-#, fuzzy
 msgid  "~Eyedropper"
 msgstr "Hvatač boja"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "~Gallery"
 msgstr "~Galerija"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Boja"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Sive nijanse"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "~Crno-bijelo"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Visoki kontrast"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Boja"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Sive nijanse"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "~Crno-bijelo"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Visoki kontrast"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Rasporedi"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "~Display Quality"
 msgstr "~Kvalitet prikaza"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "~Način pregleda"
 
@@ -5812,237 +5487,190 @@ msgid  "Animation"
 msgstr "Animacija"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "First Image"
 msgstr "Prva slika"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Backwards"
 msgstr "Nazad"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Stop"
 msgstr "Stani"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Play"
 msgstr "Kreni"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Last Image"
 msgstr "Posljednja slika"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Image Number"
 msgstr "Broj slike"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
-#, fuzzy
 msgid  "Duration"
 msgstr "Trajanje"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
-#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
-#, fuzzy
 msgid  "5"
 msgstr "5"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
-#, fuzzy
 msgid  "7"
 msgstr "7"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
-#, fuzzy
 msgid  "8"
 msgstr "8"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
-#, fuzzy
 msgid  "10"
 msgstr "10"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
-#, fuzzy
 msgid  "12"
 msgstr "12"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
-#, fuzzy
 msgid  "15"
 msgstr "15"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
-#, fuzzy
 msgid  "20"
 msgstr "20"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
-#, fuzzy
 msgid  "25"
 msgstr "25"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
-#, fuzzy
 msgid  "50"
 msgstr "50"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
-#, fuzzy
 msgid  "100"
 msgstr "100"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
-#, fuzzy
 msgid  "500"
 msgstr "500"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
-#, fuzzy
 msgid  "1000"
 msgstr "1000"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
-#, fuzzy
 msgid  "Max."
 msgstr "Maks."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
-#, fuzzy
 msgid  "Loop Count"
 msgstr "Broj ponavljanja"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Object"
 msgstr "Primijeni objekat"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "Primijeni objekte pojedinačno"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete Current Image"
 msgstr "Obriši trenutnu sliku"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete All Images"
 msgstr "Obriši sve slike"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Broj"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
-#, fuzzy
 msgid  "Image"
 msgstr "Slika"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
-#, fuzzy
 msgid  "Group object"
 msgstr "Predmet skupine"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
-#, fuzzy
 msgid  "Bitmap object"
 msgstr "Bitmapa predmeta"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Poravnanje"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "Gore lijevo"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "Lijevo"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Left"
 msgstr "Dolje lijevo"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "Vrh"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "Centrirano"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "Dno"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Right"
 msgstr "Gore desno"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "Desno"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Right"
 msgstr "Dolje desno"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
 msgid  "Create"
 msgstr "Napravi"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
 msgid  "Animation group"
 msgstr "Animacija grupe"
 
@@ -6167,32 +5795,26 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "Kaseta za papir iz p~ostavki štampača"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
-#, fuzzy
 msgid  "Notes Window"
 msgstr "Prozor sa bilješkama"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~Sledeće"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "~Prethodni"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
-#, fuzzy
 msgid  "~Go to Slide"
 msgstr "~Idi na slajd"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~First Slide"
 msgstr "P~rvi slajd"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Last Slide"
 msgstr "~Zadnji slajd"
 
@@ -6283,12 +5905,10 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Dizajn tabele"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
-#, fuzzy
 msgid  "Show"
 msgstr "Prikaži"
 
@@ -6305,12 +5925,10 @@ msgid  "Banded Rows"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "Prva kolona"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "Zadnja kolona"
 
@@ -6319,197 +5937,158 @@ msgid  "Banded Columns"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "Stilovi"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Dizajn tabele"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %s"
 msgstr "%PRODUCTNAME %s"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.String.Text
-#, fuzzy
 msgid  "Print content"
 msgstr "Štampaj sadržaj"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.String.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Štampaj"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "Dokument"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Slides"
 msgstr "Slajdovi"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Handouts"
 msgstr "Leci"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Notes"
 msgstr "Napomene"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "Obris"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.String.Text
-#, fuzzy
 msgid  "Slides per page"
 msgstr "Slajdova po strani"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Uobičajeno"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item5.ItemList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item6.ItemList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item7.ItemList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.String.Text
-#, fuzzy
 msgid  "Order"
 msgstr "Redoslijed"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Left to right, then down"
 msgstr "Od lijeva na desno, zatim, dolje"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Top to bottom, then right"
 msgstr "Od vrha na dolje, zatim desno"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.String.Text
-#, fuzzy
 msgid  "~Contents"
 msgstr "~Sadržaj"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "~Slide name"
 msgstr "~Ime slajda"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "P~age name"
 msgstr "Naslov ~stranice"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.String.Text
-#, fuzzy
 msgid  "~Date and time"
 msgstr "~Datum i vrijeme"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden pages"
 msgstr "Skrivene stranice"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.String.Text
-#, fuzzy
 msgid  "Output options"
 msgstr "Opcije ispisa"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.String.Text
-#, fuzzy
 msgid  "Color"
 msgstr "Boja"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original colors"
 msgstr "Izvorne boje"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Grayscale"
 msgstr "Sive nijanse"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Black & white"
 msgstr "Crno-bijelo"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "~Veličina"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "Originalna veličina"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "Prilagodi veličinu stranici papira"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "Rasporedi na više listova papira"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Tile sheet of paper with repeated slides"
 msgstr "Popločaj papir ponovljenim slajdom"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "Originalna veličina"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "Prilagodi veličinu stranici papira"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "Rasporedi na više listova papira"
 

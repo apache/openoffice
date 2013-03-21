@@ -73,7 +73,7 @@ msgstr "Источник данных не сохранён. Пожалуйст�
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Эта команда не является запросом типа SELECT.\nДопустимы только запросы на выборку данных."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "Имена некоторых таблиц в данной базе да
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "SQL запрос привел к ошибке:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,11 +221,11 @@ msgstr "Не найден документ «$name$»."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Невозможно сохранить документ в $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
-msgstr ""
+msgstr "Ошибка обращения к источнику данных «$name$»:\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 msgid  "There exists no folder named \"$folder$\"."
@@ -429,7 +429,7 @@ msgstr "Указанный файл или каталог не существу�
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Новая база данных не создана.\nПроверьте правильность установки Adabas D, в частности переменные «DBROOT» и «DBWORK»."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -493,7 +493,7 @@ msgstr "Добро пожаловать в мастер переноса мак�
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Этот мастер предназначен для переноса макросов и сценариев.\n\nПосле завершения этого процесса все макросы и сценарии, которые ранее были внедрены в формы и отчёты, будут перемещены в документ базы данных. В результате библиотеки будут надлежащим образом переименованы.\n\nЕсли формы и отчёты содержат ссылки на эти макросы и сценарии, они будут скорректированы, если это возможно.\n\nПеред началом переноса следует закрыть все формы, отчёты, запросы и таблицы. Для этого нажмите кнопку «Далее»."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -909,7 +909,7 @@ msgstr "Документ содержит формы/отчёты с внедр�
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "В настоящее время сценарии и макросы должны быть внедрены непосредственно в документ базы данных.\n\nМожно продолжать использовать документ по-прежнему, однако рекомендуется перенести сценарии и макросы. Для этого используется пункт меню «Сервис/Перенос сценариев и макросов…».\n\nСледует отметить, что до выполнения этого переноса внедрить макросы или сценарии в документ базы данных будет невозможно. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -1621,7 +1621,7 @@ msgstr "Необходимо ввести пароль для соединени
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Каталог\n\n$path$\n\nне существует. Создать его?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1809,7 +1809,7 @@ msgstr "База данных"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Далее рекомендуется установить дополнительные настройки соединения. \n\nНовые настройки перезапишут существующие настройки."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1825,7 +1825,7 @@ msgstr "Невозможно загрузить библиотеку прогр�
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Данный тип источников данных на этой платформе не поддерживается.\nВы можете изменить настройки, но, вероятно, соединиться с этой базой данных будет невозможно."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -2389,7 +2389,7 @@ msgstr "Установка подключения к базе данных MySQL
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Вы можете подключиться к базе данных MySQL используя ODBC или JDBC.\nПожалуйста, свяжитесь с системным администратором, если не уверены в правильности настроек."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "Настройка подключения к базе данных MySQL
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Введите информацию для подключения к базе данных MySQL при помощи JDBC-драйвера. Помните, что класс JDBC-драйвера должен быть установлен на вашу систему и зарегистрирован с %PRODUCTNAME.\nСвяжитесь с системным администратором, если не уверены в правильности настроек."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2517,7 +2517,7 @@ msgstr "Настроить подключение к серверу LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Введите информацию, требуемую для доступа к серверу LDAP.\nСвяжитесь с системным администратором, если не уверены в правильности настроек."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "Настройка соединения с СУБД Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Введите имя базы данных Adabas D, к которой вы хотите подключиться.\nНажмите «Обзор...» для выбора базы данных Adabas D из зарегистрированных в %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "Настройка соединения с ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Пожалуйста, введите адрес источника данных ADO, к которому вы хотите подключиться.\nНажмите «Просмотр» для настройки специфичных для провайдера настроек.\nСвяжитесь с системным администратором, если не уверены в правильности настроек."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "Настройка соединения через ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Введите имя ODBC базы данных к которой Вы хотите подключиться.\nНажмите «Просмотр...» для выбора зарегистрированной ODBC-базы данных в %PRODUCTNAME.\nСвяжитесь с системным администратором если не уверены в правильности следующих настроек."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "Настройка соединения через JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Введите необходимую информацию для подключения к драйверу баз данных JDBC.\nПожалуйста, свяжитесь с системным администратором, если не уверены в правильности настроек."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "Класс ~драйвера Oracle JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Введите требуемую информацию для подключение к базе данных Oracle. Помните, что драйвер JDBC должен быть установлен в системе и зарегистрирован в %PRODUCTNAME.\nСвяжитесь с системным администратором, если не уверены в правильности настроек."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "Настройка соединения с электронной таб
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Нажмите «Обзор...» для выбора таблицы %PRODUCTNAME или Microsoft Excel.\n%PRODUCTNAME откроет этот файл в режиме только для чтения."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2813,7 +2813,7 @@ msgstr "При попытке соединения с источником да�
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Название «$#$» уже существует.\nВыберите другое название."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
@@ -2829,7 +2829,7 @@ msgstr "Типы полей"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Следующие поля уже установлены как первичные ключи:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 msgid  "Assign columns"
@@ -2881,11 +2881,11 @@ msgstr "Первичный ключ"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Исходная таблица: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Таблица назначения: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 msgid  "~All"
@@ -3213,15 +3213,15 @@ msgstr " - %PRODUCTNAME Base: конструктор представлений"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Объект $object$ был изменён.\nСохранить изменения?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "Объект $object$ содержит инструкции SQL, которые невозможно распознать."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "Объект $object$ будет открыт в режиме SQL."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
 msgid  "The table view"
@@ -3273,7 +3273,7 @@ msgstr "Удаление этой таблицы повлечёт за собо�
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Невозможно создать связь. Возможно не поддерживаются внешние ключи для данного типа таблиц.\nОбратитесь к документации по базе данных."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
@@ -3421,11 +3421,11 @@ msgstr "Пример формата"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Выберите значение, которое будет присваиваться этому полю для каждой новой записи.\nВыберите пустую строку, если поле не будет содержать такого значения."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Задайте значение по умолчанию для этого поля.\n\nПри вводе данных в таблицу, это значение будет использоваться в каждой новой записи. Значение по умолчанию должно соответствовать формату ячеек, указываемому ниже."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
@@ -3441,7 +3441,7 @@ msgstr "Задайте формат числа."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Задайте длину данных для этого поля.\n\nДля десятичных полей - это максимальная длина введённого числа, для бинарных полей - это длина блока данных.\nЕсли заданное значение будет длиннее максимально допустимого для этой базы данных, то оно будет автоматически скорректировано."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3457,7 +3457,7 @@ msgstr "Здесь можно определить формат вывода д�
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Выберите это значение, если поле будет содержать автоинкрементные значения.\n\nВ этом случае, вы не сможете непосредственно вводить в него данные, поскольку для каждой новой записи этому полю будет автоматически присвоено уникальное значение (которое получается, благодаря увеличению на единицу значения из предыдущей записи)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
@@ -3513,7 +3513,7 @@ msgstr "Первичный ключ не указан"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "Для идентификации записи из этой базы данных необходим уникальный индекс или первичный ключ.\nВы сможете ввести данные в таблицу лишь после того, как выполните одно из этих условий.\n\nСоздать первичный ключ?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
@@ -3541,11 +3541,11 @@ msgstr "Автоинкрементная инструкция"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Введите SQL-инструкцию для автоинкрементируемого поля.\n\nЭта инструкция будет непосредственно передана в базу данных в момент создания таблицы."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Информация о типах не может быть получена из базы данных.\nРежим проектирования таблиц не доступен для этого источника."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"

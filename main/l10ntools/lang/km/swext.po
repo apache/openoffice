@@ -141,7 +141,7 @@ msgstr "ស៊ុម"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "រចនាប័ទ្ម​តារាង​ផ្ទាល់​ដែល​គ្មាន​ការ​កំណត់​សម្រាប់​ស៊ុម និង​ផ្ទៃខាងក្រោយ តារាង​ត្រូវបាន​នាំចេញ​ជា \"<emph>តារាង​ស្អាតបាត\"</emph>ជា​និច្ច ដែល​បង្ហាញ​នៅក្នុង​​វីគី​ដោយ​មាន​ស៊ុម និង​ក្បាល​ដិត​ធម្មតា ។"
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> MediaWiki</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><item type=\"menuitem\"> MediaWiki</item> MediaWiki</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"> MediaWiki</link>"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "ការ​ដំឡើង @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "មុន​ពេល​អ្នក​ដំឡើង @WIKIEXTENSIONPRODUCTNAME@ ប្រាកដថា %PRODUCTNAME ប្រើ Java Runtime Environment (JRE) ។ ដើម្បីពិនិត្យ​មើល​ស្ថានភាព​របស់ JRE ជ្រើស <item type=\"menuitem\">ឧបករណ៍ - ជម្រើស - %PRODUCTNAME - Java</item> ។ សូមប្រាកដ​ថា \"ប្រើ Java runtime environment\" ត្រូវ​បានគូស​ធីក ហើយ​ថត Java runtime ត្រូវ​បាន​​ជ្រើស​នៅ​ក្នុង​ប្រអប់​បញ្ជី​ធំ ។ ប្រសិនបើ​គ្មាន JRE ត្រូវបាន​ធ្វើ​ឲ្យ​សកម្ម​ទេ នោះ​ធ្វើ​ឲ្យ JRE ១.៤ ឬ​​ខ្ពស់​ជាង​នេះ​សកម្ម ហើយ​ចាប់ផ្ដើម %PRODUCTNAME ឡើង​វិញ ។"
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "ដើម្បី​ដំឡើង @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "នៅ​ក្នុង​បង្អួច​ Writer ​សូម​ជ្រើស <item type=\"menuitem\">ឧបករណ៍ - កម្មវិធី​គ្រប់គ្រង​ផ្នែក​បន្ថែម</item> ។"
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "បិទ %PRODUCTNAME និង​បិទ Quickstarter ផង​ដ�
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "<item type=\"menuitem\"> MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "ដើម្បី​យក @WIKIEXTENSIONPRODUCTNAME@ ចេញ"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "នៅ​ក្នុង​បង្អួច Writer ជ្រើស <item type=\"menuitem\">ឧបករណ៍ - កម្មវិធី​គ្រប់គ្រង​ផ្នែក​បន្ថែម</item> ។"
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "ដើម្បី​តភ្ជាប់​ទៅ​វិគី"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "ចំណាំ ៖ អ្នក​អាច​ទុក​ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់​របស់​អ្នក​សម្រាប់​ប្រព័ន្ធ​នីមួយៗ​នៅ​ក្នុង %PRODUCTNAME ។ ពាក្យ​សម្ងាត់​នឹង​ត្រូវបាន​ទុក​តាម​វិធី​ដ៏​មាន​សុវត្ថិភាព ដែល​​ការ​ចូលដំណើរការ​ត្រូវបាន​ថែទាំ​ដោយ​ពាក្យ​សម្ងាត់​មេ ។ ដើម្បី​បើក​ពាក្យ​សម្ងាត់​មេ ជ្រើស <item type=\"menuitem\">ឧបករណ៍ - ជម្រើស - %PRODUCTNAME - សុវត្ថិភាព</item> ។"
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "ចំណាំ ៖ ប្រសិនបើ​អ្នក​តភ្ជាប់​ទៅកាន់​បណ្ដាញ ដោយ​ប្រើ​ម៉ាស៊ីនបម្រើប្រូកស៊ី បញ្ចូល​ព័ត៌មាន​ប្រូកស៊ី​នៅ​ក្នុង <item type=\"menuitem\">ឧបករណ៍ - ជម្រើស - អ៊ីនធឺណិត - ប្រូកស៊ី</item> ហើយ​ចាប់ផ្ដើម​កម្មវិធី​ឡើង​វិញ ។"
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "<item type=\"menuitem\"> MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "នៅ​ក្នុង​ប្រអប់ <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">ជម្រើស</link> ចុច​ បន្ថែម ។"
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"> MediaWiki</link>."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "នៅ​ក្នុង​ប្រអប់​ពាក្យ​សម
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "ជា​ជម្រើស បើក \"រក្សាទុក​ពាក្យ​សម្ងាត់\" ដើម្បី​រក្សាទុក​ពាក្យ​សម្ងាត់​រវាង​សម័យ​នីមួយៗ ។ ពាក្យ​សម្ងាត់​មេ​ត្រូវបាន​ប្រើ​ ដើម្បី​ថែទាំ​កា​រចូលដំណើរការ​ពាក្យ​សម្ងាត់​ដែលបានរក្សាទុក​ទាំងអស់ ។ ជ្រើស <item type=\"menuitem\">ឧបករណ៍ - ជម្រើស - %PRODUCTNAME - សុវត្ថិភាព</item> ដើម្បី​បើក​ពាក្យ​សម្ងាត់​មេ ។ \"រក្សាទុក​ពាក្យ​សម្ងាត់\" មិនអាច​ប្រើ​បាន នៅពេល​ពាក្យ​សម្ងាត់​មេ​មិន​ត្រូ​វបាន​បើក​នោះ​ទេ ។"
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "បើក​ឯកសារ Writer ។"
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "សរសេរ​មាតិកា​របស់​ទំព័រ​វីគី ។ អ្នក​អាច​ប្រើ​ការ​ធ្វើ​ទ្រង់ទ្រាយ ដូច​ជា​ទ្រង់ទ្រាយ​អត្ថបទ ក្បាល លេខ​យោង និង​ផ្សេងៗ​ទៀត ។ សូម​មើល <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">បញ្ជី​របស់​ទ្រង់ទ្រាយ​ដែល​បាន​គាំទ្រ</link> ។"
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "<item type=\"menuitem\"> MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"> MediaWiki</link>."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph> MediaWiki</emph>."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>ចំណង​ជើង</emph> ៖ វាយ​ចំណង​ជើង​ទំព័រ​របស់​អ្នក ។ វាយ​ចំណង​ជើង​ទំព័រ​ដែលមាន​ស្រាប់​ ដើម្បី​សរសេរ​ជាន់​លើ​ទំព័រ​ដែល​មាន​ឯកសារ​អត្ថបទ​បច្ចុប្បន្ន ។ វាយ​ចំណង​ជើង​ថ្មី ដើម្បិ​បង្កើត​ទំព័រ​ថ្មី​នៅ​លើ​វីគី ។"
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>សេចក្ដីសង្ខេប</emph> ៖ បញ្ជូល​សេចក្ដី​សង្ខេប​ខ្លី​ជា​ជម្រើស​សម្រាប់​ទំព័រ​របស់​អ្នក ។"
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>នេះ​ជា​ការ​កែសម្រួល​តិចតួច</emph> ៖ គូស​ធីក​ប្រអប់​នេះ ដើម្បី​សម្គាល់​ទំព័រ​ដែល​បានផ្ទុក​ឡើង​ជា​ការ​កែសម្រួលតិចតួច​នៃ​ទំព័រ​ដែលមាន​ស្រាប់​រួច​ហើយ​មាន​ចំណង​ជើង​ដូច​គ្នា ។"
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>បង្ហាញ​ក្នុង​កម្មវិធី​រុករក​បណ្ដាញ</emph> ៖ គូស​ធីក​ប្រអប់នេះ ដើម្បី​បើក​កម្មវិធី​រុករក​បណ្ដាញ​ប្រព័ន្ធ​របស់​អ្នក ហើយ​បង្ហាញ​ទំព័រ​វីគី​ដែល​បានផ្ទុក​ឡើង ។"
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,27 +341,27 @@ msgstr "ជម្រើស MediaWiki"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "MediaWiki<item type=\"menuitem\"> MediaWiki</item><item type=\"menuitem\"></item>."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">ចុច​ បន្ថែម ដើម្បីបន្ថែម​ម៉ាស៊ីនបម្រើ​វីគី​ថ្មី ។ <br/>ជ្រើស​ធាតុ ហើយ​ចុច​ កែសម្រួល ដើម្បី​កែសម្រួល​ការ​កំណត់គណនី ។<br/>ជ្រើស​ធាតុ​មួយ ហើយ​ចុច​ យកចេញ ដើម្បី​យក​ធាតុ​ចេញ​ពី​បញ្ជី ។</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> MediaWiki</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> MediaWiki</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">យក​ធាតុ​ដែលបាន​ជ្រើស​ចេញពី​បញ្ជី ។</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"> MediaWiki</link>."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,19 +377,19 @@ msgstr "ប្រើ​ប្រអប់ MediaWiki ដើម្បី​បន�
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> MediaWiki</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> MediaWiki</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> MediaWiki</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">បើក​វា ដើម្បី​រក្សាទុក​ពាក្យ​សម្ងាត់​របស់​អ្នក​រវាង​សម័យ​នីមួយៗ ។ ពាក្យ​សម្ងាត់​មេ​ត្រូវតែ​បានបើក សូមមើល <item type=\"menuitem\">ឧបករណ៍ - ជម្រើស - %PRODUCTNAME - សុវត្ថិភាព</item>។</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "នៅ​ក្នុង​ប្រអប់ ផ្ញើ​ទៅ Medi
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> MediaWiki</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">បញ្ចូល​ចំណង​ជើង​របស់​ធាតុ​វីគី ។ នេះ​គឺ​ជា​ក្បាល​ផ្នែកខាង​លើ​របស់​ធាតុ​វីគី ។ សម្រាប់​ធាតុ​ថ្មី ចំណង​ជើង​ត្រូវតែ​មាន​តែ​មួយ​គត់​នៅ​ក្នុង​វីគី​នេះ​ ។ ប្រសិនបើ​អ្នក​បញ្ចូល​ចំណង​ជើង​ដែល​មាន​ស្រាប់ ការ​ផ្ទុក​ឡើង​របស់​អ្នក​នឹង​សរសេរ​ជាន់​លើ​ធាតុ​វីគី​ដែល​មាន​ស្រាប់ ។</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">បញ្ចូល​សេចក្ដី​សង្ខេប ឬ​មតិយោបល់​ខ្លី​ជា​ជម្រើស ។</ahelp> សូម​មើល <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> ។"
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>នេះ​ជា​ការ​កែសម្រួល​តិចតួច</emph> ៖ <ahelp hid=\".\">គូសធីក​ប្រអប់​នេះ ដើម្បី​សម្គាល់​ថា​ទំព័រ​ដែលបានផ្ទុក​ឡើង​​ថា​ជា​ទំព័រ​ដែលមានការកែសម្រួល​តិចតួច​របស់​ទំព័រ​ដែលបានស្រាប់​ដែលមាន​ចំណង​ជើង​ដូច​គ្នា ។</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>បង្ហាញ​ក្នុង​កម្មវិធី​រុករក​បណ្ដាញ</emph> ៖ <ahelp hid=\".\">គូស​ធីក​ប្រអប់​នេះ ដើម្បី​បើក​កម្មវិធី​រុករក​បណ្ដាញ​ប្រព័ន្ធ​របស់​អញនក ហើយ​បង្ហាញ​ទំព័រ​វីគី​ដែល​បាន​ផ្ទុក​ឡើង ។</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

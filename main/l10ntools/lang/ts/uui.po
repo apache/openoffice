@@ -67,12 +67,14 @@ msgid  "No Text"
 msgstr "Geen teks nie"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+#, fuzzy
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Tik wagwoord in om lêer te open: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+#, fuzzy
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Tik wagwoord in om lêer te open: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 #, fuzzy
@@ -102,8 +104,9 @@ msgid  "Document in Use"
 msgstr "Dokument in gebruik"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur:\n\n$(ARG2)\n\nProbeer later weer die dokument stoor, of stoor 'n kopie van daardie dokument.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -116,7 +119,6 @@ msgid  "~Save As..."
 msgstr "~Stoor as..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Onthou wagwoord tot aan einde van sessie"
 
@@ -473,7 +475,6 @@ msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Sekuriteitswaarskuwing: Bedienersertifikaat ongeldig"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Filterseleksie"
 
@@ -523,58 +524,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Stuur"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "I~gnoreer"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "I~nteraktief"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Toekomstige koekiehantering"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Ignoreer"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Stuur"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Die '${HOST}'-bediener wil een of meer koekies stel.\nKoekies bevat inligting wat na sekere URL-klasse verwys. Indien %PRODUCTNAME later 'n dokument versoek met 'n URL wat met die klas van 'n voorheen gestelde koekie ooreenstem, sal %PRODUCTNAME hierdie inligting aan die bediener stuur. Dit stel die bediener in staat om die status van die WWW-toepassing te herken, byvoorbeeld wanneer 'n mens aanlyn inkopies doen.\n\nDie volgende koekies moet gestel word:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domein: ${DOMAIN}, Pad: ${PATH}, Koekie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Koekieontvangs"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME het gestoorde koekies vir die bediener '${HOST}' wat gestuur sal word wanneer die dokument ${PATH} aangevra word.\nKoekies bevat inligting wat na sekere URL-klasse verwys. Hulle word deur sommige bedieners aan %PRODUCTNAME gestuur, waar hulle gestoor word wanneer sekere dokumente gelees word. Indien %PRODUCTNAME 'n dokument laai wat, volgens die URL met 'n klas van een van die voorheen ontvangde koekie ooreenstem, sal %PRODUCTNAME hierdie inligting aan die bediener stuur. Dit stel die bediener in staat om die status van die WWW-toepassing na te speur, byvoorbeeld wanneer 'n mens aanlyn inkopies doen.\n\nDie volgende koekies moet gestel word:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domein: ${DOMAIN}, Pad: ${PATH}, Koekie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Stuur koekies"
 
@@ -617,8 +610,9 @@ msgid  "Document in Use"
 msgstr "Dokument in gebruik"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur:\n\n$(ARG2)\n\nOpen dokument leesalleen of open 'n kopie van die dokument vir redigering.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 #, fuzzy
@@ -641,10 +635,9 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Die lêer is gewysig sedert dit vir redigering in %PRODUCTNAME geopen is. As u u weergawe van die dokument stoor, sal dit wysigings oorheenskryf wat deur andere gemaak is.\n\nWil u in elk geval stoor?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "~Stoor in elk geval"
 
@@ -654,8 +647,9 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME-bywerking beskikbaar"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Hierdie  dokument is geskep met 'n jonger weergawe van %PRODUCTNAME. Dit bevat dalk kenmerke wat nie met u  huidige weergawe werk nie.\n\nKliek 'Werk nou by...' om aanlyn bywerking te doen en die jongste weergawe van %PRODUCTNAME te kry."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 #, fuzzy
@@ -768,29 +762,25 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur uself op 'n ander rekenaar sedert $(ARG2)\n\nOpen dokument leesalleen, of ignoreer eie lêerslot en open die dokument om te redigeer.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Open ~leesalleen"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "~Open"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur uself op 'n ander rekenaar sedert $(ARG2)\n\nSluit dokument op ander rekenaar en probeer weer stoor, of ignoreer eie lêerslot en stoor huidige dokument.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "~Probeer weer stoor"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~Stoor"
 

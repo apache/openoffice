@@ -141,7 +141,7 @@ msgstr "किनारा"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "किनारे व पृष्ठभूमि के मनपसंद सारणी शैली से अलग, सारणी को हमेशा \"<emph>prettytable\"</emph> के रूप में निर्यात किया जाता है, जो कि विकी इंजन में सरल किनारा और गहरा शीर्षिका के साथ रेंडर करता है."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -189,7 +189,7 @@ msgstr "जावा रनटाइम वातावरण 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> सर्वर पर मीडिया विकी"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ संस्थापित कर रहा 
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ संस्थापित करने के पहले, सुनिश्चित करें कि %PRODUCTNAME  एक जावा रनटाइम वातावरण (JRE) का प्रयोग करता है. JRE की स्थिति जाँचने के लिए, <item type=\"menuitem\">औज़ार - विकल्प - StarOffice/OpenOffice.org - जावा</item> चुनें. सुनिश्चित करें कि \"Use a Java runtime environment\" चिह्नित किया जाता है और कि जावा रनटाइम फ़ोल्डर को किसी बड़ी सूचीपेटी के रूप में चुना जाता है. यदि कोई JRE सक्रिय किया जाता है, तब एक JRE 1.4 या उत्तरवर्ती को सक्रिय करें या और %PRODUCTNAME फिर आरंभ करें."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ को संस्थापित करन�
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "राइटर विंडो में, <item type=\"menuitem\">औज़ार - विस्तार प्रबंधक</item> चुनें."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "सॉफ्टवेयर फिर आरंभ करें, किसी पाठ दस्तावेज़ को खोलें, तब <item type=\"menuitem\">औज़ार - विकल्प - इंटरनेट - मीडियाविकी</item> को अपनी विकी सेटिंग दाखिल करने के लिए चुनें. \"विकी में कनेक्ट करने के लिए\" को नीचे देखें."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ को हटाने के लिए"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "राइटर विंडो में, <item type=\"menuitem\">औज़ार - विस्तार प्रबंधक</item> चुनें."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "विकी से कनेक्ट करें"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "नोट: आप %PRODUCTNAME के अंदर सभी संबंधित संवाद के लिए उपयोक्तानाम व कूटशब्द जमा कर सकते हैं. कूटशब्द को सुरक्षित तरीके से संग्रहित किया जाएगा, जहाँ पहुँच को मुख्य कूटशब्द के द्वारा बनाए रखा जाता है. किसी मुख्य कूटशब्द को सक्रिय करने के लिए, <item type=\"menuitem\">औज़ार - विकल्प - %PRODUCTNAME - सुरक्षा</item> चुनें."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "नोट: यदि आप प्रॉक्सी सर्वर के प्रयोग से वेब से कनेक्ट होते हैं, <item type=\"menuitem\">औज़ार - विकल्प - इंटरनेट - प्रॉक्सी</item> में प्रॉक्सी सूचना दाखिल करें, और साफ्टवेयर फिर आरंभ करें."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "राइटर दस्तावेज़ खोलें, <item type=\"menuitem\">औज़ार - विकल्प - इंटरनेट - मीडियाविकी</item> चुनें."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">विकल्प</link> संवाद में, जोड़ें क्लिक करें."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> संवाद में, विकी के लिए खाता सूचना दाखिल करें."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "कूटशब्द बाक्स में, अपने विक�
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "वैकल्पिक रूप से \"कूटशब्द सहेजें\" को सत्रों के बीच कूटशब्द सहेजने के लिए सक्रिय करें. एक मुख्य कूटशब्द को सभी सहेजे कूटशब्द में पहुँच बनाए रखने के लिए प्रयोग किया जाता है. <item type=\"menuitem\">औज़ार - विकल्प - %PRODUCTNAME - सुरक्षा</item> को मुख्य कूटशब्द सक्रिय करने के लिए चुनें. \"कूटशब्द सहेजें\" अनुपलब्ध है जब मुख्य कूटशब्द सक्रिय नहीं होता है."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,15 +297,15 @@ msgstr "राइटर दस्तावेज़ खोलें"
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "विकी पृष्ठ की सामग्री लिखें. आप पाठ प्रारूप, शीर्षक, पाद टिप्पणी, और बहुत कुछ रूप में प्रारूपण का प्रयोग कर सकते हैं. <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">समर्थित प्रारूप की सूची</link> को देखें."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "<item type=\"menuitem\">फ़ाइल - भेजे - MediaWiki में</item> चुनें."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">मीडियाविकी में भेजें</link> संवाद में, अपनी प्रविष्टि के लिए सेटिंग निर्दिष्ट करें."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
@@ -341,7 +341,7 @@ msgstr "मीडियाविकी विकल्प"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "आप मीडियाविकी सर्वर को जोड़, संपादित और हटा सकते हैं. संवाद को <item type=\"menuitem\">औज़ार - विकल्प - इंटरनेट - मीडियाविकी</item> के द्वारा खोलें. वैकल्पिक रूप से, <item type=\"menuitem\">औज़ार - विस्तार प्रबंधक</item> चुनें, @WIKIEXTENSIONPRODUCTNAME@ को चुनें, और विकल्प बटन क्लिक करें."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
@@ -357,11 +357,11 @@ msgstr ""
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">सूची से चुनी गई प्रविष्टि हटाता है.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "जब आप जोड़ें या संपादित करें क्लिक करते हैं, <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">मीडियाविकी</link> संवाद खोलता है."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,7 +377,7 @@ msgstr "अपने मीडिया विकी खाता सेटि�
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">मीडियाविकी सर्वर का URL दाखिल करें, http:// से शुरू होकर</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
@@ -389,7 +389,7 @@ msgstr ""
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">सत्र के मध्य अपने कूटशब्द जमा करने के लिए सक्रिय करें. मुख्य कूटशब्द जरूर सक्रिय किया जाना चाहिए, देखें <item type=\"menuitem\">औज़ार - विकल्प - %PRODUCTNAME - सुरक्षा</item>.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."

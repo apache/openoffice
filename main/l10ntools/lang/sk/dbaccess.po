@@ -73,7 +73,7 @@ msgstr "Zdroj dát nebol uložený. Prosím použite na uloženie zdroja dát ro
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Daný príkaz nie je výrazom SELECT.\nDovolené sú len požiadavky."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "V databáze sa nachádzajú tabuľky, ktorých názvy sú v konflikte s 
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "SQL príkaz, ktorý spôsobil túto chybu je:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,11 +221,11 @@ msgstr "Nebolo možné nájsť dokument '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Dokument nemohol byť uložený do $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
-msgstr ""
+msgstr "Chyba v prístupe k dátovému zdroju '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 msgid  "There exists no folder named \"$folder$\"."
@@ -429,7 +429,7 @@ msgstr "Zadaný názov súboru alebo adresára neexistuje."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Nemôže byť vytvorená nová databáza.\nProsím preverte vašu inštaláciu Adabas D, obzvlášť premenné \"DBROOT\" a \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -493,7 +493,7 @@ msgstr "Vitajte v migrácii makier databázy"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Tento sprievodca vás prevedie migráciou vašich makier a skriptov.\n\nPo jeho skončení budú všetky makrá a skripty, ktoré boli pôvodne vložené do vašich formulárov a správ aktuálneho databázového dokumentu, presunuté do databázového dokumentu samotného. Počas tohto, budú podľa potreby premenované knižnice.\n\nV prípade, že vaše formuláre a zostavy obsahujú referencie na tieto makrá, budú tieto podľa možností upravené.\n\nPred začiatkom migrácie musia byť zatvorené všetky formuláre, zostavy, dotazy a tabuľky patriace k dokumentu. Kliknite na 'Ďalej' pre ich zatvorenie."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -909,7 +909,7 @@ msgstr "Dokument obsahuje formuláre alebo zostavy obsahujúce vložené makrá.
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Makrá by mali byť vložené do samotného databázového dokumentu.\n\nMôžete používať dokument rovnako ako doteraz, ale mali by ste zvážiť migráciu vašich makier. Položka v menu 'Nástroje / Migrovať makrá ...' vám v tomto pomôže.\n\nPokým nebude vykonaná táto migrácia nebudete môcť vložiť makrá do databázového dokumentu. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -1621,7 +1621,7 @@ msgstr "Pre pripojenie na zdroj dát \"$name$\" je potrebné heslo."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Priečinok\n\n$path$\n\nneexistuje. Má byť teraz vytvorený?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1809,7 +1809,7 @@ msgstr "Databáza"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Na nasledujúcich stránkach môžete urobiť podrobné nastavenie pripojenia.\n\nNové nastavenia prepíšu doterajšie."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1825,7 +1825,7 @@ msgstr "Nebolo možné načítať programovú knižnicu #lib# alebo je poškoden
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Tento druh zdroja dát nie je na tejto platforme podporovaný.\nMôžete zmeniť nastavenia, ale pravdepodobne sa nebudete môcť pripojiť k databáze."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -2389,7 +2389,7 @@ msgstr "Nastavenie pripojenia k databáze MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "K databáze MySQL sa môžete pripojiť použitím ODBC alebo JDBC.\nKontaktujte, prosím, vášho systémového administrátora, ak neviete ako ďalej."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "Nastavenie pripojenia k MySQL databáze pomocou JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Pre pripojenie databázy MySQL pomocou JDBC vložte požadované informácie. Vo vašom systéme musí byť inštalované a v %PRODUCTNAME registrované JDBC driver class.\nKontaktujte vášho systémového administrátora, ak si nie ste istí v tomto nastavení."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2517,7 +2517,7 @@ msgstr "Nastavenie pripojenia k adresáru LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vložte požadované informácie pre pripojenie k priečinku LDAP.\nAk neviete ako to urobiť, kontaktujte vášho systémového administrátora."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "Nastavenie pripojenia k databáze Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Zadajte názov databázy Adabas D, ku ktorej sa chcete pripojiť.\nKliknite 'Prehľadávať...', ak chcete vybrať databázu Adabas D, ktorá už je registrovaná v %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "Nastavenie pripojenia k databáze ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Prosím zadajte URL pre ADO zdroj dát s ktorým sa chcete spojiť.\nKliknite na 'Prehľadávať' pre nastavenie špecifík poskytovateľa.\nKontaktujte vášho systémového administrátora, ak nemáte jasno v týchto nastaveniach."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "Nastavenie pripojenia k databáze ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadajte názov ODBC databázy, ku ktorej sa chcete pripojiť.\nKliknite 'Prehľadávať...' na vybranie ODBC databázy, ktorá už je registrovaná v %PRODUCTNAME.\nKontaktujte vášho systémového administrátora, ak nemáte jasno v týchto nastaveniach."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "Nastavenie pripojenia k databáze JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadajte požadované informácie na pripojenie k databáze JDBC.\nKontaktujte vášho systémového administrátora, ak nemáte jasno v týchto nastaveniach."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "Oracle JDBC ~driver class"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Prosím zadajte požadované informácie pre prístup k databáze Oracle.JDBC Driver Class musí byť nainštalovaný na vašom systéme a zaregistrovaný v %PRODUCTNAME.\nV prípade, že ste si nie istý nasledujúcimi nastaveniami kontaktujte vášho systémového administrátora."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "Nastavenie pripojenia k zošitom"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Kliknite 'Prehľadávať...' pre vybranie zošita %PRODUCTNAME alebo súboru programu Microsoft Excel.\n%PRODUCTNAME ho otvorí iba na čítanie."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2813,7 +2813,7 @@ msgstr "Pri pripájaní k zdroju dát sa objavili varovania. Stlačte \"$buttont
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Názov '$#$' už existuje.\nProsím zadajte iný názov."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
@@ -2829,7 +2829,7 @@ msgstr "Formátovanie typu"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Nasledujúce polia už boli nastavené ako primárne kľúče:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 msgid  "Assign columns"
@@ -2881,11 +2881,11 @@ msgstr "Primárny kľúč"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Zdrojový tabuľka: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Cieľová tabuľka: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 msgid  "~All"
@@ -3213,15 +3213,15 @@ msgstr " - %PRODUCTNAME Base: Návrh pohľadu"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ bol zmenený.\nChcete uložiť zmeny?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ je založený na SQL príkaze, ktorý nemohol byť rozložený."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ bude otvorený v SQL zobrazení."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
 msgid  "The table view"
@@ -3273,7 +3273,7 @@ msgstr "Zmazaním tejto tabuľky zmažete tiež všetky zodpovedajúce relácie.
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Databáza nemohla vytvoriť reláciu. Možno nie sú podporované cudzie kľúče pre tento typ tabuľky.\nProsím skontrolujte dokumentáciu k vašej databáze."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
@@ -3421,11 +3421,11 @@ msgstr "Príklad formátu"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Vyberte hodnotu, ktorá sa objaví v nových záznamoch ako predradená.\nAk pole nemá obsahovať predradenú hodnotu, vyberte prázdny reťazec."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Vložte predradenú hodnotu pre toto pole.\n\nKeď neskôr budete vkladať dáta do tabuľky, tento reťazec sa použije v každom novom zázname pre toto pole. Musí preto zodpovedať formátu bunky, do ktorej bude dole vložený."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
@@ -3441,7 +3441,7 @@ msgstr "Zadajte formát čísla."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Zadajte dĺžku, ktorú môžu mať dáta v tomto poli.\n\nAk ide o decimálne polia, vložte maximálnu dĺžku čislice, ktorá môže byť vložená. Ak ide o binárne polia, tak dĺžku dátového bloku.\nHodnota bude upravená, ak presahuje hodnotu, ktorá je pre túto databázu maximálna."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3457,7 +3457,7 @@ msgstr "Tu môžete určiť výstupný formát dát."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Zvoľte, ak toto pole má obsahovať Autoincrement hodnoty.\n\nDo poľa tohoto typu nemožno vkladať dáta. Do každého nového záznamu bude automaticky vložená hodnota (ktorá je vyššia ako tá v predchádzajúcom zázname)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
@@ -3513,7 +3513,7 @@ msgstr "Neexistuje primárny kľúč"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "Pre identifikáciu viet v tejto databáze je potrebný jednoznačný alebo primárny kľúč.\nDo tejto tabuľky možno vkladať dáta iba ak je splnená niektorá z týchto podmienok.\n\nMá byť teraz vytvorený primárny kľúč?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
@@ -3541,11 +3541,11 @@ msgstr "A~utomaticky rastúca hodnota"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Vložte výraz SQL pre automaticky-inkrementujúce sa pole.\n\nTento výraz sa priamo prenesie do databázy pri vytváraní tabuľky."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Z databázy nemožno získať informáciu o typoch.\nPre tento zdroj dát nie je možná úprava štruktúry tabuľky."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"

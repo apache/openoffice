@@ -237,7 +237,7 @@ msgstr "Лента Функции"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "Възникнала е грешка в специалната конфигурация.\nМоля, свържете се с администратора си."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "Зареждане на %PRODUCTNAME при стартиране на с
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Изключване на Quickstarter"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -341,7 +341,7 @@ msgstr "Свързване на графика"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
 msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
-msgstr ""
+msgstr "Не може да бъде намерен подходящ метод %1\nна компонента.\n\nПроверете правописа на името на метода."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -509,11 +509,11 @@ msgstr "~Показване на помощ за %PRODUCTNAME %MODULENAME при
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "Избраният филтър $(FILTER) не е инсталиран.\nЖелаете ли да бъде инсталиран сега?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Избраният филтър $(FILTER) не е включен във Вашето издание.\nМожете да намерите информация за поръчки на нашия сайт."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "Предупреждение"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "Документът съдържа прозрачни обекти.\nТова може да предизвика по-бавно печатане на някои\nпринтери. Желаете ли редуциране на\nпрозрачността?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -733,7 +733,7 @@ msgstr "~Премахване на защитата..."
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Това действие ще прекрати режима на следене на промените.\nИнформацията за промени ще бъде загубена.\n\nЖелаете ли край на следенето?\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 msgid  "Protect Records"
@@ -1441,7 +1441,7 @@ msgstr "Наистина ли желаете стилът $1 да бъде из�
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "Изтривате стил, който вече е приложен!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1489,7 +1489,7 @@ msgstr "Задачи"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Документът може да включва форматиране или съдържание, което не може да бъде записано във файловия формат %FORMATNAME. Желаете ли въпреки това да го запишете в този файлов формат?\n\nИзползвайте най-новия файлов формат ODF, за да сте сигурни, че цялото форматиране и съдържание ще се запише коректно."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "Документът \"$(DOC)\" е бил променен.\nЖелаете ли съхраняване на промените?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "Шаблони"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "Грешка при копиране на шаблона \"$1\". \nМоже би вече съществува шаблон с това име."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "Избраният файл е в некоректен формат."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Документът не може да бъде съхранен във формат $(FORMAT).\nЖелаете ли съхраняване във формат $(OWNFORMAT)?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "Файлов формат:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "Документът съдържа:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr "~Синонимен речник..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Не е намерен подразбиран принтер.\nМоля, изберете принтер и опитайте отново."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Стартирането на принтера е невъзможно.\nМоля, проверете настройките му."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Този документ е форматиран за принтера $1. Зададеният принтер не е достъпен.\nЖелаете ли използване на стандартния принтер $2?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr " (само за четене)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Размерът и ориентацията на страниците са променени.\nЖелаете ли съхраняване на новите настройки\nв активния документ?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "Размерът на страниците е променен.\nЖелаете ли съхраняване на новите настройки\nв активния документ?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Размерът и ориентацията на страниците са променени.\nЖелаете ли съхраняване на новите настройки\nв активния документ?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

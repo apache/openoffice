@@ -61,17 +61,14 @@ msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: source/appl/app.src#STR_NONAME.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "MoggasDhabdee"
 
 #: source/appl/app.src#STR_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Cufi"
 
 #: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Ofumaa"
 
@@ -285,8 +282,9 @@ msgid  "Function Bar"
 msgstr "Kabala Fankishinii"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "Qindaayina addayyaa keessatti dogoggorri uumameera.\nMaaloo bulchaa sirna keetii dubbisi."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 #, fuzzy
@@ -314,8 +312,9 @@ msgid  "Load %PRODUCTNAME During System Start-Up"
 msgstr "Yeroo Eegala Sirnaa %PRODUCTNAME Fe'i"
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "DafeeKaasaa kabala sirnaa dhaamsi"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 #, fuzzy
@@ -409,8 +408,9 @@ msgid  "Link graphics"
 msgstr ""
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+#, fuzzy
 msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
-msgstr ""
+msgstr "Qaamni barbaachisaan  %1\nargamuu hin dandeenye.\n\nQubeessa maqaa \"method\" mikaneessi."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -613,11 +613,11 @@ msgstr "Gargaarsa %PRODUCTNAME %MODULENAME Eegalarratti Agarsiisi"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "Gingilchaan filatame $(FILTER) hin ijaaremne.\nKana amma gochuu barbaaddaa?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Gingilchaan filatame $(FILTER) sagantaa kana keessa hin jiru.\nHaala itti argattu fuula manaa keenyarraa argachuu dandeessa."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 #, fuzzy
@@ -755,8 +755,9 @@ msgid  "Warning"
 msgstr "Of eeggannoo"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+#, fuzzy
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "Galmeen kee wantoota ifaa of keessaa qaba.\nKunis maxxansaawwan tokko tokkorratti\nyeroo dheeraa fudhachuu mala. Kallattoon\nifaa haa xinneeffamuu?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 #, fuzzy
@@ -1193,107 +1194,86 @@ msgid  "Password"
 msgstr "Iggita"
 
 #: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "Galmee %PRODUCTNAME"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "Mataduree"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
-#, fuzzy
 msgid  "~Subject"
 msgstr "Dhimma"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
-#, fuzzy
 msgid  "~Keywords"
 msgstr "Jefuraa"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "Yaadota"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
-#, fuzzy
 msgid  "Type:"
 msgstr "Akaakuu"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Read-only"
 msgstr "Dubbis-qofa"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
-#, fuzzy
 msgid  "Location:"
 msgstr "Iddoo:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "Hammamtaa:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "Kan Uumeme:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "Kan Jijjiirame:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
-#, fuzzy
 msgid  "Digitally signed:"
 msgstr "Dijitaalii Kan Mallattaaye:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
-#, fuzzy
 msgid  "Digital Signature..."
 msgstr "Mallattoo Dijitaalii..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
-#, fuzzy
 msgid  "Multiply signed document"
 msgstr "Galmee mallattaa'e baay'isi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
-#, fuzzy
 msgid  "Last printed:"
 msgstr "Maxxansia maayii:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
-#, fuzzy
 msgid  "Total editing time:"
 msgstr "Sa'aatii gulaali dimshaasha:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
-#, fuzzy
 msgid  "Revision number:"
 msgstr "Lakkoofsa wayyeessaa:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "Reset"
 msgstr "Haaromsi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
-#, fuzzy
 msgid  "~Apply user data"
 msgstr "Deetaa Fayyadamaa Fayyadami"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
-#, fuzzy
 msgid  "Template:"
 msgstr "Qajojii:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
-#, fuzzy
 msgid  "unknown"
 msgstr "kan-hin-beekamne"
 
@@ -1302,242 +1282,194 @@ msgid  "File Name"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
-#, fuzzy
 msgid  "~Info fields..."
 msgstr "Dirree Odeeffannoo..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Do not refresh automatically"
 msgstr "Ofumaa hin haaromsin"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Refresh this document"
 msgstr "Galmee kana haaromsi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
-#, fuzzy
 msgid  "every"
 msgstr "kamuu"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "sekondoota"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Redirect from this document"
 msgstr "Galmee kanarraa gara biraa geessi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
-#, fuzzy
 msgid  "after"
 msgstr "booda"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "sekondoota"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "to URL"
 msgstr "gara URL"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
-#, fuzzy
 msgid  "to frame"
 msgstr "gara goodayyaa"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgstr "Yoo dirqala \"%PLACEHOLDER%\" filatte, URL galchuu qabda."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
-#, fuzzy
 msgid  "~Properties"
 msgstr "Amaloota"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Maqaa"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Akaakuu"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "Gatii"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "Dabali"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
-#, fuzzy
 msgid  "Property Name"
 msgstr "Maqaa Amalaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
-#, fuzzy
 msgid  "Checked by"
 msgstr "Abbaa mirkaneesse"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
-#, fuzzy
 msgid  "Client"
 msgstr "Maamila"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
-#, fuzzy
 msgid  "Date completed"
 msgstr "Guyyaa xumurame"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
-#, fuzzy
 msgid  "Department"
 msgstr "Dippartimintii"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
-#, fuzzy
 msgid  "Destinations"
 msgstr "Bakka gahuumsaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
-#, fuzzy
 msgid  "Disposition"
 msgstr "Balleessi"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
-#, fuzzy
 msgid  "Division"
 msgstr "Hiruu"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
-#, fuzzy
 msgid  "Document number"
 msgstr "Lakkoofsa galmee"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
-#, fuzzy
 msgid  "Editor"
 msgstr "Gulaalaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
-#, fuzzy
 msgid  "E-Mail"
 msgstr "Ergaa-e"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
-#, fuzzy
 msgid  "Forward to"
 msgstr "Garanatti dabarsi"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
-#, fuzzy
 msgid  "Group"
 msgstr "Gurmeessi"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
-#, fuzzy
 msgid  "Info"
 msgstr "Odeeffannoo"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
-#, fuzzy
 msgid  "Language"
 msgstr "Afaan"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
-#, fuzzy
 msgid  "Mailstop"
 msgstr "Dhaaba-dhaamsaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
-#, fuzzy
 msgid  "Matter"
 msgstr "Wantaatte"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
-#, fuzzy
 msgid  "Office"
 msgstr "Waajjira"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
-#, fuzzy
 msgid  "Owner"
 msgstr "Abbaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
-#, fuzzy
 msgid  "Project"
 msgstr "Piroojaktii"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
-#, fuzzy
 msgid  "Publisher"
 msgstr "Maxxansaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
-#, fuzzy
 msgid  "Purpose"
 msgstr "Haajaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
-#, fuzzy
 msgid  "Received from"
 msgstr "Abbaarraa fudhatame"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
-#, fuzzy
 msgid  "Recorded by"
 msgstr "Abbaa galmeeesse"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
-#, fuzzy
 msgid  "Recorded date"
 msgstr "Guyyaa galmaaye"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
-#, fuzzy
 msgid  "Reference"
 msgstr "Wabii"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
-#, fuzzy
 msgid  "Source"
 msgstr "Madda"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
-#, fuzzy
 msgid  "Status"
 msgstr "Halojii"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
-#, fuzzy
 msgid  "Telephone number"
 msgstr "Lakkoofsa bilbilaa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
-#, fuzzy
 msgid  "Typist"
 msgstr "Barreessituu"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "Barruu"
 
@@ -1546,7 +1478,6 @@ msgid  "DateTime"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
-#, fuzzy
 msgid  "Date"
 msgstr "Guyyaa"
 
@@ -1555,12 +1486,10 @@ msgid  "Duration"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
-#, fuzzy
 msgid  "Number"
 msgstr "Lakkoofsa"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
-#, fuzzy
 msgid  "Yes or no"
 msgstr "Eeyyee ykn lakki"
 
@@ -1569,17 +1498,14 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Eeyyee"
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
-#, fuzzy
 msgid  "No"
 msgstr "Lakki"
 
 #: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Remove Property"
 msgstr "Amala Haqi"
 
@@ -1588,27 +1514,22 @@ msgid  "The value entered does not match the specified type.\\nThe value will be
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
-#, fuzzy
 msgid  "Properties of "
 msgstr "Amaloota "
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "Waliigala"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Ibsa"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
-#, fuzzy
 msgid  "Custom Properties"
 msgstr "Amaloota Maamiloo"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
-#, fuzzy
 msgid  "Internet"
 msgstr "Intarneetii"
 
@@ -1702,27 +1623,22 @@ msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please s
 msgstr "%PRODUCTNAME qindaayina ergaa-e hojachuu danda'u argachuu hin dandeenye. Maaloo galmee kana komitara keerratti olkaa'itii maamila ergaa-e keetiin miiltessii ergi."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
-#, fuzzy
 msgid  "~Reset"
 msgstr "Haaromsi"
 
 #: source/dialog/dialog.src#STR_APPLY.String.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "Fayyadami"
 
 #: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
-#, fuzzy
 msgid  "Organizer"
 msgstr "Gurmeessaa"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
-#, fuzzy
 msgid  "This name is already in use."
 msgstr "Maqaan kun durumayyuu faayidaarra jira."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
-#, fuzzy
 msgid  "This Style does not exist."
 msgstr "Haalatni kun hin jiru."
 
@@ -1735,31 +1651,26 @@ msgid  "Name already exists as a default Style.\\nPlease choose another name."
 msgstr ""
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
-#, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "Dhuguma haalata $1 haquu barbaaddaa?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "Haalata fayyadaa jiru haqaa jirta!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
-#, fuzzy
 msgid  "New..."
 msgstr "Haaraa..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Modify..."
 msgstr "Foyyeesi..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete..."
 msgstr "Haqi..."
 
 #: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "Naanna'aa"
 
@@ -1768,12 +1679,10 @@ msgid  "Task Pane"
 msgstr ""
 
 #: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
-#, fuzzy
 msgid  "Faulty password confirmation"
 msgstr "Dhugoomsa iggitaa fashalaa"
 
 #: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
-#, fuzzy
 msgid  "Send"
 msgstr "Ergi"
 
@@ -1795,115 +1704,93 @@ msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Galmeen kun dhangii ykn qabiyyee dhangii %FORMATNAMEn olkaa'amuu hin dandeenye of keessaa qaba. Haa ta'u jettee faayila kana dhangii kanaan olkaa'uu ni feetaa?\n\nDhangii ODF isa dhiyoo bahe fayyadamuu fi qabiyyee fi dhangeessuun marti sirriitti olkaa'amuu isaa mirkaneeffadhu."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
-#, fuzzy
 msgid  "~Keep Current Format"
 msgstr "Dhangii ammee kaa'i"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
-#, fuzzy
 msgid  "~Save in ODF Format"
 msgstr "Dhangii ODFn Olkaa'i"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
-#, fuzzy
 msgid  "~More Information..."
 msgstr "Odeeffannoo Dabala..."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
-#, fuzzy
 msgid  "~Ask when not saving in ODF format"
 msgstr "Ogguu dhangii ODFn hin olkeenye gaafadhu"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
-#, fuzzy
 msgid  "My Templates"
 msgstr "Qajojiiwwan Koo"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
-#, fuzzy
 msgid  "Business Correspondence"
 msgstr "Xalayaa Daldalaa"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
-#, fuzzy
 msgid  "Other Business Documents"
 msgstr "Galmeewwan Daldala Kabiroo"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
-#, fuzzy
 msgid  "Personal Correspondence and Documents"
 msgstr "Xalayaa fi Galmee Dhuunfaa"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
-#, fuzzy
 msgid  "Forms and Contracts"
 msgstr "Unkaalee fi Waliigalteewwan"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
-#, fuzzy
 msgid  "Finances"
 msgstr "Faayinaansii"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
-#, fuzzy
 msgid  "Education"
 msgstr "Barnoota"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
-#, fuzzy
 msgid  "Presentation Backgrounds"
 msgstr "Duubbee Dhiheessaa"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
-#, fuzzy
 msgid  "Presentations"
 msgstr "Dhiheessaawwan"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
-#, fuzzy
 msgid  "Miscellaneous"
 msgstr "Walmakee"
 
 #: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
-#, fuzzy
 msgid  "The templates are being initialized for first-time usage."
 msgstr "Qajojiiwwan fayyadama yeroo duraatiif jalqabamaa jiru."
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Qajojiiwwan"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
-#, fuzzy
 msgid  "New template"
 msgstr "Qajojii haaraa"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Qajojiiwwan"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "Akaakuwwan"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
-#, fuzzy
 msgid  "~Templates"
 msgstr "Qajojiiwwan"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "Gulaali"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "Gurmessaa..."
 
@@ -1916,12 +1803,10 @@ msgid  "Name already in use.\\nDo you want to overwrite document template?"
 msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
 msgstr "Dhuguma bakka murtaa'aa \"$1\" kana haquu feetaa?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Dhuguma galfata \"$1\" haquu feetaa?"
 
@@ -1931,99 +1816,81 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "Galmeen \"$(DOC)\" fooyyeffameera.\nJijjiiramoota kee olkaa'u feetaa?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "Haalatoota"
 
 #: source/doc/doc.src#STR_MACROS.String.Text
-#, fuzzy
 msgid  "Macros"
 msgstr "Maakroowwan"
 
 #: source/doc/doc.src#STR_CONFIG.String.Text
-#, fuzzy
 msgid  "Configuration"
 msgstr "Qindaayina"
 
 #: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
-#, fuzzy
 msgid  "Styles in "
 msgstr "Haalatoota as keessaa "
 
 #: source/doc/doc.src#STR_PRINT_STYLES.String.Text
-#, fuzzy
 msgid  "Printing Styles"
 msgstr "Haalatoota Maxxansaa"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
-#, fuzzy
 msgid  "The print job could not be started."
 msgstr "Hojiin maxxansaa eegalamuu hin danda'u."
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
-#, fuzzy
 msgid  "Copy"
 msgstr "Garagalchi"
 
 #: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
-#, fuzzy
 msgid  "The template could not be opened."
 msgstr "Qajojiiin kun banaamuu hin danda'u."
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
-#, fuzzy
 msgid  "Document already open for editing."
 msgstr "Galmeen kun durumayyuu gulaaluuf banameera."
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
-#, fuzzy
 msgid  "Error recording document "
 msgstr "Dogoggora galmee waraabuu "
 
 #: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Qajojiiwwan"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "Dogoggora qajojii \"$1\" garagalchuu.\nQajoojiin maqaa kana qabu durumayyuu jiraachuu mala."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "Qajojiin \"$1\" haqamuu hin danda'u."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Error moving template \"$1\"."
 msgstr "Dogoggora qajojii \"$1\" siqsuu."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
-#, fuzzy
 msgid  "The update could not be saved."
 msgstr "Haaromsi kun olkaa'amuu hindanda'u."
 
 #: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Error saving template "
 msgstr "Dogoggora qajojii olkaa'uu"
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
-#, fuzzy
 msgid  "Error renaming template."
 msgstr "Dogoggora maqaa qajojii jijjiiruu."
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
-#, fuzzy
 msgid  "Error renaming template category."
 msgstr "Dogoggora maqaa akaakuu qajojii jijjiiruu."
 
 #: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
-#, fuzzy
 msgid  "Please specify a name."
 msgstr "Maaloo maqaa ifteessi."
 
@@ -2032,12 +1899,10 @@ msgid  "Please specify a unique name.\\nEntries must not be case specific."
 msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Qajojiin \"$(TEXT)\" qajojii durtii haa ta'uu?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to reset the default template?"
 msgstr "Qajojii durtii haaromsuu feetaa?"
 
@@ -2046,91 +1911,74 @@ msgid  "Template directory\\n$(DIR)\\ndoes not exist."
 msgstr ""
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
-#, fuzzy
 msgid  "Document info cannot be read."
 msgstr "Odeeffannoon galmee dubbifamuu hin dandeenye."
 
 #: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
-#, fuzzy
 msgid  "The selected file has an incorrect format."
 msgstr "Faayiliin filame dhangii sirrii hin taane qaba."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Galmeewwan dhangii $(FORMAT)n olka'amuu hin danda'an.\n Jijjiirama kana dhangii $(OWNFORMAT)n olkaa'uu feetaa?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "Olkaa'i"
 
 #: source/doc/doc.src#STR_UPDATEDOC.String.Text
-#, fuzzy
 msgid  "~Update"
 msgstr "Haaromsi"
 
 #: source/doc/doc.src#STR_SAVEASDOC.String.Text
-#, fuzzy
 msgid  "Save ~As..."
 msgstr "Akkanatti Olkaa'i..."
 
 #: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
-#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "Garagalcha Akkanatti Olkaa'i..."
 
 #: source/doc/doc.src#STR_CLOSEDOC.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "Cufi"
 
 #: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
-#, fuzzy
 msgid  "~Close & Return to "
 msgstr "Cufiitiii Garana Deebi'i "
 
 #: source/doc/doc.src#STR_WIZARD.String.Text
-#, fuzzy
 msgid  " AutoPilot"
 msgstr " AwutooPaayilatii"
 
 #: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
-#, fuzzy
 msgid  "Configurations"
 msgstr "Qindaayinoota"
 
 #: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
 msgstr "Gameewwan Basic %PRODUCTNAME"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Haalatni \"$(ARG1)\" bakka haa buufamuu?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
-#, fuzzy
 msgid  "Loading Document"
 msgstr "Galmeen Fe'amaa Jira"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
-#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
 msgstr "Waliindhaa gara: $(HOST). Deebiin eegamaa jira..."
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
-#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
 msgstr "$(TARGET) $(HOST) irraa banamaa jira"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
-#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
 msgstr "Fe'iinsa: $(TARGET) $(HOST) irraa. Kan Fe'ame: $(BYTE)"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
-#, fuzzy
 msgid  "Disconnected"
 msgstr "Waliindhaa Addaa Kutame"
 
@@ -2139,226 +1987,182 @@ msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-
 msgstr ""
 
 #: source/doc/doc.src#STR_EDIT.String.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Gulaali"
 
 #: source/doc/doc.src#RID_OFFICEFILTER.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Documents"
 msgstr "Galmeewwan%PRODUCTNAME"
 
 #: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "Amaloota..."
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
-#, fuzzy
 msgid  "HTML (FrameSet)"
 msgstr "HTML (Hirama Goodayyaa)"
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "Galmee Goodayyaa %PRODUCTNAME"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
 msgstr "Qajojini \"$(TEMPLATE)\" iddoo xabbootti hin argaamne. Qajojiin maqaa walfakkaataa qabuu iddoo \"$(FOUND)\"tti argama. Qajojiin kun gara fuulduraa walmadaaluu keessatti haa fayyaduu?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "Qajojiin \"$(TEMPLATE)\" argamuu hin dandeenye. Yeroo ittaanuu yoo galmeen kun banamu qajojiin kun haa barbaadamuu ?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
-#, fuzzy
 msgid  "Automatically saved version"
 msgstr "Faayila ofumaa olkaa'ame"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "Galmee Barruu"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
-#, fuzzy
 msgid  "HTML Document"
 msgstr "Galmee HTML"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
-#, fuzzy
 msgid  "Master Document"
 msgstr "Galmee Hundataa"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Wardii"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "Dhiheessa"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "Fakkasa"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
-#, fuzzy
 msgid  "Message"
 msgstr "Dhaamsa"
 
 #: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
-#, fuzzy
 msgid  "~Discard"
 msgstr "Gati"
 
 #: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
-#, fuzzy
 msgid  "Access to the current data medium not possible."
 msgstr "Kuusaa ammee gahuun hin danda'amne."
 
 #: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
-#, fuzzy
 msgid  "Insert the next data carrier and click OK."
 msgstr "Baattuu deetaa itti aanu saagitii TOLE cuqaasi."
 
 #: source/doc/doc.src#STR_OBJECT.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "Wanta"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
-#, fuzzy
 msgid  "Run Macro"
 msgstr "Maakroo kaasi"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
-#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
 msgstr "Galmeen kun maakroo of keessaa qaba. $(TEXT)"
 
 #: source/doc/doc.src#BTN_OK.String.Text
-#, fuzzy
 msgid  "Run"
 msgstr "Kaasi"
 
 #: source/doc/doc.src#BTN_CANCEL.String.Text
-#, fuzzy
 msgid  "Do Not Run"
 msgstr "Hin Kaasin"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
-#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "Akkaataa qindaa'ina ittisaatin, maakroowwan galmee kana keessaa kaafamuu hin qaban. Ta'uyyuu maakrowwan kana kaasuu feetaa?"
 
 #: source/doc/doc.src#FT_OK.String.Text
-#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
 msgstr "Maakroowwan kun akka ka'an hayyamuu feetaa?"
 
 #: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
-#, fuzzy
 msgid  "Export as PDF"
 msgstr "Akka PDFtti Alergi"
 
 #: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
-#, fuzzy
 msgid  "Export..."
 msgstr "Alergi..."
 
 #: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
-#, fuzzy
 msgid  "Export"
 msgstr "Alergi"
 
 #: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
-#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
 msgstr "Galeeloo kana tarree xurreewwan hayyifamaniitti dabali: "
 
 #: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
-#, fuzzy
 msgid  "File format:"
 msgstr "Dhangii Faayilii:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "Galmeen kun kanneen qaba:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
-#, fuzzy
 msgid  "Recorded changes"
 msgstr "Jijjiiramoota galmeeefaman"
 
 #: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "Yaadannoolee"
 
 #: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
-#, fuzzy
 msgid  "Document versions"
 msgstr "Fooyya'a Galmee"
 
 #: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "Dirreewwan"
 
 #: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
-#, fuzzy
 msgid  "Linked data..."
 msgstr "Deetaa Geeffaman..."
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
-#, fuzzy
 msgid  "Do you want to continue saving the document?"
 msgstr "Galmee kana olkaa'uu itti fufuu feetaa?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
-#, fuzzy
 msgid  "Do you want to continue printing the document?"
 msgstr "Galmee kana maxxansuu itti fufuu feetaa?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
-#, fuzzy
 msgid  "Do you want to continue signing the document?"
 msgstr "Galmee kana mallatteessuu itti fufuu feetaa?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
-#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
 msgstr "Faayila PDF uumuu itti fufuu barbaaddaa?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
-#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
 msgstr "Yoo galmee xabboo irrabu hin barbaanne, hojii kee maqaa haaraan olkaa'uu qabda."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
-#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
 msgstr "Faayiloonni qajojii tokko tokko eegamoo waan ta'aniif haqamuu hin danda'an."
 
 #: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
-#, fuzzy
 msgid  "Info %1"
 msgstr "Odeeffannoo %1"
 
 #: source/doc/doc.src#STR_SHARED.String.Text
-#, fuzzy
 msgid  " (shared)"
 msgstr " (yagutoo)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
-#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
 msgstr "Meeshaalee-Dirqalaalee-Fe'i/Olkaa'i-Waliigala keessatti dhangiin galmee akka foyya'a ODF 1.1 (OpenOffice.org 2.x)tti qindaa'ee jira. Galmeewwan mallatteessuun ODF 1.2 (OpenOffice.org 3.x) barbaada."
 
@@ -2367,232 +2171,186 @@ msgid  "The document has to be saved before it can be signed. Saving the documen
 msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
-#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 msgstr "Qajojiin galmeen kun irratti hundaa'e '$(ARG1)' jijjiiramee jira. Dhangiiwwwan haalatarrtti hundaa'an akkaataa haalatoota foyya'aniitin haaromsuu feetaa?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
-#, fuzzy
 msgid  "~Update Styles"
 msgstr "Haalatoota Haaromsi"
 
 #: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
-#, fuzzy
 msgid  "~Keep Old Styles"
 msgstr "Halatoota Moofaa Kaa'i"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
-#, fuzzy
 msgid  "Template Management"
 msgstr "Taliigaa Qajojii"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Cufi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "Faayilii..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
-#, fuzzy
 msgid  "~Address Book..."
 msgstr "Yaadannoo Teessoo..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Templates"
 msgstr "Qajojiiwwan"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Documents"
 msgstr "Galmeewwan"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Templates"
 msgstr "Qajojiiwwan"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Documents"
 msgstr "Galmeewwan"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
-#, fuzzy
 msgid  "Commands"
 msgstr "Ajajoota"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "Haaraa"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "Haqi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "Gulaali"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
-#, fuzzy
 msgid  "Import Template..."
 msgstr "Qajojii Alaagalchi..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
-#, fuzzy
 msgid  "Export Template..."
 msgstr "Qajojii Alergi..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "Maxxansi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
-#, fuzzy
 msgid  "Printer Settings..."
 msgstr "Qindaayina Maxxansaa..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "Haaromsi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
-#, fuzzy
 msgid  "Set As Default Template"
 msgstr "Akka Qajojii Durtitti Qindeessi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
-#, fuzzy
 msgid  "Reset Default Template"
 msgstr "Qajojii Durtii Haaromsi"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
-#, fuzzy
 msgid  "New"
 msgstr "Haaraa"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "Akaakuuwwan"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "T~emplates"
 msgstr "Qajojiiwwan"
 
 #: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
-#, fuzzy
 msgid  "~More"
 msgstr "Dabala"
 
 #: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pre~view"
 msgstr "Durargii"
 
 #: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Ibsa"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "Te~xt"
 msgstr "Barruu"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Frame"
 msgstr "Goodayyaa"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Pages"
 msgstr "Fuulaota"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "N~umbering"
 msgstr "Lakkoofsa"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Overwrite"
 msgstr "Irrabarreessi"
 
 #: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
-#, fuzzy
 msgid  "From File..."
 msgstr "Faayilii Irraa..."
 
 #: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Load Styles"
 msgstr "Haalata Fe'i"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "Mataduree"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
-#, fuzzy
 msgid  "Subject"
 msgstr "Dhimma"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
-#, fuzzy
 msgid  "~Key words"
 msgstr "Jefuraawwan"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "Ibsa"
 
 #: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
-#, fuzzy
 msgid  "Configuration Menu"
 msgstr "Baafata Qindaayinaa"
 
 #: source/menu/menu.src#STR_MENU_ADDONS.String.Text
-#, fuzzy
 msgid  "~Add-Ons"
 msgstr "Idaatoowwan"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "Muri"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "Garagalchi"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "Maxxansi"
 
 #: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
-#, fuzzy
 msgid  "Leave Full-Screen Mode"
 msgstr "Haalata Argii-Guutuu Dhiisi"
 
 #: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
-#, fuzzy
 msgid  "Add-~On Help"
 msgstr "Gargaarsa Idaatoo"
 
@@ -2610,75 +2368,65 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Maxxansaan durtii homaatuu hin argaamne.\nMaaloo maxxansaa filadhuutii lammata yaali."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Maxxansaa eegalu hin dandeenye.\nMaaloo qindaayina maxxansaa keetii mirkaneeffadhu."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Galmee kun maxxansaa $1f dhangi'ame. Maxxansaan ifteeffame hin jiru.\nMaxxansaa durtii $2 fayyadamuu feetaa ?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options..."
 msgstr "Dirqalaalee..."
 
 #: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
-#, fuzzy
 msgid  "Printer Options"
 msgstr "Dirqalaalee Maxxansaa"
 
 #: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
-#, fuzzy
 msgid  "Printer busy"
 msgstr "Maxxansaa jaatanaawaa"
 
 #: source/view/view.src#STR_ERROR_PRINT.String.Text
-#, fuzzy
 msgid  "Error while printing"
 msgstr "Dogoggora ogguu maxxansuu"
 
 #: source/view/view.src#STR_PRINTING.String.Text
-#, fuzzy
 msgid  "Printing"
 msgstr "Maxxanfamaa Jira"
 
 #: source/view/view.src#STR_PAGE.String.Text
-#, fuzzy
 msgid  "Page "
 msgstr "Fuula"
 
 #: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Error saving template "
 msgstr "Dogoggora olkaa'uu qajojii "
 
 #: source/view/view.src#STR_READONLY.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr " (dubbis-qofa)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Hammamtaa fi qaabachiifni fuula kanaa jijjiirameera.\nQindaayinoota haaraa galmee kana keessa jiran\nolkaa'uu barbaaddaa?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "Hammamtaan fuulaa jijjiirameera.\nQindaayinootni haaraan galmee ka'aa\n kana keessatti haa olkaa'amanii?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Hammamtaa fi qaabachiifni fuula kanaa jijjiirameera.\nQindaayinoota haaraa galmee kana keessa jiran\nolkaa'uu barbaaddaa?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Mataduree:</b><dd>$(TITEL)<dt><b>Dhimma:</b><dd>$(THEME)<dt><b>Jefuraawwan:</b><dd>$(KEYWORDS)<dt><b>Ibsa:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
 msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Amalootni galmee homtuu argamuu hin dandeenye.</B></FONT></P></BODY></HTML>"
 
@@ -2687,17 +2435,14 @@ msgid  "The document cannot be closed because a\\n print job is being carried ou
 msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-#, fuzzy
 msgid  "Print Monitor"
 msgstr "Torgii Maxxansi"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
-#, fuzzy
 msgid  "is being printed on"
 msgstr "irratti maxxanfamaa jira"
 
 #: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
-#, fuzzy
 msgid  "is being prepared for printing"
 msgstr "maxxansaaf qopheeffamaa jira"
 
@@ -2706,16 +2451,13 @@ msgid  "An error occurred in sending the message. Possible errors could be a mis
 msgstr ""
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
-#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Galmeen kun gulaalamuu hin danda'u, kunis dhaba mirga gahiinsaan ta'uu danda'a. Garagalcha galmee kanaa gulaaluu feetaa?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
-#, fuzzy
 msgid  " (repaired document)"
 msgstr " (galmee suphame)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
-#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME sirna kee irraa iyyaafataa saphaphuu argachuu hin dandeenye. Maaloo Fedhiilee Minjaala'aa kee mirkaneeffadhu ykn iyyaafataa (fkn, Mozilla) bakka durtii qindeessaan iyyaafataa gaafatutti qindeessi."

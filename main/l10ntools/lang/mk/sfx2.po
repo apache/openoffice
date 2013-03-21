@@ -237,7 +237,7 @@ msgstr "Лента со функции"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "Се појави грешка во специјалната конфигурација.\nКонтактирајте со администраторот."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "Вчитај %PRODUCTNAME при подигнување на систе�
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Оневозможи го Quickstarter"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -509,11 +509,11 @@ msgstr "При~кажи ја помошта за %PRODUCTNAME %MODULENAME при
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "Избраниот филтер $(FILTER) не е инсталиран.\nДали сакате да го направите ова сега?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Избраниот филтер $(FILTER) не е вклучен во Вашето издание.\nМожете да најдете информации во врска со нарачките на нашата домашна страница."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "Предупредување"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "Вашиот документ содржи проѕирни објекти.\nОва може да доведе до подолго време за \nпечатење на одредени печатачи. Дали да го\nнамалам аспектот на проѕирност?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -1441,7 +1441,7 @@ msgstr "Дали навистина сакате да го избришете с
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "Бришете применет стил!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1489,7 +1489,7 @@ msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Овој документ може да содржи форматирање на содржината кое не може да биде зачувано во датотечниот формат %FORMATNAME. Дали сепак сакате да го зачувате документот во овој формат?\n\nКористете го последниот формат ODF и бидете сигурни дека сите форматирања и содржина ќе биде точно зачувана."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "Документот „$(DOC)“ е изменет\nДали сакате да ги зачувате Вашите промени?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "Обрасци"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "Грешка при копирање на образецот „$1“.\nОбразец со ова име можеби веќе постои."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "Избраната датотека има неправилен форм
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Документите не можат да се зачуваат во форматот $(FORMAT). Дали\nсакате да ги зачувате Вашите промени во форматот $(OWNFORMAT)?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "Формат на датотека:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "Овој документ содржи:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Не е пронајден основен печатач.\nИзберете печатач и обидете се повторно."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Не можам да го стартувам печатачот.\nПроверете ја конфигурацијата на печатачот."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Овој документ е форматиран за печатачот $1. Наведениот печатач не е достапен. \nДали сакате да го користите стандардниот печатач $2?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr " (само за читање)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Големината на страницата и нејзината ориентација се променети.\nДали сакате да ги зачувате новите поставувања во\nактивниот документ?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "Големината на страницата е променета.\nДали да бидат зачувани новите поставувања\nво активниот документ?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Големината на страницата и нејзината ориентација се променети.\nДали сакате да ги зачувате новите поставувања во\nактивниот документ?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

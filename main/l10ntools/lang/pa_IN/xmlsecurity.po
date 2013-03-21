@@ -53,19 +53,19 @@ msgstr "ਮੁੜ-ਸੈੱਟ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "ਬਹੁਤ ਵੱਧ ਹੈ।\n ਸਿਰਫ਼ ਭਰੋਸੇਯੋਗ ਫਾਇਲ ਸਥਿਤੀਆਂ ਤੋਂ ਹੀ ਮਾਈਕਰੋ ਚਲਾਉਣ ਹੀ ਸੰਭਵ ਹੋਵੇਗਾ। ਹੋਰ ਸਭ ਮਾਈਕਰੋ, ਭਾਵੇਂ ਕਿ ਉਹ ਦਸਤਖਤੀ ਹੋਣ ਜਾਂ ਨਾ, ਨੂੰ ਚਲਾਇਆ ਨਹੀਂ ਜਾ ਸਕੇਗਾ।(~V)"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "ਵੱਧ।\nਸਿਰਫ਼ ਦਸਤਖਤੀ ਮਾਈਕਰੋ, ਜੋ ਕਿ ਕਿਸੇ ਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਉਪਲੱਬਧ ਹੋਣ, ਨੂੰ ਹੀ ਚਲਾਇਆ ਜਾ ਸਕੇਗਾ। ਬਾਕੀ ਆਯੋਗ ਹੋਣਗੇ।(~i)"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "ਮੱਧਮ।\nਨਾ-ਭਰੋਸੇਯੋਗ ਸਰੋਤਾਂ ਤੋਂ ਪ੍ਰਾਪਤ ਮਾਈਕਰੋ ਨੂੰ ਚਲਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਖੁਦ ਪੁਸ਼ਟੀ ਕਰਨੀ ਪਵੇਗੀ।(~M)"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "ਘੱਟ (ਸਿਫਾਰਸ਼ੀ ਨਹੀਂ ਹੈ)।\nਮਾਈਕਰੋ ਨੂੰ ਕਿਸੇ ਵੀ ਪੁਸ਼ਟੀ ਕਰਵਾਏ ਬਿਨਾਂ ਚਲਾਇਆ ਜਾਵੇਗਾ। ਇਸ ਸੈਟਿੰਗ ਨੂੰ ਤਾਂ ਹੀ ਇਸਤੇਮਾਲ ਕਰੋ, ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੇ ਖੋਲ੍ਹੇ ਸਭ ਡੌਕੂਮੈਂਟ ਨੂੰ ਸੰਭਾਲ ਦਿੱਤਾ ਹੋਵੇ।(~L)"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "ਭਰੋਸੇਯੋਗ ਸਰਟੀਫਿਕੇਟ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "ਜਾਰੀ ਕੀਤਾ\tਜਾਰੀਕਰਤਾ\tਮਿਆਦ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "ਇਸ ਪੈਕੇਜ ਉੱਤੇ ਹਸਤਾਖਰ ਕਰਨ ਵਾ�
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tਦਸਤਖਤ ਕੀਤੇ\tਡਿਜ਼ੀਟਲ ID ਜਾਰੀ ਕਰਤਾ\tਮਿਤੀ ਰਾਹੀਂ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "ਸਰਟੀਫਿਕੇਟ ਪਰਮਾਣਿਤ ਨਹੀਂ ਕੀਤ
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "ਖੇਤਰ\tਮੁੱਲ"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "ਦਸਤਖਤ ਕਰਨ ਲਈ ਸਰਟੀਫਕੇਟ ਦੀ ਚੋ�
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "ਜਾਰੀ ਕੀਤਾ\tਜਾਰੀਕਰਤਾ\tਮਿਆਦ"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

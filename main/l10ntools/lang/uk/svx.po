@@ -971,12 +971,14 @@ msgid  "~Delete"
 msgstr "В~идалити"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Сенсорне зображення змінено.\nЗберегти ці зміни?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Сенсорне зображення змінено.\nЗберегти ці зміни?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1293,12 +1295,10 @@ msgid  "Line of text"
 msgstr "Рядок тексту"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "Кольори"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
-#, fuzzy
 msgid  "Source color"
 msgstr "Первинний колір"
 
@@ -1385,8 +1385,9 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "Відновлення документа %PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Натисніть \"Почати відновлення\", щоб почати процес відновлення перелічених нижче документів.\n\nМожливість відновлення документу відображається у рядку \"Статус\"."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1399,8 +1400,9 @@ msgid  "Status of recovered documents:"
 msgstr "Статус відновлення документів:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
+#, fuzzy
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Назва документу\tСтатус"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1448,8 +1450,9 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "Створено звіт про помилку, який допоможе розробникам зрозуміти причину помилки %PRODUCTNAME. Для запуску помічника надсилання звітів про помилки натисніть «Далі», або натисніть «Скасувати» для пропуску цього кроку."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
+#, fuzzy
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "Відновлення документів завершено.\nКлацніть \"Завершити\" для простору цих документів."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1462,8 +1465,9 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "Ви дійсно хочете скасувати відновлення документу %PRODUCTNAME?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
+#, fuzzy
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Процес автоматичного відновлення призупинено.\n\nПерелічені нижче документи будуть збережені у вказаній нижче теці, якщо ви натиснете «Зберегти». Щоб закрити помічник та відмовитись від збереження документів натисніть «Скасувати»."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1491,8 +1495,9 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "Ласкаво просимо до помічника складання звітів про помилки %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "Засіб складання звітів про помилки об'єднує відомості про роботу %PRODUCTNAME та надсилає їх у компанію Sun Microsystems, щоб допомогти покращити майбутні версії.\n\nМожна просто надіслати звіт без зайвих зусиль, натискаючи кнопку \"Надіслати\" у наступному діалоговому вікні. Можна коротко описати прояву помилки і натиснути кнопку \"Надіслати\". Щоб переглянути звіт, натисніть кнопку \"Показати звіт\". Дані не будуть надіслані, якщо натиснути кнопку \"Не надсилати\".\n\nКонфіденційність користувачів\nПри виникненні помилки виконується збір лише даних про стан %PRODUCTNAME %PRODUCTVERSION. Збір інших даних про паролі чи зміст документів не виконується.\n\nДані будуть використовуватись лише для покращення якості %PRODUCTNAME та не передаватимуться іншим компаніям.\nДодаткові відомості про політику конфіденційності Sun Microsystems див. на сайті\nhttp://www.sun.com/privacy/"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 #, fuzzy
@@ -1535,8 +1540,9 @@ msgid  "~Options..."
 msgstr "~Параметри..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
+#, fuzzy
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "~Я дозволяю Sun Microsystems зв'язуватися зі мною стосовно цього звіту."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 #, fuzzy
@@ -1594,8 +1600,9 @@ msgid  "~Port"
 msgstr "~Порт"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Засобу надсилання повідомлень про помилки у %PRODUCTNAME потрібне підключення до Інтернет для надсилання звітів про помилки.\nДля захисту корпоративних мереж часто використовується проксі-сервери разом з брандмауером.\nУ цьому випадку слід вказати адресу та порт сервера."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -3989,8 +3996,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Контур був змінений.\nЗберегти зміни?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -3998,8 +4006,9 @@ msgid  "Do you want to create a new contour?"
 msgstr "Створити новий контур?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
+#, fuzzy
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Створення нового робочого середовища \nпризведе до видалення контуру.\nПродовжити попри все?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4571,522 +4580,418 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
-#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "Створити тривимірний об'єкт обертання"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Вставити об'єкт(и)"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
-#, fuzzy
 msgid  "Number of segments"
 msgstr "Кількість сегментів"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
-#, fuzzy
 msgid  "Object depth"
 msgstr "Глибина об'єкту"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
-#, fuzzy
 msgid  "Focal length"
 msgstr "Фокусна відстань"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
-#, fuzzy
 msgid  "Camera position"
 msgstr "Розташування камери"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
-#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "Повернути тривимірний об'єкт"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
-#, fuzzy
 msgid  "Create extrusion object"
 msgstr "Створити об'єкт екструзії"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
-#, fuzzy
 msgid  "Create rotation object"
 msgstr "Створити об'єкт обертання"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
-#, fuzzy
 msgid  "Split 3D object"
 msgstr "Розділити тривимірний об'єкт"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
-#, fuzzy
 msgid  "3D Attributes"
 msgstr "Тривимірні атрибути"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "Тривимірні ефекти"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Geometry"
 msgstr "Геометрія"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Shading"
 msgstr "Представлення"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Illumination"
 msgstr "Освітлення"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Textures"
 msgstr "Текстури"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Material"
 msgstr "Матеріал"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Update"
 msgstr "Оновити"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Assign"
 msgstr "Призначити"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to 3D"
 msgstr "Перетворити на 3D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "Перетворити у тіло обертання"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "Увім./вимк. перспективу"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
-#, fuzzy
 msgid  "Geometry"
 msgstr "Геометрія"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
-#, fuzzy
 msgid  "R~ounded edges"
 msgstr "~Закруглені краї"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
-#, fuzzy
 msgid  "~Scaled depth"
 msgstr "Мас~штаб глибини"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "~Rotation angle"
 msgstr "~Кут повороту"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr " градусів"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Depth"
 msgstr "Г~либина"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
-#, fuzzy
 msgid  "Segments"
 msgstr "Сегменти"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "~Горизонтально"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "~Вертикально"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
-#, fuzzy
 msgid  "Normals"
 msgstr "Нормаль"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Залежно від об'єкту"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Flat"
 msgstr "Плаский"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Spherical"
 msgstr "Кулястий"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Invert Normals"
 msgstr "Поворот відносного освітлення"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "Подвійне освітлення"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided"
 msgstr "З обох боків"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "~Режим"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
-#, fuzzy
 msgid  "Flat"
 msgstr "Плаский"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
-#, fuzzy
 msgid  "Phong"
 msgstr "Фонг"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
-#, fuzzy
 msgid  "Gouraud"
 msgstr "Гуро"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Тінь"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "Увім./вимк. тривимірну тінь"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
-#, fuzzy
 msgid  "S~urface angle"
 msgstr "~Нахил поверхні"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr " градусів"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
-#, fuzzy
 msgid  "Camera"
 msgstr "Камера"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "~Відстань"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
-#, fuzzy
 msgid  "~Focal length"
 msgstr "~Фокусна відстань"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Shading"
 msgstr "Представлення"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "~Джерело світла"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 1"
 msgstr "Джерело світла 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 2"
 msgstr "Джерело світла 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 3"
 msgstr "Джерело світла 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 4"
 msgstr "Джерело світла 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 5"
 msgstr "Джерело світла 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 6"
 msgstr "Джерело світла 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 7"
 msgstr "Джерело світла 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 8"
 msgstr "Джерело світла 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Вибрати колір у діалозі"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "~Розсіяне світло"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Вибрати колір у діалозі"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "Освітлення"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Тип"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Black & White"
 msgstr "Чорн-біле"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Color"
 msgstr "Колір"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "~Режим"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Only Texture"
 msgstr "Лише текстура"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture and Shading"
 msgstr "Текстура та тінь"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "Текстура, тінь та колір"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
-#, fuzzy
 msgid  "~Projection X"
 msgstr "~Проекція X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Залежно від об'єкту"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "Паралельно"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Колоподібний"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
-#, fuzzy
 msgid  "P~rojection Y"
 msgstr "П~роекція Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Залежно від об'єкту"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "Паралельно"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Колоподібний"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
-#, fuzzy
 msgid  "~Filtering"
 msgstr "~Фільтрування"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "Увім./вимк. фільтри"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
-#, fuzzy
 msgid  "Textures"
 msgstr "Текстури"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
-#, fuzzy
 msgid  "~Favorites"
 msgstr "~Улюблені"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
-#, fuzzy
 msgid  "User-defined"
 msgstr "Визначається користувачем"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
-#, fuzzy
 msgid  "Metal"
 msgstr "Метал"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
-#, fuzzy
 msgid  "Gold"
 msgstr "Золото"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
-#, fuzzy
 msgid  "Chrome"
 msgstr "Хром"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
-#, fuzzy
 msgid  "Plastic"
 msgstr "Пластмаса"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
-#, fuzzy
 msgid  "Wood"
 msgstr "Дерево"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Object color"
 msgstr "Колір ~об'єкту"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Вибрати колір у діалозі"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
-#, fuzzy
 msgid  "~Illumination color"
 msgstr "Колір о~світлення"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Вибрати колір у діалозі"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
-#, fuzzy
 msgid  "Specular"
 msgstr "Блік"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Колір"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Вибрати колір у діалозі"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
-#, fuzzy
 msgid  "I~ntensity"
 msgstr "~Інтенсивність"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
-#, fuzzy
 msgid  "Material"
 msgstr "Матеріал"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
-#, fuzzy
 msgid  "Favorite"
 msgstr "Текстура"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "Х"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
-#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
-#, fuzzy
 msgid  "R:"
 msgstr "Ч:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
-#, fuzzy
 msgid  "G:"
 msgstr "З:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
-#, fuzzy
 msgid  "B:"
 msgstr "С:"
 
@@ -5095,295 +5000,238 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
-#, fuzzy
 msgid  "Delete Rows"
 msgstr "Видалити рядки"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
-#, fuzzy
 msgid  "Save Record"
 msgstr "Зберегти запис"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "Скасувати: введення даних"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Column"
 msgstr "Вставити ~стовпчик"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "Текстове поле"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "Поле з відміткою"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "Поле зі списком"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "Список"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "Поле дати"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "Поле часу"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "Числове поле"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "Поле валюти"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "Поле з маскою вводу"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "Поле форматованого вводу"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Date and Time Field"
 msgstr "Поле часу й дати"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Replace with"
 msgstr "Замінити н~а"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Видалити стовпчик"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Column"
 msgstr "С~ховати стовпчик"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
-#, fuzzy
 msgid  "~More..."
 msgstr "~Додатково..."
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~Усі"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Columns"
 msgstr "~Показати стовпчики"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Column..."
 msgstr "Стовпчик..."
 
 #: source/form/fmstring.src#RID_ERR_CONTEXT_ADDFORM.String.Text
-#, fuzzy
 msgid  "Error while creating form"
 msgstr "Помилка при створенні форми"
 
 #: source/form/fmstring.src#RID_ERR_FIELDREQUIRED.String.Text
-#, fuzzy
 msgid  "Input required in field '#'. Please enter a value."
 msgstr "Для поля '#' потрібно ввести дані.\nВведіть значення."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Запис вже існує.\nВиберіть іншу назву."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
-#, fuzzy
 msgid  "Forms"
 msgstr "Форми"
 
 #: source/form/fmstring.src#RID_STR_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No control selected"
 msgstr "Елемент керування не виділений"
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_CONTROL.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "Властивості: "
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_FORM.String.Text
-#, fuzzy
 msgid  "Form Properties"
 msgstr "Властивості форми"
 
 #: source/form/fmstring.src#RID_STR_FMEXPLORER.String.Text
-#, fuzzy
 msgid  "Form Navigator"
 msgstr "Навігатор форми"
 
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
-#, fuzzy
 msgid  "Form"
 msgstr "~Форма"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Таблиця"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.2.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Запити"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.3.String.Text
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/form/fmstring.src#RID_STR_STDFORMNAME.String.Text
-#, fuzzy
 msgid  "Form"
 msgstr "~Форма"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden Control"
 msgstr "Прихований елемент керування"
 
 #: source/form/fmstring.src#RID_STR_CONTROL.String.Text
-#, fuzzy
 msgid  "Control"
 msgstr "Елемент керування"
 
 #: source/form/fmstring.src#RID_STR_REC_TEXT.String.Text
-#, fuzzy
 msgid  "Record"
 msgstr "Запис"
 
 #: source/form/fmstring.src#RID_STR_REC_FROM_TEXT.String.Text
-#, fuzzy
 msgid  "of"
 msgstr "з"
 
 #: source/form/fmstring.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "Вибір поля:"
 
 #: source/form/fmstring.src#RID_STR_WRITEERROR.String.Text
-#, fuzzy
 msgid  "Error writing data to database"
 msgstr "Помилка запису даних до бази даних"
 
 #: source/form/fmstring.src#RID_STR_SYNTAXERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in query expression"
 msgstr "Синтаксична помилка у виразі запиту"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORD.String.Text
-#, fuzzy
 msgid  "You intend to delete 1 record."
 msgstr "Ви пробуєте видалити 1 запис."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORDS.String.Text
-#, fuzzy
 msgid  "# records will be deleted."
 msgstr "# записів буде видалено."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Якщо ви натиснете 'Так', то не зможете скасувати цю операцію!\nПродовжити попри все?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
-#, fuzzy
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
 msgstr "Виберіть елемент списку або введіть текст, що відповідає одному з перелічених елементів."
 
 #: source/form/fmstring.src#RID_STR_GROUPBOX.String.Text
-#, fuzzy
 msgid  "Frame element"
 msgstr "Елемент рамки"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "Навігація"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATIONBAR.String.Text
-#, fuzzy
 msgid  "Navigation bar"
 msgstr "Пенал навігації"
 
 #: source/form/fmstring.src#RID_STR_COLUMN.String.Text
-#, fuzzy
 msgid  "Col"
 msgstr "Стовпчик"
 
 #: source/form/fmstring.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Set property '#'"
 msgstr "Встановити властивість '#'"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert in container"
 msgstr "Вставити у контейнер"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE.String.Text
-#, fuzzy
 msgid  "Delete #"
 msgstr "Видалити #"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE_MULTIPLE.String.Text
-#, fuzzy
 msgid  "Delete # objects"
 msgstr "Видалити # об'єктів"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace a container element"
 msgstr "Замінити один елемент контейнера"
 
 #: source/form/fmstring.src#RID_STR_UNDO_DELETE_LOGICAL.String.Text
-#, fuzzy
 msgid  "Delete structure"
 msgstr "Видалити структуру"
 
 #: source/form/fmstring.src#RID_STR_UNDO_MODEL_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace Control"
 msgstr "Замінити елементи керування"
 
 #: source/form/fmstring.src#RID_STR_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Дата"
 
 #: source/form/fmstring.src#RID_STR_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "Час"
 
@@ -5392,147 +5240,118 @@ msgid  "Push Button"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
-#, fuzzy
 msgid  "Option Button"
 msgstr "Перемикач"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "Поле з відміткою"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "Позначка"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
-#, fuzzy
 msgid  "Group Box"
 msgstr "Група"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_EDIT.String.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "Текстове поле"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "Поле форматованого вводу"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_LISTBOX.String.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "Список"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "Поле зі списком"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
-#, fuzzy
 msgid  "Image Button"
 msgstr "Графічна кнопка"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "Графічний елемент керування"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
-#, fuzzy
 msgid  "File Selection"
 msgstr "Вибір файлу"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "Поле дати"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "Поле часу"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "Числове поле"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "Поле валюти"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "Поле з маскою вводу"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DBGRID.String.Text
-#, fuzzy
 msgid  "Table Control "
 msgstr "Елемент керування Таблиця"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SCROLLBAR.String.Text
-#, fuzzy
 msgid  "Scrollbar"
 msgstr "Смуга прокрутки"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SPINBUTTON.String.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "Лічильник"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NAVBAR.String.Text
-#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Панель навігації"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "Групове виділення"
 
 #: source/form/fmstring.src#RID_STR_NODATACONTROLS.String.Text
-#, fuzzy
 msgid  "No data-related controls in the current form!"
 msgstr "У поточній формі не існує елементів керування, що прив'язані до поля таблиці!"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_DATE.String.Text
-#, fuzzy
 msgid  " (Date)"
 msgstr " (Дата)"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_TIME.String.Text
-#, fuzzy
 msgid  " (Time)"
 msgstr " (Час)"
 
 #: source/form/fmstring.src#RID_STR_FILTER_NAVIGATOR.String.Text
-#, fuzzy
 msgid  "Filter navigator"
 msgstr "Навігатор фільтрів"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_FOR.String.Text
-#, fuzzy
 msgid  "Filter for"
 msgstr "Фільтрувати після"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_OR.String.Text
-#, fuzzy
 msgid  "Or"
 msgstr "Або"
 
 #: source/form/fmstring.src#RID_STR_NOCONTROLS_FOR_EXTERNALDISPLAY.String.Text
-#, fuzzy
 msgid  "Valid bound controls which can be used in the table view do not exist in the current form."
 msgstr "У поточній формі не існує правильно пов'язаних елементів керування, які могли б використовуватись у таблиці."
 
 #: source/form/fmstring.src#RID_STR_AUTOFIELD.String.Text
-#, fuzzy
 msgid  "<AutoField>"
 msgstr "<Автополе>"
 
@@ -5541,72 +5360,58 @@ msgid  "The content of the current form has been modified.\\nDo you want to save
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
-#, fuzzy
 msgid  "LIKE"
 msgstr "LIKE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.2.String.Text
-#, fuzzy
 msgid  "NOT"
 msgstr "NOT"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.3.String.Text
-#, fuzzy
 msgid  "EMPTY"
 msgstr "EMPTY"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.4.String.Text
-#, fuzzy
 msgid  "TRUE"
 msgstr "TRUE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.5.String.Text
-#, fuzzy
 msgid  "FALSE"
 msgstr "FALSE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.6.String.Text
-#, fuzzy
 msgid  "IS"
 msgstr "IS"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.7.String.Text
-#, fuzzy
 msgid  "BETWEEN"
 msgstr "BETWEEN"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.8.String.Text
-#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.9.String.Text
-#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.10.String.Text
-#, fuzzy
 msgid  "Average"
 msgstr "Середнє значення"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.11.String.Text
-#, fuzzy
 msgid  "Count"
 msgstr "Кількість"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.12.String.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "Максимум"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.13.String.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "Мінімум"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.14.String.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "Сума"
 
@@ -5651,77 +5456,62 @@ msgid  "Intersection"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Синтаксична помилка у виразі SQL"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_VALUE_NO_LIKE.String.Text
-#, fuzzy
 msgid  "The value #1 cannot be used with LIKE."
 msgstr "Значення #1 не може бути використано з LIKE."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_FIELD_NO_LIKE.String.Text
-#, fuzzy
 msgid  "LIKE cannot be used with this field."
 msgstr "Не можна використовувати LIKE у цьому полі."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ACCESS_DAT_NO_VALID.String.Text
-#, fuzzy
 msgid  "The value entered is not a valid date. Please enter a date in a valid format, for example, MM/DD/YY."
 msgstr "Поле містить помилковий формат дати. Введіть дату у форматі ММ/ДД/РР."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_INT_NO_VALID.String.Text
-#, fuzzy
 msgid  "The field cannot be compared with an integer."
 msgstr "Порівняти поле з цілим числом неможливо."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE.String.Text
-#, fuzzy
 msgid  "The database does not contain a table named \"#\"."
 msgstr "База даних не містить таблицю \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "The database does contain neither a table nor a query named \"#\"."
 msgstr "База даних не містить таблицю чи запит \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_EXISTS.String.Text
-#, fuzzy
 msgid  "The database already contains a table or view with name \"#\"."
 msgstr "База даних вже містить таблицю чи представлення \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_QUERY_EXISTS.String.Text
-#, fuzzy
 msgid  "The database already contains a query with name \"#\"."
 msgstr "База даних вже містить запит \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_COLUMN.String.Text
-#, fuzzy
 msgid  "The column \"#1\" is unknown in the table \"#2\"."
 msgstr "Невідомий стовпчик \"#1\" у таблиці \"#2\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_REAL_NO_VALID.String.Text
-#, fuzzy
 msgid  "The field cannot be compared with a floating point number."
 msgstr "Порівняти поле з числом з плаваючою комою не можна."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_CRIT_NO_COMPARE.String.Text
-#, fuzzy
 msgid  "The entered criterion cannot be compared with this field."
 msgstr "Порівняти вказаний критерій з цим полем не можна."
 
 #: source/form/fmstring.src#RID_STR_DATANAVIGATOR.String.Text
-#, fuzzy
 msgid  "Data Navigator"
 msgstr "Навігатор даних"
 
 #: source/form/fmstring.src#RID_STR_READONLY_VIEW.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr " (лише для читання)"
 
 #: source/form/fmstring.src#RID_STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Файл вже існує. Перезаписати?"
 
@@ -5730,332 +5520,266 @@ msgid  "#object# label"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Створити"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_FORM.MenuItem.Text
-#, fuzzy
 msgid  "Form"
 msgstr "~Форма"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_HIDDEN.MenuItem.Text
-#, fuzzy
 msgid  "Hidden Control"
 msgstr "Прихований елемент керування"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_CHANGECONTROLTYPE.MenuItem.Text
-#, fuzzy
 msgid  "Replace with"
 msgstr "Замінити на"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "В~идалити"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_TAB_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "Tab Order..."
 msgstr "Порядок активування..."
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "Перей~менувати"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies"
 msgstr "В~ластивості"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_OPEN_READONLY.MenuItem.Text
-#, fuzzy
 msgid  "Open in Design Mode"
 msgstr "Відкрити у режимі проектування"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_AUTOCONTROLFOCUS.MenuItem.Text
-#, fuzzy
 msgid  "Automatic Control Focus"
 msgstr "Автоматичне керування фокусом"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Text Box"
 msgstr "~Текстове поле"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_BUTTON.MenuItem.Text
-#, fuzzy
 msgid  "~Button"
 msgstr "~Кнопка"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FIXEDTEXT.MenuItem.Text
-#, fuzzy
 msgid  "La~bel field"
 msgstr "~Позначка"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_GROUPBOX.MenuItem.Text
-#, fuzzy
 msgid  "G~roup Box"
 msgstr "~Група"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "L~ist Box"
 msgstr "~Список"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "~Check Box"
 msgstr "~Поле з відміткою"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_RADIOBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "~Radio Button"
 msgstr "~Кнопка-перемикач"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Bo~x"
 msgstr "Поле зі с~писком"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGEBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "I~mage Button"
 msgstr "Г~рафічна кнопка"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FILECONTROL.MenuItem.Text
-#, fuzzy
 msgid  "~File Selection"
 msgstr "~Вибір файлу"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_DATE.MenuItem.Text
-#, fuzzy
 msgid  "~Date Field"
 msgstr "Поле ~дати"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Tim~e Field"
 msgstr "Поле ~часу"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NUMERIC.MenuItem.Text
-#, fuzzy
 msgid  "~Numerical Field"
 msgstr "Ч~ислове поле"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CURRENCY.MenuItem.Text
-#, fuzzy
 msgid  "C~urrency Field"
 msgstr "~Грошове поле"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_PATTERN.MenuItem.Text
-#, fuzzy
 msgid  "~Pattern Field"
 msgstr "Поле з ~маскою вводу"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGECONTROL.MenuItem.Text
-#, fuzzy
 msgid  "Ima~ge Control"
 msgstr "Гр~афічний елемент керування"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FORMATTED.MenuItem.Text
-#, fuzzy
 msgid  "Fo~rmatted Field"
 msgstr "Поле з ~форматуванням"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SCROLLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Scroll bar"
 msgstr "Смуга прокрутки"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SPINBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "Лічильник"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NAVIGATIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Панель навігації"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.GB_PATH.GroupBox.Text
-#, fuzzy
 msgid  "Path"
 msgstr "Шлях"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.HelpButton.Text
-#, fuzzy
 msgid  "Select form"
 msgstr "Вибір форми"
 
 #: source/form/fmexpl.src#RID_SVX_FMEXPLORER.DockingWindow.Text
-#, fuzzy
 msgid  "Form Navigator"
 msgstr "Навігатор форми"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "~Стиль"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_ALIGNMENT.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "~Вирівнювання"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_SPACING.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Міжрядковий інтервал"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Символ"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Шрифт"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Ефекти шрифту"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Розташування"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.TabDialog.Text
-#, fuzzy
 msgid  "Paragraph"
 msgstr "Абзац"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Відступи та інтервал"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Вирівнювання"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "Азіатські правила набору"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_TABULATOR.PageItem.Text
-#, fuzzy
 msgid  "Tabs"
 msgstr "Табуляція"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "В~идалити"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Редагування"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NULL.MenuItem.Text
-#, fuzzy
 msgid  "~Is Null"
 msgstr "~Порожній"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NOT_NULL.MenuItem.Text
-#, fuzzy
 msgid  "I~s not Null"
 msgstr "~Не порожній"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "Додати елемент"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "Додати елемент"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "Додати атрибут"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Редагування"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Видалити"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
-#, fuzzy
 msgid  "~Models"
 msgstr "~Моделі"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~Додати..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Редагування..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "В~идалити"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "Екземпляр"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
-#, fuzzy
 msgid  "Submissions"
 msgstr "Представлення"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
-#, fuzzy
 msgid  "Bindings"
 msgstr "Прив'язки"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
-#, fuzzy
 msgid  "~Instances"
 msgstr "~Екземпляри"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~Додати..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Редагування..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "В~идалити"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Details"
 msgstr "Показати п~одробиці"
 
@@ -6072,7 +5796,6 @@ msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "Дійсно прибрати атрибут '$ATTRIBUTENAME'?"
 
@@ -6089,713 +5812,574 @@ msgid  "This instance is linked with the form.\\n\\nThe changes you make to this
 msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
 msgstr "Назва '%1' недійсна в XML. Виберіть іншу назву."
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLPREFIX.ErrorBox.Message
-#, fuzzy
 msgid  "The prefix '%1' is not valid in XML. Please enter a different prefix."
 msgstr "Префікс '%1' недійсний у XML. Виберіть іншу назву."
 
 #: source/form/datanavi.src#RID_ERR_DOUBLE_MODELNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' already exists. Please enter a new name."
 msgstr "Назва '%1' вже існує. Виберіть іншу назву."
 
 #: source/form/datanavi.src#RID_ERR_EMPTY_SUBMISSIONNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The submission must have a name."
 msgstr "Представлення повинно мати назву."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
-#, fuzzy
 msgid  "Item"
 msgstr "Елемент"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~Назва"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default Value"
 msgstr "~Типове значення"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_SETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Параметри"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
-#, fuzzy
 msgid  "~Data Type"
 msgstr "Т~ип даних"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "~Required"
 msgstr "~Обов'язково"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Умова"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_RELEVANT.CheckBox.Text
-#, fuzzy
 msgid  "R~elevant"
 msgstr "~Відповідні"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Умова"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
-#, fuzzy
 msgid  "~Constraint"
 msgstr "~Обмеження"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Умова"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "Read-~only"
 msgstr "~Лише для читання"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Умова"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
-#, fuzzy
 msgid  "Calc~ulate"
 msgstr "Об~числити"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Умова"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
-#, fuzzy
 msgid  "Element"
 msgstr "Елемент"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Attribute"
 msgstr "Атрибут"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_BINDING.String.Text
-#, fuzzy
 msgid  "Binding"
 msgstr "Прив'язка"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDTEXT_BINDING.String.Text
-#, fuzzy
 msgid  "Binding expression"
 msgstr "Вираз зв'язку"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "Додати елемент"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "Додати елемент"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "Додати атрибут"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Редагування"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Видалити"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
-#, fuzzy
 msgid  "Add Condition"
 msgstr "Додати умову"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
-#, fuzzy
 msgid  "~Condition"
 msgstr "~Умова"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
-#, fuzzy
 msgid  "~Result"
 msgstr "~Результат"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.PB_EDIT_NAMESPACES.PushButton.Text
-#, fuzzy
 msgid  "~Edit Namespaces..."
 msgstr "~Редагувати простір назв"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.ModalDialog.Text
-#, fuzzy
 msgid  "Namespaces for Forms"
 msgstr "Простір назв для форм"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.FT_NAMESPACES.FixedText.Text
-#, fuzzy
 msgid  "~Namespaces"
 msgstr "~Простір назв"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~Додати..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Редагування..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_DELETE_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "В~идалити"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_PREFIX.String.Text
-#, fuzzy
 msgid  "Prefix"
 msgstr "Префікс"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.ModalDialog.Text
-#, fuzzy
 msgid  "Add Namespace"
 msgstr "Додати простір назв"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_PREFIX.FixedText.Text
-#, fuzzy
 msgid  "~Prefix"
 msgstr "~Префікс"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Namespace"
 msgstr "Редагувати простір назв"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
-#, fuzzy
 msgid  "Add Submission"
 msgstr "Нове представлення"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
-#, fuzzy
 msgid  "Submission"
 msgstr "Представлення"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~Назва"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_ACTION.FixedText.Text
-#, fuzzy
 msgid  "~Action"
 msgstr "Д~ія"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_METHOD.FixedText.Text
-#, fuzzy
 msgid  "~Method"
 msgstr "~Метод"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REF.FixedText.Text
-#, fuzzy
 msgid  "Binding e~xpression"
 msgstr "Вираз зв'~язування"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.PB_SUBMIT_REF.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_BIND.FixedText.Text
-#, fuzzy
 msgid  "~Binding"
 msgstr "~Прив'язка"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "~Замінити"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_POST.String.Text
-#, fuzzy
 msgid  "Post"
 msgstr "Post"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_PUT.String.Text
-#, fuzzy
 msgid  "Put"
 msgstr "Put"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_GET.String.Text
-#, fuzzy
 msgid  "Get"
 msgstr "Get"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_NONE.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Нічого"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_INST.String.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "Екземпляр"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_DOC.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "Документ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.ModalDialog.Text
-#, fuzzy
 msgid  "Add Model"
 msgstr "Додати модель"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FL_INSTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Model"
 msgstr "Модель"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FT_INST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~Назва"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.CB_MODIFIES_DOCUMENT.CheckBox.Text
-#, fuzzy
 msgid  "Model data updates change document's modification status"
 msgstr "Оновлення даних моделі змінює статус модифікації документу"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Model"
 msgstr "Редагувати модель"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.ModalDialog.Text
-#, fuzzy
 msgid  "Add Instance"
 msgstr "Add Instance"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FL_INSTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "Екземпляр"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~Назва"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_URL.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.CB_INST_LINKINST.CheckBox.Text
-#, fuzzy
 msgid  "~Link instance"
 msgstr "~Екземпляр посилання"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Instance"
 msgstr "Редагувати екземпляр"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_PARENT.String.Text
-#, fuzzy
 msgid  "Submission: "
 msgstr "Представлення: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ID.String.Text
-#, fuzzy
 msgid  "ID: "
 msgstr "ID: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_BIND.String.Text
-#, fuzzy
 msgid  "Binding: "
 msgstr "Прив'язка: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REF.String.Text
-#, fuzzy
 msgid  "Reference: "
 msgstr "Посилання: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ACTION.String.Text
-#, fuzzy
 msgid  "Action: "
 msgstr "Дія: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_METHOD.String.Text
-#, fuzzy
 msgid  "Method: "
 msgstr "Метод: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace: "
 msgstr "Замінити: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ELEMENT.String.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "Додати елемент"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ELEMENT.String.Text
-#, fuzzy
 msgid  "Edit Element"
 msgstr "Редагувати елемент"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ELEMENT.String.Text
-#, fuzzy
 msgid  "Delete Element"
 msgstr "Видалити елемент"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "Додати атрибут"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Edit Attribute"
 msgstr "Редагувати атрибут"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Delete Attribute"
 msgstr "Видалити атрибут"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_BINDING.String.Text
-#, fuzzy
 msgid  "Add Binding"
 msgstr "Додати прив'язку"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_BINDING.String.Text
-#, fuzzy
 msgid  "Edit Binding"
 msgstr "Редагувати прив'язку"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_BINDING.String.Text
-#, fuzzy
 msgid  "Delete Binding"
 msgstr "Видалити прив'язку"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Add Submission"
 msgstr "Нове представлення"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Edit Submission"
 msgstr "Редагувати представлення"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Delete Submission"
 msgstr "Видалити представлення"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_LINKWARN_BUTTON.String.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Редагування"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
-#, fuzzy
 msgid  "Gallery"
 msgstr "Галерея"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
-#, fuzzy
 msgid  "Update"
 msgstr "Оновити"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
-#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "Неможливо відкрити файл"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
-#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "Неправильна назва теми!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Ви дійсно хочете\nвидалити цей об'єкт?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Ви дійсно хочете\nвидалити цю тему?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
-#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "Wave - файл звуку"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
-#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "Файл формату обміну аудіо (AIFF)"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
-#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU - звуковий файл"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
-#, fuzzy
 msgid  "Graphics filter"
 msgstr "Графічний фільтр"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
-#, fuzzy
 msgid  "Length:"
 msgstr "Довжина:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "Розмір:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
-#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "Видалити зв'язаний файл?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Неможливо відкрити файл.\nВвести інший шлях пошуку?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
-#, fuzzy
 msgid  "New Theme"
 msgstr "Нова тема"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "~Організатор..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Ця назва теми вже існує.\nВиберіть іншу назву."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
-#, fuzzy
 msgid  "I~mport..."
 msgstr "~Імпорт..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
-#, fuzzy
 msgid  "New Theme..."
 msgstr "Створити тему..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
-#, fuzzy
 msgid  "Assign ID"
 msgstr "Призначити ID"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Заголовок"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
-#, fuzzy
 msgid  "Path"
 msgstr "Шлях"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
-#, fuzzy
 msgid  "Icon View"
 msgstr "Вигляд значків"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
-#, fuzzy
 msgid  "Detailed View"
 msgstr "Детальний вигляд"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "Оновити"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "В~идалити"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "Перей~менувати"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
-#, fuzzy
 msgid  "Assign ~ID"
 msgstr "Призначити ~ID"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "В~ластивості..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "Вст~авити"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~Копіювати"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Link"
 msgstr "Посилання"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Bac~kground"
 msgstr "~Тло"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "~Попередній перегляд"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~Заголовок"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "В~идалити"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~Копіювати"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "Вст~авити"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "Тривимірні об'єкти"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
-#, fuzzy
 msgid  "Animations"
 msgstr "Анімація"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
-#, fuzzy
 msgid  "Bullets"
 msgstr "Маркери"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
-#, fuzzy
 msgid  "Office"
 msgstr "Офіс"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
-#, fuzzy
 msgid  "Flags"
 msgstr "Прапорці"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLOWCHARTS.String.Text
-#, fuzzy
 msgid  "Flow Charts"
 msgstr "Блок-схеми"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
-#, fuzzy
 msgid  "Emoticons"
 msgstr "Значки емоцій"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
-#, fuzzy
 msgid  "Pictures"
 msgstr "Зображення"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
-#, fuzzy
 msgid  "Backgrounds"
 msgstr "Тло"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
-#, fuzzy
 msgid  "Homepage"
 msgstr "Домашня сторінка"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
-#, fuzzy
 msgid  "Interaction"
 msgstr "Взаємодія"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
-#, fuzzy
 msgid  "Maps"
 msgstr "Карти"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
-#, fuzzy
 msgid  "People"
 msgstr "Люди"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
-#, fuzzy
 msgid  "Surfaces"
 msgstr "Поверхні"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
-#, fuzzy
 msgid  "Rulers"
 msgstr "Лінійки розмітки"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
-#, fuzzy
 msgid  "Computers"
 msgstr "Комп'ютери"
 
@@ -6820,62 +6404,50 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
-#, fuzzy
 msgid  "Sounds"
 msgstr "Звуки"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
-#, fuzzy
 msgid  "Symbols"
 msgstr "Символи"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
-#, fuzzy
 msgid  "My Theme"
 msgstr "Моя тема"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
-#, fuzzy
 msgid  "Arrows"
 msgstr "Стрілки"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
-#, fuzzy
 msgid  "Balloons"
 msgstr "Підказки"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
-#, fuzzy
 msgid  "Keyboard"
 msgstr "Клавіатура"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "Час"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "Презентація"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Календар"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "Навігація"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
-#, fuzzy
 msgid  "Communication"
 msgstr "Зв'язок"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
-#, fuzzy
 msgid  "Finances"
 msgstr "Фінанси"
 
@@ -6884,52 +6456,42 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
-#, fuzzy
 msgid  "Climate"
 msgstr "Клімат"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
-#, fuzzy
 msgid  "School & University"
 msgstr "Школа та університет"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
-#, fuzzy
 msgid  "Problem Solving"
 msgstr "Розв'язання проблем"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SCREENBEANS.String.Text
-#, fuzzy
 msgid  "Screen Beans"
 msgstr "Заставки"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR) при виконанні словника."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) при перевірці правопису."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR) при розставлянні переносів."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) при створенні словника."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) при встановленні атрибуту тла."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) при завантаженні графіки."
 
@@ -6942,87 +6504,70 @@ msgid  "$(ARG1) is not supported by the spellcheck function or is not presently 
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "Перевірка орфографії недоступна."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "Розставляння переносів недоступне."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "Неможливо прочитати словник користувача $(ARG1)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "Не вдається створити словник користувача $(ARG1)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "Неможливо знайти графічні об'єкти $(ARG1)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "Не вдається завантажити не зв'язані графічні об'єкти."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "Не встановлено мову для виділеного поняття."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Не завантажений шар форми, оскільки не вдається створити екземпляр служби (stardiv.uno.io.*)"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Не записаний шар форми, оскільки не вдається створити екземпляр служби (stardiv.uno.io.*)"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "Помилка при читанні елементів керування форми. Не завантажений шар форми."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "Помилка при записі елементів керування форми. Не завантажений шар форми."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
-#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "Помилка при читанні маркеру. Не вдається завантажити всі маркери."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "Всі зміни до коду Basic втрачені. Натомість буде збережено макрокод VBA."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "Первинний код VBA Basic, що міститься в документі, не буде збережений."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "Неправильний пароль. Документ неможливо відкрити."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "Метод шифрування, що використовується у цьому документі, не підтримується. Підтримується лише метод шифрування, що сумісний з Microsoft Office 97/2000."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "Відкриття презентацій Microsoft PowerPoint, що захищені паролем, не підтримується."
 
@@ -7031,107 +6576,86 @@ msgid  "Password protection is not supported when documents are saved in a Micro
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
-#, fuzzy
 msgid  "Scale"
 msgstr "Масштаб"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
-#, fuzzy
 msgid  "Brush"
 msgstr "Пензель"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_TABSTOP.ItemList.item
-#, fuzzy
 msgid  "Tab stops"
 msgstr "Табуляція"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character"
 msgstr "Символ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONT.ItemList.item
-#, fuzzy
 msgid  "Font"
 msgstr "Шрифт"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Font posture"
 msgstr "Положення шрифту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Font weight"
 msgstr "Жирність"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SHADOWED.ItemList.item
-#, fuzzy
 msgid  "Shadowed"
 msgstr "Затінення"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WORDLINEMODE.ItemList.item
-#, fuzzy
 msgid  "Individual words"
 msgstr "Лише слова"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CONTOUR.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "Контур"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_STRIKEOUT.ItemList.item
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "Закреслений"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_UNDERLINE.ItemList.item
-#, fuzzy
 msgid  "Underline"
 msgstr "Підкреслення"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Font size"
 msgstr "Розмір шрифту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_PROPSIZE.ItemList.item
-#, fuzzy
 msgid  "Rel. Font size"
 msgstr "Масштаб шрифту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
-#, fuzzy
 msgid  "Font color"
 msgstr "Колір шрифту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
-#, fuzzy
 msgid  "Kerning"
 msgstr "Кернінг"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CASEMAP.ItemList.item
-#, fuzzy
 msgid  "Effects"
 msgstr "Ефекти"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language"
 msgstr "Мова"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ESCAPEMENT.ItemList.item
-#, fuzzy
 msgid  "Position"
 msgstr "Положення"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "Блимання"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CHARSETCOLOR.ItemList.item
-#, fuzzy
 msgid  "Character set color"
 msgstr "Колір набору символів"
 
@@ -7140,512 +6664,410 @@ msgid  "Overline"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA.ItemList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "Абзац"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ADJUST.ItemList.item
-#, fuzzy
 msgid  "Alignment"
 msgstr "Вирівнювання"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LINESPACE.ItemList.item
-#, fuzzy
 msgid  "Line spacing"
 msgstr "Крок рядків"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_PAGEBREAK.ItemList.item
-#, fuzzy
 msgid  "Page Break"
 msgstr "Розрив сторінки"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HYPHENZONE.ItemList.item
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "Розстановка переносів"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SPLIT.ItemList.item
-#, fuzzy
 msgid  "Do not split paragraph"
 msgstr "Не розривати абзац"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ORPHANS.ItemList.item
-#, fuzzy
 msgid  "Orphans"
 msgstr "Початкові висячі рядки"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_WIDOWS.ItemList.item
-#, fuzzy
 msgid  "Widows"
 msgstr "Кінцеві висячі рядки"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ULSPACE.ItemList.item
-#, fuzzy
 msgid  "Spacing"
 msgstr "Інтервал"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LRSPACE.ItemList.item
-#, fuzzy
 msgid  "Indent"
 msgstr "Відступ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_LRSPACE.ItemList.item
-#, fuzzy
 msgid  "Indent"
 msgstr "Відступ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ULSPACE.ItemList.item
-#, fuzzy
 msgid  "Spacing"
 msgstr "Інтервал"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PAGE.ItemList.item
-#, fuzzy
 msgid  "Page"
 msgstr "Сторінка"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
-#, fuzzy
 msgid  "Page Style"
 msgstr "Стиль сторінки"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
-#, fuzzy
 msgid  "Keep with next paragraph"
 msgstr "Зберігати з наступним абзацом"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_FLASH.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "Блимання"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_REGISTER.ItemList.item
-#, fuzzy
 msgid  "Register-true"
 msgstr "Приведення"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character background"
 msgstr "Тло символу"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
-#, fuzzy
 msgid  "Asian font"
 msgstr "Азіатський шрифт"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Size of Asian font"
 msgstr "Розмір азіатського шрифту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language of Asian font"
 msgstr "Мова азіатського тексту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Posture of Asian font"
 msgstr "нахил шрифту для азіатського тексту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Weight of Asian font"
 msgstr "Насиченість шрифту азіатського тексту"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONT.ItemList.item
-#, fuzzy
 msgid  "CTL"
 msgstr "Комплексний скрипт"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Size of complex scripts"
 msgstr "Розмір комплексних скриптів"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language of complex scripts"
 msgstr "Мова комплексних скриптів"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Posture of complex scripts"
 msgstr "Положення комплексних скриптів"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Weight of complex scripts"
 msgstr "Ширина комплексних скриптів"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_TWO_LINES.ItemList.item
-#, fuzzy
 msgid  "Double-lined"
 msgstr "Дворядковий"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_EMPHASISMARK.ItemList.item
-#, fuzzy
 msgid  "Emphasis mark"
 msgstr "Позначка видалення"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SCRIPTSPACE.ItemList.item
-#, fuzzy
 msgid  "Text spacing"
 msgstr "Текстовий інтервал"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HANGPUNCTUATION.ItemList.item
-#, fuzzy
 msgid  "Hanging punctuation"
 msgstr "Висяча пунктуація"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_FORBIDDEN_RULES.ItemList.item
-#, fuzzy
 msgid  "Forbidden characters"
 msgstr "Заборонені символи"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ROTATED.ItemList.item
-#, fuzzy
 msgid  "Rotation"
 msgstr "Обертання"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SCALEWIDTH.ItemList.item
-#, fuzzy
 msgid  "Scale"
 msgstr "Масштаб"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_RELIEF.ItemList.item
-#, fuzzy
 msgid  "Relief"
 msgstr "Рельєф"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_PARA_VERTALIGN.ItemList.item
-#, fuzzy
 msgid  "Vertical text alignment"
 msgstr "Вирівнювання тексту по вертикалі"
 
 #: source/items/svxitems.src#RID_SVXITEMS_EXTRAS_CHARCOLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "Колір шрифту"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
-#, fuzzy
 msgid  "Search"
 msgstr "Знайти"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
-#, fuzzy
 msgid  "Find All"
 msgstr "Знайти всі"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "Замінити"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
-#, fuzzy
 msgid  "Replace all"
 msgstr "Замінити всі"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
-#, fuzzy
 msgid  "Character Style"
 msgstr "Стиль символу"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
-#, fuzzy
 msgid  "Paragraph Style"
 msgstr "Стиль абзацу"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
-#, fuzzy
 msgid  "Frame Style"
 msgstr "Стиль кадру"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PAGE.String.Text
-#, fuzzy
 msgid  "Page Style"
 msgstr "Стиль сторінки"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "Формула"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "Значення"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "Примітка"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Немає"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
-#, fuzzy
 msgid  "Solid"
 msgstr "Суцільний"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Горизонтально"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "Вертикально"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "В клітинку"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DIAGCROSS.String.Text
-#, fuzzy
 msgid  "Diamond"
 msgstr "Діагональна клітинка"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
-#, fuzzy
 msgid  "Diagonal up"
 msgstr "Діагонально вгору"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
-#, fuzzy
 msgid  "Diagonal down"
 msgstr "Діагонально вниз"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
-#, fuzzy
 msgid  "Image"
 msgstr "Зображення"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
-#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "Горизонтальне вирівнювання (стандарт)"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_LEFT.String.Text
-#, fuzzy
 msgid  "Align left"
 msgstr "Вирівняти зліва"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
-#, fuzzy
 msgid  "Centered horizontally"
 msgstr "По горизонталі у центрі"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_RIGHT.String.Text
-#, fuzzy
 msgid  "Align right"
 msgstr "Вирівнювання праворуч"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_BLOCK.String.Text
-#, fuzzy
 msgid  "Justify"
 msgstr "Вирівнювання ліворуч"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
-#, fuzzy
 msgid  "Repeat alignment"
 msgstr "Повторити вирівнювання"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
-#, fuzzy
 msgid  "Vertical alignment default"
 msgstr "Вертикальне вирівнювання (стандарт)"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
-#, fuzzy
 msgid  "Align to top"
 msgstr "Вирівнювання вгору"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
-#, fuzzy
 msgid  "Centered vertically"
 msgstr "Вертикально у центрі"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
-#, fuzzy
 msgid  "Align to bottom"
 msgstr "Вирівнювання вниз"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
-#, fuzzy
 msgid  "Default orientation"
 msgstr "Стандартний напрямок"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
-#, fuzzy
 msgid  "From top to bottom"
 msgstr "Зверху вниз"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
-#, fuzzy
 msgid  "Bottom to Top"
 msgstr "Знизу вгору"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STACKED.String.Text
-#, fuzzy
 msgid  "Stacked"
 msgstr "Згори"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Таблиця"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
-#, fuzzy
 msgid  "Not Table"
 msgstr "Не таблиця"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
-#, fuzzy
 msgid  "Spacing enabled"
 msgstr "Інтервал дозволений"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
-#, fuzzy
 msgid  "Spacing disabled"
 msgstr "Інтервал заблокований"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
-#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "Не допускається менший інтервал, ніж передбачено"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_FALSE.String.Text
-#, fuzzy
 msgid  "Allowed to fall short of spacing interval"
 msgstr "Допускається менший інтервал, ніж передбачено"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
-#, fuzzy
 msgid  "Left margin: "
 msgstr "Ліве поле:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
-#, fuzzy
 msgid  "Top margin: "
 msgstr "Верхнє поле:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
-#, fuzzy
 msgid  "Right margin: "
 msgstr "Праве поле:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
-#, fuzzy
 msgid  "Bottom margin: "
 msgstr "Нижнє поле:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
-#, fuzzy
 msgid  "Page Description: "
 msgstr "Опис сторінки:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
-#, fuzzy
 msgid  "Capitals"
 msgstr "Великі літери"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_LOWER.String.Text
-#, fuzzy
 msgid  "Lowercase"
 msgstr "Маленькі літери"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
-#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "Римське велике"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
-#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "Римське маленьке"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
-#, fuzzy
 msgid  "Arabic"
 msgstr "Арабська"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Немає"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
-#, fuzzy
 msgid  "Landscape"
 msgstr "Альбомна"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
-#, fuzzy
 msgid  "Portrait"
 msgstr "Книжна"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_LEFT.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "Ліворуч"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_RIGHT.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "Праворуч"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
-#, fuzzy
 msgid  "All"
 msgstr "Усі"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
-#, fuzzy
 msgid  "Mirrored"
 msgstr "Віддзеркалені"
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
-#, fuzzy
 msgid  "Author: "
 msgstr "Автор: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
-#, fuzzy
 msgid  "Date: "
 msgstr "Дата: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
-#, fuzzy
 msgid  "Text: "
 msgstr "Текст: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
-#, fuzzy
 msgid  "Background color: "
 msgstr "Колір тла: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
-#, fuzzy
 msgid  "Pattern color: "
 msgstr "Колір візерунку: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSH_CHAR.String.Text
-#, fuzzy
 msgid  "Character background"
 msgstr "Тло символу"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
-#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "Неможливо виконати дію. не встановлено відповідний програмний модуль %PRODUCTNAME."
 
@@ -8122,52 +7544,42 @@ msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactiv
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
-#, fuzzy
 msgid  "INSRT"
 msgstr "ВСТ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
-#, fuzzy
 msgid  "OVER"
 msgstr "ЗАМ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
-#, fuzzy
 msgid  "STD"
 msgstr "СТАНД"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
-#, fuzzy
 msgid  "EXT"
 msgstr "РОЗШ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
-#, fuzzy
 msgid  "ADD"
 msgstr "ДОДАТИ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
-#, fuzzy
 msgid  "BLK"
 msgstr "БЛК"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "Цифровий підпис: підпис підтверджено."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "Цифровий підпис: підпис підтверджено, але неможливо перевірити сертифікати."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "Цифровий підпис: підпис цього документу не відповідає його змісту. Не рекомендується довіряти цьому документу."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "Цифровий підпис: документ не підписаний."
 
@@ -8176,572 +7588,458 @@ msgid  "Digital Signature: The document signature and the certificate are OK, bu
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
-#, fuzzy
 msgid  "Optimal"
 msgstr "Оптимально"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
-#, fuzzy
 msgid  "Page Width"
 msgstr "По ширині сторінки"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Entire Page"
 msgstr "На всю сторінку"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
-#, fuzzy
 msgid  "Average"
 msgstr "Середнє значення"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
-#, fuzzy
 msgid  "CountA"
 msgstr "Кількість2"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
-#, fuzzy
 msgid  "Count"
 msgstr "Кількість"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "Максимум"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "Мінімум"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "Сума"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
-#, fuzzy
 msgid  "None"
 msgstr "Немає"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
-#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "Цифрові підписи..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
-#, fuzzy
 msgid  "draw object"
 msgstr "графічний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "графічні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
-#, fuzzy
 msgid  "group object"
 msgstr "груповий об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
-#, fuzzy
 msgid  "group objects"
 msgstr "групові об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "blank group object"
 msgstr "Порожній груповий об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "Blank group objects"
 msgstr "Порожні групові об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Лінія"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
-#, fuzzy
 msgid  "horizontal line"
 msgstr "Горизонтальна лінія"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
-#, fuzzy
 msgid  "Vertical line"
 msgstr "Вертикальна лінія"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
-#, fuzzy
 msgid  "diagonal line"
 msgstr "Діагональна лінія"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "Лінії"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
-#, fuzzy
 msgid  "Rectangle"
 msgstr "Прямокутник"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
-#, fuzzy
 msgid  "Rectangles"
 msgstr "Прямокутники"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
-#, fuzzy
 msgid  "Square"
 msgstr "Квадрат"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
-#, fuzzy
 msgid  "Squares"
 msgstr "Квадрати"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
-#, fuzzy
 msgid  "Parallelogram"
 msgstr "Паралелограм"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
-#, fuzzy
 msgid  "Parallelograms"
 msgstr "Паралелограми"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombus"
 msgstr "Ромб"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombuses"
 msgstr "Ромби"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "Закруглений прямокутник"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "Закруглені прямокутники"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
-#, fuzzy
 msgid  "rounded square"
 msgstr "Закруглений квадрат"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
-#, fuzzy
 msgid  "Rounded Squares"
 msgstr "Закруглені квадрати"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "Закруглений паралелограм"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "Закруглені паралелограми"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
-#, fuzzy
 msgid  "rounded rhombus"
 msgstr "Закруглений ромб"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
-#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "Закруглені ромби"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
-#, fuzzy
 msgid  "Circle"
 msgstr "Коло"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
-#, fuzzy
 msgid  "Circles"
 msgstr "Кола"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
-#, fuzzy
 msgid  "Circle sector"
 msgstr "Сектор кола"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
-#, fuzzy
 msgid  "Circle sectors"
 msgstr "Сектори кола"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "Дуга кола"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
-#, fuzzy
 msgid  "Arcs"
 msgstr "Дуги кола"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "Сегмент кола"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
-#, fuzzy
 msgid  "Circle segments"
 msgstr "Сегменти кола"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipse"
 msgstr "Еліпс"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipses"
 msgstr "Еліпси"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Сектор еліпсу"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "Сектор еліпсу"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arc"
 msgstr "Дуга еліпсу"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "Дуги еліпсу"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "Сегмент еліпсу"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "Сегменти еліпсу"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
-#, fuzzy
 msgid  "Polygon"
 msgstr "Багатокутник"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
-#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "Багатокутник з %2 кутами"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
-#, fuzzy
 msgid  "Polygons"
 msgstr "Багатокутники"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
-#, fuzzy
 msgid  "Polyline"
 msgstr "Ламана"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
-#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "Ламана з %2 кутами"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
-#, fuzzy
 msgid  "Polylines"
 msgstr "Ламані"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr "Крива Безьє"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr "Криві Безьє"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr "Крива Безьє"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr "Криві Безьє"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "Довільна лінія"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Довільні лінії"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "Довільна лінія"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Довільні лінії"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "Об'єкт кривих"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "Об'єкти кривих"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "Об'єкт кривих"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "Об'єкти кривих"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Spline"
 msgstr "Натуральний сплайн"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Splines"
 msgstr "Натуральні сплайни"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Spline"
 msgstr "Періодичний сплайн"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Splines"
 msgstr "Періодичні сплайни"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "Текстовий кадр"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "Текстовий кадр"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frame"
 msgstr "З'єднаний текстовий кадр"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frames"
 msgstr "З'єднані текстові кадри"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Узгоджений за розміром текстовий об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Узгоджені за розміром текстові об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Узгоджений за розміром текстовий об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Узгоджені за розміром текстові об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title text"
 msgstr "Текст заголовку"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title texts"
 msgstr "Тексти заголовків"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Text"
 msgstr "Текст структури"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Texts"
 msgstr "Тексти структур"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
-#, fuzzy
 msgid  "graphic"
 msgstr "графічний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
-#, fuzzy
 msgid  "graphics"
 msgstr "графічний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphic"
 msgstr "Зв'язаний графічний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphics"
 msgstr "Зв'язані графічні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic object"
 msgstr "Порожній графічний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "Порожні графічні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "Порожній зв'язаний графічний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "Порожні зв'язані графічні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafile"
 msgstr "Метафайл"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafiles"
 msgstr "Метафайли"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafile"
 msgstr "Зв'язаний метафайл"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "Зв'язані метафайли"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "Растрове зображення"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "Растрове зображення з прозорістю"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "Зв'язаний растрове зображення"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "Зв'язане растрове зображення з прозорістю"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmaps"
 msgstr "Растрові зображення"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "Растрові зображення з прозорістю"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "Зв'язані растрові зображення"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "Зв'язані растрові зображення з прозорістю"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "Фігура"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shapes"
 msgstr "Форми"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphic"
 msgstr "Графічний об'єкт Mac"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphics"
 msgstr "Графічні об'єкти Mac"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "Зв'язаний графічний об'єкт Mac"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "Зв'язні графічні об'єкти Mac"
 
@@ -8754,757 +8052,606 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
-#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "інтегрований об'єкт (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
-#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "Інтегровані об'єкти (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
-#, fuzzy
 msgid  "Control"
 msgstr "Елемент керування"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
-#, fuzzy
 msgid  "Controls"
 msgstr "Елемент керування"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
-#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "Зв'язаний інтегрований об'єкт (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
-#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "Зв'язані інтегровані об'єкти (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "Об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Кадр"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
-#, fuzzy
 msgid  "Frames"
 msgstr "Кадри"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Кадр"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "З'єднувачі об'єкту"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "З'єднувачі об'єкту"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
-#, fuzzy
 msgid  "Callout"
 msgstr "Виноска"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "Виноски"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
-#, fuzzy
 msgid  "Preview object"
 msgstr "Попередній перегляд об'єкту"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
-#, fuzzy
 msgid  "Preview objects"
 msgstr "Попередній перегляд об'єктів"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
-#, fuzzy
 msgid  "Dimension line"
 msgstr "Розмірна лінія"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
-#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "Розмірні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "графічні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
-#, fuzzy
 msgid  "No draw object"
 msgstr "Без графічного об'єкту"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
-#, fuzzy
 msgid  "and"
 msgstr "та"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
-#, fuzzy
 msgid  "draw object(s)"
 msgstr "графічні об'єкт(и)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
-#, fuzzy
 msgid  "3D cube"
 msgstr "Тривимірний куб"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
-#, fuzzy
 msgid  "3D cubes"
 msgstr "Тривимірні куби"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion object"
 msgstr "Об'єкт екструзії"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion objects"
 msgstr "Об'єкти екструзії"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
-#, fuzzy
 msgid  "3D text"
 msgstr "Тривимірний текст"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
-#, fuzzy
 msgid  "3D texts"
 msgstr "Тривимірні тексти"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
-#, fuzzy
 msgid  "rotation object"
 msgstr "Об'єкт обертання"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
-#, fuzzy
 msgid  "rotation objects"
 msgstr "Об'єкт обертання"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
-#, fuzzy
 msgid  "3D object"
 msgstr "Тривимірний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
-#, fuzzy
 msgid  "3D objects"
 msgstr "Тривимірні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
-#, fuzzy
 msgid  "3D polygons"
 msgstr "Тривимірні багатокутники"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
-#, fuzzy
 msgid  "3D scene"
 msgstr "Тривимірна сцена"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
-#, fuzzy
 msgid  "3D scenes"
 msgstr "Тривимірні сцени"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
-#, fuzzy
 msgid  "sphere"
 msgstr "Куля"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
-#, fuzzy
 msgid  "spheres"
 msgstr "Кулі"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
-#, fuzzy
 msgid  "with copy"
 msgstr "копіювати"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
-#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "Вказати положення та розмір для %1"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
-#, fuzzy
 msgid  "Delete %1"
 msgstr "Видалити %1"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
-#, fuzzy
 msgid  "Move %1 forward"
 msgstr "Перемістити %1 вперед"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 further back"
 msgstr "Перемістити %1 назад"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
-#, fuzzy
 msgid  "Move %1 to front"
 msgstr "Перемістити %1 на передній план"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 to back"
 msgstr "Перемістити %1 на задній план"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
-#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "Зворотній порядок %1"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "Перемістити %1"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "Змінити розмір %1"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "Обернути %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Віддзеркалити %1 горизонтально"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Віддзеркалити %1 вертикально"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Віддзеркалити %1 по діагоналі"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Довільне віддзеркалення %1"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Викривити %1 (нахил)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Розташувати %1 у колі"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Зігнути %1 у вигляді кола"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "Викривити %1"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
-#, fuzzy
 msgid  "Undo %1"
 msgstr "Вернути %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Змінити властивості Безьє для %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Змінити властивості Безьє для %1"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
-#, fuzzy
 msgid  "Close %1"
 msgstr "Закрити %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
-#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "Встановити вихід для %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
-#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "Встановити відносний атрибут для %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
-#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "Встановити початкову точку для %1"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
-#, fuzzy
 msgid  "Group %1"
 msgstr "Групувати %1"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
-#, fuzzy
 msgid  "Ungroup %1"
 msgstr "Розгрупувати %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
-#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "Застосувати атрибути до %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
-#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "Застосувати стилі до %1"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
-#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "Видалити стиль з %1"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "Перетворити %1 на багатокутник"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "Перетворити %1 на багатокутники"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
-#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "Перетворити %1 на криву"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
-#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "Перетворити %1 на криві"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
-#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "Перетворити %1 на контур"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
-#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "Перетворити %1 на контури"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
-#, fuzzy
 msgid  "Align %1"
 msgstr "Вирівняти %1"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
-#, fuzzy
 msgid  "Align %1 to top"
 msgstr "Вирівняти %1 до верхньої межі"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
-#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "Вирівняти %1 до нижньої межі"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
-#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "Центрувати %1 по горизонталі"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
-#, fuzzy
 msgid  "Align %1 to left"
 msgstr "Вирівняти %1 до лівої межі"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
-#, fuzzy
 msgid  "Align %1 to right"
 msgstr "Вирівняти %1 до правої межі"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
-#, fuzzy
 msgid  "Vertically center %1"
 msgstr "Центрувати %1 по вертикалі"
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
-#, fuzzy
 msgid  "Center %1"
 msgstr "Центрувати %1"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
-#, fuzzy
 msgid  "Transform %1"
 msgstr "Трансформувати %1"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr "Комбінувати %1"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
-#, fuzzy
 msgid  "Merge %1"
 msgstr "Об'єднати %1"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
-#, fuzzy
 msgid  "Subtract %1"
 msgstr "Відняти %1"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
-#, fuzzy
 msgid  "Intersect %1"
 msgstr "Перетнути %1"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
-#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "Розподілити вибрані об'єкти"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr "Об'єднати %1"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "Розбити %1"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "Розбити %1"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "Розбити %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Вставити об'єкт(и)"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
-#, fuzzy
 msgid  "Cut %1"
 msgstr "Вирізати %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
-#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "Вставка з буферу обміну"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
-#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "Перетягнути %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
-#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "Вставити режим перетягування"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
-#, fuzzy
 msgid  "Insert point to %1"
 msgstr "Вставити вказівник у %1"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
-#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "Вставити зв'язуючй елемент для %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
-#, fuzzy
 msgid  "Move reference-point"
 msgstr "Перемістити точку відліку"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
-#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "Геометрично змінити %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "Перемістити %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "Змінити розмір %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "Обернути %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Віддзеркалити %1 горизонтально"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Віддзеркалити %1 вертикально"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Віддзеркалити %1 по діагоналі"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Віддзеркалити %1 у довільній формі"
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
-#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr "Інтерактивний градієнт для %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
-#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr "Інтерактивна прозорість для %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Викривити %1 (нахил)"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Розташувати %1 у колі"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Вигнути %1 у вигляді кола"
 
 #: source/svdraw/svdstr.src#STR_DragMethDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "Викривити %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
-#, fuzzy
 msgid  "Crop %O"
 msgstr "Обрізати %O"
 
 #: source/svdraw/svdstr.src#STR_DragRectEckRad.String.Text
-#, fuzzy
 msgid  "Alter radius by %1"
 msgstr "Змінити радіус на %1"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "Змінити %1"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "Змінити розмір %1"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "Перемістити %1"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
-#, fuzzy
 msgid  "Move end point of %1"
 msgstr "Перемістити кінцеву точку %1"
 
 #: source/svdraw/svdstr.src#STR_DragCircAngle.String.Text
-#, fuzzy
 msgid  "Adjust angle by %1"
 msgstr "Змінити кут %1"
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "Змінити %1"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
-#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "Редагування тексту: абзац  %a, рядок %z, колонка %s"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
-#, fuzzy
 msgid  "%1 selected"
 msgstr "%1 вибраний"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
-#, fuzzy
 msgid  "Point from %1"
 msgstr "Точка з %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
-#, fuzzy
 msgid  "%2 points from %1"
 msgstr "%2 точок з %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
-#, fuzzy
 msgid  "Glue point from %1"
 msgstr "Точка з'єднання з %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
-#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "%2 точок з'єднання з %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
-#, fuzzy
 msgid  "Mark objects"
 msgstr "Позначити об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
-#, fuzzy
 msgid  "Mark additional objects"
 msgstr "Позначити додаткові об'єкти"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
-#, fuzzy
 msgid  "Mark points"
 msgstr "Позначити точки"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
-#, fuzzy
 msgid  "Mark additional points"
 msgstr "Позначити додаткові точки"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
-#, fuzzy
 msgid  "Mark glue points"
 msgstr "Виділити точки з'єднання"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
-#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "Виділити решту точок з'єднання"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
-#, fuzzy
 msgid  "Create %1"
 msgstr "Створити %1"
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
-#, fuzzy
 msgid  "Insert %1"
 msgstr "Вставити %1"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
-#, fuzzy
 msgid  "Copy %1"
 msgstr "Копіювати %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
-#, fuzzy
 msgid  "Change object order of %1"
 msgstr "Змінити порядок об'єктів %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
-#, fuzzy
 msgid  "Edit text of %1"
 msgstr "Редагування тексту %1"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
-#, fuzzy
 msgid  "Insert page"
 msgstr "Вставити сторінку"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
-#, fuzzy
 msgid  "Delete page"
 msgstr "Видалити сторінку"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
-#, fuzzy
 msgid  "Copy page"
 msgstr "Копіювати сторінку"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
-#, fuzzy
 msgid  "Change order of pages"
 msgstr "Змінити порядок сторінок"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Assign background page"
 msgstr "Призначити тло сторінки"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "Видалити призначення сторінки тла"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Move background page assignment"
 msgstr "Перемістити призначення сторінки тла"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Change background page assignment"
 msgstr "Змінити призначення сторінки тла"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
-#, fuzzy
 msgid  "Insert document"
 msgstr "Вставити документ"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
-#, fuzzy
 msgid  "Insert Layer"
 msgstr "Вставити шар"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
-#, fuzzy
 msgid  "Delete layer"
 msgstr "Видалити шар"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
-#, fuzzy
 msgid  "Change order of layers"
 msgstr "Змінити послідовність шарів"
 
@@ -9513,7 +8660,6 @@ msgid  "Change object name of %1 to"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
-#, fuzzy
 msgid  "Change object title of %1"
 msgstr "Змінити порядок об'єктів %1"
 
@@ -9522,1337 +8668,1070 @@ msgid  "Change object description of %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "Стандарт"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
-#, fuzzy
 msgid  "on"
 msgstr "увімк"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "вимкн"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
-#, fuzzy
 msgid  "yes"
 msgstr "так"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Ні"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
-#, fuzzy
 msgid  "Type 1"
 msgstr "Тип: 1"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
-#, fuzzy
 msgid  "Type 2"
 msgstr "Тип: 2"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
-#, fuzzy
 msgid  "Type 3"
 msgstr "Тип: 3"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
-#, fuzzy
 msgid  "Type 4"
 msgstr "Тип: 4"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Горизонтально"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "Вертикально"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
-#, fuzzy
 msgid  "Off"
 msgstr "Вимкн"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
-#, fuzzy
 msgid  "Proportional"
 msgstr "Пропорційно"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEALLLINES.String.Text
-#, fuzzy
 msgid  "Fit to size (all rows separately) "
 msgstr "Всі рядки окремо"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
-#, fuzzy
 msgid  "Use hard attributes"
 msgstr "Застосувати фіксовані атрибути"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "Згори"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "По центру"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "Знизу"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire height"
 msgstr "Використання всієї висоти"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "Розтягнуто"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "Зліва"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "По центру"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "Справа"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire width"
 msgstr "Використання всієї ширини"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "Розтягнуто"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "вимкн"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
-#, fuzzy
 msgid  "flash"
 msgstr "блимання"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SCROLL.String.Text
-#, fuzzy
 msgid  "Scroll Through"
 msgstr "Через всю сторінку"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_ALTERNATE.String.Text
-#, fuzzy
 msgid  "alternating"
 msgstr "змінний"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SLIDE.String.Text
-#, fuzzy
 msgid  "Scroll In"
 msgstr "Рух лише всередину"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
-#, fuzzy
 msgid  "left"
 msgstr "ліворуч"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
-#, fuzzy
 msgid  "up"
 msgstr "вгору"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
-#, fuzzy
 msgid  "right"
 msgstr "праворуч"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
-#, fuzzy
 msgid  "down"
 msgstr "вниз"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
-#, fuzzy
 msgid  "Standard Connector"
 msgstr "Стандартна з'єднувальна лінія"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_THREELINES.String.Text
-#, fuzzy
 msgid  "Line Connector"
 msgstr "З'єднувальна лінія"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
-#, fuzzy
 msgid  "Straight Connector"
 msgstr "Пряма з'єднувальна лінія"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
-#, fuzzy
 msgid  "Curved Connector"
 msgstr "Крива з'єднувальна лінія"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "Стандарт"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
-#, fuzzy
 msgid  "Radius"
 msgstr "Радіус"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "автоматичнно"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTLEFTOUTSIDE.String.Text
-#, fuzzy
 msgid  "left outside"
 msgstr "ліворуч зовні"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTINSIDE.String.Text
-#, fuzzy
 msgid  "inside (centered)"
 msgstr "всередині (у центрі)"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTRIGHTOUTSID.String.Text
-#, fuzzy
 msgid  "right outside"
 msgstr "праворуч зовні"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "автоматичнно"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
-#, fuzzy
 msgid  "on the line"
 msgstr "на лінії"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
-#, fuzzy
 msgid  "broken line"
 msgstr "пунктирна лінія"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
-#, fuzzy
 msgid  "below the line"
 msgstr "під лінією"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
-#, fuzzy
 msgid  "centered"
 msgstr "у центрі"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
-#, fuzzy
 msgid  "full circle"
 msgstr "коло"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_SECT.String.Text
-#, fuzzy
 msgid  "Circle Pie"
 msgstr "Сектор кола"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "Сегмент кола"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "Дуга кола"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Тінь"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "Колір тіні"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Horizontal shadow outline"
 msgstr "Горизонтальний контур тіні"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "Вертикальний контур тіні"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Прозорість тіні"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "Тривимірна тінь"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Перспективна тінь"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Callout type"
 msgstr "Тип виноски"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Given angle"
 msgstr "Вказування кута"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Angle"
 msgstr "Кут"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "Пропуск"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Exit direction"
 msgstr "Напрямок виходу"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit position"
 msgstr "Відносна позиція виходу"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "Позиція виходу"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "Позиція виходу"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Line length"
 msgstr "Довжина лінії"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "Auto line length"
 msgstr "Автоматична довжина лінії"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "Радіус закругленого кута"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left border spacing"
 msgstr "Лівий інтервал кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right border spacing"
 msgstr "Правий інтервал кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper border spacing"
 msgstr "Верхній інтервал кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower border spacing"
 msgstr "Нижній інтервал кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit frame height"
 msgstr "Автопідбирання розміру кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Min. frame height"
 msgstr "Мінімальна висота кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Max. frame height"
 msgstr "Максимальна висота кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit frame width"
 msgstr "Автопідбирання ширини кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Min. frame width"
 msgstr "Мінімальна ширина кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Max. frame width"
 msgstr "Максимальна ширина кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Вертикальна прив'язка тексту"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Горизонтальна прив'язка тексту"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Підігнати текст до кадру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "Червоний"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "Зелений"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "Синій"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "Яскравість"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "Контраст"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "Гама"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Прозорість"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "Інвертувати"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "Графічний режим"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
-#, fuzzy
 msgid  "Various attributes"
 msgstr "Різні атрибути"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Position protected"
 msgstr "Захист позиції"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Size Protection"
 msgstr "Захист розміру"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Don't print"
 msgstr "Не друкувати"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
-#, fuzzy
 msgid  "Layer Indicator"
 msgstr "Вказівник шару"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Le~vel"
 msgstr "~Рівень"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "Назва об'єкту"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "Початковий кут"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
-#, fuzzy
 msgid  "Final angle"
 msgstr "Кінцевий кут"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
-#, fuzzy
 msgid  "X Position"
 msgstr "Позиція X"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
-#, fuzzy
 msgid  "Y Position"
 msgstr "Позиція Y"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "Ширина"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "Висота"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Rotation angle"
 msgstr "Кут повороту"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Shear angle"
 msgstr "Кут зрізу"
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
-#, fuzzy
 msgid  "Unknown attribute"
 msgstr "Невідомий атрибут"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
-#, fuzzy
 msgid  "Line style"
 msgstr "Стиль лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
-#, fuzzy
 msgid  "Line pattern"
 msgstr "Зразки лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
-#, fuzzy
 msgid  "Line width"
 msgstr "Ширина лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "Колір лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
-#, fuzzy
 msgid  "Line head"
 msgstr "Початок лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
-#, fuzzy
 msgid  "Line end"
 msgstr "Кінець лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
-#, fuzzy
 msgid  "Line head width"
 msgstr "Ширина початку лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
-#, fuzzy
 msgid  "Line end width"
 msgstr "Ширина кінця лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowhead"
 msgstr "Центр розмірної лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowend"
 msgstr "Центр розмірної стрілки"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Line transparency"
 msgstr "Прозорість лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
-#, fuzzy
 msgid  "Line joint"
 msgstr "З'єднання лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED2.String.Text
-#, fuzzy
 msgid  "Line reserved for 2"
 msgstr "Зарезервована лінія 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED3.String.Text
-#, fuzzy
 msgid  "Line reserved for 3"
 msgstr "Зарезервована лінія 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED4.String.Text
-#, fuzzy
 msgid  "Line reserved for 4"
 msgstr "Зарезервована лінія 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED5.String.Text
-#, fuzzy
 msgid  "Line reserved for 5"
 msgstr "Зарезервована лінія 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Line reserved for 6"
 msgstr "Зарезервована лінія 6"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
-#, fuzzy
 msgid  "Line attributes"
 msgstr "Атрибути лінії"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
-#, fuzzy
 msgid  "Fill style"
 msgstr "Стиль заповнення"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fillcolor"
 msgstr "Колір заповнення"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
-#, fuzzy
 msgid  "Gradient"
 msgstr "Градієнт"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLHATCH.String.Text
-#, fuzzy
 msgid  "Hatching"
 msgstr "Штрихування"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBITMAP.String.Text
-#, fuzzy
 msgid  "Fillbitmap"
 msgstr "Заповнити растр"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Прозорість"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
-#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "Кількість градієнтних кроків"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILE.String.Text
-#, fuzzy
 msgid  "Tile fill"
 msgstr "Заповнення мозаїки"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POS.String.Text
-#, fuzzy
 msgid  "Fillbitmap position"
 msgstr "Позиція заповнення растру"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEX.String.Text
-#, fuzzy
 msgid  "Fillbitmap width"
 msgstr "Ширина заповнення растру"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEY.String.Text
-#, fuzzy
 msgid  "Height of fillbitmap"
 msgstr "Висота заповнення растру"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparent gradient"
 msgstr "Прозорий градієнт"
 
 #: source/svdraw/svdstr.src#SIP_XA_SECONDARYFILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill reserved for 2"
 msgstr "Зарезервоване заповнення 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZELOG.String.Text
-#, fuzzy
 msgid  "Tile size not in %"
 msgstr "Розміру мозаїки не у %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile offset X in %"
 msgstr "Зсув мозаїки X у %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile offset Y in %"
 msgstr "Зсув мозаїки Y у %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_STRETCH.String.Text
-#, fuzzy
 msgid  "Bitmap scaling"
 msgstr "Масштаб растру"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED3.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 3"
 msgstr "Зарезервований растр для 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED4.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 4"
 msgstr "Зарезервований растр для 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED5.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 5"
 msgstr "Зарезервований растр для 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED6.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 6"
 msgstr "Зарезервований растр для 6"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED7.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 7"
 msgstr "Зарезервований растр для 7"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED8.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 8"
 msgstr "Зарезервований растр для 8"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile position X in %"
 msgstr "Позиція мозаїки X у %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile position Y in %"
 msgstr "Позиція мозаїки Y у %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
-#, fuzzy
 msgid  "Background fill"
 msgstr "Заповнення тла"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED10.String.Text
-#, fuzzy
 msgid  "Fill reserved for 10"
 msgstr "Зарезервоване заповнення 10"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED11.String.Text
-#, fuzzy
 msgid  "Fill reserved for 11"
 msgstr "Зарезервоване заповнення 11"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fill reserved for 12"
 msgstr "Зарезервоване заповнення 12"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
-#, fuzzy
 msgid  "Area attributes"
 msgstr "Атрибути області"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
-#, fuzzy
 msgid  "Fontwork style"
 msgstr "Стиль текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
-#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "Вирівнювання текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
-#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "Інтервал у тексті з ефектом"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTART.String.Text
-#, fuzzy
 msgid  "Fontwork font begin"
 msgstr "Початок шрифту ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
-#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "Дзеркальне відображення текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTOUTLINE.String.Text
-#, fuzzy
 msgid  "Fontwork outline"
 msgstr "Контурний шрифт текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
-#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "Тінь текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
-#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "Колір тіні текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWXVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset X"
 msgstr "Зсув тіні текстового ефекту по осі X"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWYVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset Y"
 msgstr "Зсув тіні текстового ефекту по осі Y"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
-#, fuzzy
 msgid  "Fontwork default form"
 msgstr "Стандартна форма текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
-#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "Сховати контур текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
-#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "Прозорість тіні текстового ефекту"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED2.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 2"
 msgstr "Зарезервований ефект 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED3.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 3"
 msgstr "Зарезервований ефект 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED4.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 4"
 msgstr "Зарезервований ефект 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED5.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 5"
 msgstr "Зарезервований ефект 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 6"
 msgstr "Зарезервований ефект 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Тінь"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "Колір тіні"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "Інтервал тіні X"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "Інтервал тіні Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Прозорість тіні"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "Тривимірна тінь"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Перспективна тінь"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Type of legend"
 msgstr "Тип легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "Фіксування кута легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Legend angle"
 msgstr "Кут легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Legend lines spacing"
 msgstr "Крок рядку легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Legend exit alignment"
 msgstr "Напрямок виходу легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Відносний вихід з легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Відносний вихід з легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "Абсолютний вихід з легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Legend line length"
 msgstr "Довжина рядка легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "AutoLength of legend lines"
 msgstr "Автодовжина рядків легенди"
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "Радіус закругленого кута"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Minimal frame height"
 msgstr "Мінімальна висота рамки"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit height"
 msgstr "Автопідбирання висоти"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Підігнати текст до кадру"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "Інтервал кадру тексту ліворуч"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "Інтервал кадру тексту праворуч"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "Інтервал кадру тексту згори"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "Інтервал кадру тексту знизу"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Вертикальна прив'язка тексту"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Maximal frame height"
 msgstr "Максимальна висота кадру"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Minimal frame width"
 msgstr "Мінімальна ширина кадру"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Maximal frame width"
 msgstr "Максимальна ширина кадру"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit width"
 msgstr "Автопідбирання ширини"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Горизонтальна прив'язка тексту"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIKIND.String.Text
-#, fuzzy
 msgid  "Ticker"
 msgstr "Рядок, що біжить"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDIRECTION.String.Text
-#, fuzzy
 msgid  "Ticker direction"
 msgstr "Напрямок руху рядка"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTARTINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker start inside"
 msgstr "Початок рядка всередині"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTOPINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker stop inside"
 msgstr "Зупинка рядка всередині"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANICOUNT.String.Text
-#, fuzzy
 msgid  "Number of ticker runs"
 msgstr "Кількість проходів рядка"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDELAY.String.Text
-#, fuzzy
 msgid  "Speed of ticker"
 msgstr "Швидкість рядка"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIAMOUNT.String.Text
-#, fuzzy
 msgid  "Ticker step size"
 msgstr "Ширина кроку рядка, що біжить"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_CONTOURFRAME.String.Text
-#, fuzzy
 msgid  "Outline text flow"
 msgstr "Контур тексту"
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
-#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "Вирівнювання"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
-#, fuzzy
 msgid  "User-defined attributes"
 msgstr "Атрибути користувача"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
-#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "Використовувати міжрядковий інтервал незалежно від шрифту"
 
 #: source/svdraw/svdstr.src#SIP_SA_WORDWRAP.String.Text
-#, fuzzy
 msgid  "Word wrap text in shape"
 msgstr "Переносити слова у фігурі"
 
 #: source/svdraw/svdstr.src#SIP_SA_AUTOGROWSIZE.String.Text
-#, fuzzy
 msgid  "Auto grow shape to fit text"
 msgstr "Підігнати розмір фігури під текст"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE18.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 18"
 msgstr "Зарезервований SvDraw 18"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE19.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 19"
 msgstr "Зарезервований SvDraw 19"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
-#, fuzzy
 msgid  "Type of connector"
 msgstr "Тип з'єднувальних ліній"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 1"
 msgstr "Горизонтальний інтервал до об'єкту 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 1"
 msgstr "Вертикальний інтервал до об'єкту 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 2"
 msgstr "Горизонтальний інтервал до об'єкту 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 2"
 msgstr "Вертикальний інтервал до об'єкту 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 1"
 msgstr "Інтервал кільця зв'язку об'єкту 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 2"
 msgstr "Інтервал кільця зв'язку об'єкту 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
-#, fuzzy
 msgid  "Number of movable lines"
 msgstr "Кількість ліній, що переміщуються"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE1DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 1"
 msgstr "Лінія зсуву 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE2DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 2"
 msgstr "Лінія зсуву 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE3DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 3"
 msgstr "Лінія зсуву 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
-#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "Тип розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTHPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - horizontal position"
 msgstr "Горизонтальна позиція тексту розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTVPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - vertical position"
 msgstr "Вертикальна позиція тексту розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURELINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension line space"
 msgstr "Відстань розмірної лінії"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension help line overhang"
 msgstr "Виступ проміжних розмірних ліній"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension help line spacing"
 msgstr "Крок рядків проміжних розмірних ліній"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE1LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 1"
 msgstr "Виступ розмірної проміжної лінії 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE2LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 2"
 msgstr "Виступ розмірної проміжної лінії 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREBELOWREFEDGE.String.Text
-#, fuzzy
 msgid  "Lower edge dimensioning"
 msgstr "Розмірність нижнього канту"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
-#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "Поперечне положення тексту розмірів до розмірної лінії"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTUPSIDEDOWN.String.Text
-#, fuzzy
 msgid  "Rotate dimension value by 180 degree"
 msgstr "Обертати текст розмірів на 180о"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension line overhang"
 msgstr "Виступ розмірної лінії"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit"
 msgstr "Одиниця виміру"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
-#, fuzzy
 msgid  "Additional scale factor"
 msgstr "Додатковий фактор масштабу"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit display"
 msgstr "Показ одиниць виміру"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREFORMATSTRING.String.Text
-#, fuzzy
 msgid  "Dimension value format"
 msgstr "Формат тексту розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLE.String.Text
-#, fuzzy
 msgid  "AutoPositioning of the dimension value"
 msgstr "Автокут тексту розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLEVIEW.String.Text
-#, fuzzy
 msgid  "Angle for the automatic positioning of the dimension value"
 msgstr "Кут для автокута тексту розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTISFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Determination of the dimension value angle"
 msgstr "Визначення кута тексту розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Angle of the dimension value"
 msgstr "Кут тексту розмірів"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREDECIMALPLACES.String.Text
-#, fuzzy
 msgid  "Decimal places"
 msgstr "Кількість знаків після коми"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE05.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved 5"
 msgstr "Зарезервований розмір 5"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE06.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 6"
 msgstr "Зарезервований розмір 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE07.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 7"
 msgstr "Зарезервований розмір 7"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
-#, fuzzy
 msgid  "Type of circle"
 msgstr "Тип кола"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "Початковий кут"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
-#, fuzzy
 msgid  "End angle"
 msgstr "Кінцевий кут"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE0.String.Text
-#, fuzzy
 msgid  "Circle reserved for 0"
 msgstr "Зарезервоване коло 0"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE1.String.Text
-#, fuzzy
 msgid  "Circle reserved for 1"
 msgstr "Зарезервоване коло 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE2.String.Text
-#, fuzzy
 msgid  "Circle reserved for 2"
 msgstr "Зарезервоване коло 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE3.String.Text
-#, fuzzy
 msgid  "Circle reserved for 3"
 msgstr "Зарезервоване коло 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object position"
 msgstr "Захищена позиція об'єкту"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object size"
 msgstr "Захищений розмір об'єкту"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Object, printable"
 msgstr "Об'єкт, що друкується"
 
@@ -10861,237 +9740,190 @@ msgid  "Object, visible"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
-#, fuzzy
 msgid  "Level ID"
 msgstr "ID рівня"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Layer"
 msgstr "Шар"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "Назва об'єкту"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONX.String.Text
-#, fuzzy
 msgid  "Position X, complete"
 msgstr "Позиція X цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y, complete"
 msgstr "Позиція Y цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Total Width"
 msgstr "Ширина цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height, complete"
 msgstr "Висота цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONX.String.Text
-#, fuzzy
 msgid  "Single position X"
 msgstr "Позиція X окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONY.String.Text
-#, fuzzy
 msgid  "Single position Y"
 msgstr "Позиція Y окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Single width"
 msgstr "Ширина окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Single height"
 msgstr "Висота окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Logical width"
 msgstr "Логічна ширина"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Logical height"
 msgstr "Логічна висота"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Single rotation angle"
 msgstr "Кут повороту окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Single shear angle"
 msgstr "Кут зрізу окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
-#, fuzzy
 msgid  "Move horizontally"
 msgstr "Горизонтальний зсув"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
-#, fuzzy
 msgid  "Move vertically"
 msgstr "Вертикальний зсув"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
-#, fuzzy
 msgid  "Resize X, single"
 msgstr "Змінити розмір X, окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
-#, fuzzy
 msgid  "Resize Y, single"
 msgstr "Змінити розмір Y, окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEONE.String.Text
-#, fuzzy
 msgid  "Single rotation"
 msgstr "Обертати окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARONE.String.Text
-#, fuzzy
 msgid  "Single horizontal shear"
 msgstr "Зрізати горизонтально окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARONE.String.Text
-#, fuzzy
 msgid  "Single vertical shear"
 msgstr "Зрізати вертикально окремо"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
-#, fuzzy
 msgid  "Resize X, complete"
 msgstr "Змінити розміри X цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
-#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Змінити розміри Y, цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
-#, fuzzy
 msgid  "Rotate all"
 msgstr "Обертати цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear horizontal, complete"
 msgstr "Зрізати по горизонталі цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear vertical, complete"
 msgstr "Зрізати по вертикалі цілком"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1X.String.Text
-#, fuzzy
 msgid  "Reference point 1 X"
 msgstr "Точка відліку 1 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1Y.String.Text
-#, fuzzy
 msgid  "Reference point 1 Y"
 msgstr "Точка відліку 1 Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2X.String.Text
-#, fuzzy
 msgid  "Reference point 2 X"
 msgstr "Точка відліку 2 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2Y.String.Text
-#, fuzzy
 msgid  "Reference point 2 Y"
 msgstr "Точка відліку 2 Y"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "Розстановка переносів"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
-#, fuzzy
 msgid  "Display bullets"
 msgstr "Показати маркери"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
-#, fuzzy
 msgid  "Numbering indents"
 msgstr "Відступи нумерації"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
-#, fuzzy
 msgid  "Numbering level"
 msgstr "Рівні нумерації"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
-#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "Маркери та нумерація"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
-#, fuzzy
 msgid  "Indents"
 msgstr "Відступи"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
-#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "Інтервал між абзацами"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
-#, fuzzy
 msgid  "Line spacing"
 msgstr "Міжрядковий інтервал"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
-#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "Вирівнювання абзацу"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
-#, fuzzy
 msgid  "Tabulators"
 msgstr "Табуляція"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "Колір тексту"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
-#, fuzzy
 msgid  "Character set"
 msgstr "Кодування"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
-#, fuzzy
 msgid  "Font size"
 msgstr "Розмір шрифту"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
-#, fuzzy
 msgid  "Font width"
 msgstr "Ширина шрифту"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
-#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "Жирність (товщина)"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "Підкреслення"
 
@@ -11100,197 +9932,158 @@ msgid  "Overline"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "Закреслення"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "Курсив"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "Контур"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
-#, fuzzy
 msgid  "Font shadow"
 msgstr "З тінню"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
-#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "Верхній індекс/нижній індекс"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
-#, fuzzy
 msgid  "Kerning"
 msgstr "Кернінг"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
-#, fuzzy
 msgid  "Manual kerning"
 msgstr "Встановлення кернінгу вручну"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
-#, fuzzy
 msgid  "No underline for spaces"
 msgstr "Пробіли не підкреслювати"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
-#, fuzzy
 msgid  "Tabulator"
 msgstr "Табуляція"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_LINEBR.String.Text
-#, fuzzy
 msgid  "Optional line break"
 msgstr "М'який перенос"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
-#, fuzzy
 msgid  "Non-convertible character"
 msgstr "Не перетворюваний знак"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "Поля"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "Червоний"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "Зелений"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "Синій"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "Яскравість"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "Контраст"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "Гама"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Прозорість"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "Інвертувати"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "Графічний режим"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "Кадрувати"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
-#, fuzzy
 msgid  "Media object"
 msgstr "Мультимедійний об'єкт"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
-#, fuzzy
 msgid  "Media objects"
 msgstr "Мультимедійні об'єкти"
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
-#, fuzzy
 msgid  "Apply table attributes"
 msgstr "Вжити властивості таблиці"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
-#, fuzzy
 msgid  "AutoFormat table"
 msgstr "Автоматичне форматування таблиці"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
-#, fuzzy
 msgid  "Insert column"
 msgstr "Вставити стовпчик"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "Вставити рядок"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
-#, fuzzy
 msgid  "Delete column"
 msgstr "Видалити стовпець"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "Видалити рядок"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
-#, fuzzy
 msgid  "Split cells"
 msgstr "Розділити комірки"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
-#, fuzzy
 msgid  "Merge cells"
 msgstr "Об'єднати комірки"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
-#, fuzzy
 msgid  "Format cell"
 msgstr "Формат комірки"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
-#, fuzzy
 msgid  "Distribute rows"
 msgstr "Розподілити стовпчики"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
-#, fuzzy
 msgid  "Distribute columns"
 msgstr "Розподілити стовпчики"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
-#, fuzzy
 msgid  "Table style"
 msgstr "Стиль таблиці"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
-#, fuzzy
 msgid  "Table style settings"
 msgstr "Параметри стилю таблиці"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Таблиця"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Таблиці"
 
@@ -11307,57 +10100,46 @@ msgid  "Table Design Styles"
 msgstr ""
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "No Fill"
 msgstr "Без заповнення"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
-#, fuzzy
 msgid  "Pattern"
 msgstr "Орнамент"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Обрамлення"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
-#, fuzzy
 msgid  "Border Style"
 msgstr "Стиль обрамлення"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
-#, fuzzy
 msgid  "Border Color"
 msgstr "Колір обрамлення"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
-#, fuzzy
 msgid  "Highlighting"
 msgstr "Виділення кольором"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Тло"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
-#, fuzzy
 msgid  "Pages"
 msgstr "Сторінки"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
-#, fuzzy
 msgid  "Clear formatting"
 msgstr "Скасувати форматування"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
-#, fuzzy
 msgid  "More..."
 msgstr "Додатково..."
 
@@ -11366,282 +10148,226 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "Напрямок екструзії "
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "~Перспектива"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
-#, fuzzy
 msgid  "P~arallel"
 msgstr "~Паралельно"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
-#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "Екструзія північний захід"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
-#, fuzzy
 msgid  "Extrusion North"
 msgstr "Екструзія північ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
-#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "Екструзія північний схід"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
-#, fuzzy
 msgid  "Extrusion West"
 msgstr "Екструзія захід"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
-#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "Екструзія назад"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
-#, fuzzy
 msgid  "Extrusion East"
 msgstr "Екструзія схід"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
-#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "Екструзія південний захід"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
-#, fuzzy
 msgid  "Extrusion South"
 msgstr "Екструзія південь"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
-#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "Екструзія південний схід"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Глибин екструзії"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "~Інший..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
-#, fuzzy
 msgid  "~Infinity"
 msgstr "~Нескінченний"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "Освітлення екструзії"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
-#, fuzzy
 msgid  "~Bright"
 msgstr "~Яскравий"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "~Звичайний"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
-#, fuzzy
 msgid  "~Dim"
 msgstr "~Тьмяний"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "Поверхня екструзії"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
-#, fuzzy
 msgid  "~Wire Frame"
 msgstr "~Дротове-каркасне зображення"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
-#, fuzzy
 msgid  "~Matt"
 msgstr "~Матовий"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
-#, fuzzy
 msgid  "~Plastic"
 msgstr "~Пластик"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
-#, fuzzy
 msgid  "Me~tal"
 msgstr "М~еталік"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Глибина екструзії"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "~Значення"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Extrusion Color"
 msgstr "Колір екструзії"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0.String.Text
-#, fuzzy
 msgid  "~0 cm"
 msgstr "~0 см"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1.String.Text
-#, fuzzy
 msgid  "~1 cm"
 msgstr "~1 см"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2.String.Text
-#, fuzzy
 msgid  "~2.5 cm"
 msgstr "~2.5 см"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3.String.Text
-#, fuzzy
 msgid  "~5 cm"
 msgstr "~5 см"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
-#, fuzzy
 msgid  "10 ~cm"
 msgstr "10 ~см"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
-#, fuzzy
 msgid  "0 inch"
 msgstr "0 дюйм"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
-#, fuzzy
 msgid  "0.~5 inch"
 msgstr "0.~5 дюймів"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
-#, fuzzy
 msgid  "~1 inch"
 msgstr "~1 дюйм"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
-#, fuzzy
 msgid  "~2 inch"
 msgstr "~2 дюйми"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
-#, fuzzy
 msgid  "~4 inch"
 msgstr "~4 дюйми"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "Галерея текстових ефектів"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
-#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "Виберіть стиль текстового ефекту:"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
-#, fuzzy
 msgid  "Click to edit text"
 msgstr "Для редагування тексту клацніть мишею"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "Вирівнювання текстових ефектів"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
-#, fuzzy
 msgid  "~Left Align"
 msgstr "~Ліворуч"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "У ~центрі"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
-#, fuzzy
 msgid  "~Right Align"
 msgstr "~Праворуч"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
-#, fuzzy
 msgid  "~Word Justify"
 msgstr "У ~ширину"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
-#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "По ~ширині з розтягуванням"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Міжсимвольний інтервал текстових ефектів"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
-#, fuzzy
 msgid  "~Very Tight"
 msgstr "~Дуже щільний"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
-#, fuzzy
 msgid  "~Tight"
 msgstr "~Щільний"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "~Звичайний"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
-#, fuzzy
 msgid  "~Loose"
 msgstr "~Широкий"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
-#, fuzzy
 msgid  "Very ~Loose"
 msgstr "Дуже ~широкий"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "~Інший..."
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_KERN_PAIRS.String.Text
-#, fuzzy
 msgid  "~Kern Character Pairs"
 msgstr "~Кернінг пар символів"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Міжсимвольний інтервал текстових ефектів"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "~Значення"
 
@@ -11650,57 +10376,46 @@ msgid  "Find"
 msgstr ""
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
-#, fuzzy
 msgid  "Filters"
 msgstr "Фільтри"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics Mode"
 msgstr "Графічний режим"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "Червоний"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "Зелений"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "Синій"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "Яскравість"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "Контраст"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "Гама"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Прозорість"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "Кадрувати"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "Кольори"
 
@@ -11709,112 +10424,90 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Дії для скасування: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Дії для скасування: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Дії для повтору: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Дії для повтору: $(ARG1)"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
-#, fuzzy
 msgid  "Extrusion"
 msgstr "Екструзія"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
-#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "Увім./вимк. застосування екструзії"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
-#, fuzzy
 msgid  "Tilt Down"
 msgstr "Повернути вниз"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
-#, fuzzy
 msgid  "Tilt Up"
 msgstr "Повернути вверх"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
-#, fuzzy
 msgid  "Tilt Left"
 msgstr "Повернути ліворуч"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
-#, fuzzy
 msgid  "Tilt Right"
 msgstr "Повернути праворуч"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
-#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "Змінити глибину екструзії"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
-#, fuzzy
 msgid  "Change Orientation"
 msgstr "Змінити орієнтацію"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
-#, fuzzy
 msgid  "Change Projection Type"
 msgstr "Змінити тип проекції"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
-#, fuzzy
 msgid  "Change Lighting"
 msgstr "Змінити освітлення"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
-#, fuzzy
 msgid  "Change Brightness"
 msgstr "Змінити яскравість"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
-#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "Змінити поверхню екструзії"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "Змінити колір екструзії"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
-#, fuzzy
 msgid  "Fontwork"
 msgstr "Тестові ефекти"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "Застосувати форму текстового ефекту"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "Вирівняти букви текстового ефекту по висоті"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "Вирівняти букви текстового ефекту"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "Застосувати міжсимвольний інтервал для текстового ефекту"
 

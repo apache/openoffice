@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "कृपया \"%2\" कृते %1 मध्ये अत्र प्रयोक्तृनाम गुह्यपदञ्च निवेशय।"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "प्रेषय"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "'${HOST}' सर्वर् एकं तदधिकं वा कुक्कीस् स्थापयितुम् इच्छति।\nकुक्कीस् मध्ये काञ्चन URL वर्गान् निर्दिशन्ती सूचना अस्ति। यदि %PRODUCTNAME तदनन्तरं पूर्वस्थापित-कुक्की-वर्गानुरूप-URL सह लेख्यपत्रं प्रार्थयति, तर्हि %PRODUCTNAME इमां सूचनां सर्वर् प्रति प्रेषयिष्यति। इदं WWW प्रयोगवस्तुस्थितिम् प्रत्यभिज्ञातुं सर्वर् अनुमोदयति। उदाहरणार्थम् - ओन्लैन् क्रयसमये।\n\nइमानि कुक्कीस् स्थापयेत् :\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "डोमैन् : ${DOMAIN}, मार्गः : ${PATH}, कुक्की : ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "कुक्की-ग्रहणम्"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME '${HOST}' सर्वर् कृते कुक्कीस् अरक्षत्, यानि ${PATH} लेख्यपत्रप्रार्थनासमये प्रेषितानि भविष्यन्ति।\nकुक्कीस् मध्ये काञ्चन URL वर्गान् निर्दिशन्ती सूचना अस्ति। इमानि कैश्चन सर्वर्स् द्वारा %PRODUCTNAME प्रति प्रेषितानि, यत्र तानि केषाञ्चन लेख्यपत्राणां प्राप्तिसमये रक्षितानि। यदि %PRODUCTNAME एकं लेख्यपत्रं लोड् करोति, यत् URL अनुसारेण पूर्वप्राप्त-कुक्कीस् मध्ये एकेन वर्गेण सह अनुरूपं वर्तते, तर्हि %PRODUCTNAME इमां सूचनां तत् सर्वर् प्रति प्रेषयिष्यति। इदं WWW प्रयोगवस्तुस्थितिमार्गं धर्तुं सर्वर् प्रकारयति। उदाहरणार्थम् - ओन्लैन् क्रयसमये।\n\nइमानि कुक्कीस् स्थापयेत् :\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "डोमैन् : ${DOMAIN}, मार्गः : ${PATH}, कुक्की : ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "उपयोगे लेख्यपत्रम्"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "अनेन सम्पादनाय '$(ARG1)' लेख्पत्रसञ्चिका पिहिता :\n\n$(ARG2)\n\nपठन-मात्रलेख्यपत्रम् उद्घाटय अथवा सम्पादनाय लेख्यपत्रस्य कापी उद्घाटय।"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"

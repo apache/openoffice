@@ -237,7 +237,7 @@ msgstr "Bàr nam foincsean"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "Thachair mearachd san rèiteachadh sònraichte.\nCuir fios gun rianaire agad."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "Luchdaich %PRODUCTNAME nuair a thòisicheas an siostam"
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Cuir à comas grad-thòisiche na systray"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -341,7 +341,7 @@ msgstr "Ceangail na grafaigean"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
 msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
-msgstr ""
+msgstr "Cha deach dòigh co-phàirt fhreagarrach\n%1 a lorg.\n\nDèan cinnteach gu bheil an litreachadh ceart."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -509,11 +509,11 @@ msgstr "Seall co~bhair %PRODUCTNAME %MODULENAME aig an toiseach"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "Cha deach a' chriathrag $(FILTER) a thagh thu a stàladh.\nA bheil thu airson a stàladh a-nis?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Chan eil a' chriathrag $(FILTER) a thagh thu 'na phàirt dhen tionndadh seo.\nGheibh thu fiosrachadh air mar a chuireas tu òrdugh air an duilleag againn."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "Rabhadh"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "Tha nithean trìd-shoilleir san sgrìobhainn agad.\nFaodaidh gun doir cuid a chlò-bhualadairean nas\nfhaide 'ga chlò-bhualadh. Saoil an lughdaichear\nan trìd-shoilleireachd an?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -733,7 +733,7 @@ msgstr "~Neo-dhìon..."
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Ma nì thu seo, fàgaidh tu modh atharrachadh a' chlàraidh.\nThèid rud sam bith a chlàraich thu air chall.\n\nA bheil thu airson modh atharrachadh a' chlàraidh fhàgail?\n\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 msgid  "Protect Records"
@@ -1441,7 +1441,7 @@ msgstr "A bheil thu cinnteach gu bheil thu airson an stoidhle $1 a sguabadh às?
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "Tha thu gu bhith sguabadh às stoidhle a thathar 'ga chleachdadh!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1489,7 +1489,7 @@ msgstr "Saothraichean"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Faodaidh gu bheil fòrmatadh no susbaint san sgrìobhainn seo nach urrainn dhut sàbhaladh san fhòrmat %FORMATNAME. A bheil thu airson an sgrìobhainn a shàbhaladh leis an fhòrmat seo co-dhiù?\n\nCleachd am fòrmat ODF as ùire gus dèanamh cinnteach gun dèid am fòrmatadh is an t-susbaint gu lèir a shàbhaladh mar bu chòir."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "Chaidh an sgrìobhainn \"$(DOC)\" atharrachadh.\nA bheil thu airson na dh'atharraich thu a shàbhaladh?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "Teamplaidean"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "Mearachd 'ga dhèamah lethbhreac de \"$1\". \nFaodaidh gu bheil teamplaid ann mu thràth air a bheil an t-ainm seo."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "Tha fòrmat cearr aig an fhaidhle a thagh thu."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Cha ghabh sgrìobhainnean a shàbhaladh san fhòrmat $(FORMAT). A bheil thu\nairson na dh'atharraich thu a shàbhaladh san fhòrmat $(OWNFORMAT)?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "Fòrmat faidhle:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "Tha na leanas am broinn na sgrìobhainne:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr "Co-~fhaclair..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Cha deach clò-bhualadair bunaiteach a lorg.\nTagh clò-bhualadair is feuch ris a-rithist."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Cha do ghabh an clò-bhualadair a thòiseachadh.\nCuir sùil air rèiteachadh a'chlò-bhualadair agad."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Chaidh an sgrìobhainn seo fhòrmatadh airson a' chlò-bhualadair $1. Chan eil an clò-bhualadair sin ri làimh.\nA bheil thu airson an clò-bhualadair bunaiteach $2 a chleachdadh?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr " (ri leughadh a-mhàin)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Chaidh meud is comhair na duilleige atharrachadh.\nA bheil thu airson na roghainnean ùra a\nshàbhaladh san sgrìobhainn bheò?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "Chaidh meud na duilleige atharrachadh.\nA bheil thu airson na roghainnean ùra\na shàbhaladh san sgrìobhainn bheò?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Chaidh meud is comhair na duilleige atharrachadh.\nA bheil thu airson na roghainnean ùra a\nshàbhaladh san sgrìobhainn bheò?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

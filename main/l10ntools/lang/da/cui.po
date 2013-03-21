@@ -149,7 +149,7 @@ msgstr "Gem tastaturkonfiguration"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.String.Text
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "Konfiguration"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.String.Text
 msgid  "My Macros"
@@ -697,7 +697,7 @@ msgstr "Slet..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "Bemærk:\nStørrelsen af ikonet skal være på 16x16 billedpunkter for at opnå bedste kvalitet. Ikoner på andre størrelser vil blive skaleret automatisk."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -705,7 +705,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
-msgstr ""
+msgstr "Filerne herunder kunne ikke importeres.\nFilformatet kunne ikke fortolkes."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -717,7 +717,7 @@ msgstr "Er du sikker på, at billedet skal slettes?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "Ikonet %ICONNAME er allerede en del af listen over billeder.\nVil du erstatte det eksisterende ikon?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1577,7 +1577,7 @@ msgstr "Bekræft password"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "Bemærk: Når et password er sat, kan dokumentet kun åbnes med "
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FixedLine.Text
 msgid  "File sharing password"
@@ -1857,7 +1857,7 @@ msgstr "~Slet"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
+msgstr "Om %PRODUCTNAME"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
 msgid  "License..."
@@ -1885,7 +1885,7 @@ msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
-msgstr ""
+msgstr "er ikke tilgængelig for stavekontrollen.\nKontroller din installation og installer det ønskede sprog\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -2945,7 +2945,7 @@ msgstr "Type"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
 msgid  "~And"
-msgstr ""
+msgstr "Og"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 msgid  "~Or"
@@ -3057,7 +3057,7 @@ msgstr "Makrosikkerhed..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "Deaktivering af funktionen med at gemme adgangskoder sletter den gemte liste af adgangskoder og nulstiller hovedadgangskoden.\n\nVil du slette adgangskodelisten og nulstille hovedadgangskoden?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
@@ -3065,7 +3065,7 @@ msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Bemærk, at du deaktiverer JavaScript samtidig med Java.\n\nVil du stadig deaktivere Java?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3613,15 +3613,15 @@ msgstr "Opret databasekæde"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\\n$file$\\ndoes not exist."
-msgstr ""
+msgstr "Filen\n$file$\nfindes ikke."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\\n$file$\\ndoes not exist in the local file system."
-msgstr ""
+msgstr "Filen\n$file$\nfindes ikke i det lokale filsystem."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
-msgstr ""
+msgstr "Navnet '$file$' er allerede brugt til en anden database.\nVælg et andet navn."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -4329,7 +4329,7 @@ msgstr "Bruges ODF 1.2 udvidet ikke, kan information gå tabt."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr "Brug af \"%1\" som standardfilformat kan medføre informationstab.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4341,7 +4341,7 @@ msgstr "Forbedringsprogram"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "Vi inviterer dig til at deltage i vores %PRODUCTNAME-forbedringsprogram for at hjælpe med at optimere kvaliteten af %PRODUCTNAME.\n\nHvis du vil deltage, vil vi indsamle anonym statistik på, hvordan du bruger %PRODUCTNAME. Data bruges til at identificere brugsmønstre.\n\n%PRODUCTNAME-forbedringsprogrammet vil ikke indsamle personlige data eller dokumentindhold."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
@@ -5033,7 +5033,7 @@ msgstr "~Luk"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "Det angivne navn findes allerede.\nIndtast et nyt navn."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 msgid  "Do you want to change the '%1' dictionary language?"

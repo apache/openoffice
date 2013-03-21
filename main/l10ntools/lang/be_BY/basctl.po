@@ -137,7 +137,7 @@ msgstr "Запісаць"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Выточны тэкст занадта ёмісты, і яго немагчыма ані запісаць, ані скампіляваць.\nВыньце з яго частку каментароў або перанясіце частку метадаў у іншы модуль."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Файл 'XX' ужо існуе"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
-msgstr ""
+msgstr "Немагчыма выканаць гэты макрас з меркаванняў бяспекі.\n\nБольш падрабязна гл. у настаўленнях бяспекі."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "Патрабуецца ўведзеная назва."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr ""
+msgstr "Пасля гэтага выпраўлення трэба будзе перастартаваць праграму.\nЦі жадаеце працягваць?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Імпартаванне дыялогу - назва ўжо занята
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
-msgstr ""
+msgstr "Бібліятэка ўжо ўтрымлівае дыялог з назвай:\n\n$(ARG1)\n\nНазавіце дыялог іначай, каб пакінуць наяўны, або каб яго замяніць.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Імпартаванне дыялогу - не супадаюць мов
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
-msgstr ""
+msgstr "Дыялог, які імпартуецца, падтрымлівае іншыя мовы, чым мэтавая бібліятэка.\n\nМожна дадаць гэтыя мовы ў бібліятэку, каб захаваць дадатковыя моўныя магчымасці дыялогу, або можна нічога з гэтым не рабіць.\n\nЗаўвага: для моваў, якія не падтрымліваюцца дыялогам, будуць скарыстаныя моўныя прадвызначэнні дыялогу.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"

@@ -149,7 +149,7 @@ msgstr "விசைப்பலகை கட்டமைப்பை சேம�
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.String.Text
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "கட்டமைப்பு"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.String.Text
 msgid  "My Macros"
@@ -697,7 +697,7 @@ msgstr "Delete..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "Note:\nThe size of the icons must be 16x16 pixels for them to be successfully imported."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -705,7 +705,7 @@ msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
-msgstr ""
+msgstr "The files listed here could not be imported. The icons are not the required 16x16 pixels in size."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -717,7 +717,7 @@ msgstr "இந்த படத்தை நீங்கள் அழிக்க
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "இத்ம சின்னம் %ICONNAME ஏற்கனவே படப் பட்டியலை கொண்டுள்ளது.\nஉள்ளிருக்கும் சின்னத்தை  மாற்ற நீங்கள் விரும்புகிறீர்களா?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -2065,27 +2065,22 @@ msgid  "Close"
 msgstr "முடிவு"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
-#, fuzzy
 msgid  "Special Characters"
 msgstr "சிறப்பான எழுத்துகள்"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "~Font"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
-#, fuzzy
 msgid  "~Subset"
 msgstr "துணையமைவு (~S)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
-#, fuzzy
 msgid  "Characters:"
 msgstr "எழுத்துகள்:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Delete"
 
@@ -2118,8 +2113,9 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
-msgstr ""
+msgstr "பிழைத் திருத்தலுக்கு கிடைக்கவில்லை\nநிறுவுதலைச் சரிபார்க்கவும். தேவையான மொழியை நிறுவுக.\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -3414,8 +3410,9 @@ msgid  "Type"
 msgstr "வகை"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
+#, fuzzy
 msgid  "~And"
-msgstr ""
+msgstr "மற்றும்"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 #, fuzzy
@@ -3553,16 +3550,18 @@ msgid  "Macro Security..."
 msgstr "Macro Security..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
+#, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -4219,33 +4218,28 @@ msgid  "Name of color scheme"
 msgstr "Name of color scheme"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~Database file"
 msgstr "தரவுத்தள கோப்பு (~D)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "~Browse..."
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "Registered ~name"
 msgstr "பதிவு செய்யப்பட்ட பெயர் (~n)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
-#, fuzzy
 msgid  "Edit Database Link"
 msgstr "தரவுத்தள இணைப்பை திருத்து"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
-#, fuzzy
 msgid  "Create Database Link"
 msgstr "தரவுத்தள இணைப்பை உருவாக்கு"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\\n$file$\\ndoes not exist."
-msgstr ""
+msgstr "இந்த கோப்பு\n$file$\nஉள்ளிருக்கவில்லை."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\\n$file$\\ndoes not exist in the local file system."
@@ -4253,10 +4247,9 @@ msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
-msgstr ""
+msgstr "இந்த பெயர் '$file$' ஏற்கனவே மற்றொரு தரவுத்தளத்தில் பயன்படுத்தப்பட்டது.\nஒரு வித்தியாசமான பெயரை தேர்ந்தெடு."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "நீங்கள் இந்த உள்ளிட்டை அழிக்க விரும்புகிறீர்களா?"
 
@@ -4937,57 +4930,46 @@ msgid  "You have to restart %PRODUCTNAME so the new or modified values can take 
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
-#, fuzzy
 msgid  "Connection pool"
 msgstr "இனைக்கும் குவியல்."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
-#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "இனைக்கும் குவியலை செயல்படுத்துதல்."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
-#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr " %PRODUCTNAME    இயக்கில் தெரியும்."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
-#, fuzzy
 msgid  "Current driver:"
 msgstr "தற்போதைய இயக்கி"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
-#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "குவியலை  இயக்கி  செயல்படுத்துதல்."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
-#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "காலம் கடந்தது(நொடிகள்) "
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
-#, fuzzy
 msgid  "Driver name"
 msgstr "இயக்கி பெயர்"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
-#, fuzzy
 msgid  "Pool"
 msgstr "குவியல்."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
-#, fuzzy
 msgid  "Timeout"
 msgstr "நேரம் கடந்து"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ஆம்"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "இல்லை"
 
@@ -5132,8 +5114,9 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "Note: Not using OpenDocument as the default format may cause formatting or content to be lost."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr "Using \"%1\" as default file format may cause information loss.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5146,8 +5129,9 @@ msgid  "Improvement Program"
 msgstr "Improvement Program"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
+#, fuzzy
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5858,27 +5842,22 @@ msgid  "This setting is protected by the Administrator"
 msgstr "This setting is protected by the Administrator"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CheckBox.Text
-#, fuzzy
 msgid  "~Apply replacement table"
 msgstr "மாற்று பட்டியலை பயன்படுத்து"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT1.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "எழுத்துரு"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT2.FixedText.Text
-#, fuzzy
 msgid  "Re~place with"
 msgstr "மாற்றுதல்"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.ToolBoxItem.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "செயல்படுத்தல்"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "அழித்தல்"
 
@@ -5887,37 +5866,30 @@ msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr ""
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FixedText.Text
-#, fuzzy
 msgid  "Fonts"
 msgstr "எழுத்துருக்கள்"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_NONPROP.CheckBox.Text
-#, fuzzy
 msgid  "Non-proportional fonts only"
 msgstr "Non-proportional fonts only"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "அளவு"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "Always"
 msgstr "எப்போதும்"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "Screen only"
 msgstr "Screen only"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "எழுத்துரு"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.String.Text
-#, fuzzy
 msgid  "Replace with"
 msgstr "இதனுடன் மாற்று"
 
@@ -5997,8 +5969,9 @@ msgid  "~Close"
 msgstr "மூடு"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
+#, fuzzy
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "The specified name already exists.\nPlease enter a new name."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6215,37 +6188,30 @@ msgid  "Do you want to delete the dictionary?"
 msgstr "அகராதியை நீக்க வேண்டுமா?"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
-#, fuzzy
 msgid  "Registered databases"
 msgstr "பதிவு செய்யப்பட்ட தரவுத்தளங்கள்"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Registered name"
 msgstr "Registered name"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
-#, fuzzy
 msgid  "Database file"
 msgstr "Database file"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "புதிய..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "திருத்துதல்..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "அழித்தல்"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
-#, fuzzy
 msgid  "Registered databases"
 msgstr "பதிவு செய்யப்பட்ட தரவுத்தளங்கள்"
 
@@ -7498,8 +7464,9 @@ msgid  "O~uter"
 msgstr "வெ~ளியே"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
+#, fuzzy
 msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "விளிம்புகள் அச்சடிக்கும் எல்லையை மீறிகின்றன. தொடர விருப்பமா? "
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -8543,8 +8510,9 @@ msgid  "Assigned macro"
 msgstr "ஒதுக்கப்பட்ட மேக்ரோ"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
+#, fuzzy
 msgid  "~Existing macros\\n"
-msgstr ""
+msgstr "உள்ளிருக்கும் மேக்ரோவினுள் (~E):\n"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 #, fuzzy
@@ -9011,8 +8979,9 @@ msgid  "Do you want to delete the gradient?"
 msgstr "சாய்வுகோணத்தை நீக்கவா?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
+#, fuzzy
 msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -9030,8 +8999,9 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "பிட்டுப்படத்தை நீக்கவா?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
+#, fuzzy
 msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9044,8 +9014,9 @@ msgid  "Do you want to delete the line style?"
 msgstr "கோட்டுப் பாங்கை நீக்கவா?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
+#, fuzzy
 msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "The line style was modified without saving. \nModify the selected line style or add a new line style."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9058,8 +9029,9 @@ msgid  "Do you want to delete the hatching?"
 msgstr "இடைவெளியை நீக்கவா?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9082,8 +9054,9 @@ msgid  "Do you want to delete the color?"
 msgstr "வண்ணத்தை நீக்கவா?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
+#, fuzzy
 msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
-msgstr ""
+msgstr "The color was modified without saving.\nModify the selected color or add a new color."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9106,8 +9079,9 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "பட்டி சேமிக்கப்படாமல் மாற்றபபடடது. பட்டியை தற்போது சேமிக்கவா?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name you have entered already exists. \\nPlease choose another name."
-msgstr ""
+msgstr "The name you have entered already exists. \nPlease choose another name."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9120,8 +9094,9 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "அம்புமுனையை நீக்கவா?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -10188,32 +10163,26 @@ msgid  "Alignment"
 msgstr "ஒழுங்கு"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
-#, fuzzy
 msgid  "Text alignment"
 msgstr "உரைச் சீரமைப்பு"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "கிடைமட்டம்"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "முன்னிருப்பு"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "இடது"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
-#, fuzzy
 msgid  "Center"
 msgstr "மையம்"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "வலது"
 

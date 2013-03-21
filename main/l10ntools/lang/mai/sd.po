@@ -217,7 +217,7 @@ msgstr "स्लाइडक स्थान परिवर्तन करू
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "पर्याप्त स्मृति नहि! \n क्रिया केँ छाड़ि देल गेल."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1733,7 +1733,7 @@ msgstr "कृपया नवीन तीरक चोटी कलेल ए�
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "चुनल नाम पहिलेसँ मौजूद अछि. \n कृपया आन नाम दिअ'."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1805,7 +1805,7 @@ msgstr "स्लाइडसभकेँ घुसाबू"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "की अहाँ ई स्तरकेँ मेटाएब कलेल निश्चित अछि \"$\"? \n नोट: ई स्तर पर सभ वस्तुकेँ मेटाए देल जाएत !"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "पाठ फ्रेम जोड़ू"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "ई कार्यकेँ चलाबल नहि जाय सकैत अछि \n चुनल वस्तुक साथ."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "फाइलकेँ लोड नहि कए सकैत अछि!
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "नवीन पृष्ठक प्रारूप अनुकूलित कएल जाएत. \n की अहाँ वस्तुकेँ शामिल कएनाइ चाहैत छी?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "संपादन करू (~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "ई काज, क्रियाक सूचीकेँ मेटबैत अछि जकरा \nbe वापस कएल जाय सकैत अछि. दस्तावेजमे बनाएल बदलाव अखनो मान्य अछि,\n मुदा वापस नहि कएल जाय सकैत अछि. की अहाँ जारी रखनाइ चाहैत छी आओर \n ई प्रकार नवीन स्लाइड डिजायन नियत करू?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "निर्दिष्ट कएल मुद्रकमे दस्
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "आरेख एकटा दस्तावेजसँ लिंक अछि. \n की अहाँ आरेखकेँ संपादित करबाक लेल लिंक हटाएब चाहैत छी?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (बाहरी रूपरेखा)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "निर्दिष्ट मापक अवैध अछि.\n की अहाँ एकटा नवीन दिअ' चाहैत छी?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2301,7 +2301,7 @@ msgstr "सभ रेखाचित्र वस्तुसभकेँ अल
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "ई नामक साथ एकटा डिजायन पहिलेसँ मौजूद अछि \n की अहाँ एकरा प्रतिस्थापित कएनाइ चाहैत छी?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "आलेखी फिल्टर"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "फाइल %\n एकटा वैध ध्वनि फाइल नहि अछि!"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

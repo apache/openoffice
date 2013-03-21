@@ -941,11 +941,11 @@ msgstr "E~zabatu"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ImageMap aldatu egin da.\nAldaketa horiek gorde nahi dituzu?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ImageMap aldatu egin da.\nAldaketa horiek gorde nahi dituzu?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "%PRODUCTNAME aplikazioaren dokumentu-berreskuratzea"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Sakatu 'Hasi berreskuratzea' behean zerrendatutako dokumentuen berreskuratze-prozesuari ekiteko.\n\n'Egoera' zutabeak dokumentua berreskura daitekeen erakusten du."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Berreskuratutako dokumentuen egoera:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Dokumentu-izena\tEgoera"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "Kraskadurari buruzko txostena sortu da %PRODUCTNAME zergatik hondatu den
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "Zure dokumentuak berreskuratu dira. Egin klik 'Amaitu' botoian zure dokumentuak ikusteko. "
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "Ziur zaude %PRODUCTNAME aplikazioaren dokumentu-berreskuratzea bertan be
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Berreskuratze-prozesu automatikoa eten egin da.\n\nBehean zerrendatutako dokumentuak behean adierazten den karpetan gordeko dira 'Gorde' sakatzen baduzu. Sakatu 'Utzi' morroia dokumentuak gorde gabe ixteko."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "Ongi etorri %PRODUCTNAME %PRODUCTVERSION aplikazioaren erroreen berri em
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "Erroreen berri emateko tresna honek informazioa biltzen du %PRODUCTNAME nola dabilen jakiteko, eta informazio hori Oracle-ra bidaltzen du etorkizuneko bertsioak hobetzen laguntzeko.\n\nErraza da; txostena bidaltzeko ez duzu esfortzu handirik egin behar, nahikoa da hurrengo elkarrizketa-koadroko 'Bidali' botoian klik egitea, edo, bestela, errorea nola gertatu den labur deskriba dezakezu, eta gero, sakatu 'Bidali'. Txostena ikusi nahi baduzu, sakatu 'Erakutsi txostena' botoia. 'Ez bidali' sakatzen baduzu, ez da daturik bidaliko.\n\nBezeroaren pribatutasuna\nErrorea gertatzean %PRODUCTNAME %PRODUCTVERSION(r)en egoera nolakoa zen bakarrik zehazten du bildutako informazioak. Pasahitzei edo dokumentuen edukiari buruzko informaziorik ez da biltzen.\n\nInformazioa %PRODUCTNAME aplikazioaren kalitatea hobetzeko bakarrik erabiliko da, eta ez da hirugarrenekin partekatuko.\nOracle-ren pribatutasun-politikari buruz informazio gehiago lortzeko, bisitatu\nwww.oracle.com/html/services-privacy-policy.html"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "~Aukerak..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "~Oracle-ri txosten honi dagokionez nirekin harremanetan jartzeko baimena ematen diot."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "~Ataka"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME aplikazioaren erroreen berri emateko tresnak Internet konexioa behar du errore-txostenak bidaltzeko.\nEnpresek sarritan proxy zerbitzariak suebakiekin batera erabiltzen dituzte sarea babesteko.\nZure kasuan ere hala bada, zerbitzariaren helbidea eta ataka zehaztu behar dituzu."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Ingerada aldatu egin da.\nAldaketak gorde nahi dituzu?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "Ingerada berria sortu nahi duzu?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Laneko area berria sortzean\ningerada ezabatu egingo da.\nZiur zaude jarraitu nahi duzula?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "Sarrera behar da '#' eremuan. Sartu balio bat."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Sarrera badago lehendik.\nAukeratu beste izen bat."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# erregistro ezabatuko dira."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Bai sakatzen baduzu, ezingo duzu eragiketa hau desegin!\nHala ere jarraitu nahi duzu?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Gaiaren izena ez da baliozkoa!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Ziur zaude objektu hau\nezabatu nahi duzula?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Ziur zaude gai hau\nezabatu nahi duzula?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "Estekatutako fitxategia ezabatu nahi duzu?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Fitxategia ezin da ireki.\nBilaketarako beste bide-izen bat sartu nahi duzu? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "Ant~olatzailea..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Gaiaren izen horik badago lehendik.\nAukeratu beste bat."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -6521,7 +6521,7 @@ msgstr "Zehaztutako tresna baliogabea da"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
 msgid  "The object cannot be accessed\\ndue to insufficient user rights."
-msgstr ""
+msgstr "Objektua ezin da atzitu erabiltzailearen eskubideak nahikoak ez izateagatik"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
 msgid  "Sharing violation while accessing the object."
@@ -6533,7 +6533,7 @@ msgstr "Toki gehiagorik ez tresnan."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
 msgid  "This operation cannot be run on\\nfiles containing wildcards."
-msgstr ""
+msgstr "Operazio hau ezin da bideratu balio aniztuneko karaktere beziak dituzten fitxategietan"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
 msgid  "This operation is not supported on this operating system."
@@ -6617,7 +6617,7 @@ msgstr "Fitxategia ezin da erabili txantiloia bezala"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
 msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
-msgstr ""
+msgstr "Dokumentuaren informazioa ezin da irakurri fitxategitik,\ninformazioaren formatua ezezaguna izateagatik edo informaziorik ez egoteagatik."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
 msgid  "This document has already been opened for editing."
@@ -6649,11 +6649,11 @@ msgstr "Ezin izan da bideratu $(ARG1)-ko lotura Interneten"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
 msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "Akatsa irakurtzean datuak Internetetik. \nZerbitzariaren akats-mezua: $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
 msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "Akatsa eramatean datuak Internetera. \nZerbitzariaren akats-mezua: $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
 msgid  "General Internet error has occurred."
@@ -6765,7 +6765,7 @@ msgstr "Bide bat instalatzeko harpidetza direktorio bat behar da."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
 msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
-msgstr ""
+msgstr "Dokumentu honek aukeratutako formatuan gorde ezin diren atributuak ditu.\nGorde, mesedez, dokumentua %PRODUCTNAME %PRODUCTVERSION -(r)en fitxategi-formatu batean."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
 msgid  "The file $(FILENAME) cannot be saved. Please check your system settings. You can find an automatically generated backup copy of this file in folder $(PATH) named $(BACKUPNAME)."
@@ -6781,19 +6781,19 @@ msgstr "Ezin izan da sortu segurtasun kopia."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
 msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
-msgstr ""
+msgstr "Makro bat egikaritzeko saio bat egin da.\nSegurtasun arrazoiengatik, makroak egikaritzea ezgaitu da."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
 msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
-msgstr ""
+msgstr "Dokumentu honek makroak ditu.\n\nMakroek birusak izan ditzakete. Makroak egikaritzea debekatuta dago Tresnak - Aukerak - %PRODUCTNAME - Segurtasuna-n orain indarrean dauden segurtasun aukerengatik.\n\nBeraz, litekeena da funtzio batzuk ez egotea erabilgarri."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
 msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "Digitalki sinatutako dokumentuaren edukia eta/edo makroak ez datoz bat dokumentuaren sinadurarekin.Dokumentua manipulatua edo transmititzerakoan hondatua izateagatik izan daiteke.Dokumentu honen edukia ontzat ez hartzea aholkatzen dizugu."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
 msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "Enkriptatutako dokumentua ustekabeko enkriptatu gabeko segidak ditu.\nDokumentua manipulatua egoteagatik izan daiteke.\nDokumentu honen edukia ontzat ez hartzea aholkatzen dizugu.\nMakroak egikaritzeko ezgaituta dago dokumentu hau."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
 msgid  "Invalid data length."
@@ -6821,7 +6821,7 @@ msgstr "Funtzio ezinezkoa: idaztearen aurkako babesa."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
 msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
-msgstr ""
+msgstr "Ezin da jarri edo aldatu pasahitza partekatutako kalkulu-orri batean.Desaktibatu lehenago partekatze modua."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
 msgid  "INSRT"

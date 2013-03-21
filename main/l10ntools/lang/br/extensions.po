@@ -57,7 +57,7 @@ msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME a ro tu da haezadur ar chomlec'hioù bezañt war ho reizhiad. Krouiñ un tarzh roadennoù eus %PRODUCTNAME, ma vo ho karnedoù chomlec'hioù anezho evel taolennoù, zo ret d'an arc'hwel-mañ.\n\nAr skoazeller a ro sikour deoc'h a-benn krouiñ an tarzh roadennoù-mañ."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Tarzh roadennoù diavaez all"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Stlennoù ouzhpenn zo azgoulennet evit arventenniñ an tarzh roadennoù nevez.\n\nArverit an afell amañ dindan da zigeriñ ur voestad emziviz all o reiñ tu da zespizañ an arventennoù o vankout."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Arventennoù"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Ar c'hennaskañ ouzh ar stlennvon n'eo ket bet evit bezañ adsavet. \nA-raok kenderc'hel ganti, gwiriit an arventennañ graet pe zibabit (war ar bajenn gent) ur rizh all evit tarzh roadennoù ar chomlec'hioù."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "An tarzh roadennoù diavaez ho peus dibabet a zo gantañ meur a garned chomlec'hioù.\nDiuzit an hini a fell deoc'h labourat gantañ ar muiañ :"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "A-benn bezañ evit arverañ roadennoù ar chomlec'hioù er patromoù ez eo ret da %PRODUCTNAME anaout ar maeziennoù oc'h enderc'hel ar roadennoù louerel.\n\nSkouer : ar chomlec'hioù postel a c'hallo bezañ kavadet en ur vaezienn resis hag a c'hallot envel evel ma plijo deoc'h (e-mail, postel, malad...)\n\nArverit an afell amañ dindan da c'hervel ur voest emziviz all o reiñ tu da zespizañ an arventennoù-mañ evit an tarzh roadennoù."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Bodet eo an holl stlennoù azgoulennet evit enframmañ roadennoù ar chomlec'hioù e %PRODUCTNAME bremañ.\n\nEuvrit bremañ an anv ma fell deoc'h enrollañ an tarzh roadennoù e %PRODUCTNAME didanañ."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "Roadennoù ar chomlec'hioù - Deverkañ ar maeziennoù"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Maezienn ebet deverket.\nMa ne fell ket deoc'h ober an deverkañ evit ar mare e c'hallot e ober diwezhatoc'h dindan :\n\"Restr - Patrom teul - Tarzh ar c'harned chomlec'hioù...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "Tarzh roadennoù"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "N'haller ket deverkañ an anvioù bannoù :\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "Reoliñ"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "War an tu dehou emañ meneget holl daolennoù tarzh roadennoù ar furmskrid.\n\n\nDiuzit an taolennoù ma vo ret o roadennoù da dalvezout da ziazez da endalc'had ar rollad :"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Roadennoù"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Ar furmskrid, ma'z eo ar reolerezh dezhañ, n'eo ket kennasket ouzh un tarzh roadennoù. \n\nDiuzit un tarzh roadennoù hag un daolenn. \n\n\n Ouzhpenn, notennit ma vo engwerc'het an arventennoù erspizet amañ evit ar furmskrid diouzhtu ma vo kuitaet ar bajenn-mañ ganeoc'h."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -737,7 +737,7 @@ msgstr "Donedigezh vat"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION OEM - Donemat !\n\nKent bezañ evit loc'hañ %PRODUCTNAME %PRODUCTVERSION OEM ez eo ret deoc'h erspizañ ho roadennoù pivelezh war ar bajennad da-heul al lañvaz er voest emziviz. Ar restr Readme - MaLennit - (lec'hiet er c'havlec'hiad %PRODUCTNAME) a zo ennañ titouroù pouezus diwar-benn ar goulev. Please read these files carefully. You can also find detailed information at the Sun website \n\nhttp://www.sun.com/staroffice.\n\nSupport and Training:\n\nGet FREE software support valid for 60 days from date of purchase. To take advantage of this offer, visit the website below.\n\nhttp://www.sun.com/star/service\n\nWe hope you enjoy working with %PRODUCTNAME."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -817,7 +817,7 @@ msgstr "Furmskridoù"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Fellout a ra deoc'h dilemel rizh roadennoù #type# ar patrom ?\nTizhet e vo an holl reolerezhioù kenerenet ouzh ar rizh roadennoù-mañ."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "Euvrit anv ar rizh roadennoù nevez :"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "~Stlenn a-fet an drobarzhell"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Krouiñ\nun alberz"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "C'hwilerver"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Trobarzhell : %s\nOberier : %s\nPatrom : %s\nRizh : %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2405,7 +2405,7 @@ msgstr "Hizivaet eo bet %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "Hegerz eo %PRODUCTNAME %NEXTVERSION.\n\nAn handelv staliet zo %PRODUCTNAME %PRODUCTVERSION.\n\nNotennit : Kent pellgargañ un hizivadenn, bezit asur hoc'h eus ar gwirioù haeziñ evit he staliañ.\nMarteze e vo goulennet ur ger tremen, ent boas hini an ardead pe ger tremen ar wrizienn."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Pellgargadur eus %PRODUCTNAME %NEXTVERSION gannet e"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME zo bet pellgarget davit %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "N'eo ket hegerz evit bremañ pellgargañ emgefreek an hizivadennoù.\n\nKlikañ war 'Pellgargañ...' evit pellgargañ %PRODUCTNAME %NEXTVERSION dre zorn diouzh al load internet."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."

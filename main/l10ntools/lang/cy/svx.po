@@ -941,11 +941,11 @@ msgstr "~Dileu"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae'r Map Delwedd wedi newid.\n Hoffech chi gadw'r newid?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae'r Map Delwedd wedi newid.\n Hoffech chi gadw'r newid?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "Adfer Dogfen %PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Cliciwch 'Cychwyn Adfer' i gychwyn y broses o adfer y dogfennau isod.\n\nMae'r golofn 'Statws' yn dangos os oedd modd adfer y ddogfen."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Statws dogfennau wedi eu hadfer:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Enw Dogfen"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "Crëwyd adroddiad am y chwalfa i'n cynorthwyo i adnabod y rheswm pam chw
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "Cwblhawyd adfer eich dogfennau.\nCliciwch 'Gorffen' i weld eich dogfennau."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "Ydych chi'n siŵr eich bod am ddiddymu adfer dogfen %PRODUCTNAME?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Ymyrrwyd ar y broses o adfer awtomatig.\n\nBydd y dogfennau rhestrir isod yn cael eu cadw yn y ffolder enwyd isod drwy glicio 'Cadw'. Cliciwch 'Diddymu' i gau'r dewin heb gadw'r dogfennau."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "Croeso i Adroddiad Gwall %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "Mae'r offeryn adrodd ar wallau yn casglu gwybodaeth am sut mae %PRODUCTNAME yn gweithio a'i anfon at Oracle i gynorthwyo i wella fersiynau'r dyfodol.\n\nMae'n hawdd - anfonwch yr adroddiad yn ddiffwdan drwy glicio 'Anfon' yn y deialog nesaf, neu gallwch ddisgrifio'n fyr sut ddigwyddodd y gwall a chicio 'Anfon'. Os hoffech weld yr adroddiad, cliciwch 'Adroddiad' Ni fydd data'n cael ei anfon os cliciwch 'Peidio Anfon'.\n\nPreifatrwydd Cwsmeriaid\nMae'r wybodaeth sy'n cael ei gasglu wedi ei gyfyngu i ddata am gyflwr %PRODUCTNAME %PRODUCTVERSION pan ddigwyddodd y gwall. Nid yw gwybodaeth am gyfrineiriau neu gynnwys dogfennau'n cael ei gasglu.\n\nDim ond ar gyfer gwella ansawdd %PRODUCTNAME y bydd gwybodaeth yn cael ei gasglu ac ni fydd yn cael ei rannu gyda trydydd parti.\nAm rhagor o wybodaeth ar bolisi preifatrwydd Oracle, ewch i\nwww.oracle.com/html/services-privacy-policy.html"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "~Dewisiadau..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "~Rwy'n caniatáu i Oracle gysylltu â mi ynghylch yr adroddiad hwn."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "~Porth"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Rhaid i offeryn Adrodd Gwall %PRODUCTNAME fod wedi ei gysylltu â'r Rhyngrwyd i anfon adroddiad gwall.\n Mae cwmnïau yn aml yn defnyddio gweinyddion dirprwyol ynghyd â muriau cadarn i amddiffyn y rhwydwaith.\nOs yw hyn yn wir yn eich achos chi, rhaid i chi enwi'r cyfeiriad a phorth ar gyfer y gweinydd."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae'r amlinell wedi newid.\nHoffech chi gadw'r newid?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "Creu amlinell newydd?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Bydd gosod gofod gwaith newydd\nyn a chodi i'r amlinell gael ei ddileu \nHoffech chi barhau?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "Angen mewnbwn ym maes '#''. Rhowch werth."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Cynnig yn bodoli eisoes.\nDewiswch enw arall."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# cofnod i'w dileu."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Os cliciwch Iawn ni fydd modd dadwneud y weithred!\nParhau beth bynnag?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Enw Thema Annilys"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Ydych chi wir am\nddileu'r gwrthrych?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Ydych chi wir am\nddileu'r thema?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "Hoffech chi ddileu'r ffeil gysylltiedig"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Methu agor y ffeil.\nHoffech chi gynnig llwybr chwilio arall?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "~Trefnydd...."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Mae'r thema'n bodoli eisoes.\nDewiswch un arall."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -6521,7 +6521,7 @@ msgstr "Mae'r ddyfais hon yn annilys"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
 msgid  "The object cannot be accessed\\ndue to insufficient user rights."
-msgstr ""
+msgstr "Methu cael mynediad i'r gwrthrych\noherwydd hawl defnyddiwr annigonol."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
 msgid  "Sharing violation while accessing the object."
@@ -6533,7 +6533,7 @@ msgstr "Dim rhagor o le ar y ddyfais"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
 msgid  "This operation cannot be run on\\nfiles containing wildcards."
-msgstr ""
+msgstr "Methu rhedeg y weithred ar\nffeiliau'n cynnwys wildcards"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
 msgid  "This operation is not supported on this operating system."
@@ -6617,7 +6617,7 @@ msgstr "Methu defnyddio'r ffeil fel templed"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
 msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
-msgstr ""
+msgstr "Methu darllen gwybodaeth am y ddogfen o'r ffeil \nam fod fformat gwybodaeth y ddogfen yn anhysbys\nneu nid yw'n bodoli."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
 msgid  "This document has already been opened for editing."
@@ -6649,11 +6649,11 @@ msgstr "Methu creu cyswllt Rhyngrwyd i $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
 msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "Gwall darllen data o'r Rhyngrwyd\n.Neges gwall gweinydd: $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
 msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
-msgstr ""
+msgstr "Gwall trosglwyddo data i'r Rhyngrwyd.\nNeges gwall gweinydd: $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
 msgid  "General Internet error has occurred."
@@ -6765,7 +6765,7 @@ msgstr "Rhaid cael ffolder tanysgrifio i osod Sianel."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
 msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
-msgstr ""
+msgstr "Mae'r ddogfen yn cynnwys priodoleddau nad oes modd eu cadw o fewn y fformat dewisiwyd.\nCadwch y ddogfen yn fformat ffeil %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
 msgid  "The file $(FILENAME) cannot be saved. Please check your system settings. You can find an automatically generated backup copy of this file in folder $(PATH) named $(BACKUPNAME)."
@@ -6781,19 +6781,19 @@ msgstr "Methu creu copi wrth gefn."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
 msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
-msgstr ""
+msgstr "Gwaned ymgais i weithredu macro.\nAm resymau diogelwch, mae cefnogaeth i facros wedi ei atal."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
 msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
-msgstr ""
+msgstr "Mae'r ddogfen hon yn cynnwys macros.\n\nMae macros yn gallu cynnwys firysau. Mae gweithredu macros wedi ei atal oherwydd gosodiadau cyfredol macros yn - Offer - Dewisiadau - %PRODUCTNAME - Diogelwch.\n\nFelly, efallai nad yw'r holl swyddogaethau ar gael."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
 msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "Nid yw'r cynnwys dogfen â llofnod digidol a neu'r macros yn cydweddu llofnod y ddogfen gyfredol.\n\nGall hyn fod o ganlyniad i driniaeth o'r ddogfen neu ddifrod i strwythur y ddogfen drwy ei drosglwyddo.\n\nRydym yn argymell nad ydych yn ymddiried yng nghynnwys y ddogfen hon.\nMae gweithredu macros yn y ddogfen hon wedi ei hatal.\n "
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
 msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
-msgstr ""
+msgstr "Mae'r ddogfen amgryptiedig hon yn cynnwys llif anamgryptiedig annisgwyl.\n\nGall hyn fod oherwydd i'r ddogfen gael ei cham-drin.\n\nRydym yn argymell nad ydych yn ymddiried yng nghynnwys y ddogfen hon.\nMae gweithredu macros yn y ddogfen hon wedi ei hatal.\n "
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
 msgid  "Invalid data length."
@@ -6821,7 +6821,7 @@ msgstr "Swyddogaeth amhosibl: amddiffyn rhag ysgrifennu."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
 msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
-msgstr ""
+msgstr "Nid oes modd gosod na newid cyfrinair taenlen wedi ei rhannu.\nAtal y modd rhannu yn gyntaf."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
 msgid  "INSRT"

@@ -137,36 +137,30 @@ msgid  "Pivot Table"
 msgstr "Датапилот"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_PAGE.FixedText.Text
-#, fuzzy
 msgid  "Page Fields"
 msgstr "Поља странице"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column Fields"
 msgstr "Поља колоне"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "Ред\nПоља"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
-#, fuzzy
 msgid  "Data Fields"
 msgstr "Поља података"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.STR_SELECT.String.Text
-#, fuzzy
 msgid  "Selection area"
 msgstr "Област избора"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Drag the fields from the right into the desired position."
 msgstr "Превуците поља са десне стране на жељену позицију."
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FL_LAYOUT.FixedLine.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "Размештај"
 
@@ -296,107 +290,86 @@ msgid  "VarP - "
 msgstr "VarP - "
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.BTN_SELECTION.RadioButton.Text
-#, fuzzy
 msgid  "~Current selection"
 msgstr "~Тренутни избор"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.BTN_DATABASE.RadioButton.Text
-#, fuzzy
 msgid  "~Data source registered in %PRODUCTNAME"
 msgstr "~Извор података регистрован у %PRODUCTNAME"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.BTN_EXTERNAL.RadioButton.Text
-#, fuzzy
 msgid  "~External source/interface"
 msgstr "~Спољни извор/сучеље"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FL_FRAME.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Избор"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FixedLine.Text
-#, fuzzy
 msgid  "Select Source"
 msgstr "Изабери извор"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_SERVICE.FixedText.Text
-#, fuzzy
 msgid  "~Service"
 msgstr "~Сервис"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_SOURCE.FixedText.Text
-#, fuzzy
 msgid  "So~urce"
 msgstr "Из~вор"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~Име"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_USER.FixedText.Text
-#, fuzzy
 msgid  "Us~er"
 msgstr "~Корисник"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_PASSWD.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "~Лозинка"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FL_FRAME.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Избор"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FixedLine.Text
-#, fuzzy
 msgid  "External Source"
 msgstr "Спољни извор"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FT_DATABASE.FixedText.Text
-#, fuzzy
 msgid  "~Database"
 msgstr "~База података"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FT_OBJECT.FixedText.Text
-#, fuzzy
 msgid  "Data so~urce"
 msgstr "Извор ~података"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FT_OBJTYPE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Врста"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Sheet"
 msgstr "Лист"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Query"
 msgstr "Упит"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql [природни]"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FL_FRAME.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Избор"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FixedLine.Text
-#, fuzzy
 msgid  "Select Data Source"
 msgstr "Изаберите извор података"
 
@@ -431,217 +404,174 @@ msgid  "Detect special numbers (such as dates)."
 msgstr "Препознај посебне бројеве (попут датума)."
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.ModelessDialog.Text
-#, fuzzy
 msgid  "Consolidate"
 msgstr "Усагласи"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Sum"
 msgstr "Збир"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Count"
 msgstr "Преброји"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Average"
 msgstr "Просек"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Max"
 msgstr "Макс."
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Min"
 msgstr "Мин."
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Product"
 msgstr "Производ"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Count (numbers only)"
 msgstr "Преброји (само бројеве)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "StDev (sample)"
 msgstr "StDev (узорак)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "StDevP (population)"
 msgstr "StDevP (популација)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Var (sample)"
 msgstr "Var (узорак)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "VarP (population)"
 msgstr "VarP (популација)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.RB_DATA_AREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.RB_DEST_AREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_FUNC.FixedText.Text
-#, fuzzy
 msgid  "~Function"
 msgstr "~Функција"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_CONSAREAS.FixedText.Text
-#, fuzzy
 msgid  "~Consolidation ranges"
 msgstr "Опсези ~усаглашавања"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_DATA_AREA.FixedText.Text
-#, fuzzy
 msgid  "~Source data range"
 msgstr "Опсег ~извора података"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_DEST_AREA.FixedText.Text
-#, fuzzy
 msgid  "Copy results ~to"
 msgstr "Копирај резултате ~у"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_BYROW.CheckBox.Text
-#, fuzzy
 msgid  "~Row labels"
 msgstr "Ознаке ~реда"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_BYCOL.CheckBox.Text
-#, fuzzy
 msgid  "C~olumn labels"
 msgstr "Ознаке ~колоне"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FL_CONSBY.FixedLine.Text
-#, fuzzy
 msgid  "Consolidate by"
 msgstr "Усагласи по"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Опције"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_REFS.CheckBox.Text
-#, fuzzy
 msgid  "~Link to source data"
 msgstr "~Повежи са извором података"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Обриши"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Додај"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_START.FixedLine.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Почетак"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Automatically"
 msgstr "~Аутоматско"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Manually at"
 msgstr "~Ручно на"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_END.FixedLine.Text
-#, fuzzy
 msgid  "End"
 msgstr "Крај"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
-#, fuzzy
 msgid  "A~utomatically"
 msgstr "А~утоматско"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
-#, fuzzy
 msgid  "Ma~nually at"
 msgstr "Ру~чно на"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_BY.FixedLine.Text
-#, fuzzy
 msgid  "~Group by"
 msgstr "~Групиши по"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
-#, fuzzy
 msgid  "Grouping"
 msgstr "Груписање"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Почетак"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_AUTOSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Automatically"
 msgstr "~Аутоматско"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_MANSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Manually at"
 msgstr "~Ручно на"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_END.FixedLine.Text
-#, fuzzy
 msgid  "End"
 msgstr "Крај"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_AUTOEND.RadioButton.Text
-#, fuzzy
 msgid  "A~utomatically"
 msgstr "А~утоматско"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_MANEND.RadioButton.Text
-#, fuzzy
 msgid  "Ma~nually at"
 msgstr "Ру~чно на"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_BY.FixedLine.Text
-#, fuzzy
 msgid  "Group by"
 msgstr "Групиши по"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_NUMDAYS.RadioButton.Text
-#, fuzzy
 msgid  "Number of ~days"
 msgstr "Број ~дана"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_UNITS.RadioButton.Text
-#, fuzzy
 msgid  "~Intervals"
 msgstr "~Интервали"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.HelpButton.Text
-#, fuzzy
 msgid  "Grouping"
 msgstr "Груписање"
 
@@ -1166,107 +1096,86 @@ msgid  "Show Detail"
 msgstr "Прикажи детаљно"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.ModalDialog.Text
-#, fuzzy
 msgid  "Text Import"
 msgstr "Увоз текста"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "Увези"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
-#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "Скуп зна~кова"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CUSTOMLANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "Језик"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
-#, fuzzy
 msgid  "From ro~w"
 msgstr "Од ред~а"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
-#, fuzzy
 msgid  "Separator options"
 msgstr "Опције раздвајача"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
-#, fuzzy
 msgid  "~Fixed width"
 msgstr "~Фиксирана ширина"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
-#, fuzzy
 msgid  "~Separated by"
 msgstr "~Раздвојено знаком"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
-#, fuzzy
 msgid  "~Tab"
 msgstr "~Табулатор"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
-#, fuzzy
 msgid  "~Comma"
 msgstr "~Запета"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
-#, fuzzy
 msgid  "~Other"
 msgstr "~Остало"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
-#, fuzzy
 msgid  "S~emicolon"
 msgstr "~Тачка са запетом"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "S~pace"
 msgstr "~Размак"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
-#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "Споји ра~здвајаче"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
-#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "Раздвајач те~кста"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_OTHER_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Other options"
 msgstr "Остале опције"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_QUOTED_AS_TEXT.CheckBox.Text
-#, fuzzy
 msgid  "~Quoted field as text"
 msgstr "~Поље у наводницима као текст"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_DETECT_SPECIAL_NUMBER.CheckBox.Text
-#, fuzzy
 msgid  "Detect special numbers"
 msgstr "Препознај поља попут бројева и датума"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_WIDTH.FixedLine.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "Поља"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Column t~ype"
 msgstr "В~рста колоне"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.STR_TEXTTOCOLUMNS.String.Text
-#, fuzzy
 msgid  "Text to Columns"
 msgstr "Текст у колоне"
 
@@ -1346,1327 +1255,1062 @@ msgid  "Settings"
 msgstr "Подешавања"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of sheets:"
 msgstr "Број листова:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of cells:"
 msgstr "Број ћелија:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of pages:"
 msgstr "Број страница:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Document: "
 msgstr "Документ: "
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Подразумевано"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "~Style"
 msgstr "~Стил"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "~Superscript"
 msgstr "~Експонент"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "S~ubscript"
 msgstr "~Индекс"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "~Поравнање"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Лево"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Десно"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Центрирано"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
-#, fuzzy
 msgid  "~Justified"
 msgstr "~Обострано поравнато"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Проред"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "~Хипервеза..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "~Уклони хипервезу"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "Те~кст..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
-#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "Доде~ли макро..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "~Првобитна величина"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Име..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Опис..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "~Обрни"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "~Усправно"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "~Водоравно"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Редослед"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Издигни"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "~Заклони"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "Вез~ник"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "До ~странице"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "На ~ћелију"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "~Поравнање"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "Трака са објектима за цртање"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Text Object Bar"
 msgstr "Палета за текст"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "Палета за слику"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
-#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "Искачући мени за објекте за цртање"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
-#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "Искачући мени за текстуалне објекте"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Име..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Опис..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Редослед"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Издигни"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "~Заклони"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "Вез~ник"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "До ~странице"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "На ~ћелију"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "~Поравнање"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
-#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "Искачући мени за објекте образца"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Last Used"
 msgstr "Последње коришћене"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "All"
 msgstr "Све"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Database"
 msgstr "База података"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Date&Time"
 msgstr "Датум и време"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Financial"
 msgstr "Финансијске"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Information"
 msgstr "Информација"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Logical"
 msgstr "Логичке"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Mathematical"
 msgstr "Математичке"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Array"
 msgstr "Потези (матрице)"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Statistical"
 msgstr "Статистичке"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Таблица"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "Текст"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Add-in"
 msgstr "Додатак"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "Уметни функцију у лист за израчунавање"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Функције"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
-#, fuzzy
 msgid  "Range"
 msgstr "Опсег"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Смањи/повећај"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
-#, fuzzy
 msgid  "Column inserted"
 msgstr "Колона убачена"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
-#, fuzzy
 msgid  "Row inserted "
 msgstr "Ред убачен "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
-#, fuzzy
 msgid  "Sheet inserted "
 msgstr "Лист је убачен "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
-#, fuzzy
 msgid  "Column deleted"
 msgstr "Колона обрисана"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
-#, fuzzy
 msgid  "Row deleted"
 msgstr "Ред обрисан"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
-#, fuzzy
 msgid  "Sheet deleted"
 msgstr "Лист је обрисан"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
-#, fuzzy
 msgid  "Range moved"
 msgstr "Опсег померен"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "Измењен садржај"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "Измењен садржај"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed to "
 msgstr "Измењено у "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
-#, fuzzy
 msgid  "Original"
 msgstr "Оригинално"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
-#, fuzzy
 msgid  "Changes rejected"
 msgstr "Измене одбачене"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
-#, fuzzy
 msgid  "Accepted"
 msgstr "Прихваћено"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
-#, fuzzy
 msgid  "Rejected"
 msgstr "Одбачено"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
-#, fuzzy
 msgid  "No Entry"
 msgstr "Нема уноса"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
-#, fuzzy
 msgid  "<empty>"
 msgstr "<празно>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
-#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "Прихватање и одбацивање измена"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Comment..."
 msgstr "Уреди коментар..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
-#, fuzzy
 msgid  "Action"
 msgstr "Акција"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Позиција"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "Author"
 msgstr "Аутор"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Опис"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
-#, fuzzy
 msgid  "Sorting"
 msgstr "Ређање"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
-#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "Разреши сукобе"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
-#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "У дељеној таблици начињене су измене које се сукобљавају. Сукобљене измене морају бити разрешене пре чувања. Задржите или сопствене или измене које су други начинили."
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "Задржи ~моје"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Other"
 msgstr "Задржи ~друге"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
-#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "~Задржи све моје"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
-#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "Задржи ~све друге"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
-#, fuzzy
 msgid  "Conflict"
 msgstr "Сукоб"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
-#, fuzzy
 msgid  "Author"
 msgstr "Аутор"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "Непознат корисник"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.ModalDialog.Text
-#, fuzzy
 msgid  "Re-type Password"
 msgstr "Унесите лозинку поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "The document you are about to export has one or more protected items with password that cannot be exported.  Please re-type your password to be able to export your document."
 msgstr "Документ садржи један или више елемент заштићен лозинком што спречава извоз. Унесите лозинку поново како бисте извезли документ."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_DOCUMENT.FixedLine.Text
-#, fuzzy
 msgid  "Document protection"
 msgstr "Заштита документа"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Непознато"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
-#, fuzzy
 msgid  "Sheet protection"
 msgstr "Заштита листа"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME1.FixedText.Text
-#, fuzzy
 msgid  "Sheet1 has a really long name"
 msgstr "Први лист има предугачко име"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS1.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Непознато"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
-#, fuzzy
 msgid  "Sheet2"
 msgstr "Лист 2"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS2.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Непознато"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET2.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
-#, fuzzy
 msgid  "Sheet3"
 msgstr "Лист 3"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS3.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Непознато"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET3.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
-#, fuzzy
 msgid  "Sheet4"
 msgstr "Лист 4"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS4.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Непознато"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET4.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PROTECTED.String.Text
-#, fuzzy
 msgid  "Not protected"
 msgstr "Није заштићено"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PASS_PROTECTED.String.Text
-#, fuzzy
 msgid  "Not password-protected"
 msgstr "Није заштићено лозинком"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_BAD.String.Text
-#, fuzzy
 msgid  "Hash incompatible"
 msgstr "Несагласан хеш"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_GOOD.String.Text
-#, fuzzy
 msgid  "Hash compatible"
 msgstr "Сагласан хеш"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_REGENERATED.String.Text
-#, fuzzy
 msgid  "Hash re-generated"
 msgstr "Хеш је поново израчунат"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.ModalDialog.Text
-#, fuzzy
 msgid  "Re-type Password"
 msgstr "Унесите лозинку поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_RETYPE_PASSWORD.RadioButton.Text
-#, fuzzy
 msgid  "Re-type password"
 msgstr "Унесите лозинку поново"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD1.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "~Лозинка"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD2.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "~Потврди"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_MATCH_OLD_PASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "New password must match the original password."
 msgstr "Нова лозинка мора бити иста као и претходна."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_REMOVE_PASSWORD.RadioButton.Text
-#, fuzzy
 msgid  "Remove password from this protected item."
 msgstr "Уклони лозинку са заштићених елемената."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
-#, fuzzy
 msgid  "Share Document"
 msgstr "Дели документ"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
-#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "Подели ову таблицу са другим корисницима"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_WARNING.FixedText.Text
-#, fuzzy
 msgid  "Note: Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr "Напомена: Промене у параметрима форматирања, као што су фонт, боја и формат записа бројева неће бити сачувани, а неке функције попут измене графика и цртежа неће бити доступне у дељеном режиму. Искључите дељени режим да повратите неопозива права приступа која су неопходна за ове промене и функције."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
-#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "Корисници који тренутно приступају овој таблици"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Име"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
-#, fuzzy
 msgid  "Accessed"
 msgstr "Приступано"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
-#, fuzzy
 msgid  "No user data available."
 msgstr "Нема доступних података о кориснику."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "Непознат корисник"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
-#, fuzzy
 msgid  "(exclusive access)"
 msgstr "(искључив приступ)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Insert Sheet"
 msgstr "Уметни лист"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Позиција"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
-#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "П~ре тренутног листа"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
-#, fuzzy
 msgid  "~After current sheet"
 msgstr "~После тренутног листа"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
-#, fuzzy
 msgid  "Sheet"
 msgstr "Лист"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
-#, fuzzy
 msgid  "~New sheet"
 msgstr "~Нови лист"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "Б~р. листова"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "Na~me"
 msgstr "~Име"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
-#, fuzzy
 msgid  "~From file"
 msgstr "~Из датотеке"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "~Избор..."
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
-#, fuzzy
 msgid  "Lin~k"
 msgstr "Ве~за"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
-#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "~Прикажи измене у таблици"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
-#, fuzzy
 msgid  "Filter settings"
 msgstr "Подешавања филтера"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "Прикажи ~прихваћене измене"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "Прикажи одбачене ~измене"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Смањи/повећај"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
-#, fuzzy
 msgid  "Show Changes"
 msgstr "Прикажи измене"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ModalDialog.Text
-#, fuzzy
 msgid  "Protect Sheet"
 msgstr "Заштити лист"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.BTN_PROTECT.CheckBox.Text
-#, fuzzy
 msgid  "P~rotect this sheet and the contents of locked cells"
 msgstr "~Заштити лист и садржај закључаних ћелија"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD1.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "~Лозинка"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD2.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "~Потврди"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Опције"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "Allow all users of this sheet to:"
 msgstr "Дозволи корисницима листа да:"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_LOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select locked cells"
 msgstr "Изабери заштићене ћелије"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_UNLOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select unlocked cells"
 msgstr "Изабери незаштићене ћелије"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
-#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "Адреса ~спољног извора података"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
-#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(Овде унесите адресу изворног документа у локалном систему датотека или на Интернету.)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
-#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "~Доступне табеле/опсези"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
-#, fuzzy
 msgid  "~Update every"
 msgstr "~Освежи на сваке"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "сек."
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
-#, fuzzy
 msgid  "External Data"
 msgstr "Спољни подаци"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "Навигатор"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
-#, fuzzy
 msgid  "Row"
 msgstr "Ред"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Row"
 msgstr "Ред"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Колона"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
-#, fuzzy
 msgid  "Column"
 msgstr "Колона"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
-#, fuzzy
 msgid  "Document"
 msgstr "Документ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "Опсег података"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Почетак"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "End"
 msgstr "Крај"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "Садржај"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "Промени"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
-#, fuzzy
 msgid  "Scenarios"
 msgstr "Сценарији"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "Режим превлачења"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "Режим превлачења"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
-#, fuzzy
 msgid  "Display"
 msgstr "Приказ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
-#, fuzzy
 msgid  "active"
 msgstr "активно"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
-#, fuzzy
 msgid  "inactive"
 msgstr "неактивно"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
-#, fuzzy
 msgid  "hidden"
 msgstr "скривено"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
-#, fuzzy
 msgid  "Active Window"
 msgstr "Активан прозор"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
-#, fuzzy
 msgid  "Scenario Name"
 msgstr "Име сценарија"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "Коментар"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "Садржај"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
-#, fuzzy
 msgid  "Sheets"
 msgstr "Листови"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
-#, fuzzy
 msgid  "Range names"
 msgstr "Имена опсега"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
-#, fuzzy
 msgid  "Database Ranges"
 msgstr "Опсег базе података"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Графика"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
-#, fuzzy
 msgid  "OLE objects"
 msgstr "OLE објекти"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "Коментари"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
-#, fuzzy
 msgid  "Linked areas"
 msgstr "Везане површине"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing objects"
 msgstr "Објекти за цртање"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "Уметни као хипервезу"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Link"
 msgstr "Уметни као везу"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Copy"
 msgstr "Уметни као копију"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Обриши"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "Својства..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
-#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "Уреди опсеге за штампу"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "Опсег за штампу"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- ништа -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- цео лист -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- кориснички дефинисано -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- selection -"
 msgstr "- избор -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
-#, fuzzy
 msgid  "Rows to repeat"
 msgstr "Редови за понављање"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- ништа -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- кориснички дефинисано -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
-#, fuzzy
 msgid  "Columns to repeat"
 msgstr "Колоне за понављање"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- ништа -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- кориснички дефинисано -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
-#, fuzzy
 msgid  "~Column and row headers"
 msgstr "~Заглавља колона и редова"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "~Мрежа"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NOTES.CheckBox.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "~Коментари"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
-#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "~Објекти/графика"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
-#, fuzzy
 msgid  "Ch~arts"
 msgstr "Гра~фици"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
-#, fuzzy
 msgid  "~Drawing objects"
 msgstr "~Објекти за цртање"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
-#, fuzzy
 msgid  "~Formulas"
 msgstr "~Формуле"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
-#, fuzzy
 msgid  "Zero ~values"
 msgstr "Нулте ~вредности"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Штампа"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
-#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "~Од врха ка дну, па десно"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "~Слева удесно, па надоле"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
-#, fuzzy
 msgid  "First ~page number"
 msgstr "Број прве ~странице"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
-#, fuzzy
 msgid  "Page order"
 msgstr "Редослед страница"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
-#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "~Размеравање"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
-#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "Умањи/увећај испис"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "Уклопи опсеге за штампање према ширини или висини"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "Уклопи опсеге за штампање према броју страница"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
-#, fuzzy
 msgid  "~Scaling factor"
 msgstr "Фактор ~размере"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width in pages"
 msgstr "~Ширина на страницама"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight in pages"
 msgstr "~Висина на страницама"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
-#, fuzzy
 msgid  "N~umber of pages"
 msgstr "~Број страница"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Размера"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
-#, fuzzy
 msgid  "Headers/Footers"
 msgstr "Заглавља/подножја"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
-#, fuzzy
 msgid  "Header"
 msgstr "Заглавље"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "Подножје"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Header (right)"
 msgstr "Заглавље (десно)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
-#, fuzzy
 msgid  "Header (left)"
 msgstr "Заглавље (лево)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Footer (right)"
 msgstr "Подножје (десно)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
-#, fuzzy
 msgid  "Footer (left)"
 msgstr "Подножје (лево)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
-#, fuzzy
 msgid  "Headers"
 msgstr "Заглавља"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
-#, fuzzy
 msgid  "Footers"
 msgstr "Подножја"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left area"
 msgstr "~Лева област"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
-#, fuzzy
 msgid  "~Center area"
 msgstr "~Средња област"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "R~ight area"
 msgstr "~Десна област"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
-#, fuzzy
 msgid  "Hea~der"
 msgstr "За~главље"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
-#, fuzzy
 msgid  "Custom header"
 msgstr "Прилагођено заглавље"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Text Attributes"
 msgstr "Особине текста"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Title"
 msgstr "Наслов"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Наслов"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
-#, fuzzy
 msgid  "File Name"
 msgstr "Име датотеке"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
-#, fuzzy
 msgid  "Path/File Name"
 msgstr "Путања/име датотеке"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Sheet Name"
 msgstr "Име листа"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Page"
 msgstr "Страница"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Pages"
 msgstr "Странице"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Time"
 msgstr "Време"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "Употребите дугмад за измену фонта или унесите имена поља као што су датум, време итд."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Note"
 msgstr "Белешка"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Уреди..."
 
@@ -2801,8 +2445,9 @@ msgid  "~Discard"
 msgstr "~Одбаци"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
+#, fuzzy
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "Обрисати\nунос\n#?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3295,86 +2940,70 @@ msgid  "~Delete"
 msgstr "~Обриши"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
-#, fuzzy
 msgid  "Format Cells"
 msgstr "Формат ћелија"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "Бројеви"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Фонт"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Ефекти фонта"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Поравнање"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "Азијска типографија"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Ивице"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Позадина"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
-#, fuzzy
 msgid  "Cell Protection"
 msgstr "Заштита ћелије"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
-#, fuzzy
 msgid  "~Protected"
 msgstr "~Заштићено"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~formula"
 msgstr "Сакриј ~формулу"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~all"
 msgstr "Сакриј ~све"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "Заштита ћелија је успешна само ако је тренутни лист већ заштићен. \n\nИзаберите „Заштити документ“ из менија „Алатке“ и назначите „Лист“."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
-#, fuzzy
 msgid  "Protection"
 msgstr "Заштита"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "Сакриј ~при штампању"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
-#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "Изабране ћелије ће при штампању бити прескочене."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Штампај"
 
@@ -4004,8 +3633,9 @@ msgid  "No operations to execute"
 msgstr "Нема операција за извршавање"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
+#, fuzzy
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "Опсег не садржи заглавља колоне.\nЖелите ли да прва линија буде коришћена као заглавље колоне?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -4083,8 +3713,9 @@ msgid  "Search key not found."
 msgstr "Фраза није пронађена."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
+#, fuzzy
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "Успешно тражење циља.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -4097,12 +3728,14 @@ msgid  ") into current cell?"
 msgstr ") у тренутну ћелију?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
+#, fuzzy
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "Неуспешно тражење циља.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
+#, fuzzy
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "Није пронађена идентична вредност. \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4685,8 +4318,9 @@ msgid  "Multiple operations"
 msgstr "Вишеструке операције"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+#, fuzzy
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Унели сте неисправно име.\nАутоформатирање није направљено. \nПокушајте поново са другим именом."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 #, fuzzy
@@ -4724,8 +4358,9 @@ msgid  "Print"
 msgstr "Штампај"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+#, fuzzy
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "Примена аутоформатирања,\nзахтева табелу\nод најмање 3x3 ћелије."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 #, fuzzy
@@ -4848,8 +4483,9 @@ msgid  "Report1"
 msgstr "Извештај1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "није доступно за проверу писања\nАко је потребно, проверите инсталацију \nи инсталирајте жељени језик"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 #, fuzzy
@@ -4862,8 +4498,9 @@ msgid  "Should the spellcheck be continued at the beginning of the current sheet
 msgstr "Наставити с провером писања од почетка тренутног листа?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+#, fuzzy
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "није доступно за синониме.\nАко је потребно, проверите инсталацију\nи инсталирајте жељени језик"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 #, fuzzy
@@ -5201,12 +4838,14 @@ msgid  "on"
 msgstr "дана"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+#, fuzzy
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "Ова датотека садржи везе ка другим датотекама.\nОсвежити их?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+#, fuzzy
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "Ова датотека садржи упите. Резултати ових упита нису сачувани.\nЖелите ли да поновите ове упите?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 #, fuzzy
@@ -5214,8 +4853,9 @@ msgid  "Too many conditions"
 msgstr "Превише услова"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+#, fuzzy
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "Попуњене ћелије се не могу\nпомерити изван листа."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 #, fuzzy
@@ -5238,8 +4878,9 @@ msgid  "There is not enough space on the sheet to insert here."
 msgstr "Нема довољно места на листу да би се овде уметнуло."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+#, fuzzy
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "Садржај списка исечака већи је од изабраног опсега.\nДа ли ипак желите да га уметнете?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 #, fuzzy
@@ -5292,8 +4933,9 @@ msgid  "Compare #"
 msgstr "Упореди #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+#, fuzzy
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "Премашен је максимални број неисправних ћелија.\nНису означене све неисправне ћелије."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 #, fuzzy
@@ -5421,8 +5063,9 @@ msgid  "Exit Recording"
 msgstr "Напусти снимање"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+#, fuzzy
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Овим напуштате измену режима снимања.\nСве измене ће бити изгубљене.\n\nСигурно напуштате?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 #, fuzzy
@@ -5440,8 +5083,9 @@ msgid  "Array formula  %1 R x %2 C"
 msgstr "Формула за потез  %1 Р x %2 К"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+#, fuzzy
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "Овај документ садржи позиве макро фунција.\nЖелите ли да их покренете?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 #, fuzzy
@@ -5569,32 +5213,39 @@ msgid  "Your spreadsheet has been updated with changes saved by other users."
 msgstr "Таблица је ажурирана изменама које су сачували други корисници."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+#, fuzzy
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Таблица мора бити сачувана ради активирања режима дељења.\n\nЖелите ли да наставите?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+#, fuzzy
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Већ разрешени сукоби при обједињавању ће бити изгубљени, а измене које сте начинили неће бити сачуване.\n\nЖелите ли да наставите?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+#, fuzzy
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Искључивање режима дељења онемогућује друге кориснике да обједине измене које су начинили.\n\nЖелите ли да наставите?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+#, fuzzy
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "Ова таблица више није у режиму дељења.\n\nСачувајте измене које сте начинили у засебну датотеку и ручно их обједините."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+#, fuzzy
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "Таблица је у дељеном режиму. Овај режим омогућава да више корисника истовремено уређује таблицу.\n\nПромене у параметрима форматирања, попут фонта, боја и формата записа бројева неће бити сачувани, а нека функционалност попут измене графика и цртежа неће бити могућа у дељеном режиму. Искључите дељени режим да повратите неопозива права приступа која су неопходна за ове промене и функционалност."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "Дељена таблица је закључана пошто корисник „%1“ обједињује своје измене.\n\nРежим дељења закључане датотеке није могуће искључити. Покушајте поново касније."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "Дељена табела је закључана пошто корисник „%1“ обједињује своје измене.\n\nПокушајте поново касније да бисте сачували измене."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 #, fuzzy
@@ -5710,126 +5361,102 @@ msgid  "Back"
 msgstr "Назад"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "AutoFormat"
 msgstr "Аутоформатирање"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "Ф~ормат"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
-#, fuzzy
 msgid  "A~utoFit width and height"
 msgstr "~Аутоматски уклопи ширини и висину"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
-#, fuzzy
 msgid  "~Borders"
 msgstr "~Ивице"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
-#, fuzzy
 msgid  "F~ont"
 msgstr "~Фонт"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
-#, fuzzy
 msgid  "~Pattern"
 msgstr "~Шаблон"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
-#, fuzzy
 msgid  "Alignmen~t"
 msgstr "~Поравнање"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
-#, fuzzy
 msgid  "~Number format"
 msgstr "~Формат броја"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "Форматирање"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~Додај..."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Обриши"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "~Преименуј"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
-#, fuzzy
 msgid  "Add AutoFormat"
 msgstr "Додај аутоформатирање"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
-#, fuzzy
 msgid  "Rename AutoFormat"
 msgstr "Преименуј аутоформатирање"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Име"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
-#, fuzzy
 msgid  "Delete AutoFormat"
 msgstr "Обриши аутоформатирање"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "Желите ли да обришете аутоформатирање #?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Затвори"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
-#, fuzzy
 msgid  "Jan"
 msgstr "јан."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
-#, fuzzy
 msgid  "Feb"
 msgstr "феб."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
-#, fuzzy
 msgid  "Mar"
 msgstr "мар."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
-#, fuzzy
 msgid  "North"
 msgstr "Север"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
-#, fuzzy
 msgid  "Mid"
 msgstr "Средина"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
-#, fuzzy
 msgid  "South"
 msgstr "Југ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
-#, fuzzy
 msgid  "Total"
 msgstr "Укупно"
 
@@ -14238,8 +13865,9 @@ msgid  "Font Attributes"
 msgstr "Параметри фонта"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
+#, fuzzy
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "Имате велику количину података у списку исечака.\nЖелите ли да садржај списка исечака буде доступан другим програмима?"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -14320,8 +13948,9 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME Рачун је у унетој формули пронашао грешку.\nПрихватате ли исправку која је предложена?\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -14374,8 +14003,9 @@ msgid  "~Selected sheets"
 msgstr "~Изабрани листови"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
+#, fuzzy
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "Умећете податке у ћелије које већ садрже податке.\nЖелите ли да препишете постојеће податке?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -16055,247 +15685,198 @@ msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~1"
 msgstr "Услов ~1"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "Вредност ћелије је"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "Формула је"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "мање од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "веће од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "мање или једнако од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "веће или једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "није једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "између"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "није између"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "и"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "~Cell Style"
 msgstr "Стил ће~лије"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND1_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New Style..."
 msgstr "~Нови стил..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~2"
 msgstr "Услов ~2"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "Вредност ћелије је"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "Формула је"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "мање од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "веће од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "мање или једнако од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "веће или једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "није једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "између"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "није између"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "и"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "C~ell Style"
 msgstr "Стил ће~лије"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND2_NEW.PushButton.Text
-#, fuzzy
 msgid  "Ne~w Style..."
 msgstr "Но~ви стил..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~3"
 msgstr "Услов ~3"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "Вредност ћелије је"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "Формула је"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "мање од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "веће од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "мање или једнако од"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "веће или једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "није једнако са"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "између"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "није између"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "и"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Смотај"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "Стил ће~лије"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND3_NEW.PushButton.Text
-#, fuzzy
 msgid  "New ~Style..."
 msgstr "Нови ~стил..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "Условно форматирање"
 

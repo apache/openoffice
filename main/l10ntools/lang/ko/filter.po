@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr ""
+msgstr "%productname% %formatversion% 텍스트 문서"
 
 #: source/config/fragments/filters/StarWriter_5_0_GlobalDocument_ui.xcu#StarWriter 5.0/GlobalDocument.UIName
 msgid  "StarWriter 5.0 Master Document"
@@ -81,7 +81,7 @@ msgstr "StarDraw 3.0 서식 파일"
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr ""
+msgstr "%productname% %formatversion% 마스터 문서"
 
 #: source/config/fragments/filters/UOF_presentation_ui.xcu#UOF presentation.UIName
 msgid  "Unified Office Format presentation"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#impress_StarOffice_XML_Draw.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr ""
+msgstr "%productname% %formatversion% 그리기(%productname% Impress)"
 
 #: source/config/fragments/filters/writerglobal8_ui.xcu#writerglobal8.UIName
 msgid  "ODF Master Document"
@@ -165,7 +165,7 @@ msgstr "HTML 문서(%productname% 마스터 문서)"
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#writer_web_StarOffice_XML_Writer_Web_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr ""
+msgstr "%productname% %formatversion% HTML 서식 파일"
 
 #: source/config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS Word 97 Vorlage.UIName
 msgid  "Microsoft Word 97/2000/XP Template"
@@ -173,7 +173,7 @@ msgstr "Microsoft Word 97/2000/XP 서식 파일"
 
 #: source/config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#draw_StarOffice_XML_Draw_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr ""
+msgstr "%productname% %formatversion% 그리기 서식 파일"
 
 #: source/config/fragments/filters/writerweb8_writer_ui.xcu#writerweb8_writer.UIName
 msgid  "%productname% Text (%productname% Writer/Web)"
@@ -181,7 +181,7 @@ msgstr "%productname% 텍스트(%productname% Writer/Web)"
 
 #: source/config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#calc_StarOffice_XML_Calc_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr ""
+msgstr "%productname% %formatversion% 스프레드시트 서식 파일"
 
 #: source/config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF spreadsheet.UIName
 msgid  "Unified Office Format spreadsheet"
@@ -193,7 +193,7 @@ msgstr "StarImpress 5.0 서식 파일"
 
 #: source/config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#writer_StarOffice_XML_Writer_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr ""
+msgstr "%productname% %formatversion% 텍스트 문서 서식 파일"
 
 #: source/config/fragments/filters/chart8_ui.xcu#chart8.UIName
 msgid  "ODF Chart"
@@ -341,11 +341,11 @@ msgstr "통합 오피스 포맷 텍스트"
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#writer_web_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr ""
+msgstr "%productname% %formatversion% 텍스트 문서(%productname% Writer/Web)"
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#impress_StarOffice_XML_Impress_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr ""
+msgstr "%productname% %formatversion% 프레젠테이션 서식 파일"
 
 #: source/config/fragments/filters/StarDraw_5_0_Vorlage__StarImpress__ui.xcu#StarDraw 5.0 Vorlage (StarImpress).UIName
 msgid  "StarDraw 5.0 Template (%productname% Impress)"
@@ -617,11 +617,11 @@ msgstr "Macromedia Flash (SWF) 옵션"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\\n100: max. quality"
-msgstr ""
+msgstr "1: 최소 품질\n100: 최대 품질"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\\nas some are at a higher level!"
-msgstr ""
+msgstr "경고: 불러온 EPS 그래픽의 일부가 더 높은 수준이므로\n전부 수준 1로 저장하지는 못했습니다."
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 msgid  "Export as PDF"
@@ -1361,7 +1361,7 @@ msgstr "응용 프로그램"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\\nfile type"
-msgstr ""
+msgstr "파일 형식\n이름"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"

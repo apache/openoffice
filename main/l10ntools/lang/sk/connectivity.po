@@ -389,7 +389,7 @@ msgstr "Súbor $filename$ nemohol byť načítaný."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "Pokus o načítanie súboru viedol k nasledujúcej chybovej správe ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "V stĺpci '$columnname$' bola nájdená duplicitná hodnota."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "Stĺpec '$columnname$' bol definovaný ako \"Desatinný\" typ, pričom maximálna dĺžka je $precision$ znakov (s $scale$ desatinnými miestami).\n\nZadaná hodnota \"$value$ je dlhšia ako povolený počet číslic."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "Pre prístup ku Adresáru KDE je potrebná verzia KDE $major$.$minor$ al
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "Nájdená verzia KDE je príliš nová. Len verzie KDE do $major$.$minor$ môžu fungovať s týmto produktom.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "Ak ste si istý, že vaša verzia KDE funguje, môžete spustiť nasledujúce makro BASICu pre vypnutie overovania tejto verzie:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

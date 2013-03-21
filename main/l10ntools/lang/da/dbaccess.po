@@ -73,7 +73,7 @@ msgstr "Datakilden blev ikke gemt. Brug grænsefladen XStorable til at gemme dat
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Den givne kommando er ikke en SELECT-sætning.\nKun forespørgsler er tilladt."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "Der er tabeller i databasen, hvis navne er i konflikt med navnene på ek
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "SQL-kommandoen, der fører til denne fejl, er:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,11 +221,11 @@ msgstr "Kan ikke finde dokumentet '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Kunne ikke gemme dokumentet i $location$: \n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
-msgstr ""
+msgstr "Fejl ved adgang til datakilde '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 msgid  "There exists no folder named \"$folder$\"."
@@ -429,7 +429,7 @@ msgstr "Det specificerede filnavn eller mappe findes ikke."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Ingen ny database kan oprettes.\nKontroller venligst din  Adabas D Installation, specielt variablene \"DBROOT\" og \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -493,7 +493,7 @@ msgstr "Velkommen til migreringsguiden for database-makro"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Denne guide vil lede dig gennem migreringen af dine makroer og scripts.\n\nNår du har færdiggjort guiden, vil alle makroer og scripts som tidligere var indlejret i dine formularer og rapporter være flyttet til databasedokumentet. I denne gennemgang vil biblioteker om nødvendigt blive omdøbt.\n\nHvis dine formularer og rapporter indeholder referencer til disse makroer og scripts, vil de blive justeret hvor det er muligt.\n\nFør denne migrering kan begynde, skal alle formularer, rapporter, forespørgsler og tabeller være lukket. Tryk 'Næste'  for at gøre det."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -909,7 +909,7 @@ msgstr "Dokumentet indeholder formularer eller rapporter med indlejrede makroer.
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Scripter og makroer bør fremover være indlejret  i databasedokumentet.\n\nDu kan fortsætte med at bruge dit dokument som hidtil, men det anbefales at migrere scripter og makroer. Menupunktet 'Funktioner - Migrer scripter og makroer ...' vil assistere dig med det.\n\n. Bemærk, at det ikke vil være muligt at indlejre makroer eller scripter i databasedokumentet før migreringen er gennemført."
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -1621,7 +1621,7 @@ msgstr "Forbindelsen til datakilden \"$name$\" kræver en adgangskode."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Kataloget\n\n$path$\n\nfindes ikke. Skal det oprettes?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1809,7 +1809,7 @@ msgstr "Database"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "På de følgende sider kan du justere detaljerede indstillinger for forbindelsen.\n\nDe nye indstillinger vil overskrive dine eksisterende indstillinger."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1825,7 +1825,7 @@ msgstr "Programbiblioteket #lib# kunne ikke indlæses eller er beskadiget. Den v
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Denne datakildetype understøttes ikke på denne platform.\nDu kan ændre indstillingerne, men kan sandsynligvis ikke oprette forbindelse til databasen."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -2389,7 +2389,7 @@ msgstr "Opret en forbindelse til en MySQL-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Du kan forbinde til en MySQL-database ved brug af enten ODBC eller JDBC.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "Opsæt forbindelse til en MySQL-database ved brug af JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Indtast den nødvendige information for at forbinde til en MySQL-database ved brug af JDBC. Bemærk at en JDBC-driverklasse skal være installeret på dit system og registreret af %PRODUCTNAME.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2517,7 +2517,7 @@ msgstr "Opret en forbindelse til et LDAP-katalog"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Indtast den nødvendige information for at forbinde til et LDAP-katalog.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "Opret en forbindelse til en Adabas D-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Indtast navnet på Adabas D-databasen, som du vil forbinde til.\nKlik på 'Gennemse...' for at vælge en Adabas D-database, der allerede er registreret i %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "Opret en forbindelse til en ADO-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Indtast URL'en til ADO-datakilden, som du vil forbinde til.\nKlik på 'Gennemse' for at tilpasse udbyderspecifikke indstillinger.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "Opret en forbindelse til en ODBC-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Indtast navnet på ODBC-databasen, som du vil forbinde til.\nKlik på 'Gennemse...' for at vælge en ODBC-database, der allerede er registreret i %PRODUCTNAME.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "Opret en forbindelse til en JDBC-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Indtast den nødvendige information for at forbinde til en JDBC-database.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "Oracle JDBC-driverklasse"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Indtast den nødvendige information for at forbinde til en Oracle-database. Bemærk at en JDBC-driverklasse skal være installeret på dit system og registreret med %PRODUCTNAME.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "Opret en forbindelse til regneark"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Klik på 'Gennemse...' for at vælge et %PRODUCTNAME-regneark eller Microsoft Excel-projektmappe.\n%PRODUCTNAME vil åbne denne fil i skrivebeskyttet tilstand."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2813,7 +2813,7 @@ msgstr "Advarsler forekom under etablering af forbindelse til datakilden. Tryk \
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Navnet '$#$' findes allerede.\nIndtast et andet navn."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
@@ -2829,7 +2829,7 @@ msgstr "Typeformatering"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Følgende felter er allerede valgt som primærnøgler:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 msgid  "Assign columns"
@@ -2881,11 +2881,11 @@ msgstr "Primærnøgle"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Kildetabel: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Destinations tabel:\n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 msgid  "~All"
@@ -3213,15 +3213,15 @@ msgstr "- %PRODUCTNAME Base: Visningsdesign"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ er blevet ændret.\nVil du gemme ændringerne?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "SQL-kommandoen, som udgør $object$, kunne ikke fortolkes."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ vil blive åbnet i SQL-visning."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
 msgid  "The table view"
@@ -3273,7 +3273,7 @@ msgstr "Hvis du sletter denne tabel, slettes også alle tilhørende relationer. 
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Databasen kunne ikke oprette relationen. Måske er fremmednøgler for denne type tabel ikke understøttet.\nKontroller venligst database dokumentationen."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
@@ -3421,11 +3421,11 @@ msgstr "Format-eksempel"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Vælg en værdi, der skal vises som standard i alle nyindsatte dataposter.\nVælg den tomme streng, hvis feltet ikke skal have en standardværdi."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Indtast en standardværdi til feltet her.\n\nNår du senere indtaster data i tabellen, anvendes denne streng til det aktuelle felt i alle nye dataposter. Den bør derfor svare til den celleformatering, der indtastes senere."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
@@ -3441,7 +3441,7 @@ msgstr "Definer her, hvilken type tallet skal have."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Angiv længden for data i dette felt.\n\nFor decimalfelter er dette den maksimale længde for det indtastede tal, for binære felter længden på datablokken.\nHvis værdien er større end den maksimale værdi for denne database, korrigeres den i overensstemmelse dermed."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3457,7 +3457,7 @@ msgstr "På denne måde kan du definere, hvordan dataene i tabellen skal formate
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Vælg, om dette felt skal indeholde værdier til 'auto-increment'.\n\nDu kan ikke indtaste data direkte i feltet, men alle nye dataposter får automatisk dens egen værdi (som fremkommer ved at inkrementere den forudgående datapost)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
@@ -3513,7 +3513,7 @@ msgstr "Ingen primærnøgle"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "I denne database kræves et entydigt indeks eller en primærnøgle til datapostidentificering.\nDu kan først indtaste data i tabellen, når den opfylder en af disse to strukturbetingelser.\n\nVil du oprette en primærnøgle nu?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
@@ -3541,11 +3541,11 @@ msgstr "'~Auto-increment'-sætning"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Indtast en SQL-sætning for 'auto-increment'-feltet.\n\nDenne sætning bliver automatisk overført til databasen, når tabellen bliver oprettet."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Ingen type information kunne modtages fra databasen.\nTabeldesign er ikke muligt for denne datakilde."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"

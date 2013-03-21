@@ -949,7 +949,6 @@ msgid  "The current record has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Jeni i sigurt që dëshironi të fshini të dhënat e zgjedhura?"
 
@@ -958,37 +957,30 @@ msgid  "(filtered)"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
-#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Gabim gjatë vendosjes së kritereve të renditjes"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
-#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Gabim gjatë vendosjes së kritereve të filtrit"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
-#, fuzzy
 msgid  "Connection lost"
 msgstr "Gjendja e lidhjes"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Pyetësorët "
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabelat"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "Shto fajllin e databazës"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-#, fuzzy
 msgid  "Registered databases ..."
 msgstr "Shkëmbe databazat"
 
@@ -997,12 +989,10 @@ msgid  "Disco~nnect"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
-#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Konfirmo  fshierjen"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "A dëshironi ta fshini shkallëzimin?"
 
@@ -1015,7 +1005,6 @@ msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Vërejtjet e shtypësit"
 
@@ -1024,17 +1013,14 @@ msgid  "While retrieving the tables, warnings were reported by the database conn
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "Emri i stilit që do të aplikohet."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
-#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Shtegu/Emri i fajllit"
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
-#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Shtegu/Emri i fajllit"
 
@@ -1043,7 +1029,6 @@ msgid  "No table format could be found."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Lidhja për në bazën e të dhënave \"$emri$\" nuk mund të ngritet."
 
@@ -1052,52 +1037,42 @@ msgid  "Rebuild"
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
-#, fuzzy
 msgid  "Column ~Format..."
 msgstr "Format tjetër"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
-#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Kolonat e tabelës"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
-#, fuzzy
 msgid  "Table Format..."
 msgstr "Formati i tabelës"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Row Height..."
 msgstr "Lartesia e rreshtit..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
-#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Zhbëj: Futjen e të Dhënave"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
-#, fuzzy
 msgid  "Save current record"
 msgstr "Mbroje regjistrin e ndryshimeve"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
-#, fuzzy
 msgid  "Query #"
 msgstr "Pyetësor"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabelë"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
-#, fuzzy
 msgid  "View #"
 msgstr "Pamja"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "Ky emër tashmw ekziston"
 
@@ -1110,7 +1085,6 @@ msgid  "An error occurred. Do you want to continue copying?"
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
-#, fuzzy
 msgid  "Data source table view"
 msgstr "Burimi i të Dhënave si Tabelë"
 
@@ -1119,62 +1093,50 @@ msgid  "Shows the selected table or query."
 msgstr ""
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabelë"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
-#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Gabim sintaksor ne formulimin SQL"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
-#, fuzzy
 msgid  "Table name"
 msgstr "Emri i tabelës"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
-#, fuzzy
 msgid  "Insert data"
 msgstr "Shto të dhënat si:"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
-#, fuzzy
 msgid  "Delete data"
 msgstr "Fshij të dhënat"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
-#, fuzzy
 msgid  "Modify data"
 msgstr "~Modifiko Intervalin e të Dhënave..."
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
-#, fuzzy
 msgid  "Alter structure"
 msgstr "Fshije strukturën"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
-#, fuzzy
 msgid  "Read data"
 msgstr "Të dhënat për ["
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
-#, fuzzy
 msgid  "Modify references"
 msgstr "Shkruaj referencat"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
-#, fuzzy
 msgid  "Drop structure"
 msgstr "Fshije strukturën"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Klasifiko në Rritje"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "Klasifiko në Zbritje"
 
@@ -1199,17 +1161,14 @@ msgid  "Successfully connected, but information about database tables is not ava
 msgstr ""
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
-#, fuzzy
 msgid  "All tables"
 msgstr "~Të gjitha Indekset dhe Tabelat"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
-#, fuzzy
 msgid  "All views"
 msgstr "Prano të gjitha"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
-#, fuzzy
 msgid  "All tables and views"
 msgstr "~Të gjitha Indekset dhe Tabelat"
 
@@ -1599,7 +1558,6 @@ msgid  "<none>"
 msgstr "<asnjë>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Opcionet"
 
@@ -1624,7 +1582,6 @@ msgid  "Ignore the privileges from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
-#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Zëvendëso të 1rën... me të 1^rën..."
 
@@ -1649,7 +1606,6 @@ msgid  "End text lines with CR+LF"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
-#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Zëvendëso me Fushën e Valutës"
 
@@ -1670,27 +1626,22 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Standarde"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Mixed"
 msgstr "shumëpjesore/të përziera"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "MS Access"
 msgstr "MS Qasje 97"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
-#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Ndrysho vlerat standarde"
 
@@ -1699,7 +1650,6 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Parametrat"
 
@@ -1708,22 +1658,18 @@ msgid  "Re~trieve generated values"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
-#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "Vlerë rritëse e kryerreshtit"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
-#, fuzzy
 msgid  "~Query of generated values"
 msgstr "Ndrysho vlerat standarde"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
-#, fuzzy
 msgid  "Generated Values"
 msgstr "Vlerat e dalluara"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
-#, fuzzy
 msgid  "Special Settings"
 msgstr "Parametrat e faqes"
 
@@ -1732,42 +1678,34 @@ msgid  "Advanced Settings"
 msgstr ""
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Ruaje"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Create New Directory"
 msgstr "Krijo një Folder të ri"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Një  nivel më lartë"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
-#, fuzzy
 msgid  "File ~name:"
 msgstr "Emri i fajllit"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Ruaje"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
-#, fuzzy
 msgid  "~Path:"
 msgstr "~shtegu"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Folder"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Fajli tanimë ekziston. Të mbishkruhet?"
 
@@ -1809,7 +1747,6 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr ""
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Database name"
 msgstr "Databaza"
 
@@ -1818,7 +1755,6 @@ msgid  "Se~rver / Port"
 msgstr ""
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Server"
 msgstr "URL njohje"
 
@@ -1827,7 +1763,6 @@ msgid  "~Port"
 msgstr ""
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Fontet standarde"
 
@@ -1850,32 +1785,26 @@ msgid  "User administration"
 msgstr "Administrimi i shfrytëzuesit"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabelat"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Pyetësorët "
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "Shto"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "Mbylle"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "Shto Tabelat..."
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Tabela;Pyetsori; Sql;Sql[Autokton]"
 
@@ -1914,17 +1843,14 @@ msgid  "Use catalog for file-based databases"
 msgstr ""
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Connection Settings"
 msgstr "Parametrat e faqes"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Emri i grupit"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
-#, fuzzy
 msgid  "~Port number"
 msgstr "Numri i faqes"
 
@@ -2219,17 +2145,14 @@ msgid  "Insert as"
 msgstr "~Fute si"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Duke kopjuar fajllat në rrjetë"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "Duke kopjuar fajllat në rrjetë"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Drejtpërdrejt në fund të dokumentit"
 
@@ -2238,22 +2161,18 @@ msgid  "Name of the ODBC data source on your system"
 msgstr ""
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Shto kolonat e Databazës"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Shto kolonat e Databazës"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Shto kolonat e Databazës"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
-#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Hapja e dosjes së të dhënave bazë ka dështuar"
 
@@ -2262,22 +2181,18 @@ msgid  "No more settings are necessary. To verify that the connection is working
 msgstr ""
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
-#, fuzzy
 msgid  "Datasource URL"
 msgstr "URL njohje"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Emri i grupit"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "Shtegu/Emri i fajllit"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "Shtegu/Emri i fajllit"
 
@@ -2312,47 +2227,38 @@ msgid  "Choose a database"
 msgstr "Kolonat e databazës"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "General"
 msgstr "Të përgjithshme"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Emri i grupit"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Autentikimi i serverit"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "Emri i Shfrytëzuesit"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password required"
 msgstr "Ngjyra është pritur"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
-#, fuzzy
 msgid  "JDBC properties"
 msgstr "Vetitë e kornizës"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "Duke regjistruar serverët e klasës"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test Class"
 msgstr "ID e klasës: [1]"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
-#, fuzzy
 msgid  "Test Connection"
 msgstr "Gjendja e lidhjes"
 
@@ -2361,17 +2267,14 @@ msgid  "No Adabas D data sources were found on your system."
 msgstr ""
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
-#, fuzzy
 msgid  "Connection Test"
 msgstr "Parametrat testues"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "Lidhja nuk mund të ngritet."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection could not be established."
 msgstr "Lidhja nuk mund të ngritet."
 
@@ -2380,22 +2283,18 @@ msgid  "The JDBC driver was loaded successfully."
 msgstr ""
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "Dokumenti nuk mund të ngarkohet tërësisht"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access file"
 msgstr "MS Qasje 97"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "Gabim në qasje tw shtegut/dosjes"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
-#, fuzzy
 msgid  "Database files"
 msgstr "Dosjet e të dhënave bazë (*.sdb) StarOffice 5.2"
 
@@ -2412,7 +2311,6 @@ msgid  "DATAD~EVSPACE:"
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
-#, fuzzy
 msgid  "Database sizes"
 msgstr "Madhësitë relative"
 
@@ -2421,22 +2319,18 @@ msgid  "S~ize (MB):"
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "Ndaj automatikisht hapësirën e lirë"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
-#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "Përpara  objektit"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
-#, fuzzy
 msgid  "Database Statistics"
 msgstr "Kolonat e databazës"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
-#, fuzzy
 msgid  "Contains the system tables"
 msgstr "E hyra në tabela"
 
@@ -2445,12 +2339,10 @@ msgid  "Contains information about transaction"
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
-#, fuzzy
 msgid  "Contains all data files"
 msgstr "Të gjitha të dhënat në të DO TË SHKATËRROHEN!"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
-#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Dosjet e të dhënave bazë (*.sdb) StarOffice 5.2"
 
@@ -2459,7 +2351,6 @@ msgid  "Currently available space before a new datadev file is created."
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
-#, fuzzy
 msgid  "Currently used memory"
 msgstr "Pastro Cache memorjen"
 
@@ -3077,67 +2968,54 @@ msgid  "Socket"
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
 msgid  "Refresh"
 msgstr "Rifresko"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~View Design"
 msgstr "Pyetja (pamja e dizajnit)..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Duke llogaritur gjendjen e re të tabelës ndarëse..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "AutoPilot Meny"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Ndrysho Pamjen e Dizajnit On/Off"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "~Edit Query"
 msgstr "Ekzekuto pyetësorin"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Tabela;Pyetsori; Sql;Sql[Autokton]"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Edito..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
 msgid  "Column ~Width..."
 msgstr "Gjërësia e kolonës"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Magjistari i raporteve..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "AutoPilot Meny"
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "Sistemi"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
-#, fuzzy
 msgid  "Error during creation"
 msgstr "Krijimi i çelësit dështoi"
 
@@ -3146,7 +3024,6 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Fajlli i specifikuar nuk mund të hapet"
 
@@ -3155,17 +3032,14 @@ msgid  "The table cannot be deleted because the database connection does not sup
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "Të gjitha"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
-#, fuzzy
 msgid  "Undo:"
 msgstr "Zhbëj%O"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
-#, fuzzy
 msgid  "Redo:"
 msgstr "Bëje prap"
 
@@ -3174,7 +3048,6 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Shtegu deri në fajll nuk ekziston"
 
@@ -3184,19 +3057,17 @@ msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Emri i zgjedhur tashmë ekziston.\nJu lutem jepni emër tjetër."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Apply columns"
 msgstr "Kolonat e databazës"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Type formatting"
 msgstr "Formatizimi i hyrjeve"
 
@@ -3205,32 +3076,26 @@ msgid  "The following fields have already been set as primary keys:\\n"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
-#, fuzzy
 msgid  "Assign columns"
 msgstr "Kolonat e databazës"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Copy RTF Table"
 msgstr "Shiriti i Objektit Tabelë"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "Ndihmë"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "Anulo"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
-#, fuzzy
 msgid  "< ~Back"
 msgstr "Prapa"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next>"
 msgstr "I ardhshmi"
 
@@ -3239,60 +3104,50 @@ msgid  "C~reate"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
-#, fuzzy
 msgid  "Existing columns"
 msgstr "Kolonat e databazës"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
-#, fuzzy
 msgid  "Column information"
 msgstr "Informata të mëtejshme"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
-#, fuzzy
 msgid  "Automatic type recognition"
 msgstr "Njohje e formatit numerik"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
-#, fuzzy
 msgid  "Lines (ma~x)"
 msgstr "Maksimal"
 
 #: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Lloj kyç"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Tabelë e burimit të të dhënave"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Ndryshimet e tabelës"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
-#, fuzzy
 msgid  "~All"
 msgstr "Të gjitha"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
-#, fuzzy
 msgid  "Non~e"
 msgstr "Asnj~ë"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
-#, fuzzy
 msgid  "Ta~ble name"
 msgstr "Ka~rakteristikat e tabelës..."
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Opcionet"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
-#, fuzzy
 msgid  "De~finition and data"
 msgstr "ruaj dhe përdor të dhënat ekzistuese"
 
@@ -3301,12 +3156,10 @@ msgid  "Def~inition"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
-#, fuzzy
 msgid  "A~s table view"
 msgstr "Pamje e të dhënave tabelare"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
-#, fuzzy
 msgid  "Append ~data"
 msgstr "Të dhënat për ["
 
@@ -3319,17 +3172,14 @@ msgid  "Crea~te primary key"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Emri"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Kopjo tabelën"
 
 #: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Kopjo tabelën"
 
@@ -3346,57 +3196,46 @@ msgid  "Please change the table name. It is too long."
 msgstr ""
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Opcionet"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "Lloji"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
-#, fuzzy
 msgid  "Inner join"
 msgstr "Mbështjellje e brendshme"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
-#, fuzzy
 msgid  "Left join"
 msgstr "Lartë majtas"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
-#, fuzzy
 msgid  "Right join"
 msgstr "Lartë djathtas"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
-#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Mbajtësi i fletëve të shtypura i mbushur"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
-#, fuzzy
 msgid  "Cross join"
 msgstr "Kryqëzim-zbehur"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
-#, fuzzy
 msgid  "Natural"
 msgstr "Logaritëm natyral"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
-#, fuzzy
 msgid  "Tables involved"
 msgstr "Indeksi i tabelave"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Fields involved"
 msgstr "Përputh fushat..."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
-#, fuzzy
 msgid  "Join Properties"
 msgstr "Vetitë e kornizës"
 
@@ -3425,42 +3264,34 @@ msgid  "Contains only one column for each pair of equally-named columns from '%1
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
-#, fuzzy
 msgid  "Add Table Window"
 msgstr "Përshtate me faqe"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
-#, fuzzy
 msgid  "Move table window"
 msgstr "Përshtate me faqe"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
-#, fuzzy
 msgid  "Insert Join"
 msgstr "Shto fotografinë"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
-#, fuzzy
 msgid  "Delete Join"
 msgstr "Fshij shtresën"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
-#, fuzzy
 msgid  "Resize table window"
 msgstr "Përshtate me faqe"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Fshije kolonën"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "Hapësira në mes kolonave."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "Hapësira në mes kolonave."
 
@@ -3477,32 +3308,26 @@ msgid  "The query covers #num# tables. The selected database type, however, can 
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
-#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Fshije Indeksin/Tabelën"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Kolonat e tabelës"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "Gjerësia optimale e kolonës"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
-#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "Renditja e rendit: 0 do të thotë në rritje, 1 do të thotë në rënje."
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
-#, fuzzy
 msgid  "(no function);Group"
 msgstr "Nuk u gjet asnjë Grup Volumi"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
-#, fuzzy
 msgid  "(no table)"
 msgstr "Ndryshimet e tabelës"
 
@@ -3511,22 +3336,18 @@ msgid  "The database only supports sorting for visible fields."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Funksionet"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
-#, fuzzy
 msgid  "Table Name"
 msgstr "Emri i tabelës"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
-#, fuzzy
 msgid  "Alias"
 msgstr "Pseudonim"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
-#, fuzzy
 msgid  "Distinct Values"
 msgstr "Vlerat e dalluara"
 
@@ -3535,7 +3356,6 @@ msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
-#, fuzzy
 msgid  "There are too many columns."
 msgstr "Ka tepër shumë fajlla të hapur"
 
@@ -3548,32 +3368,26 @@ msgid  "The SQL statement created is too long."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
-#, fuzzy
 msgid  "Query is too complex"
 msgstr "Shënimi i formulës tepër kompleks"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
-#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Intervali nuk është selektuar."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
-#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Shumë shirita të definuar nga shfrytëzuesi."
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
-#, fuzzy
 msgid  "SQL syntax error"
 msgstr "Gabim sintaksor ne formulimin SQL"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "Fajlli nuk mund të përdoret si shabllon"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
-#, fuzzy
 msgid  "There are too many tables."
 msgstr "Ka tepër shumë fajlla të hapur"
 
@@ -3586,12 +3400,10 @@ msgid  "Field name not found or not unique"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
-#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Emri i koneksionit nuk mund të procesohet."
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Gabim sintaksor ne formulimin SQL"
 
@@ -3604,12 +3416,10 @@ msgid  "This database does not support altering of existing table views."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
-#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Çfarë tipi të dokumentit dëshironi të krijoni?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created."
 msgstr "AutoTekst nuk mund të krijohet"
 
@@ -3622,7 +3432,6 @@ msgid  "The corresponding data source has been deleted. Therefore, data relevant
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Kolona \"#\" është e panjohur në tabelën \"#\"!"
 
@@ -3639,18 +3448,16 @@ msgid  "The column could not be found. Please note that the database is case-sen
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr "Ndrysho Pamjen e Dizajnit On/Off"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr "Ndrysho Pamjen e Dizajnit On/Off"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Dokumenti \"$(DOC)\" duhet të modifikohet.\nDëshiron të ruani ndryshimet tuaja?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
@@ -3661,17 +3468,14 @@ msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
-#, fuzzy
 msgid  "The table view"
 msgstr "Pamje e të dhënave tabelare"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
-#, fuzzy
 msgid  "The query"
 msgstr "Pyetësor"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
-#, fuzzy
 msgid  "The SQL statement"
 msgstr "DDE Deklaratë"
 
@@ -3688,12 +3492,10 @@ msgid  "This relation already exists. Do you want to edit it or create a new one
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Edito..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Krijo..."
 
@@ -3702,7 +3504,6 @@ msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Objekti nuk mbështetë ndonjë veprim"
 
@@ -3723,62 +3524,50 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Çelësi: [1], Emri: [2], Vlera [3]"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Po"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "No"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "Në rritje"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "Në zvogëlim"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<asnjë>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Emri i fushës"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Field Name"
 msgstr "Emri i fushës"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field ~type"
 msgstr "Lloji  i publikimit"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field Type"
 msgstr "Lloji  i publikimit"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
-#, fuzzy
 msgid  "Field length"
 msgstr "Gjatësia e tejkalimit"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Përshkrimi"
 
@@ -3787,7 +3576,6 @@ msgid  "Column Description"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
-#, fuzzy
 msgid  "Input required"
 msgstr "Ngjyra është pritur"
 
@@ -3796,22 +3584,18 @@ msgid  "~AutoValue"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Field Properties"
 msgstr "Vetitë e kornizës"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "Të përgjithshme"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "Përshkrimi"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Table properties"
 msgstr "Vetitë e kornizës"
 
@@ -3820,77 +3604,62 @@ msgid  "The text you entered is not a list element. "
 msgstr ""
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
-#, fuzzy
 msgid  "Insert Rows"
 msgstr "Futi Rreshtat"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Lloj kyç"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
-#, fuzzy
 msgid  "Modify cell"
 msgstr "Qeliza e tabelës"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "Fshije rreshtin"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
-#, fuzzy
 msgid  "Modify field type"
 msgstr "Zgjedh tipin e dokumentit"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "Shto rreshtin"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert new row"
 msgstr "Fute Thyerjen e Rreshtit"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Çelësi: [1], Emri: [2], Vlera [3]"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
-#, fuzzy
 msgid  "~Default value"
 msgstr "~Vlera e parazgjedhur"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
-#, fuzzy
 msgid  "~Entry required"
 msgstr "Ngjyra është pritur"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "Gjatësi "
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "Lloji"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "Gjatësi "
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
-#, fuzzy
 msgid  "Decimal ~places"
 msgstr "Vendet decimale"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
-#, fuzzy
 msgid  "Format example"
 msgstr "Format tjetër"
 
@@ -3911,7 +3680,6 @@ msgid  "Enter the maximum text length permitted."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "Enter the number format."
 msgstr "Edito formatin e numri"
 
@@ -3936,7 +3704,6 @@ msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can n
 msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
@@ -3949,22 +3716,18 @@ msgid  "The column \"$column$\" belongs to the primary key. If the column is del
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
-#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "Çelësi: [1], Emri: [2], Vlera [3]"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Kolonë"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
-#, fuzzy
 msgid  "Continue anyway?"
 msgstr "Vazhdo kërkimin përpara"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-#, fuzzy
 msgid  "Warning!"
 msgstr "Vërejtje"
 
@@ -3989,7 +3752,6 @@ msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo yo
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
-#, fuzzy
 msgid  "No primary key"
 msgstr "Çelësi: [1], Emri: [2], Vlera [3]"
 
@@ -4006,12 +3768,10 @@ msgid  "The column \"$column$\" could not be changed. Should the column instead 
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
-#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Një gabim është shfaqur derisa ruhej publikimi."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
-#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Fletët nuk mund të fshihen."
 
@@ -4020,7 +3780,6 @@ msgid  "You are trying to delete all the columns in the table. A table cannot ex
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
-#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Vlerë rritëse e kryerreshtit"
 
@@ -4033,22 +3792,18 @@ msgid  "No type information could be retrieved from the database.\\nThe table de
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "change field name"
 msgstr "Shtegu/Emri i fajllit"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "change field type"
 msgstr "Ndrysho tipin e projeksionit"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "change field description"
 msgstr "Përputh me fushën:"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "change field attribute"
 msgstr "Përputh me fushën:"
 
@@ -4057,7 +3812,6 @@ msgid  "~Remember password until end of session"
 msgstr ""
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "Fjalëkalim i pavlefshëm"
 
@@ -4090,7 +3844,6 @@ msgid  "Illegal number of initialization parameters."
 msgstr ""
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
-#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Gabim i panjohur I/O ka ndodhur"
 

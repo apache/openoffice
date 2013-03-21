@@ -601,7 +601,7 @@ msgstr "디렉토리를 열 수 없습니다."
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \\nOverwrite ?"
-msgstr ""
+msgstr "이 파일은 이미 존재합니다. \n덮어쓰겠습니까?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 msgid  "Up One Level"
@@ -1505,7 +1505,7 @@ msgstr "해당 그림은 %1 KB 정도의 메모리가 필요합니다."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
 msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
-msgstr ""
+msgstr "해당 그림은 %1 KB 정도의 메모리가 필요하며,\n\n 파일 크기는 %2 KB입니다."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
 msgid  "The file size is %1 KB."
@@ -1689,19 +1689,19 @@ msgstr "데이터베이스"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 스프레드시트 서식 파일"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 그리기 서식 파일"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 프레젠테이션 서식 파일"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 텍스트 문서 서식 파일"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
 msgid  "Local drive"
@@ -1733,31 +1733,31 @@ msgstr "MS PowerPoint 쇼"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 수식"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 차트"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 그리기"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 스프레드시트"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 프레젠테이션"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 텍스트 문서"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 마스터 문서"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
 msgid  "MathML Document"

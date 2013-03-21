@@ -529,827 +529,662 @@ msgid  "FACTDOUBLE"
 msgstr " "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "E kthen numrin numrin serik tw datws para ose pas numrit tw caktuar tw ditwve tw punws"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
-#, fuzzy
 msgid  "Days"
 msgstr "Ditët"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
-#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "Numri i ditwve tw punws para ose pas datws sw fillimit "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Festat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
-#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "Lista e vlerave tw ditwve tw pushimit (pushime, festa, etj.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
-#, fuzzy
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
 msgstr "E kthen numrin e ditwve tw plota nw mes tw 'datws sw fillimit' dhe 'datws sw mbarimit' si thyesw vjetore"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Data e mbarimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Data e mbarimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
-#, fuzzy
 msgid  "Basis"
 msgstr "Bazë"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
-#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "Baza pwr tw determinuar ditwt e interesit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
 msgstr "E kthen numrin serik tw datws qw wshtw numwr i caktuar i muajve para ose pas datws sw fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Muajt"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Numri i muajve para ose pase datws sw fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
-#, fuzzy
 msgid  "Returns the number of the calendar week in which the specified date occurs."
 msgstr "E kthen numrin e kalendarit javor nw tw cilwn data pwrket."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
-#, fuzzy
 msgid  "The date"
 msgstr "_Data"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
-#, fuzzy
 msgid  "Return type"
 msgstr "Tipi i rikthimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
-#, fuzzy
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "Njw numwr prej 1 deri nw 3 qw specifikon ditwn me tw cilwn java fillon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
 msgstr "E kthen numrin serik tw ditws sw fundit tw muajit qw bwhet numwr i caktuar i muajve para ose pas datws sw fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Muajt"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Numri i muajve para ose pase datws sw fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
-#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "E kthen numrin e ditwve tw punws nw mes tw dy datave"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Data e fillimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Data e mbarimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Data e mbarimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Festat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
-#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "Lista e vlerave tw datave qw paraqesin ditwt e pushimit (pushime, festa, etj.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "E kthen vlerwn 'e vwrtetw' nwse numri wshtw çift"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "E kthen vlerwn 'e vwrtetw' nwse numri wshtw tek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
-#, fuzzy
 msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "E kthen koeficientin shumwnomial tw njw grupi numrash"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "Numrat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
 msgstr "Numri ose lista e numrave pwr tw cilwn e doni koeficientin multinomial"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
-#, fuzzy
 msgid  "Returns the sum of a power series"
 msgstr "E kthen shumwn e serive tw fuqishme"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.3.String.Text
-#, fuzzy
 msgid  "The independent variable of the power series"
 msgstr "Variabla e pavarur e serive tw fuqishme"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.5.String.Text
-#, fuzzy
 msgid  "The initial power to which x is to be raised"
 msgstr "Fuqia fillestare ku x duhet tw rritet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.6.String.Text
-#, fuzzy
 msgid  "M"
 msgstr "M"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.7.String.Text
-#, fuzzy
 msgid  "The increment by which to increase n for each term in the series"
 msgstr "Rritwsi ku tw rritet n pwr çdo term nw seri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.8.String.Text
-#, fuzzy
 msgid  "Coefficients"
 msgstr "Koeficientwt"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
-#, fuzzy
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
 msgstr "Grupi i koeficientwve ku secila fuqi e suksesshme e variablit x shumwzohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
-#, fuzzy
 msgid  "Returns the integer portion of a division"
 msgstr "E kthen pjeswn integjere tw pjeswtimit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
-#, fuzzy
 msgid  "Numerator"
 msgstr "Numrator"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
-#, fuzzy
 msgid  "The dividend"
 msgstr "I pjeswtueshmi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
-#, fuzzy
 msgid  "Denominator"
 msgstr "Emëruesi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
-#, fuzzy
 msgid  "The divisor"
 msgstr "Pjeswtuesi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
-#, fuzzy
 msgid  "Returns a number rounded to a specified multiple"
 msgstr "E kthen numrin tw plotw nw shumwfishin e caktuar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
-#, fuzzy
 msgid  "The number to round off"
 msgstr "Numri qw tw rrumbullaksohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.4.String.Text
-#, fuzzy
 msgid  "Multiple"
 msgstr "Shumwfishi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.5.String.Text
-#, fuzzy
 msgid  "The multiple to which you want to round number"
 msgstr "Shumwfishin nw tw cilin dwshironi tw bwni numrin e plotw"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.1.String.Text
-#, fuzzy
 msgid  "Returns the square root of a number which has been multiplied by pi"
 msgstr "E kthen rrwnjwn katrore tw numrit i cili wshtw shumwzuar nga pi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
-#, fuzzy
 msgid  "The number by which pi is multiplied"
 msgstr "Numri me tw cilin pi wshtw shumwzuar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.1.String.Text
-#, fuzzy
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "E kthen integjerin e rastwsishwm ndwrmjet numrave tw caktuar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.2.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "Poshtë"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.3.String.Text
-#, fuzzy
 msgid  "The smallest integer returned"
 msgstr "Integjeri me i vogwl i kthyer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.4.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "Lartë"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.5.String.Text
-#, fuzzy
 msgid  "The largest integer returned"
 msgstr "Integjeri mw i madh i kthyer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.1.String.Text
-#, fuzzy
 msgid  "Returns the greatest common divisor"
 msgstr "E kthen plotpjeswtuesin mw tw madh tw thjeshtw"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "Numrat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "Numri apo lista e numrave"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
-#, fuzzy
 msgid  "Returns the least common multiple"
 msgstr "E kthen shumwfishin mw tw komplikuar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "Numrat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "Numri apo lista e numrave"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.1.String.Text
-#, fuzzy
 msgid  "Returns the modified Bessel function In(x)"
 msgstr "E kthen funksionin Bessel In(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
-#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Vlera ku funksioni do tw vlerwsohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Renditja e funksioneve Bessel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
-#, fuzzy
 msgid  "Returns the Bessel function Jn(x)"
 msgstr "E kthen funksion Bessel Jn(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.3.String.Text
-#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Vlera ku funksioni do tw vlerwsohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Renditja e funksioneve Bessel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.1.String.Text
-#, fuzzy
 msgid  "Returns the Bessel function Kn(x)"
 msgstr "E kthen funksion Bessel Kn(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.3.String.Text
-#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Vlera ku funksioni do tw vlerwsohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Renditja e funksioneve Bessel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.1.String.Text
-#, fuzzy
 msgid  "Returns the Bessel function Yn(x)"
 msgstr "E kthen funksion Bessel Yn(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.3.String.Text
-#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Vlera ku funksioni do tw vlerwsohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Renditja e funksioneve Bessel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.1.String.Text
-#, fuzzy
 msgid  "Converts a binary number to an octal number"
 msgstr "E kthen numrin binar nw numwr oktal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
-#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "Numri binar qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
-#, fuzzy
 msgid  "Converts a binary number to a decimal number"
 msgstr "E shndwrron numrin binar nw numwr decimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
-#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "Numri binar qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
-#, fuzzy
 msgid  "Converts a binary number to a hexadecimal number"
 msgstr "E kthen numrin binar nw numwr heksadecimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.3.String.Text
-#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "Numri binar qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.5.String.Text
-#, fuzzy
 msgid  "Number of places used."
 msgstr "Nurmi i vendeve tw pwrdorura."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.1.String.Text
-#, fuzzy
 msgid  "Converts an octal number to a binary number"
 msgstr "E kthen numrin oktal nw numwr binar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
-#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "Numri oktal qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
-#, fuzzy
 msgid  "Converts an octal number to a decimal number"
 msgstr "E shndwrron numrin oktal nw numwr decimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.3.String.Text
-#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "Numri oktal qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.1.String.Text
-#, fuzzy
 msgid  "Converts an octal number to a hexadecimal number"
 msgstr "E kthen numrin oktal nw numwr heksadecimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.3.String.Text
-#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "Numri oktal qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
-#, fuzzy
 msgid  "Converts a decimal number to a binary number"
 msgstr "E shndwrron numrin decimal nw numwr binar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
-#, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "Integjeri decimal qw do tw shndwrrohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
-#, fuzzy
 msgid  "Converts a decimal number to a hexadecimal number"
 msgstr "E shndwrron numrin decimal nw numwr heksadecimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.3.String.Text
-#, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "Integjeri decimal qw do tw shndwrrohet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
-#, fuzzy
 msgid  "Converts a decimal number into an octal number"
 msgstr "E kthen numrin decimal nw numwr oktal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
-#, fuzzy
 msgid  "The decimal number"
 msgstr "Numri decimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.1.String.Text
-#, fuzzy
 msgid  "Converts a hexadecimal number to a binary number"
 msgstr "E kthen numrin heksadecimal nw numwr binar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
-#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Numri heksadecimal qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.1.String.Text
-#, fuzzy
 msgid  "Converts a hexadecimal number to a decimal number"
 msgstr "E shndwrron numrin heksadecimal nw numwr decimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.3.String.Text
-#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Numri heksadecimal qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.1.String.Text
-#, fuzzy
 msgid  "Converts a hexadecimal number to an octal number"
 msgstr "E kthen numrin heksadecimal nw numwr oktal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.3.String.Text
-#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Numri heksadecimal qw do tw shndwrrohet (si tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "Vendet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "Numri i vendeve tw pwrdorura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.1.String.Text
-#, fuzzy
 msgid  "Tests whether two values are equal"
 msgstr "E provon se a janw tw barabarta dy vlerat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.2.String.Text
-#, fuzzy
 msgid  "Number 1"
 msgstr "Numri 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.3.String.Text
-#, fuzzy
 msgid  "The first number"
 msgstr "Numri i parë"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.4.String.Text
-#, fuzzy
 msgid  "Number 2"
 msgstr "Numri 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.5.String.Text
-#, fuzzy
 msgid  "The second number"
 msgstr "Numri i dytw"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.1.String.Text
-#, fuzzy
 msgid  "Returns the error function"
 msgstr "E kthen funksionin me gabim"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.2.String.Text
-#, fuzzy
 msgid  "Lower limit"
 msgstr "Kufiri i poshtëm"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
-#, fuzzy
 msgid  "The lower limit for integration"
 msgstr "Kufiri i poshtëm pwr integrim"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.4.String.Text
-#, fuzzy
 msgid  "Upper limit"
 msgstr "Kufiri i epërm"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.5.String.Text
-#, fuzzy
 msgid  "The upper limit for integration"
 msgstr "Kufiri i epërm pwr integrim"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.1.String.Text
-#, fuzzy
 msgid  "Returns the complementary error function"
 msgstr "E kthen funksionin gabim plotwsues"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.2.String.Text
-#, fuzzy
 msgid  "Lower limit"
 msgstr "Kufiri i poshtëm"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.3.String.Text
-#, fuzzy
 msgid  "The lower limit for integration"
 msgstr "Kufiri i poshtëm pwr integrim"
 
@@ -1358,332 +1193,266 @@ msgid  "Tests whether a number is greater than a threshold value"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.3.String.Text
-#, fuzzy
 msgid  "The value to test against step"
 msgstr "Vlera qw do tw provohet ndaj hapit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.4.String.Text
-#, fuzzy
 msgid  "Step"
 msgstr "Hapi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.5.String.Text
-#, fuzzy
 msgid  "The threshhold value"
 msgstr "Vlera e portws"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.1.String.Text
-#, fuzzy
 msgid  "Returns the double factorial of Number"
 msgstr "E kthen faktorialin e dyfishtw tw numrit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.1.String.Text
-#, fuzzy
 msgid  "Returns the absolute value (modulus) of a complex number"
 msgstr "I kthen vlerat absolute tw njw numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.1.String.Text
-#, fuzzy
 msgid  "Returns the imaginary coefficient of a complex number"
 msgstr "E kthen koeficientin imagjinar tw njw numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.1.String.Text
-#, fuzzy
 msgid  "Returns a complex number raised to an integer power"
 msgstr "E kthen njw numwr kompleks i cili wshtw i ngritur nw fuqi integjere"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.4.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.5.String.Text
-#, fuzzy
 msgid  "Power to which the complex number is raised"
 msgstr "Fuqia nw tw cilwn wshtw ngritur numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.1.String.Text
-#, fuzzy
 msgid  "Returns the argument theta, an angle expressed in radians"
 msgstr "E kthen argumentin theta, kwndin e shprehur nw radian"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.3.String.Text
-#, fuzzy
 msgid  "A complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.1.String.Text
-#, fuzzy
 msgid  "Returns the cosine of a complex number"
 msgstr "E kthen kosinusin e njw numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.3.String.Text
-#, fuzzy
 msgid  "A complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.1.String.Text
-#, fuzzy
 msgid  "Returns the quotient of two complex numbers"
 msgstr "E kthen herwsin e dy numrave kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.2.String.Text
-#, fuzzy
 msgid  "Numerator"
 msgstr "Numrator"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.3.String.Text
-#, fuzzy
 msgid  "The dividend"
 msgstr "I pjeswtueshmi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.4.String.Text
-#, fuzzy
 msgid  "Denominator"
 msgstr "Emëruesi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
-#, fuzzy
 msgid  "The divisor"
 msgstr "Pjeswtuesi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
-#, fuzzy
 msgid  "Returns the algebraic form of the exponential of a complex number"
 msgstr "E kthen formwn algjebrike tw eksponentit tw njw numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.1.String.Text
-#, fuzzy
 msgid  "Returns the complex conjugate of a complex number"
 msgstr "E kthen kosinusin e njw numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.1.String.Text
-#, fuzzy
 msgid  "Returns the natural logarithm of a complex number"
 msgstr "E kthen logaritmin natyral tw numrit kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.1.String.Text
-#, fuzzy
 msgid  "Returns the base-10 logarithm of a complex number"
 msgstr "E kthen llogaritmin base-10 tw numrit kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.1.String.Text
-#, fuzzy
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "E kthen llogaritmin base-2 tw numrit kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.1.String.Text
-#, fuzzy
 msgid  "Returns the product of several complex numbers"
 msgstr "E kthen prodhimin e disa numrave kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.3.String.Text
-#, fuzzy
 msgid  "The first complex number"
 msgstr "Numri i parë kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.4.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.5.String.Text
-#, fuzzy
 msgid  "Another complex number"
 msgstr "Numwr tjetwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.1.String.Text
-#, fuzzy
 msgid  "Returns the real coefficient of a complex number"
 msgstr "E kthen koeficientin e vwrtetw tw numrit kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.1.String.Text
-#, fuzzy
 msgid  "Returns the sine of a complex number"
 msgstr "E kthen sinusin e numrit kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.1.String.Text
-#, fuzzy
 msgid  "Returns the difference of two complex numbers"
 msgstr "E kthen ndryshimin e dy numrave kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.2.String.Text
-#, fuzzy
 msgid  "Complex number 1"
 msgstr "Numri kompleks 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.3.String.Text
-#, fuzzy
 msgid  "Complex number 1"
 msgstr "Numri kompleks 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.4.String.Text
-#, fuzzy
 msgid  "Complex number 2"
 msgstr "Numri kompleks 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.5.String.Text
-#, fuzzy
 msgid  "Complex number 2"
 msgstr "Numri kompleks 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.1.String.Text
-#, fuzzy
 msgid  "Returns the square root of a complex number"
 msgstr "E kthen rrwnjwn katrore tw numrit kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.1.String.Text
-#, fuzzy
 msgid  "Returns the sum of complex numbers"
 msgstr "E kthen shumwn e numrave kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "Numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "Numri kompleks"
 
@@ -1784,72 +1553,58 @@ msgid  "A complex number"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.1.String.Text
-#, fuzzy
 msgid  "Converts real and imaginary coefficients into a complex number"
 msgstr "I shndwrron koeficientwt real dhe imagjinarw nw numwr kompleks"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.2.String.Text
-#, fuzzy
 msgid  "Real num"
 msgstr "Numwr real"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.3.String.Text
-#, fuzzy
 msgid  "The real coefficient"
 msgstr "Koeficienti real"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.4.String.Text
-#, fuzzy
 msgid  "I num"
 msgstr " "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.5.String.Text
-#, fuzzy
 msgid  "The imaginary coefficient"
 msgstr "Koeficienti imagjinar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.6.String.Text
-#, fuzzy
 msgid  "Suffix"
 msgstr "Prapashtesa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.7.String.Text
-#, fuzzy
 msgid  "The suffix"
 msgstr "Prapashtesa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.1.String.Text
-#, fuzzy
 msgid  "Converts a number from one measurement system to another"
 msgstr "E shndwrron numrin nga njw sistem masash nw tjetrin"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Numri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.4.String.Text
-#, fuzzy
 msgid  "From unit"
 msgstr "Nga njësia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.5.String.Text
-#, fuzzy
 msgid  "Unit of measure for number"
 msgstr "Njwsia e matjes pwr numrin"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.6.String.Text
-#, fuzzy
 msgid  "To unit"
 msgstr "Pwr njwsinw"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.7.String.Text
-#, fuzzy
 msgid  "Unit of measure for the result"
 msgstr "Njwsia e matjes pwr rezultat"
 
@@ -1858,37 +1613,30 @@ msgid  "Returns the prorated linear depreciation of an asset for each accounting
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
-#, fuzzy
 msgid  "Cost"
 msgstr "Shpenzim"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.3.String.Text
-#, fuzzy
 msgid  "Cost of the asset"
 msgstr "Çmimi i pronws"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.4.String.Text
-#, fuzzy
 msgid  "Date purchased"
 msgstr "Data e blerjes"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.5.String.Text
-#, fuzzy
 msgid  "Purchase date of the asset"
 msgstr "Data e blerjes sw pasurisw"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
-#, fuzzy
 msgid  "First period"
 msgstr "Periudha e parw"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.7.String.Text
-#, fuzzy
 msgid  "Date the first period ends"
 msgstr "Data kur pwrfundon periudha e parw"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.8.String.Text
-#, fuzzy
 msgid  "Salvage"
 msgstr "Riaftësim"
 
@@ -3876,221 +3624,177 @@ msgid  "The schedule"
 msgstr "Orari"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "E llogarit numrin e javwve nw njw periudhw specifike"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Dita e parw e periudhws"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Data e mbarimit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Dita e fundit e periudhws"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tipi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
 msgstr "Lloji i llogaritjes: Type=0 do tw tw thotw intervali i kohws, Type=1 do tw thotw javwt e kalendarit."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
-#, fuzzy
 msgid  "Determines the number of months in a specific period."
 msgstr "E cakton numrin e muajve pwr njw periudhw tw caktuar."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
-#, fuzzy
 msgid  "First day of the period."
 msgstr "Dita e parw e periudhws."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Data e mbarimit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.5.String.Text
-#, fuzzy
 msgid  "Last day of the period."
 msgstr "Dita e fundit e periudhws."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tipi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
 msgstr "Lloji i llogaritjes: Type=0 do tw tw thotw intervali i kohws, Type=1 do tw thotw muajt e kalendarit."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of years in a specific period."
 msgstr "E llogaritw numrin e viteve nw njw periudhw specifike."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Data e fillimit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Dita e parw e periudhws"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Data e mbarimit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Dita e fundit e periudhws"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tipi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
 msgstr "Lloji i llogaritjes: Type=0 do tw tw thotw intervali i kohws, Type=1 do tw thotw vitet e kalendarit."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
-#, fuzzy
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
 msgstr "E kthen 1 (TRUE) nwse data wshtw ditw e njw viti tw brishtw, pwrndryshe (FALSE)"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Çfarwdo dite nw vitin e dwshiruar"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
-#, fuzzy
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "E kthen numrin e ditwve nw muaj nw tw cilin data e dhwnw paraqitet"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired month"
 msgstr "Çfarwdo dite nw muajin e dwshiruar"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
-#, fuzzy
 msgid  "Returns the number of days of the year in which the date entered occurs."
 msgstr "E kthen numrin e ditwve nw vit nw tw cilin data e dhwnw paraqitet."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Çfarwdo dite nw vitin e dwshiruar"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
-#, fuzzy
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
 msgstr "E kthen numrin e javwve nw muaj nw tw cilin data e dhwnw paraqitet"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Çfarwdo dite nw vitin e dwshiruar"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
-#, fuzzy
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
 msgstr "Shifron apo deshifron tekstin duke pwrdorur algoritmin ROT13"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.3.String.Text
-#, fuzzy
 msgid  "Text to be encrypted or text already encrypted"
 msgstr "Teksti qw duhet shifruar apo teksti i shifruar"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffWeeks.String.Text
-#, fuzzy
 msgid  "WEEKS"
 msgstr " "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffMonths.String.Text
-#, fuzzy
 msgid  "MONTHS"
 msgstr " "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffYears.String.Text
-#, fuzzy
 msgid  "YEARS"
 msgstr " "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_IsLeapYear.String.Text
-#, fuzzy
 msgid  "ISLEAPYEAR"
 msgstr " "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInMonth.String.Text
-#, fuzzy
 msgid  "DAYSINMONTH"
 msgstr " "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInYear.String.Text
-#, fuzzy
 msgid  "DAYSINYEAR"
 msgstr " "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WeeksInYear.String.Text
-#, fuzzy
 msgid  "WEEKSINYEAR"
 msgstr " "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_Rot13.String.Text
-#, fuzzy
 msgid  "ROT13"
 msgstr " "

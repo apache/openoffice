@@ -53,19 +53,19 @@ msgstr "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "ଅତି ଉଚ୍ଚ (~V)\nବିଶ୍ୱସ୍ତ ଫାଇଲ ସ୍ଥାନରୁ କେବଳ macroଗୁଡ଼ିକୁ ଚଲାଇବାର ଅନୁମତି ଅଛି। ଅନ୍ୟ ସମସ୍ତ macroଗୁଡ଼ିକ, ହସ୍ତାକ୍ଷର ହୋଇଥାଉ କି ନାହିଁ, ନିଷ୍କ୍ରିୟ କରାଯାଇଥାଏ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "ଉଚ୍ଚ୤\nବିଶ୍ବସ୍ତ ମୂଳଗୁଡିକରୁ କେବଳ ହସ୍ତାକ୍ଷରହୋଇଥିବା ମାକ୍ରୋଗୁଡିକ ଚାଲୁହେବା ପାଇଁ ସ୍ବୀକୃତ ଅଟେ୤ ହସ୍ତାକ୍ଷରହୋଇନଥିବା ମାକ୍ରୋଗୁଡିକ ଅକ୍ଷମ ଅଟେ୤"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "ମଧ୍ଯମ (~M)\nଅବିଶ୍ୱସ୍ତ ଉତ୍ସରୁ macroଗୁଡ଼ିକୁ ନିଷ୍ପାଦନ କରିବା ପୂର୍ବରୁ ନିଶ୍ଚିତକରଣ ଆବଶ୍ୟକ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "ନିମ୍ନ (ପରାମର୍ଶିତ ନୁହଁ) (~L)।\nସମସ୍ତ macroଗୁଡ଼ିକୁ ବିନା ନିଶ୍ଚିତକରଣରେ ନିଷ୍ପାଦନ କରାଯାଇଥାଏ। ଏହି ସେଟିଙ୍ଗକୁ ବ୍ୟବହାର କରନ୍ତୁ ଯଦି କେବଳ ଆପଣ ନିଶ୍ଚିତ ଅଛନ୍ତି ଯେ ସମସ୍ତ ଦଲିଲଗୁଡ଼ିକୁ ଖୋଲିବା ସୁରକ୍ଷିତ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "ବିଶ୍ବସ୍ତ ପ୍ରମାଣପତ୍ରଗୁଡିକ "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "କୁ ନିର୍ଗମ\tଦ୍ବାରା ନିର୍ଗମ\tଅବସାନ ତାରିଖ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "ନିମ୍ନ ବ୍ଯକ୍ତିମାନେ ଏହି ପ୍ଯା
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tଦ୍ବାରା ହସ୍ତାକ୍ଷରହୋଇଛି\tଡିଜିଟାଲ ID ଦ୍ବାରା ନିର୍ଗମ \tତାରିଖ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "ପ୍ରମାଣପତ୍ରକୁ ବିଧିମାନ୍ୟ କର�
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "କ୍ଷେତ୍ର\tମୂଲ୍ଯ"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "ତୁମେ ହସ୍ତାକ୍ଷରକରିବା ପାଇଁ ଉ
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "କୁ ନିର୍ଗମ\tଦ୍ବାରା ନିର୍ଗମ\tଅବସାନ ତାରିଖ"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

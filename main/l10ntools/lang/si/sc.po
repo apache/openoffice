@@ -153,8 +153,9 @@ msgid  "Column Fields"
 msgstr "තීරු ක්ෂේත්‍ර"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "පේළි ක්ෂේත්‍ර"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -1177,87 +1178,70 @@ msgid  "Text Import"
 msgstr "පෙළ ආයාතය"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "ආයාත කරන්න"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
-#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "අනු ලකුණු කුලකය (~a)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CUSTOMLANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "භාෂාව"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
-#, fuzzy
 msgid  "From ro~w"
 msgstr "පේළියෙන් (~w)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
-#, fuzzy
 msgid  "Separator options"
 msgstr "වෙන් කිරීමේ අභිරුචි"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
-#, fuzzy
 msgid  "~Fixed width"
 msgstr "නියත පළල (~F)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
-#, fuzzy
 msgid  "~Separated by"
 msgstr "වෙන් කරන ලද්දේ (~S)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
-#, fuzzy
 msgid  "~Tab"
 msgstr "ටැබ් (~T)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
-#, fuzzy
 msgid  "~Comma"
 msgstr "කොමාව (~C)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
-#, fuzzy
 msgid  "~Other"
 msgstr "වෙනත් (~O)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
-#, fuzzy
 msgid  "S~emicolon"
 msgstr "තිත් කොමාව (~e)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "S~pace"
 msgstr "ඉඩ (~p)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
-#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "පරිසීමක ඒකාබද්ධ කරන්න (~d)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
-#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "පෙළ පරිසීමකය (~x)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_OTHER_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Other options"
 msgstr "වෙනත් අභිරුචි"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_QUOTED_AS_TEXT.CheckBox.Text
-#, fuzzy
 msgid  "~Quoted field as text"
 msgstr "ප්‍රකාශිත ක්ෂේත්‍රය පෙළ ලෙස (~Q)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_DETECT_SPECIAL_NUMBER.CheckBox.Text
-#, fuzzy
 msgid  "Detect special numbers"
 msgstr "විශේෂ අංක අනාවරණය"
 
@@ -1352,487 +1336,390 @@ msgid  "Settings"
 msgstr "සැකසුම්"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of sheets:"
 msgstr "පත්‍ර ගණන:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of cells:"
 msgstr "සෙල් ගණන:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of pages:"
 msgstr "පිටු ගණන:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Document: "
 msgstr "ලේඛණය:"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "පෙරනිමි (~D)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "~Style"
 msgstr "මෝස්තරය (~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "~Superscript"
 msgstr "උඩුලකුණු (~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "S~ubscript"
 msgstr "යටිලකුණු (~u)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "පෙළගැස්ම (~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "වම (~L)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "දකුණ (~R)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "මැදට වූ (~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
-#, fuzzy
 msgid  "~Justified"
 msgstr "සමව පෙළගැස්වූ (~J)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "පේළි ඉඩ (~L)"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "අධිසබැඳුම... (~H)"
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "අධිසබැඳුම ඉවත් කරන්න (~R)"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "පෙළ... (~x)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
-#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "මැක්‍රෝවක් ආදේශ කරන්න... (~n)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "මුල් ප්‍රමාණය (~O)"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "නම..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "විස්තරය..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "පැත්ත මාරු කරන්න (~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "සිරස්ව (~V)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "තිරස්ව (~H)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "සංවිධානය කරන්න (~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "ඉදිරියට ගේන්න (~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "පසුපසට ගෙනයන්න (~w)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "නැංගුරම (~c)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "පිටුවට (~a)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "කොටුවට (~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "පෙළගැස්ම (~l)"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "ඇඳීමේ වස්තු තීරුව"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Text Object Bar"
 msgstr "පෙළ වස්තු තීරුව"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "චිත්‍රක වස්තු තීරුව"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
-#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "ඇඳීම් වස්තු සඳහා උත්පතන මෙනුව"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
-#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "පෙළ වස්තු සඳහා උත්පතන මෙනුව"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "නම..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "විස්තරය..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "සංවිධානය කරන්න (~A)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "ඉදිරියට ගේන්න (~F)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "පසුපසට ගෙනයන්න (~w)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "නැංගුරම (~c)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "පිටුවට (~a)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "කොටුවට (~C)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "පෙළගැස්ම (~l)"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
-#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "වස්තූන් පිහිටුවීම සඳහා උත්පතන මෙනුව"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Last Used"
 msgstr "අවසන්වරට භාවිතා කළ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "All"
 msgstr "සියළු"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Database"
 msgstr "දත්ත සමුදාය"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Date&Time"
 msgstr "දිනය සහ වෙලාව"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Financial"
 msgstr "මූල්‍ය"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Information"
 msgstr "තොරතුරු"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Logical"
 msgstr "තාර්කික"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Mathematical"
 msgstr "ගණිතමය"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Array"
 msgstr "අරාව"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Statistical"
 msgstr "සංඛ්‍යාන"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "පැතුරුම්පත"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "පෙළ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Add-in"
 msgstr "එක් කරන්න"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "ගණනය කිරීමේ පත්‍රයට ශ්‍රිතය ඇතුල් කරන්න"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "ක්‍රියා"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
-#, fuzzy
 msgid  "Range"
 msgstr "පරාසය"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "හකුළන්න/විහිදන්න"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
-#, fuzzy
 msgid  "Column inserted"
 msgstr "තීරුව ඇතුල් කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
-#, fuzzy
 msgid  "Row inserted "
 msgstr "පේළිය ඇතුල් කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
-#, fuzzy
 msgid  "Sheet inserted "
 msgstr "පත්‍රය ඇතුල් කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
-#, fuzzy
 msgid  "Column deleted"
 msgstr "තීරුව මකන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
-#, fuzzy
 msgid  "Row deleted"
 msgstr "පේළිය මකන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
-#, fuzzy
 msgid  "Sheet deleted"
 msgstr "පත්‍රය මකන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
-#, fuzzy
 msgid  "Range moved"
 msgstr "පරාසය ගමන්කරවන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "අන්තර්ගතය වෙනස්කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "අන්තර්ගතය වෙනස්කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed to "
 msgstr "ට වෙනස්කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
-#, fuzzy
 msgid  "Original"
 msgstr "මුල්"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
-#, fuzzy
 msgid  "Changes rejected"
 msgstr "වෙනස්කම් ප්‍රතික්ෂේප කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
-#, fuzzy
 msgid  "Accepted"
 msgstr "පිළිගන්නා ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
-#, fuzzy
 msgid  "Rejected"
 msgstr "ප්‍රතික්ෂේප කරන ලදි"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
-#, fuzzy
 msgid  "No Entry"
 msgstr "ප්‍රවේශයක් නොමැත"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
-#, fuzzy
 msgid  "<empty>"
 msgstr "<empty>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
-#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "වෙනස්කම් පිළිගන්න හෝ ප්‍රතික්ෂේප කරන්න"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Comment..."
 msgstr "විස්තර සටහන සංස්කරණය කරන්න..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
-#, fuzzy
 msgid  "Action"
 msgstr "ක්‍රියාව"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "ස්ථානය"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "Author"
 msgstr "කර්තෘ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
-#, fuzzy
 msgid  "Date"
 msgstr "දිනය"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "විස්තරය"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
-#, fuzzy
 msgid  "Sorting"
 msgstr "සුබෙදමින්"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
-#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "ගැටීම් විසඳන්න"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
-#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "මෙම හවුල් පැතුරුම් පතේ ගැටුම්කාරී වෙනස්කම් තිබේ. පැතුරුම් පත සුරැකීමට ප්‍රථම ගැටුම් විසඳිය යුතුය. අයිති හෝ වෙනත් වෙනස්කම් තබා ගන්න."
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "මගේ ඒවා තබා ගන්න (~M)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Other"
 msgstr "වෙනත් ඒවා තබා ගන්න (~O)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
-#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "මගේ සියල්ල තබා ගන්න (~K)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
-#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "අනිත් අයගේ සියල්ල තබා ගන්න (~A)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
-#, fuzzy
 msgid  "Conflict"
 msgstr "ගැටුම"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
-#, fuzzy
 msgid  "Author"
 msgstr "කර්තෘ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "දිනය"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "නොදන්නා භාවිතා කරන්නා"
 
@@ -1842,12 +1729,10 @@ msgid  "Re-type Password"
 msgstr "මුර පදය නැවත යතුරු ලියනය කරන්න"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "The document you are about to export has one or more protected items with password that cannot be exported.  Please re-type your password to be able to export your document."
 msgstr "ඔබ නිර්යාත කිරීමට සැරසෙන ලේඛනයේ මුරපද මඟින් ආරක්‍ෂා කළ අයිතම එකක් හෝ කිහිපයක් ඇත. නිර්යාත කිරීම සඳහා කරුණාකර යළිත් ඔබේ මුර පදය ඇතුළත් කරන්න."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_DOCUMENT.FixedLine.Text
-#, fuzzy
 msgid  "Document protection"
 msgstr "ලේඛණ ආරක්ෂණය"
 
@@ -2027,652 +1912,522 @@ msgid  "(exclusive access)"
 msgstr "(සුවිශේෂ ප්‍රවේශය)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Insert Sheet"
 msgstr "පත්‍රය ඇතුල් කරන්න"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "ස්ථානය"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
-#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "දැනට පවතින පත්‍රයට පෙර (~e)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
-#, fuzzy
 msgid  "~After current sheet"
 msgstr "දැනට පවතින පත්‍රයට පසු (~A)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
-#, fuzzy
 msgid  "Sheet"
 msgstr "පත්‍රය"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
-#, fuzzy
 msgid  "~New sheet"
 msgstr "නව පත්‍රය (~N)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "පත්‍ර ගණන (~o)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "Na~me"
 msgstr "නම (~m)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
-#, fuzzy
 msgid  "~From file"
 msgstr "ගොනුවෙන් (~F)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "ගවේෂණය කරන්න... (~B)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
-#, fuzzy
 msgid  "Lin~k"
 msgstr "සැබැඳුම (~k)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
-#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "පැතුරුම් පත්‍රයේ වෙනස්කම් පෙන්නන්න (~S)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
-#, fuzzy
 msgid  "Filter settings"
 msgstr "පෙරහනේ සැකසීම්"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "පිළිගත් වෙනස්කම් පෙන්නන්න (~a)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "ප්‍රතික්ෂේප කළ වෙනස්කම් පෙන්නන්න (~r)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "හකුළන්න/විහිදන්න"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
-#, fuzzy
 msgid  "Show Changes"
 msgstr "වෙනස්කම් පෙන්නන්න"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ModalDialog.Text
-#, fuzzy
 msgid  "Protect Sheet"
 msgstr "පත්‍රය සුරකින්න"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.BTN_PROTECT.CheckBox.Text
-#, fuzzy
 msgid  "P~rotect this sheet and the contents of locked cells"
 msgstr "මෙම පිටුව සහ අගුලු ලා ඇති සෙලයන්හි අන්තර්ගතය සුරකින්න (~r)"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD1.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "මුර පදය (~P)"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD2.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "තහවුරු කරන්න (~C)"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "අභිරුචි"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "Allow all users of this sheet to:"
 msgstr "මෙම පත්‍රයේ සියලුම පරිශීලකයන්ට අනුමත අකරන්න:"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_LOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select locked cells"
 msgstr "යතුරු දැමූ සෙල් තෝරන්න"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_UNLOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select unlocked cells"
 msgstr "යතුරු නොදැමූ සෙල් තෝරන්න"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
-#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "භාහිර දත්ත මූලයේ URL (~e)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
-#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(පෙදෙසි ගොනු පද්ධතියේ හෝ මෙහි අන්තර්ජාලයේ මූල ලිපියේ URL එක ඇතුල් කරන්න.)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
-#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "ප්‍රයෝජනයට ගත හැකි වගු/පරාස (~A)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
-#, fuzzy
 msgid  "~Update every"
 msgstr "සියල්ල යාවත්කාල කරන්න (~U)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "තත්පර"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
-#, fuzzy
 msgid  "External Data"
 msgstr "භාහිර දත්ත"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "සංචාලකයා"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
-#, fuzzy
 msgid  "Row"
 msgstr "පේළිය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Row"
 msgstr "පේළිය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column"
 msgstr "තීරුව"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
-#, fuzzy
 msgid  "Column"
 msgstr "තීරුව"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
-#, fuzzy
 msgid  "Document"
 msgstr "ලේඛනය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "දත්ත පරාසය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Start"
 msgstr "ආරම්භය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "End"
 msgstr "අවසානය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "අන්තර්ගතය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "ටොගලය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
-#, fuzzy
 msgid  "Scenarios"
 msgstr "සෙනාරි"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "අදින ප්‍රකාරය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "අදින ප්‍රකාරය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
-#, fuzzy
 msgid  "Display"
 msgstr "සංදර්ශනය කරන්න"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
-#, fuzzy
 msgid  "active"
 msgstr "ක්‍රියාකාරී"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
-#, fuzzy
 msgid  "inactive"
 msgstr "අක්‍රීය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
-#, fuzzy
 msgid  "hidden"
 msgstr "සැඟවුණු"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
-#, fuzzy
 msgid  "Active Window"
 msgstr "ක්‍රියාකාරී කවුළුව"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
-#, fuzzy
 msgid  "Scenario Name"
 msgstr "සෙනාරි නාමය"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "අදහස්"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "අන්තර්ගතය"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
-#, fuzzy
 msgid  "Sheets"
 msgstr "පත්‍ර"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
-#, fuzzy
 msgid  "Range names"
 msgstr "පරාස නාම"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
-#, fuzzy
 msgid  "Database Ranges"
 msgstr "දත්ත සමුදාය පරාස"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "චිත්‍රක"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
-#, fuzzy
 msgid  "OLE objects"
 msgstr "OLE වස්තු"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "අදහස්"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
-#, fuzzy
 msgid  "Linked areas"
 msgstr "සබැඳි ප්‍රදේශ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing objects"
 msgstr "ඇඳීමේ වස්තු"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "අධිසබැඳුමක් ලෙස එක් කරන්න"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Link"
 msgstr "සබැඳියක් ලෙස එක් කරන්න"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Copy"
 msgstr "පිටපතක් ලෙස ඇතුල් කරන්න"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "මකන්න"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "ගුණාංග..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
-#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "මුද්‍රණ පරාසය සංස්කරණය කරන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "මුද්‍රණ පරාසය"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- කිසිවක් නැත -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- මුළු පත්‍රයම -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- පරිශීලක අර්ථ දැක්වූ -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- selection -"
 msgstr "- තේරීම -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
-#, fuzzy
 msgid  "Rows to repeat"
 msgstr "පුනරාවර්තනය සඳහා පේළි"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- කිසිවක් නැත -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- පරිශීලක අර්ථ දැක්වූ -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
-#, fuzzy
 msgid  "Columns to repeat"
 msgstr "පුනරාවර්තනය සඳහා තීරු"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- කිසිවක් නැත -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- පරිශීලක අර්ථ දැක්වූ -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
-#, fuzzy
 msgid  "~Column and row headers"
 msgstr "තීරු සහ පේළි ශීර්ෂකයන් (~C)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "ජාලකය (~G)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NOTES.CheckBox.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "අදහස් (~C)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
-#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "වස්තු/චිත්‍රක (~O)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
-#, fuzzy
 msgid  "Ch~arts"
 msgstr "ප්‍රස්තාර (~a)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
-#, fuzzy
 msgid  "~Drawing objects"
 msgstr "ඇඳීම් වස්තු (~D)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
-#, fuzzy
 msgid  "~Formulas"
 msgstr "සූත්‍ර (~F)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
-#, fuzzy
 msgid  "Zero ~values"
 msgstr "ශූන්‍ය අගයන් (~v)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "මුද්‍රණය කරන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
-#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "මුදුනේ සිට පතුලට ඊළඟට දකුණට (~T)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "වමේ සිට දකුණට ඊළඟට පහළට (~L)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
-#, fuzzy
 msgid  "First ~page number"
 msgstr "මුල් පිටු අංකය (~p)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
-#, fuzzy
 msgid  "Page order"
 msgstr "පිටු අනුපිළිවෙල"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
-#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "පරිමාණක ප්‍රකාරය (~m)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
-#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "මුද්‍රිතය ඌනනය කරන්න/විශාල කරන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "පළල/උස ට මුද්‍රණ පරාසය (පරාස) ගලපන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "පිටු ගණන මත මුද්‍රණ පරාසය (පරාස) ගලපන්න"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
-#, fuzzy
 msgid  "~Scaling factor"
 msgstr "පරිමාණ සාධකය (~S)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width in pages"
 msgstr "පිටු වල පළල (~W)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight in pages"
 msgstr "පිටු වල උස (~e)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
-#, fuzzy
 msgid  "N~umber of pages"
 msgstr "පිටු ගණන (~u)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "පරිමාණය"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
-#, fuzzy
 msgid  "Headers/Footers"
 msgstr "ශීර්ෂක/පාදක"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
-#, fuzzy
 msgid  "Header"
 msgstr "ශීර්ෂකය"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "පාදකය"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Header (right)"
 msgstr "ශීර්ෂකය (දකුණ)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
-#, fuzzy
 msgid  "Header (left)"
 msgstr "ශීර්ෂකය (වම)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Footer (right)"
 msgstr "පාදකය (දකුණ)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
-#, fuzzy
 msgid  "Footer (left)"
 msgstr "පාදකය (වම)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
-#, fuzzy
 msgid  "Headers"
 msgstr "ශීර්ෂක"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
-#, fuzzy
 msgid  "Footers"
 msgstr "පාදක"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left area"
 msgstr "වම් ප්‍රදේශය (~L)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
-#, fuzzy
 msgid  "~Center area"
 msgstr "මැද ප්‍රදේශය (~C)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "R~ight area"
 msgstr "දකුණු ප්‍රදේශය (~i)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
-#, fuzzy
 msgid  "Hea~der"
 msgstr "ශීර්ෂකය (~d)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
-#, fuzzy
 msgid  "Custom header"
 msgstr "රිසි ශීර්ෂකය"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Text Attributes"
 msgstr "පෙළෙහි උප ලක්ෂණ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Title"
 msgstr "තේමාව"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
-#, fuzzy
 msgid  "Title"
 msgstr "තේමාව"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
-#, fuzzy
 msgid  "File Name"
 msgstr "ගොනු නාමය"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
-#, fuzzy
 msgid  "Path/File Name"
 msgstr "පෙත/ගොනු නාමය"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Sheet Name"
 msgstr "පත්‍රයේ නම"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Page"
 msgstr "පිටුව"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Pages"
 msgstr "පිටු"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Date"
 msgstr "දිනය"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Time"
 msgstr "වෙලාව"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "ෆොන්ට වෙනස් කිරීමට හෝ දිනය, වෙලාව වැනි ක්ෂේත්‍ර විධාන ඇතුල් කිරීමට බොත්තම් භාවිතා කරන්න."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Note"
 msgstr "සටහන"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "සංස්කරණය කරන්න... (~E)"
 
@@ -2806,8 +2561,9 @@ msgid  "~Discard"
 msgstr "ඉවත් කරන්න (~D)"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
+#, fuzzy
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "# ප්‍රවේශය මැකිය යුතුද?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3300,86 +3056,70 @@ msgid  "~Delete"
 msgstr "මකන්න (~D)"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
-#, fuzzy
 msgid  "Format Cells"
 msgstr "සෙල් හැඩතල"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "අංක"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ෆොන්ටය"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "ෆොන්ට ප්‍රයෝග"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "පෙළගැස්වීම"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "ආසියානු අකුරු මුද්‍රණය"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "දාර"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "පසුබිම"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
-#, fuzzy
 msgid  "Cell Protection"
 msgstr "කොටු ආරක්ෂණය"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
-#, fuzzy
 msgid  "~Protected"
 msgstr "ආරක්ෂිත (~P)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~formula"
 msgstr "සූත්‍රය සඟවන්න (~f)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~all"
 msgstr "සියල්ල සඟවන්න (~a)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "කොටු ආරක්ෂණය සඵල වන්නේ වත්මන් පත්‍රය ආරක්ෂා කළ පසු පමණි. 'මෙවලම්' මෙනුවෙන් 'ලේඛනයේ ආරක්ෂා කරන්න' තෝරා 'පත්‍රය' දක්වන්න."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
-#, fuzzy
 msgid  "Protection"
 msgstr "ආරක්ෂණය"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "මුද්‍රණය කරන විට සඟවන්න (~w)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
-#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "තේරු සෙල් මුද්‍රණයේදී අත් හැරෙනු ඇත."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "මුද්‍රණය කරන්න"
 
@@ -4006,8 +3746,9 @@ msgid  "No operations to execute"
 msgstr "ක්‍රියාත්මක කිරීමට මෙහෙයුම් නැත"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
+#, fuzzy
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "පරාසයේ තීරු ශීර්ෂ අඩංගු නොවේ.\nඔබට පළමු පේළිය තීරු ශීර්ෂ ලෙස භාවිතා කිරීමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -4085,8 +3826,9 @@ msgid  "Search key not found."
 msgstr "සෙවුම් යතුර හමු නොවුණි."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
+#, fuzzy
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "අරමුණ සෙවීම සාර්ථක විය.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -4099,12 +3841,14 @@ msgid  ") into current cell?"
 msgstr ") වත්මන් කොටුවට?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
+#, fuzzy
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "අරමුණ සෙවීම සාර්ථක නොවීය.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
+#, fuzzy
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "නියම අගයක් හමු නොවුණි.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4686,8 +4430,9 @@ msgid  "Multiple operations"
 msgstr "බහු ක්‍රියා"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+#, fuzzy
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "ඔබ අවලංගු නමක් ඇතුල් කර ඇත.\nස්වයංක්‍රීය හැඩ හැස්සීම තැනීමට නොහැකි විය. \nවෙනස් නමක් භාවිතා කර නැවත උත්සහ කරන්න."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 #, fuzzy
@@ -4725,8 +4470,9 @@ msgid  "Print"
 msgstr "මුද්‍රණය කරන්න"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+#, fuzzy
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "ස්වයංක්‍රීය හැඩතල ගැන්වුම\nයෙදීමට අවම වශයෙන් 3x3\nසෙල් වගු පරාසයක් තේරිය යුතුය."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 #, fuzzy
@@ -4848,8 +4594,9 @@ msgid  "Report1"
 msgstr "වාර්තාව1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "අක්ෂර වින්‍යාසය පරීක්ෂා කිරීම සඳහා ලබා ගත නොහැක\nකරුණාකර ඔබගේ ස්ථාපනය පරීක්ෂා කර අවශ්‍ය නම්  \nඅපේක්ෂිත භාෂාව ස්ථාපනය කරන්න"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 #, fuzzy
@@ -4862,8 +4609,9 @@ msgid  "Should the spellcheck be continued at the beginning of the current sheet
 msgstr "අක්ෂර වින්‍යාසය පරීක්ෂාව සඳහා වත්මන් පත්‍රයේ ආරම්භයේ සිට දිගටම කරගෙන යාමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+#, fuzzy
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "විද්‍යාකෝෂය සඳහා ලබා ගත නොහැක\nකරුණාකර ඔබගේ ස්ථාපනය පරීක්ෂා කර අවශ්‍ය නම් \nඅපේක්ෂිත භාෂාව ස්ථාපනය කරන්න"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 #, fuzzy
@@ -5199,12 +4947,14 @@ msgid  "on"
 msgstr "මත"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+#, fuzzy
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "මෙම ගොනුවේ අනෙක් ගොනු වලට ඈඳුම් අඩංගු වේ.\nඒවා යාවත්කාල කළ යුතුද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+#, fuzzy
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "මෙම ගොනුවේ විමසුම් අඩංගු වේ. මෙම විමසුම් වල ප්‍රතිඵල සුරකුම් කර නැත.\nඔබට මෙම විමසුම් නැවත සිදු කිරීමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 #, fuzzy
@@ -5212,8 +4962,9 @@ msgid  "Too many conditions"
 msgstr "බොහෝ කොන්දේසි"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+#, fuzzy
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "පිරුණු සෙල් පත්‍රිකාවෙන් පිටතට\nමාරු කළ නොහැක."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 #, fuzzy
@@ -5236,8 +4987,9 @@ msgid  "There is not enough space on the sheet to insert here."
 msgstr "මෙහි ඇතුල් කිරීමට පත්‍රයේ ප්‍රමාණවත් ඉඩ නොමැත."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+#, fuzzy
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "ඈඳුම් පුවරුවේ අන්තර්ගතය තේරූ පරාසයට වඩා විශාල වේ.\nඔබට කෙසේ හෝ එය ඇතුල් කිරීමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 #, fuzzy
@@ -5290,8 +5042,9 @@ msgid  "Compare #"
 msgstr "සංසන්දනය කරන්න #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+#, fuzzy
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "අවලංගු උපරිම සෙල් ගණන ඉක්මවා ඇත.\nසෑම අවලංගු සෙලයක්ම ලකුණු කර නැත."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 #, fuzzy
@@ -5413,8 +5166,9 @@ msgid  "Exit Recording"
 msgstr "පටිගත කිරීමෙන් ඉවත් වෙන්න"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+#, fuzzy
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "මෙම ක්‍රියාව පටිගත කිරීම වෙනස් කිරීමේ ආකාරයෙන් ඉවත් කරනු ඇත.\nවෙනස්කම් පිළිබඳ ඕනෑම තොරතුරු නැති විය හැක.\n\nපටිගත කිරීම වෙනස් කිරීමේ ආකාරයෙන් ඉවත් වෙන්නද?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 #, fuzzy
@@ -5432,8 +5186,9 @@ msgid  "Array formula  %1 R x %2 C"
 msgstr "%1 R x %2 C අරා සූත්‍රය යොදන්න"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+#, fuzzy
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "මෙම ලේඛනයේ මැක්‍රො ක්‍රියා වලට ඇමතුම් අඩංගු වේ.\nඔබට ඒවා ධාවනය කිරීමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 #, fuzzy
@@ -5560,32 +5315,39 @@ msgid  "Your spreadsheet has been updated with changes saved by other users."
 msgstr "අනෙක් භාවිතා කරන්නන්ගේ වෙනස්කම් ද සහිතව ඔබේ පැතුරුම් පත යාවත්කාල කර ඇත."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+#, fuzzy
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "හවුල් කිරීමේ ආකාරය ක්‍රියාත්මක කිරීම සඳහා දැන් පැතුරුම් පත සුරකිය යුතුයි.\n\nඔබට ඉදිරියට කරගෙන යාමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+#, fuzzy
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "දැනටමත් විසඳූ ඒකාබද්ධ කිරීමේ ගැටළු නැති විය හැකි අතර හවුල් පැතුරුම් පතට ඔබගේ වෙනස්කම් සුරකීම සිදු නොවිය හැක.\n\nඔබට දිගටම කරගෙන යාමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+#, fuzzy
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "පැතුරුම් පතක හවුල් ආකාරය අක්‍රිය කිරීම නිසා හවුල් පැතුරුම්පතේ අනිකුත් පරිශීලකයන්ට ඔවුන්ගේ වැඩ නැවත ඒකාබද්ධ කිරීමට බධා කරයි.\n\nඔබට දිගටම කරගෙන යාමට අවශ්‍යද?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+#, fuzzy
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "මෙම පැතුරුම් පත තව දුරටත් හවුල් ආකාරයේ නොපවතී.\n\nඔබගේ පැතුරුම් පත වෙනම ගොනුවකට සුරකින්න එමෙන්ම ඔබගේ වෙනස්කම් හවුල් පැතුරුම් පතට අතින් ඒකාබද්ධ කරන්න."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+#, fuzzy
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "පැතුරුම් පත ඇත්තේ හවුල් ආකාරයේය. මෙය එකම වෙලාවේ බහු පරිශීලකයන්ට පැතුරුම් පතට ප්‍රවේශ වී එය සංස්කරණය කිරීමට ඉඩ දෙයි.\n\nඅක්ෂරාංග, වර්ණ සහ අංක ආකෘති ආදී හැඩගැන්විමේ උප ලක්‍ෂණ වලට සිදු කරන වෙනස්කම් සුරකෙනු නොමැති අතර ප්‍රස්තාර සංස්කරණය සහ වස්තු ඇඳීම ආදී ක්‍රියා හවුල් ආකාරයේ ප්‍රයෝජනයට ගත නොහැක. එම වෙනස්කම් සහ ක්‍රියා සඳහා අවශ්‍ය සුවිශේෂ ප්‍රවේශය ලබා ගැනීම සඳහා හවුල් ආකාරය වසන්න."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "'%1' පරිශීලක විසින් මුසු කිරීමක් සිදුවෙමින් පවතින බැවින් හවුල් පැතුරුම්පත් ගොනුව අගුලු ලා ඇත.\nඅගුලු ලූ ගොනුවක හවුල් ආකාරය අක්‍රිය කළ නොහැක. පසුව නැවත උත්සහ කරන්න."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "'%1' පරිශීලක විසින් මුසු කිරීමක් සිදුවෙමින් පවතින බැවින් හවුල් පැතුරුම්පත් ගොනුව අගුලු ලා ඇත.\nඔබගේ වෙනස්කම් සුරකීමට පසුව උත්සහ කරන්න."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 #, fuzzy
@@ -5698,126 +5460,102 @@ msgid  "Back"
 msgstr "ආපසු"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "AutoFormat"
 msgstr "ස්වයංක්‍රීය හැඩගැස්වීම්"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "හැඩතලය (~o)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
-#, fuzzy
 msgid  "A~utoFit width and height"
 msgstr "පළල සහ උස ස්වයංක්‍රීයවම ගලපන්න (~u)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
-#, fuzzy
 msgid  "~Borders"
 msgstr "දාර (~B)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
-#, fuzzy
 msgid  "F~ont"
 msgstr "ෆොන්ට (~o)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
-#, fuzzy
 msgid  "~Pattern"
 msgstr "රටාව (~P)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
-#, fuzzy
 msgid  "Alignmen~t"
 msgstr "පෙළගැස්වීම (~t)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
-#, fuzzy
 msgid  "~Number format"
 msgstr "අංක හැඩතලය (~N)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "හැඩගන්වමින්"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "එක් කරන්න... (~A)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "මකන්න (~D)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "නම වෙනස් කරන්න (~R)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
-#, fuzzy
 msgid  "Add AutoFormat"
 msgstr "ස්වයංක්‍රීය ගැලපීම එක් කරන්න"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
-#, fuzzy
 msgid  "Rename AutoFormat"
 msgstr "ස්වයංක්‍රීය ගැලපීම නම වෙනස් කරන්න"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "නම"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
-#, fuzzy
 msgid  "Delete AutoFormat"
 msgstr "ස්වයංක්‍රීය ගැලපීම මකන්න"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "ඔබට සැබවින්ම # ස්වයංක්‍රීය ගැලපීම මැකීමට අවශ්‍යද?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "වහන්න (~C)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
-#, fuzzy
 msgid  "Jan"
 msgstr "ජන"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
-#, fuzzy
 msgid  "Feb"
 msgstr "පෙබ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
-#, fuzzy
 msgid  "Mar"
 msgstr "මාර්තු"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
-#, fuzzy
 msgid  "North"
 msgstr "උතුර"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
-#, fuzzy
 msgid  "Mid"
 msgstr "මැද"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
-#, fuzzy
 msgid  "South"
 msgstr "දකුණ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
-#, fuzzy
 msgid  "Total"
 msgstr "එකතුව"
 
@@ -14203,8 +13941,9 @@ msgid  "Font Attributes"
 msgstr "ෆොන්ටයේ උප ලක්ෂණ"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
+#, fuzzy
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "ඔබ පසුරු පුවරුවේ විශාල දත්ත ප්‍රමාණයක් සුරැක ඇත.\nඔබට පසුරු පුවරුවේ අන්තර්ගතය අනෙක් වැඩසටහන් වලටත් ප්‍රයෝජනයට ගත හැකි පරිදි තැබීමට අවශ්‍යද? "
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -14285,8 +14024,9 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "ඇතුල් කළ සූත්‍රයේ %PRODUCTNAME Calc දෝෂයක් සොයා ගන්නා ලදි.\nඔබට පහත යෝජනා කර ඇති නිවැරදි කිරීම පිළිගැනීමට අවශ්‍යද?\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -14339,8 +14079,9 @@ msgid  "~Selected sheets"
 msgstr "තේරූ පත්‍ර (~S)"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
+#, fuzzy
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "ඔබ දැනටමත් දත්ත අඩංගු සෙල් වලට දත්ත අලවමින් සිටී.\nඔබට ඇත්ත වශයෙන්ම වත්මන් දත්ත උඩින් ලිවීමට අවශ්‍යද?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -16010,247 +15751,198 @@ msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~1"
 msgstr "කොන්දේසිය ~1"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "කොටුවේ අගය"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "සූත්‍රය"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "වඩා කුඩා"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "වඩා විශාල"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "වඩා කුඩා හෝ සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "වඩා විශාල හෝ සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "සමාන නොවන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "අතර"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "අතරමැද නොවේ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "සහ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "~Cell Style"
 msgstr "කොටු විලාසය (~C)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND1_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New Style..."
 msgstr "නව විලාසය... (~N)."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~2"
 msgstr "කොන්දේසිය ~2"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "කොටුවේ අගය"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "සූත්‍රය"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "වඩා කුඩා"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "වඩා විශාල"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "වඩා කුඩා හෝ සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "වඩා විශාල හෝ සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "සමාන නොවන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "අතර"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "අතරමැද නොවේ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "සහ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "C~ell Style"
 msgstr "කොටු විලාසය (~e)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND2_NEW.PushButton.Text
-#, fuzzy
 msgid  "Ne~w Style..."
 msgstr "නව විලාසය... (~w)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~3"
 msgstr "කොන්දේසිය ~3"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "කොටුවේ අගය"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "සූත්‍රය"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "වඩා කුඩා"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "වඩා විශාල"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "වඩා කුඩා හෝ සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "වඩා විශාල හෝ සමාන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "සමාන නොවන"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "අතර"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "අතරමැද නොවේ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "සහ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "හකුළන්න"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "කොටු විලාසය (~l)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND3_NEW.PushButton.Text
-#, fuzzy
 msgid  "New ~Style..."
 msgstr "නව විලාසය... (~S)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "කොන්දේසිගත හැඩතලගැන්වීම"
 

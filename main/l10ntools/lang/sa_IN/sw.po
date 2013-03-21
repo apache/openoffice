@@ -1169,7 +1169,7 @@ msgstr "भवतः लेख्यपत्रं पत्रसङ्के�
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "लेखामूलं \\'%1\\' न प्राप्तः । अतः लेखामूलात् संबंधः न संस्थापितुम् शक्यते । \n\nकृपया संबंधन-स्थापनाः परीक्षय ।"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "<प्रयोक्तृस्थापनाः>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "किं भवान् मूलभूत-प्रतिरूपस्य कृते योग्यताविकल्पान् परिवर्तितुम् इच्छति ? \n अयं सर्वस्यलेख्यपत्रस्य मूलभूत-प्रतिरूपं प्रभावितं करिष्यति ।"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "अनुशीर्षकः"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "अनुशीर्षकं स्वतः योजय \n यदा योजयति :"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "टिप्पणी :\nपृथक् ई-पत्र पत्रसङ्केतः अर्धविरामबिन्दुना च सह (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "लेख्यपत्रान् संपादय"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "स्व लेख्यपत्रं लिख अथवा संपादय इदानीं यदि भवता पूर्वतः एतादृशं कार्यं न कृतम् । परिवर्तनानि सर्वान् निमज्जित-लेख्यपत्रान् प्रभावितं करिष्यति । \n\nक्लिक-क्रिया 'लेख्यपत्र-संपादय...'  विजार्डं अस्थायी रूपेण एकं लघु आयतने अपकर्षं करिष्यति  अतः भवान् संन्देशनिमज्जनं संपादितुं शक्नोति । लेख्यपत्रं संपादनानन्तरं, विजार्ड उपरि 'संदेश-निमज्जन विजार्ड मध्ये प्रतिगमय'  लघु आयतने क्लिक कृत्वा प्रतिगमय ।"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "ब्रौस् कुरु..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "अन्यलेखाधिकरणैः सह लेखाधिकरणक्षेत्रैः द्वारा तव लेख्यपत्रे त्वया प्रविष्टानि लेखाधिकरणानि प्रतिसमाधातुम् एतं संवादम् उपयोजय। एकसमये एकमेव परिणामं कर्तुं शक्नोषि। बहुलवरणं सूच्यां वामे शक्यम्। \nलेखाधिकरणसञ्चिकां वृणोतुम् ब्रौस् पिञ्जम् उपयोजय।"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "स्वतःसंघटना"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "स्वसंघटना पूर्णा। \nकिं भवान् संपूर्ण परिवर्तनान् स्वीकर्तुंम् अस्वीकर्तुं वा शक्यते ? \\ अथवा विशेष परिवर्तनं स्वीकर्तुंम् अस्वीकर्तुं वा शक्यते ।"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "योगः"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "भवता एक असिद्ध-नाम अभिलिखतः। \n  अभिप्सिता स्वसंघटना न उत्पादयितुम् शक्यते । \n   एक-पृथक् नाम्ना सह पुनर्प्रयासं कुरू ।"
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "प्रथमस्तम्भः अनुशीर्षकं य�
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "यदि वृता कोष्ठिका अभिप्सितलेखां न दधाति, लेखाप्रसरम् अधुना वृणु । \n \n स्तम्भान् पङ्क्ति-अंकितकान् च या कोष्ठिका दधाति तां समावेशय यदि भवान् स्व कोष्ठकपटे तां समावेशितुंम् इच्छति ।"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr "[पद्धतिः]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "अंतःक्रियात्मक-वर्तनीपरीक्षणं पूर्वतः सक्रियः अस्ति \n एकपृथक् लेख्यपत्रे"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "अंतःक्रियात्मक-योजकचिह्नीकरणं पूर्वतः सक्रियः अस्ति \n एकपृथक् लेख्यपत्रे"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

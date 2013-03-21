@@ -61,11 +61,11 @@ msgstr "Gun teacsa"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Cuir a-steach am facal-faire gus am faidhle fhosgladh: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Cuir a-steach am facal-faire gus am faidhle atharrachadh: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "Tha an sgrìobhainn 'ga chleachdadh"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Chaidh glas deasachaidh a chur air an fhaidhle '$(ARG1)' le:\n\n$(ARG2)\n\nFeuch ris a shàbhaladh an ceann tàmaill no sàbhail lethbhreac dhen sgrìobhainn.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "Teachdaireachd on fhrithealaiche:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "Cuir a-steach an t-ainm-cleachdaiche 's am facal-faire airson: \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Cuir a-steach an t-ainm-cleachdaiche 's am facal-faire airson: \n\"%2\" air %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "C~uir"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Tha am frithealaiche '${HOST}' airson briosgaidean a shuidheachadh.\nTha fiosrachadh ann am briosgaidean a thaobh clasaichean de dh'URLaichean àraidh. Ma dh'iarras %PRODUCTNAME sgrìobhainn aig URL a tha a' freagairt ri clas de bhriosgaid a chaidh a shuidheachadh roimhe, cuiridh %PRODUCTNAME am fiosrachadh seo dhan fhrithealaiche. Leigidh an gleus seo le frithealaiche aplacaid-lìn aithneachadh, m.e. nuair a bhios thu a' ceannach rudan air loidhne.\n\nBu chòir gun dèid na briosgaidean a leanas a shuidheachadh:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Àrainn-lìn: ${DOMAIN}, Slighe: ${PATH}, Briosgaid: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Faighinn nam briosgaidean"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Shàbhail %PRODUCTNAME briosgaidean airson an fhrithealaiche '${HOST}' agus thèid an cur a-null nuair a dh'iarrar an sgrìobhainn ${PATH}.\nTha fiosrachadh ann am briosgaidean a thaobh clasaichean de dh'URLaichean àraidh. Tha cuid a dh'fhrithealaichean 'gan cur do %PRODUCTNAME far an dèid a shàbhaladh nuair a dh'fhosglar iad. Ma dh'iarras %PRODUCTNAME sgrìobhainn aig URL a tha a' freagairt ri clas de bhriosgaid a chaidh a shuidheachadh roimhe, cuiridh %PRODUCTNAME am fiosrachadh seo dhan fhrithealaiche. Leigidh an gleus seo le frithealaiche aplacaid-lìn aithneachadh, m.e. nuair a bhios thu a' ceannach rudan air loidhne.\n\nBu chòir gun dèid na briosgaidean a leanas a shuidheachadh:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Àrainn-lìn: ${DOMAIN}, Slighe: ${PATH}, Briosgaid: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Tha an sgrìobhainn 'ga chleachdadh"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Chaidh glas deasachaidh a chur air an fhaidhle '$(ARG1)' le:\n\n$(ARG2)\n\nFosgail an sgrìobhainn a chum leughaidh a-mhàin no fosgail lethbhreac dhen sgrìobhainn a chum deasachaidh.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "Chaidh an sgrìobhainn atharrachadh le cuideigin eile"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Chaidh am faidhle atharrachadh on a chaidh fhosgladh ann an %PRODUCTNAME airson a dheasachadh. Ma shàbhaileas tu an tionndadh agad-sa dhen sgrìobhainn seo, thèid a shàbhaladh an àite nan atharraichean a rinn càch.\n\nA bheil thu airson a shàbhaladh co-dhiù?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "Tha ùrachadh ri fhaighinn airson %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Chaidh an sgrìobhainn seo a chruthachadh le tionndadh nas ùire de %PRODUCTNAME. Faodaidh gu bheil rudan ann nach obraich san tionndadh làithreach agad.\n\nBriog air \"Ùraich an-dràsts...\" gus an tionndadh as ùire de %PRODUCTNAME fhaighinn on lìon."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "An aire: Ma dhìochuimhnicheas tu am prìomh-fhacal-faire, chan urrainn 
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Chaidh am faidhle '$(ARG1)' a ghlasadh ro dheasachadh leat-sa air siostam eile a-mach o $(ARG2)\n\nFosgail an sgrìobhainn sa mhodh leughaidh a-mhàin no leig seachad a' ghlas a chuir thu fhèin ann agus fosgail an sgrìobhainn a chum deasachaidh.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "F~osgail"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Chaidh am faidhle '$(ARG1)' a ghlasadh ro dheasachadh leat-sa air siostam eile a-mach o $(ARG2)\n\nDùin an sgrìobhainn air an t-siostam eile 's feuch ris a shàbhaladh a-rithist no leig seachad a' ghlas a chuir thu fhèin ann agus sàbhail an sgrìobhainn làithreach.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

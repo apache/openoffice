@@ -61,11 +61,11 @@ msgstr "無文字"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "輸入密碼以開啟檔案：\n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "輸入密碼以修改檔案：\n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "使用中的文件"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定供下列使用者編輯:\n\n$(ARG2)\n\n請稍後再嘗試儲存文件，或是儲存該文件的副本。\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "伺服器的訊息："
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "輸入使用者名稱與密碼：\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "輸入使用者名稱與密碼：\n%1 上的「%2」"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "接受(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "'${HOST}' 伺服器希望設定一或多個 cookies。\nCookies 會包含參照特定 URL 類別的資訊。如果 %PRODUCTNAME 稍後要求包含 URL 的文件，且此 URL 須與先前設定的 Cookie 類別相對應，則 %PRODUCTNAME 會將此資訊傳送到伺服器。這可以讓伺服器辨識 WWW 應用程式的狀態，例如當您在線上購物時。\n\n應該要設定下列Cookie：\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "領域：${DOMAIN}，路徑：${PATH}, Cookie：${COOKIE}。\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "接受 Cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME 已經保存了伺服器${HOST}傳送的 cookie。\n%PRODUCTNAME 在下一次請求裝載相同的文件資料${PATH}時就會按照程式庫檢查 URL 相符的 cookie 并將有關訊息傳送給對方伺服器。這樣，對方伺服器就能夠知道您使用的瀏覽器的有關資料(如線上銷售系統的采購籃含有的物品名稱)。\n\n現在要建立如下的 cookie:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "領域：${DOMAIN}，路徑：${PATH}，Cookie ：${COOKIE}。\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "使用中的文件"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定供下列使用者編輯: \n\n$(ARG2)\n\n以唯讀模式開啟文件，或開啟文件的副本進行編輯。\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "文件已經被其他人更改"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "已在 %PRODUCTNAME 中開啟檔案進行編輯，因此該檔案有所變更。儲存您的文件版本會覆寫他人所做的變更。\n\n是否確定要儲存?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "有可使用的 %PRODUCTNAME 更新"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "本文件係使用較新版 %PRODUCTNAME 建立。可能包含目前所用版本不支援的功能。\n\n請按一下 [立即更新...] 執行線上更新，以取得最新版的 %PRODUCTNAME。"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "注意: 請務必記住您設定的主密碼。若忘記主密碼，將�
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定，供您在不同的系統中編輯 (自 $(ARG2) 開始)\n\n以唯讀模式開啟文件，或忽略自行鎖定檔案並開啟文件以進行編輯。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "開啟(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定，供您在不同的系統中編輯 (自 $(ARG2) 開始)\n\n在其他系統上關閉該文件並重試儲存，或忽略自我鎖定檔案並儲存現有的文件。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

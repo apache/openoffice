@@ -61,11 +61,11 @@ msgstr "Без тэксту"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Упішыце пароль, каб адкрыць файл: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Упішыце пароль, каб змяніць файл: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -469,11 +469,11 @@ msgstr "Адаслаць"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Сервер '${HOST}' прапануе адзін або некалькі квіткоў.\nКвіткі ўтрымліваюць звесткі, якія спасылаюцца на пэўныя класы адрасаў (URL).  Калі %PRODUCTNAME атрымлівае дакумент, які, паводле URL, адпавядае класу ў адным з раней атрыманых квіткоў, %PRODUCTNAME адсылае гэтыя звесткі на гэты сервер. Такім чынам сервер улічвае стан рэчаў ў задачы WWW, напр., у час купляння ў Сеціве.\n\nБудуць запісаны наступныя квіткі:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Дамен: ${DOMAIN}, шлях: ${PATH}, квіток: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Прыйманне квітка"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME запісаў квіткі дзеля сервера '${HOST}', якія будуць адсылацца пры звароце да дакументу ${PATH}.\nКвіткі ўтрымліваюць звесткі, якія спасылаюцца на пэўныя класы адрасаў (URL). Яны прысылаюцца пэўнымі серверамі ў %PRODUCTNAME, які запісвае іх, калі асягаюцца пэўныя дакументы. Калі %PRODUCTNAME атрымлівае дакумент, які, паводле URL, адпавядае класу ў адным з раней атрыманых квіткоў, %PRODUCTNAME адсылае гэтыя звесткі на гэты сервер. Такім чынам сервер улічвае стан рэчаў ў задачы WWW, напр., у час купляння ў Сеціве.\n\nБудуць запісаны наступныя квіткі:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Дамен: ${DOMAIN}, шлях: ${PATH}, квіток: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -561,7 +561,7 @@ msgstr "Ёсць абнаўленне для %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Дакумент быў зроблены ў навейшай версіі %PRODUCTNAME, і можа карыстацца магчымасцямі, якіх не падтрымлівае ваша версія.\n\nНацісніце 'Абнавіць зараз...', каб выканаць сеціўнае абнаўленне і ўзяць самую новую версію %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."

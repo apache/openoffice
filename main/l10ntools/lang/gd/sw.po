@@ -1169,7 +1169,7 @@ msgstr "Tha raointean stòr-dàta sheòlaidhean san sgrìobhainn agad. A bheil t
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "Cha deach an tùs dàta \\'%1\\' a lorg. Cha do ghabh an ceangal ris an tùs dàta a stèidheachadh air sgàth sin.\n\nThoir sùil air roghainnean a' cheangail."
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "<Roghainnean a' chleachdaiche>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "A bheil thu airson na roghainnean co-chòrdalachd airson na teamplaid bhunaiteach atharrachadh?\nBidh buaidh aige seo air gach sgrìobhainn ùr a tha stèidhichte air an teamplaid bhunaiteach."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "Caipsean"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "Cuir ris caipseanan gu fèin-\nobrachail nuair a chuirear a-steach:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "An aire:\nCuir leth-chòilean (;) eadar na diofar puist-dhealain."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "Deasaich an sgrìobhainn"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Sgrìobh no deasaich an sgrìobhainn agad an-dràsta, mur eil thu air seo a dhèanamh mu thràth. Bidh buaidh aig na dh'atharraicheas tu air gach sgrìobhainn cho-aontaichte.\n\nMa bhriogas tu air \"Deasaich an sgrìobhainn...\", thèid an draoidh a lughdachadh 'na uinneag bheag gus an urrainn dhut post co-aonaichte a dheasachadh. Till dhan draoidh, as dèidh dhut an sgrìobhainn a dheasachadh, 's tu a' briogadh air \"Till gu draoidh a' phuist cho-aonaichte\" san uinneag bheag."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "Brabhsaich..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Cleachd an còmhradh seo gus stòir-dhàta ùra a chur an àite na feadhainn a chleachdas tu san sgrìobhainn agad slighe nan raointean stòir-dhàta. Chan urrainn dhut ach aonan dhiubh atharrachadh aig an aon àm. Chan urrainn dhut barrachd air aonan dhiubh a thaghadh san liosta air do làimh chlì.\nCleachd am putan brabhsaidh gus faidhle stòir-dhàta a lorg."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "Fèin-cheartaich"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "Tha am fèin-cheartachadh deiseil. 'S urrainn\ndhut na h-atharraichean a dhiùltadh no gabhail\nriutha uile gu lèir no aon seach aon dhiubh."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "Suim"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Chuir thu a-steach ainm mì-dhligheach.\nCha deach am fèin-fhòrmat a dh'iarr thu a chruthachadh. \nFeuch ris a-rithist le ainm eile."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "A' ~chiad choblh mar chaipsean"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Mur an do thagh thu na ceallan sa bheil an dàta iomchaidh fhathast, tagh iad a-nis.\n\nGabh a-steach na ceallan sa bheil leubailean nan colbh 's nan ràghan ma tha thu airson 's gum bi iad 'gan gabhail a-steach sa chairt agad."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr "[Siostam]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "Tha an dearbhadh-litreachaidh eadar-ghnìomhach beò\nann an sgrìobhainn eile mu thràth"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "Tha an tàthanachadh eadar-ghnìomhach beò\nann an sgrìobhainn eile mu thràth"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

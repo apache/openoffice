@@ -1377,7 +1377,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION をダウンロードしていただき、�
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
-msgstr ""
+msgstr "インストールの準備作業として、インストールファイルを解凍し、ハードディスクにコピーする必要があります。 これが終わると、%PRODUCTNAME のインストールが自動的に開始します。\r\n\r\n「次へ」をクリックし、続行してください。"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
 msgid  "Select Folder"
@@ -1829,7 +1829,7 @@ msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
-msgstr ""
+msgstr "このプログラムは、Apache コミュニティのメンバーがサポートする 'Apache OpenOffice (incubating)' プロジェクトに基づいています。次のページは貢献者一覧です。 http://www.openoffice.org/welcome/credits.html"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_125
 msgid  "&Next >"
@@ -2381,15 +2381,15 @@ msgstr "出力先フォルダをチェックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
 msgid  "To continue, click \"Next\"."
-msgstr ""
+msgstr "続行する場合は、クリックしてください"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr ""
+msgstr "別のバージョンを選択する場合は、クリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
+msgstr "別のフォルダを選択する場合は、クリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
 msgid  "Install [ProductName] to:"

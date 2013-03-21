@@ -145,7 +145,7 @@ msgstr "Баганын Талбар"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "Мөр\nТалбарууд"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2269,7 +2269,7 @@ msgstr "Ха~ях"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "Элементийг үнэхээр\n#\nустгах уу?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2713,7 +2713,7 @@ msgstr "~Бүгдийг далдал"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "Нүдний хамгаалалт зөвхөн идэвхтэй хүснэгт хамгаалалт хийгдсэн тохиолдолд л үйлчилнэ.\n\nҮүний тулд та 'Хэрэгсэл' цэснээс 'Баримт хамгаалах' руу ороод 'Хүснэгт' гэсэн тушаалыг сонгоно уу."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3233,7 +3233,7 @@ msgstr "Үйлдэл гүйцэтгэгдэхгүй"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "Муж баганын толгой агуулаагүй байна.\nТа эхний мөрийг баганын толгойгоор хэрэглэхийг хүсэж байна уу?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3297,7 +3297,7 @@ msgstr "Хайсан ухагдахуун олдсонгүй."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "Товлосон утгын хайлт амжилттай.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3309,11 +3309,11 @@ msgstr ") идэвхтэй нүд рүү оруулах уу?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "Товлосон утгын хайлт амжилтгүй.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "Нэмэлт утга байхгүй.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3781,7 +3781,7 @@ msgstr "Олон тооны үйлдлүүд"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Та буруу нэр орууллаа.\nАвтоформат үүсгэгдэх боломжгүй байлаа. \nӨөр нэр хэрэглэн дахин оролдож үзнэ үү."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 msgid  "Range"
@@ -3813,7 +3813,7 @@ msgstr "Хэвлэх"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "Автомат хэлбэржүүлэлтыг хэрэглэхийн\nтулд хамгийн багадаа 3x3 нүд\nбүхий хүснэг муж сонгогдох ёстой."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 msgid  "(nested)"
@@ -3913,7 +3913,7 @@ msgstr "Тайлан1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "зөв бичгийн дүрмийн шалгалт хийх боломжгүй\nСуулгацыг шалгаж үзээд \nхэрэв хэрэгцээтэй бол хүссэн хэлнийхээг суулгана уу"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 msgid  "Thesaurus can only be used in text cells!"
@@ -3925,7 +3925,7 @@ msgstr "Тухайн хуудасны эхнээс зөв бичгийн дүр�
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "Тайлбар толь алга\nСуулгацыг шалгаж үзээд \nхэрэв хэрэгцээтэй бол хүссэн хэлнийхээг суулгана уу"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 msgid  "The spellcheck of this sheet has been completed."
@@ -4197,11 +4197,11 @@ msgstr "Залгаатай"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "Энэ файл өөр файл руу заасан холбоосууд агуулж байна.\nТэдгээрийг шинэчлэх үү?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "Энэ асуулгын файл. Энэ асуулгуудын шийдвэр(үр дүн) хадгалагдаагүй байна.\nЭнэ асуулгуудыг дахин давтан тавих уу? "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 msgid  "Too many conditions"
@@ -4209,7 +4209,7 @@ msgstr "Хэтэрхий олон нөхцөл"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "Бөглөгдсөн бүх нүд хуудасны\nард шилжиж чадахгүй."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 msgid  "The table could not be inserted."
@@ -4229,7 +4229,7 @@ msgstr "Хуудасны энд оруулахад энэ хангалтай з�
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "Тэмдэглэсэн мужийн хэмжээнээс клипбоардад агуулагдах агууламж том байна.\nГэлээ ч оруулгыг хийх үү?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 msgid  "No references found."
@@ -4273,7 +4273,7 @@ msgstr "# харьцуул"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "Тахир дутуу нүд байж болох(max) тооноосоо хэтрээд байна.\nТахир дутуу бүх нүд тэмдэглэгдээгүй."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 msgid  "Delete contents"
@@ -4377,7 +4377,7 @@ msgstr "Бичлэг дуусгах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Энэ үйлдлээр бичлэгийн горим солилтоос гарна.\nЭнэ өөрчлөлтийн бүх мэдээлэл хаягдана.\n\nБичлэгийн горим солилтоос гарах уу?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 msgid  "The document can not be closed while a link is being updated."
@@ -4393,7 +4393,7 @@ msgstr "Матрицын томьёо  %1 М x %2 Б"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "Энэ баримт макро функцийн дуудалт агуулж байна.\nТа тэдгээрийг ажиллуулахыг хүсэж байна уу?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 msgid  "Hangul/Hanja Conversion"
@@ -4497,31 +4497,31 @@ msgstr "Таны хүснэгт баримт бусад хэрэглэгчдий
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Хамтын горимыг идэвхжүүлэхийн тулд хүснэгт баримт одоо хадгалагдах ёстой.\n\nТа үргэлжлүүлэхийг хүсэж байна уу?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Хэдийнэ арилгасан зөрчлүүд хаягдаж таны хүснэгт баримтанд хийсэн өөрчлөлтүүд хадгалагдахгүй.\n\nТа үргэлжлүүлэхийг хүсэж байна уу?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Хүснэгт баримтын хамтын горимыг хааснаар бусад бүх хэрэглэгчдийн ажлыг нэгтгэх боломжгүй болно.\n\nТа үргэлжлүүлэхийг хүсэж байна уу?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "Энэ хүснэгт баримтын хамтын горимд хаагдсан байна.\n\nТа хүснэгт баримтаа тусад нь файлд хадгалаад өөрийн өөрчлөлтөө хамтын хүснэгт баримт руугаа гараар нэгтгэнэ үү."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "Хүснэгт баримт хамтын горимд байна. Энэ олон хэрэглэгч хандаж, нэгэн зэрэг хүснэгт баримтанд өөрчлөлт хийх боломж олгоно.\n\nФонт, өнгө болон тооны хэлбэр зэрэг хэлбэржүүлэлтийн атрибутууд хадгалагдахгүй ба зарим диаграмм засварлах, объект дүрслэх зэрэг функцүүд хамтын горим ажиллахгүй. Эдгээр өөрчлөлт ба функцүүдэд хамтын горимыг хааж хувийн хандалт хийх шаардлагатай."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "Хамтын хүснэгт баримтын файл дараах хэрэглэгчийн нэгтгэх явцын улмаас түгжигдсэн байна: '%1'\n\nТүгжигдсэн файлын хамтын горим хаагдах боломжгүй. Дараа дахин оролдоно уу."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "Хамтын хүснэгт баримтын файл дараах хэрэглэгчийн нэгтгэх явцын улмаас түгжигдсэн байна: '%1'\n\nӨөрийн өөрчлөлтөө хадгалахын тулд дараа дахин оролдоно уу."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 msgid  "Unknown User"
@@ -4685,7 +4685,7 @@ msgstr "Автомат хэлбэржүүлэлт устгах"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "Та # Автоформатыг үнэхээр устгахыг хүсэж байна уу?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
 msgid  "~Close"
@@ -11493,7 +11493,7 @@ msgstr "Фонтын атрибут"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "Та завсрын хадгалагчид их хэмжээний өгөгдөл хадгалсан байна.\nЗавсрын хадгалагчийн агуулгыг бусад програмд бололцоотой болгох уу?"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -11561,7 +11561,7 @@ msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME Calc оруулсан томьёоноос алдаа илрүүллээ.\nТа доор дэвшүүлсэн залруулга саналыг зөвшөөрч байна уу?\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -11605,7 +11605,7 @@ msgstr "~Сонгосон хүснэгт"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "Та өгөгдөл агуулж буй нүдэнд өгөгдөл буулгах гэж байна.\nТа одоо өгөгдлийг үнэхээр дарахыг хүсэж байна уу?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"

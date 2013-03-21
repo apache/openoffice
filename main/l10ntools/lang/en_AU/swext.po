@@ -167,8 +167,9 @@ msgid  "Borders"
 msgstr "Borders"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
+#, fuzzy
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "Irrespective of custom table styles for border and background, a table is always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki engine with simple borders and bold header."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 #, fuzzy
@@ -186,8 +187,9 @@ msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
+#, fuzzy
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 #, fuzzy
@@ -195,12 +197,14 @@ msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To MediaWiki</item> to upload the current Writer document to a MediaWiki server.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 #, fuzzy
@@ -223,8 +227,9 @@ msgid  "Java Runtime Environment 1.4"
 msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
+#, fuzzy
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "A Wiki account on a supported <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 #, fuzzy
@@ -232,8 +237,9 @@ msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "Installing @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
+#, fuzzy
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big list box. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 #, fuzzy
@@ -241,8 +247,9 @@ msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "To Install the @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
+#, fuzzy
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "In a Writer window, choose <item type=\"menuitem\">Tools - Extension Manager</item>."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 #, fuzzy
@@ -260,8 +267,9 @@ msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
 msgstr "Close %PRODUCTNAME, and also close the Quickstarter if enabled."
 
 #: mediawiki/help/wiki.xhp#par_id265511
+#, fuzzy
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "Restart the software, open a text document, then choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 #, fuzzy
@@ -269,8 +277,9 @@ msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
+#, fuzzy
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "In a Writer window, choose <item type=\"menuitem\">Tools - Extension Manager</item>."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 #, fuzzy
@@ -288,24 +297,29 @@ msgid  "To Connect to a Wiki"
 msgstr "To Connect to a Wiki"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
+#, fuzzy
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "Note: You can store your user name and password for all respective dialogue boxes inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
+#, fuzzy
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "Note: If you connect to the web using a proxy server, enter the proxy information to <item type=\"menuitem\">Tools - Options - Internet - Proxy</item> and restart the software."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
+#, fuzzy
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "Open a Writer document and choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id368968
+#, fuzzy
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> dialogue box, click Add."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
+#, fuzzy
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialogue box, enter the account information for the Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 #, fuzzy
@@ -333,8 +347,9 @@ msgid  "In the Password box, enter the password for your Wiki account, then clic
 msgstr "In the Password box, enter the password for your Wiki account, then click OK."
 
 #: mediawiki/help/wiki.xhp#par_id292062
+#, fuzzy
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 #, fuzzy
@@ -347,36 +362,44 @@ msgid  "Open a Writer document."
 msgstr "Open a Writer document."
 
 #: mediawiki/help/wiki.xhp#par_id944853
+#, fuzzy
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes and more. See the <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
+#, fuzzy
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id228278
+#, fuzzy
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> dialogue box, specify the settings for your entry."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
+#, fuzzy
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>MediaWiki server</emph>: Select the Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
+#, fuzzy
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>Title</emph>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id9688711
+#, fuzzy
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>Summary</emph>: Enter an optional short summary of your page."
 
 #: mediawiki/help/wiki.xhp#par_id4123661
+#, fuzzy
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>This is a minor edit</emph>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
 
 #: mediawiki/help/wiki.xhp#par_id452284
+#, fuzzy
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>Show in web browser</emph>: Check this box to open your system web browser and show the uploaded Wiki page."
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 #, fuzzy
@@ -394,28 +417,34 @@ msgid  "MediaWiki Options"
 msgstr "MediaWiki Options"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
+#, fuzzy
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "You can add, edit and remove MediaWiki servers. Open the dialogue box by <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. Alternatively, choose <item type=\"menuitem\">Tools - Extension Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@ and click the Options button."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and click Edit to edit the account settings.<br/>Select an entry and click Remove to remove the entry from the list.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialogue box to add a new entry to the list.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialogue box to edit the selected entry.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the list.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
+#, fuzzy
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "When you click Add or Edit, the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialogue box opens."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 #, fuzzy
@@ -433,20 +462,24 @@ msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings.
 msgstr "Use the MediaWiki dialogue box to add or edit your MediaWiki account settings."
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, starting with http://</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between sessions. The master password must be enabled, see <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 #, fuzzy
@@ -479,24 +512,29 @@ msgid  "In the Send to MediaWiki dialog, specify the settings for your current W
 msgstr "In the Send to MediaWiki dialogue box, specify the settings for your current Wiki upload."
 
 #: mediawiki/help/wikisend.xhp#par_id664082
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
+#, fuzzy
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>This is a minor edit</emph>: <ahelp hid=\".\">Mark this box to mark the uploaded page as a minor edit of the already existing page with the same title.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
+#, fuzzy
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Show in web browser</emph>: <ahelp hid=\".\">Mark this box to open your system web browser and show the uploaded Wiki page.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 #, fuzzy

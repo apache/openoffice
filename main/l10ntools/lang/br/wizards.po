@@ -445,7 +445,7 @@ msgstr "Patrom krouet gant <anv_skoazeller> d'an/ar <deiziad_aberiat>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Ar skoazeller n'eo ket bet evit bezañ erounezet rak un darn eus ar restroù pouezus a vank. \nA-benn assav an treugoù davet an arventennoù orin dre ziouer, dibabit Binvioù - Dibarzhioù - %PRODUCTNAME - Treugoù, klikit war an afell Dre ziouer,\nha luskit ar skoazeller en-dro."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "~Maeziennoù ar furmskrid"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Ar maeziennoù daouredel a vez marilhet atav : o diuzañ a c'hallit er roll a-gleiz. \nPa c'hall bezañ graet e vezont dewezhiet evel skeudennoù."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Ur furmskrid enlakaet e-barzh ur furmskrid all eo un isfurmskrid.\nDa wereañ roadennoù an taolennoù pe an azgoulennoù oc'h endevout un darempred e rizh unan da veur a unan e c'hallit arverañ an isfurmskridoù."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Maeziennoù ar ~furmskrid"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Div wech eo bet diuzet ar c'hevreoù <FIELDNAME1> ha <FIELDNAME2>.\nHogen e c'hall ar c'heveoù bezañ arveret ur wech hepken."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Envel ar furmskrid"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Ur frammad anvet '%FORMNAME' ez eus anezhi endeo.\nDibabit unan all."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "N'hall ket ar vaezienn bezañ enlakaet abalamour ma vefe muioc'h eget %C
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "An anv %TABLENAME zo anezhañ endeo. \nEuvrit un anv all."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Skoazeller Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Ho leviañ a ray ar skoazeller Web-mañ a-hed an embannadur teulioù war Internet\n\nAmdreiñ a ra an teulioù a-benn ma c'hallint en em wereañ war ur merdeer Web. Genel a ra ivez un daolenn eus an danvezioù o sellout ouzh ereoù o reiñ tu da haeziñ ent aes an teulioù. Ar skoazeller Web a ro tu ivez da bersonelaat ergrafañ ha pajennaozañ ho lec'hienn Web.\n\\Gallout a reot, ne vern pegoulz, hizivaat an teulioù embannet war ar Web pe ouzhpennañ pe zilemel teulioù."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Alberz"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Dilamet e vo an arventennoù diuzet.\n\nDilemel an arventennoù-mañ a fell deoc'h da vat ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "N'haller ket krouiñ ar c'havlec'hiad FTP %FILENAME."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Ar c'havlec'hiad FTP %FILENAME n'eus ket anezhañ ! \nE grouiñ bremañ a fell deoc'h ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "N'haller ket krouiñ ar restr ZIP %FILENAME : Ur c'havlec'hiad gant an h
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "N'haller ket krouiñ ar c'havlec'hiad lec'hel %FILENAME. \nGwiriit ho kwirioù haeziñ da skrivañ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Ar c'havlec'hiad lec'hel %FILENAME n'eus ket anezhañ ! \nE grouiñ bremañ a fell deoc'h ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

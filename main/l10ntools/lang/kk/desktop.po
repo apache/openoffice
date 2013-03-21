@@ -117,7 +117,7 @@ msgstr "Қатынау құқығы жоқ болған соң Сiздiң жек
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME iске қосуға болмайды, себебi %PRODUCTNAME. құрамына рұқсаты қатемен өткен.\n\n Өтiнiш, жүйелi әкiмшiмен хабарласыңыз."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -737,7 +737,7 @@ msgstr "Тiркелу"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ұста Сiздi лицензиялық келiсiм,  %OLD_VERSION-тан пайдаланушы деректерiн ауыстыру және   %PRODUCTNAME тiркеуiнен өткiзедi. \n\n 'Келесi' шертiңiз."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
@@ -765,7 +765,7 @@ msgstr ""
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ұста лицензиялық келiсiм және %PRODUCTNAME тiркеуден өткiзедi.\n\n \"Келесi\" шертiңiз."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -805,7 +805,7 @@ msgstr ""
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Жеке деректер %OLDPRODUCT-ден %PRODUCTNAME %PRODUCTVERSION-да қолдануға болады.\n\n Жалаушаны төменрек қойыңыз, егер де осы ақпарат үлгi, сөздiктер және Галерея тақырыптары  %PRODUCTNAME %PRODUCTVERSION-ға көшiрiлсе. Ауысу туралы барлық ақпараттарды readme файлында бiлуге болады."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME тiркеу"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Сiз %PRODUCTNAME пайдаланушы ретiнде тiркелуiңiзге мүмкiндiк бар. Тiркелу еркiн және мiндеттсiз.\n\n Егер сiз тiркелiнсеңiз, бiз осы өнiм туралы жаңа зерттемелердi сiзге ұсынамыз."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "Тiркелемеу "
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Бiз сенемiз,  %PRODUCTNAME-мен жұмыс iстеп қанағаттанасыз.\n\n Осы шеберден шығу үшiн \"Дайын\" шертiңiз."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"

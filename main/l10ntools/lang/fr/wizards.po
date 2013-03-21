@@ -445,7 +445,7 @@ msgstr "Modèle créé avec <wizard_name> le <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "L'assistant n'a pas pu être exécuté, car certains fichiers importants sont manquants.\nPour rétablir les chemins vers les paramètres d'origine par défaut, choisissez 'Outils - Options - %PRODUCTNAME - Chemins', cliquez sur le bouton 'Par défaut',\npuis relancez l'assistant."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "~Champs du formulaire"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Les champs binaires sont toujours répertoriés : vous pouvez les sélectionner dans la liste de gauche.\nLorsque cela est possible, ils sont interprétés comme des images."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Un sous-formulaire est un formulaire inséré dans un autre formulaire.\nVous pouvez utiliser les sous-formulaires pour afficher les données des tables ou des requêtes ayant une relation de type un à plusieurs."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Champs du formulaire"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Les jointures '<FIELDNAME1>' et '<FIELDNAME2>' ont été sélectionnées deux fois.\nOr, les jointures ne peuvent être utilisées qu'une seule fois."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Nommer le formulaire"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Un formulaire nommé '%FORMNAME' existe déjà.\nChoisissez un autre nom."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Le champ ne peut pas être inséré parce que la table de base de donné
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Le nom '%TABLENAME' existe déjà.\nVeuillez saisir un autre nom."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Assistant Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Cet assistant Web vous guide tout au long de la publication de documents sur Internet\n\nIl convertit les documents afin qu'ils puissent s'afficher dans un navigateur Web. Il génère également une table des matières contenant des liens qui permettent d'accéder facilement aux documents. L'assistant Web permet également de personnaliser la conception et la mise en page de votre site Web.\nVous aurez ainsi la possibilité, à tout moment, de mettre à jour les documents publiés sur le Web, et d'ajouter ou de supprimer des documents."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Aperçu"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Les paramètres sélectionnés vont être supprimés.\n\nVoulez-vous vraiment supprimer ces paramètres ? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Impossible de créer le répertoire FTP '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Le répertoire FTP '%FILENAME' n'existe pas. \nVoulez-vous le créer maintenant ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Impossible de créer le fichier ZIP '%FILENAME' : un répertoire du mêm
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Impossible de créer le répertoire local '%FILENAME'. \nVérifiez vos droits d'accès en écriture."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Le répertoire local '%FILENAME' n'existe pas. \nVoulez-vous le créer maintenant ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

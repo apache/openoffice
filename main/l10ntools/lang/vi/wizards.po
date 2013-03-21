@@ -445,7 +445,7 @@ msgstr "Mẫu được tạo bằng <wizard_name> vào <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Không thể chạy trợ lý vì không tìm thấy một số tập tin quan trọng.\nTrong 'Công cụ - Tùy chọn - %PRODUCTNAME - Đường dẫn', hãy nhắp vào nút 'Mặc định' để đặt lại các đường dẫn về thiết lập mặc định gốc.\nSau đó, hãy chạy lại trợ lý."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "~Trường trong biểu mẫu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Các trường kiểu nhị phân luôn luôn được liệt kê và có thể được chọn trong danh sách bên trái.\nNếu có thể, chúng được thể hiện như là ảnh."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Biểu mẫu phụ là một biểu mẫu được chèn vào biểu mẫu khác.\nHãy dùng biểu mẫu phụ để hiển thị dữ liệu từ bảng hay truy vấn có quan hệ một-với-nhiều."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Trường trong biểu mẫu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Bộ nối '<FIELDNAME1>' với '<FIELDNAME2>' đã được chọn hai lần.\nCác bộ nối chỉ có khả năng chọn một lần."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Đặt tên biểu mẫu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Một biểu mẫu tên '%FORMNAME' đã có.\nHãy chọn tên khác."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Không thể chèn trường vì điều này vượt quá số %COUNT t
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Tên '%TABLENAME' đã có.\nHãy nhập tên khác."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Trợ lý Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Trợ lý Web này giúp bạn xuất bản tài liệu lên Internet.\n\nNó sẽ chuyển đổi các tài liệu để hiển thị trong trình duyệt Web. Hơn nữa, nó sẽ tạo ra Mục lục có liên kết để truy cập dễ dàng các tài liệu đó. Trợ lý Web cũng sẽ cho bạn khả năng tùy biến thiết kế và bố trí của riêng của website.\n\nBạn sẽ có khả năng cập nhật các tập tin bạn đã xuất bản lên Internet, thêm hoặc gỡ bỏ tài liệu vào bất cứ lúc nào."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Xem thử"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Thiết lập đã chọn sẽ bị xóa.\n\nBạn có muốn xóa thiết lập này không? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Không thể tạo thư mục FTP « %FILENAME »."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Thư mục FTP « %FILENAME » không tồn tại.\nTao thư mục này ngay bây giờ không?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Không thể tạo tập tin ZIP '%FILENAME' vì một thư mục cùng 
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Không thể tạo thư mục cục bộ « %FILENAME ».\nHãy kiểm tra lại quyền ghi của bạn."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Thư mục cục bộ « %FILENAME » không tồn tại.\nTạo thư mục này ngay bây giờ không?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

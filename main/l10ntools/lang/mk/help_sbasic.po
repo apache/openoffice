@@ -609,7 +609,7 @@ msgstr "$[officename] Основен речник"
 
 #: source/text/sbasic/shared/00000002.xhp#hd_id3145068.1
 msgid  "\<link href=\"text/sbasic/shared/00000002.xhp\" name=\"$[officename] Basic Glossary\"\>$[officename] Basic Glossary\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/00000002.xhp\" name=\"$[officename] Basic Glossary\">$[officename] основен речник</link>"
 
 #: source/text/sbasic/shared/00000002.xhp#par_id3150792.2
 msgid  "This glossary explains some technical terms that you may come across when working with $[officename] Basic."
@@ -697,11 +697,11 @@ msgstr ""
 
 #: source/text/sbasic/shared/00000003.xhp#par_id3153091.3
 msgid  "\<emph\>Color Value\</emph\>"
-msgstr ""
+msgstr "<emph>Бредност на боја</emph>"
 
 #: source/text/sbasic/shared/00000003.xhp#par_id3154319.4
 msgid  "\<emph\>Color Name\</emph\>"
-msgstr ""
+msgstr "<emph>Име на боја</emph>"
 
 #: source/text/sbasic/shared/00000003.xhp#par_id3151112.5
 msgid  "0"
@@ -4237,7 +4237,7 @@ msgstr "Библиотека"
 
 #: source/text/sbasic/shared/02/11010000.xhp#hd_id3151100.1
 msgid  "\<link href=\"text/sbasic/shared/02/11010000.xhp\" name=\"Library\"\>Library\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11010000.xhp\" name=\"Library\">Библиотека</link>"
 
 #: source/text/sbasic/shared/02/11010000.xhp#par_id3154136.2
 msgid  "\<ahelp hid=\".uno:LibSelector\" visibility=\"visible\"\>Select the library that you want to edit.\</ahelp\> The first module of the library that you select is displayed in the Basic IDE."
@@ -4341,7 +4341,7 @@ msgstr "Еден чекор"
 
 #: source/text/sbasic/shared/02/11050000.xhp#par_id3149235.6
 msgid  "\<link href=\"text/sbasic/shared/02/11060000.xhp\" name=\"Procedure Step function\"\>Procedure Step function\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11060000.xhp\" name=\"Procedure Step function\">Функција за чекор на процедура</link>"
 
 #: source/text/sbasic/shared/02/11060000.xhp#tit
 msgid  "Procedure Step"
@@ -4369,7 +4369,7 @@ msgstr "Чекор на процедура"
 
 #: source/text/sbasic/shared/02/11060000.xhp#par_id3153562.6
 msgid  "\<link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step function\"\>Single Step function\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step function\">Функција од еден чекор</link>"
 
 #: source/text/sbasic/shared/02/11070000.xhp#tit
 msgid  "Breakpoint"
@@ -8925,11 +8925,11 @@ msgstr ""
 
 #: source/text/sbasic/shared/03020413.xhp#par_id3147427.13
 msgid  "ChDir \"\\\\\""
-msgstr ""
+msgstr "ChDir \"\\\""
 
 #: source/text/sbasic/shared/03020413.xhp#par_id3153188.14
 msgid  "RmDir \"C:\\\\test2\""
-msgstr ""
+msgstr "RmDir \"C:\\тест2\""
 
 #: source/text/sbasic/shared/03020413.xhp#par_id3146120.15
 msgid  "end sub"
@@ -8973,7 +8973,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03020414.xhp#par_id3145786.8
 msgid  "\<emph\>Value\</emph\>"
-msgstr ""
+msgstr "<emph>вредност</emph>"
 
 #: source/text/sbasic/shared/03020414.xhp#par_id3152596.9
 msgid  "0 : Normal files."
@@ -14149,7 +14149,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3155600.52
 msgid  "sPath = \"c:\\\\\""
-msgstr ""
+msgstr "sPath = \"c:\\\""
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3150717.53
 msgid  "sFile = Dir$( sPath ,22)"
@@ -14709,7 +14709,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03090302.xhp#par_id3150010.12
 msgid  "\<emph\>Label1:\</emph\>"
-msgstr ""
+msgstr "<emph>ознака1:</emph>"
 
 #: source/text/sbasic/shared/03090302.xhp#par_id3152462.13
 msgid  "statement block"
@@ -15809,7 +15809,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03090412.xhp#par_id3150398.8
 msgid  "\<emph\>Exit For\</emph\>"
-msgstr ""
+msgstr "<emph>Излез за</emph>"
 
 #: source/text/sbasic/shared/03090412.xhp#par_id3148797.9
 msgid  "Only valid within a \<emph\>For...Next\</emph\> loop to exit the loop. Program execution continues with the first statement that follows the \<emph\>Next\</emph\> statement. In nested statements, the control is transferred to the loop in the next higher level."
@@ -15817,7 +15817,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03090412.xhp#par_id3147229.10
 msgid  "\<emph\>Exit Function\</emph\>"
-msgstr ""
+msgstr "<emph>Излез на функција</emph>"
 
 #: source/text/sbasic/shared/03090412.xhp#par_id3154685.11
 msgid  "Exits the \<emph\>Function\</emph\> procedure immediately. Program execution continues with the statement that follows the \<emph\>Function\</emph\> call."
@@ -17341,7 +17341,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03101400.xhp#par_id3154123.9
 msgid  "\<emph\>DefDbl:\</emph\> Double"
-msgstr ""
+msgstr "<emph>DefDbl:</emph> двојно"
 
 #: source/text/sbasic/shared/03101400.xhp#hd_id3153192.10
 msgid  "Example:"
@@ -17433,7 +17433,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03101500.xhp#par_id3125863.9
 msgid  "\<emph\>DefInt:\</emph\> Integer"
-msgstr ""
+msgstr "<emph>DefInt:</emph> цел број"
 
 #: source/text/sbasic/shared/03101500.xhp#hd_id3154123.10
 msgid  "Example:"
@@ -17617,7 +17617,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03101700.xhp#par_id3150769.9
 msgid  "\<emph\>DefObj:\</emph\> Object"
-msgstr ""
+msgstr "<emph>DefObj:</emph> објект"
 
 #: source/text/sbasic/shared/03101700.xhp#hd_id3156212.10
 msgid  "Example:"
@@ -17697,7 +17697,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03102000.xhp#par_id3150767.9
 msgid  "\<emph\>DefVar:\</emph\> Variant"
-msgstr ""
+msgstr "<emph>DefVar:</emph> варијанта"
 
 #: source/text/sbasic/shared/03102000.xhp#hd_id3151041.10
 msgid  "Example:"
@@ -17817,7 +17817,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03102100.xhp#par_id3154015.15
 msgid  "\<emph\>Keyword:\</emph\> Variable type"
-msgstr ""
+msgstr "<emph>Keyword:</emph> тип променлива"
 
 #: source/text/sbasic/shared/03102100.xhp#par_id3153949.16
 msgid  "\<emph\>Bool:\</emph\> Boolean variable (True, False)"
@@ -17829,7 +17829,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03102100.xhp#par_id3156057.18
 msgid  "\<emph\>Date:\</emph\> Date variable"
-msgstr ""
+msgstr "<emph>Date:</emph> датум променлива"
 
 #: source/text/sbasic/shared/03102100.xhp#par_id3148405.19
 msgid  "\<emph\>Double:\</emph\> Double-precision floating-point variable (1,79769313486232 x 10E308 - 4,94065645841247 x 10E-324)"
@@ -18033,7 +18033,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03102101.xhp#par_id3147317.10
 msgid  "\<emph\>Keyword:\</emph\> Variable type"
-msgstr ""
+msgstr "<emph>Keyword:</emph> тип променлива"
 
 #: source/text/sbasic/shared/03102101.xhp#par_id3153728.11
 msgid  "\<emph\>Bool: \</emph\>Boolean variable (True, False)"
@@ -18041,7 +18041,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03102101.xhp#par_id3146121.12
 msgid  "\<emph\>Date:\</emph\> Date variable"
-msgstr ""
+msgstr "<emph>Date:</emph> датум променлива"
 
 #: source/text/sbasic/shared/03102101.xhp#par_id3159156.13
 msgid  "\<emph\>Double:\</emph\> Double floating point variable (1.79769313486232x10E308 - 4.94065645841247x10E-324)"
@@ -20157,7 +20157,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03110100.xhp#par_id3150767.19
 msgid  "sRoot = \"c:\\\\\""
-msgstr ""
+msgstr "sRoot = \"c:\\\""
 
 #: source/text/sbasic/shared/03110100.xhp#par_id3154125.20
 msgid  "sFile = Dir$( sRoot ,22)"

@@ -61,7 +61,7 @@ msgstr "စာလုံးများထပ်ထည့်ပါ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "ဤစာလုံးဖိုင်ရှိရှိပြီးအချက်အလက်ဟောင်းများကိုဖျက်ပြီးအသစ်များဖြင့် အစားထိုးလိုပါသလား \n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "ဘာမျှမရှိပါ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "စာလုံးများအတွက် .afm နှင့် အဆုံးသတ်သော ဖိုင်ကို ရှာမတွေ့ပါ။ \n%s\nထို့ကြောင့် စာလုံးကို ထည့်သွင်းရန် မဖြစ်နိုင်ပါ။ Ghostscript ဖြင့် ဖိုင်များဖန်တီးနိုင်သည်။ ဥပမာအားဖြင့် စာလုံးဖိုင်များရှိသည့် ဒိုင်ယာထရီ (သို့) ၎င်း၏ afm ဒိုင်ယာထရီခွဲများတွင် ရရှိနိုင်သည်။   "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "စာလုံးဖိုင်အတွက် မက်ထရစ်စနစ်ဖိုင် \n   %s\nမိတ္တူ မကူးယူနိုင်ပါ။ စာလုံး စတင် အသုံးပြု နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "စာလုံးဖိုင်\n   %s\nမိတ္တူ မကူးယူနိုင်ပါ။ စာလုံး စတင် အသုံးပြုရလိမ့်မည် မဟုတ်ပါ။"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "ဤဖိုင်တွင် မက်ထရစ်စနစ်တစ�
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "အောက်ပါ အကြောင်းပြချက်အတွက် မက်ထရစ်စနစ် \n\n%s\n\n မပြောင်းလဲနိုင်ပါ။n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "ဒရိုင်ဘာ \"%s\" သည် အစဉ် လိုအပ�
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "ဒရိုင်ဘာ \"%s1\" ကိုမဖယ်ရှားနိုင်ပါ။\n\n%s2 ဖိုင်ကို ဖယ်ရှားရန် မဖြစ်နိုင်ပါ။"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

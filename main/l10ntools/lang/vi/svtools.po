@@ -577,596 +577,478 @@ msgid  "~Options..."
 msgstr "Tù~y chọn..."
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
-#, fuzzy
 msgid  "Select Directory"
 msgstr "Chọn thư mục"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
-#, fuzzy
 msgid  "Cannot change to directory"
 msgstr "Không thể chuyển đổi đến thư mục"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
-#, fuzzy
 msgid  "Open"
 msgstr "Mở"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
-#, fuzzy
 msgid  "~File"
 msgstr "~Tập tin"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
-#, fuzzy
 msgid  "~Directory"
 msgstr "Thư ~mục"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
-#, fuzzy
 msgid  "File ~type"
 msgstr "~Kiểu tập tin"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
-#, fuzzy
 msgid  "Can't open file"
 msgstr "Không thể mở tập tin"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
-#, fuzzy
 msgid  "Can't open directory"
 msgstr "Không thể mở thư mục"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \\nOverwrite ?"
-msgstr ""
+msgstr "Tập tin đã có.\nChép đè ?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Lên một bậc"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Lưu"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
-#, fuzzy
 msgid  "D~rive"
 msgstr "Ổ đĩ~a"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
-#, fuzzy
 msgid  "User Directory"
 msgstr "Thư mục người dùng"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
-#, fuzzy
 msgid  "Create Directory"
 msgstr "Tạo thư mục"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
-#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
 msgstr "Bạn có muốn tạo thư mục %s không?"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates: Address Book Assignment"
 msgstr "Mẫu > Gán Sổ Địa Chỉ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
-#, fuzzy
 msgid  "Address Book Source"
 msgstr "Nguồn sổ địa chỉ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "Nguồn dữ liệu"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
-#, fuzzy
 msgid  "~Address Data Source..."
 msgstr "Địa chỉ dữ liệu ~nguồn"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Bảng"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
-#, fuzzy
 msgid  "Field assignment"
 msgstr "Gán trường"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<không có>"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "Công ty"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "Phòng ban"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
-#, fuzzy
 msgid  "First name"
 msgstr "Tên"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
-#, fuzzy
 msgid  "Last name"
 msgstr "Họ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "Phố"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "Quốc gia"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
-#, fuzzy
 msgid  "ZIP Code"
 msgstr "Mã bưu điện"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "Thành phố"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Tuổi tác"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Chức vụ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
-#, fuzzy
 msgid  "Addr. Form"
 msgstr "Mẫu địa chỉ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "Tên tắt"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
-#, fuzzy
 msgid  "Complimentary close"
 msgstr "Lời kết"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
-#, fuzzy
 msgid  "Tel: Home"
 msgstr "Đ.t: ở nhà"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
-#, fuzzy
 msgid  "Tel: Work"
 msgstr "Đ.t: Cơ quan"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
-#, fuzzy
 msgid  "FAX"
 msgstr "FAX"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
-#, fuzzy
 msgid  "E-mail"
 msgstr "Địa chỉ thư"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "Ghi chú"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
-#, fuzzy
 msgid  "User 1"
 msgstr "Người dùng 1"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
-#, fuzzy
 msgid  "User 2"
 msgstr "Người dùng 2"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
-#, fuzzy
 msgid  "User 3"
 msgstr "Người dùng 3"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
-#, fuzzy
 msgid  "User 4"
 msgstr "Người dùng 4"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "ID"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "Tỉnh"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
-#, fuzzy
 msgid  "Tel: Office"
 msgstr "Đ.t: văn phòng"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "Nhắn tin"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
-#, fuzzy
 msgid  "Mobile"
 msgstr "Di động"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
-#, fuzzy
 msgid  "Tel: Other"
 msgstr "Đ.t: khác"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Lịch"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "Mời"
 
 #: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
-#, fuzzy
 msgid  "Unformatted text"
 msgstr "Nhập thô"
 
 #: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "Ảnh mảng"
 
 #: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
-#, fuzzy
 msgid  "GDI metafile"
 msgstr "Siêu tập tin GDI"
 
 #: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
-#, fuzzy
 msgid  "Formatted text [RTF]"
 msgstr "Văn bản đã định dạng [RTF]"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing format"
 msgstr "Định dạng bản vẽ"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
-#, fuzzy
 msgid  "SVXB (StarView bitmap/animation)"
 msgstr "SVXB (ảnh mảng/hoạt họa StarView)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
-#, fuzzy
 msgid  "Status Info from Svx Internal Link"
 msgstr "Thông tin trạng thái từ liên kết nội Svx"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
-#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (liên kết %PRODUCTNAME)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
-#, fuzzy
 msgid  "Netscape Bookmark"
 msgstr "Liên kết lưu Netscape"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
-#, fuzzy
 msgid  "Star server format"
 msgstr "Định dạng máy phục vụ Star"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
-#, fuzzy
 msgid  "Star object format"
 msgstr "Định dạng đối tượng Star"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
-#, fuzzy
 msgid  "Applet object"
 msgstr "Đối lượng tiểu dụng"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
-#, fuzzy
 msgid  "Plug-in object"
 msgstr "Đối tượng bổ sung"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
-#, fuzzy
 msgid  "StarWriter 3.0 object"
 msgstr "Đối tượng StarWriter 3.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 object"
 msgstr "Đối tượng StarWriter 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
-#, fuzzy
 msgid  "StarWriter 5.0 object"
 msgstr "Đối tượng StarWriter 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
 msgstr "Đối tượng StarWriter/Web 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
 msgstr "Đối tượng StarWriter/Web 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
 msgstr "Đối tượng StarWriter/Master 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
 msgstr "Đối tượng StarWriter/Master 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
-#, fuzzy
 msgid  "StarDraw object"
 msgstr "Đối tượng StarDraw"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
-#, fuzzy
 msgid  "StarDraw 4.0 object"
 msgstr "Đối tượng StarDraw 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
-#, fuzzy
 msgid  "StarImpress 5.0 object"
 msgstr "Đối tượng StarImpress 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
-#, fuzzy
 msgid  "StarDraw 5.0 object"
 msgstr "Đối tượng StarDraw 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
-#, fuzzy
 msgid  "StarCalc object"
 msgstr "Đối tượng StarCalc"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
-#, fuzzy
 msgid  "StarCalc  4.0 object"
 msgstr "Đối tượng StarCalc 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
-#, fuzzy
 msgid  "StarCalc 5.0 object"
 msgstr "Đối tượng StarCalc 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
-#, fuzzy
 msgid  "StarChart object"
 msgstr "Đối tượng StarChart"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
-#, fuzzy
 msgid  "StarChart 4.0 object"
 msgstr "Đối tượng StarChart 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "Đối tượng StarChart 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
-#, fuzzy
 msgid  "StarImage object"
 msgstr "Đối tượng StarImage"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
-#, fuzzy
 msgid  "StarImage 4.0 object"
 msgstr "Đối tượng StarImage 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
-#, fuzzy
 msgid  "StarImage 5.0 object"
 msgstr "Đối tượng StarImage 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
-#, fuzzy
 msgid  "StarMath object"
 msgstr "Đối tượng StarMath"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
-#, fuzzy
 msgid  "StarMath 4.0 object"
 msgstr "Đối tượng StarMath 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
-#, fuzzy
 msgid  "StarMath 5.0 object"
 msgstr "Đối tượng StarMath 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
-#, fuzzy
 msgid  "StarObject Paint object"
 msgstr "Đối tượng StarObject Paint"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
-#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
 msgstr "HTML (Ngôn ngữ định dạng siêu văn bản)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
-#, fuzzy
 msgid  "HTML format"
 msgstr "Định dạng HTML"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
-#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "Biff5 (MS Excel 5.0/95)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
-#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "Biff8 (MS Excel 97/2000/XP)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
-#, fuzzy
 msgid  "Sylk"
 msgstr "Sylk"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
-#, fuzzy
 msgid  "DDE link"
 msgstr "Liên kết DDE"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
-#, fuzzy
 msgid  "DIF"
 msgstr "DIF"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
-#, fuzzy
 msgid  "Microsoft Word object"
 msgstr "Đối tượng MS Word"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
-#, fuzzy
 msgid  "StarFrameSet object"
 msgstr "Đối tượng StarFrameSet"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
-#, fuzzy
 msgid  "Office document object"
 msgstr "Đối tượng tài liệu Office"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
-#, fuzzy
 msgid  "Notes document info"
 msgstr "Thông tin tài liệu Notes"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
-#, fuzzy
 msgid  "Sfx document"
 msgstr "Tài liệu Sfx"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "Đối tượng StarChart 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
-#, fuzzy
 msgid  "Graphic object"
 msgstr "Đối tượng đồ họa"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "Đối tượng %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
-#, fuzzy
 msgid  "Windows metafile"
 msgstr "Siêu tập tin Windows"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
-#, fuzzy
 msgid  "Data source object"
 msgstr "Đối tượng nguồn dữ liệu"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
-#, fuzzy
 msgid  "Data source table"
 msgstr "Bảng nguồn dữ liệu"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
-#, fuzzy
 msgid  "SQL query"
 msgstr "Truy vấn SQL"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "Hộp thoại %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "Liên kết"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
-#, fuzzy
 msgid  "HTML format without comments"
 msgstr "Định dạng HTML không có chú thích"
 
@@ -1763,636 +1645,518 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
-#, fuzzy
 msgid  "Source code"
 msgstr "Mã nguồn"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
-#, fuzzy
 msgid  "Bookmark file"
 msgstr "Tập tin liên kết lưu"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Đồ họa"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
-#, fuzzy
 msgid  "Configuration file"
 msgstr "Tập tin cấu hình"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
-#, fuzzy
 msgid  "Application"
 msgstr "Ứng dụng"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
-#, fuzzy
 msgid  "Database table"
 msgstr "Bảng cơ sở dữ liệu"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
-#, fuzzy
 msgid  "System file"
 msgstr "Tập tin hệ thống"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
-#, fuzzy
 msgid  "MS Word document"
 msgstr "Tài liệu MS Word"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
-#, fuzzy
 msgid  "Help file"
 msgstr "Tập tin trợ giúp"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "Tài liệu HTML"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
-#, fuzzy
 msgid  "Archive file"
 msgstr "Tập tin lưu trữ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
-#, fuzzy
 msgid  "Log file"
 msgstr "Tập tin ghi lưu"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Database"
 msgstr "Cơ sở dữ liệu %STAROFFICE"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
 msgstr "Tài liệu chủ StarWriter 4.0/5.0"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Image"
 msgstr "Ảnh %STAROFFICE"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
-#, fuzzy
 msgid  "Text file"
 msgstr "Tập tin văn bản"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "Liên kết"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "Mẫu %STAROFFICE 3.0 - 5.0"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel document"
 msgstr "Tài liệu MS Excel"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel template"
 msgstr "Mẫu MS Excel"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
-#, fuzzy
 msgid  "Batch file"
 msgstr "Tập tin bó"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
-#, fuzzy
 msgid  "File"
 msgstr "Tập tin"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Thư mục"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "Tài liệu văn bản"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Bảng tính"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "Trình chiếu"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "Bản vẽ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "Tài liệu HTML"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "Master document"
 msgstr "Tài liệu chủ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "Công thức"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
-#, fuzzy
 msgid  "Database"
 msgstr "Cơ sở dữ liệu"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "Mẫu bảng tính %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "Mẫu vẽ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "Mẫu trình chiếu %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "Mẫu tài liệu văn bản %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
-#, fuzzy
 msgid  "Local drive"
 msgstr "Ổ dĩa cục bộ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
-#, fuzzy
 msgid  "Disk drive"
 msgstr "Ổ đĩa"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
-#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "Ổ dĩa CD-ROM"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
-#, fuzzy
 msgid  "Network connection"
 msgstr "Kết nối mạng"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "Tài liệu MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "Mẫu MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "Trình diễn MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "Công thức %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "Đồ thị %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "Bản vẽ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "Bảng tính %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "Trình chiếu %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "Tài liệu văn bản %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "Tài liệu chủ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
-#, fuzzy
 msgid  "MathML Document"
 msgstr "Tài liệu MathML"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "Cơ sở dữ liệu OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "Bản vẽ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "Công thức OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "Tài liệu chủ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "Trình chiếu OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "Bảng tính OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "Văn bản OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "Mẫu bảng tính OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "Mẫu bản vẽ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "Mẫu trình chiếu OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "Mẫu văn bản OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "Phần mở rộng %PRODUCTNAME"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
-#, fuzzy
 msgid  "[None]"
 msgstr "[Không có]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
-#, fuzzy
 msgid  "Unknown"
 msgstr "Không rõ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Mặc định"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
-#, fuzzy
 msgid  "Afrikaans (South Africa)"
 msgstr "Hoà Nam Phi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
-#, fuzzy
 msgid  "Albanian"
 msgstr "An-ba-ni"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
-#, fuzzy
 msgid  "Arabic"
 msgstr "Ả rập"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Algeria)"
 msgstr "Arabic (Algeria)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Bahrain)"
 msgstr "Ả Rập (Ba-rainh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PairedList.item
-#, fuzzy
 msgid  "Arabic (Chad)"
 msgstr "Arabic (Chad)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PairedList.item
-#, fuzzy
 msgid  "Arabic (Comoros)"
 msgstr "Arabic (Comoros)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PairedList.item
-#, fuzzy
 msgid  "Arabic (Djibouti)"
 msgstr "Arabic (Djibouti)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
-#, fuzzy
 msgid  "Arabic (Egypt)"
 msgstr "Ả Rập (Ai Cập)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Eritrea)"
 msgstr "Arabic (Eritrea)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
-#, fuzzy
 msgid  "Arabic (Iraq)"
 msgstr "Ả Rập (I-rắc)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PairedList.item
-#, fuzzy
 msgid  "Arabic (Israel)"
 msgstr "Arabic (Israel)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Jordan)"
 msgstr "Ả Rập (Gi-oa-đanh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
-#, fuzzy
 msgid  "Arabic (Kuwait)"
 msgstr "Ả Rập (Khu-ouaith)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
-#, fuzzy
 msgid  "Arabic (Lebanon)"
 msgstr "Ả Rập (Le-ba-non)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Libya)"
 msgstr "Ả Rập (Li-bi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Mauritania)"
 msgstr "Arabic (Mauritania)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
-#, fuzzy
 msgid  "Arabic (Morocco)"
 msgstr "Ả Rập (Ma Rốc)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Oman)"
 msgstr "Ả Rập (Ô-manh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PairedList.item
-#, fuzzy
 msgid  "Arabic (Palestine)"
 msgstr "Arabic (Palestine)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
-#, fuzzy
 msgid  "Arabic (Qatar)"
 msgstr "Ả rập (Kha-tă)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Saudi Arabia)"
 msgstr "Ả Rập (A Rập Xâu-đi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Somalia)"
 msgstr "Arabic (Somalia)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Sudan)"
 msgstr "Arabic (Sudan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Syria)"
 msgstr "Ả Rập (Xi-ri)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Tunisia)"
 msgstr "Ả Rập (Tu-ni-xi-a)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
-#, fuzzy
 msgid  "Arabic (UAE)"
 msgstr "Ả Rập (UAE)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Yemen)"
 msgstr "Ả Rập (Yê-menh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
-#, fuzzy
 msgid  "Armenian"
 msgstr "Ác-mê-ni"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
-#, fuzzy
 msgid  "Assami"
 msgstr "A-xa-mi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
-#, fuzzy
 msgid  "Azerbaijani Latin"
 msgstr "A-xợ-bai-giă-ni (La-tinh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
-#, fuzzy
 msgid  "Azerbaijani Cyrillic"
 msgstr "A-xợ-bai-giă-ni (Ki-rin)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
-#, fuzzy
 msgid  "Basque"
 msgstr "Ba-x-quợ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
-#, fuzzy
 msgid  "Bengali (India)"
 msgstr "Ben-ga-li (Ấn Độ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
-#, fuzzy
 msgid  "Bulgarian"
 msgstr "Bun-ga-ri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
-#, fuzzy
 msgid  "Belarusian"
 msgstr "Bê-la-rút-xi-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
-#, fuzzy
 msgid  "Catalan"
 msgstr "Ca-ta-lan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Trung (phồn thể)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
-#, fuzzy
 msgid  "Chinese (simplified)"
 msgstr "Trung (giản thể)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
-#, fuzzy
 msgid  "Chinese (Hong Kong)"
 msgstr "Trung (Hông Kồng)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
-#, fuzzy
 msgid  "Chinese (Singapore)"
 msgstr "Trung (Xin-ga-poa)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
-#, fuzzy
 msgid  "Chinese (Macau)"
 msgstr "Trung (Ma-cao)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
-#, fuzzy
 msgid  "Croatian"
 msgstr "Cợ-rô-a-ti-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
-#, fuzzy
 msgid  "Czech"
 msgstr "Séc"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
-#, fuzzy
 msgid  "Danish"
 msgstr "Đan Mạch"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "Hoà (Hoà Lan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
-#, fuzzy
 msgid  "Dutch (Belgium)"
 msgstr "Hà Lan (Bỉ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
-#, fuzzy
 msgid  "English (USA)"
 msgstr "Anh (Mỹ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
-#, fuzzy
 msgid  "English (UK)"
 msgstr "Anh (Quốc Anh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
-#, fuzzy
 msgid  "English (Australia)"
 msgstr "Anh (Úc)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
-#, fuzzy
 msgid  "English (Canada)"
 msgstr "Anh (Ca-na-đa)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
-#, fuzzy
 msgid  "English (New Zealand)"
 msgstr "Anh (Niu Xi-lan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
-#, fuzzy
 msgid  "English (Eire)"
 msgstr "Anh (Ai-len)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
-#, fuzzy
 msgid  "English (South Africa)"
 msgstr "Anh (Nam Phi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
-#, fuzzy
 msgid  "English (Jamaica)"
 msgstr "Anh (Gia-mê-ca)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
-#, fuzzy
 msgid  "English (Caribbean)"
 msgstr "Anh (Ca-ri-bi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
-#, fuzzy
 msgid  "English (Belize)"
 msgstr "Anh (Be-li-xợ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
-#, fuzzy
 msgid  "English (Trinidad)"
 msgstr "Anh (Tợ-ri-ni-đạt)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
-#, fuzzy
 msgid  "English (Zimbabwe)"
 msgstr "Anh (Xim-ba-buê)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
-#, fuzzy
 msgid  "English (Philippines)"
 msgstr "Anh (Phi-luật-tân)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
-#, fuzzy
 msgid  "English (India)"
 msgstr "Anh (Ấn Độ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
-#, fuzzy
 msgid  "Estonian"
 msgstr "E-x-tô-ni-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
-#, fuzzy
 msgid  "Finnish"
 msgstr "Phần Lan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
-#, fuzzy
 msgid  "Faroese"
 msgstr "Pha-rô"
 
@@ -2401,282 +2165,226 @@ msgid  "Persian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
-#, fuzzy
 msgid  "French (France)"
 msgstr "Pháp (Pháp)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
-#, fuzzy
 msgid  "French (Belgium)"
 msgstr "Pháp (Bỉ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
-#, fuzzy
 msgid  "French (Canada)"
 msgstr "Pháp (Ca-na-đa)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
-#, fuzzy
 msgid  "French (Switzerland)"
 msgstr "Pháp (Thuỵ Sĩ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
-#, fuzzy
 msgid  "French (Luxembourg)"
 msgstr "Pháp (Lúc-xam-buac)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
-#, fuzzy
 msgid  "French (Monaco)"
 msgstr "Pháp (Mo-na-cô)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
-#, fuzzy
 msgid  "Gascon"
 msgstr "Ga-x-con"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "Đức (Đức)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
-#, fuzzy
 msgid  "German (Switzerland)"
 msgstr "Đức (Thuỵ Sĩ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
-#, fuzzy
 msgid  "German (Austria)"
 msgstr "Đức (Ao)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
-#, fuzzy
 msgid  "German (Luxembourg)"
 msgstr "Đức (Lúc-xam-buac)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
-#, fuzzy
 msgid  "German (Liechtenstein)"
 msgstr "Đức (Lich-ten-x-têinh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
-#, fuzzy
 msgid  "Greek"
 msgstr "Hy Lạp"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
-#, fuzzy
 msgid  "Gujarati"
 msgstr "Gu-gia-ra-ti"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
-#, fuzzy
 msgid  "Hebrew"
 msgstr "Do Thái"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
-#, fuzzy
 msgid  "Hindi"
 msgstr "Hin-đi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
-#, fuzzy
 msgid  "Hungarian"
 msgstr "Hun-ga-ri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
-#, fuzzy
 msgid  "Icelandic"
 msgstr "Băng Đảo"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
-#, fuzzy
 msgid  "Indonesian"
 msgstr "Nam Dương"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Ý (Ý)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
-#, fuzzy
 msgid  "Italian (Switzerland)"
 msgstr "Ý (Thuỵ Sĩ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
-#, fuzzy
 msgid  "Japanese"
 msgstr "Nhật"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
-#, fuzzy
 msgid  "Kannada"
 msgstr "Kan-na-đa"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
-#, fuzzy
 msgid  "Kashmiri (Kashmir)"
 msgstr "Ca-xợ-mia (Ca-xợ-mia)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
-#, fuzzy
 msgid  "Kashmiri (India)"
 msgstr "Ca-xợ-mia (Ấn Độ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
-#, fuzzy
 msgid  "Kazak"
 msgstr "Ca-xác"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
-#, fuzzy
 msgid  "Konkani"
 msgstr "Con-ca-ni"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
-#, fuzzy
 msgid  "Korean (RoK)"
 msgstr "Hàn Quốc (RoK)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
-#, fuzzy
 msgid  "Latvian"
 msgstr "Lát-vi-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
-#, fuzzy
 msgid  "Lithuanian"
 msgstr "Li-tu-a-ni"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
-#, fuzzy
 msgid  "Macedonian"
 msgstr "Ma-xê-đô-ni"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
-#, fuzzy
 msgid  "Malay (Malaysia)"
 msgstr "Mã-lai (Mã-lai)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PairedList.item
-#, fuzzy
 msgid  "Malay (Brunei Darussalam)"
 msgstr "Mã-lai (Bợ-ru-nêi Đa-ru-xa-lam)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
-#, fuzzy
 msgid  "Malayalam"
 msgstr "Ma-lay-am"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PairedList.item
-#, fuzzy
 msgid  "Manipuri"
 msgstr "Ma-ni-pu-ri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PairedList.item
-#, fuzzy
 msgid  "Marathi"
 msgstr "Ma-ra-thi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PairedList.item
-#, fuzzy
 msgid  "Nepali (Nepal)"
 msgstr "Nê-pan (Ne-pan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PairedList.item
-#, fuzzy
 msgid  "Nepali (India)"
 msgstr "Nê-pan (Ấn Độ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
-#, fuzzy
 msgid  "Norwegian, Bokmål"
 msgstr "Na Uy (Bokh-man)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
-#, fuzzy
 msgid  "Norwegian, Nynorsk"
 msgstr "Na Uy (Ni-noa-x-kh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
-#, fuzzy
 msgid  "Oriya"
 msgstr "O-ri-ya"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
-#, fuzzy
 msgid  "Polish"
 msgstr "Ba Lan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Bồ Đào Nha (Bồ Đào Nha)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Bồ Đào Nha (Bra-xin)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PairedList.item
-#, fuzzy
 msgid  "Punjabi"
 msgstr "Pun-gia-bi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PairedList.item
-#, fuzzy
 msgid  "Rhaeto-Romance"
 msgstr "Rhaeto-Romance"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
-#, fuzzy
 msgid  "Romanian"
 msgstr "Rô-ma-ni"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
-#, fuzzy
 msgid  "Russian"
 msgstr "Nga"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PairedList.item
-#, fuzzy
 msgid  "Sanskrit"
 msgstr "Phạn"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PairedList.item
-#, fuzzy
 msgid  "Serbian Cyrillic (Serbia and Montenegro)"
 msgstr "Xéc-bi Ki-rin (Xéc-bi và Mon-te-nê-gợ-rô)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PairedList.item
-#, fuzzy
 msgid  "Serbian Latin (Serbia and Montenegro)"
 msgstr "Xéc-bi La-tinh (Xéc-bi và Mon-te-nê-gợ-rô)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PairedList.item
-#, fuzzy
 msgid  "Serbian Cyrillic (Serbia)"
 msgstr "Xéc-bi Ki-rin (Xéc-bi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PairedList.item
-#, fuzzy
 msgid  "Serbian Latin (Serbia)"
 msgstr "Xéc-bi La-tinh (Xéc-bi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PairedList.item
-#, fuzzy
 msgid  "Serbian Cyrillic (Montenegro)"
 msgstr "Xéc-bi Ki-rin (Mon-te-nê-gợ-rô)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PairedList.item
-#, fuzzy
 msgid  "Serbian Latin (Montenegro)"
 msgstr "Xéc-bi La-tinh (Mon-te-nê-gợ-rô"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PairedList.item
-#, fuzzy
 msgid  "Sindhi"
 msgstr "Xin-đi"
 
@@ -2685,682 +2393,546 @@ msgid  "Slovak"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
-#, fuzzy
 msgid  "Slovenian"
 msgstr "Xlô-ven"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Tây Ban Nha (Tây Ban Nha)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
-#, fuzzy
 msgid  "Spanish (Mexico)"
 msgstr "Tây Ban Nha (Mê-hi-cô)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Guatemala)"
 msgstr "Tây Ban Nha (Gua-te-ma-la)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Costa Rica)"
 msgstr "Tây Ban Nha (Có-x-ta Ri-ca)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Panama)"
 msgstr "Tây Ban Nha (Pa-na-ma)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
-#, fuzzy
 msgid  "Spanish (Dom. Rep.)"
 msgstr "Tây Ban Nha (Cộng Hoà Dô-mi-ni-ca)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Venezuela)"
 msgstr "Tây Ban Nha (Ve-ne-xuê-la)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Colombia)"
 msgstr "Tây Ban Nha (Co-lom-bi-a)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
-#, fuzzy
 msgid  "Spanish (Peru)"
 msgstr "Tây Ban Nha (Pê-ru)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Argentina)"
 msgstr "Tây Ban Nha (Ă-gien-ti-na)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
-#, fuzzy
 msgid  "Spanish (Ecuador)"
 msgstr "Tây Ban Nha (Ê-cua-đoa)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
-#, fuzzy
 msgid  "Spanish (Chile)"
 msgstr "Tây Ban Nha (Chi-lê)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
-#, fuzzy
 msgid  "Spanish (Uruguay)"
 msgstr "Tây Ban Nha (U-ru-guay)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
-#, fuzzy
 msgid  "Spanish (Paraguay)"
 msgstr "Tây Ban Nha (Pa-ra-guay)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Bolivia)"
 msgstr "Tây Ban Nha (Bô-li-vi-a)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
-#, fuzzy
 msgid  "Spanish (El Salvador)"
 msgstr "Tây Ban Nha (En Xan-va-đoa)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
-#, fuzzy
 msgid  "Spanish (Honduras)"
 msgstr "Tây Ban Nha (Hon-đu-rát)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Nicaragua)"
 msgstr "Tây Ban Nha (Ni-ca-ra-gua)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PairedList.item
-#, fuzzy
 msgid  "Spanish (Puerto Rico)"
 msgstr "Tây Ban Nha (Pu-e-tô Ri-cô)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PairedList.item
-#, fuzzy
 msgid  "Swahili (Kenya)"
 msgstr "Xouă-hi-li (Ken-i-a)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Thuỵ Điển (Thuỵ Điển)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
-#, fuzzy
 msgid  "Swedish (Finland)"
 msgstr "Thuỵ Điển (Phần Lan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PairedList.item
-#, fuzzy
 msgid  "Tajik"
 msgstr "Ta-gíkh"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
-#, fuzzy
 msgid  "Tamil"
 msgstr "Ta-min"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PairedList.item
-#, fuzzy
 msgid  "Tatar"
 msgstr "Ta-tă"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
-#, fuzzy
 msgid  "Telugu"
 msgstr "Te-lu-gu"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
-#, fuzzy
 msgid  "Thai"
 msgstr "Thái"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
-#, fuzzy
 msgid  "Turkish"
 msgstr "Thổ Nhĩ Kỳ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PairedList.item
-#, fuzzy
 msgid  "Urdu (Pakistan)"
 msgstr "Ua-đu (Pa-khi-x-tanh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PairedList.item
-#, fuzzy
 msgid  "Urdu (India)"
 msgstr "Ua-đu (Ấn Độ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
-#, fuzzy
 msgid  "Ukrainian"
 msgstr "U-cợ-rainh"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
-#, fuzzy
 msgid  "Uzbek Latin"
 msgstr "U-x-béc (La-tinh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PairedList.item
-#, fuzzy
 msgid  "Welsh"
 msgstr "Ouen-s"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
-#, fuzzy
 msgid  "User 1"
 msgstr "Người dùng 1"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
-#, fuzzy
 msgid  "User 2"
 msgstr "Người dùng 2"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
-#, fuzzy
 msgid  "User 3"
 msgstr "Người dùng 3"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
-#, fuzzy
 msgid  "User 4"
 msgstr "Người dùng 4"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
-#, fuzzy
 msgid  "User 5"
 msgstr "Người dùng 5"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
-#, fuzzy
 msgid  "User 6"
 msgstr "Người dùng 6"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
-#, fuzzy
 msgid  "User 7"
 msgstr "Người dùng 7"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
-#, fuzzy
 msgid  "User 8"
 msgstr "Người dùng 8"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
-#, fuzzy
 msgid  "User 9"
 msgstr "Người dùng 9"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
-#, fuzzy
 msgid  "Latin"
 msgstr "La-tinh"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PairedList.item
-#, fuzzy
 msgid  "Esperanto"
 msgstr "Ét-pe-ran-tô"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PairedList.item
-#, fuzzy
 msgid  "Kinyarwanda (Rwanda)"
 msgstr "Ki-nia-ouăn-đa (Rouăn-đa)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
-#, fuzzy
 msgid  "Maori (New Zealand)"
 msgstr "Mao-ri (Niu Xi-lan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PairedList.item
-#, fuzzy
 msgid  "Galician"
 msgstr "Ga-li-xi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PairedList.item
-#, fuzzy
 msgid  "Dhivehi"
 msgstr "Đi-ve-hi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PairedList.item
-#, fuzzy
 msgid  "Northern Sotho"
 msgstr "Bắc Xô-tô"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PairedList.item
-#, fuzzy
 msgid  "Gaelic (Scotland)"
 msgstr "Xen-tơ (Ê-cốt)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
-#, fuzzy
 msgid  "Mongolian"
 msgstr "Mông Cổ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PairedList.item
-#, fuzzy
 msgid  "Interlingua"
 msgstr "In-tơ-lin-gua"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PairedList.item
-#, fuzzy
 msgid  "Bosnian"
 msgstr "Bo-x-ni-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PairedList.item
-#, fuzzy
 msgid  "Bengali (Bangladesh)"
 msgstr "Ben-ga-li (Băng-la-đexợ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PairedList.item
-#, fuzzy
 msgid  "Occitan"
 msgstr "Óc-xi-tan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
-#, fuzzy
 msgid  "Khmer"
 msgstr "Khơ-me"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PairedList.item
-#, fuzzy
 msgid  "Kurdish (Turkey)"
 msgstr "Kuổ-đít (Thổ Nhĩ Kỳ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PairedList.item
-#, fuzzy
 msgid  "Kurdish (Syria)"
 msgstr "Kuổ-đít (Xi-ri)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PairedList.item
-#, fuzzy
 msgid  "Kurdish (Iraq)"
 msgstr "Kuổ-đít (I-rắc)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PairedList.item
-#, fuzzy
 msgid  "Kurdish (Iran)"
 msgstr "Kuổ-đít (I-ran)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PairedList.item
-#, fuzzy
 msgid  "Sardinian"
 msgstr "Xa-đi-ni-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PairedList.item
-#, fuzzy
 msgid  "Dzongkha"
 msgstr "Đ-xông-kha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PairedList.item
-#, fuzzy
 msgid  "Swahili (Tanzania)"
 msgstr "Xouă-hi-li (Tan-xa-ni-a)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
-#, fuzzy
 msgid  "Lao"
 msgstr "Lào"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PairedList.item
-#, fuzzy
 msgid  "Irish"
 msgstr "Ai-len"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
-#, fuzzy
 msgid  "Tibetan (PR China)"
 msgstr "Tây Tạng (Trung Quốc)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
-#, fuzzy
 msgid  "Georgian"
 msgstr "Gi-oa-gi-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PairedList.item
-#, fuzzy
 msgid  "Frisian"
 msgstr "Ph-ri-xi-a"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
-#, fuzzy
 msgid  "Tswana (South Africa)"
 msgstr "T-xouă-na (Nam Phi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PairedList.item
-#, fuzzy
 msgid  "Zulu"
 msgstr "Xu-lu"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
-#, fuzzy
 msgid  "Vietnamese"
 msgstr "Việt"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PairedList.item
-#, fuzzy
 msgid  "Breton"
 msgstr "Bợ-re-ton"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PairedList.item
-#, fuzzy
 msgid  "Kalaallisut"
 msgstr "Ca-lă-li-xút"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
-#, fuzzy
 msgid  "Ndebele, South"
 msgstr "Nam N-đe-be-le"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PairedList.item
-#, fuzzy
 msgid  "Southern Sotho"
 msgstr "Nam Xô-tô"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PairedList.item
-#, fuzzy
 msgid  "Swazi"
 msgstr "Xouă-xi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PairedList.item
-#, fuzzy
 msgid  "Tsonga"
 msgstr "T-xôn-ga"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PairedList.item
-#, fuzzy
 msgid  "Venda"
 msgstr "Ven-đa"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PairedList.item
-#, fuzzy
 msgid  "Tswana (Botswana)"
 msgstr "T-xouă-na (Bót-xouă-na)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PairedList.item
-#, fuzzy
 msgid  "Xhosa"
 msgstr "Xhô-xa"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
-#, fuzzy
 msgid  "Sinhala"
 msgstr "Xin-ha-la"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PairedList.item
-#, fuzzy
 msgid  "Moore"
 msgstr "Muă"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PairedList.item
-#, fuzzy
 msgid  "Bambara"
 msgstr "Bam-ba-ra"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PairedList.item
-#, fuzzy
 msgid  "Akan"
 msgstr "A-can"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PairedList.item
-#, fuzzy
 msgid  "Luxembourgish"
 msgstr "Lúc-xăm-buac"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PairedList.item
-#, fuzzy
 msgid  "Friulian"
 msgstr "Phợ-riu-li"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PairedList.item
-#, fuzzy
 msgid  "Fijian"
 msgstr "Phi-gi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PairedList.item
-#, fuzzy
 msgid  "Afrikaans (Namibia)"
 msgstr "Hoà Nam Phi (Na-mi-bia)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
-#, fuzzy
 msgid  "English (Namibia)"
 msgstr "Anh (Na-mi-bia)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PairedList.item
-#, fuzzy
 msgid  "Walloon"
 msgstr "Oua-lunh"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PairedList.item
-#, fuzzy
 msgid  "Coptic"
 msgstr "Ngôn ngữ Giáo hội Ai Cập"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PairedList.item
-#, fuzzy
 msgid  "Tigrigna (Eritrea)"
 msgstr "Tíc-ríc-na (Ê-ri-tợ-rê-a)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PairedList.item
-#, fuzzy
 msgid  "Tigrigna (Ethiopia)"
 msgstr "Tíc-ríc-na (Ê-ti-ô-pi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PairedList.item
-#, fuzzy
 msgid  "Amharic"
 msgstr "Am-ha-ri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PairedList.item
-#, fuzzy
 msgid  "Kirghiz"
 msgstr "Khia-ghi-x"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
-#, fuzzy
 msgid  "German (Belgium)"
 msgstr "Đức (Bỉ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PairedList.item
-#, fuzzy
 msgid  "Chuvash"
 msgstr "Chu-vas"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PairedList.item
-#, fuzzy
 msgid  "Burmese"
 msgstr "Miến Điện"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PairedList.item
-#, fuzzy
 msgid  "Hausa (Nigeria)"
 msgstr "Hau-xa (Ni-gê-ri-a)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PairedList.item
-#, fuzzy
 msgid  "Hausa (Ghana)"
 msgstr "Hau-xa (Gha-na)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PairedList.item
-#, fuzzy
 msgid  "Éwé"
 msgstr "É-oué"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
-#, fuzzy
 msgid  "English (Ghana)"
 msgstr "Anh (Gha-na)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PairedList.item
-#, fuzzy
 msgid  "Sango"
 msgstr "Xan-gô"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PairedList.item
-#, fuzzy
 msgid  "Tagalog"
 msgstr "Ta-ga-loc"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PairedList.item
-#, fuzzy
 msgid  "Ganda"
 msgstr "Gan-đa"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PairedList.item
-#, fuzzy
 msgid  "Lingala"
 msgstr "Lin-ga-la"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PairedList.item
-#, fuzzy
 msgid  "Low German"
 msgstr "Đức thấp"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PairedList.item
-#, fuzzy
 msgid  "Hiligaynon"
 msgstr "Hi-li-gây-non"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PairedList.item
-#, fuzzy
 msgid  "Nyanja"
 msgstr "Ny-an-gia"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PairedList.item
-#, fuzzy
 msgid  "Kashubian"
 msgstr "Ka-xu-bi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Cuba)"
 msgstr "Tây Ban Nha (Cu-ba)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PairedList.item
-#, fuzzy
 msgid  "Tetun (Indonesia)"
 msgstr "Te-tun (Nam Dương)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
-#, fuzzy
 msgid  "Quechua (Bolivia, North)"
 msgstr "Que-chua (Bắc Bô-li-vi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
-#, fuzzy
 msgid  "Quechua (Bolivia, South)"
 msgstr "Que-chua (Nam Bô-li-vi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PairedList.item
-#, fuzzy
 msgid  "Somali"
 msgstr "Xô-ma-li"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PairedList.item
-#, fuzzy
 msgid  "Sami, Inari (Finland)"
 msgstr "Xa-mi, I-na-ri (Phần Lan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PairedList.item
-#, fuzzy
 msgid  "Sami, Lule (Norway)"
 msgstr "Xa-mi, Lu-le (Na Uy)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PairedList.item
-#, fuzzy
 msgid  "Sami, Lule (Sweden)"
 msgstr "Xa-mi, Lu-le (Thuỵ Điển)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PairedList.item
-#, fuzzy
 msgid  "Sami, Northern (Finland)"
 msgstr "Bắc Xa-mi (Phần Lan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PairedList.item
-#, fuzzy
 msgid  "Sami, Northern (Norway)"
 msgstr "Bắc Xa-mi (Na Uy)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PairedList.item
-#, fuzzy
 msgid  "Sami, Northern (Sweden)"
 msgstr "Bắc Xa-mi (Thuỵ Điển)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PairedList.item
-#, fuzzy
 msgid  "Sami, Skolt (Finland)"
 msgstr "Xa-mi, X-cô-th (Phần Lan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PairedList.item
-#, fuzzy
 msgid  "Sami, Southern (Norway)"
 msgstr "Nam Xa-mi (Na Uy)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PairedList.item
-#, fuzzy
 msgid  "Sami, Southern (Sweden)"
 msgstr "Nam Xa-mi (Thuỵ Điển)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
-#, fuzzy
 msgid  "Sami, Kildin (Russia)"
 msgstr "Xa-mi, Kin-đin (Nga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PairedList.item
-#, fuzzy
 msgid  "Guaraní, Paraguayan"
 msgstr "Gua-ra-ni, Pa-ra-guay-an"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PairedList.item
-#, fuzzy
 msgid  "Bodo"
 msgstr "Bô-đô"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PairedList.item
-#, fuzzy
 msgid  "Dogri"
 msgstr "Đô-gợ-ri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PairedList.item
-#, fuzzy
 msgid  "Maithili"
 msgstr "Mai-ti-li"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PairedList.item
-#, fuzzy
 msgid  "Santali"
 msgstr "Xan-ta-li"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PairedList.item
-#, fuzzy
 msgid  "Tetun (Timor-Leste)"
 msgstr "Te-tun (Ti-moa Le-x-te)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PairedList.item
-#, fuzzy
 msgid  "Turkmen"
 msgstr "Tuổc-menh"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PairedList.item
-#, fuzzy
 msgid  "Maltese"
 msgstr "Maltese"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PairedList.item
-#, fuzzy
 msgid  "Tok Pisin"
 msgstr "Tok Pisin"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PairedList.item
-#, fuzzy
 msgid  "Shuswap"
 msgstr "Shuswap"
 
@@ -3401,7 +2973,6 @@ msgid  "Latgalian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PairedList.item
-#, fuzzy
 msgid  "Maore"
 msgstr "Muă"
 
@@ -3486,107 +3057,86 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Display IDs"
 msgstr "Hiện mã nhận diện"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "This is the input window"
 msgstr "Đây là cửa sổ nhập"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "Truyền qua Công cụ thử ra"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show all windows"
 msgstr "Hiện mọi cửa sổ"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "Hiện tên ngắn (nếu có)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Always show long-name"
 msgstr "Lúc nào cũng hiện tên dài"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
-#, fuzzy
 msgid  "DisplayHID"
 msgstr "Hiện HID"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
-#, fuzzy
 msgid  "Translation"
 msgstr "Bản dịch"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Sửa"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
-#, fuzzy
 msgid  "Original Text"
 msgstr "Văn bản gốc"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "Chú thích"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
-#, fuzzy
 msgid  "~Comment"
 msgstr "C~hú thích"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Chọn"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "~Restore"
 msgstr "~Khôi phục"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "Chấ~p nhận"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~Tiếp"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
-#, fuzzy
 msgid  "Inplace Translation"
 msgstr "Dịch tại chỗ"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
-#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "Bản dịch sẽ bị mất. Vẫn tiếp tục không?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
-#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "Điều khiển không còn hợp lệ nên không thể lưu bản dịch."
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
-#, fuzzy
 msgid  "GPF occurred"
 msgstr "GPF xảy ra"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
-#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "Mã nhận diện trợ giúp (HelpID) không khớp với mã nhận diện duy nhất (UniqueID): "
 
@@ -3599,26 +3149,21 @@ msgid  "Tab Panel Scroll Button, forward"
 msgstr ""
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
-#, fuzzy
 msgid  "Roadmap Skeleton Demo"
 msgstr "Minh hoạ Khung sườn Cột mốc"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "Chào mừng"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
-#, fuzzy
 msgid  "Prepare"
 msgstr "Chuẩn bị"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
-#, fuzzy
 msgid  "Setup"
 msgstr "Thiết lập"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
-#, fuzzy
 msgid  "Finish"
 msgstr "Kết thúc"

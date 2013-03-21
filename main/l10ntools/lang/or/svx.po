@@ -971,12 +971,14 @@ msgid  "~Delete"
 msgstr "ବିଲୋପ କର"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ଚିତ୍ର ମ୍ଯାପ ପରିବର୍ତ୍ତିତ ହୋଇଛି\nଏହି ପରିବର୍ତ୍ତନଗୁଡିକୁ ତୁମେ ସଞ୍ଚଯ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ଚିତ୍ର ମ୍ଯାପ ପରିବର୍ତ୍ତିତ ହୋଇଛି\nଏହି ପରିବର୍ତ୍ତନଗୁଡିକୁ ତୁମେ ସଞ୍ଚଯ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1293,12 +1295,10 @@ msgid  "Line of text"
 msgstr "ଟେକ୍ସଟର ରେଖା"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "ରଙ୍ଗଗୁଡକ"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
-#, fuzzy
 msgid  "Source color"
 msgstr "ମୂଳ ରଙ୍ଗ"
 
@@ -1385,8 +1385,9 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME ଦଲିଲ ପୁନର୍ଲାଭକରିବା"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "ନିମ୍ନରେ ତାଲିକାଭୁକ୍ତ ଦଲିଲର ପୁନରୁଦ୍ଧାର ପଦ୍ଧତିକୁ ଆରମ୍ଭ କରିବା ପାଇଁ 'ପୁନରୁଦ୍ଧାର ଆରମ୍ଭ କରନ୍ତୁ' କୁ ଦବାନ୍ତୁ।\n\nଦଲିଲକୁ ପୁନରୁଦ୍ଧାର କରିହେବ କି ନାହିଁ ତାହା 'ସ୍ଥିତି' ସ୍ତମ୍ଭ ଦର୍ଶାଇଥାଏ।"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1399,8 +1400,9 @@ msgid  "Status of recovered documents:"
 msgstr "ଦଲିଲର ପୁନର୍ଲାଭହୋଇଥଇବା ସ୍ଥିତି:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
+#, fuzzy
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "ଦଲିଲ ନାମ \tସ୍ଥିତି"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1448,8 +1450,9 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "%PRODUCTNAME କଣ ପାଇଁ ନଷ୍ଟ ହେଲା ତାହାର ନଷ୍ଟ ବିବରଣୀ ଜାଣିବା ପାଇଁ ସହାୟତା କରିଥାଏ। ତ୍ରୁଟି ଖବର ଉପକରଣ ପାଇବା ପାଇଁ 'ପରବର୍ତ୍ତି' କୁ ଦବାନ୍ତୁ। ଏହାକୁ ଏଡ଼ାଇବା ପାଇଁ 'ବାତିଲ କରନ୍ତୁ' କ୍ଲିକ କରନ୍ତୁ।"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
+#, fuzzy
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "ଆପଣଙ୍କର ଦଲିଲର ପୁନରୁଦ୍ଧାର ସମାପ୍ତ ହୋଇଛି।\nଆପଣଙ୍କର ଦଲିଲକୁ ଦେଖିବା ପାଇଁ 'ସମାପ୍ତ' କୁ ଦବାନ୍ତୁ।"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1462,8 +1465,9 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "ତୁମେ ନିଶ୍ଚଯ ଏହି %PRODUCTNAME ପୁନର୍ଲାଭକୁ ରଦ୍ଦକରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
+#, fuzzy
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "ଏହି ସ୍ବଯଂଚାଳିତ ପୁନର୍ଲାଭ ପ୍ରକ୍ରିଯାରେ ବ୍ଯାଘାତ ଘଟିଛି୤\n\nତୁମେ ୟଦି 'ସଞ୍ଚଯ'କୁ ଦବାଅ ତେବେ ତଳେ ତାଲିକାଭୁକ୍ତଥିବା ଏହି ଦଲିଲଗୁଡିକ ତଳେ ଲେଖାହୋଇଥିବା ଫୋଲଡରରେ ସଞ୍ଚିତହେବ 'ରଦ୍ଦ' କୁ ଦବାଇଲେ ଏହି ଉଇଜାର୍ଡ ଦଲିଲଗୁଡିକର ସଞ୍ଚଯ ବ୍ଯତିତ ବନ୍ଦହୋଇୟିବ୤"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1491,8 +1495,9 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ତୃଟି ରିପୋର୍ଟକୁ ସ୍ବାଗତ କର"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "ଭବିଷ୍ଯତ ଭାଷାନ୍ତରଗୁଡିକର ଉନ୍ନତି ସାହାୟ୍ଯ ପାଇଁ  କିପରି %PRODUCTNAME କାର୍ୟ୍ଯ କରୁଛି ଏବଂ Oracle କୁ ଏହା ପଠାଉଛି ସେହି ବିଷଯରେ ଏହି ତୃଟି ରିପୋର୍ଟ ଟୁଲ ସୂଚନା ଏକତ୍ର କରୁଛି।\n\nପରବର୍ତ୍ତୀ ଡାଇଲଗରେ 'ପଠାଇବା'କୁ ଦବାଇବା ଦ୍ବାରା ତୁମ ଭାଗରେ କୌଣସି କାର୍ୟ୍ଯ ନକରି କେବଳ ରିପୋର୍ଟ ପଠାଇବା ସହଜସାଧ୍ଯ ଅଟେ, କିମ୍ବା  କିପରି ତୃଟି ଘଟିଲା ତୁମେ ସଂକ୍ଷିପ୍ତଭାବରେ ବର୍ଣ୍ଣନାକରିପାର ଏବଂ ପରେ 'ପଠାଇବା'କୁ ଦବାନ୍ତୁ। ଆପଣ ଯଦି ରିପୋର୍ଟ ଦେଖିବାକୁ ଇଚ୍ଛାକରୁଛ, ଏହି 'ଦେଖାଅ ରିପୋର୍ଟ' ବଟନକୁ ଦବାଅ। ତୁମେ ୟଦି 'ପଠାଅ ନାହିଁ 'କୁ ଦବାଅ ତେବେ କୌଣସି ତଥ୍ଯ ପଠାହେବ ନାହିଁ।\n\nଗ୍ରାହକ ବ୍ଯକ୍ତିଗତ \nୟେତେବେଳେ ତୃଟି ଘଟିଲା %PRODUCTNAME %PRODUCTVERSION ଅବସ୍ଥାର ତଥ୍ଯ ସମ୍ବନ୍ଧରେ ଏକତ୍ର ହୋଇଥିବା ଏହି ସୂଚନା ସମୀତ ଅଟେ। ଗୁପ୍ତଶବ୍ଦ କିମ୍ବା ଦଲିଲ ସୂଚୀପତ୍ର ବିଷୟରେ ଅନ୍ଯ ସୂଚନା ସଂଗ୍ରହ କରାହୋଇନାହିଁ।\n\n%PRODUCTNAME ର ଗୁଣର ଉନ୍ନତି ପାଇଁ କେବଳ ଏହି ସୂଚନା ଉପୟୋଗହେବ ଏବଂ ତୃତୀଯ ବ୍ଯକ୍ତି ମାନଙ୍କ ସହିତ ଭାଗ ହେବ।\nOracle ର ଅଧିକ ସୂଚନା ପାଇଁ 'ବ୍ଯକ୍ତିଗତ ଯୋଜନାକୁ ଦେଖନ୍ତୁ \nhttp://www.sun.com/privacy/"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 #, fuzzy
@@ -1535,8 +1540,9 @@ msgid  "~Options..."
 msgstr "ବିକଳ୍ପଗୁଡିକ"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
+#, fuzzy
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "ଏହି ରିପୋର୍ଟ ବିଷୟରେ ମୋ ସାଙ୍ଗରେ ସମ୍ପର୍କ କରିବାକୁ ମୁଁ Oracle କୁ ସ୍ବୀକୃତି ଦେଇଅଛି। (~I)"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 #, fuzzy
@@ -1594,8 +1600,9 @@ msgid  "~Port"
 msgstr "ପୋର୍ଟ"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "ତୃଟି ରିପୋର୍ଟକୁ ପଠାଇବା ପାଇଁ  %PRODUCTNAME ତୃଟି ରିପୋର୍ଟ ଟୁଲ ଇଣ୍ଟରନେଟ ସହିତ ସଂୟୁକ୍ତହେବା ଆବଶ୍ଯକ୤\nନେଟଉଆର୍କକୁ ସୁରକ୍ଷାକରିବା ପାଇଁ ଗୋଟିଏ ଫାଇଆରଉଆଲ ସହିତ ସଂୟୋଗରେ କମ୍ପାନୀ ବେଳେବେଳେ ପ୍ରୋକ୍ସି ସରବରଗୁଡିକୁ ଉପୟୋଗକରେ୤\nତୁମ ପରିସ୍ଥିତିରେ ୟଦି ଏହା ପ୍ରଯୋଗହୁଏ, ତୁମକୁ ଠିକଣା ଏବଂ ସରବର ପାଇଁ  ପୋର୍ଟ ନିର୍ଦ୍ଦିଷ୍ଟ କରିବାକୁ ହେବ୤"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -4006,8 +4013,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr " ରୂପରେଖ ପରିବର୍ତ୍ତନ ହୋଇଛି୤\nତୁମେ  ପରିବର୍ତ୍ତନଗୁଡିକୁ ସଞ୍ଚଯକରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -4015,8 +4023,9 @@ msgid  "Do you want to create a new contour?"
 msgstr "ଗୋଟିଏ ନୂଆ ରୂପରେଖକୁ ତୁମେ ସୃଷ୍ଟିକରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
+#, fuzzy
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "ଗୋଟିଏ ନୂଆ କାର୍ୟ୍ଯସ୍ଥାନ ସେଟିଙ୍ଗକରିବା ପାଇଁ\nଏହି ରୂପରେଖର କାରଣ ବିଲୋପହେଲା\nତୁମେ ନିଶ୍ଚଯ ଚାଲୁରଖିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4588,522 +4597,418 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
-#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "3D ଘୂର୍ଣ୍ଣନ ବସ୍ତୁ ସୃଷ୍ଟି କର"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "ବସ୍ତୁଗୁଡିକ  ଭର୍ତ୍ତି କର"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
-#, fuzzy
 msgid  "Number of segments"
 msgstr "ଭାଗଗୁଡିକର ସଂଖ୍ଯା"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
-#, fuzzy
 msgid  "Object depth"
 msgstr "ବସ୍ତୁ ଗଭୀରତା"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
-#, fuzzy
 msgid  "Focal length"
 msgstr "ବିକରଣ ଲମ୍ବ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
-#, fuzzy
 msgid  "Camera position"
 msgstr "କ୍ଯାମେରା ସ୍ଥାନ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
-#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "3D ବସ୍ତୁ ଘୂରାଅ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
-#, fuzzy
 msgid  "Create extrusion object"
 msgstr "ନିଷ୍କାସନ ବସ୍ତୁ ସୃଷ୍ଟି କର"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
-#, fuzzy
 msgid  "Create rotation object"
 msgstr "ଘୂର୍ଣ୍ଣନ ବସ୍ତୁ ସୃଷ୍ଟି କର"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
-#, fuzzy
 msgid  "Split 3D object"
 msgstr "3D ବସ୍ତୁ ଅଲଗା କର"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
-#, fuzzy
 msgid  "3D Attributes"
 msgstr "3D ଗୁଣଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "3D ପ୍ରଭାବଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Geometry"
 msgstr "ଜ୍ଯାମିତି"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Shading"
 msgstr "ଛାଯାକରିବା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Illumination"
 msgstr "ଉଭ୍ଭାସନ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Textures"
 msgstr "ବିରଚନଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Material"
 msgstr "ପଦାର୍ଥ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Update"
 msgstr "ଅପଡେଟ କର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Assign"
 msgstr "ନିର୍ଦ୍ଦିଷ୍ଟ କର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to 3D"
 msgstr "3Dକୁ ରୂପାନ୍ତର କର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "ଲାଥେ ବସ୍ତୁକୁ ରୂପାନ୍ତର କର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "ଦୃଷ୍ଟିକୋଣ ଆରମ୍ଭ/ବନ୍ଦ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
-#, fuzzy
 msgid  "Geometry"
 msgstr "ଜ୍ଯାମିତି"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
-#, fuzzy
 msgid  "R~ounded edges"
 msgstr "ଗୋଲାକାରହୋଇଥିବା ଧାରଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
-#, fuzzy
 msgid  "~Scaled depth"
 msgstr "ମପାହୋଇଥିବା ଗଭୀର "
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "~Rotation angle"
 msgstr "ଧୂର୍ଣ୍ଣନ କୋଣ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr "ଡିଗ୍ରୀଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Depth"
 msgstr "ଗଭୀର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
-#, fuzzy
 msgid  "Segments"
 msgstr "ଭାଗଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "ଦିଗବଳୀଯ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "ଲମ୍ବରୂପ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
-#, fuzzy
 msgid  "Normals"
 msgstr "ସ୍ବଭାବିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "ବସ୍ତୁ-ବିଶେଷ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Flat"
 msgstr "ସମତଳ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Spherical"
 msgstr "ଗୋଲାକାର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Invert Normals"
 msgstr "ସାମାନ୍ଯ ଓଲଟାଇବା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "ଦ୍ବିଗୁଣିତ-ପାଖ ଉଭ୍ଭାସନ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided"
 msgstr "ଦ୍ବିଗୁଣିତ-ପାଖ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "ମୋଡ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
-#, fuzzy
 msgid  "Flat"
 msgstr "ସମତଳ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
-#, fuzzy
 msgid  "Phong"
 msgstr "ଫୋଙ୍ଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
-#, fuzzy
 msgid  "Gouraud"
 msgstr "ଗଉରୋଡ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "ଛାଯା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "3D ଛାଯାକରିବା ଆରମ୍ଭ/ଶେଷ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
-#, fuzzy
 msgid  "S~urface angle"
 msgstr "ପୃଷ୍ଠଭାଗ କୋଣ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr "ଡିଗ୍ରୀଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
-#, fuzzy
 msgid  "Camera"
 msgstr "କ୍ଯାମେରା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "ଦୂରତ୍ବ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
-#, fuzzy
 msgid  "~Focal length"
 msgstr " ବିକରଣ ଲମ୍ବ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Shading"
 msgstr "ଛାଯାକରିବା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "ହାଲୁକା ମୂଳ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 1"
 msgstr "ହାଲୁକା ମୂଳ ୧"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 2"
 msgstr "ହାଲୁକା ମୂଳ ୨"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 3"
 msgstr "ହାଲୁକା ମୂଳ ୩"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 4"
 msgstr "ହାଲୁକା ମୂଳ ୪"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 5"
 msgstr "ହାଲୁକା ମୂଳ ୫"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 6"
 msgstr "ହାଲୁକା ମୂଳ ୬"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 7"
 msgstr "ହାଲୁକା ମୂଳ ୭"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 8"
 msgstr "ହାଲୁକା ମୂଳ ୮"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "ରଙ୍ଗଗୁଡିକ ଡାଇଲଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "ବ୍ଯାପକ  ଆଲୁଅ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "ରଙ୍ଗଗୁଡିକ ଡାଇଲଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "ଉଭ୍ଭାସନ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "ପ୍ରକାର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Black & White"
 msgstr "କଳା ଏବଂ ଧଳା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Color"
 msgstr "ରଙ୍ଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "ମୋଡ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Only Texture"
 msgstr "କେବଳ ବିରଚନ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture and Shading"
 msgstr "ବିରଚନକରିବା ଏବଂ ଛାଯାକରିବା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "ବିରଚନ,ଛାଯା ଏବଂ ରଙ୍ଗ "
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
-#, fuzzy
 msgid  "~Projection X"
 msgstr "ଅଭିକ୍ଷେପଣ X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "ବସ୍ତୁ-ବିଶେଷ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "ସମାନ୍ତର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "ଗୋଲାକାର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
-#, fuzzy
 msgid  "P~rojection Y"
 msgstr "ଅଭିକ୍ଷେପଣ Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "ବସ୍ତୁ-ବିଶେଷ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "ସମାନ୍ତର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "ଗୋଲାକାର"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
-#, fuzzy
 msgid  "~Filtering"
 msgstr "ଫିଲଟରକରିବା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "ଫିଲଟରକରିବା ଆରମ୍ଭ/ବନ୍ଦ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
-#, fuzzy
 msgid  "Textures"
 msgstr "ବିରଚନଗୁଡିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
-#, fuzzy
 msgid  "~Favorites"
 msgstr "ପ୍ରିଯସବୁ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
-#, fuzzy
 msgid  "User-defined"
 msgstr "ବ୍ଯାଖ୍ଯାହୋଇଥିବା ଉପୟୋଗକର୍ତ୍ତା  "
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
-#, fuzzy
 msgid  "Metal"
 msgstr "ଧାତୁ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
-#, fuzzy
 msgid  "Gold"
 msgstr "ସୁନା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
-#, fuzzy
 msgid  "Chrome"
 msgstr "କ୍ରୋମ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
-#, fuzzy
 msgid  "Plastic"
 msgstr "ପ୍ଲାସ୍ଟିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
-#, fuzzy
 msgid  "Wood"
 msgstr "କାଠ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Object color"
 msgstr "ବସ୍ତୁ ରଙ୍ଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "ରଙ୍ଗଗୁଡିକ ଡାଇଲଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
-#, fuzzy
 msgid  "~Illumination color"
 msgstr "ଉଭ୍ଭାସନ ରଙ୍ଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "ରଙ୍ଗଗୁଡିକ ଡାଇଲଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
-#, fuzzy
 msgid  "Specular"
 msgstr "ଅନୁମାନିକ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "ରଙ୍ଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "ରଙ୍ଗଗୁଡିକ ଡାଇଲଗ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
-#, fuzzy
 msgid  "I~ntensity"
 msgstr "ତିବ୍ରତା"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
-#, fuzzy
 msgid  "Material"
 msgstr "ପଦାର୍ଥ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
-#, fuzzy
 msgid  "Favorite"
 msgstr "ପ୍ରିଯ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
-#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
-#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
-#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
-#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -5112,112 +5017,90 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
-#, fuzzy
 msgid  "Delete Rows"
 msgstr "ପଂକ୍ତିଗୁଡିକୁ ବିଲୋପ କର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
-#, fuzzy
 msgid  "Save Record"
 msgstr "ଅଭିଲେଖ  ସଞ୍ଚଯ କର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "ଆନାବୃତ୍ତି:ତଥ୍ଯ ପ୍ରବେଶ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Column"
 msgstr "ସ୍ତମ୍ଭ ଭର୍ତ୍ତି କର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "ଟେକ୍ସଟ  ବାକ୍ସ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "ୟାଞ୍ଚ ବାକ୍ସ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "କମ୍ବୋ ବାକ୍ସ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "ତାଲିକା ବାକ୍ସ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "ତାରିଖ କ୍ଷେତ୍ର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "ସମଯ କ୍ଷେତ୍ର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "ସଂଖ୍ଯାତ୍ମକ କ୍ଷେତ୍ର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "ମୁଦ୍ରା କ୍ଷେତ୍ର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "ନମୁନା କ୍ଷେତ୍ର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "ଫରମାଟହୋଇଥିବା କ୍ଷେତ୍ର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Date and Time Field"
 msgstr "ତାରିଖ ଏବଂ ସମଯ କ୍ଷେତ୍ର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Replace with"
 msgstr "ସହିତ ବଦଳାଅ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "ସ୍ତମ୍ଭକୁ ବିଲୋପ କର"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Column"
 msgstr "ସ୍ତମ୍ଭଗୁଡିକ ଲୁଚାନ୍ତୁ (~H)"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
-#, fuzzy
 msgid  "~More..."
 msgstr "ଅଧିକ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~All"
 msgstr "ସମସ୍ତ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Columns"
 msgstr "ସ୍ତମ୍ଭଗୁଡିକ ଦେଖାଅ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Column..."
 msgstr "ସ୍ତମ୍ଭ..."
 
@@ -5232,8 +5115,9 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "'#' କ୍ଷେତ୍ରରେ ଇନପୁଟ ଦରକାରଅଛି୤ ଦଯାକରି ଗୋଟିଏ ମୂଲ୍ଯ ପ୍ରବେଶ କର୤"
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
+#, fuzzy
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "ପ୍ରବେଶ ପୂର୍ବରୁ ଅଛି୤\nଦଯାକରି ଅନ୍ଯ ନାମ ବାଛ୤"
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 #, fuzzy
@@ -5331,8 +5215,9 @@ msgid  "# records will be deleted."
 msgstr "# ଅଭିଲେଖଗୁଡିକ ବିଲୋପ ହେବ୤"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
+#, fuzzy
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "ଆପଣ ଯଦି ହଁ କୁ କ୍ଲିକକରିବେ, ତେବେ ଏହି କାର୍ୟ୍ଯକୁ ପୁଣି କରିପାରିବେ ନାହିଁ!\nଆପଣ ଯେ କୌଣସି ପ୍ରକାରରେ ଚାଲୁ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 #, fuzzy
@@ -6004,87 +5889,70 @@ msgid  "I~s not Null"
 msgstr "ନିଷ୍ଫଳ ନୁହେଁ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "ଆଇଟମ ମିଶାଅ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "ଉପାଦାନ ମିଶାଅ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "ଗୁଣ ମିଶାଅ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "ସଂପାଦନ କର"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "ବିଲୋପ କରନ୍ତୁ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
-#, fuzzy
 msgid  "~Models"
 msgstr "ମଡେଲଗୁଡିକ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "ମିଶାଅ..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "ସମ୍ପାଦନ କର..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "ହଟାଅ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "ଉଦାହରଣ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
-#, fuzzy
 msgid  "Submissions"
 msgstr "ଅଧୀନତାଗୁଡିକ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
-#, fuzzy
 msgid  "Bindings"
 msgstr "ବନ୍ଧେଇଗୁଡିକ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
-#, fuzzy
 msgid  "~Instances"
 msgstr "ଉଦାହରଣଗୁଡିକ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "ମିଶାଅ..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "ସମ୍ପାଦନ କର..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "ହଟାଅ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Details"
 msgstr "ପୁଙ୍ଖାନୁପୁଙ୍ଖ ଦେଖାଅ"
 
@@ -6101,7 +5969,6 @@ msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "ଏହି ଗୁଣକୁ ତୁମେ ନିଶ୍ଚଯ ବିଲୋପ କରିବା ଚାହୁଁଛ କି '$ATTRIBUTENAME'?"
 
@@ -6118,162 +5985,130 @@ msgid  "This instance is linked with the form.\\n\\nThe changes you make to this
 msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
 msgstr "XMLରେ '%1' ଏହି ନାମ ନ୍ଯାୟ୍ଯ ନୁହେଁ୤ଦଯାକରି ଗୋଟିଏ ଭିନ୍ନ ନାମ ପ୍ରବେଶ କର୤"
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLPREFIX.ErrorBox.Message
-#, fuzzy
 msgid  "The prefix '%1' is not valid in XML. Please enter a different prefix."
 msgstr "XMLରେ '%1' ଏହି ଉପସର୍ଗ ନ୍ଯାୟ୍ଯ ନୁହେଁ୤ଦଯାକରି ଗୋଟିଏ ଉପସର୍ଗ ନାମ ପ୍ରବେଶ କର୤"
 
 #: source/form/datanavi.src#RID_ERR_DOUBLE_MODELNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' already exists. Please enter a new name."
 msgstr "XMLରେ '%1' ଏହି ନାମ ପୂର୍ବରୁ ରହିଅଛି୤ଦଯାକରି ଗୋଟିଏ ନୂଆ ନାମ ପ୍ରବେଶ କର୤"
 
 #: source/form/datanavi.src#RID_ERR_EMPTY_SUBMISSIONNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The submission must have a name."
 msgstr "ଏହି ଅଧୀନତାର ଗୋଟିଏ ନାମହେବା ଦରକାର୤"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
-#, fuzzy
 msgid  "Item"
 msgstr "ଆଇଟମ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "ନାମ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default Value"
 msgstr "ଡିଫଲଟ ମୂଲ୍ଯ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_SETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "ସେଟିଙ୍ଗଗୁଡିକ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
-#, fuzzy
 msgid  "~Data Type"
 msgstr "ତଥ୍ଯ ପ୍ରକାର"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "~Required"
 msgstr "ଆବଶ୍ଯକ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "ସର୍ତ୍ତ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_RELEVANT.CheckBox.Text
-#, fuzzy
 msgid  "R~elevant"
 msgstr "ଆବଶ୍ଯକୀଯ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "ସର୍ତ୍ତ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
-#, fuzzy
 msgid  "~Constraint"
 msgstr "ସଙ୍କୋଚ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "ସର୍ତ୍ତ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "Read-~only"
 msgstr "କେବଳ-ପଢିବା"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "ସର୍ତ୍ତ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
-#, fuzzy
 msgid  "Calc~ulate"
 msgstr "ଗଣନା କରନ୍ତୁ (~u)"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "ସର୍ତ୍ତ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
-#, fuzzy
 msgid  "Element"
 msgstr "ଉପାଦାନ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Attribute"
 msgstr "ଗୁଣ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_BINDING.String.Text
-#, fuzzy
 msgid  "Binding"
 msgstr "ବନ୍ଧନକରିବା "
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDTEXT_BINDING.String.Text
-#, fuzzy
 msgid  "Binding expression"
 msgstr "ବନ୍ଧେଇ ପ୍ରକାଶ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "ଆଇଟମ ମିଶାଅ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "ଉପାଦାନ ମିଶାଅ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "ଗୁଣ ମିଶାଅ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "ସଂପାଦନ କର"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "ବିଲୋପ କରନ୍ତୁ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
-#, fuzzy
 msgid  "Add Condition"
 msgstr "ସର୍ତ୍ତ ମିଶାଅ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
-#, fuzzy
 msgid  "~Condition"
 msgstr "ସର୍ତ୍ତ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
-#, fuzzy
 msgid  "~Result"
 msgstr "ଫଳାଫଳ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.PB_EDIT_NAMESPACES.PushButton.Text
-#, fuzzy
 msgid  "~Edit Namespaces..."
 msgstr "ନାମସ୍ଥାନଗୁଡିକ ସମ୍ପାଦନ କର..."
 
@@ -6283,17 +6118,14 @@ msgid  "Namespaces for Forms"
 msgstr "ଫର୍ମଗୁଡିକ ପାଇଁ ନାମସ୍ଥାନଗୁଡିକ"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.FT_NAMESPACES.FixedText.Text
-#, fuzzy
 msgid  "~Namespaces"
 msgstr "ନାମସ୍ଥାନଗୁଡିକ"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "ମିଶାଅ..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "ସମ୍ପାଦନ କର..."
 
@@ -6563,268 +6395,218 @@ msgid  "~Edit"
 msgstr "ସମ୍ପାଦନ କର"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
-#, fuzzy
 msgid  "Gallery"
 msgstr "ମଞ୍ଚ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
-#, fuzzy
 msgid  "Update"
 msgstr "ଅପଡେଟ କର"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
-#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "ଏହି ଫାଇଲ ଖୋଲା ହୋଇପାରିବ ନାହିଁ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
-#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "ଅମାନ୍ଯ ବିଷଯ ନାମ!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "ତୁମେ ନିଶ୍ଚଯ\nଏହି ବସ୍ତୁକୁ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "ତୁମେ ନିଶ୍ଚଯ\nଏହି ବିଷଯକୁ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
-#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "ତରଙ୍ଗ-ଶବ୍ଦ ଫାଇଲ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
-#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "ଅଡିଓ ଅଦଳବଦଳ ଫାଇଲ ଫର୍ମାଟ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
-#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU -ଧ୍ବନି ଫାଇଲ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
-#, fuzzy
 msgid  "Graphics filter"
 msgstr "ଲେଖାଚିତ୍ର ଫିଲଟର"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
-#, fuzzy
 msgid  "Length:"
 msgstr "ଲମ୍ବ:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "ଆକାର:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
-#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "ତୁମେ ଲିଙ୍କ ହୋଇଥିବା ଫାଇଲକୁ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "ଏହି ଫାଇଲ ଖୋଲା ହୋଇପାରିବ ନାହିଁ୤\nତୁମେ ଗୋଟିଏ ଭିନ୍ନ ତଦନ୍ତ ପଥକୁ ପ୍ରବେଶ କରିବାକୁ ଚାହୁଁଛ କି? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
-#, fuzzy
 msgid  "New Theme"
 msgstr "ନୂଆ ବିଷଯ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "ସଂଗଠକ..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "ଏହି ବିଷଯର ନାମ ପୂର୍ବରୁ ଅଛି୤\nଦଯାକରି ଅନ୍ଯ ଗୋଟିଏ ବାଛ୤"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
-#, fuzzy
 msgid  "I~mport..."
 msgstr "ଆମଦାନୀ କର..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
-#, fuzzy
 msgid  "New Theme..."
 msgstr "ନୂଆ ବିଷଯ..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
-#, fuzzy
 msgid  "Assign ID"
 msgstr "ID ନିର୍ଦ୍ଦିଷ୍ଟ କର"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "ଶୀର୍ଷକ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
-#, fuzzy
 msgid  "Path"
 msgstr "ପଥ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
-#, fuzzy
 msgid  "Icon View"
 msgstr "ଆଇକନ ଦୃଶ୍ଯ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
-#, fuzzy
 msgid  "Detailed View"
 msgstr "ପୁଙ୍ଖାନୁପୁଙ୍ଖ ଦୃଶ୍ଯ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "ଅପଡେଟ କର"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ବିଲୋପ କର"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "ପୁନଃନାମ ଦିଅ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
-#, fuzzy
 msgid  "Assign ~ID"
 msgstr "ID ନିର୍ଦ୍ଦିଷ୍ଟ କର"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "ବିଶେଷତାଗୁଡିକ..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "ଭର୍ତ୍ତି କର"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "ନକଲ କର"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Link"
 msgstr "ଲିଙ୍କ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Bac~kground"
 msgstr "ପୃଷ୍ଠଭାଗ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "ପୂର୍ବଦୃଶ୍ଯ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "ଶୀର୍ଷକ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ବିଲୋପ କର"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "ନକଲ କର"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "ଭର୍ତ୍ତି କର"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "3D ପ୍ରଭାବଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
-#, fuzzy
 msgid  "Animations"
 msgstr "ଜୀବନ୍ତଚିତ୍ରଗୁଡିକ "
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
-#, fuzzy
 msgid  "Bullets"
 msgstr "ଗୁଳିଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
-#, fuzzy
 msgid  "Office"
 msgstr "କାର୍ଯ୍ୟାଳୟ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
-#, fuzzy
 msgid  "Flags"
 msgstr "ପତାକାଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLOWCHARTS.String.Text
-#, fuzzy
 msgid  "Flow Charts"
 msgstr "ଫ୍ଲୋ ଚାର୍ଟଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
-#, fuzzy
 msgid  "Emoticons"
 msgstr "ଇମୋଟିକନଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
-#, fuzzy
 msgid  "Pictures"
 msgstr "ଚିତ୍ରଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
-#, fuzzy
 msgid  "Backgrounds"
 msgstr "ପୃଷ୍ଠଭାଗଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
-#, fuzzy
 msgid  "Homepage"
 msgstr "ମୂଖ୍ଯପୃଷ୍ଠା"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
-#, fuzzy
 msgid  "Interaction"
 msgstr "ପାରସ୍ପରିକ କ୍ରିଯା"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
-#, fuzzy
 msgid  "Maps"
 msgstr "ମାନଚିତ୍ରଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
-#, fuzzy
 msgid  "People"
 msgstr "ଲୋକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
-#, fuzzy
 msgid  "Surfaces"
 msgstr "ପୃଷ୍ଠଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
-#, fuzzy
 msgid  "Rulers"
 msgstr "ଶାସକଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
-#, fuzzy
 msgid  "Computers"
 msgstr "କମ୍ପୁଟରଗୁଡିକ"
 
@@ -6849,62 +6631,50 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
-#, fuzzy
 msgid  "Sounds"
 msgstr "ଧ୍ବନି "
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
-#, fuzzy
 msgid  "Symbols"
 msgstr "ସଙ୍କେତଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
-#, fuzzy
 msgid  "My Theme"
 msgstr "ମୋର ବିଷଯ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
-#, fuzzy
 msgid  "Arrows"
 msgstr "ଶରଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
-#, fuzzy
 msgid  "Balloons"
 msgstr "ବାଲୁନଗୁଡିକ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
-#, fuzzy
 msgid  "Keyboard"
 msgstr "କିବୋର୍ଡ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "ସମଯ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "ଉପସ୍ଥାପନା"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ପଞ୍ଜିକା"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "ନାଭିଗେସନ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
-#, fuzzy
 msgid  "Communication"
 msgstr "ୟୋଗାୟୋଗ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
-#, fuzzy
 msgid  "Finances"
 msgstr "ଅର୍ଥ"
 
@@ -6913,52 +6683,42 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
-#, fuzzy
 msgid  "Climate"
 msgstr "ପାଣିପାଗ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
-#, fuzzy
 msgid  "School & University"
 msgstr "ବିଦ୍ଯାଳଯ ଏବଂ ବିଶ୍ବବିଦ୍ଯାଳଯ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
-#, fuzzy
 msgid  "Problem Solving"
 msgstr "ସମସ୍ଯା ସମାଧାନକରିବା"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SCREENBEANS.String.Text
-#, fuzzy
 msgid  "Screen Beans"
 msgstr "ପର୍ଦ୍ଦା ବିନଗୁଡିକ"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR)ଏହି ଶବ୍ଦକୋଷ କାର୍ୟ୍ଯକାରୀକରିବା।"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR)ଏହି ବର୍ଣ୍ଣଶୁଦ୍ଦୀକରଣ କାର୍ୟ୍ଯକାରୀକରିବା"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR)ଏହି ହାଇପେନେସନ କାର୍ୟ୍ଯକାରୀକରିବା"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR)ଗୋଟିଏ ଅଭିଧାନ କାର୍ୟ୍ଯକାରୀକରିବା"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR)ପଛଭାଗ ଗୁଣ ସେଟିଙ୍ଗକରିବା "
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) ଏହି ଲେଖାଚିତ୍ରଗୁଡିକ ଲୋଡ କରିବା୤"
 
@@ -6971,87 +6731,70 @@ msgid  "$(ARG1) is not supported by the spellcheck function or is not presently 
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "ବର୍ଣ୍ଣଶୁଦ୍ଦୀକରଣ ଉପଲବ୍ଧ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "ହାଇପେନେସନ ଉପଲବ୍ଧ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "ଅଭ୍ଯାସ ଅଭିଧାନ $(ARG1) ପଢି ପାରିବ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "ଅଭ୍ଯାସ ଅଭିଧାନ $(ARG1) ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr " ଲେଖାଚିତ୍ର $(ARG1) ମିଳିପାରିବ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "ଗୋଟିଏ ସଂଯୋଗହୀନ ଆଲେଖୀକୁ ଧାରଣ କରାଯାଇ ପାରିନଥିଲା।"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "ମନୋନୀତ କାଳ ପାଇଁ ଗୋଟିଏ ଭାଷା ସ୍ଥିର ହୋଇ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "ଫର୍ମ ସ୍ତରକୁ ଆବଶ୍ୟକୀୟ IO ସର୍ଭିସ ପରି ଧାରଣ କରାଯାଇନଥିଲା (stardiv.uno.io.*) ଯାହାଫଳରେ ତାହାର ଦୃଷ୍ଟାନ୍ତ ଦେଇହେବ ନାହିଁ।"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "ଫର୍ମ ସ୍ତରକୁ ଆବଶ୍ୟକୀୟ IO ସର୍ଭିସ ପରି ଲେଖାଯାଇନଥିଲା (stardiv.uno.io.*) ଯାହାଫଳରେ ତାହାର ଦୃଷ୍ଟାନ୍ତ ଦେଇହେବ ନାହିଁ।"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "ଫର୍ମ ନିୟନ୍ତ୍ରଣ ପଢ଼ିବା ସମୟରେ ଗୋଟିଏ ତ୍ରୁଟି ଘଟିଲା। ଫର୍ମ ସ୍ତରକୁ ଧାରଣ କରାଯାଇନାହିଁ।"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "ଫର୍ମ ନିୟନ୍ତ୍ରଣ ଲେଖିବା ସମୟରେ ଗୋଟିଏ ତ୍ରୁଟି ଘଟିଲା। ଫର୍ମ ସ୍ତରକୁ ସଂରକ୍ଷିତ କରାଯାଇନାହିଁ।"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
-#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "ଗୁଳିମାନଙ୍କ ମଧ୍ଯରୁ ଗୋଟିଏ ପଢିବା ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା୤ ଗୁଳିମାନଙ୍କ ମଧ୍ଯରୁ କୌଣସି ଗୁଳି ଲୋଡ ହୋଇପାରିଲା ନାହିଁ ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "ଏହି ମୂଳ କୋଡର ସବୁ ପରିବର୍ତ୍ତନଗୁଡିକ ନଷ୍ଟହୋଇଛି୤ ମଧ୍ଯରୁ ଏହି ସହଜାତ VBA ମାକ୍ରୋ ସଞ୍ଚିତ ହୋଇଛି ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "ଦଲିଲରେ ଥିବା  ମୂଳ VBA ମୌଳିକ କୋଡ ସଞ୍ଚିତହୋଇପାରିବ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "ଏହି ଗୁପ୍ତଶବ୍ଦ ଭୂଲ ଅଛି୤ ଏହି ଦଲିଲ ଖୋଲା ହୋଇ ପାରିବ ନାହିଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "ଏହି ଦଲିଲରେ ଉପୟୋଗ ହୋଇଥିବା  ଏନକ୍ରିପସନ ପଦ୍ଧତି ସମର୍ଥିତନୁହେଁ୤କେବଳ ମାଇକ୍ରୋସଫଟ ଅଫିସ ୯୭/୨୦୦୦ ବିଭକ୍ତହୋଇଥିବା ଗୁପ୍ତଶବ୍ଦ ଏନକ୍ରିପସନ ସମର୍ଥିତ ନୁହେଁ୤"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr " ଲୋଡକରିବା ଗୁପ୍ତଶବ୍ଦ-ଏନକ୍ରିପଟହୋଇଥିବା ମାଇକ୍ରୋସଇଟ ପାଉଆରପଏଣ୍ଟ ଉପସ୍ଥାପନଗୁଡିକ ସମର୍ଥିତ ନୁହେଁ୤"
 
@@ -7060,622 +6803,498 @@ msgid  "Password protection is not supported when documents are saved in a Micro
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
-#, fuzzy
 msgid  "Scale"
 msgstr "ସ୍କେଲ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
-#, fuzzy
 msgid  "Brush"
 msgstr "ବ୍ରସ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_TABSTOP.ItemList.item
-#, fuzzy
 msgid  "Tab stops"
 msgstr "ଟ୍ଯାବ ବନ୍ଦ  କର"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character"
 msgstr "ଅକ୍ଷର"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONT.ItemList.item
-#, fuzzy
 msgid  "Font"
 msgstr "ଫଣ୍ଟ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Font posture"
 msgstr "ଫଣ୍ଟ ପରିସ୍ଥିତି"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Font weight"
 msgstr "ଫଣ୍ଟ ଉଚ୍ଚତା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SHADOWED.ItemList.item
-#, fuzzy
 msgid  "Shadowed"
 msgstr "ଛାଯାହୋଇଥିବା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WORDLINEMODE.ItemList.item
-#, fuzzy
 msgid  "Individual words"
 msgstr "ବ୍ଯକ୍ତି ଶବ୍ଦଗୁଡିକ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CONTOUR.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "ବାହ୍ଯରେଖା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_STRIKEOUT.ItemList.item
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "ସ୍ଟ୍ରାଇକ୍ଥ୍ରୁ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_UNDERLINE.ItemList.item
-#, fuzzy
 msgid  "Underline"
 msgstr "ରେଖାଙ୍କିତ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Font size"
 msgstr "ଫଣ୍ଟ ଆକାର"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_PROPSIZE.ItemList.item
-#, fuzzy
 msgid  "Rel. Font size"
 msgstr "ରିଲ.ଫଣ୍ଟ ଆକାର"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
-#, fuzzy
 msgid  "Font color"
 msgstr "ଫଣ୍ଟ ରଙ୍ଗ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
-#, fuzzy
 msgid  "Kerning"
 msgstr "କାର୍ନିଙ୍ଗ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CASEMAP.ItemList.item
-#, fuzzy
 msgid  "Effects"
 msgstr "ପ୍ରଭାବଗୁଡ଼ିକ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language"
 msgstr "ଭାଷା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ESCAPEMENT.ItemList.item
-#, fuzzy
 msgid  "Position"
 msgstr "ସ୍ଥାନ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "ବ୍ଲିକିଙ୍ଗ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CHARSETCOLOR.ItemList.item
-#, fuzzy
 msgid  "Character set color"
 msgstr "ଅକ୍ଷର ସମୁହର ରଙ୍ଗ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_OVERLINE.ItemList.item
-#, fuzzy
 msgid  "Overline"
 msgstr "ଉପର ରେଖା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA.ItemList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "ପରିଚ୍ଛେଦ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ADJUST.ItemList.item
-#, fuzzy
 msgid  "Alignment"
 msgstr "ପଂକ୍ତିକରଣ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LINESPACE.ItemList.item
-#, fuzzy
 msgid  "Line spacing"
 msgstr "ରେଖା ଅନ୍ତରଦେବା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_PAGEBREAK.ItemList.item
-#, fuzzy
 msgid  "Page Break"
 msgstr "ପୃଷ୍ଠା ଭାଙ୍ଗ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HYPHENZONE.ItemList.item
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ହାଇପେନେସନ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SPLIT.ItemList.item
-#, fuzzy
 msgid  "Do not split paragraph"
 msgstr "ପରିଚ୍ଛେଦକୁ ଅଲଗାକରନାହିଁ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ORPHANS.ItemList.item
-#, fuzzy
 msgid  "Orphans"
 msgstr "ଉଇଣ୍ଡୋଜ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_WIDOWS.ItemList.item
-#, fuzzy
 msgid  "Widows"
 msgstr "ଅର୍ଫାନସ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ULSPACE.ItemList.item
-#, fuzzy
 msgid  "Spacing"
 msgstr "ଅନ୍ତରଦେବା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LRSPACE.ItemList.item
-#, fuzzy
 msgid  "Indent"
 msgstr "ଇନଡେଣ୍ଟ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_LRSPACE.ItemList.item
-#, fuzzy
 msgid  "Indent"
 msgstr "ଇନଡେଣ୍ଟ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ULSPACE.ItemList.item
-#, fuzzy
 msgid  "Spacing"
 msgstr "ଅନ୍ତରଦେବା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PAGE.ItemList.item
-#, fuzzy
 msgid  "Page"
 msgstr "ପୃଷ୍ଠା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
-#, fuzzy
 msgid  "Page Style"
 msgstr "ପୃଷ୍ଠା ଶୈଳୀ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
-#, fuzzy
 msgid  "Keep with next paragraph"
 msgstr "ପରବର୍ତ୍ତୀ ପରିଚ୍ଛେଦ ସହିତ ରଖନ୍ତୁ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_FLASH.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "ବ୍ଲିକିଙ୍ଗ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_REGISTER.ItemList.item
-#, fuzzy
 msgid  "Register-true"
 msgstr "ରେଜିଷ୍ଟରକରିବା-ସତ୍ଯ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character background"
 msgstr "ଅକ୍ଷର ପୃଷ୍ଠଭାଗ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
-#, fuzzy
 msgid  "Asian font"
 msgstr "ଏସିଆନ ଫଣ୍ଟ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Size of Asian font"
 msgstr "ଏସିଆନ ଫଣ୍ଟର ଆକାର"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language of Asian font"
 msgstr "ଏସିଆନ ଫଣ୍ଟର ଭାଷା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Posture of Asian font"
 msgstr "ଏସିଆନ ଫଣ୍ଟର ପରିସ୍ଥିତି"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Weight of Asian font"
 msgstr "ଏସିଆନ ଫଣ୍ଟର ଉଚ୍ଚତା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONT.ItemList.item
-#, fuzzy
 msgid  "CTL"
 msgstr "CTL"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Size of complex scripts"
 msgstr "ଜଟିଳ ଲିପିଗୁଡିକର ଆକାର"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language of complex scripts"
 msgstr "ଜଟିଳ ଲିପିଗୁଡିକର ଭାଷା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Posture of complex scripts"
 msgstr "ଜଟିଳ ଲିପିଗୁଡିକର ପରିସ୍ଥିତି"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Weight of complex scripts"
 msgstr "ଜଟିଳ ଲିପିଗୁଡିକର ଉଚ୍ଚତା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_TWO_LINES.ItemList.item
-#, fuzzy
 msgid  "Double-lined"
 msgstr "ଦ୍ବିଗୁଣିତ-ରେଖାହୋଇଥିବା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_EMPHASISMARK.ItemList.item
-#, fuzzy
 msgid  "Emphasis mark"
 msgstr "ଗୁରୁତ୍ବପୂର୍ଣ୍ଣ ଚିହ୍ନ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SCRIPTSPACE.ItemList.item
-#, fuzzy
 msgid  "Text spacing"
 msgstr "ଟେକ୍ସଟ ଅନ୍ତରଦେବା"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HANGPUNCTUATION.ItemList.item
-#, fuzzy
 msgid  "Hanging punctuation"
 msgstr "ଝୁଲୁଥିବା ବିରାମଚିହ୍ନ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_FORBIDDEN_RULES.ItemList.item
-#, fuzzy
 msgid  "Forbidden characters"
 msgstr "ନିଶିଦ୍ଧ ଅକ୍ଷରଗୁଡିକ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ROTATED.ItemList.item
-#, fuzzy
 msgid  "Rotation"
 msgstr "ଘୂର୍ଣ୍ଣନ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SCALEWIDTH.ItemList.item
-#, fuzzy
 msgid  "Scale"
 msgstr "ସ୍କେଲ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_RELIEF.ItemList.item
-#, fuzzy
 msgid  "Relief"
 msgstr "ସାହାୟ୍ଯ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_PARA_VERTALIGN.ItemList.item
-#, fuzzy
 msgid  "Vertical text alignment"
 msgstr "ଲମ୍ବରୂପ ଟେକ୍ସଟ ପଂକ୍ତିକରଣ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_EXTRAS_CHARCOLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "ଅକ୍ଷରରୂପ ରଙ୍ଗ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
-#, fuzzy
 msgid  "Search"
 msgstr "ସନ୍ଧାନ କରନ୍ତୁ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
-#, fuzzy
 msgid  "Find All"
 msgstr "ସବୁକୁ ତଦନ୍ତ କର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
-#, fuzzy
 msgid  "Replace all"
 msgstr "ସବୁକୁ ପୁନଃସ୍ଥାପିତ କର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
-#, fuzzy
 msgid  "Character Style"
 msgstr "ଅକ୍ଷର ଶୈଳୀ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
-#, fuzzy
 msgid  "Paragraph Style"
 msgstr "ପରିଚ୍ଛେଦ ଶୈଳୀ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
-#, fuzzy
 msgid  "Frame Style"
 msgstr "ଫ୍ରେମ ଶୈଳୀ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PAGE.String.Text
-#, fuzzy
 msgid  "Page Style"
 msgstr "ପୃଷ୍ଠା ଶୈଳୀ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "ସୂତ୍ର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "ମୂଲ୍ୟ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "ଟିପ୍ପଣୀ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "କିଛି ନାହିଁ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
-#, fuzzy
 msgid  "Solid"
 msgstr "କଠିନ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "ଦିଗବଳୀଯ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "ଲମ୍ବରୂପ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "ଜାଲ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DIAGCROSS.String.Text
-#, fuzzy
 msgid  "Diamond"
 msgstr "ହୀରା"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
-#, fuzzy
 msgid  "Diagonal up"
 msgstr "କର୍ଣ୍ଣ ଉପର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
-#, fuzzy
 msgid  "Diagonal down"
 msgstr "କର୍ଣ୍ଣ ତଳ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
-#, fuzzy
 msgid  "Image"
 msgstr "ଚିତ୍ର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
-#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "ଦିଗବଳୀଯ ପଂକ୍ତିକରଣ ଡିଫଲଟ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_LEFT.String.Text
-#, fuzzy
 msgid  "Align left"
 msgstr "ବାମ ପଂକ୍ତିକରଣ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
-#, fuzzy
 msgid  "Centered horizontally"
 msgstr "ଦିଗବଳୀଯଭାବରେ କେନ୍ଦ୍ରୀଯ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_RIGHT.String.Text
-#, fuzzy
 msgid  "Align right"
 msgstr "ଡାହାଣ ପଂକ୍ତିକରଣ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_BLOCK.String.Text
-#, fuzzy
 msgid  "Justify"
 msgstr "ପ୍ରମାଣ କରନ୍ତୁ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
-#, fuzzy
 msgid  "Repeat alignment"
 msgstr "ପଂକ୍ତିକରଣ ପୁନରାବୃତିକର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
-#, fuzzy
 msgid  "Vertical alignment default"
 msgstr "ଲମ୍ବରୂପ ପଂକ୍ତିକରଣ ଡିଫଲଟ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
-#, fuzzy
 msgid  "Align to top"
 msgstr "ଉପରପାଇଁ  ପଂକ୍ତିକରଣ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
-#, fuzzy
 msgid  "Centered vertically"
 msgstr "ଲମ୍ବଭାବରେ କେନ୍ଦ୍ରୀଯ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
-#, fuzzy
 msgid  "Align to bottom"
 msgstr "ତଳ ଭାଗ ପାଇଁ  ପଂକ୍ତିକରଣ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
-#, fuzzy
 msgid  "Default orientation"
 msgstr "ଡିଫଲଟ ଓରିଏନଟେସନ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
-#, fuzzy
 msgid  "From top to bottom"
 msgstr "ଉପରୁ ତଳକୁ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
-#, fuzzy
 msgid  "Bottom to Top"
 msgstr "ତଳରୁ ଉପର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STACKED.String.Text
-#, fuzzy
 msgid  "Stacked"
 msgstr "ଜମାହୋଇଥିବା"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "ଟେବୁଲ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
-#, fuzzy
 msgid  "Not Table"
 msgstr "ଟେବୁଲ ନୁହେଁ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
-#, fuzzy
 msgid  "Spacing enabled"
 msgstr "ଅନ୍ତରଦେବା ସକ୍ଷମହେଲା"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
-#, fuzzy
 msgid  "Spacing disabled"
 msgstr "ଅନ୍ତରଦେବା ଅକ୍ଷମହେଲା"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
-#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "ଅନ୍ତରର ଅନ୍ତରାଳ ରଖ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_FALSE.String.Text
-#, fuzzy
 msgid  "Allowed to fall short of spacing interval"
 msgstr "ଅନ୍ତରଦେବା ଅନ୍ତରାଳର ଅଭାବ ପଡିବାକୁ ସ୍ବୀକୃତ କର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
-#, fuzzy
 msgid  "Left margin: "
 msgstr "ବାମ ପ୍ରାନ୍ତ:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
-#, fuzzy
 msgid  "Top margin: "
 msgstr "ଉପର ପ୍ରାନ୍ତ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
-#, fuzzy
 msgid  "Right margin: "
 msgstr "ଡାହାଣ ପ୍ରାନ୍ତ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
-#, fuzzy
 msgid  "Bottom margin: "
 msgstr "ତଳ ପ୍ରାନ୍ତ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
-#, fuzzy
 msgid  "Page Description: "
 msgstr "ପୃଷ୍ଠା ବର୍ଣ୍ଣନା: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
-#, fuzzy
 msgid  "Capitals"
 msgstr "ବଡ ଅକ୍ଷରଗୁଡିକ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_LOWER.String.Text
-#, fuzzy
 msgid  "Lowercase"
 msgstr "ଛୋଟ ଅକ୍ଷର"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
-#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "ଉପରକେସ୍ ରୋମାନ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
-#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "ତଳକେସ୍ ରୋମାନ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
-#, fuzzy
 msgid  "Arabic"
 msgstr "ଆରବିକ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "କିଛି ନାହିଁ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
-#, fuzzy
 msgid  "Landscape"
 msgstr "କଡ଼ୁଆ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
-#, fuzzy
 msgid  "Portrait"
 msgstr "ପୋଟ୍ରେଟ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_LEFT.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ବାମ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_RIGHT.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "ଡାହାଣ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
-#, fuzzy
 msgid  "All"
 msgstr "ସମସ୍ତ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
-#, fuzzy
 msgid  "Mirrored"
 msgstr "ପ୍ରତିବିମ୍ବୀତ "
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
-#, fuzzy
 msgid  "Author: "
 msgstr "ଲେଖକ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
-#, fuzzy
 msgid  "Date: "
 msgstr "ତାରିଖ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
-#, fuzzy
 msgid  "Text: "
 msgstr "ଟେକ୍ସଟ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
-#, fuzzy
 msgid  "Background color: "
 msgstr "ପୃଷ୍ଠଭାଗ ରଙ୍ଗ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
-#, fuzzy
 msgid  "Pattern color: "
 msgstr "ନମୁନା ରଙ୍ଗ: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSH_CHAR.String.Text
-#, fuzzy
 msgid  "Character background"
 msgstr "ଅକ୍ଷର ପୃଷ୍ଠଭାଗ"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
-#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr " କାର୍ୟ୍ଯଟି ଚଳାହୋଇପାରିବ ନାହିଁ୤ ଏହି କାର୍ୟ୍ଯ ପାଇଁ ଦରକାରହେଉଥିବା %PRODUCTNAME  ପୋଗ୍ରାମ ମୋଡ୍ଯୁଲ ଏପର୍ୟ୍ଯନ୍ତ ପ୍ରତିଷ୍ଠାପିତ ହୋଇନାହିଁ୤"
 
@@ -8152,627 +7771,502 @@ msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactiv
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
-#, fuzzy
 msgid  "INSRT"
 msgstr "INSRT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
-#, fuzzy
 msgid  "OVER"
 msgstr "OVER"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
-#, fuzzy
 msgid  "STD"
 msgstr "STD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
-#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
-#, fuzzy
 msgid  "ADD"
 msgstr "ADD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
-#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "ଦ୍ୱିମିକ ହସ୍ତାକ୍ଷର: ଦଲିଲ ହସ୍ତାକ୍ଷରଟି ଠିକ ଅଛି।"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "ଦ୍ୱିମିକ ହସ୍ତାକ୍ଷର: ଦଲିଲ ହସ୍ତାକ୍ଷରଟି ଠିକ ଅଛି, କିନ୍ତୁ ପ୍ରମାଣପତ୍ରଗୁଡ଼ିକୁ ବୈଧିକରଣ କରିହେଲା ନାହିଁ।"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "ଦ୍ୱିମିକ ହସ୍ତାକ୍ଷର: ଦଲିଲ ହସ୍ତାକ୍ଷରଟି ଦଲିଲ ବିଷୟବସ୍ତୁ ସହିତ ମେଳଖାଏନାହିଁ। ଆପଣଙ୍କୁ ବିଶେଷ ଭାବରେ ପରାମର୍ଶ ଦିଆଯାଉଛି ଯେ ଆପଣ ଏହି ଦଲିଲକୁ ବିଶ୍ୱାସ କରନ୍ତୁ ନାହିଁ।"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "ଦ୍ୱିମିକ ହସ୍ତାକ୍ଷର: ଦଲିଲଟି ହସ୍ତକୃତ ହୋଇନାହିଁ।"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_CERT_OK_PARTIAL_SIG.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature and the certificate are OK, but not all parts of the document are signed."
 msgstr "ଡିଜିଟାଲ ହସ୍ତାକ୍ଷର: ଏହି ଦଲିଲ ହସ୍ତାକ୍ଷର ଏବଂ ପ୍ରମାଣପତ୍ରଗୁଡ଼ିକ OK ଅଟେ, କିନ୍ତୁ ଦଲିଲର ସମସ୍ତ ଅଂଶଗୁଡ଼ିକ ହସ୍ତାକ୍ଷର ହୋଇନାହିଁ।"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
-#, fuzzy
 msgid  "Optimal"
 msgstr "ଅପଟିମାଲ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
-#, fuzzy
 msgid  "Page Width"
 msgstr "ପୃଷ୍ଠା  ଓସାର"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Entire Page"
 msgstr " ସମସ୍ତ ପୃଷ୍ଠା"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
-#, fuzzy
 msgid  "Average"
 msgstr "ହାରାହାରି"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
-#, fuzzy
 msgid  "CountA"
 msgstr "ଗଣନାA"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
-#, fuzzy
 msgid  "Count"
 msgstr "ଗଣନା"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "ସର୍ବାଧିକ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "ସର୍ବନିମ୍ନ   "
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "ସମଷ୍ଟି"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
-#, fuzzy
 msgid  "None"
 msgstr "କିଛି ନାହିଁ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
-#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "ଡିଜିଟାଲ ହସ୍ତାକ୍ଷରଗୁଡିକ... "
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
-#, fuzzy
 msgid  "draw object"
 msgstr "ବସ୍ତୁ ଅଙ୍କନ କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "ବସ୍ତୁଗୁଡିକ ଅଙ୍କନ କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
-#, fuzzy
 msgid  "group object"
 msgstr " ସମୂହ ବସ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
-#, fuzzy
 msgid  "group objects"
 msgstr "ସମୁହ ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "blank group object"
 msgstr "ଶୂନ୍ଯ ସମୂହ ବସ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "Blank group objects"
 msgstr "ଶୂନ୍ଯ ସମୂହ ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "ରେଖା"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
-#, fuzzy
 msgid  "horizontal line"
 msgstr "ଦିଗବଳୀଯ ରେଖା"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
-#, fuzzy
 msgid  "Vertical line"
 msgstr "ଲମ୍ବରୂପ ରେଖା"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
-#, fuzzy
 msgid  "diagonal line"
 msgstr "କର୍ଣ୍ଣରେଖା "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "ରେଖାଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
-#, fuzzy
 msgid  "Rectangle"
 msgstr "ଆଯତକ୍ଷେତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
-#, fuzzy
 msgid  "Rectangles"
 msgstr "ଚର୍ତୁଭୂଜ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
-#, fuzzy
 msgid  "Square"
 msgstr "ବର୍ଗାକାର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
-#, fuzzy
 msgid  "Squares"
 msgstr "ବର୍ଗାକାରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
-#, fuzzy
 msgid  "Parallelogram"
 msgstr "ସମାନ୍ତର ଚର୍ତୁଭୂଜ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
-#, fuzzy
 msgid  "Parallelograms"
 msgstr "ସମାନ୍ତର ଚର୍ତୁଭୂଜଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombus"
 msgstr "ବିଷମକୋଣୀ ସମଚର୍ତୁଭୂଜ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombuses"
 msgstr "ବିଷମକୋଣୀ ସମଚର୍ତୁଭୂଜଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "ଗୋଲାକାର ଆଯତକ୍ଷେତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "ଗୋଲାକାର ଆଯତକ୍ଷେତ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
-#, fuzzy
 msgid  "rounded square"
 msgstr "ଗୋଲାକାର ବର୍ଗକ୍ଷେତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
-#, fuzzy
 msgid  "Rounded Squares"
 msgstr "ଗୋଲାକାର ବର୍ଗକ୍ଷେତ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "ଗୋଲାକାର ସମାନ୍ତରଚର୍ତୁଭୂଜ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "ଗୋଲାକାର ସମାନ୍ତରଚର୍ତୁଭୂଜଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
-#, fuzzy
 msgid  "rounded rhombus"
 msgstr "ଗୋଲାକାର ସମକୋଣୀଚର୍ତୁଭୂଜ "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
-#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "ଗୋଲାକାର ସମକୋଣୀଚର୍ତୁଭୂଜଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
-#, fuzzy
 msgid  "Circle"
 msgstr "ବୃତ୍ତ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
-#, fuzzy
 msgid  "Circles"
 msgstr "ବୃତ୍ତଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
-#, fuzzy
 msgid  "Circle sector"
 msgstr "ବୃତ୍ତ କ୍ଷେତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
-#, fuzzy
 msgid  "Circle sectors"
 msgstr "ବୃତ୍ତ କ୍ଷେତ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "ବୃତ୍ତ ଚାପ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
-#, fuzzy
 msgid  "Arcs"
 msgstr "ବୃତ୍ତଚାପଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "ବୃତ୍ତ ଭାଗ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
-#, fuzzy
 msgid  "Circle segments"
 msgstr "ବୃତ୍ତ ଭାଗଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipse"
 msgstr "ବୃତ୍ତାଭାସ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipses"
 msgstr "ବୃତ୍ତାଭାସ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "ବୃତ୍ତାଭାସ ପଈ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "ବୃତ୍ତାଭାସ ପଈଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arc"
 msgstr "ବୃତ୍ତାଭାସ ଚାପ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "ବୃତ୍ତାଭାସ ଚାପଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "ବୃତ୍ତାଭାସ ଭାଗ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "ବୃତ୍ତାଭାସ ଭାଗଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
-#, fuzzy
 msgid  "Polygon"
 msgstr "ବହୁଭୂଜ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
-#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "ବହୁଭୂଜ %2 କୋଣ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
-#, fuzzy
 msgid  "Polygons"
 msgstr "ବହୁଭୂଜଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
-#, fuzzy
 msgid  "Polyline"
 msgstr "ପୋଲିଲାଇନ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
-#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "%2 କୋଣ ବିଶିଷ୍ଟ ପଲିଲାଇନ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
-#, fuzzy
 msgid  "Polylines"
 msgstr "ପୋଲିଲାଇନଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier ବକ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier ବକ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier ବକ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier ବକ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "ମୁକ୍ତ ଫର୍ମ ରେଖା"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "ମୁକ୍ତ ଫର୍ମ ରେଖାଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "ମୁକ୍ତ ଫର୍ମ ରେଖା"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "ମୁକ୍ତ ଫର୍ମ ରେଖାଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "ବକ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "ବକ୍ର ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "ବକ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "ବକ୍ର ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Spline"
 msgstr "ପ୍ରାକୃତିକ ସ୍ପିଲାଇନ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Splines"
 msgstr "ପ୍ରାକୃତିକ ସ୍ପିଲାଇନଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Spline"
 msgstr "ପିରିଅଡିକ ସ୍ପିଲାଇନ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Splines"
 msgstr "ପିରିଅଡିକ  ସ୍ପିଲାଇନଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "ଟେକ୍ସଟ ଫ୍ରେମ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "ଟେକ୍ସଟ ଫ୍ରେମ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frame"
 msgstr "ଲିଙ୍କହୋଇଥିବା ଟେକ୍ସଟ ଫ୍ରେମ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frames"
 msgstr "ଲିଙ୍କହୋଇଥିବା ଟେକ୍ସଟ ଫ୍ରେମଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "ଆକାର ଟେକ୍ସ ବସ୍ତୁ-କୁ-ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "ଆକାର ଟେକ୍ସ ବସ୍ତୁଗୁଡିକ-କୁ-ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "ଆକାର ଟେକ୍ସ ବସ୍ତୁ-କୁ-ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "ଆକାର ଟେକ୍ସ ବସ୍ତୁଗୁଡିକ-କୁ-ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title text"
 msgstr "ଶୀର୍ଷକ ଟେକ୍ସଟ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title texts"
 msgstr "ଶୀର୍ଷକ ଟେକ୍ସଟଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Text"
 msgstr "ବାହ୍ଯରେଖା ଟେକ୍ସଟ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Texts"
 msgstr "ବାହ୍ଯରେଖାର ଟେକ୍ସଟଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
-#, fuzzy
 msgid  "graphic"
 msgstr "ଲେଖାଚିତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
-#, fuzzy
 msgid  "graphics"
 msgstr "ଲେଖାଚିତ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphic"
 msgstr "ଲିଙ୍କହୋଇଥିବା ଲେଖାଚିତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphics"
 msgstr "ଲିଙ୍କହୋଇଥିବା ଲେଖାଚିତ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic object"
 msgstr "ଶୂନ୍ଯଲେଖାଚିତ୍ର ବସ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "ଶୂନ୍ଯଲେଖାତିତ୍ର ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "ଶୂନ୍ଯ  ଲିଙ୍କହୋଇଥିବା ଲେଖାଚିତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "ଶୂନ୍ଯ  ଲିଙ୍କହୋଇଥିବା ଲେଖାଚିତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafile"
 msgstr "ମେଟାଫାଇଲ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafiles"
 msgstr "ମେଟାଫାଇଲଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafile"
 msgstr "ଲିଙ୍କହୋଇଥିବା ମେଟାଫାଇଲ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "ଲିଙ୍କହୋଇଥିବା ମେଟାଫାଇଲଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "ସ୍ବଚ୍ଛତା ସହିତ ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "ଲିଙ୍କହୋଇଥିବା ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "ସ୍ବଚ୍ଛତା ସହିତ ଲିଙ୍କହୋଇଥିବା ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmaps"
 msgstr "ବିଟମ୍ଯାପଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "ସ୍ବଚ୍ଛତା ସହିତ ବିଟମ୍ଯାପଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "ଲିଙ୍କହୋଇଥିବା ବିଟମ୍ଯାପଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "ସ୍ବଚ୍ଛତା ସହିତ ଲିଙ୍କହୋଇଥିବା ବିଟମ୍ଯାପଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "ଆକାର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shapes"
 msgstr "ଆକୃତିଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphic"
 msgstr "Mac ଲେଖାଚିତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphics"
 msgstr "Mac ଲେଖାଚିତ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "ଲିଙ୍କହୋଇଥିବା  Mac ଲେଖାଚିତ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "ଲିଙ୍କହୋଇଥିବା  Mac ଲେଖାଚିତ୍ରଗୁଡିକ"
 
@@ -8785,2547 +8279,2038 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
-#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "ସମ୍ମିଳିତ ବସ୍ତୁ (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
-#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "ସମ୍ମିଳିତ ବସ୍ତୁଗୁଡିକ (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
-#, fuzzy
 msgid  "Control"
 msgstr "ନିଯନ୍ତ୍ରଣ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
-#, fuzzy
 msgid  "Controls"
 msgstr "ନିଯନ୍ତ୍ରଣଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
-#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "ଲିଙ୍କହୋଇଥିବା ସମ୍ମିଳିତ ବସ୍ତୁ  (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
-#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "ଲିଙ୍କହୋଇଥିବା ସମ୍ମିଳିତ ବସ୍ତୁଗୁଡିକ (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "ବସ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "ଫ୍ରେମ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
-#, fuzzy
 msgid  "Frames"
 msgstr "ଫ୍ରେମଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "ଫ୍ରେମ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "ବସ୍ତୁ ସଂୟୋଜକଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "ବସ୍ତୁ ସଂୟୋଜକଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
-#, fuzzy
 msgid  "Callout"
 msgstr "କଲ୍ଆଉଟ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "କଲ୍ଆଉଟଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
-#, fuzzy
 msgid  "Preview object"
 msgstr "ପୂର୍ବଦୃଶ୍ଯ ବସ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
-#, fuzzy
 msgid  "Preview objects"
 msgstr "ପୂର୍ବଦୃଶ୍ଯ ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
-#, fuzzy
 msgid  "Dimension line"
 msgstr "ଆଯତନ ରେଖା"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
-#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "ଆଯତନକରଣ ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "ବସ୍ତୁଗୁଡିକ ଅଙ୍କନ କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
-#, fuzzy
 msgid  "No draw object"
 msgstr "କୌଣସି ଚିତ୍ର ବସ୍ତୁ ନାହିଁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
-#, fuzzy
 msgid  "and"
 msgstr "ଏବଂ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
-#, fuzzy
 msgid  "draw object(s)"
 msgstr "ବସ୍ତୁଗୁଡିକୁ ଚିତ୍ର କର"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
-#, fuzzy
 msgid  "3D cube"
 msgstr "3D ଘନ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
-#, fuzzy
 msgid  "3D cubes"
 msgstr "3D ଘନଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion object"
 msgstr "ନିଷ୍କାସନ ବସ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion objects"
 msgstr "ନିଷ୍କାସନ ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
-#, fuzzy
 msgid  "3D text"
 msgstr "3D ଟେକ୍ସଟ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
-#, fuzzy
 msgid  "3D texts"
 msgstr "3D ଟେକ୍ସଟଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
-#, fuzzy
 msgid  "rotation object"
 msgstr "ଘୂର୍ଣ୍ଣନ ବସ୍ତୁ "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
-#, fuzzy
 msgid  "rotation objects"
 msgstr "ଘୂର୍ଣ୍ଣନ ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
-#, fuzzy
 msgid  "3D object"
 msgstr "3D ବସ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
-#, fuzzy
 msgid  "3D objects"
 msgstr "3D ବସ୍ତୁଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
-#, fuzzy
 msgid  "3D polygons"
 msgstr "3D ବହୁଭୂଜଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
-#, fuzzy
 msgid  "3D scene"
 msgstr "3D ଦୃଶ୍ଯ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
-#, fuzzy
 msgid  "3D scenes"
 msgstr "3D ଦୃଶ୍ଯଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
-#, fuzzy
 msgid  "sphere"
 msgstr "ଗୋଲକ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
-#, fuzzy
 msgid  "spheres"
 msgstr "ଗୋଲକଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
-#, fuzzy
 msgid  "with copy"
 msgstr "ପ୍ରତିଲିପି ସହିତ"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
-#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "%1 ପାଇଁ ସ୍ଥାନ ଏବଂ ଆକାର ସେଟକରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
-#, fuzzy
 msgid  "Delete %1"
 msgstr "%1କୁ ଅପସାରଣ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
-#, fuzzy
 msgid  "Move %1 forward"
 msgstr "%1କୁ ଅଗ୍ରସର କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 further back"
 msgstr "%1 ଅଧିକ ପଛକୁ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
-#, fuzzy
 msgid  "Move %1 to front"
 msgstr "%1କୁ ଆଗକୁ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 to back"
 msgstr "%1କୁ ପଛକୁ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
-#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "%1ର ଓଲଟା କ୍ରମ"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "%1କୁ ଘୁଞ୍ଚାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "%1ର ଆକାର ବଦଳ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "%1କୁ ଘୁରାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%1କୁ ସମାନ୍ତରାଳ ଭାବରେ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "%1କୁ ଭୂ-ଲମ୍ବରେ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%1କୁ କୋଣକୁ କୋଣ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "%1କୁ ମୁକ୍ତ ହସ୍ତରେ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "%1କୁ ବିକୃତକରନ୍ତୁ (slant)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%1କୁ ବୃତ୍ତାକାରରେ ସଜାଡ଼ନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "%1କୁ ବୃତ୍ତରେ ବଙ୍କାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "%1କୁ ବିକୃତକରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
-#, fuzzy
 msgid  "Undo %1"
 msgstr "%1 ର ପଦକ୍ଷେପ ବାତିଲ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "%1ର bézier ଗୁଣକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "%1ର bézier ଗୁଣକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
-#, fuzzy
 msgid  "Close %1"
 msgstr "%1କୁ ବନ୍ଦ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
-#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "%1 ପାଇଁ ପ୍ରସ୍ଥାନ ଦିଗ ସେଟ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
-#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "%1ରେ ସମ୍ପର୍କୀୟ ଗୁଣକୁ ସେଟ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
-#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "%1 ପାଇଁ ସନ୍ଦର୍ଭ ସ୍ଥାନ ସେଟ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
-#, fuzzy
 msgid  "Group %1"
 msgstr "ଶ୍ରେଣୀ %1"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
-#, fuzzy
 msgid  "Ungroup %1"
 msgstr "ସମୂହହୋଇନଥିବା %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
-#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "%1 ଗୁଣ ପ୍ରୟୋଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
-#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "%1 ରେ ଶୈଳୀ ପ୍ରୟୋଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
-#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "%1ରୁ ଶୈଳୀ କାଢ଼ିଦିଅନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "%1 କୁ ପଲିଗନରେ ରୂପାନ୍ତର କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "%1 କୁ ପଲିଗନଗୁଡ଼ିକରେ ରୂପାନ୍ତର କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
-#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "%1 କୁ ବକ୍ରରେଖାରେ ରୂପାନ୍ତର କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
-#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "%1 କୁ ବକ୍ରରେଖାଗୁଡ଼ିକରେ ରୂପାନ୍ତର କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
-#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "%1 କୁ ପରିରେଖାରେ ରୂପାନ୍ତର କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
-#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "%1 କୁ ପରିରେଖାଗୁଡ଼ିକରେ ରୂପାନ୍ତର କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
-#, fuzzy
 msgid  "Align %1"
 msgstr "%1 ପାର୍ଶ୍ୱସଜ୍ଜା"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
-#, fuzzy
 msgid  "Align %1 to top"
 msgstr "%1କୁ ଉପରେ ରଖନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
-#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "%1କୁ ତଳେ ରଖନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
-#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "%1କୁ କେନ୍ଦ୍ରରେ ସମାନ୍ତରାଳ ଭାବରେ ରଖନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
-#, fuzzy
 msgid  "Align %1 to left"
 msgstr "%1କୁ ବାମରେ ରଖନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
-#, fuzzy
 msgid  "Align %1 to right"
 msgstr "%1କୁ ଡ଼ାହାଣରେ ରଖନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
-#, fuzzy
 msgid  "Vertically center %1"
 msgstr "ଭୂଲମ୍ବ କେନ୍ଦ୍ର %1"
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
-#, fuzzy
 msgid  "Center %1"
 msgstr "କେନ୍ଦ୍ର %1"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
-#, fuzzy
 msgid  "Transform %1"
 msgstr "%1କୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr "%1କୁ ମିଶାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
-#, fuzzy
 msgid  "Merge %1"
 msgstr "%1କୁ ମିଶାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
-#, fuzzy
 msgid  "Subtract %1"
 msgstr "%1କୁ ଫେଡନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
-#, fuzzy
 msgid  "Intersect %1"
 msgstr "%1କୁ ପ୍ରତିଚ୍ଛେଦ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
-#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "ମନୋନୀତ ବସ୍ତୁଗୁଡିକର ବିତରଣ କର"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr "%1କୁ ମିଶାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "%1କୁ ପୃଥକ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "%1କୁ ପୃଥକ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "%1କୁ ପୃଥକ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "ବସ୍ତୁଗୁଡିକ  ଭର୍ତ୍ତି କର"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
-#, fuzzy
 msgid  "Cut %1"
 msgstr "%1କୁ କାଟନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
-#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "କ୍ଲିପବୋର୍ଡ ଲଗାଅ"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
-#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "%1କୁ ଟାଣିକରି ପକାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
-#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "ଟାଣିବା ଏବଂ ପକାଇବା ଭର୍ତ୍ତି କର"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
-#, fuzzy
 msgid  "Insert point to %1"
 msgstr "%1ରେ ବିନ୍ଦୁ ଭର୍ତ୍ତିକରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
-#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "%1ରେ glue ବିନ୍ଦୁ ଭର୍ତ୍ତିକରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
-#, fuzzy
 msgid  "Move reference-point"
 msgstr "ପ୍ରସଙ୍ଗ ବିନ୍ଦୁକୁ ଘୁଞ୍ଚାଅ"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
-#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "%1କୁ ଜ୍ୟାମିତିକ ଭାବରେ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "%1କୁ ଘୁଞ୍ଚାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "%1ର ଆକାର ବଦଳ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "%1କୁ ଘୁରାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%1କୁ ସମାନ୍ତରାଳ ଭାବରେ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "%1କୁ ଭୂ-ଲମ୍ବରେ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%1କୁ କୋଣକୁ କୋଣ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "%1କୁ ମୁକ୍ତ ହସ୍ତରେ ଭାଙ୍ଗ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
-#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr "%1 ପାଇଁ ପାରସ୍ପରିକ କ୍ରିୟାକ୍ଷମ ଅନୁପାତ"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
-#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr "%1 ପାଇଁ ପାରସ୍ପରିକ କ୍ରିୟାକ୍ଷମ ସ୍ପଟିକତା"
 
 #: source/svdraw/svdstr.src#STR_DragMethShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "%1କୁ ବିକୃତକରନ୍ତୁ (slant)"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%1କୁ ବୃତ୍ତାକାରରେ ସଜାଡ଼ନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "%1କୁ ବୃତ୍ତରେ ବଙ୍କାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "%1କୁ ବିକୃତକରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
-#, fuzzy
 msgid  "Crop %O"
 msgstr "କ୍ରପ %O"
 
 #: source/svdraw/svdstr.src#STR_DragRectEckRad.String.Text
-#, fuzzy
 msgid  "Alter radius by %1"
 msgstr "%1 ଦ୍ବାରା ବ୍ୟାସାର୍ଦ୍ଧକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "%1 କୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "%1ର ଆକାର ବଦଳ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "%1କୁ ଘୁଞ୍ଚାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
-#, fuzzy
 msgid  "Move end point of %1"
 msgstr "%1ର ଶେଷ ବିନ୍ଦୁକୁ ଘୁଞ୍ଚାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragCircAngle.String.Text
-#, fuzzy
 msgid  "Adjust angle by %1"
 msgstr "%1 ଦ୍ୱାରା କୋଣ ସଜାଡ଼ନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "%1 କୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
-#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "ପାଠ୍ୟ ସମ୍ପାଦନ: ପରିଚ୍ଛେଦ %1, ଧାଡ଼ି%2, ସ୍ତମ୍ଭ %3"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
-#, fuzzy
 msgid  "%1 selected"
 msgstr "%1 ବଚ୍ଛିତ"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
-#, fuzzy
 msgid  "Point from %1"
 msgstr "%1ରୁ ବିନ୍ଦୁ"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
-#, fuzzy
 msgid  "%2 points from %1"
 msgstr "%1ରୁ %2 ଟି ବିନ୍ଦୁ"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
-#, fuzzy
 msgid  "Glue point from %1"
 msgstr "%1ଠାରୁ Glue ବିନ୍ଦୁ"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
-#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "%1 ଠାରୁ %2 ଟି glue ବିନ୍ଦୁ"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
-#, fuzzy
 msgid  "Mark objects"
 msgstr "ବସ୍ତୁଗୁଡିକୁ ଚିହ୍ନିତ କର"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
-#, fuzzy
 msgid  "Mark additional objects"
 msgstr "ଅତିରିକ୍ତ ବସ୍ତୁଗୁଡିକ ଚିହ୍ନିତ କର"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
-#, fuzzy
 msgid  "Mark points"
 msgstr "ବିନ୍ଦୁଗୁଡିକୁ ଚିହ୍ନିତ କର"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
-#, fuzzy
 msgid  "Mark additional points"
 msgstr "ଅତିରିକ୍ତ ବିନ୍ଦୁଗୁଡିକ ଚିହ୍ନିତ କର"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
-#, fuzzy
 msgid  "Mark glue points"
 msgstr "ଗ୍ଲୁ ବିନ୍ଦୁଗୁଡିକୁ ଚିହ୍ନିତ କର"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
-#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "ଅତିରିକ୍ତ ଗ୍ଲୁ ବିନ୍ଦୁଗୁଡିକ ଚିହ୍ନିତ କର"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
-#, fuzzy
 msgid  "Create %1"
 msgstr "%1କୁ ସୃଷ୍ଟି କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
-#, fuzzy
 msgid  "Insert %1"
 msgstr "%1କୁ ଭର୍ତ୍ତି କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
-#, fuzzy
 msgid  "Copy %1"
 msgstr "%1କୁ ନକଲ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
-#, fuzzy
 msgid  "Change object order of %1"
 msgstr "%1ର ବସ୍ତୁ କ୍ରମକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
-#, fuzzy
 msgid  "Edit text of %1"
 msgstr "%1ର ପାଠ୍ୟକୁ ସଂପାଦନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
-#, fuzzy
 msgid  "Insert page"
 msgstr "ପୃଷ୍ଠା ଭର୍ତ୍ତି କର"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
-#, fuzzy
 msgid  "Delete page"
 msgstr "ପୃଷ୍ଠାକୁ ବିଲୋପ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
-#, fuzzy
 msgid  "Copy page"
 msgstr "ପୃଷ୍ଠା ନକଲ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
-#, fuzzy
 msgid  "Change order of pages"
 msgstr "ପୃଷ୍ଠାଗୁଡିକର କ୍ରମ ପରିବର୍ତ୍ତନ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Assign background page"
 msgstr "ପୃଷ୍ଠଭାଗ ପୃଷ୍ଠା ନିର୍ଦ୍ଦିଷ୍ଟ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "ପୃଷ୍ଠଭାଗ ପୃଷ୍ଠା ନିର୍ଦ୍ଦିଷ୍ଟକରିବା ସ୍ପଷ୍ଟ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Move background page assignment"
 msgstr "ପୃଷ୍ଠଭାଗ ପୃଷ୍ଠା ନିର୍ଦ୍ଦିଷ୍ଟକରିବା ଘୁଞ୍ଚାଅ"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Change background page assignment"
 msgstr "ପୃଷ୍ଠଭାଗ ପୃଷ୍ଠା ନିର୍ଦ୍ଦିଷ୍ଟକରିବା ପରିବର୍ତ୍ତନ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
-#, fuzzy
 msgid  "Insert document"
 msgstr "ଦଲିଲ  ଭର୍ତ୍ତି କର"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
-#, fuzzy
 msgid  "Insert Layer"
 msgstr "ସ୍ତର ଭର୍ତ୍ତି କର"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
-#, fuzzy
 msgid  "Delete layer"
 msgstr "ସ୍ତରକୁ ବିଲୋପ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
-#, fuzzy
 msgid  "Change order of layers"
 msgstr "ସ୍ତରଗୁଡିକର କ୍ରମ ପରିବର୍ତ୍ତନ କର"
 
 #: source/svdraw/svdstr.src#STR_UndoObjName.String.Text
-#, fuzzy
 msgid  "Change object name of %1 to"
 msgstr "%1ର ବସ୍ତୁ ନାମକୁ ପରିବର୍ତ୍ତନ କରିଥାଏ"
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
-#, fuzzy
 msgid  "Change object title of %1"
 msgstr "%1ର ବସ୍ତୁ ଶୀର୍ଷକକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_UndoObjDescription.String.Text
-#, fuzzy
 msgid  "Change object description of %1"
 msgstr "%1ର ବସ୍ତୁ ବର୍ଣ୍ଣନାକୁ ପରିବର୍ତ୍ତନ କରିଥାଏ"
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "ସ୍ଟାଣ୍ଡାଡ୍"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
-#, fuzzy
 msgid  "on"
 msgstr "ଆରମ୍ଭ"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "ବନ୍ଦ"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
-#, fuzzy
 msgid  "yes"
 msgstr "ହଁ"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ନାହିଁ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
-#, fuzzy
 msgid  "Type 1"
 msgstr "ପ୍ରକାର ୧"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
-#, fuzzy
 msgid  "Type 2"
 msgstr "ପ୍ରକାର ୨"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
-#, fuzzy
 msgid  "Type 3"
 msgstr "ପ୍ରକାର ୩"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
-#, fuzzy
 msgid  "Type 4"
 msgstr "ପ୍ରକାର ୪"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "ଦିଗବଳୀଯ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "ଲମ୍ବରୂପ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ସ୍ବୟଂଚାଳିତ"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
-#, fuzzy
 msgid  "Off"
 msgstr "ବନ୍ଦ"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
-#, fuzzy
 msgid  "Proportional"
 msgstr "ସମାନୁପାତିକ"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEALLLINES.String.Text
-#, fuzzy
 msgid  "Fit to size (all rows separately) "
 msgstr "ଆକାରକୁ ୟୋଗ୍ଯକର (ଅଲଗାଭାବରେ ସବୁ ପଂକ୍ତିଗୁଡିକ)"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
-#, fuzzy
 msgid  "Use hard attributes"
 msgstr "ହାଡ ଗୁଣଗୁଡିକର ବ୍ଯବହାର କର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "ଉପର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "କେନ୍ଦ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "ତଳ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire height"
 msgstr "ସମସ୍ତ ଉଚ୍ଚତା  ବ୍ଯବହାର କର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "ପ୍ରସାରିତ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ବାମ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "କେନ୍ଦ୍ର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "ଡାହାଣ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire width"
 msgstr "ସମସ୍ତ ଓସାର ବ୍ଯବହାର କର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "ପ୍ରସାରିତ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "ବନ୍ଦ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
-#, fuzzy
 msgid  "flash"
 msgstr "ଚମକ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SCROLL.String.Text
-#, fuzzy
 msgid  "Scroll Through"
 msgstr "ସ୍କ୍ରୋଲ ରେ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_ALTERNATE.String.Text
-#, fuzzy
 msgid  "alternating"
 msgstr "ପରିବର୍ତ୍ତନ କରାୟାଉଛି"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SLIDE.String.Text
-#, fuzzy
 msgid  "Scroll In"
 msgstr "ସ୍କ୍ରୋଲ ଭିତର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
-#, fuzzy
 msgid  "left"
 msgstr "ବାମ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
-#, fuzzy
 msgid  "up"
 msgstr "ଉପର"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
-#, fuzzy
 msgid  "right"
 msgstr "ଡାହାଣ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
-#, fuzzy
 msgid  "down"
 msgstr "ତଳ"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
-#, fuzzy
 msgid  "Standard Connector"
 msgstr "ସ୍ଟାଣ୍ଡାର୍ଡ୍ ସଂୟୋଜକ"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_THREELINES.String.Text
-#, fuzzy
 msgid  "Line Connector"
 msgstr "ରେଖା ସଂୟୋଜକ"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
-#, fuzzy
 msgid  "Straight Connector"
 msgstr "ସିଧା ସଂୟୋଜକ"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
-#, fuzzy
 msgid  "Curved Connector"
 msgstr " ବକ୍ରକାର ସଂୟୋଜକ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "ସ୍ଟାଣ୍ଡାଡ୍"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
-#, fuzzy
 msgid  "Radius"
 msgstr "ବ୍ଯାସାର୍ଦ୍ଧ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "ସ୍ବଯଂଚାଳିତ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTLEFTOUTSIDE.String.Text
-#, fuzzy
 msgid  "left outside"
 msgstr "ବାମ ବାହାରପାଖ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTINSIDE.String.Text
-#, fuzzy
 msgid  "inside (centered)"
 msgstr "ଭିତରପାଖ (କେନ୍ଦ୍ରୀଯ)"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTRIGHTOUTSID.String.Text
-#, fuzzy
 msgid  "right outside"
 msgstr "ଡାହାଣ ବାହାରପାଖ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "ସ୍ବଯଂଚାଳିତ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
-#, fuzzy
 msgid  "on the line"
 msgstr "ରେଖାରେ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
-#, fuzzy
 msgid  "broken line"
 msgstr "ଭଙ୍ଗା ଲିଙ୍କ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
-#, fuzzy
 msgid  "below the line"
 msgstr "ରେଖା ପଛରେ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
-#, fuzzy
 msgid  "centered"
 msgstr "କେନ୍ଦ୍ରୀଯ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
-#, fuzzy
 msgid  "full circle"
 msgstr "ସଂପୂର୍ଣ୍ଣ ବୃତ୍ତ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_SECT.String.Text
-#, fuzzy
 msgid  "Circle Pie"
 msgstr "ବୃତ୍ତ ପଈ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "ବୃତ୍ତ ଭାଗ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "ବୃତ୍ତ ଚାପ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "ଛାଯା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "ଛାଯା ରଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Horizontal shadow outline"
 msgstr "ଦିଗବଳୀଯ ବାହ୍ଯରେଖା ଛାଯା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "ଲମ୍ବରୂପ ଛାଯା ବାହ୍ଯରେଖା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "ଛାଯା ସ୍ବଚ୍ଛତା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "3D ଛାଯା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "ଦୃଶ୍ଯଛାଯା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Callout type"
 msgstr "ପ୍ରକାରକୁ ଡାକ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Given angle"
 msgstr "ଦିଆହୋଇଥିବା କୋଣ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Angle"
 msgstr "କୋଣ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "ଅନ୍ତର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Exit direction"
 msgstr "ପ୍ରସ୍ଥାନକରିବା ଦିଗ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit position"
 msgstr "ସମ୍ପର୍କୀଯ ପ୍ରସ୍ଥାନ ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "ପ୍ରସ୍ଥାନକରିବା ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "ପ୍ରସ୍ଥାନକରିବା ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Line length"
 msgstr "ରେଖା ଲମ୍ବ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "Auto line length"
 msgstr "ସ୍ବଯଂଚାଳିତଭାବରେ ରେଖା ବିସ୍ତାର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "କୋଣ ବ୍ଯାସାର୍ଦ୍ଧ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left border spacing"
 msgstr "ବାମ ସୀମା ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right border spacing"
 msgstr "ଡାହାଣ ସୀମା ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper border spacing"
 msgstr "ଉପର ସୀମା ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower border spacing"
 msgstr "ତଳ ସୀମା ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit frame height"
 msgstr " ଫ୍ରେମ ଉଚ୍ଚତାକୁ ସ୍ବଯଂଚାଳିତ ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Min. frame height"
 msgstr "ସର୍ବନିମ୍ନ ଫ୍ରେମ ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Max. frame height"
 msgstr "ସର୍ବାଧିକ  ଫ୍ରେମ ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit frame width"
 msgstr " ଫ୍ରେମ ଓସାରକୁ ସ୍ବଯଂଚାଳିତ ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Min. frame width"
 msgstr "ସର୍ବନିମ୍ନ  ଫ୍ରେମ ଓସାର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Max. frame width"
 msgstr "ସର୍ବାଧିକ ଫ୍ରେମ ଓସାର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "ଲମ୍ବରୂପ ଟେକ୍ସଟ ୟୋଡ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "ଲମ୍ବରୂପ ଟେକ୍ସଟ ୟୋଡ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "ଟେକ୍ସଟ କୁ ଫ୍ରେମ ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "ଲାଲ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "ସବୁଜ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "ନେଳି"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "ଉଜ୍ଜ୍ବଳତା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "ସ୍ପଷ୍ଟତା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "ଗାମା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "ସ୍ବଚ୍ଛତା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "ଓଲଟାଅ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "ଲେଖାଚିତ୍ରଗୁଡିକ ମୋଡ"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
-#, fuzzy
 msgid  "Various attributes"
 msgstr "ବିବିଧ ଗୁଣଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Position protected"
 msgstr "ସ୍ଥାନ ସୁରକ୍ଷିତ ହୋଇଛି"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Size Protection"
 msgstr "ଆକାର ସୁରକ୍ଷିତ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Don't print"
 msgstr "ମୁଦ୍ରଣ କର ନାହିଁ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
-#, fuzzy
 msgid  "Layer Indicator"
 msgstr "ସ୍ତର ସୂଚକ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Le~vel"
 msgstr "ସ୍ତର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "ବସ୍ତୁ ନାମ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "କୋଣ ଆରମ୍ଭ କର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
-#, fuzzy
 msgid  "Final angle"
 msgstr "ଅନ୍ତିମ  କୋଣ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
-#, fuzzy
 msgid  "X Position"
 msgstr "X ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
-#, fuzzy
 msgid  "Y Position"
 msgstr "Y ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "ଓସାର"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Rotation angle"
 msgstr "ଘୂର୍ଣ୍ଣନ କୋଣ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Shear angle"
 msgstr "ସିଅର କୋଣ"
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
-#, fuzzy
 msgid  "Unknown attribute"
 msgstr "ଅଜ୍ଞାତ ଗୁଣ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
-#, fuzzy
 msgid  "Line style"
 msgstr "ରେଖା ଶୈଳୀ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
-#, fuzzy
 msgid  "Line pattern"
 msgstr "ରେଖା ନମୁନା"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
-#, fuzzy
 msgid  "Line width"
 msgstr "ରେଖା ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "ରେଖାର ରଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
-#, fuzzy
 msgid  "Line head"
 msgstr "ରେଖା ପ୍ରାରମ୍ଭ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
-#, fuzzy
 msgid  "Line end"
 msgstr "ରେଖା ଅନ୍ତ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
-#, fuzzy
 msgid  "Line head width"
 msgstr "ରେଖା ପ୍ରରମ୍ଭ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
-#, fuzzy
 msgid  "Line end width"
 msgstr "ରେଖା ଅନ୍ତ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowhead"
 msgstr " ଶରମୁଖର କେନ୍ଦ୍ର"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowend"
 msgstr " ଶରଅନ୍ତର କେନ୍ଦ୍ର"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Line transparency"
 msgstr "ରେଖା ସ୍ବଚ୍ଛତା"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
-#, fuzzy
 msgid  "Line joint"
 msgstr "ରେଖା ୟୋଡ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED2.String.Text
-#, fuzzy
 msgid  "Line reserved for 2"
 msgstr "୨ ପାଇଁ ସଂରକ୍ଷିତହୋଇଥିବା ରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED3.String.Text
-#, fuzzy
 msgid  "Line reserved for 3"
 msgstr "୩  ପାଇଁ ସଂରକ୍ଷିତହୋଇଥିବା ରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED4.String.Text
-#, fuzzy
 msgid  "Line reserved for 4"
 msgstr "୪  ପାଇଁ ସଂରକ୍ଷିତହୋଇଥିବା ରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED5.String.Text
-#, fuzzy
 msgid  "Line reserved for 5"
 msgstr "୫  ପାଇଁ ସଂରକ୍ଷିତହୋଇଥିବା ରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Line reserved for 6"
 msgstr "୬  ପାଇଁ ସଂରକ୍ଷିତହୋଇଥିବା ରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
-#, fuzzy
 msgid  "Line attributes"
 msgstr "ରେଖା ଗୁଣସବୁ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
-#, fuzzy
 msgid  "Fill style"
 msgstr "ଶୌଳୀ ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fillcolor"
 msgstr "ରଙ୍ଗ ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
-#, fuzzy
 msgid  "Gradient"
 msgstr "ଗ୍ରାଡିଏଣ୍ଟ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLHATCH.String.Text
-#, fuzzy
 msgid  "Hatching"
 msgstr "ହାଚିଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBITMAP.String.Text
-#, fuzzy
 msgid  "Fillbitmap"
 msgstr "ବିଟମ୍ଯାପ ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "ସ୍ବଚ୍ଛତା"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
-#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "ଗ୍ରାଡିଏଣ୍ଟ ପଦକ୍ଷେପର ସଂଖ୍ଯାଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILE.String.Text
-#, fuzzy
 msgid  "Tile fill"
 msgstr "ଟାଇଲ ପୂର୍ଣ୍ଣକର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POS.String.Text
-#, fuzzy
 msgid  "Fillbitmap position"
 msgstr "ବିଟମ୍ଯାପ  ସ୍ଥାନ ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEX.String.Text
-#, fuzzy
 msgid  "Fillbitmap width"
 msgstr "ବିଟମ୍ଯାପ ଓସାର ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEY.String.Text
-#, fuzzy
 msgid  "Height of fillbitmap"
 msgstr "ପୂର୍ଣ୍ଣ ବିଟମ୍ଯାପ ର ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparent gradient"
 msgstr "ସ୍ବଚ୍ଛ ଗ୍ରାଡିଏଣ୍ଟ"
 
 #: source/svdraw/svdstr.src#SIP_XA_SECONDARYFILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill reserved for 2"
 msgstr "୨ ପାଇଁ ପୂର୍ଣ୍ଣ ସଂରକ୍ଷିତହୋଇଥିବା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZELOG.String.Text
-#, fuzzy
 msgid  "Tile size not in %"
 msgstr "% ରେ ଟାଇଲ ଆକାର ନାହିଁ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile offset X in %"
 msgstr "% ରେ ଟାଇଲ ଅଫସେଟ X ଅଛି"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile offset Y in %"
 msgstr "% ରେ ଟାଇଲ ଅଫସେଟ Y ଅଛି "
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_STRETCH.String.Text
-#, fuzzy
 msgid  "Bitmap scaling"
 msgstr "ବିଟମ୍ଯାପ ମାପିବା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED3.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 3"
 msgstr "୩ ପାଇଁ ସଂରକ୍ଷିତ ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED4.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 4"
 msgstr "୪ ପାଇଁ ସଂରକ୍ଷିତ ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED5.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 5"
 msgstr "୫ ପାଇଁ ସଂରକ୍ଷିତ ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED6.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 6"
 msgstr "୬ ପାଇଁ ସଂରକ୍ଷିତ ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED7.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 7"
 msgstr "୭ ପାଇଁ ସଂରକ୍ଷିତ ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED8.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 8"
 msgstr "୮ ପାଇଁ ସଂରକ୍ଷିତ ବିଟମ୍ଯାପ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile position X in %"
 msgstr "% ରେ ଟାଇଲ X ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile position Y in %"
 msgstr "% ରେ ଟାଇଲ Y ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
-#, fuzzy
 msgid  "Background fill"
 msgstr "ପୃଷ୍ଠଭାଗ ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED10.String.Text
-#, fuzzy
 msgid  "Fill reserved for 10"
 msgstr "୧୦ ପାଇଁ ସଂରକ୍ଷିତହେବା ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED11.String.Text
-#, fuzzy
 msgid  "Fill reserved for 11"
 msgstr "୧୧ ପାଇଁ ସଂରକ୍ଷିତହେବା ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fill reserved for 12"
 msgstr "୧୨ ପାଇଁ ସଂରକ୍ଷିତହେବା ପୁରଣ କର"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
-#, fuzzy
 msgid  "Area attributes"
 msgstr "କ୍ଷେତ୍ର  ଗୁଣସବୁ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
-#, fuzzy
 msgid  "Fontwork style"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ଶୈଳୀ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
-#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ପଂକ୍ତିକରଣ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
-#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTART.String.Text
-#, fuzzy
 msgid  "Fontwork font begin"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ଫଣ୍ଟ ଆରମ୍ଭକରିବା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
-#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ଦର୍ପଣ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTOUTLINE.String.Text
-#, fuzzy
 msgid  "Fontwork outline"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ବାହ୍ଯରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
-#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ  ଛାଯା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
-#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ  ଛାଯା ରଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWXVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset X"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ଛାଯା ଅଫସେଟ X"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWYVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset Y"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ଛାଯା ଅଫସେଟ Y"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
-#, fuzzy
 msgid  "Fontwork default form"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ତୃଟି ଫର୍ମ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
-#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ବାହ୍ଯରେଖାକୁ  ଛୁପାଅ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
-#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ଛାଯା ସ୍ବଚ୍ଛତା"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED2.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 2"
 msgstr "୨ ପାଇଁ ସଂରକ୍ଷିତ ଫଣ୍ଟ କାର୍ୟ୍ଯ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED3.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 3"
 msgstr "୩ ପାଇଁ ସଂରକ୍ଷିତ ଫଣ୍ଟ କାର୍ୟ୍ଯ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED4.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 4"
 msgstr "୪ ପାଇଁ ସଂରକ୍ଷିତ ଫଣ୍ଟ କାର୍ୟ୍ଯ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED5.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 5"
 msgstr "୫ ପାଇଁ ସଂରକ୍ଷିତ ଫଣ୍ଟ କାର୍ୟ୍ଯ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 6"
 msgstr "୬ ପାଇଁ ସଂରକ୍ଷିତ ଫଣ୍ଟ କାର୍ୟ୍ଯ"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "ଛାଯା"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "ଛାଯା ରଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "ଛାଯା ଅନ୍ତରହେବା  X"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "ଛାଯା ଅନ୍ତରଦେବା Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "ଛାଯା ସ୍ବଚ୍ଛତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "3D ଛାଯା"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "ଦୃଶ୍ଯଛାଯା"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Type of legend"
 msgstr "ଲିଜେଣ୍ଡର ପ୍ରକାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "ସ୍ଥିର ଲିଜେଣ୍ଟ କୋଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Legend angle"
 msgstr "ଲିଜେଣ୍ଡ କୋଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Legend lines spacing"
 msgstr "ଲିଜେଣ୍ଡ ରେଖାଗୁଡିକର ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Legend exit alignment"
 msgstr "ଲିଜେଣ୍ଡ  ପଂକ୍ତିକରଣ ପ୍ରସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr "ସମ୍ପକ୍ରୀଯ  ଲିଜେଣ୍ଡ  ପ୍ରସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr "ସମ୍ପକ୍ରୀଯ  ଲିଜେଣ୍ଡ  ପ୍ରସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "ଲିଜେଣ୍ଡର ଅଖଣ୍ଡ  ପ୍ରସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Legend line length"
 msgstr "ଲିଜେଣ୍ଡ ରେଖା ଲମ୍ବ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "AutoLength of legend lines"
 msgstr "ଲିଜେଣ୍ଡ ରେଖାଗୁଡିକର ସ୍ବଯଂଚାଳିତଲମ୍ବ"
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "କୋଣ ବ୍ଯାସାର୍ଦ୍ଧ"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Minimal frame height"
 msgstr "ସର୍ବନିମ୍ନ ଫ୍ରେମ ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit height"
 msgstr " ଉଚ୍ଚତାକୁ ସ୍ବଯଂଚାଳିତ ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "ଟେକ୍ସଟ କୁ ଫ୍ରେମ ୟୋଗ୍ଯ କର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "ବାମ ଟେକ୍ସଟ ଫ୍ରେମ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "ଡାହାଣ ଟେକ୍ସଟ ଫ୍ରେମ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "ଉପର ଟେକ୍ସଟ ଫ୍ରେମ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "ତଳ ଟେକ୍ସଟ ଫ୍ରେମ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "ଲମ୍ବରୂପ ଟେକ୍ସଟ ୟୋଡ"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Maximal frame height"
 msgstr "ସର୍ବାଧିକ ଫ୍ରେମ ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Minimal frame width"
 msgstr "ସର୍ବନିମ୍ନ  ଫ୍ରେମ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Maximal frame width"
 msgstr " ସର୍ବାଧିକ ଫ୍ରେମ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit width"
 msgstr "ସ୍ବଯଂଚାଳିତୟୋଗ୍ଯ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "ଲମ୍ବରୂପ ଟେକ୍ସଟ ୟୋଡ"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIKIND.String.Text
-#, fuzzy
 msgid  "Ticker"
 msgstr "ଘଣ୍ଟା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDIRECTION.String.Text
-#, fuzzy
 msgid  "Ticker direction"
 msgstr "ଘଣ୍ଟା ଦିଗ"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTARTINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker start inside"
 msgstr "ଘଣ୍ଟା ଆରମ୍ଭ ଭିତର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTOPINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker stop inside"
 msgstr "ଘଣ୍ଟା ବନ୍ଦ ଭିତର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANICOUNT.String.Text
-#, fuzzy
 msgid  "Number of ticker runs"
 msgstr "ଘଣ୍ଟାର ଚାଲୁ ସଂଖ୍ଯା"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDELAY.String.Text
-#, fuzzy
 msgid  "Speed of ticker"
 msgstr "ଘଡିର ଗତି"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIAMOUNT.String.Text
-#, fuzzy
 msgid  "Ticker step size"
 msgstr "ଘଣ୍ଟା ସ୍ଟେପ ଆକାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_CONTOURFRAME.String.Text
-#, fuzzy
 msgid  "Outline text flow"
 msgstr "ବାହ୍ଯରେଖାର ଟେକ୍ସଟ ଧାରା"
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
-#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "ଆକୃତି ବ୍ଯବସ୍ଥିତ"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
-#, fuzzy
 msgid  "User-defined attributes"
 msgstr "ଉପୟୋଗକର୍ତ୍ତା-ବ୍ଯାଖ୍ଯାହୋଇଥିବା ଗୁଣଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
-#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "ଫଣ୍ଟ-ସ୍ବତନ୍ତ୍ର ରେଖା ଅନ୍ତରଦେବା ଉପୟୋଗ କର"
 
 #: source/svdraw/svdstr.src#SIP_SA_WORDWRAP.String.Text
-#, fuzzy
 msgid  "Word wrap text in shape"
 msgstr "ଆକୃତିରେ ଶବ୍ଦଗୁଡାଇବା ଟେକ୍ସଟ"
 
 #: source/svdraw/svdstr.src#SIP_SA_AUTOGROWSIZE.String.Text
-#, fuzzy
 msgid  "Auto grow shape to fit text"
 msgstr "ଟେକ୍ସଟକୁ ୟୋଗ୍ଯକରିବା ପାଇଁ ସ୍ବଯଂଚାଳିତ ବୃଦ୍ଧି ଆକୃତି"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE18.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 18"
 msgstr "୧୮ ପାଇଁ ସଂରକ୍ଷିତହୋଇଥିବା Svଡ୍ର"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE19.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 19"
 msgstr "୧୯ ପାଇଁ ସଂରକ୍ଷିତହୋଇଥିବା Svଡ୍ର"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
-#, fuzzy
 msgid  "Type of connector"
 msgstr "ସଂୟୋଜକର ପ୍ରକାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 1"
 msgstr "୧ ଦିଗବଳୀଯ ବସ୍ତୁ ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 1"
 msgstr "୧ ଲମ୍ବରୂପ ବସ୍ତୁ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 2"
 msgstr "୨ ଦିଗବଳୀଯ ବସ୍ତୁ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 2"
 msgstr "୨  ଲମ୍ବରୂପ ବସ୍ତୁ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 1"
 msgstr "୧ ଗ୍ଲୁ ବସ୍ତୁ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 2"
 msgstr "୨ ଗ୍ଲୁ ବସ୍ତୁ ଅନ୍ତର ଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
-#, fuzzy
 msgid  "Number of movable lines"
 msgstr "ଘୁଞ୍ଚାହୋଇଥିବା ରେଖାଗୁଡିକର ସଂଖ୍ଯା"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE1DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 1"
 msgstr "ଅଫସେଟ ରେଖା ୧"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE2DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 2"
 msgstr "ଅଫସେଟ ରେଖା ୨"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE3DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 3"
 msgstr "ଅଫସେଟ ରେଖା ୩"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
-#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "ଆଯତନ ମାପିବାର ପ୍ରକାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTHPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - horizontal position"
 msgstr "ଆଯତନ ମୂଲ୍ଯ-ଦିଗବଳୀଯ ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTVPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - vertical position"
 msgstr "ଆଯତନ ମୂଲ୍ଯ-ଲମ୍ବରୂପ ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURELINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension line space"
 msgstr "ଆଯତନ ରେଖା ଅନ୍ତର"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension help line overhang"
 msgstr "ଆଯତନ ସାହାୟ୍ଯ ରେଖା ଓଭରହ୍ଯାଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension help line spacing"
 msgstr "ଆଯତନ ସାହାୟ୍ଯ ରେଖା ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE1LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 1"
 msgstr "୧ ଆଯତନ ସାହାୟ୍ଯ ରେଖାର ବ୍ଯାକଲଗ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE2LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 2"
 msgstr "୨  ଆଯତନ ସାହାୟ୍ଯ ରେଖାର ବ୍ଯାକଲଗ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREBELOWREFEDGE.String.Text
-#, fuzzy
 msgid  "Lower edge dimensioning"
 msgstr "ତଳ ଧାର ଆଯତନକରଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
-#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "ଆଯତନ ରେଖାର ଏପାଖ ସେପାଖ ଆଯତନ ମୂଲ୍ଯ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTUPSIDEDOWN.String.Text
-#, fuzzy
 msgid  "Rotate dimension value by 180 degree"
 msgstr "୧୮୦ ଡିଗ୍ରୀ ଦ୍ବାରା ଦିଗ ମୂଲ୍ଯ ଘୂର୍ଣ୍ଣନ କର "
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension line overhang"
 msgstr "ଆଯତନ  ରେଖା ଓଭରହ୍ଯାଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit"
 msgstr "ମାପ ଯୁନିଟ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
-#, fuzzy
 msgid  "Additional scale factor"
 msgstr "ଅତିରିକ୍ତ ମାପ ଫ୍ଯାକ୍ଟର"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit display"
 msgstr "ମାପ ଯୁନିଟ ପଦର୍ଶନ "
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREFORMATSTRING.String.Text
-#, fuzzy
 msgid  "Dimension value format"
 msgstr "ଆଯତନ ମୂଲ୍ଯ ଫର୍ମାଟ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLE.String.Text
-#, fuzzy
 msgid  "AutoPositioning of the dimension value"
 msgstr "ଏହି ଆଯତନ ମୂଲ୍ଯର ସ୍ବଯଂଚାଳିତ ସ୍ଥାନଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLEVIEW.String.Text
-#, fuzzy
 msgid  "Angle for the automatic positioning of the dimension value"
 msgstr "ଆଯତନ ମୂଲ୍ଯର କୋଣ ପାଇଁ ଏହି ସ୍ବଯଂଚାଳିତ ସ୍ଥାନଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTISFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Determination of the dimension value angle"
 msgstr "ଆଯତନ ମୂଲ୍ଯ କୋଣର ନିଶ୍ଚିତକରିବା"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Angle of the dimension value"
 msgstr "ଏହି ଆଯତନ ମୂଲ୍ଯର କୋଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREDECIMALPLACES.String.Text
-#, fuzzy
 msgid  "Decimal places"
 msgstr "ଦଶମିକ ସ୍ଥାନଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE05.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved 5"
 msgstr "୫ ପାଇଁ ସଂରକ୍ଷିତ ଆଯତନକରଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE06.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 6"
 msgstr "୬ ପାଇଁ ସଂରକ୍ଷିତ ଆଯତନକରଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE07.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 7"
 msgstr "୭ ପାଇଁ ସଂରକ୍ଷିତ ଆଯତନକରଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
-#, fuzzy
 msgid  "Type of circle"
 msgstr "ବୃତ୍ତର ପ୍ରକାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "କୋଣ ଆରମ୍ଭ କର"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
-#, fuzzy
 msgid  "End angle"
 msgstr "ଶେଷ କୋଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE0.String.Text
-#, fuzzy
 msgid  "Circle reserved for 0"
 msgstr "୦ ପାଇଁ ସଂରକ୍ଷିତ ବୃତ୍ତ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE1.String.Text
-#, fuzzy
 msgid  "Circle reserved for 1"
 msgstr "୧ ପାଇଁ ସଂରକ୍ଷିତ ବୃତ୍ତ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE2.String.Text
-#, fuzzy
 msgid  "Circle reserved for 2"
 msgstr "୨ ପାଇଁ ସଂରକ୍ଷିତ ବୃତ୍ତ"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE3.String.Text
-#, fuzzy
 msgid  "Circle reserved for 3"
 msgstr "୩ ପାଇଁ ସଂରକ୍ଷିତ ବୃତ୍ତ"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object position"
 msgstr "ସୁରକ୍ଷିତ ବସ୍ତୁ ସ୍ଥାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object size"
 msgstr "ସୁରକ୍ଷିତ ବସ୍ତୁ ଆକାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Object, printable"
 msgstr "ବସ୍ତୁ, ମୁଦ୍ରଣକରିବା ୟୋଗ୍ଯ"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJVISIBLE.String.Text
-#, fuzzy
 msgid  "Object, visible"
 msgstr "ବସ୍ତୁ, ଦୃଶ୍ୟମାନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
-#, fuzzy
 msgid  "Level ID"
 msgstr "ସ୍ତର ID"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Layer"
 msgstr "ସ୍ତର"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "ବସ୍ତୁ ନାମ"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONX.String.Text
-#, fuzzy
 msgid  "Position X, complete"
 msgstr "ସ୍ଥାନ X,ସଂପୂର୍ଣ୍ଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y, complete"
 msgstr "ସ୍ଥାନ Y,ସଂପୂର୍ଣ୍ଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Total Width"
 msgstr "ମୋଟ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height, complete"
 msgstr "ଉଚ୍ଚତା, ସମାପ୍ତ"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONX.String.Text
-#, fuzzy
 msgid  "Single position X"
 msgstr "ଏକମାତ୍ର ସ୍ଥାନ X"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONY.String.Text
-#, fuzzy
 msgid  "Single position Y"
 msgstr "ଏକମାତ୍ର ସ୍ଥାନ Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Single width"
 msgstr "ଏକମାତ୍ର  ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Single height"
 msgstr "ଏକମାତ୍ର ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Logical width"
 msgstr "ୟୁକ୍ତିୟୁକ୍ତ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Logical height"
 msgstr "ୟୁକ୍ତିୟୁକ୍ତ ଉଚ୍ଚତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Single rotation angle"
 msgstr "ଏକମାତ୍ର ଘୂର୍ଣ୍ଣନ କୋଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Single shear angle"
 msgstr "ଏକମାତ୍ର ସିଅର କୋଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
-#, fuzzy
 msgid  "Move horizontally"
 msgstr "ଦିଗ୍ବଳୀଯଭାବରେ ଘୁଞ୍ଚାଅ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
-#, fuzzy
 msgid  "Move vertically"
 msgstr "ଲମ୍ବଭାବରେ ଘୁଞ୍ଚାଅ"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
-#, fuzzy
 msgid  "Resize X, single"
 msgstr "X ପୁନଃଆକାରଦିଅ,ଏକମାତ୍ର"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
-#, fuzzy
 msgid  "Resize Y, single"
 msgstr "Y ପୁନଃଆକାରଦିଅ,ଏକମାତ୍ର"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEONE.String.Text
-#, fuzzy
 msgid  "Single rotation"
 msgstr "ଏକମାତ୍ର ଘୂର୍ଣ୍ଣନ"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARONE.String.Text
-#, fuzzy
 msgid  "Single horizontal shear"
 msgstr "ଏକମାତ୍ର ଦିଗବଳୀଯ ସିଅର"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARONE.String.Text
-#, fuzzy
 msgid  "Single vertical shear"
 msgstr "ଏକମାତ୍ର  ଲମ୍ବରୂପ ସିଅର"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
-#, fuzzy
 msgid  "Resize X, complete"
 msgstr "Xକୁ ପୁନଃଆକାରଦିଅ ,ସଂପୂର୍ଣ୍ଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
-#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Y ପୁନଃଆକାରଦିଅ,ସଂପୂର୍ଣ୍ଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
-#, fuzzy
 msgid  "Rotate all"
 msgstr "ସବୁକୁ ଘୂରାଅ"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear horizontal, complete"
 msgstr "ସିଅର ଦିଗବଳୀଯ, ସଂପୂର୍ଣ୍ଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear vertical, complete"
 msgstr "ସିଅର ଲମ୍ବରୂପ,ସଂପୂର୍ଣ୍ଣ"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1X.String.Text
-#, fuzzy
 msgid  "Reference point 1 X"
 msgstr "ରେଫରେନସ ବିନ୍ଦୁ ୧ X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1Y.String.Text
-#, fuzzy
 msgid  "Reference point 1 Y"
 msgstr "ରେଫରେନସ ବିନ୍ଦୁ ୧ Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2X.String.Text
-#, fuzzy
 msgid  "Reference point 2 X"
 msgstr "ରେଫରେନସ ବିନ୍ଦୁ ୨ X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2Y.String.Text
-#, fuzzy
 msgid  "Reference point 2 Y"
 msgstr "ରେଫରେନସ ବିନ୍ଦୁ ୨ Y"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ହାଇପେନେସନ"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
-#, fuzzy
 msgid  "Display bullets"
 msgstr "ଗୁଳିଗୁଡିକୁ ପ୍ରଦର୍ଶନ କର"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
-#, fuzzy
 msgid  "Numbering indents"
 msgstr "ଇନଡେଣ୍ଟଗୁଡିକୁ ସଂଖ୍ଯାଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
-#, fuzzy
 msgid  "Numbering level"
 msgstr "ସ୍ତରକୁ  ସଂଖ୍ଯାଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
-#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "ଗୁଳିଗୁଡିକ ଏବଂ ସଂଖ୍ଯାକରଣ"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
-#, fuzzy
 msgid  "Indents"
 msgstr "ଇନଡେଣ୍ଟଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
-#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "ପରିଚ୍ଛେଦ ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
-#, fuzzy
 msgid  "Line spacing"
 msgstr "ରେଖା ଅନ୍ତରଦେବା"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
-#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "ପରିଚ୍ଛେଦ ପଂକ୍ତିକରଣ"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
-#, fuzzy
 msgid  "Tabulators"
 msgstr "ଟାବୁଲାଟରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "ଫଣ୍ଟ ରଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
-#, fuzzy
 msgid  "Character set"
 msgstr "ଅକ୍ଷର ସେଟ କର"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
-#, fuzzy
 msgid  "Font size"
 msgstr "ଫଣ୍ଟ ଆକାର"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
-#, fuzzy
 msgid  "Font width"
 msgstr "ଫଣ୍ଟ ଓସାର"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
-#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "ମୋଟା (ମୋଟାପା)"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "ରେଖାଙ୍କିତ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OVERLINE.String.Text
-#, fuzzy
 msgid  "Overline"
 msgstr "ଉପର ରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "ସ୍ଟ୍ରାଇକ୍ଥ୍ରୁ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "ତେର୍ଚ୍ଛା"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "ବାହ୍ଯରେଖା"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
-#, fuzzy
 msgid  "Font shadow"
 msgstr "ଫଣ୍ଟ ଛାଯା"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
-#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "ସୁପର ସ୍କ୍ରିପଟ/ସବ ସ୍କ୍ରିପଟ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
-#, fuzzy
 msgid  "Kerning"
 msgstr "କାର୍ନିଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
-#, fuzzy
 msgid  "Manual kerning"
 msgstr "ପୁସ୍ତିକା କାରନିଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
-#, fuzzy
 msgid  "No underline for spaces"
 msgstr "ସ୍ଥାନଗୁଡିକ ପାଇଁ କୌଣସି ରେଖାଙ୍କିତ ନାହିଁ"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
-#, fuzzy
 msgid  "Tabulator"
 msgstr "ଟାବୁଲାଟର"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_LINEBR.String.Text
-#, fuzzy
 msgid  "Optional line break"
 msgstr "ବୈକଳ୍ପିକ ରେଖା ଭାଙ୍ଗ"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
-#, fuzzy
 msgid  "Non-convertible character"
 msgstr "କୌଣସି-ବଦଳାଇବା ଅକ୍ଷର ନାହିଁ"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "କ୍ଷେତ୍ରଗୁଡିକ"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "ଲାଲ"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "ସବୁଜ"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "ନେଳି"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "ଉଜ୍ଜ୍ବଳତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "ସ୍ପଷ୍ଟତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "ଗାମା"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "ସ୍ବଚ୍ଛତା"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "ଓଲଟାଅ"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "ଲେଖାଚିତ୍ରଗୁଡିକ ମୋଡ"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "କ୍ରପ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
-#, fuzzy
 msgid  "Media object"
 msgstr "ମିଡିଆ ବସ୍ତୁ "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
-#, fuzzy
 msgid  "Media objects"
 msgstr "ମାଧ୍ଯମ ବସ୍ତୁଗୁଡିକ "
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
-#, fuzzy
 msgid  "Apply table attributes"
 msgstr "ଟେବୁଲ ଗୁଣଗୁଡିକ ପ୍ରଯୋଗ କର"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
-#, fuzzy
 msgid  "AutoFormat table"
 msgstr "ସାରଣୀକୁ ସ୍ୱୟଂ ସଜ୍ଜିକୃତ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
-#, fuzzy
 msgid  "Insert column"
 msgstr "ସ୍ତମ୍ଭ ଭର୍ତ୍ତି କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "ପଂକ୍ତି ଭର୍ତ୍ତି କର"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
-#, fuzzy
 msgid  "Delete column"
 msgstr "ସ୍ତମ୍ଭ ବିଲୋପ କର"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "ପଂକ୍ତିକୁ ବିଲୋପ କର"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
-#, fuzzy
 msgid  "Split cells"
 msgstr "କୋଷଗୁଡ଼ିକୁ ଅଲଗାକରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
-#, fuzzy
 msgid  "Merge cells"
 msgstr "କୋଷଗୁଡ଼ିକୁ ମିଶାନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
-#, fuzzy
 msgid  "Format cell"
 msgstr "ଫର୍ମାଟ କୋଷ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
-#, fuzzy
 msgid  "Distribute rows"
 msgstr "ପଂକ୍ତିଗୁଡିକୁ ବିତରଣ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
-#, fuzzy
 msgid  "Distribute columns"
 msgstr "ସ୍ତମ୍ଭଗୁଡିକୁ ବିତରଣ କରନ୍ତୁ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
-#, fuzzy
 msgid  "Table style"
 msgstr "ସାରଣୀ ଶୈଳୀ"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
-#, fuzzy
 msgid  "Table style settings"
 msgstr "ସାରଣୀ ଶୈଳୀ ସଂରଚନା"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "ଟେବୁଲ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "ଟେବୁଲ୍ଗୁଡିକ"
 
@@ -11338,62 +10323,50 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
-#, fuzzy
 msgid  "Table Design Styles"
 msgstr "ସାରଣୀ ରଚନା ଶୈଳୀ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "No Fill"
 msgstr "ନାହିଁ ପୂରଣକର"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
-#, fuzzy
 msgid  "Pattern"
 msgstr "ନମୁନା"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "ସୀମାଗୁଡିକ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
-#, fuzzy
 msgid  "Border Style"
 msgstr "ସୀମା ଶୈଳୀ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
-#, fuzzy
 msgid  "Border Color"
 msgstr "ସୀମା ରଙ୍ଗ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
-#, fuzzy
 msgid  "Highlighting"
 msgstr "ବିଶେଷଭାବରେ ଦେଖାଇବା"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "ପୃଷ୍ଠଭାଗ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ସ୍ବୟଂଚାଳିତ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
-#, fuzzy
 msgid  "Pages"
 msgstr "ପୃଷ୍ଠାଗୁଡିକ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
-#, fuzzy
 msgid  "Clear formatting"
 msgstr "ପରିଷ୍କାର ଫରମାଟକରିବା"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
-#, fuzzy
 msgid  "More..."
 msgstr "ଅଧିକ..."
 
@@ -11402,342 +10375,274 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Direction"
 msgstr " ଦିଗ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "ଦୃଷ୍ଟିକୋଣ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
-#, fuzzy
 msgid  "P~arallel"
 msgstr "ସମାନ୍ତର"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
-#, fuzzy
 msgid  "Extrusion North-West"
 msgstr " ଉତ୍ତର-ପଶ୍ଚିମ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
-#, fuzzy
 msgid  "Extrusion North"
 msgstr "ଉତ୍ତର ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
-#, fuzzy
 msgid  "Extrusion North-East"
 msgstr " ଉତ୍ତର-ପୂର୍ବ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
-#, fuzzy
 msgid  "Extrusion West"
 msgstr " ପଶ୍ଚିମ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
-#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "ପଛଭାଗଗୁଡିକ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
-#, fuzzy
 msgid  "Extrusion East"
 msgstr " ପୂର୍ବ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
-#, fuzzy
 msgid  "Extrusion South-West"
 msgstr " ଦକ୍ଷିଣ-ପଶ୍ଚିମ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
-#, fuzzy
 msgid  "Extrusion South"
 msgstr " ଦକ୍ଷିଣ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
-#, fuzzy
 msgid  "Extrusion South-East"
 msgstr " ଦକ୍ଷିଣ-ପୂର୍ବ ନିଷ୍କାସନ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "ନିଷ୍କାସନ ଗଭୀରତା"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "ପ୍ରଥା..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
-#, fuzzy
 msgid  "~Infinity"
 msgstr "ଅସୀମତା"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "ନିଷ୍କାସନ ଆଲୁଅକରିବା"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
-#, fuzzy
 msgid  "~Bright"
 msgstr "ଉଜ୍ଜ୍ବଳତା"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "ସ୍ବାଭାବିକ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
-#, fuzzy
 msgid  "~Dim"
 msgstr "ଡିମ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "ନିଷ୍କାସନ ପୃଷ୍ଠ "
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
-#, fuzzy
 msgid  "~Wire Frame"
 msgstr "ଉଏର ଫ୍ରେମ "
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
-#, fuzzy
 msgid  "~Matt"
 msgstr "ମାଟ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
-#, fuzzy
 msgid  "~Plastic"
 msgstr "ପ୍ଲାଷ୍ଟିକ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
-#, fuzzy
 msgid  "Me~tal"
 msgstr "ପଦାର୍ଥ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "ନିଷ୍କାସନ ଗଭୀର"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "ମୂଲ୍ଯ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Extrusion Color"
 msgstr "ନିଷ୍କାସନ ରଙ୍ଗ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0.String.Text
-#, fuzzy
 msgid  "~0 cm"
 msgstr "୦ ସେଣ୍ଟିମିଟର"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1.String.Text
-#, fuzzy
 msgid  "~1 cm"
 msgstr "୧ ସେଣ୍ଟିମିଟର"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2.String.Text
-#, fuzzy
 msgid  "~2.5 cm"
 msgstr "୨.୫ ସେଣ୍ଟିମିଟର"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3.String.Text
-#, fuzzy
 msgid  "~5 cm"
 msgstr "୫ ସେଣ୍ଟିମିଟର"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
-#, fuzzy
 msgid  "10 ~cm"
 msgstr "୧୦ ସେଣ୍ଟିମିଟର"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
-#, fuzzy
 msgid  "0 inch"
 msgstr "୦ ଇଞ୍ଚ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
-#, fuzzy
 msgid  "0.~5 inch"
 msgstr "୦.୫ ଇଞ୍ଚ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
-#, fuzzy
 msgid  "~1 inch"
 msgstr "୧ ଇଞ୍ଚ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
-#, fuzzy
 msgid  "~2 inch"
 msgstr "୨  ଇଞ୍ଚ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
-#, fuzzy
 msgid  "~4 inch"
 msgstr "୪  ଇଞ୍ଚ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "ଫଣ୍ଟ କାର୍ୟ୍ଯ ମଞ୍ଚ "
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
-#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "ଗୋଟିଏ ଫଣ୍ଟକାର୍ୟ୍ଯ ଶୈଳୀ ମନୋନିତକର:"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
-#, fuzzy
 msgid  "Click to edit text"
 msgstr "ଟେକ୍ସଟ ସମ୍ପାଦନକରିବା ପାଇଁ ଦବାନ୍ତୁ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "ଫଣ୍ଟକାର୍ୟ୍ଯ ପଂକ୍ତିକରଣ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
-#, fuzzy
 msgid  "~Left Align"
 msgstr "ବାଁପାଖର  ପଂକ୍ତିକରଣ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "ମଧ୍ଯଭାଗ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
-#, fuzzy
 msgid  "~Right Align"
 msgstr "ଡାହାଣପାଖର ପଂକ୍ତିକରଣ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
-#, fuzzy
 msgid  "~Word Justify"
 msgstr "ଶବ୍ଦ ୟୁକ୍ତିୟୁକ୍ତ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
-#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "ୟୁକ୍ତିୟୁକ୍ତ ପ୍ରସାର କର"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "ଅକ୍ଷରରୂପ କାର୍ୟ୍ଯ ଅକ୍ଷର ମଧ୍ଯରେ ଅନ୍ତର ଦେବା"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
-#, fuzzy
 msgid  "~Very Tight"
 msgstr "ବହୁତ ଟାଇଟ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
-#, fuzzy
 msgid  "~Tight"
 msgstr "ଟାଇଟ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "ସ୍ବାଭାବିକ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
-#, fuzzy
 msgid  "~Loose"
 msgstr "ଲୁଜ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
-#, fuzzy
 msgid  "Very ~Loose"
 msgstr "ବହୁତ ଲୁଜ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "ପ୍ରଥା..."
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_KERN_PAIRS.String.Text
-#, fuzzy
 msgid  "~Kern Character Pairs"
 msgstr "କର୍ନ ଅକ୍ଷର ୟୋଡିଗୁଡିକ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "ଫଣ୍ଟକାର୍ୟ୍ଯ ଅକ୍ଷର ଅନ୍ତର ଦେବା"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "ମୂଲ୍ଯ"
 
 #: source/tbxctrls/tbunosearchcontrollers.src#RID_SVXSTR_FINDBAR_FIND.String.Text
-#, fuzzy
 msgid  "Find"
 msgstr "ଖୋଜନ୍ତୁ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
-#, fuzzy
 msgid  "Filters"
 msgstr "ଫିଲ୍ଟରଗୁଡିକ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics Mode"
 msgstr "ଲେଖାଚିତ୍ରଗୁଡିକ ମୋଡ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "ଲାଲ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "ସବୁଜ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "ନେଳି"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "ଉଜ୍ଜ୍ବଳତା"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "ସ୍ପଷ୍ଟତା"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "ଗାମା"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "ସ୍ବଚ୍ଛତା"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "କ୍ରପ"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "ରଙ୍ଗଗୁଡକ"
 
@@ -11746,112 +10651,90 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "ପଦକ୍ଷେପ ବାତିଲ କରିବା ପାଇଁ କାର୍ଯ୍ୟ: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "ପଦକ୍ଷେପ ବାତିଲ କରିବା ପାଇଁ କାର୍ଯ୍ୟ: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "ପୁଣିଥରେ କରିବା ପାଇଁ କାର୍ଯ୍ୟ: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "ପୁଣିଥରେ କରିବା ପାଇଁ କାର୍ଯ୍ୟ: $(ARG1)"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
-#, fuzzy
 msgid  "Extrusion"
 msgstr "ନିଷ୍କାସନ "
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
-#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "ନିଷ୍କାସନ ପ୍ରଯୋଗ କର ଆରମ୍ଭ/ଶେଷ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
-#, fuzzy
 msgid  "Tilt Down"
 msgstr "ଟିଲଟ ତଳ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
-#, fuzzy
 msgid  "Tilt Up"
 msgstr "ଟିଲଟ ଉପର"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
-#, fuzzy
 msgid  "Tilt Left"
 msgstr "ଟିଲଟ ବାମ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
-#, fuzzy
 msgid  "Tilt Right"
 msgstr "ଟିଲଟ ଡାହାଣ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
-#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "ନିଷ୍କାଷନ ଗଭୀରତା ପରିବର୍ତ୍ତନ କର"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
-#, fuzzy
 msgid  "Change Orientation"
 msgstr "ଓରିଏନଟେସନ ପରିବର୍ତ୍ତନକର"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
-#, fuzzy
 msgid  "Change Projection Type"
 msgstr "ପ୍ରୋଜେକସନ ପ୍ରକାର ପରିବର୍ତ୍ତନ କର"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
-#, fuzzy
 msgid  "Change Lighting"
 msgstr "ଆଲୁଅକରିବା ପରିବର୍ତ୍ତନକରିବା"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
-#, fuzzy
 msgid  "Change Brightness"
 msgstr "ଉଜ୍ଜ୍ବଳତା ପରିବର୍ତ୍ତନକରିବା"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
-#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "ନିଷ୍କାସନ ପୃଷ୍ଠଭାଗ ପରିବର୍ତ୍ତନ କର"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "ନିଷ୍କାସନ  ରଙ୍ଗ ପରିବର୍ତ୍ତନ କର"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
-#, fuzzy
 msgid  "Fontwork"
 msgstr "ଅକ୍ଷରରୂପକାର୍ଯ୍ୟ"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "ଫଣ୍ଟକାର୍ୟ୍ଯ ଆକୃତି ପ୍ରଯୋଗ କର"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "ଫଣ୍ଟକାର୍ୟ୍ଯ ସମାନ ଚିଠି ଉଚ୍ଚତାଗୁଡିକ ପ୍ରଯୋଗ କର"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "ଫଣ୍ଟକାର୍ୟ୍ଯ ପଂକ୍ତିକରଣ ପ୍ରଯୋଗ କର"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "ଫଣ୍ଟକାର୍ୟ୍ଯ ଅକ୍ଷର ଅନ୍ତରଦେବା ପ୍ରଯୋଗ କର"
 

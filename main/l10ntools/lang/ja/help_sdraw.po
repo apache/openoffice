@@ -37,7 +37,7 @@ msgstr "この機能の見つけ方"
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">この機能の見つけ方</variable>"
 
 #: source/text/sdraw/01/04010000.xhp#tit
 msgid  "Insert Page"
@@ -45,11 +45,11 @@ msgstr "ページの挿入"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"ページの挿入\">ページの挿入</link>"
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
 msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seitetext\">選択したページの後に空白のページを挿入します。</variable>"
 
 #: source/text/sdraw/04/01020000.xhp#tit
 msgid  "Shortcut Keys for Drawings"
@@ -57,11 +57,11 @@ msgstr "図形描画のショートカットキー"
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3156441
 msgid  "\<bookmark_value\>shortcut keys;in drawings\</bookmark_value\>         \<bookmark_value\>drawings; shortcut keys\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>ショートカットキー; 図形描画</bookmark_value> <bookmark_value>図形描画; ショットカットキー</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
 msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_keys\"><link href=\"text/sdraw/04/01020000.xhp\" name=\"図形描画のショートカットキー\">図形描画のショートカットキー</link></variable>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
@@ -69,7 +69,7 @@ msgstr "図形描画ドキュメントの作業に使えるショートカット
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154730.103
 msgid  "You can also use the \<link href=\"text/shared/04/01010000.xhp\" name=\"general shortcut keys for $[officename]\"\>general shortcut keys for $[officename]\</link\>."
-msgstr ""
+msgstr "ここに記載されている以外の一般的な <link href=\"text/shared/04/01010000.xhp\" name=\"$[officename] ショートカットキー\">$[officename] ショートカットキー</link> も使用できます。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149121.3
 msgid  "Function Keys for Drawings"
@@ -81,7 +81,7 @@ msgstr "ショートカットキー"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153713.6
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>作用</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150044.7
 msgid  "F2"
@@ -101,7 +101,7 @@ msgstr "グループを開いて、個々のオブジェクトを編集します
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155113.11
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command) </caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (F3)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3159238.12
 msgid  "Close group editor."
@@ -113,7 +113,7 @@ msgstr "(Shift)＋(F3)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152994.14
 msgid  "Opens the \<emph\>Duplicate\</emph\> dialog."
-msgstr ""
+msgstr "<emph>複製</emph> ダイアログを開きます。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154488.15
 msgid  "F4"
@@ -121,7 +121,7 @@ msgstr "(F4)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149406.16
 msgid  "Opens the \<emph\>Position and Size\</emph\> dialog."
-msgstr ""
+msgstr "<emph>位置とサイズ</emph> ダイアログを開きます。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3148870.21
 msgid  "F5"
@@ -129,7 +129,7 @@ msgstr "(F5)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153917.22
 msgid  "Opens the \<emph\>Navigator\</emph\>."
-msgstr ""
+msgstr "<emph>ナビゲータ</emph> を開きます。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3157982.25
 msgid  "F7"
@@ -141,11 +141,11 @@ msgstr "スペルチェックを実行します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152869.27
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F7"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (F7)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154765.28
 msgid  "Opens the \<emph\>Thesaurus\</emph\>."
-msgstr ""
+msgstr "<emph>類義語辞典</emph> を開きます。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146962.29
 msgid  "F8"
@@ -157,7 +157,7 @@ msgstr "制御点の編集 オン/オフ"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149317.31
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+F8"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Shift) + (F8)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147250.32
 msgid  "Fits to frame."
@@ -165,7 +165,7 @@ msgstr "枠に合わせます。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150434.35
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+T\</caseinline\>\<defaultinline\>F11\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+T</caseinline><defaultinline>F11</defaultinline></switchinline> キー"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3151389.36
 msgid  "Opens Styles and Formatting window."
@@ -173,7 +173,7 @@ msgstr "スタイルと書式設定 ウィンドウを開きます。"
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3150393
 msgid  "\<bookmark_value\>zooming;shortcut keys\</bookmark_value\>      \<bookmark_value\>drawings; zoom function in\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>ズーム; ショートカットキー</bookmark_value> <bookmark_value>図形描画; ズーム機能</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150393.41
 msgid  "Shortcut Keys for Drawings"
@@ -185,7 +185,7 @@ msgstr "ショートカットキー"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3146323.43
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>作用</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149946.44
 msgid  "Plus(+) Key"
@@ -221,7 +221,7 @@ msgstr "現在の選択を拡大します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150867.52
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+G"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Shift) + (G)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149250.53
 msgid  "Groups selected objects."
@@ -229,7 +229,7 @@ msgstr "選択したオブジェクトをグループ化します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149955.54
 msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+A"
-msgstr ""
+msgstr "(Shift) + <switchinline select=\"sys\"><caseinline select=\"MAC\">(Command) + (Option)</caseinline><defaultinline>(Ctrl) + (Alt)</defaultinline></switchinline> + (A)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148582.55
 msgid  "Ungroups selected group."
@@ -237,7 +237,7 @@ msgstr "選択したオブジェクトのグループ化を解除します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146852.56
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Shift) + (K)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153110.57
 msgid  "Combines selected objects."
@@ -245,7 +245,7 @@ msgstr "選択したオブジェクトを組み合わせます。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153567.58
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command) + (Option) </caseinline><defaultinline>(Ctrl) + (Alt)</defaultinline></switchinline> + (Shift) + (K)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147366.59
 msgid  "Uncombines selected objects."
@@ -253,7 +253,7 @@ msgstr "選択したオブジェクトの組み合わせを解除します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153730.60
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Shift) + (+)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155928.61
 msgid  "Bring to front."
@@ -261,7 +261,7 @@ msgstr "最前面へ移動します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145245.62
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (+)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148393.63
 msgid  "Bring forward."
@@ -269,7 +269,7 @@ msgstr "前面へ移動します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150928.64
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (-)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156062.65
 msgid  "Send backward."
@@ -277,7 +277,7 @@ msgstr "背面へ移動します。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145298.66
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Shift) + (-)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149028.67
 msgid  "Send to back."
@@ -293,7 +293,7 @@ msgstr "ショートカットキー"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155370.70
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>作用</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AD7
 msgid  "Page Up"
@@ -313,7 +313,7 @@ msgstr "次のページに切り替え"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AED
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Up"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Shift) + (G)"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AFD
 msgid  "Switch to previous layer"
@@ -321,7 +321,7 @@ msgstr "前のレイヤーに切り替え"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF8
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Down"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Page Down)"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF2
 msgid  "Switch to next layer"
@@ -337,7 +337,7 @@ msgstr "選択したオブジェクトを矢印方向に移動"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156259.73
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Arrow Key"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (矢印キー)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147171.74
 msgid  "Moves the page view in the direction of the arrow key."
@@ -345,7 +345,7 @@ msgstr "ページ表示を矢印方向に移動"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152484.79
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>-click while dragging an object. Note: you must first enable the \<link href=\"text/shared/optionen/01070500.xhp\" name=\"Copy when moving\"\>Copy when moving\</link\> option in \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - %PRODUCTNAME Draw - General to use this shortcut key."
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> クリックしてオブジェクトをドラッグ。注: このショートカットキーを使用するためには、<link href=\"text/shared/optionen/01070500.xhp\" name=\"Copy when moving\">移動させるときにコピー</link> オプションを <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME → 設定</caseinline><defaultinline>ツール → オプション</defaultinline></switchinline> → %PRODUCTNAME Draw → 全般 でオンにしておきます。"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149450.80
 msgid  "Creates a copy of the dragged object when mouse button is released."
@@ -353,7 +353,7 @@ msgstr "選択したオブジェクトの移動時にコピーの作成"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154643.104
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter with keyboard focus (F6) on a drawing object icon on Tools bar"
-msgstr ""
+msgstr "ツールバーの図形描画オブジェクトアイコンにキーボードでフォーカス (F6 キー) し <switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+(Enter)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3150756.105
 msgid  "Inserts a drawing object of default size into the center of the current view."
@@ -385,7 +385,7 @@ msgstr "テキスト入力の可能なオブジェクトが選択されている
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155851.112
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (Enter)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154046.113
 msgid  "Enters text mode if a text object is selected. If there are no text objects or if you have cycled through all of the text objects on the page, a new page is inserted."
@@ -393,15 +393,15 @@ msgstr "テキスト入力の可能なオブジェクトが選択されている
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149977.81
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Option)</caseinline><defaultinline>(Alt)</defaultinline></switchinline> キー"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152812.82
 msgid  "Press the \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> key and drag with the mouse to draw or resize an object from the center of the object outward."
-msgstr ""
+msgstr "オブジェクトを描画またはサイズ変更するには、<switchinline select=\"sys\"><caseinline select=\"MAC\">(Option)</caseinline><defaultinline>(Alt)</defaultinline></switchinline> キーを押しながら、オブジェクトの中央から外側に向かってマウスをドラッグします。"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3143232.83
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> + click on an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Option)</caseinline><defaultinline>(Alt)</defaultinline></switchinline> キーを押しながら、オブジェクトをクリックする"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156007.84
 msgid  "Selects the object behind the currently selected object."
@@ -409,7 +409,7 @@ msgstr "重なったオブジェクトの選択。現在選択したオブジェ
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3147252.85
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>+Shift+click an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">(Option)</caseinline><defaultinline>(Alt)</defaultinline></switchinline> + (Shift) キーを押しながら、オブジェクトをクリックする"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3145666.86
 msgid  "Selects the object in front of the currently selected object."
@@ -469,11 +469,11 @@ msgstr "オブジェクトを整列、配置、および分布する"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3149656.73
 msgid  "\<variable id=\"align_arrange\"\>\<link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Arranging and Aligning Objects\"\>Arranging, Aligning and Distributing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"align_arrange\"><link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"オブジェクトの整列と配置\">オブジェクトの整列、配置、および分布</link></variable>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#bm_id3125863
 msgid  "\<bookmark_value\>arranging; objects (guide)\</bookmark_value\>\<bookmark_value\>objects;aligning\</bookmark_value\>\<bookmark_value\>distributing draw objects\</bookmark_value\>\<bookmark_value\>aligning;draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>整列; オブジェクト (ガイド)</bookmark_value><bookmark_value>オブジェクト;配置する</bookmark_value><bookmark_value>図形描画オブジェクトの分布</bookmark_value><bookmark_value>配置;図形描画オブジェクト</bookmark_value>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3125863.17
 msgid  "Arranging Objects"
@@ -489,27 +489,27 @@ msgstr "位置を変更するオブジェクトをクリックします。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150327.78
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to bring up the context menu and choose one of the arrange options:"
-msgstr ""
+msgstr "<item type=\"menuitem\">変更 → 整列</item> 選択してコンテキストメニューを開いて、整列オプションの 1 つを選択します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107E6
 msgid  "\<emph\>Bring to Front\</emph\> places the object on top of all other objects"
-msgstr ""
+msgstr "<emph>最前面へ移動</emph> は、すべてのオブジェクトのうち、当該オブジェクトを最前面に移動します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107EC
 msgid  "\<emph\>Bring Forward\</emph\> places the object one place forward in the stack of objects"
-msgstr ""
+msgstr "<emph>前面へ移動</emph> は、当該オブジェクトの重なる順序を 1 つ上げます。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F2
 msgid  "\<emph\>Send Backward\</emph\> places the object one place back in the stack of objects"
-msgstr ""
+msgstr "<emph>背面へ移動</emph> は、当該オブジェクトの重なる順序を 1 つ下げます。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F8
 msgid  "\<emph\>Send to Back\</emph\> places the object behind all other objects"
-msgstr ""
+msgstr "<emph>最背面へ移動</emph> は、すべてのオブジェクトのうち、当該オブジェクトを最背面に移動します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107FE
 msgid  "\<emph\>Behind Object\</emph\> places the object behind another object that you select"
-msgstr ""
+msgstr "<emph>オブジェクトの背面へ</emph> は、当該オブジェクトを別の選択したオブジェクトの後ろに移動します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3155766.79
 msgid  "Arranging an Object Behind Another Object"
@@ -521,7 +521,7 @@ msgstr "位置を変更するオブジェクトをクリックします。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3154253.80
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Behind Object\</emph\>. The mouse pointer changes to a hand."
-msgstr ""
+msgstr "<item type=\"menuitem\">変更 → 整列</item> を選択してコンテキストメニューを開いて、<emph>オブジェクトの背面へ</emph> を選択します。マウスポインタは手の形に変わります。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3149126.81
 msgid  "Click the object behind which you want to place the selected object."
@@ -537,7 +537,7 @@ msgstr "両方のオブジェクトを選択するには、Shift キーを押し
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3155114.84
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Reverse\</emph\>."
-msgstr ""
+msgstr "<item type=\"menuitem\">変更 → 整列</item> を選択してコンテキストメニューを開き、<emph>入れ替え</emph> を選択します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3166425.21
 msgid  "Aligning Objects"
@@ -545,7 +545,7 @@ msgstr "オブジェクトを配置する"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3152994.22
 msgid  "The \<emph\>Alignment\</emph\> function enables you to align objects relative to each other or relative to the page."
-msgstr ""
+msgstr "<emph>配置</emph> 機能を使用すると、オブジェクトは、各オブジェクトと相対的に、あるいは、ページと相対的に配置されます。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A3
 msgid  "Select an object to align it to the page or select multiple objects to align them relative to each other."
@@ -553,7 +553,7 @@ msgstr "オブジェクトを 1 つ選択して、ページに合わせるか、
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A7
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Alignment\</item\> and select one of the alignment options."
-msgstr ""
+msgstr "<item type=\"menuitem\">変更 → 配置</item> を選択して、配置オプションの 1 つを選択します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108AE
 msgid  "Distributing Objects"
@@ -561,7 +561,7 @@ msgstr "オブジェクトを分布する"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3151390.71
 msgid  "If you select three or more objects in Draw, you can also use the \<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\"\>\<emph\>Distribution\</emph\>\</link\> command to distribute the vertical and horizontal spacing evenly between the objects."
-msgstr ""
+msgstr "Draw で 3 つ以上のオブジェクトを選択した場合、<link href=\"text/shared/01/05360000.xhp\" name=\"分布\"><emph>分布</emph></link> コマンドを使用すると、これらのオブジェクトは、垂直方向または水平方向に、お互いの距離を均等に分布されます。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108CE
 msgid  "Select three or more objects to be distributed."
@@ -569,15 +569,15 @@ msgstr "分布するオブジェクトを 3 つ以上選択します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108D2
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Distribution\</item\>."
-msgstr ""
+msgstr "<item type=\"menuitem\">変更 → 分布</item> を選択します。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108DA
 msgid  "Select the horizontal and vertical distribution option and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "水平または垂直の分布オプションを選択して、<emph>OK</emph> をクリックします。"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150535.72
 msgid  "Selected objects are distributed evenly along the horizontal or vertical axis. The two outermost objects are used as reference points and do not move when the \<emph\>Distribution\</emph\> command is applied."
-msgstr ""
+msgstr "選択したオブジェクトは、水平軸または垂直軸を中心として、均等に分布されます。最も外側にある 2 つのオブジェクトは参照点として使用され、<emph>分布</emph> コマンドを適用しても移動しません。"
 
 #: source/text/sdraw/guide/color_define.xhp#tit
 msgid  "Defining Custom Colors"
@@ -585,11 +585,11 @@ msgstr "ユーザー定義色を定義する"
 
 #: source/text/sdraw/guide/color_define.xhp#bm_id3149263
 msgid  "\<bookmark_value\>colors; defining and saving\</bookmark_value\>      \<bookmark_value\>user-defined colors\</bookmark_value\>      \<bookmark_value\>custom colors\</bookmark_value\>"
-msgstr ""
+msgstr " <bookmark_value>色; 定義と保存</bookmark_value>      <bookmark_value>ユーザー定義の色</bookmark_value>      <bookmark_value>ユーザー定義の色</bookmark_value>"
 
 #: source/text/sdraw/guide/color_define.xhp#hd_id3149263.7
 msgid  "\<variable id=\"color_define\"\>\<link href=\"text/sdraw/guide/color_define.xhp\" name=\"Defining Custom Colors\"\>Defining Custom Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"color_define\"><link href=\"text/sdraw/guide/color_define.xhp\" name=\"色を自分で定義する\">色を自分で定義する</link></variable>"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154511.8
 msgid  "If you want, you can mix a custom color and add it to a color table."
@@ -601,7 +601,7 @@ msgstr "独自の色を定義するには、次の操作を行います。"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3150327.25
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Colors\</emph\> tab. A table of the predefined colors is displayed."
-msgstr ""
+msgstr "<emph>書式 → 表面</emph> を選択して、<emph>色</emph> タブをクリックすると、定義済みの色テーブルが表示されます。"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154657.13
 msgid  "Changes made to the standard color table are permanent and are saved automatically."
@@ -629,7 +629,7 @@ msgstr "スピンボタンで数値設定して色を設定します。数値の
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152871.18
 msgid  "You can also create a color using a color spectrum. Click the \<emph\>Edit\</emph\> button to open the \<link href=\"text/shared/optionen/01010501.xhp\" name=\"Color\"\>\<emph\>Color\</emph\>\</link\> dialog. Click a color. Use the Hue, Saturation, and Brightness boxes to adjust your color selection."
-msgstr ""
+msgstr "カラースペクトルを使って色を選択するには、表面ダイアログの見出し <link href=\"text/shared/optionen/01010501.xhp\" name=\"色\"><emph>色</emph></link> で使用する色を選択して <emph>OK</emph> をクリックします。選択した色の色合い、彩度、明度の微調整を行うには <emph>編集</emph> ボタンをクリックします。"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3153011.19
 msgid  "Do one of the following:"
@@ -637,15 +637,15 @@ msgstr "気に入った色が作成できたら、ベースとして使った色
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3147244.26
 msgid  "If you want to replace the color in the standard color table that your custom color is based on, click \<emph\>Modify\</emph\>."
-msgstr ""
+msgstr "色をユーザー定義する際に、基準色を変更する必要がある場合は <emph>変更</emph> をクリックします。"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145116.20
 msgid  "If you want to add your custom color to the standard color table, enter a name in the \<emph\>Name\</emph\> text box and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "ユーザーが新しく定義した色は、<emph>名前</emph> のテキストボックスで名前を付けてから <emph>追加</emph> をクリックし <emph>OK</emph> ボタンで確認します。"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145236.23
 msgid  "\<link href=\"text/shared/01/03170000.xhp\" name=\"Color bar\"\>Color bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03170000.xhp\" name=\"カラーバー\">カラーバー</link>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#tit
 msgid  "Combining Objects and Constructing Shapes"
@@ -653,11 +653,11 @@ msgstr "オブジェクトを組み合わせてシェイプを作る"
 
 #: source/text/sdraw/guide/combine_etc.xhp#bm_id3156443
 msgid  "\<bookmark_value\>combining; draw objects\</bookmark_value\>\<bookmark_value\>merging; draw objects\</bookmark_value\>\<bookmark_value\>connecting; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; combining\</bookmark_value\>\<bookmark_value\>intersecting draw objects\</bookmark_value\>\<bookmark_value\>polygons; intersecting/subtracting/merging\</bookmark_value\>\<bookmark_value\>subtracting polygons\</bookmark_value\>\<bookmark_value\>constructing shapes\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>組み合わせる; 図形描画オブジェクト</bookmark_value><bookmark_value>合わせて 1 つにする; 図形描画オブジェクト</bookmark_value><bookmark_value>接続; 図形描画オブジェクト</bookmark_value><bookmark_value>図形描画オブジェクト; 合わせて 1 つにする</bookmark_value><bookmark_value>図形描画オブジェクト; 接続</bookmark_value><bookmark_value>図形描画オブジェクトの一部を切り取る</bookmark_value><bookmark_value>多角形; 一部を切り取る</bookmark_value><bookmark_value>多角形を 1 つにして引く</bookmark_value><bookmark_value>多角形; 1 つにして引く</bookmark_value><bookmark_value>多角形; 合わせて 1 つにする</bookmark_value>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3156443.64
 msgid  "\<variable id=\"combine_etc\"\>\<link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Combining Objects and Constructing Shapes\"\>Combining Objects and Constructing Shapes\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"combine_etc\"><link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"複数のオブジェクトを組み合わせてシェイプを作る\">複数のオブジェクトを組み合わせてシェイプを作る</link></variable>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3149020.65
 msgid  "Combined drawing objects act as grouped objects, except that you cannot enter the group to edit the individual objects. "
@@ -677,7 +677,7 @@ msgstr "複数の 2D オブジェクトを選択します。"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145587.67
 msgid  "Choose \<emph\>Modify - Combine\</emph\>."
-msgstr ""
+msgstr "コンテキストメニューで <emph>組み合わせ</emph> を選択します。"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3146978.33
 msgid  "Unlike groups, a combined object takes on the properties of the lowermost object in the stacking order. You can split apart combined objects, but the original object properties are lost."
@@ -689,7 +689,7 @@ msgstr "オブジェクトを組み合わせると、オブジェクト同士の
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3156019
 msgid  " \<image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"\>\<alt id=\"alt_id3157978\"\>Illustration for combining objects\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"><alt id=\"alt_id3157978\">オブジェクトを組み合わせる図</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153249.35
 msgid  "In the illustration, the uncombined objects are on the left and the combined objects on the right."
@@ -701,7 +701,7 @@ msgstr "シェイプの形成"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150049.63
 msgid  "You can construct shapes by applying the \<link href=\"text/simpress/01/13180000.xhp\" name=\"Shapes\"\>\<emph\>Shapes\</emph\>\</link\> \<emph\>- Merge, Subtract and Intersect\</emph\> commands to two or more drawing objects."
-msgstr ""
+msgstr "シェイプを生成するには、<link href=\"text/simpress/01/13180000.xhp\" name=\"シェイプ\"><emph>シェイプ</emph></link> → <emph>合わせて 1 つにする、1 つにして引く、または一部を切り取る</emph> コマンドを複数の図形描画オブジェクトに適用します。"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3147403.88
 msgid  "Shape commands only work on 2D objects."
@@ -721,19 +721,19 @@ msgstr "複数の 2D オブジェクトを選択します。"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150650.70
 msgid  "Choose \<emph\>Modify - Shapes\</emph\> and one of the following:"
-msgstr ""
+msgstr "<emph>変更する → シェイプ</emph> を:選択し、次のいずれかのコマンドを選択します。"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145829.91
 msgid  " \<emph\>Merge\</emph\> "
-msgstr ""
+msgstr "<emph>合わせて1つにする</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3154680.92
 msgid  " \<emph\>Subtract\</emph\> "
-msgstr ""
+msgstr "<emph>取り除く</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153034.93
 msgid  " \<emph\>Intersect\</emph\>."
-msgstr ""
+msgstr "<emph>一部を切り取る</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3145144.94
 msgid  "Shape Commands"
@@ -749,7 +749,7 @@ msgstr "シェイプ → 合わせて１つにする"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3148585
 msgid  " \<image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3145593\"\>Illustration for merging shapes\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"><alt id=\"alt_id3145593\">シェイプを合わせて 1 つにする図</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150001.73
 msgid  "Adds the area of the selected objects to the area of the lowermost object in the stacking order."
@@ -761,7 +761,7 @@ msgstr "シェイプ → １つにして引く"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150338
 msgid  " \<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3154505\"\>Illustration for subtracting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"><alt id=\"alt_id3154505\">シェイプを取り除く図</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150022.75
 msgid  "Subtracts the area of the selected objects from the area of the lowermost object in the stacking order."
@@ -773,7 +773,7 @@ msgstr "シェイプ → 一部を切り取る"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150570
 msgid  " \<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"\>\<alt id=\"alt_id3150658\"\>Illustration for intersecting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"><alt id=\"alt_id3150658\">シェイプの一部を切り取る図</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157972.79
 msgid  "The overlapping area of the selected objects creates the new shape."
@@ -789,11 +789,11 @@ msgstr "2 つのオブジェクト間でフェードアウトする"
 
 #: source/text/sdraw/guide/cross_fading.xhp#bm_id3150715
 msgid  "\<bookmark_value\>draw objects; cross-fading two objects\</bookmark_value\>\<bookmark_value\>cross-fading; two draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>図形描画オブジェクト; 2 つのオブジェクトのフェードアウト</bookmark_value><bookmark_value>フェードアウト; 2 つのオブジェクト</bookmark_value>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#hd_id3150715.17
 msgid  "\<variable id=\"cross_fading\"\>\<link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Cross-Fading Two Objects\"\>Cross-Fading Two Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"cross_fading\"><link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"2 つのオブジェクト間でフェードアウト\">2 つのオブジェクト間でフェードアウト</link></variable>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154754.18
 msgid  "Cross-fading creates shapes and distributes them by uniform increments between two drawing objects."
@@ -813,15 +813,15 @@ msgstr "Shift キーを押しながらクリックして、各オブジェクト
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3166428.22
 msgid  "Choose \<emph\>Edit - Cross-fading\</emph\>."
-msgstr ""
+msgstr "<emph>編集 - フェードアウト</emph> を選択します。"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3156450.44
 msgid  "Enter a value to specify the number of objects between the start and end of the cross-fade in the \<emph\>Increments\</emph\> box."
-msgstr ""
+msgstr "フェードアウトの始点と終端の間のオブジェクト数を、<emph>ステップ</emph> ボックスに指定します。"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3149405.23
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "<emph>OK</emph> ボタンをクリックします。"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3151240.24
 msgid  "A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed."
@@ -829,15 +829,15 @@ msgstr "2 つのオブジェクトとフェードアウトオブジェクトの�
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3159203
 msgid  "\<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"\>\<alt id=\"alt_id3150210\"\>Illustration for crossfading\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"><alt id=\"alt_id3150210\">フェードアウトの図</alt></image>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154766.25
 msgid  "You can edit the individual objects of a group by selecting the group and pressing F3. Press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3 to exit the group editing mode."
-msgstr ""
+msgstr "グループを選択し F3 キーを押すことで、個々のオブジェクトを編集できます。<switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>Ctrl + F3 でグループの編集モードを抜けます。"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3155760.42
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Editing - Cross-fading\"\>Editing - Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"編集　→ フェードアウト\">編集　→ フェードアウト</link>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#tit
 msgid  "Drawing Sectors and Segments"
@@ -845,15 +845,15 @@ msgstr "扇形と切片を描画する"
 
 #: source/text/sdraw/guide/draw_sector.xhp#bm_id3146974
 msgid  "\<bookmark_value\>sectors of circles/ellipses\</bookmark_value\>\<bookmark_value\>segments of circles/ellipses\</bookmark_value\>\<bookmark_value\>circle segments\</bookmark_value\>\<bookmark_value\>ellipses; segments\</bookmark_value\>\<bookmark_value\>drawing; sectors and segments\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>円または楕円形の扇形</bookmark_value><bookmark_value>円また楕円形の切片</bookmark_value><bookmark_value>円の切片</bookmark_value><bookmark_value>楕円形; 切片</bookmark_value><bookmark_value>図形描画; 扇形と切片</bookmark_value>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3146974.30
 msgid  "\<variable id=\"draw_sector\"\>\<link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Drawing Sectors and Segments\"\>Drawing Sectors and Segments\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_sector\"> <link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"扇形と切片を描く\">扇形と切片を描く</link> </variable>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3147396.31
 msgid  "The \<emph\>Ellipse\</emph\> toolbar contains tools for drawing ellipses and circles. You can also draw segments and sectors of circles and ellipses."
-msgstr ""
+msgstr "<emph>楕円形</emph> ツールバーには、楕円形や円を描画するツールがあります。円や楕円形の切片や扇形も描画できます。"
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3151075.32
 msgid  "To draw a sector of a circle or an ellipse:"
@@ -861,7 +861,7 @@ msgstr "楕円形または円から扇形を描く作業は、いくつかのス
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3155335.33
 msgid  "Open the \<emph\>Ellipses\</emph\> toolbar and click one of the \<emph\>Circle Pie\</emph\> or \<emph\>Ellipse Pie\</emph\> icons \<image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3155768\"\>Icon\</alt\>\</image\>. The mouse pointer changes to a cross hair with a small icon of a sector."
-msgstr ""
+msgstr "<emph>楕円形</emph> ツールバーを開いて、<emph>円の扇形</emph> アイコンまたは <emph>楕円形の扇形</emph> アイコン <image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3155768\">アイコン</alt></image> の 1 つをクリックします。マウスポインタが小さな扇形の付いた十字に変わります。"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3150199.34
 msgid  "Position the pointer at the edge of the circle you want to draw and drag to create the circle."
@@ -869,7 +869,7 @@ msgstr "マウスボタンを押したままドラッグします。マウスの
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3148868.35
 msgid  "To create a circle by dragging from the center, press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> while dragging."
-msgstr ""
+msgstr "円を作成するには、中心からドラッグして、ドラッグしながら、<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> キーを押します。"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3145361.36
 msgid  "Release the mouse button when the circle has reached the size you want. A line corresponding to the circle radius appears in the circle."
@@ -901,11 +901,11 @@ msgstr "オブジェクトを複製する"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#bm_id3145750
 msgid  "\<bookmark_value\>doubling draw objects\</bookmark_value\>\<bookmark_value\>draw objects; duplicating\</bookmark_value\>\<bookmark_value\>duplicating draw objects\</bookmark_value\>\<bookmark_value\>multiplying draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>図形描画オブジェクトを 2 つ作成</bookmark_value><bookmark_value>図形描画オブジェクト; 複製する</bookmark_value><bookmark_value>図形描画オブジェクトの複製</bookmark_value><bookmark_value>図形描画オブジェクトを複数作成</bookmark_value>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#hd_id3145750.3
 msgid  "\<variable id=\"duplicate_object\"\>\<link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Duplicating Objects\"\>Duplicating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"duplicate_object\"> <link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"オブジェクトの複製\">オブジェクトの複製</link> </variable>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149400.4
 msgid  "You can create duplicate or multiple copies of an object. The copies can be identical or can differ in size, color, orientation and location."
@@ -917,31 +917,31 @@ msgstr "何枚も重ねたコインの山の描画が必要なときなどは、
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149129.6
 msgid  "Use the \<emph\>Ellipse\</emph\> tool to draw a solid yellow ellipse."
-msgstr ""
+msgstr "<emph>楕円形</emph>ツールを使って、黄色く塗りつぶした楕円形または円を描きます。"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149209.8
 msgid  "Select the ellipse and choose \<emph\>Edit - Duplicate\</emph\>."
-msgstr ""
+msgstr "メニュー <emph>編集 → 複製</emph> で <emph>複製</emph> ダイアログを呼び出します。"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3145585.9
 msgid  "Enter 12 as \<emph\>Number of copies.\</emph\>"
-msgstr ""
+msgstr "<emph>部数</emph> に 12 を入力します。"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151192.11
 msgid  "Enter a negative value for the \<emph\>Width\</emph\> and \<emph\>Height\</emph\> so that the coins decrease in size as you go up the stack."
-msgstr ""
+msgstr "コインを遠近法を使ったように上方向にだんだん小さくするには、拡大のところで幅と高さにマイナス値を入力します。"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151387.39
 msgid  "To define a color transition for the coins, select different colors in the \<emph\>Start\</emph\> and \<emph\>End\</emph\> boxes. The \<emph\>Start\</emph\> color is applied to the object that you are duplicating."
-msgstr ""
+msgstr "コインの色の変化を設定するには、 <emph>始め</emph>と <emph>終り</emph>のリストボックスに異なる色を選択します。ここでは始めの色を終わりの色よりやや濃いめの黄色にします。"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149947.12
 msgid  "Click \<emph\>OK\</emph\> to create the duplicates."
-msgstr ""
+msgstr "<emph>OK</emph> ボタンをクリックすると、コピーを作成します。"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3153935.50
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Edit - Duplicate\"\>Edit - Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"編集 → 複製\">編集 → 複製</link>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#tit
 msgid  "Replacing Colors"
@@ -949,15 +949,15 @@ msgstr "色を置換する"
 
 #: source/text/sdraw/guide/eyedropper.xhp#bm_id3147436
 msgid  "\<bookmark_value\>eyedropper tool\</bookmark_value\>\<bookmark_value\>colors; replacing\</bookmark_value\>\<bookmark_value\>replacing;colors in bitmaps\</bookmark_value\>\<bookmark_value\>metafiles;replacing colors\</bookmark_value\>\<bookmark_value\>bitmaps;replacing colors\</bookmark_value\>\<bookmark_value\>GIF images;replacing colors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>スポイトツール </bookmark_value><bookmark_value>色; 置換する</bookmark_value><bookmark_value>置換;ビットマップの色</bookmark_value><bookmark_value>メタファイル;色の置換 </bookmark_value><bookmark_value>ビットマップ;色の置換</bookmark_value><bookmark_value>GIF 画像;色の置換</bookmark_value>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3147436.38
 msgid  "\<variable id=\"eyedropper\"\>\<link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Replacing Colors\"\>Replacing Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eyedropper\"> <link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"スポイトで色を置換する\">スポイトで色を置換する</link> </variable>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3156286.24
 msgid  "You can replace colors in bitmaps with the \<emph\>Color Replacer\</emph\> tool."
-msgstr ""
+msgstr "ビットマップ内の色を変更するには、<emph>スポイト</emph> ツールを使用します。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3154704.25
 msgid  "Up to four colors can be replaced at once."
@@ -965,11 +965,11 @@ msgstr "スポイトで選択した色とその許容範囲内でそれに似た
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3147344.26
 msgid  "You can also use the \<emph\>Transparency\</emph\> option to replace the transparent areas of an image with a color."
-msgstr ""
+msgstr "属性 <emph>塗りつぶしなし</emph> も１つの色として扱われます。描画の塗りつぶしのない箇所を白色などで置換することもできます。お使いのプリンタドライバが塗りつぶしなしのグラフィックの印刷でトラブルときは、これで一度試してみるのもいいかもしれません。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148488.27
 msgid  "Similarly, you can use the \<emph\>Color Replacer\</emph\> to make a color on your image transparent."
-msgstr ""
+msgstr "また <emph>スポイト</emph> を使って、イメージ画像の色を透明にすることもできます。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3150205.28
 msgid  "To replace colors with the Color Replacer tool"
@@ -981,7 +981,7 @@ msgstr "ビットマップ形式（BMP、GIF、JPG、TIF など）、あるい�
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3150202.30
 msgid  "Choose \<emph\>Tools - Color Replacer\</emph\>."
-msgstr ""
+msgstr "メニュー <emph>ツール → スポイト</emph> を選択します。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3155531.31
 msgid  "Click the Color Replacer icon and position the mouse pointer over the color you want to replace in the image. The color appears in the box next to the icon."
@@ -989,31 +989,31 @@ msgstr "スポイトアイコンをクリックして、イメージ画像の置
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3152985.32
 msgid  "Click the color in the image. The color appears in the first \<emph\>Source color\</emph\> box and the check box next to the color is selected."
-msgstr ""
+msgstr "置換する色が見つかったら、マウスの左ボタンでクリックします。その色は <emph>スポイト</emph> ウィンドウのソースカラーの最上段に自動的に登録されます。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148866.33
 msgid  "In the \<emph\>Replace with\</emph\> box, select the new color."
-msgstr ""
+msgstr "ビットマップ画像全体をクリックした色で置換するには、同じ行の右側にある置換候補のリストボックスから新しい色を選択します。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3145362.41
 msgid  "This replaces all occurrences of the \<emph\>Source color\</emph\> in the image."
-msgstr ""
+msgstr "この操作を行うと、<emph>元の色</emph> のイメージ中の該当部分が、すべて置き換わります。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3151191.34
 msgid  "If you want to replace another color while the dialog is open, select the check box in front of \<emph\>Source color\</emph\> in the next row and repeat steps 3 to 5."
-msgstr ""
+msgstr "そのほかの色も置換するときは、次の行のチェックボックスをクリックしてから、再び左上のスポイトアイコンをクリックして、次の色をドキュメント上で選択して同じ手順を繰り返します。一回の編集で４色まで選択できます。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3149876.36
 msgid  "Click \<emph\>Replace\</emph\>."
-msgstr ""
+msgstr "<emph>スポイト</emph> をクリックします。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3157871.37
 msgid  "If you want to expand or contract the color selection area, increase or decrease the tolerance of the \<emph\>Color Replacer\</emph\> tool and repeat your selection."
-msgstr ""
+msgstr "色の選択範囲を拡大または縮小する場合は、<emph>スポイト</emph> ツールの許容範囲を増減させ、選択を繰り返します。"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3146878.39
 msgid  "\<link href=\"text/shared/01/06030000.xhp\" name=\"Color Replacer\"\>Color Replacer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06030000.xhp\" name=\"スポイト\">スポイト</link>"
 
 #: source/text/sdraw/guide/gradient.xhp#tit
 msgid  "Creating Gradient Fills"
@@ -1021,11 +1021,11 @@ msgstr "グラデーションを作成する"
 
 #: source/text/sdraw/guide/gradient.xhp#bm_id3150792
 msgid  "\<bookmark_value\>gradients; applying and defining\</bookmark_value\>\<bookmark_value\>editing;gradients\</bookmark_value\>\<bookmark_value\>defining;gradients\</bookmark_value\>\<bookmark_value\>custom gradients\</bookmark_value\>\<bookmark_value\>transparency;adjusting\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>グラデーション； 適用と定義</bookmark_value><bookmark_value>編集する；グラデーション</bookmark_value><bookmark_value>定義する；グラデーション</bookmark_value><bookmark_value>カスタムグラデーション</bookmark_value><bookmark_value>透過性；調整する</bookmark_value>"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3150792.3
 msgid  "\<variable id=\"gradient\"\>\<link href=\"text/sdraw/guide/gradient.xhp\" name=\"Creating Gradient Fills\"\>Creating Gradient Fills\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"gradient\"><link href=\"text/sdraw/guide/gradient.xhp\" name=\"グラデーションを作成する\">グラデーションを作成する</link> </variable>"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154012.4
 msgid  "A gradient fill is an incremental blend of two different colors, or shades of the same color, that you can apply to a drawing object."
@@ -1041,11 +1041,11 @@ msgstr "まずオブジェクトを選択します。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154491.6
 msgid  "Choose \<emph\>Format - Area\</emph\> and select \<emph\>Gradient\</emph\> as the \<emph\>Fill\</emph\> type."
-msgstr ""
+msgstr "メニュー <emph>書式 → 表面</emph> を選択し、<emph>塗りつぶし色</emph> の種類として <emph>グラデーション</emph> を選択します。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3153415.7
 msgid  "Select a gradient style from the list and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "見出し表面のオプションボタン <emph>グラデーション</emph> で一覧表示されるものから選択します。"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3154702.8
 msgid  "Creating Custom Gradients"
@@ -1061,15 +1061,15 @@ msgstr "グラデーションをユーザー定義するには、下記の手順
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3151242.11
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "<emph>書式 → 表面</emph> を選択し、<emph>グラデーション</emph> タブをクリックします。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150046.12
 msgid  "Select a gradient from the list to use as the basis for your new gradient and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "一覧表示された既存のグラデーションの中から、新しく設定するグラデーションの土台となりそうなものを選択して、<emph>追加</emph>をクリックします。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145116.13
 msgid  "Type a name for the gradient in the text box and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "テキストボックスにグラデーションの名前を入力して、<emph>OK</emph> をクリックします。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id6535843
 msgid  "The name appears at the end of the gradient list and is selected for editing."
@@ -1077,11 +1077,11 @@ msgstr "その名前がグラデーションリストの終わりに表示され
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150391.15
 msgid  "Set the gradient properties and click \<emph\>Modify\</emph\> to save the gradient."
-msgstr ""
+msgstr "気に入ったグラデーションができたら、<emph>変更</emph> ボタンをクリックし新項目として保存します。プレビューで変更過程の確認ができます。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3156396.16
 msgid  "Click \<emph\>OK.\</emph\> "
-msgstr ""
+msgstr "<emph>OK</emph> をクリックします。"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3149947.40
 msgid  "Using Gradients and Transparency"
@@ -1101,15 +1101,15 @@ msgstr "グラデーションを変更する図形描画オブジェクトを選
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145592.43
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "<emph>書式 → 表面</emph> を選択し、<emph>グラデーション</emph> タブをクリックします。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_idN107BE
 msgid  "Adjust the values for the gradient to suit your needs and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "グラデーションの値を必要に応じて調節して、<emph>OK</emph> をクリックします。"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150659.46
 msgid  "To adjust the transparency of an object, select the object, choose \<emph\>Format - Area\</emph\> and click the \<emph\>Transparency\</emph\> tab."
-msgstr ""
+msgstr "オブジェクトの透過性を調整するには、オブジェクトを選択して、<emph>書式 → 表面</emph> を選択して、<emph>透過性</emph> タブをクリックします。"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#tit
 msgid  "Inserting Graphics"
@@ -1117,19 +1117,19 @@ msgstr "図を挿入する"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#bm_id3156443
 msgid  "\<bookmark_value\>pictures; inserting\</bookmark_value\>\<bookmark_value\>images; inserting\</bookmark_value\>\<bookmark_value\>files; inserting pictures\</bookmark_value\>\<bookmark_value\>inserting;pictures\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>図; 挿入する (チュートリアル) </bookmark_value><bookmark_value>画像; 挿入</bookmark_value><bookmark_value>ファイル; 図を挿入する</bookmark_value>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#hd_id3156443.1
 msgid  "\<variable id=\"graphic_insert\"\>\<link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Inserting Graphics\"\>Inserting Pictures\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"graphic_insert\"><link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"図の挿入\">図の挿入</link></variable>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155600.2
 msgid  "Choose \<emph\>Insert - Picture - From File\</emph\>."
-msgstr ""
+msgstr "<emph>挿入 → 画像 → ファイルから</emph> を選択します。"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150749.3
 msgid  "Locate the picture you want to insert. Select the \<emph\>Link\</emph\> check box to insert only a link to the picture. If you want to see the picture before you insert it, select \<emph\>Preview\</emph\>."
-msgstr ""
+msgstr "挿入する図を見つけます。その図のリンクだけを挿入するには、チェックボックス <emph>リンク</emph> を選択します。挿入する前に図を表示する場合は、<emph>プレビュー</emph> を選択します。"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155764.4
 msgid  "After you insert a linked picture, do not change the name of the source picture or move the source picture to another directory."
@@ -1137,7 +1137,7 @@ msgstr "リンクした図の挿入後は、リンク元の図の名前を変更
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150044.5
 msgid  "Click \<emph\>Open\</emph\> to insert the picture."
-msgstr ""
+msgstr "図を挿入するには、<emph>開く</emph> をクリックします。"
 
 #: source/text/sdraw/guide/groups.xhp#tit
 msgid  "Grouping Objects"
@@ -1145,11 +1145,11 @@ msgstr "オブジェクトのグループ化"
 
 #: source/text/sdraw/guide/groups.xhp#bm_id3150793
 msgid  "\<bookmark_value\>grouping; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; grouping\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>グループ化; 図形描画オブジェクト</bookmark_value><bookmark_value>図形描画オブジェクト; グループ化</bookmark_value>"
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150793.26
 msgid  "\<variable id=\"groups\"\>\<link href=\"text/sdraw/guide/groups.xhp\" name=\"Grouping Objects\"\>Grouping Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"groups\"> <link href=\"text/sdraw/guide/groups.xhp\" name=\"オブジェクトのグループ化\">オブジェクトのグループ化</link></variable>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3153728.27
 msgid  "You can combine several objects into a group so that they act as a single object. You can move and transform all objects in a group as a single unit. You can also change the properties (for example, line size, fill color) of all objects in a group as a whole or for individual objects in a group. Groups can be temporary or assigned:"
@@ -1173,11 +1173,11 @@ msgstr "オブジェクトのグループ化"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3149018
 msgid  "\<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3145643\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3145643\">アイコン</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147346.29
 msgid  "Select the objects you want to group and choose \<emph\>Modify - Group\</emph\>."
-msgstr ""
+msgstr "グループ化するオブジェクトを選択し、<emph>変更 → グループ化</emph> を選択します。"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3148485.30
 msgid  "For example, you can group all of the objects in a company logo to move and resize the logo as a single object."
@@ -1193,7 +1193,7 @@ msgstr "グループ内のオブジェクトの選択"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150370
 msgid  "\<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155376\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155376\">アイコン</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3156450.56
 msgid  "You can select single objects in a group by entering the group. Double-click a group to enter it and click on the object to select it. You can also add or delete objects to and from a group in this mode. The objects that are not part of the group are grayed out."
@@ -1201,7 +1201,7 @@ msgstr "グループに入ることによって、グループ内の単一オブ
 
 #: source/text/sdraw/guide/groups.xhp#par_id3151239
 msgid  "\<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155264\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155264\">アイコン</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150213.58
 msgid  "To exit a group, double-click anywhere outside it."
@@ -1213,11 +1213,11 @@ msgstr "立体オブジェクトを組み合わせる "
 
 #: source/text/sdraw/guide/join_objects3d.xhp#bm_id3154014
 msgid  "\<bookmark_value\>3D objects; assembling\</bookmark_value\>\<bookmark_value\>assembled objects in 3D\</bookmark_value\>\<bookmark_value\>combining;3D objects\</bookmark_value\>\<bookmark_value\>joining;3D objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>3D オブジェクト; 組み合わせる</bookmark_value><bookmark_value>3D で組み合わせたオブジェクト</bookmark_value><bookmark_value>組み合わせ;3D オブジェクト</bookmark_value><bookmark_value>結合;3D オブジェクト</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#hd_id3156442.29
 msgid  "\<variable id=\"join_objects3d\"\>\<link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Assembling 3D Objects\"\>Assembling 3D Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects3d\"><link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"複数の立体オブジェクトを組み合わせる\">複数の立体オブジェクトを組み合わせる</link> </variable>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3145251.30
 msgid  "3D objects that each form a 3D scene can be combined into a single 3D scene."
@@ -1229,7 +1229,7 @@ msgstr "3D オブジェクトを組み合わせるには、下記の手順で操
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154702.31
 msgid  "Insert a 3D object from the \<emph\>3D Objects\</emph\> toolbar (for example, a cube)."
-msgstr ""
+msgstr "<emph>立体オブジェクト</emph> ツールバーから立体オブジェクト (立方体など) を挿入します。"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155335.32
 msgid  "Insert a second slightly larger 3D object (for example, a sphere)."
@@ -1237,7 +1237,7 @@ msgstr "2 つ目の立体オブジェクトには立方体よりやや大きめ�
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3148488.33
 msgid  "Select the second 3D object (sphere) and choose \<emph\>Edit - Cut\</emph\>."
-msgstr ""
+msgstr "2 つ目の立方体オブジェクト (球) を選択し、<emph>編集 → 切り取り</emph>を選びます。"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3149211.34
 msgid  "Double-click the first object (cube) to enter its group."
@@ -1245,7 +1245,7 @@ msgstr "最初のオブジェクト (立方体) をダブルクリックして�
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154652.35
 msgid  "Choose \<emph\>Edit - Paste\</emph\>. Both objects are now part of the same group. If you want, you can edit the individual objects or change their position within the group."
-msgstr ""
+msgstr "メニュー <emph>編集 → 貼り付け</emph> を選択します。これで、両オブジェクトが同じグループに含まれます。個別にオブジェクトを編集したり、グループ内でのオブジェクトの位置を変更したりすることができます。"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155376.36
 msgid  "Double-click outside the group to exit the group."
@@ -1257,7 +1257,7 @@ msgstr "シェイプの「1 つにして引く」と「一部を切り取る」�
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154537.39
 msgid  "\<link href=\"text/simpress/02/10090000.xhp\" name=\"Objects in 3D\"\>Objects in 3D\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10090000.xhp\" name=\"立体オブジェクト\">立体オブジェクト</link>"
 
 #: source/text/sdraw/guide/join_objects.xhp#tit
 msgid  "Connecting Lines"
@@ -1265,11 +1265,11 @@ msgstr "線を接続する"
 
 #: source/text/sdraw/guide/join_objects.xhp#bm_id3145799
 msgid  "\<bookmark_value\>draw objects; connecting lines to\</bookmark_value\>\<bookmark_value\>connecting; lines\</bookmark_value\>\<bookmark_value\>lines; connecting objects\</bookmark_value\>\<bookmark_value\>areas; from connected lines\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>図形描画オブジェクト; 線を接続する</bookmark_value><bookmark_value>接続; 線</bookmark_value><bookmark_value>線; オブジェクトを接続する</bookmark_value><bookmark_value>領域; 接続した線から</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects.xhp#hd_id3145799.1
 msgid  "\<variable id=\"join_objects\"\>\<link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Connecting Lines\"\>Connecting Lines\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects\"> <link href=\"text/sdraw/guide/join_objects.xhp\" name=\"複数の線をひとつのオブジェクトに結合\">複数の線をひとつのオブジェクトに結合</link> </variable>"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3154512.3
 msgid  "When you connect lines, lines are drawn between neighboring endpoints."
@@ -1285,15 +1285,15 @@ msgstr "2 本以上の線を選択します。"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3156383.5
 msgid  "Right-click and choose \<emph\>Modify - Connect\</emph\>."
-msgstr ""
+msgstr "右クリックして、<emph>変更 → 結合</emph> を選択します。"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3149257.11
 msgid  "To create a closed object, right-click a line and choose \<emph\>Close Object\</emph\>."
-msgstr ""
+msgstr "クローズドオブジェクトを作成するには、ラインを右クリックして <emph>オブジェクトを閉じる</emph> を選択します。"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3150363.9
 msgid  "You can only use the \<emph\>Close Object\</emph\> command on connected lines, \<emph\>Freeform Lines \</emph\>and unfilled \<emph\>Curves\</emph\>."
-msgstr ""
+msgstr "<emph>オブジェクトを閉じる</emph> コマンドを使用できるのは、接続した線、<emph>フリーハンドの線</emph>、塗りつぶされていない<emph>曲線</emph>に限られます。"
 
 #: source/text/sdraw/guide/keyboard.xhp#tit
 msgid  "Shortcut Keys for Drawing Objects"
@@ -1301,11 +1301,11 @@ msgstr "図形描画オブジェクト用のショートカットキー"
 
 #: source/text/sdraw/guide/keyboard.xhp#bm_id3155628
 msgid  "\<bookmark_value\>accessibility; %PRODUCTNAME Draw\</bookmark_value\>\<bookmark_value\>draw objects; text entry mode\</bookmark_value\>\<bookmark_value\>text entry mode for draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>アクセシビリティ; %PRODUCTNAME Draw</bookmark_value><bookmark_value>図形描画オブジェクト; テキスト入力モード</bookmark_value><bookmark_value>図形描画オブジェクトのテキスト入力モード</bookmark_value>"
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3155628.1
 msgid  "\<variable id=\"keyboard\"\>\<link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Shortcut Keys for Drawing Objects\"\>Shortcut Keys for Drawing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"keyboard\"><link href=\"text/sdraw/guide/keyboard.xhp\" name=\"図形描画オブジェクト用のショートカットキー\">図形描画オブジェクト用のショートカットキー</link></variable>"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3148663.13
 msgid  "You can create and edit drawing objects using the keyboard."
@@ -1317,19 +1317,19 @@ msgstr "オブジェクトの作成と編集"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3153188.11
 msgid  "Press \<item type=\"keycode\"\>F6\</item\> to navigate to the \<emph\>Drawing\</emph\> bar."
-msgstr ""
+msgstr "<emph>図形描画</emph> バーをナビゲートするには、<item type=\"keycode\">(F6)</item> キーを押します。"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3146971.10
 msgid  "Press the \<item type=\"keycode\"\>Right\</item\> arrow key until you reach the toolbar icon of a drawing tool."
-msgstr ""
+msgstr "図形描画ツールのツールバーアイコンに到達するまで、<item type=\"keycode\">右</item> 矢印キーを押します。"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_idN106CD
 msgid  "If there is an arrow next to the icon, the drawing tool opens a sub toolbar. Press the \<item type=\"keycode\"\>Up\</item\> or \<item type=\"keycode\"\>Down\</item\> arrow key to open the sub toolbar, then press the \<item type=\"keycode\"\>Right\</item\> or \<item type=\"keycode\"\>Left\</item\> key to select an icon."
-msgstr ""
+msgstr "アイコンの横に矢印がある場合、図形描画ツールはサブツールバーを開きます。<item type=\"keycode\">↑</item> または <item type=\"keycode\">↓</item> 矢印キーを押してサブツールバーを開き、<item type=\"keycode\">→</item> または <item type=\"keycode\">←</item> キーを押してアイコンを選択します。"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3147338.8
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter\</item\>."
-msgstr ""
+msgstr "<item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline> + Enter を押します。</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3154705.7
 msgid  "The object is created at the center of the current document."
@@ -1337,11 +1337,11 @@ msgstr "現在表示されているドキュメントの中央にオブジェク
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155962.6
 msgid  "To return to the document, press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\>."
-msgstr ""
+msgstr "ドキュメントに戻るには <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (F6) </item>を押します。"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155062.5
 msgid  "You can use the arrow keys to position the object where you want. To choose a command from the context menu for the object, press \<item type=\"keycode\"\>Shift+F10\</item\>."
-msgstr ""
+msgstr "矢印キーを使用すると、オブジェクトを移動できます。オブジェクトのコンテキストメニューからコマンドを選択するには、<item type=\"keycode\">(Shift) + (F10)</item> を押します。"
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3150306.4
 msgid  "To Select an Object"
@@ -1349,11 +1349,11 @@ msgstr "オブジェクトの選択"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3152990.3
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\> to enter the document."
-msgstr ""
+msgstr "ドキュメントに入るには <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">(Command)</caseinline><defaultinline>(Ctrl)</defaultinline></switchinline>+ (F6) </item>を押します。"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3145587.2
 msgid  "Press \<item type=\"keycode\"\>Tab\</item\> until you reach the object you want to select."
-msgstr ""
+msgstr "選択するオブジェクトに到達するまで、<item type=\"keycode\">Tab</item> キーを押します。"
 
 #: source/text/sdraw/guide/main.xhp#tit
 msgid  "Instructions for Using $[officename] Draw"
@@ -1361,11 +1361,11 @@ msgstr "$[officename] Draw の使用上の注意点"
 
 #: source/text/sdraw/guide/main.xhp#bm_id3146119
 msgid  "\<bookmark_value\>Draw instructions\</bookmark_value\>\<bookmark_value\>instructions; $[officename] Draw\</bookmark_value\>\<bookmark_value\>Howtos for Draw\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Draw 注意点</bookmark_value><bookmark_value>$[officename] Draw の注意点</bookmark_value><bookmark_value>Draw の使い方</bookmark_value>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3146119.1
 msgid  "\<variable id=\"main\"\>\<link href=\"text/sdraw/guide/main.xhp\" name=\"Instructions for Using $[officename] Draw\"\>Instructions for Using $[officename] Draw\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main\"><link href=\"text/sdraw/guide/main.xhp\" name=\"$[officename] Draw の使用上の注意点\">$[officename] Draw の使用上の注意点</link></variable>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3143218.2
 msgid  "Editing and Grouping Objects"
@@ -1393,11 +1393,11 @@ msgstr "オブジェクトを回転する"
 
 #: source/text/sdraw/guide/rotate_object.xhp#bm_id3154684
 msgid  "\<bookmark_value\>rotating; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; rotating\</bookmark_value\>\<bookmark_value\>pivot points of draw objects\</bookmark_value\>\<bookmark_value\>skewing draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>回転; 図形描画オブジェクト</bookmark_value><bookmark_value>図形描画オブジェクト; 回転</bookmark_value><bookmark_value>図形描画オブジェクトの回転ポイント</bookmark_value><bookmark_value>図形描画オブジェクトのスキュー</bookmark_value>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#hd_id3154684.12
 msgid  "\<variable id=\"rotate_object\"\>\<link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Rotating Objects\"\>Rotating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"rotate_object\"><link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"オブジェクトの回転\">オブジェクトの回転</link></variable>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149262.13
 msgid  "You can rotate an object around its default pivot point (center point) or a pivot point that you designate."
@@ -1405,11 +1405,11 @@ msgstr "オブジェクトをクリックすると、８個の変更ハンドル
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3146975
 msgid  "\<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"\>\<alt id=\"alt_id3154729\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"><alt id=\"alt_id3154729\">アイコン</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3150716.14
 msgid  "Select the object you want to rotate. On the \<emph\>Mode\</emph\> toolbar in $[officename] Draw or on the \<emph\>Drawing\</emph\> bar in $[officename] Impress, click the \<emph\>Rotate\</emph\> icon."
-msgstr ""
+msgstr "回転するオブジェクトを選択します。$[officename] Draw の <emph>モード</emph> ツールバーまたは $[officename] Impress の <emph>図形描画</emph> バーで、<emph>回転</emph> アイコンをクリックします。"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149021.69
 msgid  "Move the pointer to a corner handle so that the pointer changes to a rotate symbol. Drag the handle to rotate the object."
@@ -1425,7 +1425,7 @@ msgstr "オブジェクトを右クリックし、コンテキストメニュー
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3155962
 msgid  "\<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"\>\<alt id=\"alt_id3154023\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"><alt id=\"alt_id3154023\">アイコン</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3166424.16
 msgid  "To change the pivot point, drag the small circle in the center of the object to a new location."
@@ -1441,11 +1441,11 @@ msgstr "テキストを追加する"
 
 #: source/text/sdraw/guide/text_enter.xhp#bm_id3153144
 msgid  "\<bookmark_value\>text frames\</bookmark_value\>      \<bookmark_value\>inserting;text frames\</bookmark_value\>      \<bookmark_value\>copying;text from other documents\</bookmark_value\>      \<bookmark_value\>pasting;text from other documents\</bookmark_value\>      \<bookmark_value\>legends; drawings\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>テキスト枠</bookmark_value><bookmark_value>追加; テキスト枠</bookmark_value><bookmark_value>コピー; ほかのドキュメントのテキスト</bookmark_value><bookmark_value>貼り付け; ほかのドキュメントのテキスト</bookmark_value><bookmark_value>説明; 図形描画</bookmark_value>"
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3153144.45
 msgid  "\<variable id=\"text_enter\"\>\<link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Adding Text\"\>Adding Text\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"text_enter\"><link href=\"text/sdraw/guide/text_enter.xhp\" name=\"テキストの追加\">テキストの追加</link></variable>"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3145750.46
 msgid  "There are several types of text you can add to a drawing or presentation: "
@@ -1477,7 +1477,7 @@ msgstr "テキストボックスの追加"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3155266.49
 msgid  "Click the \<emph\>Text\</emph\> icon \<image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3156450\"\>Icon\</alt\>\</image\> and move the mouse pointer to where you want to enter the text box."
-msgstr ""
+msgstr "<emph>テキスト</emph> アイコン <image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3156450\">アイコン</alt></image> をクリックし、テキストを入力する位置にマウスポインタを移動します。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3149052.50
 msgid  "Drag a text box to the size you want in your document."
@@ -1501,11 +1501,11 @@ msgstr "前述の手順でテキストボックスを作成します。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108A3
 msgid  "With the text object selected, choose \<emph\>Format - Text\</emph\>. The \<emph\>Text\</emph\> dialog opens."
-msgstr ""
+msgstr "テキストオブジェクトを選択した状態で、<emph>書式 → テキスト</emph> を選択します。<emph>テキスト</emph> ダイアログが表示されます。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108AF
 msgid  "On the \<emph\>Text\</emph\> tab page, clear the \<emph\>Fit height to text\</emph\> checkbox, then select the \<emph\>Fit to frame\</emph\> checkbox. Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "<emph>テキスト</emph> タブページで、<emph>テキストに高さを合わせる</emph> チェックボックスをオフにし、続いて<emph>フレームに合わせる</emph> チェックボックスをオンにします。 <emph>OK</emph> をクリックします。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id0610200902133994
 msgid  "Now you can resize the text box to change the size and shape of the text characters."
@@ -1521,11 +1521,11 @@ msgstr "図をダブルクリックして、図にテキストを追加するこ
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id1827448
 msgid  "To determine the position of the text, use the settings in \<emph\>Format - Text\</emph\>."
-msgstr ""
+msgstr "テキストの位置を決定するには、<emph>書式 → テキスト</emph> の設定を使用します。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3147366.59
 msgid  "For example, click the arrow next to the \<emph\>Callouts\</emph\> icon \<image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3154508\"\>Icon\</alt\>\</image\> to open the Callouts toolbar."
-msgstr ""
+msgstr "たとえば、<emph>吹き出し</emph> アイコン <image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3154508\">アイコン</alt></image> の横にある矢印をクリックして、吹き出しツールバーを開きます。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108FD
 msgid  "Select a callout and move the mouse pointer to where you want the callout to start."
@@ -1549,7 +1549,7 @@ msgstr "Writer ドキュメントでテキストを選択します。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10925
 msgid  "Copy the text to the clipboard (\<emph\>Edit - Copy\</emph\>)."
-msgstr ""
+msgstr "テキストをクリップボードにコピーします (<emph>編集 → コピー</emph>)。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1092D
 msgid  "Click the page or slide where you want to paste the text."
@@ -1557,11 +1557,11 @@ msgstr "テキストを貼り付けるページまたはスライドをクリッ
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10931
 msgid  "Paste the text using \<emph\>Edit - Paste\</emph\> or \<emph\>Edit - Paste special\</emph\>."
-msgstr ""
+msgstr "<emph>編集 → 貼り付け</emph> または <emph>編集 → 形式を選択して貼り付け</emph> を使用してテキストを貼り付けます。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093C
 msgid  "Using \<emph\>Paste special\</emph\>, you can choose the text format to be pasted. Depending on formats, you can copy different text attributes."
-msgstr ""
+msgstr "<emph>形式を選択して貼り付け</emph> を使用すると、貼り付けるテキストの書式を選択できます。 書式に応じて、異なるテキスト属性をコピーできます。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093F
 msgid  "Importing Text"
@@ -1573,11 +1573,11 @@ msgstr "テキストをインポートするページまたはスライドをク
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1094A
 msgid  "Choose \<emph\>Insert - File\</emph\>."
-msgstr ""
+msgstr "<emph>挿入 → ファイル</emph> を選択します。"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10952
 msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</emph\>. The \<emph\>Insert Text\</emph\> dialog opens. Click \<emph\>OK\</emph\> to insert the text."
-msgstr ""
+msgstr "テキストファイル (*.txt) または HTML ファイルを選択し、<emph>挿入</emph> をクリックします。 <emph>テキストの挿入</emph> ダイアログが開きます。 <emph>OK</emph> をクリックしてテキストを挿入します。"
 
 #: source/text/sdraw/main0000.xhp#tit
 msgid  "Welcome to the $[officename] Draw Help"
@@ -1585,7 +1585,7 @@ msgstr "$[officename] Draw ヘルプへようこそ"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
 msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
-msgstr ""
+msgstr "<switchinline select=\"appl\"> <caseinline select=\"DRAW\"/> </switchinline>$[officename] Draw ヘルプへようこそ"
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
 msgid  "How to Work With $[officename] Draw"
@@ -1605,7 +1605,7 @@ msgstr "メニュー"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/sdraw/main0100.xhp\" name=\"メニュー\">メニュー</link> </variable>"
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
@@ -1617,39 +1617,39 @@ msgstr "ファイル"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
 msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"ファイル\">ファイル</link>"
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
 msgid  "This menu contains general commands for working with Draw documents, such as open, close and print. To close $[officename] Draw, click \<emph\>Exit\</emph\>."
-msgstr ""
+msgstr "このメニューには、ドキュメントに関するコマンドがあります。ドキュメントの新規作成、既存ドキュメントを開く、閉じる、印刷、ドキュメント情報の入力などの操作ができます。$[officename] Draw を終了するには、メニュー <emph>終了</emph> をクリックします。"
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"開く...\">開く...</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"名前を付けて保存...\">名前を付けて保存...</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"エクスポート...\">エクスポート...</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"バージョンの管理...\">バージョンの管理...</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"プロパティー\">プロパティー</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"印刷...\">印刷...</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"プリンタの設定...\">プリンタの設定...</link>"
 
 #: source/text/sdraw/main0102.xhp#tit
 msgid  "Edit"
@@ -1657,7 +1657,7 @@ msgstr "編集"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0102.xhp\" name=\"編集\">編集</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
@@ -1665,15 +1665,15 @@ msgstr "ここには、最後に行った操作の取り消しや、クリップ
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"形式を選択して貼り付け...\">形式を選択して貼り付け...</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"検索と置換...\">検索と置換...</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"制御点\">制御点</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
 msgid  "Enables you to edit points on your drawing."
@@ -1681,7 +1681,7 @@ msgstr "図形描画上の制御点の編集を可能にします。"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"接着点\">接着点</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
 msgid  "Enables you to edit glue points on your drawing."
@@ -1689,27 +1689,27 @@ msgstr "図形描画上の接着点の編集を可能にします。"
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"複製...\">複製...</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"フェードアウト...\">フェードアウト...</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"フィールド...\">フィールド...</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"リンク...\">リンク...</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"イメージマップ\">イメージマップ</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"ハイパーリンク\">ハイパーリンク</link>"
 
 #: source/text/sdraw/main0103.xhp#tit
 msgid  "View"
@@ -1717,7 +1717,7 @@ msgstr "表示"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
 msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0103.xhp\" name=\"表示\">表示</link>"
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
 msgid  "Sets the display properties of Draw documents."
@@ -1741,7 +1741,7 @@ msgstr "マスターページモードに切り換えます。"
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"ズーム...\">ズーム...</link>"
 
 #: source/text/sdraw/main0104.xhp#tit
 msgid  "Insert"
@@ -1749,7 +1749,7 @@ msgstr "挿入"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
 msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0104.xhp\" name=\"挿入\">挿入</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
 msgid  "This menu allows you to insert elements, such as graphics and guides, into Draw documents."
@@ -1757,35 +1757,35 @@ msgstr "このメニューを使用すると、Draw ドキュメントに図や�
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"ページ\">ページ</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
 msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04020000.xhp\" name=\"レイヤー...\">レイヤー...</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
 msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000.xhp\" name=\"スナップラインとスナップポイント...\">スナップラインとスナップポイント...</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04050000.xhp\" name=\"コメント\">コメント</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"記号と特殊文字...\">記号と特殊文字...</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"ハイパーリンク\">ハイパーリンク</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04080100.xhp\" name=\"表\">表</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"グラフ\">グラフ</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
 msgid  "Inserts a chart."
@@ -1793,11 +1793,11 @@ msgstr "グラフの挿入"
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"フレーム...\">フレーム...</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"ファイル...\">ファイル...</link>"
 
 #: source/text/sdraw/main0105.xhp#tit
 msgid  "Format"
@@ -1805,7 +1805,7 @@ msgstr "書式"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
 msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0105.xhp\" name=\"書式\">書式</link>"
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
 msgid  "Contains commands for formatting the layout and the contents of your document."
@@ -1813,39 +1813,39 @@ msgstr "ドキュメントのレイアウトや内容を書式設定するコマ
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"文字...\">文字...</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"段落...\">段落...</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"箇条書きと番号付け\">箇条書きと番号付け</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"ページ...\">ページ...</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"位置とサイズ...\">位置とサイズ...</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"線...\">線...</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"表面...\">表面...</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"テキスト...\">テキスト...</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
 msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05140000.xhp\" name=\"レイヤー...\">レイヤー...</link>"
 
 #: source/text/sdraw/main0106.xhp#tit
 msgid  "Tools"
@@ -1853,7 +1853,7 @@ msgstr "ツール"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
 msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0106.xhp\" name=\"ツール\">ツール</link>"
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
 msgid  "This menu provides tools for $[officename] Draw as well as access to language and system settings."
@@ -1861,11 +1861,11 @@ msgstr "$[officename] Draw の <emph>ツール</emph> メニューには、言�
 
 #: source/text/sdraw/main0106.xhp#hd_id3153415.4
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"オートコレクトオプション\">オートコレクトオプション</link>"
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"カスタマイズ\">カスタマイズ</link>"
 
 #: source/text/sdraw/main0200.xhp#tit
 msgid  "Toolbars"
@@ -1873,7 +1873,7 @@ msgstr "ツールバー"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/sdraw/main0200.xhp\" name=\"ツールバー\">ツールバー</link> </variable>"
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
 msgid  "This section provides an overview of the toolbars available in $[officename] Draw."
@@ -1885,7 +1885,7 @@ msgstr "線と塗りつぶしバー"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
 msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\">線と塗りつぶしバー</link>"
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
 msgid  "The Line and Filling bar contains commands for the current editing mode."
@@ -1893,23 +1893,23 @@ msgstr "「線と塗りつぶし」バーには、現在の編集モード用の
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"線スタイル\">線スタイル</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"線幅の太さ\">線幅の太さ</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"線の色\">線の色</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"リストボックス塗りつぶしのスタイル\">リストボックス塗りつぶしのスタイル</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"シャドウ\">シャドウ</link>"
 
 #: source/text/sdraw/main0210.xhp#tit
 msgid  "Drawing Bar"
@@ -1917,15 +1917,15 @@ msgstr "図形描画 バー"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
 msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"図形描画 バー\">図形描画 バー</link>"
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
 msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
-msgstr ""
+msgstr "<emph>図形描画</emph> バーには、主な図形描画ツールがあります。"
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10060000.xhp\">四角形</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
 msgid  "Draws a filled rectangle where you drag in the current document. Click where you want to place a corner of the rectangle, and drag to the size you want. To draw a square, hold down Shift while you drag."
@@ -1933,7 +1933,7 @@ msgstr "現在のドキュメントでドラッグした位置に、塗りつぶ
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10070000.xhp\">楕円</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
 msgid  "Draws a filled oval where you drag in the current document. Click where you want to draw the oval, and drag to the size you want. To draw a circle, hold down Shift while you drag."
@@ -1941,7 +1941,7 @@ msgstr "現在のドキュメントでドラッグした位置に、塗りつぶ
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">テキスト</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
 msgid  "Draws a text box where you click or drag in the current document. Click anywhere in the document, and then type or paste your text."
@@ -1949,7 +1949,7 @@ msgstr "現在のドキュメントでクリックまたはドラッグした位
 
 #: source/text/sdraw/main0210.xhp#par_idN107C8
 msgid  "\<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\"\>Lines and Arrows\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\">線と矢印</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN126D7
 msgid  "Opens the Arrows toolbar to insert lines and arrows."
@@ -1957,7 +1957,7 @@ msgstr "「矢印」ツールバーが開き、ドキュメントに線や矢印
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"制御点\">制御点</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
 msgid  "Enables you to edit points on your drawing."
@@ -1965,7 +1965,7 @@ msgstr "図形描画上の制御点の編集を可能にします。"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"接着点\">接着点</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
 msgid  "Enables you to edit glue points on your drawing."
@@ -1973,15 +1973,15 @@ msgstr "図形描画上の接着点の編集を可能にします。"
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"ファイルから\">ファイルから</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170000.xhp\" name=\"フォームコントロール\">フォームコントロール</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">突き出し オン/オフ</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
 msgid  "Switches the 3D effects on and off for the selected objects."
@@ -1993,47 +1993,47 @@ msgstr "オプション バー"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
 msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0213.xhp\" name=\"オプション バー\">オプション バー</link>"
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
 msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "<emph>オプション</emph> バーは、<emph>表示 → ツールバー → オプション</emph> と選択すると表示できます。"
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171200.xhp\" name=\"グリッド線の表示\">グリッド線の表示</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"移動時の補助線\">移動時の補助線</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"グリッド線で位置合わせ\">グリッド線で位置合わせ</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\">補助線で位置合わせ</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"ページ枠で位置合わせ\">ページ枠で位置合わせ</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"オブジェクト枠で位置合わせ\">オブジェクト枠で位置合わせ</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13170000.xhp\" name=\"オブジェクト制御点で位置合わせ\">オブジェクト制御点で位置合わせ</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"クイック編集を行う\">クイック編集を行う</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"テキスト範囲のみ選択可能\">テキスト範囲のみ選択可能</link>"
 
 #: source/text/sdraw/main0503.xhp#tit
 msgid  "$[officename] Draw Features"
@@ -2041,7 +2041,7 @@ msgstr "$[officename] Draw の機能 "
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw の機能概要\">$[officename] Draw の機能概要</link> </variable>"
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
 msgid  "$[officename] Draw lets you create simple and complex drawings and export them in a number of common image formats. You can also insert tables, charts, formulas and other items created in $[officename] programs into your drawings."

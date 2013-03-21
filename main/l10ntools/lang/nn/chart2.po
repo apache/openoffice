@@ -132,7 +132,6 @@ msgid  "Pyramid"
 msgstr "Pyramide"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "Dataområde"
 
@@ -336,12 +335,10 @@ msgid  "Data Table"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "Set inn rad"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Series"
 msgstr "Set inn serie"
 
@@ -350,22 +347,18 @@ msgid  "Insert Text Column"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "Slett rad"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Series"
 msgstr "Slett serie"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Series Right"
 msgstr "Flytt serie til høgre"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "Flytt rad ned"
 
@@ -848,37 +841,30 @@ msgid  "~Rounded edges"
 msgstr "~Avrunda hjørne"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "Aksar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "Hovudrutenett"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "~X-akse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "~Y-akse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "~Z-akse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "Sekundære aksar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "Støtterutenett"
 
@@ -1536,8 +1522,9 @@ msgid  "Select Range for Negative Error Bars"
 msgstr "Vel område for negative feillinjer"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+#, fuzzy
 msgid  "Your last input is incorrect.\\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Dei siste inndataa dine var feil.\nVil du oversjå denne endringa og lukka dialogvindauget?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 #, fuzzy

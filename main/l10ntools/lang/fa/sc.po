@@ -145,7 +145,7 @@ msgstr "فیلدهای ستون"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "سطر\nفیلدها"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -1857,497 +1857,398 @@ msgid  "External Data"
 msgstr "داده‌های خارجی"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "ناوشگر"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
-#, fuzzy
 msgid  "Row"
 msgstr "ردیف"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Row"
 msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column"
 msgstr "ستون"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
-#, fuzzy
 msgid  "Column"
 msgstr "Column"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
-#, fuzzy
 msgid  "Document"
 msgstr "Document"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "محدودهٔ داده‌ها"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Start"
 msgstr "آغاز"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "End"
 msgstr "پایان"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "محتویات"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "تبديل"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
-#, fuzzy
 msgid  "Scenarios"
 msgstr "سناریوها"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "حالت کشیدن"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "حالت کشیدن"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
-#, fuzzy
 msgid  "Display"
 msgstr "نمایش"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
-#, fuzzy
 msgid  "active"
 msgstr "فعال"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
-#, fuzzy
 msgid  "inactive"
 msgstr "غیرفعال"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
-#, fuzzy
 msgid  "hidden"
 msgstr "پنهان"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
-#, fuzzy
 msgid  "Active Window"
 msgstr "پنجرهٔ فعال"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
-#, fuzzy
 msgid  "Scenario Name"
 msgstr "نام سناریو"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "توضیح"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "محتویات"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
-#, fuzzy
 msgid  "Sheets"
 msgstr "برگه‌ها"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
-#, fuzzy
 msgid  "Range names"
 msgstr "نام محدوده‌ها"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
-#, fuzzy
 msgid  "Database Ranges"
 msgstr "محدوده‌های پایگاه‌داده"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "گرافیک"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
-#, fuzzy
 msgid  "OLE objects"
 msgstr "اشیاء OLE"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "یادداشت‌ها"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
-#, fuzzy
 msgid  "Linked areas"
 msgstr "ناحیه‌های پیوند شده"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing objects"
 msgstr "اشیاء نقاشی"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "درج فراپیوند"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Link"
 msgstr "درج پیوند"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Copy"
 msgstr "درج یک نسخه"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "حذف"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "ویژگی‌ها..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
-#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "ویرایش محدودهٔ چاپ"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "محدودهٔ چاپ"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- هیچ -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- کل برگه -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- تعریف شده توسط کاربر -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- selection -"
 msgstr "- انتخاب -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "کوچک کردن"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
-#, fuzzy
 msgid  "Rows to repeat"
 msgstr "سطرهائی که باید تکرار شود"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- هیچکدام-"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- تعریف شده توسط کاربر -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "کاهش اندازه"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
-#, fuzzy
 msgid  "Columns to repeat"
 msgstr "ستون‌هائی که باید تکرار شود"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- هیچکدام -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- تعریف شده توسط کاربر -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "کاهش اندازه"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
-#, fuzzy
 msgid  "~Column and row headers"
 msgstr "~ستون و سطر سرآیند"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "~توری"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NOTES.CheckBox.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "~نظرات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
-#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "~اشیاء/نگاره‌ها"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
-#, fuzzy
 msgid  "Ch~arts"
 msgstr "نم~ودارها"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
-#, fuzzy
 msgid  "~Drawing objects"
 msgstr "~اشیاء ترسیمی"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
-#, fuzzy
 msgid  "~Formulas"
 msgstr "فرمول‌ها"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
-#, fuzzy
 msgid  "Zero ~values"
 msgstr "~مقادیر صفر"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "چاپ"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
-#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "~بالا به پایین، سپس راست"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "~چپ به راست، سپس پایین"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
-#, fuzzy
 msgid  "First ~page number"
 msgstr "شماره ~صفحه اول"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
-#, fuzzy
 msgid  "Page order"
 msgstr "ترتیب صفحه"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
-#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "حالت~ مقیاس‌گذاری"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
-#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "کاهش اندازه/بزرگنمایی نتیجه چاپی"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "تناسب محدوده(های) چاپ با عرض/ارتفاع"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "تناسب محدوده(های) چاپ روی تعداد صفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
-#, fuzzy
 msgid  "~Scaling factor"
 msgstr "~ ضریب بزرگ‌نمایی"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width in pages"
 msgstr "~عرض در صفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight in pages"
 msgstr "ا~رتفاع در صفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
-#, fuzzy
 msgid  "N~umber of pages"
 msgstr "ت~عداد صفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "مقیاس"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
-#, fuzzy
 msgid  "Headers/Footers"
 msgstr "سرآیندها/پاورقی‌ها"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
-#, fuzzy
 msgid  "Header"
 msgstr "سرصفحه"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "پاصفحه"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Header (right)"
 msgstr "سرآیند (راست)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
-#, fuzzy
 msgid  "Header (left)"
 msgstr "سرآیند (چپ)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Footer (right)"
 msgstr "پاورقی (راست)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
-#, fuzzy
 msgid  "Footer (left)"
 msgstr "پاورقی (چپ)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
-#, fuzzy
 msgid  "Headers"
 msgstr "سرصفحه‌ها"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
-#, fuzzy
 msgid  "Footers"
 msgstr "پاصفحه‌ها"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left area"
 msgstr "~ناحیه چپ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
-#, fuzzy
 msgid  "~Center area"
 msgstr "~ناحیه مرکزی"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "R~ight area"
 msgstr "ناحیه ر~است"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
-#, fuzzy
 msgid  "Hea~der"
 msgstr "~سرصفحه"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
-#, fuzzy
 msgid  "Custom header"
 msgstr "سرآیند سفارشی"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Text Attributes"
 msgstr "ویژگی‌های متن"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Title"
 msgstr "File Name"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
-#, fuzzy
 msgid  "Title"
 msgstr "عنوان"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
-#, fuzzy
 msgid  "File Name"
 msgstr "نام پرونده"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
-#, fuzzy
 msgid  "Path/File Name"
 msgstr "مسیر/نام پرونده"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Sheet Name"
 msgstr "نام برگه"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Page"
 msgstr "Page"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Pages"
 msgstr "Pages"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Date"
 msgstr "Date"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Time"
 msgstr "Time"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "از دکمه‌ها برای تغییر قلم یا درج دستورات فیلد مانند تاریخ، زمان و غیره استفاده کنید."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Note"
 msgstr "یادداشت"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~ویرایش..."
 
@@ -2468,8 +2369,9 @@ msgid  "~Discard"
 msgstr "~دور انداختن"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
+#, fuzzy
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "آیا مدخل\n#\nحذف شود؟"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -2939,86 +2841,70 @@ msgid  "~Delete"
 msgstr "~حذف"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
-#, fuzzy
 msgid  "Format Cells"
 msgstr "قالب‌بندی خانه‌ها"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "اعداد"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "قلم"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "جلوه‌های قلم"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ردیف کردن"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "حروف‌چینی آسیایی"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "کناره‌ها"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "پس‌زمینه"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
-#, fuzzy
 msgid  "Cell Protection"
 msgstr "حفاظت از خانه"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
-#, fuzzy
 msgid  "~Protected"
 msgstr "~حفاظت شده"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~formula"
 msgstr "مخفی کردن ~فرمول"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~all"
 msgstr "مخفی کردن ~همه"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "حفاظت از خانه‌ها فقط وقتی مؤثر است که برگه‌ی فعلی حفاظت شده باشد. \n\nاز منوی «ابزارها» «حفاظت از نوشتار» را انتخاب کرده و «برگه» را علامت بزنید."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
-#, fuzzy
 msgid  "Protection"
 msgstr "حفاظت"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "~موقع چاپ مخفی شود"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
-#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "خانه‌های انتخاب شده موقع چاپ نادیده گرفته خواهند شد"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "چاپ"
 
@@ -3631,8 +3517,9 @@ msgid  "No operations to execute"
 msgstr "عملیانی برای اجرا نیست"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
+#, fuzzy
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "محدوده حاوی سرستون‌ها نمی‌شود.\nآیا می‌خواهید سطر اول به عنوان سرستون استفاده شود؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3728,8 +3615,9 @@ msgid  "Goal Seek not successful.\\n"
 msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
+#, fuzzy
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "مقدار دقیقی پیدا نشد. \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4335,8 +4223,9 @@ msgid  "Print"
 msgstr "چاپ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+#, fuzzy
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "برای اِعمال قالب بندی خودکار\nباید محدوده‌ای ۳×۳ یا بزرگتر\nاز جدول انتخاب شود."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 msgid  "(nested)"
@@ -4795,12 +4684,14 @@ msgid  "on"
 msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+#, fuzzy
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "این پرونده حاوی پیوند به پروندهای دیگر است.\nآیا این پیوندها به‌هنگام بشوند؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+#, fuzzy
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "این پرونده حاوی پرس و جو است. نتایج این پرس و جوها ذخیره نشده‌اند.\nآیا می‌خواهید این پرس و جوها تکرار شوند؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 #, fuzzy
@@ -4808,8 +4699,9 @@ msgid  "Too many conditions"
 msgstr "تعداد شرایط زیاد است"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+#, fuzzy
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "نمی‌توان خانه‌های پرشده را بیرون از\nبرگه جابه‌جا کرد."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 #, fuzzy
@@ -4832,8 +4724,9 @@ msgid  "There is not enough space on the sheet to insert here."
 msgstr "برگه برای درج در اینجا به قدر کافی جا ندارد."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+#, fuzzy
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "محتویات تخته گیره بزرگتر از محدوده‌ی انتخاب شده است.\nبا این وجود می‌خواهید آن را درج کنید؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 #, fuzzy
@@ -5287,106 +5180,86 @@ msgid  "AutoFormat"
 msgstr "قالب‌بندی خودکار"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "~قالب‌بندی"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
-#, fuzzy
 msgid  "A~utoFit width and height"
 msgstr "~جا کردن خودکار عرض و ارتفاع"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
-#, fuzzy
 msgid  "~Borders"
 msgstr "~کناره‌ها"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
-#, fuzzy
 msgid  "F~ont"
 msgstr "~قلم"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
-#, fuzzy
 msgid  "~Pattern"
 msgstr "ال~گو"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
-#, fuzzy
 msgid  "Alignmen~t"
 msgstr "ردیف کرد~ن"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
-#, fuzzy
 msgid  "~Number format"
 msgstr "قالب ~عددی"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "قالب‌بندی"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "ا~ضافه کردن..."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~حذف"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "ت~غییر نام"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
-#, fuzzy
 msgid  "Add AutoFormat"
 msgstr "اضافه کردن قالب‌بندی خودکار"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
-#, fuzzy
 msgid  "Rename AutoFormat"
 msgstr "تغییر نام قالب‌بندی خودکار"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "نام"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
-#, fuzzy
 msgid  "Delete AutoFormat"
 msgstr "حذف قالب‌بندی خودکار"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "آیا واقعاً می‌خواهید قالب‌بندی خودکار # را حذف کنید؟"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "بس~تن"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
-#, fuzzy
 msgid  "Jan"
 msgstr "ژانویه"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
-#, fuzzy
 msgid  "Feb"
 msgstr "فوریه"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
-#, fuzzy
 msgid  "Mar"
 msgstr "مارس"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
-#, fuzzy
 msgid  "North"
 msgstr "شمال"
 
@@ -5395,12 +5268,10 @@ msgid  "Mid"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
-#, fuzzy
 msgid  "South"
 msgstr "جنوب"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
-#, fuzzy
 msgid  "Total"
 msgstr "مجموع"
 
@@ -13316,8 +13187,9 @@ msgid  "Font Attributes"
 msgstr "مشخصه‌های قلم"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
+#, fuzzy
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "مقدار زیادی داده در تخته‌گیره ذخیره شده است.\nآیا می‌خواهید محتویات تخته‌گیره برای برنامه‌های دیگر قابل دسترسی باشد؟"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -13451,8 +13323,9 @@ msgid  "~Selected sheets"
 msgstr "برگه‌های ~انتخاب شده"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
+#, fuzzy
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "شما در حال چسباندن داده‌ها در خانه‌هایی هستید که از قبل حاوی اطلاعات هستند.\nآیا واقعاق می‌خواهید روی داده‌های موجود بنویسید؟"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"

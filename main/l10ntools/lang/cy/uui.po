@@ -61,11 +61,11 @@ msgstr "Dim Testun"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Rhowch gyfrinair i agor ffeil. \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Rhowch gyfrinair i ewid ffeil. \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "Dogfen ar waith"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi ar gyfer golygu gan:\n\n$(ARG2)\n\nCeisiwch eto i gadw'r ddogfen neu gadw copi o'r ddogfen.\nMae ffeil dogfen '$(ARG\n\n\n\nCeisiwch eto i gadw'r ddogfen neu gadw copi o'r ddogfen.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "Neges gan y gweinydd:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "Rhowch enw defnyddiwr a chyfrinair ar gyfer : \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Rhowch enw defnyddiwr a chyfrinair ar gyfer : \n\"%2\" ar %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "~Anfon"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Mae'r gweinydd '${HOST}' eisiau gosod un neu fwy o cookies.\nMae cookies yn cynnwys gwybodaeth sy'n cyfeirio at ddosbarthiadau URL penodol. Os fydd %PRODUCTNAME yn gofyn am ddogfen gydag URL sy'n cyfateb i ddosbarth cookie osodwyd ynghynt, bydd %PRODUCTNAME yn anfon gwybodaeth i'r gweinydd. Mae hyn yn caniatáu i'r gweinydd adnabod statws rhaglen Gwe Fyd Eang, ee wrth siopa ar-lein.\n\nDylid gosod y Cookies canlynol:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Parth: ${DOMAIN}, Llwybr: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Derbyn Cookies"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Mae %PRODUCTNAME wedi cadw cookies ar gyfer y gweinydd '${HOST}' fydd yn cael ei anfon wrth ofyn am ddogfennau ${PATH}.\nMae cookies yn cynnwys gwybodaeth sy'n cyfeirio at ddosbarthiadau URL penodol. Maent yn cael eu hanfon gan rhai gweinyddion at %PRODUCTNAME lle cant eu cadw pan fydd rhai dogfennau penodol yn cael eu darllen. Os fydd %PRODUCTNAME yn gofyn am ddogfen gydag URL sy'n cyfateb i ddosbarth cookie osodwyd ynghynt, bydd %PRODUCTNAME yn anfon gwybodaeth i'r gweinydd. Mae hyn yn caniatáu i'r gweinydd adnabod statws rhaglen Gwe Fyd Eang, ee wrth siopa ar-lein.\n\nDylid gosod y Cookies canlynol:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Parth: ${DOMAIN}, Llwybr: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Cronfeydd Data ar waith"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi ar gyfer golygu gan:\n\n$(ARG2)\n\nAgorwch y ddogfen fel darllen yn unig neu agor copi o'r ddogfen i'w golygu.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "Dogfen wedi ei Newid gan Eraill"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Mae'r ffeil wedi newid ers iddi gael ei hagor ar gyfer ei golygu gan %PRODUCTNAME. Bydd cadw eich fersiwn yn ysgrifennu dros newidiadau wnaed gan eraill."
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "Mae Diweddariad o %PRODUCTNAME ar Gael"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Cafodd y ddogfen hon ei chreu gan fersiwn mwy diweddar o %PRODUCTNAME. Gall fod yn cynnal nodweddion nad ydynt ar gael yn eich fersiwn cyfredol.\n\nCliciwch 'Diweddaru Nawr...' i redeg y diweddaru ar-lein a derbyn y fersiwn diweddaraf o %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "Rhybudd: Os fyddwch yn anghofio'r Prif Gyfrinair, ni fydd modd i chi gae
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi ar gyfer golygu gennych chi ar system wahanol ers $(ARG2)\n\nAgorwch y ddogfen ym modd darllen yn unig neu anwybyddu'r clo ffeil ac agor copi o'r ddogfen ar gyfer ei golygu."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "~Agor"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi gennych ar system wanhaol ers $(ARG2)\\n\n\\n\nAgorwch y ddogfen yn darllen a cheisiwch ei ail chadw neu anwybyddu cloi'r ffeil a chadw'r ffeil bresennol.Mae ffeil dogfen '$(ARG\n\\n\nAgorwch y ddogfen yn darllen a cheisiwch ei ail chadw neu anwybyddu cloi'r ffeil a chadw'r ffeil bresennol."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

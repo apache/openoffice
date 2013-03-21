@@ -61,11 +61,11 @@ msgstr "គ្មាន​អត្ថបទ"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់ ដើម្បី​បើក​ឯកសារ ៖ \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់ ដើម្បី​កែប្រែ​​ឯកសារ ៖ \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "ឯកសារ​កំពុងប្រើ"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "ឯកសារ '$(ARG1)' គឺ​ត្រូវបាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ ៖\n\n$(ARG2)\n\nព្យាយាម​ម្ដងទៀត ដើម្បី​រក្សាទូក​ឯកសារ ឬ​រក្សាទុក​ច្បាប់​ចម្លង​របស់​ឯកសារ​នោះ​។\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "សារ​ពី​ម៉ាស៊ីន​បម្រើ ៖"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "បញ្ចូល​ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់​សម្រាប់ ៖ \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "បញ្ចូល​ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់​សម្រាប់ ៖\n\"%2\" នៅ​លើ %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "ផ្ញើ"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "ម៉ាស៊ីន​បម្រើ '${HOST}' ចង់​កំណត់​ខូគី​មួយ​ ឬ ច្រើន ។\nខូគី​​មាន​​ព័ត៌មាន​​យោង​​ទៅ​ថ្នាក់​​ URL ខ្លះ​ ។ បើ​ពេល​ក្រោយ​ %PRODUCTNAME ​ស្នើ​សុំ​​​នូវ​ឯកសារ​មួយ​ជាមួយ​ URL ដែល​​ត្រូវ​គ្នា​​ទៅ​នឹង​ថ្នាក់​​របស់​ខូគី​ដែល​បាន​កំណត់​ពី​មុន​  %PRODUCTNAME នឹង​ផ្ញើ​ព័ត៌មាន​នេះ​ទៅ​ម៉ាស៊ីន​បម្រើ​ ។ នេះ​អនុញ្ញាត​ឲ្យ​ម៉ាស៊ីន​បម្រើ​មួយ​ស្គាល់​ស្ថានភាព​នៃ​កម្មវិធី WWW មួយ ។​ ឧទាហរណ៍ ពេល​ទិញ​តាម​បណ្តាញ ។\n\nខូគី​ដូច​ខាង​ក្រោម​គួរ​តែ​ត្រូវ​បាន​កំណត់ ៖​\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "ដែន ៖ ${DOMAIN} ផ្លូវ ៖ ${PATH} ខូគី ៖ ${COOKIE} ។​\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "ការ​ទទួល​ខូគី"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME បាន​រក្សា​ទុក​ខូគី សម្រាប់​ម៉ាស៊ីន​បម្រើ '${HOST}' ដែល​នឹង​ត្រូវ​បានផ្ញើ ពេល​ស្នើ​សុំ​ឯកសារ ${PATH} ។\nខូគី​មាន​ព័ត៌មាន​ដែល​យោង​ទៅ​ថ្នាក់ URL ខ្លះ ។ ពួក​វា​ត្រូវ​បាន​ផ្ញើ​ដោយ​ម៉ាស៊ីន​បម្រើ​ខ្លះទៅ %PRODUCTNAME កន្លែង​ដែល​ពួក​វា​ត្រូវ​បាន​រក្សា​ទុក ពេល​ឯកសារ​ខ្លះ​ត្រូវ​បាន​ចូលដំណើរការ ។ យោង​តាម URL ប្រសិន​បើ %PRODUCTNAME ផ្ទុក​ឯកសារ​ដែលទាក់​ទង​ទៅ​នឹង​ថ្នាក់​របស់​ខូគី​មួយ​ក្នុង​ចំណោម​ខូគី​ដែល​បាន​ទទួលពីមុន %PRODUCTNAME នឹង​ផ្ញើ​ព័ត៌មាន​នេះ​ទៅ​ម៉ាស៊ីន​បម្រើ​នោះ ។ នេះ​ធ្វើ​ឲ្យ​ម៉ាស៊ីន​បម្រើ​អាច​រក្សា​ការ​តាមដាន​ស្ថានភាព​របស់​កម្មវិធី WWW  ឧទាហរណ៍ ពេល​ទិញ​ទំនិញ​តាម​បណ្តាញ ។\n\nខូគី​ខាង​ក្រោម​នេះ​គួរ​ត្រូវ​បាន​កំណត់ ៖\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "ដែន ៖ ${DOMAIN} ផ្លូវ ៖ ${PATH} ខូគី ៖ ${COOKIE} ។​\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "ឯកសារ​កំពុងប្រើ"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "ឯកសារ '$(ARG1)' ត្រូវ​បាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ ៖\n\n$(ARG2)\n\nបើក​ឯកសារ​ដែល​បាន​តែ​អាន ឬ​បើក​ច្បាប់​ចម្លង​ឯកសារ​ដើម្បី​កែសម្រួល ។\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "ឯកសារ​ត្រូវ​បាន​ផ្លាស់ប្
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "ឯកសារ​ត្រូវបាន​ផ្លាស់ប្ដូរ ចាប់តាំង​ពី​វា​ត្រូវ​បាន​បើក​កែសម្រួល​នៅ​ក្នុង %PRODUCTNAME ។ ការ​រក្សាទុក​កំណែ​​ឯកសារ​របស់​អ្នក នឹង​សរសេរ​ជាន់លើ​ការ​ផ្លាស់ប្ដូរ​ដែល​អ្នក​ដ៏ទៃ​បាន​ធ្វើ ។\n\nតើ​អ្នក​ចង់​រក្សាទុក​ឬ​ទេ ?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "មាន​បច្ចុប្បន្នភាព​របស់ %P
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "ឯកសារ​នេះ​ត្រូវបាន​បង្កើត​ឡើង​ដោយ​កំណែ %PRODUCTNAME ថ្មី ។ វា​អាច​មាន​លក្ខណៈ​ពិសេស ដែល​មិន​បាន​គាំទ្រ​ដោយ​កំណែ​បច្ចុប្បន្ន​របស់​អ្នក ។\n\nចុច 'ធ្វើ​បច្ចុប្បន្ន​ភាព​ឥឡូវ...' ដើម្បី​ដំណើរការ​បច្ចុប្បន្នភាព​​លើ​បណ្ដាញ និងយក​កំណែ %PRODUCTNAME ​ចុងក្រោយ​បំផុត ។"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "ប្រុងប្រយ័ត្ន ៖ ត្រូវ​ប្រ
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "ឯកសារ '$(ARG1)' ត្រូវបាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ​ខ្លួន​របស់​អ្នក នៅ​លើ​ប្រព័ន្ធ​ផ្សេង​ដោយ $(ARG2)\n\nបើក​ឯកសារ​ ដែល​បាន​តែអាន ឬ​មិនអើពើ​នឹង​ឯកសារ​ផ្ទាល់ខ្លួន ដែល​ចាក់សោ និង​បើក​ឯកសារ​សម្រាប់​ការ​កែសម្រួល ។\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "បើក"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "ឯកសារ '$(ARG1)' ត្រូវបាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ​ខ្លួន​អ្នក​ផ្ទាល់​នៅលើ​ប្រព័ន្ធ​ផ្សេងគ្នា ដោយ $(ARG2)\n\nបិទ​ឯកសារ​នៅលើ​ប្រព័ន្ធ​ផ្សេង ហើយ​ព្យាយាម​រក្សាទុក ឬ​មិនអើពើ​នឹង​ការ​ចាក់សោ​ឯកសារ​ផ្ទាល់ខ្លួន និង​រក្សាទុក​ឯកសារ​បច្ចុប្បន្ន ។\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

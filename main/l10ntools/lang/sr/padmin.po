@@ -61,7 +61,7 @@ msgstr "Додај фонтове"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "Стварно желите да препишете ову датотеку фонта?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "Ниједну"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Датотека облика (са .afm додатком) није пронађена за фонт\n%s\nстога, фонт неће бити инсталиран. Датотеке облика може направити ghostscript, на пример, и морају се поставити у исти директоријум са фонтовима или његов afm поддиректоријум."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Метричка датотека за фонт \n   %s\nсе није могле умножити. Фонт неће бити инсталиран."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Датотека фонта \n   %s\nсе није могла умножити. Фонт неће бити инсталиран."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "Датотека не садржи метричке податке."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "Метрички податак \n\n%s\n\nсе не може превести из следећег разлога:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "Драјвер „%s‟ је увек неопходан и стога �
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "Драјвер „%s1‟ се не може уклонити. Немогуће је уклонити датотеку\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

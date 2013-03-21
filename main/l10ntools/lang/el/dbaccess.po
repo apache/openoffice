@@ -73,7 +73,7 @@ msgstr "Δεν αποθηκεύτηκε ο προορισμός δεδομένω
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Η δοθείσα εντολή δεν είναι έκφραση SELECT.\nΕπιτρέπονται μόνο ερωτήματα."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "Υπάρχουν πίδακες στη βάση δεδομένων πο�
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "Η εντολή SQL που οδηγεί σε αυτό το σφάλμα είναι:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,11 +221,11 @@ msgstr "Αδύνατη η εύρεση του εγγράφου '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Αδυναμία αποθήκευσης του εγγράφου σε $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
-msgstr ""
+msgstr "Σφάλμα πρόσβασης πηγής δεδομένων '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 msgid  "There exists no folder named \"$folder$\"."
@@ -429,7 +429,7 @@ msgstr "Το επιλεγμένο όνομα αρχείου ή κατάλογο�
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Η νέα βάση δεδομένων δεν μπορεί να δημιουργηθεί.\nΠαρακαλώ ελέγξτε την εγκατάσταση του Adabas D, και ειδικά της μεταβλητές \"DBROOT\" και \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -493,7 +493,7 @@ msgstr "Καλώς ήλθατε στον οδηγό μετακίνησης μα�
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Αυτός ο μάγος θα σας καθοδηγήσει με την εργασία της μετακίνησης των μακροεντολών.\n\nΑφού την τελειώσετε, όλες οι μακροεντολές που ενσωματώθηκαν στο παρελθόν στις φόρμες και τις αναφορές του τρέχοντος εγγράφου βάσης δεδομένων θα έχει μετακινηθεί στο ίδιο το έγγραφο. Σε αυτό το μάθημα, οι βιβλιοθήκες θα μετονομαστούν όπως χρειάζεται.\n\nΑν οι φόρμες και οι αναφορές σας περιλαμβάνουν αναφορές σε αυτές τις μακροεντολές, θα ρυθμιστούν, όπου είναι δυνατό.\n\nΠριν η μετακίνηση μπορέσει να ξεκινήσει, όλες οι φόρμες, αναφορές, ερωτήματα, και πίνακες που ανήκουν στο έγγραφο πρέπει να κλείσουν. Πατήστε 'Επόμενο' για να γίνει αυτό."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -909,7 +909,7 @@ msgstr "Το έγγραφο περιέχει φόρμες ή αναφορές μ
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Οι μακροεντολές πρέπει να ενσωματωθούν στο ίδιο το έγγραφο βάσης δεδομένων.\n\nΜπορείτε να συνεχίσετε να χρησιμοποιείτε το έγγραφό σας όπως πριν, αλλά, σας προτείνουμε να μετακινήσετε τις μακροεντολές σας. Η επιλογή του μενού 'Εργαλεία / Μετακίνηση μακροεντολών ...' θα σας βοηθήσει με αυτό.\n\nΣημειώστε πως δεν θα μπορείτε να ενσωματώσετε μακροεντολές στο ίδιο το έγγραφο βάσης δεδομένων μέχρι να πραγματοποιηθεί η μετακίνηση. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -1319,62 +1319,50 @@ msgid  "Details"
 msgstr "Λεπτομέρειες"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
-#, fuzzy
 msgid  "Standard Filter"
 msgstr "Τυπικό φίλτρο"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Όνομα πεδίου"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Συνθήκη"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
-#, fuzzy
 msgid  "Value"
 msgstr "Τιμή"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
-#, fuzzy
 msgid  "Operator"
 msgstr "Τελεστής"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Criteria"
 msgstr "Κριτήρια"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
-#, fuzzy
 msgid  "- none -"
 msgstr "- κανένα -"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
-#, fuzzy
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;όπως;όχι όπως;μηδενικός χαρακτήρας;όχι μηδενικός χαρακτήρας"
 
@@ -1449,7 +1437,6 @@ msgid  "Sort Order"
 msgstr "Σειρά ταξινόμησης"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-#, fuzzy
 msgid  "ascending"
 msgstr "αύξουσα"
 
@@ -1514,82 +1501,66 @@ msgid  "<none>"
 msgstr "<κανένα>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Επιλογές"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
-#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "Χρήση περιορισμών ονοματοδοσίας SQL92"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
-#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Προσθήκη του ψευδωνύμου του πίνακα στις δηλώσεις SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
-#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Χρήση της λέξης-κλειδί AS πριν από τα ονόματα alias πίνακα"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
-#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Χρήση Outer Join syntax '{OJ }'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
-#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Παράβλεψη των προνομίων από τον οδηγό της βάσης δεδομένων"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
-#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Αντικατάσταση ονομασμένων παραμέτρων με '?'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
-#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Προβολή στηλών έκδοσης (αν είναι διαθέσιμες)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Χρήση ονόματος καταλόγου στις δηλώσεις SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
-#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Χρήση ονόματος σχήματος στις δηλώσεις SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
-#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Δημιουργία ευρετηρίου με δήλωση ASC ή DESC"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
-#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Τέλος γραμμών κειμένου με CR+LF"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
-#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Αγνόηση πληροφοριών νομισματικού πεδίου"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Η εισαγωγή δεδομένων φόρμας ελέγχει για τα απαιτούμενα πεδία"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
-#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "Χρήση χαρακτήρων ημερομηνίας/ ώρας συμβατών με ODBC"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
-#, fuzzy
 msgid  "Supports primary keys"
 msgstr "Υποστηρίζει πρωτεύοντα κλειδιά"
 
@@ -1598,27 +1569,22 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Προεπιλογή"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Mixed"
 msgstr "Μικτή"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "MS Access"
 msgstr "Αρχείο MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
-#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Σύγκριση Λογικών τιμών"
 
@@ -1627,151 +1593,122 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Ρυθμίσεις"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "Ανάκληση των παραγόμενων ~τιμών"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
-#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "Αυτόματη αύ~ξηση έκφρασης"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
-#, fuzzy
 msgid  "~Query of generated values"
 msgstr "~Ερώτημα παραγόμενων τιμών"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
-#, fuzzy
 msgid  "Generated Values"
 msgstr "Παραγόμενες τιμές"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
-#, fuzzy
 msgid  "Special Settings"
 msgstr "Ειδικές ρυθμίσεις"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
-#, fuzzy
 msgid  "Advanced Settings"
 msgstr "Ιδιότητες για προχωρημένους"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Αποθήκευση"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Create New Directory"
 msgstr "Δημιουργία νέου καταλόγου"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Πάνω ένα επίπεδο"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
-#, fuzzy
 msgid  "File ~name:"
 msgstr "Όνομα αρ~χείου:"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Αποθήκευση"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
-#, fuzzy
 msgid  "~Path:"
 msgstr "~Διαδρομή:"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Φάκελος"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Το αρχείο υπάρχει ήδη. Να αντικατασταθεί;"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-#, fuzzy
 msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "Για να γίνει η σύνδεση με την προέλευση των δεδομένων \"$name$\" απαιτείται η εισαγωγή του κωδικού πρόσβασης."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Ο κατάλογος\n\n$path$\n\nδεν υπάρχει. Να δημιουργηθεί;"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
-#, fuzzy
 msgid  "The directory $name$ could not be created."
 msgstr "Δεν ήταν δυνατή η δημιουργία του καταλόγου $name$."
 
 #: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
-#, fuzzy
 msgid  "Convert Database"
 msgstr "Μετατροπή βάσης δεδομένων"
 
 #: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
-#, fuzzy
 msgid  "Please enter the ~password for the user 'DOMAIN'."
 msgstr "Παρακαλούμε δώστε τον κ~ωδικό πρόσβασης για το χρήστη 'DOMAIN'."
 
 #: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
-#, fuzzy
 msgid  "Tables Filter"
 msgstr "Φίλτρα πινάκων"
 
 #: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Tables and table filter"
 msgstr "Πίνακες και φίλτρα πινάκων"
 
 #: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "Mark the tables that should be visible for the applications."
 msgstr "Σημειώστε τους πίνακες που θα πρέπει να είναι ορατοί για τις εφαρμογές."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Database name"
 msgstr "Όνομα ~βάσης δεδομένων"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
-#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "Ε~ξυπηρετητής / Θύρα"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Server"
 msgstr "~Εξυπηρετητής"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
-#, fuzzy
 msgid  "~Port"
 msgstr "~Θύρα"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Προεπιλογή: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
-#, fuzzy
 msgid  "So~cket"
 msgstr "Υπο~δοχή:"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
-#, fuzzy
 msgid  "Named p~ipe"
 msgstr "Ονομασμένη σω~λήνωση"
 
@@ -1786,715 +1723,574 @@ msgid  "User administration"
 msgstr "Διαχείριση χρήστη"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Πίνακες"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Ερωτήματα"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Προσθήκη"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Κλείσιμο"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "Προσθήκη πινάκων"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Προσθήκη πίνακα ή ερωτήματος"
 
 #: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
-#, fuzzy
 msgid  "Field Format"
 msgstr "Μορφοποίηση πεδίου"
 
 #: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
-#, fuzzy
 msgid  "Bac~k"
 msgstr "Πί~σω"
 
 #: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Γραμματοσειρά"
 
 #: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "Μορφή"
 
 #: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Στοίχιση"
 
 #: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
-#, fuzzy
 msgid  "Table Format"
 msgstr "Μορφοποίηση πίνακα"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "Χρήση καταλόγου για βάσεις δεδομένων βασισμένες σε αρχείο"
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Connection Settings"
 msgstr "Ρυθμίσεις σύνδεσης"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Όνομα ~συστήματος"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
-#, fuzzy
 msgid  "~Port number"
 msgstr "Αριθμός ~θύρας"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
-#, fuzzy
 msgid  "Advanced Properties"
 msgstr "Ιδιότητες για προχωρημένους"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
-#, fuzzy
 msgid  "Additional Settings"
 msgstr "Πρόσθετες ρυθμίσεις"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
-#, fuzzy
 msgid  "Connection settings"
 msgstr "Ρυθμίσεις σύνδεσης"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
-#, fuzzy
 msgid  "Database properties"
 msgstr "Ιδιότητες βάσης δεδομένων"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
-#, fuzzy
 msgid  "Database properties"
 msgstr "Ιδιότητες βάσης δεδομένων"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
-#, fuzzy
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "Καλώς ήρθατε στο αυτόματο πιλότο Βάσης Δεδομένων %PRODUCTNAME"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
-#, fuzzy
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
 msgstr "Χρήση του Αυτόματου πιλότου βάσης δεδομένων για τη δημιουργία μιας νέας βάσης δεδομένων, το άνοιγμα μιας υπάρχουσας βάσης, ή τη σύνδεση σε μια βάση που είναι αποθηκευμένη σε έναν εξυπηρετητή."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
-#, fuzzy
 msgid  "What do you want to do?"
 msgstr "Τι θέλετε να κάνετε;"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
-#, fuzzy
 msgid  "Create a n~ew database"
 msgstr "Δημιουργία μιας ~νέας βάσης δεδομένων"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
-#, fuzzy
 msgid  "Open an existing database ~file"
 msgstr "Άνοιγμα ενός υ~πάρχοντος αρχείου βάσης δεδομένων"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
-#, fuzzy
 msgid  "Recently used"
 msgstr "Πρόσφατα"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
-#, fuzzy
 msgid  "Connect to an e~xisting database"
 msgstr "Σύνδεση με μια υ~πάρχουσα βάση δεδομένων"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
-#, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
 msgstr "Επιλέξτε τον τύπο βάσης δεδομένων στην οποία θέλετε να συνδεθείτε."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
-#, fuzzy
 msgid  "Database ~type "
 msgstr "~Τύπος βάσης δεδομένων "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
-#, fuzzy
 msgid  "Database"
 msgstr "Βάση δεδομένων"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Στις ακόλουθες σελίδες, μπορείτε να κάνετε λεπτομερείς ρυθμίσεις για τη σύνδεση.\n\nΟι νέες ρυθμίσεις θα αντικαταστήσουν τις προϋπάρχουσες."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
-#, fuzzy
 msgid  "MySQL"
 msgstr "MySQL"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
-#, fuzzy
 msgid  "Data Source Properties: #"
 msgstr "Ιδιότητες προέλευσης δεδομένων: #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
-#, fuzzy
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
 msgstr "Δεν ήταν δυνατή η φόρτωση της βιβλιοθήκης προγραμμάτων #lib# ή είναι κατεστραμμένη. Η επιλογή προέλευσης δεδομένων ODBC δεν είναι διαθέσιμη."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Αυτού του τύπου η προέλευση δεδομένων δεν υποστηρίζεται σε αυτήν την πλατφόρμα.\nΕπιτρέπεται να αλλάξετε τις ρυθμίσεις, αλλά πιθανότατα δεν θα μπορέσετε να συνδεθείτε με τη βάση δεδομένων."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "Γενικά"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Optional settings"
 msgstr "Προαιρετικές ρυθμίσεις"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
-#, fuzzy
 msgid  "Display deleted records as well"
 msgstr "Εμφάνιση και των διαγραμμένων εγγραφών"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
-#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
 msgstr "Σημείωση: Όταν γίνει διαγραφή και εμφανίζονται οι εγγραφές, δεν θα μπορείτε να διαγράψετε εγγραφές από τη προέλευση δεδομένων."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
-#, fuzzy
 msgid  "Indexes..."
 msgstr "Ευρετήρια..."
 
 #: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Optional Settings"
 msgstr "Προαιρετικές ρυθμίσεις"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "ODBC ~options"
 msgstr "Επιλο~γές ODBC"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Connection Settings"
 msgstr "Ρυθμίσεις σύνδεσης"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Όν~ομα υπολογιστή"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "Μέγεθος ε~νδιάμεσης μνήμης δεδομένων (MB)"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
-#, fuzzy
 msgid  "~Data increment (MB)"
 msgstr "Αύ~ξηση δεδομένων (MB)"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "Administration"
 msgstr "Διαχείριση"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
-#, fuzzy
 msgid  "Control ~user name"
 msgstr "Όνομα ~χρήστη ελέγχου"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Control ~password"
 msgstr "Κω~δικός πρόσβασης ελέγχου"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
-#, fuzzy
 msgid  "~Shut down service when closing %PRODUCTNAME"
 msgstr "Τερματι~σμός της υπηρεσίας με τον τερματισμό του %PRODUCTNAME"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
-#, fuzzy
 msgid  "E~xtended..."
 msgstr "Ε~κτεταμένο..."
 
 #: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "MySQL JDBC d~river class"
 msgstr "Κλάση ο~δηγού MySQL JDBC"
 
 #: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test class"
 msgstr "Δοκιμή κλάσης"
 
 #: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Πιστοποίηση χρήστη"
 
 #: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "Όνομα ~χρήστη"
 
 #: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password required"
 msgstr "Απαιτείται κωδικός"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "Oracle JDBC d~river class"
 msgstr "Κλάση οδηγού Oracle ~JDBC"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test class"
 msgstr "Δοκιμή κλάσης"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Connection Settings"
 msgstr "Ρυθμίσεις σύνδεσης"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
-#, fuzzy
 msgid  "~Base DN"
 msgstr "~Βασικό DN"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
-#, fuzzy
 msgid  "Use secure connection(SSL)"
 msgstr "Χρήση ασφαλούς σύνδεσης (SSL)"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
-#, fuzzy
 msgid  "~Port number"
 msgstr "Αριθμός ~θύρας"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
-#, fuzzy
 msgid  "Maximum number of ~records"
 msgstr "Μέγιστος αριθμός εγγ~ραφών"
 
 #: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Hostname"
 msgstr "Όν~ομα υπολογιστή"
 
 #: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
-#, fuzzy
 msgid  "~Port number"
 msgstr "Αριθμός ~θύρας"
 
 #: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "~Driver settings"
 msgstr "~Ρυθμίσεις οδηγού"
 
 #: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
-#, fuzzy
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr "Παρακαλώ επιλέξτε 'Σύνδεση σε μια υπάρχουσα βάση δεδομένων' για να συνδεθείτε με μια υπάρχουσα βάση δεδομένων αντ' αυτού."
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
-#, fuzzy
 msgid  "Save As"
 msgstr "Αποθήκευση ως"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
-#, fuzzy
 msgid  "Please enter a name for the object to be created:"
 msgstr "Παρακαλώ εισάγετε το όνομα του αντικειμένου που θα δημιουργηθεί:"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
-#, fuzzy
 msgid  "~Catalog"
 msgstr "~Κατάλογος"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
-#, fuzzy
 msgid  "~Schema"
 msgstr "~Σχήμα"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
-#, fuzzy
 msgid  "~Table Name"
 msgstr "Όνο~μα πίνακα"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
-#, fuzzy
 msgid  "~Name of table view"
 msgstr "Όνομα ~προβολής πίνακα"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
-#, fuzzy
 msgid  "~Query name"
 msgstr "Όνομα ερ~ωτήματος"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
-#, fuzzy
 msgid  "Rename to"
 msgstr "Μετονομασία σε"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
-#, fuzzy
 msgid  "Insert as"
 msgstr "Εισαγωγή ως"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Η διαδρομή προς τα αρχεία dBASE"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "Η διαδρομή προς τα αρχεία κειμένου"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Η διαδρομή προς το έγγραφο υπολογιστικού φύλλου"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "Όνομα της προέλευσης δεδομένων του ODBC στο σύστημα σας"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Όνομα της βάσης δεδομένων MySQL"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Όνομα της βάσης δεδομένων Oracle"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Όνομα της βάσης δεδομένων Adabas D"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
-#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Αρχείο βάσης δεδομένων Microsoft Access"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
-#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "Δεν είναι απαραίτητες περισσότερες ρυθμίσεις. Κάντε κλικ στο κουμπί '%test', για να επαληθεύσετε ότι η σύνδεση λειτουργεί."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
-#, fuzzy
 msgid  "Datasource URL"
 msgstr "URL προέλευσης δεδομένων"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Όν~ομα υπολογιστή"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "Όνομα προφίλ του ~Mozilla"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "Όνομα προφίλ του ~Thunderbird"
 
 #: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
-#, fuzzy
 msgid  "Data Source"
 msgstr "Προέλευση δεδομένων"
 
 #: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
-#, fuzzy
 msgid  "Choose a data source:"
 msgstr "Επιλέξτε μια προέλευση δεδομένων:"
 
 #: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
-#, fuzzy
 msgid  "Organize..."
 msgstr "Διαχείριση..."
 
 #: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Δημιουργία.."
 
 #: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
-#, fuzzy
 msgid  "Local Databases"
 msgstr "Τοπικές βάσεις δεδομένων"
 
 #: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
-#, fuzzy
 msgid  "Choose a database"
 msgstr "Επιλέξτε μια βάση δεδομένων"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "General"
 msgstr "Γενικά"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Όν~ομα υπολογιστή"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Πιστοποίηση χρήστη"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "Όνομα ~χρήστη"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password required"
 msgstr "Απαιτείται κωδικός"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
-#, fuzzy
 msgid  "JDBC properties"
 msgstr "Ιδιότητες JDBC"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "Κλάση προγράμματος οδήγησης ~JDBC"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test Class"
 msgstr "Δοκιμή κλάσης"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
-#, fuzzy
 msgid  "Test Connection"
 msgstr "Δοκιμή σύνδεσης"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
-#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "Δεν βρέθηκε καμία προέλευση δεδομένων του Adabas D στο σύστημα σας."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
-#, fuzzy
 msgid  "Connection Test"
 msgstr "Δοκιμή σύνδεσης"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "Η σύνδεση πραγματοποιήθηκε επιτυχώς."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection could not be established."
 msgstr "Η σύνδεση δεν μπόρεσε να πραγματοποιηθεί."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
 msgstr "Ο οδηγός JDBC φορτώθηκε επιτυχώς."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "Δεν ήταν δυνατή η φόρτωση του οδηγού JDBC."
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access file"
 msgstr "Αρχείο MS Access"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "Αρχείο MS Access 2007"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
-#, fuzzy
 msgid  "Database files"
 msgstr "Αρχεία βάσης δεδομένων"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
-#, fuzzy
 msgid  "Database sizes"
 msgstr "Μεγέθη βάσης δεδομένων"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "Μέγε~θος (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "Ελεύ~θερη μνήμη (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
-#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "Κατάληψη ~μνήμης (σε %):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
-#, fuzzy
 msgid  "Database Statistics"
 msgstr "Στατιστικά βάσης δεδομένων"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
-#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Περιέχει τους πίνακες του συστήματος"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
-#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Περιέχει πληροφορίες για την συναλλαγή"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
-#, fuzzy
 msgid  "Contains all data files"
 msgstr "Περιέχει όλα τα αρχεία δεδομένων"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
-#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Συνολικό μέγεθος των αρχείων της βάσης δεδομένων"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
-#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Απομένων χώρος πριν την δημιουργία ενός νέου αρχείου Datadev."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
-#, fuzzy
 msgid  "Currently used memory"
 msgstr "Μνήμη που χρησιμοποιείται"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
-#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "Δεν ήταν δυνατή η εμφάνιση πληροφοριών, επειδή δεν υπάρχουν δικαιώματα πρόσβασης για τους απαιτούμενους πίνακες συστήματος."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
-#, fuzzy
 msgid  "SQL command"
 msgstr "Εντολή SQL"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
-#, fuzzy
 msgid  "Command to execute"
 msgstr "Εντολή προς εκτέλεση"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
-#, fuzzy
 msgid  "Execute"
 msgstr "Εκτέλεση"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
-#, fuzzy
 msgid  "Previous commands"
 msgstr "Προηγούμενες εντολές"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
-#, fuzzy
 msgid  "Status"
 msgstr "Κατάσταση"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Κλείσιμο"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
-#, fuzzy
 msgid  "Execute SQL Statement"
 msgstr "Εκτέλεση πρότασης SQL"
 
 #: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
-#, fuzzy
 msgid  "Command successfully executed."
 msgstr "Η εντολή εκτελέστηκε με επιτυχία."
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
-#, fuzzy
 msgid  "The connection to the database has been lost. This dialog will be closed."
 msgstr "Η σύνδεση με τη βάση δεδομένων έχει διακοπεί. Αυτό το παράθυρο διαλόγου θα κλείσει."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
-#, fuzzy
 msgid  "Indexes"
 msgstr "Ευρετήρια"
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
-#, fuzzy
 msgid  "~Table"
 msgstr "Πί~νακας"
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
-#, fuzzy
 msgid  "Assignment"
 msgstr "Ανάθεση"
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
-#, fuzzy
 msgid  "T~able indexes"
 msgstr "Ευρετήρι~α πινάκων"
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
-#, fuzzy
 msgid  "~Free indexes"
 msgstr "Ελεύ~θερα ευρετήρια"
 
@@ -2569,373 +2365,306 @@ msgid  "The passwords do not match. Please enter the password again."
 msgstr "Οι κωδικοί πρόσβασης δεν συμφωνούν. Πληκτρολογήστε τον κωδικό πρόσβασης ξανά."
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Database Wizard"
 msgstr "Πιλότος βάσης δεδομένων"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
-#, fuzzy
 msgid  "Database Wizard"
 msgstr "Πιλότος βάσης δεδομένων"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
-#, fuzzy
 msgid  "Select database"
 msgstr "Επιλογή βάσης δεδομένων"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
-#, fuzzy
 msgid  "Set up dBASE connection"
 msgstr "Ρύθμιση μιας σύνδεσης dBASE"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to text files"
 msgstr "Ρύθμιση μιας σύνδεσης σε αρχεία κειμένου"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
-#, fuzzy
 msgid  "Set up Microsoft Access connection"
 msgstr "Ρύθμιση μιας σύνδεσης Microsoft Access"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
-#, fuzzy
 msgid  "Set up LDAP connection"
 msgstr "Ρύθμιση μιας σύνδεσης LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
-#, fuzzy
 msgid  "Set up Adabas D connection"
 msgstr "Ρύθμιση μιας σύνδεσης Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
-#, fuzzy
 msgid  "Set up ADO connection"
 msgstr "Ρύθμιση μιας σύνδεσης ADO"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
-#, fuzzy
 msgid  "Set up JDBC connection"
 msgstr "Ρύθμιση μιας σύνδεσης JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
-#, fuzzy
 msgid  "Set up Oracle database connection"
 msgstr "Ρύθμιση μιας σύνδεσης με βάση δεδομένων Oracle"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
-#, fuzzy
 msgid  "Set up MySQL connection"
 msgstr "Ρύθμιση μιας σύνδεσης MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
-#, fuzzy
 msgid  "Set up ODBC connection"
 msgstr "Ρύθμιση μιας σύνδεσης ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
-#, fuzzy
 msgid  "Set up Spreadsheet connection"
 msgstr "Ρύθμιση μιας σύνδεσης με Υπολογιστικό φύλλο"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
-#, fuzzy
 msgid  "Set up user authentication"
 msgstr "Ρύθμιση πιστοποίησης χρήστη"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
-#, fuzzy
 msgid  "Set up MySQL server data"
 msgstr "Ρύθμιση δεδομένων εξυπηρετητή MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
-#, fuzzy
 msgid  "Save and proceed"
 msgstr "Αποθήκευση και συνέχεια"
 
 #: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
-#, fuzzy
 msgid  "New Database"
 msgstr "Νέα βάση δεδομένων"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
-#, fuzzy
 msgid  "Set up a connection to a MySQL database"
 msgstr "Ρύθμιση μιας σύνδεσης με μία βάση δεδομένων MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Μπορείτε να συνδεθείτε με μια βάση δεδομένων MySQL χρησιμοποιώντας ODBC ή JDBC.\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας αν δεν είστε σίγουροι για τις ακόλουθες ρυθμίσεις."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
-#, fuzzy
 msgid  "How do you want to connect to your MySQL database?"
 msgstr "Πώς θέλετε να συνδεθείτε με τη βάση δεδομένων MySQL;"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
-#, fuzzy
 msgid  "Connect using ODBC (Open Database Connectivity)"
 msgstr "Σύνδεση με χρήση ODBC (Open Database Connectivity)"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
-#, fuzzy
 msgid  "Connect using JDBC (Java Database Connectivity)"
 msgstr "Σύνδεση με χρήση JDBC (Java Database Connectivity)"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
-#, fuzzy
 msgid  "Connect directly"
 msgstr "Απευθείας σύνδεση"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
-#, fuzzy
 msgid  "Set up the user authentication"
 msgstr "Ρύθμιση πιστοποίησης χρήστη"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
-#, fuzzy
 msgid  "Some databases require you to enter a user name."
 msgstr "Κάποιες βάσεις δεδομένων απαιτούν να εισάγετε ένα όνομα χρήστη."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "Όνομα ~χρήστη"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password re~quired"
 msgstr "Απαι~τείται κωδικός"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
-#, fuzzy
 msgid  "~Test Connection"
 msgstr "~Δοκιμή σύνδεσης"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
-#, fuzzy
 msgid  "Decide how to proceed after saving the database"
 msgstr "Αποφασίστε πως θα προχωρήσετε μετά την αποθήκευση της βάσης δεδομένων"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
-#, fuzzy
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
 msgstr "Θέλετε ο Αυτόματος πιλότος να καταχωρίσει τη βάση δεδομένων στο %PRODUCTNAME;"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
-#, fuzzy
 msgid  "~Yes, register the database for me"
 msgstr "~Ναι, να γίνει καταχώριση της βάσης δεδομένων"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
-#, fuzzy
 msgid  "N~o, do not register the database"
 msgstr "Όχι, να μη γίνει καταχώριση της βάσης δεδ~ομένων"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
-#, fuzzy
 msgid  "After the database file has been saved, what do you want to do?"
 msgstr "Μετά την αποθήκευση του αρχείου βάσης δεδομένων, τι θέλετε να κάνετε;"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
-#, fuzzy
 msgid  "Open the database for editing"
 msgstr "Άνοιγμα της βάσης δεδομένων για επεξεργασία"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
-#, fuzzy
 msgid  "Create tables using the table wizard"
 msgstr "Δημιουργία πινάκων χρησιμοποιώντας τον αυτόματο πιλότο πίνακα"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Finish' to save the database."
 msgstr "Κάντε κλικ στο 'Τέλος' για να αποθηκευτεί η βάση δεδομένων."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Ρύθμιση μιας σύνδεσης με μία βάση δεδομένων χρησιμοποιώντας JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Παρακαλούμε συμπληρώστε τις απαιτούμενες πληροφορίες για να συνδεθείτε με μία βάση δεδομένων MySQL χρησιμοποιώντας JDBC. Σημειώστε ότι θα πρέπει να είναι εγκατεστημένος στο σύστημά σας μία κλάση οδηγού JDBC και να είναι καταχωρημένη στο %PRODUCTNAME.\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας αν δεν είστε σίγουροι για τις ακόλουθες ρυθμίσεις."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
-#, fuzzy
 msgid  "MySQL JDBC d~river class:"
 msgstr "Κλάση ο~δηγού MySQL JDBC:"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Προεπιλογή: 3306"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Set up connection to a MySQL database"
 msgstr "Ρύθμιση μιας σύνδεσης με μία βάση δεδομένων MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
-#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database."
 msgstr "Εισάγετε τις απαραίτητες πληροφορίες για τη ρύθμιση μιας σύνδεσης με μία βάση δεδομένων MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to dBASE files"
 msgstr "Ρύθμιση μιας σύνδεσης σε αρχεία dBASE"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
-#, fuzzy
 msgid  "Select the folder where the dBASE files are stored."
 msgstr "Επιλέξτε το φάκελο όπου είναι αποθηκευμένα τα αρχεία dBASE."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to text files"
 msgstr "Ρύθμιση μιας σύνδεσης σε αρχεία κειμένου"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
-#, fuzzy
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
 msgstr "Επιλέξτε το φάκελο όπου είναι αποθηκευμένα τα αρχεία κειμένου CSV (Comma Separated Values). Το %PRODUCTNAME Base θα ανοίξει αυτά τα αρχεία σε λειτουργία μόνο για ανάγνωση."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to text files"
 msgstr "Η διαδρομή προς τα αρχεία"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to a Microsoft Access database"
 msgstr "Ρύθμιση μιας σύνδεσης με μία βάση δεδομένων Microsoft Access"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
-#, fuzzy
 msgid  "Please select the Microsoft Access file you want to access."
 msgstr "Παρακαλούμε επιλέξτε το αρχείο της Microsoft Access που θέλετε να προσπελάσετε."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
-#, fuzzy
 msgid  "Set up a connection to an LDAP directory"
 msgstr "Ρύθμιση μιας σύνδεσης με έναν κατάλογο LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Παρακαλούμε συμπληρώστε τις απαιτούμενες πληροφορίες για να συνδεθείτε με έναν κατάλογο LDAP.\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας αν δεν είστε σίγουροι για τις ακόλουθες ρυθμίσεις."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
-#, fuzzy
 msgid  "Default: 389"
 msgstr "Προεπιλογή: 389"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
-#, fuzzy
 msgid  "Use ~secure connection (SSL)"
 msgstr "Χρήση α~σφαλούς σύνδεσης (SSL)"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to an Adabas D database"
 msgstr "Ρύθμιση μιας σύνδεσης με μια βάση δεδομένων Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Δώστε το όνομα της βάσης δεδομένων Adabas D στην οποία θέλετε να συνδεθείτε.\nΚάντε κλικ στο 'Εξερεύνηση...' για να επιλέξετε μία βάση δεδομένων Adabas D που είναι ήδη καταχωρημένη στο %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to an ADO database"
 msgstr "Ρύθμιση μιας σύνδεσης με μια βάση δεδομένων ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Παρακαλούμε δώστε το URL της προέλευσης δεδομένων ADO στην οποία θέλετε να συνδεθείτε.\nΚάντε κλικ στο 'Εξερεύνηση...' για να διαμορφώσετε ρυθμίσεις σχετικά με τον πάροχο.\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας αν δεν είστε σίγουροι για τις ακόλουθες ρυθμίσεις."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to an ODBC database"
 msgstr "Ρύθμιση μιας σύνδεσης με μια βάση δεδομένων ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Δώστε το όνομα της βάσης δεδομένων ODBC στην οποία θέλετε να συνδεθείτε.\nΚάντε κλικ στο 'Εξερεύνηση...' για να επιλέξετε μία βάση δεδομένων ODBC που είναι ήδη καταχωρημένη στο %PRODUCTNAME.\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας αν δεν είστε σίγουροι για τις ακόλουθες ρυθμίσεις."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to a JDBC database"
 msgstr "Ρύθμιση μιας σύνδεσης με μια βάση δεδομένων JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Παρακαλούμε συμπληρώστε τις απαραίτητες πληροφορίες για να συνδεθείτε με μία βάση δεδομένων JDBC.\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας αν δεν είστε σίγουροι για τις ακόλουθες ρυθμίσεις."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to an Oracle database"
 msgstr "Ρύθμιση μιας σύνδεσης με μια βάση δεδομένων Oracle"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
-#, fuzzy
 msgid  "Default: 1521"
 msgstr "Προεπιλογή: 1521"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
-#, fuzzy
 msgid  "Oracle JDBC ~driver class"
 msgstr "Κλάση οδηγού Oracle ~JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Παρακαλούμε συμπληρώστε τις απαραίτητες πληροφορίες για να συνδεθείτε με μία βάση δεδομένων Oracle.\nΣημειώστε ότι θα πρέπει να είναι εγκατεστημένος στο σύστημά σας μία κλάση οδηγού JDBC και να είναι καταχωρημένη στο %PRODUCTNAME.\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας αν δεν είστε σίγουροι για τις ακόλουθες ρυθμίσεις."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
-#, fuzzy
 msgid  "Set up a connection to spreadsheets"
 msgstr "Ρύθμιση μιας σύνδεσης με Υπολογιστικά φύλλα"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Κάντε κλικ στο 'Εξερεύνηση...' για να επιλέξετε ένα υπολογιστικό φύλλο του %PRODUCTNAME ή ένα βιβλίο Microsoft Excel.\nΤο %PRODUCTNAME θα ανοίξει αυτό το αρχείο σε λειτουργία μόνο για ανάγνωση."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
-#, fuzzy
 msgid  "~Location and file name"
 msgstr "~Τοποθεσία και όνομα αρχείου"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "~Password required"
 msgstr "Απαι~τείται κωδικός"
 
 #: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Height"
 msgstr "Ύ~ψος"
 
 #: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "Α~υτόματα"
 
 #: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
-#, fuzzy
 msgid  "Row Height"
 msgstr "Ύψος γραμμής"
 
 #: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "Π~λάτος"
 
 #: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "Α~υτόματα"
 
 #: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
-#, fuzzy
 msgid  "Column Width"
 msgstr "Πλάτος στήλης"
 
@@ -3073,670 +2802,542 @@ msgid  "Socket"
 msgstr "Υποδοχή"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
 msgid  "Refresh"
 msgstr "Ενημέρωση"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~View Design"
 msgstr "Νέος σχεδιασμός ~προβολής"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Νέο ~σχέδιο πίνακα"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Ερώτημα AutoPilot..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Νέος ~σχεδιασμός ερωτήματος"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "~Edit Query"
 msgstr "~Επεξεργασία ερωτήματος"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Νέα εντολή ~SQL"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Edit..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
 msgid  "Column ~Width..."
 msgstr "Π~λάτος στήλης..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Αυτόματος πιλότος αναφοράς..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Αυτόματος Πιλότος Φόρμας..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "Σύστημα"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
-#, fuzzy
 msgid  "Error during creation"
 msgstr "Σφάλμα κατά την δημιουργία"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Παρουσιάστηκε ένα μη αναμενόμενο σφάλμα. Δεν ήταν δυνατόν να εκτελεστεί η εντολή."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Το έγγραφο \"$file$\" δεν είναι δυνατό να ανοιχθεί."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
-#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "Δεν είναι δυνατή η διαγραφή του πίνακα, επειδή δεν υποστηρίζεται από τη σύνδεση με τη βάση δεδομένων."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "Ό~λα"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
-#, fuzzy
 msgid  "Undo:"
 msgstr "Αναίρεση:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
-#, fuzzy
 msgid  "Redo:"
 msgstr "Επαναφορά"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
-#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Δεν μπόρεσε να βρεθεί αντίστοιχος τύπος στήλης για την στήλη '#1'. "
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Το αρχείο \"$file$\" δεν υπάρχει."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "Παρουσιάστηκαν προειδοποιήσεις κατά τη σύνδεση με την προέλευση των δεδομένων. Πατήστε \"$buttontext$\" για να τις δείτε."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Το όνομα '$#$' υπάρχει ήδη.\nΠαρακαλώ επιλέξτε ένα άλλο όνομα."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-#, fuzzy
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "Η αναφορά, \"$file$\", απαιτεί την επέκταση Sun Report Builder."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Apply columns"
 msgstr "Εφαρμογή στηλών"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Type formatting"
 msgstr "Μορφοποίηση τύπου"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Τα παρακάτω πεδία έχουν ήδη οριστεί ως πρωτεύοντα κλειδιά:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
-#, fuzzy
 msgid  "Assign columns"
 msgstr "Ανάθεση στηλών"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Copy RTF Table"
 msgstr "Αντιγραφή πίνακα RTF"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Βοήθεια"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "Α~κύρωση"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
-#, fuzzy
 msgid  "< ~Back"
 msgstr "< ~Πίσω"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next>"
 msgstr "Επόμε~νο>"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
-#, fuzzy
 msgid  "C~reate"
 msgstr "Δημιουρ~γία"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
-#, fuzzy
 msgid  "Existing columns"
 msgstr "Υπάρχουσες στήλες"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
-#, fuzzy
 msgid  "Column information"
 msgstr "Πληροφορίες για τις στήλες"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
-#, fuzzy
 msgid  "Automatic type recognition"
 msgstr "Αυτόματη αναγνώριση τύπου"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
-#, fuzzy
 msgid  "Lines (ma~x)"
 msgstr "Γραμμές (μ~εγ.)"
 
 #: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Πρωτεύον κλειδί"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Πίνακας προέλευσης: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Πίνακας προορισμού: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
-#, fuzzy
 msgid  "~All"
 msgstr "Ό~λα"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
-#, fuzzy
 msgid  "Non~e"
 msgstr "~Κανένα"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
-#, fuzzy
 msgid  "Ta~ble name"
 msgstr "Όνο~μα πίνακα"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Επιλογές"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
-#, fuzzy
 msgid  "De~finition and data"
 msgstr "Ορισμός και δεδομέν~α"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
-#, fuzzy
 msgid  "Def~inition"
 msgstr "Ορι~σμός"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
-#, fuzzy
 msgid  "A~s table view"
 msgstr "Ω~ς προβολή πίνακα"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
-#, fuzzy
 msgid  "Append ~data"
 msgstr "Προσθήκη ~δεδομένων"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
-#, fuzzy
 msgid  "Use first ~line as column names"
 msgstr "Χρήση πρώτης γρα~μμής ως όνομα στήλης"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
-#, fuzzy
 msgid  "Crea~te primary key"
 msgstr "Δημιουργία ~πρωτεύοντος κλειδιού"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Όνομα"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Αντιγραφή πίνακα"
 
 #: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Αντιγραφή πίνακα"
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
-#, fuzzy
 msgid  "This table name is not valid in the current database."
 msgstr "Αυτό το όνομα πίνακα δεν είναι έγκυρο στην τρέχουσα βάση δεδομένων."
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
-#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
 msgstr "Ειπλέξτε την επιλογή 'Προσθήκη δεδομένων' από την πρώτη σελίδα για να προσθέσετε δεδομένα σε ένα πίνακα."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
-#, fuzzy
 msgid  "Please change the table name. It is too long."
 msgstr "Παρακαλώ αλλάξτε το όνομα του πίνακα. Έχει πολύ μεγάλο μήκος."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Επιλογές"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Τύπος"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
-#, fuzzy
 msgid  "Inner join"
 msgstr "Inner join"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
-#, fuzzy
 msgid  "Left join"
 msgstr "Left join"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
-#, fuzzy
 msgid  "Right join"
 msgstr "Right join"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
-#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Full (outer) join"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
-#, fuzzy
 msgid  "Cross join"
 msgstr "Cross join"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
-#, fuzzy
 msgid  "Natural"
 msgstr "Φυσική"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
-#, fuzzy
 msgid  "Tables involved"
 msgstr "Εμπλεκόμενοι πίνακες"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Fields involved"
 msgstr "Εμπλεκόμενα πεδία"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
-#, fuzzy
 msgid  "Join Properties"
 msgstr "Ιδιότητες συνδέσμου"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
-#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "Παρακαλώ σημειώστε ότι μερικές βάσεις δεδομένων δεν υποστηρίζουν αυτό τον τύπο ένωσης"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
-#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "Περιέχει μόνο τις εγγραφές των δεδομένων στις οποίες ταυτίζονται τα περιεχόμενα των συνδεδεμένων πεδίων και στους δύο πίνακες."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "Περιέχει όλες τις εγγραφές από τον πίνακα '%1', αλλά μόνο τις εγγραφές από τον πίνακα '%2' όπου τα σχετικά πεδία συμφωνούν."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Περιέχει όλες τις εγγραφές των '%1' και '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
-#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Περιέχει το καρτεσιανό γινόμενο όλων των εγγραφών των '%1' και '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "Περιέχει μόνο μια στήλη για κάθε ζεύγος στηλών με ίσο όνομα από το '%1' και το  '%2'."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
-#, fuzzy
 msgid  "Add Table Window"
 msgstr "Προσθήκη παραθύρου πίνακα"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
-#, fuzzy
 msgid  "Move table window"
 msgstr "Μετακίνηση παραθύρου πίνακα"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
-#, fuzzy
 msgid  "Insert Join"
 msgstr "Εισαγωγή συνδέσμου"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
-#, fuzzy
 msgid  "Delete Join"
 msgstr "Διαγραφή συνδέσμου"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
-#, fuzzy
 msgid  "Resize table window"
 msgstr "Αλλαγή μεγέθους παραθύρου"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Διαγραφή στήλης"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "Μετακίνηση στήλης"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "Προσθήκη στήλης"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Η έκφραση δεν είναι έγκυρη επειδή δεν υπάρχει ο πίνακας '$name$'."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Η έκφραση δεν είναι έγκυρη επειδή δεν μπορεί να προσδιοριστεί το όνομα του πεδίου '$name$'!"
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
-#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Το ερώτημα περιλαμβάνει #num# πίνακες. Αυτός ο τύπος βάσης δεδομένων δεν μπορεί να επεξεργαστεί πάνω από #maxnum# πίνακα/-ες ανά εντολή."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
-#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Διαγραφή παραθύρου πίνακα"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Επεξεργασία περιγραφής στηλών"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "Ρύθμιση πλάτους στήλης"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
-#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(χωρίς ταξινόμηση);αύξουσα;φθίνουσα"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
-#, fuzzy
 msgid  "(no function);Group"
 msgstr "(no function);Group"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
-#, fuzzy
 msgid  "(no table)"
 msgstr "(κανένας πίνακας)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
-#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "Η βάση δεδομένων υποστηρίζει την ταξινόμηση μόνο των ορατών πεδίων."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Συναρτήσεις"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
-#, fuzzy
 msgid  "Table Name"
 msgstr "Όνομα πίνακα"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
-#, fuzzy
 msgid  "Alias"
 msgstr "Ψευδώνυμο"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
-#, fuzzy
 msgid  "Distinct Values"
 msgstr "Διακριτές τιμές"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
-#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Πεδίο;Ψευδώνυμο;Πίνακας;Ταξινόμηση;Ορατό;Συνάρτηση;Κριτήριο;Είτε;Είτε"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
-#, fuzzy
 msgid  "There are too many columns."
 msgstr "Υπάρχουν ήδη πολλές στήλες."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Δεν είναι δυνατόν να οριστεί συνθήκη για το πεδίο [*]"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
-#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "Το μήκος της έκφρασης SQL που δημιουργήθηκε είναι υπερβολικά μεγάλο."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
-#, fuzzy
 msgid  "Query is too complex"
 msgstr "Το ερώτημα είναι πολύ περίπλοκο"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
-#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Δεν έγινε επιλογή."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
-#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Ο αριθμός των κριτηρίων αναζήτησης είναι υπερβολικά μεγάλος"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
-#, fuzzy
 msgid  "SQL syntax error"
 msgstr "Συντακτικό σφάλμα SQL"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "Δεν είναι δυνατόν να γίνει ταξινόμηση ως προς το [*]."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
-#, fuzzy
 msgid  "There are too many tables."
 msgstr "Υπάρχουν υπερβολικά πολλοί πίνακες."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
-#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Κατά την εκτέλεση του ερωτήματος στη διάλεκτο SQL της βάσης δεδομένων η εντολή δεν θα εφαρμοστεί"
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
-#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Δεν βρέθηκε το όνομα του πεδίου ή δεν είναι ένα και μοναδικό"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
-#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Ο σύνδεσμος δεν ήταν δυνατόν να ολοκληρωθεί"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Συντακτικό σφάλμα σε έκφραση SQL"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support table views."
 msgstr "Αυτή η βάση δεδομένων δεν υποστηρίζει προβολές πινάκων."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "Αυτή η βάση δεδομένων δεν υποστηρίζει αλλαγές στις υπάρχουσες προβολές πινάκων."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
-#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Θέλετε να δημιουργήσετε ένα ερώτημα στη θέση της;"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created."
 msgstr "Δεν ήταν δυνατή η δημιουργία ερωτήματος."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Δεν ήταν δυνατή η δημιουργία ερωτήματος, επειδή δεν έχουν επιλεγεί πεδία."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
-#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "Η αντίστοιχη προέλευση δεδομένων έχει διαγραφεί. Συνεπώς, δεδομένα που σχετίζονται με αυτή την προέλευση δεδομένων δεν μπορούν να αποθηκευτούν."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Η στήλη '$name$' είναι άγνωστη."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
-#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Οι στήλες μπορούν να συγκρίνονται μόνο με το σύμβολο '=' ."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
-#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Πρέπει να χρησιμοποιήσετε ένα όνομα στήλης πριν το 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
-#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "Η στήλη δεν μπόρεσε να βρεθεί. Παρακαλούμε σημειώστε ότι για τη βάση δεδομένων είναι διαφορετικοί οι πεζοί χαρακτήρες από τους κεφαλαίους."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - %PRODUCTNAME Base: Σχεδίαση ερωτήματος"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME Base: Προβολή σχεδίασης"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Το $object$ έχει τροποποιηθεί.\nΘέλετε να αποθηκεύσετε τις αλλαγές;"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "Το $object$ βασίζεται σε μια εντολή SQL η οποία δεν μπορεί να αναλυθεί."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "Το $object$  θα ανοίξει σε προβολή SQL."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
-#, fuzzy
 msgid  "The table view"
 msgstr "Η προβολή πίνακα"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
-#, fuzzy
 msgid  "The query"
 msgstr "Το ερώτημα"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
-#, fuzzy
 msgid  "The SQL statement"
 msgstr "Η δήλωση SQL"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
-#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "Η εντολή δεν μπόρεσε να δημιουργήσει ένα result set, και έτσι δεν μπορεί να είναι μέρος ενός άλλου ερωτήματος."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
-#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Η παράμετρος και της ActiveConnection και της DataSourceName λείπουν ή είναι λάθος- αδυναμία αρχικοποίησης της σχεδίασης ερωτήματος."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
-#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Αυτή η σχέση υπάρχει ήδη. Θέλετε να την επεξεργαστείτε ή να δημιουργήσετε μια νέα;"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Επεξεργασία..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Δημιουργία..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Base: Σχεδίαση σχέσης"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Η βάση δεδομένων δεν υποστηρίζει σχέσεις."
 
@@ -3745,272 +3346,222 @@ msgid  "The relation design has been changed.\\nDo you want to save the changes?
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
-#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Όταν διαγράψετε αυτό τον πίνακα, θα διαγραφούν επίσης και όλες οι αντίστοιχες σχέσεις. Θέλετε να συνεχίσετε;"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Η βάση δεδομένων δεν μπορεί να δημιουργήσει τη σχέση. Πιθανόν να μην υποστηρίζονται ξένα κλειδιά αυτού του είδους.\nΠαρακαλώ ελέγξτε την τεκμηρίωση της βάσης δεδομένων σας."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
-#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Εισαγωγή/ απομάκρυνση πρωτεύοντος κλειδιού"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Ναι"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Όχι"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "Αύξουσα"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "Φθίνουσα"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<κανένα>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Όνομα πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Field Name"
 msgstr "Όνομα πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field ~type"
 msgstr "Τύπος ~πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field Type"
 msgstr "Τύπος πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
-#, fuzzy
 msgid  "Field length"
 msgstr "Μήκος πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Περιγραφή"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Column Description"
 msgstr "Περιγραφή στήλης"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
-#, fuzzy
 msgid  "Input required"
 msgstr "Απαιτείται εισαγωγή"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
-#, fuzzy
 msgid  "~AutoValue"
 msgstr "~Αυτόματη Τιμή"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Field Properties"
 msgstr "Ιδιότητες πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "Γενικά"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "Περιγραφή:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Table properties"
 msgstr "Ιδιότητες πινάκων"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
-#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Το κείμενο που εισαγάγατε δεν είναι στοιχείο της λίστας."
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
-#, fuzzy
 msgid  "Insert Rows"
 msgstr "Εισαγωγή γραμμών"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Πρωτεύον κλειδί"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
-#, fuzzy
 msgid  "Modify cell"
 msgstr "Τροποποίηση κελιού"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "Διαγραφή γραμμής"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
-#, fuzzy
 msgid  "Modify field type"
 msgstr "Αλλαγή τύπου πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "Εισαγωγή γραμμής"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert new row"
 msgstr "Εισαγωγή νέας γραμμής"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Εισαγωγή/απομάκρυνση πρωτεύοντος κλειδιού"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
-#, fuzzy
 msgid  "~Default value"
 msgstr "Τι~μή προεπιλογής"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
-#, fuzzy
 msgid  "~Entry required"
 msgstr "Απαιτ~είται εισαγωγή"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~Μήκος"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Τύπος"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~Μήκος"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
-#, fuzzy
 msgid  "Decimal ~places"
 msgstr "Δεκαδικά ~ψηφία"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
-#, fuzzy
 msgid  "Format example"
 msgstr "Παράδειγμα μορφοποίησης"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Επιλέξτε μια τιμή που θα εμφανίζεται σε όλες τις νέες εγγραφές ως προεπιλογή.\nΑν δεν θέλετε το πεδίο να έχει προεπιλεγμένη τιμή, επιλέξτε την κενή συμβολοσειρά."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Εισάγετε μια προεπιλεγμένη τιμή για αυτό το πεδίο.\n\nΌταν, αργότερα, εισάγετε δεδομένα στο πίνακα, αυτή η συμβολοσειρά θα χρησιμοποιηθεί για το επιλεγμένο πεδίο σε κάθε νέα εγγραφή. Θα πρέπει, συνεπώς, να αντιστοιχεί στη μορφοποίηση του κελιού που χρειάζεται να εισαχθεί παρακάτω."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
-#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "Ενεργοποιήστε αυτή την επιλογή αν αυτό το πεδίο δεν μπορεί να περιέχει τιμές μηδενικού χαρακτήρα, δηλαδή ο χρήστης πρέπει πάντα να εισάγει δεδομένα."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Εισαγωγή του μέγιστου επιτρεπόμενου μήκους κειμένου."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "Enter the number format."
 msgstr "Καθορίστε την μορφή του αριθμού."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Εισάγετε το μήκος των δεδομένων για αυτό το πεδίο.\n\nΤο μήκος αυτό είναι για τα πεδία δεκαδικών το μέγιστο μήκος του εισηγμένου αριθμού, ενώ για τα πεδία δυαδικών το μήκος ενός μπλοκ εισαγωγής.\nΑν αυτή η τιμή είναι μεγαλύτερη από την μέγιστη επιτρεπόμενη τιμή της βάσης δεδομένων, αυτή θα διορθωθεί ανάλογα."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
-#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Καθορίστε το πλήθος των δεκαδικών ψηφίων των αριθμών αυτού του πεδίου."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
-#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "Εδώ βλέπετε πώς θα εμφανίζονται τα δεδομένα με την τρέχουσα μορφοποίηση (χρησιμοποιήστε το κουμπί στα δεξιά για να τροποποιήσετε τη μορφοποίηση)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
-#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Εδώ έχετε τη δυνατότητα να ορίσετε τη μορφή που θα εφαρμοστεί στα δεδομένα του πίνακα κατά την εξαγωγή τους."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Καθορίστε αν το πεδίο θα περιέχει τιμές αυτόματης προσαύξησης.\n\nΣτη περίπτωση αυτή δεν θα μπορέσετε να εισάγετε απ΄ευθείας δεδομένα σε αυτό το πεδίο, αλλά κάθε νέα εγγραφή θα παίρνει αυτομάτως κάποια δικής της τιμή (η οποία θα προκύπτει από την προσαύξηση της προηγούμενης εγγραφής)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "Δεν είναι δυνατόν να γίνει η αποθήκευση του πίνακα επειδή έγινε διπλή ανάθεση του ονόματος στήλης \"$column$\"."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "Η στήλη \"$column$\" ανήκει στο πρωτεύον κλειδί. Αν διαγραφεί η στήλη, θα διαγραφεί και το πρωτεύον κλειδί. Είστε βέβαιοι ότι θέλετε να συνεχίσετε;"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
-#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "Επίδραση στο πρωτεύον κλειδί"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Στήλη"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
-#, fuzzy
 msgid  "Continue anyway?"
 msgstr "Θέλετε να συνεχίσετε;"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-#, fuzzy
 msgid  "Warning!"
 msgstr "Προειδοποίηση!"
 
@@ -4023,12 +3574,10 @@ msgid  "The connection to the database was lost! The table design can only be us
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
-#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "Δεν ήταν δυνατόν να αποθηκευτεί ο πίνακας εξαιτίας προβλημάτων σύνδεσης με την βάση δεδομένων."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
-#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Δεν ήταν δυνατή η προσαρμογή του φίλτρου του πίνακα, επειδή η προέλευση δεδομένων έχει διαγραφεί."
 
@@ -4037,133 +3586,109 @@ msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo yo
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
-#, fuzzy
 msgid  "No primary key"
 msgstr "Δεν υπάρχει πρωτεύον κλειδί"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "Απαιτείται ένα μοναδικό ευρετήριο ή πρωτεύον κλειδί για την αναγνώριση εγγραφών με δεδομένα σε αυτήν τη βάση δεδομένων.\nΜπορείτε να εισάγετε δεδομένα σε αυτό τον πίνακα όταν μια από αυτές τις δύο δομικές συνθήκες ικανοποιείται.\n\nΘέλετε να δημιουργηθεί ένα πρωτεύον κλειδί τώρα;"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Base: Σχεδιασμός πίνακα"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "Δεν ήταν δυνατή η αλλαγή της στήλης \"$column$\". Θέλετε, αντί για αυτό, να διαγραφεί η στήλη και να προσαρτηθεί η νέα μορφοποίηση;"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
-#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Σφάλμα κατά την αποθήκευση του σχεδίου πίνακα"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
-#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Η στήλη $column$ δεν μπορεί να διαγραφεί."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
-#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "Προσπαθείτε να διαγράψετε όλες τις στηλες του πίνακα. Δεν μπορεί να υπάρξει πίνακας χωρίς στηλες. Θέλετε να διαγραφεί ο πίνακας από τη βάση δεδομένων; Εάν όχι, τότε ο πίνακας θα παραμείνει ως έχει."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
-#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Αυτόματη αύ~ξηση έκφρασης"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Εισάγετε την έκφραση SQL για το πεδίο αυτόματης αύξησης.\n\nΗ έκφραση θα μεταφερθεί άμεσα στη βάση δεδομένων μόλις δημιουργηθεί ο πίνακας."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Δεν είναι δυνατή η ανάκτηση πληροφοριών τύπου από τη βάση δεδομένων.\nΗ λειτουργία σχεδίασης πίνακα, δεν είναι διαθέσιμη για αυτή την προέλευση δεδομένων."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "change field name"
 msgstr "αλλαγή ονόματος πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "change field type"
 msgstr "αλλαγή τύπου πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "change field description"
 msgstr "αλλαγή περιγραφής πεδίου"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "change field attribute"
 msgstr "αλλαγή γνωρίσματος πεδίου"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "Απο~μνημόνευση κωδικού έως το τέλος της συνεδρίας"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "Απο~μνημόνευση κωδικού πρόσβασης"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Η βάση δεδομένων προορισμού δεν υποστηρίζει προβολές."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Η βάση δεδομένων προορισμού δεν υποστηρίζει πρωτεύοντα κλειδιά."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
-#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "δεν βρέθηκε περιγραφέας πρόσβασης δεδομένων, ή δεν υπάρχει ικανός περιγραφέας πρόσβασης δεδομένων για να παρέχει όλες τις απαραίτητες πληροφορίες."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
-#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Μόνο πίνακες και ερωτήματα υποστηρίζονται προς το παρόν."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
-#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Το αποτέλεσμα αντιγράφου πηγής θα πρέπει να υποστηρίζει σελιδοδείκτες."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Μη υποστηριζόμενος τύπος στήλης πηγής ($type$) στη θέση στήλης $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
-#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Μη έγκυρος αριθμός παραμέτρων αρχικοποίησης."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
-#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Εμφανίστηκε σφάλμα στη διάρκεια της αρχικοποίησης."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
-#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "Μη υποστηριζόμενη ρύθμιση στην περιγραφή πηγής αντιγράφου : $name$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
-#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "Για να αντιγράψετε ένα ερώτημα, θα πρέπει η σύνδεση σας να υποστηρίζει ερωτήματα."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
-#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "Ο  χειριστής διάδρασης που δόθηκε δεν υποστηρίζεται."

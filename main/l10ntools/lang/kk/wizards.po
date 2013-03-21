@@ -445,7 +445,7 @@ msgstr " <current_date>-дегi қалып <wizard_name> Ұстамен жаса
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Ұста, кейбiр файлдарды табалмағаннан соң iске қосылмайды.\n Баптауларды алып тастау үшiн  Саймандар- Параметрлер - %PRODUCTNAME - Жолдар мәзiрде  \"Үнсiз келiсiм бойынша\" батырманы басыңыз. \n Сонымен Ұстаны қайта iске қосыңыз."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Өрiстер үлгiлерде"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Екеулiк өрiстер әрқашан атап өтiледi және тiзiмнен таңдалады.\n Егер осы мүмкiн болса, олар бейне ретiнде көрсетiледi. "
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Үлгi басқа үлгiге салынған ретiнде саналады.\nIшкi үлгiнi кестедегi деректердi немесе  «бiр көптерге» түрi сияқты сұранысты көрсетуге үшiн қолданыңыз."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Үлгiдегi өрiстер"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr " «<FIELDNAME1>»  және «<FIELDNAME2>» бiрiктiруi екi рет таңдалған.\n Бiрiктiруге бiр рет қана рұқсат берiледi."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -1597,7 +1597,7 @@ msgstr " Деректер қордағы  %COUNT өрiстердiн максим
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr " '%TABLENAME' аты бұрынан бар едi. \n Басқа атты енгiзiңiз."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Веб-Ұста"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Веб-Ұста сiздiң құжатыңызды Интернетте басып шығаруға көмектеседi.\n\n Ол құжатты жай қарапайым Интернет шолу компьтерiнде оқу үшiн түрлендiредi. Сонымен қатар. Ұста сiзге сiздiң Веб-сайтыңызды ерекше дизайн және сыртқы пiшiнге түрлендiредi.\n\n Сiз өзiңiздiң Веб-сайтыңыздағы құжатты өзектiлермен сүйемелдей аласыз. Сонымен қатар, сiз құжатты жоя және қоса аласыз."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Алдын-ала көру"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Таңдалған орнатулар жойылады.\n\n Сiз оларды жоюға көзiңiз жетiп тұрма?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr " FTP топтама '% FILENAME' жасауға мүмкiндiк жоқ.
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "FTP топтамы '%FILENAME' жоқ. \n Топтаманы қазiр жасау керек пе?\n"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "'% FILENAME' ZIP мұрағатты құру мүмкiн емес: ат�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "'%FILENAME' жергiлiктi топтамасын құру мүмкiн емес. \n Жазбаға рұқсатты тексерiңiз \n"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr " '%FILENAME' жергiлiктi топтамасы жоқ. \n Топтаманы қазiр құру қажет пе?\n"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

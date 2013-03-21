@@ -941,11 +941,11 @@ msgstr "~Obriši"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mapa slike je izmenjena.\nDa sačuvam promene?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mapa slike je izmenjena.\nDa sačuvam promene?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "%PRODUCTNAME oporavak dokumenta"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Kliknite „Pokreni oporavak“ za početak procesa oporavka navedenih datoteka.\n\nKolona „Stanje“ pokazuje da li se taj dokument može povratiti."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Stanje oporavljenih dokumenata:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Naziv dokumenta\tStanje"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "Napravljen je izveštaj o padu programa koji će nam pomoći da otkrijem
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "Oporavak vaših dokumenata je završen.\nKliknite na „Završi“ da biste pogledali svoje dokumente."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "Da li sigurno želite da otkažete oporavak dokumenata iz paketa %PRODUC
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Automatski oporavak je prekinut.\n\nNabrojani dokumenti će biti sačuvani u navedenu fasciklu ako kliknete na „Sačuvaj“. Kliknite na „Otkaži“ za zatvaranje pomoćnika bez čuvanja dokumenata."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "Prijava grešaka u %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "Ova alatka za prijavu grešaka prikuplja podatke o tome kako %PRODUCTNAME radi i šalje ih korporaciji Oracle kako buduća izdanja mogla da budu bolja.\n\nLako je - samo pošaljite izveštaj bez ikakvog dodatnog napora, jednostavnim klikom na dugme „Pošalji“ u sledećem prozorčetu, ili možete kratko opisati kako se greška javila i kliknuti na „Pošalji“. Ako želite da pogledate izveštaj kliknite na dugme „Prikaži izveštaj“. Ako kliknete na dugme „Ne šalji“, neće se slati nikakvi podaci.\n\nPrivatnost korisnika\nPodaci koji su prikupljeni su ograničeni da podatke vezane za stanje  programa %PRODUCTNAME %PRODUCTVERSION u trenutku pojavljivanja greške. Ostali podaci u vezi sa lozinkama ili sadržajem dokumenata se ne prikupljaju.\n\n Podaci će biti korišćeni samo u svrhu poboljšanja kvaliteta %PRODUCTNAME i neće biti deljeni sa trećim licima.\nZa više informacija o politici privatnosti koju sprovodi Oracle posetite \nwww.oracle.com/html/services-privacy-policy.html"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "~Podešavanja..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "~Dozvoljavam korporaciji Oracle da me kontaktira povodom izveštaja."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "~Port"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Alatka za izveštaj o grešci u programu %PRODUCTNAME mora biti povezana na Internet da bi slala izveštaje.\n\nU firmama se često koriste mrežni posrednici u sprezi sa zaštitnim zidovima radi zaštite mreže.\n\nUkoliko je to slučaj, onda morate navesti adresu i port posrednika."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Kontura je promenjena.\nSačuvati izmene?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "Da li želite da sačuvate novu konturu?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Postavljanje novog radnog prostora\nće izbrisati konturu.\nDa nastavim?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "Unos je potreban u polju `#`. Unesite vrednost."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Unos već postoji.\nIzaberite drugo ime."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "zapisi (#) će biti obrisani."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Ako kliknete „Da“, ovu operaciju nećete moći da poništite!\nIpak želite da nastavite?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Neispravno ime teme!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Stvarno želite da \nobrišete ovaj objekt?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Stvarno želite da \nobrišete ovu temu?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "Da li želite da obrišete povezanu datoteku?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Ova datoteka se ne može otvoriti.\nHoćete da unesete novu putanju za pretragu? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "~Planer..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Ime teme postoji.\nUnesite drugo ime."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -9909,11 +9909,11 @@ msgstr "~Obriši"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "~Tradicionalni kineski u pojednostavljeni"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "~Pojednostavljen kineski u tradicionalni"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "~Tradicionalni kineski u pojednostavljeni"
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "~Pojednostavljen kineski u tradicionalni"

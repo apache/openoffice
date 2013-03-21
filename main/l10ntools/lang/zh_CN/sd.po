@@ -217,7 +217,7 @@ msgstr "移动页面"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "内存不足！\n中断执行操作。"
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1733,7 +1733,7 @@ msgstr "请您为这个新线条箭头输入一个名称："
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "您输入的名称已经存在。\n请您输入一个不同的名称。"
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1805,7 +1805,7 @@ msgstr "插入幻灯片"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "您确定要删除分层 \"$\" 吗？\n请注意：在这个分层内的所有对象都将被删除！"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "插入文本框"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "这个功能无法用于选中的对象"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "无法装入这个文件！"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "将要相应调整新页面的格式。\n是否也要相应调整这个对象？"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "编辑(~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "此操作会删除允许撤消的操作列表\n。先前您对文档所做的修改仍然有效，\n但是您不能再撤消这些修改。是否要继续，并\n使用新的幻灯片设计？"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "这个文档格式不受打印机的支持。"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "这个图形是和文档链接的。 \n您要取消这个链接，编辑这个图形吗？"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr "（大纲）"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "指定的显示比例是无效的。\n是否要输入一个新的显示比例？"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2301,7 +2301,7 @@ msgstr "无法拆开所有的字符对象！"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "已经有一个同名的设计。\n是否要替换它？"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "图形过滤器"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "该文件 %\n不是有效的声音文件！"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

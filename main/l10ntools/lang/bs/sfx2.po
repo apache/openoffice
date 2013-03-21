@@ -61,17 +61,14 @@ msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: source/appl/app.src#STR_NONAME.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "Bez naslova"
 
 #: source/appl/app.src#STR_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Zatvori"
 
 #: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatski"
 
@@ -313,8 +310,9 @@ msgid  "Load %PRODUCTNAME During System Start-Up"
 msgstr "Učitaj %PRODUCTNAME prilikom pokretanja sistema"
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Isključi brzi pokretač iz systray-a"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 #, fuzzy
@@ -407,8 +405,9 @@ msgid  "Link graphics"
 msgstr "Poveži slike"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+#, fuzzy
 msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
-msgstr ""
+msgstr "Odgovarajući metod komponente %1\nnije pronađen.\n\nProvjerite naziv metoda."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -891,8 +890,9 @@ msgid  "~Unprotect..."
 msgstr "~Ukloni zaštitu"
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+#, fuzzy
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Ova akcija zatvorit će režim zapisivanja promjena.\nSve informacije o promjenama biće izgubljene.\n\nZatvori režim zapisivanja promjena?\n\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 #, fuzzy
@@ -999,12 +999,10 @@ msgid  "Version comment"
 msgstr "Komentar verzije"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~Ime"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "~AutoUpdate"
 msgstr "~AutoUpdate"
 
@@ -1013,112 +1011,90 @@ msgid  "Ne~xt Style"
 msgstr ""
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
-#, fuzzy
 msgid  "Linked with"
 msgstr "Povezan s"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
-#, fuzzy
 msgid  "~Category"
 msgstr "~Kategorija"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
-#, fuzzy
 msgid  "Contains"
 msgstr "Sadrži"
 
 #: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
-#, fuzzy
 msgid  "Current version"
 msgstr "Trenutna verzija"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
-#, fuzzy
 msgid  "Export"
 msgstr "Izvezi"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "Ubaci"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Ubaci"
 
 #: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
-#, fuzzy
 msgid  "<All formats>"
 msgstr "<Svi formati>"
 
 #: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
-#, fuzzy
 msgid  "~Automatic file name extension"
 msgstr "~Automatska ekstenzija datoteke"
 
 #: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
-#, fuzzy
 msgid  "~Selection"
 msgstr "~Izbor"
 
 #: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
-#, fuzzy
 msgid  "~Link"
 msgstr "~Veza"
 
 #: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
-#, fuzzy
 msgid  "Pr~eview"
 msgstr "Pr~egled"
 
 #: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
-#, fuzzy
 msgid  "~Read-only"
 msgstr "~Samo za čitanje"
 
 #: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
-#, fuzzy
 msgid  "Save with ~password"
 msgstr "Snimi sa š~ifrom"
 
 #: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
-#, fuzzy
 msgid  "Edit ~filter settings"
 msgstr "Izmijeni postavke ~filtera"
 
 #: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
-#, fuzzy
 msgid  "~Play"
 msgstr "~Sviraj"
 
 #: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
-#, fuzzy
 msgid  "Sto~p"
 msgstr "~Zaustavi"
 
 #: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "~Otvori"
 
 #: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~Snimi"
 
 #: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Style:"
 msgstr "Stil:"
 
 #: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
-#, fuzzy
 msgid  "~Templates:"
 msgstr "~Šabloni:"
 
 #: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
-#, fuzzy
 msgid  "~Version:"
 msgstr "~Verzija:"
 
@@ -1208,107 +1184,86 @@ msgid  "Password"
 msgstr "Šifra"
 
 #: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME dokument"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~Naslov"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
-#, fuzzy
 msgid  "~Subject"
 msgstr "~Tema"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
-#, fuzzy
 msgid  "~Keywords"
 msgstr "~Ključne riječi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "~Komentari"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
-#, fuzzy
 msgid  "Type:"
 msgstr "Vrsta:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Read-only"
 msgstr "~Samo za čitanje"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
-#, fuzzy
 msgid  "Location:"
 msgstr "Lokacija:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "Veličina:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "Napravljeno:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "Izmijenjeno:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
-#, fuzzy
 msgid  "Digitally signed:"
 msgstr "Digitalno potpisano:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
-#, fuzzy
 msgid  "Digital Signature..."
 msgstr "Digitalni potpis..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
-#, fuzzy
 msgid  "Multiply signed document"
 msgstr "Višestruko potpisani dokument"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
-#, fuzzy
 msgid  "Last printed:"
 msgstr "Zadnji put štampano:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
-#, fuzzy
 msgid  "Total editing time:"
 msgstr "Ukupno vrijeme izmjenjivanja:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
-#, fuzzy
 msgid  "Revision number:"
 msgstr "Broj verzije:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "Reset"
 msgstr "~Poništi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
-#, fuzzy
 msgid  "~Apply user data"
 msgstr "~Primijeni korisničke podatke"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
-#, fuzzy
 msgid  "Template:"
 msgstr "Uzorak:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
-#, fuzzy
 msgid  "unknown"
 msgstr "nepoznato"
 
@@ -1317,97 +1272,78 @@ msgid  "File Name"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
-#, fuzzy
 msgid  "~Info fields..."
 msgstr "~Info polja..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Do not refresh automatically"
 msgstr "Ne osvježavaj automatski"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Refresh this document"
 msgstr "Osvježi ovaj dokument"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
-#, fuzzy
 msgid  "every"
 msgstr "svakih"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "sekundi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Redirect from this document"
 msgstr "Preusmjeri iz ovog dokumenta"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
-#, fuzzy
 msgid  "after"
 msgstr "nakon"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "sekundi"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "to URL"
 msgstr "u URL"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
-#, fuzzy
 msgid  "to frame"
 msgstr "u okvir"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgstr "Ako odaberete opciju \"%PLACEHOLDER%\", morate unijeti URL."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
-#, fuzzy
 msgid  "~Properties"
 msgstr "~Osobine"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Ime"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Vrsta"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "Vrijednost"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Dodaj"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
-#, fuzzy
 msgid  "Property Name"
 msgstr "Ime svojstva"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
-#, fuzzy
 msgid  "Checked by"
 msgstr "Provjerio"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
-#, fuzzy
 msgid  "Client"
 msgstr "Klijent"
 
@@ -1416,97 +1352,78 @@ msgid  "Date completed"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
-#, fuzzy
 msgid  "Department"
 msgstr "Odjel"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
-#, fuzzy
 msgid  "Destinations"
 msgstr "Odredišta"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
-#, fuzzy
 msgid  "Disposition"
 msgstr "Dispozicija"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
-#, fuzzy
 msgid  "Division"
 msgstr "Dijeljenje (÷)"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
-#, fuzzy
 msgid  "Document number"
 msgstr "Broj dokumenta"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
-#, fuzzy
 msgid  "Editor"
 msgstr "Urednik"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
-#, fuzzy
 msgid  "E-Mail"
 msgstr "E-mail"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
-#, fuzzy
 msgid  "Forward to"
 msgstr "Proslijedi"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
-#, fuzzy
 msgid  "Group"
 msgstr "Grupa"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
-#, fuzzy
 msgid  "Info"
 msgstr "Info"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
-#, fuzzy
 msgid  "Language"
 msgstr "Jezik"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
-#, fuzzy
 msgid  "Mailstop"
 msgstr "Mailstop"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
-#, fuzzy
 msgid  "Matter"
 msgstr "Tematika"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
-#, fuzzy
 msgid  "Office"
 msgstr "Ured"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
-#, fuzzy
 msgid  "Owner"
 msgstr "Vlasnik"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
-#, fuzzy
 msgid  "Project"
 msgstr "Projekat"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
-#, fuzzy
 msgid  "Publisher"
 msgstr "Izdavač"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
-#, fuzzy
 msgid  "Purpose"
 msgstr "Svrha"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
-#, fuzzy
 msgid  "Received from"
 msgstr "Primljeno od"
 
@@ -1519,22 +1436,18 @@ msgid  "Recorded date"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
-#, fuzzy
 msgid  "Reference"
 msgstr "Referenca"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
-#, fuzzy
 msgid  "Source"
 msgstr "Izvor"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
-#, fuzzy
 msgid  "Status"
 msgstr "Stanje"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
-#, fuzzy
 msgid  "Telephone number"
 msgstr "Telefonski broj"
 
@@ -1543,37 +1456,30 @@ msgid  "Typist"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
-#, fuzzy
 msgid  "DateTime"
 msgstr "DatumVrijeme"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
-#, fuzzy
 msgid  "Date"
 msgstr "Datum"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
-#, fuzzy
 msgid  "Duration"
 msgstr "Trajanje"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
-#, fuzzy
 msgid  "Number"
 msgstr "Broj"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
-#, fuzzy
 msgid  "Yes or no"
 msgstr "Da ili ne"
 
@@ -1582,17 +1488,14 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Da"
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
-#, fuzzy
 msgid  "No"
 msgstr "Ne"
 
 #: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Remove Property"
 msgstr "Ukloni svojstvo"
 
@@ -1601,92 +1504,74 @@ msgid  "The value entered does not match the specified type.\\nThe value will be
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
-#, fuzzy
 msgid  "Properties of "
 msgstr "Osobine od "
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "Općenito"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Opis"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
-#, fuzzy
 msgid  "Custom Properties"
 msgstr "Vlastita svojstva"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
-#, fuzzy
 msgid  "Internet"
 msgstr "Internet"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
-#, fuzzy
 msgid  "Security"
 msgstr "Sigurnost"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Duration"
 msgstr "Izmijeni trajanje"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
-#, fuzzy
 msgid  "Duration"
 msgstr "Trajanje"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
-#, fuzzy
 msgid  "~Negative"
 msgstr "~Negativno"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
-#, fuzzy
 msgid  "~Years"
 msgstr "~Godina"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
-#, fuzzy
 msgid  "~Months"
 msgstr "~Mjeseci"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
-#, fuzzy
 msgid  "~Days"
 msgstr "~Dana"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
-#, fuzzy
 msgid  "H~ours"
 msgstr "~Sati"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
-#, fuzzy
 msgid  "Min~utes"
 msgstr "M~inuta"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
-#, fuzzy
 msgid  "~Seconds"
 msgstr "S~ekundi"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
-#, fuzzy
 msgid  "Millise~conds"
 msgstr "~Milisekundi"
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Field Names"
 msgstr "Izmijeni imena polja"
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Names"
 msgstr "Imena"
 
@@ -1700,7 +1585,6 @@ msgid  "Style name"
 msgstr ""
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
-#, fuzzy
 msgid  "Style already exists. Overwrite?"
 msgstr "Stil već postoji. Prepisati?"
 
@@ -1723,27 +1607,22 @@ msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please s
 msgstr ""
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
-#, fuzzy
 msgid  "~Reset"
 msgstr "~Poništi"
 
 #: source/dialog/dialog.src#STR_APPLY.String.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "Primijeni"
 
 #: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
-#, fuzzy
 msgid  "Organizer"
 msgstr "Organizator"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
-#, fuzzy
 msgid  "This name is already in use."
 msgstr "Ovo ime je već u upotrebi."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
-#, fuzzy
 msgid  "This Style does not exist."
 msgstr "Ovaj stil ne postoji."
 
@@ -1756,46 +1635,38 @@ msgid  "Name already exists as a default Style.\\nPlease choose another name."
 msgstr ""
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
-#, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "Da li zaista želite obrisati stil $1?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "Brišete primijenjeni stil!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
-#, fuzzy
 msgid  "New..."
 msgstr "Novi..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Modify..."
 msgstr "Izmijeni..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete..."
 msgstr "Obriši..."
 
 #: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "Navigator"
 
 #: source/dialog/dialog.src#SID_TASKPANE.String.Text
-#, fuzzy
 msgid  "Task Pane"
 msgstr "Ploča zadataka"
 
 #: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
-#, fuzzy
 msgid  "Faulty password confirmation"
 msgstr "Pogrešna potvrda lozinke"
 
 #: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
-#, fuzzy
 msgid  "Send"
 msgstr "Pošalji"
 
@@ -1821,115 +1692,93 @@ msgstr "Zadaci"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Ovaj dokument može sadržati formatiranje ili sadržaj koji se ne mogu snimiti u  %FORMATNAME formatu. Da li ipak želite snimiti u ovom formatu?\n\n- Kliknite 'Da' za snimanje %FORMATNAME datotečnom formatu.\n- Kliknite 'Ne' da koristite najnoviji OpenDocument format i osigurate da je svo formatiranje i sadržaj korektno snimljeno."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
-#, fuzzy
 msgid  "~Keep Current Format"
 msgstr "~Sačuvaj trenutni format"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
-#, fuzzy
 msgid  "~Save in ODF Format"
 msgstr "~Snimi u ODF formatu"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
-#, fuzzy
 msgid  "~More Information..."
 msgstr "~Dodatne informacije..."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
-#, fuzzy
 msgid  "~Ask when not saving in ODF format"
 msgstr "Ne prikazuj više ovo upozorenje"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
-#, fuzzy
 msgid  "My Templates"
 msgstr "Moji šabloni"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
-#, fuzzy
 msgid  "Business Correspondence"
 msgstr "Poslovna prepiska"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
-#, fuzzy
 msgid  "Other Business Documents"
 msgstr "Razni poslovni dokumenti"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
-#, fuzzy
 msgid  "Personal Correspondence and Documents"
 msgstr "Lične prepiske i dokumenti"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
-#, fuzzy
 msgid  "Forms and Contracts"
 msgstr "Forme i ugovori"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
-#, fuzzy
 msgid  "Finances"
 msgstr "Finansije"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
-#, fuzzy
 msgid  "Education"
 msgstr "Obrazovanje"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
-#, fuzzy
 msgid  "Presentation Backgrounds"
 msgstr "Pozadine za prezentacije"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
-#, fuzzy
 msgid  "Presentations"
 msgstr "Prezentacije"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
-#, fuzzy
 msgid  "Miscellaneous"
 msgstr "Razno"
 
 #: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
-#, fuzzy
 msgid  "The templates are being initialized for first-time usage."
 msgstr "Šabloni se inicijaliziraju za prvu upotrebu."
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Šabloni"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
-#, fuzzy
 msgid  "New template"
 msgstr "Novi šablon"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Šabloni"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "~Kategorije"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
-#, fuzzy
 msgid  "~Templates"
 msgstr "Š~abloni"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Izmijeni"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "~Organizator..."
 
@@ -1942,12 +1791,10 @@ msgid  "Name already in use.\\nDo you want to overwrite document template?"
 msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
 msgstr "Da li ste sigurni da želite izbrisati region \"$1\"?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Da li ste sigurni da želite izbrisati unos \"$1\"?"
 
@@ -1957,99 +1804,81 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "Dokument \"$(DOC)\" je promijenjen.\nŽelite li snimiti vaše promijene?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "Stilovi"
 
 #: source/doc/doc.src#STR_MACROS.String.Text
-#, fuzzy
 msgid  "Macros"
 msgstr "Makroi"
 
 #: source/doc/doc.src#STR_CONFIG.String.Text
-#, fuzzy
 msgid  "Configuration"
 msgstr "Podešavanje"
 
 #: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
-#, fuzzy
 msgid  "Styles in "
 msgstr "Stilovi u "
 
 #: source/doc/doc.src#STR_PRINT_STYLES.String.Text
-#, fuzzy
 msgid  "Printing Styles"
 msgstr "Stilovi za štampanje"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
-#, fuzzy
 msgid  "The print job could not be started."
 msgstr "Zadatak za štampu ne može biti pokrenut."
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
-#, fuzzy
 msgid  "Copy"
 msgstr "Kopiraj"
 
 #: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
-#, fuzzy
 msgid  "The template could not be opened."
 msgstr "Šablon ne može biti otvoren."
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
-#, fuzzy
 msgid  "Document already open for editing."
 msgstr "Dokument je već otvoren za rad."
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
-#, fuzzy
 msgid  "Error recording document "
 msgstr "Greška pri snimanju dokumenta"
 
 #: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Šabloni"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "Greška pri kopiranju šablona \"$1\". \nŠablon sa ovim imenom možda već postoji."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "Šablon \"$1\" se ne može izbrisati."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Error moving template \"$1\"."
 msgstr "Greška prilikom premještanja šablona \"$1\"."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
-#, fuzzy
 msgid  "The update could not be saved."
 msgstr "Nisam mogao snimiti izmjene."
 
 #: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Error saving template "
 msgstr "Greška pri snimanju šablona"
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
-#, fuzzy
 msgid  "Error renaming template."
 msgstr "Greška pri promjeni imena šablona."
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
-#, fuzzy
 msgid  "Error renaming template category."
 msgstr "Greška pri promjeni imena kategorije šablona."
 
 #: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
-#, fuzzy
 msgid  "Please specify a name."
 msgstr "Molimo navedite ime"
 
@@ -2058,12 +1887,10 @@ msgid  "Please specify a unique name.\\nEntries must not be case specific."
 msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Želite li da šablon \"$(TEXT)\" postane standardni šablon?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to reset the default template?"
 msgstr "Želite li resetovati tekući šablon?"
 
@@ -2072,91 +1899,74 @@ msgid  "Template directory\\n$(DIR)\\ndoes not exist."
 msgstr ""
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
-#, fuzzy
 msgid  "Document info cannot be read."
 msgstr "Podaci o dokumentu ne mogu biti pročitani."
 
 #: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
-#, fuzzy
 msgid  "The selected file has an incorrect format."
 msgstr "Odabrana datoteka ima neispravan format."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Dokumenti se ne mogu snimiti u $(FORMAT) formatu. \nŽelite li snimiti izmjene koristeći $(OWNFORMAT) format?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~Snimi"
 
 #: source/doc/doc.src#STR_UPDATEDOC.String.Text
-#, fuzzy
 msgid  "~Update"
 msgstr "~Ažuriraj"
 
 #: source/doc/doc.src#STR_SAVEASDOC.String.Text
-#, fuzzy
 msgid  "Save ~As..."
 msgstr "Snimi ~kao..."
 
 #: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
-#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "Snimi kopiju ~kao..."
 
 #: source/doc/doc.src#STR_CLOSEDOC.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Zatvori"
 
 #: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
-#, fuzzy
 msgid  "~Close & Return to "
 msgstr "~Zatvori i vrati se na"
 
 #: source/doc/doc.src#STR_WIZARD.String.Text
-#, fuzzy
 msgid  " AutoPilot"
 msgstr "Autopilot"
 
 #: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
-#, fuzzy
 msgid  "Configurations"
 msgstr "Konfiguracije"
 
 #: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME Basic biblioteke"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Želite li zamijeniti \"$(ARG)\" stil?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
-#, fuzzy
 msgid  "Loading Document"
 msgstr "Učitavam dokument"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
-#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
 msgstr "Povezujem se na: $(HOST). Čekam na odgovor..."
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
-#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
 msgstr "Otvaram $(TARGET) na $(HOST)"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
-#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
 msgstr "Učitavam: $(TARGET) od $(HOST). Učitano: $(BYTE)"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
-#, fuzzy
 msgid  "Disconnected"
 msgstr "Odspojen"
 
@@ -2165,226 +1975,182 @@ msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-
 msgstr ""
 
 #: source/doc/doc.src#STR_EDIT.String.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Izmijeni"
 
 #: source/doc/doc.src#RID_OFFICEFILTER.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Documents"
 msgstr "Dokumenti programa %PRODUCTNAME"
 
 #: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "Oso~bine..."
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
-#, fuzzy
 msgid  "HTML (FrameSet)"
 msgstr "HTML (Skup okvira)"
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "Okvirni dokument programa %PRODUCTNAME"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
 msgstr "Šablon \"$(TEMPLATE)\" nije pronađen na originalnoj lokaciji. Šablon sa istim imenom postoji u \"$(FOUND)\". Želite li koristiti ovaj šablon prilikom poređenja u budućnosti?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "Šablon \"$(TEMPLATE)\" nije pronađen. Želite li potražiti šablon prilikom sljedećeg otvaranja dokumenta?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
-#, fuzzy
 msgid  "Automatically saved version"
 msgstr "Automatski snimljena verzija"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "Tekstualni dokument"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML dokument"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
-#, fuzzy
 msgid  "Master Document"
 msgstr "Glavni dokument"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Proračunska tablica"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "Prezentacija"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "Crtež"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
-#, fuzzy
 msgid  "Message"
 msgstr "Poruka"
 
 #: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
-#, fuzzy
 msgid  "~Discard"
 msgstr "~Odbaci"
 
 #: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
-#, fuzzy
 msgid  "Access to the current data medium not possible."
 msgstr "Pristup tekućem mediju nije moguć."
 
 #: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
-#, fuzzy
 msgid  "Insert the next data carrier and click OK."
 msgstr "Ubacite sljedeći medij za podatke i kliknite U redu."
 
 #: source/doc/doc.src#STR_OBJECT.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "Objekat"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
-#, fuzzy
 msgid  "Run Macro"
 msgstr "Izvrši makro"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
-#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
 msgstr "Ovaj dokument posjeduje makroe. $(TEXT)"
 
 #: source/doc/doc.src#BTN_OK.String.Text
-#, fuzzy
 msgid  "Run"
 msgstr "Pokreni"
 
 #: source/doc/doc.src#BTN_CANCEL.String.Text
-#, fuzzy
 msgid  "Do Not Run"
 msgstr "Ne pokreći"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
-#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "Prema postavkama zaštite, makroe u ovom dokumentu ne bi trebalo pokretati. Da li ih svejedno želite pokrenuti?"
 
 #: source/doc/doc.src#FT_OK.String.Text
-#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
 msgstr "Da li želite dozvoliti pokretanje ovih makroa?"
 
 #: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
-#, fuzzy
 msgid  "Export as PDF"
 msgstr "Izvezi kao PDF"
 
 #: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
-#, fuzzy
 msgid  "Export..."
 msgstr "Izvezi..."
 
 #: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
-#, fuzzy
 msgid  "Export"
 msgstr "Izvezi"
 
 #: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
-#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
 msgstr "Dodaj ovaj direktorij na listu sigurnih puteva: "
 
 #: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
-#, fuzzy
 msgid  "File format:"
 msgstr "Format datoteke:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "Ovaj dokument sadrži:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
-#, fuzzy
 msgid  "Recorded changes"
 msgstr "Snimljene izmjene"
 
 #: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "Bilješke"
 
 #: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
-#, fuzzy
 msgid  "Document versions"
 msgstr "Verzije dokumenta"
 
 #: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "Polja"
 
 #: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
-#, fuzzy
 msgid  "Linked data..."
 msgstr "Povezani podaci..."
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
-#, fuzzy
 msgid  "Do you want to continue saving the document?"
 msgstr "Želite li nastaviti sa snimanjem dokumenta?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
-#, fuzzy
 msgid  "Do you want to continue printing the document?"
 msgstr "Želite li nastaviti sa štampanjem dokumenta?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
-#, fuzzy
 msgid  "Do you want to continue signing the document?"
 msgstr "Želite li nastaviti sa potpisivanjem dokumenta?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
-#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
 msgstr "Želite li nastaviti sa kreiranjem PDF datoteke?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
-#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
 msgstr "Ako ne želite snimiti preko originalnog dokumenta snimite vaš rad pod novim imenom."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
-#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
 msgstr "Neki šabloni su zaštićeni i ne mogu biti izbrisani."
 
 #: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
-#, fuzzy
 msgid  "Info %1"
 msgstr "Info %1"
 
 #: source/doc/doc.src#STR_SHARED.String.Text
-#, fuzzy
 msgid  " (shared)"
 msgstr "(dijeljeno)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
-#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
 msgstr "Format dokumenta je postavljen na ODF 1.1 (OpenOffice.org 2.x) u Alati-Opcije-Snimanje/Učitavanje-Općenito. Potpisivanje dokumenata zahtijeva ODF 1.2 (OpenOffice.org 3.x)."
 
@@ -2393,321 +2159,262 @@ msgid  "The document has to be saved before it can be signed. Saving the documen
 msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
-#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 msgstr "Šablon '$(ARG1)' nad kojim je ovaj dokument baziran, je izmijenjen. Želite li ažurirati formatiranja po stilu u skladu s izmijenjenim šablonom?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
-#, fuzzy
 msgid  "~Update Styles"
 msgstr "~Ažuriraj stilove"
 
 #: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
-#, fuzzy
 msgid  "~Keep Old Styles"
 msgstr "~Sačuvaj stare stilove"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
-#, fuzzy
 msgid  "Template Management"
 msgstr "Upravljanje šablonima"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Zatvori"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "~Datoteka..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
-#, fuzzy
 msgid  "~Address Book..."
 msgstr "~Adresar..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Templates"
 msgstr "Šabloni"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Documents"
 msgstr "Dokumenti"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Templates"
 msgstr "Šabloni"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-#, fuzzy
 msgid  "Documents"
 msgstr "Dokumenti"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
-#, fuzzy
 msgid  "Commands"
 msgstr "Naredbe"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Novi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Izmijeni"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
-#, fuzzy
 msgid  "Import Template..."
 msgstr "Uvezi šablon..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
-#, fuzzy
 msgid  "Export Template..."
 msgstr "Izvezi šablon..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "~Štampaj"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
-#, fuzzy
 msgid  "Printer Settings..."
 msgstr "Postavke štampača...."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "Ažuriraj"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
-#, fuzzy
 msgid  "Set As Default Template"
 msgstr "Postavi kao tekući šablon"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
-#, fuzzy
 msgid  "Reset Default Template"
 msgstr "Resetuj tekući šablon"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
-#, fuzzy
 msgid  "New"
 msgstr "Novi"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "~Kategorije"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "T~emplates"
 msgstr "Ša~bloni"
 
 #: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~Opširnije"
 
 #: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pre~view"
 msgstr "Pre~gled"
 
 #: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Opis"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "Te~xt"
 msgstr "Te~kst"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Frame"
 msgstr "~Okvir"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Pages"
 msgstr "~Stranice"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "N~umbering"
 msgstr "~Numerisanje"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Overwrite"
 msgstr "~Prepiši"
 
 #: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
-#, fuzzy
 msgid  "From File..."
 msgstr "Iz datoteke..."
 
 #: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Load Styles"
 msgstr "Učitaj stilove"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~Naslov"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
-#, fuzzy
 msgid  "Subject"
 msgstr "Tema"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
-#, fuzzy
 msgid  "~Key words"
 msgstr "~Ključne riječi"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "O~pis"
 
 #: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
-#, fuzzy
 msgid  "Configuration Menu"
 msgstr "Konfiguracijski meni"
 
 #: source/menu/menu.src#STR_MENU_ADDONS.String.Text
-#, fuzzy
 msgid  "~Add-Ons"
 msgstr "~Dodaci"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "I~sjeci"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "Kopir~aj"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "~Umetni"
 
 #: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
-#, fuzzy
 msgid  "Leave Full-Screen Mode"
 msgstr "Napusti režim punog ekrana"
 
 #: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
-#, fuzzy
 msgid  "Add-~On Help"
 msgstr "Pomoć d~odatka"
 
 #: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
-#, fuzzy
 msgid  "Synonyms"
 msgstr "Sinonimi"
 
 #: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
-#, fuzzy
 msgid  "(none)"
 msgstr "(ništa)"
 
 #: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~Rječnik sinonima..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Uobičajeni štampač nije pronađen.\nMolim odaberite štampač i pokušajte ponovo."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Ne mogu pokrenuti štampač.\n Molim provjerite postavke štampača."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Ovaj dokument je formatiran za štampač $1. Odabrani štampač nije dostupan. \nŽelite li koristiti standardni štampač $2 ?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options..."
 msgstr "Opcije..."
 
 #: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
-#, fuzzy
 msgid  "Printer Options"
 msgstr "Opcije štampača"
 
 #: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
-#, fuzzy
 msgid  "Printer busy"
 msgstr "Štampač zauzet"
 
 #: source/view/view.src#STR_ERROR_PRINT.String.Text
-#, fuzzy
 msgid  "Error while printing"
 msgstr "Greška pri štampanju"
 
 #: source/view/view.src#STR_PRINTING.String.Text
-#, fuzzy
 msgid  "Printing"
 msgstr "Štampanje"
 
 #: source/view/view.src#STR_PAGE.String.Text
-#, fuzzy
 msgid  "Page "
 msgstr "Strana "
 
 #: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Error saving template "
 msgstr "Greška pri snimanju šablona"
 
 #: source/view/view.src#STR_READONLY.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr "(samo za čitanje)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Veličina strane i orijentacija su promijenjeni.\nŽelite li da nove postavke budu snimljene \nu aktivni dokument?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "Veličina stranice je promijenjena.\nŽelite li da nove postavke budu snimljene \nu aktivni dokument?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Veličina strane i orijentacija su promijenjeni.\nŽelite li da nove postavke budu snimljene \nu aktivni dokument?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Naslov:</b><dd>$(TITEL)<dt><b>Predmet:</b><dd>$(THEME)<dt><b>Ključne riječi:</b><dd>$(KEYWORDS)<dt><b>Opis:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
 msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Nijedan opis dokumenta nije pronađen.</B></FONT></P></BODY></HTML>"
 
@@ -2716,17 +2423,14 @@ msgid  "The document cannot be closed because a\\n print job is being carried ou
 msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-#, fuzzy
 msgid  "Print Monitor"
 msgstr "Nadzor štampača"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
-#, fuzzy
 msgid  "is being printed on"
 msgstr "se štampa na"
 
 #: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
-#, fuzzy
 msgid  "is being prepared for printing"
 msgstr "se priprema za štampu "
 
@@ -2735,16 +2439,13 @@ msgid  "An error occurred in sending the message. Possible errors could be a mis
 msgstr ""
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
-#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Ovaj dokument se ne može mijenjati, vjerovatno zbog nedostajućih prava pristupa. Želite li promijeniti kopiju ovog dokumenta?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
-#, fuzzy
 msgid  " (repaired document)"
 msgstr "(popravljen dokument)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
-#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME nije mogao naći web preglednik na vašem sistemu. Provjerite vaše postavke ili instalirajte web preglednik (npr. Mozilla) na lokaciji koju vam ponudi instalacija web preglednika."

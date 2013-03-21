@@ -144,8 +144,9 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
+#, fuzzy
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "مدیر اجزا موجود نیست."
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
@@ -546,22 +547,18 @@ msgid  "Make sure that no further users are working with the same %PRODUCTNAME, 
 msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "در حال نسخه‌برداری از بستهٔ: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "خطا در حین اضافه کردن بستهٔ: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "خطا در حین حذف بستهٔ: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "بسته قبلاً اضافه شده است: "
 
@@ -586,32 +583,26 @@ msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERS
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "درحال به کار انداختن بستهٔ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "در حال از کار انداختن بستهٔ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "نمی‌توان نوع رسانه را تشخیص داد: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "این نوع رسانه پشتیبانی نمی‌شود« "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "در حین به کار انداختن بسته خطایی رخ داد: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "در حین از کار انداختن بسته خطایی رخ داد: "
 
@@ -620,7 +611,6 @@ msgid  "UNO Dynamic Library Component"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "جزء‌ UNO جاوا"
 
@@ -643,17 +633,14 @@ msgid  "UNO Java Type Library"
 msgstr "کتابخانهٔ نوع UNO جاوا"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "شِمای پیکربندی"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "داده‌های پیکربندی"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "راهنما"
 
@@ -674,7 +661,6 @@ msgid  "%PRODUCTNAME Basic Library"
 msgstr ""
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "کتابخانهٔ محاوره"
 
@@ -683,12 +669,10 @@ msgid  "The library name could not be determined."
 msgstr ""
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "نام کتابخانه از قبل وجود دارد. لطفاً یک نام متفاوت انتخاب کنید."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "کتابخانهٔ %MACROLANG"
 
@@ -737,22 +721,18 @@ msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "خوش‌آمد"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "توافق‌نامه"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "داده‌های شخصی"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "نام کاربر"
 
@@ -761,7 +741,6 @@ msgid  "Online Update"
 msgstr ""
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "ثبت"
 
@@ -774,7 +753,6 @@ msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\
 msgstr ""
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "~پایان"
 
@@ -787,7 +765,6 @@ msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODU
 msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "آیا واقعاً می‌خواهید توافق‌نامه را نپذیرید؟"
 
@@ -800,27 +777,22 @@ msgid  "This wizard will guide you through the license agreement and the registr
 msgstr ""
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "برای پذیرش توافق‌نامه لطفاً این مراحل را انجام دهید"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "متن کامل توافق‌نامهٔ مجوز را بخوانید. لطفاً برای دیدن همهٔ متن مجوز، از نوار لغزش یا دکمهٔ «%PAGEDOWN» این محاوره استفاده کنید."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "برای پذیرفتن شرایط توافق‌نامه، روی کلید «پذیرش» کلیک کنید."
 
@@ -829,12 +801,10 @@ msgid  "Scroll Do~wn"
 msgstr ""
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "پذیر~ش"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "~رد"
 
@@ -863,37 +833,30 @@ msgid  "~Check for updates automatically"
 msgstr ""
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "نام و نام خانوادگی خود را در زیر وارد کنید"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
-#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "نام کاربر در ویژگی‌های نوشتار، قالب‌ها و مواقعی که تغییرات داده شده در نوشتار را ضبط می‌کنید استفاده می‌شود."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "~نام"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "نام ~خانوادگی"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "حروف اخت~صاری"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "نام ~پدر"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "ثبت %PRODUCTNAME"
 
@@ -902,17 +865,14 @@ msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registr
 msgstr ""
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "همین ~حالا ثبت‌نام کنید"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "~بعداً ثبت‌نام کنید"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "نمی‌خواهید ~ثبت‌نام کنید"
 
@@ -937,7 +897,6 @@ msgid  "Cannot find Office installation."
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Setup"
 msgstr "برپاسازی"
 

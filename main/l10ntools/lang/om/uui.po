@@ -67,12 +67,14 @@ msgid  "No Text"
 msgstr "Barruu Hinjiru"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+#, fuzzy
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Iggita faayilii banuuf oolu galchi;\n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+#, fuzzy
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Iggita faayilii banuuf oolu galchi;\n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 #, fuzzy
@@ -102,8 +104,9 @@ msgid  "Document in Use"
 msgstr "Galmeen Banaa jira"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Faayiliin galmee '$(ARG1)' gulaaluuf nama armaan gadiin cufamee jira:\n\n$(ARG2)\n$(ARG2)\n\nGalmee kana booda olkaa'i ykn garagalcha kamee  olkaa'i.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -116,7 +119,6 @@ msgid  "~Save As..."
 msgstr "Akkanatti Olkaa'i..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "Iggita hamma dhuma turtiittii yaadadhu"
 
@@ -472,7 +474,6 @@ msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Dhaamsa OfEeggannoo: Ragaa Kaadima Fashalaa"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Filannoo Gingilchi"
 
@@ -522,58 +523,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "Ergi"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "Tuffadhu"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "Haasoo"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Haala Qabiinsa Kuukii Fuulduraafii"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "Tuffadhu"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "Ergi"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Kaadimaan '${HOST}' kuukiiwwan tokko ykn sanaa ol ijaaruu barbaada.\nKuukiiwwan odeeffannoo waa'ee kutaalee URL murtaawanii of keessatti qabatu. Yoo %PRODUCTNAME booda galmee kutaa URL wajiin walfakkaatanii banuuf gaafate, %PRODUCTNAME odeeffannoo kana gara Kaadimatti eerga. Kun Kaadiman akka haalojii fayyadama WWW baru fayyada, fkn, bittaa karaarraa.\n\nKuukiiwwan armaan gadii ijaaramuu qabu:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Qayee: ${DOMAIN}, Xurree: ${PATH}, Kuukii: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Simannaa Kuukii"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME kuukii yammuu galmeen ${PATH} barbaadame ergamu kaadimaa '${HOST}'f olkaa'era. \nKuukiiwwan odeeffannoo waa'ee kutaalee URL murtaawanii of keessatti qabatu. Isaanis kan kaadmaa wayiitiin gara %PRODUCTNAME ergamanii egir olkaa'amanii dha. Yoo %PRODUCTNAME galmee, akkaataa URLichaatin, kutaa kuukiiwwan kana dura fudhatamaniin walgitu ta'e, %PRODUCTNAME odeeffannicha gara kaadimaatti erga. Kunis akka kaadimichi haalojii fayyadama WWW hordofu garagaara. \n\nKuukiiwwan armaan gadii ijaaramuu qabu:\n\n  "
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Qayee: ${DOMAIN}, Xurree: ${PATH}, Kuukii: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Kuukiiwwan Ergi"
 
@@ -616,8 +609,9 @@ msgid  "Document in Use"
 msgstr "Galmeetti fayyadamaa jiru"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Galmeen faayilii '$(ARG1)' gulaalaaf \n\n$(ARG2) n cufamee jira\n\nGalmee dubbis-qofaa bani ykn gulaaluuf garagalcha galmee kanaa bani.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 #, fuzzy
@@ -640,10 +634,9 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Faayilichi gulaalamuuf erga %PRODUCTNAME n banamee jijjiiramee jira. Fooyya'a mataa keetii olkaa'uun jijjiiramoota namoota biraan taasifaman irraba.\n\nTa'uyyuu olkaa'uu feetaa?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "Ta'uyyuu Olkaa'i"
 
@@ -653,8 +646,9 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "Haaromsi %PRODUCTNAME Jira"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Galmeen kun fooyya'a %PRODUCTNAME haaraan uumame. Tasa dalagaawwan fooyya'a ammeen hin deeggaramne qabaachuu dand'a.\n\nHaaromsa karaarraa kaasufi fooyya'a %PRODUCTNAME isa haaraa argachuuf 'Amma Haaromsi...' cuqaasi."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 #, fuzzy
@@ -767,29 +761,25 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Faayiliin galmee '$(ARG1)' gulaaluuf sirna biraarratti $(ARG2) irraa eegalee mataa keetin cufameet jira\n\nGalmee dubbis-qofa bani, ykn faayilii ofii keettin cufuu tuffadhuutii galmee kana gulaaluuf bani.\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Dubbis-qofa Bani"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "Bani"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Faayiliin galmee '$(ARG1)' gulaaluuf sirna biraarratti $(ARG2) irraa eegalee mataa keetin cufameet jira\n\nGalmee sirna biraa irraa cufiitii olkaa'uu lamyaali ykn faayilii ofiin cufuu tuffadhuutii galmee ammee cufi.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "Olkaa'uu Lamyaali"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "Olkaa'i"
 

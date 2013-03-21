@@ -61,7 +61,7 @@ msgstr "Cuir cruthan-clò ris"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "A bheil thu cinnteach gu bheil thu airson sgrìobhadh thairis air faidhle a' chruth-chlò seo?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "Chan eil gin"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Cha deach faidhle fòrmait (leis an leudachan .afm) a lorg airson a' chruth-chlò\n%s\nagus cha ghabh an cruth-clò a chur ris mar sin. 'S urrainn dhut faidhle fòrmait a chruthachadh le ghostscript mar eisimpleir agus feumaidh tu a chur san dearbh-eòlaire far a bheil faidhlichean nan cruthan-clò no am fo-phasgan afm aige."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Cha do ghabh lethbhreac an fhaidhle mheatrach airson faidhle a' chruth-chlò\n   %s\na dhèanamh. Cha dèid an cruth-clò a stàladh."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Cha do ghabh lethbhreac faidhle a' chruth-chlò\n   %s\na dhèanamh. Cha dèid an cruth-clò a stàladh."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -177,7 +177,7 @@ msgstr "Chaidh an duilleag deuchainne a chlò-bhualadh. Thoir sùil oirre ach a 
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
-msgstr ""
+msgstr "Chan urrainn dhut clò-bhualadair a stàladh a chionn 's gu bheil an siostam faidhle ri leughadh a-mhàin.\nCuir fios gu rianaire an t-siostaim agad."
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -289,7 +289,7 @@ msgstr "Chan eil meatrachd san fhaidhle seo."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "Cha do ghabh a' mheatrachd\n\n%s\n\niompachadh air sgàth na leanas:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "Tha feum air an draibhear \"%s\" an-còmhnaidh agus chan urrainn dhut a 
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "Cha do ghabh \"%s1\" a thoirt air falbh. Cha do ghabh am faidhle a thoirt air falbh\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

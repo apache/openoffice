@@ -262,8 +262,9 @@ msgid  "Move slides"
 msgstr "Move slides"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
+#, fuzzy
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Not enough memory!\nThe action will be aborted."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 #, fuzzy
@@ -2155,8 +2156,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Please enter a name for the new arrowhead:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "The name chosen already exists. \nPlease enter another name."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -2244,8 +2246,9 @@ msgid  "Insert slides"
 msgstr "Insert slides"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -2303,8 +2306,9 @@ msgid  "Insert text frame"
 msgstr "Insert text frame"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "This function cannot be run \nwith the selected objects."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -2317,8 +2321,9 @@ msgid  "The file could not be loaded!"
 msgstr "The file could not be loaded!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -2341,8 +2346,9 @@ msgid  "~Edit"
 msgstr "~Edit"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2365,8 +2371,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "The document format could not be set on the specified printer."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2504,8 +2511,9 @@ msgid  " (Outline)"
 msgstr " (Outline)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "The specified scale is invalid.\nDo you want to enter a new one?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2858,8 +2866,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "It was not possible to ungroup all drawing objects."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "A design already exists with this name.\nDo you want to replace it?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -3002,8 +3011,9 @@ msgid  "Graphics filter"
 msgstr "Graphics filter"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "The file %\nis not a valid sound file !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy

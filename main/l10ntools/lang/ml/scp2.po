@@ -618,8 +618,9 @@ msgid  "&Install"
 msgstr "&ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO60_CONFIGFILE
+#, fuzzy
 msgid  "OpenOffice.org 1.1 Configuration File"
-msgstr ""
+msgstr "%PRODUCTNAME %SXWFORMATVERSION  Configuration File"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
@@ -627,8 +628,9 @@ msgid  "StarOffice 5.0 Template"
 msgstr "സ്റ്റാര്ഓഫീസ് 5.0 മാതൃക"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+#, fuzzy
 msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
+msgstr "ഓപ്പണ്‍ഓഫീസ്.ഓര്‍ഗ്"
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -699,52 +701,42 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "സജ്ജമാക്കുന്നതിനുള്ള ഘടകത്തിനു് പ്രദര്‍ശനമില്ലാത്ത %PRODUCTNAME ഉപയോഗിക്കുക"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "വിവരം"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "ഇന്റര്നെറ്റ്"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "ജാവാ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "തമാശയും കൂടുതലും"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "യാത്ര"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "അദ്ധ്യായങ്ങള്"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "ഫയലുകള്"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "മാതൃകയില് നിന്നും"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "ഡോക്കുമെന്റ് തുറക്കുക"
 
@@ -1594,12 +1586,14 @@ msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION-ല്‍ സംസ്കൃതത്തിനുള്ള പിന്തുണ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നു"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
+#, fuzzy
 msgid  "Persian"
-msgstr ""
+msgstr "ഫാര്‍സി"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FA
+#, fuzzy
 msgid  "Installs Persian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION-ല്‍ ഫാര്‍സിയ്ക്കുള്ള പിന്തുണ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നു"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FO
 #, fuzzy
@@ -1905,181 +1899,145 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "ഈമെയില്‍ മെയില്‍മേര്‍ജ്"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "%PRODUCTNAME ഈമെയില്‍ മെയില്‍മേര്‍ജ് വിശേഷതയ്ക്കുള്ള ഘടകം"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "ഫൈറ്റോണ്-UNO പാലം"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
 msgstr "ഫൈറ്റോണ് സ്ക്രിപ്റ്റിങ്ങ് ഭാഷയോടുകൂടിയ  %PRODUCTNAME ഓട്ടോമെറ്റ് ചെയ്യാനുള്ള കഴിവ് ചേര്ക്കുക .  http://udk.openoffice.org/python/python-bridge.html മുഴുവന് ഡോക്കുമെന്റ്."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr " പെട്ടെന്ന് ആരംഭിക്കുന്നത് "
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 msgstr " %PRODUCTNAME %PRODUCTVERSION ആരംഭ സമയം ശരിയാക്കാന് അട്സ്ഥാനഘടകങ്ങള് സിസ്റ്റം ആരംഭത്തില്  ലോഡുചെയ്യുക."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "സോഫ്റ്റ്‌വെയര്‍ ഡെവലപ്മെന്റ് കിറ്റ് (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 msgstr "ആവശ്യമുള്ള ഉപകരണങ്ങള്‍, ഉദാഹരണങ്ങള്‍, പ്രോഗ്രമിനും ഓഫിസിനുമുള്ള വിവരണക്കുറിപ്പുകള്‍ എന്നിവ SDK ലഭ്യമാക്കുന്നു."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "ഇന്റര്നെറ്റ് എക്സ്പ്ലോറര്  വിപുലീകരണം"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
 msgstr "%PRODUCTNAME  ഡോക്കുമെന്റിന്റെ വിവരങ്ങള് അതായത് തന്പ്നേയില് മുന്കാഴ്ച കാണിക്കാന്  മൈക്രോസോഫ്റ്റ് വിന്ഡോ എക്സ്പ്ലോറര് പ്രവര്ത്തനസജ്ജമാക്കുക."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML ഡോക്കുമെന്റ് "
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "ടെക്സ്റ്റ് ഡോക്കുമെന്റ്്"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
-#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "റൈറ്റര് ഉപയോഗിച്ച്  കത്തുകളിലെയും റിപ്പോര്ട്ടുകളിലെയും ഡോക്കുമെന്റിലെയും വെബ് പേജിലെയും  ടെക്സ്റ്റും ഗ്രാഫിക്സും സൃഷ്ടിക്കുകയും എഡിറ്റു ചെയ്യുകയും ചെയ്യുക."
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
 msgid  "&New"
 msgstr "പുതിയ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Text Document"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Master Document"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION Text Document Template"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "ഓപ്പണ് ഡോക്കുമെന്റ് ടെക്സ്റ്റ്"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "ഓപ്പണ് ഡോക്കുമെന്റ് ടെക്സ്റ്റ് മാതൃക"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "ഓപ്പണ് ഡോക്കുമെന്റ്  മുഖ്യഡോക്കുമെന്റ്"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTML ഡോക്കുമെന്റ് മാതൃക"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "Microsoft Word 97-2003 രേഖ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "Microsoft Word രേഖ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "Microsoft Word 97-2003 മാതൃക"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "Microsoft Word മാതൃക"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "റിച്ച് ടെക്സ്റ്റ് രേഖ"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
-#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
 msgstr " %PRODUCTNAME റൈറ്റര് ഉപയോഗിച്ച്  കത്തുകളിലെയും റിപ്പോര്ട്ടുകളിലെയും ഡോക്കുമെന്റിലെയും വെബ് പേജിലെയും  ടെക്സ്റ്റും ഗ്രാഫിക്സും സൃഷ്ടിക്കുകയും എഡിറ്റു ചെയ്യുകയും ചെയ്യുക."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "പരിപാടി മോഡ്യൂള്"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME റൈറ്റര് പ്രയോഗം"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME Writer Help"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAMEറൈറ്ററിനെപ്പറ്റിയുള്ള സഹായം"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX എക്സ്പോര്‍ട്ട്"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "റൈറ്റര്‍ രേഖകള്‍ക്കുള്ള LaTeX എക്സ്പോര്‍ട്ട് ഫില്‍‌റ്റര്‍"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT മാതൃക ഫില്‍‌റ്ററുകള്‍"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT മാതൃക ഫില്‍‌റ്ററുകള്‍"

@@ -37,7 +37,7 @@ msgstr "Por atingi ĉi tiun komandon..."
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">Por atingi ĉi tiun komandon...</variable>"
 
 #: source/text/sdraw/01/04010000.xhp#tit
 msgid  "Insert Page"
@@ -45,11 +45,11 @@ msgstr "Enmeti paĝon"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\">Enmeti Paĝon</link>"
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
 msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seitetext\">Enmetas malplenan paĝon post la elektita paĝo.</variable>"
 
 #: source/text/sdraw/04/01020000.xhp#tit
 msgid  "Shortcut Keys for Drawings"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
 msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_keys\"><link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\">Fulmoklavoj por Desegnaĵoj</link></variable>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
@@ -81,7 +81,7 @@ msgstr "Fulmklavoj"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153713.6
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekto</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150044.7
 msgid  "F2"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152994.14
 msgid  "Opens the \<emph\>Duplicate\</emph\> dialog."
-msgstr ""
+msgstr "Malfermas la dialogon <emph>Duobligi</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154488.15
 msgid  "F4"
@@ -121,7 +121,7 @@ msgstr "F4"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149406.16
 msgid  "Opens the \<emph\>Position and Size\</emph\> dialog."
-msgstr ""
+msgstr "Malfermas la dialogon <emph>Pozicio kaj Grando</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3148870.21
 msgid  "F5"
@@ -165,7 +165,7 @@ msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150434.35
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+T\</caseinline\>\<defaultinline\>F11\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "F11"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3151389.36
 msgid  "Opens Styles and Formatting window."
@@ -185,7 +185,7 @@ msgstr "Fulmklavoj"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3146323.43
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekto</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149946.44
 msgid  "Plus(+) Key"
@@ -293,7 +293,7 @@ msgstr "Fulmklavoj"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155370.70
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekto</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AD7
 msgid  "Page Up"
@@ -821,7 +821,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3149405.23
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Alklaku je <emph>Akcepti</emph>."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3151240.24
 msgid  "A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed."
@@ -1573,7 +1573,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1094A
 msgid  "Choose \<emph\>Insert - File\</emph\>."
-msgstr ""
+msgstr "Elektu je <emph>Enmeti - Dosiero</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10952
 msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</emph\>. The \<emph\>Insert Text\</emph\> dialog opens. Click \<emph\>OK\</emph\> to insert the text."
@@ -1585,7 +1585,7 @@ msgstr "Bonvenon al la helpo de $[officename]-Desegnilo"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
 msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
-msgstr ""
+msgstr "<switchinline select=\"appl\"> <caseinline select=\"DRAW\"/> </switchinline>Bonvenon al la Helpo de $[officename]-Desegnilo"
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
 msgid  "How to Work With $[officename] Draw"
@@ -1605,7 +1605,7 @@ msgstr "Menuoj"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/sdraw/main0100.xhp\" name=\"Menus\">Menuoj</link></variable>"
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
@@ -1617,39 +1617,39 @@ msgstr "Dosiero"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
 msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"File\">Dosiero</link>"
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
 msgid  "This menu contains general commands for working with Draw documents, such as open, close and print. To close $[officename] Draw, click \<emph\>Exit\</emph\>."
-msgstr ""
+msgstr "Ĉi tiu menuo enhavas ĝeneralajn komandojn por labori per dokumentoj de Draw, kiel malfermi, fermi kaj presi. Por fermi $[officename] Draw, alklaku je <emph>Eliri</emph>."
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Open\">Malfermi</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Konservi kiel</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\">Eksporti</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\">Versioj</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\">Atributoj</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"Print\">Presi</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\">Presila agordaro</link>"
 
 #: source/text/sdraw/main0102.xhp#tit
 msgid  "Edit"
@@ -1657,7 +1657,7 @@ msgstr "Redakti"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\">Redakti</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
@@ -1665,15 +1665,15 @@ msgstr "La komandoj en ĉi tiu menuo estas uzeblaj por redakti Desegnajn dokumen
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\">Alglui speciale</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\">Serĉi kaj anstataŭigi</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Points\">Punktoj</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
 msgid  "Enables you to edit points on your drawing."
@@ -1681,7 +1681,7 @@ msgstr "Ebligas al vi redakti punktojn en via desegnaĵo."
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\">Glupunktoj</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
 msgid  "Enables you to edit glue points on your drawing."
@@ -1689,27 +1689,27 @@ msgstr "Ebligas al vi redakti glupunktojn en via desegnaĵo."
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\">Duobligi</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\">Transŝanĝado</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\">Kampoj</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"Links\">Ligojn</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\">BildoMapo</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\">Hiperligilo</link>"
 
 #: source/text/sdraw/main0103.xhp#tit
 msgid  "View"
@@ -1717,7 +1717,7 @@ msgstr "Vido"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
 msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0103.xhp\" name=\"View\">Vido</link>"
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
 msgid  "Sets the display properties of Draw documents."
@@ -1741,7 +1741,7 @@ msgstr "Baskuli al modelpaĝa vido."
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\">Zomi</link>"
 
 #: source/text/sdraw/main0104.xhp#tit
 msgid  "Insert"
@@ -1749,7 +1749,7 @@ msgstr "Enmeti"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
 msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\">Enmeti</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
 msgid  "This menu allows you to insert elements, such as graphics and guides, into Draw documents."
@@ -1757,15 +1757,15 @@ msgstr "Ĉi tiu menuo ebligas al vi enmeti elementojn, ekzemple grafikaĵojn kaj
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\">Lumbildo</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
 msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
 msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\">Enmeti kapto-punkton/-linion</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
@@ -1773,11 +1773,11 @@ msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\">Speciala signo</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\">Hiperligilo</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
@@ -1785,7 +1785,7 @@ msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\">Diagramo</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
 msgid  "Inserts a chart."
@@ -1793,11 +1793,11 @@ msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\">Glita kadro</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"File\">Dosiero</link>"
 
 #: source/text/sdraw/main0105.xhp#tit
 msgid  "Format"
@@ -1805,7 +1805,7 @@ msgstr "Formato"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
 msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0105.xhp\" name=\"Format\">Formato</link>"
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
 msgid  "Contains commands for formatting the layout and the contents of your document."
@@ -1813,39 +1813,39 @@ msgstr "Enhavas komandojn por formati la aranĝon kaj la enhavon de dokumentoj."
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Character\">Signo</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\">Alineo</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\">Buloj kaj numerado</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\">Paĝo</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\">Pozicio kaj grando</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"Line\">Linio</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"Area\">Areo</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"Text\">Teksto</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
 msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/sdraw/main0106.xhp#tit
 msgid  "Tools"
@@ -1853,7 +1853,7 @@ msgstr "Iloj"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
 msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\">Iloj</link>"
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
 msgid  "This menu provides tools for $[officename] Draw as well as access to language and system settings."
@@ -1865,7 +1865,7 @@ msgstr ""
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\">Adapti</link>"
 
 #: source/text/sdraw/main0200.xhp#tit
 msgid  "Toolbars"
@@ -1873,7 +1873,7 @@ msgstr "Ilobretoj"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\">Ilobretoj</link></variable>"
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
 msgid  "This section provides an overview of the toolbars available in $[officename] Draw."
@@ -1885,7 +1885,7 @@ msgstr "Linia kaj pleniga breto"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
 msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\">Linia kaj pleniga breto</link>"
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
 msgid  "The Line and Filling bar contains commands for the current editing mode."
@@ -1893,23 +1893,23 @@ msgstr "La linia kaj pleniga breto enhavas komandojn por la aktuala redaktoreĝi
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\">Linia stilo</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\">Linia larĝo</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\">Linia koloro</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\">Area stilo / plenigo</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\">Ombro</link>"
 
 #: source/text/sdraw/main0210.xhp#tit
 msgid  "Drawing Bar"
@@ -1917,15 +1917,15 @@ msgstr "Desegna breto"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
 msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\">Desegna breto</link>"
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
 msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
-msgstr ""
+msgstr "La <emph>desegna</emph> breto entenas la ĉefajn desegnajn ilojn."
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10060000.xhp\">Ortangulo</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
 msgid  "Draws a filled rectangle where you drag in the current document. Click where you want to place a corner of the rectangle, and drag to the size you want. To draw a square, hold down Shift while you drag."
@@ -1933,7 +1933,7 @@ msgstr "Desegnas plenigitan ortangulon kie oni ŝovas en la aktuala dokumento. A
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10070000.xhp\">Elipso</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
 msgid  "Draws a filled oval where you drag in the current document. Click where you want to draw the oval, and drag to the size you want. To draw a circle, hold down Shift while you drag."
@@ -1941,7 +1941,7 @@ msgstr "Desegnas plenigitan ovalon kie oni ŝovas en la aktuala dokumento. Alkla
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Teksto</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
 msgid  "Draws a text box where you click or drag in the current document. Click anywhere in the document, and then type or paste your text."
@@ -1957,7 +1957,7 @@ msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Points\">Punktoj</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
 msgid  "Enables you to edit points on your drawing."
@@ -1965,7 +1965,7 @@ msgstr "Ebligas al vi redakti punktojn en via desegnaĵo."
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\">Glupunktoj</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
 msgid  "Enables you to edit glue points on your drawing."
@@ -1973,15 +1973,15 @@ msgstr "Ebligas al vi redakti glupunktojn en via desegnaĵo."
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"From File\">El dosiero</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\">Formularaj regiloj</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">Elpremado ek/for</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
 msgid  "Switches the 3D effects on and off for the selected objects."
@@ -1993,47 +1993,47 @@ msgstr "Agorda breto"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
 msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\">Agorda breto</link>"
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
 msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "La breto <emph>Agordaro</emph> estas vidigebla elektante menuerojn <emph>Vido - Ilobretoj - Agordaro</emph>."
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\">Vidigi kradon</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\">Gvidiloj dum movado</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\">Kapti per krado</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\">Kapti per gvidlinioj</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\">Kapti per paĝaj marĝenoj</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\">Kapti per objekta bordero</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\">Kapti per objektaj punktoj</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\">Ebligi rapidan redaktadon</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\">Elekti nur tekstan areon</link>"
 
 #: source/text/sdraw/main0503.xhp#tit
 msgid  "$[officename] Draw Features"
@@ -2041,7 +2041,7 @@ msgstr "Ebloj de $[officename]-Desegnilo"
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\">Ebloj de $[officename] Desegnilo</link></variable>"
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
 msgid  "$[officename] Draw lets you create simple and complex drawings and export them in a number of common image formats. You can also insert tables, charts, formulas and other items created in $[officename] programs into your drawings."

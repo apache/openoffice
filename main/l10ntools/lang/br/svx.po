@@ -941,11 +941,11 @@ msgstr "Lemel ~kuit"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Daskemmet eo bet ar Skeudenn Map. \nEnrollañ an daskemmadurioù ?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Daskemmet eo bet ar Skeudenn Map. \nSeveniñ an daskemmadurioù ?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "Atoriñ teulioù %PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Klikit war Luskañ an atoriñ da zeluskañ argerzh atoriñ an teulioù kavlec'hiet amañ dindan.\n\nDiskouez a ra ar bann 'Stad' m'oa bet atoret an teul."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Dezvad an teulioù atoret :"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Anv an teul\tStat"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "Savet ez eus bet un danavell eus an degouezhadenn-mañ a roy tu deomp da
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "Adsaveliñ ho teulioù kaset da benn.\nKlikit war 'Echuiñ' evit gwelout ho teulioù."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "Ha sur hoc'h eus c'hoant da nullañ assavadur an teul %PRODUCTNAME ?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Troc'het eo bet an argerzh assav emgefreek.\n\nEnrollet e vo an teulioù marilhet amañ dindan en teuliad erspizet mar klikot war Enrollañ. Klikit war Nullañ da serriñ ar skoazeller hep enrollañ an teulioù."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "Degemer mat en danevell fazioù %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "L'outil de rapport d'erreur recueille des informations sur le fonctionnement de %PRODUCTNAME et les envoie à Sun Microsystems afin de contribuer à l'amélioration des prochaines versions.\n\nSon utilisation est simple : il vous suffit d'envoyer le rapport en cliquant sur le bouton Envoyer de la boîte de dialogue suivante ou bien de décrire brièvement dans quelles conditions l'erreur s'est produite, puis de cliquer sur Envoyer. Pour visualiser le rapport, cliquez sur le bouton Afficher le rapport. Si vous cliquez sur Ne pas envoyer, aucune donnée ne sera envoyée.\n\nConfidentialité des données client\nLes informations recueillies se limitent aux données relatives à l'état de %PRODUCTNAME %PRODUCTVERSION au moment où l'erreur s'est produite. Toutes les données concernant les mots de passe ou le contenu des documents sont ignorées.\n\nCes informations seront uniquement utilisées dans le cadre d'une démarche d'amélioration de la qualité de %PRODUCTNAME et ne seront pas communiquées à des sociétés tierces.\nPour plus d'informations sur la politique de confidentialité de Sun Microsystems, visitez le site\nhttp://www.sun.com/privacy/"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "Dibarzhi~où..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "~Aotren a ran Sun Microsystem da vont e darempred ganin a-fet an danevell-mañ."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "~Porzh"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Ur c'hennask Internet zo azgoulennet gant benveg danevellañ fazioù %PRODUCTNAME da vezañ evit kas an danevelloù fazioù.\nDafariaded Proksi gant un danvoger wareziñ evit o rouedad a vez arveret gant kevredigezhioù niverus.\nMa ne rit ket evel-se e vo ret deoc'h espizañ chomlec'h ha porzh an dafariad."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Daskemmet eo bet trolinenn ar skeudenn. \nSeveniñ an daskemmadurioù ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "C'hoant hoc'h eus krouiñ un en-dro nevez ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Deverkañ ur maez labour nevez\na zilam an drolinenn.\nKenderc'hel ganti a fell deoc'h ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "Euvradur azgoulennet er vaezienn \"#\". \nEuvrit ur werzh enni "
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Emañ an enankad-mañ anezhañ endeo. \nDibabit un anv all."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "C'hoant hoc'h eus lemel kuit # enrolladenn."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Mar bez dibabet Ya ganeoc'h, n'hallo ket ar gwezhiadur bezañ nullet !\nKenderc'hel a fell deoc'h evelkent ?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Direizh eo anv an dodenn "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Fellout a ra deoc'h dilemel\nda vat an ergorenn-mañ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Fellout a ra deoc'h dilemel\nda vat an dodenn-mañ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "C'hoant hoc'h eus lemel kuit ar restr erenet ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "N'haller ket digeriñ ar restr-mañ.\nUn treug klask all a fell deoc'h menegiñ ? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "A~ozañ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "An anv dodenn-mañ zo anezhañ endeo. \nDibabit unan all."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -9909,11 +9909,11 @@ msgstr "~Lemel kuit"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "Sineg hengounel e Sineg eeunae~t"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "Sineg eeunaet e ~sineg hengounel"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "Sineg hengounel e Sineg eeunae~t"
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "Sineg eeunaet e ~sineg hengounel"

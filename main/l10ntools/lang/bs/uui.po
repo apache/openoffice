@@ -67,12 +67,14 @@ msgid  "No Text"
 msgstr "Nema teksta"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+#, fuzzy
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Unesite šifru"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+#, fuzzy
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Unesite šifru za izmjenu datoteke: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 #, fuzzy
@@ -102,8 +104,9 @@ msgid  "Document in Use"
 msgstr "Dokument u upotrebi"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Dokument datoteka '$(ARG1)' je zaključana za izmjene od strane:\n\n$(ARG2)\n\nProbajte kasnije ponovo snimiti dokument, ili snimite kopiju tog dokumenta.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -116,17 +119,14 @@ msgid  "~Save As..."
 msgstr "~Snimi kao..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Zapamti šifru do kraja sesije"
 
 #: source/ids.src#RID_SAVE_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~Zapamti šifru"
 
 #: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
-#, fuzzy
 msgid  "Invalid Document Signature"
 msgstr "Neispravan potpis dokumenta"
 
@@ -135,22 +135,18 @@ msgid  "Non-Encrypted Streams"
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation executed on $(ARG1) was aborted."
 msgstr "Operacija nad $(ARG1) je bila prekinuta"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Access to $(ARG1) was denied."
 msgstr "Pristup do $(ARG1) je zabranjen"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) already exists."
 msgstr "$(ARG1) već postoji"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Target already exists."
 msgstr "Meta već postoji"
 
@@ -159,237 +155,190 @@ msgid  "You are about to save/export a password protected basic library containi
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an incorrect checksum."
 msgstr "Podaci iz $(ARG1) imaju nepravilan checksum"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "Objekat $(ARG1) nije moguće napraviti u direktoriju $(ARG2)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data of $(ARG1) could not be read."
 msgstr "Podake iz $(ARG1) nije moguće čitati"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The seek operation on $(ARG1) could not be performed."
 msgstr "Traženje $(ARG1) nije moguće izvesti"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The tell operation on $(ARG1) could not be performed."
 msgstr "Operaciju 'tell' iz $(ARG1) nije moguće izvesti"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data for $(ARG1) could not be written."
 msgstr "Podatke iz $(ARG1) nije moguće zapisati"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) is the current directory."
 msgstr "Nemoguća operacija: $(ARG1) je trenutni direktorij"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) nije spreman"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
 msgstr "Nemoguća akcija: $(ARG1) i $(ARG2) su različiti uređaji"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "General input/output error while accessing $(ARG1)."
 msgstr "Prilikom pristupanja $(ARG1) je došlo do greške čitanja/pisanja"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "Pokušaj pristupa do $(ARG1) je izveden na nepravilan način"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) sadrži nepravilne znakove"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The device (drive) $(ARG1) is invalid."
 msgstr "Uređaj $(ARG1) je nepravilan"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an invalid length."
 msgstr "Podaci iz $(ARG1) imaju nepravilnu dužinu"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "Operacija nad $(ARG1) je započeta sa nepravilnim parametrom"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
 msgstr "Operaciju nije moguće izvesti, jer $(ARG1) sadrži 'joker' znakove"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Error during shared access to $(ARG1)."
 msgstr "Greška prilikom pristupa do $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) sadrži pogrešno postavljene znakove"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The name $(ARG1) contains too many characters."
 msgstr "Ime $(ARG1) sadrži previše znakova"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) does not exist."
 msgstr "$(ARG1) ne postoji"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The path $(ARG1) does not exist."
 msgstr "Staza do $(ARG1) ne postoji"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) is not supported on this operating system."
 msgstr "Operacija nad $(ARG1) nije podržana od strane operativnog sistema"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a directory."
 msgstr "$(ARG1) nije direktorij"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a file."
 msgstr "$(ARG1) nije datoteka."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "There is no space left on device $(ARG1)."
 msgstr "Nije ostalo dovoljno prostora na uređaju da se napravi $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
 msgstr "Operacije nad $(ARG1) nije moguće izvesti, jer je previše otvorenih datoteka"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
 msgstr "Operacije nad $(ARG1) nije moguće izvesti, jer nema dostupne memorije"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
 msgstr "Operaciju $(ARG1) nije moguće nastaviti jer još podataka čeka na obradu"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1) nije moguće kopirati u samoga sebe"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Unknown input/output error while accessing $(ARG1)."
 msgstr "Prilikom pristupa $(ARG1) je došlo do greške prilikom čitanja/pisanja"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is write protected."
 msgstr "$(ARG1) je zaštićen za pisanje"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) nije u pravilnom obliku zapisa"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The version of $(ARG1) is not correct."
 msgstr "Verzija $(ARG1) je nepravilna"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Drive $(ARG1) does not exist."
 msgstr "Disk $(ARG1) ne postoji"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Folder $(ARG1) does not exist."
 msgstr "Direktorij $(ARG1) ne postoji"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported."
 msgstr "Instalirana verzija Java-e nije podržana"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "Instalirana verzija Java-e $(ARG1) nije podržana"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
 msgstr "Trenutna verzija Java-e nije podržana, potrebna je novija verzija $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
 msgstr "Instalirana verzija Java-e $(ARG1) nije podržana, potrebna je novija verzija $(ARG2)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership is corrupted."
 msgstr "Podaci povezani sa partnerstvom su oštećeni."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "Podaci povezani sa partnerstvom $(ARG1) su pokvareni."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready."
 msgstr "Particija $(ARG1) nije spremna"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) nije spreman; molim ubacite medijum"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "Particija $(ARG1) nije spremna; molim ubacite medijum"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Please insert disk $(ARG1)."
 msgstr "Ubacite disk $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "Objekat nije moguće napraviti u direktoriju $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
 msgstr "%PRODUCTNAME ne može sačuvati datoteke od pisanja preko njih kada se koristi ovaj protokol prijenosa. Želite li svejedno nastaviti?"
 
@@ -398,7 +347,6 @@ msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNA
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "Datoteka '$(ARG1)' ne može biti popravljena i stoga je ne mogu otvoriti."
 
@@ -411,7 +359,6 @@ msgid  "The personal configuration file '$(ARG1)' is corrupted and must be delet
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
 msgstr "Konfiguracijski izvor podataka '$(ARG1)' je nedostupan. Bez ovih podataka neke funkcije možda neče raditi isptavno."
 
@@ -420,12 +367,10 @@ msgid  "The configuration data source '$(ARG1)' is unavailable. Without this dat
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
-#, fuzzy
 msgid  "The form contains invalid data. Do you still want to continue?"
 msgstr "Formular sadrži neispravne podatke. Želite li nastaviti?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
 msgstr "Datoteka '$(ARG1)' je zaključana od strane drugog korisnika. Trenutno ne možemo dati još jednu dozvolu za pisanje u ovu datoteku."
 
@@ -474,7 +419,6 @@ msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Sigurnosno Upozorenje: Certifikat Servera je nevažeći"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Izbor filtera"
 
@@ -489,12 +433,14 @@ msgid  "Message from server:"
 msgstr "Poruka sa servera:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
+#, fuzzy
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "Unesite korisničko ime i šifru za:\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
+#, fuzzy
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Unesite korisničko ime i šifru za:\n\"%2\" na %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 #, fuzzy
@@ -527,58 +473,50 @@ msgid  "~Use system credentials"
 msgstr "~Koristi sistemske lozinke"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Pošalji"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "I~gnoriši"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "I~nteraktivno"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Upravljanje cookie-ima u budućnosti"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Ignoriši"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Pošalji"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "${HOST}' poslužitelj želi postaviti jedan ili više kolačića.\nKolačić sadrži informacije koje se odnose na određenu URL klasu. Ukoliko %PRODUCTNAME kasnije zahtjeva dokument s URL koji odgovara klasi s prethodno postavljenim kolačićem, %PRODUCTNAME će tu informaciju poslati poslužitelju. To omogućava poslužitelju prepoznavanje statusa WWW aplikacije, npr. kod on-line kupovine.\n\nSljedeći kolačić treba biti postavljen:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domena: ${DOMAIN}, Put: ${PATH}, Kolačić: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Prihvatanje kolačića"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME je spremio kolačić za poslužitelj '${HOST}' te će biti poslan na zahtjev dokumenta ${PATH}.\nKolačići sadrže informacije koje se odnose na određenu URL klasu. Oni su poslani od određenih poslužitelja prema %PRODUCTNAME gdje su spremljeni kad je pristupljeno određenom dokumentu. Ako %PRODUCTNAME učitava dokument koji, ovisno o URL, odgovara klasi jednog od prije primljenih kolačića, %PRODUCTNAME će poslati tu informaciju poslužitelju. To omogućava poslužitelju praćenje statusa WWW aplikacije, npr. kod on-line trgovine.\n\nSljedeći kolačić treba biti postavljen:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domena: ${DOMAIN}, Put: ${PATH}, Kolačić: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Pošalji kolačiće"
 
@@ -623,8 +561,9 @@ msgid  "Document in Use"
 msgstr "Dokument u upotrebi"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Dokument datoteka '$(ARG1)' je zaključana zaizmjene od strane:\n\n$(ARG2)\n\nOtvori dokument samo za čitanje ili kopiju dokumenta za uređivanje.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 #, fuzzy
@@ -647,10 +586,9 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Datoteka je izmijenjena nakon što je otvorena za uređivanje u  %PRODUCTNAME. Spremanje vaše verzije dokumenta će promijeniti izmjene koje su uradili drugi.\n\nDa li ipak želite snimiti?\n\\"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "Ipak ~Snimiti"
 
@@ -660,8 +598,9 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME popravke raspoložive"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Ovaj dokument je kreiran novom verzijom %PRODUCTNAME. Može sadržavati odlike koje nisu podržane trenutnom verzijom.\n\n Klikni 'Ažuriraj sada...' da pokrenete ažuriranje preko Interneta i dobijete najnoviju verziju %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 #, fuzzy
@@ -774,29 +713,25 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Zaključali ste dokument datoteke '$(ARG1)' na drugom sistemu nakon $(ARG2)\n\nOtvoriti dokument samo za čitanje, ili ignorisati zaključavanje datoteke i otvoriti dokument za izmjene.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Otvori sa~mo za čitanje"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "~tvori"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Zaključali ste dokument datoteke '$(ARG1)' na drugom sistemu nakon $(ARG2)\n\nZatvoriti dokument na drugom sistemu i ponovo pokušati snimanje ili ignorisati vlastito zaključavanje datoteka i snimiti trenutni dokument.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "~Ponovo pokušaj snimanje"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~Snimi"
 

@@ -57,7 +57,7 @@ msgstr "Tytuł źródła danych"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME umożliwia dostęp do danych adresowych zapisanych już w systemie. Utworzone zostanie w tym celu źródło danych programu %PRODUCTNAME, udostępniające książki adresowe użytkownika, wyświetlane w postaci tabel.\n\nW tworzeniu źródła danych pomocny będzie niniejszy kreator."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "inne zewnętrzne źródło danych"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Konfiguracja nowego źródła danych wymaga dodatkowych ustawień.\n\nKliknij poniższy przycisk, a zostanie otwarte okno dialogowe, w którym można podać potrzebne informacje."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Ustawienia"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Nie udało się nawiązać połączenia ze źródłem danych.\nZanim przejdziesz dalej, sprawdź przyjęte ustawienia lub wybierz (na poprzedniej stronie) inny typ źródła danych adresowych."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Wybrane zewnętrzne źródło danych zawiera więcej niż jedną książkę adresową.\nWybierz książkę, z którą najczęściej chcesz pracować:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "Aby można było zastosować dane adresowe w szablonach, program %PRODUCTNAME musi wiedzieć, w których polach znajdują się określone dane.\n\nMożna np. zapisać adresy poczty elektronicznej w polu \"e-mail\" lub w polu o innej nazwie.\n\nGdy klikniesz przycisk poniżej, pojawi się nowe okno dialogowe, w którym możesz podać ustawienia dla źródła danych."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Przypisanie pól"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "To już wszystkie informacje, które są potrzebne do integracji danych adresowych z programem %PRODUCTNAME.\n\nTeraz należy jeszcze tylko podać nazwę, pod którą źródło danych zostanie zarejestrowane w programie %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "Dane adresowe - przypisywanie pól"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Brak przypisanych pól.\nPola można przypisać teraz lub później,\nwybierając sekwencję \"Plik - Szablon - Źródło danych adresowych...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "Źródło danych"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "Nie można przypisać następujących nazw kolumn:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "Formant"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Po prawej stronie są widoczne wszystkie tabele ze źródła danych formularza.\n\n\nWybierz tabelę, której dane będą służyły jako podstawa zawartości listy:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Dane"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Obecnie formularz, do którego należy formant, nie jest (lub jest niecałkowicie) związany ze źródłem danych.\n\nWybierz źródło danych i tabelę.\n\n\nPamiętaj, że ustawienia dokonane na tej stronie odniosą skutek zaraz po jej opuszczeniu."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -737,7 +737,7 @@ msgstr "Witamy"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION OEM - zapraszamy!\n\nAby uruchomić produkt %PRODUCTNAME %PRODUCTVERSION OEM, wprowadź dane osobowe w oknie dialogowym wyświetlonym po oknie zawierającym tekst licencji. Ważne informacje znajdują się w plikach readme, położonych w katalogu produktu %PRODUCTNAME. Przeczytaj te pliki uważnie. Dokładne informacje znajdują się też w witrynie internetowej firmy Oracle\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -817,7 +817,7 @@ msgstr "Formularze"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Czy chcesz usunąć z modelu typ danych '#type#'?\nPamiętaj, że wpłynie to na wszystkie formanty powiązane z tym typem danych."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "Podaj nazwę nowego typu danych:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "Informacje\no ~urządzeniu"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Utwórz\npodgląd"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Skaner"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Urządzenie: %s\nProducent: %s\nModel: %s\nTyp: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2405,7 +2405,7 @@ msgstr "Oprogramowanie %PRODUCTNAME %PRODUCTVERSION nie wymaga aktualizacji."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "Dostępna jest nowsza wersja: %PRODUCTNAME %NEXTVERSION.\n\nAktualnie zainstalowana wersja to %PRODUCTNAME %PRODUCTVERSION.\n\nUwaga: Przed pobraniem aktualizacji sprawdź, czy posiadasz odpowiednie uprawnienia do instalacji.\nMoże być wymagane hasło konta administracyjnego."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Pobieranie oprogramowania %PRODUCTNAME %NEXTVERSION zatrzymało się na"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Plik zostanie pobrany do: %DOWNLOAD_PATH.\n\nAby zmienić tę lokalizację, kliknij menu Narzędzia – Opcje... - %PRODUCTNAME – Aktualizacja online."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "Plik %FILE_NAME pobrano do katalogu %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Automatyczne pobieranie aktualizacji nie jest obecnie możliwe.\n\nKliknij Pobierz..., aby pobrać oprogramowanie %PRODUCTNAME %NEXTVERSION ze strony internetowej."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."

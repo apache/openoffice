@@ -153,8 +153,9 @@ msgid  "Column Fields"
 msgstr "སྟར་གྱི་ཡིག་དུམ།"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "ཕྲེང་\nཡིག་དུམ།"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -1173,12 +1174,10 @@ msgid  "Text Import"
 msgstr "ཡི་གེ་ནང་འདྲེན།"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "ནང་འཇུག"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
-#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "ཡིག་རྟགས་ཚོགས།(~A)"
 
@@ -1187,57 +1186,46 @@ msgid  "Language"
 msgstr ""
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
-#, fuzzy
 msgid  "From ro~w"
 msgstr "འགོ་ཚུགས་པའི་ཕྲེང་གྲངས།(~W)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
-#, fuzzy
 msgid  "Separator options"
 msgstr "བར་གཅོད་འདེམས་གཞི།"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
-#, fuzzy
 msgid  "~Fixed width"
 msgstr "རྒྱས་བཅད་པའི་ཞེང་ཚད།(~F)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
-#, fuzzy
 msgid  "~Separated by"
 msgstr "བར་གཅོད།(~S)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
-#, fuzzy
 msgid  "~Tab"
 msgstr "རེའུ་འགོད་རྟགས།(~T)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
-#, fuzzy
 msgid  "~Comma"
 msgstr "མཚམས་རྟགས།(~C)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
-#, fuzzy
 msgid  "~Other"
 msgstr "གཞན་དག(~O)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
-#, fuzzy
 msgid  "S~emicolon"
 msgstr "འབྱེད་རྟགས།(~E)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "S~pace"
 msgstr "སྟོང་མིག(~P)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
-#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "མངོན་པ་གནོན་སྐུམ་བྱེད།(~D)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
-#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "ཡི་གེ་བར་གཅོད་རྟགས།(~X)"
 
@@ -1344,487 +1332,390 @@ msgid  "Settings"
 msgstr "བཀོད་སྒྲིག"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of sheets:"
 msgstr "ལས་ཁྲའི་ཁ་གྲངས།"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of cells:"
 msgstr "དྲ་མིག་གི་ཁ་གྲངས།"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of pages:"
 msgstr "ཤོག་གྲངས།"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Document: "
 msgstr "ཡིག་ཚགས།"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "རྣམ་གཞག་གཙང་སེལ།(~D)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "~Style"
 msgstr "ཡིག་གཟུགས་ཕན་འབྲས།(~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "~Superscript"
 msgstr "གོང་རྟགས།(~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "S~ubscript"
 msgstr "གཤམ་རྟགས།(~U)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "སྙོམ་གཤིབ།(~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "གཡོན་ལ་སྙོམ་གཤིབ།(~L)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "གཡས་ལ་སྙོམ་གཤིབ།(~R)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "དཀྱིལ་བསྡུ།(~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
-#, fuzzy
 msgid  "~Justified"
 msgstr "གཡས་གཡོན་སྙོམ་གཤིབ།(~J)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "ཕྲེང་གི་བར་ཐག(~L)"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "རིམ་འདས་སྦྲེལ་མཐུད།(~H)..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "རིམ་འདས་སྦྲེལ་འདོར་བ།(~R)"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "ཡི་གེའི་གཏོགས་གཤིས།(~X)..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
-#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "སྤྱི་ཁྱབ་ལ་དམིགས་བཙུགས་བྱེད་རྒྱུ།(~N)..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "མ་ཡིག་ཆེ་ཆུང་།(~O)"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "མིང་།..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "གསལ་བཤད།..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "མགོ་རྟིང་སློག(~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "དྲང་འཕྱང་ཁ་ཕྱོགས།(~V)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "ཆུ་སྙོམ་ཁ་ཕྱོགས།(~H)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "རྩེགས་རིམ།(~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "རིམ་པ་གཅིག་མཐོ་རུ་གཏོང་།(~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "རིམ་པ་གཅིག་དམའ་རུ་གཏོང་།(~W)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "འཆིང་བརྒྱབ།(~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "ཤོག་ངོས་ཐོག(~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "དྲ་མིག་ཐོག(~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "སྙོམ་གཤིབ།(~L)"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "རི་མོ་འབྲི་བའི་ཁ་གཏད་ཀྱི་གདམ་ཚང་།"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Text Object Bar"
 msgstr "ཡི་གེའི་དམིགས་བྱའི་བྱང་།"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "རིས་དབྱིབསདམིགས་བྱང་།"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
-#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "རི་མོ་འབྲི་བའི་འཕག་ཐོན་གདམ་བྱང་།"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
-#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "ཡིག་དེབ་ཡུལ་གྱི་འཕར་ཐོན་ཚུལ་གྱི་ཚལ་ཐོ།"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "མིང་།..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "གསལ་བཤད།..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "རྩེགས་རིམ།(~A)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "རིམ་པ་གཅིག་མཐོ་རུ་གཏོང་།(~F)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "རིམ་པ་གཅིག་དམའ་རུ་གཏོང་།(~W)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "འཆིང་བརྒྱབ།(~C)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "ཤོག་ངོས་ཐོག(~A)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "དྲ་མིག་ཐོག(~C)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "སྙོམ་གཤིབ།(~L)"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
-#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "རེའུ་མིག་ཐོའི་དམིགས་བྱའི་ཧོབ་དོན་རྣམ་པའི་གདམ་ཐོ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Last Used"
 msgstr "རྒྱུན་སྤྱོད་རྟེན་གྲངས།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "All"
 msgstr "ཚང་མ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Database"
 msgstr "གཞི་གྲངས་མཛོད།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Date&Time"
 msgstr "ཚེས་གྲངས་དང་དུས་ཚོད།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Financial"
 msgstr "ནོར་དོན།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Information"
 msgstr "ཆ་འཕྲིན།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Logical"
 msgstr "གཏན་ཚིག"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Mathematical"
 msgstr "རྩིས་རིག"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Array"
 msgstr "ལིང་ཚེ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Statistical"
 msgstr "སྡོམ་རྩིས།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "ལས་ཁྲ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "ཡི་གེ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Add-in"
 msgstr "Add In"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "རྟེན་འབྱུང་གྲངས་བར་འཇུག"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "རྟེན་གྲངས།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
-#, fuzzy
 msgid  "Range"
 msgstr "གནས་ས།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "ཆུང་དུ་གཏོང་བ། /ཆེ་རུ་གཏོང་བ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
-#, fuzzy
 msgid  "Column inserted"
 msgstr "སྟར་པ་བསྒར་འཛུད་བྱས་པ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
-#, fuzzy
 msgid  "Row inserted "
 msgstr "ཕྲེང་བར་འཇུག"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
-#, fuzzy
 msgid  "Sheet inserted "
 msgstr "ལས་ཀའི་རེའུ་མིག་བར་འཇུག་བྱས་འདུག"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
-#, fuzzy
 msgid  "Column deleted"
 msgstr "སྟར་པ་དེ་སུབ་པ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
-#, fuzzy
 msgid  "Row deleted"
 msgstr "ཕྲེང་སུབ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
-#, fuzzy
 msgid  "Sheet deleted"
 msgstr "ལས་ཀའི་རེའུ་མིག་སུབ་འདུག"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
-#, fuzzy
 msgid  "Range moved"
 msgstr "ཁུལ་ཁོངས་སྤོ་བ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "ནང་དོན་བཟོ་བཅོས་བྱས་འདུག"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "ནང་དོན་བཟོ་བཅོས་བྱས་འདུག"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed to "
 msgstr "བཟོ་བཅོས་ཐུབ། "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
-#, fuzzy
 msgid  "Original"
 msgstr "མ་ཡིག།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
-#, fuzzy
 msgid  "Changes rejected"
 msgstr "བཟོ་བཅོས་འདོར་བ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
-#, fuzzy
 msgid  "Accepted"
 msgstr "དང་ལེན་གྱི།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
-#, fuzzy
 msgid  "Rejected"
 msgstr "ཁས་མི་ལེན་པའི།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
-#, fuzzy
 msgid  "No Entry"
 msgstr "གཤར་བྱང་མེད་པ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
-#, fuzzy
 msgid  "<empty>"
 msgstr "<སྟོང་ཆད།>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
-#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "བཅོས་འབེབས་དང་ལེན་ནམ་ཁས་མི་ལེན་པ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Comment..."
 msgstr "རྩོམ་སྒྲིག་མཆན་འགྲེལ།..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
-#, fuzzy
 msgid  "Action"
 msgstr "བཀོལ་སྤྱོད།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "གནས་ས།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "Author"
 msgstr "བཅོས་འབེབས་མཁན།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
-#, fuzzy
 msgid  "Date"
 msgstr "དུས་ཚོད།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "གསལ་བཤད།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
-#, fuzzy
 msgid  "Sorting"
 msgstr "བང་སྒྲིག"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
-#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "འགལ་འཛིང་ཐག་གཅོད་བྱུང་བ།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
-#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "མཉམ་སྤྱོད་གློག་རྡུལ་རེའུ་མིག་ནང་བཟོ་བཅོས་འགའ་ཤས་མི་མཐུན་བ་བྱུང་ཡོད།   གློག་རྡུལ་རེའུ་མིག་ཉར་ཚགས་མི་བྱེད་སྔོན་ལ་མི་མཐུན་པའི་ཆ་རྣམས་ཐག་གཅོད་བྱས་ནས་རང་ཉིད་དམ་ཡང་ན་མི་གཞན་གྱི་བཟོ་བཅོས་རང་སོར་འཇོག་དགོས།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "ངའི་བརྗེ་སྒྱུར་སོར་ཉར།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Other"
 msgstr "མི་གཞན་གྱི་བརྗེ་སྒྱུར་སོར་ཉར།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
-#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "ངའི་བརྗེ་སྒྱུར་ཡོད་ཚད་སོར་ཉར།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
-#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "མི་གཞན་གྱི་བརྗེ་སྒྱུར་ཡོད་ཚད་སོར་ཉར།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
-#, fuzzy
 msgid  "Conflict"
 msgstr "འགལ་རྐྱེན།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
-#, fuzzy
 msgid  "Author"
 msgstr "བཅོས་འབེབས་མཁན།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "དུས་ཚོད།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "ཧ་མི་གོ་བའི་སྤྱོད་དུད།"
 
@@ -1865,7 +1756,6 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
-#, fuzzy
 msgid  "Sheet2"
 msgstr "ལས་ཁྲ།"
 
@@ -1878,7 +1768,6 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
-#, fuzzy
 msgid  "Sheet3"
 msgstr "ལས་ཁྲ།"
 
@@ -1891,7 +1780,6 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
-#, fuzzy
 msgid  "Sheet4"
 msgstr "ལས་ཁྲ།"
 
@@ -1948,132 +1836,106 @@ msgid  "Remove password from this protected item."
 msgstr ""
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
-#, fuzzy
 msgid  "Share Document"
 msgstr "མཉམ་སྤྱོད་ཡིག་ཚགས།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
-#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "སྤྱོད་མཁན་གཞན་དང་གློག་རྡུལ་རེའུ་མིག་དེ་བེད་སྤྱོད་བྱེད་བཞིན་ཡོད་པ།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_WARNING.FixedText.Text
-#, fuzzy
 msgid  "Note: Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr "ཟབ་ནན་བྱེད་རྒྱུར། མཉམ་སྤྱོད་ཀྱི་རྣམ་པའི་སྐབས་སུ་རྣམ་གཞག་གི་གཏོགས་གཤིས（དཔེར་ན། ཡིག་གཟུགས་དང་། ཚོས་གཞི། ཨང་ཀིའི་རྣམ་གཞག་ལྟ་བུ）ལ་སྒྱུར་བ་བཏང་ན་ཉར་འཇོག་བྱེད་ཀྱི་མེད་པས་བྱེད་ནུས་ཁག་ཅིག（དཔེར་ན། རི་མོའི་རེའུ་མིག་དང་རི་མོ་འབྲི་བའི་ཁ་གཏད་ལྟ་བུ）སྤྱོད་ཐབས་མེད།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
-#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "་མིག་སྔར་གློག་རྡུལ་རེའུ་མིག་འདིར་ལྟ་སྤྱོད་བྱེད་མཁན།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "མིང་།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
-#, fuzzy
 msgid  "Accessed"
 msgstr "ལྟ་སྤྱོད་ཟིན་པ།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
-#, fuzzy
 msgid  "No user data available."
 msgstr "སྤྱོད་རུང་བའི་སྤྱོད་པ་པོའི་གཞི་གྲངས་མེད་པ།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "ཧ་མི་གོ་བའི་སྤྱོད་དུད།"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
-#, fuzzy
 msgid  "(exclusive access)"
 msgstr "（ལྟ་སྤྱོད་དབང་ཚད་ཁེར་བཟུང་བྱེད་པ་）"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Insert Sheet"
 msgstr "ལས་ཀའི་རེའུ་མིག་བར་འཇུག"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "གནས་ས།"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
-#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "མིག་སྔའི་ལས་ཀའི་རེའུ་མིག་གི་སྔོན་ལ།(~E)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
-#, fuzzy
 msgid  "~After current sheet"
 msgstr "མིག་སྔའི་ལས་ཀའི་རེའུ་མིག་གི་རྗེས་ལ།(~A)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
-#, fuzzy
 msgid  "Sheet"
 msgstr "ལས་ཁྲ།"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
-#, fuzzy
 msgid  "~New sheet"
 msgstr "ལས་ཁྲ་གསར་བཟོ།(~N)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "གྲངས་ཀ(～O)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "Na~me"
 msgstr "མིང་།(~M)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
-#, fuzzy
 msgid  "~From file"
 msgstr "ཡིག་ཆ་ནས་གསར་འཛུགས།(~F)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "མིག་བཤར།(~B)..."
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
-#, fuzzy
 msgid  "Lin~k"
 msgstr "ཐག་སྦྲེལ།(~K)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
-#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "ལས་ཀའི་རེའུ་མིག་ནང་གི་བཅོས་འབེབས་ཀྱི་ནང་དོན་དམིགས་གསལ་མངོན་པ།(~S)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
-#, fuzzy
 msgid  "Filter settings"
 msgstr "འདེམས་གཞི་བཀོད་སྒྲིག"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "དང་ལེན་བྱས་པའི་བཅོས་འབེབས་ཀྱི་ནང་དོན་དམིགས་གསལ་མངོན་པ།(~A)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "ཁས་མ་བླངས་པའི་བཅོས་འབེབས་ཀྱི་ནང་དོན་དམིགས་གསལ་མངོན་པ།(~R)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "ཆུང་དུ་གཏོང་བ། /ཆེ་རུ་གཏོང་བ།"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
-#, fuzzy
 msgid  "Show Changes"
 msgstr "བཅོས་འབེབས་དམིགས་བསལ་མངོན་པ།"
 
@@ -2110,292 +1972,234 @@ msgid  "Select unlocked cells"
 msgstr ""
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
-#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "ཕྱི་ལོག་གཞི་གྲངས་ཁུངས་ཀྱི་ URL(~E)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
-#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(འཕྲུལ་འདིའི་ཡིག་ཆའི་མ་ལག་གམ་དབྱིན་ཐ་དྲ་བའི་་ནང་ཁུངས་ཡིག་ཆའི། URL)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
-#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "ད་ཡོད་ཀྱི་རེའུ་མིག་/ས་ཁོངས།(~A)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
-#, fuzzy
 msgid  "~Update every"
 msgstr "གསར་བཅོས་ཀྱི་བར་ཆོད་དུས་ཚོད་ནི་(~U)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "སྐར་ཆ།"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
-#, fuzzy
 msgid  "External Data"
 msgstr "གཞི་གྲངས་ནང་འདྲེན།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "ལས་རོགས།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
-#, fuzzy
 msgid  "Row"
 msgstr "ཕྲེང།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Row"
 msgstr "ཕྲེང།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column"
 msgstr "སྟར།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
-#, fuzzy
 msgid  "Column"
 msgstr "སྟར།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
-#, fuzzy
 msgid  "Document"
 msgstr "ཡིག་ཚགས།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "གཞི་གྲངས་ས་ཁོངས།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Start"
 msgstr "འགོ་ཚུགས།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "End"
 msgstr "མཇུག་སྒྲིལ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "ནང་དོན།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "བརྗེ་སྒྱུར།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
-#, fuzzy
 msgid  "Scenarios"
 msgstr "འཆར་འགོད།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "འཐེན་འདྲད་རྣམ་པ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "འཐེན་འདྲད་རྣམ་པ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
-#, fuzzy
 msgid  "Display"
 msgstr "གསལ་བ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
-#, fuzzy
 msgid  "active"
 msgstr "སྤྱོད་བཞིན་པའི་"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
-#, fuzzy
 msgid  "inactive"
 msgstr "མི་སྤྱོད་པ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
-#, fuzzy
 msgid  "hidden"
 msgstr "གབ་བཅུག"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
-#, fuzzy
 msgid  "Active Window"
 msgstr "མིག་སྔའི་མཐོང་སྒྲོམ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
-#, fuzzy
 msgid  "Scenario Name"
 msgstr "འཆར་གཞིའི་མིང་།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "མཆན་མགྲེལ།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "ནང་དོན།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
-#, fuzzy
 msgid  "Sheets"
 msgstr "ལས་ཀའི་རེའུ་མིག"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
-#, fuzzy
 msgid  "Range names"
 msgstr "ཁུལ་ཁོངས་ཀྱི་མིང་།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
-#, fuzzy
 msgid  "Database Ranges"
 msgstr "གཞི་གྲངས་མཛོད་ཀྱི་ཁུལ་ཁོངས།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "པར་རིས།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
-#, fuzzy
 msgid  "OLE objects"
 msgstr "OLE-དམིགས་བྱ།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "མཆན་མགྲེལ།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
-#, fuzzy
 msgid  "Linked areas"
 msgstr "འབྲེལ་མཐུད་བྱེད་ཁུལ།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing objects"
 msgstr "རི་མོ་འབྲི་བ།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "ཐག་སྦྲེལ་ཚད་འགལ་བསྒར་འཛུད་ལ་བརྩི་བ།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Link"
 msgstr "ཐག་སྦྲེལ་བསྒར་འཛུད་ལ་བརྩི་བ།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Copy"
 msgstr "འདྲ་ཕབ་ཆས་བསྒར་འཛུད་ལ་བརྩི་བ།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "སུབ་པ།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "གཏོགས་གཤིས།..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
-#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "གཏག་པར་ས་ཁོངས་རྩོམ་སྒྲིག"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "གཏག་པར་ས་ཁོངས།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- མེད། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- ལས་ཁྲ་ཧྲིལ་པོ། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "-  སྤྱོད་མཁན་གྱིས་རང་ངེས། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- selection -"
 msgstr "- འདེམས་པ། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
-#, fuzzy
 msgid  "Rows to repeat"
 msgstr "བསྐྱར་ཟློས་ཀྱི་ཕྲེང་།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- མེད། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "-  སྤྱོད་མཁན་གྱིས་རང་ངེས། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
-#, fuzzy
 msgid  "Columns to repeat"
 msgstr "བསྐྱར་ཟློས་ཀྱི་སྟར།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- མེད། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "-  སྤྱོད་མཁན་གྱིས་རང་ངེས། -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
-#, fuzzy
 msgid  "~Column and row headers"
 msgstr "ཕྲེང་གི་ཁ་བྱང་དང་སྟར་གྱི་ཁ་བྱང་།(~C)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "ལས་ཀའི་རེའུ་མིག་དྲ་མིག(~G)"
 
@@ -2404,232 +2208,186 @@ msgid  "~Comments"
 msgstr ""
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
-#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "ཡུལ་/རིས་དབྱིབས།(~O)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
-#, fuzzy
 msgid  "Ch~arts"
 msgstr "རིས་མཚོན།(~A)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
-#, fuzzy
 msgid  "~Drawing objects"
 msgstr "རིས་འགོད་ཡུལ།(~D)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
-#, fuzzy
 msgid  "~Formulas"
 msgstr "སྤྱི་འགྲོས།(~F)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
-#, fuzzy
 msgid  "Zero ~values"
 msgstr "ཀླད་ཀོར་ཐང་།(~V)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "གཏག་པར།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
-#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "གོང་ནས་འོག་ལ་ཕྱོགས་ བསྐྱར་དུ་གཡས་ལ་ཕྱོགས།(~T)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "གཡོན་ནས་གཡས་ལ་ཕྱོགས་ བསྐྱར་དུ་གཤམ་དུ་ཕྱོགས།(~L)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
-#, fuzzy
 msgid  "First ~page number"
 msgstr "ཤོག་གྲངས་(~P)ཐེངས་དང་པོ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
-#, fuzzy
 msgid  "Page order"
 msgstr "ཤོག་ངོས་གོ་རིམ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
-#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "རྐྱང་སྐུམ་མ་ཚུལ།(~M)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
-#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "གཏག་པར་ཤོག་ངོས་ཆེར་གཏོང་ངམ་ཆུང་གཏོང་།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "ཞེང་ཚད་དམ་མཐོ་ཚད་ལ་གཞིགས་ནས་གཏག་པར་གྱི་ཁྱབ་ཁོངས་ལེགས་སྒྲིག་བྱེད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "ཤོག་གྲངས་ལ་གཞིགས་ནས་གཏག་པར་གྱི་ཁྱབ་ཁོངས་ལེགས་སྒྲིག་བྱེད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
-#, fuzzy
 msgid  "~Scaling factor"
 msgstr "རྐྱང་སྐུམ་རྐྱེན་རྒྱུ།(~S)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width in pages"
 msgstr "ཤོག་ངོས་ཀྱི་ཞེང་ཚད།(~W)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight in pages"
 msgstr "ཤོག་ངོས་ཀྱི་མཐོ་ཚད།(~E)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
-#, fuzzy
 msgid  "N~umber of pages"
 msgstr "ཤོག་གྲངས།(~U)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "སྡུར་ཚད་མངོན་པ།"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
-#, fuzzy
 msgid  "Headers/Footers"
 msgstr "ཤོག་མགོ་དང་ཤོག་ཞབས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
-#, fuzzy
 msgid  "Header"
 msgstr "ཤོག་མགོ་"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "ཤོག་ཞབས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Header (right)"
 msgstr "ཤོག་མགོ་(གཡས)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
-#, fuzzy
 msgid  "Header (left)"
 msgstr "ཤོག་མགོ་(གཡོན)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Footer (right)"
 msgstr "ཤོག་ཞབས་(གཡས)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
-#, fuzzy
 msgid  "Footer (left)"
 msgstr "ཤོག་ཞབས་(གཡོན)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
-#, fuzzy
 msgid  "Headers"
 msgstr "ཤོག་མགོ་"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
-#, fuzzy
 msgid  "Footers"
 msgstr "ཤོག་ཞབས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left area"
 msgstr "གཡོན་མཐའི་ས་ཁོངས།(~L)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
-#, fuzzy
 msgid  "~Center area"
 msgstr "བར་གྱི་ས་ཁོངས།(~C)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "R~ight area"
 msgstr "གཡས་མཐའི་ས་ཁོངས།(~I)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
-#, fuzzy
 msgid  "Hea~der"
 msgstr "ཤོག་མགོ་(~D)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
-#, fuzzy
 msgid  "Custom header"
 msgstr "རང་བཟོས་ཀྱི་ཤོག་མགོ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Text Attributes"
 msgstr "ཡི་གེའི་གཏོགས་གཤིས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Title"
 msgstr "ཡིག་ཆའི་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
-#, fuzzy
 msgid  "Title"
 msgstr "ཡིག་ཆའི་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
-#, fuzzy
 msgid  "File Name"
 msgstr "ཡིག་ཆའི་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
-#, fuzzy
 msgid  "Path/File Name"
 msgstr "བརྒྱུད་ལམ་/ཡིག་ཆའི་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Sheet Name"
 msgstr "རེའུ་མིག་གི་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Page"
 msgstr "ཤོག་ཨང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Pages"
 msgstr "ཤོག་གྲངས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Date"
 msgstr "ཚེས་གྲངས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Time"
 msgstr "དུས་ཚོད།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "གནོན་མཐེབ་ལ་རྡེབ་གནོན་བྱས་ནས་  ཡིག་གཟུགས་སམ་བསྒར་འཛུད་ཀྱི་ཚེས་གྲངས་ དུས་ཚོད་སོགས་ཀྱི་ཁོངས་ཀྱི་བཀའ་བརྡ་དག་བཅོས་བྱེད་རོགས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Note"
 msgstr "དྲན་སྟོན།"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "རྩོམ་སྒྲིག(~E)..."
 
@@ -2763,8 +2521,9 @@ msgid  "~Discard"
 msgstr "འདོར་བ(~D)"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
+#, fuzzy
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་སྡེ་ཚན་འདི་སུབ་ཀྱི་ཡིན་ནམ།"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3256,86 +3015,70 @@ msgid  "~Delete"
 msgstr "སུབ་པ།(~D)"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
-#, fuzzy
 msgid  "Format Cells"
 msgstr "སྡེ་ཚན་ཁྲ་མིག་གི་རྣམ་གཞག"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "གྲངས་ཀ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ཡིག་གཟུགས།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "ཡིག་གཟུགས་ཕན་འབྲས།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "སྙོམ་གཤིབ།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "ཀྲུང་འཇར་ཀུའི་ཡི་གེ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "མཐའ་སྒྲོམ།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "རྒྱབ་ལྗོངས།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
-#, fuzzy
 msgid  "Cell Protection"
 msgstr "དྲ་མིག་སྲུང་སྐྱོབ།"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
-#, fuzzy
 msgid  "~Protected"
 msgstr "འཆིངས་བརྒྱབ་པ།(~P)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~formula"
 msgstr "སྤྱི་འགྲོས་གབ་པ།(~F)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~all"
 msgstr "ཚང་མ་གབ་པ།(~A)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "ལས་ཁྲ་སྲུང་སྐྱོབ་སྤྱད་པ་ཁོ་ནའི་རྗེས་ དྲ་མིག་ལ་སྲུང་སྐྱོབ་ཐོབ། \n\n\"བདེ་འཇགས་\"ཚལ་ཐོར་རྡེབ་གནོན་བྱས་ནས་ \"ལས་ཁྲ་\"སྲུང་སྐྱོབ་འདེམས་དགོས།"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
-#, fuzzy
 msgid  "Protection"
 msgstr "སྲུང་སྐྱོབ།"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "གཏག་པར་སྐབས་གབ་པ།(~W)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
-#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "མིག་སྔར་བདམས་པའི་དྲ་མིག་གཏག་པར་བྱེད་མི་ཐུབ།"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "གཏག་པར།"
 
@@ -3955,8 +3698,9 @@ msgid  "No operations to execute"
 msgstr "བཀལ་སྤྱོད་ལག་བསྟར་མི་བྱེད།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
+#, fuzzy
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "ས་ཁོངས་ལ་སྟར་གྱི་ཁ་བྱང་མེད།  ཁྱེད་རང་གིས་ཕྲེང་དང་པོའི་ནང་དོན་ཁ་བྱང་ལ་རྩིས་སམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -4034,8 +3778,9 @@ msgid  "Search key not found."
 msgstr "འཚོལ་བའི་བཤར་བྱང་མ་ཪྙེད་པ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
+#, fuzzy
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "རྐྱང་པའི་འགྱུར་ཚད་བཀྲོལ་ཟིན། \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -4048,12 +3793,14 @@ msgid  ") into current cell?"
 msgstr ")མིག་སྔའི་དྲ་མིག་ནང་སྣོན་བཅུག་དགོས་སམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
+#, fuzzy
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "རྐྱང་པའི་འགྱུར་ཚད་འགྲོལ་རྒྱུ་ཕམ། \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
+#, fuzzy
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "ཞིབ་རྩིས་ཀྱི་གྲངས་ཐང་མ་ཪྙེད་པ།  \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4635,8 +4382,9 @@ msgid  "Multiple operations"
 msgstr "འདྲ་བཟོའི་རྩིས་རྒྱག་རེའུ་མིག"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+#, fuzzy
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་བཅུག་པའི་མིང་ནི་སྟོང་པའམ་བསྐྱར་ཟློས་བྱས་འདུག་\nརང་འགུལ་རྣམ་གཞག་ནི་གསར་འཛུགས་བྱ་ཐབས་བྲལ།\nབསྐྱར་དུ་མིང་མི་འདྲ་བ་གཅིག་འཇུག་རོགས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 #, fuzzy
@@ -4674,8 +4422,9 @@ msgid  "Print"
 msgstr "གཏག་པར།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+#, fuzzy
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "རང་འགུལ་རྣམ་གཞག་སྤྱོད་ཆེད་\nཁྱེད་རང་གིས་ཉུང་མཐར་\n3x3 ལས་ཁྲ་ས་ཁོངས་བདམ་དགོས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 #, fuzzy
@@ -4796,8 +4545,9 @@ msgid  "Report1"
 msgstr "ཐོ་འགོད་ 1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "འབྲི་སྦྱོར་གི་ནུས་པར་བརྟག་དཔྱད་བྱས་མེད།   \nཁྱེད་རང་གི་སྒྲིག་འཇུག་ལ་བརྟག་དཔྱད་གནང་རོགས་  གལ་ཏེ་དགོས་ན་སྒྲིག་འཇུག་ལ་སྤྱོད་པའི་སྐད་བརྡའི་པར་གཞི་སྒྲིག་འཇུག་བྱེད་རོགས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 #, fuzzy
@@ -4810,8 +4560,9 @@ msgid  "Should the spellcheck be continued at the beginning of the current sheet
 msgstr "མུ་མཐུད་ནས་ལས་ཁྲ་འགོ་ཚུགས་ས་ནས་བརྟག་དཔྱད་བྱེད་དམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+#, fuzzy
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "དོན་གཅིག་མིང་གི་མིང་མཛོད་སྤྱད་མི་ཆོག  \nཁྱེད་རང་གི་སྒྲིག་བཅུག་བྱ་རིམ་ལ་བརྟག་དཔྱད་གནང་རོགས་ དགོས་ངེས་སྐབས་སྤྱོད་པའི་སྐད་བརྡའི་པར་གཞི་སྒྲིག་བཅུག་དགོས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 #, fuzzy
@@ -5147,12 +4898,14 @@ msgid  "on"
 msgstr "ཡོད།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+#, fuzzy
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "ཡིག་ཆ་འདིའི་ནང་གཞན་པའི་ཡིག་ཆར་ཕྱོགས་པའི་་ཐག་སྦྲེལ་ཡོད། \n་ཐག་སྦྲེལ་འདི་དག་གསར་བཟོ་དགོས་སམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+#, fuzzy
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "ཡིག་ཆ་འདིར་བཙལ་འདྲི་འགའ་ཚུད་ཡོད་  དེ་ཚོའི་འབྲས་བུ་སོར་ཉར་བྱེད་ཐབས་མེད།  \nརྩད་འདྲི་འདི་བསྐྱར་ཟློས་ལག་བསྟར་ལ་དགོས་སམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 #, fuzzy
@@ -5160,8 +4913,9 @@ msgid  "Too many conditions"
 msgstr "ཆ་རྐྱེན་ཆེས་མང་།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+#, fuzzy
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "སྐོང་གསབ་བྱེད་པའི་དྲ་མིག་དེ་ལས་ཁྲ་ནང་ནས་སྤོ་མི་ཆོག"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 #, fuzzy
@@ -5184,8 +4938,9 @@ msgid  "There is not enough space on the sheet to insert here."
 msgstr "བར་སྟོང་མི་འདང་  བསྒར་འཛུད་བྱེད་ཐབས་མེད།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+#, fuzzy
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "དྲས་སྦྱར་པང་གི་ནང་དོན་དེ་བདམས་པའི་ས་ཁོངས་ལས་ཆེ་བ། \nཁྱེད་རང་གི་དེ་ད་དུང་བསྒར་འཛུད་བྱེད་དམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 #, fuzzy
@@ -5238,8 +4993,9 @@ msgid  "Compare #"
 msgstr "བསྡུར་བ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+#, fuzzy
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "ནུས་མེད་ཀྱི་དྲ་མིག་གི་ཁ་གྲངས་ཆེར་མང་ཤོས་ལས་འགལ།  \nནུས་མེད་ཀྱི་དྲ་མིག་ཡོད་ཚད་བདམ་མེད་པ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 #, fuzzy
@@ -5361,8 +5117,9 @@ msgid  "Exit Recording"
 msgstr "ཟིན་ཐོ་མཇུག་སྒྲིལ་བ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+#, fuzzy
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "བཀོལ་སྤྱོད་འདིས་ནང་དོན་བཅོས་འབེབས་བཟོ་བཅོས་བར་བཅད་བྱེད།   \nནང་དོན་བཟོ་བཅོས་དེ་བརླགས།  \n\nཁྱེད་རང་བཅོས་འབེབས་སྲུང་སྐྱོབ་བར་བཅད་དགོས་སམ།\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 #, fuzzy
@@ -5380,8 +5137,9 @@ msgid  "Array formula  %1 R x %2 C"
 msgstr "ལིང་ཚེའི་སྤྱི་འགྲོས་ ཕྲེང་ %1 སྟར་ x %2"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+#, fuzzy
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "ཡིག་ཚགས་འདིར་ཧུང་གི་བཀའ་ཚིག་ལྡན་པ།   \nཁྱེད་རང་ཧུང་འདི་ལག་བསྟར་བྱེད་དམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 #, fuzzy
@@ -5508,32 +5266,39 @@ msgid  "Your spreadsheet has been updated with changes saved by other users."
 msgstr "ཁྱེད་ཀྱི་གློག་རྡུལ་རེའུ་མིག་དེ་སྤྱོད་མཁན་གཞན་དག་འཇོག་སར་སྒྱུར་ཟིན་འདུག"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+#, fuzzy
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "གློག་རྡུལ་རེའུ་མིག་འདི་ངེས་པར་དུ་ལམ་སེང་ཉར་ཚགས་བྱས་ཏེ་མཉམ་སྤྱོད་དཔེ་རྣམ་སྐུལ་སློང་བྱེད། \n\nམུ་མཐུད་བྱེད་དམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+#, fuzzy
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "ཐག་གཅོད་ཟིན་པའི་ཟླ་སྒྲིལ་མི་མཐུན་པ་དེ་འབོར་བརླག་འགྲོ་ངེས་ཡིན་པས་ཁྱེད་ཀྱིས་མཉམ་སྤྱོད་གློག་རྡུལ་རེའུ་མིག་ལ་བཟོ་བཅོས་རྒྱག་པ་དེ་ཉར་ཚགས་བྱེད་མི་ཐུབ་པས་\n\nམུ་མཐུད་ལག་བསྟར་བྱེད་མཁན་ཡིན་ནམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+#, fuzzy
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "གློག་རྡུལ་རེའུ་མིག་ནང་གི་མཉམ་སྤྱོད་རྣམ་པ་དེས་མཉམ་སྤྱོད་གློག་རྡུལ་རེའུ་མིག་གི་དེ་མིན་གྱི་སྤྱོད་པ་པོའི་དེ་ཚོའི་ལས་ཀ་ཟླ་སྒྲིལ་བའམ་སྤྱོད་མི་ཆོག་པ། \n\n མུ་མཐུད་བྱེད་དམ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+#, fuzzy
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "གློག་རྡུལ་རེའུ་མིག་འདི་ད་མཉམ་སྤྱོད་དཔེ་རྣམ་མིན། \n\nཁྱེད་ཀྱི་གློག་རྡུལ་རེའུ་མིག་དེ་ཁེར་རྐྱང་ཡིག་ཆར་ཉར་ཚགས་བྱེད་པ་དང་སྦྲགས་ལག་པ་འགུལ་ནས་མཉམ་སྤྱོད་གློག་རྡུལ་རེའུ་མིག་ནང་བཟོ་བཅོས་མཉམ་འདུས་ཉར་ཚགས་བྱེད།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+#, fuzzy
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "གློག་རྡུལ་རེའུ་མིག་འདི་མཉམ་སྤྱོད་ཀྱི་དཔེ་རྣམ་དུ་གནས་འདུག སྤྱོད་མཁན་མང་པོ་ཞིག་གིས་དུས་གཅིག་ཏུ་གློག་རྡུལ་རེའུ་མིག་འདིར་ལྟ་སྤྱོད་དང་རྩོམ་སྒྲིག་བྱེད་ཆོག\n\n མཉམ་སྤྱོད་ཀྱི་དཔེ་རྣམ་འོག་རྣམ་གཞག་གི་གཏོགས་ཁོངས(དཔེར་ན། ཡིག་གཟུགས་དང་། ཆོས་གཞི། དེ་བཞིན་གྲངས་ཀ་བཅས་ཀྱི་རྣམ་གཞག) ལ་བཟོ་བཅོས་རྒྱག་པར་ཉར་ཚགས་བྱེད་མི་སྲིད། བྱེད་ནུས་ཁག་གཅིག(དཔེར་ན། པར་རིས་རེའུ་མིག་རྩོམ་སྒྲིག་དང་རི་མོ་འབྲི་ཡུལ )སྤྱོད་ཡས་མེད། མཉམ་སྤྱོད་དཔེ་རྣམ་ཁ་བརྒྱབ་ནས་བཟོ་བཅོས་དང་བྱེད་ནུས་ལ་མཁོ་བའི་ལྟ་སྤྱོད་དབང་ཚད་སྒེར་བཟུང་བྱ་རྒྱུ་དག་ཐོབ་པར་གྱིས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "སྤྱོད་མཁན་'%1'ཟླ་སྒྲིལ་བཞིན་ཡོད་པས་རྐྱེན་གྱིས་གློག་རྡུལ་རེའུ་མིག་གི་ཡིག་ཆ་དེ་གཏན་བཀག་བྱེད་དགོས། \n\nགཏན་བཀག་ཟིན་པའི་ཡིག་ཆའི་མཉམ་སྤྱོད་དཔེ་ཚུལ་དེ་བཀག་ཐབས་མེད་པས་གཏོགས་ཙམ་ནས་བསྐྱར་དུ་ཚོད་ལྟར་གནང་རོགས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "སྤྱོད་མཁན་'%1'ཟླ་སྒྲིལ་བཞིན་ཡོད་པས་རྐྱེན་གྱིས་གློག་རྡུལ་རེའུ་མིག་གི་ཡིག་ཆ་དེ་གཏན་བཀག་བྱེད་དགོས། \n\nགཏོགས་ཙམ་ནས་ཁྱེད་ཀྱི་བཟོ་བཅོས་དེ་ཉར་ཚགས་བྱེད་རྒྱུ་ཚོད་ལྟ་གནང་རོགས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 #, fuzzy
@@ -5646,126 +5411,102 @@ msgid  "Back"
 msgstr "བསྐྱར་ལོག"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "AutoFormat"
 msgstr "རང་འགུལ་གྱི་རྣམ་གཞག་འདྲ་སྤྱོད།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "རྣམ་གཞག(~O)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
-#, fuzzy
 msgid  "A~utoFit width and height"
 msgstr "སྟར་པའི་ཞེང་/ཕྲེང་གི་མཐོ།(~W)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
-#, fuzzy
 msgid  "~Borders"
 msgstr "མཐའ་སྒྲོམ།(~B)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
-#, fuzzy
 msgid  "F~ont"
 msgstr "ཡིག་གཟུགས།(~F)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
-#, fuzzy
 msgid  "~Pattern"
 msgstr "རི་མོ།(~P)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
-#, fuzzy
 msgid  "Alignmen~t"
 msgstr "སྙོམ་གཤིབ།(~A)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
-#, fuzzy
 msgid  "~Number format"
 msgstr "ཨང་གྲངས།(~N)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "ཉེར་སྤྱོད་དགོས་པའི་རྣམ་གཞག"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "གསར་སྣོན།(~A)..."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "སུབ་པ།(~D)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "བསྐྱར་དུ་མིང་འདོགས།(~R)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
-#, fuzzy
 msgid  "Add AutoFormat"
 msgstr "གསར་སྣོན་རང་འགུལ་རྣམ་གཞག"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
-#, fuzzy
 msgid  "Rename AutoFormat"
 msgstr "མིང་བསྐྱར་འདོགས་ཀྱི་རང་འགུལ་རྣམ་གཞག"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "མིང་།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
-#, fuzzy
 msgid  "Delete AutoFormat"
 msgstr "རང་འགུལ་རྣམ་གཞག་སུབ་རྒྱུ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་རང་འགུལ་རྣམ་གཞག་ # སུབ་ངོ་མ་ཡིན་ནམ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "ཁ་བརྒྱབ།(~C)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
-#, fuzzy
 msgid  "Jan"
 msgstr "ཟླ་བ་གཅིག"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
-#, fuzzy
 msgid  "Feb"
 msgstr "ཟླ་གཉིས་པ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
-#, fuzzy
 msgid  "Mar"
 msgstr "ཟླ་བ་གསུམ་པ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
-#, fuzzy
 msgid  "North"
 msgstr "བྱང་།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
-#, fuzzy
 msgid  "Mid"
 msgstr "དཀྱིལ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
-#, fuzzy
 msgid  "South"
 msgstr "ལྷོ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
-#, fuzzy
 msgid  "Total"
 msgstr "ཁྱོན་བསྡོམས།"
 
@@ -14127,8 +13868,9 @@ msgid  "Font Attributes"
 msgstr "ཡིག་རྟགས་གཏོགས་གཤིས།"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
+#, fuzzy
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "དྲས་སྦྱར་པང་ནང་གཞི་གྲངས་ཆེན་པོ་ཞིག་ཡོད་པས་\nཁྱེད་ཀྱིས་དེ་མིན་ཉེར་སྤྱོད་བྱ་རིམ་ལ་གཞི་གྲངས་དེ་དག་བེད་སྤྱོད་བྱེད་དུ་བཅུག་རྒྱུ་ཡིན་ནམ།"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -14209,8 +13951,9 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME Calc ཚོའདྲེན་འཇུག་སྤྱི་འགྲོས་ལ་ནོར་འཁྲུལ་ཞིག་ཡོད་པ་ཤེས་སོང་།  \nགཤམ་གྱི་གྲོས་འཆར་གྱི་བཟོ་བཅོས་དང་ལེན་བྱེད་དམ། \n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -14263,8 +14006,9 @@ msgid  "~Selected sheets"
 msgstr "ལས་ཀའི་རེའུ་མིག་འདེམས་པ།(~S)"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
+#, fuzzy
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "སྦྱར་དགོས་པའི་གཞི་གྲངས་རྐྱང་ཚན་དེར་གཞི་གྲངས་ཡོད་པས་\nད་ཡོད་ཀྱི་གཞི་གྲངས་དེ་བཅོས་འབྲི་བྱེད་མཁན་ཡིན་ནམ།"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -15929,77 +15673,62 @@ msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~1"
 msgstr "ཆ་རྐྱེན་ 1"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "དྲ་མིག་གི་གྲངས་ཐང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "སྤྱི་འགྲོས།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "ཆུང་བ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "ཆེ་བ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "ཆུང་བའམ་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "ཆེ་བའམ་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "མི་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "བར་ཡོད།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "བར་མེད།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "དང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "~Cell Style"
 msgstr "དྲ་མིག་གི་རྣམ་པ།(~C)"
 
@@ -16008,77 +15737,62 @@ msgid  "~New Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~2"
 msgstr "ཆ་རྐྱེན་ 2"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "དྲ་མིག་གི་གྲངས་ཐང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "སྤྱི་འགྲོས།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "ཆུང་བ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "ཆེ་བ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "ཆུང་བའམ་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "ཆེ་བའམ་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "མི་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "བར་ཡོད།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "བར་མེད།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "དང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "C~ell Style"
 msgstr "དྲ་མིག་གི་རྣམ་པ།(~E)"
 
@@ -16087,77 +15801,62 @@ msgid  "Ne~w Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~3"
 msgstr "ཆ་རྐྱེན་ 3"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "དྲ་མིག་གི་གྲངས་ཐང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "སྤྱི་འགྲོས།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "ཆུང་བ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "ཆེ་བ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "ཆུང་བའམ་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "ཆེ་བའམ་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "མི་མཚུངས་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "བར་ཡོད།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "བར་མེད།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "དང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "ཆུང་གཏོང་/ཆེར་གཏོང་།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "དྲ་མིག་གི་རྣམ་པ།(~L)"
 
@@ -16166,7 +15865,6 @@ msgid  "New ~Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "ཆ་རྐྱེན་གྱི་རྣམ་གཞག"
 

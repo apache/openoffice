@@ -153,11 +153,11 @@ msgstr "Opprett ny mappe"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "Mappa «${DIR}» finnes ikke.\nVil du opprette den nå?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Mappe «${DIR}» finnes ikke.\nVil du opprette den nå eller velge en annen mappe?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -261,7 +261,7 @@ msgstr "Trykk på «Neste» for å fortsette."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Merk: Denne installasjonen vil bli gjennomført uten administratorprivilegier. Du vil derfor ha redusert funksjonalitet (Java Runtime Environment (JRE) kan ikke installeres, ingen systemintegrasjon).\nTrykk på «Avbryt» og bruk administratorprivilegier hvis du ønsker å bruke alle funksjoner."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -433,7 +433,7 @@ msgstr "Analyserer …"
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "Analyserer databasen.\nVent litt …"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

@@ -389,7 +389,7 @@ msgstr "$filename$ ဖိုင်သည်အချက်အလက်ထည်�
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "အောက်ဖော်ပြပါအမှားသတင်းပေးခြင်း($exception_type$)တွင် ဖိုင်ဆွဲတင်ခြင်းကြိုးပမ်းမှုကို ရစေသည်။\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "'$columnname$'ကော်လံတွင် ထပ်နေသောတ
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "'$columnname$'ကော်လံကို\"Decimal\"အမျိုးအစားဖြင့် သတ်မှတ်ထားသည်။ $precision$ သည် အရှည်ဆုံး သင်္ကေတများကို လက်ခံနိုင်သည်။ ($scale$နှင့်အတူ ဒသမကိန်းများကိုပါ လက်ခံနိုင်သည်)\n\nသီးခြားတန်ဖိုးတစ်ခုဖြစ်သည့် \"$value$ သည် ကိန်းဂဏန်းအရေအတွက် များစွာကို ခွင့် ပြုပေးနိုင်သည်။"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "KDE လိပ်စာစာအုပ်ကို ရယူအသုံ�
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "KDE version အသစ်ကို တွေ့ ရသည်။ \n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "KDE version ဆောင်ရွက်မှုများသေချာလျှင် ဤversionစစ်ဆေးမှု ကိုမမြင်နိုင်ရန် အောက်ဖော်ပြပါ အခြေခံမက်ခရိုများကို သင်ဆောင်ရွက်နိုင်သည်\n \n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

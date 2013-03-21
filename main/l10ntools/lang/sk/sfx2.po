@@ -237,7 +237,7 @@ msgstr "Panel funkcií"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "Nastala chyba vo zvláštnej konfigurácii.\nProsím kontaktujte vašeho administrátora."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "Načítať %PRODUCTNAME počas štartu systému"
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Vypnúť quickstarter v systémovej lište"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -341,7 +341,7 @@ msgstr "Prepojiť obrázky"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
 msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
-msgstr ""
+msgstr "Nebola nájdená vhodná metóda\nkomponentu %1.\n\nSkontrolujte názov metódy."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -509,11 +509,11 @@ msgstr "Zo~braziť Pomocníka %PRODUCTNAME %MODULENAME pri spustení programu"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "Vybraný filter $(FILTER) nebol nainštalovaný.\nChcete to urobiť teraz?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Vybraný filter $(FILTER) nebol zahrnutý vo vašej verzii programu.\nInformácie o objednávkach môžete nájsť na našich domovských stránkach."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "Upozornenie"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "Váš dokument obsahuje priesvitné objekty.\nTo môže na určitých tlačiarňach spôsobiť predĺženie\ndoby tlače. Má byť obmedzené použitie\npriehľadnosti?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -733,7 +733,7 @@ msgstr "~Odomknúť..."
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Táto činnosť ukončí zmenu záznamového módu.\nVšetky informácie o zmenách sa stratia.\nUkončiť zmenu záznamového módu?\n\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 msgid  "Protect Records"
@@ -1441,7 +1441,7 @@ msgstr "Určite chcete zmazať štýl $1?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "Práve mažete použitý štýl!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1489,7 +1489,7 @@ msgstr "Úlohy"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Tento dokument môže obsahovať formátovanie alebo obsah, ktorý nemôže byť uložený vo formáte %FORMATNAME. Napriek tomu chcete uložiť dokument v tomto formáte?\n\nPoužite posledný ODF formát súborov pre zabezpečenie že celé formátovanie a obsah je uložený správne."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "Dokument \"$(DOC)\" bol zmenený.\nChcete uložiť vami vykonané zmeny?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "Šablóny"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "Chyba pri kopírovaní šablóny \"$1\". \nŠablóna s týmto menom už pravdepodobne existuje."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "Vybraný súbor má neplatný formát."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Dokumenty nemôžu byť uložené vo formáte $(FORMAT).\nPrajete si uložiť svoje zmeny s použitím formátu $(OWNFORMAT)?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "Formát súboru:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "Tento dokument obsahuje:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr "~Slovník synoným..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Nebola nájdená žiadna východzia tlačiareň.\nProsím vyberte tlačiareň a skúste znovu."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Nebolo možné inicializovať tlačiareň.\nProsím skontrolujte nastavenia tlačiarne."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Tento dokument bol formátovaný pre tlačiareň $1. Určená tlačiareň nie je dostupná. \nPrajete si použiť štandardnú tlačiareň $2?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr " (Iba na čítanie)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Veľkosť a orientácia strany boli zmenené.\nChcete uložiť nové nastavenia\nv aktívnom dokumente?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "Veľkosť strany bola zmenená.\nMá byť nové nastavenie uložené\nv aktuálnom dokumente?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Veľkosť a orientácia strany boli zmenené.\nChcete uložiť nové nastavenia\nv aktívnom dokumente?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

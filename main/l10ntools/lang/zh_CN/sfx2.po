@@ -237,7 +237,7 @@ msgstr "功能栏"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "在一个特殊的配置文件内发现一个错误。\n请和您的管理员联系！"
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "系统启动时装入 %PRODUCTNAME"
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "禁用系统任务栏快速启动"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -341,7 +341,7 @@ msgstr "链接图形"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
 msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
-msgstr ""
+msgstr "无法找到适当的组件方法\n%1.\n\n对方法名称进行拼写检查"
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -509,11 +509,11 @@ msgstr "启动时显示 %PRODUCTNAME %MODULENAME 帮助(~D)"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "选定过滤器 $(FILTER) 尚未安装。\n是否想要现在安装？"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "这个版本还没有提供您所选择的转换器 $(FILTER)。\n您参阅我们公司的网页提供定购软件的信息。"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "警告"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "您的文档含有透明对象。\n许多打印机会因此需要很长的时间来完成打印任务。\n让打印机忽略这些透明对象吗？"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -733,7 +733,7 @@ msgstr "取消保护(~U)..."
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "此操作会结束更改录制模式。\n所有更改内容将会丢失。\n\n是否要结束更改录制？\n\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 msgid  "Protect Records"
@@ -1441,7 +1441,7 @@ msgstr "是否真的要删除样式 $1？"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "您要删除的是一个被应用的样式！\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1489,7 +1489,7 @@ msgstr "任务"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "此文档可能包含无法使用 %FORMATNAME 文件格式保存的格式或内容。是否还要将文档保存为此格式？\n\n使用最新的 ODF 文件格式并确保正确保存所有的格式和内容。"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "文档 \"$(DOC)\" 已经被修改。\n是否要保存修改？"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "模板"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "在复制模板 \"$1\" 时发生错误。\n可能一个同名的模板已经存在。"
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "选中的文件的格式无效。"
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "无法用 $(FORMAT) 格式保存文档。\n是否要使用 $(OWNFORMAT) 格式保存修改？"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "文件格式："
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "此文档包含:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr "同义词词典(~T)..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "没有找到默认打印机。\n请您选择一个打印机，然后再重试打印。"
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "无法启动打印机。\n请您检查打印机的配置。"
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "这个文档格式是专门为打印机 $1 设置的。\n但是这个打印机不存在。是否要使用默认打印机 $2？"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr " （只读）"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "页面大小和页面方向都已经被修改。\n是否要在活动文档中\n保存新设置？"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "页面大小已经被修改。\n是否要在活动文档中\n保存新设置？"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "页面大小和页面方向都已经被修改。\n是否要在活动文档中\n保存新设置？"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

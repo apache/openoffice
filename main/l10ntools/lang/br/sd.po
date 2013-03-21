@@ -217,7 +217,7 @@ msgstr "Dilec'hiañ pajennoù"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Memor re skort !\nTroc'het e vo ar gwezhiadur."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1733,7 +1733,7 @@ msgstr "Bizskrivit un anv evit ar penn nevez :"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "An anv hoc'h eus euvret zo anezhañ endeo. \nEuvrit unan all."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1805,7 +1805,7 @@ msgstr "Enlakaat pajennoù"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Fellout a ra deoc'h dilemel ar gwiskad '$' da vat ?\nDiwallit : dilamet e vo an holl ergorennoù war ar gwiskad-mañ ivez "
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "Enlakaat ur stern testenn"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "N'hall ket an arc'hwel bezañ erounezet \ngant an ergorennoù diuzet."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "N'haller ket kargañ ar restr "
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Azasaet e vo mentrezh ar pajennoù nevez.\nAzasaat an ergorennoù a fell deoc'h ivez ?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "Embann"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Dilemel a ra ar gwered-mañ rollad ar gwezhadurioù ac'hall\nbezañ nullet. Ne dizh ket an daskemmadurioù\ngraet d'an teul, mirout a ra avat o nullañ.\nFellout a ra deoc'h kenderc'hel ha deverkañ ar stil pajenn nevez ?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "N'haller ket kenglotañ ar mentrezh teul ouzh ar voullerez."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Erenet eo ar skeudenn-mañ ouzh an teul.\nDilemel an ere a fell deoc'h a-benn daskemmañ ar skeudenn ?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (Steuñv)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Direizh eo ar skeul erspizet. \nEnlakaat unan all a fell deoc'h ?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2301,7 +2301,7 @@ msgstr "N'haller ket digenstrollañ an holl ergorennoù tresañ."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "Un ergrafadenn gant an hevelep anv zo anezhi endeo. \n Fellout ar ra deoc'h hec'h erlec'hiañ outi."
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "Sil kevregañ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "Ar restr %\nn'eo ket ur restr sten talvoudek."
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

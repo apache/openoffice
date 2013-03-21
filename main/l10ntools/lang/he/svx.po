@@ -971,12 +971,14 @@ msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "מפת התמונה השתנתה.\nהאם לשמור את השינויים?‏"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "מפת התמונה השתנתה.\nהאם לשמור את השינויים?‏"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1293,12 +1295,10 @@ msgid  "Line of text"
 msgstr "שורה של טקסט"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "צבעים"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
-#, fuzzy
 msgid  "Source color"
 msgstr "צבע מקור"
 
@@ -1385,8 +1385,9 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "שיחזור מסמכים של ‏‪%PRODUCTNAME‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "יש ללחוץ 'שיחזור' כדי להתחיל את תהליך השיחזור של המסמכים הרשומים למטה.‏\n\nנא לסייע לנו באיבחון התקלה שגרמה לנפילת המוצר על ידי שליחת דו\"ח תקלה של מחולל דו\"חות התקלה של ‏‪%PRODUCTNAME‬‏. יש ללחוץ 'הבא' כדי לפתוח את מחולל דו\"חות התקלה.‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1399,8 +1400,9 @@ msgid  "Status of recovered documents:"
 msgstr "מצב המסמכים המשוחזרים:‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
+#, fuzzy
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "שם המסמך\tמצב המסמך"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1448,8 +1450,9 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "הדו\"ח על הנפילה שנוצר מסייע לנו לזהות את הגורם לנפילת ‏‪%PRODUCTNAME‬‏.‏ יש ללחוץ על 'הבא'‏ כדי לקבל את הכלי לדווח תקלות או ללחוץ על 'ביטול'‏ כדי לדלג על צעד זה.‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
+#, fuzzy
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "שחזור המסמכים הסתיים.‏‪\n‏יש ללחוץ על 'סיום'‏ כדי לראות את המסמכים.‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1462,8 +1465,9 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "האם אכן לבטל את שיחזור המסמכים של ‪‏%PRODUCTNAME‬‏?‏"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
+#, fuzzy
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "תהליך השיחזור האוטומטי הופסק.‏\n\nלחיצה על 'שמירה' תשמור את המסמכים הרשומים למטה בתיקיה שצויינה למטה.‏\nלחיצה על 'ביטול' סוגרת את האשף ללא שמירת המסמכים.‏"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1491,8 +1495,9 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "ברוכים הבאים למחולל דו\"חות תקלה של %PRODUCTNAME %PRODUCTVERSION.‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "כלי דיווח שגיאות זה בוחן כיצד %PRODUCTNAME עובד ושולח מידע זה ל־Oracle על מנת לסייע בשיפור גרסאות עתידיות.\n\nהכלי קל לשימוש, די בשליחת הדיווח על ידי לחיצה על 'שליחה' בלי כל מאמץ נוסף, בתיבת הדו־שיח הבאה, או שאתה יכול לתאר בקצרה כיצד התרחשה התקלה, ואז ללחוץ על 'שליחה'. אם ברצונך לצפות בדיווח, לחץ על 'הצג דיווח'. אם תלחץ אל 'לא לשלוח', לא ישלח כל מידע.\n\nפרטיות לקוחות\nהמידע שנאסף מוגבל למצב %PRODUCTNAME %PRODUCTVERSION בעת התרחשות התקלה. אין איסוף מידע אודות סיסמאות או תוכן מסמכים.\n\nהמידע ישמש אך ורק לשיפור האיכות של %PRODUCTNAME ולא ישותף עם כל גורם צד שלישי.\nלמידע נוסף אודות מדיניות הפרטיות של Oracle, בקר ב:\nwww.oracle.com/html/services-privacy-policy.html"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 #, fuzzy
@@ -1535,8 +1540,9 @@ msgid  "~Options..."
 msgstr "אפשרויות...‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
+#, fuzzy
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "אני מסכים/ה שאורקל תיצור קשר איתי לגבי דו\"ח זה.‏"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 #, fuzzy
@@ -1594,8 +1600,9 @@ msgid  "~Port"
 msgstr "כניסה"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "הכלי לדיווח תקלות של %PRODUCTNAME זקוק לחיבור אינטרנט כדי לדווח למפתחי התוכנה.\nיש לבדוק אם הארגון שלך משתמש בשרת פרוקסי או חומת אש להגנה על הרשת המקומית.\nאם כן, יש לציין את כתובת שרת הפרוקסי והכניסה (פורט) שלו.‏"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -4013,8 +4020,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "המתאר שונה.\nהאם לשמור את השינויים?‏"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -4022,8 +4030,9 @@ msgid  "Do you want to create a new contour?"
 msgstr "האם ליצור קו מתאר חדש?‏"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
+#, fuzzy
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "קביעת שטח עבודה חדש תגרום\nלמחיקת המתאר הנוכחי.\nהאם אכן להמשיך?‏"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4591,522 +4600,418 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
-#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "יצירת עצם סיבובי תלת־מימדי"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "הכנסת עצמ(ים)‏"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
-#, fuzzy
 msgid  "Number of segments"
 msgstr "מספר המקטעים"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
-#, fuzzy
 msgid  "Object depth"
 msgstr "עומק העצם"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
-#, fuzzy
 msgid  "Focal length"
 msgstr "מרחק מיקוד"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
-#, fuzzy
 msgid  "Camera position"
 msgstr "מיקום מצלמה"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
-#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "סיבוב עצם תלת־מימדי"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
-#, fuzzy
 msgid  "Create extrusion object"
 msgstr "יצירת עצם שיחול"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
-#, fuzzy
 msgid  "Create rotation object"
 msgstr "יצירת עצם סיבובי"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
-#, fuzzy
 msgid  "Split 3D object"
 msgstr "פיצול עצם תלת־מימדי"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
-#, fuzzy
 msgid  "3D Attributes"
 msgstr "תכונות תלת־מימדיות"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "אפקטים תלת־מימדיים"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Geometry"
 msgstr "גיומטריה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Shading"
 msgstr "הצללה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Illumination"
 msgstr "תאורה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Textures"
 msgstr "מרקמים"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Material"
 msgstr "חומר"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Update"
 msgstr "Update"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Assign"
 msgstr "Assign"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to 3D"
 msgstr "Convert to 3D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "Convert to Lathe Object"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "Perspective On/Off"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
-#, fuzzy
 msgid  "Geometry"
 msgstr "גיומטריה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
-#, fuzzy
 msgid  "R~ounded edges"
 msgstr "עיגול קצוות"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
-#, fuzzy
 msgid  "~Scaled depth"
 msgstr "עומק מותאם"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "~Rotation angle"
 msgstr "זווית סיבוב"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr "מעלות"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Depth"
 msgstr "עומק"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
-#, fuzzy
 msgid  "Segments"
 msgstr "מקטעים"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "אופקי"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "אנכי"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
-#, fuzzy
 msgid  "Normals"
 msgstr "ניצבים"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Flat"
 msgstr "שטוח"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Spherical"
 msgstr "Spherical"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Invert Normals"
 msgstr "Invert Normals"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "Double-Sided Illumination"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided"
 msgstr "Double-Sided"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "מצב עבודה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
-#, fuzzy
 msgid  "Flat"
 msgstr "שטוח"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
-#, fuzzy
 msgid  "Phong"
 msgstr "פונג"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
-#, fuzzy
 msgid  "Gouraud"
 msgstr "ג'וראד"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "צללית"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "3D Shadowing On/Off"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
-#, fuzzy
 msgid  "S~urface angle"
 msgstr "זווית שטח"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr "מעלות"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
-#, fuzzy
 msgid  "Camera"
 msgstr "מצלמה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "מרחק"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
-#, fuzzy
 msgid  "~Focal length"
 msgstr "מרחק מיקוד"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Shading"
 msgstr "הצללה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "מקור אור"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 1"
 msgstr "Light Source 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 2"
 msgstr "Light Source 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 3"
 msgstr "Light Source 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 4"
 msgstr "Light Source 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 5"
 msgstr "Light Source 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 6"
 msgstr "Light Source 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 7"
 msgstr "Light Source 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 8"
 msgstr "Light Source 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "אור רקע"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "תאורה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "סוג"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Black & White"
 msgstr "Black & White"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Color"
 msgstr "Color"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "מצב עבודה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Only Texture"
 msgstr "Only Texture"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture and Shading"
 msgstr "Texture and Shading"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "Texture, Shadow and Color"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
-#, fuzzy
 msgid  "~Projection X"
 msgstr "היטל ‏‪X‏"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "Parallel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Circular"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
-#, fuzzy
 msgid  "P~rojection Y"
 msgstr "היטל ‏‪Y‏"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "Parallel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Circular"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
-#, fuzzy
 msgid  "~Filtering"
 msgstr "סינון"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "Filtering On/Off"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
-#, fuzzy
 msgid  "Textures"
 msgstr "מרקמים"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
-#, fuzzy
 msgid  "~Favorites"
 msgstr "מועדפים"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
-#, fuzzy
 msgid  "User-defined"
 msgstr "משתמש מוגדר"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
-#, fuzzy
 msgid  "Metal"
 msgstr "מתכתי"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
-#, fuzzy
 msgid  "Gold"
 msgstr "זהב"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
-#, fuzzy
 msgid  "Chrome"
 msgstr "כרום"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
-#, fuzzy
 msgid  "Plastic"
 msgstr "פלסטיק"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
-#, fuzzy
 msgid  "Wood"
 msgstr "עץ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Object color"
 msgstr "צבע עצם"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
-#, fuzzy
 msgid  "~Illumination color"
 msgstr "צבע התאורה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
-#, fuzzy
 msgid  "Specular"
 msgstr "אפקט מראה"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "צבע"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
-#, fuzzy
 msgid  "I~ntensity"
 msgstr "עוצמת אור"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
-#, fuzzy
 msgid  "Material"
 msgstr "חומר"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
-#, fuzzy
 msgid  "Favorite"
 msgstr "מועדף"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
-#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
-#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
-#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
-#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -5115,445 +5020,358 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
-#, fuzzy
 msgid  "Delete Rows"
 msgstr "מחיקת שורות"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
-#, fuzzy
 msgid  "Save Record"
 msgstr "שמירת רשומות"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "ביטול: הכנסת נתונים"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Column"
 msgstr "הכנסת עמודה"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "תיבת טקסט"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "תיבת סימון"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "תיבה משולבת"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "תיבת רשימה"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "שדה תאריך"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "שדה שעה"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "שדה מספרי"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "שדה מטבע"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "שדה דוגמה"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "שדה מעוצב"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Date and Time Field"
 msgstr "שדה תאריך ושעה"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Replace with"
 msgstr "החלפה ב"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "מחיקת עמודה"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Column"
 msgstr "הסתרת עמודות"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
-#, fuzzy
 msgid  "~More..."
 msgstr "עוד...‏"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~All"
 msgstr "הכל"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Columns"
 msgstr "הצגת עמודות"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Column..."
 msgstr "עמודה...‏"
 
 #: source/form/fmstring.src#RID_ERR_CONTEXT_ADDFORM.String.Text
-#, fuzzy
 msgid  "Error while creating form"
 msgstr "ארעה שגיאה בעת יצירת טופס"
 
 #: source/form/fmstring.src#RID_ERR_FIELDREQUIRED.String.Text
-#, fuzzy
 msgid  "Input required in field '#'. Please enter a value."
 msgstr "נדרש ערך בשדה '#'. נא לציין ערך.‏"
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "הערך כבר קיים.\nנא לבחור שם אחר.‏"
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
-#, fuzzy
 msgid  "Forms"
 msgstr "טפסים"
 
 #: source/form/fmstring.src#RID_STR_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No control selected"
 msgstr " לא נבחר פקד"
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_CONTROL.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "תכונות: ‏"
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_FORM.String.Text
-#, fuzzy
 msgid  "Form Properties"
 msgstr "תכונות טופס"
 
 #: source/form/fmstring.src#RID_STR_FMEXPLORER.String.Text
-#, fuzzy
 msgid  "Form Navigator"
 msgstr "נווט טפסים"
 
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
-#, fuzzy
 msgid  "Form"
 msgstr "טופס"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "טבלה"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.2.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "שאילתה"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.3.String.Text
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/form/fmstring.src#RID_STR_STDFORMNAME.String.Text
-#, fuzzy
 msgid  "Form"
 msgstr "טופס"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden Control"
 msgstr "פקד מוסתר"
 
 #: source/form/fmstring.src#RID_STR_CONTROL.String.Text
-#, fuzzy
 msgid  "Control"
 msgstr "פקד"
 
 #: source/form/fmstring.src#RID_STR_REC_TEXT.String.Text
-#, fuzzy
 msgid  "Record"
 msgstr "רשומה"
 
 #: source/form/fmstring.src#RID_STR_REC_FROM_TEXT.String.Text
-#, fuzzy
 msgid  "of"
 msgstr "מתוך"
 
 #: source/form/fmstring.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "הוספת שדה:‏"
 
 #: source/form/fmstring.src#RID_STR_WRITEERROR.String.Text
-#, fuzzy
 msgid  "Error writing data to database"
 msgstr "ארעה שגיאה בעת כתיבה למסד הנתונים"
 
 #: source/form/fmstring.src#RID_STR_SYNTAXERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in query expression"
 msgstr "שגיאה תחבירית בביטוי השאילתה"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORD.String.Text
-#, fuzzy
 msgid  "You intend to delete 1 record."
 msgstr "הכוונה היא למחוק רשומה אחת.‏"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORDS.String.Text
-#, fuzzy
 msgid  "# records will be deleted."
 msgstr "# הרשומות תמחקנה."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "אחרי לחיצה על 'כן' אין אפשרות לבטל פעולה זו!\nהאם אכן להמשיך?‏"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
-#, fuzzy
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
 msgstr "יש או לבחור משהו מהרשימה, או להקליד משהו מתאים לאחד הכניסות בתפריט.‏"
 
 #: source/form/fmstring.src#RID_STR_GROUPBOX.String.Text
-#, fuzzy
 msgid  "Frame element"
 msgstr "איבר מסגרת"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "ניווט"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATIONBAR.String.Text
-#, fuzzy
 msgid  "Navigation bar"
 msgstr "סרגל ניווט"
 
 #: source/form/fmstring.src#RID_STR_COLUMN.String.Text
-#, fuzzy
 msgid  "Col"
 msgstr "עמודה"
 
 #: source/form/fmstring.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Set property '#'"
 msgstr "קביעת תכונה '#'‏"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert in container"
 msgstr "הכנסה למיכל"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE.String.Text
-#, fuzzy
 msgid  "Delete #"
 msgstr "מחיקה #‏"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE_MULTIPLE.String.Text
-#, fuzzy
 msgid  "Delete # objects"
 msgstr "מחיקת # עצמים"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace a container element"
 msgstr "החלפת איבר מיכל"
 
 #: source/form/fmstring.src#RID_STR_UNDO_DELETE_LOGICAL.String.Text
-#, fuzzy
 msgid  "Delete structure"
 msgstr "מחיקת מבנה"
 
 #: source/form/fmstring.src#RID_STR_UNDO_MODEL_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace Control"
 msgstr "החלפת פקד"
 
 #: source/form/fmstring.src#RID_STR_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "תאריך"
 
 #: source/form/fmstring.src#RID_STR_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "שעה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
-#, fuzzy
 msgid  "Push Button"
 msgstr "כפתור"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
-#, fuzzy
 msgid  "Option Button"
 msgstr "כפתור אפשרויות"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "תיבת סימון"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "שדה תווית"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
-#, fuzzy
 msgid  "Group Box"
 msgstr "תיבת קבוצה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_EDIT.String.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "תיבת טקסט"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "שדה מעוצב"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_LISTBOX.String.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "תיבת רשימה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "תיבה משולבת"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
-#, fuzzy
 msgid  "Image Button"
 msgstr "כפתור תמונה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "בקרת תמונה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
-#, fuzzy
 msgid  "File Selection"
 msgstr "בחירת קובץ"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "שדה תאריך"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "שדה שעה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "שדה מספרי"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "שדה מטבע"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "שדה דוגמה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DBGRID.String.Text
-#, fuzzy
 msgid  "Table Control "
 msgstr "בקרת טבלאות ‏"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SCROLLBAR.String.Text
-#, fuzzy
 msgid  "Scrollbar"
 msgstr "סרגל גלילה"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SPINBUTTON.String.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "כפתור סבסוב"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NAVBAR.String.Text
-#, fuzzy
 msgid  "Navigation Bar"
 msgstr "סרגל ניווט"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "בחירה מרובה"
 
 #: source/form/fmstring.src#RID_STR_NODATACONTROLS.String.Text
-#, fuzzy
 msgid  "No data-related controls in the current form!"
 msgstr "אין פקדים שקשורים לנתונים בטופס הנוכחי!‏"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_DATE.String.Text
-#, fuzzy
 msgid  " (Date)"
 msgstr " (Date)"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_TIME.String.Text
-#, fuzzy
 msgid  " (Time)"
 msgstr " (Time)"
 
 #: source/form/fmstring.src#RID_STR_FILTER_NAVIGATOR.String.Text
-#, fuzzy
 msgid  "Filter navigator"
 msgstr "נווט מסננים"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_FOR.String.Text
-#, fuzzy
 msgid  "Filter for"
 msgstr "מסנן עבור"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_OR.String.Text
-#, fuzzy
 msgid  "Or"
 msgstr "או"
 
 #: source/form/fmstring.src#RID_STR_NOCONTROLS_FOR_EXTERNALDISPLAY.String.Text
-#, fuzzy
 msgid  "Valid bound controls which can be used in the table view do not exist in the current form."
 msgstr "בטופס הנוכחי לא קיימות בקרות התחומים הנחוצים עבור המבט הטבלאי.‏"
 
 #: source/form/fmstring.src#RID_STR_AUTOFIELD.String.Text
-#, fuzzy
 msgid  "<AutoField>"
 msgstr "<שדה אוטומטי>"
 
@@ -5562,72 +5380,58 @@ msgid  "The content of the current form has been modified.\\nDo you want to save
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
-#, fuzzy
 msgid  "LIKE"
 msgstr "LIKE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.2.String.Text
-#, fuzzy
 msgid  "NOT"
 msgstr "NOT"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.3.String.Text
-#, fuzzy
 msgid  "EMPTY"
 msgstr "EMPTY"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.4.String.Text
-#, fuzzy
 msgid  "TRUE"
 msgstr "TRUE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.5.String.Text
-#, fuzzy
 msgid  "FALSE"
 msgstr "FALSE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.6.String.Text
-#, fuzzy
 msgid  "IS"
 msgstr "IS"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.7.String.Text
-#, fuzzy
 msgid  "BETWEEN"
 msgstr "BETWEEN"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.8.String.Text
-#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.9.String.Text
-#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.10.String.Text
-#, fuzzy
 msgid  "Average"
 msgstr "Average"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.11.String.Text
-#, fuzzy
 msgid  "Count"
 msgstr "Count"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.12.String.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "Maximum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.13.String.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "Minimum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.14.String.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "Sum"
 
@@ -5644,22 +5448,18 @@ msgid  "Some"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.18.String.Text
-#, fuzzy
 msgid  "STDDEV_POP"
 msgstr "STDDEV_POP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.19.String.Text
-#, fuzzy
 msgid  "STDDEV_SAMP"
 msgstr "STDDEV_SAMP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.20.String.Text
-#, fuzzy
 msgid  "VAR_SAMP"
 msgstr "VAR_SAMP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.21.String.Text
-#, fuzzy
 msgid  "VAR_POP"
 msgstr "VAR_POP"
 
@@ -5676,77 +5476,62 @@ msgid  "Intersection"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "שגיאה בתחביר‫ SQL‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_VALUE_NO_LIKE.String.Text
-#, fuzzy
 msgid  "The value #1 cannot be used with LIKE."
 msgstr "לא ניתן להשתמש בערך #1 ביחד עם 'כמו'!‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_FIELD_NO_LIKE.String.Text
-#, fuzzy
 msgid  "LIKE cannot be used with this field."
 msgstr "לא ניתן להשתמש ב'כמו' עם שדה זה.‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ACCESS_DAT_NO_VALID.String.Text
-#, fuzzy
 msgid  "The value entered is not a valid date. Please enter a date in a valid format, for example, MM/DD/YY."
 msgstr "הערך שצויין אינו תאריך חוקי. נא לציין תאריך חוקי בצורה חוקית, למשל ‏‪MM/DD/YY‬‏.‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_INT_NO_VALID.String.Text
-#, fuzzy
 msgid  "The field cannot be compared with an integer."
 msgstr "לא ניתן להשוות שדה זה עם מספר שלם.‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE.String.Text
-#, fuzzy
 msgid  "The database does not contain a table named \"#\"."
 msgstr "אין טבלה \"#\" במסד הנתונים.‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "The database does contain neither a table nor a query named \"#\"."
 msgstr "מסד הנתונים אינו מכיל טבלה או שאילתה בשם \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_EXISTS.String.Text
-#, fuzzy
 msgid  "The database already contains a table or view with name \"#\"."
 msgstr "מסד הנתונים כבר מכיל טבלה או תצוגה בשם \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_QUERY_EXISTS.String.Text
-#, fuzzy
 msgid  "The database already contains a query with name \"#\"."
 msgstr "מסד הנתונים כבר מכיל שאילתה בשם \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_COLUMN.String.Text
-#, fuzzy
 msgid  "The column \"#1\" is unknown in the table \"#2\"."
 msgstr "אין עמודה \"#\" בטבלה \"#\"!‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_REAL_NO_VALID.String.Text
-#, fuzzy
 msgid  "The field cannot be compared with a floating point number."
 msgstr "לא ניתן להשוות שדה זה עם מספר בעל נקודה צפה.‏"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_CRIT_NO_COMPARE.String.Text
-#, fuzzy
 msgid  "The entered criterion cannot be compared with this field."
 msgstr "לא ניתן להשוות את הקריטריון שצויין עם שדה זה.‏"
 
 #: source/form/fmstring.src#RID_STR_DATANAVIGATOR.String.Text
-#, fuzzy
 msgid  "Data Navigator"
 msgstr "נווט הנתונים"
 
 #: source/form/fmstring.src#RID_STR_READONLY_VIEW.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr " (read-only)"
 
 #: source/form/fmstring.src#RID_STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "הקובץ כבר קיים. האם להחליפו?‏"
 
@@ -5755,332 +5540,266 @@ msgid  "#object# label"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "חדש"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_FORM.MenuItem.Text
-#, fuzzy
 msgid  "Form"
 msgstr "טופס"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_HIDDEN.MenuItem.Text
-#, fuzzy
 msgid  "Hidden Control"
 msgstr "פקד מוסתר"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_CHANGECONTROLTYPE.MenuItem.Text
-#, fuzzy
 msgid  "Replace with"
 msgstr "החלפה ב"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_TAB_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "Tab Order..."
 msgstr "סדר הטאבים"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "מתן שם אחר"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies"
 msgstr "תכונות"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_OPEN_READONLY.MenuItem.Text
-#, fuzzy
 msgid  "Open in Design Mode"
 msgstr "פתיחה במצב עיצוב"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_AUTOCONTROLFOCUS.MenuItem.Text
-#, fuzzy
 msgid  "Automatic Control Focus"
 msgstr "בקרת מיקוד אוטומטית"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Text Box"
 msgstr "תיבת טקסט"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_BUTTON.MenuItem.Text
-#, fuzzy
 msgid  "~Button"
 msgstr "כפתור"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FIXEDTEXT.MenuItem.Text
-#, fuzzy
 msgid  "La~bel field"
 msgstr "שדה תווית"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_GROUPBOX.MenuItem.Text
-#, fuzzy
 msgid  "G~roup Box"
 msgstr "תיבת קבוצה"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "L~ist Box"
 msgstr "תיבת רשימה"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "~Check Box"
 msgstr "תיבת סימון"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_RADIOBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "~Radio Button"
 msgstr "כפתור רדיו"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Bo~x"
 msgstr "תיבה משולבת"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGEBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "I~mage Button"
 msgstr "כפתור תמונה"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FILECONTROL.MenuItem.Text
-#, fuzzy
 msgid  "~File Selection"
 msgstr "בחירת קובץ"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_DATE.MenuItem.Text
-#, fuzzy
 msgid  "~Date Field"
 msgstr "שדה תאריך"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Tim~e Field"
 msgstr "שדה שעה"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NUMERIC.MenuItem.Text
-#, fuzzy
 msgid  "~Numerical Field"
 msgstr "שדה מספרי"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CURRENCY.MenuItem.Text
-#, fuzzy
 msgid  "C~urrency Field"
 msgstr "שדה מטבע"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_PATTERN.MenuItem.Text
-#, fuzzy
 msgid  "~Pattern Field"
 msgstr "שדה דוגמה"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGECONTROL.MenuItem.Text
-#, fuzzy
 msgid  "Ima~ge Control"
 msgstr "בקרת תמונה"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FORMATTED.MenuItem.Text
-#, fuzzy
 msgid  "Fo~rmatted Field"
 msgstr "שדה מעוצב"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SCROLLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Scroll bar"
 msgstr "פס גלילה"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SPINBUTTON.MenuItem.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "כפתור סבסוב"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NAVIGATIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Navigation Bar"
 msgstr "סרגל ניווט"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.GB_PATH.GroupBox.Text
-#, fuzzy
 msgid  "Path"
 msgstr "נתיב"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.HelpButton.Text
-#, fuzzy
 msgid  "Select form"
 msgstr "בחירת טופס"
 
 #: source/form/fmexpl.src#RID_SVX_FMEXPLORER.DockingWindow.Text
-#, fuzzy
 msgid  "Form Navigator"
 msgstr "נווט טפסים"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "סגנון"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_ALIGNMENT.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "יישור"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_SPACING.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "רווח בין שורות"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "תו"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "גופן"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "אפקטים לגופנים"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "מיקום"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.TabDialog.Text
-#, fuzzy
 msgid  "Paragraph"
 msgstr "פסקה"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "שוליים ורווחים"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "יישור"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "טיפוגרפית מזרח הרחוק"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_TABULATOR.PageItem.Text
-#, fuzzy
 msgid  "Tabs"
 msgstr "טאבים"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "עריכה"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NULL.MenuItem.Text
-#, fuzzy
 msgid  "~Is Null"
 msgstr "ריק"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NOT_NULL.MenuItem.Text
-#, fuzzy
 msgid  "I~s not Null"
 msgstr "לא ריק"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "הוספת פריט"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "הוספת איבר"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "הוספת תכונה"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "עריכה"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "מחיקה"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
-#, fuzzy
 msgid  "~Models"
 msgstr "מודלים"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "הוספה...‏"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "עריכה..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "הסרה"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "מקרה ‏‪(instance)‏"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
-#, fuzzy
 msgid  "Submissions"
 msgstr "הגשות"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
-#, fuzzy
 msgid  "Bindings"
 msgstr "הידוקים ‏‫(bindings)‏"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
-#, fuzzy
 msgid  "~Instances"
 msgstr "מקרים ‏‪(instances)‏"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "הוספה...‏"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "עריכה..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "הסרה"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Details"
 msgstr "הצגת פרטים"
 
@@ -6097,7 +5816,6 @@ msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "האם אכן למחוק את התכונה ‏‪'$ATTRIBUTENAME'‬‏?‏"
 
@@ -6114,713 +5832,574 @@ msgid  "This instance is linked with the form.\\n\\nThe changes you make to this
 msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
 msgstr "השם '%1' אינו חוקי בשפת ה ‏‪XML‬‏. נא לציין שם אחר.‏"
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLPREFIX.ErrorBox.Message
-#, fuzzy
 msgid  "The prefix '%1' is not valid in XML. Please enter a different prefix."
 msgstr "הקידומת '%1' אינה חוקית בשפת ה ‏‪XML‬‏. נא לציין קידומת אחרת.‏"
 
 #: source/form/datanavi.src#RID_ERR_DOUBLE_MODELNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The name '%1' already exists. Please enter a new name."
 msgstr "השם '%1' כבר קיים. נא לציין שם אחר.‏"
 
 #: source/form/datanavi.src#RID_ERR_EMPTY_SUBMISSIONNAME.ErrorBox.Message
-#, fuzzy
 msgid  "The submission must have a name."
 msgstr "ההגשה חייב שם.‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
-#, fuzzy
 msgid  "Item"
 msgstr "פריט"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "שם"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default Value"
 msgstr "ערך ברירת המחדל"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_SETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "הגדרות"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
-#, fuzzy
 msgid  "~Data Type"
 msgstr "טיפוס נתון"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "~Required"
 msgstr "חובה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_RELEVANT.CheckBox.Text
-#, fuzzy
 msgid  "R~elevant"
 msgstr "רלוונטי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
-#, fuzzy
 msgid  "~Constraint"
 msgstr "מגבלה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "Read-~only"
 msgstr "קריאה בלבד"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
-#, fuzzy
 msgid  "Calc~ulate"
 msgstr "לחשב"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
-#, fuzzy
 msgid  "Element"
 msgstr "איבר ‏‪(element)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Attribute"
 msgstr "תכונה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_BINDING.String.Text
-#, fuzzy
 msgid  "Binding"
 msgstr "כריכה ‏‪(binding)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDTEXT_BINDING.String.Text
-#, fuzzy
 msgid  "Binding expression"
 msgstr "ביטוי כריכה ‏‪(binding expression)‏"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "הוספת פריט"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "הוספת איבר"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "הוספת תכונה"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "עריכה"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "מחיקה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
-#, fuzzy
 msgid  "Add Condition"
 msgstr "הוספת תנאי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
-#, fuzzy
 msgid  "~Condition"
 msgstr "תנאי"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
-#, fuzzy
 msgid  "~Result"
 msgstr "תוצאה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.PB_EDIT_NAMESPACES.PushButton.Text
-#, fuzzy
 msgid  "~Edit Namespaces..."
 msgstr "עריכת מרחבי שמות...‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.ModalDialog.Text
-#, fuzzy
 msgid  "Namespaces for Forms"
 msgstr "מרחב שמות לטפסים"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.FT_NAMESPACES.FixedText.Text
-#, fuzzy
 msgid  "~Namespaces"
 msgstr "מרחב שמות"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "הוספה...‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "עריכה..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_DELETE_NAMESPACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_PREFIX.String.Text
-#, fuzzy
 msgid  "Prefix"
 msgstr "קידומת"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.ModalDialog.Text
-#, fuzzy
 msgid  "Add Namespace"
 msgstr "הוספת מרחב שמות"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_PREFIX.FixedText.Text
-#, fuzzy
 msgid  "~Prefix"
 msgstr "קידומת"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Namespace"
 msgstr "עריכת מרחב שמות"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
-#, fuzzy
 msgid  "Add Submission"
 msgstr "הוספת הגשה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
-#, fuzzy
 msgid  "Submission"
 msgstr "הדשה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "שם"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_ACTION.FixedText.Text
-#, fuzzy
 msgid  "~Action"
 msgstr "פעולה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_METHOD.FixedText.Text
-#, fuzzy
 msgid  "~Method"
 msgstr "שגרה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REF.FixedText.Text
-#, fuzzy
 msgid  "Binding e~xpression"
 msgstr "ביטוי כריכה ‏‪(binding)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.PB_SUBMIT_REF.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_BIND.FixedText.Text
-#, fuzzy
 msgid  "~Binding"
 msgstr "כריכה ‏‪(binding)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "החלפה"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_POST.String.Text
-#, fuzzy
 msgid  "Post"
 msgstr "Post"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_PUT.String.Text
-#, fuzzy
 msgid  "Put"
 msgstr "השמת ערך ‏‪(put)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_GET.String.Text
-#, fuzzy
 msgid  "Get"
 msgstr "החזרת ערך ‏‪(get)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_NONE.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ללא"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_INST.String.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "מקרה ‏‪(instance)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_DOC.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "מסמך"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.ModalDialog.Text
-#, fuzzy
 msgid  "Add Model"
 msgstr "הוספת דגם"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FL_INSTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Model"
 msgstr "דגם"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FT_INST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "שם"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.CB_MODIFIES_DOCUMENT.CheckBox.Text
-#, fuzzy
 msgid  "Model data updates change document's modification status"
 msgstr "עדכון מודל הנתונים משנה את מצב שינויי המסמך"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Model"
 msgstr "שינוי שם דגם"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.ModalDialog.Text
-#, fuzzy
 msgid  "Add Instance"
 msgstr "הוספת מקרה ‏‪(instance)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FL_INSTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "מקרה ‏‪(instance)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "שם"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_URL.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.CB_INST_LINKINST.CheckBox.Text
-#, fuzzy
 msgid  "~Link instance"
 msgstr "קישור מקרה ‏‪(instance)‏"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.STR_EDIT_TEXT.String.Text
-#, fuzzy
 msgid  "Edit Instance"
 msgstr "שינוי שם מקרה ‏‪(instance)‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_PARENT.String.Text
-#, fuzzy
 msgid  "Submission: "
 msgstr "הגשה: ‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ID.String.Text
-#, fuzzy
 msgid  "ID: "
 msgstr "קוד מזהה: ‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_BIND.String.Text
-#, fuzzy
 msgid  "Binding: "
 msgstr "כריכה ‏‪(binding)‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REF.String.Text
-#, fuzzy
 msgid  "Reference: "
 msgstr "הפניה: ‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ACTION.String.Text
-#, fuzzy
 msgid  "Action: "
 msgstr "פעולה: ‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_METHOD.String.Text
-#, fuzzy
 msgid  "Method: "
 msgstr "שגרה: ‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace: "
 msgstr "החלפה: ‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ELEMENT.String.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "הוספת איבר"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ELEMENT.String.Text
-#, fuzzy
 msgid  "Edit Element"
 msgstr "עריכת איבר ‏‪(element)‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ELEMENT.String.Text
-#, fuzzy
 msgid  "Delete Element"
 msgstr "מחיקת איבר"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "הוספת תכונה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Edit Attribute"
 msgstr "עריכת תכונה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "Delete Attribute"
 msgstr "מחיקת תכונה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_BINDING.String.Text
-#, fuzzy
 msgid  "Add Binding"
 msgstr "הוספת כריכה ‏‪(binding)‏"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_BINDING.String.Text
-#, fuzzy
 msgid  "Edit Binding"
 msgstr "עריכת כריכה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_BINDING.String.Text
-#, fuzzy
 msgid  "Delete Binding"
 msgstr "מחיקת כריכה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Add Submission"
 msgstr "הוספת הגשה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Edit Submission"
 msgstr "עריכת הגשה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_SUBMISSION.String.Text
-#, fuzzy
 msgid  "Delete Submission"
 msgstr "מחיקת הגשה"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_LINKWARN_BUTTON.String.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "עריכה"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
-#, fuzzy
 msgid  "Gallery"
 msgstr "גלריה"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
-#, fuzzy
 msgid  "Update"
 msgstr "עדכון"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
-#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "לא ניתן לפתוח קובץ זה"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
-#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "שם נושא לא חוקי!‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "האם אכן ברצונך\nלמחוק עצם זה?‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "האם אכן ברצונך\nלמחוק נושא זה?‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
-#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "קובץ שמע ‏‪Wave‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
-#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "צורת קובץ שמע ‏‪AIF‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
-#, fuzzy
 msgid  "AU - Sound File"
 msgstr "קובץ שמע ‏‪AU‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
-#, fuzzy
 msgid  "Graphics filter"
 msgstr "מסנן גרפיקה"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
-#, fuzzy
 msgid  "Length:"
 msgstr "אורך:‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "גודל:‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
-#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "האם למחוק את הקובץ המקושר?‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "לא ניתן לפתוח קובץ זה.\nהאם רצונך לציין נתיב חיפוש אחר?‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
-#, fuzzy
 msgid  "New Theme"
 msgstr "נושא חדש"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "מארגן"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "יש כבר נושא עם השם הזה.\nנא לבחור שם אחר.‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
-#, fuzzy
 msgid  "I~mport..."
 msgstr "יבוא"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
-#, fuzzy
 msgid  "New Theme..."
 msgstr "נושא חדש"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
-#, fuzzy
 msgid  "Assign ID"
 msgstr "השמת זיהוי ‏‪(ID)‏"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "כותרת"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
-#, fuzzy
 msgid  "Path"
 msgstr "נתיב"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
-#, fuzzy
 msgid  "Icon View"
 msgstr "תצוגת צלמים"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
-#, fuzzy
 msgid  "Detailed View"
 msgstr "תצוגה מפורטת"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "עדכון"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "מתן שם אחר"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
-#, fuzzy
 msgid  "Assign ~ID"
 msgstr "השמת מזהה ‏‪(ID)‏"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "מאפיינים...‏"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~הוספה"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "העתקה"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Link"
 msgstr "קישור"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Bac~kground"
 msgstr "רקע"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "תצוגה מקדימה"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "כותרת"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "העתקה"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~הוספה"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "אפקטים תלת־מימדיים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
-#, fuzzy
 msgid  "Animations"
 msgstr "הנפשות"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
-#, fuzzy
 msgid  "Bullets"
 msgstr "תבליטים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
-#, fuzzy
 msgid  "Office"
 msgstr "משרד"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
-#, fuzzy
 msgid  "Flags"
 msgstr "דגלים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLOWCHARTS.String.Text
-#, fuzzy
 msgid  "Flow Charts"
 msgstr "תרשימי זרימה"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
-#, fuzzy
 msgid  "Emoticons"
 msgstr "סמלי הבעה"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
-#, fuzzy
 msgid  "Pictures"
 msgstr "תמונות"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
-#, fuzzy
 msgid  "Backgrounds"
 msgstr "רקעים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
-#, fuzzy
 msgid  "Homepage"
 msgstr "דף בית"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
-#, fuzzy
 msgid  "Interaction"
 msgstr "אינטראקטיבי"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
-#, fuzzy
 msgid  "Maps"
 msgstr "מפות"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
-#, fuzzy
 msgid  "People"
 msgstr "אנשים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
-#, fuzzy
 msgid  "Surfaces"
 msgstr "משטחים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
-#, fuzzy
 msgid  "Rulers"
 msgstr "סרגלים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
-#, fuzzy
 msgid  "Computers"
 msgstr "מחשבים"
 
@@ -6845,62 +6424,50 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
-#, fuzzy
 msgid  "Sounds"
 msgstr "קולות"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
-#, fuzzy
 msgid  "Symbols"
 msgstr "סמלים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
-#, fuzzy
 msgid  "My Theme"
 msgstr "הנושא שלי"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
-#, fuzzy
 msgid  "Arrows"
 msgstr "חיצים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
-#, fuzzy
 msgid  "Balloons"
 msgstr "בלונים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
-#, fuzzy
 msgid  "Keyboard"
 msgstr "מקלדת"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "שעה"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "מצגת"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "לוח שנה"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "ניווט"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
-#, fuzzy
 msgid  "Communication"
 msgstr "תקשורת"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
-#, fuzzy
 msgid  "Finances"
 msgstr "כספים"
 
@@ -6909,52 +6476,42 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
-#, fuzzy
 msgid  "Climate"
 msgstr "אקלים"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
-#, fuzzy
 msgid  "School & University"
 msgstr "בית ספר ואוניברסיטה"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
-#, fuzzy
 msgid  "Problem Solving"
 msgstr "פתרון בעיות"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SCREENBEANS.String.Text
-#, fuzzy
 msgid  "Screen Beans"
 msgstr "דמויות צל ‏‪(Screen Beans)‏"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "ארעה שגיאת ‏‪$(ERR)‬‏ בהפעלת מילון המילים הנרדפות.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "ארעה שגיאת ‏‪$(ERR)‬‏ בבדיקת האיות.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "ארעה שגיאת ‏‪$(ERR)‬‏ במיקוף.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "ארעה שגיאת ‏‪$(ERR)‬‏ ביצירת מילון.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "ארעה שגיאת ‏‪$(ERR)‬‏ בהגדרת מאפיין רקע.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "ארעה שגיאת $(ERR) בטעינת הגרפיקה."
 
@@ -6967,87 +6524,70 @@ msgid  "$(ARG1) is not supported by the spellcheck function or is not presently 
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "בודק האיות אינו זמין.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "מיקוף אינו זמין.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "לא ניתן לקרוא את המילון המיוחד ‏‪$(ARG1)‬‏.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "לא ניתן ליצור את המילון המיוחד ‏‪$(ARG1)‬‏.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "לא ניתן לאתר את עצם הגרפי ‏‪$(ARG1)‬‏.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "לא ניתן לטעון עצם גרפי שקישורו נותק"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "לא נקבעה שפה עבור המונח שנבחר"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "רובד הטפסים לא נטען כי לא ניתן להפעיל את שירותי הקלט/פלט הנדרשים לו ‏‪(stardiv.uno.io.*)‬‏.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "רובד הטפסים לא נכתב כי לא ניתן להפעיל את שירותי הקלט/פלט הנדרשים לו ‏‪(stardiv.uno.io.*)‬‏.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "ארעה שגיאה בעת קריאת פקדי הטופס ולכן רובד הטפסים לא נטען.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "ארעה שגיאה בעת כתיבת פקדי הטופס ולכן רובד הטפסים לא נשמר.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
-#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "ארעה שגיאה בעת קריאת התבליטים. לא כל התבליטים נטענו.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "שינויים לקוד הבייסיק אינם נשמרים. במקום זה, קוד המאקרו ה ‏‪VBA‬‏ המקורי נשמר.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "קוד הבייסיק ה ‏‪VBA‬‏ המקורי לא יישמר בעת שמירת המסמך.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "הסיסמה אינה נכונה. לא ניתן לפתוח את המסמך.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "שיטת ההצפנה של מסמך זה אינה נתמכת. רק הצפנה סיסמתית תואמת מיקרוסופט אופיס 97/2000 נתמכת.‏"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "הטענת מסמכי פוורפויינט מוצפני סיסמה אינה נתמכת.‏"
 
@@ -7068,12 +6608,10 @@ msgid  "Tab stops"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character"
 msgstr "תו"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONT.ItemList.item
-#, fuzzy
 msgid  "Font"
 msgstr "גופן"
 
@@ -7106,7 +6644,6 @@ msgid  "Underline"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Font size"
 msgstr "גודל גופן"
 
@@ -7115,7 +6652,6 @@ msgid  "Rel. Font size"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
-#, fuzzy
 msgid  "Font color"
 msgstr "צבע גופן"
 
@@ -7124,22 +6660,18 @@ msgid  "Kerning"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CASEMAP.ItemList.item
-#, fuzzy
 msgid  "Effects"
 msgstr "אפקטים"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language"
 msgstr "שפה"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ESCAPEMENT.ItemList.item
-#, fuzzy
 msgid  "Position"
 msgstr "מיקום"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "הבהוב"
 
@@ -7152,12 +6684,10 @@ msgid  "Overline"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA.ItemList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "פסקה"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ADJUST.ItemList.item
-#, fuzzy
 msgid  "Alignment"
 msgstr "יישור"
 
@@ -7170,12 +6700,10 @@ msgid  "Page Break"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HYPHENZONE.ItemList.item
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "מיקוף"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SPLIT.ItemList.item
-#, fuzzy
 msgid  "Do not split paragraph"
 msgstr "לא לפצל פסקה"
 
@@ -7204,12 +6732,10 @@ msgid  "Spacing"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PAGE.ItemList.item
-#, fuzzy
 msgid  "Page"
 msgstr "עמוד"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
-#, fuzzy
 msgid  "Page Style"
 msgstr "סגנון עמוד"
 
@@ -7218,7 +6744,6 @@ msgid  "Keep with next paragraph"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_FLASH.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "הבהוב"
 
@@ -7227,17 +6752,14 @@ msgid  "Register-true"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character background"
 msgstr "רקע תו"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
-#, fuzzy
 msgid  "Asian font"
 msgstr "גופן אסיאתי"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Size of Asian font"
 msgstr "גודל גופן אסיאתי"
 
@@ -7633,47 +7155,38 @@ msgid  "Character background"
 msgstr "רקע תו"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
-#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "אין אפשרות לבצע את הפעולה. מודול ה ‏‪%PRODUCTNAME‬‏ הנדרש לפעולה זו אינו מותקן.‏"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_ERROR.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "שגיאה"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_WARNING.String.Text
-#, fuzzy
 msgid  "Warning"
 msgstr "אזהרה"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_LOADTEMPLATE.String.Text
-#, fuzzy
 msgid  "$(ERR) loading the template $(ARG1)"
 msgstr "$(ERR) בעת טעינת התבנית $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEDOC.String.Text
-#, fuzzy
 msgid  "$(ERR) saving the document $(ARG1)"
 msgstr "$(ERR) בעת שמירת המסמך $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEASDOC.String.Text
-#, fuzzy
 msgid  "$(ERR) saving the document $(ARG1)"
 msgstr "$(ERR) בעת שמירת המסמך $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_DOCINFO.String.Text
-#, fuzzy
 msgid  "$(ERR) displaying doc. information for document $(ARG1)"
 msgstr "$(ERR) בעת הצגת מידע אודות המסמך $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_DOCTEMPLATE.String.Text
-#, fuzzy
 msgid  "$(ERR) writing document $(ARG1) as template"
 msgstr "$(ERR) בעת כתיבת המסמך $(ARG1) כתבנית"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_MOVEORCOPYCONTENTS.String.Text
-#, fuzzy
 msgid  "$(ERR) copying or moving document contents"
 msgstr "$(ERR) בעת העתקת או גזירת תוכן המסמך"
 
@@ -7682,17 +7195,14 @@ msgid  "$(ERR) starting the Document Manager"
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_OPENDOC.String.Text
-#, fuzzy
 msgid  "$(ERR) loading document $(ARG1)"
 msgstr "$(ERR) בעת טעינת המסמך $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_NEWDOCDIRECT.String.Text
-#, fuzzy
 msgid  "$(ERR) creating a new document"
 msgstr "$(ERR) בעת יצירת מסמך חדש"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_NEWDOC.String.Text
-#, fuzzy
 msgid  "$(ERR) creating a new document"
 msgstr "$(ERR) בעת יצירת מסמך חדש"
 
@@ -7841,8 +7351,9 @@ msgid  "The specified device is invalid."
 msgstr "ההתקן המצויין אינו זמין."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
+#, fuzzy
 msgid  "The object cannot be accessed\\ndue to insufficient user rights."
-msgstr ""
+msgstr "לא ניתן לגשת לאובייקט\nעקב הרשאות בלתי מספיקות."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
 msgid  "Sharing violation while accessing the object."
@@ -8170,52 +7681,42 @@ msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactiv
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
-#, fuzzy
 msgid  "INSRT"
 msgstr "INSRT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
-#, fuzzy
 msgid  "OVER"
 msgstr "OVER"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
-#, fuzzy
 msgid  "STD"
 msgstr "STD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
-#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
-#, fuzzy
 msgid  "ADD"
 msgstr "ADD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
-#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "חתימה ספרתית: החתימה תואמת את המסמך.‏"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "חתימה ספרתית: החתימה תואמת המסמך אך לא ניתן לאמת את אישור החתימה.‏"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "חתימה ספרתית: החתימה אינה תואמת את המסמך. קיים חשש של זיוף במסמך.‏"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "חתימה ספרתית: אין חתימה למסמך.‏"
 
@@ -8224,62 +7725,50 @@ msgid  "Digital Signature: The document signature and the certificate are OK, bu
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
-#, fuzzy
 msgid  "Optimal"
 msgstr "מיטבי"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
-#, fuzzy
 msgid  "Page Width"
 msgstr "רוחב העמוד"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Entire Page"
 msgstr "עמוד שלם"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
-#, fuzzy
 msgid  "Average"
 msgstr "ממוצע"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
-#, fuzzy
 msgid  "CountA"
 msgstr "מונה א'‏"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
-#, fuzzy
 msgid  "Count"
 msgstr "ספירה"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "מקסימום"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "מינימום"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "סכום"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
-#, fuzzy
 msgid  "None"
 msgstr "ללא"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
-#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "חתימות ספרתיות...‏"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
-#, fuzzy
 msgid  "draw object"
 msgstr "עצם ציור"
 
@@ -11261,62 +10750,50 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
-#, fuzzy
 msgid  "Table Design Styles"
 msgstr "סגנונות עיצוב טבלה"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "No Fill"
 msgstr "ללא מילוי"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
-#, fuzzy
 msgid  "Pattern"
 msgstr "דוגמה"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "גבולות"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
-#, fuzzy
 msgid  "Border Style"
 msgstr "סגנון גבול"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
-#, fuzzy
 msgid  "Border Color"
 msgstr "צבע גבול"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
-#, fuzzy
 msgid  "Highlighting"
 msgstr "הדגשה"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "רקע"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "אוטומטית"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
-#, fuzzy
 msgid  "Pages"
 msgstr "עמודים"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
-#, fuzzy
 msgid  "Clear formatting"
 msgstr "עיצוב שקוף"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
-#, fuzzy
 msgid  "More..."
 msgstr "עוד...‏"
 
@@ -11325,282 +10802,226 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "כיוון הפלטה"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "תשקופת ‏‪(perspective)‏"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
-#, fuzzy
 msgid  "P~arallel"
 msgstr "מקבילי"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
-#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "הפלטה לכיוון צפון מערב"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
-#, fuzzy
 msgid  "Extrusion North"
 msgstr "הפלטה לכיוון צפון"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
-#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "הפלטה לכיוון צפון מזרח"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
-#, fuzzy
 msgid  "Extrusion West"
 msgstr "הפלטה לכיוון מערב"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
-#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "הפלטה לאחור"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
-#, fuzzy
 msgid  "Extrusion East"
 msgstr "הפלטה לכיוון מזרח"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
-#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "הפלטה לכיוון דרום מערב"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
-#, fuzzy
 msgid  "Extrusion South"
 msgstr "הפלטה לכיוון דרום"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
-#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "הפלטה לכיוון דרום מזרח"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "עומק ההפלטה"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "התאמה...‏"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
-#, fuzzy
 msgid  "~Infinity"
 msgstr "אין סופי"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "תאורת ההפלטה"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
-#, fuzzy
 msgid  "~Bright"
 msgstr "זוהר"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "רגיל"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
-#, fuzzy
 msgid  "~Dim"
 msgstr "עמום"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "פני משטח ההפלטה"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
-#, fuzzy
 msgid  "~Wire Frame"
 msgstr "מסגרת תיל"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
-#, fuzzy
 msgid  "~Matt"
 msgstr "מאט"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
-#, fuzzy
 msgid  "~Plastic"
 msgstr "פלאסטיקה"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
-#, fuzzy
 msgid  "Me~tal"
 msgstr "מתכתי"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "עומק ההפלטה"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "ערך"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Extrusion Color"
 msgstr "צבע ההפלטה"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0.String.Text
-#, fuzzy
 msgid  "~0 cm"
 msgstr "‏0 ס\"מ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1.String.Text
-#, fuzzy
 msgid  "~1 cm"
 msgstr "‏1 ס\"מ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2.String.Text
-#, fuzzy
 msgid  "~2.5 cm"
 msgstr "‏2.5 ס\"מ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3.String.Text
-#, fuzzy
 msgid  "~5 cm"
 msgstr "‏5 ס\"מ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
-#, fuzzy
 msgid  "10 ~cm"
 msgstr "‏10 ס\"מ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
-#, fuzzy
 msgid  "0 inch"
 msgstr "‏0 אינצ'‏"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
-#, fuzzy
 msgid  "0.~5 inch"
 msgstr "‏0.5 אינצ'‏"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
-#, fuzzy
 msgid  "~1 inch"
 msgstr "‏1 אינצ'‏"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
-#, fuzzy
 msgid  "~2 inch"
 msgstr "‏2 אינצ'‏"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
-#, fuzzy
 msgid  "~4 inch"
 msgstr "‏4 אינצ'‏"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "גלריית ה'עבודת גופנים'‏"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
-#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "בחירת סגנון יצירות גופנים:"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
-#, fuzzy
 msgid  "Click to edit text"
 msgstr "יש לבצע לחיצת עכבר כדי לערוך את הטקסט"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "יישור יצירות גופנים"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
-#, fuzzy
 msgid  "~Left Align"
 msgstr "יישור לשמאל"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "מרכז"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
-#, fuzzy
 msgid  "~Right Align"
 msgstr "יישור לימין"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
-#, fuzzy
 msgid  "~Word Justify"
 msgstr "יישור מילים"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
-#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "יישור על ידי מתיחה"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "ריווח תווים ב'עבודת גופנים'‏"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
-#, fuzzy
 msgid  "~Very Tight"
 msgstr "הדוק מאוד"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
-#, fuzzy
 msgid  "~Tight"
 msgstr "הדוק"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "רגיל"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
-#, fuzzy
 msgid  "~Loose"
 msgstr "רפוי"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
-#, fuzzy
 msgid  "Very ~Loose"
 msgstr "רפוי מאוד"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "התאמה...‏"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_KERN_PAIRS.String.Text
-#, fuzzy
 msgid  "~Kern Character Pairs"
 msgstr "הצמדת זוגות אותיות"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "ריווח תווים ב'עבודת גופנים'‏"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "ערך"
 
@@ -11609,57 +11030,46 @@ msgid  "Find"
 msgstr ""
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
-#, fuzzy
 msgid  "Filters"
 msgstr "מסננים"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics Mode"
 msgstr "מצב גרפי"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "אדום"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "ירוק"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "כחול"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "בהירות"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "ניגודיות"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "גמה"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "שקיפות"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "קיצוץ"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "צבעים"
 
@@ -11668,112 +11078,90 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "ביטול ‏‪$(ARG1)‬‏ פעולות"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "ביטול ‏‪$(ARG1)‬‏ פעולות"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "ביצוע שנית של: ‏‪$(ARG1)‬‏ "
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "ביצוע שנית של: ‏‪$(ARG1)‬‏ "
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
-#, fuzzy
 msgid  "Extrusion"
 msgstr "הפלטה"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
-#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "החלת הפלטה מודלק/כבוי"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
-#, fuzzy
 msgid  "Tilt Down"
 msgstr "נטוי כלפי מטה"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
-#, fuzzy
 msgid  "Tilt Up"
 msgstr "נטוי כלפי מעלה"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
-#, fuzzy
 msgid  "Tilt Left"
 msgstr "נטוי לשמאל"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
-#, fuzzy
 msgid  "Tilt Right"
 msgstr "נטוי לימין"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
-#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "שינוי עומק ההפלטה"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
-#, fuzzy
 msgid  "Change Orientation"
 msgstr "שינוי כיווניות"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
-#, fuzzy
 msgid  "Change Projection Type"
 msgstr "שינוי סוג הטל"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
-#, fuzzy
 msgid  "Change Lighting"
 msgstr "שינוי תאורה"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
-#, fuzzy
 msgid  "Change Brightness"
 msgstr "שינוי זהירה"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
-#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "שינוי פני משטח ההפלטה"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "שינוי צבע ההפלטה"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
-#, fuzzy
 msgid  "Fontwork"
 msgstr "יצירות גופנים"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "יישום צורת יצירות גופנים"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "יישום 'גובה תו אחיד' לעבודת גופנים"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "יישום יישור יצירות גופנים"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "יישום ריווח תווים יצירות גופנים"
 

@@ -57,7 +57,7 @@ msgstr "উপাত্ত উৎ‍সের শিরোনাম"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME আপনাকে আপনার সিস্টেমে ইতোমধ্যে বিদ্যমান ঠিকানা উপাত্তে প্রবেশ করতে দেয়। এটা সম্পন্ন করতে, %PRODUCTNAME এর উপাত্ত উৎস এমন স্থানে তৈরি হবে যেখানে আপনার ঠিকানা উপাত্ত সারণিবদ্ধ আকারে সহজলভ্য।\nএই উইজার্ডটি আপনাকে উপাত্ত উৎস তৈরি করতে সহায়তা করে।"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "অন্যান্য বহিঃস্থ উপাত্ত উৎ
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "নতুন উপাত্ত উৎসটি বিন্যাস করতে, অতিরিক্ত তথ্য প্রয়োজন।\nনিম্নের বোতাম ক্লিক করে অন্য এমন সংলাপ খুলুন যেখানে আপনি পরে প্রয়োজনীয় তথ্য প্রবেশ করাতে পারবেন।"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "বিন্যাসনসমূহ"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "উপাত্ত উৎসের সংযোগ প্রতিষ্ঠা করা যায়নি।\nআপনি অগ্রসর হওয়ার পূর্বে, অনুগ্রহ করে প্রতিষ্ঠিত বিন্যাসন পরীক্ষা করুন, বা (পূর্ববর্তী পৃষ্ঠায়) অন্য ঠিকানা উপাত্ত উৎসের ধরন পছন্দ করুন।"
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "আপনি এমন বহিঃস্থ উপাত্ত উৎস পছন্দ করেছেন যা একাধিক ঠিকানা বই ধারণ করছে।\nঅনুগ্রহ করে এমন একটি নির্বাচন করুণ যা নিয়ে আপনি মূলত কাজ করতে চান:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "আপনার খসড়ায় ঠিকানা উপাত্ত সংযুক্ত করতে, %PRODUCTNAME এর জানা উচিত যে কোন ক্ষেত্র কোন উপাত্ত ধারণ করে।\n\nউদাহরণ স্বরুপ, আপনাকে ই-মেইল ঠিকানাগুলো \"ইমেইল\", বা \"ই-মেইল' বা \"ইএম\" নামের ক্ষেত্রে সংরক্ষণ করতে হতে পারে - বা সম্পূর্ণ ভিন্ন কিছু।\n\nনিম্নের বোতাম ক্লিক করে অন্য এমন সংলাপ খুলুন যেখানে আপনি আপনার উপাত্ত উৎসের জন্য বিন্যাসন প্রবেশ করাতে পারবেন।"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "ক্ষেত্র বরাদ্দকরণ"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "আপনার ঠিকানা উপাত্ত %PRODUCTNAME এ সংহত করতে ঐগুলো প্রয়োজনীয় তথ্য ছিল।\n\nএখন, আপনি যে নামের অধীনে উপাত্ত উৎস %PRODUCTNAME এ নিবন্ধন করতে চান তা প্রবেশ করান।"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "ঠিকানার উপাত্ত - ক্ষেত্র বর�
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "এই মুহূর্তে কোনো ক্ষেত্র বরাদ্দ করা হয়নি।\nআপনি হয় এখন ক্ষেত্রসমূহ বরাদ্দ করতে পারেন বা পরবর্তীতে প্রথমে পছন্দ করার মাধ্যমেও করতে পারেন:\n\"ফাইল - খসড়া - ঠিকানা বইয়ের উৎস...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "উপাত্ত উৎস"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "নিম্নের স্তম্ভ নামসমূহ বরাদ্দ করা হয়নি:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "নিয়ন্ত্রণ"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "ডান পার্শ্বে, আপনি ফর্মের উপাত্ত উৎস হতে সব সারণী দেখছেন।\n\nএমন সারণী নির্বাচন করুন যার উপাত্ত তালিকাটির বিষয়বস্তুর জন্য ভিত্তি হিসেবে ব্যবহৃত হবে। "
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "উপাত্ত"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "বর্তমানে, স্বত্বাধীন ফর্মটি, নিয়ন্ত্রণটি উপাত্ত উৎসে আবদ্ধ নয় (বা সম্পূর্ণভাবে নয়)।\n\nঅনুগ্রহ করে একটি উপাত্ত উৎস এবং সারণী পছন্দ করুন।\n\n\nঅনুগ্রহ করে নোট রাখুন যে এই পৃষ্ঠাটির উপর তৈরি বিন্যাসনসমূহ পৃষ্ঠাটি ত্যাগ করা মাত্রই কার্যকর হবে।"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -825,8 +825,9 @@ msgid  "Forms"
 msgstr "ফর্মসমূহ"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "আপনি কি মডেল হতে '#type#' উপাত্ত ধরনটি মুছে ফেলতে চান?\nঅনুগ্রহ করে নোট রাখুন যে এটি এই উপাত্ত ধরনে আবদ্ধ সকল নিয়ন্ত্রণকে প্রভাবিত করবে।"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 #, fuzzy
@@ -929,32 +930,26 @@ msgid  "Table Control "
 msgstr "সারণী নিয়ন্ত্রণ"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
-#, fuzzy
 msgid  "Link fields"
 msgstr "সংযোগ ক্ষেত্রগুলো"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr "উপ ফর্মসমূহ প্রধান ফর্মের বর্তমান রেকর্ড সম্পর্কে বিস্তারিত উপাত্ত প্রদর্শন করতে ব্যবহৃত হতে পারে। এটা সম্পন্ন করতে, আপনি উপ ফর্মের কোন স্তম্ভ প্রধান ফর্মের কোন স্তম্ভের সাথে মিলে তা সুনির্দিষ্ট করতে পারেন।"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
-#, fuzzy
 msgid  "Suggest"
 msgstr "প্রস্তাব করুন"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
-#, fuzzy
 msgid  "Sub Form"
 msgstr "উপ ফর্ম"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
-#, fuzzy
 msgid  "Master Form"
 msgstr "প্রধান ফর্ম"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
-#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
 msgstr "'#' এর স্তম্ভসমূহ উদ্ধার করা যায়নি।"
 
@@ -999,22 +994,18 @@ msgid  "Text"
 msgstr "পাঠ"
 
 #: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
-#, fuzzy
 msgid  "Edit mask"
 msgstr "মাক্স সম্পাদন করুন"
 
 #: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
-#, fuzzy
 msgid  "Literal mask"
 msgstr "আক্ষরিক মাক্স"
 
 #: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
-#, fuzzy
 msgid  "Read-only"
 msgstr "শুধুমাত্র-পাঠযোগ্য"
 
 #: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
-#, fuzzy
 msgid  "Enabled"
 msgstr "সক্রিয়"
 
@@ -1023,32 +1014,26 @@ msgid  "Visible"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
-#, fuzzy
 msgid  "AutoFill"
 msgstr "AutoFill"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
-#, fuzzy
 msgid  "Line count"
 msgstr "লাইন গণনা করুন"
 
 #: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
-#, fuzzy
 msgid  "Max. text length"
 msgstr "সর্বোচ্চ পাঠ দৈর্ঘ্য"
 
 #: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "ঘূর্ণন বোতাম"
 
 #: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
-#, fuzzy
 msgid  "Strict format"
 msgstr "সুনির্দিষ্ট বিন্যাস"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
-#, fuzzy
 msgid  "Thousands separator"
 msgstr "হাজারের বিভাজক"
 
@@ -1057,187 +1042,150 @@ msgid  "Printable"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "ইউআরএল"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "ফ্রেম"
 
 #: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
-#, fuzzy
 msgid  "Help text"
 msgstr "সহায়ক পাঠ"
 
 #: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
-#, fuzzy
 msgid  "Help URL"
 msgstr "সহায়ক ইউআরএল"
 
 #: source/propctrlr/formres.src#RID_STR_TAG.String.Text
-#, fuzzy
 msgid  "Additional information"
 msgstr "অতিরিক্ত তথ্য"
 
 #: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
-#, fuzzy
 msgid  "Password character"
 msgstr "গুপ্ত-সংকেত বর্ণচিহ্ন "
 
 #: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
-#, fuzzy
 msgid  "Tristate"
 msgstr "ত্রিঅবস্থা"
 
 #: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
-#, fuzzy
 msgid  "Empty string is NULL"
 msgstr "ফাঁকা স্ট্রিং NULL"
 
 #: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
-#, fuzzy
 msgid  "Decimal accuracy"
 msgstr "দশমিক যথার্থতা"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "গ্রাফিক্স"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
-#, fuzzy
 msgid  "Default selection"
 msgstr "পূর্বনির্ধারিত নির্বাচন"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
-#, fuzzy
 msgid  "Default button"
 msgstr "পূর্বনির্ধারিত বোতাম"
 
 #: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "লেবেল ক্ষেত্র"
 
 #: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
-#, fuzzy
 msgid  "Label"
 msgstr "লেবেল"
 
 #: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "প্রান্তিককরণ"
 
 #: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "উলম্ব প্রান্তিককরণ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "উপরে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "মধ্যে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "নীচে"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
-#, fuzzy
 msgid  "Graphics alignment"
 msgstr "গ্রাফিক্স প্রান্তিককরণ"
 
 #: source/propctrlr/formres.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ফন্ট"
 
 #: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "প্রেক্ষাপট রং"
 
 #: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
-#, fuzzy
 msgid  "Border"
 msgstr "সীমা"
 
 #: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
-#, fuzzy
 msgid  "Icon size"
 msgstr "আইকনের আকার"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Small"
 msgstr "ছোট"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Large"
 msgstr "বড়"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "অবস্থিতি"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "পরিক্রমন"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
-#, fuzzy
 msgid  "Acting on a record"
 msgstr "রেকর্ডে কার্যকরী"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
-#, fuzzy
 msgid  "Filtering / Sorting"
 msgstr "পরিশ্রত করছে / সর্ট করছে"
 
 #: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
-#, fuzzy
 msgid  "Horizontal scroll bar"
 msgstr "অনুভূমিক স্ক্রল বার"
 
 #: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
-#, fuzzy
 msgid  "Vertical scroll bar"
 msgstr "উলম্ব স্ক্রল বার"
 
 #: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
-#, fuzzy
 msgid  "Word break"
 msgstr "শব্দ বিরতি"
 
 #: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
-#, fuzzy
 msgid  "Multiline input"
 msgstr "বহুবিধ-লাইন ইনপুট "
 
 #: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "বহুবিধ-নির্বাচন"
 
 #: source/propctrlr/formres.src#RID_STR_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "নাম"
 
 #: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
-#, fuzzy
 msgid  "Tab order"
 msgstr "ট্যাব ক্রম"
 
@@ -1246,577 +1194,462 @@ msgid  "Mouse wheel scroll"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "পরিশ্রুতক"
 
 #: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
-#, fuzzy
 msgid  "Sort"
 msgstr "সাজান"
 
 #: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
-#, fuzzy
 msgid  "Record marker"
 msgstr "রেকর্ড চিহ্নিতকারী"
 
 #: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
-#, fuzzy
 msgid  "Filter proposal"
 msgstr "পরিশ্রুতক প্রস্তাব"
 
 #: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation bar"
 msgstr "পরিক্রমণ বার"
 
 #: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
-#, fuzzy
 msgid  "Cycle"
 msgstr "চক্র "
 
 #: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
-#, fuzzy
 msgid  "Tabstop"
 msgstr "টেব-বন্ধ"
 
 #: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "উপাত্ত ক্ষেত্র"
 
 #: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
-#, fuzzy
 msgid  "Dropdown"
 msgstr "নিম্ন-প্রসারণ"
 
 #: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
-#, fuzzy
 msgid  "Bound field"
 msgstr "আবদ্ধ ক্ষেত্র"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
-#, fuzzy
 msgid  "List content"
 msgstr "বিষয়বস্তুর তালিকা করুন"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Type of list contents"
 msgstr "তালিকার বিষয়বস্তুর ধরন"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
-#, fuzzy
 msgid  "Content"
 msgstr "বিষয়বস্তু"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Content type"
 msgstr "বিষয়বস্তুর ধরন"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
-#, fuzzy
 msgid  "Allow additions"
 msgstr "সংযোজনে অনুমোদন দিন"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
-#, fuzzy
 msgid  "Allow deletions"
 msgstr "বিয়োজনের অনুমতি দিন"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
-#, fuzzy
 msgid  "Allow modifications"
 msgstr "পরিবর্তনে অনুমতি দিন"
 
 #: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
-#, fuzzy
 msgid  "Add data only"
 msgstr "শুধুমাত্র উপাত্ত সংযোজন করুন"
 
 #: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "উপাত্ত উৎ‍স "
 
 #: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "প্রধান ক্ষেত্রগুলো সংযোগ করুন"
 
 #: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "অধীনস্থ ক্ষেত্রগুলো সংযোগ করুন"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
-#, fuzzy
 msgid  "Value min."
 msgstr "নূন্যতম সংখ্যা।"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
-#, fuzzy
 msgid  "Value max."
 msgstr "সর্বাধিক সংখ্যা।"
 
 #: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
-#, fuzzy
 msgid  "Incr./decrement value"
 msgstr "মান বৃদ্ধি/হ্রাস করুন"
 
 #: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
-#, fuzzy
 msgid  "Currency symbol"
 msgstr "মুদ্রা চিহ্ন "
 
 #: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
-#, fuzzy
 msgid  "Date min."
 msgstr "নূন্যতম তারিখ।"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
-#, fuzzy
 msgid  "Date max."
 msgstr "সর্বাধিক তারিখ।"
 
 #: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
-#, fuzzy
 msgid  "Date format"
 msgstr "তারিখ বিন্যাস"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "নির্বাচন"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
-#, fuzzy
 msgid  "Time min."
 msgstr "সর্বনিম্ন সময়।"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
-#, fuzzy
 msgid  "Time max."
 msgstr "সর্বাধিক সময়।"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
-#, fuzzy
 msgid  "Time format"
 msgstr "সময় বিন্যাস"
 
 #: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
-#, fuzzy
 msgid  "Prefix symbol"
 msgstr "উপসর্গ চিহ্ন"
 
 #: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "মান"
 
 #: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "বিন্যাসকরণ"
 
 #: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
-#, fuzzy
 msgid  "Class ID"
 msgstr "শ্রেনী আইডি"
 
 #: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "উচ্চতা "
 
 #: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "প্রস্থ "
 
 #: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
-#, fuzzy
 msgid  "List index"
 msgstr "তালিকা সূচিপত্র "
 
 #: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
-#, fuzzy
 msgid  "Row height"
 msgstr "সারির উচ্চতা"
 
 #: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill color"
 msgstr "রং পূরণ করুন"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "লাইন রং"
 
 #: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (on)"
 msgstr "তথ্যসম্পর্ক মান (চালু)"
 
 #: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (off)"
 msgstr "তথ্যসম্পর্ক মান (বন্ধ)"
 
 #: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
-#, fuzzy
 msgid  "List entries"
 msgstr "তালিকার ভুক্তিসমূহ"
 
 #: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
-#, fuzzy
 msgid  "Action"
 msgstr "কার্য"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "ইউআরএল"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
-#, fuzzy
 msgid  "Type of submission"
 msgstr "জমার ধরন"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
-#, fuzzy
 msgid  "Default status"
 msgstr "পূর্বনির্ধারিত অবস্থা"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
-#, fuzzy
 msgid  "Submission encoding"
 msgstr "জমা সঙ্কেতায়ন করছে"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
-#, fuzzy
 msgid  "Default value"
 msgstr "পূর্বনির্ধারিত মান"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
-#, fuzzy
 msgid  "Default text"
 msgstr "পূর্বনির্ধারিত পাঠ"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
-#, fuzzy
 msgid  "Default date"
 msgstr "পূর্বনির্ধারিত তারিখ"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
-#, fuzzy
 msgid  "Default time"
 msgstr "পূর্বনির্ধারিত সময়"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "ফ্রেম"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
-#, fuzzy
 msgid  "Without frame"
 msgstr "ফ্রেম ব্যতিত"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
-#, fuzzy
 msgid  "3D look"
 msgstr "ত্রিমাত্রিক অবয়ব"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
-#, fuzzy
 msgid  "Flat"
 msgstr "সমতল"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Valuelist"
 msgstr "মান-তালিকা"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "সারণী"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "জিজ্ঞাসা"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
-#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
-#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql [মূল]"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
-#, fuzzy
 msgid  "Tablefields"
 msgstr "সারণী-ক্ষেত্রসমূহ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "বাম"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "কেন্দ্র"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "ডান"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "একটিও না"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
-#, fuzzy
 msgid  "Submit form"
 msgstr "ফর্ম জমা দিন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
-#, fuzzy
 msgid  "Reset form"
 msgstr "ফর্ম পুনঃ বিন্যাস করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
-#, fuzzy
 msgid  "Open document/web page"
 msgstr "নথি/ওয়েব পৃষ্ঠা খুলুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
-#, fuzzy
 msgid  "First record"
 msgstr "প্রথম রেকর্ড"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
-#, fuzzy
 msgid  "Previous record"
 msgstr "পূর্ববর্তী রেকর্ড"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
-#, fuzzy
 msgid  "Next record"
 msgstr "পরবর্তী রেকর্ড"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
-#, fuzzy
 msgid  "Last record"
 msgstr "শেষ রেকর্ড"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
-#, fuzzy
 msgid  "Save record"
 msgstr "রেকর্ড সংরক্ষণ করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
-#, fuzzy
 msgid  "Undo data entry"
 msgstr "উপাত্ত এন্ট্রি বাতিল করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
-#, fuzzy
 msgid  "New record"
 msgstr "নতুন রেকর্ড"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
-#, fuzzy
 msgid  "Delete record"
 msgstr "রেকর্ড মুছে ফেলুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
-#, fuzzy
 msgid  "Refresh form"
 msgstr "ফর্ম সতেজ করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
-#, fuzzy
 msgid  "Get"
 msgstr "গ্রহণ করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
-#, fuzzy
 msgid  "Post"
 msgstr "পোষ্ট করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "ইউআরএল"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
-#, fuzzy
 msgid  "Multipart"
 msgstr "বহু-অংশ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "পাঠ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
-#, fuzzy
 msgid  "Standard (short)"
 msgstr "আদর্শ (সংক্ষেপ)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
-#, fuzzy
 msgid  "Standard (short YY)"
 msgstr "আদর্শ (সংক্ষেপ YY)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
-#, fuzzy
 msgid  "Standard (short YYYY)"
 msgstr "আদর্শ (সংক্ষেপ YYYY)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
-#, fuzzy
 msgid  "Standard (long)"
 msgstr "আদর্শ (সংক্ষেপ)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
-#, fuzzy
 msgid  "DD/MM/YY"
 msgstr "DD/MM/YY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
-#, fuzzy
 msgid  "MM/DD/YY"
 msgstr "MM/DD/YY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
-#, fuzzy
 msgid  "YY/MM/DD"
 msgstr "YY/MM/DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
-#, fuzzy
 msgid  "DD/MM/YYYY"
 msgstr "DD/MM/YYYY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
-#, fuzzy
 msgid  "MM/DD/YYYY"
 msgstr "MM/DD/YYYY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
-#, fuzzy
 msgid  "YYYY/MM/DD"
 msgstr "YYYY/MM/DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
-#, fuzzy
 msgid  "YY-MM-DD"
 msgstr "YY-MM-DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
-#, fuzzy
 msgid  "YYYY-MM-DD"
 msgstr "YYYY-MM-DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
-#, fuzzy
 msgid  "13:45"
 msgstr "১৩:৪৫"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
-#, fuzzy
 msgid  "13:45:00"
 msgstr "১৩:৪৫:০০"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
-#, fuzzy
 msgid  "01:45 PM"
 msgstr "০১:৪৫ পিএম"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
-#, fuzzy
 msgid  "01:45:00 PM"
 msgstr "০১:৪৫:০০ পিএম"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
-#, fuzzy
 msgid  "Not Selected"
 msgstr "নির্বাচিত নয়"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
-#, fuzzy
 msgid  "Selected"
 msgstr "নির্বাচিত"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
-#, fuzzy
 msgid  "Not Defined"
 msgstr "সুনির্দিষ্ট নয"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
-#, fuzzy
 msgid  "All records"
 msgstr "সকল রেকর্ড"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
-#, fuzzy
 msgid  "Active record"
 msgstr "সক্রিয় রেকর্ড"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
-#, fuzzy
 msgid  "Current page"
 msgstr "বর্তমান পৃষ্ঠা"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "না"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "হ্যাঁ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
-#, fuzzy
 msgid  "Parent Form"
 msgstr "মূল ফর্ম"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "একটিও না"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
-#, fuzzy
 msgid  "Single"
 msgstr "একক"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
-#, fuzzy
 msgid  "Multi"
 msgstr "বহুবিধ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
-#, fuzzy
 msgid  "Range"
 msgstr "সীমা"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
-#, fuzzy
 msgid  "Fill parameters"
 msgstr "প্যারামিটার পূরণ করুন"
 
@@ -1825,122 +1658,98 @@ msgid  "Execute action"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
-#, fuzzy
 msgid  "After updating"
 msgstr "হালনাগাদ করার পর"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
-#, fuzzy
 msgid  "Before updating"
 msgstr "হালনাগাদ করার পূর্বে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
-#, fuzzy
 msgid  "Before record action"
 msgstr "রেকর্ড কার্যের পূর্বে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
-#, fuzzy
 msgid  "After record action"
 msgstr "রেকর্ড কার্যের পর"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
-#, fuzzy
 msgid  "Confirm deletion"
 msgstr "মোছা নিশ্চিত করুন"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
-#, fuzzy
 msgid  "Error occurred"
 msgstr "ত্রুটি সংঘটিত হয়েছে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
-#, fuzzy
 msgid  "When receiving focus"
 msgstr "ফোকাস গ্রহণের সময়"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
-#, fuzzy
 msgid  "When losing focus"
 msgstr "ফোকাস হারানোর সময়"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
-#, fuzzy
 msgid  "Item status changed"
 msgstr "বিষয়োপকরণ অবস্থা পরিবর্তিত"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
-#, fuzzy
 msgid  "Key pressed"
 msgstr "কী চাপা হয়েছে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
-#, fuzzy
 msgid  "Key released"
 msgstr "কী মুক্ত করা হয়েছে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
-#, fuzzy
 msgid  "When loading"
 msgstr "লোড করার সময়"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
-#, fuzzy
 msgid  "Before reloading"
 msgstr "পুনঃলোড করার পূর্বে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
-#, fuzzy
 msgid  "When reloading"
 msgstr "পুনঃলোড করার সময়"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
-#, fuzzy
 msgid  "Mouse moved while key pressed"
 msgstr "কী চাপার সময় মাউস সরানো হয়েছিল"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
-#, fuzzy
 msgid  "Mouse inside"
 msgstr "মাউস অভ্যন্তরে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
-#, fuzzy
 msgid  "Mouse outside"
 msgstr "মাউস বাইরে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
-#, fuzzy
 msgid  "Mouse moved"
 msgstr "মাউস সরানো হয়েছিল"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
-#, fuzzy
 msgid  "Mouse button pressed"
 msgstr "মাউস বোতাম চাপা হয়েছিল"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
-#, fuzzy
 msgid  "Mouse button released"
 msgstr "মাউস বোতাম মুক্ত করা হয়েছিল"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
-#, fuzzy
 msgid  "Before record change"
 msgstr "রেকর্ড পরিবর্তনের পূর্বে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
-#, fuzzy
 msgid  "After record change"
 msgstr "রেকর্ড পরিবর্তনের পর"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
-#, fuzzy
 msgid  "After resetting"
 msgstr "পুনঃবিন্যাসকরণের পর"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
-#, fuzzy
 msgid  "Prior to reset"
 msgstr "পুনঃবিন্যাসের পূর্বে"
 
@@ -1949,617 +1758,494 @@ msgid  "Approve action"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
-#, fuzzy
 msgid  "Before submitting"
 msgstr "জমার পূর্বে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
-#, fuzzy
 msgid  "Text modified"
 msgstr "পাঠ পরিবর্তিত"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
-#, fuzzy
 msgid  "Before unloading"
 msgstr "লোডহীন করার পূর্বে"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
-#, fuzzy
 msgid  "When unloading"
 msgstr "লোডহীন করার সময়"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
-#, fuzzy
 msgid  "Changed"
 msgstr "পরিবর্তিত"
 
 #: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
-#, fuzzy
 msgid  "Events"
 msgstr "ঘটনাসমূহ"
 
 #: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
-#, fuzzy
 msgid  "Analyze SQL command"
 msgstr "SQL নির্দেশ বিশ্লেষণ করুন"
 
 #: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
-#, fuzzy
 msgid  "PositionX"
 msgstr "অবস্থান-এক্স"
 
 #: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
-#, fuzzy
 msgid  "PositionY"
 msgstr "অবস্থান-ওয়াই"
 
 #: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "শিরোনাম"
 
 #: source/propctrlr/formres.src#RID_STR_STEP.String.Text
-#, fuzzy
 msgid  "Page (step)"
 msgstr "পৃষ্ঠা (ধাপ)"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
-#, fuzzy
 msgid  "Progress value"
 msgstr "অগ্রগতির মান"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
-#, fuzzy
 msgid  "Progress value min."
 msgstr "অগ্রগতির মান সর্বনিম্ন"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
-#, fuzzy
 msgid  "Progress value max."
 msgstr "অগ্রগতির মান সর্বোচ্চ"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
-#, fuzzy
 msgid  "Scroll value"
 msgstr "স্ক্রল মান"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
-#, fuzzy
 msgid  "Scroll value max."
 msgstr "স্ক্রল মান সর্বোচ্চ"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
-#, fuzzy
 msgid  "Scroll value min."
 msgstr "স্ক্রল মান সর্বনিম্ন"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
-#, fuzzy
 msgid  "Default scroll value"
 msgstr "পূর্বনির্ধারিত স্ক্রল মান"
 
 #: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
-#, fuzzy
 msgid  "Small change"
 msgstr "ছোট পরিবর্তন"
 
 #: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
-#, fuzzy
 msgid  "Large change"
 msgstr "বড় পরিবর্তন"
 
 #: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
-#, fuzzy
 msgid  "Delay"
 msgstr "বিলম্ব"
 
 #: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
-#, fuzzy
 msgid  "Repeat"
 msgstr "পুনরায়"
 
 #: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
-#, fuzzy
 msgid  "Visible size"
 msgstr "দৃশ্যমান আকার"
 
 #: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
-#, fuzzy
 msgid  "Orientation"
 msgstr "পরিচিতি পর্ব"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "অনুভূমিক"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "উলম্ব"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
-#, fuzzy
 msgid  "While adjusting"
 msgstr "সমন্বয় করার সময়"
 
 #: source/propctrlr/formres.src#RID_STR_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "তারিখ"
 
 #: source/propctrlr/formres.src#RID_STR_STATE.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "অবস্থা"
 
 #: source/propctrlr/formres.src#RID_STR_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "সময়"
 
 #: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "পরিমাপক"
 
 #: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
-#, fuzzy
 msgid  "Button type"
 msgstr "বোতামের ধরন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "পূর্বনির্ধারিত"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "ঠিক আছে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "বাতিল করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "সহায়তা করুন"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "উপাত্ত উৎসের \"$name$\" এ সংযোগ প্রতিষ্ঠিত করা যায়নি।"
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "পাঠ্য"
 
 #: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
-#, fuzzy
 msgid  "Linked cell"
 msgstr "সংযোগকৃত কক্ষ"
 
 #: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
-#, fuzzy
 msgid  "Source cell range"
 msgstr "উৎস কক্ষের সীমা"
 
 #: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
-#, fuzzy
 msgid  "Contents of the linked cell"
 msgstr "সংযোগকৃত কক্ষের বিষয়বস্তুসমূহ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
-#, fuzzy
 msgid  "The selected entry"
 msgstr "নির্বাচিত এন্ট্রি"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Position of the selected entry"
 msgstr "নির্বাচিত এন্ট্রির অবস্থান"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
-#, fuzzy
 msgid  "Scrollbars"
 msgstr "স্ক্রলবারসমূহ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
-#, fuzzy
 msgid  "Single-line"
 msgstr "একক-লাইন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
-#, fuzzy
 msgid  "Multi-line"
 msgstr "বহুবিধ-লাইন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
-#, fuzzy
 msgid  "Multi-line with formatting"
 msgstr "বিন্যাসকরণ যুক্ত বহুবিধ-লাইন"
 
 #: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
-#, fuzzy
 msgid  "Symbol color"
 msgstr "প্রতীকের রং"
 
 #: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
-#, fuzzy
 msgid  "Text lines end with"
 msgstr "পাঠ লাইন শেষ হয়"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
-#, fuzzy
 msgid  "LF (Unix)"
 msgstr "এলএফ (ইউনিক্স)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
-#, fuzzy
 msgid  "CR+LF (Windows)"
 msgstr "সিআর+এলএফ (উইন্ডোজ)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "একটিও না"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "অনুভূমিক"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "উলম্ব"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
-#, fuzzy
 msgid  "Both"
 msgstr "উভয়"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "সারণী"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "জিজ্ঞাসা"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
-#, fuzzy
 msgid  "SQL command"
 msgstr "SQL নির্দেশ"
 
 #: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "টোগল করুন"
 
 #: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
-#, fuzzy
 msgid  "Take Focus on Click"
 msgstr "ক্লিকের উপর ফোকাস করুন"
 
 #: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
-#, fuzzy
 msgid  "Hide selection"
 msgstr "নির্বাচন আড়াল করুন"
 
 #: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
-#, fuzzy
 msgid  "Style"
 msgstr "শৈলী"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
-#, fuzzy
 msgid  "3D"
 msgstr "ত্রিমাত্রিক"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
-#, fuzzy
 msgid  "Flat"
 msgstr "সমতল"
 
 #: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
-#, fuzzy
 msgid  "Border color"
 msgstr "সীমানার রং"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
-#, fuzzy
 msgid  "Left top"
 msgstr "বামের উপরে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
-#, fuzzy
 msgid  "Left centered"
 msgstr "বাম কেন্দ্রীয় "
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
-#, fuzzy
 msgid  "Left bottom"
 msgstr "বামের নীচে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
-#, fuzzy
 msgid  "Right top"
 msgstr "ডানের উপরে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
-#, fuzzy
 msgid  "Right centered"
 msgstr "ডান কেন্দ্রীয়"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
-#, fuzzy
 msgid  "Right bottom"
 msgstr "ডানের নীচে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
-#, fuzzy
 msgid  "Above left"
 msgstr "উপরের বামে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
-#, fuzzy
 msgid  "Above centered"
 msgstr "উপরের কেন্দ্রে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
-#, fuzzy
 msgid  "Above right"
 msgstr "উপরের ডানে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
-#, fuzzy
 msgid  "Below left"
 msgstr "নীচের বামে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
-#, fuzzy
 msgid  "Below centered"
 msgstr "নীচের কেন্দ্রে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
-#, fuzzy
 msgid  "Below right"
 msgstr "নীচের ডানে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
-#, fuzzy
 msgid  "Centered"
 msgstr "কেন্দ্রীয়"
 
 #: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
-#, fuzzy
 msgid  "Wrap text automatically"
 msgstr "পাঠ স্বয়ংক্রিয়ভাবে ঢাকুন"
 
 #: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
-#, fuzzy
 msgid  "Text type"
 msgstr "পাঠের ধরন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
-#, fuzzy
 msgid  "Hide"
 msgstr "লুকানো"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
-#, fuzzy
 msgid  "Show"
 msgstr "দেখান"
 
 #: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
-#, fuzzy
 msgid  "XML data model"
 msgstr "XML উপাত্তের নমুনা"
 
 #: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
-#, fuzzy
 msgid  "Binding expression"
 msgstr "শর্ত প্রকাশ"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
-#, fuzzy
 msgid  "Required"
 msgstr "প্রয়োজনীয়"
 
 #: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
-#, fuzzy
 msgid  "List entry source"
 msgstr "এন্ট্রি উৎসের তালিকা করুন"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
-#, fuzzy
 msgid  "Relevant"
 msgstr "প্রাসঙ্গিক"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
-#, fuzzy
 msgid  "Read-only"
 msgstr "শুধুমাত্র-পাঠযোগ্য "
 
 #: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
-#, fuzzy
 msgid  "Constraint"
 msgstr "প্রতিবন্ধকতা"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
-#, fuzzy
 msgid  "Calculation"
 msgstr "গণনা"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
-#, fuzzy
 msgid  "Data type"
 msgstr "উপাত্তের ধরন"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
-#, fuzzy
 msgid  "Whitespaces"
 msgstr "ফাঁকা স্থানসমূহ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
-#, fuzzy
 msgid  "Preserve"
 msgstr "সংরক্ষণ করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "প্রতিস্থাপন করুন"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
-#, fuzzy
 msgid  "Collapse"
 msgstr "বন্ধ করুন"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
-#, fuzzy
 msgid  "Pattern"
 msgstr "নমুনা"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
-#, fuzzy
 msgid  "Length"
 msgstr "দৈর্ঘ্য"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
-#, fuzzy
 msgid  "Length (at least)"
 msgstr "দৈর্ঘ্য (কমপক্ষে)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
-#, fuzzy
 msgid  "Length (at most)"
 msgstr "দৈর্ঘ্য (সর্বাপেক্ষা)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
-#, fuzzy
 msgid  "Digits (total)"
 msgstr "ডিজিটসমূহ (মোট)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
-#, fuzzy
 msgid  "Digits (fraction)"
 msgstr "ডিজিটসমূহ (ভগ্নাংশ)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
-#, fuzzy
 msgid  "Max. (inclusive)"
 msgstr "সর্বোচ্চ (সমেত)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
-#, fuzzy
 msgid  "Max. (exclusive)"
 msgstr "সর্বোচ্চ (বর্জিত)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
-#, fuzzy
 msgid  "Min. (inclusive)"
 msgstr "সর্বনিম্ন (সমেত)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
-#, fuzzy
 msgid  "Min. (exclusive)"
 msgstr "সর্বনিম্ন (বর্জিত)"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
-#, fuzzy
 msgid  "Submission"
 msgstr "আত্মসমর্পণ"
 
 #: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
-#, fuzzy
 msgid  "Binding"
 msgstr "শর্ত"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
-#, fuzzy
 msgid  "Selection type"
 msgstr "নির্বাচনের ধরন"
 
 #: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
-#, fuzzy
 msgid  "Root displayed"
 msgstr "মূল প্রদর্শিত"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
-#, fuzzy
 msgid  "Show handles"
 msgstr "নিয়ন্ত্রণসমূহ প্রদর্শন করুন"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
-#, fuzzy
 msgid  "Show root handles"
 msgstr "মূল নিয়ন্ত্রণসমূহ প্রদর্শন করুন"
 
 #: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
-#, fuzzy
 msgid  "Editable"
 msgstr "সম্পাদনাযোগ্য"
 
 #: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
-#, fuzzy
 msgid  "Invokes stop node editing"
 msgstr "শেষ নোড সম্পাদনাকরণ আবাহন করুন"
 
 #: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
-#, fuzzy
 msgid  "With title bar"
 msgstr "শিরেনাম বার সহ"
 
 #: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
-#, fuzzy
 msgid  "No Label"
 msgstr "লেবেল নাই"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "না"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
-#, fuzzy
 msgid  "Keep Ratio"
 msgstr "অনুপাত সঠিক রাখা"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
-#, fuzzy
 msgid  "Fit to Size"
 msgstr "মাপসই আয়তন "
 
 #: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
-#, fuzzy
 msgid  "Input required"
 msgstr "ইনপুট প্রয়োজন"
 
 #: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
-#, fuzzy
 msgid  "Text direction"
 msgstr "পাঠ্য গতিপথ"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr "বাম-থেকে-ডানে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr "ডান-থেকে-বামে"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
-#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "উর্ধঃস্তন বস্তু বিন্যাসনসমূহ ব্যবহার করুন"
 
@@ -2631,17 +2317,14 @@ msgid  "(Default)"
 msgstr "পূর্বনির্ধারিত"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "বর্ণচিহ্ন"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ফন্ট"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "ফন্টের প্রভাব"
 
@@ -2657,210 +2340,173 @@ msgstr "নতুন উপাত্ত ধরনটির জন্য এক�
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "ডিভাইস সম্পর্কে (~i)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "প্রাকদর্শন তৈরি করুন"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "প্রাকদর্শন"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Scan area"
 msgstr "স্ক্যান অংশ"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Left:"
 msgstr "বাম:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
-#, fuzzy
 msgid  "Top:"
 msgstr "উপরে:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Right:"
 msgstr "ডান:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
-#, fuzzy
 msgid  "Bottom:"
 msgstr "নীচে:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
-#, fuzzy
 msgid  "Device used:"
 msgstr "ডিভাইস ব্যবহৃত:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Resolution [~DPI]"
 msgstr "রিসোলিউশন [~DPI]"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
-#, fuzzy
 msgid  "Show advanced options"
 msgstr "উন্নততর পছন্দ প্রদর্শন করুন"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Options:"
 msgstr "পছন্দসমূহ:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
-#, fuzzy
 msgid  "Vector element"
 msgstr "ভেক্টর উপাদান"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "নির্ধারণ করুন"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
-#, fuzzy
 msgid  "Scanner"
 msgstr "স্ক্যানার"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "ডিভাইস: %s\nবিক্রেতা: %s\nমডেল: %s\nধরন: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
-#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "স্ক্যান করার সময় একটি ক্রটি সংঘটিত হয়েছে।"
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
-#, fuzzy
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
 msgstr "ডিভাইসটি প্রাকদর্শন পছন্দ প্রদর্শন করে না। সুতরাং, প্রাকদর্শনের বিকল্প হিসেবে একটি সাধারণ স্ক্যান ব্যবহৃত হবে। \nএটি বেশ কিছু পরিমাণ সময় নিতে পারে।"
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
-#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "SANE ইন্টারফেস প্রাথমিকভাবে প্রস্তুত করা যায়নি। স্ক্যানকরণ সম্ভব নয়।"
 
 #: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "নির্ধারণ করুন"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
-#, fuzzy
 msgid  "Linear ascending"
 msgstr "রৈখিক ঊর্ধ্বক্রম"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
-#, fuzzy
 msgid  "Linear descending"
 msgstr "রৈখিক নিম্নক্রম"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
-#, fuzzy
 msgid  "Original values"
 msgstr "মূল মানসমূহ"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
-#, fuzzy
 msgid  "Exponential increasing"
 msgstr "সূচকীয় বৃদ্ধিকরণ"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
-#, fuzzy
 msgid  "Checking..."
 msgstr "পরীক্ষণ করছে..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
-#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "হালনাগাদের জন্য পরীক্ষণ ব্যর্থ হয়েছে।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION তারিখ পর্যন্ত"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION সহজলভ্য।\nসংস্থাপিত সংস্করণটি হলো %PRODUCTNAME %NEXTVERSION।\nনোট: একটি হালনাগাদ সংস্করণ ডাউনলোড করার পূর্বে, অনুগ্রহ করে নিশ্চিত হোন যে আপনার এটা সংস্থাপন করার যথাযথ প্রাধিকার আছে।\nসাধারণত প্রশাসকের গুপ্ত-সঙ্কেত, বা মূল গুপ্ত-সঙ্কেত, প্রয়োজন হতে পারে।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
-#, fuzzy
 msgid  "Check for Updates"
 msgstr "হালনাগাদের জন্য পরীক্ষা করুন"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "%PRODUCTNAME %NEXTVERSION এর ডাউনলোডে বিরতি দেয়া হয়েছে..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION এর ডাউনলোড বিলম্বিত"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "ডাউনলোড স্থান হলো: %DOWNLOAD_PATH।\nটুলসমূহের-পছন্দের অধীনস্থ... - %PRODUCTNAME - অনলাইনে হালনাগাদ করুন, আপনি ডাউনলোড স্থান পরিবর্তন করতে পারেন।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
-#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%DOWNLOAD_PATH এ %FILE_NAME ডাউনলোড করা হয়েছে।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "হালনাগাদটির স্বয়ংক্রিয় ডাউনলোড বর্তমানে সহজলভ্য নয়।\nওয়েব সাইট হতে হস্তচালিতভাবে %PRODUCTNAME %NEXTVERSION ডাউনলোড করতে 'ডাউনলোড...' ক্লিক করুন।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "%PRODUCTNAME %NEXTVERSION ডাউনলোড হচ্ছে..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
-#, fuzzy
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr "%PRODUCTNAME %NEXTVERSION এর ডাউনলোড সম্পন্ন হয়েছে। সংস্থাপনের জন্য প্রস্তুত হোন। "
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "আপনি কি ডাউনলোডটি প্রকৃতপক্ষে বাতিল করতে চান? "
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
-#, fuzzy
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
 msgstr "হালনাগাদটি সংস্থাপন করতে, %PRODUCTNAME %PRODUCTVERSION বন্ধ করতে হবে। আপনি কি হালনাগাদটি এখন সংস্থাপন করতে চান?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
-#, fuzzy
 msgid  "Install ~now"
 msgstr "এখন সংস্থাপন করুন (~n)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
-#, fuzzy
 msgid  "Install ~later"
 msgstr "পরবর্তীতে সংস্থাপন করুন (~l)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
-#, fuzzy
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr "সংস্থাপক প্রয়োগন চালানো যাবে না, অনুগ্রহ করে %DOWNLOAD_PATH এর %FILE_NAME হস্তচালিতভাবে চালান।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
-#, fuzzy
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
 msgstr "ঐ নামের একটি ফাইল ইতোমধ্যে বিদ্যমান! আপনি কি বিদ্যমান ফাইলটি প্রতিস্থাপন করতে চান? "
 
@@ -2877,126 +2523,101 @@ msgid  "Continue"
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
-#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
-#, fuzzy
 msgid  "Status"
 msgstr "অবস্থা"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "বিবরণ"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "বন্ধ করুন"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "~Download"
 msgstr "ডাউনলোড করুন (~D)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
-#, fuzzy
 msgid  "~Install"
 msgstr "সংস্থাপন করুন (~I)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
-#, fuzzy
 msgid  "~Pause"
 msgstr "বিরতি দিন (~P)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
-#, fuzzy
 msgid  "~Resume"
 msgstr "পুনঃ শুরু করুন (~R)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "বাতিল করুন"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME এর হালনাগাদ সহজলভ্য"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the download."
 msgstr "ডাউনলোড শুরু করতে এখানে ক্লিক করুন।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME এর হালনাগাদ সহজলভ্য"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "আরও তথ্যের জন্য এখানে ক্লিক করুন"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME এর হালনাগাদ সহজলভ্য"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
-#, fuzzy
 msgid  "Download of update begins."
 msgstr "হালনাগাদের ডাউনলোড শুরু হয়েছে।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update in progress"
 msgstr "হালনাগাদের ডাউনলোড প্রক্রিয়া চলছে"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Download of update paused"
 msgstr "হালনাগাদের ডাউনলোড বন্ধ রাখা হয়েছে।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Click here to resume."
 msgstr "পুনঃ শুরু করতে এখানে ক্লিক করুন।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update stalled"
 msgstr "হালনাগাদের ডাউনলোড বিলম্বিত"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "আরও তথ্যের জন্য এখানে ক্লিক করুন।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Download of update completed"
 msgstr "হালনাগাদের ডাউনলোড সম্পন্ন হয়েছে।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "সংস্থাপন শুরু করতে এখানে ক্লিক করুন।"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "সংযোজনগুলোর জন্য হালনাগাদ সহজলভ্য"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "আরও তথ্যের জন্য এখানে ক্লিক করুন।"
 
 #: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
-#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "হালনাগাদের জন্য পরীক্ষা করুন... (~U)"

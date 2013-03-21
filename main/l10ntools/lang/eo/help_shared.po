@@ -629,7 +629,7 @@ msgstr "Por atingi ĉi tiun komandon..."
 
 #: source/text/shared/00/00000004.xhp#hd_id3160447.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">Por atingi ĉi tiun komandon...</variable>"
 
 #: source/text/shared/00/00000004.xhp#par_id3147212.47
 msgid  "\<variable id=\"related\"\>\<emph\>Related Topics\</emph\>\</variable\>"
@@ -4201,7 +4201,7 @@ msgstr ""
 
 #: source/text/shared/00/00000406.xhp#par_id3150324.157
 msgid  "Choose \<emph\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - Language Settings - Writing Aids\</emph\>"
-msgstr ""
+msgstr "Elektu menuerojn <emph>Iloj - Agordi - Lingvaj agordoj - Verkadhelpiloj</emph>"
 
 #: source/text/shared/00/00000406.xhp#par_id3145620.135
 msgid  "\<variable id=\"suchja\"\>Choose \<emph\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - Language Settings - Searching in Japanese\</emph\>\</variable\>"
@@ -6353,19 +6353,19 @@ msgstr "Nova"
 
 #: source/text/shared/01/01010000.xhp#hd_id3154788.1
 msgid  "\<link href=\"text/shared/01/01010000.xhp\" name=\"New\"\>New\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01010000.xhp\" name=\"New\">Nova</link>"
 
 #: source/text/shared/01/01010000.xhp#par_id3145669.2
 msgid  "\<ahelp hid=\".uno:AddDirect\"\>Creates a new $[officename] document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:AddDirect\">Kreas novan $[officename]-dokumenton.</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_id3149182.115
 msgid  "\<ahelp hid=\"HID_TBXCONTROL_FILENEW\" visibility=\"hidden\"\>Creates a new $[officename] document. Click the arrow to select the document type.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_TBXCONTROL_FILENEW\" visibility=\"hidden\">Kreas novan $[officename]-dokumenton. Alklaku la sagon por elekti la dokumentotipon.</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_id3153528.81
 msgid  "\<ahelp hid=\".\"\>If you want to create a document from a template, choose \<emph\>New - Templates and Documents.\</emph\>\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Se vi volas krei dokumenton el ŝablono, elektu <emph>Nova - Ŝablonoj kaj dokumentoj.</emph></ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_id3147009.82
 msgid  "A template is a file that contains the design elements for a document, including formatting styles, backgrounds, frames, graphics, fields, page layout, and text."
@@ -6373,19 +6373,19 @@ msgstr "Ŝablono estas dosiero enhavanta la verkajn elementojn por dokumento, ki
 
 #: source/text/shared/01/01010000.xhp#par_id3147242.112
 msgid  "\<emph\>Icon\</emph\>"
-msgstr ""
+msgstr "<emph>Bildsimbolo</emph>"
 
 #: source/text/shared/01/01010000.xhp#par_id3149580.113
 msgid  "\<emph\>Name\</emph\>"
-msgstr ""
+msgstr "<emph>Nomo</emph>"
 
 #: source/text/shared/01/01010000.xhp#par_id3153258.114
 msgid  "\<emph\>Function\</emph\>"
-msgstr ""
+msgstr "<emph>Funkcio</emph>"
 
 #: source/text/shared/01/01010000.xhp#par_id3145317
 msgid  "\<image id=\"img_id3153821\" src=\"res/sx03251.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3153821\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153821\" src=\"res/sx03251.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3153821\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010000.xhp#par_id3153349.61
 msgid  "Text Document"
@@ -6397,7 +6397,7 @@ msgstr "Kreas novan tekstdokumenton ($[officename]-Verkilo)."
 
 #: source/text/shared/01/01010000.xhp#par_id3145121
 msgid  "\<image id=\"img_id3150503\" src=\"res/sx03250.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150503\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150503\" src=\"res/sx03250.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3150503\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010000.xhp#par_id3148552.63
 msgid  "Spreadsheet"
@@ -6409,7 +6409,7 @@ msgstr "Kreas novan kalkultabelan dokumenton ($[officename]-Tabelilo)."
 
 #: source/text/shared/01/01010000.xhp#par_id3149456
 msgid  "\<image id=\"img_id3148663\" src=\"res/sx03249.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148663\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148663\" src=\"res/sx03249.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3148663\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010000.xhp#par_id3153798.65
 msgid  "Presentation"
@@ -6417,7 +6417,7 @@ msgstr "Prezentaĵo"
 
 #: source/text/shared/01/01010000.xhp#par_id3154946.66
 msgid  "Creates a new presentation document ($[officename] Impress). The \<link href=\"text/shared/autopi/01050000.xhp\" name=\"Presentation Wizard\"\>Presentation Wizard\</link\> dialog appears."
-msgstr ""
+msgstr "Kreas novan presentaĵdokumenton ($[officename] Prezentilo). La dialogo <link href=\"text/shared/autopi/01050000.xhp\" name=\"Presentation Wizard\">Prezentaĵa asistanto</link> aperas."
 
 #: source/text/shared/01/01010000.xhp#par_id3150495
 msgid  "\<image id=\"img_id3154329\" src=\"res/sx03246.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3154329\"\>Icon\</alt\>\</image\>"
@@ -6457,7 +6457,7 @@ msgstr "Kreas novan HTML-dokumenton."
 
 #: source/text/shared/01/01010000.xhp#par_idN107BF
 msgid  "\<image id=\"Graphic2\" src=\"res/sx03251.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"Graphic2\" src=\"res/sx03251.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010000.xhp#par_idN107F0
 msgid  "XML Form Document"
@@ -6533,39 +6533,39 @@ msgstr ""
 
 #: source/text/shared/01/01010000.xhp#par_idN109E7
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new text document ($[officename] Writer).\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan tekstdokumenton ($[officename]-Verkilo).</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN109FE
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new spreadsheet document ($[officename] Calc).\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan kalkultabelan dokumenton ($[officename]-Tabelilo).</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10A15
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new presentation document ($[officename] Impress). The Presentation Wizard dialog appears.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan prezentaĵan dokumenton ($[officename]-Prezentilo). La dialogo de la Prezentaĵa asistanto aperas.</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10A2C
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new drawing document ($[officename] Draw).\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan desegnan dokumenton ($[officename]-Desegnilo).</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10A43
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Database Wizard to create a database file.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Malfermas la Datumbazan asistanton por krei datumbazan dosieron.</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10A5A
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new HTML document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan HTML-dokumenton.</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10A71
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new XForms document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan XForms-dokumenton.</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10A88
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new master document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan modelan dokumenton.</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10A9F
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a new formula document ($[officename] Math).\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kreas novan formulan dokumenton ($[officename]-Formulilo).</ahelp>"
 
 #: source/text/shared/01/01010000.xhp#par_idN10AB6
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Labels dialog where you can set the options for your labels, and then creates a new text document for the labels ($[officename] Writer).\</ahelp\>"
@@ -6641,7 +6641,7 @@ msgstr "Reen"
 
 #: source/text/shared/01/01010100.xhp#par_id3153257
 msgid  "\<image id=\"img_id3149784\" src=\"res/sc06301.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149784\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149784\" src=\"res/sc06301.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3149784\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010100.xhp#par_id3153822.103
 msgid  "\<ahelp hid=\"HID_TEMPLATEDLG_TB_BACK\"\>Moves back to the previous window in the dialog.\</ahelp\>"
@@ -6653,7 +6653,7 @@ msgstr "Supreniri je unu nivelo"
 
 #: source/text/shared/01/01010100.xhp#par_id3156152
 msgid  "\<image id=\"img_id3149762\" src=\"svtools/res/up_small.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149762\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149762\" src=\"svtools/res/up_small.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3149762\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010100.xhp#par_id3156024.105
 msgid  "\<ahelp hid=\"HID_TEMPLATEDLG_TB_PREV\"\>Moves up one folder level, if available.\</ahelp\>"
@@ -6665,7 +6665,7 @@ msgstr "Presi "
 
 #: source/text/shared/01/01010100.xhp#par_id3154346
 msgid  "\<image id=\"img_id3148663\" src=\"res/commandimagelist/sc_print.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148663\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148663\" src=\"res/commandimagelist/sc_print.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3148663\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010100.xhp#par_id3150359.107
 msgid  "\<ahelp hid=\"HID_TEMPLATEDLG_TB_PRINT\"\>Prints the selected template or document.\</ahelp\>"
@@ -6685,7 +6685,7 @@ msgstr "Aspekto"
 
 #: source/text/shared/01/01010100.xhp#par_id3150741
 msgid  "\<image id=\"img_id3148451\" src=\"svtools/res/preview_small.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148451\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148451\" src=\"svtools/res/preview_small.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3148451\">Bildsimbolo</alt></image>"
 
 #: source/text/shared/01/01010100.xhp#par_id3151043.109
 msgid  "\<ahelp hid=\"HID_TEMPLATEDLG_TB_PREVIEW\"\>Allows you to preview the selected template or document.\</ahelp\>"
@@ -6765,7 +6765,7 @@ msgstr ""
 
 #: source/text/shared/01/01010200.xhp#par_id3144438
 msgid  "\<link href=\"text/shared/guide/labels.xhp\" name=\"Creating labels\"\>Creating labels\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/guide/labels.xhp\" name=\"Creating labels\">Kreado de etikedoj</link>"
 
 #: source/text/shared/01/01010201.xhp#tit
 msgid  "Labels"
@@ -6773,7 +6773,7 @@ msgstr "Etikedoj"
 
 #: source/text/shared/01/01010201.xhp#hd_id3149987.1
 msgid  "\<link href=\"text/shared/01/01010201.xhp\" name=\"Labels\"\>Labels\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01010201.xhp\" name=\"Labels\">Etikedoj</link>"
 
 #: source/text/shared/01/01010201.xhp#par_id3152952.2
 msgid  "\<ahelp hid=\"HID_LAB_LAB\"\>Specify the label text and choose the paper size for the label.\</ahelp\>"
@@ -7337,7 +7337,7 @@ msgstr ""
 
 #: source/text/shared/01/01020000.xhp#hd_id3146936.1
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Open\">Malfermi</link>"
 
 #: source/text/shared/01/01020000.xhp#par_id3151191.2
 msgid  "\<variable id=\"oeffnentext\"\>\<ahelp hid=\"HID_EXPLORERDLG_FILE\"\>Opens or imports a file.\</ahelp\>\</variable\>"
@@ -7661,7 +7661,7 @@ msgstr ""
 
 #: source/text/shared/01/01070000.xhp#hd_id3151260.1
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Konservi kiel</link>"
 
 #: source/text/shared/01/01070000.xhp#par_id3146856.2
 msgid  "\<variable id=\"speichernuntertext\"\>\<ahelp hid=\"HID_FILESAVE_DIALOG\"\>Saves the current document in a different location, or with a different file name or file type.\</ahelp\>\</variable\>"
@@ -7961,7 +7961,7 @@ msgstr "Cifereca subskribo"
 
 #: source/text/shared/01/01100200.xhp#par_idN106D0
 msgid  "Opens the \<link href=\"text/shared/01/digitalsignatures.xhp\"\>Digital Signatures\</link\> dialog where you can manage digital signatures for the current document."
-msgstr ""
+msgstr "Malfermas la dialogon <link href=\"text/shared/01/digitalsignatures.xhp\">Ciferecaj subskriboj</link> kie vi povas administri ciferecajn subskribojn por la aktuala dokumento."
 
 #: source/text/shared/01/01100200.xhp#hd_id3156346.11
 msgid  "Last printed:"
@@ -8369,7 +8369,7 @@ msgstr "Ŝablonoj"
 
 #: source/text/shared/01/01110000.xhp#hd_id3155577.1
 msgid  "\<link href=\"text/shared/01/01110000.xhp\" name=\"Templates\"\>Templates\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01110000.xhp\" name=\"Templates\">Ŝablonoj</link>"
 
 #: source/text/shared/01/01110000.xhp#par_id3154894.2
 msgid  "\<ahelp hid=\".\"\>Lets you organize and edit your templates, as well as save the current file as a template.\</ahelp\>"
@@ -8533,7 +8533,7 @@ msgstr ""
 
 #: source/text/shared/01/01110100.xhp#par_id3153095
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer setup\"\>Printer setup\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Setup\">Presilagordado</link>"
 
 #: source/text/shared/01/01110100.xhp#par_id3150012
 msgid  "\<link href=\"text/shared/01/01110101.xhp\" name=\"Templates: Address Book Assignment\"\>Templates: Address Book Assignment\</link\>"
@@ -9125,7 +9125,7 @@ msgstr ""
 
 #: source/text/shared/01/01160000.xhp#hd_id3154398.3
 msgid  "\<link href=\"text/shared/01/01160200.xhp\" name=\"Document as E-mail\"\>Document as E-mail\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01160200.xhp\" name=\"Document as E-mail\">Dokumento kiel retmesaĝo</link>"
 
 #: source/text/shared/01/01160000.xhp#par_id4546342
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens a new window in your default e-mail program with the current document as an attachment. The OpenDocument file format is used.\</ahelp\>"
@@ -9297,7 +9297,7 @@ msgstr ""
 
 #: source/text/shared/01/01190000.xhp#hd_id3143272.1
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\">Versioj</link>"
 
 #: source/text/shared/01/01190000.xhp#par_id3157898.2
 msgid  "\<variable id=\"versionentext\"\>\<ahelp hid=\".uno:VersionDialog\"\>Saves and organizes multiple versions of the current document in the same file. You can also open, delete, and compare previous versions.\</ahelp\>\</variable\>"
@@ -9777,7 +9777,7 @@ msgstr "Elekti ĉion"
 
 #: source/text/shared/01/02090000.xhp#hd_id3145138.1
 msgid  "\<link href=\"text/shared/01/02090000.xhp\" name=\"Select All\"\>Select All\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02090000.xhp\" name=\"Select All\">Elekti ĉion</link>"
 
 #: source/text/shared/01/02090000.xhp#par_id3149999.2
 msgid  "\<variable id=\"allestext\"\>\<ahelp hid=\".uno:Select\" visibility=\"visible\"\>Selects the entire content of the current file, frame, or text object.\</ahelp\>\</variable\>"
@@ -13081,7 +13081,7 @@ msgstr ""
 
 #: source/text/shared/01/04110000.xhp#par_id3149511
 msgid  "\<link href=\"text/shared/main0209.xhp\" name=\"Hyperlink bar\"\>Hyperlink bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0209.xhp\" name=\"Hyperlink Bar\">Hiperligila breto</link>"
 
 #: source/text/shared/01/04110000.xhp#par_id3093440
 msgid  "\<link href=\"text/shared/02/09030000.xhp\" name=\"Inserting hyperlinks\"\>Inserting hyperlinks\</link\>"
@@ -13089,7 +13089,7 @@ msgstr ""
 
 #: source/text/shared/01/04110000.xhp#par_id3154927
 msgid  "\<link href=\"text/shared/00/00000002.xhp#url\" name=\"URL\"\>URL\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/00/00000002.xhp#url\" name=\"URL\">URL-o</link>"
 
 #: source/text/shared/01/04140000.xhp#tit
 msgid  "Inserting Pictures"
@@ -13141,7 +13141,7 @@ msgstr ""
 
 #: source/text/shared/01/04150000.xhp#hd_id3154894.8
 msgid  "\<link href=\"text/shared/01/04150100.xhp\" name=\"OLE Object\"\>OLE Object\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04150100.xhp\" name=\"OLE Object\">OLE-objekto</link>"
 
 #: source/text/shared/01/04150000.xhp#hd_id3159201.6
 msgid  "\<link href=\"text/shared/01/04150400.xhp\" name=\"Sound\"\>Sound\</link\>"
@@ -13153,7 +13153,7 @@ msgstr ""
 
 #: source/text/shared/01/04150000.xhp#hd_id3153577.4
 msgid  "\<link href=\"text/shared/01/04160300.xhp\" name=\"Formula\"\>Formula\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160300.xhp\" name=\"Formula\">Formulo</link>"
 
 #: source/text/shared/01/04150000.xhp#hd_id3152552.10
 msgid  "\<switchinline select=\"appl\"\>\<caseinline select=\"WRITER\"\>\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>\</caseinline\>\</switchinline\>"
@@ -13377,7 +13377,7 @@ msgstr ""
 
 #: source/text/shared/01/04180100.xhp#par_id3156427
 msgid  "\<link href=\"text/shared/main0212.xhp\" name=\"Table Data bar\"\>Table Data bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0212.xhp\" name=\"Table Data Bar\">Tabeldatuma breto</link>"
 
 #: source/text/shared/01/04180100.xhp#par_id3153311
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Forms\"\>Forms\</link\>"
@@ -13397,7 +13397,7 @@ msgstr ""
 
 #: source/text/shared/01/04990000.xhp#hd_id3158442.3
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"From File\">El dosiero</link>"
 
 #: source/text/shared/01/05010000.xhp#tit
 msgid  "Default Formatting"
@@ -13441,7 +13441,7 @@ msgstr ""
 
 #: source/text/shared/01/05020000.xhp#hd_id3149988.4
 msgid  "\<link href=\"text/shared/01/05020100.xhp\" name=\"Font\"\>Font\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020100.xhp\" name=\"Font\">Tiparo</link>"
 
 #: source/text/shared/01/05020000.xhp#hd_id3147588.3
 msgid  "\<switchinline select=\"appl\"\>\<caseinline select=\"WRITER\"\>\<link href=\"text/shared/01/05020400.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>\</caseinline\>\</switchinline\>"
@@ -15765,7 +15765,7 @@ msgstr "Borderoj"
 
 #: source/text/shared/01/05030500.xhp#hd_id3154812.1
 msgid  "\<link href=\"text/shared/01/05030500.xhp\" name=\"Borders\"\>Borders\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030500.xhp\" name=\"Borders\">Borderoj</link>"
 
 #: source/text/shared/01/05030500.xhp#par_id3151097.2
 msgid  "\<ahelp hid=\"HID_BORDER\"\>Sets the border options for the selected objects in Writer or Calc.\</ahelp\>"
@@ -16765,11 +16765,11 @@ msgstr ""
 
 #: source/text/shared/01/05040300.xhp#par_id3150873
 msgid  "\<link href=\"text/shared/01/05030500.xhp\" name=\"Borders\"\>Borders\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030500.xhp\" name=\"Borders\">Borderoj</link>"
 
 #: source/text/shared/01/05040300.xhp#par_id3147326
 msgid  "\<link href=\"text/shared/01/05030600.xhp\" name=\"Backgrounds\"\>Backgrounds\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030600.xhp\" name=\"Backgrounds\">Fonoj</link>"
 
 #: source/text/shared/01/05040400.xhp#tit
 msgid  "Footer"
@@ -16901,11 +16901,11 @@ msgstr ""
 
 #: source/text/shared/01/05040400.xhp#par_id3154189
 msgid  "\<link href=\"text/shared/01/05030500.xhp\" name=\"Borders\"\>Borders\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030500.xhp\" name=\"Borders\">Borderoj</link>"
 
 #: source/text/shared/01/05040400.xhp#par_id3152791
 msgid  "\<link href=\"text/shared/01/05030600.xhp\" name=\"Backgrounds\"\>Backgrounds\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030600.xhp\" name=\"Backgrounds\">Fonoj</link>"
 
 #: source/text/shared/01/05050000.xhp#tit
 msgid  "Change Case"
@@ -17297,11 +17297,11 @@ msgstr ""
 
 #: source/text/shared/01/05100100.xhp#par_id3154351.79
 msgid  "Choose \<emph\>Table - Merge Cells\</emph\>"
-msgstr ""
+msgstr "Elektu menueron <emph>Tabelo - Kunfandi ĉelojn</emph>"
 
 #: source/text/shared/01/05100100.xhp#par_id3154370.80
 msgid  "On the \<emph\>Table\</emph\> Bar, click"
-msgstr ""
+msgstr "En la breto, alklaku <emph>Tabelo</emph>"
 
 #: source/text/shared/01/05100100.xhp#par_id3153996
 msgid  "\<image id=\"img_id3154002\" src=\"res/commandimagelist/sc_mergecells.png\" width=\"0.423cm\" height=\"0.423cm\"\>\<alt id=\"alt_id3154002\"\>icon\</alt\>\</image\>"
@@ -17329,11 +17329,11 @@ msgstr ""
 
 #: source/text/shared/01/05100200.xhp#par_id3154024.82
 msgid  "Choose \<emph\>Table - Split Cells\</emph\>"
-msgstr ""
+msgstr "Elektu menueron <emph>Tabelo - Dividi ĉelojn</emph>"
 
 #: source/text/shared/01/05100200.xhp#par_id3154042.83
 msgid  "On the \<emph\>Table\</emph\> Bar, click"
-msgstr ""
+msgstr "En la breto, alklaku <emph>Tabelo</emph>"
 
 #: source/text/shared/01/05100200.xhp#par_id3147270
 msgid  "\<image id=\"img_id3147275\" src=\"res/commandimagelist/sc_splitcell.png\" width=\"0.423cm\" height=\"0.423cm\"\>\<alt id=\"alt_id3147275\"\>Icon\</alt\>\</image\>"
@@ -17557,11 +17557,11 @@ msgstr ""
 
 #: source/text/shared/01/05110600m.xhp#par_id3153569.92
 msgid  "Choose \<emph\>Table - Autofit - Distribute Rows Equally\</emph\>"
-msgstr ""
+msgstr "Elektu menueron <emph>Tabelo - Aŭtomate adapti - Distribui vicojn egale</emph>"
 
 #: source/text/shared/01/05110600m.xhp#par_id3153755.93
 msgid  "Open \<emph\>Optimize\</emph\> toolbar from \<emph\>Table\</emph\> Bar, click"
-msgstr ""
+msgstr "Malfermu ilobreton <emph>Optimumigi</emph> el breto <emph>Tabelo</emph>, alklaku"
 
 #: source/text/shared/01/05110600m.xhp#par_id3145297
 msgid  "\<image id=\"img_id3155994\" src=\"res/commandimagelist/sc_distributerows.png\" width=\"0.423cm\" height=\"0.423cm\"\>\<alt id=\"alt_id3155994\"\>Icon\</alt\>\</image\>"
@@ -17665,11 +17665,11 @@ msgstr ""
 
 #: source/text/shared/01/05120600.xhp#par_id3159219.107
 msgid  "Choose \<emph\>Table - Autofit - Distribute Columns Equally\</emph\>"
-msgstr ""
+msgstr "Elektu menueron <emph>Tabelo - Aŭtomate adapti - Distribui kolumnojn egale</emph>"
 
 #: source/text/shared/01/05120600.xhp#par_id3156426.108
 msgid  "Open \<emph\>Optimize\</emph\> toolbar from \<emph\>Table\</emph\> Bar, click"
-msgstr ""
+msgstr "Malfermu ilobreton <emph>Optimumigi</emph> el breto <emph>Tabelo</emph>, alklaku"
 
 #: source/text/shared/01/05120600.xhp#par_id3145179
 msgid  "\<image id=\"img_id3145186\" src=\"res/commandimagelist/sc_distributecolumns.png\" width=\"0.423cm\" height=\"0.423cm\"\>\<alt id=\"alt_id3145186\"\>Icon\</alt\>\</image\>"
@@ -17785,7 +17785,7 @@ msgstr "Linio"
 
 #: source/text/shared/01/05200000.xhp#hd_id3154350.1
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"Line\">Linio</link>"
 
 #: source/text/shared/01/05200000.xhp#par_id3147588.2
 msgid  "\<variable id=\"linietext\"\>\<ahelp hid=\".uno:FormatLine\"\>Sets the formatting options for the selected line.\</ahelp\>\</variable\>"
@@ -18117,7 +18117,7 @@ msgstr "Areo"
 
 #: source/text/shared/01/05210000.xhp#hd_id3085157.1
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"Area\">Areo</link>"
 
 #: source/text/shared/01/05210000.xhp#par_id3144436.2
 msgid  "\<variable id=\"flaechetext\"\>\<ahelp hid=\".uno:FormatArea\"\>Sets the fill properties of the selected drawing object.\</ahelp\>\</variable\>"
@@ -18717,7 +18717,7 @@ msgstr ""
 
 #: source/text/shared/01/05210600.xhp#hd_id3150014.1
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\">Ombro</link>"
 
 #: source/text/shared/01/05210600.xhp#par_id3155069.2
 msgid  "\<ahelp hid=\"HID_AREA_SHADOW\"\>Add a shadow to the selected drawing object, and define the properties of the shadow.\</ahelp\>"
@@ -19049,7 +19049,7 @@ msgstr "Pozicio kaj grando"
 
 #: source/text/shared/01/05230000.xhp#hd_id3152790.1
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\">Pozicio kaj grando</link>"
 
 #: source/text/shared/01/05230000.xhp#par_id3157552.2
 msgid  "\<variable id=\"groessetext\"\>\<ahelp hid=\".uno:TransformDialog\"\>Resizes, moves, rotates, or slants the selected object.\</ahelp\>\</variable\>"
@@ -19477,7 +19477,7 @@ msgstr ""
 
 #: source/text/shared/01/05250100.xhp#par_id3147588.3
 msgid  "\<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/shared/01/05250200.xhp#tit
 msgid  "Bring Forward "
@@ -19493,7 +19493,7 @@ msgstr ""
 
 #: source/text/shared/01/05250200.xhp#par_id3149495.3
 msgid  "\<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/shared/01/05250300.xhp#tit
 msgid  "Send Backward"
@@ -19509,7 +19509,7 @@ msgstr ""
 
 #: source/text/shared/01/05250300.xhp#par_id3150445.3
 msgid  "\<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/shared/01/05250400.xhp#tit
 msgid  "Send to Back"
@@ -19525,7 +19525,7 @@ msgstr ""
 
 #: source/text/shared/01/05250400.xhp#par_id3152895.3
 msgid  "\<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/shared/01/05250500.xhp#tit
 msgid  "To Foreground"
@@ -19541,7 +19541,7 @@ msgstr ""
 
 #: source/text/shared/01/05250500.xhp#par_id3147000.6
 msgid  "\<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/shared/01/05250600.xhp#tit
 msgid  "To Background"
@@ -19557,7 +19557,7 @@ msgstr ""
 
 #: source/text/shared/01/05250600.xhp#par_id3148731.4
 msgid  "\<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05250000.xhp\" name=\"Layer\">Tavolo</link>"
 
 #: source/text/shared/01/05260000.xhp#tit
 msgid  "Anchor"
@@ -20025,7 +20025,7 @@ msgstr "Grupigi"
 
 #: source/text/shared/01/05290100.xhp#hd_id3152823.1
 msgid  "\<link href=\"text/shared/01/05290100.xhp\" name=\"Group\"\>Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290100.xhp\" name=\"Group\">Grupigi</link>"
 
 #: source/text/shared/01/05290100.xhp#par_id3154689.2
 msgid  "\<variable id=\"gruppierentext\"\>\<ahelp hid=\".uno:FormatGroup\" visibility=\"visible\"\>Groups the selected objects, so that they can be moved as a single object.\</ahelp\>\</variable\>"
@@ -20041,7 +20041,7 @@ msgstr "Malgrupigi"
 
 #: source/text/shared/01/05290200.xhp#hd_id3159217.1
 msgid  "\<link href=\"text/shared/01/05290200.xhp\" name=\"Ungroup\"\>Ungroup\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290200.xhp\" name=\"Ungroup\">Malgrupigi</link>"
 
 #: source/text/shared/01/05290200.xhp#par_id3156116.2
 msgid  "\<variable id=\"aufhebentext\"\>\<ahelp hid=\".uno:FormatUngroup\" visibility=\"visible\"\>Breaks apart the selected group into individual objects.\</ahelp\>\</variable\>"
@@ -20057,7 +20057,7 @@ msgstr "Eniri en la Grupon"
 
 #: source/text/shared/01/05290300.xhp#hd_id3083278.1
 msgid  "\<link href=\"text/shared/01/05290300.xhp\" name=\"Enter Group\"\>Enter Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290300.xhp\" name=\"Enter Group\">Enigi grupon</link>"
 
 #: source/text/shared/01/05290300.xhp#par_id3146856.2
 msgid  "\<variable id=\"betretentext\"\>\<ahelp hid=\".uno:EnterGroup\" visibility=\"visible\"\>Opens the selected group, so that you can edit the individual objects. If the selected group contains nested group, you can repeat this command on the subgroups.\</ahelp\>\</variable\> This command does not permanently ungroup the objects."
@@ -20069,11 +20069,11 @@ msgstr ""
 
 #: source/text/shared/01/05290300.xhp#par_id3153049
 msgid  "\<link href=\"text/shared/01/05290000.xhp\" name=\"Groups\"\>Groups\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290000.xhp\" name=\"Groups\">Grupoj</link>"
 
 #: source/text/shared/01/05290300.xhp#par_id3148548
 msgid  "\<link href=\"text/shared/01/05290400.xhp\" name=\"Exit Group\"\>Exit Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290400.xhp\" name=\"Exit Group\">Eliri grupon</link>"
 
 #: source/text/shared/01/05290400.xhp#tit
 msgid  "Exit Group"
@@ -20081,7 +20081,7 @@ msgstr "Eliri Grupon"
 
 #: source/text/shared/01/05290400.xhp#hd_id3157552.1
 msgid  "\<link href=\"text/shared/01/05290400.xhp\" name=\"Exit Group\"\>Exit Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290400.xhp\" name=\"Exit Group\">Eliri grupon</link>"
 
 #: source/text/shared/01/05290400.xhp#par_id3147294.2
 msgid  "\<variable id=\"verlassentext\"\>\<ahelp hid=\".uno:LeaveGroup\" visibility=\"visible\"\>Exits the group, so that you can no longer edit the individual objects in the group.\</ahelp\>\</variable\> If you are in a nested group, only the nested group is closed."
@@ -20089,11 +20089,11 @@ msgstr ""
 
 #: source/text/shared/01/05290400.xhp#par_id3153124
 msgid  "\<link href=\"text/shared/01/05290000.xhp\" name=\"Groups\"\>Groups\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290000.xhp\" name=\"Groups\">Grupoj</link>"
 
 #: source/text/shared/01/05290400.xhp#par_id3148520
 msgid  "\<link href=\"text/shared/01/05290300.xhp\" name=\"Edit Group\"\>Edit Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290300.xhp\" name=\"Edit Group\">Modifi grupon</link>"
 
 #: source/text/shared/01/05320000.xhp#tit
 msgid  "Text Animation"
@@ -21521,7 +21521,7 @@ msgstr "Distribuo"
 
 #: source/text/shared/01/05360000.xhp#hd_id3154812.1
 msgid  "\<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\"\>Distribution\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\">Distribuo</link>"
 
 #: source/text/shared/01/05360000.xhp#par_id3149119.2
 msgid  "\<variable id=\"verteilungtext\"\>\<ahelp hid=\".uno:DistributeSelection\"\>Distributes three or more selected objects evenly along the horizontal axis or the vertical axis. You can also evenly distribute the spacing between objects.\</ahelp\>\</variable\>"
@@ -21633,7 +21633,7 @@ msgstr "Teksto"
 
 #: source/text/shared/01/05990000.xhp#hd_id3155757.1
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"Text\">Teksto</link>"
 
 #: source/text/shared/01/05990000.xhp#par_id3150467.2
 msgid  "\<variable id=\"texttext\"\>\<ahelp hid=\".uno:TextAttributes\"\>Sets the layout and anchoring properties for text in the selected drawing or text object.\</ahelp\>\</variable\>"
@@ -21773,7 +21773,7 @@ msgstr ""
 
 #: source/text/shared/01/06010000.xhp#par_id3147426
 msgid  "\<link href=\"text/shared/01/06020000.xhp\" name=\"Thesaurus\"\>Thesaurus\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06020000.xhp\" name=\"Thesaurus\">Tezaŭro</link>"
 
 #: source/text/shared/01/06010101.xhp#tit
 msgid  "Writing aids"
@@ -22933,7 +22933,7 @@ msgstr "Buloj kaj numeradoj"
 
 #: source/text/shared/01/06050000.xhp#hd_id3149551.1
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\">Buloj kaj numerado</link>"
 
 #: source/text/shared/01/06050000.xhp#par_id3150146.2
 msgid  "\<variable id=\"numauftext\"\>\<ahelp hid=\".uno:BulletsAndNumberingDial\"\>Adds numbering or bullets to the current paragraph, and lets you edit format of the numbering or bullets.\</ahelp\>\</variable\>"
@@ -25833,7 +25833,7 @@ msgstr ""
 
 #: source/text/shared/01/gallery.xhp#hd_id3153894.1
 msgid  "\<link href=\"text/shared/01/gallery.xhp\" name=\"Gallery\"\>Gallery\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/gallery.xhp\" name=\"Gallery\">Galerio</link>"
 
 #: source/text/shared/01/gallery.xhp#par_id3150789.2
 msgid  "\<ahelp hid=\".uno:Gallery\"\>Opens the \<emph\>Gallery\</emph\>, where you can select graphics and sounds to insert into your document.\</ahelp\>"
@@ -27097,7 +27097,7 @@ msgstr ""
 
 #: source/text/shared/01/ref_pdf_export.xhp#par_id3939634
 msgid  "\<ahelp hid=\".\"\>Printing the document is not permitted.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Presado de la dokumento estas malpermesata.</ahelp>"
 
 #: source/text/shared/01/ref_pdf_export.xhp#hd_id599688
 msgid  "Low resolution (150 dpi)"
@@ -27181,7 +27181,7 @@ msgstr "Eksporti"
 
 #: source/text/shared/01/ref_pdf_export.xhp#par_id3146975.51
 msgid  "\<ahelp hid=\".\"\>Exports the current file in PDF format.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Eksportas la aktualan dosieron en PDF-formato.</ahelp>"
 
 #: source/text/shared/01/ref_pdf_send_as.xhp#tit
 msgid  "E-mail as PDF"
@@ -27553,7 +27553,7 @@ msgstr ""
 
 #: source/text/shared/01/xformsdatatab.xhp#hd_id5766472
 msgid  "\<link href=\"text/shared/01/xformsdatatab.xhp\"\>Data (for XML Form Documents)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/xformsdatatab.xhp\">Datumoj (por XML-formulardokumentoj)</link>"
 
 #: source/text/shared/01/xformsdatatab.xhp#par_id1161534
 msgid  "The Data tab page of the Properties dialog for an XML Form document offers some XML forms settings."
@@ -28137,7 +28137,7 @@ msgstr ""
 
 #: source/text/shared/02/01140000.xhp#par_idN10E50
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Points\">Punktoj</link>"
 
 #: source/text/shared/02/01140000.xhp#par_idN10E60
 msgid  "Enables you to edit points on your drawing."
@@ -28145,11 +28145,11 @@ msgstr "Ebligas al vi redakti punktojn en via desegnaĵo."
 
 #: source/text/shared/02/01140000.xhp#par_idN10E75
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"From File\">El dosiero</link>"
 
 #: source/text/shared/02/01140000.xhp#par_idN10E95
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">Elpremado ek/for</link>"
 
 #: source/text/shared/02/01140000.xhp#par_idN10EA5
 msgid  "Switches the 3D effects on and off for the selected objects."
@@ -32009,7 +32009,7 @@ msgstr "Aldoni Kampon"
 
 #: source/text/shared/02/01170400.xhp#hd_id3144436.1
 msgid  "\<link href=\"text/shared/02/01170400.xhp\" name=\"Add Field\"\>Add Field\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170400.xhp\" name=\"Add Field\">Aldoni kampon</link>"
 
 #: source/text/shared/02/01170400.xhp#par_id3166460.2
 msgid  "\<variable id=\"text\"\>\<ahelp hid=\".uno:AddField\"\>Opens a window where you can select a database field to add to the form or report.\</ahelp\>\</variable\>"
@@ -32561,7 +32561,7 @@ msgstr "Kapti per krado"
 
 #: source/text/shared/02/01171300.xhp#hd_id3151262.1
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\">Kapti per krado</link>"
 
 #: source/text/shared/02/01171300.xhp#par_id3149495.5
 msgid  "\<ahelp hid=\".\"\>Specifies whether to move frames, drawing elements, and controls only between grid points.\</ahelp\>"
@@ -33173,7 +33173,7 @@ msgstr "Turni"
 
 #: source/text/shared/02/05090000.xhp#hd_id3154863.1
 msgid  "\<link href=\"text/shared/02/05090000.xhp\" name=\"Rotate\"\>Rotate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/05090000.xhp\" name=\"Rotate\">Turni</link>"
 
 #: source/text/shared/02/05090000.xhp#par_id3149119.2
 msgid  "\<ahelp hid=\".uno:ToggleObjectRotateMode\"\>Rotates the selected object.\</ahelp\>"
@@ -34753,7 +34753,7 @@ msgstr ""
 
 #: source/text/shared/02/12090101.xhp#par_id3147089.4
 msgid  "                  \<emph\>Effect\</emph\>               "
-msgstr ""
+msgstr "<emph>Efekto</emph>"
 
 #: source/text/shared/02/12090101.xhp#par_id3147209.5
 msgid  "Equal (=)"
@@ -35921,7 +35921,7 @@ msgstr ""
 
 #: source/text/shared/02/20040000.xhp#par_id3149177.4
 msgid  "\<emph\>Mode\</emph\>"
-msgstr ""
+msgstr "<emph>reĝimo</emph>"
 
 #: source/text/shared/02/20040000.xhp#par_id3155391.5
 msgid  "\<emph\>Result\</emph\>"
@@ -35969,11 +35969,11 @@ msgstr ""
 
 #: source/text/shared/02/20050000.xhp#par_id3149095.5
 msgid  "\<emph\>Mode\</emph\>"
-msgstr ""
+msgstr "<emph>reĝimo</emph>"
 
 #: source/text/shared/02/20050000.xhp#par_id3155941.6
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekto</emph>"
 
 #: source/text/shared/02/20050000.xhp#par_id3149827.7
 msgid  "STD"
@@ -36889,7 +36889,7 @@ msgstr "Fulmklavoj"
 
 #: source/text/shared/04/01010000.xhp#par_id3156060.15
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekto</emph>"
 
 #: source/text/shared/04/01010000.xhp#hd_id3149260.16
 msgid  "Enter key"
@@ -37201,7 +37201,7 @@ msgstr "Fulmklavoj"
 
 #: source/text/shared/04/01010000.xhp#par_id3153756.184
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Efekto</emph>"
 
 #: source/text/shared/04/01010000.xhp#hd_id3149404.61
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>\</caseinline\>\<defaultinline\>F1\</defaultinline\>\</switchinline\>"
@@ -38609,15 +38609,15 @@ msgstr "TTT-paĝoj"
 
 #: source/text/shared/07/09000000.xhp#hd_id3156014.1
 msgid  "\<link href=\"text/shared/07/09000000.xhp\" name=\"Web Pages\"\>Web Pages\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/07/09000000.xhp\" name=\"Web Pages\">TTT-paĝoj</link>"
 
 #: source/text/shared/07/09000000.xhp#par_id3146946.2
 msgid  "To create a new web page for the Internet, open a new \<emph\>HTML Document\</emph\> by choosing \<emph\>File - New\</emph\>."
-msgstr ""
+msgstr "Por krei novan retpaĝon por la interreto, malfermu novan <emph>HTML-dokumenton</emph> elektante <emph>Dosiero - Nova</emph>."
 
 #: source/text/shared/07/09000000.xhp#par_id3143284.3
 msgid  "A tool for creating new web pages is the Web Layout mode, which you enable with \<emph\>View - Web Layout\</emph\>."
-msgstr ""
+msgstr "Iu ilo por krei novajn retpaĝojn estas la reĝimo de TTT-eca aranĝo, kiun vi ŝaltas per <emph>Vido - TTT-eca aranĝo</emph>."
 
 #: source/text/shared/07/09000000.xhp#hd_id3147285.8
 msgid  "Creating a New Web Page"
@@ -38625,7 +38625,7 @@ msgstr "Kreado de nova TTT-paĝo"
 
 #: source/text/shared/07/09000000.xhp#par_id3150808.9
 msgid  "Switch to the web layout mode by choosing \<emph\>View - Web Layout\</emph\> or by opening a new HTML document."
-msgstr ""
+msgstr "Ŝanĝu al la reĝimo de TTT-eca aranĝo elektante <emph>Vido - TTT-eca aranĝo</emph> aŭ malfermante novan HTML-dokumenton."
 
 #: source/text/shared/07/09000000.xhp#par_id3145136.15
 msgid  "To create an HTML page from your $[officename] document, save the page using one of the \"HTML Document\" file types."
@@ -38981,7 +38981,7 @@ msgstr ""
 
 #: source/text/shared/autopi/01000000.xhp#hd_id3147303.18
 msgid  "\<link href=\"text/shared/autopi/01150000.xhp\" name=\"Euro Converter\"\>Euro Converter\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/autopi/01150000.xhp\" name=\"Euro Converter\">Eŭrokonvertilo</link>"
 
 #: source/text/shared/autopi/01010000.xhp#tit
 msgid  "Letter Wizard"
@@ -44537,7 +44537,7 @@ msgstr "LIKE"
 
 #: source/text/shared/explorer/database/02010100.xhp#bm_id3157985
 msgid  "\<bookmark_value\>placeholders; in SQL queries\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>lokokupiloj; en SQL-informpetoj</bookmark_value>"
 
 #: source/text/shared/explorer/database/02010100.xhp#par_id3157985.76
 msgid  "(% placeholder for any number of characters"
@@ -44757,7 +44757,7 @@ msgstr "{D'HH:MM:SS'}"
 
 #: source/text/shared/explorer/database/02010100.xhp#par_id3151220.260
 msgid  "$[officename] also supports the following \<emph\>Escape sequences\</emph\> known from ODBC and JDBC:"
-msgstr ""
+msgstr "$[officename] subtenas ankaŭ la ĉi subajn <emph>eskapĉenojn</emph> konatajn el ODBC kaj JDBC:"
 
 #: source/text/shared/explorer/database/02010100.xhp#par_id3157975.261
 msgid  "Date"
@@ -44789,7 +44789,7 @@ msgstr "Ekzemplo: select {d '1999-12-31'} from world.years"
 
 #: source/text/shared/explorer/database/02010100.xhp#par_id3146073.268
 msgid  "\<emph\>Like \</emph\>Escape Sequence: {escape 'escape-character'}"
-msgstr ""
+msgstr "<emph>Like </emph>Eskapĉeno: {escape 'eskapsigno'}"
 
 #: source/text/shared/explorer/database/02010100.xhp#par_id3150661.269
 msgid  "Example: select * from Item where ItemName like 'The *%' {escape '*'}"
@@ -51465,7 +51465,7 @@ msgstr ""
 
 #: source/text/shared/guide/background.xhp#par_id3153878.25
 msgid  "Choose \<emph\>Format - Page\</emph\>."
-msgstr ""
+msgstr "Elektu menuerojn <emph>Formato - Paĝo</emph>."
 
 #: source/text/shared/guide/background.xhp#par_id3149581.26
 msgid  "On the \<emph\>Background\</emph\> tab page, select a background color or a background graphic."
@@ -51513,7 +51513,7 @@ msgstr ""
 
 #: source/text/shared/guide/border_paragraph.xhp#par_id3156326.4
 msgid  "Select one of the default border styles in the \<emph\>Default\</emph\> area."
-msgstr ""
+msgstr "Elektu iun el la defaŭltaj borderaj stiloj en la areo <emph>Defaŭlta</emph>."
 
 #: source/text/shared/guide/border_paragraph.xhp#par_id3154285.5
 msgid  "Select a line style and color for the selected border style in the \<emph\>Line\</emph\> area. These settings apply to all border lines that are included in the selected border style."
@@ -51525,7 +51525,7 @@ msgstr ""
 
 #: source/text/shared/guide/border_paragraph.xhp#par_id3153543.7
 msgid  "Click \<emph\>OK\</emph\> to apply the changes."
-msgstr ""
+msgstr "Alklaku je <emph>Akcepti</emph> por apliki la ŝanĝojn."
 
 #: source/text/shared/guide/border_paragraph.xhp#hd_id3149237.8
 msgid  "Setting a Customized Border Style"
@@ -51553,7 +51553,7 @@ msgstr ""
 
 #: source/text/shared/guide/border_paragraph.xhp#par_id3151178.14
 msgid  "Click \<emph\>OK\</emph\> to apply the changes."
-msgstr ""
+msgstr "Alklaku je <emph>Akcepti</emph> por apliki la ŝanĝojn."
 
 #: source/text/shared/guide/border_table.xhp#tit
 msgid  "Defining Borders for Tables and Table Cells"
@@ -51621,7 +51621,7 @@ msgstr ""
 
 #: source/text/shared/guide/border_table.xhp#par_id3149807.14
 msgid  "Click \<emph\>OK\</emph\> to apply the changes."
-msgstr ""
+msgstr "Alklaku je <emph>Akcepti</emph> por apliki la ŝanĝojn."
 
 #: source/text/shared/guide/breaking_lines.xhp#tit
 msgid  "Inserting Line Breaks in Cells"
@@ -52193,7 +52193,7 @@ msgstr ""
 
 #: source/text/shared/guide/collab.xhp#par_id4263740
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Konservi kiel</link>"
 
 #: source/text/shared/guide/configure_overview.xhp#tit
 msgid  "Configuring $[officename]"
@@ -52869,7 +52869,7 @@ msgstr ""
 
 #: source/text/shared/guide/data_im_export.xhp#par_id5669423
 msgid  "Choose \<emph\>Edit - Copy\</emph\>."
-msgstr ""
+msgstr "Elektu menuerojn <emph>Redakti - Kopii</emph>."
 
 #: source/text/shared/guide/data_im_export.xhp#par_id3619495
 msgid  "In the Base window, click \<emph\>Tables\</emph\> to view the tables."
@@ -53925,7 +53925,7 @@ msgstr ""
 
 #: source/text/shared/guide/doc_autosave.xhp#par_id3148672.15
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Konservi kiel</link>"
 
 #: source/text/shared/guide/doc_autosave.xhp#par_id3159150.16
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - \<link href=\"text/shared/optionen/01010200.xhp\" name=\"Load/Save - General\"\>Load/Save - General\</link\>"
@@ -54153,7 +54153,7 @@ msgstr ""
 
 #: source/text/shared/guide/doc_save.xhp#par_id3153524.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Konservi kiel</link>"
 
 #: source/text/shared/guide/doc_save.xhp#par_id3154140.7
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - \<link href=\"text/shared/optionen/01010200.xhp\" name=\"Load/Save - General\"\>Load/Save - General\</link\>"
@@ -54509,7 +54509,7 @@ msgstr ""
 
 #: source/text/shared/guide/edit_symbolbar.xhp#par_id3145171.91
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Alklaku je <emph>Akcepti</emph>."
 
 #: source/text/shared/guide/email.xhp#tit
 msgid  "Sending Documents as E-mail"
@@ -54637,7 +54637,7 @@ msgstr ""
 
 #: source/text/shared/guide/export_ms.xhp#par_id3149669.5
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Konservi kiel</link>"
 
 #: source/text/shared/guide/fax.xhp#tit
 msgid  "Sending Faxes and Configuring $[officename] for Faxing"
@@ -54777,7 +54777,7 @@ msgstr ""
 
 #: source/text/shared/guide/find_attributes.xhp#par_idN106C5
 msgid  "Choose \<emph\>Edit - Find & Replace\</emph\>."
-msgstr ""
+msgstr "Elektu je <emph>Redakti - Serĉi kaj anstataŭigi</emph>."
 
 #: source/text/shared/guide/find_attributes.xhp#par_idN106CD
 msgid  "Clear the \<emph\>Search for\</emph\> text box if necessary."
@@ -54849,7 +54849,7 @@ msgstr ""
 
 #: source/text/shared/guide/flat_icons.xhp#par_id3157909.7
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Alklaku je <emph>Akcepti</emph>."
 
 #: source/text/shared/guide/floating_toolbar.xhp#tit
 msgid  "Using Toolbars"
@@ -55549,7 +55549,7 @@ msgstr ""
 
 #: source/text/shared/guide/hyperlink_search.xhp#par_id3159157.24
 msgid  "\<link href=\"text/shared/main0209.xhp\" name=\"Hyperlink Bar\"\>Hyperlink Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0209.xhp\" name=\"Hyperlink Bar\">Hiperligila breto</link>"
 
 #: source/text/shared/guide/imagemap.xhp#tit
 msgid  "Adding Clickable Hotspots to Images"
@@ -56925,7 +56925,7 @@ msgstr ""
 
 #: source/text/shared/guide/lineend_define.xhp#par_id3151176.20
 msgid  "Click \<emph\>OK\</emph\> to close the dialog."
-msgstr ""
+msgstr "Alklaku <emph>Akcepti</emph> por fermi la dialogon."
 
 #: source/text/shared/guide/line_intext.xhp#tit
 msgid  "Drawing Lines in Text"
@@ -57065,7 +57065,7 @@ msgstr ""
 
 #: source/text/shared/guide/linestyle_define.xhp#par_id3152920.12
 msgid  "Click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Alklaku je <emph>Aldoni</emph>."
 
 #: source/text/shared/guide/linestyle_define.xhp#par_id3145606.17
 msgid  "Enter a name for the line style and click \<emph\>OK\</emph\>."
@@ -57409,7 +57409,7 @@ msgstr ""
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id3154013.15
 msgid  "\<link href=\"text/scalc/01/06030000.xhp\" name=\"Detective\"\>Detective\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/06030000.xhp\" name=\"Detective\">Spurilo</link>"
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id3153573.16
 msgid  "Lines and Page Breaks"
@@ -57417,7 +57417,7 @@ msgstr ""
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id3151116.17
 msgid  "\<link href=\"text/swriter/01/05030200.xhp\" name=\"Text Flow\"\>Text Flow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/05030200.xhp\" name=\"Text Flow\">Teksta fluo</link>"
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id6054567
 msgid  "Page setup"
@@ -57493,7 +57493,7 @@ msgstr ""
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id3156138.41
 msgid  "\<link href=\"text/scalc/01/12120000.xhp\" name=\"Validity\"\>Validity\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12120000.xhp\" name=\"Validity\">Valideco</link>"
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id3166431.46
 msgid  "Workbook"
@@ -57509,7 +57509,7 @@ msgstr ""
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id3148593.49
 msgid  "\<link href=\"text/scalc/01/04050000.xhp\" name=\"Sheet\"\>Sheet\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04050000.xhp\" name=\"Sheet\">Folio</link>"
 
 #: source/text/shared/guide/microsoft_terms.xhp#par_id0522200809491330
 msgid  "Shared Workbooks"
@@ -58209,11 +58209,11 @@ msgstr ""
 
 #: source/text/shared/guide/pageformat_max.xhp#par_id3145120.42
 msgid  "Click \<emph\>OK\</emph\> to close the dialog."
-msgstr ""
+msgstr "Alklaku <emph>Akcepti</emph> por fermi la dialogon."
 
 #: source/text/shared/guide/pageformat_max.xhp#par_id3155388.43
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Printing\"\>Printing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"Printing\">Presi</link>"
 
 #: source/text/shared/guide/paintbrush.xhp#tit
 msgid  "Copying Attributes With the Format Paintbrush"
@@ -59069,7 +59069,7 @@ msgstr ""
 
 #: source/text/shared/guide/scripting.xhp#par_idN1093D
 msgid  "Click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Alklaku je <emph>Aldoni</emph>."
 
 #: source/text/shared/guide/scripting.xhp#par_idN10760
 msgid  "In the \<emph\>Category\</emph\> list box, scroll down and open the \"%PRODUCTNAME Macros\" entry."
@@ -59209,7 +59209,7 @@ msgstr ""
 
 #: source/text/shared/guide/scripting.xhp#par_idN10B15
 msgid  "Choose \<emph\>Insert - Hyperlink\</emph\>."
-msgstr ""
+msgstr "Elektu je <emph>Enmeti - Hiperligilo</emph>."
 
 #: source/text/shared/guide/scripting.xhp#par_idN10B19
 msgid  "Click the \<emph\>Events\</emph\> button."
@@ -59465,7 +59465,7 @@ msgstr ""
 
 #: source/text/shared/guide/spadmin.xhp#par_id3155417.351
 msgid  "Click \<emph\>Delete\</emph\>."
-msgstr ""
+msgstr "Alklaku <emph>Forviŝi</emph>."
 
 #: source/text/shared/guide/spadmin.xhp#par_id3149909.352
 msgid  "Be sure that you do not delete the generic printer driver, and remember that drivers deleted from server installations are no longer available to other users who are using the same server installation."
@@ -59705,7 +59705,7 @@ msgstr ""
 
 #: source/text/shared/guide/standard_template.xhp#par_id3147315.37
 msgid  "\<link href=\"text/shared/01/01110000.xhp\" name=\"Templates\"\>Templates\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01110000.xhp\" name=\"Templates\">Ŝablonoj</link>"
 
 #: source/text/shared/guide/startcenter.xhp#tit
 msgid  "Start Center"
@@ -60697,7 +60697,7 @@ msgstr ""
 
 #: source/text/shared/guide/xsltfilter_create.xhp#par_idN10A4C
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Alklaku je <emph>Akcepti</emph>."
 
 #: source/text/shared/guide/xsltfilter_create.xhp#par_idN10A56
 msgid  "To Test an XML Filter"
@@ -65937,7 +65937,7 @@ msgstr "Signostilo"
 
 #: source/text/shared/optionen/01041100.xhp#par_idN106B4
 msgid  "\<ahelp hid=\".\"\>Specifies the character style.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Specifas la signan stilon.</ahelp>"
 
 #: source/text/shared/optionen/01041100.xhp#hd_id3143280.43
 msgid  "Apply border and shadow"

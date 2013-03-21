@@ -529,402 +529,322 @@ msgid  "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Враћа редни број дана пре или после одређеног броја радних дана"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
-#, fuzzy
 msgid  "Days"
 msgstr "Дани"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
-#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "Број радних дана пре или после почетног датума"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Празници"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
-#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "Листа вредности датума нерадних дана (одмор, празник, итд.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
-#, fuzzy
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
 msgstr "Враћа број целих дана између почетног и крајњег датума као део године"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Крајњи датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Крајњи датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
-#, fuzzy
 msgid  "Basis"
 msgstr "Основа"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
-#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "Основа за одређивање дана камате"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
 msgstr "Враћа редни број датума који је одређен број месеци пре или после почетног датума"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Месеци"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Број месеци пре или после почетног датума"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
-#, fuzzy
 msgid  "Returns the number of the calendar week in which the specified date occurs."
 msgstr "Враћа број календарске седмице у којој се одређени датум појављује."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
-#, fuzzy
 msgid  "The date"
 msgstr "Датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
-#, fuzzy
 msgid  "Return type"
 msgstr "Врста повраћаја"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
-#, fuzzy
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "Број од 1 до 3 који одређује дан којим седмица почиње"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
 msgstr "Враћа редни број последњег дана месеца којим је одређени број месеци пре или после почетног датума"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Месеци"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Број месеци пре или после почетног датума"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
-#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "Враћа број радних дана између два датума"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Почетни датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Крајњи датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Крајњи датум"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Празници"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
-#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "Листа вредности датума који представљају нерадне дане (одмор, празник, итд.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "Враћа вредност „тачно“ уколико је број паран"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "Враћа вредност „тачно“ уколико је број непаран"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
-#, fuzzy
 msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "Враћа мултиномски коефицијент низа бројева"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "Број(еви)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
 msgstr "Број или листа бројева за рачунање мултиномског коефицијента"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
-#, fuzzy
 msgid  "Returns the sum of a power series"
 msgstr "Враћа збир низа степенова"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.3.String.Text
-#, fuzzy
 msgid  "The independent variable of the power series"
 msgstr "Независна променљива низа степенова"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.5.String.Text
-#, fuzzy
 msgid  "The initial power to which x is to be raised"
 msgstr "Почетни степен на који треба подићи x"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.6.String.Text
-#, fuzzy
 msgid  "M"
 msgstr "M"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.7.String.Text
-#, fuzzy
 msgid  "The increment by which to increase n for each term in the series"
 msgstr "Вредност за коју треба повећати n за сваки члан низа"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.8.String.Text
-#, fuzzy
 msgid  "Coefficients"
 msgstr "Коефицијенти"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
-#, fuzzy
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
 msgstr "Скуп коефицијената којима је помножен сваки следећи степен променљиве x"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
-#, fuzzy
 msgid  "Returns the integer portion of a division"
 msgstr "Враћа целобројни део при дељењу"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
-#, fuzzy
 msgid  "Numerator"
 msgstr "Бројилац"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
-#, fuzzy
 msgid  "The dividend"
 msgstr "Дељеник"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
-#, fuzzy
 msgid  "Denominator"
 msgstr "Именилац"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
-#, fuzzy
 msgid  "The divisor"
 msgstr "Делилац"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
-#, fuzzy
 msgid  "Returns a number rounded to a specified multiple"
 msgstr "Враћа број заокружен на најближу вредност дељиву одређеним бројем"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
-#, fuzzy
 msgid  "The number to round off"
 msgstr "Број за заокруживање"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.4.String.Text
-#, fuzzy
 msgid  "Multiple"
 msgstr "Умножак"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.5.String.Text
-#, fuzzy
 msgid  "The multiple to which you want to round number"
 msgstr "Умножак броја на који желите да заокружите број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.1.String.Text
-#, fuzzy
 msgid  "Returns the square root of a number which has been multiplied by pi"
 msgstr "Враћа квадратни корен броја помноженог са Пи"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
-#, fuzzy
 msgid  "The number by which pi is multiplied"
 msgstr "Број којим је помножено Пи"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.1.String.Text
-#, fuzzy
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "Враћа насумични цео број из задатог опсега"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.2.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "Дно"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.3.String.Text
-#, fuzzy
 msgid  "The smallest integer returned"
 msgstr "Најмањи враћени цео број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.4.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "Врх"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.5.String.Text
-#, fuzzy
 msgid  "The largest integer returned"
 msgstr "Највећи враћени цео број"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.1.String.Text
-#, fuzzy
 msgid  "Returns the greatest common divisor"
 msgstr "Враћа највећи заједнички делилац"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "Број(еви)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "Број или низ бројева"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
-#, fuzzy
 msgid  "Returns the least common multiple"
 msgstr "Враћа најмањи заједнички садржалац"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "Број(еви)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "Број или низ бројева"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.1.String.Text
-#, fuzzy
 msgid  "Returns the modified Bessel function In(x)"
 msgstr "Враћа измењену Беселову функцију In(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
@@ -3880,221 +3800,177 @@ msgid  "The schedule"
 msgstr "Распоред"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "Рачуна број седмица у одређеном периоду"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Први дан периода"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Крајњи датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Последњи дан периода"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Врста"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
 msgstr "Врста обрачуна: врста=0 означава временски интервал; врста=1 календарске седмице."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
-#, fuzzy
 msgid  "Determines the number of months in a specific period."
 msgstr "Одређује број месеци у одређеном периоду."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
-#, fuzzy
 msgid  "First day of the period."
 msgstr "Први дан периода."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Крајњи датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.5.String.Text
-#, fuzzy
 msgid  "Last day of the period."
 msgstr "Последњи дан периода."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Врста"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
 msgstr "Врста обрачуна: врста=0 означава интервал времена, врста=1 месеце у календару."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of years in a specific period."
 msgstr "Рачуна број година у одређеном периоду."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Почетни датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Први дан периода"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Крајњи датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Последњи дан периода"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Врста"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
 msgstr "Врста рачунања: врста=0 означава интервал времена, врста=1 године у календару."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
-#, fuzzy
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
 msgstr "Враћа 1 (TRUE) уколико је датум у преступној години, у супротном 0 (FALSE)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Било који дан у жељеној години"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
-#, fuzzy
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "Враћа број дана у месецу унетог датума."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired month"
 msgstr "Било који дан у жељеном месецу"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
-#, fuzzy
 msgid  "Returns the number of days of the year in which the date entered occurs."
 msgstr "Враћа број дана године унетог датума."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Било који дан у жељеној години"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
-#, fuzzy
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
 msgstr "Враћа број седмица у години унетог датума."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Датум"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Било који дан у жељеној години"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
-#, fuzzy
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
 msgstr "Шифрује или дешифрује текст користећи алгоритам РОТ13"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "Текст"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.3.String.Text
-#, fuzzy
 msgid  "Text to be encrypted or text already encrypted"
 msgstr "Текст за шифровање или већ шифровани текст"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffWeeks.String.Text
-#, fuzzy
 msgid  "WEEKS"
 msgstr "WEEKS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffMonths.String.Text
-#, fuzzy
 msgid  "MONTHS"
 msgstr "MONTHS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffYears.String.Text
-#, fuzzy
 msgid  "YEARS"
 msgstr "YEARS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_IsLeapYear.String.Text
-#, fuzzy
 msgid  "ISLEAPYEAR"
 msgstr "ISLEAPYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInMonth.String.Text
-#, fuzzy
 msgid  "DAYSINMONTH"
 msgstr "DAYSINMONTH"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInYear.String.Text
-#, fuzzy
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WeeksInYear.String.Text
-#, fuzzy
 msgid  "WEEKSINYEAR"
 msgstr "WEEKSINYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_Rot13.String.Text
-#, fuzzy
 msgid  "ROT13"
 msgstr "ROT13"

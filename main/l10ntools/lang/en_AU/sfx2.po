@@ -286,8 +286,9 @@ msgid  "Function Bar"
 msgstr "Function Bar"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "An error has occurred in the special configuration.\nPlease contact your administrator."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 #, fuzzy
@@ -315,8 +316,9 @@ msgid  "Load %PRODUCTNAME During System Start-Up"
 msgstr "Load %PRODUCTNAME During System Start-Up"
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Disable systray Quickstarter"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 #, fuzzy
@@ -411,8 +413,9 @@ msgid  "Link graphics"
 msgstr "Link graphics"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+#, fuzzy
 msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
-msgstr ""
+msgstr "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -620,12 +623,14 @@ msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "~Display %PRODUCTNAME %MODULENAME Help at Start-up"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+#, fuzzy
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+#, fuzzy
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "The selected filter $(FILTER) is not included in your edition.\nYou can find more information about it on our homepage."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 #, fuzzy
@@ -763,8 +768,9 @@ msgid  "Warning"
 msgstr "Warning"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+#, fuzzy
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 #, fuzzy
@@ -897,8 +903,9 @@ msgid  "~Unprotect..."
 msgstr "~Unprotect..."
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+#, fuzzy
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 #, fuzzy
@@ -1778,8 +1785,9 @@ msgid  "Do you really want to delete Style $1?"
 msgstr "Do you really want to delete Style $1?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+#, fuzzy
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "You are deleting an applied Style!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 #, fuzzy
@@ -1837,8 +1845,9 @@ msgid  "Tasks"
 msgstr "Tasks"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+#, fuzzy
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 #, fuzzy
@@ -1973,8 +1982,9 @@ msgid  "The category is not empty.\\nDelete anyway?"
 msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+#, fuzzy
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 #, fuzzy
@@ -2032,8 +2042,9 @@ msgid  "Templates"
 msgstr "Templates"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "Error copying template \"$1\". \nA template with this name may already exist."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 #, fuzzy
@@ -2099,8 +2110,9 @@ msgid  "The selected file has an incorrect format."
 msgstr "The selected file has an incorrect format."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+#, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 #, fuzzy
@@ -2332,8 +2344,9 @@ msgid  "File format:"
 msgstr "File format:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+#, fuzzy
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "This document contains:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 #, fuzzy
@@ -2655,16 +2668,19 @@ msgid  "~Thesaurus..."
 msgstr "~Thesaurus..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
+#, fuzzy
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "No default printer found.\nPlease choose a printer and try again."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+#, fuzzy
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Could not start printer.\nPlease check your printer configuration."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+#, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 #, fuzzy
@@ -2707,16 +2723,19 @@ msgid  " (read-only)"
 msgstr " (read-only)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
+#, fuzzy
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+#, fuzzy
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "The page size has been modified.\nShould the new settings be saved\nin the active document?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+#, fuzzy
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 #, fuzzy

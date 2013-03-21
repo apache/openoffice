@@ -53,19 +53,19 @@ msgstr "परतियै सैट्ट करा "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~  बड़ा उच्चा, .\n सिर्फ भरोसेमंद फाइल स्थानें दे मैक्रों  गी चलने दी इजाज़त ऐ.दुए सब मैक्रो,भामें दस्खत होए दे होन जां नेईं,असमर्थ होई जंदे न."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "उच्चा.\nसिर्फ भरोसेमंद स्रोतें आसेआ दस्खतशुदा मैक्रों  गी चलने दी इजाज़त ऐ. बिजनदस्खत मैक्रो असमर्थ होई जंदे न. "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~दरम्याना. \n भरोसारैह्‌त स्रोतें दे मैक्रो अमल च आह्‌नने शा पैह्‌लें पुश्टीकरण लोड़दा ऐ. "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~घट्ट(दी सफारश नेईं) \n  सब मैक्रो बिजन पुश्टीकरण दे अमल च आह्‌न्ने जाङन.इस सैट्टिंग गी सिर्फ तां बरतो जेकर तुसें गी जकीन ऐ जे जेह्‌ड़े दस्तावेज खोह्‌ल्ले जाङन, ओह् सब सुरक्षत न."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "भरोसेमंद सर्टिफकेट "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "गी जारी\tआसेआ जारी\tसमां पूरा होने दी तरीक"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "खॕलकें  इस पैकेज पर दस्खत की
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tआसेआ दस्खतशुदा\tहिंसेदार ID आसेआ जारी\tतरीक "
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr " सर्टिफकेट मान्य नेईं होई स�
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "खेतर\tमूल्य "
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "जेह्‌ड़ा सर्टिफकेट तुस साइ
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "गी जारी\tआसेआ जारी\tसमां पूरा होने दी तरीक"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

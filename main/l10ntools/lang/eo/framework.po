@@ -137,7 +137,7 @@ msgstr "Reprovi"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME ne povis konservi gravaj internaj informoj pro nesufiĉa disponebla diska spaco ĉe:\n%PATH\n\nVi ne povos daŭre labori per %PRODUCTNAME krom se vi disponigas pluan diskan spacon ĉe tiu loko.\n\nDisponiginte pluan diskan spacon, premu la butonon 'Refari' por reprovi konservi la datumojn.\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "Reagordi"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "Eraro okazis dum ŝargado de datumoj pri interfacagordo. La aplikaĵo nun haltos.\nBonvolu provi reinstali la aplikaĵon."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "Eraro okazis dum ŝargado de datumoj pri interfacagordo. La aplikaĵo nun haltos.\nBonvolu provi forigi de la aplikaĵo vian profilon de uzanto."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "Eraro okazis dum ŝargado de datumoj pri interfacagordo. La aplikaĵo nun haltos.\nBonvolu provi forigi de la aplikaĵo vian profilon de uzanto, aŭ reinstali ĝin."
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

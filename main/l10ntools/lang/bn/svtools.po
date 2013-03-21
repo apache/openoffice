@@ -577,596 +577,478 @@ msgid  "~Options..."
 msgstr "পছন্দসমূহ... (~O)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
-#, fuzzy
 msgid  "Select Directory"
 msgstr "নির্দেশিকা নির্বাচন করুন"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
-#, fuzzy
 msgid  "Cannot change to directory"
 msgstr "নির্দেশিকাতে পরিবর্তন করতে পারে না"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
-#, fuzzy
 msgid  "Open"
 msgstr "খুলুন"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
-#, fuzzy
 msgid  "~File"
 msgstr "ফাইল (~F)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
-#, fuzzy
 msgid  "~Directory"
 msgstr "নির্দেশিকা (~D)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
-#, fuzzy
 msgid  "File ~type"
 msgstr "ফাইলের ধরন (~t)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
-#, fuzzy
 msgid  "Can't open file"
 msgstr "ফাইল খুলতে পারে না"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
-#, fuzzy
 msgid  "Can't open directory"
 msgstr "নির্দেশিকা খুলতে পারে না"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \\nOverwrite ?"
-msgstr ""
+msgstr "এই ফাইলটি ইতোমধ্যে বিদ্যমান।\nউপরিলেখন করবেন কি ?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
-#, fuzzy
 msgid  "Up One Level"
 msgstr "এক স্তর উপরে তুলুন"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "সংরক্ষণ করুন"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
-#, fuzzy
 msgid  "D~rive"
 msgstr "ড্রাইভ (~r)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
-#, fuzzy
 msgid  "User Directory"
 msgstr "ব্যবহারকারী নির্দেশিকা"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
-#, fuzzy
 msgid  "Create Directory"
 msgstr "নির্দেশিকা তৈরি করুন"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
-#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
 msgstr "আপনি কি %s নির্দেশিকাটি তৈরি দেখতে চান ?"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates: Address Book Assignment"
 msgstr "খসড়া: ঠিকানার বইয়ের বরাদ্দকরণ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
-#, fuzzy
 msgid  "Address Book Source"
 msgstr "ঠিকানার বইয়ের উৎস"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "উপাত্ত উৎস"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
-#, fuzzy
 msgid  "~Address Data Source..."
 msgstr "ঠিকানা উপাত্তের উৎস... (~A)"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
-#, fuzzy
 msgid  "Table"
 msgstr "সারণী"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
-#, fuzzy
 msgid  "Field assignment"
 msgstr "ক্ষেত্র বরাদ্দকরণ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<none>"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "কোম্পানি"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "বিভাগ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
-#, fuzzy
 msgid  "First name"
 msgstr "প্রথম নাম"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
-#, fuzzy
 msgid  "Last name"
 msgstr "শেষ নাম"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "সড়ক"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "দেশ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
-#, fuzzy
 msgid  "ZIP Code"
 msgstr "জিপ কোড"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "শহর"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "শিরোনাম"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "অবস্থান"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
-#, fuzzy
 msgid  "Addr. Form"
 msgstr "ঠিকানা ফর্ম"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "আদ্যক্ষর"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
-#, fuzzy
 msgid  "Complimentary close"
 msgstr "প্রশংসাসূচক বন্ধ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
-#, fuzzy
 msgid  "Tel: Home"
 msgstr "টেলিফোন: বাসা"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
-#, fuzzy
 msgid  "Tel: Work"
 msgstr "টেলিফোন: কাজ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
-#, fuzzy
 msgid  "FAX"
 msgstr "ফ্যাক্স"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
-#, fuzzy
 msgid  "E-mail"
 msgstr "ই-মেইল"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "নোট"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
-#, fuzzy
 msgid  "User 1"
 msgstr "ব্যবহারকারী ১"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
-#, fuzzy
 msgid  "User 2"
 msgstr "ব্যবহারকারী ২"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
-#, fuzzy
 msgid  "User 3"
 msgstr "ব্যবহারকারী ৩"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
-#, fuzzy
 msgid  "User 4"
 msgstr "ব্যবহারকারী ৪"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "আইডি"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "রাষ্ট্র"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
-#, fuzzy
 msgid  "Tel: Office"
 msgstr "টেলিফোন: অফিস"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "পেজার"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
-#, fuzzy
 msgid  "Mobile"
 msgstr "মোবাইল"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
-#, fuzzy
 msgid  "Tel: Other"
 msgstr "টেলিফোন: অন্যান্য"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "বর্ষপঞ্জী"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "আমন্ত্রণ করুন"
 
 #: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
-#, fuzzy
 msgid  "Unformatted text"
 msgstr "অবিন্যস্ত পাঠ"
 
 #: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "বিটম্যাপ"
 
 #: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
-#, fuzzy
 msgid  "GDI metafile"
 msgstr "GDI মেটাফাইল"
 
 #: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
-#, fuzzy
 msgid  "Formatted text [RTF]"
 msgstr "বিন্যাসিত পাঠ [RTF]"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing format"
 msgstr "চিত্র বিন্যাস"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
-#, fuzzy
 msgid  "SVXB (StarView bitmap/animation)"
 msgstr "SVXB (StarView বিটম্যাপ/অ্যানিমেশন)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
-#, fuzzy
 msgid  "Status Info from Svx Internal Link"
 msgstr "Svx এর অভ্যন্তরীণ সংযোগ হতে অবস্থার তথ্য"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
-#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (%PRODUCTNAME এর সংযোগ)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
-#, fuzzy
 msgid  "Netscape Bookmark"
 msgstr "নেটস্কেপ বুকমার্ক"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
-#, fuzzy
 msgid  "Star server format"
 msgstr "স্টার সার্ভার বিন্যাস"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
-#, fuzzy
 msgid  "Star object format"
 msgstr "স্টার অবজেক্ট বিন্যাস"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
-#, fuzzy
 msgid  "Applet object"
 msgstr "অ্যাপলেট অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
-#, fuzzy
 msgid  "Plug-in object"
 msgstr "প্লাগ-ইন অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
-#, fuzzy
 msgid  "StarWriter 3.0 object"
 msgstr "StarWriter ৩.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 object"
 msgstr "StarWriter ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
-#, fuzzy
 msgid  "StarWriter 5.0 object"
 msgstr "StarWriter ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
 msgstr "StarWriter/ওয়েব ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
 msgstr "StarWriter/ওয়েব ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
 msgstr "StarWriter/মাস্টার ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
 msgstr "StarWriter/মাস্টার ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
-#, fuzzy
 msgid  "StarDraw object"
 msgstr "StarDraw অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
-#, fuzzy
 msgid  "StarDraw 4.0 object"
 msgstr "StarDraw ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
-#, fuzzy
 msgid  "StarImpress 5.0 object"
 msgstr "StarImpress ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
-#, fuzzy
 msgid  "StarDraw 5.0 object"
 msgstr "StarDraw ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
-#, fuzzy
 msgid  "StarCalc object"
 msgstr "StarCalc অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
-#, fuzzy
 msgid  "StarCalc  4.0 object"
 msgstr "StarCalc ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
-#, fuzzy
 msgid  "StarCalc 5.0 object"
 msgstr "StarCalc ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
-#, fuzzy
 msgid  "StarChart object"
 msgstr "StarChart অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
-#, fuzzy
 msgid  "StarChart 4.0 object"
 msgstr "StarChart ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "StarChart ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
-#, fuzzy
 msgid  "StarImage object"
 msgstr "StarImage অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
-#, fuzzy
 msgid  "StarImage 4.0 object"
 msgstr "StarImage ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
-#, fuzzy
 msgid  "StarImage 5.0 object"
 msgstr "StarImage ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
-#, fuzzy
 msgid  "StarMath object"
 msgstr "StarMath অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
-#, fuzzy
 msgid  "StarMath 4.0 object"
 msgstr "StarMath ৪.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
-#, fuzzy
 msgid  "StarMath 5.0 object"
 msgstr "StarMath ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
-#, fuzzy
 msgid  "StarObject Paint object"
 msgstr "StarObject অংকন অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
-#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
 msgstr "HTML (HyperText মার্কআপ ভাষা)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
-#, fuzzy
 msgid  "HTML format"
 msgstr "HTML বিন্যাস"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
-#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "Biff5 (মাইক্রোসফট এক্সেল ৫.০/৯৫)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
-#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "Biff8 (মাইক্রোসফট এক্সেল ৯৭/২০০০/এক্সপি)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
-#, fuzzy
 msgid  "Sylk"
 msgstr "Sylk"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
-#, fuzzy
 msgid  "DDE link"
 msgstr "DDE সংযোগ"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
-#, fuzzy
 msgid  "DIF"
 msgstr "DIF"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
-#, fuzzy
 msgid  "Microsoft Word object"
 msgstr "মাইক্রোসফট ওয়ার্ড অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
-#, fuzzy
 msgid  "StarFrameSet object"
 msgstr "StarFrameSet অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
-#, fuzzy
 msgid  "Office document object"
 msgstr "অফিস নথির অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
-#, fuzzy
 msgid  "Notes document info"
 msgstr "নোটের নথি তথ্য"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
-#, fuzzy
 msgid  "Sfx document"
 msgstr "Sfx নথি"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "StarChart ৫.০ অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
-#, fuzzy
 msgid  "Graphic object"
 msgstr "গ্রাফিক অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর লিখন অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর লিখন/ওয়েব অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর লিখন/মাস্টার অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর চিত্র অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর ইমপ্রেস অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর ক্যাল্ক অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর ছক অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর গণিত অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
-#, fuzzy
 msgid  "Windows metafile"
 msgstr "উইন্ডোজ মেটাফাইল"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
-#, fuzzy
 msgid  "Data source object"
 msgstr "উপাত্ত উৎসের অবজেক্ট"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
-#, fuzzy
 msgid  "Data source table"
 msgstr "উপাত্ত উৎসের সারণী"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
-#, fuzzy
 msgid  "SQL query"
 msgstr "SQL জিজ্ঞাসা"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION এর সংলাপ"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "সংযোগ"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
-#, fuzzy
 msgid  "HTML format without comments"
 msgstr "মন্তব্য ব্যতীত HTML বিন্যাস"
 
@@ -1763,636 +1645,518 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
-#, fuzzy
 msgid  "Source code"
 msgstr "উৎস কোড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
-#, fuzzy
 msgid  "Bookmark file"
 msgstr "বুকমার্ক ফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "গ্রাফিক্স"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
-#, fuzzy
 msgid  "Configuration file"
 msgstr "বহি:বিন্যাস ফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
-#, fuzzy
 msgid  "Application"
 msgstr "প্রয়োগন"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
-#, fuzzy
 msgid  "Database table"
 msgstr "উপাত্ত ভান্ডার সারণী"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
-#, fuzzy
 msgid  "System file"
 msgstr "পদ্ধতি ফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
-#, fuzzy
 msgid  "MS Word document"
 msgstr "MS Word নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
-#, fuzzy
 msgid  "Help file"
 msgstr "সহায়তা ফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "HTML নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
-#, fuzzy
 msgid  "Archive file"
 msgstr "সংরক্ষন করা ফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
-#, fuzzy
 msgid  "Log file"
 msgstr "ঘটনাপঞ্জী"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Database"
 msgstr "%STAROFFICE উপাত্ত ভান্ডার "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
 msgstr "StarWriter 4.0 / 5.0 প্রধান নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Image"
 msgstr "%STAROFFICE  চিত্র"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
-#, fuzzy
 msgid  "Text file"
 msgstr "পাঠ্য ফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "সংযোগ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "%STAROFFICE ৩.০ -৫.০ মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel document"
 msgstr "MS Excel নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel template"
 msgstr "MS Excel নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
-#, fuzzy
 msgid  "Batch file"
 msgstr "ব্যাচফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
-#, fuzzy
 msgid  "File"
 msgstr "ফাইল"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "ফোল্ডার"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "পাঠ্য নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "স্প্রেডশীট"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "উপস্থাপনা"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "অঙ্কণ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "HTML নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "Master document"
 msgstr "প্রধান নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "সূত্র"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
-#, fuzzy
 msgid  "Database"
 msgstr "উপাত্ত ভান্ডার "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION স্প্রেডশীট মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION অঙ্কণ মাপনদন্ড "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION উপস্থাপনা মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION পাঠ্য নথি মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
-#, fuzzy
 msgid  "Local drive"
 msgstr "স্থানীয় ড্রাইভ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
-#, fuzzy
 msgid  "Disk drive"
 msgstr "ডিস্ক ড্রাইভ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
-#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "CD-ROM ড্রাইভ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
-#, fuzzy
 msgid  "Network connection"
 msgstr "নেটওয়ার্ক সংযোগ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "MS PowerPoint নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "MS PowerPoint  মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "MS PowerPoint দেখান"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION  সূত্র"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ছকচিত্র"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION অঙ্কণ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION স্প্রেডশীট"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION উপস্থাপনা"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION পাঠ্য নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION প্রধান নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
-#, fuzzy
 msgid  "MathML Document"
 msgstr "MathML নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "OpenDocument উপাত্ত ভান্ডার"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "OpenDocument অঙ্কণ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument সূত্র"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "OpenDocument প্রধান নথি"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "OpenDocument উপস্থাপনা"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "OpenDocument স্প্রেডশীট"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "OpenDocument পাঠ্য"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "OpenDocument স্প্রেডশীট মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument অঙ্কণ মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "OpenDocument উপস্থাপনা মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "OpenDocument পাঠ্য মাপনদন্ড"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "%PRODUCTNAME  সম্প্রসারন"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
-#, fuzzy
 msgid  "[None]"
 msgstr "[একটিও না]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
-#, fuzzy
 msgid  "Unknown"
 msgstr "অজ্ঞাত"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
-#, fuzzy
 msgid  "Default"
 msgstr "পূর্ব নির্ধারিত"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
-#, fuzzy
 msgid  "Afrikaans (South Africa)"
 msgstr "আফ্রিকানস (সাউথ আফ্রিকা)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
-#, fuzzy
 msgid  "Albanian"
 msgstr "আলবেনিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
-#, fuzzy
 msgid  "Arabic"
 msgstr "অ্যারাবিক"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Algeria)"
 msgstr "অ্যারাবিক (আলজেরিয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Bahrain)"
 msgstr "অ্যারাবিক (বাহারাইন)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PairedList.item
-#, fuzzy
 msgid  "Arabic (Chad)"
 msgstr "অ্যারাবিক (চাদ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PairedList.item
-#, fuzzy
 msgid  "Arabic (Comoros)"
 msgstr "অ্যারাবিক (কমোরোস)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PairedList.item
-#, fuzzy
 msgid  "Arabic (Djibouti)"
 msgstr "অ্যারাবিক (ডিজিবুতি)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
-#, fuzzy
 msgid  "Arabic (Egypt)"
 msgstr "অ্যারাবিক (ইজিপ্ট)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Eritrea)"
 msgstr "অ্যারাবিক (ইরিট্রেয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
-#, fuzzy
 msgid  "Arabic (Iraq)"
 msgstr "অ্যারাবিক (ইরাক)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PairedList.item
-#, fuzzy
 msgid  "Arabic (Israel)"
 msgstr "অ্যারাবিক (ইসরাইল)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Jordan)"
 msgstr "অ্যারাবিক (জর্দান)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
-#, fuzzy
 msgid  "Arabic (Kuwait)"
 msgstr "অ্যারাবিক (কুয়েত)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
-#, fuzzy
 msgid  "Arabic (Lebanon)"
 msgstr "অ্যারাবিক (লেবানন)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Libya)"
 msgstr "অ্যারাবিক (লিবিয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Mauritania)"
 msgstr "অ্যারাবিক (মাউরিতানিয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
-#, fuzzy
 msgid  "Arabic (Morocco)"
 msgstr "অ্যারাবিক (মরোক্কো)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Oman)"
 msgstr "অ্যারাবিক (ওমান)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PairedList.item
-#, fuzzy
 msgid  "Arabic (Palestine)"
 msgstr "অ্যারাবিক (প্যালেস্তাইন)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
-#, fuzzy
 msgid  "Arabic (Qatar)"
 msgstr "অ্যারাবিক (কাতার)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Saudi Arabia)"
 msgstr "অ্যারাবিক (সৌদি আরব)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Somalia)"
 msgstr "অ্যারাবিক (সোমালিয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Sudan)"
 msgstr "অ্যারাবিক (সুদান)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Syria)"
 msgstr "অ্যারাবিক (সিরিয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
-#, fuzzy
 msgid  "Arabic (Tunisia)"
 msgstr "অ্যারাবিক (তুনিশিযা)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
-#, fuzzy
 msgid  "Arabic (UAE)"
 msgstr "অ্যারাবিক (ইউ এ ই)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
-#, fuzzy
 msgid  "Arabic (Yemen)"
 msgstr "অ্যারাবিক (ইয়েমেন)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
-#, fuzzy
 msgid  "Armenian"
 msgstr "আরমেনিয়াম"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
-#, fuzzy
 msgid  "Assami"
 msgstr "আসামি"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
-#, fuzzy
 msgid  "Azerbaijani Latin"
 msgstr "আযারবাইযানি ল্যাটিন"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
-#, fuzzy
 msgid  "Azerbaijani Cyrillic"
 msgstr "আযারবাইযানি সাইরিলিক"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
-#, fuzzy
 msgid  "Basque"
 msgstr "বস্কো"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
-#, fuzzy
 msgid  "Bengali (India)"
 msgstr "বাংলা (ভারত)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
-#, fuzzy
 msgid  "Bulgarian"
 msgstr "বুলগেরিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
-#, fuzzy
 msgid  "Belarusian"
 msgstr "বেলারাশিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
-#, fuzzy
 msgid  "Catalan"
 msgstr "ক্যাটালান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "চাইনীজ (ঐতিহ্যবাহী)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
-#, fuzzy
 msgid  "Chinese (simplified)"
 msgstr "চাইনীজ (সরলীকৃত)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
-#, fuzzy
 msgid  "Chinese (Hong Kong)"
 msgstr "চাইনীজ (হং কং)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
-#, fuzzy
 msgid  "Chinese (Singapore)"
 msgstr "চাইনীজ (সিঙ্গাপুর)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
-#, fuzzy
 msgid  "Chinese (Macau)"
 msgstr "চাইনীজ (মাকাউ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
-#, fuzzy
 msgid  "Croatian"
 msgstr "ক্রোয়েশিয়া"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
-#, fuzzy
 msgid  "Czech"
 msgstr "চেয"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
-#, fuzzy
 msgid  "Danish"
 msgstr "ড্যানিশ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "ডাচ (নেদারল্যান্ড)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
-#, fuzzy
 msgid  "Dutch (Belgium)"
 msgstr "ডাচ (বেলজিয়াম)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
-#, fuzzy
 msgid  "English (USA)"
 msgstr "ইংরেজী (ইউ এস এ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
-#, fuzzy
 msgid  "English (UK)"
 msgstr "ইংরেজী (ইউ কে)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
-#, fuzzy
 msgid  "English (Australia)"
 msgstr "ইংরেজী (অস্ট্রেলিয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
-#, fuzzy
 msgid  "English (Canada)"
 msgstr "ইংরেজী (কানাডা)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
-#, fuzzy
 msgid  "English (New Zealand)"
 msgstr "ইংরেজী (নিউজিল্যান্ড)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
-#, fuzzy
 msgid  "English (Eire)"
 msgstr "ইংরেজী (এইরি)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
-#, fuzzy
 msgid  "English (South Africa)"
 msgstr "ইংরেজী (সাউথ আফ্রিকা)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
-#, fuzzy
 msgid  "English (Jamaica)"
 msgstr "ইংরেজী (জামাইকা)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
-#, fuzzy
 msgid  "English (Caribbean)"
 msgstr "ইংরেজী (ক্যারেব্বিয়ান)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
-#, fuzzy
 msgid  "English (Belize)"
 msgstr "ইংরেজী (বেলজি)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
-#, fuzzy
 msgid  "English (Trinidad)"
 msgstr "ইংরেজী (ত্রনিদাদ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
-#, fuzzy
 msgid  "English (Zimbabwe)"
 msgstr "ইংরেজী (জিম্বাবুয়ে)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
-#, fuzzy
 msgid  "English (Philippines)"
 msgstr "ইংরেজী (ফিলিপাইন)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
-#, fuzzy
 msgid  "English (India)"
 msgstr "ইংরেজী (ভারত)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
-#, fuzzy
 msgid  "Estonian"
 msgstr "ইস্তোনিয়া"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
-#, fuzzy
 msgid  "Finnish"
 msgstr "ফিনিশ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
-#, fuzzy
 msgid  "Faroese"
 msgstr "ফারোসি"
 
@@ -2401,162 +2165,130 @@ msgid  "Persian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
-#, fuzzy
 msgid  "French (France)"
 msgstr "ফ্রেঞ্চ (ফ্রান্স)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
-#, fuzzy
 msgid  "French (Belgium)"
 msgstr "ফ্রেঞ্চ (বেলজিযাম)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
-#, fuzzy
 msgid  "French (Canada)"
 msgstr "ফ্রেঞ্চ (কানাডা)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
-#, fuzzy
 msgid  "French (Switzerland)"
 msgstr "ফ্রেঞ্চ (সুইজারল্যান্ড)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
-#, fuzzy
 msgid  "French (Luxembourg)"
 msgstr "ফ্রেঞ্চ (লুক্সেমবার্গ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
-#, fuzzy
 msgid  "French (Monaco)"
 msgstr "ফ্রেঞ্চ (মনাকো)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
-#, fuzzy
 msgid  "Gascon"
 msgstr "গ্যাসকন"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "জার্মান (জার্মানি)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
-#, fuzzy
 msgid  "German (Switzerland)"
 msgstr "জার্মান (সুইজারল্যান্ড)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
-#, fuzzy
 msgid  "German (Austria)"
 msgstr "জার্মান (অষ্ট্রেলিয়া)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
-#, fuzzy
 msgid  "German (Luxembourg)"
 msgstr "জার্মান (লুক্সেমবার্গ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
-#, fuzzy
 msgid  "German (Liechtenstein)"
 msgstr "জার্মান (লিচতেস্তিয়ান)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
-#, fuzzy
 msgid  "Greek"
 msgstr "গ্রীক"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
-#, fuzzy
 msgid  "Gujarati"
 msgstr "গুজরাটি"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
-#, fuzzy
 msgid  "Hebrew"
 msgstr "হিব্রু"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
-#, fuzzy
 msgid  "Hindi"
 msgstr "হিন্দী"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
-#, fuzzy
 msgid  "Hungarian"
 msgstr "হাঙ্গেরিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
-#, fuzzy
 msgid  "Icelandic"
 msgstr "আইসল্যান্ডিক"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
-#, fuzzy
 msgid  "Indonesian"
 msgstr "ইন্দোনেশিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "ইতালীয়ান (ইতালী)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
-#, fuzzy
 msgid  "Italian (Switzerland)"
 msgstr "ইতালীয়ান (সুইজারল্যান্ড)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
-#, fuzzy
 msgid  "Japanese"
 msgstr "জাপানীজ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
-#, fuzzy
 msgid  "Kannada"
 msgstr "কান্নাদা"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
-#, fuzzy
 msgid  "Kashmiri (Kashmir)"
 msgstr "কাশমিরি (কাশমির)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
-#, fuzzy
 msgid  "Kashmiri (India)"
 msgstr "কাশমিরি (ভারত)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
-#, fuzzy
 msgid  "Kazak"
 msgstr "কাজাক"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
-#, fuzzy
 msgid  "Konkani"
 msgstr "কোনকানি"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
-#, fuzzy
 msgid  "Korean (RoK)"
 msgstr "কোরিয়ান (RoK)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
-#, fuzzy
 msgid  "Latvian"
 msgstr "ল্যাটভিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
-#, fuzzy
 msgid  "Lithuanian"
 msgstr "লিথুয়ানিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
-#, fuzzy
 msgid  "Macedonian"
 msgstr "ম্যাকডোনিয়ান"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
-#, fuzzy
 msgid  "Malay (Malaysia)"
 msgstr "মালায় (মালেয়শিয়া)"
 
@@ -3486,107 +3218,86 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Display IDs"
 msgstr "আইডিসমূহ প্রদর্শন করুন"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "This is the input window"
 msgstr "এটি ইনপুট উইন্ডো"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "TestTool এ স্থানান্তর করুন"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show all windows"
 msgstr "সকল উইন্ডো দেথান"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "ছোট নাম দেখান (যদি বিদ্যমান থাকে)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Always show long-name"
 msgstr "সবসময় বড় নাম দেখান"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
-#, fuzzy
 msgid  "DisplayHID"
 msgstr "এইচআইডি-প্রদর্শন করুন"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
-#, fuzzy
 msgid  "Translation"
 msgstr "অনুবাদ"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "‍‌‍‍‌‌সম্পাদন (~E)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
-#, fuzzy
 msgid  "Original Text"
 msgstr "মুল পাঠ"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "মন্তব্য"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
-#, fuzzy
 msgid  "~Comment"
 msgstr "মন্তব্য (~C)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "নির্বাচন করুন (‍‌‍‌‍‍‌‍‍‍‍‌‌‌‌~S)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "~Restore"
 msgstr "পুনরুদ্ধার করুন (~R)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "গ্রহন করুন (~A)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "পরবর্তী (~N)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
-#, fuzzy
 msgid  "Inplace Translation"
 msgstr "উপযুক্ত অনুবাদ"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
-#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "অনুবাদটি হারিয়ে যাবে। যেকোনোভাবে অগ্রসর হতে চান?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
-#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "নিয়ন্ত্রনটি আর বৈধ নেই। অনুবাদটি সংরক্ষণ করা যায় না।"
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
-#, fuzzy
 msgid  "GPF occurred"
 msgstr "GPF সংঘটিত হয়েছে"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
-#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "সহায়তা-আইডি অনন্য-আইডির সাথে মেলে না:"
 
@@ -3599,26 +3310,21 @@ msgid  "Tab Panel Scroll Button, forward"
 msgstr ""
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
-#, fuzzy
 msgid  "Roadmap Skeleton Demo"
 msgstr "রোডম্যাপ কাঠামো উদাহরণ"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "স্বাগতম"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
-#, fuzzy
 msgid  "Prepare"
 msgstr "প্রস্তুত হন"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
-#, fuzzy
 msgid  "Setup"
 msgstr "সেটআপ"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
-#, fuzzy
 msgid  "Finish"
 msgstr "শেষ করুন"

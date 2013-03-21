@@ -61,7 +61,7 @@ msgstr "បន្ថែម​​​ពុម្ព​អក្សរ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "តើ​​អ្នក​​ពិត​​ជា​​ចង់​​សរ​សេរ​​ជាន់​​លើ​​ឯកសារ​​ពុម្ព​អក្សរ​​នេះ​​ឬ ? ​\n%s​"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "គ្មាន"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "ឯកសារ​​ទ្រង់​ទ្រាយ​មួយ​​ (ដែល​មាន​​កន្ទុយ​ .afm ) ​​​រក​មិន​​ឃើញ​សម្រាប់​​ពុម្ព​អក្សរ ​\n%s\nដូច្នេះ​ ពុម្ព​អក្សរ​មិន​អាច​ត្រូវ​បាន​ដំឡើង ។ ឧទាហរណ៍ ឯកសារ​ទ្រង់​ទ្រាយ​អាច​ត្រូវ​បាន​បង្កើត​ដោយ​ ghostscript  និង​ត្រូវ​បាន​ផ្ទុក​ក្នុង​ថតតែ​មួយ ​ដូចទៅ​នឹង​ឯកសារ​ពុម្ព​អក្សរ​ ឬ ថត​រង afm របស់​វា ។"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ឯកសារ​​ប្រព័ន្ធ​​ម៉ែត្រ​​ សម្រាប់​​ឯកសារ​​ពុម្ព​អក្សរ\n%s\n​មិន​អាច​​​​​ចម្លង​បាន​​ ។ ពុម្ព​អក្សរ​​នឹង​​មិន​​ត្រូវ​​បាន​​ដំឡើង​ឡើយ ។​"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ឯកសារ​​ពុម្ព​អក្សរ​ \n   %s\nមិន​​អាច​​​ចម្លង​​បាន​ ។ ពុម្ព​អក្សរ​​នឹង​​មិន​​​ត្រូវ​​បាន​​ដំឡើង​​ឡើយ ។​"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -177,7 +177,7 @@ msgstr "ទំព័រ​​​សាក​ល្បង​​​ត្រូវ
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
-msgstr ""
+msgstr "គ្មាន​ម៉ាស៊ីន​បោះពុម្ព​អាច​ត្រូវ​បានដំឡើង​ទេ ពីព្រោះ​ប្រព័ន្ធ​ឯកសារ​​បាន​តែ​អាន​ ។\nសូម​ទាក់ទង​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ​របស់​អ្នក ។"
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -289,7 +289,7 @@ msgstr "ឯកសារ​​​មិន​​មាន​​​ប្រព័
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "ប្រព័ន្ធម៉ែត្រ​ \n\n%s\n\nមិន​អាច​​ត្រូវ​បាន​បម្លែង​​ ដោយ​សារ​មូល​ហេតុ​ដូច​ខាង​ក្រោម ៖ \n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "តែង​តែ​ត្រូវ​ការ​កម្មវិធ
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "មិន​​អាច​​​យក​​កម្មវិធី​​បញ្ជា \"%s1\" ​​​​​ចេញ​ទេ​ ។ គ្មាន​​លទ្ធភាព​​យក​​ឯកសារ​​ចេញ​​ទេ \n\n​%s2 ។​ "
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

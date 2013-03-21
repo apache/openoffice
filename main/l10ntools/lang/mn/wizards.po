@@ -445,7 +445,7 @@ msgstr "<wizard_name> хэвийг <current_date>-нд үүсгэсэн."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Чухал файлууд олдоогүй учир залуурчийг ажиллуулж чадахгүй.\n'Хэрэгсэл - Тохируулга - %PRODUCTNAME - Замууд' доторх 'Өгөгдмөл' товчийг дарж замуудад жинхэнэ өгөгдмөл тохиргоог буцааж олгоно.\nДараа нь залуурчийг дахин ажиллуулна уу."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "~Маягт дахь талбарууд"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Зүүн жагсаалтад хоёртын талбарууд нь үргэлж байх ба сонгогдох боломжтой.\nХэрвээ боломжтой бол тэд нар зурган хэлбэрээр тавигдсан байгаа."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Дэд маягт гэж өөр маягтад орсон маягт юм.\nДэд маягтууд нь хүснэгт эсвэл асуулгын өгөгдлийг one-to-many холбоос руу олгоход нэн тохиромжтой."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Анкет дахь талбарууд"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' ба '<FIELDNAME2>' холболт хоёр удаа сонгогдсон байна.\nХолболтууд зөвхөн нэг удаа л хэрэглэгдэнэ."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Маягтын нэрийг тогтоох"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "'%FORMNAME' нэртэй маягт аль хэдийн байна. Өөр нэр сонгоно уу."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Өгөгдлийн сангийн хүснэгтийн агуулах т
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' нэр аль хэдийн байна.\nӨөр нэр оруулна уу."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Вэб залуурч"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Вэб залуурч танд интернетэд баримт нийтлэхэд тань тусална. \n\nТаны баримт интернет хөтөчид харагддаг болж хөрвүүлэгдэнэ. Мөн түүнчлэн хялбар хандах боломжоор хангах баримт руу заасан холбоосуудтай агуулгын хүснэгт үүсгэнэ. Вэб залуурч мөн вэб хуудасны загвар, үзэмжийг өөрчлөх боломж олгоно.\n\nТа интернетэд нийтэлсэн баримтаа цаг үргэлж арчлах, шинэ байлгах мөн түүнчлэн баримт нэмэх болон устгах боломжтой."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Нягтлан харах"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Сонгосон тохиргоо устах гэж байна.\n\nТа тэдгээр тохиргоог устгахыг үнэхээр хүсэж байна уу? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "'%FILENAME' FTP лавлахыг үүсгэх боломжгүй."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' FTP лавлах байхгүй байна.\nЛавлахыг одоо үүсгэх үү?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "'%FILENAME' Zip файлыг үүсгэх боломжгүй: Ижил �
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "'%FILENAME' дотоод лавлах үүсгэх боломжгүй. \nТа бичих эрхтэй эсэхээ шалгана уу."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' дотоод лавлах байхгүй байна. \nЛавлахыг одоо үүсгэх үү?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

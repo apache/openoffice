@@ -445,7 +445,7 @@ msgstr "Chaidh an teamplaid a chruthachadh le <wizard_name> <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Cha do ghabh an draoidh a chur gu dol a chionn 's gun robh faidhlichean cudromach a dhìth.\nBriog air a' phutan \"Bun-roghainn\" fo \"Innealan - Roghainnean - %PRODUCTNAME - Slighean\" gus na slighean dha na roghainnean bunaiteach tùsail aiseag.\nRuith an draoidh a-rithist an uairsin."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Raoin~tean san fhoirm"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Chithear raointean bìnearaidh air an liosta an-còmhnaidh 's gabhaidh an taghadh on liosta chlì.\nThèid an làimhseachadh mar dhealbhan, ma ghabhas sin a dhèanamh."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "'S e foirm a thèid a chur a-steach ann am foirm eile a tha ann am fo-fhoirm.\nCleachd fo-fhoirmean gus dàta o chlàir no ceistean (aig a bheil dàimh aon-ri-aon) eile a shealltainn."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Raointean san fhoirm"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Chaidh an t-alt \"<FIELDNAME1>\" agus \"<FIELDNAME2>\" a thaghadh dà thuras\nach chan urrainn dhut alt a chleachdadh ach aon turas."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Suidhich ainm an fhoirm"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Tha foirm ann mu thràth air a bheil \"%FORMNAME\".\nTagh ainm eile."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Chan urrainn dhut an raon seo a chur a-steach a chionn 's gun rachadh e 
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Tha an t-ainm \"%TABLENAME\" ann mu thràth. \nCuir a-steach ainm eile."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Draoidh an lìn"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Cuidichidh draoidh an lìn thu le foillseachadh sgrìobhainnean air an eadar-lìon.\n\nIompaichidh e na sgrìobhainnean 'na chruth a ghabhas a shealltainn ann am brabhsair-lìn. A bharrachd air sin, cruthaichidh e duilleag air a bhios clàr-innse le ceanglaichean air gus am faigh thu greim air na sgrìobhainnean agad gu furasta. Bheir e comas dhut cuideachd dealbhadh is co-dhealbhachd na làraich-lìn agad a ghnàthachadh.\n\n'S urrainn dhut na sgrìobhainnean agad 's a dh'fhoillsich thu air an lìon ùrachadh leis no cur ris no feadhainn a thoirt air falbh aig àm sam bith."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Ro-shealladh"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Thèid na roghainnean a thagh thu a sguabadh às.\n\nA bheil thu cinnteach gu bheil thu airson na roghainnean seo a sguabadh às? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Cha do ghabh an t-eòlaire FTP \"%FILENAME\" a chruthachadh."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Chan eil an t-eòlaire FTP \"%FILENAME\" ann. \nA bheil thu airson a chruthachadh an-dràsta?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Cha do ghabh am faidhle ZIP \"%FILENAME\" a chruthachadh: tha eòlaire l
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Cha do ghabh an t-eòlaire ionadail \"%FILENAME\" a chruthachadh. \nDèan cinnteach gu bheil cead-sgrìobhaidh agad."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Chan eil an t-eòlaire ionadail \"%FILENAME\" ann. \nA bheil thu airson a chruthachadh an-dràsta?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

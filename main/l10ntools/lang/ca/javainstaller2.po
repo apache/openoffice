@@ -153,11 +153,11 @@ msgstr "Crea un directori nou"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "El directori '${DIR}' no existeix.\nVoleu crear-lo ara?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "El directori '${DIR}' no existeix.\nVoleu crear-lo ara o triar-ne un altre?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -261,7 +261,7 @@ msgstr "Per continuar, feu clic a \"Següent\"."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Nota: Aquesta instal·lació es farà sense permisos d'administrador. Per tant, la funcionalitat es veurà reduïda (el JRE no serà instal·lable ni es podrà integrar l'aplicació al sistema).\nFeu clic a \"Cancel·la\" i eleveu els vostres privilegis a administrador si voleu utilitzar totes les funcions."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -433,7 +433,7 @@ msgstr "S'està analitzant..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "S'està analitzant la base de dades\nEspereu un moment..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

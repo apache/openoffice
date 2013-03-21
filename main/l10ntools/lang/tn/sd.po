@@ -238,8 +238,9 @@ msgid  "Move slides"
 msgstr "Verplaas skyfies"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
+#, fuzzy
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Nie genoeg geheue nie!\nDie aksie sal gestaak word."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 #, fuzzy
@@ -436,877 +437,702 @@ msgid  "Last column"
 msgstr "Laaste kolom"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.ModalDialog.Text
-#, fuzzy
 msgid  "HTML Export"
 msgstr "HTML-uitvoer"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FixedLine.Text
-#, fuzzy
 msgid  "Assign design"
 msgstr "Wys ontwerp toe"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RadioButton.Text
-#, fuzzy
 msgid  "New design"
 msgstr "Nuwe ontwerp"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_OLD_DESIGN.RadioButton.Text
-#, fuzzy
 msgid  "Existing design"
 msgstr "Bestaande ontwerp"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DEL_DESIGN.PushButton.Text
-#, fuzzy
 msgid  "Delete Selected Design"
 msgstr "Skrap geselekteerde ontwerp"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DESC.FixedText.Text
-#, fuzzy
 msgid  "Select an existing design or create a new one"
 msgstr "Kies 'n bestaande ontwerp of skep 'n nuwe een"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FixedLine.Text
-#, fuzzy
 msgid  "Publication type"
 msgstr "Soort publikasie"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RadioButton.Text
-#, fuzzy
 msgid  "Standard H~TML format"
 msgstr "Standaard H~TML-formaat"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RadioButton.Text
-#, fuzzy
 msgid  "Standard HTML with ~frames"
 msgstr "Standard HTML met ~rame"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "~Outomaties"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
-#, fuzzy
 msgid  "~WebCast"
 msgstr "~WebUitsending"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Opsies"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CheckBox.Text
-#, fuzzy
 msgid  "Create title page"
 msgstr "Skep titelblad"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_NOTES.CheckBox.Text
-#, fuzzy
 msgid  "Show notes"
 msgstr "Vertoon notas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FixedLine.Text
-#, fuzzy
 msgid  "Advance slides"
 msgstr "Rol skyfies aan"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RadioButton.Text
-#, fuzzy
 msgid  "~As stated in document"
 msgstr "~Soos in dokument gestel"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_AUTO.RadioButton.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "~Outomaties"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Slide view time:"
 msgstr "~Skyfie-besigtigingstyd:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TimeField.QuickHelpText
-#, fuzzy
 msgid  "~Duration of page"
 msgstr "~Duur van bladsy"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CheckBox.Text
-#, fuzzy
 msgid  "~Endless"
 msgstr "~Eindeloos"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FixedLine.Text
-#, fuzzy
 msgid  "WebCast"
 msgstr "WebUitsending"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RadioButton.Text
-#, fuzzy
 msgid  "~Active Server Pages (ASP)"
 msgstr "~Active Server Pages (ASP)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RadioButton.Text
-#, fuzzy
 msgid  "Perl"
 msgstr "Perl"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FixedText.Text
-#, fuzzy
 msgid  "~URL for listeners"
 msgstr "~URL vir luisteraars"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FixedText.Text
-#, fuzzy
 msgid  "URL for ~presentation:"
 msgstr "URL vir ~voorlegging:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FixedText.Text
-#, fuzzy
 msgid  "URL for ~Perl scripts:"
 msgstr "URL vir ~Perl-skripte:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_1.FixedLine.Text
-#, fuzzy
 msgid  "Save graphics as"
 msgstr "Stoor grafika as"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RadioButton.Text
-#, fuzzy
 msgid  "~PNG"
 msgstr "~PNG"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RadioButton.Text
-#, fuzzy
 msgid  "~GIF"
 msgstr "~GIF"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RadioButton.Text
-#, fuzzy
 msgid  "~JPG"
 msgstr "~JPG"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FixedText.Text
-#, fuzzy
 msgid  "Quality"
 msgstr "Gehalte"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FixedLine.Text
-#, fuzzy
 msgid  "Monitor resolution"
 msgstr "Skermresolusie"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RadioButton.Text
-#, fuzzy
 msgid  "Low resolution (~640x480 pixels)"
 msgstr "Lae resolusie (~640x480 pixels)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RadioButton.Text
-#, fuzzy
 msgid  "Medium resolution (~800x600 pixels)"
 msgstr "Medium resolusie (~800x600 pixels)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RadioButton.Text
-#, fuzzy
 msgid  "High resolution (~1024x768 pixels)"
 msgstr "Hoë resolusie (~1024x768 pixels)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FixedLine.Text
-#, fuzzy
 msgid  "Effects"
 msgstr "Effekte"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CheckBox.Text
-#, fuzzy
 msgid  "~Export sounds when slide advances"
 msgstr "~Voer klanke uit wanneer skyfie aanrol"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CheckBox.Text
-#, fuzzy
 msgid  "Export ~hidden slides"
 msgstr "~Voer versteekte skyfies uit"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FixedLine.Text
-#, fuzzy
 msgid  "Information for the title page"
 msgstr "Inligting vir titelblad"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "~Outeur"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FixedText.Text
-#, fuzzy
 msgid  "E-~mail address"
 msgstr "E-~posadres"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FixedText.Text
-#, fuzzy
 msgid  "Your hom~epage"
 msgstr "U tuis~blad"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_2.FixedText.Text
-#, fuzzy
 msgid  "Additional ~information"
 msgstr "Bykomende ~inligting"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CheckBox.Text
-#, fuzzy
 msgid  "Link to a copy of the ~original presentation"
 msgstr "Koppel met 'n afskrif van die ~oorspronklike voorlegging"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CheckBox.Text
-#, fuzzy
 msgid  "Note: 'Created with %PRODUCTNAME'"
 msgstr "Nota: 'Geskep met %PRODUCTNAME'"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FixedLine.Text
-#, fuzzy
 msgid  "Select button style"
 msgstr "Kies knoppiestyl"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Text only"
 msgstr "~Net teks"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FixedLine.Text
-#, fuzzy
 msgid  "Select color scheme"
 msgstr "Kies kleurskema"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RadioButton.Text
-#, fuzzy
 msgid  "~Apply color scheme from document"
 msgstr "~Pas kleurskema van dokument toe"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RadioButton.Text
-#, fuzzy
 msgid  "Use ~browser colors"
 msgstr "Gebruik ~blaaierkleure"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RadioButton.Text
-#, fuzzy
 msgid  "~Use custom color scheme"
 msgstr "~Gebruik pasgemaakte kleurskema"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PushButton.Text
-#, fuzzy
 msgid  "Text"
 msgstr "Teks"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PushButton.Text
-#, fuzzy
 msgid  "Hyper~link"
 msgstr "Hiper~skakel"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PushButton.Text
-#, fuzzy
 msgid  "Active Li~nk"
 msgstr "Aktiewe ska~kel"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PushButton.Text
-#, fuzzy
 msgid  "~Visited Link"
 msgstr "~Besoekte skakel"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PushButton.Text
-#, fuzzy
 msgid  "Bac~kground"
 msgstr "A~gtergrond"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PushButton.Text
-#, fuzzy
 msgid  "<< Back"
 msgstr "<< Terug"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_NEXT.PushButton.Text
-#, fuzzy
 msgid  "Next >>"
 msgstr "Volgende >>"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKButton.Text
-#, fuzzy
 msgid  "~Create"
 msgstr "~Skep"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKButton.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~Stoor"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CancelButton.Text
-#, fuzzy
 msgid  "Do Not Save"
 msgstr "Moenie stoor nie"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.CancelButton.Text
-#, fuzzy
 msgid  "Name HTML Design"
 msgstr "Benoem HTML-ontwerp"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.String.Text
-#, fuzzy
 msgid  "Drawing View"
 msgstr "Tekeningaansig"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.String.Text
-#, fuzzy
 msgid  "This is where you create and edit drawings."
 msgstr "Dit is waar jy tekeninge skep en redigeer."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_N.String.Text
-#, fuzzy
 msgid  "Drawing View"
 msgstr "Tekeningaansig"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.String.Text
-#, fuzzy
 msgid  "This is where you create and edit slides."
 msgstr "Dit is waar jy skyfies skep en redigeer."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.String.Text
-#, fuzzy
 msgid  "Outline View"
 msgstr "Skema-aansig"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.String.Text
-#, fuzzy
 msgid  "This is where you enter or edit text in list form."
 msgstr "Dit is waar jy teks in lysvorm intik of redigeer."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.String.Text
-#, fuzzy
 msgid  "Slides View"
 msgstr "Skyfiesaansig"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.String.Text
-#, fuzzy
 msgid  "This is where you sort slides."
 msgstr "Dit is waar jy skyfies sorteer."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.String.Text
-#, fuzzy
 msgid  "Notes View"
 msgstr "Nota-aansig"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.String.Text
-#, fuzzy
 msgid  "This is where you enter and view notes."
 msgstr "Dit is waar jy aantekeninge intik en redigeer."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.String.Text
-#, fuzzy
 msgid  "Handout View"
 msgstr "Uitdeelstuk-aansig"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.String.Text
-#, fuzzy
 msgid  "This is where you decide on the layout for handouts."
 msgstr "Dit is waar jy besluit oor die uitleg van uitdeelstukke."
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.Control.Text
-#, fuzzy
 msgid  "Custom Animation"
 msgstr "Pasmaak animasie"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_EFFECT.FixedLine.Text
-#, fuzzy
 msgid  "Effect"
 msgstr "Effek"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_ADD_EFFECT.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~Voeg by..."
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_CHANGE_EFFECT.PushButton.Text
-#, fuzzy
 msgid  "~Change..."
 msgstr "~Verander..."
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_REMOVE_EFFECT.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~Verwyder"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_MODIFY.FixedLine.Text
-#, fuzzy
 msgid  "Modify effect"
 msgstr "Wysig effek"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_START.FixedText.Text
-#, fuzzy
 msgid  "~Start"
 msgstr "~Begin"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.item1.StringList.item
-#, fuzzy
 msgid  "On click"
 msgstr "Wanneer kliek"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.item2.StringList.item
-#, fuzzy
 msgid  "With previous"
 msgstr "Met vorige"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.item3.StringList.item
-#, fuzzy
 msgid  "After previous"
 msgstr "N vorige"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_PROPERTY.FixedText.Text
-#, fuzzy
 msgid  "Property"
 msgstr "Eienskap"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PushButton.QuickHelpText
-#, fuzzy
 msgid  "Effect Options"
 msgstr "Effek-opsies"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_SPEED.FixedText.Text
-#, fuzzy
 msgid  "Sp~eed"
 msgstr "Sp~oed"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_CHANGE_ORDER.FixedText.Text
-#, fuzzy
 msgid  "Change order:"
 msgstr "Verander volgorde:"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PLAY.PushButton.Text
-#, fuzzy
 msgid  "~Play"
 msgstr "~Speel"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_SLIDE_SHOW.PushButton.Text
-#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "Skyfiever~toning"
 
 #: source/ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CB_AUTOPREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Automatic pre~view"
 msgstr "Outomatiese voor~skou"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TabDialog.Text
-#, fuzzy
 msgid  "Custom Animation"
 msgstr "Pasmaak animasie"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PageItem.Text
-#, fuzzy
 msgid  "Entrance"
 msgstr "Ingang"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PageItem.Text
-#, fuzzy
 msgid  "Emphasis"
 msgstr "Beklemtoning"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PageItem.Text
-#, fuzzy
 msgid  "Exit"
 msgstr "Afsluit"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PageItem.Text
-#, fuzzy
 msgid  "Motion Paths"
 msgstr "Bewegingpaaie"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Misc Effects"
 msgstr "Diverse effekte"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.FT_SPEED.FixedText.Text
-#, fuzzy
 msgid  "Speed"
 msgstr "Spoed"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.CBX_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Automatic preview"
 msgstr "Outomatiese voorskou"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.STR_USERPATH.String.Text
-#, fuzzy
 msgid  "User paths"
 msgstr "Gebruikerpaaie"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.TabDialog.Text
-#, fuzzy
 msgid  "Effect Options"
 msgstr "Effek-opsies"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PageItem.Text
-#, fuzzy
 msgid  "Effect"
 msgstr "Effek"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PageItem.Text
-#, fuzzy
 msgid  "Timing"
 msgstr "Tydreëling"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PageItem.Text
-#, fuzzy
 msgid  "Text Animation"
 msgstr "Teksanimasie"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.TabPage.Text
-#, fuzzy
 msgid  "Effect"
 msgstr "Effek"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_SETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Instellings"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_START.CheckBox.Text
-#, fuzzy
 msgid  "Accelerated start"
 msgstr "Versnelde begin"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_END.CheckBox.Text
-#, fuzzy
 msgid  "Decelerated end"
 msgstr "Vertraagde einde"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_AUTORESTART.CheckBox.Text
-#, fuzzy
 msgid  "Reverse automatically"
 msgstr "Keer outomaties om"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_ENHANCEMENTS.FixedLine.Text
-#, fuzzy
 msgid  "Enhancement"
 msgstr "Verbetering"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_SOUND.FixedText.Text
-#, fuzzy
 msgid  "Sound"
 msgstr "Klank"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_AFTER_EFFECT.FixedText.Text
-#, fuzzy
 msgid  "After animation "
 msgstr "Ná animasie "
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.item1.StringList.item
-#, fuzzy
 msgid  "Don't dim"
 msgstr "Moenie demp nie"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.item2.StringList.item
-#, fuzzy
 msgid  "Dim with color"
 msgstr "Demp met kleur"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.item3.StringList.item
-#, fuzzy
 msgid  "Hide after animation"
 msgstr "Versteek ná animasie"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.item4.StringList.item
-#, fuzzy
 msgid  "Hide on next animation"
 msgstr "Versteek tydens volgende animasie"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_DIMCOLOR.FixedText.Text
-#, fuzzy
 msgid  "Dim Color"
 msgstr "Dempkleur"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_ANIM.FixedText.Text
-#, fuzzy
 msgid  "Text animation"
 msgstr "Teksanimasie"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.item1.StringList.item
-#, fuzzy
 msgid  "All at once"
 msgstr "Alles tegelykertyd"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.item2.StringList.item
-#, fuzzy
 msgid  "Word by word"
 msgstr "Woord vir woord"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.item3.StringList.item
-#, fuzzy
 msgid  "Letter by letter"
 msgstr "Letter vir letter"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_DELAY.FixedText.Text
-#, fuzzy
 msgid  "delay between characters"
 msgstr "vertraging tussen karakters"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.MF_TEXT_DELAY.MetricField.CustomUnitText
-#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.TabPage.Text
-#, fuzzy
 msgid  "Timing"
 msgstr "Tydreëling"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START.FixedText.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Begin"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.item1.StringList.item
-#, fuzzy
 msgid  "On click"
 msgstr "Wanneer kliek"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.item2.StringList.item
-#, fuzzy
 msgid  "With previous"
 msgstr "Met vorige"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.item3.StringList.item
-#, fuzzy
 msgid  "After previous"
 msgstr "N vorige"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START_DELAY.FixedText.Text
-#, fuzzy
 msgid  "Delay"
 msgstr "Vertraging"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.MetricField.CustomUnitText
-#, fuzzy
 msgid  "sec"
 msgstr "sek"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FixedText.Text
-#, fuzzy
 msgid  "Speed"
 msgstr "Spoed"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_REPEAT.FixedText.Text
-#, fuzzy
 msgid  "Repeat"
 msgstr "Herhaal"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.CBX_REWIND.CheckBox.Text
-#, fuzzy
 msgid  "Rewind when done playing"
 msgstr "Terugspoel wanneer klaar"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FL_TRIGGER.FixedLine.Text
-#, fuzzy
 msgid  "Trigger"
 msgstr "Sneller"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_CLICKSEQUENCE.RadioButton.Text
-#, fuzzy
 msgid  "Animate as part of click sequence"
 msgstr "Animeer as deel van kliksekwensie"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "Start effect on click of"
 msgstr "Begin effek wanneer kliek met"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.TabPage.Text
-#, fuzzy
 msgid  "Text Animation"
 msgstr "Teksanimasie"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.FT_GROUP_TEXT.FixedText.Text
-#, fuzzy
 msgid  "Group text"
 msgstr "Groepteks"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.item1.StringList.item
-#, fuzzy
 msgid  "As one object"
 msgstr "As een objek"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.item2.StringList.item
-#, fuzzy
 msgid  "All paragraphs at once"
 msgstr "Alle paragrawe tegelykertyd"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.item3.StringList.item
-#, fuzzy
 msgid  "By 1st level paragraphs"
 msgstr "Volgens 1e-vlak-paragrawe"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.item4.StringList.item
-#, fuzzy
 msgid  "By 2nd level paragraphs"
 msgstr "Volgens 2e-vlak-paragrawe"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.item5.StringList.item
-#, fuzzy
 msgid  "By 3rd level paragraphs"
 msgstr "Volgens 3e-vlak-paragrawe"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.item6.StringList.item
-#, fuzzy
 msgid  "By 4th level paragraphs"
 msgstr "Volgens 4e-vlak-paragrawe"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.item7.StringList.item
-#, fuzzy
 msgid  "By 5th level paragraphs"
 msgstr "Volgens 5e-vlak-paragrawe"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_GROUP_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "Automatically after"
 msgstr "Outomaties n"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.MF_GROUP_AUTO.MetricField.CustomUnitText
-#, fuzzy
 msgid  "sec"
 msgstr "sek"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_ANIMATE_FORM.CheckBox.Text
-#, fuzzy
 msgid  "Animate attached shape"
 msgstr "Animeer aangehegde vorm"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_REVERSE.CheckBox.Text
-#, fuzzy
 msgid  "In reverse order"
 msgstr "In tru-volgorde"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MenuItem.Text
-#, fuzzy
 msgid  "Start On ~Click"
 msgstr "Begin wanneer ~kliek"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MenuItem.Text
-#, fuzzy
 msgid  "Start ~With Previous"
 msgstr "Begin ~tydens vorige"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MenuItem.Text
-#, fuzzy
 msgid  "Start ~After Previous"
 msgstr "Begin ~na vorige"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MenuItem.Text
-#, fuzzy
 msgid  "~Effect Options..."
 msgstr "~Effekopsies..."
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MenuItem.Text
-#, fuzzy
 msgid  "~Timing..."
 msgstr "~Tydreëling..."
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~Verwyder"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MenuItem.Text
-#, fuzzy
 msgid  "Tiny"
 msgstr "Piepklein"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MenuItem.Text
-#, fuzzy
 msgid  "Smaller"
 msgstr "Kleiner"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MenuItem.Text
-#, fuzzy
 msgid  "Larger"
 msgstr "Groter"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
-#, fuzzy
 msgid  "Extra large"
 msgstr "Ekstra groot"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MenuItem.Text
-#, fuzzy
 msgid  "Tiny"
 msgstr "Piepklein"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_50.MenuItem.Text
-#, fuzzy
 msgid  "Smaller"
 msgstr "Kleiner"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_150.MenuItem.Text
-#, fuzzy
 msgid  "Larger"
 msgstr "Groter"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_400.MenuItem.Text
-#, fuzzy
 msgid  "Extra large"
 msgstr "Ekstra groot"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Horisontaal"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikaal"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MenuItem.Text
-#, fuzzy
 msgid  "Both"
 msgstr "Beide"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MenuItem.Text
-#, fuzzy
 msgid  "Quarter spin"
 msgstr "Kwarttol"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MenuItem.Text
-#, fuzzy
 msgid  "Half spin"
 msgstr "Halftol"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MenuItem.Text
-#, fuzzy
 msgid  "Full spin"
 msgstr "Volle tol"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MenuItem.Text
-#, fuzzy
 msgid  "Two spins"
 msgstr "Twee tolle"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MenuItem.Text
-#, fuzzy
 msgid  "Clockwise"
 msgstr "Kloksgewys"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MenuItem.Text
-#, fuzzy
 msgid  "Counter-clockwise"
 msgstr "Antikloksgewys"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MenuItem.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "Vetdruk"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MenuItem.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "Skuinsdruk"
 
@@ -1315,187 +1141,150 @@ msgid  "Underlined"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.String.Text
-#, fuzzy
 msgid  "Very slow"
 msgstr "Baie stadig"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.String.Text
-#, fuzzy
 msgid  "Slow"
 msgstr "Stadig"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.String.Text
-#, fuzzy
 msgid  "Medium"
 msgstr "Medium"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.String.Text
-#, fuzzy
 msgid  "Fast"
 msgstr "Vinnig"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.String.Text
-#, fuzzy
 msgid  "Very fast"
 msgstr "Baie vinnig"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.String.Text
-#, fuzzy
 msgid  "none"
 msgstr "geen"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.String.Text
-#, fuzzy
 msgid  "Until next click"
 msgstr "Tot volgende kliek"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.String.Text
-#, fuzzy
 msgid  "Until end of slide"
 msgstr "Tot einde van skyfie"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.String.Text
-#, fuzzy
 msgid  "Direction"
 msgstr "Rigting"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.String.Text
-#, fuzzy
 msgid  "Zoom"
 msgstr "Zoem"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.String.Text
-#, fuzzy
 msgid  "Spokes"
 msgstr "Speke"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.String.Text
-#, fuzzy
 msgid  "First color"
 msgstr "Eerste kleur"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.String.Text
-#, fuzzy
 msgid  "Second color"
 msgstr "Tweede kleur"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.String.Text
-#, fuzzy
 msgid  "Fill color"
 msgstr "Vulkleur"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.String.Text
-#, fuzzy
 msgid  "Style"
 msgstr "Styl"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Font"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "Fontkleur"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_SIZE_STYLE_PROPERTY.String.Text
-#, fuzzy
 msgid  "Style"
 msgstr "Styl"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.String.Text
-#, fuzzy
 msgid  "Typeface"
 msgstr "Lettertipe"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "Lynkleur"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.String.Text
-#, fuzzy
 msgid  "Font size"
 msgstr "Fontgrootte"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.String.Text
-#, fuzzy
 msgid  "Size"
 msgstr "Grootte"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.String.Text
-#, fuzzy
 msgid  "Amount"
 msgstr "Hoeveelheid"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.String.Text
-#, fuzzy
 msgid  "Color"
 msgstr "Kleur"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.String.Text
-#, fuzzy
 msgid  "(No sound)"
 msgstr "(Geen klank nie)"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.String.Text
-#, fuzzy
 msgid  "(Stop previous sound)"
 msgstr "(Stop vorige klank)"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.String.Text
-#, fuzzy
 msgid  "Other sound..."
 msgstr "Ander klank..."
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.String.Text
-#, fuzzy
 msgid  "Sample"
 msgstr "Monster"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.String.Text
-#, fuzzy
 msgid  "1 Spoke"
 msgstr "1 speek"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.String.Text
-#, fuzzy
 msgid  "2 Spokes"
 msgstr "2 speke"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.String.Text
-#, fuzzy
 msgid  "3 Spokes"
 msgstr "3 speke"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.String.Text
-#, fuzzy
 msgid  "4 Spokes"
 msgstr "4 speke"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.String.Text
-#, fuzzy
 msgid  "8 Spokes"
 msgstr "8 speke"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.String.Text
-#, fuzzy
 msgid  "Instant"
 msgstr "Kits"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.String.Text
-#, fuzzy
 msgid  "Gradual"
 msgstr "Stelselmatig"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.String.Text
-#, fuzzy
 msgid  "Trigger"
 msgstr "Sneller"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
-#, fuzzy
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
 msgstr "Selekteer eers die skyfie-element en kliek dan 'Byvoeg...' om 'n animasie-effek by te voeg."
 
@@ -1509,72 +1298,58 @@ msgid  "Apply to selected slides"
 msgstr ""
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.Fixedline.Text
-#, fuzzy
 msgid  "Modify transition"
 msgstr "Wysig oorgang"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FixedText.Text
-#, fuzzy
 msgid  "Speed"
 msgstr "Spoed"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.item1.StringList.item
-#, fuzzy
 msgid  "Slow"
 msgstr "Stadig"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.item2.StringList.item
-#, fuzzy
 msgid  "Medium"
 msgstr "Medium"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.item3.StringList.item
-#, fuzzy
 msgid  "Fast"
 msgstr "Vinnig"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FixedText.Text
-#, fuzzy
 msgid  "Sound"
 msgstr "Klank"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.item1.StringList.item
-#, fuzzy
 msgid  "<No Sound>"
 msgstr "<Geen klank nie>"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.item2.StringList.item
-#, fuzzy
 msgid  "<Stop Previous Sound>"
 msgstr "<Stop vorige klank>"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.item3.StringList.item
-#, fuzzy
 msgid  "Other Sound..."
 msgstr "Ander klank..."
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_LOOP_SOUND.Checkbox.Text
-#, fuzzy
 msgid  "Loop until next sound"
 msgstr "Lus tot volgende klank"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_ADVANCE_SLIDE.Fixedline.Text
-#, fuzzy
 msgid  "Advance slide"
 msgstr "Volgende skyfie"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_ON_MOUSE.RadioButton.Text
-#, fuzzy
 msgid  "On mouse click"
 msgstr "Wanneer muis kliek"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_AUTO.RadioButton.Text
-#, fuzzy
 msgid  "Automatically after"
 msgstr "Outomaties n"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.MF_ADVANCE_AUTO_AFTER.MetricField.CustomUnitText
-#, fuzzy
 msgid  "sec"
 msgstr "sek"
 
@@ -1603,227 +1378,182 @@ msgid  "No Transition"
 msgstr "Geen oorgang nie"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Reply"
 msgstr "~Antwoord"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Bold"
 msgstr "~Vetdruk"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "~Italic"
 msgstr "~Skuinsdruk"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "~Underline"
 msgstr "~Onderstreep"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Strikethrough"
 msgstr "~Deurhaal"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~Kopieer"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "~Plak"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Comment"
 msgstr "Skra~p opmerking"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete All Comments b~y %1"
 msgstr "Skrap alle opmerkings ~deur %1"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALL_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~All Comments"
 msgstr "Skrap ~alle opmerkings"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Reply"
 msgstr "~Antwoord"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Comment"
 msgstr "Skra~p opmerking"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete All Comments ~by %1"
 msgstr "Skrap alle opmerkings ~deur %1"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALL_POSTIT.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~All Comments"
 msgstr "Skrap ~alle opmerkings"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_TODAY.String.Text
-#, fuzzy
 msgid  "Today,"
 msgstr "Vandag,"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.String.Text
-#, fuzzy
 msgid  "Yesterday,"
 msgstr "Gister,"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.String.Text
-#, fuzzy
 msgid  "(no author)"
 msgstr "(geen outeur)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
 msgstr "%PRODUCTNAME Impress het die einde van die voorlegging bereik. Wil u verder aan die begin soek?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
 msgstr "%PRODUCTNAME Impress het die begin van die voorlegging bereik. Wil u verder aan die einde soek?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
 msgstr "%PRODUCTNAME Draw het die einde van die dokument bereik. Wil u verder aan die begin soek?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
 msgstr "%PRODUCTNAME Draw het tot aan die begin van die dokument gesoek. Wil u verder aan die einde soek?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Comment"
 msgstr "Voeg opmerking in"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Comment(s)"
 msgstr "Skrap opmerking(s)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.String.Text
-#, fuzzy
 msgid  "Move Comment"
 msgstr "Skuif opmerking"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.String.Text
-#, fuzzy
 msgid  "Edit Comment"
 msgstr "Redigeer opmerking"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.String.Text
-#, fuzzy
 msgid  "Reply to Comment"
 msgstr "Antwoord op opmerking"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_REPLY.String.Text
-#, fuzzy
 msgid  "Reply to %1"
 msgstr "Antwoord aan%1"
 
 #: source/ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "~Graphics"
 msgstr "~Grafika"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "~Tabel..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "~Sel"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "~Voeg saam"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "~Verdeel..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Bokant"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "M~iddel"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Onderkant"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "~Ry"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "Spasieer ~eweredig"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Kies"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~Voeg in..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "Kolo~m"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "Spasieer ~eweredig"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Kies"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~Voeg in..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
@@ -2119,8 +1849,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Tik asseblief 'n naam vir die nuwe pylpunt:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "Die geselekteerde naam bestaan reeds. \nTik asseblief 'n nuwe naam."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -2208,8 +1939,9 @@ msgid  "Insert slides"
 msgstr "Voeg skyfies in"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Is u seker u wil vlak \"$\" skrap?\nLet wel: alle objekte op hierdie vlak sal geskrap word!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -2267,8 +1999,9 @@ msgid  "Insert text frame"
 msgstr "Voeg teksraam in"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "Hierdie funksie kan nie met \ndie geselekteerde objekte laat loop word nie."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -2281,8 +2014,9 @@ msgid  "The file could not be loaded!"
 msgstr "Die lêer kon nie gelaai word nie!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Die formaat van die nuwe bladsye sal aangepas word.\nWil u die objekte ook aanpas?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -2305,8 +2039,9 @@ msgid  "~Edit"
 msgstr "~Redigeer"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Hierdie aksie skrap die lys aksies wat\nontdoen kan word. Veranderinge wat vroeër aan die dokument gemaak is, is nog geldig maar kan nie \nontdoen word nie. Wil u voortgaan en \nsodoende die nuwe skyfie-ontwerp toepas?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2329,8 +2064,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Die dokumentformaat kon nie op die gespesifiseerde drukker gestel word nie."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Hierdie grafika is gekoppel aan 'n dokument. \nWil u die grafika ontkoppel om dit te redigeer?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2468,8 +2204,9 @@ msgid  " (Outline)"
 msgstr " (Skema)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Die gespesifiseerde skaal is ongeldig.\nWil u 'n nuwe skaal invoer?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2821,8 +2558,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Al die tekenobjekte kon nie ontgroepeer word nie."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "'n Ontwerp met hierdie naam bestaan reeds.\nWil u dit vervang?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2965,8 +2703,9 @@ msgid  "Graphics filter"
 msgstr "Grafikafilter"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "Die lêer %\nis nie 'n geldige klanklêer nie!"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3230,12 +2969,10 @@ msgid  "Insert Movie"
 msgstr ""
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-#, fuzzy
 msgid  "Graphics Styles"
 msgstr "Grafikastyle"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-#, fuzzy
 msgid  "Presentation Styles"
 msgstr "Voorleggingstyle"
 
@@ -3253,822 +2990,658 @@ msgid  "All Styles"
 msgstr "Selstyle"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Distribution..."
 msgstr "~Verspreiding..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Drawing View"
 msgstr "~Tekeningaansig"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Outline View"
 msgstr "~Skema-aansig"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "~Skyfiesorteerder"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
-#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "Skyfiever~toning"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "~Voeg springpunt/-lyn in..."
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Redigeer..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "Skyfie-uit~leg"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page Setup..."
 msgstr "~Bladsyopstelling..."
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Slide"
 msgstr "~Nuwe skyfie"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Master"
 msgstr "~Nuwe meester"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Page"
 msgstr "~Nuwe bladsy"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Stel agtergrondprent vir skyfie..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Display Background of Master"
 msgstr "Vertoon agtergrond van meester"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "Vertoon objekte uit meester"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Pag~e"
 msgstr "Blads~y"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "Skyfi~e"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "~Hernoem laag..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Slide"
 msgstr "S~krap skyfie"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Master"
 msgstr "S~krap meester"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Page"
 msgstr "Skra~p bladsy"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Slide"
 msgstr "~Hernoem skyfie"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Master"
 msgstr "~Hernoem meester"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Page"
 msgstr "~Hernoem bladsy"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
-#, fuzzy
 msgid  "L~ine..."
 msgstr "R~eël..."
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
-#, fuzzy
 msgid  "~Area..."
 msgstr "~Area..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Text..."
 msgstr "~Teks..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "~Verbinder..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
-#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "Stel ~roetering terug"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Dimen~sies..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
-#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "Posisie en gr~ootte..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "Redigeer ~punte"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Arra~nge"
 msgstr "Ra~ngskik"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Bring to Front"
 msgstr "~Bring na vore"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Bring ~vorentoe"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Stuur agter~toe"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Send to Back"
 msgstr "~Stuur na agter"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "V~oor objek"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "A~gter objek"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "~Omgekeerd"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "C~haracter..."
 msgstr "K~arakter..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
-#, fuzzy
 msgid  "P~aragraph..."
 msgstr "Pa~ragraaf..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "~Font"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "~Grootte"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "St~yl"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "Vetdruk"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "Skuinsdruk"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Overline"
 msgstr "Oorlyn"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "Onderstreep"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "Deurhaal"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Skadu"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "~Contour"
 msgstr "~Kontoer"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Reëlspasiëring"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
-#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "Enkellynspasiëring"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
-#, fuzzy
 msgid  "1.5 Lines"
 msgstr "1,5 reëls"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
-#, fuzzy
 msgid  "~Double"
 msgstr "~Dubbel"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
-#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "S~pesiale karakter..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "Be~lyning"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Links"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Regs"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Gesentreer"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
-#, fuzzy
 msgid  "Justified"
 msgstr "Alkantbelyn"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "Al~ignment"
 msgstr "Belyn~ing"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Links"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Gesentreer"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Regs"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Bokant"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "M~iddel"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Onderkant"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "Sluit o~bjek"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "Redigeer ~punte"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Move Points"
 msgstr "~Skuif punte"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Points"
 msgstr "Voeg ~punte in"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Points"
 msgstr "~Skrap punte"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "Sluit o~bjek"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MenuItem.Text
-#, fuzzy
 msgid  "~Split Curve"
 msgstr "~Verdeel kurwe"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert to Curve"
 msgstr "Skakel ~om na kurwe"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MenuItem.Text
-#, fuzzy
 msgid  "~Corner"
 msgstr "~Hoek"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MenuItem.Text
-#, fuzzy
 msgid  "Smoot~h"
 msgstr "Gla~d"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MenuItem.Text
-#, fuzzy
 msgid  "S~ymmetric"
 msgstr "S~immetries"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MenuItem.Text
-#, fuzzy
 msgid  "~Reduce Points"
 msgstr "~Verminder punte"
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Groepeer"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Ontgroepeer"
 
 #: source/ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MenuItem.Text
-#, fuzzy
 msgid  "Comb~ine"
 msgstr "Komb~ineer"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MenuItem.Text
-#, fuzzy
 msgid  "~Split"
 msgstr "~Verdeel"
 
 #: source/ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Enter Group"
 msgstr "~Voer groep in"
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit Group"
 msgstr "Sl~uit groep af"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Naam..."
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Beskrywing..."
 
 #: source/ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MenuItem.Text
-#, fuzzy
 msgid  "~Rehearse Timings"
 msgstr "~Oefen tydsberekening"
 
 #: source/ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Custom Animation..."
 msgstr "Doelmaak animasie..."
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "Int~eraction..."
 msgstr "Int~eraksie..."
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Presentation ~Object..."
 msgstr "Voorleggings~objek..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Verstek"
 
 #: source/ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MenuItem.Text
-#, fuzzy
 msgid  "F~ontwork"
 msgstr "F~ontwerk"
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "~Oorspronklike grootte"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "Save as Picture..."
 msgstr "Stoor as beeld..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MenuItem.Text
-#, fuzzy
 msgid  "Crop Picture..."
 msgstr "Snoei prent..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MenuItem.Text
-#, fuzzy
 msgid  "Na~vigator"
 msgstr "Na~vigator"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Point"
 msgstr "Voeg ~punt in"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Links"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Bokant"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Regs"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Onderkant"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MenuItem.Text
-#, fuzzy
 msgid  "~Adapt Position to Object"
 msgstr "~Pas posisionering aan by objek"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Horizontal Left"
 msgstr "Vas ~horisontaal links"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Horizontal ~Center"
 msgstr "Vas horisontaal ~middel"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Hori~zontal Right"
 msgstr "Vas hori~sontaal regs"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Vertical Top"
 msgstr "Vas ~vertikaal bo"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed V~ertical Center"
 msgstr "Vas v~ertikaal middel"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Ver~tical Bottom"
 msgstr "Vas ver~tikaal onder"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Visible Grid"
 msgstr "~Sigbare rooster"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Grid"
 msgstr "Spring na rooster"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Grid to ~Front"
 msgstr "Rooster ~vorentoe"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "~Rooster"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Snap Lines Visible"
 msgstr "~Sigbare springlyne"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "Skiet na springlyne"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "Springlyne vorentoe"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Snap Lines"
 msgstr "~Springlyne"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "Eienska~ppe..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MenuItem.Text
-#, fuzzy
 msgid  "1Bit ~Threshold"
 msgstr "1-bis-~drempel"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MenuItem.Text
-#, fuzzy
 msgid  "1 Bit ~Dithering"
 msgstr "1-bis-~versagting"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "4-bis-grys~kleur"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit ~Color Palette"
 msgstr "4-bis-~kleurpalet"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "8-bis-grysk~leur"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit C~olor Palette"
 msgstr "8-bis-~kleurpalet"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MenuItem.Text
-#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "24-bis- ~ware kleure"
 
 #: source/ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Color Resolution"
 msgstr "~Kleurresolusie"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert"
 msgstr "~Skakel om"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "~Omkeer"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MenuItem.Text
-#, fuzzy
 msgid  "~Rotate"
 msgstr "~Roteer"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MenuItem.Text
-#, fuzzy
 msgid  "C~onnect"
 msgstr "V~erbind"
 
 #: source/ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MenuItem.Text
-#, fuzzy
 msgid  "~Break"
 msgstr "~Breuk"
 
 #: source/ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Style..."
 msgstr "Redigeer styl..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MenuItem.Text
-#, fuzzy
 msgid  "H~yperlink..."
 msgstr "H~iperskakel..."
 
 #: source/ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Poi~nts"
 msgstr "Pu~nte"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Glue Points"
 msgstr "~Plakpunte"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "La~ag"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Voeg in"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "~Wysig"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Skrap"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "~Hernoem"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
-#, fuzzy
 msgid  "To ~Curve"
 msgstr "Na ~kurwe"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
-#, fuzzy
 msgid  "To ~Polygon"
 msgstr "Na ~veelhoek"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "To C~ontour"
 msgstr "Na k~ontoer"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
-#, fuzzy
 msgid  "To 3~D"
 msgstr "Na 3-~D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "Na ~biskaart"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
-#, fuzzy
 msgid  "To ~Metafile"
 msgstr "Na ~metalêer"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "Na 3-D-~roteringsobjek"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "~Vertikaal"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontally"
 msgstr "~Horisontaal"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~3D Effects"
 msgstr "~3-D-effekte"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Design"
 msgstr "~Skyfie-ontwerp"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "Skyfie-~oorgang"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Show Slide"
 msgstr "~Wys skyfie"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Slide"
 msgstr "~Versteek skyfie"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Groepeer"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Ontgroepeer"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Group"
 msgstr "~Redigeer groep"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit group"
 msgstr "S~luit groep af"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Groepeer"
 
 #: source/ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Toolbars"
 msgstr "~Nutsbalke"
 
@@ -4093,157 +3666,126 @@ msgid  "Table"
 msgstr "Tabel"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "~Tabel..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "~Sel"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "~Voeg saam"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "~Verdeel..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Bokant"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "M~iddel"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Onderkant"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "~Ry"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "Spasieer ~eweredig"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Kies"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~Voeg in..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "Kolo~m"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "Spasieer ~eweredig"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Kies"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~Voeg in..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Layer..."
 msgstr "~Voeg laag in..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "Modify La~yer..."
 msgstr "Wysig laa~g..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Skrap ~laag..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "~Pas op alle skyfies toe"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "Pas op ~geselekteerde skyfies toe"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "Wys ~groot voorskou"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "Wys k~lein voorskou"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "~Pas op alle skyfies toe"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "Pas op ~geselekteerde skyfies toe"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Master..."
 msgstr "~Redigeer meester..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "Wys ~groot voorskou"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "Wys k~lein voorskou"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "Pas op ~geselekteerde skyfies toe"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Slide"
 msgstr "~Voeg skyfie in"
 
@@ -4273,447 +3815,358 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME Draw het tot aan die begin van die dokument gesoek. Wil u verder soek aan die einde?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Nuwe"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
-#, fuzzy
 msgid  "~Export..."
 msgstr "~Voer uit..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
-#, fuzzy
 msgid  "Export as PDF..."
 msgstr "Voer uit as PDF..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
-#, fuzzy
 msgid  "Sen~d"
 msgstr "Stu~ur"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page..."
 msgstr "~Bladsy..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Redigeer"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
-#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Plak ~Spesiaal..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "Duplikaa~t..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
-#, fuzzy
 msgid  "Cross-fading..."
 msgstr "Kruisverkleuring..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "F~ields..."
 msgstr "V~elde..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Skrap ~laag..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
-#, fuzzy
 msgid  "Lin~ks..."
 msgstr "Skak~els..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
 msgid  "~View"
 msgstr "~Bekyk"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "Hoof~nutsbalk"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "Opsie~balk"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Presentation"
 msgstr "~Voorlegging"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
-#, fuzzy
 msgid  "Customi~ze..."
 msgstr "Doelm~aak..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "~Rulers"
 msgstr "~Lineale"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes View"
 msgstr "~Nota-aansig"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout View"
 msgstr "~Uitdeelstuk-aansig"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "~Voorskou"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
-#, fuzzy
 msgid  "S~lide"
 msgstr "S~kyfie"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Master"
 msgstr "~Skyfiemeester"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~Titel"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes"
 msgstr "~Notas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout"
 msgstr "~Uitdeelstuk"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "La~ag"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Wor~kspace"
 msgstr "Wer~karea"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Master"
 msgstr "~Meester"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Voeg in"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e..."
 msgstr "Skyfi~e..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "Skyfi~e"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "D~uplikaatskyfie"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "Vou skyfie ~uit"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "Op~sommingskyfie"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "~Laag..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "~Datum (vaste)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
-#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "Dat~um (veranderlike)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "~Tyd (vaste)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
-#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "T~yd (veranderlike)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Page Number"
 msgstr "~Bladsynommer"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
-#, fuzzy
 msgid  "~File Name"
 msgstr "~Lêernaam"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "~Outeur"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
-#, fuzzy
 msgid  "~Select Source..."
 msgstr "~Kies bron..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
-#, fuzzy
 msgid  "~Request..."
 msgstr "~Versoek..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
-#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "S~igblad"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "From ~File..."
 msgstr "Vanaf ~lêer..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "Grafiek"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
-#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "Sw~ewende raam..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "~Lêer..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "Fiel~ds"
 msgstr "Vel~de"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "F~ormateer"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "Te~ks..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Dimen~sies..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "~Verbinder..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "~Laag..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "Wysig ~uitleg..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
-#, fuzzy
 msgid  "Styl~es"
 msgstr "Styl~e"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
 msgid  "~Tools"
 msgstr "~Nutsgoed"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
 msgid  "~Slide Show"
 msgstr "~Skyfievertoning"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "~Check..."
 msgstr "~Gaan na..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
-#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "~OutoSpeltoets"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~Tesourus..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
-#, fuzzy
 msgid  "~Hyphenation"
 msgstr "~Woordafbreking"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "~OutoKorrigeer..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "~Skyfievertoning-instellings..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "~Doelgemaakte skyfievertoning..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Animation"
 msgstr "~Animasie"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Interaction..."
 msgstr "~Interaksie..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck"
 msgstr "~Speltoetser"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "~Wysig"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Bring ~vorentoe"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Stuur agter~toe"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "V~oor objek"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "A~gter objek"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "~Omgekeerd"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
-#, fuzzy
 msgid  "~Eyedropper"
 msgstr "~Oogdrupper"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "~Gallery"
 msgstr "~Galery"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Kleur"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Grysskaal"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "~Swart en wit"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Hoë kontras"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Kleur"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Grysskaal"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "~Swart en wit"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Hoë kontras"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Rangskik"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "~Display Quality"
 msgstr "~Vertoongehalte"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Voor~skoumodus"
 
@@ -6075,37 +5528,30 @@ msgid  "Animation"
 msgstr "Animasie"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "First Image"
 msgstr "Eerste beeld"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Backwards"
 msgstr "Terugwaarts"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Stop"
 msgstr "Stop"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Play"
 msgstr "Speel"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Last Image"
 msgstr "Laaste beeld"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Image Number"
 msgstr "Beeldnommer"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
-#, fuzzy
 msgid  "Duration"
 msgstr "Duur"
 
@@ -6126,7 +5572,6 @@ msgid  "4"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
-#, fuzzy
 msgid  "5"
 msgstr "5"
 
@@ -6135,12 +5580,10 @@ msgid  "6"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
-#, fuzzy
 msgid  "7"
 msgstr "7"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
-#, fuzzy
 msgid  "8"
 msgstr "8"
 
@@ -6149,157 +5592,126 @@ msgid  "9"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
-#, fuzzy
 msgid  "10"
 msgstr "10"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
-#, fuzzy
 msgid  "12"
 msgstr "12"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
-#, fuzzy
 msgid  "15"
 msgstr "15"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
-#, fuzzy
 msgid  "20"
 msgstr "20"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
-#, fuzzy
 msgid  "25"
 msgstr "25"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
-#, fuzzy
 msgid  "50"
 msgstr "50"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
-#, fuzzy
 msgid  "100"
 msgstr "100"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
-#, fuzzy
 msgid  "500"
 msgstr "500"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
-#, fuzzy
 msgid  "1000"
 msgstr "1000"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
-#, fuzzy
 msgid  "Max."
 msgstr "Maks."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
-#, fuzzy
 msgid  "Loop Count"
 msgstr "Lustelling"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Object"
 msgstr "Pas objek toe"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "Pas objekte individueel toe"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete Current Image"
 msgstr "Skrap huidige beeld"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete All Images"
 msgstr "Skrap alle beelde"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Nommer"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
-#, fuzzy
 msgid  "Image"
 msgstr "Beeld"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
-#, fuzzy
 msgid  "Group object"
 msgstr "Groepobjek"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
-#, fuzzy
 msgid  "Bitmap object"
 msgstr "Biskaartobjek"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Belyning"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "Bo links"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "Links"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Left"
 msgstr "Onder links"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "Bokant"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "Gesentreer"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "Onderkant"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Right"
 msgstr "Bo regs"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "Regs"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Right"
 msgstr "Onder regs"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
 msgid  "Create"
 msgstr "Skep"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
 msgid  "Animation group"
 msgstr "Animasiegroep"
 
@@ -6424,32 +5836,26 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "Papierlaai vanaf drukker~instellings"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
-#, fuzzy
 msgid  "Notes Window"
 msgstr "Aantekeningevenster"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~Volgende"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "~Vorige"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
-#, fuzzy
 msgid  "~Go to Slide"
 msgstr "~Gaan na skyfie"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~First Slide"
 msgstr "~Eerste skyfie"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Last Slide"
 msgstr "~Laaste skyfie"
 
@@ -6490,22 +5896,18 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
-#, fuzzy
 msgid  "~Screen"
 msgstr "~Skerm"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
-#, fuzzy
 msgid  "~Black"
 msgstr "~Swart"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
-#, fuzzy
 msgid  "~White"
 msgstr "~Wit"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
-#, fuzzy
 msgid  "~End Show"
 msgstr "~Beëindig vertoning"
 
@@ -6534,52 +5936,42 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Tabelontwerp"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
-#, fuzzy
 msgid  "Show"
 msgstr "Wys"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Header Row"
 msgstr "Opskrifry"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Total Row"
 msgstr "Totale ry"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Rows"
 msgstr "Gebande rye"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "Eerste kolom"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "Laaste kolom"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Columns"
 msgstr "Gebande kolomme"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "Style"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Tabelontwerp"
 
@@ -6620,7 +6012,6 @@ msgid  "Slides per page"
 msgstr ""
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Verstek"
 
@@ -6661,7 +6052,6 @@ msgid  "Top to bottom, then right"
 msgstr ""
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.String.Text
-#, fuzzy
 msgid  "~Contents"
 msgstr "~Inhoud"
 

@@ -53,19 +53,19 @@ msgstr "Επαναφορά"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~Πολύ υψηλό.\nΜόνο μακροεντολές από έμπιστες τοποθεσίες αρχείων επιτρέπεται να εκτελεστούν. Όλες οι άλλες, ανεξάρτητα αν είναι υπογεγραμμένες ή όχι, δεν εκτελούνται."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "~Υψηλό.\nΜόνο μακροεντολές από έμπιστες πηγές επιτρέπεται να εκτελεστούν. Οι μη υπογεγραμμένες δεν εκτελούνται."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~Μέτριο.\nΕπιβεβαίωση από το χρήστη πριν την εκτέλεση μακροεντολών από μη έμπιστες πηγές."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~Χαμηλό (δεν προτείνεται).\nΟι μακροεντολές εκτελούνται χωρίς επιβεβαίωση από το χρήστη. Χρησιμοποιείστε αυτή την επιλογή μόνο αν είστε απόλυτα σίγουροι ότι τα έγγραφα που ανοίγετε είναι ασφαλή."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "Έμπιστα πιστοποιητικά"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "Εκδόθηκε σε\tΕκδόθηκε από\tΗμερομηνία λήξης"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "Αυτό το πακέτο έχει υπογραφεί ψηφιακά α
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tΥπογράφτηκε από\tΤο ψηφιακό αναγνωριστηκό εκδόθηκε από\tΗμερομηνία"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "Αδυναμία επικύρωσης πιστοποιητικού"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "Πεδίο\tΤιμή"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "Επιλέξτε το πιστοποιητικό που θέλετε ν�
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "Εκδόθηκε σε\tΕκδόθηκε από\tΗμερομηνία λήξης"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

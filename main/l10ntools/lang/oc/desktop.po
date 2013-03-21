@@ -117,7 +117,7 @@ msgstr "Los cambiaments dins vòstres paramètres personals seràn pas salvats p
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "Se pòt pas aviar %PRODUCTNAME per çò que i a agut una error a la connexion de la configuracion de donadas %PRODUCTNAME.\n\nSe vos plai, vos calriá contactar l'administrator sistèma."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,39 +145,42 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "Lo camin del gestionari es pas valid.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "Es pas possible d'acabar l'installacion de %PRODUCTNAME per çò que i a pas pro d'espaci sul disc. Se vos plai, vos cal liberar d'espaci disc  e tornat aviar  %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "Se pòt pas installar %PRODUCTNAME per l'utilizaire per çò que a pas los dreches per aquò far. Se vos plai, vos cal verificar qu'avètz los dreches d'accedir al repertòri volgut e tornar aviar l'installacion de %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Sètz a installar la version $NEW de l'extension \\'$NAME\\'.\nLa version novèla $DEPLOYED, nomenada \\'$OLDNAME\\', es ja installada.\nClicatz sus \\'OK\\' per installar l'extension.\nClicatz sus \\'Cancel\\' per arrestar l'installacion."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Sètz a installar la version $NEW de l'extension \\'$NAME\\'.\nAquesta version, nomenada \\'$OLDNAME\\', es ja installada.\nClicatz sus \\'OK\\' per installar l'extension.\nClicatz sus \\'Cancel\\' per arrestar l'installacion."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Sètz a installar la version $NEW de l'extension \\'$NAME\\'.\nLa version anteriora $DEPLOYED, nomenada \\'$OLDNAME\\', es ja installada.\nClicatz sus \\'OK\\' per installar l'extension.\nClicatz sus \\'Cancel\\' per arrestar l'installacion."
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
 msgid  "System dependencies check"
@@ -185,7 +188,7 @@ msgstr "Verificacion de las dependéncias del sistèma"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Impossible d'installar l'extension\nlas dependéncias del sistèma son pas acampadas :"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,7 +256,7 @@ msgstr "Quitar"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME foguèt actualizada cap a una version novèla. Qualques extensions d'%PRODUCTNAME seràn , benlèu, pas compatiblas amb aquesta version adonc es melhor d'actualizar aquestas extensions abans que %PRODUCTNAME siá aviat.\n\nVos cal los dreits administrator per actualizar las extensions partejadas. Contactatz vòstre administrator sistèma per actualizar aquestas extensions:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
@@ -261,7 +264,7 @@ msgstr "Impossible d'installar l'extension las dependéncias del sistèma son pa
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
-msgstr ""
+msgstr "Aquesta extension es pas valida per çò qu'avètz pas acceptat la licéncia.\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -273,42 +276,34 @@ msgid  "Extension Software License Agreement"
 msgstr "Extension Software License Agreement"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
 msgstr "Se vos plai seguissètz aquestas estapas per contunhar l'installacion de l'extension:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
 msgstr "Legir l'Acòrdi tot de Licéncia. Per veire la Licéncia tota vos cal servir de la barra de desfilada o del boton \\'Scroll Down\\'."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
 msgstr "S'acceptatz l'Acòrdi de Licéncia per l'extension, vos cal quichar sul boton \\'Accept\\'."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "~Scroll Down"
 msgstr "De~sfilament cap aval"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
-#, fuzzy
 msgid  "Accept"
 msgstr "Acceptar"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
-#, fuzzy
 msgid  "Decline"
 msgstr "~Refusar"
 
@@ -497,12 +492,14 @@ msgid  "The extension cannot be updated because:"
 msgstr "Se pòt pas installar l'extension per çò que:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
+#, fuzzy
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "La version requerida d'OpenOffice.org correspond pas :"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
+#, fuzzy
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Avètz OpenOffice.org %VERSION"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
 #, fuzzy
@@ -594,90 +591,76 @@ msgid  "Make sure that no further users are working with the same %PRODUCTNAME, 
 msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "Còpia en cors: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "Error del temps de l'apondi: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "Error del temps de l'escafament: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "L'extension es ja aponduda: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "I a pas d'extension installada: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.String.Text
-#, fuzzy
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr "Sincronisar lo referencial per  las extensions %NAME"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "Desconegut"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
+#, fuzzy
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "L'extension necessita al mens OpenOffice.org %VERSION"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
+#, fuzzy
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "L'extension pren pas en carga las versions superioras a : OpenOffice.org %VERSION"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "Possible: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "Desactivar: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "Es pas possible de detectar lo tipe del supòrt: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "Aqueste tipe de supòrt es pas suportat: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "Una error s'es producha del temps del processús : "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "Una error s'es producha del temps de la desactivacion: "
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "UNO Dynamic Library Component"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "UNO Java Component"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "UNO Python Component"
 
@@ -686,371 +669,306 @@ msgid  "UNO Components"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "UNO RDB Type Library"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "UNO Java Type Library"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "Esquèma de configuracion"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "Donadas de configuracion"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Ajuda"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
 msgid  "The extension cannot be installed because:\\n"
-msgstr ""
+msgstr "Se pòt pas installar l'extension per çò que:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
-msgstr ""
+msgstr "L'extension serà pas installada per çò qu'i a agut una error dins los fichièrs Help:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "Destiblança"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "Librariá Basic %PRODUCTNAME"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "Dialog Library"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "Se pòt pas determinar lo nom de la librariá."
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "Lo nom de la librariá existís ja. Se vos plai, causissètz un nom diferent."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "%MACROLANG Library"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.String.Text
-#, fuzzy
 msgid  "Extension Software License Agreement of $NAME:"
 msgstr "Consentiment de licéncia d'extension de logicial de $NAME:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-#, fuzzy
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr "Legissètz la licéncia d'Acòrdi afichada. Per acceptar la licéncia vos cal picar \"yes\" sus l'ecran a quichar sus la tòca Entrada. Picar \"no\" , arrèsta l'installacion de l'extension."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr "[Dintratz \"yes\" o \"no\"]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-#, fuzzy
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Vòstra picada es incorrècta. Se vos plai, picatz \"yes\" o \"no\":"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "ÒC"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Ò"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "NON"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
-#, fuzzy
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
 msgstr "Se pòt pas aviar unopkg . Lo fichièr de varrolh indica qu'es ja lançat. Podètz escafar lo varrolh a:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
-#, fuzzy
 msgid  "ERROR: "
 msgstr "ERROR: "
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Planvenguda, Planvengut a %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "Benvengut"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "Licéncia d'Acòrdi"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Donadas personalas"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "Nom d'utilizaire"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Mesa a jorn en linha"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "Enregistrament"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "L'Ajudaire vos menarà a travèrs la Licéncia d'Acòrdi e  lo transferiment de las donadas de l'utilizaire de  %OLD_VERSION e l'enregistrament de  %PRODUCTNAME.\n\nClicatz 'Seguent' per contunhar."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "L'Ajudaire vos menarà a travèrs l'enregistrament de %PRODUCTNAME.\n\nClicatz sus 'Seguent' per contunhar."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "A~cabar"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Podètz ara suportar e contribuir a la comunautat la mai importanta dins lo monde.\n\nAjudatz nos  per provar que %PRODUCTNAME es un logicial dins un comunautat de partatge qu'es en augmentacion gràcia a l'enregistrament.\n\nL'enregistrament es volontari e sens obligacion."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
 msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "Sètz segur que volètz refusar ?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Benvenguda, Benvengut a %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "L'Ajudaire vos menarà a travèrs la Licéncia d'Acòrdi e  l'enregistrament de %PRODUCTNAME.\n\nClicatz sus 'Seguent' per contunhar."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "Se vos plai, seguissètz aquestas etapas per acceptar la licéncia"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "Legissètz la Licéncia d'Acòrdi completament. Se vos plai, clicatz sus la barra de desfilada verticala  o lo boton '%PAGEDOWN' per veire lo tèxte tot entièr."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Clicatz sus 'Acceptar' per acceptar los tèrmes de l'Acòrdi."
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "Desfilada aval"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "Acce~ptar"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "~Refusar"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Trasferir las donadas personalas"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Se pòt tornar utilizar la majoritat de las informacions de l'installacion %OLDPRODUCT per %PRODUCTNAME %PRODUCTVERSION.\n\nSe volètz pas tornar utilizar de paramètres dins %PRODUCTNAME %PRODUCTVERSION, vos cal desclicar lo boton de seleccion."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Trasferir las donadas personalas"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Mesa a jorn en linha"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME recèrca de versions novèlas automaticament.\nPer aquò far, l'actualizacion transferís pas de donadas personalas.\nSe i a una version novèla, auretz l'informacion.\n\nPodètz configurar aqueste accessòri amb Espleches/Opcions.../ %PRODUCTNAME / Actualizacion en linha."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "~Verificar automaticament las mesas a jorn"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "Vos cal donar lo vòstre nom complet amb las inicialas"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
-#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "Lo nom de l'utilizire serà emplegat dins las proprietats del document, modèls e quora salvaretz las modificacions, dins lo document el meteis."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "Rèirenom"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "Nom"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "~Inicialas"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "Nom del paire"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "Enregistrament de %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Avètz ara la possibilitat de vos enregistrar coma un utilizaire de %PRODUCTNAME. L'enregistrament es volontari e sens obligacion.\n\nSe vos volètz enregistrar, vos podèm informar dels desvolopament novèls d'aqueste produch."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "Me vòli enregistrar ~ara"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "Me vòli enregistrar ~pus tard"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "Me vòli pas ~enregistrar"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Esperam que %PRODUCTNAME vos satisfarà.\n\nPer sortir d'aqueste assistent, clicatz sus 'Acabar'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Installation Status"
 msgstr "Estatut d'installacion"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
-#, fuzzy
 msgid  "Installation is optimized for clients."
 msgstr "L'installacion es optimizada pels clients."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
-#, fuzzy
 msgid  "Installation is optimized for servers."
 msgstr "L'installacion es optimizada pels servidors."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
-#, fuzzy
 msgid  "Cannot find Office installation."
 msgstr "Impossible de trobar una installacion de la seguida burotica."
 
 #: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Setup"
 msgstr "Configuracion"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "Configuracion de %PRODUCTNAME"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "Memòria insufisenta"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "Lo paquetatge msi es introbable."
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "Configuracion anullada"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
-#, fuzzy
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
 msgstr "Los dreches d'Administrator son una obligacion per la mesa a nivèl del Windows Installer."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "La configuracion a pas pogut trobar lo fichièr '%s'."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
-#, fuzzy
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Opcion de linha de comandas '%s' invalida. Utilizatz '/?' per mai d'ajuda."
 
@@ -1067,117 +985,94 @@ msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrati
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "I a ja un procediment de configuracion en cors."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "Una error desconeguda s'es producha !"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "Perfil invalid o incomplet."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "Lenga desconeguda : %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Chinés (tradicional)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "Chèc"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "Danés"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "Alemand (Alemanha)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "Grèc"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "Anglés (Estats Units)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Espanhòl (Espanha)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "Finés"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "Francés (França)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "Ebrieu"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "Ongrés"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Italian (Itàlia)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "Japonés"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "Corean"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "Neerlandés (Païses Basses)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "Norvegian (Bokmål)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "Polonés"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Portugués (Brasil)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "Rus"
 
@@ -1186,31 +1081,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Suedés (Suècia)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "Tailandés"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "Turc"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "Estonian"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "Chinés (simplificat)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Portugués (Portugal)"

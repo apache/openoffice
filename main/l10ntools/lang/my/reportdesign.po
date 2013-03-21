@@ -546,127 +546,102 @@ msgid  "Properties..."
 msgstr "ပိုင်ဆိုင်မှု..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Field Value Is"
 msgstr "နယ်ပယ်တန်ဖိုးသည်"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Expression Is"
 msgstr "ဖော်ပြချက်သည်"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "ကြား"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "ကြား မဟုတ်"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "ညီမျှခြင်း"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "မညီမျှခြင်း"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "ပို၍ကြီးသော"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "ပို၍သေးသော"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "ညီမျှခြင်း (သို့) ပို၍ကြီးသော"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "ညီမျှခြင်း (သို့) ပို၍သေးသော"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "နှင့်"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ဥပမာ"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "စီစဉ်ဖွဲ့စည်းမှု အခြေအနေ"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~ကူညီပါ"
 
 #: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
-#, fuzzy
 msgid  "Condition $number$"
 msgstr "အခြေအနေ $နံပါတ်$"
 
 #: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
-#, fuzzy
 msgid  "White"
 msgstr "အဖြူ"
 
 #: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "ဖောင့်အရောင်"
 
 #: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "နောက်ခံ"
 
 #: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "No Fill"
 msgstr "မဖြည့်ပါ"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "ငယ်စဉ်ကြီးလိုက်စီစဉ်ပါ"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "ကြီးစဉ်ငယ်လိုက်စီစဉ်ပါ"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Remove sorting"
 msgstr "စနစ်တကျစီစဉ်ခြင်းကို ဖယ်ရှားပါ"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "ထည့်သွင်းပါ"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
-#, fuzzy
 msgid  "Help"
 msgstr "ကူညီပါ"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
-#, fuzzy
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr "ပုံစံပြား၏ ရွေးချယ်ထားသောအပိုင်းသို့ ထည့်သွင်းရန် နယ်ပယ်များကို ထင်ရှားအောင်လုပ်ပါ။ ထို့နောက် ‘ထည့်သွင်းပါ’ ကို ကလစ်နှိပ်ပါ သို့ ‘ဝင်ပါ’ ကို နှိပ်ပါ။ "
 
@@ -676,7 +651,6 @@ msgid  "Date and Time"
 msgstr "ရက် နှင့် အချိန်"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
-#, fuzzy
 msgid  "Include Date"
 msgstr "ရက်စွဲပါဝင်သည်"
 
@@ -701,866 +675,693 @@ msgid  "~Help"
 msgstr "~ကူညီပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "အထွေထွေ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
-#, fuzzy
 msgid  "Data"
 msgstr "အချက်အလက်များ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "မဟုတ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ဟုတ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
-#, fuzzy
 msgid  "Force New Page"
 msgstr "စာမျက်နှာအသစ်ယူပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "မရှိပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
-#, fuzzy
 msgid  "Before Section"
 msgstr "အပိုင်းအလုပ်မီ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
-#, fuzzy
 msgid  "After Section"
 msgstr "အပိုင်းလုပ်ပြီး"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
-#, fuzzy
 msgid  "Before & After Section"
 msgstr "အပိုင်းမလုပ်မီ နှင့် လုပ်ပြီး"
 
 #: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
-#, fuzzy
 msgid  "New Row Or Column"
 msgstr "အတန်းအသစ် (သို့) ကော်လံအသစ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Keep Together"
 msgstr "အတူတကွထားပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "မဟုတ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Whole Group"
 msgstr "အုပ်စုတစ်ခုလုံး"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
-#, fuzzy
 msgid  "With First Detail"
 msgstr "ပထမအသေးစိတ်နှင့်အတူ"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
-#, fuzzy
 msgid  "Can Grow"
 msgstr "ကြီးထွားနိုင်သည်"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
-#, fuzzy
 msgid  "Can Shrink"
 msgstr "ကျုံ့နိုင်သည်"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
-#, fuzzy
 msgid  "Repeat Section"
 msgstr "အပိုင်းပြန်လုပ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
-#, fuzzy
 msgid  "Print repeated values"
 msgstr "တန်ဖိုးများအထပ်ထပ်ပရင်ထုတ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
-#, fuzzy
 msgid  "Conditional Print Expression"
 msgstr "ပရင့်ထုတ်ခြင်းဖော်ပြချက်အခြေအနေ"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
-#, fuzzy
 msgid  "Start new column"
 msgstr "ကော်လံ အသစ် စပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
-#, fuzzy
 msgid  "Start new page"
 msgstr "စာမျက်နှာ အသစ် စပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
-#, fuzzy
 msgid  "Reset page number"
 msgstr "စာမျက်နှာ နံပါတ်ပါဝင်စေပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart type"
 msgstr "ကားချပ်ပုံစံ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
-#, fuzzy
 msgid  "Print When Group Change"
 msgstr "အုပ်စုပြောင်းလဲသောအခါ ပရင့်ထုတ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
-#, fuzzy
 msgid  "Visible"
 msgstr "မြင်နိုင်သော"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Group keep together"
 msgstr "အတူတကွ အုပ်စုဖွဲ့ထားပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "Per Page"
 msgstr "စာမျက်နှာတစ်ခုစီ"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Per Column"
 msgstr "ကော်လံတစ်ခုစီ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "မဟုတ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "အပိုင်း"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "အလိုအလျောက်"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
-#, fuzzy
 msgid  "Page header"
 msgstr "စာမျက်နှာထိပ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
-#, fuzzy
 msgid  "Page footer"
 msgstr "စာမျက်နှာအောက်ခြေ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
-#, fuzzy
 msgid  "All Pages"
 msgstr "စာမျက်နှာအားလုံး"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
-#, fuzzy
 msgid  "Not With Report Header"
 msgstr "သတင်းပို့မှုထိပ်နှင့်မဟုတ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
-#, fuzzy
 msgid  "Not With Report Footer"
 msgstr "သတင်းပိုမှုအခြေနှင့်မဟုတ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
-#, fuzzy
 msgid  "Not With Report Header/Footer"
 msgstr "သတင်းပို့မှု ထိပ်/အခြေ နှင့်မဟုတ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
-#, fuzzy
 msgid  "Deep traversing"
 msgstr "အောက်သို့ဆင်းသွားခြင်း"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
-#, fuzzy
 msgid  "Pre evaluation"
 msgstr "အကြို သုံးသပ်မှု"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
-#, fuzzy
 msgid  "Position X"
 msgstr "ရပ်တည်ချက် X"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y"
 msgstr "ရပ်တည်ချက် Y"
 
 #: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "အကျယ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "အမြင့်"
 
 #: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
-#, fuzzy
 msgid  "Initial value"
 msgstr "အစတန်ဖိုး"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
-#, fuzzy
 msgid  "Preserve as Link"
 msgstr "ဆက်သွယ်မှုအဖြစ်သိမ်းထားပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "ပုံသေနည်း"
 
 #: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "ငွေကြေးအကွက်"
 
 #: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ဖောင့်"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "နောက်ခံ အရောင်"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "ထိုးဖောက်မြင်နိုင်သောနောက်ခံ"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "ထိုးဖောက်မြင်နိုင်သောနောက်ခံ"
 
 #: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
-#, fuzzy
 msgid  "This operation is not allowed. The control overlaps with another one."
 msgstr "ဤလုပ်ဆောင်ချက် ခွင့်မပြုပါ။ ထိန်းချုပ်မှုသည် နောက်တစ်ခုနှင့် ထပ်နေသည်။"
 
 #: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
-#, fuzzy
 msgid  "This position can not be set. It is invalid."
 msgstr "ရပ်တည်ချက်မချမှတ်နိုင်ပါ။ ၎င်းသည် မမှန်ကန်ပါ။"
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
-#, fuzzy
 msgid  "Group: %1"
 msgstr "အုပ်စု - %1"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ဖန်ရှင်"
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
-#, fuzzy
 msgid  "Scope"
 msgstr "လုပ်ငန်းနယ်ပယ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
-#, fuzzy
 msgid  "Data Field Type"
 msgstr "အချက်အလက်များနယ်ပယ် ပုံစံ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
-#, fuzzy
 msgid  "Field or Formula"
 msgstr "နယ်ပယ် (သို့) ဖော်မြူလာ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ဖန်ရှင်"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "ရေတွက်ခြင်း"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
-#, fuzzy
 msgid  "User defined Function"
 msgstr "အသုံးပြုသူ ဖန်ရှင်သတ်မှတ်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "အဓိက နယ်ပယ်များကို ဆက်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "ကူညီပေးသောနယ်ပယ်များသို့ဆက်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
-#, fuzzy
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
 msgstr "ကားချပ်များကို သတင်းပို့မှု၏လက်ရှိလက်တမ်းနှင့်ပတ်သက်သော အသေးစိတ်အချက်အလက်များပြရန် အသုံးသည်။ ဤအရာကို လုပ်ရန် သင်သည် သတင်းပို့မှု နှင်လိုက်ဖက်သော ကားချပ်ရှိကော်လံများ ကို စိစစ်နိုင်သည်။"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "ကားချပ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "အစီရင်ခံစာ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
-#, fuzzy
 msgid  "Preview Row(s)"
 msgstr "အတန်း(များ) အစမ်းကြည့်ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "ဧရိယာ"
 
 #: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
-#, fuzzy
 msgid  "Report Output Format"
 msgstr "အထွက်စီစဉ်ဖွဲ့စည်းမှုပုံစံ သတင်းပို့ပါ"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "မျဥ်းမတ်ဖြောင့်တန်းမှု"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "ထိပ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "အလယ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "အောက်ခြေ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
-#, fuzzy
 msgid  "Horz. Alignment"
 msgstr "ရေပြင်ညီ ဖြောင့်တန်းမှု"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ဘယ်ဘက်"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "ညာဘက်"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
-#, fuzzy
 msgid  "Block"
 msgstr "အပိတ်"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "အလည်"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "ရေတွက်ခြင်း"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
-#, fuzzy
 msgid  "Accumulation"
 msgstr "စုဆောင်းခြင်း"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "အနိမ့်ဆုံး"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "အမြင့်ဆုံး"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "ပိုင်ဆိုင်မှုများ -"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "ထိန်းချုပ်မှုအမှတ်အသား မရှိ"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "ရွေးချယ်မှုအမျိုးမျိုး"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "ရုပ်ပုံ ထိန်းချုပ်မှု"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label field"
 msgstr "မှတ်သားရန် အကွက်"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "လိုင်း"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ အကွက်"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "ပုံသဏ္ဌာန်"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "အစီရင်ခံစာ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "အပိုင်း"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ဖန်ရှင်"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
-#, fuzzy
 msgid  "Group"
 msgstr "အစုအဝေး"
 
 #: source/ui/report/report.src#STR_SHOW_RULER.String.Text
-#, fuzzy
 msgid  "Show ruler"
 msgstr "ပေတံ ပြပါ"
 
 #: source/ui/report/report.src#STR_SHOW_GRID.String.Text
-#, fuzzy
 msgid  "Show grid"
 msgstr "ဂရစ်မျဉ်း ပြပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
-#, fuzzy
 msgid  "Change Object"
 msgstr "အရာဝတ္ထု ပြောင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Move Group(s)"
 msgstr "အုပ်စု(များ)ပြောင်းရွှေ့ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "စီစဉ် ဖွဲ့စည်းမှု ပုံစံ အခြေအနေ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove report header / report footer"
 msgstr "သတင်းပို့မှုထိပ်/သတင်းပို့မှုအောက်ခြေ ဖယ်ရှားပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add report header / report footer"
 msgstr "သတင်းပို့မှု ထိပ်/အောက်ခြေ ထပ်ထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove page header / page footer"
 msgstr "စာမျက်နှာထိပ်/စာမျက်နှာအောက်ခြေ ဖယ်ရှားပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add page header / page footer"
 msgstr "စာမျက်နှာ ထိပ်/အောက်ခြေ ထပ်ထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Change property '#'"
 msgstr "ပိုင်ဆိုင်မှုပြောင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Add group header "
 msgstr "အုပ်စုထိပ် ထပ်ထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Remove group header "
 msgstr "အုပ်စုထိပ်ဖယ်ရှားပါ။"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Add group footer "
 msgstr "အုပ်စုအောက်ခြေ ထပ်ထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Remove group footer "
 msgstr "အုပ်စုအောက်ခြေဖယ်ရှားပါ။"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
-#, fuzzy
 msgid  "Add function"
 msgstr "ဖန်ရှင် ထပ်ထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
-#, fuzzy
 msgid  "Delete function"
 msgstr "ဖန်ရှင်ဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
-#, fuzzy
 msgid  "Design"
 msgstr "စာမျက်နှာဒီဇိုင်းပုံစံ -"
 
 #: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "အစမ်းကြည့်ပါ"
 
 #: source/ui/report/report.src#STR_RPT_TITLE.String.Text
-#, fuzzy
 msgid  "Report #"
 msgstr "အစီရင်ခံစာ#"
 
 #: source/ui/report/report.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "~အစီရင်ခံစာ အမည်"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "အစုအဝေး ဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
-#, fuzzy
 msgid  "Add Group"
 msgstr "အုပ်စုသေတ္တာ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
-#, fuzzy
 msgid  "Delete Selection"
 msgstr "ဖိုင်ရွေးချယ်မှု"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Delete Function"
 msgstr "ဖန်ရှင် ဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
-#, fuzzy
 msgid  "Change Size"
 msgstr "အရွယ်အစားပြောင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
-#, fuzzy
 msgid  "Paste"
 msgstr "ပြန်ထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
-#, fuzzy
 msgid  "Insert Control"
 msgstr "ထိန်းချုပ်မှုထည့်သွင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
-#, fuzzy
 msgid  "Delete Control"
 msgstr "ထိန်းချုပ်မှုဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
-#, fuzzy
 msgid  "Insert Group"
 msgstr "အုပ်စုထည့်သွင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "အစုအဝေး ဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
-#, fuzzy
 msgid  "GroupHeader"
 msgstr "အုပ်စုထိပ်"
 
 #: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
-#, fuzzy
 msgid  "GroupFooter"
 msgstr "အုပ်စုအောက်ခြေ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
-#, fuzzy
 msgid  "Sorting and Grouping..."
 msgstr "စနစ်တကျစီစဉ်ခြင်းနှင့် အုပ်စုဖွဲ့ခြင်း"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Background Color..."
 msgstr "နောက်ခံ အရောင်..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "Ruler..."
 msgstr "ပေတံ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "Grid..."
 msgstr "ဂရစ်..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~စီစဉ်ပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~ရှေ့သို့ ယူသွားပေးပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "အနောက်သို့ ပြန်ပို့ပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
-#, fuzzy
 msgid  "~Object Resizing"
 msgstr "⁠~အရာဝတ္ထု အရွယ်အစားပြန်လုပ်ခြင်း"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest width"
 msgstr "~အနည်းဆုံးအကျယ်သို့ ကိုက်ညီစေပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest width"
 msgstr "~အကြီးဆုံးအကျယ်သို့ ကိုက်ညီစေပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest height"
 msgstr "~အနိမ့်ဆုံးအမြင့်သို့ ကိုက်ညီစေပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest height"
 msgstr "~အမြင့်ဆုံးအမြင့်သို့ကိုက်ညီစေပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
-#, fuzzy
 msgid  "Section"
 msgstr "ဆက်ရှင်"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
-#, fuzzy
 msgid  "Shrink"
 msgstr "ကျုံ့ပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from top"
 msgstr "ထိပ်မှကျုံ့ပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from bottom"
 msgstr "အောက်ခြေမှ ကျုံ့ပါ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
-#, fuzzy
 msgid  "Distribution..."
 msgstr "ဖြန့်ဝေခြင်း..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "ပိုင်ဆိုင်မှုများ..."
 
 #: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "နယ်ပယ်ပေါင်းထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "စစ်ထုတ်ကိရိယာ"
 
 #: source/ui/report/report.src#RID_APP_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base Report"
 msgstr " - %PRODUCTNAME အခြေခံ -သတင်းပို့မှု"
 
 #: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "ခေါင်းစဉ်မဲ့"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Change Alignment"
 msgstr "ဖြောင့်တန်းမှုပြောင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_HEADER.String.Text
-#, fuzzy
 msgid  "# Header"
 msgstr "#ထိပ်"
 
 #: source/ui/report/report.src#RID_STR_FOOTER.String.Text
-#, fuzzy
 msgid  "# Footer"
 msgstr "#အောက်ခြေ"
 
 #: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Insert graphics"
 msgstr "ပန်းချီဒီဇိုင်းထည့်ပါ"
 
 #: source/ui/report/report.src#RID_STR_DELETE.String.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ဖန်ရှင်"
 
 #: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the report."
 msgstr "သတင်းပို့မှုဖန်တီးနေစဉ် အမှားဖြစ်ပွားသည်။"
 
 #: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
-#, fuzzy
 msgid  "An exception of type $type$ was caught."
 msgstr "$type$ ပုံစံ မှလွဲ၍ အားလုံးရပြီ။"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
-#, fuzzy
 msgid  "Change font"
 msgstr "ဖောင့်ပြောင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
-#, fuzzy
 msgid  "Change page attributes"
 msgstr "စာမျက်နှာဖြန့်ဝေမှုများပြောင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Page Header/Footer"
 msgstr "ကော်လံ ထိပ်/အောက်ခြေ ထည့်သွင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Page Header/Footer"
 msgstr "ကော်လံ ထိပ်/အောက်ခြေ ဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Column Header/Footer"
 msgstr "ကော်လံ ထိပ်/အောက်ခြေ ထည့်သွင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Column Header/Footer"
 msgstr "ကော်လံ ထိပ်/အောက်ခြေ ဖျက်ပါ"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Report Header/Footer"
 msgstr "သတင်းပို့မှု ထိပ်/အောက်ခြေ ထည့်သွင်းပါ"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Report Header/Footer"
 msgstr "သတင်းပို့မှု ထိပ်/အောက်ခြေ ဖျက်ပါ။"
 
 #: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
-#, fuzzy
 msgid  "The report can not be executed unless it is bound to content."
 msgstr "ပါဝင်မှုနှင့်ဆက်သွယ်မှုမရှိလျှင် သတင်းပို့မှု မတွက်ချက်နိုင်ပါ"
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
-#, fuzzy
 msgid  "The report can not be executed unless at least one object has been inserted."
 msgstr "အနည်းဆုံး အရာဝတ္ထုတစ်ခု မထည့်သွင်းခဲ့လျှင် သတင်းပို့မှု မတွက်ချက်နိုင်ပါ။"
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
-#, fuzzy
 msgid  "Shrink Section"
 msgstr "အပိုင်းကျုံ့ပါ"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
-#, fuzzy
 msgid  "Detail"
 msgstr "အသေးစိတ်"
 
 #: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
-#, fuzzy
 msgid  "Page Header"
 msgstr "စာမျက်နှာထိပ်"
 
 #: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
-#, fuzzy
 msgid  "Page Footer"
 msgstr "စာမျက်နှာအောက်ခြေ"
 
 #: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
-#, fuzzy
 msgid  "Report Header"
 msgstr "သတင်းပို့မှုထိပ်"
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
-#, fuzzy
 msgid  "Report Footer"
 msgstr "သတင်းပို့မှုအောက်ခြေ"
 
 #: source/ui/report/report.src#RID_STR_INSERT.String.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "ထည့်သွင်းပါ"

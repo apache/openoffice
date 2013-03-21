@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Molim, unesite ovdje korisničko ime i lozinku za \"%2\" na %1."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "~Pošalji"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "${HOST}' poslužitelj želi postaviti jedan ili više kolačića.\nKolačić sadrži informacije koje se odnose na određenu URL klasu. Ukoliko %PRODUCTNAME kasnije zahtjeva dokument s URL koji odgovara klasi s prethodno postavljenim kolačićem, %PRODUCTNAME će tu informaciju poslati poslužitelju. To omogućava poslužitelju prepoznavanje statusa WWW aplikacije, npr. kod on-line kupovine.\n\nSljedeći kolačić treba biti postavljen:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domena: ${DOMAIN}, Put: ${PATH}, Kolačić: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Primitak kolačića"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME je spremio kolačić za poslužitelj '${HOST}' te će biti poslan na zahtjev dokumenta ${PATH}.\nKolačići sadrže informacije koje se odnose na određenu URL klasu. Oni su poslani od određenih poslužitelja prema %PRODUCTNAME gdje su spremljeni kad je pristupljeno određenom dokumentu. Ako %PRODUCTNAME učitava dokument koji, ovisno o URL, odgovara klasi jednog od prije primljenih kolačića, %PRODUCTNAME će poslati tu informaciju poslužitelju. To omogućava poslužitelju praćenje statusa WWW aplikacije, npr. kod on-line trgovine.\n\nSljedeći kolačić treba biti postavljen:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domena: ${DOMAIN}, Put: ${PATH}, Kolačić: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"

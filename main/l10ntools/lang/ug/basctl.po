@@ -137,7 +137,7 @@ msgstr "ساقلا"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "ئەسلى تېكست بەك كۆپ،  ساقلاپ ۋە تەرجىمە-تەھرىرلىيەلمەيدۇ.\nبەزى ئىزاھات ياكى بىر قانچە ئۇسۇلنى باشقا بۆلەككە يۆتكەڭ."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "'XX' ھۆججەت مەۋجۇد"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
-msgstr ""
+msgstr "بىخەتەرلىك سەۋەبىدىن بۇ ماكرونى ئىجرا قىلالمايسىز.\n\nتېخىمۇ كۆپ ئۇچۇرنى بىخەتەرلىك تەڭشىكىدىن تەكشۈرۈڭ."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "ئاتتىن بىرنى كىرگۈزۈش زۆرۈر."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr ""
+msgstr "تەھرىرلىگەندىن كېيىن بۇ پروگراممىنى قايتا قوزغىتىڭ.\nداۋاملاشتۇرامسىز؟"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "سۆزلىشىش رامكىسى ئەكىر - ئاتى ئىشلىتىلگ
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
-msgstr ""
+msgstr "بۇ ئامباردا تۆۋەندىكى ئاتنى ئۆز ئىچىگە ئالغان سۆزلەشكۈ بار:\n\n$(ARG1)\n\nسۆزلەشكۈنىڭ ئاتىنى ئۆزگەرتىپ نۆۋەتتىكى سۆزلەشكۈنى ساقلاپ قالغىلى ياكى نۆۋەتتىكى سۆزلەشكۈنى ئالماشتۇرۇشقىمۇ بولىدۇ.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "سۆزلىشىش رامكىسى ئەكىر - تىل ماسلاشمىدى
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
-msgstr ""
+msgstr "ئەكىرىدىغان سۆزلەشكۈ نىشان ئامبار تىلى سىرتىدىكى باشقا تىللارنى قوللايدۇ.\n\nبۇ تىللارنى ئامبارغا قوشۇپ سۆزلەشكۈدە تەمىنلەنگەن باشقا تىل مەنبەلىرىنى ساقلاپ قالغىلى ياكى ئۇلارغا پەرۋا قىلماي نۆۋەتتىكى تىل ئامبىرىنى ساقلاپ قالغىلىمۇ بولىدۇ.\n\nئىزاھ: ئەگەر بەزى تىللارنى سۆزلەشكۈ قوللىمىسا، سۆزلەشكۈدىكى كۆڭۈلدىكى تىل مەنبەسىنى ئىشلىتىدۇ.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"

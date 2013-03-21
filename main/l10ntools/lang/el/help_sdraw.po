@@ -37,7 +37,7 @@ msgstr "Για να έχετε πρόσβαση σε αυτήν τη λειτο�
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">Για να έχετε πρόσβαση σε αυτήν τη λειτουργία...</variable>"
 
 #: source/text/sdraw/01/04010000.xhp#tit
 msgid  "Insert Page"
@@ -45,11 +45,11 @@ msgstr "Εισαγωγή σελίδας"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Εισαγωγή σελίδας\">Εισαγωγή σελίδας</link>"
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
 msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seitetext\">Εισάγει μια κενή σελίδα ύστερα από την επιλεγμένη σελίδα.</variable>"
 
 #: source/text/sdraw/04/01020000.xhp#tit
 msgid  "Shortcut Keys for Drawings"
@@ -57,11 +57,11 @@ msgstr "Πλήκτρα συντόμευσης για την σχεδίαση"
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3156441
 msgid  "\<bookmark_value\>shortcut keys;in drawings\</bookmark_value\>         \<bookmark_value\>drawings; shortcut keys\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>πλήκτρα συντόμευσης, για σχέδια</bookmark_value><bookmark_value>σχέδια, πλήκτρα συντόμευσης</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
 msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_keys\"><link href=\"text/sdraw/04/01020000.xhp\" name=\"Πλήκτρα συντόμευσης για την σχεδίαση\">Πλήκτρα συντόμευσης για την σχεδίαση</link></variable>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
@@ -69,7 +69,7 @@ msgstr "Ο ακόλουθος κατάλογος αφορά συγκεκριμέ
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154730.103
 msgid  "You can also use the \<link href=\"text/shared/04/01010000.xhp\" name=\"general shortcut keys for $[officename]\"\>general shortcut keys for $[officename]\</link\>."
-msgstr ""
+msgstr "Μπορείτε επίσης να χρησιμοποιήσετε τις <link href=\"text/shared/04/01010000.xhp\" name=\"γενικές συντομεύσεις πλήκτρων του $[officename]\">γενικές συντομεύσεις πλήκτρων του $[officename]</link>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149121.3
 msgid  "Function Keys for Drawings"
@@ -81,8 +81,9 @@ msgid  "Shortcut Keys"
 msgstr "Πλήκτρα συντόμευσης "
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153713.6
+#, fuzzy
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Αποτέλεσμα</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150044.7
 #, fuzzy
@@ -105,8 +106,9 @@ msgid  "Opens group to edit individual objects."
 msgstr "Ανοίγει την ομάδα για την επεξεργασία μεμονωμένων αντικειμένων."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155113.11
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3159238.12
 #, fuzzy
@@ -119,8 +121,9 @@ msgid  "Shift+F3"
 msgstr "Shift+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152994.14
+#, fuzzy
 msgid  "Opens the \<emph\>Duplicate\</emph\> dialog."
-msgstr ""
+msgstr "Ανοίγει το παράθυρο διαλόγου <emph>Διπλότυπο</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154488.15
 #, fuzzy
@@ -128,8 +131,9 @@ msgid  "F4"
 msgstr "F4"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149406.16
+#, fuzzy
 msgid  "Opens the \<emph\>Position and Size\</emph\> dialog."
-msgstr ""
+msgstr "Ανοίγει το παράθυρο διαλόγου <emph>Θέση και μέγεθος</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3148870.21
 #, fuzzy
@@ -137,8 +141,9 @@ msgid  "F5"
 msgstr "F5"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153917.22
+#, fuzzy
 msgid  "Opens the \<emph\>Navigator\</emph\>."
-msgstr ""
+msgstr "Ανοίγει την <emph>Περιήγηση</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3157982.25
 #, fuzzy
@@ -151,12 +156,14 @@ msgid  "Checks spelling."
 msgstr "Εφαρμόζει τον ορθογραφικό έλεγχο."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152869.27
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F7"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F7"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154765.28
+#, fuzzy
 msgid  "Opens the \<emph\>Thesaurus\</emph\>."
-msgstr ""
+msgstr "Ανοίγει το <emph>Θησαυρό λέξεων</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146962.29
 #, fuzzy
@@ -169,8 +176,9 @@ msgid  "Edit points on/off."
 msgstr "Επεξεργασία σημείων ενεργή/ανενεργή."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149317.31
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+F8"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+F8"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147250.32
 #, fuzzy
@@ -178,8 +186,9 @@ msgid  "Fits to frame."
 msgstr "Προσαρμογή στο πλαίσιο"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150434.35
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+T\</caseinline\>\<defaultinline\>F11\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3151389.36
 #, fuzzy
@@ -187,8 +196,9 @@ msgid  "Opens Styles and Formatting window."
 msgstr "Ανοίγει το παράθυρο διαλόγου Πρότυπα και μορφοποίηση."
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3150393
+#, fuzzy
 msgid  "\<bookmark_value\>zooming;shortcut keys\</bookmark_value\>      \<bookmark_value\>drawings; zoom function in\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>μεγέθυνση, πλήκτρα συντόμευσης</bookmark_value><bookmark_value>σχεδίαση, λειτουργία μεγέθυνσης</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150393.41
 #, fuzzy
@@ -201,8 +211,9 @@ msgid  "Shortcut Keys"
 msgstr "Πλήκτρα συντόμευσης"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3146323.43
+#, fuzzy
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Αποτέλεσμα</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149946.44
 #, fuzzy
@@ -245,8 +256,9 @@ msgid  "Zooms in on the current selection."
 msgstr "Μεγεθύνει την τρέχουσα επιλογή."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150867.52
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+G"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+G"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149250.53
 #, fuzzy
@@ -254,8 +266,9 @@ msgid  "Groups selected objects."
 msgstr "Ομαδοποιεί τα επιλεγμένα αντικείμενα."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149955.54
+#, fuzzy
 msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+A"
-msgstr ""
+msgstr "Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+A"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148582.55
 #, fuzzy
@@ -263,8 +276,9 @@ msgid  "Ungroups selected group."
 msgstr "Κατάργηση ομαδοποίησης της επιλεγμένης ομάδας"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146852.56
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153110.57
 #, fuzzy
@@ -272,8 +286,9 @@ msgid  "Combines selected objects."
 msgstr "Συνδυάζει τα επιλεγμένα αντικείμενα."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153567.58
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147366.59
 #, fuzzy
@@ -281,8 +296,9 @@ msgid  "Uncombines selected objects."
 msgstr "Κατάργηση συνδυασμού επιλεγμένων αντικειμένων"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153730.60
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155928.61
 #, fuzzy
@@ -290,8 +306,9 @@ msgid  "Bring to front."
 msgstr "Μεταφορά σε πρώτο πλάνο"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145245.62
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148393.63
 #, fuzzy
@@ -299,8 +316,9 @@ msgid  "Bring forward."
 msgstr "Μεταφορά ένα επίπεδο εμπρός"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150928.64
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156062.65
 #, fuzzy
@@ -308,8 +326,9 @@ msgid  "Send backward."
 msgstr "Μεταφορά ένα επίπεδο πίσω"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145298.66
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149028.67
 #, fuzzy
@@ -327,8 +346,9 @@ msgid  "Shortcut Keys"
 msgstr "Πλήκτρα συντόμευσης"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155370.70
+#, fuzzy
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Αποτέλεσμα</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AD7
 #, fuzzy
@@ -351,8 +371,9 @@ msgid  "Switch to next page"
 msgstr "Μετάβαση στην επόμενη σελίδα"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AED
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Up"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AFD
 #, fuzzy
@@ -360,8 +381,9 @@ msgid  "Switch to previous layer"
 msgstr "Μετάβαση στο προηγούμενο επίπεδο"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF8
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Down"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Down"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF2
 #, fuzzy
@@ -379,8 +401,9 @@ msgid  "Moves the selected object in the direction of the arrow key."
 msgstr "Μετακινεί το επιλεγμένο αντικείμενο προς την κατεύθυνση του βέλους."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156259.73
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Arrow Key"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Πλήκτρο βέλους"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147171.74
 #, fuzzy
@@ -397,8 +420,9 @@ msgid  "Creates a copy of the dragged object when mouse button is released."
 msgstr "Δημιουργεί ένα αντίγραφο του μεταφερόμενου αντικειμένου όταν το πλήκτρο του ποντικιού απελευθερώνεται."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154643.104
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter with keyboard focus (F6) on a drawing object icon on Tools bar"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter με το πληκτρολόγιο όταν είναι επιλεγμένο ένα αντικείμενο (F6) στη γραμμή εργαλείων"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3150756.105
 #, fuzzy
@@ -436,8 +460,9 @@ msgid  "Enters text mode if a text object is selected."
 msgstr "Εκκινεί τη λειτουργία κειμένου εφόσον έχει επιλεγεί ένα αντικείμενο κειμένου."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155851.112
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154046.113
 #, fuzzy
@@ -445,16 +470,19 @@ msgid  "Enters text mode if a text object is selected. If there are no text obje
 msgstr "Εκκινεί τη λειτουργία κειμένου εφόσον έχει επιλεγεί ένα αντικείμενο κειμένου. Αν δεν υπάρχει αντικείμενο κειμένου ή αν έχετε περιηγηθεί σε όλα τα διαθέσιμα αντικείμενα κειμένου της σελίδας, εισάγεται μία νέα σελίδα."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149977.81
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152812.82
+#, fuzzy
 msgid  "Press the \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> key and drag with the mouse to draw or resize an object from the center of the object outward."
-msgstr ""
+msgstr "Πατήστε το πλήκτρο <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> και πιάστε με το ποντίκι σας, για να σχεδιάσετε ή να αλλάξετε το μέγεθος ενός αντικειμένου από το κέντρο του αντικειμένου προς τα έξω."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3143232.83
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> + click on an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> + κλικ σε ένα αντικείμενο"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156007.84
 #, fuzzy
@@ -462,8 +490,9 @@ msgid  "Selects the object behind the currently selected object."
 msgstr "Επιλέγει το αντικείμενο που βρίσκεται πίσω από το τρέχον επιλεγμένο αντικείμενο."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3147252.85
+#, fuzzy
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>+Shift+click an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Shift+κλικ σε ένα αντικείμενο"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3145666.86
 #, fuzzy
@@ -531,1840 +560,1641 @@ msgid  "Exits current mode."
 msgstr "Τερματίζει την τρέχουσα λειτουργία."
 
 #: source/text/sdraw/guide/align_arrange.xhp#tit
-#, fuzzy
 msgid  "Arranging, Aligning and Distributing Objects"
 msgstr "Τακτοποίηση, στοίχιση και κατανομή αντικειμένων"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3149656.73
 msgid  "\<variable id=\"align_arrange\"\>\<link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Arranging and Aligning Objects\"\>Arranging, Aligning and Distributing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"align_arrange\"><link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Τακτοποίηση και στοίχιση αντικειμένων\">Τακτοποίηση, στοίχιση και κατανομή αντικειμένων</link></variable>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#bm_id3125863
 msgid  "\<bookmark_value\>arranging; objects (guide)\</bookmark_value\>\<bookmark_value\>objects;aligning\</bookmark_value\>\<bookmark_value\>distributing draw objects\</bookmark_value\>\<bookmark_value\>aligning;draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>τακτοποίηση, αντικείμενα (οδηγός)</bookmark_value><bookmark_value>αντικείμενα, στοίχιση</bookmark_value><bookmark_value>κατανομή αντικειμένων σχεδίασης</bookmark_value><bookmark_value>στοίχιση, αντικείμενα σχεδίασης</bookmark_value>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3125863.17
-#, fuzzy
 msgid  "Arranging Objects"
 msgstr "Τακτοποίηση αντικειμένων"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3153727.18
-#, fuzzy
 msgid  "Each object that you place in your document is successively stacked on the preceding object. To re-arrange the stacking order of a selected object, proceed as follows."
 msgstr "Κάθε αντικείμενο που τοποθετείτε στο έγγραφό σας στοιβάζεται επιτυχώς στο προηγούμενο αντικείμενο. Για να τακτοποιήσετε ξανά τη σειρά ταξινόμησης της στοίβας ενός επιλεγμένου αντικειμένου, συνεχίστε ως εξής."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107D5
-#, fuzzy
 msgid  "Click the object whose position you want to change."
 msgstr "Κάντε κλικ στο αντικείμενο του οποίου την θέση επιθυμείτε να αλλάξετε."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150327.78
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to bring up the context menu and choose one of the arrange options:"
-msgstr ""
+msgstr "Επιλέξτε <item type=\"menuitem\">Τροποποίηση - Τακτοποίηση</item> για να ανοίξετε το μενού περιβάλλοντος και επιλέξτε κάποια από τις επιλογές τακτοποίησης:"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107E6
 msgid  "\<emph\>Bring to Front\</emph\> places the object on top of all other objects"
-msgstr ""
+msgstr "Η επιλογή <emph>Μεταφορά σε πρώτο πλάνο</emph> τοποθετεί το αντικείμενο πάνω από τα άλλα αντικείμενα"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107EC
 msgid  "\<emph\>Bring Forward\</emph\> places the object one place forward in the stack of objects"
-msgstr ""
+msgstr "Η επιλογή <emph>Μεταφορά ένα επίπεδο εμπρός</emph> τοποθετεί το αντικείμενο μία θέση μπροστά στη στοίβα με τα αντικείμενα"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F2
 msgid  "\<emph\>Send Backward\</emph\> places the object one place back in the stack of objects"
-msgstr ""
+msgstr "Η επιλογή <emph>Μεταφορά ένα επίπεδο πίσω</emph> τοποθετεί το αντικείμενο μία θέση πίσω στη στοίβα με τα αντικείμενα"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F8
 msgid  "\<emph\>Send to Back\</emph\> places the object behind all other objects"
-msgstr ""
+msgstr "Η επιλογή <emph>Μεταφορά πίσω</emph> τοποθετεί το αντικείμενο πίσω από τα άλλα αντικείμενα"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107FE
 msgid  "\<emph\>Behind Object\</emph\> places the object behind another object that you select"
-msgstr ""
+msgstr "Η επιλογή <emph>Πίσω από το αντικείμενο</emph> τοποθετεί το αντικείμενο πίσω από ένα διαφορετικό αντικείμενο που έχετε επιλέξει"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3155766.79
-#, fuzzy
 msgid  "Arranging an Object Behind Another Object"
 msgstr "Τακτοποίηση αντικειμένου πίσω από διαφορετικό αντικείμενο"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN10811
-#, fuzzy
 msgid  "Click the object whose position you want to change."
 msgstr "Κάντε κλικ στο αντικείμενο του οποίου την θέση επιθυμείτε να αλλάξετε."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3154253.80
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Behind Object\</emph\>. The mouse pointer changes to a hand."
-msgstr ""
+msgstr "Επιλέξτε <item type=\"menuitem\">Τροποποίηση - Τακτοποίηση</item> για να ανοίξετε το μενού περιβάλλοντος και επιλέξτε <emph>Πίσω από το αντικείμενο</emph>. Ο δείκτης του ποντικιού μετατρέπεται σε ένα χέρι."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3149126.81
-#, fuzzy
 msgid  "Click the object behind which you want to place the selected object."
 msgstr "Κάντε κλικ στο αντικείμενο πίσω από το οποίο επιθυμείτε να τοποθετήσετε το επιλεγμένο αντικείμενο."
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3145789.20
-#, fuzzy
 msgid  "Reversing The Stacking Order of Two Objects"
 msgstr "Αντιστροφή της σειράς ταξινόμησης της στοίβας δύο αντικειμένων"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3154022.83
-#, fuzzy
 msgid  "Shift-click both objects to select them."
 msgstr "Κρατήστε πατημένο το πλήκτρο Shift και κάντε κλικ στα δύο αντικείμενα για να τα επιλέξετε."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3155114.84
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Reverse\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε <item type=\"menuitem\">Τροποποίηση - Τακτοποίηση</item> για να ανοίξετε το μενού περιβάλλοντος και επιλέξτε <emph>Αντιστροφή</emph>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3166425.21
-#, fuzzy
 msgid  "Aligning Objects"
 msgstr "Στοίχιση αντικειμένων"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3152994.22
 msgid  "The \<emph\>Alignment\</emph\> function enables you to align objects relative to each other or relative to the page."
-msgstr ""
+msgstr "Η λειτουργία <emph>Στοίχιση</emph> σας παρέχει τη δυνατότητα να στοιχίσετε αντικείμενα μεταξύ τους  ή σε σχέση με τη σελίδα."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A3
-#, fuzzy
 msgid  "Select an object to align it to the page or select multiple objects to align them relative to each other."
 msgstr "Επιλέξτε ένα αντικείμενο για να το στοιχίσετε στη σελίδα ή επιλέξτε πολλαπλά αντικείμενα για να τα στοιχίσετε μεταξύ τους."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A7
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Alignment\</item\> and select one of the alignment options."
-msgstr ""
+msgstr "Επιλέξτε <item type=\"menuitem\">Τροποποίηση - Στοίχιση</item> και επιλέξτε κάποια από τις επιλογές στοίχισης."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108AE
-#, fuzzy
 msgid  "Distributing Objects"
 msgstr "Κατανομή αντικειμένων"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3151390.71
 msgid  "If you select three or more objects in Draw, you can also use the \<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\"\>\<emph\>Distribution\</emph\>\</link\> command to distribute the vertical and horizontal spacing evenly between the objects."
-msgstr ""
+msgstr "Αν επιλέξετε τρία ή περισσότερα αντικείμενα στο Draw, μπορείτε επίσης να χρησιμοποιήσετε την εντολή <link href=\"text/shared/01/05360000.xhp\" name=\"Κατανομή\"><emph>Κατανομή</emph></link> για να κατανείμετε την οριζόντια και την κατακόρυφη απόσταση μεταξύ των αντικειμένων."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108CE
-#, fuzzy
 msgid  "Select three or more objects to be distributed."
 msgstr "Επιλέξτε τρία ή περισσότερα αντικείμενα για να κατανεμηθούν."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108D2
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Distribution\</item\>."
-msgstr ""
+msgstr "Επιλέξτε <item type=\"menuitem\">Τροποποίηση - Κατανομή</item>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108DA
 msgid  "Select the horizontal and vertical distribution option and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε την επιλογή για οριζόντια ή κατακόρυφη κατανομή και κάντε κλικ στο κουμπί <emph>OK</emph>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150535.72
 msgid  "Selected objects are distributed evenly along the horizontal or vertical axis. The two outermost objects are used as reference points and do not move when the \<emph\>Distribution\</emph\> command is applied."
-msgstr ""
+msgstr "Τα επιλεγμένα αντικείμενα ισοκατανέμονται κατά μήκος του οριζόντιου και του κατακόρυφου άξονα. Τα δύο πιο εξωτερικά αντικείμενα χρησιμοποιούνται ως σημεία παραπομπής και δεν μετακινούνται όταν εφαρμόζεται η εντολή <emph>Κατανομή</emph>."
 
 #: source/text/sdraw/guide/color_define.xhp#tit
-#, fuzzy
 msgid  "Defining Custom Colors"
 msgstr "Ορισμός προσαρμοσμένων χρωμάτων"
 
 #: source/text/sdraw/guide/color_define.xhp#bm_id3149263
 msgid  "\<bookmark_value\>colors; defining and saving\</bookmark_value\>      \<bookmark_value\>user-defined colors\</bookmark_value\>      \<bookmark_value\>custom colors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>χρώματα, ορισμός και αποθήκευση</bookmark_value><bookmark_value>χρώματα καθορισμένα από το χρήστη</bookmark_value><bookmark_value>προσαρμοσμένα χρώματα</bookmark_value>"
 
 #: source/text/sdraw/guide/color_define.xhp#hd_id3149263.7
 msgid  "\<variable id=\"color_define\"\>\<link href=\"text/sdraw/guide/color_define.xhp\" name=\"Defining Custom Colors\"\>Defining Custom Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"color_define\"><link href=\"text/sdraw/guide/color_define.xhp\" name=\"Ορισμός προσαρμοσμένων χρωμάτων\">Ορισμός προσαρμοσμένων χρωμάτων</link></variable>"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154511.8
-#, fuzzy
 msgid  "If you want, you can mix a custom color and add it to a color table."
 msgstr "Αν επιθυμείτε, μπορείτε να αναμίξετε ένα προσαρμοσμένο χρώμα και να το προσθέσετε σε έναν πίνακα χρωμάτων."
 
 #: source/text/sdraw/guide/color_define.xhp#hd_id3155600.9
-#, fuzzy
 msgid  "To define a custom color"
 msgstr "Για να ορίσετε ένα προσαρμοσμένο χρώμα"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3150327.25
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Colors\</emph\> tab. A table of the predefined colors is displayed."
-msgstr ""
+msgstr "Επιλέξτε <emph>Μορφή - Περιοχή</emph> και κάντε κλικ στην καρτέλα <emph>Χρώματα</emph>. Εμφανίζεται ένας πίνακες με τα προκαθορισμένα χρώματα."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154657.13
-#, fuzzy
 msgid  "Changes made to the standard color table are permanent and are saved automatically."
 msgstr "Οι αλλαγές που εφαρμόστηκαν στον τυπικό πίνακα χρωμάτων είναι μόνιμες και αποθηκεύονται αυτόματα."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3166425.14
-#, fuzzy
 msgid  "Click a color in the table that is similar to the one you want to mix. The color appears in the upper preview box to the right of the table."
 msgstr "Κάντε κλικ σε ένα χρώμα στον πίνακα που είναι παρόμοιο σε αυτό που επιθυμείτε να αναμίξετε. Το χρώμα εμφανίζεται στο πάνω πεδίο προεπισκόπησης στα δεξιά του πίνακα."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152992.15
-#, fuzzy
 msgid  "Select the RGB or CMYK color model in the box below the preview boxes."
 msgstr "Επιλέξτε το RGB ή CMYK μοντέλο χρωμάτων στο πεδίο κάτω από τα πεδία προεπισκόπησης."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id4979705
-#, fuzzy
 msgid  "%PRODUCTNAME uses only the RGB color model for printing in color. The CMYK controls are provided only to ease the input of color values using CMYK notation."
 msgstr "Το %PRODUCTNAME χρησιμοποιεί μόνο το μοντέλο χρώματος RGB για την έγχρωμη εκτύπωση. Τα πεδία ελέγχου CMYK παρέχονται μόνο για την εύκολη εισαγωγή τιμών στα χρώματα χρησιμοποιώντας την καταγραφή CMYK."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152987.16
-#, fuzzy
 msgid  "The RGB color model mixes red, green and blue light to create colors on a computer screen. In the RGB model, the three color components are additive and can have values ranging from 0 (black) to 255 (white). The CMYK color model combines Cyan (C), Magenta (M), Yellow (Y), and blacK (K, also used for \"Key\") to create colors for printing. The four colors of the CMYK models are subtractive and are defined as percentages. Black corresponds to 100 % and white to 0 %."
 msgstr "Το μοντέλο χρωμάτων RGB αναμιγνύει το κόκκινο, το πράσινο και το ανοικτό γαλάζιο για να δημιουργήσει χρώματα στην οθόνη του υπολογιστή. Στο μοντέλο RGB, τα τρία περιεχόμενα χρώματος είναι προσθετικά και μπορούν να έχουν τιμές με εύρος από 0 (μαύρο) μέχρι 255 (λευκό). Το μοντέλο χρωμάτων CMYK συνδυάζει το κυανό (C), το πορφυρό (M), το κίτρινο (Y), και το μαύρο (Κ, που επίσης χρησιμοποιείται για το \"Κλειδί\") για να δημιουργήσει χρώματα προς εκτύπωση. Τα τέσσερα χρώματα των μοντέλων CMYK είναι αφαιρετικά και ορίζοται ως ποσοστά. Το μαύρο αντιστοιχεί στο 100 % και το λευκό στο 0 %."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145386.17
-#, fuzzy
 msgid  "Enter a numeric value in the boxes next to the color components. The new color appears in the preview box directly above the color model box."
 msgstr "Εισάγετε μία αριθμητική τιμή στα πεδία δίπλα στα περιεχόμενα χρωμάτων. Το νέο χρώμα εμφανίζεται στο πεδίο προεπισκόπησης απευθείας πάνω από ένα πεδίο με μοντέλο χρώματος."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152871.18
 msgid  "You can also create a color using a color spectrum. Click the \<emph\>Edit\</emph\> button to open the \<link href=\"text/shared/optionen/01010501.xhp\" name=\"Color\"\>\<emph\>Color\</emph\>\</link\> dialog. Click a color. Use the Hue, Saturation, and Brightness boxes to adjust your color selection."
-msgstr ""
+msgstr "Μπορείτε επίσης να δημιουργήσετε ένα χρώμα χρησιμοποιώντας ένα φάσμα χρωμάτων. Κάντε κλικ στο κουμπί <emph>Επεξεργασία</emph> και ανοίξτε το παράθυρο διαλόγου <link href=\"text/shared/optionen/01010501.xhp\" name=\"Χρώμα\"><emph>Χρώμα</emph></link>. Κάντε κλικ σε ένα χρώμα και στη συνέχεια στο κουμπί ΟΚ. Χρησιμοποιήστε τα πεδία Απόχρωση, Κορεσμός, και Φωτεινότητα για να προσαρμόσετε την επιλογή χρωμάτων σας."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3153011.19
-#, fuzzy
 msgid  "Do one of the following:"
 msgstr "Εφαρμόστε κάποιο από τα ακόλουθα:"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3147244.26
 msgid  "If you want to replace the color in the standard color table that your custom color is based on, click \<emph\>Modify\</emph\>."
-msgstr ""
+msgstr "Αν επιθυμείτε να αντικαταστήσετε το χρώμα στον τυπικό πίνακα χρωμάτων στον οποίο είναι βασισμένο το προσαρμοσμένο χρώμα σας, κάντε κλικ στην <emph>Τροποποίηση</emph>."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145116.20
 msgid  "If you want to add your custom color to the standard color table, enter a name in the \<emph\>Name\</emph\> text box and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Αν επιθυμείτε να προσθέσετε το προσαρμοσμένο χρώμα σας στον τυπικό πίνακα χρωμάτων, εισάγετε ένα όνομα στο πεδίο κειμένου <emph>Όνομα</emph> και κάντε κλικ στην <emph>Προσθήκη</emph>."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145236.23
 msgid  "\<link href=\"text/shared/01/03170000.xhp\" name=\"Color bar\"\>Color bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03170000.xhp\" name=\"Γραμμή χρωμάτων\">Γραμμή χρωμάτων</link>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#tit
-#, fuzzy
 msgid  "Combining Objects and Constructing Shapes"
 msgstr "Συνδυασμός αντικειμένων και κατασκευή σχημάτων"
 
 #: source/text/sdraw/guide/combine_etc.xhp#bm_id3156443
 msgid  "\<bookmark_value\>combining; draw objects\</bookmark_value\>\<bookmark_value\>merging; draw objects\</bookmark_value\>\<bookmark_value\>connecting; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; combining\</bookmark_value\>\<bookmark_value\>intersecting draw objects\</bookmark_value\>\<bookmark_value\>polygons; intersecting/subtracting/merging\</bookmark_value\>\<bookmark_value\>subtracting polygons\</bookmark_value\>\<bookmark_value\>constructing shapes\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>συνδυασμός, αντικείμενα σχεδίασης</bookmark_value><bookmark_value>συγχώνευση, αντικείμενα σχεδίασης</bookmark_value><bookmark_value>σύνδεση, αντικείμενα σχεδίασης</bookmark_value><bookmark_value>αντικείμενα σχεδίασης, συνδυασμός</bookmark_value><bookmark_value>τομή αντικειμένων σχεδίασης</bookmark_value><bookmark_value>πολύγωνα, τομή/αφαίρεση/συγχώνευση</bookmark_value><bookmark_value>αφαίρεση πολυγώνων</bookmark_value><bookmark_value>κατασκευή σχημάτων</bookmark_value>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3156443.64
 msgid  "\<variable id=\"combine_etc\"\>\<link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Combining Objects and Constructing Shapes\"\>Combining Objects and Constructing Shapes\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"combine_etc\"><link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Συνδυασμός αντικειμένων και κατασκευή σχημάτων\">Συνδυασμός αντικειμένων και κατασκευή σχημάτων</link> </variable>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3149020.65
-#, fuzzy
 msgid  "Combined drawing objects act as grouped objects, except that you cannot enter the group to edit the individual objects. "
 msgstr "Τα συνδυασμένα αντικείμενα σχεδίασης συμπεριφέρονται σαν ομαδοποιημένα αντικείμενα, εκτός του ότι δε μπορείτε να εισάγετε την ομάδα για να επεξεργαστείτε τα μεμονωμένα αντικείμενα."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3154659.87
-#, fuzzy
 msgid  "You can only combine 2D objects."
 msgstr "Μπορείτε να συνδυάσετε μόνο αντικείμενα 2Δ."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3150344.32
-#, fuzzy
 msgid  "To combine 2D objects:"
 msgstr "Για να συνδυάσετε αντικείμενα 2Δ:"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3166428.66
-#, fuzzy
 msgid  "Select two or more 2D objects."
 msgstr "Επιλέξτε δύο ή περισσότερα αντικείμενα 2Δ."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145587.67
 msgid  "Choose \<emph\>Modify - Combine\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε <emph>Τροποποίηση - Συνδυασμός</emph>."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3146978.33
-#, fuzzy
 msgid  "Unlike groups, a combined object takes on the properties of the lowermost object in the stacking order. You can split apart combined objects, but the original object properties are lost."
 msgstr "Σε αντίθεση με τις ομάδες, ένα συνδυασμένο αντικείμενο εφαρμόζει τις ιδιότητες του κατώτερου αντικειμένου στη σειρά ταξινόμησης της στοίβας. Μπορείτε να διαιρέσετε συνδυασμένα αντικείμενα, αλλά οι ιδιότητες του αρχικού αντικειμένου θα χαθούν."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3155088.34
-#, fuzzy
 msgid  "When you combine objects, holes appear where the objects overlap."
 msgstr "Όταν συνδέετε αντικείμενα, εμφανίζονται οπές στα σημεία που επικαλύπτονται τα αντικείμενα."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3156019
 msgid  " \<image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"\>\<alt id=\"alt_id3157978\"\>Illustration for combining objects\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"><alt id=\"alt_id3157978\">Παράδειγμα για το συνδυασμό αντικειμένων</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153249.35
-#, fuzzy
 msgid  "In the illustration, the uncombined objects are on the left and the combined objects on the right."
 msgstr "Στο παράδειγμα, τα μη συνδυασμένα αντικείμενα βρίσκονται στα αριστερά και τα συνδυασμένα αντικείμενα στα δεξιά."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3159229.68
-#, fuzzy
 msgid  "Constructing Shapes"
 msgstr "Κατασκευή σχημάτων"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150049.63
 msgid  "You can construct shapes by applying the \<link href=\"text/simpress/01/13180000.xhp\" name=\"Shapes\"\>\<emph\>Shapes\</emph\>\</link\> \<emph\>- Merge, Subtract and Intersect\</emph\> commands to two or more drawing objects."
-msgstr ""
+msgstr "Μπορείτε να κατασκευάσετε σχήματα εφαρμόζοντας τις εντολές <link href=\"text/simpress/01/13180000.xhp\" name=\"Σχήματα\"><emph>Σχήματα</emph></link> <emph>- Συγχώνευση, αφαίρεση και τομή</emph> για δύο ή περισσότερα αντικείμενα σχεδίασης."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3147403.88
-#, fuzzy
 msgid  "Shape commands only work on 2D objects."
 msgstr "Οι εντολές για τα σχήματα μπορούν να εφαρμοστούν μόνο σε αντικείμενα 2Δ."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150539.89
-#, fuzzy
 msgid  "Constructed shapes take on the properties of the lowermost object in the stacking order."
 msgstr "Τα δομημένα σχήματα εφαρμόζουν τις ιδιότητες του κατώτερου αντικειμένου στην σειρά ταξινόμησης της στοίβας."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3156402.90
-#, fuzzy
 msgid  "To construct a shape:"
 msgstr "Για να κατασκευάσετε ένα σχήμα:"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157874.69
-#, fuzzy
 msgid  "Select two or more 2D objects."
 msgstr "Επιλέξτε δύο ή περισσότερα αντικείμενα 2Δ."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150650.70
 msgid  "Choose \<emph\>Modify - Shapes\</emph\> and one of the following:"
-msgstr ""
+msgstr "Επιλέξτε <emph>Τροποποίηση - Σχήματα</emph> και εφαρμόστε κάποιο από τα ακόλουθα:"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145829.91
 msgid  " \<emph\>Merge\</emph\> "
-msgstr ""
+msgstr " <emph>Συγχώνευση</emph> "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3154680.92
 msgid  " \<emph\>Subtract\</emph\> "
-msgstr ""
+msgstr " <emph>Αφαίρεση</emph> "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153034.93
 msgid  " \<emph\>Intersect\</emph\>."
-msgstr ""
+msgstr " <emph>Τομή</emph>."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3145144.94
-#, fuzzy
 msgid  "Shape Commands"
 msgstr "Εντολές σχημάτων"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153931.71
-#, fuzzy
 msgid  "In the following illustrations, the original objects are on the left and the modified shapes on the right."
 msgstr "Στα ακόλουθα παραδείγματα τα αρχικά αντικείμενα βρίσκονται στα αριστερά και τα τροποποιημένα αντικείμενα στα δεξιά."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3149950.72
-#, fuzzy
 msgid  "Shapes - Merge"
 msgstr "Σχήματα - Συγχώνευση"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3148585
 msgid  " \<image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3145593\"\>Illustration for merging shapes\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"><alt id=\"alt_id3145593\">Παράδειγμα για τη συγχώνευση σχημάτων</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150001.73
-#, fuzzy
 msgid  "Adds the area of the selected objects to the area of the lowermost object in the stacking order."
 msgstr "Προσθέτει την περιοχή των επιλεγμένων αντικειμένων στην περιοχή του κατώτερου αντικειμένου στη σειρά ταξινόμησης της στοίβας."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3153002.74
-#, fuzzy
 msgid  "Shapes - Subtract"
 msgstr "Σχήματα - Αφαίρεση"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150338
 msgid  " \<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3154505\"\>Illustration for subtracting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"><alt id=\"alt_id3154505\">Παράδειγμα για την αφαίρεση σχημάτων</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150022.75
-#, fuzzy
 msgid  "Subtracts the area of the selected objects from the area of the lowermost object in the stacking order."
 msgstr "Αφαιρεί την περιοχή των επιλεγμένων αντικειμένων από την περιοχή του κατώτερου αντικειμένου στη σειρά ταξινόμησης της στοίβας."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3147370.78
-#, fuzzy
 msgid  "Shapes - Intersect"
 msgstr "Σχήματα - Τομή"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150570
 msgid  " \<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"\>\<alt id=\"alt_id3150658\"\>Illustration for intersecting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"><alt id=\"alt_id3150658\">Παράδειγμα για την τομή σχημάτων</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157972.79
-#, fuzzy
 msgid  "The overlapping area of the selected objects creates the new shape."
 msgstr "Η επικαλυπτόμενη περιοχή των επιλεγμένων αντικειμένων δημιουργεί ένα νέο σχήμα."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3151020.80
-#, fuzzy
 msgid  "The area outside the overlap is removed."
 msgstr "Η περιοχή έξω από την επικάλυψη αφαιρείται."
 
 #: source/text/sdraw/guide/cross_fading.xhp#tit
-#, fuzzy
 msgid  "Cross-Fading Two Objects"
 msgstr "Βαθμιαίος αποχρωματισμός δύο αντικειμένων"
 
 #: source/text/sdraw/guide/cross_fading.xhp#bm_id3150715
 msgid  "\<bookmark_value\>draw objects; cross-fading two objects\</bookmark_value\>\<bookmark_value\>cross-fading; two draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>αντικείμενα σχεδίασης, βαθμιαίος αποχρωματισμός δύο αντικειμένων</bookmark_value><bookmark_value>βαθμιαίος αποχρωματισμός, δύο αντικείμενα σχεδίασης</bookmark_value>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#hd_id3150715.17
 msgid  "\<variable id=\"cross_fading\"\>\<link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Cross-Fading Two Objects\"\>Cross-Fading Two Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"cross_fading\"><link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Βαθμιαίος αποχρωματισμός δύο αντικειμένων\">Βαθμιαίος αποχρωματισμός δύο αντικειμένων</link></variable>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154754.18
-#, fuzzy
 msgid  "Cross-fading creates shapes and distributes them by uniform increments between two drawing objects."
 msgstr "Ο βαθμιαίος αποχρωματισμός δημιουργεί σχήματα και τα κατανέμει με ομοιόμορφα βήματα μεταξύ δύο αντικειμένων σχεδίασης."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3155112.41
-#, fuzzy
 msgid  "The cross-fading command is only available in $[officename] Draw. You can, however, copy and paste cross-faded objects into $[officename] Impress."
 msgstr "Η εντολή για τον βαθμιαίο αποχρωματισμό είναι διαθέσιμη μόνο στο $[officename] Draw. Μπορείτε, παρόλα αυτά, να αντιγράψετε και να επικολλήσετε αντικείμενα με σταδιακό ξεθώριασμα στο $[officename] Impress."
 
 #: source/text/sdraw/guide/cross_fading.xhp#hd_id3149209.20
-#, fuzzy
 msgid  "To cross-fade two objects:"
 msgstr "Για να αποχρωματίσετε σταδιακά δύο αντικείμενα:"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3150370.45
-#, fuzzy
 msgid  "Hold down Shift and click each object."
 msgstr "Κρατήστε πατημένο το πλήκτρο Shift και κάντε κλικ σε κάθε αντικείμενο."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3166428.22
 msgid  "Choose \<emph\>Edit - Cross-fading\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε <emph>Επεξεργασία - Βαθμιαίος αποχρωματισμός</emph>."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3156450.44
 msgid  "Enter a value to specify the number of objects between the start and end of the cross-fade in the \<emph\>Increments\</emph\> box."
-msgstr ""
+msgstr "Εισάγετε μία τιμή για να καθορίσετε τον αριθμό αντικειμένων μεταξύ της έναρξης και του τέλους του σταδιακού αποχρωματισμού στο πεδίο <emph>Βήματα</emph>."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3149405.23
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Κάντε κλικ στο κουμπί <emph>OK</emph>. "
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3151240.24
-#, fuzzy
 msgid  "A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed."
 msgstr "Εμφανίζεται μία ομάδα που περιέχει δύο αρχικά αντικείμενα και τον καθορισμένο αριθμό (βήματα) αντικειμένων με βαθμιαίο αποχρωματισμό."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3159203
 msgid  "\<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"\>\<alt id=\"alt_id3150210\"\>Illustration for crossfading\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"><alt id=\"alt_id3150210\">Παράδειγμα βαθμιαίου αποχρωματισμού</alt></image>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154766.25
 msgid  "You can edit the individual objects of a group by selecting the group and pressing F3. Press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3 to exit the group editing mode."
-msgstr ""
+msgstr "Μπορείτε να επεξεργαστείτε τα αντικείμενα μιας ομάδας επιλέγοντας την ομάδα και πατώντας το F3. Πατήστε <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3 για να βγείτε από τη λειτουργία επεξεργασίας ομάδας."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3155760.42
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Editing - Cross-fading\"\>Editing - Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Επεξεργασία - Βαθμιαίος αποχρωματισμός\">Επεξεργασία - Βαθμιαίος αποχρωματισμός</link>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#tit
-#, fuzzy
 msgid  "Drawing Sectors and Segments"
 msgstr "Σχεδιασμός τομέων και τμημάτων"
 
 #: source/text/sdraw/guide/draw_sector.xhp#bm_id3146974
 msgid  "\<bookmark_value\>sectors of circles/ellipses\</bookmark_value\>\<bookmark_value\>segments of circles/ellipses\</bookmark_value\>\<bookmark_value\>circle segments\</bookmark_value\>\<bookmark_value\>ellipses; segments\</bookmark_value\>\<bookmark_value\>drawing; sectors and segments\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>τομείς κύκλων/ελλείψεων</bookmark_value><bookmark_value>τμήματα κύκλων/ελλείψεων</bookmark_value><bookmark_value>τμήματα κύκλου</bookmark_value><bookmark_value>ελλείψεις, τμήματα</bookmark_value><bookmark_value>σχεδίαση, τομείς και τμήματα</bookmark_value>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3146974.30
 msgid  "\<variable id=\"draw_sector\"\>\<link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Drawing Sectors and Segments\"\>Drawing Sectors and Segments\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_sector\"><link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Σχεδιασμός τομέων και τμημάτων\">Σχεδιασμός τομέων και τμημάτων</link></variable>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3147396.31
 msgid  "The \<emph\>Ellipse\</emph\> toolbar contains tools for drawing ellipses and circles. You can also draw segments and sectors of circles and ellipses."
-msgstr ""
+msgstr "Η γραμμή εργαλείων <emph>Έλλειψη</emph> περιέχει εργαλεία για τη σχεδίαση ελλείψεων και κύκλων. Μπορείτε επίσης να σχεδιάσετε τμήματα και τομείς κύκλων και ελλείψεων."
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3151075.32
-#, fuzzy
 msgid  "To draw a sector of a circle or an ellipse:"
 msgstr "Για να σχεδιάσετε έναν τομέα κύκλου ή έλλειψης:"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3155335.33
 msgid  "Open the \<emph\>Ellipses\</emph\> toolbar and click one of the \<emph\>Circle Pie\</emph\> or \<emph\>Ellipse Pie\</emph\> icons \<image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3155768\"\>Icon\</alt\>\</image\>. The mouse pointer changes to a cross hair with a small icon of a sector."
-msgstr ""
+msgstr "Ανοίξτε τη γραμμή εργαλείων <emph>Ελλείψεις</emph> και κάντε κλικ σε ένα από τα εικονίδια <emph>Κυκλική πίτα</emph> ή <emph>Ελλειπτική πίτα</emph> <image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3155768\">Εικονίδιο</alt></image>. Ο δείκτης του ποντικιού μετατρέπεται σε χέρι με σταυρό με ένα μικρό εικονίδιο ενός τομέα."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3150199.34
-#, fuzzy
 msgid  "Position the pointer at the edge of the circle you want to draw and drag to create the circle."
 msgstr "Τοποθετήστε το δείκτη στο άκρο του κύκλου που επιθυμείτε να σχεδιάσετε και μεταφέρετε για να δημιουργήσετε τον κύκλο."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3148868.35
 msgid  "To create a circle by dragging from the center, press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> while dragging."
-msgstr ""
+msgstr "Για να δημιουργήσετε ένα κύκλο τραβώντας τον από το κέντρο, πατήστε <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> καθώς τραβάτε με το ποντίκι."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3145361.36
-#, fuzzy
 msgid  "Release the mouse button when the circle has reached the size you want. A line corresponding to the circle radius appears in the circle."
 msgstr "Απελευθερώστε το κουμπί του ποντικιού όταν ο κύκλος αποκτήσει το μέγεθος που επιθυμείτε. Εμφανίζεται στον κύκλο μία γραμμή που αντιστοιχεί στην ακτίνα του."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3149872.37
-#, fuzzy
 msgid  "Position the pointer where you want to place the first boundary of the sector and click."
 msgstr "Τοποθετήστε το δείκτη στην θέση που επιθυμείτε να τοποθετήσετε το πρώτο όριο του τομέα και κάντε κλικ."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3157871.51
-#, fuzzy
 msgid  "As the radius line that follows the pointer is constrained to the circle boundaries, you can click anywhere in the document."
 msgstr "Ενώ η ακτινική γραμμή που ακολουθεί το  δείκτη περιορίζεται στα όρια του κύκλου, μπορείτε να κάνετε κλικ οπουδήποτε στο έγγραφο."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3146874.38
-#, fuzzy
 msgid  "Position the pointer where you want to place the second boundary of the sector and click. The completed sector is displayed."
 msgstr "Τοποθετήστε το δείκτη στην θέση που επιθυμείτε να τοποθετήσετε το δεύτερο όριο του τομέα και κάντε κλικ. Εμφανίζεται ο ολοκληρωμένος τομέας."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3148581.41
-#, fuzzy
 msgid  "To draw a segment of a circle or ellipse, follow the steps for creating a sector based on a circle."
 msgstr "Για να σχεδιάσετε ένα τμήμα κύκλου ή έλλειψης, ακολουθήστε τα βήματα για τη δημιουργία ενός τομέα με βάση έναν κύκλο."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3153084.42
-#, fuzzy
 msgid  "To draw an arc based on an ellipse, choose one of the arc icons and follow the same steps for creating a sector based on a circle."
 msgstr "Για να σχεδιάσετε ένα τόξο με βάση μία έλλειψη, επιλέξτε ένα από τα εικονίδια με τα τόξα και ακολουθήστε τα ίδια βήματα για τη δημιουργία ενός τομέα με βάση έναν κύκλο."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#tit
-#, fuzzy
 msgid  "Duplicating Objects"
 msgstr "Δημιουργία διπλότυπων αντικειμένων"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#bm_id3145750
 msgid  "\<bookmark_value\>doubling draw objects\</bookmark_value\>\<bookmark_value\>draw objects; duplicating\</bookmark_value\>\<bookmark_value\>duplicating draw objects\</bookmark_value\>\<bookmark_value\>multiplying draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>δημιουργία διπλότυπων αντικειμένων σχεδίασης</bookmark_value><bookmark_value>αντικείμενα σχεδίασης, δημιουργία διπλότυπων</bookmark_value><bookmark_value>δημιουργία διπλότυπων αντικειμένων σχεδίασης</bookmark_value><bookmark_value>δημιουργία πολλαπλών κλώνων αντικειμένων σχεδίασης</bookmark_value>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#hd_id3145750.3
 msgid  "\<variable id=\"duplicate_object\"\>\<link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Duplicating Objects\"\>Duplicating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"duplicate_object\"><link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Δημιουργία διπλότυπων αντικειμένων\">Δημιουργία διπλότυπων αντικειμένων</link></variable>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149400.4
-#, fuzzy
 msgid  "You can create duplicate or multiple copies of an object. The copies can be identical or can differ in size, color, orientation and location."
 msgstr "Μπορείτε να δημιουργήσετε διπλότυπο ή πολλαπλά αντίγραφα ενός αντικειμένου. Τα αντίγραφα μπορούν να είναι πανομοιότυπα ή μπορούν και να διαφέρουν σε μέγεθος, χρώμα. προσανατολισμό και τοποθεσία."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3153415.5
-#, fuzzy
 msgid  "The following example creates a stack of coins by making multiple copies of a single ellipse."
 msgstr "Το ακόλουθο παράδειγμα δημιουργεί μία στοίβα νομισμάτων δημιουργώντας πολλαπλά αντίγραφα μίας απλής έλλειψης."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149129.6
 msgid  "Use the \<emph\>Ellipse\</emph\> tool to draw a solid yellow ellipse."
-msgstr ""
+msgstr "Χρησιμοποιήστε το εργαλείο <emph>Έλλειψη</emph> για να σχεδιάσετε μία συμπαγής κίτρινη έλλειψη."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149209.8
 msgid  "Select the ellipse and choose \<emph\>Edit - Duplicate\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε την έλλειψη και επιλέξτε <emph>Επεξεργασία - Διπλότυπο</emph>."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3145585.9
 msgid  "Enter 12 as \<emph\>Number of copies.\</emph\>"
-msgstr ""
+msgstr "Εισάγετε τον αριθμό 12 ως <emph>Αριθμό αντιγράφων.</emph>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151192.11
 msgid  "Enter a negative value for the \<emph\>Width\</emph\> and \<emph\>Height\</emph\> so that the coins decrease in size as you go up the stack."
-msgstr ""
+msgstr "Εισάγετε μία αρνητική τιμή για το <emph>Πλάτος</emph> και το <emph>Ύψος</emph> έτσι ώστε να μειωθεί το μέγεθος των νομισμάτων προς το πάνω μέρος της στοίβας."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151387.39
 msgid  "To define a color transition for the coins, select different colors in the \<emph\>Start\</emph\> and \<emph\>End\</emph\> boxes. The \<emph\>Start\</emph\> color is applied to the object that you are duplicating."
-msgstr ""
+msgstr "Για να ορίσετε μία εναλλαγή χρωμάτων για τα νομίσματα, επιλέξτε διαφορετικά χρώματα στα πεδία <emph>Έναρξη</emph> και <emph>Τέλος</emph>. Το χρώμα για την <emph>Έναρξη</emph> εφαρμόζεται στο αντικείμενο για το οποίο δημιουργείτε το διπλότυπό του."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149947.12
 msgid  "Click \<emph\>OK\</emph\> to create the duplicates."
-msgstr ""
+msgstr "Κάντε κλικ στο κουμπί <emph>OK</emph> για να δημιουργήσετε τα διπλότυπα."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3153935.50
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Edit - Duplicate\"\>Edit - Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Επεξεργασία - Διπλότυπο\">Επεξεργασία - Διπλότυπο</link>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#tit
-#, fuzzy
 msgid  "Replacing Colors"
 msgstr "Αντικατάσταση χρωμάτων"
 
 #: source/text/sdraw/guide/eyedropper.xhp#bm_id3147436
 msgid  "\<bookmark_value\>eyedropper tool\</bookmark_value\>\<bookmark_value\>colors; replacing\</bookmark_value\>\<bookmark_value\>replacing;colors in bitmaps\</bookmark_value\>\<bookmark_value\>metafiles;replacing colors\</bookmark_value\>\<bookmark_value\>bitmaps;replacing colors\</bookmark_value\>\<bookmark_value\>GIF images;replacing colors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>εργαλείο Σταγονόμετρο</bookmark_value><bookmark_value>χρώματα, αντικατάσταση</bookmark_value><bookmark_value>αντικατάσταση, χρώματα σε εικόνες bitmap</bookmark_value><bookmark_value>μετα-αρχεία, αντικατάσταση χρωμάτων</bookmark_value><bookmark_value>εικόνες bitmap, αντικατάσταση χρωμάτων</bookmark_value><bookmark_value>εικόνες GIF, αντικατάσταση χρωμάτων</bookmark_value>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3147436.38
 msgid  "\<variable id=\"eyedropper\"\>\<link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Replacing Colors\"\>Replacing Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eyedropper\"><link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Αντικατάσταση χρωμάτων\">Αντικατάσταση χρωμάτων</link></variable>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3156286.24
 msgid  "You can replace colors in bitmaps with the \<emph\>Color Replacer\</emph\> tool."
-msgstr ""
+msgstr "Μπορείτε να αντικαθιστάτε χρώματα σε εικόνες bitmap με το εργαλείο <emph>Σταγονόμετρο</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3154704.25
-#, fuzzy
 msgid  "Up to four colors can be replaced at once."
 msgstr "Μπορούν να αντικατασταθούν μέχρι τέσσερα χρώματα ταυτόχρονα."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3147344.26
 msgid  "You can also use the \<emph\>Transparency\</emph\> option to replace the transparent areas of an image with a color."
-msgstr ""
+msgstr "Μπορείτε επίσης να χρησιμοποιήσετε την επιλογή <emph>Διαφάνεια</emph> για να αντικαταστήσετε τις διαφανείς περιοχές μίας εικόνας με κάποιο χρώμα."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148488.27
 msgid  "Similarly, you can use the \<emph\>Color Replacer\</emph\> to make a color on your image transparent."
-msgstr ""
+msgstr "Παρόμοια, μπορείτε να χρησιμοποιήσετε το εργαλείο <emph>Σταγονόμετρο</emph> για να κάνετε διαφανές ένα χρώμα στην εικόνα σας."
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3150205.28
-#, fuzzy
 msgid  "To replace colors with the Color Replacer tool"
 msgstr "Για να αντικαταστήσετε χρώματα με το εργαλείο Σταγονόμετρο"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3154656.29
-#, fuzzy
 msgid  "Ensure that the image you are using is a bitmap (for example, BMP, GIF, JPG, or PNG) or a metafile (for example, WMF)."
 msgstr "Βεβαιωθείτε ότι η εικόνα που χρησιμοποιείτε είναι μία εικόνα bitmap (για παράδειγμα, BMP, GIF, JPG, ή PNG) ή ένα μετα-αρχείο (για παράδειγμα, WMF)."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3150202.30
 msgid  "Choose \<emph\>Tools - Color Replacer\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε <emph>Εργαλεία - Σταγονόμετρο</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3155531.31
-#, fuzzy
 msgid  "Click the Color Replacer icon and position the mouse pointer over the color you want to replace in the image. The color appears in the box next to the icon."
 msgstr "Κάντε κλικ στο εικονίδιο Σταγονόμετρο και τοποθετήστε το δείκτη του ποντικιού σας πάνω από το χρώμα που επιθυμείτε να αντικαταστήσετε στην εικόνα. Το χρώμα εμφανίζεται στο πεδίο δίπλα από το εικονίδιο αυτό."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3152985.32
 msgid  "Click the color in the image. The color appears in the first \<emph\>Source color\</emph\> box and the check box next to the color is selected."
-msgstr ""
+msgstr "Κάντε κλικ στο χρώμα στην εικόνα. Το χρώμα εμφανίζετε στο πρώτο πεδίο για την <emph>Βασικό χρώμα</emph> και επιλέγεται το πεδίο δίπλα στο χρώμα."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148866.33
 msgid  "In the \<emph\>Replace with\</emph\> box, select the new color."
-msgstr ""
+msgstr "Στο πεδίο <emph>Αντικατάσταση με</emph>, επιλέξτε το νέο χρώμα."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3145362.41
 msgid  "This replaces all occurrences of the \<emph\>Source color\</emph\> in the image."
-msgstr ""
+msgstr "Με αυτόν τον τρόπο αντικαθιστώνται όλες οι επιφάνειες με το <emph>Βασικό χρώμα</emph> στην εικόνα."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3151191.34
 msgid  "If you want to replace another color while the dialog is open, select the check box in front of \<emph\>Source color\</emph\> in the next row and repeat steps 3 to 5."
-msgstr ""
+msgstr "Αν επιθυμείτε να αντικαταστήσετε κάποιο άλλο χρώμα ενώ το παράθυρο διαλόγου παραμένει ανοικτό, επιλέξτε το πεδίο ελέγχου μπροστά από το <emph>Βασικό χρώμα</emph> στην επόμενη γραμμή και επαναλάβετε τα βήματα 3 μέχρι 5."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3149876.36
 msgid  "Click \<emph\>Replace\</emph\>."
-msgstr ""
+msgstr "Κάντε κλικ στην <emph>Αντικατάσταση</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3157871.37
 msgid  "If you want to expand or contract the color selection area, increase or decrease the tolerance of the \<emph\>Color Replacer\</emph\> tool and repeat your selection."
-msgstr ""
+msgstr "Αν επιθυμείτε να επεκτείνετε ή να αντιστρέψετε το επιλεγμένο χρώμα στην περιοχή, αυξήστε ή μειώστε την ευαισθησία στο εργαλείο <emph>Σταγονόμετρο</emph> και επαναλάβετε την επιλογή σας."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3146878.39
 msgid  "\<link href=\"text/shared/01/06030000.xhp\" name=\"Color Replacer\"\>Color Replacer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06030000.xhp\" name=\"Σταγονόμετρο\">Σταγονόμετρο</link>"
 
 #: source/text/sdraw/guide/gradient.xhp#tit
-#, fuzzy
 msgid  "Creating Gradient Fills"
 msgstr "Δημιουργία γεμισμάτων με διαβαθμίσεις χρωμάτων"
 
 #: source/text/sdraw/guide/gradient.xhp#bm_id3150792
 msgid  "\<bookmark_value\>gradients; applying and defining\</bookmark_value\>\<bookmark_value\>editing;gradients\</bookmark_value\>\<bookmark_value\>defining;gradients\</bookmark_value\>\<bookmark_value\>custom gradients\</bookmark_value\>\<bookmark_value\>transparency;adjusting\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>διαβαθμίσεις, εισαγωγή και ορισμός</bookmark_value><bookmark_value>επεξεργασία, διαβαθμίσεις</bookmark_value><bookmark_value>ορισμός, διαβαθμίσεις</bookmark_value><bookmark_value>προσαρμοσμένες διαβαθμίσεις</bookmark_value><bookmark_value>διαφάνεια, προσαρμογή</bookmark_value>"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3150792.3
 msgid  "\<variable id=\"gradient\"\>\<link href=\"text/sdraw/guide/gradient.xhp\" name=\"Creating Gradient Fills\"\>Creating Gradient Fills\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"gradient\"><link href=\"text/sdraw/guide/gradient.xhp\" name=\"Δημιουργία γεμισμάτων με διαβάθμιση χρώματος\">Δημιουργία γεμισμάτων με διαβάθμιση χρώματος</link> </variable>"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154012.4
-#, fuzzy
 msgid  "A gradient fill is an incremental blend of two different colors, or shades of the same color, that you can apply to a drawing object."
 msgstr "Ένα γέμισμα με διαβάθμιση είναι ένα βηματικό μείγμα δύο διαφορετικών χρωμάτων, ή σκιάσεων του ίδιου χρώματος, που μπορείτε να εφαρμόσετε σε ένα αντικείμενο σχεδίασης."
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3147436.61
-#, fuzzy
 msgid  "To apply a gradient:"
 msgstr "Για να εφαρμόσετε μία διαβάθμιση χρώματος:"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3146974.5
-#, fuzzy
 msgid  "Select a drawing object."
 msgstr "Επιλέξτε ένα αντικείμενο σχεδίασης."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154491.6
 msgid  "Choose \<emph\>Format - Area\</emph\> and select \<emph\>Gradient\</emph\> as the \<emph\>Fill\</emph\> type."
-msgstr ""
+msgstr "Επιλέξτε <emph>Μορφή - Περιοχή</emph> και επιλέξτε <emph>Διαβάθμιση</emph> ως τύπο για το <emph>Γέμισμα</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3153415.7
 msgid  "Select a gradient style from the list and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε ένα στυλ διαβάθμισης χρώματος από τη λίστα και κάντε κλικ στο κουμπί <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3154702.8
-#, fuzzy
 msgid  "Creating Custom Gradients"
 msgstr "Δημιουργία προσαρμοσμένων διαβαθμίσεων χρώματος"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145791.9
-#, fuzzy
 msgid  "You can define your own gradients and modify existing gradients, as well as save and load a list of gradient files."
 msgstr "Μπορείτε να ορίσετε τις δικές σας διαβαθμίσεις χρώματος και να τροποποιήσετε τις υπάρχουσες διαβαθμίσεις, καθώς και να αποθηκεύσετε και να φορτώσετε μια λίστα με αρχεία διαβαθμίσεων."
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3145384.62
-#, fuzzy
 msgid  "To create a custom gradient:"
 msgstr "Για να δημιουργήσετε μία προσαρμοσμένη διαβάθμιση χρώματος:"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3151242.11
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "Επιλέξτε <emph>Μορφή - Περιοχή</emph> και κάντε κλικ στην καρτέλα <emph>Διαβαθμίσεις</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150046.12
 msgid  "Select a gradient from the list to use as the basis for your new gradient and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε μία διαβάθμιση χρώματος από τη λίστα για να τη χρησιμοποιήσετε σαν βάση για τη νέα σας διαβάθμιση και κάντε κλικ στην <emph>Προσθήκη</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145116.13
 msgid  "Type a name for the gradient in the text box and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Πληκτρολογήστε ένα όνομα για τη διαβάθμιση στο πεδίο κειμένου και κάντε κλικ στο κουμπί <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id6535843
-#, fuzzy
 msgid  "The name appears at the end of the gradient list and is selected for editing."
 msgstr "Το όνομα εμφανίζεται στο τέλος της λίστας διαβαθμίσεων και επιλέγεται για επεξεργασία."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150391.15
 msgid  "Set the gradient properties and click \<emph\>Modify\</emph\> to save the gradient."
-msgstr ""
+msgstr "Ορίστε τις ιδιότητες της διαβάθμισης χρώματος και κάντε κλικ στην <emph>Τροποποίηση</emph> για να την αποθηκεύσετε."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3156396.16
 msgid  "Click \<emph\>OK.\</emph\> "
-msgstr ""
+msgstr "Κάντε κλικ στο κουμπί <emph>OK.</emph> "
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3149947.40
-#, fuzzy
 msgid  "Using Gradients and Transparency"
 msgstr "Χρήση διαβαθμίσεων και διαφάνειας"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3157905.41
-#, fuzzy
 msgid  "You can adjust the properties of a gradient as well as the transparency of a drawing object with your mouse."
 msgstr "Μπορείτε να προσαρμόσετε τις ιδιότητες μίας διαβάθμισης καθώς και τη διαφάνεια ενός αντικειμένου σχεδίασης χρησιμοποιώντας το ποντίκι σας."
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3150653.63
-#, fuzzy
 msgid  "To adjust the gradient of a drawing object:"
 msgstr "Για να προσαρμόσετε τη διαβάθμιση χρώματος σε ένα αντικείμενο σχεδίασης:"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154844.42
-#, fuzzy
 msgid  "Select a drawing object with the gradient that you want to modify."
 msgstr "Επιλέξτε ένα αντικείμενο σχεδίασης με τη διαβάθμιση χρώματος που επιθυμείτε να τροποποιήσετε."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145592.43
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "Επιλέξτε <emph>Μορφή - Περιοχή</emph> και κάντε κλικ στην καρτέλα <emph>Διαβαθμίσεις</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_idN107BE
 msgid  "Adjust the values for the gradient to suit your needs and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Προσαρμόστε τις τιμές για τη διαβάθμιση ώστε να ταιριάζουν στις ανάγκες σας και κάντε κλικ στο κουμπί <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150659.46
 msgid  "To adjust the transparency of an object, select the object, choose \<emph\>Format - Area\</emph\> and click the \<emph\>Transparency\</emph\> tab."
-msgstr ""
+msgstr "Για να προσαρμόσετε τη διαφάνεια ενός αντικειμένου, επιλέξτε το αντικείμενο, επιλέξτε <emph>Μορφή - Περιοχή</emph> και κάντε κλικ στην καρτέλα <emph>Διαφάνεια</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#tit
-#, fuzzy
 msgid  "Inserting Graphics"
 msgstr "Εισαγωγή γραφικών"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#bm_id3156443
 msgid  "\<bookmark_value\>pictures; inserting\</bookmark_value\>\<bookmark_value\>images; inserting\</bookmark_value\>\<bookmark_value\>files; inserting pictures\</bookmark_value\>\<bookmark_value\>inserting;pictures\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>εικόνες, εισαγωγή</bookmark_value><bookmark_value>εικόνες, εισαγωγή</bookmark_value><bookmark_value>αρχεία, εισαγωγή εικόνων</bookmark_value><bookmark_value>εισαγωγή, εικόνες</bookmark_value>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#hd_id3156443.1
 msgid  "\<variable id=\"graphic_insert\"\>\<link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Inserting Graphics\"\>Inserting Pictures\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"graphic_insert\"><link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Εισαγωγή γραφικών\">Εισαγωγή γραφικών</link></variable>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155600.2
 msgid  "Choose \<emph\>Insert - Picture - From File\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε <emph>Εισαγωγή - Εικόνα - Από αρχείο</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150749.3
 msgid  "Locate the picture you want to insert. Select the \<emph\>Link\</emph\> check box to insert only a link to the picture. If you want to see the picture before you insert it, select \<emph\>Preview\</emph\>."
-msgstr ""
+msgstr "Εντοπίστε την εικόνα που επιθυμείτε να εισάγετε. Επιλέξτε το πεδίο ελέγχου <emph>Σύνδεση</emph> για να εισάγετε μόνο μία σύνδεση στην εικόνα. Αν επιθυμείτε να δείτε την εικόνα πριν την εισαγωγή της, επιλέξτε, <emph>Προεπισκόπηση</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155764.4
-#, fuzzy
 msgid  "After you insert a linked picture, do not change the name of the source picture or move the source picture to another directory."
 msgstr "Αφού εισάγετε μία συνδεδεμένη εικόνα, μην τροποποιήσετε το όνομα της βασικής εικόνας ή μην μετακινήσετε τη βασική εικόνα σε διαφορετικό κατάλογο."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150044.5
 msgid  "Click \<emph\>Open\</emph\> to insert the picture."
-msgstr ""
+msgstr "Κάντε κλικ στο <emph>Άνοιγμα</emph> για να εισάγετε την εικόνα."
 
 #: source/text/sdraw/guide/groups.xhp#tit
-#, fuzzy
 msgid  "Grouping Objects"
 msgstr "Ομαδοποίηση αντικειμένων"
 
 #: source/text/sdraw/guide/groups.xhp#bm_id3150793
 msgid  "\<bookmark_value\>grouping; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; grouping\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>ομαδοποίηση, αντικείμενα σχεδίασης</bookmark_value><bookmark_value>αντικείμενα σχεδίασης, ομαδοποίηση</bookmark_value>"
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150793.26
 msgid  "\<variable id=\"groups\"\>\<link href=\"text/sdraw/guide/groups.xhp\" name=\"Grouping Objects\"\>Grouping Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"groups\"><link href=\"text/sdraw/guide/groups.xhp\" name=\"Ομαδοποίηση αντικειμένων\">Ομαδοποίηση αντικειμένων</link></variable>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3153728.27
-#, fuzzy
 msgid  "You can combine several objects into a group so that they act as a single object. You can move and transform all objects in a group as a single unit. You can also change the properties (for example, line size, fill color) of all objects in a group as a whole or for individual objects in a group. Groups can be temporary or assigned:"
 msgstr "Μπορείτε να συνδυάσετε πολλά αντικείμενα σε μια ομάδα έτσι ώστε να συμπεριφέρονται σαν απλό αντικείμενο. Μπορείτε να μετακινήσετε και να μετασχηματίσετε όλα τα αντικείμενα σε μία ομάδα σαν απλή μονάδα. Μπορείτε επίσης να μεταβάλετε τις ιδιότητες (για παράδειγμα, το μέγεθος της γραμμής, το χρώμα του γεμίσματος) όλων των αντικειμένων σε μία ομάδα σαν ολόκληρα ή μεμονωμένα αντικείμενα σε μια ομάδα. Οι ομάδες μπορούν να είναι προσωρινές ή ορισμένες:"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147434.64
-#, fuzzy
 msgid  "Temporary - group only lasts as long as all of the combined objects are selected."
 msgstr "Προσωρινή - η ομάδα διαρκεί μόνο εφόσον είναι επιλεγμένα όλα τα συνδυασμένα αντικείμενα."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3154490.65
-#, fuzzy
 msgid  "Assigned - group lasts until it is ungrouped through a menu command."
 msgstr "Ορισμένη - η ομάδα διαρκεί μέχρι να αναιρεθεί η ομαδοποίηση με κάποια εντολή από το μενού."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3145252.66
-#, fuzzy
 msgid  "Groups can also be grouped in other groups. Actions applied to a group do not affect the relative position of the individual objects to each other in the group."
 msgstr "Οι ομάδες μπορούν επίσης να ομαδοποιηθούν σε διαφορετικές ομάδες. Οι ενέργειες που εφαρμόζονται σε μία ομάδα δεν επηρεάζουν τη σχετική θέση των μεμονωμένων αντικειμένων μεταξύ τους στην ομάδα."
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150716.28
-#, fuzzy
 msgid  "To group objects:"
 msgstr "Για να ομαδοποιήσετε αντικείμενα:"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3149018
 msgid  "\<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3145643\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3145643\">Icon</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147346.29
 msgid  "Select the objects you want to group and choose \<emph\>Modify - Group\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε τα αντικείμενα που επιθυμείτε να ομαδοποιήσετε και επιλέξτε <emph>Τροποποίηση - Ομαδοποίηση</emph>."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3148485.30
-#, fuzzy
 msgid  "For example, you can group all of the objects in a company logo to move and resize the logo as a single object."
 msgstr "Για παράδειγμα, μπορείτε να ομαδοποιήσετε όλα τα αντικείμενα σε ένα λογότυπο εταιρίας και να μετακινήσετε και να αλλάξετε το μέγεθός του σαν να ήταν απλό αντικείμενο."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147002.31
-#, fuzzy
 msgid  "After you have grouped objects, selecting any part of the group selects the entire group."
 msgstr "Αφού ομαδοποιήσετε τα αντικείμενα, επιλέγοντας οποιοδήποτε μέρος της ομάδας, επιλέγει ολόκληρη την ομάδα."
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150205.55
-#, fuzzy
 msgid  "Selecting Objects in a Group"
 msgstr "Επιλογή αντικειμένων σε μία ομάδα"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150370
 msgid  "\<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155376\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155376\">Εικονίδιο</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3156450.56
-#, fuzzy
 msgid  "You can select single objects in a group by entering the group. Double-click a group to enter it and click on the object to select it. You can also add or delete objects to and from a group in this mode. The objects that are not part of the group are grayed out."
 msgstr "Μπορείτε να επιλέξετε απλά αντικείμενα σε μία ομάδα εισάγοντας την ομάδα. Κάντε διπλό κλικ σε μία ομάδα για την επεξεργαστείτε,  και κάντε κλικ πάνω στο αντικείμενο για να το επιλέξετε. Μπορείτε επίσης να προσθέσετε ή να διαγράψετε αντικείμενα σε μία ομάδα με αυτήν τη λειτουργία. Τα αντικείμενα που αποτελούν μέρος της ομάδας επισημαίνονται με γκρι."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3151239
 msgid  "\<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155264\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155264\">Εικονίδιο</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150213.58
-#, fuzzy
 msgid  "To exit a group, double-click anywhere outside it."
 msgstr "Για να εξέλθετε από μία ομάδα, κάντε διπλό κλικ οπουδήποτε έξω από αυτήν."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#tit
-#, fuzzy
 msgid  "Assembling 3D Objects"
 msgstr "Συναρμολόγηση αντικειμένων 3Δ"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#bm_id3154014
 msgid  "\<bookmark_value\>3D objects; assembling\</bookmark_value\>\<bookmark_value\>assembled objects in 3D\</bookmark_value\>\<bookmark_value\>combining;3D objects\</bookmark_value\>\<bookmark_value\>joining;3D objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>αντικείμενα 3Δ, συναρμολόγηση</bookmark_value><bookmark_value>συναρμολογημένα αντικείμενα σε 3Δ</bookmark_value><bookmark_value>συνδυασμός, αντικείμενα 3Δ</bookmark_value><bookmark_value>σύνδεση, αντικείμενα 3Δ</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#hd_id3156442.29
 msgid  "\<variable id=\"join_objects3d\"\>\<link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Assembling 3D Objects\"\>Assembling 3D Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects3d\"><link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Συναρμολόγηση αντικειμένων 3Δ\">Συναρμολόγηση αντικειμένων 3Δ</link></variable>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3145251.30
-#, fuzzy
 msgid  "3D objects that each form a 3D scene can be combined into a single 3D scene."
 msgstr "Τα 3Δ αντικείμενα που απαρτίζουν μια σκηνή 3Δ μπορούν να συνδυαστούν σε μια μοναδική σκηνή 3Δ."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#hd_id3150042.41
-#, fuzzy
 msgid  "To combine 3D objects:"
 msgstr "Για να συνδυάσετε αντικείμενα 3Δ:"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154702.31
 msgid  "Insert a 3D object from the \<emph\>3D Objects\</emph\> toolbar (for example, a cube)."
-msgstr ""
+msgstr "Εισάγετε ένα αντικείμενο 3Δ από τη γραμμή εργαλείων <emph>Αντικείμενα 3Δ</emph> (για παράδειγμα, έναν κύβο)."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155335.32
-#, fuzzy
 msgid  "Insert a second slightly larger 3D object (for example, a sphere)."
 msgstr "Εισάγετε ένα δεύτερο ελαφρώς μεγαλύτερο αντικείμενο 3Δ (για παράδειγμα, μια σφαίρα)."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3148488.33
 msgid  "Select the second 3D object (sphere) and choose \<emph\>Edit - Cut\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε το δεύτερο αντικείμενο 3Δ (τη σφαίρα) και επιλέξτε <emph>Επεξεργασία - Αποκοπή</emph>."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3149211.34
-#, fuzzy
 msgid  "Double-click the first object (cube) to enter its group."
 msgstr "Κάντε διπλό κλικ στο πρώτο αντικείμενο (τον κύβο) και εισάγετε την ομάδα του."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154652.35
 msgid  "Choose \<emph\>Edit - Paste\</emph\>. Both objects are now part of the same group. If you want, you can edit the individual objects or change their position within the group."
-msgstr ""
+msgstr "Επιλέξτε <emph>Επεξεργασία - Επικόλληση</emph>. Και τα δύο αντικείμενα είναι τώρα μέρος της ίδιας ομάδας. Αν επιθυμείτε, μπορείτε να επεξεργαστείτε τα μεμονωμένα αντικείμενα και να μεταβάλετε την θέση τους εντός της ομάδας."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155376.36
-#, fuzzy
 msgid  "Double-click outside the group to exit the group."
 msgstr "Κάντε διπλό κλικ έξω από την ομάδα για να εξέλθετε από την ομάδα."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3148606.38
-#, fuzzy
 msgid  "You cannot intersect or subtract 3D objects."
 msgstr "Δεν μπορείτε να τέμνετε ή να αφαιρείτε αντικείμενα 3Δ."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154537.39
 msgid  "\<link href=\"text/simpress/02/10090000.xhp\" name=\"Objects in 3D\"\>Objects in 3D\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10090000.xhp\" name=\"Αντικείμενα σε 3Δ\">Αντικείμενα σε 3Δ</link>"
 
 #: source/text/sdraw/guide/join_objects.xhp#tit
-#, fuzzy
 msgid  "Connecting Lines"
 msgstr "Σύνδεση γραμμών"
 
 #: source/text/sdraw/guide/join_objects.xhp#bm_id3145799
 msgid  "\<bookmark_value\>draw objects; connecting lines to\</bookmark_value\>\<bookmark_value\>connecting; lines\</bookmark_value\>\<bookmark_value\>lines; connecting objects\</bookmark_value\>\<bookmark_value\>areas; from connected lines\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>σχεδίαση αντικειμένων, σύνδεση γραμμών σε</bookmark_value><bookmark_value>σύνδεση, γραμμές</bookmark_value><bookmark_value>γραμμές, σύνδεση αντικειμένων</bookmark_value><bookmark_value>περιοχές, από συνδεδεμένες γραμμές</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects.xhp#hd_id3145799.1
 msgid  "\<variable id=\"join_objects\"\>\<link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Connecting Lines\"\>Connecting Lines\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects\"><link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Σύνδεση γραμμών\">Σύνδεση γραμμών</link></variable>"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3154512.3
-#, fuzzy
 msgid  "When you connect lines, lines are drawn between neighboring endpoints."
 msgstr "Όταν συνδέετε γραμμές, οι συνδέσεις σχεδιάζονται μεταξύ των κοντινότερων σημείων τέλους των γραμμών."
 
 #: source/text/sdraw/guide/join_objects.xhp#hd_id3150752.2
-#, fuzzy
 msgid  "To connect lines:"
 msgstr "Για να συνδυάσετε γραμμές:"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3153714.4
-#, fuzzy
 msgid  "Select two or more lines."
 msgstr "Επιλέξτε δύο ή περισσότερες γραμμές."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3156383.5
 msgid  "Right-click and choose \<emph\>Modify - Connect\</emph\>."
-msgstr ""
+msgstr "Κάντε δεξί κλικ και επιλέξτε <emph>Τροποποίηση - Σύνδεση</emph>."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3149257.11
 msgid  "To create a closed object, right-click a line and choose \<emph\>Close Object\</emph\>."
-msgstr ""
+msgstr "Για να δημιουργήσετε ένα κλειστό αντικείμενο, κάντε δεξί κλικ σε μία γραμμή και επιλέξτε <emph>Κλείσιμο αντικειμένου</emph>."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3150363.9
 msgid  "You can only use the \<emph\>Close Object\</emph\> command on connected lines, \<emph\>Freeform Lines \</emph\>and unfilled \<emph\>Curves\</emph\>."
-msgstr ""
+msgstr "Μπορείτε να χρησιμοποιήσετε την εντολή <emph>Κλείσιμο αντικειμένου</emph> σε συνδεδεμένες γραμμές, σε <emph>Γραμμές ελεύθερης σχεδίασης </emph>και κενές <emph>Καμπύλες</emph>."
 
 #: source/text/sdraw/guide/keyboard.xhp#tit
-#, fuzzy
 msgid  "Shortcut Keys for Drawing Objects"
 msgstr "Πλήκτρα συντόμευσης για αντικείμενα σχεδίασης"
 
 #: source/text/sdraw/guide/keyboard.xhp#bm_id3155628
 msgid  "\<bookmark_value\>accessibility; %PRODUCTNAME Draw\</bookmark_value\>\<bookmark_value\>draw objects; text entry mode\</bookmark_value\>\<bookmark_value\>text entry mode for draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>προσιτότητα, %PRODUCTNAME Draw</bookmark_value><bookmark_value>αντικείμενα σχεδίασης, λειτουργία καταχώρισης κειμένου</bookmark_value><bookmark_value>λειτουργία καταχώρισης κειμένου για αντικείμενα σχεδίασης</bookmark_value>"
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3155628.1
 msgid  "\<variable id=\"keyboard\"\>\<link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Shortcut Keys for Drawing Objects\"\>Shortcut Keys for Drawing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"keyboard\"><link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Πλήκτρα συντόμευσης για αντικείμενα σχεδίασης\">Πλήκτρα συντόμευσης για αντικείμενα σχεδίασης</link></variable>"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3148663.13
-#, fuzzy
 msgid  "You can create and edit drawing objects using the keyboard."
 msgstr "Μπορείτε να δημιουργήσετε και να επεξεργαστείτε αντικείμενα σχεδίασης χρησιμοποιώντας το πληκτρολόγιο."
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3125863.12
-#, fuzzy
 msgid  "To Create and Edit a Drawing Object"
 msgstr "Για να δημιουργήσετε και να επεξεργαστείτε ένα αντικείμενο σχεδίασης"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3153188.11
 msgid  "Press \<item type=\"keycode\"\>F6\</item\> to navigate to the \<emph\>Drawing\</emph\> bar."
-msgstr ""
+msgstr "Πιέστε το πλήκτρο <item type=\"keycode\">F6</item> για να περιηγηθείτε στη γραμμή εργαλείων <emph>Σχεδίαση</emph>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3146971.10
 msgid  "Press the \<item type=\"keycode\"\>Right\</item\> arrow key until you reach the toolbar icon of a drawing tool."
-msgstr ""
+msgstr "Πιέστε το <item type=\"keycode\">Δεξιό</item> πλήκτρο βέλους μέχρι να φτάσετε στο εικονίδιο της γραμμής εργαλείων ενός εργαλείου σχεδίασης."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_idN106CD
 msgid  "If there is an arrow next to the icon, the drawing tool opens a sub toolbar. Press the \<item type=\"keycode\"\>Up\</item\> or \<item type=\"keycode\"\>Down\</item\> arrow key to open the sub toolbar, then press the \<item type=\"keycode\"\>Right\</item\> or \<item type=\"keycode\"\>Left\</item\> key to select an icon."
-msgstr ""
+msgstr "Αν υπάρχει ένα βέλος δίπλα στο εικονίδιο, το εργαλείο σχεδίασης ανοίγει σε μία δευτερεύουσα γραμμή εργαλείων. Πιέστε το <item type=\"keycode\">Πάνω</item> ή το <item type=\"keycode\">Κάτω</item> πλήκτρο βέλους για να ανοίξετε τη δευτερεύουσας γραμμή εργαλείων, και στη συνέχεια πιέστε το <item type=\"keycode\">Δεξιό</item> ή το <item type=\"keycode\">Αριστερό</item> πλήκτρο για να επιλέξετε ένα αντικείμενο."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3147338.8
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter\</item\>."
-msgstr ""
+msgstr "Πατήστε <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3154705.7
-#, fuzzy
 msgid  "The object is created at the center of the current document."
 msgstr "Το αντικείμενο δημιουργείται στο κέντρο του τρέχοντος εγγράφου."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155962.6
 msgid  "To return to the document, press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\>."
-msgstr ""
+msgstr "Για να επιστρέψετε στο έγγραφο πατήστε <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155062.5
 msgid  "You can use the arrow keys to position the object where you want. To choose a command from the context menu for the object, press \<item type=\"keycode\"\>Shift+F10\</item\>."
-msgstr ""
+msgstr "Μπορείτε να χρησιμοποιήσετε τα πλήκτρα βελών για να τοποθετήσετε το αντικείμενο στην θέση που επιθυμείτε. Για να επιλέξετε μία εντολή από το μενού περιβάλλοντος για το αντικείμενο, πιέστε το συνδυασμό των πλήκτρων <item type=\"keycode\">Shift+F10</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3150306.4
-#, fuzzy
 msgid  "To Select an Object"
 msgstr "Για να επιλέξετε ένα αντικείμενο"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3152990.3
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\> to enter the document."
-msgstr ""
+msgstr "Πατήστε <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item> για να μπείτε στο έγγραφο."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3145587.2
 msgid  "Press \<item type=\"keycode\"\>Tab\</item\> until you reach the object you want to select."
-msgstr ""
+msgstr "Πιέστε το πλήκτρο <item type=\"keycode\">Tab</item> μέχρι να φτάσετε στο αντικείμενο που επιθυμείτε να επιλέξετε."
 
 #: source/text/sdraw/guide/main.xhp#tit
-#, fuzzy
 msgid  "Instructions for Using $[officename] Draw"
 msgstr "Οδηγίες για τη χρήση του %PRODUCTNAME Draw"
 
 #: source/text/sdraw/guide/main.xhp#bm_id3146119
 msgid  "\<bookmark_value\>Draw instructions\</bookmark_value\>\<bookmark_value\>instructions; $[officename] Draw\</bookmark_value\>\<bookmark_value\>Howtos for Draw\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Οδηγίες για το Draw</bookmark_value><bookmark_value>οδηγίες, $[officename] Draw</bookmark_value><bookmark_value>Σεμινάρια για το Draw</bookmark_value>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3146119.1
 msgid  "\<variable id=\"main\"\>\<link href=\"text/sdraw/guide/main.xhp\" name=\"Instructions for Using $[officename] Draw\"\>Instructions for Using $[officename] Draw\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main\"><link href=\"text/sdraw/guide/main.xhp\" name=\"Οδηγίες για τη χρήση του $[officename] Draw\">Οδηγίες για τη χρήση του $[officename] Draw</link></variable>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3143218.2
-#, fuzzy
 msgid  "Editing and Grouping Objects"
 msgstr "Επεξεργασία και ομαδοποίηση αντικειμένων"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3149018.3
-#, fuzzy
 msgid  "Editing Colors and Textures"
 msgstr "Επεξεργασία χρωμάτων και υφές"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3150043.4
-#, fuzzy
 msgid  "Editing Text"
 msgstr "Επεξεργασία κειμένου"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3147003.6
-#, fuzzy
 msgid  "Working with Layers"
 msgstr "Εργασία με επίπεδα"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3145585.5
-#, fuzzy
 msgid  "Miscellaneous"
 msgstr "Διάφορα"
 
 #: source/text/sdraw/guide/rotate_object.xhp#tit
-#, fuzzy
 msgid  "Rotating Objects"
 msgstr "Περιστροφή αντικειμένων"
 
 #: source/text/sdraw/guide/rotate_object.xhp#bm_id3154684
 msgid  "\<bookmark_value\>rotating; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; rotating\</bookmark_value\>\<bookmark_value\>pivot points of draw objects\</bookmark_value\>\<bookmark_value\>skewing draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>περιστροφή, αντικείμενα σχεδίασης</bookmark_value><bookmark_value>αντικείμενα σχεδίασης, περιστροφή</bookmark_value><bookmark_value>σημεία περιστροφής σε αντικείμενα σχεδίασης</bookmark_value><bookmark_value>καμπυλότητα αντικειμένων σχεδίασης</bookmark_value>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#hd_id3154684.12
 msgid  "\<variable id=\"rotate_object\"\>\<link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Rotating Objects\"\>Rotating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"rotate_object\"><link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Περιστροφή αντικειμένων\">Περιστροφή αντικειμένων</link></variable>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149262.13
-#, fuzzy
 msgid  "You can rotate an object around its default pivot point (center point) or a pivot point that you designate."
 msgstr "Μπορείτε να περιστρέψετε ένα αντικείμενο γύρω από το προεπιλεγμένο σημείο περιστροφής του (κεντρικό σημείο) ή ένα σημείο περιστροφής που σχεδιάζετε."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3146975
 msgid  "\<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"\>\<alt id=\"alt_id3154729\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"><alt id=\"alt_id3154729\">Icon</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3150716.14
 msgid  "Select the object you want to rotate. On the \<emph\>Mode\</emph\> toolbar in $[officename] Draw or on the \<emph\>Drawing\</emph\> bar in $[officename] Impress, click the \<emph\>Rotate\</emph\> icon."
-msgstr ""
+msgstr "Επιλέξτε το αντικείμενο που επιθυμείτε να περιστρέψετε. Στη γραμμή εργαλείων <emph>Κατάσταση</emph> στο $[officename] Draw ή στη γραμμή εργαλείων <emph>Σχεδίαση</emph> στο $[officename] Impress, κάντε κλικ στο εικονίδιο <emph>Περιστροφή</emph>."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149021.69
-#, fuzzy
 msgid  "Move the pointer to a corner handle so that the pointer changes to a rotate symbol. Drag the handle to rotate the object."
 msgstr "Μετακινήστε το δείκτη σε ένα γωνιακό χειριστή έτσι ώστε ο δείκτης να μετατραπεί σε ένα σύμβολο περιστροφής. Μεταφέρετε το χειριστή για να περιστρέψετε το αντικείμενο."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id0930200803002335
-#, fuzzy
 msgid  "Hold down the Shift key to restrict the rotation to multiples of 15 degrees."
 msgstr "Κρατήστε πατημένο το πλήκτρο Shift για να περιορίσετε την περιστροφή σε πολλαπλάσια των 15 μοιρών."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id0930200803002463
-#, fuzzy
 msgid  "Right-click the object to open the context menu. Choose Position and Size - Rotation to enter an exact rotation value."
 msgstr "Κάντε δεξί κλικ στο αντικείμενο για να ανοίξετε το μενού περιβάλλοντος. Επιλέξτε Θέση - Περιστροφή  για να εισάγετε μια ακριβής τιμή περιστροφής. "
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3155962
 msgid  "\<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"\>\<alt id=\"alt_id3154023\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"><alt id=\"alt_id3154023\">Icon</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3166424.16
-#, fuzzy
 msgid  "To change the pivot point, drag the small circle in the center of the object to a new location."
 msgstr "Για να αλλάξετε το σημείο περιστροφής, μεταφέρετε το μικρό κύκλο στο κέντρο του αντικειμένου σε μία νέα τοποθεσία."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3159236.28
-#, fuzzy
 msgid  "To skew the object vertically or horizontally, drag one of the side handles."
 msgstr "Για να καμπυλώσετε το αντικείμενο κατακόρυφα ή οριζόντια, μεταφέρετε κάποιον από τους χειριστές των πλευρών."
 
 #: source/text/sdraw/guide/text_enter.xhp#tit
-#, fuzzy
 msgid  "Adding Text"
 msgstr "Προσθήκη κειμένου"
 
 #: source/text/sdraw/guide/text_enter.xhp#bm_id3153144
 msgid  "\<bookmark_value\>text frames\</bookmark_value\>      \<bookmark_value\>inserting;text frames\</bookmark_value\>      \<bookmark_value\>copying;text from other documents\</bookmark_value\>      \<bookmark_value\>pasting;text from other documents\</bookmark_value\>      \<bookmark_value\>legends; drawings\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>πλαίσια κειμένου</bookmark_value><bookmark_value>εισαγωγή, πλαίσια κειμένου</bookmark_value><bookmark_value>αντιγραφή, κείμενο από άλλα αντικείμενα</bookmark_value><bookmark_value>επικόλληση, κείμενο από άλλα αντικείμενα</bookmark_value><bookmark_value>υπομνήματα, σχεδιάσεις</bookmark_value>"
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3153144.45
 msgid  "\<variable id=\"text_enter\"\>\<link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Adding Text\"\>Adding Text\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"text_enter\"><link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Προσθήκη κειμένου\">Προσθήκη κειμένου</link> </variable>"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3145750.46
-#, fuzzy
 msgid  "There are several types of text you can add to a drawing or presentation: "
 msgstr "Υπάρχουν διάφοροι τύποι κειμένου που μπορείτε να προσθέσετε σε μία σχεδίαση ή παρουσίαση:"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10824
-#, fuzzy
 msgid  "Text in a text box"
 msgstr "Κείμενο σε ένα πλαίσιο κειμένου"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10828
-#, fuzzy
 msgid  "Text that changes character size to fill the frame size"
 msgstr "Κείμενο που αλλάζει μέγεθος χαρακτήρων για να χωράει στο μέγεθος του πλαισίου"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1082C
-#, fuzzy
 msgid  "Text that is added to any drawing object by double-clicking the object"
 msgstr "Κείμενο που προστίθεται σε οποιοδήποτε αντικείμενο σχεδίασης με διπλό κλικ στο αντικείμενο"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10830
-#, fuzzy
 msgid  "Text that is copied from a Writer document"
 msgstr "Κείμενο που αντιγράφεται από ένα έγγραφο του Writer"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10834
-#, fuzzy
 msgid  "Text that is inserted from a text document or HTML document"
 msgstr "Κείμενο που εισάγεται από ένα έγγραφο κειμένου ή HTML"
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3150202.48
-#, fuzzy
 msgid  "Adding a Text Box"
 msgstr "Προσθήκη πλαισίου κειμένου "
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3155266.49
 msgid  "Click the \<emph\>Text\</emph\> icon \<image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3156450\"\>Icon\</alt\>\</image\> and move the mouse pointer to where you want to enter the text box."
-msgstr ""
+msgstr "Κάντε κλικ στο εικονίδιο <emph>Κείμενο</emph> <image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.1665in\" height=\"0.1665in\"><alt id=\"alt_id3156450\">Icon</alt></image>  και μετακινήστε το δείκτη του ποντικιού σας στην θέση που επιθυμείτε να εισάγετε το πλαίσιο κειμένου."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3149052.50
-#, fuzzy
 msgid  "Drag a text box to the size you want in your document."
 msgstr "Σχεδιάστε ένα πλαίσιο κειμένου στο μέγεθος που επιθυμείτε στο έγγραφό σας."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3151194.51
-#, fuzzy
 msgid  "Type or paste your text into the text box."
 msgstr "Πληκτρολογήστε ή επικολλήστε το κείμενό στο πλαίσιο κειμένου."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3145118.53
-#, fuzzy
 msgid  "Double-click the text to edit it or to format text properties, such as font size or font color. Click the border of the text box to edit the object properties, such as border color or arranging in front or behind other objects."
 msgstr "Κάντε διπλό κλικ στο κείμενο για να το επεξεργαστείτε ή να μορφοποιήσετε τις επιλογές κειμένου, όπως το μέγεθος ή το χρώμα της γραμματοσειράς. Κάντε κλικ στο περίγραμμα του αντικειμένου που περιέχει κείμενο για να επεξεργαστείτε τις ιδιότητές του, όπως το χρώμα του περιγράμματος ή την τακτοποίηση του μπροστά ή πίσω από διαφορετικά αντικείμενα."
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3150437.54
-#, fuzzy
 msgid  "Fitting Text to Frames"
 msgstr "Προσαρμογή κειμένου σε πλαίσια"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3146877.56
-#, fuzzy
 msgid  "Create a text box as described in the steps above."
 msgstr "Δημιουργήστε ένα πλαίσιο κειμένου όπως περιγράφεται στα βήματα πιο πάνω. Το μέγεθος του πλαισίου καθορίζει το μέγεθος του κειμένου."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108A3
 msgid  "With the text object selected, choose \<emph\>Format - Text\</emph\>. The \<emph\>Text\</emph\> dialog opens."
-msgstr ""
+msgstr "Με το αντικείμενο κειμένου επιλεγμένο, επιλέξτε <emph>Μορφή - Κείμενο</emph>. Ανοίγει το παράθυρο διαλόγου <emph>Κείμενο</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108AF
 msgid  "On the \<emph\>Text\</emph\> tab page, clear the \<emph\>Fit height to text\</emph\> checkbox, then select the \<emph\>Fit to frame\</emph\> checkbox. Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Στη σελίδα της καρτέλας <emph>Κείμενο</emph>, αποεπιλέξτε το πεδίο ελέγχου <emph>Προσαρμογή ύψους στο κείμενο</emph>, ύστερα επιλέξτε το πεδίο ελέγχου <emph>Προσαρμογή στο πλαίσιο</emph>. Κάντε κλικ στο κουμπί <emph>OK</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id0610200902133994
-#, fuzzy
 msgid  "Now you can resize the text box to change the size and shape of the text characters."
 msgstr "Τώρα μπορείτε να αλλάζετε το μέγεθος του πλαισίου κειμένου και να αλλάζει και το σχήμα των χαρακτήρων του κειμένου."
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3155955.58
-#, fuzzy
 msgid  "Text Tied to a Graphic"
 msgstr "Κείμενο συνδεδεμένο σε γραφικό αντικείμενο"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10917
-#, fuzzy
 msgid  "You can add text to any graphic after double-clicking the graphic."
 msgstr "Μπορείτε να προσθέσετε κείμενο σε οποιοδήποτε γραφικό αντικείμενο αφού κάνετε διπλό κλικ σε αυτό."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id1827448
 msgid  "To determine the position of the text, use the settings in \<emph\>Format - Text\</emph\>."
-msgstr ""
+msgstr "Για να καθορίσετε την θέση του κειμένου, χρησιμοποιήστε τις ρυθμίσεις επιλέγοντας <emph>Μορφή - Κείμενο</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3147366.59
 msgid  "For example, click the arrow next to the \<emph\>Callouts\</emph\> icon \<image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3154508\"\>Icon\</alt\>\</image\> to open the Callouts toolbar."
-msgstr ""
+msgstr "Για παράδειγμα, κάντε κλικ στο βέλος δίπλα στο εικονίδιο <emph>Υπομνήματα</emph> <image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.1665in\" height=\"0.1665in\"><alt id=\"alt_id3154508\">Icon</alt></image> για να ανοίξετε τη γραμμή εργαλείων των Υπομνημάτων."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108FD
-#, fuzzy
 msgid  "Select a callout and move the mouse pointer to where you want the callout to start."
 msgstr "Επιλέξτε ένα υπόμνημα και μετακινήστε το δείκτη του ποντικιού σας στην θέση όπου επιθυμείτε αυτή να ξεκινά."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3150272.60
-#, fuzzy
 msgid  "Drag to draw the callout."
 msgstr "Τραβήξτε με υο ποντίκι σας για να σχεδιάσετε το υπόμνημα."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id1978514
-#, fuzzy
 msgid  "Enter the text."
 msgstr "Εισάγετε το κείμενο."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1091A
-#, fuzzy
 msgid  "Copying Text"
 msgstr "Αντιγραφή κειμένου"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10921
-#, fuzzy
 msgid  "Select the text in your Writer document."
 msgstr "Επιλέξτε το κείμενο στο έγγραφο του Writer που έχετε ανοίξει."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10925
 msgid  "Copy the text to the clipboard (\<emph\>Edit - Copy\</emph\>)."
-msgstr ""
+msgstr "Αντιγράψτε το κείμενο στο πρόχειρο (<emph>Επεξεργασία - Αντιγραφή</emph>)."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1092D
-#, fuzzy
 msgid  "Click the page or slide where you want to paste the text."
 msgstr "Κάντε κλικ στη σελίδα ή στη διαφάνεια όπου επιθυμείτε να επικολλήσετε το κείμενο."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10931
 msgid  "Paste the text using \<emph\>Edit - Paste\</emph\> or \<emph\>Edit - Paste special\</emph\>."
-msgstr ""
+msgstr "Επικολλήστε το κείμενο επιλέγοντας <emph>Επεξεργασία - Επικόλληση</emph> ή <emph>Επεξεργασία - Ειδική επικόλληση</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093C
 msgid  "Using \<emph\>Paste special\</emph\>, you can choose the text format to be pasted. Depending on formats, you can copy different text attributes."
-msgstr ""
+msgstr "Χρησιμοποιώντας την <emph>Ειδική επικόλληση</emph>, μπορείτε να επιλέξετε τη μορφή κειμένου που θα επικολληθεί. Ανάλογα με τις μορφές, μπορείτε να αντιγράψετε διαφορετικές ιδιότητες κειμένου."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093F
-#, fuzzy
 msgid  "Importing Text"
 msgstr "Εισαγωγή κειμένου"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10946
-#, fuzzy
 msgid  "Click the page or slide where you want to import the text."
 msgstr "Κάντε κλικ στη σελίδα ή στη διαφάνεια όπου επιθυμείτε να εισάγετε το κείμενο."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1094A
 msgid  "Choose \<emph\>Insert - File\</emph\>."
-msgstr ""
+msgstr "Επιλέξτε <emph>Εισαγωγή - Αρχείο</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10952
 msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</emph\>. The \<emph\>Insert Text\</emph\> dialog opens. Click \<emph\>OK\</emph\> to insert the text."
-msgstr ""
+msgstr "Επιλέξτε ένα αρχείο κειμένου (*.txt) ή ένα αρχείο HTML και κάντε κλικ στην <emph>Εισαγωγή</emph>. Ανοίγει το παράθυρο διαλόγου <emph>Εισαγωγή κειμένου</emph>. Κάντε κλικ στο κουμπί <emph>OK</emph> για να εισάγετε το κείμενο."
 
 #: source/text/sdraw/main0000.xhp#tit
-#, fuzzy
 msgid  "Welcome to the $[officename] Draw Help"
 msgstr "Καλωσορίσατε στη Βοήθεια του $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
 msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
-msgstr ""
+msgstr "<switchinline select=\"appl\"> <caseinline select=\"DRAW\"/> </switchinline>Καλωσορίσατε στη Βοήθεια  του $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
-#, fuzzy
 msgid  "How to Work With $[officename] Draw"
 msgstr "Πως να σχεδιάσετε με το $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3150363.5
-#, fuzzy
 msgid  "$[officename] Draw Menus, Toolbars, and Keys"
 msgstr "Μενού, γραμμές εργαλείων και πλήκτρα του $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3166430.4
-#, fuzzy
 msgid  "Help about the Help"
 msgstr "Βοήθεια σχετικά με το μενού βοήθειας"
 
 #: source/text/sdraw/main0100.xhp#tit
-#, fuzzy
 msgid  "Menus"
 msgstr "Μενού"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/sdraw/main0100.xhp\" name=\"Μενού\">Μενού</link></variable>"
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
-#, fuzzy
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
 msgstr "Αυτή η ενότητα περιέχει μια περιγραφή όλων των μενού σχεδίασης, των υπομενού και των παραθύρων διαλόγου, του $[officename] Draw."
 
 #: source/text/sdraw/main0101.xhp#tit
-#, fuzzy
 msgid  "File"
 msgstr "Αρχείο"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
 msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"Αρχείο\">Αρχείο</link>"
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
 msgid  "This menu contains general commands for working with Draw documents, such as open, close and print. To close $[officename] Draw, click \<emph\>Exit\</emph\>."
-msgstr ""
+msgstr "Το μενού αυτό περιέχει τις γενικές εντολές για την εργασία με έγγραφα Σχεδίου, όπως τις εντολές άνοιγμα, τερματισμός, εκτύπωση κ.λπ. Για να τερματίσετε το  $[officename] Draw, πατήστε <emph>Έξοδος</emph>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Άνοιγμα\">Άνοιγμα</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Αποθήκευση ως\">Αποθήκευση ως</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"Εξαγωγή\">Εξαγωγή</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Εκδόσεις\">Εκδόσεις</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"Ιδιότητες\">Ιδιότητες</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"Εκτύπωση\">Εκτύπωση</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Ρυθμίσεις εκτυπωτή\">Ρυθμίσεις εκτυπωτή</link>"
 
 #: source/text/sdraw/main0102.xhp#tit
-#, fuzzy
 msgid  "Edit"
 msgstr "Επεξεργασία"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0102.xhp\" name=\"Επεξεργασία\">Επεξεργασία</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
-#, fuzzy
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
 msgstr "Οι εντολές σε αυτό το μενού χρησιμοποιούνται για την επεξεργασία εγγράφων σχεδίου (για παράδειγμα, αντιγραφή και επικόλληση)"
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"Ειδική επικόλληση\">Ειδική επικόλληση</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"Εύρεση και αντικατάσταση\">Εύρεση και αντικατάσταση</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Σημεία\">Σημεία</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
-#, fuzzy
 msgid  "Enables you to edit points on your drawing."
 msgstr "Σας επιτρέπει να επεξεργαστείτε σημεία στο σχέδιό σας."
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Σημεία κόλλησης\">Σημεία κόλλησης</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
-#, fuzzy
 msgid  "Enables you to edit glue points on your drawing."
 msgstr "Σας επιτρέπει να επεξεργαστείτε σημεία κόλλησης στο σχέδιό σας."
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Διπλότυπο\">Διπλότυπο</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Βαθμιαίος αποχρωματισμός\">Βαθμιαίος αποχρωματισμός</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"Πεδία\">Πεδία</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"Συνδέσεις\">Συνδέσεις</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"Χάρτης εικόνας\">Χάρτης εικόνας</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Υπερσύνδεση\">Υπερσύνδεση</link>"
 
 #: source/text/sdraw/main0103.xhp#tit
-#, fuzzy
 msgid  "View"
 msgstr "Προβολή"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
 msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0103.xhp\" name=\"Προβολή\">Προβολή</link>"
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
-#, fuzzy
 msgid  "Sets the display properties of Draw documents."
 msgstr "Καθορίζει τις ιδιότητες προβολής του εγγράφου σχεδίασης."
 
 #: source/text/sdraw/main0103.xhp#par_idN105AB
-#, fuzzy
 msgid  "Normal"
 msgstr "Κανονική"
 
 #: source/text/sdraw/main0103.xhp#par_idN105AF
-#, fuzzy
 msgid  "Switch to normal view of the page."
 msgstr "Εναλλαγή σε κανονική προβολή της σελίδας."
 
 #: source/text/sdraw/main0103.xhp#par_idN105B2
-#, fuzzy
 msgid  "Master"
 msgstr "Κύριο"
 
 #: source/text/sdraw/main0103.xhp#par_idN105B6
-#, fuzzy
 msgid  "Switch to the master page view."
 msgstr "Εναλλαγή σε κύρια προβολή της σελίδας."
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"Μεγέθυνση\">Μεγέθυνση</link>"
 
 #: source/text/sdraw/main0104.xhp#tit
-#, fuzzy
 msgid  "Insert"
 msgstr "Εισαγωγή"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
 msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0104.xhp\" name=\"Εισαγωγή\">Εισαγωγή</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
-#, fuzzy
 msgid  "This menu allows you to insert elements, such as graphics and guides, into Draw documents."
 msgstr "Αυτό το μενού περιλαμβάνει τις εντολές που χρησιμοποιούνται για την εισαγωγή νέων στοιχείων στα έγγραφα σχεδίων, συμπεριλαμβάνοντας γραμμές συγκράτησης, σαρώσεις, γραφικά, αντικείμενα, εικονίδια και άλλα αρχεία."
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Διαφάνεια\">Διαφάνεια</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
 msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04020000.xhp\" name=\"Επίπεδο\">Επίπεδο</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
 msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000.xhp\" name=\"Εισαγωγή σημείου/γραμμής συγκράτησης\">Εισαγωγή σημείου/γραμμής συγκράτησης</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04050000.xhp\" name=\"Σχόλιο\">Σχόλιο</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"Ειδικός χαρακτήρας\"> Ειδικός χαρακτήρας</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Yπερσύνδεση\">Yπερσύνδεση</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04080100.xhp\" name=\"Πίνακας\">Πίνακας</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Διάγραμμα\">Διάγραμμα</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
-#, fuzzy
 msgid  "Inserts a chart."
 msgstr "Εισάγει ένα διάγραμμα."
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Μεταβλητό πλαίσιο\">Μεταβλητό πλαίσιο</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"Αρχείο\">Αρχείο</link>"
 
 #: source/text/sdraw/main0105.xhp#tit
-#, fuzzy
 msgid  "Format"
 msgstr "Μορφή"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
 msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0105.xhp\" name=\"Μορφή\">Μορφή</link>"
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
-#, fuzzy
 msgid  "Contains commands for formatting the layout and the contents of your document."
 msgstr "Αυτό το μενού περιέχει τις εντολές για τη μορφοποίηση της διάταξης και των περιεχομένων του εγγράφου σας."
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Χαρακτήρας\">Χαρακτήρας</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Παράγραφος\">Παράγραφος</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"Αρίθμηση/Κουκίδες\">Κουκίδες και Αρίθμηση</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"Σελίδα\">Σελίδα</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"Θέση και μέγεθος\">Θέση και μέγεθος</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"Γραμμή\">Γραμμή</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"Περιοχή\">Περιοχή</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"Κείμενο\">Κείμενο</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
 msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05140000.xhp\" name=\"Επίπεδο\">Επίπεδο</link>"
 
 #: source/text/sdraw/main0106.xhp#tit
-#, fuzzy
 msgid  "Tools"
 msgstr "Εργαλεία"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
 msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0106.xhp\" name=\"Εργαλεία\">Εργαλεία</link>"
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
-#, fuzzy
 msgid  "This menu provides tools for $[officename] Draw as well as access to language and system settings."
 msgstr "Το μενού αυτό παρέχει εργαλεία του $[officename] Draw όπως και πρόσβαση στις ρυθμίσεις της γλώσσας και του συστήματος."
 
 #: source/text/sdraw/main0106.xhp#hd_id3153415.4
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"Αυτόματη διόρθωση\">Επιλογές αυτόματης διόρθωσης</link>"
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Προσαρμογή\">Προσαρμογή</link>"
 
 #: source/text/sdraw/main0200.xhp#tit
-#, fuzzy
 msgid  "Toolbars"
 msgstr "Γραμμές εργαλείων"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/sdraw/main0200.xhp\" name=\"Γραμμές εργαλείων\">Γραμμές εργαλείων </link></variable>"
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
-#, fuzzy
 msgid  "This section provides an overview of the toolbars available in $[officename] Draw."
 msgstr "Αυτή η ενότητα παρέχει μια επισκόπηση των γραμμών εργαλείων που διαθέτει το $[officename] Draw."
 
 #: source/text/sdraw/main0202.xhp#tit
-#, fuzzy
 msgid  "Line and Filling Bar"
 msgstr "Γραμμή εργαλείων γραμμής και γεμίσματος "
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
 msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0202.xhp\" name=\"Γραμμή εργαλείων γραμμής και γεμίσματος\">Γραμμή εργαλείων γραμμής και γεμίσματος</link>"
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
-#, fuzzy
 msgid  "The Line and Filling bar contains commands for the current editing mode."
 msgstr "Η Γραμμή εργαλείων γραμμής και γεμίσματος διαθέτει όλες τις απαραίτητες εντολές για την τρέχουσα λειτουργία επεξεργασίας."
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Πρότυπο γραμμής\">Πρότυπο γραμμής</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Πλάτος γραμμής\">Πλάτος γραμμής</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Χρώμα γραμμής\">Χρώμα γραμμής</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"Πρότυπο / Γέμισμα επιφάνειας\">Πρότυπο / Γέμισμα επιφάνειας</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"Σκιά\">Σκιά</link>"
 
 #: source/text/sdraw/main0210.xhp#tit
-#, fuzzy
 msgid  "Drawing Bar"
 msgstr "Γραμμή σχεδίασης"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
 msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"Γραμμή σχεδίασης\">Γραμμή σχεδίασης</link>"
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
 msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
-msgstr ""
+msgstr "Η γραμμή εργαλείων <emph>Σχεδίαση</emph> παρέχει όλα τα κύρια εργαλεία για σχεδίαση."
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10060000.xhp\">Ορθογώνιο</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
-#, fuzzy
 msgid  "Draws a filled rectangle where you drag in the current document. Click where you want to place a corner of the rectangle, and drag to the size you want. To draw a square, hold down Shift while you drag."
 msgstr "Σχεδιάζει ένα συμπαγές ορθογώνιο όπου κάνετε μεταφορά στο τρέχον έγγραφο. Κάντε κλικ στην θέση που επιθυμείτε να τοποθετήσετε μια γωνία του ορθογωνίου, και μεταφέρετέ την μέχρι το μέγεθος που προτιμάτε. Για να σχεδιάσετε ένα τετράγωνο, κρατήστε πατημένο το πλήκτρο Shift κατά τη μεταφορά."
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10070000.xhp\">Έλλειψη</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
-#, fuzzy
 msgid  "Draws a filled oval where you drag in the current document. Click where you want to draw the oval, and drag to the size you want. To draw a circle, hold down Shift while you drag."
 msgstr "Σχεδιάζει ένα συμπαγές ωοειδές αντικείμενο όπου μεταφέρετε στο τρέχον έγγραφο. Κάντε κλικ όπου επιθυμείτε να σχεδιάσετε το ωοειδές αντικείμενο , και σύρετε στο μέγεθος που προτιμάτε. Για να σχεδιάσετε έναν κύκλο, κρατήστε πατημένο το πλήκτρο Shift κατά τη μεταφορά."
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Κείμενο</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
-#, fuzzy
 msgid  "Draws a text box where you click or drag in the current document. Click anywhere in the document, and then type or paste your text."
 msgstr "Σχεδιάζει ένα πεδίο κειμένου όπου κάνετε κλικ ή μεταφορά στο τρέχον έγγραφο. Κάντε κλικ οπουδήποτε στο έγγραφο , έπειτα πληκτρολογήστε ή επικολλήστε το κείμενό σας."
 
 #: source/text/sdraw/main0210.xhp#par_idN107C8
 msgid  "\<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\"\>Lines and Arrows\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10120000.xhp\" name=\"Γραμμές και Βέλη\">Γραμμές και Βέλη</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN126D7
-#, fuzzy
 msgid  "Opens the Arrows toolbar to insert lines and arrows."
 msgstr "Ανοίγει την εργαλειοθήκη Βελών για την εισαγωγή γραμμών και βελών."
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Σημεία\">Σημεία</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
-#, fuzzy
 msgid  "Enables you to edit points on your drawing."
 msgstr "Σας επιτρέπει να επεξεργαστείτε σημεία του σχεδίου σας."
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Σημεία κόλλησης\">Σημεία κόλλησης</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
-#, fuzzy
 msgid  "Enables you to edit glue points on your drawing."
 msgstr "Σας επιτρέπει να επεξεργαστείτε σημεία κόλλησης στο σχέδιό σας."
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"Από αρχείο\">Από αρχείο</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170000.xhp\" name=\"Πεδία ελέγχου φόρμας\">Πεδία ελέγχου φόρμας</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">Eξώθηση ενεργή/ανενεργή</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
-#, fuzzy
 msgid  "Switches the 3D effects on and off for the selected objects."
 msgstr "Ενεργοποιεί ή απενεργοποιεί τα 3Δ εφέ για τα επιλεγμένα αντικείμενα."
 
 #: source/text/sdraw/main0213.xhp#tit
-#, fuzzy
 msgid  "Options Bar"
 msgstr "Γραμμή επιλογών"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
 msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0213.xhp\" name=\"Γραμμή επιλογών\">Γραμμή επιλογών</link>"
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
 msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "Η γραμμή εργαλείων <emph>Επιλογές</emph> θα εμφανιστεί επιλέγοντας <emph>Προβολή - Γραμμές εργαλείων - Επιλογές</emph>."
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171200.xhp\" name=\"Εμφάνιση πλέγματος\">Εμφάνιση πλέγματος</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"Βοηθητικές γραμμές κατά τη μετακίνηση\">Βοηθητικές γραμμές κατά τη μετακίνηση</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Συγκράτηση στο πλέγμα\">Συγκράτηση στο πλέγμα</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"Συγκράτηση σε βοηθητικές γραμμές\">Συγκράτηση σε βοηθητικές γραμμές</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"Συγκράτηση σε περιθώρια σελίδας\">Συγκράτηση σε περιθώρια σελίδας</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"Συγκράτηση σε περίγραμμα αντικειμένου\">Συγκράτηση σε περίγραμμα αντικειμένου</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13170000.xhp\" name=\"Συγκράτηση σε σημεία αντικειμένου\">Συγκράτηση σε σημεία αντικειμένου</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"Να επιτρέπεται γρήγορη επεξεργασία\">Να επιτρέπεται γρήγορη επεξεργασία</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"Επιλογή μόνο της περιοχής κειμένου\">Επιλογή μόνο της περιοχής κειμένου</link>"
 
 #: source/text/sdraw/main0503.xhp#tit
-#, fuzzy
 msgid  "$[officename] Draw Features"
 msgstr "Χαρακτηριστικά του $[officename] Draw "
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/sdraw/main0503.xhp\" name=\"Χαρακτηριστικά του $[officename] Draw \">Χαρακτηριστικά του $[officename] Draw </link></variable>"
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
-#, fuzzy
 msgid  "$[officename] Draw lets you create simple and complex drawings and export them in a number of common image formats. You can also insert tables, charts, formulas and other items created in $[officename] programs into your drawings."
 msgstr "Το $[officename] Draw σας επιτρέπει να δημιουργήσετε  απλά και σύνθετα σχέδια και να τα εξαγάγετε σε διάφορες κοινές μορφές εικόνας. Μπορείτε επίσης να εισάγετε στο σχέδιο σας, τους πίνακες, τα διαγράμματα, τους τύπους και τα άλλα στοιχεία που δημιουργήσατε, με άλλα προγράμματα του $[officename]."
 
 #: source/text/sdraw/main0503.xhp#hd_id3147435.11
-#, fuzzy
 msgid  "Vector Graphics"
 msgstr "Διανυσματικά γραφικά αντικείμενα"
 
 #: source/text/sdraw/main0503.xhp#par_id3153142.12
-#, fuzzy
 msgid  "$[officename] Draw creates vector graphics using lines and curves defined by mathematical vectors. Vectors describe lines, ellipses, and polygons according to their geometry."
 msgstr "Το $[officename] Draw δημιουργεί διανυσματικές γραφικές παραστάσεις χρησιμοποιώντας τις γραμμές και τις καμπύλες που καθορίζονται από τα μαθηματικά διανύσματα. Τα διανύσματα περιγράφουν τις γραμμές, τις ελλείψεις, και τα πολύγωνα σύμφωνα με τη γεωμετρία τους."
 
 #: source/text/sdraw/main0503.xhp#hd_id3154320.14
-#, fuzzy
 msgid  "Creating 3D Objects"
 msgstr "Δημιουργία αντικειμένων 3Δ"
 
 #: source/text/sdraw/main0503.xhp#par_id3145251.15
-#, fuzzy
 msgid  "You can create simple 3D objects such as cubes, spheres, and cylinders in $[officename] Draw and even modify the light source of the objects."
 msgstr "Με την Σχεδίαση του $[officename] μπορείτε να δημιουργήσετε απλά τρισδιάστατα αντικείμενα όπως οι κύβοι, οι σφαίρες, και οι κύλινδροι και να τροποποιήσετε ακόμη και την προέλευση φωτός των αντικειμένων."
 
 #: source/text/sdraw/main0503.xhp#hd_id3154491.20
-#, fuzzy
 msgid  "Grids and Guides"
 msgstr "Βοηθητικές γραμμές και πλέγματα"
 
 #: source/text/sdraw/main0503.xhp#par_id3149379.6
-#, fuzzy
 msgid  "Grids and guides provide a visual cue to help you align objects in your drawing. You can also choose to snap an object to a grid line, guide or to the edge of another object."
 msgstr "Οι Βοηθητικές γραμμές και τα πλέγματα σας παρέχουν ένα οπτικό βοήθημα για να σας βοηθήσουν να ευθυγραμμίσετε τα αντικείμενα στο σχέδιό σας. Μπορείτε επίσης να επιλέξετε να συγκρατήσετε ένα αντικείμενο σε μια γραμμή πλέγματος, βοηθητική γραμμή ή στην άκρη ενός άλλου αντικειμένου."
 
 #: source/text/sdraw/main0503.xhp#hd_id3155601.16
-#, fuzzy
 msgid  "Connecting Objects to Show Relationships"
 msgstr "Σύνδεση αντικειμένων στην προβολή σχέσεων"
 
 #: source/text/sdraw/main0503.xhp#par_id3149124.17
-#, fuzzy
 msgid  "You can connect objects in $[officename] Draw with special lines called \"connectors\" to show the relationship between objects. Connectors attach to glue points on drawing objects and remain attached when the connected objects are moved. Connectors are useful for creating organization charts and technical diagrams."
 msgstr "Στο $[officename] Draw μπορείτε να συνδέσετε τα αντικείμενα με τις ειδικές γραμμές αποκαλούμενες \"Γραμμές σύνδεσης \" για να παρουσιάσετε τη σχέση μεταξύ των αντικειμένων. Οι συνδέσεις συνδέονται με τα σημεία κόλλησης στα αντικείμενα σχεδίων και παραμένουν συνημμένες όταν κινούνται τα συνδεδεμένα αντικείμενα. Οι γραμμές σύνδεσης είναι χρήσιμες για τα διαγράμματα οργάνωσης και τα τεχνικά διαγράμματα."
 
 #: source/text/sdraw/main0503.xhp#hd_id3155764.21
-#, fuzzy
 msgid  "Displaying Dimensions"
 msgstr "Προβολή διαστάσεων"
 
 #: source/text/sdraw/main0503.xhp#par_id3155333.22
-#, fuzzy
 msgid  "Technical diagrams often show the dimensions of objects in the drawing. In $[officename] Draw, you can use dimension lines to calculate and display linear dimensions."
 msgstr "Τα τεχνικά διαγράμματα παρουσιάζουν συχνά τις διαστάσεις των αντικειμένων στο σχέδιο. Στην Σχεδίαση του  $[officename], μπορείτε να χρησιμοποιήσετε τις γραμμές διάστασης για να υπολογίσετε και να εμφανίσετε τις γραμμικές διαστάσεις."
 
 #: source/text/sdraw/main0503.xhp#hd_id3154705.18
-#, fuzzy
 msgid  "Gallery"
 msgstr "Συλλογή"
 
 #: source/text/sdraw/main0503.xhp#par_id3154022.7
-#, fuzzy
 msgid  "The Gallery contains images, animations, sounds and other items that you can insert and use in your drawings as well as other $[officename] programs."
 msgstr "Η Συλλογή περιέχει εικόνες, κινούμενες εικόνες, ήχους και άλλα στοιχεία που μπορείτε να εισάγετε και να χρησιμοποιήσετε στα σχέδιά σας καθώς επίσης και στα άλλα προγράμματα του $[officename]."
 
 #: source/text/sdraw/main0503.xhp#hd_id3149207.19
-#, fuzzy
 msgid  "Graphic File Formats"
 msgstr "Μορφές αρχείων γραφικών αντικειμένων"
 
 #: source/text/sdraw/main0503.xhp#par_id3155112.5
-#, fuzzy
 msgid  "$[officename] Draw can export to many common graphic file formats, such as BMP, GIF, JPG, and PNG."
 msgstr "Στο $[officename] Draw μπορείτε να εξαγάγετε τα γραφικά αντικείμενα σε πολλές μορφές αρχείων, όπως bmp, στο GIF, JPG, και PNG"

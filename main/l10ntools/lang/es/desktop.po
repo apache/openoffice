@@ -117,7 +117,7 @@ msgstr "Las modificaciones realizadas en la configuración personal no se pueden
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME no se puede iniciar debido a un error producido al acceder a los datos de la configuración de %PRODUCTNAME.\n\nContacte su administrador de sistema."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,15 +145,15 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "El administrador de rutas no está disponible.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "No se ha podido completar la instalación como usuario de %PRODUCTNAME debido a que no hay suficiente espacio libre en el disco. Libere más espacio en el disco en la ubicación que se indica y reinicie %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "No se ha podido procesar la instalación como usuario de %PRODUCTNAME debido a que faltan derechos de acceso. Asegúrese de que tenga suficientes derechos de acceso para la ubicación que se indica y reinicie %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -161,7 +161,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Está a punto de instalar la versión $NEW de la extensión \\'$NAME\\'.\n La versión nueva $DEPLOYED, llamada \\'$OLDNAME\\', ya está instalada.\nPulse \\'Aceptar\\' para reemplazar la extensión instalada.\nPulse \\'Cancelar\\' para detener la instalación."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -169,7 +169,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Está a punto de instalar la versión $NEW de la extensión \\'$NAME\\'.\n Esa versión, llamada \\'$OLDNAME\\', ya está instalada.\nPulse \\'Aceptar\\' para reemplazar la extensión instalada.\nPulse \\'Cancelar\\' para detener la instalación."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -177,7 +177,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Está a punto de instalar la versión $NEW de la extensión \\'$NAME\\'.\n La versión antigua $DEPLOYED, llamada \\'$OLDNAME\\', ya está instalada.\nPulse \\'Aceptar\\' para reemplazar la extensión instalada.\nPulse \\'Cancelar\\' para detener la instalación."
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
 msgid  "System dependencies check"
@@ -185,7 +185,7 @@ msgstr "Comprobación de dependencias del sistema"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "La extensión no se puede instalar porque las siguientes\ndependencias del sistema no se cumplen:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,7 +253,7 @@ msgstr "Salir"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME ha sido actualizada a una nueva versión. Algunas extensiones compartidas de %PRODUCTNAME no son compatibles con esta versión y necesita ser actualizada antes que %PRODUCTNAME sea ejecutado.\n\nActualizando extensiones compartidas requiere de privilegios de administrador. Contacta tu administrador de sistema para actualizar la siguiente extensión compartida:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
@@ -261,7 +261,7 @@ msgstr "La extensión no se puede activar porque las siguientes dependencias del
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
-msgstr ""
+msgstr "Esta extensión está desactivada porque aún no ha aceptado la licencia.\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -457,11 +457,11 @@ msgstr "La extensión no se puede instalar debido a:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "La versión requerida de Apache OpenOffice no coincide:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Usted tiene OpenOffice.org %VERSION"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
 msgid  "browser based update"
@@ -485,7 +485,7 @@ msgstr "Habilitar las actualizaciones"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
 msgid  "This update will be ignored.\\n"
-msgstr ""
+msgstr "Se ignorará esta actualización.\n"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
@@ -569,11 +569,11 @@ msgstr "Desconocido"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "La extensión requiere la versión %VERSION de OpenOffice.org o superior"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "La extensión no soporta versiones superiores a OpenOffice.org %VERSION"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
 msgid  "Enabling: "
@@ -637,11 +637,11 @@ msgstr "Ayuda"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
 msgid  "The extension cannot be installed because:\\n"
-msgstr ""
+msgstr "La extensión no puede ser instalada por:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
-msgstr ""
+msgstr "La extensión no se instalará por que ocurrió un error en los archivos de ayuda:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -737,11 +737,11 @@ msgstr "Registro"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Este asistente le guía por el Acuerdo de licencia, la transferencia de datos de usuario de %OLD_VERSION y el registro de %PRODUCTNAME.\n\nHaga clic en 'Siguiente' para continuar."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Este asistente guía por el proceso de registro de %PRODUCTNAME.\n\nHaga clic en 'Siguiente' para continuar."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,7 +749,7 @@ msgstr "~Finalizar"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Ahora tiene la oportunidad de apoyar y contribuir al rápido crecimiento de la comunidad de código abierto (open source) en el mundo.\n\nAyúdenos a probar que %PRODUCTNAME tiene una significativa cuota de mercado para registrarlo.\n\nEl registro es voluntario y no implica ninguna obligación."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
@@ -765,7 +765,7 @@ msgstr "Bienvenido a %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Este asistente le guía por el Acuerdo de licencia y el registro de %PRODUCTNAME.\n\nHaga clic en 'Siguiente' para continuar."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -805,7 +805,7 @@ msgstr "Transferir datos personales"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Casi todos los datos personales de la instalación de %OLDPRODUCT son válidos también en %PRODUCTNAME %PRODUCTVERSION.\n\nSi no desea volver a usar ningún valor de %PRODUCTNAME %PRODUCTVERSION, deseleccione la casilla de verificación."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Actualización en línea"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME busca versiones nuevas en intervalos de tiempo regulares de manera automática.\nNo se transfieren datos personales durante la actualización en línea.\nSe le notificará cuando haya una nueva versión disponible.\n\nPuede configurar esta función en Herramientas / Opciones... / %PRODUCTNAME / Actualización por Internet."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -853,7 +853,7 @@ msgstr "Registro de %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Ahora puede registrarse como usuario de %PRODUCTNAME. El registro es voluntario, no obligatorio.\n\nAl registrarse, recibirá información acerca de las novedades relacionadas con este producto."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "No quiero ~registrarme"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Le deseamos un trabajo ameno y exitoso con el nuevo %PRODUCTNAME.\n\nPara salir del asistente, haga clic en 'Finalizar'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"

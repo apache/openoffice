@@ -57,7 +57,7 @@ msgstr "Tietolähteen otsikko"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME kykenee käyttämään järjestelmässäsi jo olemassa olevia osoitetietoja. Tätä varten täytyy luoda %PRODUCTNAMEin tietolähde, jossa osoitetietosi ovat taulukkomuodossa. Tällä ohjatulla toiminnolla voit luoda tarvittavan tietolähteen."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Muu ulkoinen tietolähde"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Lisätietoja vaaditaan uuden tietolähteen asentamiseksi.\n\nAvaa seuraavaa painiketta napsauttamalla toinen valintaikkuna, johon voit syöttää tarvittavat tiedot."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Asetukset"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Yhteyttä tietolähteeseen ei saatu.\nTarkista tehdyt asetukset ennen jatkamista tai valitse edelliseltä sivulta toinen osoitetietolähteen tyyppi."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Valitsemasi ulkoinen tietolähde sisältää useita osoitekirjoja.\nValitse osoitekirja, jota pääasiassa käytät:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "Jotta osoitetietojen yhdistäminen malleihin onnistuisi, %PRODUCTNAMEin on tiedettävä, missä kentissä on mitäkin tietoa.\n\nSähköpostiosoitteet voivat olla esimerkiksi kentässä \"sähköposti\", \"s-posti\", \"email\", tms.\n\nAvaa alla olevaa painiketta napsauttamalla toinen valintaikkuna, johon voit syöttää tietolähteen asetukset."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Kenttämääritys"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Siinä olivat kaikki tarvittavat tiedot osoitetietojen yhdistämiseksi %PRODUCTNAME-ohjelmistoon.\n\nAnna nyt nimi, jolla haluat rekisteröidä tietolähteen %PRODUCTNAMEissa."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "Osoitetiedot - kenttien määritys"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Tällä hetkellä ei ole määritettyjä kenttiä.\nVoit määrittää ne nyt tai myöhemmin valitsemalla ensin\n\"Tiedosto - Mallit - Osoitekirjan lähde\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "Tietolähde"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "Seuraavia sarakenimiä ei voitu liittää:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "Ohjausobjekti"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Oikealla puolella näkyvät kaikki lomakkeen tietolähteen taulut.\n\n\nValitse taulu, jonka tietoja tulee käyttää luettelosisällön perustana:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Tiedot"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Tällä hetkellä lomaketta, johon ohjausobjekti kuuluu, ei ole sidottu tietolähteeseen (tai ei ole täysin sidottu).\n\nValitse tietolähde ja taulu.\n\n\nHuomaa, että tällä sivulla tehdyt asetukset tulevat voimaan heti sivulta siirryttäessä."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -737,7 +737,7 @@ msgstr "Tervetuloa"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Tämä on %PRODUCTNAME %PRODUCTVERSION OEM.\n\nVoit käynnistää %PRODUCTNAME %PRODUCTVERSION OEM -ohjelman kirjoittamalla henkilökohtaiset tietosi käyttöoikeustekstin jälkeiseen valintaikkunaan. Tärkeät tiedot löytyvät README-tiedostoista, jotka sijaitsevat %PRODUCTNAME-ohjelmiston asennushakemistossa. Lue nämä tiedostot huolellisesti. Tarkempia tietoa löydät myös Oraclen Web-sivustosta osoitteessa\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -817,7 +817,7 @@ msgstr "Lomakkeet"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Haluatko poistaa tietotyypin '#type#' mallista?\nHuomaa, että tämä vaikuttaa kaikkiin ohjausobjekteihin, jotka on sidottu tähän tietotyyppiin."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "Uuden tietotyypin tyyppi ja nimi:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "Tietoja\n la~itteesta"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Luo\nesikatselu"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Skanneri"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Laite: %s\nToimittaja: %s\nMalli: %s\nTyyppi: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION on ajan tasalla."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION on saatavilla.\n\nNykyinen asennettu versio on %PRODUCTNAME %PRODUCTVERSION.\n\nEnnen päivityksen lataamista varmista, että sinulla on riittävät oikeudet sen asentamiseen.\nAsentaminen voi vaatia pääkäyttäjän salasanan."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION:n lataaminen ei edisty kohdassa"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Ladataan kansioon %DOWNLOAD_PATH.\n\nVoit vaihtaa latauskansiota valitsemalla Työkalut – Asetukset... – %PRODUCTNAME – Ohjelmapäivitys verkosta."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME on tallennettu kansioon %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Päivityksen automaattinen lataus ei juuri nyt onnistu.\n\nNapsauta 'Lataa...' ladataksesi %PRODUCTNAME %NEXTVERSION:n manuaalisesti www-sivulta."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."

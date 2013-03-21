@@ -68,11 +68,11 @@ msgstr "Metin Yok"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Dosyayı açmak için parolayı girin: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Dosyayı açmak için parolayı girin: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 #, fuzzy
@@ -102,8 +102,9 @@ msgid  "Document in Use"
 msgstr "Kullanımdaki Belge"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "'$(ARG1)' belgesi kilitlenmiş:\n\n$(ARG2)\n\nDaha sonra tekrar deneyerek belgeyi kaydedebilirsiniz ya da kopyasını kaydedebilirsiniz.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -116,42 +117,34 @@ msgid  "~Save As..."
 msgstr "~Farklı Kaydet..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "Otu~rum sonuna kadar parolayı hatırla"
 
 #: source/ids.src#RID_SAVE_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~Parolayı hatırla"
 
 #: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
-#, fuzzy
 msgid  "Invalid Document Signature"
 msgstr "Belge İmzası Geçersiz"
 
 #: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
-#, fuzzy
 msgid  "Non-Encrypted Streams"
 msgstr "Şifrelenmemiş Akım"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation executed on $(ARG1) was aborted."
 msgstr "$ (ARG1) de yürütülen operasyon yürütülen durduruldu."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Access to $(ARG1) was denied."
 msgstr "$(ARG1) dosyasına erişim sağlanamadı."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) already exists."
 msgstr "$(ARG1) zaten var"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Target already exists."
 msgstr "Hedef zaten mevcut."
 
@@ -160,237 +153,190 @@ msgid  "You are about to save/export a password protected basic library containi
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an incorrect checksum."
 msgstr "$(ARG1) gelen bilgide kontrol toplama hatası var"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "$(ARG2) dizininde $(ARG2) nesnesi oluşturulamıyor"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data of $(ARG1) could not be read."
 msgstr "$(ARG1)daki veri okunamıyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The seek operation on $(ARG1) could not be performed."
 msgstr "$(ARG1) arama işlemi yapılamamaktadır"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The tell operation on $(ARG1) could not be performed."
 msgstr "$(ARG1) üzerinde anlatım işlemi gerçekleştirilemedi."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data for $(ARG1) could not be written."
 msgstr "Veri için $(ARG1) yazılamıyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) is the current directory."
 msgstr "İşlem imkansız: $(ARG1) geçerli dizin."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) hazır değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
 msgstr "Yapılan şey olanaksız: $(ARG1) ve $(ARG2) farklı aygıtlar (sürücüler)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "General input/output error while accessing $(ARG1)."
 msgstr "$(ARG1) 'a erişilirken genel girdi/çıktı hatası oluştu."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "$(ARG1) değerine geçersiz bir yoldan erişim yapıldı."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) geçersiz karakter içeriyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The device (drive) $(ARG1) is invalid."
 msgstr "Aygıt (sürücü) $(ARG1) geçersiz."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an invalid length."
 msgstr "$(ARG1) alanından alınan verinin geçersiz bir uzunluğu var."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "Operasyon $(ARG1) geçersiz bir parametre ile başladı"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
 msgstr "Bu işlem gerçekleştirilemedi çünkü $(ARG1) içinde * (wildcards) işaretleri var."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Error during shared access to $(ARG1)."
 msgstr "$(ARG1) 'a erişilirken hata oluştu."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) içinde hatalı karakterler var"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The name $(ARG1) contains too many characters."
 msgstr "$(ARG1) ismi birden çok karakterden oluşuyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) does not exist."
 msgstr "$(ARG1) bulunamıyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The path $(ARG1) does not exist."
 msgstr "Veri yolu $(ARG1) mevcut değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) is not supported on this operating system."
 msgstr "İşlem $(ARG1) bu işletim sisteminde desteklenmiyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a directory."
 msgstr "$(ARG1) bir dizin değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a file."
 msgstr "$(ARG1) bir dosya değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "There is no space left on device $(ARG1)."
 msgstr "$(ARG1) aygıtın da boş alan yok."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
 msgstr "Çok fazla dosya açık olduğu için $(ARG1) üzerinde işlem gerçekleştirilemedi."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
 msgstr "Kullanılabilir bellek kalmadığı için $(ARG1) üzerindeki işlem gerçekleştirilemedi."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
 msgstr "$(ARG1) 'daki işleme devam edilemiyor çünkü çok fazla veri beklemede."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1) kendi içine kopyalanamıyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Unknown input/output error while accessing $(ARG1)."
 msgstr "Bilinmeyen giriş/ulaşılırken çıktıda hata $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is write protected."
 msgstr "$(ARG1) yazmaya karşı korumalı."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) doğru bir biçimde değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The version of $(ARG1) is not correct."
 msgstr "$(ARG1) sürümü doğru değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Drive $(ARG1) does not exist."
 msgstr "$(ARG1) sürücüsü mevcut değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Folder $(ARG1) does not exist."
 msgstr "Klasör $(ARG1) mevcut değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported."
 msgstr "Yüklü java versiyonu desteklenmiyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "Yüklü java versinu $(ARG1) desteklenmiyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
 msgstr "Kurulu olan Java versiyonu desteklenmiyor, en az $(ARG1) versiyonuna sahip olmanız gerekiyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
 msgstr "Kurulu olan Java versiyonu desteklenmiyor, en az $(ARG1) versiyonuna sahip olmanız gerekiyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership is corrupted."
 msgstr "Ortaklık ile ilişkilendirirlen veri bozulmuş"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "$(ARG1) ile ilişkilendirilen veri bozulmuş."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready."
 msgstr "Cilt $(ARG1) hazır değil."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) hazır değil; veri kayıt saklama birimini takın."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "Cilt $(ARG1) hazır değil; lütfen depolama ortamı ekleyin."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Please insert disk $(ARG1)."
 msgstr "Lütfen diski takın $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "'$(ARG2)' dizini içinde bu nesne oluşturulamıyor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
 msgstr "Bu aktarım protokolu kullanılırsa %PRODUCTNAME bu dosyaları üstüne yazılmaktan koruyamaz. Devam etmek ister misiniz?"
 
@@ -399,7 +345,6 @@ msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNA
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "'$(ARG1)' dosyası  onarılamadı ve bu yüzden açılamıyor."
 
@@ -412,7 +357,6 @@ msgid  "The personal configuration file '$(ARG1)' is corrupted and must be delet
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
 msgstr "'$(ARG1)''daki ayar verisine ulaşılamıyor. Bu veriler olmadan bazı işlemler sağlıklı olarak gerçekleşmeyebilir."
 
@@ -421,7 +365,6 @@ msgid  "The configuration data source '$(ARG1)' is unavailable. Without this dat
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
-#, fuzzy
 msgid  "The form contains invalid data. Do you still want to continue?"
 msgstr "Form geçersiz veri içermektedir. Bu şartlarda devam etmek istiyor musunuz?"
 
@@ -458,22 +401,18 @@ msgid  "The certificate could not be validated. You should examine this site's c
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Domain Name Mismatch"
 msgstr "Güvenlik Uyarısı: Alan Adı Uyuşmuyor"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Expired"
 msgstr "Güvenlik Uyarısı: Sunucu Sertifikasının Süresi Dolmuş"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Güvenlik Uyarısı: Sunucu Sertifikası Geçersiz"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Süzgeç Seçimi"
 
@@ -482,7 +421,6 @@ msgid  "Authentication Required"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
-#, fuzzy
 msgid  "Message from server:"
 msgstr "Sunucudan gelen mesaj"
 
@@ -495,88 +433,74 @@ msgid  "Enter user name and password for: \\n\"%2\" on %1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
-#, fuzzy
 msgid  "~Path"
 msgstr "~Yol"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "~Kullanıcı adı"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Pass~word"
 msgstr "~Parola"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
-#, fuzzy
 msgid  "A~ccount"
 msgstr "~Hesap"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~Parolayı hatırla"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CheckBox.Text
-#, fuzzy
 msgid  "~Use system credentials"
 msgstr "Sistem Kimlik Bilgilerini ~Kullan"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Gönder"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "Yoksay"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "~Etkileşimli"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Gelecekdeki Çerez İşlemi"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Yoksay"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Gönder"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Sunucu '${HOST}' bir ya da birden çok Çerez göndermek istiyor.\nÇerez'ler, belirli Adres sınıflara ilişkin bilgilerdir. %PRODUCTNAME ileride daha önceden alınmış bir Çerez sınıfının Adresi ile örtüşen bir belge talep ettiğinde, bu bilgi %PRODUCTNAME tarafından ilgili sunucuya gönderilir. Böylece sunucu, bir WWW uygulamasının son durumunu (örn. bir alışveriş sisteminde, sepete konulan ürünleri) kaydedebilir.\n\nŞu aşağıdaki Çerez'ler belirlenmiş olmalıdır.\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Alan: ${DOMAIN}, Kısayol: ${PATH}, Çerez: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Çerez Alımı"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME, sunucu '${HOST}' için Çerez'ler kaydetti.  Bunlar, ${PATH} belgesi talep edildiğinde %PRODUCTNAME tarafından gönderilir.\nÇerez'ler, belirli Adres sınıflarına ilişkin bilgilerdir. %PRODUCTNAME ileride daha önceden alınmış bir Çerez sınıfının Adresi ile örtüşen bir belge talep ettiğinde, bu bilgi %PRODUCTNAME tarafından ilgili sunucuya gönderilir. Böylece sunucu, bir WWW uygulamasının son durumunu (örn. bir alışveriş sisteminde, sepete konulan ürünleri) kaydedebilir. \n\nŞu Çerez'ler bilgisayarınızda belirlenmelidir:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Alan: ${DOMAIN}, Kısayol: ${PATH}, Çerez: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Çerezleri Gönder"
 
@@ -618,26 +542,22 @@ msgid  "Rename"
 msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
-#, fuzzy
 msgid  "Document in Use"
 msgstr "Kullanımdaki Belge"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Belge '$(ARG1)' dosyası düzenleyen tarafından kilitlenmiş:\n\n$(ARG2)\n\nBelgeyi salt-okunur olarak ya da düzenlemek için belgenin bir kopyasını açın."
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Salt-Okunu~r Aç"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Copy"
 msgstr "Kopya Olarak A~ç"
 
 #: source/openlocked.src#STR_UNKNOWNUSER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "Bilinmeyen Kullanıcı"
 
@@ -647,29 +567,25 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME düzenleme için açıldığından dosyada değişiklikler oluştu. Belgeyi şuanki haliyle kaydederseniz yapılan diğer değişikliklerin üzerine yazılacaktır.\n\nYinede kaydetmek istiyor musunuz?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "~Yinede Kaydet"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME Güncellemesi Mevcut"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Bu belge daha yeni %PRODUCTNAME sürümü ile oluşturulmuş. İçeriğindeki bazı özellikler geçerli sürüm tarafından desteklenmemektedir.\n\n%PRODUCTNAME'un son sürümünü indirmek ve çevirimiçi güncelleme için 'Şimdi Güncelle...' seçeneğine tıklayın."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
-#, fuzzy
 msgid  "~Update Now..."
 msgstr "~Şimdi Güncelle..."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
-#, fuzzy
 msgid  "~Later"
 msgstr "~Sonra"
 
@@ -739,69 +655,57 @@ msgid  "~Disable Macros"
 msgstr "Makroları E~tkisizleştir"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Enter password"
 msgstr "Parolayı girin"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
-#, fuzzy
 msgid  "Enter Master Password"
 msgstr "Ana Parolayı Girin"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
-#, fuzzy
 msgid  "Set Master Password"
 msgstr "Ana Parolayı Belirleyin"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
-#, fuzzy
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
 msgstr "Web bağlantıları için parolalar ana bir parola tarafından korunmaktadır. %PRODUCTNAME tarafından korunan bir parola istenirse oturumun başında bu ana parola sorulacaktır."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
-#, fuzzy
 msgid  "~Enter password"
 msgstr "~Parolayı girin"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
-#, fuzzy
 msgid  "~Reenter password"
 msgstr "~Parolayı tekrar girin"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
-#, fuzzy
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
 msgstr "Uyarı: Ana Parolayı belirlerken hatırlayabileceğiniz bir seçim yapın. Eğer Ana Parolayı hatırlayamazsanız, Ana Parola ile korunan parolalara erişmeniz mümkün olmayacaktır. Parolalarda küçük-büyük harf duyarlılığı vardır ve en az beş karakter olmalıdır."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "'$(ARG1)' belgesi farklı bir sistemde $(ARG2) tarafından düzenlendiği için kilitlenmiştir.\n\nDosyayı salt-okunur açabilir ya da dosyanın kilitli durumunu yoksayarak dosyayı düzenlemek için açabilirsiniz.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Salt-Okunu~r Aç"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "A~ç"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "'$(ARG1)' belgesi farklı bir sistemde $(ARG2) tarafından düzenlendiği için kilitlenmiştir.\n\nDiğer sistemdeki dosyayı kapatın ve kaydetmeyi yeniden deneyin ya da kilitli dosyayı yoksayın ve geçerli belgeyi kaydedin.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "Kaydetmeyi Tek~rar Dene"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~Kaydet"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
-#, fuzzy
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
 msgstr "%PRODUCTNAME düzenleme için açıldığından dosyada değişiklikler oluştu. Belgeyi şuanki haliyle kaydederseniz yapılan diğer değişikliklerin üzerine yazılacaktır.\n\nYinede kaydetmek istiyor musunuz?\n\n"

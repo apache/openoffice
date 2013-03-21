@@ -141,7 +141,7 @@ msgstr "နယ်နိမိတ်များ"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "ဘောင်များနှင့်နောက်ခံပုံစံများအတွက် စိတ်ကြိုက်ဇယားပုံစံများရေးဆွဲပြီး ဇယားပုံစံတစ်ခုကို \"<emph>prettytable\"</emph> အဖြစ် အစဉ်အမြဲ တင်ပို့ပါ။ ၎င်းတို့ကို နမူနာ ဘောင်ပုံစံများ၊ ခေါင်းစဉ်မဲများဖြင့် ဝီကီအင်ဂျင်တွင် ပြန်လည်အသုံးပြုပါ။"
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> မီဒီယာဝီကီဆာဗာသို့ သင့်လက်ရှိ စာသားမှတ်တမ်းမှတ်ရာရေးသားသူ၏ သတင်းအချက်အလက်များပေးပို့နိုင်ရန် @WIKIEXTENSIONPRODUCTNAME@ ကိုအသုံးပြုပါ။ ပေးပို့မှုများပြုပြီးနောက် ဝီကီပေါ်တွင် သင့်မှတ်တမ်းမှတ်ရာများကို ဝီကီအသုံးပြုသူအားလုံးဖတ်နိုင်သည်။ </ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> ရွေးချယ်ပါ။ မီဒီယာဝီကီဆာဗာသို့ လက်ရှိမှတ်တမ်းမှတ်ရာရေးသားသူ၏ အချက်အလက်များလွှဲပြောင်းပေးပို့ရန် <အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး\">ဖိုင် - ပေးပို့ပါ - မီဒီယာဝီကီသို့</အချက်အလက်> ကိုရွေးချယ်ပါ။ </ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> ဆာဗာကိုထောက်ပံ့မှုပြုရန် ဝီကီစာရင်း"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ ထည့်သွင်းနေသည်"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ အားသင်ထည့်သွင်းမှုမပြုမီ %PRODUCTNAMEအနေဖြင့် ဂျာဗားလုပ်ဆောင်မှုဝန်းကျင် (JRE) ကိုအသုံးပြုသည်မှာ သေချာသည်။ JRE၏ အခြေအနေများကို စစ်ဆေးမှုပြုရန် <အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး\">ကိရိယာများ - ရွေးပိုင်ခွင့်များ - %PRODUCTNAME - ဂျာဗား</အချက်အလက်> ကိုရွေးချယ်ပါ။ ရွေးချယ်မှုသေတ္တာရှိ ဂျာဗားလုပ်ဆောင်မှု ဖိုဒါကို ရွေးချယ်ပြီး\"ဂျာဗားလုပ်ဆောင်မှုဝန်းကျင်\"ကို အသုံးပြုမှတ်သားပါ။ JRE လုပ်ဆောင်မှုမပြုလျှင်JRE 1.4(သို့)နောက်ပိုင်းဗားရှင်းတစ်ခုကိုလုပ်ဆောင်မှုပြုပါ။ပြီးလျှင် %PRODUCTNAMEပြန်လည်စတင်ပါ။"
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ ကိုထည့်သွင်းရန်
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "ဝင်းဒိုးရေးသားသူတစ်ယောက်တွင် <အချက်အလက်အမျိုးအစား=\"အမျိုးအစားမီနူး\">ရွေးပိုင်ခွင့်များ -မန်နေဂျာတိုးချဲ့မှု</အချက်အလက်> ရွေးချယ်ပါ"
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "%PRODUCTNAME ကိုပိတ်ပြီး လုပ်ဆောင�
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "စာသားမှတ်တမ်းမှတ်ရာတစ်ခုဖွင့်ရန် ဆော့ဖ်ဝဲ ပြန်လည်စတင်ပါ။ ထို့နောက် သင့်ဝီကီပြင်ဆင်ချိန်ညှိမှုများသို့ဝင်ရောက်ရန် <အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး\">ကိရိယာများ - ရွေးပိုင်ခွင့်များ - အင်တာနက် - မီဒီယာဝီကီ</အချက်အလက်> ကိုရွေးချယ်ပါ။ အောက်ဖက်ရှိ ဝီကီတစ်ခုသို့ ချိတ်ဆက်မှုပြုရန် ကြည့်ရှုပါ။"
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ ကို ဖယ်ရှားရန်"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "ဝင်းဒိုးရေးသားသူတစ်ယောက်တွင် <အချက်အလက်အမျိုးအစား=\"အမျိုးအစားမီနူး\">ရွေးပိုင်ခွင့်များ -မန်နေဂျာတိုးချဲ့မှု</အချက်အလက်> ရွေးချယ်ပါ"
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,15 +245,15 @@ msgstr "ဝီကီသို့ ချိတ်ဆက်ပါ"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "မှတ်ချက်- %PRODUCTNAMEအတွင်းရှိ ဒိုင်ယာလော့ခ်များအတွက် သင်၏အသုံးပြုသူအမည်နှင့်စကားဝှက် သိမ်းဆည်းနိုင်သည်။ ပင်မစကားဝှက်တစ်ခုအနေဖြင့် ရယူသုံးစွဲနိုင်ရန် လုံခြုံမှုရှိသည့်နည်းလမ်းဖြင့် စကားဝှက်အား သိမ်းဆည်းမှုပြုလိမ့်မည်။ ပင်မစကားဝှက်အား အသုံးပြု နိုင်ရန် <အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး’’>ကိရိယာများ - ရွေးပိုင်ခွင့်များ - %PRODUCTNAME - လုံခြုံရေးဆိုင်ရာ</အချက်အလက်> ရွေးချယ်ပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "မှတ်ချက်- ပရောက်ဇီဆာဗာအသုံးပြုထားသည့် ကွန်ယက်သို့ သင်ချိတ်ဆက်လိုလျှင် ပရောက်ဇီနှင့်ပတ်သက်သည့် သတင်းအချက်အလက်များကို<အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး\">ကိရိယာများ - ရွေးပိုင်ခွင့်များ - အင်တာနက် - ပရောက်ဇီ</အချက်အလက်>တွင်ရယူပြီး ဆော့ဖ်ဝဲပြန်လည်စတင်ပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာရေးသားသူကိုဖွင့်ပြီး <အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး\">ကိရိယာများ - ရွေးပိုင်ခွင့်များ - အင်တာနက် - မီဒီယာဝီကီ</အချက်အလက်>ကိုရွေးချယ်ပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
@@ -261,7 +261,7 @@ msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> ဒိုင်ယာလော့ခ်တွင် ဝီကီအတွက် စာရင်းသတင်းအချက် အလက်ရိုက်ထည့်ပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "စကားဝှက်သေတ္တာတွင် သင့်ဝ�
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "အပိုင်းများကြားရှိ စကားဝှက်သိမ်းဆည်းမှုပြုရန် \"စကားဝှက်သိမ်းဆည်းပါ\" ကိုလုပ်ဆောင်မှုပြုပါ။ သိမ်းဆည်းထားသည့် စကားဝှက်များအားလုံးကို ရယူထိန်းသိမ်းနိုင်ရန် ပင်မစကားဝှက်တစ်ခုအသုံးပြုပါ။ ပင်မစကားဝှက်တစ်ခုအသုံးပြု နိုင်ရန် <အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး \">ကိရိယာများ - ရွေးပိုင်ခွင့်များ - %PRODUCTNAME - လုံခြုံရေးဆိုင်ရာ</အချက်အလက်>ကိုရွေးချယ်ပါ။ ပင်မစကားဝှက်အသုံးမပြုသောအခါ\"စကားဝှက်သိမ်းဆည်းပါ\"ကို အသုံးမပြုပါနှင့်။ "
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "မှတ်တမ်းမှတ်ရာရေးသားသူဖွ
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "ဝီကီစာမျက်နှာ၏ မာတိကာများ ရေးသားပါ။ စာသားစီစဉ်ဖွဲ့စည်းမှုပုံစံကဲ့သို့ ဖွဲ့စည်းမှုပုံစံများ၊ ခေါင်းစဉ်များ၊ အောက်ခြေမှတ်စုများနှင့် အခြားအရာများ အသုံးပြု နိုင်သည်။ စီစဉ်ဖွဲ့စည်းမှုပုံစံစာရင်းများကို <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"> တွင်ကြည့်ပါ။ </link>"
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "<အချက်အလက်အမျိုးအစား=\"အချက်အလက်မီနူး\">ဖိုင် - ပေးပို့ပါ - မီဒီယာဝီကီသို့ </အချက်အလက်> ရွေးချယ်ပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "သင်၏ ဝင်ရောက်မှုများအတွက် အထူးပြင်ဆင်ချိန်ညှိမှုများပြုရန် <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">တွင် MediaWiki</link>ဒိုင်ယာလော့ခ်ကို ပေးပို့ပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>MediaWiki ဆာဗာ</emph>: ဝီကီရွေးချယ်ပါ"
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>ခေါင်းစဉ်</emph>: သင့်စာမျက်နှာ၏ ခေါင်းစဉ်အမျိုးအစား။ လက်ရှိစာသားမှတ်တမ်းမှတ်ရာနှင့်အတူ ရှိပြီးသားစာမျက်နှာ၏ ခေါင်းစဉ်အမျိုးအစားများကို ဖျက်ပြီးအသစ်ဖြင့်အစားထိုးပါ။ ဝီကီပေါ်တွင် စာမျက်နှာအသစ်တစ်ခုဖန်တီးရန် ခေါင်းစဉ်အမျိုးအစားသစ်တစ်ခု။"
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>အကျဉ်းချုပ်</emph>း သင့်စာမျက်နှာ၏ ရွေးပိုင်ခွင့် အတိုချုပ်ကို ရိုက်ထည့်ပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>အသေးစားတည်းဖြတ်မှုဖြစ်သည်</emph>: တူညီသော ခေါင်းစဉ်များနှင့်အတူ ရှိပြီးသားစာမျက်နှာ၏ အသေးစားတည်းဖြတ်မှုများအဖြစ် စာမျက်နှာတွင် မှတ်သားမှုပြုရန် ဤသေတ္တာအား ရွေးချယ်မှုပြုပါ။"
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>ကွန်ယက်ဘရောက်ဇာတွင် ပြသပါ</emph>: သင့်ကွန်ပျူတာရှိ ကွန်ယက်ဘရောက်ဇာကို ဖွင့်ရန် ဤသေတ္တာအား ရွေးချယ်မှုပြုပါ။ ပြီးလျှင် ဝီကီ စာမျက်နှာရှိ သတင်းအချက်အလက်များ လွှဲပြောင်းပေးပို့မှုအား ပြသပါ။ "
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,7 +341,7 @@ msgstr "MediaWiki ရွေးပိုင်ခွင့်များ"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "သင့်အနေဖြင့် မီဒီယာဝီကီဆာဗာများ ထပ်ဖြည့်၊ ပြင်ဆင်၊ ဖယ်ရှားနိုင်သည်။ <item type=\"menuitem\"> ကိရိယာများ-ရွေးပိုင်ခွင့်များ-အင်တာနက်- မီဒီယာဝီကီ </item> အနေဖြင့် ဒိုင်ယာလော့ဒ် ဖွင့်လှစ်ပါ။ အခြားတစ်ခုအနေဖြင့် <item type=\"menuitem\"> ကိရိယာများ- မန်နေဂျာတိုးချဲ့မှု </item> ကိုရွေးချယ်ပါ။ ရွေးပိုင်ခွင့် ခလုတ်ကို ကလစ်နှိပ်ပြီး @WIKIEXTENSIONPRODUCTNAME@ ကိုရွေးချယ်ပါ။"
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
@@ -349,15 +349,15 @@ msgstr ""
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> အသစ်ထည့်သွင်းမှုများကို ထပ်ဖြည့်ရန် မီဒီယာဝီကီဒိုင်ယာလော့ဒ်ကို ကိုဖွင့်သည်။ </ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> ထည့်သွင်း ရွေးချယ်ထားမှုများကို တည်းဖြတ်ရန် မီဒီယာဝီကီ ဒိုင်ယာလော့ဒ်ကို ဖွင့်သည်။ </ahelp>  "
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> ထည့်သွင်းရန် ရွေးချယ်ထားမှုများကို စာရင်းမှ ပယ်ဖျက်သည်။ </ahelp> "
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
@@ -417,23 +417,23 @@ msgstr "မီဒီယာဝီကီ ဒိုင်ယာလော့ဒ်�
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> သင့်မှတ်တမ်းမှတ်ရာ ထုတ်ဝေမှုပြုရန် သင်အလိုရှိသည့်နေရာတွင် မီဒီယာဝီကီဆာဗာကို ရွေးချယ်ပါ။ ဆာဗာအသစ်ကို စာရင်းသွင်းရန် ‘ထပ်ထည့်ပါ’ ကိုကလစ်နှိပ်ပါ။</ahelp> "
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> သင့်ဝီကီဝင်ရောက်မှုအတွက် ခေါင်းစဉ်ရိုက်ထည့်ပါ။ ၎င်းသည် သင့်ဝီကီ၏ ထိပ်ဆုံးခေါင်းစဉ်ဖြစ်သည်။ အသစ်ဝင်ရောက်မှုအတွက် ဤဝီကီပေါ်တွင် ခေါင်းစဉ်တစ်ခုသာ ရှိရမည်ဖြစ်သည်။ ရှိပြီးသား ခေါင်းစဉ်တစ်ခုကို သင်ရိုက်ထည့်လျှင် ဝီကီမှ ရှိပြီးသားကိုဖျက်ပြီး အသစ်ဖြင့် အစားထိုးလိမ့် မည်ဖြစ်သည်။ </ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\"> ရွေးပိုင်ခွင့်ဆိုင်ရာ အတိုအနှစ်ချုပ်တစ်ခု (သို့) မှတ်ချက်ကို ရိုက်ထည့်ပါ။ </ahelp> <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> ကိုကြည့်ပါ။"
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>အသေးစားပြင်ဆင်တည်းဖြတ်မှုဖြစ်သည် </emph>: <ahelp hid=\".\">တူညီသော ခေါင်းစဉ်တစ်ခုနှင့်အတူ အသင့်ရှိပြီးသား စာမျက်နှာပေါ် တွင် အသေးစားပြင်ဆင်တည်းဖြတ်မှုတစ်ခုအဖြစ် ဆွဲတင်အသုံးပြုရန် ဤသေတ္တာတွင် ရွေးချယ်မှတ်သားပါ။ </ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>ကွန်ယက်ဘရောက်စ်ဇာတွင်ပြသပါ</emph>: <ahelp hid=\".\"> သင့်ကွန်ပျူတာရှိ ကွန်ယက်ဘရောက်စ်ဇာကို ဖွင့်ရန် ဤသေတ္တာတွင် ရွေးချယ်ပြီး ဝီကီစာမျက်နှာပေါ်သို့ ဆွဲတင်ပြသပါ။ </ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

@@ -389,7 +389,7 @@ msgstr "Berkas $filename$ tidak bisa dimuat."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "Percobaan untuk memuat berkas menghasilkan pesan kesalahan berikut ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "Nilai berganda ditemukan pada kolom '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "Kolom '$columnname$' telah didefinisikan dengan jenis \"Desimal\", panjang maksimal adalah $precision$ karakter (dengan $scale$ angka di belakang koma).\n\nNilai \"$value$\" yang ditentukan lebih panjang dari jumlah digit yang diizinkan."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "KDE versi $major$.$minor$ atau yang lebih tinggi diperlukan untuk mengak
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "Versi KDE yang ditemukan terlalu baru. Hanya KDE sampai versi $major$.$minor$ yang diketahui dapat bekerja dengan produk ini.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "Jika Anda yakin bahwa versi KDE Anda bisa bekerja cukup baik, Anda mungkin perlu menjalankan makro Basic berikut untuk menonaktifkan pengujian versi:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

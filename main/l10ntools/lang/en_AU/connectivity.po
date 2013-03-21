@@ -477,8 +477,9 @@ msgid  "The file $filename$ could not be loaded."
 msgstr "The file $filename$ could not be loaded."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
+#, fuzzy
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 #, fuzzy
@@ -596,8 +597,9 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Duplicate value found in column '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
+#, fuzzy
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 #, fuzzy
@@ -745,12 +747,14 @@ msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Addr
 msgstr "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
+#, fuzzy
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
+#, fuzzy
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 #, fuzzy

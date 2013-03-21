@@ -1377,7 +1377,7 @@ msgstr "Nous vous remercions d'avoir téléchargé %PRODUCTNAME %PRODUCTVERSION.
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
-msgstr ""
+msgstr "Avant de procéder à l'installation, vous devez décompresser les fichiers d'installation et les copier sur votre disque dur. Ensuite, l'installation de %PRODUCTNAME se lancera automatiquement.\r\n\r\nCliquez sur \\'Suivant\\' pour continuer."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
 msgid  "Select Folder"
@@ -1829,7 +1829,7 @@ msgstr "Annuler"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
-msgstr ""
+msgstr "Ce logiciel est basé sur le projet \"Apache OpenOffice (incubation)\" et supporté par les membres de la Communauté Apache. Voir aussi : http://www.openoffice.org/welcome/credits.html"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_125
 msgid  "&Next >"
@@ -2381,15 +2381,15 @@ msgstr "Vérifiez le dossier de destination."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
 msgid  "To continue, click \"Next\"."
-msgstr ""
+msgstr "Pour continuer, cliquez sur "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr ""
+msgstr "Pour sélectionner une version différente, cliquez sur "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
+msgstr "Pour sélectionner un dossier différent, cliquez sur "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
 msgid  "Install [ProductName] to:"

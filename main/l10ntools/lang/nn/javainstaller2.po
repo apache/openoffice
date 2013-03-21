@@ -153,11 +153,11 @@ msgstr "Opprett ny mappe"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "Mappa «${DIR}» finst ikkje.\nVil du oppretta henne no?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Mappe «${DIR}» finst ikkje.\nVil du oppretta henne no eller velja ei anna mappe?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -485,8 +485,9 @@ msgid  "Analyzing ..."
 msgstr "Analyserer …"
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
+#, fuzzy
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "Analyserer database.\nVent litt …"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 #, fuzzy

@@ -73,7 +73,7 @@ msgstr "Andmeallikat ei salvestatud. Kasuta palun andmeallikasse salvestamiseks 
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Antud käsk ei ole SELECT-lause.\nAinult päringud on lubatud."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "Andmebaasis on tabeleid, mille nimed on samad olemasolevate päringute n
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "Vea põhjustanud SQL-käsk on:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,7 +221,7 @@ msgstr "Dokumenti nimega '$name$' ei leitud."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Dokumendi salvestamine nurjus:\n\n$except$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
@@ -305,47 +305,38 @@ msgid  "The extension is not installed."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
-#, fuzzy
 msgid  "Database ~name"
 msgstr "Andmebaasi nimi"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
-#, fuzzy
 msgid  "User settings"
 msgstr "Kasutaja sätted"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
-#, fuzzy
 msgid  "~Control user"
 msgstr "Põhikasutaja"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
-#, fuzzy
 msgid  "~Administrator"
 msgstr "Administraator"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
-#, fuzzy
 msgid  "~Domain user"
 msgstr "Domeeni kasutaja"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
-#, fuzzy
 msgid  "P~assword..."
 msgstr "P~arool..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
-#, fuzzy
 msgid  "~Password..."
 msgstr "~Parool..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
-#, fuzzy
 msgid  "Passwo~rd..."
 msgstr "Pa~rool..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
-#, fuzzy
 msgid  "~Backup file"
 msgstr "Varukoopia fail"
 
@@ -354,22 +345,18 @@ msgid  "..."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Database settings"
 msgstr "Andmebaasi sätted"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE"
 msgstr "S~YSDEVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "TRANSACTI~ONLOG"
 msgstr "TRANSACTI~ONLOG"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE"
 msgstr "DATAD~EVSPACE"
 
@@ -386,325 +373,262 @@ msgid  "..."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Transaction ~file (MB)"
 msgstr "Toimingufail (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Data~base size (MB)"
 msgstr "Andmebaasi suurus (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "Andmepuhvri suurus (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
-#, fuzzy
 msgid  "Backup file information"
 msgstr "Varukoopia faili teave"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
-#, fuzzy
 msgid  "Create New Adabas D Database"
 msgstr "Uue Adabas D andmebaasi loomine"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
-#, fuzzy
 msgid  "No entry could be written in the configuration file."
 msgstr "Häälestusfaili ei õnnestunud kirjutada ühtki kirjet."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
-#, fuzzy
 msgid  "An error occurred as the DB files were being created."
 msgstr "Andmebaasi failide loomisel tekkis viga."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
-#, fuzzy
 msgid  "An error occurred as the system tables were being created."
 msgstr "Süsteemi tabelite loomisel tekkis viga."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
-#, fuzzy
 msgid  "The backup file entered does not exist."
 msgstr "Sisestatud nimega varukoopiafaili pole olemas."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-#, fuzzy
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
 msgstr "Täiesti korrektne fail ei või olla pikem kui \\'#\\' märki."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
-#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
 msgstr "Administraator ja põhikasutaja ei tohi olla sama nimega!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
-#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
 msgstr "Faili $name$ jaoks pole sisestatud ühtki nime!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
-#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
 msgstr "Uue andmebaasi loomiseks peavad sul olema administraatori õigused!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
-#, fuzzy
 msgid  "The specified file name or directory does not exist."
 msgstr "Määratud nimega faili või kataloogi pole olemas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Ühtki uut andmebaasi ei saa luua.\nPalun kontrolli oma Adabas D paigaldust, eriti muutujaid \"DBROOT\" ja \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
-#, fuzzy
 msgid  "Warning!"
 msgstr "Hoiatus!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
-#, fuzzy
 msgid  "Creating database files."
 msgstr "Andmebaasi failide loomine."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
-#, fuzzy
 msgid  "Creating database configuration file."
 msgstr "Andmebaasi häälestusfaili loomine."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
-#, fuzzy
 msgid  "Starting database for the first time."
 msgstr "Andmebaasi esmakordne käivitamine."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
-#, fuzzy
 msgid  "The name entered already exists."
 msgstr "Sisestatud nimi on juba olemas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
-#, fuzzy
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
 msgstr "Andmebaasifailidele ei saa määrata ühtki vaikenime. Kogupikkus on suurem kui 40 märki."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
-#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
 msgstr "Andmebaasifailidele ei saa määrata ühtki vaikenime. Kirjutamisõigus puudub."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
-#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "Aktiivne andmebaas vajab teisendamist. Sisesta põhikasutaja nimi ja parool."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
-#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
 msgstr "Parool ei tohi sisaldada tühikuid. Sisesta uus parool."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
-#, fuzzy
 msgid  "Database Document Macro Migration"
 msgstr "Andmebaasi dokumendi makrode üleviimine"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
-#, fuzzy
 msgid  "Prepare"
 msgstr "Ettevalmistus"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
-#, fuzzy
 msgid  "Backup Document"
 msgstr "Dokumendi varundamine"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
-#, fuzzy
 msgid  "Migrate"
 msgstr "Üleviimine"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
-#, fuzzy
 msgid  "Summary"
 msgstr "Kokkuvõte"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "Head andmebaasi dokumendi makrode üleviimise nõustaja kasutamist"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "See nõustaja aitab sul üle viia oma makrosid.\n\nPärast lõpetamist viiakse kõik varem aktiivse dokumendi vormidesse ja aruannetesse põimitud makrod üle andmebaasi dokumenti enesesse. Seetõttu muudetakse vastavalt vajadusele teekide nimesid.\n\nKui sinu vormid ja aruanded sisaldavad viiteid nendele makrodele, siis kohandatakse neid võimaluse korral.\n\nEnne üleviimise alustamist tuleb sulgeda kõik dokumenti kuuluvad vormid, aruanded, päringud ja tabelid. Klõpsa nende sulgemiseks 'Edasi'."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
-#, fuzzy
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
 msgstr "Kõiki objekte ei suudetud sulgeda. Palun sulge need käsitsi ja taaskäivita nõustaja."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Backup your Document"
 msgstr "Tee oma dokumendist varukoopia"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
 msgstr "Võimaldamaks tagasipöördumist üleviimiseelse olukorra juurde, tehakse andmebaasi dokumendist sinu valitud asukohta varukoopia. Kõik nõustaja tehtavad muudatused puudutavad algdokumenti, varukoopiat ei muudeta."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Save To:"
 msgstr "Salvestatakse asukohta:"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
-#, fuzzy
 msgid  "Browse ..."
 msgstr "Lehitse ..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
-#, fuzzy
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
 msgstr "Dokumendi koopia salvestamiseks ja üleviimise alustamiseks vajuta 'Edasi'."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Migration Progress"
 msgstr "Üleviimise edenemine"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
 msgstr "Andmebaasi dokument sisaldab $forms$ vormi ja $reports$ aruannet, mida parajasti töödeldakse:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Current object:"
 msgstr "Aktiivne objekt:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Current progress:"
 msgstr "Aktiivse objekti edenemine:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Overall progress:"
 msgstr "Üldine edenemine:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
-#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "dokument $current$ / $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
-#, fuzzy
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr "Kõikide vormide ja aruannete töötlemine õnnestus. Üksikasjaliku kokkuvõtte kuvamiseks vajuta 'Edasi'."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Summary"
 msgstr "Kokkuvõte"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
-#, fuzzy
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr "Üleviimine õnnestus. Allpool on sinu dokumendiga sooritatud tegevuste logi."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
-#, fuzzy
 msgid  "The migration was not successful. Examine the migration log below for details."
 msgstr "Üleviimine nurjus. Üksikasjadega saad tutvuda alloleva üleviimise logi abil."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
-#, fuzzy
 msgid  "Form '$name$'"
 msgstr "Vorm '$name$'"
 
 #: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
-#, fuzzy
 msgid  "Report '$name$'"
 msgstr "Aruanne '$name$'"
 
 #: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
-#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "dokument $current$ / $overall$"
 
 #: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
-#, fuzzy
 msgid  "Database Document"
 msgstr "Andmebaasi dokument"
 
 #: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
-#, fuzzy
 msgid  "saved copy to $location$"
 msgstr "koopia salvestati asukohta $location$"
 
 #: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
-#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
 msgstr "$type$ teek $old$ viidi üle -> $new$"
 
 #: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
-#, fuzzy
 msgid  "$type$ library '$library$'"
 msgstr "$type$ teek '$library$'"
 
 #: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
-#, fuzzy
 msgid  "migrating libraries ..."
 msgstr "teekide üleviimine..."
 
 #: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic"
 msgstr "%PRODUCTNAME% Basic"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
-#, fuzzy
 msgid  "JavaScript"
 msgstr "JavaScript"
 
 #: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
-#, fuzzy
 msgid  "BeanShell"
 msgstr "BeanShell"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
-#, fuzzy
 msgid  "Python"
 msgstr "Python"
 
 #: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
-#, fuzzy
 msgid  "dialog"
 msgstr "dialoog"
 
 #: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
-#, fuzzy
 msgid  "Error(s)"
 msgstr "Vead"
 
 #: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings"
 msgstr "Hoiatused"
 
 #: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
-#, fuzzy
 msgid  "caught exception: "
 msgstr "leiti erand: "
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
-#, fuzzy
 msgid  "You need to choose a backup location other than the document location itself."
 msgstr "Varukoopia asukoht peab erinema dokumendi asukohast."
 
@@ -721,167 +645,134 @@ msgid  "Not applicable to read-only documents."
 msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
-#, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "Tabelile ja päringule ei saa anda sama nime. Palun vali nimi, mida ei kasuta veel ükski tabel ega päring."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabel"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Päring"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
-#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "Antud ühendus pole korrektne päring ega tabelite täitja."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
-#, fuzzy
 msgid  "The given object is no table object."
 msgstr "Antud objekt pole tabeliobjekt."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
-#, fuzzy
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
 msgstr "Vigane koostetüüp - vaja on com.sun.star.sdb.tools.CompositionType väärtust."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
-#, fuzzy
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
 msgstr "Vigane käsu tüüp - lubatud on ainult com.sun.star.sdb.CommandType käsud TABLE ja QUERY."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
-#, fuzzy
 msgid  "Create Form in Design View..."
 msgstr "Loo vorm koostamisvaates..."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Form..."
 msgstr "Kasuta vormi loomiseks nõustajat..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Report..."
 msgstr "Kasuta aruande loomiseks nõustajat..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
-#, fuzzy
 msgid  "Create Report in Design View..."
 msgstr "Loo aruanne koostamisvaates..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
-#, fuzzy
 msgid  "Create Query in Design View..."
 msgstr "Koosta päring koostamisvaates..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
-#, fuzzy
 msgid  "Create Query in SQL View..."
 msgstr "Koosta päring SQL-vaates..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Query..."
 msgstr "Kasuta päringu koostamiseks nõustajat..."
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
-#, fuzzy
 msgid  "Create Table in Design View..."
 msgstr "Loo tabel koostamisvaates..."
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Table..."
 msgstr "Kasuta tabeli loomiseks nõustajat..."
 
 #: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
-#, fuzzy
 msgid  "Create View..."
 msgstr "Loo vaade..."
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Forms"
 msgstr "Vormid"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Reports"
 msgstr "Aruanded"
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
-#, fuzzy
 msgid  "Form..."
 msgstr "Vorm..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
-#, fuzzy
 msgid  "Report..."
 msgstr "Aruanne..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
-#, fuzzy
 msgid  "View (Simple)..."
 msgstr "Vaade (lihtne)..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
-#, fuzzy
 msgid  "Paste Special..."
 msgstr "Aseta teisiti..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Kustuta"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "Rename"
 msgstr "Muuda nime"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Redigeeri"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Edit in SQL View..."
 msgstr "Redigeeri SQL-vaates..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
-#, fuzzy
 msgid  "Open"
 msgstr "Ava"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Create as View"
 msgstr "Loo vaatena"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
-#, fuzzy
 msgid  "Form Wizard..."
 msgstr "Vorminõustaja..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
-#, fuzzy
 msgid  "Report..."
 msgstr "Aruanne..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
-#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Aruandenõustaja..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select All"
 msgstr "Vali kõik"
 
@@ -1049,8 +940,9 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "Dokument sisaldab vorme või aruandeid koos põimitud makrodega."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+#, fuzzy
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Makrod peaksid olema põimitud andmebaasi dokumentidesse endisse.\n\nSa võid jätkata oma dokumentide kasutamist endisel viisil, kuid soovitatav on viia oma makrod üle. Menüükäsk 'Tööriistad / Makrode üleviimine ...' on sulle seejuures abiks.\n\nPea meeles, et sa ei saa enne üleviimist põimida makrosid andmebaasi dokumentidesse. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -1070,282 +962,226 @@ msgid  "The current record has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Kas sa soovid valitud andmeid kustutada?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
-#, fuzzy
 msgid  "(filtered)"
 msgstr "(filtreeritud)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
-#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Sortimiskriteeriumide seadmisel tekkis viga"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
-#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Filtreerimiskriteeriumide seadmisel tekkis viga"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
-#, fuzzy
 msgid  "Connection lost"
 msgstr "Ühendus on katkenud"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Päringud"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabelid"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "Redigeeri an~dmebaasifaili..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-#, fuzzy
 msgid  "Registered databases ..."
 msgstr "Registreeritud andmebaasid ..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-#, fuzzy
 msgid  "Disco~nnect"
 msgstr "Ühe~nda lahti"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
-#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Kustutuskinnitus"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "Kas sa soovid kustutada tabelit '%1'?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "Päring on juba olemas. Kas sa soovid seda kustutada?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
-#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "Ühendus andmebaasiga on katkenud. Kas sa soovid uuesti ühenduda?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Tekkisid hoiatused"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
-#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "Tabelite laadimisel tekkisid andmebaasiühenduses hoiatused."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "Ühenduse loomine andmebaasi \"$name$\" ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
-#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Päringu $name$ laadimine ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
-#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Tabeli $name$ laadimine ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
-#, fuzzy
 msgid  "No table format could be found."
 msgstr "Tabeli vormingut ei leitud."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Ühenduse loomine andmeallikaga \"$name$\" ei õnnestunud."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
-#, fuzzy
 msgid  "Rebuild"
 msgstr "Laadi uuesti"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
-#, fuzzy
 msgid  "Column ~Format..."
 msgstr "Veeru vorming..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
-#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Kopeeri veeru kirjeldus"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
-#, fuzzy
 msgid  "Table Format..."
 msgstr "Tabeli vorming..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Row Height..."
 msgstr "Rea kõrgus..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
-#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Võta tagasi: Andmete sisestamine"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
-#, fuzzy
 msgid  "Save current record"
 msgstr "Salvesta aktiivne kirje"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
-#, fuzzy
 msgid  "Query #"
 msgstr "Päring #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabel #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
-#, fuzzy
 msgid  "View #"
 msgstr "Vaade #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "Nimi \"#\" on juba kasutusel."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
-#, fuzzy
 msgid  "No matching column names were found."
 msgstr "Ühtegi vastavat veeru nime ei leitud."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
-#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "Tekkis viga. Kas sa soovid kopeerimist jätkata?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
-#, fuzzy
 msgid  "Data source table view"
 msgstr "Andmeallika tabelivaade"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
-#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "Näitab valitud tabelit või päringut."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabel #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
-#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Muuda SQL käsku/käske"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
-#, fuzzy
 msgid  "Table name"
 msgstr "Tabeli nimi"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
-#, fuzzy
 msgid  "Insert data"
 msgstr "Lisa andmed"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
-#, fuzzy
 msgid  "Delete data"
 msgstr "Kustuta andmed"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
-#, fuzzy
 msgid  "Modify data"
 msgstr "Muuda andmeid"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
-#, fuzzy
 msgid  "Alter structure"
 msgstr "Muuda struktuuri"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
-#, fuzzy
 msgid  "Read data"
 msgstr "Loe andmeid"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
-#, fuzzy
 msgid  "Modify references"
 msgstr "Muuda viiteid"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
-#, fuzzy
 msgid  "Drop structure"
 msgstr "Unusta struktuur"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Sordi kasvavalt"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "Sordi kahanevalt"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
-#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "SDBC-draiveri haldurisse (#servicename#) ei saa ühendust luua."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
-#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "URL-i #connurl# jaoks pole draiverit registreeritud."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
-#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "URL-i #connurl# jaoks pole võimalik ühendust luua."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
-#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "Palun kontrolli sätteid, näiteks kasutajanime ja parooli."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
-#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "Ühendumine õnnestus, kuid andmebaasi tabelite kohta pole infot saadaval."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
-#, fuzzy
 msgid  "All tables"
 msgstr "Kõik tabelid"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
-#, fuzzy
 msgid  "All views"
 msgstr "Kõik vaated"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
-#, fuzzy
 msgid  "All tables and views"
 msgstr "Kõik tabelid ja vaated"
 
@@ -1740,77 +1576,62 @@ msgid  "<none>"
 msgstr "<puudub>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Sätted"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
-#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "SQL92 nimepiirangute kasutamine"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
-#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Tabeli nime aliase lisamine SELECT lausetele"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
-#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Enne tabeli aliase nime kasutatakse võtmesõna AS"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
-#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Välise ühenduse süntaksi '{OJ}' kasutamine"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
-#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Andmebaasi draiveritest pärit privileegide eiramine"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
-#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Nimedega parameetrite asendamine märgiga '?'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
-#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Versiooniveergude näitamine (kui saadaval)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Kataloogi nime kasutamine SELECT lausetes"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
-#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Skeemi nime kasutamine SELECT lausetes"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
-#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Indeksi loomine ASC või DESC lausega"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
-#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Tekstiridade lõpetamine CR+LF märgiga"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
-#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Rahavormingus välja teabe eiramine"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Nõutud väljade kontrollimine vormi andmete sisestamisel"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
-#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "ODBC-ga ühilduvate kuupäeva/kellaaja vormingute kasutamine"
 
@@ -1823,27 +1644,22 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Vaikimisi"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Mixed"
 msgstr "Kombineeritud"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "MS Access"
 msgstr "MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
-#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Loogiliste väärtuste võrdlemine"
 
@@ -1852,32 +1668,26 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Sätted"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "Genereeritud väärtuste hankimine"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
-#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "~Automaatse kasvamise lause"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
-#, fuzzy
 msgid  "~Query of generated values"
 msgstr "~Genereeritud väärtuste päring"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
-#, fuzzy
 msgid  "Generated Values"
 msgstr "Genereeritud väärtused"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
-#, fuzzy
 msgid  "Special Settings"
 msgstr "Erisätted"
 
@@ -1886,42 +1696,34 @@ msgid  "Advanced Settings"
 msgstr ""
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Salvesta"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Create New Directory"
 msgstr "Loo uus kataloog"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Taseme võrra üles"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
-#, fuzzy
 msgid  "File ~name:"
 msgstr "Faili ~nimi:"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Salvesta"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
-#, fuzzy
 msgid  "~Path:"
 msgstr "A~sukoht:"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Kaust"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Fail on juba olemas. Kas kirjutada üle?"
 
@@ -1931,8 +1733,9 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "Andmeallikaga \"$name$\" ühendumiseks on vaja parooli."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+#, fuzzy
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Kataloogi \n\n$path$\n\npole olemas. Kas luua see?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1965,37 +1768,30 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "Märgi tabelid, mis peaksid rakendustele nähtavad olema."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Database name"
 msgstr "Andmebaasi nimi"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
-#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "Server / port"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Server"
 msgstr "Server"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
-#, fuzzy
 msgid  "~Port"
 msgstr "Port"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Vaikimisi: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
-#, fuzzy
 msgid  "So~cket"
 msgstr "Pesa"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
-#, fuzzy
 msgid  "Named p~ipe"
 msgstr "Nimega ühendus"
 
@@ -2010,32 +1806,26 @@ msgid  "User administration"
 msgstr "Kasutaja administreerimine"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabelid"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Päringud"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Lisa"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Sulge"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "Tabelite lisamine"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Tabeli või päringu lisamine"
 
@@ -2165,8 +1955,9 @@ msgid  "Database"
 msgstr "Andmebaas"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Järgnevatel lehtedel on sul võimalik määrata ühenduse üksikasjalikud sätted.\n\nUued sätted kirjutavad olemasolevad sätted üle."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -2184,8 +1975,9 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "Programmiteegi #lib# laadimine ei õnnestunud või see on vigane. ODBC-andmeallika valik pole saadaval."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Sellel platvormil puudub seda liiki andmeallikate tugi.\nSa võid küll sätteid muuta, kuid tõenäoliselt ei õnnestu sul andmebaasiga ühendust luua."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2393,67 +2185,54 @@ msgid  "Insert as"
 msgstr "Lisamine"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "dBASE-failide asukoht"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "Tekstifailide asukoht"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Arvutustabeli asukoht"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "ODBC andmeallika nimi sinu süsteemis"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "MySQL-i andmebaasi nimi"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Oracle'i andmebaasi nimi"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Adabas D andmebaasi nimi"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
-#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Microsoft Access'i andmebaasifail"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
-#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "Rohkem sätteid pole vaja. Ühenduse kontrollimiseks klõpsa nuppu '%test'."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
-#, fuzzy
 msgid  "Datasource URL"
 msgstr "Andmeallika URL"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Serveri nimi"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "Mozilla profiili nimi"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "Thunderbird'i profiili nimi"
 
@@ -2488,17 +2267,14 @@ msgid  "Choose a database"
 msgstr "Vali andmebaas"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "General"
 msgstr "Üldine"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Serveri nimi"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Kasutaja autentimine"
 
@@ -2573,82 +2349,66 @@ msgid  "MS Access 2007 file"
 msgstr "MS Access 2007 fail"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
-#, fuzzy
 msgid  "Database files"
 msgstr "Andmebaasifailid"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
-#, fuzzy
 msgid  "Database sizes"
 msgstr "Andmebaasi näitajad"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "S~uurus (MB)"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "~Vaba mälu maht (MB)"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
-#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "~Mälukasutus (protsentides):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
-#, fuzzy
 msgid  "Database Statistics"
 msgstr "Andmebaasi statistika"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
-#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Sisaldab süsteemitabeleid"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
-#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Sisaldab infot toimingu kohta"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
-#, fuzzy
 msgid  "Contains all data files"
 msgstr "Sisaldab kõiki andmefaile"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
-#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Andmebaasifailide kogumaht"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
-#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Vaba ruum enne uue datadev-faili loomist."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
-#, fuzzy
 msgid  "Currently used memory"
 msgstr "Hetkel kasutusel olev mälu"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
-#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "Infot pole võimalik näidata, kuna vajalikele süsteemi tabelitele puuduvad juurdepääsuõigused."
 
@@ -2888,8 +2648,9 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "MySQL-i ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "MySQL-i andmebaasiga ühendumiseks on võimalik kasutada kas ODBC-d või JDBC-d.\nKui sa pole järgnevates sätetes kindel, võta ühendust süsteemiadministraatoriga."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2982,8 +2743,9 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "MySQL-i JDBC ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Palun sisesta MySQL-i andmebaasiga JDBC abil ühendumiseks vajalik info. JDBC draiveriklass peab olema süsteemi installeeritud ning registreeritud %PRODUCTNAME-is.\nKui sa pole järgnevates sätetes kindel, võta ühendust süsteemiadministraatoriga."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -3046,8 +2808,9 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "LDAP kataloogi ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Palun sisesta LDAP kataloogiga ühendumiseks vajalik info.\nKui sa pole järgnevates sätetes kindel, võta ühendust süsteemiadministraatoriga."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -3065,8 +2828,9 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Adabas D ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Sisesta Adabas D andmebaasi nimi, millega soovid ühenduda.\n%PRODUCTNAME-is registreeritud Adabas D andmebaaside valimiseks klõpsa 'Lehitse...'."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -3074,8 +2838,9 @@ msgid  "Set up a connection to an ADO database"
 msgstr "ADO ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Palun sisesta ADO andmeallika URL, millega soovid ühenduda.\nTootjaspetsiifiliste sätete konfigureerimiseks klõpsa 'Lehitse'.\nKui sa pole järgnevates sätetes kindel, võta ühendust süsteemiadministraatoriga."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -3083,8 +2848,9 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "ODBC ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Sisesta ODBC andmebaasi nimi, millega soovid ühenduda.\n%PRODUCTNAME-is registreeritud ODBC andmebaaside valimiseks klõpsa 'Lehitse...'.\nKui sa pole järgnevates sätetes kindel, võta ühendust süsteemiadministraatoriga."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -3092,8 +2858,9 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "JDBC ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Palun sisesta vajalik info JDBC andmebaasiga ühendumiseks.\nKui sa pole järgnevates sätetes kindel, võta ühendust süsteemiadministraatoriga."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -3111,8 +2878,9 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Oracle'i JDBC draiveriklass"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Palun sisesta Oracle'i andmebaasiga ühendumiseks vajalik info. Pane tähele, et JDBC draiveriklass peab olema süsteemi paigaldatud ning %PRODUCTNAME-is registreeritud.\nKui sa pole järgnevates sätetes kindel, võta ühendust oma süsteemiadministraatoriga."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -3120,8 +2888,9 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Arvutustabeli ühenduse häälestamine"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "%PRODUCTNAME-i arvutustabeli või Microsoft Excel'i töölehe valimiseks klõpsa 'Lehitse'.\n%PRODUCTNAME avab selle faili kirjutuskaitstuna."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3298,118 +3067,96 @@ msgid  "Socket"
 msgstr "Pesa"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
 msgid  "Refresh"
 msgstr "Värskenda"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~View Design"
 msgstr "Uue vaate kujundus"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Uue tabeli kujundus"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Päringu loomise nõustaja..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Uus päring (koostamisvaates)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "~Edit Query"
 msgstr "Redigeeri päringut"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Uus päring (SQL-vaates)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Redigeeri..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
 msgid  "Column ~Width..."
 msgstr "Veeru laius..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Aruande loomise nõustaja..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Vormi loomise nõustaja..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "Süsteem"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
-#, fuzzy
 msgid  "Error during creation"
 msgstr "Loomisel tekkis viga"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Tekkis ootamatu viga. Operatsiooni ei suudetud teostada."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Dokumendi \"$file$\" avamine ei õnnestunud."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
-#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "Tabelit ei saa kustutada, kuna andmebaasi ühendus ei toeta seda."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "Kõik"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
-#, fuzzy
 msgid  "Undo:"
 msgstr "Võta tagasi:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
-#, fuzzy
 msgid  "Redo:"
 msgstr "Tee uuesti:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
-#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Veerule '#1' ei leitud vastavat veerutüüpi."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Faili \"$file$\" pole olemas."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "Andmeallikaga ühendumisel anti hoiatusi. Nende vaatamiseks klõpsa nupul \"$buttontext$\"."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Nimi '$#$' on juba olemas.\nPalun sisesta mõni teine nimi."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 #, fuzzy
@@ -3427,8 +3174,9 @@ msgid  "Type formatting"
 msgstr "Tüübi vorming"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+#, fuzzy
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Need väljad on juba seatud primaarvõtmeteks:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 #, fuzzy
@@ -3491,12 +3239,14 @@ msgid  "Primary Key"
 msgstr "Primaarvõti"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+#, fuzzy
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Lähtetabel: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+#, fuzzy
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Sihttabel: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 #, fuzzy
@@ -3577,389 +3327,314 @@ msgid  "Please change the table name. It is too long."
 msgstr ""
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Sätted"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Tüüp"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
-#, fuzzy
 msgid  "Inner join"
 msgstr "Sisemine ühendus"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
-#, fuzzy
 msgid  "Left join"
 msgstr "Vasak ühendus"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
-#, fuzzy
 msgid  "Right join"
 msgstr "Parem ühendus"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
-#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Täielik (väline) ühendus"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
-#, fuzzy
 msgid  "Cross join"
 msgstr "Ristühendus"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
-#, fuzzy
 msgid  "Natural"
 msgstr "Loomulik"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
-#, fuzzy
 msgid  "Tables involved"
 msgstr "Asjassepuutuvad tabelid"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Fields involved"
 msgstr "Asjassepuutuvad väljad"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
-#, fuzzy
 msgid  "Join Properties"
 msgstr "Ühenduse omadused"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
-#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "Pane tähele, et mõned andmebaasid ei pruugi seda ühenduse tüüpi toetada."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
-#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "Sisaldab ainult neid kirjeid, mille korral mõlemate tabelite vastavate väljade väärtused on samasugused."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "Sisaldab KÕIKI kirjeid tabelist '%1', aga tabelist '%2' ainult neid kirjeid, kus vastavate väljade väärtused kattuvad."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Sisaldab KÕIKI kirjeid tabelitest '%1' ja '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
-#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Sisaldab tabelite '%1' ja '%2' KÕIKIDE kirjete otsekorrutist."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "Sisaldab tabelites '%1' ja '%2' iga sama nimega veergude paari kohta ainult üht veergu."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
-#, fuzzy
 msgid  "Add Table Window"
 msgstr "Lisa tabeliaken"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
-#, fuzzy
 msgid  "Move table window"
 msgstr "Teisalda tabeliaken"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
-#, fuzzy
 msgid  "Insert Join"
 msgstr "Lisa ühendus"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
-#, fuzzy
 msgid  "Delete Join"
 msgstr "Kustuta ühendus"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
-#, fuzzy
 msgid  "Resize table window"
 msgstr "Muuda tabeliakna suurust"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Kustuta veerg"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "Liiguta veergu"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "Lisa veerg"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Vigane avaldis, tabelit '$name$' pole olemas."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Vigane avaldis, välja '$name$' pole olemas."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
-#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Päring katab #num# tabelit. Paraku saab valitud andmebaasitüübis ühe käsulausega korraga töödelda vaid #maxnum# tabelit."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
-#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Kustuta tabeliaken"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Redigeeri veeru kirjeldust"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "Reguleeri veeru laiust"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
-#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(sortimata);kasvavalt;kahanevalt"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
-#, fuzzy
 msgid  "(no function);Group"
 msgstr "(funktsioon puudub);rühmitamine"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
-#, fuzzy
 msgid  "(no table)"
 msgstr "(tabel puudub)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
-#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "Andmebaas toetab ainult nähtavate väljade sortimist."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Funktsioonid"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
-#, fuzzy
 msgid  "Table Name"
 msgstr "Tabeli nimi"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
-#, fuzzy
 msgid  "Alias"
 msgstr "Alias"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
-#, fuzzy
 msgid  "Distinct Values"
 msgstr "Erinevad väärtused"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
-#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
-#, fuzzy
 msgid  "There are too many columns."
 msgstr "Liiga palju veerge."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Tingimust [*] ei saa väljale rakendada"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
-#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "Loodud SQL lause on liiga pikk."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
-#, fuzzy
 msgid  "Query is too complex"
 msgstr "Päring on liiga keeruline"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
-#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Midagi pole valitud."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
-#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Liiga palju otsimiskriteeriume"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
-#, fuzzy
 msgid  "SQL syntax error"
 msgstr "SQL süntaksi viga"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] ei saa kasutada otsimiskriteeriumina."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
-#, fuzzy
 msgid  "There are too many tables."
 msgstr "Liiga palju tabeleid."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
-#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Lauset ei rakendata, kui tehakse SQL dialektis päring."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
-#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Välja nime ei leitud või pole see unikaalne"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
-#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Ühendust ei suudetud töödelda"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Süntaksiviga SQL-lauses"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support table views."
 msgstr "See andmebaas ei toeta tabelivaateid."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "See andmebaas ei toeta olemasolevate tabelivaadete muutmist."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
-#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Kas sa soovid selle asemel päringut luua?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created."
 msgstr "Päringut ei suudetud luua."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Päringut ei suudetud luua, kuna ühtegi välja polnud valitud."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
-#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "Vastav andmeallikas on kustutatud. Seetõttu ei saa selle andmeallikaga seotud infot salvestada."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Veerg nimega '$name$' on tundmatu."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
-#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Veerge saab võrrelda ainult kasutades '='."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
-#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Enne 'LIKE' pead kasutama veeru nime."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
-#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "Veergu ei leitud. Pane tähele, et andmebaas on tõstutundlik."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - %PRODUCTNAME Base: Päringu kujundus"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME Base: Vaate kujundus"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ on muudetud.\nKas soovid muudatused salvestada?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ põhineb SQL-käsul, mida ei suudetud parsida."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ avatakse SQL-vaates."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
-#, fuzzy
 msgid  "The table view"
 msgstr "Tabelivaade"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
-#, fuzzy
 msgid  "The query"
 msgstr "Päring"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
-#, fuzzy
 msgid  "The SQL statement"
 msgstr "SQL-lause"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
-#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "See päring ei loo tulemuste hulka ning ei saa seetõttu olla teise päringu osaks."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
-#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Mõlemad parameetrid ActiveConnection ja DataSourceName puuduvad või on vigased - päringu koostajat ei ole võimalik initsialiseerida."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
-#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "See relatsioon on juba olemas. Kas soovid seda redigeerida või luua uue relatsiooni?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Redigeeri..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Loo..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Base: Relatsiooni koostamine"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Andmebaas ei toeta relatsioone."
 
@@ -3968,41 +3643,34 @@ msgid  "The relation design has been changed.\\nDo you want to save the changes?
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
-#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Tabeli kustutamisel kustutatakse ka kõik vastavad relatsioonid. Kas sa soovid jätkata?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Andmebaas ei suutnud relatsiooni luua. Võib-olla pole seda tüüpi tabeli puhul välised võtmed toetatud.\nPalun uuri oma andmebaasi dokumentatsiooni."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
-#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Lisa/eemalda primaarvõti"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Jah"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Ei"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "Kasvav järjestus"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "Kahanev järjestus"
 
@@ -4011,27 +3679,22 @@ msgid  "<none>"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Välja nimi"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Field Name"
 msgstr "Välja nimi"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field ~type"
 msgstr "Välja tüüp"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field Type"
 msgstr "Välja tüüp"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
-#, fuzzy
 msgid  "Field length"
 msgstr "Välja pikkus"
 
@@ -4155,12 +3818,14 @@ msgid  "Format example"
 msgstr "Vormingu näide"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Vali uute kirjete vaikeväärtus.\nKui sa ei soovi väljale vaikeväärtust, siis ära sisesta midagi."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+#, fuzzy
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Sisesta selle välja vaikeväärtus.\n\nHiljem andmeid tabelisse sisestades kasutatakse seda väärtust iga uue kirje vastaval väljal. Seetõttu peaks see olema valitud vastavalt välja vormingule."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 #, fuzzy
@@ -4178,8 +3843,9 @@ msgid  "Enter the number format."
 msgstr "Sisesta arvu vorming."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+#, fuzzy
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Määra selle välja andmete suurus.\n\nReaalarvu korral maksimaalne arvu suurus, binaarväljade korral andmebloki suurus.\nVäärtust korrigeeritakse juhul, kui väärtus ületab andmebaasi piire."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 #, fuzzy
@@ -4197,8 +3863,9 @@ msgid  "This is where you determine the output format of the data."
 msgstr "Siin saad määrata väljundandmete vormingu."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Vali, kas see väli peaks sisaldama automaatselt suurenevaid väärtusi.\n\nSa ei saa seda tüüpi väljadesse ise andmeid sisestada. Igale uuele kirjele antakse automaatselt uus väärtus (eelmise kirje väärtuse suurendamise tulemusena)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
@@ -4262,8 +3929,9 @@ msgid  "No primary key"
 msgstr "Primaarvõtit pole"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "Kirje tuvastamiseks andmebaasis on vaja unikaalset indeksit või primaarvõtit.\nSa saad andmeid alles siis andmebaasi sisestada, kui üks nendest tingimustest on täidetud.\n\nKas sa soovid kohe primaarvõtit luua?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 #, fuzzy
@@ -4296,12 +3964,14 @@ msgid  "A~uto-increment statement"
 msgstr "A~utomaatselt kasvamise lause"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Sisesta automaatselt kasvava välja SQL käsk.\n\nTabeli loomisel lisatakse see käsk automaatselt andmebaasi."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Andmebaasist ei saadud tüübiinfot kätte.\nSelle andmeallika jaoks pole tabeli koostamisrežiim saadaval."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 #, fuzzy
@@ -4324,52 +3994,42 @@ msgid  "change field attribute"
 msgstr "muuda välja atribuuti"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "Parool jäetakse meelde seansi lõpuni"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "Parool jäetakse meelde"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Sihtandmebaas ei toeta vaateid."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Sihtandmebaas ei toeta primaarvõtmeid."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
-#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "andmetele juurdepääsu kirjeldust ei leitud või ei suuda ükski kirjeldus pakkuda kogu vajalikku teavet"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
-#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Praegu on toetatud ainult tabelid ja päringud."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
-#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Koopia allika tulemuste hulk peab toetama järjehoidjaid."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Toetamata lähteveeru tüüp ($type$) veeru asukohas $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
-#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Lähtestamisparameetrite lubamatu arv."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
-#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Lähtestamisel tekkis viga."
 

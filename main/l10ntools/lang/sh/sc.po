@@ -145,7 +145,7 @@ msgstr "Polja kolone"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "Red\nPolja"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2269,7 +2269,7 @@ msgstr "~Odbaci"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "Obrisati\nunos\n#?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2713,7 +2713,7 @@ msgstr "Sakrij ~sve"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "Zaštita ćelija je uspešna samo ako je trenutni list već zaštićen. \n\nIzaberite „Zaštiti dokument“ iz menija „Alatke“ i naznačite „List“."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3233,7 +3233,7 @@ msgstr "Nema operacija za izvršavanje"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "Opseg ne sadrži zaglavlja kolone.\nŽelite li da prva linija bude korišćena kao zaglavlje kolone?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3297,7 +3297,7 @@ msgstr "Fraza nije pronađena."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "Uspešno traženje cilja.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3309,11 +3309,11 @@ msgstr ") u trenutnu ćeliju?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "Neuspešno traženje cilja.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "Nije pronađena identična vrednost. \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3781,7 +3781,7 @@ msgstr "Višestruke operacije"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Uneli ste neispravno ime.\nAutoformatiranje nije napravljeno. \nPokušajte ponovo sa drugim imenom."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 msgid  "Range"
@@ -3813,7 +3813,7 @@ msgstr "Štampaj"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "Primena autoformatiranja,\nzahteva tabelu\nod najmanje 3x3 ćelije."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 msgid  "(nested)"
@@ -3913,7 +3913,7 @@ msgstr "Izveštaj1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "nije dostupno za proveru pisanja\nAko je potrebno, proverite instalaciju \ni instalirajte željeni jezik"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 msgid  "Thesaurus can only be used in text cells!"
@@ -3925,7 +3925,7 @@ msgstr "Nastaviti s proverom pisanja od početka trenutnog lista?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "nije dostupno za sinonime.\nAko je potrebno, proverite instalaciju\ni instalirajte željeni jezik"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 msgid  "The spellcheck of this sheet has been completed."
@@ -4197,11 +4197,11 @@ msgstr "dana"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "Ova datoteka sadrži veze ka drugim datotekama.\nOsvežiti ih?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "Ova datoteka sadrži upite. Rezultati ovih upita nisu sačuvani.\nŽelite li da ponovite ove upite?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 msgid  "Too many conditions"
@@ -4209,7 +4209,7 @@ msgstr "Previše uslova"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "Popunjene ćelije se ne mogu\npomeriti izvan lista."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 msgid  "The table could not be inserted."
@@ -4229,7 +4229,7 @@ msgstr "Nema dovoljno mesta na listu da bi se ovde umetnulo."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "Sadržaj spiska isečaka veći je od izabranog opsega.\nDa li ipak želite da ga umetnete?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 msgid  "No references found."
@@ -4273,7 +4273,7 @@ msgstr "Uporedi #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "Premašen je maksimalni broj neispravnih ćelija.\nNisu označene sve neispravne ćelije."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 msgid  "Delete contents"
@@ -4377,7 +4377,7 @@ msgstr "Napusti snimanje"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Ovim napuštate izmenu režima snimanja.\nSve izmene će biti izgubljene.\n\nSigurno napuštate?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 msgid  "The document can not be closed while a link is being updated."
@@ -4393,7 +4393,7 @@ msgstr "Formula za potez  %1 R x %2 K"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "Ovaj dokument sadrži pozive makro funcija.\nŽelite li da ih pokrenete?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 msgid  "Hangul/Hanja Conversion"
@@ -4497,31 +4497,31 @@ msgstr "Tablica je ažurirana izmenama koje su sačuvali drugi korisnici."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Tablica mora biti sačuvana radi aktiviranja režima deljenja.\n\nŽelite li da nastavite?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Već razrešeni sukobi pri objedinjavanju će biti izgubljeni, a izmene koje ste načinili neće biti sačuvane.\n\nŽelite li da nastavite?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Isključivanje režima deljenja onemogućuje druge korisnike da objedine izmene koje su načinili.\n\nŽelite li da nastavite?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "Ova tablica više nije u režimu deljenja.\n\nSačuvajte izmene koje ste načinili u zasebnu datoteku i ručno ih objedinite."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "Tablica je u deljenom režimu. Ovaj režim omogućava da više korisnika istovremeno uređuje tablicu.\n\nPromene u parametrima formatiranja, poput fonta, boja i formata zapisa brojeva neće biti sačuvani, a neka funkcionalnost poput izmene grafika i crteža neće biti moguća u deljenom režimu. Isključite deljeni režim da povratite neopoziva prava pristupa koja su neophodna za ove promene i funkcionalnost."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "Deljena tablica je zaključana pošto korisnik „%1“ objedinjuje svoje izmene.\n\nRežim deljenja zaključane datoteke nije moguće isključiti. Pokušajte ponovo kasnije."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "Deljena tabela je zaključana pošto korisnik „%1“ objedinjuje svoje izmene.\n\nPokušajte ponovo kasnije da biste sačuvali izmene."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 msgid  "Unknown User"
@@ -4685,7 +4685,7 @@ msgstr "Obriši autoformatiranje"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "Želite li da obrišete autoformatiranje #?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
 msgid  "~Close"
@@ -11493,7 +11493,7 @@ msgstr "Parametri fonta"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "Imate veliku količinu podataka u spisku isečaka.\nŽelite li da sadržaj spiska isečaka bude dostupan drugim programima?"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -11561,7 +11561,7 @@ msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME Račun je u unetoj formuli pronašao grešku.\nPrihvatate li ispravku koja je predložena?\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -11605,7 +11605,7 @@ msgstr "Štampaj sam~o izabrane listove"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "Umećete podatke u ćelije koje već sadrže podatke.\nŽelite li da prepišete postojeće podatke?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"

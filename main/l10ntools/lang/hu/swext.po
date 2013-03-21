@@ -141,7 +141,7 @@ msgstr "Szegélyek"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "A szegélyre és a háttérre vonatkozó egyedi táblázatstílustól függetlenül a táblázat mindig „<emph>prettytable</emph>”-ként exportálódik, amelyet a wiki megjelenítőmotorja egyszerű szegélyekkel és félkövér fejléccel jelenik meg."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>kiterjesztések;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">A @WIKIEXTENSIONPRODUCTNAME@ használatával az aktuális szöveges dokumentumot feltöltheti egy MediaWiki-kiszolgálóra. A feltöltés után minden wikifelhasználó olvashatja az Ön dokumentumát a wikin.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Válassza a <item type=\"menuitem\">Fájl - Küldés - MediaWikire</item> menüparancsot, ha az aktuális Writer-dokumentumot fel akarja tölteni egy MediaWiki-kiszolgálóra.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java-futtatókörnyezet 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "Wikifiók egy támogatott<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>-kiszolgálón"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "A @WIKIEXTENSIONPRODUCTNAME@ telepítése"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "A @WIKIEXTENSIONPRODUCTNAME@ kiterjesztés telepítése előtt gondoskodjon arról, hogy az %PRODUCTNAME Java-futtatókörnyezetet (JRE) használjon. A JRE állapotának ellenőrzéséhez nézze meg az <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Java</item> panelt. Ellenőrizze, hogy a „Java-futtatókörnyezet használata” négyzet be van-e jelölve, és hogy ki van-e választva egy Java-futtatókörnyezet a nagy listamezőben. Ha egyik JRE sincs aktiválva, akkor aktiváljon egy JRE 1.4-et vagy frissebbet, és indítsa újra az %PRODUCTNAME programot."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "A @WIKIEXTENSIONPRODUCTNAME@ telepítéséhez:"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Egy Writer-ablakban válassza az <item type=\"menuitem\">Eszközök - Kiterjesztéskezelő</item> menüparancsot."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "Zárja be az %PRODUCTNAME programot, és ha engedélyezve van, zárja be
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "Indítsa újra a szoftvert, nyisson meg egy szöveges dokumentumot, majd az <item type=\"menuitem\">Eszközök - Beállítások - Internet - MediaWiki</item> panelen írja be a wiki beállításait. Lásd alább: „Kapcsolódás egy wikihez”."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "A @WIKIEXTENSIONPRODUCTNAME@ eltávolításához:"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Egy Writer-ablakban válassza az <item type=\"menuitem\">Eszközök - Kiterjesztéskezelő</item> menüparancsot."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "Kapcsolódás egy wikihez"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "Megjegyzés: Az %PRODUCTNAME különböző párbeszédablakaiba beírt felhasználóneveket és jelszavakat mentheti. A jelszót a rendszer biztonságosan tárolja, olyan helyen, amelynek eléréséhez mesterjelszó szükséges. Engedélyezze a mesterjelszó használatát az <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item> panelen."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "Megjegyzés: Ha proxykiszolgáló használatával csatlakozik az internetre, adja meg a proxyadatokat az <item type=\"menuitem\">Eszközök - Beállítások - Internet - Proxy</item> panelen, majd indítsa újra a szoftvert."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "Nyisson meg egy Writer-dokumentumot, majd válassza az <item type=\"menuitem\">Eszközök - Beállítások - Internet - MediaWiki</item> lehetőséget."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "A <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Beállítások</link> párbeszédablakban kattintson a Hozzáadás gombra."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "A <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> párbeszédablakban adja meg a wikihez tartozó fiókadatait."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "A Jelszó mezőben adja meg a wikifiókjának jelszavát, majd kattintso
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "Opcionálisan engedélyezheti a „Jelszó mentése” lehetőséget is, hogy a munkamenetek között mentse a jelszót. A mentett jelszavak elérését a mesterjelszó védi. A mesterjelszó használatát engedélyezze az <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item> panelen. A „Jelszó mentése” lehetőség nem áll rendelkezésre, ha a mesterjelszó nincs engedélyezve."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "Nyisson meg egy Writer-dokumentumot."
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "Írja meg a wikioldal tartalmát. Használhat formázást, többek között szövegformázást, címsorokat, lábjegyzeteket. Lásd: <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">a támogatott formátumok listája</link>."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "Válasza a <item type=\"menuitem\">Fájl - Küldés - MediaWikire</item> menüparancsot."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "A <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Küldés MediaWikire</link> párbeszédablakban adja meg a bejegyzésének beállításait."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>MediaWiki-kiszolgáló</emph>: Válassza ki a wikit."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>Cím</emph>: Írja be az oldal címét. Ha egy meglévő oldal címét írja be, akkor az felülíródik az aktuális szöveges dokumentum tartalmával. Ha új címet ír be, akkor egy új oldal jön létre a wikin."
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>Összegzés</emph>: Írjon egy rövid összefoglalót az oldalról, de ez nem kötelező."
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>Ez egy kis módosítás</emph>: Ha a feltöltött dokumentum egy meglévő, ugyanilyen című oldal kis mértékű módosítása, jelölje be ezt a mezőt."
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>Megjelenítés a böngészőben</emph>: Ha bejelöli ezt a négyzetet, megnyílik a rendszer webböngészője, és megjeleníti a feltöltött wikioldalt."
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,27 +341,27 @@ msgstr "MediaWiki-beállítások"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "Új MediaWiki-kiszolgálókat vihet fel, illetve módosíthatja és törölheti azokat. A párbeszédablak az <item type=\"menuitem\">Eszközök- Beállítások - Internet - MediaWiki</item> panelen keresztül érhető el. A másik megoldás, hogy az <item type=\"menuitem\">Eszközök - Kiterjesztéskezelő</item> menüparancsot választja, majd a @WIKIEXTENSIONPRODUCTNAME@ elemnél a Beállítások gombra kattint."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">A Hozzáadás gombra kattintva új wikikiszolgálót vihet fel.<br/>Válasszon ki egy bejegyzést, és a fiókbeállítások módosításához kattintson a Szerkesztés gombra.<br/>Ha a bejegyzést törölni kívánja a listából, jelölje ki, majd kattintson az Eltávolítás gombra.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">A MediaWiki párbeszédablakot nyitja meg, ahol a listába új bejegyzést vihet fel.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">A MediaWiki párbeszédablakot nyitja meg, ahol szerkesztheti a kiválasztott bejegyzést.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Eltávolítja a kijelölt bejegyzést a listából.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "Ha a Hozzáadás vagy a Szerkesztés gombra kattint, a <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> párbeszédablak nyílik meg."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,19 +377,19 @@ msgstr "A MediaWiki párbeszédablak használatával hozhatja létre, illetve sz
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Írja be a MediaWiki-kiszolgáló URL-jét http:// előtaggal kezdve.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Adja meg a MediaWiki-kiszolgálón használt felhasználónevét. Anonim hozzáférés esetén hagyja üresen a mezőt.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Adja meg a MediaWiki-kiszolgálón használt jelszavát. Anonim hozzáférés esetén hagyja üresen a mezőt.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Engedélyezze, ha tárolni akarja a jelszavát a munkamenetek között. A mesterjelszónak engedélyezve kell lennie, lásd: <item type=\"menuitem\">Eszközök - Beállítások - %PRODUCTNAME - Biztonság</item>.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "A Küldés MediaWikire párbeszédablakban adja meg az aktuális wikifel
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Válassza ki a MediaWiki-kiszolgálót, ahol publikálni szeretné a dokumentumot. Ha a listába új kiszolgálót szeretne felvinni, kattintson a Hozzáadás gombra.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Írja be a wikibejegyzés címét. Ez a wikibejegyzés fő címsora. Új bejegyzés esetén a címnek egyedinek kell lennie ezen a wikin. Ha létező címet ír be, a feltöltéssel felülírja a meglévő wikibejegyzést.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">Írja be az oldal rövid összefoglalását vagy egy megjegyzést.</ahelp> Lásd: <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Ez egy kis módosítás</emph>: <ahelp hid=\".\">Ha a feltöltött dokumentum egy meglévő, ugyanilyen című oldal kis mértékű módosítása, jelölje be ezt a négyzetet.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Megjelenítés a böngészőben</emph>: <ahelp hid=\".\">Ha bejelöli ezt a négyzetet, megnyílik a rendszer webböngészője, és megjeleníti a feltöltött wikioldalt.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

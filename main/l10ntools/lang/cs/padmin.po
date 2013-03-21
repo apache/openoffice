@@ -61,7 +61,7 @@ msgstr "Přidat písma"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "Opravdu chcete přepsat tento soubor s písmem?\n%s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "Žádné"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Doplňující soubor (s příponou .afm) nebyl nalezen pro font\n%s\n,a proto tento font nemůže být nainstalován. Doplňující soubory můžete vytvořit například pomocí aplikace ghostscript. Tyto soubory musí být umístěny ve stejném adresáři jako soubory fontu nebo v jeho podadresáři afm."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Soubor s metrikami pro soubor s písmem\n   %s\nnemohl být zkopírován. Font nebude nainstalován."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Soubor s písmem\n   %s\nnemohl být zkopírován. Font nebude nainstalován."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -177,7 +177,7 @@ msgstr "Testovací stránka byla úspěšně vytištěna. Zkontrolujte, prosím,
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
-msgstr ""
+msgstr "Nelze nainstalovat žádnou tiskárnu, souborový systém je pouze pro čtení.\nKontaktuje svého administrátora."
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -289,7 +289,7 @@ msgstr "Tento soubor neobsahuje metriku."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "Metrika\n\n%s\n\nnemohla být převedena z následujícího důvodu:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "Ovladač \"%s\" je vždy třeba. Nelze jej proto odstranit."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "Ovladač \"%s1\" nelze odstranit. Nelze odstranit soubor\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

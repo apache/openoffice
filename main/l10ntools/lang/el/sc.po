@@ -137,36 +137,30 @@ msgid  "Pivot Table"
 msgstr "Πιλότος δεδομένων"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_PAGE.FixedText.Text
-#, fuzzy
 msgid  "Page Fields"
 msgstr "Πεδία σελίδας"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column Fields"
 msgstr "Πεδία στήλης"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "Γραμμή\nΠεδία"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
-#, fuzzy
 msgid  "Data Fields"
 msgstr "Πεδία δεδομένων"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.STR_SELECT.String.Text
-#, fuzzy
 msgid  "Selection area"
 msgstr "Περιοχή επιλογής"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Drag the fields from the right into the desired position."
 msgstr "Μεταφέρετε με το ποντίκι τα πεδία από τα δεξιά στην επιθυμητή θέση."
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FL_LAYOUT.FixedLine.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "Διάταξη"
 
@@ -296,107 +290,86 @@ msgid  "VarP - "
 msgstr "VarP - "
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.BTN_SELECTION.RadioButton.Text
-#, fuzzy
 msgid  "~Current selection"
 msgstr "~Τρέχουσα επιλογή"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.BTN_DATABASE.RadioButton.Text
-#, fuzzy
 msgid  "~Data source registered in %PRODUCTNAME"
 msgstr "Καταχωρημένη ~προέλευση δεδομένων του %PRODUCTNAME"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.BTN_EXTERNAL.RadioButton.Text
-#, fuzzy
 msgid  "~External source/interface"
 msgstr "Ε~ξωτερική προέλευση/διεπαφή"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FL_FRAME.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Επιλογή"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FixedLine.Text
-#, fuzzy
 msgid  "Select Source"
 msgstr "Επιλογή προέλευσης"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_SERVICE.FixedText.Text
-#, fuzzy
 msgid  "~Service"
 msgstr "~Υπηρεσία"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_SOURCE.FixedText.Text
-#, fuzzy
 msgid  "So~urce"
 msgstr "Π~ροέλευση"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "Ό~νομα"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_USER.FixedText.Text
-#, fuzzy
 msgid  "Us~er"
 msgstr "~Χρήστης"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FT_PASSWD.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "Κω~δικός πρόσβασης"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FL_FRAME.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Επιλογή"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FixedLine.Text
-#, fuzzy
 msgid  "External Source"
 msgstr "Εξωτερική προέλευση"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FT_DATABASE.FixedText.Text
-#, fuzzy
 msgid  "~Database"
 msgstr "~Βάση δεδομένων"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FT_OBJECT.FixedText.Text
-#, fuzzy
 msgid  "Data so~urce"
 msgstr "Προέλευση ~δεδομένων"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FT_OBJTYPE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Τύπος"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Sheet"
 msgstr "Φύλλο"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Query"
 msgstr "Ερώτημα"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.LB_OBJTYPE.Default.StringList.item
-#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql [Native]"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FL_FRAME.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Επιλογή"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPIDATA.FixedLine.Text
-#, fuzzy
 msgid  "Select Data Source"
 msgstr "Επιλογή προέλευσης δεδομένων"
 
@@ -431,217 +404,174 @@ msgid  "Detect special numbers (such as dates)."
 msgstr "Εντοπισμός ειδικών αριθμών (όπως ημερομηνίες)."
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.ModelessDialog.Text
-#, fuzzy
 msgid  "Consolidate"
 msgstr "Ενοποίηση"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Sum"
 msgstr "Άθροισμα"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Count"
 msgstr "Καταμέτρηση"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Average"
 msgstr "Μέση τιμή"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Max"
 msgstr "Μέγιστο"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Min"
 msgstr "Ελάχιστο"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Product"
 msgstr "Γινόμενο"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Count (numbers only)"
 msgstr "Καταμέτρηση (μόνο αριθμοί)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "StDev (sample)"
 msgstr "StDev (Δείγμα)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "StDevP (population)"
 msgstr "StDevP (πληθυσμός) "
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "Var (sample)"
 msgstr "Var (δείγμα)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
-#, fuzzy
 msgid  "VarP (population)"
 msgstr "VarP (πληθυσμός) "
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.RB_DATA_AREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.RB_DEST_AREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_FUNC.FixedText.Text
-#, fuzzy
 msgid  "~Function"
 msgstr "~Λειτουργία"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_CONSAREAS.FixedText.Text
-#, fuzzy
 msgid  "~Consolidation ranges"
 msgstr "Πε~ριοχές ενοποίησης"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_DATA_AREA.FixedText.Text
-#, fuzzy
 msgid  "~Source data range"
 msgstr "Περιοχή π~ροέλευσης δεδομένων"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_DEST_AREA.FixedText.Text
-#, fuzzy
 msgid  "Copy results ~to"
 msgstr "Αντιγραφή αποτελεσμάτων ~σε"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_BYROW.CheckBox.Text
-#, fuzzy
 msgid  "~Row labels"
 msgstr "~Ετικέτες γραμμών"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_BYCOL.CheckBox.Text
-#, fuzzy
 msgid  "C~olumn labels"
 msgstr "Ε~τικέτες στηλών"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FL_CONSBY.FixedLine.Text
-#, fuzzy
 msgid  "Consolidate by"
 msgstr "Ενοποίηση ως προς"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Επιλογές"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_REFS.CheckBox.Text
-#, fuzzy
 msgid  "~Link to source data"
 msgstr "~Σύνδεση σε δεδομένα προέλευσης"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Διαγραφή"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "Προσ~θήκη"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_START.FixedLine.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Έναρξη"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Automatically"
 msgstr "Α~υτόματα"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Manually at"
 msgstr "~Χειροκίνητα σε"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_END.FixedLine.Text
-#, fuzzy
 msgid  "End"
 msgstr "Τέλος"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
-#, fuzzy
 msgid  "A~utomatically"
 msgstr "Αυ~τόματα"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
-#, fuzzy
 msgid  "Ma~nually at"
 msgstr "Χει~ροκίνητα σε"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_BY.FixedLine.Text
-#, fuzzy
 msgid  "~Group by"
 msgstr "Ο~μαδοποίηση κατά"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
-#, fuzzy
 msgid  "Grouping"
 msgstr "Ομαδοποίηση"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Έναρξη"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_AUTOSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Automatically"
 msgstr "Α~υτόματα"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_MANSTART.RadioButton.Text
-#, fuzzy
 msgid  "~Manually at"
 msgstr "~Χειροκίνητα σε"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_END.FixedLine.Text
-#, fuzzy
 msgid  "End"
 msgstr "Τέλος"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_AUTOEND.RadioButton.Text
-#, fuzzy
 msgid  "A~utomatically"
 msgstr "Α~υτόματα"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_MANEND.RadioButton.Text
-#, fuzzy
 msgid  "Ma~nually at"
 msgstr "~Χειροκίνητα σε"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_BY.FixedLine.Text
-#, fuzzy
 msgid  "Group by"
 msgstr "Ομαδοποίηση κατά"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_NUMDAYS.RadioButton.Text
-#, fuzzy
 msgid  "Number of ~days"
 msgstr "Αριθμός η~μερών"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_UNITS.RadioButton.Text
-#, fuzzy
 msgid  "~Intervals"
 msgstr "Δ~ιαστήματα"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.HelpButton.Text
-#, fuzzy
 msgid  "Grouping"
 msgstr "Ομαδοποίηση"
 
@@ -1166,107 +1096,86 @@ msgid  "Show Detail"
 msgstr "Εμφάνιση λεπτομερειών"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.ModalDialog.Text
-#, fuzzy
 msgid  "Text Import"
 msgstr "Εισαγωγή κειμένου"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "Εισαγωγή"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
-#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "Σύ~νολο χαρακτήρων"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CUSTOMLANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "Γλώσσα"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
-#, fuzzy
 msgid  "From ro~w"
 msgstr "Από γραμ~μή"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
-#, fuzzy
 msgid  "Separator options"
 msgstr "Επιλογές διαχωριστικού"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
-#, fuzzy
 msgid  "~Fixed width"
 msgstr "Στα~θερού πλάτους"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
-#, fuzzy
 msgid  "~Separated by"
 msgstr "Διαχωρι~ζόμενα με"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
-#, fuzzy
 msgid  "~Tab"
 msgstr "Στηλο~θέτης"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
-#, fuzzy
 msgid  "~Comma"
 msgstr "~Κόμμα"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
-#, fuzzy
 msgid  "~Other"
 msgstr "Άλ~λα"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
-#, fuzzy
 msgid  "S~emicolon"
 msgstr "Ά~νω τελεία"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "S~pace"
 msgstr "~Διάστημα"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
-#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "Συγ~χώνευση διαχωριστικών"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
-#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "Διαχωριστικό ~κειμένου"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_OTHER_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Other options"
 msgstr "Άλλες επιλογές"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_QUOTED_AS_TEXT.CheckBox.Text
-#, fuzzy
 msgid  "~Quoted field as text"
 msgstr "Πε~δίο σε παράθεση ως κείμενο"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_DETECT_SPECIAL_NUMBER.CheckBox.Text
-#, fuzzy
 msgid  "Detect special numbers"
 msgstr "Εντοπισμός ειδικών αριθμών"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_WIDTH.FixedLine.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "Πεδία"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Column t~ype"
 msgstr "Τύπος σ~τήλης"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.STR_TEXTTOCOLUMNS.String.Text
-#, fuzzy
 msgid  "Text to Columns"
 msgstr "Κείμενο σε στήλες"
 
@@ -1346,1327 +1255,1062 @@ msgid  "Settings"
 msgstr "Ρυθμίσεις"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of sheets:"
 msgstr "Αριθμός φύλλων:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of cells:"
 msgstr "Αριθμός κελιών:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
-#, fuzzy
 msgid  "Number of pages:"
 msgstr "Αριθμός σελίδων:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Document: "
 msgstr "Έγγραφο:"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Προεπιλογή"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
-#, fuzzy
 msgid  "~Style"
 msgstr "~Πρότυπο"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "~Superscript"
 msgstr "Εκθέτ~ης"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
-#, fuzzy
 msgid  "S~ubscript"
 msgstr "Δείκ~της"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "~Στοίχιση"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "Α~ριστερά"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "Δε~ξιά"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "Στο ~κέντρο"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
-#, fuzzy
 msgid  "~Justified"
 msgstr "~Πλήρης στοίχιση"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "Διάστι~χο γραμμής"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "~Υπερσύνδεση..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "~Αφαίρεση υπερσύνδεσης"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "~Κείμενο..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
-#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "Ανά~θεση μακροεντολής..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "Αρχικό μέ~γεθος"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Όνομα..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Περιγραφή..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "Αναστρο~φή"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "Κατακόρυ~φα"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "Ορι~ζόντια"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "Τα~κτοποίηση"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Μ~εταφορά εμπρός"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Μετα~φορά πίσω"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "Αγ~κύρωση"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "Σε ~σελίδα"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "Σε ~κελί"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "~Στοίχιση"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "Γραμμή σχεδίασης αντικειμένων"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Text Object Bar"
 msgstr "Γραμμή αντικειμένων κειμένου"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "Γραμμή γραφικών αντικειμένων"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
-#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "Αναδυόμενο μενού για αντικείμενα σχεδίασης"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
-#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "Αναδυόμενο μενού για αντικείμενα κειμένου"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Όνομα..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Περιγραφή..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "Τα~κτοποίηση"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Μ~εταφορά εμπρός"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Μετα~φορά πίσω"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
-#, fuzzy
 msgid  "An~chor"
 msgstr "Αγ~κύρωση"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "To P~age"
 msgstr "Σε ~σελίδα"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
-#, fuzzy
 msgid  "To ~Cell"
 msgstr "Σε ~κελί"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "~Στοίχιση"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
-#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "Αναδυόμενο μενού για αντικείμενα φόρμας"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Last Used"
 msgstr "Πρόσφατες"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "All"
 msgstr "Όλες"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Database"
 msgstr "Βάσης δεδομένων"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Date&Time"
 msgstr "Ώρα & Ημερομηνία"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Financial"
 msgstr "Οικονομική"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Information"
 msgstr "Πληροφοριακή"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Logical"
 msgstr "Λογική"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Mathematical"
 msgstr "Μαθηματική"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Array"
 msgstr "Πίνακα"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Statistical"
 msgstr "Στατιστική"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Λογιστικού φύλλου"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "Κειμένου"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
-#, fuzzy
 msgid  "Add-in"
 msgstr "Πρόσθετες"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "Εισαγωγή συνάρτησης σε υπολογιστικό φύλλο"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Συνάρτηση"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
-#, fuzzy
 msgid  "Range"
 msgstr "Περιοχή"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Ελαχιστοποίηση/Μεγιστοποίηση"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
-#, fuzzy
 msgid  "Column inserted"
 msgstr "Έγινε εισαγωγή της στήλης"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
-#, fuzzy
 msgid  "Row inserted "
 msgstr "Έγινε εισαγωγή της γραμμής"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
-#, fuzzy
 msgid  "Sheet inserted "
 msgstr "Έγινε εισαγωγή του φύλλου"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
-#, fuzzy
 msgid  "Column deleted"
 msgstr "Η στήλη έχει διαγραφεί"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
-#, fuzzy
 msgid  "Row deleted"
 msgstr "Η γραμμή έχει διαγραφεί"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
-#, fuzzy
 msgid  "Sheet deleted"
 msgstr "Τα φύλλα έχουν διαγραφεί"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
-#, fuzzy
 msgid  "Range moved"
 msgstr "Η περιοχή επιλογής μετακινήθηκε"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "Τροποποιημένα περιεχόμενα"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
-#, fuzzy
 msgid  "Changed contents"
 msgstr "Τροποποιημένα περιεχόμενα"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
-#, fuzzy
 msgid  "Changed to "
 msgstr "Αλλαγή προς "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
-#, fuzzy
 msgid  "Original"
 msgstr "Αρχικό"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
-#, fuzzy
 msgid  "Changes rejected"
 msgstr "Αλλαγές απορρίφθηκαν"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
-#, fuzzy
 msgid  "Accepted"
 msgstr "Αποδεχόμενα"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
-#, fuzzy
 msgid  "Rejected"
 msgstr "Απορριπτόμενα"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
-#, fuzzy
 msgid  "No Entry"
 msgstr "Καμία καταχώριση"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
-#, fuzzy
 msgid  "<empty>"
 msgstr "<κενό>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
-#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "Αποδοχή η απόρριψη αλλαγών"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Comment..."
 msgstr "Επεξεργασία σχολίου..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
-#, fuzzy
 msgid  "Action"
 msgstr "Ενέργεια"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Θέση"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "Author"
 msgstr "Συντάκτης"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Περιγραφή"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
-#, fuzzy
 msgid  "Sorting"
 msgstr "Ταξινόμηση"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
-#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "Επίλυση συγκρούσεων"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
-#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "Υπάρχουν συγκρουόμενες αλλαγές σε αυτό το κοινόχρηστο υπολογιστικό φύλλο. Θα πρέπει επιλυθούν οι συγκρούσεις πριν αποθηκευθεί το έγγραφο. Διατηρήστε είτε τις δικές σας αλλαγές ή των άλλων."
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "Διατήρηση των ~δικών μου"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
-#, fuzzy
 msgid  "Keep ~Other"
 msgstr "Διατήρηση των ά~λλων"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
-#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "~Διατήρηση όλων των δικών μου"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
-#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "Διατήρηση ό~λων των άλλων"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
-#, fuzzy
 msgid  "Conflict"
 msgstr "Σύγκρουση"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
-#, fuzzy
 msgid  "Author"
 msgstr "Συντάκτης"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "Άγνωστος χρήστης"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.ModalDialog.Text
-#, fuzzy
 msgid  "Re-type Password"
 msgstr "Πληκτρολογήστε ξανά τον κωδικό"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "The document you are about to export has one or more protected items with password that cannot be exported.  Please re-type your password to be able to export your document."
 msgstr "Το έγγραφο που θέλετε να εξάγετε έχει ένα ή περισσότερα αντικείμενα που είναι προστατευμένα με κωδικό τα οποία δεν μπορούν να εξαχθούν. Παρακαλώ πληκτρολογήστε ξανά τον κωδικό σας για να μπορέσετε να εξάγετε το έγγραφο."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_DOCUMENT.FixedLine.Text
-#, fuzzy
 msgid  "Document protection"
 msgstr "Προστασία εγγράφου"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Άγνωστη κατάσταση"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Πληκτρολογήστε ξανά"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
-#, fuzzy
 msgid  "Sheet protection"
 msgstr "Προστασία φύλλου"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME1.FixedText.Text
-#, fuzzy
 msgid  "Sheet1 has a really long name"
 msgstr "Το Φύλλο1 έχει πολύ μεγάλο όνομα"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS1.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Άγνωστη κατάσταση"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Πληκτρολογήστε ξανά"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
-#, fuzzy
 msgid  "Sheet2"
 msgstr "Φύλλο2"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS2.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Άγνωστη κατάσταση"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET2.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Πληκτρολογήστε ξανά"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
-#, fuzzy
 msgid  "Sheet3"
 msgstr "Φύλλο3"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS3.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Άγνωστη κατάσταση"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET3.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Πληκτρολογήστε ξανά"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
-#, fuzzy
 msgid  "Sheet4"
 msgstr "Φύλλο4"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS4.FixedText.Text
-#, fuzzy
 msgid  "Status unknown"
 msgstr "Άγνωστη κατάσταση"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET4.PushButton.Text
-#, fuzzy
 msgid  "Re-type"
 msgstr "Πληκτρολογήστε ξανά"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PROTECTED.String.Text
-#, fuzzy
 msgid  "Not protected"
 msgstr "Δεν προστατεύεται"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PASS_PROTECTED.String.Text
-#, fuzzy
 msgid  "Not password-protected"
 msgstr "Δεν προσατεύεται από κωδικό"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_BAD.String.Text
-#, fuzzy
 msgid  "Hash incompatible"
 msgstr "Hash μη συμβατό"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_GOOD.String.Text
-#, fuzzy
 msgid  "Hash compatible"
 msgstr "Hash συμβατό"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_REGENERATED.String.Text
-#, fuzzy
 msgid  "Hash re-generated"
 msgstr "Hash αναδημιουργημένο "
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.ModalDialog.Text
-#, fuzzy
 msgid  "Re-type Password"
 msgstr "Πληκτρολογήστε ξανά τον κωδικό"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_RETYPE_PASSWORD.RadioButton.Text
-#, fuzzy
 msgid  "Re-type password"
 msgstr "Πληκτρολογήστε ξανά τον κωδικό"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD1.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "Κω~δικός"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD2.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "Επι~βεβαίωση"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_MATCH_OLD_PASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "New password must match the original password."
 msgstr "Ο νέος κωδικός θα πρέπει να ταιριάζει με τον αρχικό κωδικό."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_REMOVE_PASSWORD.RadioButton.Text
-#, fuzzy
 msgid  "Remove password from this protected item."
 msgstr "Αφαιρέστεε τον κωδικό από αυτό το προστατευόμενο αντικείμενο."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
-#, fuzzy
 msgid  "Share Document"
 msgstr "Κοινή χρήση εγγράφου"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
-#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "Κοινή χρήση εγγράφου με άλλους χρήστες"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_WARNING.FixedText.Text
-#, fuzzy
 msgid  "Note: Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr "Σημείωση: Οι αλλαγές στις ιδιότητες μορφοποίησης όπως οι γραμματοσειρές, τα χρώματα, και οι μορφές αριθμών δεν θα αποθηκευτούν και δεν είναι διαθέσιμες σε κοινόχρηστη λειτουργία μερικές λειτουργίες όπως η επεξεργασία διαγραμμάτων και η σχεδίαση αντικειμένων. Απενεργοποιήστε την κοινόχρηστη λειτουργία για να έχετε αποκλειστική πρόσβαση για τις αλλαγές και λειτουργίες αυτές."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
-#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "Χρήστες που έχουν πρόσβαση σε αυτό το υπολογιστικό φύλλο"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Όνομα"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
-#, fuzzy
 msgid  "Accessed"
 msgstr "Προσπελάστηκαν"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
-#, fuzzy
 msgid  "No user data available."
 msgstr "Δεν υπάρχουν διαθέσιμα δεδομένα χρήστη."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "Άγνωστος χρήστης"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
-#, fuzzy
 msgid  "(exclusive access)"
 msgstr "(αποκλειστική πρόσβαση)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Insert Sheet"
 msgstr "Εισαγωγή φύλλου"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Θέση"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
-#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "Π~ριν από το ενεργό φύλλο"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
-#, fuzzy
 msgid  "~After current sheet"
 msgstr "Ύ~στερα από το ενεργό φύλλο"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
-#, fuzzy
 msgid  "Sheet"
 msgstr "Φύλλο"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
-#, fuzzy
 msgid  "~New sheet"
 msgstr "Δη~μιουργία"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "Αρι~θμός φύλλων"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "Na~me"
 msgstr "Όνο~μα"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
-#, fuzzy
 msgid  "~From file"
 msgstr "Από αρ~χείο"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "Ανα~ζήτηση..."
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
-#, fuzzy
 msgid  "Lin~k"
 msgstr "Σύν~δεση"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
-#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "Εμφάνιση αλ~λαγών υπολογιστικού φύλλου"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
-#, fuzzy
 msgid  "Filter settings"
 msgstr "Ρυθμίσεις φίλτρων"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "Εμφάνιση αποδε~χομένων αλλαγών"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
-#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "Εμφάνιση απο~ρριπτέων αλλαγών"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Ελαχιστοποίηση/Μεγιστοποίηση"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
-#, fuzzy
 msgid  "Show Changes"
 msgstr "Εμφάνιση αλλαγών"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ModalDialog.Text
-#, fuzzy
 msgid  "Protect Sheet"
 msgstr "Προστασία φύλλου"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.BTN_PROTECT.CheckBox.Text
-#, fuzzy
 msgid  "P~rotect this sheet and the contents of locked cells"
 msgstr "Π~ροστασία υτού του φύλου και όλων των περιεχομένων των κλεδωμένων κελιών"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD1.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "Κω~δικός"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD2.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "Επιβε~βαίωση"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Επιλογές"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "Allow all users of this sheet to:"
 msgstr "Να επιτρέπεται στους χρήστες αυτού του φύλλου:"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_LOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select locked cells"
 msgstr "Επιλογή κλειδωμένων κελιών"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_UNLOCKED_CELLS.String.Text
-#, fuzzy
 msgid  "Select unlocked cells"
 msgstr "Επιλογή ξεκλείδωτων κελιών"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
-#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "~URL της εξωτερικής προέλευσης δεδομένων"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
-#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(Εισάγετε το URL για το έγγραφο προέλευσης από το τοπικό σύστημα αρχείων ή από το διαδίκτυο εδώ.)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
-#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "Δια~θέσιμοι πίνακες/περιοχές"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
-#, fuzzy
 msgid  "~Update every"
 msgstr "Εν~ημέρωση κάθε"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "δευτερόλεπτα"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
-#, fuzzy
 msgid  "External Data"
 msgstr "Εξωτερικά δεδομένα"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "Περιήγηση"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
-#, fuzzy
 msgid  "Row"
 msgstr "Γραμμή"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Row"
 msgstr "Γραμμή"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Στήλη"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
-#, fuzzy
 msgid  "Column"
 msgstr "Στήλη"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
-#, fuzzy
 msgid  "Document"
 msgstr "Έγγραφο"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "Περιοχή δεδομένων"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Start"
 msgstr "Αρχή"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "End"
 msgstr "Τέλος"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "Περιεχόμενα"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "Εναλλαγή"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
-#, fuzzy
 msgid  "Scenarios"
 msgstr "Σενάρια"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "Λειτουργία μετακίνησης"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "Λειτουργία μετακίνησης"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
-#, fuzzy
 msgid  "Display"
 msgstr "Προβολή"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
-#, fuzzy
 msgid  "active"
 msgstr "ενεργό"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
-#, fuzzy
 msgid  "inactive"
 msgstr "μη ενεργό"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
-#, fuzzy
 msgid  "hidden"
 msgstr "κρυφό"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
-#, fuzzy
 msgid  "Active Window"
 msgstr "Ενεργό παράθυρο"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
-#, fuzzy
 msgid  "Scenario Name"
 msgstr "Όνομα σεναρίου"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "Σχόλιο"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "Περιεχόμενα"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
-#, fuzzy
 msgid  "Sheets"
 msgstr "Φύλλα"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
-#, fuzzy
 msgid  "Range names"
 msgstr "Ονόματα περιοχών"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
-#, fuzzy
 msgid  "Database Ranges"
 msgstr "Περιοχές βάσης δεδομένων"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Γραφικά αντικείμενα"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
-#, fuzzy
 msgid  "OLE objects"
 msgstr "Αντικείμενα OLE "
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "Σχόλια"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
-#, fuzzy
 msgid  "Linked areas"
 msgstr "Συνδεδεμένες περιοχές"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing objects"
 msgstr "Αντικείμενα σχεδίασης"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "Εισαγωγή ως υπερσύνδεση"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Link"
 msgstr "Εισαγωγή ως σύνδεση"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
-#, fuzzy
 msgid  "Insert as Copy"
 msgstr "Εισαγωγή ως αντίγραφο"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Διαγραφή"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "Ιδιότητες..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
-#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "Επεξεργασία περιοχής εκτύπωσης"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "Περιοχή εκτύπωσης"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- κανένα -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- ολόκληρο φύλλο -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- καθορισμένο από χρήστη -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
-#, fuzzy
 msgid  "- selection -"
 msgstr "- επιλογή -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
-#, fuzzy
 msgid  "Rows to repeat"
 msgstr "Επαναλαμβανόμενη γραμμή"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- κανένα -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- καθορισμένο από χρήστη -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
-#, fuzzy
 msgid  "Columns to repeat"
 msgstr "Επαναλαμβανόμενη στήλη"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- none -"
 msgstr "- κανένα -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
-#, fuzzy
 msgid  "- user defined -"
 msgstr "- καθορισμένο από χρήστη -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
-#, fuzzy
 msgid  "~Column and row headers"
 msgstr "Κε~φαλίδες γραμμών/στηλών"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "Πλέ~γμα"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NOTES.CheckBox.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "Σ~χόλια"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
-#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "~Αντικείμενα/Γραφικά αντικείμενα"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
-#, fuzzy
 msgid  "Ch~arts"
 msgstr "Δια~γράμματα"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
-#, fuzzy
 msgid  "~Drawing objects"
 msgstr "Αντικείμενα σχε~δίασης"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
-#, fuzzy
 msgid  "~Formulas"
 msgstr "Τύ~ποι"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
-#, fuzzy
 msgid  "Zero ~values"
 msgstr "Μη~δενικές τιμές"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Εκτύπωση"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
-#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "~Από πάνω προς τα κάτω και προς τα δεξιά"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "Από αριστερά προς τα δεξιά και προς τα ~κάτω"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
-#, fuzzy
 msgid  "First ~page number"
 msgstr "~Πρώτος αρ. σελίδας"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
-#, fuzzy
 msgid  "Page order"
 msgstr "Ταξινόμηση σελίδων"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
-#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "Λειτουργία ~κλιμάκωσης"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
-#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "Σμίκρυνση/Μεγέθυνση εκτύπωσης"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "Προσαρμογή περιοχής(ών) εκτύπωσης σε ύψος/πλάτος"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
-#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "Προσαρμογή περιοχής(ών) εκτύπωσης στον αριθμό σελίδων"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
-#, fuzzy
 msgid  "~Scaling factor"
 msgstr "Συντελ. κ~λιμάκωσης"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width in pages"
 msgstr "Π~λάτος στις σελίδες"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight in pages"
 msgstr "Ύ~ψος στις σελίδες"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
-#, fuzzy
 msgid  "N~umber of pages"
 msgstr "Αρι~θμός σελίδων"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Κλίμακα"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
-#, fuzzy
 msgid  "Headers/Footers"
 msgstr "Κεφαλίδες/Υποσέλιδα"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
-#, fuzzy
 msgid  "Header"
 msgstr "Κεφαλίδα"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "Υποσέλιδο"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Header (right)"
 msgstr "Κεφαλίδα (δεξιά)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
-#, fuzzy
 msgid  "Header (left)"
 msgstr "Κεφαλίδα (αριστερά)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
-#, fuzzy
 msgid  "Footer (right)"
 msgstr "Υποσέλιδο (δεξιά)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
-#, fuzzy
 msgid  "Footer (left)"
 msgstr "Υποσέλιδο (αριστερά)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
-#, fuzzy
 msgid  "Headers"
 msgstr "Κεφαλίδες"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
-#, fuzzy
 msgid  "Footers"
 msgstr "Υποσέλιδα"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left area"
 msgstr "Α~ριστερή περιοχή"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
-#, fuzzy
 msgid  "~Center area"
 msgstr "~Κεντρική περιοχή"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "R~ight area"
 msgstr "~Δεξιά περιοχή"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
-#, fuzzy
 msgid  "Hea~der"
 msgstr "Κεφα~λίδα"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
-#, fuzzy
 msgid  "Custom header"
 msgstr "Υποσέλιδο"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Text Attributes"
 msgstr "Ιδιότητες κειμένου"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Title"
 msgstr "Τίτλος"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Τίτλος"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
-#, fuzzy
 msgid  "File Name"
 msgstr "Όνομα αρχείου"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
-#, fuzzy
 msgid  "Path/File Name"
 msgstr "Διαδρομή/Όνομα αρχείου"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Sheet Name"
 msgstr "Όνομα φύλλου"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Page"
 msgstr "Σελίδα"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Pages"
 msgstr "Σελίδες"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Time"
 msgstr "Ώρα"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "Χρησιμοποιήστε τα κουμπιά για να αλλάξετε τη γραμματοσειρά ή για να εισάγετε εντολές πεδίων, όπως π.χ. ημερομηνία, ώρα, κτλ."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Note"
 msgstr "Σημείωση"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "Επε~ξεργασία..."
 
@@ -2800,8 +2444,9 @@ msgid  "~Discard"
 msgstr "Από~ρριψη"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
+#, fuzzy
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "Θέλετε πραγματικά\n\n να διαγραφεί η καταχώριση #;"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3294,86 +2939,70 @@ msgid  "~Delete"
 msgstr "~Διαγραφή"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
-#, fuzzy
 msgid  "Format Cells"
 msgstr "Μορφοποίηση κελιών"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "Αριθμοί"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Γραμματοσειρά"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Εφέ γραμματοσειράς"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Στοίχιση"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "Ασιατική τυπογραφία"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Περιγράμματα"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Φόντο"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
-#, fuzzy
 msgid  "Cell Protection"
 msgstr "Προστασία κελιού"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
-#, fuzzy
 msgid  "~Protected"
 msgstr "Προστατε~υμένο"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~formula"
 msgstr "Απόκρυ~ψη τύπου"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~all"
 msgstr "~Απόκρυψη όλων"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "Η προστασία κελιών ισχύει μόνο στην περίπτωση που υπάρχει προστασία για το τρέχον φύλλο.\n\nΓια να γίνει αυτό επιλέξτε στο μενού 'Εργαλεία' την εντολή 'Προστασία εγγράφου' και στη συνέχεια την εντολή 'Φύλλο'."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
-#, fuzzy
 msgid  "Protection"
 msgstr "Προστασία"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
-#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "Απόκ~ρυψη κατά την εκτύπωση"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
-#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "Τα επιλεγμένα κελιά δεν θα εμφανιστούν στην εκτύπωση."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Εκτύπωση"
 
@@ -4003,8 +3632,9 @@ msgid  "No operations to execute"
 msgstr "Δεν υπάρχουν εντολές για εκτέλεση"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
+#, fuzzy
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "Η περιοχή δεν περιέχει κεφαλίδα στηλών.\nΘέλετε να χρησιμοποιηθεί η πρώτη στήλη ως κεφαλίδα στηλών;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -4082,8 +3712,9 @@ msgid  "Search key not found."
 msgstr "Δεν βρέθηκε ο όρος αναζήτησης."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
+#, fuzzy
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "Επιτυχής αναζήτηση στόχου.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -4096,12 +3727,14 @@ msgid  ") into current cell?"
 msgstr ") να εισαχθεί στο τρέχον κελί;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
+#, fuzzy
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "Ανεπιτυχής αναζήτηση στόχου.\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
+#, fuzzy
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "Δεν ήταν δυνατόν να βρεθεί ακριβής τιμή \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4684,8 +4317,9 @@ msgid  "Multiple operations"
 msgstr "Πολλαπλές πράξεις"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+#, fuzzy
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Έχετε εισάγει ένα μη έγκυρο όνομα.\nΗ αυτόματη μορφοποίηση δεν ήταν δυνατόν να δημιουργηθεί.\nΕπιλέξτε κάποιο άλλο όνομα."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 #, fuzzy
@@ -4723,8 +4357,9 @@ msgid  "Print"
 msgstr "Εκτύπωση"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+#, fuzzy
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "Για να εφαρμοστεί η Αυτόματη μορφοποίηση,\nθα πρέπει να επιλεχθεί εύρος πίνακα τουλάχιστον\n3x3 κελιά."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 #, fuzzy
@@ -4847,8 +4482,9 @@ msgid  "Report1"
 msgstr "Αναφορά1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "δεν είναι διαθέσιμο για τον ορθογραφικό έλεγχο.\nΠαρακαλώ ελέγξτε την εγκατάσταση και αν χρειαστεί, να \nγίνει εγκατάσταση της γλώσσας που επιθυμείτε"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 #, fuzzy
@@ -4861,8 +4497,9 @@ msgid  "Should the spellcheck be continued at the beginning of the current sheet
 msgstr "Συνέχεια του ορθογραφικού ελέγχου από την αρχή του φύλλου;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+#, fuzzy
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "δεν είναι διαθέσιμο για τον θησαυρό λέξεων.\nΠαρακαλώ ελέγξτε την εγκατάσταση και αν χρειαστεί\nεγκαταστήστε την γλώσσα που επιθυμείτε"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 #, fuzzy
@@ -5200,12 +4837,14 @@ msgid  "on"
 msgstr "σε"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+#, fuzzy
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "Το αρχείο αυτό περιέχει συνδέσεις προς άλλα αρχεία.\nΘέλετε να γίνει ενημέρωση αυτών;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+#, fuzzy
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "Το αρχείο αυτό περιέχει ερωτήματα, τα αποτελέσματα των οποίων δεν αποθηκεύτηκαν.\nΘέλετε να επαναληφθούν τα ερωτήματα αυτά;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 #, fuzzy
@@ -5213,8 +4852,9 @@ msgid  "Too many conditions"
 msgstr "Υπερβολικά πολλές συνθήκες"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+#, fuzzy
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "Δεν είναι δυνατόν να γίνει μετακίνηση \nτων συμπληρωμένων κελιών πέρα από τα όρια του χαρτιού."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 #, fuzzy
@@ -5237,8 +4877,9 @@ msgid  "There is not enough space on the sheet to insert here."
 msgstr "Δεν υπάρχει αρκετός χώρος στο φύλλο για να γίνει εισαγωγή."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+#, fuzzy
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "Το περιεχόμενο του πρόχειρου είναι μεγαλύτερο από την επιλεγμένη περιοχή.\nΘέλετε παρ' όλα αυτά να γίνει η εισαγωγή;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 #, fuzzy
@@ -5291,8 +4932,9 @@ msgid  "Compare #"
 msgstr "Σύγκριση #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+#, fuzzy
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "Υπέρβαση του μέγιστου αριθμού μη έγκυρων κελιών. Δεν \nεκτελέστηκε η σήμανση όλων των μη έγκυρων κελιών."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 #, fuzzy
@@ -5420,8 +5062,9 @@ msgid  "Exit Recording"
 msgstr "Έξοδος από την εγγραφή"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+#, fuzzy
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "Αυτή η ενέργεια θα τερματίσει τη λειτουργία εγγραφής.\nΌλες οι πληροφορίες για τις αλλαγές θα χαθούν.\n\nνα γίνει έξοδος από τη λειτουργία εγγραφής?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 #, fuzzy
@@ -5439,8 +5082,9 @@ msgid  "Array formula  %1 R x %2 C"
 msgstr "Τύπος πίνακα  %1 R x %2 C"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+#, fuzzy
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "Το έγγραφο αυτό περιέχει κλήσεις μακροεντολών.\nΘέλετε να εκτελεστούν αυτές;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 #, fuzzy
@@ -5568,32 +5212,39 @@ msgid  "Your spreadsheet has been updated with changes saved by other users."
 msgstr "Το λογιστικό σας φύλλο έχει ενημερωθεί με αλλαγές που έχουν αποθηκευτεί από άλλους χρήστες."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+#, fuzzy
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Θα πρέπει να γίνει αποθήκευση του λογιστικού φύλλου για να ενεργοποιηθεί η λειτουργία κοινής χρήσης.\n\nΘέλετε να συνεχίσετε;"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+#, fuzzy
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Οι ήδη επιλυμένες διενέξεις συγχώνευσης θα χαθούν και οι αλλαγές σας στο διαμεριζόμενο υπολογιστικό φύλλο δεν θα σωθούν.\n\nΘέλετε να συνεχίσετε?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+#, fuzzy
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "Η απενεργοποίηση της κοινής χρήσης ενός υπολογιστικού φύλλου εμποδίζει όλους τους άλλους χρήστες του διαμεριζόμενου υπολογιστικού φύλλου να συγχωνεύσουν την εργασία τους.\n\nΘέλετε να συνεχίσετε?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+#, fuzzy
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "Αυτό το υπολογιστικό φύλλο δεν είναι πια σε κοινή χρήση.\n\nΑποθηκεύστε το υπολογιστικό φύλλο σε ένα ξεχωριστό αρχείο και συγχωνεύστε τις αλλαγές σας στο διαμεριζόμενο υπολογιστικό φύλλο χειροκίνητα."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+#, fuzzy
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "Το υπολογιστικό φύλλο βρίσκεται σε κοινόχρηστη λειτουργία. Με αυτόν τον τρόπο επιτρέπει σε πολλαπλούς χρήστες να έχουν πρόσβαση σε αυτό και να μπορούν να το επεξεργαστούν ταυτόχρονα.\n\nΟι αλλαγές στις ιδιότητες μορφοποίησης όπως οι μορφοποιήσεις για γραμματοσειρές, χρώματα, και αριθμούς δεν θα αποθηκευτούν και μερικές λειτουργίες όπως η επεξεργασία διαγραμμάτων και αντικειμένων σχεδίασης δεν είναι διαθέσιμες στην κοινόχρηστη λειτουργία. Απενεργοποιήστε την κοινόχρηστη λειτουργία για να έχετε αποκλειστική πρόσβαση σε αυτές τις λειτουργίες και αλλαγές."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "Το διαμεριζόμενο αρχείο υπολογιστικού φύλλου είναι κλειδωμένο λόγω μιας συγχώνευσης που εκτελείται απο χρήστη. '%1'\n\nΗ κοινή χρήση ενός κλειδωμένου αρχείου δεν μπορεί να απενεργοποιηθεί. Προσπαθήστε ξανά αργότερα.  "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+#, fuzzy
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "Το διαμεριζόμενο αρχείο υπολογιστικού φύλλου είναι κλειδωμένο λόγω μιας συγχώνευσης που εκτελείται απο χρήστη. '%1'\n\nΠροσπαθήστε πάλι αργότερα να αποθηκεύσετε τις αλλαγές σας."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 #, fuzzy
@@ -5706,126 +5357,102 @@ msgid  "Back"
 msgstr "Πίσω"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "AutoFormat"
 msgstr "Αυτόματη Μορφοποίηση"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "Μορ~φοποίηση"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
-#, fuzzy
 msgid  "A~utoFit width and height"
 msgstr "Α~υτόματη ρύθμιση πλάτους/ύψους"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
-#, fuzzy
 msgid  "~Borders"
 msgstr "Περι~γράμματα"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
-#, fuzzy
 msgid  "F~ont"
 msgstr "~Γραμματοσειρά"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
-#, fuzzy
 msgid  "~Pattern"
 msgstr "Μοτί~βο"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
-#, fuzzy
 msgid  "Alignmen~t"
 msgstr "~Στοίχιση"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
-#, fuzzy
 msgid  "~Number format"
 msgstr "Μο~ρφή αριθμών"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "Μορφοποίηση"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "Προσ~θήκη..."
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Διαγραφή"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "Με~τονομασία"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
-#, fuzzy
 msgid  "Add AutoFormat"
 msgstr "Προσθήκη αυτόματης μορφοποίησης"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
-#, fuzzy
 msgid  "Rename AutoFormat"
 msgstr "Μετονομασία αυτόματης μορφοποίησης"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Όνομα"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
-#, fuzzy
 msgid  "Delete AutoFormat"
 msgstr "Διαγραφή αυτόματης μορφοποίησης"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "Θέλετε πραγματικά να διαγραφεί η αυτόματη μορφοποίηση #;"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Κλείσιμο"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
-#, fuzzy
 msgid  "Jan"
 msgstr "Ιαν"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
-#, fuzzy
 msgid  "Feb"
 msgstr "Φεβ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
-#, fuzzy
 msgid  "Mar"
 msgstr "Μαρ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
-#, fuzzy
 msgid  "North"
 msgstr "Βορράς"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
-#, fuzzy
 msgid  "Mid"
 msgstr "Κέντρο"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
-#, fuzzy
 msgid  "South"
 msgstr "Νότος"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
-#, fuzzy
 msgid  "Total"
 msgstr "Σύνολο"
 
@@ -14225,8 +13852,9 @@ msgid  "Font Attributes"
 msgstr "Ιδιότητες γραμματοσειράς"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
+#, fuzzy
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "Έχετε αποθηκεύσει μεγάλη ποσότητα δεδομένων στο πρόχειρο.\nΘέλετε τα δεδομένα αυτά να είναι διαθέσιμα και για άλλες εφαρμογές;"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -14307,8 +13935,9 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "Το %PRODUCTNAME Calc βρήκε ένα λάθος στο τύπο που εισήχθη.\nΘέλετε να δεχτείτε την διόρθωση που προτείνεται παρακάτω?\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -14361,8 +13990,9 @@ msgid  "~Selected sheets"
 msgstr "~Επιλεγμένα φύλλα"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
+#, fuzzy
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "Επικολλάτε δεδομένω σε κελιά που περιέχουν ήδη κάποια δεδομένα.\nΘέλετε πράγματι να αντικαταστήσετε τα υπάρχοντα δεδομένα;"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -16040,247 +15670,198 @@ msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~1"
 msgstr "Συνθήκη ~1"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "Η τιμή κελιού είναι"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "Ο τύπος είναι"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "ίσον με"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "μικρότερο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "μεγαλύτερο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "μικρότερο ή ίσο"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "μεγαλύτερο ή ίσο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "διάφορο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "μεταξύ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "όχι μεταξύ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "και"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "~Cell Style"
 msgstr "~Πρότυπο κελιού"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND1_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New Style..."
 msgstr "~Νέο πρότυπο..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~2"
 msgstr "Συνθήκη ~2"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "Η τιμή κελιού είναι"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "Ο τύπος είναι"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "ίσον με"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "μικρότερο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "μεγαλύτερο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "μικρότερο ή ίσο"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "μεγαλύτερο ή ίσο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "διάφορο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "μεταξύ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "όχι μεταξύ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "και"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "C~ell Style"
 msgstr "Πρότυπο κ~ελιού"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND2_NEW.PushButton.Text
-#, fuzzy
 msgid  "Ne~w Style..."
 msgstr "Νέο ~πρότυπο..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
-#, fuzzy
 msgid  "Condition ~3"
 msgstr "Συνθήκη ~3"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Cell value is"
 msgstr "Η τιμή κελιού είναι"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
-#, fuzzy
 msgid  "Formula is"
 msgstr "Ο τύπος είναι"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "ίσον με"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "μικρότερο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "μεγαλύτερο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "μικρότερο ή ίσο"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "μεγαλύτερο ή ίσο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "διάφορο από"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "μεταξύ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "όχι μεταξύ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "και"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Shrink"
 msgstr "Σμίκρυνση"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "Πρότυπο κε~λιού"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND3_NEW.PushButton.Text
-#, fuzzy
 msgid  "New ~Style..."
 msgstr "Νέο π~ρότυπο..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "Μορφοποίηση υπό συνθήκες"
 

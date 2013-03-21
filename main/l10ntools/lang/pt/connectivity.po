@@ -389,7 +389,7 @@ msgstr "Não foi possível carregar o ficheiro $filename$."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "A tentativa de carregar o ficheiro provocou a seguinte mensagem de erro($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "Valor duplo localizado na coluna '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "A coluna '$columnname$' foi definida como um tipo \"Decimal\", o comprimento máximo é $precision$ caracteres (com $scale$ casas decimais).\n\nO valor \"$value$ especificado é maior do que o número de dígitos permitido."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "É necessário o KDE versão $major$.$minor$ ou superior para aceder ao 
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "A versão do KDE encontrada é demasiado recente. Apenas o KDE até à versão $major$.$minor$ é reconhecido para trabalhar com este produto.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "Caso tenha a certeza de que a versão do KDE funciona, pode executar a seguinte macro do Basic para desactivar esta verificação de versão:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

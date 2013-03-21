@@ -445,7 +445,7 @@ msgstr " <current_date> བརྒྱུད་པའི་<wizard_name>གསར�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "གལ་ཆེའི་ཡིག་ཆ་མ་ཪྙེད་པར་བརྟེན་སྣེ་འཁྲེད་འཁོར་སྐྱོད་བྱ་ཐབས་བྲལ་\n“ཡོ་བྱད་” - “འདེམས་གཞི་” - %PRODUCTNAME - “བརྒྱུད་ལམ་”འོག་“ཁས་ལེན་”མཐེབ་ལ་རྐྱང་རྡེབ་བྱས་ན་ཐོག་མའི་ཁས་ལེན་བཀོད་སྒྲིག་ནང་ལམ་རྒྱུད་བསྐྱར་འཛུད་བྱེད་\nདེ་རྗེས་བསྐྱར་དུ་སྣེ་འཁྲེད་འཁོང་སྐྱོད་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "ཁ་བྱང་འདི་བེད་སྤྱོད་བྱ་ཐ
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "རེའུ་མིག་སྐྱེས་གྲུབ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "རེའུ་མིག་_"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "རེའུ་མིག་ནང་གི་ཡིག་དུམ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "གྲལ་སྟར་གཅིག་སྒྲིལ།(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "སྒྲོམ་གཟུགས་ཀྱི་མིང་བཀོད
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "མིང་ '%FORMNAME'ཡིན་པའི་སྒེའུ་ཁུང་དེ་གནས་ཟིན། \nམིང་དེ་མིན་པ་ཞིག་འདེམས་དགོས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "ཡིག་དུམ་བསྒར་འཛུད་བྱ་ཐབས
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "མིང་ '%TABLENAME' གནས་ཡོད་。\nམིང་གཞན་ནང་བཅུག་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Web སྣེ་སྟོན།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "\"Web སྣེ་སྟོན་\"འདི་ཁྱེད་ཀྱི་ Internet ཐོག་ཡིག་ཚགས་ཁྱབ་བསྒྲགས་རམས་འདེགས་ལ་སྤྱོད་དགོས་\n\nདེ་ཡིག་ཚགས་བརྗེ་སྒྱུར་བྱས་ནས་ Web མིག་བཤར་ཆས་བརྒྱུད་ལྟ་ཞིབ་ཐུབ་པ་བྱེད་ གཞན་ཡང་དེས་ད་དུང་\"དཀར་ཆག་\"ཤོག་ལྷེ་སྐྱེ་གྲུབ་བྱེད་པ་དང་ཤོག་ལྷེ་དེ་ལྟོས་ཟླའི་ཡིག་ཚགས་ཀྱི་ཐག་སྦྲེལ་འཚམས་འདྲི་བྱ་རྒྱུ་སྟབས་བདེ་ཡོད་\"Web སྣེ་སྟོན་\"གྱིས་ད་དུང་དྲ་ཚུགས་ཀྱི་འཆར་བཀོད་དང་བཀོད་རྣམ་རང་མཚན་འཇོག་བྱེད་ཆོག་\n\nཁྱེད་ཀྱི་དྲ་ཐོག་ཡིག་ཚགས་རྟག་ཏུ་གསར་བཟོ་བྱེད་རྒྱུ་ཁྱབ་བསྒྲགས་བྱེད་ཐུབ་པ་མ་ཟད་དུས་ཐོག་དུ་ཡིག་ཚགས་གསབ་སྣོན་ནམ་བསུབ་ཐུབ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "སྔོན་ལྟ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "བདམས་པའི་བཀོད་སྒྲིག་བསུབ་\n\nབཀོད་སྒྲིག་འདི་དག་གཏན་འཁེལ་སུབ་བམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "FTP དཀར་ཆག་ '%FILENAME'གསར་བཟོ་བྱེ�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "FTP དཀར་ཆག་ '%FILENAME' གནས་མེད་\nད་ལྟ་དཀར་ཆག་གསར་བཟོ་བྱེད་དམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Zip ཡིག་ཆ་  '%FILENAME'གསར་བཟོ་བྱེད�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "རང་སའི་དཀར་ཆག་'%FILENAME'གསར་བཟོ་བྱེད་ཐབས་བྲལ་\nཁྱེད་ཀྱི་འབྲི་བའི་དབང་ཚད་བརྟག་དཔྱད་བྱེད་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "རང་སའི་དཀར་ཆག་ '%FILENAME' གནས་མེད།\nད་ལྟ་དཀར་ཆག་གསར་བཟོ་བྱེད་དགོས་སམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

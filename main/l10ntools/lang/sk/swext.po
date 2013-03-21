@@ -141,7 +141,7 @@ msgstr "Orámovanie"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "Nezávisle od vlastného štýlu tabuliek pre orámovanie a pozadie, tabuľka je vždy exportovaná ako \"<emph>prettytable\"</emph>, ktorá sa vo Wiki vykreslí s jednoduchým orámovaním a s tučnou hlavičkou."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>rozšírenia;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">S použitím @WIKIEXTENSIONPRODUCTNAME@ môžete odoslať váš aktuálny textový dokument na server MediaWiki. Po odoslaní môžu všetci používatelia wiki čítať váš dokument na Wiki.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Pre odoslanie aktuálneho dokumentu Writer do MediaWiki zvoľte <item type=\"menuitem\">Súbor - Odoslať - Do MediaWiki</item>.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "Wiki účet na podporovanom <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> serveri"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "Inštalujem @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "Pred inštaláciou @WIKIEXTENSIONPRODUCTNAME@ sa uistite že %PRODUCTNAME používa Java Runtime Environment (JRE). Pre kontrolu stavu JRE zvoľte <item type=\"menuitem\">Nástroje - Možnosti - %PRODUCTNAME - Java</item>. Uistite sa že \"Použiť Java Runtime Environment\" je označené a že je vybraný priečinok Java runtime v uvedenom zozname. V prípade, že nebolo aktivované žiadne JRE, aktivujte JRE 1.4 alebo vyššie a reštartujte %PRODUCTNAME."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "Pre inštaláciu @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "V okne Writer-a zvoľte <item type=\"menuitem\">Nástroje - Správca rozšírení</item>."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "Zatvorte %PRODUCTNAME, a taktiež zatvorte Quickstarter v prípade, že 
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "Reštartujte softvér, otvorte textový dokument a potom zvoľte <item type=\"menuitem\">Nástroje - Možnosti - Internet - MediaWiki</item> pre zadanie vašich Wiki nastavení."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "Pre odstránenie @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "V okne Writer-a zvoľte <item type=\"menuitem\">Nástroje - Správca rozšírení</item>."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "Pre pripojenie na Wiki"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "Poznámka: Pre všetky príslušné dialógové okná si môžete uložiť vaše používateľské meno a heslo v %PRODUCTNAME. Heslo bude uložené bezpečným spôsobom, kde je prístup chránený hlavným heslom. Pre zapnutie hlavného hesla, zvoľte <item type=\"menuitem\">Nástroje - Možnosti - %PRODUCTNAME - Bezpečnosť</item>."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "Poznámka: V prípade, že pre prístup k webu používate proxy server, zadajte informácie o proxy do <item type=\"menuitem\">Nástroje - Možnosti - Internet - Proxy</item> a reštartuje softvér."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "Otvorte dokument Writer-a a zvoľte <item type=\"menuitem\">Nástroje - Možnosti - Internet - MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "V dialógovom okne <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Možnosti</link> kliknite na Pridať."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "V dialógovom okne <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> zadajte informácie o účte pre Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "V poli Heslo zadajte heslo pre váš Wiki účet a potom kliknite na OK.
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "Môžete taktiež zapnúť \"Uložiť heslo\" pre uloženie heslo medzi sedeniami. Pre prístup ku všetkým uloženým heslám sa používa hlavné heslo. Zvoľte <item type=\"menuitem\">Nástroje - Možnosti - %PRODUCTNAME - Bezpečnosť</item> pre zapnutie hlavného hesla. Možnosť \"Uložiť heslo\" nie je dostupná v prípade, že nie je zapnuté hlavné heslo."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "Otvorte dokument Writer-a."
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "Napíšte obsah Wiki strany. Môžete požiť formátovanie ako formáty textu, nadpisy, poznámky pod čiarou a ďalšie. Prezrite si <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">zoznam podporovaných formátov</link>."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "Zvoľte <item type=\"menuitem\"> Súbor - Odoslať - do MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "V dialógovom okne <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Odoslať do MediaWiki</link> určite nastavenia pre vašu položku."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>MediaWiki server</emph>: Vyberte Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>Nadpis</emph>: Napíšte nadpis vašej strany. Napíšte nadpis už existujúcej strany pre prepísanie nadpisu strany s nadpisom vašeho aktuálneho textového dokumentu. Napíšte nový nadpis pre vytvorenie novej strany na Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>Súhrn</emph>: Zadajte voliteľný stručný súhrn vašej strany."
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>Toto je menšia úprava</emph>: Zakliknite toto pole pre označenie posielanej strany ako menšej úpravy už existujúcej strany s rovnakým nadpisom."
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>Zobraziť vo webovom prehliadači</emph>: Zakliknite toto pole pre otvorenie vášho systémového prehliadača a zobrazenie posielanej Wiki strany."
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,27 +341,27 @@ msgstr "Možnosti MediaWiki"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "Môžete pridávať, upravovať a odstraňovať servere MediaWiki. Otvorte dialógové okno <item type=\"menuitem\">Nástroje - Možnosti - Internet - MediaWiki</item>. Prípadne zvoľte <item type=\"menuitem\">Nástroje - Správca rozšírení</item>, vyberte @WIKIEXTENSIONPRODUCTNAME@ a kliknite na tlačidlo Možnosti."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Kliknite na Pridať pre pridanie nového servera Wiki.<br/>Vyberte položku a kliknite na Upraviť pre úpravu nastavení účtu.<br/>Vyberte položku a kliknite na Odstrániť pre odstránenie položky zo zoznamu.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Otvorí dialógové okno MediaWiki pre pridanie novej položky do zoznamu.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Otvorí dialógové okno MediaWiki pre úpravu vybranej položky.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Odstráni vybranú položku zo zoznamu.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "Keď kliknete na Pridať alebo Upraviť otvorí sa dialógové okno <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,19 +377,19 @@ msgstr "Použite dialógové okno MediaWiki pre pridanie alebo úpravu vašich n
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Zdajte URL servera MediaWiki, začínajúcu s http://</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Zadajte vaše používateľské meno pre server MediaWiki. Nechajte pole prázdne v prípade anonymného prístupu.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Zadajte vaše heslo pre server MediaWiki. Nechajte pole prázdne v prípade anonymného prístupu.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Zapnite ukladanie hesla medzi sedeniami. Hlavné heslo musí byť zapnuté. Pozrite sa na <item type=\"menuitem\">Nástroje - Možnosti - %PRODUCTNAME - Bezpečnosť</item>.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "V dialógovom okne Odoslať do MediaWiki určite nastavenia pre vaše ak
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Vyberte server MediaWiki, kde chcete uverejniť váš dokument. Kliknite na Pridať pre pridanie nového servera do zoznamu.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Zadajte názov vašej položky Wiki. Toto je vrchný nadpis vašej Wiki položky. Pre novú položku, názov musí byť jedinečný v rámci tohto Wiki. V prípade, že zadáte už existujúci názov, posielaná položka prepíše už existujúcu položku vo Wiki.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">Zadajte voliteľný stručný súhrn alebo komentár.</ahelp> Pozrite si <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Toto je menšia úprava</emph>: <ahelp hid=\".\">Zakliknite toto pole pre označenie posielanej strany ako menšej úpravy už existujúcej strany s rovnakým nadpisom.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Zobraziť vo webovom prehliadači</emph>: <ahelp hid=\".\">Zakliknite toto pole pre otvorenie vášho systémového prehliadača a zobrazenie posielanej Wiki strany.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

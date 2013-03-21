@@ -389,7 +389,7 @@ msgstr "無法載入檔案 $filename$。"
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "嘗試載入檔案會導致下列錯誤訊息 ($exception_type$)：\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "「$columnname$」欄中發現重複的值。"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "「$columnname$」欄已定義為「小數」類型，最大長度為 $precision$ 個字元 (其中有 $scale$ 位小數)。\n\n指定的值「$value$」比允許的位數長。"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "需有 $major$.$minor$ 或更高版本的 KDE 才能存取 KDE 通訊錄
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "找到的 KDE 版本太新。目前僅知可與本產品搭配使用的 KDE 最高版本是 $major$.$minor$。\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "若確定您的 KDE 版本適用，則可執行下列 Basic 巨集以停用此版本檢查:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

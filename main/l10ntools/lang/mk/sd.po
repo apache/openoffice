@@ -217,7 +217,7 @@ msgstr "Премести слајдови"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Нема доволно меморија!\nДејството ќе биде откажано."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1733,7 +1733,7 @@ msgstr "Внесете име за новиот тип на почеток на 
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "Избраното име веќе постои. \nВнесете друго име."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1805,7 +1805,7 @@ msgstr "Вметни слајдови"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Дали навистина сакате да го избришете нивото „$“?\nЗабелешка: Сите објекти на ова ниво ќе бидат избришани!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "Вметни рамка за текст"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "Оваа функција не може да се изврши \nсо избраните објекти."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "Датотеката не можеше да се вчита!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Форматот на новите страници ќе биде адаптиран\nДали сакате да ги адаптирате и објектите?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "~Уреди"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Ова дејство го брише списокот на дејства што можат\nда се отповикаат. Претходните измени на документот се сѐ уште валидни,\nно нема да можат да се отповикаат. Дали сакате да продолжите и со тоа да го\nдоделите новиот дизајн на слајдовите?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "Форматот на документот не можеше да се �
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Сликата е поврзана со документ. \nДали сакате да ја прекинете врската за да ја уредувате сликата?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (Контура)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Зададениот размер е невалиден.\nДали сакате да внесете нов?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2301,7 +2301,7 @@ msgstr "Не беше можно да се одгрупираат сите гр�
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "Дизајн со ова име веќе постои.\nДали сакате да го замените?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "Графички филтер"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "Датотеката %\nне е валидна звучна датотека!"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

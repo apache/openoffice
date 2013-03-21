@@ -1169,7 +1169,7 @@ msgstr "नोंथानि फोरमान बिलाइआव थं �
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "डाटा फुंखा \\'%1\\' मोननाय जायाखै।  बेखायनो डाटा फुंखाआव फोनांजाब गायसननो हायाखै।\n\nअननानै फोनांजाब फज'नायखौ आनजाद खालाम।"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "<बाहायग्रा फज'नायफोर>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "नोंथाङा डिफल्ट टेमप्लेटनि गोरोबथि गोनां उफ्राफोर सोलायनो सानो नामा?\nडिफल्ट टेमप्लेटआव बिथा खालामनानै बेयो गासै गोदोन फोरमान बिलाइआव गोहोम गोग्लैगोन।"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "केप्शन"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "गावनो गाव केप्शन दाजाबदेर\nअंतर्भुत करतेवेळी:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "टिप्पणी:\nअर्धविराम (;) द्वारा इ-मेल पत्ते विभक्त करा."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "फोरमान बिलाइ सुजु"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "नोंथाङा सिगाङाव मावयाखैमोनब्ला नोंथांनि फोरमान बिलाइखौ दानो लिर एबा सुजु। सोलायनायफोरा गासै खौसे जानाय फोरमान बिलाइखौ गोहोम खोख्लैगोन\n\n'फोरमान बिलाइ सुजु...' आव क्लिक खालामनायाव विझार्डनि महरा फिसा उइन्डआव दसेनि थाखाय खमिगोन जाहाते नोंथाङा मेइल मार्ज फोरमान बिलाइखौ सुजुनो हायो। फोरमान बिलाइखौ सुजुनायनि उनाव फिसा उइन्डनि 'मेइल मार्ज विझार्डआव थांफिन'आव क्लिक खालामनानै विझार्डआव थांफिन।"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "ब्राउज..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "डाटाबेस फोथार, गुबुन डाटाबेसनि गेजेरजों नोंथांनि फोरमान बिलाइआव हाबनाय डाटाबेसफोरखौ जायगा सोलायहोनो बे बिबुंखौ बाहाय। नोंथाङा खेबसेआव मोनसेल' सोलायनो हागोन। गोबां सायखनाया आगसिनि फारिलाइआव जानो हाथाव।\nमोनसे डाटाबेस फाइल सायखनो ब्रउस बुथाम बाहाय।"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "गावआरि दाथाय"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "गावआरि दाथाया जोबबाय ।\nनोंथाङा गासै सोलायनायखौ आजावनो एबा नागारनो हागौ,\nएबा जुनिया सोलायनायफोरखौ आजावनो एबा नागारनो हागौ।"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "गासै"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "नोंथाङा मोनसे बाहाय जायै मुं एन्टार खालामबाय।\nलुबैनाय गावआरि दाथायखौ सोरजिनो हाया।\nगुबुन मुं बाहायनानै फिन नाजा।"
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "केप्शन बादि गिबि खाम्फा"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "जदि सायखनाय खथासाफोराव लुबैनाय डाटा गैयाब्ला, दानो डाटा सारिखौ सायख।\n\nजदि नोंथाङा बेफोरखौ नोंथांनि चार्टआव सोफादेरनो सानोब्ला खाम्फा आरो सारि लेभेलफोर थानाय खथासाफोरखौ दाजाबदेर।"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr " [सिस्टेम]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "गोहोम गोनां बानाम आनजादआ  सिगां निफ्रायनो \nगुबुन फोरमान बिलाइआव मावथि जानानै दङ।"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "गोहोम गोनां हाइफेन सिनआ सिगां निफ्रायनो \nगुबुन फोरमान बिलाइआव मावथि जानानै दङ।"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

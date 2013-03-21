@@ -89,7 +89,7 @@ msgstr "Перетворити"
 
 #: source/text/shared/00/00000001.xhp#par_id3148983.77
 msgid  "\<ahelp hid=\".\"\>If you click forward through the dialog, this button is called \<emph\>Next\</emph\>. On the last page the button has the name \<emph\>Convert\</emph\>. The conversion is then performed by clicking the button.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">При переході до наступного кроку у діалоговому вікні ця кнопка називається <emph>Далі</emph>. На останній сторінці помічника вона називається <emph>Перетворити</emph>. При натисканні на цю кнопку виконується перетворення.</ahelp>"
 
 #: source/text/shared/00/00000001.xhp#hd_id3145129.42
 msgid  "Context Menu"
@@ -129,7 +129,7 @@ msgstr "Закрити"
 
 #: source/text/shared/00/00000001.xhp#par_id3147008.9
 msgid  "\<ahelp hid=\".\"\>Closes the dialog and saves all changes.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Закриває діалогове вікно та зберігає всі зміни.</ahelp>"
 
 #: source/text/shared/00/00000001.xhp#hd_id3147275.57
 msgid  "Close"
@@ -197,7 +197,7 @@ msgstr "Назад"
 
 #: source/text/shared/00/00000001.xhp#par_id3145068.14
 msgid  "\<ahelp hid=\"OFFMGR_PUSHBUTTON_RID_OFADLG_OPTIONS_TREE_PB_BACK\"\>Resets modified values back to the $[officename] default values.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"OFFMGR_PUSHBUTTON_RID_OFADLG_OPTIONS_TREE_PB_BACK\">Скинути змінних значень на типові для $[officename].</ahelp>"
 
 #: source/text/shared/00/00000001.xhp#hd_id3148755.59
 msgid  "Reset"
@@ -205,7 +205,7 @@ msgstr "Скинути"
 
 #: source/text/shared/00/00000001.xhp#par_id3149651.60
 msgid  "\<ahelp hid=\"HID_TABDLG_RESET_BTN\"\>Resets changes made to the current tab to those applicable when this dialog was opened. A confirmation query does not appear when you close the dialog.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_TABDLG_RESET_BTN\">Скидання змін, внесених на поточній вкладці, до стану на момент відкриття цього діалогового вікна. При закритті діалогового вікна запит про підтвердження не виводиться.</ahelp>"
 
 #: source/text/shared/00/00000001.xhp#hd_id3143278.18
 msgid  "Reset"
@@ -38607,166 +38607,152 @@ msgid  "Click \<image id=\"img_id3148946\" src=\"res/sc06301.png\" width=\"0.222
 msgstr ""
 
 #: source/text/shared/07/09000000.xhp#tit
-#, fuzzy
 msgid  "Web Pages"
 msgstr "Веб-сторінки"
 
 #: source/text/shared/07/09000000.xhp#hd_id3156014.1
 msgid  "\<link href=\"text/shared/07/09000000.xhp\" name=\"Web Pages\"\>Web Pages\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/07/09000000.xhp\" name=\"Веб-сторінки\">Веб-сторінки</link>"
 
 #: source/text/shared/07/09000000.xhp#par_id3146946.2
 msgid  "To create a new web page for the Internet, open a new \<emph\>HTML Document\</emph\> by choosing \<emph\>File - New\</emph\>."
-msgstr ""
+msgstr "Щоб творити у Інтернет нову веб-сторінку, відкрийте новий <emph>документ HTML</emph> за допомогою команди меню <emph>Файл - Створити</emph>."
 
 #: source/text/shared/07/09000000.xhp#par_id3143284.3
 msgid  "A tool for creating new web pages is the Web Layout mode, which you enable with \<emph\>View - Web Layout\</emph\>."
-msgstr ""
+msgstr "Для відкриття засобу створення веб-сторінок \"Режим веб-сторінки\" треба вибрати команду меню <emph>Вигляд - Режим веб-сторінки</emph>."
 
 #: source/text/shared/07/09000000.xhp#hd_id3147285.8
-#, fuzzy
 msgid  "Creating a New Web Page"
 msgstr "Створення нової веб-сторінки"
 
 #: source/text/shared/07/09000000.xhp#par_id3150808.9
 msgid  "Switch to the web layout mode by choosing \<emph\>View - Web Layout\</emph\> or by opening a new HTML document."
-msgstr ""
+msgstr "Перемкніться у режим веб-сторінки за допомогою <emph>Вигляд - Режим веб-стоірнки</emph> відкриттям нового HTML документа."
 
 #: source/text/shared/07/09000000.xhp#par_id3145136.15
-#, fuzzy
 msgid  "To create an HTML page from your $[officename] document, save the page using one of the \"HTML Document\" file types."
 msgstr "Для створення HTML-сторінки з документу $[officename] збережіть сторінку, використовуючи один з типів файла \"Документ HTML\"."
 
 #: source/text/shared/3dsettings_toolbar.xhp#tit
-#, fuzzy
 msgid  "3D-Settings"
 msgstr "Параметри тривимірного зображення"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN1055A
 msgid  "\<variable id=\"3dtoolbar\"\>\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>3D-Settings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"3dtoolbar\"><link href=\"text/shared/3dsettings_toolbar.xhp\">Параметри тривимірного зображення</link></variable>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN1056A
 msgid  "\<ahelp hid=\".\"\>The 3D-Settings toolbar controls properties of selected 3D objects.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Панель параметрів тривимірного зображення керує властивостями виділених тривимірних об'єктів.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10575
-#, fuzzy
 msgid  "Extrusion on/off"
 msgstr "Екструзія"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10579
 msgid  "\<ahelp hid=\".\"\>Switches the 3D effects on and off for the selected objects.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Вмикає та вимикає тривимірні ефекти для виділених об'єктів.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10590
-#, fuzzy
 msgid  "Tilt Down"
 msgstr "Повернути вниз"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10594
 msgid  "\<ahelp hid=\".\"\>Tilts the selected object downwards by five degrees.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Обертає виділений об'єкт вниз на п'ять градусів.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN105AB
-#, fuzzy
 msgid  "Tilt Up"
 msgstr "Повернути вгору"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN105AF
 msgid  "\<ahelp hid=\".\"\>Tilts the selected object upwards by five degrees.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Обертає виділений об'єкт вгору на п'ять градусів.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN105C6
-#, fuzzy
 msgid  "Tilt Left"
 msgstr "Повернути ліворуч"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN105CA
 msgid  "\<ahelp hid=\".\"\>Tilts the selected object left by five degrees.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Обертає виділений об'єкт ліворуч на п'ять градусів.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN105E1
-#, fuzzy
 msgid  "Tilt Right"
 msgstr "Повернути праворуч"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN105E5
 msgid  "\<ahelp hid=\".\"\>Tilts the selected object right by five degrees.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Обертає виділений об'єкт праворуч на п'ять градусів.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN105FC
-#, fuzzy
 msgid  "Depth"
 msgstr "Глибина"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10600
 msgid  "\<ahelp hid=\".\"\>Opens the Extrusion Depth window.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває вікно \"Глибина екструзії\".</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10617
 msgid  "\<ahelp hid=\".\"\>Select an extrusion depth.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Виберіть глибину екструзії.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10632
 msgid  "\<ahelp hid=\".\"\>Enter an extrusion depth.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Введіть глибину екструзії.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN1064C
-#, fuzzy
 msgid  "Direction"
 msgstr "Напрямок"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10650
 msgid  "\<ahelp hid=\".\"\>Opens the Extrusion Direction window.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває вікно \"Напрямок екструзії\".</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10667
 msgid  "\<ahelp hid=\".\"\>Select a direction.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Виберіть напрямок.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10698
 msgid  "\<ahelp hid=\".\"\>Select a perspective or parallel extrusion method.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Виберіть метод перспективної чи паралельної екструзії.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN106B3
-#, fuzzy
 msgid  "Lighting"
 msgstr "Освітлення"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN106B7
 msgid  "\<ahelp hid=\".\"\>Opens the Extrusion Lighting window.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває вікно \"Освітлення екструзії\".</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN106C6
 msgid  "\<ahelp hid=\".\"\>Select a lighting direction.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Виберіть напрямок освітлення.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN106E1
 msgid  "\<ahelp hid=\".\"\>Select a lighting intensity.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Виберіть інтенсивність освітлення.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN106FC
-#, fuzzy
 msgid  "Surface"
 msgstr "Поверхня"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10700
 msgid  "\<ahelp hid=\".\"\>Opens the Extrusion Surface window.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває вікно \"Поверхня об'ємної фігури\".</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10717
 msgid  "\<ahelp hid=\".\"\>Select a surface material or a wireframe display.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Виберіть матеріал поверхні чи відображення прозорої поверхні.</ahelp>"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10732
-#, fuzzy
 msgid  "3D Color"
 msgstr "Тривимірний колір"
 
 #: source/text/shared/3dsettings_toolbar.xhp#par_idN10736
 msgid  "\<ahelp hid=\".\"\>Opens the Extrusion Color toolbar.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває панель інструментів \"Колір об'ємної фігури\".</ahelp>"
 
 #: source/text/shared/autokorr/01000000.xhp#tit
 msgid  "AutoCorrect has been activated"
@@ -50953,98 +50939,88 @@ msgid  "\<ahelp hid=\".\"\>Renames the selected report.\</ahelp\>"
 msgstr ""
 
 #: source/text/shared/fontwork_toolbar.xhp#tit
-#, fuzzy
 msgid  "Fontwork"
 msgstr "Текстові ефекти"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1055A
 msgid  "\<link href=\"text/shared/fontwork_toolbar.xhp\"\>Fontwork\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/fontwork_toolbar.xhp\">Текстові ефекти</link>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1056A
-#, fuzzy
 msgid  "The Fontwork toolbar opens when you select a Fontwork object."
 msgstr "Панель інструментів текстових ефектів відкривається при виділенні об'єкту текстового ефекту."
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1056D
-#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "Галерея текстових ефектів"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN10571
 msgid  "\<ahelp hid=\".\"\>Opens the Fontwork Gallery where you can select another preview. Click OK to apply the new set of properties to your Fontwork object.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває галерею текстових ефектів, де можна вибрати інше представлення. Натисніть кнопку \"Гаразд\", щоб застосувати новий набір властивостей до об'єкту текстового ефекту.</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN10588
-#, fuzzy
 msgid  "Fontwork Shape"
 msgstr "Форма текстового ефекту"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1058C
 msgid  "\<ahelp hid=\".\"\>Opens the Fontwork Shape toolbar. Click a shape to apply the shape to all selected Fontwork objects.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває панель інструментів \"Форма текстового ефекту\". Клацніть на формі, щоб застосувати форму до усіх вибраних об'єктів текстових ефектів.</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN105A6
-#, fuzzy
 msgid  "Fontwork Same Letter Heights"
 msgstr "Текстовий ефект з однаковою висотою літер"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN105AA
 msgid  "\<ahelp hid=\".\"\>Switches the letter height of the selected Fontwork objects from normal to the same height for all objects.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Зміна висоти літер виділених об'єктів текстових ефектів зі звичайної на однакову висоту для усіх об'єктів.</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN105C1
-#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "Вирівнювання текстових ефектів"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN105C5
 msgid  "\<ahelp hid=\".\"\>Opens the Fontwork Alignment window.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває вікно \"Вирівнювання текстових ефектів\".</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN105DC
 msgid  "\<ahelp hid=\".\"\>Click to apply the alignment to the selected Fontwork objects.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Натисніть, щоб застосувати вирівнювання до виділених об'єктів текстових ефектів.</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN105F3
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Міжсимвольний інтервал для текстового ефекту"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN105F7
 msgid  "\<ahelp hid=\".\"\>Opens the Fontwork Character Spacing window.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває вікно \"Міжсимвольний інтервал для текстового ефекту\".</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1060E
 msgid  "\<ahelp hid=\".\"\>Click to apply the character spacing to the selected Fontwork objects.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Натисніть, щоб застосувати міжсимвольний інтервал до виділених об'єктів текстових ефектів.</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1061D
-#, fuzzy
 msgid  "Custom"
 msgstr "Налаштувати"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN10621
 msgid  "\<ahelp hid=\".\"\>Opens the Fontwork Character Spacing dialog where you can enter a new character spacing value.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Відкриває діалогове вікно \"Міжсимвольний інтервал для текстового ефекту\", де можна ввести нове значення для міжсимвольного інтервалу текстового ефекту.</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN10638
-#, fuzzy
 msgid  "Value"
 msgstr "Значення"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1063C
 msgid  "\<ahelp hid=\".\"\>Enter the Fontwork character spacing value.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Введіть значення для міжсимвольного інтервалу текстового ефекту.</ahelp>"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1064B
-#, fuzzy
 msgid  "Kern Character Pairs"
 msgstr "Кернінг пар символів"
 
 #: source/text/shared/fontwork_toolbar.xhp#par_idN1064F
 msgid  "\<ahelp hid=\".\"\>Switches the \<link href=\"text/shared/00/00000005.xhp#kerning\"\> kerning\</link\> of character pairs on and off.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Вмикання та вимикання <link href=\"text/shared/00/00000005.xhp#kerning\">кернінгу</link> пар символів.</ahelp>"
 
 #: source/text/shared/guide/aaa_start.xhp#tit
 msgid  "First Steps"
@@ -54536,7 +54512,7 @@ msgstr ""
 
 #: source/text/shared/guide/edit_symbolbar.xhp#par_id3145171.91
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/email.xhp#tit
 msgid  "Sending Documents as E-mail"
@@ -54720,7 +54696,7 @@ msgstr ""
 
 #: source/text/shared/guide/fax.xhp#par_idN106FA
 msgid  "Click \<emph\>Add Commands\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/fax.xhp#par_idN10702
 msgid  "Select the \"Documents\" category, then select the \"Send Default Fax\" command."
@@ -54824,7 +54800,7 @@ msgstr ""
 
 #: source/text/shared/guide/find_attributes.xhp#par_idN106F4
 msgid  "Click \<emph\>Find\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/find_attributes.xhp#par_idN106FB
 msgid  "All places where a font change was applied, either directly or by assigning an appropriate style, are found."
@@ -54840,7 +54816,7 @@ msgstr ""
 
 #: source/text/shared/guide/find_attributes.xhp#par_idN1070C
 msgid  "Click \<emph\>No Format\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/find_attributes.xhp#par_idN1071E
 msgid  "\<link href=\"text/shared/01/02100000.xhp\"\>Find & Replace\</link\> dialog"
@@ -54876,7 +54852,7 @@ msgstr ""
 
 #: source/text/shared/guide/flat_icons.xhp#par_id3157909.7
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/floating_toolbar.xhp#tit
 msgid  "Using Toolbars"
@@ -56636,7 +56612,7 @@ msgstr ""
 
 #: source/text/shared/guide/labels_database.xhp#par_idN10687
 msgid  "Click \<emph\>New Document\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/labels_database.xhp#par_id3148685.38
 msgid  "When you see the label document, you might want to temporarily enable \<item type=\"menuitem\"\>View - Field Names\</item\>. This displays the fields in a more visible manner, so that you can arrange and edit label contents more easily."
@@ -56952,7 +56928,7 @@ msgstr ""
 
 #: source/text/shared/guide/lineend_define.xhp#par_id3151176.20
 msgid  "Click \<emph\>OK\</emph\> to close the dialog."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>, щоб закрити діалог."
 
 #: source/text/shared/guide/line_intext.xhp#tit
 msgid  "Drawing Lines in Text"
@@ -57092,7 +57068,7 @@ msgstr ""
 
 #: source/text/shared/guide/linestyle_define.xhp#par_id3152920.12
 msgid  "Click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/linestyle_define.xhp#par_id3145606.17
 msgid  "Enter a name for the line style and click \<emph\>OK\</emph\>."
@@ -57104,7 +57080,7 @@ msgstr ""
 
 #: source/text/shared/guide/linestyle_define.xhp#par_idN10671
 msgid  "Click \<emph\>Close\</emph\> to close the dialog."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>, щоб закрити діалог."
 
 #: source/text/shared/guide/linestyles.xhp#tit
 msgid  "Applying Line Styles"
@@ -57196,7 +57172,7 @@ msgstr ""
 
 #: source/text/shared/guide/macro_recording.xhp#par_id3154138.14
 msgid  "Click \<emph\>Save\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/macro_recording.xhp#hd_id2486342
 msgid  "Limitations of the macro recorder"
@@ -58236,7 +58212,7 @@ msgstr ""
 
 #: source/text/shared/guide/pageformat_max.xhp#par_id3145120.42
 msgid  "Click \<emph\>OK\</emph\> to close the dialog."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>, щоб закрити діалог."
 
 #: source/text/shared/guide/pageformat_max.xhp#par_id3155388.43
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Printing\"\>Printing\</link\>"
@@ -58631,7 +58607,6 @@ msgid  "All documents that are saved in \<link href=\"text/shared/00/00000021.xh
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3166410.6
-#, fuzzy
 msgid  "Turning on protection"
 msgstr "Виключення захисту"
 
@@ -58640,7 +58615,6 @@ msgid  "Choose \<emph\>File - Save As\</emph\> and mark the \<emph\>Save with pa
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3154286.8
-#, fuzzy
 msgid  "Turning off protection"
 msgstr "Виключення захисту"
 
@@ -58661,7 +58635,6 @@ msgid  "With every change made in \<item type=\"productname\"\>%PRODUCTNAME\</it
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3154684.12
-#, fuzzy
 msgid  "Turning on protection"
 msgstr "Виключення захисту"
 
@@ -58670,7 +58643,6 @@ msgid  "Choose \<emph\>Edit - Changes - Protect Records\</emph\>. Enter and conf
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3144760.14
-#, fuzzy
 msgid  "Turning off protection"
 msgstr "Виключення захисту"
 
@@ -58687,7 +58659,6 @@ msgid  "You can protect the content, position and size of inserted graphics. The
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3147131.54
-#, fuzzy
 msgid  "Turning on protection"
 msgstr "Виключення захисту"
 
@@ -58696,7 +58667,6 @@ msgid  "For example, for graphics inserted in Writer: Choose \<emph\>Format - Pi
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3147510.56
-#, fuzzy
 msgid  "Turning off protection"
 msgstr "Виключення захисту"
 
@@ -58713,7 +58683,6 @@ msgid  "The draw objects that you insert into your documents with the \<emph\>Dr
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3153226.60
-#, fuzzy
 msgid  "Turning on protection"
 msgstr "Виключення захисту"
 
@@ -58722,7 +58691,6 @@ msgid  "Choose \<emph\>Format - Object - Position and Size \</emph\>- \<emph\>Po
 msgstr ""
 
 #: source/text/shared/guide/protection.xhp#par_id3156289.62
-#, fuzzy
 msgid  "Turning off protection"
 msgstr "Виключення захисту"
 
@@ -59104,7 +59072,7 @@ msgstr ""
 
 #: source/text/shared/guide/scripting.xhp#par_idN1093D
 msgid  "Click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/scripting.xhp#par_idN10760
 msgid  "In the \<emph\>Category\</emph\> list box, scroll down and open the \"%PRODUCTNAME Macros\" entry."
@@ -59500,7 +59468,7 @@ msgstr ""
 
 #: source/text/shared/guide/spadmin.xhp#par_id3155417.351
 msgid  "Click \<emph\>Delete\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/spadmin.xhp#par_id3149909.352
 msgid  "Be sure that you do not delete the generic printer driver, and remember that drivers deleted from server installations are no longer available to other users who are using the same server installation."
@@ -60660,7 +60628,7 @@ msgstr ""
 
 #: source/text/shared/guide/xsltfilter_create.xhp#par_idN109F4
 msgid  "Click \<emph\>New\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/xsltfilter_create.xhp#par_idN109FC
 msgid  "In the \<emph\>XML Filter\</emph\> dialog, click the \<emph\>General\</emph\> tab, and define the properties of the filter."
@@ -60732,7 +60700,7 @@ msgstr ""
 
 #: source/text/shared/guide/xsltfilter_create.xhp#par_idN10A4C
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Натисніть <emph>Гаразд</emph>."
 
 #: source/text/shared/guide/xsltfilter_create.xhp#par_idN10A56
 msgid  "To Test an XML Filter"
@@ -60907,48 +60875,44 @@ msgid  "\<link href=\"text/shared/guide/xsltfilter_create.xhp\"\>Creating and Te
 msgstr ""
 
 #: source/text/shared/main0108.xhp#tit
-#, fuzzy
 msgid  "Help"
 msgstr "Довідка"
 
 #: source/text/shared/main0108.xhp#hd_id3155364.1
 msgid  "\<link href=\"text/shared/main0108.xhp\" name=\"Help\"\>Help\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0108.xhp\" name=\"Довідка\">Довідка</link>"
 
 #: source/text/shared/main0108.xhp#par_id3153990.2
 msgid  "\<ahelp hid=\".uno:HelpMenu\"\>The Help menu allows you to start and control the $[officename] Help system.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:HelpMenu\">Меню \"Довідка\" дозволяє запускати систему довідки $[officename] та керувати нею.</ahelp>"
 
 #: source/text/shared/main0108.xhp#hd_id3147399.5
-#, fuzzy
 msgid  "$[officename] Help"
 msgstr "Довідка $[officename]"
 
 #: source/text/shared/main0108.xhp#par_id3147576.6
 msgid  "\<ahelp hid=\".uno:HelpIndex\"\>Opens the main page of the $[officename] Help for the current application.\</ahelp\> You can scroll through the Help pages and you can search for index terms or any text."
-msgstr ""
+msgstr "<ahelp hid=\".uno:HelpIndex\">Відкриває головну сторінку довідки $[officename] для поточної програми.</ahelp> Можна прокручувати сторінки довідки та шукати терміни покажчика чи будь-який текст."
 
 #: source/text/shared/main0108.xhp#par_idN1064A
 msgid  "\<image id=\"img_id1619006\" src=\"res/commandimagelist/sc_helpindex.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id1619006\"\>icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id1619006\" src=\"res/commandimagelist/sc_helpindex.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id1619006\">значок</alt></image>"
 
 #: source/text/shared/main0108.xhp#par_idN10667
-#, fuzzy
 msgid  "%PRODUCTNAME Help"
 msgstr "Довідка %PRODUCTNAME"
 
 #: source/text/shared/main0108.xhp#hd_id3154898.15
-#, fuzzy
 msgid  "Support"
 msgstr "Підтримка"
 
 #: source/text/shared/main0108.xhp#par_id3157909.16
 msgid  "\<ahelp hid=\".uno:HelpSupport\"\>Shows information on how to get support.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:HelpSupport\">Показує відомості про способи отримання підтримки.</ahelp>"
 
 #: source/text/shared/main0108.xhp#hd_id2926419
 msgid  "\<link href=\"text/shared/01/online_update.xhp\"\>Check for Updates\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/online_update.xhp\">Перевірити оновлення</link>"
 
 #: source/text/shared/main0108.xhp#par_id2783898
 msgid  "\<ahelp hid=\".\"\>Enable an Internet connection for %PRODUCTNAME. If you need a Proxy, check the %PRODUCTNAME Proxy settings in \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - Internet. Then choose Check for Updates to check for the availability of a newer version of your office suite.\</ahelp\>"
@@ -60956,93 +60920,89 @@ msgstr ""
 
 #: source/text/shared/main0108.xhp#par_idN106A6
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>This menu command is visible for the evaluation version of %PRODUCTNAME. Choose to open the Purchase %PRODUCTNAME Wizard.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Ця команда меню відображається у ознайомлювальній версії %PRODUCTNAME. При її виборі викликається помічник придбання %PRODUCTNAME.</ahelp>"
 
 #: source/text/shared/main0108.xhp#hd_id3153881.7
-#, fuzzy
 msgid  "About $[officename]"
 msgstr "Про програму $[officename]"
 
 #: source/text/shared/main0108.xhp#par_id3144510.8
 msgid  "\<ahelp hid=\".uno:About\"\>Displays general program information such as version number and copyrights.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:About\">Відображає загальні відомості про програму, наприклад номер версїї та авторські права.</ahelp>"
 
 #: source/text/shared/main0201.xhp#tit
-#, fuzzy
 msgid  "Standard Bar"
 msgstr "Стандартна панель"
 
 #: source/text/shared/main0201.xhp#hd_id3154186.1
 msgid  "\<link href=\"text/shared/main0201.xhp\" name=\"Standard Bar\"\>Standard Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0201.xhp\" name=\"Стандартна панель\">Стандартна панель</link>"
 
 #: source/text/shared/main0201.xhp#par_id3145136.2
 msgid  "\<ahelp hid=\"RID_ENVTOOLBOX\"\>The \<emph\>Standard\</emph\> bar is available in every $[officename] application.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"RID_ENVTOOLBOX\">Панель <emph>Стандартна</emph> доступна в усіх програмах $[officename].</ahelp>"
 
 #: source/text/shared/main0201.xhp#hd_id3166460.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open File\"\>Open File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Відкрити файл\">Відкрити файл</link>"
 
 #: source/text/shared/main0201.xhp#par_idN10661
 msgid  "\<link href=\"text/shared/01/01070000.xhp\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\">Зберегти як</link>"
 
 #: source/text/shared/main0201.xhp#par_idN10671
 msgid  "\<embedvar href=\"text/shared/01/01070000.xhp#speichernuntertext\"/\>"
-msgstr ""
+msgstr "<embedvar href=\"text/shared/01/01070000.xhp#speichernuntertext\"/>"
 
 #: source/text/shared/main0201.xhp#par_idN106A5
 msgid  "\<link href=\"text/shared/01/06010000.xhp\"\>Spellcheck\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06010000.xhp\">Орфографія</link>"
 
 #: source/text/shared/main0201.xhp#par_idN106B5
 msgid  "\<ahelp hid=\".\"\>Checks the document or the current selection for spelling errors.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Перевіряє документ чи поточне виділення на наявність орфографічних помилок.</ahelp>"
 
 #: source/text/shared/main0201.xhp#par_idN1086E
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Insert Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\">Вставити діаграму</link>"
 
 #: source/text/shared/main0201.xhp#par_id4964445
-#, fuzzy
 msgid  "Creates a chart in the current document."
 msgstr "Створення діаграми у поточному документі."
 
 #: source/text/shared/main0201.xhp#par_idN1088E
 msgid  "\<link href=\"text/scalc/01/12030100.xhp\"\>Sort Descending / Sort Ascending\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12030100.xhp\">Сортувати за спаданням / Сортувати за спаданням</link>"
 
 #: source/text/shared/main0201.xhp#par_idN108B1
-#, fuzzy
 msgid  "Sorts the selection from the highest to the lowest value, or from the lowest to the highest value using the column that contains the cursor."
 msgstr "Сортування виділення від найбільшого до найменшого значення чи від найменшого до найбільшого значення з використанням стовпчика, до якого встановлений курсор."
 
 #: source/text/shared/main0201.xhp#par_idN108BE
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\">Вставити діаграму</link>"
 
 #: source/text/shared/main0201.xhp#par_idN108EA
-#, fuzzy
 msgid  "Creates a chart in the current document."
 msgstr "Створення діаграми у поточному документі."
 
 #: source/text/shared/main0201.xhp#par_idN108C1
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Електронна таблиця"
 
 #: source/text/shared/main0201.xhp#par_idN10901
 msgid  "\<ahelp hid=\".\"\>Inserts a spreadsheet as an OLE object. Enter or paste data into the cells, then click outside the object to return to Impress.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Вставка електронної таблиці як об'єкту OLE. Введіть чи вставте данні у комірки, потім клацніть за межами об'єкту, щоб повернутися до Impress.</ahelp>"
 
 #: source/text/shared/main0201.xhp#par_idN108C4
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Прив'язати до сітки\">Прив'язати до сітки</link>"
 
 #: source/text/shared/main0201.xhp#par_idN108D7
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\">Вставити діаграму</link>"
 
 #: source/text/shared/main0201.xhp#par_idN10976
 #, fuzzy
@@ -61050,8 +61010,9 @@ msgid  "Creates a chart in the current document."
 msgstr "Створення діаграми у поточному документі."
 
 #: source/text/shared/main0201.xhp#par_idN107D8
+#, fuzzy
 msgid  "\<image id=\"img_id3153070\" src=\"res/commandimagelist/sc_zoom.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3153070\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153070\" src=\"res/commandimagelist/sc_zoom.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3153070\">Значок</alt></image>"
 
 #: source/text/shared/main0201.xhp#par_idN107F5
 #, fuzzy
@@ -61064,12 +61025,14 @@ msgid  "What's this"
 msgstr "Що це таке"
 
 #: source/text/shared/main0201.xhp#par_idN1081E
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Enables extended help tips under the mouse pointer till the next click.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Вмикає розгорнуті підказки під вказівником миші до наступного клацання.</ahelp>"
 
 #: source/text/shared/main0201.xhp#par_idN10855
+#, fuzzy
 msgid  "\<image id=\"img_id3174230\" src=\"res/commandimagelist/sc_extendedhelp.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3174230\"\>icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3174230\" src=\"res/commandimagelist/sc_extendedhelp.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3174230\">значок</alt></image>"
 
 #: source/text/shared/main0201.xhp#par_idN10873
 #, fuzzy
@@ -61081,8 +61044,9 @@ msgid  "Table Bar"
 msgstr ""
 
 #: source/text/shared/main0204.xhp#hd_id3145587
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0204.xhp\" name=\"Table Bar\"\>Table Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0212.xhp\" name=\"Панель таблиці даних\">Панель таблиці даних</link>"
 
 #: source/text/shared/main0204.xhp#par_id3154252
 msgid  "\<ahelp hid=\".\"\>The \<emph\>Table\</emph\> Bar contains functions you need when working with tables. It appears when you move the cursor into a table.\</ahelp\>"
@@ -61122,12 +61086,14 @@ msgid  "Status Bar in $[officename] Basic Documents"
 msgstr "Рядок стану у документах $[officename] Basic"
 
 #: source/text/shared/main0208.xhp#hd_id3148520.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0208.xhp\" name=\"Status Bar in $[officename] Basic Documents\"\>Status Bar in $[officename] Basic Documents\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0208.xhp\" name=\"Рядок стану у документах $[officename] Basic\">Рядок стану у документах $[officename] Basic</link>"
 
 #: source/text/shared/main0208.xhp#par_id3154136.2
+#, fuzzy
 msgid  "The \<emph\>Status\</emph\> Bar displays information about the current $[officename] Basic document."
-msgstr ""
+msgstr "У <emph>рядку стану</emph> виводяться відомості про поточний документ $[officename] Basic."
 
 #: source/text/shared/main0209.xhp#tit
 #, fuzzy
@@ -61135,16 +61101,19 @@ msgid  "Hyperlink Bar"
 msgstr "Панель гіперпосилання"
 
 #: source/text/shared/main0209.xhp#hd_id3154094.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0209.xhp\" name=\"Hyperlink Bar\"\>Hyperlink Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0209.xhp\" name=\"Панель гіперпосилання\">Панель гіперпосилання</link>"
 
 #: source/text/shared/main0209.xhp#par_id3159201.2
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_OFA_HYPERLINK_DLG\"\>Use the \<emph\>Hyperlink\</emph\> Bar to create and edit the hyperlinks in your documents, and to enter criteria for searches using the available Internet search engines.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_OFA_HYPERLINK_DLG\">Панель <emph>Гіперпосилання</emph> призначена для створення та зміни гіперпосилання у документах, а також для введення умов пошуку за допомогою доступних пошукових систем Інтернету.</ahelp>"
 
 #: source/text/shared/main0209.xhp#par_id3145136.3
+#, fuzzy
 msgid  "You can open and close the \<emph\>Hyperlink\</emph\> Bar in \<emph\>View - Toolbars - Hyperlink Bar\</emph\>."
-msgstr ""
+msgstr "Для відкриття та закриття панелі <emph>Гіперпосилання</emph> використовується команда <emph>Вигляд - Панелі інструментів - Панель гіперпосилання</emph>."
 
 #: source/text/shared/main0212.xhp#tit
 #, fuzzy
@@ -61152,20 +61121,24 @@ msgid  "Table Data Bar"
 msgstr "Панель таблиці даних"
 
 #: source/text/shared/main0212.xhp#hd_id3147102.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0212.xhp\" name=\"Table Data Bar\"\>Table Data Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0212.xhp\" name=\"Панель таблиці даних\">Панель таблиці даних</link>"
 
 #: source/text/shared/main0212.xhp#par_id3153394.10
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Use the Table Data bar to control the data view. \</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Панель \"Таблиця даних\" призначена для керування представленням даних. </ahelp>"
 
 #: source/text/shared/main0212.xhp#par_id3149346.12
+#, fuzzy
 msgid  "The filtered data view is active until you change or cancel the sorting or filtering criteria. If a filter is active, the \<emph\>Apply Filter\</emph\> icon on the \<emph\>Table Data\</emph\> bar is activated."
-msgstr ""
+msgstr "Фільтроване представлення даних буде активним, доки не будуть змінені чи скасовані умови сортування чи фільтрації. Якщо фільтр активний, активований значок <emph>Застосувати фільтр</emph> на панелі <emph>Таблиця даних</emph>."
 
 #: source/text/shared/main0212.xhp#par_id3147303
+#, fuzzy
 msgid  "\<image id=\"img_id3153896\" src=\"res/commandimagelist/sc_recsave.png\" width=\"0.222in\" height=\"0.222in\"\>\<alt id=\"alt_id3153896\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153896\" src=\"res/commandimagelist/sc_recsave.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3153896\">Значок</alt></image>"
 
 #: source/text/shared/main0212.xhp#par_id3153360.13
 #, fuzzy
@@ -61173,8 +61146,9 @@ msgid  "Save Record"
 msgstr "Зберегти запис"
 
 #: source/text/shared/main0212.xhp#par_id3145173
+#, fuzzy
 msgid  "\<image id=\"img_id3154123\" src=\"res/commandimagelist/sc_recundo.png\" width=\"0.222in\" height=\"0.222in\"\>\<alt id=\"alt_id3154123\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154123\" src=\"res/commandimagelist/sc_recundo.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3154123\">Значок</alt></image>"
 
 #: source/text/shared/main0212.xhp#par_id3151382.14
 #, fuzzy
@@ -61182,16 +61156,19 @@ msgid  "Undo: Data Input"
 msgstr "Вернути: введення даних"
 
 #: source/text/shared/main0212.xhp#par_idN10744
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/12070000.xhp\"\>Data to Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/12070000.xhp\">Данні на текст</link>"
 
 #: source/text/shared/main0212.xhp#par_idN10753
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Inserts all fields of the marked record into the current document at the cursor position.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Вставляє всі поля позначеного запису у поточний документ у позиції курсору.</ahelp>"
 
 #: source/text/shared/main0212.xhp#par_idN10780
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/mailmerge00.xhp\"\>Mail Merge\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/mailmerge00.xhp\">Об'єднання</link>"
 
 #: source/text/shared/main0212.xhp#par_idN1078F
 msgid  "\<ahelp hid=\".\"\>Starts the Mail Merge Wizard to create form letters.\</ahelp\>"
@@ -61203,28 +61180,34 @@ msgid  "Form Navigation Bar"
 msgstr "Панель \"Навігатор форм\""
 
 #: source/text/shared/main0213.xhp#bm_id3157896
+#, fuzzy
 msgid  "\<bookmark_value\>toolbars; Form Navigation bar\</bookmark_value\>\<bookmark_value\>Navigation bar;forms\</bookmark_value\>\<bookmark_value\>sorting; data in forms\</bookmark_value\>\<bookmark_value\>data; sorting in forms\</bookmark_value\>\<bookmark_value\>forms;sorting data\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>панелі інструментів; панель \"Навігація форми\"</bookmark_value><bookmark_value>панель \"Навігація\";форми</bookmark_value><bookmark_value>сортування; дані у формах</bookmark_value><bookmark_value>данні; сортування у формах</bookmark_value><bookmark_value>форми; сортування даних</bookmark_value>"
 
 #: source/text/shared/main0213.xhp#hd_id3157896.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0213.xhp\" name=\"Form Navigation Bar\"\>Form Navigation Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0213.xhp\" name=\"Панель ''Навігатор форм''\">Панель ''Навігатор форм''</link>"
 
 #: source/text/shared/main0213.xhp#par_id3154751.2
+#, fuzzy
 msgid  "The \<emph\>Form Navigation\</emph\> bar contains icons to edit a database table or to control the data view. The bar is displayed at the bottom of a document that contains fields that are linked to a database."
-msgstr ""
+msgstr "Панель <emph>Навігатор форм</emph> містить значки для редагування таблиці бази даних чи для керування представленням даних. Панель відображається у нижній частині документу, який містить поля, пов'язані з базою даних."
 
 #: source/text/shared/main0213.xhp#par_id3157958.27
+#, fuzzy
 msgid  "You can use the \<emph\>Form Navigation\</emph\> bar to move within records as well as to insert and to delete records. If data is saved in a form, the changes are transferred to the database. The \<emph\>Form Navigation\</emph\> bar also contains sort, filter, and search functions for data records."
-msgstr ""
+msgstr "Панель <emph>Навігатор форм</emph> призначена для переміщення всередині записів, а також для вставлення та видалення записів. Якщо данні зберігаються у формі, зміни передаються до бази даних. Панель <emph>Навігатор форм</emph> також містить функції сортування, фільтрацїі та пошуку записів даних."
 
 #: source/text/shared/main0213.xhp#par_idN10717
+#, fuzzy
 msgid  "You can use the Navigation bar icon on the \<link href=\"text/shared/02/01170000.xhp\"\>More Controls \</link\> bar to add a Navigation bar to a form."
-msgstr ""
+msgstr "Для додавання панелі переходів у форму можна використовувати значок панелі переходів на панелі <link href=\"text/shared/02/01170000.xhp\">Додаткові елементи керування</link>."
 
 #: source/text/shared/main0213.xhp#par_id3157910.3
+#, fuzzy
 msgid  "The Navigation bar is only visible for forms connected to a database. In the \<link href=\"text/shared/explorer/database/04030000.xhp\" name=\"Design view\"\>Design view\</link\> of a form, the Navigation bar is not available. See also \<link href=\"text/shared/main0212.xhp\" name=\"Database Bar\"\>Table Data bar\</link\>."
-msgstr ""
+msgstr "Панель переходів відображається лише при роботі з формами, що пов'язані з базою даних. У режимі <link href=\"text/shared/explorer/database/04030000.xhp\" name=\"Конструктор\">Конструктор</link> панель переходів недоступна. Див. також <link href=\"text/shared/main0212.xhp\" name=\"Панель бази даних\">Панель таблиці даних</link>."
 
 #: source/text/shared/main0213.xhp#par_id3153880.22
 #, fuzzy
@@ -61232,12 +61215,14 @@ msgid  "You can control the view of data with the sorting and filtering function
 msgstr "Представленням даних можна керувати за допомогою функцій сортування й фільтрації. Оригінальні таблиці не змінюються."
 
 #: source/text/shared/main0213.xhp#par_id3153062.23
+#, fuzzy
 msgid  "The current sort order or filter is saved with the current document. If a filter is set, the \<emph\>Apply Filter\</emph\> icon on the \<emph\>Navigation\</emph\> bar is activated. Sorting and filtering features in the document can also be configured in the \<emph\>Form Properties\</emph\> dialog. (Choose \<emph\>Form Properties - Data\</emph\> - properties \<link href=\"text/shared/02/01170203.xhp\" name=\"Sort\"\>\<emph\>Sort\</emph\>\</link\> and \<link href=\"text/shared/02/01170203.xhp\" name=\"Filter\"\>\<emph\>Filter\</emph\>\</link\>)."
-msgstr ""
+msgstr "Поточний порядок сортування чи фільтрації зберігається разом з поточним документом. Якщо фільтр увімкнено, значок <emph>Застосувати фільтр</emph> на панелі <emph>Навігація</emph> активний. Можливості сортування та фільтрації у документі також можна налаштувати у діалоговому вікні <emph>Властивості форми</emph>. (Виберіть параметри <emph>Властивості форми - Данні</emph> - властивості <link href=\"text/shared/02/01170203.xhp\" name=\"Сортування\"><emph>Сортування</emph></link> й <link href=\"text/shared/02/01170203.xhp\" name=\"Фільтр\"><emph>Фільтр</emph></link>)."
 
 #: source/text/shared/main0213.xhp#par_id3149810.24
+#, fuzzy
 msgid  "If an SQL statement is the basis for a form (see \<emph\>Form Properties\</emph\> - tab \<emph\>Data\</emph\> - \<link href=\"text/shared/02/01170203.xhp\" name=\"Data Source\"\>\<emph\>Data Source\</emph\>\</link\>), then the filter and sort functions are only available when the SQL statement refers to only one table and is not written in the native SQL mode."
-msgstr ""
+msgstr "Якщо основою форми є команда SQL (див. <emph>Властивості форми</emph> - вкладка <emph>Данні</emph> - <link href=\"text/shared/02/01170203.xhp\" name=\"Джерело даних\"><emph>Джерело даних</emph></link>), то функції фільтрації та сортування є доступними, лише якщо команда SQL посилається на таблицю, а не вказує безпосередньо у базу даних."
 
 #: source/text/shared/main0213.xhp#hd_id3153192.4
 #, fuzzy
@@ -61245,8 +61230,9 @@ msgid  "Absolute Record"
 msgstr "Номер запису"
 
 #: source/text/shared/main0213.xhp#par_id3146922.5
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:AbsoluteRecord\"\>Shows the number of the current record. Enter a number to go to the corresponding record.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:AbsoluteRecord\">Відображає номер поточного запису. Введіть номер, щоб перейти до відповідного запису.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3153573.6
 #, fuzzy
@@ -61254,12 +61240,14 @@ msgid  "First Record"
 msgstr "Перший запис"
 
 #: source/text/shared/main0213.xhp#par_id3154013
+#, fuzzy
 msgid  "\<image id=\"img_id3150010\" src=\"res/sc10616.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150010\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150010\" src=\"res/sc10616.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3150010\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3155308.7
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:FirstRecord\"\>Takes you to the first record.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:FirstRecord\">Перехід до першого запису.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3154792.8
 #, fuzzy
@@ -61267,12 +61255,14 @@ msgid  "Previous Record"
 msgstr "Попередній запис"
 
 #: source/text/shared/main0213.xhp#par_id3145647
+#, fuzzy
 msgid  "\<image id=\"img_id3147394\" src=\"res/commandimagelist/sc_prevrecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3147394\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147394\" src=\"res/commandimagelist/sc_prevrecord.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147394\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3157846.9
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:PrevRecord\"\>Takes you to the previous record.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:PrevRecord\">Перехід до попереднього запису.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3149121.10
 #, fuzzy
@@ -61280,12 +61270,14 @@ msgid  "Next Record"
 msgstr "Наступний запис"
 
 #: source/text/shared/main0213.xhp#par_id3146913
+#, fuzzy
 msgid  "\<image id=\"img_id3150753\" src=\"res/commandimagelist/sc_nextrecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150753\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150753\" src=\"res/commandimagelist/sc_nextrecord.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3150753\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3148914.11
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:NextRecord\"\>Takes you to the next record.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NextRecord\">Перехід до наступного запису.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3148997.12
 #, fuzzy
@@ -61293,12 +61285,14 @@ msgid  "Last Record"
 msgstr "Останній запис"
 
 #: source/text/shared/main0213.xhp#par_id3155337
+#, fuzzy
 msgid  "\<image id=\"img_id3163808\" src=\"res/sc10619.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3163808\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163808\" src=\"res/sc10619.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3163808\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3151248.13
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:LastRecord\"\>Takes you to the last record.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:LastRecord\">Перехід до наступного запису.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3145231.14
 #, fuzzy
@@ -61306,12 +61300,14 @@ msgid  "Save Record"
 msgstr "Зберегти запис"
 
 #: source/text/shared/main0213.xhp#par_id3150647
+#, fuzzy
 msgid  "\<image id=\"img_id3150941\" src=\"res/commandimagelist/sc_recsave.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150941\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150941\" src=\"res/commandimagelist/sc_recsave.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3150941\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3146808.15
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:RecSave\"\>Saves a new data entry. The change is registered in the database.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:RecSave\">Збереження нового запису даних. Ця міна реєструється у базі даних.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3158446.16
 #, fuzzy
@@ -61319,12 +61315,14 @@ msgid  "Undo: Data entry"
 msgstr "Вернути: введення даних"
 
 #: source/text/shared/main0213.xhp#par_id3166423
+#, fuzzy
 msgid  "\<image id=\"img_id3156138\" src=\"res/commandimagelist/sc_recundo.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3156138\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3156138\" src=\"res/commandimagelist/sc_recundo.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3156138\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3151276.17
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:RecUndo\"\>Allows you to undo a data entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:RecUndo\">Дозволяє вернути попередній запис даних.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3149967.18
 #, fuzzy
@@ -61332,12 +61330,14 @@ msgid  "New Record"
 msgstr "Створити запис"
 
 #: source/text/shared/main0213.xhp#par_id3149735
+#, fuzzy
 msgid  "\<image id=\"img_id3155578\" src=\"res/commandimagelist/sc_newrecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3155578\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155578\" src=\"res/commandimagelist/sc_newrecord.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3155578\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3148460.19
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:NewRecord\"\>Creates a new record.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NewRecord\">Створення нового запису.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3153659.20
 #, fuzzy
@@ -61345,20 +61345,24 @@ msgid  "Delete Record"
 msgstr "Видалити запис"
 
 #: source/text/shared/main0213.xhp#par_id3145584
+#, fuzzy
 msgid  "\<image id=\"img_id3166434\" src=\"res/commandimagelist/sc_deleterecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3166434\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3166434\" src=\"res/commandimagelist/sc_deleterecord.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3166434\">Значок</alt></image>"
 
 #: source/text/shared/main0213.xhp#par_id3148817.21
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:DeleteRecord\"\>Deletes a record. A query needs to be confirmed before deleting.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:DeleteRecord\">Видалення запису. Перед видаленням виводиться запит підтвердження.</ahelp>"
 
 #: source/text/shared/main0213.xhp#hd_id3156448.25
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/12100200.xhp\" name=\"Find Record\"\>Find Record\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/12100200.xhp\" name=\"Знайти запис\">Знайти запис</link>"
 
 #: source/text/shared/main0213.xhp#hd_id3148599.26
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/12100100.xhp\" name=\"Sort\"\>Sort\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/12100100.xhp\" name=\"Сортування\">Сортування</link>"
 
 #: source/text/shared/main0214.xhp#tit
 #, fuzzy
@@ -61366,24 +61370,29 @@ msgid  "Query Design Bar"
 msgstr "Панель конструктора запитів"
 
 #: source/text/shared/main0214.xhp#hd_id3159176.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0214.xhp\" name=\"Query Design Bar\"\>Query Design Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0214.xhp\" name=\"Панель конструктора запитів\">Панель конструктора запитів</link>"
 
 #: source/text/shared/main0214.xhp#par_id3150085.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>When creating or editing an SQL query, use the icons in the \<emph\>Query Design\</emph\> Bar to control the display of data.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">При створенні чи зміні запиту SQL використовуйте значки на панелі <emph>Конструктор запитів</emph> для керування виводом даних.</ahelp>"
 
 #: source/text/shared/main0214.xhp#par_id3150276.5
+#, fuzzy
 msgid  "Depending on whether you have created the query or view in the \<emph\>Design\</emph\> or \<emph\>SQL\</emph\> tab page, the following icons appear:"
-msgstr ""
+msgstr "Залежно від того, де був створений запит чи представлення, на вкладці <emph>Конструктор</emph> чи <emph>SQL</emph>, будуть відображатися наступні значки."
 
 #: source/text/shared/main0214.xhp#hd_id3151384.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/14020100.xhp\" name=\"Add Tables\"\>Add Tables\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/14020100.xhp\" name=\"Додати таблиці\">Додати таблиці</link>"
 
 #: source/text/shared/main0214.xhp#par_id3151041.4
+#, fuzzy
 msgid  "The following icon is on the \<emph\>SQL\</emph\> tab page:"
-msgstr ""
+msgstr "Наступні значки розташовані на вкладці <emph>SQL</emph>."
 
 #: source/text/shared/main0226.xhp#tit
 #, fuzzy
@@ -61391,8 +61400,9 @@ msgid  "Form Design Toolbar"
 msgstr "Панель інструментів конструктора форм"
 
 #: source/text/shared/main0226.xhp#hd_id3148520.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0226.xhp\" name=\"Form Design Toolbar\"\>Form Design Toolbar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0226.xhp\" name=\"Панель інструментів конструктора форм\">Панель інструментів конструктора форм</link>"
 
 #: source/text/shared/main0226.xhp#par_id3155364.2
 #, fuzzy
@@ -61400,40 +61410,49 @@ msgid  "The Form Design toolbar becomes visible as soon as you select a form obj
 msgstr "Панель інструментів конструктора форм стає видимою, одразу при виділенні об'єкту \"форма\" при роботі у режимі конструктора."
 
 #: source/text/shared/main0226.xhp#hd_id3163802.8
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01170400.xhp\" name=\"Add Field\"\>Add Field\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170400.xhp\" name=\"Додати поле\">Додати поле</link>"
 
 #: source/text/shared/main0226.xhp#hd_id3150669.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290100.xhp\" name=\"Group\"\>Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290100.xhp\" name=\"Групувати\">Групувати</link>"
 
 #: source/text/shared/main0226.xhp#hd_id3147335.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290200.xhp\" name=\"Ungroup\"\>Ungroup\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290200.xhp\" name=\"Розгрупувати\">Розгрупувати</link>"
 
 #: source/text/shared/main0226.xhp#hd_id3156024.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290300.xhp\" name=\"Enter Group\"\>Enter Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290300.xhp\" name=\"Увійти у групу\">Увійти у групу</link>"
 
 #: source/text/shared/main0226.xhp#hd_id3149295.7
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290400.xhp\" name=\"Exit Group\"\>Exit Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290400.xhp\" name=\"Вийти з групи\">Вийти з групи</link>"
 
 #: source/text/shared/main0226.xhp#hd_id3150398.9
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Прив'язати до сітки\">Прив'язати до сітки</link>"
 
 #: source/text/shared/main0226.xhp#hd_id3148798.10
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Прив'язати до сітки\">Прив'язати до сітки</link>"
 
 #: source/text/shared/main0226.xhp#par_id3145419.12
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:GridUse\"\>Specifies that you can move objects only between grid points.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:GridUse\">Вказує, що об'єкти можна переміщувати лише між вузлами сітки.</ahelp>"
 
 #: source/text/shared/main0226.xhp#hd_id3148920.11
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"Напрямні при переміщенні\">Напрямні при переміщенні</link>"
 
 #: source/text/shared/main0227.xhp#tit
 #, fuzzy
@@ -61441,16 +61460,19 @@ msgid  "Edit Points Bar"
 msgstr "Панель зміни геометрії"
 
 #: source/text/shared/main0227.xhp#bm_id3149987
+#, fuzzy
 msgid  "\<bookmark_value\>lines; editing points\</bookmark_value\>\<bookmark_value\>curves; editing points\</bookmark_value\>\<bookmark_value\>Edit Points bar\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>лінії; зміна геометрії</bookmark_value><bookmark_value>криві; зміна геометрії</bookmark_value><bookmark_value>панель \"Зміна геометрії\"</bookmark_value>"
 
 #: source/text/shared/main0227.xhp#hd_id3149987.39
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0227.xhp\" name=\"Edit Points Bar\"\>Edit Points Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0227.xhp\" name=\"Панель зміни геометрії\">Панель зміни геометрії</link>"
 
 #: source/text/shared/main0227.xhp#par_id3150402.40
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_BEZIER_TOOLBOX\"\>The \<emph\>Edit Points \</emph\>Bar appears when you select a polygon object and click \<emph\>Edit Points\</emph\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_BEZIER_TOOLBOX\">Панель <emph>Зміна геометрії </emph>з'являється при виборі об'єкту \"багатокутник\" та параметра <emph>Зміна геометрії</emph>.</ahelp>"
 
 #: source/text/shared/main0227.xhp#par_id3144762.68
 #, fuzzy
@@ -61463,12 +61485,14 @@ msgid  "Edit Points"
 msgstr "Редагувати вузли"
 
 #: source/text/shared/main0227.xhp#par_id3159151.43
+#, fuzzy
 msgid  "The \<link href=\"text/shared/01/05270000.xhp\" name=\"Edit Points\"\>\<emph\>Edit Points\</emph\>\</link\> icon allows you to activate or deactivate the edit mode for Bézier objects. In the edit mode, individual points of the drawing object can be selected."
-msgstr ""
+msgstr "Значок <link href=\"text/shared/01/05270000.xhp\" name=\"Зміна геометрії\"><emph>Зміна геометрії</emph></link> дозволяє активувати чи деактивувати режим редагування для об'єктів Без'е. У режимі редагування можливий вибір окремих вузлів графічного об'єкту."
 
 #: source/text/shared/main0227.xhp#par_id3145366
+#, fuzzy
 msgid  "\<image id=\"img_id3153951\" src=\"res/commandimagelist/sc_toggleobjectbeziermode.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3153951\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153951\" src=\"res/commandimagelist/sc_toggleobjectbeziermode.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3153951\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3150105.44
 #, fuzzy
@@ -61481,8 +61505,9 @@ msgid  "Move Points"
 msgstr "Переміщувати вузли"
 
 #: source/text/shared/main0227.xhp#par_id3147435.46
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierMove\"\>Activates a mode in which you can move points.\</ahelp\> The mouse pointer displays a small empty square when resting on a point. Drag that point to another location. The curve on both sides of the point follows the movement; the section of the curve between the next points changes shape."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierMove\">Активує режим, у якому можна переміщувати вузли.</ahelp> При наведенні вказівника миші на вузол поруч з вказівником з'являється маленький порожній квадрат. Перетягніть цей вузол у інше місце. Крива з обох боків від цього вузла переміститься за точкою. Частина кривої між сусідніми вузлами змінить форму."
 
 #: source/text/shared/main0227.xhp#par_id3149481.47
 #, fuzzy
@@ -61490,8 +61515,9 @@ msgid  "Point at the curve between two points or within a closed curve and drag 
 msgstr "Щоб зсунути всю криву без викривлення форми, наведіть вказівник на криву між двома вузлами або всередині замкнутої кривої та перетягніть."
 
 #: source/text/shared/main0227.xhp#par_id3154096
+#, fuzzy
 msgid  "\<image id=\"img_id3149377\" src=\"res/commandimagelist/sc_beziermove.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149377\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149377\" src=\"res/commandimagelist/sc_beziermove.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3149377\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3147397.48
 #, fuzzy
@@ -61504,16 +61530,19 @@ msgid  "Insert Points"
 msgstr "Вставити вузли"
 
 #: source/text/shared/main0227.xhp#par_id3160478.50
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierInsert\"\>Activates the insert mode. This mode allows you to insert points.\</ahelp\> You can also move points, just as in the move mode. If, however, you click at the curve between two points and move the mouse a little while holding down the mouse button you insert a new point. The point is a smooth point, and the lines to the control points are parallel and remain so when moved."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierInsert\">Активує режим вставки. Цей режим дозволяє вставляти вузли.</ahelp> Також дозволяється переміщувати вузли, як і у режимі переміщення. Якщо, проте, клацнути на кривій між двома вузлами й трохи зсунути мишу, утримуючи натиснутою її кнопку, буде вставлено новий вузол. Цей вузол є гладким, а лінії до контрольних точок паралельні та залишаються такими при переміщенні."
 
 #: source/text/shared/main0227.xhp#par_id3157846.51
+#, fuzzy
 msgid  "If you wish to create a corner point you must first insert either a smooth or a symmetrical point which is then converted to a corner point by using \<emph\>Corner Point\</emph\>."
-msgstr ""
+msgstr "Якщо потрібно створити кутову точку, треба спочатку вставити або гладкий, або симетричний вузол, який потім перетворюється на кутову точку за допомогою команди <emph>Кутовий вузол</emph>."
 
 #: source/text/shared/main0227.xhp#par_id3153838
+#, fuzzy
 msgid  "\<image id=\"img_id3146969\" src=\"res/commandimagelist/sc_bezierinsert.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3146969\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3146969\" src=\"res/commandimagelist/sc_bezierinsert.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3146969\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3153710.54
 #, fuzzy
@@ -61526,8 +61555,9 @@ msgid  "Delete Points"
 msgstr "Видалити вузли"
 
 #: source/text/shared/main0227.xhp#par_id3148917.56
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierDelete\"\>Use the \<emph\>Delete Points\</emph\> icon to delete one or several selected points. If you wish to select several points click the appropriate points while holding down the Shift key.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierDelete\">Значок <emph>Видалити точки</emph> служить для видалення однієї або кількох виділених точок. Якщо потрібно виділити декілька точок, клацніть га відповідних вузлах, утримуючи натиснутою клавішу Shift.</ahelp>"
 
 #: source/text/shared/main0227.xhp#par_id3153766.57
 #, fuzzy
@@ -61535,8 +61565,9 @@ msgid  "First select the points to be deleted, and then click this icon, or pres
 msgstr "Спочатку виділіть кути, які будуть видалені, а потім клацніть на цьому значку або натисніть клавішу Del."
 
 #: source/text/shared/main0227.xhp#par_id3147321
+#, fuzzy
 msgid  "\<image id=\"img_id3146920\" src=\"res/commandimagelist/sc_bezierdelete.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3146920\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3146920\" src=\"res/commandimagelist/sc_bezierdelete.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3146920\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3155961.58
 #, fuzzy
@@ -61549,12 +61580,14 @@ msgid  "Split Curve"
 msgstr "Розділити криву"
 
 #: source/text/shared/main0227.xhp#par_id3151248.60
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierCutLine\"\>The\<emph\> Split Curve \</emph\>icon splits a curve. Select the point or points where you want to split the curve, then click the icon\</ahelp\>."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierCutLine\">Значок<emph> Розірвати криву </emph>дозволяє розірвати криву. Виберіть точки, де потрібно розірвати криві, та клацніть на значку.</ahelp>."
 
 #: source/text/shared/main0227.xhp#par_id3153788
+#, fuzzy
 msgid  "\<image id=\"img_id3148489\" src=\"res/commandimagelist/sc_beziercutline.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148489\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148489\" src=\"res/commandimagelist/sc_beziercutline.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3148489\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3152581.61
 #, fuzzy
@@ -61567,8 +61600,9 @@ msgid  "Convert To Curve"
 msgstr "Перетворити на криву"
 
 #: source/text/shared/main0227.xhp#par_id3148420.63
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierConvert\"\>Converts a curve into a straight line or converts a straight line into a curve.\</ahelp\> If you select a single point, the curve before the point will be converted. If two points are selected, the curve between both points will be converted. If you select more than two points, each time you click this icon, a different portion of the curve will be converted. If necessary, round points are converted into corner points and corner points are converted into round points."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierConvert\">Перетворює криву на пряму лінію або прямую лінію на криву.</ahelp> Якщо вибрано один вузол, буде перетворена крива перед вузлом. Якщо вибрані два вузли, буде перетворена крива між двома вузлами. Якщо вибрати більше двох вузлів, кожен раз при клацанні на значка буде перетворена ще одна частина кривої. При необхідності вузли окружності будуть перетворені на кутові вузли, та нввпаки."
 
 #: source/text/shared/main0227.xhp#par_id3150304.64
 #, fuzzy
@@ -61576,8 +61610,9 @@ msgid  "If a certain section of the curve is straight, the end points of the lin
 msgstr "Якщо певна частина кривої є прямою лінією, кожна кінцева точка лінії має максимум одну контрольну точку. Їх неможливо перетворити на точки окружності, якщо не перетворити пряму лінію назад на криву."
 
 #: source/text/shared/main0227.xhp#par_id3158212
+#, fuzzy
 msgid  "\<image id=\"img_id3149036\" src=\"res/commandimagelist/sc_bezierconvert.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149036\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149036\" src=\"res/commandimagelist/sc_bezierconvert.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3149036\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3158445.65
 #, fuzzy
@@ -61590,12 +61625,14 @@ msgid  "Corner Point"
 msgstr "Кутовий вузол"
 
 #: source/text/shared/main0227.xhp#par_id3148460.67
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierEdge\"\>Converts the selected point or points into corner points.\</ahelp\> Corner points have two movable control points, which are independent from each other. A curved line, therefore, does not go straight through a corner point, but forms a corner."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierEdge\">Перетворює вибрані точки на кутові точки.</ahelp> Кутові вузли мають дві переміщувані контрольні точки, котрі не залежать одна від от одної. Тому крива лінія не переходить у пряму через кутову точку, а створює кут."
 
 #: source/text/shared/main0227.xhp#par_id3154576
+#, fuzzy
 msgid  "\<image id=\"img_id3154201\" src=\"res/commandimagelist/sc_bezieredge.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3154201\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154201\" src=\"res/commandimagelist/sc_bezieredge.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3154201\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3166429.25
 #, fuzzy
@@ -61608,12 +61645,14 @@ msgid  "Smooth Transition"
 msgstr "Гладкий прохід"
 
 #: source/text/shared/main0227.xhp#par_id3155510.29
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierSmooth\"\>Converts a corner point or symmetrical point into a smooth point.\</ahelp\> Both control points of the corner point are aligned in parallel, and can only be moved simultaneously. The control points may differentiate in length, allowing you to vary the degree of curvature."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierSmooth\">Перетворює кутовий або симетричний вузол в гладкий.</ahelp> Обидві контрольні точки кутового вузла вирівнюються у паралель та можуть бути переміщені лише одночасно. Контрольні точки можуть відрізнятися довжиною, дозволяючи змінювати ступінь кривизни."
 
 #: source/text/shared/main0227.xhp#par_id3148813
+#, fuzzy
 msgid  "\<image id=\"img_id3151183\" src=\"res/commandimagelist/sc_beziersmooth.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3151183\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3151183\" src=\"res/commandimagelist/sc_beziersmooth.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3151183\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3154258.28
 #, fuzzy
@@ -61626,12 +61665,14 @@ msgid  "Symmetric Transition"
 msgstr "Симетричний прохід"
 
 #: source/text/shared/main0227.xhp#par_id3155812.32
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierSymmetric\"\>This icon converts a corner point or a smooth point into a symmetrical point.\</ahelp\> Both control points of the corner point are aligned in parallel and have the same length. They can only be moved simultaneously and the degree of curvature is the same in both directions."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierSymmetric\">Цей значок перетворює кутовий або гладкий вузол у симетричний.</ahelp> Обидві контрольні точки кутового вузла вирівнюються у паралель та мають однакову довжину. Їх можна переміщувати лише одночасно, а ступінь кривини буде однаковою у обох напрямках."
 
 #: source/text/shared/main0227.xhp#par_id3153818
+#, fuzzy
 msgid  "\<image id=\"img_id3159218\" src=\"res/commandimagelist/sc_beziersymmetric.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3159218\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3159218\" src=\"res/commandimagelist/sc_beziersymmetric.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3159218\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3146866.31
 #, fuzzy
@@ -61644,12 +61685,14 @@ msgid  "Close Bézier"
 msgstr "Закрити Без'є"
 
 #: source/text/shared/main0227.xhp#par_id3156032.35
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierClose\"\>Closes a line or a curve.\</ahelp\> A line is closed by connecting the last point with the first point, indicated by an enlarged square."
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierClose\">Замикає лінію або криву.</ahelp> Лінія замикається шляхом з'єднання точки з першою, позначеною збільшеним квадратом."
 
 #: source/text/shared/main0227.xhp#par_id3154344
+#, fuzzy
 msgid  "\<image id=\"img_id3148607\" src=\"res/commandimagelist/sc_bezierclose.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148607\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148607\" src=\"res/commandimagelist/sc_bezierclose.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3148607\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3147070.34
 #, fuzzy
@@ -61662,12 +61705,14 @@ msgid  "Eliminate Points"
 msgstr "Виключити вузли"
 
 #: source/text/shared/main0227.xhp#par_id3149441.38
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:BezierEliminatePoints\"\>Marks the current point or the selected points for deletion.\</ahelp\> This happens in the event that the point is located on a straight line. If you convert a curve or a polygon with the \<emph\>Convert to Curve \</emph\>icon into a straight line or you change a curve with the mouse so that a point lies on the straight line, it is removed. The angle from which the point reduction is to take place \<switchinline select=\"appl\"\>\<caseinline select=\"DRAW\"\>can be set by choosing \<link href=\"text/shared/optionen/01070300.xhp\" name=\"Drawing - Grid\"\>\<emph\>%PRODUCTNAME Draw - Grid\</emph\>\</link\> in the Options dialog box\</caseinline\>\<caseinline select=\"IMPRESS\"\>can be set by choosing \<link href=\"text/shared/optionen/01070300.xhp\" name=\"Presentation - Grid\"\>\<emph\>%PRODUCTNAME Impress - Grid\</emph\>\</link\> in the Options dialog box\</caseinline\>\<defaultinline\>is 15° by default.\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:BezierEliminatePoints\">Відмічає поточний вузол або вибілені вузли для видалення.</ahelp> Це відбувається у випадку, коли точка розташована на прямій лінії. При перетворенні кривої або багатокутника за допомогою значка <emph>Перетворити на криву </emph>на пряму лінію або зміні кривої за допомогою миші так, що вузол лежить на прямій лінії, він видаляється. Кут, з якого має відбуватися скорочення точки <switchinline select=\"appl\"><caseinline select=\"DRAW\">, може бути вказаний вибором параметрів <link href=\"text/shared/optionen/01070300.xhp\" name=\"Сервіс - Параметри - Рисунок - Сітка\"><emph>Сервіс - Параметри - %PRODUCTNAME Draw - Сітка</emph></link></caseinline><caseinline select=\"IMPRESS\">, може бути вказаний вибором параметрів <link href=\"text/shared/optionen/01070300.xhp\" name=\"Сервіс - Параметри - Презентація - Сітка\"><emph>Сервіс - Параметри - %PRODUCTNAME Impress - Сітка</emph></link></caseinline>,<defaultinline>типово складає 15°.</defaultinline></switchinline>"
 
 #: source/text/shared/main0227.xhp#par_id3148970
+#, fuzzy
 msgid  "\<image id=\"img_id3155385\" src=\"res/commandimagelist/sc_beziereliminatepoints.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3155385\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155385\" src=\"res/commandimagelist/sc_beziereliminatepoints.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3155385\">Значок</alt></image>"
 
 #: source/text/shared/main0227.xhp#par_id3152869.37
 #, fuzzy
@@ -61680,8 +61725,9 @@ msgid  "Shortcut Keys"
 msgstr "Комбінації клавіш"
 
 #: source/text/shared/main0400.xhp#hd_id3149495.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0400.xhp\" name=\"Shortcut Keys\"\>Shortcut Keys\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0400.xhp\" name=\"Комбінації клавіш\">Комбінації клавіш</link>"
 
 #: source/text/shared/main0400.xhp#par_id3150040.2
 #, fuzzy
@@ -61694,8 +61740,9 @@ msgid  "Glossaries"
 msgstr "Термінологія"
 
 #: source/text/shared/main0500.xhp#hd_id3156183.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0500.xhp\" name=\"Glossaries\"\>Glossaries\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0500.xhp\" name=\"Термінологія\">Термінологія</link>"
 
 #: source/text/shared/main0500.xhp#par_id3157898.2
 #, fuzzy
@@ -61708,16 +61755,19 @@ msgid  "Programming $[officename]"
 msgstr "Програмування $[officename]"
 
 #: source/text/shared/main0600.xhp#bm_id3154232
+#, fuzzy
 msgid  "\<bookmark_value\>programming;$[officename]\</bookmark_value\>\<bookmark_value\>Basic;programming\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>програмування;$[officename]</bookmark_value><bookmark_value>Basic ;програмування</bookmark_value>"
 
 #: source/text/shared/main0600.xhp#hd_id3154232.1
+#, fuzzy
 msgid  "\<variable id=\"programming\"\>\<link href=\"text/shared/main0600.xhp\" name=\"Programming $[officename]\"\>Programming $[officename]\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"programming\"><link href=\"text/shared/main0600.xhp\" name=\"Програмування $[officename]\">Програмування $[officename]</link></variable>"
 
 #: source/text/shared/main0600.xhp#par_id3149760.2
+#, fuzzy
 msgid  "\<variable id=\"basic\"\>$[officename] can be controlled by using the $[officename] API. \</variable\>"
-msgstr ""
+msgstr "<variable id=\"basic\">$[officename] можна керувати за допомогою інтерфейсу API $[officename].</variable>"
 
 #: source/text/shared/main0600.xhp#par_id3151111.12
 #, fuzzy
@@ -61745,8 +61795,9 @@ msgid  "Java Platform Support"
 msgstr "Підтримка платформи Java"
 
 #: source/text/shared/main0650.xhp#hd_id3153089.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0650.xhp\" name=\"Java Platform Support\"\>Java Platform Support\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0650.xhp\" name=\"Підтримка платформи Java\">Підтримка платформи Java</link>"
 
 #: source/text/shared/main0650.xhp#par_id3152363.2
 #, fuzzy
@@ -61780,12 +61831,14 @@ msgid  "$[officename] and the Internet"
 msgstr "$[officename] та Інтернет"
 
 #: source/text/shared/main0800.xhp#hd_id3153089.1
+#, fuzzy
 msgid  "\<link href=\"text/shared/main0800.xhp\" name=\"$[officename] and the Internet\"\>$[officename] and the Internet\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/main0800.xhp\" name=\"$[officename] та Інтернет\">$[officename] та Інтернет</link>"
 
 #: source/text/shared/main0800.xhp#par_id3155150.2
+#, fuzzy
 msgid  "This section provides information on the subject of the Internet. An \<link href=\"text/shared/00/00000002.xhp\" name=\"Internet glossary\"\>Internet glossary\</link\> explains the most important terms."
-msgstr ""
+msgstr "У цьому розділі представлені відомості, що стосуються Інтернету. У <link href=\"text/shared/00/00000002.xhp\" name=\"глосарії Інтернету\">глосарії Інтернету</link> пояснюються найбільш важливі терміни."
 
 #: source/text/shared/optionen/01000000.xhp#tit
 msgid  "Options"

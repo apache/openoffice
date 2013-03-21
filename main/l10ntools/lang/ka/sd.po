@@ -217,7 +217,7 @@ msgstr "გადაიტანე სლაიდები"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "მეხსიერება არასაკმარისია!\nმოქმედება შეწყდება."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1733,7 +1733,7 @@ msgstr "გთხოვთ შეიტანოთ სახელი ახა
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "არჩეული სახელი უკვე არსებობს. \nგთხოვთ შეიტანოთ სხვა სახელი."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1805,7 +1805,7 @@ msgstr "სლაიდების ჩასმა"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "დარწმუნებული ხართ, რომ გინდათ \"$\" დონის წაშლა?\nშენიშვნა: წაიშლება ამ დონის ყველა ობიექტი!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "ტექსტის ჩარჩოს ჩასმა"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "ამ ფუნქციის გაშვება არჩეულ \nობიექტებთან ერთად შეუძლებელია."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "ფაილი ვერ ჩაიტვირთა!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "ახალი გვერდების ფორმატი ადაპტირდება.\nგინდათ ობიექტების ადაპტირებაც?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "~რედაქტირება"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "ეს მოქმედება წაშლის მოქმედებების სიას, რომლის\nაღდგენაც შეუძლებელია. დოკუმენტში წინა ცვლილებები კვლავ ძალაშია,\nმაგრამ მათი დაბრუნება შეუძლებელია. გინდათ გააგრძელოთ და\nმიაკავშიროთ სლაიდის ახალი დიზაინი?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "დოკუმენტის ფორმატი ვერ დაყ
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "ეს გრაფიკა მიბმულია დოკუმენტთან. \nგინდათ ამ ბმულის მოხსნა რედაქტირების ბრძანებით?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (კონტური)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "განსაზღვრული მასშტაბი არასწორია.\nგინდათ ახალის შეტანა?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2301,7 +2301,7 @@ msgstr "შეუძლებელი იყო ყველა სახატ
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "დიზაინი ამ სახელით უკვე არსებობს.\nგსურთ მისი ჩანაცვლება?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "გრაფიკების ფილტრი"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "% ფაილი\nარ არის ხმოვანი ფაილი !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -5170,237 +5170,190 @@ msgid  "Animation"
 msgstr "ანიმაცია"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "First Image"
 msgstr "პირველი ნახატი"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Backwards"
 msgstr "დაბრუნება"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Stop"
 msgstr "გაჩერება"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Play"
 msgstr "დაკვრა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Last Image"
 msgstr "ბოლო ნახატი"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Image Number"
 msgstr "ნახატის ნომერი"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
-#, fuzzy
 msgid  "Duration"
 msgstr "ხანგძლივობა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
-#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
-#, fuzzy
 msgid  "5"
 msgstr "5"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
-#, fuzzy
 msgid  "7"
 msgstr "7"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
-#, fuzzy
 msgid  "8"
 msgstr "8"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
-#, fuzzy
 msgid  "10"
 msgstr "10"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
-#, fuzzy
 msgid  "12"
 msgstr "12"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
-#, fuzzy
 msgid  "15"
 msgstr "15"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
-#, fuzzy
 msgid  "20"
 msgstr "20"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
-#, fuzzy
 msgid  "25"
 msgstr "25"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
-#, fuzzy
 msgid  "50"
 msgstr "50"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
-#, fuzzy
 msgid  "100"
 msgstr "100"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
-#, fuzzy
 msgid  "500"
 msgstr "500"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
-#, fuzzy
 msgid  "1000"
 msgstr "1000"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
-#, fuzzy
 msgid  "Max."
 msgstr "მაქს."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
-#, fuzzy
 msgid  "Loop Count"
 msgstr "ციკლის დათვლა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Object"
 msgstr "ობიექტის მისადაგება"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "ობიექტის ინდივიდუალური მისადაგება"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete Current Image"
 msgstr "მიმდინარე ნახატის წაშალა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete All Images"
 msgstr "ყველა ნახატის წაშლა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "ნომერი"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
-#, fuzzy
 msgid  "Image"
 msgstr "ნახატი"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
-#, fuzzy
 msgid  "Group object"
 msgstr "ობიექტების დაჯგუფება"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
-#, fuzzy
 msgid  "Bitmap object"
 msgstr "ნახატის ობიექტი"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "სწორება"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "მარცხნივ ზევით"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "მარცხნივ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Left"
 msgstr "მარცხნივ ქვევით"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "მაღლა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "ცენტრირებული"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "დაბლა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Right"
 msgstr "მარჯვნივ ზევით"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "მარჯვნივ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Right"
 msgstr "მარჯვნივ ქვევით"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
 msgid  "Create"
 msgstr "შექმნა"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
 msgid  "Animation group"
 msgstr "ანიმაციის ჯგუფი"
 
@@ -5529,27 +5482,22 @@ msgid  "Notes Window"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~შემდეგი"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "~წინა"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
-#, fuzzy
 msgid  "~Go to Slide"
 msgstr "~სლაიდზე გადასვლა"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~First Slide"
 msgstr "~პირველი სლაიდი"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Last Slide"
 msgstr "~ბოლო სლაიდი"
 
@@ -5590,22 +5538,18 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
-#, fuzzy
 msgid  "~Screen"
 msgstr "~ეკრანი"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
-#, fuzzy
 msgid  "~Black"
 msgstr "~შავი"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
-#, fuzzy
 msgid  "~White"
 msgstr "~თეთრი"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
-#, fuzzy
 msgid  "~End Show"
 msgstr "~ჩვენების დასასრული"
 

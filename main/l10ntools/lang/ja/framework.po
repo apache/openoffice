@@ -137,7 +137,7 @@ msgstr "再試行"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME は、次の位置に十分な空きディスク容量がないため、重要な内部情報を保存できませんでした。\n%PATH\n\nこの位置により多くの空きディスク容量を割り当てない限り、%PRODUCTNAME の作業を継続することはできません。\n\nより多くの空きディスク容量を割り当ててデータの保存を再試行したあと、「再試行」ボタンを押してください。\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "元に戻す(~R)"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "ユーザーインタフェース設定データの読み込み中にエラーが発生しました。アプリケーションはすぐに終了します。\nアプリケーションをもう一度インストールしてください。"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "ユーザーインタフェース設定データの読み込み中にエラーが発生しました。アプリケーションはすぐに終了します。\nアプリケーションのユーザープロファイルを削除してください。"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "ユーザーインタフェース設定データの読み込み中にエラーが発生しました。アプリケーションはすぐに終了します。\nアプリケーションのユーザープロファイルを最初に削除するか、アプリケーションをもう一度インストールしてください。"
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

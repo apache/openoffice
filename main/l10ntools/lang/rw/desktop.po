@@ -117,7 +117,7 @@ msgstr "Ibyahindutse ku igenamikorere ryawe ntibishobora kubikwa mo imbere kukon
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME ntishoboye gutangizwa kuko hari ikosa mu kugera ku byatanze by'iboneza rya %PRODUCTNAME.\nBaza umugenzuzi wa sisitemu yawe."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,15 +145,15 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "Mucunganzira ntayiriho. \n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "Kwinjizamo ukoresha %PRODUCTNAME ntibyaboye kurangira kubera kubura umwanya uhagije kuri disiki. Usabwe kongera umwanya kuri disiki ahakurikira maze ukongera gutangiza %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "Kwinjizamo ukoresha %PRODUCTNAME ntibyashoboye gutunganywa kubera kubura uburenganzira bwo kubigeraho. Usabwe kugenzura neza ko ufite uburenganzira buhagije bwo kugera ahakurikira maze ukongera ugatangiza %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "Igenzura ry'ibigaragirwa bya sisitemu"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Ntibishoboka kwinjizamo umugereka kubera ko ibigaragirwa\nbya sisitemu bikurikira bituzuye:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -457,7 +457,7 @@ msgstr "Umugereka ntabwo ushobora kwinjizwamo kubera:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "Ukudakorana"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
 msgid  "You have Apache OpenOffice %VERSION"
@@ -737,11 +737,11 @@ msgstr "Ukwiyandikisha"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Agashushonyobora karakugeza ku masezerano agenga imikoreshereze, kwimura ibyatanzwe bireba ukoresha biva mu %OLD_VERSION no kwandikisha %PRODUCTNAME.\n\nKanda 'Komeza' kugira ngo ukomeze."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Iyi nyobora irakuyobora mu kwandikisha %PRODUCTNAME.\n\nKanda 'Gukomeza' kugira ngo ukomeze."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -765,7 +765,7 @@ msgstr "Urakaza neza kuri %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Agashushonyobora karakugeza ku masezerano agenga imikoreshereze, no kwandikisha %PRODUCTNAME.\n\nKanda 'Komeza' kugira ngo ukomeze."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -805,7 +805,7 @@ msgstr "Iyimura ibyatanzwe bwite"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Ibyatanzwe bwite hafi ya byose biva mu iyinjiza %OLDPRODUCT bishobora kongera gukoreshwa muri %PRODUCTNAME %PRODUCTVERSION.\n\nNiba utifuza kongera gukoresha amagenamiterere yose yo muri %PRODUCTNAME %PRODUCTVERSION, kura akamenyetso ku gasanduku ngenzura."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Kuvugururira kuri Interineti"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME ihita ishakisha mu myanya idahinduka ya verisiyo nshya.\nIyo bigenze gutyo, ivugurura kuri interineti ntiryohereza amakurushingiro yawe.\nVerisiyo nsya niboneka, turabikumenyesha.\n\nUshobora kuboneza ubu buryo mu Bikoresho / Amahitamo... / %PRODUCTNAME / Ivugurura kuri intarineti"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -853,7 +853,7 @@ msgstr "Kwiyandikisha muri %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Ubu ufite amahirwe yo kwiyandikisha nk'ukoresha %PRODUCTNAME. Kwiyandikisha ni ubushake nta gahato.\n\nNiwiyandikisha, dushobora kukumenyesha ibishya byerekeye iki gicuruzwa."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "Sinshaka kwiyandikisha"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Twizeye ko wishimiye gukoresha %PRODUCTNAME.\n\n.Kugira ngo usohoke mu gashushonyobora, kanda 'Kurangiza'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"

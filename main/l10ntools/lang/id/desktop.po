@@ -117,7 +117,7 @@ msgstr "Anda tidak memiliki hak akses, sehingga perubahan pada pengaturan pribad
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME tidak dapat dijalankan karena adanya kesalahan dalam mengakses data konfigurasi %PRODUCTNAME.\n\nSilakan hubungi administrator sistem Anda."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,15 +145,15 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "Manajer lokasi tidak tersedia.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME tidak selesai dipasang karena kurangnya kapasitas media simpan. Mohon beri ruang kosong pada lokasi berikut dan jalankan kembali %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME tidak dapat dipasang karena tidak adanya hak akses. Mohon pastikan bahwa Anda memiliki hak akses untuk lokasi-lokasi berikut dan jalankan kembali %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -161,7 +161,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Anda memilih untuk memasang versi $NEW ekstensi \\'$NAME\\'.\nVersi terbaru $DEPLOYED sebenarnya sudah terpasang.\nKlik \\'Oke\\' untuk mengganti ekstensi yang telah terpasang.\nKlik \\'Batal\\' untuk batal memasang."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -169,7 +169,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Anda memilih untuk memasang versi $NEW ekstensi \\'$NAME\\'.\nVersi tersebut sebenarnya sudah terpasang.\nKlik \\'Oke\\' untuk mengganti ekstensi yang telah terpasang.\nKlik \\'Batal\\' untuk batal memasang."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -177,7 +177,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Anda memilih untuk memasang versi $NEW ekstensi \\'$NAME\\'.\nVersi lama $DEPLOYED sudah terpasang.\nKlik \\'Oke\\' untuk mengganti ekstensi yang terpasang.\nKlik \\'Batal\\' untuk batal memasang."
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
 msgid  "System dependencies check"
@@ -185,7 +185,7 @@ msgstr "Pemeriksaan ketergantungan sistem"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Ekstensi tidak dapat dipasang karena\nketergantungan sistem berikut tidak terpenuhi:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,7 +253,7 @@ msgstr "Keluar"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME telah ditingkatkan ke versi lebih baru. Sejumlah ekstensi %PRODUCTNAME yang berkongsi ditemukan tidak cocok dengan versi terbaru ini dan perlu diperbaharui sebelum %PRODUCTNAME dijalankan ulang.\n\nMemperbaharui ekstensi berkongsi memerlukan hak akses administrator. Hubungi administrator sistem Anda untuk memperbaharui ekstensi berkongsi berikut:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
@@ -261,7 +261,7 @@ msgstr "Ekstensi tidak dapat dipasang, karena ketergantungan sistem berikut tida
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
-msgstr ""
+msgstr "Ekstensi ini dinonaktifkan karena Anda belum menerima lisensinya.\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -457,11 +457,11 @@ msgstr "Ekstensi tersebut tidak bisa diperbaharui karena:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "Versi OpenOffice.org yang diperlukan tidak cocok:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Anda memiliki OpenOffice.org %VERSION"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
 msgid  "browser based update"
@@ -485,7 +485,7 @@ msgstr "Aktifkan Pembaharuan"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
 msgid  "This update will be ignored.\\n"
-msgstr ""
+msgstr "Pembaharuan ini akan diabaikan.\n"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
@@ -569,11 +569,11 @@ msgstr "Tak Dikenal"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Ekstensi memerlukan paling tidak OpenOffice.org %VERSION"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Ekstensi tidak mendukung versi lebih tinggi dari: OpenOffice.org %VERSION"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
 msgid  "Enabling: "
@@ -637,11 +637,11 @@ msgstr "Bantuan"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
 msgid  "The extension cannot be installed because:\\n"
-msgstr ""
+msgstr "Ekstensi tidak dapat dipasang karena:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
-msgstr ""
+msgstr "Ekstensi tidak akan dipasang karena suatu kesalahan pada berkas Bantuan:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -737,11 +737,11 @@ msgstr "Pendaftaran"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Wahana ini akan menuntun Anda memeriksa persetujuan lisensi, pemindahan data pengguna dari %OLD_VERSION dan pendaftaran %PRODUCTNAME.\n\nKlik 'Lanjut' untuk terus."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Wahana ini akan menuntun Anda untuk pendaftaran %PRODUCTNAME.\n\nKlik 'Lanjut' untuk terus."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,7 +749,7 @@ msgstr "~Selesai"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Anda sekarang memiliki kesempatan untuk membantu dan berkontribusi dalam percepatan pembangunan komunitas \\'open source\\' di dunia.\n\nBantu kami dalam membuktikan bahwa %PRODUCTNAME telah memiliki pasar yang kuat dengan cara mendaftarkan diri Anda.\n\nPendaftaran ini bersifat sukarela dan tanpa kewajiban apapun."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
@@ -765,7 +765,7 @@ msgstr "Selamat Datang di %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Wahana ini akan menuntun Anda mengenai persetujuan lisensi dan pendaftaran %PRODUCTNAME.\n\nKlik 'Lanjut' untuk terus."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -805,7 +805,7 @@ msgstr "Transfer data pribadi"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Sebagian besar data pribadi dari pemasangan %OLDPRODUCT dapat dipakai kembali pada %PRODUCTNAME %PRODUCTVERSION.\n\nJika Anda tidak ingin menggunakan kembali pengaturan tersebut pada %PRODUCTNAME %PRODUCTVERSION, jangan beri tanda pada kotak cek."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Pembaharuan Daring"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME akan mencari secara otomatis pada interval reguler untuk versi terbaru.\nKetika melakukannya, pembaharuan ini tidak mengirim data pribadi Anda.\nSegera setelah versi terbaru tersedia, Anda akan menerima pemberitahuan.\n\nAnda dapat mengatur fitur ini pada Aplikasi / Opsi... / %PRODUCTNAME / Pembaharuan Daring."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -853,7 +853,7 @@ msgstr "Pendaftaran %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Anda sekarang akan memiliki kesempatan untuk mendaftar sebagai pengguna %PRODUCTNAME. Pendaftaran bersifat sukarela dan tanpa kewajiban apapun.\n\nJika Anda mendaftar, kami bisa menginformasikan kepada Anda mengenai pengembangan terbaru produk ini."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "Saya tidak ingin mendafta~r"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Kami harap Anda menikmati bekerja menggunakan %PRODUCTNAME.\n\nUntuk keluar dari wahana, klik 'Selesai'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"

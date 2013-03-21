@@ -61,11 +61,11 @@ msgstr "تېكست يوق"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "ھۆججەت ئېچىش ئۈچۈن ئىم كىرگۈزۈڭ: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "ھۆججەت ئېچىش ئۈچۈن ئىم كىرگۈزۈڭ: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "ھۆججەت ئىشلىتىلىۋاتىدۇ"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتى تەھرىرلەشتىن ساقلىنىش ئۈچۈن \n \n$(ARG2)\n\nتەرىپىدىن قۇلۇپلاندى، سەل تۇرۇپ ھۆججەت ساقلاشنى سىناپ بېقىڭ ياكى بۇ ھۆججەتنىڭ كۆپەيتىلمىسىدىن بىرنى ساقلاڭ.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "مۇلازىمىتىر ئۇچۇرى:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "ئىشلەتكۈچى ئاتى ۋە ئىم كىرگۈزۈڭ: %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "ئىشلەتكۈچى ئاتى ۋە ئىم كىرگۈزۈڭ: %1 دىكى \"%2\" غا زۆرۈر بولغان"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "يوللا(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "'${HOST}' مۇلازىمىتىر بىر ياكى بىر قانچە cookie تەڭشىمەكچى. \nCookie بەلگىلەنگەن URL تۈرىگە مۇناسىۋەتلىك ئۇچۇرلارنى ئۆز ئىچىگە ئالىدۇ. ئەگەر %PRODUCTNAME كېيىن پۈتۈكتىن بىرنى تەلەپ قىلسا شۇ پۈتۈكنىڭ URL بۇرۇن تەڭشەلگەن مەلۇم cookie تۈرى بىلەن ماس كەلسە %PRODUCTNAME مۇلازىمىتىرغا بۇ ئۇچۇرنى يوللايدۇ. بۇنداق بولغاندا مۇلازىمىتىر WWW قوللىنىشچان پروگراممىسىنىڭ ھالىتى (ئەگەر توردا مال سېتىۋالغاندا) نى تونۇيالايدۇ. \n\nتۆۋەندىكى Cookie تەڭشەش لازىم:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "دائىرە: ${DOMAIN} ، يول: ${PATH} ، Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Cookie قوبۇل قىل"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME مۇلازىمېتىر '${HOST}' نىڭ بىر ياكى بىر قانچە cookie تەڭشىمەكچى. Cookie بەلگىلەنگەن URL تۈرىگە مۇناسىۋەتلىك ئۇچۇرلارنى ئۆز ئىچىگە ئالىدۇ. بۇ ئۇچۇرلار بەزى پۈتۈكلەر زىيارەت قىلىنغاندا مۇلازىمېتىرلار %PRODUCTNAME ئەۋەتىپ ساقلىغان. ئەگەر %PRODUCTNAME كېيىن پۈتۈك ${PATH} نى تەلەپ قىلسا شۇ پۈتۈكنىڭ URL بۇرۇن تەڭشەلگەن مەلۇم cookie تۈرى بىلەن ماس كەلسە %PRODUCTNAME مۇلازىمېتىرغا بۇ ئۇچۇرنى يوللايدۇ. بۇنداق بولغاندا مۇلازىمېتىر WWW قوللىنىشچان پروگراممىسىنىڭ ھالىتى (ئەگەر توردا مال سېتىۋالغاندا) نى تونۇيالايدۇ. \n\nتۆۋەندىكى Cookie تەڭشەش لازىم:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "دائىرە: ${DOMAIN} ، يول: ${PATH} ، Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "ھۆججەت ئىشلىتىلىۋاتىدۇ"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتىنىڭ تەھرىرلەش ئىقتىدارىنى قۇلۇپلىغۇچى:\n\n$(ARG2)\n\nپۈتۈكنى ئوقۇشقىلا بولىدىغان ھالەتتە ئېچىڭ ياكى كۆچۈرمە نۇسخىسىدىن بىرنى ئېچىپ تەھرىرلەڭ.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "پۈتۈكنى باشقىلار ئۆزگەرتىپتۇ"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME دا ھۆججەت ئېچىلىپ تەھرىرلەندى، شۇڭلاشقا ئۇ ھۆججەت ئۆزگەرتىلدى. سىز ئۆزگەرتكەندىن كېيىنكى پۈتۈك باشقىلارنىڭ ئۆزگەرتىشىنى قاپلىۋېتىدۇ..\n\nساقلاۋېرەمسىز؟\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME يېڭىلاشنى ئىشلەتكىلى بولىدۇ"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "بۇ پۈتۈكنى %PRODUCTNAME نىڭ يېڭى نەشرىدە قۇرغان. ئۇنىڭدا سىز ھازىر ئىشلىتىۋاتقان نەشرى قوللىمايدىغان ئىقتىدار بولۇشى مۇمكىن.\n\n«دەرھال يېڭىلا…»نى چېكىپ توردا يېڭىلاشنى ئىجرا قىلىپ %PRODUCTNAME نىڭ ئەڭ يېڭى نەشرىگە ئېرىشىڭ."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "دىققەت: ئاساسىي ئىمنى ئەستە تۇتقانلىقى�
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتى $(ARG2) دا ئوخشاش بولمىغان سىستېمىدا ئۆزىڭىز تەھرىرلەشنى قۇلۇپلىدىڭىز.\n\nپۈتۈكنى ئوقۇشقىلا بولىدىغان ھالەتتە ئاچالايسىز ياكى ئۆزىڭىزنىڭ قۇلۇپىغا پەرۋا قىلماي، پۈتۈكنى ئېچىپ تەھرىرىلىسىڭىز بولىدۇ.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "ئاچ(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتى $(ARG2) دا ئوخشاش بولمىغان سىستېمىدا ئۆزىڭىز تەھرىرلەشنى قۇلۇپلىدىڭىز.\n\nباشقا سىستېمىدا پۈتۈكنى يېپىپ، قايتا ساقلاڭ ياكى ئۆزىڭىزسالغان قۇلۇپقا پەرۋا قىلماي، نۆۋەتتىكى پۈتۈكنى ساقلاڭ.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

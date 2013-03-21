@@ -147,29 +147,27 @@ void convert_xcu::stopCollectData(char *syyText)
 
   mbNoCollectingData = true;
 
-  // locate key and extract it
-  for (nL = 0; nL < (int)mcStack.size(); ++nL)
-    useKey += (useKey.size() ? "." : "" ) + mcStack[nL];
-  
-  if (mbMergeMode)
+  if (useText.size())
   {
-    // get all languages (includes en-US)
-#if 0
-    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
-    std::string                   sNewLine;
-    nL = cExtraLangauges.size();
-
-    for (int i = 0; i < nL; ++i)
-    {
-      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
-               cExtraLangauges[i]->msText + "</value>";
-      writeSourceFile(sNewLine);
-    }
-#endif
+    // locate key and extract it
+    for (nL = 0; nL < (int)mcStack.size(); ++nL)
+      useKey += (useKey.size() ? "." : "" ) + mcStack[nL];
+    mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, useText);
   }
 
-  if (useText.size())
-    mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, useText);
+  if (mbMergeMode)
+  {
+    std::string sLang, sText, sNewLine;
+
+
+    // prepare to read all languages
+    mcMemory.prepareMerge();
+    for (; mcMemory.getMergeLang(sLang, sText);)
+    {
+      sNewLine = "\n<value xml:lang=\"" + sLang + "\">" + sText + "</value>";
+      writeSourceFile(sNewLine);
+    }
+  }
 }  
 
 

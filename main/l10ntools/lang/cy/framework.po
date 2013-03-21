@@ -137,7 +137,7 @@ msgstr "Ceisio eto"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "Nid oedd %PRODUCTNAME yn gallu cadw gwybodaeth fewnol bwysig oherwydd gofod disg annigonol yn y lleoliad canlynol:\n%PATH\n\nNi fydd modd i chi barhau i weithio gyda %PRODUCTNAME heb ddynodi rhagor o le rhydd ar ddisg yn y lleoliad yma.\n\nCliciwch y botwm 'Ceisio eto' ar ôl i chi ddynodi rhagor o le rhydd i geisio cadw'r data eto.\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "~Ailosod"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "Digwyddodd gwall wrth lwytho data ffurfweddiad rhyngwyneb defnyddiwr. Bydd y rhaglen yn cael ei chau.\nCeisiwch ailosod y rhaglen."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "Digwyddodd gwall wrth lwytho data ffurfweddiad rhyngwyneb defnyddiwr. Bydd y rhaglen yn cael ei chau.\nCeisiwch dynnu eich proffil personol o fewn y rhaglen."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "Digwyddodd gwall wrth lwytho data ffurfweddiad rhyngwyneb defnyddiwr. Bydd y rhaglen yn cael ei chau.\nCeisiwch dynnu eich proffil personol o fewn y rhaglen neu geisio ailosod y rhaglen."
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

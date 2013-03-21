@@ -128,12 +128,10 @@ msgid  "~Save"
 msgstr "~pol"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
-#, fuzzy
 msgid  "<All>"
 msgstr "<Hoch>"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
-#, fuzzy
 msgid  "< No Module >"
 msgstr "< pagh bobcho' >"
 
@@ -146,7 +144,6 @@ msgid  "Load"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "pol"
 
@@ -407,8 +404,9 @@ msgid  "A name must be entered."
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
+#, fuzzy
 msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr ""
+msgstr "choHpu' ghIq ghun 'e' DataghnISqa'.\nbItaH'a'?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -810,22 +808,18 @@ msgid  "Manage User Interface Languages [$1]"
 msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Present Languages"
 msgstr "DaH Hol'e' lo'taHbogh"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
-#, fuzzy
 msgid  "Add..."
 msgstr "...boq"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "lel"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
-#, fuzzy
 msgid  "Default"
 msgstr "cherlu'pu'ghach"
 
@@ -834,17 +828,14 @@ msgid  "The default language is used if no localization for a user interface loc
 msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~SoQmoH"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
-#, fuzzy
 msgid  "[Default Language]"
 msgstr "[Hol cherlu'pu'bogh]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~lel"
 

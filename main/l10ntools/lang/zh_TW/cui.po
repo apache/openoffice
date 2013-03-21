@@ -149,7 +149,7 @@ msgstr "儲存鍵盤配置"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.String.Text
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "配置"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.String.Text
 msgid  "My Macros"
@@ -697,7 +697,7 @@ msgstr "刪除..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "備註：\n圖示大小應為 16x16 像素，才能達到最佳品質。不同大小的圖示將會自動調整範圍。"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -705,7 +705,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
-msgstr ""
+msgstr "無法匯入以下所列的檔案。\n無法解譯檔案格式。"
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -717,7 +717,7 @@ msgstr "確定要刪除影像嗎？"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "影像清單中已包含 %ICONNAME 圖示。\n是否要取代現有的圖示？"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1577,7 +1577,7 @@ msgstr "確認密碼"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "注意：設定密碼之後，只會以下列方式開啟文件"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FixedLine.Text
 msgid  "File sharing password"
@@ -1857,7 +1857,7 @@ msgstr "刪除(~D)"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
+msgstr "關於 %PRODUCTNAME"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
 msgid  "License..."
@@ -1885,7 +1885,7 @@ msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
-msgstr ""
+msgstr " 無法提供拼字檢查功能。\n請檢查安裝的程式﹐若有必要﹐\n請您安裝要使用的語言版本。"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -2945,7 +2945,7 @@ msgstr "類型"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
 msgid  "~And"
-msgstr ""
+msgstr "和"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 msgid  "~Or"
@@ -3057,7 +3057,7 @@ msgstr "巨集安全性..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "停用永久儲存密碼功能會刪除儲存的密碼清單並重設主密碼。\n\n您要刪除密碼清單並重設主密碼嗎？"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
@@ -3065,7 +3065,7 @@ msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "請註意：關閉 Java 支援，\n也就不能使用Javascript 功能。\n\n還是要關閉 Java ？"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3613,15 +3613,15 @@ msgstr "建立資料庫連結"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\\n$file$\\ndoes not exist."
-msgstr ""
+msgstr "檔案\n$file$\n不存在。"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\\n$file$\\ndoes not exist in the local file system."
-msgstr ""
+msgstr "檔案\n$file$\n不在本機檔案系統中。"
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
-msgstr ""
+msgstr "其他資料庫已使用名稱「$file$」。\n請選擇不同的名稱。"
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -4329,7 +4329,7 @@ msgstr "不使用 ODF 1.2 Extended 可能會導致資訊遺失。"
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr "將 \"%1\" 當成預設檔案格式來儲存文件可能會引起資料流失。\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4341,7 +4341,7 @@ msgstr "改進計劃"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "誠摯邀請您參加 %PRODUCTNAME 改進計劃，以協助提升 %PRODUCTNAME 的品質。\n\n如果您願意參加，我們將採取匿名的方式收集有關您如何使用 %PRODUCTNAME 的統計資料。此資料用以找出使用模式。\n\n%PRODUCTNAME 改進計劃不會收集任何個人資料或文件內容。"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
@@ -5033,7 +5033,7 @@ msgstr "關閉(~C)"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "這個輸入的名稱已經存在。\n請您輸入一個新名稱。"
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 msgid  "Do you want to change the '%1' dictionary language?"
@@ -5609,2828 +5609,2270 @@ msgid  "Character"
 msgstr "字元"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FL_PROP.FixedLine.Text
-#, fuzzy
 msgid  "Transparency mode"
 msgstr "透明模式"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_OFF.RadioButton.Text
-#, fuzzy
 msgid  "~No transparency"
 msgstr "不透明(~N)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_LINEAR.RadioButton.Text
-#, fuzzy
 msgid  "~Transparency"
 msgstr "透明(~T)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_GRADIENT.RadioButton.Text
-#, fuzzy
 msgid  "Gradient"
 msgstr "漸層色圖案"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Ty~pe"
 msgstr "類型(~P)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Linear"
 msgstr "線形"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Axial"
 msgstr "軸向"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Radial"
 msgstr "徑向"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Ellipsoid"
 msgstr "橢圓體"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Quadratic"
 msgstr "立方形"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Square"
 msgstr "正方形"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FixedText.Text
-#, fuzzy
 msgid  "Center ~X"
 msgstr "中心 X(~X)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_Y.FixedText.Text
-#, fuzzy
 msgid  "Center ~Y"
 msgstr "中心 Y(~Y)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "~Angle"
 msgstr "角度(~A)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.MTR_TRGR_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degrees"
 msgstr " 度"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FixedText.Text
-#, fuzzy
 msgid  "~Border"
 msgstr "邊框(~B)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_START_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Start value"
 msgstr "起始值(~S)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_END_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~End value"
 msgstr "最終數值(~E)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.Control.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "透明"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TabPage.Text
-#, fuzzy
 msgid  "Area"
 msgstr "區域"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_PROP.FixedLine.Text
-#, fuzzy
 msgid  "Fill"
 msgstr "充填"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "None"
 msgstr "無"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Color"
 msgstr "顏色"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Gradient"
 msgstr "漸層色圖案"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Hatching"
 msgstr "陰影線"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Bitmap"
 msgstr "點陣圖"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_STEPCOUNT.FixedLine.Text
-#, fuzzy
 msgid  "Increments"
 msgstr "增量"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_STEPCOUNT.TriStateBox.Text
-#, fuzzy
 msgid  "A~utomatic"
 msgstr "自動(~U)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.CB_HATCHBCKGRD.CheckBox.Text
-#, fuzzy
 msgid  "~Background color"
 msgstr "背景顏色(~B)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FixedLine.Text
-#, fuzzy
 msgid  "Size"
 msgstr "大小"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TriStateBox.Text
-#, fuzzy
 msgid  "~Original"
 msgstr "原件(~O)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_SCALE.TriStateBox.Text
-#, fuzzy
 msgid  "Re~lative"
 msgstr "相對(~L)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Wi~dth"
 msgstr "寬度(~D)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_Y_SIZE.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "高度(~E)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FixedText.Text
-#, fuzzy
 msgid  "~X Offset"
 msgstr "X 偏移(~X)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_Y_OFFSET.FixedText.Text
-#, fuzzy
 msgid  "~Y Offset"
 msgstr "Y 偏移(~Y)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_TILE.TriStateBox.Text
-#, fuzzy
 msgid  "~Tile"
 msgstr "平鋪(~T)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_STRETCH.TriStateBox.Text
-#, fuzzy
 msgid  "Auto~Fit"
 msgstr "自動調整(~F)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FixedLine.Text
-#, fuzzy
 msgid  "Offset"
 msgstr "偏移"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RadioButton.Text
-#, fuzzy
 msgid  "Ro~w"
 msgstr "列(~W)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_COLUMN.RadioButton.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "欄(~M)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.TabPage.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "陰影"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FL_PROP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.TSB_SHOW_SHADOW.TriStateBox.Text
-#, fuzzy
 msgid  "~Use shadow"
 msgstr "使用陰影(~U)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FT_POSITION.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FT_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "距離(~D)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FT_SHADOW_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "顏色(~C)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FT_TRANSPARENT.FixedText.Text
-#, fuzzy
 msgid  "~Transparency"
 msgstr "透明(~T)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.TabPage.Text
-#, fuzzy
 msgid  "Hatching"
 msgstr "陰影線"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.FL_PROP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Spacing"
 msgstr "間隔(~S)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "A~ngle"
 msgstr "角度(~N)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.MTR_FLD_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degrees"
 msgstr " 度"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_TYPE.FixedText.Text
-#, fuzzy
 msgid  "~Line type"
 msgstr "線條類型(~L)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "單線"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Crossed"
 msgstr "十字形"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
 msgid  "Triple"
 msgstr "三倍"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_COLOR.FixedText.Text
-#, fuzzy
 msgid  "Line ~color"
 msgstr "線條顏色(~C)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "增加(~A)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_MODIFY.PushButton.Text
-#, fuzzy
 msgid  "~Modify..."
 msgstr "修改(~M)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete..."
 msgstr "刪除(~D)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_LOAD.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Load Hatches List"
 msgstr "載入陰影線清單"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_SAVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Save Hatches List"
 msgstr "儲存陰影線清單"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.TabPage.Text
-#, fuzzy
 msgid  "Bitmap Patterns"
 msgstr "點陣圖樣式"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FL_PROP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_PIXEL_EDIT.FixedText.Text
-#, fuzzy
 msgid  "Pattern Editor"
 msgstr "樣式編輯器"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Foreground color"
 msgstr "前景顏色(~F)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_BACKGROUND_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Background color"
 msgstr "背景顏色(~B)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_BITMAPS_HIDDEN.FixedText.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "點陣圖"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "增加(~A)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_MODIFY.PushButton.Text
-#, fuzzy
 msgid  "~Modify..."
 msgstr "修改(~M)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_IMPORT.PushButton.Text
-#, fuzzy
 msgid  "~Import..."
 msgstr "匯入(~I)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete..."
 msgstr "刪除(~D)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_LOAD.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Load Bitmap List"
 msgstr "載入點陣圖清單"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_SAVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Save Bitmap List"
 msgstr "儲存點陣圖清單"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.TabPage.Text
-#, fuzzy
 msgid  "Gradients"
 msgstr "漸層色圖案"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FL_PROP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Ty~pe"
 msgstr "類型(~P)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Linear"
 msgstr "線形"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Axial"
 msgstr "軸向"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Radial"
 msgstr "徑向"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Ellipsoid"
 msgstr "橢圓體"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Square"
 msgstr "正方形"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
 msgid  "Rectangular"
 msgstr "矩形"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_CENTER_X.FixedText.Text
-#, fuzzy
 msgid  "Center ~X"
 msgstr "中心 X(~X)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_CENTER_Y.FixedText.Text
-#, fuzzy
 msgid  "Center ~Y"
 msgstr "中心 Y(~Y)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "A~ngle"
 msgstr "角度(~N)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.MTR_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degrees"
 msgstr " 度"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_BORDER.FixedText.Text
-#, fuzzy
 msgid  "~Border"
 msgstr "邊框(~B)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FixedText.Text
-#, fuzzy
 msgid  "~From"
 msgstr "從(~F)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_TO.FixedText.Text
-#, fuzzy
 msgid  "~To"
 msgstr "至(~T)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "增加(~A)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_MODIFY.PushButton.Text
-#, fuzzy
 msgid  "~Modify..."
 msgstr "修改(~M)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete..."
 msgstr "刪除(~D)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_LOAD.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Load Gradients List"
 msgstr "載入漸層色圖案清單"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_SAVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Save Gradients List"
 msgstr "儲存漸層色圖案清單"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.TabPage.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "顏色"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.FL_PROP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "名稱(~N)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "C~olor"
 msgstr "顏色(~O)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_TABLE_NAME.FixedText.Text
-#, fuzzy
 msgid  "Color table"
 msgstr "顏色表格"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-#, fuzzy
 msgid  "RGB"
 msgstr "RGB"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-#, fuzzy
 msgid  "CMYK"
 msgstr "CMYK"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "增加(~A)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_WORK_ON.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "編輯(~E)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete..."
 msgstr "刪除(~D)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_MODIFY.PushButton.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "修改(~M)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_LOAD.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Load Color List"
 msgstr "載入色彩清單"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_SAVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Save Color List"
 msgstr "儲存色彩清單"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.TabDialog.Text
-#, fuzzy
 msgid  "Area"
 msgstr "區域"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_AREA.PageItem.Text
-#, fuzzy
 msgid  "Area"
 msgstr "區域"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_SHADOW.PageItem.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "陰影"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_TRANSPARENCE.PageItem.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "透明"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_COLOR.PageItem.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "顏色"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_GRADIENT.PageItem.Text
-#, fuzzy
 msgid  "Gradients"
 msgstr "漸層色圖案"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_HATCH.PageItem.Text
-#, fuzzy
 msgid  "Hatching"
 msgstr "陰影線"
 
 #: source/tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_BITMAP.PageItem.Text
-#, fuzzy
 msgid  "Bitmaps"
 msgstr "點陣圖"
 
 #: source/tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.String.Text
-#, fuzzy
 msgid  "Hatching Style"
 msgstr "陰影樣式"
 
 #: source/tabpages/tabarea.src#STR_CUI_COLORMODEL.String.Text
-#, fuzzy
 msgid  "Color Mode"
 msgstr "色彩模式"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr "從左向右"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr "從右向左"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.String.Text
-#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "使用上層物件的設定"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_HORI.String.Text
-#, fuzzy
 msgid  "Left-to-right (horizontal)"
 msgstr "從左向右(橫書)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_HORI.String.Text
-#, fuzzy
 msgid  "Right-to-left (horizontal)"
 msgstr "從右向左(橫書)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_VERT.String.Text
-#, fuzzy
 msgid  "Right-to-left (vertical)"
 msgstr "從右向左(直書)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_VERT.String.Text
-#, fuzzy
 msgid  "Left-to-right (vertical)"
 msgstr "從左向右(直書)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FixedLine.Text
-#, fuzzy
 msgid  "Paper format"
 msgstr "紙張格式"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAPER_FORMAT.FixedText.Text
-#, fuzzy
 msgid  "~Format"
 msgstr "格式(~F)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAPER_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAPER_HEIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Height"
 msgstr "高度(~H)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_ORIENTATION.FixedText.Text
-#, fuzzy
 msgid  "Orientation"
 msgstr "對齊"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.RB_PORTRAIT.RadioButton.Text
-#, fuzzy
 msgid  "~Portrait"
 msgstr "直向(~P)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.RB_LANDSCAPE.RadioButton.Text
-#, fuzzy
 msgid  "L~andscape"
 msgstr "橫向(~A)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_TEXT_FLOW.FixedText.Text
-#, fuzzy
 msgid  "~Text direction"
 msgstr "文字方向(~T)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAPER_TRAY.FixedText.Text
-#, fuzzy
 msgid  "Paper ~tray"
 msgstr "紙張來源(~T)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FixedLine.Text
-#, fuzzy
 msgid  "Margins"
 msgstr "頁面邊距"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "向左(~L)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_RIGHT_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "向右(~R)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_TOP_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "向上(~T)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_BOTTOM_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "向下(~B)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FL_LAYOUT.FixedLine.Text
-#, fuzzy
 msgid  "Layout settings"
 msgstr "設定版面配置"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAGELAYOUT.FixedText.Text
-#, fuzzy
 msgid  "Page layout"
 msgstr "頁面版面配置"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
 msgid  "Right and left"
 msgstr "左和右"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
 msgid  "Mirrored"
 msgstr "翻轉的"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
 msgid  "Only right"
 msgstr "僅向右"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
 msgid  "Only left"
 msgstr "僅向左"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FixedText.Text
-#, fuzzy
 msgid  "For~mat"
 msgstr "格式(~M)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
 msgid  "A, B, C, ..."
 msgstr "A, B, C, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
 msgid  "a, b, c, ..."
 msgstr "a, b, c, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
 msgid  "I, II, III, ..."
 msgstr "I, II, III, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
 msgid  "i, ii, iii, ..."
 msgstr "i, ii, iii, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
 msgid  "1, 2, 3, ..."
 msgstr "1, 2, 3, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
 msgid  "None"
 msgstr "無"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FixedText.Text
-#, fuzzy
 msgid  "Table alignment"
 msgstr "表格對齊"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.CB_HORZ.CheckBox.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "水平方向(~Z)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.CB_VERT.CheckBox.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "垂直方向(~V)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.CB_ADAPT.CheckBox.Text
-#, fuzzy
 msgid  "~Fit object to paper format"
 msgstr "物件使用頁面格式(~F)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.CB_REGISTER.CheckBox.Text
-#, fuzzy
 msgid  "Register-true"
 msgstr "正反頁的行距相等"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_REGISTER.FixedText.Text
-#, fuzzy
 msgid  "Reference ~Style"
 msgstr "參照樣式(~S)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_INSIDE.String.Text
-#, fuzzy
 msgid  "I~nner"
 msgstr "向內(~N)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_OUTSIDE.String.Text
-#, fuzzy
 msgid  "O~uter"
 msgstr "向外(~U)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
 msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "您的頁邊設定有誤﹐頁邊不在列印範圍之內。\n\n您還是要接受這個設定？"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
-#, fuzzy
 msgid  "A6"
 msgstr "A6"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A5.ItemList.item
-#, fuzzy
 msgid  "A5"
 msgstr "A5"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A4.ItemList.item
-#, fuzzy
 msgid  "A4"
 msgstr "A4"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A3.ItemList.item
-#, fuzzy
 msgid  "A3"
 msgstr "A3"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_ISO.ItemList.item
-#, fuzzy
 msgid  "B6 (ISO)"
 msgstr "B6 (ISO)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_ISO.ItemList.item
-#, fuzzy
 msgid  "B5 (ISO)"
 msgstr "B5 (ISO)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_ISO.ItemList.item
-#, fuzzy
 msgid  "B4 (ISO)"
 msgstr "B4 (ISO)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LETTER.ItemList.item
-#, fuzzy
 msgid  "Letter"
 msgstr "Letter"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL.ItemList.item
-#, fuzzy
 msgid  "Legal"
 msgstr "Legal"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL2.ItemList.item
-#, fuzzy
 msgid  "Long Bond"
 msgstr "Long Bond"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_TABLOID.ItemList.item
-#, fuzzy
 msgid  "Tabloid"
 msgstr "Tabloid"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_JIS.ItemList.item
-#, fuzzy
 msgid  "B6 (JIS)"
 msgstr "B6 (JIS)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_JIS.ItemList.item
-#, fuzzy
 msgid  "B5 (JIS)"
 msgstr "B5 (JIS)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_JIS.ItemList.item
-#, fuzzy
 msgid  "B4 (JIS)"
 msgstr "B4 (JIS)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI16.ItemList.item
-#, fuzzy
 msgid  "16 Kai"
 msgstr "16 開"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32.ItemList.item
-#, fuzzy
 msgid  "32 Kai"
 msgstr "32 開"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32BIG.ItemList.item
-#, fuzzy
 msgid  "Big 32 Kai"
 msgstr "32 大開"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_USER.ItemList.item
-#, fuzzy
 msgid  "User"
 msgstr "使用者"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_DL.ItemList.item
-#, fuzzy
 msgid  "DL Envelope"
 msgstr "DL 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C6.ItemList.item
-#, fuzzy
 msgid  "C6 Envelope"
 msgstr "C6 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C65.ItemList.item
-#, fuzzy
 msgid  "C6/5 Envelope"
 msgstr "C6/5 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C5.ItemList.item
-#, fuzzy
 msgid  "C5 Envelope"
 msgstr "C5 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ItemList.item
-#, fuzzy
 msgid  "C4 Envelope"
 msgstr "C4 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ItemList.item
-#, fuzzy
 msgid  "#6 3/4 (Personal) Envelope"
 msgstr "#6 3/4 (個人) 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_MONARCH.ItemList.item
-#, fuzzy
 msgid  "#8 (Monarch) Envelope"
 msgstr "#8 (Monarch) 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM9.ItemList.item
-#, fuzzy
 msgid  "#9 Envelope"
 msgstr "#9 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM10.ItemList.item
-#, fuzzy
 msgid  "#10 Envelope"
 msgstr "#10 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM11.ItemList.item
-#, fuzzy
 msgid  "#11 Envelope"
 msgstr "#11 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM12.ItemList.item
-#, fuzzy
 msgid  "#12 Envelope"
 msgstr "#12 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A6.ItemList.item
-#, fuzzy
 msgid  "A6"
 msgstr "A6"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A5.ItemList.item
-#, fuzzy
 msgid  "A5"
 msgstr "A5"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A4.ItemList.item
-#, fuzzy
 msgid  "A4"
 msgstr "A4"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A3.ItemList.item
-#, fuzzy
 msgid  "A3"
 msgstr "A3"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A2.ItemList.item
-#, fuzzy
 msgid  "A2"
 msgstr "A2"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A1.ItemList.item
-#, fuzzy
 msgid  "A1"
 msgstr "A1"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A0.ItemList.item
-#, fuzzy
 msgid  "A0"
 msgstr "A0"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B6_ISO.ItemList.item
-#, fuzzy
 msgid  "B6 (ISO)"
 msgstr "B6 (ISO)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B5_ISO.ItemList.item
-#, fuzzy
 msgid  "B5 (ISO)"
 msgstr "B5 (ISO)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B4_ISO.ItemList.item
-#, fuzzy
 msgid  "B4 (ISO)"
 msgstr "B4 (ISO)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LETTER.ItemList.item
-#, fuzzy
 msgid  "Letter"
 msgstr "Letter"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LEGAL.ItemList.item
-#, fuzzy
 msgid  "Legal"
 msgstr "Legal"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LEGAL2.ItemList.item
-#, fuzzy
 msgid  "Long Bond"
 msgstr "Long Bond"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_TABLOID.ItemList.item
-#, fuzzy
 msgid  "Tabloid"
 msgstr "Tabloid"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B6_JIS.ItemList.item
-#, fuzzy
 msgid  "B6 (JIS)"
 msgstr "B6 (JIS)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B5_JIS.ItemList.item
-#, fuzzy
 msgid  "B5 (JIS)"
 msgstr "B5 (JIS)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B4_JIS.ItemList.item
-#, fuzzy
 msgid  "B4 (JIS)"
 msgstr "B4 (JIS)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI16.ItemList.item
-#, fuzzy
 msgid  "16 Kai"
 msgstr "16 開"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI32.ItemList.item
-#, fuzzy
 msgid  "32 Kai"
 msgstr "32 開"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI32BIG.ItemList.item
-#, fuzzy
 msgid  "Big 32 Kai"
 msgstr "32 大開"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_USER.ItemList.item
-#, fuzzy
 msgid  "User"
 msgstr "使用者"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DL.ItemList.item
-#, fuzzy
 msgid  "DL Envelope"
 msgstr "DL 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C6.ItemList.item
-#, fuzzy
 msgid  "C6 Envelope"
 msgstr "C6 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C65.ItemList.item
-#, fuzzy
 msgid  "C6/5 Envelope"
 msgstr "C6/5 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C5.ItemList.item
-#, fuzzy
 msgid  "C5 Envelope"
 msgstr "C5 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C4.ItemList.item
-#, fuzzy
 msgid  "C4 Envelope"
 msgstr "C4 信封"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ItemList.item
-#, fuzzy
 msgid  "Dia Slide"
 msgstr "Dia Slide"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_SCREEN.ItemList.item
-#, fuzzy
 msgid  "Screen"
 msgstr "螢幕"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.TabPage.Text
-#, fuzzy
 msgid  "Number Format"
 msgstr "數字格式"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_CATEGORY.FixedText.Text
-#, fuzzy
 msgid  "~Category"
 msgstr "種類(~C)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "All"
 msgstr "全部"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "User-defined"
 msgstr "使用者定義的"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Number"
 msgstr "數字"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Percent"
 msgstr "百分比"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Currency"
 msgstr "貨幣"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Date"
 msgstr "日期"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Time"
 msgstr "時間"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Scientific"
 msgstr "科學"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Fraction"
 msgstr "分數"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "布林值"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "文字"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FixedText.Text
-#, fuzzy
 msgid  "~Format code"
 msgstr "格式碼(~F)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_FORMAT.FixedText.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "格式(~O)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CURRENCY.Default.StringList.item
-#, fuzzy
 msgid  "Automatically"
 msgstr "自動"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_DECIMALS.FixedText.Text
-#, fuzzy
 msgid  "~Decimal places"
 msgstr "小數點位數(~D)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_LEADZEROES.FixedText.Text
-#, fuzzy
 msgid  "Leading ~zeroes"
 msgstr "前置零(~Z)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.BTN_NEGRED.CheckBox.Text
-#, fuzzy
 msgid  "~Negative numbers red"
 msgstr "用紅色顯示負數(~N)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.BTN_THOUSAND.CheckBox.Text
-#, fuzzy
 msgid  "~Thousands separator"
 msgstr "千位分隔符(~T)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "語言(~L)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.CB_SOURCEFORMAT.CheckBox.Text
-#, fuzzy
 msgid  "So~urce format"
 msgstr "原始格式(~U)"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Add"
 msgstr "增加"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Remove"
 msgstr "移除"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_INFO.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Edit Comment"
 msgstr "編輯備註"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.STR_AUTO_ENTRY.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "選擇"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_SINGLE_NUM.FL_VALUES.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "選擇"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_NUM.FL_VALUES.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "選擇"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.FL_VALUES.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "選擇"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.CB_LINKED.CheckBox.Text
-#, fuzzy
 msgid  "~Link graphics"
 msgstr "連結圖形(~L)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.FT_ERROR.FixedText.Text
-#, fuzzy
 msgid  "The Gallery theme 'Bullets' is empty (no graphics)."
 msgstr "畫廊主題[項目符號]內沒有圖形。"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_LEVEL.FixedText.Text
-#, fuzzy
 msgid  "Level"
 msgstr "級"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "Format"
 msgstr "格式"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_FMT.FixedText.Text
-#, fuzzy
 msgid  "~Numbering"
 msgstr "編號(~N)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.4.StringList.item
-#, fuzzy
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3, ..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.StringList.item
-#, fuzzy
 msgid  "A, B, C, ... "
 msgstr "A, B, C, ..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.StringList.item
-#, fuzzy
 msgid  "a, b, c, ..."
 msgstr "a, b, c, ..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.StringList.item
-#, fuzzy
 msgid  "I, II, III, ... "
 msgstr "I, II, III, ..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.3.StringList.item
-#, fuzzy
 msgid  "i, ii, iii, ... "
 msgstr "i, ii, iii, ..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.9.StringList.item
-#, fuzzy
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA, ..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.StringList.item
-#, fuzzy
 msgid  "a, .., aa, .., aaa, ..."
 msgstr "a, .., aa, .., aaa, ..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.StringList.item
-#, fuzzy
 msgid  "Bullet"
 msgstr "項目符號"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.StringList.item
-#, fuzzy
 msgid  "Graphics"
 msgstr "圖形"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0x88.StringList.item
-#, fuzzy
 msgid  "Linked graphics"
 msgstr "連結圖形"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.StringList.item
-#, fuzzy
 msgid  "None"
 msgstr "無"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.StringList.item
-#, fuzzy
 msgid  "Native Numbering"
 msgstr "當地編號"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.38.StringList.item
-#, fuzzy
 msgid  "А, Б, .., Аа, Аб, ... (Bulgarian)"
 msgstr "А, Б, .., Аа, Аб, ... (保加利亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.39.StringList.item
-#, fuzzy
 msgid  "а, б, .., аа, аб, ... (Bulgarian)"
 msgstr "а, б, .., аа, аб, ... (保加利亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.40.StringList.item
-#, fuzzy
 msgid  "А, Б, .., Аа, Бб, ... (Bulgarian)"
 msgstr "А, Б, .., Аа, Бб, ... (保加利亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.41.StringList.item
-#, fuzzy
 msgid  "а, б, .., аа, бб, ... (Bulgarian)"
 msgstr "а, б, .., аа, бб, ... (保加利亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.42.StringList.item
-#, fuzzy
 msgid  "А, Б, .., Аа, Аб, ... (Russian)"
 msgstr "А, Б, .., Аа, Аб, ... (俄語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.43.StringList.item
-#, fuzzy
 msgid  "а, б, .., аа, аб, ... (Russian)"
 msgstr "а, б, .., аа, аб, ... (俄語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.44.StringList.item
-#, fuzzy
 msgid  "А, Б, .., Аа, Бб, ... (Russian)"
 msgstr "А, Б, .., Аа, Бб, ... (俄語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.45.StringList.item
-#, fuzzy
 msgid  "а, б, .., аа, бб, ... (Russian)"
 msgstr "а, б, .., аа, бб, ... (俄語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.48.StringList.item
-#, fuzzy
 msgid  "А, Б, .., Аа, Аб, ... (Serbian)"
 msgstr "А、Б、...、Аа、Аб、... (塞爾維亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.49.StringList.item
-#, fuzzy
 msgid  "а, б, .., аа, аб, ... (Serbian)"
 msgstr "а、б、...、аа、аб、... (塞爾維亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.50.StringList.item
-#, fuzzy
 msgid  "А, Б, .., Аа, Бб, ... (Serbian)"
 msgstr "А、Б、...、Аа、Бб、... (塞爾維亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.51.StringList.item
-#, fuzzy
 msgid  "а, б, .., аа, бб, ... (Serbian)"
 msgstr "а、б、...、аа、бб、... (塞爾維亞語)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_PREFIX.FixedText.Text
-#, fuzzy
 msgid  "Before"
 msgstr "之前"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_SUFFIX.FixedText.Text
-#, fuzzy
 msgid  "After"
 msgstr "之後"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_CHARFMT.FixedText.Text
-#, fuzzy
 msgid  "~Character Style"
 msgstr "字元樣式(~C)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_BUL_COLOR.FixedText.Text
-#, fuzzy
 msgid  "Color"
 msgstr "顏色"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_BUL_REL_SIZE.FixedText.Text
-#, fuzzy
 msgid  "~Relative size"
 msgstr "相對的大小(~R)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_ALL_LEVEL.FixedText.Text
-#, fuzzy
 msgid  "Show sublevels"
 msgstr "完整"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_START.FixedText.Text
-#, fuzzy
 msgid  "Start at"
 msgstr "開始從"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_ALIGN.FixedText.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "對齊(~A)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item1.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "左"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item2.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "置中"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item3.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "右"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.STR_BULLET.String.Text
-#, fuzzy
 msgid  "Character"
 msgstr "字元"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_BITMAP.FixedText.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "圖形"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MN_GRAPHIC_DLG.MenuItem.Text
-#, fuzzy
 msgid  "From file..."
 msgstr "從檔案..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MN_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "Gallery"
 msgstr "畫廊"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "Select..."
 msgstr "選擇..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Width"
 msgstr "寬度"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_MULT.FixedText.Text
-#, fuzzy
 msgid  "Height"
 msgstr "高度"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_RATIO.CheckBox.Text
-#, fuzzy
 msgid  "Keep ratio"
 msgstr "同步化"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_ORIENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "對齊"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item1.StringList.item
-#, fuzzy
 msgid  "Top of baseline"
 msgstr "基線上方"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item2.StringList.item
-#, fuzzy
 msgid  "Center of baseline"
 msgstr "基線置中"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item3.StringList.item
-#, fuzzy
 msgid  "Bottom of baseline"
 msgstr "基線下方"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item4.StringList.item
-#, fuzzy
 msgid  "Top of character"
 msgstr "字元上方"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item5.StringList.item
-#, fuzzy
 msgid  "Center of character"
 msgstr "字元置中"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item6.StringList.item
-#, fuzzy
 msgid  "Bottom of character"
 msgstr "字元下方"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item7.StringList.item
-#, fuzzy
 msgid  "Top of line"
 msgstr "行上方"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item8.StringList.item
-#, fuzzy
 msgid  "Center of line"
 msgstr "行置中"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item9.StringList.item
-#, fuzzy
 msgid  "Bottom of line"
 msgstr "行下方"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FixedLine.Text
-#, fuzzy
 msgid  "All levels"
 msgstr "所有層級"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CheckBox.Text
-#, fuzzy
 msgid  "~Consecutive numbering"
 msgstr "連續編號(~C)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.ST_POPUP_EMPTY_ENTRY.String.Text
-#, fuzzy
 msgid  "There are no graphics in the 'Bullets' Gallery theme."
 msgstr "畫廊主題[項目符號]中沒有圖形。"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LEVEL.FixedText.Text
-#, fuzzy
 msgid  "Level"
 msgstr "級"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position and spacing"
 msgstr "位置和間隔"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_BORDERDIST.FixedText.Text
-#, fuzzy
 msgid  "Indent"
 msgstr "縮排"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.CB_RELATIVE.CheckBox.Text
-#, fuzzy
 msgid  "Relati~ve"
 msgstr "相對的(~V)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_INDENT.FixedText.Text
-#, fuzzy
 msgid  "Width of numbering"
 msgstr "編號寬度"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_NUMDIST.FixedText.Text
-#, fuzzy
 msgid  "Minimum space numbering <-> text"
 msgstr "編號和內文之間的最少間隔"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_ALIGN.FixedText.Text
-#, fuzzy
 msgid  "N~umbering alignment"
 msgstr "編號對齊(~U)"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.item1.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "左"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.item2.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "置中"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.item3.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "右"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LABEL_FOLLOWED_BY.FixedText.Text
-#, fuzzy
 msgid  "Numbering followed by"
 msgstr "編號之後"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.item1.StringList.item
-#, fuzzy
 msgid  "Tab stop"
 msgstr "定位鍵"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.item2.StringList.item
-#, fuzzy
 msgid  "Space"
 msgstr "空格"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.item3.StringList.item
-#, fuzzy
 msgid  "Nothing"
 msgstr "沒有"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LISTTAB.FixedText.Text
-#, fuzzy
 msgid  "at"
 msgstr "從"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_ALIGNED_AT.FixedText.Text
-#, fuzzy
 msgid  "Aligned at"
 msgstr "對齊"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_INDENT_AT.FixedText.Text
-#, fuzzy
 msgid  "Indent at"
 msgstr "縮排"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.PB_STANDARD.PushButton.Text
-#, fuzzy
 msgid  "Default"
 msgstr "預設"
 
 #: source/tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "連結"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TabDialog.Text
-#, fuzzy
 msgid  "Border / Background"
 msgstr "邊框和背景"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "邊框"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "背景"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.TabPage.Text
-#, fuzzy
 msgid  "Distribution"
 msgstr "分布"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.FL_HORIZONTAL.FixedLine.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "水平"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_NONE.RadioButton.Text
-#, fuzzy
 msgid  "~None"
 msgstr "無(~N)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_LEFT.RadioButton.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "左(~L)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_CENTER.RadioButton.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "中心(~C)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_DISTANCE.RadioButton.Text
-#, fuzzy
 msgid  "~Spacing"
 msgstr "間隔(~S)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_RIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "右(~R)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.FL_VERTICAL.FixedLine.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "垂直"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RadioButton.Text
-#, fuzzy
 msgid  "N~one"
 msgstr "無(~O)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RadioButton.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "上(~T)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_CENTER.RadioButton.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "中心(~E)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_DISTANCE.RadioButton.Text
-#, fuzzy
 msgid  "S~pacing"
 msgstr "間隔(~P)"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_BOTTOM.RadioButton.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "下(~B)"
 
 #: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-#, fuzzy
 msgid  "Unlinked graphic"
 msgstr "未連結的圖形"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
-#, fuzzy
 msgid  "Background"
 msgstr "背景"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
-#, fuzzy
 msgid  "A~s"
 msgstr "填充(~S)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
 msgid  "Color"
 msgstr "顏色"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
 msgid  "Graphic"
 msgstr "圖形"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_TBL_DESC.FixedText.Text
-#, fuzzy
 msgid  "F~or"
 msgstr "用於(~O)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Cell"
 msgstr "儲存格"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Row"
 msgstr "儲存格"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item3.StringList.item
-#, fuzzy
 msgid  "Table"
 msgstr "表格"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "段落"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Character"
 msgstr "字元"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FixedLine.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "背景顏色"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FixedText.Text
-#, fuzzy
 msgid  "~Transparency"
 msgstr "透明(~T)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_FILE.FixedLine.Text
-#, fuzzy
 msgid  "File"
 msgstr "檔案"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "瀏覽(~B)..."
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_LINK.CheckBox.Text
-#, fuzzy
 msgid  "~Link"
 msgstr "連結(~L)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Type"
 msgstr "類型"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_POSITION.RadioButton.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_AREA.RadioButton.Text
-#, fuzzy
 msgid  "Ar~ea"
 msgstr "區域(~E)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_TILE.RadioButton.Text
-#, fuzzy
 msgid  "~Tile"
 msgstr "平鋪(~T)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FL_GRAPH_TRANS.FixedLine.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "透明"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pre~view"
 msgstr "預覽(~V)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.STR_BROWSE.String.Text
-#, fuzzy
 msgid  "Find graphics"
 msgstr "尋找圖形"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TabPage.Text
-#, fuzzy
 msgid  "Assign Macro"
 msgstr "指定巨集"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_EVENT.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "事件"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_ASSMACRO.String.Text
-#, fuzzy
 msgid  "Assigned macro"
 msgstr "指定的巨集"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
 msgid  "~Existing macros\\n"
-msgstr ""
+msgstr "現有的巨集(~E)\n"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
-#, fuzzy
 msgid  "~Assign"
 msgstr "指定(~A)"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "移除(~R)"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_MACROS.String.Text
-#, fuzzy
 msgid  "Macros"
 msgstr "巨集"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.TabDialog.Text
-#, fuzzy
 msgid  "AutoCorrect"
 msgstr "自動校正"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.PageItem.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "取代"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PageItem.Text
-#, fuzzy
 msgid  "Exceptions"
 msgstr "例外"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PageItem.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "本土化選項"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "自動完成字詞"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "智慧標籤"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
-#, fuzzy
 msgid  "Replacements and exceptions for language:"
 msgstr "使用取代和例外的語言："
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_USE_REPLACE.String.Text
-#, fuzzy
 msgid  "Use replacement table"
 msgstr "使用取代清單"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_WORD.String.Text
-#, fuzzy
 msgid  "Correct TWo INitial CApitals"
 msgstr "校正字首的兩個大寫字母"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.String.Text
-#, fuzzy
 msgid  "Capitalize first letter of every sentence"
 msgstr "設定每個句首由大寫字母開始"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.String.Text
-#, fuzzy
 msgid  "Automatic *bold* and _underline_"
 msgstr "自動*加粗*和加底線"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.STR_NO_DBL_SPACES.String.Text
-#, fuzzy
 msgid  "Ignore double spaces"
 msgstr "忽略雙格空字元"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.String.Text
-#, fuzzy
 msgid  "URL Recognition"
 msgstr "識別 URL"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.String.Text
-#, fuzzy
 msgid  "Replace dashes"
 msgstr "取代虛線"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "設定"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.PB_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "編輯(~E)..."
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[M]: Replace while modifying existing text"
 msgstr "[M]: 在修改時執行自動格式功能"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER2_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[T]: AutoFormat/AutoCorrect while typing"
 msgstr "[T]: 在輸入時執行自動格式或自動校正功能"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.String.Text
-#, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "刪除空白的段落"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.String.Text
-#, fuzzy
 msgid  "Replace Custom Styles"
 msgstr "取代自訂樣式"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.String.Text
-#, fuzzy
 msgid  "Replace bullets with: "
 msgstr "項目符號取代成： "
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_RIGHT_MARGIN.String.Text
-#, fuzzy
 msgid  "Combine single line paragraphs if length greater than"
 msgstr "合併單行段落的起始數目"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_NUM.String.Text
-#, fuzzy
 msgid  "Apply numbering - symbol: "
 msgstr "使用編號 - 圖示： "
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_BORDER.String.Text
-#, fuzzy
 msgid  "Apply border"
 msgstr "使用邊框"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_TABLE.String.Text
-#, fuzzy
 msgid  "Create table"
 msgstr "製作表格"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.String.Text
-#, fuzzy
 msgid  "Apply Styles"
 msgstr "使用樣式"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.String.Text
-#, fuzzy
 msgid  "Delete spaces and tabs at beginning and end of paragraph"
 msgstr "移除段落起始及結尾位置的空格字元和定位鍵"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_BETWEEN_LINES.String.Text
-#, fuzzy
 msgid  "Delete spaces and tabs at end and start of line"
 msgstr "刪除一行開始與結尾的空格和定位字元"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.FL_PRCNT.FixedLine.Text
-#, fuzzy
 msgid  "Minimum size"
 msgstr "最小值"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.MetricField.Text
-#, fuzzy
 msgid  "Combine"
 msgstr "合併"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "縮寫(~C)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "~With:"
 msgstr "取代成(~W)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.CB_TEXT_ONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Text only"
 msgstr "只是純文字(~T)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "新增(~N)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.STR_MODIFY.String.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "取代(~R)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_ABBREV.FixedLine.Text
-#, fuzzy
 msgid  "Abbreviations (no subsequent capital)"
 msgstr "縮寫字母後不附帶大寫字母"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWABBREV.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "新增(~N)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELABBREV.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CheckBox.Text
-#, fuzzy
 msgid  "~AutoInclude"
 msgstr "自動加入(~A)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FixedLine.Text
-#, fuzzy
 msgid  "Words with TWo INitial CApitals"
 msgstr "兩個大寫字母開頭的字"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Ne~w"
 msgstr "新增(~W)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Dele~te"
 msgstr "刪除(~T)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOCAPS.CheckBox.Text
-#, fuzzy
 msgid  "A~utoInclude"
 msgstr "自動加入(~U)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.String.Text
-#, fuzzy
 msgid  "New abbreviations"
 msgstr "新增縮寫"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.String.Text
-#, fuzzy
 msgid  "Delete abbreviations"
 msgstr "刪除縮寫"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWDOUBLECAPS.String.Text
-#, fuzzy
 msgid  "New words with two initial capitals"
 msgstr "新增兩個大寫字母開頭的字"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELDOUBLECAPS.String.Text
-#, fuzzy
 msgid  "Delete words with two initial capitals"
 msgstr "刪除兩個大寫字母開頭的字"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TabPage.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "本土化選項"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.String.Text
-#, fuzzy
 msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr "在法文文字的特定標點符號前加入不斷行的空格字元"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.String.Text
-#, fuzzy
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
 msgstr "格式化序數尾碼 (1st -> 1^st)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FixedLine.Text
-#, fuzzy
 msgid  "Single quotes"
 msgstr "單引號"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_SGL_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "取代(~C)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~Start quote:"
 msgstr "在字首(~S)："
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~End quote:"
 msgstr "在字尾(~E)："
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_SGL_STD.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "預設(~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_DOUBLE.FixedLine.Text
-#, fuzzy
 msgid  "Double quotes"
 msgstr "雙引號"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repl~ace"
 msgstr "取代(~A)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "Start q~uote:"
 msgstr "在字首(~U)："
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "E~nd quote:"
 msgstr "在字尾(~N)："
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_DBL_STD.PushButton.Text
-#, fuzzy
 msgid  "De~fault"
 msgstr "預設(~F)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_START.String.Text
-#, fuzzy
 msgid  "Start quote"
 msgstr "字首字符"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_END.String.Text
-#, fuzzy
 msgid  "End quote"
 msgstr "字尾字符"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "預設"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.String.Text
-#, fuzzy
 msgid  "Single quotes default"
 msgstr "單引號預設"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.String.Text
-#, fuzzy
 msgid  "Double quotes default"
 msgstr "雙引號預設"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.String.Text
-#, fuzzy
 msgid  "Start quote of single quotes"
 msgstr "單引號的上引號"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.String.Text
-#, fuzzy
 msgid  "Start quote of double quotes"
 msgstr "雙引號的上引號"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.String.Text
-#, fuzzy
 msgid  "End quote of single quotes"
 msgstr "單引號的下引號"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.String.Text
-#, fuzzy
 msgid  "End quote of double quotes"
 msgstr "雙引號的下引號"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CheckBox.Text
-#, fuzzy
 msgid  "Enable word ~completion"
 msgstr "啟用自動完成字詞(~C)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_APPEND_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "~Append space"
 msgstr "附加空格(~A)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_AS_TIP.CheckBox.Text
-#, fuzzy
 msgid  "~Show as tip"
 msgstr "當作提示顯示(~S)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_COLLECT.CheckBox.Text
-#, fuzzy
 msgid  "C~ollect words"
 msgstr "收集字詞(~O)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
-#, fuzzy
 msgid  "~When closing a document, remove the words collected from it from the list"
 msgstr "在關閉文件時，從清單移除收集的字詞(~W)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
-#, fuzzy
 msgid  "Acc~ept with"
 msgstr "採用建議就按一下(~E)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MIN_WORDLEN.FixedText.Text
-#, fuzzy
 msgid  "Mi~n. word length"
 msgstr "最短字長(~N)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MAX_ENTRIES.FixedText.Text
-#, fuzzy
 msgid  "~Max. entries"
 msgstr "最多條目(~M)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PB_ENTRIES.PushButton.Text
-#, fuzzy
 msgid  "~Delete Entry"
 msgstr "刪除條目(~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PushButton.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "自動完成字詞"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "智慧標籤"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CheckBox.Text
-#, fuzzy
 msgid  "Label text with smart tags"
 msgstr "使用智慧標籤貼上文字標籤"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.FT_SMARTTAGS.FixedText.Text
-#, fuzzy
 msgid  "Currently installed smart tags"
 msgstr "目前已安裝的智慧標籤"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PushButton.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "屬性..."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.String.Text
-#, fuzzy
 msgid  "Please enter a name for the gradient:"
 msgstr "請在這裡輸入一個新的漸層色圖案名稱："
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.String.Text
-#, fuzzy
 msgid  "Do you want to delete the gradient?"
 msgstr "真要刪除這個漸層色圖案？"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
 msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "這個漸層色圖案已經修改﹐但是尚未儲存。\n您能夠變更選取的漸層色圖案\n或者增加一個新的漸層色圖案。"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
-#, fuzzy
 msgid  "Please enter a name for the bitmap:"
 msgstr "請您在此為新的位圖輸入一個名稱："
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_EXT_BITMAP.String.Text
-#, fuzzy
 msgid  "Please enter a name for the external bitmap:"
 msgstr "請您在此為新的外來點陣圖輸入一個名稱："
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_DEL_BITMAP.String.Text
-#, fuzzy
 msgid  "Are you sure you want to delete the bitmap?"
 msgstr "您真要刪除這個點陣圖？"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
 msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "這個點陣圖的樣式已經修改﹐但是尚未儲存。 \n您能夠變更選取的點陣圖\n或者增加一個新的點陣圖。"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
-#, fuzzy
 msgid  "Please enter a name for the line style:"
 msgstr "請在此為新的線條樣式輸入一個名稱："
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the line style?"
 msgstr "真要刪除這個線條樣式？"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
 msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "這個線條樣式已經修改﹐但是尚未儲存。 \n您能夠變更選取的線條樣式\n或者增加一個新的線條樣式。"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
-#, fuzzy
 msgid  "Please enter a name for the hatching:"
 msgstr "請您在此為新的陰影線輸入一個名稱："
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.String.Text
-#, fuzzy
 msgid  "Do you want to delete the hatching?"
 msgstr "您真要刪除這個陰影線？"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
 msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "這個陰影已經修改﹐但是尚未儲存。 \n您能夠變更選取的陰影\n或者增加一個新的陰影。"
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
-#, fuzzy
 msgid  "Modify"
 msgstr "修改"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ADD.String.Text
-#, fuzzy
 msgid  "Add"
 msgstr "增加"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_COLOR.String.Text
-#, fuzzy
 msgid  "Please enter a name for the new color:"
 msgstr "請在這裡輸入一個新顏色的名稱："
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_DEL_COLOR.String.Text
-#, fuzzy
 msgid  "Do you want to delete the color?"
 msgstr "您真要刪除這個顏色？"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
 msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
-msgstr ""
+msgstr "已經修改這個顏色﹐但是尚未儲存。 \n您能夠變更選取的顏色\n或者增加一個新的顏色。"
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "表格"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WRITE_DATA_ERROR.String.Text
-#, fuzzy
 msgid  "The file could not be saved!"
 msgstr "無法儲存這個檔案！"
 
 #: source/tabpages/strings.src#RID_SVXSTR_READ_DATA_ERROR.String.Text
-#, fuzzy
 msgid  "The file could not be loaded!"
 msgstr "無法載入這個檔案！"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.String.Text
-#, fuzzy
 msgid  "The list was modified without saving. Would you like to save the list now?"
 msgstr "這個表格已經修改﹐但是尚未儲存。 您要儲存這個表格？"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name you have entered already exists. \\nPlease choose another name."
-msgstr ""
+msgstr "您輸入的名稱已經存在。\n請您輸入一個其他的名稱。"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
-#, fuzzy
 msgid  "Please enter a name for the new arrowhead:"
 msgstr "請在此為新線條箭頭輸入一個名稱："
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINEEND.String.Text
-#, fuzzy
 msgid  "Do you want to delete the arrowhead?"
 msgstr "您真要刪除這個線條箭頭？"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
 msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "這個線條箭頭已經修改﹐但是尚未儲存。\n您要現在儲存這個線條箭頭？"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
-#, fuzzy
 msgid  "Indents and Spacing"
 msgstr "縮排和間隔"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_LEFTINDENT.FixedText.Text
-#, fuzzy
 msgid  "Before text"
 msgstr "文字之前"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_RIGHTINDENT.FixedText.Text
-#, fuzzy
 msgid  "After text"
 msgstr "文字之後"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_FLINEINDENT.FixedText.Text
-#, fuzzy
 msgid  "~First line"
 msgstr "第一行(~F)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.CB_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "自動(~A)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FixedLine.Text
-#, fuzzy
 msgid  "Indent"
 msgstr "縮排"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FixedText.Text
-#, fuzzy
 msgid  "Ab~ove paragraph"
 msgstr "段落之上(~O)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_BOTTOMDIST.FixedText.Text
-#, fuzzy
 msgid  "Below paragraph"
 msgstr "段落之下"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_DIST.FixedLine.Text
-#, fuzzy
 msgid  "Spacing"
 msgstr "間隔"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "單行"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "1.5 行"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
 msgid  "Double"
 msgstr "雙行"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
 msgid  "Proportional"
 msgstr "成比例"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
 msgid  "At least"
 msgstr "至少"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
 msgid  "Leading"
 msgstr "前導字元"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.ST_LINEDIST_ABS.String.Text
-#, fuzzy
 msgid  "Fixed"
 msgstr "固定"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_LINEDIST.FixedText.Text
-#, fuzzy
 msgid  "of"
 msgstr "由"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_LINEDIST.FixedLine.Text
-#, fuzzy
 msgid  "Line spacing"
 msgstr "行距"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.CB_REGISTER.CheckBox.Text
-#, fuzzy
 msgid  "A~ctivate"
 msgstr "啟用(~C)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_REGISTER.FixedLine.Text
-#, fuzzy
 msgid  "Register-true"
 msgstr "正反頁的行距相等"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.TabPage.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "對齊"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_ALIGN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_LEFTALIGN.RadioButton.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "左(~L)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_RIGHTALIGN.RadioButton.Text
-#, fuzzy
 msgid  "Righ~t"
 msgstr "右(~T)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_CENTERALIGN.RadioButton.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "置中(~C)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_JUSTIFYALIGN.RadioButton.Text
-#, fuzzy
 msgid  "Justified"
 msgstr "左右對齊"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.ST_LEFTALIGN_ASIAN.String.Text
-#, fuzzy
 msgid  "~Left/Top"
 msgstr "向左/向上(~L)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.ST_RIGHTALIGN_ASIAN.String.Text
-#, fuzzy
 msgid  "Righ~t/Bottom"
 msgstr "向右/向下(~T)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_LASTLINE.FixedText.Text
-#, fuzzy
 msgid  "~Last line"
 msgstr "最後一行(~L)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "預設"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "左"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "置中"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
 msgid  "Justified"
 msgstr "左右對齊"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CheckBox.Text
-#, fuzzy
 msgid  "~Expand single word"
 msgstr "拉長單一文字(~E)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_SNAP.CheckBox.Text
-#, fuzzy
 msgid  "Snap to text grid (if active)"
 msgstr "和文字格線對齊 (如有使用格線)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_VERTALIGN.FixedLine.Text
-#, fuzzy
 msgid  "Text-to-text"
 msgstr "字元高度"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_VERTALIGN.FixedText.Text
-#, fuzzy
 msgid  "~Alignment"
 msgstr "對齊(~A)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item2.StringList.item
-#, fuzzy
 msgid  "Base line"
 msgstr "基線"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item3.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "向上"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item4.StringList.item
-#, fuzzy
 msgid  "Middle"
 msgstr "置中"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item5.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "向下"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FixedText.Text
-#, fuzzy
 msgid  "Text ~direction"
 msgstr "文字方向(~D)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TabPage.Text
-#, fuzzy
 msgid  "Text Flow"
 msgstr "換行和分頁"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TriStateBox.Text
-#, fuzzy
 msgid  "A~utomatically"
 msgstr "自動(~U)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_HYPHENBEFORE.FixedText.Text
-#, fuzzy
 msgid  "C~haracters at line end"
 msgstr "行尾字元(~H)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_HYPHENAFTER.FixedText.Text
-#, fuzzy
 msgid  "Cha~racters at line begin"
 msgstr "行首字元(~R)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_MAXHYPH.FixedText.Text
-#, fuzzy
 msgid  "~Maximum number of consecutive hyphens"
 msgstr "最多連續連字號個數(~M)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_HYPHEN.FixedLine.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "連字符"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FixedLine.Text
-#, fuzzy
 msgid  "Breaks"
 msgstr "換行和分頁"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TriStateBox.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "插入"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKTYPE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "類型(~T)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.StringList.item
-#, fuzzy
 msgid  "Page"
 msgstr "頁"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.StringList.item
-#, fuzzy
 msgid  "Column"
 msgstr "欄"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FixedText.Text
-#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.StringList.item
-#, fuzzy
 msgid  "Before"
 msgstr "之前"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.StringList.item
-#, fuzzy
 msgid  "After"
 msgstr "之後"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TriStateBox.Text
-#, fuzzy
 msgid  "With Page St~yle"
 msgstr "使用頁面樣式(~Y)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_PAGENUM.FixedText.Text
-#, fuzzy
 msgid  "Page ~number"
 msgstr "頁碼(~N)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_KEEPTOGETHER.TriStateBox.Text
-#, fuzzy
 msgid  "~Do not split paragraph"
 msgstr "不分割段落(~D)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.CB_KEEPTOGETHER.TriStateBox.Text
-#, fuzzy
 msgid  "~Keep with next paragraph"
 msgstr "段落不分開(~K)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_ORPHANS.TriStateBox.Text
-#, fuzzy
 msgid  "~Orphan control"
 msgstr "段落前分頁(~O)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_ORPHANS.FixedText.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "行"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_WIDOWS.TriStateBox.Text
-#, fuzzy
 msgid  "~Widow control"
 msgstr "段落遺留字串控制(~W)"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_WIDOWS.FixedText.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "行"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.TabPage.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "亞洲語言排版式樣"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.FL_AS_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Line change"
 msgstr "換行"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.CB_AS_FORBIDDEN.TriStateBox.Text
-#, fuzzy
 msgid  "Apply list of forbidden characters to the beginning and end of lines"
 msgstr "顧及行首行末禁止使用字元的清單"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.CB_AS_HANG_PUNC.TriStateBox.Text
-#, fuzzy
 msgid  "Allow hanging punctuation"
 msgstr "允許溢出標點符號"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.CB_AS_SCRIPT_SPACE.TriStateBox.Text
-#, fuzzy
 msgid  "Apply spacing between Asian, Latin and Complex text"
 msgstr "在亞洲語言文字和西文及混合文字之間加入空格"
 
 #: source/tabpages/paragrph.src#STR_EXAMPLE.String.Text
-#, fuzzy
 msgid  "Example"
 msgstr "範例"
 
 #: source/tabpages/paragrph.src#STR_PAGE_STYLE.String.Text
-#, fuzzy
 msgid  "Page Style"
 msgstr "頁面樣式"
 
@@ -8560,142 +8002,114 @@ msgid  "Text Animation"
 msgstr "文字動畫"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TabPage.Text
-#, fuzzy
 msgid  "Dimensioning"
 msgstr "尺寸標註"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Line"
 msgstr "線條"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FixedText.Text
-#, fuzzy
 msgid  "Line ~distance"
 msgstr "線條間隔(~D)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_HELPLINE_OVERHANG.FixedText.Text
-#, fuzzy
 msgid  "Guide ~overhang"
 msgstr "輔助線延長(~O)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_HELPLINE_DIST.FixedText.Text
-#, fuzzy
 msgid  "~Guide distance"
 msgstr "輔助線間隔(~G)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_HELPLINE1_LEN.FixedText.Text
-#, fuzzy
 msgid  "~Left guide"
 msgstr "左輔助線(~L)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_HELPLINE2_LEN.FixedText.Text
-#, fuzzy
 msgid  "~Right guide"
 msgstr "右輔助線(~R)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TSB_BELOW_REF_EDGE.TriStateBox.Text
-#, fuzzy
 msgid  "Measure ~below object"
 msgstr "尺寸線條顯示在物件下方(~B)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_DECIMALPLACES.FixedText.Text
-#, fuzzy
 msgid  "Decimal places"
 msgstr "小數點位數"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FixedLine.Text
-#, fuzzy
 msgid  "Legend"
 msgstr "標籤"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FixedText.Text
-#, fuzzy
 msgid  "~Text position"
 msgstr "文字位置(~T)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TSB_AUTOPOSV.TriStateBox.Text
-#, fuzzy
 msgid  "~AutoVertical"
 msgstr "自動垂直(~A)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TSB_AUTOPOSH.TriStateBox.Text
-#, fuzzy
 msgid  "A~utoHorizontal"
 msgstr "自動水平(~U)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TSB_PARALLEL.TriStateBox.Text
-#, fuzzy
 msgid  "~Parallel to line"
 msgstr "標籤和輔助線平行(~P)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TSB_SHOW_UNIT.TriStateBox.Text
-#, fuzzy
 msgid  "Show ~meas. units"
 msgstr "顯示定量單位(~M)"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.STR_MEASURE_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.TabPage.Text
-#, fuzzy
 msgid  "Connector"
 msgstr "連接符"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "類型(~T)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FixedLine.Text
-#, fuzzy
 msgid  "Line skew"
 msgstr "斜線"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FixedText.Text
-#, fuzzy
 msgid  "Line ~1"
 msgstr "線條 1(~1)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_2.FixedText.Text
-#, fuzzy
 msgid  "Line ~2"
 msgstr "線條 2(~2)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_3.FixedText.Text
-#, fuzzy
 msgid  "Line ~3"
 msgstr "線條 3(~3)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DISTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Line spacing"
 msgstr "行距"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_HORZ_1.FixedText.Text
-#, fuzzy
 msgid  "~Begin horizontal"
 msgstr "以水平方向開始(~B)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_HORZ_2.FixedText.Text
-#, fuzzy
 msgid  "End ~horizontal"
 msgstr "以水平方向結尾(~H)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_VERT_1.FixedText.Text
-#, fuzzy
 msgid  "Begin ~vertical"
 msgstr "以垂直方向開始(~V)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_VERT_2.FixedText.Text
-#, fuzzy
 msgid  "~End vertical"
 msgstr "以垂直方向結尾(~E)"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.CTL_PREVIEW.Control.QuickHelpText
-#, fuzzy
 msgid  "Preview"
 msgstr "預覽"
 
@@ -9055,1437 +8469,1150 @@ msgid  "Full ~width"
 msgstr "整個寬度(~W)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_CROP.FixedLine.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "裁剪"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "左(~L)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "右(~R)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_TOP.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "上(~T)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_BOTTOM.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "下(~B)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.RB_SIZECONST.RadioButton.Text
-#, fuzzy
 msgid  "Keep image si~ze"
 msgstr "保持畫面大小(~Z)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.RB_ZOOMCONST.RadioButton.Text
-#, fuzzy
 msgid  "Keep ~scale"
 msgstr "保持顯示比例(~S)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_ZOOM.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "顯示比例"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTHZOOM.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "高(~E)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_SIZE.FixedLine.Text
-#, fuzzy
 msgid  "Image size"
 msgstr "影像大小"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "高度(~E)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.PB_ORGSIZE.PushButton.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "原件大小(~O)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.TabPage.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "對齊"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
-#, fuzzy
 msgid  "Text alignment"
 msgstr "文字對齊"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "水平(~Z)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "預設"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "置左"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
-#, fuzzy
 msgid  "Center"
 msgstr "置中"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "置右"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.StringList.item
-#, fuzzy
 msgid  "Justified"
 msgstr "左右對齊"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.StringList.item
-#, fuzzy
 msgid  "Filled"
 msgstr "已填滿"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FixedText.Text
-#, fuzzy
 msgid  "I~ndent"
 msgstr "縮排(~N)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "垂直(~V)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "預設"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "向上"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.StringList.item
-#, fuzzy
 msgid  "Middle"
 msgstr "居中"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "向下"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ORIENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "文字方向"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
-#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "垂直堆疊(~R)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "De~grees"
 msgstr "角度(~G)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_BORDER_LOCK.FixedText.Text
-#, fuzzy
 msgid  "Re~ference edge"
 msgstr "參照邊(~F)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TriStateBox.Text
-#, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "亞洲語言版面配置模式(~M)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TriStateBox.Text
-#, fuzzy
 msgid  "~Wrap text automatically"
 msgstr "文字自動換行(~W)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_HYPH.TriStateBox.Text
-#, fuzzy
 msgid  "Hyphenation ~active"
 msgstr "斷字使用中(~A)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_SHRINK.TriStateBox.Text
-#, fuzzy
 msgid  "~Shrink to fit cell size"
 msgstr "縮小以符合儲存格大小(~S)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_TEXTFLOW.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "文字方向(~X)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_BOTTOMLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Lower Cell Border"
 msgstr "文字從儲存格下邊緣延伸。"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_TOPLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Upper Cell Border"
 msgstr "文字從儲存格上邊緣延伸。"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_CELLLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension Inside Cell"
 msgstr "文字只在儲存格內延伸。"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TabPage.Text
-#, fuzzy
 msgid  "Position and Size"
 msgstr "位置與大小"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FixedLine.Text
-#, fuzzy
 msgid  "Size"
 msgstr "大小"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_HEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "高度(~E)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_KEEPRATIO.CheckBox.Text
-#, fuzzy
 msgid  "~Keep ratio"
 msgstr "保持比例(~K)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FixedLine.Text
-#, fuzzy
 msgid  "Anchor"
 msgstr "固定標記"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RadioButton.Text
-#, fuzzy
 msgid  "To ~page"
 msgstr "至頁面(~P)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPARA.RadioButton.Text
-#, fuzzy
 msgid  "To paragrap~h"
 msgstr "至段落(~H)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOCHAR.RadioButton.Text
-#, fuzzy
 msgid  "To cha~racter"
 msgstr "至字元(~R)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_ASCHAR.RadioButton.Text
-#, fuzzy
 msgid  "~As character"
 msgstr "作為字元(~A)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOFRAME.RadioButton.Text
-#, fuzzy
 msgid  "To ~frame"
 msgstr "至訊框(~F)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FixedLine.Text
-#, fuzzy
 msgid  "Protect"
 msgstr "保護"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TriStateBox.Text
-#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_SIZE.TriStateBox.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "大小(~S)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_HORI.FixedText.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "水平(~Z)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_HORIBY.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr "依據(~Y)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_HORITO.FixedText.Text
-#, fuzzy
 msgid  "~to"
 msgstr "至(~T)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_HORIMIRROR.CheckBox.Text
-#, fuzzy
 msgid  "~Mirror on even pages"
 msgstr "偶數頁面鏡射(~M)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_VERT.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "垂直(~V)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_VERTBY.FixedText.Text
-#, fuzzy
 msgid  "by"
 msgstr "依據"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_VERTTO.FixedText.Text
-#, fuzzy
 msgid  "t~o"
 msgstr "至(~O)"
 
 #: source/tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_FOLLOW.CheckBox.Text
-#, fuzzy
 msgid  "Follow text flow"
 msgstr "遵循換行和分頁"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FixedLine.Text
-#, fuzzy
 msgid  "Western text font"
 msgstr "西文字型"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "字型"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "字型(~F)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE.FixedText.Text
-#, fuzzy
 msgid  "~Typeface"
 msgstr "字體(~T)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Typeface"
 msgstr "字體(~T)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "標準"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "粗斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "標準"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "粗斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "大小"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "大小"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "語言"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "語言(~L)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_EAST.FixedLine.Text
-#, fuzzy
 msgid  "Asian text font"
 msgstr "亞洲語言字型"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "字型"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_STYLE.FixedText.Text
-#, fuzzy
 msgid  "T~ypeface"
 msgstr "字體(~Y)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "標準"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "粗斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "大小"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "語言"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_CTL.FixedLine.Text
-#, fuzzy
 msgid  "CTL font"
 msgstr "CTL 字型"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "字型"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_STYLE.FixedText.Text
-#, fuzzy
 msgid  "Ty~peface"
 msgstr "字體(~P)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "標準"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "粗斜體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "大小"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "語言"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.WIN_CHAR_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "範例"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FixedLine.Text
-#, fuzzy
 msgid  "Color"
 msgstr "顏色"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
-#, fuzzy
 msgid  "Font ~color"
 msgstr "字型顏色(~C)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
-#, fuzzy
 msgid  "No %1"
 msgstr "無 %1"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "Transparent"
 msgstr "透明"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_FONTCOLOR.FixedText.Text
-#, fuzzy
 msgid  "Font ~color"
 msgstr "字型顏色(~C)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EFFECTS.FixedText.Text
-#, fuzzy
 msgid  "~Effects"
 msgstr "效果(~E)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Capitals"
 msgstr "大寫字母"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Lowercase"
 msgstr "小寫字母"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Title"
 msgstr "標題"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Small capitals"
 msgstr "小型大寫字母"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FixedText.Text
-#, fuzzy
 msgid  "~Relief"
 msgstr "浮雕(~R)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
 msgid  "Embossed"
 msgstr "浮凸"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
 msgid  "Engraved"
 msgstr "雕刻"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TriStateBox.Text
-#, fuzzy
 msgid  "Out~line"
 msgstr "輪廓(~L)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_SHADOW.TriStateBox.Text
-#, fuzzy
 msgid  "Sha~dow"
 msgstr "陰影(~D)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_BLINKING.TriStateBox.Text
-#, fuzzy
 msgid  "~Blinking"
 msgstr "閃動(~B)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_CHARHIDDEN.TriStateBox.Text
-#, fuzzy
 msgid  "H~idden"
 msgstr "隱藏(~I)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE.FixedText.Text
-#, fuzzy
 msgid  "~Overlining"
 msgstr "頂線(~O)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_NONE.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "單線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
-#, fuzzy
 msgid  "Double"
 msgstr "雙線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted"
 msgstr "點線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted (Bold)"
 msgstr "點線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
-#, fuzzy
 msgid  "Dash"
 msgstr "虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
-#, fuzzy
 msgid  "Dash (Bold)"
 msgstr "虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash"
 msgstr "長虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash (Bold)"
 msgstr "長虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash"
 msgstr "點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "點虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash"
 msgstr "雙點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr "雙點虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
-#, fuzzy
 msgid  "Wave"
 msgstr "曲線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
-#, fuzzy
 msgid  "Wave (Bold)"
 msgstr "曲線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
-#, fuzzy
 msgid  "Double Wave"
 msgstr "雙曲線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE_COLOR.FixedText.Text
-#, fuzzy
 msgid  "O~verline color"
 msgstr "頂線顏色(~V)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_STRIKEOUT.FixedText.Text
-#, fuzzy
 msgid  "~Strikethrough"
 msgstr "刪除線(~S)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_NONE.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SINGLE.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "單線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_DOUBLE.StringList.item
-#, fuzzy
 msgid  "Double"
 msgstr "雙線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.StringList.item
-#, fuzzy
 msgid  "With /"
 msgstr "有 /"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.StringList.item
-#, fuzzy
 msgid  "With X"
 msgstr "有 X"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FixedText.Text
-#, fuzzy
 msgid  "~Underlining"
 msgstr "底線(~U)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_NONE.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "單線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
-#, fuzzy
 msgid  "Double"
 msgstr "雙線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted"
 msgstr "點線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted (Bold)"
 msgstr "點線 (粗體)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
-#, fuzzy
 msgid  "Dash"
 msgstr "虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
-#, fuzzy
 msgid  "Dash (Bold)"
 msgstr "虛線 (粗體)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash"
 msgstr "長虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash (Bold)"
 msgstr "長虛線 (粗體)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash"
 msgstr "點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "點虛線 (粗體)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash"
 msgstr "雙點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr "雙點虛線 (粗體)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
-#, fuzzy
 msgid  "Wave"
 msgstr "曲線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
-#, fuzzy
 msgid  "Wave (Bold)"
 msgstr "曲線 (粗體)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
-#, fuzzy
 msgid  "Double Wave"
 msgstr "雙曲線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE_COLOR.FixedText.Text
-#, fuzzy
 msgid  "U~nderline color"
 msgstr "底線顏色(~N)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_INDIVIDUALWORDS.CheckBox.Text
-#, fuzzy
 msgid  "Individual ~words"
 msgstr "個別字(~W)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EMPHASIS.FixedText.Text
-#, fuzzy
 msgid  "Emp~hasis mark"
 msgstr "重音符號(~H)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Dot"
 msgstr "點"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Circle"
 msgstr "圓形"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Disc"
 msgstr "大圓點"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Accent"
 msgstr "重音符號"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.StringList.item
-#, fuzzy
 msgid  "Above text"
 msgstr "文字之上"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.StringList.item
-#, fuzzy
 msgid  "Below text"
 msgstr "文字之下"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.WIN_EFFECTS_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "範例"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_CAPITALS.String.Text
-#, fuzzy
 msgid  "Capitals"
 msgstr "大寫字母"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_LOWERCASE.String.Text
-#, fuzzy
 msgid  "Lowercase"
 msgstr "小寫字母"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "標題"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.String.Text
-#, fuzzy
 msgid  "Small Capitals"
 msgstr "小型大寫字母"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.String.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "輪廓"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "陰影"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.String.Text
-#, fuzzy
 msgid  "Blinking"
 msgstr "閃動"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_CHARNAME_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "Transparent"
 msgstr "透明"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RadioButton.Text
-#, fuzzy
 msgid  "Superscript"
 msgstr "上標"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_NORMALPOS.RadioButton.Text
-#, fuzzy
 msgid  "Normal"
 msgstr "標準"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_LOWPOS.RadioButton.Text
-#, fuzzy
 msgid  "Subscript"
 msgstr "下標"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_HIGHLOW.FixedText.Text
-#, fuzzy
 msgid  "~Raise/lower by"
 msgstr "上昇/下降值(~R)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_HIGHLOW.CheckBox.Text
-#, fuzzy
 msgid  "A~utomatic"
 msgstr "自動(~U)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_FONTSIZE.FixedText.Text
-#, fuzzy
 msgid  "Relative font size"
 msgstr "相對的字型大小"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_ROTATION_SCALING.FixedLine.Text
-#, fuzzy
 msgid  "Rotation / scaling"
 msgstr "旋轉 / 比例縮放"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FixedLine.Text
-#, fuzzy
 msgid  "Scaling"
 msgstr "比例縮放"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~0 degrees"
 msgstr "0 度(~0)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_90_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~90 degrees"
 msgstr "90 度(~9)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_270_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~270 degrees"
 msgstr "270 度(~2)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_FIT_TO_LINE.CheckBox.Text
-#, fuzzy
 msgid  "Fit to line"
 msgstr "符合行高"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_SCALE_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "Scale ~width"
 msgstr "寬度顯示比例(~W)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_KERNING2.FixedLine.Text
-#, fuzzy
 msgid  "Spacing"
 msgstr "間隔"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "預設"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
 msgid  "Expanded"
 msgstr "已延伸"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
 msgid  "Condensed"
 msgstr "已壓縮"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_KERNING2.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr "依(~Y)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_PAIRKERNING.CheckBox.Text
-#, fuzzy
 msgid  "~Pair kerning"
 msgstr "字母間隔相等(~P)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.WIN_POS_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "範例"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FixedLine.Text
-#, fuzzy
 msgid  "Double-lined"
 msgstr "雙行"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CheckBox.Text
-#, fuzzy
 msgid  "~Write in double lines"
 msgstr "以雙線寫入(~W)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_ENCLOSE.FixedLine.Text
-#, fuzzy
 msgid  "Enclosing character"
 msgstr "帶括號的字元"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FT_STARTBRACKET.FixedText.Text
-#, fuzzy
 msgid  "I~nitial character"
 msgstr "起始字元(~N)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_NONE.StringList.item
-#, fuzzy
 msgid  "(None)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.StringList.item
-#, fuzzy
 msgid  "("
 msgstr "("
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.StringList.item
-#, fuzzy
 msgid  "["
 msgstr "["
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.StringList.item
-#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.StringList.item
-#, fuzzy
 msgid  "{"
 msgstr "{"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.StringList.item
-#, fuzzy
 msgid  "Other Characters..."
 msgstr "其他字元..."
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FT_ENDBRACKET.FixedText.Text
-#, fuzzy
 msgid  "Final charact~er"
 msgstr "結尾字元(~E)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_NONE.StringList.item
-#, fuzzy
 msgid  "(None)"
 msgstr "(無)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.StringList.item
-#, fuzzy
 msgid  ")"
 msgstr ")"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.StringList.item
-#, fuzzy
 msgid  "]"
 msgstr "]"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.StringList.item
-#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.StringList.item
-#, fuzzy
 msgid  "}"
 msgstr "}"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.StringList.item
-#, fuzzy
 msgid  "Other Characters..."
 msgstr "其他字元..."
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.WIN_TWOLINES_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "範例"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "邊框"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FixedLine.Text
-#, fuzzy
 msgid  "Line arrangement"
 msgstr "線條排序"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "預設(~D)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_USERDEF.FixedText.Text
-#, fuzzy
 msgid  "~User-defined"
 msgstr "使用者自訂(~U)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Line"
 msgstr "線條"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FixedText.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "風格(~Y)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "顏色(~C)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "左(~L)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "Right"
 msgstr "右"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_TOP.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "上(~T)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_BOTTOM.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "下(~B)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_SYNC.CheckBox.Text
-#, fuzzy
 msgid  "Synchronize"
 msgstr "同步化"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_DISTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Spacing to contents"
 msgstr "至內文的距離"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWPOS.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWSIZE.FixedText.Text
-#, fuzzy
 msgid  "Distan~ce"
 msgstr "間隔(~C)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWCOLOR.FixedText.Text
-#, fuzzy
 msgid  "C~olor"
 msgstr "顏色(~O)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow style"
 msgstr "陰影"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CheckBox.Text
-#, fuzzy
 msgid  "~Merge with next paragraph"
 msgstr "與下一段落合併(~M)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEADJACENTBORDERS.CheckBox.Text
-#, fuzzy
 msgid  "~Merge adjacent line styles"
 msgstr "合併相鄰行樣式(~M)"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_NONE.String.Text
-#, fuzzy
 msgid  "Set No Borders"
 msgstr "設為沒有邊框"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_ONLYOUTER.String.Text
-#, fuzzy
 msgid  "Set Outer Border Only"
 msgstr "僅設定外側邊框"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERHORI.String.Text
-#, fuzzy
 msgid  "Set Outer Border and Horizontal Lines"
 msgstr "設定外側邊框和水平線"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERALL.String.Text
-#, fuzzy
 msgid  "Set Outer Border and All Inner Lines"
 msgstr "設定外側邊框和所有內側線"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERINNER.String.Text
-#, fuzzy
 msgid  "Set Outer Border Without Changing Inner Lines"
 msgstr "設定外側邊框但不變更內側線"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_DIAGONAL.String.Text
-#, fuzzy
 msgid  "Set Diagonal Lines Only"
 msgstr "僅設定對角線"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_ALL.String.Text
-#, fuzzy
 msgid  "Set All Four Borders"
 msgstr "設定所有四邊邊框"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_LEFTRIGHT.String.Text
-#, fuzzy
 msgid  "Set Left and Right Borders Only"
 msgstr "僅設定左側和右側邊框"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_TOPBOTTOM.String.Text
-#, fuzzy
 msgid  "Set Top and Bottom Borders Only"
 msgstr "僅設定上方和下方邊框"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_ONLYLEFT.String.Text
-#, fuzzy
 msgid  "Set Left Border Only"
 msgstr "僅設定左側邊框"
 
 #: source/tabpages/border.src#RID_SVXSTR_HOR_PRESET_ONLYHOR.String.Text
-#, fuzzy
 msgid  "Set Top and Bottom Borders, and All Inner Lines"
 msgstr "設定上邊框與下邊框，以及所有內部線條"
 
 #: source/tabpages/border.src#RID_SVXSTR_VER_PRESET_ONLYVER.String.Text
-#, fuzzy
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "設定左邊框與右邊框，以及所有內部線條"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.String.Text
-#, fuzzy
 msgid  "No Shadow"
 msgstr "不帶陰影"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Bottom Right"
 msgstr "右下方加上陰影"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Top Right"
 msgstr "右上方加上陰影"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Bottom Left"
 msgstr "左下方加上陰影"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Top Left"
 msgstr "左上方加上陰影"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.TabPage.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "圖說文字"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ABSTAND.FixedText.Text
-#, fuzzy
 msgid  "~Spacing"
 msgstr "間隔(~S)"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_WINKEL.FixedText.Text
-#, fuzzy
 msgid  "~Angle"
 msgstr "角度(~A)"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.StringList.item
-#, fuzzy
 msgid  "Free"
 msgstr "任意角度"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.StringList.item
-#, fuzzy
 msgid  "30 Degrees"
 msgstr "30 度"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.4500.StringList.item
-#, fuzzy
 msgid  "45 Degrees"
 msgstr "45 度"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.6000.StringList.item
-#, fuzzy
 msgid  "60 Degrees"
 msgstr "60 度"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.9000.StringList.item
-#, fuzzy
 msgid  "90 Degrees"
 msgstr "90 度"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ANSATZ.FixedText.Text
-#, fuzzy
 msgid  "~Extension"
 msgstr "擴展(~E)"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.4.StringList.item
-#, fuzzy
 msgid  "Optimal"
 msgstr "最合適的"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
 msgid  "From top"
 msgstr "從上"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
 msgid  "From left"
 msgstr "從左"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.StringList.item
-#, fuzzy
 msgid  "Horizontal"
 msgstr "水平方向"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.2.StringList.item
-#, fuzzy
 msgid  "Vertical"
 msgstr "垂直方向"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_UM.FixedText.Text
-#, fuzzy
 msgid  "~By"
 msgstr "值(~B)"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ANSATZ_REL.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_LAENGE.FixedText.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "長度(~L)"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.CB_LAENGE.CheckBox.Text
-#, fuzzy
 msgid  "~Optimal"
 msgstr "最合適的(~O)"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_1.String.Text
-#, fuzzy
 msgid  "Straight Line"
 msgstr "直線"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.String.Text
-#, fuzzy
 msgid  "Angled Line"
 msgstr "角形線"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.String.Text
-#, fuzzy
 msgid  "Angled Connector Line"
 msgstr "單連角形線"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.String.Text
-#, fuzzy
 msgid  "Double-angled line"
 msgstr "雙連角形線"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.String.Text
-#, fuzzy
 msgid  "Top;Middle;Bottom"
 msgstr "上;中;下"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.String.Text
-#, fuzzy
 msgid  "Left;Middle;Right"
 msgstr "左;中;右"
 
 #: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
 msgid  "Position and Size"
 msgstr "位置與大小"
 
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "圖說文字"
 
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PageItem.Text
-#, fuzzy
 msgid  "Callout"
 msgstr "圖說文字"
 
@@ -10495,57 +9622,46 @@ msgid  "Lines"
 msgstr "線條"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Line properties"
 msgstr "線條屬性"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_STYLE.FixedText.Text
-#, fuzzy
 msgid  "~Style"
 msgstr "樣式(~S)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "Colo~r"
 msgstr "顏色(~R)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FT_TRANSPARENT.FixedText.Text
-#, fuzzy
 msgid  "~Transparency"
 msgstr "透明(~T)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FixedLine.Text
-#, fuzzy
 msgid  "Arrow styles"
 msgstr "箭頭樣式"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FixedText.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "樣式(~Y)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "Wi~dth"
 msgstr "寬度(~D)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TSB_CENTER_START.TriStateBox.Text
-#, fuzzy
 msgid  "Ce~nter"
 msgstr "置中(~N)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TSB_CENTER_END.TriStateBox.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "置中(~E)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.CBX_SYNCHRONIZE.CheckBox.Text
-#, fuzzy
 msgid  "Synchroni~ze ends"
 msgstr "同步化線端(~Z)"
 

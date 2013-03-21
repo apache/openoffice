@@ -1071,52 +1071,42 @@ msgid  "Volume"
 msgstr "โวลุม"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_1
-#, fuzzy
 msgid  "Advertising application"
 msgstr "งานโฆษณา"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_2
-#, fuzzy
 msgid  "Allocating registry space"
 msgstr "แบ่งพื้นที่สำหรับ registry"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_3
-#, fuzzy
 msgid  "Free space: [1]"
 msgstr "พื้นที่ว่าง: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_4
-#, fuzzy
 msgid  "Searching for installed applications"
 msgstr "การค้นหาโปรแกรมที่ติดตั้งแล้ว"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_5
-#, fuzzy
 msgid  "Property: [1], Signature: [2]"
 msgstr "คุณสมบัติ: [1],  ลายมือชื่อ: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_6
-#, fuzzy
 msgid  "Binding executables"
 msgstr "Binding executables"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_7
-#, fuzzy
 msgid  "File: [1]"
 msgstr "แฟ้ม: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_8
-#, fuzzy
 msgid  "Creating IIS Virtual Roots..."
 msgstr "กำลังสร้างรูทเสมือนของ IIS"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_9
-#, fuzzy
 msgid  "Removing IIS Virtual Roots..."
 msgstr "กำลังเอารูทเสมือนของ IIS ออก..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
-#, fuzzy
 msgid  "Searching for qualifying products"
 msgstr "กำลังค้นหาผลิตภัณฑ์ที่ผ่านเกณฑ์ตรวจสอบ"
 
@@ -1710,8 +1700,9 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
+#, fuzzy
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
-msgstr ""
+msgstr "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \\'Next\\' to continue."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
 #, fuzzy
@@ -2962,16 +2953,19 @@ msgid  "Check the destination folder."
 msgstr "ตรวจสอบโฟลเดอร์ปลายทาง"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
+#, fuzzy
 msgid  "To continue, click \"Next\"."
-msgstr ""
+msgstr "ดำเนินการต่อ คลิก "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
+#, fuzzy
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr ""
+msgstr "เลือกรุ่นอื่น คลิก "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
+#, fuzzy
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
+msgstr "เลือกโฟลเดอร์อื่น คลิก "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
 #, fuzzy

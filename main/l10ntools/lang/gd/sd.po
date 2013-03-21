@@ -217,7 +217,7 @@ msgstr "Gluais sleamhnagan"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Chan eil cuimhne gu leòr ann!\nThèid crìoch a chur air a' ghnìomh."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1733,7 +1733,7 @@ msgstr "Cuir a-steach ainm airson a' chinn-shaighde:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "Tha an t-ainm seo air rud eile mu thràth. \nCuir a-steach ainm eile."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1805,7 +1805,7 @@ msgstr "Cuir a-steach sleamhnagan"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "A bheil thu cinnteach gu bheil thu airson an leibheil \"$\" a sguabadh às?\nAire: Thèid gach oibseact air an leibheil seo a sguabadh às!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "Cuir a-steach frèam teacsa"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "Cha ghabh am foincsean seo a ruith \nleis na h-oibseactan a thagh thu."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "Cha do ghabh am faidhle a shàbhaladh!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Thèid fòrmat nan duilleagan ùra a chur air gleus.\nA bheil thu airson na h-oibseactan a chur air gleus cuideachd?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "D~easaich"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Ma nì thu seo, thèid liosta nan gnìomhan as urrainn dhut neo-dhèanamh\na sguabadh às. Bidh gach atharrachadh ann a chuir thu an sàs roimhe\nach cha ghabh an neo-dhèanamh. A bheil thu airson leantainn air adhart\nis an dealbhadh sleamhnaige ùr a chur an sàs?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "Cha do ghabh fòrmat na sgrìobhainne a shuidheachadh air a' chlò-bhual
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Tha a' ghrafaig seo co-cheangailte ri sgrìobhainn. \nA bheil thu airson an ceangal a bhriseadh los gun urrainn dhut a dheasachadh?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (Oir-loidhne)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Chan eil an sgèile a thagh thu ceadaichte.\nA bheil thu airson tè ùr a thaghadh?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2301,7 +2301,7 @@ msgstr "Cha do ghabh gach oibseact tarraing a dhì-bhuidhneadh."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "Tha dealbhadh ann mu thràth air a bheil an t-ainm seo.\nA bheil thu airson am fear ùr a chur 'na àite?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "Criathrag ghrafaigean"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "Chan eil am faidhle %\n'na fhaidhle fuaime dligheach !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

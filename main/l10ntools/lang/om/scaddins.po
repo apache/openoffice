@@ -529,217 +529,174 @@ msgid  "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Lakkoofsa eenyummaa guyyaa guyyoota hojii ifta'an dura yk booda jiru deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
-#, fuzzy
 msgid  "Days"
 msgstr "Guyyoota"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
-#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "Baayyi'ina guyyoota hojii erga guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Guyyoota ayyaanaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
-#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "Tartiiba gatii guyyoota ayyaanaa (boqonnaa ayyaana waggaa fi kkf.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
-#, fuzzy
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
 msgstr "Guyyoota lamqooddii 'guyyaa calqabaa' fi 'guyyaa dhumaa' gidduu jiran akka entaa waggaatti deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Guyyaa dhumaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Guyyaa itti xumurame"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
-#, fuzzy
 msgid  "Basis"
 msgstr "Bu'uura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
-#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "Bu'uura guyyoota dhala murteessuf oolu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
 msgstr "Lakkoofsa eenyummaa guyyaa calqabaa irraa ji'oota ifa'aniin duraa yk booda jiru deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Ji'oota"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Baay'na ji'ootaa guyyaa calqabaa duura ykn booda jiran"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
-#, fuzzy
 msgid  "Returns the number of the calendar week in which the specified date occurs."
 msgstr "Baay'ina torban dhahaa guyyaan ifta'e keessatti argamu deebisa."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Guyyaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
-#, fuzzy
 msgid  "The date"
 msgstr "Guyyicha"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
-#, fuzzy
 msgid  "Return type"
 msgstr "Akaakuu deebisii"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
-#, fuzzy
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "Lakkoofsa 1 hanga 3 guyyaa torban ittiin calqabu kan ifteessu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
 msgstr "Lakkoofsa eenyummaa guyyaa dhumaa ji'a guyyaa calqabaa irraa ji'oota murtaa'aniin dura ykn booda dhufu deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Ji'oota"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Baay'na ji'ootaa guyyaa calqabaa duura ykn booda jiran"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
-#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "Baay'ina guyyoota hojii guyyoota lama gidduu jiran deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Guyyaa dhumaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Guyyaa itti xumurame"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Guyyoota ayyaanaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
-#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "Tartiiba gatii guyyoota ayyaanaa (boqonnaa ayyaana waggaa fi kkf.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "Yoo gatiin lakkoofsaa guutuu ta'e 'dhugaa' deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Lakkoofsa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Lakoofsi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "Yoo gatiin lakkoofsa  hir'uu ta'e 'dhugaa' deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Lakkoofsa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "Lakoofsi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
-#, fuzzy
 msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "Lakkoofsa bu'aa-fidaa dhugee tuuta lakkoofsotaa deebisa"
 
@@ -3880,17 +3837,14 @@ msgid  "The schedule"
 msgstr "Sagantaan"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "Baay'ina torbanii tibban iftaa'e keessa jiran herrega"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Guyyaa calqaba tibbaa"
 

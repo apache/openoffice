@@ -141,7 +141,7 @@ msgstr "ସୀମାଗୁଡିକ"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "ଧାର ଏବଂ ପୃଷ୍ଠଭୂମୀ ପାଇଁ ଇଚ୍ଛାମୁତାବକ ସାରଣୀ ଶୈଳୀ ଥିବା ସତ୍ତ୍ୱେ, \"<emph>prettytable\"</emph> ପରି ଏକ ସାରଣୀ ସର୍ବଦା ରପ୍ତାନୀ ହୋଇଥାଏ, ଯାହାକି ୱିକି ଯନ୍ତ୍ରକୁ ସରଳ ଧାର ଏବଂ ଗାଢ଼ ଶୀର୍ଷକ ସହିତ ସଜାଡ଼ିଥାଏ।"
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> @WIKIEXTENSIONPRODUCTNAME@ କୁ ବ୍ୟବହାର କରି ଆପଣ ଆପଣଙ୍କର ପ୍ରଚଳିତ ଲିଖିତ ପାଠ୍ୟକୁ ମାଧ୍ୟମ ୱିକି ସର୍ରଭରେ ଅବରୋହଣ କରିପାରିବେ। ଅବରୋହଣ କରିସାରିବା ପରେ, ସମସ୍ତ ୱିକି ଚାଳକ ମାନେ ୱିକିରେ ଆପଣଙ୍କର ଦଲିଲକୁ ପଢ଼ି ପାରିବେ।</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> ପ୍ରଚଳିତ ଲେଖକ ଦଲିଲକୁ ମାଧ୍ଯମ ୱିକି ସର୍ଭରରେ ଅବରୋହଣ କରିବା ପାଇଁ ମାଧ୍ୟମ ୱିକିକୁ ପଠାଯାଇଥିବା <item type=\"menuitem\">ଫାଇଲକୁ </item> ବାଛନ୍ତୁ।</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">ମାଧ୍ଯମ ୱିକି</link> ସର୍ଭରରେ ସମର୍ଥିତ ୱିକି ଖାତା"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ ସ୍ଥାପନ କରୁଅଛି"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ କୁ ସ୍ଥାପନ କରିବା ପୂର୍ବରୁ, ନିଶ୍ଚିତ କରନ୍ତୁ ଯେStarOffice ଅଥବା OpenOffice.org Java Runtime Environment (JRE)କୁ ବ୍ୟବହାର କରିଥାଏ। JRE ର ସ୍ଥିତି ଯାଞ୍ଚ କରିବା ପାଇଁ, <item type=\"menuitem\">Tools - Options - StarOffice/OpenOffice.org - Java</item>କୁ ବାଛନ୍ତୁ। ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ \"Use a Java runtime environment\" କୁ ଚିହ୍ନଟ କରାହୋଇଛି ଏବଂ ଗୋଟିଏ Java runtime ଫୋଲଡରକୁ ବଡ଼ ତାଲିକା ବାକ୍ସରେ ବଛାହୋଇଛି। ଯଦି JRE କୁ ସକ୍ରିୟ କରାହୋଇଥାଏ, ତେବେ ଗୋଟିଏ JRE 1.4 ଅଥବା ପରବର୍ତ୍ତୀକୁ ସକ୍ରିୟ କରନ୍ତୁ ଏବଂ StarOffice/OpenOffice.orgକୁ ପୁନପ୍ରାରମ୍ଭ କରନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ କୁ ସ୍ଥାପନ କରିବା ପ
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "ଗୋଟିଏ ଲେଖକ ୱିଣ୍ଡୋରେ, <item type=\"menuitem\">ଉପକରଣ - ଅନୁଲଗ୍ନ ପରିଚାଳକକୁ ବାଛନ୍ତୁ</item>।"
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "%PRODUCTNAME କୁ ବନ୍ଦ କରନ୍ତୁ, ଏବଂ Quickstar
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "ଆପଣଙ୍କର ୱିକି ବିନ୍ୟାସକୁ ଭରଣ କରିବା ପାଇଁ ସଫ୍ଟୱେରକୁ ପୁନଃଚାଳନ କରନ୍ତୁ, ଗୋଟିଏ ପାଠ୍ୟ ଦଲିଲ ଖୋଲନ୍ତୁ, ତାପରେ <item type=\"menuitem\">ଉପକରଣ - ବିକଳ୍ପ - ଇଣ୍ଟରନେଟ - ମେଡ଼ିଆ ୱିକି</item> କୁ ବାଛନ୍ତୁ। ନିମ୍ନରେ ଥିବା \"To Connect To a Wiki\" କୁ ଦେଖନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@ କାଢ଼ିବା ପାଇଁ"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "ଗୋଟିଏ ଲେଖକ ୱିଣ୍ଡୋରେ, <item type=\"menuitem\">ଉପକରଣ - ଅନୁଲଗ୍ନ ପରିଚାଳକକୁ ବାଛନ୍ତୁ</item>।"
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "ୱିକି ସହିତ ସଂଯୋଗ କରିବା ପାଇଁ"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "ଟିପ୍ପଣୀ: ଆପଣ ଆପଣଙ୍କର ଚାଳକ ନାମ ଏବଂ ପ୍ରବେଶ ସଂକେତକୁ ସମସ୍ତ ସଂଳାପ ପାଇଁ %PRODUCTNAME ମଧ୍ଯରେ ରଖିପାରିବେ। ପ୍ରବେଶ ସଂକେତଟି ଗୋଟିଏ ସୁରକ୍ଷିତ ପଦ୍ଧତିରେ ରଖାଯାଇପାରିବ, ଯେଉଁଠି ଅଭିଗମ୍ୟତା ଗୋଟିଏ ମୂଖ୍ଯ ପ୍ରବେଶ ସଂକେତ ମାଧ୍ଯମରେ ରଖାଯାଇ ପାରିବ। ସେହି ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ସକ୍ରିୟ କରିବା ପାଇଁ, <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>କୁ ବାଛନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "ଟିପପ୍ଣୀ ସରବର୍<item type=\"menuitem\"> ଟୁଲ୍ଗୁଡିକ ବିକଳ୍ପଗୁଡିକ ଇଣ୍ଟରନେଟ ପ୍ରକ୍ସି</item> ଏବଂ."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "ଖୋଲ ଏବଂ<item type=\"menuitem\"> ଟୁଲ୍ଗୁଡିକ ବିକଳ୍ପଗୁଡିକ ଇଣ୍ଟରନେଟ ମାଧ୍ଯମ ୱିକି</item>."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">ବିକଳ୍ପଗୁଡ଼ିକର</link> ସଂଳାପରେ, ଯୋଗକରନ୍ତୁକୁ କ୍ଲିକ କରନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "ରେ<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"> ମାଧ୍ଯମ ୱିକି</link> ସଂଳାପ ପାଇଁ."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "ପ୍ରବେଶ ସଂକେତ ବାକ୍ସରେ, ଆପଣଙ�
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "\"Save password\" କୁ ଅଧିବେଶନଗୁଡ଼ିକ ମଧ୍ଯରେ ବୈକଳ୍ପିକ ଭାବରେ ସକ୍ରିୟ କରାହୋଇଛି। ସମସ୍ତ ସଂରକ୍ଷିତ ପ୍ରବେଶସ ସଂକେତଗୁଡ଼ିକୁ ଅଭିଗମ୍ୟତା ପ୍ରଦାନ କରିବା ପାଇଁ ଗୋଟିଏ ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ବ୍ୟବହାର କରାଯାଇଥାଏ। ସେହି ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ସକ୍ରିୟ କରିବା ପାଇଁ <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> କୁ ସକ୍ରିୟ କରନ୍ତୁ। ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତଟି ସକ୍ରିୟ ନଥିବା ସମୟରେ \"Save password\" ଟି ଉପଲବ୍ଧ ହୋଇନଥାଏ।"
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "ଲେଖକ ଦଲିଲ ଖୋଲନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "ୱିକି ପୃଷ୍ଠାର ବିଷୟ ବସ୍ତୁ ଲେଖନ୍ତୁ। ଆପଣ ପାଠ୍ୟ ସଜ୍ଜିକରଣ ଶୈଳୀ, ଶୀର୍ଷକ, ପାଦିକା ଟିପ୍ପଣୀ ଏବଂ ସେହିପରି ଅଧିକ ସଜ୍ଜିକରଣ ବ୍ୟବହାର କରିପାରିବେ। <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"> ସମର୍ଥିତ ସଜ୍ଜିକରଣ ଶୈଳୀର ତାଲିକା</link>କୁ ଦେଖନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "<item type=\"menuitem\">ମେଡ଼ିଆ ୱିକିକୁ - ପଠାଯାଇଥିବା - ଫାଇଲ</item> କୁ ବାଛନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"> ମେଡିଆ ୱିକିକୁ ପଠାନ୍ତୁ</link> ସଂଳାପରେ,  ଆପଣଙ୍କର ଭରଣଗୁଡ଼ିକ ପାଇଁ ସଂରଚନା ଉଲ୍ଲେଖ କରନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph> ମାଧ୍ଯମ ୱିକି ସର୍ଭର</emph>: ୱିକି ବାଛନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph> ଶୀର୍ଷକ</emph>: ଆପଣଙ୍କ ପୃଷ୍ଠାର ଶୀର୍ଷକ ଟାଇପ କରନ୍ତୁ। ଆପଣଙ୍କର ପ୍ରଚଳିତ ପାଠ୍ୟ ଦଲିଲ ସହିତ ନବଲିଖନ କରିବା ପାଇଁ ଗୋଟିଏ ସ୍ଥିତବାନ ପୃଷ୍ଠାର ଶୀର୍ଷକ ଟାଇପ କରନ୍ତୁ। ୱିକିରେ ଗୋଟିଏ ନୂତନ ପୃଷ୍ଠା ନିର୍ମାଣ କରିବା ପାଇଁ ଗୋଟିଏ ନୂତନ ଶୀର୍ଷକ ଟାଇପ କରନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph> ସାରାଂଶ</emph>: ଆପଣଙ୍କର ପୃଷ୍ଠା ପାଇଁ ଗୋଟିଏ ସଂକ୍ଷିପ୍ତ ସାରାଂଶ ଭରଣ କରନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>ଏହା ଗୋଟିଏ ଛୋଟ ସମ୍ପାଦନ</emph>: ଆହରଣ କରାଯାଇଥିବା ସମାନ ନାମ ବିଶିଷ୍ଟ ପୃଷ୍ଠାଗୁଡ଼ିକ ପୂର୍ବରୁ ଅବସ୍ଥିତ ପୃଷ୍ଠାର ଛୋଟ ସମ୍ପାଦନ ପରି ଚିହ୍ନିତ କରିବା ପାଇଁ ଏହି ବାକ୍ସରେ ଚିହ୍ନ ଦିଅନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>ୱେବ ବ୍ରାଉଜରରେ ଦର୍ଶାନ୍ତୁ</emph>: ଆପଣଙ୍କର ତନ୍ତ୍ର ୱେବ ବ୍ରାଉଜରକୁ ଖୋଲିବା ପାଇଁ ଏବଂ ୱିକି ପୃଷ୍ଠାକୁ ଆହରଣ କରିବା ପାଇଁ ଏହି ବାକ୍ସକୁ ଚିହ୍ନଟ କରନ୍ତୁ।"
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,23 +341,23 @@ msgstr "ମାଧ୍ଯମ ୱିକି ବିକଳ୍ପଗୁଡିକ"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "ଆପଣ ମେଡ଼ିଆ ୱିକି ସର୍ଭରକୁ ଯୋଗ କରିପାରିବେ, ସମ୍ପାଦନ କରିପାରିବେ ଏବଂ କାଢ଼ିପାରିବେ। <item type=\"menuitem\">ଉପକରଣ - ବିକଳ୍ପ - ଇଣ୍ଟରନେଟ - ମେଡ଼ିଆ ୱିକି</item> ଦ୍ୱାରା ସଂଳାପକୁ ଖୋଲନ୍ତୁ। ବୈକଳ୍ପିକ ଭାବେ, <item type=\"menuitem\">ଉପକରଣ - ଅନୁଲଗ୍ନ ପରିଚାଳକ</item>କୁ ବାଛନ୍ତୁ, @WIKIEXTENSIONPRODUCTNAME@ କୁ ବାଛନ୍ତୁ, ଏବଂ ବିକଳ୍ପ ବଟନକୁ କ୍ଲିକ କରନ୍ତୁ।"
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">ଗୋଟିଏ ନୂତନ ୱିକି ସର୍ଭର ଯୋଗ କରିବା ପାଇଁ ଯୋଗ କରନ୍ତୁ କୁ କ୍ଲିକ କରନ୍ତୁ।<br/>ଗୋଟିଏ ଭରଣକୁ ବାଛନ୍ତୁ ଏବଂ ଖାତା ବିନ୍ୟାସକୁ ସମ୍ପାଦନ କରିବା ପାଇଁ ସମ୍ପାଦନ କରନ୍ତୁ କୁ କ୍ଲିକ କରନ୍ତୁ। <br/>ଗୋଟିଏ ଭରଣ ବାଛନ୍ତୁ ଏବଂ ତାଲିକାରୁ କାଢ଼ିବା ପାଇଁ କାଢ଼ନ୍ତୁ କୁ କ୍ଲିକ କରନ୍ତୁ।</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">ତାଲିକାରେ ଗୋଟିଏ ନୂତନ ଭରଣ ଯୋଗ କରିବା ପାଇଁ ମେଡ଼ିଆ ୱିକି ସଂଳାପକୁ ଖୋଲନ୍ତୁ।</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">ବଚ୍ଛିତ ଭରଣକୁ ସମ୍ପାଦନ କରିବା ପାଇଁ ମାଧ୍ଯମ ୱିକି ସଂଳାପକୁ ଖୋଲନ୍ତୁ।</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">ତାଲିକାରୁ ବଚ୍ଛିତ ଭରଣଗୁଡ଼ିକୁ କାଢ଼ିଥାଏ</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
@@ -377,19 +377,19 @@ msgstr "ଆପଣଙ୍କର ମାଧ୍ଯମ ୱିକି ଖାତା ସ�
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">http://ରୁ ଆରମ୍ଭ ହୋଇଥିବା, ମାଧ୍ଯମ ୱିକି ସର୍ଭରର URL ଭରଣ କରନ୍ତୁ</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">ମେଡ଼ିଆ ୱିକି ସର୍ଭରରେ ଆପଣଙ୍କର ଚାଳକ ନାମକୁ ଭରଣ କରନ୍ତୁ। ଅଜଣା ଅଭିଗମ୍ୟତା ପାଇଁ ଖାଲି ରଖନ୍ତୁ।</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">ମେଡ଼ିଆ ୱିକି ସର୍ଭରରେ ଆପଣଙ୍କର ପ୍ରବେଶ ସଂକେତକୁ ଭରଣ କରନ୍ତୁ। ଅଜଣା ଅଭିଗମ୍ୟତା ପାଇଁ ଖାଲି ରଖନ୍ତୁ।</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">ଅଧିବେଶନ ମଧ୍ଯରେ ଆପଣଙ୍କ ପ୍ରବେଶ ସଂକେତକୁ ରଖିବା ପାଇଁ ସକ୍ରିୟ କରନ୍ତୁ। ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ସକ୍ରିୟ କରାଯିବା ଉଚିତ, <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security </item>.</ahelp>କୁ ଦେଖନ୍ତୁ "
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "ମେଡ଼ିଆ ୱିକିକୁ ପଠାନ୍ତୁ ସଂଳା
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"> ମନୋନିତକର ମାଧ୍ଯମ ୱିକି ସରବର୍ ମିଶାଣ ସରବର୍</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">ଆପଣଙ୍କର ୱିକି ନିବେଶର ଶୀର୍ଷକକୁ ଭରଣ କରନ୍ତୁ। ଏହା ଆପଣଙ୍କର ୱିକି ନିବେଶର ଉପର ଶୀର୍ଷକ ଅଟେ। କୈଣସି ନୂତନ ଭରଣ ପାଇଁ, ଶୀର୍ଷକ ନିଶ୍ଚିତ ଭାବରେ ଅନନ୍ୟ ହୋଇଥିବା ଆବଶ୍ୟକ। ଯଦି ଆପଣ କୈଣସି ସ୍ଥିତବାନ ସୀର୍ଷକକୁ ଭରଣ କରନ୍ତି, ତେବେ ଆପଣଙ୍କର ଧାରଣ ସ୍ଥିତବାନ ଭରଣ ଉପରେ ନବଲିଖନ ହୋଇଯିବ।</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">ଗୋଟିଏ ବୈକଳ୍ପିକ ସଂକ୍ଷିପ୍ତ ସାରାଂଶ କିମ୍ବା ଟିପ୍ପଣୀ ଭରଣ କରନ୍ତୁ।</ahelp> <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>କୁ ଦେଖନ୍ତୁ।"
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>ଏହା ଗୋଟିଏ ଗୌଣ ସମ୍ପାଦନ</emph>: <ahelp hid=\".\">ଧାରଣ କରାଯାଇଥିବା ଭରଣକୁ ଗୌଣ ଭାବରେ ଚିହ୍ନଟ କରିବା ପାଇଁ ଏହି ଚେକ ବାକ୍ସକୁ ସମାନ ଶୀର୍ଷକ ଦ୍ୱାରା ଚିହ୍ନଟ କରନ୍ତୁ।</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>ୱେବ ବ୍ରାଉଜରରେ ଦର୍ଶାନ୍ତୁ</emph>: <ahelp hid=\".\">ଆପଣଙ୍କର ତନ୍ତ୍ର ୱେବ ବ୍ରାଉଜରକୁ ଖୋଲିବା ପାଇଁ ଏହି ବାକ୍ସକୁ ଚିହ୍ନଟ କରନ୍ତୁ ଏବଂ ରଖାଯାଇଥିବା ୱିକି ପୃଷ୍ଠାକୁ ଦର୍ଶାନ୍ତୁ।</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

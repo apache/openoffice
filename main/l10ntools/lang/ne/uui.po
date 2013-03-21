@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "कृपया, यहाँ %1 मा \"%2\"का लागि  प्रयोगकर्ता नाम र पासवर्ड प्रविष्ट गर्नुहोस् ।"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "पठाउनुहोस्"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "'${HOST}' सर्भरले एक वा सो भन्दा बढी कुकीहरू सेट गर्न चाहान्छ ।\nकुकीहरूमा निश्चित URL वर्गहरूलाई अपिल गर्ने सूचना समावेश छ । यदि %PRODUCTNAME पछिका अनुरोधहरूको कागजात पहिलेका कुकिसेटको वर्गमा URL सँग सम्बन्धित छ भने, %PRODUCTNAME को यो सूचना सर्भरसँग पठाइने छ । यसले WWW अनुप्रयोगको वस्तुस्थिति पहिचान गर्ने सर्भरलाई अनुमति दिन्छ,उदाहरण का लागि-अनलाइनमा किनमेल गरींदा ।\n\n निम्न कुकीहरू सेट हुनै पर्दछ:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "डोमेन: ${DOMAIN}, मार्ग: ${PATH}, कुकी: ${COOKIE}।\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "कुकी सोधपुछ"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME सर्भरका लागि '${HOST}कुकीहरू बचत गरिएको छ,जब कागजात अनुरोध गरिन्छ तब त्यसलाई पठाइने छ । ${PATH}\nनिश्चित URL वर्गहरूमा प्रेषित गरिंदा कुकीहरूको सूचना समावेश गरिन्छ । तिनीहरू केही सर्भरहरूद्वारा %PRODUCTNAME मा पठाइन्छ, जहाँ तिनीहरू बचत गरिएकाछन्, त्यहाँ निश्चित कागजातहरू पहुँच प्राप्त हुन्छन् । यदि %PRODUCTNAME कागजात लोड गरिन्छन् कि URL को अनुसार ति पहिलेका प्राप्त कुकीहरू को एउटा वर्ग मा सम्बन्धित हुन्छ , %PRODUCTNAME को यो सूचना त्यो सर्भर मा पठाइने छ । यो योग्य बनाइने सर्भर अनुप्रयोग WWW को स्तरको ट्राकमा राखिन्छ, उदाहरणका लागि -अनलाइनमा किनमेल गरिंदा ।\n\n निम्न कुकीहरू सेट हुनै पर्दछ:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "डोमेन: ${DOMAIN}, मार्ग: ${PATH}, कुकी: ${COOKIE} ।\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME अद्यावधिक उपलब्ध"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "यो कागजात %PRODUCTNAME को नयाँ संस्करणद्वारा सिर्जना गरिएको थियो । यसमा तपाईँको हालको संस्करणले समर्थन नगर्ने विशेषता समाविष्ट हुनसक्छ ।\n\nअनलाइन अद्यावधिक चलाउन 'अहिले अद्यावधिक गर्नुहोस्...' बटनमा क्लिक गर्नुहोस् र %PRODUCTNAME को सबैभन्दा पछिल्लो संस्करण प्राप्त गर्नुहोस् ।"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."

@@ -389,7 +389,7 @@ msgstr "ឯកសារ $filename$ មិន​អាច​ត្រូវ​ប
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "ប៉ុនប៉ង​ផ្ទុក​ឯកសារ ដោយ​បង្ហាញ​​លទ្ធផល​សារ​កំហុស​ដូច​ខាង​ក្រោម ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "ចម្លង​តម្លៃ​ដែល​បាន​រកឃើ
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "ជួរ​ឈរ '$columnname$' ត្រូវបាន​កំណត់​ជា​ប្រភេទ \"ទសភាគ\" ដែល​មាន​ប្រវែង​អតិបរមា $precision$ តួអក្សរ (ដោយមាន​កន្លែងទសភាគ $scale$) ។\n\nតម្លៃ​ដែល​បាន​បញ្ជាក់ \"$value$ គឺ​វែងជាង​ចំនួន​គោល​ពីរ​ដែល​បាន​អនុញ្ញាត ។"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "ត្រូវការ​កំណែ KDE $major$.$minor$ ឬ ខ្�
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "កំណែ KDE ដែល​រកឃើញ​គឺ​ថ្មី​ពេក ។ មាន​តែ KDE មាន​កំណែ $major$.$minor$ ដែល​ដំណើរការ​ជាមួយ​នឹង​ផលិតផល​នេះ ។\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "ប្រសិន​បើ​អ្នក​ច្បាស់​ថា កំណែ KDE របស់​អ្នក​ដំណើរការ​នោះ អ្នក​អាច​ប្រតិបត្តិ​​ម៉ាក្រូ​​មូលដ្ឋាន​ដូចខាងក្រោម ដើម្បី​បិទ​ការ​ពិនិត្យ​មើល​កំណែ​នេះ ៖\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

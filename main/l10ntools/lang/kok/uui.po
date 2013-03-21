@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "उपकार करून  \"%2\" खातीर %1  हांगा वापरप्याचे नाव आनिक गुप्त शब्द घालात."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "धाडात"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr " '${HOST}' सर्वर एक वा अदिक कुकीजची रचना करपाक सोदता.\nकांय URL वर्गांविशीची म्हायती कुकींनी आसता. जर  % PRODUCTNAME  मागीर पयलीसावन रचना केल्ल्या कुकीच्या वर्गासारकोच URL आशिल्लो दस्तावेज मागीत जाल्यार, %PRODUCTNAME ही म्हायती सर्वराक धाडटले. हाकालागून सर्वराक WWW अनुप्रयोगाची स्थिती वळखूपाक येता. देखीक, जेन्ना ऑनलायन शॉपिंग करता.\n\nमुखावेल्या कुकीजची रचना करपाक जाय:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "डोमेन: ${DOMAIN},वाट :${PATH}, कुकी: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "कुकी स्वागतकक्ष"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME हाणी   '${HOST}' सर्वराखातीर कुकीजची जतनाय केल्या, ज्यो दस्तावेजाचे  ${PATH}मागणे करता आस्तना धाडल्यो वतल्यो.\nकुकीजांनी कांय URL वर्गांच्या संदर्बातली म्हायती आसा. त्यो  जेन्ना कांय दस्तावेजांत प्रवेश घेतात, तेन्ना कांय सर्वराकडल्यान %PRODUCTNAME  क धाडल्यो वतात, जांची  थंय जतनाय जाता. जर  %PRODUCTNAME असो दस्तावेज चालू करता, जो URL प्रमाण पयली मेळिल्ल्या  एकाद्या कुकीजच्या गटा सारकिलो  आसा, जाल्यार %PRODUCTNAME  ती म्हायती त्या सर्वराक धाडटले. हाकालागून त्या सर्वराक WWW अनुप्रयोगाचेर लक्ष दवरप शक्य जातले., देखीक - ऑनलायन शॉपिंग करतास्तना.\n\nमुखावेल्या कुकीजची रचना करपाक जाय:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "डोमेन: ${DOMAIN},वाट :${PATH}, कुकी: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"

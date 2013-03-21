@@ -217,7 +217,7 @@ msgstr "བཤུད་བརྙན་སྤོ་བཤུད་ཚུ།"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "དྲན་ཚད་ལངམ་མེདཔ་!\n བྱ་བ་འདི་བབ་བཤོལ་འགྱོ་འོང་།"
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1788,8 +1788,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "མདའ་རྩེ་གསརཔ་གི་དོན་ལུ་མིང་བཙུགས་གནང་།"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "མིང་གདམ་ཁ་འདི་ཧེ་མ་ལས་ཡོདཔ། \nམིང་གཞན་ཅིག་བཙུགས་གནང་།"
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1877,8 +1878,9 @@ msgid  "Insert slides"
 msgstr "བཤུད་བརྙན་ཚུ་བཙུགས།"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "དྲན་ཚིག་:འ་ནི་གནས་རིམ་གུ་ཡོད་པའི་དངོས་པོ་ཚུ་ག་ར་བཏོན་གཏང་ནི་ཨིན!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1936,8 +1938,9 @@ msgid  "Insert text frame"
 msgstr "ཚིག་ཡིག་གཞི་ཁྲམ་བཙུགས།"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "འ་ནི་ལས་འགན་འདི་གཡོག་བཀོལ་མི་བཏུབ།\nསེལ་འཐུ་འབད་བའི་དངོས་པོ་ཚུ་དང་གཅིག་ཁར།"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -1950,8 +1953,9 @@ msgid  "The file could not be loaded!"
 msgstr "ཡིག་སྣོད་འདི་མངོན་གསལ་འབད་མི་བཏུབ!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "ཤོག་ལེབ་གསརཔ་ཚུ་གི་རྩ་སྒྲིག་འདི་མཐུན་བྱེད་འབད་ནི་ཨིན།\nཁྱོད་ཀྱིས་ཡང་མཐུན་བྱེད་འབད་ནི་ཨིན་ན?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -1974,8 +1978,9 @@ msgid  "~Edit"
 msgstr "ཞུན་དག(~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "འ་ནི་བྱ་བ་འདི་གིས་ཕར་ཐོ་བཀོད་ཡོད་པའི་བྱ་བ་ཚུ་བཏོན་གཏང་འོང་།\nཧེ་མམ་གྱི་ཡིག་ཆས་བསྒྱུར་བཅོས་འབད་མི་ཚུ་ད་ལྟོ་ཡང་ནུས་ཅན་ཡོདཔ།\nདེ་འབདཝ་ད་མ་འབད་བར་མི་བཏུབ།ཁྱོད་ཀྱིས་འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན་དང་\nདེ་བཟུམ་སྦེ་བཤུད་བརྙན་སྒྲིག་བཀོད་གསརཔ་འདི་འགན་འཛུན་ནི་ཨིནན?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -1998,8 +2003,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "གསལ་བཀོད་འབད་བའི་དཔར་བསྐྲུན་གུ་ཡིག་ཆས་ཀྱི་རྩ་སྒྲིག་འདི་གཞི་སྒྲིག་འབད་མི་བཏུབ།"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "འ་ནི་ཚད་རིས་འདི་ཡིག་ཆས་ནང་ལུ་འབྲེལ་མཐུད་ཡོདཔ་མས།\nཁྱོད་ཀྱིས་གནས་རིམ་ཞུན་དག་གི་གོན་ལུ་ཚད་རིས་འདི་འབྲེལ་མཐུད་མེདཔ་བཟོ་ནི་ཨིན་ན?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2137,8 +2143,9 @@ msgid  " (Outline)"
 msgstr "(མཐའ་ཐིག)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "གསལ་བཀོད་འབད་བའི་ཚད་ཤིང་འདི་ནུས་མེད་ཨིན་མས།\nཁྱོད་ཀྱིས་གསརཔ་གཅིག་བཙུགས་ཨིན་ན?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2490,8 +2497,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "པར་རིས་དངོས་པོ་ཚུ་ཆ་མཉམ་སྡེ་ཚན་མེདཔ་བཟོ་ནི་མི་ཚུགས་པས།"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "འ་ནི་མིང་ཁར་ཧེ་མ་ལས་བཀོད་སྒྲིག་འབད་ཡོདཔ་ཨིན།\nཁྱོད་ཀྱིས་ཚབ་བཙུགས་ནི་ཨིན་ན?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2634,8 +2642,9 @@ msgid  "Graphics filter"
 msgstr "ཚད་རིས་ཚུའི་ཚག་མ།"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "ཡིག་སྣོད་འདི་%\nསྒྲ་སྐད་ནུས་ཅན་གྱི་ཡིག་སྣོད་མེན་པས།"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -2913,67 +2922,54 @@ msgid  "All Styles"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Distribution..."
 msgstr "བགོ་བཀྲམ་འབད་ནི...(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Drawing View"
 msgstr "པར་རིས་མཐོང་སྣང་།(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Outline View"
 msgstr "མཐའ་ཐིག་མཐོང་སྣང་།(~O)་"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "བཤུད་བརྙན་དབྱེ་སེལ་འབད་མི།(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
-#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "བཤུད་བརྙན།(~w)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "པར་བཏབ་ས་དང་གྲལ་ཐིག་བཙུགས...(~I)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "ཞུན་དག...(~E)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "བཤུད་བརྙན་སྒྲིག་བཀོད། (~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page Setup..."
 msgstr "ཤོག་ལེབ་གཞི་སྒྲིག...(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Slide"
 msgstr "བཤུད་བརྙན་གསརཔ།(~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Master"
 msgstr "ཨམ་གསརཔ།(~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Page"
 msgstr "ཤོག་ལེབ་གསརཔ།(~N)"
 
@@ -2982,172 +2978,138 @@ msgid  "Set Background Picture for Slide ..."
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Display Background of Master"
 msgstr "ཨམ་གྱི་རྒྱབ་གཞི་བཀྲམ་སྟོན་འབད།"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "ཨམ་ནང་ལས་དངོས་པོ་ཚུ་བཀྲམ་སྟོན་འབད།"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Pag~e"
 msgstr "ཤོག་ལེབ།(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "བཤུད་བརྙན།(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "བསྐྱར་མིང་བཏགས་ཀྱི་བང་རིམ...(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Slide"
 msgstr "བཤུད་བརྙན་བཏོན་གཏང་།(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Master"
 msgstr "ཨམ་བཏོན་གཏང་།(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Page"
 msgstr "ཤོག་ལེབ་བཏོན་གཏང་།(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Slide"
 msgstr "བསྐྱར་མིང་བཏགས་ཀྱིབཤུད་བརྙན།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Master"
 msgstr "བསྐྱར་མིང་བཏགས་ཀྱི་ཨམ།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Page"
 msgstr "བསྐྱར་མིང་བཏངས་ཀྱི་ཤོག་ལེབ།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
-#, fuzzy
 msgid  "L~ine..."
 msgstr "གྲལ་ཐིག...(~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
-#, fuzzy
 msgid  "~Area..."
 msgstr "མངའ་ཁོངས་...(~A)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Text..."
 msgstr "ཚིག་ཡིག...(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "མཐུད་བྱེད།(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
-#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "སླར་སྒྲིག་ལམ་འགྲུལ།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "རྒྱ་ཁྱོན་ཚུ།(~s)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
-#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "གནས་ས་དང་ཚད...(~z)"
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "ཞུན་དག་དོན་ཚན་ཚུ།(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Arra~nge"
 msgstr "བདེ་ཞིབ།(~n)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Bring to Front"
 msgstr "གདོང་ཁ་ལུ་འབག་འོང་ནི།(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "གདོང་བསྐྱོད་འབག་ནི།(~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "རྒྱབ་ལོག་གཏང་ནི།(~w)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Send to Back"
 msgstr "ལོག་གཏང་ནི།(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "དངོས་པོའི་གདོང་ཁ་ལུ།(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "རྒྱབ་ཁའི་དངོས་པོ།(~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "རིམ་ལོག(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "C~haracter..."
 msgstr "ཡིག་འབྲུ...(~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
-#, fuzzy
 msgid  "P~aragraph..."
 msgstr "དོན་མཚམས...(~a)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "ཡིག་གཟུགས།(~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "ཚད།(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "བཟོ་རྣམ།(~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "རྒྱགས་པ།"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "ཨའི་ཊ་ལིཀ།"
 
@@ -3156,252 +3118,202 @@ msgid  "Overline"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "འོག་ཐིག"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "སྦུ་འབྲེག"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "གྱིབ་མ།"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "~Contour"
 msgstr "བུར་གཞོང་།(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "གྲལ་ཐིག་བར་སྟོང་བཞག་ཐངས།(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
-#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "གྲལ་ཐིག་རྐྱང་པ་བར་སྟོང་བཞག་ཐངས།"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
-#, fuzzy
 msgid  "1.5 Lines"
 msgstr "༡ .༥ གྲལ་ཐིག་ཚུ།"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
-#, fuzzy
 msgid  "~Double"
 msgstr "ལོག་བལྟབ།(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
-#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "དམིགས་བསལ་གྱི་ཡིག་འབྲུ...(~p)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "ཕྲང་སྒྲིག།(~l)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "ལྷག་ལུས།(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "གཡས།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "དབུས་སྒྲིག(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
-#, fuzzy
 msgid  "Justified"
 msgstr "ལྟེམས་བཅོས་འབད་ཡོདཔ།"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "Al~ignment"
 msgstr "ཕྲང་སྒྲིག།(~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "ལྷག་ལུས།(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "དབུས་སྒྲིག(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "གཡས།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "སྤྱི་ཏོག(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "དབུས།(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "མཇུག(གཤམ)(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "དངོས་པོ་ཁ་བསྡམས།(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "ཞུན་དག་དོན་ཚན་ཚུ།(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Move Points"
 msgstr "དོན་ཚན་ཚུ་སྤོ།(~M)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Points"
 msgstr "དོན་ཚན་ཚུ་བཙུགས།(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Points"
 msgstr "དོན་ཚན་ཚུ་བཏོན་གཏང་།(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "དངོས་པོ་ཁ་བསྡམས།(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MenuItem.Text
-#, fuzzy
 msgid  "~Split Curve"
 msgstr "གུག་གུགཔ་གཤག(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert to Curve"
 msgstr "གུག་གུགཔ་གཞི་བསྒྱུར་འབད་ནི།(~v)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MenuItem.Text
-#, fuzzy
 msgid  "~Corner"
 msgstr "སྒྱིད་ཁུག(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MenuItem.Text
-#, fuzzy
 msgid  "Smoot~h"
 msgstr "ཧུམ་ཁྱུག་ཁྱུ།(~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MenuItem.Text
-#, fuzzy
 msgid  "S~ymmetric"
 msgstr "མཛེས་སྙོམས།(~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MenuItem.Text
-#, fuzzy
 msgid  "~Reduce Points"
 msgstr "དོན་ཚན་ཚུ་མར་ཕབ་འབད་ནི།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "སྡེ་ཚན།(~G)"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "སྡེ་ཚན་མ་བཟོ་མི།(~U)"
 
 #: source/ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MenuItem.Text
-#, fuzzy
 msgid  "Comb~ine"
 msgstr "མཉམ་མཐུད་འབད།(~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MenuItem.Text
-#, fuzzy
 msgid  "~Split"
 msgstr "གཤག(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Enter Group"
 msgstr "སྡེ་ཚན་བཙུགས།(~E)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit Group"
 msgstr "ཕྱིར་འཐོན་སྡེ་ཚན།(~X)"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "མིང་..."
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "འགྲེལ་བཤད..."
 
 #: source/ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MenuItem.Text
-#, fuzzy
 msgid  "~Rehearse Timings"
 msgstr "དུས་འཛིན་ཚུའི་མཐའ་སྦྱང་འབད་ནི།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Custom Animation..."
 msgstr "སྲོལ་སྒྲིག་བསྒུལ་བཟོ་..."
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "Int~eraction..."
 msgstr "ཕན་ཚུན་འབྲེལ་བ་...(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Presentation ~Object..."
 msgstr "གསལ་སྟོན་དངོས་པོ...(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "སྔོན་སྒྲིག(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MenuItem.Text
-#, fuzzy
 msgid  "F~ontwork"
 msgstr "ཡིག་གཟུགས་ལཱ་གཡོག(~o)"
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "ཚད་ངོ་མ།(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "Save as Picture..."
 msgstr "པར་སྦེ་སྲུངས་..."
 
@@ -3410,12 +3322,10 @@ msgid  "Crop Picture..."
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MenuItem.Text
-#, fuzzy
 msgid  "Na~vigator"
 msgstr "འགྲུལ་བསྐྱོདཔ།(~v)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Point"
 msgstr "དོན་ཚན་བཙུགས།(~P)"
 
@@ -3630,97 +3540,78 @@ msgid  "~Rename"
 msgstr "བསྐྱར་མིང་།(~R)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
-#, fuzzy
 msgid  "To ~Curve"
 msgstr "གུག་གུགཔ་ལུ(~C)།"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
-#, fuzzy
 msgid  "To ~Polygon"
 msgstr "ཟུར་མང་དབྱིབས་ལུ།(~P)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "To C~ontour"
 msgstr "བུར་གཞོང་ནང་ལུ།(~o)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
-#, fuzzy
 msgid  "To 3~D"
 msgstr "༣ ཌི་ ནང་ལུ།(~D)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "བིཊི་ས་ཁྲ་ནང་ལུ།(~B)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
-#, fuzzy
 msgid  "To ~Metafile"
 msgstr "མེ་ཊ་ཡིག་སྣོད་ནང་ལུ།(~M)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "༣ ཌི (~R)བསྐོར་བའིདངོས་པོ་ནང་ལུ།"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "ཀེར་ཕྲང་།(~V)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontally"
 msgstr "ཐད་སྙོམས་སྦེ།(~H)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~3D Effects"
 msgstr "༣ ཌི ནུས་པ།(~༣)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Design"
 msgstr "བཤུད་བརྙན་བཀོད་བསྒྲིག(~S)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "བཤུད་བརྙན་འགྱུར་བ།(~T)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Show Slide"
 msgstr "བཤུད་སྟོན། (~S)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Slide"
 msgstr "བཤུད་བརྙན་སྦ་བཞག(~H)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "སྡེ་ཚན།(~G)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "སྡེ་ཚན་མ་བཟོཝ།(~U)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Group"
 msgstr "ཞུན་དག་སྡེ་ཚན།(~E)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit group"
 msgstr "ཕྱིར་འཐོན་སྡེ་ཚན།(~x)"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "སྡེ་ཚན།(~G)"
 
@@ -3918,447 +3809,358 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME འབྲི་ནི་གིས་ཡིག་ཆས་ཀྱི་གུ་ལས་ར་འཚོལ་ཞིབ་འབད་ནུག །ཁྱོད་ཀྱིས་མཇུག་ལུ་འཕྲོ་མཐུད་ནི་ཨིན་ན?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "གསརཔ།(~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
-#, fuzzy
 msgid  "~Export..."
 msgstr "ཕྱིར་འདྲེན...(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
-#, fuzzy
 msgid  "Export as PDF..."
 msgstr "པི་ཌི་ཨེཕ་བཟུམ་ཕྱིར་འདྲེན..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
-#, fuzzy
 msgid  "Sen~d"
 msgstr "གཏང་།(~d)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page..."
 msgstr "ཤོག་ལེབ...(~P)་་"
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "ཞུན་དག(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
-#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "སྦྱར་ དམིགས་བསལ་...(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "རྫུན་མ...(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
-#, fuzzy
 msgid  "Cross-fading..."
 msgstr "སྐེདཔ་བཏོག་ཡལ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "F~ields..."
 msgstr "ས་སྒོ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "བང་རིམ་བཏོན་གཏང་..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
-#, fuzzy
 msgid  "Lin~ks..."
 msgstr "འབྲེལ་ལམ་ཚུ...(~k)"
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
 msgid  "~View"
 msgstr "མཐོང་སྣང་།(~V)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "ལག་ཆས་ཕྲ་རིང་གཙོ་བ།(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "གདམ་ཁ་ཕྲ་རིང་།(~n)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Presentation"
 msgstr "གསལ་སྟོན།(~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
-#, fuzzy
 msgid  "Customi~ze..."
 msgstr "སྲོལ་སྒྲིག་འབད...(~z)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "~Rulers"
 msgstr "ཐིག་ཤིང་ཚུ།(~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes View"
 msgstr "དྲན་འཛིན་ཚུ་མཐོང་སྣང་(~N)།"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout View"
 msgstr "ལག་ཁྲམ་མཐོང་སྣང་།(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "སྔོན་ལྟ།(~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
-#, fuzzy
 msgid  "S~lide"
 msgstr "བཤུད་བརྙན།(~l)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Master"
 msgstr "བཤུད་་བརྙན་ཨམ།(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "མགོ་མིང་།(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes"
 msgstr "དྲན་འཛིན་ཚུ།(~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout"
 msgstr "ལག་བཀྲམ།(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "བང་རིམ།(~y)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Wor~kspace"
 msgstr "ལཱ་གི་ས་སྒོ།(~k)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Master"
 msgstr "ཨམ།(`M)"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "བཙུགས།(~I)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e..."
 msgstr "བཤུད་བརྙན...(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "བཤུད་བརྙན།(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "བཤུད་བརྙན་རྫུན་མ།(~u)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "བཤུད་བརྙན་རྒྱ་འཕར།(~x)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "བཤུད་བརྙན་བཅུད་དོན།(~m)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "བང་རིམ...(~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "ཚེས་གཏན་བཟོ།(~D)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
-#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "ཚེས་(འགྱུར་ཅན(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "ཆུ་ཚོད་(གཏན་བཟོ(~T))"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
-#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "ཆུ་ཚོད།(འགྱུར་ཅན།(~i))"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Page Number"
 msgstr "ཤོག་་གྲངས།(~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
-#, fuzzy
 msgid  "~File Name"
 msgstr "ཡིག་སྣོད་ཀྱི་མིང་།(~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "རྩོམ་པ་པོ།(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
-#, fuzzy
 msgid  "~Select Source..."
 msgstr "སེལ་འཐུའི་འབྱུང་ཁུངས...(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
-#, fuzzy
 msgid  "~Request..."
 msgstr "ཞུ་བ...(~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
-#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "བཤུད་བརྙན།(~r)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "From ~File..."
 msgstr "ཡིག་སྣོད་ནང་ལས...(~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "དཔེ་རིས།"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
-#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "འཕུར་ལྡིང་གཞི་ཁྲམ...(~i)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "ཡིག་སྣོད...(~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "Fiel~ds"
 msgstr "ས་སྒོ་ཚུ།(~d)"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "རྩ་སྒྲིག(~o)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "ཚིག་ཡིག...(~x)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "རྒྱ་འཁོན་ཚུ...(~s)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "མཐུད་བྱེད...(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "བང་རིམ...(~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "སྒྲིག་བཀོད་ལེགས་བཅོས...(~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
-#, fuzzy
 msgid  "Styl~es"
 msgstr "བཟོ་རྣམ་ཚུ།(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
 msgid  "~Tools"
 msgstr "ལག་ཆས་ཚུ།(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
 msgid  "~Slide Show"
 msgstr "བཤུད་བརྙན།(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "~Check..."
 msgstr "ཞིབ་དཔྱད་འབད...(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
-#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "རང་བཞིན་སྡེབ་དཔྱད།(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "མངོན་བརྗོད...(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
-#, fuzzy
 msgid  "~Hyphenation"
 msgstr "སྦྲེལ་རྟགས་བཀལ་བ།(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "རང་བཞིན་བདེན་པ...(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "བཤུད་བརྙན་གཞི་སྒྲིག་ཚུ...(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "སྲོལ་སྒྲིག་བཤུད་བརྙན...(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Animation"
 msgstr "བསྒུལ་བཟོ།(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Interaction..."
 msgstr "ཕན་ཚུན་འབྲེལ་བ...(~I)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck"
 msgstr "སྡེབ་དཔྱད།(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "ལེགས་བཅོས།(~M)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "གདོང་བསྐྱོད་འབག་ཤོག(~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "རྒྱབ་ལོག་གཏང་།(~w)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "དངོས་པོའི་གདོང་ཁར།(~O)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "དངོས་པོའི་རྒྱབ་ཁར།(~h)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "རིམ་ལོག(~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
-#, fuzzy
 msgid  "~Eyedropper"
 msgstr "ཚོས་གཞི་འདེམས་བྱེད།(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "~Gallery"
 msgstr "སྟོན་ཁང་།(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "ཚོས་གཞི།(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "གེལེ་སིཀེལ།(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "གནགཔ་དང་དཀརཔོ།(~B)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "ཚོན་མདངས་ཆེ་བ།(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "ཚོས་གཞི།(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "གེརེ་སིཀེལ།(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "གནགཔ་དང་དཀརཔོ།(~B)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "ཚོན་མདངས་མཐོ་བ།(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "བདེ་ཞིབ།(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "~Display Quality"
 msgstr "སྤུས་ཚད་བཀྲམ་སྟོན།(~D)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "སྔོན་ལྟའི་ཐབས་ཤམ།(~v)"
 
@@ -5710,237 +5512,190 @@ msgid  "Animation"
 msgstr "བསྒུལ་བཟོ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "First Image"
 msgstr "གཟུགས་བརྙན་དང་པ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Backwards"
 msgstr "རྒྱབ་ལོག"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Stop"
 msgstr "བཀག"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Play"
 msgstr "རྩེ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Last Image"
 msgstr "གཟུགས་བརྙན་མཇུག"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Image Number"
 msgstr "ཨང་གྲངས་ཀྱི་གཟུགས་བརྙན།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
-#, fuzzy
 msgid  "Duration"
 msgstr "དུས་ཡུན།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "༡"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "༢"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
-#, fuzzy
 msgid  "3"
 msgstr "༣"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "༤"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
-#, fuzzy
 msgid  "5"
 msgstr "༥"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "༦"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
-#, fuzzy
 msgid  "7"
 msgstr "༧"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
-#, fuzzy
 msgid  "8"
 msgstr "༨"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "༩"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
-#, fuzzy
 msgid  "10"
 msgstr "༡༠"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
-#, fuzzy
 msgid  "12"
 msgstr "༡༢"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
-#, fuzzy
 msgid  "15"
 msgstr "༡༥"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
-#, fuzzy
 msgid  "20"
 msgstr "༢༠"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
-#, fuzzy
 msgid  "25"
 msgstr "༢༥"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
-#, fuzzy
 msgid  "50"
 msgstr "༥༠"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
-#, fuzzy
 msgid  "100"
 msgstr "༡༠༠"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
-#, fuzzy
 msgid  "500"
 msgstr "༥༠༠"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
-#, fuzzy
 msgid  "1000"
 msgstr "༡༠༠༠"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
-#, fuzzy
 msgid  "Max."
 msgstr "མཐོ་ཤོས།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
-#, fuzzy
 msgid  "Loop Count"
 msgstr "ལུང་ཐག་གྱངས་ཁ་རྐྱབས།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Object"
 msgstr "དངོས་པོ་འཇུག་སྤྱོད་འབད།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "དངོས་ཚུ་རེ་རེ་སྦེ་འཇུག་སྤྱོད་འབད།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete Current Image"
 msgstr "ད་ལྟོའི་གཟུགས་བཏོན་གཏང་།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete All Images"
 msgstr "གཟུགས་བརྙན་ཚུ་ཆ་མཉམ་བཏོན་གཏང་།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "ཨང་གྲངས།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
-#, fuzzy
 msgid  "Image"
 msgstr "གཟུགས་བརྙན།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
-#, fuzzy
 msgid  "Group object"
 msgstr "སྡེ་ཚན་དངོས་པོ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
-#, fuzzy
 msgid  "Bitmap object"
 msgstr "བིཌི་ས་ཁྲའི་དངོས་པོ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ཕྲང་སྒྲིག"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "མགོ་ གཡོན།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "གཡོན།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Left"
 msgstr "མཇུག་གི་གཡོན།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "མགོ་ཏོག་ཁ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "དབུས་སྒྲིག"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "མཇུག་ལུ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Right"
 msgstr "མགོ་གི་གཡས་ལུ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "གཡས།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Right"
 msgstr "མཇུག་གི་གཡས་ལུ།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
 msgid  "Create"
 msgstr "གསར་བསྐྲུན།"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
 msgid  "Animation group"
 msgstr "བསྒུལ་བཟོའི་སྡེ་ཚན།"
 
@@ -6069,27 +5824,22 @@ msgid  "Notes Window"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "ཤུལ་མམ།(~N)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "ཧེ་མམ།(~P)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
-#, fuzzy
 msgid  "~Go to Slide"
 msgstr "བཤུད་བརྙན་ལུ་འགྱོ།(~G)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~First Slide"
 msgstr "བཤུད་བརྙན་དང་པམ།(~F)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Last Slide"
 msgstr "བཤུད་བརྙན་མཇུག་མམ།(~L)"
 
@@ -6130,22 +5880,18 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
-#, fuzzy
 msgid  "~Screen"
 msgstr "གསལ་གཞི།(~S)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
-#, fuzzy
 msgid  "~Black"
 msgstr "གནགཔོ།(~B)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
-#, fuzzy
 msgid  "~White"
 msgstr "དཀརཔོ།(~W)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
-#, fuzzy
 msgid  "~End Show"
 msgstr "སྟོནམོ་མཇུག་བསྡུ།(~E)"
 

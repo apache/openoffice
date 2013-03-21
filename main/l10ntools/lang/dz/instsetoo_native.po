@@ -1070,87 +1070,70 @@ msgid  "Volume"
 msgstr "སྐད་ཤུགས།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_1
-#, fuzzy
 msgid  "Advertising application"
 msgstr "གློག་རིམ་ ཚོང་བསྒྲགས་འབད་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_2
-#, fuzzy
 msgid  "Allocating registry space"
 msgstr "ཐོ་མཛོད་བར་སྟོང་ སྤྲོད་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_3
-#, fuzzy
 msgid  "Free space: [1]"
 msgstr "བར་སྟོང་དལཝ: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_4
-#, fuzzy
 msgid  "Searching for installed applications"
 msgstr "གཞི་བཙུགས་འབད་ཡོད་པའི་ གློག་རིམ་ འཚོལ་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_5
-#, fuzzy
 msgid  "Property: [1], Signature: [2]"
 msgstr "རྒྱུ་དངོས: [1]  མིང་རྟགས: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_6
-#, fuzzy
 msgid  "Binding executables"
 msgstr "ལག་ལེན་འཐབ་བཏུབ་མི་ཚུ་ བསྡམ་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_7
-#, fuzzy
 msgid  "File: [1]"
 msgstr "ཡིག་སྣོད: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_8
-#, fuzzy
 msgid  "Creating IIS Virtual Roots..."
 msgstr "ཨའི་ཨའི་ཨེསི་ བར་ཅུ་ཡལ་ རྩ་བ་ཚུ་ གསར་བསྐྲུན་འབད་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_9
-#, fuzzy
 msgid  "Removing IIS Virtual Roots..."
 msgstr "ཨའི་ཨའི་ཨེསི་ བར་ཅུ་ཡལ་ རྩ་བ་ཚུ་ རྩ་བསྐྲད་གཏང་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
-#, fuzzy
 msgid  "Searching for qualifying products"
 msgstr "ཁྱད་ཆོས་ཚང་མི་ཐོན་སྐྱེད་ཚུ་འཚོལ་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
-#, fuzzy
 msgid  "Computing space requirements"
 msgstr "གློག་རིག་ནང་བཙུགས་ནིའི་ བར་སྟོང་དགོས་མཁོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
-#, fuzzy
 msgid  "Computing space requirements"
 msgstr "གློག་རིག་ནང་བཙུགས་ནིའི་ བར་སྟོང་དགོས་མཁོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_13
-#, fuzzy
 msgid  "Creating folders"
 msgstr "སྣོད་འཛིན་ གསར་བསྐྲུན་འབད་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_14
-#, fuzzy
 msgid  "Folder: [1]"
 msgstr "སྣོད་འཛིན་: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_15
-#, fuzzy
 msgid  "Creating shortcuts"
 msgstr "མགྱོགས་ཐབས་གསར་བསྐྲུན་འབད་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_16
-#, fuzzy
 msgid  "Shortcut: [1]"
 msgstr "གྱོགས་ཐབས་: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_17
-#, fuzzy
 msgid  "Deleting services"
 msgstr "ཞབས་ཏོག་ཚུ་བཏོན་གཏང་དོ།"
 
@@ -1709,8 +1692,9 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION.ཕབ་ལེན་འབད་མི་དེ་ལུ་ བཀའ་དྲིན་ཆེ།"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
+#, fuzzy
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
-msgstr ""
+msgstr "གཞི་བཙུགས་ཀྱི་དོན་ལུ་གྲ་སྒྲིག་འབད་ནིའི་དོན་ལས་ གཞི་བཙུགས་ཡིག་སྣོད་དེ་སྦུང་ཚན་མ་བཟོ་བར་ ཁྱོད་རའི་ཧརཌི་ཌིགསི་ནང་ལུ་ འདྲ་བཤུས་སྐྱབས་དགོཔ་ཨིན། དེགི་ཤུལ་ལས་ %PRODUCTNAME གཞི་བཙུགས་དེ་གིས་ རང་བཞིན་གྱི་རང་འགོ་བཙུགསཔ་ཨིན།\r\n\r\nཨེབ་གཏང་འབད་ \\'ཤུལ་མམ་\\'འཕྲོ་མཐུད་ནིའི་དོན་ལུ།"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
 #, fuzzy
@@ -2961,16 +2945,19 @@ msgid  "Check the destination folder."
 msgstr "འགྲོ་ཡུལ་སྣོད་འཛིན་ཞིབ་དཔྱད་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
+#, fuzzy
 msgid  "To continue, click \"Next\"."
-msgstr ""
+msgstr "འཕྲོ་མཐུད་ཀྱི་དོན་ལུ་ ཨེབ་གཏང་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
+#, fuzzy
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr ""
+msgstr "ཐོན་རིམ་སོ་སོ་ སེལ་འཐུ་འབད་ནིའི་དོན་ལུ་ ཨེབ་གཏང་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
+#, fuzzy
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
+msgstr "སྣོད་འཛིན་སོ་སོ་ཅིག་ སེལ་འཐུ་འབད་ནིའི་དོན་ལུ་ ཨེབ་གཏང་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
 #, fuzzy

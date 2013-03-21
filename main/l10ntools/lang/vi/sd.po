@@ -217,7 +217,7 @@ msgstr "Di chuyển các ảnh chiếu"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Không đủ bộ nhớ.\nHành động sẽ bị hủy bỏ."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1810,8 +1810,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Hãy nhập một tên cho mũi tên đầu mới:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "Bạn đã chọn một tên đã tồn tại.Hãy chọn tên khác."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1899,8 +1900,9 @@ msgid  "Insert slides"
 msgstr "Chèn các ảnh chiếu"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Bạn có chắc muốn xoá lớp « $ » không?\nGhi chú : mọi đối tượng nằm trên lớp này sẽ bị xoá hoàn toàn."
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1958,8 +1960,9 @@ msgid  "Insert text frame"
 msgstr "Chèn khung văn bản"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "Không thể chạy hàm này\nvới những đối tượng đã chọn."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -1972,8 +1975,9 @@ msgid  "The file could not be loaded!"
 msgstr "Không thể nạp tập tin này."
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Định dạng của các trang mới sẽ được điều chỉnh.\nBạn cũng có muốn điều chỉnh những đối tượng không?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -1996,8 +2000,9 @@ msgid  "~Edit"
 msgstr "~Sửa"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Hành động này xoá danh sách các hành độngcó thể được phục hồi. Các thay đổi đã được thực hiệnvẫn còn có hiệu lực, nhưng không thểphục hồi được. Bạn có muốn tiếp tục và gánthiết kế ảnh chiếu mới không?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2020,8 +2025,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Định dạng tài liệu không thể được đặt trên máy in được chỉ định."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Đồ họa được liên kết tới một tài liệu.\nBạn có muốn hủy liên kết đồ họa đó để chỉnh sửa nó không?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2159,8 +2165,9 @@ msgid  " (Outline)"
 msgstr " (Phác thảo)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Tỷ lệ đã ghi rõ không phải là hợp lệ.\nBạn có muốn nhập một tỷ lệ mới không?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2512,8 +2519,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Không thể rã nhóm tất cả các đối tượng vẽ."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "Một thiết kế với tên này đã tồn tại.Bạn có muốn thay thế nó không?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2656,8 +2664,9 @@ msgid  "Graphics filter"
 msgstr "Bộ lọc đồ họa"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "Tập tin %\nkhông phải là một tập tin âm thanh hợp lệ."
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3667,92 +3676,74 @@ msgid  "~Rename"
 msgstr "Đổ~i tên"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
-#, fuzzy
 msgid  "To ~Curve"
 msgstr "Thành đường ~cong"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
-#, fuzzy
 msgid  "To ~Polygon"
 msgstr "Thành đa ~giác"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "To C~ontour"
 msgstr "Thành đường ~viền"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
-#, fuzzy
 msgid  "To 3~D"
 msgstr "Thành 3~D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "Thành ~Bitmap"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
-#, fuzzy
 msgid  "To ~Metafile"
 msgstr "Thành ~siêu tập tin"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "Thành đối tượng ~xoay 3D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "~Nằm dọc"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontally"
 msgstr "~Nằm ngang"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~3D Effects"
 msgstr "Hiệu ứng ~3D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Design"
 msgstr "Th~iết kế ảnh chiếu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "Chuyển ~tiếp ảnh chiếu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Show Slide"
 msgstr "~Hiện ảnh chiếu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Slide"
 msgstr "Ẩn ản~h chiếu"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Nhóm lại"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Rã nhóm"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Group"
 msgstr "~Sửa nhóm"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit group"
 msgstr "T~hoát khỏi nhóm"
 
@@ -3967,447 +3958,358 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME Draw vừa lục soát tới đầu của tài liệu. Bạn có muốn tiếp tục từ cuối không?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Mới"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
-#, fuzzy
 msgid  "~Export..."
 msgstr "~Xuất..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
-#, fuzzy
 msgid  "Export as PDF..."
 msgstr "Xuất dạng PDF..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
-#, fuzzy
 msgid  "Sen~d"
 msgstr "~Gửi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page..."
 msgstr "T~rang..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Sửa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
-#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Dán đặc ~biệt..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "Nhân ~bản..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
-#, fuzzy
 msgid  "Cross-fading..."
 msgstr "Làm mờ chéo..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "F~ields..."
 msgstr "T~rường..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Xoá ~lớp..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
-#, fuzzy
 msgid  "Lin~ks..."
 msgstr "Liên ~kết..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
 msgid  "~View"
 msgstr "~Xem"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "~Thanh công cụ chính"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "Thanh tù~y chọn"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Presentation"
 msgstr "T~rình chiếu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
-#, fuzzy
 msgid  "Customi~ze..."
 msgstr "Tùy biến..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "~Rulers"
 msgstr "T~hước"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes View"
 msgstr "Kiểu ~ghi chú"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout View"
 msgstr "Kiểu bản p~hát tay"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "~Xem thử"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
-#, fuzzy
 msgid  "S~lide"
 msgstr "Ảnh ch~iếu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Master"
 msgstr "Bản phôi ảnh ~chiếu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~Tựa đề"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes"
 msgstr "~Ghi chú"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout"
 msgstr "P~hát tay"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "Lớ~p"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Wor~kspace"
 msgstr "Vùng là~m việc"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Master"
 msgstr "~Chủ"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "C~hèn"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e..."
 msgstr "Ả~nh chiếu..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "Ảnh chiế~u"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "Nhân đôi ảnh chiế~u"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "Mở ~rộng ảnh chiếu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "Ảnh chiếu tó~m tắt"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "~Lớp..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "~Ngày (cố định)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
-#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "Ngà~y (thay đổi)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "~Giờ (cố định)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
-#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "G~iờ (thay đổi)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Page Number"
 msgstr "Số thứ tự t~rang"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
-#, fuzzy
 msgid  "~File Name"
 msgstr "Tên tậ~p tin"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "Tác ~giả"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
-#, fuzzy
 msgid  "~Select Source..."
 msgstr "Chọn ~nguồn..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
-#, fuzzy
 msgid  "~Request..."
 msgstr "~Yêu cầu..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
-#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "~Bảng tính"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "From ~File..."
 msgstr "Từ ~tập tin..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "Đồ thị"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
-#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "Khun~g nổi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "~Tập tin..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "Fiel~ds"
 msgstr "Trườn~g"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "Định ~dạng"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "~Văn bản..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Các ch~iều..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "Đường ~nối..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "~Lớp..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "Sửa ~Dàn trang..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
-#, fuzzy
 msgid  "Styl~es"
 msgstr "Kiể~u dáng"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
 msgid  "~Tools"
 msgstr "~Công cụ"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
 msgid  "~Slide Show"
 msgstr "Trình chiế~u"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "~Check..."
 msgstr "~Kiểm tra..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
-#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "Kiểm tr~a chính tả tự động"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~Từ điển gần nghĩa..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
-#, fuzzy
 msgid  "~Hyphenation"
 msgstr "Gạc~h nối từ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "Sử~a lỗi tự động..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "Thiết lậ~p Trình chiếu..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "~Chiếu ảnh riêng..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Animation"
 msgstr "Hoạt họ~a"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Interaction..."
 msgstr "~Tương tác..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck"
 msgstr "~Kiểm tra chính tả"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "~Sửa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Nâng ~lên"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Hạ ~xuống"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "T~rên đối tượng"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "~Dưới đối tượng"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "Đảo ~ngược"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
-#, fuzzy
 msgid  "~Eyedropper"
 msgstr "~Bút chọn màu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "~Gallery"
 msgstr "Nơi t~rưng bày"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Màu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "Gam ~xám"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "Đ~en trắng"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "Tương p~hản cao"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Màu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "Gam ~xám"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "Đ~en trắng"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "Tương p~hản cao"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "Sắ~p đặt"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "~Display Quality"
 msgstr "Chất ~lượng hiển thị"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Chế độ x~em thử"
 
@@ -6118,32 +6020,26 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "Kh~ay giấy từ thiết lập máy in"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
-#, fuzzy
 msgid  "Notes Window"
 msgstr "Cửa sổ ghi chú"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "Tiế~p"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "~Lùi"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
-#, fuzzy
 msgid  "~Go to Slide"
 msgstr "~Tới Ảnh chiếu"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~First Slide"
 msgstr "Ảnh chiếu Đầ~u"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Last Slide"
 msgstr "Ảnh chiếu ~Cuối"
 
@@ -6184,22 +6080,18 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
-#, fuzzy
 msgid  "~Screen"
 msgstr "~Màn hình"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
-#, fuzzy
 msgid  "~Black"
 msgstr "Đ~en"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
-#, fuzzy
 msgid  "~White"
 msgstr "T~rắng"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
-#, fuzzy
 msgid  "~End Show"
 msgstr "Kết t~húc Trình diễn"
 
@@ -6228,97 +6120,78 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Thiết kế Bảng"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
-#, fuzzy
 msgid  "Show"
 msgstr "Hiện"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Header Row"
 msgstr "Hàng đầu"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Total Row"
 msgstr "Hàng tổng số"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Rows"
 msgstr "Hàng mẫu dải"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "Cột đầu"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "Cột cuối"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Columns"
 msgstr "Cột mẫu dải"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "Kiểu dáng"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Thiết kế Bảng"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %s"
 msgstr "%PRODUCTNAME %s"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.String.Text
-#, fuzzy
 msgid  "Print content"
 msgstr "In nội dung"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.String.Text
-#, fuzzy
 msgid  "Print"
 msgstr "In"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "Tài liệu"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Slides"
 msgstr "Ảnh chiếu"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Handouts"
 msgstr "Bản phát tay"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Notes"
 msgstr "Ghi chú"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "Phác thảo"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.String.Text
-#, fuzzy
 msgid  "Slides per page"
 msgstr "Số ảnh chiếu trên một trang"
 
@@ -6351,82 +6224,66 @@ msgid  "9"
 msgstr ""
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.String.Text
-#, fuzzy
 msgid  "Order"
 msgstr "Thứ tụ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Left to right, then down"
 msgstr "Trái - phải, dưới"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Top to bottom, then right"
 msgstr "Trên, dưới, phải"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.String.Text
-#, fuzzy
 msgid  "~Contents"
 msgstr "~Nội dung"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "~Slide name"
 msgstr "~Tên ảnh chiếu"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "P~age name"
 msgstr "Tên ~trang"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.String.Text
-#, fuzzy
 msgid  "~Date and time"
 msgstr "~Ngày và giờ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden pages"
 msgstr "Trang ẩn"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.String.Text
-#, fuzzy
 msgid  "Output options"
 msgstr "Tùy chọn kết xuất"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.String.Text
-#, fuzzy
 msgid  "Color"
 msgstr "Màu"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original colors"
 msgstr "Màu gốc"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Grayscale"
 msgstr "Gam xám"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Black & white"
 msgstr "Đen và trắng"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "~Cỡ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "Cỡ gốc"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "Khít vào trang in được"
 
@@ -6439,12 +6296,10 @@ msgid  "Tile sheet of paper with repeated slides"
 msgstr ""
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "Cỡ gốc"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "Khít vào trang in được"
 
@@ -6497,7 +6352,6 @@ msgid  "~All slides"
 msgstr ""
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
-#, fuzzy
 msgid  "~Slides"
 msgstr "Ảnh ~chiếu"
 

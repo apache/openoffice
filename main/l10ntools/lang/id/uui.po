@@ -61,11 +61,11 @@ msgstr "Tanpa Teks"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Masukkan sandi untuk membuka berkas: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Masukkan sandi untuk membuka berkas: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "Dokumen sedang Dipakai"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Berkas '$(ARG1)' sedang dikunci untuk disunting oleh:\n\n$(ARG2)\n\nCobalah untuk disimpan beberapa saat lagi, atau simpan saja salinan dokumen tersebut.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "Pesan dari server"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "Masukkan nama pengguna dan kata sandi untuk: \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Masukkan nama pengguna dan kata sandi untuk: \n\"%2\" pada %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "~Kirim"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Server '${HOST}' hendak mengirim satu atau lebih kukis.\nKukis berisi informasi yang mengacu ke kelas URL tertentu. Jika %PRODUCTNAME meminta dokumen dengan URL yang berhubungan dengan kelas sebuah kukis yang telah ditentukan sebelumnya, %PRODUCTNAME akan mengirim informasi ini pada server. Hal ini mengizinkan server untuk mengenali status dari sebuah aplikasi WWW, misalnya ketika berbelanja daring di situs.\n\nKukis berikut harus dikirim:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domain: ${DOMAIN}, Jalur: ${PATH}, Kukis: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Penerimaan Kukis"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME telah menyimpan kukis untuk server '${HOST}' yang akan dikirim ketika meminta dokumen ${PATH}.\nKukis berisi informasi yang mengacu ke kelas URL tertentu. Mereka dikirim oleh server tertentu untuk disimpan oleh %PRODUCTNAME ketika dokumen tertentu diakses. Jika %PRODUCTNAME memuat sebuah dokumen yang menurut URL berhubungan dengan sebuah kelas kukis yang telah diterima sebelumnya, %PRODUCTNAME akan mengirim informasi ini pada server. Hal ini mengizinkan server untuk mengenali status dari sebuah aplikasi WWW, misalnya ketika berbelanja daring di situs.\n\nKukis berikut ini harus dikirim:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domain: ${DOMAIN}, Jalur: ${PATH}, Kukis: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Dokumen sedang Dipakai"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Berkas '$(ARG1)' sedang dikunci untuk disunting oleh:\n\n$(ARG2)\n\nBuka dokumen hanya-baca atau buka salinan dari dokumen untuk disunting.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "Dokumen Sudah Diubah oleh Orang Lain"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Berkas sudah berubah sejak dibuka dan disunting oleh $PRODUCTNAME. Menyimpan dokumen versi Anda akan menimpa perubahan yang dilakukan oleh orang lain.\n\nApakah Anda tetap ingin menyimpannya?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "Pembaharuan %PRODUCTNAME Tersedia"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Dokumen ini dibuat oleh versi baru dari %PRODUCTNAME. Dokumen ini mungkin berisi fitur yang tidak didukung oleh versi Anda yang sekarang.\n\nKlik 'Perbaharui Sekarang...' untuk menjalankan pembaharuan online dan dapatkan versi terbaru %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "Peringatan: Jika Anda lupa kata sandi utama Anda, Anda tidak akan mampu 
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Berkas '$(ARG1)' dikunci oleh Anda sendiri pada sistem lain sejak $(ARG2) sehingga tidak dapat disunting.\n\nBukalah dokumen sebagai hanya-baca, atau abaikan penguncian tersebut dan buka dokumen untuk segera diubah.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "~Buka"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Berkas '$(ARG1)' dikunci oleh Anda sendiri pada sistem lain sejak $(ARG2) sehingga tidak dapat disunting.\n\nTutup dokumen pada sistem lain dan coba lagi untuk menyimpannya, atau abaikan penguncian berkas tersebut dan simpan dokumen yang sekarang.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

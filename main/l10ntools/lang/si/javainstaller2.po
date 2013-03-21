@@ -153,11 +153,11 @@ msgstr "නව ඩිරෙක්ටරියක් පිහිටුවන්�
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "'${DIR}' ඩිරෙක්ටරිය නොපවතී.\nඔබට එය නිර්මාණය කිරීමට අවශ්‍යද?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "'${DIR}' ඩිරෙක්ටරිය නොපවතී.\nඔබට එය නිර්මාණය කිරීමට හෝ වෙනත් ඩිරෙක්ටරියක් තේරීමට අවශ්‍යද?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -261,7 +261,7 @@ msgstr "ඉදිරියට යාමට, 'මීලඟ' ක්ලික් �
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "වැදගත්: මෙම ස්ථාපනය පාලක බලතල නොමැතිව සිදිකෙරෙනු ඇත. එමනිසා ඔබට ක්‍රියාකාරකම් අඩු කිරීමට සිදුවේ (Java Runtime Environment (JRE) ස්ථාපනය නොවේ, පද්ධති එකාබද්ධවීම කල නොහැක).\nසම්පූර්ණ ක්‍රියාකාරීත්වය සඳහා 'වසන්න' ක්ලික් කිරීමෙන් ඔබේ බලතල පාලක බලතල කරා මාරු විය හැක. "
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -433,7 +433,7 @@ msgstr "විශ්ලේෂණය කරමින් ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "දත්ත මූලය විශ්ලේෂණය කරමින්\nකරුණාකර මඳක් රැදීසිටින්න ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

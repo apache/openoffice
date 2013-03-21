@@ -217,7 +217,7 @@ msgstr "הזזת שקפים"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "אין מספיק‫ זכרון!\nהפעולה תבוטל.‏"
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1423,92 +1423,74 @@ msgid  "Reply to %1"
 msgstr "השב ל־%1"
 
 #: source/ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "~Graphics"
 msgstr "גרפיקה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "טבלה..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "תא"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "מיזוג"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "פיצול..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "מלמעלה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "מרכז"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "מלמטה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "שורה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "ריווח שווה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "בחירה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~הוספה..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "עמודה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "ריווח שווה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "בחירה"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~הוספה..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
@@ -1807,8 +1789,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "יש להזין שם עבור ראש החץ החדש:‏"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "השם שנבחר כבר קיים.\nנא לבחור שם אחר.‏"
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1896,8 +1879,9 @@ msgid  "Insert slides"
 msgstr "הכנסת שקפים"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "שים לב! כל העצמים ברמה זו ימחקו!\nהאם אכן למחוק את הרמה \"$\"?‏"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1955,8 +1939,9 @@ msgid  "Insert text frame"
 msgstr "הכנסת מסגרת טקסט"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "לא ניתן להשלים פונקציה זו עם העצמים שנבחרו.‏"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -1969,8 +1954,9 @@ msgid  "The file could not be loaded!"
 msgstr "לא ניתן היה לטעון את הקובץ!‏"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "העיצוב של הדפים החדשים יותאם.\nהאם להתאים גם את העצמים?‏"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -1993,8 +1979,9 @@ msgid  "~Edit"
 msgstr "עריכה"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "פעולה זו מוחקת את הפעולות שניתנות לביטול. שינויים שכבר נעשו במסמך עדיין תקפים,\nאך לא ניתנים לביטול. האם להמשיך וליישם את עיצוב השקף החדש?‏"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2017,8 +2004,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "לא ניתן היה להגדיר את עיצוב המסמך במדפסת שצויינה.‏"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "עצם גרפי זה מקושר למסמך אחר.\nהאם להתיר את הקישור כדי לערוך את העצם?‏"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2156,8 +2144,9 @@ msgid  " (Outline)"
 msgstr "(מסגרת)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "המשקל שנבחר אינו תקף. \\ האם להכניס חדש"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2509,8 +2498,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "לא ניתן היה לבטל את קיבוצם של כל עצמי הציור.‏"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "כבר קיים עיצוב עם אותו שם.\\ האם להחליפו?‏"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2653,8 +2643,9 @@ msgid  "Graphics filter"
 msgstr "מסנן גרפיקה"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "הקובץ %\nאינו קובץ קול חוקי!‏"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -2918,12 +2909,10 @@ msgid  "Insert Movie"
 msgstr "הוספת סרטון"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-#, fuzzy
 msgid  "Graphics Styles"
 msgstr "סגנונות גרפיקה"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-#, fuzzy
 msgid  "Presentation Styles"
 msgstr "סגנונות מצגת"
 
@@ -2941,822 +2930,658 @@ msgid  "All Styles"
 msgstr "סגנונות תא"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Distribution..."
 msgstr "הפצה...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Drawing View"
 msgstr "תצוגת ציור"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Outline View"
 msgstr "תצוגת מתאר"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "תצוגת שקפים"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
-#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "הצגת שקף"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "הכנסת נקודת/קו הצמדה...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "עריכה...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "פריסת שקפים"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page Setup..."
 msgstr "הגדרת עמוד...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Slide"
 msgstr "שקף חדש"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Master"
 msgstr "שקף אב חדש"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Page"
 msgstr "עמוד חדש"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "בחירת תמונת רקע לשקף..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Display Background of Master"
 msgstr "הצגת רקע של שקף האב"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "הצגת עצמים משקף האב"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Pag~e"
 msgstr "שקף"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "שקף"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "שינוי שם רובד...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Slide"
 msgstr "מחיקת שקפים"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Master"
 msgstr "מחיקת שקף אב"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Page"
 msgstr "מחיקת שקפים"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Slide"
 msgstr "שינוי שם שקף"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Master"
 msgstr "שינוי שם שקף אב"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Page"
 msgstr "שינוי שם עמוד"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
-#, fuzzy
 msgid  "L~ine..."
 msgstr "קו...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
-#, fuzzy
 msgid  "~Area..."
 msgstr "שטח...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Text..."
 msgstr "טקסט...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "מחבר...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
-#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "איפוס ניתוב"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "מימ~דים...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
-#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "מיקום וגודל...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "עריכת נקודות"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Arra~nge"
 msgstr "סידור"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Bring to Front"
 msgstr "הבאה לפנים"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "הבאה קדימה"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "שליחה לאחור"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Send to Back"
 msgstr "שליחה לאחור"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "לפני העצם"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "מאחורי העצם"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "הפוך"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "C~haracter..."
 msgstr "תו...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
-#, fuzzy
 msgid  "P~aragraph..."
 msgstr "פיסקאות...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "גופן"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "גודל"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "סגנון"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "מודגש"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "נטוי"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Overline"
 msgstr "קו עילי"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "קו תחתון"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "קו חוצה"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "צללית"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "~Contour"
 msgstr "קו מתאר"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "רווח בין שורות"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
-#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "רווח בודד בין שורות"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
-#, fuzzy
 msgid  "1.5 Lines"
 msgstr "1.5 רווח"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
-#, fuzzy
 msgid  "~Double"
 msgstr "רווח כפול בין שורות"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
-#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "תו מ~יוחד..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "יישור"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "שמאל"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "מימין"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "ממורכז"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
-#, fuzzy
 msgid  "Justified"
 msgstr "מיושר"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "Al~ignment"
 msgstr "יישור"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "שמאל"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "ממורכז"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "מימין"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "מלמעלה"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "מ~רכז"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "מלמטה"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "סגירת עצם"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "עריכת נקודות"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Move Points"
 msgstr "הזזת נקודות"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Points"
 msgstr "הכנסת נקודות"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Points"
 msgstr "מחיקת נקודות"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "סגירת עצם"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MenuItem.Text
-#, fuzzy
 msgid  "~Split Curve"
 msgstr "עקומה מפוצלת"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert to Curve"
 msgstr "המרה לעקומה"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MenuItem.Text
-#, fuzzy
 msgid  "~Corner"
 msgstr "פינה"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MenuItem.Text
-#, fuzzy
 msgid  "Smoot~h"
 msgstr "חלק"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MenuItem.Text
-#, fuzzy
 msgid  "S~ymmetric"
 msgstr "סימטרי"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MenuItem.Text
-#, fuzzy
 msgid  "~Reduce Points"
 msgstr "הפחתת נקודות"
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~קיבוץ"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "שבירת קבוצה"
 
 #: source/ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MenuItem.Text
-#, fuzzy
 msgid  "Comb~ine"
 msgstr "שילוב"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MenuItem.Text
-#, fuzzy
 msgid  "~Split"
 msgstr "פיצול"
 
 #: source/ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Enter Group"
 msgstr "הכנסת לקבוצה"
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit Group"
 msgstr "יציאה מקבוצה"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "מתן שם לעצם...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "תיאור...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MenuItem.Text
-#, fuzzy
 msgid  "~Rehearse Timings"
 msgstr "תרגול תזמונים"
 
 #: source/ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Custom Animation..."
 msgstr "הנפשה מותאמת...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "Int~eraction..."
 msgstr "אינטראקציה...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Presentation ~Object..."
 msgstr "עצם מצגת...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "ברירת מחדל"
 
 #: source/ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MenuItem.Text
-#, fuzzy
 msgid  "F~ontwork"
 msgstr "יצירות גופנים"
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "גודל מקורי"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "Save as Picture..."
 msgstr "שמירה כתמונה...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MenuItem.Text
-#, fuzzy
 msgid  "Crop Picture..."
 msgstr "חיתוך תמונה..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MenuItem.Text
-#, fuzzy
 msgid  "Na~vigator"
 msgstr "נווט"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Point"
 msgstr "הכנסת נקודה"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "שמאל"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "מלמעלה"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "מימין"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "מלמטה"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MenuItem.Text
-#, fuzzy
 msgid  "~Adapt Position to Object"
 msgstr "התאמת מיקום לעצם"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Horizontal Left"
 msgstr "שמאל אופקי קבוע"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Horizontal ~Center"
 msgstr "מרכז אופקי קבוע"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Hori~zontal Right"
 msgstr "ימין אופקי קבוע"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Vertical Top"
 msgstr "עליון אנכי קבוע"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed V~ertical Center"
 msgstr "מרכז אנכי קבוע"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Ver~tical Bottom"
 msgstr "תחתון אנכי קבוע"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Visible Grid"
 msgstr "רשת נראית"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Grid"
 msgstr "הזזה על קוי הרשת"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Grid to ~Front"
 msgstr "הבאת הרשת קדימה"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "רשת"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Snap Lines Visible"
 msgstr "קווי הצמדה גלויים"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "הצמדה לקווי הצמדה"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "קווי הצמדה לחזית"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Snap Lines"
 msgstr "קווי הצמדה"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "מאפיינים...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MenuItem.Text
-#, fuzzy
 msgid  "1Bit ~Threshold"
 msgstr "סף 1 סיבית"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MenuItem.Text
-#, fuzzy
 msgid  "1 Bit ~Dithering"
 msgstr "קווקו 1 סיבית"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "גווני אפור 4 סיביות"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit ~Color Palette"
 msgstr "לוח צבעים 4 סיביות"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "גווני אפור 8 סיביות"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit C~olor Palette"
 msgstr "לוח צבעים 8 סיביות"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MenuItem.Text
-#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "צבעים אמיתיים 24 סיביות"
 
 #: source/ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Color Resolution"
 msgstr "רזולוציית הצבעים"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert"
 msgstr "המרה"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "הפיכה"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MenuItem.Text
-#, fuzzy
 msgid  "~Rotate"
 msgstr "סיבוב"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MenuItem.Text
-#, fuzzy
 msgid  "C~onnect"
 msgstr "התקשרות"
 
 #: source/ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MenuItem.Text
-#, fuzzy
 msgid  "~Break"
 msgstr "מעבר"
 
 #: source/ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Style..."
 msgstr "עריכת סגנון...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MenuItem.Text
-#, fuzzy
 msgid  "H~yperlink..."
 msgstr "היפר קישור...‏"
 
 #: source/ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Poi~nts"
 msgstr "נקודות"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Glue Points"
 msgstr "נקודות הדבקה"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "רובד"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~הוספה"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "שינוי"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "מחיקה"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "מתן שם אחר"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
-#, fuzzy
 msgid  "To ~Curve"
 msgstr "לעקומה"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
-#, fuzzy
 msgid  "To ~Polygon"
 msgstr "למצולע"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "To C~ontour"
 msgstr "לקו מתאר"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
-#, fuzzy
 msgid  "To 3~D"
 msgstr "לתלת־מימד"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "למפת סיביות"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
-#, fuzzy
 msgid  "To ~Metafile"
 msgstr "ל‫ MetaFile‏"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "לעצם ~סיבוב תלת־מימד"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "אנכי"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontally"
 msgstr "אופקי"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~3D Effects"
 msgstr "אפקטים ~תלת־מימדיים"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Design"
 msgstr "עיצוב שקף"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "מעבר שקפים"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Show Slide"
 msgstr "הצגת שקף"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Slide"
 msgstr "הסתר שקף"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "יצירה קבוצה"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "שבירת קבוצה"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Group"
 msgstr "עריכת קבוצה"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit group"
 msgstr "יציאה מהקבוצה"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "קיבוץ"
 
 #: source/ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Toolbars"
 msgstr "סרגלי כלים"
 
@@ -3781,132 +3606,106 @@ msgid  "Table"
 msgstr "טבלה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "~טבלה..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "~תא"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "~מיזוג"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "~פיצול..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "מלמ~עלה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "מ~רכז"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "מלמ~טה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "~שורה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "ריווח שווה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~בחירה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~הוספה..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~מחיקה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "~עמודה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "ריווח שווה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~בחירה"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "~הוספה..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~מחיקה"
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Layer..."
 msgstr "הכנת רובד...‏"
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "Modify La~yer..."
 msgstr "שינוי רובד...‏"
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "מחיקת רובד...‏"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "החלה על כל השקפים"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "החלה על השקפים שנבחרו"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "הצגת תצוגה מקדימה גדולה"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "הצגת תצוגה מקדימה קטנה"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "החלה על כל השקפים"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "החלה על השקפים שנבחרו"
 
@@ -3915,22 +3714,18 @@ msgid  "~Edit Master..."
 msgstr ""
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "הצגת תצוגה מקדימה ~גדולה"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "הצגת תצוגה מקדימה ~קטנה"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "החלה על השקפים שנבחרו"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Slide"
 msgstr "הכנסת שקף"
 
@@ -3960,447 +3755,358 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "החיפוש הגיע לתחילת המסמך. האם להמשיך מהסוף?‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "חדש"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
-#, fuzzy
 msgid  "~Export..."
 msgstr "יצוא...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
-#, fuzzy
 msgid  "Export as PDF..."
 msgstr "יצוא‫ כ‮-FDP..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
-#, fuzzy
 msgid  "Sen~d"
 msgstr "שליחה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page..."
 msgstr "עמוד...‏"
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "עריכה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
-#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "הדבקה מיוחדת...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "שכפול...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
-#, fuzzy
 msgid  "Cross-fading..."
 msgstr "דעיכה מוצלבת...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "F~ields..."
 msgstr "שדות...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "מחיקת רובד...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
-#, fuzzy
 msgid  "Lin~ks..."
 msgstr "קישורים...‏"
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
 msgid  "~View"
 msgstr "תצוגה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "סרגל כלים עיקרי"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "סרגל אפשרויות"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Presentation"
 msgstr "מצגת"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
-#, fuzzy
 msgid  "Customi~ze..."
 msgstr "התאמה אישית...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "~Rulers"
 msgstr "סרגלים"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes View"
 msgstr "תצוגת הערות"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout View"
 msgstr "תצוגת עלון"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "תצוגה מקדימה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
-#, fuzzy
 msgid  "S~lide"
 msgstr "שקף"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Master"
 msgstr "שקף אב"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "כותרת"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes"
 msgstr "רשמים"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout"
 msgstr "עלון"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "רובד"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Wor~kspace"
 msgstr "מרחב עבודה"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Master"
 msgstr "מסמך אב"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~הוספה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e..."
 msgstr "שקף...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "שקף"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "שכפול שקף"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "הרחבת שקף"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "שקף סיכום"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "רובד"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "תאריך (קבוע)‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
-#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "תאריך (משתנה)‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "שעה (קבועה)‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
-#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "שעה (משתנה)‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Page Number"
 msgstr "מספר דף"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
-#, fuzzy
 msgid  "~File Name"
 msgstr "שם קובץ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "מחבר"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
-#, fuzzy
 msgid  "~Select Source..."
 msgstr "בחירת מקור...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
-#, fuzzy
 msgid  "~Request..."
 msgstr "דרישה...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
-#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "גיליון אלקטרוני"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "From ~File..."
 msgstr "מקובץ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "תרשים"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
-#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "מסגרת צפה...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "קובץ...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "Fiel~ds"
 msgstr "שדות"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "עיצוב"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "טקסט..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "מימ~דים...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "מחבר...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "רובד"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "שינוי פריסה...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
-#, fuzzy
 msgid  "Styl~es"
 msgstr "סגנונות"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
 msgid  "~Tools"
 msgstr "כלים"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
 msgid  "~Slide Show"
 msgstr "הצגת שקפים"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "~Check..."
 msgstr "בדיקה...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
-#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "איות אוטומטי"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "מלים נרדפות...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
-#, fuzzy
 msgid  "~Hyphenation"
 msgstr "מיקוף מלים"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "תיקון אוטומטי...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "הגדרות הצגת שקפים...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "הצגת שקפים מותאמת אישית...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Animation"
 msgstr "הנפשה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Interaction..."
 msgstr "אינטראקציה...‏"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck"
 msgstr "בדיקת איות"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "שינוי"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "הבאה קדימה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "שליחה לאחור"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "לפני העצם"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "מאחורי העצם"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "הפוך"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
-#, fuzzy
 msgid  "~Eyedropper"
 msgstr "טפטפת"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "~Gallery"
 msgstr "גלריה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "צבע"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "גווני אפור"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "שחור ולבן"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "ניגודיות גבוהה"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "צבע"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "גווני אפור"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "שחור ולבן"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "ניגודיות גבוהה"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "סידור"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "~Display Quality"
 msgstr "איכות תצוגה"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "מצב תצוגה מקדימה"
 
@@ -5762,237 +5468,190 @@ msgid  "Animation"
 msgstr "הנפשה"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "First Image"
 msgstr "First Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Backwards"
 msgstr "Backwards"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Stop"
 msgstr "Stop"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Play"
 msgstr "Play"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Last Image"
 msgstr "Last Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Image Number"
 msgstr "Image Number"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
-#, fuzzy
 msgid  "Duration"
 msgstr "Duration"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
-#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
-#, fuzzy
 msgid  "5"
 msgstr "5"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
-#, fuzzy
 msgid  "7"
 msgstr "7"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
-#, fuzzy
 msgid  "8"
 msgstr "8"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
-#, fuzzy
 msgid  "10"
 msgstr "10"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
-#, fuzzy
 msgid  "12"
 msgstr "12"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
-#, fuzzy
 msgid  "15"
 msgstr "15"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
-#, fuzzy
 msgid  "20"
 msgstr "20"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
-#, fuzzy
 msgid  "25"
 msgstr "25"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
-#, fuzzy
 msgid  "50"
 msgstr "50"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
-#, fuzzy
 msgid  "100"
 msgstr "100"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
-#, fuzzy
 msgid  "500"
 msgstr "500"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
-#, fuzzy
 msgid  "1000"
 msgstr "1000"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
-#, fuzzy
 msgid  "Max."
 msgstr "מירבי"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
-#, fuzzy
 msgid  "Loop Count"
 msgstr "Loop Count"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Object"
 msgstr "Apply Object"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "Apply Objects Individually"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete Current Image"
 msgstr "Delete Current Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete All Images"
 msgstr "Delete All Images"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "מספר"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
-#, fuzzy
 msgid  "Image"
 msgstr "תמונה"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
-#, fuzzy
 msgid  "Group object"
 msgstr "עצם קבוצה"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
-#, fuzzy
 msgid  "Bitmap object"
 msgstr "עצם מפת סיביות"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "יישור"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "עליון שמאל"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "שמאל"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Left"
 msgstr "תחתון שמאל"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "עליון"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "ממורכז"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "למטה"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Right"
 msgstr "עליון ימין"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "ימין"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Right"
 msgstr "תחתון ימין"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
 msgid  "Create"
 msgstr "יצירה"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
 msgid  "Animation group"
 msgstr "קבוצת הנפשה"
 
@@ -6117,32 +5776,26 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "מגש נייר מהגדרות מדפסת"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
-#, fuzzy
 msgid  "Notes Window"
 msgstr "חלון הערות"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "הבא"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "הקודם"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
-#, fuzzy
 msgid  "~Go to Slide"
 msgstr "קפיצה לשקף"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~First Slide"
 msgstr "שקף הראשון"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Last Slide"
 msgstr "שקף האחרון"
 
@@ -6183,22 +5836,18 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
-#, fuzzy
 msgid  "~Screen"
 msgstr "מסך"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
-#, fuzzy
 msgid  "~Black"
 msgstr "שחור"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
-#, fuzzy
 msgid  "~White"
 msgstr "לבן"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
-#, fuzzy
 msgid  "~End Show"
 msgstr "סיום הצגה"
 
@@ -6227,52 +5876,42 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "עיצוב טבלה"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
-#, fuzzy
 msgid  "Show"
 msgstr "להציג"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Header Row"
 msgstr "שורת כותר"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Total Row"
 msgstr "שורת סה\"כ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Rows"
 msgstr "שורות חוצצות"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "עמודה ראשונה"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "עמודה אחרונה"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Columns"
 msgstr "עמודות חוצצות"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "סגנונות"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "עיצוב טבלה"
 

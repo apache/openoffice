@@ -716,12 +716,10 @@ msgid  "Create View..."
 msgstr ""
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Forms"
 msgstr "فرم‌ها"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Reports"
 msgstr "گزارش‌ها"
 
@@ -782,7 +780,6 @@ msgid  "Select All"
 msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
-#, fuzzy
 msgid  "~Database"
 msgstr "~پایگاه‌داده"
 
@@ -851,7 +848,6 @@ msgid  "Opens the view wizard"
 msgstr ""
 
 #: source/ui/app/app.src#STR_DATABASE.String.Text
-#, fuzzy
 msgid  "Database"
 msgstr "پایگاه داده‌"
 
@@ -860,17 +856,14 @@ msgid  "Tasks"
 msgstr ""
 
 #: source/ui/app/app.src#STR_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "شرح"
 
 #: source/ui/app/app.src#STR_PREVIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "پیش‌نمایش"
 
 #: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
-#, fuzzy
 msgid  "Disable Preview"
 msgstr "از کار انداختن پیش‌نمایش"
 
@@ -895,27 +888,22 @@ msgid  "Document"
 msgstr ""
 
 #: source/ui/app/app.src#RID_STR_FORM.String.Text
-#, fuzzy
 msgid  "Form"
 msgstr "فرم"
 
 #: source/ui/app/app.src#RID_STR_REPORT.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "گزارش"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
-#, fuzzy
 msgid  "F~orm name"
 msgstr "نام ف~رم"
 
 #: source/ui/app/app.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "نام ~گزارش"
 
 #: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
-#, fuzzy
 msgid  "F~older name"
 msgstr "نام ~پوشه"
 
@@ -944,107 +932,86 @@ msgid  "The current record has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "آیا می‌خواهید داده‌های انتخاب شده را حذف کنید؟"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
-#, fuzzy
 msgid  "(filtered)"
 msgstr "(صافی شده)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
-#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "خطا در تنظیم معیار برای مرتب‌سازی"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
-#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "خطا در تنظیم معیار برای صافی"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
-#, fuzzy
 msgid  "Connection lost"
 msgstr "اتصال قطع شد"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "پرس‌وجو‌ها"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "جدول‌ها"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "ویرایش ‍~پروندهٔ پایگاه‌داده!"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-#, fuzzy
 msgid  "Registered databases ..."
 msgstr "ویرایش ‍~پروندهٔ پایگاه‌داده"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-#, fuzzy
 msgid  "Disco~nnect"
 msgstr "~قطع اتصال"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
-#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "تصدیق حذف"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "آیا می‌خواهید جدول «%1» را حذف کنید؟"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "پرس و جو از قبل وجود دارد. آیا می‌خواهید آن را حذف کنید؟"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
-#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "اتصال با پایگاه‌داده قطع شد. آیا می‌خواهید دوباره متصل شوید؟"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings encountered"
 msgstr "اخطار دریافت شد"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
-#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "در حال بازیابی جدول‌ها، اخطارهایی از اتصال پایگاه‌داده دریافت شدند."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "در حال اتصال به «$name$» ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
-#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "در حال بار کردن پرس و جوی $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
-#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "در حال بار کردن جدول $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
-#, fuzzy
 msgid  "No table format could be found."
 msgstr "قالب جدولی پیدا نشد."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "برقراری اتصال با منبع دادهٔ «$name$» ممکن نیست."
 
@@ -1053,102 +1020,82 @@ msgid  "Rebuild"
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
-#, fuzzy
 msgid  "Column ~Format..."
 msgstr "~قالب ستون..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
-#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "نسخه‌برداری از شر~ح ستون"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
-#, fuzzy
 msgid  "Table Format..."
 msgstr "قالب جدول..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Row Height..."
 msgstr "ارتفاع ردیف..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
-#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "برگرداندن: ورود داده"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
-#, fuzzy
 msgid  "Save current record"
 msgstr "ذخیرهٔ این رکورد"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
-#, fuzzy
 msgid  "Query #"
 msgstr "پرس و جوی شمارهٔ "
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "جدول شماره‌ی "
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
-#, fuzzy
 msgid  "View #"
 msgstr "نمای شمارهٔ "
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "نام «#» از قبل وجود دارد.!"
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
-#, fuzzy
 msgid  "No matching column names were found."
 msgstr "ستونی به این نام پیدا نشد."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
-#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "خطایی رخ داد. آیا می‌خواهید نسخه‌برداری را ادامه دهید؟"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
-#, fuzzy
 msgid  "Data source table view"
 msgstr "نمای جدولی منبع داده"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
-#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "جدول یا پرس و جویی انتخاب شده را نشان می‌دهد."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "جدول شماره‌ی "
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
-#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "تغییر جمله‌(ها)ی SQL"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
-#, fuzzy
 msgid  "Table name"
 msgstr "نام جدول"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
-#, fuzzy
 msgid  "Insert data"
 msgstr "درج داده‌ها"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
-#, fuzzy
 msgid  "Delete data"
 msgstr "حذف داده‌ها"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
-#, fuzzy
 msgid  "Modify data"
 msgstr "تغییر داده‌ها"
 
@@ -1157,7 +1104,6 @@ msgid  "Alter structure"
 msgstr ""
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
-#, fuzzy
 msgid  "Read data"
 msgstr "خواندن داده‌ها"
 
@@ -1170,12 +1116,10 @@ msgid  "Drop structure"
 msgstr ""
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "مرتب‌سازی صعودی"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "مرتب‌سازی نزولی"
 
@@ -1200,17 +1144,14 @@ msgid  "Successfully connected, but information about database tables is not ava
 msgstr ""
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
-#, fuzzy
 msgid  "All tables"
 msgstr "همهٔ جدول‌ها"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
-#, fuzzy
 msgid  "All views"
 msgstr "همهٔ نماها"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
-#, fuzzy
 msgid  "All tables and views"
 msgstr "همهٔ جدول‌ها و نما‌ها"
 
@@ -1756,17 +1697,14 @@ msgid  "Queries"
 msgstr ""
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "ا~ضافه کردن"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~بستن"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "همهٔ جدول‌ها!"
 
@@ -2063,17 +2001,14 @@ msgid  "Insert as"
 msgstr ""
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "مسیر پرونده‌های dBASE"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "مسیر پرونده‌های متنی"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "مسیر نوشتار صفحه‌گسترده"
 
@@ -2082,12 +2017,10 @@ msgid  "Name of the ODBC data source on your system"
 msgstr ""
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "نام پایگاه‌دادهٔ MySQL"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "نام پایگاه‌دادهٔ اوراکل"
 
@@ -2235,12 +2168,10 @@ msgid  "Database sizes"
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "ا~ندازه (مگابایت):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "فضای حافظهٔ خالی (مگابایت):"
 
@@ -2816,47 +2747,38 @@ msgid  "Socket"
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
 msgid  "Refresh"
 msgstr "نوسازی"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~View Design"
 msgstr "طرح ~نمای جدید"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Table Design"
 msgstr "طرح ~جدول جدید"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "نگارش خودکار پرس و جو..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "~پرس و جوی جدید (نمای طراحی)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "~Edit Query"
 msgstr "~ویرایش پرس و جو"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "پر~س و جوی جدید (نمای SQL)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "ویرایش..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
 msgid  "Column ~Width..."
 msgstr "~عرض ستون..."
 
@@ -2865,12 +2787,10 @@ msgid  "Report Wizard..."
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "از نگارش خودکار"
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "سیستم"
 
@@ -2891,7 +2811,6 @@ msgid  "The table cannot be deleted because the database connection does not sup
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~همه"
 
@@ -2944,12 +2863,10 @@ msgid  "Copy RTF Table"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~راهنما"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ان~صراف"
 
@@ -2962,7 +2879,6 @@ msgid  "~Next>"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
-#, fuzzy
 msgid  "C~reate"
 msgstr "ا~یجاد"
 
@@ -2995,22 +2911,18 @@ msgid  "Destination table: \\n"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~همه"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
-#, fuzzy
 msgid  "Non~e"
 msgstr "هی~چ‌کدام"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
-#, fuzzy
 msgid  "Ta~ble name"
 msgstr "نام ج~دول"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "گزینه‌ها"
 
@@ -3039,7 +2951,6 @@ msgid  "Crea~te primary key"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
-#, fuzzy
 msgid  "Name"
 msgstr "نام"
 
@@ -3152,17 +3063,14 @@ msgid  "Resize table window"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "حذف ستون"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "جابه‌جا کردن ستون"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "اضافه کردن ستون"
 
@@ -3183,12 +3091,10 @@ msgid  "Delete Table Window"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "ویرایش شرح ستون"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "تنظیم عرض ستون"
 
@@ -3361,7 +3267,6 @@ msgid  "Both the ActiveConnection and the DataSourceName parameter are missing o
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
-#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "این رابطه از قبل وجود دارد. می‌خواهید آن را ویرایش کنید؟"
 
@@ -3378,7 +3283,6 @@ msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "پایگاه‌داده رابطه‌ها را پشتیبانی نمی‌کند."
 
@@ -3399,37 +3303,30 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "درج/حذف کلید اصلی"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "بله"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "نه"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "صعودی"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "نزولی"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<هیچ‌کدام>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "نام فیلد"
 
@@ -3737,12 +3634,10 @@ msgid  "change field attribute"
 msgstr "تغییر مشخصهٔ فیلد"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~به خاطر سپردن گذرواژه تا نشست بعدی"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~به خاطر سپردن گذرواژه"
 

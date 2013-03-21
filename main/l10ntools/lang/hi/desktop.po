@@ -117,7 +117,7 @@ msgstr "आपके निजी सेटिंग में परिवर�
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME को %PRODUCTNAME विन्यास आँकड़ा में पहुंच के दौरान त्रुटि के कारण आरंभ नहीं किया जा सकता है.\n\nकृपया अपने तंत्र प्रशासक को संपर्क करें."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,39 +145,42 @@ msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "पथ प्रबंधक उपलब्ध नहीं है.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME उपयोक्ता संस्थापन अपर्याप्त खाली डिस्क स्थान के कारण पूरा नहीं किया जा सकता है. कृपया निम्न स्थान पर ज्यादा डिस्क स्थान खाली करें और %PRODUCTNAME फिर से आरंभ करें:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME उपयोक्ता संस्थापन अनुपस्थित पहुँच अधिकार के कारण आगे नहीं बढ़ाया जा सका. कृपया सुनिश्चित करें कि आपके पास निम्न स्थान पर पर्याप्त पहुँच अधिकार है और तब %PRODUCTNAME फिर आरंभ करें:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "आप \\'$NAME\\' विस्तार के $NEW संस्करण को संस्थापित करने के करीब हैं.\nनया संस्करण $DEPLOYED, \\'$OLDNAME\\' नामक, पहले से संस्थापित है.\n\\'ठीक\\' को संस्थापित संस्करण को प्रतिस्थापित करने के लिए क्लिक करे.\n\\'रद्द करें\\' को संस्थापनक रोकने के लिए क्लिक करें."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "आप \\'$NAME\\' विस्तार के $NEW संस्करण को संस्थापित करने के करीब हैं.\n\\'$OLDNAME\\' नामक नया संस्करण पहले से संस्थापित है.\n\\'ठीक\\' को संस्थापित संस्करण को प्रतिस्थापित करने के लिए क्लिक करे.\n\\'रद्द करें\\' को संस्थापनक रोकने के लिए क्लिक करें."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "आप \\'$NAME\\' विस्तार के $NEW संस्करण को संस्थापित करने के करीब हैं.\nपुराना संस्करण $DEPLOYED, \\'$OLDNAME\\' नामक, पहले से संस्थापित है.\n\\'ठीक\\' को संस्थापित संस्करण को प्रतिस्थापित करने के लिए क्लिक करे.\n\\'रद्द करें\\' को संस्थापनक रोकने के लिए क्लिक करें."
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
 msgid  "System dependencies check"
@@ -185,7 +188,7 @@ msgstr "तंत्र निर्भरता जाँच"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "विस्तार संस्थापित नहीं किया जा सकता है क्योंकि\nतंत्र निर्भरता पूर्ण नहीं की जा सकी है:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,7 +256,7 @@ msgstr "बाहर"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr " %PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
@@ -273,7 +276,6 @@ msgid  "Extension Software License Agreement"
 msgstr "विस्तार सॉफ्टवेयर लाइसेंस अनुबंध"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
 msgstr "विस्तार के संस्थापन के साथ आगे बढ़ने के लिए इन चरणों का पालन करें:"
 
@@ -282,7 +284,6 @@ msgid  "1."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
 msgstr "पूरा लाइसेंस अनुबंध पढ़ें. स्क्रॉल बार या \\'नीचे स्क्रॉल करें\\' बटन का प्रयोग इस संवाद में पूरा लाइसेंस पाठ देखने के लिए करें."
 
@@ -291,22 +292,18 @@ msgid  "2."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
 msgstr "विस्तार के लिए लाइसेंस अनुबंध स्वीकार करें \\'स्वीकार करें\\' बटन दबाकर."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "~Scroll Down"
 msgstr "स्क्रॉल डाउन करें (~S)"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
-#, fuzzy
 msgid  "Accept"
 msgstr "स्वीकृत"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
-#, fuzzy
 msgid  "Decline"
 msgstr "मना करें"
 
@@ -495,12 +492,14 @@ msgid  "The extension cannot be updated because:"
 msgstr "विस्तार को अद्यतन नहीं किया जा सकता है क्योंकि:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
+#, fuzzy
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "जरूरी OpenOffice.org संस्करण मेल नहीं खाता है:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
+#, fuzzy
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "आपके पास OpenOffice.org %VERSION है"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
 msgid  "browser based update"
@@ -591,27 +590,22 @@ msgid  "Make sure that no further users are working with the same %PRODUCTNAME, 
 msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "नक़ल कर रहा है: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "जोड़ने के दौरान त्रुटि: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "हटाने के दौरान त्रुटि: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "विस्तार पहले से जोड़ा गया है: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "ऐसा कोई विस्तार तैनात नहीं है: "
 
@@ -620,45 +614,40 @@ msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "अज्ञात"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
+#, fuzzy
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "कम से कम OpenOffice.org %VERSION पर विस्तार जरूरी है"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
+#, fuzzy
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "विस्तार इससे अधिक के संस्करण का समर्थन नहीं करता है: OpenOffice.org %VERSION"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "सक्रिय कर रहा है:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "संकुल निष्क्रिय कर रहा है: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "मीडिया प्रकार जाँच नहीं सकता है: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "यह मीडिया प्रकार समर्थित नहीं है: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "संकुल के सक्रियकरण के दौरान त्रुटि उत्पन्न हुई: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "निष्क्रिय करने के दौरान त्रुटि उत्पन्न हुई: "
 
@@ -687,30 +676,26 @@ msgid  "UNO Java Type Library"
 msgstr ""
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "विन्यास स्कीमा"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "विन्यास आँकड़ा"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "मदद"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
 msgid  "The extension cannot be installed because:\\n"
-msgstr ""
+msgstr "विस्तार को संस्थापित नहीं किया जाएगा क्योंकि:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
-msgstr ""
+msgstr "विस्तार को संस्थापित नहीं किया जाएगा क्योंकि एक त्रुटि मदद फ़ाइलों में आई:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "विस्तार"
 
@@ -719,22 +704,18 @@ msgid  "%PRODUCTNAME Basic Library"
 msgstr ""
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "संवाद लाइब्रेरी"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "लाइब्रेरी नाम निर्धारित नहीं किया जा सका."
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "यह लाइब्रेरी नाम पहले से मौजूद है. कृपया एक अलग नाम चुनें."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "%MACROLANG लाइब्रेरी"
 
@@ -743,22 +724,18 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-#, fuzzy
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr "ऊपर दिखाए गए पूरे लाइसेंस अनुबंध को पढ़ें. कंसोल पर \"yes\" टाइप करके लाइसेंस अनुबंध स्वीकार करें और फिर Return कुंजी दबाएँ. \"no\" मना करने के लिये टाइप करें और विस्तार सेटअप को छोड़ने के लिए."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr "[\"हां\" या \"नहीं\" दाखिल करें]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-#, fuzzy
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "आपका इनपुट सही नहीं था. कृपया \"हां\" या \"नहीं\" दाखिल करें:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "हाँ"
 
@@ -767,7 +744,6 @@ msgid  "Y"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "नहीं"
 
@@ -780,82 +756,70 @@ msgid  "unopkg cannot be started. The lock file indicates it as already running.
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
-#, fuzzy
 msgid  "ERROR: "
 msgstr "त्रुटि: "
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION में आपका स्वागत है"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "स्वागतम्"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "लाइसेंस अनुबंध"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "निजी आँकड़ा"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "उपयोक्ता नाम"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "ऑनलाइन अद्यतन"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "पंजीयन"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "यह सहायक लाइसेंस अनुबंध से होकर गाइड करेगा, %OLD_VERSION से उपयोक्ता आँकड़ा का हस्तांतरण और %PRODUCTNAME का पंजीयन.\n\nजारी रखने के लिए 'आगे' क्लिक करें."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "यह बिजार्ड आपके लाइसेंस अनुबंध और %PRODUCTNAME के पंजीयन के लिए दिशा दिखाएगा.\n\nजारी रखने के लिए 'आगे' क्लिक करें."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "समाप्त (~F)"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "आपके पास अब दुनिया की सबसे तेजी से बढ़ रहे मुक्त स्रोत के समुदाय को समर्थन और योगदान करने का मौका है.\n\nहमें पंजीयन करके यह साबित करने में मदद करें कि %PRODUCTNAME पहले से महत्वपूर्ण मार्केट शेयर पा लिया है.\n\nपंजीयन स्वैच्छिक है और बिना किसी दायित्व का है."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
 msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "क्या आप वास्तव में मुकरना चाहते हैं?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION में आपका स्वागत है"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "सहायक लाइसेंस अनुबंध और %PRODUCTNAME के पंजीयन से होकर गाइड करेगा.\n\nजारी रखने के लिए 'आगे' क्लिक करें."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "लाइसेंस स्वीकारने के लिए इन चरणों का पालन करें"
 
@@ -864,7 +828,6 @@ msgid  "1."
 msgstr ""
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "पूर्ण लाइसेंस अनुबंध को देखें. कृपया स्क्रॉल बार का प्रयोग करें या '%PAGEDOWN' बटन का इस संवाद में पूर्ण लाइसेंस पाठ को देखने के लिए."
 
@@ -873,27 +836,22 @@ msgid  "2."
 msgstr ""
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "अनुबंध की शर्त स्वीकारने के लिए 'स्वीकारें' पर क्लिक करें."
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "नीचे स्क्रॉल करें (~w)"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "स्वीकारें (~A)"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "मना करें (~D)"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "निजी आँकड़ा हस्तांतरित करें"
 
@@ -902,124 +860,102 @@ msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODU
 msgstr ""
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "निजी आँकड़ा हस्तांतरित करें"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "ऑनलाइन अद्यतन"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME नए संस्करण के लिए नियमित अंतराल पर स्वयं खोज करता है.\nऑनलाइन ऐसा अद्यतन करने में निजी आँकड़ा को हस्तांतरित नहीं करता है.\nजैसे ही एक नवीन संस्करण मोजूद होता है, आपको सूचित किया जाएगा.\n\nआप इस विशेषता को औज़ार / विकल्प... / %PRODUCTNAME / ऑनलाइन अद्यतन पर विन्यस्त कर सकते हैं."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "अद्यतन के लिए स्वतः जाँचें (~C)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "कृपया अपना पूरा नाम व आद्याक्षर दें."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
-#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "उपयोक्ता नाम को दस्तावेज़ गुण, नमूना, और जब आप दस्तावेज़ के परिवर्तन को रिकार्ड करते हैं में प्रयोग किया जायेगा."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "पहला नाम (~F)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "अंतिम नाम (~L)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "आद्याक्षर (~I)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "पिता का नाम (~F)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME पंजीयन"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "आपके पास %PRODUCTNAME उपयोक्ता के रूप में पंजीकृत करने का मौका है. पंजीयन स्वैच्छिक है और बिना किसी उत्तरदायित्व के.\n\nयदि आप पंजीकृत करते हैं, हम आपको इस उत्पाद से जुड़े नए विकास के संबंध में सूचित कर सकते हैं."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "मैं अभी पंजीयन करना चाहूंगा (~n)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "मैं बाद में पंजीयन करना चाहूंगा (~l)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "मैं पंजीयन करना नहीं चाहता हूं (~r)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "हम आशा करते हैं कि आपने %PRODUCTNAME के साथ काम करना पसंद किया है.\n\nसहायक से बाहर निकलने के लिए, 'समाप्त' पर क्लिक करें."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Installation Status"
 msgstr "संस्थापन स्थिति"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
-#, fuzzy
 msgid  "Installation is optimized for clients."
 msgstr "संस्थापन क्लाइंट के लिए अनुकूलित है."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
-#, fuzzy
 msgid  "Installation is optimized for servers."
 msgstr "संस्थापन सर्वर के लिए अनुकूलित है."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
-#, fuzzy
 msgid  "Cannot find Office installation."
 msgstr "कार्यालय संस्थापन नहीं ढूँढ़ सकता है."
 
 #: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Setup"
 msgstr "सेटअप"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "%PRODUCTNAME सेटअप"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "स्मृति कम"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "सेटअप msi संकुल पाने में विफल था."
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "सेटअप रद्द किया गया था"
 
@@ -1028,12 +964,10 @@ msgid  "Administrator privileges are required for upgrading the Windows Installe
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "सेटअप '%s' फ़ाइल को पाने में विफल था."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
-#, fuzzy
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "अमान्य कमांड रेखा विकल्प '%s'. कृपया प्रयोग करें '/?' सहायता के लिये."
 
@@ -1050,117 +984,94 @@ msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrati
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "पहले से एक सेटअप प्रक्रिया चल रही है."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "एक अज्ञात त्रुटि हुई!"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "अवैध या अधूरी प्रोफ़ाइल"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "अज्ञात भाषा: %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "चीनी (परम्परागत)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "चेक"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "डैनिश"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "जर्मन (जर्मनी)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "ग्रीक"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "अंग्रेजी (USA)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "स्पेनिश (स्पेन)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "फिनिश"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "फ्रेन्च (फ्रान्स)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "हिब्रू"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "हंगेरियाई"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "इतालवी (इटली)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "जापानी"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "कोरियाई"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "डच (नीदरलैंड)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "नोर्वेयन (बोक्माल)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "पोलिश"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "पुर्तगाली (ब्राज़िल)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "रूसी"
 
@@ -1169,31 +1080,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "स्वीडिश (स्वीडन)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "थाई"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "तुर्की"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "एस्तोनियन"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "चीनी (सरलीकृत)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "पुर्तगाली (पुर्तगाल)"

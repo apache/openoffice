@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "هتي  %1 تي \"%2\" لاءِ اِستعمال ڪندڙ جو نالو ۽ ڳجهو لفظ داخل ڪريو۔ "
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "موڪليو"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "'${HOST}'  سرور هڪ يا هڪ کان وڌيڪ ڪڪيز سيٽ ڪرڻ چاهي ٿو۔ ڪڪيز ۾ ڪن URL درجن جو حوالو ڏيندڙ معلومت مؤجود آهي۔ اگر اڳتي %PRODUCTNAME  سيٽ ڪيل درجي سان واسطو رکندڙ URL سميت دستاويز جو عرض ڪري ٿو تہ %PRODUCTNAME اها معلومات سرور ڏانهن موڪلي ٿي جيڪا سرور ڪي WWW  عرض جي حالت، مثال طور؛ آن لائين خريداريءَ وقت، سڃاڻڻ جي اجازت ڏئي ٿي۔ \n\n هيٺ ڏنل ڪُڪيز سيٽ ڪرڻ گهرجن "
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
@@ -481,7 +481,7 @@ msgstr "Cookie Reception"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME ان '${HOST}' سرور لاءِ ڪڪيز سانڍيون آهن، جيڪي ${PATH} دستاويز جي عرضظ وقت موڪليون وينديون \n ڪڪيڙ ۾ اُها معلومات مؤجود آهي جيڪا ڪن URL درجن جو حوالو ڏئي ٿي۔ اهي ڪن سرورن ذريعي %PRODUCTNAME ڏانهن موڪلجن ٿيون جتي ڪجهہ دستاوير ٿيڻ وقت سانڍيو وڃن ٿيون۔ اگر %PRODUCTNAME اگر ان دستاويز کي اڳہ ۾ حاصل ڪيل ڪڪيز مان هک جري سان ميل کائيندڙ URL لوڊ ڪري ٿو تہ %PRODUCTNAME  اها معلومات هن سرور ڏانهن موکليندو۔ اها ڳالهہ سرور کي WWW عرصن جي حالت مثال طور آن لائين تي خريداريءَ سان سنٻنڌ رکندو۔ \n\n هيٺ ڏنل ڪڪيز سيٽ ڪرڻ گهرجن۔ \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"

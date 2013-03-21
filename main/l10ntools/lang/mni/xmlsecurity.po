@@ -53,19 +53,19 @@ msgstr "হন্না শেম্মো"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~য়াম্না ৱাংই.\nথাজরবা ফাইল লৈফমশিংদগী মেক্ৰোশিংতমক শিজিন্নবা য়াই. অতোপ্পা মেক্ৰোশিং পুম্নমক, শোই তৌরবসু তৌদ্রবসু খন্দনা, শিজিন্নবা য়াদে."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "অৱাংবা.\nথাজরবা হৌরকফমশিংদগী শোই তৌরবা মেক্রোশিংতমক শিজিন্নবা য়াই. শোই তৌদবা মেক্রোজশিং শিজিন্নবা য়াদে."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~ময়াই ওইবা.\nথাজদ্রবা হৌরকফমশিংদগী মেক্ৰোশিং থবক পাংথোক্ত্রিঙৈগী মমাংদা অরেপ্পা খঙবা দরকার লৈ."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~অনেম্বা (রিকমেন্দ তৌদবা).\nমেক্রো পুম্নমক অয়াবা য়াওদনা মথৌ তৌরনি. করিগুম্বা অদোম্না শোয়দ্রবদি মদুদি হাংদোক্কদবা দোকুমেন্ত পুম্নমক সেফ ওইগনি হায়রবদি মসিগী সেত্তিংসিতমক শিজিন্নবিয়ু."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "থাজরবা সর্তিফিকেতশিং"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "দা... ইসু তৌরবা\tনা... ইসু তৌরবা\tমতম হেন্দোকপগী তাং"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "মখাদা পিরিবসিনা মসিগী পেকে
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tনা শোয় তৌরে\tনা দিজিতেল ID ইশু তৌরে \tতাং"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "সার্তিফিকেত অসি চতনহনবা ঙম
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "ফিল্দ\tভেল্যু"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "অদোম্না শোই তৌনবগীদমক শিজি
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "দা... ইসু তৌরবা\tনা... ইসু তৌরবা\tমতম হেন্দোকপগী তাং"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

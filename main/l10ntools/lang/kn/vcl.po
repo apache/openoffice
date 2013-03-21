@@ -210,8 +210,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
-msgstr ""
+msgstr "(%s) ಅಂಶವನ್ನು ಲೋಡ್‌ ಮಾಡಲಾಗಲಿಲ್ಲ.\nದಯವಿಟ್ಟು ಸರಿಪಡಿಸುವ ಆಯ್ಕೆಯೊಡನೆ ಸಿದ್ಧತೆಯನ್ನು ಆರಂಭಿಸಿ."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -313,32 +314,26 @@ msgid  "Print"
 msgstr "ಮುದ್ರಿಸು"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "ಮುದ್ರಿಸು(~P)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
-#, fuzzy
 msgid  "/ %n"
 msgstr "/ %n"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.String.Text
-#, fuzzy
 msgid  "No pages"
 msgstr "ಯಾವುದೆ ಪುಟಗಳಿಲ್ಲ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
-#, fuzzy
 msgid  "Print to File..."
 msgstr "ಕಡತಕ್ಕೆ ಮುದ್ರಿಸು(~f)..."
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
-#, fuzzy
 msgid  "Default printer"
 msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಮುದ್ರಕ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
-#, fuzzy
 msgid  "Print preview"
 msgstr "ಮುದ್ರಣ ಮುನ್ನೋಟ"
 
@@ -348,112 +343,90 @@ msgid  "Page Layout"
 msgstr "ಪುಟ ವಿನ್ಯಾಸ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "ರೂಪವಿನ್ಯಾಸ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
-#, fuzzy
 msgid  "Pa~ges per sheet"
 msgstr "ಪ್ರತಿ ಪುಟದಲ್ಲಿನ ಹಾಳೆಗಳು(~g)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
-#, fuzzy
 msgid  "16"
 msgstr "16"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
-#, fuzzy
 msgid  "Custom"
 msgstr "ಇಚ್ಛೆಯ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
-#, fuzzy
 msgid  "P~ages"
 msgstr "ಪುಟಗಳು(~a)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr "ಇಂದ(~y)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "ದೂರ(~D)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "between pages"
 msgstr "ಪುಟಗಳ ನಡುವೆ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Margin"
 msgstr "ಅಂಚು(~M)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "to sheet border"
 msgstr "ಹಾಳೆಯ ಅಂಚಿಗೆ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Orientation"
 msgstr "ಅಭಿಮುಖ(~O)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "ಸ್ವಯಂಚಾಲಿತ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
-#, fuzzy
 msgid  "Portrait"
 msgstr "ಭಾವಚಿತ್ರ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
-#, fuzzy
 msgid  "Landscape"
 msgstr "ಪ್ರಕೃತಿಚಿತ್ರ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
-#, fuzzy
 msgid  "Order"
 msgstr "ಕ್ರಮ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
-#, fuzzy
 msgid  "left to right, then down"
 msgstr "ಎಡದಿಂದ ಬಲಕ್ಕೆ, ನಂತರ ಕೆಳಕ್ಕೆ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
-#, fuzzy
 msgid  "top to bottom, then right"
 msgstr "ಮೇಲಿನಿಂದ ಕೆಳಕ್ಕೆ, ನಂತರ ಬಲಕ್ಕೆ"
 
@@ -738,116 +711,93 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
-#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<ಯಾವ ಆಯ್ಕೆಯು ಸಾಧ್ಯವಿಲ್ಲ>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "~Undo"
 msgstr "ರದ್ದುಮಾಡು(~U)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "ಕತ್ತರಿಸು(~t)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "ಕಾಪಿ ಮಾಡು(~C)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "ಅಂಟಿಸು(~P)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ಅಳಿಸು(~D)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select ~All"
 msgstr "ಎಲ್ಲ ಆಯ್ಕೆಮಾಡು(~A)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
-#, fuzzy
 msgid  "~Special Character..."
 msgstr "ವಿಶೇಷ ಅಕ್ಷರ(~S)..."
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
-#, fuzzy
 msgid  "Services"
 msgstr "ಸೇವೆಗಳು"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
-#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "%PRODUCTNAMEಅನ್ನು ಅಡಗಿಸು"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
-#, fuzzy
 msgid  "Hide Others"
 msgstr "ಇತರೆಗಳನ್ನು ಅಡಗಿಸು"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
-#, fuzzy
 msgid  "Show All"
 msgstr "ಎಲ್ಲ ತೋರಿಸು"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
-#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "%PRODUCTNAME ಇಂದ ಹೊರನಡೆ"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "ಸರಿ"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "ವಜಾಮಾಡು"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "ಹೌದು(~Y)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "ಇಲ್ಲ(~N)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು(~R)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "ಸಹಾಯ(~H)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "ಹೆಚ್ಚು(~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "ಹೆಚ್ಚು(~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "ನಿರ್ಲಕ್ಷಿಸು(~I)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "ಹಿಂತೆಗೆ(~A)"

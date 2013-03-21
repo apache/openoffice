@@ -53,19 +53,19 @@ msgstr "ပြန်စပါ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "အလွန်မြင့်သည်။ \nယုံကြည်သည့်ဖိုင်နေရာများမှ မက်ခရိုများသာ အလုပ်လုပ်ရန် ခွင့်ပြုထားသည်။ အခြား မက်ခရိုများအားလုံး ၊ မစဉ်းစားဘဲ မှန်ကန်ကြောင်း စစ်ဆေးခြင်းဖြစ်စေ (သို့) မစစ်ဆေးခြင်းဖြစ်စေ ရပ်ဆိုင်းသည်။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "အမြင့်။ \nယုံကြည်သည့် မူရင်းများမှ  မက်ခရိုများသာပေးလိုက်လျှင် အလုပ်လုပ်ရန် ခွင့်ပြုထားသည်။ မက်ခရိုများမပေးလျှင် ရပ်ဆိုင်းသည်။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "ကြားခံ။ \nမယုံကြည်သည့် မူရင်းများမှ မက်ခရိုများ တွက်ချက်  ဆောင်ရွက် မဖြေရှင်းမီ အတည်ပြုချက် လိုအပ်သည်။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "အနိမ့် (အကြံ မပြုထားပါ)။ \nအတည်ပြုချက် မပါဘဲ မက်ခရိုများအားလုံး တွက်ချက် ဆောင်ရွက် ဖြေရှင်းရလိမ့်မည်။ အကယ်၍ သေချာသော ထို မှတ်တမ်းမှတ်ရာများအားလုံး ရှိပါက လုံခြုံစွာ ဖွင့်ရလိမ့်မည်ဖြစ်၍ ဤရွေးနိုင်ခြင်းကိုသာ သုံးပါ။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "ယုံကြည်သည့် လက်မှတ်များ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "သက်တမ်းကုန် \t အကြောင်းအရာ \t ထုတ်ပေးပါ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "ဤအထုတ်သည် အောက်ပါ မှန်ကန်�
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\t မှန်ကန်ကြောင်း စစ်ဆေးချက်အားဖြင့် \t ဒစ်ဂျစ်တယ် ID ထုတ်ပေးခြင်းအားဖြင့် \t ရက်စွဲ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "လက်မှတ်သည် မခိုင်လုံနိုင�
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "နေရာကွက် \t တန်ဖိုး"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "မှန်ကန်ကြောင်း စစ်ဆေးခြင�
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "သက်တမ်းကုန် \t အကြောင်းအရာ \t ထုတ်ပေးပါ"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

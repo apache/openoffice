@@ -1169,7 +1169,7 @@ msgstr "ਤੁਹਾਡੇ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਐਡਰੈੱ
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "ਡਾਟਾ ਸਰੋਤ \\'%1\\' ਨਹੀੱ ਲੱਭਿਆ ਹੈ। ਇਸਕਰਕੇ ਡਾਟਾਸਰੋਤ ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਸਥਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ ਹੈ।\n\nਕਿਰਪਾ ਕਰਕੇ ਕੁਨੈਕਸ਼ਨ ਸਥਾਪਨ ਦੀ ਜਾਂਚ ਕਰੋ।"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "<ਯੂਜ਼ਰ ਸੈਟਿੰਗ>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਡਿਫਾਲਟ ਟੈਪਲੇਟ ਦੀ ਅਨੁਕੂਲਤਾ ਚੋਣ ਵਿੱਚ ਤਬਦੀਲੀ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?\nਇਸ ਨਾਲ ਡਿਫਾਲਟ ਟੈਪਲੇਟ ਦੇ ਅਧਾਰ ਤੇ ਬਣਨ ਵਾਲੇ ਸਭ ਨਵੇਂ ਦਸਤਾਵੇਜ਼ ਪ੍ਰਭਾਵਿਤ ਹੋਣਗੇ।"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "ਸੁਰਖੀ"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "ਸ਼ਾਮਿਲ ਕਰਨ ਸਮੇਂ ਖੁਦ ਹੀ\n ਸੁਰਖੀ ਦਿਓ:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "ਸੂਚਨਾ:\n ਸੈਮੀਕਾਲਮ (;) ਨਾਲ ਵੱਖ ਕੀਤੇ ਈ-ਮੇਲ ਐਡਰੈੱਸ ਦਿਓ।"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "ਦਸਤਾਵੇਜ਼ ਸੋਧ"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਦਸਤਾਵੇਜ਼ ਲਿਖਿਆ ਜਾਂ ਸੋਧਿਆ ਨਹੀਂ ਤਾਂ ਹੁਣ ਕਰੋ। ਤਬਦੀਲੀਆਂ ਸਭ ਮਿਲਾਨ ਦਸਤਾਵੇਜ਼ਾਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਨਗੀਆਂ।\n\n 'ਦਸਤਾਵੇਜ਼ ਸੋਧ...' ਨੂੰ ਦਬਾਉਣ ਨਾਲ ਸਹਾਇਕ ਝਰੋਖੇ ਦੇ ਅਕਾਰ ਆਰਜ਼ੀ ਤੌਰ ਤੇ ਛੋਟਾ ਹੋ ਜਾਵੇਗਾ ਤਾਂ ਕਿ ਤੁਸੀਂ ਪੱਤਰ ਮਿਲਾਨ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਸੋਧ ਸਕੋ। ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਸੋਧ ਕਰਨ ਉਪਰੰਤ ਛੋਟੇ ਝਰੋਖੇ ਵਿੱਚ 'ਪੱਤਰ ਮਿਲਾਨ ਸਹਾਇਕ ਤੋਂ ਵਾਪਸ' ਨੂੰ ਦਬਾਉਣ ਨਾਲ ਸਹਾਇਕ ਤੇ ਵਾਪਸ ਆਇਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "ਝਲਕ..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "ਆਪਣੇ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਆਪਣੀ ਪਹੁੰਚ ਵਿਚਲੇ ਡਾਟਾਬੇਸ ਨੂੰ ਡਾਟਾਬੇਸ ਖੇਤਰਾਂ ਰਾਹੀਂ ਹੋਰ ਡਾਟਾਬੇਸਾਂ ਨਾਲ ਤਬਦੀਲ ਕਰਨ ਲਈ ਇਹ ਡਾਈਲਾਗ ਵਰਤੋਂ। ਤੁਸੀਂ ਇੱਕ ਸਮੇਂ ਇੱਕ ਹੀ ਤਬਦੀਲੀ ਕਰ ਸਕਦੇ ਹੋ। ਖੱਬੇ ਪਾਸੇ ਲਿਸਟ ਵਿੱਚ ਬਹੁਤੀ ਚੋਣ ਕਰਨੀ ਸੰਭਵ ਹੈ।\nਡਾਟਾਬੇਸ ਫਾਇਲ ਦੀ ਚੋਣ ਕਰਨ ਲਈ ਝਲਕ ਬਟਨ ਦੀ ਚੋਣ ਕਰੋ।"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "ਆਟੋ-ਸੋਧ"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "ਆਟੋ-ਸੋਧ ਮੁਕੰਮਲ ਹੋਇਆ।\nਤੁਸੀਂ ਸਭ ਤਬਦੀਲੀਆਂ ਨੂੰ ਮਨਜ਼ੂਰ, ਨਾ-ਮਨਜ਼ੂਰ,\nਜਾਂ ਖਾਸ ਤਬਦੀਲੀਆਂ ਮਨਜ਼ੂਰ ਜਾਂ ਰੱਦ ਕਰ ਸਕਦੇ ਹੋ।"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "ਜੋੜ"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "ਤੁਸੀਂ ਗਲਤ ਨਾਂ ਦਿੱਤਾ ਹੈ।\nਲੋੜੀਂਦਾ ਆਟੋ-ਫਾਰਮੈਟ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ।\nਵੱਖਰੇ ਨਾਂ ਨਾਲ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ।"
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "ਪਹਿਲੇ ਕਾਲਮ ਨੂੰ ਸੁਰਖੀ ਬਣਾਓ(~C)"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "ਜੇਕਰ ਚੁਣੇ ਸੈੱਲਾਂ ਵਿੱਚ ਲੋੜੀਂਦਾ ਡਾਟਾ ਨਹੀਂ ਤਾਂ ਹੁਣ ਡਾਟੇ ਦੀ ਸੀਮਾ ਚੁਣੋ\n\nਜੇਕਰ ਤੁਸੀਂ ਚਾਰਟ ਵਿੱਚ ਸੈੱਲਾਂ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਕਾਲਮ ਅਤੇ ਕਤਾਰ ਲੇਬਲ ਨੂੰ ਰੱਖਣ ਵਾਲੇ ਸੈੱਲ ਚੁਣੋ।"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr "[ਸਿਸਟਮ]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "ਵੱਖਰੇ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਆਸਾਨ ਸ਼ਬਦ-ਜੋੜ ਪਹਿਲਾਂ ਹੀ\nਸਰਗਰਮ ਹੈ"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "ਵੱਖਰੇ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਆਸਾਨ ਸਮਾਸੀ-ਚਿੰਨੀਕਰਨ ਪਹਿਲਾਂ ਹੀ\nਸਰਗਰਮ ਹੈ"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

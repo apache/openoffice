@@ -62,8 +62,9 @@ msgid  "Data Source Title"
 msgstr "Data Source Title"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+#, fuzzy
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 #, fuzzy
@@ -126,8 +127,9 @@ msgid  "Other external data source"
 msgstr "Other external data source"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "To set up the new data source, additional information is required.\n\nClick the following button to open another dialogue box in which you then enter the necessary information."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 #, fuzzy
@@ -135,16 +137,19 @@ msgid  "Settings"
 msgstr "Settings"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+#, fuzzy
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+#, fuzzy
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+#, fuzzy
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "To incorporate the address data in your templates, %PRODUCTNAME must be told which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialogue box in which you can enter the settings for your data source."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 #, fuzzy
@@ -152,8 +157,9 @@ msgid  "Field Assignment"
 msgstr "Field Assignment"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+#, fuzzy
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 #, fuzzy
@@ -215,8 +221,9 @@ msgid  "Address Data - Field Assignment"
 msgstr "Address Data - Field Assignment"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+#, fuzzy
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 #, fuzzy
@@ -254,8 +261,9 @@ msgid  "Data Source"
 msgstr "Data Source"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+#, fuzzy
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "The following column names could not be assigned:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 #, fuzzy
@@ -598,8 +606,9 @@ msgid  "Control"
 msgstr "Control"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+#, fuzzy
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 #, fuzzy
@@ -717,8 +726,9 @@ msgid  "Data"
 msgstr "Data"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 #, fuzzy
@@ -901,8 +911,9 @@ msgid  "Welcome"
 msgstr "Welcome"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialogue box following the licence text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 #, fuzzy
@@ -1000,8 +1011,9 @@ msgid  "Forms"
 msgstr "Forms"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 #, fuzzy
@@ -2849,12 +2861,14 @@ msgid  "Type a name for the new data type:"
 msgstr "Type a name for the new data type:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+#, fuzzy
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "About\n Dev~ice"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+#, fuzzy
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Create\nPreview"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 #, fuzzy
@@ -2922,8 +2936,9 @@ msgid  "Scanner"
 msgstr "Scanner"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+#, fuzzy
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Device: %s\nVendor: %s\nModel: %s\nType: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 #, fuzzy
@@ -2981,8 +2996,9 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION is up to date."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 #, fuzzy
@@ -3000,8 +3016,9 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+#, fuzzy
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 #, fuzzy
@@ -3009,8 +3026,9 @@ msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+#, fuzzy
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 #, fuzzy

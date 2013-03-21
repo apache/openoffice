@@ -145,7 +145,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "Gjuha e përzgjedhur nuk është në dispozicion."
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
@@ -277,17 +277,14 @@ msgid  "Please follow these steps to proceed with the installation of the extens
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
 msgstr "Shikoni Marraveshjen License komplete. Ju  lutem përdor shiritin rrotullues ose butonin '%PAGEDOWN' në këtë dialog të paraqet pamjen e mbrendshme të tekstit licensë."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
@@ -296,17 +293,14 @@ msgid  "Accept the License Agreement for the extension by pressing the \\'Accept
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "~Scroll Down"
 msgstr "Diagonalja Poshtë"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
-#, fuzzy
 msgid  "Accept"
 msgstr "Pranoj"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
-#, fuzzy
 msgid  "Decline"
 msgstr "Nuk pranoj"
 
@@ -585,22 +579,18 @@ msgid  "Make sure that no further users are working with the same %PRODUCTNAME, 
 msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "Duke kopjuar ndarjen..."
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "Gabim gjatë shtypjes"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "Dështoi për të lëvizur biblotekën"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "Intervali tanimë është futur."
 
@@ -613,7 +603,6 @@ msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "I panjohur"
 
@@ -638,17 +627,14 @@ msgid  "Cannot detect media-type: "
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "Ky verzion i fajlilt grafik nuk mbështetet"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "Një gabim është ndeshur gjatë skanografisë"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "Një gabim është ndeshur gjatë skanografisë"
 
@@ -657,12 +643,10 @@ msgid  "UNO Dynamic Library Component"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "Duke përditësuar regjistrimin e  komponenteve"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "Python-UNO Bridge"
 
@@ -679,17 +663,14 @@ msgid  "UNO Java Type Library"
 msgstr ""
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "Konfigurimi i shfrytëzuesit"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "Të dhënat për ["
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Ndihma"
 
@@ -702,32 +683,26 @@ msgid  "The extension will not be installed because an error occurred in the Hel
 msgstr ""
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "Ekstenzioni:"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "Biblioteka themelore %PRODUCTNAME"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "Libraria e tanishme"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "Emri i kompjuterit nuk mund të gjendet\n"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "Ky emër i temës tanimë ekziston.\nJu lutemi zgjedhni një emër tjetër."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "Libraria e tanishme"
 
@@ -740,7 +715,6 @@ msgid  "Read the complete License Agreement displayed above. Accept the License 
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr " Jo;Po;Shkak formulimi"
 
@@ -749,22 +723,18 @@ msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "Po"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "No"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
@@ -777,37 +747,30 @@ msgid  "ERROR: "
 msgstr ""
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "{&TahomaBold10}Mirëseerdhët në Arrnimin për [ProductName]"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "Mirësevini"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "Marrëveshja Liçensë"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Të dhënat për ["
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "Emri i Shfrytëzuesit"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Azhuro të gjitha"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "Regjistrim..."
 
@@ -820,7 +783,6 @@ msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\
 msgstr ""
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "Përfundim"
 
@@ -833,12 +795,10 @@ msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODU
 msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "Vërtetë dëshironi të fshini Stilin $1?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "{&TahomaBold10}Mirëseerdhët në Arrnimin për [ProductName]"
 
@@ -847,47 +807,38 @@ msgid  "This wizard will guide you through the license agreement and the registr
 msgstr ""
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "Ju lutem vijoni këto hapa për të procesuar me instalimin:"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "Shikoni Marraveshjen License komplete. Ju  lutem përdor shiritin rrotullues ose butonin '%PAGEDOWN' në këtë dialog të paraqet pamjen e mbrendshme të tekstit licensë."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Unë i pranoj kushtet në marrëveshjen e licencimit"
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "Lëviz poshtë"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "Prano"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "Nuk pranoj"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Shto të dhënat si:"
 
@@ -896,12 +847,10 @@ msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODU
 msgstr ""
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Shto të dhënat si:"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Azhuro të gjitha"
 
@@ -910,7 +859,6 @@ msgid  "%PRODUCTNAME searches automatically at regular intervals for new version
 msgstr ""
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "Të lutem kontrollo regjistrin e sistemit për më tepër të dhëna."
 
@@ -923,27 +871,22 @@ msgid  "The user name will be used in the document properties, templates and whe
 msgstr ""
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "Emri"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "Mbiemri"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "Inicialet"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "Emri i grupit"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "Regjistrimi i %PRODUCTNAME"
 
@@ -952,17 +895,14 @@ msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registr
 msgstr ""
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "A dwshironi tw"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "Më përkujto që të regjistrohem më vonë"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "A dëshironi ta fshini shkallëzimin?"
 
@@ -987,17 +927,14 @@ msgid  "Cannot find Office installation."
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Setup"
 msgstr "Setup..."
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "{[ProductName] }Setup ka dështuar."
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "Memorje e pamjaftueshme"
 
@@ -1006,7 +943,6 @@ msgid  "Setup was unable to find the msi package."
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "{&MSSansBold8}Setup i përshtatur"
 
@@ -1039,87 +975,70 @@ msgid  "There is already a setup process running."
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "Gabimi në vazhdim ka ndodhur:"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "Emri ose numri i skedarit janë të pavlefshwm"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "Gjuha e skriptimit"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Kineze (tradicionale)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "Çekisht"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "Daneze"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "Gjermane (Zvicra)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "Greke"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "Angleze (SHBA)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Port_of_Spain"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "Finlandeze"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "Franceze"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "Hebraike"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "Hungareze"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Italiane (Amiga)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "Japonisht"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "Koreane"
 
@@ -1128,22 +1047,18 @@ msgid  "Dutch (Netherlands)"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "Norvegjeze (Sun; lloji 4)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "Polonisht"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Portugalisht (Brazil)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "Rusisht"
 
@@ -1152,7 +1067,6 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Suedeze (Amiga)"
 
@@ -1161,21 +1075,17 @@ msgid  "Thai"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "Turke (planimetri F)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "Estone"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "Kineze ( e thjeshtë)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Portugalisht (Brazil)"

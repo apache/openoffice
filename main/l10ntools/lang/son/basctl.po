@@ -137,175 +137,142 @@ msgid  "~Save"
 msgstr "~Gaabu"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
-#, fuzzy
 msgid  "<All>"
 msgstr "<I kul>"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
-#, fuzzy
 msgid  "< No Module >"
 msgstr "<Dunbu si bara>"
 
 #: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
-#, fuzzy
 msgid  "Incorrect Password"
 msgstr "Sennikufal laalo"
 
 #: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
-#, fuzzy
 msgid  "Load"
 msgstr "Zumandi"
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Gaabu"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Hundo tiiraa ga hansa ka kuu, woo se a si hin ka goyyandi wala a ma gaabu.\nHantum jerey tuusu wala ma dabari fooyaŋ berandi dunbu foo tana ra."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
-#, fuzzy
 msgid  "Error opening file"
 msgstr "Firka bangay tiiraa feeriyaŋoo ra"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
-#, fuzzy
 msgid  "Error loading library"
 msgstr "Firka bangay tiirahugoo feeriyaŋoo ra"
 
 #: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
-#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
 msgstr "Tiiraa sii nda BASIC tiirahugu kul"
 
 #: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
-#, fuzzy
 msgid  "Invalid Name"
 msgstr "Maaɲoo wo šii alhukum ra"
 
 #: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
-#, fuzzy
 msgid  "A library name can have up to 30 characters."
 msgstr "Tiirahugu maa harfey hinnaa ši hin ka bisa 30."
 
 #: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
-#, fuzzy
 msgid  "Macros from other documents are not accessible."
 msgstr "Kaddasu cindey macro-wey ši hin ka duwandi."
 
 #: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
-#, fuzzy
 msgid  "This library is read-only."
 msgstr "Cawyan hinne ma kin ka tee tiirahugoo woo ga."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
-#, fuzzy
 msgid  "'XX' cannot be replaced."
 msgstr " 'XX' ši hin ka barmayandi."
 
 #: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
-#, fuzzy
 msgid  "'XX' cannot be added."
 msgstr "'XX' ši hin ka tontonandi."
 
 #: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
-#, fuzzy
 msgid  "'XX' was not added."
 msgstr "'XX'  mana hin ka tontonandi."
 
 #: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
-#, fuzzy
 msgid  "Enter password for 'XX'"
 msgstr "Kufalsenni daŋ 'XX' se"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
-#, fuzzy
 msgid  "Name already exists"
 msgstr "Maaɲoo woo suubandi ka bisa"
 
 #: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
-#, fuzzy
 msgid  "(Signed)"
 msgstr "(Šilbandi)"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
-#, fuzzy
 msgid  "Object with same name already exists"
 msgstr "Tammaasa ga bara kaŋ goo nda maa follokaa"
 
 #: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
-#, fuzzy
 msgid  "The 'XX' file already exists"
 msgstr "'XX' tiiraa ga bara ka bisa"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
-msgstr ""
+msgstr "Saajaw dalil se, macro-wo woo si hin ka goyyandi.\n\nKa duu alahabar boobanta, wa saajaw hansaŋey guna."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
-#, fuzzy
 msgid  "Compile Error: "
 msgstr "Tiiraɲaami Firka: "
 
 #: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
-#, fuzzy
 msgid  "Runtime Error: #"
 msgstr "Dirandiyan Firka: #"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
-#, fuzzy
 msgid  "Search key not found"
 msgstr "Ceeciyaŋ tammaasa mana duwandi"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
-#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
 msgstr "Ceeciroo tee ka timme hala dunbu koraa ga. Ka šintin dunbu jinaa ga ?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
-#, fuzzy
 msgid  "Search key replaced XX times"
 msgstr "Ceeciyan tammaasa barmayandi sorro XX"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
-#, fuzzy
 msgid  "The file could not be read"
 msgstr "Tiraa si hin ka feeri"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
-#, fuzzy
 msgid  "The file could not be saved"
 msgstr "Tiraa si hin ka gaabu"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
-#, fuzzy
 msgid  "The name of the default library cannot be changed."
 msgstr "Tilasu tiirahugu maaɲoo si hin ka barmay."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
-#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
 msgstr "Tiirahugu kaŋ šilbandi maaɲoo si hin ka barmay."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
-#, fuzzy
 msgid  "The default library cannot be deactivated"
 msgstr "Tilasu tiirahugoo si hin ka kayandi !"
 
 #: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
-#, fuzzy
 msgid  "Generating source"
 msgstr "Goo ma hundo tiiraa tee"
 
 #: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
-#, fuzzy
 msgid  "File name:"
 msgstr "Tiira maa:"
 
 #: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
-#, fuzzy
 msgid  "Import Libraries"
 msgstr "Tiirahugu zumandi nee"
 
@@ -455,8 +422,9 @@ msgid  "A name must be entered."
 msgstr "Maa ga hima ka hantumandi"
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
+#, fuzzy
 msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr ""
+msgstr "War ga hima ka progaramoo daabu ka tunandi koyne, fasalyaŋoo wo bandaa ga.\nA ma koy wala ?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 #, fuzzy
@@ -893,57 +861,46 @@ msgid  "Extension"
 msgstr "Dobuyan tammaasa"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
-#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
 msgstr "Senney kaŋ ra goydofattari ga tee hanse"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Present Languages"
 msgstr "Senney kaŋ ga bara"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
-#, fuzzy
 msgid  "Add..."
 msgstr "Tonton..."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Tuusu"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
-#, fuzzy
 msgid  "Default"
 msgstr "Tilasu ra"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
-#, fuzzy
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
 msgstr "Tilasu sennoo ga suubandi goydofattaroo se, nda berandiyan tiira kul ši bara. Woo-din bandaa ga, tilasu sennoo karfey kul ga ga bere senni tiira taaga kaŋ tontonandi goyhayey se."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Daabu"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
-#, fuzzy
 msgid  "[Default Language]"
 msgstr "[Tilasu senni]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Tuusu"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
-#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
 msgstr "<'Tonton' naagu ka senni goyhayey tee>"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
-#, fuzzy
 msgid  "Delete Language Resources"
 msgstr "Senni goyhayey tuusu"
 
@@ -952,46 +909,37 @@ msgid  "You are about to delete the resources for the selected language(s). All 
 msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
-#, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "Tilasu goydofattari sennoo kayandi."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Default language"
 msgstr "Tilasu senni"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
-#, fuzzy
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
 msgstr "Senni suuba tilasu goydofattaroo se. Harfey kul kaŋ ga bara sohõo ga goyandi sennoo kaŋ suubandi goyhayey se."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
-#, fuzzy
 msgid  "Add User Interface Languages"
 msgstr "Goydofattari senni tonton"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
-#, fuzzy
 msgid  "Available Languages"
 msgstr "Senney kaŋ ga bara"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
-#, fuzzy
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
 msgstr "Suuba senney kaŋ ga tontonandi. Senney wey goyhayey ga tee tiirahugoo ra. Tilasu goydofattaroo kaŋ kayandi goyhayey ga bere goyhaya taagawey wey ra, tilasu ra."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "Moobandawey: "
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "Dabari kul mana šilbandi"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "Suubari boobanta"

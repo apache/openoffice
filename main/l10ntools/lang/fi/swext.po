@@ -141,7 +141,7 @@ msgstr "Reunat"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "Riippumatta reunojen ja taustan mukautetuista taulukkotyyleistä taulukko viedään aina \"<emph>prettytable\"</emph>-määritteisenä, jonka Wiki-ohjelma piirtää yksinkertaisin reunoin ja lihavoiduin otsikoin."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>laajennukset;MediaWiki</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Käsiteltävä Writerin tekstiasiakirja on kopioitavissa MediaWiki-palvelimelle ohjelmalla @WIKIEXTENSIONPRODUCTNAME@. Kopioinnin jälkeen kaikki Wiki-käyttäjät voivat lukea tämän asiakirjan Wiki-sivustolta.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Valitse <item type=\"menuitem\">Tiedosto - Lähetä - MediaWikiin</item> käsiteltävän Writer-asiakirjan kopioimiseksi MediaWiki-palvelimelle.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java-ajoympäristö 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "Wiki-tunnus tuetulla <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>-palvelimella"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "Asennetaan @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "Ennen @WIKIEXTENSIONPRODUCTNAME@ -ohjelman asentamista varmistetaan, että %PRODUCTNAME käyttää Java-ajoympäristöä (JRE). JRE:n tilan tarkistamiseksi valitaan <item type=\"menuitem\">Työkalut - Asetukset - %PRODUCTNAME - Java</item>. Varmistetaan, että \"Käytä Java-ajoympäristöä\" on merkitty ja että Java-ajoympäristön kansio on valittuna suuressa luetteloruudussa. Jos mitään JRE:tä ei ole aktiivisena, niin aktivoidaan JRE 1.4 tai uudempi versio ja käynnistetään uudestaan %PRODUCTNAME."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@-lisäosan asentaminen"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Writerin ikkunassa valitse <item type=\"menuitem\">Työkalut - Lisäosien hallinta</item>."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "Sulje %PRODUCTNAME ja sulje tarvittaessa myös pikakäynnistys."
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "Käynnistä ohjelmisto uudestaan, avaa tekstiasiakirja ja valitse sitten <item type=\"menuitem\">Työkalut - Asetukset - Internet - MediaWiki</item> Wiki-asetusten syöttämiseksi. Katso \"Yhdistäminen Wikiin\" alempaa."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@-lisäosan poistaminen"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Writerin ikkunassa valitse <item type=\"menuitem\">Työkalut - Lisäosien hallinta</item>."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "Wikiin yhdistäminen"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "Käyttäjä voi tallentaa kaikille asiaankuuluville valintaikkunoille käyttäjätunnuksensa ja salasanansa %PRODUCTNAMEin sisällä. Salasana säilötään suojatulla tavalla, jossa pääsyyn vaaditaan pääsalasana. Pääsalasanan käyttöönottamiseksi valitaan <item type=\"menuitem\">Työkalut - Asetukset - %PRODUCTNAME - Suojaus</item>."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "Jos nettiin ollaa yhteydessä välityspalvelinta käyttäen, välityspalvelimen tiedot syötetään <item type=\"menuitem\">Työkalut - Asetukset - Internet - Välityspalvelin</item> -välilehdellä ja ohjelmisto käynnistetään uudestaan."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "Avaa Writer-asiakirja ja valitse <item type=\"menuitem\">Työkalut - Asetukset - Internet - MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Asetukset</link>-valintaikkunassa napsauta Lisää."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>-valintaikkunassa syötä Wiki-sivuston tunnustiedot."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "Salasanaruudussa kirjoita Wiki-tilin salasanasi ja hyväksy sitten OK:ll
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "Vaihtoehtoisesti merkitään \"Tallenna salasana\" salasanan säilyttämiseksi istuntojen välilläkin. Pääsalasanaa käytetään tallennettuihin salasanoihin käsiksi pääsemiseen. Valitaan <item type=\"menuitem\">Työkalut - Asetukset - %PRODUCTNAME - Suojaus</item> pääsalasanan käyttämiseksi. \"Tallenna salasana\" ei ole saatavilla, jos pääsalasana ei ole otettu käyttöön."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "Avaa Writer-asiakirja."
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "Kirjoita Wiki-sivun sisältö. Käytettävissä on muotoiluja kuten tekstin muotoilu, otsikot, alaviitteet, ynnä muuta. Katso <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">tuettujen muotoilujen luetteloa</link>."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "Valitse <item type=\"menuitem\">Tiedosto - Lähetä - MediaWikiin</item>."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Lähetä MediaWikiin</link> -valintaikkunassa määritä kirjauksesi asetukset."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>MediaWiki-palvelin</emph>: Valitse Wiki-sivusto."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>Otsikko</emph>: Kirjoita sivusi otsikko. Jo olemassa olevan sivun otsikko kirjoitetaan, kun sivun teksti korvataan käsiteltävän asiakirjan tekstillä. Kirjoittamalla uusi otsikko luodaan uusi sivu Wiki-sivustolle."
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>Yhteenveto</emph>: Anna valinnainen lyhyt tiivistelmä sivustasi."
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>Tämä on täydennys</emph>: Merkitsemällä tämän ruudun merkitset kopioitavan sivun jo samalla otsikolla olevan sivun täydennykseksi."
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>Näytä www-selaimessa</emph>: Merkitsemällä tämän ruudun avaat järjestelmän www-selaimen, jossa näkyy kopioitu Wiki-sivu."
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,27 +341,27 @@ msgstr "MediaWikin asetukset"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "MediaWiki-palvelimia voi lisätä, muokata ja poistaa. Valintaikkuna avataan toiminnossa <item type=\"menuitem\">Työkalut - Asetukset - Internet - MediaWiki</item>. Vaihtoehtoisesti valitaan <item type=\"menuitem\">Työkalut - Lisäosien hallinta</item>, valitaan @WIKIEXTENSIONPRODUCTNAME@ ja napsautetaan Asetukset-painiketta."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Napsauttamalla Lisää-painiketta lisätään uusi Wiki-palvelin.<br/>Valitaan kirjaus ja napsautetaan Muokkaa tiliasetusten muokkaamiseksi.<br/>Valitaan kirjaus ja napsautetaan Poista kirjauksen poistamiseksi luettelosta.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Avataan MediaWiki-valintaikkuna uuden kirjauksen lisäämiseksi luetteloon.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Avataan MediaWiki-valintaikkuna valitun kirjauksen muokkaamiseksi.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Poistetaan valittu rivi luettelosta.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "Kun napsautetaan painikkeita Lisää tai Muokkaa, <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>-valintaikkuna avautuu."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,19 +377,19 @@ msgstr "MediaWiki-valintaikkunassa lisätään tai muokataan MediaWiki-tilin ase
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kirjoita MediaWiki-palvelimen URL-osoite aloittaen http://</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kirjoita MediaWiki-palvelimen käyttäjätunnuksesi. Nimettömästi käyttäessäsi jätä tyhjäksi.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Kirjoita MediaWiki-palvelimen salasanasi. Nimettömästi käyttäessäsi jätä tyhjäksi.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Sallitaan salasanan säilöminen istuntojen välillä. Pääsalasana pitää olla käytössä, katso <item type=\"menuitem\">Työkalut - Asetukset - %PRODUCTNAME - Suojaus</item>.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "Lähetä MediaWikiin -valintaikkunassa määritä käsiteltävän Wiki-k
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Valitaan MediaWiki-palvelin, jossa asiakirja julkaistaan. Napsautetaan Lisää, mikäli lisätään uusi palvelin luetteloon.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Annetaan Wiki-kirjauksen otsikko. Tämä on Wiki-sivun pääotsikko. Uusille kirjauksille otsikon tulee olla aiemmista erottuva tällä Wiki-sivustolla. Jos annetaan jo olemassa oleva otsikko, kopiointi korvaa aiemman Wiki-merkinnän.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">Annetaan valinnainen lyhyt yhteenveto tai kommentti.</ahelp> Katso <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> (englanniksi olevalta sivulta voi löytyä linkki suomenkieliselle ohjesivulle)."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Tämä on täydennys</emph>: <ahelp hid=\".\">Merkitsemällä tämä ruutu kopioitava sivu merkitään jo samalla otsikolla olevan sivun täydennykseksi.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Näytä www-selaimessa</emph>: <ahelp hid=\".\">Merkitsemällä tämä ruutu avataan järjestelmän www-selain, jossa näkyy kopioitu Wiki-sivu.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

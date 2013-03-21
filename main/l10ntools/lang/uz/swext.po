@@ -167,29 +167,26 @@ msgid  "The charset of the transformation result is fixed to UTF-8. Depending on
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#tit
-#, fuzzy
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>kengaytmalar;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
-#, fuzzy
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@ yordamida Writer matn hujjatini MediaWiki serveriga joylashtirishingiz mumkin. Hujjat joylashtirilgandan keyin uni barcha Wiki foydalanuvchilari oʻqishlari mumkin.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Joriy Writer hujjatini MediaWiki serveriga joylashtirish uchun <item type=\"menuitem\">Fayl - Joʻnatish - MediaWiki'ga</item> bandini tanlang.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
-#, fuzzy
 msgid  "System Requirements"
 msgstr "Tizim talabi"
 
@@ -198,21 +195,18 @@ msgid  "StarOffice/StarSuite 9"
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id8430738
-#, fuzzy
 msgid  "OpenOffice.org 3.0"
 msgstr "OpenOffice.org 2.4"
 
 #: mediawiki/help/wiki.xhp#par_id9340495
-#, fuzzy
 msgid  "Java Runtime Environment 1.4"
 msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "Wiki hisobini qoʻllaydigan <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> serveri"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
-#, fuzzy
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@ oʻrnatilmoqda"
 
@@ -221,21 +215,18 @@ msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTN
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id567339
-#, fuzzy
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@ ni oʻrnatish uchun"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Writer oynasidan <item type=\"menuitem\">Vositalar -Kengaytma boshqaruvchisi</item> bandini tanlang."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
-#, fuzzy
 msgid  "In the Extension Manager dialog, click Add."
 msgstr "Kengaytma boshqaruvchisi dialogidan Qoʻshish tugmasini bosing."
 
 #: mediawiki/help/wiki.xhp#par_id5882442
-#, fuzzy
 msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
 msgstr "@WIKIEXTENSIONFILENAME@.oxt faylini toping, Ochish soʻngra esa Yopish tugmalarini bosing. "
 
@@ -245,74 +236,65 @@ msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "Wiki moslamalarini kiritish uchun dasturni qaytadan ishga tushiring, bitta matn hujjati oching va menyudan <item type=\"menuitem\">Vositalar - Parametrlar - Internet - MediaWiki</item> bandini tanlang. Quyida \"Wiki bilan boʻglanish uchun\" boʻlimiga qarang."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
-#, fuzzy
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@ ni olib tashlash uchun"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Writer oynasidan <item type=\"menuitem\">Vositalar - Kengaytma boshqaruvchisi</item> bandini tanlang."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
-#, fuzzy
 msgid  "Click the plus sign (+) in front of My Extensions."
 msgstr "Mening kengaytmalarim oldidagi qoʻshish ishorasini (+) bosing."
 
 #: mediawiki/help/wiki.xhp#par_id8431348
-#, fuzzy
 msgid  "Select the extension, click Remove, and then click Close."
 msgstr "Kengaytmani tanlang va Olib tashlash tugmasini, soʻngra Yopish tugmasini bosing."
 
 #: mediawiki/help/wiki.xhp#hd_id5316019
-#, fuzzy
 msgid  "To Connect to a Wiki"
 msgstr "Wiki bilan boʻglanish uchun"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "Izoh: StarOffice/OpenOffice.org dialoglari uchun foydalanuvchi va maxfiy soʻzni saqlashingiz mumkin. Maxfiy soʻz master maxfiy soʻz bilan himoyalangan xavfsiz joyda saqlanadi. Master maxfiy soʻzni yoqish uchun menyudan <item type=\"menuitem\">Vositalar - Parametrlar - StarOffice/OpenOffice.org - Xavfsizlik</item> bandini tanlang."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "Izoh: Agar siz internetga proxy orqali ulansangiz, menyudan <item type=\"menuitem\">Vositalar - Parametrlar - Internet - Proxi</item> bandida proxi maʻlumtorlarini kiriting va dasturni qaytadan ishga tushiring."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "Writer hujjatini oching va menyudan <item type=\"menuitem\">Vositalar - Parametrlar - Internet - MediaWiki</item> bandini tanlang."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Parametrlar</link> dialogida Qoʻshish tugmasini bosing."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "Wiki uchun hisob maʻlumotlarin <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialogi orqali kiriting."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
-#, fuzzy
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
 msgstr "URL maydoniga ulanish kerak boʻlgan Wiki manzilini kiriting."
 
 #: mediawiki/help/wiki.xhp#par_id389416
-#, fuzzy
 msgid  "You can copy the URL from a web browser and paste it into the textbox."
 msgstr "Veb brauzerdan URL nusxasini olib ushbu maydonga qoʻyishingiz mumkin."
 
 #: mediawiki/help/wiki.xhp#par_id5906552
-#, fuzzy
 msgid  "In the Username box, enter your user ID for your Wiki account."
 msgstr "Wiki hisobingiz nomini foydalanuvchi maydoniga kiriting."
 
 #: mediawiki/help/wiki.xhp#par_id9297158
-#, fuzzy
 msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
 msgstr "Agar Wiki anonim yozish huquqini bersa, foydalanuvchi va maxfiy soʻz oʻrnini boʻsh qoldirishingiz mumkin."
 
 #: mediawiki/help/wiki.xhp#par_id8869594
-#, fuzzy
 msgid  "In the Password box, enter the password for your Wiki account, then click OK."
 msgstr "Wiki hisobingiz maxfiy soʻzini maxfiy soʻz maydoniga kiriting va OK tugmasini bosing."
 
@@ -321,12 +303,10 @@ msgid  "Optionally enable \"Save password\" to save the password between session
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
-#, fuzzy
 msgid  "To Create a New Wiki Page"
 msgstr "Yangi Wiki sahifasi yaratish uchun"
 
 #: mediawiki/help/wiki.xhp#par_id3514206
-#, fuzzy
 msgid  "Open a Writer document."
 msgstr "Writer hujjatini ochish."
 
@@ -336,15 +316,15 @@ msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "<item type=\"menuitem\">Fayl - Joʻnatish - MediaWiki</item> bandini tanlang."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">MediaWiki'ga joʻnatish</link> dialogiga moslamalarni kiriting."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>MediaWiki server</emph>: Wiki ni tanlang."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
@@ -355,12 +335,14 @@ msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id4123661
+#, fuzzy
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>Kichik oʻzgarish</emph>: <ahelp hid=\".\">Shunday nomli mavjud sahifani kichik oʻzgarish sifatida belgilash uchun bu yerni belgilang.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id452284
+#, fuzzy
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>Veb brauzerda koʻrsatish</emph>: <ahelp hid=\".\">Joʻnatilgan Wiki sahifalarini tizim veb brauzerida koʻrish uchun bu yerni belgilang.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 #, fuzzy
@@ -378,28 +360,34 @@ msgid  "MediaWiki Options"
 msgstr "MediaWiki parametrlari"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
+#, fuzzy
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "MediaWiki serverlarini qoʻshishingiz, oʻzgartirishingiz yoki olib tashlashingiz mumkin. Bungin uchun menyudan <item type=\"menuitem\">Vositalar - Parametrlar - Internet - MediaWiki</item> dialogini oching. Yoki boʻlmasa <item type=\"menuitem\">Vositalar - Kengaytma boshqaruvchisi</item> bandini ochib @WIKIEXTENSIONPRODUCTNAME@ ni tanlang va Paramatrlar tugmasin bosing."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Wiki server qoʻshish uchu Qoʻshish tugmasini bosing.<br/>Elementni tanlang va hisob moslamalarini oʻzgartirish uchun Tahrirlash tugmasini bosing.<br/>Elementni roʻyxatdan olib tashlash uchun, uni tanlang va Olib tashlash tugmasini bosing.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Roʻyxatga yangi yozuv qoʻshish uchun MediaWiki dialogini ochadi.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Tanlangan elementni tahrirlash uchun MediaWiki dialogini ochadi.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
+#, fuzzy
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Roʻyxatdan tanlangan elementni  olib tashlaydi.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
+#, fuzzy
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "Qoʻshish yoki Tahrirlash bosilganda, <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dilogi ochiladi."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 #, fuzzy
@@ -459,187 +447,159 @@ msgid  "In the Send to MediaWiki dialog, specify the settings for your current W
 msgstr "Joriy Wiki ga yozib qoʻyish parametrlarini MediaWiki'ga joʻnatish oynasidan boshqaring."
 
 #: mediawiki/help/wikisend.xhp#par_id664082
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Hujjat chop etiladigan MediaWiki serverini tanlang. Roʻyxatga yangi server qoʻshish uchun Qoʻshish tugmasini bosing.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Wiki maqolangiz sarlavhasini kiriting. Yangi maqola uchun sarlavha boshqa boʻlishi kerak. Agar mavjud sarlavha kiritilsa, eski Wiki maqolasi ustidan yoziladi.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">Bu yerga izoh kiriting.</ahelp> Bu yerga qarang <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
+#, fuzzy
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Kichik oʻzgarish</emph>: <ahelp hid=\".\">Shunday nomli mavjud sahifani kichik oʻzgarish sifatida belgilash uchun bu yerni belgilang.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
+#, fuzzy
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Veb brauzerda koʻrsatish</emph>: <ahelp hid=\".\">Joʻnatilgan Wiki sahifalarini tizim veb brauzerida koʻrish uchun bu yerni belgilang.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
-#, fuzzy
 msgid  "To Media~Wiki..."
 msgstr "Media~Wiki'ga..."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
-#, fuzzy
 msgid  "MediaWiki"
 msgstr "MediaWiki"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.GeneralSendError
-#, fuzzy
 msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
 msgstr "'MediaWiki ga joʻnatish' operatsiyasi muvaffaqiyatsiz tugadi."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoWikiFilter
-#, fuzzy
 msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
 msgstr "MediaWiki eksport filtri topilmadi. Filtrni oʻrnatish uchun 'Vositalar-XML filtrining moslamalari' bandini tanlang yoki komponentni oʻrnatish uchun yordamchidan foydalaning."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoConnectionToURL
-#, fuzzy
 msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
 msgstr "'$ARG1' da MediaWiki tizimiga ulanib boʻlmadi."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.WrongLogin
-#, fuzzy
 msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
 msgstr "Foydalanuvchi yoki maxfiy soʻz xato. Boshqatdan urinib koʻring yoki anonim ulanish uchun maydonlarni boʻsh qoldiring."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.InvalidURL
-#, fuzzy
 msgid  "A connection could not be created because the URL is invalid."
 msgstr "Aloqa oʻrnatib boʻlmadi, chunki URL xato."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoURL
-#, fuzzy
 msgid  "Specify a MediaWiki server by providing a URL."
 msgstr "MediaWiki serverini URL orqali koʻrsating."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.CancelSending
-#, fuzzy
 msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
 msgstr "Uzatish toʻxtatildi. Iltimos wiki maqolasini toʻgʻriligini tekshirib koʻring."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UrlLabel
-#, fuzzy
 msgid  "U~RL"
 msgstr "U~RL"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
-#, fuzzy
 msgid  "~Username"
 msgstr "~Foydalanuvchi"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
-#, fuzzy
 msgid  "~Password"
 msgstr "~Maxfiy soʻz"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendTitle
-#, fuzzy
 msgid  "Send to MediaWiki"
 msgstr "MediaWiki'ga joʻnatish"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiArticle
-#, fuzzy
 msgid  "Wiki article"
 msgstr "Wiki maqolasi"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_No
-#, fuzzy
 msgid  "No"
 msgstr "Yoʻq"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_OK
-#, fuzzy
 msgid  "OK"
 msgstr "OK"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_Yes
-#, fuzzy
 msgid  "Yes"
 msgstr "Ha"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_AddButton
-#, fuzzy
 msgid  "~Add..."
 msgstr "Qoʻsh~ish..."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditButton
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Tahrirlash..."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendButton
-#, fuzzy
 msgid  "~Send"
 msgstr "~Joʻnatish"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_RemoveButton
-#, fuzzy
 msgid  "~Remove"
 msgstr "~Olib tashlash"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_NewWikiPage_Label1
-#, fuzzy
 msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
 msgstr "'$ARG1' nomli wiki maqolasi mavjud emas. Shundan nomli yangi bir maqola yaratishni istaysizmi?"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
-#, fuzzy
 msgid  "Media~Wiki Server"
 msgstr "Media~Wiki serveri"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
-#, fuzzy
 msgid  "~Title"
 msgstr "~Sarlavhasi"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
-#, fuzzy
 msgid  "S~ummary"
 msgstr "~Hisobot"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
-#, fuzzy
 msgid  "This is a ~minor edit"
 msgstr "Bu ~kichik bir oʻzgarishdir"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
-#, fuzzy
 msgid  "Show in web ~browser"
 msgstr "Veb ~brauzerda koʻrsatish"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.UnknownCert
-#, fuzzy
 msgid  "The certificate of the selected site is unknown."
 msgstr "Tanlangan saytning sertifikati nomaʼlum."
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Title
-#, fuzzy
 msgid  "MediaWiki"
 msgstr "MediaWiki"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_AccountLine
-#, fuzzy
 msgid  "Account"
 msgstr "Hisob"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_WikiLine
-#, fuzzy
 msgid  "MediaWiki Server"
 msgstr "MediaWiki serveri"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_SaveBox
-#, fuzzy
 msgid  "~Save password"
 msgstr "Maxfiy soʻzni s~aqlash"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Extension_String
-#, fuzzy
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 

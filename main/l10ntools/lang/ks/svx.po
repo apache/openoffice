@@ -941,11 +941,11 @@ msgstr "~خئرج کریو"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "  امیج میپ  ہیكٲوبدلئویتھ\n            تہئ چھئوئ یژھان تبدیلی محفوظ تھٲون؟"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "  امیج میپ  ہیكٲوبدلئویتھ\n            تہئ چھئوئ یژھان تبدیلی محفوظ تھٲون؟"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr " د ستا ویزیچ  وصولی%PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "\"  سٹارٹ ریكئوری\" دبئویو مندر جئ زیل دستاویزن ہنزئ     ریكئوری كاروئی خئترئ\"  \n \"سٹیتس\" كالم چھئ ہٲوان كئ دستاویز ہیكئ موصول گژھیتھ"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1341,7 +1341,7 @@ msgstr "تہئ چھئوئ یقین تہئ چھئوئ یژھان منسوخ كر�
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "پانئی وصولی كاروئیی منز  عئس مداخلت گمئژ \n \n بنم۪ی لسٹك دستاویز ین محفوظ تھٲونئ بنمس فولڈرس منز اگر تہئ \"سیو\"  دبئویو۔' كینسل' دبئویو ویزارڈ بند كرنئ خعطرئ دستاویز محفوظ كرنئیخود كار ریكوری پروسیس میں مداخلت كی گی تھی نیچےلكھےگیے  فولڈرمیں نیچےدی  گیی دستاویزكی لسٹ كومحفوظ كرنا چاہیےا گرآپ سیوپركلك كرتےتوكلك كینسل وزارڈ كو بند كرنےكیلیےدستاویزكومحفوظ كیےبغیر"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "         % PRODUCTNAME% منز استیقبال PRODUCTVERSION غلطی 
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "یئ غلطی ریپورٹ چھُ كران مولومات جمع كئ    %PRODUCTNAMEكیتھ كئن چھُ كئم كران تئ سوزان چھُ سن مایكرو سیسٹسس برونٹھیم ورجنس بہتر بناونئ خعطرئ/nیہ خامی رپورٹ ٹول كی معلومات"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "آپشنس۔۔۔"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "بئ چھُس اجازت دیوان سن ماكرو سسٹم   مئ سعتھ رئبتئ كرنئ خعطرئ  یتھ رپورٹس   متعلق  ۔"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "پورٹ"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME غلطی  رپورٹ ٹول گژھن  انٹرنیٹس  جوڈِن تاكئ غلطی ریپورٹ یی سوزنئ ۔كمپنیئ چھئ  اكثرپراكسیسرورك كا استیمال كران  كنجكشن فایر دیوارس منز  نیٹ ورك   بچاو نئ خعطرئ\n۔اگر یہ  تہند دین حالاتن چھُ لاگو گژھان تہئ پیوئ سرور خعطرئ پتئ تئ پورٹ نشان دیہ كرُن۔"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "یئ  قنطور چھُ آمُت شیرنئ۔\nتہئ چھئوئ یژھان تبدیلی محفوظ تھٲون۔"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "تہئ چھئوئ یژھان نئو كنطور بنٲوُن"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "نئو جاے سیٹ كرنئ سعتھ گژھ۪ی\n  قنطور خئرج\nتہئ چھُوئ یقین تہئ چھئوئ یژھان جئری تھٲوُن ؟"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "شعبہ منز چھُ  ان پٹ ضُرتھ'#'۔مہربئنی كریت
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "انٹری چھئ گڈئی موجود    ۔ \nمہربئنی كریتھ كریو بدل ناو دئخل۔"
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# ریکارین خئرج کرنئ۔"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "اگرتہئ  یس كریو  کلک تہئ ہیكیو نئ یئ آپریشن انڈو كریتھ\n تہئ چھئوئ یژھان برونٹھ پكُن؟"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "! موضوعك ناو نامنظور  "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "تہئ چھئوئ پزپيٹھ\nیژھان  آبجیکٹ  خئرج کرُن؟   ‌"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "تہئ چھئوئ پزپيٹھ\nیژھان  تھیم خئرج کرُن؟   "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "تہئ چھئوئ یژھان لنكڈ فایل خعرج كرُن؟"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "‎ \nفائل  ہیكٲو نئ كھولیتھ۔تہئ چھئوئ یژھان بدل سرچ پاتھ دئخل کرُن"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "۔منتظم۔۔۔۔"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "  n / یئ  موضوع  ناو چھُ گڈئی موجودمہربئنی كریتھ ژئریو بدل ناو۔"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -9909,11 +9909,11 @@ msgstr "۔خئرج کریو"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "رسمی چینی پیٹھئ  سہل چینی"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "\"سہل چینی پیٹھئ رسمی چینی"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "رسمی چینی پیٹھئ  سہل چینی"
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "\"سہل چینی پیٹھئ رسمی چینی"

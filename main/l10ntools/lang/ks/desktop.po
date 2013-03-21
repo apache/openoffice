@@ -117,7 +117,7 @@ msgstr "تہنزن ذيتی سیٹینگسن ہنز تبدیلی ہیكئو نئ
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME  ہیكئو نئ شروع كریتھ كیازئ كئ %PRODUCTNAME  ہیت ڈاٹاس تام واتنس منز آی غلطی\n\n پنئ نِس سیسٹم انطظامیس كریو رئبطئ۔"
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -737,7 +737,7 @@ msgstr " رجسٹریشن "
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "ویذارڈ  دیوئ تہئ  ہدایت  لایسنس معاہدہس منز ، ڈاٹا %OLD_VERSION  پیٹھئ  تئ %PRODUCTNAME   ریجیسٹریشنس تبدیل كرنس منز  .\n\n برونٹھ پكنئ خعطرئ كریو 'برونٹھ' كلیك                                                                                                                                                                                      "
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
@@ -765,7 +765,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION  منز چھُ تہئ خوش آمدید"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "ویذارڈ  دیوئ تہئ  ہدایت  لایسنس معاہدہس منز تئ ریجیسٹریشنس %PRODUCTNAME منز.\n\nبرونٹھ پكنئ خعطرئ دبئویو' برونٹھ'۔"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -805,7 +805,7 @@ msgstr "ذئتی ڈاٹا كریوو منتقل"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "واریاح ذئتی ڈاٹا %OLDPRODUCT  انسٹالیشن    ہیكئو دوبارئ استیمال كریتھ            %PRODUCTNAME %PRODUCTVERSION.\n  منز\nاگرنئ تہئ %PRODUCTNAME %PRODUCTVERSIONمنز كہین سیٹینگس چھئونئ یژھان استیمال كرین تیل۪ی مئ چیک بکس  منز نشان۔"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME رجیسٹریشن  "
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "تہئ چھئوئ موقعئ %PRODUCTNAME  استیمال كرن وئل سیندس ناو س پیٹھ ریجیسٹر كرنُك۔ ریجیسٹریشن چھئوئ تہنزئ مرزی پیٹھ تئ چھئ نئ كایں پابندی.\n\n اگر تہئ ریجسٹر كریو عس ہیكئو تہئ پروڈكٹس ك۪ین نئوین تبدیلین  متعلق  مولومات دیتھ۔"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "بئ چھُس ني  یژھان کر ُن۔   رجسٹر"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "عس۪ی چھئ امید تہئ آس۪ی وئ   %PRODUCTNAMEسعتھ كئم كرنس منز مزئ آمُت.\n\n ویزارڈ منز ن۪یبر نیرنئ خعطرئ دبئویو 'مكلیو'"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"

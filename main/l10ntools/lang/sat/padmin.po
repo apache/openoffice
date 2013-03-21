@@ -61,7 +61,7 @@ msgstr "चिकी सेलेद मे"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "चेत् आम सारी गे चिकी रेत चेतान रे ओल सानाम काना?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "जांहाय बाङ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "मित् तेयार रेत (मित् .afm जिलिञ सांव) चिकी ला़गित् बाङ ञाम आकाना\n%s\nओनाते, चिकी बाङ बोहाल दाड़ेयाक् आ. ghostscript खोन चिकी रेत् बाङ तेयार दाड़ेयाक् आ, जे लेका , सोमान उनुदुक् रे मेनाक् चिकी रेत् लेका से नोवा रेयाक्  afm एटाक् उनुदुक् लेका."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "चिकी रेत् ला़गित् मेट्रिक रेत्\n   %s\nबाङ नोकोल दाड़ेयाक् आ.चिकी बोहाल बाङ हुय दाड़ेयाक् आ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "चिकी रेत\n   %s\nनोकोल बाङ दाड़ेयाक् आ. चिकी बोहाल बाङ हुयुक् आ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "रेत् रे मेट्रिक बा़नुक् आ ."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "मेट्रिक\n\n%s\n\nनोवा को खा़तिर ते बोदोल बाङ दाड़ेयाक् आ:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "चालाविच  \"%s\" जाव गे लाकती याय
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "चालाविच् बाङ \"%s1\" ओचोक् दाड़ेयादे आ. रेत् ओचोक् संभोब बाय ताहें काना\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

@@ -445,7 +445,7 @@ msgstr "Modeli yakozwe uhereye ku <izina_nyobora> ku <itariki_igezweho>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Nyobora ntishobora gutangizwa, kubera ko dosiye za ngombwa zitabonwe. \nHasi 'Ibikoresho - Amahitamo - %PRODUCTNAME - Inzira' kandi buto 'Gisanzweho' mu gutangiza bushya inzira ku magenamiterere asanzweho mwimerere.\nNoneho utangize nyobora nanone."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Imyanya mu ifishi"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Imyanya nyabibiri burigihe iba iri ku rutonde kandi itoranywa uva ku rutonde rw'ibumoso.\nNiba bishoboka, zifatwa nk'amashusho."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Ifishiyungirije ni ifishi iri mu yindi.\nKoresha Amafishiyungirije mu kwerekana ibyabitswe bivuye mu mbonerahamwe cyangwa ibibazo bifite isano rimwe-kuri-byinshi."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Imyanya mu ifishi"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Ihuza rya '<IZINAUMWANYA1>' na '<IZINAUMWANYA2>' ryatoranijwemo kabiri.\nAriko amahuza ashobora gusa gukoreshwa rimwe."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Kuboneza izina ry'ifishi."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Ifishi yitwa '%FORMNAME' isanzwe iriho.\nHitamo irindi zina."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Ntibishoboka kwinjiza umwanya kuko warenga umubare ntarengwa w'imyanya i
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Izina '%TABLENAME' risanzwemo.\nInjiza irindi zina."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Nyobora y'Urubuga"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Iyi Nyobora y'Urubuga niyo gufasha mu gutangaza inyandiko kuri Internet.\n\nIzahindura inyandiko bityo zikabasha kugaragazwa na mutemberezi w'urubuga. Twakongeraho ko, izakora paji y'Imbonerahamwe y'Ibikubiyemo ifite amahuza mu koroshya kugera ku nyandiko. Nyobora y'Urubuga nayo izemerera kunoza ihanga n'imigaragarire  y'urubugamakuru.\n\nUzashobora kugumana inyandiko watangaje ku rubuga kugera-ubu kandi ukongeraho cyangwa ugakuraho inyandiko igihe icyo aricyo cyose."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Igaragazambere"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Amagenamiterere yatoranyijwe azahanagurwa.\n\nUrifuza by'ukuri gusiba aya magenamiterere?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Ububiko FTP '%FILENAME' ntibushobora kuremwa."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Ububiko FTP  '%FILENAME'  ntibubaho.\nKurema ububiko nonaha?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Dosiye '%FILENAME' ZIPU ntishobora kuremwa: ububiko bufite izina rimwe b
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Ububiko bwa hafi '%FILENAME' ntibushoboye kuremwa.\nWareba uburenganzira-kwandika bwawe."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Ububiko bwa hafi '%FILENAME'  ntibubaho.\nKurema ububiko nonaha?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

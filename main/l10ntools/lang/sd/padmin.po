@@ -61,7 +61,7 @@ msgstr "فانٽ جوڙيو"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "ڇا سچ پچ هن فانٽ فائل مٿان لکڻ چاهيو ٿا؟\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "ڪجهہ بہ نہ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "%s\n فانٽ لاءِ رچنا فائل afm ڦهلاو سان) نہ ملي آهي ان ڪري فانٽ اِسٿاپن نٿو ٿي سگہي۔ رچنا فائل گهوسٽ اِسڪرٽ ذريعي خلقي سگہجي ٿي، مثال طور، ۽ فانٽ فائلن يا گؤڻ afm هدايت نامي جيان ساڳئي هدايت نامي ۾ ڳولڻي پوندي۔ "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr " n%s\\ فانٽ فائل لاءِ مئٽرڪ فائل جو نقل ڪونہ ٿي سگہيو۔ فانٽ اسٿاپن نہ ٿيندو۔"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "\n   %s\nفانٽ فائل جو نقل ڪونہ ٿي سگہيو۔ فانٽ اِسٿاپن نہ ٿيندو۔"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "فائل ۾ ميٽرڪ ناهي۔"
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "ميٽرڪ\n\n%s\n\nهيٺين کارڻن سبب ڪونہ مٽجي سگہيو۔\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "  ڊرائيور هميشهہ گُهرجي ۽ ان ڪري هٽائي ن�
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "ڊرائيور هٽائي نہ سگهيو ويو۔ %s2. فائل هٽائڻ ممڪن نہ هو۔  \"%s1\" \n\n"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

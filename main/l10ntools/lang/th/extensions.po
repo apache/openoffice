@@ -57,7 +57,7 @@ msgstr "ชื่อแหล่งข้อมูล"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME ให้คุณเข้าถึงข้อมูลที่อยู่ปัจจุบันในระบบของคุณแล้ว\nทำสิ่งนี้, แหล่งข้อมูล %PRODUCTNAME ใหม่จะถูกสร้างขึ้นในข้อมูลที่อยู่ที่ใช้ได้ในแบบฟอร์มตาราง\n\nการนำร่องอัตโนมัตินี้ช่วยให้คุณสร้างแหล่งข้อมูลได้"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "แหล่งข้อมูลภายนอกอื่นๆ"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "ต้องการข้อมูลเพิ่มเติม\n\nคลิกปุ่มข้างล่างเพื่อเปิดกล่องโต้ตอบอื่นที่ที่คุณใส่ข้อมูลที่จำเป็น"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "การตั้งค่า"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "ไม่สามารถสร้างการเชื่อมต่อกับแหล่งข้อมูลได้\nก่อนที่คุณจะดำเนินการต่อไป กรุณาตรวจสอบการตั้งค่าที่ทำไว้ หรือ (ในหน้าก่อนหน้า) เลือกชนิดแหล่งข้อมูลที่อยู่อื่น"
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "การผนึกข้อมูลที่อยู่ลงในแม่แบบของคุณ, %PRODUCTNAME ต้องรู้ว่าเขตข้อมูลมีข้อมูลอยู่\n\nเช่น คุณสามารถเก็บที่อยู่อีเมลในเขตข้อมูลที่มีชื่อ \"อีเมล\", หรือ \"อี-เมล\" หรือ \"EM\" - หรืออะไรก็ได้ที่ต่างจากนี้\n\nคลิกปุ่มข้างล่างเพื่อเปิดกล่องโต้ตอบอื่นที่คุณสามารถใส่การตั้งค่าสำหรับแหล่งข้อมูลของคุณ"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "การกำหนดเขตข้อมูล"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "นั่นคือข้อมูลทั้งหมดที่จำเป็นในการรวมข้อมูลที่อยู่ลงใน %PRODUCTNAME\n\nขณะนี้ เพียงใส่ชื่อที่คุณต้องการลงทะเบียนแหล่งข้อมูลใน %PRODUCTNAME"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "ข้อมูลที่อยู่ - การกำหนดเข
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "ไม่มีเขตข้อมูลที่ได้กำหนดในตอนนี้\nขณะนี้คุณสามารถกำหนดเขตข้อมูลหรือไม่ก็ทำทีหลังโดยการเลือกเป็นอย่างแรก:\n\"แฟ้ม - แม่แบบ - แหล่งสมุดที่อยู่...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "แหล่งข้อมูล"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "ไม่สามารถกำหนดชื่อคอลัมน์นี้ได้:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "ควบคุม"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "ทางขวามือ  คุณเห็นตารางทั้งหมดจากแหล่งข้อมูลของแบบฟอร์ม \n\n\nเลือกตารางจากข้อมูลที่ควรถูกใช้เป็นพื้นฐานสำหรับเนื้อหารายการ:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "ข้อมูล"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "ปัจจุบันแบบฟอร์มการควบคุมไม่มีพันธะ (หรืออย่างไม่สมบูรณ์) กับแหล่งข้อมูล\n\nกรุณาเลือกแหล่งข้อมูลและตาราง\n\n\nกรุณาหมายเหตุว่าการกำหนดค่าทำที่หน้านี้จะมีผลในทันทีทันใดเมื่อกำลังออกจากหน้า"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -817,7 +817,7 @@ msgstr "แบบฟอร์ม"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "คุณต้องการลบข้อมูลชนิด '#type#' จากโมเดล?\nโปรดทราบว่าจะมีผลกระทบกับการควบคุมต่างๆ ที่ใช้ข้อมูลชนิดนี้"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "ชนิดชื่อสำหรับประเภทข้อม
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "เกี่ยวกับ~อุปกรณ์\n "
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "สร้าง\nแสดงตัวอย่าง"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "เครื่องตรวจหา"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "อุปกรณ์: %s\nผู้ขาย: %s\nรุ่น: %s\nชนิด: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."

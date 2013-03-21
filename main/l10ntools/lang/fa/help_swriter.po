@@ -1244,8 +1244,9 @@ msgid  "Page Preview"
 msgstr ""
 
 #: source/text/swriter/01/01120000.xhp#hd_id2013916
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/01120000.xhp\"\>Page Preview\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/01120000.xhp#par_id1471907
 msgid  "\<ahelp hid=\".uno:PrintPreview\"\>Displays a preview of the printed page or closes the preview.\</ahelp\>"
@@ -1284,8 +1285,9 @@ msgid  "\<variable id=\"serienbrieftext\"\>\<ahelp hid=\".uno:MergeDialog\"\>Ope
 msgstr ""
 
 #: source/text/swriter/01/01150000.xhp#par_id3154102.4
+#, fuzzy
 msgid  "During printing, the database information replaces the corresponding database fields (placeholders). For more information about inserting database fields refer to the \<link href=\"text/swriter/01/04090006.xhp\" name=\"Database\"\>\<emph\>Database\</emph\>\</link\> tab page under \<emph\>Insert - Fields - Other\</emph\>."
-msgstr ""
+msgstr "در حین چاپ، اطلاعات پایگاه‌داده جایگزین فیلدهای پایگاه‌داده‌ای مربوز (جانگهدارها)] خواهد شد. برای اطلاعات بیشتر در مورد  درج فیلدهای پایگاه‌داده به <link href=\"text/swriter/01/04090006.xhp\" name=\"Database\"><emph>Database</emph></link>قسمت <emph>Insert - Fields - Other</emph> مراجعه کنید."
 
 #: source/text/swriter/01/01150000.xhp#par_id8186895
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Select a database and table.\</ahelp\>"
@@ -1323,8 +1325,9 @@ msgid  "All"
 msgstr "همه"
 
 #: source/text/swriter/01/01150000.xhp#par_id3149691.8
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_ALL\"\>Processes all the records from the database.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_ALL\">همهٔ رکوردها را با توجه پایگاه‌داده پر می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3155186.9
 #, fuzzy
@@ -1332,8 +1335,9 @@ msgid  "Selected records"
 msgstr "رکوردهای انتخاب شده"
 
 #: source/text/swriter/01/01150000.xhp#par_id3149483.10
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_MARKED\"\>Processes only the marked records from the database. This option is only available when you have previously marked the necessary records in the database.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_MARKED\">فقط رکوردهای علامت خورده را با توجه به پایگاه‌داده پر می‌کند. این گزینه فقط وقتی موجود است که شما قبلاً رکوردهای لازم را در پایگاه‌داده علامت زده باشید.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3149819.23
 #, fuzzy
@@ -1341,8 +1345,9 @@ msgid  "From"
 msgstr "از:"
 
 #: source/text/swriter/01/01150000.xhp#par_id3149104.24
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_FROM\"\>Specifies which records to include in your form letter.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_FROM\">مشخص می‌کند چه رکوردهایی در نامهٔ فرمالیتهٔ شما بیایند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3151260.11
 #, fuzzy
@@ -1350,8 +1355,9 @@ msgid  "From:"
 msgstr "از:"
 
 #: source/text/swriter/01/01150000.xhp#par_id3149034.12
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:NUMERICFIELD:DLG_MAILMERGE:NF_FROM\"\>Specifies the number of the first record to be printed.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:NUMERICFIELD:DLG_MAILMERGE:NF_FROM\">شمارهٔ اولین رکوردی که چاپ می‌شود را مشخص می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3153631.25
 #, fuzzy
@@ -1359,8 +1365,9 @@ msgid  "To:"
 msgstr "تا:"
 
 #: source/text/swriter/01/01150000.xhp#par_id3145758.26
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:NUMERICFIELD:DLG_MAILMERGE:NF_TO\"\>Specifies the number of the last record to be printed.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:NUMERICFIELD:DLG_MAILMERGE:NF_TO\">شمارهٔ آخرین رکوردی که چاپ می‌شود را مشخص می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3152772.13
 #, fuzzy
@@ -1377,8 +1384,9 @@ msgid  "Printer"
 msgstr ""
 
 #: source/text/swriter/01/01150000.xhp#par_id3149167.16
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_PRINTER\"\>Prints the form letters.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_PRINTER\">نامهٔ فرمالیته را چاپ می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3145773.39
 #, fuzzy
@@ -1386,8 +1394,9 @@ msgid  "File"
 msgstr "پرونده"
 
 #: source/text/swriter/01/01150000.xhp#par_id3155910.40
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_FILE\"\>Saves the form letters in files.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:RADIOBUTTON:DLG_MAILMERGE:RB_FILE\">نامه‌های فرمالیته را در پرونده ذخیره می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3151371.35
 #, fuzzy
@@ -1395,24 +1404,27 @@ msgid  "Single print jobs"
 msgstr "چاپ جداگانه"
 
 #: source/text/swriter/01/01150000.xhp#par_id3155858.36
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:CHECKBOX:DLG_MAILMERGE:CB_SINGLE_JOBS\"\>Prints each form letter individually with the selected printer.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:CHECKBOX:DLG_MAILMERGE:CB_SINGLE_JOBS\">Prints each هر نامهٔ فرمالیته را جداگانه با چاپگر انتخاب شده چاپ می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3150111.41
 msgid  "Path"
 msgstr ""
 
 #: source/text/swriter/01/01150000.xhp#par_id3150687.42
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:EDIT:DLG_MAILMERGE:ED_PATH\"\>Specifies the path to store the form letters.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:EDIT:DLG_MAILMERGE:ED_PATH\">مسیر نامه‌های فرمالیته را مشخص می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3147412.43
 msgid  "..."
 msgstr ""
 
 #: source/text/swriter/01/01150000.xhp#par_id3149553.44
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:PUSHBUTTON:DLG_MAILMERGE:PB_PATH\"\>Opens the\<emph\> Select Path \</emph\>dialog.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:PUSHBUTTON:DLG_MAILMERGE:PB_PATH\">محاورهٔ <emph> انتخاب مسیر</emph> را باز می‌کند.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3145263.49
 #, fuzzy
@@ -1429,8 +1441,9 @@ msgid  "Database field"
 msgstr ""
 
 #: source/text/swriter/01/01150000.xhp#par_id3149829.46
+#, fuzzy
 msgid  "\<ahelp hid=\"SW:LISTBOX:DLG_MAILMERGE:LB_COLUMN\"\>Uses the content of the selected data field as the file name for the form letter.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SW:LISTBOX:DLG_MAILMERGE:LB_COLUMN\">محتویات فیلد انتخاب شده را به عنوان نام پروندهٔ نامهٔ فرمالیته به کار می‌برد.</ahelp>"
 
 #: source/text/swriter/01/01150000.xhp#hd_id3149848.47
 #, fuzzy
@@ -1570,8 +1583,9 @@ msgid  "Navigator"
 msgstr "ناوشگر"
 
 #: source/text/swriter/01/02110000.xhp#hd_id3151177.85
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\"\>Navigator\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/02110000.xhp#par_id3149802.2
 msgid  "\<ahelp hid=\".uno:Navigator\"\>Shows or hides the Navigator, where you can quickly jump to different parts of your document. You can also use the Navigator to insert elements from the current document or other open documents, and to organize master documents.\</ahelp\> To edit an item in the Navigator, right-click the item, and then choose a command from the context menu. If you want, you can \<link href=\"text/shared/00/00000005.xhp#andocken\" name=\"dock\"\>dock\</link\> the Navigator at the edge of your workspace."
@@ -1735,8 +1749,9 @@ msgid  "Header"
 msgstr ""
 
 #: source/text/swriter/01/02110000.xhp#par_id3159242.18
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_NAVI_TBX10\"\>Moves the cursor to the header, or from the header to the document text area.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_NAVI_TBX10\">Moves the cursor to the header, or مکان‌نما را از ناحیهء متنی نوشتار به سرصفحه و یا از سرصفحه به ناحیهٔ متنی نوشتار می‌برد.</ahelp>"
 
 #: source/text/swriter/01/02110000.xhp#par_id3153900
 msgid  "\<image id=\"img_id3153911\" src=\"sw/imglst/sc20179.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3153911\"\>Icon\</alt\>\</image\>"
@@ -1751,8 +1766,9 @@ msgid  "Footer"
 msgstr ""
 
 #: source/text/swriter/01/02110000.xhp#par_id3147137.21
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_NAVI_TBX11\"\>Moves the cursor to the footer, or from the footer to the document text area.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_NAVI_TBX10\">Moves the cursor to the header, or مکان‌نما را از ناحیهء متنی نوشتار به سرصفحه و یا از سرصفحه به ناحیهٔ متنی نوشتار می‌برد.</ahelp>"
 
 #: source/text/swriter/01/02110000.xhp#par_id3150217
 msgid  "\<image id=\"img_id3150224\" src=\"sw/imglst/sc20177.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3150224\"\>Icon\</alt\>\</image\>"
@@ -2065,8 +2081,9 @@ msgid  "AutoText"
 msgstr ""
 
 #: source/text/swriter/01/02120000.xhp#hd_id3147512.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/02120000.xhp\" name=\"AutoText\"\>AutoText\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/02120000.xhp#par_id3154571.2
 msgid  "\<variable id=\"autotexttext\"\>\<ahelp hid=\".uno:EditGlossary\"\>Creates, edits, or inserts AutoText. You can store formatted text, text with graphics, tables, and fields as AutoText. To quickly insert AutoText, type the shortcut for the AutoText in your document, and then press F3.\</ahelp\>\</variable\>"
@@ -2625,8 +2642,9 @@ msgid  "Footnote/Endnote"
 msgstr ""
 
 #: source/text/swriter/01/02150000.xhp#hd_id3143276.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/02150000.xhp\" name=\"Edit  Footnotes\"\>Footnote/Endnote\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/02150000.xhp#par_id3149097.2
 msgid  "\<variable id=\"fusstext\"\>\<ahelp hid=\".uno:EditFootnote\"\>Edits the selected footnote or endnote anchor. Click in front of the footnote or endnote, and then choose this command.\</ahelp\>\</variable\>"
@@ -2721,8 +2739,9 @@ msgid  "Next footnote"
 msgstr ""
 
 #: source/text/swriter/01/02150000.xhp#par_id3150772.33
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04030000.xhp\" name=\"Insert Footnote\"\>Insert Footnote/Endnote\</link\> dialog."
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/02160000.xhp#tit
 msgid  "Edit Index Entry"
@@ -2913,8 +2932,9 @@ msgid  "Ruler"
 msgstr ""
 
 #: source/text/swriter/01/03050000.xhp#hd_id3149287.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/03050000.xhp\" name=\"Ruler\"\>Ruler\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/03050000.xhp#par_id3147514.2
 msgid  "\<ahelp hid=\".uno:Ruler\"\>Shows or hides the horizontal ruler, that you can use to adjust page margins, tab stops, indents, borders, table cells, and to arrange objects on the page.\</ahelp\> To show the vertical ruler, choose \<emph\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - \<link href=\"text/shared/optionen/01040200.xhp\" name=\"Writer - View\"\>%PRODUCTNAME Writer - View\</link\>\</emph\>, and then select the \<emph\>Vertical ruler\</emph\> check box in the \<emph\>Ruler\</emph\> area."
@@ -2929,8 +2949,9 @@ msgid  "Text Boundaries"
 msgstr ""
 
 #: source/text/swriter/01/03070000.xhp#hd_id3145418.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/03070000.xhp\" name=\"Text Boundaries\"\>Text Boundaries\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/03070000.xhp#par_id3151310.2
 msgid  "\<ahelp hid=\".uno:ViewBounds\"\>Shows or hides the boundaries of the printable area of a page. The boundary lines are not printed.\</ahelp\>"
@@ -2941,8 +2962,9 @@ msgid  "Field Shadings"
 msgstr ""
 
 #: source/text/swriter/01/03080000.xhp#hd_id3151177.18
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/03080000.xhp\" name=\"Field Shadings\"\>Field Shadings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/03080000.xhp#par_id3147513.2
 msgid  "\<ahelp hid=\".uno:Marks\"\>Shows or hides field shadings in your document, including non-breaking spaces, custom hyphens, indexes, and footnotes.\</ahelp\>"
@@ -2957,8 +2979,9 @@ msgid  "Fields"
 msgstr ""
 
 #: source/text/swriter/01/03090000.xhp#hd_id3154505.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/03090000.xhp\" name=\"Fields\"\>Field Names\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/03090000.xhp#par_id3147171.2
 msgid  "\<ahelp hid=\".uno:Fieldnames\"\>Switches the field display between field names and field contents.\</ahelp\> A check mark indicates that the field names are displayed, and no check mark indicates that field contents are displayed. Some field contents cannot be displayed."
@@ -2973,8 +2996,9 @@ msgid  "When you print a document with \<emph\>View - Field Names\</emph\> enabl
 msgstr ""
 
 #: source/text/swriter/01/03090000.xhp#par_id3145579.3
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090000.xhp\" name=\"Insert - Fields\"\>Insert - Fields\</link\>."
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/03100000.xhp#tit
 msgid  "Nonprinting Characters"
@@ -3001,8 +3025,9 @@ msgid  "Web Layout"
 msgstr ""
 
 #: source/text/swriter/01/03120000.xhp#hd_id3145243.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/03120000.xhp\" name=\"Web Layout\"\>Web Layout\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/03120000.xhp#par_id3154646.2
 msgid  "\<ahelp hid=\".uno:BrowseView\"\>Displays the document as seen in a Web browser.\</ahelp\> This is useful when you create HTML documents."
@@ -3013,8 +3038,9 @@ msgid  "Print Layout"
 msgstr ""
 
 #: source/text/swriter/01/03130000.xhp#hd_id3150018.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/03130000.xhp\" name=\"Print Layout\"\>Print Layout\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/03130000.xhp#par_id3145249.2
 msgid  "\<ahelp hid=\".uno:PrintLayout\"\>Displays how the document will look when you print it.\</ahelp\>"
@@ -3165,8 +3191,9 @@ msgid  "\<bookmark_value\>sections;inserting sections by DDE\</bookmark_value\>\
 msgstr ""
 
 #: source/text/swriter/01/04020100.xhp#hd_id3157557.37
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04020100.xhp\" name=\"Section\"\>Section\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04020100.xhp#par_id3154644.38
 msgid  "Sets the properties of the section."
@@ -3309,8 +3336,9 @@ msgid  "Select to allow editing of the section's contents even if the document i
 msgstr ""
 
 #: source/text/swriter/01/04020100.xhp#par_id3150032.19
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090000.xhp\" name=\"Field commands\"\>Field commands\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04020100.xhp#par_id3158420.51
 msgid  "\<link href=\"text/swriter/01/04090200.xhp\" name=\"Syntax for conditions\"\>Syntax for conditions\</link\>"
@@ -3321,8 +3349,9 @@ msgid  "Indents"
 msgstr ""
 
 #: source/text/swriter/01/04020200.xhp#hd_id3155898.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04020200.xhp\" name=\"Indents\"\>Indents\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04020200.xhp#par_id3155182.2
 msgid  "Indents the section with a left and right margin."
@@ -3345,16 +3374,18 @@ msgid  "\<ahelp hid=\"SW_METRICFIELD_TP_SECTION_INDENTS_MF_AFTER\"\>Specifies th
 msgstr ""
 
 #: source/text/swriter/01/04020200.xhp#par_id3149032.7
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090000.xhp\" name=\"Field commands\"\>Field commands\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04030000.xhp#tit
 msgid  "Footnote/Endnote"
 msgstr ""
 
 #: source/text/swriter/01/04030000.xhp#hd_id3145241.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04030000.xhp\" name=\"Insert Footnote\"\>Footnote/Endnote\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04030000.xhp#par_id3147167.2
 msgid  "\<variable id=\"fussnoteein\"\>\<ahelp hid=\".uno:InsertFootnote\"\>Inserts a footnote or an endnote in the document. The anchor for the note is inserted at the current cursor position.\</ahelp\> You can choose between automatic numbering or a custom symbol. \</variable\>"
@@ -3477,8 +3508,9 @@ msgid  "Caption"
 msgstr ""
 
 #: source/text/swriter/01/04060000.xhp#hd_id3147173.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04060000.xhp\" name=\"Caption\"\>Caption\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04060000.xhp#par_id3149288.2
 msgid  "\<variable id=\"beschrifttext\"\>\<ahelp hid=\"HID_DLG_CAPTION\"\>Adds a numbered caption to a selected graphic, table, frame, text frame, or drawing object.\</ahelp\> You can also access this command by right-clicking the item that you want to add the caption to. \</variable\>"
@@ -3533,8 +3565,9 @@ msgid  "\<ahelp hid=\"SW:LISTBOX:DLG_CAPTION:BOX_POS\"\>Adds the caption above o
 msgstr ""
 
 #: source/text/swriter/01/04060000.xhp#hd_id3149043.29
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04060100.xhp\" name=\"Options\"\>Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04060000.xhp#par_idN10744
 msgid  "AutoCaption"
@@ -3609,8 +3642,9 @@ msgid  "\<bookmark_value\>inserting;envelopes\</bookmark_value\>      \<bookmark
 msgstr ""
 
 #: source/text/swriter/01/04070000.xhp#hd_id3145245.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04070000.xhp\" name=\"Envelope\"\>Envelope\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04070000.xhp#par_id3149289.2
 msgid  "\<variable id=\"briefum\"\>\<ahelp hid=\".uno:InsertEnvelope\"\>Creates an envelope.\</ahelp\> On three tab pages, you can specify the addressee and sender, the position and format for both addresses, the size of the envelope, and the envelope orientation.\</variable\>"
@@ -3665,8 +3699,9 @@ msgid  "Envelope"
 msgstr ""
 
 #: source/text/swriter/01/04070100.xhp#hd_id3145243.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04070100.xhp\" name=\"Envelope\"\>Envelope\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04070100.xhp#par_id3147172.2
 msgid  "\<ahelp hid=\"HID_ENV_ENV\" visibility=\"visible\"\>Enter the delivery and return addresses for the envelope. You can also insert address fields from a database, for example from the Addresses database.\</ahelp\>"
@@ -3717,8 +3752,9 @@ msgid  "Format"
 msgstr ""
 
 #: source/text/swriter/01/04070200.xhp#hd_id3151180.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04070200.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04070200.xhp#par_id3149295.2
 msgid  "\<ahelp hid=\"HID_ENV_FMT\"\>Specifies the layout and the dimension of the envelope.\</ahelp\>"
@@ -3873,8 +3909,9 @@ msgid  "Printer"
 msgstr ""
 
 #: source/text/swriter/01/04070300.xhp#hd_id3154104.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04070300.xhp\"\>Printer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04070300.xhp#par_id3153531.2
 msgid  "\<ahelp hid=\"HID_ENV_PRT\"\>Set the print options for the envelope.\</ahelp\>"
@@ -3985,8 +4022,9 @@ msgid  "Fields"
 msgstr ""
 
 #: source/text/swriter/01/04090000.xhp#hd_id3151171.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04090000.xhp#par_id3149805.2
 msgid  "\<variable id=\"feldbefehltext\"\>\<ahelp hid=\".uno:InsertField\"\>Inserts a field at the current cursor position.\</ahelp\> The dialog lists all available fields. \</variable\>"
@@ -4009,8 +4047,9 @@ msgid  "Document"
 msgstr ""
 
 #: source/text/swriter/01/04090001.xhp#hd_id3150017.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090001.xhp\" name=\"Document\"\>Document\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04090001.xhp#par_id3147167.2
 msgid  "Fields are used to insert information about the current document, for example, file name, template, statistics, user data, date, and time."
@@ -4517,8 +4556,9 @@ msgid  "Functions"
 msgstr ""
 
 #: source/text/swriter/01/04090003.xhp#hd_id3149123.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090003.xhp\" name=\"Functions\"\>Functions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04090003.xhp#par_id3150343.45
 msgid  "\<ahelp hid=\"SW_EDIT_TP_FLD_FUNC_ED_FUNCVALUE\" visibility=\"hidden\"\>Sets additional function parameters for fields. The type of parameter depends on the field type that you select.\</ahelp\>"
@@ -4797,8 +4837,9 @@ msgid  "DocInformation"
 msgstr ""
 
 #: source/text/swriter/01/04090004.xhp#hd_id3154479.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090004.xhp\" name=\"DocInformation\"\>DocInformation\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04090004.xhp#par_id3149692.2
 msgid  "DocInformation fields contain information about the properties of a document, such as the date a document was created. To view the properties of a document, choose \<emph\>File - Properties\</emph\>."
@@ -4933,8 +4974,9 @@ msgid  "\<bookmark_value\>user-defined fields, restriction\</bookmark_value\>"
 msgstr ""
 
 #: source/text/swriter/01/04090005.xhp#hd_id3153716.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090005.xhp\" name=\"Variables\"\>Variables\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04090005.xhp#par_id3150764.2
 msgid  "Variable fields let you add dynamic content to your document. For example, you can use a variable to reset the page numbering."
@@ -5145,8 +5187,9 @@ msgid  "Database"
 msgstr ""
 
 #: source/text/swriter/01/04090006.xhp#hd_id3153536.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090006.xhp\" name=\"Database\"\>Database\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04090006.xhp#par_id3154471.2
 msgid  "You can insert fields from any database, for example, address fields, into your document."
@@ -5306,8 +5349,9 @@ msgid  "\<bookmark_value\>tags; in $[officename] Writer\</bookmark_value\>\<book
 msgstr ""
 
 #: source/text/swriter/01/04090007.xhp#hd_id3154106.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090007.xhp\" name=\"Special Tags\"\>Special Tags\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04090007.xhp#par_id3153669.3
 msgid  "When you save a document that contains fields as an HTML document, $[officename] automatically converts date, time, and DocInformation fields to special HTML tags. The field contents are inserted between the opening and closing HTML tags of the converted fields. These special HTML tags do not correspond to standard HTML tags."
@@ -6018,8 +6062,9 @@ msgid  "Indexes and Tables"
 msgstr ""
 
 #: source/text/swriter/01/04120000.xhp#hd_id3151380.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120000.xhp\" name=\"Indexes and Tables\"\>Indexes and Tables\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120000.xhp#par_idN105AC
 msgid  "Opens a menu to insert index entries and to insert indexes and tables."
@@ -6030,16 +6075,19 @@ msgid  "\<link href=\"text/swriter/guide/main.xhp\" name=\"Instructions for Inde
 msgstr ""
 
 #: source/text/swriter/01/04120000.xhp#hd_id3147416.3
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120100.xhp\" name=\"Entry\"\>Entry\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120000.xhp#hd_id3147501.4
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120200.xhp\" name=\"Indexes and Tables\"\>Indexes and Tables\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120000.xhp#hd_id3155620.5
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120300.xhp\" name=\"Bibliography Entry\"\>Bibliography Entry\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120100.xhp#tit
 msgid  "Insert Index Entry"
@@ -6218,8 +6266,9 @@ msgid  "Styles"
 msgstr ""
 
 #: source/text/swriter/01/04120201.xhp#hd_id3145825.36
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120201.xhp\" name=\"Styles\"\>Styles\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120201.xhp#par_id3154505.37
 msgid  "You can assign different paragraph styles to change the formatting of index titles, separators and index entries. You can also modify paragraph styles in this dialog."
@@ -6274,8 +6323,9 @@ msgid  "Index/Table"
 msgstr ""
 
 #: source/text/swriter/01/04120210.xhp#hd_id3150933.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120210.xhp\" name=\"Index/Table\"\>Index/Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120210.xhp#par_id3148390.2
 msgid  "Use this tab to specify and define the type of  \<link href=\"text/swriter/01/04120200.xhp\" name=\"index\"\>index\</link\> that you want to insert. You can also create custom indexes."
@@ -6286,8 +6336,9 @@ msgid  "Depending on the type of index that you select, this tab contains the fo
 msgstr ""
 
 #: source/text/swriter/01/04120210.xhp#hd_id3147175.4
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120211.xhp\" name=\"Table of Contents\"\>Table of Contents\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120210.xhp#hd_id3151183.5
 msgid  "\<link href=\"text/swriter/01/04120212.xhp\" name=\"Alphabetical Index\"\>Alphabetical Index\</link\>"
@@ -6298,20 +6349,23 @@ msgid  "\<link href=\"text/swriter/01/04120213.xhp\" name=\"Illustration Index\"
 msgstr ""
 
 #: source/text/swriter/01/04120210.xhp#hd_id3151265.7
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120214.xhp\" name=\"Index of Tables\"\>Index of Tables\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120210.xhp#hd_id3153152.8
 msgid  "\<link href=\"text/swriter/01/04120215.xhp\" name=\"User-Defined\"\>User-Defined\</link\>"
 msgstr ""
 
 #: source/text/swriter/01/04120210.xhp#hd_id3149759.9
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120216.xhp\" name=\"Table of Objects\"\>Table of Objects\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120210.xhp#hd_id3145410.10
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120217.xhp\" name=\"Bibliography\"\>Bibliography\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120210.xhp#par_id3154278.11
 msgid  "\<link href=\"text/swriter/guide/main.xhp\" name=\"Using Tables of Content and Indexes\"\>Using Tables of Content and Indexes\</link\>"
@@ -6326,8 +6380,9 @@ msgid  "Index"
 msgstr ""
 
 #: source/text/swriter/01/04120211.xhp#hd_id3150018.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120211.xhp\" name=\"Index\"\>Index\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120211.xhp#par_id3150570.2
 msgid  "\<variable id=\"verzeichnis\"\>The following options are available when you select \<emph\>Table of Contents \</emph\>as the \<link href=\"text/swriter/01/04120210.xhp\" name=\"index\"\>index\</link\> type. \</variable\>"
@@ -6430,8 +6485,9 @@ msgid  "Index"
 msgstr ""
 
 #: source/text/swriter/01/04120212.xhp#hd_id3147338.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120212.xhp\" name=\"Index\"\>Index\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120212.xhp#par_id3155962.2
 msgid  "\<variable id=\"verzeichnis\"\>The following options are available when you select \<emph\>Alphabetical Index \</emph\>as the \<link href=\"text/swriter/01/04120210.xhp\" name=\"index\"\>index\</link\> type. \</variable\>"
@@ -6543,8 +6599,9 @@ msgid  "Index"
 msgstr ""
 
 #: source/text/swriter/01/04120213.xhp#hd_id3147570.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120213.xhp\" name=\"Index\"\>Index\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120213.xhp#par_id3145415.2
 msgid  "\<variable id=\"verzeichnis\"\>The following options are available when you select the \<emph\>Illustration Index \</emph\>as the \<link href=\"text/swriter/01/04120210.xhp\" name=\"index\"\>index\</link\> type.\</variable\>"
@@ -6631,8 +6688,9 @@ msgid  "Index"
 msgstr ""
 
 #: source/text/swriter/01/04120214.xhp#hd_id3151387.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120214.xhp\" name=\"Index\"\>Index\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120214.xhp#par_id3146320.2
 msgid  "\<variable id=\"verzeichnis\"\>The following options are available when you select \<emph\>Index of Tables \</emph\>as the \<link href=\"text/swriter/01/04120210.xhp\" name=\"index\"\>index\</link\> type.\</variable\>"
@@ -6643,8 +6701,9 @@ msgid  "Index"
 msgstr ""
 
 #: source/text/swriter/01/04120215.xhp#hd_id3150568.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120215.xhp\" name=\"Index\"\>Index\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120215.xhp#par_id3151183.2
 msgid  "\<variable id=\"verzeichnis\"\>The following options are available when you select \<emph\>User-Defined \</emph\>as the \<link href=\"text/swriter/01/04120210.xhp\" name=\"index\"\>index\</link\> type.\</variable\>"
@@ -6711,8 +6770,9 @@ msgid  "Index"
 msgstr ""
 
 #: source/text/swriter/01/04120216.xhp#hd_id3145247.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120216.xhp\" name=\"Index\"\>Index\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120216.xhp#par_id3147175.2
 msgid  "\<variable id=\"verzeichnis\"\>The following options are available when you select \<emph\>Table of Objects \</emph\>as the \<link href=\"text/swriter/01/04120210.xhp\" name=\"index\"\>index\</link\> type.\</variable\>"
@@ -6731,8 +6791,9 @@ msgid  "Index"
 msgstr ""
 
 #: source/text/swriter/01/04120217.xhp#hd_id3146322.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120217.xhp\" name=\"Index\"\>Index\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120217.xhp#par_id3145825.2
 msgid  "\<variable id=\"verzeichnis\"\>The following options are available when you select \<emph\>Bibliography \</emph\>as the \<link href=\"text/swriter/01/04120210.xhp\" name=\"index\"\>index\</link\> type.\</variable\>"
@@ -6763,8 +6824,9 @@ msgid  "Assign Styles"
 msgstr ""
 
 #: source/text/swriter/01/04120219.xhp#hd_id3155621.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120219.xhp\" name=\"Assign Styles\"\>Assign Styles\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120219.xhp#par_id3145828.2
 msgid  "\<ahelp hid=\"HID_DLG_ADD_IDX_STYLES\" visibility=\"visible\"\>Creates index entries from specific paragraph styles.\</ahelp\>"
@@ -6803,16 +6865,18 @@ msgid  "Entries (indexes/tables)"
 msgstr ""
 
 #: source/text/swriter/01/04120220.xhp#hd_id3149349.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120220.xhp\" name=\"Entries (indexes/tables)\"\>Entries (indexes/tables)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120220.xhp#par_id3154504.2
 msgid  "\<ahelp visibility=\"visible\" hid=\"HID_TP_TOX_ENTRY\"\>Specify the format of the index or table entries. The appearance of this tab changes to reflect the type of index that you selected on the \<link href=\"text/swriter/01/04120210.xhp\" name=\"Index/Table\"\>Index/Table\</link\> tab.\</ahelp\>"
 msgstr ""
 
 #: source/text/swriter/01/04120220.xhp#hd_id3148770.4
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120221.xhp\" name=\"Table of Contents\"\>Table of Contents\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120220.xhp#hd_id3147564.5
 msgid  "\<link href=\"text/swriter/01/04120222.xhp\" name=\"Alphabetical Index\"\>Alphabetical Index\</link\>"
@@ -6823,28 +6887,32 @@ msgid  "\<link href=\"text/swriter/01/04120223.xhp\" name=\"Illustration Index\"
 msgstr ""
 
 #: source/text/swriter/01/04120220.xhp#hd_id3150761.7
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120224.xhp\" name=\"Index of Tables\"\>Index of Tables\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120220.xhp#hd_id3153517.8
 msgid  "\<link href=\"text/swriter/01/04120225.xhp\" name=\"User-Defined\"\>User-Defined\</link\>"
 msgstr ""
 
 #: source/text/swriter/01/04120220.xhp#hd_id3151175.9
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120226.xhp\" name=\"Table of Objects\"\>Table of Objects\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120220.xhp#hd_id3147506.10
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120227.xhp\" name=\"Bibliography\"\>Bibliography\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120221.xhp#tit
 msgid  "Entries (table of contents)"
 msgstr ""
 
 #: source/text/swriter/01/04120221.xhp#hd_id3145827.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120221.xhp\" name=\"Entries (table of contents)\"\>Entries (table of contents)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120221.xhp#par_id3150017.2
 msgid  "\<variable id=\"eintraege\"\>Specify the format of the entries in the table of contents.\</variable\>"
@@ -7072,8 +7140,9 @@ msgid  "Entries (index of tables)"
 msgstr ""
 
 #: source/text/swriter/01/04120224.xhp#hd_id3147406.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120224.xhp\" name=\"Entries (index of tables)\"\>Entries (index of tables)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120224.xhp#par_id3146318.2
 msgid  "\<variable id=\"eintraege\"\>Specify the format for the entries in an Index of Tables. \</variable\>"
@@ -7104,8 +7173,9 @@ msgid  "Entries (table of objects)"
 msgstr ""
 
 #: source/text/swriter/01/04120226.xhp#hd_id3147401.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120226.xhp\" name=\"Entries (table of objects)\"\>Entries (table of objects)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120226.xhp#par_id3083447.2
 msgid  "\<variable id=\"eintraege\"\>Specify the format for the entries in a Table of Objects. \</variable\>"
@@ -7120,8 +7190,9 @@ msgid  "Entries (bibliography)"
 msgstr ""
 
 #: source/text/swriter/01/04120227.xhp#hd_id3151388.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04120227.xhp\" name=\"Entries (bibliography)\"\>Entries (bibliography)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04120227.xhp#par_id3083449.2
 msgid  "\<variable id=\"eintraege\"\>Specify the format for bibliography entries.\</variable\>"
@@ -7536,8 +7607,9 @@ msgid  "Table"
 msgstr ""
 
 #: source/text/swriter/01/04150000.xhp#hd_id3147402.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04150000.xhp\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04150000.xhp#par_id3149355.2
 msgid  "\<variable id=\"tabelletext\"\>\<ahelp hid=\".uno:InsertTable\"\>Inserts a table into the document. You can also click the arrow, drag to select the number of rows and columns to include in the table, and then click in the last cell.\</ahelp\>\</variable\>"
@@ -7876,8 +7948,9 @@ msgid  "Header"
 msgstr ""
 
 #: source/text/swriter/01/04220000.xhp#hd_id3146320.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04220000.xhp\" name=\"Header\"\>Header\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04220000.xhp#par_id3145827.2
 msgid  "\<ahelp hid=\".uno:InsertPageHeader\"\>Adds or removes a header from the page style that you select in the submenu. The header is added to all of the pages that use the same page style.\</ahelp\> In a new document, only the \"Default\" page style is listed. Other page styles are added to the list after you apply them in the document."
@@ -7908,8 +7981,9 @@ msgid  "Footer"
 msgstr ""
 
 #: source/text/swriter/01/04230000.xhp#hd_id3147403.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04230000.xhp\" name=\"Footer\"\>Footer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04230000.xhp#par_id3149353.2
 msgid  "\<ahelp hid=\".uno:InsertPageFooter\"\>Adds or removes a footer from the page style that you select in the submenu. The footer is added to all of the pages that use the same page style.\</ahelp\> In a new document, only the \"Default\" page style is listed. Other page styles are added to the list after you apply them in the document."
@@ -7940,16 +8014,18 @@ msgid  "Fields"
 msgstr ""
 
 #: source/text/swriter/01/04990000.xhp#hd_id3147405.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04990000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/04990000.xhp#par_id3145827.2
 msgid  "Inserts a field at the current cursor position. The submenu lists the most common field types. To view all of the available fields, choose \<emph\>Other\</emph\>."
 msgstr ""
 
 #: source/text/swriter/01/04990000.xhp#hd_id3147571.3
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/04090000.xhp\" name=\"Other\"\>Other\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05030200.xhp#tit
 msgid  "Text Flow"
@@ -7960,8 +8036,9 @@ msgid  "\<bookmark_value\>text flow;at breaks\</bookmark_value\>\<bookmark_value
 msgstr ""
 
 #: source/text/swriter/01/05030200.xhp#hd_id3083447.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05030200.xhp\" name=\"Text Flow\"\>Text Flow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05030200.xhp#par_id3145824.2
 msgid  "\<ahelp hid=\"HID_FORMAT_PARAGRAPH_EXT\"\>Specify hyphenation and pagination options.\</ahelp\>"
@@ -8116,8 +8193,9 @@ msgid  "\<bookmark_value\>first letters as large capital letters\</bookmark_valu
 msgstr ""
 
 #: source/text/swriter/01/05030400.xhp#hd_id3150252.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05030400.xhp\" name=\"Drop Caps\"\>Drop Caps\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05030400.xhp#par_id3154763.2
 msgid  "\<ahelp hid=\"HID_DROPCAPS\"\>Formats the first letter of a paragraph with a large capital letter, that can span several lines. The paragraph must span at least as many lines as you specify in the Lines box.\</ahelp\>"
@@ -8192,8 +8270,9 @@ msgid  "Outline & Numbering"
 msgstr ""
 
 #: source/text/swriter/01/05030800.xhp#hd_id3151173.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05030800.xhp\" name=\"Numbering\"\>Outline & Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05030800.xhp#par_id3154100.2
 msgid  "\<ahelp hid=\"HID_NUMPARA\"\>Adds or removes outline level, numbering, or bullets from the paragraph. You can also select the style of numbering to use, and reset the numbering in a numbered list.\</ahelp\>"
@@ -8304,8 +8383,9 @@ msgid  "Columns"
 msgstr ""
 
 #: source/text/swriter/01/05040500.xhp#hd_id3149875.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05040500.xhp\" name=\"Columns\"\>Columns\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05040500.xhp#par_id3151392.2
 msgid  "\<variable id=\"spaltentext\"\>\<ahelp hid=\"HID_COLUMN\"\>Specifies the number of columns and the column layout for a page style, frame, or section.\</ahelp\>\</variable\>"
@@ -8488,8 +8568,9 @@ msgid  "Footnote"
 msgstr ""
 
 #: source/text/swriter/01/05040600.xhp#hd_id3154767.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05040600.xhp\" name=\"Footnote\"\>Footnote\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05040600.xhp#par_id3149351.2
 msgid  "\<ahelp hid=\"HID_FOOTNOTE_PAGE\"\>Specifies the layout options for footnotes, including the line that separates the footnote from the main body of document.\</ahelp\>"
@@ -8580,8 +8661,9 @@ msgid  "Footnotes/Endnotes"
 msgstr ""
 
 #: source/text/swriter/01/05040700.xhp#hd_id3149028.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05040700.xhp\" name=\"Footnotes/Endnotes\"\>Footnotes/Endnotes\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05040700.xhp#par_id3147170.2
 msgid  "\<ahelp hid=\"\" visibility=\"visible\"\>Specifies where footnotes and endnotes are displayed as well as their numbering formats.\</ahelp\>"
@@ -8720,8 +8802,9 @@ msgid  "\<bookmark_value\>text grid for Asian layout\</bookmark_value\>"
 msgstr ""
 
 #: source/text/swriter/01/05040800.xhp#hd_id3150760.18
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05040800.xhp\" name=\"Text Grid\"\>Text Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05040800.xhp#par_id3151171.17
 msgid  "\<ahelp hid=\".\"\>Adds a text grid to the current page style. This option is only available if Asian language support is enabled under \<emph\>Language Settings - Languages\</emph\> in the Options dialog box.\</ahelp\>"
@@ -8808,8 +8891,9 @@ msgid  "The \<emph\>Graphics\</emph\> dialog contains the following tab pages:"
 msgstr ""
 
 #: source/text/swriter/01/05060000.xhp#hd_id3145419.4
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap\"\>Wrap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05060100.xhp#tit
 msgid  "Type"
@@ -8820,8 +8904,9 @@ msgid  "\<bookmark_value\>resizing;aspect ratio\</bookmark_value\>\<bookmark_val
 msgstr ""
 
 #: source/text/swriter/01/05060100.xhp#hd_id3151389.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060100.xhp\" name=\"Type\"\>Type\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05060100.xhp#par_id3150568.2
 msgid  "\<ahelp hid=\"HID_FRM_STD\"\>Specifies the size and the position of the selected object or frame on a page.\</ahelp\>"
@@ -9040,8 +9125,9 @@ msgid  "Wrap"
 msgstr ""
 
 #: source/text/swriter/01/05060200.xhp#hd_id3153527.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap\"\>Wrap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05060200.xhp#par_id3154478.2
 msgid  "\<variable id=\"umlauftext\"\>\<ahelp hid=\".uno:TextWrap\"\>Specify the way you want text to wrap around an object.\</ahelp\> You can also specify the spacing between the text and the object. \</variable\>"
@@ -9484,8 +9570,9 @@ msgid  "Picture"
 msgstr ""
 
 #: source/text/swriter/01/05060300.xhp#hd_id3154473.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060300.xhp\" name=\"Graphics\"\>Picture\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05060300.xhp#par_id3152961.2
 msgid  "\<ahelp hid=\"HID_GRF_EXT\"\>Specify the flip and the link options for the selected graphic.\</ahelp\>"
@@ -9572,8 +9659,9 @@ msgid  "Macro"
 msgstr ""
 
 #: source/text/swriter/01/05060700.xhp#hd_id3145241.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060700.xhp\" name=\"Macro\"\>Macro\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05060700.xhp#par_id3158429.2
 msgid  "\<ahelp hid=\"SFX2:TABPAGE:RID_SFX_TP_MACROASSIGN\"\>Specifies the macro to run when you click a graphic, frame, or an OLE object.\</ahelp\>"
@@ -9888,8 +9976,9 @@ msgid  "\<bookmark_value\>objects; defining hyperlinks\</bookmark_value\>       
 msgstr ""
 
 #: source/text/swriter/01/05060800.xhp#hd_id3150980.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060800.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05060800.xhp#par_id3154188.2
 msgid  "\<ahelp hid=\"HID_FRM_URL\"\>Specify the properties of the hyperlink for the selected graphic, frame or OLE object.\</ahelp\>"
@@ -9968,8 +10057,9 @@ msgid  "Options"
 msgstr ""
 
 #: source/text/swriter/01/05060900.xhp#hd_id3149879.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060900.xhp\" name=\"Options\"\>Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05060900.xhp#par_id3149708.2
 msgid  "\<ahelp hid=\"HID_FRM_ADD\"\>Specifies properties for the selected object, graphic or frame.\</ahelp\>"
@@ -10088,8 +10178,9 @@ msgid  "\<ahelp hid=\"SW_LISTBOX_TP_FRM_ADD_LB_TEXTFLOW\"\>Specifies the preferr
 msgstr ""
 
 #: source/text/swriter/01/05060900.xhp#par_id3150689.34
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05040200.xhp\" name=\"Text direction\"\>Text direction\</link\>."
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05080000.xhp#tit
 msgid  "Object"
@@ -10104,8 +10195,9 @@ msgid  "\<variable id=\"objekttext\"\>\<ahelp hid=\".uno:FrameDialog\"\>Opens a 
 msgstr ""
 
 #: source/text/swriter/01/05080000.xhp#hd_id3145249.61
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap\"\>Wrap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05090000.xhp#tit
 msgid  "Table Format"
@@ -10128,8 +10220,9 @@ msgid  "\<bookmark_value\>tables; positioning\</bookmark_value\>\<bookmark_value
 msgstr ""
 
 #: source/text/swriter/01/05090100.xhp#hd_id3154762.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05090100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05090100.xhp#par_id3146322.2
 msgid  "\<ahelp hid=\"HID_FORMAT_TABLE\"\>Specify the size, position, spacing, and alignment options for the selected table.\</ahelp\>"
@@ -10264,8 +10357,9 @@ msgid  "Columns"
 msgstr ""
 
 #: source/text/swriter/01/05090200.xhp#hd_id3150756.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05090200.xhp\" name=\"Columns\"\>Columns\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05090200.xhp#par_id3149294.2
 msgid  "Specify the column width properties."
@@ -10388,8 +10482,9 @@ msgid  "To change the behavior of tables in a text document, choose \<emph\>\<sw
 msgstr ""
 
 #: source/text/swriter/01/05090201.xhp#par_id3154196.16
+#, fuzzy
 msgid  "\<link href=\"text/swriter/main0204.xhp\" name=\"Table Bar\"\>Table Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05090300.xhp#tit
 msgid  "Text Flow"
@@ -10400,8 +10495,9 @@ msgid  "\<bookmark_value\>tables;text flow around text tables\</bookmark_value\>
 msgstr ""
 
 #: source/text/swriter/01/05090300.xhp#hd_id3154558.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05090300.xhp\" name=\"Text Flow\"\>Text Flow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05090300.xhp#par_id3145245.2
 msgid  "\<ahelp hid=\"HID_TABLE_TEXTFLOW\"\>Set the text flow options for the text before and after the table.\</ahelp\>"
@@ -10552,8 +10648,9 @@ msgid  "Cell"
 msgstr ""
 
 #: source/text/swriter/01/05100000.xhp#hd_id3150765.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05100000.xhp\" name=\"Cell\"\>Cell\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05100000.xhp#par_id3147567.2
 msgid  "This command is only available if you have selected a table in your document, or if the cursor is in a table cell."
@@ -10564,8 +10661,9 @@ msgid  "Protect"
 msgstr ""
 
 #: source/text/swriter/01/05100300.xhp#hd_id3146322.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05100300.xhp\" name=\"Protect\"\>Protect\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05100300.xhp#par_id3145822.2
 msgid  "\<ahelp hid=\".uno:Protect\"\>Prevents the contents of the selected cells from being modified.\</ahelp\>"
@@ -10584,8 +10682,9 @@ msgid  "Unprotect"
 msgstr ""
 
 #: source/text/swriter/01/05100400.xhp#hd_id3149052.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05100400.xhp\" name=\"Unprotect\"\>Unprotect\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05100400.xhp#par_id3083450.2
 msgid  "\<ahelp hid=\".uno:UnsetCellsReadOnly\"\>Removes the cell protection for all selected cells in the current table.\</ahelp\>"
@@ -10604,24 +10703,28 @@ msgid  "Row"
 msgstr ""
 
 #: source/text/swriter/01/05110000.xhp#hd_id3149502.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05110000.xhp\" name=\"Row\"\>Row\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05110000.xhp#par_id3154652.2
 msgid  "Set the height of rows, or select, insert, and delete rows."
 msgstr ""
 
 #: source/text/swriter/01/05110000.xhp#hd_id3083451.3
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05110100.xhp\" name=\"Height\"\>Height\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05110000.xhp#hd_id3149349.5
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05110200.xhp\" name=\"Optimal Height\"\>Optimal Height\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05110000.xhp#hd_id3149883.4
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05120400.xhp\" name=\"Insert...\"\>Insert...\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05110100.xhp#tit
 msgid  "Row Height"
@@ -10676,8 +10779,9 @@ msgid  "Select"
 msgstr ""
 
 #: source/text/swriter/01/05110300.xhp#hd_id3154650.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05110300.xhp\" name=\"Select\"\>Select\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05110300.xhp#par_id3151389.2
 msgid  "\<ahelp hid=\".uno:EntireRow\" visibility=\"visible\"\>Selects the row that contains the cursor.\</ahelp\>"
@@ -10692,8 +10796,9 @@ msgid  "Delete"
 msgstr ""
 
 #: source/text/swriter/01/05110500.xhp#hd_id3149502.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05110500.xhp\" name=\"Delete\"\>Delete\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05110500.xhp#par_id3149050.2
 msgid  "\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Deletes the selected row(s) from the table.\</ahelp\>\</variable\>"
@@ -10704,24 +10809,28 @@ msgid  "Column"
 msgstr ""
 
 #: source/text/swriter/01/05120000.xhp#hd_id3154762.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05120000.xhp\" name=\"Column\"\>Column\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05120000.xhp#par_id3149052.2
 msgid  "Set the width of columns, or select, insert, and delete columns."
 msgstr ""
 
 #: source/text/swriter/01/05120000.xhp#hd_id3146322.4
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05120100.xhp\" name=\"Width...\"\>Width...\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05120000.xhp#hd_id3154558.6
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05120200.xhp\" name=\"Optimal width\"\>Optimal width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05120000.xhp#hd_id3150564.5
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05120400.xhp\" name=\"Insert...\"\>Insert...\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05120100.xhp#tit
 msgid  "Column Width"
@@ -10776,8 +10885,9 @@ msgid  "Select"
 msgstr ""
 
 #: source/text/swriter/01/05120300.xhp#hd_id3154660.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05120300.xhp\" name=\"Select\"\>Select\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05120300.xhp#par_id3154765.2
 msgid  "\<ahelp hid=\".uno:EntireColumn\" visibility=\"visible\"\>Selects the column that contains the cursor.\</ahelp\> This option is only available if the cursor is in a table."
@@ -10840,8 +10950,9 @@ msgid  "Delete"
 msgstr ""
 
 #: source/text/swriter/01/05120500.xhp#hd_id3145801.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05120500.xhp\" name=\"Delete\"\>Delete\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05120500.xhp#par_id3153418.2
 msgid  "\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteColumns\"\>Deletes the selected column(s) from the table.\</ahelp\>\</variable\>"
@@ -11052,8 +11163,9 @@ msgid  "Character Style "
 msgstr ""
 
 #: source/text/swriter/01/05130002.xhp#hd_id3148489.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05130002.xhp\" name=\"Character Style\"\>Character Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05130002.xhp#par_id3154650.2
 msgid  "Here, you can create a font style."
@@ -11064,8 +11176,9 @@ msgid  "Numbering Style "
 msgstr ""
 
 #: source/text/swriter/01/05130004.xhp#hd_id3155961.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05130004.xhp\" name=\"Numbering Style\"\>Numbering Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05130004.xhp#par_id3149501.2
 msgid  "Here you can create a Numbering Style. The Numbering Styles are organized in the \<link href=\"text/swriter/01/05140000.xhp\" name=\"Styles and Formatting\"\>Styles and Formatting\</link\> window."
@@ -11084,8 +11197,9 @@ msgid  "\<bookmark_value\>styles; conditional\</bookmark_value\>\<bookmark_value
 msgstr ""
 
 #: source/text/swriter/01/05130100.xhp#hd_id3154656.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05130100.xhp\" name=\"Condition\"\>Condition\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05130100.xhp#par_id3154766.2
 msgid  "Define conditions for conditional styles here."
@@ -11192,8 +11306,9 @@ msgid  "\<bookmark_value\>Styles and Formatting window;applying styles\</bookmar
 msgstr ""
 
 #: source/text/swriter/01/05140000.xhp#hd_id3154505.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05140000.xhp\" name=\"Styles and Formatting\"\>Styles and Formatting\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05140000.xhp#par_id3148391.2
 msgid  "\<ahelp hid=\".\"\>Use the Styles and Formatting window to apply, create, edit, add, and remove formatting styles. Double-click an entry to apply the style.\</ahelp\>"
@@ -11356,8 +11471,9 @@ msgid  "\<bookmark_value\>AutoCorrect function;text documents\</bookmark_value\>
 msgstr ""
 
 #: source/text/swriter/01/05150000.xhp#hd_id3153925.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05150000.xhp\" name=\"AutoFormat\"\>AutoCorrect\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05150000.xhp#par_id3151182.2
 msgid  "Automatically formats the file according to the options that you set under \<link href=\"text/shared/01/06040000.xhp\" name=\"Tools - AutoCorrect\"\>\<emph\>Tools - AutoCorrect\</emph\>            \<emph\>Options\</emph\>\</link\>."
@@ -11380,8 +11496,9 @@ msgid  "While  Typing"
 msgstr ""
 
 #: source/text/swriter/01/05150100.xhp#hd_id3147436.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05150100.xhp\" name=\"While  Typing\"\>While Typing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05150100.xhp#par_id3154017.2
 msgid  "\<ahelp hid=\".uno:OnlineAutoFormat\"\>Automatically formats the document while you type. To set the formatting options, choose \<emph\>Tools - AutoCorrect\</emph\>\<emph\> Options\</emph\>, and then click the \<emph\>Options \</emph\>tab.\</ahelp\>"
@@ -11396,8 +11513,9 @@ msgid  "To reverse the last AutoCorrect action, choose \<emph\>Edit - \</emph\>\
 msgstr ""
 
 #: source/text/swriter/01/05150100.xhp#par_id3150536.25
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05150200.xhp\" name=\"Other AutoFormat rules\"\>Other AutoCorrect rules\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05150101.xhp#tit
 msgid  "AutoFormat for Tables"
@@ -11564,8 +11682,9 @@ msgid  "\<bookmark_value\>AutoCorrect function;headings\</bookmark_value\>      
 msgstr ""
 
 #: source/text/swriter/01/05150200.xhp#hd_id3155962.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05150200.xhp\" name=\"Apply\"\>Apply\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05150200.xhp#par_id3149871.2
 msgid  "\<ahelp hid=\".uno:AutoFormatApply\"\>Automatically formats the file according to the options that you set under \<emph\>Tools - AutoCorrect\</emph\>            \<emph\>Options\</emph\>.\</ahelp\>"
@@ -11756,48 +11875,57 @@ msgid  "Wrap"
 msgstr ""
 
 #: source/text/swriter/01/05180000.xhp#hd_id3145826.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05180000.xhp\" name=\"Wrap\"\>Wrap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#par_id3153002.2
 msgid  "Sets the text wrap options for graphics, objects, and frames."
 msgstr ""
 
 #: source/text/swriter/01/05180000.xhp#hd_id3150022.3
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"No wrap\"\>No wrap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#hd_id3150934.4
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Page wrap\"\>Page wrap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#hd_id3149027.5
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Dynamic page wrap\"\>Dynamic page wrap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#hd_id3153718.6
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Wrap through\"\>Wrap through\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#hd_id3156321.7
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"In background\"\>In background\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#hd_id3151180.10
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Contour\"\>Contour\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#hd_id3147566.9
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060201.xhp\" name=\"Edit Contour\"\>Edit Contour\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05180000.xhp#hd_id3149294.8
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"First paragraph\"\>First paragraph\</link\>"
 msgstr ""
 
 #: source/text/swriter/01/05180000.xhp#hd_id3147341.11
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05060200.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05190000.xhp#tit
 msgid  "Split Table"
@@ -11808,8 +11936,9 @@ msgid  "\<bookmark_value\>tables; splitting\</bookmark_value\>\<bookmark_value\>
 msgstr ""
 
 #: source/text/swriter/01/05190000.xhp#hd_id3153246.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05190000.xhp\" name=\"Split Table\"\>Split Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05190000.xhp#par_id3083450.2
 msgid  "\<ahelp hid=\".uno:SplitTable\"\>Splits the current table into two separate tables at the cursor position.\</ahelp\> You can also access this command by right-clicking in a table cell."
@@ -11864,8 +11993,9 @@ msgid  "\<bookmark_value\>tables; merging\</bookmark_value\>\<bookmark_value\>me
 msgstr ""
 
 #: source/text/swriter/01/05200000.xhp#hd_id3154652.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05200000.xhp\" name=\"Merge Table\"\>Merge Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/05200000.xhp#par_id3147401.2
 msgid  "\<ahelp hid=\".uno:MergeTable\"\>Combines two consecutive tables into a single table. The tables must be directly next to each other and not separated by an empty paragraph.\</ahelp\>"
@@ -11880,8 +12010,9 @@ msgid  "Styles"
 msgstr ""
 
 #: source/text/swriter/01/05990000.xhp#hd_id3149666.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/05990000.xhp\" name=\"Styles\"\>Styles\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06030000.xhp#tit
 msgid  "Hyphenation"
@@ -11992,8 +12123,9 @@ msgid  "Word Count"
 msgstr ""
 
 #: source/text/swriter/01/06040000.xhp#par_idN10542
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06040000.xhp\"\>Word Count\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06040000.xhp#par_idN10552
 msgid  "\<ahelp hid=\"FN_WORDCOUNT_DIALOG\"\>Counts the words and characters in the current selection and in the whole document.\</ahelp\>"
@@ -12068,8 +12200,9 @@ msgid  "Numbering"
 msgstr ""
 
 #: source/text/swriter/01/06060100.xhp#hd_id3151387.34
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06060100.xhp\" name=\"Numbering\"\>Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06060100.xhp#par_id3155620.35
 msgid  "Specifies the number format and the hierarchy for chapter numbering in the current document."
@@ -12224,8 +12357,9 @@ msgid  "Footnotes/Endnotes Settings"
 msgstr ""
 
 #: source/text/swriter/01/06080000.xhp#hd_id3153004.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06080000.xhp\" name=\"Footnote options\"\>Footnotes/Endnotes Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06080000.xhp#par_id3149882.2
 msgid  "\<variable id=\"fnoten\"\>\<ahelp hid=\".uno:FootnoteDialog\"\>Specifies the display settings for footnotes and endnotes.\</ahelp\>\</variable\>"
@@ -12236,8 +12370,9 @@ msgid  "Footnotes"
 msgstr ""
 
 #: source/text/swriter/01/06080100.xhp#hd_id3154705.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06080100.xhp\" name=\"Footnotes\"\>Footnotes\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06080100.xhp#par_id3149500.2
 msgid  "\<ahelp hid=\"HID_FOOTNOTE_OPTIONS\"\>Specifies the formatting for footnotes and endnotes.\</ahelp\>"
@@ -12484,8 +12619,9 @@ msgid  "Endnotes"
 msgstr ""
 
 #: source/text/swriter/01/06080200.xhp#hd_id3156321.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06080200.xhp\" name=\"Endnotes\"\>Endnotes\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06080200.xhp#par_id3151182.2
 msgid  "\<ahelp hid=\"HID_ENDNOTE_OPTIONS\"\>Specifies the formatting for endnotes.\</ahelp\> The type of endnote numbering and the Styles to apply are the options available."
@@ -12836,8 +12972,9 @@ msgid  "Calculate"
 msgstr ""
 
 #: source/text/swriter/01/06110000.xhp#hd_id3154505.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06110000.xhp\" name=\"Calculate\"\>Calculate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06110000.xhp#par_id3150021.2
 msgid  "\<ahelp hid=\".uno:CalculateSel\" visibility=\"visible\"\>Calculates the selected formula and copies the result to the clipboard.\</ahelp\>"
@@ -12848,8 +12985,9 @@ msgid  "Page Formatting"
 msgstr ""
 
 #: source/text/swriter/01/06120000.xhp#hd_id3155961.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06120000.xhp\" name=\"Page Formatting\"\>Page Formatting\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06120000.xhp#par_id3150249.2
 msgid  "\<ahelp visibility=\"visible\" hid=\".uno:Repaginate\"\>Updates the page formats in the document and recalculates the total number of pages that is displayed on the \<emph\>Status Bar\</emph\>.\</ahelp\>"
@@ -12896,8 +13034,9 @@ msgid  "All Indexes and Tables"
 msgstr ""
 
 #: source/text/swriter/01/06170000.xhp#hd_id3149875.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06170000.xhp\" name=\"All Indexes and Tables\"\>All Indexes and Tables\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06170000.xhp#par_id3150211.2
 msgid  "\<ahelp hid=\".uno:UpdateAllIndexes\" visibility=\"visible\"\>Update all indexes and tables of contents in the current document. You do not need to place the cursor in an index or table before you use this command.\</ahelp\>"
@@ -13040,8 +13179,9 @@ msgid  "Update All"
 msgstr ""
 
 #: source/text/swriter/01/06190000.xhp#hd_id3145824.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06190000.xhp\" name=\"Update All\"\>Update All\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06190000.xhp#par_id3153004.2
 msgid  "\<ahelp hid=\".uno:UpdateAll\" visibility=\"visible\"\>Updates all links, fields, indexes, tables of contents, and page formatting in the current document.\</ahelp\>"
@@ -13052,8 +13192,9 @@ msgid  "Fields"
 msgstr ""
 
 #: source/text/swriter/01/06200000.xhp#hd_id3083281.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06200000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06200000.xhp#par_id3154656.2
 msgid  "\<ahelp hid=\".uno:UpdateFields\" visibility=\"visible\"\>Updates the contents of all fields in the current document.\</ahelp\>"
@@ -13064,8 +13205,9 @@ msgid  "Links"
 msgstr ""
 
 #: source/text/swriter/01/06210000.xhp#hd_id3155962.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06210000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06210000.xhp#par_id3149499.2
 msgid  "\<ahelp hid=\".uno:UpdateAllLinks\" visibility=\"visible\"\>Updates the links in the current document.\</ahelp\>"
@@ -13076,8 +13218,9 @@ msgid  "All Charts"
 msgstr ""
 
 #: source/text/swriter/01/06220000.xhp#hd_id3155959.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06220000.xhp\" name=\"All Charts\"\>All Charts\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06220000.xhp#par_id3150344.2
 msgid  "\<ahelp hid=\".uno:UpdateCharts\" visibility=\"visible\"\>Updates the charts in the current document.\</ahelp\>"
@@ -13092,8 +13235,9 @@ msgid  "\<bookmark_value\>updating; text documents\</bookmark_value\>"
 msgstr ""
 
 #: source/text/swriter/01/06990000.xhp#hd_id3154704.1
+#, fuzzy
 msgid  "\<link href=\"text/swriter/01/06990000.xhp\" name=\"Update\"\>Update\</link\>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator\">ناوشگر</link>"
 
 #: source/text/swriter/01/06990000.xhp#par_id3149501.2
 msgid  "Updates items in the current document that have dynamic contents, so as fields and indexes."
@@ -14510,7 +14654,6 @@ msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Bullets and Numbering
 msgstr ""
 
 #: source/text/swriter/02/03210000.xhp#tit
-#, fuzzy
 msgid  "Link"
 msgstr "پیوند"
 
@@ -14919,7 +15062,6 @@ msgid  "Zoom Out"
 msgstr ""
 
 #: source/text/swriter/02/10030000.xhp#tit
-#, fuzzy
 msgid  "Preview Zoom"
 msgstr "پیش‌نمایش زوم"
 
@@ -19413,7 +19555,6 @@ msgid  "To change the color of field shadings, choose \<emph\>\<switchinline sel
 msgstr ""
 
 #: source/text/swriter/guide/fields.xhp#hd_id3153166.8
-#, fuzzy
 msgid  "Field Properties"
 msgstr "ویژگی‌های فیلد"
 
@@ -19426,12 +19567,10 @@ msgid  "The following field types execute an action when you click the field:"
 msgstr ""
 
 #: source/text/swriter/guide/fields.xhp#par_id3155582.183
-#, fuzzy
 msgid  "Field Type"
 msgstr "نوع فیلد"
 
 #: source/text/swriter/guide/fields.xhp#par_id3147760.184
-#, fuzzy
 msgid  "Property"
 msgstr "ویژگی"
 
@@ -25944,7 +26083,6 @@ msgid  "The following section lists the help topics available for menus and dial
 msgstr ""
 
 #: source/text/swriter/main0101.xhp#tit
-#, fuzzy
 msgid  "File"
 msgstr "پرونده"
 
@@ -26137,7 +26275,6 @@ msgid  "\<link href=\"text/swriter/01/04190000.xhp\" name=\"File\"\>File\</link\
 msgstr ""
 
 #: source/text/swriter/main0105.xhp#tit
-#, fuzzy
 msgid  "Format"
 msgstr "قالب"
 
@@ -26218,7 +26355,6 @@ msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customiz
 msgstr ""
 
 #: source/text/swriter/main0107.xhp#tit
-#, fuzzy
 msgid  "Window"
 msgstr "پنجره"
 
@@ -26327,7 +26463,6 @@ msgid  "Selects the current row."
 msgstr ""
 
 #: source/text/swriter/main0110.xhp#par_idN10635
-#, fuzzy
 msgid  "Cell"
 msgstr "خانه"
 

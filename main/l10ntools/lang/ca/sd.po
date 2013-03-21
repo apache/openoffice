@@ -217,7 +217,7 @@ msgstr "Mou les diapositives"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "No hi ha prou memòria!\nL'acció no es pot executar."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1733,7 +1733,7 @@ msgstr "Introduïu un nom nou per a l'extrem de la fletxa:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "El nom que heu introduït ja existeix. \nIntroduïu-ne un altre."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1805,7 +1805,7 @@ msgstr "Insereix diapositives"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Esteu segur que voleu suprimir el nivell \"$\"?\nNota: s'eliminaran tots els objectes d'aquest nivell."
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "Insereix el marc del text"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "No es pot executar la funció \namb els objectes seleccionats."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "No s'ha pogut carregar el fitxer."
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "El format de les pàgines noves s'ajustarà. \nVoleu també ajustar els objectes?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "~Edita"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Aquesta acció suprimeix la llista d'accions que es poden desfer.\nEls canvis fets al document amb anterioritat seguiran sent vàlids,\nperò no es podran desfer. Voleu continuar i\naixí assignar el disseny de diapositiva nou?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "No s'ha pogut establir el format del document a la impressora."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Aquest gràfic està enllaçat al document. \nVoleu suprimir l'enllaç per poder editar el gràfic?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (Esquema)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "L'escala introduïda no és vàlida.\nVoleu introduir-ne una de nova?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2301,7 +2301,7 @@ msgstr "No s'han pogut desagrupar tots els dibuixos."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "Ja existeix un disseny amb aquest nom.\nVoleu sobreescriure'l?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "Filtre gràfic"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "El fitxer %\nno és un fitxer de so vàlid."
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -5285,346 +5285,277 @@ msgid  "~End Show"
 msgstr "~Finalitza la presentació"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.String.Text
-#, fuzzy
 msgid  "Drag and Drop Pages"
 msgstr "Arrossega i deixa anar les pàgines"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_SLIDES.String.Text
-#, fuzzy
 msgid  "Drag and Drop Slides"
 msgstr "Arrossega i deixa anar les diapositives"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND1.String.Text
-#, fuzzy
 msgid  "Start Slide Show"
 msgstr "Inicia la presentació"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_A.String.Text
-#, fuzzy
 msgid  "Hide Slide"
 msgstr "Amaga la diapositiva"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_B.String.Text
-#, fuzzy
 msgid  "Show Slide"
 msgstr "Mostra la diapositiva"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND3.String.Text
-#, fuzzy
 msgid  "Duplicate Slide"
 msgstr "Duplica la diapositiva"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Disseny de taula"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
-#, fuzzy
 msgid  "Show"
 msgstr "Mostra"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Header Row"
 msgstr "Fila de capçalera"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Total Row"
 msgstr "Fila de total"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Rows"
 msgstr "Files ratllades"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "Primera columna"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "Última columna"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Columns"
 msgstr "Columnes ratllades"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "Estils"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "Disseny de taula"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %s"
 msgstr "%PRODUCTNAME %s"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.String.Text
-#, fuzzy
 msgid  "Print content"
 msgstr "Contingut de la impressió"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.String.Text
-#, fuzzy
 msgid  "Print"
 msgstr "Imprimeix"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "Document"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Slides"
 msgstr "Diapositives"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Handouts"
 msgstr "Prospectes"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Notes"
 msgstr "Notes"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "Esquema"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.String.Text
-#, fuzzy
 msgid  "Slides per page"
 msgstr "Diapositives per pàgina"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Per defecte"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item5.ItemList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item6.ItemList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item7.ItemList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.String.Text
-#, fuzzy
 msgid  "Order"
 msgstr "Ordre"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Left to right, then down"
 msgstr "D'esquerra a dreta, i avall"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Top to bottom, then right"
 msgstr "De dalt a baix, i a la dreta"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.String.Text
-#, fuzzy
 msgid  "~Contents"
 msgstr "~Contingut"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "~Slide name"
 msgstr "Nom de la diapo~sitiva"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "P~age name"
 msgstr "Nom de pàgin~a"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.String.Text
-#, fuzzy
 msgid  "~Date and time"
 msgstr "~Data i hora"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden pages"
 msgstr "Pàgines amagades"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.String.Text
-#, fuzzy
 msgid  "Output options"
 msgstr "Opcions de sortida"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.String.Text
-#, fuzzy
 msgid  "Color"
 msgstr "Color"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original colors"
 msgstr "Colors originals"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Grayscale"
 msgstr "Escala de grisos"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Black & white"
 msgstr "Blanc i negre"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "~Mida"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "Mida original"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "Ajusta a la pàgina imprimible"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "Distribueix en diversos fulls de paper"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Tile sheet of paper with repeated slides"
 msgstr "Crea un mosaic al full de paper amb diapositives repetides"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "Mida original"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "Ajusta a la pàgina imprimible"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "Distribueix en diversos fulls de paper"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item4.ItemList.item
-#, fuzzy
 msgid  "Tile sheet of paper with repeated pages"
 msgstr "Crea un mosaic al full de paper amb pàgines repetides"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE.String.Text
-#, fuzzy
 msgid  "Brochure"
 msgstr "Fullet"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_SIDES.String.Text
-#, fuzzy
 msgid  "Page sides"
 msgstr "Cares de la pàgina"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE.String.Text
-#, fuzzy
 msgid  "Include"
 msgstr "Inclou"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item1.ItemList.item
-#, fuzzy
 msgid  "All pages"
 msgstr "Totes les pàgines"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item2.ItemList.item
-#, fuzzy
 msgid  "Front sides / right pages"
 msgstr "Anversos / pàgines de la dreta"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item3.ItemList.item
-#, fuzzy
 msgid  "Back sides / left pages"
 msgstr "Reversos / pàgines de l'esquerra"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP.String.Text
-#, fuzzy
 msgid  "Paper tray"
 msgstr "Safata de paper"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY.String.Text
-#, fuzzy
 msgid  "~Use only paper tray from printer preferences"
 msgstr "~Utilitza només la safata de paper de les preferències de la impressora"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE.String.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "Àrea d'impressió"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
-#, fuzzy
 msgid  "~All slides"
 msgstr "~Totes les diapositives"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
-#, fuzzy
 msgid  "~Slides"
 msgstr "Diapo~sitives"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
-#, fuzzy
 msgid  "Se~lection"
 msgstr "Se~lecció"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
-#, fuzzy
 msgid  "~All pages"
 msgstr "~Totes les pàgines"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
-#, fuzzy
 msgid  "Pa~ges"
 msgstr "Pà~gines"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
-#, fuzzy
 msgid  "Se~lection"
 msgstr "Se~lecció"

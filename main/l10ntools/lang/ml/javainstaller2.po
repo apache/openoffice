@@ -153,11 +153,11 @@ msgstr "പുതിയ ഡയറക്ടറി ഉണ്ടാക്കുക"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "'${DIR}'നിലവിലില്ല,\nനിര്‍മ്മിക്കണമോ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "'${DIR}'നിലവിലില്ല,\nനിര്‍മ്മിക്കണമോ അതോ മറ്റൊരെണ്ണം തെരഞ്ഞെടുക്കണമോ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -261,7 +261,7 @@ msgstr "തുടരുന്നതിനായി 'അടുത്തതു്'
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "കുറിപ്പു്: റൂട്ടിനുള്ള സര്‍‌വ്വാധികാരങ്ങളും ഉള്‍പ്പെടുത്തതാതെയുള്ള ഇന്‍സ്റ്റലേഷന്‍ കാരണം പൂര്‍ണ്ണമായ ഉപയോഗം ലഭ്യമാകുകയില്ല. (ജാവാ റണ്‍ടൈം എന്‍വയോണ്മെന്റ് (JRE) ഇന്‍സ്റ്റോള്‍ ചെയ്യപ്പെടില്ല, ആയതിനാല്‍ സിസ്റ്റവുമായുള്ള സമന്വയം അസാധ്യം).\nറൂട്ടിനുള്ള സര്‍‌വ്വാധികാരങ്ങളും ലഭ്യമാക്കണമെങ്കില്‍ 'റദ്ദാക്കുക' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -433,7 +433,7 @@ msgstr "വിശദമായി പരിശോധന ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "ഡേറ്റാബെയിസ് വിശദമായി പരിശോധിക്കുന്നു.\nഒരു നിമിഷം ......."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

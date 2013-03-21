@@ -237,7 +237,7 @@ msgstr "फंक्शन पट्टी "
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "विशेश संरूपण च इक गल्ती घटत होई ऐ.\n किरपा करियै अपने प्रशासक कन्नै रावता करो  . "
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "सिस्टम शुरू  होने दरान %PRODUCTNAME 
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "systray तुर्त-शुरूकर्ता गी असमर्थ करो"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -509,11 +509,11 @@ msgstr "~ %PRODUCTNAME %MODULENAME  मदद दा प्रदर्शन �
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "चुनी दी पूनी $(FILTER) प्रस्थापत नेईं होई दी ऐ.\n क्या तुस हूनै एह् करना चाह्‌गेओ  ? "
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "चुनी दी पूनी $(FILTER) सरूप च शामल नेईं ऐ.\n आडरें बारै जानकारी तुस साढ़े उद्‌गम सफे पर तुप्पी सकदे ओ.  "
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "चेतावनी"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "थुआढ़े दस्तावेज च  पारदर्शक चीजां न.\n इस कन्नै खास छापकें पर छपाई समां मता लग्गी सकदा ऐ .\n क्या पारदर्शकता पक्ख घटाया जाना चाहिदा  ? "
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -1441,7 +1441,7 @@ msgstr "क्या तुस सच्चें  $1 शैली म्हे�
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "तुस इक इस्तेमाल शैली म्हेसा करदे ओ!\n "
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "\"$(DOC)\" दस्तावेज च तरमीम होई गेई ऐ.\n क्या तुस तब्दीलियें गी बचाना चांह्‌दे ओ   ?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "सच्चे "
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "\"$1\" सच्चे दी नकल करने च गल्ती . \n इस नांऽ  सनैं इक सच्चा पैह्‌लें शा मजूद ऐ  . "
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "चुनी दी फाइल च इक गल्त रूप-र�
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "इस दस्तावेज च नेही रूप-रचना जां विशे- समग्री होई सकदी ऐ,जेह्‌ड़ी    %FORMATNAME फाइल रूप-रचना च नेईं  बची सकदी./n/n क्या तुस  फ्ही बी दस्तावेज इस रूप-रचना च बचाना चांह‌दे ओ  ? /n/n-वर्तमान फाइल रूप-रचना रक्खने लेई  'हां ' पर क्लिक करो./n %PRODUCTNAME ताजातरीन फाइल रूप-रचना बरतने लेई   'नेईं' पर क्लिक करो ते पक्का करी लैओ जे  सब रूप-रचना ते  विशे- समग्री स्हेई चाल्ली बचे दे न. "
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "फाइल रूप-रचना: "
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "इस दस्तावेज च होंदा ऐ:\n\n "
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "कोई बिलानिर्देश छापक नेईं लब्भा.\n किरपा करियै छापक तालो ते परतियै कोशश करो. "
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "छापक शुरू नेईं सकेआ.\n किरपा करियै अपना छापक संरूपण जाचो. "
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "एह्  दस्तावेज $1 छापक लेई संरूपत ऐ.  निर्दिश्ट छापक उपलब्ध नेईं.\n क्या तुस मानक छापक $2 बरतना चांह्‌दे ओ ? "
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr "(सिर्फ पढ़न जोग) "
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "सफा नाप ते दिशा-विन्यास च तरमीम होई गेई ऐ.  \n क्या तुस क्रियाशील दस्तावेज  च नमियां सैट्टिंगां बचाना चाह्‌गेओ   ? "
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "सफा नाप   च तरमीम होई गेई ऐ.  \n क्या  क्रियाशील दस्तावेज  च नमियां सैट्टिंगां बचानियां चाहि दियां   ?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "सफा नाप ते दिशा-विन्यास च तरमीम होई गेई ऐ.  \n क्या तुस क्रियाशील दस्तावेज  च नमियां सैट्टिंगां बचाना चाह्‌गेओ   ? "
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

@@ -61,11 +61,11 @@ msgstr "Nun hai testu"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Escribi la contraseña p'abrir el ficheru: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Enxerta la contraseña p'abrir el ficheru:  \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "Documentu n'usu"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "La edición del ficheru del documentu '$(ARG1)' bloquióse por:\n\n$(ARG2)\n\nTenta de salvar el documentu más sero o salva una copia d'esti documentu.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "Mensaxe del sirvidor:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "Introduz el nome d'usuario y la contraseña pa: \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Introduz el nome d'usuario y la contraseña pa: \n\"%2\" en %"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "~Unviar"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "El servidor '${HOST}' intenta unviar una o delles Cookies.\nLes Cookies contienen información referente a ciertes clases d'URLs. Si %PRODUCTNAME pidi más sero un documentu con una URL que correspuende a la triba d'una Cookie yá recibida, %PRODUCTNAME unviará esta información al sirvidor. Esto permite a los sirvidores reconocer l'estáu d'una aplicación WWW, por ex. al comprar en llinia.\n\nLes siguientes Cookies van llantase:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Dominiu: ${DOMAIN}, Camín: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Receición d'un cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME grabó nel servidor '${HOST}' delles cookies que s'unviarán cuando pidas el documentu${PATH}.\nLes Cookies contienen información que cinca de delles clases d'URL y unvíense por dellos servidores pa %PRODUCTNAME, onde se graben cuando s'accede a dellos documentos. Si %PRODUCTNAME carga un documentu que, d'acuerdu cola URL, correspuende a la triba d'una de les cookies recibíes enantes, %PRODUCTNAME unviará esa información al sirvidor. Eso permite que'l sirvidor controle l'estáu d'una aplicación WWW, por ex., siempre que se faigan compres na rede:\n\nTiene qu'emplegase les siguientes cookies:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Dominiu: ${DOMAIN}, Camín: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Documentu n'usu"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "La edición del ficheru '$(ARG1)' bloqueóse por:\n\n$(ARG2)\n\nAbri'l documentu namái pa llectura o abri una copia del documentu pa la edición.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "El documentu modificóse por otros"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "El ficheru modificóse dempués de que lo abriera pa la edición en %PRODUCTNAME. Guardar la versión del documentu afarará los cambeos fechos por otros.\n\n¿Daveres quies guardar la versión igualmente?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "Hai disponible un anovamientu pa %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Esti documentu creóse por una versión más recién de %PRODUCTNAME. Puede contener carauterístiques que nun tengan sofitu na versión que tienes anguaño.\n\nCalca en 'Anovar agora...' pa executar l'anovamientu en llinia y tener la cabera versión de %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "Avisu: Si escaeces la contraseña maestra, nun podrás acceder a denguna
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "La edición del ficheru del documentu '$(ARG1)' bloquiástela n'otru sistema dende'l $(ARG2)\n\nAbri'l documentu namái pa llectura, o inora'l to propiu bloquéu y abri'l documentu pa edición.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "~Abrir"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "La edición del ficheru del documentu '$(ARG1)' bloquióse por tí n'otru sistema dende'l $(ARG2)\n\nZarra'l documentu nel otru sistema y reintenta guardar o inora'l to propiu bloquéu y guarda'l documentu actual.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

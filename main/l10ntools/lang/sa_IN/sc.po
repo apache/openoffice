@@ -145,7 +145,7 @@ msgstr "स्तंभ-क्षेत्राणि"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "पंक्तिः\nक्षेत्राणि"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2269,7 +2269,7 @@ msgstr "विच्छेदय"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "किं एषा प्रविष्टिः\n  #\n  लोपनीया अस्ति ?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2713,7 +2713,7 @@ msgstr "सर्वाणि तिरोहय"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "कोष्ठिकारक्षणं तदैव प्रभावी अस्ति, यस्यानन्तरं वर्तमान फलकं रक्षितः अस्ति। \n\n'लेखपत्रस्य सुरक्षा कुरू' चिनुत 'उपकरणाः' आज्ञावलीतः, 'फलकं' निर्दिष्टं कुरू ।"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3233,7 +3233,7 @@ msgstr "निष्पादने न संचालनानि"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "प्रसरस्तंभः शीर्षलेखान् न दधाति । \nकिं भवान् प्रथमापंक्तिं शीर्षलेखरूपेण उपयोजितुम् इच्छति ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3297,7 +3297,7 @@ msgstr "अन्वेषिताकुञ्चिका न मिलित�
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "लक्ष्यान्वेषणम् सफलम् । \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3309,11 +3309,11 @@ msgstr ") वर्तमानकोष्ठिकायाम्  ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "लक्ष्यान्वेषणं न सफलम् । \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "कोऽपि निश्चितमानम् न मिलितम् । \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3781,7 +3781,7 @@ msgstr "बहुविधाः संचालनानि"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "भवता एकं अवैधनाम अभिलिखितः । \nस्वतः संघटना न निर्मातुम् अशक्यत । \nएकं पृथक् नाम्नः प्रयोगस्य कृते पुनः प्रयासं कुरू ।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 msgid  "Range"
@@ -3813,7 +3813,7 @@ msgstr "मुद्रय"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "एका स्वतःसंघटनासंयोजनस्य कृते, \n न्यूनतमम् एकासारणीप्रसरम् \n 3x3 कोष्ठिकाम् अवश्यमेव चिनुयात् ।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 msgid  "(nested)"
@@ -3913,7 +3913,7 @@ msgstr "प्रतिवेदनम्1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "वर्तनीपरीक्षणस्य कृते उपलब्धः नास्ति \nभवान् स्वसंस्थापनस्य परीक्षणं कुरू \nयदि आवश्यकमस्ति चेत् इच्छिताभाषां संस्थापय"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 msgid  "Thesaurus can only be used in text cells!"
@@ -3925,7 +3925,7 @@ msgstr "किं भवान् वर्तनीपरीक्षणं व
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "विश्वकोषस्य कृते उपलब्धः नास्ति । \nकृपया स्वसंस्थापनस्य परीक्षणं कुरू \nयदि आवश्यकमस्ति चेत् इच्छित-भाषां संस्थापय"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 msgid  "The spellcheck of this sheet has been completed."
@@ -4197,11 +4197,11 @@ msgstr "अधि"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "एषा संचिका अन्यासंचिकाभिः सह संपर्कः दधाति । \n   किं ताः अद्यतनं भवेत् ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "एषा संचिका पृच्छां दधाति । एतान् प्रश्नान् परिणामः सञ्चितः न आसीत्  । \n  किं भवान् एतान् प्रश्नान् आवर्तनं इच्छति ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 msgid  "Too many conditions"
@@ -4209,7 +4209,7 @@ msgstr "वहुपरिस्थितयः"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "पूर्णा-कोष्ठिकान् स्थानान्तरं न शक्यते \n  अस्य फलकात् बहिः ।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 msgid  "The table could not be inserted."
@@ -4229,7 +4229,7 @@ msgstr "अत्र समावेशनस्य कृते फलके �
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "चयनितप्रसरात् श्लेष्यसंग्रहस्य सामग्रीः अधिकाः । \n  किं भवान् कथंचन एताः समावेशितुं इच्छति ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 msgid  "No references found."
@@ -4273,7 +4273,7 @@ msgstr "तुलय #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "अवैधकोष्ठिकायाः अधिकतमसंख्या वर्धितः । \n  सर्वा अवैधकोष्ठिकाः न चिह्निताः ।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 msgid  "Delete contents"
@@ -4377,7 +4377,7 @@ msgstr "लेखाङ्कनात् निर्गच्छ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "एषा क्रिया परिवर्तित-लेखाङ्कनपक्षस्तात् निर्गमिष्यति । \nपरिवर्तनस्य विषये कापि सूचना विनिष्टा भविष्यति । \n\nपरिवर्तन रिकार्डिंग मोड से निकलें?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 msgid  "The document can not be closed while a link is being updated."
@@ -4393,7 +4393,7 @@ msgstr "क्रमविन्यास-सूत्राणि  %1 R x %2 C"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "एतद् लेखपत्रं मॉक्रो-व्यापार-आह्वानं दधाति । \nकिं भवान् तं चालितुं इच्छति ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 msgid  "Hangul/Hanja Conversion"
@@ -4497,31 +4497,31 @@ msgstr "अन्यप्रयोक्तृभिः सञ्चितै�
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "संविभाजनप्रकारं सञ्चालयितुं स्प्रेड्शीट् सञ्चितं भवितव्यम्।\n\nअनुसन्तनोतुमिच्छसि किम्?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "पूर्वमेव अपनीताः मेलनविरोधाः नष्टाः भविष्यन्ति। सञ्चितस्प्रेड्शीट् परिणामाः सञ्चिताः न भविष्यन्ति।\n\nअनुसन्तनोतुमिच्छसि किम्?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "स्प्रेड्शीट् संविभाजनप्रकारस्य निष्प्रकारेण संविभक्तस्प्रेड्शीट् इत्यस्य अन्यसर्वप्रयोक्तृभ्यः स्वेषां कार्यं मेलयितुं क्लेशः भवति।\n\nअनुसन्तनोतुमिच्छसि किम्?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "इदं स्प्रेड्शीट् इतः परं संविभक्तप्रकारे नास्ति।\n\nतव स्प्रेड्शीट् विभक्तसञ्चिकायां सञ्चय, तथा च, मानविकतया संविभक्तस्प्रेड्शीट् प्रति तव परिणामान् मेलय।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\n\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "प्रयोक्त्रा मेलनप्रगतिहेतोः संविभक्तस्प्रेड्शीट्सञ्चिका पिहिता : '%1'\n\nपिहितसञ्चिकायाः संविभाजनप्रकारं निष्प्रकारयितुं न शक्यते। पश्चात् पुनः यतस्व।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "प्रयोक्त्रा मेलनप्रगतिहेतोः संविभक्तस्प्रेड्शीट्सञ्चिका पिहिता : '%1'\n\nतव परिणामान् सञ्चयितुं पश्चात् पुनः यतस्व।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 msgid  "Unknown User"
@@ -4685,7 +4685,7 @@ msgstr "स्वतःसंघटनां लोपय"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "भवान् वास्तविकरूपेण # स्वतःसंघटनां लोपितुं इच्छति?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
 msgid  "~Close"
@@ -11493,7 +11493,7 @@ msgstr "अक्षरगणगुणाः"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "भवता एका दीर्घालेखा श्लैष्यसंग्रहे  सञ्चिता अस्ति  । \nकिं भवान् अन्य-अनुप्रयोगे श्लैष्यसंग्रहस्य सामग्रीं वर्तितुम् इच्छति ?"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -11561,7 +11561,7 @@ msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME गणना एकत्रुटिं प्रदत्त सूत्रे प्राप्ता । \n  किं भवान् अधः प्रस्तावितः सुधारं स्वीकर्तुम् इच्छति ?\n \n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -11605,7 +11605,7 @@ msgstr "चयनितानि फलकानि"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "भवान् कोष्ठिकायां लेखां श्लैष्यति या पूर्वतः लेखाः दधाति । \n किं भवान् वर्तमान लेखायाम् उपरि लेखितुम् इच्छति ?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"

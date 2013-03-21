@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "\"%2\" үшiн пайдаланушының атын және құпия кiлтiң %1-ге енгiзiңiз."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr " \"${HOST}\" серверi  бiр немесе бiрнеше Cookiе файлдарын сақтауға тырысады.\n \nПайдаланушы осы URL-ге кiргенде таңдаған параметрлер туралы ақпаратты бар файлдар. Егер келешекте сiздiң компьютерiңiзде сақтаған Cookie URL-дан алынған %PRODUCTNAME-те құжат құрастырылса, онда  %PRODUCTNAME  Cookie-ден ақпаратты осы серверге жiбередi. Сервер қосымша күйi және сiздiң баптауларыңыз (ол қолдануы мүмкiн, мысалы, Интернет арқылы сатып алынатын заттар) туралы ақпарат алады.\n\n Cookie-нiң келесi файлдары сақталынады:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
@@ -481,7 +481,7 @@ msgstr "Cookie файлдарын қабылдау"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME  Cookie файлдарын қайтадан серверге  ${PATH}құжаттың әр ашылу кезiнде '${HOST}' үшiн сақтайды.\n Егер келешекте  URL-дан алынған %PRODUCTNAME-те құжат ашылса, серверi сiздiң Cookie компьютерiңiзде сақталынса, онда %PRODUCTNAME осы серверге Cookie-ден ақпаратты жiбередi. Сондықтан, сервер қосымшаның күйi және сiздiң баптауларыңыз туралы (ол қолдануы мүмкiн, мысалы, Интернет арқылы заттарды сатып алынғанда).\n\n Cookie файлдары сақталынады:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"

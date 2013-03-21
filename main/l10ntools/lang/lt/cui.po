@@ -149,7 +149,7 @@ msgstr "Įrašyti klaviatūros sąranką"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.String.Text
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "Sąranka"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.String.Text
 msgid  "My Macros"
@@ -697,7 +697,7 @@ msgstr "Šalinti..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "Pastaba:\nNorint geriausios kokybės, piktogramos dydis turėtų būti 16x16 taškų. Kitokių piktogramų dydis bus automatiškai pakeistas."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -705,7 +705,7 @@ msgstr "„%PRODUCTNAME %PRODUCTVERSION“"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
-msgstr ""
+msgstr "Žemiau išvardintų failų nepavyko importuoti.\nNesuprastas failo formatas."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -717,7 +717,7 @@ msgstr "Ar tikrai šalinti paveikslą?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "Piktograma „%ICONNAME“ jau yra paveikslų sąraše.\nAr pakeisti esamą piktogramą?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1577,7 +1577,7 @@ msgstr "Patvirtinkite slaptažodį"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "Pastaba: Nustačius slaptažodį, dokumentą bus galima atverti tik su "
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FixedLine.Text
 msgid  "File sharing password"
@@ -1885,7 +1885,7 @@ msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
-msgstr ""
+msgstr "kalbos rašybos tikrinimas negalimas\nPatikrinkite sąranką ir įdiekite reikiamą kalbą\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -2945,7 +2945,7 @@ msgstr "Tipas"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
 msgid  "~And"
-msgstr ""
+msgstr "Ir"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 msgid  "~Or"
@@ -3057,7 +3057,7 @@ msgstr "Makrokomandų saugumas..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "Išjungus slaptažodžių įrašymo funkciją bus pašalintas įrašytų slaptažodžių sąrašas ir panaikintas pagrindinis slaptažodis.\n\nAr pašalinti slaptažodžių sąrašą ir panaikinti pagrindinį slaptažodį?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
@@ -3065,7 +3065,7 @@ msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Pastaba: išjungę Javą,\nišjungsite ir Javascript.\n\nAr vis tiek norite išjungti Javą?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3613,15 +3613,15 @@ msgstr "Kurti duomenų bazės saitą"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\\n$file$\\ndoes not exist."
-msgstr ""
+msgstr "Failo\n$file$\nnėra."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\\n$file$\\ndoes not exist in the local file system."
-msgstr ""
+msgstr "Failo\n$file$\nnėra lokalioje failų sistemoje."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
-msgstr ""
+msgstr "Vardas „$file$“ jau naudojamas kitai duomenų bazei.\nĮveskite kitą vardą."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -4168,122 +4168,98 @@ msgid  "Enable systray Quickstarter"
 msgstr "Įjungti sparčiąją paleistį"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TabPage.Text
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FixedLine.Text
-#, fuzzy
 msgid  "Java options"
 msgstr "Java parinktys"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.CB_JAVA_ENABLE.CheckBox.Text
-#, fuzzy
 msgid  "~Use a Java runtime environment"
 msgstr "~Naudoti Java terpę"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FT_JAVA_FOUND.FixedText.Text
-#, fuzzy
 msgid  "~Java runtime environments (JRE) already installed:"
 msgstr "~Įdiegtos Java terpės (JRE):"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~Pridėti..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_PARAMETER.PushButton.Text
-#, fuzzy
 msgid  "~Parameters..."
 msgstr "~Parametrai"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PushButton.Text
-#, fuzzy
 msgid  "~Class Path..."
 msgstr "~Klasės adresas..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.String.Text
-#, fuzzy
 msgid  "Location: "
 msgstr "Vieta: "
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.String.Text
-#, fuzzy
 msgid  "with accessibility support"
 msgstr "galima pritaikyti neįgaliesiems"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ADDDLGTEXT.String.Text
-#, fuzzy
 msgid  "Select a Java Runtime Environment"
 msgstr "Pasirinkite Java terpę"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VENDOR.String.Text
-#, fuzzy
 msgid  "Vendor"
 msgstr "Kūrėjas"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VERSION.String.Text
-#, fuzzy
 msgid  "Version"
 msgstr "Versija"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_FEATURES.String.Text
-#, fuzzy
 msgid  "Features"
 msgstr "Galimybės"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.ModalDialog.Text
-#, fuzzy
 msgid  "Java Start Parameters"
 msgstr "Java pradžios parametrai"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_PARAMETER.FixedText.Text
-#, fuzzy
 msgid  "Java start ~parameter"
 msgstr "Java pradžios ~parametras"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_ASSIGN.PushButton.Text
-#, fuzzy
 msgid  "~Assign"
 msgstr "~Priskirti"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_ASSIGNED.FixedText.Text
-#, fuzzy
 msgid  "Assig~ned start parameters"
 msgstr "P~riskirti pradžios parametrai"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-#, fuzzy
 msgid  "For example: -Dmyprop=c:\\program files\\java"
 msgstr "Pavyzdys: -Dmyprop=c:\\program files\\java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~Pašalinti"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.ModalDialog.Text
-#, fuzzy
 msgid  "Class Path"
 msgstr "Klasės adresas"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FixedText.Text
-#, fuzzy
 msgid  "A~ssigned folders and archives"
 msgstr "Pri~skirti aplankai ir pakai"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDARCHIVE.PushButton.Text
-#, fuzzy
 msgid  "~Add Archive..."
 msgstr "~Pridėti paką..."
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDPATH.PushButton.Text
-#, fuzzy
 msgid  "Add ~Folder"
 msgstr "Pridėti ~aplanką"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_REMOVE_PATH.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~Pašalinti"
 
@@ -4304,57 +4280,46 @@ msgid  "You have to restart %PRODUCTNAME so the new or modified values can take 
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
-#, fuzzy
 msgid  "Connection pool"
 msgstr "Ryšio kaupimas"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
-#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "Ryšio kaupimas leistas"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
-#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "„%PRODUCTNAME“ žinomos tvarkyklės"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
-#, fuzzy
 msgid  "Current driver:"
 msgstr "Dabartinė tvarkyklė:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
-#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "Aktyvinti kaupą šiai tvarkyklei"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
-#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "Laiko limitas (sek.)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
-#, fuzzy
 msgid  "Driver name"
 msgstr "Tvarkyklės pavadinimas"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
-#, fuzzy
 msgid  "Pool"
 msgstr "Kaupas"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
-#, fuzzy
 msgid  "Timeout"
 msgstr "Laiko limitas"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Taip"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Ne"
 
@@ -4499,60 +4464,51 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "Nenaudojant ODF 1.2 išplėstinio formato galima prarasti informaciją."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr "Nustačius „%1“ numatytuoju dokumentų formatu, galimi informacijos praradimai.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Improvement Program"
 msgstr "„%PRODUCTNAME“ tobulinimo programa"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_IMPROVE.FixedLine.Text
-#, fuzzy
 msgid  "Improvement Program"
 msgstr "Tobulinimo programa"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "Kviečiame prisijungti prie „%PRODUCTNAME“ tobulinimo programos, kad „%PRODUCTNAME“ kokybė būtų dar geresnė.\n\nJei sutiksite dalyvauti, programa rinks duomenis apie „%PRODUCTNAME“ naudojimą. Tokie duomenys reikalingi įvairiems naudojimo atvejams nustatyti.\n\n„%PRODUCTNAME“ tobulinimo programa nerinks jokių asmeninių duomenų ar informacijos apie dokumentų turinį."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
-#, fuzzy
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
 msgstr "~Taip, norėčiau dalyvauti „%PRODUCTNAME“ tobulinimo programoje"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
-#, fuzzy
 msgid  "~No, I do not wish to participate"
 msgstr "~Ne, dalyvauti nenoriu"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_DATA.FixedLine.Text
-#, fuzzy
 msgid  "Tracked Data"
 msgstr "Įrašomi duomenys"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_REPORTS.FixedText.Text
-#, fuzzy
 msgid  "Number of reports sent:"
 msgstr "Išsiųstų ataskaitų skaičius:"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_ACTIONS.FixedText.Text
-#, fuzzy
 msgid  "Number of tracked actions:"
 msgstr "Įrašytų veiksmų skaičius:"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.PB_SHOWDATA.PushButton.Text
-#, fuzzy
 msgid  "~Show Data"
 msgstr "~Rodyti duomenis"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_INFO.String.Text
-#, fuzzy
 msgid  "Help Optimize the Quality of %PRODUCTNAME"
 msgstr "Padėkite gerinti „%PRODUCTNAME“ kokybę"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_MOREINFO.String.Text
-#, fuzzy
 msgid  "More Information"
 msgstr "Daugiau informacijos"
 
@@ -4597,27 +4553,22 @@ msgid  "User name"
 msgstr "Prisijungimo vardas"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TabPage.Text
-#, fuzzy
 msgid  "Default Colors"
 msgstr "Numatytosios spalvos"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FixedLine.Text
-#, fuzzy
 msgid  "Chart colors"
 msgstr "Diagramos spalvos"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_COLOR_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Color table"
 msgstr "Spalvų lentelė"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.PB_RESET_TO_DEFAULT.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Numatyta"
 
 #: source/options/optchart.src#RID_SVXSTR_DIAGRAM_ROW.String.Text
-#, fuzzy
 msgid  "Data Series $(ROW)"
 msgstr "Duomenų seka $(ROW)"
 
@@ -4771,412 +4722,330 @@ msgid  "Writing aids"
 msgstr "Rašymo pagalba"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FixedLine.Text
-#, fuzzy
 msgid  "Miscellaneous options"
 msgstr "Kitos parinktys"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CheckBox.Text
-#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
 msgstr "~Pagalbinių technologinių priemonių pripažinimas (programą reikia paleisti iš naujo)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CheckBox.Text
-#, fuzzy
 msgid  "Use te~xt selection cursor in read-only text documents"
 msgstr "Naudoti ~teksto žymeklį tik skaitymui skirtuose dokumentuose"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
-#, fuzzy
 msgid  "Allow animated ~graphics"
 msgstr "Leisti animuotus ~paveikslus"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CheckBox.Text
-#, fuzzy
 msgid  "Allow animated ~text"
 msgstr "Leisti animuotą ~tekstą"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CheckBox.Text
-#, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~Paaiškinimai paslepiami po "
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "sekundžių"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options for high contrast appearance"
 msgstr "Didelio kontrasto parinktys"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
-#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
 msgstr "Automatiškai a~tpažinti operacinės sistemos didelio kontrasto veikseną"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CheckBox.Text
-#, fuzzy
 msgid  "Use automatic font ~color for screen display"
 msgstr "Ekrano vaizdui naudoti automatinę šrifto ~spalvą"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CheckBox.Text
-#, fuzzy
 msgid  "~Use system colors for page previews"
 msgstr "~Puslapio peržiūrai naudoti sistemos spalvas"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_HELP.FixedLine.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Žinynas"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CheckBox.Text
-#, fuzzy
 msgid  "~Tips"
 msgstr "~Paaiškinimai"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_EXTHELP.CheckBox.Text
-#, fuzzy
 msgid  "~Extended tips"
 msgstr "~Išplėstiniai paaiškinimai"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_HELPAGENT.CheckBox.Text
-#, fuzzy
 msgid  "~Help Agent"
 msgstr "~Pagelbiklis"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.PB_HELPAGENT_RESET.PushButton.Text
-#, fuzzy
 msgid  "~Reset Help Agent"
 msgstr "~Grąžinti pagelbiklio pradinę būseną"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FixedText.Text
-#, fuzzy
 msgid  "Help ~formatting"
 msgstr "Žinyno ~formatavimas"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item1.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Numatyta"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item2.StringList.item
-#, fuzzy
 msgid  "High Contrast #1"
 msgstr "Ryškus kontrastas #1"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item3.StringList.item
-#, fuzzy
 msgid  "High Contrast #2"
 msgstr "Ryškus kontrastas #2"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item4.StringList.item
-#, fuzzy
 msgid  "High Contrast Black"
 msgstr "Ryškus kontrastas (juodas)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item5.StringList.item
-#, fuzzy
 msgid  "High Contrast White"
 msgstr "Ryškus kontrastas (baltas)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_FILEDLG.FixedLine.Text
-#, fuzzy
 msgid  "Open/Save dialogs"
 msgstr "Failų atvėrimo ir įrašymo langai"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_FILEDLG.CheckBox.Text
-#, fuzzy
 msgid  "~Use %PRODUCTNAME dialogs"
 msgstr "~Naudoti „%PRODUCTNAME“ langus"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_DOCSTATUS.FixedLine.Text
-#, fuzzy
 msgid  "Document status"
 msgstr "Spausdinimo poveikis dokumento būsenai"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_DOCSTATUS.CheckBox.Text
-#, fuzzy
 msgid  "~Printing sets \"document modified\" status"
 msgstr "~Spausdinimą laikyti dokumento modifikacija"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
-#, fuzzy
 msgid  "Year (two digits)"
 msgstr "Metai be šimtmečių (du skaitmenys)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_INTERPRET.FixedText.Text
-#, fuzzy
 msgid  "Interpret as years between"
 msgstr "~gali būti rašomi nuo"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_TOYEAR.FixedText.Text
-#, fuzzy
 msgid  "and "
 msgstr "iki "
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_PRINTDLG.FixedLine.Text
-#, fuzzy
 msgid  "Print dialogs"
 msgstr "Spausdinimo dialogo langai"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_PRINTDLG.CheckBox.Text
-#, fuzzy
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "Nau~doti „%PRODUCTNAME“ langus"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FixedLine.Text
-#, fuzzy
 msgid  "User Interface"
 msgstr "Naudotojo sąsaja"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FixedText.Text
-#, fuzzy
 msgid  "Sc~aling"
 msgstr "~Mastelis"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_ICONSIZESTYLE.FixedText.Text
-#, fuzzy
 msgid  "Icon size and style"
 msgstr "Mygtukų dydis ir stilius"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.STR_ICONSIZE.String.Text
-#, fuzzy
 msgid  "Icon size"
 msgstr "Mygtukų dydis"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatinis"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
-#, fuzzy
 msgid  "Small"
 msgstr "Maži"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item3.StringList.item
-#, fuzzy
 msgid  "Large"
 msgstr "Dideli"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatinis"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item2.StringList.item
-#, fuzzy
 msgid  "Galaxy (default)"
 msgstr "Galaktinis (numatyta)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item3.StringList.item
-#, fuzzy
 msgid  "High Contrast"
 msgstr "Ryškus kontrastas"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item4.StringList.item
-#, fuzzy
 msgid  "Industrial"
 msgstr "Pramoninis"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item5.StringList.item
-#, fuzzy
 msgid  "Classic"
 msgstr "Klasikinis"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SYSTEM_FONT.CheckBox.Text
-#, fuzzy
 msgid  "Use system ~font for user interface"
 msgstr "~Naudotojo sąsajoje naudoti sistemos šriftą"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONTANTIALIASING.CheckBox.Text
-#, fuzzy
 msgid  "Screen font antialiasing"
 msgstr "Glodinti ekrano šriftus"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FixedText.Text
-#, fuzzy
 msgid  "from"
 msgstr "nuo"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FixedText.Text
-#, fuzzy
 msgid  "Pixels"
 msgstr "tšk."
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FixedLine.Text
-#, fuzzy
 msgid  "Menu"
 msgstr "Meniu"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FixedText.Text
-#, fuzzy
 msgid  "Icons in menus"
 msgstr "Meniu piktogramos"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatiškai"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item2.StringList.item
-#, fuzzy
 msgid  "Hide"
 msgstr "Slėpti"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item3.StringList.item
-#, fuzzy
 msgid  "Show"
 msgstr "Rodyti"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_FONTLISTS.FixedLine.Text
-#, fuzzy
 msgid  "Font Lists"
 msgstr "Šriftų sąrašai"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_SHOW.CheckBox.Text
-#, fuzzy
 msgid  "Show p~review of fonts"
 msgstr "Rodyti ~šriftų peržiūrą"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_HISTORY.CheckBox.Text
-#, fuzzy
 msgid  "Show font h~istory"
 msgstr "Rodyti šriftų ~žurnalą"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_RENDERING.FixedLine.Text
-#, fuzzy
 msgid  "Graphics output"
 msgstr "Paveikslų rodymas"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_HARDACCELL.CheckBox.Text
-#, fuzzy
 msgid  "Use hardware acceleration"
 msgstr "Naudoti aparatinį spartinimą"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CheckBox.Text
-#, fuzzy
 msgid  "Use Anti-Aliasing"
 msgstr "Naudoti glodinimą"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FixedLine.Text
-#, fuzzy
 msgid  "Mouse"
 msgstr "Pelė"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FixedText.Text
-#, fuzzy
 msgid  "Mouse positioning"
 msgstr "Pelės žymeklio padėtis"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item1.StringList.item
-#, fuzzy
 msgid  "Default button"
 msgstr "Numatytasis mygtukas"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item2.StringList.item
-#, fuzzy
 msgid  "Dialog center"
 msgstr "Dialogo lango centras"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item3.StringList.item
-#, fuzzy
 msgid  "No automatic positioning"
 msgstr "Nėra automatinio vietos nustatymo"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEMIDDLE.FixedText.Text
-#, fuzzy
 msgid  "Middle mouse button"
 msgstr "Vidurinis pelės mygtukas"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item1.StringList.item
-#, fuzzy
 msgid  "No function"
 msgstr "Nėra funkcijos"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item2.StringList.item
-#, fuzzy
 msgid  "Automatic scrolling"
 msgstr "Automatinis slinkimas"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item3.StringList.item
-#, fuzzy
 msgid  "Paste clipboard"
 msgstr "Įdėjimas iš iškarpinės"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Atranka"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CheckBox.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Skaidrumas"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.MF_SELECTION.MetricField.CustomUnitText
-#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_UI_LANG.FixedLine.Text
-#, fuzzy
 msgid  "Language of"
 msgstr "Lokalės kalba ir valiuta"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_USERINTERFACE.FixedText.Text
-#, fuzzy
 msgid  "~User interface"
 msgstr "~Kalba"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_LOCALESETTING.FixedText.Text
-#, fuzzy
 msgid  "Locale setting"
 msgstr "Lokalė"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_DECIMALSEPARATOR.FixedText.Text
-#, fuzzy
 msgid  "Decimal separator key"
 msgstr "Tūkstančių skirtukas"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_DECIMALSEPARATOR.CheckBox.Text
-#, fuzzy
 msgid  "~Same as locale setting ( %1 )"
 msgstr "~Iš lokalės nuostatų ( %1 )"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_CURRENCY.FixedText.Text
-#, fuzzy
 msgid  "~Default currency"
 msgstr "~Valiuta"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_LINGU_LANG.FixedLine.Text
-#, fuzzy
 msgid  "Default languages for documents"
 msgstr "Rašybos tikrinimo kalba"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_WEST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Western"
 msgstr "~Europos"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_ASIAN_LANG.FixedText.Text
-#, fuzzy
 msgid  "Asian"
 msgstr "Azijos"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_COMPLEX_LANG.FixedText.Text
-#, fuzzy
 msgid  "C~TL"
 msgstr "~Kompleksinio teksto"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_CURRENT_DOC.CheckBox.Text
-#, fuzzy
 msgid  "For the current document only"
 msgstr "Tik dabartiniam dokumentui"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_ENHANCED.FixedLine.Text
-#, fuzzy
 msgid  "Enhanced language support"
 msgstr "Kitos kalbos nuostatos"
 
@@ -5189,7 +5058,6 @@ msgid  "Show UI elements for B~i-Directional writing"
 msgstr ""
 
 #: source/options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.InfoBox.Message
-#, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Naudotojo sąsajos kalbos nuostatos buvo pakeistos ir įsigalios iš naujo paleidus „%PRODUCTNAME %PRODUCTVERSION“"
 
@@ -5234,231 +5102,186 @@ msgid  "This setting is protected by the Administrator"
 msgstr "Ši nuostata apsaugota sistemos administratoriaus"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CheckBox.Text
-#, fuzzy
 msgid  "~Apply replacement table"
 msgstr "~Taikyti keitinių lentelę"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT1.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "~Šriftas"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT2.FixedText.Text
-#, fuzzy
 msgid  "Re~place with"
 msgstr "Pa~keisti į"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.ToolBoxItem.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "Taikyti"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Šalinti"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FixedLine.Text
-#, fuzzy
 msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr "Šriftų nuostatos HTML, „Basic“ ir SQL šaltiniams"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FixedText.Text
-#, fuzzy
 msgid  "Fonts"
 msgstr "Šriftai"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_NONPROP.CheckBox.Text
-#, fuzzy
 msgid  "Non-proportional fonts only"
 msgstr "Tik neproporcingus šriftus"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "~Dydis"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "Always"
 msgstr "Visada"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "Screen only"
 msgstr "Tik ekrane"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Šriftas"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.String.Text
-#, fuzzy
 msgid  "Replace with"
 msgstr "Kuo pakeisti:"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatiškai"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.ModalDialog.Text
-#, fuzzy
 msgid  "New Dictionary"
 msgstr "Naujas žodynas"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~Pavadinimas"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "K~alba"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
-#, fuzzy
 msgid  "~Exception (-)"
 msgstr "~Išimtis (-)"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FixedLine.Text
-#, fuzzy
 msgid  "Dictionary"
 msgstr "Žodynas"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Custom Dictionary"
 msgstr "Taisyti naudotojo žodyną"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FixedText.Text
-#, fuzzy
 msgid  "~Book"
 msgstr "Ž~odynas"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_DICTLANG.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "K~alba"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_WORD.FixedText.Text
-#, fuzzy
 msgid  "~Word"
 msgstr "~Žodis"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "Replace ~By:"
 msgstr "~Pakeisti:"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_NEW_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Naujas"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.STR_MODIFY.String.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "~Pakeisti"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.BTN_EDITCLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Užverti"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "Nurodytas pavadinimas jau yra.\nParinkite kitą pavadinimą."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to change the '%1' dictionary language?"
 msgstr "Ar norite pakeisti žodyno „%1“ kalbą?"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Modules"
 msgstr "Taisyti modulius"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FL_EDIT_MODULES_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Parinktys"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "Kalba"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_UP.PushButton.Text
-#, fuzzy
 msgid  "Move Up"
 msgstr "Pakelti"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Move Down"
 msgstr "Nuleisti"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_BACK.PushButton.Text
-#, fuzzy
 msgid  "~Back"
 msgstr "~Atgal"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FixedText.Text
-#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "Atsisiųsti daugiau ~žodynų..."
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Užverti"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_SPELL.String.Text
-#, fuzzy
 msgid  "Spelling"
 msgstr "Rašybos tikrinimas"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.String.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "Skiemenavimas"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.String.Text
-#, fuzzy
 msgid  "Thesaurus"
 msgstr "Tezauras"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.String.Text
-#, fuzzy
 msgid  "Grammar"
 msgstr "Gramatika"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.ModalDialog.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "Skiemenavimas"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.String.Text
-#, fuzzy
 msgid  "Characters before break"
 msgstr "Rašmenys prieš lūžį"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_POST_BREAK_DLG.String.Text
-#, fuzzy
 msgid  "Characters after break"
 msgstr "Rašmenys po lūžio"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_MIN_WORDLEN_DLG.String.Text
-#, fuzzy
 msgid  "Minimal word length"
 msgstr "Minimalus žodžių ilgis"
 
@@ -5468,107 +5291,86 @@ msgid  "Options"
 msgstr "Parinktys"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FL_LINGUISTIC.FixedLine.Text
-#, fuzzy
 msgid  "Writing aids"
 msgstr "Rašymo pagalba"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_MODULES.FixedText.Text
-#, fuzzy
 msgid  "Available language modules"
 msgstr "~Galimi kalbos moduliai"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_MODULES_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Taisa..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_DICS.FixedText.Text
-#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "~Naudotojo aprašyti žodynai"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "~Naujas..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PushButton.Text
-#, fuzzy
 msgid  "Ed~it..."
 msgstr "~Taisa..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_DEL_DIC.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "~Options"
 msgstr "~Parinktys"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_OPTIONS_EDIT.PushButton.Text
-#, fuzzy
 msgid  "Edi~t..."
 msgstr "Ta~isa..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS_MOREDICTS.FixedText.Text
-#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "Atsisiųsti daugiau ~žodynų..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.String.Text
-#, fuzzy
 msgid  "Check uppercase words"
 msgstr "Tikrinti žodžius didžiosiomis raidėmis"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.String.Text
-#, fuzzy
 msgid  "Check words with numbers "
 msgstr "Tikrinti žodžius su skaičiais "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.String.Text
-#, fuzzy
 msgid  "Check capitalization"
 msgstr "Tikrinti keitimą didžiosiomis raidėmis"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.String.Text
-#, fuzzy
 msgid  "Check special regions"
 msgstr "Tikrinti atskiras sritis"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.String.Text
-#, fuzzy
 msgid  "Check spelling as you type"
 msgstr "Automatinis tikrinimas"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_GRAMMAR_AUTO.String.Text
-#, fuzzy
 msgid  "Check grammar as you type"
 msgstr "Renkant tekstą tikrinti gramatiką"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_MIN_WORDLEN.String.Text
-#, fuzzy
 msgid  "Minimal number of characters for hyphenation: "
 msgstr "Minimalus rašmenų skaičius žodžių kėlimui: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_PRE_BREAK.String.Text
-#, fuzzy
 msgid  "Characters before line break: "
 msgstr "Rašmenys prieš eilutės lūžį: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_POST_BREAK.String.Text
-#, fuzzy
 msgid  "Characters after line break: "
 msgstr "Rašmenys po eilutės lūžio: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_AUTO.String.Text
-#, fuzzy
 msgid  "Hyphenate without inquiry"
 msgstr "Automatiškai kelti žodžius"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_SPECIAL.String.Text
-#, fuzzy
 msgid  "Hyphenate special regions"
 msgstr "Kelti žodžius atskirose teksto srityse"
 
@@ -5592,127 +5394,102 @@ msgid  "Do you want to delete the dictionary?"
 msgstr "Ar norite pašalinti žodyną?"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
-#, fuzzy
 msgid  "Registered databases"
 msgstr "Registruotos duomenų bazės"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Registered name"
 msgstr "Registruotas vardas"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
-#, fuzzy
 msgid  "Database file"
 msgstr "Duomenų bazės failas"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "~Naujas..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Taisa..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
-#, fuzzy
 msgid  "Registered databases"
 msgstr "Registruotos duomenų bazės"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FixedLine.Text
-#, fuzzy
 msgid  "Microsoft Word 97/2000/XP"
 msgstr "Microsoft Word 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_CODE.CheckBox.Text
-#, fuzzy
 msgid  "Load Basic ~code"
 msgstr "Įkelti „Basic“ ~kodą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_STG.CheckBox.Text
-#, fuzzy
 msgid  "Save ~original Basic code"
 msgstr "Vėl įrašyti ~originalų „Basic“ kodą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_EXCEL.FixedLine.Text
-#, fuzzy
 msgid  "Microsoft Excel 97/2000/XP"
 msgstr "Microsoft Excel 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_CODE.CheckBox.Text
-#, fuzzy
 msgid  "Lo~ad Basic code"
 msgstr "Įk~elti „Basic“ kodą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_EXECTBL.CheckBox.Text
-#, fuzzy
 msgid  "E~xecutable code"
 msgstr "~Vykdomasis kodas"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_STG.CheckBox.Text
-#, fuzzy
 msgid  "Sa~ve original Basic code"
 msgstr "Vė~l įrašyti originalų „Basic“ kodą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_PPOINT.FixedLine.Text
-#, fuzzy
 msgid  "Microsoft PowerPoint 97/2000/XP"
 msgstr "Microsoft PowerPoint 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_CODE.CheckBox.Text
-#, fuzzy
 msgid  "Load Ba~sic code"
 msgstr "Įkelti „Basic“ k~odą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_STG.CheckBox.Text
-#, fuzzy
 msgid  "Sav~e original Basic code"
 msgstr "Vėl į~rašyti originalų „Basic“ kodą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER1.String.Text
-#, fuzzy
 msgid  "[L]"
 msgstr "[K]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER2.String.Text
-#, fuzzy
 msgid  "[S]"
 msgstr "[R]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER1_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[L]: Load and convert the object"
 msgstr "[K]: Įkelti ir konvertuoti objektą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER2_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[S]: Convert and save the object"
 msgstr "[R]: Konvertuoti ir įrašyti objektą"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.String.Text
-#, fuzzy
 msgid  "MathType to %PRODUCTNAME Math or reverse"
 msgstr "Iš „MathType“ į „%PRODUCTNAME“ matematinės rengyklės formatą arba atvirkščiai"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.String.Text
-#, fuzzy
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
 msgstr "Iš „WinWord“ į „%PRODUCTNAME“ tekstų rengyklės formatą arba atvirkščiai"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.String.Text
-#, fuzzy
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
 msgstr "Iš „Excel“ į „%PRODUCTNAME“ skaičiuoklės formatą arba atvirkščiai"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.String.Text
-#, fuzzy
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "Iš „PowerPoint“ į „%PRODUCTNAME“ pateikčių rengyklės formatą arba atvirkščiai"
 
@@ -5832,157 +5609,126 @@ msgid  "Ctrl-click required to follow hyperlinks"
 msgstr "Reikalinga „Vald + spustelėjimas“ sekti saitais"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FixedLine.Text
-#, fuzzy
 msgid  "Kerning"
 msgstr "Sanglauda"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RadioButton.Text
-#, fuzzy
 msgid  "~Western characters only"
 msgstr "Tik ~Vakarų Europos rašmenys"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RadioButton.Text
-#, fuzzy
 msgid  "Western ~text and Asian punctuation"
 msgstr "Vakarų ~Europos tekstas ir Azijos skyryba"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FixedLine.Text
-#, fuzzy
 msgid  "Character spacing"
 msgstr "Tarpai tarp rašmenų"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RadioButton.Text
-#, fuzzy
 msgid  "~No compression"
 msgstr "~Nesuspausta"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RadioButton.Text
-#, fuzzy
 msgid  "~Compress punctuation only"
 msgstr "~Spausti tik skyrybą"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RadioButton.Text
-#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
 msgstr "Suspausti skyrybą ir ~japonų kaną"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FixedLine.Text
-#, fuzzy
 msgid  "First and last characters"
 msgstr "Pirmas ir paskutinis rašmenys"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "K~alba"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.CB_STANDARD.CheckBox.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Numatyta"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_START.FixedText.Text
-#, fuzzy
 msgid  "Not at start of line:"
 msgstr "Ne eilutės pradžioje:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_END.FixedText.Text
-#, fuzzy
 msgid  "Not at end of line:"
 msgstr "Ne eilutės pabaigoje:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FixedText.Text
-#, fuzzy
 msgid  "Without user-defined line break symbols"
 msgstr "Be naudotojo nurodytų eilutės lūžių"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FixedText.Text
-#, fuzzy
 msgid  "Proxy"
 msgstr "Įgaliotasis serveris"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FixedText.Text
-#, fuzzy
 msgid  "Size ~1"
 msgstr "~1 dydis"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE2.FixedText.Text
-#, fuzzy
 msgid  "Size ~2"
 msgstr "~2 dydis"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE3.FixedText.Text
-#, fuzzy
 msgid  "Size ~3"
 msgstr "~3 dydis"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE4.FixedText.Text
-#, fuzzy
 msgid  "Size ~4"
 msgstr "~4 dydis"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE5.FixedText.Text
-#, fuzzy
 msgid  "Size ~5"
 msgstr "~5 dydis"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE6.FixedText.Text
-#, fuzzy
 msgid  "Size ~6"
 msgstr "~6 dydis"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE7.FixedText.Text
-#, fuzzy
 msgid  "Size ~7"
 msgstr "~7 dydis"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_FONTSIZE.FixedLine.Text
-#, fuzzy
 msgid  "Font sizes"
 msgstr "Šriftų dydžiai"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_IMPORT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "Importas"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_NUMBERS_ENGLISH_US.CheckBox.Text
-#, fuzzy
 msgid  "~Use '%ENGLISHUSLOCALE' locale for numbers"
 msgstr "Skaičių ~formatams naudoti „%ENGLISHUSLOCALE“ lokalę"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_UNKNOWN_TAGS.CheckBox.Text
-#, fuzzy
 msgid  "~Import unknown HTML tags as fields"
 msgstr "~Importuoti nežinomas HTML gaires į laukus"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_IGNORE_FONTNAMES.CheckBox.Text
-#, fuzzy
 msgid  "Ignore ~font settings"
 msgstr "Nepaisyti š~rifto nuostatų"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_EXPORT.FixedLine.Text
-#, fuzzy
 msgid  "Export"
 msgstr "Eksportas"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_STARBASIC_WARNING.CheckBox.Text
-#, fuzzy
 msgid  "Display ~warning"
 msgstr "Ro~dyti įspėjimą"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_PRINT_EXTENSION.CheckBox.Text
-#, fuzzy
 msgid  "~Print layout"
 msgstr "~Spaudinio schema"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_LOCAL_GRF.CheckBox.Text
-#, fuzzy
 msgid  "~Copy local graphics to Internet"
 msgstr "~Kopijuoti vietinius grafinius paveikslus į internetą"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_CHARSET.FixedText.Text
-#, fuzzy
 msgid  "Character set"
 msgstr "Koduotė"
 
@@ -6670,37 +6416,30 @@ msgid  "Color Mode"
 msgstr ""
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr "Iš kairės į dešinę"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr "Iš dešinės į kairę"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.String.Text
-#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "Naudoti ankstesnio objekto nuostatas"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_HORI.String.Text
-#, fuzzy
 msgid  "Left-to-right (horizontal)"
 msgstr "Iš kairės į dešinę (horizontaliai)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_HORI.String.Text
-#, fuzzy
 msgid  "Right-to-left (horizontal)"
 msgstr "Iš dešinės į kairę (horizontaliai)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_VERT.String.Text
-#, fuzzy
 msgid  "Right-to-left (vertical)"
 msgstr "Iš dešinės į kairę (vertikaliai)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_VERT.String.Text
-#, fuzzy
 msgid  "Left-to-right (vertical)"
 msgstr "Iš kairės į dešinę (vertikaliai)"
 
@@ -6880,8 +6619,9 @@ msgid  "O~uter"
 msgstr "~Išorinis"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
+#, fuzzy
 msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "Paraščių parinktys išeina už spausdinimo ribų.\n\nAr tikrai norite naudoti šias parinktis?"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -7722,197 +7462,158 @@ msgid  "Link"
 msgstr "Saitas"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TabDialog.Text
-#, fuzzy
 msgid  "Border / Background"
 msgstr "Kraštinė ir fonas"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Kraštinės"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Fonas"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.TabPage.Text
-#, fuzzy
 msgid  "Distribution"
 msgstr "Objektų išdėstymas vienodais atstumais"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.FL_HORIZONTAL.FixedLine.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Horizontaliai"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_NONE.RadioButton.Text
-#, fuzzy
 msgid  "~None"
 msgstr "~Nekeisti"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_LEFT.RadioButton.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Kairėje"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_CENTER.RadioButton.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "~Centre"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_DISTANCE.RadioButton.Text
-#, fuzzy
 msgid  "~Spacing"
 msgstr "~Tolygiai"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_RIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Dešinėje"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.FL_VERTICAL.FixedLine.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikaliai"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RadioButton.Text
-#, fuzzy
 msgid  "N~one"
 msgstr "Nekeisti"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RadioButton.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Viršuje"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_CENTER.RadioButton.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "C~entre"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_DISTANCE.RadioButton.Text
-#, fuzzy
 msgid  "S~pacing"
 msgstr "To~lygiai"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_BOTTOM.RadioButton.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Apačioje"
 
 #: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-#, fuzzy
 msgid  "Unlinked graphic"
 msgstr "Nesusietas paveikslas"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Fonas"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
-#, fuzzy
 msgid  "A~s"
 msgstr "~Fonas"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
 msgid  "Color"
 msgstr "Spalva"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
 msgid  "Graphic"
 msgstr "Piešinys"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_TBL_DESC.FixedText.Text
-#, fuzzy
 msgid  "F~or"
 msgstr "~Kieno: "
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Cell"
 msgstr "langelio"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Row"
 msgstr "eilutės"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item3.StringList.item
-#, fuzzy
 msgid  "Table"
 msgstr "lentelės"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "pastraipos"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Character"
 msgstr "Rašmuo"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FixedLine.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "Fono spalva"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FixedText.Text
-#, fuzzy
 msgid  "~Transparency"
 msgstr "Skaidru~mas"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_FILE.FixedLine.Text
-#, fuzzy
 msgid  "File"
 msgstr "Iš failo"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "~Parinkti..."
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_LINK.CheckBox.Text
-#, fuzzy
 msgid  "~Link"
 msgstr "~Saitas"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tipas"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_POSITION.RadioButton.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~Padėtis"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_AREA.RadioButton.Text
-#, fuzzy
 msgid  "Ar~ea"
 msgstr "~Sritis"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_TILE.RadioButton.Text
-#, fuzzy
 msgid  "~Tile"
 msgstr "~Išklotinė"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FL_GRAPH_TRANS.FixedLine.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Skaidrumas"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pre~view"
 msgstr "~Peržiūra"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.STR_BROWSE.String.Text
-#, fuzzy
 msgid  "Find graphics"
 msgstr "Ieškoti paveikslo"
 
@@ -7922,18 +7623,17 @@ msgid  "Assign Macro"
 msgstr "Priskirti makrokomandą"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_EVENT.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "Įvykis"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_ASSMACRO.String.Text
-#, fuzzy
 msgid  "Assigned macro"
 msgstr "Priskirta makrokomanda"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
+#, fuzzy
 msgid  "~Existing macros\\n"
-msgstr ""
+msgstr "~Esamos makrokomandos:\n"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 #, fuzzy
@@ -7951,242 +7651,194 @@ msgid  "Macros"
 msgstr "Makrokomandos"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.TabDialog.Text
-#, fuzzy
 msgid  "AutoCorrect"
 msgstr "Automatinis rašybos taisymas"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.PageItem.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "Keisti"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PageItem.Text
-#, fuzzy
 msgid  "Exceptions"
 msgstr "Išimtys"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Parinktys"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Parinktys"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PageItem.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "Lokalės parinktys"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "Žodžio užbaigimas"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "Sparčiosios gairės"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
-#, fuzzy
 msgid  "Replacements and exceptions for language:"
 msgstr "Keitiniai ir išimtys. Kalba"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_USE_REPLACE.String.Text
-#, fuzzy
 msgid  "Use replacement table"
 msgstr "Naudoti keitinių lentelę"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_WORD.String.Text
-#, fuzzy
 msgid  "Correct TWo INitial CApitals"
 msgstr "Keisti DVi PIrmąsias DIdžiąsias raides"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.String.Text
-#, fuzzy
 msgid  "Capitalize first letter of every sentence"
 msgstr "Sakinį pradėti didžiąją raide"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.String.Text
-#, fuzzy
 msgid  "Automatic *bold* and _underline_"
 msgstr "Automatinis *pusjuodis* ir _pabrauktas_"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.STR_NO_DBL_SPACES.String.Text
-#, fuzzy
 msgid  "Ignore double spaces"
 msgstr "Du tarpus keisti vienu"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.String.Text
-#, fuzzy
 msgid  "URL Recognition"
 msgstr "Atpažinti URL"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.String.Text
-#, fuzzy
 msgid  "Replace dashes"
 msgstr "Brūkšnelius keisti brūkšniais"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Nuostatos"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.PB_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Taisa..."
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[R]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[M]: Replace while modifying existing text"
 msgstr "[T]: keisti, kai taisomas esamas tekstas"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER2_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[T]: AutoFormat/AutoCorrect while typing"
 msgstr "[R]: automatiškai formatuoti ir taisyti rašant"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.String.Text
-#, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "Pašalinti tuščias pastraipas"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.String.Text
-#, fuzzy
 msgid  "Replace Custom Styles"
 msgstr "Pakeisti naudotojo stilius"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.String.Text
-#, fuzzy
 msgid  "Replace bullets with: "
 msgstr "Pakeisti sąrašo žymes į: "
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_RIGHT_MARGIN.String.Text
-#, fuzzy
 msgid  "Combine single line paragraphs if length greater than"
 msgstr "Jungti vienos eilutės pastraipas, jei jos ilgesnės nei"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_NUM.String.Text
-#, fuzzy
 msgid  "Apply numbering - symbol: "
 msgstr "Ženklus -, +, * pastraipos pradžioje keisti ženklinimu "
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_BORDER.String.Text
-#, fuzzy
 msgid  "Apply border"
 msgstr "Tam tikrų rašmenų eilutę keisti horizontale"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_TABLE.String.Text
-#, fuzzy
 msgid  "Create table"
 msgstr "Pliusų ir minusų eilutę keisti lentelės eilute"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.String.Text
-#, fuzzy
 msgid  "Apply Styles"
 msgstr "Taikyti stilius"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.String.Text
-#, fuzzy
 msgid  "Delete spaces and tabs at beginning and end of paragraph"
 msgstr "Pašalinti tarpus ir tabuliavimo ženklus pastraipos pradžioje ir pabaigoje"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_BETWEEN_LINES.String.Text
-#, fuzzy
 msgid  "Delete spaces and tabs at end and start of line"
 msgstr "Pašalinti tarpus ir tabuliavimo ženklus eilutės pradžioje ir pabaigoje"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.FL_PRCNT.FixedLine.Text
-#, fuzzy
 msgid  "Minimum size"
 msgstr "Minimalus dydis"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.MetricField.Text
-#, fuzzy
 msgid  "Combine"
 msgstr "Sujungti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "~Pakeisti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "~With:"
 msgstr "Kuo ~pakeisti:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.CB_TEXT_ONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Text only"
 msgstr "~Tik tekstas"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Naujas"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.STR_MODIFY.String.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "~Pakeisti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_ABBREV.FixedLine.Text
-#, fuzzy
 msgid  "Abbreviations (no subsequent capital)"
 msgstr "Santrumpos, kurios baigiasi tašku"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWABBREV.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Naujas"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELABBREV.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CheckBox.Text
-#, fuzzy
 msgid  "~AutoInclude"
 msgstr "Au~tomatinis įtraukimas"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FixedLine.Text
-#, fuzzy
 msgid  "Words with TWo INitial CApitals"
 msgstr "Žodžiai su DViem DIdžiosiomis RAidėmis"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Ne~w"
 msgstr "Įdė~ti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Dele~te"
 msgstr "~Šalinti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOCAPS.CheckBox.Text
-#, fuzzy
 msgid  "A~utoInclude"
 msgstr "A~utomatinis įtraukimas"
 
@@ -8207,92 +7859,74 @@ msgid  "Delete words with two initial capitals"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TabPage.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "Lokalės parinktys"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[R]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.String.Text
-#, fuzzy
 msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr "Prancūziškame tekste prieš tam tikrus skyrybos ženklus pridėti jungiamuosius tarpus"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.String.Text
-#, fuzzy
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
 msgstr "Formatuoti kelintinių skaitvardžių priesagas (1st → 1^st)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FixedLine.Text
-#, fuzzy
 msgid  "Single quotes"
 msgstr "Viengubos kabutės"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_SGL_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "~Pakeisti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~Start quote:"
 msgstr "~Atidarančiosios kabutės:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~End quote:"
 msgstr "~Uždarančiosios kabutės:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_SGL_STD.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Numatyta"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_DOUBLE.FixedLine.Text
-#, fuzzy
 msgid  "Double quotes"
 msgstr "Dvigubos kabutės"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repl~ace"
 msgstr "Pa~keisti"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "Start q~uote:"
 msgstr "Atidarančiosios k~abutės:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "E~nd quote:"
 msgstr "Uždaranč~iosios kabutės:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_DBL_STD.PushButton.Text
-#, fuzzy
 msgid  "De~fault"
 msgstr "Nu~matyta"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_START.String.Text
-#, fuzzy
 msgid  "Start quote"
 msgstr "Atidarančiosios kabutės"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_END.String.Text
-#, fuzzy
 msgid  "End quote"
 msgstr "Uždarančiosios kabutės"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "Numatyta"
 
@@ -8321,72 +7955,58 @@ msgid  "End quote of double quotes"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CheckBox.Text
-#, fuzzy
 msgid  "Enable word ~completion"
 msgstr "~Užbaigti žodžius"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_APPEND_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "~Append space"
 msgstr "~Užbaigus pridėti tarpą"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_AS_TIP.CheckBox.Text
-#, fuzzy
 msgid  "~Show as tip"
 msgstr "~Rodyti kaip paaiškinimą"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_COLLECT.CheckBox.Text
-#, fuzzy
 msgid  "C~ollect words"
 msgstr "Ren~kamus žodžius traukti į sąrašą"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
-#, fuzzy
 msgid  "~When closing a document, remove the words collected from it from the list"
 msgstr "~Užveriant dokumentą pašalinti iš jo surinktus žodžius iš sąrašo"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
-#, fuzzy
 msgid  "Acc~ept with"
 msgstr "Prii~mti klavišu"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MIN_WORDLEN.FixedText.Text
-#, fuzzy
 msgid  "Mi~n. word length"
 msgstr "Mi~n. žodžio ilgis"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MAX_ENTRIES.FixedText.Text
-#, fuzzy
 msgid  "~Max. entries"
 msgstr "~Maks. žodžių"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PB_ENTRIES.PushButton.Text
-#, fuzzy
 msgid  "~Delete Entry"
 msgstr "~Šalinti žodį"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PushButton.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "Žodžio užbaigimas"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "Sparčiosios gairės"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CheckBox.Text
-#, fuzzy
 msgid  "Label text with smart tags"
 msgstr "Pažymėti tekstą sparčiosiomis gairėmis"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.FT_SMARTTAGS.FixedText.Text
-#, fuzzy
 msgid  "Currently installed smart tags"
 msgstr "Įdiegtos sparčiosios gairės"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PushButton.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "Savybės..."
 
@@ -8401,8 +8021,9 @@ msgid  "Do you want to delete the gradient?"
 msgstr "Ar tikrai norite pašalinti gradientą?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
+#, fuzzy
 msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "Gradientas buvo pakeistas, bet neįrašytas. \nPakeiskite pasirinktą gradientą arba pridėkite naują."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -8420,8 +8041,9 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "Ar tikrai norite pašalinti raštą?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
+#, fuzzy
 msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "Raštas buvo pakeistas, bet neįrašytas. \nPakeiskite pasirinktą raštą arba pridėkite naują."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -8434,8 +8056,9 @@ msgid  "Do you want to delete the line style?"
 msgstr "Ar tikrai norite pašalinti linijos stilių?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
+#, fuzzy
 msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "Linijos stilius buvo pakeistas, bet neįrašytas. \nPakeiskite pasirinktą linijos stilių arba pridėkite naują."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -8448,8 +8071,9 @@ msgid  "Do you want to delete the hatching?"
 msgstr "Ar tikrai norite pašalinti brūkšniuotę?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "Brūkšniuotė buvo pakeista, bet neįrašyta. \nPakeiskite pasirinktą brūkšniuotę arba pridėkite naują."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -8472,8 +8096,9 @@ msgid  "Do you want to delete the color?"
 msgstr "Ar tikrai norite pašalinti spalvą?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
+#, fuzzy
 msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
-msgstr ""
+msgstr "Spalva buvo pakeista, bet neįrašyta. \nPakeiskite pasirinktą spalvą arba pridėkite naują."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -8496,8 +8121,9 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "Sąrašas buvo pakeistas, bet neįrašytas. Ar įrašyti sąrašą dabar?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name you have entered already exists. \\nPlease choose another name."
-msgstr ""
+msgstr "Įvestas pavadinimas jau yra. \nPasirinkite kitą pavadinimą."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -8510,8 +8136,9 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "Ar tikrai norite pašalinti rodyklės smaigalį?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "Rodyklės smaigalys buvo pakeistas, bet neįrašytas.\nAr įrašyti rodyklės formą dabar?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -9088,62 +8715,50 @@ msgid  "Automatic"
 msgstr "Automatiškai"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.TabPage.Text
-#, fuzzy
 msgid  "Connector"
 msgstr "Jungiamoji linija"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Tipas"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FixedLine.Text
-#, fuzzy
 msgid  "Line skew"
 msgstr "Linijos posvyris"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FixedText.Text
-#, fuzzy
 msgid  "Line ~1"
 msgstr "~1 atkarpa"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_2.FixedText.Text
-#, fuzzy
 msgid  "Line ~2"
 msgstr "~2 atkarpa"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_3.FixedText.Text
-#, fuzzy
 msgid  "Line ~3"
 msgstr "~3 atkarpa"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DISTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Line spacing"
 msgstr "Eilučių intervalas"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_HORZ_1.FixedText.Text
-#, fuzzy
 msgid  "~Begin horizontal"
 msgstr "~Horizontalus pradžioje"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_HORZ_2.FixedText.Text
-#, fuzzy
 msgid  "End ~horizontal"
 msgstr "H~orizontalus pabaigoje"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_VERT_1.FixedText.Text
-#, fuzzy
 msgid  "Begin ~vertical"
 msgstr "~Vertikalus pradžioje"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_VERT_2.FixedText.Text
-#, fuzzy
 msgid  "~End vertical"
 msgstr "V~ertikalus pabaigoje"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.CTL_PREVIEW.Control.QuickHelpText
-#, fuzzy
 msgid  "Preview"
 msgstr "Peržiūra"
 
@@ -9503,212 +9118,170 @@ msgid  "Full ~width"
 msgstr "~Visas plotis"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_CROP.FixedLine.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "Apkarpyti"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Kairėje"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Dešinėje"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_TOP.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Viršuje"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_BOTTOM.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Apačioje"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.RB_SIZECONST.RadioButton.Text
-#, fuzzy
 msgid  "Keep image si~ze"
 msgstr "Išlaikyti paveikslo ~dydį"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.RB_ZOOMCONST.RadioButton.Text
-#, fuzzy
 msgid  "Keep ~scale"
 msgstr "Išlaikyti ~mastelį"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_ZOOM.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Mastelis"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTHZOOM.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "~Plotis"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "~Aukštis"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_SIZE.FixedLine.Text
-#, fuzzy
 msgid  "Image size"
 msgstr "Paveikslo dydis"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "~Plotis"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "~Aukštis"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.PB_ORGSIZE.PushButton.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "~Originalus dydis"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.TabPage.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "L~ygiuotė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
-#, fuzzy
 msgid  "Text alignment"
 msgstr "Teksto lygiuotė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "Hori~zontaliai"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Numatyta"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "Kairinė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
-#, fuzzy
 msgid  "Center"
 msgstr "Centrinė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "Dešininė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.StringList.item
-#, fuzzy
 msgid  "Justified"
 msgstr "Abipusė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.StringList.item
-#, fuzzy
 msgid  "Filled"
 msgstr "Užpildyta"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FixedText.Text
-#, fuzzy
 msgid  "I~ndent"
 msgstr "~Įtrauka"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "~Vertikaliai"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Numatyta"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "Viršutinė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.StringList.item
-#, fuzzy
 msgid  "Middle"
 msgstr "Vidurinė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "Apatinė"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ORIENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "Teksto pasukimas"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
-#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "~Vertikaliai"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "De~grees"
 msgstr "~Kampas"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_BORDER_LOCK.FixedText.Text
-#, fuzzy
 msgid  "Re~ference edge"
 msgstr "~Padėtis"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TriStateBox.Text
-#, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "Naudoti ~azijiečių vertikalų išdėstymą"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "Savybės"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TriStateBox.Text
-#, fuzzy
 msgid  "~Wrap text automatically"
 msgstr "Automatinis teksto laužymas"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_HYPH.TriStateBox.Text
-#, fuzzy
 msgid  "Hyphenation ~active"
 msgstr "Įjungti žodžių kėlimą"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_SHRINK.TriStateBox.Text
-#, fuzzy
 msgid  "~Shrink to fit cell size"
 msgstr "~Pritaikyti prie langelio dydžio"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_TEXTFLOW.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Te~ksto kryptis"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_BOTTOMLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Lower Cell Border"
 msgstr "Kampo viršūnė apatinėje langelio kraštinėje"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_TOPLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Upper Cell Border"
 msgstr "Kampo viršūnė viršutinėje langelio kraštinėje"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_CELLLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension Inside Cell"
 msgstr "Teksto pasukimas langelyje"
 
@@ -9828,1112 +9401,890 @@ msgid  "Follow text flow"
 msgstr "Susieti su tekstu"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FixedLine.Text
-#, fuzzy
 msgid  "Western text font"
 msgstr "Vakarų Europos šriftas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Šriftas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "~Šriftas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE.FixedText.Text
-#, fuzzy
 msgid  "~Typeface"
 msgstr "~Šrifto stilius"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Typeface"
 msgstr "~Šrifto stilius"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "Įprastas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "Kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "Pusjuodis kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "Įprastas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "Kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "Pusjuodis kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "Dydis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "Dydis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "Kalba"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "K~alba"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_EAST.FixedLine.Text
-#, fuzzy
 msgid  "Asian text font"
 msgstr "Azijos kalbų šriftas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Šriftas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_STYLE.FixedText.Text
-#, fuzzy
 msgid  "T~ypeface"
 msgstr "~Tipas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "Įprastas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "Kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "Pusjuodis kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "Dydis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "Kalba"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_CTL.FixedLine.Text
-#, fuzzy
 msgid  "CTL font"
 msgstr "CTL šriftas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Šriftas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_STYLE.FixedText.Text
-#, fuzzy
 msgid  "Ty~peface"
 msgstr "~Stilius"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "Įprastas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "Kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "Pusjuodis kursyvas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "Dydis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "Kalba"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.WIN_CHAR_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "Pavyzdys"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FixedLine.Text
-#, fuzzy
 msgid  "Color"
 msgstr "Spalva"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
-#, fuzzy
 msgid  "Font ~color"
 msgstr "Teksto spalva"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
-#, fuzzy
 msgid  "No %1"
 msgstr "Ne %s"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "Transparent"
 msgstr "Skaidrus"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_FONTCOLOR.FixedText.Text
-#, fuzzy
 msgid  "Font ~color"
 msgstr "Teksto spalva"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EFFECTS.FixedText.Text
-#, fuzzy
 msgid  "~Effects"
 msgstr "~Efektai"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Capitals"
 msgstr "Didžiosios raidės"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Lowercase"
 msgstr "Mažosios raidės"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Title"
 msgstr "Iš didžiųjų raidžių"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
 msgid  "Small capitals"
 msgstr "Sumažintos didžiosios raidės"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FixedText.Text
-#, fuzzy
 msgid  "~Relief"
 msgstr "~Reljefas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
 msgid  "Embossed"
 msgstr "Iškilus"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
 msgid  "Engraved"
 msgstr "Įdubus"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TriStateBox.Text
-#, fuzzy
 msgid  "Out~line"
 msgstr "~Kontūras"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_SHADOW.TriStateBox.Text
-#, fuzzy
 msgid  "Sha~dow"
 msgstr "~Šešėlis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_BLINKING.TriStateBox.Text
-#, fuzzy
 msgid  "~Blinking"
 msgstr "~Mirksintis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_CHARHIDDEN.TriStateBox.Text
-#, fuzzy
 msgid  "H~idden"
 msgstr "Pa~slėptas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE.FixedText.Text
-#, fuzzy
 msgid  "~Overlining"
 msgstr "Linija ~viršuje"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_NONE.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "Viengubas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
-#, fuzzy
 msgid  "Double"
 msgstr "Dvigubas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted"
 msgstr "Taškais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted (Bold)"
 msgstr "Pusjuodžiais taškais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
-#, fuzzy
 msgid  "Dash"
 msgstr "Brūkšneliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
-#, fuzzy
 msgid  "Dash (Bold)"
 msgstr "Pusjuodžiais brūkšneliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash"
 msgstr "Brūkšniais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash (Bold)"
 msgstr "Pusjuodžiais brūkšniais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash"
 msgstr "Brūkšneliais taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "Pusjuodžiais brūkšneliais taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash"
 msgstr "Brūkšneliais ir dviem taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr "Pusjuodžiais brūkšneliais ir dviem taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
-#, fuzzy
 msgid  "Wave"
 msgstr "Vingiuota linija"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
-#, fuzzy
 msgid  "Wave (Bold)"
 msgstr "Pusjuode vingiuota linija"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
-#, fuzzy
 msgid  "Double Wave"
 msgstr "Dviguba vingiuota linija"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE_COLOR.FixedText.Text
-#, fuzzy
 msgid  "O~verline color"
 msgstr "Li~nijos viršuje spalva"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_STRIKEOUT.FixedText.Text
-#, fuzzy
 msgid  "~Strikethrough"
 msgstr "Pe~rbraukimas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_NONE.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SINGLE.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "Viengubas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_DOUBLE.StringList.item
-#, fuzzy
 msgid  "Double"
 msgstr "Dvigubas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.StringList.item
-#, fuzzy
 msgid  "With /"
 msgstr "Ženklu /"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.StringList.item
-#, fuzzy
 msgid  "With X"
 msgstr "Ženklu X"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FixedText.Text
-#, fuzzy
 msgid  "~Underlining"
 msgstr "Pa~braukimas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_NONE.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
-#, fuzzy
 msgid  "Single"
 msgstr "Viengubas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
-#, fuzzy
 msgid  "Double"
 msgstr "Dvigubas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted"
 msgstr "Taškais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted (Bold)"
 msgstr "Pusjuodžiais taškais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
-#, fuzzy
 msgid  "Dash"
 msgstr "Brūkšneliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
-#, fuzzy
 msgid  "Dash (Bold)"
 msgstr "Pusjuodžiais brūkšneliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash"
 msgstr "Brūkšniais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash (Bold)"
 msgstr "Pusjuodžiais brūkšniais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash"
 msgstr "Brūkšneliais taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "Pusjuodžiais brūkšneliais taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash"
 msgstr "Brūkšneliais ir dviem taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr "Pusjuodžiais brūkšneliais ir dviem taškeliais"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
-#, fuzzy
 msgid  "Wave"
 msgstr "Vingiuota linija"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
-#, fuzzy
 msgid  "Wave (Bold)"
 msgstr "Pusjuode vingiuota linija"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
-#, fuzzy
 msgid  "Double Wave"
 msgstr "Dviguba vingiuota linija"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE_COLOR.FixedText.Text
-#, fuzzy
 msgid  "U~nderline color"
 msgstr "Pa~braukimo spalva"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_INDIVIDUALWORDS.CheckBox.Text
-#, fuzzy
 msgid  "Individual ~words"
 msgstr "~Tarpų nebraukti"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EMPHASIS.FixedText.Text
-#, fuzzy
 msgid  "Emp~hasis mark"
 msgstr "~Kirčio ženklas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "(Without)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Dot"
 msgstr "Taškas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Circle"
 msgstr "Apskritimas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Disc"
 msgstr "Skritulys"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
 msgid  "Accent"
 msgstr "Kirtis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~Padėtis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.StringList.item
-#, fuzzy
 msgid  "Above text"
 msgstr "Teksto viršuje"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.StringList.item
-#, fuzzy
 msgid  "Below text"
 msgstr "Teksto apačioje"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.WIN_EFFECTS_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "Pavyzdys"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_CAPITALS.String.Text
-#, fuzzy
 msgid  "Capitals"
 msgstr "Didžiosios raidės"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_LOWERCASE.String.Text
-#, fuzzy
 msgid  "Lowercase"
 msgstr "Mažosios raidės"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Iš didžiųjų raidžių"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.String.Text
-#, fuzzy
 msgid  "Small Capitals"
 msgstr "Sumažintos didžiosios raidės"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.String.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "Kontūras"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Šešėlis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.String.Text
-#, fuzzy
 msgid  "Blinking"
 msgstr "Mirksėjimas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_CHARNAME_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "Transparent"
 msgstr "Skaidrus"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Padėtis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RadioButton.Text
-#, fuzzy
 msgid  "Superscript"
 msgstr "Viršutinis indeksas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_NORMALPOS.RadioButton.Text
-#, fuzzy
 msgid  "Normal"
 msgstr "Įprastas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_LOWPOS.RadioButton.Text
-#, fuzzy
 msgid  "Subscript"
 msgstr "Apatinis indeksas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_HIGHLOW.FixedText.Text
-#, fuzzy
 msgid  "~Raise/lower by"
 msgstr "~Pakelti arba nuleisti"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_HIGHLOW.CheckBox.Text
-#, fuzzy
 msgid  "A~utomatic"
 msgstr "A~utomatiškai"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_FONTSIZE.FixedText.Text
-#, fuzzy
 msgid  "Relative font size"
 msgstr "Santykinis dydis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_ROTATION_SCALING.FixedLine.Text
-#, fuzzy
 msgid  "Rotation / scaling"
 msgstr "Posūkis ir plotis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FixedLine.Text
-#, fuzzy
 msgid  "Scaling"
 msgstr "Mastelis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~0 degrees"
 msgstr "~0 laipsnių"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_90_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~90 degrees"
 msgstr "~90 laipsnių"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_270_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~270 degrees"
 msgstr "~270 laipsnių"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_FIT_TO_LINE.CheckBox.Text
-#, fuzzy
 msgid  "Fit to line"
 msgstr "Pritaikyti prie linijos"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_SCALE_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "Scale ~width"
 msgstr "~Pločio mastelis"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_KERNING2.FixedLine.Text
-#, fuzzy
 msgid  "Spacing"
 msgstr "Tarpeliai"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Numatyta"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
 msgid  "Expanded"
 msgstr "Išplėstas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
 msgid  "Condensed"
 msgstr "Suglaustas"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_KERNING2.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr " "
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_PAIRKERNING.CheckBox.Text
-#, fuzzy
 msgid  "~Pair kerning"
 msgstr "~Rašmenų sanglauda"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.WIN_POS_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "Pavyzdys"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FixedLine.Text
-#, fuzzy
 msgid  "Double-lined"
 msgstr "Dviguba linija"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CheckBox.Text
-#, fuzzy
 msgid  "~Write in double lines"
 msgstr "~Rašyti dvigubose linijose"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_ENCLOSE.FixedLine.Text
-#, fuzzy
 msgid  "Enclosing character"
 msgstr "Apskliaustas rašmuo"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FT_STARTBRACKET.FixedText.Text
-#, fuzzy
 msgid  "I~nitial character"
 msgstr "~Pradžios rašmuo"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_NONE.StringList.item
-#, fuzzy
 msgid  "(None)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.StringList.item
-#, fuzzy
 msgid  "("
 msgstr "("
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.StringList.item
-#, fuzzy
 msgid  "["
 msgstr "["
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.StringList.item
-#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.StringList.item
-#, fuzzy
 msgid  "{"
 msgstr "{"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.StringList.item
-#, fuzzy
 msgid  "Other Characters..."
 msgstr "Kiti rašmenys..."
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FT_ENDBRACKET.FixedText.Text
-#, fuzzy
 msgid  "Final charact~er"
 msgstr "~Galutinis rašmuo"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_NONE.StringList.item
-#, fuzzy
 msgid  "(None)"
 msgstr "(jokio)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.StringList.item
-#, fuzzy
 msgid  ")"
 msgstr ")"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.StringList.item
-#, fuzzy
 msgid  "]"
 msgstr "]"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.StringList.item
-#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.StringList.item
-#, fuzzy
 msgid  "}"
 msgstr "}"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.StringList.item
-#, fuzzy
 msgid  "Other Characters..."
 msgstr "Kiti rašmenys..."
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.WIN_TWOLINES_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "Pavyzdys"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Kraštinės"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FixedLine.Text
-#, fuzzy
 msgid  "Line arrangement"
 msgstr "Kraštinių išdėstymas"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Numatyta"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_USERDEF.FixedText.Text
-#, fuzzy
 msgid  "~User-defined"
 msgstr "~Naudotojo aprašyta"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Linija"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FixedText.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "St~ilius"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Spalva"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Kairėje"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "Right"
 msgstr "Dešinėje"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_TOP.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Viršuje"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_BOTTOM.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Apačioje"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_SYNC.CheckBox.Text
-#, fuzzy
 msgid  "Synchronize"
 msgstr "Suvienodinti"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_DISTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Spacing to contents"
 msgstr "Atstumai iki turinio"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWPOS.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~Padėtis"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWSIZE.FixedText.Text
-#, fuzzy
 msgid  "Distan~ce"
 msgstr "~Plotis"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWCOLOR.FixedText.Text
-#, fuzzy
 msgid  "C~olor"
 msgstr "~Spalva"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow style"
 msgstr "Šešėlio stilius"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "Savybės"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CheckBox.Text
-#, fuzzy
 msgid  "~Merge with next paragraph"
 msgstr "~Sujungti su kita pastraipa"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEADJACENTBORDERS.CheckBox.Text
-#, fuzzy
 msgid  "~Merge adjacent line styles"
 msgstr "~Sujungti gretimų eilučių stilius"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_NONE.String.Text
-#, fuzzy
 msgid  "Set No Borders"
 msgstr "Nenurodyti kraštinių"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_ONLYOUTER.String.Text
-#, fuzzy
 msgid  "Set Outer Border Only"
 msgstr "Nurodyti tik išorinę kraštinę"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERHORI.String.Text
-#, fuzzy
 msgid  "Set Outer Border and Horizontal Lines"
 msgstr "Nustatyti išorinę kraštinę ir horizontalias linijas"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERALL.String.Text
-#, fuzzy
 msgid  "Set Outer Border and All Inner Lines"
 msgstr "Nustatyti išorinę kraštinę ir visas vidines linijas"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERINNER.String.Text
-#, fuzzy
 msgid  "Set Outer Border Without Changing Inner Lines"
 msgstr "Nustatyti išorinę kraštinę vidinių linijų nekeičiant"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_DIAGONAL.String.Text
-#, fuzzy
 msgid  "Set Diagonal Lines Only"
 msgstr "Nurodyti tik įkypas linijas"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_ALL.String.Text
-#, fuzzy
 msgid  "Set All Four Borders"
 msgstr "Nurodyti visas keturias kraštines"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_LEFTRIGHT.String.Text
-#, fuzzy
 msgid  "Set Left and Right Borders Only"
 msgstr "Nustatyti tik kairę ir dešinę kraštines"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_TOPBOTTOM.String.Text
-#, fuzzy
 msgid  "Set Top and Bottom Borders Only"
 msgstr "Nustatyti tik viršutinę ir apatinę kraštines"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_ONLYLEFT.String.Text
-#, fuzzy
 msgid  "Set Left Border Only"
 msgstr "Nustatyti tik kairę kraštinę"
 
 #: source/tabpages/border.src#RID_SVXSTR_HOR_PRESET_ONLYHOR.String.Text
-#, fuzzy
 msgid  "Set Top and Bottom Borders, and All Inner Lines"
 msgstr "Nurodyti viršutinę ir apatinę kraštines bei visas vidines linijas"
 
 #: source/tabpages/border.src#RID_SVXSTR_VER_PRESET_ONLYVER.String.Text
-#, fuzzy
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "Nurodyti kairę ir dešinę kraštines bei visas vidines linijas"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.String.Text
-#, fuzzy
 msgid  "No Shadow"
 msgstr "Nėra šešėlio"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Bottom Right"
 msgstr "Mesti šešėlį apačioje iš dešinės"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Top Right"
 msgstr "Mesti šešėlį viršuje iš dešinės"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Bottom Left"
 msgstr "Mesti šešėlį apačioje iš kairės"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Top Left"
 msgstr "Mesti šešėlį viršuje iš kairės"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.TabPage.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "Figūrinės išnašos"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ABSTAND.FixedText.Text
-#, fuzzy
 msgid  "~Spacing"
 msgstr "~Tarpai"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_WINKEL.FixedText.Text
-#, fuzzy
 msgid  "~Angle"
 msgstr "~Kampas"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.StringList.item
-#, fuzzy
 msgid  "Free"
 msgstr "Laisvas"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.StringList.item
-#, fuzzy
 msgid  "30 Degrees"
 msgstr "30 laipsnių"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.4500.StringList.item
-#, fuzzy
 msgid  "45 Degrees"
 msgstr "45 laipsniai"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.6000.StringList.item
-#, fuzzy
 msgid  "60 Degrees"
 msgstr "60 laipsnių"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.9000.StringList.item
-#, fuzzy
 msgid  "90 Degrees"
 msgstr "90 laipsnių"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ANSATZ.FixedText.Text
-#, fuzzy
 msgid  "~Extension"
 msgstr "~Prievardis"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.4.StringList.item
-#, fuzzy
 msgid  "Optimal"
 msgstr "Optimalus"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
 msgid  "From top"
 msgstr "Iš viršaus"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
 msgid  "From left"
 msgstr "Iš kairės"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.StringList.item
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Horizontaliai"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.2.StringList.item
-#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikaliai"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_UM.FixedText.Text
-#, fuzzy
 msgid  "~By"
 msgstr "~Pagal"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ANSATZ_REL.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~Padėtis"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_LAENGE.FixedText.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~Ilgis"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.CB_LAENGE.CheckBox.Text
-#, fuzzy
 msgid  "~Optimal"
 msgstr "~Optimalus"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_1.String.Text
-#, fuzzy
 msgid  "Straight Line"
 msgstr "Tiesi linija"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.String.Text
-#, fuzzy
 msgid  "Angled Line"
 msgstr "Laužtė"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.String.Text
-#, fuzzy
 msgid  "Angled Connector Line"
 msgstr "Jungiamoji laužtė"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.String.Text
-#, fuzzy
 msgid  "Double-angled line"
 msgstr "Dviguba laužtė"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.String.Text
-#, fuzzy
 msgid  "Top;Middle;Bottom"
 msgstr "Viršus;Vidurys;Apačia"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.String.Text
-#, fuzzy
 msgid  "Left;Middle;Right"
 msgstr "Kairė;Vidurys;Dešinė"
 
 #: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
 msgid  "Position and Size"
 msgstr "Padėtis ir dydis"
 
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "Figūrinės išnašos"
 
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PageItem.Text
-#, fuzzy
 msgid  "Callout"
 msgstr "Figūrinė išnaša"
 

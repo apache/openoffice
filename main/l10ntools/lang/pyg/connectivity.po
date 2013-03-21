@@ -683,46 +683,37 @@ msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr ""
 
 #: source/resource/conn_error_message.src#256 + 2*100 + 0.String.Text
-#, fuzzy
 msgid  "The record operation has been vetoed."
 msgstr "Ko tembiapo hi'areterei rupi oñembotove."
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
-#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "Ko ñe'ẽjoaju oñe'ẽ mba'e ojevyevývare peteĩ térã hetave porandu rehe."
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
-#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
 msgstr "Ko téra ndaikatúi orekòvo mba'eveichagua diagonal ('/')."
 
 #: source/resource/conn_error_message.src#256 + 2*301 + 0.String.Text
-#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
 msgstr "$1$ ndaha'éi SQL rechaukaha."
 
 #: source/resource/conn_error_message.src#256 + 2*302 + 0.String.Text
-#, fuzzy
 msgid  "Query names must not contain quote characters."
 msgstr "Mba'eporandu rerakuéra ndaikatúi orahávo taikõi. "
 
 #: source/resource/conn_error_message.src#256 + 2*303 + 0.String.Text
-#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
 msgstr "Ko téra '$1$' oipuruhína marandu renda."
 
 #: source/resource/conn_error_message.src#256 + 2*304 + 0.String.Text
-#, fuzzy
 msgid  "No connection to the database exists."
 msgstr "Ndaikatúi ojeike marandu rendápe."
 
 #: source/resource/conn_error_message.src#256 + 2*500 + 0.String.Text
-#, fuzzy
 msgid  "No $1$ exists."
 msgstr "$1$ ndaipóri."
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
-#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Ndaikatúi ojehechaukapa oĩva ko tabla-pe. Eiporumína filtro."

@@ -284,8 +284,9 @@ msgid  "Data Table"
 msgstr ""
 
 #: source/text/schart/01/03010000.xhp#hd_id3150869.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/03010000.xhp\" name=\"Data Table\"\>Data Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05010100.xhp\" name=\"Data Point\">მონაცემთა წერტილი</link>"
 
 #: source/text/schart/01/03010000.xhp#par_id3151115.2
 msgid  "\<ahelp hid=\".uno:DiagramData\"\>Opens the\<emph\> Data Table \</emph\>dialog where you can edit the chart data.\</ahelp\>"
@@ -404,8 +405,9 @@ msgid  "Main Title"
 msgstr "მთავარი სათაური"
 
 #: source/text/schart/01/04010000.xhp#par_id3150371.4
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_MAINTITLE\"\>Marking the \<emph\>Main Title\</emph\> option activates the main title. Enter the desired title in the corresponding text field.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_MAINTITLE\">მონიშვნა <emph>მთავარი სათაურის</emph> მთავარი სათაურის პარამეტრი გააქტიურებულია.შედი სასურველ სათაურში შესაბამის ტქსტურ ველში.</ahelp>"
 
 #: source/text/schart/01/04010000.xhp#hd_id3146980.5
 #, fuzzy
@@ -413,40 +415,46 @@ msgid  "Subtitle"
 msgstr "ქვესათაური"
 
 #: source/text/schart/01/04010000.xhp#par_id3149404.6
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_SUBTITLE\"\>Marking the \<emph\>Subtitle\</emph\> option activates the subtitle. Enter the desired title in the corresponding text field.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_SUBTITLE\">მონიშვნა <emph>ქვესათაური</emph> ქვესათაურის პარამეტრი გააქტიურებულია. .შედი სასურველ სათაურში შესაბამის ტქსტურ ველში.</ahelp>"
 
 #: source/text/schart/01/04010000.xhp#par_id3152901.7
+#, fuzzy
 msgid  "\<variable id=\"sytexttitel\"\>\<ahelp hid=\".uno:ToggleTitle\"\>Click \<emph\>Title On/Off\</emph\> on the Formatting bar to show or hide the title and subtitle.\</ahelp\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"sytexttitel\"><ahelp hid=\".uno:ToggleTitle\">Click <emph>სათაურის ჩართვა/გამორთვა</emph> ფორმატის ზოლიზე აჩვენოს ან დამალოს სათაური და ქვესათაური.</ahelp></variable>"
 
 #: source/text/schart/01/04010000.xhp#hd_id3156018.8
 msgid  "X axis"
 msgstr ""
 
 #: source/text/schart/01/04010000.xhp#par_id3152869.9
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_X_AXIS\"\>Marking the \<emph\>X axis\</emph\> option activates the X axis title. Enter the desired title in the corresponding text field.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_X_AXIS\">მონიშვნა <emph>X ღერძი</emph>  x ღერძის სათაურის პარამეტრი აქტივირებულია. შედი სასურველ სათაურში შესაბამის ტექტურ ველში.</ahelp>"
 
 #: source/text/schart/01/04010000.xhp#hd_id3159226.10
 msgid  "Y axis"
 msgstr ""
 
 #: source/text/schart/01/04010000.xhp#par_id3154763.11
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_Y_AXIS\"\>Marking the \<emph\>Y axis\</emph\> option activates the Y axis title. Enter the desired title in the corresponding text field.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_X_AXIS\">მონიშვნა <emph>X ღერძი</emph>  x ღერძის სათაურის პარამეტრი აქტივირებულია. შედი სასურველ სათაურში შესაბამის ტექტურ ველში.</ahelp>"
 
 #: source/text/schart/01/04010000.xhp#hd_id3153009.12
 msgid  "Z axis"
 msgstr ""
 
 #: source/text/schart/01/04010000.xhp#par_id3154710.13
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_Z_AXIS\"\>Marking the \<emph\>Z axis\</emph\> option activates the Z axis title. Enter the desired title in the corresponding text field.\</ahelp\> This option is only available for 3-D charts."
-msgstr ""
+msgstr "<ahelp hid=\"SCH:EDIT:DLG_TITLE:EDT_Z_AXIS\">მონიშვნა <emph>Z ღერძი</emph> ქვესათარურის პარამეტრი გააქტიურებულია. შეიტანეთ სასურველი სათაური შესაბამის ტექსტურ ველში.</ahelp> პარამეტრი შესაძლებელია მხლოდ 3-D დიაგრამისთვის."
 
 #: source/text/schart/01/04010000.xhp#par_id3153073.14
+#, fuzzy
 msgid  "\<variable id=\"sytextachse\"\>\<ahelp hid=\".uno:ToggleAxisTitle\"\>Click \<emph\>Axes Title On/Off\</emph\> on the Formatting bar to show or hide the axis labels.\</ahelp\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"sytextachse\"><ahelp hid=\".uno:ToggleAxisTitle\">დაწკაპუნება <emph>ღერძის სათაურის ჩართვა/გამორთვა</emph> დაფორმატების ზოლი აჩვენოს ან დაფაროს ღერძის სათაური .</ahelp></variable>"
 
 #: source/text/schart/01/04020000.xhp#tit
 #, fuzzy
@@ -454,8 +462,9 @@ msgid  "Legend"
 msgstr "ლეგენდა"
 
 #: source/text/schart/01/04020000.xhp#bm_id3156441
+#, fuzzy
 msgid  "\<bookmark_value\>chart legends; hiding\</bookmark_value\>\<bookmark_value\>hiding;chart legends\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>დიაგრამის ლეგენდები; დამალვა</bookmark_value><bookmark_value>დამალვა;დიაგრამის ლეგენდები</bookmark_value>"
 
 #: source/text/schart/01/04020000.xhp#hd_id3156441.1
 #, fuzzy
@@ -467,12 +476,14 @@ msgid  "\<variable id=\"legende\"\>\<ahelp hid=\".uno:InsertMenuLegend\"\>Opens 
 msgstr ""
 
 #: source/text/schart/01/04020000.xhp#par_id3149124.3
+#, fuzzy
 msgid  "\<variable id=\"sytextlegende\"\>\<ahelp hid=\".uno:ToggleLegend\"\>To show or hide a legend, click \<emph\>Legend On/Off\</emph\> on the \<emph\>Formatting\</emph\> bar.\</ahelp\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"sytextlegende\"><ahelp hid=\".uno:ToggleLegend\">აჩვენოს ან დაიმალოს ლეგენდა, დააწკაპუნეთ <emph>ლეგენდის ჩართვა/გამორთვა</emph><emph>ფორმატირება</emph> ზოლზე.</ahelp></variable>"
 
 #: source/text/schart/01/04020000.xhp#par_id3145230
+#, fuzzy
 msgid  "\<image id=\"img_id3147346\" src=\"res/commandimagelist/sc_togglelegend.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3147346\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147346\" src=\"res/commandimagelist/sc_togglelegend.png\" width=\"0.2228inch\" height=\"0.2228inch\"><alt id=\"alt_id3147346\">ხატულა</alt></image>"
 
 #: source/text/schart/01/04020000.xhp#par_id3149207.16
 #, fuzzy
@@ -485,8 +496,9 @@ msgid  "Display"
 msgstr "ნაჩვენები"
 
 #: source/text/schart/01/04020000.xhp#par_id3150206.7
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH_CHECKBOX_DLG_LEGEND_CBX_SHOW\"\>Specifies whether to display a legend for the chart.\</ahelp\> This option is only visible if you call the dialog by choosing \<emph\>Insert - Legend\</emph\>."
-msgstr ""
+msgstr "<ahelp hid=\"SCH_CHECKBOX_DLG_LEGEND_CBX_SHOW\">განსაზღვრეთ თუ არის ნაჩვენები ლეგენდა დიაგრამისთვის.</ahelp> პარამეტრი ნაჩვენები იქნება მხლოდ თუ გამოიძახებ დიალოგს არჩევით <emph>ლეგენდის - ჩასმა</emph>."
 
 #: source/text/schart/01/04020000.xhp#hd_id3150201.4
 #, fuzzy
@@ -504,8 +516,9 @@ msgid  "Left"
 msgstr "მარცხნივ"
 
 #: source/text/schart/01/04020000.xhp#par_id3155087.9
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_LEFT\"\>Positions the legend at the left of the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_LEFT\">დიაგრამის მარცხნივ ლეგენდის მდებარეობა.</ahelp>"
 
 #: source/text/schart/01/04020000.xhp#hd_id3153816.10
 #, fuzzy
@@ -513,8 +526,9 @@ msgid  "Top"
 msgstr "ზევით"
 
 #: source/text/schart/01/04020000.xhp#par_id3153912.11
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_TOP\"\>Positions the legend at the top of the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_TOP\">დიაგრამის ზევით ლეგენდის მდებარეობა.</ahelp>"
 
 #: source/text/schart/01/04020000.xhp#hd_id3144773.12
 #, fuzzy
@@ -522,8 +536,9 @@ msgid  "Right"
 msgstr "მარჯვნივ"
 
 #: source/text/schart/01/04020000.xhp#par_id3155268.13
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_RIGHT\"\>Positions the legend at the right of the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_RIGHT\">დიაგრამის მაჯვნივ ლეგენდის მდებარეობა.</ahelp>"
 
 #: source/text/schart/01/04020000.xhp#hd_id3152871.14
 #, fuzzy
@@ -531,8 +546,9 @@ msgid  "Bottom"
 msgstr "ქვედა"
 
 #: source/text/schart/01/04020000.xhp#par_id3153249.15
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_BOTTOM\"\>Positions the legend at the bottom of the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:RADIOBUTTON:TP_LEGEND_POS:RBT_BOTTOM\">დიაგრამის ქვევით ლეგენდის მდებარეობა.</ahelp>"
 
 #: source/text/schart/01/04020000.xhp#hd_id1106200812072645
 msgid  "Text Orientation"
@@ -555,12 +571,14 @@ msgid  "Data Labels "
 msgstr ""
 
 #: source/text/schart/01/04030000.xhp#bm_id3150275
+#, fuzzy
 msgid  "\<bookmark_value\>data labels in charts\</bookmark_value\>      \<bookmark_value\>labels; for charts\</bookmark_value\>      \<bookmark_value\>charts; data labels\</bookmark_value\>      \<bookmark_value\>data values in charts\</bookmark_value\>      \<bookmark_value\>chart legends; showing icons with labels\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>დიაგრამებში მონაცემთა წარწერები</bookmark_value><bookmark_value>წარწერები; დიაგრამებისთვის</bookmark_value><bookmark_value>დიაგრამები; მონაცემთა წარწერები</bookmark_value><bookmark_value>დიაგრამაში მონაცემთა მნიშვნელობა</bookmark_value><bookmark_value>დიაგრამის ლეგენდა; ხატულაკებს აჩვენებს იარლიყით</bookmark_value>"
 
 #: source/text/schart/01/04030000.xhp#hd_id3150275.1
+#, fuzzy
 msgid  "\<variable id=\"datenbeschriftung\"\>\<link href=\"text/schart/01/04030000.xhp\" name=\"Data labels\"\>Data Labels\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"datenbeschriftung\"><link href=\"text/schart/01/04030000.xhp\" name=\"Data labels\">მონაცემთა იარლიყი</link></variable>"
 
 #: source/text/schart/01/04030000.xhp#par_id3154684.2
 msgid  "\<variable id=\"besch\"\>\<ahelp hid=\".uno:InsertMenuDataLabels\"\>Opens the\<emph\> Data Labels \</emph\>dialog, which enables you to set the data labels.\</ahelp\>\</variable\>"
@@ -575,8 +593,9 @@ msgid  "Show value as number"
 msgstr ""
 
 #: source/text/schart/01/04030000.xhp#par_id3150751.18
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_NUMBER\"\>Displays the absolute values of the data points.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_NUMBER\">აჩვენებს data pointeb-ის აბსოლუტურ მნიშვნელობებს.</ahelp>"
 
 #: source/text/schart/01/04030000.xhp#hd_id5077059
 msgid  "Number format"
@@ -591,8 +610,9 @@ msgid  "Show value as percentage"
 msgstr ""
 
 #: source/text/schart/01/04030000.xhp#par_id3156382.10
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_PERCENT\"\>Displays the percentage of the data points in each column.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_PERCENT\">აჩვენებს  data pointeb-ის პროცენტს სათითაო სვეტში.</ahelp>"
 
 #: source/text/schart/01/04030000.xhp#hd_id1316873
 msgid  "Percentage format"
@@ -607,16 +627,18 @@ msgid  "Show category"
 msgstr ""
 
 #: source/text/schart/01/04030000.xhp#par_id3154702.12
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH_CHECKBOX_TP_DATA_DESCR_CB_TEXT\"\>Shows the data point text labels.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH_CHECKBOX_TP_DATA_DESCR_CB_TEXT\">data point-ის  ჭდე ტექსტის ნახვა.</ahelp>"
 
 #: source/text/schart/01/04030000.xhp#hd_id3150298.15
 msgid  "Show legend key"
 msgstr ""
 
 #: source/text/schart/01/04030000.xhp#par_id3150205.16
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH_CHECKBOX_TP_DATA_DESCR_CB_SYMBOL\"\>Displays the legend icons next to each data point label.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH_CHECKBOX_TP_DATA_DESCR_CB_SYMBOL\">მომდევნო თითოული data point-ის ჭდის შემდეგ ლეგენდა ხატულაკის ჩვენება .</ahelp>"
 
 #: source/text/schart/01/04030000.xhp#hd_id3836787
 msgid  "Separator"
@@ -683,24 +705,27 @@ msgid  "X axis"
 msgstr ""
 
 #: source/text/schart/01/04040000.xhp#par_id3145230.6
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH_CHECKBOX_DLG_AXIS_CB_X_PRIMARY\"\>Displays the X axis as a line with subdivisions.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_PRIMARY\"> Y ღერძის ჩვენებბა ქვეყანყოფი ხაზეით</ahelp>"
 
 #: source/text/schart/01/04040000.xhp#hd_id3147003.17
 msgid  "Y axis"
 msgstr ""
 
 #: source/text/schart/01/04040000.xhp#par_id3154020.18
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_PRIMARY\"\>Displays the Y axis as a line with subdivisions.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_PRIMARY\"> Y ღერძის ჩვენებბა ქვეყანყოფი ხაზეით</ahelp>"
 
 #: source/text/schart/01/04040000.xhp#hd_id3150345.28
 msgid  "Z axis"
 msgstr ""
 
 #: source/text/schart/01/04040000.xhp#par_id3155113.29
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Z_PRIMARY\"\>Displays the Z axis as a line with subdivisions.\</ahelp\> This axis can only be displayed in 3D charts."
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Z_PRIMARY\">Z ღერძის ჩვენება axis as a line with subdivisions.</ahelp> This axis can only be displayed in 3D charts."
 
 #: source/text/schart/01/04040000.xhp#hd_id3150206.36
 #, fuzzy
@@ -716,16 +741,18 @@ msgid  "X axis"
 msgstr ""
 
 #: source/text/schart/01/04040000.xhp#par_id3156445.45
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_X_SECONDARY\"\>Displays a secondary X axis in the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_X_SECONDARY\">მერორადი  X ღერძის ჩვენება დიაგრამაზე.</ahelp>"
 
 #: source/text/schart/01/04040000.xhp#hd_id3152896.38
 msgid  "Y axis"
 msgstr ""
 
 #: source/text/schart/01/04040000.xhp#par_id3153818.39
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_SECONDARY\"\>Displays a secondary Y axis in the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_SECONDARY\">მეორადი Y ღერძის ჩვენება დიაგრამაზე.</ahelp>"
 
 #: source/text/schart/01/04040000.xhp#par_id3154762.41
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_AXIS:CB_Y_SECONDARY\"\>The major axis and the secondary axis can have different scaling. For example, you can scale one axis to 2 in. and the other to 1.5 in. \</ahelp\>"
@@ -736,8 +763,9 @@ msgid  "Y Error Bars"
 msgstr ""
 
 #: source/text/schart/01/04050000.xhp#hd_id3147428.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/04050000.xhp\" name=\"Y Error Bars\"\>Y Error Bars\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05060000.xhp\" name=\"Chart Wall\">დიაგრამული დაფა</link>"
 
 #: source/text/schart/01/04050000.xhp#par_id3149666.2
 msgid  "\<variable id=\"statistik\"\>\<ahelp hid=\".\"\>Use the \<emph\>Y Error Bars\</emph\> dialog to display error bars for 2D charts.\</ahelp\>\</variable\>"
@@ -1149,8 +1177,9 @@ msgid  "The first element of the third row of the LINEST output is the value of 
 msgstr ""
 
 #: source/text/schart/01/04050100.xhp#par_id4562211
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/04050000.xhp\"\>Y Error Bars tab page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05060000.xhp\" name=\"Chart Wall\">დიაგრამული დაფა</link>"
 
 #: source/text/schart/01/04060000.xhp#tit
 #, fuzzy
@@ -1162,8 +1191,9 @@ msgid  "\<bookmark_value\>aligning; 2D charts\</bookmark_value\>         \<bookm
 msgstr ""
 
 #: source/text/schart/01/04060000.xhp#hd_id3149400.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/04060000.xhp\" name=\"Options\"\>Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/04060000.xhp\" name=\"Options\">პარამეტრები</link>"
 
 #: source/text/schart/01/04060000.xhp#par_id3155067.2
 msgid  "Use this dialog to define some options that are available for specific chart types. The contents of the Options dialog vary with the chart type."
@@ -1345,8 +1375,9 @@ msgid  "X axis"
 msgstr ""
 
 #: source/text/schart/01/04070000.xhp#par_id3150749.6
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_X_MAIN\"\>Adds gridlines to the X axis of the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_X_MAIN\">ღობის ხაზების ჩამატება  X-ღერძის დიაგრამაზე.</ahelp>"
 
 #: source/text/schart/01/04070000.xhp#par_id3154754.7
 msgid  "\<variable id=\"sytextxgitter\"\>\<ahelp hid=\".uno:ToggleGridHorizontal\"\>The \<emph\>Horizontal Grid On/Off\</emph\> icon on the \<emph\>Formatting\</emph\> bar toggles the visibility of the grid display for the X axis. Note: This only works if the \<emph\>Minor grid\</emph\> check boxes in \<emph\>Insert - Grids\</emph\> are cleared.\</ahelp\>\</variable\> Otherwise, the minor grid remains visible when the major grid is turned off."
@@ -1357,8 +1388,9 @@ msgid  "Y axis"
 msgstr ""
 
 #: source/text/schart/01/04070000.xhp#par_id3147004.9
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Y_MAIN\"\>Adds gridlines to the Y axis of the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Y_MAIN\">ღობის ხაზის ჩამატება Y ღერძის დიაგრამზე.</ahelp>"
 
 #: source/text/schart/01/04070000.xhp#par_id3150344.10
 msgid  "\<variable id=\"sytextygitter\"\>\<ahelp hid=\".uno:ToggleGridVertical\"\>The \<emph\>Vertical Grid On/Off\</emph\> icon on the \<emph\>Formatting\</emph\> bar toggles the visibility of the grid display for the Y axis. Note: This only works if the X-axis \<emph\>Minor grid\</emph\> is not selected in \<emph\>Insert - Grids\</emph\>.\</ahelp\>\</variable\> Otherwise, the minor grid remains visible when the major grid is turned off."
@@ -1385,16 +1417,18 @@ msgid  "X axis"
 msgstr ""
 
 #: source/text/schart/01/04070000.xhp#par_id3148704.16
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_X_HELP\"\>Adds gridlines that subdivide the X axis into smaller sections.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Y_HELP\">საკოორდინაციო ბადის ხაზების დამატება რომელიც ყოფს ქვედანაყოფებათ  Y ღერძს პატარა დანაყოფებად.</ahelp>"
 
 #: source/text/schart/01/04070000.xhp#hd_id3153917.17
 msgid  "Y axis"
 msgstr ""
 
 #: source/text/schart/01/04070000.xhp#par_id3154536.18
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Y_HELP\"\>Adds gridlines that subdivide the Y axis into smaller sections.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:DLG_GRID:CB_Y_HELP\">საკოორდინაციო ბადის ხაზების დამატება რომელიც ყოფს ქვედანაყოფებათ  Y ღერძს პატარა დანაყოფებად.</ahelp>"
 
 #: source/text/schart/01/04070000.xhp#hd_id3148607.19
 msgid  "Z axis"
@@ -1421,36 +1455,44 @@ msgid  "\<variable id=\"objekteigenschaften\"\>\<ahelp hid=\".\"\>Formats the se
 msgstr ""
 
 #: source/text/schart/01/05010000.xhp#hd_id3153418.3
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05060000.xhp\" name=\"Chart Wall\"\>Chart Wall\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05060000.xhp\" name=\"Chart Wall\">დიაგრამული დაფა</link>"
 
 #: source/text/schart/01/05010000.xhp#hd_id3155766.4
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\"\>Chart Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\">დიაგრამის არე</link>"
 
 #: source/text/schart/01/05010000.xhp#hd_id3154255.5
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05070000.xhp\" name=\"Chart Floor\"\>Chart Floor\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05070000.xhp\" name=\"Chart Floor\">დიაგრამის ძირი</link>"
 
 #: source/text/schart/01/05010000.xhp#hd_id3146313.6
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020100.xhp\" name=\"Title\"\>Title\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020100.xhp\" name=\"Title\">სათაური</link>"
 
 #: source/text/schart/01/05010000.xhp#hd_id3150297.7
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05030000.xhp\" name=\"Legend\"\>Legend\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05030000.xhp\" name=\"Legend\">ლეგენდა</link>"
 
 #: source/text/schart/01/05010000.xhp#hd_id3143219.8
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040100.xhp\" name=\"X Axis\"\>X Axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040100.xhp\" name=\"X Axis\">X ღერძი</link>"
 
 #: source/text/schart/01/05010000.xhp#hd_id3150207.9
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040200.xhp\" name=\"Y Axis\"\>Y Axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040200.xhp\" name=\"Y Axis\">Y ღერძი</link>"
 
 #: source/text/schart/01/05010000.xhp#hd_id3166432.10
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"Grid\"\>Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"Grid\">ღობე</link>"
 
 #: source/text/schart/01/05010100.xhp#tit
 #, fuzzy
@@ -1458,8 +1500,9 @@ msgid  "Data Point"
 msgstr "მონაცემების წერტილი"
 
 #: source/text/schart/01/05010100.xhp#hd_id3153768.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05010100.xhp\" name=\"Data Point\"\>Data Point\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05010100.xhp\" name=\"Data Point\">მონაცემთა წერტილი</link>"
 
 #: source/text/schart/01/05010100.xhp#par_id3152577.2
 msgid  "This dialog allows you to change the properties of a selected data point. The dialog appears when there is only one data point selected when you choose \<emph\>Format - Format Selection\</emph\>. Some of the menu entries are only available for 2D or 3D charts."
@@ -1474,8 +1517,9 @@ msgid  "Data Series"
 msgstr ""
 
 #: source/text/schart/01/05010200.xhp#hd_id3150449.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05010200.xhp\" name=\"Data Series\"\>Data Series\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05010100.xhp\" name=\"Data Point\">მონაცემთა წერტილი</link>"
 
 #: source/text/schart/01/05010200.xhp#par_id3145750.2
 msgid  "Use this to change the properties of a selected data series. This dialog appears when one data series is selected when you choose \<emph\>Format - Format Selection\</emph\>. Some of the menu entries are only available for 2D or 3D charts."
@@ -1486,8 +1530,9 @@ msgid  "Any changes made here affect the entire data series. For example, if you
 msgstr ""
 
 #: source/text/schart/01/05010200.xhp#hd_id3146916.3
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/04050000.xhp\" name=\"Y Error Bars\"\>Y Error Bars\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05060000.xhp\" name=\"Chart Wall\">დიაგრამული დაფა</link>"
 
 #: source/text/schart/01/05020000.xhp#tit
 #, fuzzy
@@ -1495,40 +1540,48 @@ msgid  "Title"
 msgstr "დაყოფა"
 
 #: source/text/schart/01/05020000.xhp#bm_id3150791
+#, fuzzy
 msgid  "\<bookmark_value\>titles; formatting charts\</bookmark_value\>\<bookmark_value\>formatting; chart titles\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>სათაური; დიაგრამის ფორმატირება</bookmark_value><bookmark_value>ფორმატირება; დიაგრამის სათაური</bookmark_value>"
 
 #: source/text/schart/01/05020000.xhp#hd_id3150791.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020000.xhp\" name=\"Title\"\>Title\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020000.xhp\" name=\"Title\">სათაური</link>"
 
 #: source/text/schart/01/05020000.xhp#par_id3125863.2
 msgid  "The\<emph\> Title \</emph\>menu command opens a submenu for editing the properties of the titles in the chart."
 msgstr ""
 
 #: source/text/schart/01/05020000.xhp#hd_id3155414.3
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020100.xhp\" name=\"Main title\"\>Main title\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020100.xhp\" name=\"Main title\">მთავარი სათაური</link>"
 
 #: source/text/schart/01/05020000.xhp#hd_id3156441.4
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020100.xhp\" name=\"Subtitle\"\>Subtitle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020100.xhp\" name=\"Subtitle\">ქვესათაური</link>"
 
 #: source/text/schart/01/05020000.xhp#hd_id3151073.5
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020100.xhp\" name=\"X-axis title\"\>X-axis title\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020100.xhp\" name=\"X-axis title\">X-ღერძის სათაური</link>"
 
 #: source/text/schart/01/05020000.xhp#hd_id3154732.6
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020200.xhp\" name=\"Y-axis title\"\>Y-axis title\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020200.xhp\" name=\"Y-axis title\">Y-ღერძის სათაური</link>"
 
 #: source/text/schart/01/05020000.xhp#hd_id3154017.7
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020100.xhp\" name=\"Z-axis title\"\>Z-axis title\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020100.xhp\" name=\"Z-axis title\">Z-ღერძის სათაური</link>"
 
 #: source/text/schart/01/05020000.xhp#hd_id3153711.8
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020200.xhp\" name=\"All titles\"\>All titles\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020200.xhp\" name=\"All titles\">მთლიანი სათაური</link>"
 
 #: source/text/schart/01/05020100.xhp#tit
 #, fuzzy
@@ -1536,8 +1589,9 @@ msgid  "Title"
 msgstr "დაყოფა"
 
 #: source/text/schart/01/05020100.xhp#bm_id3150769
+#, fuzzy
 msgid  "\<bookmark_value\>editing; titles\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>სათაურის; რედაქტირება</bookmark_value>"
 
 #: source/text/schart/01/05020100.xhp#hd_id3150769.2
 #, fuzzy
@@ -1549,20 +1603,23 @@ msgid  "\<variable id=\"titel\"\>\<ahelp hid=\".uno:ZTitle\"\>Modifies the prope
 msgstr ""
 
 #: source/text/schart/01/05020100.xhp#hd_id3149378.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020100.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\">დიაგრამის არე</link>"
 
 #: source/text/schart/01/05020101.xhp#tit
 msgid  "Alignment"
 msgstr ""
 
 #: source/text/schart/01/05020101.xhp#bm_id3150793
+#, fuzzy
 msgid  "\<bookmark_value\>aligning;titles in charts\</bookmark_value\>\<bookmark_value\>titles;alignment (charts)\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>aligning;titles in charts</bookmark_value><bookmark_value>სათაურის;გასწორება (charts)</bookmark_value>"
 
 #: source/text/schart/01/05020101.xhp#hd_id3150793.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020101.xhp\" name=\"Alignment\"\>Alignment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020101.xhp\" name=\"Alignment\">გასწორება</link>"
 
 #: source/text/schart/01/05020101.xhp#par_id3125864.2
 #, fuzzy
@@ -1592,16 +1649,18 @@ msgid  "\<variable id=\"titel\"\>\<ahelp hid=\".uno:YTitle\"\>Modifies the prope
 msgstr ""
 
 #: source/text/schart/01/05020200.xhp#hd_id3152596.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020100.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\">დიაგრამის არე</link>"
 
 #: source/text/schart/01/05020201.xhp#tit
 msgid  "Alignment"
 msgstr ""
 
 #: source/text/schart/01/05020201.xhp#hd_id3149656.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05020201.xhp\" name=\"Alignment\"\>Alignment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05020201.xhp\" name=\"Alignment\">გასწორება</link>"
 
 #: source/text/schart/01/05020201.xhp#par_id3156422.2
 #, fuzzy
@@ -1618,8 +1677,9 @@ msgid  "Show labels"
 msgstr "იარლიყის ჩვენება"
 
 #: source/text/schart/01/05020201.xhp#par_id3154319.72
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:TP_AXIS_LABEL:CB_AXIS_LABEL_SCHOW_DESCR\"\>Specifies whether to show or hide the axis labels.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:TP_AXIS_LABEL:CB_AXIS_LABEL_SCHOW_DESCR\">განსაზღვრავს ღერძის იარლიყის აჩვენოს თუ არა.</ahelp>"
 
 #: source/text/schart/01/05020201.xhp#par_id3147436.75
 msgid  "\<variable id=\"sytextbeschr\"\>\<ahelp hid=\".uno:ToggleAxisDescr\"\>The\<emph\> AxesTitle On/Off \</emph\>icon on the \<emph\>Formatting\</emph\> bar switches the labeling of all axes on or off.\</ahelp\>\</variable\>"
@@ -1689,8 +1749,9 @@ msgid  "Break"
 msgstr "შეწყვეტა"
 
 #: source/text/schart/01/05020201.xhp#par_id3155268.69
+#, fuzzy
 msgid  "\<ahelp hid=\"SCH:CHECKBOX:TP_AXIS_LABEL:CB_AXIS_LABEL_TEXTBREAK\"\>Allows a text break.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SCH:CHECKBOX:TP_AXIS_LABEL:CB_AXIS_LABEL_TEXTBREAK\">ტქსტის შეწყვეტის ნებართვა.</ahelp>"
 
 #: source/text/schart/01/05020201.xhp#hd_id3159205.56
 #, fuzzy
@@ -1766,12 +1827,14 @@ msgid  "\<variable id=\"legende\"\>\<ahelp hid=\".uno:Legend\"\>Defines the bord
 msgstr ""
 
 #: source/text/schart/01/05030000.xhp#hd_id3145232.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020100.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\">დიაგრამის არე</link>"
 
 #: source/text/schart/01/05030000.xhp#hd_id3147344.3
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/04020000.xhp\" name=\"Display\"\>Display\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/04020000.xhp\" name=\"Display\">ჩვენება</link>"
 
 #: source/text/schart/01/05040000.xhp#tit
 #, fuzzy
@@ -1779,8 +1842,9 @@ msgid  "Axis"
 msgstr "ღერძი"
 
 #: source/text/schart/01/05040000.xhp#hd_id3149456.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040000.xhp\" name=\"Axis\"\>Axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040000.xhp\" name=\"Axis\">ღერძი</link>"
 
 #: source/text/schart/01/05040000.xhp#par_id3150441.2
 msgid  "This opens a submenu to edit axial properties."
@@ -1791,36 +1855,42 @@ msgid  "The tabs in the dialogs depend on the chart type selected."
 msgstr ""
 
 #: source/text/schart/01/05040000.xhp#hd_id3153729.3
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040100.xhp\" name=\"X axis\"\>X axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040100.xhp\" name=\"X axis\">X ღერძი</link>"
 
 #: source/text/schart/01/05040000.xhp#hd_id3147394.4
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040200.xhp\" name=\"Y axis\"\>Y axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040200.xhp\" name=\"Y axis\">Y ღერძი</link>"
 
 #: source/text/schart/01/05040000.xhp#hd_id3153160.9
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040100.xhp\" name=\"Secondary X Axis\"\>Secondary X Axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040100.xhp\" name=\"Secondary X Axis\">მეორადი X ღერძი</link>"
 
 #: source/text/schart/01/05040000.xhp#par_id3149401.10
 msgid  "\<ahelp hid=\".uno:DiagramAxisA\"\>Opens a dialog where you can edit the properties of the secondary X axis. To insert a secondary X axis, choose \<emph\>Insert - Axes\</emph\> and select \<emph\>X axis\</emph\>.\</ahelp\>"
 msgstr ""
 
 #: source/text/schart/01/05040000.xhp#hd_id3145640.7
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040200.xhp\" name=\"Secondary Y Axis\"\>Secondary Y Axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040200.xhp\" name=\"Secondary Y Axis\">მეორადი Y ღერძი</link>"
 
 #: source/text/schart/01/05040000.xhp#par_id3159264.8
 msgid  "\<ahelp hid=\".uno:DiagramAxisB\"\>Opens a dialog where you can edit the properties of the secondary Y axis. To insert a secondary Y axis, choose \<emph\>Insert - Axes\</emph\> and select \<emph\>Y axis\</emph\>.\</ahelp\>"
 msgstr ""
 
 #: source/text/schart/01/05040000.xhp#hd_id3145228.5
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040100.xhp\" name=\"Z axis\"\>Z axis\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040100.xhp\" name=\"Z axis\">Z ღერძი</link>"
 
 #: source/text/schart/01/05040000.xhp#hd_id3147345.6
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040100.xhp\" name=\"All axes\"\>All axes\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040100.xhp\" name=\"All axes\">ყველა ღერძი</link>"
 
 #: source/text/schart/01/05040100.xhp#tit
 #, fuzzy
@@ -1828,8 +1898,9 @@ msgid  "Axes"
 msgstr "ღერძი"
 
 #: source/text/schart/01/05040100.xhp#bm_id3153768
+#, fuzzy
 msgid  "\<bookmark_value\>axes;formatting\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Y ღერძი; ფორმატირება</bookmark_value>"
 
 #: source/text/schart/01/05040100.xhp#hd_id3153768.1
 #, fuzzy
@@ -1849,16 +1920,18 @@ msgid  "Scaling the X axis is only possible in the X-Y chart type."
 msgstr ""
 
 #: source/text/schart/01/05040100.xhp#hd_id3145230.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020100.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\">დიაგრამის არე</link>"
 
 #: source/text/schart/01/05040200.xhp#tit
 msgid  "Y Axis"
 msgstr ""
 
 #: source/text/schart/01/05040200.xhp#bm_id3145673
+#, fuzzy
 msgid  "\<bookmark_value\>Y axes; formatting\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Y ღერძი; ფორმატირება</bookmark_value>"
 
 #: source/text/schart/01/05040200.xhp#hd_id3145673.1
 msgid  "Y Axis"
@@ -1869,12 +1942,14 @@ msgid  "\<variable id=\"yachse\"\>\<ahelp hid=\".uno:DiagramAxisY\"\>Opens the\<
 msgstr ""
 
 #: source/text/schart/01/05040200.xhp#hd_id3145171.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020100.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05080000.xhp\" name=\"Chart Area\">დიაგრამის არე</link>"
 
 #: source/text/schart/01/05040200.xhp#hd_id3146119.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Numbers\"\>Numbers\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"Numbers\">რიცხვები</link>"
 
 #: source/text/schart/01/05040201.xhp#tit
 msgid  "Scale"
@@ -1885,8 +1960,9 @@ msgid  "\<bookmark_value\>scaling; axes\</bookmark_value\>\<bookmark_value\>loga
 msgstr ""
 
 #: source/text/schart/01/05040201.xhp#hd_id3150868.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040201.xhp\" name=\"Scale\"\>Scale\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05040201.xhp\" name=\"Scaling\">მაშტაბირება</link>"
 
 #: source/text/schart/01/05040201.xhp#par_id3154013.2
 msgid  "Controls the scaling of the X or Y axis."
@@ -2018,8 +2094,9 @@ msgid  "\<bookmark_value\>positioning; axes\</bookmark_value\>\<bookmark_value\>
 msgstr ""
 
 #: source/text/schart/01/05040202.xhp#hd_id3150868.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05040202.xhp\" name=\"positioning\"\>Positioning\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/04060000.xhp\" name=\"Options\">პარამეტრები</link>"
 
 #: source/text/schart/01/05040202.xhp#par_id3154013.2
 msgid  "Controls the positioning of the axis."
@@ -2118,12 +2195,14 @@ msgid  "Grid"
 msgstr ""
 
 #: source/text/schart/01/05050000.xhp#bm_id3155602
+#, fuzzy
 msgid  "\<bookmark_value\>grids; formatting axes\</bookmark_value\>\<bookmark_value\>axes; formatting grids\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>ღერძების; ღერძების ფორმატირება</bookmark_value><bookmark_value>ღერძების; ბადეების ღერძები</bookmark_value>"
 
 #: source/text/schart/01/05050000.xhp#hd_id3155602.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050000.xhp\" name=\"Grid\"\>Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050000.xhp\" name=\"Grid\">ბადე</link>"
 
 #: source/text/schart/01/05050000.xhp#par_id3155764.2
 #, fuzzy
@@ -2131,56 +2210,66 @@ msgid  "Opens a submenu, where you select the grid you want to format."
 msgstr "ქვემენიუს გახსნა, სადაც მონიშნულის ბადე გინდათ დააფორმატოთ"
 
 #: source/text/schart/01/05050000.xhp#hd_id3150045.3
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"X Axis Major Grid\"\>X Axis Major Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"X Axis Minor Grid\">X ღერძის არაძირთადი ბადე</link>"
 
 #: source/text/schart/01/05050000.xhp#hd_id3145228.4
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"Y Axis Major Grid\"\>Y Axis Major Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"Y Axis Minor Grid\">Yღერძის არაძირთადი ბადე</link>"
 
 #: source/text/schart/01/05050000.xhp#hd_id3147346.5
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"Z Axis Major Grid\"\>Z Axis Major Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"X Axis Minor Grid\">X ღერძის არაძირთადი ბადე</link>"
 
 #: source/text/schart/01/05050000.xhp#hd_id3154021.6
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"X Axis Minor Grid\"\>X Axis Minor Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"X Axis Minor Grid\">X ღერძის არაძირთადი ბადე</link>"
 
 #: source/text/schart/01/05050000.xhp#hd_id3150307.7
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"Y Axis Minor Grid\"\>Y Axis Minor Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"Y Axis Minor Grid\">Yღერძის არაძირთადი ბადე</link>"
 
 #: source/text/schart/01/05050000.xhp#hd_id3166428.8
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"Z Axis minor Grid\"\>Z Axis minor Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"Z Axis minor Grid\">Z ღერძის არაძირითადი ბადე</link>"
 
 #: source/text/schart/01/05050000.xhp#hd_id3145585.9
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05050100.xhp\" name=\"All Axis Grids\"\>All Axis Grids\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05050100.xhp\" name=\"All Axis Grids\">მთლიანი ღერძის ბადეები</link>"
 
 #: source/text/schart/01/05050100.xhp#tit
 msgid  "Grid"
 msgstr ""
 
 #: source/text/schart/01/05050100.xhp#bm_id3150398
+#, fuzzy
 msgid  "\<bookmark_value\>X axes;grid formatting\</bookmark_value\>\<bookmark_value\>Y axes;grid formatting\</bookmark_value\>\<bookmark_value\>Z axes; grid formatting\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>X axes;grid formatting</bookmark_value><bookmark_value>Y ღერძი;ბადე formatting</bookmark_value><bookmark_value>Z ღერძი; ბადე formatting</bookmark_value>"
 
 #: source/text/schart/01/05050100.xhp#hd_id3150398.2
 msgid  "Grid"
 msgstr ""
 
 #: source/text/schart/01/05050100.xhp#par_id3152577.1
+#, fuzzy
 msgid  "\<variable id=\"gitter\"\>\<ahelp hid=\".uno:DiagramGridAll\"\>Opens the \<emph\>Grid\</emph\> dialog for defining grid properties.\</ahelp\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"gitter\"><ahelp hid=\".uno:DiagramGridAll\">გახსნა <emph>Grid</emph> დიალოგის  ბადის თვისებების განსასაზღვრავთ.</ahelp></variable>"
 
 #: source/text/schart/01/05060000.xhp#tit
 msgid  "Chart Wall"
 msgstr ""
 
 #: source/text/schart/01/05060000.xhp#bm_id3150792
+#, fuzzy
 msgid  "\<bookmark_value\>charts; formatting walls\</bookmark_value\>\<bookmark_value\>formatting;chart walls\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>charts; formatting walls</bookmark_value><bookmark_value>ფორმატირება;დიაგრამა walls</bookmark_value>"
 
 #: source/text/schart/01/05060000.xhp#hd_id3150792.1
 msgid  "Chart Wall"
@@ -2195,8 +2284,9 @@ msgid  "Chart Floor"
 msgstr ""
 
 #: source/text/schart/01/05070000.xhp#bm_id3154346
+#, fuzzy
 msgid  "\<bookmark_value\>charts; formatting floors\</bookmark_value\>\<bookmark_value\>formatting; chart floors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>charts; formatting floors</bookmark_value><bookmark_value>ფორმატირება; დიაგრამა floors</bookmark_value>"
 
 #: source/text/schart/01/05070000.xhp#hd_id3154346.1
 msgid  "Chart Floor"
@@ -2211,8 +2301,9 @@ msgid  "Chart Area"
 msgstr ""
 
 #: source/text/schart/01/05080000.xhp#bm_id3149670
+#, fuzzy
 msgid  "\<bookmark_value\>charts; formatting areas\</bookmark_value\>\<bookmark_value\>formatting; chart areas\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>charts; formatting areas</bookmark_value><bookmark_value>ფორმატირება; დიაგრამა areas</bookmark_value>"
 
 #: source/text/schart/01/05080000.xhp#hd_id3149670.1
 msgid  "Chart Area"
@@ -2228,8 +2319,9 @@ msgid  "Arrangement"
 msgstr "წყობა"
 
 #: source/text/schart/01/05120000.xhp#hd_id3159153.1
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/05120000.xhp\" name=\"Arrangement\"\>Arrangement\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/05120000.xhp\" name=\"Arrangement\">წყობა</link>"
 
 #: source/text/schart/01/05120000.xhp#par_id3145750.2
 msgid  "Allows you to modify the order of the data series already set in the chart."
@@ -2630,8 +2722,9 @@ msgid  "Chart Type Area"
 msgstr ""
 
 #: source/text/schart/01/type_area.xhp#bm_id4130680
+#, fuzzy
 msgid  "\<bookmark_value\>area charts\</bookmark_value\>\<bookmark_value\>chart types;area\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>გასწორება; 2D დიაგრამა</bookmark_value><bookmark_value>დიაგრამები; გასწორება</bookmark_value>"
 
 #: source/text/schart/01/type_area.xhp#hd_id310678
 msgid  "\<variable id=\"type_area\"\>\<link href=\"text/schart/01/type_area.xhp\"\>Chart Type Area\</link\>\</variable\>"
@@ -2666,8 +2759,9 @@ msgid  "Chart Type Bubble"
 msgstr ""
 
 #: source/text/schart/01/type_bubble.xhp#bm_id2183975
+#, fuzzy
 msgid  "\<bookmark_value\>bubble charts\</bookmark_value\>      \<bookmark_value\>chart types;bubble\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>გასწორება; 2D დიაგრამა</bookmark_value><bookmark_value>დიაგრამები; გასწორება</bookmark_value>"
 
 #: source/text/schart/01/type_bubble.xhp#hd_id1970722
 msgid  "\<variable id=\"type_bubble\"\>\<link href=\"text/schart/01/type_bubble.xhp\"\>Chart Type Bubble\</link\>\</variable\>"
@@ -2924,8 +3018,9 @@ msgid  "Chart Type Line"
 msgstr ""
 
 #: source/text/schart/01/type_line.xhp#bm_id2187566
+#, fuzzy
 msgid  "\<bookmark_value\>line charts\</bookmark_value\>\<bookmark_value\>chart types;line\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>გასწორება; 2D დიაგრამა</bookmark_value><bookmark_value>დიაგრამები; გასწორება</bookmark_value>"
 
 #: source/text/schart/01/type_line.xhp#hd_id9422894
 msgid  "\<variable id=\"type_line\"\>\<link href=\"text/schart/01/type_line.xhp\"\>Chart Type Line\</link\>\</variable\>"
@@ -3936,8 +4031,9 @@ msgid  "Chart Wizard - Data Series"
 msgstr ""
 
 #: source/text/schart/01/wiz_data_series.xhp#bm_id8641621
+#, fuzzy
 msgid  "\<bookmark_value\>order of chart data\</bookmark_value\>\<bookmark_value\>data series\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>გასწორება; 2D დიაგრამა</bookmark_value><bookmark_value>დიაგრამები; გასწორება</bookmark_value>"
 
 #: source/text/schart/01/wiz_data_series.xhp#hd_id6124149
 msgid  "\<variable id=\"wiz_data_series\"\>\<link href=\"text/schart/01/wiz_data_series.xhp\"\>Chart Wizard - Data Series\</link\>\</variable\>"
@@ -4156,99 +4252,82 @@ msgid  "\<ahelp hid=\".uno:ContextType\" visibility=\"visible\"\>Displays the na
 msgstr ""
 
 #: source/text/schart/04/01020000.xhp#tit
-#, fuzzy
 msgid  "Shortcuts for Charts"
 msgstr "დიაგრამების მალმხმობები"
 
 #: source/text/schart/04/01020000.xhp#bm_id3150767
 msgid  "\<bookmark_value\>shortcut keys; charts\</bookmark_value\>\<bookmark_value\>charts; shortcuts\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>მალსახმობი ღილაკები; დიაგრამები</bookmark_value><bookmark_value>დიაგრამები; მალმხმობები</bookmark_value>"
 
 #: source/text/schart/04/01020000.xhp#hd_id3150767.1
 msgid  "\<variable id=\"Chart_keys\"\>\<link href=\"text/schart/04/01020000.xhp\" name=\"Shortcuts for Charts\"\>Shortcuts for Charts\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"Chart_keys\"><link href=\"text/schart/04/01020000.xhp\" name=\"Shortcuts for Charts\">მალსახმობები დიაგრამებისათვის</link></variable>"
 
 #: source/text/schart/04/01020000.xhp#par_id3155412.2
-#, fuzzy
 msgid  "You can use the following shortcut keys in charts."
 msgstr "დიაგრამებში შეგიძლიათ გამოიყენოთ შემდეგი მალმხმობები."
 
 #: source/text/schart/04/01020000.xhp#par_id3159154.3
 msgid  "You can also use the general \<link href=\"text/shared/04/01010000.xhp\" name=\"shortcut keys\"\>shortcut keys\</link\> for $[officename]."
-msgstr ""
+msgstr "თქვენ ასევე შეგიძლიათ გამოიყენოთ ძირითადი <link href=\"text/shared/04/01010000.xhp\" name=\"shortcut keys\">მალმხმობები</link> $[officename]-სთვის."
 
 #: source/text/schart/04/01020000.xhp#hd_id3149262.4
-#, fuzzy
 msgid  "Shortcuts in Charts"
 msgstr "მალმხმობებიდიაგრამებში"
 
 #: source/text/schart/04/01020000.xhp#hd_id3151073.5
-#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "მალმხმობები"
 
 #: source/text/schart/04/01020000.xhp#par_id3154490.6
-#, fuzzy
 msgid  "Results"
 msgstr "შედეგები"
 
 #: source/text/schart/04/01020000.xhp#hd_id3154729.7
-#, fuzzy
 msgid  "Tab"
 msgstr "Tab"
 
 #: source/text/schart/04/01020000.xhp#par_id3154511.8
-#, fuzzy
 msgid  "Select next object."
 msgstr "შემდეგი ობიექტის არჩევა."
 
 #: source/text/schart/04/01020000.xhp#hd_id3155064.9
-#, fuzzy
 msgid  "Shift+Tab"
 msgstr "Shift+Tab"
 
 #: source/text/schart/04/01020000.xhp#par_id3149020.10
-#, fuzzy
 msgid  "Select previous object."
 msgstr "წინა ობიექტის არჩევა."
 
 #: source/text/schart/04/01020000.xhp#hd_id3155443.11
-#, fuzzy
 msgid  "Home"
 msgstr "Home"
 
 #: source/text/schart/04/01020000.xhp#par_id3156382.12
-#, fuzzy
 msgid  "Select first object."
 msgstr "პირველი ობიექტის არჩევა."
 
 #: source/text/schart/04/01020000.xhp#hd_id3153963.13
-#, fuzzy
 msgid  "End"
 msgstr "End"
 
 #: source/text/schart/04/01020000.xhp#par_id3154702.14
-#, fuzzy
 msgid  "Select last object."
 msgstr "უკანასკნელი ობიექტის არჩევა."
 
 #: source/text/schart/04/01020000.xhp#hd_id3143218.15
-#, fuzzy
 msgid  "Esc"
 msgstr "Esc"
 
 #: source/text/schart/04/01020000.xhp#par_id3147005.16
-#, fuzzy
 msgid  "Cancel selection"
 msgstr "არჩევანის უარყოფა"
 
 #: source/text/schart/04/01020000.xhp#hd_id3159239.17
-#, fuzzy
 msgid  "up/down/left/right arrow"
 msgstr "ზედა/ქვედა/მარცხენა/მარჯვენა ისრები"
 
 #: source/text/schart/04/01020000.xhp#par_id3149210.18
-#, fuzzy
 msgid  "Move the object in the direction of the arrow."
 msgstr "ობიექტის გადატანა ისრის მიმართულებით."
 
@@ -4261,22 +4340,18 @@ msgid  "Moves the selected pie segment in the direction of the arrow."
 msgstr ""
 
 #: source/text/schart/04/01020000.xhp#hd_id3145584.21
-#, fuzzy
 msgid  "F2 in titles"
 msgstr "F2 სათაურებში"
 
 #: source/text/schart/04/01020000.xhp#par_id3154372.22
-#, fuzzy
 msgid  "Enter text input mode."
 msgstr "ტექსტის შეყვანის რეჟიმში გადასვლა."
 
 #: source/text/schart/04/01020000.xhp#hd_id3146980.23
-#, fuzzy
 msgid  "F3"
 msgstr "F3"
 
 #: source/text/schart/04/01020000.xhp#par_id3152988.24
-#, fuzzy
 msgid  "Open group so that you can edit the individual components (in legend and data series)."
 msgstr "ჯგუფიდას გახსნა ინდივიდუალური კომპონენტების რედაქტირებისათვის (ლეგენდაში და მონაცემების ნაკრებში.)"
 
@@ -4285,17 +4360,14 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</ca
 msgstr ""
 
 #: source/text/schart/04/01020000.xhp#par_id3153915.26
-#, fuzzy
 msgid  "Exit group (in legend and data series)."
 msgstr "ჯგუფიდან გასვლა (ლეგენდაში და მონაცემების ნაკრებში.)"
 
 #: source/text/schart/04/01020000.xhp#hd_id3155269.27
-#, fuzzy
 msgid  "+/-"
 msgstr "+/-"
 
 #: source/text/schart/04/01020000.xhp#par_id3156016.28
-#, fuzzy
 msgid  "Reduce or enlarge the chart"
 msgstr "დიაგრამის გაზრდა არ დაპატარავება"
 
@@ -4308,7 +4380,6 @@ msgid  "Moves the selected pie segment off or into the pie chart."
 msgstr ""
 
 #: source/text/schart/main0000.xhp#tit
-#, fuzzy
 msgid  "Charts in $[officename]"
 msgstr "დიაგრამები $[officename]-ში"
 
@@ -4318,7 +4389,7 @@ msgstr ""
 
 #: source/text/schart/main0000.xhp#hd_id3148664.1
 msgid  "\<variable id=\"chart_main\"\>\<link href=\"text/schart/main0000.xhp\" name=\"Charts in $[officename]\"\>Using Charts in %PRODUCTNAME\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"chart_main\"><link href=\"text/schart/main0000.xhp\" name=\"Charts in $[officename]\">დიაგრამების გამოყენება %PRODUCTNAME-ში</link></variable>"
 
 #: source/text/schart/main0000.xhp#par_id3154685.2
 msgid  "\<variable id=\"chart\"\>$[officename] lets you present data graphically in a chart, so that you can visually compare data series and view trends in the data. You can insert charts into spreadsheets, text documents, drawings, and presentations. \</variable\>"
@@ -4613,7 +4684,6 @@ msgid  "\<ahelp hid=\".\"\>Opens the properties dialog for the selected element.
 msgstr ""
 
 #: source/text/schart/main0202.xhp#hd_id0810200902300545
-#, fuzzy
 msgid  "Chart Type"
 msgstr "დიაგრამის ტიპები"
 
@@ -4662,16 +4732,14 @@ msgid  "\<ahelp hid=\".\"\>Moves all chart elements to their default positions i
 msgstr ""
 
 #: source/text/schart/main0503.xhp#tit
-#, fuzzy
 msgid  "$[officename] Chart Features"
 msgstr "$[officename] დიაგრამის თვისებები"
 
 #: source/text/schart/main0503.xhp#hd_id3150543.1
 msgid  "\<link href=\"text/schart/main0503.xhp\" name=\"$[officename] Chart Features\"\>$[officename] Chart Features\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/main0503.xhp\" name=\"$[officename] Chart Features\">$[officename] დიაგრამის თვისებები</link>"
 
 #: source/text/schart/main0503.xhp#par_id3150868.2
-#, fuzzy
 msgid  "Charts allow you to present data so that it is easy to visualize."
 msgstr "დიაგრამები იძლევიან საშუალებას წარმოაჩინონ მონაცემები ისე რომ იყოს ადვილად ვიზუალირებული."
 
@@ -4680,21 +4748,17 @@ msgid  "You can create a chart from source data in a Calc spreadsheet or a Write
 msgstr ""
 
 #: source/text/schart/main0503.xhp#hd_id3153143.7
-#, fuzzy
 msgid  "Chart Types"
 msgstr "დიაგრამის ტიპები"
 
 #: source/text/schart/main0503.xhp#par_id3151112.8
-#, fuzzy
 msgid  "Choose from a variety of 3D charts and 2D charts, such as bar charts, line charts, stock charts. You can change chart types with a few clicks of the mouse."
 msgstr "აირჩიეთ 3D და 2D ვარიანტის დიაგრამები, როგორც ზოლის დიაგრამები, ხაზის დიაგრამები, ბირჟის დიაგრამები.თქვენ შეგიძლიათ შეცვალოთ დიაგრამის ტიპები მაუსის რამოდენიმე დაწკაპუნებით"
 
 #: source/text/schart/main0503.xhp#hd_id3149665.10
-#, fuzzy
 msgid  "Individual Formatting"
 msgstr "ინდივიდუალური ფორმატირება"
 
 #: source/text/schart/main0503.xhp#par_id3156441.11
-#, fuzzy
 msgid  "You can customize individual chart elements, such as axes, data labels, and legends, by right-clicking them in the chart, or with toolbar icons and menu commands."
 msgstr "თქვენ შეგიძლიათ მოარგოთ ინდივიდუალურად დიაგრამების ელემენტები, ღერძები,მონაცემთა ჭდეები და ლეგენდები დიაგრამაზე მარჯვენა დაწკაპუნებით, ან ინსტრუმენტთა ზოლის ხატულებზე ბრძანებით."

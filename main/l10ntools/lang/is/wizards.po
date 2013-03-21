@@ -445,7 +445,7 @@ msgstr "Sniðmát búið til með <wizard_name> þann <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Ekki tókst að keyra leiðarvísinn, þar sem mikilvægar skrár fundust ekki.\nFarðu í 'Verkfæri - Valkostir - %PRODUCTNAME - Slóðir' smelltu á 'Sjálfgefið' hnappinn til að endursetja slóðirnar á upprunalegar stillingar.\nKeyrðu svo aftur leiðarvísinn."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Gagnasvið á e~yðublaðinu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Gagnareitir eru alltaf birtir og valdir frá vinstri listanum.\nEf það er hægt, þá eru þeir túlkaðir sem myndir."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Undireyðublað er eyðublað sem er sett inn í önnur eyðublöð.\nNotaðu undireyðublöð til að birta gögn úr töflum eða fyrirspurnum sem eru með einn á móti mörgum venslum."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Gagnasvið á eyðublaði"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Töflutengingin '<FIELDNAME1>' og '<FIELDNAME2>' hefur verið valin tvisvar.\nEn aðeins má velja töflutengingu einu sinni."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Setja nafn á eyðublaðið"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Eyðublað með heitinu '%FORMNAME' er þegar til.\nVeldu annað nafn."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Ekki tókst að bæta við sviði þar sem fjöldi sviða fer yfir %COUN
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Þegar er til tafla sem heitir '%TABLENAME'.\nSláðu inn annað nafn."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Vefleiðsagnarforrit"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Þetta vefleiðsagnarforrit er hugsað til að hjálpa þér að birta skjöl á internetinu.\n\nÞað mun umbreyta skjölum svo hægt sé að skoða þau með vefvafra. Þar að auki býr það til sérstaka efnisyfirlitssíðu með tenglum/stiklum til að auðvelda aðgang að efni skjalanna. Vefleiðsagnarforritið gefur þér líka kost á að sérsníða hönnun og útlit vefsvæðisins.\n\nÞú getur síðan haldið efninu uppfærðu sem þú hefur þegar birt eða fjarlægt skjöl þegar það hentar."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Forskoða"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Völdum stillingum verður eytt.\n\nErtu viss um að þú viljir eyða þessum stillingum? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Ekki tókst að búa til FTP möppu '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "FTP mappan '%FILENAME' er ekki til. \nViltu búa til möppuna núna?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Ekki er hægt að búa til Zip skránna '%FILENAME': þegar er til mappa
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Ekki er hægt að búa til möppu '%FILENAME'. \nAthugaðu skrifréttindi."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Mappan '%FILENAME' er ekki til. \nViltu búa til möppuna núna?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

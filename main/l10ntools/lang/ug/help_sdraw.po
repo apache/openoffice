@@ -37,7 +37,7 @@ msgstr "بۇ بۇيرۇقنى زىيارەت قىل…"
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">بۇ بۇيرۇقنى زىيارەت قىل…</variable>"
 
 #: source/text/sdraw/01/04010000.xhp#tit
 msgid  "Insert Page"
@@ -45,11 +45,11 @@ msgstr "بەت قىستۇر"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"بەت قىستۇر\">قىستۇر Page</link>"
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
 msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seitetext\">تاللىغان بەتتىن كېيىن بوش بەت قىستۇر.</variable>"
 
 #: source/text/sdraw/04/01020000.xhp#tit
 msgid  "Shortcut Keys for Drawings"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
 msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_keys\"><link href=\"text/sdraw/04/01020000.xhp\" name=\"سىزمىچىلىق تېز كۇنۇپكىسى\">سىزمىچىلىق تېز كۇنۇپكىسى</link></variable>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
@@ -69,7 +69,7 @@ msgstr "تۆۋەندىكىسى سىزمىچىلىق پۈتۈكىدە ئىشلى�
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154730.103
 msgid  "You can also use the \<link href=\"text/shared/04/01010000.xhp\" name=\"general shortcut keys for $[officename]\"\>general shortcut keys for $[officename]\</link\>."
-msgstr ""
+msgstr "<link href=\"text/shared/04/01010000.xhp\" name=\" $[officename] ئادەتتىكى تېز كۇنۇپكا \"> $[officename] ئادەتتىكى تېز كۇنۇپكا</link> ئىشلەتسىڭىزمۇ بولىدۇ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149121.3
 msgid  "Function Keys for Drawings"
@@ -81,7 +81,7 @@ msgstr "تېز كۇنۇپكا"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153713.6
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>ئۈنۈم</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150044.7
 msgid  "F2"
@@ -101,7 +101,7 @@ msgstr "ئوبيېكتنى تەھرىرلەش ئۈچۈن گۇرۇپپا ئاچ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155113.11
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3159238.12
 msgid  "Close group editor."
@@ -113,7 +113,7 @@ msgstr "Shift+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152994.14
 msgid  "Opens the \<emph\>Duplicate\</emph\> dialog."
-msgstr ""
+msgstr "<emph>كۆچۈر</emph> سۆزلىشىش رامكىسىنى ئاچ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154488.15
 msgid  "F4"
@@ -121,7 +121,7 @@ msgstr "F4"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149406.16
 msgid  "Opens the \<emph\>Position and Size\</emph\> dialog."
-msgstr ""
+msgstr "<emph>ئورنى ۋە چوڭلۇقى</emph> سۆزلىشىش رامكىسىنى ئاچ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3148870.21
 msgid  "F5"
@@ -129,7 +129,7 @@ msgstr "F5"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153917.22
 msgid  "Opens the \<emph\>Navigator\</emph\>."
-msgstr ""
+msgstr " <emph>يول باشچى</emph> ئاچ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3157982.25
 msgid  "F7"
@@ -141,11 +141,11 @@ msgstr "ئىملا تەكشۈر."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152869.27
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F7"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F7"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154765.28
 msgid  "Opens the \<emph\>Thesaurus\</emph\>."
-msgstr ""
+msgstr "<emph>مەنىداش سۆزلەر لۇغىتى</emph> ئاچ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146962.29
 msgid  "F8"
@@ -157,7 +157,7 @@ msgstr "نۇقتا تەھرىر ئاچ/ياپ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149317.31
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+F8"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+F8"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147250.32
 msgid  "Fits to frame."
@@ -165,7 +165,7 @@ msgstr "كاندۇكقا تولدۇر"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150434.35
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+T\</caseinline\>\<defaultinline\>F11\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3151389.36
 msgid  "Opens Styles and Formatting window."
@@ -185,7 +185,7 @@ msgstr "تېز كۇنۇپكا"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3146323.43
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>ئۈنۈم</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149946.44
 msgid  "Plus(+) Key"
@@ -221,7 +221,7 @@ msgstr "تاللىغان مەزمۇننى چوڭايت."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150867.52
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+G"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+G"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149250.53
 msgid  "Groups selected objects."
@@ -229,7 +229,7 @@ msgstr "تاللىغان ئوبيېكتنى بىرلەشتۈر."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149955.54
 msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+A"
-msgstr ""
+msgstr "Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+A"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148582.55
 msgid  "Ungroups selected group."
@@ -237,7 +237,7 @@ msgstr "تاللىغان گۇرۇپپىنى پارچىلا."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146852.56
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153110.57
 msgid  "Combines selected objects."
@@ -245,7 +245,7 @@ msgstr "تاللىغان ئوبيېكتنى بىرلەشتۈر."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153567.58
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147366.59
 msgid  "Uncombines selected objects."
@@ -253,7 +253,7 @@ msgstr "تاللىغان ئوبيېكتنى پارچىلا."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153730.60
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155928.61
 msgid  "Bring to front."
@@ -261,7 +261,7 @@ msgstr "ئۈستى قەۋەتكە يوللا."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145245.62
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148393.63
 msgid  "Bring forward."
@@ -269,7 +269,7 @@ msgstr "ئالدىغا بىر قەۋەت."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150928.64
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156062.65
 msgid  "Send backward."
@@ -277,7 +277,7 @@ msgstr "كەينىگە"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145298.66
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149028.67
 msgid  "Send to back."
@@ -293,7 +293,7 @@ msgstr "تېز كۇنۇپكا"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155370.70
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>ئۈنۈم</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AD7
 msgid  "Page Up"
@@ -313,7 +313,7 @@ msgstr "كەينى بەتكە ئالماش"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AED
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Up"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AFD
 msgid  "Switch to previous layer"
@@ -321,7 +321,7 @@ msgstr "ئالدى قەۋەتكە ئالماش"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF8
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Down"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Down"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF2
 msgid  "Switch to next layer"
@@ -337,7 +337,7 @@ msgstr "تاللانغان ئوبيېكتنى يا ئوق يۆنىلىشىدە �
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156259.73
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Arrow Key"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+يا ئوق كۇنۇپكىسى"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147171.74
 msgid  "Moves the page view in the direction of the arrow key."
@@ -353,7 +353,7 @@ msgstr "چاشقىنەك كۇنۇپكىسىنى قويۇپ بەرگەندە سۆ
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154643.104
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter with keyboard focus (F6) on a drawing object icon on Tools bar"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter )كۇنۇپكا مەركىزى(F6) قورال ستونىدىكى بىر سىزمىچىلىق ئوبيېكتى سىنبەلگىسىگە توغرىغاندا)"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3150756.105
 msgid  "Inserts a drawing object of default size into the center of the current view."
@@ -385,7 +385,7 @@ msgstr "تېكست ئوبيېكتى تاللانغان بولسا تېكست ھ�
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155851.112
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154046.113
 msgid  "Enters text mode if a text object is selected. If there are no text objects or if you have cycled through all of the text objects on the page, a new page is inserted."
@@ -393,15 +393,15 @@ msgstr "تېكست ئوبيېكتى تاللانغان بولسا تېكست ھ�
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149977.81
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152812.82
 msgid  "Press the \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> key and drag with the mouse to draw or resize an object from the center of the object outward."
-msgstr ""
+msgstr "Press the <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> كۇنۇپكىسىنى بېسىپ تۇرۇپ چاشقىنەكنى سۆرىگەندە ئوبيېكت مەركىزىدىن سىرتقا قارىتا ئوبيېكت سىزالايدۇ ياكى چوڭلۇقىنى ئۆزگەرتەلايدۇ."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3143232.83
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> + click on an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> + ئوبيېكتنى چېكىڭ"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156007.84
 msgid  "Selects the object behind the currently selected object."
@@ -409,7 +409,7 @@ msgstr "نۆۋەتتە تاللانغان ئوبيېكتنىڭ كەينىدىك�
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3147252.85
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>+Shift+click an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Shift+ئوبيېكتنى چېكىڭ"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3145666.86
 msgid  "Selects the object in front of the currently selected object."
@@ -645,7 +645,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145236.23
 msgid  "\<link href=\"text/shared/01/03170000.xhp\" name=\"Color bar\"\>Color bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03170000.xhp\" name=\"رەڭ ستونى\">رەڭ ستونى</link>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#tit
 msgid  "Combining Objects and Constructing Shapes"
@@ -689,7 +689,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3156019
 msgid  " \<image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"\>\<alt id=\"alt_id3157978\"\>Illustration for combining objects\</alt\>\</image\>"
-msgstr ""
+msgstr "  "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153249.35
 msgid  "In the illustration, the uncombined objects are on the left and the combined objects on the right."
@@ -725,15 +725,15 @@ msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145829.91
 msgid  " \<emph\>Merge\</emph\> "
-msgstr ""
+msgstr "   <emph>بىرلەشتۈر</emph>   "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3154680.92
 msgid  " \<emph\>Subtract\</emph\> "
-msgstr ""
+msgstr "   <emph>كېمەيت</emph>   "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153034.93
 msgid  " \<emph\>Intersect\</emph\>."
-msgstr ""
+msgstr "   <emph>ئۆتۈشتۈر</emph>."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3145144.94
 msgid  "Shape Commands"
@@ -749,7 +749,7 @@ msgstr "شەكىل - بىرلەشتۈر"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3148585
 msgid  " \<image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3145593\"\>Illustration for merging shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "  "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150001.73
 msgid  "Adds the area of the selected objects to the area of the lowermost object in the stacking order."
@@ -761,7 +761,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150338
 msgid  " \<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3154505\"\>Illustration for subtracting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "  "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150022.75
 msgid  "Subtracts the area of the selected objects from the area of the lowermost object in the stacking order."
@@ -773,7 +773,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150570
 msgid  " \<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"\>\<alt id=\"alt_id3150658\"\>Illustration for intersecting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr "  "
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157972.79
 msgid  "The overlapping area of the selected objects creates the new shape."
@@ -821,7 +821,7 @@ msgstr ""
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3149405.23
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "<emph>جەزملە</emph> نى چېكىڭ."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3151240.24
 msgid  "A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed."
@@ -1005,15 +1005,16 @@ msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3149876.36
 msgid  "Click \<emph\>Replace\</emph\>."
-msgstr ""
+msgstr "<emph>ئالماشتۇر</emph>نى چېكىڭ."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3157871.37
 msgid  "If you want to expand or contract the color selection area, increase or decrease the tolerance of the \<emph\>Color Replacer\</emph\> tool and repeat your selection."
 msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3146878.39
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06030000.xhp\" name=\"Color Replacer\"\>Color Replacer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03170000.xhp\" name=\"رەڭ ستونى\">رەڭ ستونى</link>"
 
 #: source/text/sdraw/guide/gradient.xhp#tit
 msgid  "Creating Gradient Fills"
@@ -1081,8 +1082,9 @@ msgid  "Set the gradient properties and click \<emph\>Modify\</emph\> to save th
 msgstr ""
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3156396.16
+#, fuzzy
 msgid  "Click \<emph\>OK.\</emph\> "
-msgstr ""
+msgstr "<emph>جەزملە</emph>نى چېكىڭ.  "
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3149947.40
 msgid  "Using Gradients and Transparency"
@@ -1174,8 +1176,9 @@ msgid  "To group objects:"
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3149018
+#, fuzzy
 msgid  "\<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3145643\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3145643\">سىنبەلگە</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147346.29
 msgid  "Select the objects you want to group and choose \<emph\>Modify - Group\</emph\>."
@@ -1194,16 +1197,18 @@ msgid  "Selecting Objects in a Group"
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150370
+#, fuzzy
 msgid  "\<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155376\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155376\">سىنبەلگە</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3156450.56
 msgid  "You can select single objects in a group by entering the group. Double-click a group to enter it and click on the object to select it. You can also add or delete objects to and from a group in this mode. The objects that are not part of the group are grayed out."
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3151239
+#, fuzzy
 msgid  "\<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155264\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155264\">سىنبەلگە</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150213.58
 msgid  "To exit a group, double-click anywhere outside it."
@@ -1407,8 +1412,9 @@ msgid  "You can rotate an object around its default pivot point (center point) o
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3146975
+#, fuzzy
 msgid  "\<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"\>\<alt id=\"alt_id3154729\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155264\">سىنبەلگە</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3150716.14
 msgid  "Select the object you want to rotate. On the \<emph\>Mode\</emph\> toolbar in $[officename] Draw or on the \<emph\>Drawing\</emph\> bar in $[officename] Impress, click the \<emph\>Rotate\</emph\> icon."
@@ -1586,243 +1592,231 @@ msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</em
 msgstr ""
 
 #: source/text/sdraw/main0000.xhp#tit
-#, fuzzy
 msgid  "Welcome to the $[officename] Draw Help"
 msgstr "$[officename] Draw يادىمىنى ئىشلىتىشىڭىزنى قارشى ئالىمىز"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
 msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
-msgstr ""
+msgstr "<switchinline select=\"appl\"> <caseinline select=\"DRAW\"/> </switchinline>$[officename] Draw يادىمىنى ئىشلىتىشىڭىزنى قارشى ئالىمىز"
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
-#, fuzzy
 msgid  "How to Work With $[officename] Draw"
 msgstr " $[officename] Draw قانداق ئىشلەيدۇ"
 
 #: source/text/sdraw/main0000.xhp#hd_id3150363.5
-#, fuzzy
 msgid  "$[officename] Draw Menus, Toolbars, and Keys"
 msgstr "$[officename] Draw نىڭ تىزىملىك، قورال ستونى ۋە تېز كۇنۇپكىسى"
 
 #: source/text/sdraw/main0000.xhp#hd_id3166430.4
-#, fuzzy
 msgid  "Help about the Help"
 msgstr "ياردەم يېتەكچىسى"
 
 #: source/text/sdraw/main0100.xhp#tit
-#, fuzzy
 msgid  "Menus"
 msgstr "تىزىملىكلەر"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/sdraw/main0100.xhp\" name=\"تىزىملىكلەر\">تىزىملىكلەر</link></variable>"
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
-#, fuzzy
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
 msgstr "تۆۋەندىكىسى $[officename] Draw نىڭ ھەممە تىزىملىك، تارماق تىزىملىك ۋە سۆزلىشىش رامكىلىرىنىڭ چۈشەندۈرۈشى"
 
 #: source/text/sdraw/main0101.xhp#tit
-#, fuzzy
 msgid  "File"
 msgstr "ھۆججەت"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
 msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"ھۆججەت\">ھۆججەت</link>"
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
 msgid  "This menu contains general commands for working with Draw documents, such as open, close and print. To close $[officename] Draw, click \<emph\>Exit\</emph\>."
-msgstr ""
+msgstr "بۇ تىزىملىك سىزمىچىلىق پۈتۈكىدە دائىم ئىشلىتىدىغان بۇيرۇقلارنى ئۆز ئىچىگە ئالىدۇ. مەسىلەن، ئاچ، ياپ، باس. ئەگەر $[officename] Draw نى ياپماقچى بولسىڭىز پەقەت<emph>چېكىن</emph>نى چەكسىڭىزلا بولىدۇ."
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"ئاچ\">ئاچ</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"باشقا ئاتتا ساقلا\">باشقا ئاتتا ساقلا</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"چىقار\">چىقار</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"نەشرى\">نەشرى</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"خاسلىق\">خاسلىق</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"باس\">باس</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"پرىنتېر تەڭشەك\">پرىنتېر تەڭشەك</link>"
 
 #: source/text/sdraw/main0102.xhp#tit
-#, fuzzy
 msgid  "Edit"
 msgstr "تەھرىر"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0102.xhp\" name=\"تەھرىر\">تەھرىر</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
-#, fuzzy
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
 msgstr "بۇ تىزىملىكتىكى بۇيرۇقلار سىزمىچىلىق پۈتۈكى تەھرىرلەشكە ئىشلىتىلىدۇ (مەسىلەن، كۆچۈر ۋە چاپلا)"
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"ئۆزگىچە چاپلا\">ئۆزگىچە چاپلا</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"ئىزدە & ئالماشتۇر\">ئىزدە & ئالماشتۇر</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"نۇقتا\">نۇقتا</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
-#, fuzzy
 msgid  "Enables you to edit points on your drawing."
 msgstr "سىزمىچىلىقتا نۇقتا تەھرىرلەشكە ئىشلىتىلىدۇ."
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"ئۇلاش نۇقتىسى\">ئۇلاش نۇقتىسى</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
-#, fuzzy
 msgid  "Enables you to edit glue points on your drawing."
 msgstr "سىزمىچىلىقتا ئۇلاش نۇقتىسى تەھرىرلەشكە ئىشلىتىلىدۇ."
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"كۆچۈر\">كۆچۈر</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"تەدرىجىي يوشۇر\">تەدرىجىي يوشۇر</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"سۆز بۆلىكى\">سۆز بۆلىكى</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"ئۇلىنىش\">ئۇلىنىش</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"سۈرەت خەرىتە\">سۈرەت خەرىتە</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"ئۇلانما\">ئۇلانما</link>"
 
 #: source/text/sdraw/main0103.xhp#tit
-#, fuzzy
 msgid  "View"
 msgstr "كۆرۈنۈش"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
 msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0103.xhp\" name=\"كۆرۈنۈش\">كۆرۈنۈش</link>"
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
-#, fuzzy
 msgid  "Sets the display properties of Draw documents."
 msgstr "سىزمىچىلىق پۈتۈكىنىڭ كۆرسىتىش خاسلىقىنى تەڭشەيدۇ."
 
 #: source/text/sdraw/main0103.xhp#par_idN105AB
-#, fuzzy
 msgid  "Normal"
 msgstr "نورمال"
 
 #: source/text/sdraw/main0103.xhp#par_idN105AF
-#, fuzzy
 msgid  "Switch to normal view of the page."
 msgstr "ئادەتتىكى بەت يۈزى كۆرۈنۈشىگە ئالماشتۇرىدۇ."
 
 #: source/text/sdraw/main0103.xhp#par_idN105B2
-#, fuzzy
 msgid  "Master"
 msgstr "قېلىپ"
 
 #: source/text/sdraw/main0103.xhp#par_idN105B6
-#, fuzzy
 msgid  "Switch to the master page view."
 msgstr "قېلىپ بەت كۆرۈنۈشكە ئالماشتۇرىدۇ"
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"چوڭايت تارايت\">چوڭايت تارايت</link>"
 
 #: source/text/sdraw/main0104.xhp#tit
-#, fuzzy
 msgid  "Insert"
 msgstr "قىستۇر"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
 msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0104.xhp\" name=\"قىستۇر\">قىستۇر</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
-#, fuzzy
 msgid  "This menu allows you to insert elements, such as graphics and guides, into Draw documents."
 msgstr "بۇ تىزىملىك گرافىك، ياردەمچى سىزىققا ئوخشاش ئېلېمېنتلارنى Draw سىزمىچىلىق پۈتۈكىگە قىستۇرۇشىڭىزغا يول قويىدۇ."
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"تام تەسۋىر\">تام تەسۋىر</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
 msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04020000.xhp\" name=\"قەۋەت\">قەۋەت</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
 msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000.xhp\" name=\"كوئوردىنات نۇقتىسى/سىزىق قىستۇر\">كوئوردىنات نۇقتىسى/سىزىق قىستۇر</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"ئاچ\">ئاچ</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"ئالاھىدە ھەرپلەر\">ئالاھىدە ھەرپلەر</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"ئۇلانما\">ئۇلانما</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04080100.xhp\" name=\"جەدۋەل\">جەدۋەل</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"دىئاگرامما\">دىئاگرامما</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
 msgid  "Inserts a chart."
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"لەيلىمە رامكا\">لەيلىمە رامكا</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"ھۆججەت\">ھۆججەت</link>"
 
 #: source/text/sdraw/main0105.xhp#tit
 #, fuzzy
@@ -1830,8 +1824,9 @@ msgid  "Format"
 msgstr "فورمات"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0105.xhp\" name=\"فورمات\">فورمات</link>"
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
 #, fuzzy
@@ -1839,40 +1834,49 @@ msgid  "Contains commands for formatting the layout and the contents of your doc
 msgstr "پۈتۈك ئۇسلۇبى ۋە مەزمۇنىنى فورماتلاشقا ئىشلىتىدىغان بۇيرۇقلارنى ئۆز ئىچىگە ئالىدۇ."
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"ھەرپ\">ھەرپ</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"ئابزاس\">ئابزاس</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"تۈر بەلگىسى/تەرتىپ نومۇرى\">تۈر بەلگىسى ۋە تەرتىپ نومۇرى</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"بەت\">بەت</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"ئورنى ۋە چوڭلۇقى\">ئورنى ۋە چوڭلۇقى</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"سىزىق\">سىزىق</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"دائىرە\">دائىرە</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"تېكست\">تېكست</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05140000.xhp\" name=\"قەۋەت\">قەۋەت</link>"
 
 #: source/text/sdraw/main0106.xhp#tit
 #, fuzzy
@@ -1880,8 +1884,9 @@ msgid  "Tools"
 msgstr "قورال"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0106.xhp\" name=\"قورال\">قورال</link>"
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
 #, fuzzy
@@ -1889,12 +1894,14 @@ msgid  "This menu provides tools for $[officename] Draw as well as access to lan
 msgstr "بۇ تىزىملىك $[officename] Draw غا ئىشلىتىدىغان قورال شۇنداقلا تىل ۋە سىستېما تەڭشەك زىيارىتىنى تەمىنلەيدۇ."
 
 #: source/text/sdraw/main0106.xhp#hd_id3153415.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"ئاپتۇماتىك تۈزەت\">ئاپتۇماتىك تۈزەت تەڭشىكى</link>"
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"ئىختىيارىچە\">ئىختىيارىچە</link>"
 
 #: source/text/sdraw/main0200.xhp#tit
 #, fuzzy
@@ -1902,8 +1909,9 @@ msgid  "Toolbars"
 msgstr "قورال ستونى"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
+#, fuzzy
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/sdraw/main0200.xhp\" name=\"قورال ستونى\">قورال ستونى</link></variable>"
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
 #, fuzzy
@@ -1916,8 +1924,9 @@ msgid  "Line and Filling Bar"
 msgstr "سىزىق ۋە تولدۇرۇش ستونى"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0202.xhp\" name=\"سىزىق ۋە تولدۇرۇش ستونى\">سىزىق ۋە تولدۇرۇش ستونى</link>"
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
 #, fuzzy
@@ -1925,24 +1934,29 @@ msgid  "The Line and Filling bar contains commands for the current editing mode.
 msgstr "سىزىق ۋە تولدۇرۇش ستونى نۆۋەتتىكى تەھرىرلەش ھالىتىدە ئىشلىتىدىغان بۇيرۇقلارنى ئۆز ئىچىگە ئالىدۇ."
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"سىزىق ئۇسلۇبى\">سىزىق ئۇسلۇبى</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"سىزىق توملۇقى\">سىزىق توملۇقى</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"سىزىق رەڭگى\">سىزىق رەڭگى</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"تەكشىلىك ئۇسلۇبى/تولدۇر\">تەكشىلىك ئۇسلۇبى/تولدۇر</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"سايە\">سايە</link>"
 
 #: source/text/sdraw/main0210.xhp#tit
 #, fuzzy
@@ -1950,16 +1964,19 @@ msgid  "Drawing Bar"
 msgstr "سىزمىچىلىق ستونى"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"سىزمىچىلىق ستونى\">سىزمىچىلىق ستونى</link>"
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
+#, fuzzy
 msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
-msgstr ""
+msgstr "<emph>سىزمىچىلىق</emph> ستونى ئاساسىي سىزمىچىلىق قوراللىرىنى ئۆز ئىچىگە ئالىدۇ."
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10060000.xhp\">تىك تۆت بۇلۇڭ</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
 #, fuzzy
@@ -1967,8 +1984,9 @@ msgid  "Draws a filled rectangle where you drag in the current document. Click w
 msgstr "نۆۋەتتىكى پۈتۈكتە سۆرىگەن جايغا رەڭ تولدۇرۇلغان تىك تۆت بۇلۇڭدىن بىرنى سىزىدۇ. سىزىدىغان تىك تۆت بۇلۇڭنىڭ بىر بۇلۇڭىنى چېكىپ ئاندىن سۆرەپ ئېھتىياجلىق چوڭلۇققا ئېرىشەلەيسىز. ئەگەر كۋادىرات سىزماقچى بولسىڭىز سۆرىگەندە Shift كۇنۇپكىسىنى بېسىپ تۇرۇڭ."
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10070000.xhp\">ئېللىپىس</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
 #, fuzzy
@@ -1976,8 +1994,9 @@ msgid  "Draws a filled oval where you drag in the current document. Click where 
 msgstr "نۆۋەتتىكى پۈتۈكتە سۆرىگەن جايغا رەڭ تولدۇرۇلغان ئېللىپىستىن بىرنى سىزىدۇ. سىزىدىغان ئېللىپىسنىڭ بىر بۇلۇڭىنى چېكىپ ئاندىن سۆرەپ ئېھتىياجلىق چوڭلۇققا ئېرىشەلەيسىز. ئەگەر چەمبەر سىزماقچى بولسىڭىز سۆرىگەندە Shift كۇنۇپكىسىنى بېسىپ تۇرۇڭ."
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">تېكست</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
 #, fuzzy
@@ -1993,8 +2012,9 @@ msgid  "Opens the Arrows toolbar to insert lines and arrows."
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"نۇقتا\">نۇقتا</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
 #, fuzzy
@@ -2002,8 +2022,9 @@ msgid  "Enables you to edit points on your drawing."
 msgstr "سىزمىچىلىقتا نۇقتا تەھرىرلەشكە ئىشلىتىلىدۇ."
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"ئۇلاش نۇقتىسى\">ئۇلاش نۇقتىسى</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
 #, fuzzy
@@ -2011,16 +2032,19 @@ msgid  "Enables you to edit glue points on your drawing."
 msgstr "سىزمىچىلىقتا ئۇلاش نۇقتىسى تەھرىرلەشكە ئىشلىتىلىدۇ."
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"ھۆججەتتىن\">ھۆججەتتىن</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170000.xhp\" name=\"كۆزنەك كونترول\">كۆزنەك كونترول</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
+#, fuzzy
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">سوزۇش ئاچ/ياپ</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
 #, fuzzy
@@ -2033,48 +2057,59 @@ msgid  "Options Bar"
 msgstr "تاللانما ستونى"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
+#, fuzzy
 msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0213.xhp\" name=\"تاللانما ستونى\">تاللانما ستونى</link>"
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
+#, fuzzy
 msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "<emph>كۆرۈش - قورال ستونى - تاللانما</emph> نى تاللاش ئارقىلىق <emph>تاللانما</emph> قورال ستونىنى كۆرسىتىدۇ."
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171200.xhp\" name=\"سېتكا كۆرسەت\">سېتكا كۆرسەت</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"يۆتكىگەندە قوشۇمچە سىزىق كۆرسەت\">يۆتكىگەندە قوشۇمچە سىزىق كۆرسەت</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"سېتكىغا توغرىلا\">سېتكىغا توغرىلا</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"قوشۇمچە سىزىققا توغرىلا\">قوشۇمچە سىزىققا توغرىلا</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"بەت يان ئارىلىقىغا توغرىلا\">بەت يان ئارىلىقىغا توغرىلا</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"ئوبيېكت رامكىسىغا توغرىلا\">ئوبيېكت رامكىسىغا توغرىلا</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13170000.xhp\" name=\"ئوبيېكت نۇقتىسىغا توغرىلا\">ئوبيېكت نۇقتىسىغا توغرىلا</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"تېز تەھرىرگە يول قوي\">تېز تەھرىرگە يول قوي</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"تېكست دائىرىسىنىلا تاللا\">تېكست دائىرىسىنىلا تاللا</link>"
 
 #: source/text/sdraw/main0503.xhp#tit
 #, fuzzy
@@ -2082,8 +2117,9 @@ msgid  "$[officename] Draw Features"
 msgstr "$[officename] Draw ئىقتىدارى"
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
+#, fuzzy
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw ئىقتىدارى\">$[officename] Draw ئىقتىدارى </link></variable>"
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
 #, fuzzy

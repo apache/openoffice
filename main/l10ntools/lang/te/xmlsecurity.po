@@ -53,19 +53,19 @@ msgstr "తిరిగిఅమర్చు"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "చాలా యెక్కువ (~V).\nనమ్మదగిన ఫైలు స్థానములనుండి మాత్రమే స్థూలములు నడుపబడుటకు అనుమతించబడును. అన్ని యితర స్థూలములు, సంతకం చేయబడినా లేక పోయినా, అచేతనము చేయబడును."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "ఎక్కువ (~i).\nనమ్మదగిన మూలములనుండి సంతకం చేయబడిన స్థూలములు మాత్రమే నడుపబడుటకు అనుమతించబడును. సంతకం చేయబడని స్థూలములు అచేతనముచేయబడినవి."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "మధ్యమం (~M).\nనమ్మదగని మూలములనుండి స్థూలములను నిర్వర్తించుటకు ముందుగా నిర్ధారణ అవసరమగును."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~తక్కువ (సిఫార్సు చేయడంలేదు).\nఅన్ని స్థూలములు నిర్ధారణ లేకుండా నిర్వర్తించబడును. తెరువబడే అన్ని పత్రములు సురక్షితమైనవేనని మీకు ఖచ్చితంగా తెలిస్తే మాత్రమే ఈ అమర్పును వుపయోగించుము."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "నమ్మదగిన ధృవీకరణపత్రములు"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "విరికి యీయబడెను\tవీరిచేత యీయబడెను\tగడువుముగియు తేది"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "క్రిందివి ఈ ప్యాకేజీను సంత
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tసంతకం చేయబడినది\tడిజిటల్ ID జారీ చేయబడింది\tతేది"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "దృవీకరణపత్రము సరిచూడబడ లే�
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "క్షేత్రము\tవిలువ"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "మీరు సంతకము కొరకు వుపయోగిం
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "వీరికి యీయబడెను\tవిరిచేత జారీచేయబడెను\tగడువుముగియు తేది"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

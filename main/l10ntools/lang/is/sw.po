@@ -1169,7 +1169,7 @@ msgstr "Skjalið inniheldur gagnsvið fyrir nafnaskrá. Viltu prenta eyðubréf?
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "Gagnagjafinn \\'%1\\' fannst ekki. Það þýðir að ekki tókst að koma á tengingu við gagnagjafann.\n\nAthugaðu með tengistillingarnar."
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "<Notanda stillingar>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "Viltu breyta valkostum varðandi skráasamhæfni í sjálfgefna sniðmátinu?\nÞetta mun hafa áhrif á öll ný skjöl sem byggjast á sjálfgefna sniðmátinu."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "Skýringatexti"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "Bæta skýringum við sjálfkrafa\nvið innsetningu:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "~Dulið afrit (Bcc)"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Athugaðu:\nAðskildu netföng með semikommu (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "Breyta skjali"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Skrifaðu eða breyttu skjalinu núna, ef þú ert ekki búin(n) að því. Breytingarnar munu hafa áhrif á öll sameinuðu skjölin.\n\nMeð því að smella á 'Breyta skjali...' er leiðarvísinum pakkað tímabundið saman í lítinn glugga þannig að þú getir breytt póstsamrunaskjalinu. Þegar því er lokið, er hægt að opna leiðarvísinn aftur með því að smella á hnapp í litla glugganum sem stendur á 'Til baka í leiðarvísi fyrir póstsameiningu'."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "Velja..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Notaðu þennan valglugga til að skipta út gagnagrunni sem þú sækir í gagnasvið í skjalinu, fyrir aðra gagnagrunna. Aðeins er hægt að gera eina breytingu í einu. Hægt er að velja mörg atriði í listanum til vinstri.\nNotaðu 'Velja...' hnappinn til að velja gagnagrunnsskrá."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "Sjálfvirk leiðrétting"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "Sjálfvirkri leiðréttingu er lokið.\nÞú getur samþykkt eða hafnað öllum breytingum í einu,\neða samþykkt eða hafnað einstökum breytingum."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "Summa"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Þú settir inn ógilt heiti.\nUmbeðið sjálfvirkt snið er ekki hægt að búa til. \nReyndu aftur með öðru heiti."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "Fyrsti ~dálkur sem fyrirsögn"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Ef völdu reitirnir innihalda ekki þau gögn sem þú vilt, veldu þá gagnasviðið núna.\n\nHafðu með þá reiti sem innihalda fyrirsagnir raða og dálka ef þú vilt hafa þær með í línuritinu."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr "[Kerfi]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "Gagnvirk stafsetningaryfirferð er þegar virk\ní öðru skjali"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "Gagnvirk orðskipting er þegar virk\ní öðru skjali"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

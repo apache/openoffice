@@ -445,7 +445,7 @@ msgstr "Palet dibuat dengan <wizard_name> pada <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Wahana tidak bisa dijalankan, karena berkas penting untuk wahana ini tidak ditemukan.\nPada 'Perkakas - Opsi - %PRODUCTNAME - Direktori' klik tombol 'Baku' untuk mengembalikan direktori ke setelan sebelumnya.\nLalu, jalankan wahana ini lagi."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Kolom pada ~formulir"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Kolom biner selalu ditampilkan dan dapat dipilih dari daftar sebelah kiri.\nJika mungkin, kolom ditampilkan sebagai gambar."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Subformulir adalah formulir yang disisipkan pada formulir lain.\nGunakan subformulir untuk menampilkan data dari tabel atau kuiri dengan relasi satu-ke-banyak."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Kolom pada formulir"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Join antara '<FIELDNAME1>' dan '<FIELDNAME2>' dipilih dua kali.\nSedangkan join hanya boleh sekali."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Beri nama formulir"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Formulir dengan nama '%FORMNAME' sudah ada.\nGunakan nama lain."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Kolom tidak bisa ditambah karena akan melampaui jumlah kolom maksimum %C
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Nama '%TABLENAME' sudah ada.\nPilih nama lain."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Wahana Pandu Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Wahana Pandu Web membantu Anda mempublikasi dokumen ke Internet.\n\nWahana akan mengonversi dokumen agar dapat dilihat menggunakan penelusur web. Halaman daftar isi juga akan dibuat yang berisi taut ke halaman-halaman dokumen. Wahana Pandu Web juga memungkinkan Anda membuat sendiri desain dan tata letak situs web Anda.\n\nAnda dapat menjaga agar dokumen yang dipublikasikan selalu mutakhir dan Anda dapat menambah dan mengurangi halaman setiap saat."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Pratinjau"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Pengaturan yang dipilih akan dihapus.\n\nAnda yakin akan menghapusnya? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Direktori FTP '%FILENAME' tidak dapat dibuat."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Direktori FTP '%FILENAME' tidak ada. \nBuat direktorinya sekarang?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Berkas ZIP '%FILENAME' tidak bisa dibuat: direktori dengan nama yang sam
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Direktori lokal '%FILENAME' tidak dapat dibuat. \nMohon periksa izin tulis Anda."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Direktori lokal '%FILENAME' tidak ada. \nBuat direktorinya sekarang?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

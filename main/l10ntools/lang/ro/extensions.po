@@ -57,7 +57,7 @@ msgstr "Titlul sursei de date"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME vă permite accesarea datelor prezente deja în sistem. Pentru a face asta, va fi creată o sursă de date %PRODUCTNAME în care adresele vor fi disponibile sub forma unui tabel.\n\nAcest asistent vă ajută să creați sursa de date."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Alte surse externe date"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Pentru a configura noua sursă de date, sunt necesare informații suplimentare. \n\nApăsați pe butonul următor pentru a deschide o altă fereastră de dialog în care veți introduce informațiile necesare."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Parametri"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Conexiunea la sursa de date nu a putut fi stabilită.\nÎnainte de a continua, vă rugăm să verificați configurările făcute, sau (pe pagina precedentă) alegeți alt tip de sursă de date de adrese. "
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Sursa externă de date pe care ați ales-o conține mai multe agende de contacte. \nVă rugăm să selectați una cu care doriți să lucrați:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "Pentru a include adrese în șabloanele dumneavoastră, %PRODUCTNAME trebuie să știe ce câmpuri conțin anumite date.\n\nDe exemplu, puteți să stocați adresele de email într-un câmp numit  „email”, „E-mail”, „EM” sau un cu totul alt nume.\n\nApăsați pe butonul de dedesubt pentru a deschide un alt dialog în care puteți introduce setările pentru sursa de date."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Asociere câmpuri"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Acestea sunt toate informațiile necesare pentru a integra adresele dumneavoastră în %PRODUCTNAME.\n\nAcum, introduceți numele sub care doriți să înregistrați sursa de date în %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "Date adrese - Atribuire câmpuri"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Nu există câmpuri atribuite în acest moment.\nPuteți atribui câmpurile acum sau mai târziu alegând mai întâi:\n„Fișier - Șablon - Sursă de agende de contacte...”"
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "Sursă de date"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "Următoarele nume de coloane nu pot fi atribuite:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "Control"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Pe partea dreaptă, veți vedea toate tabelele din sursa de date a formularului.\n\n\nAlegeți tabelul din care datele vor trebui folosite ca bază pentru conținutul listei:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Date"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Actualmente, formularul căruia îi aparține controlul nu este (parțial sau deloc) legat la o sursă de date.\n\nVă rugăm să alegeți o sursă de date și un tabel.\n\n\nRețineți că setările făcute în această pagină au efect imediat după ce o părăsiți."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -737,7 +737,7 @@ msgstr "Bine ați venit"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Bine ați venit la %PRODUCTNAME %PRODUCTVERSION OEM\n\nPentru a începe să folosiți %PRODUCTNAME %PRODUCTVERSION OEM, vă rugăm să introduceți datele personale în dialogul care urmează textului de licență. Fișierele readme localizate în directorul produsului %PRODUCTNAME conțin informații importante. Vă rugăm să citiți aceste fișiere cu atenție. Puteți găsi informații detaliate și pe saitul Sun\n\nhttp://www.sun.com/staroffice.\n\nSuport  și pregătire:\n\nObțineți suport GRATUIT pentru acest program timp de 60 de zile de la data cumpărării. Pentru a beneficia de această ofertă, vizitați saitul de mai jos.\n\nhttp://www.sun.com/star/service\n\nSperăm că vă va face plăcere să lucrați cu %PRODUCTNAME."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -817,7 +817,7 @@ msgstr "Formulare"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Vreți să ștergeți tipul de date „#type#” din model?\nRețineți că această acțiune va afecta toate controalele care sunt legate la acest tip de date."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "Introduceți un nume pentru tip dată:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "Despre\n d~ispozitiv"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Creează \nprevizualizare"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Scaner"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Dispozitiv: %s\nProducător: %s\nModel: %s\nTip: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION este actualizat."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "Este disponibil %PRODUCTNAME %NEXTVERSION.\n\nVersiunea instalată este %PRODUCTNAME %PRODUCTVERSION.\n\nNotă: Înainte de a descărca o actualizare, asigurați-vă că aveți suficiente drepturi de acces pentru a o instala.\nPoate fi necesară o parolă, de obicei parola de root."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Descărcarea %PRODUCTNAME %NEXTVERSION înfrânată la"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Se descarcă în: %DOWNLOAD_PATH.\n\nPuteți schimba această cale din Unelte - Opțiuni... - %PRODUCTNAME - Actualizare online."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME a fost descărcat la %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Nu este disponibilă descărcarea automată a actualizărilor.\n\nApăsați „Descarcă...” pentru a descărca manual %PRODUCTNAME %NEXTVERSION de pe saitul web."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."

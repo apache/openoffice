@@ -117,7 +117,7 @@ msgstr "Yeterli erişim haklarınızın olmaması sebebiyle özel ayarlarınızd
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME, %PRODUCTNAME yapılandırma verisine ulaşırken bir hata meydana geldi.\n\nLütfen sistem yöneticiniz ile görüşün."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,39 +145,42 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "Yol yöneticisi kullanılabilir değil.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME kullanıcı kurulumu yeterli disk alanı olmadığı için tamamlanamadı. Lütfen disk üzerinde yeteri kadar alan açarak %PRODUCTNAME 'i tekrar başlatın:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME kullanıcı kurulumu gerekli erişim izinleri olmadığı için tamamlanamadı. Lütfen gerekli erişim izinlerini sağlayarak %PRODUCTNAME 'i tekrar başlatın:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "\\'NAME\\' eklentisinin $NEW sürümünün yüklenmesi hakkında bilgiler.\nDaha yeni sürüm olan $DEPLOYED \\'$OLDNAME\\' ismiyle daha önceden yüklenmiş.\nYüklenmiş olan eklentiyi değiştirmek için \\'Tamam\\' düğmesini tıklayın.\nYüklemeyi durdurmak için \\'İptal\\' düğmesini tıklayın."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "\\'NAME\\' eklentisinin $NEW sürümünün yüklenmesi hakkında bilgiler.\nBu sürüm \\'$OLDNAME\\' ismiyle önceden yüklenmiş.\nYüklenmiş olan eklentiyi değiştirmek için \\'Tamam\\' düğmesini tıklayın.\nYüklemeyi durdurmak için \\'İptal\\' düğmesini tıklayın."
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "\\'NAME\\' eklentisinin $NEW sürümünün yüklenmesi hakkında bilgiler.\nDaha eski sürüm olan $DEPLOYED \\'$OLDNAME\\' ismiyle daha önceden yüklenmiş.\nYüklenmiş olan eklentiyi değiştirmek için \\'Tamam\\' düğmesini tıklayın.\nYüklemeyi durdurmak için \\'İptal\\' düğmesini tıklayın."
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
 msgid  "System dependencies check"
@@ -185,7 +188,7 @@ msgstr "Sistem bağımlılıklarını kontrol et"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Eklenti sistem bağımlılıkları yerine getirelemediği için\nkurulamadı:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,7 +256,7 @@ msgstr "Çıkış"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME yeni bir sürüme güncellendi. Bazı ortak %PRODUCTNAME eklentileri bu sürüm ile uyumlu değil ve %PRODUCTNAME başlatılmadan önce güncellenmeleri gerekli.\n\nOrtak eklentileri güncellemek yönetici hakkı gerektirir. Şu ortak eklentileri güncellemek için sistem yöneticinizle görüşünüz:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
@@ -261,7 +264,7 @@ msgstr "Şu sistem bağımlılıkları sağlanmadığından eklentietkinleştiri
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
-msgstr ""
+msgstr "Lisansı kabul etmediğiniz için bu eklenti artık etkin değil.\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -273,42 +276,34 @@ msgid  "Extension Software License Agreement"
 msgstr "Eklenti Yazılım Lisans Sözleşmesi"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
 msgstr "Eklenti kurulumuna devam etmek için bu adımları takip edin:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
 msgstr "Lisans anlaşmasının tamamını okuyun. Lisans metninin tamamını görmek için \\'Aşağı Kaydır\\' düğmesini ya da kaydırma çubuğunu kullanın."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
 msgstr "Eklenti lisans anlaşmasını kabul etmek için \\'Kabul Et\\' düğmesine basın."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "~Scroll Down"
 msgstr "~Aşağı Kaydır"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
-#, fuzzy
 msgid  "Accept"
 msgstr "Kabul Et"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
-#, fuzzy
 msgid  "Decline"
 msgstr "Reddet"
 
@@ -498,12 +493,14 @@ msgid  "The extension cannot be updated because:"
 msgstr "Eklenti güncellenemedi, çünkü:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
+#, fuzzy
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "Gerekli OpenOffice.org sürümü uyumlu değil:"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
+#, fuzzy
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "OpenOffice.org %VERSION sürümüne sahipsiniz"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
 #, fuzzy
@@ -531,8 +528,9 @@ msgid  "Enable Updates"
 msgstr "Güncellemelere izin ver"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
+#, fuzzy
 msgid  "This update will be ignored.\\n"
-msgstr ""
+msgstr "Bu güncelleme yoksayılacak.\n"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
@@ -598,464 +596,384 @@ msgid  "Make sure that no further users are working with the same %PRODUCTNAME, 
 msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "Kopyalanıyor: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "Eklenirken hata: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "Kaldırılırken hata: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "Eklenti daha önceden eklenmiş: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "Eklenti plana göre yerleştirilemedi:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.String.Text
-#, fuzzy
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr "%NAME ekleri için depo eşitleniyor"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "Bilinmeyen"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
+#, fuzzy
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Eklentiler için en az OpenOffice.org %VERSION sürümü gerekli"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
+#, fuzzy
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Eklenti bundan büyük sürümleri desteklemiyor: OpenOffice.org %VERSION"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "Etkinleştirilen: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "Devre dışı bırakılan: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "Ortam-türü algılanamadı: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "Bu ortam-türü desteklenmiyor: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "Etkinleştirme yapılırken bir hata meydana geldi: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "Devre dışı bırakılırken bir hata meydana geldi: "
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "UNO Dinamik Kütüphane Bileşeni"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "UNO Java Bileşeni"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "UNO Python Bileşeni"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.String.Text
-#, fuzzy
 msgid  "UNO Components"
 msgstr "UNO bileşenleri"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "UNO RDB Türü Kütüphane"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "UNO Java Türü Kütüphane"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "Yapılandırma Şeması"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "Yapılandırma Verisi"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Yardım"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
 msgid  "The extension cannot be installed because:\\n"
-msgstr ""
+msgstr "Eklenti yüklenemiyor çünkü:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
-msgstr ""
+msgstr "Eklenti yüklenemiyor çünkü Yardım dosyalarında bir hata meydana geldi:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "Eklenti"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME Basic Kütüphanesi"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "İletişim Öğesi Kütüphanesi"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "Kütüphane adı belirlenemedi."
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "Bu kütüphane adı mevcut. Lütfen farklı bir isim seçin."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "%MACROLANG Kütüphanesi"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.String.Text
-#, fuzzy
 msgid  "Extension Software License Agreement of $NAME:"
 msgstr "$NAME Yazılım Lisans Anlaşması Ek"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-#, fuzzy
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr "Aşağıda gösterilen Lisans Anlaşmasının tamamını okuyun. Lisans Anlaşmasını kabul etmek için konsola \"evet\" yazın ve Geri düğmesine basın. Kabul etmek istemiyorsanız \"hayır\" yazarak eklenti kurulumdan çıkabilirsiniz."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr "[\"evet\" ya da \"hayır\" girin]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-#, fuzzy
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Girişiniz yanlış. Lütfen \"evet\" ya da \"hayır\" girin:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "EVET"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "E"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "HAYIR"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "H"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
-#, fuzzy
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
 msgstr "unopkg başlatılamadı. Kilit dosyası hali hazırda çalıştığını belirtiyor. Eğer çalışmıyor ise. şuradaki kilit dosyasını silin:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
-#, fuzzy
 msgid  "ERROR: "
 msgstr "HATA: "
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION'e Hoş Geldiniz"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "Hoş Geldiniz"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "Lisans Anlaşması"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Kişisel Veriler"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "Kullanıcı adı"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Çevrimiçi Güncelleme"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "Kayıt"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Bu sihirbaz size lisans anlaşması, kullanıcı bilgilerinin %OLD_VERSION sürümünden transferi ve %PRODUCTNAME kayıdı sırasında rehberlik edecektir.\n\nDevam etmek için 'İleri'ye tıklayın."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Bu sihirbaz %PRODUCTNAME kaydı sırasında size rehberlik edecektir.\n\nDevam etmek için \"İleri\" düğmesini tıklayın."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "~Bitir"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Siz bizleri şimdi destekleyin ve açık kaynak dünyasına hızlı bir giriş yaparak bizlere katkıda bulunabilirsiniz.\n\n%PRODUCTNAME 'in önemli bir kullanıcı kitlesi olduğunu göstermek için kayıt olabilirsiniz.\n\nKayıt olmak zorunlu değildir ve gönüllülük esasına dayanmaktadır."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
 msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "Gerçekten reddetmek istiyor musunuz?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION'e Hoş Geldiniz"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "Bu sihirbaz size lisans anlaşması ve %PRODUCTNAME kayıt işlemi sırasında rehberlik edecektir.\n\nDevam etmek için 'İleri'ye tıklayın."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "Lisansı kabul etmek için lütfen adımları takip edin."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "Lisans Anlaşmasının tamamına bakın. Tüm lisans metnini görmek için kaydırma çubuklarını veya bu iletişim penceresinde '%PAGEDOWN' düğmesi kullanın."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Anlaşma koşullarını kabul etmek için 'Kabul ediyorum' düğmesine tıklayın."
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "Aşağı ~Kaydır"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "K~abul ediyorum"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "Ka~bul etmiyorum"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Kişisel veri aktarımı"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "'%OLDPRODUCT' kurulumundaki kişisel veriler '%PRODUCTNAME %PRODUCTVERSION' içinde de kullanılabilir.\n\nEğer aynı ayarları tekrar kullanmak istemiyorsanız, kontrol kutusundaki işareti kaldırınız."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Kişisel veri aktarımı"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Çevrimiçi Güncelleme"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME yeni sürümler için düzenli aralıklarla otomatik olarak arama yapar.\nYapılan çevirimiçi güncelleme sırasında kişisel bilgiler aktarılmaz.\nYeni bir sürüm bulunduğunda program tarafından bilgilendirilirsiniz.\n\nÇevirimiçi güncellemeyi yapılandırmak için Araçlar / Seçenekler / %PRODUCTNAME menü seçeneğini kullanabilirsiniz."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "Gün~cellemeleri otomatik olarak kontrol et"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "Tam adınızı ve baş harflerini aşağıda belirtin."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
-#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "Kullanıcı adı belge özelliklerinde, şablonlarda ve değişiklik yapılan belgelerde kullanılacaktır."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "Ad"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "Soyad"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "Baş harfler"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "Baba adı"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME Kaydı"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "%PRODUCTNAME kullanıcısı olarak kayıt yaptırabilirsiniz. Kayıt yaptırmak isteğe bağlıdır ve şart değildir.\n\nEğer kayıt yaparsanız, bu ürünle ilgili yeni gelişmelerden sizi haberdar edebiliriz."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "Şimdi kayıt ol~mak istiyorum"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "Sonra kayıt o~lmak istiyorum"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "Kayıt olmak istemiyo~rum"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "%PRODUCTNAME ile çalışmaktan hoşlanacağınızı umarız.\n\nSihirbazdan çıkmak için 'Bitir' düğmesine tıklayın."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Installation Status"
 msgstr "Kurulum Durumu"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
-#, fuzzy
 msgid  "Installation is optimized for clients."
 msgstr "Kurulum istemciler için iyileştirildi."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
-#, fuzzy
 msgid  "Installation is optimized for servers."
 msgstr "Kurulum sunucular için iyileştirildi."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
-#, fuzzy
 msgid  "Cannot find Office installation."
 msgstr "Office kurulumunu bulamıyor."
 
 #: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Setup"
 msgstr "Kurulum"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "%PRODUCTNAME Kurulumu"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "Yetersiz Bellek"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "Kurulum msi paketini bulamıyor."
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "Kurulum iptal edildi"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
-#, fuzzy
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
 msgstr "Windows Program Kurucusunu yükseltmek için yönetici ayrıcalığı gerekiyor."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "Kurulum '%s' dosyasını bulamadı."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
-#, fuzzy
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Geçersiz komut satırı seçeneği '%s'. Lütfen yardım için '/?' kullanın."
 
@@ -1072,117 +990,94 @@ msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrati
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "Çalışmakta olan bir kurulum süreci zaten var."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "Bilinmeyen bir hata meydana geldi!"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "Geçersiz veya eksik profil."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "Bilinmeyen Dil: %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Çince (Geleneksel)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "Çekçe"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "Danimarkaca"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "Almanca (Almanya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "Yunanca"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "İngilizce (ABD)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "İspanyolca (İspanya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "Fince"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "Fransızca (Fransa)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "İbranice"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "Macarca"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "İtalyanca (İtalya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "Japonca"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "Korece"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "Flemenkçe (Hollanda)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "Norveçce (Bokmael)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "Lehçe"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Portekizce (Brezilya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "Rusça"
 
@@ -1191,31 +1086,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "İsveçce (İsveç)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "Tai dili"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "Türkçe"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "Estonca"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "Çince (Basitleştirilmiş)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Portekizce (Portekiz)"

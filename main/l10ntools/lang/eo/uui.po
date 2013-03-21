@@ -93,7 +93,7 @@ msgstr "Dokumento uzata"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redakti de:\n\n$(ARG2)\n\nReprovu poste konservi dokumenton aŭ konservi kopion de tiu dokumento.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Bonvolu entajpi uzantnomon kaj pasvorton por \"%2\" en %1."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "Sendi"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "La servilo '${HOST}' volas agordi almenaŭ unu kuketon.\nKuketoj enhavas informon kiu referas al specifaj URL-klasoj. Se %PRODUCTNAME poste petas dokumenton kun URL kiu rilatas al la klaso de antaŭe agordita kuketo, %PRODUCTNAME sendos tiun informon al la servilo. Tio ebligas al servilo rekoni la staton de TTT-aplikaĵo, ekzemple kiam oni butikumas Interrete.\n\nLa jenaj kuketoj devus esti agorditaj:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domajno: ${DOMAIN}, Vojo: ${PATH}, Kuketo: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Ricevo de kuketo"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME konservis kuketojn por servilo '${HOST}' kiuj estos senditaj kiam petante la dokumenton ${PATH}.\nKuketoj enhavas informon kiu rilatas al specifaj URL-klasoj. Iuj serviloj sendas ilin al %PRODUCTNAME kie ili konserviĝas kiam specifaj dokumentoj estas alirataj. Se %PRODUCTNAME ŝargas dokumenton kiu, laŭ la URL, rilatas al klaso de iu antaŭe ricevita kuketo, %PRODUCTNAME sendos tiun informon al tiu servilo. Tio ebligas al servilo spuri la staton de TTT-aplikaĵo, ekzemple kiam butikumante Interrete.\n\nLa jenaj kuketoj devus esti agorditaj:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domajno: ${DOMAIN}, Vojo: ${PATH}, Kuketo: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Dokumento uzata"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redakti de:\n\n$(ARG2)\n\nMalfermu la dokumenton nur-lege aŭ kopiu la dokumenton por redakti.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Iu ŝanĝis la dosieron post malfermi ĝin por redakti en %PRODUCTNAME. Konservi vian version de la dokumento anstataŭigos ŝanĝojn faritajn de aliaj.\n\nĈu vi volas konservi malgraŭe?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME-aktualigo disponeblas"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Ĉi tiun dokumenton kreis nova versio de %PRODUCTNAME. Eble ĝi enhavas eblojn nesubtenatajn de la versio uzata de vi .\n\nAlklaku je 'Aktualigi nun...' por ruli konektite aktualigon kaj akiri la plej lastan version de %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "Averto: certigu ke vi memoras la Ĉefan Pasvorton kiun vi agordis. Se vi
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redaktado de vi ĉe alia sistemo ek de $(ARG2)\n\nMalfermu dokumenton nur-lege, aŭ ignoru propran dosieran ŝlosadon kaj malfermu la dokumenton por redakti.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "Malfermi"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redaktado de vi ĉe alia sistemo ek de $(ARG2)\n\nMalfermu la dokumenton ĉe la alia sistemo kaj reprovu konservi aŭ ignoru propran dosieran ŝlosadon kaj konservu la aktualan dokumenton.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

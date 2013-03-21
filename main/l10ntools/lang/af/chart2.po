@@ -42,242 +42,194 @@ msgid  "Display grids"
 msgstr "Wys roosters"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-#, fuzzy
 msgid  " degrees"
 msgstr " grade"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
-#, fuzzy
 msgid  "~Right-angled axes"
 msgstr "~Reghoek-asse"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~X rotation"
 msgstr "~X-rotasie"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~Y rotation"
 msgstr "~Y-rotasie"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~Z rotation"
 msgstr "~Z-rotasie"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "~Perspektief"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
-#, fuzzy
 msgid  "Simple"
 msgstr "Eenvoudig"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.String.Text
-#, fuzzy
 msgid  "Realistic"
 msgstr "Realisties"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.String.Text
-#, fuzzy
 msgid  "Custom"
 msgstr "Doelgemaak"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "Vorm"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.String.Text
-#, fuzzy
 msgid  "~Number of lines"
 msgstr "~Aantal lyne"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.String.Text
-#, fuzzy
 msgid  "Separator"
 msgstr "Skeier"
 
 #: source/controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FixedLine.Text
-#, fuzzy
 msgid  "Place chart"
 msgstr "Plaas grafiek"
 
 #: source/controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FixedText.Text
-#, fuzzy
 msgid  "~Insert in sheet"
 msgstr "~Voeg vel in"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
-#, fuzzy
 msgid  "Box"
 msgstr "Boks"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
-#, fuzzy
 msgid  "Cylinder"
 msgstr "Silinder"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
-#, fuzzy
 msgid  "Cone"
 msgstr "Keël"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
-#, fuzzy
 msgid  "Pyramid"
 msgstr "Piramied"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "Dataomvange"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Kolom"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.String.Text
-#, fuzzy
 msgid  "Bar"
 msgstr "Staaf"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "Area"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.String.Text
-#, fuzzy
 msgid  "Pie"
 msgstr "Sektordiagram"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.String.Text
-#, fuzzy
 msgid  "Exploded Pie Chart"
 msgstr "Uiteengeskuifde sektordiagram"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.String.Text
-#, fuzzy
 msgid  "Exploded Donut Chart"
 msgstr "Uiteengeskuifde binnebanddiagram"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT.String.Text
-#, fuzzy
 msgid  "Donut"
 msgstr "Binnebanddiagram"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Reël"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.String.Text
-#, fuzzy
 msgid  "XY (Scatter)"
 msgstr "XY (verstrooi)"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.String.Text
-#, fuzzy
 msgid  "Points and Lines"
 msgstr "Punte en lyne"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.String.Text
-#, fuzzy
 msgid  "Points Only"
 msgstr "Net punte"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.String.Text
-#, fuzzy
 msgid  "Lines Only"
 msgstr "Slegs lyne"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.String.Text
-#, fuzzy
 msgid  "3D Lines"
 msgstr "3D-lyne"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.String.Text
-#, fuzzy
 msgid  "Column and Line"
 msgstr "Kolom en lyne"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.String.Text
-#, fuzzy
 msgid  "Columns and Lines"
 msgstr "Kolomme en lyne"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.String.Text
-#, fuzzy
 msgid  "Stacked Columns and Lines"
 msgstr "Gestapelde kolomme en lyne"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.String.Text
-#, fuzzy
 msgid  "Net"
 msgstr "Net"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.String.Text
-#, fuzzy
 msgid  "Stock"
 msgstr "Voorraad"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.String.Text
-#, fuzzy
 msgid  "Stock Chart 1"
 msgstr "Aandelegrafiek 1"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.String.Text
-#, fuzzy
 msgid  "Stock Chart 2"
 msgstr "Aandelegrafiek 2"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.String.Text
-#, fuzzy
 msgid  "Stock Chart 3"
 msgstr "Aandelegrafiek 3"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.String.Text
-#, fuzzy
 msgid  "Stock Chart 4"
 msgstr "Aandelegrafiek 4"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.String.Text
-#, fuzzy
 msgid  "Normal"
 msgstr "Normaal"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STACKED.String.Text
-#, fuzzy
 msgid  "Stacked"
 msgstr "Gestapel"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.String.Text
-#, fuzzy
 msgid  "Percent Stacked"
 msgstr "Persentasie gestapel"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_DEEP.String.Text
-#, fuzzy
 msgid  "Deep"
 msgstr "Diep"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_FILLED.String.Text
-#, fuzzy
 msgid  "Filled"
 msgstr "Gevul"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.String.Text
-#, fuzzy
 msgid  "Bubble"
 msgstr "Borrel"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.String.Text
-#, fuzzy
 msgid  "Bubble Chart"
 msgstr "Borrelgrafiek"
 
@@ -298,27 +250,22 @@ msgid  "Font Position"
 msgstr ""
 
 #: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
-#, fuzzy
 msgid  "3D View"
 msgstr "3-D-aansig"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.String.Text
-#, fuzzy
 msgid  "Numbers are required. Check your input."
 msgstr "Getalle word vereis. Kontroleer u toevoer."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
-#, fuzzy
 msgid  "The major interval requires a positive number. Check your input."
 msgstr "Die groot interval vereis 'n positiewe getal. Kontroleer u toevoer."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
-#, fuzzy
 msgid  "The logarithmic scale requires positive numbers. Check your input."
 msgstr "Die groot interval vereis positiewe getalle. Kontroleer u toevoer."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
-#, fuzzy
 msgid  "The minimum must be lower than the maximum. Check your input."
 msgstr "Die minimum moet laer as die maksimum wees. Kontroleer u toevoer."
 
@@ -331,17 +278,14 @@ msgid  "The major and minor interval need to be greater or equal to the resoluti
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
-#, fuzzy
 msgid  "Data Table"
 msgstr "Datatabel"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "Voeg ry in"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Series"
 msgstr "Voeg reeks in"
 
@@ -350,22 +294,18 @@ msgid  "Insert Text Column"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "Skrap ry"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Series"
 msgstr "Skrap reeks"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Series Right"
 msgstr "Skuif reeks na regs"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "Skuif ry na onder"
 
@@ -382,17 +322,14 @@ msgid  "Years"
 msgstr ""
 
 #: source/controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Skaal"
 
 #: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CheckBox.Text
-#, fuzzy
 msgid  "~Reverse direction"
 msgstr "Omgekeer~de rigting"
 
 #: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CheckBox.Text
-#, fuzzy
 msgid  "~Logarithmic scale"
 msgstr "Logaritmiese ~skaal"
 
@@ -549,12 +486,10 @@ msgid  "Include ~values from hidden cells"
 msgstr "Sluit ~waardes in uit versteekte selle"
 
 #: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "~Ligbron"
 
 #: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "~Omgewingslig"
 
@@ -563,22 +498,18 @@ msgid  "Light Preview"
 msgstr ""
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
-#, fuzzy
 msgid  "Negative and Positive"
 msgstr "Negatief en positief"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
-#, fuzzy
 msgid  "Negative"
 msgstr "Negatief"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
-#, fuzzy
 msgid  "Positive"
 msgstr "Positief"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.String.Text
-#, fuzzy
 msgid  "From Data Table"
 msgstr "Uit datatabel"
 
@@ -603,297 +534,238 @@ msgid  "Mean (%SERIESNAME)"
 msgstr ""
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FixedText.Text
-#, fuzzy
 msgid  "Choose a chart type"
 msgstr "Kies 'n diagramsoort"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CheckBox.Text
-#, fuzzy
 msgid  "X axis with Categories"
 msgstr "X-as met kategorieë"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CheckBox.Text
-#, fuzzy
 msgid  "~3D Look"
 msgstr "~3D-voorkoms"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CheckBox.Text
-#, fuzzy
 msgid  "~Stack series"
 msgstr "~Stapelreeks"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RadioButton.Text
-#, fuzzy
 msgid  "On top"
 msgstr "Bo"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RadioButton.Text
-#, fuzzy
 msgid  "Percent"
 msgstr "Persent"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RadioButton.Text
-#, fuzzy
 msgid  "Deep"
 msgstr "Diep"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CheckBox.Text
-#, fuzzy
 msgid  "S~mooth lines"
 msgstr "~Gladde lyne"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PushButton.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "Eienskappe..."
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CheckBox.Text
-#, fuzzy
 msgid  "~Sort by X values"
 msgstr "~Rangskik volgens X-waardes"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RadioButton.Text
-#, fuzzy
 msgid  "Cubic spline"
 msgstr "Derdemagkromme"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RadioButton.Text
-#, fuzzy
 msgid  "B-Spline"
 msgstr "B-lat"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FixedText.Text
-#, fuzzy
 msgid  "~Resolution"
 msgstr "~Resolusie"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FixedText.Text
-#, fuzzy
 msgid  "~Data points order"
 msgstr "~Datapuntorde"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
-#, fuzzy
 msgid  "Customize data ranges for individual data series"
 msgstr "Doelmaak dataomvange vir individuele datareekse"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
-#, fuzzy
 msgid  "Data ~series"
 msgstr "Data~reeks"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FixedText.Text
-#, fuzzy
 msgid  "~Data ranges"
 msgstr "~Dataomvange"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FixedText.Text
-#, fuzzy
 msgid  "Ran~ge for %VALUETYPE"
 msgstr "~Omvang vir %VALUETYPE"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "~Kategorieë"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FixedText.Text
-#, fuzzy
 msgid  "Data ~labels"
 msgstr "Data~etikette"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Voeg by"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~Verwyder"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FixedText.Text
-#, fuzzy
 msgid  "Choose a data range"
 msgstr "Kies 'n dataomvang"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FixedText.Text
-#, fuzzy
 msgid  "~Data range"
 msgstr "~Dataomvang"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RadioButton.Text
-#, fuzzy
 msgid  "Data series in ~rows"
 msgstr "Datareeks in ~rye"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RadioButton.Text
-#, fuzzy
 msgid  "Data series in ~columns"
 msgstr "Datareeks in ~kolomme"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CheckBox.Text
-#, fuzzy
 msgid  "~First row as label"
 msgstr "~Eerste ry as etiket"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CheckBox.Text
-#, fuzzy
 msgid  "F~irst column as label"
 msgstr "~Eerste kolom as etiket"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
-#, fuzzy
 msgid  "Sho~w labels"
 msgstr "Wys ~etikette"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "Teksgerigdheid"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TriStateBox.Text
-#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "~Vertikaal gestapel"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "~Degrees"
 msgstr "~Grade"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FixedLine.Text
-#, fuzzy
 msgid  "Text flow"
 msgstr "Teksvloei"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CheckBox.Text
-#, fuzzy
 msgid  "O~verlap"
 msgstr "O~orvleuel"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CheckBox.Text
-#, fuzzy
 msgid  "~Break"
 msgstr "~Breuk"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FixedLine.Text
-#, fuzzy
 msgid  "Order"
 msgstr "Volgorde"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RadioButton.Text
-#, fuzzy
 msgid  "~Tile"
 msgstr "~Teël"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RadioButton.Text
-#, fuzzy
 msgid  "St~agger odd"
 msgstr "Vers~pring onewe"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RadioButton.Text
-#, fuzzy
 msgid  "Stagger ~even"
 msgstr "Verspring ~ewe"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RadioButton.Text
-#, fuzzy
 msgid  "A~utomatic"
 msgstr "O~utomaties"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Te~ksrigting"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
-#, fuzzy
 msgid  "Space"
 msgstr "Ruimte"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
-#, fuzzy
 msgid  "Comma"
 msgstr "Komma"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
-#, fuzzy
 msgid  "Semicolon"
 msgstr "Kommapunt"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
-#, fuzzy
 msgid  "New line"
 msgstr "Nuwe reël"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FixedText.Text
-#, fuzzy
 msgid  "Sche~me"
 msgstr "~Skema"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
-#, fuzzy
 msgid  "~Shading"
 msgstr "~Skakering"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CheckBox.Text
-#, fuzzy
 msgid  "~Object borders"
 msgstr "~Objekrande"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.Checkbox.Text
-#, fuzzy
 msgid  "~Rounded edges"
 msgstr "~Geronde kante"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "Asse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "Groot roosters"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "~X-as"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "~Y-as"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "~Z-as"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "Sekondêre asse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "Ondergeskikte roosters"
 
 #: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Posisie"
 
 #: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "Teksgerigdheid"
 
 #: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Te~ksrigting"
 
@@ -938,57 +810,46 @@ msgid  "Tab"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
-#, fuzzy
 msgid  "Chart Wizard"
 msgstr "Grafiekslimmerd"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Smooth Lines"
 msgstr "Gladde lyne"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
-#, fuzzy
 msgid  "Number Format for Percentage Value"
 msgstr "Nommerformaat vir persentasiewaarde"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart Type"
 msgstr "Soort grafiek"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "Dataomvang"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
-#, fuzzy
 msgid  "Chart Elements"
 msgstr "Grafiekelemente"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
-#, fuzzy
 msgid  "Chart Location"
 msgstr "Grafiekligging"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Reël"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Grense"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "Area"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Deursigtigheid"
 
@@ -1001,12 +862,10 @@ msgid  "Font Effects"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "Nommers"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Posisie"
 
@@ -1019,32 +878,26 @@ msgid  "Down"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "Uitleg"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Opsies"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Skaal"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "Posisionering"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Soort"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
-#, fuzzy
 msgid  "Y Error Bars"
 msgstr "Y-foutstawe"
 
@@ -1053,17 +906,14 @@ msgid  "Alignment"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "Perspective"
 msgstr "Perspektief"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
-#, fuzzy
 msgid  "Appearance"
 msgstr "Voorkoms"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "Verligting"
 
@@ -1072,227 +922,182 @@ msgid  "Asian Typography"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
-#, fuzzy
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
 msgstr "Gemiddeldewaardelyn met waarde %AVERAGE_VALUE en standaardafwyking %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
-#, fuzzy
 msgid  "Axis"
 msgstr "As"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
-#, fuzzy
 msgid  "X Axis"
 msgstr "X-as"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
-#, fuzzy
 msgid  "Y Axis"
 msgstr "Y-as"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
-#, fuzzy
 msgid  "Z Axis"
 msgstr "Z-as"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis"
 msgstr "Sekondêre X-as"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis"
 msgstr "Sekondêre Y-as"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "Asse"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRIDS.String.Text
-#, fuzzy
 msgid  "Grids"
 msgstr "Roosters"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID.String.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "Rooster"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.String.Text
-#, fuzzy
 msgid  "X Axis Major Grid"
 msgstr "X-as, groot rooster"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.String.Text
-#, fuzzy
 msgid  "Y Axis Major Grid"
 msgstr "Y-as, groot rooster"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.String.Text
-#, fuzzy
 msgid  "Z Axis Major Grid"
 msgstr "Z-as, groot rooster"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.String.Text
-#, fuzzy
 msgid  "X Axis Minor Grid"
 msgstr "X-as, klein rooster"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.String.Text
-#, fuzzy
 msgid  "Y Axis Minor Grid"
 msgstr "Y-as, klein rooster"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.String.Text
-#, fuzzy
 msgid  "Z Axis Minor Grid"
 msgstr "Z-as, klein rooster"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND.String.Text
-#, fuzzy
 msgid  "Legend"
 msgstr "Legende"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Titel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
-#, fuzzy
 msgid  "Titles"
 msgstr "Titels"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.String.Text
-#, fuzzy
 msgid  "Main Title"
 msgstr "Hooftitel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
-#, fuzzy
 msgid  "Subtitle"
 msgstr "Subtitel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.String.Text
-#, fuzzy
 msgid  "X Axis Title"
 msgstr "X-as-titel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Y Axis Title"
 msgstr "Y-as-titel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.String.Text
-#, fuzzy
 msgid  "Z Axis Title"
 msgstr "Z-as-titel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis Title"
 msgstr "S~ekondêre X-as-titel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis Title"
 msgstr "S~ekondêre Y-as-titel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LABEL.String.Text
-#, fuzzy
 msgid  "Label"
 msgstr "Etiket"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.String.Text
-#, fuzzy
 msgid  "Data Labels"
 msgstr "Dataetikette"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.String.Text
-#, fuzzy
 msgid  "Data Point"
 msgstr "Datapunt"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.String.Text
-#, fuzzy
 msgid  "Data Points"
 msgstr "Datapunte"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.String.Text
-#, fuzzy
 msgid  "Legend Key"
 msgstr "Legendesleutel"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.String.Text
-#, fuzzy
 msgid  "Data Series"
 msgstr "Datareeks"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.String.Text
-#, fuzzy
 msgid  "Data Series"
 msgstr "Datareeks"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE.String.Text
-#, fuzzy
 msgid  "Trend Line"
 msgstr "Tendenslyn"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVES.String.Text
-#, fuzzy
 msgid  "Trend Lines"
 msgstr "Tendenslyne"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.String.Text
-#, fuzzy
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "Tendenslyn %FORMULA met akkuraatheid R² = %RSQUARED"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.String.Text
-#, fuzzy
 msgid  "Mean Value Line"
 msgstr "Gemiddeldewaardelyn"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.String.Text
-#, fuzzy
 msgid  "Equation"
 msgstr "Vergelyking"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.String.Text
-#, fuzzy
 msgid  "Error Bars"
 msgstr "Foutstawe"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.String.Text
-#, fuzzy
 msgid  "Stock Loss"
 msgstr "Aandeleverlies"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.String.Text
-#, fuzzy
 msgid  "Stock Gain"
 msgstr "Aandelewins"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_PAGE.String.Text
-#, fuzzy
 msgid  "Chart Area"
 msgstr "Grafiekarea"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.String.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "Grafiek"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.String.Text
-#, fuzzy
 msgid  "Chart Wall"
 msgstr "Grafiekmuur"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.String.Text
-#, fuzzy
 msgid  "Chart Floor"
 msgstr "Grafiekvloer"
 
@@ -1301,107 +1106,86 @@ msgid  "Drawing Object"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.String.Text
-#, fuzzy
 msgid  "Select data range"
 msgstr "Kies dataomvang"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.String.Text
-#, fuzzy
 msgid  "Select a color using the color dialog"
 msgstr "Kies 'n kleur met die kleurdialoog"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.String.Text
-#, fuzzy
 msgid  "Light Source %LIGHTNUMBER"
 msgstr "Ligbron %LIGHTNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATASERIES.String.Text
-#, fuzzy
 msgid  "Data Series '%SERIESNAME'"
 msgstr "Datareeks '%SERIESNAME'"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.String.Text
-#, fuzzy
 msgid  "Data Point %POINTNUMBER"
 msgstr "Datapunt %POINTNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.String.Text
-#, fuzzy
 msgid  "Values: %POINTVALUES"
 msgstr "Waardes: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
-#, fuzzy
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
 msgstr "Datapunt %POINTNUMBER, datareeks %SERIESNUMBER, waardes: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
-#, fuzzy
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
 msgstr "Datapunt %POINTNUMBER in datareeks %SERIESNUMBER gemerk, waardes: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
-#, fuzzy
 msgid  "%OBJECTNAME selected"
 msgstr "%OBJECTNAME gemerk"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.String.Text
-#, fuzzy
 msgid  "Pie exploded by %PERCENTVALUE percent"
 msgstr "Sektordiagram uiteengeskuif met %PERCENTVALUE persent"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.String.Text
-#, fuzzy
 msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
 msgstr "%OBJECTNAME vir datareeks '%SERIESNAME'"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.String.Text
-#, fuzzy
 msgid  "%OBJECTNAME for all Data Series"
 msgstr "%OBJECTNAME vir alle datareekse"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Edit chart type"
 msgstr "Redigeer grafieksoort"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.String.Text
-#, fuzzy
 msgid  "Edit data ranges"
 msgstr "Redigeer dataomvange"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.String.Text
-#, fuzzy
 msgid  "Edit 3D view"
 msgstr "Redigeer 3D-aansig"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.String.Text
-#, fuzzy
 msgid  "Edit chart data"
 msgstr "Redigeer grafiekdata"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.String.Text
-#, fuzzy
 msgid  "Legend on/off"
 msgstr "Legende aan/af"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.String.Text
-#, fuzzy
 msgid  "Horizontal grid on/off"
 msgstr "Horisontale rooster aan/af"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.String.Text
-#, fuzzy
 msgid  "Scale Text"
 msgstr "Skaleer teks"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.String.Text
-#, fuzzy
 msgid  "Automatic Layout"
 msgstr "Outomatiese uitleg"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
 msgid  "This function cannot be completed with the selected objects."
 msgstr "Hierdie funksie kan nie met die betrokke objekte voltooi word nie."
 
@@ -1410,316 +1194,254 @@ msgid  "Edit text"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_COLUMN_LABEL.String.Text
-#, fuzzy
 msgid  "Column %COLUMNNUMBER"
 msgstr "Kolom %COLUMNNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_ROW_LABEL.String.Text
-#, fuzzy
 msgid  "Row %ROWNUMBER"
 msgstr "Ry %ROWNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Naam"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X.String.Text
-#, fuzzy
 msgid  "X-Values"
 msgstr "X-waardes"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y.String.Text
-#, fuzzy
 msgid  "Y-Values"
 msgstr "Y-waardes"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.String.Text
-#, fuzzy
 msgid  "Bubble Sizes"
 msgstr "Borrelgroottes"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.String.Text
-#, fuzzy
 msgid  "X-Error-Bars"
 msgstr "X-foutstawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.String.Text
-#, fuzzy
 msgid  "Positive X-Error-Bars"
 msgstr "Positiewe X-foutstawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.String.Text
-#, fuzzy
 msgid  "Negative X-Error-Bars"
 msgstr "Negatiewe X-foutstawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.String.Text
-#, fuzzy
 msgid  "Y-Error-Bars"
 msgstr "Y-foutstawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.String.Text
-#, fuzzy
 msgid  "Positive Y-Error-Bars"
 msgstr "Positiewe Y-foutstawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.String.Text
-#, fuzzy
 msgid  "Negative Y-Error-Bars"
 msgstr "Negatiewe Y-foutstawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.String.Text
-#, fuzzy
 msgid  "Open Values"
 msgstr "Open-waardes"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.String.Text
-#, fuzzy
 msgid  "Close Values"
 msgstr "Sluit-waardes"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.String.Text
-#, fuzzy
 msgid  "Low Values"
 msgstr "Lae waardes"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.String.Text
-#, fuzzy
 msgid  "High Values"
 msgstr "Hoë waardes"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.String.Text
-#, fuzzy
 msgid  "Categories"
 msgstr "Kategorieë"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.String.Text
-#, fuzzy
 msgid  "Unnamed Series"
 msgstr "Onbenoemde reeks"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.String.Text
-#, fuzzy
 msgid  "Unnamed Series %NUMBER"
 msgstr "Onbenoemde reeks %NUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.String.Text
-#, fuzzy
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
 msgstr "Kies omvang vir %VALUETYPE van %SERIESNAME"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.String.Text
-#, fuzzy
 msgid  "Select Range for Categories"
 msgstr "Kies omvang vir kategorieë"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.String.Text
-#, fuzzy
 msgid  "Select Range for data labels"
 msgstr "Kies omvang vir dataetikette"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.String.Text
-#, fuzzy
 msgid  "Select Range for Positive Error Bars"
 msgstr "Kies omvang vir positiewefout-stawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.String.Text
-#, fuzzy
 msgid  "Select Range for Negative Error Bars"
 msgstr "Kies omvang vir negatiewefout-stawe"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "U vorige invoer is verkeerd.\nIgnoreer hierdie verandering en sluit die dialoog?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr "Links na regs"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr "Regs na links"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.String.Text
-#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "Gebruik bogeskikte objekinstellings"
 
 #: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CheckBox.Text
-#, fuzzy
 msgid  "~Clockwise direction"
 msgstr "~Kloksgewysrigting"
 
 #: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FixedLine.Text
-#, fuzzy
 msgid  "Starting angle"
 msgstr "Beginhoek"
 
 #: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "~Degrees"
 msgstr "~Grade"
 
 #: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FixedLine.Text
-#, fuzzy
 msgid  "Plot options"
 msgstr "Stipopsies"
 
 #: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CheckBox.Text
-#, fuzzy
 msgid  "Include ~values from hidden cells"
 msgstr "Sluit ~waardes in uit versteekte selle"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Axis line"
 msgstr "Aslyn"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FixedText.Text
-#, fuzzy
 msgid  "~Cross other axis at"
 msgstr "~Kruis ander as by"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item1.StringList.item
-#, fuzzy
 msgid  "Start"
 msgstr "Begin"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item2.StringList.item
-#, fuzzy
 msgid  "End"
 msgstr "Einde"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item3.StringList.item
-#, fuzzy
 msgid  "Value"
 msgstr "Waarde"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item4.StringList.item
-#, fuzzy
 msgid  "Category"
 msgstr "Kategorie"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CheckBox.Text
-#, fuzzy
 msgid  "Axis ~between categories"
 msgstr "As ~tussen kategorieë"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FixedLine.Text
-#, fuzzy
 msgid  "Labels"
 msgstr "Etikette"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FixedText.Text
-#, fuzzy
 msgid  "~Place labels"
 msgstr "Pleketikette"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item1.StringList.item
-#, fuzzy
 msgid  "Near axis"
 msgstr "Nabyas"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item2.StringList.item
-#, fuzzy
 msgid  "Near axis (other side)"
 msgstr "Nabyas (ander kant)"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item3.StringList.item
-#, fuzzy
 msgid  "Outside start"
 msgstr "Buitebegin"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item4.StringList.item
-#, fuzzy
 msgid  "Outside end"
 msgstr "Buite-end"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "A~fstand"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FixedLine.Text
-#, fuzzy
 msgid  "Interval marks"
 msgstr "Intervalmerke"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FixedText.Text
-#, fuzzy
 msgid  "Major:"
 msgstr "Groot:"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CheckBox.Text
-#, fuzzy
 msgid  "~Inner"
 msgstr "Bi~nneste"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CheckBox.Text
-#, fuzzy
 msgid  "~Outer"
 msgstr "~Buitenste"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FixedText.Text
-#, fuzzy
 msgid  "Minor:"
 msgstr "Klein:"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CheckBox.Text
-#, fuzzy
 msgid  "I~nner"
 msgstr "Bi~nneste"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CheckBox.Text
-#, fuzzy
 msgid  "O~uter"
 msgstr "B~uitenste"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FixedText.Text
-#, fuzzy
 msgid  "Place ~marks"
 msgstr "Plek~merke"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item1.StringList.item
-#, fuzzy
 msgid  "At labels"
 msgstr "By etikette"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item2.StringList.item
-#, fuzzy
 msgid  "At axis"
 msgstr "By as"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item3.StringList.item
-#, fuzzy
 msgid  "At axis and labels"
 msgstr "By as en etikette"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FixedLine.Text
-#, fuzzy
 msgid  "Grids"
 msgstr "Roosters"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CheckBox.Text
-#, fuzzy
 msgid  "Show major ~grid"
 msgstr "Wys groot ~rooster"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PushButton.Text
-#, fuzzy
 msgid  "Mo~re..."
 msgstr "Me~er..."
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Show minor grid"
 msgstr "~Wys klein roosters"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PushButton.Text
-#, fuzzy
 msgid  "Mor~e..."
 msgstr "Me~er..."
 

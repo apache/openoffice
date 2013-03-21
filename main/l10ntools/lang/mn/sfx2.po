@@ -237,7 +237,7 @@ msgstr "Функц Хайрцаг"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "Тусгай тохируулгад алдаа гарлаа.\nУдирдагчтай холбоо барина уу."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "%PRODUCTNAME-г системийн эхлэлд ачаалах"
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Системийн самбарын түргэн эхлүүлэгчийг хаах"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -509,11 +509,11 @@ msgstr " %PRODUCTNAME %MODULENAME Тусламжийг ~эхлэлд харуу�
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "Сонгогдсон шүүлтүүр $(FILTER) нь суулгаагүй байна.\nТа энийг одоо суулгахын хүсэж байна уу?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Сонгогдсон шүүлтүүр $(FILTER) нь таны энэ хувилбарт багтаагүй байна.\nТа захиалгын талаарх мэдээллийг манай вэб хуудаснаас олж болно."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "Сануулга"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "Таны баримт тунгалаг объектуудыг агуулж\nбайна. Тиймээс, магадгүй хэвлэлтэнд урт \nхугацаа шаардагдаж болно. Тунгалагжилтыг\nэнэ хэвлэлтийн хувьд үл хэрэгсэх үү?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -1441,7 +1441,7 @@ msgstr "Та $1 загварыг устгамаар байна уу?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "Та хэрэглэгдэж буй загварыг устгаж байна!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1489,7 +1489,7 @@ msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Магадгүй энэ баримт нь, %FORMATNAME файлын форматаар хадгалагдах боломжгүй хэлбэржилт эсвэл агуулгатай байж болно. Та ямар ч байсан энэ форматаар хадгалмаар байна уу?\n\nODF файлын форматаар хадгалснаар, бүх хэлбэржилт болон агуулгуудыг бүрэн зөв хадгалагдана."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "\"$(DOC)\" баримт өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "Хэв"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "\"$1\" хэвийг хуулж байхад алдаа гарав. \nИйм нэртэй хэв хэдийнэ байна."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "Сонгосон файл буруу форматтай байна."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Баримтууд $(FORMAT) форматаар хадгалагдах боломжгүй. Та энэ\nбаримтыг $(OWNFORMAT) форматаар хадгалахыг хүсэж байна уу?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "Файлын формат:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "Энэ баримтын агуулга:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Өгөгдсөн хэвлэгч олдсонгүй.\nХэвлэгчээ сонгоод дахин оролдож үзнэ үү."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "Хэвлэгчийг эхлүүлж чадсангүй.\nХэвлэгчийнхээ тохируулгыг шалгана уу."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Баримт нь $1 хэвлэгчид зориулагдан форматлагдсан байна. Сонгосон хэвлэгч нь хэрэглэх боломжгүй байна. \nТа стандарт хэвлэгч $2 -ийг хэрэглэмээр байна уу?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr " (зөвхөн-унших)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Хуудасны хэмжээ болон зүг чиг өөрчлөгдсөн байна.\nТа шинэ тохиргоог идэвхтэй баримтанд\nхадгалахыг хүсэж байна уу?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "Хуудасны хэмжээ өөрчлөгдсөн байна.\nШинэ тохиргоонууд нь идэвхитэй буй\nбаримтанд хадгалагдах шаардлагатай юу?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "Хуудасны хэмжээ болон зүг чиг өөрчлөгдсөн байна.\nТа шинэ тохиргоог идэвхитэй баримтанд\nхадгалахыг хүсэж байна уу?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

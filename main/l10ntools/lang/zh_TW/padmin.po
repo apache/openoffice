@@ -61,7 +61,7 @@ msgstr "增加字型"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "確定想要複寫這個字型檔案\n   %s？"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "無"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "沒有找到字型\n%s\n的格式檔案(副檔名 .afm )，因此無法安裝這個字型。格式檔案是由 ghostscript 生成，并存放在相同的字型目錄或其子目錄 afm 之中。"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "無法複製字型度量檔案\n   %s\n。無法安裝這個字型。"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "無法複製字型檔案\n   %s\n。無法安裝這個字型。"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -177,7 +177,7 @@ msgstr "測試列印頁成功。請檢查列印結果。"
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
-msgstr ""
+msgstr "印表機無法安裝，因為檔案系統是唯讀狀態。\n請聯絡您的系統管理員。"
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -289,7 +289,7 @@ msgstr "這個檔案沒有字型度量數據。"
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "字型度量檔案\n\n%s\n\n無法被轉換，原因如下：\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "這是一個必要的驅動程式「%s」，因此不能夠刪除。"
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "這個驅動程式「%s1」無法被刪除。沒有成功地刪除檔案\n\n%s2。"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

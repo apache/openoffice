@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr ""
+msgstr "Inyandiko mwandiko %productname% %formatversion%"
 
 #: source/config/fragments/filters/StarWriter_5_0_GlobalDocument_ui.xcu#StarWriter 5.0/GlobalDocument.UIName
 msgid  "StarWriter 5.0 Master Document"
@@ -81,7 +81,7 @@ msgstr "Modeli StarDraw 3.0"
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr ""
+msgstr "Inyandiko ngenga %productname% %formatversion%"
 
 #: source/config/fragments/filters/UOF_presentation_ui.xcu#UOF presentation.UIName
 msgid  "Unified Office Format presentation"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#impress_StarOffice_XML_Draw.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr ""
+msgstr "Ishushanya (%productname% Impress) %productname% %formatversion%"
 
 #: source/config/fragments/filters/writerglobal8_ui.xcu#writerglobal8.UIName
 msgid  "ODF Master Document"
@@ -165,7 +165,7 @@ msgstr "Inyandiko HTML (Inyandiko Ngenga%productname%)"
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#writer_web_StarOffice_XML_Writer_Web_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr ""
+msgstr "Modeli HTML %productname% %formatversion%"
 
 #: source/config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS Word 97 Vorlage.UIName
 msgid  "Microsoft Word 97/2000/XP Template"
@@ -173,7 +173,7 @@ msgstr "Modeli Microsoft Word 97/2000/XP"
 
 #: source/config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#draw_StarOffice_XML_Draw_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr ""
+msgstr "Modeli y'Ishushanya %productname% %formatversion%"
 
 #: source/config/fragments/filters/writerweb8_writer_ui.xcu#writerweb8_writer.UIName
 msgid  "%productname% Text (%productname% Writer/Web)"
@@ -181,7 +181,7 @@ msgstr "Umwandiko %productname% (%productname% Writer/Web)"
 
 #: source/config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#calc_StarOffice_XML_Calc_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr ""
+msgstr "Modeli y'Urupapurotuzu %productname% %formatversion%"
 
 #: source/config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF spreadsheet.UIName
 msgid  "Unified Office Format spreadsheet"
@@ -193,7 +193,7 @@ msgstr "Modeli StarImpress 5.0"
 
 #: source/config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#writer_StarOffice_XML_Writer_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr ""
+msgstr "Modeli y'inyandiko mwandiko %productname% %formatversion%"
 
 #: source/config/fragments/filters/chart8_ui.xcu#chart8.UIName
 msgid  "ODF Chart"
@@ -341,11 +341,11 @@ msgstr ""
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#writer_web_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr ""
+msgstr "%productname%%formatversion%Inyandiko Mwandiko ( %productname% Mwanditsi/ Urubuga) "
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#impress_StarOffice_XML_Impress_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr ""
+msgstr "Modeli y'Igaragaza %productname% %formatversion%"
 
 #: source/config/fragments/filters/StarDraw_5_0_Vorlage__StarImpress__ui.xcu#StarDraw 5.0 Vorlage (StarImpress).UIName
 msgid  "StarDraw 5.0 Template (%productname% Impress)"
@@ -617,7 +617,7 @@ msgstr "Amahitamo ya Macromedia Flash (SWF)"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\\n100: max. quality"
-msgstr ""
+msgstr "1: ubwiza bwo hasi\n 100: ubwiza bwo hejuru"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\\nas some are at a higher level!"
@@ -1361,7 +1361,7 @@ msgstr "Porogaramu"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\\nfile type"
-msgstr ""
+msgstr "Izina rya\nubwoko bwa dosiye"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"

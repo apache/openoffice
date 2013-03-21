@@ -2269,7 +2269,7 @@ msgstr "ڪڍي ڇڏيو"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "ڇا داخلا  خارج #\n\\ ڪئي وڃي؟"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2713,7 +2713,7 @@ msgstr "سڀ لِڪايو"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "خاني جي حفاضت جو اثر فقط مؤجودہ شيٽ جي حفاضت بعد ڪرڻ بعد ٿيندو۔'Tools' \n\n  مينو مان 'Protect Document' چونڊيو ۽ 'Sheet' جا تفصيل ڏيو۔"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3233,7 +3233,7 @@ msgstr "هلائڻ لاءِ ڪوبہ ڪم ناهي"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "کيتر ۾ ڪالم جي صفحي جي مٿان شرحون شامل ناهن۔ \n ڇا توهين چاهيو ٿا تہ پهرينءَ ليڪ جو اِستعمال صفحي جي شرح لاءِ ڪيو وڃي؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3297,7 +3297,7 @@ msgstr "ڳولا ڪنجي ڪانہ ملي"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "\n مقصد جي حاصلات ڪامياب "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3309,11 +3309,11 @@ msgstr "مؤجودہ ڏنگين ۾؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "\n مقصد جي حاصلات ڪامياب نہ ٿي "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "\n تُزُ ملهہ حاصل نہ ٿو . "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3781,7 +3781,7 @@ msgstr "گهڻ قسما ڪاريہ "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "توهين نامنظور نالي ۾ داخل ٿيا آهيو۔ \n خودڪار رچنا نہ خلقجي سگهي۔ \n ٻيو نالو اِستعمال ڪندي وري ڪوشش ڪريو۔"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 msgid  "Range"
@@ -3813,7 +3813,7 @@ msgstr "ڇڇاپيو"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "خودڪار رچنا لاءِ، \n تختيءَ جو کيتر گهٽ ۾ گهٽ 3x3 \n ضرور چونڊجي"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 msgid  "(nested)"
@@ -3913,7 +3913,7 @@ msgstr "رپورٽ 1"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "هجي چڪاس لاءِ مؤجود ناهي \n مهرباني ڪري پنهنجي اِسٿاپن جي جاچ ڪريو ۽ اِسٿاپن ڪريو  \n گهربل ٻولي اَگر ضروري هجي تہ۔"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 msgid  "Thesaurus can only be used in text cells!"
@@ -3925,7 +3925,7 @@ msgstr "ڇا هجي چڪاس مؤجودہ شيٽ جي شروعات کان جا
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "پريايہ ڪوش لاءِ مؤجود ناهي \n مهرباني ڪري اِسٿاپن جي جاچ ڪريو ۽ اِسٿاپن ڪريو \n گهربل ٻولي اَگر ضروري هجي تہ۔"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 msgid  "The spellcheck of this sheet has been completed."
@@ -4197,11 +4197,11 @@ msgstr "تي"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "هن فائل ۾ ٻين فائلن جون ڪڙيون مؤجود آهن۔\n ڇا اُهي اَپ ڊيٽ ڪيون وڃن؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr " هن فائل ۾ پڇائون مؤجود آهن۔ انهن پڇائن جا نتيجا سانڍيا نہ ويا هئا۔ \n ڇا توهين چاهيندا تہ اهي پڇائون دُهرايون وڃن؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 msgid  "Too many conditions"
@@ -4209,7 +4209,7 @@ msgstr "تمام گهڻيون شرطون"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "ڀريل خانا بدلائي نٿا سگهجن \n شين کان ٻاهر"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 msgid  "The table could not be inserted."
@@ -4229,7 +4229,7 @@ msgstr " هن شيٽ تي هتي داخل ڪرڻ لاءِ گهربل جڳهہ ڪ
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "ڪلپ بورڊ جو موضوع چونڊيل کيتر کان وڏو آهي  \n ڇا ڪهري بہ نموني اهو داخل ڪرڻ چاهيو ٿا؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 msgid  "No references found."
@@ -4273,7 +4273,7 @@ msgstr "ڀيٽيو #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "وَڌ ۾ وڌِ نامنظور خانن جو تعداد وڌي ويو آہي \n سڀني نامنظور خانن تي نشان ڪونہ لڳايا ويا آهن۔"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 msgid  "Delete contents"
@@ -4377,7 +4377,7 @@ msgstr "رڪارڊنگ کان ٻاهر نڪرو"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "هي ڪاريہ رڪاررڊنگ جي ڍنگ جو بدلاءُ ڪڍي ڇڏيندو۔ \n بدلاون بابت ڪابہ معلومات گُمُ ٿي ويندي۔ \n رڪارڊنگ جي ڍنگ جو بدلاءُ ڪڍي ڇڏيو؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 msgid  "The document can not be closed while a link is being updated."
@@ -4393,7 +4393,7 @@ msgstr "صفبندي نسخو  %1 R x %2 C"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "دستاويز ۾ ميڪرو فنڪس ڪالس آهن۔  \n ڇا توهين اهي هلائڻ چاهي ٿا؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 msgid  "Hangul/Hanja Conversion"
@@ -4685,7 +4685,7 @@ msgstr "خودڪار رچنا خارج ڪريو"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "ڇا توهين سچپچ #  خودڪار رچنا خارج ڪرڻ چاهيو ٿا؟"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
 msgid  "~Close"
@@ -11493,7 +11493,7 @@ msgstr "فانٽ سان لاڳاپو رکندڙ"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "توهين ڪلب بورڊ ۾ تمام وڏي تعداد ۾ سامگري شامل ڪئي آهي۔ n/ ڇا توهين ڪلپ بورڊ جا موضوع ٻين پرڪريائن ۾ مؤجود رکڻ چاهيو ٿا؟"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -11561,7 +11561,7 @@ msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME Calc کي داخل ڪيل نسخي ۾ چوڪ ملي۔ n/ ڇا توهين هيٺ ڄاڻايل "
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -11605,7 +11605,7 @@ msgstr "چونڊيل شيٽون"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "خانن ۾ توهين اُها سامگري چنبڙائي رهيا آہيو جيڪا اَڳہ ۾ ئي سامگريءَ ۾ مؤجود آهي۔ ڇآ توهين سچ پچ مؤجودہ سامگري"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"

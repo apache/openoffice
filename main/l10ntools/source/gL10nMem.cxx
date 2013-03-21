@@ -440,18 +440,15 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     if (sOrgText == curE.msText)
       break;
 
-    // is this the second (or more candidate ? then we cannot use key
-    if (iCandidate)
-    {
-      iCandidate = -1;
-      continue;
-    }
-
     // compare keys, but be aware of different length
-    if (sKeyUpper != curE.msUpperKey)
-      continue;
-
-    iCandidate = i;
+    if (sKeyUpper.find(curE.msUpperKey) != std::string::npos)
+    {
+      // is this the second (or more candidate ? then we cannot use key
+      if (iCandidate > 0)
+        iCandidate = -1;
+      else
+        iCandidate = i;
+    }
   }
   sKeyUpper.clear();
   if (i == iSize && iCandidate < 0)

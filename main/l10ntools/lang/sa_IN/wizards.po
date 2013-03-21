@@ -445,7 +445,7 @@ msgstr "<wizard_name> द्वारा <current_date> मध्ये रच�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "मुख्यसञ्चिकानां प्राप्त्यभावात् विजर्ड् चालयितुं न शक्यते।\nआदिममूलभूतनिर्धारणानि प्रति मार्गान् पुनः स्थापयितुं 'साधनानि - विकल्पाः - %PRODUCTNAME - मार्गाः' इत्यस्मिन् 'मूलभूतम्' पिञ्जं क्लिक्कुरु।\nततः विजर्ड् पुनः चालय।"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "प्रपत्रे क्षेत्राणि"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "द्विमानक्षेत्राणि सर्वदा वामसूच्याः वरणीयानि सूचीबद्धानि च सन्ति।\nशक्यञ्चेत् चित्राणीव व्याख्यास्यन्ते।"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "उपप्रपत्रं प्रपत्रस्य एकं रूपमस्ति यत् अन्यप्रपत्रे समाविष्टमस्ति।\nसारणीभ्यः प्रश्नेभ्यः वा डाटा दर्शयितुम् उपप्रपत्राणि एकस्य बहुभिः सह सम्बन्धित्वेन उपयोजय।"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "प्रपत्रे क्षेत्राणि"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' तथा '<FIELDNAME2>' सन्धिः द्विवारं वृतमस्ति।\nकिन्तु सन्धयः एकवारमेव उपयोजयितुं शक्यन्ते।"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "प्रपत्रनाम स्थापय"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "'%FORMNAME' इति नाम्ना प्रपत्रं पूर्वमेव विद्यते।\nअन्यनाम वृणु।"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "क्षेत्रसमावेशनं कर्तुं न श
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' नाम पूर्वमेव विद्यते।\nकृपया अन्यनाम निवेशय।"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "जालविजर्ड्"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "इदं जाल विजर्ड् इण्टर्नेट् मध्ये लेख्यपत्रप्रकाशने तव साहाय्यं करोति।\n\nइदं लेख्यपत्राणि परिवर्तयिष्यति अतः तानि जालकब्रौसर् मध्ये द्रष्टुं शक्यन्ते। एतदतिरिच्य, लेख्यपत्राणां सरलप्राप्त्यर्थम् इदं सम्बन्धैः द्वारा विषयसूचीपृष्ठम् उत्पादयिष्यति। अपि च, जालविजर्ड् तव जालस्थानस्य वैचित्र्यं परिलेखं च इष्टप्रकारेण कर्तुम् अनुमोदयिष्यति।\n\nजाले प्रकाशितानि लेख्यपत्राणि अद्यतनीकर्तुं तथा लेख्यपत्राणि कदापि सङ्कलयितुम् अपनेतुं च शक्नोषि।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "पूर्वदृश्यः"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "वृतनिर्धारणानि लुप्तानि भविष्यन्ति ।\n\nइमानि निर्धारणानि वस्तुतः लोपयितुमिच्छसि किम्?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "'%FILENAME' इति FTP निर्देशिकाम् उत्
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' इति FTP निर्देशिका नास्ति। \nसम्प्रति निर्देशिकां उत्पादय?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "'%FILENAME' इति Zipसञ्चिकाम् उत्पाद�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "'%FILENAME' इति स्थानिकनिर्देशिकाम् उत्पादयितुं न शक्यते। \nकृपया तव लेखनप्रवेशं परीक्षस्व।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' इति स्थानिकनिर्देशिका न विद्यते। \nसम्प्रत्येव निर्देशिकां उत्पादय?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

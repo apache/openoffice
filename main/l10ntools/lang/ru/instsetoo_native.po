@@ -1377,7 +1377,7 @@ msgstr "Благодарим за выбор %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
-msgstr ""
+msgstr "Для дальнейшей установки необходимые файлы будут скопированы на жесткий диск. После этого установка %PRODUCTNAME начнется автоматически.\r\n\r\nНажмите «Далее» для продолжения."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
 msgid  "Select Folder"
@@ -1829,7 +1829,7 @@ msgstr "Отмена"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
-msgstr ""
+msgstr "Эта программа основана на проекте 'Apache OpenOffice (incubating)', который поддерживается членами сообщества Apache. Список смотрите http://www.openoffice.org/welcome/credits.html"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_125
 msgid  "&Next >"
@@ -2381,15 +2381,15 @@ msgstr "Проверьте выбранный каталог."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
 msgid  "To continue, click \"Next\"."
-msgstr ""
+msgstr "Нажмите для продолжения "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr ""
+msgstr "Чтобы выбрать другую версию, кликните "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
+msgstr "Чтобы выбрать другую папку, кликните "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
 msgid  "Install [ProductName] to:"

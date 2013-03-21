@@ -145,7 +145,7 @@ msgstr "វាល​ជួរ​ឈរ"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
 msgid  "Row\\nFields"
-msgstr ""
+msgstr "ជួរដេក\nវាល​"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2269,7 +2269,7 @@ msgstr "មិន​រក្សា​ទុក​"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
 msgid  "Should the entry\\n#\\nbe deleted?"
-msgstr ""
+msgstr "តើ​គួរ​លុប​\n#\nធាតុ​ឬ​ទេ ?"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2713,7 +2713,7 @@ msgstr "លាក់​ទាំងអស់ "
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
 msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr ""
+msgstr "ការ​ការពារ​ក្រឡា​មាន​ប្រសិទ្ធិភាព តែ​បន្ទាប់​ពី​​សន្លឹក​បច្ចុប្បន្ន​ត្រូវ​បាន​ការពារ​ ។ \n\nជ្រើស​ 'ការពារ​ឯកសារ​' ពី​ម៉ឺនុយ​ 'ឧបករណ៍'​ និង​​បញ្ជាក់​លម្អិត​អំពី​ 'សន្លឹក' ។"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3233,7 +3233,7 @@ msgstr "គ្មាន​ប្រមាណវិធី​ ដែល​ត្�
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
 msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
-msgstr ""
+msgstr "ជួរ​មិន​មាន​ក្បាល​ជួរ​ឈរ ។​\nតើ​អ្នក​ចង់​ឲ្យ​បន្ទាត់​ទី​មួយ​ ត្រូ​វ​បាន​ប្រើ​ជា​បឋមកថា​​ជួរ​​ឈរ​ឬ​ទេ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3297,7 +3297,7 @@ msgstr "រក​មិន​ឃើញ​ពាក្យ​ដែល​​ស្
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
 msgid  "Goal Seek successful.\\n"
-msgstr ""
+msgstr "ដោះស្រាយ​សមីការ ដោយ​ជោគជ័យ ។​\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3309,11 +3309,11 @@ msgstr ") ទៅ​ក្នុង​ក្រឡា​បច្ចុប្ប�
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
 msgid  "Goal Seek not successful.\\n"
-msgstr ""
+msgstr "ដោះស្រាយ​សមីការ បរាជ័យ ។​\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
 msgid  "No exact value found. \\n"
-msgstr ""
+msgstr "រក​មិន​ឃើញ​តម្លៃ​ពិត​ប្រាកដ ។ \n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3781,7 +3781,7 @@ msgstr "ប្រមាណវិធី​ច្រើន"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "អ្នក​បាន​បញ្ចូល​ឈ្មោះ​មិន​ត្រឹមត្រូវ​មួយ ។​\nដូច្នេះ​មិន​អាច​បង្កើត​ទ្រង់ទ្រាយ​ស្វ័យប្រវត្តិ​បានទេ ។​\nសាកល្បង​ម្តង​ទៀត​ ដោយ​ប្រើ​ឈ្មោះ​ផ្សេង​​​ទៀត ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
 msgid  "Range"
@@ -3813,7 +3813,7 @@ msgstr "បោះ​​ពុម្ព​"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
 msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
-msgstr ""
+msgstr "ដើម្បី​អនុវត្ត​​ទ្រង់ទ្រាយ​ស្វ័យប្រវត្តិ​​មួយ\nយ៉ាង​ហោច​ណាស់​ជួ​ររបស់​​តារាង​នៃ​\n​ក្រឡា ៣X៣ ត្រូវ​បាន​ជ្រើស ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
 msgid  "(nested)"
@@ -3913,7 +3913,7 @@ msgstr "របាយការណ៍ ១"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "មិន​មាន​ការ​ពិនិត្យ​​អក្ខរាវិរុទ្ធ​​\nសូម​ពិនិត្យមើល​ការ​ដំឡើង​របស់​អ្នក​ និង​​ដំឡើង \nភាសា​ដែល​អ្នក​ចង់​បាន​ ប្រសិន​បើ​ចាំបាច់"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
 msgid  "Thesaurus can only be used in text cells!"
@@ -3925,7 +3925,7 @@ msgstr "តើ​គួរ​បន្ត​ការ​ពិនិត្យ​
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
 msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
-msgstr ""
+msgstr "មិន​មាន​សម្រាប់​កម្រង​វេវចនសព្ទ​ឡើយ ។\nសូម​ពិនិត្យមើល​ការ​ដំឡើង​របស់​អ្នក ហើយ​ដំឡើង\nភាសា​ដែល​អ្នក​ចង់​បាន បើ​ចាំបាច់"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
 msgid  "The spellcheck of this sheet has been completed."
@@ -4197,11 +4197,11 @@ msgstr "លើ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
 msgid  "This file contains links to other files.\\nShould they be updated?"
-msgstr ""
+msgstr "ឯកសារ​នេះ​មាន​តំណ​ទៅ​ឯកសារ​ផ្សេងៗ ។\nតើ​ពួក​វា​គួរ​តែ​ត្រូវ​បាន​ធ្វើ​បច្ចុប្បន្នភាព​ដែរ​​ឬ​ទេ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
 msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
-msgstr ""
+msgstr "ឯកសារ​នេះ​មាន​សំណួរ ។ លទ្ធផល​របស់​សំណួរទាំង​នេះ​មិន​ត្រូវ​បាន​រក្សា​ទុក ។\nតើ​អ្នក​ចង់​ធ្វើ​សំណួរ​ទាំង​នេះ​ឡើង​វិញ​ឬ​ទេ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
 msgid  "Too many conditions"
@@ -4209,7 +4209,7 @@ msgstr "លក្ខខណ្ឌ​ច្រើន​ពេក"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
 msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
-msgstr ""
+msgstr "មិន​អាច​រំកិល​​ក្រឡា​ដែល​បាន​បំពេញ​\nហួស​ពី​សន្លឹក ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
 msgid  "The table could not be inserted."
@@ -4229,7 +4229,7 @@ msgstr "មិន​មាន​ទំហំ​គ្រប់​គ្រាន
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
 msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
-msgstr ""
+msgstr "មាតិកា​ក្តារ​តម្បៀត​ខ្ទាស់​​ធំ​ជាង​ជួរ​ដែល​បាន​ជ្រើស ​។​​\nយ៉ាង​ណា​ក៏​ដោយ តើ​អ្នក​ចង់​បញ្ចូល​វា​ឬ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
 msgid  "No references found."
@@ -4273,7 +4273,7 @@ msgstr "ប្រៀបធៀប #"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
 msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
-msgstr ""
+msgstr "បាន​លើស​ចំនួន​អតិបរមា​នៃ​ក្រឡា​មិន​ត្រឹមត្រូវ ។​\nមិន​មែន​ក្រឡា​មិន​ត្រឹមត្រូវ​​ទាំងអស់​ ត្រូវ​បាន​សម្គាល់​នោះ​ទេ​ ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
 msgid  "Delete contents"
@@ -4377,7 +4377,7 @@ msgstr "ចេញ​ពី​ កត់ត្រា"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
 msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr ""
+msgstr "អំពើ​នេះ​នឹង​ចេញ​ពី​របៀប​​កត់ត្រាភាព​​​ផ្លាស់ប្តូរ​ ។​\nព័ត៌មាន​ផ្សេងៗ​អំពីភាព​ផ្លាស់ប្តូរ នឹង​ត្រូវ​បាត់បង់ ​។​\n\nចេញ​ពី​របៀបកត់ត្រា​​ភាព​ផ្លាស់ប្តូរ​ឬ​ ?\n\n"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
 msgid  "The document can not be closed while a link is being updated."
@@ -4393,7 +4393,7 @@ msgstr "រូបមន្ត​អារេ %1 R x %2 C"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
 msgid  "This document contains macro function calls.\\nDo you want to run them?"
-msgstr ""
+msgstr "ឯកសារ​នេះ​មាន​ការ​ហៅ​អនុគមន៍​ម៉ាក្រូ ។​\nតើ​អ្នក​ចង់​រត់​ពួកវា​ឬ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
 msgid  "Hangul/Hanja Conversion"
@@ -4497,31 +4497,31 @@ msgstr "សៀភៅ​បញ្ជី​ត្រូវបាន​ធ្វើ
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
 msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "សៀវភៅ​បញ្ជី​ត្រូវ​តែ​រក្សាទុក​នៅពេល​ឥឡូវ ដើម្បី​ធ្វើ​ឲ្យ​របៀប​ចែករំលែក​សកម្ម ។\n\nតើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
 msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "ការ​ប៉ះទង្គិច​ដែល​បាន​ដោះស្រាយ​រួច នឹង​បាត់ ហើយ​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​ទៅ​សៀវភៅបញ្ជី​ដែល​បាន​ចែករំលែកនឹង​មិនត្រូវបាន​រក្សាទុក​ទេ ។\n\nតើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
 msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
-msgstr ""
+msgstr "ការ​បិទ​រៀប​ដែល​បាន​ចែករំលែក​របស់​សៀវភៅ​បញ្ជី រារាំង​ដល់​អ្នកប្រើ​​សៀវភៅ​បញ្ជី​ដែល​បាន​ចែករំលែក​ផ្សេងទៀត ក្នុង​ការ​បញ្ចូល​ការងារ​របស់​គេ​ត្រឡប់​វិញ ។\n\nតើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
 msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
-msgstr ""
+msgstr "សៀវភៅ​បញ្ជី​នេះ មិនមាន​ទៀត​ទេ​នៅ​ក្នុង​របៀប​ដែល​បាន​ចែករំលែក​នេះ ។\n\nរក្សាទុក​សៀវភៅ​បញ្ជី​របស់​អ្នក​ទៅ​ឯកសារ​ដាច់ដោយ​ឡែក​ទៀត និង​បញ្ចូល​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​ទៅ​សៀវភៅ​បញ្ជី​ដែល​បាន​ចែករំលែក​ដោយ​ដៃ ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
 msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "សៀវភៅ​បញ្ជី​ត្រូ​វបាន​​ស្ថិ​ត​នៅ​ក្នុង​របៀប​ចែករំលែក ។ វា​អនុញ្ញាត​ឲ្យ​អ្នក​ប្រើ​ជា​ច្រើន​នាក់​ចូល​ដំណើរការ​ និង​កែសម្រួល​សៀវភៅ​បញ្ជី​នៅ​ពេល​តែ​មួយ ។\n\nផ្លាស់ប្ដូរ​ទៅ​គុណលក្ខណៈ​ធ្វើទ្រង់ទ្រាយ​ដូចជា​ពុម្ពអក្សរ, ពណ៌, និង​ទ្រង់ទ្រាយ​លេខ​នឹង​មិន​ត្រូវ​បាន​រក្សាទុក​ និងមុខងារ​មួយ​ចំនួន​ដូចជា​កែសម្រួល​គំនូស​តាង និង​គូរ​វត្ថុ​មិនអាច​ប្រើប្រើ​ក្នុង​របៀប​ចែករំលែក​ទេ ។ បិទ​របៀប​ចែករំលែក​ ដើម្បី​​ចូល​ដំណើរការ​ជា​ពិសេស​ដែល​ត្រូវ​ការ​សម្រាប់​ការ​ផ្លាស់ប្ដូរ និង​មុខងារ​​ទាំងនោះ​ ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
-msgstr ""
+msgstr "ឯកសារ​សៀវភៅ​បញ្ជី​ដែលបាន​ចែករំលែក គឺ​ជាប់សោ ដោយសារ​តែ​អ្នកប្រើ​កំពុង​ធ្វើការ​បញ្ចូល ៖ '%1'\n\nរបៀប​ចែករំលែក​របស់​ឯកសារ​ដែល​ជាប់សោ គឺ​មិនអាច​បិទ​បានទេ ។ សូម​ព្យាយាម​ម្ដងទៀត ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
 msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
-msgstr ""
+msgstr "ឯកសារ​សៀវភៅ​បញ្ជី​ដែលបាន​ចែករំលែក​​គឺ​ជាប់សោ ដោយសារ​តែ​អ្នក​ប្រើ​កំពុង​បញ្ចូល ៖ '%1'\n\nសូម​ព្យាយាម​រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​នៅពេល​ក្រោយ ។"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
 msgid  "Unknown User"
@@ -4685,7 +4685,7 @@ msgstr "លុប​ទ្រង់ទ្រាយ​ស្វ័យ​ប្រ
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
 msgid  "Do you really want to delete the # AutoFormat?"
-msgstr ""
+msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ទ្រង់ទ្រាយ​ស្វ័យប្រវត្តិ # ឬ ?"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
 msgid  "~Close"
@@ -11493,7 +11493,7 @@ msgstr "គុណលក្ខណៈ​ពុម្ពអក្សរ"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
 msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
-msgstr ""
+msgstr "អ្នក​មានទិន្នន័យ​ដ៏​ធំ​បាន​រក្សាទុក​ក្នុង​ក្ដារ​តម្បៀតខ្ទាស់ ។\nតើ​អ្នក​ចង់​ឲ្យ​មាតិកា​ក្ដារតម្បៀតខ្ទាស់​អាច​ប្រើ​បានក្នុង​កម្មវិធី​ផ្សេង​ដែរឬទេ ?"
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -11561,7 +11561,7 @@ msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
 msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME Calc រកឃើញ​កំហុស​នៅ​ក្នុង​រូបមន្ត​ដែល​បាន​បញ្ចូល ។\nតើ​អ្នក​ចង់​ទទួល​យក​ការ​កែរ​ដែល​បានស្នើ​ខាង​ក្រោម​ឬទេ ។\n\n"
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -11605,7 +11605,7 @@ msgstr "បោះពុម្ព​តែ​សន្លឹក​ដែល​ប
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
-msgstr ""
+msgstr "អ្នក​កំពុង​បិទភ្ជាប់​ទិន្នន័យ​ទៅ​ក្នុង​ក្រឡា​ដែល​មាន​ទិន្នន័យ​រួច​ហើយ ។ \nតើ​អ្នក​ពិត​ជា​ចង់​សរសេរ​ជាន់​លើទិន្នន័យ​ដែល​មាន​ស្រាប់​ឬ ?"
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"

@@ -153,11 +153,11 @@ msgstr "Loo uus kataloog"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "Kataloogi '${DIR}' pole olemas.\nKas soovid selle luua?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Kataloogi '${DIR}' pole olemas.\nKas soovid selle luua või valid teise kataloogi?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -261,7 +261,7 @@ msgstr "Klõpsa jätkamiseks 'Edasi'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Märkus: paigaldamine sooritatakse ilma administraatori õigusteta. Seetõttu on võimalik kasutada ainult piiratud funktsionaalsust (Java käitusaja keskkond (JRE) pole paigaldatav, süsteemne integreerimine pole võimalik).\nKui soovid kasutada täisfunktsionaalsust, klõpsa 'Loobu' ja käivita paigaldamine administraatori õigustes."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -433,7 +433,7 @@ msgstr "Analüüsimine ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "Andmebaasi analüüsimine\nPalun oota natuke ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

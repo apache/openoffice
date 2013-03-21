@@ -61,7 +61,7 @@ msgstr "글꼴 추가"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "이 글꼴 파일을 정말 덮어쓰시겠습니까?\n %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "없음"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "글꼴\n%s\n에 대한 서식 파일(확장자 .afm)을 찾지 못했으므로 글꼴을 설치할 수 없습니다. 예를 들어, 서식 파일은 고스트스크립트로 만들 수 있으며 글꼴 파일과 동일한 디렉토리나 afm 하위 디렉토리에 있어야 합니다.."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "글꼴파일\n  %s\n의 메트릭파일을 복사하지 못했습니다. 글꼴이 설치되지 않습니다."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "글꼴파일\n  %s\n을 복사하지 못했습니다. 글꼴은 설치되지 않습니다."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -177,7 +177,7 @@ msgstr "테스트 페이지는 성공적으로 인쇄되었습니다. 출력 결
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
-msgstr ""
+msgstr "파일 시스템이 읽기 전용이기 때문에 프린터를 설치할 수 없습니다.\n시스템 관리자에게 문의하시기 바랍니다."
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -289,7 +289,7 @@ msgstr "파일에는 메트릭이 포함되어 있지 않습니다."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "\n\n%s\n\n메트릭은 다음과 같은 이유로 인해 변환되지 못했습니다:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "드라이버 \"%s\"은(는) 항상 필요하므로 제거할 수 없습�
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "드라이브 \"%s1\"을(를) 제거할 수 없습니다. 파일\n\n%s2\n\n의 제거는 불가능합니다."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

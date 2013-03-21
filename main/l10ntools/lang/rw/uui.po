@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Wakwinjiza izina ry'ukoresha n'ijambobanga bya \"%2\" kuri %1 hano."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "Kohereza"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Seriveri '${HOST}' yifuza kuboneza inyandikonyakwirema imwe cyangwa nyinshi. Inyandikonyakwirema zifite ibisobanuro zifatiye kuri URL y'inzego. Niba %PRODUCTNAME nyuma isabye inyandiko ifite URL ihuye n'iy'urwego rw'inyandikonyakwirema imaze kubonezwa, %PRODUCTNAME izohereza ibi bisobanuro kuri seriveri. Ibyo bifasha seriveri kumenya imimerere ya porogaramu WWW, urugero, Iyo bagura kuri interineti. \n\nInyandikonyakwirema zikurikira zishobora kubonezwa: \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Urwego: ${DOMAIN}, Inzira: ${PATH}, Inyandikonyakwirema: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Iyakira ry'Inyandikonyakwirema"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME yabitse inyandikonyakwirema za seriveri '${HOST}' zikazoherezwa igihe hasabwe inyandiko ${PATH}.\nInyandikonyakwirema zifite ibisobanuro byibanda ku nzego URL. Zoherezwa na seriveri ku %PRODUCTNAME aho zibikwa igihe inyandiko zimwe na zimwe zigezweho. Niba %PRODUCTNAME itangije inyandiko ihura, hashingiwe kuri URL,  n'urwego rw'imwe mu nyandikonyakwiremazimaze kwakirwa, %PRODUCTNAME izohereza aya makuru kuri iyo seriveri. Ibi bituma seriveri ibasha kumenya uko porogaramu WWW zimeze, urugero, iyo bagura kuri interineti. \n\nInyandikonyakwirema zikurikira zishobora kubonezwa: \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Urwego: ${DOMAIN}, Inzira: ${PATH}, Inyandikonyakwirema: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"

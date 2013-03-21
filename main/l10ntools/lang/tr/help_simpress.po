@@ -37,19 +37,19 @@ msgstr ""
 
 #: source/text/simpress/00/00000004.xhp#hd_id3149655.1
 msgid  "\<variable id=\"wie\"\>To access this command \</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">Bu komuta erişmek için </variable>"
 
 #: source/text/simpress/00/00000004.xhp#par_id8789025
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens a dialog to save the selected bitmap picture as a file. The default file format is the internal format of the image.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Seçilen bitmap resmini dosya olarak kaydetmek için bir pencere açar. Varsayılan dosya biçimi resmin iç biçimidir.</ahelp>"
 
 #: source/text/simpress/00/00000004.xhp#par_id5316324
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Custom Animation window on the Task pane.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Görev penceresi üzerindeki Özel Canlandırma penceresini açar.</ahelp>"
 
 #: source/text/simpress/00/00000004.xhp#par_id3147435
 msgid  "\<image id=\"img_id3156441\" src=\"res/commandimagelist/sc_rect.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3156441\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3156441\" src=\"res/commandimagelist/sc_rect.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3156441\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000004.xhp#par_id3145801.2
 msgid  "Rectangle"
@@ -57,7 +57,7 @@ msgstr "Dikdörtgen"
 
 #: source/text/simpress/00/00000004.xhp#par_id3150749
 msgid  "\<image id=\"img_id3155065\" src=\"res/commandimagelist/sc_ellipse.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3155065\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155065\" src=\"res/commandimagelist/sc_ellipse.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3155065\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000004.xhp#par_id3147344.3
 msgid  "Ellipse"
@@ -65,7 +65,7 @@ msgstr "Elips"
 
 #: source/text/simpress/00/00000004.xhp#par_id3147004
 msgid  "\<image id=\"img_id3159236\" src=\"res/commandimagelist/sc_linetoolbox.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3159236\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3159236\" src=\"res/commandimagelist/sc_linetoolbox.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3159236\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000004.xhp#par_id3150202.4
 msgid  "Curve"
@@ -73,7 +73,7 @@ msgstr "Eğri nesne"
 
 #: source/text/simpress/00/00000004.xhp#par_id3156449
 msgid  "\<image id=\"img_id3149409\" src=\"res/commandimagelist/sc_objectalign.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149409\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149409\" src=\"res/commandimagelist/sc_objectalign.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3149409\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000004.xhp#par_id3157979.5
 msgid  "Alignment"
@@ -81,7 +81,7 @@ msgstr "Hizalama"
 
 #: source/text/simpress/00/00000004.xhp#par_id3159208
 msgid  "\<image id=\"img_id3159231\" src=\"res/commandimagelist/sc_bringtofront.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3159231\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3159231\" src=\"res/commandimagelist/sc_bringtofront.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3159231\">Icon</alt></image>"
 
 #: source/text/simpress/00/00000004.xhp#par_id3153013.6
 msgid  "Arrange"
@@ -96,8 +96,9 @@ msgid  "File Menu"
 msgstr "Dosya Menüsü"
 
 #: source/text/simpress/00/00000401.xhp#par_id3146974.2
+#, fuzzy
 msgid  "\<variable id=\"dtvlc\"\>Choose \<emph\>File - Export\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"aslal\"><emph>Görünüm - Cetvel</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000402.xhp#tit
 #, fuzzy
@@ -110,8 +111,9 @@ msgid  "Edit Menu"
 msgstr "Düzenle Menüsü"
 
 #: source/text/simpress/00/00000402.xhp#par_id3145171.2
+#, fuzzy
 msgid  "Choose \<emph\>Edit - Duplicate\</emph\>"
-msgstr ""
+msgstr "<emph>Düzenle - Kopyasını Oluştur</emph> seçin"
 
 #: source/text/simpress/00/00000402.xhp#par_id3156441.7
 #, fuzzy
@@ -119,24 +121,28 @@ msgid  "Shift+F3"
 msgstr "Shift+F3"
 
 #: source/text/simpress/00/00000402.xhp#par_id3149263.3
+#, fuzzy
 msgid  "\<variable id=\"bearbueber\"\>Choose \<emph\>Edit - Cross-fading\</emph\> (\<item type=\"productname\"\>%PRODUCTNAME\</item\> Draw only) \</variable\>"
-msgstr ""
+msgstr "<variable id=\"bearbueber\"><emph>Düzenle - Çapraz-soldur</emph> (sadece <item type=\"productname\">%PRODUCTNAME</item> Draw için) </variable> seçin"
 
 #: source/text/simpress/00/00000402.xhp#par_id3149666.4
+#, fuzzy
 msgid  "\<variable id=\"basl\"\>Choose \<emph\>Edit - Delete Slide\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"basl\"><emph>Düzenle - Slaytı Sil</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000402.xhp#par_id3147397.5
 msgid  "\<variable id=\"baebl\"\>Open the context menu of an inserted layer, then choose \<emph\>Delete Layer\</emph\>\</variable\>"
 msgstr ""
 
 #: source/text/simpress/00/00000402.xhp#par_id3155603.6
+#, fuzzy
 msgid  "\<variable id=\"feldbefehl\"\>Choose \<emph\>Edit - Fields\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000402.xhp#par_id8695944
+#, fuzzy
 msgid  "\<variable id=\"gluebar\"\>Click the \<emph\>Glue Points\</emph\> icon on the Drawing Bar \</variable\>"
-msgstr ""
+msgstr "<variable id=\"gluebar\">Çizim Araç Çubuğundaki <emph>Yapışkan Noktalar</emph> simgesini tıklayın </variable>"
 
 #: source/text/simpress/00/00000403.xhp#tit
 #, fuzzy
@@ -149,48 +155,59 @@ msgid  "View Menu"
 msgstr "Görünüm Menüsü"
 
 #: source/text/simpress/00/00000403.xhp#par_id3148798.2
+#, fuzzy
 msgid  "\<variable id=\"aslal\"\>Choose \<emph\>View - Ruler\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"aslal\"><emph>Görünüm - Cetvel</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_id3153771.3
+#, fuzzy
 msgid  "\<variable id=\"option\"\>Choose \<emph\>View - Toolbars - Options\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"option\"><emph>Görünüm - Araç Çubukları - Seçenekler</emph>' i seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_id3152576.4
+#, fuzzy
 msgid  "Choose \<emph\>View - Toolbars - Presentation\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Araç Çubukları- Sunum</emph>' u seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3146316.8
+#, fuzzy
 msgid  "\<variable id=\"quali\"\>Choose \<emph\>View - Color/Grayscale\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"quali\"><emph>Görünüm - Renkli/Gri Tonlamalı</emph>' yı seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_idN106A4
+#, fuzzy
 msgid  "\<variable id=\"taskpane\"\>Choose \<emph\>View - Task Pane\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"taskpane\"><emph>Görünüm - Görev Panosu</emph>' nu seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_id3166426.10
+#, fuzzy
 msgid  "Choose \<emph\>View - Normal\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Normal</emph>' i seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3157982.13
+#, fuzzy
 msgid  "Choose \<emph\>View - Outline\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Anahat</emph>' ı seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3149875.16
+#, fuzzy
 msgid  "Choose \<emph\>View - Slide Sorter\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Slayt Sıralayıcı</emph>' yı seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3149352.19
+#, fuzzy
 msgid  "Choose \<emph\>View - Notes Page \</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Not Sayfaları</emph>' nı seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3155255.22
+#, fuzzy
 msgid  "Choose \<emph\>View - Handout Page\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Dinleyici Kopyası</emph>' nı seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3154328.25
+#, fuzzy
 msgid  "Choose \<emph\>Slide Show - Slide Show\</emph\>"
-msgstr ""
+msgstr "<emph>Slayt Gösterisi - Slayt Gösterisi</emph>' ni seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3150134.44
 #, fuzzy
@@ -198,12 +215,14 @@ msgid  "F5"
 msgstr "F5"
 
 #: source/text/simpress/00/00000403.xhp#par_id3145244.26
+#, fuzzy
 msgid  "On the \<emph\>Presentation\</emph\> toolbar, click"
-msgstr ""
+msgstr "<emph>Sunum</emph> araç çubuğunda tıklayın: "
 
 #: source/text/simpress/00/00000403.xhp#par_id3148768
+#, fuzzy
 msgid  "\<image id=\"img_id3148774\" src=\"res/commandimagelist/sc_presentation.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148774\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148774\" src=\"res/commandimagelist/sc_presentation.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3148774\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000403.xhp#par_id3151016.27
 #, fuzzy
@@ -211,28 +230,34 @@ msgid  "Slide Show"
 msgstr "Slayt Gösterisi"
 
 #: source/text/simpress/00/00000403.xhp#par_id3153719.31
+#, fuzzy
 msgid  "Choose \<emph\>View - Normal\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Normal</emph>' i seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_id3151264.34
+#, fuzzy
 msgid  "Choose \<emph\>View - Master\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Normal</emph>' i seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_idN10AF7
+#, fuzzy
 msgid  "\<variable id=\"masterlayouts\"\>Choose \<emph\>View - Master - Slide Master \</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"masterlayouts\"><emph>Görünüm - Ana Belge - Ana Slayt </emph>' ı seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_idN10B19
+#, fuzzy
 msgid  "\<variable id=\"notesmaster\"\>Choose \<emph\>View - Master - Notes Master\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"masterlayouts\"><emph>Görünüm - Ana Belge - Ana Slayt </emph>' ı seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_idN10B07
+#, fuzzy
 msgid  "\<variable id=\"master\"\>Choose \<emph\>View - Master - Master Elements\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"masterlayouts\"><emph>Görünüm - Ana Belge - Ana Slayt </emph>' ı seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_idN10B57
+#, fuzzy
 msgid  "Choose \<emph\>View - Header and Footer\</emph\>"
-msgstr ""
+msgstr "<emph>Görünüm - Slayt Sıralayıcı</emph>' yı seçin"
 
 #: source/text/simpress/00/00000403.xhp#par_idN10B6E
 msgid  "Choose \<emph\>Insert - Page number\</emph\>"
@@ -243,16 +268,19 @@ msgid  "Choose \<emph\>Insert - Date and time\</emph\>"
 msgstr ""
 
 #: source/text/simpress/00/00000403.xhp#par_id3149286.37
+#, fuzzy
 msgid  "\<variable id=\"hinterzeichnung\"\>Choose \<emph\>View - Normal\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"taskpane\"><emph>Görünüm - Görev Panosu</emph>' nu seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_id3153480.56
+#, fuzzy
 msgid  "\<variable id=\"master_drawing\"\>Choose \<emph\>View - Master - Slide Master\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"masterlayouts\"><emph>Görünüm - Ana Belge - Ana Slayt </emph>' ı seçin</variable>"
 
 #: source/text/simpress/00/00000403.xhp#par_id3147254.39
+#, fuzzy
 msgid  "\<variable id=\"hinternotizen\"\>Choose \<emph\>View - Notes Page\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"taskpane\"><emph>Görünüm - Görev Panosu</emph>' nu seçin</variable>"
 
 #: source/text/simpress/00/00000404.xhp#tit
 #, fuzzy
@@ -269,12 +297,14 @@ msgid  "Choose \<emph\>Insert - Slide\</emph\>"
 msgstr ""
 
 #: source/text/simpress/00/00000404.xhp#par_id3152597.3
+#, fuzzy
 msgid  "On the \<emph\>Presentation\</emph\> bar, click"
-msgstr ""
+msgstr "<emph>Sunum</emph> araç çubuğunda tıklayın: "
 
 #: source/text/simpress/00/00000404.xhp#par_id3145251
+#, fuzzy
 msgid  "\<image id=\"img_id3151073\" src=\"res/commandimagelist/sc_insertdoc.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3151073\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3151073\" src=\"res/commandimagelist/sc_insertdoc.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3151073\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3154512.4
 #, fuzzy
@@ -318,12 +348,14 @@ msgid  "Choose \<emph\>Insert - Spreadsheet\</emph\>"
 msgstr ""
 
 #: source/text/simpress/00/00000404.xhp#par_id3144769.12
+#, fuzzy
 msgid  "On the \<emph\>Insert\</emph\> toolbar, click"
-msgstr ""
+msgstr "<emph>Sunum</emph> araç çubuğunda tıklayın: "
 
 #: source/text/simpress/00/00000404.xhp#par_id3163703
+#, fuzzy
 msgid  "\<image id=\"img_id3145361\" src=\"res/commandimagelist/sc_grid.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145361\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145361\" src=\"res/commandimagelist/sc_grid.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145361\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3146963.13
 msgid  "Spreadsheet"
@@ -334,12 +366,14 @@ msgid  "Choose \<emph\>Insert - File\</emph\>"
 msgstr ""
 
 #: source/text/simpress/00/00000404.xhp#par_id3153958.15
+#, fuzzy
 msgid  "On the \<emph\>Insert\</emph\> toolbar, click"
-msgstr ""
+msgstr "<emph>Sunum</emph> araç çubuğunda tıklayın: "
 
 #: source/text/simpress/00/00000404.xhp#par_id3156397
+#, fuzzy
 msgid  "\<image id=\"img_id3145237\" src=\"res/commandimagelist/sc_inserttoolbox.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145237\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145237\" src=\"res/commandimagelist/sc_inserttoolbox.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145237\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3157900.16
 #, fuzzy
@@ -347,36 +381,43 @@ msgid  "File"
 msgstr "Dosya"
 
 #: source/text/simpress/00/00000404.xhp#par_id3149351.17
+#, fuzzy
 msgid  "\<variable id=\"feldbf\"\>Choose \<emph\>Insert - Fields\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3150477.22
+#, fuzzy
 msgid  "\<variable id=\"feldbf1\"\>Choose \<emph\>Insert - Fields - Date (fixed)\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3146879.18
+#, fuzzy
 msgid  "\<variable id=\"feldbf2\"\>Choose \<emph\>Insert - Fields - Date (variable)\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3153036.19
+#, fuzzy
 msgid  "\<variable id=\"feldbf3\"\>Choose \<emph\>Insert - Fields - Time (fixed)\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3145590.20
+#, fuzzy
 msgid  "\<variable id=\"feldbf4\"\>Choose \<emph\>Insert - Fields - Time (variable)\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3153935.21
 msgid  "\<variable id=\"feldbf5\"\>Choose Insert \<switchinline select=\"appl\"\>\<caseinline select=\"DRAW\"\>- Fields \</caseinline\>\</switchinline\>- Page Number \</variable\>"
 msgstr ""
 
 #: source/text/simpress/00/00000404.xhp#par_id3148583.23
+#, fuzzy
 msgid  "\<variable id=\"feldbf6\"\>Choose \<emph\>Insert - Fields - Author\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000404.xhp#par_id3155951.24
+#, fuzzy
 msgid  "\<variable id=\"feldbf7\"\>Choose \<emph\>Insert - Fields - File Name\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"feldbefehl\"><emph>Düzenle - Alanlar</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000405.xhp#tit
 #, fuzzy
@@ -397,8 +438,9 @@ msgid  "On the \<emph\>Lines and Arrows\</emph\> toolbar, click the \<emph\>Dime
 msgstr ""
 
 #: source/text/simpress/00/00000405.xhp#par_id3155530.9
+#, fuzzy
 msgid  "\<variable id=\"frtite\"\>Choose \<emph\>Format - Page\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"aslal\"><emph>Görünüm - Cetvel</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000405.xhp#par_id3145386.13
 msgid  "\<variable id=\"frtites\"\>Choose \<emph\>Format - Page\</emph\> and then click the \<emph\>Page\</emph\> tab\</variable\>"
@@ -409,8 +451,9 @@ msgid  "\<variable id=\"frtiteh\"\>Choose \<emph\>Format - Page\</emph\> and the
 msgstr ""
 
 #: source/text/simpress/00/00000405.xhp#par_id3155266.10
+#, fuzzy
 msgid  "\<variable id=\"adnsei\"\>Choose \<emph\>Format - Slide Layout\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"aslal\"><emph>Görünüm - Cetvel</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000405.xhp#par_id3152874.11
 msgid  "In a Draw document, right-click a layer tab and choose \<emph\>Modify Layer\</emph\>"
@@ -421,8 +464,9 @@ msgid  "Choose \<emph\>Format - Layer\</emph\> (only $[officename] Draw)"
 msgstr ""
 
 #: source/text/simpress/00/00000405.xhp#par_id3153012.12
+#, fuzzy
 msgid  "\<variable id=\"seitenvorlage\"\>Choose \<emph\>Format - Slide Design\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"aslal\"><emph>Görünüm - Cetvel</emph> seçin</variable>"
 
 #: source/text/simpress/00/00000406.xhp#tit
 #, fuzzy
@@ -457,20 +501,24 @@ msgid  "\<variable id=\"etdaw\"\>Choose \<emph\>Slide Show - Slide Transition\</
 msgstr ""
 
 #: source/text/simpress/00/00000407.xhp#par_id3152576.3
+#, fuzzy
 msgid  "Choose \<emph\>Insert - Animated Image\</emph\>"
-msgstr ""
+msgstr "Seç <emph>Ekle - Canlandırmalı Resim</emph>"
 
 #: source/text/simpress/00/00000407.xhp#par_id3149262.6
+#, fuzzy
 msgid  "Choose \<emph\>Slide Show - Custom Animation\</emph\>"
-msgstr ""
+msgstr "<emph>Slayt Gösterisi - Canlandırmayı Özelleştir</emph> menüsünü seçin"
 
 #: source/text/simpress/00/00000407.xhp#par_id3146976.7
+#, fuzzy
 msgid  "On the \<emph\>Drawing\</emph\> toolbar, click"
-msgstr ""
+msgstr "<emph>Sunum</emph> araç çubuğunda tıklayın: "
 
 #: source/text/simpress/00/00000407.xhp#par_id3155603
+#, fuzzy
 msgid  "\<image id=\"img_id3149400\" src=\"res/commandimagelist/sc_customanimation.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3149400\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149400\" src=\"res/commandimagelist/sc_customanimation.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3149400\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000407.xhp#par_id3154754.8
 #, fuzzy
@@ -478,16 +526,19 @@ msgid  "Custom Animation"
 msgstr "Efektler"
 
 #: source/text/simpress/00/00000407.xhp#par_id3146316.9
+#, fuzzy
 msgid  "Choose \<emph\>Slide Show - Interaction\</emph\>"
-msgstr ""
+msgstr "Seç <emph>Slayt Gösterisi - Etkileşim</emph>"
 
 #: source/text/simpress/00/00000407.xhp#par_id3149257.10
+#, fuzzy
 msgid  "On the \<emph\>Drawing\</emph\> toolbar, click"
-msgstr ""
+msgstr "<emph>Sunum</emph> araç çubuğunda tıklayın: "
 
 #: source/text/simpress/00/00000407.xhp#par_id3154649
+#, fuzzy
 msgid  "\<image id=\"img_id3150205\" src=\"res/commandimagelist/sc_animationeffects.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150205\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150205\" src=\"res/commandimagelist/sc_animationeffects.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3150205\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000407.xhp#par_id3155380.11
 #, fuzzy
@@ -587,8 +638,9 @@ msgid  "On the Drawing bar, open the \<emph\>Arrange\</emph\> toolbar and click:
 msgstr ""
 
 #: source/text/simpress/00/00000413.xhp#par_id3150537
+#, fuzzy
 msgid  "\<image id=\"img_id3145233\" src=\"res/commandimagelist/sc_beforeobject.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145233\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145233\" src=\"res/commandimagelist/sc_beforeobject.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145233\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000413.xhp#par_id3153121.9
 #, fuzzy
@@ -608,8 +660,9 @@ msgid  "On the Drawing bar, open the \<emph\>Arrange\</emph\> toolbar and click:
 msgstr ""
 
 #: source/text/simpress/00/00000413.xhp#par_id3150865
+#, fuzzy
 msgid  "\<image id=\"img_id3145597\" src=\"res/commandimagelist/sc_behindobject.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145597\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145597\" src=\"res/commandimagelist/sc_behindobject.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145597\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000413.xhp#par_id3153110.12
 #, fuzzy
@@ -629,8 +682,9 @@ msgid  "On the Drawing bar, open the \<emph\>Arrange\</emph\> toolbar and click:
 msgstr ""
 
 #: source/text/simpress/00/00000413.xhp#par_id3154327
+#, fuzzy
 msgid  "\<image id=\"img_id3155439\" src=\"res/commandimagelist/sc_reverseorder.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3155439\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155439\" src=\"res/commandimagelist/sc_reverseorder.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3155439\">Simge</alt></image>"
 
 #: source/text/simpress/00/00000413.xhp#par_id3150272.15
 #, fuzzy
@@ -702,7 +756,6 @@ msgid  "Select two or more objects, open the context menu and choose \<emph\>Sha
 msgstr ""
 
 #: source/text/simpress/01/01170000.xhp#tit
-#, fuzzy
 msgid  "Export"
 msgstr "Aktar"
 
@@ -711,7 +764,6 @@ msgid  "\<bookmark_value\>Macromedia Flash export\</bookmark_value\>\<bookmark_v
 msgstr ""
 
 #: source/text/simpress/01/01170000.xhp#hd_id3153728.1
-#, fuzzy
 msgid  "Export"
 msgstr "Aktar"
 
@@ -744,12 +796,10 @@ msgid  "\<link href=\"text/shared/00/00000020.xhp\" name=\"Information on Import
 msgstr ""
 
 #: source/text/simpress/01/01180000.xhp#tit
-#, fuzzy
 msgid  "Page"
 msgstr "Sayfa"
 
 #: source/text/simpress/01/01180000.xhp#hd_id3149379.1
-#, fuzzy
 msgid  "Page"
 msgstr "Sayfa"
 
@@ -762,7 +812,6 @@ msgid  "To change the background of all of the pages in the active file, select 
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#tit
-#, fuzzy
 msgid  "Page "
 msgstr "Sayfa "
 
@@ -772,19 +821,17 @@ msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3154011.1
 msgid  "\<link href=\"text/simpress/01/01180001.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180001.xhp\" name=\"Page\">Sayfa</link>"
 
 #: source/text/simpress/01/01180001.xhp#par_id3153416.2
 msgid  "Sets page orientation, page margins, background and other layout options."
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3155445.17
-#, fuzzy
 msgid  "Paper format"
 msgstr "Sayfa biçimi"
 
 #: source/text/simpress/01/01180001.xhp#hd_id3154703.19
-#, fuzzy
 msgid  "Format"
 msgstr "Biçim"
 
@@ -793,7 +840,6 @@ msgid  "Select a paper format supported by your printer. You can also create a c
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3154659.21
-#, fuzzy
 msgid  "Width"
 msgstr "Genişlik"
 
@@ -802,7 +848,6 @@ msgid  "Shows the width of the paper format you selected in the \<emph\>Format \
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3153816.23
-#, fuzzy
 msgid  "Height"
 msgstr "Yükseklik"
 
@@ -811,32 +856,26 @@ msgid  "Shows the height of the paper format you selected in the \<emph\>Format 
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3159207.25
-#, fuzzy
 msgid  "Portrait"
 msgstr "Düşey"
 
 #: source/text/simpress/01/01180001.xhp#par_id3153250.26
-#, fuzzy
 msgid  "Page orientation is vertical."
 msgstr "Sayfa yönü dikeydir."
 
 #: source/text/simpress/01/01180001.xhp#hd_id3154766.27
-#, fuzzy
 msgid  "Landscape"
 msgstr "Yatay"
 
 #: source/text/simpress/01/01180001.xhp#par_id3153812.28
-#, fuzzy
 msgid  "Page orientation is horizontal."
 msgstr "Sayfa yönü yataydır."
 
 #: source/text/simpress/01/01180001.xhp#hd_id3153075.29
-#, fuzzy
 msgid  "Paper tray"
 msgstr "Kağıt tabağı"
 
 #: source/text/simpress/01/01180001.xhp#par_id3145115.30
-#, fuzzy
 msgid  "Select the paper source for your printer."
 msgstr "Yazıcınız için kağıt kaynağı seçin"
 
@@ -845,7 +884,6 @@ msgid  "If your document uses more than one paper format, you can select a diffe
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3150746.3
-#, fuzzy
 msgid  "Margins"
 msgstr "Kenarlar"
 
@@ -854,7 +892,6 @@ msgid  "Specify the distance between the edge of a printed page and the printabl
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3145591.5
-#, fuzzy
 msgid  "Left"
 msgstr "Solda"
 
@@ -863,7 +900,6 @@ msgid  "Enter the distance between the left edge of the page and the data. You c
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3153084.7
-#, fuzzy
 msgid  "Right"
 msgstr "Sağa"
 
@@ -872,7 +908,6 @@ msgid  "Enter the distance between the right edge of the page and the data. You 
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3153565.9
-#, fuzzy
 msgid  "Top"
 msgstr "Yukarı"
 
@@ -881,7 +916,6 @@ msgid  "Enter the distance between the top edge of the page and the data. You ca
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3150335.11
-#, fuzzy
 msgid  "Bottom"
 msgstr "Aşağı"
 
@@ -890,7 +924,6 @@ msgid  "Enter the distance between the bottom edge of the page and the data. You
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3150018.15
-#, fuzzy
 msgid  "Format"
 msgstr "Biçim"
 
@@ -899,7 +932,6 @@ msgid  "Specify the format for page numbering."
 msgstr ""
 
 #: source/text/simpress/01/01180001.xhp#hd_id3155439.36
-#, fuzzy
 msgid  "Fit object to paper format"
 msgstr "Kağıt biçimine uygun nesne"
 
@@ -908,13 +940,12 @@ msgid  "Reduces the scale of objects and the size of the font on the page so tha
 msgstr ""
 
 #: source/text/simpress/01/01180002.xhp#tit
-#, fuzzy
 msgid  "Background"
 msgstr "Arkaplan"
 
 #: source/text/simpress/01/01180002.xhp#hd_id3154253.1
 msgid  "\<link href=\"text/simpress/01/01180002.xhp\" name=\"Background\"\>Background\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180002.xhp\" name=\"Background\">Arkaplan</link>"
 
 #: source/text/simpress/01/01180002.xhp#par_id3155962.2
 msgid  "Defines a background for a single page or for all of the pages in the active file."
@@ -925,7 +956,6 @@ msgid  "The options for this dialog are described \<link href=\"text/shared/01/0
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#tit
-#, fuzzy
 msgid  "Navigator"
 msgstr "Gezgin"
 
@@ -935,7 +965,7 @@ msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#hd_id3149664.1
 msgid  "\<link href=\"text/simpress/01/02110000.xhp\" name=\"Navigator\"\>Navigator\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02110000.xhp\" name=\"Navigator\">Gezgin</link>"
 
 #: source/text/simpress/01/02110000.xhp#par_id3149379.2
 msgid  "\<ahelp hid=\"HID_SD_NAVIGATOR\"\>Opens the Navigator, where you can quickly jump to other slides or move between open files.\</ahelp\>"
@@ -950,7 +980,6 @@ msgid  "Press \<item type=\"keycode\"\>Ctrl+Shift+F5\</item\> to open the Naviga
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#hd_id3145235.8
-#, fuzzy
 msgid  "Pointer"
 msgstr "Kalem"
 
@@ -963,84 +992,74 @@ msgid  "\<image id=\"img_id3153034\" src=\"sd/res/imagelst/nv02.png\" width=\"0.
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3150862.10
-#, fuzzy
 msgid  "Pointer"
 msgstr "Kalem"
 
 #: source/text/simpress/01/02110000.xhp#hd_id3152999.11
-#, fuzzy
 msgid  "First Slide"
 msgstr "İlk Slayt"
 
 #: source/text/simpress/01/02110000.xhp#par_id3153564.12
 msgid  "\<ahelp hid=\"HID_SD_NAVIGATOR_TBI_FIRST\"\>Jumps to the first slide in the slide show.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SD_NAVIGATOR_TBI_FIRST\"> Slayt gösterisinde ilk slayta atlar.</ahelp>"
 
 #: source/text/simpress/01/02110000.xhp#par_id3155925
 msgid  "\<image id=\"img_id3155931\" src=\"res/commandimagelist/sc_firstrecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3155931\"\>Icon\</alt\>\</image\>"
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3145246.13
-#, fuzzy
 msgid  "First Page"
 msgstr "İlk Sayfa"
 
 #: source/text/simpress/01/02110000.xhp#hd_id3156061.14
-#, fuzzy
 msgid  "Previous Slide"
 msgstr "Önceki Slayt"
 
 #: source/text/simpress/01/02110000.xhp#par_id3148768.15
 msgid  "\<ahelp hid=\"HID_SD_NAVIGATOR_TBI_PREV\"\>Moves back one slide in the slide show.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SD_NAVIGATOR_TBI_PREV\">Slayt gösterisinden bir slayt geriye taşır.</ahelp>"
 
 #: source/text/simpress/01/02110000.xhp#par_id3153045
 msgid  "\<image id=\"img_id3157976\" src=\"res/commandimagelist/sc_prevrecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3157976\"\>Icon\</alt\>\</image\>"
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3150473.16
-#, fuzzy
 msgid  "Previous Slide"
 msgstr "Önceki Slayt"
 
 #: source/text/simpress/01/02110000.xhp#hd_id3155369.17
-#, fuzzy
 msgid  "Next Slide"
 msgstr "Sonraki Slayt"
 
 #: source/text/simpress/01/02110000.xhp#par_id3153920.18
 msgid  "\<ahelp hid=\"HID_SD_NAVIGATOR_TBI_NEXT\"\>Move forward one slide in the slide show.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SD_NAVIGATOR_TBI_NEXT\">Slayt gösterisinde slaytı bir slayt ileriye taşır.</ahelp>"
 
 #: source/text/simpress/01/02110000.xhp#par_id3083279
 msgid  "\<image id=\"img_id3083286\" src=\"res/commandimagelist/sc_nextrecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3083286\"\>Icon\</alt\>\</image\>"
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3149454.19
-#, fuzzy
 msgid  "Next Slide"
 msgstr "Sonraki Slayt"
 
 #: source/text/simpress/01/02110000.xhp#hd_id3150762.20
-#, fuzzy
 msgid  "Last Slide"
 msgstr "Son Slayt"
 
 #: source/text/simpress/01/02110000.xhp#par_id3147564.21
 msgid  "\<ahelp hid=\"HID_SD_NAVIGATOR_TBI_LAST\"\>Jumps to the last slide in the slide show.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SD_NAVIGATOR_TBI_LAST\"> Slayt gösterisinden son slayta atlar.</ahelp>"
 
 #: source/text/simpress/01/02110000.xhp#par_id3151183
 msgid  "\<image id=\"img_id3156315\" src=\"res/commandimagelist/sc_lastrecord.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3156315\"\>Icon\</alt\>\</image\>"
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3154055.22
-#, fuzzy
 msgid  "Last Slide"
 msgstr "Son Slayt"
 
 #: source/text/simpress/01/02110000.xhp#hd_id3149979.23
-#, fuzzy
 msgid  "Drag Mode"
 msgstr "Sürükleme türü"
 
@@ -1053,7 +1072,6 @@ msgid  "\<image id=\"img_id3147254\" src=\"sw/imglst/sc20238.png\" width=\"0.222
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3154930.25
-#, fuzzy
 msgid  "Insert as hyperlink"
 msgstr "Köprü Olarak Ekle"
 
@@ -1062,7 +1080,6 @@ msgid  "\<image id=\"img_id3145418\" src=\"res/commandimagelist/sc_chainframes.p
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3150508.26
-#, fuzzy
 msgid  "Insert as link"
 msgstr "Bağlantı olarak ekle"
 
@@ -1071,12 +1088,10 @@ msgid  "\<image id=\"img_id3154258\" src=\"sw/imglst/sc20239.png\" width=\"0.222
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#par_id3149159.27
-#, fuzzy
 msgid  "Insert as copy"
 msgstr "Kopya olarak ekle"
 
 #: source/text/simpress/01/02110000.xhp#hd_id3148930.28
-#, fuzzy
 msgid  "Insert as hyperlink"
 msgstr "Köprü Olarak Ekle"
 
@@ -1085,7 +1100,6 @@ msgid  "Inserts slides as a hyperlink (\<link href=\"text/shared/00/00000002.xhp
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#hd_id3152945.32
-#, fuzzy
 msgid  "Insert as link"
 msgstr "Bağlantı olarak ekle"
 
@@ -1094,7 +1108,6 @@ msgid  "Inserts slides as a \<link href=\"text/shared/00/00000005.xhp#verknuepfu
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#hd_id3159274.30
-#, fuzzy
 msgid  "Insert as copy"
 msgstr "Kopya olarak ekle"
 
@@ -1111,7 +1124,6 @@ msgid  "\<ahelp hid=\".\"\>In the submenu you can choose to display a list of al
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#hd_id3148624.36
-#, fuzzy
 msgid  "Existing Slides"
 msgstr "Var olan slaytlar"
 
@@ -1120,7 +1132,6 @@ msgid  "\<ahelp hid=\"HID_SD_NAVIGATOR_TLB\"\>Lists available slides. Double-cli
 msgstr ""
 
 #: source/text/simpress/01/02110000.xhp#hd_id3150423.34
-#, fuzzy
 msgid  "Open Documents"
 msgstr "Belgeleri Aç"
 
@@ -1129,12 +1140,10 @@ msgid  "\<ahelp hid=\"HID_SD_NAVIGATOR_LB\"\>Lists available $[officename] files
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#tit
-#, fuzzy
 msgid  "Duplicate"
 msgstr "Eşini yarat"
 
 #: source/text/simpress/01/02120000.xhp#hd_id3148868.1
-#, fuzzy
 msgid  "Duplicate"
 msgstr "Eşini yarat"
 
@@ -1143,7 +1152,6 @@ msgid  "\<variable id=\"duplizieren\"\>\<ahelp hid=\".uno:CopyObjects\"\>Makes o
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3146962.3
-#, fuzzy
 msgid  "Number of copies"
 msgstr "Kopya sayısı"
 
@@ -1164,7 +1172,6 @@ msgid  "\<ahelp hid=\"SD:IMAGEBUTTON:DLG_COPY:BTN_SET_VIEWDATA\"\>Enters the wid
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3153932.5
-#, fuzzy
 msgid  "Placement"
 msgstr "Yerleşim"
 
@@ -1173,7 +1180,6 @@ msgid  "Sets the position and rotation of a duplicate object with respect to the
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3153084.7
-#, fuzzy
 msgid  "X axis"
 msgstr "X ekseni"
 
@@ -1182,7 +1188,6 @@ msgid  "\<ahelp hid=\"SD:METRICFIELD:DLG_COPY:MTR_FLD_MOVE_X\"\>Enter the horizo
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3154507.9
-#, fuzzy
 msgid  "Y axis"
 msgstr "Y ekseni"
 
@@ -1191,7 +1196,6 @@ msgid  "\<ahelp hid=\"SD:METRICFIELD:DLG_COPY:MTR_FLD_MOVE_Y\"\>Enter the vertic
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3150022.11
-#, fuzzy
 msgid  "Angle"
 msgstr "Açı"
 
@@ -1200,7 +1204,6 @@ msgid  "\<ahelp hid=\"SD:METRICFIELD:DLG_COPY:MTR_FLD_ANGLE\"\>Enter the angle (
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3145296.13
-#, fuzzy
 msgid  "Enlargement"
 msgstr "Büyültme"
 
@@ -1209,7 +1212,6 @@ msgid  "Sets the size of a duplicate object."
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3148769.15
-#, fuzzy
 msgid  "Width"
 msgstr "Genişlik"
 
@@ -1218,7 +1220,6 @@ msgid  "\<ahelp hid=\"SD:METRICFIELD:DLG_COPY:MTR_FLD_WIDTH\"\>Enter the amount 
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3150930.17
-#, fuzzy
 msgid  "Height"
 msgstr "Yükseklik"
 
@@ -1227,7 +1228,6 @@ msgid  "\<ahelp hid=\"SD:METRICFIELD:DLG_COPY:MTR_FLD_HEIGHT\"\>Enter the amount
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3154866.19
-#, fuzzy
 msgid  "Colors"
 msgstr "Renkler"
 
@@ -1236,7 +1236,6 @@ msgid  "Sets the colors for the selected object and the duplicate object. If you
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3155819.21
-#, fuzzy
 msgid  "Start"
 msgstr "Başlat"
 
@@ -1245,7 +1244,6 @@ msgid  "\<ahelp hid=\"SD:LISTBOX:DLG_COPY:LB_START_COLOR\"\>Choose a color for t
 msgstr ""
 
 #: source/text/simpress/01/02120000.xhp#hd_id3156258.23
-#, fuzzy
 msgid  "End"
 msgstr "Son"
 
@@ -1254,7 +1252,6 @@ msgid  "\<ahelp hid=\"SD:LISTBOX:DLG_COPY:LB_END_COLOR\"\>Choose a color for the
 msgstr ""
 
 #: source/text/simpress/01/02130000.xhp#tit
-#, fuzzy
 msgid  "Delete Slide"
 msgstr "Slayt Sil"
 
@@ -1264,7 +1261,7 @@ msgstr ""
 
 #: source/text/simpress/01/02130000.xhp#hd_id3154253.7
 msgid  "\<link href=\"text/simpress/01/02130000.xhp\" name=\"Delete Slide\"\>Delete Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02130000.xhp\" name=\"Delete Slide\">Slaytı Sil</link>"
 
 #: source/text/simpress/01/02130000.xhp#par_id3145790.2
 msgid  "\<variable id=\"seiteloeschen\"\>\<ahelp hid=\".uno:DeletePage\"\>Deletes the current slide or page.\</ahelp\>\</variable\>"
@@ -1276,14 +1273,13 @@ msgstr ""
 
 #: source/text/simpress/01/02130000.xhp#hd_id3154485.5
 msgid  "\<switchinline select=\"appl\"\>\<caseinline select=\"IMPRESS\"\>Rename Slide \</caseinline\>\<defaultinline\>Rename Page\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"appl\"><caseinline select=\"IMPRESS\">Slaytı Yeniden Adlandır </caseinline><defaultinline>Sayfayı Yeniden Adlandır</defaultinline></switchinline>"
 
 #: source/text/simpress/01/02130000.xhp#par_id3148702.6
 msgid  "\<ahelp hid=\".uno:RenamePage\"\>Renames the selected \<switchinline select=\"appl\"\>\<caseinline select=\"IMPRESS\"\>slide \</caseinline\>\<defaultinline\>page\</defaultinline\>\</switchinline\>.\</ahelp\>"
 msgstr ""
 
 #: source/text/simpress/01/02140000.xhp#tit
-#, fuzzy
 msgid  "Delete Layer"
 msgstr "Düzeyi sil"
 
@@ -1292,7 +1288,6 @@ msgid  "\<bookmark_value\>layers; deleting\</bookmark_value\>      \<bookmark_va
 msgstr ""
 
 #: source/text/simpress/01/02140000.xhp#hd_id3153541.1
-#, fuzzy
 msgid  "Delete Layer"
 msgstr "Düzeyi sil"
 
@@ -1301,12 +1296,10 @@ msgid  "\<variable id=\"ebeneloeschen\"\>\<ahelp hid=\".uno:DeleteLayer\"\>Delet
 msgstr ""
 
 #: source/text/simpress/01/02150000.xhp#tit
-#, fuzzy
 msgid  "Cross-fading"
 msgstr "Ser"
 
 #: source/text/simpress/01/02150000.xhp#hd_id3148577.1
-#, fuzzy
 msgid  "Cross-fading"
 msgstr "Ser"
 
@@ -1319,7 +1312,6 @@ msgid  "$[officename] draws a series of intermediate shapes between two selected
 msgstr ""
 
 #: source/text/simpress/01/02150000.xhp#hd_id3155334.3
-#, fuzzy
 msgid  "Settings"
 msgstr "Ayarlar"
 
@@ -1328,7 +1320,6 @@ msgid  "Sets the options for cross-fading."
 msgstr ""
 
 #: source/text/simpress/01/02150000.xhp#hd_id3149257.5
-#, fuzzy
 msgid  "Increments"
 msgstr "Artış"
 
@@ -1337,7 +1328,6 @@ msgid  "\<ahelp hid=\"SD:METRICFIELD:DLG_MORPH:MTF_STEPS\"\>Enter the number of 
 msgstr ""
 
 #: source/text/simpress/01/02150000.xhp#hd_id3149211.7
-#, fuzzy
 msgid  "Cross-fade attributes"
 msgstr "Çapraz soldurma öznitelikleri"
 
@@ -1346,7 +1336,6 @@ msgid  "\<ahelp hid=\"SD:CHECKBOX:DLG_MORPH:CBX_ATTRIBUTES\"\>Applies cross-fadi
 msgstr ""
 
 #: source/text/simpress/01/02150000.xhp#hd_id3152994.9
-#, fuzzy
 msgid  "Same orientation"
 msgstr "Aynı yön"
 
@@ -1371,7 +1360,6 @@ msgid  "\<variable id=\"feldbefehltext\"\>\<ahelp hid=\"SD:MODALDIALOG:DLG_FIELD
 msgstr ""
 
 #: source/text/simpress/01/02160000.xhp#hd_id3166425.3
-#, fuzzy
 msgid  "Field type"
 msgstr "Alan türü"
 
@@ -1380,7 +1368,6 @@ msgid  "Sets the type of a field."
 msgstr ""
 
 #: source/text/simpress/01/02160000.xhp#hd_id3150208.5
-#, fuzzy
 msgid  "Fixed"
 msgstr "Sabit"
 
@@ -1389,7 +1376,6 @@ msgid  "\<ahelp hid=\"SD_RADIOBUTTON_DLG_FIELD_MODIFY_RBT_FIX\"\>Displays the co
 msgstr ""
 
 #: source/text/simpress/01/02160000.xhp#hd_id3153819.7
-#, fuzzy
 msgid  "Variable"
 msgstr "Değişken"
 
@@ -1398,7 +1384,6 @@ msgid  "\<ahelp hid=\"SD_RADIOBUTTON_DLG_FIELD_MODIFY_RBT_VAR\"\>Displays the cu
 msgstr ""
 
 #: source/text/simpress/01/02160000.xhp#hd_id3148608.11
-#, fuzzy
 msgid  "Language"
 msgstr "Dil"
 
@@ -1407,7 +1392,6 @@ msgid  "\<ahelp hid=\"SD_LISTBOX_DLG_FIELD_MODIFY_LB_LANGUAGE\"\>Select the lang
 msgstr ""
 
 #: source/text/simpress/01/02160000.xhp#hd_id3154765.9
-#, fuzzy
 msgid  "Format"
 msgstr "Biçim"
 
@@ -1416,22 +1400,20 @@ msgid  "\<ahelp hid=\"SD_LISTBOX_DLG_FIELD_MODIFY_LB_FORMAT\"\>Select a display 
 msgstr ""
 
 #: source/text/simpress/01/03050000.xhp#tit
-#, fuzzy
 msgid  "Option Bar"
 msgstr "Seçenekler çubuğu"
 
 #: source/text/simpress/01/03050000.xhp#hd_id3153415.1
 msgid  "\<link href=\"text/simpress/01/03050000.xhp\" name=\"Option Bar\"\>Option Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03050000.xhp\" name=\"Option Bar\">Seçenekler çubuğu</link>"
 
 #: source/text/simpress/01/03060000.xhp#tit
-#, fuzzy
 msgid  "Rulers"
 msgstr "Cetveller"
 
 #: source/text/simpress/01/03060000.xhp#hd_id3146974.1
 msgid  "\<link href=\"text/simpress/01/03060000.xhp\" name=\"Rulers\"\>Ruler\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03060000.xhp\" name=\"Rulers\">Cetvel</link>"
 
 #: source/text/simpress/01/03060000.xhp#par_id3149378.2
 msgid  "\<ahelp hid=\".uno:ShowRuler\"\>Displays or hides rulers at the top and at the left edge of the workspace.\</ahelp\>"
@@ -1446,24 +1428,28 @@ msgid  "Presentation"
 msgstr ""
 
 #: source/text/simpress/01/03070000.xhp#hd_id3153144.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03070000.xhp\" name=\"Presentation\"\>Presentation\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06030000.xhp\" name=\"Hyphenation\">Heceleme</link>"
 
 #: source/text/simpress/01/03070000.xhp#par_id3146975.2
 msgid  "\<ahelp hid=\".uno:CommonTaskBarVisible\"\>Common commands for slides.\</ahelp\>"
 msgstr ""
 
 #: source/text/simpress/01/03070000.xhp#hd_id3154018.4
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04010000.xhp\" name=\"Slide\">Slayt</link>"
 
 #: source/text/simpress/01/03070000.xhp#hd_id3154754.5
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05130000.xhp\" name=\"Slide Layout\"\>Slide Layout\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05130000.xhp\" name=\"Slide Layout\">Slayt Yerleşimi</link>"
 
 #: source/text/simpress/01/03070000.xhp#hd_id3155960.6
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05120000.xhp\" name=\"Slide Design\"\>Slide Design\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05120000.xhp\" name=\"Slide Design\">Slayt Tasarımı</link>"
 
 #: source/text/simpress/01/03080000.xhp#tit
 msgid  "Normal View"
@@ -1474,8 +1460,9 @@ msgid  "\<bookmark_value\>normal view;presentations\</bookmark_value\>"
 msgstr ""
 
 #: source/text/simpress/01/03080000.xhp#hd_id3148576.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03080000.xhp\" name=\"Normal View\"\>Normal\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03080000.xhp\" name=\"Normal View\">Normal</link>"
 
 #: source/text/simpress/01/03080000.xhp#par_id3145251.2
 msgid  "\<ahelp hid=\"HID_SD_BTN_DRAW\"\>Switches to normal view where you can create and edit your slides.\</ahelp\>."
@@ -1507,8 +1494,9 @@ msgid  "\<bookmark_value\>outline view\</bookmark_value\>\<bookmark_value\>editi
 msgstr ""
 
 #: source/text/simpress/01/03090000.xhp#hd_id3149664.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03090000.xhp\" name=\"Outline\"\>Outline\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03090000.xhp\" name=\"Outline\">Anahat</link>"
 
 #: source/text/simpress/01/03090000.xhp#par_id3152597.2
 msgid  "\<ahelp hid=\"HID_SD_BTN_OUTLINE\"\>Switches to outline view where you can reorder slides and edit slide titles and headings.\</ahelp\>"
@@ -1528,8 +1516,9 @@ msgid  "Slide Sorter"
 msgstr "Slayt Görünümü"
 
 #: source/text/simpress/01/03100000.xhp#hd_id3146974.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03100000.xhp\" name=\"Slide Sorter\"\>Slide Sorter\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03100000.xhp\" name=\"Slide Sorter\">Slayt Sıralayıcı</link>"
 
 #: source/text/simpress/01/03100000.xhp#par_id3154492.2
 msgid  "\<ahelp hid=\"HID_SD_BTN_SLIDE\"\>Displays miniature versions of the slides.\</ahelp\>"
@@ -1544,8 +1533,9 @@ msgid  "\<bookmark_value\>notes; adding to slides\</bookmark_value\>\<bookmark_v
 msgstr ""
 
 #: source/text/simpress/01/03110000.xhp#hd_id3153190.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03110000.xhp\" name=\"Notes Page\"\>Notes Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03110000.xhp\" name=\"Notes Page\">Not Sayfası</link>"
 
 #: source/text/simpress/01/03110000.xhp#par_id3154491.2
 msgid  "\<ahelp hid=\"HID_SD_BTN_NOTES\"\>Switches to notes page view, where you can add notes to your slides.\</ahelp\> Notes are hidden from the audience when you give your presentation."
@@ -1556,8 +1546,9 @@ msgid  "Handout Page"
 msgstr ""
 
 #: source/text/simpress/01/03120000.xhp#hd_id3149456.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03120000.xhp\" name=\"Handout Page\"\>Handout Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03120000.xhp\" name=\"Handout Page\">Dinleyici Kopyası Sayfası</link>"
 
 #: source/text/simpress/01/03120000.xhp#par_id3154684.2
 msgid  "\<ahelp hid=\"HID_SD_BTN_HANDOUT\"\>Switches to the handout master page, where you can scale several slides to fit on one printed page.\</ahelp\> To modify the number of slides you can print on a page, open the \<emph\>Layouts\</emph\> task pane and double-click a layout."
@@ -1569,8 +1560,9 @@ msgid  "Slide Show"
 msgstr "Slayt Gösterisi"
 
 #: source/text/simpress/01/03130000.xhp#hd_id3159153.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03130000.xhp\" name=\"Slide Show\"\>Slide Show\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03130000.xhp\" name=\"Slide Show\">Slayt Gösterisi</link>"
 
 #: source/text/simpress/01/03130000.xhp#par_id3154016.2
 msgid  "\<variable id=\"bldpra\"\>\<ahelp hid=\"HID_SD_BTN_PRESENTATION\"\>Starts your slide show.\</ahelp\>\</variable\>"
@@ -1613,8 +1605,9 @@ msgid  "\<bookmark_value\>master views\</bookmark_value\>"
 msgstr ""
 
 #: source/text/simpress/01/03150000.xhp#hd_id3153142.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03150000.xhp\" name=\"Master\"\>Master\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180001.xhp\" name=\"Page\">Sayfa</link>"
 
 #: source/text/simpress/01/03150000.xhp#par_id3150011.2
 msgid  "\<ahelp hid=\"HID_SD_BTN_MASTERPAGE\"\>Switches to one of several master views, where you can add elements that you want to appear on all of the slides in your show.\</ahelp\>"
@@ -1630,8 +1623,9 @@ msgid  "\<bookmark_value\>normal view; backgrounds\</bookmark_value\>\<bookmark_
 msgstr ""
 
 #: source/text/simpress/01/03150100.xhp#hd_id3154013.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03150100.xhp\" name=\"Slide Master\"\>Slide Master\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03150100.xhp\" name=\"Slide Master\">Ana Slayt</link>"
 
 #: source/text/simpress/01/03150100.xhp#par_id3151075.2
 msgid  "\<ahelp hid=\".uno:SlideMasterPage\"\>Switches to slide master view, where you can add elements that you want to appear on all of the slides in your show that use the same slide master.\</ahelp\>"
@@ -1662,8 +1656,9 @@ msgid  "\<bookmark_value\>notes;default formatting\</bookmark_value\>\<bookmark_
 msgstr ""
 
 #: source/text/simpress/01/03150300.xhp#hd_id3153144.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03150300.xhp\" name=\"Notes Master\"\>Notes Master\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03150300.xhp\" name=\"Notes Master\">Ana Notlar</link>"
 
 #: source/text/simpress/01/03150300.xhp#par_id3154491.2
 msgid  "\<ahelp hid=\".uno:NotesMasterPage\"\>Displays the notes master, where you can set the default formatting for notes.\</ahelp\>"
@@ -1678,8 +1673,9 @@ msgid  "\<bookmark_value\>headers and footers;master layouts\</bookmark_value\>\
 msgstr ""
 
 #: source/text/simpress/01/03151000.xhp#par_idN1056D
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03151000.xhp\"\>Master Elements\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03151000.xhp\">Ana Öğeler</link>"
 
 #: source/text/simpress/01/03151000.xhp#par_idN1057D
 msgid  "\<ahelp hid=\".\"\>Add header, footer, date, and slide number placeholders to the slide master.\</ahelp\>"
@@ -1690,8 +1686,9 @@ msgid  "Master Layout"
 msgstr ""
 
 #: source/text/simpress/01/03151100.xhp#par_idN10537
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03151100.xhp\"\>Master Layout\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03151100.xhp\">Ana Yerleşim</link>"
 
 #: source/text/simpress/01/03151100.xhp#par_idN1053B
 msgid  "\<ahelp hid=\"SID_MASTER_LAYOUTS_SLIDE\"\>Adds or removes header, footer, date, and slide number placeholders to the layout of the slide master.\</ahelp\>"
@@ -1741,8 +1738,9 @@ msgid  "Notes Master Layout"
 msgstr ""
 
 #: source/text/simpress/01/03151200.xhp#par_idN10527
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03151200.xhp\"\>Notes Master Layout\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03151200.xhp\">Ana Notlar Yerleşimi</link>"
 
 #: source/text/simpress/01/03151200.xhp#par_idN1052B
 msgid  "\<ahelp hid=\"SID_MASTER_LAYOUTS_NOTES\"\>Add header, footer, date, and slide number to the notes master.\</ahelp\>"
@@ -1757,8 +1755,9 @@ msgid  "\<bookmark_value\>slides;page numbers\</bookmark_value\>\<bookmark_value
 msgstr ""
 
 #: source/text/simpress/01/03152000.xhp#par_idN1053E
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03152000.xhp\"\>Header and Footer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03152000.xhp\">Üst bilgi ve Alt bilgi</link>"
 
 #: source/text/simpress/01/03152000.xhp#par_idN1054E
 msgid  "\<ahelp hid=\"SID_HEADER_AND_FOOTER\"\>Adds or changes text in placeholders at the top and the bottom of slides and slide masters.\</ahelp\>"
@@ -1947,8 +1946,9 @@ msgid  "\<bookmark_value\>inserting; slides\</bookmark_value\>\<bookmark_value\>
 msgstr ""
 
 #: source/text/simpress/01/04010000.xhp#hd_id3159155.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04010000.xhp\" name=\"Insert Slide / Page\"\>Insert Slide / Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"Insert File\">Dosya Ekle</link>"
 
 #: source/text/simpress/01/04010000.xhp#par_id3146119.2
 msgid  "\<variable id=\"seitetext\"\>\<ahelp hid=\".uno:InsertPage\"\>\<switchinline select=\"appl\"\>\<caseinline select=\"IMPRESS\"\>Inserts a slide after the currently selected slide.\</caseinline\>\<defaultinline\>Inserts a page after the currently selected page.\</defaultinline\>\</switchinline\>\</ahelp\>\</variable\>"
@@ -2031,8 +2031,9 @@ msgid  "\<bookmark_value\>rows; inserting\</bookmark_value\>\<bookmark_value\>in
 msgstr ""
 
 #: source/text/simpress/01/04030000m.xhp#hd_id3150541.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04030000m.xhp\" name=\"Rows\"\>Rows\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000m.xhp\" name=\"Rows\">Satırlar</link>"
 
 #: source/text/simpress/01/04030000m.xhp#par_id3150767.2
 msgid  "\<ahelp hid=\".uno:InsertRows\"\>Inserts a new row above the active cell. The number of rows inserted correspond to the number of rows selected. The existing rows are moved downward.\</ahelp\>"
@@ -2170,8 +2171,9 @@ msgid  "\<bookmark_value\>inserting; columns\</bookmark_value\>\<bookmark_value\
 msgstr ""
 
 #: source/text/simpress/01/04040000m.xhp#hd_id3155628.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04040000m.xhp\" name=\"Columns\"\>Columns\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04040000m.xhp\" name=\"Columns\">Sütunlar</link>"
 
 #: source/text/simpress/01/04040000m.xhp#par_id3150791.2
 msgid  "\<ahelp hid=\".uno:InsertColumns\"\>Inserts a new column to the left of the active cell. The number of columns inserted correspond to the number of columns selected. The existing columns are moved to the right.\</ahelp\>"
@@ -2202,8 +2204,9 @@ msgid  "\<bookmark_value\>files; inserting\</bookmark_value\>\<bookmark_value\>i
 msgstr ""
 
 #: source/text/simpress/01/04110000.xhp#hd_id3153728.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"Insert File\"\>Insert File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"Insert File\">Dosya Ekle</link>"
 
 #: source/text/simpress/01/04110000.xhp#par_id3145799.2
 msgid  "\<variable id=\"dateitext\"\>\<ahelp hid=\".uno:ImportFromFile\"\>Inserts a file into the active slide. You can insert $[officename] Draw or Impress files, or text from an HTML document or a text file.\</ahelp\>\</variable\> If you have an active internet connection, you can also insert text from a web page by entering its URL in the \<emph\>File name \</emph\>box."
@@ -2309,8 +2312,9 @@ msgid  "Duplicate Slide"
 msgstr "Slaytın Eşini Yarat"
 
 #: source/text/simpress/01/04120000.xhp#hd_id3148576.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04120000.xhp\" name=\"Duplicate Slide\"\>Duplicate Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04120000.xhp\" name=\"Duplicate Slide\">Slaytın Eşini Yarat</link>"
 
 #: source/text/simpress/01/04120000.xhp#par_id3153190.2
 msgid  "\<ahelp hid=\".uno:DuplicatePage\" visibility=\"visible\"\>Inserts a copy of the current slide after the current slide.\</ahelp\>"
@@ -2326,8 +2330,9 @@ msgid  "\<bookmark_value\>expanding;slides\</bookmark_value\>\<bookmark_value\>s
 msgstr ""
 
 #: source/text/simpress/01/04130000.xhp#hd_id3146119.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04130000.xhp\" name=\"Expand Slide\"\>Expand Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04130000.xhp\" name=\"Expand Slide\">Slaytı Genişlet</link>"
 
 #: source/text/simpress/01/04130000.xhp#par_id3154319.2
 msgid  "\<ahelp hid=\".uno:ExpandPage\"\>Creates a new slide from every top-level outline point (text one level below the title text in the outline hierarchy) in the selected slide. The outline text becomes the title of the new slide.\</ahelp\> Outline points below the top level on the original slide are moved up one level on the new slide."
@@ -2351,8 +2356,9 @@ msgid  "\<bookmark_value\>summary slide\</bookmark_value\>"
 msgstr ""
 
 #: source/text/simpress/01/04140000.xhp#hd_id3154013.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04140000.xhp\" name=\"Summary Slide\"\>Summary Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04140000.xhp\" name=\"Summary Slide\">Slayt Özeti</link>"
 
 #: source/text/simpress/01/04140000.xhp#par_id3149664.2
 msgid  "\<ahelp hid=\".uno:SummaryPage\" visibility=\"visible\"\>Creates a new slide that contains a bulleted list from the titles of the slides that follow the selected slide. The summary slide is inserted behind the last slide.\</ahelp\>"
@@ -2367,8 +2373,9 @@ msgid  "\<bookmark_value\>fields;in slides\</bookmark_value\>"
 msgstr ""
 
 #: source/text/simpress/01/04990000.xhp#hd_id3154011.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990000.xhp\" name=\"Fields\"\>Fields\</link\> "
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990000.xhp\" name=\"Fields\">Alanlar</link> "
 
 #: source/text/simpress/01/04990000.xhp#par_id3149666.2
 msgid  "Lists common fields that you can insert into your slide."
@@ -2387,8 +2394,9 @@ msgid  "\<bookmark_value\>dates; fixed\</bookmark_value\>\<bookmark_value\>field
 msgstr ""
 
 #: source/text/simpress/01/04990100.xhp#hd_id3153726.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990100.xhp\" name=\"Date (fixed)\"\>Date (fixed)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990100.xhp\" name=\"Date (fixed)\">Tarih (sabit)</link>"
 
 #: source/text/simpress/01/04990100.xhp#par_id3151073.2
 msgid  "\<ahelp hid=\".uno:InsertDateFieldFix\"\>Inserts the current date into your slide as a fixed field. The date is not automatically updated.\</ahelp\>"
@@ -2407,8 +2415,9 @@ msgid  "\<bookmark_value\>dates; variable\</bookmark_value\>\<bookmark_value\>fi
 msgstr ""
 
 #: source/text/simpress/01/04990200.xhp#hd_id3154320.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990200.xhp\" name=\"Date (variable)\"\>Date (variable)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990200.xhp\" name=\"Date (variable)\">Tarih (değişken)</link>"
 
 #: source/text/simpress/01/04990200.xhp#par_id3154011.2
 msgid  "\<ahelp hid=\".uno:InsertDateFieldVar\"\>Inserts the current date into your slide as a variable field. The date is automatically updated when you reload the file.\</ahelp\>"
@@ -2423,8 +2432,9 @@ msgid  "\<bookmark_value\>times; fixed\</bookmark_value\>\<bookmark_value\>field
 msgstr ""
 
 #: source/text/simpress/01/04990300.xhp#hd_id3146121.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990300.xhp\" name=\"Time (fixed)\"\>Time (fixed)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990300.xhp\" name=\"Time (fixed)\">Saat (sabit)</link>"
 
 #: source/text/simpress/01/04990300.xhp#par_id3153726.2
 msgid  "\<ahelp hid=\".uno:InsertTimeFieldFix\"\>Inserts the current time into your slide as a fixed field. The time is not automatically updated.\</ahelp\>"
@@ -2439,8 +2449,9 @@ msgid  "\<bookmark_value\>times;variable\</bookmark_value\>\<bookmark_value\>fie
 msgstr ""
 
 #: source/text/simpress/01/04990400.xhp#hd_id3146119.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990400.xhp\" name=\"Time (variable)\"\>Time (variable)\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990400.xhp\" name=\"Time (variable)\">Saat (değişken)</link>"
 
 #: source/text/simpress/01/04990400.xhp#par_id3147434.2
 msgid  "\<ahelp hid=\".uno:InsertTimeFieldVar\"\>Inserts the current time into your slide as a variable field. The time is automatically updated when you reload the file.\</ahelp\>"
@@ -2456,8 +2467,9 @@ msgid  "\<bookmark_value\>fields; page numbers\</bookmark_value\>\<bookmark_valu
 msgstr ""
 
 #: source/text/simpress/01/04990500.xhp#hd_id3154319.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990500.xhp\" name=\"Page Numbers\"\>Page Number\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990500.xhp\" name=\"Page Numbers\">Sayfa Numarası</link>"
 
 #: source/text/simpress/01/04990500.xhp#par_id3145799.2
 msgid  "\<ahelp hid=\".\"\>Inserts the page number into the current slide or page.\</ahelp\> If you want to add a page number to every slide, choose View - Master\<switchinline select=\"appl\"\>\<caseinline select=\"IMPRESS\"\> - Slide Master\</caseinline\>\</switchinline\> and insert the page number field. To change the number format, choose \<emph\>Format - Page\</emph\> and then select a format from the list in the \<emph\>Layout Settings\</emph\> area."
@@ -2472,8 +2484,9 @@ msgid  "\<bookmark_value\>authors\</bookmark_value\>\<bookmark_value\>fields; au
 msgstr ""
 
 #: source/text/simpress/01/04990600.xhp#hd_id3146974.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990600.xhp\" name=\"Author\"\>Author\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990600.xhp\" name=\"Author\">Yazar</link>"
 
 #: source/text/simpress/01/04990600.xhp#par_id3153876.2
 msgid  "\<ahelp hid=\".uno:InsertAuthorField\"\>Inserts the first and last names listed in the $[officename] user data into the active slide.\</ahelp\>"
@@ -2493,8 +2506,9 @@ msgid  "\<bookmark_value\>fields; file names\</bookmark_value\>"
 msgstr ""
 
 #: source/text/simpress/01/04990700.xhp#hd_id3148575.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04990700.xhp\" name=\"File name\"\>File name\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04990700.xhp\" name=\"File name\">Dosya adı</link>"
 
 #: source/text/simpress/01/04990700.xhp#par_id3153142.2
 msgid  "\<ahelp hid=\".uno:InsertFileField\"\>Inserts the name of the active file. The name only appears after you save the file.\</ahelp\>"
@@ -2517,8 +2531,9 @@ msgid  "On the Table Bar, click \<emph\>Table Properties\</emph\>."
 msgstr ""
 
 #: source/text/simpress/01/05090000m.xhp#hd_id3146119.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020100.xhp\" name=\"Font\"\>Font\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020100.xhp\" name=\"Font\">Yazı Tipi</link>"
 
 #: source/text/simpress/01/05100000.xhp#tit
 msgid  "Styles and Formatting"
@@ -2645,8 +2660,9 @@ msgid  "Delete"
 msgstr ""
 
 #: source/text/simpress/01/05110500m.xhp#hd_id3149502.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Delete\"\>Delete\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05110500m.xhp\" name=\"Delete\">Sil</link>"
 
 #: source/text/simpress/01/05110500m.xhp#par_id3149050.2
 msgid  "\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Deletes the selected row(s) from the table.\</ahelp\>\</variable\>"
@@ -2670,8 +2686,9 @@ msgid  "Slide Design"
 msgstr "Slayt Tasarımı"
 
 #: source/text/simpress/01/05120000.xhp#hd_id3154253.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05120000.xhp\" name=\"Slide Design\"\>Slide Design\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05120000.xhp\" name=\"Slide Design\">Slayt Tasarımı</link>"
 
 #: source/text/simpress/01/05120000.xhp#par_id3148485.2
 msgid  "\<variable id=\"seitenvorlagetext\"\>\<ahelp hid=\".uno:PresentationLayout\"\>Displays the \<emph\>Slide Design\</emph\> dialog, where you can select a layout scheme for the current slide. Any objects in the slide design are inserted behind objects in the current slide.\</ahelp\>\</variable\>"
@@ -2829,8 +2846,9 @@ msgid  "Delete"
 msgstr ""
 
 #: source/text/simpress/01/05120500m.xhp#hd_id3145801.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05120500m.xhp\" name=\"Delete\"\>Delete\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05120500m.xhp\" name=\"Delete\">Sil</link>"
 
 #: source/text/simpress/01/05120500m.xhp#par_id3153418.2
 msgid  "\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteColumns\"\>Deletes the selected column(s) from the table.\</ahelp\>\</variable\>"
@@ -2955,8 +2973,9 @@ msgid  "\<bookmark_value\>dimension lines; properties of\</bookmark_value\>"
 msgstr ""
 
 #: source/text/simpress/01/05150000.xhp#hd_id3150439.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05150000.xhp\" name=\"Dimensioning\"\>Dimensioning\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05150000.xhp\" name=\"Dimensioning\">Boyutlandırma</link>"
 
 #: source/text/simpress/01/05150000.xhp#par_id3159154.2
 msgid  "\<variable id=\"bemaszungtext\"\>\<ahelp hid=\".uno:MeasureAttributes\"\>Changes the length, measurement and guide properties of the selected \<link href=\"text/simpress/02/10120000.xhp\" name=\"dimension line\"\>dimension line\</link\>.\</ahelp\>\</variable\>"
@@ -3099,8 +3118,9 @@ msgid  "\<bookmark_value\>connectors; properties of\</bookmark_value\>"
 msgstr ""
 
 #: source/text/simpress/01/05170000.xhp#hd_id3150297.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05170000.xhp\" name=\"Connectors\"\>Connectors\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05170000.xhp\" name=\"Connectors\">Bağlayıcılar</link>"
 
 #: source/text/simpress/01/05170000.xhp#par_id3149209.2
 msgid  "\<variable id=\"verbindertext\"\>\<ahelp hid=\".uno:ConnectorAttributes\"\>Sets the properties of a connector.\</ahelp\>\</variable\>"
@@ -3202,8 +3222,9 @@ msgid  "Arrange"
 msgstr ""
 
 #: source/text/simpress/01/05250000.xhp#hd_id3155444.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05250000.xhp\" name=\"Arrange\"\>Arrange\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05250000.xhp\" name=\"Arrange\">Düzenle</link>"
 
 #: source/text/simpress/01/05250000.xhp#par_id3149259.2
 msgid  "Changes the stacking order of a selected object."
@@ -3264,8 +3285,9 @@ msgid  "\<bookmark_value\>reversing objects\</bookmark_value\>\<bookmark_value\>
 msgstr ""
 
 #: source/text/simpress/01/05250700.xhp#hd_id3154011.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05250700.xhp\" name=\"Reverse\"\>Reverse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05250700.xhp\" name=\"Reverse\">Ters</link>"
 
 #: source/text/simpress/01/05250700.xhp#par_id3145800.2
 msgid  "\<ahelp hid=\".uno:ReverseOrder\"\>Reverses the stacking order of the selected objects.\</ahelp\>"
@@ -3281,8 +3303,9 @@ msgid  "Hyphenation"
 msgstr "Heceleme"
 
 #: source/text/simpress/01/06030000.xhp#hd_id3154011.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06030000.xhp\" name=\"Hyphenation\"\>Hyphenation\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06030000.xhp\" name=\"Hyphenation\">Heceleme</link>"
 
 #: source/text/simpress/01/06030000.xhp#par_id3153728.2
 msgid  "\<ahelp hid=\".uno:Hyphenation\" visibility=\"visible\"\>Turns hyphenation option for text objects on or off.\</ahelp\> You can turn hyphenation on or off for each paragraph."
@@ -3298,8 +3321,9 @@ msgid  "\<bookmark_value\>slide transitions; manual\</bookmark_value\>\<bookmark
 msgstr ""
 
 #: source/text/simpress/01/06040000.xhp#hd_id3153142.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06040000.xhp\" name=\"Slide Transition\"\>Slide Transition\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06040000.xhp\" name=\"Slide Transition\">Slayt Geçişi</link>"
 
 #: source/text/simpress/01/06040000.xhp#par_id3154011.2
 msgid  "\<ahelp hid=\".uno:Dia\"\>Defines the special effect that plays when you display a slide during a slide show.\</ahelp\>"
@@ -3416,8 +3440,9 @@ msgid  "Animation"
 msgstr "Canlandırma"
 
 #: source/text/simpress/01/06050000.xhp#hd_id3153726.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06050000.xhp\" name=\"Animation\"\>Animation\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06050000.xhp\" name=\"Animation\">Canlandırma</link>"
 
 #: source/text/simpress/01/06050000.xhp#par_id3150012.2
 msgid  "\<variable id=\"animtext\"\>\<ahelp hid=\".uno:AnimationObjects\"\>Creates a custom animation on the current slide.\</ahelp\> You can only use existing objects to create an animation. \</variable\>"
@@ -3667,8 +3692,9 @@ msgid  "\<bookmark_value\>sounds; for effects\</bookmark_value\>\<bookmark_value
 msgstr ""
 
 #: source/text/simpress/01/06060000.xhp#hd_id3148837.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06060000.xhp\" name=\"Effects\"\>Custom Animation Pane\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06060000.xhp\" name=\"Effects\">Özel Canlandırma Panosu</link>"
 
 #: source/text/simpress/01/06060000.xhp#par_id3144773.2
 msgid  "\<variable id=\"effekttext\"\>\<ahelp hid=\".uno:EffectWindow\"\>Assigns effects to selected objects.\</ahelp\>\</variable\>"
@@ -4335,8 +4361,9 @@ msgid  "Click \<emph\>Start\</emph\>."
 msgstr ""
 
 #: source/text/simpress/01/06100000.xhp#hd_id3153808.11
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06100100.xhp\" name=\"New\"\>New\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06100100.xhp\" name=\"New\">Yeni</link>"
 
 #: source/text/simpress/01/06100000.xhp#hd_id3153073.12
 #, fuzzy
@@ -4436,8 +4463,9 @@ msgid  "To Curve"
 msgstr "Eğriye dönüştür"
 
 #: source/text/simpress/01/13050100.xhp#hd_id3125864.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13050100.xhp\" name=\"To Curve\"\>To Curve\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13050100.xhp\" name=\"To Curve\">Eğriye dönüştür</link>"
 
 #: source/text/simpress/01/13050100.xhp#par_id3147436.2
 msgid  "\<ahelp hid=\".uno:ChangeBezier\"\>Converts the selected object to a Bézier curve.\</ahelp\>"
@@ -4448,8 +4476,9 @@ msgid  "To Polygon"
 msgstr ""
 
 #: source/text/simpress/01/13050200.xhp#hd_id3152578.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13050200.xhp\" name=\"To Polygon\"\>To Polygon\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13050200.xhp\" name=\"To Polygon\">Çokgene dönüştür</link>"
 
 #: source/text/simpress/01/13050200.xhp#par_id3145252.2
 msgid  "\<ahelp hid=\".uno:ChangePolygon\"\>Converts the selected object to a polygon (a closed object bounded by straight lines).\</ahelp\> The appearance of the object does not change. If you want, you can right-click and choose \<link href=\"text/shared/main0227.xhp\" name=\"Edit Points\"\>\<emph\>Edit Points\</emph\>\</link\> to view the changes."
@@ -4547,8 +4576,9 @@ msgid  "Convert to 3D "
 msgstr ""
 
 #: source/text/simpress/01/13050300.xhp#hd_id3154017.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13050300.xhp\" name=\"Convert to 3D\"\>Convert to 3D\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13050300.xhp\" name=\"Convert to 3D\">3-B Cisme dönüştür</link>"
 
 #: source/text/simpress/01/13050300.xhp#par_id3155066.2
 msgid  "\<ahelp hid=\".uno:ConvertInto3D\"\>Converts the selected object to a three-dimensional (3D) object.\</ahelp\>"
@@ -4604,8 +4634,9 @@ msgid  "\<bookmark_value\>converting; to bitmaps\</bookmark_value\>\<bookmark_va
 msgstr ""
 
 #: source/text/simpress/01/13050500.xhp#hd_id3153142.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13050500.xhp\" name=\"To Bitmap\"\>To Bitmap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13050500.xhp\" name=\"To Bitmap\">Bit Eşlem Resmine dönüştür</link>"
 
 #: source/text/simpress/01/13050500.xhp#par_id3146975.2
 msgid  "\<ahelp hid=\".uno:ConvertIntoBitmap\"\>Converts the selected object to a bitmap (a grid of pixels that represents an image).\</ahelp\>"
@@ -4628,8 +4659,9 @@ msgid  "\<bookmark_value\>converting; to metafile format (WMF)\</bookmark_value\
 msgstr ""
 
 #: source/text/simpress/01/13050600.xhp#hd_id3147434.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13050600.xhp\" name=\"To metafile\"\>To metafile\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13050600.xhp\" name=\"To metafile\">meta dosyaya dönüştür (bilgi dosyası)</link>"
 
 #: source/text/simpress/01/13050600.xhp#par_id3154490.2
 msgid  "\<ahelp hid=\".uno:ConvertIntoMetaFile\"\>Converts the selected object to Windows Metafile Format (WMF), containing both bitmap and vector graphic data.\</ahelp\>"
@@ -4652,8 +4684,9 @@ msgid  "\<bookmark_value\>converting; to contours\</bookmark_value\>\<bookmark_v
 msgstr ""
 
 #: source/text/simpress/01/13050700.xhp#hd_id3146119.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13050700.xhp\" name=\"To Contour\"\>To Contour\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13050700.xhp\" name=\"To Contour\">Kontura</link>"
 
 #: source/text/simpress/01/13050700.xhp#par_id3146974.2
 msgid  "\<ahelp hid=\".uno:convert_to_contour\"\>Converts the selected object to a polygon, or a group of polygons.\</ahelp\> If the conversion creates a group of polygons (for example, when you convert a text object), then press F3 to enter the group before you can select an individual polygon."
@@ -4669,8 +4702,9 @@ msgid  "Combine"
 msgstr "Birleştir"
 
 #: source/text/simpress/01/13140000.xhp#hd_id3150012.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13140000.xhp\" name=\"Combine\"\>Combine\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13140000.xhp\" name=\"Combine\">Birleştir</link>"
 
 #: source/text/simpress/01/13140000.xhp#par_id3146974.2
 msgid  "\<ahelp hid=\".uno:Combine\"\>Combines two or more selected objects into a single shape.\</ahelp\>Unlike \<link href=\"text/shared/01/05290000.xhp\" name=\"grouping\"\>grouping\</link\>, a combined object takes on the properties of the lowermost object in the stacking order. You can \<link href=\"text/simpress/01/13150000.xhp\" name=\"split\"\>split\</link\> apart combined objects, but the original object properties are lost."
@@ -4690,8 +4724,9 @@ msgid  "\<bookmark_value\>combining; undoing\</bookmark_value\>\<bookmark_value\
 msgstr ""
 
 #: source/text/simpress/01/13150000.xhp#hd_id3150439.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13150000.xhp\" name=\"Split\"\>Split\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13150000.xhp\" name=\"Split\">Bölme</link>"
 
 #: source/text/simpress/01/13150000.xhp#par_id3147435.2
 msgid  "\<ahelp hid=\".uno:Dismantle\"\>Splits a \<link href=\"text/simpress/01/13140000.xhp\" name=\"combined\"\>combined\</link\> object into individual objects.\</ahelp\> The resulting objects have the same line and fill properties as the combined object."
@@ -4703,8 +4738,9 @@ msgid  "Connect"
 msgstr "Bağla"
 
 #: source/text/simpress/01/13160000.xhp#hd_id3153768.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13160000.xhp\" name=\"Connect\"\>Connect\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13160000.xhp\" name=\"Connect\">Bağla</link>"
 
 #: source/text/simpress/01/13160000.xhp#par_id3152598.2
 msgid  "\<ahelp hid=\".uno:Connect\" visibility=\"visible\"\>Creates a line or Bézier curve by connecting two or more lines, Bézier curves, or other objects with a line.\</ahelp\> Closed objects containing a fill are converted to lines and lose their fill."
@@ -4736,8 +4772,9 @@ msgid  "Shapes"
 msgstr "Şekiller"
 
 #: source/text/simpress/01/13180000.xhp#hd_id3154319.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13180000.xhp\" name=\"Shapes\"\>Shapes\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13180000.xhp\" name=\"Shapes\">Şekiller</link>"
 
 #: source/text/simpress/01/13180000.xhp#par_id3147435.2
 msgid  "Creates a shape from two or more selected objects."
@@ -4753,8 +4790,9 @@ msgid  "Merge"
 msgstr "Birleştir"
 
 #: source/text/simpress/01/13180100.xhp#hd_id3150870.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13180100.xhp\" name=\"Merge\"\>Merge\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13180100.xhp\" name=\"Merge\">Birleştir</link>"
 
 #: source/text/simpress/01/13180100.xhp#par_id3150012.2
 msgid  "\<ahelp hid=\".uno:Merge\" visibility=\"visible\"\>Adds the area of the selected objects to the area of the lowermost object in the selection. This command is best used with overlapping objects.\</ahelp\>"
@@ -4770,8 +4808,9 @@ msgid  "Subtract"
 msgstr "Çıkar"
 
 #: source/text/simpress/01/13180200.xhp#hd_id3150439.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13180200.xhp\" name=\"Subtract\"\>Subtract\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13180200.xhp\" name=\"Subtract\">Çıkar</link>"
 
 #: source/text/simpress/01/13180200.xhp#par_id3152596.2
 msgid  "\<ahelp hid=\".uno:Substract\" visibility=\"visible\"\>Subtracts the area of the selected objects from the area of the lowermost object.\</ahelp\>"
@@ -4786,8 +4825,9 @@ msgid  "Intersect"
 msgstr ""
 
 #: source/text/simpress/01/13180300.xhp#hd_id3153768.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/13180300.xhp\" name=\"Intersect\"\>Intersect\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/13180100.xhp\" name=\"Merge\">Birleştir</link>"
 
 #: source/text/simpress/01/13180300.xhp#par_id3146975.2
 msgid  "\<ahelp hid=\".uno:Intersect\" visibility=\"visible\"\>Creates a shape from the overlapping area of the selected objects.\</ahelp\>"
@@ -5295,7 +5335,6 @@ msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Table Design. Double-
 msgstr ""
 
 #: source/text/simpress/02/04010000.xhp#tit
-#, fuzzy
 msgid  "Show/Hide Slide"
 msgstr "Slaytı Göster/Gizle"
 
@@ -5305,7 +5344,7 @@ msgstr ""
 
 #: source/text/simpress/02/04010000.xhp#par_id3149883.2
 msgid  "\<ahelp hid=\".uno:HideSlide\"\>Hides the selected slide so that it is not displayed during a slide show.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:HideSlide\">Seçilen slaytı gizler, böylece slayt gösterisi esnasında o slayt gösterilmez.</ahelp>"
 
 #: source/text/simpress/02/04010000.xhp#par_id3155434.4
 msgid  "The number of a hidden slide is crossed out. To show a hidden slide, choose \<emph\>Slide Show - Show/Hide Slide\</emph\> again."
@@ -5316,12 +5355,10 @@ msgid  "\<image id=\"img_id3156067\" src=\"res/commandimagelist/sc_hideslide.png
 msgstr ""
 
 #: source/text/simpress/02/04010000.xhp#par_id3156061.3
-#, fuzzy
 msgid  "Show/Hide Slide"
 msgstr "Slaytı Göster/Gizle"
 
 #: source/text/simpress/02/04020000.xhp#tit
-#, fuzzy
 msgid  "Slides Per Row"
 msgstr "Satır Başına Slayt Sayısı"
 
@@ -5331,10 +5368,9 @@ msgstr ""
 
 #: source/text/simpress/02/04020000.xhp#par_id3154012.2
 msgid  "\<ahelp hid=\".uno:PagesPerRow\"\>Enter the number of slides to display on each row in the Slide Sorter.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:PagesPerRow\">Slayt sıralamada her bir satırı gösteren slaytların numarasını giriniz.</ahelp>"
 
 #: source/text/simpress/02/04030000.xhp#tit
-#, fuzzy
 msgid  "Slide Effects"
 msgstr "Slayt Efektleri"
 
@@ -5347,7 +5383,6 @@ msgid  "\<ahelp hid=\".\"\>Select the transition effect that appears before the 
 msgstr ""
 
 #: source/text/simpress/02/04040000.xhp#tit
-#, fuzzy
 msgid  "Transition Speed"
 msgstr "Geçiş Hızı"
 
@@ -5356,7 +5391,6 @@ msgid  "\<link href=\"text/simpress/02/04040000.xhp\" name=\"Transition Speed\"\
 msgstr ""
 
 #: source/text/simpress/02/04060000.xhp#tit
-#, fuzzy
 msgid  "Time"
 msgstr "Zaman"
 
@@ -5369,7 +5403,6 @@ msgid  "\<ahelp hid=\".\"\>Enter the amount of time before the slide show automa
 msgstr ""
 
 #: source/text/simpress/02/04070000.xhp#tit
-#, fuzzy
 msgid  "Rehearse Timings"
 msgstr "Zamanlamalı ekran sunusu"
 
@@ -5386,7 +5419,6 @@ msgid  "\<image id=\"img_id3155962\" src=\"res/commandimagelist/sc_rehearsetimin
 msgstr ""
 
 #: source/text/simpress/02/04070000.xhp#par_id3150298.3
-#, fuzzy
 msgid  "Rehearse Timings"
 msgstr "Zamanlamalı ekran sunusu"
 
@@ -5420,14 +5452,13 @@ msgstr ""
 
 #: source/text/simpress/02/08060000.xhp#par_id3153190.2
 msgid  "\<ahelp hid=\".uno:PageStatus\" visibility=\"visible\"\>Displays the current slide number followed by the total number of slides.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:PageStatus\" visibility=\"visible\">Toplam slayt sayısıyla takip edilen geçerli slayt sayısını gösterir.</ahelp>"
 
 #: source/text/simpress/02/08060000.xhp#par_id3149126.3
 msgid  "In Layer Mode, the name of the layer containing the selected object is displayed."
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#tit
-#, fuzzy
 msgid  "Zoom"
 msgstr "Yakınlaştır"
 
@@ -5448,7 +5479,6 @@ msgid  "\<image id=\"img_id3150205\" src=\"res/commandimagelist/sc_zoompage.png\
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3153246.3
-#, fuzzy
 msgid  "Zoom"
 msgstr "Yakınlaştır"
 
@@ -5461,7 +5491,6 @@ msgid  "Zoom ($[officename] Impress in Outline and Slide View)"
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#hd_id3150537.7
-#, fuzzy
 msgid  "Zoom In"
 msgstr "Yakınlaştır"
 
@@ -5478,12 +5507,10 @@ msgid  "\<image id=\"img_id3145596\" src=\"res/commandimagelist/sc_zoomin.png\" 
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3154505.11
-#, fuzzy
 msgid  "Zoom In"
 msgstr "Yakınlaştır"
 
 #: source/text/simpress/02/10020000.xhp#hd_id3145167.12
-#, fuzzy
 msgid  "Zoom Out"
 msgstr "Uzaklaştırma"
 
@@ -5496,12 +5523,10 @@ msgid  "\<image id=\"img_id3145355\" src=\"res/commandimagelist/sc_zoomout.png\"
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3150565.15
-#, fuzzy
 msgid  "Zoom Out"
 msgstr "Uzaklaştırma"
 
 #: source/text/simpress/02/10020000.xhp#hd_id3156060.16
-#, fuzzy
 msgid  "Zoom 100%"
 msgstr "Büyültme %100"
 
@@ -5514,7 +5539,6 @@ msgid  "\<image id=\"img_id3155988\" src=\"res/commandimagelist/sc_zoom100percen
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3083450.18
-#, fuzzy
 msgid  "Zoom 100%"
 msgstr "Büyültme %100"
 
@@ -5551,7 +5575,6 @@ msgid  "Next Zoom"
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#hd_id3154260.25
-#, fuzzy
 msgid  "Zoom Page"
 msgstr "Tam sayfa"
 
@@ -5564,12 +5587,10 @@ msgid  "\<image id=\"img_id3153679\" src=\"res/commandimagelist/sc_printpreview.
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3149917.27
-#, fuzzy
 msgid  "Zoom Page"
 msgstr "Tam sayfa"
 
 #: source/text/simpress/02/10020000.xhp#hd_id3154599.28
-#, fuzzy
 msgid  "Zoom Page Width"
 msgstr "Sayfa genişliği"
 
@@ -5582,12 +5603,10 @@ msgid  "\<image id=\"img_id3147531\" src=\"res/commandimagelist/sc_zoompagewidth
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3150991.30
-#, fuzzy
 msgid  "Zoom Page Width"
 msgstr "Sayfa genişliği"
 
 #: source/text/simpress/02/10020000.xhp#hd_id3151108.31
-#, fuzzy
 msgid  "Optimal"
 msgstr "En Uygun"
 
@@ -5600,12 +5619,10 @@ msgid  "\<image id=\"img_id3154576\" src=\"res/commandimagelist/sc_zoomoptimal.p
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3150838.33
-#, fuzzy
 msgid  "Optimal"
 msgstr "En Uygun"
 
 #: source/text/simpress/02/10020000.xhp#hd_id3156202.34
-#, fuzzy
 msgid  "Object Zoom"
 msgstr "Nesneyi yakınlaştır"
 
@@ -5618,12 +5635,10 @@ msgid  "\<image id=\"img_id3154141\" src=\"res/commandimagelist/sc_zoomoptimal.p
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3149308.36
-#, fuzzy
 msgid  "Object Zoom"
 msgstr "Nesneyi yakınlaştır"
 
 #: source/text/simpress/02/10020000.xhp#hd_id3155188.37
-#, fuzzy
 msgid  "Shift"
 msgstr "Taşı"
 
@@ -5636,12 +5651,10 @@ msgid  "\<image id=\"img_id3151259\" src=\"res/commandimagelist/sc_zoompanning.p
 msgstr ""
 
 #: source/text/simpress/02/10020000.xhp#par_id3156354.39
-#, fuzzy
 msgid  "Shift"
 msgstr "Taşı"
 
 #: source/text/simpress/02/10030000.xhp#tit
-#, fuzzy
 msgid  "Mode"
 msgstr "Efektler"
 
@@ -5662,7 +5675,6 @@ msgid  "\<image id=\"img_id3154490\" src=\"res/commandimagelist/sc_toggleobjectr
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3154018.3
-#, fuzzy
 msgid  "Effects (%PRODUCTNAME Draw only)"
 msgstr "Efektler"
 
@@ -5671,7 +5683,6 @@ msgid  "To open the\<item type=\"productname\"\>%PRODUCTNAME\</item\> Draw \<emp
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#hd_id3150199.6
-#, fuzzy
 msgid  "Rotate"
 msgstr "Döndür"
 
@@ -5692,12 +5703,10 @@ msgid  "\<image id=\"img_id3153811\" src=\"res/commandimagelist/sc_toggleobjectr
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3150435.7
-#, fuzzy
 msgid  "Rotate"
 msgstr "Döndür"
 
 #: source/text/simpress/02/10030000.xhp#hd_id3151387.11
-#, fuzzy
 msgid  "Flip"
 msgstr "Yansıt"
 
@@ -5710,12 +5719,10 @@ msgid  "\<image id=\"img_id3153932\" src=\"res/commandimagelist/sc_mirror.png\" 
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3145590.12
-#, fuzzy
 msgid  "Flip"
 msgstr "Yansıt"
 
 #: source/text/simpress/02/10030000.xhp#hd_id3155263.33
-#, fuzzy
 msgid  "In 3D Rotation Object"
 msgstr "3B döner cisme"
 
@@ -5732,7 +5739,6 @@ msgid  "\<image id=\"img_id3145295\" src=\"svx/res/rotate3d.png\" width=\"5.64mm
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3149024.34
-#, fuzzy
 msgid  "In 3D Rotation Object"
 msgstr "3B döner cisme"
 
@@ -5753,7 +5759,6 @@ msgid  "Set in circle (perspective)"
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#hd_id3151185.27
-#, fuzzy
 msgid  "Set to circle (slant)"
 msgstr "Daire üzerine oturt (eğik)"
 
@@ -5766,12 +5771,10 @@ msgid  "\<image id=\"img_id3150882\" src=\"res/commandimagelist/sc_crookrotate.p
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3153156.28
-#, fuzzy
 msgid  "Set to circle (slant)"
 msgstr "Daire üzerine oturt (eğik)"
 
 #: source/text/simpress/02/10030000.xhp#hd_id3154049.30
-#, fuzzy
 msgid  "Distort"
 msgstr "Çarpıt"
 
@@ -5784,12 +5787,10 @@ msgid  "\<image id=\"img_id3154933\" src=\"res/commandimagelist/sc_shear.png\" w
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3154294.31
-#, fuzzy
 msgid  "Distort"
 msgstr "Çarpıt"
 
 #: source/text/simpress/02/10030000.xhp#hd_id3154203.42
-#, fuzzy
 msgid  "Transparency"
 msgstr "Şeffaflık"
 
@@ -5810,12 +5811,10 @@ msgid  "\<image id=\"img_id3154790\" src=\"res/commandimagelist/sc_interactivetr
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3150623.45
-#, fuzzy
 msgid  "Transparency"
 msgstr "Şeffaflık"
 
 #: source/text/simpress/02/10030000.xhp#hd_id3149932.46
-#, fuzzy
 msgid  "Gradient"
 msgstr "Geçişli"
 
@@ -5832,7 +5831,6 @@ msgid  "\<image id=\"img_id3151102\" src=\"res/commandimagelist/sc_interactivegr
 msgstr ""
 
 #: source/text/simpress/02/10030000.xhp#par_id3148400.49
-#, fuzzy
 msgid  "Gradient"
 msgstr "Geçişli"
 
@@ -5869,7 +5867,6 @@ msgid  "Insert Point"
 msgstr ""
 
 #: source/text/simpress/02/10030200.xhp#hd_id3153933.6
-#, fuzzy
 msgid  "Exit Direction Left"
 msgstr "Çıkış yönü sola"
 
@@ -5882,12 +5879,10 @@ msgid  "\<image id=\"img_id3153567\" src=\"res/commandimagelist/sc_glueescapedir
 msgstr ""
 
 #: source/text/simpress/02/10030200.xhp#par_id3150019.7
-#, fuzzy
 msgid  "Exit Direction Left"
 msgstr "Çıkış yönü sola"
 
 #: source/text/simpress/02/10030200.xhp#hd_id3149881.9
-#, fuzzy
 msgid  "Exit Direction Top"
 msgstr "Çıkış yönü yukarı"
 
@@ -5900,12 +5895,10 @@ msgid  "\<image id=\"img_id3148386\" src=\"res/commandimagelist/sc_glueescapedir
 msgstr ""
 
 #: source/text/simpress/02/10030200.xhp#par_id3150929.10
-#, fuzzy
 msgid  "Exit Direction Top"
 msgstr "Çıkış yönü yukarı"
 
 #: source/text/simpress/02/10030200.xhp#hd_id3150265.12
-#, fuzzy
 msgid  "Exit Direction Right"
 msgstr "Çıkış yönü sağa"
 
@@ -5918,12 +5911,10 @@ msgid  "\<image id=\"img_id3156256\" src=\"res/commandimagelist/sc_glueescapedir
 msgstr ""
 
 #: source/text/simpress/02/10030200.xhp#par_id3153716.13
-#, fuzzy
 msgid  "Exit Direction Right"
 msgstr "Çıkış yönü sağa"
 
 #: source/text/simpress/02/10030200.xhp#hd_id3147173.15
-#, fuzzy
 msgid  "Exit Direction Bottom"
 msgstr "Çıkış yönü aşağı"
 
@@ -5936,12 +5927,10 @@ msgid  "\<image id=\"img_id3150756\" src=\"res/commandimagelist/sc_glueescapedir
 msgstr ""
 
 #: source/text/simpress/02/10030200.xhp#par_id3153218.16
-#, fuzzy
 msgid  "Exit Direction Bottom"
 msgstr "Çıkış yönü aşağı"
 
 #: source/text/simpress/02/10030200.xhp#hd_id3150875.18
-#, fuzzy
 msgid  "Glue Point Relative"
 msgstr "Yapıştırma noktası orantılı"
 
@@ -5954,7 +5943,6 @@ msgid  "\<image id=\"img_id3153149\" src=\"res/commandimagelist/sc_gluepercent.p
 msgstr ""
 
 #: source/text/simpress/02/10030200.xhp#par_id3149286.19
-#, fuzzy
 msgid  "Glue Point Relative"
 msgstr "Yapıştırma noktası orantılı"
 
@@ -6055,7 +6043,6 @@ msgid  "Glue Point Vertical Bottom"
 msgstr ""
 
 #: source/text/simpress/02/10050000.xhp#tit
-#, fuzzy
 msgid  "Text"
 msgstr "Metin"
 
@@ -6072,7 +6059,6 @@ msgid  "\<ahelp hid=\".uno:TextToolbox\"\>The \<emph\>Text\</emph\> toolbar cont
 msgstr ""
 
 #: source/text/simpress/02/10050000.xhp#hd_id3151243.3
-#, fuzzy
 msgid  "Text"
 msgstr "Metin"
 
@@ -6085,12 +6071,10 @@ msgid  "\<image id=\"img_id3153070\" src=\"res/commandimagelist/sc_drawtext.png\
 msgstr ""
 
 #: source/text/simpress/02/10050000.xhp#par_id3150391.4
-#, fuzzy
 msgid  "Text"
 msgstr "Metin"
 
 #: source/text/simpress/02/10050000.xhp#hd_id3166466.6
-#, fuzzy
 msgid  "Fit Text to Frame"
 msgstr "Metni Çerçeveye Uydur"
 
@@ -6103,12 +6087,10 @@ msgid  "\<image id=\"img_id3153038\" src=\"res/commandimagelist/sc_textfittosize
 msgstr ""
 
 #: source/text/simpress/02/10050000.xhp#par_id3150860.7
-#, fuzzy
 msgid  "Fit Text to Frame"
 msgstr "Metni Çerçeveye Uydur"
 
 #: source/text/simpress/02/10050000.xhp#hd_id3145596.10
-#, fuzzy
 msgid  "Callouts"
 msgstr "Belirtme çizgisi"
 
@@ -6121,12 +6103,10 @@ msgid  "\<image id=\"img_id3153738\" src=\"res/commandimagelist/sc_drawcaption.p
 msgstr ""
 
 #: source/text/simpress/02/10050000.xhp#par_id3157860.11
-#, fuzzy
 msgid  "Callouts"
 msgstr "Belirtme çizgisi"
 
 #: source/text/simpress/02/10050000.xhp#hd_id3148390.14
-#, fuzzy
 msgid  "Fit Vertical Text to Frame"
 msgstr "Dikey Metni Çerçeveye Uydur"
 
@@ -6139,7 +6119,6 @@ msgid  "\<image id=\"img_id3154869\" src=\"res/commandimagelist/sc_verticaltextf
 msgstr ""
 
 #: source/text/simpress/02/10050000.xhp#par_id3150472.16
-#, fuzzy
 msgid  "Fit Vertical Text to Frame"
 msgstr "Dikey Metni Çerçeveye Uydur"
 
@@ -6160,7 +6139,6 @@ msgid  "\<ahelp hid=\".uno:RectangleToolbox\"\>Using Customize Toolbar, you can 
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#hd_id3150396.4
-#, fuzzy
 msgid  "Rectangle"
 msgstr "Dikdörtgen"
 
@@ -6173,12 +6151,10 @@ msgid  "\<image id=\"img_id3148729\" src=\"res/commandimagelist/sc_rect.png\" wi
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#par_id3154558.5
-#, fuzzy
 msgid  "Rectangle"
 msgstr "Dikdörtgen"
 
 #: source/text/simpress/02/10060000.xhp#hd_id3145591.7
-#, fuzzy
 msgid  "Square"
 msgstr "Karesel"
 
@@ -6191,7 +6167,6 @@ msgid  "\<image id=\"img_id3149884\" src=\"res/commandimagelist/sc_square.png\" 
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#par_id3148770.8
-#, fuzzy
 msgid  "Square"
 msgstr "Karesel"
 
@@ -6212,7 +6187,6 @@ msgid  "Rounded Rectangle"
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#hd_id3083443.13
-#, fuzzy
 msgid  "Rounded Square"
 msgstr "Yuvarlatılmış kare"
 
@@ -6225,12 +6199,10 @@ msgid  "\<image id=\"img_id3151189\" src=\"res/commandimagelist/sc_square_rounde
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#par_id3145207.14
-#, fuzzy
 msgid  "Rounded Square"
 msgstr "Yuvarlatılmış kare"
 
 #: source/text/simpress/02/10060000.xhp#hd_id3153618.16
-#, fuzzy
 msgid  "Rectangle, Unfilled"
 msgstr "Boş dikdörtgen"
 
@@ -6243,12 +6215,10 @@ msgid  "\<image id=\"img_id3159186\" src=\"res/commandimagelist/sc_rect_unfilled
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#par_id3153907.17
-#, fuzzy
 msgid  "Rectangle, Unfilled"
 msgstr "Boş dikdörtgen"
 
 #: source/text/simpress/02/10060000.xhp#hd_id3154930.19
-#, fuzzy
 msgid  "Square, Unfilled"
 msgstr "Boş kare"
 
@@ -6261,12 +6231,10 @@ msgid  "\<image id=\"img_id3147510\" src=\"res/commandimagelist/sc_square_unfill
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#par_id3149161.20
-#, fuzzy
 msgid  "Square, Unfilled"
 msgstr "Boş kare"
 
 #: source/text/simpress/02/10060000.xhp#hd_id3154098.22
-#, fuzzy
 msgid  "Rounded Rectangle, Unfilled"
 msgstr "Yuvarlatılmış boş dikdörtgen"
 
@@ -6279,12 +6247,10 @@ msgid  "\<image id=\"img_id3154610\" src=\"res/commandimagelist/sc_rect_rounded_
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#par_id3154802.23
-#, fuzzy
 msgid  "Rounded Square, Unfilled"
 msgstr "Yuvarlatılmış boş kare"
 
 #: source/text/simpress/02/10060000.xhp#hd_id3150350.25
-#, fuzzy
 msgid  "Rounded Square, Unfilled"
 msgstr "Yuvarlatılmış boş kare"
 
@@ -6297,12 +6263,10 @@ msgid  "\<image id=\"img_id3154571\" src=\"res/commandimagelist/sc_square_rounde
 msgstr ""
 
 #: source/text/simpress/02/10060000.xhp#par_id3152960.26
-#, fuzzy
 msgid  "Rounded Square, Unfilled"
 msgstr "Yuvarlatılmış boş kare"
 
 #: source/text/simpress/02/10070000.xhp#tit
-#, fuzzy
 msgid  "Ellipse"
 msgstr "Elips"
 
@@ -6323,7 +6287,6 @@ msgid  "\<ahelp hid=\".uno:EllipseToolbox\"\>Using Customize Toolbar, you can ad
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#hd_id3154762.5
-#, fuzzy
 msgid  "Ellipse"
 msgstr "Elips"
 
@@ -6336,12 +6299,10 @@ msgid  "\<image id=\"img_id3151391\" src=\"res/commandimagelist/sc_ellipse.png\"
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3150650.6
-#, fuzzy
 msgid  "Ellipse"
 msgstr "Elips"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3145822.8
-#, fuzzy
 msgid  "Circle"
 msgstr "Daire"
 
@@ -6354,12 +6315,10 @@ msgid  "\<image id=\"img_id3153936\" src=\"res/commandimagelist/sc_circle.png\" 
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3150339.9
-#, fuzzy
 msgid  "Circle"
 msgstr "Daire"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3153736.11
-#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Elips pasta"
 
@@ -6372,12 +6331,10 @@ msgid  "\<image id=\"img_id3145295\" src=\"res/commandimagelist/sc_pie.png\" wid
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3156065.12
-#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Elips pasta"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3150473.14
-#, fuzzy
 msgid  "Circle Pie"
 msgstr "Daire dilimi"
 
@@ -6390,12 +6347,10 @@ msgid  "\<image id=\"img_id3153722\" src=\"res/commandimagelist/sc_circlepie.png
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3149452.15
-#, fuzzy
 msgid  "Circle pie"
 msgstr "Daire dilimi"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3150759.17
-#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "Elips parçası"
 
@@ -6408,12 +6363,10 @@ msgid  "\<image id=\"img_id3150261\" src=\"res/commandimagelist/sc_ellipsecut.pn
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3153151.18
-#, fuzzy
 msgid  "Ellipse segment"
 msgstr "Elips parçası"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3149287.20
-#, fuzzy
 msgid  "Circle Segment"
 msgstr "Yay dilimi"
 
@@ -6426,12 +6379,10 @@ msgid  "\<image id=\"img_id3154692\" src=\"res/commandimagelist/sc_circlecut.png
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3145410.21
-#, fuzzy
 msgid  "Circle segment"
 msgstr "Daire parçası"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3158404.23
-#, fuzzy
 msgid  "Ellipse, Unfilled"
 msgstr "Boş elips"
 
@@ -6444,12 +6395,10 @@ msgid  "\<image id=\"img_id3150708\" src=\"res/commandimagelist/sc_ellipse_unfil
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3153688.24
-#, fuzzy
 msgid  "Ellipse, Unfilled"
 msgstr "Boş elips"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3149926.26
-#, fuzzy
 msgid  "Circle, Unfilled"
 msgstr "Boş daire"
 
@@ -6462,12 +6411,10 @@ msgid  "\<image id=\"img_id3150990\" src=\"res/commandimagelist/sc_circle_unfill
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3151106.27
-#, fuzzy
 msgid  "Circle, Unfilled"
 msgstr "Boş daire"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3154572.29
-#, fuzzy
 msgid  "Ellipse Pie, Unfilled"
 msgstr "Boş elips dilimi"
 
@@ -6480,12 +6427,10 @@ msgid  "\<image id=\"img_id3151313\" src=\"res/commandimagelist/sc_pie_unfilled.
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3148403.30
-#, fuzzy
 msgid  "Ellipse Pie, Unfilled"
 msgstr "Boş elips dilimi"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3150835.32
-#, fuzzy
 msgid  "Circle Pie, Unfilled"
 msgstr "Boş daire dilimi"
 
@@ -6498,12 +6443,10 @@ msgid  "\<image id=\"img_id3146925\" src=\"res/commandimagelist/sc_circlepie_unf
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3148986.33
-#, fuzzy
 msgid  "Circle Pie, Unfilled"
 msgstr "Boş daire dilimi"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3149300.35
-#, fuzzy
 msgid  "Ellipse Segment, Unfilled"
 msgstr "Boş elips parçası"
 
@@ -6516,12 +6459,10 @@ msgid  "\<image id=\"img_id3149490\" src=\"res/commandimagelist/sc_ellipsecut_un
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3151253.36
-#, fuzzy
 msgid  "Ellipse Segment, Unfilled"
 msgstr "Boş elips parçası"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3149103.38
-#, fuzzy
 msgid  "Circle Segment, Unfilled"
 msgstr "Boş daire parçası"
 
@@ -6534,12 +6475,10 @@ msgid  "\<image id=\"img_id3148979\" src=\"res/commandimagelist/sc_circlecut_unf
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3149037.39
-#, fuzzy
 msgid  "Circle Segment, Unfilled"
 msgstr "Boş daire parçası"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3149434.41
-#, fuzzy
 msgid  "Arc"
 msgstr "Yay"
 
@@ -6552,12 +6491,10 @@ msgid  "\<image id=\"img_id3152778\" src=\"res/commandimagelist/sc_arc.png\" wid
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3155139.42
-#, fuzzy
 msgid  "Arc"
 msgstr "Yay"
 
 #: source/text/simpress/02/10070000.xhp#hd_id3153514.44
-#, fuzzy
 msgid  "Circle Arc"
 msgstr "Yay"
 
@@ -6570,12 +6507,10 @@ msgid  "\<image id=\"img_id3154386\" src=\"res/commandimagelist/sc_circlearc.png
 msgstr ""
 
 #: source/text/simpress/02/10070000.xhp#par_id3154111.45
-#, fuzzy
 msgid  "Circle Arc"
 msgstr "Yay"
 
 #: source/text/simpress/02/10080000.xhp#tit
-#, fuzzy
 msgid  "Curve"
 msgstr "Eğri nesne"
 
@@ -6600,7 +6535,6 @@ msgid  "Closed shapes automatically receive the fill that is displayed in the \<
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#hd_id3155926.4
-#, fuzzy
 msgid  "Curve, Filled"
 msgstr "Eğri, dolu"
 
@@ -6613,7 +6547,6 @@ msgid  "\<image id=\"img_id3150936\" src=\"res/commandimagelist/sc_bezierfill.pn
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#par_id3150570.5
-#, fuzzy
 msgid  "Curve, Filled"
 msgstr "Eğri, dolu"
 
@@ -6634,7 +6567,6 @@ msgid  "Polygon, Filled"
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#hd_id3156322.13
-#, fuzzy
 msgid  "Polygon (45°), Filled"
 msgstr "Dolu çokgen (45°)"
 
@@ -6647,12 +6579,10 @@ msgid  "\<image id=\"img_id3149976\" src=\"res/commandimagelist/sc_polygon_diago
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#par_id3153155.14
-#, fuzzy
 msgid  "Polygon (45°), Filled"
 msgstr "Dolu çokgen (45°)"
 
 #: source/text/simpress/02/10080000.xhp#hd_id3149292.94
-#, fuzzy
 msgid  "Freeform Line, Filled"
 msgstr "Boşform Çizgisi, Dolduruldu"
 
@@ -6665,12 +6595,10 @@ msgid  "\<image id=\"img_id3145410\" src=\"res/commandimagelist/sc_freeline.png\
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#par_id3154264.95
-#, fuzzy
 msgid  "Freeform Line, Filled"
 msgstr "Boşform Çizgisi, Dolduruldu"
 
 #: source/text/simpress/02/10080000.xhp#hd_id3147506.17
-#, fuzzy
 msgid  "Curve"
 msgstr "Eğri nesne"
 
@@ -6679,12 +6607,10 @@ msgid  "\<image id=\"img_id3154106\" src=\"res/commandimagelist/sc_bezier_unfill
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#par_id3149801.18
-#, fuzzy
 msgid  "Curve"
 msgstr "Eğri nesne"
 
 #: source/text/simpress/02/10080000.xhp#hd_id3154610.22
-#, fuzzy
 msgid  "Polygon"
 msgstr "Poligon"
 
@@ -6693,12 +6619,10 @@ msgid  "\<image id=\"img_id3146123\" src=\"res/commandimagelist/sc_polygon_unfil
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#par_id3158435.23
-#, fuzzy
 msgid  "Polygon"
 msgstr "Poligon"
 
 #: source/text/simpress/02/10080000.xhp#hd_id3153668.26
-#, fuzzy
 msgid  "Polygon (45°)"
 msgstr "Çokgen (45°)"
 
@@ -6711,7 +6635,6 @@ msgid  "\<image id=\"img_id3150987\" src=\"res/commandimagelist/sc_polygon_diago
 msgstr ""
 
 #: source/text/simpress/02/10080000.xhp#par_id3150829.27
-#, fuzzy
 msgid  "Polygon (45°)"
 msgstr "Çokgen (45°)"
 
@@ -6728,7 +6651,6 @@ msgid  "Freeform Line"
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#tit
-#, fuzzy
 msgid  "3D Objects"
 msgstr "3B nesneler"
 
@@ -6749,7 +6671,6 @@ msgid  "\<image id=\"img_id3146967\" src=\"res/commandimagelist/sc_objects3dtool
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3150397.3
-#, fuzzy
 msgid  "3D Objects"
 msgstr "3B nesneler"
 
@@ -6758,7 +6679,6 @@ msgid  "To rotate a 3D object around any of its three axes, click to select the 
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#hd_id3153936.5
-#, fuzzy
 msgid  "Cube"
 msgstr "Küp"
 
@@ -6771,12 +6691,10 @@ msgid  "\<image id=\"img_id3149884\" src=\"res/commandimagelist/sc_objects3dtool
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3155440.6
-#, fuzzy
 msgid  "Cube"
 msgstr "Küp"
 
 #: source/text/simpress/02/10090000.xhp#hd_id3145354.8
-#, fuzzy
 msgid  "Sphere"
 msgstr "Küre"
 
@@ -6789,12 +6707,10 @@ msgid  "\<image id=\"img_id3155992\" src=\"res/commandimagelist/sc_sphere.png\" 
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3153720.9
-#, fuzzy
 msgid  "Sphere"
 msgstr "Küre"
 
 #: source/text/simpress/02/10090000.xhp#hd_id3149710.11
-#, fuzzy
 msgid  "Cylinder"
 msgstr "Silindir"
 
@@ -6807,12 +6723,10 @@ msgid  "\<image id=\"img_id3147569\" src=\"res/commandimagelist/sc_cylinder.png\
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3153151.12
-#, fuzzy
 msgid  "Cylinder"
 msgstr "Silindir"
 
 #: source/text/simpress/02/10090000.xhp#hd_id3155843.14
-#, fuzzy
 msgid  "Cone"
 msgstr "Koni"
 
@@ -6825,12 +6739,10 @@ msgid  "\<image id=\"img_id3151178\" src=\"res/commandimagelist/sc_cone.png\" wi
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3148829.15
-#, fuzzy
 msgid  "Cone"
 msgstr "Koni"
 
 #: source/text/simpress/02/10090000.xhp#hd_id3158408.17
-#, fuzzy
 msgid  "Pyramid"
 msgstr "Piramit"
 
@@ -6843,12 +6755,10 @@ msgid  "\<image id=\"img_id3152948\" src=\"res/commandimagelist/sc_cyramid.png\"
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3149812.18
-#, fuzzy
 msgid  "Pyramid"
 msgstr "Piramit"
 
 #: source/text/simpress/02/10090000.xhp#hd_id3149930.20
-#, fuzzy
 msgid  "Torus"
 msgstr "Halka"
 
@@ -6861,12 +6771,10 @@ msgid  "\<image id=\"img_id3151319\" src=\"res/commandimagelist/sc_torus.png\" w
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3151108.21
-#, fuzzy
 msgid  "Torus"
 msgstr "Halka"
 
 #: source/text/simpress/02/10090000.xhp#hd_id3152952.23
-#, fuzzy
 msgid  "Shell"
 msgstr "Kap"
 
@@ -6879,12 +6787,10 @@ msgid  "\<image id=\"img_id3150838\" src=\"res/commandimagelist/sc_shell3d.png\"
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3154193.24
-#, fuzzy
 msgid  "Shell"
 msgstr "Kap"
 
 #: source/text/simpress/02/10090000.xhp#hd_id3156209.26
-#, fuzzy
 msgid  "Half-Sphere"
 msgstr "Yarım küre"
 
@@ -6897,12 +6803,10 @@ msgid  "\<image id=\"img_id3151328\" src=\"res/commandimagelist/sc_halfsphere.pn
 msgstr ""
 
 #: source/text/simpress/02/10090000.xhp#par_id3149484.27
-#, fuzzy
 msgid  "Half-sphere"
 msgstr "Yarım küre"
 
 #: source/text/simpress/02/10100000.xhp#tit
-#, fuzzy
 msgid  "Connectors"
 msgstr "Bağlayıcılar"
 
@@ -6915,7 +6819,6 @@ msgid  "\<image id=\"img_id3149018\" src=\"res/commandimagelist/sc_connector.png
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3154702.3
-#, fuzzy
 msgid  "Connector"
 msgstr "Bağlayıcı"
 
@@ -6940,7 +6843,6 @@ msgid  "Straight"
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3149943.126
-#, fuzzy
 msgid  "Curved"
 msgstr "Eğri"
 
@@ -6953,7 +6855,6 @@ msgid  "To draw a connector line, click a gluepoint on an object, drag to a glue
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#hd_id3147297.9
-#, fuzzy
 msgid  "Connector"
 msgstr "Bağlayıcı"
 
@@ -6966,12 +6867,10 @@ msgid  "\<image id=\"img_id3153037\" src=\"res/commandimagelist/sc_connector.png
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3153084.11
-#, fuzzy
 msgid  "Connector"
 msgstr "Bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3145597.12
-#, fuzzy
 msgid  "Connector Starts with Arrow"
 msgstr "Başı oklu bağlayıcı"
 
@@ -6984,12 +6883,10 @@ msgid  "\<image id=\"img_id3150021\" src=\"res/commandimagelist/sc_connectorarro
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3155434.14
-#, fuzzy
 msgid  "Connector Starts with Arrow"
 msgstr "Başı oklu bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3145248.15
-#, fuzzy
 msgid  "Connector Ends with Arrow"
 msgstr "Sonu oklu bağlayıcı"
 
@@ -7002,12 +6899,10 @@ msgid  "\<image id=\"img_id3150936\" src=\"res/commandimagelist/sc_connectorarro
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3109843.17
-#, fuzzy
 msgid  "Connector Ends with Arrow "
 msgstr "Sonu oklu bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3154865.18
-#, fuzzy
 msgid  "Connector with Arrows"
 msgstr "Oklu bağlayıcı"
 
@@ -7020,12 +6915,10 @@ msgid  "\<image id=\"img_id3153720\" src=\"res/commandimagelist/sc_connectorarro
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3149709.20
-#, fuzzy
 msgid  "Connector with Arrows"
 msgstr "Oklu bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3149452.21
-#, fuzzy
 msgid  "Connector Starts with Circle"
 msgstr "Başı yuvarlak bağlayıcı"
 
@@ -7038,12 +6931,10 @@ msgid  "\<image id=\"img_id3147572\" src=\"res/commandimagelist/sc_connectorcirc
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3153219.23
-#, fuzzy
 msgid  "Connector Starts with Circle"
 msgstr "Başı yuvarlak bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3155847.24
-#, fuzzy
 msgid  "Connector Ends with Circle"
 msgstr "Sonu yuvarlak bağlayıcı"
 
@@ -7056,12 +6947,10 @@ msgid  "\<image id=\"img_id3149289\" src=\"res/commandimagelist/sc_connectorcirc
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3159186.26
-#, fuzzy
 msgid  "Connector Ends with Circle "
 msgstr "Sonu yuvarlak bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3151172.27
-#, fuzzy
 msgid  "Connector with Circles"
 msgstr "Yuvarlak uçlu bağlayıcı"
 
@@ -7074,12 +6963,10 @@ msgid  "\<image id=\"img_id3154203\" src=\"res/commandimagelist/sc_connectortool
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3147509.29
-#, fuzzy
 msgid  "Connector with Circles"
 msgstr "Yuvarlak uçlu bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3154265.30
-#, fuzzy
 msgid  "Line Connector"
 msgstr "Köşeli bağlayıcı"
 
@@ -7092,12 +6979,10 @@ msgid  "\<image id=\"img_id3153679\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3152940.32
-#, fuzzy
 msgid  "Line Connector"
 msgstr "Köşeli bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3159274.33
-#, fuzzy
 msgid  "Line Connector Starts with Arrow"
 msgstr "Başı oklu köşeli bağlayıcı"
 
@@ -7110,12 +6995,10 @@ msgid  "\<image id=\"img_id3150629\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3154798.35
-#, fuzzy
 msgid  "Line Connector Starts with Arrow"
 msgstr "Başı oklu köşeli bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3153539.36
-#, fuzzy
 msgid  "Line Connector Ends with Arrow"
 msgstr "Sonu oklu köşeli bağlayıcı"
 
@@ -7128,12 +7011,10 @@ msgid  "\<image id=\"img_id3150357\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3152962.38
-#, fuzzy
 msgid  "Line Connector Ends with Arrow"
 msgstr "Sonu oklu köşeli bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3153678.39
-#, fuzzy
 msgid  "Line Connector with Arrows"
 msgstr "Oklu köşeli bağlayıcı"
 
@@ -7146,12 +7027,10 @@ msgid  "\<image id=\"img_id3150982\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3155892.41
-#, fuzzy
 msgid  "Line Connector with Arrows"
 msgstr "Oklu köşeli bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3150827.42
-#, fuzzy
 msgid  "Line Connector Starts with Circle"
 msgstr "Başı yuvarlak köşeli bağlayıcı"
 
@@ -7164,12 +7043,10 @@ msgid  "\<image id=\"img_id3151284\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3154136.44
-#, fuzzy
 msgid  "Line Connector Starts with Circle"
 msgstr "Başı yuvarlak köşeli bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3146932.45
-#, fuzzy
 msgid  "Line Connector Ends with Circle"
 msgstr "Sonu yuvarlak köşeli bağlayıcı"
 
@@ -7182,12 +7059,10 @@ msgid  "\<image id=\"img_id3151326\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3152582.47
-#, fuzzy
 msgid  "Line Connector Ends with Circle"
 msgstr "Sonu yuvarlak köşeli bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3159102.48
-#, fuzzy
 msgid  "Line Connector with Circles"
 msgstr "Yuvarlak uçlu köşeli bağlayıcı"
 
@@ -7200,12 +7075,10 @@ msgid  "\<image id=\"img_id3154834\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3149690.50
-#, fuzzy
 msgid  "Line Connector with Circles"
 msgstr "Yuvarlak uçlu köşeli bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3153759.51
-#, fuzzy
 msgid  "Straight Connector"
 msgstr "Düz bağlayıcı"
 
@@ -7218,12 +7091,10 @@ msgid  "\<image id=\"img_id3154223\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3154901.53
-#, fuzzy
 msgid  "Straight Connector"
 msgstr "Düz bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3149037.54
-#, fuzzy
 msgid  "Straight Connector Starts with Arrow"
 msgstr "Başı oklu düz bağlayıcı"
 
@@ -7236,12 +7107,10 @@ msgid  "\<image id=\"img_id3156188\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3148932.56
-#, fuzzy
 msgid  "Straight Connector Starts with Arrow "
 msgstr "Başı Oklu Düz bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3147321.57
-#, fuzzy
 msgid  "Straight Connector Ends with Arrow"
 msgstr "Sonu Oklu Düz bağlayıcı"
 
@@ -7254,12 +7123,10 @@ msgid  "\<image id=\"img_id3147082\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3154520.59
-#, fuzzy
 msgid  "Straight Connector Ends with Arrow"
 msgstr "Sonu oklu düz bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3154379.60
-#, fuzzy
 msgid  "Straight Connector with Arrows"
 msgstr "Oklu düz bağlayıcı"
 
@@ -7272,12 +7139,10 @@ msgid  "\<image id=\"img_id3151037\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3149172.62
-#, fuzzy
 msgid  "Straight Connector with Arrows"
 msgstr "Oklu düz bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3150581.63
-#, fuzzy
 msgid  "Straight Connector Starts with Circle"
 msgstr "Başı yuvarlak düz bağlayıcı"
 
@@ -7290,12 +7155,10 @@ msgid  "\<image id=\"img_id3156380\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3145780.65
-#, fuzzy
 msgid  "Straight Connector Starts with Circle"
 msgstr "Başı yuvarlak düz bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3148758.66
-#, fuzzy
 msgid  "Straight Connector Ends with Circle"
 msgstr "Sonu dairesel düz bağlayıcı"
 
@@ -7308,12 +7171,10 @@ msgid  "\<image id=\"img_id3155922\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3153201.68
-#, fuzzy
 msgid  "Straight Connector Ends with Circle"
 msgstr "Sonu yuvarlak düz bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3148881.69
-#, fuzzy
 msgid  "Straight Connector with Circles"
 msgstr "Yuvarlak uçlu düz bağlayıcı"
 
@@ -7326,12 +7187,10 @@ msgid  "\<image id=\"img_id3150122\" src=\"res/commandimagelist/sc_connectorline
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3158387.71
-#, fuzzy
 msgid  "Straight Connector with Circles"
 msgstr "Yuvarlak uçlu düz bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3147475.72
-#, fuzzy
 msgid  "Curved Connector"
 msgstr "Eğri bağlayıcı"
 
@@ -7344,12 +7203,10 @@ msgid  "\<image id=\"img_id3146149\" src=\"res/commandimagelist/sc_connectorcurv
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3145259.74
-#, fuzzy
 msgid  "Curved Connector"
 msgstr "Eğri bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3149551.75
-#, fuzzy
 msgid  "Curved Connector Starts with Arrow"
 msgstr "Başı oklu eğri bağlayıcı"
 
@@ -7362,12 +7219,10 @@ msgid  "\<image id=\"img_id3154807\" src=\"res/commandimagelist/sc_connectorcurv
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3153265.77
-#, fuzzy
 msgid  "Curved Connector Starts with Arrow"
 msgstr "Başı oklu eğri bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3147552.78
-#, fuzzy
 msgid  "Curved Connector Ends with Arrow"
 msgstr "Sonu oklu eğri bağlayıcı"
 
@@ -7380,12 +7235,10 @@ msgid  "\<image id=\"img_id3145225\" src=\"res/commandimagelist/sc_connectorcurv
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3153087.80
-#, fuzzy
 msgid  "Curved Connector Ends with Arrow"
 msgstr "Sonu oklu eğri bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3153103.81
-#, fuzzy
 msgid  "Curved Connector with Arrows"
 msgstr "Oklu eğri bağlayıcı"
 
@@ -7398,12 +7251,10 @@ msgid  "\<image id=\"img_id3148448\" src=\"res/commandimagelist/sc_connectorcurv
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3145304.83
-#, fuzzy
 msgid  "Curved Connector with Arrows"
 msgstr "Oklu eğri bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3145320.84
-#, fuzzy
 msgid  "Curved Connector Starts with Circle"
 msgstr "Başı yuvarlak eğri bağlayıcı"
 
@@ -7416,12 +7267,10 @@ msgid  "\<image id=\"img_id3153301\" src=\"res/commandimagelist/sc_connectorcurv
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3154596.86
-#, fuzzy
 msgid  "Curved Connector Starts with Circle"
 msgstr "Başı yuvarlak eğri bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3154311.87
-#, fuzzy
 msgid  "Curved Connector Ends with Circle"
 msgstr "Sonu yuvarlak eğri bağlayıcı"
 
@@ -7434,12 +7283,10 @@ msgid  "\<image id=\"img_id3156097\" src=\"res/commandimagelist/sc_connectorcurv
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3149322.89
-#, fuzzy
 msgid  "Curved Connector Ends with Circle"
 msgstr "Sonu yuvarlak eğri bağlayıcı"
 
 #: source/text/simpress/02/10100000.xhp#hd_id3150450.90
-#, fuzzy
 msgid  "Curved Connector with Circles"
 msgstr "Yuvarlak uçlu bağlayıcı"
 
@@ -7452,12 +7299,10 @@ msgid  "\<image id=\"img_id3155598\" src=\"res/commandimagelist/sc_connectorcurv
 msgstr ""
 
 #: source/text/simpress/02/10100000.xhp#par_id3149766.92
-#, fuzzy
 msgid  "Curved Connector with Circles"
 msgstr "Yuvarlak uçlu bağlayıcı"
 
 #: source/text/simpress/02/10110000.xhp#tit
-#, fuzzy
 msgid  "Insert"
 msgstr "Ekle"
 
@@ -7470,7 +7315,6 @@ msgid  "\<image id=\"img_id3153812\" src=\"res/commandimagelist/sc_drawchart.png
 msgstr ""
 
 #: source/text/simpress/02/10110000.xhp#par_id3145582.4
-#, fuzzy
 msgid  "Insert"
 msgstr "Ekle"
 
@@ -7523,7 +7367,6 @@ msgid  "\<link href=\"text/shared/01/04150200.xhp\" name=\"Plug-in\"\>Plug-in\</
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#tit
-#, fuzzy
 msgid  "Arrows"
 msgstr "Çizgiler ve oklar"
 
@@ -7544,7 +7387,6 @@ msgid  "If you want, you can add an arrow after you draw a line by choosing Form
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#hd_id3153811.5
-#, fuzzy
 msgid  "Line"
 msgstr "Çizgi"
 
@@ -7557,12 +7399,10 @@ msgid  "\<image id=\"img_id3147299\" src=\"res/commandimagelist/sc_line.png\" wi
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3157906.7
-#, fuzzy
 msgid  "Line"
 msgstr "Çizgi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3148725.8
-#, fuzzy
 msgid  "Line Ends with Arrow"
 msgstr "Sonu oklu çizgi"
 
@@ -7575,12 +7415,10 @@ msgid  "\<image id=\"img_id3145596\" src=\"res/commandimagelist/sc_arrowstoolbox
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3153733.10
-#, fuzzy
 msgid  "Line Ends with Arrow"
 msgstr "Sonu oklu çizgi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3149881.11
-#, fuzzy
 msgid  "Line with Arrow/Circle"
 msgstr "Sonu oklu/yuvarlak uçlu çizgi"
 
@@ -7593,12 +7431,10 @@ msgid  "\<image id=\"img_id3156066\" src=\"res/commandimagelist/sc_linearrowcirc
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3145297.13
-#, fuzzy
 msgid  "Line with Arrow/Circle"
 msgstr "Sonu oklu/yuvarlak uçlu çizgi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3149024.14
-#, fuzzy
 msgid  "Line with Arrow/Square"
 msgstr "Sonu oklu/dörtgen uçlu çizgi"
 
@@ -7611,12 +7447,10 @@ msgid  "\<image id=\"img_id3155409\" src=\"res/commandimagelist/sc_linearrowsqua
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3149446.16
-#, fuzzy
 msgid  "Line with Arrow/Square"
 msgstr "Sonu oklu/dörtgen uçlu çizgi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3150967.17
-#, fuzzy
 msgid  "Line (45°)"
 msgstr "Çizgi (45°)"
 
@@ -7629,12 +7463,10 @@ msgid  "\<image id=\"img_id3145209\" src=\"res/commandimagelist/sc_line_diagonal
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3153151.19
-#, fuzzy
 msgid  "Line (45°)"
 msgstr "Çizgi (45°)"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3150256.20
-#, fuzzy
 msgid  "Line Starts with Arrow"
 msgstr "Başı oklu çizgi"
 
@@ -7647,12 +7479,10 @@ msgid  "\<image id=\"img_id3151178\" src=\"res/commandimagelist/sc_linearrowstar
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3148830.22
-#, fuzzy
 msgid  "Line Starts with Arrow"
 msgstr "Başı oklu çizgi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3154295.23
-#, fuzzy
 msgid  "Line with Circle/Arrow"
 msgstr "Sonu oklu/yuvarlak uçlu çizgi"
 
@@ -7665,12 +7495,10 @@ msgid  "\<image id=\"img_id3149152\" src=\"res/commandimagelist/sc_linecirclearr
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3154100.25
-#, fuzzy
 msgid  "Line with Circle/Arrow"
 msgstr "Sonu oklu/yuvarlak uçlu çizgi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3153688.26
-#, fuzzy
 msgid  "Line with Square/Arrow"
 msgstr "Sonu oklu/dörtgen uçlu çizgi"
 
@@ -7683,12 +7511,10 @@ msgid  "\<image id=\"img_id3149931\" src=\"res/commandimagelist/sc_linesquarearr
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3150975.28
-#, fuzzy
 msgid  "Line with Square/Arrow"
 msgstr "Sonu oklu/dörtgen uçlu çizgi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3154477.35
-#, fuzzy
 msgid  "Dimension Line"
 msgstr "Ölçme çizgisi"
 
@@ -7709,12 +7535,10 @@ msgid  "\<image id=\"img_id3149684\" src=\"res/commandimagelist/sc_measureline.p
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3151259.31
-#, fuzzy
 msgid  "Dimension Line"
 msgstr "Ölçme çizgisi"
 
 #: source/text/simpress/02/10120000.xhp#hd_id3149784.32
-#, fuzzy
 msgid  "Line with Arrows"
 msgstr "Sonu oklu çizgi"
 
@@ -7727,7 +7551,6 @@ msgid  "\<image id=\"img_id3147224\" src=\"res/commandimagelist/sc_linearrows.pn
 msgstr ""
 
 #: source/text/simpress/02/10120000.xhp#par_id3149435.34
-#, fuzzy
 msgid  "Line with Arrows"
 msgstr "Sonu oklu çizgi"
 
@@ -7748,7 +7571,6 @@ msgid  "\<link href=\"text/shared/01/05350000.xhp\" name=\"Format - 3D Effects\"
 msgstr ""
 
 #: source/text/simpress/02/11060000.xhp#tit
-#, fuzzy
 msgid  "First Level  "
 msgstr "İlk düzey "
 
@@ -7769,12 +7591,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_outlinecollapseall.png\" id=\"img_
 msgstr ""
 
 #: source/text/simpress/02/11060000.xhp#par_id3150207.3
-#, fuzzy
 msgid  "First Level"
 msgstr "İlk düzey"
 
 #: source/text/simpress/02/11070000.xhp#tit
-#, fuzzy
 msgid  "All Levels  "
 msgstr "Tüm düzeyler "
 
@@ -7795,12 +7615,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_outlineexpandall.png\" id=\"img_id
 msgstr ""
 
 #: source/text/simpress/02/11070000.xhp#par_id3166424.3
-#, fuzzy
 msgid  "All Levels"
 msgstr "Tüm düzeyler"
 
 #: source/text/simpress/02/11080000.xhp#tit
-#, fuzzy
 msgid  "Hide Subpoints  "
 msgstr "Alt bölümleri gizle"
 
@@ -7821,12 +7639,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_outlinecollapse.png\" id=\"img_id3
 msgstr ""
 
 #: source/text/simpress/02/11080000.xhp#par_id3148489.3
-#, fuzzy
 msgid  "Hide Subpoints"
 msgstr "Alt bölümleri gizle"
 
 #: source/text/simpress/02/11090000.xhp#tit
-#, fuzzy
 msgid  "Show Subpoints  "
 msgstr "Alt bölümleri göster "
 
@@ -7847,12 +7663,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_outlineexpand.png\" id=\"img_id315
 msgstr ""
 
 #: source/text/simpress/02/11090000.xhp#par_id3146314.3
-#, fuzzy
 msgid  "Show Subpoints"
 msgstr "Alt bölümleri göster"
 
 #: source/text/simpress/02/11100000.xhp#tit
-#, fuzzy
 msgid  "Formatting On/Off"
 msgstr "Biçimlendirme Açık/Kapalı"
 
@@ -7873,12 +7687,10 @@ msgid  "\<image id=\"img_id3154254\" src=\"res/commandimagelist/sc_outlineformat
 msgstr ""
 
 #: source/text/simpress/02/11100000.xhp#par_id3145789.3
-#, fuzzy
 msgid  "Formatting On/Off"
 msgstr "Biçimlendirme Açık/Kapalı"
 
 #: source/text/simpress/02/11110000.xhp#tit
-#, fuzzy
 msgid  "Black and White"
 msgstr "Siyah-beyaz görünüm"
 
@@ -7899,7 +7711,6 @@ msgid  "\<image id=\"img_id3154705\" src=\"res/commandimagelist/sc_colorview.png
 msgstr ""
 
 #: source/text/simpress/02/11110000.xhp#par_id3150345.3
-#, fuzzy
 msgid  "Black and White"
 msgstr "Siyah-beyaz görünüm"
 
@@ -7924,7 +7735,6 @@ msgid  "Glue Points"
 msgstr ""
 
 #: source/text/simpress/02/13020000.xhp#tit
-#, fuzzy
 msgid  "Rotation Mode after Clicking Object"
 msgstr "Nesneyi tıkladıktan sonra döndürme kipi"
 
@@ -7945,12 +7755,10 @@ msgid  "\<image id=\"img_id3153714\" src=\"res/commandimagelist/sc_clickchangero
 msgstr ""
 
 #: source/text/simpress/02/13020000.xhp#par_id3149019.3
-#, fuzzy
 msgid  "Rotation Mode after Clicking Object"
 msgstr "Nesneyi tıkladıktan sonra döndürme kipi"
 
 #: source/text/simpress/02/13030000.xhp#tit
-#, fuzzy
 msgid  "Allow Effects"
 msgstr "Efekte izin ver"
 
@@ -7971,12 +7779,10 @@ msgid  "\<image id=\"img_id3149129\" src=\"res/commandimagelist/sc_animationmode
 msgstr ""
 
 #: source/text/simpress/02/13030000.xhp#par_id3159236.3
-#, fuzzy
 msgid  "Allow Effects"
 msgstr "Efekte izin ver"
 
 #: source/text/simpress/02/13040000.xhp#tit
-#, fuzzy
 msgid  "Allow Interaction  "
 msgstr "Etkileşime izin ver "
 
@@ -7997,12 +7803,10 @@ msgid  "\<image id=\"img_id3156262\" src=\"res/commandimagelist/sc_animationeffe
 msgstr ""
 
 #: source/text/simpress/02/13040000.xhp#par_id3156256.3
-#, fuzzy
 msgid  "Allow Interaction"
 msgstr "Etkileşime izin ver"
 
 #: source/text/simpress/02/13050000.xhp#tit
-#, fuzzy
 msgid  "Show Snap Lines"
 msgstr "Kılavuzları göster"
 
@@ -8023,12 +7827,10 @@ msgid  "\<image id=\"img_id3156385\" src=\"res/commandimagelist/sc_helplinesvisi
 msgstr ""
 
 #: source/text/simpress/02/13050000.xhp#par_id3147339.3
-#, fuzzy
 msgid  "Show Snap Lines"
 msgstr "Kılavuzları göster"
 
 #: source/text/simpress/02/13060000.xhp#tit
-#, fuzzy
 msgid  "Double-Click to add Text"
 msgstr "Metin eklemek için çift tıkla"
 
@@ -8049,12 +7851,10 @@ msgid  "\<image id=\"img_id3147341\" src=\"res/commandimagelist/sc_doubleclickte
 msgstr ""
 
 #: source/text/simpress/02/13060000.xhp#par_id3155445.3
-#, fuzzy
 msgid  "Double-click to add Text"
 msgstr "Metin eklemek için çift tıkla"
 
 #: source/text/simpress/02/13070000.xhp#tit
-#, fuzzy
 msgid  "Simple Handles"
 msgstr "Basit Tutma Noktaları"
 
@@ -8075,12 +7875,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_handlesdraft.png\" id=\"img_id3149
 msgstr ""
 
 #: source/text/simpress/02/13070000.xhp#par_id3149255.4
-#, fuzzy
 msgid  "Simple Handles"
 msgstr "Basit Tutma Noktaları"
 
 #: source/text/simpress/02/13080000.xhp#tit
-#, fuzzy
 msgid  "Large Handles"
 msgstr "Büyük Tutma Noktaları"
 
@@ -8101,12 +7899,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_bighandles.png\" id=\"img_id315371
 msgstr ""
 
 #: source/text/simpress/02/13080000.xhp#par_id3154755.4
-#, fuzzy
 msgid  "Large Handles"
 msgstr "Büyük Tutma Noktaları"
 
 #: source/text/simpress/02/13090000.xhp#tit
-#, fuzzy
 msgid  "Modify Object with Attributes"
 msgstr "Nesneyi Öznitelikleriyle birlikte Düzenle"
 
@@ -8127,7 +7923,6 @@ msgid  "\<image id=\"img_id3155962\" src=\"res/commandimagelist/sc_solidcreate.p
 msgstr ""
 
 #: source/text/simpress/02/13090000.xhp#par_id3154021.3
-#, fuzzy
 msgid  "Modify Object with Attributes"
 msgstr "Nesneyi Öznitelikleriyle birlikte Düzenle"
 
@@ -8168,7 +7963,6 @@ msgid  "Snap to Guides"
 msgstr ""
 
 #: source/text/simpress/02/13150000.xhp#tit
-#, fuzzy
 msgid  "Snap to Page Margins"
 msgstr "Sayfa kenarlarına uydur"
 
@@ -8181,12 +7975,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_snapborder.png\" id=\"img_id315401
 msgstr ""
 
 #: source/text/simpress/02/13150000.xhp#par_id3156384.2
-#, fuzzy
 msgid  "Snap to Page Margins"
 msgstr "Sayfa kenarlarına uydur"
 
 #: source/text/simpress/02/13160000.xhp#tit
-#, fuzzy
 msgid  "Snap to Object Border"
 msgstr "Nesne çerçevesine uydur"
 
@@ -8199,12 +7991,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_snapframe.png\" id=\"img_id3154510
 msgstr ""
 
 #: source/text/simpress/02/13160000.xhp#par_id3154018.2
-#, fuzzy
 msgid  "Snap to Object Border"
 msgstr "Nesne çerçevesine uydur"
 
 #: source/text/simpress/02/13170000.xhp#tit
-#, fuzzy
 msgid  "Snap to Object Points"
 msgstr "Nesne noktalarına uydur"
 
@@ -8217,12 +8007,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_snappoints.png\" id=\"img_id315341
 msgstr ""
 
 #: source/text/simpress/02/13170000.xhp#par_id3148664.2
-#, fuzzy
 msgid  "Snap to Object Points"
 msgstr "Nesne noktalarına uydur"
 
 #: source/text/simpress/02/13180000.xhp#tit
-#, fuzzy
 msgid  "Allow Quick Editing"
 msgstr "Hızlı düzenlemeye izin ver"
 
@@ -8235,12 +8023,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_quickedit.png\" id=\"img_id3153728
 msgstr ""
 
 #: source/text/simpress/02/13180000.xhp#par_id3146974.2
-#, fuzzy
 msgid  "Allow Quick Editing"
 msgstr "Hızlı düzenlemeye izin ver"
 
 #: source/text/simpress/02/13190000.xhp#tit
-#, fuzzy
 msgid  "Select Text Area Only"
 msgstr "Yalnızca metin alanı seçilebilir"
 
@@ -8253,12 +8039,10 @@ msgid  "\<image src=\"res/commandimagelist/sc_pickthrough.png\" id=\"img_id31540
 msgstr ""
 
 #: source/text/simpress/02/13190000.xhp#par_id3154254.2
-#, fuzzy
 msgid  "Select Text Area Only"
 msgstr "Yalnızca metin alanı seçilebilir"
 
 #: source/text/simpress/04/01020000.xhp#tit
-#, fuzzy
 msgid  "Shortcut Keys for $[officename] Impress"
 msgstr "Kısayol Tuşları için $[officename] Impress"
 
@@ -8268,7 +8052,7 @@ msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#hd_id3150342.1
 msgid  "\<variable id=\"impress_keys\"\>\<link href=\"text/simpress/04/01020000.xhp\" name=\"Shortcut Keys for $[officename] Impress\"\>Shortcut Keys for $[officename] Impress\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"impress_keys\"><link href=\"text/simpress/04/01020000.xhp\" name=\"Shortcut Keys for $[officename] Impress\">Kısayol Tuşları için $[officename] Impress</link></variable>"
 
 #: source/text/simpress/04/01020000.xhp#par_id3145791.2
 msgid  "The following is a list of shortcut keys for $[officename] Impress."
@@ -8279,12 +8063,10 @@ msgid  "You can also use the \<link href=\"text/shared/04/01010000.xhp\" name=\"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#hd_id3145386.3
-#, fuzzy
 msgid  "Function Keys for $[officename] Impress"
 msgstr "$[officename] Impress için Fonksiyon Tuşları"
 
 #: source/text/simpress/04/01020000.xhp#hd_id3151242.4
-#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Kısayol tuşları"
 
@@ -8297,7 +8079,6 @@ msgid  "F2"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3154653.8
-#, fuzzy
 msgid  "Edit text."
 msgstr "Metni düzenle."
 
@@ -8306,7 +8087,6 @@ msgid  "F3"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3145116.12
-#, fuzzy
 msgid  "Edit group."
 msgstr "Grubu düzenle."
 
@@ -8315,7 +8095,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command \</c
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3147298.14
-#, fuzzy
 msgid  "Exit group."
 msgstr "Gruptan çık."
 
@@ -8324,7 +8103,6 @@ msgid  "Shift+F3"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3157874.16
-#, fuzzy
 msgid  "Duplicate"
 msgstr "Eşini yarat"
 
@@ -8333,7 +8111,6 @@ msgid  "F4"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3150746.18
-#, fuzzy
 msgid  "Position and Size"
 msgstr "Konum ve Boyut"
 
@@ -8342,7 +8119,6 @@ msgid  "F5"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3153085.20
-#, fuzzy
 msgid  "View Slide Show."
 msgstr "Slayt gösterisini görüntüle."
 
@@ -8351,7 +8127,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command \</c
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_idN1078E
-#, fuzzy
 msgid  "Navigator"
 msgstr "Gezgin"
 
@@ -8360,7 +8135,6 @@ msgid  "F7"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3154559.22
-#, fuzzy
 msgid  "Spellcheck"
 msgstr "İmla Denetimi"
 
@@ -8369,7 +8143,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command \</c
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3147366.24
-#, fuzzy
 msgid  "Thesaurus"
 msgstr "Eşanlamlılar sözlüğü"
 
@@ -8398,12 +8171,10 @@ msgid  "Styles and Formatting"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#hd_id3150962.35
-#, fuzzy
 msgid  "Shortcut Keys in Slide Shows"
 msgstr "Slayt Gösterisinde Kısayol Tuşları"
 
 #: source/text/simpress/04/01020000.xhp#hd_id3147562.36
-#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Kısayol tuşları"
 
@@ -8416,7 +8187,6 @@ msgid  " Esc "
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3152934.39
-#, fuzzy
 msgid  "End presentation."
 msgstr "Son sunu."
 
@@ -8465,17 +8235,14 @@ msgid  " Home "
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3145412.51
-#, fuzzy
 msgid  "Jump to first slide in the slide show."
 msgstr "Slayt gösterisinde ilk slayta atla."
 
 #: source/text/simpress/04/01020000.xhp#hd_id3154294.52
-#, fuzzy
 msgid  " End "
 msgstr "Son"
 
 #: source/text/simpress/04/01020000.xhp#par_id3154258.53
-#, fuzzy
 msgid  "Jump to the last slide in the slide show."
 msgstr "Slayt gösterisinde son slayta atla."
 
@@ -8484,7 +8251,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command \</c
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3150702.55
-#, fuzzy
 msgid  "Go to the previous slide."
 msgstr "Bir önceki slayta git."
 
@@ -8493,7 +8259,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command \</c
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3153690.57
-#, fuzzy
 msgid  "Go to the next slide."
 msgstr "Sonraki slayta git."
 
@@ -8514,12 +8279,10 @@ msgid  "Show white screen until next key or mouse wheel event."
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#hd_id3151313.60
-#, fuzzy
 msgid  "Shortcut Keys in the Normal View"
 msgstr "Normal Görünümde Kısayol Tuşları"
 
 #: source/text/simpress/04/01020000.xhp#hd_id3150994.61
-#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Kısayol tuşları"
 
@@ -8556,7 +8319,6 @@ msgid  "Divide(÷) Key (number pad)"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3155902.125
-#, fuzzy
 msgid  "Zoom in on current selection."
 msgstr "Geçerli seçimi yakınlaştır."
 
@@ -8565,7 +8327,6 @@ msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Comman
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3151284.72
-#, fuzzy
 msgid  "Group selected objects."
 msgstr "Seçilen nesneleri grupla."
 
@@ -8574,7 +8335,6 @@ msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Comman
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3151325.74
-#, fuzzy
 msgid  "Ungroup selected group."
 msgstr "Seçilen grupları çöz."
 
@@ -8623,7 +8383,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command \</c
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3147580.84
-#, fuzzy
 msgid  "Send Backward."
 msgstr "Geriye doğru gönder."
 
@@ -8632,17 +8391,14 @@ msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Comman
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3152775.86
-#, fuzzy
 msgid  "Send to Back."
 msgstr "Geriye gönder."
 
 #: source/text/simpress/04/01020000.xhp#hd_id3156192.87
-#, fuzzy
 msgid  "Shortcut Keys for $[officename] Impress"
 msgstr "Kısayol Tuşları için $[officename] Impress"
 
 #: source/text/simpress/04/01020000.xhp#hd_id3147326.88
-#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Kısayol tuşları"
 
@@ -8695,7 +8451,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</cas
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3155122.103
-#, fuzzy
 msgid  "Select the object behind the currently selected object."
 msgstr "Halen seçili olan nesnenin arkasındaki nesneyi seç."
 
@@ -8704,7 +8459,6 @@ msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</cas
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3156368.105
-#, fuzzy
 msgid  "Select the object in front of the currently selected object."
 msgstr "Halen seçili olan nesnenin önündeki nesneyi seç."
 
@@ -8745,7 +8499,6 @@ msgid  "Escape"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id3146141.117
-#, fuzzy
 msgid  "Exit current mode."
 msgstr "Geçerli kipten çık."
 
@@ -8770,12 +8523,10 @@ msgid  "If there are no text objects on the slide, or if you reached the last te
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id4478286
-#, fuzzy
 msgid  "PageUp"
 msgstr "Sayfa yukarı"
 
 #: source/text/simpress/04/01020000.xhp#par_id2616351
-#, fuzzy
 msgid  "Switch to the previous slide. No function on the first slide."
 msgstr "Önceki slayta geç. İlk slaytta çalışmaz."
 
@@ -8784,7 +8535,6 @@ msgid  "PageDown"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_id4433423
-#, fuzzy
 msgid  "Switch to the next slide. No function on the last slide."
 msgstr "Sonraki slaytı aç. Son slayt üzerinde işlev yok. "
 
@@ -8793,7 +8543,6 @@ msgid  "Navigating with the Keyboard in Slide Sorter"
 msgstr ""
 
 #: source/text/simpress/04/01020000.xhp#par_idN110AA
-#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Kısayol tuşları"
 
@@ -8826,7 +8575,6 @@ msgid  "Makes the slide with the focus the current slide."
 msgstr ""
 
 #: source/text/simpress/guide/3d_create.xhp#tit
-#, fuzzy
 msgid  "Converting 2D Objects to Curves, Polygons, and 3D Objects"
 msgstr "2 boyutlu (2B) nesneleri eğrilere, çokgenlere ve 3B nesnelere çevirmek"
 
@@ -8836,10 +8584,9 @@ msgstr ""
 
 #: source/text/simpress/guide/3d_create.xhp#hd_id3150207.32
 msgid  "\<variable id=\"3d_create\"\>\<link href=\"text/simpress/guide/3d_create.xhp\" name=\"Converting 2D Objects to Curves, Polygons, and 3D Objects\"\>Converting 2D Objects to Curves, Polygons, and 3D Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"3d_create\"><link href=\"text/simpress/guide/3d_create.xhp\" name=\"2 boyutlu (2B) nesneleri eğrilere, çokgenlere ve 3B nesnelere çevirmek\">2 boyutlu (2B) nesneleri eğrilere, çokgenlere ve 3B nesnelere çevirmek</link></variable>"
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3153914.33
-#, fuzzy
 msgid  "You can convert two dimensional (2D) objects to create different shapes. $[officename] can convert 2D objects to the following object types:"
 msgstr "2 boyutlu nesneleri farklı şekiller oluşturmak üzere dönüştürebilirsiniz. $[officename] 2 boyutlu nesneleri şu nesne türlerine dönüştürebilir:"
 
@@ -8848,17 +8595,14 @@ msgid  "Curved object based on Bézier curves"
 msgstr ""
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3154762.50
-#, fuzzy
 msgid  "Polygon object consisting of straight line segments"
 msgstr "Düz çizgi parçalarından oluşan çokgen nesne"
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3150051.51
-#, fuzzy
 msgid  "3D object with shading and a light source"
 msgstr "Bir ışık kaynağı ve gölgeme ile 3B nesne"
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3149873.52
-#, fuzzy
 msgid  "3D rotation object with shading and a light source"
 msgstr "Bir ışık kaynağı ve gölgeme ile 3B dönen nesne"
 
@@ -8875,25 +8619,22 @@ msgid  "The Status bar displays \"Shape selected\". The Custom Shapes can be vie
 msgstr ""
 
 #: source/text/simpress/guide/3d_create.xhp#hd_id3149048.34
-#, fuzzy
 msgid  "To convert an object to a curved shape:"
 msgstr "Bir nesneyi eğri bir şekle dönüştürmek için"
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3147295.35
-#, fuzzy
 msgid  "Select a 2D object on the slide or page."
 msgstr "Sayfadan veya slayttan 2B bir nesne seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3150654.54
 msgid  "Right-click the object and choose \<emph\>Convert - To Curve\</emph\>."
-msgstr ""
+msgstr "Nesneyi sağ tıklayın ve <emph>Dönüştür - Eğriye</emph> komutunu seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3145828.55
 msgid  "To modify the shape of the object, click the \<emph\>Points\</emph\> icon\<image id=\"img_id1027558\" src=\"svx/res/cd015.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id1027558\"\>Icon\</alt\>\</image\> on the \<emph\>Drawing\</emph\> toolbar, and drag the handles of the object. You can also drag the control points of a handle to modify the shape of the curve."
-msgstr ""
+msgstr "Nesnenin şeklini düzenlemek için, <emph>Çizim</emph> araç çubuğundaki <image id=\"img_id1027558\" src=\"svx/res/cd015.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id1027558\">Simge</alt></image> <emph>Noktalar</emph> ikonunu tıklayın, ve nesnenin tutamaklarını sürükleyin. Eğrinin şeklini düzenlemek için tutamaktaki kontrol noktalarını da sürükleyebilirsiniz."
 
 #: source/text/simpress/guide/3d_create.xhp#hd_id3153738.56
-#, fuzzy
 msgid  "To convert a 2D object to a polygon:"
 msgstr "2B nesneyi bir çokgene dönüştürmek için:"
 
@@ -8903,12 +8644,14 @@ msgid  "Select a 2D object on the slide or page."
 msgstr "Sayfa veya slayttan 2 boyutlu bir nesne seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3148774.59
+#, fuzzy
 msgid  "Right-click the object and choose \<emph\>Convert - To Polygon.\</emph\>"
-msgstr ""
+msgstr "Nesneyi sağ tıklayın ve <emph>Dönüştür - Çokgen</emph> seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3155368.39
+#, fuzzy
 msgid  "To modify the shape of the object, click the \<emph\>Points\</emph\> icon\<image id=\"img_id7219458\" src=\"svx/res/cd015.png\" width=\"0.2201inch\" height=\"0.2201inch\"\>\<alt id=\"alt_id7219458\"\>Icon\</alt\>\</image\> on the \<emph\>Drawing\</emph\> toolbar, and drag the handles of the object."
-msgstr ""
+msgstr "Nesnenin şeklini düzenlemek için, <emph>Çizim</emph> araç çubuğundaki <emph>Noktalar</emph> ikonunu tıklayın <image id=\"img_id7219458\" src=\"svx/res/cd015.png\" width=\"0.2201inch\" height=\"0.2201inch\"><alt id=\"alt_id7219458\">Simge</alt></image>, ve nesneyi tutamaklarından sürükleyin."
 
 #: source/text/simpress/guide/3d_create.xhp#hd_id3153919.60
 #, fuzzy
@@ -8921,16 +8664,19 @@ msgid  "Select a 2D object on the slide or page."
 msgstr "Sayfa ya da slaytta 2B bir nesne seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_idN1088B
+#, fuzzy
 msgid  "Click the \<emph\>Extrusion On/Off\</emph\> icon\<image id=\"img_id2490920\" src=\"res/commandimagelist/sc_extrusiontoggle.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id2490920\"\>Icon\</alt\>\</image\> on the \<emph\>Drawing\</emph\> bar, or right-click the object and choose \<emph\>Convert - To 3D\</emph\>."
-msgstr ""
+msgstr "<emph>Çizim</emph> araç çubuğundaki <emph>Çıkarma Açık/Kapalı</emph> ikonunu <image id=\"img_id2490920\" src=\"res/commandimagelist/sc_extrusiontoggle.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id2490920\">Simge</alt></image> tıklayın, veya nesneyi sağ tıklayarak <emph>Dönüştür - 3B</emph> menüsünü seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3148828.41
+#, fuzzy
 msgid  "To edit the properties of the 3D object, use the \<emph\>Line and Filling\</emph\> toolbar and the \<emph\>3D Settings\</emph\> toolbar."
-msgstr ""
+msgstr "3B bir nesnenin özelliklerini düzenlemek için <emph>Çizim ve Doldurma</emph> araç çubuğu ya da <emph>3B Ayarları</emph> araç çubuğunu kullanın."
 
 #: source/text/simpress/guide/3d_create.xhp#par_idN108C5
+#, fuzzy
 msgid  "To convert a text object to 3D, use the \<emph\>Fontwork\</emph\> icon\<image id=\"img_id3821222\" src=\"res/commandimagelist/sc_fontworkgalleryfloater.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3821222\"\>Icon\</alt\>\</image\> on the \<emph\>Drawing\</emph\> toolbar."
-msgstr ""
+msgstr "Bir metin nesnesini 3B' a çevirmek için, <emph>Çizim</emph> araç çubuğundaki <emph>Yazı Sanatı</emph> <image id=\"img_id3821222\" src=\"res/commandimagelist/sc_fontworkgalleryfloater.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3821222\">Icon</alt></image> ikonunu kullanın."
 
 #: source/text/simpress/guide/3d_create.xhp#hd_id3145410.65
 #, fuzzy
@@ -8948,8 +8694,9 @@ msgid  "Select a 2D object on the slide or page."
 msgstr "Sayfada veya slaytta 2B bir nesne seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3151318.69
+#, fuzzy
 msgid  "Right-click the object and choose \<emph\>Convert - To 3D Rotation Object\</emph\>"
-msgstr ""
+msgstr "Nesneyi sağ tıklayın ve <emph>Dönüştür - 3B Dönen Nesne</emph>' yi seçin."
 
 #: source/text/simpress/guide/3d_create.xhp#par_id3146125.70
 #, fuzzy
@@ -11428,217 +11175,210 @@ msgid  "\<link href=\"text/simpress/01/13050200.xhp\" name=\"Convert to Polygon\
 msgstr ""
 
 #: source/text/simpress/main0000.xhp#tit
-#, fuzzy
 msgid  "Welcome to the $[officename] Impress Help"
 msgstr "$[officename] Impress Yardıma Hoş Geldiniz"
 
 #: source/text/simpress/main0000.xhp#hd_id3150746.1
-#, fuzzy
 msgid  "Welcome to the $[officename] Impress Help"
 msgstr "$[officename] Impress Yardıma Hoş Geldiniz"
 
 #: source/text/simpress/main0000.xhp#hd_id3153000.5
-#, fuzzy
 msgid  "How to Work With $[officename] Impress"
 msgstr "$[officename] Impress ile Nasıl Çalışılır"
 
 #: source/text/simpress/main0000.xhp#hd_id3149880.7
-#, fuzzy
 msgid  "$[officename] Impress Menus, Toolbars, and Keys"
 msgstr "$[officename] Impress Menüler, Araç Çubukları ve Anahtarlar"
 
 #: source/text/simpress/main0000.xhp#hd_id3148386.6
-#, fuzzy
 msgid  "Help about the Help"
 msgstr "Yardım hakkında yardım"
 
 #: source/text/simpress/main0100.xhp#tit
-#, fuzzy
 msgid  "Menus"
 msgstr "Menüler"
 
 #: source/text/simpress/main0100.xhp#hd_id3149664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/simpress/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/simpress/main0100.xhp\" name=\"Menus\">Menüler</link></variable>"
 
 #: source/text/simpress/main0100.xhp#par_id3150012.2
-#, fuzzy
 msgid  "The following section lists the help topics available for menus and dialogs."
 msgstr "Takip eden bölüm listesinde menüler ve iletişim öğeleri için yardım konuları bulunmaktadır."
 
 #: source/text/simpress/main0101.xhp#tit
-#, fuzzy
 msgid  "File"
 msgstr "Dosya"
 
 #: source/text/simpress/main0101.xhp#hd_id3153190.1
 msgid  "\<link href=\"text/simpress/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0101.xhp\" name=\"File\">Dosya</link>"
 
 #: source/text/simpress/main0101.xhp#par_id3154321.2
 msgid  "\<ahelp hid=\".\"\>These commands apply to the current document, open a new document, or close the application.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Bu komutlar geçerli belgeye uygulanır, yeni bir belge açar ya da uygulamayı kapatır.</ahelp>"
 
 #: source/text/simpress/main0101.xhp#hd_id3149379.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Open\">Aç</link>"
 
 #: source/text/simpress/main0101.xhp#hd_id3149018.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Farklı Kaydet</link>"
 
 #: source/text/simpress/main0101.xhp#hd_id3145792.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\">Sürümler</link>"
 
 #: source/text/simpress/main0101.xhp#hd_id3145389.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\">Dışarı Aktar</link>"
 
 #: source/text/simpress/main0101.xhp#hd_id3155524.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\">Özellikler</link>"
 
 #: source/text/simpress/main0101.xhp#hd_id3150051.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"Print\">Yazdır</link>"
 
 #: source/text/simpress/main0101.xhp#hd_id3146965.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\">Yazıcı Ayarları</link>"
 
 #: source/text/simpress/main0102.xhp#tit
-#, fuzzy
 msgid  "Edit"
 msgstr "Düzenle"
 
 #: source/text/simpress/main0102.xhp#hd_id3153726.1
 msgid  "\<link href=\"text/simpress/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0102.xhp\" name=\"Edit\">Düzenle</link>"
 
 #: source/text/simpress/main0102.xhp#par_id3151075.2
 msgid  "\<ahelp hid=\".\"\>This menu contains commands for editing the contents of the current document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Bu menü geçerli belgenin içeriğini düzenlemek için gereken komutları içerir.</ahelp>"
 
 #: source/text/simpress/main0102.xhp#hd_id3146316.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\">Özel Yapıştır</link>"
 
 #: source/text/simpress/main0102.xhp#hd_id3154659.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\">Bul ve Değiştir</link>"
 
 #: source/text/simpress/main0102.xhp#hd_id3148866.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\">Eşini yarat</link>"
 
 #: source/text/simpress/main0102.xhp#hd_id3154649.11
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Points\">Noktalar</link>"
 
 #: source/text/simpress/main0102.xhp#par_id3154766.12
 msgid  "Switches the \<emph\>Edit Points\</emph\> mode on and off."
-msgstr ""
+msgstr "<emph>Noktaları Düzenle</emph> kipini açar veya kapatır."
 
 #: source/text/simpress/main0102.xhp#hd_id3145116.13
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue Points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue Points\">Yapışma Noktaları</link>"
 
 #: source/text/simpress/main0102.xhp#par_id3147403.14
 msgid  "Switches the \<emph\>Edit Glue Points\</emph\> mode on and off."
-msgstr ""
+msgstr "<emph>Yapışma Noktaları Düzenle</emph> kipini açar veya kapatır."
 
 #: source/text/simpress/main0102.xhp#hd_id3150396.6
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\">Alanlar</link>"
 
 #: source/text/simpress/main0102.xhp#hd_id3149355.8
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"Links\">Bağlantılar</link>"
 
 #: source/text/simpress/main0102.xhp#hd_id3145590.9
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\">Görüntü Haritası</link>"
 
 #: source/text/simpress/main0102.xhp#hd_id3145082.10
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\">Köprü</link>"
 
 #: source/text/simpress/main0103.xhp#tit
-#, fuzzy
 msgid  "View"
 msgstr "Görünüm"
 
 #: source/text/simpress/main0103.xhp#hd_id3150297.1
 msgid  "\<link href=\"text/simpress/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0103.xhp\" name=\"View\">Görünüm</link>"
 
 #: source/text/simpress/main0103.xhp#par_id3149378.2
 msgid  "\<ahelp hid=\".\"\>This menu contains commands for controlling the on-screen display of the document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Bu menü belgenin ekran görüntüsü üzerindeki denetimi için gereken komutları içerir.</ahelp>"
 
 #: source/text/simpress/main0103.xhp#hd_id3149121.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\">Yakınlaştır</link>"
 
 #: source/text/simpress/main0104.xhp#tit
-#, fuzzy
 msgid  "Insert"
 msgstr "Ekle"
 
 #: source/text/simpress/main0104.xhp#hd_id3153726.1
 msgid  "\<link href=\"text/simpress/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0104.xhp\" name=\"Insert\">Ekle</link>"
 
 #: source/text/simpress/main0104.xhp#par_id3146971.2
 msgid  "\<ahelp hid=\".\"\>This menu contains the commands that are used to insert new elements into the document, for example, graphics, objects, special characters and other files.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Bu menü belge içine yeni öğeler eklemek için kullanılan komutları içerir, örneğin, grafikler, nesneler, özel karakterler ve diğer dosyalar.</ahelp>"
 
 #: source/text/simpress/main0104.xhp#hd_id3145801.3
 msgid  "\<link href=\"text/simpress/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04010000.xhp\" name=\"Slide\">Slayt</link>"
 
 #: source/text/simpress/main0104.xhp#par_idN105C7
 msgid  "\<link href=\"text/simpress/01/03152000.xhp\"\>Page Number\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03152000.xhp\">Sayfa Numarası</link>"
 
 #: source/text/simpress/main0104.xhp#par_idN10609
-#, fuzzy
 msgid  "Adds the slide number or the page number."
 msgstr "Slayt numarası ya da sayfa numarası ekler."
 
 #: source/text/simpress/main0104.xhp#par_idN105D7
 msgid  "\<link href=\"text/simpress/01/03152000.xhp\"\>Date and Time\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03152000.xhp\">Tarih ve Zaman</link>"
 
 #: source/text/simpress/main0104.xhp#par_idN10624
-#, fuzzy
 msgid  "Adds the date and time as a field."
 msgstr "Alana tarih ve zaman bilgisini ekler."
 
 #: source/text/simpress/main0104.xhp#hd_id0915200910362363
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Open\">Aç</link>"
 
 #: source/text/simpress/main0104.xhp#hd_id3153964.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\">Özel Karakter</link>"
 
 #: source/text/simpress/main0104.xhp#hd_id3145790.10
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\">Köprü</link>"
 
 #: source/text/simpress/main0104.xhp#par_idN10651
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06050000.xhp\"\>Animated Image\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06050000.xhp\">Hareketli Resim</link>"
 
 #: source/text/simpress/main0104.xhp#hd_id3145768.5
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"File\">Dosya</link>"
 
 #: source/text/simpress/main0104.xhp#hd_id3143232.7
+#, fuzzy
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\">Çizelge</link>"
 
 #: source/text/simpress/main0104.xhp#par_id0302200904013251
 #, fuzzy
@@ -11646,12 +11386,14 @@ msgid  "Inserts a chart."
 msgstr "Tablo ekler."
 
 #: source/text/simpress/main0104.xhp#hd_id3153812.8
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\">Kayan Çerçeve</link>"
 
 #: source/text/simpress/main0104.xhp#hd_id3149050.9
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"File\">Dosya</link>"
 
 #: source/text/simpress/main0105.xhp#tit
 #, fuzzy
@@ -11659,52 +11401,64 @@ msgid  "Format"
 msgstr "Biçim"
 
 #: source/text/simpress/main0105.xhp#hd_id3152596.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0105.xhp\" name=\"Format\">Biçim</link>"
 
 #: source/text/simpress/main0105.xhp#par_id3145801.2
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:FormatMenu\"\>Contains commands for formatting the layout and the contents of your document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:FormatMenu\">Belgenin içeriği ve düzenini biçimlendimek için gereken komutları içerir.</ahelp>"
 
 #: source/text/simpress/main0105.xhp#hd_id3147401.8
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Character\">Karakter</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3149941.10
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\">Paragraf</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3147299.15
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\">Madde İşareleme ve Numaralama</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3148727.11
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\">Sayfa</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3149499.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\">Konum ve Boyut</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3154510.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"Line\">Çizgi</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3149021.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"Area\">Alan</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3155961.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"Text\">Metin</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3156286.4
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05120000.xhp\" name=\"Page Layout...\"\>Slide Design\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05120000.xhp\" name=\"Page Layout...\">Slayt Tasarımı</link>"
 
 #: source/text/simpress/main0105.xhp#hd_id3163827.12
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/05130000.xhp\" name=\"Modify Layout\"\>Slide Layout\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05130000.xhp\" name=\"Modify Layout\">Slayt Düzeni</link>"
 
 #: source/text/simpress/main0106.xhp#tit
 #, fuzzy
@@ -11712,20 +11466,24 @@ msgid  "Tools"
 msgstr "Araçlar"
 
 #: source/text/simpress/main0106.xhp#hd_id3154017.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0106.xhp\" name=\"Tools\">Araçlar</link>"
 
 #: source/text/simpress/main0106.xhp#par_id3155064.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Contains spelling tools, a gallery of object art that you can add to your document, as well as tools for configuring menus, and setting program preferences.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Heceleme araçlarını içerir, bir galeriden belgenize nesne ekleyebilirsiniz, menülerin düzenlenebileceği araçlar, ve program tercihlerini ayarlayabilirsiniz.</ahelp>"
 
 #: source/text/simpress/main0106.xhp#hd_id3153248.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\">Otomatik Düzeltme Seçenekleri</link>"
 
 #: source/text/simpress/main0106.xhp#hd_id3149130.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\">Özelleştir</link>"
 
 #: source/text/simpress/main0107.xhp#tit
 #, fuzzy
@@ -11733,12 +11491,14 @@ msgid  "Window"
 msgstr "Pencere"
 
 #: source/text/simpress/main0107.xhp#hd_id3153770.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0107.xhp\" name=\"Window\"\>Window\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0107.xhp\" name=\"Window\">Pencere</link>"
 
 #: source/text/simpress/main0107.xhp#par_id3147435.2
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:WindowList\"\>Contains commands for manipulating and displaying document windows.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:WindowList\">Belge pencerelerini organize edebileceğiniz ve görüntüleyebileceğiniz komutları bulundurur.</ahelp>"
 
 #: source/text/simpress/main0113.xhp#tit
 #, fuzzy
@@ -11746,16 +11506,19 @@ msgid  "Modify"
 msgstr "Değiştir"
 
 #: source/text/simpress/main0113.xhp#hd_id3154020.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0113.xhp\" name=\"Modify\"\>Modify\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0113.xhp\" name=\"Modify\">Değiştir</link>"
 
 #: source/text/simpress/main0113.xhp#par_id3154321.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Contains commands for modifying objects in your document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Belgenizdeki nesneleri düzenlemeniz için komutları bulundurur.</ahelp>"
 
 #: source/text/simpress/main0113.xhp#hd_id3153188.9
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/05090000.xhp\" name=\"Rotate\"\>Rotate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/05090000.xhp\" name=\"Rotate\">Döndür</link>"
 
 #: source/text/simpress/main0113.xhp#par_id3149378.10
 #, fuzzy
@@ -11763,28 +11526,34 @@ msgid  "Rotates the selected object(s)."
 msgstr "Seçilmiş nesneleri döndürür."
 
 #: source/text/simpress/main0113.xhp#hd_id3149019.8
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\"\>Distribution\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\">Dağılım</link>"
 
 #: source/text/simpress/main0113.xhp#hd_id3153966.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05190000.xhp\" name=\"Name Object\"\>Name Object\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05190000.xhp\" name=\"Name Object\">Nesne İsmi</link>"
 
 #: source/text/simpress/main0113.xhp#hd_id3154656.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290100.xhp\" name=\"Group\"\>Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290100.xhp\" name=\"Group\">Grupla</link>"
 
 #: source/text/simpress/main0113.xhp#hd_id3153484.7
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290200.xhp\" name=\"Ungroup\"\>Ungroup\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290200.xhp\" name=\"Ungroup\">Grubu çöz</link>"
 
 #: source/text/simpress/main0113.xhp#hd_id3148870.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290300.xhp\" name=\"Edit Group\"\>Edit Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290300.xhp\" name=\"Edit Group\">Grubu Düzenle</link>"
 
 #: source/text/simpress/main0113.xhp#hd_id3143233.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05290400.xhp\" name=\"Exit Group\"\>Exit Group\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05290400.xhp\" name=\"Exit Group\">Gruptan Çık</link>"
 
 #: source/text/simpress/main0114.xhp#tit
 #, fuzzy
@@ -11792,28 +11561,34 @@ msgid  "Slide Show"
 msgstr "Slayt Gösterisi"
 
 #: source/text/simpress/main0114.xhp#hd_id3154011.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0114.xhp\" name=\"Slide Show\"\>Slide Show\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0114.xhp\" name=\"Slide Show\">Slayt Gösterisi</link>"
 
 #: source/text/simpress/main0114.xhp#par_id3145252.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Contains commands and options for running a presentation.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Bir slayt gösterisini çalıştırmak için komutları ve seçenekleri bulundurur.</ahelp>"
 
 #: source/text/simpress/main0114.xhp#hd_id3154510.3
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06080000.xhp\" name=\"Slide Show Settings\"\>Slide Show Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06080000.xhp\" name=\"Slide Show Settings\">Slayt Gösterisi Ayarları</link>"
 
 #: source/text/simpress/main0114.xhp#hd_id3153486.5
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06070000.xhp\" name=\"Interaction\"\>Interaction\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06070000.xhp\" name=\"Interaction\">Etkileşim</link>"
 
 #: source/text/simpress/main0114.xhp#par_idN10611
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06060000.xhp\"\>Custom Animation\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06060000.xhp\">Özel Animasyon</link>"
 
 #: source/text/simpress/main0114.xhp#hd_id3153711.4
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06100000.xhp\" name=\"Custom Slide Show\"\>Custom Slide Show\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06100000.xhp\" name=\"Custom Slide Show\">Özel Slayt Gösterisi</link>"
 
 #: source/text/simpress/main0200.xhp#tit
 #, fuzzy
@@ -11821,8 +11596,9 @@ msgid  "Toolbars"
 msgstr "Araç Çubukları"
 
 #: source/text/simpress/main0200.xhp#hd_id3147434.1
+#, fuzzy
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/simpress/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/simpress/main0200.xhp\" name=\"Toolbars\">Araç Çubukları</link></variable>"
 
 #: source/text/simpress/main0200.xhp#par_id31474099
 #, fuzzy
@@ -11835,32 +11611,39 @@ msgid  "Line and Filling Bar"
 msgstr "Çizgi ve Doldurma Çubuğu"
 
 #: source/text/simpress/main0202.xhp#hd_id3149664.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0202.xhp\" name=\"Line and Filling Bar\">Çizgi ve Doldurma Çubuğu</link>"
 
 #: source/text/simpress/main0202.xhp#par_id3153729.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>The Line and Filling Bar contains commands and options that you can apply in the current view.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Çizgi ve Dolgu Araç çubuğu geçerli görünüme uygulayabileceğiniz, komutları ve seçenekleri bulundurur.</ahelp>"
 
 #: source/text/simpress/main0202.xhp#hd_id3156382.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\">Çizgi Biçemi</link>"
 
 #: source/text/simpress/main0202.xhp#hd_id3159184.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\">Çizgi Genişliği</link>"
 
 #: source/text/simpress/main0202.xhp#hd_id3150250.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\">Çizgi Rengi</link>"
 
 #: source/text/simpress/main0202.xhp#hd_id3148609.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\">Alan Biçemi / Doldurma</link>"
 
 #: source/text/simpress/main0202.xhp#hd_id3150048.7
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\">Gölge</link>"
 
 #: source/text/simpress/main0203.xhp#tit
 #, fuzzy
@@ -11868,28 +11651,34 @@ msgid  "Text Formatting Bar"
 msgstr "Metin Biçimlendirme Çubuğu"
 
 #: source/text/simpress/main0203.xhp#hd_id3150010.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0203.xhp\" name=\"Text Formatting Bar\"\>Text Formatting Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0203.xhp\" name=\"Text Formatting Bar\">Metin Biçimlendirme Çubuğu</link>"
 
 #: source/text/simpress/main0203.xhp#par_id3152597.2
+#, fuzzy
 msgid  "To display the \<emph\>Text Formatting\</emph\> Bar, place the cursor inside a text object."
-msgstr ""
+msgstr "<emph>Metin Biçimlendir</emph> Araç çubuğunu görüntülemek için, imleci bir metin nesnesi içine yerleştirin."
 
 #: source/text/simpress/main0203.xhp#hd_id3151391.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020200.xhp\" name=\"Font Color\"\>Font Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020200.xhp\" name=\"Font Color\">Yazı Tipi Rengi</link>"
 
 #: source/text/simpress/main0203.xhp#hd_id3154645.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Character\">Karakter</link>"
 
 #: source/text/simpress/main0203.xhp#hd_id3149984.6
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\">Paragraf</link>"
 
 #: source/text/simpress/main0203.xhp#hd_id3153619.7
+#, fuzzy
 msgid  "\<switchinline select=\"appl\"\>\<caseinline select=\"IMPRESS\"\>\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering Symbols\"\>Numbering Symbols\</link\>\</caseinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"appl\"><caseinline select=\"IMPRESS\"><link href=\"text/shared/01/06050000.xhp\" name=\"Numbering Symbols\">Numaralama Simgeleri</link></caseinline></switchinline>"
 
 #: source/text/simpress/main0203.xhp#hd_id0122200903104143
 #, fuzzy
@@ -11897,8 +11686,9 @@ msgid  "Increase Font"
 msgstr "Font u Büyüt"
 
 #: source/text/simpress/main0203.xhp#par_id0122200903104255
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Increases the font size of the selected text.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Seçili metnin font ebatını büyütür.</ahelp>"
 
 #: source/text/simpress/main0203.xhp#hd_id0122200903104228
 #, fuzzy
@@ -11906,8 +11696,9 @@ msgid  "Reduce Font"
 msgstr "Font u Küçült"
 
 #: source/text/simpress/main0203.xhp#par_id0122200903104247
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Reduces the font size of the selected text.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Seçili metindeki font ebatını küçültür.</ahelp>"
 
 #: source/text/simpress/main0204.xhp#tit
 #, fuzzy
@@ -11915,12 +11706,14 @@ msgid  "Slide View Bar"
 msgstr "Slayt Görünüm Çubuğu"
 
 #: source/text/simpress/main0204.xhp#hd_id3150010.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0204.xhp\" name=\"Slide View Bar\"\>Slide View Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0204.xhp\" name=\"Slide View Bar\">Slayt Görünüm Çubuğu</link>"
 
 #: source/text/simpress/main0204.xhp#par_id3146971.2
+#, fuzzy
 msgid  "\<ahelp hid=\"dummy\"\>The \<emph\>Slide View\</emph\> bar opens with the Slide Sorter view.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"dummy\">Slayt sıralayıcı görünümü ile birlikte, <emph>Slayt Görünümü</emph> araç çubuğunu açar.</ahelp>"
 
 #: source/text/simpress/main0206.xhp#tit
 #, fuzzy
@@ -11928,8 +11721,9 @@ msgid  "Status Bar"
 msgstr "Durum Çubuğu"
 
 #: source/text/simpress/main0206.xhp#hd_id3153768.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0206.xhp\" name=\"Status Bar\"\>Status Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0206.xhp\" name=\"Status Bar\">Durum Çubuğu</link>"
 
 #: source/text/simpress/main0206.xhp#par_id3154020.2
 #, fuzzy
@@ -11942,12 +11736,14 @@ msgid  "Rulers"
 msgstr "Cetveller"
 
 #: source/text/simpress/main0209.xhp#bm_id3153191
+#, fuzzy
 msgid  "\<bookmark_value\>rulers; in presentations\</bookmark_value\>\<bookmark_value\>origin of rulers\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>cetveller; sunumlarda</bookmark_value><bookmark_value>cetvellerin kaynağı</bookmark_value>"
 
 #: source/text/simpress/main0209.xhp#hd_id3153191.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0209.xhp\" name=\"Rulers\"\>Rulers\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0209.xhp\" name=\"Rulers\">Cetveller</link>"
 
 #: source/text/simpress/main0209.xhp#par_id3149666.2
 #, fuzzy
@@ -11965,12 +11761,14 @@ msgid  "When you select a text object on a slide, indents and tabs are displayed
 msgstr "Bir slayt üzerinde metin nesnesi seçtiğiniz zaman, girintiler ve sekmeler cetvel üzerinde görüntülenir. Metin nesnesi girintisi veya sekmesini değiştirmek için, bir girinti veya sekme işaretini cetvel üzerinde yeni konuma sürükleyin."
 
 #: source/text/simpress/main0209.xhp#par_id3150253.7
+#, fuzzy
 msgid  "You can also drag a \<link href=\"text/simpress/01/04030000.xhp\" name=\"snap line\"\>snap line\</link\> from a ruler to help you align objects on your slide. To insert a snap line using a ruler, drag the edge of a ruler into the slide."
-msgstr ""
+msgstr "Slaytınızdaki nesneleri hizalamanıza yardım eden, bir cetvelden slaytınıza <link href=\"text/simpress/01/04030000.xhp\" name=\"snap line\">kavrama çizgisi</link> sürükleyebilirsiniz. Cetveli kullanarak bir kopma çizgisi eklemek için, cetvelin kenarını slayt içine sürükleyin."
 
 #: source/text/simpress/main0209.xhp#par_id3153820.3
+#, fuzzy
 msgid  "To show or hide the rulers, choose \<link href=\"text/simpress/01/03060000.xhp\" name=\"View - Rulers\"\>\<emph\>View - Rulers\</emph\>\</link\>. "
-msgstr ""
+msgstr "Cetvelleri göstermek ve gizlemek için, <link href=\"text/simpress/01/03060000.xhp\" name=\"View - Rulers\"><emph>Görünüm - Cetvel</emph></link> menüsünü seçin. "
 
 #: source/text/simpress/main0209.xhp#par_id3148609.9
 #, fuzzy
@@ -11993,12 +11791,14 @@ msgid  "Drawing Bar"
 msgstr "Çizim Çubuğu"
 
 #: source/text/simpress/main0210.xhp#hd_id3150342.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0210.xhp\" name=\"Drawing Bar\">Çizim Çubuğu</link>"
 
 #: source/text/simpress/main0210.xhp#par_id3150202.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>The \<emph\>Drawing\</emph\> bar contains frequently used editing tools. Click the arrow next to an icon to open a toolbar that contains additional commands.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph> Anahat Görünümü</emph>'nde, Anahat Araç çubuğu sıkça kullanılan düzenleme araçlarını barındırır.</ahelp> Simgeyle ilgili ek komutları içeren araç çubuğunu açmak için, simgeye bitişik aşağı okuna tıklayın."
 
 #: source/text/simpress/main0210.xhp#par_id31502029
 #, fuzzy
@@ -12011,8 +11811,9 @@ msgid  "Select"
 msgstr "Seçim"
 
 #: source/text/simpress/main0210.xhp#par_id3148488.4
+#, fuzzy
 msgid  "To select an object on the current slide, click the \<emph\>Select\</emph\> tool (white arrow) on the Drawing bar, and then click the object."
-msgstr ""
+msgstr "Geçerli slayttaki bir nesneyi seçmek için, Çizim çubuğundaki <emph>Seçim</emph> aracına (beyaz ok) tıklayın ve sonra nesnenin üzerine tıklayın"
 
 #: source/text/simpress/main0210.xhp#par_id3148610.5
 #, fuzzy
@@ -12020,8 +11821,9 @@ msgid  "To select more than one object, hold down Shift while you click."
 msgstr "Birden fazla nesne seçmek için, nesne üzerine tıklarken Shift tuşuna basılı tutun."
 
 #: source/text/simpress/main0210.xhp#par_id3148699.6
+#, fuzzy
 msgid  "To select an object that is behind another object, hold \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>, and then click the object. To select the next underlying object in the stacking, hold \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>, and then click again. To return the selection to the previously selected object, hold down Shift + \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>, and then click."
-msgstr ""
+msgstr "Bir nesnenin arkasında olan başka bir nesneyi seçmek için, <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> tuşuna basın, ve sonra nesneyi tıklayın. Alt katmanda yatan sonraki nesneyi seçmek için, <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> tuşuna basın, ve sonra nesneyi tekrar tıklayın. Bir önce seçilmiş olan nesneye geri dönmek için, Shift + <switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> tuşuna basın, ve sonra nesneyi tıklayın."
 
 #: source/text/simpress/main0210.xhp#par_id3154651.7
 #, fuzzy
@@ -12034,8 +11836,9 @@ msgid  "To remove a selection, click anywhere outside the selected object, or pr
 msgstr "Bir seçimi kaldırmak için, seçili nesnenin dışındaki herhangi bir alana tıklayın, veya Escape tuşuna basın."
 
 #: source/text/simpress/main0210.xhp#par_idN106B0
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10060000.xhp\">Dikdörtgen</link>"
 
 #: source/text/simpress/main0210.xhp#par_idN106C0
 #, fuzzy
@@ -12043,8 +11846,9 @@ msgid  "Draws a filled rectangle where you drag in the current document. Click w
 msgstr "Belgenizde sürüklediğiniz yere dolu bir dikdörtgen çizer. Dikdörtgenin köşesini yerleştirmek istediğiniz yere tıklayın ve istediğin boyuta kadar sürükleyin. Bir kare çizmek için, sürüklerken Shift tuşuna basılı tutun."
 
 #: source/text/simpress/main0210.xhp#par_idN106CD
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10070000.xhp\">Elips</link>"
 
 #: source/text/simpress/main0210.xhp#par_idN106DD
 #, fuzzy
@@ -12052,8 +11856,9 @@ msgid  "Draws a filled oval where you drag in the current document. Click where 
 msgstr "Belgenizde sürüklediğiniz yere dolu bir elips çizer. Elipsin köşesini yerleştirmek istediğiniz yere tıklayın ve istediğin boyuta kadar sürükleyin. Bir daire çizmek için, sürüklerken Shift tuşuna basılı tutun."
 
 #: source/text/simpress/main0210.xhp#par_idN106EA
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Metin</link>"
 
 #: source/text/simpress/main0210.xhp#par_idN106FA
 #, fuzzy
@@ -12061,8 +11866,9 @@ msgid  "Draws a text box where you click or drag in the current document. Click 
 msgstr "Tıkladığınız veya sürüklediğiniz yerde belgenize bir metin kutusu çizer. Belgede herhangi bir yere tıklayın ve metninizi yazın, veya yapıştırın."
 
 #: source/text/simpress/main0210.xhp#par_idN107C8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\"\>Lines and Arrows\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\">Çizgiler ve Oklar</link>"
 
 #: source/text/simpress/main0210.xhp#par_idN126D7
 #, fuzzy
@@ -12070,8 +11876,9 @@ msgid  "Opens the Arrows toolbar to insert lines and arrows."
 msgstr "Çizgi ve Ok eklemek için Ok araç çubuğu açılır."
 
 #: source/text/simpress/main0210.xhp#par_idN10770
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Points\">Noktalar</link>"
 
 #: source/text/simpress/main0210.xhp#par_idN10780
 #, fuzzy
@@ -12079,8 +11886,9 @@ msgid  "Enables you to edit points on your drawing."
 msgstr "Çiziminizde noktaları düzenleyebilmenize imkan tanır."
 
 #: source/text/simpress/main0210.xhp#par_idN10783
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\">Yapışma Noktaları</link>"
 
 #: source/text/simpress/main0210.xhp#par_idN10793
 #, fuzzy
@@ -12088,12 +11896,14 @@ msgid  "Enables you to edit glue points on your drawing."
 msgstr "Çiziminizde yapışma noktalarını düzenleyebilmenize imkan tanır."
 
 #: source/text/simpress/main0210.xhp#par_idN10803
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"From File\">Dosyadan</link>"
 
 #: source/text/simpress/main0210.xhp#hd_id3153078.8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10030000.xhp\" name=\"Rotate\"\>Rotate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030000.xhp\" name=\"Rotate\">Döndür</link>"
 
 #: source/text/simpress/main0210.xhp#par_id3154556.9
 #, fuzzy
@@ -12101,8 +11911,9 @@ msgid  "This tool is used to rotate the object."
 msgstr "Bu aracı nesneyi döndürmek için kullanabilirsiniz."
 
 #: source/text/simpress/main0210.xhp#par_idN107FF
+#, fuzzy
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">Çıkarma Açık/Kapalı</link>"
 
 #: source/text/simpress/main0210.xhp#par_idN1080F
 #, fuzzy
@@ -12110,8 +11921,9 @@ msgid  "Switches the 3D effects on and off for the selected objects."
 msgstr "Seçilmiş nesneler için 3D efektlerini açar veya kapatır."
 
 #: source/text/simpress/main0210.xhp#hd_id3145350.11
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/06070000.xhp\" name=\"Interaction\"\>Interaction\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/06070000.xhp\" name=\"Interaction\">Etkileşim</link>"
 
 #: source/text/simpress/main0211.xhp#tit
 #, fuzzy
@@ -12119,16 +11931,19 @@ msgid  "Outline Bar"
 msgstr "Anahat Çubuğu"
 
 #: source/text/simpress/main0211.xhp#hd_id3154013.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0211.xhp\" name=\"Outline Bar\"\>Outline Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0211.xhp\" name=\"Outline Bar\">Anahat Çubuğu</link>"
 
 #: source/text/simpress/main0211.xhp#par_id3145252.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>In\<emph\> Outline View\</emph\>, the Outline bar contains frequently used editing tools.\</ahelp\> Click the arrow next to an icon to open a toolbar that contains additional commands."
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph> Anahat Görünümü</emph>'nde, Anahat Araç çubuğu sıkça kullanılan düzenleme araçlarını barındırır.</ahelp> Simgeyle ilgili ek komutları içeren araç çubuğunu açmak için, simgeye bitişik aşağı okuna tıklayın."
 
 #: source/text/simpress/main0211.xhp#hd_id3153912.8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03130000.xhp\" name=\"Slide Show\"\>Slide Show\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03130000.xhp\" name=\"Slide Show\">Slayt Gösterisi</link>"
 
 #: source/text/simpress/main0212.xhp#tit
 #, fuzzy
@@ -12136,16 +11951,19 @@ msgid  "Slide Sorter Bar"
 msgstr "Slayt Sıralama Çubuğu"
 
 #: source/text/simpress/main0212.xhp#hd_id3149664.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0212.xhp\" name=\"Slide Sorter Bar\"\>Slide Sorter Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0212.xhp\" name=\"Slide Sorter Bar\">Slayt Sıralama Çubuğu</link>"
 
 #: source/text/simpress/main0212.xhp#par_id3146970.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>In\<emph\> Slide Sorter\</emph\> view, the \<emph\>Slide Sorter\</emph\> bar can be used.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph> Slayt Sıralayıcı</emph> görünümünde, <emph>Slayt Sıralayıcı</emph> araç çubuğu kullanılabilir.</ahelp>"
 
 #: source/text/simpress/main0212.xhp#hd_id3153711.8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/01/03130000.xhp\" name=\"Slide Show\"\>Slide Show\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/03130000.xhp\" name=\"Slide Show\">Slayt Gösterisi</link>"
 
 #: source/text/simpress/main0213.xhp#tit
 #, fuzzy
@@ -12153,48 +11971,59 @@ msgid  "Options Bar"
 msgstr "Seçenek Araç Çubuğu"
 
 #: source/text/simpress/main0213.xhp#hd_id3150012.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0213.xhp\" name=\"Options Bar\">Seçenek Çubuğu</link>"
 
 #: source/text/simpress/main0213.xhp#par_id3146971.2
+#, fuzzy
 msgid  "To display the \<emph\>Options Bar\</emph\>, choose \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "<emph>Seçenek Araç Çubuğu</emph>'nu görüntülemek için,  <emph>Görünüm - Araç Çubukları - Seçenekler</emph> menüsünü seçin."
 
 #: source/text/simpress/main0213.xhp#hd_id3148487.3
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\">Kılavuzu Göster</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3148700.4
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\">Taşırken Rehberler</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3149603.5
+#, fuzzy
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\">Izgaraya Uydur</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3143233.6
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\">Rehbere Uydur</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3146966.7
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\">Sayfa kenarlarına Uydur</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3149051.8
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\">Nesne Çerçevesine Uydur</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3150392.9
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\">Nesne Çerçevesine Uydur</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3156401.10
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\">Hızlı Düzenlemeye İzin Ver</link>"
 
 #: source/text/simpress/main0213.xhp#hd_id3145823.11
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\">Sadece Seçili Metin Alanı</link>"
 
 #: source/text/simpress/main0214.xhp#tit
 #, fuzzy
@@ -12202,12 +12031,14 @@ msgid  "Picture Bar"
 msgstr "Resim Çubuğu"
 
 #: source/text/simpress/main0214.xhp#hd_id3151245.1
+#, fuzzy
 msgid  "\<link href=\"text/simpress/main0214.xhp\" name=\"Picture Bar\"\>Picture Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/main0214.xhp\" name=\"Picture Bar\">Resim Çubuğu</link>"
 
 #: source/text/simpress/main0214.xhp#par_id3150543.2
+#, fuzzy
 msgid  "Use the \<emph\>Picture\</emph\> bar to set the color, contrast, and brightness options for the selected graphic object(s)."
-msgstr ""
+msgstr "Seçilmiş olan grafik nesnelerinin rengini, kontrastını, ve parlaklığını ayarlamak için <emph>Resim</emph> Araç çubuğunu kullanın."
 
 #: source/text/simpress/main0503.xhp#tit
 #, fuzzy
@@ -12215,8 +12046,9 @@ msgid  "$[officename] Impress Features"
 msgstr "$[officename] Impress Özellikleri"
 
 #: source/text/simpress/main0503.xhp#hd_id3146119.1
+#, fuzzy
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/simpress/main0503.xhp\" name=\"$[officename] Impress Features\"\>$[officename] Impress Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/simpress/main0503.xhp\" name=\"$[officename] Impress Features\">$[officename] Impress Özellikleri</link></variable>"
 
 #: source/text/simpress/main0503.xhp#par_id3151074.2
 #, fuzzy

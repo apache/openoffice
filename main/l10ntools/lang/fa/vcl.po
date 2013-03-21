@@ -215,8 +215,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
-msgstr ""
+msgstr "بار کردن مؤلفه‌ی (%s) ممکن نبود.\nلطفاً برنامه‌ی برپاسازی را با گزینه‌ی repair آغاز کنید."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -811,51 +812,41 @@ msgid  "Quit %PRODUCTNAME"
 msgstr "خروج %PRODUCTNAME"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "تأیید"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "انصراف"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "~بله"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "~خیر"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "~دوباره سعی شود"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~راهنما"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~بیشتر"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~بیشتر"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~نادیده گرفته شود"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "~قطع شود"

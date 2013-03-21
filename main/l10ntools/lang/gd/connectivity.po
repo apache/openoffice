@@ -389,7 +389,7 @@ msgstr "Cha do ghabh am faidhle $filename$ a luchdadh."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "Fhuaradh an teachdaireachd mearachd a leanas nuair a dh'fheuchadh ris an fhaidhle a luchdadh ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "Chaidh luach dùblaichte a lorg sa cholbh '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "Chaidh an colbh '$columnname$' a shònrachadh mar cholbh \"deicheach\" agus 's e $precision$ caractairean am meud as motha (le $scale$ àitichean deicheach).\n\nTha an luach \"$value$\" a chaidh a shònrachadh nas fhaide na àireamh de dh'figearan a tha ceadaichte."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "Tha feum air tionndadh KDE $major$.$minor$ no fear nas ùire gus inntrig
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "Tha an tionndadh de KDE a chaidh a lorg ro ùr. Tha fhios nach obraich am bathar seo ach le KDE suas gu tionndadh $major$.$minor$.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "Ma tha thu cinnteach gu bheil an tionndadh de KDE agad ag obair, feuch am macro Basic a leanas gus casg a chur air an sgrùdadh tionndaidh seo:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

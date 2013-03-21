@@ -445,7 +445,7 @@ msgstr "<wizard_name> loodud mall. Loomise kuupäev: <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Nõustaja käivitamine ei õnnestunud, kuna ei leitud mõningaid tähtsaid faile.\nKlõpsa algsete asukohtade taastamiseks 'Tööriistad - Sätted - %PRODUCTNAME - Asukohad' all nuppu 'Vaikeväärtused'.\nSeejärel käivita nõustaja uuesti."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Välja~d vormil"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Binaarväljad on alati vasakpoolsest loendist valitavad.\nVõimaluse korral interpreteeritakse neid piltidena."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Alamvormiks nimetatakse teise vormi sisse lisatud vormi.\nKasuta alamvorme tabelitest või päringutest üks-mitmele seosega andmete kuvamiseks."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Väljad vormil"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "Ühendus '<FIELDNAME1>' ja '<FIELDNAME2>' on valitud kaks korda.\nÜhendust võib kasutada ainult ühel korral."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Määra vormi nimi"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Vorm nimega '%FORMNAME' on juba olemas.\nPalun vali mõni teine nimi."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Välja ei saa lisada, kuna see ületaks andmebaasi tabeli maksimaalse v�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Nimi '%TABLENAME' on juba olemas.\nPalun sisesta mõni teine nimi."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Veebilehe loomise nõustaja"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "See veebinõustaja aitab avaldada dokumente Internetis.\n\nDokumendid teisendatakse sellisele kujule, et neid saab vaadata veebibrauseriga. Lisaks luuakse linkidega sisukord, mis võimaldab hõlpsamat ligipääsu dokumentidele. Veebinõustaja võimaldab muuta ka veebilehe paigutust ja kujundust.\n\nVeebis avaldatud dokumente saab hoida ajakohastena ning neid on alati võimalik lisada või eemaldada."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Eelvaade"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Valitud sätted kustutatakse.\n\nKas sa tõesti soovid neid sätteid kustutada? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "FTP-kataloogi '%FILENAME' loomine ei õnnestunud."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "FTP-kataloogi '%FILENAME' pole olemas.\nKas luua see kataloog kohe?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "ZIP-faili '%FILENAME' ei saa luua: sama nimega kataloog on juba olemas."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Kohaliku kataloogi '%FILENAME' loomine ei õnnestunud. \nPalun kontrolli oma kirjutusõigusi."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "Kohalikku kataloogi '%FILENAME' pole olemas. \nKas luua see kataloog kohe?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

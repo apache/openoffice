@@ -141,7 +141,7 @@ msgstr "Хүрээнүүд"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "Хүснэгтийн хүрээ ба дэвсгэрийн хэлбэрээс үл хамааран хүснэгтийг үргэлж \"<emph>prettytable\"</emph>-г экспортлоно. Вики дэх дүрслэл энгийн хүрээ ба бүдүүн бичигтэй толгойтой хүснэгтээр бууна."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Вики;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>өргөтгөлүүд;МедиаВики</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@-г хэрэглэснээр та идэвхтэй Бичээчийн бичвэр баримтыг МедиаВики серверт тавьж болно. Тавьсны дараа Викигийн бүх хэрэглэгч таны баримтыг унших боломжтой.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><item type=\"menuitem\">Файл - Илгээх - МедиаВики рүү</item>г сонгож идэвхтэй буй Бичээч баримтыг МедиаВики сервер рүү илгээнэ.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Жава ажиллах үеийн орчин 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">МедиаВики</link> сервер дээр дэмжигдсэн Вики бүртгэл"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@-г суулгаж байна"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "Та @WIKIEXTENSIONPRODUCTNAME@-г суулгахынхаа өмнө, StarOffice буюу OpenOffice.org Жава Ажиллах Үеийн орчин (JRE) хэрэглэж байгаа эсэхийг нягтална уу. JRE төлөвийг шалгахдаа та <item type=\"menuitem\">Хэрэгсэл - Тохиргоо -  StarOffice/OpenOffice.org - Жава</item> сонгоно уу. Мөн \"Жава ажиллах үеийн орчин хэрэглэх\" идэвхжсэн эсэхийг нягтлаад ямар нэг JRE-хувилбар сонголтын жагсаалтанд байгаа эсэхийг шалгана уу. Хэрэв JRE идэвхжээгүй байвал, та ямар нэг JRE 1.4 эсвэл хойшхи хувилбарыг идэвхжүүлээд StarOffice/OpenOffice.org-г шинээр эхлүүлнэ үү."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@-г суулгах"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Бичээчийн цонхноос <item type=\"menuitem\">Хэрэгсэл - Өргөтгөлийн удирдлага</item> сонгоно уу."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "StarOffice/StarSuite/OpenOffice.org-г хаана уу, мөн түрг�
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "Вики тохиргоог оруулахын тулд програмыг дахин ачаалаад, бичвэр баримт нээн <item type=\"menuitem\">Хэрэгсэл - Тохируулга - Интернет - МедиаВики</item>-г сонгоод доор буй  \"Викирүү холбогдох\"-г харна уу."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@-г устгах"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Бичээчийн цонхноос <item type=\"menuitem\">Хэрэгсэл - Өргөтгөлийн удирдлага</item> сонгоно уу."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "Вики рүү холбогдох"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "Санамж: Та хэрэглэгчийн нэр болон нууц үгээ StarOffice/OpenOffice.org-н бүх диалог тус бүрийн хувьд хадгалах боломжтой. Нууц үгс Мастер нууц үгийн тусламжтай хандах боломжтойгоор түлхүүрлэгдэн хадгалагдана. Мастер нууц үг хийхийг хүсвэл та <item type=\"menuitem\"> Хэрэгсэл - Тохиргоо - StarOffice/OpenOffice.org - Хамгаалалт</item>-г сонгоно уу."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "Санамж: Хэрвээ та вэбд итгэмжлэгч сервер хэрэглэн холбогддог бол <item type=\"menuitem\">Хэрэгсэл - Тохируулга - Интернет - Итгэмжлэгч</item>-д итгэмжлэгчийн мэдээллээ оруулаад програмыг дахин ачаална уу."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "Бичээч баримт нээгээд, <item type=\"menuitem\">Хэрэгсэл - Тохиргоо - Интернет - МедиаВики</item> сонгоно уу."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Тохируулга</link> диалогоос Нэмэх-г дар."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">МедиаВики</link> диалогт Викигийн бүртгэлийн мэдээллээ оруулна уу."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "Нууц үг хайрцагт өөрийн Вики бүртгэлий�
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "Та мөн нууц үгсээ тогтмол хадгалахыг хүсвэл \"Нууц үг хадгалах\"-г идэвхжүүлэх боломжтой. Хадгалагдсан бүх нууц үгс рүү хандахдаа Мастер нууц үг хэрэглэгдэнэ. Мастер нууц үг өгөхдөө, та <item type=\"menuitem\">Хэрэгсэл - Тохиргооо - StarOffice/OpenOffice.org - Хамгаалалт</item>-г сонгоно уу. Хэрэв мастер нууц үг өгөгдөөгүй бол \"Нууц үг хадгалах\" боломжгүй."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "Бичээч баримт нээнэ үү."
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "Вики хуудасны агуулгыг бичнэ үү. Та бичвэрийн хэлбэржилт, толгой, хөлийн тэмдэглэл болон өөр бусад хэлбэржилтүүдийг хэрэглэж болно.<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"> Дэмжигдсэн хэлбэржилтүүдийн жагсаалт</link>-г харна уу."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "<item type=\"menuitem\">Файл - Илгээх - МэдиаВики рүү</item> -г сонго."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">МедиаВики рүү илгээх</link> диалогт бичлэгийнхээ тохиргоог тодорхойл."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>МедиаВики сервер</emph>: Вики сонго."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>Гарчиг</emph>: Хуудасныхаа гарчигийг оруул. Байгаа файлын гарчгийг өгвөл тухайн байгаар баримттайгаар дарж бичнэ. Викид шинэ хуудас үүсгэхдээ шинэ гарчиг өгнө үү."
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>Дүгнэлт</emph>: Өөрийн хуудасанд бага хэмжээний, сайн дурын дүгнэлт оруул."
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>Бяцхан өөрчлөлт</emph>: Ижил гарчигтай хуудасны бяцхан өөрчлөлтийг сервер рүү илгээхийн тул энэ тэмдэглэх талбарыг идэвхжүүлнэ үү."
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>Вэб хөтчид харуулах</emph>: Энэ талбарыг хэрээслэвэл таны системийн вэб толилуурыг нээн, өргөж өгөгдсөн Вики хуудсыг харуулна."
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,27 +341,27 @@ msgstr "МедиаВики тохируулга"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "Та МедиаВики серверүүдийг нэмж, хасч болно.<item type=\"menuitem\"> Хэрэгсэл - Тохиргоо - Интернет - Медиа</item>-р диалог нээнэ. Өөрөөр, <item type=\"menuitem\">Хэрэгсэл - Өргөтгөлийн удирдлага</item>-г сонгож, @WIKIEXTENSIONPRODUCTNAME@-г сонгон Тохируулга товч дарна."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Нэмэх ийг дарж шинэ Вики сервер нэмнэ.<br/>Оруулгыг сонгоод Засах ыг дарвал бүртгэлийн тохиргоог засварлана.<br/> Жагсаалтаас оруулгыг устгах бол, оруулгыг сонгоод Устгах ыг дар.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Жагсаалтад шинэ бичлэг нэмэхдээ МедиаВики диалогыг нээнэ.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Сонгогдсон бичлэгийг засахдаа МэдиаВики диалогыг нээнэ.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Сонгогдсон оруулгыг жагсаалтаас устгана. </ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "Таныг Нэмэх эсвэл \"Засах\"-г дарахад <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"> МедиаВики</link> диалог нээгдэнэ."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,19 +377,19 @@ msgstr "МедиаВики бүртгэлээ нэмэх эсвэл засвар
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">http:// ээр эхэлсэн МедиаВики серверийн хаягийг (URL) оруулна уу</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">МедиаВики сервер дэх өөрийн хэрэглэгчийн нэрээ оруулна уу. Нуугдмал эрхээр бол хоосон орхи.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">МедиаВики сервер дэх өөрийн нууц үгээ оруулна уу. Нуугдмал эрхээр бол хоосон орхи.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Нууц үг тогтмол хадгалах бол идэвхжүүлнэ үү. Мастер нууц үг өгөгдөх ёстой ба, <item type=\"menuitem\">Хэрэгсэл - Тохиргоо - StarOffice/OpenOffice.org - Хамгаалалт</item> үзнэ үү.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "МедиаВики рүү илгээх диалогт идэвхтэй �
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Өөрийн баримтаа нийтлэхийг хүсч буй МедиаВики серверээ сонгоно уу. Нэмэх-ийг дарж жагсаалтад шинэ сервер нэмнэ.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Та Вики бичлэгийнхээ гарчгийг өгнө үү. Энэ таны  бичлэгийн үндсэн гарчиг болно. Шинэ бичлэгийн хувьд энэ Викид өмнө нь байхгүй гарчгийг өгөх ёстой. Хэрэв та хэдийнэ оршин буй гарчиг өгвөл тэр оршин байгаа бичлэгийг дарна.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">Та боломжтой бол нэг дүгнэлт эсвэл тайлбар хийнэ үү.</ahelp> <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> харна уу."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Бяцхан өөрчлөлт</emph>: <ahelp hid=\".\">Ижил гарчигтай хуудасны бяцхан өөрчлөлтийг сервер рүү илгээхийн тул энэ тэмдэглэх талбарыг идэвхжүүлнэ үү.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Вэб хөтөчид харуулах</emph>: <ahelp hid=\".\">Энэ хайрцгийг хэрээслэвэл таны системийн вэб толилуурыг нээн, өргөж өгөгдсөн Вики хуудсыг харуулна.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

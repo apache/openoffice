@@ -210,8 +210,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
-msgstr ""
+msgstr "Komponenta (%s) ne može biti učitana.\nMolimo, pokrenite instalaciju s opcijom popravka."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -313,12 +314,10 @@ msgid  "Print"
 msgstr "Štampaj"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "~Štampaj"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
-#, fuzzy
 msgid  "/ %n"
 msgstr "/ %n"
 
@@ -327,17 +326,14 @@ msgid  "No pages"
 msgstr ""
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
-#, fuzzy
 msgid  "Print to File..."
 msgstr "Odštampaj u datoteku..."
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
-#, fuzzy
 msgid  "Default printer"
 msgstr "Uobičajeni štampač"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
-#, fuzzy
 msgid  "Print preview"
 msgstr "Pregled za štampu"
 
@@ -347,62 +343,50 @@ msgid  "Page Layout"
 msgstr "Prikaz stranice"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "Raspored"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
-#, fuzzy
 msgid  "Pa~ges per sheet"
 msgstr "St~ranica po tabeli"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
-#, fuzzy
 msgid  "16"
 msgstr "16"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
-#, fuzzy
 msgid  "Custom"
 msgstr "Prilagođeno"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
-#, fuzzy
 msgid  "P~ages"
 msgstr "~Stranice"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr "o~d"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "~Rastojanje"
 
@@ -411,7 +395,6 @@ msgid  "between pages"
 msgstr ""
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Margin"
 msgstr "~Margina"
 
@@ -420,37 +403,30 @@ msgid  "to sheet border"
 msgstr ""
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Orientation"
 msgstr "~Orijentacija"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatski"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
-#, fuzzy
 msgid  "Portrait"
 msgstr "Uspravno"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
-#, fuzzy
 msgid  "Landscape"
 msgstr "Položeno"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
-#, fuzzy
 msgid  "Order"
 msgstr "Redoslijed"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
-#, fuzzy
 msgid  "left to right, then down"
 msgstr "slijeva na desno, zatim, dolje"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
-#, fuzzy
 msgid  "top to bottom, then right"
 msgstr "d vrha na dolje, zatim desno"
 
@@ -735,111 +711,89 @@ msgid  "<No selection possible>"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "~Undo"
 msgstr "~Poništi"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "I~sjeci"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "Kopir~aj"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "~Umetni"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select ~All"
 msgstr "Izaberi ~sve"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
-#, fuzzy
 msgid  "~Special Character..."
 msgstr "Po~seban znak..."
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
-#, fuzzy
 msgid  "Services"
 msgstr "Servisi"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
-#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "Sakrij %PRODUCTNAME"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
-#, fuzzy
 msgid  "Hide Others"
 msgstr "Sakrij druge"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
-#, fuzzy
 msgid  "Show All"
 msgstr "Prikaži sve"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
-#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "Napusti %PRODUCTNAME"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "U redu"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Odustani"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "~Da"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "~Ne"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "~Pokušaj ponovo"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Pomoć"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~Opširnije"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~Opširnije"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Ignoriši"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "~Prekini"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr ""
+msgstr "Textový dokument %productname% %formatversion%"
 
 #: source/config/fragments/filters/StarWriter_5_0_GlobalDocument_ui.xcu#StarWriter 5.0/GlobalDocument.UIName
 msgid  "StarWriter 5.0 Master Document"
@@ -81,7 +81,7 @@ msgstr "Šablona StarDraw 3.0"
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr ""
+msgstr "Hlavní dokument %productname% %formatversion%"
 
 #: source/config/fragments/filters/UOF_presentation_ui.xcu#UOF presentation.UIName
 msgid  "Unified Office Format presentation"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#impress_StarOffice_XML_Draw.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr ""
+msgstr "Kresba %productname% %formatversion% (%productname% Impress)"
 
 #: source/config/fragments/filters/writerglobal8_ui.xcu#writerglobal8.UIName
 msgid  "ODF Master Document"
@@ -165,7 +165,7 @@ msgstr "HTML dokument (hlavní dokument %productname%)"
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#writer_web_StarOffice_XML_Writer_Web_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr ""
+msgstr "HTML šablona %productname% %formatversion%"
 
 #: source/config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS Word 97 Vorlage.UIName
 msgid  "Microsoft Word 97/2000/XP Template"
@@ -173,7 +173,7 @@ msgstr "Šablona Microsoft Word 97/2000/XP"
 
 #: source/config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#draw_StarOffice_XML_Draw_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr ""
+msgstr "Šablona kresby %productname% %formatversion%"
 
 #: source/config/fragments/filters/writerweb8_writer_ui.xcu#writerweb8_writer.UIName
 msgid  "%productname% Text (%productname% Writer/Web)"
@@ -181,7 +181,7 @@ msgstr "Textový dokument %productname% (%productname% Writer/Web)"
 
 #: source/config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#calc_StarOffice_XML_Calc_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr ""
+msgstr "Šablona sešitu %productname% %formatversion%"
 
 #: source/config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF spreadsheet.UIName
 msgid  "Unified Office Format spreadsheet"
@@ -193,7 +193,7 @@ msgstr "Šablona StarImpress 5.0"
 
 #: source/config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#writer_StarOffice_XML_Writer_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr ""
+msgstr "Šablona textového dokumentu %productname% %formatversion%"
 
 #: source/config/fragments/filters/chart8_ui.xcu#chart8.UIName
 msgid  "ODF Chart"
@@ -341,11 +341,11 @@ msgstr "Textový dokument Unified Office Format "
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#writer_web_StarOffice_XML_Writer.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr ""
+msgstr "Textový dokument %productname% %formatversion% (%productname% Writer/Web)"
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#impress_StarOffice_XML_Impress_Template.UIName
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr ""
+msgstr "Šablona prezentace %productname% %formatversion%"
 
 #: source/config/fragments/filters/StarDraw_5_0_Vorlage__StarImpress__ui.xcu#StarDraw 5.0 Vorlage (StarImpress).UIName
 msgid  "StarDraw 5.0 Template (%productname% Impress)"
@@ -617,11 +617,11 @@ msgstr "Volby Macromedia Flash (SWF)"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\\n100: max. quality"
-msgstr ""
+msgstr "1: min. kvalita\n100: max. kvalita"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\\nas some are at a higher level!"
-msgstr ""
+msgstr "Varování: v level1 nelze importovat všechny EPS obrázky na stejnou nebo vyšší úroveň!"
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 msgid  "Export as PDF"
@@ -1361,7 +1361,7 @@ msgstr "Aplikace"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\\nfile type"
-msgstr ""
+msgstr "Jméno\ntypu souboru"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"

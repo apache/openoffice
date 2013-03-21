@@ -93,7 +93,7 @@ msgstr "Document în uz"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Fișierul document „$(ARG1)” este blocat pentru editare de către:\n\n$(ARG2)\n\nÎncercați din nou să salvați documentul mai târziu sau salvați o copie a documentului.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Vă rugăm să introduceți numele de utilizator și parola pentru „%2” pe %1 de aici."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "~Trimite"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Serverul '${HOST}' dorește să configureze unul sau mai multe cookie-uri. Dacă %PRODUCTNAME solicită ulterior un document de la URL corespunzând unei clase de cookie-uri configurate anterior, %PRODUCTNAME va trimite aceste informații către server. Aceasta permite recunoașterea stării unei aplicații WWW.\n\nUrmătoarele cookie-uri trebuie configurate:\n\n  "
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domeniu: ${DOMAIN}, Cale: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Primire cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME a salvat cookie-uri pentru serverul '${HOST}' care vor fi trimise la solicitarea documentului  ${PATH}.\nCookie-urile conțin informații care se referă la anumite clase URL. Ele sunt trimise de anumite servere la %PRODUCTNAME unde sunt salvate la accesarea anumitor documente. Dacă %PRODUCTNAME încarcă un document care, conform URL-ului, corespunde unei clase de cookie-uri recepționate anterior, %PRODUCTNAME va trimite aceste informații la server. Acest lucru permite serverului să țină evidența stării unei aplicații WWW, de exemplu pentru comerț on-line.\n\nUrmătoarele cookie-uri trebuie comnfigurate:\n\n "
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domeniu: ${DOMAIN}, Cale: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Document în uz"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Fișierul document „$(ARG1)” este blocat pentru editare de către:\n\n$(ARG2)\n\nDeschideți documentul numai pentru citire sau deschideți o copie a documentului pentru editare."
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -561,7 +561,7 @@ msgstr "Este disponibilă o actualizare de %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Acest document a fost creat cu o versiune mai noua de %PRODUCTNAME. Ar putea conține elemente nesuportate de versiunea pe care o rulați.\n\nApăsați „Actualizează acum...” pentru a rula actualizarea online și a obține ultima versiune de %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Documentul „$(ARG1)” este blocat de dumneavoastră pentru editare pe un alt sistem de la $(ARG2)\n\nDeschideți documentul numai pentru citire sau ignorați propriul blocaj și deschideți documentul pentru editare.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Documentul „$(ARG1)” este blocat de dumneavoastră pentru editare pe un alt sistem de la $(ARG2)\n\nÎnchideți documentul pe celălalt sistem și încercați încă odată să salvați sau ignorați propriul blocaj și salvați documentul curent.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

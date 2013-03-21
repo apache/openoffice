@@ -137,7 +137,7 @@ msgstr "Repetir"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "O %PRODUCTNAME não conseguiu guardar informações internas importantes devido a falta de espaço disponível no disco na seguinte localização:\n%PATH\n\nNão vai poder continuar a trabalhar com o %PRODUCTNAME sem atribuir espaço a essa localização.\n\nPrima o botão 'Repetir' após ter atribuído espaço em disco para tentar guardar os dados.\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "~Repor"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "Ocorreu um erro ao carregar os dados de configuração da interface do utilizador. A aplicação será terminada agora.\nTente reinstalar a aplicação."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "Ocorreu um erro ao carregar os dados de configuração da interface do utilizador. A aplicação será terminada agora.\nTente remover primeiro o seu perfil de utilizador para a aplicação."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "Ocorreu um erro ao carregar os dados de configuração da interface do utilizador. A aplicação será terminada agora.\nTente remover primeiro o seu perfil de utilizador para a aplicação ou tente reinstalar a aplicação."
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

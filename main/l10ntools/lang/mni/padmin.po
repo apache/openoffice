@@ -61,7 +61,7 @@ msgstr "ফোন্তশিং হাপচিল্লো"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "অদোম তশেংনা মসিগী ফোন্ত ফাইল অসি মথক্তা হন্না ইশিনবা পাম্বিবরা?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "অমত্তা নত্তে"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "ফোন্ততুগীদম ফোর্মেত ফাইল অমা (.afm শান্দোক্লবগা লোয়ন্না) ফংদ্রে\n%s\nমরম অসিনা, ফোন্ত অদু ইনস্তোল তৌবা ঙমদ্রে. খুদম ওইনা, ফোর্মেত ফাইলশিং ঘোস্তস্ক্রিপকা লোয়ন্না শেমগত্পা য়াগনি, অমসুং ফোন্ত ফাইলশিং নত্রগা মসিগী afm সবদাইরেক্তোরিগুম্না দাইরেক্তোরিতুমক্তদা থমগদবনি. "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ফোন্ত ফাইলদুগী মেত্রিক ফাইল\n   %s\nশিনবা ঙমদ্রে. ফোন্ত ইনস্তেল তৌররোই. "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ফোন্ত ফাইল\n  %s\nশিনবা ঙমদ্রে. ফোন্ত ইনস্তোল তৌররোই. "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "ফাইলদু মেত্রিক অমা য়াওদে. "
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "মেত্রিকতু\n\n%s\n\nমখাগী মরমসিনা ওন্থোকপা ঙমদ্রে:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "\"%s\" দ্রাইভরসি মতম খুদিংমক্ত
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "\"%s1\" দ্রাইভরসি লৌথোকপা ঙমদ্রে. ফাইলসি লৌথোকপা ওইথোক্ত্রে\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

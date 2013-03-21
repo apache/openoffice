@@ -1169,7 +1169,7 @@ msgstr "Таны баримт Хаягийн өгөгдлийн сангийн �
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
-msgstr ""
+msgstr "Өгөгдлийн эх \\'%1\\' олдсонгүй. Тиймээс өгөгдлийн эх рүү холболт хийх боломжгүй байна.\n\nТа холболтын тохиргоогоо шалгана уу."
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
 msgid  "Check Connection Settings..."
@@ -2797,7 +2797,7 @@ msgstr "<Хэрэглэгчийн тохиргоо>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "Та өгөгдмөл хэвийн таарамжийн тохиргоог өөрчлөхийг хүсэж байна уу?\nЭнэ өөрчлөлт өгөгдмөл хэв бүхий бүх шинэ баримтуудад нөлөөлнө."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "Бичээс"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
-msgstr ""
+msgstr "Дараахыг оруулж байхад\nавтоматаар бичээс оруул:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3941,7 +3941,7 @@ msgstr "~Далд хуулбар"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Санамж:\nИмэйл хаягуудаа цэг таслалаар (;) тусгаарлана уу."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4309,7 +4309,7 @@ msgstr "Баримтыг засварлах"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Та одоо баримт үүсгэх эсвэл засварлах боломжтой. Өөрчлөлтүүд бүх цуврал захианы баримтуудад үйлчилнэ.\n\n'Баримтыг засварлах' дээр товшсоноор залуурчаас түр зуур гарна. Засварлалт дууссаны дараа жижиг цонхонд харагдах 'Цуврал захианы залуурч руу буцах' дээр товшин залуурч руу буцна."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -6609,7 +6609,7 @@ msgstr "Гүйлгэн үзэх..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Энэ диалогт та баримт дотроос өгөгдлийн сангийн талбараар хандаж буй өгөгдлийн сангуудын өөр өгөгдлийн сангаар орлуулж чадна. Та ажилбар тус бүрээр нэг л өөрчлөлтийг хийх боломжтой. Зүүн жагсааланд олон зэрэг сонголт боломжтой.\nТа өгөгдлийн сан сонгохдоо гүйлгэн үзэх товчийг ашиглаж болно."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10065,7 +10065,7 @@ msgstr "АвтоматХэлбэржүүлэлт"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
-msgstr ""
+msgstr "Автомат хэлбэржүүлэлт бүрэн дууслаа. \nТа бүх өөрчлөлтүүдийг зөвшөөрөх эсвэл татгалзаж болно.\nэсвэл тусгай өөрчлөлтүүдийг зөвшөөрөх эсвэл татгалзаж болно."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "Нийлбэр"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
-msgstr ""
+msgstr "Та хүчингүй нэр оруулжээ.\nХүссэн АвтоФорматыг үүсгэх боломжгүй. \nӨөр нэг хэрэглээд дахин оролдоно уу."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "~Эхний баганыг гарчигаар авах"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Хэрэв сонгосон нүднүүд хүссэн өгөгдлүүдийг тань агуулаагүй бол, одоо мужийг сонгоно уу.\n\nТа графикаар дүрслэхийг хүссэн нүднүүд бүхий багана эсвэл мөрийн тэмдэглээсээ сонгоно уу."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -11137,11 +11137,11 @@ msgstr "[Систем]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\\nin a different document"
-msgstr ""
+msgstr "Интерактив зөв бичгийн дүрэм шалгагч өөр\nбаримтанд идэвхжсэн байна"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\\nin a different document"
-msgstr ""
+msgstr "Интерактив үг таслагч өөр баримтанд\nидэвхжсэн байна"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

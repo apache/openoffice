@@ -117,7 +117,7 @@ msgstr "ភាព​ផ្លាស់​​ប្តូរ​ចំពោះ​
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
-msgstr ""
+msgstr "មិន​​អាច​​ចាប់​​ផ្តើម​ ​%PRODUCTNAME បាន​ទេ​ ដោយ​សារ​តែ​កំហុស​ ​ក្នុង​ការ​ចូល​​ដំណើរ​​ការ​ទិន្នន័យ​​កំណត់​​រចនា​​សម្ព័ន្ធ ​%PRODUCTNAME ។\n\n​សូម​​ទាក់​​ទង​អ្នក​​គ្រប់​​គ្រង​​ប្រព័ន្ធ​​របស់​​អ្នក ។"
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -145,15 +145,15 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
 msgid  "The path manager is not available.\\n"
-msgstr ""
+msgstr "មិន​មាន​កម្មវិធី​គ្រប់គ្រង​ផ្លូវ​ឡើយ ។\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "មិន​អាច​បញ្ចប់​ការ​ដំឡើង %PRODUCTNAME បាន​ឡើយ ដោយ​សារ​តែ​មាន​ទំហំ​ថាស​មិន​គ្រប់គ្រាន់ ។ សូម​ធ្វើ​ឲ្យ​មាន​ទំហំ​ទំនេរ​ខ្លះ នៅ​ក្នុង​ទីតាំង​ខាង​ក្រោម ហើយ​ចាប់ផ្ដើម %PRODUCTNAME ឡើង​វិញ ៖\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
-msgstr ""
+msgstr "មិន​អាច​ដំឡើង %PRODUCTNAME បាន​ឡើយ ដោយ​សារ​តែ​មិន​មាន​សិទ្ធិ​ចូលដំណើរការ ។ សូម​ប្រាកដ​ថា អ្នក​មាន​សិទ្ធិ​គ្រប់គ្រាន់​ដើម្បី​ចូលដំណើរការ​ទីតាំង​ខាង​ក្រោម ហើយ​ចាប់ផ្ដើម %PRODUCTNAME ឡើង​វិញ ៖\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -161,7 +161,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "អ្នក​ហៀប​នឹង​ដំឡើង​ផ្នែក​បន្ថែម \\'$NAME\\' កំណែ $NEW ។ កំណែ $DEPLOYED ថ្មី​ជាង គឺ​បាន​ដំឡើង​រួចហើយ ។\nចុច \\'យល់ព្រម\\' ដើម្បី​ជំនួស​ផ្នែក​បន្ថែម​ដែល​បាន​ដំឡើង ។\nចុច \\'បោះបង់\\' ដើម្បី​បញ្ឈប់​ការ​ដំឡើង ។"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -169,7 +169,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "អ្នក​ហៀប​នឹង​ដំឡើង​ផ្នែក​បន្ថែម \\'$NAME\\' កំណែ $NEW ។ កំណែ​នោះ ត្រូវ​បាន​ដំឡើង​រួចហើយ ។\nចុច \\'យល់ព្រម\\' ដើម្បី​ជំនួស​ផ្នែក​បន្ថែម​ដែល​បាន​ដំឡើង ។\nចុច \\'បោះបង់\\' ដើម្បី​បញ្ឈប់​ការ​ដំឡើង ។"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
@@ -177,7 +177,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "អ្នក​ហៀប​នឹង​ដំឡើង​ផ្នែក​បន្ថែម \\'$NAME\\' កំណែ $NEW ។ កំណែ​ដែល​ចាស់​ជាង $DEPLOYED ត្រូវ​បាន​ដំឡើង​រួចហើយ ។\nចុច \\'យល់ព្រម\\' ដើម្បី​ជំនួស​ផ្នែក​បន្ថែម​ដែល​បាន​ដំឡើង ។\nចុច \\'បោះបង់\\' ដើម្បី​បញ្ឈប់​ការ​ដំឡើង ។"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
 msgid  "System dependencies check"
@@ -185,7 +185,7 @@ msgstr "ការពិនិត្យ​មើល​ភាព​អាស្រ
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "មិនអាច​ដំឡើង​ពាក្យ​បន្ថែម​ដូច​តទៅនេះបានទេ\nភាព​អាស្រ័យ​ប្រព័ន្ធ មិនត្រូវបាន​បំពេញ​ពេញលេញ​ទេ ៖"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,7 +253,7 @@ msgstr "ចាកចេញ"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME ត្រូវ​បាន​ធ្វើ​បច្ចុប្បន្នភាព​​ទៅ​កំណែ​ថ្មី ។ ផ្នែក​បន្ថែម​របស់ %PRODUCTNAME មួយ​ចំនួន​មិន​ឆប​គ្នា​​ជា​មួយ​នឹង​កំណែ​នេះ​ទេ ហើយ​តម្រូវ​ឲ្យ​ធ្វើ​បច្ចុប្បន្នភាព​​មុន​នឹង​អាច​ប្រើ %PRODUCTNAME បាន ។\n\nកា​រធ្វើ​បច្ចុប្បន្នភាព​​ផ្នែកបន្ថែម​ដែល​បានចែករំលែក ​ត្រូវការ​សិទ្ធិជា​អ្នក​គ្រប់គ្រង ។ ទាន់ទង​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ​របស់​អ្នក ដើម្បី​ធ្វើ​បច្ចុប្បន្នភាព​​ផ្នែក​បន្ថែម​ដែល​បានចែករំលែក​​ដូច​ខាងក្រោម ៖"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
@@ -261,7 +261,7 @@ msgstr "មិនអាច​បើក​ផ្នែក​បន្ថែម​
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
-msgstr ""
+msgstr "ផ្នែក​បន្ថែម​នេះ​ត្រូវបានបិទ​ ពីព្រោះ​អ្នក​មិនបាន​ទទួលយក​អាជ្ញាប័ណ្ណ​នៅ​ឡើយ​ទេ ។\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -457,11 +457,11 @@ msgstr "ផ្នែក​បន្ថែម​មិន​អាច​ត្រ
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "កំណែ OpenOffice.org ដែល​ទាមទារ​មិន​ត្រូវ​គ្នា​ទេ ៖"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "អ្នកមាន​ OpenOffice.org %VERSION"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
 msgid  "browser based update"
@@ -485,7 +485,7 @@ msgstr "បើក​បច្ចុប្បន្នភាព"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
 msgid  "This update will be ignored.\\n"
-msgstr ""
+msgstr "បច្ចុប្បន្ន​ភាព​នេះ​នឹង​ត្រូវ​បាន​មិន​អើពើ ។\n"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
@@ -569,11 +569,11 @@ msgstr "មិនស្គាល់"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "ត្រូវកា​រផ្នែកបន្ថែម​យ៉ាង​ហោចណាស់ OpenOffice.org %VERSION"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "ផ្នែក​បន្ថែម​មិនគាំទ្រ​កំណែ​ធំជាង ៖ OpenOffice.org %VERSION ឡើយ"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
 msgid  "Enabling: "
@@ -637,11 +637,11 @@ msgstr "ជំនួយ"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
 msgid  "The extension cannot be installed because:\\n"
-msgstr ""
+msgstr "មិនអាច​ដំឡើង​ផ្នែក​បន្ថែម​បានទេ ព្រោះ ៖\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
-msgstr ""
+msgstr "ផ្នែកបន្ថែម​នឹង​មិន​ត្រូវ​បានដំឡើង​ទេ ដោយ​សារ​តែ​កំហុស​មួយ​បានកើតឡើង​នៅ​ក្នុង​​ឯកសារ​ជំនួយ ៖\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -737,11 +737,11 @@ msgstr "ការ​ចុះ​ឈ្មោះ"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ​នឹងណែ​នាំ​អ្នក​អំពី​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ, ការ​ផ្ទេរ​ទិន្នន័យ​របស់​អ្នកពី %OLD_VERSION និង​ការ​ចុះ​ឈ្មោះ​ %PRODUCTNAME ។\n\nចុច​ 'បន្ទាប់' ដើម្បី​បន្ត ។"
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "អ្នក​ជំនួយ​ការ​នេះ នឹង​នាំអ្នក​ចុះឈ្មោះ %PRODUCTNAME ។\n\nចុច 'បន្ទាប់' ដើម្បី​បន្ត ។"
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,7 +749,7 @@ msgstr "បញ្ចប់"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "ឥឡូវ​អ្នក​មាន​ឳកាស​ដើម្បី​គាំទ្រ​ និងចែកចាយ​ទៅ​ការ​រីកចម្រើន​យ៉ាង​រហ័ស​នៃ​សហគមន៍​ប្រភព​កូដ​ចំហ​នៅ​ក្នុង​ពិភព​លើក ។\n\nជួយ​យើង​ឲ្យ​បញ្ជាក់​ថា %PRODUCTNAME បាន​ទទួល​ការ​ចែករំលែក​ទីផ្សារ​ដ៍​សំខាន់​រួច​ហើយ​ដោយ​ចុះឈ្មោះ ។\n\nការ​ចុះឈ្មោះ​គឺ​ជា​ការ​ស្ម័គ្រ និង​គ្មាន​កាតព្វកិច្ច​ទេ ។"
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
@@ -765,7 +765,7 @@ msgstr "សូម​ស្វាគមន៍​មក​កាន់ %PRODUCTNAM
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ​នឹង​ណែ​នាំ​អ្នក​អំពី​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ​ និង​ ការ​ចុះ​ឈ្មោះ %PRODUCTNAME ។\n\nចុច 'បន្ទាប់' ដើម្បី​បន្ត ។"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -805,7 +805,7 @@ msgstr "ផ្ទេរ​ទិន្នន័យ​ផ្ទាល់ខ្ល
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "ទិន្នន័យ​ផ្ទាល់​ខ្លួន​ភាគ​ច្រើន​ពី​ការ​ដំឡើង​ %OLDPRODUCT អាច​ត្រូវ​បាន​ប្រើ​ម្តងទៀត​ក្នុង​ %PRODUCTNAME %PRODUCTVERSION ។\n\nបើ​អ្នក​មិន​ចង់​ប្រើ​ការ​កំណត់​ណា​មួយ​ម្ដង​ទៀត​នៅ​ក្នុង %PRODUCTNAME %PRODUCTVERSION សូម​ដោះ​ធីក​ពី​ប្រអប់ ។"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "ធ្វើ​បច្ចុប្បន្នភាព​​លើ​
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME ស្វែងរក​ដោយ​ស្វ័យ​ប្រវត្តិ​នូវ​ចន្លោះ​ពេល​ធម្មតា​សម្រាប់​កំណែ​ថ្មី ។\nនៅក្នុង​ការ​ធ្វើដូច្នេះ​ ការធ្វើ​បច្ចុប្បន្នភាព​​លើ​បណ្ដាញមិន​ផ្ទេរ​ទិន្នន័យ​ផ្ទាល់​ខ្លួនបាន​ទេ ។\nដ៏​រាប​ណាមាន​​កំណែ​ថ្មី​ អ្នក​នឹង​ត្រូវ​បាន​ជូនដំណឹង ។\n\nអ្នក​អាច​កំណត់​រចនាសម្ព័ន្ធ​លក្ខណៈ​ពិសេស​នេះ​នៅ ឧបករណ៍ / ជម្រើស... / %PRODUCTNAME / ធ្វើ​បច្ចុប្បន្នភាព​លើ​បណ្ដាញ ។"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -853,7 +853,7 @@ msgstr "ការ​ចុះ​ឈ្មោះ %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "ឥឡូវ​នេះ​អ្នក​មាន​ឱកាស​ដើម្បី​ចុះ​ឈ្មោះ​ជាអ្នក​ប្រើ %PRODUCTNAME ម្នាក់ ។ ការ​ចុះ​ឈ្មោះ​មិន​មែន​ជា​ការ​បង្ខិតបង្ខំ ដែល​អ្នក​ត្រូវ​តែ​ធ្វើ​នោះ​ទេ ។\n\nបើ​អ្នក​ចុះឈ្មោះ យើង​អាច​នឹង​ជូន​ដំណឹង​ដល់​អ្នក​អំពី​ការ​អភិវឌ្ឍន៍​ថ្មីៗ ដែល​ទាក់ទង​នឹង​ផលិតផល​នេះ ។"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "ខ្ញុំ​មិន​ចង់​ចុះ​ឈ្មោះ​
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "យើង​សង្ឃឹម​ថា​ អ្នក​នឹង​រីករាយ​ធ្វើការ​ជាមួយ %PRODUCTNAME ។\n\nចុច 'បញ្ចប់' ដើម្បី​ចេញ​ពី​អ្នក​ជំនួយការ ។"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"

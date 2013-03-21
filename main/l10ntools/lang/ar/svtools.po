@@ -601,7 +601,7 @@ msgstr "لا يمكن فتح الدليل"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \\nOverwrite ?"
-msgstr ""
+msgstr "الملف موجود بالفعل. \nتريد الكتابة عليه؟"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 msgid  "Up One Level"
@@ -1689,19 +1689,19 @@ msgstr "قاعدة بيانات"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "قالب جدول بيانات %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "قالب رسم %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "قالب عرض تقديمي %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "قالب مستند نصي %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
 msgid  "Local drive"
@@ -1733,31 +1733,31 @@ msgstr "عرض MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "صيغة %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "رسم %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION بياني"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "رسم %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "جدول بيانات %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "عرض %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION تقديمي"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "مستند نص %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "مستند %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION رئيسي"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
 msgid  "MathML Document"
@@ -2977,141 +2977,113 @@ msgid  "Haitian"
 msgstr "التاهيتية"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Display IDs"
 msgstr "عرض المُعرّفات"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "This is the input window"
 msgstr "هذا إطار الإدخال"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "نقل إلى أداة الاختبار"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show all windows"
 msgstr "إظهار كل الإطارات"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "إظهار الأسماء القصيرة (إن توفرت)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Always show long-name"
 msgstr "إظهار الاسم الطويل دائمًا"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
-#, fuzzy
 msgid  "DisplayHID"
 msgstr "DisplayHID"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
-#, fuzzy
 msgid  "Translation"
 msgstr "الترجمة"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "ت~حرير"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
-#, fuzzy
 msgid  "Original Text"
 msgstr "النص الأصلي"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "تعليق"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
-#, fuzzy
 msgid  "~Comment"
 msgstr "ت~عليق"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~تحديد"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "~Restore"
 msgstr "است~عادة"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "~قبول"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "ال~نص"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
-#, fuzzy
 msgid  "Inplace Translation"
 msgstr "ترجمة مكانيّة"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
-#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "ستخسر الترجمة. التقدم علي أية حال؟"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
-#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "عنصر التحكم لم يعد صالحًا. لا يمكن حفظ الترجمة."
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
-#, fuzzy
 msgid  "GPF occurred"
 msgstr "حدث GPF"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
-#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "HelpID لا تطابق UniqueID: "
 
 #: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.String.Text
-#, fuzzy
 msgid  "Tab Panel Scroll Button, backward"
 msgstr "زر تمرير لوحة الجدولة، للخلف"
 
 #: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.String.Text
-#, fuzzy
 msgid  "Tab Panel Scroll Button, forward"
 msgstr "زر تمرير لوحة الجدولة، للأمام"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
-#, fuzzy
 msgid  "Roadmap Skeleton Demo"
 msgstr "عرض هيكل المخطط"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "مرحبًا"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
-#, fuzzy
 msgid  "Prepare"
 msgstr "إعداد"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
-#, fuzzy
 msgid  "Setup"
 msgstr "إعداد"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
-#, fuzzy
 msgid  "Finish"
 msgstr "إنهاء"

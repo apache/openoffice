@@ -76,14 +76,14 @@ SPACE [ \t]*
 
 
 "\"" {
-  char buildValue[8000];
+  char c, buildValue[8000];
   int j, i, iLineCnt;
 
   // loop across multiple "..." and combine them, while keeping the source
-  for (j = -1, iLineCnt = i = 0; yytext[i] == '\"';)
+  for (j = -1, iLineCnt = i = 0; (c = yytext[i]) == '\"';)
   {
     // build current "..."
-    for (; (buildValue[++j] = yytext[++i] = yyinput()) != '\"';)
+    for (; (buildValue[++j] = yytext[++i] = c = yyinput()) != '\"';)
       if (yytext[i] == '\\')
         buildValue[++j] = yytext[++i] = yyinput();
     --j;
@@ -92,7 +92,7 @@ SPACE [ \t]*
       break;
 
     // skip rest of line
-    for (; (yytext[++i] = yyinput()) == ' ' || yytext[i] == '\t' || yytext[i] == '\n';)
+    for (; (c = yytext[++i] = yyinput()) == ' ' || yytext[i] == '\t' || yytext[i] == '\n';)
       if (yytext[i] == '\n')
         ++iLineCnt;
   }

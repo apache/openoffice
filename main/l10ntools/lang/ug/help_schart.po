@@ -37,11 +37,11 @@ msgstr "بۇ فۇنكسىيىنى زىيارەت قىلماقچى…"
 
 #: source/text/schart/00/00000004.xhp#hd_id3156023.1
 msgid  "\<variable id=\"wie\"\>To access this function...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">بۇ فۇنكسىيىنى زىيارەت قىلماقچى…</variable>"
 
 #: source/text/schart/00/00000004.xhp#par_id3150791.9
 msgid  "Choose \<emph\>View - Chart Data Table\</emph\> (Charts)"
-msgstr ""
+msgstr "<emph>كۆرۈش - دىئاگرامما سانلىق مەلۇمات جەدۋىلى</emph> (دىئاگرامما) تاللاڭ"
 
 #: source/text/schart/00/00000004.xhp#par_id3154686.55
 msgid  "On Formatting bar, click"
@@ -61,15 +61,15 @@ msgstr ""
 
 #: source/text/schart/00/00000004.xhp#par_id3149121.13
 msgid  "Choose \<emph\>Insert - Legend \</emph\>(Charts)"
-msgstr ""
+msgstr "<emph>قىستۇر - رەسىملىك مىسال </emph> نى تاللاڭ (دىئاگرامما)"
 
 #: source/text/schart/00/00000004.xhp#par_id3155444.56
 msgid  "Choose \<emph\>Format - Legend - Position\</emph\> tab (Charts)"
-msgstr ""
+msgstr "<emph>فورمات - رەسىملىك مىسال - ئورنى</emph>  بەتكۈچنى تاللاڭ (دىئاگرامما)"
 
 #: source/text/schart/00/00000004.xhp#par_id3156385.16
 msgid  "Choose \<emph\>Insert - Data Labels \</emph\>(Charts)"
-msgstr ""
+msgstr "<emph>قىستۇر - سانلىق مەلۇمات بەلگىسى </emph> نى تاللاڭ (دىئاگرامما)"
 
 #: source/text/schart/00/00000004.xhp#par_id3147341.68
 msgid  "Choose \<emph\>Format - Format Selection - Data Point/Data Series - Data Labels\</emph\> tab (for data series and data point) (Charts)"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/text/schart/00/00000004.xhp#par_id3150297.17
 msgid  "Choose \<emph\>Insert - Grids \</emph\>(Charts)"
-msgstr ""
+msgstr "<emph>قىستۇر - سېتكا </emph> نى تاللاڭ (دىئاگرامما)"
 
 #: source/text/schart/00/00000004.xhp#par_id3145789.58
 msgid  "On Formatting bar, click"
@@ -197,7 +197,7 @@ msgstr ""
 
 #: source/text/schart/00/00000004.xhp#par_id3155830.39
 msgid  "Choose \<emph\>Format - Chart Type \</emph\>(Charts)"
-msgstr ""
+msgstr "<emph>فورمات - دىئاگرامما تىپى </emph> نى تاللاڭ (دىئاگرامما)"
 
 #: source/text/schart/00/00000004.xhp#par_id3145140.59
 msgid  "On Formatting bar, click"
@@ -217,11 +217,11 @@ msgstr ""
 
 #: source/text/schart/00/00000004.xhp#par_id3150661.61
 msgid  "Choose \<emph\>Format - Arrangement \</emph\>(Charts)"
-msgstr ""
+msgstr "Choose <emph>فورمات - تەرتىپلە </emph> نى تاللاڭ (دىئاگرامما)"
 
 #: source/text/schart/00/00000004.xhp#par_id3153046.65
 msgid  "Open context menu - choose \<emph\>Arrangement \</emph\>(Charts)"
-msgstr ""
+msgstr "تىل مۇھىتى تىزىملىكىنى ئېچىپ - <emph>تەرتىپلە </emph> نى تاللاڭ (دىئاگرامما)"
 
 #: source/text/schart/00/00000004.xhp#par_id3151020
 msgid  "\<image id=\"img_id3150936\" src=\"res/commandimagelist/sc_toggletitle.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3150936\"\>Icon\</alt\>\</image\>"
@@ -265,11 +265,11 @@ msgstr "تىك سېتكا كۆرسەت/يوشۇر"
 
 #: source/text/schart/00/00000004.xhp#par_id9631641
 msgid  "Choose Insert - \<switchinline select=\"appl\"\>\<caseinline select=\"WRITER\"\> Object -\</caseinline\>\</switchinline\> Chart "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/00/00000004.xhp#par_id2985320
 msgid  "Choose Insert - \<switchinline select=\"appl\"\>\<caseinline select=\"WRITER\"\> Object -\</caseinline\>\</switchinline\> Chart "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/00/00000004.xhp#par_id1096530
 msgid  "Double-click a chart, then choose Format - Data Ranges"
@@ -993,7 +993,7 @@ msgstr "r2 = RSQ(Data_Y;Data_X)  "
 
 #: source/text/schart/01/04050100.xhp#par_id2083498
 msgid  "Besides m, b and r² the array function \<emph\>LINEST\</emph\> provides additional statistics for a regression analysis."
-msgstr ""
+msgstr "Besides m, b and r2 the array function <emph>LINEST</emph> provides additional statistics for a regression analysis."
 
 #: source/text/schart/01/04050100.xhp#hd_id2538834
 msgid  "The logarithm regression equation"
@@ -1066,8 +1066,9 @@ msgid  "The power regression equation"
 msgstr ""
 
 #: source/text/schart/01/04050100.xhp#par_id1857661
+#, fuzzy
 msgid  " For \<emph\>power regression\</emph\> curves a transformation to a linear model takes place. The power regression follows the equation \<item type=\"literal\"\>y=b*x^a\</item\> , which is transformed to \<item type=\"literal\"\>ln(y)=ln(b)+a*ln(x)\</item\>."
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/04050100.xhp#par_id8517105
 #, fuzzy
@@ -1114,8 +1115,9 @@ msgid  "The polynomial regression equation"
 msgstr ""
 
 #: source/text/schart/01/04050100.xhp#par_id8918729
+#, fuzzy
 msgid  "A \<emph\>polynomial regression\</emph\> curve cannot be added automatically. You must calculate this curve manually. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/04050100.xhp#par_id33875
 #, fuzzy
@@ -1123,8 +1125,9 @@ msgid  "Create a table with the columns x, x², x³, … , xⁿ, y up to the des
 msgstr "Create a table with the columns x, x2, x3, … , x?, y up to the desired degree n.  "
 
 #: source/text/schart/01/04050100.xhp#par_id8720053
+#, fuzzy
 msgid  "Use the formula \<item type=\"literal\"\>=LINEST(Data_Y,Data_X)\</item\> with the complete range x to xⁿ (without headings) as Data_X. "
-msgstr ""
+msgstr "Use the formula <item type=\"literal\">=LINEST(Data_Y,Data_X)</item> with the complete range x to x? (without headings) as Data_X.  "
 
 #: source/text/schart/01/04050100.xhp#par_id5068514
 #, fuzzy
@@ -1132,8 +1135,9 @@ msgid  "The first row of the LINEST output contains the coefficients of the regr
 msgstr "The first row of the LINEST output contains the coefficients of the regression polynomial, with the coefficient of x? at the leftmost position."
 
 #: source/text/schart/01/04050100.xhp#par_id8202154
+#, fuzzy
 msgid  "The first element of the third row of the LINEST output is the value of r². See the \<link href=\"text/scalc/01/04060107.xhp#Section8\"\>LINEST\</link\> function for details on proper use and an explanation of the other output parameters."
-msgstr ""
+msgstr "The first element of the third row of the LINEST output is the value of r2. See the <link href=\"text/scalc/01/04060107.xhp#Section8\">LINEST</link> function for details on proper use and an explanation of the other output parameters."
 
 #: source/text/schart/01/04050100.xhp#par_id4562211
 msgid  "\<link href=\"text/schart/01/04050000.xhp\"\>Y Error Bars tab page\</link\>"
@@ -2280,8 +2284,9 @@ msgid  "\<variable id=\"choose_chart_type\"\>\<link href=\"text/schart/01/choose
 msgstr ""
 
 #: source/text/schart/01/choose_chart_type.xhp#par_id7085787
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/choose_chart_type.xhp#hd_id6820886
 msgid  "The available chart types"
@@ -2538,8 +2543,9 @@ msgid  "If you mark or unmark a combination of check boxes that is not given by 
 msgstr ""
 
 #: source/text/schart/01/three_d_view.xhp#par_id1579027
+#, fuzzy
 msgid  "Mark \<emph\>Shading\</emph\> to use the Gouraud method for rendering the surface, otherwise a flat method is used. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/three_d_view.xhp#par_id5624561
 #, fuzzy
@@ -2657,8 +2663,9 @@ msgid  "\<variable id=\"type_area\"\>\<link href=\"text/schart/01/type_area.xhp\
 msgstr ""
 
 #: source/text/schart/01/type_area.xhp#par_id916776
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_area.xhp#hd_id961943
 #, fuzzy
@@ -2694,8 +2701,9 @@ msgid  "\<variable id=\"type_bubble\"\>\<link href=\"text/schart/01/type_bubble.
 msgstr ""
 
 #: source/text/schart/01/type_bubble.xhp#par_id40589
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type."
-msgstr ""
+msgstr " "
 
 #: source/text/schart/01/type_bubble.xhp#hd_id0526200904491284
 #, fuzzy
@@ -2724,8 +2732,9 @@ msgid  "\<variable id=\"type_column_bar\"\>\<link href=\"text/schart/01/type_col
 msgstr ""
 
 #: source/text/schart/01/type_column_bar.xhp#par_id3430585
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_column_bar.xhp#hd_id9826960
 #, fuzzy
@@ -2783,8 +2792,9 @@ msgid  "\<variable id=\"type_column_line\"\>\<link href=\"text/schart/01/type_co
 msgstr ""
 
 #: source/text/schart/01/type_column_line.xhp#par_id4818567
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_column_line.xhp#hd_id2451551
 #, fuzzy
@@ -2966,8 +2976,9 @@ msgid  "\<variable id=\"type_line\"\>\<link href=\"text/schart/01/type_line.xhp\
 msgstr ""
 
 #: source/text/schart/01/type_line.xhp#par_id389721
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_line.xhp#hd_id9826349
 #, fuzzy
@@ -3016,8 +3027,9 @@ msgid  "\<variable id=\"type_net\"\>\<link href=\"text/schart/01/type_net.xhp\"\
 msgstr ""
 
 #: source/text/schart/01/type_net.xhp#par_id40589
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_net.xhp#hd_id1391338
 #, fuzzy
@@ -3046,8 +3058,9 @@ msgid  "\<variable id=\"type_pie\"\>\<link href=\"text/schart/01/type_pie.xhp\"\
 msgstr ""
 
 #: source/text/schart/01/type_pie.xhp#par_id245979
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_pie.xhp#hd_id5799432
 #, fuzzy
@@ -3087,8 +3100,9 @@ msgid  "\<variable id=\"type_stock\"\>\<link href=\"text/schart/01/type_stock.xh
 msgstr ""
 
 #: source/text/schart/01/type_stock.xhp#par_id3516953
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_stock.xhp#hd_id5268410
 #, fuzzy
@@ -3523,8 +3537,9 @@ msgid  "\<variable id=\"type_xy\"\>\<link href=\"text/schart/01/type_xy.xhp\"\>C
 msgstr ""
 
 #: source/text/schart/01/type_xy.xhp#par_id2003845
+#, fuzzy
 msgid  "On the first page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose a chart type. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_xy.xhp#hd_id7757194
 #, fuzzy
@@ -3639,16 +3654,18 @@ msgid  "Click \<emph\>Properties\</emph\> to set details for the curves."
 msgstr ""
 
 #: source/text/schart/01/type_xy.xhp#par_id5989562
+#, fuzzy
 msgid  "\<emph\>Cubic Spline\</emph\> interpolates your data points with polynomials of degree 3. The transitions between the polynomial pieces are smooth, having the same slope and curvature. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/type_xy.xhp#par_id6128421
 msgid  "The \<emph\>Resolution\</emph\> determines how many line segments are calculated to draw a piece of polynomial between two data points. You can see the intermediate points if you click any data point."
 msgstr ""
 
 #: source/text/schart/01/type_xy.xhp#par_id9280373
+#, fuzzy
 msgid  "\<emph\>B-Spline\</emph\> uses the data points as control points to form a B-spline curve. Those curves are built piecewise from polynomials. The \<emph\>Data points order\</emph\> sets the degree k of these polynomials. "
-msgstr ""
+msgstr "  "
 
 #: source/text/schart/01/wiz_chart_elements.xhp#tit
 msgid  "Chart Wizard - Chart Elements"
@@ -3659,8 +3676,9 @@ msgid  "\<variable id=\"wiz_chart_elements\"\>\<link href=\"text/schart/01/wiz_c
 msgstr ""
 
 #: source/text/schart/01/wiz_chart_elements.xhp#par_id8746604
+#, fuzzy
 msgid  "On this page of the \<link href=\"text/schart/01/wiz_chart_type.xhp\"\>Chart Wizard\</link\> you can choose the chart elements to be shown."
-msgstr ""
+msgstr " "
 
 #: source/text/schart/01/wiz_chart_elements.xhp#par_id6437269
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter a title for your chart.\</ahelp\>"
@@ -4143,272 +4161,234 @@ msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Moves down the selected entry i
 msgstr ""
 
 #: source/text/schart/02/01190000.xhp#tit
-#, fuzzy
 msgid  "Data in Rows"
 msgstr "قۇر سانلىق مەلۇماتى"
 
 #: source/text/schart/02/01190000.xhp#hd_id3146976.1
 msgid  "\<link href=\"text/schart/02/01190000.xhp\" name=\"Data in Rows\"\>Data in Rows\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/02/01190000.xhp\" name=\"قۇر سانلىق مەلۇماتى\">قۇر سانلىق مەلۇماتى</link>"
 
 #: source/text/schart/02/01190000.xhp#par_id3154490.2
 msgid  "\<ahelp hid=\".uno:DataInRows\"\>Changes the arrangement of the chart data.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:DataInRows\">دىئاگرامما سانلىق مەلۇماتىنىڭ تەرتىپىنى ئۆزگەرت</ahelp>"
 
 #: source/text/schart/02/01190000.xhp#par_id3150751
 msgid  "\<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_datainrows.png\"\>\<alt id=\"alt_id3145643\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_datainrows.png\"><alt id=\"alt_id3145643\">سىنبەلگە</alt></image>"
 
 #: source/text/schart/02/01190000.xhp#par_id3154754.3
-#, fuzzy
 msgid  "Data in Rows"
 msgstr "قۇر سانلىق مەلۇماتى"
 
 #: source/text/schart/02/01200000.xhp#tit
-#, fuzzy
 msgid  "Data in Columns"
 msgstr "ستون سانلىق مەلۇماتى"
 
 #: source/text/schart/02/01200000.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/schart/02/01200000.xhp\" name=\"Data in Columns\"\>Data in Columns\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/02/01200000.xhp\" name=\"ستون سانلىق مەلۇماتى\">ستون سانلىق مەلۇماتى</link>"
 
 #: source/text/schart/02/01200000.xhp#par_id3145749.2
 msgid  "\<ahelp hid=\".uno:DataInColumns\"\>Changes the arrangement of the chart data.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:DataInColumns\">دىئاگرامما سانلىق مەلۇماتىنىڭ تەرتىپىنى ئۆزگەرت.</ahelp>"
 
 #: source/text/schart/02/01200000.xhp#par_id3149260
 msgid  "\<image id=\"img_id3149379\" src=\"res/commandimagelist/sc_dataincolumns.png\"\>\<alt id=\"alt_id3149379\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149379\" src=\"res/commandimagelist/sc_dataincolumns.png\"><alt id=\"alt_id3149379\">سىنبەلگە</alt></image>"
 
 #: source/text/schart/02/01200000.xhp#par_id3149377.3
-#, fuzzy
 msgid  "Data in Columns"
 msgstr "ستون سانلىق مەلۇماتى"
 
 #: source/text/schart/02/01210000.xhp#tit
-#, fuzzy
 msgid  "Scale Text"
 msgstr "تېكست كۆرسىتىش نىسبىتى"
 
 #: source/text/schart/02/01210000.xhp#bm_id3152996
 msgid  "\<bookmark_value\>text scaling in charts\</bookmark_value\>\<bookmark_value\>scaling; text in charts\</bookmark_value\>\<bookmark_value\>charts;scaling text\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>دىئاگراممىدىكى تېكستنىڭ كۆرسىتىش نىسبىتى</bookmark_value><bookmark_value>كۆرسىتىش نىسبىتى; دىئاگراممىدىكى تېكست</bookmark_value><bookmark_value>دىئاگرامما;تېكست كۆرسىتىش نىسبىتى</bookmark_value>"
 
 #: source/text/schart/02/01210000.xhp#hd_id3152996.1
 msgid  "\<link href=\"text/schart/02/01210000.xhp\" name=\"Scale Text\"\>Scale Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/02/01210000.xhp\" name=\"تېكست كۆرسىتىش نىسبىتى\">تېكست كۆرسىتىش نىسبىتى</link>"
 
 #: source/text/schart/02/01210000.xhp#par_id3144510.2
 msgid  "\<ahelp hid=\".uno:ScaleText\"\>Rescales the text in the chart when you change the size of the chart.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:ScaleText\">دىئاگرامما چوڭلۇقىنى ئۆزگەرتكەندىن كېيىن، دىئاگرامما تېكستىنىڭ نىسبىتىنى قايتا  تەڭشەيدۇ..</ahelp>"
 
 #: source/text/schart/02/01210000.xhp#par_id3150441
 msgid  "\<image id=\"img_id3159153\" src=\"res/commandimagelist/sc_scaletext.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3159153\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3159153\" src=\"res/commandimagelist/sc_scaletext.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3159153\">سىنبەلگە</alt></image>"
 
 #: source/text/schart/02/01210000.xhp#par_id3153190.3
-#, fuzzy
 msgid  "Scale Text"
 msgstr "تېكست كۆرسىتىش نىسبىتى"
 
 #: source/text/schart/02/01220000.xhp#tit
-#, fuzzy
 msgid  "Automatic Layout"
 msgstr "ئاپتوماتىك بەت شەكلى"
 
 #: source/text/schart/02/01220000.xhp#bm_id3150400
 msgid  "\<bookmark_value\>reorganizing charts\</bookmark_value\>\<bookmark_value\>charts; reorganizing\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>دىئاگراممىنى قايتىدىن گۇرۇپپىلا</bookmark_value><bookmark_value>دىئاگرامما; قايتا گۇرۇپپىلا</bookmark_value>"
 
 #: source/text/schart/02/01220000.xhp#hd_id3150400.1
 msgid  "\<link href=\"text/schart/02/01220000.xhp\" name=\"Automatic Layout\"\>Automatic Layout\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/02/01220000.xhp\" name=\"Automatic Layout\">ئاپتوماتىك بەت شەكلى</link>"
 
 #: source/text/schart/02/01220000.xhp#par_id3146120.2
 msgid  "\<ahelp hid=\".uno:NewArrangement\"\>Moves all chart elements to their default positions inside the current chart. This function does not alter the chart type or any other attributes other than the position of elements.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NewArrangement\">نۆۋەتتىكى دىئاگراممىدىكى بارلىق دىئاگرامما ئېلېمېنتلىرى كۆڭۈلدىكى ئورۇنغا يۆتكىلىدۇ.  بۇ ئىقتىدار دىئاگرامما تىپى ياكى باشقا خاسلىقنى ئۆزگەرتمەيدۇ، پەقەتلا ئېلېمېنتلارنىڭ ئورنىنى ئۆزگەرتىدۇ.</ahelp>"
 
 #: source/text/schart/02/01220000.xhp#par_id3150010
 msgid  "\<image id=\"img_id3152577\" src=\"res/commandimagelist/sc_newarrangement.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3152577\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3152577\" src=\"res/commandimagelist/sc_newarrangement.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3152577\">سىنبەلگە</alt></image>"
 
 #: source/text/schart/02/01220000.xhp#par_id3153143.3
-#, fuzzy
 msgid  "Automatic Layout"
 msgstr "ئاپتوماتىك بەت شەكلى"
 
 #: source/text/schart/02/02020000.xhp#tit
-#, fuzzy
 msgid  "Current Chart Type"
 msgstr "نۆۋەتتىكى دىئاگرامما تىپى"
 
 #: source/text/schart/02/02020000.xhp#hd_id3150791.1
 msgid  "\<link href=\"text/schart/02/02020000.xhp\" name=\"Current Chart Type\"\>Current Chart Type\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/02/02020000.xhp\" name=\"نۆۋەتتىكى دىئاگرامما تىپى\">نۆۋەتتىكى دىئاگرامما تىپى</link>"
 
 #: source/text/schart/02/02020000.xhp#par_id3145173.2
 msgid  "\<ahelp hid=\".uno:ContextType\" visibility=\"visible\"\>Displays the name of the current chart type.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:ContextType\" visibility=\"visible\">نۆۋەتتىكى دىئاگرامما تىپىنىڭ ئاتىنى كۆرسىتىدۇ.</ahelp>"
 
 #: source/text/schart/04/01020000.xhp#tit
-#, fuzzy
 msgid  "Shortcuts for Charts"
 msgstr "دىئاگرامما تېز كۇنۇپكىسى"
 
 #: source/text/schart/04/01020000.xhp#bm_id3150767
 msgid  "\<bookmark_value\>shortcut keys; charts\</bookmark_value\>\<bookmark_value\>charts; shortcuts\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>تېز كۇنۇپكا; دىئاگرامما</bookmark_value><bookmark_value>دىئاگرامما; تېز كۇنۇپكا</bookmark_value>"
 
 #: source/text/schart/04/01020000.xhp#hd_id3150767.1
 msgid  "\<variable id=\"Chart_keys\"\>\<link href=\"text/schart/04/01020000.xhp\" name=\"Shortcuts for Charts\"\>Shortcuts for Charts\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"Chart_keys\"><link href=\"text/schart/04/01020000.xhp\" name=\"دىئاگرامما تېز كۇنۇپكىسى\">دىئاگرامما تېز كۇنۇپكىسى</link></variable>"
 
 #: source/text/schart/04/01020000.xhp#par_id3155412.2
-#, fuzzy
 msgid  "You can use the following shortcut keys in charts."
 msgstr "دىئاگراممىدا تۆۋەندىكى تېز كۇنۇپكىلارنى ئىشلىتىشكە بولىدۇ."
 
 #: source/text/schart/04/01020000.xhp#par_id3159154.3
 msgid  "You can also use the general \<link href=\"text/shared/04/01010000.xhp\" name=\"shortcut keys\"\>shortcut keys\</link\> for $[officename]."
-msgstr ""
+msgstr "$[officename] دا ئادەتتىكى <link href=\"text/shared/04/01010000.xhp\" name=\"تېز كۇنۇپكا\">تېز كۇنۇپكا</link> ئىشلىتىشكە بولىدۇ."
 
 #: source/text/schart/04/01020000.xhp#hd_id3149262.4
-#, fuzzy
 msgid  "Shortcuts in Charts"
 msgstr "دىئاگراممىدىكى تېز كۇنۇپكىسى"
 
 #: source/text/schart/04/01020000.xhp#hd_id3151073.5
-#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "تېز كۇنۇپكا"
 
 #: source/text/schart/04/01020000.xhp#par_id3154490.6
-#, fuzzy
 msgid  "Results"
 msgstr "نەتىجىلەر"
 
 #: source/text/schart/04/01020000.xhp#hd_id3154729.7
-#, fuzzy
 msgid  "Tab"
 msgstr "جەدۋەل بەلگىسى"
 
 #: source/text/schart/04/01020000.xhp#par_id3154511.8
-#, fuzzy
 msgid  "Select next object."
 msgstr "كېيىنكى ئوبيېكتنى تاللا."
 
 #: source/text/schart/04/01020000.xhp#hd_id3155064.9
-#, fuzzy
 msgid  "Shift+Tab"
 msgstr "Shift+Tab"
 
 #: source/text/schart/04/01020000.xhp#par_id3149020.10
-#, fuzzy
 msgid  "Select previous object."
 msgstr "ئالدىنقى ئوبيېكتنى تاللا."
 
 #: source/text/schart/04/01020000.xhp#hd_id3155443.11
-#, fuzzy
 msgid  "Home"
 msgstr "Home"
 
 #: source/text/schart/04/01020000.xhp#par_id3156382.12
-#, fuzzy
 msgid  "Select first object."
 msgstr "تۇنجى ئوبيېكتنى تاللا."
 
 #: source/text/schart/04/01020000.xhp#hd_id3153963.13
-#, fuzzy
 msgid  "End"
 msgstr "تامام"
 
 #: source/text/schart/04/01020000.xhp#par_id3154702.14
-#, fuzzy
 msgid  "Select last object."
 msgstr "ئاخىرقى ئوبيېكتنى تاللا."
 
 #: source/text/schart/04/01020000.xhp#hd_id3143218.15
-#, fuzzy
 msgid  "Esc"
 msgstr "Esc"
 
 #: source/text/schart/04/01020000.xhp#par_id3147005.16
-#, fuzzy
 msgid  "Cancel selection"
 msgstr "تاللاشتىن ۋاز كەچ"
 
 #: source/text/schart/04/01020000.xhp#hd_id3159239.17
-#, fuzzy
 msgid  "up/down/left/right arrow"
 msgstr "ئۇستى/ئاستى/سول/ئوڭ يا ئوق"
 
 #: source/text/schart/04/01020000.xhp#par_id3149210.18
-#, fuzzy
 msgid  "Move the object in the direction of the arrow."
 msgstr "يا ئوق يۆنىلىشىدە ئوبيېكتنى يۆتكە"
 
 #: source/text/schart/04/01020000.xhp#hd_id3150364.19
-#, fuzzy
 msgid  "up/down/left/right arrow in pie charts"
 msgstr "دۈگىلەك دىئاگراممىدىكى ئۇستى/ئاستى/سول/ئوڭ يا ئوق"
 
 #: source/text/schart/04/01020000.xhp#par_id3150369.20
-#, fuzzy
 msgid  "Moves the selected pie segment in the direction of the arrow."
 msgstr "تاللانغان گۆشنان پارچىسىنى يا ئوق يۆنىلىشىدە يۆتكە"
 
 #: source/text/schart/04/01020000.xhp#hd_id3145584.21
-#, fuzzy
 msgid  "F2 in titles"
 msgstr "ماۋزۇدىكى F2"
 
 #: source/text/schart/04/01020000.xhp#par_id3154372.22
-#, fuzzy
 msgid  "Enter text input mode."
 msgstr "تېكست كىرگۈزۈش ھالىتىگە كىر."
 
 #: source/text/schart/04/01020000.xhp#hd_id3146980.23
-#, fuzzy
 msgid  "F3"
 msgstr "F3"
 
 #: source/text/schart/04/01020000.xhp#par_id3152988.24
-#, fuzzy
 msgid  "Open group so that you can edit the individual components (in legend and data series)."
 msgstr "ھەر قايسى بۆلەكلەرنى تەھرىرلەش ئۈچۈن گۇرۇپپا ئاچ (شەرتلىك بەلگە ۋە سانلىق مەلۇمات قاتارىدا)"
 
 #: source/text/schart/04/01020000.xhp#hd_id3153815.25
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/schart/04/01020000.xhp#par_id3153915.26
-#, fuzzy
 msgid  "Exit group (in legend and data series)."
 msgstr "گۇرۇپپىدىن چېكىن (شەرتلىك بەلگە ۋە سانلىق مەلۇمات قاتارى)"
 
 #: source/text/schart/04/01020000.xhp#hd_id3155269.27
-#, fuzzy
 msgid  "+/-"
 msgstr "+/-"
 
 #: source/text/schart/04/01020000.xhp#par_id3156016.28
-#, fuzzy
 msgid  "Reduce or enlarge the chart"
 msgstr "دىئاگراممىنى كىچىكلەت ياكى چوڭايت"
 
 #: source/text/schart/04/01020000.xhp#hd_id3150210.29
-#, fuzzy
 msgid  "+/- in pie charts"
 msgstr "گۆشنان دىئاگراممىدىكى +/- "
 
 #: source/text/schart/04/01020000.xhp#par_id3159204.30
-#, fuzzy
 msgid  "Moves the selected pie segment off or into the pie chart."
 msgstr "تاللىغان گۆشنان پارچىسىنى گۆشنان دىئاگراممىغا يۆتكەپ ئەكىر ياكى چىقار"
 
 #: source/text/schart/main0000.xhp#tit
-#, fuzzy
 msgid  "Charts in $[officename]"
 msgstr "$[officename] دىكى دىئاگرامما"
 
@@ -4418,34 +4398,29 @@ msgstr ""
 
 #: source/text/schart/main0000.xhp#hd_id3148664.1
 msgid  "\<variable id=\"chart_main\"\>\<link href=\"text/schart/main0000.xhp\" name=\"Charts in $[officename]\"\>Using Charts in %PRODUCTNAME\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"chart_main\"><link href=\"text/schart/main0000.xhp\" name=\" $[officename] دىكى دىئاگرامما\"> %PRODUCTNAME دا دىئاگرامما ئىشلەت</link></variable>"
 
 #: source/text/schart/main0000.xhp#par_id3154685.2
 msgid  "\<variable id=\"chart\"\>$[officename] lets you present data graphically in a chart, so that you can visually compare data series and view trends in the data. You can insert charts into spreadsheets, text documents, drawings, and presentations. \</variable\>"
-msgstr ""
+msgstr "<variable id=\"chart\">$[officename]  دىئاگرامما شەكلىدە سانلىق مەلۇماتنى كۆرسىتىپ، سانلىق مەلۇمات قاتارى ۋە سانلىق مەلۇماتنىڭ يۈزلىنىشىنى بىۋاسىتە سېلىشتۇرىدۇ. سىز دىئاگراممىنى ئېلېكترونلۇق جەدۋەل، تېكست پۈتۈكى، سىزمىچىلىق ۋە كۆرسەتمىگە قىستۇرالايسىز. </variable>"
 
 #: source/text/schart/main0000.xhp#hd_id3153143.5
-#, fuzzy
 msgid  "Chart Data"
 msgstr "دىئاگرامما سانلىق مەلۇماتى"
 
 #: source/text/schart/main0000.xhp#par_id5181432
-#, fuzzy
 msgid  "Charts can be based on the following data:"
 msgstr "دىئاگرامما تۆۋەندىكى سانلىق مەلۇماتلارنى ئاساس قىلىدۇ:"
 
 #: source/text/schart/main0000.xhp#par_id7787102
-#, fuzzy
 msgid  "Spreadsheet values from Calc cell ranges"
 msgstr "Calc كاتەكچە دائىرىسىدىكى ئېلېكترونلۇق جەدۋەل قىممىتى "
 
 #: source/text/schart/main0000.xhp#par_id7929929
-#, fuzzy
 msgid  "Cell values from a Writer table"
 msgstr "Writer جەدۋىلىنىڭ كاتەكچە قىممىتى"
 
 #: source/text/schart/main0000.xhp#par_id4727011
-#, fuzzy
 msgid  "Values that you enter in the Chart Data Table dialog (you can create these charts in Writer, Draw, or Impress, and you can copy and paste them also to Calc)"
 msgstr "دىئاگرامما سانلىق مەلۇمات جەدۋىلى سۆزلىشىش رامكىسىدا كىرگۈزگەن قىممەت (سىز Writer، Draw ياكى Impress دا بۇ دىئاگراممىلارنى قۇرالايسىز، ئۇلارنى Calc غا كۆچۈرۈپ چاپلىيالايسىز)"
 
@@ -4454,12 +4429,10 @@ msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Creates a chart in the current 
 msgstr ""
 
 #: source/text/schart/main0000.xhp#hd_id5345011
-#, fuzzy
 msgid  "To insert a chart"
 msgstr "دىئاگراممىدىن بىرنى قىستۇر"
 
 #: source/text/schart/main0000.xhp#hd_id5631580
-#, fuzzy
 msgid  "To edit a chart"
 msgstr "دىئاگرامما تەھرىر"
 
@@ -4476,7 +4449,6 @@ msgid  "Alignment, text wrap, outer borders, and more."
 msgstr ""
 
 #: source/text/schart/main0000.xhp#par_id7986693
-#, fuzzy
 msgid  "Double-click a chart to enter the chart edit mode:"
 msgstr "دىئاگرامما قوش چېكىلسە دىئاگرامما تەھرىرلەش ھالىتىگە كىرىدۇ:"
 
@@ -4489,7 +4461,6 @@ msgid  "Chart type, axes, titles, walls, grid, and more."
 msgstr ""
 
 #: source/text/schart/main0000.xhp#par_id8442335
-#, fuzzy
 msgid  "Double-click a chart element in chart edit mode:"
 msgstr "دىئاگرامما تەھرىرلەش ھالىتىدە مەلۇم دىئاگرامما ئېلېمېنتىنى قوش چېكىش:"
 
@@ -4514,12 +4485,10 @@ msgid  "Double-click any other chart element, or click the element and open the 
 msgstr ""
 
 #: source/text/schart/main0000.xhp#par_id8420667
-#, fuzzy
 msgid  "Click outside the chart to leave the current edit mode."
 msgstr "دىئاگرامما سىرتى يەككە چېكىلسە نۆۋەتتىكى تەھرىرلەش ھالىتىدىن چېكىنىدۇ."
 
 #: source/text/schart/main0000.xhp#par_id4923856
-#, fuzzy
 msgid  "To print a chart in high quality, you can export the chart to a PDF file and print that file."
 msgstr "يۇقىرى سۈپەتلىك دىئاگرامما بېسىشتا، دىئاگراممىنى PDF ھۆججىتى سۈپىتىدە چىقىرىپ ئاندىن بۇ ھۆججەتنى باسسىڭىز بولىدۇ."
 
@@ -4533,75 +4502,75 @@ msgstr ""
 
 #: source/text/schart/main0000.xhp#par_id081020090354489
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the selected title.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903405629
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the chart area.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903544867
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the chart wall.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903544952
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the chart floor.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903544927
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the chart legend.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903544949
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the selected axis.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903544984
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the selected data point.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545096
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the major grid.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545057
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the minor grid.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545095
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the data series.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545094
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the stock loss indicators.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545113
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the stock gain indicators.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545149
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the data labels.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545159
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the Y error bars.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id081020090354524
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the mean value line.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200903545274
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the trendline.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904063285
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the trendline equation.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904063252
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Formats the selected data label.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904063239
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens a dialog to insert chart titles.\</ahelp\>"
@@ -4621,78 +4590,77 @@ msgstr ""
 
 #: source/text/schart/main0000.xhp#par_id0810200904233160
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Inserts a major grid.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904233175
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Inserts a minor grid.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904233111
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Inserts data labels.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904233174
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Inserts the trendline equation and the coefficient of determination R².\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Inserts the trendline equation and the coefficient of determination R2.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904265639
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Inserts the coefficient of determination R² value.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Inserts the coefficient of determination R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362614
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Inserts a single data label.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362666
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the chart legend.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362777
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the selected axis.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362785
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the major grid.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362748
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the minor grid.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362778
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes all data labels.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362893
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the trendline equation.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362896
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the R² value.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904362827
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the selected data label.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904431376
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the mean value line.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id081020090443142
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Deletes the Y error bars.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904393229
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Resets the selected data point to default format.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0000.xhp#par_id0810200904393351
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Resets all data points to default format.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Deletes the R2 value.</ahelp>"
 
 #: source/text/schart/main0202.xhp#tit
-#, fuzzy
 msgid  "Formatting Bar"
 msgstr "فورمات ستونى"
 
@@ -4709,7 +4677,6 @@ msgid  "You can edit the formatting of a chart using the controls and icons on t
 msgstr ""
 
 #: source/text/schart/main0202.xhp#hd_id0810200902300436
-#, fuzzy
 msgid  "Select Chart Element"
 msgstr "سخېما ئېلېمېنتى تاللا"
 
@@ -4726,7 +4693,6 @@ msgid  "\<ahelp hid=\".\"\>Opens the properties dialog for the selected element.
 msgstr ""
 
 #: source/text/schart/main0202.xhp#hd_id0810200902300545
-#, fuzzy
 msgid  "Chart Type"
 msgstr "سخېما تىپى"
 
@@ -4743,7 +4709,6 @@ msgid  "\<ahelp hid=\".\"\>Opens the Data Table dialog where you can edit the ch
 msgstr ""
 
 #: source/text/schart/main0202.xhp#hd_id0810200902300672
-#, fuzzy
 msgid  "Horizontal Grid On/Off"
 msgstr "يانتۇ سېتكا كۆرسەت/يوشۇر"
 
@@ -4752,7 +4717,6 @@ msgid  "\<ahelp hid=\".\"\>The Horizontal Grid On/Off icon on the Formatting bar
 msgstr ""
 
 #: source/text/schart/main0202.xhp#hd_id0810200902300738
-#, fuzzy
 msgid  "Legend On/Off"
 msgstr "رەسىملىك مىسال كۆرسەت/يوشۇر"
 
@@ -4761,7 +4725,6 @@ msgid  "\<ahelp hid=\".\"\>To show or hide a legend, click Legend On/Off on the 
 msgstr ""
 
 #: source/text/schart/main0202.xhp#hd_id0810200902300785
-#, fuzzy
 msgid  "Scale Text"
 msgstr "تېكست كۆرسىتىش نىسبىتى"
 
@@ -4770,7 +4733,6 @@ msgid  "\<ahelp hid=\".\"\>Rescales the text in the chart when you change the si
 msgstr ""
 
 #: source/text/schart/main0202.xhp#hd_id081020090230087
-#, fuzzy
 msgid  "Automatic Layout"
 msgstr "ئاپتوماتىك بەت شەكلى"
 
@@ -4779,40 +4741,33 @@ msgid  "\<ahelp hid=\".\"\>Moves all chart elements to their default positions i
 msgstr ""
 
 #: source/text/schart/main0503.xhp#tit
-#, fuzzy
 msgid  "$[officename] Chart Features"
 msgstr "$[officename] دىئاگرامما ئىقتىدارى"
 
 #: source/text/schart/main0503.xhp#hd_id3150543.1
 msgid  "\<link href=\"text/schart/main0503.xhp\" name=\"$[officename] Chart Features\"\>$[officename] Chart Features\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/main0503.xhp\" name=\"$[officename] دىئاگرامما ئىقتىدارى\">$[officename] دىئاگرامما ئىقتىدارى</link>"
 
 #: source/text/schart/main0503.xhp#par_id3150868.2
-#, fuzzy
 msgid  "Charts allow you to present data so that it is easy to visualize."
 msgstr "دىئاگرامما ئارقىلىق ئىپادىلەنگەن سانلىق مەلۇماتلار تېخىمۇ ئوبرازلىق بولىدۇ."
 
 #: source/text/schart/main0503.xhp#par_id3146974.6
-#, fuzzy
 msgid  "You can create a chart from source data in a Calc spreadsheet or a Writer table. When the chart is embedded in the same document as the data, it stays linked to the data, so that the chart automatically updates when you change the source data."
 msgstr "سىز Calc ئېلېكترونلۇق جەدۋەل ياكى Writer جەدۋىلىدىكى ئەسلى سانلىق مەلۇماتتىن پايدىلىنىپ دىئاگرامما قۇرۇشقا بولىدۇ. دىئاگرامما سانلىق مەلۇمات سۈپىتىدە ئوخشاش بىر پۈتۈككە سىڭدۈرۈلگەندە، سانلىق مەلۇمات بىلەن بولغان ئۇلىنىش ساقلىنىدۇ، شۇڭلاشقا سانلىق مەلۇمات مەنبەسى ئۆزگەرگەندە دىئاگرامما ئۆزلۈكىدىن يېڭىلىنىدۇ."
 
 #: source/text/schart/main0503.xhp#hd_id3153143.7
-#, fuzzy
 msgid  "Chart Types"
 msgstr "دىئاگرامما تىپى"
 
 #: source/text/schart/main0503.xhp#par_id3151112.8
-#, fuzzy
 msgid  "Choose from a variety of 3D charts and 2D charts, such as bar charts, line charts, stock charts. You can change chart types with a few clicks of the mouse."
 msgstr "تۈۋرۈكسىمان دىئاگرامما، سۇنۇق سىزىقلىق دىئاگرامما، پاي چېكى دىئاگراممىسى قاتارلىق ھەر خىل 3D دىئاگرامما ۋە 2D دىئاگراممىدىن تاللىنىدۇ. سىز چاشقىنەكنى بىر قانچە قېتىم چېكىپلا دىئاگرامما تىپىنى ئۆزگەرتەلەيسىز."
 
 #: source/text/schart/main0503.xhp#hd_id3149665.10
-#, fuzzy
 msgid  "Individual Formatting"
 msgstr "يەككە فورماتلاش"
 
 #: source/text/schart/main0503.xhp#par_id3156441.11
-#, fuzzy
 msgid  "You can customize individual chart elements, such as axes, data labels, and legends, by right-clicking them in the chart, or with toolbar icons and menu commands."
 msgstr "سىز چاشقىنەكتە دىئاگرامما ئېلېمېنتى (مەسىلەن، ئوق، سانلىق مەلۇمات بەلگىسى ۋە سۈرەتلىك مىسال)نى ئوڭ چېكىپ ياكى قورال ستونىدىكى سىنبەلگە ياكى تىزىملىك بۇيرۇقىنى ئىشلىتىپ يەككە دىئاگرامما ئېلېمېنتىنى بەلگىلىيەلەيسىز."

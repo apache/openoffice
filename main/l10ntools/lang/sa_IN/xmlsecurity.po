@@ -53,19 +53,19 @@ msgstr "पुनःस्थापय"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "अत्यधिकम्।\nविश्वस्तसञ्चिकास्थानेभ्यः एव मैक्रोस् चालनम् अनुमोदितम्। हस्ताक्षरीकृतानि वा न वेति अनपेक्ष्य अन्यानि सर्वाणि मैक्रोस् निष्प्रकारितानि भवन्ति।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "अधिकम्।\nविश्वस्तमूलेभ्यः एव हस्ताक्षरीकृतमैक्रोस् चालनम् अनुमोदितम्। अहस्ताक्षरीकृतानि मैक्रोस् निष्प्रकारितानि भवन्ति।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "मध्यमम्।\nअविश्वस्तमूलेभ्यः मैक्रोस् निष्पादनात् पूर्वम् दृढीकरणम् आवश्यकम्।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "न्यूनम् (नानुशंसितम्) \nसर्वाणि मैक्रोस् दृढीकरणं विना निष्पादयिष्यन्ति। इयं स्थापना तदैव प्रयोक्तव्या यदा उद्घाटयिष्यमानानि लेख्यपत्राणि सुरक्षितानि सन्ति।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -73,7 +73,7 @@ msgstr "विश्वस्तप्रमाणपत्राणि"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "प्रति दत्तम्\tअनेन दत्तम्\tसमाप्तिदिनाङ्कः"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -157,7 +157,7 @@ msgstr "निम्नलिखितैः संवेष्टनमिद�
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tद्वारा हस्ताक्षरीकृतम्\tद्वारा डिजिटल् ID दत्तम्\tदिनाङ्कः"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr "प्रमाणपत्रं सत्यापयितुं न 
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "क्षेत्रं \tमूल्यम्"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -341,7 +341,7 @@ msgstr "हस्ताक्षरकरणाय उपयोजयितु�
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "प्रति दत्तम्\tअनेन दत्तम्\tसमाप्तिदिनाङ्कः"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

@@ -1377,7 +1377,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION을(를) 다운로드해 주셔서 감사합
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
-msgstr ""
+msgstr "설치 준비를 위해 설치 파일의 압축을 풀어 하드 디스크에 복사해야 합니다. 그런 뒤에 %PRODUCTNAME 설치가 자동으로 시작됩니다.\r\n\r\n계속하려면 [다음]을 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
 msgid  "Select Folder"
@@ -1829,7 +1829,7 @@ msgstr "취소"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
-msgstr ""
+msgstr "이 프로그램은 Apache Community 구성원이 지원하는 'Apache OpenOffice (incubating)' 프로젝트를 바탕으로 합니다. 참여자 목록은 http://www.openoffice.org/welcome/credits.html 에서 확인할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_125
 msgid  "&Next >"
@@ -2381,15 +2381,15 @@ msgstr "대상 폴더를 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
 msgid  "To continue, click \"Next\"."
-msgstr ""
+msgstr "계속하려면 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
 msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr ""
+msgstr "다른 버전을 선택하려면 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
+msgstr "다른 폴더를 선택하려면 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
 msgid  "Install [ProductName] to:"

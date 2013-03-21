@@ -210,8 +210,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
-msgstr ""
+msgstr "Klarte ikkje lasta inn komponenten (%s).\nDu må starta oppsettsprogrammet for å reparera installasjonen."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -684,116 +685,93 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
-#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<Kan ikkje merka>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "~Undo"
 msgstr "~Angra"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "Klipp ~ut"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~Kopier"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "~Lim inn"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Slett"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select ~All"
 msgstr "~Merk alt"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
-#, fuzzy
 msgid  "~Special Character..."
 msgstr "~Spesialteikn …"
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
-#, fuzzy
 msgid  "Services"
 msgstr "Tenester"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
-#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "Gøym %PRODUCTNAME"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
-#, fuzzy
 msgid  "Hide Others"
 msgstr "Gøym andre"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
-#, fuzzy
 msgid  "Show All"
 msgstr "Vis alle"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
-#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "Avslutt %PRODUCTNAME"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "OK"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Avbryt"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "~Ja"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "~Nei"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "~Prøv igjen"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Hjelp"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~Meir"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~Meir"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Ignorer"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "~Avbryt"

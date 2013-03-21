@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Tafadhali ingiza jina la mtumiaji na nywila kwa \"%2\" katika %1 hapa."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "Tuma"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Seva '${HOST}' inatamani kuseti Kuki moja au zaidi.\nKuki zina habari inayolenga matabaka fulani ya KISARA. Ikiwa %PRODUCTNAME baadae itaomba andiko yenye KISARA kinacholingana na tabaka la seti kuki lililopita, %PRODUCTNAME itatuma habari hizi kwa seva. Hii inaruhusu seva kutambua hali ya programu-tumizi WWW, mfano., wakati wa ununuzi dukani mkondoni.\n\nKuki zifuatazo lazima zisetiwe:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Kikoa: ${DOMAIN}, Njia: ${PATH}, Kuki: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Upokezi Kuki"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME ina kuki zilizohifadhiwa kwaajili ya seva '${HOST}' ambazo zitatumwa wakati wa kuomba andiko ${PATH}.\nKuki zina habari ambayo inalenga matabaka KISARA fulani. Yanatumwa na baadhi ya seva kwa %PRODUCTNAME ambapo yanahifadhiwa wakati maandiko fulani yakifikiwa. Ikiwa %PRODUCTNAME inapakia andiko ambalo, kutokana na KISARA, linalingana na tabaka la moja ya Kuki zilizopita zilizopokewa , %PRODUCTNAME itatuma habari hizi kwa seva huyo. Hii itamuezesha seva kufuatilia hali ya programu-tumizi WWW, mfano., wakati wa ununuzi dukani wa mkondoni.\n\nKuki zifuatazo lazima zisetiwe:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Kikoa: ${DOMAIN}, Njia: ${PATH}, Kuki: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"

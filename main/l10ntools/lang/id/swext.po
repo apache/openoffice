@@ -141,7 +141,7 @@ msgstr "Bingkai"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "Terlepas dari gaya tabel yang dimodifikasi untuk bingkai dan latar belakang, sebuah tabel selalu diekspor sebagai \"<emph>prettytable\"</emph>, yang dirender oleh mesin Wiki dengan bingkai sederhana dan tajuk dicetak tebal."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>ekstensi;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Dengan menggunakan @WIKIEXTENSIONPRODUCTNAME@ Anda dapat mengirim dokumen teks Writer Anda ke server MediaWiki, sehingga seluruh pengguna Wiki dapat membaca dokumen tersebut.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Pilih <item type=\"menuitem\">Berkas - Kirim - Ke MediaWiki</item> untuk mengirim dokumen Writer Anda ke server MediaWiki.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "Akun Wiki di server <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "Memasang @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "Sebelum Anda memasang @WIKIEXTENSIONPRODUCTNAME@, pastikan bahwa %PRODUCTNAME menggunakan Java Runtime Environment (JRE). Untuk memeriksa status JRE, pilih <item type=\"menuitem\">Perkakas - Opsi - %PRODUCTNAME - Java</item>. Pastikan bahwa \"Gunakan Java runtime environment\" tercentang dan folder Java runtime terpilih dalam kotak daftar besar. Jika tidak ada JRE yang aktif, maka aktifkan JRE 1.4 atau yang lebih baru dan mulai ulang %PRODUCTNAME."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "Untuk Memasang @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Di dalam jendela Writer, pilih <item type=\"menuitem\">Perkakas - Manajer Ekstensi</item>."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "Tutup %PRODUCTNAME, dan tutup juga Pelancar jika aktif."
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "Mulai ulang aplikasinya, buka sebuah dokumen teks, lalu pilih <item type=\"menuitem\">Perkakas - Opsi - Internet - MediaWiki</item> untuk mulai pengaturan Wiki Anda. Lihat \"Untuk Terhubung ke Wiki\" di bawah."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "Untuk Membuang @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "Dalam jendela Writer, pilih <item type=\"menuitem\">Perkakas - Manajer Ekstensi</item>."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "Untuk Terhubung ke Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "Catatan: Anda dapat menyimpan nama dan sandi Anda untuk seluruh dialog yang berkaitan dalam %PRODUCTNAME. Sandi tersebut akan disimpan dengan aman, di mana akses terhadapnya diatur menggunakan sandi utama. Untuk mengaktifkan sandi utama, pilih <item type=\"menuitem\">Perkakas - Opsi - %PRODUCTNAME - Keamanan</item>."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "Catatan: Jika Anda terhubung ke jaringan menggunakan server proksi, masukkan informasi proksi ke <item type=\"menuitem\">Perkakas - Opsi - Internet - Proksi</item>, lalu mulai ulang perangkat lunak ini."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "Buka dokumen Writer, dan pilih <item type=\"menuitem\">Perkakas - Opsi - Internet - MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "Dalam dialog <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Opsi</link>, klik Tambah."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "Dalam dialog <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>, masukkan informasi akun untuk Wiki tersebut."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "Dalam kotak Sandi, masukkan sandi untuk akun Wiki Anda, lalu klik Oke."
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "Anda bisa pula mengaktifkan \"Simpan sandi\" untuk menyimpan sandi antarsesi. Sebuah sandi utama digunakan untuk mengatur akses ke seluruh sandi yang tersimpan. Pilih <item type=\"menuitem\">Perkakas - Opsi - %PRODUCTNAME - Keamanan</item> untuk mengaktifkan sandi utama. \"Simpan sandi\" tidak tersedia ketika sandi utama tidak diaktifkan."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "Buka dokumen Writer."
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "Tulis isi halaman Wiki. Anda dapat menggunakan format seperti format teks, tajuk, catatan kaki, dan banyak lagi. Lihat <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">daftar format yang didukung</link>."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "Pilih <item type=\"menuitem\">Berkas - Kirim - Ke MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "Dalam dialog <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Kirim ke MediaWiki</link>, tentukan pengaturan untuk entri Anda."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>Server MediaWiki</emph>: Pilih Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>Judul</emph>: Ketik judul untuk halaman Anda. Ketik judul halaman yang telah ada untuk menimpa halaman tersebut dengan dokumen teks Anda. Ketik judul baru untuk membuat halaman baru pada Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>Ringkasan</emph>: Masukkan deskripsi singkat mengenai halaman Anda."
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>Ini adalah sunting minor</emph>: Centang kotak ini untuk menandai halaman yang dikirim sebagai hasils sunting minor terhadap halaman yang telah ada dengan judul yang sama."
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>Lihat di penelusur web</emph>: Centang kotak ini untuk membuka penelusur web di sistem Anda untuk melihat halaman Wiki yang diunggah."
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,27 +341,27 @@ msgstr "Opsi MediaWiki"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "Anda bisa menambah, menyunting, dan menghapus server MediaWiki. Buka dialog dengan <item type=\"menuitem\">Perkakas - Opsi - Internet - MediaWiki</item>. Alternatif lain, pilih <item type=\"menuitem\">Perkakas - Manajer Ekstensi </item>, pilih @WIKIEXTENSIONPRODUCTNAME@, dan klik tombol Opsi."
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Klik Tambah untuk menambahkan server Wiki baru.<br/>Pilih entri dan klik Sunting untuk mengubah pengaturan akun.<br/>Pilih entri dan klik Hapus untuk menghapus entri dari daftar.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Membuka dialog MediaWiki untuk menambah entri baru pada daftar.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Membuka dialog MediaWiki untuk menyunting entri yang dipilih.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Menghapus entri yang dipilih dari daftar.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "Ketika Anda menklik Tambah atau Sunting, dialog <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> akan terbuka."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,19 +377,19 @@ msgstr "Gunakan dialog MediaWiki untuk menambah atau mengubah pengaturan akun Me
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Masukkan URL server MediaWiki, dimulai dengan http://</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Masukkan nama pengguna Anda pada server MediaWiki. Biarkan kosong untuk akses anonim.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Masukkan sandi Anda pada server MediaWiki. Biarkan kosong untuk akses anonim.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Aktifkan untuk menyimpan sandi Anda antarsesi. Sandi utama harus diaktifkan, lihat <item type=\"menuitem\">Perkakas - Opsi - %PRODUCTNAME - Keamanan</item>.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "Pada dialog Kirim ke MediaWiki, tentukan pengaturan unggah Wiki milik An
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Pilih server MediaWiki di mana Anda hendak mempublikasikan dokumen Anda. Pilih Tambah untuk menambahkan server baru pada daftar.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Masukkan judul dari entri Wiki Anda. Ini adalah tajuk utama dari entri Wiki Anda. Untuk entri baru, judul harus unik pada Wiki. Jika Anda memasukkan judul yang sudah ada, dokumen yang Anda kirim akan menimpa entri Wiki yang sudah ada.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">Masukkan deskripsi singkat atau komentar apabila diingini.</ahelp> Lihat <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Ini adalah sunting minor</emph>: <ahelp hid=\".\">Centang kotak ini untuk menandai halaman yang dikirim sebagai hasil suntingan minor terhadap halaman yang telah ada dengan judul yang sama.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>Lihat di penelusur web</emph>: <ahelp hid=\".\">Centang kotak ini untuk membuka penelusur web di sistem Anda untuk menampilkan halaman Wiki yang diunggah.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

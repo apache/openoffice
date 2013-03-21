@@ -56,20 +56,24 @@ msgid  "Reset"
 msgstr "إعادة تعيين"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
+#, fuzzy
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "مرتفع ~جدًا.\nفقط وحدات الماكرو الموجودة في أماكن الملفات الموثوقة يسمح لها بالعمل. جميع وحدات الماكرو الأخرى، بغض النظر إذا كانت موقعة أو ليست كذلك، يتم تعطيلها."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
+#, fuzzy
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "م~رتفع.\nيسمح فقط للماكرو الموقعة من قبل المصادر الموثوقة بالعمل. الماكرو غير الموقّعة معطّلة."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
+#, fuzzy
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~متوسّط.\nالتوكيد مطلوب قبل تنفيذ وحدات الماكرو من المصادر غير الموثوقة."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
+#, fuzzy
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "م~نخفض (غير مستحسن).\nجميع وحدات الماكرو يتم تنفيذها دون توكيد. استخدم هذا الإعداد فقط إن كنت متأكدًا أن جميع المستندات التي سيتم فتحها آمنة."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 #, fuzzy
@@ -77,8 +81,9 @@ msgid  "Trusted certificates"
 msgstr "الشهادات الموثوقة"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
+#, fuzzy
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "تم الإصدار إلى\tتم الإصدار بواسطة\tتاريخ انتهاء الصلاحية"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 #, fuzzy
@@ -166,51 +171,42 @@ msgid  "Digital Signatures"
 msgstr "التواقيع الرقميّة"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FixedText.Text
-#, fuzzy
 msgid  "The following have signed the document content:"
 msgstr "وقعت الجهات التالية على محتويات المستند:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FixedText.Text
-#, fuzzy
 msgid  "The following have signed the document macro:"
 msgstr "وقعت الجهات التالية على ماكرو المستند:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FixedText.Text
-#, fuzzy
 msgid  "The following have signed this package:"
 msgstr "وقعت الجهات التالية على هذه الحزمة:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tوقّعها\tأصدر الهويّة الرقميّة\tالتاريخ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
-#, fuzzy
 msgid  "Valid signature"
 msgstr "توقيع صالح"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.String.Text
-#, fuzzy
 msgid  "Certificate could not be validated"
 msgstr "تعذر التحقق من صحة الشهادة"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
-#, fuzzy
 msgid  "The signatures in this document are invalid"
 msgstr "التواقيع الموجودة في هذا المستند غير صالحة"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
-#, fuzzy
 msgid  "The signatures in this document are valid"
 msgstr "التواقيع التي يحتويها هذا المستند صالحة"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FixedText.Text
-#, fuzzy
 msgid  "Not all parts of the document are signed"
 msgstr "ليست جميع أجزاء المستند موقعة"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FixedText.Text
-#, fuzzy
 msgid  "The signatures in this document are invalid"
 msgstr "التواقيع الموجودة في هذا المستند غير صالحة"
 
@@ -243,174 +239,141 @@ msgid  "Adding or removing a macro signature will remove all document signatures
 msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
-#, fuzzy
 msgid  "View Certificate"
 msgstr "عرض الشهادة"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "عام"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PageItem.Text
-#, fuzzy
 msgid  "Details"
 msgstr "تفاصيل"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PageItem.Text
-#, fuzzy
 msgid  "Certification Path"
 msgstr "مسار المُصادقة"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FixedText.Text
-#, fuzzy
 msgid  " Certificate Information"
 msgstr " معلومات الشهادة"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FixedText.Text
-#, fuzzy
 msgid  "This certificate is intended for the following purpose(s):"
 msgstr "يُقصد من الشهادة الأغراض التالية:"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FixedText.Text
-#, fuzzy
 msgid  "Issued to:"
 msgstr "أصدرت لـ:"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FixedText.Text
-#, fuzzy
 msgid  "Issued by:"
 msgstr "أصدرها:"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FixedText.Text
-#, fuzzy
 msgid  "Valid from %SDATE% to %EDATE%"
 msgstr "صالحة من تاريخ %SDATE% إلى %EDATE%"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
-#, fuzzy
 msgid  "You have a private key that corresponds to this certificate."
 msgstr "لديك مفتاح خاصّ يُقابل هذه الشهادة."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
-#, fuzzy
 msgid  "The certificate could not be validated."
 msgstr "تعذر التحقق من صحة الشهادة."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "حقل\tقيمة"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
-#, fuzzy
 msgid  "Version"
 msgstr "الإصدار"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.String.Text
-#, fuzzy
 msgid  "Serial Number"
 msgstr "الرقم التسلسلي"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.String.Text
-#, fuzzy
 msgid  "Signature Algorithm"
 msgstr "خوارزمية التوقيع"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.String.Text
-#, fuzzy
 msgid  "Issuer"
 msgstr "المُصدِر"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.String.Text
-#, fuzzy
 msgid  "Issuer Unique ID"
 msgstr "رقم مُعرّف المُصدِر"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.String.Text
-#, fuzzy
 msgid  "Valid From"
 msgstr "صالحة من"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.String.Text
-#, fuzzy
 msgid  "Valid to"
 msgstr "صالحة حتى"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.String.Text
-#, fuzzy
 msgid  "Subject"
 msgstr "الموضوع"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.String.Text
-#, fuzzy
 msgid  "Subject Unique ID"
 msgstr "رقم مُعرّف الموضوع"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.String.Text
-#, fuzzy
 msgid  "Subject Algorithm"
 msgstr "لوغاريتم الموضوع"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.String.Text
-#, fuzzy
 msgid  "Public Key"
 msgstr "المفتاح العام"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.String.Text
-#, fuzzy
 msgid  "Signature Algorithm"
 msgstr "خوارزمية التوقيع"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.String.Text
-#, fuzzy
 msgid  "Thumbprint SHA1"
 msgstr "بصمة SHA1"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.String.Text
-#, fuzzy
 msgid  "Thumbprint MD5"
 msgstr "بصمة MD5"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FixedText.Text
-#, fuzzy
 msgid  "Certification path"
 msgstr "مسار المُصادقة"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PushButton.Text
-#, fuzzy
 msgid  "View Certificate..."
 msgstr "عرض الشهادة..."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FixedText.Text
-#, fuzzy
 msgid  "Certification status"
 msgstr "وضع المُصادقة"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.String.Text
-#, fuzzy
 msgid  "The certificate is OK."
 msgstr "الشهادة صالحة."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.String.Text
-#, fuzzy
 msgid  "The certificate could not be validated."
 msgstr "تعذر التحقق من صحة الشهادة."
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.ModalDialog.Text
-#, fuzzy
 msgid  "Select Certificate"
 msgstr "اختيار الشهادة"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
-#, fuzzy
 msgid  "Select the certificate you want to use for signing"
 msgstr "اختر الشهادة التي تريد استخدامها للتوقيع"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr ""
+msgstr "تم الإصدار إلى\tتم الإصدار بواسطة\tتاريخ انتهاء الصلاحية"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
-#, fuzzy
 msgid  "View Certificate..."
 msgstr "عرض شهادة..."

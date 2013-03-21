@@ -61,11 +61,11 @@ msgstr "글자 없음"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "파일을 열려면 암호를 입력하십시오.: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "파일을 수정하려면 암호를 입력하십시오.: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "사용 중인 문서"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "문서 파일 '$(ARG1)'은(는) 다음 사용자가 편집 중입니다.\n\n$(ARG2)\n\n나중에 다시 문서를 저장하거나 문서의 사본으로 저장하십시오.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "서버로부터의 메시지:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "다음을 위한 사용자 이름과 암호 입력: \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "다음을 위한 사용자 이름과 암호 입력: \n%1에 대한 \"%2\" "
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "전송(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "'${HOST}'서버에서는 하나 이상의 쿠키를 설정해야 합니다.\n쿠키는 URL의 특정 클래스에 관련된 정보입니다. 차후에 %PRODUCTNAME 이(가) 이전에 수신한 쿠키의 클래스에 따른 URL에 상응하는 문서를 요구하면, %PRODUCTNAME은(는) 그 정보를 서버에 보내게 됩니다. 이렇게 해서 서버는 WWW 응용 프로그램의 상태(예를 들어 온라인 쇼핑에서 바구니에 넣은 물건)를 인식할 수 있습니다.\n\n다음과 같은 쿠키가 설정되어야 합니다:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "도메인: ${DOMAIN}, 경로: ${PATH}, 쿠키 : ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "쿠키 수신"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME에서 서버'$(HOST)'용으로 문서${PATH} 요구시 전송될 쿠키를 저장하였습니다.\n쿠키는 URL의 특정 클래스에 관련된 정보입니다. 쿠키는 특정 문서들을 불러 올 때 여러 서버들에 의해 %PRODUCTNAME에 보내져서 그곳에 저장됩니다. 차후에 %PRODUCTNAME이(가) 이전에 수신한 쿠키의 클래스에 따른 URL에 상응하는 문서를 요구하면 %PRODUCTNAME이(가）그 정보를 서버에 보내게 됩니다. 이렇게 해서 서버는 WWW 응용 프로그램의 상태(예를 들어 온라인 쇼핑에서　바구니에 넣은 물건)를 인식하게 됩니다.\n\n다음과 같은 쿠키가 설정되어야 합니다:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "도메인: ${DOMAIN}, 경로: ${PATH}, 쿠키: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "사용 중인 문서"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "문서 파일 '$(ARG1)'은(는) 다음 사용자가 편집 중입니다.\n\n$(ARG2)\n\n문서를 읽기 전용으로 열거나 문서의 사본을 열어 편집하십시오.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "다른 사용자가 문서를 변경함"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME 에서 편집을 위해 연 파일이 변경되었습니다. 저장을 하면 다른 사람이 변경한 내용을 덮어쓰기 할 것입니다.\n\n정말 저장하시겠습니까?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME 업데이트 가능"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "이 문서는 새 버전의 %PRODUCTNAME으로 작성되었습니다. 따라서 현재 버전에서지원하지 못하는 기능들을 포함하고 있을 수 있습니다.\n\n'지금 업데이트...' 버튼을 눌러 %PRODUCTNAME 최신 버전으로 업데이트하십시오."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "주의 : 설정한 마스터 암호를 기억하십시오. 마스터 암
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "문서 파일 '$(ARG1)'은(는) $(ARG2) 부터 다른 시스템에서 편집 중입니다.\n\n문서를 읽기 전용으로 열거나 문서의 사본을 열어 편집하십시오.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "열기(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "문서 파일 '$(ARG1)'은(는) $(ARG2) 부터 다른 시스템에서 편집 중입니다.\n\n다른 시스템의 문서를 닫거나, 저장을 다시 시도하십시오. 또는 파일 잠금을 무시하고 현재 문서를 저장하십시오.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

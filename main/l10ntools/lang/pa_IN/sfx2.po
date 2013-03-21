@@ -237,7 +237,7 @@ msgstr "ਫੰਕਸ਼ਨ ਪੱਟੀ"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr ""
+msgstr "ਖਾਸ ਸੰਰਚਨਾ ਵਿੱਚ ਗਲਤੀ ਆਈ ਹੈ।\nਆਪਣੇ ਪਰਸ਼ਾਸ਼ਕ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਜੀ।"
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -261,7 +261,7 @@ msgstr "ਸਿਸਟਮ ਚਾਲੂ ਹੋਣ ਦੌਰਾਨ %PRODUCTNAME ਲ�
 
 #: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "ਸਿਸਟਮ-ਟਰੇ ਤੇਜ਼ ਸ਼ੁਰੂਆਤੀ ਆਯੋਗ"
 
 #: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -509,11 +509,11 @@ msgstr "ਸ਼ੁਰੂ ਸਮੇਂ ਹੀ %PRODUCTNAME %MODULENAME ਮੱਦ�
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr ""
+msgstr "ਚੁਣਿਆ $(FILTER) ਫਿਲਟਰ ਹਾਲੇ ਇੰਸਟਾਲ ਨਹੀਂ ਹੈ।\nਕੀ ਤੁਸੀਂ ਇਸ ਨੂੰ ਹੁਣ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "ਚੁਣਿਆ ਫਿਲਟਰ $(FILTER) ਤੁਹਾਡੇ ਸਾਫਟਵੇਅਰ ਵਰਜਨ ਵਿੱਚ ਸ਼ਾਮਿਲ ਨਹੀਂ ਹੈ।\nਤੁਸੀਂ ਖਰੀਦਣ ਲਈ ਹੋਰ ਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ ਸਾਡੇ ਮੁੱਖ ਸਫ਼ੇ ਤੇ ਜਾ ਸਕਦੇ ਹੋ।"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -625,7 +625,7 @@ msgstr "ਚੇਤਾਵਨੀ"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਪਾਰਦਰਸ਼ੀ ਇਕਾਈਆਂ ਹਨ।\nਇਸ ਨਾਲ ਕੁਝ ਪ੍ਰਿੰਟਰਾਂ ਤੇ ਛਪਾਈ ਦੌਰਾਨ ਲੰਮਾ ਸਮਾਂ ਲੱਗ ਸਕਦਾ ਹੈ।\nਕੀ ਪਾਰਦਰਸ਼ਤਾ ਦਾ ਪ੍ਰਭਾਵ ਨੂੰ ਕੁਝ ਘੱਟ ਕੀਤਾ ਜਾਵੇ?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -1441,7 +1441,7 @@ msgstr "ਕੀ ਤੁਸੀਂ $1 ਸਟਾਈਲ ਹਟਾਉਣੀ ਚਾਹ�
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\\n"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਲਾਗੂ ਸਟਾਈਲ ਹਟਾਉਣ ਜਾ ਰਹੇ ਹੋ!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1489,7 +1489,7 @@ msgstr "ਟਾਸਕ"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "ਇਸ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਫਾਰਮੈਟ ਜਾਂ ਭਾਗ ਕੁਝ ਅਜਿਹੇ ਹਨ, ਜਿੰਨਾਂ ਨੂੰ %FORMATNAME ਫਾਇਲ ਫਾਰਮੈਟ ਵਿੱਚ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਫਾਰਮੈਟ ਨੂੰ ਕਿਸੇ ਵੀ ਤਰਾਂ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?\n\nਨਵਾਂ ODF ਫਾਇਲ ਫਾਰਮੈਟ ਵਰਤੋਂ ਅਤੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਭ ਫਾਰਮੈਟਿੰਗ ਅਤੇ ਸਮੱਗਰੀ ਠੀਕ ਤਰ੍ਹਾਂ ਸੰਭਾਲੀ ਗਈ ਹੈ।"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1601,7 +1601,7 @@ msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
 msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr ""
+msgstr "ਡੌਕੂਮੈਂਟ \"$(DOC)\" ਸੋਧਿਆ ਗਿਆ ਹੈ।\nਕੀ ਤੁਸੀਂ ਆਪਣੀ ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1649,7 +1649,7 @@ msgstr "ਟੈਪਲੇਟ"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
 msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr ""
+msgstr "ਟੈਪਲੇਟ \"$1\" ਕਾਤੀ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਹੈ।\nਇਸ ਨਾਂ ਨਾਲ ਟੈਪਲੇਟ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।"
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1705,7 +1705,7 @@ msgstr "ਚੁਣੀ ਫਾਇਲ ਦਾ ਫਾਰਮੈਟ ਗਲਤ ਹੈ।"
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "ਡੌਕੂਮੈਂਟ ਨੂੰ $(FORMAT) ਫਾਰਮੈਟ ਵਿੱਚ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ। ਕੀ ਤੁਸੀਂ\nਆਪਣੀਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ $(OWNFORMAT) ਫਾਰਮੈਟ ਵਿੱਚ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1893,7 +1893,7 @@ msgstr "ਫਾਇਲ ਫਾਰਮੈਟ:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\\n\\n"
-msgstr ""
+msgstr "ਇਸ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਹਨ:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -2153,15 +2153,15 @@ msgstr "ਸਮਅਰਥੀ(~T)..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr ""
+msgstr "ਕੋਈ ਡਿਫਾਲਟ ਪਰਿੰਟਰ ਨਹੀਂ ਲੱਭਿਆ ਹੈ।\nਪਰਿੰਟਰ ਦੀ ਚੋਣ ਕਰਕੇ ਮੁੜ-ਕੋਸ਼ਿਸ ਕਰੋ ਜੀ।"
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr ""
+msgstr "ਪਰਿੰਟਰ ਚਾਲੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।\nਆਪਣੀ ਪਰਿੰਟਰ ਸੰਰਚਨਾ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "ਇਹ ਡੌਕੂਮੈਂਟ $1 ਪਰਿੰਟਰ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ। ਦਿੱਤਾ ਪਰਿੰਟਰ ਹੁਣ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।\nਕੀ ਤੁਸੀਂ ਸਟੈਂਡਰਡ ਪਰਿੰਟਰ $2 ਦੀ ਵਰਤੋਂ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2197,15 +2197,15 @@ msgstr " (ਕੇਵਲ ਪੜ੍ਹਨ ਲਈ)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "ਪੇਜ਼ ਅਕਾਰ ਅਤੇ ਸਥਿਤੀ ਸੋਧੀ ਗਈ ਹੈ।\nਕੀ ਤੁਸੀਂ ਨਵੀਂ ਸੈਟਿੰਗ ਨੂੰ ਸਰਗਰਮ ਡੌਕੂਮੈਂਟ ਲਈ\nਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr ""
+msgstr "ਪੇਜ਼ ਅਕਾਰ ਸੋਧਿਆ ਗਿਆ ਹੈ।\nਕੀ ਨਵੀਂ ਸੈਟਿੰਗ ਨੂੰ ਸਰਗਰਮ ਡੌਕੂਮੈਂਟ ਲਈ\nਸੰਭਾਲਿਆ ਜਾਵੇ?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr ""
+msgstr "ਪੇਜ਼ ਅਕਾਰ ਅਤੇ ਸਥਿਤੀ ਸੋਧੀ ਗਈ ਹੈ।\nਕੀ ਤੁਸੀਂ ਨਵੀਂ ਸੈਟਿੰਗ ਨੂੰ ਸਰਗਰਮ ਡੌਕੂਮੈਂਟ ਲਈ\nਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"

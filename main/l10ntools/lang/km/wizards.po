@@ -445,7 +445,7 @@ msgstr "ពុម្ព​បាន​បង្កើត​តាម​រយៈ
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "មិន​អាច​រត់​អ្នកជំនួយការ ពីព្រោះ​ឯកសារ​សំខាន់ មិនត្រូវ​បាន​រកឃើញ ។\nក្រោម 'ឧបករណ៍-ជម្រើស- %PRODUCTNAME - ផ្លូវ' ចុចប៊ូតុង 'លំនាំដើម' ដើម្បី​កំណត់​ផ្លូវ​ទៅ​ការ​កំណត់​លំនាំដើម​ឡើង​វិញ ។\nបន្ទាប់​មក​រត់​អ្នក​ជំនួយការ​ម្តងទៀត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបប
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "វាល​​គោល​ពីរ តែងតែ​​បាន​រាយ និង​អាច​ជ្រើស​បាន​ពី​បញ្ជី​ខាង​ឆ្វេង ។​\nប្រសិន​បើ​អាច  ពួកវា​ត្រូវ​បាន​បកប្រែ​ជា​រូបភាព ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "សំណុំ​បែបបទ​រង គឺ​ជា​សំណុំ​បែបបទ​ដែល​​បាន​បញ្ចូល​ក្នុង​សំណុំ​បែបបទ​​មួយ​ផ្សេង​ទៀត ។\nប្រើ​សំណុំ​បែបបទ​រង ដើម្បី​បង្ហាញ​ទិន្នន័យ​ពី​តារាង ឬ សំណួរ ដោយ​ប្រើ​​ទំនាក់​ទំនង មួយ-ទៅ-ច្រើន ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបប
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "ការ​ចូល​រួម​ '<FIELDNAME1>' និង​ '<FIELDNAME2>' ត្រូវ​បាន​ជ្រើ​ស​ពីរ​ដង​ ។ \nប៉ុន្តែ​ការ​ចូល​រួម​អាច​ត្រូវ​បាន​ប្រើ​តែ​ម្តង​គត់​ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "កំណត់​ឈ្មោះ​សំណុំ​បែបបទ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "មាន​សំណុំបែបបទ​ឈ្មោះ '%FORMNAME' រួច​ហើយ ។\nសូម​ជ្រើស​ឈ្មោះ​មួយ​ទៀត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "មិន​អាច​បញ្ចូល​វាល​បាន​ទ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "មាន​ឈ្មោះ '%TABLENAME' រួច​ហើយ ។\nសូម​បញ្ចូល​ឈ្មោះ​មួយ​ទៀត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "អ្នក​ជំនួយការ បណ្តាញ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "អ្នក​​ជំនួយការ​​បណ្តាញ​នេះ​នឹង​ជួយ​អ្នក​ក្នុង​ការ​បោះពុម្ព​ផ្សាយ​ឯកសារ​លើ​អ៊ីនធឺណិត ។​\n\nវា​នឹង​បម្លែង​ឯកសារ ដូច្នេះ​ពួកវា​អាច​ត្រូវ​បានបង្ហាញ​​ដោយ​កម្មវិធី​រុករក​បណ្តាញ ។ ជា​បន្ថែម វា​នឹង​បង្កើត​ទំព័រ​តារាង​មាតិកា​មួយ​ជាមួយ​តំណ សម្រាប់​ភាព​ងាយស្រួល​ចូល​ដំណើរការ​​​ឯកសារ ។ អ្នក​ជំនួយការ​បណ្តាញ​នឹង​អនុញ្ញាត​ផង​ដែរ​ឲ្យ​អ្នក​ប្តូរ​ការ​រចនា និងប្លង់​​​​នៃ​តំបន់​បណ្តាញ​របស់​អ្នក​តាម​បំណង ។​\n\nអ្នក​នឹង​អាច​រក្សា​ឯកសារ​ដែល​អ្នក​បាន​បោះពុម្ព​ផ្សាយ​លើ​បណ្តាញ ឲ្យ​ទាន់​សម័យ និង​អាច​បន្ថែម ឬ យក​ឯកសារ​ចេញ​នៅ​ពេល​ណា​ក៏​បាន ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "មើល​ជា​​​មុន"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "ការ​កំណត់​ដែល​បាន​ជ្រើស នឹង​ត្រូវ​បាន​លុប ។​\n\nតើ​អ្នក​ពិត​ជា​ចង់​លុប​ការ​កំណត់​ទាំងនេះ​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "មិន​អាច​បង្កើត​ថត FTP '%FILENAME' ។
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "ថត FTP '%FILENAME' មិន​ទាន់​មាន​ទេ ។ \nបង្កើត​ថត​ឥឡូវ​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "មិន​អាចបង្កើត​ឯកសារ ZIP '%FILENAME
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "មិន​អាច​បង្កើត​ថត​មូលដ្ឋាន '%FILENAME' ។​\nសូម​ពិនិត្យមើល​សិទ្ធ​ចូល​ដំណើរការ​សរសេរ​របស់​អ្នក ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "មិន​មាន​ថត​​មូលដ្ឋាន '%FILENAME' ។​\nបង្កើត​ថត​ឥឡូវ​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

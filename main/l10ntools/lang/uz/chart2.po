@@ -42,7 +42,6 @@ msgid  "Display grids"
 msgstr "Toʻrni koʻrsatish"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-#, fuzzy
 msgid  " degrees"
 msgstr " daraja"
 
@@ -51,27 +50,22 @@ msgid  "~Right-angled axes"
 msgstr ""
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~X rotation"
 msgstr "~X oʻqi boʻyicha burish"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~Y rotation"
 msgstr "~Y oʻqi boʻyicha burish"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~Z rotation"
 msgstr "~Z oʻqi boʻyicha burish"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "Perspektiva"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
-#, fuzzy
 msgid  "Simple"
 msgstr "Oddiy"
 
@@ -80,72 +74,58 @@ msgid  "Realistic"
 msgstr ""
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.String.Text
-#, fuzzy
 msgid  "Custom"
 msgstr "Boshqacha"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "Shakl"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.String.Text
-#, fuzzy
 msgid  "~Number of lines"
 msgstr "Satrlar ~soni"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.String.Text
-#, fuzzy
 msgid  "Separator"
 msgstr "Ajratuvchi"
 
 #: source/controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FixedLine.Text
-#, fuzzy
 msgid  "Place chart"
 msgstr "Diagrammani joylashtirish"
 
 #: source/controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FixedText.Text
-#, fuzzy
 msgid  "~Insert in sheet"
 msgstr "Varaqqa ~qoʻyish"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
-#, fuzzy
 msgid  "Box"
 msgstr "Quti"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
-#, fuzzy
 msgid  "Cylinder"
 msgstr "Silindr"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
-#, fuzzy
 msgid  "Cone"
 msgstr "Konus"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
-#, fuzzy
 msgid  "Pyramid"
 msgstr "Piramida"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "Maʼlumot oraliqlari"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Ustun"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.String.Text
-#, fuzzy
 msgid  "Bar"
 msgstr "Panel"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "Maydon"
 
@@ -166,42 +146,34 @@ msgid  "Donut"
 msgstr ""
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Chiziq"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.String.Text
-#, fuzzy
 msgid  "XY (Scatter)"
 msgstr "Diagramma XY"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.String.Text
-#, fuzzy
 msgid  "Points and Lines"
 msgstr "Nuqta va chiziqlar"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.String.Text
-#, fuzzy
 msgid  "Points Only"
 msgstr "Faqat nuqtalar"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.String.Text
-#, fuzzy
 msgid  "Lines Only"
 msgstr "Faqat qatorlar"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.String.Text
-#, fuzzy
 msgid  "3D Lines"
 msgstr "3D chiziqlar"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.String.Text
-#, fuzzy
 msgid  "Column and Line"
 msgstr "Ustunlar va chiziqlar"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.String.Text
-#, fuzzy
 msgid  "Columns and Lines"
 msgstr "Ustunlar va chiziqlar"
 
@@ -218,32 +190,26 @@ msgid  "Stock"
 msgstr ""
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.String.Text
-#, fuzzy
 msgid  "Stock Chart 1"
 msgstr "Birja diagrammasi 1"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.String.Text
-#, fuzzy
 msgid  "Stock Chart 2"
 msgstr "Birja diagrammasi 2"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.String.Text
-#, fuzzy
 msgid  "Stock Chart 3"
 msgstr "Birja diagrammasi 3"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.String.Text
-#, fuzzy
 msgid  "Stock Chart 4"
 msgstr "Birja diagrammasi 4"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.String.Text
-#, fuzzy
 msgid  "Normal"
 msgstr "Oddiy"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STACKED.String.Text
-#, fuzzy
 msgid  "Stacked"
 msgstr "Yigʻilgan"
 
@@ -252,7 +218,6 @@ msgid  "Percent Stacked"
 msgstr ""
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_DEEP.String.Text
-#, fuzzy
 msgid  "Deep"
 msgstr "Chuqurlik"
 
@@ -269,7 +234,6 @@ msgid  "Bubble Chart"
 msgstr ""
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Belgilar"
 
@@ -278,7 +242,6 @@ msgid  "Font"
 msgstr ""
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Shrift effektlari"
 
@@ -287,12 +250,10 @@ msgid  "Font Position"
 msgstr ""
 
 #: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
-#, fuzzy
 msgid  "3D View"
 msgstr "3D koʻrinish"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.String.Text
-#, fuzzy
 msgid  "Numbers are required. Check your input."
 msgstr "Raqamlar talab qilinadi. Kiritishni tekshirib koʻring."
 
@@ -305,7 +266,6 @@ msgid  "The logarithmic scale requires positive numbers. Check your input."
 msgstr ""
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
-#, fuzzy
 msgid  "The minimum must be lower than the maximum. Check your input."
 msgstr "Minimal maksimaldan kam boʻlishi kerak. Qiritishni tekshirib koʻring."
 
@@ -318,12 +278,10 @@ msgid  "The major and minor interval need to be greater or equal to the resoluti
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
-#, fuzzy
 msgid  "Data Table"
 msgstr "Maʼlumot jadvali"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "Satr qoʻshish"
 
@@ -336,7 +294,6 @@ msgid  "Insert Text Column"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "Satrni olib tashlash"
 
@@ -349,7 +306,6 @@ msgid  "Move Series Right"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "Satrni pastga koʻchirish"
 
@@ -366,17 +322,14 @@ msgid  "Years"
 msgstr ""
 
 #: source/controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FixedLine.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Masshtablash"
 
 #: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CheckBox.Text
-#, fuzzy
 msgid  "~Reverse direction"
 msgstr "~Teskari yoʻnalish"
 
 #: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CheckBox.Text
-#, fuzzy
 msgid  "~Logarithmic scale"
 msgstr "~Logarifmik kengaytirish"
 
@@ -525,12 +478,10 @@ msgid  "Include ~values from hidden cells"
 msgstr ""
 
 #: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "~Yorugʻlik manbasi"
 
 #: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "~Tarqoq yorugʻ"
 
@@ -539,22 +490,18 @@ msgid  "Light Preview"
 msgstr ""
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
-#, fuzzy
 msgid  "Negative and Positive"
 msgstr "Musbat va manfiy"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
-#, fuzzy
 msgid  "Negative"
 msgstr "Manfiy"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
-#, fuzzy
 msgid  "Positive"
 msgstr "Musbat"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.String.Text
-#, fuzzy
 msgid  "From Data Table"
 msgstr "Ma'lumot jadvalidan"
 
@@ -579,17 +526,14 @@ msgid  "Mean (%SERIESNAME)"
 msgstr ""
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FixedText.Text
-#, fuzzy
 msgid  "Choose a chart type"
 msgstr "Diagramma turini tanlang"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CheckBox.Text
-#, fuzzy
 msgid  "X axis with Categories"
 msgstr "X oʻqi turkumlar bilan"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CheckBox.Text
-#, fuzzy
 msgid  "~3D Look"
 msgstr "~3D koʻrinish"
 
@@ -598,52 +542,42 @@ msgid  "~Stack series"
 msgstr ""
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RadioButton.Text
-#, fuzzy
 msgid  "On top"
 msgstr "Yuqorida"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RadioButton.Text
-#, fuzzy
 msgid  "Percent"
 msgstr "Foiz"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RadioButton.Text
-#, fuzzy
 msgid  "Deep"
 msgstr "Chuqurlik"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CheckBox.Text
-#, fuzzy
 msgid  "S~mooth lines"
 msgstr "Yumshoq chiziqlar"
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PushButton.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "Xossalari..."
 
 #: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CheckBox.Text
-#, fuzzy
 msgid  "~Sort by X values"
 msgstr "X qiymatlariga koʻra ~saralash"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RadioButton.Text
-#, fuzzy
 msgid  "Cubic spline"
 msgstr "Kubik splayn"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RadioButton.Text
-#, fuzzy
 msgid  "B-Spline"
 msgstr "B-splayn"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FixedText.Text
-#, fuzzy
 msgid  "~Resolution"
 msgstr "~Oʻlcham"
 
 #: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FixedText.Text
-#, fuzzy
 msgid  "~Data points order"
 msgstr "~Maʼlumot nuqtasi tartibi"
 
@@ -656,42 +590,34 @@ msgid  "Data ~series"
 msgstr ""
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FixedText.Text
-#, fuzzy
 msgid  "~Data ranges"
 msgstr "~Maʼlumot oraliqlari"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FixedText.Text
-#, fuzzy
 msgid  "Ran~ge for %VALUETYPE"
 msgstr "%VALUETYPE ~oraliqlari"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "~Turkumlar"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FixedText.Text
-#, fuzzy
 msgid  "Data ~labels"
 msgstr "Maʼlumot ~yorliqlari"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Qoʻshish"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~Olib tashlash"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FixedText.Text
-#, fuzzy
 msgid  "Choose a data range"
 msgstr "Maʼlumot oraligʻini tanlang"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FixedText.Text
-#, fuzzy
 msgid  "~Data range"
 msgstr "Maʼlumot ~oraliqlari"
 
@@ -704,57 +630,46 @@ msgid  "Data series in ~columns"
 msgstr ""
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CheckBox.Text
-#, fuzzy
 msgid  "~First row as label"
 msgstr "~Birinchi satr yorliq sifatida"
 
 #: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CheckBox.Text
-#, fuzzy
 msgid  "F~irst column as label"
 msgstr "B~irinchi ustun yorliq sifatida"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
-#, fuzzy
 msgid  "Sho~w labels"
 msgstr "Yorliqlarni koʻr~satish"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "Matn yoʻnalishi"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TriStateBox.Text
-#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "Ve~rtikal yigʻilgan"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "~Degrees"
 msgstr "Dara~ja"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FixedLine.Text
-#, fuzzy
 msgid  "Text flow"
 msgstr "Sahifadagi koʻrinishi"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CheckBox.Text
-#, fuzzy
 msgid  "O~verlap"
 msgstr "Q~oplash"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CheckBox.Text
-#, fuzzy
 msgid  "~Break"
 msgstr "~Uzilish"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FixedLine.Text
-#, fuzzy
 msgid  "Order"
 msgstr "Tartib"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RadioButton.Text
-#, fuzzy
 msgid  "~Tile"
 msgstr "~Sarlavha"
 
@@ -767,102 +682,82 @@ msgid  "Stagger ~even"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RadioButton.Text
-#, fuzzy
 msgid  "A~utomatic"
 msgstr "Avtomati~k"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Matnning ~yoʻnalishi"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
-#, fuzzy
 msgid  "Space"
 msgstr "Boʻsh joy"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
-#, fuzzy
 msgid  "Comma"
 msgstr "Vergul"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
-#, fuzzy
 msgid  "Semicolon"
 msgstr "Nuqta vergul"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
-#, fuzzy
 msgid  "New line"
 msgstr "Yangi satr"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FixedText.Text
-#, fuzzy
 msgid  "Sche~me"
 msgstr "~Sxema"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
-#, fuzzy
 msgid  "~Shading"
 msgstr "~Soyalash"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CheckBox.Text
-#, fuzzy
 msgid  "~Object borders"
 msgstr "~Obyekt chegaralari"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.Checkbox.Text
-#, fuzzy
 msgid  "~Rounded edges"
 msgstr "~Yumaloqlangan burchaklar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "Oʻqlar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "Birlamchi toʻrlar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "~X-oʻqi"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "~Y-oʻqi"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "~Z oʻqi"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "Ikkinchi darajali oʻqlar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "Ikkilamchi toʻrlar"
 
 #: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Oʻrni"
 
 #: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "Matn yoʻnalishi"
 
 #: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Matnning ~yoʻnalishi"
 
@@ -895,7 +790,6 @@ msgid  "Indents & Spacing"
 msgstr ""
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Tekislash"
 
@@ -908,57 +802,46 @@ msgid  "Tab"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
-#, fuzzy
 msgid  "Chart Wizard"
 msgstr "Diagramma ustasi"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Smooth Lines"
 msgstr "Yumshoq chiziqlar"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
-#, fuzzy
 msgid  "Number Format for Percentage Value"
 msgstr "Foiz qiymati uchun sonning formati"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart Type"
 msgstr "Grafik turi"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "Maʼlumot oraligʻi"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
-#, fuzzy
 msgid  "Chart Elements"
 msgstr "Diagramma elementlari"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
-#, fuzzy
 msgid  "Chart Location"
 msgstr "Diagramma manzili"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Chiziq"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Chegaralar"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "Maydon"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Shaffoflik"
 
@@ -967,17 +850,14 @@ msgid  "Font"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Shrift effektlari"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "Raqamlar"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Oʻrni"
 
@@ -990,52 +870,42 @@ msgid  "Down"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "Joylashishi"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Parametrlar"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Masshtablash"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "Joylashuvi"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Turi"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
-#, fuzzy
 msgid  "Y Error Bars"
 msgstr "Y xatolik paneli"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Tekislash"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "Perspective"
 msgstr "Perspektiva"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
-#, fuzzy
 msgid  "Appearance"
 msgstr "Koʻrinishi"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "Yoritish"
 
@@ -1044,157 +914,126 @@ msgid  "Asian Typography"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
-#, fuzzy
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
 msgstr "%AVERAGE_VALUE qiymati bilan oʻrtacha arifmetik qiymat va andoza %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
-#, fuzzy
 msgid  "Axis"
 msgstr "Oʻq"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
-#, fuzzy
 msgid  "X Axis"
 msgstr "X oʻqi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
-#, fuzzy
 msgid  "Y Axis"
 msgstr "Y oʻqi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
-#, fuzzy
 msgid  "Z Axis"
 msgstr "Z oʻqi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis"
 msgstr "Ikkilamchi Y oʻqi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis"
 msgstr "Ikkilamchi Y oʻqi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "Oʻqlar"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRIDS.String.Text
-#, fuzzy
 msgid  "Grids"
 msgstr "Toʻrlar"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID.String.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "Toʻr"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.String.Text
-#, fuzzy
 msgid  "X Axis Major Grid"
 msgstr "X oʻqining birlamchi toʻri"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.String.Text
-#, fuzzy
 msgid  "Y Axis Major Grid"
 msgstr "Y oʻqining ikkilamchi toʻri"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.String.Text
-#, fuzzy
 msgid  "Z Axis Major Grid"
 msgstr "Z oʻqining birlamchi toʻri"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.String.Text
-#, fuzzy
 msgid  "X Axis Minor Grid"
 msgstr "X oʻqining ikkilamchi toʻri"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.String.Text
-#, fuzzy
 msgid  "Y Axis Minor Grid"
 msgstr "Y oʻqining ikkilamchi toʻri"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.String.Text
-#, fuzzy
 msgid  "Z Axis Minor Grid"
 msgstr "Z oʻqining ikkilamchi toʻri"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND.String.Text
-#, fuzzy
 msgid  "Legend"
 msgstr "Legenda"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Sarlavha"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
-#, fuzzy
 msgid  "Titles"
 msgstr "Nomi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.String.Text
-#, fuzzy
 msgid  "Main Title"
 msgstr "Asosiy sarlavha"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
-#, fuzzy
 msgid  "Subtitle"
 msgstr "Qoʻshimcha sarlavha"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.String.Text
-#, fuzzy
 msgid  "X Axis Title"
 msgstr "X oʻqi sarlavhasi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Y Axis Title"
 msgstr "Y oʻqi sarlavhasi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.String.Text
-#, fuzzy
 msgid  "Z Axis Title"
 msgstr "Z oʻqi sarlavhasi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis Title"
 msgstr "Ikkinchi darajali X oʻqi nomi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis Title"
 msgstr "Ikkinchi darajali Y oʻqi nomi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LABEL.String.Text
-#, fuzzy
 msgid  "Label"
 msgstr "Yorliq"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.String.Text
-#, fuzzy
 msgid  "Data Labels"
 msgstr "Maʼlumot yorliqlari"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.String.Text
-#, fuzzy
 msgid  "Data Point"
 msgstr "Maʼlumot nuqtasi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.String.Text
-#, fuzzy
 msgid  "Data Points"
 msgstr "Maʼlumot nuqtalari"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.String.Text
-#, fuzzy
 msgid  "Legend Key"
 msgstr "Legenda tugmasi"
 
@@ -1207,12 +1046,10 @@ msgid  "Data Series"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE.String.Text
-#, fuzzy
 msgid  "Trend Line"
 msgstr "Trend chizigʻi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVES.String.Text
-#, fuzzy
 msgid  "Trend Lines"
 msgstr "Trend chiziqlari"
 
@@ -1221,17 +1058,14 @@ msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.String.Text
-#, fuzzy
 msgid  "Mean Value Line"
 msgstr "Oʻrtacha arifmetik qiymat chizigʻi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.String.Text
-#, fuzzy
 msgid  "Equation"
 msgstr "Tenglama"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.String.Text
-#, fuzzy
 msgid  "Error Bars"
 msgstr "Y xatolik paneli"
 
@@ -1244,22 +1078,18 @@ msgid  "Stock Gain"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_PAGE.String.Text
-#, fuzzy
 msgid  "Chart Area"
 msgstr "Diagramma maydoni"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.String.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "Diagramma"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.String.Text
-#, fuzzy
 msgid  "Chart Wall"
 msgstr "Diagramma devori"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.String.Text
-#, fuzzy
 msgid  "Chart Floor"
 msgstr "Diagramma asosi"
 
@@ -1268,17 +1098,14 @@ msgid  "Drawing Object"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.String.Text
-#, fuzzy
 msgid  "Select data range"
 msgstr "Maʼlumot oraligʻini tanlang"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.String.Text
-#, fuzzy
 msgid  "Select a color using the color dialog"
 msgstr "Rang oynasi uchun ishlatiladigan rangni tanlang"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.String.Text
-#, fuzzy
 msgid  "Light Source %LIGHTNUMBER"
 msgstr "Yorugʻlik manbai %LIGHTNUMBER"
 
@@ -1287,12 +1114,10 @@ msgid  "Data Series '%SERIESNAME'"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.String.Text
-#, fuzzy
 msgid  "Data Point %POINTNUMBER"
 msgstr "Maʼlumot nuqtasi %POINTNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.String.Text
-#, fuzzy
 msgid  "Values: %POINTVALUES"
 msgstr "Qiymatlar: %POINTVALUES"
 
@@ -1305,7 +1130,6 @@ msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
-#, fuzzy
 msgid  "%OBJECTNAME selected"
 msgstr "%OBJECTNAME tanlandi"
 
@@ -1322,47 +1146,38 @@ msgid  "%OBJECTNAME for all Data Series"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Edit chart type"
 msgstr "Diagramma turini oʻzgartirish"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.String.Text
-#, fuzzy
 msgid  "Edit data ranges"
 msgstr "Maʼlumot oraligʻini oʻzgartirish"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.String.Text
-#, fuzzy
 msgid  "Edit 3D view"
 msgstr "3D koʻrinishni oʻzgartirish"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.String.Text
-#, fuzzy
 msgid  "Edit chart data"
 msgstr "Diagramma maʼlumotini oʻzgartirish"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.String.Text
-#, fuzzy
 msgid  "Legend on/off"
 msgstr "Legandani koʻrsatish/bekitish"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.String.Text
-#, fuzzy
 msgid  "Horizontal grid on/off"
 msgstr "Gorizontal toʻrni yoqish/oʻchirish"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.String.Text
-#, fuzzy
 msgid  "Scale Text"
 msgstr "Matnni masshtablash"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.String.Text
-#, fuzzy
 msgid  "Automatic Layout"
 msgstr "Avtomatik joylashtirish"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
 msgid  "This function cannot be completed with the selected objects."
 msgstr "Ushbu funksiya tanlangan obyektlar bilan bajarilmaydi."
 
@@ -1371,27 +1186,22 @@ msgid  "Edit text"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_COLUMN_LABEL.String.Text
-#, fuzzy
 msgid  "Column %COLUMNNUMBER"
 msgstr "Ustun %COLUMNNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_ROW_LABEL.String.Text
-#, fuzzy
 msgid  "Row %ROWNUMBER"
 msgstr "Satr %ROWNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Nomi"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X.String.Text
-#, fuzzy
 msgid  "X-Values"
 msgstr "X-qiymatlari"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y.String.Text
-#, fuzzy
 msgid  "Y-Values"
 msgstr "Y-qiymatlari"
 
@@ -1400,57 +1210,46 @@ msgid  "Bubble Sizes"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.String.Text
-#, fuzzy
 msgid  "X-Error-Bars"
 msgstr "X xatolik panellari"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.String.Text
-#, fuzzy
 msgid  "Positive X-Error-Bars"
 msgstr "Musbat X-xatolik-panellari"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.String.Text
-#, fuzzy
 msgid  "Negative X-Error-Bars"
 msgstr "Manfiy X-xatolik-panellari"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.String.Text
-#, fuzzy
 msgid  "Y-Error-Bars"
 msgstr "Y-xatolik panellari"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.String.Text
-#, fuzzy
 msgid  "Positive Y-Error-Bars"
 msgstr "Musbat Y-xatolik-panellari"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.String.Text
-#, fuzzy
 msgid  "Negative Y-Error-Bars"
 msgstr "Manfiy Y-xatolik-panellari"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.String.Text
-#, fuzzy
 msgid  "Open Values"
 msgstr "Ochiq qiymatlar"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.String.Text
-#, fuzzy
 msgid  "Close Values"
 msgstr "Yopiq qiymatlar"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.String.Text
-#, fuzzy
 msgid  "Low Values"
 msgstr "Kichik qiymatlar"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.String.Text
-#, fuzzy
 msgid  "High Values"
 msgstr "Katta qiymatlar"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.String.Text
-#, fuzzy
 msgid  "Categories"
 msgstr "Turkumlar"
 
@@ -1463,41 +1262,34 @@ msgid  "Unnamed Series %NUMBER"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.String.Text
-#, fuzzy
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
 msgstr "%SERIESNAME ning %VALUETYPE si uchun oraliqni tanlang"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.String.Text
-#, fuzzy
 msgid  "Select Range for Categories"
 msgstr "Turkumlar uchun oraliqni tanlang"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.String.Text
-#, fuzzy
 msgid  "Select Range for data labels"
 msgstr "Maʼlumot yorliqlari uchun oraliqni tanlang"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.String.Text
-#, fuzzy
 msgid  "Select Range for Positive Error Bars"
 msgstr "Musbat xatolik panellari uchun oraliqni tanlang"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.String.Text
-#, fuzzy
 msgid  "Select Range for Negative Error Bars"
 msgstr "Manfiy xatolik panellari uchun oraliqni tanlang"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Kiritilgan ma'lumot xato.\nBu oʻzgarishga etibor berilmasdan dialog yopilsinmi?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr "Chapdan oʻngga"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr "Oʻngdan chapga"
 
@@ -1506,7 +1298,6 @@ msgid  "Use superordinate object settings"
 msgstr ""
 
 #: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CheckBox.Text
-#, fuzzy
 msgid  "~Clockwise direction"
 msgstr "~Soat koʻrsatgichi boʻyicha"
 
@@ -1515,7 +1306,6 @@ msgid  "Starting angle"
 msgstr ""
 
 #: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "~Degrees"
 msgstr "Dara~ja"
 
@@ -1528,7 +1318,6 @@ msgid  "Include ~values from hidden cells"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Axis line"
 msgstr "O'q chizig'i"
 
@@ -1537,32 +1326,26 @@ msgid  "~Cross other axis at"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item1.StringList.item
-#, fuzzy
 msgid  "Start"
 msgstr "Boshlanishi"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item2.StringList.item
-#, fuzzy
 msgid  "End"
 msgstr "Oxiri"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item3.StringList.item
-#, fuzzy
 msgid  "Value"
 msgstr "Qiymat"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item4.StringList.item
-#, fuzzy
 msgid  "Category"
 msgstr "Turkum"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CheckBox.Text
-#, fuzzy
 msgid  "Axis ~between categories"
 msgstr "Turkumlar o ~orasidagi oʻqlar"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FixedLine.Text
-#, fuzzy
 msgid  "Labels"
 msgstr "Yorliqlar"
 
@@ -1571,12 +1354,10 @@ msgid  "~Place labels"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item1.StringList.item
-#, fuzzy
 msgid  "Near axis"
 msgstr "Oʻqning yonida"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item2.StringList.item
-#, fuzzy
 msgid  "Near axis (other side)"
 msgstr "Oʻqning yonida (boshqa tomondan)"
 
@@ -1589,7 +1370,6 @@ msgid  "Outside end"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "~Masofa"
 
@@ -1598,32 +1378,26 @@ msgid  "Interval marks"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FixedText.Text
-#, fuzzy
 msgid  "Major:"
 msgstr "Asosiy:"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CheckBox.Text
-#, fuzzy
 msgid  "~Inner"
 msgstr "~Ichkarida"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CheckBox.Text
-#, fuzzy
 msgid  "~Outer"
 msgstr "~Tashqi"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FixedText.Text
-#, fuzzy
 msgid  "Minor:"
 msgstr "Qoʻshimcha:"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CheckBox.Text
-#, fuzzy
 msgid  "I~nner"
 msgstr "I~chki"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CheckBox.Text
-#, fuzzy
 msgid  "O~uter"
 msgstr "T~ashqarida"
 
@@ -1632,7 +1406,6 @@ msgid  "Place ~marks"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item1.StringList.item
-#, fuzzy
 msgid  "At labels"
 msgstr "Yorliqlarda"
 
@@ -1641,32 +1414,26 @@ msgid  "At axis"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item3.StringList.item
-#, fuzzy
 msgid  "At axis and labels"
 msgstr "Oʻqlar va yorliqlarga"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FixedLine.Text
-#, fuzzy
 msgid  "Grids"
 msgstr "Toʻrlar"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CheckBox.Text
-#, fuzzy
 msgid  "Show major ~grid"
 msgstr "Asosiy ~toʻrni koʻrsatish"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PushButton.Text
-#, fuzzy
 msgid  "Mo~re..."
 msgstr "Qoʻ~shimcha..."
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CheckBox.Text
-#, fuzzy
 msgid  "~Show minor grid"
 msgstr "Qoʻshimcha toʻrni ~koʻrsatish"
 
 #: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PushButton.Text
-#, fuzzy
 msgid  "Mor~e..."
 msgstr "~Qoʻshimcha..."
 

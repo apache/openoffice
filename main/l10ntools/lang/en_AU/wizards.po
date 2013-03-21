@@ -547,8 +547,9 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Template created via <wizard_name> on <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
+#, fuzzy
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 #, fuzzy
@@ -681,12 +682,14 @@ msgid  "Fields in ~the form"
 msgstr "Fields in ~the form"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
+#, fuzzy
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
+#, fuzzy
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "A sub-form is a form that is inserted in another form.\nUse sub-forms to show data from tables or queries with a one-to-many relationship."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 #, fuzzy
@@ -729,8 +732,9 @@ msgid  "Fields in form"
 msgstr "Fields in form"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
+#, fuzzy
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 #, fuzzy
@@ -993,8 +997,9 @@ msgid  "Set the name of the form"
 msgstr "Set the name of the form"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
+#, fuzzy
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "A form with the name '%FORMNAME' already exists.\nChoose another name."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 #, fuzzy
@@ -1982,8 +1987,9 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
+#, fuzzy
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "The name '%TABLENAME' already exists.\nPlease enter another name."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 #, fuzzy
@@ -2636,8 +2642,9 @@ msgid  "Web Wizard"
 msgstr "Web Wizard"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
+#, fuzzy
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customise the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 #, fuzzy
@@ -3160,8 +3167,9 @@ msgid  "Preview"
 msgstr "Preview"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+#, fuzzy
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -3244,8 +3252,9 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "The FTP directory '%FILENAME' could not be created."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+#, fuzzy
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 #, fuzzy
@@ -3253,12 +3262,14 @@ msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name
 msgstr "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy

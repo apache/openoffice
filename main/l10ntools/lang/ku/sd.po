@@ -217,7 +217,7 @@ msgstr "Slaytan veguhezîne"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "Xêv têr nake!\nKirarî tê betalkirin."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1782,8 +1782,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Ji bo serê xêzikeke nû navekî binivîse:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "Navê ku tu ketiyê niha mevcûd e.\nJi kerema xwe re navekî din têkevê."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1864,8 +1865,9 @@ msgid  "Insert slides"
 msgstr "Slaytan lê zêde bike"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "Bi rastî jî tu dixwazî asta \"$\" jê bibe?\nDê bireserên ku vê astê were jêbirin!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1923,8 +1925,9 @@ msgid  "Insert text frame"
 msgstr "Çarçoveya nivîsan lê zêde bike"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "Ev fonksiyon \nbi bireserên hilbijartî mayê meşandin."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -1937,8 +1940,9 @@ msgid  "The file could not be loaded!"
 msgstr "Pel nehate barkirin!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Şêweyê rûpelê nû tê mîhengkirin.\nTu dixwazî biresere jî werine mîhengkirin?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -1961,8 +1965,9 @@ msgid  "~Edit"
 msgstr "~Serrrast bike"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "Ev karên ku hûn dikin lîsteya karên kû dikare şûnva bê girtin jê dibe.\nGuhertinên ku we li ser belgeyê çêkiriye\n hîn derbazbare le şûnva anîna wan ne pêkane.\nHûn dixwazin bidomîne û sêwinara slaytê bisepîne?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -1985,8 +1990,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Şêwaza vê belgeyê di çaperê de nehate mîhengkirin."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Ev grafîk bi belgeyekê hatiye girêdan.\nJi bo ku tu karibe grafîkê sererast bikî tu dixwazî girêdanê rake?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2475,8 +2481,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Hemû komên xêzkirinê ji hev nehatin veçirandin."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "Sêwirekî bi vî navê heye.\nHûn dixwazin li ser binivisîne?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2617,8 +2624,9 @@ msgid  "Graphics filter"
 msgstr "Parzûna Grafîkê"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "Pela %\nne pela derbasdar ya deng e!"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -2867,12 +2875,10 @@ msgid  "Insert Movie"
 msgstr ""
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-#, fuzzy
 msgid  "Graphics Styles"
 msgstr "Şêwazên Grafîkan"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-#, fuzzy
 msgid  "Presentation Styles"
 msgstr "Şêwazên Pêşkêşiyan"
 
@@ -2890,57 +2896,46 @@ msgid  "All Styles"
 msgstr "Teşeyên Şanikan"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Distribution..."
 msgstr "~Belavbûn..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Drawing View"
 msgstr "~Dîmenê Xêzkirinê"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Outline View"
 msgstr "~Dîmenê Makexetê"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "~Dîmenên Slaytan"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
-#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "~Nîşandana Slaytê"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "Xala/rêzika têgihiştînê lê zêde bike..."
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~Sererast bike..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Jêbirin"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "Slaytê biguherîne"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page Setup..."
 msgstr "Sazkirina ~Rûpelê..."
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Slide"
 msgstr "Slayta ~Nû"
 
@@ -2949,7 +2944,6 @@ msgid  "~New Master"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Page"
 msgstr "~Rûpela Nû"
 
@@ -2966,12 +2960,10 @@ msgid  "Display Objects from Master"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Pag~e"
 msgstr "~Rûpel"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "Slay~t"
 
@@ -2980,7 +2972,6 @@ msgid  "~Rename Layer..."
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Slide"
 msgstr "Slaytan jê bibe"
 
@@ -2989,12 +2980,10 @@ msgid  "D~elete Master"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Page"
 msgstr "Rûpelê ~jê bibe"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Slide"
 msgstr "~Slaytê ji nû ve binavîne"
 
@@ -3007,117 +2996,94 @@ msgid  "~Rename Page"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
-#, fuzzy
 msgid  "L~ine..."
 msgstr "R~êzik..."
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
-#, fuzzy
 msgid  "~Area..."
 msgstr "~Qad..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Text..."
 msgstr "~Nivîs..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "~Girêdanker..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
-#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "~Girêkerê bîne halê wê yê kevn"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Mezinahî..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
-#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "Pozîsyon û Mezinahî..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "~Xalan sererast bike"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Arra~nge"
 msgstr "Rêzkirin"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Bring to Front"
 msgstr "Bîne pêş"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Pêşda bîne"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Ber bi p~aş bişîne"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Send to Back"
 msgstr "~Bişîne binî"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Li Pêşiya ~Objeyê"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "~Li paşiya Bireserê"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "~Vajî bike"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "C~haracter..."
 msgstr "Karak~ter..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
-#, fuzzy
 msgid  "P~aragraph..."
 msgstr "P~aragraf..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "~Curetîp"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "~Mezinahî"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "~Teşe"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "Qalind"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "Îtalîk"
 
@@ -3126,127 +3092,102 @@ msgid  "Overline"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "Binxêz"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "Navînxêzkirî"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "Sî"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "~Contour"
 msgstr "~Kontur"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Navbera rêzikan"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
-#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "Tenê Rêzikek"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
-#, fuzzy
 msgid  "1.5 Lines"
 msgstr "1.5 Rêzik"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
-#, fuzzy
 msgid  "~Double"
 msgstr "~Coterêzik"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
-#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "Karaktera T~aybet..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "~Hîzakirin"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Çep"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Rast"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Navîn"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
-#, fuzzy
 msgid  "Justified"
 msgstr "Tam paldayî"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "Al~ignment"
 msgstr "Hîzakirin"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Çep"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "~Navîn"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Rast"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Ser"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "~Navîn"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Binî"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "~Bireserê Bigire"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "~Xalan sererast bike"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Move Points"
 msgstr "~Xalan Veguhezîne"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Points"
 msgstr "~Xalan Lê Zêde Bike"
 
@@ -3255,7 +3196,6 @@ msgid  "~Delete Points"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "~Bireserê Bigire"
 
@@ -3284,12 +3224,10 @@ msgid  "~Reduce Points"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Dabeş bike"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Kome veçîrîne"
 
@@ -3306,17 +3244,14 @@ msgid  "~Enter Group"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit Group"
 msgstr "Ji komê der~keve"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "Nav..."
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "Rave..."
 
@@ -3329,7 +3264,6 @@ msgid  "Custom Animation..."
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "Int~eraction..."
 msgstr "~Lihevbandor..."
 
@@ -3338,12 +3272,10 @@ msgid  "Presentation ~Object..."
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Jêbirin"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "Standard"
 
@@ -3352,12 +3284,10 @@ msgid  "F~ontwork"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "Mezinahiya Xweser"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "Save as Picture..."
 msgstr "Wekî Wêne tomar bike..."
 
@@ -3370,27 +3300,22 @@ msgid  "Na~vigator"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Point"
 msgstr "~Xalan Lê Zêde Bike"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~Çep"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Ser"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~Rast"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Binî"
 
@@ -3423,7 +3348,6 @@ msgid  "Fixed Ver~tical Bottom"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Visible Grid"
 msgstr "~Rêberê Dixuye"
 
@@ -3432,22 +3356,18 @@ msgid  "Snap to Grid"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Grid to ~Front"
 msgstr "Rêber li pêş"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "~Rêber"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Snap Lines Visible"
 msgstr "Rêberan rava bike"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "Li rêberê bîne"
 
@@ -3456,12 +3376,10 @@ msgid  "Snap Lines to Front"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Snap Lines"
 msgstr "~Xêzên Qetandinê"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "~Taybetmendî..."
 
@@ -3470,37 +3388,30 @@ msgid  "1Bit ~Threshold"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MenuItem.Text
-#, fuzzy
 msgid  "1 Bit ~Dithering"
 msgstr "~Lerizîn 1 Bit"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "~Paleta rengên cûn (4 Bit)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit ~Color Palette"
 msgstr "~Paleta Rengan (4Bit)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "~Paleta rengên cûn (8Bit)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit C~olor Palette"
 msgstr "~Paleta Rengan (8 Bit)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MenuItem.Text
-#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "Rengên ~rasteqîn (24Bit)"
 
 #: source/ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Color Resolution"
 msgstr "Destnîşankirina rengan"
 
@@ -3509,122 +3420,98 @@ msgid  "Con~vert"
 msgstr ""
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "~Teqlekirin"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MenuItem.Text
-#, fuzzy
 msgid  "~Rotate"
 msgstr "~Bizivirîne"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MenuItem.Text
-#, fuzzy
 msgid  "C~onnect"
 msgstr "Girê~bide"
 
 #: source/ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MenuItem.Text
-#, fuzzy
 msgid  "~Break"
 msgstr "~Birrîn"
 
 #: source/ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Style..."
 msgstr "Şêwazê Sererast Bike..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MenuItem.Text
-#, fuzzy
 msgid  "H~yperlink..."
 msgstr "Hî~perlînk..."
 
 #: source/ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Poi~nts"
 msgstr "~Xal"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Glue Points"
 msgstr "~Xalan Veguhezîne"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "Te~beqe"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Lêzêdekirin"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "Bi~guherîne"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Jêbirin"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "~Nav guherandin"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
-#, fuzzy
 msgid  "To ~Curve"
 msgstr "Li ~Xwarê"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
-#, fuzzy
 msgid  "To ~Polygon"
 msgstr "Li ~Pirgoşeyê"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "To C~ontour"
 msgstr "Li Konturê"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
-#, fuzzy
 msgid  "To 3~D"
 msgstr "Li Cîsima 3~D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "Li ~Bitmapê"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
-#, fuzzy
 msgid  "To ~Metafile"
 msgstr "Li Pela ~Meta"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "Li Cîsima dizîvire ya 3D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "~Tîk"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontally"
 msgstr "~Berwar"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~3D Effects"
 msgstr "~Efektên 3D"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Design"
 msgstr "~Sêwirandina Slaytê"
 
@@ -3633,42 +3520,34 @@ msgid  "Slide ~Transition"
 msgstr ""
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Show Slide"
 msgstr "Slaytê ~Nîşan bide"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Slide"
 msgstr "~Slaytê Veşêre"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Dabeş bike"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Kome veçîrîne"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Group"
 msgstr "~Komê sererast bike"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit group"
 msgstr "Ji komê der~keve"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "~Dabeş bike"
 
 #: source/ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Toolbars"
 msgstr "~Darikên amûran"
 
@@ -3692,42 +3571,34 @@ msgid  "Table"
 msgstr "Tablo"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "~Tablo..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "~Şanik"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "~Yekkirin"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "~Dabeşkirin..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~Ser"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "~Navîn"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~Binî"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "~Rêzik"
 
@@ -3736,7 +3607,6 @@ msgid  "Space ~Equally"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Hilbijartin"
 
@@ -3745,12 +3615,10 @@ msgid  "~Insert..."
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Jêbirin"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "~Sitûn"
 
@@ -3759,7 +3627,6 @@ msgid  "Space ~Equally"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~Hilbijartin"
 
@@ -3768,52 +3635,42 @@ msgid  "~Insert..."
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Jêbirin"
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Layer..."
 msgstr "~Astekê Lê Zêde Bike..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "Modify La~yer..."
 msgstr "A~stê Biguherîne..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "~Tebeqeyê Jê Bibe"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "Li Hemû Slaytan bi kar ~bîne"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "~Li Slaytên ku Hatine Hilbijartin Bisepîne"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "Pêşdîtinê ~Fireh Nîşan Bide"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "Pêşdîtinê ~Biçûk Nîşan Bide"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "Li Hemû Slaytan bi kar ~bîne"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "~Li Slaytên ku Hatine Hilbijartin Bisepîne"
 
@@ -3822,22 +3679,18 @@ msgid  "~Edit Master..."
 msgstr ""
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "Pêşdîtinê ~Fireh Nîşan Bide"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "Pêşdîtinê ~Biçûk Nîşan Bide"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "~Li Slaytên ku Hatine Hilbijartin Bisepîne"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Slide"
 msgstr "Slaytekê lê zêde bike"
 
@@ -3867,282 +3720,226 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME Draw hate pêşiya belgeyê. Tu dixwazî ji dawiyê berdewam bike?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~Nû"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
-#, fuzzy
 msgid  "~Export..."
 msgstr "~Veguhezîne derve..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
-#, fuzzy
 msgid  "Export as PDF..."
 msgstr "Wekî PDF veguhezîne..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
-#, fuzzy
 msgid  "Sen~d"
 msgstr "Bişîn~e"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page..."
 msgstr "~Rûpel..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~Serrrast bike"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
-#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Pêvekirina ~Taybet..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "Hevserê wî biafirîne..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
-#, fuzzy
 msgid  "Cross-fading..."
 msgstr "Çeprast perde bike..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "F~ields..."
 msgstr "Q~ad..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "~Astê jê bibe..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
-#, fuzzy
 msgid  "Lin~ks..."
 msgstr "Girê~dan..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
 msgid  "~View"
 msgstr "~Bergeh"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "~Darikê Amûran ya Bingehîn"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "~Darikê Vebijêrkan"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Presentation"
 msgstr "~Pêşkêşî"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
-#, fuzzy
 msgid  "Customi~ze..."
 msgstr "Bi~taybetîne..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "~Rulers"
 msgstr "~Rastkêş"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes View"
 msgstr "~Dîmena Nîşeya"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout View"
 msgstr "~Rêzkera Slaytan"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "~Pêşdîtin"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
-#, fuzzy
 msgid  "S~lide"
 msgstr "R~ûpel"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Master"
 msgstr "~Slayta Bingeh"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~Sernav"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes"
 msgstr "~Nîşe"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout"
 msgstr "~Rêzkera rûpelan"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "Te~beqe"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Wor~kspace"
 msgstr "Kar~geh"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Master"
 msgstr "~Mak (bingeh)"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Lêzêdekirin"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e..."
 msgstr "Slay~t..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "Slay~t"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "~Hevserê Slaytê Biafirîne"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "Slaytê ~Fireh Bike"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "Slayta ~Kurteyê"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "~Tebeqe..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "~Dîrok(sabît)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
-#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "Dîr~ok (guherbar)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "~Saet (sabît)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
-#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "S~aet (guherbar)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Page Number"
 msgstr "~Numreya Rûpelê"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
-#, fuzzy
 msgid  "~File Name"
 msgstr "~Navê Pelî"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "~Nivîskar"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
-#, fuzzy
 msgid  "~Select Source..."
 msgstr "Çavkanî ~Hilbijêre..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
-#, fuzzy
 msgid  "~Request..."
 msgstr "~Daxwazî..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
-#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "Tabloya Hesêb"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "From ~File..."
 msgstr "Ji ~Pelî..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "Xanxank"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
-#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "Çarçoveya Di~herike..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "~Pel..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "Fiel~ds"
 msgstr "Q~ad"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "T~eşe"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "~Nivîs..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Mezinahî..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "~Girêdanker..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "~Tebeqe..."
 
@@ -4151,162 +3948,130 @@ msgid  "Modify ~Layout..."
 msgstr ""
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
-#, fuzzy
 msgid  "Styl~es"
 msgstr "Şêwaz"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
 msgid  "~Tools"
 msgstr "A~mûr"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
 msgid  "~Slide Show"
 msgstr "~Nîşandana Slaytê"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "~Check..."
 msgstr "~Kontrolkirin..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
-#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "~Kontrola Rastnivîsê ya bixweber"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~Hevwate..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
-#, fuzzy
 msgid  "~Hyphenation"
 msgstr "~Kîtekirin"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "~Sererastkirina Bixweber..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "~Mîhengên Pêşandana Slaytê..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "Pêşandana Slayta ~Taybet..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Animation"
 msgstr "~Anîmasyon"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Interaction..."
 msgstr "~Lihevbandor..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck"
 msgstr "~Kontrola rastnivîsê"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "Bi~guherîne"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Pêşda bîne"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Ber bi p~aş bişîne"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Li Pêşiya ~Objeyê"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "~Li paşiya Bireserê"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "~Vajî bike"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
-#, fuzzy
 msgid  "~Eyedropper"
 msgstr "~Mînaka reng wergire"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "~Gallery"
 msgstr "~Pêşangeh"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Reng"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Tonkirina Cûn"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "~Reş û Spî"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Dijîtiya Mezin"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~Reng"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Tonkirina Cûn"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "~Reş û Spî"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Dijîtiya Mezin"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Rêz bike"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "~Display Quality"
 msgstr "~Qalîteya Dîmen"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Raweya pêş~dîtinê"
 
@@ -5630,172 +5395,138 @@ msgid  "Animation"
 msgstr "Anîmasyon"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "First Image"
 msgstr "First Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Backwards"
 msgstr "Backwards"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Stop"
 msgstr "Stop"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Play"
 msgstr "Play"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Last Image"
 msgstr "Last Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Image Number"
 msgstr "Image Number"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
-#, fuzzy
 msgid  "Duration"
 msgstr "Duration"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
-#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
-#, fuzzy
 msgid  "5"
 msgstr "5"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
-#, fuzzy
 msgid  "7"
 msgstr "7"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
-#, fuzzy
 msgid  "8"
 msgstr "8"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
-#, fuzzy
 msgid  "10"
 msgstr "10"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
-#, fuzzy
 msgid  "12"
 msgstr "12"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
-#, fuzzy
 msgid  "15"
 msgstr "15"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
-#, fuzzy
 msgid  "20"
 msgstr "20"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
-#, fuzzy
 msgid  "25"
 msgstr "25"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
-#, fuzzy
 msgid  "50"
 msgstr "50"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
-#, fuzzy
 msgid  "100"
 msgstr "100"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
-#, fuzzy
 msgid  "500"
 msgstr "500"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
-#, fuzzy
 msgid  "1000"
 msgstr "1000"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
-#, fuzzy
 msgid  "Max."
 msgstr "Herî Zêde."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
-#, fuzzy
 msgid  "Loop Count"
 msgstr "Loop Count"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Object"
 msgstr "Apply Object"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "Apply Objects Individually"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete Current Image"
 msgstr "Delete Current Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete All Images"
 msgstr "Delete All Images"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Numre"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
-#, fuzzy
 msgid  "Image"
 msgstr "Wêne"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
-#, fuzzy
 msgid  "Group object"
 msgstr "Biresera koman"
 
@@ -5804,62 +5535,50 @@ msgid  "Bitmap object"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Hîzakirin"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "Çepê Jor"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "Çep"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Left"
 msgstr "Çepê Jêr"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "Jor"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "Hatiye ortekirin"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "Jêr"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Right"
 msgstr "Rastê Jor"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "Rast"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Right"
 msgstr "Rastê Jêr"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
 msgid  "Create"
 msgstr "Ava bike"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
 msgid  "Animation group"
 msgstr "Koma Anîmasyonê"
 
@@ -5980,17 +5699,14 @@ msgid  "Paper tray from printer s~ettings"
 msgstr ""
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
-#, fuzzy
 msgid  "Notes Window"
 msgstr "Paceya Nîşeyan"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~Pêşve"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "P~aşve"
 
@@ -6043,17 +5759,14 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
-#, fuzzy
 msgid  "~Screen"
 msgstr "~Dîmendêr"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
-#, fuzzy
 msgid  "~Black"
 msgstr "~Reş"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
-#, fuzzy
 msgid  "~White"
 msgstr "~Sipî"
 
@@ -6106,12 +5819,10 @@ msgid  "Banded Rows"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "Sitûna Yekemîn"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "Sitûna Dawî"
 
@@ -6120,7 +5831,6 @@ msgid  "Banded Columns"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "Teşe"
 

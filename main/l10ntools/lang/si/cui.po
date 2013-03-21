@@ -149,7 +149,7 @@ msgstr "යතුරුපුවරු වින්‍යාසය සුරක�
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.String.Text
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "වින්‍යාසය"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.String.Text
 msgid  "My Macros"
@@ -697,7 +697,7 @@ msgstr "මකන්න..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "සටහන:\nඉතාම හොඳ තත්වය ලබාගැනීම සඳහා අයිකනයක ප්‍රමාණය 16x16 විය යුතුයි. වෙනස් ප්‍රමාණ වල අයිකන ස්වයංව ප්‍රමාණනය වෙනු ඇත."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -705,7 +705,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
-msgstr ""
+msgstr "පහත ලැයිස්තුගත කර ඇති ගොනු ආයාත කිරීමට නොහැකි විය.\nගොනු හැඩතලය තේරුම් ගැනීමට නොහැකි විය."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -717,7 +717,7 @@ msgstr "ඔබට පින්තූර මැකීමට විශ්වාස
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "%ICONNAME අයිකනය දැනටමත් පින්තූර ලැයිස්තුවේ අඩංගු වී ඇත.\\න ඔබ දැනට පවතින අයිකනය ප්‍රතිස්ථාපනය කිරීමට කැමතිද?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1762,8 +1762,9 @@ msgid  "Confirm password"
 msgstr "මුරපදය ස්ථිර කරන්න"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
+#, fuzzy
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "සටහන: මුරපදයක් පිහිටවූ පසු, ලිපිය මෙය සමඟ පමණක් විවෘත වනු ඇත"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FixedLine.Text
 #, fuzzy
@@ -2086,27 +2087,22 @@ msgid  "Close"
 msgstr "වසන්න"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
-#, fuzzy
 msgid  "Special Characters"
 msgstr "විශේෂ අකුරු"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "අකුරු (~F)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
-#, fuzzy
 msgid  "~Subset"
 msgstr "අනුකට්ටලය (~S)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
-#, fuzzy
 msgid  "Characters:"
 msgstr "අකුරු:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "මකන්න (~D)"
 
@@ -2139,8 +2135,9 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
-msgstr ""
+msgstr "වදන් පිරික්සුම සදහා නොපවතී\nකරුණාකර ඔබේ ස්ථාපනය පිරික්සා අවශ්‍ය භශාව ස්ථාපනය කරගන්න\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -3447,8 +3444,9 @@ msgid  "Type"
 msgstr "වර්ගය"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
+#, fuzzy
 msgid  "~And"
-msgstr ""
+msgstr "සහ"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 #, fuzzy
@@ -3586,16 +3584,18 @@ msgid  "Macro Security..."
 msgstr "මැක්‍රෝ ආරක්‍ෂාව..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
+#, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "නිබඳව මුරපද ගබඩා කිරීමේ ක්‍රියාව අවලංගු කරන විට එය මුරපද ලැයිස්තුව මකා දමා ප්‍රධාන මුරපදය ප්‍රතිස්ථාපනය කරයි.\n\nඔබට මුරපද ලැයිස්තුව මකාදැමීමට හා ප්‍රධාන මුරපදය ප්‍රතිස්ථාපනය කිරීමට අවශ්‍යද?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "සලකන, Java සම\nඔබ Javascript ද අහෝසි කරයි.\n\nඔබට තවමත් Java? අහෝසි කිරීමට අවශ්‍යද?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3812,32 +3812,26 @@ msgid  "Searching in Japanese"
 msgstr "ජපන් භාශාවෙන් සොයමින්"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FixedLine.Text
-#, fuzzy
 msgid  "Default text direction"
 msgstr "පෙරනිමි පෙළ දිශාව"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Left-to-right"
 msgstr "වමේ සිට දකුණට (~L)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_RIGHT2LEFT.RadioButton.Text
-#, fuzzy
 msgid  "~Right-to-left"
 msgstr "දකුණේ සිට වමට (~R)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_SHEETVIEW.FixedLine.Text
-#, fuzzy
 msgid  "Sheet view"
 msgstr "පත්‍ර දැක්ම"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_RIGHT2LEFT.CheckBox.Text
-#, fuzzy
 msgid  "Right-~to-left"
 msgstr "දකුණේ සිට වමට"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_CURRENTDOCONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Current document only"
 msgstr "වත්මන් ලිපිය පමණි (~C)"
 
@@ -4252,44 +4246,38 @@ msgid  "Name of color scheme"
 msgstr "වර්ණ පටිපාටියේ නාමය"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~Database file"
 msgstr "දත්ත මූල ගොණුව (~D)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "ගවේශනය (~B)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "Registered ~name"
 msgstr "ලියාපදිචි‍ ක‍ල‍ නා‍ම‍ය‍ (~n)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
-#, fuzzy
 msgid  "Edit Database Link"
 msgstr "දත්ත මූල පුරුක"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
-#, fuzzy
 msgid  "Create Database Link"
 msgstr "දත්ත මූල පුරුකක් සාදන්න"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\\n$file$\\ndoes not exist."
-msgstr ""
+msgstr "$file$\nගොණුව\nනොපවතී."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\\n$file$\\ndoes not exist in the local file system."
-msgstr ""
+msgstr "$file$ \nගොනුව\nපෙදෙසි ගොනු පද්ධතියේ නොපවතී."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
-msgstr ""
+msgstr "'$file$ නාමය වෙනත් දත්ත මූලයක් මගින් භාවිත කරයි'.\nකරුණාකර වෙනත් නමක් තෝරන්න"
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "ඔබට මෙම ඇතුලත් කිරීම මකාදැමීමට අවශ්‍යද?"
 
@@ -4970,57 +4958,46 @@ msgid  "You have to restart %PRODUCTNAME so the new or modified values can take 
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
-#, fuzzy
 msgid  "Connection pool"
 msgstr "සම්බන්ධතා තටාකය"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
-#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "සම්බන්ධතා තටාකගත කිරීම සක්‍රිය කර ඇත"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
-#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "%PRODUCTNAME හි දන්නා ධාවක"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
-#, fuzzy
 msgid  "Current driver:"
 msgstr "වත්මන් ධාවකය:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
-#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "මෙම ධාවකය සඳහා තටාකගත කිරීම සක්‍රිය කරන්න"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
-#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "කාලය අවසන්වීම (තත්පර)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
-#, fuzzy
 msgid  "Driver name"
 msgstr "ධාවක නාමය"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
-#, fuzzy
 msgid  "Pool"
 msgstr "තටාකය"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
-#, fuzzy
 msgid  "Timeout"
 msgstr "කාලය අවසන් වීම"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ඔව්"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "නැත"
 
@@ -5165,8 +5142,9 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "තොරතුරු නැති විය හැකි නිසා ODF 1.2 දිගු කිරීම භාවිතා නොකරයි."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr " \"%1\" සම්මත ගොණු සැකැස්ම ලෙස යොදාගැනීම තොරතුරු නැති වීමට හේතු විය හැක.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5179,8 +5157,9 @@ msgid  "Improvement Program"
 msgstr "වැඩිදියුණු කිරීමේ වැඩසටහන"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
+#, fuzzy
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "%PRODUCTNAME හී තත්වය උසස් කිරීම සඳහා %PRODUCTNAME සංවර්ධක වැඩසටහනට සම්බන්ධ වීමට අප ඔබට ආරාධනා කරමු.\n\nඔබ සහභාගී වීමට කැමති නම්,අප ඔබ %PRODUCTNAME භාවිතා කරන ආකාරය පිළිබඳ වාර්ථා නිර්ණාමිකව එක් කරගනිමු. භාවිත රටාවන් හඳුනාගැනීම සඳහා එම දත්ත භාවිත වේ.\n\n%PRODUCTNAME සංවර්ධක වැඩසටහන ඔබේ පුද්ගලික තොරතුරු, ලේඛන අන්තර්ගතය ආදී කිසිවක් එක් කර නොගනී."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5437,57 +5416,46 @@ msgid  "Writing aids"
 msgstr "ලිවීමේ සහාය"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FixedLine.Text
-#, fuzzy
 msgid  "Miscellaneous options"
 msgstr "විවිධ විකල්ප"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CheckBox.Text
-#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
 msgstr "සහායක තාක්‍ෂ‍ණික ආයුද (වැඩසටහන් නැවත ආරම්ඹ කිරීමක් අවශ්‍ය වේ) (~a)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CheckBox.Text
-#, fuzzy
 msgid  "Use te~xt selection cursor in read-only text documents"
 msgstr "පෙළ තේරුම් කර්සරය කියවීම-පමණයි ලේඛන වලදී යොදාගන්න (~x)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
-#, fuzzy
 msgid  "Allow animated ~graphics"
 msgstr "සජීවීකරණ චිත්‍රණ සදහා ඉඩ දෙන්න (~g)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CheckBox.Text
-#, fuzzy
 msgid  "Allow animated ~text"
 msgstr "සජීවීකරණ පාඨ සදහා ඉඩදෙන්න (~t)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CheckBox.Text
-#, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "පසු උදව් ඉගී අතුරුදන් වේ (~H)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "තත්පර"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options for high contrast appearance"
 msgstr "ඉහල දීප්ති වෙනසක් සහිත පෙනුමක් සඳහා විකල්ප"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
-#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
 msgstr "ස්වයංක්‍රීයව මෙහෙයුම් පද්ධතියේ ඉහල දීප්ති වෙනස් ප්‍රකාරය හඳුනාගන්න (~d)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CheckBox.Text
-#, fuzzy
 msgid  "Use automatic font ~color for screen display"
 msgstr "තිර දර්ශණය සඳහා ස්වයංක්‍රීය අකුරු වර්ණය තෝරන්න (~c)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CheckBox.Text
-#, fuzzy
 msgid  "~Use system colors for page previews"
 msgstr "පිටු පෙරදැක්ම සදහා පද්ධති වර්ණ යොදාගන්න (~U)"
 
@@ -5900,72 +5868,58 @@ msgid  "This setting is protected by the Administrator"
 msgstr "මෙම සිටුවම පරිපාලක විසින් ආරක්ෂා කර ඇත"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CheckBox.Text
-#, fuzzy
 msgid  "~Apply replacement table"
 msgstr "ප්‍රතිස්ථාපන වගුව ආදේශ කරන්න (~A)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT1.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "ෆොන්ටය (~F)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT2.FixedText.Text
-#, fuzzy
 msgid  "Re~place with"
 msgstr "මේ සමඟ ප්‍රතිස්ථාපනය කරන්න (~p)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.ToolBoxItem.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "යොදන්න"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "මකන්න"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FixedLine.Text
-#, fuzzy
 msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr "HTML, Basic සහ SQL මූල සඳහා ෆොන්ට සිටුවම්"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FixedText.Text
-#, fuzzy
 msgid  "Fonts"
 msgstr "ෆොන්ට"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_NONPROP.CheckBox.Text
-#, fuzzy
 msgid  "Non-proportional fonts only"
 msgstr "සමානුපාතික නොවන ෆොන්ට පමණයි"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "ප්‍රමාණය (~S)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "Always"
 msgstr "සැමවිටම"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "Screen only"
 msgstr "තිරය පමණයි"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ෆොන්ටය"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.String.Text
-#, fuzzy
 msgid  "Replace with"
 msgstr "මේ සමඟ ප්‍රතිස්ථාපනය කරන්න"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ස්වයංක්‍රීය"
 
@@ -6040,8 +5994,9 @@ msgid  "~Close"
 msgstr "වසා දමන්න (~C)"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
+#, fuzzy
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "දෙනලද නාමය දැනටමත් භවිතයේ පවතී.\nනව නාමයක් ඇතුළත් කරන්න."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6258,37 +6213,30 @@ msgid  "Do you want to delete the dictionary?"
 msgstr "ශබ්දකෝෂය මකාදැමීමට අවශ්‍යද?"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
-#, fuzzy
 msgid  "Registered databases"
 msgstr "ලියාපදිංචි කල දත්ත සමුදායයන්"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Registered name"
 msgstr "ලියාපදිංචි කල නම"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
-#, fuzzy
 msgid  "Database file"
 msgstr "දත්ත සමුදාය ගොනුව"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "නව... (~N)"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "සකසන්න... (~E)"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "මකන්න (~D)"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
-#, fuzzy
 msgid  "Registered databases"
 msgstr "ලියාපදිංචි කල දත්ත සමුදායයන්"
 
@@ -6498,47 +6446,38 @@ msgid  "Ctrl-click required to follow hyperlinks"
 msgstr "පුරුක් පසුපස යාමට Ctrl-click අවශ්‍ය වේ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FixedLine.Text
-#, fuzzy
 msgid  "Kerning"
 msgstr "හරකිරීම්"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RadioButton.Text
-#, fuzzy
 msgid  "~Western characters only"
 msgstr "බටහිර අක්‍ෂ‍ර‍ පමණි (~W)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RadioButton.Text
-#, fuzzy
 msgid  "Western ~text and Asian punctuation"
 msgstr "බටහිර පෙළ හා ආසියානු විරාම (~t)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FixedLine.Text
-#, fuzzy
 msgid  "Character spacing"
 msgstr "අ‍ක්‍ෂ‍ර‍ ඉ‍ඩ‍තැ‍බී‍ම්‍"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RadioButton.Text
-#, fuzzy
 msgid  "~No compression"
 msgstr "හැකිළවුම් නැත (~N)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RadioButton.Text
-#, fuzzy
 msgid  "~Compress punctuation only"
 msgstr "විරාම පමණක් හකුළන්න (~C)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RadioButton.Text
-#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
 msgstr "විරාම හා ජපාන කාන සංකෝචනය කරන්න (~p)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FixedLine.Text
-#, fuzzy
 msgid  "First and last characters"
 msgstr "ප්‍රථම හා අවසන් අක්‍ෂ‍ර‍"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "භාශාව (~L)"
 
@@ -7546,8 +7485,9 @@ msgid  "O~uter"
 msgstr "පිටත (~u)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
+#, fuzzy
 msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "මායිම් සිටුවම් මුද්‍රණ පරාසයෙන් පිටත වේ.\n\nඔබට ඒත් මේ සිටුවම් යෙදීමට අවශ්‍යද?"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -8388,17 +8328,14 @@ msgid  "Link"
 msgstr "සබැඳුම"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TabDialog.Text
-#, fuzzy
 msgid  "Border / Background"
 msgstr "මායිම / පසුබිම"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "මායිම්"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "පසුබිම"
 
@@ -8468,117 +8405,94 @@ msgid  "~Bottom"
 msgstr "පහළ (~B)"
 
 #: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-#, fuzzy
 msgid  "Unlinked graphic"
 msgstr "සබැඳි නොකල චිත්‍රකය"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
-#, fuzzy
 msgid  "Background"
 msgstr "පසුබිම"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
-#, fuzzy
 msgid  "A~s"
 msgstr "ලෙස (~s)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
 msgid  "Color"
 msgstr "වර්ණය"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
 msgid  "Graphic"
 msgstr "චිත්‍රකය"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_TBL_DESC.FixedText.Text
-#, fuzzy
 msgid  "F~or"
 msgstr "සඳහා (~o)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Cell"
 msgstr "කොටුව"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Row"
 msgstr "පේළිය"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item3.StringList.item
-#, fuzzy
 msgid  "Table"
 msgstr "වගුව"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "ඡේදය"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Character"
 msgstr "අනු ලකුණ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FixedLine.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "පසුබිම් වර්ණය"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FixedText.Text
-#, fuzzy
 msgid  "~Transparency"
 msgstr "පාරදෘශ්‍යතාව (~T)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_FILE.FixedLine.Text
-#, fuzzy
 msgid  "File"
 msgstr "ගොනුව"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "ගවේශනය කරන්න... (~B)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_LINK.CheckBox.Text
-#, fuzzy
 msgid  "~Link"
 msgstr "සබැඳිය (~L)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Type"
 msgstr "වර්ගය (~T)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_POSITION.RadioButton.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "පිහිටීම (~P)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_AREA.RadioButton.Text
-#, fuzzy
 msgid  "Ar~ea"
 msgstr "ප්‍රදේශය (~e)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_TILE.RadioButton.Text
-#, fuzzy
 msgid  "~Tile"
 msgstr "ටයිලය (~T)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FL_GRAPH_TRANS.FixedLine.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "පාරදෘශ්‍යතාව"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pre~view"
 msgstr "පෙරදැක්ම (~v)"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.STR_BROWSE.String.Text
-#, fuzzy
 msgid  "Find graphics"
 msgstr "චිත්‍රක සොයන්න"
 
@@ -8598,8 +8512,9 @@ msgid  "Assigned macro"
 msgstr "ලබාදුන් මැක්‍රෝව"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
+#, fuzzy
 msgid  "~Existing macros\\n"
-msgstr ""
+msgstr "දැනට ඇති මැක්‍රෝවන් පවතින්නේ:\n (~E)"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 #, fuzzy
@@ -8617,242 +8532,194 @@ msgid  "Macros"
 msgstr "මැක්‍රෝවන්"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.TabDialog.Text
-#, fuzzy
 msgid  "AutoCorrect"
 msgstr "ස්වයංක්‍රීයව නිවැරදි කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.PageItem.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "ප්‍රතිස්ථාපනය කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PageItem.Text
-#, fuzzy
 msgid  "Exceptions"
 msgstr "විශේෂය"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "අභිරුචි"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "අභිරුචි"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PageItem.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "පෙදෙසිකරණය කල අභිරුචි"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "වචන සම්පූර්ණ කිරීම"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "කඩවසම් ටැග්"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
-#, fuzzy
 msgid  "Replacements and exceptions for language:"
 msgstr "භාෂාව සඳහා ප්‍රතිස්ථාපන සහ විශේෂණ:"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_USE_REPLACE.String.Text
-#, fuzzy
 msgid  "Use replacement table"
 msgstr "ප්‍රතිස්ථාපනය කිරීමේ වගුව භාවිතා කරන්න"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_WORD.String.Text
-#, fuzzy
 msgid  "Correct TWo INitial CApitals"
 msgstr "ආරම්භක විශාලකුරු දෙක නිවැරදි කරන්න"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.String.Text
-#, fuzzy
 msgid  "Capitalize first letter of every sentence"
 msgstr "සෑම වාක්‍යයකම මුල් අකුර විශාල කරන්න"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.String.Text
-#, fuzzy
 msgid  "Automatic *bold* and _underline_"
 msgstr "ස්වයං *තදකරු* සහ _යටින් ඉරි ඇදීම_"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.STR_NO_DBL_SPACES.String.Text
-#, fuzzy
 msgid  "Ignore double spaces"
 msgstr "ද්වී ඉඩ නොතකන්න"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.String.Text
-#, fuzzy
 msgid  "URL Recognition"
 msgstr "URL හඳුනාගැනීම"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.String.Text
-#, fuzzy
 msgid  "Replace dashes"
 msgstr "ඉරි ප්‍රතිස්ථාපනය කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "සිටුවම්"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.PB_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "සංස්කරණය කරන්න... (~E)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[M]: Replace while modifying existing text"
 msgstr "[M]: දැනට පවතින පෙළ විකරණය කරන අතර ප්‍රතිස්ථාපනය කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER2_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[T]: AutoFormat/AutoCorrect while typing"
 msgstr "[T]: ටයිප් කරන අතර ස්වයං හැඩතලගැන්වීම/ ස්වයං නිවැරදි කිරීම කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.String.Text
-#, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "හිස් ඡේද ඉවත් කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.String.Text
-#, fuzzy
 msgid  "Replace Custom Styles"
 msgstr "රිසි මෝස්තර ප්‍රතිස්ථාපනය කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.String.Text
-#, fuzzy
 msgid  "Replace bullets with: "
 msgstr "බුලට් මේ සමඟ ප්‍රතිස්ථානය කරන්න: "
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_RIGHT_MARGIN.String.Text
-#, fuzzy
 msgid  "Combine single line paragraphs if length greater than"
 msgstr "දිග මීට වැඩි නම් තනි රේඛා ඡේද සම්බන්ධ කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_NUM.String.Text
-#, fuzzy
 msgid  "Apply numbering - symbol: "
 msgstr "අංකකරණය යොදන්න - සළකුණු:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_BORDER.String.Text
-#, fuzzy
 msgid  "Apply border"
 msgstr "මායිම යොදන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_TABLE.String.Text
-#, fuzzy
 msgid  "Create table"
 msgstr "වගුව තනන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.String.Text
-#, fuzzy
 msgid  "Apply Styles"
 msgstr "මෝස්තර යොදන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.String.Text
-#, fuzzy
 msgid  "Delete spaces and tabs at beginning and end of paragraph"
 msgstr "ඡේදයේ ආරම්භයේ සහ අවසානයේ ඉඩ සහ ටැබ් මකන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_BETWEEN_LINES.String.Text
-#, fuzzy
 msgid  "Delete spaces and tabs at end and start of line"
 msgstr "පේළියේ ආරම්භයේ සහ අවසානයේ ඉඩ සහ ටැබ් මකන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.FL_PRCNT.FixedLine.Text
-#, fuzzy
 msgid  "Minimum size"
 msgstr "අවම ප්‍රමාණය"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.MetricField.Text
-#, fuzzy
 msgid  "Combine"
 msgstr "සම්බන්ධ කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "ප්‍රතිස්ථාපනය කරන්න (~c)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "~With:"
 msgstr "සමඟ: (~W)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.CB_TEXT_ONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Text only"
 msgstr "පෙළ පමණයි (~T)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "නව (~N)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "මකන්න (~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.STR_MODIFY.String.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "ප්‍රතිස්ථාපනය කරන්න (~R)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_ABBREV.FixedLine.Text
-#, fuzzy
 msgid  "Abbreviations (no subsequent capital)"
 msgstr "කෙටි යෙදුම් (අපර විශාලකුරු නැත)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWABBREV.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "නව (~N)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELABBREV.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "මකන්න (~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CheckBox.Text
-#, fuzzy
 msgid  "~AutoInclude"
 msgstr "ස්වයංව අඩංගු කරන්න (~A)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FixedLine.Text
-#, fuzzy
 msgid  "Words with TWo INitial CApitals"
 msgstr "ආරම්භක විශාලකුරු දෙකක් සමඟ වචන"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Ne~w"
 msgstr "නව (~w)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Dele~te"
 msgstr "මකන්න (~t)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOCAPS.CheckBox.Text
-#, fuzzy
 msgid  "A~utoInclude"
 msgstr "ස්වයංව එක් කරන්න (~u)"
 
@@ -8873,92 +8740,74 @@ msgid  "Delete words with two initial capitals"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TabPage.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "පෙදෙසිකරණය කල අභිරුචි"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.String.Text
-#, fuzzy
 msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr "ප්‍රංශ පෙළෙහි විරාම ලකුණු විශේෂණය කිරීමට පෙර නොබෙදෙන ඉඩ එක් කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.String.Text
-#, fuzzy
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
 msgstr "ක්‍රමාංකිත අංක උපසර්ග හැඩතලගන්වන්න (1වෙනි -> 1^වෙනි)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FixedLine.Text
-#, fuzzy
 msgid  "Single quotes"
 msgstr "තනි උද්ධරණ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_SGL_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "ප්‍රතිස්ථාපනය කරන්න (~c)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~Start quote:"
 msgstr "ආරම්භක උද්ධරණය: (~S)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~End quote:"
 msgstr "අවසාන උද්ධරණය: (~E)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_SGL_STD.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "පෙරනිමි (~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_DOUBLE.FixedLine.Text
-#, fuzzy
 msgid  "Double quotes"
 msgstr "ද්වී උද්ධරණ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repl~ace"
 msgstr "ප්‍රතිස්ථාපනය කරන්න (~a)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "Start q~uote:"
 msgstr "ආරම්භක උද්ධරණය: (~u)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "E~nd quote:"
 msgstr "අවසාන උද්ධරණය: (~n)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_DBL_STD.PushButton.Text
-#, fuzzy
 msgid  "De~fault"
 msgstr "පෙරනිමි (~f)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_START.String.Text
-#, fuzzy
 msgid  "Start quote"
 msgstr "ආරම්භක උද්ධරණය"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_END.String.Text
-#, fuzzy
 msgid  "End quote"
 msgstr "අවසාන උද්ධරණය"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "පෙරනිමි"
 
@@ -8987,72 +8836,58 @@ msgid  "End quote of double quotes"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CheckBox.Text
-#, fuzzy
 msgid  "Enable word ~completion"
 msgstr "වචන සම්පූර්ණ කිරීම සක්‍රිය කරන්න (~c)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_APPEND_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "~Append space"
 msgstr "ඉඩ ඈඳන්න (~A)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_AS_TIP.CheckBox.Text
-#, fuzzy
 msgid  "~Show as tip"
 msgstr "ඉඟියක් ලෙස පෙන්වන්න (~S)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_COLLECT.CheckBox.Text
-#, fuzzy
 msgid  "C~ollect words"
 msgstr "වචන එකතු කරන්න (~o)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
-#, fuzzy
 msgid  "~When closing a document, remove the words collected from it from the list"
 msgstr "ලිපියක් වැසීමේදී එයින් එකතු කල වචන ලැයිස්තුවෙන් ඉවත් කරන්න (~W)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
-#, fuzzy
 msgid  "Acc~ept with"
 msgstr "මේ සමඟ පිළිගන්න (~e)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MIN_WORDLEN.FixedText.Text
-#, fuzzy
 msgid  "Mi~n. word length"
 msgstr "අවම වචන දිග (~n)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MAX_ENTRIES.FixedText.Text
-#, fuzzy
 msgid  "~Max. entries"
 msgstr "උපරිම ප්‍රවේශ (~M)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PB_ENTRIES.PushButton.Text
-#, fuzzy
 msgid  "~Delete Entry"
 msgstr "ප්‍රවේශය මකන්න (~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PushButton.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "වචන සම්පූර්ණ කිරීම"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "කඩවසම් ටැග්"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CheckBox.Text
-#, fuzzy
 msgid  "Label text with smart tags"
 msgstr "පෙළ කඩවසම් ටැග් වලින් ලේබල් කරන්න"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.FT_SMARTTAGS.FixedText.Text
-#, fuzzy
 msgid  "Currently installed smart tags"
 msgstr "දැනට ස්ථාපනය කර ඇති කඩවසම් ටැග්"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PushButton.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "ගුණාංග..."
 
@@ -9067,8 +8902,9 @@ msgid  "Do you want to delete the gradient?"
 msgstr "ඔබට අනුක්‍රමණය මකාදැමීමට අවශ්‍යද?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
+#, fuzzy
 msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "අනුක්‍රමණය සුරැකීමෙන් තොරව වෙනස් වී ඇත.\nඅනුක්‍රමණය වෙනස් කරන්න හෝ නව අනුක්‍රමණයක් එක් කරන්න."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -9086,8 +8922,9 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "මෙම බිට්මැපය මකාදැමීමට අවශ්‍ය බවට විශ්වාසද?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
+#, fuzzy
 msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "බිට්මැපය සුරැකීමෙන් තොරව වෙනස්වී ඇත. \nතෝරාගත් බිට්මැපය වෙනස් කරන්න හෝ නව බිට්මැපයක් එක් කරන්න"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9100,8 +8937,9 @@ msgid  "Do you want to delete the line style?"
 msgstr "ඔබට රේඛා රටාව මකාදැමීමට අවශ්‍යද?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
+#, fuzzy
 msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "රේඛා වර්ගය සුරැකීමෙන් තොරව වෙනස් වී ඇත.\nරේඛා වර්ගය වෙනස් කරන්න හෝ නව අනුක්‍රමණයක් එක් කරන්න."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9114,8 +8952,9 @@ msgid  "Do you want to delete the hatching?"
 msgstr "ඔබට කඩඉරි මකාදැමීමට අවශ්‍යද?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "කඩඉරි වර්ගය සුරැකීමෙන් තොරව වෙනස් වී ඇත.\nකඩඉරි වර්ගය වෙනස් කරන්න හෝ නව අනුක්‍රමණයක් එක් කරන්න."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9138,8 +8977,9 @@ msgid  "Do you want to delete the color?"
 msgstr "ඔබට වර්ණය මකාදැමීමට අවශ්‍යද?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
+#, fuzzy
 msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
-msgstr ""
+msgstr "සුරැකීමෙන් තොරව වර්ණය වෙනස් විය.\nතෝරාගත් වර්ණය වෙනස් කරන්න හෝ නව වර්ණයක් එක් කරන්න."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9162,8 +9002,9 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "ලැයිස්තුව සුරැකුමෙන් තොරව වෙනස්වී ඇත. ලැයිස්තුව දැන්ම සුරැකීමට කැමතිද?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name you have entered already exists. \\nPlease choose another name."
-msgstr ""
+msgstr "ඔබ ඇතුලත් කල නාමය දැනටමත් පවතී. \nකරුණාකර වෙනත් නාමයක් තෝරාගන්න."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9176,8 +9017,9 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "ඔබට ඊ-හිස මකාදැමීමට අවශ්‍යද?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "ඊ හිස සුරැකීමෙන් තොරව වෙනස් වී ඇත.\nඊ හිස වෙනස් කරන්න හෝ නව අනුක්‍රමණයක් එක් කරන්න."
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -10239,142 +10081,114 @@ msgid  "~Original Size"
 msgstr "මුල් ප්‍රමාණය (~O)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.TabPage.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "පෙළගැස්ම"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
-#, fuzzy
 msgid  "Text alignment"
 msgstr "පෙළ පෙළගැස්ම"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "තිරස් (~z)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "පෙරනිමි"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "වම"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
-#, fuzzy
 msgid  "Center"
 msgstr "මධ්‍යය"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "දකුණ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.StringList.item
-#, fuzzy
 msgid  "Justified"
 msgstr "යුක්තිමත් වූ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.StringList.item
-#, fuzzy
 msgid  "Filled"
 msgstr "පිරවූ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FixedText.Text
-#, fuzzy
 msgid  "I~ndent"
 msgstr "අනුඡේදනය කරන්න (~n)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "සිරස් (~V)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "පෙරනිමි"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "ඉහළ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.StringList.item
-#, fuzzy
 msgid  "Middle"
 msgstr "මැද"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "පහළ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ORIENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "පෙළ දිශානතිය"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
-#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "සිරස්ව අඩුක්කල (~r)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "De~grees"
 msgstr "අංශක (~g)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_BORDER_LOCK.FixedText.Text
-#, fuzzy
 msgid  "Re~ference edge"
 msgstr "යොමු දාරය (~f)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TriStateBox.Text
-#, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "ආසියානු පිරිසැළසුම ආකාරය (~m)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "ගුණාංග"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TriStateBox.Text
-#, fuzzy
 msgid  "~Wrap text automatically"
 msgstr "පෙළ ස්වයංව ඔතන්න (~W)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_HYPH.TriStateBox.Text
-#, fuzzy
 msgid  "Hyphenation ~active"
 msgstr "සමාස විභ්නය සක්‍රියයි (~a)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_SHRINK.TriStateBox.Text
-#, fuzzy
 msgid  "~Shrink to fit cell size"
 msgstr "කොටුවේ ප්‍රමාණයට යෝග්‍ය වීමට හකුළන්න (~S)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_TEXTFLOW.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "පෙළ දිශාව (~x)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_BOTTOMLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Lower Cell Border"
 msgstr "පහළ කොටු මායිමේ සිට පෙළ විස්තාරණය"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_TOPLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Upper Cell Border"
 msgstr "ඉහළ කොටු මායිමේ සිට පෙළ විස්තාරණය"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_CELLLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension Inside Cell"
 msgstr "කොටුව ඇතුලත පෙළ විස්තාරණය"
 
@@ -10494,137 +10308,110 @@ msgid  "Follow text flow"
 msgstr "පෙළ ගැලීම අනුගමනය කරන්න"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FixedLine.Text
-#, fuzzy
 msgid  "Western text font"
 msgstr "බටහිර පෙළ ෆොන්ට"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ෆොන්ට"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "අකුරු (~F) "
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE.FixedText.Text
-#, fuzzy
 msgid  "~Typeface"
 msgstr "අක්ෂර මුහුණත (~T)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Typeface"
 msgstr "අක්ෂර මුහුණත (~T)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "සාමාන්‍යය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "ඇල අකුරු"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "තද පැහැ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "තදපැහැ ඇල අකුරු"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "සාමාන්‍යය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "ඇල අකුරු"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "තද පැහැ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "තදපැහැ ඇල අකුරු"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "ප්‍රමාණය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "ප්‍රමාණය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "භාෂාව"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "භාශාව  (~L)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_EAST.FixedLine.Text
-#, fuzzy
 msgid  "Asian text font"
 msgstr "ආසියානු පෙළ ෆොන්ට"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ෆොන්ටය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_STYLE.FixedText.Text
-#, fuzzy
 msgid  "T~ypeface"
 msgstr "අක්ෂර මුහුණත (~y)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item1.StringList.item
-#, fuzzy
 msgid  "Normal"
 msgstr "සාමාන්‍යය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "ඇල අකුරු"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "තද පැහැ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "තදපැහැ ඇල අකුරු"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "ප්‍රමාණය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "භාෂාව"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_CTL.FixedLine.Text
-#, fuzzy
 msgid  "CTL font"
 msgstr "CTL ෆොන්ට"
 
@@ -11284,187 +11071,150 @@ msgid  "Example"
 msgstr "උදාහරණ"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "මායිම්"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FixedLine.Text
-#, fuzzy
 msgid  "Line arrangement"
 msgstr "රේඛා සංවිධානය"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "පෙරනිමි (~D)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_USERDEF.FixedText.Text
-#, fuzzy
 msgid  "~User-defined"
 msgstr "පරිශීලක අර්ථ දැක්වූ (~U)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Line"
 msgstr "පේළිය"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FixedText.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "මෝස්තරය (~y)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "වර්ණය (~C)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "වම (~L)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "Right"
 msgstr "දකුණ"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_TOP.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "ඉහළ (~T)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_BOTTOM.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "පහළ (~B)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_SYNC.CheckBox.Text
-#, fuzzy
 msgid  "Synchronize"
 msgstr "සමමුහුර්ත කරන්න"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_DISTANCE.FixedLine.Text
-#, fuzzy
 msgid  "Spacing to contents"
 msgstr "අන්තර්ගතයට ඉඩ තැබීම"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWPOS.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "පිහිටීම (~P)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWSIZE.FixedText.Text
-#, fuzzy
 msgid  "Distan~ce"
 msgstr "දුර (~c)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWCOLOR.FixedText.Text
-#, fuzzy
 msgid  "C~olor"
 msgstr "වර්ණය (~o)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow style"
 msgstr "සෙවණැලි මෝස්තරය"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "ගුණාංග"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CheckBox.Text
-#, fuzzy
 msgid  "~Merge with next paragraph"
 msgstr "ඊළඟ ඡේදය සමඟ ඒකාබද්ධ කරන්න (~M)"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEADJACENTBORDERS.CheckBox.Text
-#, fuzzy
 msgid  "~Merge adjacent line styles"
 msgstr "ආසන්න රේඛා මෝස්තර ඒකාබද්ධ කරන්න (~M)"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_NONE.String.Text
-#, fuzzy
 msgid  "Set No Borders"
 msgstr "මායිම් එපා පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_ONLYOUTER.String.Text
-#, fuzzy
 msgid  "Set Outer Border Only"
 msgstr "පිටත මායිම පමණයි පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERHORI.String.Text
-#, fuzzy
 msgid  "Set Outer Border and Horizontal Lines"
 msgstr "පිටත මායිම සහ තිරස් රේඛා පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERALL.String.Text
-#, fuzzy
 msgid  "Set Outer Border and All Inner Lines"
 msgstr "පිටත මායිම් සහ පියළු ඇතුල් රේඛා පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_TABLE_PRESET_OUTERINNER.String.Text
-#, fuzzy
 msgid  "Set Outer Border Without Changing Inner Lines"
 msgstr "ඇතුලත රේඛා වෙනස් නොකර පිටත මායිම් පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_DIAGONAL.String.Text
-#, fuzzy
 msgid  "Set Diagonal Lines Only"
 msgstr "විකර්ණ රේඛ අපමණයි පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_ALL.String.Text
-#, fuzzy
 msgid  "Set All Four Borders"
 msgstr "සියළු මායිම් හතරම පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_LEFTRIGHT.String.Text
-#, fuzzy
 msgid  "Set Left and Right Borders Only"
 msgstr "වම් සහ දකුණු මායිම් පමණයි පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_TOPBOTTOM.String.Text
-#, fuzzy
 msgid  "Set Top and Bottom Borders Only"
 msgstr "ඉහළ සහ පහළ මායිම් පමණයි පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_PARA_PRESET_ONLYLEFT.String.Text
-#, fuzzy
 msgid  "Set Left Border Only"
 msgstr "වම් මායිම පමණයි පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_HOR_PRESET_ONLYHOR.String.Text
-#, fuzzy
 msgid  "Set Top and Bottom Borders, and All Inner Lines"
 msgstr "ඉහළ සහ පහළ මායිම් සහ සියළු ඇතුල් රේඛා පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_VER_PRESET_ONLYVER.String.Text
-#, fuzzy
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "වම් සහ දකුණු මායිම් සහ සියළු ඇතුල් රේඛා පිහිටුවන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.String.Text
-#, fuzzy
 msgid  "No Shadow"
 msgstr "සෙවණැල්ල නැත"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Bottom Right"
 msgstr "සෙවණැල්ල පහළ දකුණට යොමු කරන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Top Right"
 msgstr "සෙවණැල්ල ඉහළ දකුණට යොමු කරන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Bottom Left"
 msgstr "සෙවණැල්ල පහළ වමට යොමු කරන්න"
 
 #: source/tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.String.Text
-#, fuzzy
 msgid  "Cast Shadow to Top Left"
 msgstr "සෙවණැල්ල ඉහළ වමට යොමු කරන්න"
 

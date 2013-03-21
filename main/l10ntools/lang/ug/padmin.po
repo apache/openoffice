@@ -61,7 +61,7 @@ msgstr "خەت نۇسخا قوش"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "خەت نۇسخا ھۆججىتىنى قاپلىۋېتەمسىز؟\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "يوق"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "خەت نۇسخىسى\n%s\nنىڭ فورمات ھۆججىتى (كېڭەيتىلگەن ئاتى .afm)نى تاپالمىدى، شۇڭلاشقا بۇ خەت نۇسخىسىنى قاچىلىيالمايدۇ. فورمات ھۆججىتى ghostscript تەرىپىدىن شەكىللىنىپ خەت نۇسخىسى تۇرۇشلۇق مۇندەرىجە ياكى ئۇنىڭ تارماق مۇندەرىجىسى afm كە قويۇلىدۇ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "خەت نۇسخا ئۆلچەم ھۆججىتىنى كۆچۈرەلمىدى\n   %s\nبۇ خەت نۇسخىسىنى قاچىلىيالمايدۇ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "خەت نۇسخا ھۆججىتىنى كۆچۈرەلمىدى\n   %s\nبۇ خەت نۇسخىسىنى قاچىلىيالمايدۇ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -177,7 +177,7 @@ msgstr "سىناق بەت مۇۋەپپەقىيەتلىك بېسىلدى. بېس�
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
-msgstr ""
+msgstr "سىناق بېتى مۇۋەپپەقىيەتلىك بېسىپ چىقىرىلدى. تەكشۈرۈپ كۆرۈڭ."
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -289,7 +289,7 @@ msgstr "بۇ ھۆججەتتە خەت نۇسخا ئۆلچەم سانلىق مەل
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "خەت نۇسخا ئۆلچەم ھۆججىتى\n\n%s\n\nئايلاندۇرالمىدى، سەۋەبى تۆۋەندىكىچە:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "\"%s\" بۇ زۆرۈر بولغان قوزغىتىش پروگراممى�
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "\"%s1\" قوزغىتىش پروگراممىسىنى چىقىرىۋېتەلمەيدۇ. تۆۋەندىكى ھۆججەتنى مۇۋەپپەقىيەتلىك ئۆچۈرەلمىدى\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

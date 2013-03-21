@@ -61,11 +61,11 @@ msgstr "Kein Text"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Geben Sie das Passwort ein, um die Datei zu öffnen: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Geben Sie das Passwort ein, um die Datei zu bearbeiten: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "Dokument in Benutzung"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Das Dokument  '$(ARG1)'  ist durch\n$(ARG2)\nzur Bearbeitung gesperrt.\n\nVersuchen Sie das Dokument später zu speichern oder speichern Sie eine Kopie.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "Meldung vom Server:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "Geben Sie Benutzernamen und Passwort ein für:\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Geben Sie Benutzernamen und Passwort ein für:\n\"%2\" auf %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "Üb~ermitteln"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Der Server '${HOST}' möchte ein oder mehrere Cookies setzen.\nCookies sind Informationen, die sich auf bestimmte Klassen von URLs beziehen. Fordert %PRODUCTNAME später ein Dokument an, welches der URL nach einer Klasse eines vorher empfangenen Cookies entspricht, wird diese Information von %PRODUCTNAME an den Server gesendet. So können sich Server den Zustand einer WWW Anwendung (z.B. in den Warenkorb gelegte Artikel in einem Einkaufssystem) merken.\n\nFolgende Cookies sollen gesetzt werden:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domain: ${DOMAIN}, Pfad: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Cookieempfang"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME hat für den Server '${HOST}' Cookies gespeichert, die beim Anfordern des Dokumentes ${PATH} verschickt werden sollen.\nCookies sind Informationen, die sich auf bestimmte Klassen von URLs beziehen. Sie werden von manchen Servern beim Aufruf bestimmter Dokumente an %PRODUCTNAME geschickt und dort gespeichert. Fordert %PRODUCTNAME später ein Dokument an, welches der URL nach einer Klasse eines vorher empfangenen Cookies entspricht, wird diese Information von %PRODUCTNAME an den Server gesendet. So können sich Server den Zustand einer WWW Anwendung (z.B. in den Warenkorb gelegte Artikel in einem Einkaufssystem) merken.\n\nFolgende Cookies sollen gesetzt werden:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domain: ${DOMAIN}, Pfad: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Dokument in Benutzung"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Die Dokumentdatei '$(ARG1)' ist zum Bearbeiten gesperrt durch:\n\n$(ARG2)\n\nÖffnen Sie das Dokument schreibgeschützt oder erstellen Sie eine Arbeitskopie.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "Ihr Dokument wurde von jemand anderem geändert"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Die Datei wurde geändert, nachdem Sie sie in %PRODUCTNAME geöffnet haben. Wenn Sie Ihre Version speichern, werden durch Andere vorgenommene Änderungen überschrieben.\n\nMöchten Sie trotzdem speichern?"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME Update verfügbar"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Dieses Dokument wurde mit einer neueren Version von %PRODUCTNAME erstellt. Es könnte Eigenschaften enthalten, die von Ihrer gegenwärtigen Version nicht unterstützt werden.\n\nKlicken Sie auf 'Jetzt aktualisieren', um das Online-Update zu starten und die neueste Version von %PRODUCTNAME herunterzuladen."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "Achtung: wenn sie das Master Passwort vergessen, können sie nicht mehr 
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Das Dokument '$(ARG1)' ist durch Sie seit $(ARG2) auf einem anderen System zum Bearbeiten gesperrt.\n\nÖffnen Sie das Dokument schreibgeschützt oder ignorieren Sie die Bearbeitungssperre, um das Dokument zum Bearbeiten zu öffnen.\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "Öffnen"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Das Dokument '$(ARG1)' ist durch Sie seit $(ARG2) auf einem anderen System zum Bearbeiten gesperrt.\n\nSchließen Sie das Dokument auf dem anderen System und wiederholen Sie den Speichervorgang oder ignorieren Sie die Dateisperre und speichern Sie das aktuelle Dokument.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

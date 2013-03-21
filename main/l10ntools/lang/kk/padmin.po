@@ -61,7 +61,7 @@ msgstr "Қарiптердi қосу"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "Қарiптер файлын жаңадан жазғыңыз келедi ме \n %s?"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "Жоқ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Қарiп файлы үшiн  \n%s\n пiшiм файлы ( .afm кеңейтулуiмен) табылмады. Сондықтан да қарiптi орнатуға мүмкiндiк болмай тұр. Пiшiм файлын құраға болады, мысалы, ghostscript көмегiмен, және қарiп файлы орналасқан бiр бумада, немесе afm-файлов үшiн оның iшкi бумасында орналауы тиiстi."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Қарiптiн сипаттама файлын көшiруге мүмкiндiк болмай тұр\n %s\\. Қарiп орнатылмайды."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Қарiп файлын  көшiруге болмайды \n %s.\n. Қарiп орнатылмайды."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "Бұл файлда сипаттамалар жоқ."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "\n\n%s\n\\ сипаттаманы түрлендiруге мүмкiндiкi жоқ, себебi:\n\n  "
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "\"%s\" драйверi әр дайым керек|, сондықтан �
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr " \"%s1\" драйверiн өзгертуге болмайды. \n\n%s2\n\n файлын өзгертуге мүмкiндiк жоқ."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

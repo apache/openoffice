@@ -57,7 +57,7 @@ msgstr "Деректер көзiнiң тақырыбы"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME жүйедегi мекен-жай деректерiне рұқсат мүмкiндiгiн бередi.\n Ол үшiн  %PRODUCTNAME деректер көзi жасалады, оның iшiнде сiздiң мекен-жай кiтаптарыңыз кесте түрiнде болады. \n\n Бұл ұста деректер көзiн  жасауға мүмкiндiк бередi."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Басқа сыртқы деректер көзi"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Жаңа деректер көздерiн жасау үшiн қосымша баптаулары керек.\n\n Сұхбаттық терезе ашылуына төменде орналасқан батырманы шертiңiз, терезеде қосымша жетпеген ақпаратты енгiзуге болады."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,7 +117,7 @@ msgstr "Баптаулар"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Деректер көзiмен байланысты орнатуға мүмкiн емес. \n Процесстi жалғастыру алдында, баптауларды тексерiнiз немесе (алдынғы парағында) көзiнiң басқа түрiн таңданыз"
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "Үлгiлерде қолданылатын мекен-жайларды, %PRODUCTNAME өрiстердi, осы өрiстердегi белгiлi деректердi бiлу қажет.\n\n Мысалы, электрондық поштаның мекен-жайы  \"E-Mail\" немесе \"Электрондық пошта\" атымен немесе басқа атымен сақтау мүмкiн.\n\nТөменде орналасқан батырманы шерту арқылы осы баптауларды орнатуға болады."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Деректер көзi үшiн жиналған %PRODUCTNAME-дегi керектi ақпарат.\\ n\n  %PRODUCTNAME-дегi деректер көзiн тiркеу атын  енгiзуi қалды."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "Мекен-жай деректерi: өрiстер белгiлеуi "
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Қазiргi уақытта өрiстер тағайындалмаған.\n Қазiр тағайындауға болады, кейiнде де беруге болады,\n \"Файл - Қалыптар - Мекен-жай кiтабының көзi\" мәзiрi арқылы"
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "Деректер козi"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "Бағаның келесi аттары белгiленбейдi:\n "
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "Басқару элементi"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Оң жақтан деректердiң көзiнiң  барлық пiшiмдер кестелерi көрсетелген. \n\n\n Мазмұндық тiзiм үшiн қызмет етуi  негiз  кестесiн  таңдаңыз."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Басқару элементiне байланысты үлгi, қазiргi кезiнде бастапқы деректер қорымен байланыста тұрмайды (немесе толықсыз байланыста).  \n\n Деректер қозiн немесе кестенi таңдаңыз. n\n\n Сiз осы парақты тастап кеткен соң, парақтағы  орындалған өзгiрiстер бiрден  iске асырылады, соған көнiл бөлiнiз."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -737,7 +737,7 @@ msgstr "Қош келiпсiздер"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION OEM-ке қош келдiңiздер!\n\n %PRODUCTNAME %PRODUCTVERSION OEM iске қосу үшiн лицензиялық келiсiмнен кейiн сұхбатта жеке деректерiңiздi енгiзiңiз.  %PRODUCTNAME топтама орналасқан  readme файлындарында керектi маңызды ақпараттар орналасқан. Осы файлдарды ұқыпты оқып шығыңыз. Қосымша толық ақпаратты Sun\n\nhttp://www.sun.com/staroffice интернет-парақта табаласыз.\n\n Сүйемелдеу және оқыту:\n\n Бiр рет ақысыз StarOffice 6.0 сүйемелдеу қызметiне қоңырауға болады (мүлiктену мерзiмiнен бастап 60 күндей рұқсаттық мүмкiндiгi бар) және  оқыту интернет-курсына \"StarOffice 6.0\" (WO-1605) бағдарламалардың қолданбалы комплексiне өту\" ақысыз кiру мүмкiндiгi болады. Осы ұсыныстың артықшылықтарымен ппайдалану үшiн төменде көрсетiлген интернет-сайтына кiрiңiз.n\nhttp://www.sun.com/star/service\n\n %PRODUCTNAME  жұмыс iстеуi сiзге қанағаттырлық әкеледi деп үмiттенемiз."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -817,7 +817,7 @@ msgstr "Үлгiлер"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Сiз шынымен '#type#' деректер түрiнiң моделiн жоясыз ба? Бiлiп алыныз, сол  осы деректер түрiмен байланысқан барлық басқару мүшелерге әсер етедi\n"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "Деректердiң жаңа түрiне ат енгiзiңiз:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "Құрылғы"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Алдын-ала көрiп шығу"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Сканер"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Құрылғы: %s\nШығарушы: %s\nМоделi: %s\nТүрi: %s\n"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."

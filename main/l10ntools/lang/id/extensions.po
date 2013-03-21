@@ -57,7 +57,7 @@ msgstr "Judul Sumber Data"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME akan membantu Anda mengakses data alamat yang telah ada di sistem. Untuk melakukan hal tersebut, sebuah sumber data %PRODUCTNAME akan dibuat dalam bentuk tabel.\n\nWahana ini akan membantu Anda membuat sumber data."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Sumber data eksternal lain"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Untuk menyetel sumber data baru, diperlukan informasi tambahan.\n\nKlik tombol berikut untuk membuka kotak dialog, lalu masukkan informasi yang diperlukan."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Pengaturan"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Tidak dapat terhubung ke sumber data.\nSebelum Anda melanjutkan proses, silakan cek pengaturan yang telah dibuat, atau (di halaman sebelumnya) pilih jenis sumber data alamat yang lain."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Sumber data eksternal yang telah dipilih berisikan lebih dari satu buku alamat.\nSilakan pilih buku alamat yang akan Anda pakai:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "Untuk dapat menyatukan data alamat Anda ke palet, %PRODUCTNAME harus mengetahui ruas mana yang berisikan data.\n\nMisalkan, Anda telah menyimpan alamat surel pada ruas/kolom bernama \"surel\", atau \"E-mail\" atau \"EM\" atau yang lain.\n\nKlik tombol berikut untuk membuka kotak dialog lain, lalu masukkan pengaturan bagi sumber data Anda."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Penunjukan Ruas"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Semua informasi tersebut diperlukan untuk menyatukan data alamat Anda ke %PRODUCTNAME.\n\nSekarang, cukup masukkan nama tempat Anda ingin mendaftarkan sumber data tersebut di %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "Data Alamat - Penunjukan Ruas"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Belum ada penunjukan ruas untuk saat ini.\nAnda dapat menentukan ruas-ruas tersebut sekarang juga atau di lain waktu dengan memilih:\n\"Berkas - Palet - Sumber Buku Alamat...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "Sumber Data"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "Nama-nama kolom berikut tidak dapat dipilih:\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "Kontrol"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Pada sisi kanan, bisa Anda lihat semua tabel dari sumber data formulir.\n\n\nPilih tabel yang datanya akan dipakai untuk isi senarai:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Data"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Saat ini, formulir di mana kontrol berada tidak (atau belum sepenuhnya) terikat pada sumber data.\n\nSilakan pilih sumber data dan sebuah tabelnya.\n\n\nPatut diperhatikan, bahwa pengaturan yang dibuat akan segera diterapkan ketika Anda meninggalkan halaman ini."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -737,7 +737,7 @@ msgstr "Selamat Datang"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Selamat datang di %PRODUCTNAME %PRODUCTVERSION OEM\n\nUntuk memulai %PRODUCTNAME %PRODUCTVERSION OEM, harap masukkan data pribadi Anda pada dialog di bawah teks lisensi berikut ini. Informasi penting terdapat pada berkas readme yang terletak pada direktori produk %PRODUCTNAME. Harap baca berkas-berkas tersebut dengan cermat. Anda juga bisa menemukan informasi lebih lanjut pada situs web Oracle\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -817,7 +817,7 @@ msgstr "Formulir"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Apakah Anda ingin menghapus jenis data '#type#' dari model?\nMohon diperhatikan bahwa ini akan mempengaruhi semua kontrol yang terikat pada data jenis ini."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "Ketik nama bagi jenis data yang baru:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "Tentang\n Peran~gkat"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "Buat\nPratinjau"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Pemindai"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "Perangkat: %s\nVendor: %s\nModel: %s\nJenis: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION sudah dalam kondisi terbaru."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION telah tersedia.\n\nVersi yang terpasang adalah %PRODUCTNAME %PRODUCTVERSION.\n\nCatatan: Sebelum mengunduh pembaharuan versi, pastikan bahwa Anda memiliki hak yang cukup untuk memasangnya di sistem.\nSandi administrator atau root mungkin diperlukan."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Mengunduh %PRODUCTNAME %NEXTVERSION berhenti pada"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Lokasi unduh: %DOWNLOAD_PATH.\n\nPada Perkakas – Opsi... - %PRODUCTNAME – Pembaharuan Daring, Anda dapat mengubah lokasi unduhan tersebut."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME telah diunduh pada %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Fitur untuk mengunduh otomatis versi pembaharuan saat ini tidak aktif.\n\nKlik 'Unduh...' untuk mengambil %PRODUCTNAME %NEXTVERSION secara manual dari situsnya."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."

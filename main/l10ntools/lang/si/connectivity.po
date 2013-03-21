@@ -389,7 +389,7 @@ msgstr "$filename$ ගොනුව පූර්ණය කළ නොහැක."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "ගොනුව පූරණය කිරීමට ගත් උත්සාහය පහත වැරදි පණිවුඩයට හේතු විය ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -605,11 +605,11 @@ msgstr "KDE ලි‍පි‍න‍ පො‍ත‍ට‍ ඇ‍තු‍ළු
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "හමුවූ KDE සංස්කරණය ඉතා අ‍ළු‍ත් වේ‍. මෙ‍ම‍ නි‍ද්‍පා‍ද‍න‍ය‍ ස‍ම‍ග‍ ක්‍රි‍යා‍ක‍ර‍න බවට හඳුනාගෙන ඇත්තේ KDE  $major$.$minor$ සංස්කරණ පමණි.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "ඔබට ඔබේ KDE සංස්කරණය ක්‍රියාකරන බවට විශ්වාස නම්,සංස්කරණ පිරික්සුම නැවතීමට ඔබ විසින් පහත සඳහන් මැක්‍රෝවන් ක්‍රියාත්මක කළ යුතුයි.:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

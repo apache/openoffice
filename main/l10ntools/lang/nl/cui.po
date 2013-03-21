@@ -149,7 +149,7 @@ msgstr "Toetsenbordconfiguratie opslaan"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.String.Text
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "Configuratie"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.String.Text
 msgid  "My Macros"
@@ -697,7 +697,7 @@ msgstr "Verwijderen..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "Opmerking:\nDe grootte van een pictogram zou 16x16 pixels moeten zijn om de beste kwaliteit te behalen. Pictogrammen van verschillende grootte zullen automatisch worden geschaald."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -705,7 +705,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
-msgstr ""
+msgstr "De bestanden die hieronder staan konden niet worden geïmporteerd.\nDe bestandsindeling kon niet worden geïnterpreteerd."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -717,7 +717,7 @@ msgstr "Weet u zeker dat u de afbeelding wilt verwijderen?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "Het pictogram %ICONNAME is al opgenomen in de lijst met afbeeldingen.\nWilt u het bestaande pictogram vervangen?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1577,7 +1577,7 @@ msgstr "Wachtwoord bevestigen"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "Opmerking: Nadat een wachtwoord is ingesteld, zal het document alleen daarmee openen "
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FixedLine.Text
 msgid  "File sharing password"
@@ -1857,7 +1857,7 @@ msgstr "~Verwijderen"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
+msgstr "Over %PRODUCTNAME"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
 msgid  "License..."
@@ -1885,7 +1885,7 @@ msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
-msgstr ""
+msgstr "is niet beschikbaar voor de spellingscontrole.\nControleer uw installatie en installeer eventueel de gewenste taal\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -2945,7 +2945,7 @@ msgstr "Type"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
 msgid  "~And"
-msgstr ""
+msgstr "En"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 msgid  "~Or"
@@ -3057,7 +3057,7 @@ msgstr "Macroveiligheid..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "Schakelt de functie voor het doorlopend opslaan van wachtwoorden uit, verwijdert de lijst met opgeslagen wachtwoorden en herstelt het hoofdwachtwoord.\n\nWilt u de lijst met opgeslagen wachtwoorden verwijderen en het hoofdwachtwoord herstellen?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
@@ -3065,7 +3065,7 @@ msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Let er op dat als u Java\nuitschakelt u dat ook voor Javascript doet.\n\nWilt u Java nog steeds uitschakelen?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3613,15 +3613,15 @@ msgstr "Databasekoppeling maken"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\\n$file$\\ndoes not exist."
-msgstr ""
+msgstr "Het bestand\n$file$\nbestaat niet."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\\n$file$\\ndoes not exist in the local file system."
-msgstr ""
+msgstr "Het bestand\n$file$\nbestaat niet in het lokale bestandssysteem."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
-msgstr ""
+msgstr "De naam '$file$' is al in gebruik voor een andere database.\nKies een andere naam."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -4329,7 +4329,7 @@ msgstr "Het niet gebruiken van ODF 1.2 Uitgebreid kan leiden tot het verlies van
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr "Het gebruiken van \"%1\" als standaard bestandsindeling kan leiden tot verlies van informatie.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4341,7 +4341,7 @@ msgstr "Programma voor verbeteringen"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "We nodigen u uit om deel te nemen aan ons %PRODUCTNAME Programma voor verbeteringen om te helpen om de kwaliteit van %PRODUCTNAME te optimaliseren.\n\nAls u bereid bent om deel te nemen, zullen wij anonieme statistische gegevens verzamelen over uw gebruik van %PRODUCTNAME. De gegevens worden gebruikt om gebruikspatronen te identificeren.\n\nHet %PRODUCTNAME Programma voor verbeteringen zal geen persoonlijke gegevens of enige documentinhoud verzamelen."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
@@ -5033,7 +5033,7 @@ msgstr "~Sluiten"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "De opgegeven naam bestaat al.\nVoer een nieuwe naam in."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 msgid  "Do you want to change the '%1' dictionary language?"
@@ -6241,7 +6241,7 @@ msgstr "B~uitenste"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
 msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "De marge-instellingen vallen buiten het afdrukbereik.\n\nWilt u deze instellingen toch toepassen?"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -7085,7 +7085,7 @@ msgstr "Toegewezen macro"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
 msgid  "~Existing macros\\n"
-msgstr ""
+msgstr "~Bestaande macro's\n"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 msgid  "~Assign"
@@ -7469,7 +7469,7 @@ msgstr "Wilt u de kleurovergang verwijderen?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
 msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "De kleurovergang werd aangepast zonder op te slaan. \nPas de geselecteerde kleurovergang aan of voeg een nieuwe kleurovergang toe."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 msgid  "Please enter a name for the bitmap:"
@@ -7485,7 +7485,7 @@ msgstr "Weet u zeker dat u de bitmap wilt verwijderen?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
 msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "De bitmap werd aangepast zonder op te slaan. \nPas de geselecteerde bitmap aan of voeg een nieuwe bitmap toe."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 msgid  "Please enter a name for the line style:"
@@ -7497,7 +7497,7 @@ msgstr "Wilt u de lijnstijl verwijderen?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
 msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "De lijnstijl werd aangepast zonder op te slaan. \nPas de geselecteerde lijnstijl aan of voeg een nieuwe lijnstijl toe."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 msgid  "Please enter a name for the hatching:"
@@ -7509,7 +7509,7 @@ msgstr "Wilt u de arcering verwijderen?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
 msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "De arcering werd aangepast zonder op te slaan. \nPas het geselecteerde type arcering aan of voeg een nieuwe type arcering toe."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 msgid  "Modify"
@@ -7529,7 +7529,7 @@ msgstr "Wilt u de kleur verwijderen?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
 msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
-msgstr ""
+msgstr "De kleur werd aangepast zonder op te slaan.\nPas de geselecteerde kleur aan of voeg een nieuwe kleur toe."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 msgid  "Table"
@@ -7549,7 +7549,7 @@ msgstr "De lijst werd gewijzigd zonder op te slaan. Wilt u de lijst nu opslaan?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name you have entered already exists. \\nPlease choose another name."
-msgstr ""
+msgstr "De naam die u hebt ingevoerd bestaat al. \nKies een andere naam."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 msgid  "Please enter a name for the new arrowhead:"
@@ -7561,7 +7561,7 @@ msgstr "Wilt u de pijlstijl verwijderen?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
 msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "De pijlstijl werd aangepast zonder op te slaan.\nWilt u de pijlstijl nu opslaan?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 msgid  "Indents and Spacing"

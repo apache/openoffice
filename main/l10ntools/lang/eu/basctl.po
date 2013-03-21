@@ -137,7 +137,7 @@ msgstr "Gorde"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Iturburuko testua luzeegia da eta ezin da konpilatu edo gorde.\nEzabatu iruzkin batzuk edo transferitu metodo batzuk beste moduluetara."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "'XX' fitxategia badago lehendik ere"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
-msgstr ""
+msgstr "Segurtasun arrazoiak direla eta, ezin duzu makro hau exekutatu.\n\nInformazio gehiagorako egiaztatu segurtasun-ezarpenak."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "Izen bat eman behar da."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr ""
+msgstr "Programa berrabiaratu behar da edizio honen ondoren.\nJarraitu?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Elkarrizketa-koadroa inportatzea: izena jadanik erabilita dago"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
-msgstr ""
+msgstr "Liburutegiak badu honako izeneko elkarrizketa-koadroa:\n\n$(ARG1)\n\nAldatu elkarrizketa-koadroaren izena unekoa mantentzeko, \nedo ordeztu existitzen den elkarrizketa-koadroa.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Elkarrizketa-koadroa inportatzea: hizkuntza falta da"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
-msgstr ""
+msgstr "Inportatuko den elkarrizketa-koadroak beste hizkuntza batzuk onartzen ditu, helburuko liburutegikoak ez direnak.\n\nGehitu hizkuntza hauek liburutegiari elkarrizketa-koadroak eskainitako hizkuntzen baliabide gehigarria mantentzeko, edo ahaztu horiek liburutegiko uneko hizkuntzekin jarraitzeko.\n\nOharra: elkarrizketa-koadroak onartzen ez dituen hizkuntzentzako hizkuntza lehenetsiaren baliabideak erabiliko dira.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"

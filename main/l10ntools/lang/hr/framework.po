@@ -137,7 +137,7 @@ msgstr "Pokušaj ponovno"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME nije mogao spremiti važen interne informacije zbog nedostatka slobodnog prostora na disku:\n%PATH\n\nNećete moći nastaviti rad s programom %PRODUCTNAME bez oslobađanja dovoljno slobodnog prostora na toj lokaciji.\n\nZa ponovni pokušaj spremanja podataka, pritisnite tipku \"Ponovi\" nakon što oslobodite dovoljno slobodnog prostora.\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "~Vrati izvorno"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "Dogodila se greška tijekom učitavanja konfiguracijskih podataka za korisničko sučelje. Biti će Program će biti isključen.\nMolimo, pokušajte ponovno instalirati program."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "Dogodila se greška tijekom učitavanja konfiguracijskih podataka za korisničko sučelje. Biti će Program će biti isključen.\nMolimo, pokušajte obrisati vaš korisnički profil za program."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "Dogodila se greška tijekom učitavanja konfiguracijskih podataka za korisničko sučelje. Program će sada biti isključen.\nMolimo, prvo pokušajte obrisati vaš korisnički profil ili pokušajte ponovno instalirati program."
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

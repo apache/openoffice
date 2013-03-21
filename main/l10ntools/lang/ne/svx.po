@@ -941,11 +941,11 @@ msgstr "मेट्नुहोस्"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "छवि मानचित्र परिमार्जित गरियो ।\nके तपाईँ परिवर्तनहरू बचत गर्न चाहनुहुन्छ ?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "छवि मानचित्र परिमार्जित गरियो ।\nके तपाईँ परिवर्तनहरू बचत गर्न चाहनुहुन्छ ?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "%PRODUCTNAME कागजात पुन: प्राप्ति"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "तल सूचीकृत कागजातहरूको पुन: प्राप्ति प्रक्रिया सुरु गर्न 'पुन: प्राप्ति सुरु गर्नुहोस्' थिच्नुहोस् ।\n\n'वस्तुस्थिति' स्तम्भले कागजात पुन: प्राप्ति हुने नहुने देखाउँछ ।"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "पुन: प्राप्त गरिएका कागजात�
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "कागजात Name\tStatus"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "%PRODUCTNAME किन नष्ट भयो भनी कारण प
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "तपाईँको कागजातहरूको पुन: प्राप्ति समाप्त भएको थोयो ।\nतपाईँको कागजातहरू हेर्नका लागि 'समाप्त' क्लिक गर्नुहोस् ।"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "के तपाईँ %PRODUCTNAME कागजात पुन: प्
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "स्वचालित पुन: प्राप्ति प्रक्रिया दूषित भयो ।\n\nयदि तपाईँले 'बचत गर्नुहोस्' क्लिक गर्नु भयो भने तल सूचीकृत कागजातहरू तल उल्लेखित फोल्डरमा बचत हुनेछ । कागजातहरू बचत नगरी विजार्ड बन्द नगर्न 'रद्द गर्नुहोस्' क्लिक गर्नुहोस् ।"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION त्रुटि रिपोर्टम
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "यो त्रुटि प्रतिवेदन उपकरणले %PRODUCTNAME ले कसरी कार्य गरिरहेको छ र यसलाई भविष्यको संस्करणहरू सुधार गर्न मद्दत गर्न सन माइक्रो प्रणालीमा पठाउँछ भन्ने बारे सूचना एकत्रित गर्दछ ।\n\nयो सजिलो छ - पछिल्लो संवादमा 'पठाउनुहोस्' क्लिक गरेर तपाईँको भागमा कुनै अगाडि प्रयास नगरी प्रतिवेदन मात्र पठाउनुहोस्, वा तपाईँ संक्षेपमा त्रुटि कसरी उत्पन्न भयो भन्ने वर्णन गर्न सक्नुहुन्छ र त्यसपछि 'पठाउनुहोस्' क्लिक गर्नुहोस् । यदि तपाईँ प्रतिवेदन हेर्न चाहनुहुन्छ भने, 'प्रतिवेदन देखाउनुहोस्' बटन क्लिक गर्नुहोस् । यदि तपाईँले 'नपठाउनुहोस्' क्लिक गर्नु भयो भने कुनै डेटा पठाइने छैन ।\n\nग्राहकको गोपनियता\nएकत्रित गरिएको सूचना त्रुटि उत्पन्न हुँदा %PRODUCTNAME %PRODUCTVERSION को सम्बन्धित राज्यमा डेटा सिमित छ । पासवर्ड वा कागजात सामाग्रीहरूको अन्य जानकारी संकलन भएको छैन ।\n\nसूचना मात्र %PRODUCTNAME को गुण सुधार गर्न प्रयोग हुनेछ र तेस्रो पक्षसँग बाँडिने छैन ।\nसन माइक्रो प्रणालीमा अरू धैरै जानकारीका लागि,\n http://www.sun.com/privacy/ हेर्नुहोस् ।"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "विकल्प..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "यो प्रतिवेदनको बारेमा मलाई सम्पर्क गर्न म सन माइक्रोप्रणालीलाई अनुमति गर्दछ ।"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "पोर्ट"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME त्रुटि प्रतिवेदनहरू पठाउन त्रुटि प्रतिवेदन उपकरण इन्टरनेटसँग जडान गरिन आवश्यक हुनु पर्दछ ।\nकम्पनीहरूले प्रोक्सी सर्भरहरूको बारबार संयोजनमा नेटवर्क बचाउनका लागि फयरवालसँग प्रयोग गर्दछन् ।\nयदि यो तपाईँको अवास्थासँग लागू गर्ने भए, तपाईँले सर्भरका लागि पोर्ट र ठेगाना निर्दिष्ट गर्नुपर्ने हुन्छ ।"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "रपरेखा परिमार्जन गरिएको छ ।\nतपाईँ यो परिवर्तनहरू बचत गर्न चाहनुहुन्छ ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "तपाईँ एउटा नयाँ रूपरेखा सि�
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "एउटा नयाँ कार्यस्थान सेटिङ गर्नाले \nरूपरेखालाई मेटाउनु पर्नेछ ।\nतपाईँ लगातार गर्न चाहनुहुन्छ ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "फाँट '#' मा आगत आवश्यक । कृपया
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "प्रविष्टि पहिल्यै अवस्थित छ ।\nकृपया अर्को नाम रोज्नुहोस ।"
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# रेकर्डहरू मेटिनेछ ।"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "यदि तपाईँले 'हो' क्लिक गर्नुहुन्छ भने, तपाईँ यो सञ्चालन कार्य पूर्वस्थितिमा फर्काउनका लागि सक्षम हुनुहुने छैन!\nके तपाईँ यद्यपि जारी राख्न चाहनुहुन्छ ?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "अवैध विषयवस्तु नाम!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "के तपाईँं वास्तवमै \nयो वस्तु मेट्न चाहनुहुन्छ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "के तपाईँं वास्तवमै \nयो विषयवस्तु मेट्न चाहनुहुन्छ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "के तपाईँं लिङ्क गरिएको फाइ�
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "यो फाइल खोल्न सकिँदैन ।\nके तपाईँं एउटा भिन्न खोजी बाटो प्रविष्ट गराउन चाहनुहुन्छ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "आयोजक..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "यो विषयवस्तु नाम पहिल्यै अवस्थित छ ।\nकृपया एउटा भिन्नै चाहिँ छान्नुहोस् ।"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -9909,11 +9909,11 @@ msgstr "मेट्नुहोस"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "परम्परागत चिनियाँ बाट सरलिकृत चिनियाँ"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "सरलिकृत चिनियाँ बाट परम्परागत चिनियाँ"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "परम्परागत चिनियाँ बाट सरलिकृत चिनियाँ"
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "सरलिकृत चिनियाँ बाट परम्परागत चिनियाँ"

@@ -37,19 +37,19 @@ msgstr "За да пристапите на оваа функција..."
 
 #: source/text/scalc/00/00000004.xhp#hd_id3155535.1
 msgid  "\<variable id=\"wie\"\>To access this function... \</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">За да пристапите на оваа функција... </variable>"
 
 #: source/text/scalc/00/00000004.xhp#par_idN1056E
 msgid  "\<variable id=\"moreontop\"\>More explanations on top of this page. \</variable\>"
-msgstr ""
+msgstr "<variable id=\"moreontop\">Повеќе објаснувања на врв на оваа страница. </variable>"
 
 #: source/text/scalc/00/00000004.xhp#par_idN105AF
 msgid  "\<variable id=\"optional\"\>In the %PRODUCTNAME Calc functions, parameters marked as \"optional\" can be left out only when no parameter follows. For example, in a function with four parameters, where the last two parameters are marked as \"optional\", you can leave out parameter 4 or parameters 3 and 4, but you cannot leave out parameter 3 alone. \</variable\>"
-msgstr ""
+msgstr "<variable id=\"optional\">Во %PRODUCTNAME Calc функциите, параметрите се означени \"изборни\" може да бидат изоставени кога не следат параметри. На пример, во функција со четири параметри во која два параметри зе означени како \"изборни\", може да го изоставите параметарот 4 или параметрите 3 и 4, но не можете да го изоставите само параметарот 3. </variable>"
 
 #: source/text/scalc/00/00000004.xhp#par_id9751884
 msgid  "\<variable id=\"codes\"\>Codes greater than 127 may depend on your system's character mapping (for example iso-8859-1, iso-8859-2, Windows-1252, Windows-1250), and hence may not be portable.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"codes\">Кодовите поголеми од 127 може да зависат мапирањето на знаците на вашиот систем (на пример iso-8859-1, iso-8859-2, Windows-1252, Windows-1250), и затоа може да не се портабилни.</variable>"
 
 #: source/text/scalc/00/00000402.xhp#tit
 msgid  "Edit Menu"
@@ -61,43 +61,43 @@ msgstr "Мени за уредување"
 
 #: source/text/scalc/00/00000402.xhp#par_id3155555.2
 msgid  "\<variable id=\"kopffuss\"\>Choose \<emph\>Edit - Headers & Footers\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"kopffuss\">Изберете <emph>Уреди - Заглавија и Подножја</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3159233.3
 msgid  "\<variable id=\"bkopfzeile\"\>Choose \<emph\>Edit - Headers & Footers - Header/Footer\</emph\> tabs\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bkopfzeile\">Изберете го ливчето <emph>Уреди - Заглавија и Подножја - Заглавие/Подножје</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3150443.4
 msgid  "\<variable id=\"bausfullen\"\>Choose \<emph\>Edit - Fill\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bausfullen\">Изберете <emph>Уреди - Пополни</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3143267.5
 msgid  "\<variable id=\"bausunten\"\>Choose \<emph\>Edit - Fill - Down\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bausunten\">Изберете <emph>Уреди - Пополни - Долу</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3153880.6
 msgid  "\<variable id=\"bausrechts\"\>Choose \<emph\>Edit - Fill - Right\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bausrechts\">Изберете <emph>Уреди - Пополни - Десно</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3151245.7
 msgid  "\<variable id=\"bausoben\"\>Choose \<emph\>Edit - Fill - Up\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bausoben\">Изберете <emph>Уреди - Пополни - Горе</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3145068.8
 msgid  "\<variable id=\"bauslinks\"\>Choose \<emph\>Edit - Fill - Left\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bauslinks\">Изберете <emph>Уреди - Пополни - Лево</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3150400.9
 msgid  "\<variable id=\"baustab\"\>Choose \<emph\>Edit - Fill - Sheet\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"baustab\">Изберете <emph>Уреди - Пополни - лист</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3154910.10
 msgid  "\<variable id=\"bausreihe\"\>Choose \<emph\>Edit - Fill - Series\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bausreihe\">Изберете <emph>Уреди - Пополни  - примероци</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3154123.11
 msgid  "Choose \<emph\>Edit - Delete Contents\</emph\>"
-msgstr ""
+msgstr "Choose <emph>Уреди - Бриши - Содржина</emph>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3145785.20
 msgid  "Delete key"
@@ -105,11 +105,11 @@ msgstr "Копче за бришење"
 
 #: source/text/scalc/00/00000402.xhp#par_id3150011.12
 msgid  "\<variable id=\"bzelo\"\>Choose \<emph\>Edit - Delete Cells\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bzelo\">Изберете <emph>Уреди - Избриши ќелии</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3153951.13
 msgid  "Choose \<emph\>Edit – Sheet - Delete\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Уреди - Лист - Избриши</emph>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3155306.18
 msgid  "Open context menu for a sheet tab"
@@ -117,7 +117,7 @@ msgstr "Отвора контекстно мени за ливче од лист
 
 #: source/text/scalc/00/00000402.xhp#par_id3146119.14
 msgid  "Choose \<emph\>Edit – Sheets – Move/Copy\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Уреди - Листови - Премести/Копирај</emph>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3148645.19
 msgid  "Open context menu for a sheet tab"
@@ -125,15 +125,15 @@ msgstr "Отвора контекстно мени за ливче од лист
 
 #: source/text/scalc/00/00000402.xhp#par_id3153093.15
 msgid  "\<variable id=\"bmaumloe\"\>Choose \<emph\>Edit - Delete Manual Break\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bmaumloe\">Изберете <emph>Уреди - Избриши - Рачен прелом</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3153191.16
 msgid  "\<variable id=\"bzeilum\"\>Choose \<emph\>Edit - Delete Manual Break - Row Break\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bzeilum\">Изберете <emph>Уреди - Избриши - Рачен прелом - Прелом на страница</emph></variable>"
 
 #: source/text/scalc/00/00000402.xhp#par_id3145645.17
 msgid  "\<variable id=\"bspaum\"\>Choose \<emph\>Edit - Delete Manual Break - Column Break\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bspaum\">Изберете <emph>Уреди - Избриши - Рачен прелом - Прелом на страница - Прелом на колона</emph></variable>"
 
 #: source/text/scalc/00/00000403.xhp#tit
 msgid  "View Menu"
@@ -145,19 +145,19 @@ msgstr "Поглед мени"
 
 #: source/text/scalc/00/00000403.xhp#par_id3150275.2
 msgid  "\<variable id=\"aspze\"\>Choose \<emph\>View - Column & Row Headers\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"aspze\">Choose <emph>Поглед - Заглавија за колони и редици</emph></variable>"
 
 #: source/text/scalc/00/00000403.xhp#par_id3154514.3
 msgid  "\<variable id=\"awehe\"\>Choose \<emph\>View - Value Highlighting\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"awehe\">Изберете <emph>Поглед - означување</emph></variable>"
 
 #: source/text/scalc/00/00000403.xhp#par_id3148947.4
 msgid  "\<variable id=\"rechenleiste\"\>Choose \<emph\>View - Toolbars - Formula Bar\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"rechenleiste\">Изберете <emph>Поглед - Алатници - Алатник за формули</emph></variable>"
 
 #: source/text/scalc/00/00000403.xhp#par_id3148663.5
 msgid  "\<variable id=\"seumvo\"\>Choose \<emph\>View - Page Break Preview\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seumvo\">Изберете <emph>Поглед - Преглед на прелом на станица</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#tit
 msgid  "Insert Menu"
@@ -169,27 +169,27 @@ msgstr "Вметни мени"
 
 #: source/text/scalc/00/00000404.xhp#par_id3149095.36
 msgid  "\<variable id=\"eimaum\"\>Choose \<emph\>Insert - Manual Break\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eimaum\">Изберете <emph>Вметни - Рачен прелом</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3149398.2
 msgid  "\<variable id=\"eimaumze\"\>Choose \<emph\>Insert - Manual Break - Row Break\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eimaumze\">Изберете <emph>Вметни - Рачен прелом - Прелом на редица</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3150084.3
 msgid  "\<variable id=\"eimaumsp\"\>Choose \<emph\>Insert - Manual Break - Column Break\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eimaumsp\">Изберете <emph>Вметни - Рачен прелом - Прелом на колона</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3149784.4
 msgid  "Choose \<emph\>Insert - Cells\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Вметни - Ќелии</emph>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3154514.5
 msgid  "Open \<emph\>Insert Cells\</emph\> toolbar from Tools bar:"
-msgstr ""
+msgstr "Отворете <emph>Вметни Алатник за ќелии</emph> од Алатникот:"
 
 #: source/text/scalc/00/00000404.xhp#par_id3149656
 msgid  "\<image id=\"img_id3154365\" src=\"res/commandimagelist/sc_inscellsctrl.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3154365\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154365\" src=\"res/commandimagelist/sc_inscellsctrl.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3154365\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3151041.6
 msgid  "Insert Cells"
@@ -197,7 +197,7 @@ msgstr "Вметни ќелии"
 
 #: source/text/scalc/00/00000404.xhp#par_id3145273
 msgid  "\<image id=\"img_id3145364\" src=\"res/commandimagelist/sc_insertcellsdown.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145364\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145364\" src=\"res/commandimagelist/sc_insertcellsdown.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145364\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3146985.7
 msgid  "Insert Cells Down"
@@ -205,7 +205,7 @@ msgstr "Вметни ќелии долу"
 
 #: source/text/scalc/00/00000404.xhp#par_id3144766
 msgid  "\<image id=\"img_id3154942\" src=\"res/commandimagelist/sc_insertcellsright.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3154942\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154942\" src=\"res/commandimagelist/sc_insertcellsright.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3154942\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3145646.8
 msgid  "Insert Cells Right"
@@ -213,7 +213,7 @@ msgstr "Вметни ќелии десно"
 
 #: source/text/scalc/00/00000404.xhp#par_id3153838
 msgid  "\<image id=\"img_id3153710\" src=\"res/commandimagelist/sc_insertrows.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3153710\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153710\" src=\"res/commandimagelist/sc_insertrows.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3153710\">Икони</alt></image>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3150324.9
 msgid  "Insert Rows"
@@ -221,7 +221,7 @@ msgstr "Вметни редови"
 
 #: source/text/scalc/00/00000404.xhp#par_id3147363
 msgid  "\<image id=\"img_id3145232\" src=\"res/commandimagelist/sc_insertcolumns.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145232\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145232\" src=\"res/commandimagelist/sc_insertcolumns.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145232\">Икони</alt></image>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3155334.10
 msgid  "Insert Columns"
@@ -229,23 +229,23 @@ msgstr "Вметни колони"
 
 #: source/text/scalc/00/00000404.xhp#par_id3148485.11
 msgid  "\<variable id=\"eizei\"\>Choose \<emph\>Insert - Rows\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eizei\">Изберете <emph>Вметни - Редици</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3153200.12
 msgid  "\<variable id=\"eispa\"\>Choose \<emph\>Insert - Columns\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eispa\">Choose <emph>Вметни - Колони</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3149033.13
 msgid  "\<variable id=\"eitab\"\>Choose \<emph\>Insert - Sheet\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eitab\">Изберете <emph>Вметни - Лист</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_idN1082F
 msgid  "\<variable id=\"eitabfile\"\>Choose \<emph\>Insert - Sheet from file\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eitabfile\">Изберете <emph>Вметни - Лист од датотека</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3155115.14
 msgid  "Choose \<emph\>Insert - Function\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Вметни - Функција</emph>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3152582.34
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F2"
@@ -253,11 +253,11 @@ msgstr ""
 
 #: source/text/scalc/00/00000404.xhp#par_id3153269.15
 msgid  "On \<emph\>Formula Bar\</emph\>, click"
-msgstr ""
+msgstr "На <emph>лентата со формули</emph>, кликнете"
 
 #: source/text/scalc/00/00000404.xhp#par_id3150515
 msgid  "\<image id=\"img_id3150884\" src=\"sw/imglst/sc20556.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150884\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150884\" src=\"sw/imglst/sc20556.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3150884\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3154370.16
 msgid  "Function Wizard"
@@ -265,67 +265,67 @@ msgstr "Волшебник за формули"
 
 #: source/text/scalc/00/00000404.xhp#par_id3156288.17
 msgid  "\<variable id=\"eikada\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Database\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikada\"><emph>Вметни - Функција</emph> - Категорија <emph>База на податоци</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3155809.18
 msgid  "\<variable id=\"eikadaze\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Date&Time\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikadaze\"><emph>Вметни - Функција</emph> - Категорија <emph>Датум и време</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3151334.19
 msgid  "\<variable id=\"eikafi\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Financial\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikafi\"><emph>Вметни - Функција</emph> - Категорија <emph>Финансиски</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3159222.20
 msgid  "\<variable id=\"eikain\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Information\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikain\"><emph>Вметни - Функција</emph> - Категорија <emph>Информации</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3159173.21
 msgid  "\<variable id=\"eikalo\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Logical\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikalo\"><emph>Вметни - Функција</emph> - Категорија <emph>Логички</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3153914.22
 msgid  "\<variable id=\"eikama\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Mathematical\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikama\"><emph>Вметни - Функција</emph> - Категорија <emph>Математички</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3150109.23
 msgid  "\<variable id=\"eikamatrix\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Array\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikamatrix\"><emph>Вметни - Функција</emph> - Категорија <emph>Низа</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3157978.24
 msgid  "\<variable id=\"eikasta\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Statistical\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikasta\"><emph>Вметни - Финкција</emph> - Категорија <emph>Статистички</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3156016.25
 msgid  "\<variable id=\"eikatext\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Text\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eikatext\"><emph>Вметни - Функција</emph> - Категорија <emph>Текстуални</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3147075.26
 msgid  "\<variable id=\"efefft\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Spreadsheet\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"efefft\"><emph>Вметни - Функција</emph> - Категорија <emph>Табеларни пресметки</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3154618.27
 msgid  "\<variable id=\"addin\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Add-In\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"addin\"><emph>Вметни - Функција - </emph> - Категорија <emph>Додатоци</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3154059.38
 msgid  "\<variable id=\"addinana\"\>\<emph\>Insert - Function\</emph\> - Category \<emph\>Add-In\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"addinana\"><emph>Вметни - Функција</emph> - Категорија <emph>Додаток</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3155383.33
 msgid  "\<variable id=\"funktionsliste\"\>Choose \<emph\>Insert - Function List\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"funktionsliste\">Изберете <emph>Вметни - Листа на функции</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3153250.28
 msgid  "\<variable id=\"einamen\"\>Choose \<emph\>Insert - Names\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"einamen\">Изберете <emph>Вметни - Имиња</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3146776.37
 msgid  "\<variable id=\"eiextdata\"\>Choose \<emph\>Insert - Link to External data\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eiextdata\">Choose <emph>Insert - Link to External data</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3143222.29
 msgid  "Choose \<emph\>Insert - Names - Define\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Вметни- Имиња - Дефинирај</emph>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3149385.35
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
@@ -333,15 +333,15 @@ msgstr ""
 
 #: source/text/scalc/00/00000404.xhp#par_id3145214.30
 msgid  "\<variable id=\"einaei\"\>Choose \<emph\>Insert - Names - Insert\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"einaei\">Изберете <emph>Вметни - Имиња - Вметни</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3153558.31
 msgid  "\<variable id=\"einaueb\"\>Choose \<emph\>Insert - Names - Create\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"einaueb\">Изберете <emph>Вметни - Имиња - Креирај</emph></variable>"
 
 #: source/text/scalc/00/00000404.xhp#par_id3153483.32
 msgid  "\<variable id=\"einabesch\"\>Choose \<emph\>Insert - Names - Labels\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"einabesch\">Изберете <emph>Вметни - Имиња - Ознаки</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#tit
 msgid  "Format Menu"
@@ -353,47 +353,47 @@ msgstr "Мени за форматирање"
 
 #: source/text/scalc/00/00000405.xhp#par_id3154685.2
 msgid  "\<variable id=\"fozelle\"\>Choose \<emph\>Format - Cells\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fozelle\">Изберете <emph>Формат - Ќелии</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3153194.3
 msgid  "\<variable id=\"fozelstz\"\>Choose \<emph\>Format - Cells - Cell Protection\</emph\> tab \</variable\>"
-msgstr ""
+msgstr "<variable id=\"fozelstz\">Изберете <emph>Формат - Ќелии - Заштита на ќелија </emph> tab </variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3155854.4
 msgid  "\<variable id=\"fozei\"\>Choose \<emph\>Format - Row\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fozei\">Изберете <emph>Формат - Редица</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3150012.5
 msgid  "\<variable id=\"fozeiophoe\"\>Choose \<emph\>Format - Row - Optimal Height\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fozeiophoe\">Изберете <emph>Формат - Редица  - Оптимална висина</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3148645.6
 msgid  "Choose \<emph\>Format - Row - Hide\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Формат - Редица -  Сокриј</emph>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3153728.7
 msgid  "Choose \<emph\>Format - Column - Hide\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Формат - Колона - Сокриј</emph>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3151114.8
 msgid  "Choose \<emph\>Format - Sheet - Hide\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Формат - Лист - Сокриј</emph>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3148576.9
 msgid  "Choose \<emph\>Format - Row - Show\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Формат - Редица - Покажи</emph>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3156286.10
 msgid  "Choose \<emph\>Format - Column - Show\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Format - Column - Show</emph>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3145645.11
 msgid  "\<variable id=\"fospa\"\>Choose \<emph\>Format - Column\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fospa\">Изберете <emph>Формат - Колона</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3145252.12
 msgid  "Choose \<emph\>Format - Column - Optimal Width\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Формат - Колона - Оптимална широчина</emph>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3146971.36
 msgid  "Double-click right column separator in column headers"
@@ -401,51 +401,51 @@ msgstr "Кликнете два пати на десниот разделува�
 
 #: source/text/scalc/00/00000405.xhp#par_id3147362.15
 msgid  "\<variable id=\"fot\"\>Choose \<emph\>Format - Sheet\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fot\">Изберете <emph>Формат - Лист</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3163805.16
 msgid  "\<variable id=\"fotu\"\>Choose \<emph\>Format - Sheet - Rename\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fotu\">Изберете <emph>Формат - Лист - Преименувај</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3155333.17
 msgid  "\<variable id=\"fotenb\"\>Choose \<emph\>Format - Sheet - Show\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fotenb\">Изберете <emph>Формат - Лист - Покажи</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3154020.18
 msgid  "\<variable id=\"fozelzus\"\>Choose \<emph\>Format - Merge Cells\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fozelzus\">Изберете <emph>Формат - Спои ќелии</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_idN1077A
 msgid  "\<variable id=\"foste\"\>Choose \<emph\>Format - Page\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"foste\">Изберете <emph>Формат - Страница</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3155508.25
 msgid  "\<variable id=\"fostel\"\>Choose \<emph\>Format - Page - Sheet\</emph\> tab \</variable\>"
-msgstr ""
+msgstr "<variable id=\"fostel\">Изберете <emph>Формат - Page - Лист</emph> tab </variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3150883.26
 msgid  "\<variable id=\"fodrbe\"\>Choose \<emph\>Format - Print Ranges\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fodrbe\">Изберете <emph>Формат - Опсези за печатење</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3156448.27
 msgid  "\<variable id=\"fodrfe\"\>Choose \<emph\>Format - Print Ranges - Define\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fodrfe\">Изберете <emph>Формат - Опсези за печатење - Дефинирај </emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3156290.35
 msgid  "\<variable id=\"fodrhin\"\>Choose \<emph\>Format - Print Ranges - Add\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fodrhin\">Изберете <emph>Формат - Опсези за печатење - Додај</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3155812.28
 msgid  "\<variable id=\"fodbah\"\>Choose \<emph\>Format - Print Ranges - Remove\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fodbah\">Изберете <emph>Формат - Опсези за печатење - Отстрани</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3153307.29
 msgid  "\<variable id=\"fodbbe\"\>Choose \<emph\>Format - Print Ranges - Edit\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fodbbe\">Изберете <emph>Формат - Опсези за печатење - Уреди</emph></variable>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3153916.31
 msgid  "Choose \<emph\>Format - AutoFormat\</emph\>"
-msgstr ""
+msgstr "Choose <emph>Формат - Автом. форматирање</emph>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3154532.32
 msgid  "On the Tools bar, click"
@@ -453,7 +453,7 @@ msgstr "Кликнете на Алатникот"
 
 #: source/text/scalc/00/00000405.xhp#par_id3149332
 msgid  "\<image id=\"img_id3156020\" src=\"res/commandimagelist/sc_autoformat.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3156020\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3156020\" src=\"res/commandimagelist/sc_autoformat.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3156020\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000405.xhp#par_id3154060.33
 msgid  "AutoFormat"
@@ -461,7 +461,7 @@ msgstr "Автоматско форматирање"
 
 #: source/text/scalc/00/00000405.xhp#par_id3154618.34
 msgid  "\<variable id=\"bedingte\"\>Choose \<emph\>Format - Conditional Formatting\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"bedingte\">Изберете <emph>Формат - Условно форматирање</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#tit
 msgid  "Tools Menu"
@@ -473,11 +473,11 @@ msgstr "Мени Алатки"
 
 #: source/text/scalc/00/00000406.xhp#par_id3150541.2
 msgid  "\<variable id=\"exdektv\"\>Choose \<emph\>Tools - Detective\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdektv\">Изберете <emph>Алатки - Детектив</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3153194.3
 msgid  "Choose \<emph\>Tools - Detective - Trace Precedents\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Алатки - Детектив - Откриј приоритети</emph>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3150447.29
 msgid  "Shift+F7"
@@ -485,15 +485,15 @@ msgstr "Shift+F7"
 
 #: source/text/scalc/00/00000406.xhp#par_id3154123.33
 msgid  "\<variable id=\"silbentrennungc\"\>Menu \<emph\>Tools - Language - Hyphenation\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"silbentrennungc\">Мени <emph>Алатки - Јазик - Хифернација</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3145785.4
 msgid  "\<variable id=\"exdvore\"\>Choose \<emph\>Tools - Detective - Remove Precedents\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdvore\">Изберете <emph>Алатки - Детектив - Следи приоритети</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3155411.5
 msgid  "Choose \<emph\>Tools - Detective - Trace Dependents\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Алатки - Детектив - Следи зависности</emph>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3153363.30
 msgid  "Shift+F5"
@@ -501,67 +501,67 @@ msgstr "Shift+F5"
 
 #: source/text/scalc/00/00000406.xhp#par_id3146984.6
 msgid  "\<variable id=\"exdszne\"\>Choose \<emph\>Tools - Detective - Remove Dependents\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdszne\">Изберете <emph>Алатки - Детектив - Отстрани зависности</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3154014.7
 msgid  "\<variable id=\"exdase\"\>Choose \<emph\>Tools - Detective - Remove All Traces\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdase\">Изберете <emph>Алатки - Детектив - Отстрани  ги сите траги</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3153188.8
 msgid  "\<variable id=\"exdszfe\"\>Choose \<emph\>Tools - Detective - Trace Error\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdszfe\">Изберете <emph>Алатки - Детектив - Следи грешки</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3149410.9
 msgid  "\<variable id=\"fuellmodus\"\>Choose \<emph\>Tools - Detective - Fill Mode\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fuellmodus\">Избери <emph>Алатки - Детектив - Режим на пополнување</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3156284.10
 msgid  "\<variable id=\"dateneinkreisen\"\>Choose \<emph\>Tools - Detective - Mark Invalid Data\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dateneinkreisen\">Изберете <emph>Алатки - Детектив - Обележи невалидни податоци</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3153159.11
 msgid  "\<variable id=\"spurenaktualisieren\"\>Choose \<emph\>Tools - Detective - Refresh Traces\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"spurenaktualisieren\">Изберете <emph>Алатки - Детектив - Освежи траги</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3147397.32
 msgid  "\<variable id=\"automatisch\"\>Choose \<emph\>Tools - Detective - AutoRefresh\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"automatisch\">Изберете <emph>Алатки - Детектив - Автоматско освежување </emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3154018.12
 msgid  "\<variable id=\"exzws\"\>Choose \<emph\>Tools - Goal Seek\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exzws\">Изберете<emph>Алатки - Цел - Барај</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3269142
 msgid  "\<variable id=\"solver\"\>Choose Tools - Solver\</variable\>"
-msgstr ""
+msgstr "<variable id=\"solver\">Изберете Алатки - Решавач</variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id8554338
 msgid  "\<variable id=\"solver_options\"\>Choose Tools - Solver, Options button\</variable\>"
-msgstr ""
+msgstr "<variable id=\"solver_options\">Изберете го копчето Алатки - Решавач, Опции</variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3156277.13
 msgid  "\<variable id=\"exsze\"\>Choose \<emph\>Tools - Scenarios\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exsze\">Изберете <emph>Алатки - Сценарија</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3145640.14
 msgid  "\<variable id=\"exdos\"\>Choose \<emph\>Tools - Protect Document\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdos\">Изберете <emph>Алатки - Заштити документ</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3149020.15
 msgid  "\<variable id=\"exdst\"\>Choose \<emph\>Tools - Protect Document - Sheet\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdst\">Изберете <emph>Алатки - Заштити документ - Лист </emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3154256.16
 msgid  "\<variable id=\"exdsd\"\>Choose \<emph\>Tools - Protect Document - Document\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exdsd\">Изберете <emph>Алатки - Заштити документ - Документ</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3147363.17
 msgid  "\<variable id=\"zellinhalte\"\>Choose \<emph\>Tools - Cell Contents\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"zellinhalte\">Изберете <emph>Алатки - Содржина на ќелија - Содржина</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3146919.18
 msgid  "Choose \<emph\>Tools - Cell Contents - Recalculate\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Алатки - Содржина на ќелија - Повторно пресметај</emph>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3149257.31
 msgid  "F9"
@@ -569,11 +569,11 @@ msgstr "F9"
 
 #: source/text/scalc/00/00000406.xhp#par_id3150941.19
 msgid  "\<variable id=\"exatmb\"\>Choose \<emph\>Tools - Cell Contents - AutoCalculate\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"exatmb\">Изберете <emph>Алатки - Содржина на ќелија - Автоматско пресметување</emph></variable>"
 
 #: source/text/scalc/00/00000406.xhp#par_id3151276.20
 msgid  "\<variable id=\"autoeingabe\"\>Choose \<emph\>Tools - Cell Contents - AutoInput\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"autoeingabe\">Изберете <emph>Алатки - Содржина на ќелија - Автматско внесување</emph></variable>"
 
 #: source/text/scalc/00/00000407.xhp#tit
 msgid  "Window Menu"
@@ -585,11 +585,11 @@ msgstr "Мени Прозорец"
 
 #: source/text/scalc/00/00000407.xhp#par_id3147335.2
 msgid  "\<variable id=\"fete\"\>Choose \<emph\>Window - Split\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fete\">Изберете <emph>Прозорец - Подели</emph></variable>"
 
 #: source/text/scalc/00/00000407.xhp#par_id3153663.3
 msgid  "\<variable id=\"fefix\"\>Choose \<emph\>Window - Freeze\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"fefix\">Изберете <emph>Прозорец - Замрзни</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#tit
 msgid  "Data Menu"
@@ -601,23 +601,23 @@ msgstr "Мени Податоци"
 
 #: source/text/scalc/00/00000412.xhp#par_id8366954
 msgid  "\<variable id=\"text2columns\"\>Choose \<emph\>Data - Text to Columns\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"text2columns\">Изберете <emph>Податок - Текст во колони</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3147399.3
 msgid  "\<variable id=\"dbrbf\"\>Choose \<emph\>Data - Define Range\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dbrbf\">Изберете <emph>Податоци - Дефинирај опсег</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3145345.4
 msgid  "\<variable id=\"dbrba\"\>Choose \<emph\>Data - Select Range\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dbrba\">Изберете <emph>Податоци - Изберете опсег</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3150443.5
 msgid  "\<variable id=\"dnsrt\"\>Choose \<emph\>Data - Sort\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnsrt\">Изберете <emph>Податоци - Подреди</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3148491.6
 msgid  "Choose \<emph\>Data - Sort - Sort Criteria\</emph\> tab"
-msgstr ""
+msgstr "Изберете <emph>Податоци - Подреди - Критериум за подредување</emph> tab"
 
 #: source/text/scalc/00/00000412.xhp#par_id3154516.7
 msgid  "On Standard bar, click"
@@ -625,7 +625,7 @@ msgstr "Кликнете на основната лента"
 
 #: source/text/scalc/00/00000412.xhp#par_id3148663
 msgid  "\<image id=\"img_id3150543\" src=\"res/commandimagelist/sc_sortup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3150543\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150543\" src=\"res/commandimagelist/sc_sortup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3150543\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3150767.8
 msgid  "Sort Ascending"
@@ -633,7 +633,7 @@ msgstr "Подреди растечки"
 
 #: source/text/scalc/00/00000412.xhp#par_id3153969
 msgid  "\<image id=\"img_id3125863\" src=\"res/commandimagelist/sc_sortdown.png\" width=\"0.1701inch\" height=\"0.1701inch\"\>\<alt id=\"alt_id3125863\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3125863\" src=\"res/commandimagelist/sc_sortdown.png\" width=\"0.1701inch\" height=\"0.1701inch\"><alt id=\"alt_id3125863\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3145364.9
 msgid  "Sort Descending"
@@ -641,15 +641,15 @@ msgstr "Подреди опаѓачки"
 
 #: source/text/scalc/00/00000412.xhp#par_id3146984.10
 msgid  "\<variable id=\"dnstot\"\>Choose \<emph\>Data - Sort - Options\</emph\> tab\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnstot\">Изберете <emph>Податоци - Подредување - Јазиче опции</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3155308.11
 msgid  "\<variable id=\"dnftr\"\>Choose \<emph\>Data - Filter\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnftr\">Изберете <emph>Податоци - Филтирање</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3148646.12
 msgid  "Choose \<emph\>Data - Filter - AutoFilter\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Податоци - Филтирање - Автоматско филтрирање</emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3151113.13
 msgid  "On Tools bar or Table Data bar, click"
@@ -657,7 +657,7 @@ msgstr "Кликнете на Алатникот или на Лентата за
 
 #: source/text/scalc/00/00000412.xhp#par_id3145799
 msgid  "\<image id=\"img_id3149413\" src=\"res/commandimagelist/sc_datafilterautofilter.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149413\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3149413\" src=\"res/commandimagelist/sc_datafilterautofilter.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3149413\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3149401.14
 msgid  "AutoFilter"
@@ -665,27 +665,27 @@ msgstr "Автоматски филтер"
 
 #: source/text/scalc/00/00000412.xhp#par_id3156278.17
 msgid  "\<variable id=\"dnfspz\"\>Choose \<emph\>Data - Filter - Advanced Filter\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnfspz\">Изберете <emph>Податоци - Филтирање - Напредно филтрирање</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3153764.18
 msgid  "Choose \<emph\>Data - Filter - Standard Filter - More>>\</emph\> button"
-msgstr ""
+msgstr "Изберете <emph>Податоци - Филтирање - Старндно филтрирање - Копче повеќе>></emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3155444.19
 msgid  "Choose \<emph\>Data - Filter - Advanced Filter - More>>\</emph\> button"
-msgstr ""
+msgstr "Изберете <emph>Податоци - Филтирање - Старндно филтрирање - Копче повеќе>></emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3156382.20
 msgid  "Choose \<emph\>Data - Filter - Remove Filter\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Податоци - Филтирање - Отстрани филтрирање</emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3155961.48
 msgid  "On Table Data bar, click \<emph\>Remove Filter/Sort\</emph\>"
-msgstr ""
+msgstr "Кликнете на лентата со податоци за табелата<emph>Отстрани филтрирање/подредување</emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3148485
 msgid  "\<image id=\"img_id3145792\" src=\"res/commandimagelist/sc_removefilter.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145792\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145792\" src=\"res/commandimagelist/sc_removefilter.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145792\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3149207.49
 msgid  "Remove Filter/Sort"
@@ -693,59 +693,59 @@ msgstr "Отстрани филтер/сортирање"
 
 #: source/text/scalc/00/00000412.xhp#par_id3152778.21
 msgid  "\<variable id=\"dnaftas\"\>Choose \<emph\>Data - Filter - Hide AutoFilter\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnaftas\">Изберете <emph>Податоци - Филтирање - Сокриј автоматско филтрирање</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3166424.22
 msgid  "\<variable id=\"dntegs\"\>Choose \<emph\>Data - Subtotals\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dntegs\">Изберете <emph>Податоци - Потсуми</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3154574.23
 msgid  "\<variable id=\"dntezd\"\>Choose \<emph\>Data - Subtotals - 1st, 2nd, 3rd Group\</emph\> tabs\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dntezd\">Изберете <emph>Податоци - Потсуми - јазичиња прва, втора, трета група</emph> tabs </variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3151277.24
 msgid  "\<variable id=\"dntopi\"\>Choose \<emph\>Data - Subtotals - Options\</emph\> tab\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dntopi\">Изберете <emph>Податоци - Потсуми - Јазиче опции</emph> tab </variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3145133.25
 msgid  "\<variable id=\"datengueltig\"\>Choose \<emph\>Data - Validity\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"datengueltig\">Изберете <emph>Податоци - Валидност</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3152992.26
 msgid  "\<variable id=\"datengueltigwerte\"\>Menu \<emph\>Data - Validity - Criteria\</emph\> tab\</variable\>"
-msgstr ""
+msgstr "<variable id=\"datengueltigwerte\">Мени <emph>Податоци - Валидност -  јазиче критериум</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3150367.27
 msgid  "\<variable id=\"datengueltigeingabe\"\>Choose \<emph\>Data - Validity - Input Help\</emph\> tab\</variable\>"
-msgstr ""
+msgstr "<variable id=\"datengueltigeingabe\">Изберете <emph>Податоци - Валидност - јазиче внеси помош</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3154486.28
 msgid  "\<variable id=\"datengueltigfehler\"\>Choose \<emph\>Data - Validity - Error Alert\</emph\> tab\</variable\>"
-msgstr ""
+msgstr "<variable id=\"datengueltigfehler\">Изберете <emph>Податоци - Валидност - таб Предупредување за грешка</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3146978.29
 msgid  "\<variable id=\"dnmfo\"\>Choose \<emph\>Data - Multiple Operations\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnmfo\">Изберете <emph>Податоци - Повеќекратни операции</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3155809.30
 msgid  "\<variable id=\"dnksd\"\>Choose \<emph\>Data - Consolidate\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnksd\">Изберете <emph>Податоци - Здружи</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3148701.31
 msgid  "\<variable id=\"dngld\"\>Choose \<emph\>Data - Group and Outline\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dngld\">изберете <emph>Податок - Група и контура</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3153815.32
 msgid  "\<variable id=\"dngda\"\>Choose \<emph\>Data - Group and Outline - Hide Details\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dngda\">Изберете <emph>Податок - Група и контура - Сокриј детали</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3159223.33
 msgid  "\<variable id=\"dngde\"\>Choose \<emph\>Data - Group and Outline - Show Details\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dngde\">Изберете <emph>Податок - Група и контура - Прикажи детали</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3146870.34
 msgid  "Choose \<emph\>Data - Group and Outline - Group\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Податок - Група и контура - Група</emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3144507.51
 msgid  "F12"
@@ -753,11 +753,11 @@ msgstr "F12"
 
 #: source/text/scalc/00/00000412.xhp#par_id3144772.35
 msgid  "On \<emph\>Tools\</emph\> bar, click"
-msgstr ""
+msgstr "Кликнете на <emph>Алатникот</emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3149438
 msgid  "\<image id=\"img_id3153287\" src=\"res/commandimagelist/sc_group.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3153287\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153287\" src=\"res/commandimagelist/sc_group.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3153287\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3150214.36
 msgid  "Group"
@@ -765,7 +765,7 @@ msgstr "Групирај"
 
 #: source/text/scalc/00/00000412.xhp#par_id3146781.37
 msgid  "Choose \<emph\>Data - Group and Outline - Ungroup\</emph\>"
-msgstr ""
+msgstr "Изберете <emph>Податок - Група и контура - Одгрупирај</emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3150892.52
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F12"
@@ -773,11 +773,11 @@ msgstr ""
 
 #: source/text/scalc/00/00000412.xhp#par_id3155097.38
 msgid  "On \<emph\>Tools\</emph\> bar, click"
-msgstr ""
+msgstr "Кликнете на <emph>Алатникот</emph>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3150048
 msgid  "\<image id=\"img_id3155914\" src=\"res/commandimagelist/sc_ungroup.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3155914\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155914\" src=\"res/commandimagelist/sc_ungroup.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3155914\">Икона</alt></image>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3153555.39
 msgid  "Ungroup"
@@ -785,51 +785,51 @@ msgstr "Одгрупирај"
 
 #: source/text/scalc/00/00000412.xhp#par_id3153008.40
 msgid  "\<variable id=\"dnglagl\"\>Choose \<emph\>Data - Group and Outline - AutoOutline\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnglagl\">Изберете <emph>Податок - Група и контура - Авто контура</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3154709.41
 msgid  "\<variable id=\"dnglef\"\>Choose \<emph\>Data - Group and Outline - Remove\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dnglef\">Изберете <emph>Податок - Група и контура - Отстрани</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id1774346
 msgid  "\<variable id=\"dngdrill\"\>Choose \<emph\>Data - Group and Outline - Show Details\</emph\> (for some pivot tables)\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dngdrill\">Изберете <emph>Податоци - Група и контура - Прикажи детали</emph> (за некои табели на податочниот пилот) </variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3155759.42
 msgid  "\<variable id=\"dndtpt\"\>Choose \<emph\>Data - Pivot Table\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dndtpt\">Choose <emph>ПодатоциData - Податочен пилот</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3154625.43
 msgid  "\<variable id=\"dndpa\"\>Choose \<emph\>Data - Pivot Table - Create\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dndpa\">Изберете <emph>Податоци - Податочен пилот - Пушти</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3147558.53
 msgid  "\<variable id=\"dndq\"\>Choose \<emph\>Data - Pivot Table - Create\</emph\>, in the Select Source dialog choose the option \<emph\>Data source registered in $[officename]\</emph\>.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dndq\">Изберете <emph>Податоци - Податочен пилот - Пушти</emph>,  во дијалогот за избор на извор изберете ја опцијата  <emph>Изворот на податоци е регистриран во $[officename]</emph>. </variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3153297.50
 msgid  "Choose \<emph\>Data - Pivot Table - Create\</emph\>, in the Select Source dialog choose the option \<emph\>Current selection\</emph\>."
-msgstr ""
+msgstr "Изберете <emph>Податоци - Податочен пилот - Пушти </emph>, во дијалогот за избор на извор изберете ја опцијата <emph>Тековен избор</emph>."
 
 #: source/text/scalc/00/00000412.xhp#par_id3145118.54
 msgid  "Choose \<emph\>Data - Pivot Table - Create\</emph\>, in the Select Source dialog choose the option \<emph\>Data source registered in $[officename]\</emph\>, click \<emph\>OK\</emph\> to see \<emph\>Select Data Source\</emph\> dialog."
-msgstr ""
+msgstr "Изберете <emph>Податоци - Податочен пилот - Пушти</emph>, во дијалогот за избор на извор изберете ја опцијата <emph>Изворот на податоци се регистриран во $[officename]</emph>, кликнете <emph>Во ред</emph> за да го видите Дијалогот за избор на извор."
 
 #: source/text/scalc/00/00000412.xhp#par_id3153294.44
 msgid  "\<variable id=\"dndpak\"\>Choose \<emph\>Data - Pivot Table - Refresh\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dndpak\">Изберете <emph>Податоци - Податочен пилот - Освежи</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3151344.45
 msgid  "\<variable id=\"dndploe\"\>Choose \<emph\>Data - Pivot Table - Delete\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dndploe\">Изберете <emph>Податоци - Податочен пилот - Избриши</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_id3150397.46
 msgid  "\<variable id=\"dndakt\"\>Choose \<emph\>Data - Refresh Range\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"dndakt\">Изберете <emph>Податоци - Опсег на освежување</emph></variable>"
 
 #: source/text/scalc/00/00000412.xhp#par_idN10B8F
 msgid  "\<variable id=\"grouping\"\>Choose \<emph\>Data - Group and Outline - Group\</emph\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"grouping\">Изберете <emph>Податоци - Група и контура - Група</emph></variable>"
 
 #: source/text/scalc/01/01120000.xhp#tit
 msgid  "Page Preview"
@@ -837,7 +837,7 @@ msgstr "Преглед на страница"
 
 #: source/text/scalc/01/01120000.xhp#hd_id1918698
 msgid  "\<link href=\"text/scalc/01/01120000.xhp\"\>Page Preview\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/01120000.xhp\">Преглед на страница</link>"
 
 #: source/text/scalc/01/01120000.xhp#par_id3831598
 msgid  "\<ahelp hid=\".uno:PrintPreview\"\>Displays a preview of the printed page or closes the preview.\</ahelp\>"
@@ -869,15 +869,15 @@ msgstr "Навигатор"
 
 #: source/text/scalc/01/02110000.xhp#bm_id3150791
 msgid  "\<bookmark_value\>Navigator;for sheets\</bookmark_value\>\<bookmark_value\>navigating;in spreadsheets\</bookmark_value\>\<bookmark_value\>displaying; scenario names\</bookmark_value\>\<bookmark_value\>scenarios;displaying names\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Навигатор;за листови</bookmark_value><bookmark_value>навигација;низ табеларни пресметки</bookmark_value><bookmark_value>прикажување; имиња на сценарија</bookmark_value><bookmark_value>сценарија;прикажување имиња</bookmark_value>"
 
 #: source/text/scalc/01/02110000.xhp#hd_id3150791.1
 msgid  "\<link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\"\>Navigator\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Навигатор</link>"
 
 #: source/text/scalc/01/02110000.xhp#par_id3156422.2
 msgid  "\<ahelp hid=\".uno:Navigator\"\>Activates and deactivates the Navigator.\</ahelp\> The Navigator is a \<link href=\"text/shared/00/00000005.xhp#andocken\" name=\"dockable window\"\>dockable window\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".uno:Navigator\">Го активира и деактивира навигаторот.</ahelp> Навигаторот е <link href=\"text/shared/00/00000005.xhp#andocken\" name=\"dockable window\">вклоплив прозорец</link>."
 
 #: source/text/scalc/01/02110000.xhp#par_id3145271.40
 msgid  "Choose \<emph\>View - Navigator\</emph\> to display the Navigator."
@@ -921,7 +921,7 @@ msgstr "Пушти"
 
 #: source/text/scalc/01/02110000.xhp#par_id3150086.16
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_UP\"\>Moves to the cell at the beginning of the current data range, which you can highlight using the \<emph\>Data Range\</emph\> button.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_UP\">Се поместува во ќелијата на почетокот на тековниот опсег на податоци, кој што можеш да го означиш сокопчето <emph>Опсег на податоци</emph>.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#par_id3152994
 msgid  "\<image id=\"img_id3150515\" src=\"sw/imglst/sc20186.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3150515\"\>Icon\</alt\>\</image\>"
@@ -937,7 +937,7 @@ msgstr "Крај"
 
 #: source/text/scalc/01/02110000.xhp#par_id3152985.19
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_DOWN\"\>Moves to the cell at the end of the current data range, which you can highlight using the \<emph\>Data Range\</emph\> button.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_DOWN\">Се поместува во ќелијата на крај од тековниот опсег на податоци, кој што може да го означиш со копчето <emph>Опсег на податоци</emph>.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#par_id3159170
 msgid  "\<image id=\"img_id3148871\" src=\"sw/imglst/sc20175.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3148871\"\>Icon\</alt\>\</image\>"
@@ -953,7 +953,7 @@ msgstr "Смени"
 
 #: source/text/scalc/01/02110000.xhp#par_id3159098.22
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_ROOT\"\>Toggles the content view. Only the selected Navigator element and its subelements are displayed.\</ahelp\> Click the icon again to restore all elements for viewing."
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_ROOT\">Го менува прегледот на содржина. Само избраниот елемент од Навигаторот и неговите поделементи се гледаат.</ahelp> Повторно кликни на иконата за сите елементи да се гледаат."
 
 #: source/text/scalc/01/02110000.xhp#par_id3152869
 msgid  "\<image id=\"img_id3149126\" src=\"sw/imglst/sc20244.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3149126\"\>Icon\</alt\>\</image\>"
@@ -969,7 +969,7 @@ msgstr "Содржина"
 
 #: source/text/scalc/01/02110000.xhp#par_id3150051.13
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_ZOOM\"\>Allows you to hide/show the contents.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_ZOOM\">Ви овозможува да ги криете/прикажувате содржините.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#par_id3155597
 msgid  "\<image id=\"img_id3154738\" src=\"sw/imglst/sc20233.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3154738\"\>Icon\</alt\>\</image\>"
@@ -985,7 +985,7 @@ msgstr "Сценарија"
 
 #: source/text/scalc/01/02110000.xhp#par_id3153955.25
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_SCEN\"\>Displays all available scenarios. Double-click a name to apply that scenario.\</ahelp\> The result is shown in the sheet. For more information, choose \<link href=\"text/scalc/01/06050000.xhp\" name=\"Tools - Scenarios\"\>\<emph\>Tools - Scenarios\</emph\>\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_SCEN\">Ги прикажува сите достапни сценарија. Двојно-кликнете на името за да го примените тоа сценарио.</ahelp> Резултатот се прикажува во листот. За повеќе информации, изберете<link href=\"text/scalc/01/06050000.xhp\" name=\"Tools - Scenarios\"><emph>Алатки - Сценарија</emph></link>."
 
 #: source/text/scalc/01/02110000.xhp#par_id3148745
 msgid  "\<image id=\"img_id3159256\" src=\"sc/res/imglst/navipi/na07.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3159256\"\>Icon\</alt\>\</image\>"
@@ -1005,7 +1005,7 @@ msgstr "Избриши"
 
 #: source/text/scalc/01/02110000.xhp#par_idN10A7B
 msgid  "\<ahelp hid=\"HID_SC_SCENARIO_DELETE\"\>Deletes the selected scenario.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_SCENARIO_DELETE\">Го брише избраното сценарио.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#par_idN10A92
 msgid  "Properties"
@@ -1013,7 +1013,7 @@ msgstr "Својства"
 
 #: source/text/scalc/01/02110000.xhp#par_idN10A96
 msgid  "\<ahelp hid=\"HID_SC_SCENARIO_EDIT\"\>Opens the \<link href=\"text/scalc/01/06050000.xhp\"\>Edit scenario\</link\> dialog, where you can edit the scenario properties.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_SCENARIO_EDIT\">Го отвара <link href=\"text/scalc/01/06050000.xhp\">Уреди сценарио</link> прозорчето, каде што можете да ги уредувате својствата на сценариото.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#hd_id3150037.26
 msgid  "Drag Mode"
@@ -1021,7 +1021,7 @@ msgstr "Режим на влечење"
 
 #: source/text/scalc/01/02110000.xhp#par_id3157876.28
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_DROP\"\>Opens a submenu for selecting the drag mode. You decide which action is performed when dragging and dropping an object from the Navigator into a document. Depending on the mode you select, the icon indicates whether a hyperlink, link or a copy is created.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_DROP\">Отвора подмени за избирање на режимот на влечење. Исто така, можете да го изберете режимот на влечење преку контекст менито во прозорот од Навигаторот. Ќе изберете која акција ќе се изврши кога ќе го повлечете и пуштите објектот од Навигаторот во документот.Во зависност од режимот кој ќе го одберете, иконата означува дали е креирана хиперврска или копија.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#par_id3149947
 msgid  "\<image id=\"img_id3159119\" src=\"res/commandimagelist/sc_chainframes.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3159119\"\>Icon\</alt\>\</image\>"
@@ -1037,7 +1037,7 @@ msgstr "Вметни како хиперврска"
 
 #: source/text/scalc/01/02110000.xhp#par_id3146938.30
 msgid  "\<ahelp hid=\"HID_SC_DROPMODE_URL\"\>Inserts a hyperlink when you drag-and-drop an object from the Navigator into a document.\</ahelp\> You can later click the created hyperlink to set the cursor and the view to the respective object. "
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_DROPMODE_URL\">Вметнува хиперврска кога ќе повлечете и пуштите објект од Навигаторот во документ. </ahelp> Потоа, можете да кликнете на хиперврската за да го поставите курсорот и погледот на тој објект."
 
 #: source/text/scalc/01/02110000.xhp#par_id3880733
 msgid  "If you insert a hyperlink that links to an open document, you need to save the document before you can use the hyperlink."
@@ -1049,7 +1049,7 @@ msgstr "Вметни како врска"
 
 #: source/text/scalc/01/02110000.xhp#par_id3150746.32
 msgid  "\<ahelp hid=\"HID_SC_DROPMODE_LINK\"\>Creates a link when you drag-and-drop an object from the Navigator into a document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_DROPMODE_LINK\">Креира врска кога ќе повлечете и пуштите објект од Навигаторот во документ.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#hd_id3145824.33
 msgid  "Insert as Copy"
@@ -1057,7 +1057,7 @@ msgstr "Вметни како копија"
 
 #: source/text/scalc/01/02110000.xhp#par_id3147471.34
 msgid  "\<ahelp hid=\"HID_SC_DROPMODE_COPY\"\>Generates a copy when you drag-and-drop an object from the Navigator into a document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_DROPMODE_COPY\">Генерира копија кога ќе повлечете и пуштите објект од Навигаторот во документ. </ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#hd_id3147423.38
 msgid  "Objects"
@@ -1065,7 +1065,7 @@ msgstr "Објекти"
 
 #: source/text/scalc/01/02110000.xhp#par_id3150700.39
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_ENTRIES\"\>Displays all objects in your document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_ENTRIES\">Ги прикажува сите објекти во вашиот документ.</ahelp>"
 
 #: source/text/scalc/01/02110000.xhp#hd_id3150860.35
 msgid  "Documents"
@@ -1073,7 +1073,7 @@ msgstr "Документи"
 
 #: source/text/scalc/01/02110000.xhp#par_id3153929.36
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_DOC\"\>Displays the names of all open documents.\</ahelp\> To switch to another open document in the Navigator, click the document name. The status (active, inactive) of the document is shown in brackets after the name. You can switch the active document in the \<emph\>Window\</emph\> menu."
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_NAVIPI_DOC\">Ги прикажува имињата на сите отворени документи.</ahelp> За да се префрлите на друг отворен документ кликнете на името на документот во Навигаторот. Статусот (активен, неактивен) на документот ќе биде прикажан во загради по името. Можете да го смените активниот документ во менито <emph>Прозорец</emph>."
 
 #: source/text/scalc/01/02120000.xhp#tit
 msgid  "Headers & Footers"
@@ -1085,11 +1085,11 @@ msgstr "Заглавија и подножја"
 
 #: source/text/scalc/01/02120000.xhp#par_id3151073.2
 msgid  "\<variable id=\"kopfundfusszeilentext\"\>\<ahelp hid=\".uno:EditHeaderAndFooter\"\>Allows you to define and format headers and footers.\</ahelp\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"kopfundfusszeilentext\"><ahelp hid=\".uno:EditHeaderAndFooter\">Ви овозможува да ги дефинирате и форматирате заглавијата и подножјата.</ahelp></variable>"
 
 #: source/text/scalc/01/02120000.xhp#par_id3153415.3
 msgid  "The\<emph\> Headers/Footers \</emph\>dialog contains the tabs for defining headers and footers. There will be separate tabs for the left and right page headers and footers if the \<emph\>Same content left/right\</emph\> option was not marked in the \<link href=\"text/scalc/01/05070000.xhp\" name=\"Page Style\"\>Page Style\</link\> dialog."
-msgstr ""
+msgstr "<emph> Заглавија/Подножја </emph>прозорецот ги содржи јазичињата за дефинирање заглавија и подножја. Таму има посебни јазичиња за левите и десните заглавија и подножја на страниците ако опцијата<emph>Иста содржина лево/десно</emph>е обележана во прозорецот <link href=\"text/scalc/01/05070000.xhp\" name=\"Page Style\">Стил на страница</link>."
 
 #: source/text/scalc/01/02120100.xhp#tit
 msgid  "Header/Footer"
@@ -1097,15 +1097,15 @@ msgstr "Заглавие/Подножје"
 
 #: source/text/scalc/01/02120100.xhp#bm_id3153360
 msgid  "\<bookmark_value\>page styles; headers\</bookmark_value\>         \<bookmark_value\>page styles; footers\</bookmark_value\>         \<bookmark_value\>headers; defining\</bookmark_value\>         \<bookmark_value\>footers; defining\</bookmark_value\>         \<bookmark_value\>file names in headers/footers\</bookmark_value\>         \<bookmark_value\>changing;dates, automatically\</bookmark_value\>         \<bookmark_value\>dates;updating automatically\</bookmark_value\>         \<bookmark_value\>automatic date updates\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>стилови на страница; заглавија</bookmark_value><bookmark_value>стилови на страница; подножја</bookmark_value><bookmark_value>заглавија; дефинирање</bookmark_value><bookmark_value>подножја; дефинирање</bookmark_value><bookmark_value>имиња на датотеките во заглавието/подножјето</bookmark_value><bookmark_value>менување;датуми, автоматски</bookmark_value><bookmark_value>датуми;автоматско ажурирање</bookmark_value><bookmark_value>автоматски ажурирање на датуми</bookmark_value>"
 
 #: source/text/scalc/01/02120100.xhp#hd_id3153360.1
 msgid  "\<link href=\"text/scalc/01/02120100.xhp\" name=\"Header/Footer\"\>Header/Footer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/02120100.xhp\" name=\"Header/Footer\">Заглавие/Подножје</link>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3150768.2
 msgid  "\<ahelp hid=\"HID_SCPAGE_HFED_FL\"\>Defines or formats a header or footer for a Page Style.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SCPAGE_HFED_FL\">Дефинира или форматира заглавие или подножје за Стил на страница.</ahelp>"
 
 #: source/text/scalc/01/02120100.xhp#hd_id3145748.3
 msgid  "Left Area"
@@ -1113,7 +1113,7 @@ msgstr "Лева област"
 
 #: source/text/scalc/01/02120100.xhp#par_id3147434.4
 msgid  "\<ahelp hid=\"HID_SC_HF_FLL\"\>Enter the text to be displayed at the left side of the header or footer.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_HF_FLL\">Внеси го текстот кој ќе се прикажува на левата страна од заглавието или подножјето.</ahelp>"
 
 #: source/text/scalc/01/02120100.xhp#hd_id3148648.5
 msgid  "Center Area"
@@ -1121,7 +1121,7 @@ msgstr "Централна област"
 
 #: source/text/scalc/01/02120100.xhp#par_id3163710.6
 msgid  "\<ahelp hid=\".\"\>Enter the text to be displayed at the center of the header or footer.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_HF_FLC\">Внеси го текстот кој ќе се прикажува во средина на заглавието или подножјето</ahelp>"
 
 #: source/text/scalc/01/02120100.xhp#hd_id3154942.7
 msgid  "Right Area"
@@ -1129,7 +1129,7 @@ msgstr "Десна област"
 
 #: source/text/scalc/01/02120100.xhp#par_id3147126.8
 msgid  "\<ahelp hid=\"HID_SC_HF_FLR\"\>Enter the text to be displayed at the right side of the header or footer.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_HF_FLR\">Внеси го текстот кој ќе се прикажува на десната страна до заглавието или подножјето.</ahelp>"
 
 #: source/text/scalc/01/02120100.xhp#par_idN10811
 msgid  "Header/Footer"
@@ -1137,7 +1137,7 @@ msgstr "Заглавие/Подножје"
 
 #: source/text/scalc/01/02120100.xhp#par_idN10815
 msgid  "\<ahelp hid=\".\"\>Select a predefined header or footer from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Изберете веќе дефинирано заглавие или подножје од листата.</ahelp>"
 
 #: source/text/scalc/01/02120100.xhp#hd_id3154729.9
 msgid  "Text attributes"
@@ -1145,11 +1145,11 @@ msgstr "Атрибути на текстот"
 
 #: source/text/scalc/01/02120100.xhp#par_id3150717.10
 msgid  "\<ahelp hid=\"HID_SC_HF_TEXT\"\>Opens a dialog to assign formats to new or selected text.\</ahelp\> The \<emph\>Text Attributes \</emph\>dialog contains the tab pages \<link href=\"text/shared/01/05020100.xhp\" name=\"Font\"\>Font\</link\>, \<link href=\"text/shared/01/05020200.xhp\" name=\"Font Effects\"\>Font Effects\</link\> and \<link href=\"text/shared/01/05020500.xhp\" name=\"Font Position\"\>Font Position\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_HF_TEXT\">Отвора прозорец за да доделите формати на новиот или избраниот текст.</ahelp> <emph>Text Attributes </emph>dialog contains the tab pages <link href=\"text/shared/01/05020100.xhp\" name=\"Font\">Font</link>, <link href=\"text/shared/01/05020200.xhp\" name=\"Font Effects\">Font Effects</link> and <link href=\"text/shared/01/05020500.xhp\" name=\"Font Position\">Font Position</link>."
 
 #: source/text/scalc/01/02120100.xhp#par_id3159266
 msgid  "\<image id=\"img_id3156386\" src=\"sc/res/text.png\" width=\"0.1874in\" height=\"0.1665in\"\>\<alt id=\"alt_id3156386\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3156386\" src=\"sc/res/text.png\" width=\"0.25inch\" height=\"0.222inch\"><alt id=\"alt_id3156386\">Икона</alt></image>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3155336.25
 msgid  "Text Attributes"
@@ -1165,7 +1165,7 @@ msgstr ""
 
 #: source/text/scalc/01/02120100.xhp#par_id3150369
 msgid  "\<image id=\"img_id3150518\" src=\"res/folderop.png\" width=\"0.1665in\" height=\"0.1252in\"\>\<alt id=\"alt_id3150518\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150518\" src=\"res/folderop.png\" width=\"0.222inch\" height=\"0.1665inch\"><alt id=\"alt_id3150518\">Икона</alt></image>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3154487.26
 msgid  "File Name"
@@ -1181,7 +1181,7 @@ msgstr ""
 
 #: source/text/scalc/01/02120100.xhp#par_id3146870
 msgid  "\<image id=\"img_id3148870\" src=\"sc/res/table.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3148870\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148870\" src=\"sc/res/table.png\" width=\"0.25inch\" height=\"0.222inch\"><alt id=\"alt_id3148870\">Икона</alt></image>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3147071.27
 msgid  "Sheet Name"
@@ -1197,7 +1197,7 @@ msgstr ""
 
 #: source/text/scalc/01/02120100.xhp#par_id3151304
 msgid  "\<image id=\"img_id3155386\" src=\"sc/res/page.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3155386\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155386\" src=\"sc/res/page.png\" width=\"0.25inch\" height=\"0.222inch\"><alt id=\"alt_id3155386\">Икона</alt></image>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3150048.28
 msgid  "Page"
@@ -1213,7 +1213,7 @@ msgstr ""
 
 #: source/text/scalc/01/02120100.xhp#par_id3149315
 msgid  "\<image id=\"img_id3155757\" src=\"sc/res/pages.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3155757\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155757\" src=\"sc/res/pages.png\" width=\"0.25inch\" height=\"0.222inch\"><alt id=\"alt_id3155757\">Икона</alt></image>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3147499.29
 msgid  "Pages"
@@ -1229,7 +1229,7 @@ msgstr ""
 
 #: source/text/scalc/01/02120100.xhp#par_id3147299
 msgid  "\<image id=\"img_id3150394\" src=\"sc/res/date.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3150394\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150394\" src=\"sc/res/date.png\" width=\"0.25inch\" height=\"0.25inch\"><alt id=\"alt_id3150394\">Икона</alt></image>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3150540.30
 msgid  "Date"
@@ -1245,7 +1245,7 @@ msgstr ""
 
 #: source/text/scalc/01/02120100.xhp#par_id3153122
 msgid  "\<image id=\"img_id3146884\" src=\"sc/res/time.png\" width=\"0.2228in\" height=\"0.2228in\"\>\<alt id=\"alt_id3146884\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3146884\" src=\"sc/res/time.png\" width=\"0.25inch\" height=\"0.222inch\"><alt id=\"alt_id3146884\">Икона</alt></image>"
 
 #: source/text/scalc/01/02120100.xhp#par_id3157904.31
 msgid  "Time"
@@ -1257,7 +1257,7 @@ msgstr "Пополни"
 
 #: source/text/scalc/01/02140000.xhp#bm_id8473769
 msgid  "\<bookmark_value\>filling;selection lists\</bookmark_value\>         \<bookmark_value\>selection lists;filling cells\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>пополнување;списоци на селекции</bookmark_value><bookmark_value>списоци на селекции;пополнување на ќелии</bookmark_value>"
 
 #: source/text/scalc/01/02140000.xhp#hd_id3153876.1
 msgid  "\<link href=\"text/scalc/01/02140000.xhp\" name=\"Fill\"\>Fill\</link\>"
@@ -4645,7 +4645,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060104.xhp#bm_id3691824
 msgid  "\<bookmark_value\>INFO function\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>INFO функција</bookmark_value>"
 
 #: source/text/scalc/01/04060104.xhp#hd_id5787224
 msgid  "INFO"
@@ -4789,7 +4789,7 @@ msgstr "FORMULA"
 
 #: source/text/scalc/01/04060104.xhp#par_id3158417.148
 msgid  "\<ahelp hid=\"HID_FUNC_FORMEL\"\>Displays the formula of a formula cell as a text string.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_FORMEL\">Ја прикажува формулата на ќелијата со формула како текстуелна низа.</ahelp>"
 
 #: source/text/scalc/01/04060104.xhp#hd_id3154954.149
 msgid  "Syntax"
@@ -6009,7 +6009,7 @@ msgstr "COUNTBLANK"
 
 #: source/text/scalc/01/04060106.xhp#par_id3155260.43
 msgid  "\<ahelp hid=\"HID_FUNC_ANZAHLLEEREZELLEN\"\>Returns the number of empty cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_ANZAHLLEEREZELLEN\">Враќа број на празни ќелии.</ahelp>"
 
 #: source/text/scalc/01/04060106.xhp#hd_id3145144.44
 msgid  "Syntax"
@@ -6401,7 +6401,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#par_id3148803.150
 msgid  "\<ahelp hid=\"HID_FUNC_COS\"\>Returns the cosine of the given angle (in radians).\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_COS\">Дава косинус на дадениот агол (во радијанси).</ahelp>"
 
 #: source/text/scalc/01/04060106.xhp#hd_id3150779.151
 msgid  "Syntax"
@@ -12017,7 +12017,7 @@ msgstr "LEFT"
 
 #: source/text/scalc/01/04060110.xhp#par_id3153622.96
 msgid  "\<ahelp hid=\"HID_FUNC_LINKS\"\>Returns the first character or characters of a text.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_LINKS\">Го дава првиот знак или знаци од текстот.</ahelp>"
 
 #: source/text/scalc/01/04060110.xhp#hd_id3156116.97
 msgid  "Syntax"
@@ -12281,7 +12281,7 @@ msgstr "RIGHT"
 
 #: source/text/scalc/01/04060110.xhp#par_id3145375.114
 msgid  "\<ahelp hid=\"HID_FUNC_RECHTS\"\>Returns the last character or characters of a text.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_RECHTS\">Го враќа последниот знак или знаци од текстот.</ahelp>"
 
 #: source/text/scalc/01/04060110.xhp#hd_id3150837.115
 msgid  "Syntax"
@@ -19793,7 +19793,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060184.xhp#bm_id3153933
 msgid  "\<bookmark_value\>MODE function\</bookmark_value\>\<bookmark_value\>most common value\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>заглавија;табеларни прикази</bookmark_value><bookmark_value>подножја;табеларни прикази</bookmark_value>"
 
 #: source/text/scalc/01/04060184.xhp#hd_id3153933.43
 msgid  "MODE"
@@ -23729,11 +23729,11 @@ msgstr ""
 
 #: source/text/scalc/01/12030200.xhp#hd_id3147228.1
 msgid  "\<link href=\"text/scalc/01/12030200.xhp\" name=\"Options\"\> Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12030200.xhp\" name=\"Options\"> Опции</link>"
 
 #: source/text/scalc/01/12030200.xhp#par_id3153770.2
 msgid  "\<ahelp hid=\"HID_SCPAGE_SORT_OPTIONS\"\> Sets additional sorting options.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SCPAGE_SORT_OPTIONS\"> Поставува дополнителни опции за подредување.</ahelp>"
 
 #: source/text/scalc/01/12030200.xhp#hd_id3146976.3
 msgid  " Case Sensitivity"
@@ -27189,15 +27189,15 @@ msgstr "Формат на броеви: валута"
 
 #: source/text/scalc/02/02130000.xhp#hd_id3152892.1
 msgid  "\<link href=\"text/scalc/02/02130000.xhp\" name=\"Number format: Currency\"\>Number format: Currency\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/02130000.xhp\" name=\"Number format: Currency\">Формат на број: Валута</link>"
 
 #: source/text/scalc/02/02130000.xhp#par_id3148837.2
 msgid  "\<ahelp hid=\".uno:NumberFormatCurrency\" visibility=\"visible\"\>Applies the default currency format to the selected cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatCurrency\" visibility=\"visible\">Го доделува стандардниот формат на валутата на селектираните ќелии.</ahelp>"
 
 #: source/text/scalc/02/02130000.xhp#par_id3155267
 msgid  "\<image src=\"res/commandimagelist/sc_currencyfield.png\" id=\"img_id3159096\"\>\<alt id=\"alt_id3159096\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/commandimagelist/sc_currencyfield.png\" id=\"img_id3159096\"><alt id=\"alt_id3159096\">Икона</alt></image>"
 
 #: source/text/scalc/02/02130000.xhp#par_id3150214.3
 msgid  "Number Format: Currency"
@@ -27205,7 +27205,7 @@ msgstr "Формат на броеви: валута"
 
 #: source/text/scalc/02/02130000.xhp#par_id3146776.4
 msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbers\"\>Format - Cell - Numbers\</link\>."
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbers\">Форматирај - Ќелија - Броеви</link>."
 
 #: source/text/scalc/02/02140000.xhp#tit
 msgid  "Number format: Percent"
@@ -27213,15 +27213,15 @@ msgstr "Формат на бројот: Процент"
 
 #: source/text/scalc/02/02140000.xhp#hd_id3156329.1
 msgid  "\<link href=\"text/scalc/02/02140000.xhp\" name=\"Number format: Percent\"\>Number format: Percent\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/02140000.xhp\" name=\"Number format: Percent\">Формат на бројот: Процент</link>"
 
 #: source/text/scalc/02/02140000.xhp#par_id3155629.2
 msgid  "\<ahelp hid=\".uno:NumberFormatPercent\"\>Applies the percentage format to the selected cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatPercent\">Го доделува форматот за процент на селектираните ќелии.</ahelp>"
 
 #: source/text/scalc/02/02140000.xhp#par_id3153968
 msgid  "\<image id=\"img_id3150869\" src=\"res/commandimagelist/sc_numberformatpercent.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3150869\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150869\" src=\"res/commandimagelist/sc_numberformatpercent.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3150869\">Икона</alt></image>"
 
 #: source/text/scalc/02/02140000.xhp#par_id3151114.3
 msgid  "Number Format: Percent"
@@ -27229,7 +27229,7 @@ msgstr "Формат на броеви: процент"
 
 #: source/text/scalc/02/02140000.xhp#bm_id3149260
 msgid  "\<bookmark_value\>percentage calculations\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>пресметки во проценти</bookmark_value>"
 
 #: source/text/scalc/02/02140000.xhp#par_id3149260.5
 msgid  "You can also enter a percentage sign (%) after a number in a cell:"
@@ -27249,7 +27249,7 @@ msgstr "1%% соодветно на 0.0001"
 
 #: source/text/scalc/02/02140000.xhp#par_id3159153.10
 msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbers\"\>Format - Cell - Numbers\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbers\">Формат - Ќелија - Броеви</link>"
 
 #: source/text/scalc/02/02150000.xhp#tit
 msgid  "Number format: Default"
@@ -27257,15 +27257,15 @@ msgstr "Формат на број: Стандард"
 
 #: source/text/scalc/02/02150000.xhp#hd_id3149182.1
 msgid  "\<link href=\"text/scalc/02/02150000.xhp\" name=\"Number format: Default\"\>Number format: Default\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/02150000.xhp\" name=\"Number format: Default\">Формат на број: Стандард</link>"
 
 #: source/text/scalc/02/02150000.xhp#par_id3163802.2
 msgid  "\<ahelp hid=\".uno:NumberFormatStandard\" visibility=\"visible\"\>Applies the default number format to the selected cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatStandard\" visibility=\"visible\">Го доделува зададениот формат на броевите на селектираните ќелии.</ahelp>"
 
 #: source/text/scalc/02/02150000.xhp#par_id3155922
 msgid  "\<image src=\"res/commandimagelist/sc_numberformatstandard.png\" id=\"img_id3156024\"\>\<alt id=\"alt_id3156024\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/commandimagelist/sc_numberformatstandard.png\" id=\"img_id3156024\"><alt id=\"alt_id3156024\">Икона</alt></image>"
 
 #: source/text/scalc/02/02150000.xhp#par_id3153361.3
 msgid  "Number Format: Standard"
@@ -27273,7 +27273,7 @@ msgstr "Формат на броеви: стандарден"
 
 #: source/text/scalc/02/02150000.xhp#par_id3154908.4
 msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbers\"\>Format - Cell - Numbers\</link\>."
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbers\">Форматирај - Ќелија - Броеви</link>."
 
 #: source/text/scalc/02/02160000.xhp#tit
 msgid  "Number Format: Add Decimal Place"
@@ -27281,15 +27281,15 @@ msgstr "Формат на број: Додај децимални места"
 
 #: source/text/scalc/02/02160000.xhp#hd_id3150275.1
 msgid  "\<link href=\"text/scalc/02/02160000.xhp\" name=\"Number Format: Add Decimal Place\"\>Number Format: Add Decimal Place\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/02160000.xhp\" name=\"Number Format: Add Decimal Place\">Формат на број: Додај децимални места</link>"
 
 #: source/text/scalc/02/02160000.xhp#par_id3150792.2
 msgid  "\<ahelp hid=\".uno:NumberFormatIncDecimals\"\>Adds one decimal place to the numbers in the selected cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatIncDecimals\">Додава едно децимално место на броевите во избраните ќелии.</ahelp>"
 
 #: source/text/scalc/02/02160000.xhp#par_id3145787
 msgid  "\<image id=\"img_id3145271\" src=\"res/commandimagelist/sc_numberformatincdecimals.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3145271\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145271\" src=\"res/commandimagelist/sc_numberformatincdecimals.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3145271\">Икона</alt></image>"
 
 #: source/text/scalc/02/02160000.xhp#par_id3149262.3
 msgid  "Number Format: Add Decimal Place"
@@ -27301,15 +27301,15 @@ msgstr "Формат на броеви: Избриши децимални мес
 
 #: source/text/scalc/02/02170000.xhp#hd_id3149164.1
 msgid  "\<link href=\"text/scalc/02/02170000.xhp\" name=\"Number Format: Delete Decimal Place\"\>Number Format: Delete Decimal Place\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/02170000.xhp\" name=\"Number Format: Delete Decimal Place\">Формат на броеви: избриши децимални места </link>"
 
 #: source/text/scalc/02/02170000.xhp#par_id3147264.2
 msgid  "\<ahelp hid=\".uno:NumberFormatDecDecimals\"\>Removes one decimal place from the numbers in the selected cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatDecDecimals\">Отстранува едно децимално место од броевите во избраните ќелии.</ahelp>"
 
 #: source/text/scalc/02/02170000.xhp#par_id3145173
 msgid  "\<image id=\"img_id3153192\" src=\"res/commandimagelist/sc_numberformatdecdecimals.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3153192\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153192\" src=\"res/commandimagelist/sc_numberformatdecdecimals.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3153192\">Икона</alt></image>"
 
 #: source/text/scalc/02/02170000.xhp#par_id3154686.3
 msgid  "Number Format: Delete Decimal Place"
@@ -27321,11 +27321,11 @@ msgstr "Област на листот"
 
 #: source/text/scalc/02/06010000.xhp#bm_id3156326
 msgid  "\<bookmark_value\>formula bar; sheet area names\</bookmark_value\>\<bookmark_value\>sheet area names\</bookmark_value\>\<bookmark_value\>showing; cell references\</bookmark_value\>\<bookmark_value\>cell references; showing\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>лента за формули; имиња на област на листот</bookmark_value><bookmark_value>имиња на област на листот</bookmark_value><bookmark_value>покажува; референци на ќелии</bookmark_value><bookmark_value>референци на ќелии; покажува</bookmark_value>"
 
 #: source/text/scalc/02/06010000.xhp#hd_id3156326.1
 msgid  "\<link href=\"text/scalc/02/06010000.xhp\" name=\"Name Box\"\>Name Box\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/06010000.xhp\" name=\"Name Box\">Поле за име</link>"
 
 #: source/text/scalc/02/06010000.xhp#par_id3149656.2
 msgid  "\<ahelp hid=\"HID_INSWIN_POS\"\>Displays the reference for the current cell, the range of the selected cells, or the name of the area. You can also select a range of cells, and then type a name for that range into the \<emph\>Name Box\</emph\>.\</ahelp\>"
@@ -27353,7 +27353,7 @@ msgstr ""
 
 #: source/text/scalc/02/06030000.xhp#hd_id3157909.1
 msgid  "\<link href=\"text/scalc/02/06030000.xhp\" name=\"Sum\"\>Sum\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/06030000.xhp\" name=\"Sum\">Sum</link>"
 
 #: source/text/scalc/02/06030000.xhp#par_id3150543.2
 msgid  "\<ahelp hid=\"HID_INSWIN_SUMME\"\>Inserts the sum of a cell range into the current cell, or inserts sum values into selected cells. Click in a cell, click this icon, and optionally adjust the cell range. Or select some cells into which the sum values will be inserted, then click the icon.\</ahelp\>"
@@ -27373,7 +27373,7 @@ msgstr "$[officename] автоматски предложува опсег на 
 
 #: source/text/scalc/02/06030000.xhp#par_id3153189.3
 msgid  "Click the \<emph\>Accept\</emph\> icon (green check mark) to use the formula displayed in the input line."
-msgstr ""
+msgstr "Click the <emph>Accept</emph> икона (обележана со зелено) за да ја користите формулата што е прикажана во линијата за внесување."
 
 #: source/text/scalc/02/06040000.xhp#tit
 msgid  "Function"
@@ -27381,23 +27381,23 @@ msgstr "Функција"
 
 #: source/text/scalc/02/06040000.xhp#bm_id3150084
 msgid  "\<bookmark_value\>formula bar; functions\</bookmark_value\>\<bookmark_value\>functions; formula bar icon\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>лента за фомули; функции</bookmark_value><bookmark_value>функции; лента за фомули икона</bookmark_value>"
 
 #: source/text/scalc/02/06040000.xhp#hd_id3150084.1
 msgid  "\<link href=\"text/scalc/02/06040000.xhp\" name=\"Function\"\>Function\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/06040000.xhp\" name=\"Function\">Функција</link>"
 
 #: source/text/scalc/02/06040000.xhp#par_id3151245.2
 msgid  "\<ahelp hid=\"HID_INSWIN_FUNC\"\>Adds a formula to the current cell. Click this icon, and then enter the formula in the \<emph\>Input line\</emph\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_INSWIN_FUNC\">Додава формула на ќелијата. Кликнете на ова икона и потоа внесете ја формулата во <emph>линијата за внесување</emph>.</ahelp>"
 
 #: source/text/scalc/02/06040000.xhp#par_id3153360.3
 msgid  "This icon is only available when the \<emph\>Input line\</emph\> box is not active."
-msgstr ""
+msgstr "Оваа икона е достапна само кога <emph>Линија за внесување</emph> полето е празно."
 
 #: source/text/scalc/02/06040000.xhp#par_id3153770
 msgid  "\<image id=\"img_id3145785\" src=\"sc/res/imglst/apptbx/sc26049.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3145785\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145785\" src=\"sc/res/imglst/apptbx/sc26049.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3145785\">Икона</alt></image>"
 
 #: source/text/scalc/02/06040000.xhp#par_id3153951.4
 msgid  "Function"
@@ -27409,11 +27409,11 @@ msgstr "Внеси линија"
 
 #: source/text/scalc/02/06050000.xhp#hd_id3153821.1
 msgid  "\<link href=\"text/scalc/02/06050000.xhp\" name=\"Input line\"\>Input line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/06050000.xhp\" name=\"Input line\">линија за внесување</link>"
 
 #: source/text/scalc/02/06050000.xhp#par_id3155922.2
 msgid  "\<ahelp hid=\"HID_INSWIN_INPUT\"\>Enter the formula that you want to add to the current cell. You can also click the \<link href=\"text/scalc/01/04060000.xhp\" name=\"Function Wizard\"\>Function Wizard\</link\> icon to insert a predefined function into the formula.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_INSWIN_INPUT\">Внесете ја формулата што сакате да и ја доделите на актуелната ќелија. Исто така можете да кликнете на <link href=\"text/scalc/01/04060000.xhp\" name=\"Function Wizard\">Волшебник за функции</link> икона за да внесете зададена функција во формулата.</ahelp>"
 
 #: source/text/scalc/02/06060000.xhp#tit
 msgid  "Cancel"
@@ -27421,19 +27421,19 @@ msgstr "Откажи"
 
 #: source/text/scalc/02/06060000.xhp#bm_id3154514
 msgid  "\<bookmark_value\>formula bar; canceling inputs\</bookmark_value\>\<bookmark_value\>functions; canceling input icon\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>лента за формули; откажување на внесувањето</bookmark_value><bookmark_value>функции; откажување на иконата за внесување</bookmark_value>"
 
 #: source/text/scalc/02/06060000.xhp#hd_id3154514.1
 msgid  "\<link href=\"text/scalc/02/06060000.xhp\" name=\"Cancel\"\>Cancel\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/06060000.xhp\" name=\"Cancel\">Откажи</link>"
 
 #: source/text/scalc/02/06060000.xhp#par_id3153823.2
 msgid  "\<ahelp hid=\"HID_INSWIN_CANCEL\"\>Clears the contents of the \<emph\>Input line\</emph\>, or cancels the changes that you made to an existing formula.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_INSWIN_CANCEL\">Ја брише содржината од <emph>линија за внесување</emph>, или ги откажува промените што сте ги направиле на постоечката формула.</ahelp>"
 
 #: source/text/scalc/02/06060000.xhp#par_id3156281
 msgid  "\<image id=\"img_id3156422\" src=\"svx/res/nu08.png\" width=\"0.2228inch\" height=\"0.2228inch\"\>\<alt id=\"alt_id3156422\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3156422\" src=\"svx/res/nu08.png\" width=\"0.2228inch\" height=\"0.2228inch\"><alt id=\"alt_id3156422\">Икона</alt></image>"
 
 #: source/text/scalc/02/06060000.xhp#par_id3153970.3
 msgid  "Cancel"
@@ -27445,7 +27445,7 @@ msgstr "Прифати"
 
 #: source/text/scalc/02/06070000.xhp#bm_id3143267
 msgid  "\<bookmark_value\>formula bar; accepting inputs\</bookmark_value\>\<bookmark_value\>functions; accepting input icon\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>линија за формули; прифаќа внесувања</bookmark_value><bookmark_value>функции; accepting input icon</bookmark_value>"
 
 #: source/text/scalc/02/06070000.xhp#hd_id3143267.1
 msgid  "\<link href=\"text/scalc/02/06070000.xhp\" name=\"Accept\"\>Accept\</link\>"
@@ -27457,7 +27457,7 @@ msgstr ""
 
 #: source/text/scalc/02/06070000.xhp#par_id3150769
 msgid  "\<image id=\"img_id3156422\" src=\"svx/res/nu07.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3156422\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3156422\" src=\"svx/res/nu07.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3156422\">Икона</alt></image>"
 
 #: source/text/scalc/02/06070000.xhp#par_id3125864.3
 msgid  "Accept"
@@ -27477,7 +27477,7 @@ msgstr ""
 
 #: source/text/scalc/02/06080000.xhp#par_id3155132
 msgid  "\<image id=\"img_id3145785\" src=\"res/commandimagelist/sc_choosedesign.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3145785\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145785\" src=\"res/commandimagelist/sc_choosedesign.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3145785\">Икона</alt></image>"
 
 #: source/text/scalc/02/06080000.xhp#par_id3153953.4
 msgid  "Choose Themes"
@@ -27505,7 +27505,7 @@ msgstr ""
 
 #: source/text/scalc/02/08080000.xhp#bm_id3147335
 msgid  "\<bookmark_value\>formulas;status bar\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>формули;статусна лента</bookmark_value>"
 
 #: source/text/scalc/02/08080000.xhp#hd_id3147335.1
 msgid  "\<link href=\"text/scalc/02/08080000.xhp\" name=\"Standard Formula, Date/Time, Error Warning\"\>Standard Formula, Date/Time, Error Warning\</link\>"
@@ -27545,7 +27545,7 @@ msgstr ""
 
 #: source/text/scalc/02/10050000.xhp#par_id3155854
 msgid  "\<image id=\"img_id3151116\" src=\"res/commandimagelist/sc_helpzoomin.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3151116\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3151116\" src=\"res/commandimagelist/sc_helpzoomin.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3151116\">Икона</alt></image>"
 
 #: source/text/scalc/02/10050000.xhp#par_id3145273.3
 msgid  "Zoom In"
@@ -27573,7 +27573,7 @@ msgstr ""
 
 #: source/text/scalc/02/10060000.xhp#par_id3153770
 msgid  "\<image id=\"img_id3155131\" src=\"res/commandimagelist/sc_zoomout.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3155131\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155131\" src=\"res/commandimagelist/sc_zoomout.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3155131\">Икона</alt></image>"
 
 #: source/text/scalc/02/10060000.xhp#par_id3150440.3
 msgid  "Zooming Out"
@@ -27601,7 +27601,7 @@ msgstr ""
 
 #: source/text/scalc/02/18010000.xhp#par_id3150767
 msgid  "\<image id=\"img_id3156423\" src=\"res/commandimagelist/sc_insertgraphic.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3156423\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3156423\" src=\"res/commandimagelist/sc_insertgraphic.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3156423\">Икона</alt></image>"
 
 #: source/text/scalc/02/18010000.xhp#par_id3146120.4
 msgid  "Insert"
@@ -27613,7 +27613,7 @@ msgstr ""
 
 #: source/text/scalc/02/18010000.xhp#hd_id4283883
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\">Лебдечка рамка</link>"
 
 #: source/text/scalc/02/18010000.xhp#hd_id3149410.8
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
@@ -27625,15 +27625,15 @@ msgstr ""
 
 #: source/text/scalc/02/18010000.xhp#hd_id3633533
 msgid  "\<link href=\"text/shared/01/04160300.xhp\" name=\"Formula\"\>Formula\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160300.xhp\" name=\"Formula\">Формула</link>"
 
 #: source/text/scalc/02/18010000.xhp#par_idN10769
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Insert Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Insert Chart\">Графикон</link>"
 
 #: source/text/scalc/02/18010000.xhp#hd_id7581408
 msgid  "\<link href=\"text/shared/01/04150100.xhp\" name=\"OLE Object\"\>OLE Object\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04150100.xhp\" name=\"OLE Object\">OLE објект</link>"
 
 #: source/text/scalc/02/18020000.xhp#tit
 msgid  "Insert Cells"
@@ -28397,15 +28397,15 @@ msgstr "Кодови на грешки во%PRODUCTNAME Calc"
 
 #: source/text/scalc/05/02140000.xhp#bm_id3146797
 msgid  "\<bookmark_value\>error codes;list of\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>кодови за грешки;список на</bookmark_value>"
 
 #: source/text/scalc/05/02140000.xhp#hd_id3146797.1
 msgid  "\<link href=\"text/scalc/05/02140000.xhp\" name=\"Error Codes in %PRODUCTNAME Calc\"\>Error Codes in \<item type=\"productname\"\>%PRODUCTNAME\</item\> Calc\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/05/02140000.xhp\" name=\"Error Codes in %PRODUCTNAME Calc\">Кодови на грешки <item type=\"productname\">%PRODUCTNAME</item> Calc</link>"
 
 #: source/text/scalc/05/02140000.xhp#par_id3150275.2
 msgid  "The following table is an overview of the error messages for \<item type=\"productname\"\>%PRODUCTNAME\</item\> Calc. If the error occurs in the cell that contains the cursor, the error message is displayed on the \<emph\>Status Bar\</emph\>."
-msgstr ""
+msgstr "Следнава табела е преглед на пораките за грешки за <item type=\"productname\">%PRODUCTNAME</item> Calc. Ако грешката се случи во ќелија во која се наоѓа курсорот, пораката за грешка ќе се прикаже во <emph>Статусната лента</emph>."
 
 #: source/text/scalc/05/02140000.xhp#par_id3153968.3
 msgid  "Error Code"
@@ -28557,7 +28557,7 @@ msgstr "Низата е преполнета"
 
 #: source/text/scalc/05/02140000.xhp#par_id3145635.44
 msgid  "                  \<emph\>Compiler:\</emph\> an identifier in the formula exceeds 64 KB in size. \<emph\>Interpreter:\</emph\> a result of a string operation exceeds 64 KB in size."
-msgstr ""
+msgstr "<emph>Compiler:</emph> Идентификаторот во формулата надминува 64 КБ во големина. <emph>Interpreter:</emph> резултатот во операцијата на низата надминува 64 КБ во големина."
 
 #: source/text/scalc/05/02140000.xhp#par_id3149147.45
 msgid  "514"
@@ -28657,7 +28657,7 @@ msgstr "Кружна референца"
 
 #: source/text/scalc/05/02140000.xhp#par_id3157972.71
 msgid  "Formula refers directly or indirectly to itself and the \<emph\>Iterations\</emph\> option is not set under \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - %PRODUCTNAME Calc - Calculate."
-msgstr ""
+msgstr "Формулата покажува директно или индиректно на себе или <emph>опциите на итерациите</emph> не се поставени врз Алатките - Опции - %PRODUCTNAME Calc - Пресметај."
 
 #: source/text/scalc/05/02140000.xhp#par_id3149538.72
 msgid  "523"
@@ -28669,7 +28669,7 @@ msgstr "Процедурата за пресметување не конверг
 
 #: source/text/scalc/05/02140000.xhp#par_id3150272.74
 msgid  "Function missed a targeted value, or \<link href=\"text/shared/optionen/01060500.xhp\"\>iterative references\</link\> do not reach the minimum change within the maximum steps that are set."
-msgstr ""
+msgstr "Функцијата ја промаши целната вредност или <link href=\"text/shared/optionen/01060500.xhp\">итеративните референци</link> не ја постигнуваат минималната промена во рамките на максималните чекори што се поставени."
 
 #: source/text/scalc/05/02140000.xhp#par_id3153544.75
 msgid  "524"
@@ -28681,7 +28681,7 @@ msgstr "#РЕФ"
 
 #: source/text/scalc/05/02140000.xhp#bm_id3154634
 msgid  "\<bookmark_value\>invalid references; error messages\</bookmark_value\>               \<bookmark_value\>error messages;invalid references\</bookmark_value\>               \<bookmark_value\>#REF error message\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>невалидни референции; пораки за грешка</bookmark_value><bookmark_value>пораки за грешка;невалидни референции</bookmark_value><bookmark_value>#REF порака за грешка</bookmark_value>"
 
 #: source/text/scalc/05/02140000.xhp#par_id3154634.76
 msgid  "invalid references (instead of Err:524 cell contains #REF)"
@@ -28689,7 +28689,7 @@ msgstr "невалидни референци (наместо грешката 5
 
 #: source/text/scalc/05/02140000.xhp#par_id3147539.77
 msgid  "                  \<emph\>Compiler:\</emph\> a column or row description name could not be resolved. \<emph\>Interpreter:\</emph\> in a formula, the column, row, or sheet that contains a referenced cell is missing."
-msgstr ""
+msgstr "<emph>Компилатор:</emph>Описното име на колоната или редот не може да биде разрешено. <emph>Интерпретерот:</emph> во формулата, колоната, редот или листот што ја содржи определената ќелија недостасува."
 
 #: source/text/scalc/05/02140000.xhp#par_id3155984.78
 msgid  "525"
@@ -28701,7 +28701,7 @@ msgstr "#ИМЕ?"
 
 #: source/text/scalc/05/02140000.xhp#bm_id3148428
 msgid  "\<bookmark_value\>invalid names; error messages\</bookmark_value\>               \<bookmark_value\>#NAME error message\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>невалидни имиња; пораки за грешка</bookmark_value><bookmark_value>#NAME порака за грешка</bookmark_value>"
 
 #: source/text/scalc/05/02140000.xhp#par_id3148428.79
 msgid  "invalid names (instead of Err:525 cell contains #NAME?)"
@@ -28733,7 +28733,7 @@ msgstr "Внатрешно преполнување "
 
 #: source/text/scalc/05/02140000.xhp#par_id3149709.86
 msgid  "                  \<emph\>Interpreter: \</emph\>References, such as when a cell references a cell, are too encapsulated."
-msgstr ""
+msgstr "<emph>Интерпретер: </emph>Референците, исто како кога ќелијата покажува на ќелија,се пре encapsulated"
 
 #: source/text/scalc/05/02140000.xhp#par_id5324564
 msgid  "532"
@@ -28749,7 +28749,7 @@ msgstr "Поделено со нула"
 
 #: source/text/scalc/05/02140000.xhp#par_id5844294
 msgid  "Division operator / if the denominator is 0\<br/\>Some more functions return this error, for example:\<br/\>VARP with less than 1 argument\<br/\>STDEVP with less than 1 argument\<br/\>VAR with less than 2 arguments\<br/\>STDEV with less than 2 arguments\<br/\>STANDARDIZE with stdev=0\<br/\>NORMDIST with stdev=0"
-msgstr ""
+msgstr "Операторот за делење / ако именителот е 0<br/>Повеќе функции ја даваат оваа грешка, на пример: <br/>VARP со помалку од 1 аргумент<br/>STDEVP со помалку од 1 аргумент<br/>VAR со помалку од 2 агрумента<br/>STDEV со помалку од 2 аргумента<br/>STANDARDIZE со stdev=0<br/>NORMDIST со stdev=0"
 
 #: source/text/scalc/05/empty_cells.xhp#tit
 msgid  "Handling of Empty Cells"
@@ -28917,7 +28917,7 @@ msgstr ""
 
 #: source/text/scalc/guide/address_auto.xhp#hd_id3148797.20
 msgid  "\<variable id=\"address_auto\"\>\<link href=\"text/scalc/guide/address_auto.xhp\" name=\"Recognizing Names as Addressing\"\>Recognizing Names as Addressing\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\" name=\"Препознавање на имињата како адресирање\">Препознавање на имињата како адресирање</link></variable>"
 
 #: source/text/scalc/guide/address_auto.xhp#par_id3152597.21
 msgid  "You can use cells with text to refer to the rows or to the columns that contain the cells."
@@ -28929,15 +28929,15 @@ msgstr ""
 
 #: source/text/scalc/guide/address_auto.xhp#par_id3154512.22
 msgid  "In the example spreadsheet, you can use the string \<item type=\"literal\"\>'Column One'\</item\> in a formula to refer to the cell range \<item type=\"literal\"\>B3\</item\> to \<item type=\"literal\"\>B5\</item\>, or \<item type=\"literal\"\>'Column Two'\</item\> for the cell range \<item type=\"literal\"\>C2\</item\> to \<item type=\"literal\"\>C5\</item\>. You can also use \<item type=\"literal\"\>'Row One'\</item\> for the cell range \<item type=\"literal\"\>B3\</item\> to \<item type=\"literal\"\>D3\</item\>, or \<item type=\"literal\"\>'Row Two'\</item\> for the cell range \<item type=\"literal\"\>B4\</item\> to \<item type=\"literal\"\>D4\</item\>. The result of a formula that uses a cell name, for example, \<item type=\"literal\"\>SUM('Column One')\</item\>, is 600."
-msgstr ""
+msgstr "Во приказот на табеларната пресметка може да ја употребите низата <item type=\"literal\">'Првата колона'</item> во формулата што се однесува на опсегот на ќелијата <item type=\"literal\">B3</item> до <item type=\"literal\">B5</item> или <item type=\"literal\">'Втората колона'</item> за опсегот на ќелијата <item type=\"literal\">C2</item> до <item type=\"literal\">C5</item>. Исто така може да користите <item type=\"literal\">'Прв ред'</item> за опсегот на ќелијата <item type=\"literal\">B3</item> до <item type=\"literal\">D3</item> или <item type=\"literal\">'Втор ред'</item> за опсегот на ќелијата <item type=\"literal\">B4</item> до <item type=\"literal\">D4</item>. Резултатот на формулата што го користи името на ќелијата, на пример, <item type=\"literal\">SUM('Прва колона')</item>, е 600."
 
 #: source/text/scalc/guide/address_auto.xhp#par_id3155443.24
 msgid  "This function is active by default. To turn this function off, choose \<emph\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - %PRODUCTNAME Calc - Calculate\</emph\> and clear the \<emph\>Automatically find column and row labels\</emph\> check box."
-msgstr ""
+msgstr "Оваа функција е активна по дефиниција. За да ја исклучите оваа опција, изберете <emph>Алатки - Опции - %PRODUCTNAME Calc - Пресметај</emph> и исчисти го <emph>Автоматски ја наоѓа ознаката на колоната и на редот </emph> поле за означување."
 
 #: source/text/scalc/guide/address_auto.xhp#par_id3149210.37
 msgid  "If you want a name to be automatically recognized by Calc, the name must start with a letter and be composed of alphanumeric characters. If you enter the name in the formula yourself, enclose the name in single quotation marks ('). If a single quotation mark appears in a name, you must enter a backslash in front of the quotation mark, for example, \<item type=\"literal\"\>'Harry\\\\'s Bar'.\</item\>"
-msgstr ""
+msgstr "Ако сакате името да биде автоматски препознаено од Calc, името мора да почнува со буква и да биде составено од алфанумерички знаци. Ако го внесете името во формулата сами, ставете го името во единечни наводници ('). Ако единечниот наводник се појавува во името, мора да ставите обратна коса црта пред наводникот, на пример, <item type=\"literal\">'Harry\\'s Bar'.</item>"
 
 #: source/text/scalc/guide/autofilter.xhp#tit
 msgid  "Applying AutoFilter"
@@ -28949,11 +28949,11 @@ msgstr ""
 
 #: source/text/scalc/guide/autofilter.xhp#hd_id3156423.6
 msgid  "\<variable id=\"autofilter\"\>\<link href=\"text/scalc/guide/autofilter.xhp\" name=\"Applying AutoFilter\"\>Applying AutoFilter\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\" name=\"Примена на автоматски филтер\">Примена на автоматски филтер</link></variable>"
 
 #: source/text/scalc/guide/autofilter.xhp#par_id3147427.7
 msgid  "The \<emph\>AutoFilter\</emph\> function inserts a combo box on one or more data columns that lets you select the records (rows) to be displayed."
-msgstr ""
+msgstr "<emph>Функцијата на автоматскиот филтер</emph> вметнува комбинирана листа во една или колони со податоци што ви дозволува да ги изберете записите (редовите) да бидат прикажани."
 
 #: source/text/scalc/guide/autofilter.xhp#par_id3152576.9
 msgid  "Select the columns you want to use AutoFilter on."
@@ -28961,7 +28961,7 @@ msgstr "Изберете ги колоните на кои сакате да г�
 
 #: source/text/scalc/guide/autofilter.xhp#par_id3153157.10
 msgid  "Choose \<emph\>Data - Filter - AutoFilter\</emph\>. The combo box arrows are visible in the first row of the range selected."
-msgstr ""
+msgstr "Избери <emph>Датум - Филтер - Автоматски филтер</emph>. Стрелките на комбинираната листа се видлививо првиот ред на избраниот опсег."
 
 #: source/text/scalc/guide/autofilter.xhp#par_id3154510.11
 msgid  "Run the filter by clicking the drop-down arrow in the column heading and choosing an item."
@@ -29089,7 +29089,7 @@ msgstr ""
 
 #: source/text/scalc/guide/auto_off.xhp#hd_id3149456.1
 msgid  "\<variable id=\"auto_off\"\>\<link href=\"text/scalc/guide/auto_off.xhp\" name=\"Deactivating Automatic Changes\"\>Deactivating Automatic Changes\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"auto_off\"><link href=\"text/scalc/guide/auto_off.xhp\" name=\"Деактивирање на автоматски промени\">Деактивирање на автоматски промени</link></variable>"
 
 #: source/text/scalc/guide/auto_off.xhp#par_id3156442.2
 msgid  "By default, $[officename] automatically corrects many common typing errors and applies formatting while you type. You can immediately undo any automatic changes with \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Z."
@@ -29105,11 +29105,11 @@ msgstr "Автоматско довршување на текстот или б�
 
 #: source/text/scalc/guide/auto_off.xhp#par_id3154730.5
 msgid  "When making an entry in a cell, $[officename] Calc automatically suggests matching input found in the same column. This function is known as \<emph\>AutoInput\</emph\>."
-msgstr ""
+msgstr "Кога внесувате во ќелијата, $[officename] Calc автоматски предлага соодветен внес најден во истата колона. Оваа функција е позната како <emph>AutoInput</emph>."
 
 #: source/text/scalc/guide/auto_off.xhp#par_id3153878.6
 msgid  "To turn the AutoInput on and off, set or remove the check mark in front of \<link href=\"text/scalc/01/06130000.xhp\" name=\"Tools - Cell Contents - AutoInput\"\>\<emph\>Tools - Cell Contents - AutoInput\</emph\>\</link\>."
-msgstr ""
+msgstr "За да ја вклучите/исклучите функцијата автоматски внес, поставете ја или отстранете ја пред <link href=\"text/scalc/01/06130000.xhp\" name=\"Алатки - Ќелија Содржина - Автоматски внес\"><emph>Алатки - Содржина на ќелии - Автоматски внес</emph></link>."
 
 #: source/text/scalc/guide/auto_off.xhp#hd_id3146972.21
 msgid  "Automatic Conversion to Date Format"
@@ -29117,7 +29117,7 @@ msgstr "Автоматска конверзија на форматот на д�
 
 #: source/text/scalc/guide/auto_off.xhp#par_id3153707.22
 msgid  "$[officename] Calc automatically converts certain entries to dates. For example, the entry \<emph\>1.1\</emph\> may be interpreted as January 1 of the current year, according to the locale settings of your operating system, and then displayed according to the date format applied to the cell."
-msgstr ""
+msgstr "$[officename] Calc автоматски ги конвертира одредени елементи во датумите. На пример, елементот <emph>1.1</emph> може да биде прикажан како 1-ви јануари од тековната годиназемајќи ги предвид локалните поставувања на вашиот оперативен систем и потоа да биде прикажан земајќи го предвид форматот на датумот применет во ќелијата."
 
 #: source/text/scalc/guide/auto_off.xhp#par_id3159267.23
 msgid  "To ensure that an entry is interpreted as text, add an apostrophe at the beginning of the entry. The apostrophe is not displayed in the cell."
@@ -29149,7 +29149,7 @@ msgstr ""
 
 #: source/text/scalc/guide/auto_off.xhp#par_id3152992.19
 msgid  "\<link href=\"text/scalc/01/06130000.xhp\" name=\"Tools - Cell Contents - AutoInput\"\>Tools - Cell Contents - AutoInput\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/06130000.xhp\" name=\"Алатки - Содржина на ќелијата- Автоматски внес\">Tools - Cell Contents - AutoInput</link>"
 
 #: source/text/scalc/guide/auto_off.xhp#par_id3154368.20
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"Tools - AutoCorrect\"\>Tools - AutoCorrect Options\</link\>"
@@ -29225,7 +29225,7 @@ msgstr ""
 
 #: source/text/scalc/guide/borders.xhp#hd_id4544816
 msgid  "\<variable id=\"borders\"\>\<link href=\"text/scalc/guide/borders.xhp\"\>User Defined Borders in Cells\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"borders\"><link href=\"text/scalc/guide/borders.xhp\">Кориснички дефинирани рабови во ќелиите</link></variable>"
 
 #: source/text/scalc/guide/borders.xhp#par_id2320017
 msgid  "You can apply a variety of different lines to selected cells."
@@ -33977,7 +33977,7 @@ msgstr ""
 
 #: source/text/scalc/guide/table_cellmerge.xhp#hd_id8005005
 msgid  "\<variable id=\"table_cellmerge\"\>\<link href=\"text/scalc/guide/table_cellmerge.xhp\" name=\"Merging and Unmerging Cells\"\>Merging and Unmerging Cells\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"table_cellmerge\"><link href=\"text/scalc/guide/table_cellmerge.xhp\" name=\"Merging and Unmerging Cells\">Спојување и одвојување на ќелии</link></variable>"
 
 #: source/text/scalc/guide/table_cellmerge.xhp#par_id8049867
 msgid  "You can select adjacent cells, then merge them into a single cell. Conversely, you can take a large cell that has been created by merging single cells, and divide it back into individual cells."
@@ -34437,7 +34437,7 @@ msgstr ""
 
 #: source/text/scalc/guide/value_with_name.xhp#par_id5489364
 msgid  "A good way of making the references to cells and cell ranges in formulas legible is to give the ranges names. For example, you can name the range A1:B2 \<emph\>Start\</emph\>. You can then write a formula such as \"=SUM(Start)\". Even after you insert or delete rows or columns, $[officename] still correctly assigns the ranges identified by name. Range names must not contain any spaces."
-msgstr ""
+msgstr "Добар начин за референците да бидат читливи во ќелиите и опсезите на ќелиите во формулите е давање имиња на опсезите. На пример, може да го именувате опсегот A1:B2 <emph>Старт</emph>.Тогаш може да напишете формула како \"=SUM(Start)\". Дури и кога вметнувате или бришете редови или колони , $[officename] сè уште правилно ги доделува опсезите идентификувани според име. Имињата на опсезите мора да не содржат ниедно празно место."
 
 #: source/text/scalc/guide/value_with_name.xhp#par_id953398
 msgid  "For example, it is much easier to read a formula for sales tax if you can write \"= Amount * Tax_rate\" instead of \"= A5 * B12\". In this case, you would name cell A5 \"Amount\" and cell B12 \"Tax_rate.\""
@@ -34613,7 +34613,7 @@ msgstr "Како да работите со $[officename] Calc"
 
 #: source/text/scalc/main0000.xhp#par_id3147004.5
 msgid  "\<link href=\"text/scalc/01/04060100.xhp\" name=\"List of Functions by Category\"\>List of Functions by Category\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060100.xhp\" name=\"List of Functions by Category\">Листа на функции по категорија</link>"
 
 #: source/text/scalc/main0000.xhp#hd_id3154659.6
 msgid  "$[officename] Calc Menus, Toolbars, and Keys"
@@ -34629,7 +34629,7 @@ msgstr "Менија"
 
 #: source/text/scalc/main0100.xhp#hd_id3156023.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/scalc/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/scalc/main0100.xhp\" name=\"Menus\">Менија</link></variable>"
 
 #: source/text/scalc/main0100.xhp#par_id3154760.2
 msgid  "The following menu commands are available for spreadsheets."
@@ -34641,35 +34641,35 @@ msgstr "Датотека"
 
 #: source/text/scalc/main0101.xhp#hd_id3156023.1
 msgid  "\<link href=\"text/scalc/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0101.xhp\" name=\"File\">Датотека</link>"
 
 #: source/text/scalc/main0101.xhp#par_id3151112.2
 msgid  "\<ahelp hid=\".\"\>These commands apply to the current document, open a new document, or close the application.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Овие команди се применуваат на тековниот документ, отворете нов документ или затворете ја апликацијата.</ahelp>"
 
 #: source/text/scalc/main0101.xhp#hd_id3154684.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Open\">Отвори</link>"
 
 #: source/text/scalc/main0101.xhp#hd_id3147434.5
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\">Зачувај како</link>"
 
 #: source/text/scalc/main0101.xhp#hd_id3147396.11
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\">Верзии</link>"
 
 #: source/text/scalc/main0101.xhp#hd_id3149400.7
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\">Својства</link>"
 
 #: source/text/scalc/main0101.xhp#hd_id3155445.9
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"Print\">Печати</link>"
 
 #: source/text/scalc/main0101.xhp#hd_id3147339.10
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Setup\"\>Printer Setup\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Setup\">Поставувања на печатач</link>"
 
 #: source/text/scalc/main0102.xhp#tit
 msgid  "Edit"
@@ -34677,43 +34677,43 @@ msgstr "Уредување"
 
 #: source/text/scalc/main0102.xhp#hd_id3156023.1
 msgid  "\<link href=\"text/scalc/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0102.xhp\" name=\"Edit\">Уредување</link>"
 
 #: source/text/scalc/main0102.xhp#par_id3154758.2
 msgid  "\<ahelp hid=\".\"\>This menu contains commands for editing the contents of the current document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Ова мени содржи команди за уредување на содржината на тековниот документ.</ahelp>"
 
 #: source/text/scalc/main0102.xhp#hd_id3146119.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\">Вметни специјално</link>"
 
 #: source/text/scalc/main0102.xhp#hd_id3153728.12
 msgid  "\<link href=\"text/shared/01/02240000.xhp\" name=\"Compare Document\"\>Compare Document\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02240000.xhp\" name=\"Compare Document\">Спореди документ</link>"
 
 #: source/text/scalc/main0102.xhp#hd_id3154492.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\">Најди и замени</link>"
 
 #: source/text/scalc/main0102.xhp#hd_id3150715.5
 msgid  "\<link href=\"text/scalc/01/02120000.xhp\" name=\"Headers & Footers\"\>Headers & Footers\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/02120000.xhp\" name=\"Headers & Footers\">Заглавија и подножја</link>"
 
 #: source/text/scalc/main0102.xhp#hd_id3149018.6
 msgid  "\<link href=\"text/scalc/01/02150000.xhp\" name=\"Delete Contents\"\>Delete Contents\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/02150000.xhp\" name=\"Delete Contents\">Избриши содржина</link>"
 
 #: source/text/scalc/main0102.xhp#hd_id3156384.7
 msgid  "\<link href=\"text/scalc/01/02160000.xhp\" name=\"Delete Cells\"\>Delete Cells\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/02160000.xhp\" name=\"Delete Cells\">Избриши ќелии</link>"
 
 #: source/text/scalc/main0102.xhp#hd_id3146919.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"Links\">Врски</link>"
 
 #: source/text/scalc/main0102.xhp#hd_id3148488.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\">МапаНаСлика</link>"
 
 #: source/text/scalc/main0103.xhp#tit
 msgid  "View"
@@ -34721,11 +34721,11 @@ msgstr "Приказ"
 
 #: source/text/scalc/main0103.xhp#hd_id3151112.1
 msgid  "\<link href=\"text/scalc/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0103.xhp\" name=\"View\">Приказ</link>"
 
 #: source/text/scalc/main0103.xhp#par_id3149456.2
 msgid  "\<ahelp hid=\".\"\>This menu contains commands for controlling the on-screen display of the document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Ова мени содржи команди за контролирање на екранскиот приказ на документот.</ahelp>"
 
 #: source/text/scalc/main0103.xhp#par_idN105AB
 msgid  "Normal"
@@ -34733,11 +34733,11 @@ msgstr "Нормален"
 
 #: source/text/scalc/main0103.xhp#par_idN105AF
 msgid  "\<ahelp hid=\".\"\>Displays the normal view of the sheet.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Го дава нормалниот приказ на листот.</ahelp>"
 
 #: source/text/scalc/main0103.xhp#hd_id3125863.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\">Зумирај</link>"
 
 #: source/text/scalc/main0104.xhp#tit
 msgid  "Insert"
@@ -34745,43 +34745,43 @@ msgstr "Вметнување"
 
 #: source/text/scalc/main0104.xhp#hd_id3157909.1
 msgid  "\<link href=\"text/scalc/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0104.xhp\" name=\"Insert\">Вметнување</link>"
 
 #: source/text/scalc/main0104.xhp#par_id3153896.2
 msgid  "\<ahelp hid=\".\"\>The Insert menu contains commands for inserting new elements, such as cells, rows, sheets and cell names into the current sheet.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Менито „Вметни“ содржи команди за вметнување нови елементи, како што се ќелии, редови, листови и имиња на ќелии во тековниот лист.</ahelp>"
 
 #: source/text/scalc/main0104.xhp#hd_id3150769.3
 msgid  "\<link href=\"text/scalc/01/04020000.xhp\" name=\"Cells\"\>Cells\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04020000.xhp\" name=\"Cells\">Ќелии</link>"
 
 #: source/text/scalc/main0104.xhp#hd_id3149260.4
 msgid  "\<link href=\"text/scalc/01/04050000.xhp\" name=\"Sheet\"\>Sheet\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04050000.xhp\" name=\"Sheet\">Лист</link>"
 
 #: source/text/scalc/main0104.xhp#hd_id3153726.7
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\">Специјален знак</link>"
 
 #: source/text/scalc/main0104.xhp#hd_id3156285.13
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\">Хиперврска</link>"
 
 #: source/text/scalc/main0104.xhp#hd_id3154492.5
 msgid  "\<link href=\"text/scalc/01/04060000.xhp\" name=\"Function\"\>Function\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060000.xhp\" name=\"Function\">Функција</link>"
 
 #: source/text/scalc/main0104.xhp#hd_id3154511.12
 msgid  "\<link href=\"text/scalc/01/04080000.xhp\" name=\"Function List\"\>Function List\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04080000.xhp\" name=\"Function List\">Листа на функции</link>"
 
 #: source/text/scalc/main0104.xhp#hd_id3145640.6
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<switchinline select=\"appl\"><caseinline select=\"CALC\"><link href=\"text/shared/01/04050000.xhp\" name=\"Note\">Белешка</link></caseinline><defaultinline><link href=\"text/shared/01/04050000.xhp\" name=\"Note\">Белешка</link></defaultinline></switchinline>"
 
 #: source/text/scalc/main0104.xhp#hd_id3146918.11
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\">Графикон</link>"
 
 #: source/text/scalc/main0104.xhp#par_id0302200904002496
 msgid  "Inserts a chart."
@@ -34789,7 +34789,7 @@ msgstr ""
 
 #: source/text/scalc/main0104.xhp#hd_id3147003.10
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\">Лебдечка рамка</link>"
 
 #: source/text/scalc/main0105.xhp#tit
 msgid  "Format"
@@ -34797,43 +34797,43 @@ msgstr "Форматирај"
 
 #: source/text/scalc/main0105.xhp#hd_id3149669.1
 msgid  "\<link href=\"text/scalc/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0105.xhp\" name=\"Format\">Форматирај</link>"
 
 #: source/text/scalc/main0105.xhp#par_id3145171.2
 msgid  "\<ahelp hid=\".uno:FormatMenu\"\>The \<emph\>Format\</emph\> menu contains commands for formatting selected cells, \<link href=\"text/shared/00/00000005.xhp#objekt\" name=\"objects\"\>objects\</link\>, and cell contents in your document.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:FormatMenu\">Менито <emph>Форматирај</emph> содржи наредби за форматирање на избраните ќелии, <link href=\"text/shared/00/00000005.xhp#objekt\" name=\"objects\">објекти</link> и содржината на ќелиите во Вашиот документ.</ahelp>"
 
 #: source/text/scalc/main0105.xhp#hd_id3154732.4
 msgid  "\<link href=\"text/scalc/01/05020000.xhp\" name=\"Cells\"\>Cells\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/05020000.xhp\" name=\"Cells\">Ќелии</link>"
 
 #: source/text/scalc/main0105.xhp#hd_id3155087.9
 msgid  "\<link href=\"text/scalc/01/05070000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/05070000.xhp\" name=\"Page\">Страница</link>"
 
 #: source/text/scalc/main0105.xhp#hd_id3145748.12
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Character\">Знак</link>"
 
 #: source/text/scalc/main0105.xhp#hd_id3154485.13
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\">Пасус</link>"
 
 #: source/text/scalc/main0105.xhp#hd_id3157980.11
 msgid  "\<link href=\"text/scalc/01/05110000.xhp\" name=\"AutoFormat\"\>AutoFormat\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/05110000.xhp\" name=\"AutoFormat\">Автоматско форматирање</link>"
 
 #: source/text/scalc/main0105.xhp#hd_id3159206.14
 msgid  "\<link href=\"text/scalc/01/05120000.xhp\" name=\"Conditional Formatting\"\>Conditional Formatting\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/05120000.xhp\" name=\"Conditional Formatting\">Условно форматирање</link>"
 
 #: source/text/scalc/main0105.xhp#hd_id3154703.17
 msgid  "\<link href=\"text/shared/02/01170100.xhp\" name=\"Control\"\>Control\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170100.xhp\" name=\"Control\">Контрола</link>"
 
 #: source/text/scalc/main0105.xhp#hd_id3147005.16
 msgid  "\<link href=\"text/shared/02/01170200.xhp\" name=\"Form\"\>Form\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170200.xhp\" name=\"Form\">Форма</link>"
 
 #: source/text/scalc/main0106.xhp#tit
 msgid  "Tools"
@@ -34841,11 +34841,11 @@ msgstr "Алатки"
 
 #: source/text/scalc/main0106.xhp#hd_id3150769.1
 msgid  "\<link href=\"text/scalc/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0106.xhp\" name=\"Tools\">Алатки</link>"
 
 #: source/text/scalc/main0106.xhp#par_id3150440.2
 msgid  "\<ahelp hid=\".\"\>The \<emph\>Tools \</emph\>menu contains commands to check spelling, to trace sheet references, to find mistakes and to define scenarios.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Менито <emph>Алатки </emph>содржи команди за проверка на правописот, за следење на референците на листот, за пронаоѓање на грешки и за дефинирање на сценарија.</ahelp>"
 
 #: source/text/scalc/main0106.xhp#par_id3152576.10
 msgid  "You can also create and assign macros and configure the look and feel of toolbars, menus, keyboard, and set the default options for $[officename] applications."
@@ -34853,19 +34853,19 @@ msgstr "Исто така може и да креирате и да доделу
 
 #: source/text/scalc/main0106.xhp#hd_id3149122.12
 msgid  "\<link href=\"text/scalc/01/06040000.xhp\" name=\"Goal Seek\"\>Goal Seek\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/06040000.xhp\" name=\"Goal Seek\">Барање цел</link>"
 
 #: source/text/scalc/main0106.xhp#hd_id3155768.6
 msgid  "\<link href=\"text/scalc/01/06050000.xhp\" name=\"Scenarios\"\>Scenarios\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/06050000.xhp\" name=\"Scenarios\">Сценарија</link>"
 
 #: source/text/scalc/main0106.xhp#hd_id3154015.9
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\">Опции за авто корекција</link>"
 
 #: source/text/scalc/main0106.xhp#hd_id3150086.8
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\">Прилагоди</link>"
 
 #: source/text/scalc/main0107.xhp#tit
 msgid  "Window"
@@ -34873,11 +34873,11 @@ msgstr "Прозорец"
 
 #: source/text/scalc/main0107.xhp#hd_id3154758.1
 msgid  "\<link href=\"text/scalc/main0107.xhp\" name=\"Window\"\>Window\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0107.xhp\" name=\"Window\">Прозорец</link>"
 
 #: source/text/scalc/main0107.xhp#par_id3150398.2
 msgid  "\<ahelp hid=\".uno:WindowList\"\>Contains commands for manipulating and displaying document windows.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:WindowList\">Содржи команди за манипулирање и прикажување на прозорците на документот.</ahelp>"
 
 #: source/text/scalc/main0112.xhp#tit
 msgid  "Data"
@@ -34885,47 +34885,47 @@ msgstr "Податоци"
 
 #: source/text/scalc/main0112.xhp#hd_id3153254.1
 msgid  "\<link href=\"text/scalc/main0112.xhp\" name=\"Data\"\>Data\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0112.xhp\" name=\"Data\">Податоци</link>"
 
 #: source/text/scalc/main0112.xhp#par_id3147264.2
 msgid  "\<ahelp hid=\".\"\>Use the \<emph\>Data\</emph\> menu commands to edit the data in the current sheet. You can define ranges, sort and filter the data, calculate results, outline data, and create a pivot table.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Користете ги командите од менито <emph>Податоци </emph>за да уредувате податоци во тековниот лист. Можете да одредите опсези, да сортирате и филтрирате податоци, да пресметувате резултати и да го отворите пилотот за податоци.</ahelp>"
 
 #: source/text/scalc/main0112.xhp#hd_id3150400.3
 msgid  "\<link href=\"text/scalc/01/12010000.xhp\" name=\"Define Range\"\>Define Range\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12010000.xhp\" name=\"Define Range\">Дефинирај опсег</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id3125863.4
 msgid  "\<link href=\"text/scalc/01/12020000.xhp\" name=\"Select Range\"\>Select Range\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12020000.xhp\" name=\"Select Range\">Избери опсег</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id3153726.5
 msgid  "\<link href=\"text/scalc/01/12030000.xhp\" name=\"Sort\"\>Sort\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12030000.xhp\" name=\"Sort\">Подреди</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id3153142.6
 msgid  "\<link href=\"text/scalc/01/12050000.xhp\" name=\"Subtotals\"\>Subtotals\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12050000.xhp\" name=\"Subtotals\">Потсуми</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id3151073.10
 msgid  "\<link href=\"text/scalc/01/12120000.xhp\" name=\"Validity\"\>Validity\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12120000.xhp\" name=\"Validity\">Валидност</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id3145254.7
 msgid  "\<link href=\"text/scalc/01/12060000.xhp\" name=\"Multiple Operations\"\>Multiple Operations\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12060000.xhp\" name=\"Multiple Operations\">Повеќекратни операции</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id1387066
 msgid  "\<link href=\"text/scalc/01/text2columns.xhp\"\>Text to Columns\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/text2columns.xhp\">Текст во колони</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id3150717.8
 msgid  "\<link href=\"text/scalc/01/12070000.xhp\" name=\"Consolidate\"\>Consolidate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12070000.xhp\" name=\"Consolidate\">Обедини</link>"
 
 #: source/text/scalc/main0112.xhp#hd_id3154754.9
 msgid  "\<link href=\"text/scalc/01/12100000.xhp\" name=\"Refresh Range\"\>Refresh Range\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12100000.xhp\" name=\"Refresh Range\">Освежи опсег</link>"
 
 #: source/text/scalc/main0200.xhp#tit
 msgid  "Toolbars"
@@ -34933,11 +34933,11 @@ msgstr "Алатници"
 
 #: source/text/scalc/main0200.xhp#hd_id3154758.1
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/scalc/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/scalc/main0200.xhp\" name=\"Toolbars\">Алатници</link></variable>"
 
 #: source/text/scalc/main0200.xhp#par_id3148798.2
 msgid  "This submenu lists the toolbars that are available in spreadsheets.\<embedvar href=\"text/shared/00/00000007.xhp#symbolleistenneu\"/\>"
-msgstr ""
+msgstr "Ова подмени ги прикажува алатниците што се достапни во табеларните пресметки.<embedvar href=\"text/shared/00/00000007.xhp#symbolleistenneu\"/>"
 
 #: source/text/scalc/main0202.xhp#tit
 msgid  "Formatting Bar"
@@ -34945,43 +34945,43 @@ msgstr "Алатник за форматирање"
 
 #: source/text/scalc/main0202.xhp#hd_id3150448.1
 msgid  "\<link href=\"text/scalc/main0202.xhp\" name=\"Formatting Bar\"\>Formatting Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0202.xhp\" name=\"Formatting Bar\">Алатник за форматирање</link>"
 
 #: source/text/scalc/main0202.xhp#par_id3153897.2
 msgid  "\<ahelp hid=\"HID_SC_TOOLBOX_TABLE\"\>The \<emph\>Formatting\</emph\> bar contains basic commands for applying manually formatting.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_TOOLBOX_TABLE\"><emph>Алатникот за форматирање</emph> содржи основни наредби за применување рачно форматирање.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#hd_id3153160.8
 msgid  "\<link href=\"text/shared/01/05020200.xhp\" name=\"Font Color\"\>Font Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020200.xhp\" name=\"Font Color\">Боја на фонтот</link>"
 
 #: source/text/scalc/main0202.xhp#hd_id3150715.9
 msgid  "\<link href=\"text/shared/01/05340300.xhp\" name=\"Align Left\"\>Align Left\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"Align Left\">Порамни одлево</link>"
 
 #: source/text/scalc/main0202.xhp#hd_id3155064.10
 msgid  "\<link href=\"text/shared/01/05340300.xhp\" name=\"Align Center Horizontally\"\>Align Center Horizontally\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"Align Center Horizontally\">Порамни централно хоризонтално</link>"
 
 #: source/text/scalc/main0202.xhp#hd_id3150042.11
 msgid  "\<link href=\"text/shared/01/05340300.xhp\" name=\"Align Right\"\>Align Right\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"Align Right\">Порамни оддесно</link>"
 
 #: source/text/scalc/main0202.xhp#hd_id3154703.12
 msgid  "\<link href=\"text/shared/01/05340300.xhp\" name=\"Justify\"\>Justify\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"Justify\">Порамни двострано</link>"
 
 #: source/text/scalc/main0202.xhp#hd_id3152986.13
 msgid  "\<link href=\"text/shared/01/05340300.xhp\" name=\"Align Top\"\>Align Top\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"Align Top\">Порамни од горе</link>"
 
 #: source/text/scalc/main0202.xhp#hd_id3153306.14
 msgid  "\<link href=\"text/shared/01/05340300.xhp\" name=\"Align Center Vertically\"\>Align Center Vertically\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"Align Center Vertically\">Порамни централно вертикално</link>"
 
 #: source/text/scalc/main0202.xhp#hd_id3151240.15
 msgid  "\<link href=\"text/shared/01/05340300.xhp\" name=\"Align Bottom\"\>Align Bottom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"Align Bottom\">Порамни од долу</link>"
 
 #: source/text/scalc/main0202.xhp#par_idN10843
 msgid  "Number Format : Date"
@@ -34989,7 +34989,7 @@ msgstr "Формат на броеви : датум"
 
 #: source/text/scalc/main0202.xhp#par_idN10847
 msgid  "\<ahelp hid=\".\"\>Applies the date format to the selected cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Го применува форматот за датум на избраните ќелии.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#par_idN1085E
 msgid  "Number Format: Exponential"
@@ -34997,7 +34997,7 @@ msgstr "Формат на броеви: експоненцијален"
 
 #: source/text/scalc/main0202.xhp#par_idN10862
 msgid  "\<ahelp hid=\".\"\>Applies the exponential format to the selected cells.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Го применува експоненцијалниот формат на избраните ќелии.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#par_idN10871
 msgid  "Additional icons"
@@ -35005,7 +35005,7 @@ msgstr "Дополнителни икони"
 
 #: source/text/scalc/main0202.xhp#par_idN10875
 msgid  "If \<link href=\"text/shared/00/00000005.xhp#ctl\" name=\"CTL\"\>CTL\</link\> support is enabled, two additional icons are visible."
-msgstr ""
+msgstr "Ако е овозможена подршката за <link href=\"text/shared/00/00000005.xhp#ctl\" name=\"CTL\">изглед на комплексен текст (CTL)</link>, видлиди се две дополнителни икони."
 
 #: source/text/scalc/main0202.xhp#par_idN1088E
 msgid  "Left-To-Right"
@@ -35013,11 +35013,11 @@ msgstr "Одлево надесно"
 
 #: source/text/scalc/main0202.xhp#par_idN1089C
 msgid  "\<image id=\"img_id8354747\" src=\"res/commandimagelist/sc_paralefttoright.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id8354747\"\>left to right icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id8354747\" src=\"res/commandimagelist/sc_paralefttoright.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id8354747\">Икона одлево надесно</alt></image>"
 
 #: source/text/scalc/main0202.xhp#par_idN108BA
 msgid  "\<ahelp hid=\".uno:ParaLeftToRight\"\>The text is entered from left to right.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:ParaLeftToRight\">Текстот се внесува одлево надесно.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#par_idN108D1
 msgid  "Right-To-Left"
@@ -35025,27 +35025,27 @@ msgstr "Оддесно налево"
 
 #: source/text/scalc/main0202.xhp#par_idN108DF
 msgid  "\<image id=\"img_id2405774\" src=\"res/commandimagelist/sc_pararighttoleft.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id2405774\"\>right to left icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id2405774\" src=\"res/commandimagelist/sc_pararighttoleft.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id2405774\">Икона оддесно налево</alt></image>"
 
 #: source/text/scalc/main0202.xhp#par_idN108FD
 msgid  "\<ahelp hid=\".uno:ParaRightToLeft\"\>The text formatted in a complex text layout language is entered from right to left.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:ParaRightToLeft\">Текстот форматиран со изглед на комплексен текст се внесува оддесно налево.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#par_id192266
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Aligns the contents of the cell to the left.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Ја порамнува содржината на ќелијата на лево.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#par_id1998962
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Aligns the contents of the cell to the right.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Ја порамнува содржината на ќелијата на десно.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#par_id2376476
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Horizontally centers the contents of the cell.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Хоризонтално ја центрира содржината на ќелијата.</ahelp>"
 
 #: source/text/scalc/main0202.xhp#par_id349131
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Aligns the contents of the cell to the left and right cell borders.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Ја порамнува содржината на ќелијата кон левите и десните граници на ќелијата.</ahelp>"
 
 #: source/text/scalc/main0203.xhp#tit
 msgid  "Drawing Object Properties Bar"
@@ -35053,27 +35053,27 @@ msgstr "Алатник за својства на нацртаниот обје�
 
 #: source/text/scalc/main0203.xhp#hd_id3154346.1
 msgid  "\<link href=\"text/scalc/main0203.xhp\" name=\"Drawing Object Properties Bar\"\>Drawing Object Properties Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0203.xhp\" name=\"Drawing Object Properties Bar\">Алатник за својства на нацртаниот објект</link>"
 
 #: source/text/scalc/main0203.xhp#par_id3149656.2
 msgid  "\<ahelp hid=\"HID_SC_TOOLBOX_DRAW\"\>The \<emph\>Drawing Object Properties\</emph\> Bar for objects that you select in the sheet contains formatting and alignment commands.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_TOOLBOX_DRAW\"><emph>Алатникот за својства на нацртаниот објект</emph> содржи наредби за форматирање и порамнување на објекти што сте ги избрале во листот.</ahelp>"
 
 #: source/text/scalc/main0203.xhp#hd_id3145748.3
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\">Стил на линија</link>"
 
 #: source/text/scalc/main0203.xhp#hd_id3151073.4
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\">Ширина на линија</link>"
 
 #: source/text/scalc/main0203.xhp#hd_id3153417.5
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\">Боја на линија</link>"
 
 #: source/text/scalc/main0203.xhp#hd_id3147338.6
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Background Color\"\>Background Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"Background Color\">Боја на подлогата</link>"
 
 #: source/text/scalc/main0205.xhp#tit
 msgid  "Text Formatting Bar"
@@ -35081,59 +35081,59 @@ msgstr "Алатник за форматирање на текст"
 
 #: source/text/scalc/main0205.xhp#hd_id3156330.1
 msgid  "\<link href=\"text/scalc/main0205.xhp\" name=\"Text Formatting Bar\"\>Text Formatting Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0205.xhp\" name=\"Text Formatting Bar\">Алатник за форматирање на текст</link>"
 
 #: source/text/scalc/main0205.xhp#par_id3151112.2
 msgid  "\<ahelp hid=\"HID_SC_TOOLBOX_DRTEXT\"\>The \<emph\>Text Formatting\</emph\> Bar that is displayed when the cursor is in a text object, such as a text frame or a drawing object, contains formatting and alignment commands.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_TOOLBOX_DRTEXT\"><emph>Алатникот за форматирање на текст</emph> е прикажан кога покажувачот се наоѓа во текстуален објект, како што е рамка за текст или нацртан објект, а содржи наредби за форматирање и порамнување.</ahelp>"
 
 #: source/text/scalc/main0205.xhp#hd_id3148575.7
 msgid  "\<link href=\"text/shared/01/05020200.xhp\" name=\"Font Color\"\>Font Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020200.xhp\" name=\"Font Color\">Боја на фонтот</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3154944.8
 msgid  "\<link href=\"text/shared/01/05030100.xhp\" name=\"Line Spacing: 1\"\>Line Spacing: 1\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030100.xhp\" name=\"Line Spacing: 1\">Проред: 1</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3146969.9
 msgid  "\<link href=\"text/shared/01/05030100.xhp\" name=\"Line Spacing: 1.5\"\>Line Spacing: 1.5\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030100.xhp\" name=\"Line Spacing: 1.5\">Проред: 1.5</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3153711.10
 msgid  "\<link href=\"text/shared/01/05030100.xhp\" name=\"Line Spacing: 2\"\>Line Spacing: 2\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030100.xhp\" name=\"Line Spacing: 2\">Проред: 2</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3147345.11
 msgid  "\<link href=\"text/shared/01/05030700.xhp\" name=\"Align Left\"\>Align Left\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030700.xhp\" name=\"Align Left\">Порамни одлево</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3155337.12
 msgid  "\<link href=\"text/shared/01/05030700.xhp\" name=\"Centered\"\>Centered\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030700.xhp\" name=\"Centered\">Центрирано</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3147001.13
 msgid  "\<link href=\"text/shared/01/05030700.xhp\" name=\"Align Right\"\>Align Right\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030700.xhp\" name=\"Align Right\">Порамни оддесно</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3155115.14
 msgid  "\<link href=\"text/shared/01/05030700.xhp\" name=\"Justify\"\>Justify\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030700.xhp\" name=\"Justify\">Порамни двострано</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3150202.15
 msgid  "\<link href=\"text/shared/01/05020500.xhp\" name=\"Superscript\"\>Superscript\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020500.xhp\" name=\"Superscript\">Горен индекс</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3155531.16
 msgid  "\<link href=\"text/shared/01/05020500.xhp\" name=\"Subscript\"\>Subscript\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020500.xhp\" name=\"Subscript\">Долен индекс</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3145387.17
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Character\">Знак</link>"
 
 #: source/text/scalc/main0205.xhp#hd_id3153067.18
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\">Пасус</link>"
 
 #: source/text/scalc/main0206.xhp#tit
 msgid  "Formula Bar"
@@ -35141,11 +35141,11 @@ msgstr "Алатник за формули"
 
 #: source/text/scalc/main0206.xhp#hd_id3147264.1
 msgid  "\<link href=\"text/scalc/main0206.xhp\" name=\"Formula Bar\"\>Formula Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0206.xhp\" name=\"Formula Bar\">Алатник за формули</link>"
 
 #: source/text/scalc/main0206.xhp#par_id3150400.2
 msgid  "\<ahelp hid=\"HID_SC_INPUTWIN\"\>Use this bar to enter formulas.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_INPUTWIN\">Користете ја оваа лента за да внесувате формули.</ahelp>"
 
 #: source/text/scalc/main0208.xhp#tit
 msgid  "Status Bar"
@@ -35153,11 +35153,11 @@ msgstr "Статусна линија"
 
 #: source/text/scalc/main0208.xhp#hd_id3151385.1
 msgid  "\<link href=\"text/scalc/main0208.xhp\" name=\"Status Bar\"\>Status Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0208.xhp\" name=\"Status Bar\">Статусна линија</link>"
 
 #: source/text/scalc/main0208.xhp#par_id3149669.2
 msgid  "The \<emph\>Status Bar\</emph\> displays information about the current sheet."
-msgstr ""
+msgstr "<emph>Статусната линија</emph> прикажува информација за тековниот лист."
 
 #: source/text/scalc/main0208.xhp#hd_id0821200911024321
 msgid  "Digital Signature"
@@ -35173,15 +35173,15 @@ msgstr "Алатник за преглед на страница"
 
 #: source/text/scalc/main0210.xhp#hd_id3156023.1
 msgid  "\<link href=\"text/scalc/main0210.xhp\" name=\"Page Preview  Bar\"\>Page Preview Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0210.xhp\" name=\"Page Preview  Bar\">Алатник за преглед на страница</link>"
 
 #: source/text/scalc/main0210.xhp#par_id3148663.2
 msgid  "\<ahelp hid=\"HID_SC_WIN_PREVIEW\"\>The \<emph\>Page Preview\</emph\> Bar is displayed when you choose \<emph\>File - Page Preview\</emph\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_WIN_PREVIEW\"><emph>Алатникот за преглед на страница</emph> е прикажан кога ќе избирате<emph>Датотека - Преглед на страница</emph>.</ahelp>"
 
 #: source/text/scalc/main0210.xhp#hd_id3147394.3
 msgid  "\<link href=\"text/scalc/01/05070000.xhp\" name=\"Page Format\"\>Page Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/05070000.xhp\" name=\"Page Format\">Формат на страница</link>"
 
 #: source/text/scalc/main0214.xhp#tit
 msgid  "Picture Bar"
@@ -35189,11 +35189,11 @@ msgstr "Алатник за слики"
 
 #: source/text/scalc/main0214.xhp#hd_id3153088.1
 msgid  "\<link href=\"text/scalc/main0214.xhp\" name=\"Picture Bar\"\>Picture Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0214.xhp\" name=\"Picture Bar\">Алатник за слики</link>"
 
 #: source/text/scalc/main0214.xhp#par_id3153896.2
 msgid  "\<ahelp hid=\".\"\>The \<emph\>Picture\</emph\> bar is displayed when you insert or select a picture in a sheet.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Алатникот за слики</emph> се прикажува кога ќе вметнете или изберете слика во листот.</ahelp>"
 
 #: source/text/scalc/main0218.xhp#tit
 msgid  "Tools Bar"
@@ -35201,39 +35201,39 @@ msgstr "Алатник со алатки"
 
 #: source/text/scalc/main0218.xhp#hd_id3143268.1
 msgid  "\<link href=\"text/scalc/main0218.xhp\" name=\"Tools Bar\"\>Tools Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/main0218.xhp\" name=\"Tools Bar\">Алатник со алатки</link>"
 
 #: source/text/scalc/main0218.xhp#par_id3151112.2
 msgid  "\<ahelp hid=\"HID_SC_TOOLBOX_TOOLS\"\>Use the Tools bar to access commonly used commands.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_SC_TOOLBOX_TOOLS\">Користете го алатникот со алатки за пристап кон често користените наредби.</ahelp>"
 
 #: source/text/scalc/main0218.xhp#par_idN10610
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Controls\"\>Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170000.xhp\" name=\"Controls\">Контроли</link>"
 
 #: source/text/scalc/main0218.xhp#hd_id3154730.6
 msgid  "\<link href=\"text/scalc/02/06080000.xhp\" name=\"Choose Themes\"\>Choose Themes\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/02/06080000.xhp\" name=\"Choose Themes\">Избери теми</link>"
 
 #: source/text/scalc/main0218.xhp#par_idN10690
 msgid  "\<link href=\"text/scalc/01/12040300.xhp\" name=\"Advanced Filter\"\>Advanced Filter\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12040300.xhp\" name=\"Advanced Filter\">Напреден филтер</link>"
 
 #: source/text/scalc/main0218.xhp#par_idN106A8
 msgid  "\<link href=\"text/scalc/01/12090100.xhp\"\>Start\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/12090100.xhp\">Стартувај</link>"
 
 #: source/text/scalc/main0218.xhp#par_idN106C0
 msgid  "\<link href=\"text/shared/autopi/01150000.xhp\" name=\"Euro Converter\"\>Euro Converter\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/autopi/01150000.xhp\" name=\"Euro Converter\">Конвертор на евра</link>"
 
 #: source/text/scalc/main0218.xhp#par_idN106D8
 msgid  "\<link href=\"text/scalc/01/04070100.xhp\"\>Define\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04070100.xhp\">Дефинирај</link>"
 
 #: source/text/scalc/main0218.xhp#par_idN106F0
 msgid  "\<link href=\"text/scalc/01/06040000.xhp\" name=\"Goal Seek\"\>Goal Seek\</link\>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/06040000.xhp\" name=\"Goal Seek\">Барање цел</link>"
 
 #: source/text/scalc/main0503.xhp#tit
 msgid  "$[officename] Calc Features"
@@ -35241,7 +35241,7 @@ msgstr "Карактеристики на $[officename] Calc"
 
 #: source/text/scalc/main0503.xhp#hd_id3154758.1
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/scalc/main0503.xhp\" name=\"$[officename] Calc Features\"\>$[officename] Calc Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/scalc/main0503.xhp\" name=\"$[officename] Calc Features\">Карактеристики на $[officename] Calc</link></variable>"
 
 #: source/text/scalc/main0503.xhp#par_id3149457.2
 msgid  "$[officename] Calc is a spreadsheet application that you can use to calculate, analyze, and manage your data. You can also import and modify Microsoft Excel spreadsheets."
@@ -35253,11 +35253,11 @@ msgstr "Пресметувања"
 
 #: source/text/scalc/main0503.xhp#par_id3145172.5
 msgid  "$[officename] Calc provides you with \<link href=\"text/scalc/01/04060100.xhp\" name=\"functions\"\>functions\</link\>, including statistical and banking functions, that you can use to create formulas to perform complex calculations on your data."
-msgstr ""
+msgstr "$[officename] Calc Ви дава на располагање <link href=\"text/scalc/01/04060100.xhp\" name=\"functions\">функции</link>, вклучително статистички и финансиски функции, што може да ги користите за креирање формули за изведување сложени пресметки на Вашите податоци."
 
 #: source/text/scalc/main0503.xhp#par_id3145271.6
 msgid  "You can also use the \<link href=\"text/scalc/01/04060000.xhp\" name=\"AutoPilots\"\>Function Wizard\</link\> to help you create your formulas."
-msgstr ""
+msgstr "Исто така може да го користите <link href=\"text/scalc/01/04060000.xhp\" name=\"AutoPilots\">волшебникот за функции</link> за помош при креирањето на Вашите формули."
 
 #: source/text/scalc/main0503.xhp#hd_id3152596.13
 msgid  "What-If Calculations"
@@ -35301,4 +35301,4 @@ msgstr "Отворање и зачувување на Microsoft-датотеки
 
 #: source/text/scalc/main0503.xhp#par_id3157867.19
 msgid  "Use the $[officename] filters to convert Excel files, or to open and save in a variety of other \<link href=\"text/shared/00/00000020.xhp\" name=\"formats\"\>formats\</link\>."
-msgstr ""
+msgstr "Користете ги филтрите на $[officename] за да претворите Excel-датотеки или да отворате и зачувувате во други <link href=\"text/shared/00/00000020.xhp\" name=\"formats\">формати</link>."

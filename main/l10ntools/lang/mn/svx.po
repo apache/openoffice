@@ -941,11 +941,11 @@ msgstr "~Устгах"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ImageMap өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "ImageMap өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1277,7 +1277,7 @@ msgstr "%PRODUCTNAME баримт сэргээлт"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Доор жагсаасан баримтуудыг сэргээхдээ 'Сэргээлт эхлүүл' товч дээр дарна уу.\n\n'Төлөв' багана тухайн баримт сэргээгдэж чадсан эсэхийг үзүүлнэ."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Баримт сэргээлтийн төлөв:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Баримтын нэр\tТөлөв"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1329,7 +1329,7 @@ msgstr "%PRODUCTNAME яагаад гацсанг шалтгааныг олохо
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "Таны баримтуудын сэргээлт дууслаа.\nБаримтуудаа үзэхдээ 'Дуусгах' дээр дарна уу."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1341,7 +1341,7 @@ msgstr "Та %PRODUCTNAME баримт сэргээлтийн цуцлахдаа
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Автомат сэргээлтийн процесс тасарлаа.\n\nТаны 'Хадгалах' дээр дарахад доор жагсаагдсан баримтууд тэмдэглэгдсэн хавтаснуудад хадгалагдана. Баримтуудыг хадгалахгүйгээр залуурчийг хаахыг хүсвэл 'Цуцлах' дээр дарна уу."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION Алдаа тайлагнагчид тав�
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "Энэ алдаа илтгэгч хэрэгсэл нь %PRODUCTNAME% яаж ажиллаж байсан тухай мэдээллийг бичиж ирээдүйн хувилбаруудыг сайжруулахын тулд Sun Microsystems рүү илгээнэ. \n\nЭнэ маш амархан - Тайланг илгээхэд дараагийн цонхонд гарч ирэх 'Илгээх' товчин дээр шууд дарах эсвэл хүсвэл та алдааны тухай товч тайлбар бичээд дарахаас өөр илүү чирэгдэл учрахгүй. Хэрэв та тайланг харахыг хүсвэл 'Тайланг харуул' товчин дээр дарна уу. Хэрэв та 'Бүү илгээ' товчин дээр дарвал ямар ч өгөгдөл илгээгдэхгүй.\n\nХэрэглэгчийн хувийн нууцлал\nХэрэглэгчээс авах өгөгдөл нь %PRODUCTNAME% %PRODUCTVERSION% алдаа гарах үед төлөвийг авахаар хязгаарлагдана. Баримтын агуулга эсвэл нууц үгийн тухай гэх мэт бусад мэдээлэл огт авахгүй.\n\nЭнэ мэдээлэл нь зөвхөн %PRODUCTNAME% чанарыг сайжруулахад ашиглагдах ба бусад гуравдагч этгээдэд дамжуулагдахгүй.\nИлүү мэдээллийг Sun Microsystems' хувийн нууцлалаас http://www.sun.com/privacy/ хаягаар орж үзнэ үү"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "~Тохируулга..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "~Энэ тайлантай холбоотойгоор Sun Microsystems надтай холбоо тогтоохыг би зөвшөөрч байна."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "~Порт"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% Алдаа Илтгэгч хэрэгсэл алдааны тайлан илгээхийн тулд интернетэд холбогдох шаардлагатай.\nКомпаниуд сүлжээгээ хамгаалахын тулд үргэлж итгэмжлэгч серверийг галт ханын хамт хэрэглэдэг.\nХэрэв таны нөхцөл тийм бол та тухайн итгэмжлэгч серверийн хаяг болон портыг тодорхойлоно уу."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Хялбар өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "Та шинэ хаялбар үүсгэхийг хүсэж байна у
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Шинэ ажлын талбарын тогтоолт\nхаялбарыг устгахад хүргэнэ.\nТа үргэлжлүүлэхдээ итгэлтэй байна уу?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr "'#' уг талбарт утга оруулах хэрэгтэй. Утг
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Оруулга аль хэдийн байна.\nӨөр нэр сонгоно уу."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# бичлэгүүдийг устгана."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Хэрэв та Тийм гэдгийг сонговол та энэ үйлдлийг буцаах боломжтой!\nТа цааш үргэлжлүүлэн ажиллах уу?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Загварын хүчингүй нэр!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Та энэ объектыг үнэхээр\nустгахыг хүсэж байна уу?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Та энэ хэв маягийг үнэхээр\nустгахыг хүсэж байна уу?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "Та холбоотой файлыг устгахыг хүсэж бай�
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Файлыг нээх боломжгүй.\nТа өөр хайлтын зам оруулахыг хүсэж байна уу? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "~Зохион байгуулагч..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Ийм загварын нэр хэдийнэ байна.\nӨөр нэр сонгоно уу."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -9909,11 +9909,11 @@ msgstr "~Устгах"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "~Уламжлалт хятад хэлнээс хялбаршуулсан хятад хэл рүү"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "~Хялбаршуулсан хятад хэлнээс уламжлалт хятад хэл рүү"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "~Уламжлалт хятад хэлнээс хялбаршуулсан хятад хэл рүү"
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "~Хялбаршуулсан хятад хэлнээс уламжлалт хятад хэл рүү"

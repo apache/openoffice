@@ -217,7 +217,7 @@ msgstr "ಜಾರುಫಲಕಗಳನ್ನು ಸ್ಥಳಾಂತರಿಸ�
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\\nThe action will be aborted."
-msgstr ""
+msgstr "ಸಾಕಷ್ಟು ಮೆಮೊರಿ ಇಲ್ಲ! \nಕ್ರಿಯೆಯನ್ನು ಸ್ಥಗಿತಗೊಳಿಸಲಾಗುತ್ತದೆ."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1792,8 +1792,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "ದಯವಿಟ್ಟು ಹೊಸ ಬಾಣದ ತುದಿಗೆ ಒಂದು ಹೆಸರನ್ನು ನಮೂದಿಸಿ:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \\nPlease enter another name."
-msgstr ""
+msgstr "ಆಯ್ಕೆಯಾದ ಹೆಸರು ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. \nದಯವಿಟ್ಟು ಇನ್ನೊಂದು ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1881,8 +1882,9 @@ msgid  "Insert slides"
 msgstr "ಜಾರುಫಲಕಗಳನ್ನು ಸೇರಿಸು"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "\"$\" ಹಂತವನ್ನು ನಿಜವಾಗಿಯೂ ಅಳಿಸಬೇಕೇ? \nಸೂಚನೆ: ಈ ಹಂತದ ಮೇಲಿನ ಎಲ್ಲ ವಸ್ತುಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1940,8 +1942,9 @@ msgid  "Insert text frame"
 msgstr "ಪಠ್ಯ ಚೌಕಟ್ಟು ಸೇರಿಸು"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \\nwith the selected objects."
-msgstr ""
+msgstr "ಆಯ್ಕೆಯಾದ ವಸ್ತುಗಳೊಂದಿಗೆ \nಈ ಕಾರ್ಯಭಾರವನ್ನು ಚಾಲನೆ ಮಾಡಲಾಗುವುದಿಲ್ಲ."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -1954,8 +1957,9 @@ msgid  "The file could not be loaded!"
 msgstr "ಕಡತವನ್ನು ಲೋಡ್‌ ಮಾಡಲಾಗಲಿಲ್ಲ!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "ಹೊಸ ಪುಟಗಳ ರಚನೆಯನ್ನು ಅಳವಡಿಸಲಾಗುತ್ತದೆ. \nವಸ್ತುಗಳನ್ನೂ ಸಹ ಅಳವಡಿಸಬೇಕೇ?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -1978,8 +1982,9 @@ msgid  "~Edit"
 msgstr "ಸಂಪಾದಿಸು(~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
-msgstr ""
+msgstr "ಮಾಡದಿರುವ ಕ್ರಿಯೆಗಳ ಪಟ್ಟಿಯನ್ನು ಈ ಕ್ರಿಯೆಯು ಅಳಿಸುತ್ತದೆ.\nದಸ್ತಾವೇಜಿಗೆ ಹಿಂದೆ ಮಾಡಿದ ಬದಲಾವಣೆಗಳು ಇನ್ನೂ ಊರ್ಜಿತವಾಗಿವೆ.\nಆದರೆ ಮಾಡದಿರಬಹುದಾಗಿದೆ. ಮುಂದುವರೆಯಬೇಕೇ ಮತ್ತು\nಆದ್ದರಿಂದ ಹೊಸ ಜಾರುಫಲಕ ವಿನ್ಯಾಸ ನಿಯೋಜಿಸಬೇಕೇ?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2002,8 +2007,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "ನಿರ್ದಿಷ್ಟ ಮುದ್ರಕದ ಮೇಲೆ ದಸ್ತಾವೇಜು ರಚನೆಯನ್ನು ಸಿದ್ಧಪಡಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "ಈ ಚಿತ್ರವು ಒಂದು ದಸ್ತಾವೇಜಿಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ. \nಚಿತ್ರವನ್ನು ಸಂಪಾದಿಸಲು ಸಂಪರ್ಕವನ್ನು ಕಡಿದುಹಾಕಬೇಕೇ?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2141,8 +2147,9 @@ msgid  " (Outline)"
 msgstr " (ಹೊರರೇಖೆ)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
-msgstr ""
+msgstr "ನಿರ್ದಿಷ್ಟಪಡಿಸಲಾದ ಮಾಪಕ ಅನೂರ್ಜಿತವಾಗಿದೆ. \nಹೊಸದನ್ನು ನಮೂದಿಸಬೇಕೇ?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2494,8 +2501,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "ಎಲ್ಲ ಚಿತ್ರರಚನೆ ವಸ್ತುಗಳನ್ನು ಬೇರೆ ಬೇರೆ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\\nDo you want to replace it?"
-msgstr ""
+msgstr "ಈ ಹೆಸರಿನ ವಿನ್ಯಾಸವು ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. \n ಇದನ್ನು ಬದಲಿಸಬೇಕೇ?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2638,8 +2646,9 @@ msgid  "Graphics filter"
 msgstr "ಚಿತ್ರಗಳ ಶೋಧಕ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\\nis not a valid sound file !"
-msgstr ""
+msgstr "% ಕಡತವು \nಊರ್ಜಿತವಾದ ಶಬ್ದ ಕಡತವಲ್ಲ !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -2906,12 +2915,10 @@ msgid  "Insert Movie"
 msgstr "ಚಲನಚಿತ್ರವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-#, fuzzy
 msgid  "Graphics Styles"
 msgstr "ಚಿತ್ರಗಳ ಶೈಲಿಗಳು"
 
 #: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-#, fuzzy
 msgid  "Presentation Styles"
 msgstr "ಪ್ರಸ್ತುತಿ ಶೈಲಿಗಳು"
 
@@ -2929,822 +2936,658 @@ msgid  "All Styles"
 msgstr "ಕೋಶ ಶೈಲಿಗಳು"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Distribution..."
 msgstr "ವಿತರಣೆ(~D)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Drawing View"
 msgstr "ಚಿತ್ರರಚನಾ ನೋಟ(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Outline View"
 msgstr "ಹೊರರೇಖೆಯ ನೋಟ(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "ಜಾರುಫಲಕದ ವಿಂಗಡಕ(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
-#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "ಜಾರುಫಲಕವನ್ನು ತೋರಿಸು(~w)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "ಸೆಳೆಯುವ ಬಿಂದು/ಸಾಲನ್ನು ಸೇರಿಸು(~I)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "ಸಂಪಾದಿಸು(~E)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ಅಳಿಸು(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "ಜಾರಫಲಕದ ರೂಪುವಿನ್ಯಾಸ(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page Setup..."
 msgstr "ಪುಟದ ಸಿದ್ಧತೆ(~P)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Slide"
 msgstr "ಹೊಸ ಜಾರಫಲಕ(~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Master"
 msgstr "ಹೊಸ ಮಾಸ್ಟರ್(~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~New Page"
 msgstr "ಹೊಸ ಪುಟ(~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "ಜಾರು ಫಲಕಕ್ಕಾಗಿ ಹಿನ್ನಲೆ ಚಿತ್ರವನ್ನು ಹೊಂದಿಸಿ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Display Background of Master"
 msgstr "ಮಾಸ್ಟರಿನ ಹಿನ್ನಲೆಯನ್ನು ತೋರಿಸು"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "ಮಾಸ್ಟರಿನಲ್ಲಿನ ವಸ್ತುಗಳನ್ನು ತೋರಿಸು"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Pag~e"
 msgstr "ಪುಟ(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "ಜಾರುಫಲಕ(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "ಪದರದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸು(~R)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Slide"
 msgstr "ಜಾರುಫಲಕವನ್ನು ಅಳಿಸು(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Master"
 msgstr "ಮಾಸ್ಟರನ್ನು ಅಳಿಸು(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~elete Page"
 msgstr "ಪುಟವನ್ನು ಅಳಿಸು(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Slide"
 msgstr "ಜಾರುಫಲಕದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸು(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Master"
 msgstr "ಮಾಸ್ಟರಿನ ಹೆಸರನ್ನು ಬದಲಾಯಿಸು(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Rename Page"
 msgstr "ಪುಟದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸು(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
-#, fuzzy
 msgid  "L~ine..."
 msgstr "ಸಾಲು(~i)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
-#, fuzzy
 msgid  "~Area..."
 msgstr "ಕ್ಷೇತ್ರ(~A)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Text..."
 msgstr "ಪಠ್ಯ(~T)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "ಜೋಡಕ(~C)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
-#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "ಮಾರ್ಗವನ್ನು ಮರುಸಿದ್ಧಗೊಳಿಸು(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "ಆಯಾಮಗಳು(~s)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
-#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "ಸ್ಥಾನ ಮತ್ತು ಗಾತ್ರ(~z)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "ಬಿಂದುಗಳನ್ನು ಸಂಪಾದಿಸು(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "Arra~nge"
 msgstr "ವ್ಯವಸ್ಥಿತವಾಗಿ ಜೋಡಿಸು(~n)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Bring to Front"
 msgstr "ಎದುರಿಗೆ ಕಳುಹಿಸು(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "ಎದುರಿಗೆ ಕಳುಹಿಸು(~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "ಹಿಂದಕ್ಕೆ ಕಳುಹಿಸು(~w)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Send to Back"
 msgstr "ಹಿಂದೆ ಕಳುಹಿಸು(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "ವಸ್ತುವಿನ ಎದುರಿಗೆ(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "ವಸ್ತುವಿನ ಹಿಂದೆ(~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "ಹಿಂದೆ ಮುಂದೆ ಮಾಡು(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "C~haracter..."
 msgstr "ಅಕ್ಷರ(~h)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
-#, fuzzy
 msgid  "P~aragraph..."
 msgstr "ಪ್ಯಾರಾಗ್ರಾಫ್(~a)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "ಅಕ್ಷರಶೈಲಿ(~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "ಗಾತ್ರ(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "ಶೈಲಿ(~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "ಬೋಲ್ಡ್"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "ಓರೆ"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Overline"
 msgstr "ಮೇಲಿನಗೆರೆ"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "ಅಡಿಗೆರೆ"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "ಹೊಡೆದುಹಾಕು"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "ನೆರಳು"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "~Contour"
 msgstr "ಬಾಹ್ಯರೇಖೆ(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Line Spacing"
 msgstr "ಸಾಲು ಅಂತರ(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
-#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "ಒಂದೇ ಸಾಲಿನ ಅಂತರ"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
-#, fuzzy
 msgid  "1.5 Lines"
 msgstr "೧.೫ ಸಾಲುಗಳು"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
-#, fuzzy
 msgid  "~Double"
 msgstr "ಎರಡು(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
-#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "ವಿಶೇಷ ಅಕ್ಷರ(~p)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "A~lignment"
 msgstr "ಹೊಂದಿಕೆ(~l)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "ಎಡ(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "ಬಲ(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "ಮಧ್ಯಕ್ಕೆ ಹೊಂದಿಕೆಯಾದ(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
-#, fuzzy
 msgid  "Justified"
 msgstr "ಹೊಂದಿಕೆಯಾದ"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
-#, fuzzy
 msgid  "Al~ignment"
 msgstr "ಹೊಂದಿಕೆ(~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "ಎಡ(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "~Centered"
 msgstr "ಮಧ್ಯಕ್ಕೆ ಹೊಂದಿಕೆಯಾದ(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "ಬಲ(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "ಮೇಲೆ(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "ಮಧ್ಯ(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "ಕೆಳಗೆ(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "ವಸ್ತುವನ್ನು ಮುಚ್ಚು(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit ~Points"
 msgstr "ಬಿಂದುಗಳನ್ನು ಸಂಪಾದಿಸು(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Move Points"
 msgstr "ಬಿಂದುಗಳನ್ನು ಸ್ಥಳಾಂತರಿಸು(~M)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Points"
 msgstr "ಬಿಂದುಗಳನ್ನು ಸೇರಿಸು(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete Points"
 msgstr "ಬಿಂದುಗಳನ್ನು ಅಳಿಸು(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
-#, fuzzy
 msgid  "Close ~Object"
 msgstr "ವಸ್ತುವನ್ನು ಮುಚ್ಚು(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MenuItem.Text
-#, fuzzy
 msgid  "~Split Curve"
 msgstr "ವಕ್ರರೇಖೆಯನ್ನು ವಿಭಜಿಸು(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert to Curve"
 msgstr "ವಕ್ರರೇಖೆಗೆ ರೂಪಾಂತರಿಸು(~v)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MenuItem.Text
-#, fuzzy
 msgid  "~Corner"
 msgstr "ಮೂಲೆ(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MenuItem.Text
-#, fuzzy
 msgid  "Smoot~h"
 msgstr "ನವಿರು(~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MenuItem.Text
-#, fuzzy
 msgid  "S~ymmetric"
 msgstr "ಸಮ್ಮಿತಿರೂಪ(~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MenuItem.Text
-#, fuzzy
 msgid  "~Reduce Points"
 msgstr "ಬಿಂದುಗಳನ್ನು ಕಡಿಮೆಗೊಳಿಸಿ(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "ಗುಂಪು(~G)"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "ಗುಂಪನ್ನು ಚದುರಿಸು(~U)"
 
 #: source/ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MenuItem.Text
-#, fuzzy
 msgid  "Comb~ine"
 msgstr "ಒಟ್ಟುಗೂಡಿಸು(~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MenuItem.Text
-#, fuzzy
 msgid  "~Split"
 msgstr "ವಿಂಗಡಿಸು(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Enter Group"
 msgstr "ಗುಂಪನ್ನು ಪ್ರವೇಶಿಸು(~E)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit Group"
 msgstr "ಗುಂಪಿನಿಂದ ನಿರ್ಗಮಿಸು(~x)"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "Name..."
 msgstr "ಹೆಸರು..."
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
-#, fuzzy
 msgid  "Description..."
 msgstr "ವಿವರಣೆ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MenuItem.Text
-#, fuzzy
 msgid  "~Rehearse Timings"
 msgstr "ಸಮಯದ ಪೂರ್ವನೋಟ ಮಾಡು(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Custom Animation..."
 msgstr "ಇಚ್ಛೆಯ ಸಜೀವನಗಳು(ಎನಿಮೇಶನ್)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "Int~eraction..."
 msgstr "ಸಂವಹನ(~e)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MenuItem.Text
-#, fuzzy
 msgid  "Presentation ~Object..."
 msgstr "ಪ್ರಸ್ತುತಿಯ ವಸ್ತು(~P)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ಅಳಿಸು(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "ಪೂರ್ವನಿಯೋಜಿತ(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MenuItem.Text
-#, fuzzy
 msgid  "F~ontwork"
 msgstr "ಅಕ್ಷರಶೈಲಿ(~o)"
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
-#, fuzzy
 msgid  "~Original Size"
 msgstr "ಮೂಲ ಗಾತ್ರ(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "Save as Picture..."
 msgstr "ಚಿತ್ರವಾಗಿ ಉಳಿಸು..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MenuItem.Text
-#, fuzzy
 msgid  "Crop Picture..."
 msgstr "ಚಿತ್ರವನ್ನು ಕತ್ತರಿಸು..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MenuItem.Text
-#, fuzzy
 msgid  "Na~vigator"
 msgstr "ನ್ಯಾವಿಗೇಟರ್(~v)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Point"
 msgstr "ಬಿಂದುವನ್ನು ಸೇರಿಸು(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "ಎಡ(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "ಮೇಲೆ(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "ಬಲ(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "ಕೆಳಗೆ(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MenuItem.Text
-#, fuzzy
 msgid  "~Adapt Position to Object"
 msgstr "ವಸ್ತುವಿಗೆ ಸ್ಥಾನವನ್ನು ಹೊಂದಿಸು(~A)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Horizontal Left"
 msgstr "ನಿಶ್ಚಿತವಾದ ಅಡ್ಡದಿಂದ ಎಡ(~H)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Horizontal ~Center"
 msgstr "ನಿಶ್ಚಿತವಾದ ಅಡ್ಡದಿಂದ ಮಧ್ಯ(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Hori~zontal Right"
 msgstr "ನಿಶ್ಚಿತವಾದ ಅಡ್ಡದಿಂದ ಬಲ(~z)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Fixed ~Vertical Top"
 msgstr "ನಿಶ್ಚಿತವಾದ ಉದ್ದದಿಂದ ಮೇಲೆ(~V)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "Fixed V~ertical Center"
 msgstr "ನಿಶ್ಚಿತವಾದ ಉದ್ದದಿಂದ ಮಧ್ಯ(~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Fixed Ver~tical Bottom"
 msgstr "ನಿಶ್ಚಿತವಾದ ಉದ್ದದಿಂದ ಕೆಳಗೆ(~t)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Visible Grid"
 msgstr "ಗೋಚರಿಸುವ ಚೌಕಜಾಲ(~V)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Grid"
 msgstr "ಚೌಕಜಾಲಕ್ಕೆ ಸೆಳೆ"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Grid to ~Front"
 msgstr "ಚೌಕಜಾಲದಿಂದ ಎದುರಿಗೆ(~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Grid"
 msgstr "ಚೌಕಜಾಲ(~G)"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "~Snap Lines Visible"
 msgstr "ಗೋಚರಿಸುತ್ತಿರುವ ಗೆರೆಗಳನ್ನು ಸೆಳೆ(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MenuItem.Text
-#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "ಸೆಳೆಯಲಾದ ಸಾಲುಗಳಿಗೆ ಸೆಳೆ"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MenuItem.Text
-#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "ಗೆರೆಗಳನ್ನು ಮುಂದಕ್ಕೆ ಸೆಳೆ"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Snap Lines"
 msgstr "ಗೆರೆಗಳನ್ನು ಸೆಳೆ(~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "ಗುಣಗಳು(~i)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MenuItem.Text
-#, fuzzy
 msgid  "1Bit ~Threshold"
 msgstr "ಒಂದು ಬಿಟ್ ಮಿತಿ(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MenuItem.Text
-#, fuzzy
 msgid  "1 Bit ~Dithering"
 msgstr "ಒಂದು ಬಿಟ್ ಕಂಪನ(~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "ನಾಲ್ಕು ಬಿಟ್ ಗ್ರೇಸ್ಕೇಲ್‌ಗಳು(~r)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "4 Bit ~Color Palette"
 msgstr "ನಾಲ್ಕು ಬಿಟ್ ವರ್ಣಫಲಕ(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "ಎಂಟು ಬಿಟ್ ಗ್ರೇಸ್ಕೇಲ್‌ಗಳು(~a)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MenuItem.Text
-#, fuzzy
 msgid  "8 Bit C~olor Palette"
 msgstr "ಎಂಟು ಬಿಟ್ ವರ್ಣಫಲಕ(~o)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MenuItem.Text
-#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "೨೪ ಬಿಟ್ ನಿಜಬಣ್ಣ(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ItemList.Text
-#, fuzzy
 msgid  "~Color Resolution"
 msgstr "ಬಣ್ಣ ವಿಭಜನೆ(~C)"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MenuItem.Text
-#, fuzzy
 msgid  "Con~vert"
 msgstr "ಪರಿವರ್ತಿಸು(~v)"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MenuItem.Text
-#, fuzzy
 msgid  "~Flip"
 msgstr "ಬದಲಿಸು(~F)"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MenuItem.Text
-#, fuzzy
 msgid  "~Rotate"
 msgstr "ತಿರುಗಿಸು(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MenuItem.Text
-#, fuzzy
 msgid  "C~onnect"
 msgstr "ಜೋಡಿಸು(~o)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MenuItem.Text
-#, fuzzy
 msgid  "~Break"
 msgstr "ತಡೆ(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit Style..."
 msgstr "ಶೈಲಿಯನ್ನು ಸಂಪಾದಿಸು..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MenuItem.Text
-#, fuzzy
 msgid  "H~yperlink..."
 msgstr "ಸಂಪರ್ಕಕೊಂಡಿ(ಹೈಪರ್ಲಿಂಕ್)(~H)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Poi~nts"
 msgstr "ಬಿಂದುಗಳು(~n)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Glue Points"
 msgstr "ಗ್ಲೂ ಬಿಂದುಗಳು(~G)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "ಪದರ(~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "ಸೇರಿಸು(~I)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "ಮಾರ್ಪಡಿಸು(~M)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "ಅಳಿಸು"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "ಹೆಸರನ್ನು ಬದಲಾಯಿಸು(~R)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
-#, fuzzy
 msgid  "To ~Curve"
 msgstr "ವಕ್ರಾಕೃತಿಗೆ(~C)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
-#, fuzzy
 msgid  "To ~Polygon"
 msgstr "ಬಹುಭುಜಾಕೃತಿಗೆ(~P)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
-#, fuzzy
 msgid  "To C~ontour"
 msgstr "ಬಾಹ್ಯ ರೇಖೆಗೆ(~o)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
-#, fuzzy
 msgid  "To 3~D"
 msgstr "ಮೂರು ಆಯಾಮಕ್ಕೆ(~D)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "ಬಿಟ್‌ಮ್ಯಾಪ್‌ಗೆ(~B)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
-#, fuzzy
 msgid  "To ~Metafile"
 msgstr "ಮೆಟಾಕಡತಕ್ಕೆ(~M)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "ಮೂರು ಆಯಾಮ ತಿರುಗು ವಸ್ತುವಿಗೆ(~R)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "ಉದ್ದವಾಗಿ(~V)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
-#, fuzzy
 msgid  "~Horizontally"
 msgstr "ಅಡ್ಡವಾಗಿ(~H)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~3D Effects"
 msgstr "ಮೂರು ಆಯಾಮ ಪರಿಣಾಮಗಳು(~3)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Design"
 msgstr "ಜಾರು ಫಲಕದ ವಿನ್ಯಾಸ(~S)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
-#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "ಜಾರುಫಲಕ ಬದಲಾವಣೆ ಸ್ಥಿತಿ(~T)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Show Slide"
 msgstr "ಜಾರು ಫಲಕವನ್ನು ತೋರಿಸು(~S)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Slide"
 msgstr "ಜಾರು ಫಲಕವನ್ನು ಅಡಗಿಸು(~H)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "ಗುಂಪು(~G)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Ungroup"
 msgstr "ಗುಂಪನ್ನು ಚದುರಿಸು(~U)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Group"
 msgstr "ಗುಂಪನ್ನು ಸಂಪಾದಿಸು(~E)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "E~xit group"
 msgstr "ಗುಂಪಿನಿಂದ ನಿರ್ಗಮಿಸು(~x)"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
-#, fuzzy
 msgid  "~Group"
 msgstr "ಗುಂಪು(~G)"
 
 #: source/ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Toolbars"
 msgstr "ಉಪಕರಣಪಟ್ಟಿಕೆಗಳು(~T)"
 
@@ -3769,157 +3612,126 @@ msgid  "Table"
 msgstr "ಕೋಷ್ಟಕ"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Table..."
 msgstr "ಕೋಷ್ಟಕ(~T)..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Cell"
 msgstr "ಕೋಶ(~C)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Merge"
 msgstr "ಒಗ್ಗೂಡಿಸು(~M)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MenuItem.Text
-#, fuzzy
 msgid  "~Split..."
 msgstr "ವಿಂಗಡಿಸು(~S)..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MenuItem.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "ಮೇಲೆ(~T)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MenuItem.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "ಮಧ್ಯ(~e)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "ಕೆಳಗೆ(~B)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "~Row"
 msgstr "ಅಡ್ಡಸಾಲು(~R)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "ಸಮನಾಗಿ ಇರಿಸು(~E)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "ಆಯ್ಕೆಮಾಡು(~S)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "ಸೇರಿಸು(~I)..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ಅಳಿಸು(~D)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
 msgid  "Colu~mn"
 msgstr "ಲಂಬಸಾಲು(~m)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
-#, fuzzy
 msgid  "Space ~Equally"
 msgstr "ಸಮನಾಗಿ ಇರಿಸು(~E)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "ಆಯ್ಕೆಮಾಡು(~S)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Insert..."
 msgstr "ಸೇರಿಸು(~I)..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ಅಳಿಸು(~D)"
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Layer..."
 msgstr "ಪದರ ಸೇರಿಸು(~I)..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "Modify La~yer..."
 msgstr "ಪದರ ಮಾರ್ಪಡಿಸು(~y)..."
 
 #: source/ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "ಪದರವನ್ನು ಅಳಿಸು(~L)..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "ಎಲ್ಲಾ ಜಾರುಫಲಕಗಳಿಗೂ ಅಳವಡಿಸು(~A)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "ಆಯ್ದ ಜಾರುಫಲಕಗಳಿಗೆ ಅಳವಡಿಸು(~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "ದೊಡ್ಡ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸು(~L)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "ಸಣ್ಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸು(~m)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "ಎಲ್ಲಾ ಜಾರುಫಲಕಗಳಿಗೂ ಅಳವಡಿಸು(~A)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "ಆಯ್ದ ಜಾರುಫಲಕಗಳಿಗೆ ಅಳವಡಿಸು(~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MenuItem.Text
-#, fuzzy
 msgid  "~Edit Master..."
 msgstr "ಮಾಸ್ಟರನ್ನು ಸಂಪಾದಿಸು(~E)..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show ~Large Preview"
 msgstr "ದೊಡ್ಡ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸು(~L)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Show S~mall Preview"
 msgstr "ಸಣ್ಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸು(~m)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "ಆಯ್ದ ಜಾರುಫಲಕಗಳಿಗೆ ಅಳವಡಿಸು(~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert Slide"
 msgstr "ಜಾರುಫಲಕವನ್ನು ಸೇರಿಸು(~I)"
 
@@ -3949,447 +3761,358 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME ಇಂಪ್ರೆಸ್‌ ಪ್ರಸ್ತುತಿಯ ಕೊನೆಯವರೆಗೂ ಶೋಧಿಸಿದೆ. ಆರಂಭದಿಂದ ಮುಂದುವರಿಸಬೇಕೇ?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "ಹೊಸ(~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
-#, fuzzy
 msgid  "~Export..."
 msgstr "ರಫ್ತು(~E)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
-#, fuzzy
 msgid  "Export as PDF..."
 msgstr "PDF ಆಗಿ ಬದಲಾಯಿಸು..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
-#, fuzzy
 msgid  "Sen~d"
 msgstr "ಕಳುಹಿಸು(~d)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
-#, fuzzy
 msgid  "~Page..."
 msgstr "ಪುಟ(~P)..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "ಸಂಪಾದಿಸು(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
-#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "ವಿಶೇಷವಾಗಿ ಅಂಟಿಸು(~S)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "ಕಾಪಿ ಮಾಡು(~e)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
-#, fuzzy
 msgid  "Cross-fading..."
 msgstr "ಅಡ್ಡ ಮಸುಕಾಗು..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "F~ields..."
 msgstr "ವರ್ಗಗಳು(~i)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
-#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "ಪದರವನ್ನು ಅಳಿಸು(~L)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
-#, fuzzy
 msgid  "Lin~ks..."
 msgstr "ಸಂಪರ್ಕಕೊಂಡಿಗಳು(~k)..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
 msgid  "~View"
 msgstr "ನೋಟ(~V)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
-#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "ಮುಖ್ಯ ಉಪಕರಣಪಟ್ಟಿಕೆ(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
-#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "ಆಯ್ಕೆಪಟ್ಟಿಕೆ(~n)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
-#, fuzzy
 msgid  "~Presentation"
 msgstr "ಪ್ರಸ್ತುತಿ(~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
-#, fuzzy
 msgid  "Customi~ze..."
 msgstr "ಇಚ್ಛೆಯಂತೆ ಬದಲಾಯಿಸು(~z)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "~Rulers"
 msgstr "ಗೆರೆಪಟ್ಟಿಕೆಗಳು(~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes View"
 msgstr "ಟಿಪ್ಪಣಿಗಳ ನೋಟ(~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout View"
 msgstr "ಕರಪತ್ರ ನೋಟ(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "ಮುನ್ನೋಟ(~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
-#, fuzzy
 msgid  "S~lide"
 msgstr "ಜಾರುಫಲಕ(~l)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Master"
 msgstr "ಜಾರುಫಲಕದ ಮಾಸ್ಟರ್(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "ಶೀರ್ಷಿಕೆ(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Notes"
 msgstr "ಟಿಪ್ಪಣಿ(~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Handout"
 msgstr "ಕರಪತ್ರ(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
-#, fuzzy
 msgid  "La~yer"
 msgstr "ಪದರ(~y)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Wor~kspace"
 msgstr "ಕಾರ್ಯಸ್ಥಳ(~k)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Master"
 msgstr "ಮಾಸ್ಟರ್(~M)"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "ಸೇರಿಸು(~I)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e..."
 msgstr "ಜಾರುಫಲಕ(~e)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Slid~e"
 msgstr "ಜಾರುಫಲಕ(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "ಜಾರುಫಲಕದ ನಕಲು ಪ್ರತಿ(~u)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "ಜಾರುಫಲಕವನ್ನು ವಿಸ್ತರಿಸು(~x)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "ಸಾರಾಂಶ ಜಾರುಫಲಕ(~m)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "ಪದರ(~L)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "ದಿನಾಂಕ (ನಿಶ್ಚಿತ)(~D)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
-#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "ದಿನಾಂಕ (ಬದಲಾಗಬಹುದಾದ)(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
-#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "ಕಾಲ (ನಿಶ್ಚಿತ)(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
-#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "ಕಾಲ (ಬದಲಾಗಬಹುದಾದ)(~i)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "~Page Number"
 msgstr "ಪುಟದ ಸಂಖ್ಯೆ(~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
-#, fuzzy
 msgid  "~File Name"
 msgstr "ಕಡತದ ಹೆಸರು(~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "ಕರ್ತೃ(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
-#, fuzzy
 msgid  "~Select Source..."
 msgstr "ಆಕರವನ್ನು ಆಯ್ಕೆಮಾಡು(~S)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
-#, fuzzy
 msgid  "~Request..."
 msgstr "ಕೋರು(~R)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
-#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "ಸ್ಪ್ರೆಡ್‌ಶೀಟ್‌(~r)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
-#, fuzzy
 msgid  "From ~File..."
 msgstr "ಕಡತದಿಂದ(~F)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "ನಕ್ಷೆ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
-#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "ಬದಲಾಗುವ ಚೌಕಟ್ಟು(~i)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "ಕಡತ(~F)..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
-#, fuzzy
 msgid  "Fiel~ds"
 msgstr "ವರ್ಗಗಳು(~d)"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
 msgid  "F~ormat"
 msgstr "ವಿನ್ಯಾಸ(~o)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Te~xt..."
 msgstr "ಪಠ್ಯ(~x)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
-#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "ಆಯಾಮಗಳು(~s)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Connector..."
 msgstr "ಜೋಡಕ(~C)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
-#, fuzzy
 msgid  "~Layer..."
 msgstr "ಪದರ(~L)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
-#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "ರೂಪವಿನ್ಯಾಸವನ್ನು ಮಾರ್ಪಡಿಸು(~L)..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
-#, fuzzy
 msgid  "Styl~es"
 msgstr "ಶೈಲಿಗಳು(~e)"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
 msgid  "~Tools"
 msgstr "ಉಪಕರಣಗಳು(~T)"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
 msgid  "~Slide Show"
 msgstr "ಜಾರುಫಲಕ ಪ್ರದರ್ಶನ(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
-#, fuzzy
 msgid  "~Check..."
 msgstr "ಪರೀಕ್ಷಿಸು(~C)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
-#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "ಸ್ವಯಂಕಾಗುಣಿತಪರೀಕ್ಷೆ(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
-#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "ಸಮಾನಾರ್ಥಕ ಪದಕೋಶ(~T)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
-#, fuzzy
 msgid  "~Hyphenation"
 msgstr "ಪದಜೋಡಕ ಅಳವಡಿಕೆ(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "ಸ್ವಯಂ ತಿದ್ದುಪಡಿ(~A)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "ಜಾರುಫಲಕ ಪ್ರದರ್ಶನದ ಸಿದ್ಧತೆಗಳು(~S)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "ಇಚ್ಛೆಯ ಜಾರುಫಲಕ(~C)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Animation"
 msgstr "ಸಜೀವನ(ಆನಿಮೇಶನ್)(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
-#, fuzzy
 msgid  "~Interaction..."
 msgstr "ಪ್ರತಿಸ್ಪಂದನ(~I)..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck"
 msgstr "ಕಾಗುಣಿತಪರೀಕ್ಷೆ(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "ಮಾರ್ಪಡಿಸು(~M)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "ಮುಂದಕ್ಕೆ ಕಳುಹಿಸು(~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "ಹಿಂದಕ್ಕೆ ಕಳುಹಿಸು(~w)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "ವಸ್ತುವಿನ ಎದುರಿಗೆ(~O)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
-#, fuzzy
 msgid  "Be~hind Object"
 msgstr "ವಸ್ತುವಿನ ಹಿಂದೆ(~h)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
-#, fuzzy
 msgid  "~Reverse"
 msgstr "ಹಿಂದೆ ಮುಂದೆ ಮಾಡು(~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
-#, fuzzy
 msgid  "~Eyedropper"
 msgstr "ಬಣ್ಣ ಬದಲಿಕೆ ಉಪಕರಣ(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "~Gallery"
 msgstr "ಗ್ಯಾಲರಿ(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "ಬಣ್ಣ(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "ಗ್ರೇಸ್ಕೇಲ್(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "ಕಪ್ಪು ಮತ್ತು ಬಿಳುಪು(~B)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "ಅತಿ ವೈದೃಶ್ಯ(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "ಬಣ್ಣ(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
-#, fuzzy
 msgid  "~Grayscale"
 msgstr "ಗ್ರೇಸ್ಕೇಲ್(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
-#, fuzzy
 msgid  "~Black and White"
 msgstr "ಕಪ್ಪು ಮತ್ತು ಬಿಳುಪು(~B)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
-#, fuzzy
 msgid  "~High Contrast"
 msgstr "ಅತಿ ವೈದೃಶ್ಯ(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "ವ್ಯವಸ್ಥಿತವಾಗಿ ಜೋಡಿಸು(~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "~Display Quality"
 msgstr "ಪ್ರದರ್ಶನ ಗುಣಮಟ್ಟ(~D)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
-#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "ಮುನ್ನೋಟ ಕ್ರಮ(~v)"
 
@@ -5751,17 +5474,14 @@ msgid  "Animation"
 msgstr "ಸಜೀವನ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "First Image"
 msgstr "ಮೊದಲ ಬಿಂಬ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Backwards"
 msgstr "ಹಿಂದಕ್ಕೆ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Stop"
 msgstr "ನಿಲ್ಲಿಸು"
 
@@ -5770,217 +5490,174 @@ msgid  "Play"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Last Image"
 msgstr "ಕೊನೆಯ ಬಿಂಬ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
-#, fuzzy
 msgid  "Image Number"
 msgstr "ಬಿಂಬದ ಸಂಖ್ಯೆ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
-#, fuzzy
 msgid  "Duration"
 msgstr "ಅವಧಿ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "೧"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "೨"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
-#, fuzzy
 msgid  "3"
 msgstr "೩"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "೪"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
-#, fuzzy
 msgid  "5"
 msgstr "೫"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "೬"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
-#, fuzzy
 msgid  "7"
 msgstr "೭"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
-#, fuzzy
 msgid  "8"
 msgstr "೮"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "೯"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
-#, fuzzy
 msgid  "10"
 msgstr "೧೦"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
-#, fuzzy
 msgid  "12"
 msgstr "೧೨"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
-#, fuzzy
 msgid  "15"
 msgstr "೧೫"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
-#, fuzzy
 msgid  "20"
 msgstr "೨೦"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
-#, fuzzy
 msgid  "25"
 msgstr "೨೫"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
-#, fuzzy
 msgid  "50"
 msgstr "೫೦"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
-#, fuzzy
 msgid  "100"
 msgstr "೧೦೦"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
-#, fuzzy
 msgid  "500"
 msgstr "೫೦೦೦"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
-#, fuzzy
 msgid  "1000"
 msgstr "೧೦೦೦"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
-#, fuzzy
 msgid  "Max."
 msgstr "ಗರಿಷ್ಟ."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
-#, fuzzy
 msgid  "Loop Count"
 msgstr "ಆವರ್ತನಾ ಎಣಿಕೆ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Object"
 msgstr "ವಸ್ತುವನ್ನು ಅನ್ವಯಿಸು"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "ವಸ್ತುಗಳನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಅನ್ವಯಿಸು"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete Current Image"
 msgstr "ಈಗಿನ ಬಿಂಬವನ್ನು ಅಳಿಸು"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Delete All Images"
 msgstr "ಎಲ್ಲಾ ಬಿಂಬಗಳನ್ನು ಅಳಿಸು"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "ಸಂಖ್ಯೆ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
-#, fuzzy
 msgid  "Image"
 msgstr "ಬಿಂಬ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
-#, fuzzy
 msgid  "Group object"
 msgstr "ಗುಂಪಿನ ವಸ್ತು"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
-#, fuzzy
 msgid  "Bitmap object"
 msgstr "ಬಿಟ್‌ಮ್ಯಾಪ್‌ ವಸ್ತು"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ಹೊಂದಿಕೆ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "ಮೇಲೆ ಎಡ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "ಎಡ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Left"
 msgstr "ಕೆಳಗೆ ಎಡ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "ಮೇಲೆ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "ಮಧ್ಯಕ್ಕೆ ಹೊಂದಿಸಿದ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "ಕೆಳಗೆ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Right"
 msgstr "ಮೇಲೆ ಬಲ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "ಬಲ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Bottom Right"
 msgstr "ಕೆಳಗೆ ಬಲ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
 msgid  "Create"
 msgstr "ರಚಿಸು"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
 msgid  "Animation group"
 msgstr "ಸಜೀವನ ಗುಂಪು"
 
@@ -6105,32 +5782,26 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "ಮುದ್ರಣ ಸಿದ್ಧತೆಗಳಿಂದ ತಯಾರಾದ ಹಾಳೆಯ ಟ್ರೇ(~e)"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
-#, fuzzy
 msgid  "Notes Window"
 msgstr "ಟಿಪ್ಪಣಿಗಳ ಕಿಟಕಿ"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "ಮುಂದಿನ(~N)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Previous"
 msgstr "ಹಿಂದಿನ(~P)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
-#, fuzzy
 msgid  "~Go to Slide"
 msgstr "ಜಾರು ಫಲಕಕ್ಕೆ ಹೋಗು(~G)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~First Slide"
 msgstr "ಮೊದಲ ಜಾರುಫಲಕ(~F)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
-#, fuzzy
 msgid  "~Last Slide"
 msgstr "ಕೊನೆಯ ಜಾರುಫಲಕ(~L)"
 
@@ -6223,316 +5894,253 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "ಕೋಷ್ಟಕ ವಿನ್ಯಾಸ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
-#, fuzzy
 msgid  "Show"
 msgstr "ತೋರಿಸು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Header Row"
 msgstr "ಶಿರೋಲೇಖ ಅಡ್ಡಸಾಲು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Total Row"
 msgstr "ಒಟ್ಟು ಅಡ್ಡಸಾಲು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Rows"
 msgstr "ಪಟ್ಟಿ ಇರುವ ಅಡ್ಡಸಾಲುಗಳು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "ಮೊದಲ ಲಂಬಸಾಲು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "ಕೊನೆಯ ಲಂಬಸಾಲು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Columns"
 msgstr "ಪಟ್ಟಿ ಇರುವ ಲಂಬಸಾಲುಗಳು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "ಶೈಲಿಗಳು"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "ಕೋಷ್ಟಕ ವಿನ್ಯಾಸ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %s"
 msgstr "%PRODUCTNAME %s"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.String.Text
-#, fuzzy
 msgid  "Print content"
 msgstr "ಮುದ್ರಣದ ವಿಷಯ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.String.Text
-#, fuzzy
 msgid  "Print"
 msgstr "ಮುದ್ರಿಸು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "ದಸ್ತಾವೇಜು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Slides"
 msgstr "ಜಾರುಫಲಕಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Handouts"
 msgstr "ಕರಪತ್ರಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Notes"
 msgstr "ಟಿಪ್ಪಣಿಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "ಹೊರರೇಖೆ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.String.Text
-#, fuzzy
 msgid  "Slides per page"
 msgstr "ಪ್ರತಿ ಪುಟದಲ್ಲಿನ ಜಾರುಫಲಕಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Default"
 msgstr "ಪೂರ್ವನಿಯೋಜಿತ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "1"
 msgstr "೧"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "2"
 msgstr "೨"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "3"
 msgstr "೩"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item5.ItemList.item
-#, fuzzy
 msgid  "4"
 msgstr "೪"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item6.ItemList.item
-#, fuzzy
 msgid  "6"
 msgstr "೬"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item7.ItemList.item
-#, fuzzy
 msgid  "9"
 msgstr "೯"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.String.Text
-#, fuzzy
 msgid  "Order"
 msgstr "ಸ್ತರ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Left to right, then down"
 msgstr "ಎಡದಿಂದ ಬಲಕ್ಕೆ, ನಂತರ ಕೆಳಕ್ಕೆ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Top to bottom, then right"
 msgstr "ಮೇಲಿನಿಂದ ಕೆಳಕ್ಕೆ, ನಂತರ ಬಲಕ್ಕೆ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.String.Text
-#, fuzzy
 msgid  "~Contents"
 msgstr "ವಿಷಯಗಳು(~C)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "~Slide name"
 msgstr "ಜಾರುಫಲಕದ ಹೆಸರು(~S)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "P~age name"
 msgstr "ಪುಟದ ಹೆಸರು(~a)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.String.Text
-#, fuzzy
 msgid  "~Date and time"
 msgstr "ದಿನಾಂಕ ಹಾಗು ಸಮಯ(~D)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden pages"
 msgstr "ಅಡಗಿಸಲಾದ ಪುಟಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.String.Text
-#, fuzzy
 msgid  "Output options"
 msgstr "ಔಟ್‌ಪುಟ್ ಆಯ್ಕೆಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.String.Text
-#, fuzzy
 msgid  "Color"
 msgstr "ಬಣ್ಣ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original colors"
 msgstr "ಮೂಲ ಬಣ್ಣಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Grayscale"
 msgstr "ಗ್ರೇಸ್ಕೇಲ್"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Black & white"
 msgstr "ಕಪ್ಪು ಮತ್ತು ಬಿಳುಪು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "ಗಾತ್ರ(~S)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "ಮೂಲ ಗಾತ್ರ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "ಮುದ್ರಿಸಬಹುದಾದ ಪುಟಕ್ಕೆ ಸರಿಹೊಂದಿಸು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "ಕಾಗದದ ಹಲವು ಹಾಳೆಗಳಿಗೆ ವಿತರಿಸು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Tile sheet of paper with repeated slides"
 msgstr "ಪುನರಾವರ್ತಿತ ಜಾರುಫಲಕಗಳನ್ನು ಹೊಂದಿರುವ ಕಾಗದದ ಹಾಳೆ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "ಮೂಲ ಗಾತ್ರ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "ಮುದ್ರಿಸಬಹುದಾದ ಪುಟಕ್ಕೆ ಸರಿಹೊಂದಿಸು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "ಕಾಗದದ ಹಲವು ಹಾಳೆಗಳಿಗೆ ವಿತರಿಸು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item4.ItemList.item
-#, fuzzy
 msgid  "Tile sheet of paper with repeated pages"
 msgstr "ಪುನರಾವರ್ತಿತ ಪುಟಗಳನ್ನು ಹೊಂದಿರುವ ಕಾಗದದ ಹಾಳೆ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE.String.Text
-#, fuzzy
 msgid  "Brochure"
 msgstr "ಕಿರುಹೊತ್ತಿಗೆ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_SIDES.String.Text
-#, fuzzy
 msgid  "Page sides"
 msgstr "ಪುಟದ ಬದಿಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE.String.Text
-#, fuzzy
 msgid  "Include"
 msgstr "ಒಳಗೊಳ್ಳಿಸು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item1.ItemList.item
-#, fuzzy
 msgid  "All pages"
 msgstr "ಎಲ್ಲಾ ಪುಟಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item2.ItemList.item
-#, fuzzy
 msgid  "Front sides / right pages"
 msgstr "ಎದುರು ಬದಿಗಳು / ಬಲ ಪುಟಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item3.ItemList.item
-#, fuzzy
 msgid  "Back sides / left pages"
 msgstr "ಹಿಂಬದಿಗಳು / ಎಡ ಪುಟಗಳು"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP.String.Text
-#, fuzzy
 msgid  "Paper tray"
 msgstr "ಕಾಗದದ ಟ್ರೇ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY.String.Text
-#, fuzzy
 msgid  "~Use only paper tray from printer preferences"
 msgstr "ಮುದ್ರಣ ಸಿದ್ಧತೆಗಳಿಂದ ತಯಾರಾದ ಹಾಳೆಯ ಟ್ರೇಯನ್ನು ಬಳಸು(~U)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE.String.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "ಮುದ್ರಣದ ವ್ಯಾಪ್ತಿ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
-#, fuzzy
 msgid  "~All slides"
 msgstr "ಎಲ್ಲ ಜಾರುಫಲಕಗಳು(~A)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
-#, fuzzy
 msgid  "~Slides"
 msgstr "ಜಾರುಫಲಕಗಳು(~S)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
-#, fuzzy
 msgid  "Se~lection"
 msgstr "ಆಯ್ಕೆ(~l)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
-#, fuzzy
 msgid  "~All pages"
 msgstr "~ಎಲ್ಲಾ ಪುಟಗಳು(~P)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
-#, fuzzy
 msgid  "Pa~ges"
 msgstr "ಪುಟಗಳು(~g)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
-#, fuzzy
 msgid  "Se~lection"
 msgstr "ಆಯ್ಕೆ(~l)"

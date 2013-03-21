@@ -445,7 +445,7 @@ msgstr "Ŝablono kreita de <wizard_name> je <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Ne eblis ruli la asistanton, ĉar ne eblis trovi gravajn dosierojn.\nSub 'Iloj - Agordoj - %PRODUCTNAME - Vojprefiksoj' alklaku la butonon 'Defaŭlto' por reagordi la vojprefiksojn al la originalaj agordoj.\nTiam ree rulu la asistanton."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Kampoj en la formularo"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Duumaj kampoj ĉiam estas listigitaj kaj elekteblaj el la maldekstra listo.\nSe eblas, ili interpretiĝas kiel blidoj."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Subformularo estas formularo kiu estas enmetita en alian formularon.\nUzu subformularojn por vidigi datumojn el tabeloj aŭ informpetoj kun unu-al-unu rilato."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Kampoj en la formularo"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "La kunligo '<FIELDNAME1>' kaj '<FIELDNAME2>' estas dufoje elektita.\nSed eblas elekti kunligon nur unufoje."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Agordi la nomon de la formularo"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Formularo kun la nomo '%FORMNAME' jam ekzistas.\nElektu alian nomon."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Ne eblas enigi la kampon ĉar ĝi superus la maksimuman nombron de $COUN
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "La nomo '%TABLENAME' jam ekzistas.\nBonvolu enigi alian nomon."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "TTT-asistanto"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Ĉi tiu Reta Asistanto estas por helpi al vi eldoni dokumentojn en la Interreto.\n\nĜi povas konverti la dokumentojn por ke TTT-foliumilo povu vidigi ilin. Plue, ĝi povas generi paĝon Tabelo de Enhavo kun ligiloj por facile aliri la dokumentojn. La Reta Asistanto ankaŭ ebligos al vi modifi la aranĝon de via retejo.\n\nVi povos aktualigi la dokumentojn de vi publikigitajn, kaj aldoni aŭ forigi dokumentojn iam ajn."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Aspekto"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Forigos la elektitajn agordojn.\n\nĈu vi vere volas forigi ĉi tiujn agordojn?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "Ne eblis krei la FTP-dosierujon '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "La FTP-dosierujo '%FILENAME' ne ekzistas. \nĈu kreu la dosierujojn nun?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Ne eblas krei la Zip-dosieron '%FILENAME' : jam ekzistas dosierujo kun t
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Ne eblas krei lokan dosierujon '%FILENAME'. \nBonvolu kontroli vian skribpermeson."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "La loka dosierujo '%FILENAME' ne ekzistas. \nĈu kreu la dosierujon nun?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

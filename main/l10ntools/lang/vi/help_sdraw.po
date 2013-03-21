@@ -37,7 +37,7 @@ msgstr "Để truy cập lệnh này..."
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
 msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
-msgstr ""
+msgstr "<variable id=\"wie\">Để truy cập lệnh này...</variable>"
 
 #: source/text/sdraw/01/04010000.xhp#tit
 msgid  "Insert Page"
@@ -45,11 +45,11 @@ msgstr "Chèn trang"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Chèn trang\">Chèn trang</link>"
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
 msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
-msgstr ""
+msgstr "<variable id=\"seitetext\">Chèn một trang rỗng vào sau trang đã chọn.</variable>"
 
 #: source/text/sdraw/04/01020000.xhp#tit
 msgid  "Shortcut Keys for Drawings"
@@ -57,11 +57,11 @@ msgstr "Phím tắt cho bản Vẽ"
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3156441
 msgid  "\<bookmark_value\>shortcut keys;in drawings\</bookmark_value\>         \<bookmark_value\>drawings; shortcut keys\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>phím tắt;trong bản vẽ</bookmark_value><bookmark_value>bản vẽ; phím tắt</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
 msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_keys\"><link href=\"text/sdraw/04/01020000.xhp\" name=\"Phím tắt cho bản Vẽ\">Phím tắt cho bản Vẽ</link></variable>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
@@ -69,7 +69,7 @@ msgstr "Theo đây có danh sách các phím tắt đặc trưng cho các tài l
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154730.103
 msgid  "You can also use the \<link href=\"text/shared/04/01010000.xhp\" name=\"general shortcut keys for $[officename]\"\>general shortcut keys for $[officename]\</link\>."
-msgstr ""
+msgstr "Bạn cũng có thể sử dụng các <link href=\"text/shared/04/01010000.xhp\" name=\"general shortcut keys for $[officename]\">phím tắt chung cho $[officename]</link>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149121.3
 msgid  "Function Keys for Drawings"
@@ -81,7 +81,7 @@ msgstr "Phím tắt"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153713.6
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Hiệu ứng</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150044.7
 msgid  "F2"
@@ -101,7 +101,7 @@ msgstr "Mở nhóm để sửa đối tượng riêng."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155113.11
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3159238.12
 msgid  "Close group editor."
@@ -113,7 +113,7 @@ msgstr "Shift+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152994.14
 msgid  "Opens the \<emph\>Duplicate\</emph\> dialog."
-msgstr ""
+msgstr "Mở hộp thoại <emph>Nhân đôi</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154488.15
 msgid  "F4"
@@ -121,7 +121,7 @@ msgstr "F4"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149406.16
 msgid  "Opens the \<emph\>Position and Size\</emph\> dialog."
-msgstr ""
+msgstr "Mở hộp thoại <emph>Vị trị và Kích cỡ</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3148870.21
 msgid  "F5"
@@ -129,7 +129,7 @@ msgstr "F5"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153917.22
 msgid  "Opens the \<emph\>Navigator\</emph\>."
-msgstr ""
+msgstr "Mở <emph>Bộ điều hướng</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3157982.25
 msgid  "F7"
@@ -141,11 +141,11 @@ msgstr "Kiểm tra chính tả."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152869.27
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F7"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F7"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154765.28
 msgid  "Opens the \<emph\>Thesaurus\</emph\>."
-msgstr ""
+msgstr "Mở <emph>Từ điển Gần Nghĩa</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146962.29
 msgid  "F8"
@@ -157,7 +157,7 @@ msgstr "Bật/tắt sửa điểm."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149317.31
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+F8"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+F8"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147250.32
 msgid  "Fits to frame."
@@ -165,7 +165,7 @@ msgstr "Vừa khung."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150434.35
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+T\</caseinline\>\<defaultinline\>F11\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3151389.36
 msgid  "Opens Styles and Formatting window."
@@ -173,7 +173,7 @@ msgstr "Mở cửa sổ <emph>Kiểu dáng và Định dạng</emph>."
 
 #: source/text/sdraw/04/01020000.xhp#bm_id3150393
 msgid  "\<bookmark_value\>zooming;shortcut keys\</bookmark_value\>      \<bookmark_value\>drawings; zoom function in\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>thu/phóng;phím tắt</bookmark_value><bookmark_value>bản vẽ; chức năng thu/phóng</bookmark_value>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150393.41
 msgid  "Shortcut Keys for Drawings"
@@ -185,7 +185,7 @@ msgstr "Phím tắt"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3146323.43
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Hiệu ứng</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149946.44
 msgid  "Plus(+) Key"
@@ -221,7 +221,7 @@ msgstr "Phóng to vùng được chọn."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150867.52
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+G"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+G"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149250.53
 msgid  "Groups selected objects."
@@ -229,7 +229,7 @@ msgstr "Nhóm lại các đối tượng đã chọn."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149955.54
 msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+A"
-msgstr ""
+msgstr "Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+A"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148582.55
 msgid  "Ungroups selected group."
@@ -237,7 +237,7 @@ msgstr "Rã nhóm các đối tượng trong nhóm đã chọn."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146852.56
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153110.57
 msgid  "Combines selected objects."
@@ -245,7 +245,7 @@ msgstr "Kết hợp các đối tượng đã chọn."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153567.58
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+Shift+K"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command+Option</caseinline><defaultinline>Ctrl+Alt</defaultinline></switchinline>+Shift+K"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147366.59
 msgid  "Uncombines selected objects."
@@ -253,7 +253,7 @@ msgstr "Hủy kết hợp các đối tượng đã chọn."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153730.60
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155928.61
 msgid  "Bring to front."
@@ -261,7 +261,7 @@ msgstr "Nâng lên trước."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145245.62
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ +"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ +"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148393.63
 msgid  "Bring forward."
@@ -269,7 +269,7 @@ msgstr "Nâng lên."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150928.64
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156062.65
 msgid  "Send backward."
@@ -277,7 +277,7 @@ msgstr "Hạ xuống."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145298.66
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ -"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+ -"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149028.67
 msgid  "Send to back."
@@ -293,7 +293,7 @@ msgstr "Phím tắt"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155370.70
 msgid  "\<emph\>Effect\</emph\>"
-msgstr ""
+msgstr "<emph>Hiệu ứng</emph>"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AD7
 msgid  "Page Up"
@@ -313,7 +313,7 @@ msgstr "Chuyển đổi tới trang kế tiếp"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AED
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Up"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AFD
 msgid  "Switch to previous layer"
@@ -321,7 +321,7 @@ msgstr "Chuyển đổi về lớp trước"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF8
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Down"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Down"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF2
 msgid  "Switch to next layer"
@@ -337,7 +337,7 @@ msgstr "Di chuyển đối tượng đã chọn về hướng của phím mũi t
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156259.73
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Arrow Key"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Phím mũi tên"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147171.74
 msgid  "Moves the page view in the direction of the arrow key."
@@ -353,7 +353,7 @@ msgstr "Tạo một bản sao của đối tượng đã kéo khi thả nút chu
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154643.104
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter with keyboard focus (F6) on a drawing object icon on Tools bar"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter khi lựa chọn bàn phím (F6) đang ở trên biểu tượng của một đối tượng đồ họa trên thanh Công cụ"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3150756.105
 msgid  "Inserts a drawing object of default size into the center of the current view."
@@ -385,7 +385,7 @@ msgstr "Vào chế độ văn bản nếu đối tượng văn bản được ch
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155851.112
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154046.113
 msgid  "Enters text mode if a text object is selected. If there are no text objects or if you have cycled through all of the text objects on the page, a new page is inserted."
@@ -393,15 +393,15 @@ msgstr "Vào chế độ văn bản nếu đối tượng văn bản được ch
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149977.81
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152812.82
 msgid  "Press the \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> key and drag with the mouse to draw or resize an object from the center of the object outward."
-msgstr ""
+msgstr "Bấm tổ hợp phím <switchinline select=\"sys\"><caseinline select=\"MAC\">Option </caseinline><defaultinline>Alt</defaultinline></switchinline> và kéo con trỏ chuột, để vẽ hay thay đổi kích cỡ của đối tượng, từ trung tâm của đối tượng ra ngoài."
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3143232.83
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> + click on an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option </caseinline><defaultinline>Alt</defaultinline></switchinline> + nhấn chuột vào đối tượng"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156007.84
 msgid  "Selects the object behind the currently selected object."
@@ -409,7 +409,7 @@ msgstr "Chọn đối tượng ở sau đối tượng được chọn hiện th
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3147252.85
 msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>+Shift+click an object"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Option </caseinline><defaultinline>Alt</defaultinline></switchinline>+Shift+nhấn chuột vào đối tượng"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3145666.86
 msgid  "Selects the object in front of the currently selected object."
@@ -469,11 +469,11 @@ msgstr "Sắp đặt, Sắp hàng và Phân phối các Đối tượng"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3149656.73
 msgid  "\<variable id=\"align_arrange\"\>\<link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Arranging and Aligning Objects\"\>Arranging, Aligning and Distributing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"align_arrange\"><link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Sắp đặt, Sắp hàng và Phân phối các Đối tượng\">Sắp đặt, Sắp hàng và Phân phối các Đối tượng</link></variable>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#bm_id3125863
 msgid  "\<bookmark_value\>arranging; objects (guide)\</bookmark_value\>\<bookmark_value\>objects;aligning\</bookmark_value\>\<bookmark_value\>distributing draw objects\</bookmark_value\>\<bookmark_value\>aligning;draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>sắp đặt; đối tượng (hướng dẫn)</bookmark_value><bookmark_value>đối tượng;sắp hàng</bookmark_value><bookmark_value>phân phối các đối tượng vẽ</bookmark_value><bookmark_value>sắp hàng;đối tượng vẽ</bookmark_value>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3125863.17
 msgid  "Arranging Objects"
@@ -489,27 +489,27 @@ msgstr "Nhấn vào đối tượng có vị trí bạn muốn thay đổi."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150327.78
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to bring up the context menu and choose one of the arrange options:"
-msgstr ""
+msgstr "Chọn lệnh <item type=\"menuitem\">Sửa đổi > Sắp đặt</item> để mở trình đơn ngữ cảnh và chọn một của những tùy chọn sắp đặt:"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107E6
 msgid  "\<emph\>Bring to Front\</emph\> places the object on top of all other objects"
-msgstr ""
+msgstr "<emph>Nâng lên trên</emph> để đối tượng ở trên các đối tượng khác"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107EC
 msgid  "\<emph\>Bring Forward\</emph\> places the object one place forward in the stack of objects"
-msgstr ""
+msgstr "<emph>Nâng lên</emph> nâng đối tượng lên một cấp trong đống các đối tượng"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F2
 msgid  "\<emph\>Send Backward\</emph\> places the object one place back in the stack of objects"
-msgstr ""
+msgstr "<emph>Hạ xuống</emph> hạ đối tượng xuống một cấp trong đống các đối tượng"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107F8
 msgid  "\<emph\>Send to Back\</emph\> places the object behind all other objects"
-msgstr ""
+msgstr "<emph>Hạ xuống dưới</emph> để đối tượng ở dưới các đối tượng khác"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107FE
 msgid  "\<emph\>Behind Object\</emph\> places the object behind another object that you select"
-msgstr ""
+msgstr "<emph>Ở sau đối tượng</emph> để đối tượng ở sau một đối tượng khác bạn chọn"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3155766.79
 msgid  "Arranging an Object Behind Another Object"
@@ -521,7 +521,7 @@ msgstr "Nhấn vào đối tượng có vị trí bạn muốn thay đổi."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3154253.80
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Behind Object\</emph\>. The mouse pointer changes to a hand."
-msgstr ""
+msgstr "Chọn lệnh <item type=\"menuitem\">Sửa đổi > Sắp đặt</item> để mở trình đơn ngữ cảnh và chọn mục <emph>Ở sau đối tượng</emph>. Con trỏ chuột sẽ thay đổi thành hình tay."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3149126.81
 msgid  "Click the object behind which you want to place the selected object."
@@ -537,7 +537,7 @@ msgstr "Shift-nhấn cả hai đối tượng để chọn chúng."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3155114.84
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Reverse\</emph\>."
-msgstr ""
+msgstr "Chọn lệnh <item type=\"menuitem\">Sửa đổi > Sắp đặt</item> để mở trình đơn ngữ cảnh và chọn mục <emph>Đảo ngược</emph>"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3166425.21
 msgid  "Aligning Objects"
@@ -545,7 +545,7 @@ msgstr "Sắp hàng đối tượng"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3152994.22
 msgid  "The \<emph\>Alignment\</emph\> function enables you to align objects relative to each other or relative to the page."
-msgstr ""
+msgstr "Chức năng <emph>Sắp hàng</emph> cho bạn có khả năng sắp hàng các đối tượng cân xứng với nhau, hay cân xứng với trang."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A3
 msgid  "Select an object to align it to the page or select multiple objects to align them relative to each other."
@@ -553,7 +553,7 @@ msgstr "Chọn một đối tượng để sắp hàng nó tùy theo trang, ho�
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A7
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Alignment\</item\> and select one of the alignment options."
-msgstr ""
+msgstr "Chọn lệnh <item type=\"menuitem\">Sửa đổi > Canh lề</item> rồi chọn một của những tùy chọn canh lề."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108AE
 msgid  "Distributing Objects"
@@ -561,7 +561,7 @@ msgstr "Phân phối đối tượng"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3151390.71
 msgid  "If you select three or more objects in Draw, you can also use the \<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\"\>\<emph\>Distribution\</emph\>\</link\> command to distribute the vertical and horizontal spacing evenly between the objects."
-msgstr ""
+msgstr "Sau khi chọn ít nhất ba đối tượng trong chương trình Draw, bạn có thể sử dụng lệnh <link href=\"text/shared/01/05360000.xhp\" name=\"Phân phối\"><emph>Phân phối</emph></link> để phân phối khoảng cách theo chiều ngang và nằm dọc một cách đều đặn giữa các đối tượng."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108CE
 msgid  "Select three or more objects to be distributed."
@@ -569,15 +569,15 @@ msgstr "Chọn ít nhất ba đối tượng cần phân phối."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108D2
 msgid  "Choose \<item type=\"menuitem\"\>Modify - Distribution\</item\>."
-msgstr ""
+msgstr "Chọn lệnh <item type=\"menuitem\">Sửa đổi > Phân phối</item>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108DA
 msgid  "Select the horizontal and vertical distribution option and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Chọn tùy chọn phân phối theo chiều ngang và nằm dọc, sau đó nhấn vào nút <emph>OK</emph>."
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150535.72
 msgid  "Selected objects are distributed evenly along the horizontal or vertical axis. The two outermost objects are used as reference points and do not move when the \<emph\>Distribution\</emph\> command is applied."
-msgstr ""
+msgstr "Các đối tượng đã chọn được phân phối đều đặn theo trục nằm ngang hay nằm dọc. Hai đối tượng ngoài cùng được dùng làm điểm tham chiếu nên không di chuyển khi lệnh <emph>Phân phối</emph> được áp dụng."
 
 #: source/text/sdraw/guide/color_define.xhp#tit
 msgid  "Defining Custom Colors"
@@ -585,11 +585,11 @@ msgstr "Xác định màu sắc riêng"
 
 #: source/text/sdraw/guide/color_define.xhp#bm_id3149263
 msgid  "\<bookmark_value\>colors; defining and saving\</bookmark_value\>      \<bookmark_value\>user-defined colors\</bookmark_value\>      \<bookmark_value\>custom colors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>màu sắc; xác định và lưu</bookmark_value><bookmark_value>màu sắc tự xác định</bookmark_value><bookmark_value>màu sắc tùy biến</bookmark_value>"
 
 #: source/text/sdraw/guide/color_define.xhp#hd_id3149263.7
 msgid  "\<variable id=\"color_define\"\>\<link href=\"text/sdraw/guide/color_define.xhp\" name=\"Defining Custom Colors\"\>Defining Custom Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"color_define\"><link href=\"text/sdraw/guide/color_define.xhp\" name=\"Xác định màu sắc riêng\">Xác định màu sắc riêng</link></variable>"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154511.8
 msgid  "If you want, you can mix a custom color and add it to a color table."
@@ -601,7 +601,7 @@ msgstr "Xác định một màu riêng"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3150327.25
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Colors\</emph\> tab. A table of the predefined colors is displayed."
-msgstr ""
+msgstr "Chọn lệnh <emph>Định dạng > Vùng</emph> rồi nhấn vào thẻ<emph>Màu sắc</emph>. Bảng các màu đã xác định sẵn sẽ được hiển thị."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154657.13
 msgid  "Changes made to the standard color table are permanent and are saved automatically."
@@ -629,7 +629,7 @@ msgstr "Gõ giá trị thuộc số vào hộp bên cạnh mỗi thành phần m
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152871.18
 msgid  "You can also create a color using a color spectrum. Click the \<emph\>Edit\</emph\> button to open the \<link href=\"text/shared/optionen/01010501.xhp\" name=\"Color\"\>\<emph\>Color\</emph\>\</link\> dialog. Click a color. Use the Hue, Saturation, and Brightness boxes to adjust your color selection."
-msgstr ""
+msgstr "Bạn cũng có thể tạo màu riêng bằng dải phổ màu. Nhấn vào nút <emph>Sửa</emph> để mở hộp thoại <link href=\"text/shared/optionen/01010501.xhp\" name=\"Màu\"><emph>Màu</emph></link>. Nhấn vào một màu. Dùng các hộp <emph>Sắc độ màu</emph>, <emph>Độ bão hoà</emph> và <emph>Độ sáng</emph> để điều chỉnh màu đã chọn."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3153011.19
 msgid  "Do one of the following:"
@@ -637,15 +637,15 @@ msgstr "Chọn một hành động:"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3147244.26
 msgid  "If you want to replace the color in the standard color table that your custom color is based on, click \<emph\>Modify\</emph\>."
-msgstr ""
+msgstr "Nếu bạn muốn thay thế màu trong bảng màu chuẩn, vào đó màu riêng dựa, nhấn vào <emph>Sửa đổi</emph>."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145116.20
 msgid  "If you want to add your custom color to the standard color table, enter a name in the \<emph\>Name\</emph\> text box and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Nếu bạn muốn thêm màu riêng vào bảng màu chuẩn, gõ tên cho nó vào hộp văn bản <emph>Tên</emph>, sau đó nhấn vào nút <emph>Thêm</emph>."
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145236.23
 msgid  "\<link href=\"text/shared/01/03170000.xhp\" name=\"Color bar\"\>Color bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03170000.xhp\" name=\"Thanh màu\">Thanh màu</link>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#tit
 msgid  "Combining Objects and Constructing Shapes"
@@ -653,11 +653,11 @@ msgstr "Kết hợp Đối tượng và Cấu tạo Hình"
 
 #: source/text/sdraw/guide/combine_etc.xhp#bm_id3156443
 msgid  "\<bookmark_value\>combining; draw objects\</bookmark_value\>\<bookmark_value\>merging; draw objects\</bookmark_value\>\<bookmark_value\>connecting; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; combining\</bookmark_value\>\<bookmark_value\>intersecting draw objects\</bookmark_value\>\<bookmark_value\>polygons; intersecting/subtracting/merging\</bookmark_value\>\<bookmark_value\>subtracting polygons\</bookmark_value\>\<bookmark_value\>constructing shapes\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>kết hợp; đối tượng vẽ</bookmark_value><bookmark_value>trộn; đối tượng vẽ</bookmark_value><bookmark_value>kết nối; đối tượng vẽ</bookmark_value><bookmark_value>đối tượng vẽ; kết hợp</bookmark_value><bookmark_value>cắt chéo đối tượng vẽ</bookmark_value><bookmark_value>hình đa giác; cắt chéo/trừ/trộn</bookmark_value><bookmark_value>trừ hình đa giác</bookmark_value><bookmark_value>cấu tạo hình</bookmark_value>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3156443.64
 msgid  "\<variable id=\"combine_etc\"\>\<link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Combining Objects and Constructing Shapes\"\>Combining Objects and Constructing Shapes\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"combine_etc\"><link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Kết hợp Đối tượng và Cấu tạo Hình\">Kết hợp Đối tượng và Cấu tạo Hình</link></variable>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3149020.65
 msgid  "Combined drawing objects act as grouped objects, except that you cannot enter the group to edit the individual objects. "
@@ -677,7 +677,7 @@ msgstr "Chọn ít nhất hai đối tượng hai chiều."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145587.67
 msgid  "Choose \<emph\>Modify - Combine\</emph\>."
-msgstr ""
+msgstr "Chọn lệnh <emph>Sửa đổi > Kết hợp</emph>."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3146978.33
 msgid  "Unlike groups, a combined object takes on the properties of the lowermost object in the stacking order. You can split apart combined objects, but the original object properties are lost."
@@ -689,7 +689,7 @@ msgstr "Khi bạn kết hợp các đối tượng, lỗ xuất hiện khi các 
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3156019
 msgid  " \<image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"\>\<alt id=\"alt_id3157978\"\>Illustration for combining objects\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"><alt id=\"alt_id3157978\">Minh hoạ kết hợp các đối tượng</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153249.35
 msgid  "In the illustration, the uncombined objects are on the left and the combined objects on the right."
@@ -701,7 +701,7 @@ msgstr "Cấu táo hình"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150049.63
 msgid  "You can construct shapes by applying the \<link href=\"text/simpress/01/13180000.xhp\" name=\"Shapes\"\>\<emph\>Shapes\</emph\>\</link\> \<emph\>- Merge, Subtract and Intersect\</emph\> commands to two or more drawing objects."
-msgstr ""
+msgstr "Bạn có thể cấu tạo hình bằng cách áp dụng lênh <link href=\"text/simpress/01/13180000.xhp\" name=\"Hình\"><emph>Hình</emph></link><emph>> Gộp, Trừ và Giao nhau</emph> cho ít nhất hai đối tượng vẽ."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3147403.88
 msgid  "Shape commands only work on 2D objects."
@@ -721,19 +721,19 @@ msgstr "Chọn ít nhất hai đối tượng hai chiều."
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150650.70
 msgid  "Choose \<emph\>Modify - Shapes\</emph\> and one of the following:"
-msgstr ""
+msgstr "Chọn lệnh <emph>Sửa đổi > Hình</emph>, sau đó một của những hành động này:"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3145829.91
 msgid  " \<emph\>Merge\</emph\> "
-msgstr ""
+msgstr "<emph>Gộp</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3154680.92
 msgid  " \<emph\>Subtract\</emph\> "
-msgstr ""
+msgstr "<emph>Trừ</emph>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153034.93
 msgid  " \<emph\>Intersect\</emph\>."
-msgstr ""
+msgstr "<emph>Giao nhau</emph>."
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3145144.94
 msgid  "Shape Commands"
@@ -749,7 +749,7 @@ msgstr "Hình > Trộn"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3148585
 msgid  " \<image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3145593\"\>Illustration for merging shapes\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"><alt id=\"alt_id3145593\">Minh hoạ việc gộp lại các hình</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150001.73
 msgid  "Adds the area of the selected objects to the area of the lowermost object in the stacking order."
@@ -761,7 +761,7 @@ msgstr "Hình > Trừ"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150338
 msgid  " \<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3154505\"\>Illustration for subtracting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"><alt id=\"alt_id3154505\">Minh hoạ trừ các hình</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150022.75
 msgid  "Subtracts the area of the selected objects from the area of the lowermost object in the stacking order."
@@ -773,7 +773,7 @@ msgstr "Hình > Giao nhau"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150570
 msgid  " \<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"\>\<alt id=\"alt_id3150658\"\>Illustration for intersecting shapes\</alt\>\</image\>"
-msgstr ""
+msgstr " <image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"><alt id=\"alt_id3150658\">Minh hoạ các hình giao nhau</alt></image>"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157972.79
 msgid  "The overlapping area of the selected objects creates the new shape."
@@ -789,11 +789,11 @@ msgstr "Mờ đi chéo hai đối tượng"
 
 #: source/text/sdraw/guide/cross_fading.xhp#bm_id3150715
 msgid  "\<bookmark_value\>draw objects; cross-fading two objects\</bookmark_value\>\<bookmark_value\>cross-fading; two draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>đối tượng vẽ; mờ đi chéo hai đối tượng</bookmark_value><bookmark_value>mờ đi chéo; hai đối tượng vẽ</bookmark_value>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#hd_id3150715.17
 msgid  "\<variable id=\"cross_fading\"\>\<link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Cross-Fading Two Objects\"\>Cross-Fading Two Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"cross_fading\"><link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Mờ đi chéo hai đối tượng\">Mờ đi chéo hai đối tượng</link></variable>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154754.18
 msgid  "Cross-fading creates shapes and distributes them by uniform increments between two drawing objects."
@@ -813,15 +813,15 @@ msgstr "Ấn giữ phím Shift khi nhấn mỗi đối tượng."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3166428.22
 msgid  "Choose \<emph\>Edit - Cross-fading\</emph\>."
-msgstr ""
+msgstr "Chọn lệnh <emph>Sửa > Mờ đi chéo</emph>."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3156450.44
 msgid  "Enter a value to specify the number of objects between the start and end of the cross-fade in the \<emph\>Increments\</emph\> box."
-msgstr ""
+msgstr "Gõ vào hộp <emph>Bước</emph> giá trị để ghi rõ số đối tượng giữa đầu và cuối khoảng mờ đi chéo."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3149405.23
 msgid  "Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Nhấn vào nút <emph>OK</emph>."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3151240.24
 msgid  "A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed."
@@ -829,15 +829,15 @@ msgstr "Vậy hiển thị một nhóm chứa hai đối tượng gốc và số
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3159203
 msgid  "\<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"\>\<alt id=\"alt_id3150210\"\>Illustration for crossfading\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"><alt id=\"alt_id3150210\">Minh hoạ mờ đi chéo</alt></image>"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154766.25
 msgid  "You can edit the individual objects of a group by selecting the group and pressing F3. Press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3 to exit the group editing mode."
-msgstr ""
+msgstr "Bạn có thể chỉnh sửa từng đối tượng riêng lẻ của một nhóm bằng cách chọn nhóm và nhấn F3. Nhấn <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F3 để thoát chế độ chỉnh sửa nhóm."
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3155760.42
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Editing - Cross-fading\"\>Editing - Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Sửa > Mờ đi chéo\">Sửa > Mờ đi chéo</link>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#tit
 msgid  "Drawing Sectors and Segments"
@@ -845,15 +845,15 @@ msgstr "Vẽ hình quạt và hình phân"
 
 #: source/text/sdraw/guide/draw_sector.xhp#bm_id3146974
 msgid  "\<bookmark_value\>sectors of circles/ellipses\</bookmark_value\>\<bookmark_value\>segments of circles/ellipses\</bookmark_value\>\<bookmark_value\>circle segments\</bookmark_value\>\<bookmark_value\>ellipses; segments\</bookmark_value\>\<bookmark_value\>drawing; sectors and segments\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>hình quát tròn/bầu dục</bookmark_value><bookmark_value>hình viên/bầu dục phân</bookmark_value><bookmark_value>hình viên phân</bookmark_value><bookmark_value>hình bầu dục; hình phân</bookmark_value><bookmark_value>vẽ; hình quạt và hình phân</bookmark_value>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3146974.30
 msgid  "\<variable id=\"draw_sector\"\>\<link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Drawing Sectors and Segments\"\>Drawing Sectors and Segments\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"draw_sector\"><link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Vẽ hình quạt và hình phân\">Vẽ hình quạt và hình phân</link></variable>"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3147396.31
 msgid  "The \<emph\>Ellipse\</emph\> toolbar contains tools for drawing ellipses and circles. You can also draw segments and sectors of circles and ellipses."
-msgstr ""
+msgstr "Thanh công cụ <emph>Bầu dục</emph> chưa các công cụ để vẽ hình bầu dục và hình tròn. Bạn cũng có thể vẽ các hình viên phân, hình bầu dục phân, và hình quát tròn/bầu dục."
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3151075.32
 msgid  "To draw a sector of a circle or an ellipse:"
@@ -861,7 +861,7 @@ msgstr "Để vẽ hình quát của hình tròn hay hình bầu dục:"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3155335.33
 msgid  "Open the \<emph\>Ellipses\</emph\> toolbar and click one of the \<emph\>Circle Pie\</emph\> or \<emph\>Ellipse Pie\</emph\> icons \<image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3155768\"\>Icon\</alt\>\</image\>. The mouse pointer changes to a cross hair with a small icon of a sector."
-msgstr ""
+msgstr "Mở thanh công cụ <emph>Bầu dục</emph> rồi nhấn vào một của các biểu tượng <emph>Bánh tròn</emph> hay <emph>Bánh bầu dục</emph> <image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"><alt id=\"alt_id3155768\">Biểu tượng</alt></image>. Con trỏ chuột sẽ thay đổi thành chữ thập mảnh với biểu tượng nhỏ là hình quạt."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3150199.34
 msgid  "Position the pointer at the edge of the circle you want to draw and drag to create the circle."
@@ -869,7 +869,7 @@ msgstr "Để con trỏ ở vị trí là cạnh của hình tròn bạn muốn 
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3148868.35
 msgid  "To create a circle by dragging from the center, press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> while dragging."
-msgstr ""
+msgstr "Để tạo hình tròn bằng cách kéo từ tâm, bấm và giữ <switchinline select=\"sys\"><caseinline select=\"MAC\">Option </caseinline><defaultinline>Alt</defaultinline></switchinline> trong khi kéo."
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3145361.36
 msgid  "Release the mouse button when the circle has reached the size you want. A line corresponding to the circle radius appears in the circle."
@@ -901,11 +901,11 @@ msgstr "Nhân đôi đối tượng"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#bm_id3145750
 msgid  "\<bookmark_value\>doubling draw objects\</bookmark_value\>\<bookmark_value\>draw objects; duplicating\</bookmark_value\>\<bookmark_value\>duplicating draw objects\</bookmark_value\>\<bookmark_value\>multiplying draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>nhăn đôi đối tượng vẽ</bookmark_value><bookmark_value>đối tượng vẽ; nhân đôi</bookmark_value><bookmark_value>làm đối tượng vẽ trùng</bookmark_value><bookmark_value>nhân các đối tượng vẽ</bookmark_value>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#hd_id3145750.3
 msgid  "\<variable id=\"duplicate_object\"\>\<link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Duplicating Objects\"\>Duplicating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"duplicate_object\"><link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Nhân đôi đối tượng\">Nhân đôi đối tượng</link></variable>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149400.4
 msgid  "You can create duplicate or multiple copies of an object. The copies can be identical or can differ in size, color, orientation and location."
@@ -917,31 +917,31 @@ msgstr "Mẫu thí dụ theo đây tạo một đống tiền đồng bằng cá
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149129.6
 msgid  "Use the \<emph\>Ellipse\</emph\> tool to draw a solid yellow ellipse."
-msgstr ""
+msgstr "Dùng công cụ hình <emph>Bầu dục</emph> để vẽ một hình bầu dục màu vàng đặc."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149209.8
 msgid  "Select the ellipse and choose \<emph\>Edit - Duplicate\</emph\>."
-msgstr ""
+msgstr "Chọn hình bầu dục rồi chọn lệnh <emph>Sửa > Nhân đôi</emph>."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3145585.9
 msgid  "Enter 12 as \<emph\>Number of copies.\</emph\>"
-msgstr ""
+msgstr "Gõ số 12 là <emph>Số bản sao.</emph>"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151192.11
 msgid  "Enter a negative value for the \<emph\>Width\</emph\> and \<emph\>Height\</emph\> so that the coins decrease in size as you go up the stack."
-msgstr ""
+msgstr "Gõ một giá trị âm cho <emph>Bề rộng</emph> và <emph>Bề cao</emph>, để giảm kích cỡ của mỗi tiền đồng với mỗi bước lên đống."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3151387.39
 msgid  "To define a color transition for the coins, select different colors in the \<emph\>Start\</emph\> and \<emph\>End\</emph\> boxes. The \<emph\>Start\</emph\> color is applied to the object that you are duplicating."
-msgstr ""
+msgstr "Để xác định sự chuyển tiếp màu cho các tiền đồng này, chọn hai màu khác nhau trong những hộp <emph>Đầu</emph> và <emph>Cuối</emph>. Màu <emph>Đầu</emph> được áp dụng cho đối tượng bạn đang nhân đôi."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149947.12
 msgid  "Click \<emph\>OK\</emph\> to create the duplicates."
-msgstr ""
+msgstr "Nhấn vào nút <emph>OK</emph> để tạo các bản sao."
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3153935.50
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Edit - Duplicate\"\>Edit - Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Sửa > Nhân đôi\">Sửa > Nhân đôi</link>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#tit
 msgid  "Replacing Colors"
@@ -949,15 +949,16 @@ msgstr "Thay thế màu sắc"
 
 #: source/text/sdraw/guide/eyedropper.xhp#bm_id3147436
 msgid  "\<bookmark_value\>eyedropper tool\</bookmark_value\>\<bookmark_value\>colors; replacing\</bookmark_value\>\<bookmark_value\>replacing;colors in bitmaps\</bookmark_value\>\<bookmark_value\>metafiles;replacing colors\</bookmark_value\>\<bookmark_value\>bitmaps;replacing colors\</bookmark_value\>\<bookmark_value\>GIF images;replacing colors\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>công cụ bút chọn màu</bookmark_value><bookmark_value>màu sắc; thay thế</bookmark_value><bookmark_value>thay thế;màu sắc trong ảnh bitmap</bookmark_value><bookmark_value>siêu tập tin;thay thế màu sắc</bookmark_value><bookmark_value>ảnh bitmap;thay thế màu sắc</bookmark_value><bookmark_value>ảnh kiểu GIF;thay thế màu sắc</bookmark_value>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3147436.38
 msgid  "\<variable id=\"eyedropper\"\>\<link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Replacing Colors\"\>Replacing Colors\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"eyedropper\"><link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Thay thế màu sắc\">Thay thế màu sắc</link></variable>"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3156286.24
+#, fuzzy
 msgid  "You can replace colors in bitmaps with the \<emph\>Color Replacer\</emph\> tool."
-msgstr ""
+msgstr "Bạn có thể thay thế màu sắc trong ảnh bitmap bằng công cụ  <emph>Bút chọn màu</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3154704.25
 #, fuzzy
@@ -965,12 +966,14 @@ msgid  "Up to four colors can be replaced at once."
 msgstr "Có thể thay thế đồng thời đến bốn màu."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3147344.26
+#, fuzzy
 msgid  "You can also use the \<emph\>Transparency\</emph\> option to replace the transparent areas of an image with a color."
-msgstr ""
+msgstr "Bạn có thể sử dụng tùy chọn <emph>Trong suốt</emph> để thay thế các vùng trong suốt trong ảnh bằng màu."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148488.27
+#, fuzzy
 msgid  "Similarly, you can use the \<emph\>Color Replacer\</emph\> to make a color on your image transparent."
-msgstr ""
+msgstr "Tương tự, bạn có thể sử dụng <emph>Bút chọn màu</emph> để khiến màu trong suốt trên ảnh."
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3150205.28
 #, fuzzy
@@ -983,8 +986,9 @@ msgid  "Ensure that the image you are using is a bitmap (for example, BMP, GIF, 
 msgstr "Ảnh phải có kiểu mảng ảnh (v.d. BMP, GIF, JPG, PNG) hay siêu tập tin (v.d. WMF)."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3150202.30
+#, fuzzy
 msgid  "Choose \<emph\>Tools - Color Replacer\</emph\>."
-msgstr ""
+msgstr "Chọn lệnh <emph>Công cụ > Bút chọn màu</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3155531.31
 #, fuzzy
@@ -992,32 +996,39 @@ msgid  "Click the Color Replacer icon and position the mouse pointer over the co
 msgstr "Nhấn vào biểu tượng Bút chọn màu và để con trỏ chuột bên trên màu bạn muốn thay thế trong ảnh. Màu đó sẽ xuất hiện trong hộp bên cạnh biểu tượng bút chọn màu."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3152985.32
+#, fuzzy
 msgid  "Click the color in the image. The color appears in the first \<emph\>Source color\</emph\> box and the check box next to the color is selected."
-msgstr ""
+msgstr "Nhấn vào màu trong ảnh. Màu đó sẽ xuất hiện trong hộp <emph>Màu nguồn</emph> thứ nhất, và hộp kiểm bên cạnh màu sẽ được bật."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3148866.33
+#, fuzzy
 msgid  "In the \<emph\>Replace with\</emph\> box, select the new color."
-msgstr ""
+msgstr "Trong hộp <emph>Thay thế bằng</emph>, chọn màu mới."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3145362.41
+#, fuzzy
 msgid  "This replaces all occurrences of the \<emph\>Source color\</emph\> in the image."
-msgstr ""
+msgstr "Hành động này thay thế mọi lần gặp <emph>Màu nguồn</emph> đó trong ảnh."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3151191.34
+#, fuzzy
 msgid  "If you want to replace another color while the dialog is open, select the check box in front of \<emph\>Source color\</emph\> in the next row and repeat steps 3 to 5."
-msgstr ""
+msgstr "Nếu bạn muốn thay thế màu khác trong khi hộp thoại còn mở, chọn hộp kiểm ở trước <emph>Màu nguồn</emph> trong hàng kế tiếp, sau đó lặp lại các bước 3 đến 5."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3149876.36
+#, fuzzy
 msgid  "Click \<emph\>Replace\</emph\>."
-msgstr ""
+msgstr "Nhấn vào nút <emph>Thay thế</emph>."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3157871.37
+#, fuzzy
 msgid  "If you want to expand or contract the color selection area, increase or decrease the tolerance of the \<emph\>Color Replacer\</emph\> tool and repeat your selection."
-msgstr ""
+msgstr "Nếu bạn muốn giãn ra hay co lại vùng chọn màu, tăng hay giảm dung sai của công cụ <emph>Bút chọn màu</emph> rồi chọn lại."
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3146878.39
+#, fuzzy
 msgid  "\<link href=\"text/shared/01/06030000.xhp\" name=\"Color Replacer\"\>Color Replacer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03170000.xhp\" name=\"Thanh màu\">Thanh màu</link>"
 
 #: source/text/sdraw/guide/gradient.xhp#tit
 #, fuzzy
@@ -1025,12 +1036,14 @@ msgid  "Creating Gradient Fills"
 msgstr "Tạo sự tô đầy dải màu"
 
 #: source/text/sdraw/guide/gradient.xhp#bm_id3150792
+#, fuzzy
 msgid  "\<bookmark_value\>gradients; applying and defining\</bookmark_value\>\<bookmark_value\>editing;gradients\</bookmark_value\>\<bookmark_value\>defining;gradients\</bookmark_value\>\<bookmark_value\>custom gradients\</bookmark_value\>\<bookmark_value\>transparency;adjusting\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>dải màu; áp dụng và xác định</bookmark_value><bookmark_value>chỉnh sửa;dải màu</bookmark_value><bookmark_value>xác định;dải màu</bookmark_value><bookmark_value>dải màu riêng</bookmark_value><bookmark_value>trong suốt;điều chỉnh</bookmark_value>"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3150792.3
+#, fuzzy
 msgid  "\<variable id=\"gradient\"\>\<link href=\"text/sdraw/guide/gradient.xhp\" name=\"Creating Gradient Fills\"\>Creating Gradient Fills\</link\> \</variable\>"
-msgstr ""
+msgstr "<variable id=\"gradient\"><link href=\"text/sdraw/guide/gradient.xhp\" name=\"Tạo dải màu tô đầy\">Tạo dải màu tô đầy</link> </variable>"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154012.4
 #, fuzzy
@@ -1048,12 +1061,14 @@ msgid  "Select a drawing object."
 msgstr "Chọn một đối tượng vẽ."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154491.6
+#, fuzzy
 msgid  "Choose \<emph\>Format - Area\</emph\> and select \<emph\>Gradient\</emph\> as the \<emph\>Fill\</emph\> type."
-msgstr ""
+msgstr "Chọn lệnh <emph>Định dạng > Vùng</emph> rồi chọn <emph>Dải màu</emph> làm kiểu <emph>Tô đầy</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3153415.7
+#, fuzzy
 msgid  "Select a gradient style from the list and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Chọn một kiểu dáng dải màu trong danh sách, sau đó nhấn vào nút <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3154702.8
 #, fuzzy
@@ -1071,16 +1086,19 @@ msgid  "To create a custom gradient:"
 msgstr "Để tạo một dải màu riêng:"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3151242.11
+#, fuzzy
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "Chọn lệnh <emph>Định dạng > Vùng</emph> rồi nhấn vào thẻ <emph>dải màu</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150046.12
+#, fuzzy
 msgid  "Select a gradient from the list to use as the basis for your new gradient and click \<emph\>Add\</emph\>."
-msgstr ""
+msgstr "Chọn một dải màu trong danh sách để dùng làm cơ bản cho dải màu mới, sau đó nhấn vào nút <emph>Thêm</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145116.13
+#, fuzzy
 msgid  "Type a name for the gradient in the text box and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Gõ vào hộp văn bản một tên cho dải màu, sau đó nhấn vào nút <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id6535843
 #, fuzzy
@@ -1088,12 +1106,14 @@ msgid  "The name appears at the end of the gradient list and is selected for edi
 msgstr "Tên này xuất hiện ở kết thúc của danh sách dải màu, cũng được chọn để chỉnh sửa."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150391.15
+#, fuzzy
 msgid  "Set the gradient properties and click \<emph\>Modify\</emph\> to save the gradient."
-msgstr ""
+msgstr "Đặt các thuộc tính của dải màu, sau đó nhấn vào nút <emph>Sửa</emph> để lưu dải màu."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3156396.16
+#, fuzzy
 msgid  "Click \<emph\>OK.\</emph\> "
-msgstr ""
+msgstr "Nhấn vào nút <emph>OK</emph> "
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3149947.40
 #, fuzzy
@@ -1116,16 +1136,19 @@ msgid  "Select a drawing object with the gradient that you want to modify."
 msgstr "Chọn một đối tượng vẽ có dải màu bạn muốn sửa đổi."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145592.43
+#, fuzzy
 msgid  "Choose \<emph\>Format - Area\</emph\> and click the \<emph\>Gradients\</emph\> tab."
-msgstr ""
+msgstr "Chọn lệnh <emph>Định dạng > Vùng</emph> rồi nhấn vào thẻ <emph>dải màu</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_idN107BE
+#, fuzzy
 msgid  "Adjust the values for the gradient to suit your needs and click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Điều chỉnh các giá trị của dải màu để thích hợp với nhu cầu của bạn, sau đó nhấn vào nút <emph>OK</emph>."
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150659.46
+#, fuzzy
 msgid  "To adjust the transparency of an object, select the object, choose \<emph\>Format - Area\</emph\> and click the \<emph\>Transparency\</emph\> tab."
-msgstr ""
+msgstr "Để điều chỉnh độ trong suốt của đối tượng, chọn đối tượng rồi chọn lệnh <emph>Định dạng > Vùng</emph> và nhấn vào thẻ <emph>Độ trong suốt</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#tit
 #, fuzzy
@@ -1133,20 +1156,24 @@ msgid  "Inserting Graphics"
 msgstr "Chèn đồ họa"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#bm_id3156443
+#, fuzzy
 msgid  "\<bookmark_value\>pictures; inserting\</bookmark_value\>\<bookmark_value\>images; inserting\</bookmark_value\>\<bookmark_value\>files; inserting pictures\</bookmark_value\>\<bookmark_value\>inserting;pictures\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>ảnh; chèn</bookmark_value><bookmark_value>hình; chèn</bookmark_value><bookmark_value>tập tin; chèn ảnh</bookmark_value><bookmark_value>chèn;ảnh</bookmark_value>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#hd_id3156443.1
+#, fuzzy
 msgid  "\<variable id=\"graphic_insert\"\>\<link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Inserting Graphics\"\>Inserting Pictures\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"graphic_insert\"><link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Chèn đồ họa\">Chèn đồ họa</link></variable>"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155600.2
+#, fuzzy
 msgid  "Choose \<emph\>Insert - Picture - From File\</emph\>."
-msgstr ""
+msgstr "Chọn lệnh <emph>Chèn > Ảnh > Từ tập tin</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150749.3
+#, fuzzy
 msgid  "Locate the picture you want to insert. Select the \<emph\>Link\</emph\> check box to insert only a link to the picture. If you want to see the picture before you insert it, select \<emph\>Preview\</emph\>."
-msgstr ""
+msgstr "Tìm ảnh bạn muốn chèn. Đánh dấu trong hộp kiểm <emph>Liên kết</emph> néu bạn chỉ muốn chèn liên kết đến ảnh. Muốn xem thử ảnh trước khi chèn thì chọn mục <emph>Xem thử</emph>."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155764.4
 #, fuzzy
@@ -1154,8 +1181,9 @@ msgid  "After you insert a linked picture, do not change the name of the source 
 msgstr "Sau khi chèn ảnh đã liên kết, không thay đổi tên của ảnh nguồn, hay di chuyển ảnh nguồn sang thư mục khác: hành động như vậy sẽ ngắt liên kết."
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150044.5
+#, fuzzy
 msgid  "Click \<emph\>Open\</emph\> to insert the picture."
-msgstr ""
+msgstr "Nhấn vào nút <emph>Mở</emph> để chèn ảnh."
 
 #: source/text/sdraw/guide/groups.xhp#tit
 #, fuzzy
@@ -1163,12 +1191,14 @@ msgid  "Grouping Objects"
 msgstr "Nhóm lại đối tượng"
 
 #: source/text/sdraw/guide/groups.xhp#bm_id3150793
+#, fuzzy
 msgid  "\<bookmark_value\>grouping; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; grouping\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>nhóm lại;đối tượng vẽ</bookmark_value><bookmark_value>đối tượng vẽ;nhóm lại</bookmark_value>"
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150793.26
+#, fuzzy
 msgid  "\<variable id=\"groups\"\>\<link href=\"text/sdraw/guide/groups.xhp\" name=\"Grouping Objects\"\>Grouping Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"groups\"><link href=\"text/sdraw/guide/groups.xhp\" name=\"Grouping Objects\">Grouping Objects</link></variable>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3153728.27
 #, fuzzy
@@ -1196,12 +1226,14 @@ msgid  "To group objects:"
 msgstr "Để nhóm lại các đối tượng:"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3149018
+#, fuzzy
 msgid  "\<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3145643\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3145643\">Biểu tượng</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147346.29
+#, fuzzy
 msgid  "Select the objects you want to group and choose \<emph\>Modify - Group\</emph\>."
-msgstr ""
+msgstr "Chọn những đối tượng bạn muốn nhóm lại, sau đó chọn lệnh <emph>Sửa đổi > Nhóm lại</emph>."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3148485.30
 #, fuzzy
@@ -1219,8 +1251,9 @@ msgid  "Selecting Objects in a Group"
 msgstr "Chọn đối tượng trong nhóm"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150370
+#, fuzzy
 msgid  "\<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155376\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155376\">Biểu tượng</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3156450.56
 #, fuzzy
@@ -1228,8 +1261,9 @@ msgid  "You can select single objects in a group by entering the group. Double-c
 msgstr "Bạn có thể chọn đối tượng riêng trong nhóm, bằng cách vào nhóm. Nhấn đôi vào nhóm để vào nó, sau đó nhấn vào đối tượng để chọn nó. Cũng có thể thêm hay gỡ bỏ đối tượng vào/khỏi nhóm trong chế độ này. Các đối tượng không phải thuộc về nhóm thì không hoạt động (màu xám)."
 
 #: source/text/sdraw/guide/groups.xhp#par_id3151239
+#, fuzzy
 msgid  "\<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155264\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3155264\">Biểu tượng</alt></image>"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150213.58
 #, fuzzy
@@ -1242,12 +1276,14 @@ msgid  "Assembling 3D Objects"
 msgstr "Tập hợp các đối tượng ba chiều (3D)"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#bm_id3154014
+#, fuzzy
 msgid  "\<bookmark_value\>3D objects; assembling\</bookmark_value\>\<bookmark_value\>assembled objects in 3D\</bookmark_value\>\<bookmark_value\>combining;3D objects\</bookmark_value\>\<bookmark_value\>joining;3D objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>đối tượng 3D; tập hợp</bookmark_value><bookmark_value>đối tượng đã tập hợp theo ba chiều</bookmark_value><bookmark_value>kết hợp;đối tượng 3D</bookmark_value><bookmark_value>nối lại;đối tượng 3D</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#hd_id3156442.29
+#, fuzzy
 msgid  "\<variable id=\"join_objects3d\"\>\<link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Assembling 3D Objects\"\>Assembling 3D Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects3d\"><link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Tập hợp các đối tượng ba chiều (3D)\">Tập hợp các đối tượng ba chiều (3D)</link></variable>"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3145251.30
 msgid  "3D objects that each form a 3D scene can be combined into a single 3D scene."
@@ -1259,8 +1295,9 @@ msgid  "To combine 3D objects:"
 msgstr "Để kết hợp các đối tượng 3D:"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154702.31
+#, fuzzy
 msgid  "Insert a 3D object from the \<emph\>3D Objects\</emph\> toolbar (for example, a cube)."
-msgstr ""
+msgstr "Chèn một đối tượng 3D từ thanh công cụ <emph>Đối tượng 3D</emph> (v.d. hình khối)."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155335.32
 #, fuzzy
@@ -1268,8 +1305,9 @@ msgid  "Insert a second slightly larger 3D object (for example, a sphere)."
 msgstr "Chèn đối tượng 3D thứ hai, một ít lớn hơn (v.d. hình cầu)."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3148488.33
+#, fuzzy
 msgid  "Select the second 3D object (sphere) and choose \<emph\>Edit - Cut\</emph\>."
-msgstr ""
+msgstr "Chọn đối tượng 3D thứ hai (hình cầu) rồi chọn lệnh <emph>Sửa > Cắt</emph>."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3149211.34
 #, fuzzy
@@ -1277,8 +1315,9 @@ msgid  "Double-click the first object (cube) to enter its group."
 msgstr "Nhấn đôi vào đối tượng thứ nhất (hình khối) để vào nhóm của nó."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154652.35
+#, fuzzy
 msgid  "Choose \<emph\>Edit - Paste\</emph\>. Both objects are now part of the same group. If you want, you can edit the individual objects or change their position within the group."
-msgstr ""
+msgstr "Chọn lệnh <emph>Sửa > Dán</emph>. Cả hai đối tượng lúc bây giờ thuộc về cùng một nhóm. Bạn cũng có thể sửa đối tượng riêng trong nhóm, hoặc thay đổi vị trí của nó trong nhóm."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155376.36
 #, fuzzy
@@ -1291,8 +1330,9 @@ msgid  "You cannot intersect or subtract 3D objects."
 msgstr "Ghi chú : bạn không thể giao nhau hay trừ đối tượng kiểu ba chiều (3D)."
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154537.39
+#, fuzzy
 msgid  "\<link href=\"text/simpress/02/10090000.xhp\" name=\"Objects in 3D\"\>Objects in 3D\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10090000.xhp\" name=\"Đối tượng theo ba chiều (3D)\">Đối tượng theo ba chiều (3D)D</link>"
 
 #: source/text/sdraw/guide/join_objects.xhp#tit
 #, fuzzy
@@ -1300,12 +1340,14 @@ msgid  "Connecting Lines"
 msgstr "Kết nối dòng"
 
 #: source/text/sdraw/guide/join_objects.xhp#bm_id3145799
+#, fuzzy
 msgid  "\<bookmark_value\>draw objects; connecting lines to\</bookmark_value\>\<bookmark_value\>connecting; lines\</bookmark_value\>\<bookmark_value\>lines; connecting objects\</bookmark_value\>\<bookmark_value\>areas; from connected lines\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>đối tượng vẽ; kết nối dòng tới</bookmark_value><bookmark_value>kết nối; dòng</bookmark_value><bookmark_value>dòng; kết nối đối tượng</bookmark_value><bookmark_value>vùng; từ dòng đã kết nối</bookmark_value>"
 
 #: source/text/sdraw/guide/join_objects.xhp#hd_id3145799.1
+#, fuzzy
 msgid  "\<variable id=\"join_objects\"\>\<link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Connecting Lines\"\>Connecting Lines\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"join_objects\"><link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Kết nối dòng\">Kết nối dòng</link></variable>"
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3154512.3
 #, fuzzy
@@ -1323,16 +1365,19 @@ msgid  "Select two or more lines."
 msgstr "Chọn ít nhất hai dòng."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3156383.5
+#, fuzzy
 msgid  "Right-click and choose \<emph\>Modify - Connect\</emph\>."
-msgstr ""
+msgstr "Nhấn-phải rồi chọn lệnh <emph>Sửa đổi > Kết nối</emph>."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3149257.11
+#, fuzzy
 msgid  "To create a closed object, right-click a line and choose \<emph\>Close Object\</emph\>."
-msgstr ""
+msgstr "Để tạo một đối tượng đã đóng, nhấn-phải vào dòng rồi chọn lệnh <emph>Đóng đối tượng</emph>."
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3150363.9
+#, fuzzy
 msgid  "You can only use the \<emph\>Close Object\</emph\> command on connected lines, \<emph\>Freeform Lines \</emph\>and unfilled \<emph\>Curves\</emph\>."
-msgstr ""
+msgstr "Bạn chỉ co thể sử dụng lệnh <emph>Đóng đối tượng</emph> với các dòng đã kết nối, các <emph>Đường dạng tự do</emph> và các đường <emph>Cong</emph> không đặc."
 
 #: source/text/sdraw/guide/keyboard.xhp#tit
 #, fuzzy
@@ -1340,12 +1385,14 @@ msgid  "Shortcut Keys for Drawing Objects"
 msgstr "Phím tắt cho Đối tượng Vẽ"
 
 #: source/text/sdraw/guide/keyboard.xhp#bm_id3155628
+#, fuzzy
 msgid  "\<bookmark_value\>accessibility; %PRODUCTNAME Draw\</bookmark_value\>\<bookmark_value\>draw objects; text entry mode\</bookmark_value\>\<bookmark_value\>text entry mode for draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>khả năng truy cập; %PRODUCTNAME Draw</bookmark_value><bookmark_value>đối tượng vẽ; chế độ gõ văn bản</bookmark_value><bookmark_value>chế độ gõ văn bản cho đối tượng vẽ</bookmark_value>"
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3155628.1
+#, fuzzy
 msgid  "\<variable id=\"keyboard\"\>\<link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Shortcut Keys for Drawing Objects\"\>Shortcut Keys for Drawing Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"keyboard\"><link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Phím tắt cho Đối tượng Vẽ\">Phím tắt cho Đối tượng Vẽ</link></variable>"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3148663.13
 #, fuzzy
@@ -1358,20 +1405,24 @@ msgid  "To Create and Edit a Drawing Object"
 msgstr "Để Tạo và Chỉnh Sửa Đối tượng Vẽ"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3153188.11
+#, fuzzy
 msgid  "Press \<item type=\"keycode\"\>F6\</item\> to navigate to the \<emph\>Drawing\</emph\> bar."
-msgstr ""
+msgstr "Bấm phím chức năng <item type=\"keycode\">F6</item> để tới thanh <emph>Vẽ</emph>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3146971.10
+#, fuzzy
 msgid  "Press the \<item type=\"keycode\"\>Right\</item\> arrow key until you reach the toolbar icon of a drawing tool."
-msgstr ""
+msgstr "Bấm phím mũi tên bên <item type=\"keycode\">Phải</item> đến khi bạn tới biểu tượng thanh công cụ của công cụ vẽ."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_idN106CD
+#, fuzzy
 msgid  "If there is an arrow next to the icon, the drawing tool opens a sub toolbar. Press the \<item type=\"keycode\"\>Up\</item\> or \<item type=\"keycode\"\>Down\</item\> arrow key to open the sub toolbar, then press the \<item type=\"keycode\"\>Right\</item\> or \<item type=\"keycode\"\>Left\</item\> key to select an icon."
-msgstr ""
+msgstr "Có mũi tên bên cạnh thiết bị thì công cụ vẽ sẽ mở một thanh công cụ phụ. Bấm phím mũi tên <item type=\"keycode\">Lên</item> hay <item type=\"keycode\">Xuống</item> để mở thanh công cụ phụ, sau đó bấm phím mũi tên <item type=\"keycode\">Phải</item> hay <item type=\"keycode\">Trái</item> để chọn một biểu tượng riêng."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3147338.8
+#, fuzzy
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter\</item\>."
-msgstr ""
+msgstr "Bấm <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3154705.7
 #, fuzzy
@@ -1379,12 +1430,14 @@ msgid  "The object is created at the center of the current document."
 msgstr "Đối tượng được tạo ở trung têm của tài liệu hiện thời."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155962.6
+#, fuzzy
 msgid  "To return to the document, press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\>."
-msgstr ""
+msgstr "Để quay trở lại tài liệu, nhấn <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155062.5
+#, fuzzy
 msgid  "You can use the arrow keys to position the object where you want. To choose a command from the context menu for the object, press \<item type=\"keycode\"\>Shift+F10\</item\>."
-msgstr ""
+msgstr "Bạn có thể sử dụng những phím mũi tên để định vị đối tượng. Để chọn một lệnh trong trình đơn ngữ cảnh cho đối tượng, bấm tổ hợp phím <item type=\"keycode\">Shift+F10</item>."
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3150306.4
 #, fuzzy
@@ -1392,12 +1445,14 @@ msgid  "To Select an Object"
 msgstr "Để chọn một đối tượng"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3152990.3
+#, fuzzy
 msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\> to enter the document."
-msgstr ""
+msgstr "Nhấn <item type=\"keycode\"><switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F6</item> để vào tài liệu."
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3145587.2
+#, fuzzy
 msgid  "Press \<item type=\"keycode\"\>Tab\</item\> until you reach the object you want to select."
-msgstr ""
+msgstr "Bấm phím <item type=\"keycode\">Tab</item> nhiều lần đến khi tới đối tượng bạn muốn chọn."
 
 #: source/text/sdraw/guide/main.xhp#tit
 #, fuzzy
@@ -1405,12 +1460,14 @@ msgid  "Instructions for Using $[officename] Draw"
 msgstr "Hướng dẫn về cách sử dụng $[officename] Draw"
 
 #: source/text/sdraw/guide/main.xhp#bm_id3146119
+#, fuzzy
 msgid  "\<bookmark_value\>Draw instructions\</bookmark_value\>\<bookmark_value\>instructions; $[officename] Draw\</bookmark_value\>\<bookmark_value\>Howtos for Draw\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>hướng dẫn về Draw</bookmark_value><bookmark_value>hướng dẫn; $[officename] Draw</bookmark_value>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3146119.1
+#, fuzzy
 msgid  "\<variable id=\"main\"\>\<link href=\"text/sdraw/guide/main.xhp\" name=\"Instructions for Using $[officename] Draw\"\>Instructions for Using $[officename] Draw\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main\"><link href=\"text/sdraw/guide/main.xhp\" name=\"Hướng dẫn về cách sử dụng $[officename] Draw\">Hướng dẫn về cách sử dụng $[officename] Draw</link></variable>"
 
 #: source/text/sdraw/guide/main.xhp#hd_id3143218.2
 #, fuzzy
@@ -1443,12 +1500,14 @@ msgid  "Rotating Objects"
 msgstr "Xoay Đối tượng"
 
 #: source/text/sdraw/guide/rotate_object.xhp#bm_id3154684
+#, fuzzy
 msgid  "\<bookmark_value\>rotating; draw objects\</bookmark_value\>\<bookmark_value\>draw objects; rotating\</bookmark_value\>\<bookmark_value\>pivot points of draw objects\</bookmark_value\>\<bookmark_value\>skewing draw objects\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>xoay; đối tượng vẽ</bookmark_value><bookmark_value>đối tượng vẽ; xoay</bookmark_value><bookmark_value>điểm trụ xoay của đối tượng vẽ</bookmark_value><bookmark_value>lệch đối tượng vẽ</bookmark_value>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#hd_id3154684.12
+#, fuzzy
 msgid  "\<variable id=\"rotate_object\"\>\<link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Rotating Objects\"\>Rotating Objects\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"rotate_object\"><link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Xoay đối tượng\">Xoay đối tượng</link></variable>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149262.13
 #, fuzzy
@@ -1456,12 +1515,14 @@ msgid  "You can rotate an object around its default pivot point (center point) o
 msgstr "Bạn có thể xoay đối tượng chung quanh điểm trụ xoay mặc định của nó (điểm trung tâm), hoặc chung quanh một điểm trụ xoay bạn xác định."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3146975
+#, fuzzy
 msgid  "\<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"\>\<alt id=\"alt_id3154729\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"><alt id=\"alt_id3154729\">Biểu tượng</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3150716.14
+#, fuzzy
 msgid  "Select the object you want to rotate. On the \<emph\>Mode\</emph\> toolbar in $[officename] Draw or on the \<emph\>Drawing\</emph\> bar in $[officename] Impress, click the \<emph\>Rotate\</emph\> icon."
-msgstr ""
+msgstr "Chọn đối tượng bạn muốn xoay. Trên thanh công cụ <emph>Chế độ</emph> trong chương trình $[officename] Draw, hoặc trên thanh <emph>Vẽ</emph> trong chương trình $[officename] Impress, nhấn vào biểu tượng <emph>Xoay</emph>."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149021.69
 #, fuzzy
@@ -1479,8 +1540,9 @@ msgid  "Right-click the object to open the context menu. Choose Position and Siz
 msgstr "Nhấn chuột phải vào một đối tượng để mở trình đơn ngữ cảnh. Chọn Vị trí và Kích thước - Xoay để điền vào giá trị chính xác của góc cần xoay."
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3155962
+#, fuzzy
 msgid  "\<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"\>\<alt id=\"alt_id3154023\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"><alt id=\"alt_id3154023\">Biểu tượng</alt></image>"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3166424.16
 #, fuzzy
@@ -1498,12 +1560,14 @@ msgid  "Adding Text"
 msgstr "Thêm Văn bản"
 
 #: source/text/sdraw/guide/text_enter.xhp#bm_id3153144
+#, fuzzy
 msgid  "\<bookmark_value\>text frames\</bookmark_value\>      \<bookmark_value\>inserting;text frames\</bookmark_value\>      \<bookmark_value\>copying;text from other documents\</bookmark_value\>      \<bookmark_value\>pasting;text from other documents\</bookmark_value\>      \<bookmark_value\>legends; drawings\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>khung văn bản</bookmark_value><bookmark_value>chèn;khung văn bản</bookmark_value><bookmark_value>sao chép;văn bản từ tài liệu khác</bookmark_value><bookmark_value>dán;văn bản từ tài liệu khác</bookmark_value><bookmark_value>chú giải; bản vẽ</bookmark_value>"
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3153144.45
+#, fuzzy
 msgid  "\<variable id=\"text_enter\"\>\<link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Adding Text\"\>Adding Text\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"text_enter\"><link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Thêm văn bản\">Thêm văn bản</link></variable>"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3145750.46
 #, fuzzy
@@ -1541,8 +1605,9 @@ msgid  "Adding a Text Box"
 msgstr "Thêm một hộp văn bản"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3155266.49
+#, fuzzy
 msgid  "Click the \<emph\>Text\</emph\> icon \<image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3156450\"\>Icon\</alt\>\</image\> and move the mouse pointer to where you want to enter the text box."
-msgstr ""
+msgstr "Nhấn vào biểu tượng <emph>Văn bản</emph> <image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3156450\">Biểu tượng</alt></image> rồi di chuyển con trỏ chuột tới vị trí  bạn muốn gõ văn bản vào."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3149052.50
 #, fuzzy
@@ -1570,12 +1635,14 @@ msgid  "Create a text box as described in the steps above."
 msgstr "Tạo một hộp văn bản như đã mô tả trong các bước ở trên"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108A3
+#, fuzzy
 msgid  "With the text object selected, choose \<emph\>Format - Text\</emph\>. The \<emph\>Text\</emph\> dialog opens."
-msgstr ""
+msgstr "Khi đối tượng văn bản được chọn, chọn lệnh <emph>Định dạng > Văn bản</emph>. Hộp thoại <emph>Văn bản</emph> sẽ mở."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108AF
+#, fuzzy
 msgid  "On the \<emph\>Text\</emph\> tab page, clear the \<emph\>Fit height to text\</emph\> checkbox, then select the \<emph\>Fit to frame\</emph\> checkbox. Click \<emph\>OK\</emph\>."
-msgstr ""
+msgstr "Trong phiếu <emph>Văn bản</emph>, xóa dấu kiểm <emph>Chỉnh độ cao của văn bản</emph>, sau đó chọn hộp chọn<emph>Chỉnh cho vừa khung</emph>. Nhắp vào nút <emph>OK</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id0610200902133994
 #, fuzzy
@@ -1593,12 +1660,14 @@ msgid  "You can add text to any graphic after double-clicking the graphic."
 msgstr "Bạn có thể thêm văn bản vào bất cứ đồ họa nào, sau khi nhấn đôi vào đồ họa."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id1827448
+#, fuzzy
 msgid  "To determine the position of the text, use the settings in \<emph\>Format - Text\</emph\>."
-msgstr ""
+msgstr "Để xác định vị trí của văn bản, dùng thiết lập được hiển thị bởi lệnh <emph>Định dạng > Văn bản</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3147366.59
+#, fuzzy
 msgid  "For example, click the arrow next to the \<emph\>Callouts\</emph\> icon \<image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3154508\"\>Icon\</alt\>\</image\> to open the Callouts toolbar."
-msgstr ""
+msgstr "Chẳng hạn, nhấn vào mũi tên bên cạnh biểu tượng <emph>Khung thoại</emph> <image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3154508\">Biểu tượng</alt></image> để mở thanh công cụ Khung thoại <emph>Khung thoại</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108FD
 #, fuzzy
@@ -1626,8 +1695,9 @@ msgid  "Select the text in your Writer document."
 msgstr "Chọn văn bản trong tài liệu Writer."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10925
+#, fuzzy
 msgid  "Copy the text to the clipboard (\<emph\>Edit - Copy\</emph\>)."
-msgstr ""
+msgstr "Sao chép văn bản vào bảng nháp (<emph>Sửa > Chép</emph>)."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1092D
 #, fuzzy
@@ -1635,12 +1705,14 @@ msgid  "Click the page or slide where you want to paste the text."
 msgstr "Nhấn vào trang hay ảnh chiếu vào đó bạn muốn dán văn bản."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10931
+#, fuzzy
 msgid  "Paste the text using \<emph\>Edit - Paste\</emph\> or \<emph\>Edit - Paste special\</emph\>."
-msgstr ""
+msgstr "Dán văn bản bằng lệnh <emph>Sửa > Dán</emph> hay <emph>Sửa > Dán đặc biệt</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093C
+#, fuzzy
 msgid  "Using \<emph\>Paste special\</emph\>, you can choose the text format to be pasted. Depending on formats, you can copy different text attributes."
-msgstr ""
+msgstr "Dùng lệnh <emph>Dán đặc biệt</emph>, bạn có thể chọn định dạng văn bản cần dán. Phụ thuộc vào định dạng, bạn có thể sao chép các thuộc tính văn bản khác nhau."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1093F
 #, fuzzy
@@ -1653,410 +1725,380 @@ msgid  "Click the page or slide where you want to import the text."
 msgstr "Nhấn vào trang hay ảnh chiếu vào đó bạn muốn nhập khẩu văn bản."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1094A
+#, fuzzy
 msgid  "Choose \<emph\>Insert - File\</emph\>."
-msgstr ""
+msgstr "Chọn lệnh <emph>Chèn > Tập tin</emph>."
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10952
+#, fuzzy
 msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</emph\>. The \<emph\>Insert Text\</emph\> dialog opens. Click \<emph\>OK\</emph\> to insert the text."
-msgstr ""
+msgstr "Chọn một tập tin nhập thô (*.txt) hay tập tin dạng HTML, sau đó nhấn vào nút <emph>Chèn</emph>. Hộp thoại <emph>Chèn văn bản</emph> sẽ mở. Nhấn vào nút <emph>OK</emph> để chèn văn bản."
 
 #: source/text/sdraw/main0000.xhp#tit
-#, fuzzy
 msgid  "Welcome to the $[officename] Draw Help"
 msgstr "Chào mừng dùng Trợ Giúp của $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
 msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
-msgstr ""
+msgstr "<switchinline select=\"appl\"> <caseinline select=\"DRAW\"/> </switchinline>Chào mừng dùng Trợ Giúp của $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
-#, fuzzy
 msgid  "How to Work With $[officename] Draw"
 msgstr "Làm việc với $[officename] Draw như thế nào"
 
 #: source/text/sdraw/main0000.xhp#hd_id3150363.5
-#, fuzzy
 msgid  "$[officename] Draw Menus, Toolbars, and Keys"
 msgstr "Trình đơn, thanh công cụ và phím của $[officename] Draw"
 
 #: source/text/sdraw/main0000.xhp#hd_id3166430.4
-#, fuzzy
 msgid  "Help about the Help"
 msgstr "Trợ giúp về Trợ giúp"
 
 #: source/text/sdraw/main0100.xhp#tit
-#, fuzzy
 msgid  "Menus"
 msgstr "Trình đơn"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
 msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0100\"><link href=\"text/sdraw/main0100.xhp\" name=\"Trình đơn\">Trình đơn</link></variable>"
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
-#, fuzzy
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
 msgstr "Sau đây có mô tả tất cả các trình đơn, trình đơn phụ và hộp thoại tương ứng của $[officename] Draw."
 
 #: source/text/sdraw/main0101.xhp#tit
-#, fuzzy
 msgid  "File"
 msgstr "Tập tin"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
 msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0101.xhp\" name=\"Tập tin\">Tập tin</link>"
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
 msgid  "This menu contains general commands for working with Draw documents, such as open, close and print. To close $[officename] Draw, click \<emph\>Exit\</emph\>."
-msgstr ""
+msgstr "Trình đơn này chứa các lệnh chung để thao tác tài liệu Draw, như mở, đóng và in. Để đóng chương trình $[officename] Draw, nhấn vào lệnh <emph>Thoát</emph>."
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
 msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"Mở\">Mở</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
 msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"Lưu mới\">Lưu mới</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
 msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01170000.xhp\" name=\"Xuất\">Xuất</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
 msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01190000.xhp\" name=\"Phiên bản\">Phiên bản</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
 msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01100000.xhp\" name=\"Thuộc tính\">Thuộc tính</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
 msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01130000.xhp\" name=\"In\">In</link>"
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
 msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/01140000.xhp\" name=\"Thiết lập máy in\">Thiết lập máy in</link>"
 
 #: source/text/sdraw/main0102.xhp#tit
-#, fuzzy
 msgid  "Edit"
 msgstr "Sửa"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
 msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0102.xhp\" name=\"Sửa\">Sửa</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
-#, fuzzy
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
 msgstr "Các lệnh trong trình đơn này được dùng để sửa đổi tài liệu Draw (v.d. sao chép và dán)."
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
 msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"Dán đặc biệt\">Dán đặc biệt</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
 msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"Tìm và Thay thế\">Tìm và Thay thế</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Điểm\">Điểm</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
-#, fuzzy
 msgid  "Enables you to edit points on your drawing."
 msgstr "Cho bạn có khả năng chỉnh sửa các điểm trên bản vẽ."
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Điểm nối\">Điểm nối</link>"
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
-#, fuzzy
 msgid  "Enables you to edit glue points on your drawing."
 msgstr "Cho bạn có khả năng chỉnh sửa các điểm nối trên bản vẽ."
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
 msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02120000.xhp\" name=\"Nhân đôi\">Nhân đôi</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
 msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02150000.xhp\" name=\"Mờ đi chéo\">Mờ đi chéo</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
 msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/02160000.xhp\" name=\"Trường\">Trường</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
 msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02180000.xhp\" name=\"Liên kết\">Liên kết</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
 msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/02220000.xhp\" name=\"Sơ đồ ảnh\">Sơ đồ ảnh</link>"
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Siêu liên kết\">Siêu liên kết</link>"
 
 #: source/text/sdraw/main0103.xhp#tit
-#, fuzzy
 msgid  "View"
 msgstr "Xem"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
 msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0103.xhp\" name=\"Xem\">Xem</link>"
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
-#, fuzzy
 msgid  "Sets the display properties of Draw documents."
 msgstr "Đặt thuộc tính hiển thị của các tài liệu Draw."
 
 #: source/text/sdraw/main0103.xhp#par_idN105AB
-#, fuzzy
 msgid  "Normal"
 msgstr "Chuẩn"
 
 #: source/text/sdraw/main0103.xhp#par_idN105AF
-#, fuzzy
 msgid  "Switch to normal view of the page."
 msgstr "Chuyển đổi về ô xem trang bình thường."
 
 #: source/text/sdraw/main0103.xhp#par_idN105B2
-#, fuzzy
 msgid  "Master"
 msgstr "Chính"
 
 #: source/text/sdraw/main0103.xhp#par_idN105B6
-#, fuzzy
 msgid  "Switch to the master page view."
 msgstr "Chuyển đổi về ô xem trang chính."
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
 msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/03010000.xhp\" name=\"Thu/Phóng\">Thu/Phóng</link>"
 
 #: source/text/sdraw/main0104.xhp#tit
-#, fuzzy
 msgid  "Insert"
 msgstr "Chèn"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
 msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0104.xhp\" name=\"Chèn\">Chèn</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
-#, fuzzy
 msgid  "This menu allows you to insert elements, such as graphics and guides, into Draw documents."
 msgstr "Trình đơn này cho bạn có khả năng chèn đối tượng, như đồ thị và hướng dẫn, vào tài liệu Draw."
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
 msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/01/04010000.xhp\" name=\"Ảnh chiếu\">Ảnh chiếu</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
 msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04020000.xhp\" name=\"Lớp\">Lớp</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
 msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04030000.xhp\" name=\"Chèn điểm/dòng dính\">Chèn điểm/dòng đính</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
 msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\">Ghi chú</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
 msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04100000.xhp\" name=\"Ký tự đặc biệt\">Ký tự đặc biệt</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
 msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/09070000.xhp\" name=\"Siêu liên kết\">Siêu liên kết</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
 msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04080100.xhp\" name=\"Bảng\">Bảng</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
 msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
-msgstr ""
+msgstr "<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Đồ thị\">Đồ thị</link>"
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
-#, fuzzy
 msgid  "Inserts a chart."
 msgstr "Chèn một biểu đồ"
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
 msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04160500.xhp\" name=\"Khung nổi\">Khung nổi</link>"
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
 msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/04110000.xhp\" name=\"Tập tin\">Tập tin</link>"
 
 #: source/text/sdraw/main0105.xhp#tit
-#, fuzzy
 msgid  "Format"
 msgstr "Định dạng"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
 msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0105.xhp\" name=\"Định dạng\">Định dạng</link>"
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
-#, fuzzy
 msgid  "Contains commands for formatting the layout and the contents of your document."
 msgstr "Chứa các lệnh để định dạng bố tri và nội dung của tài liệu."
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
 msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020000.xhp\" name=\"Ký tự\">Ký tự</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
 msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05030000.xhp\" name=\"Đoạn văn\">Đoạn văn</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
 msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06050000.xhp\" name=\"Điểm chấm và Đánh số\">Điểm chấm và Đánh số</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
 msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/01180000.xhp\" name=\"Trang\">Trang</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
 msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05230000.xhp\" name=\"Vị trí và Kích cỡ\">Vị trí và Kích cỡ</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
 msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200000.xhp\" name=\"Dòng\">Dòng</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
 msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210000.xhp\" name=\"Vùng\">Vùng</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
 msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05990000.xhp\" name=\"Văn bản\">Van bản</link>"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
 msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/01/05140000.xhp\" name=\"Lớp\">Lớp</link>"
 
 #: source/text/sdraw/main0106.xhp#tit
-#, fuzzy
 msgid  "Tools"
 msgstr "Công cụ"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
 msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0106.xhp\" name=\"Công cụ\">Công cụ</link>"
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
-#, fuzzy
 msgid  "This menu provides tools for $[officename] Draw as well as access to language and system settings."
 msgstr "Trình đơn này cung cấp các công cụ cho $[officename] Draw, cũng như khả năng truy cập thiết lập ngôn ngữ và hệ thống."
 
 #: source/text/sdraw/main0106.xhp#hd_id3153415.4
 msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"Tự động sửa lỗi\">Tùy chỉnh tự động sửa lỗi</link>"
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
 msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/06140000.xhp\" name=\"Tùy biến\">Tùy biến</link>"
 
 #: source/text/sdraw/main0200.xhp#tit
-#, fuzzy
 msgid  "Toolbars"
 msgstr "Thanh công cụ"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
 msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0200\"><link href=\"text/sdraw/main0200.xhp\" name=\"Thanh công cụ\">Thanh công cụ</link></variable>"
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
-#, fuzzy
 msgid  "This section provides an overview of the toolbars available in $[officename] Draw."
 msgstr "Phần này diễn tả những thanh công cụ sẵn sàng trong ứng dụng $[officename] Draw."
 
 #: source/text/sdraw/main0202.xhp#tit
-#, fuzzy
 msgid  "Line and Filling Bar"
 msgstr "Thanh Đường và Tô đầy"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
 msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0202.xhp\" name=\"Thanh dòng và tô đầy\">Thanh Đường và Tô đầy</link>"
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
-#, fuzzy
 msgid  "The Line and Filling bar contains commands for the current editing mode."
 msgstr "Thanh Đường và Tô đầy chứa các lệnh cho chế độ sửa đổi hiện thời."
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Kiểu đường\">Kiểu đường</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Bề rộng dòng\">Bề rộng dòng</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
 msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05200100.xhp\" name=\"Màu dòng\">Màu dòng</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
 msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210100.xhp\" name=\"Kiểu/tô đầy vùng\">Kiểu/Tô đầy vùng</link>"
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
 msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05210600.xhp\" name=\"Bóng\">Bóng</link>"
 
 #: source/text/sdraw/main0210.xhp#tit
-#, fuzzy
 msgid  "Drawing Bar"
 msgstr "Thanh vẽ"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
 msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0210.xhp\" name=\"Thanh vẽ\">Thanh vẽ</link>"
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
 msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
-msgstr ""
+msgstr "Thanh <emph>Vẽ</emph> chứa các công cụ vẽ chính."
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
 msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10060000.xhp\">Chữ nhật</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
-#, fuzzy
 msgid  "Draws a filled rectangle where you drag in the current document. Click where you want to place a corner of the rectangle, and drag to the size you want. To draw a square, hold down Shift while you drag."
 msgstr "Vẽ một hình chữ nhật đã tô đầy trong vùng trí bạn kéo trong tài liệu hiện có. Nhấn vào vị trí của gốc hình chữ nhật, sau đó kéo ra kích cỡ đã muốn. Để vẽ hình vuông, ấn giữ phím Shift trong khi kéo."
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
 msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10070000.xhp\">Bầu dục</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
-#, fuzzy
 msgid  "Draws a filled oval where you drag in the current document. Click where you want to draw the oval, and drag to the size you want. To draw a circle, hold down Shift while you drag."
 msgstr "Vẽ một hình bầu dục (hình trứng) đã tô đầy trong vùng trí bạn kéo trong tài liệu hiện có. Nhấn vào vị trí bắt đầu hình bầu dục, sau đó kéo ra kích cỡ đã muốn. Để vẽ hình tròn, ấn giữ phím Shift trong khi kéo."
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
 msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10050000.xhp\">Văn bản</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
-#, fuzzy
 msgid  "Draws a text box where you click or drag in the current document. Click anywhere in the document, and then type or paste your text."
 msgstr "Vẽ một hộp văn bản trong vùng bạn kéo trong tài liệu. Nhấn bên trong tài liệu, sau đó gõ hay dán văn bản."
 
@@ -2070,168 +2112,148 @@ msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
 msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/05270000.xhp\" name=\"Điểm\">Điểm</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
-#, fuzzy
 msgid  "Enables you to edit points on your drawing."
 msgstr "Cho bạn có khả năng chỉnh sửa các điểm trên bản vẽ."
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
 msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/10030200.xhp\" name=\"Điểm nối\">Điểm nối</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
-#, fuzzy
 msgid  "Enables you to edit glue points on your drawing."
 msgstr "Cho bạn có khả năng chỉnh sửa các điểm nối trên bản vẽ."
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
 msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/01/04140000.xhp\" name=\"Từ tập tin\">Từ tập tin</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
 msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01170000.xhp\" name=\"Điều khiển biểu mẫu\">Điều khiển biểu mẫu</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
 msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/3dsettings_toolbar.xhp\">Bật/tắt khối lồi</link>"
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
-#, fuzzy
 msgid  "Switches the 3D effects on and off for the selected objects."
 msgstr "Bật/tắt hiệu ứng ba chiều cho những đối tượng đã chọn."
 
 #: source/text/sdraw/main0213.xhp#tit
-#, fuzzy
 msgid  "Options Bar"
 msgstr "Thanh tùy chọn"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
 msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sdraw/main0213.xhp\" name=\"Thanh tùy chọn\">Thanh tùy chọn</link>"
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
 msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>View - Toolbars - Options\</emph\>."
-msgstr ""
+msgstr "Thanh <emph>Tùy chọn</emph> có thể được hiển thị bằng cách chọn mục trình đơn <emph>Xem > Thanh công cụ > Tùy chọn</emph>."
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
 msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171200.xhp\" name=\"Hiện lưới\">Hiện lưới</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
 msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171400.xhp\" name=\"Dẫn khi di chuyển\">Dẫn khi di chuyển</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
 msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
-msgstr ""
+msgstr "<link href=\"text/shared/02/01171300.xhp\" name=\"Đính lưới\">Đính lưới</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
 msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13140000.xhp\" name=\"Đính nét dẫn\">Đính nét dẫn</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
 msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13150000.xhp\" name=\"Đính lề trang\">Đính lề trang</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
 msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13160000.xhp\" name=\"Đính viền đối tượng\">Đính viền đối tượng</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
 msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13170000.xhp\" name=\"Đính điểm đối tượng\">Đính điểm đối tượng</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
 msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13180000.xhp\" name=\"Cho sửa nhanh\">Cho sửa nhanh</link>"
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
 msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
-msgstr ""
+msgstr "<link href=\"text/simpress/02/13190000.xhp\" name=\"Chọn chỉ vùng văn bản\">Chọn chỉ vùng văn bản</link>"
 
 #: source/text/sdraw/main0503.xhp#tit
-#, fuzzy
 msgid  "$[officename] Draw Features"
 msgstr "Tính năng $[officename] Draw"
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
 msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"main0503\"><link href=\"text/sdraw/main0503.xhp\" name=\"Tính năng $[officename] Draw\">Tính năng $[officename] Draw</link></variable>"
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
-#, fuzzy
 msgid  "$[officename] Draw lets you create simple and complex drawings and export them in a number of common image formats. You can also insert tables, charts, formulas and other items created in $[officename] programs into your drawings."
 msgstr "Chương trình $[officename] Draw cho bạn có khả năng tạo bản vẽ cả đơn giản lẫn phức tạp, và xuất chúng theo nhiều định dạng ảnh thường dùng. Cũng có thể chèn vào bản vẽ cái bảng, đồ thị, công thức và các mục khác được tạo trong ứng dụng $[officename] khác."
 
 #: source/text/sdraw/main0503.xhp#hd_id3147435.11
-#, fuzzy
 msgid  "Vector Graphics"
 msgstr "Đồ họa véc-tơ"
 
 #: source/text/sdraw/main0503.xhp#par_id3153142.12
-#, fuzzy
 msgid  "$[officename] Draw creates vector graphics using lines and curves defined by mathematical vectors. Vectors describe lines, ellipses, and polygons according to their geometry."
 msgstr "Chương trình $[officename] Draw tạo đồ họa véc-tơ, dùng các đường thẳng và đường cong được xác định bằng véc-tơ thuộc toán học. Véc-tơ đại diện đường, hình bầu dục và hình đa giác, tùy theo dạng hình."
 
 #: source/text/sdraw/main0503.xhp#hd_id3154320.14
-#, fuzzy
 msgid  "Creating 3D Objects"
 msgstr "Tạo đối tượng 3D"
 
 #: source/text/sdraw/main0503.xhp#par_id3145251.15
-#, fuzzy
 msgid  "You can create simple 3D objects such as cubes, spheres, and cylinders in $[officename] Draw and even modify the light source of the objects."
 msgstr "Trong $[officename] Draw, bạn có khả năng tạo đối tượng ba chiều đơn giản như hình khối, hình cầu và hình trụ, ngay cả sửa đổi nguồn ánh sáng của đối tượng đó."
 
 #: source/text/sdraw/main0503.xhp#hd_id3154491.20
-#, fuzzy
 msgid  "Grids and Guides"
 msgstr "Lưới và Nét dẫn"
 
 #: source/text/sdraw/main0503.xhp#par_id3149379.6
-#, fuzzy
 msgid  "Grids and guides provide a visual cue to help you align objects in your drawing. You can also choose to snap an object to a grid line, guide or to the edge of another object."
 msgstr "Các lưới và nét dẫn cung cấp dấu hiệu hiện rõ để giúp đỡ bạn sắp hàng các đối tượng trong bản vẽ. Bạn cũng có thể chọn đính đối tượng tới đường lưới, nét dẫn hay cạnh của đối tượng khác."
 
 #: source/text/sdraw/main0503.xhp#hd_id3155601.16
-#, fuzzy
 msgid  "Connecting Objects to Show Relationships"
 msgstr "Kết nối đối tượng để ngụ ý quan hệ"
 
 #: source/text/sdraw/main0503.xhp#par_id3149124.17
-#, fuzzy
 msgid  "You can connect objects in $[officename] Draw with special lines called \"connectors\" to show the relationship between objects. Connectors attach to glue points on drawing objects and remain attached when the connected objects are moved. Connectors are useful for creating organization charts and technical diagrams."
 msgstr "Trong $[officename] Draw, bạn có khả năng kết nối các đối tượng với nhau, bằng đường đặc biệt được gọi như là « đầu nói », để ngụ ý quan hệ giữa các đối tượng đó. Bộ kết nối gắn với điểm nối trên đối tượng vẽ, và còn lại được gắn khi đối tượng được di chuyển. Bộ kết nối có ích để tạo đồ thị tổ chức và đồ thị kỹ thuật."
 
 #: source/text/sdraw/main0503.xhp#hd_id3155764.21
-#, fuzzy
 msgid  "Displaying Dimensions"
 msgstr "Hiển thị các chiều"
 
 #: source/text/sdraw/main0503.xhp#par_id3155333.22
-#, fuzzy
 msgid  "Technical diagrams often show the dimensions of objects in the drawing. In $[officename] Draw, you can use dimension lines to calculate and display linear dimensions."
 msgstr "Đồ thị kỹ thuật thường hiển thị các chiều của những đối tượng trong bản vẽ đó. Trong chương trình $[officename] Draw, bạn có khả năng dùng đường chiều để tính và hiển thị các chiều tuyến tính."
 
 #: source/text/sdraw/main0503.xhp#hd_id3154705.18
-#, fuzzy
 msgid  "Gallery"
 msgstr "Bộ sưu tập"
 
 #: source/text/sdraw/main0503.xhp#par_id3154022.7
-#, fuzzy
 msgid  "The Gallery contains images, animations, sounds and other items that you can insert and use in your drawings as well as other $[officename] programs."
 msgstr "Bộ sưu tập chứa các ảnh, hoạt ảnh, âm thanh và các mục khác bạn có thể chèn và sử dụng trong bản vẽ, cũng như trong các ứng dụng $[officename] khác."
 
 #: source/text/sdraw/main0503.xhp#hd_id3149207.19
-#, fuzzy
 msgid  "Graphic File Formats"
 msgstr "Định dạng tập tin đồ họa"
 
 #: source/text/sdraw/main0503.xhp#par_id3155112.5
-#, fuzzy
 msgid  "$[officename] Draw can export to many common graphic file formats, such as BMP, GIF, JPG, and PNG."
 msgstr "$[officename] Draw có khả năng xuất khẩu theo nhiều định dạng đồ họa thường dùng, như BMP, GIF, JPG, và PNG."

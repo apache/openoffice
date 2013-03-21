@@ -210,8 +210,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
-msgstr ""
+msgstr "భాగములను (%s) ఎక్కించబడవు.\nదయచేసి బాగుచేయు ఇచ్ఛాపూర్వకాలతో అమర్చిపెట్టి ప్రారంభించు. "
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -313,32 +314,26 @@ msgid  "Print"
 msgstr "ముద్రణ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "ముద్రణ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
-#, fuzzy
 msgid  "/ %n"
 msgstr "/ %n"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.String.Text
-#, fuzzy
 msgid  "No pages"
 msgstr "పేజీలు లేవు"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
-#, fuzzy
 msgid  "Print to File..."
 msgstr "ఫైలునకు ముద్రించుము..."
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
-#, fuzzy
 msgid  "Default printer"
 msgstr "అప్రమేయ ముద్రణా యంత్రం"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
-#, fuzzy
 msgid  "Print preview"
 msgstr "ప్రచురణ ఉపదర్శనం"
 
@@ -348,112 +343,90 @@ msgid  "Page Layout"
 msgstr "పేజీ నమూనా"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "కూర్పు"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
-#, fuzzy
 msgid  "Pa~ges per sheet"
 msgstr "ఒక్కో షీటునకు పేజీలు (~g)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
-#, fuzzy
 msgid  "16"
 msgstr "16"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
-#, fuzzy
 msgid  "Custom"
 msgstr "మలచుకొనిన"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
-#, fuzzy
 msgid  "P~ages"
 msgstr "పేజీలు (~a)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr "దానిచే (~y)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "దూరము (~D)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "between pages"
 msgstr "పేజీల మధ్యన"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Margin"
 msgstr "మార్జిన్ (~M)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "to sheet border"
 msgstr "షీట్ సరిహద్దునకు"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Orientation"
 msgstr "పునశ్ఛరణ (~O)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "స్వయంచాలక"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
-#, fuzzy
 msgid  "Portrait"
 msgstr "చిత్రపటం"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
-#, fuzzy
 msgid  "Landscape"
 msgstr "చిత్రపటం"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
-#, fuzzy
 msgid  "Order"
 msgstr "క్రమం"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
-#, fuzzy
 msgid  "left to right, then down"
 msgstr "ఎడమ నుండి కుడి, అప్పడు కిందికి"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
-#, fuzzy
 msgid  "top to bottom, then right"
 msgstr "పై నుండి కిందిక, అప్పుడు కుడికి"
 
@@ -738,116 +711,93 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
-#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<ఎంపిక సాధ్యము కాదు>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "~Undo"
 msgstr " చేసింది రద్దు"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "కోయుట"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "నకలు"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "అతికించు"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "(~D) తొలగించుము"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select ~All"
 msgstr "మొత్తమును ఎంచు"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
-#, fuzzy
 msgid  "~Special Character..."
 msgstr "ప్రత్యేక అక్షరము..."
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
-#, fuzzy
 msgid  "Services"
 msgstr "సేవలు"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
-#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "%PRODUCTNAME మరుగునవుంచు"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
-#, fuzzy
 msgid  "Hide Others"
 msgstr "ఇతరములను మరుగుపరచుము"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
-#, fuzzy
 msgid  "Show All"
 msgstr "అన్నిటిని చూపుము"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
-#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "%PRODUCTNAME నిష్క్రమించుము"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "సరే"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "రద్దు"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "అవును"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "కాదు"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "పునఃప్రయత్నం"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "సహాయము"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "అధికము"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "అధికము"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "పట్టించుకోకు"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "అర్థాంతరంగా  ఆపబడు"

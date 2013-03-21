@@ -417,7 +417,7 @@ msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Euvrit hoc'h anv arveriad hag ho ker tremen evit \"%2\" war %1."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "~Asantiñ"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Emañ an dafariad '${HOST}' o klask kas unan pe veur a gouki.\nStlennoù a-fet rummadoù URL zo eo ar c'houkioù. Diwezhatoc'h, mar bez ret da %PRODUCTNAME kaout un teul e URL o klotañ gant rummad ur c'houki bet degemeret endeo e vo kaset ar stlenn-mañ d'an dafariad. An dra-se a ro tu d'an dafariad da anavezout stad un arload WWW (da sk. ar bevezadoù lakaet e paner ur reizhiad prenañ).\n\nLakaet e vo ar c'houkioù da-heul :\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domani : ${DOMAIN}, Treug : ${PATH}, Kouki : ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Degemer Koukioù"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME en deus enrollet Koukioù evit an dafariad '${HOST}' hag a vo kaset da vare azgoulenn an teul ${PATH}.\nStlennoù o taveiñ ouzh rummoù URL zo eo ar c'houkioù. Diwezhatoc'h, mard azgoulenn %PRODUCTNAME un teul e URL o klotañ gant rumm ur c'houki bet degemeret endeo e vo kaset ar stlenn-mañ d'an dafariad. An dra-se a ro tu d'an dafariadoù da anavezout stad un arload WWW (da sk. an traezennoù lakaet e paner ur reizhiad prenañ).\n\nAr c'houkioù da-heul a vo lec'hiet : \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domani : ${DOMAIN}, Treug : ${PATH}, Kouki : ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"

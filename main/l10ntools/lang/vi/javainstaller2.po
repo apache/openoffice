@@ -153,11 +153,11 @@ msgstr "Tạo thư mục mới"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "Thư mục « ${DIR} » không tồn tại.\nBạn có muốn tạo nó ngay bây giờ không?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Thư mục « ${DIR} » không tồn tại.\nBạn có muốn tạo nó ngay bây giờ, hoặc chọn thư mục khác?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -261,7 +261,7 @@ msgstr "Để tiếp tục, nhắp 'Tiếp'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Ghi chú : Tiến trình cài đặt này không cần quyền root. Do đó, sẽ có một số tính năng bị hạn chế (không thể cài đặt môi trường thực thi Java (JRE), không thể hợp nhất với hệ thống).\nMuốn sử dụng chức năng đầy đủ thì nhắp nút 'Thôi' và thay đổi quyền hạn thành quyền người chủ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -433,7 +433,7 @@ msgstr "Đang phân tích..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "Đang phân tích cơ sở dữ liệu...\nHãy đợi một chút."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

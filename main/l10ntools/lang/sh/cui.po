@@ -149,7 +149,7 @@ msgstr "Sačuvaj podešavanje tastature"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.String.Text
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "Podešavanje"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.String.Text
 msgid  "My Macros"
@@ -697,7 +697,7 @@ msgstr "Brisanje..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "Napomena:\nZa najbolji kvalitet prikaza veličina ikonica bi trebala da bude 16×16 piksela. Ikonice druge veličine će biti razvučene."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -705,7 +705,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
-msgstr ""
+msgstr "Navedene datoteke ne mogu biti uvezene.\nFormat datoteka ne može da bude protumačen."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -717,7 +717,7 @@ msgstr "Želite li da obrišete sliku?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "Ikonica %ICONNAME se već nalazi u listi.\nŽelite li da zamenite postojeću ikonicu?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1577,7 +1577,7 @@ msgstr "Potvrdite lozinku"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "Važno: Nakon određivanja lozinke dokument će se jedino otvarati uz "
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FixedLine.Text
 msgid  "File sharing password"
@@ -1885,7 +1885,7 @@ msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
 msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
-msgstr ""
+msgstr "nije dostupno za proveru pisanja\nProverite instalaciju i instalirajte željeni jezik\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -2945,7 +2945,7 @@ msgstr "Vrsta"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
 msgid  "~And"
-msgstr ""
+msgstr "I"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 msgid  "~Or"
@@ -3057,7 +3057,7 @@ msgstr "Sigurnost makroa..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "Isključivanje funkcije za trajno čuvanje lozinki briše listu sačuvanih lozinki i poništava glavnu lozinku.\n\nŽelite li da obrišete spisak lozinki i poništite glavnu lozinku?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
@@ -3065,7 +3065,7 @@ msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Imajte na umu da zajedno sa javom\nisključujete i javaskript.\n\nDa li i dalje želite da isključite javu?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3613,15 +3613,15 @@ msgstr "Napravi vezu sa bazom"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\\n$file$\\ndoes not exist."
-msgstr ""
+msgstr "Datoteka\n$file$\nne postoji."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\\n$file$\\ndoes not exist in the local file system."
-msgstr ""
+msgstr "Datoteka\n$file$\nne postoji na lokalnom sistemu datoteka."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
-msgstr ""
+msgstr "Naziv '$file$' je u upotrebi za drugu bazu.\nIzaberite drugo ime."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -4329,7 +4329,7 @@ msgstr "Može doći do gubitka podataka ako ne koristite prošireni ODF 1.2."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr "Korišćenje „%1“ kao podrazumevanog formata datoteke može dovesti do gubitka podataka.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4341,7 +4341,7 @@ msgstr "Projekat poboljšanja"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "Pozivamo vas da se priključite programu poboljšanja paketa %PRODUCTNAME kako bismo unapredili kvalitet paketa %PRODUCTNAME.\n\nAko želite da učestvujete u programu, prikupljaćemo anonimnu statistiku o načinu korišćenja paketa %PRODUCTNAME. Podaci će se koristiti za ispitivanje obrazaca pri korišćenju.\n\nProjekat poboljšanja paketa %PRODUCTNAME neće skupljati nikakve podatke o vama niti sadržaj dokumenata."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
@@ -5033,7 +5033,7 @@ msgstr "~Zatvori"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "Navedeno ime već postoji.\nUnesite drugo."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 msgid  "Do you want to change the '%1' dictionary language?"
@@ -6241,7 +6241,7 @@ msgstr "~Spoljašnji"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
 msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "Podešavanja za margine su van oblasti za štampu.\n\nIpak želite da koristite ova podešavanja?"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -7085,7 +7085,7 @@ msgstr "Dodeljeni makro"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
 msgid  "~Existing macros\\n"
-msgstr ""
+msgstr "Postoj~eći makroi u:\n"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 msgid  "~Assign"
@@ -7469,7 +7469,7 @@ msgstr "Da li želite da obrišete preliv?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
 msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "Preliv je menjan, ali nije sačuvan. \nIzmeni izabrani ili dodaj nov preliv."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 msgid  "Please enter a name for the bitmap:"
@@ -7485,7 +7485,7 @@ msgstr "Da li ste sigurni da želite da obrišete bitmapu?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
 msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "Bitmapa je menjana, ali nije sačuvana. \nIzmeni izabranu bitmapu ili dodaj novu."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 msgid  "Please enter a name for the line style:"
@@ -7497,7 +7497,7 @@ msgstr "Želite li da izbrišete stil linije?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
 msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "Stil linije je menjan, ali nije sačuvan. \nIzmeni izabrani stil linije ili dodaj novi stil."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 msgid  "Please enter a name for the hatching:"
@@ -7509,7 +7509,7 @@ msgstr "Želite li da obrišete šrafiranje?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
 msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "Vrsta šrafiranja je menjana, ali nije sačuvana. \nIzmenite izabranu vrstu ili dodajte novu vrstu šrafiranja."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 msgid  "Modify"
@@ -7529,7 +7529,7 @@ msgstr "Želite li da obrišete boju?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
 msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
-msgstr ""
+msgstr "Boja je menjana, ali nije sačuvana.\nIzmenite izabranu ili dodajte novu boju."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 msgid  "Table"
@@ -7549,7 +7549,7 @@ msgstr "Lista je promenjena, ali nije sačuvana. Da li sada želite da sačuvate
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name you have entered already exists. \\nPlease choose another name."
-msgstr ""
+msgstr "Ime koje ste uneli već postoji. \nIzaberite drugo ime."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 msgid  "Please enter a name for the new arrowhead:"
@@ -7561,7 +7561,7 @@ msgstr "Želite li da obrišete vrh strelice?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
 msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "Vrh strelice je promenjen, ali nije sačuvan.\nŽelite li da sačuvate vrh strelice?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 msgid  "Indents and Spacing"

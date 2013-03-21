@@ -601,7 +601,7 @@ msgstr "Não é possível abrir o diretório"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \\nOverwrite ?"
-msgstr ""
+msgstr "Este arquivo já existe.\nDeseja substituí-lo ?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 msgid  "Up One Level"
@@ -1505,7 +1505,7 @@ msgstr "A figura precisa cerca de %1 KB de memória."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
 msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
-msgstr ""
+msgstr "A figura precisa cerca de %1 KB de memória.\n o tamanho do arquivo é %2 KB."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
 msgid  "The file size is %1 KB."
@@ -1689,19 +1689,19 @@ msgstr "Banco de dados"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "Modelo de Planilha do %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "Modelo de Desenho do %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "Modelo de Apresentação do %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "Modelo de documento de texto do %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
 msgid  "Local drive"
@@ -1733,31 +1733,31 @@ msgstr "Apresentação do MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "Fórmula %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "Gráfico %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "Desenho %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "Planilha %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "Apresentação %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "Documento de texto %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "Documento mestre %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
 msgid  "MathML Document"

@@ -73,7 +73,7 @@ msgstr "Gagnaveitan var ekki vistuð. Notaðu XStorable skilin til að vista gag
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Uppgefin skipun er ekki SELECT setning.\nAðeins fyrirspurnir eru leyfðar."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "Það eru töflur í gagnagrunninum sem bera sömu nöfn og fyrirspurnir
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "SQL skipunin sem veldur þessari villu er:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,11 +221,11 @@ msgstr "Fann ekki skjalið '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Gat ekki vistað skjalið í $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
-msgstr ""
+msgstr "Villa við að tengjast gagnagjafanum '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 msgid  "There exists no folder named \"$folder$\"."
@@ -429,7 +429,7 @@ msgstr "Innslegið skráarnafn eða mappa er ekki til."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Ekki tókst að búa til neinn nýjan gagnagrunn.\nVinsamlega athugaðu Adabas D uppsetninguna, sérstaklega breyturnar \"DBROOT\" og \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -493,7 +493,7 @@ msgstr "Velkominn í hjálpargluggann fyrir innflutning á gagnagrunnsfjölvum"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Þessi gluggi mun hjálpa þér í gegnum að flytja inn fjölva.\n\nEftir að því er lokið, munu allir fjölvar sem voru áður fastir í eyðublöðum og skýrslum í núverandi gagnagrunnskjali verða fluttir í skjalið sjálft. Á meðan þessu stendur, munu forritasöfn verða endurnefnd eftir þörfum.\n\nEf eyðublöðin og skýrslurnar innihalda vísanir í fjölvanna, verður reynt að lagfæra það ef hægt er.\n\nÁður en flutningur hefst, verður að loka öllum eyðublöðum, skýrslum, fyrrispurnum, og töflum. Ýttu á 'Áfram' til að halda áfram að framkvæma."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -909,7 +909,7 @@ msgstr "Skjalið inniheldur eyðublöð eða skýrslur með innbyggðum fjölvum
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Fjölvar ættu að vera innbyggðir í skjalið sjálft.\n\nÞú getur haldið áfram að nota skjalið eins og áður, en mælt er með að þú yfirfærir fjölvana. Valmyndin 'Verkfæri / Yfirfæra fjölva ...' getur hjálpað þér með þetta atriði.\n\nAthugaðu að þú munt ekki geta sett innbyggða fjölva í skjalið sjálft fyrr en þessari yfirfærslu er lokið. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -1621,7 +1621,7 @@ msgstr "Lykilorðs er krafist til að tengjast við gagnagjafann \"$name$\"."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Mappan\n\n$path$\n\ner ekki til. Ætti að búa hana til?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1809,7 +1809,7 @@ msgstr "Gagnagrunnur"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Á eftirfarandi síðum, geturðu breytt ítarlegum stillingum fyrir tenginguna.\n\nNýju stillingarnar munu yfirskrifa eldri stillingar."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1825,7 +1825,7 @@ msgstr "Gat ekki hlaðið inn forritssafn #lib# eða það er skemmt. Val á ODB
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Þessi tegund af gagnagrunni er ekki studdur á þessu stýrikerfi.\nÞú getur breytt stillingum, en þú munt líklega ekki geta tengst við gagnagrunninn."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -2389,7 +2389,7 @@ msgstr "Setja upp tengingu við MySQL gagnagrunn"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Þú getur tengst við MySQL gagnagrunn með því að nota annaðhvort ODBC eða JDBC.\nHafðu samband við kerfisstjóra ef þú ert ekki viss um eftirfarandi stillingar."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "Setja upp tengingu við MySQL gagnagrunn með JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Sláðu inn nauðsynlegar upplýsingar til að tengjast við MySQL gagnagrunn með JDBC. Athugaðu að JDBC rekill þarf að vera uppsettur í kerfinu og skráður í %PRODUCTNAME.\nHafðu samband við kerfisstjóra ef þú ert ekki viss um eftirfarandi stillingar."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2517,7 +2517,7 @@ msgstr "Setja upp tengingu við LDAP nafnaskrá"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vinsamlega sláðu inn nauðsynlegar upplýsingar til að tengjast við LDAP nafnaskrá.\nHafðu samband við kerfisstjóra ef þú ert ekki viss um eftirfarandi stillingar."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "Setja upp tengingu við Adabas D gagnagrunn"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Sláðu inn nafnið á Adabas D gagnagrunninum sem þú vilt tengjast við.\nSmelltu á 'Velja...' til að velja Adabas D gagnagrunn sem er þegar skráður í %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "Setja upp tengingu við Adabas D gagnagrunn"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Sláðu inn vefslóðina fyrir ADO gagnagjafann sem þú vilt tengjast við.\nSmelltu á 'Velja' til að stilla sérsniðnar stillingar.\nHafðu samband við kerfisstjóra ef þú ert ekki viss um eftirfarandi stillingar."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "Setja upp tengingu við ODBC gagnagrunn"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Sláðu inn nafnið á ODBC gagnagrunninum sem þú vilt tengjast við.\nSmelltu á 'Velja...' til að velja ODBC gagnagrunn sem er þegar skráður í %PRODUCTNAME.\nHafðu samband við kerfisstjóra ef þú ert ekki viss um eftirfarandi stillingar."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "Setja upp tengingu við JDBC gagnagrunn"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Sláðu inn nauðsynlegar upplýsingar til að tengjast við JDBC gagnagrunn.\nHafðu samband við kerfisstjóra ef þú ert ekki viss um eftirfarandi stillingar."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "~Oracle JDBC klasarekill"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Sláðu inn nauðsynlegar upplýsingar til að tengjast við Oracle gagnagrunn. Athugaðu að JDBC rekill þarf að vera uppsettur í kerfinu og skráður í %PRODUCTNAME.\nHafðu samband við kerfisstjóra ef þú ert ekki viss um eftirfarandi stillingar."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "Setja upp tengingu við töflureikni"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Veldu 'Velja...' til að velja %PRODUCTNAME töflureikni eða Microsoft Excel töflureikni.\n%PRODUCTNAME mun opna þessa skrá í lesham."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2813,7 +2813,7 @@ msgstr "Aðvaranir komu upp þegar tengst var við gagnagjafann. Ýttu á \"$but
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Heitið '$#$' er þegar til.\nSettu inn eitthvað annað nafn."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
@@ -2829,7 +2829,7 @@ msgstr "Sníða tegund"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Eftirfarandi svið eru þegar skilgreind sem aðallyklar:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 msgid  "Assign columns"
@@ -2881,11 +2881,11 @@ msgstr "Aðallykill"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Upprunatafla: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Úttakstafla: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 msgid  "~All"
@@ -3213,15 +3213,15 @@ msgstr " - %PRODUCTNAME Base: Skoða hönnun"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ var breytt.\nViltu vista breytingar?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ er byggt á SQL skipun sem ekki var hægt að þátta."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ verður opnað í SQL sýn."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
 msgid  "The table view"
@@ -3273,7 +3273,7 @@ msgstr "Þegar þý eyðir þessari töflu, verður öllum tengdum töfluvenslum
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Gagnagrunnurinn gat ekki myndað töfluvenslin. Kannski eru tilvísunarlyklar (foreign keys) ekki studdir í þessari tegund töflu.\nSkoðaðu hjálparskjölun gagnagrunnsins."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
@@ -3421,11 +3421,11 @@ msgstr "Útlitsdæmi"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Veldu gildi sem á að birtast sjálfgefið í öllum nýjum færslum.\nEf sviðið á ekki að vera með sjálfgefið gildi, veldu þá tóma strenginn."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Sláðu inn sjálfgefið gildi fyrir þetta svið.\n\nÞegar þú slærð svo inn seinna gildi í þessa töflu, verður strengurinn notaður fyrir hverja nýja færslu fyrir þetta svið. Því ætti það að, passa við sniðið á svæðinu sem þarf að slá hér fyrir neðan."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
@@ -3441,7 +3441,7 @@ msgstr "Sláðu inn tölusnið."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Ákveddu hvaða stærð á að vera á þessu sviði.\n\nEf þetta er tölusvið, þá er stærðin hámarkslengd tölunnar, ef þetta er gagnasvæði, þá er stærðin hámarksstærð gagnanna.\nGildið verður leiðrétt sjálfkrafa þegar það fer fram úr hámarkinu fyrir gagnagrunninn."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3457,7 +3457,7 @@ msgstr "Hérna skilgreinir þú sniðið á úttakinu á gögnunum."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Veldu hvort þetta svæði eigi að innihalda sjálfvirkt hækkandi gildi.\n\nEkki er hægt að slá gögn inn í svæði af þessari tegund. Sjálfvirku gildi verður sett inn sjálfkrafa (út frá hækkuðu gildi frá fyrri færslu)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
@@ -3513,7 +3513,7 @@ msgstr "Enginn aðallykill"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "Einkvæmur vísir eða aðallykill er nauðsynlegur í þessum gagnagrunni til að hægt sé að bera kennsl á gagnafærslur.\nÞú getur ekki slegið inn gögn fyrr en annað af þessum skilyrðum er uppfyllt.\n\nÆtti að búa til aðallykil núna?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
@@ -3541,11 +3541,11 @@ msgstr "~Sjálfvirk hækkandi skipun"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Sláðu inn SQL skipun fyrir sjálfvirkt hækkandi gildið.\n\nÞessi skipun mun verða færð beint yfir í gagnagrunninn þegar taflan er búinn til."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Ekki var hægt að ná í upplýsingar um tegundir frá gagnagrunninum.\nTöfluhönnunarsýnin er ekki aðgengileg í þessum gagnagjafa."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"

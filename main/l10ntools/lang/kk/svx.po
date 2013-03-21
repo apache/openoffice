@@ -1277,7 +1277,7 @@ msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "Алдын ала атап атлған құжаттарды қалпына келтiру процессiн бастау үшiн  'Басын қалпына келтiру' басыңыз.\n\nӨтiнемiн, апатқа келтiрген мәселенi  шешуге көмектеңiз. Сiз соған %PRODUCTNAME  құрған қателiк мәлемдеменi жiберу керексiз.Мәлемдеменiн қателiк сайманын ашу үшiн 'Содан соң'-ды басыңыз"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1289,7 +1289,7 @@ msgstr "Құжаттардың қалпына келтiру дәрежесi"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "Құжаттын Аты/Дәрежесi"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1341,7 +1341,7 @@ msgstr "Сiз  %PRODUCTNAME құжатты қалпына келтiрунен б
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "Егер сiз 'Сақтау'-ды шертсеңiз еске алынған құжаттар алдын ала аталып өтiлген бумада құтқарылады. Құжаттарды сақтамай  шебердi жабу үшiн 'Болдырмау'-ды шерту керек"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1365,7 +1365,7 @@ msgstr "Қош келiпсiздер %PRODUCTNAME %PRODUCTVERSION хабарын�
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "Бұл қате жайлы ақпарат саймандар жиынтығы %PRODUCTNAME жұмысы және Sun Microsystems оны жаңа нұсқасын жақсарту үшiн.\n\nБұл оңай - мәлiмдеменi өзiңiздiң бөлiңiзге  ешқандай әрекетсiз келесi сұхбатқа 'Жiберу' шерту арқылы жiберiңiз, немесе сiз қысқаша қатенiң қалай кездескенiн сипаттап содан соң 'Жiберу' басыңыз. Егерде сiз мәлiмдеменi көргiңiз келсе  'Мәлiмдеме көру' пернесiн басыңыз. Егерде сiз 'Жiбермеу' шертсеңiз ешқандай деректер жiберiлмейдi.\n\nТапсырушы Құпиясы\nЖиналған ақпарат құрамында деректер бар %PRODUCTNAME %PRODUCTVERSION үшiн шектелгенБасқа құпия кiлт және құжаттар мазмұны жиналмаған.\n\nАқпарат тек қана %PRODUCTNAME сапасын жақсарту үшiн және басқалармен бөлiспейдi. Көбiрек ақпарат алу үшiн Sun Microsystems' құпия полициясы, http://www.sun.com/privacy/ көрiңiз."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 msgid  "< ~Back"
@@ -1401,7 +1401,7 @@ msgstr "~Параметрлер..."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "Осы есеп туралы мен  Sun Microsystems-ге менмен байланысуға рұқсат берем."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 msgid  "~Please enter your e-mail address"
@@ -1449,7 +1449,7 @@ msgstr "~Порт"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME қатесi жайлыф мәлiмет сайманы қате жайлы мәлiметтi жiберу үшiн Интернетке қосылуды қажет етедi. \n Компаниялар өте жиi прокси серверiн жүйелiк экран бiрiктiруде желiнi сақтандыру үшiн қолданылады.\nЕгерде сiздiң жағдайыңызда бұны қолданса, сiз мекен-жай мен портты өзiңiздiң серверiңiзге икемдеуге мiндеттiсiз\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -3393,7 +3393,7 @@ msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "Контур өзгерiтiлген.\nӨзгерiстi сақтайын ба?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
@@ -3401,7 +3401,7 @@ msgstr "Жаңа контурды құрайын ба?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr "Жаңа жұмыс аймақтын орнатуы, контурдың жоюына келтiредi.\nЕш нәрсеге қарамай; жалғастырайын ба? "
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -4377,7 +4377,7 @@ msgstr " '#' өрiске үшiн деректердiн енгiзуiн талап
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "Жазба бұрынан бар едi.\nБасқа атты таңдаңыз "
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4457,7 +4457,7 @@ msgstr "# жазбалар жойылады."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "Егер Сiз Иә батырманы бассаңыз, онда операцияны болдырмауға мүмкiн болмайды! Осыған қарамай жалғастырацын ба?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -5465,11 +5465,11 @@ msgstr "Тақырыптын дұрыс емес атауы!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "Сiз осы нысанды жойясыз ба?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "Сiз осы тақырыпты жойясыз ба?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5501,7 +5501,7 @@ msgstr "Байланысқан файлды жойяын ба?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "Файлды ашуға мүмкiн емес. \nБасқа iздеу жолын берейiн ба? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5513,7 +5513,7 @@ msgstr "~Ұйымдастырушы..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "Тақырыптын осындай аты бұрынан бар едi. \nБасқа атты таңдаңыз."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -9909,11 +9909,11 @@ msgstr "~Жою"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "~Дәстүрлiк қытайшадан қарапайым қытайшаға "
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "~Қарапайым қытайшадан дәстүрлi қытайшаға"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "~Дәстүрлiк қытайшадан қарапайым қытайшаға "
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "~Қарапайым қытайшадан дәстүрлi қытайшаға"

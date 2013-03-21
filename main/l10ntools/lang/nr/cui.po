@@ -3000,8 +3000,9 @@ msgid  "Type"
 msgstr "Soort"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RadioButton.Text
+#, fuzzy
 msgid  "~And"
-msgstr ""
+msgstr "En"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
 #, fuzzy
@@ -3137,16 +3138,18 @@ msgid  "Macro Security..."
 msgstr "Makrosekuriteit..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
+#, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "As u die funksie om wagwoorde te stoor, deaktiveer, skrap dit die lys wagwoorde wat gestoor is, en dit laai die meesterwagwoord terug.\n\nIs u seker u wil die wagwoordlys skrap en die meesterwagwoord teruglaai?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Let asseblief daarop dat u met Java\n Javascript ook deaktiveer.\n\nWil u nogtans Java deaktiveer?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -4571,8 +4574,9 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "As u nie ODF 1.2 Extended gebruik nie, kan inligting verlore gaan."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Using \"%1\" as default file format may cause information loss.\\n"
-msgstr ""
+msgstr "Gebruik van \"%1\" as verstek lêerformaat kan tot verlies van inligting lei.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -4585,8 +4589,9 @@ msgid  "Improvement Program"
 msgstr "Verbeteringsprogram"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
+#, fuzzy
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "Ons nooi u uit om by ons %PRODUCTNAME-verbeteringsprogram aan te sluit om die gehalte van %PRODUCTNAME te optimeer.\n\nAs u gewillig is om deel te neem, sal ons anonieme statistiek versamel oor hoe u %PRODUCTNAME gebruik. Die data word gebruik om gebruikspatrone te identifiseer.\n\nDie %PRODUCTNAME-verbeteringsprogram sal nie enige persoonlike data of dokumentinhoud versamel nie."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5358,8 +5363,9 @@ msgid  "~Close"
 msgstr "~Sluit"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
+#, fuzzy
 msgid  "The specified name already exists.\\nPlease enter a new name."
-msgstr ""
+msgstr "Die gespesifiseerde naam bestaan reeds.\nTik asseblief 'n nuwe naam."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy

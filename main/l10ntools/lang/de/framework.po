@@ -137,7 +137,7 @@ msgstr "Wiederholen"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME konnte wichtige interne Informationen nicht speichern, da im folgenden Pfad nicht genügend freier Speicherplatz zur Verfügung steht:\n%PATH\n\nSie können Ihre Arbeit mit %PRODUCTNAME erst fortsetzen, wenn sie genügend freien Speicherplatz zur Verfügung gestellt haben.\n\nBetätigen Sie die Schaltfläche 'Wiederholen', nachdem Sie mehr freien Speicher zur Verfügung gestellt haben, um das Speichern der Daten zu wiederholen.\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "~Wiederherstellen"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "Während des Ladens der Einstellungen für die Benutzeroberfläche ist ein Fehler aufgetreten. Die Anwendung wird beendet.\nBitte versuchen Sie, die Anwendung neu zu installieren."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "Während des Ladens der Einstellungen für die Benutzeroberfläche ist ein Fehler aufgetreten. Die Anwendung wird beendet.\nBitte versuchen Sie, Ihre Einstellungen für diese Anwendung zu löschen."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "Während des Ladens der Einstellungen für die Benutzeroberfläche ist ein Fehler aufgetreten. Die Anwendung wird beendet.\nBitte versuchen Sie zunächst, Ihre Einstellungen für diese Anwendung zu löschen oder installieren Sie die Anwendung neu."
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

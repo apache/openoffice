@@ -445,7 +445,7 @@ msgstr "A sablont a(z) <wizard_name> hozta létre. Dátum: <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "A tündér nem indítható el, mert a szükséges fájlok nem találhatóak meg.\nAz „Eszközök - Beállítások - %PRODUCTNAME - Útvonalak” helyen kattintson az „Alapértelmezett” gombra. Így az útvonal-beállítások az alapértelmezett értékekre állnak vissza. Ezek után futtassa a tündért még egyszer."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "Az űrlap ~mezői"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "A bináris mezők mindig fel vannak sorolva és kiválaszthatók a bal oldali listában.\nHa lehetséges, képként vannak értelmezve."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Az alűrlap egy olyan űrlap, amely egy másik űrlapba van beillesztve.\nAz alűrlapot olyan táblák vagy lekérdezések adatainak megjelenítéséhez használhatja, amelyek egy a többhöz típusú függőségi viszonyban vannak."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Mezők az űrlapon"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "A(z) „<FIELDNAME1>” mező és a(z) „<FIELDNAME2>” mező összekapcsolása kétszer került kiválasztásra.\nAz összekapcsolás csak egyszer alkalmazható."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Űrlap nevének beállítása"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Már létezik „%FORMNAME” nevű űrlap.\nVálasszon másik nevet."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "A mező nem adható hozzá, mert a mezők száma elérte az adatbázist�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "A választott „%TABLENAME” táblanév már létezik.\nAdjon meg egy másik nevet."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Webtündér"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "A Webtündér segítségével könnyen közzéteheti dokumentumait az interneten.\n\nA tündér webböngészőben megtekinthető formátumba alakítja a dokumentumot, továbbá elkészíti a dokumentum hivatkozásokkal bővített tartalomjegyzékét. Így a dokumentumon belüli navigáció egyszerűbbé válik. A Webtündér által létrehozott webhely látványterve és elrendezése testreszabható.\n\nAz interneten közzétett dokumentumok frissíthetőek illetve bármikor további dokumentumokat adhat hozzá vagy eltávolíthat dokumentumokat a közzétett dokumentumok közül."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Előnézet"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "A kiválasztott beállítások törölve lesznek.\n\nBiztos benne, hogy törli ezeket a beállításokat? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "A(z) „%FILENAME” FTP-könyvtár nem hozható létre."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "A(z) „%FILENAME” FTP-könyvtár nem létezik.\nLétrehozza a könyvtárat most?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "A(z) „%FILENAME” nevű ZIP-archívum nem hozható létre, mert egy v
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "A(z) „%FILENAME” helyi könyvtár nem hozható létre.\nEllenőrizze az írási jogosultságot."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "A(z) „%FILENAME” helyi könyvtár nem létezik.\nLétrehozza a könyvtárat most?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

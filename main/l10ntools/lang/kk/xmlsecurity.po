@@ -53,19 +53,19 @@ msgstr "Бастапқы күйiне келтiру"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~Өте жоғарлы.\n Тек қана сенiмдi көздерiнен макростарды қосуға рұқсат берiлген. Басқа қолтаңбасы қойылған және қойылмаған барлық макростары рұқсат етiлмеген."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "~Жоғарлы.\n Тек қана сенiмдi көздерiнен макростарды қосуына рұқсат берiлген. Қолтаңба қойылған макростарына рұқсат берiлмеген."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~Орташа.\n Қолтаңба қойылмаған көздерiне макростарды қосуын растату керек."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "Төменгi (ұсынылмайды).\n Макростар растатусыз орындалады. Бұл нұсқаманы барлық ашылған құжаттарыңыз қауiптi болғанына Сiздiң көзіңiз жеткен жағдайларда пайлануызға болады."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -157,7 +157,7 @@ msgstr "Төменде көрсетiлгендерi осы топтамасын�
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr ""
+msgstr "\tҚолтаңбасы қойылған\tЦифрлiк қолтаңбасы берiлген\tМезгiл"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -253,7 +253,7 @@ msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
 msgid  "Field\\tValue"
-msgstr ""
+msgstr "Өрiс\tМаңыз"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"

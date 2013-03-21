@@ -577,91 +577,74 @@ msgid  "~Options..."
 msgstr "~ตัวเลือก..."
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
-#, fuzzy
 msgid  "Select Directory"
 msgstr "เลือกไดเรกทอรี"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
-#, fuzzy
 msgid  "Cannot change to directory"
 msgstr "ไม่สามารถเปลี่ยนไดเรกทอรี"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
-#, fuzzy
 msgid  "Open"
 msgstr "เปิด"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
-#, fuzzy
 msgid  "~File"
 msgstr "แ~ฟ้ม"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
-#, fuzzy
 msgid  "~Directory"
 msgstr "~ไดเรกทอรี"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
-#, fuzzy
 msgid  "File ~type"
 msgstr "~ชนิดแฟ้ม"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
-#, fuzzy
 msgid  "Can't open file"
 msgstr "เปิดแฟ้มไม่ได้"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
-#, fuzzy
 msgid  "Can't open directory"
 msgstr "เปิดไดเรกทอรีไม่ได้"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \\nOverwrite ?"
-msgstr ""
+msgstr "มีแฟ้มนี้อยู่แล้ว\nเขียนทับหรือไม่ ?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
-#, fuzzy
 msgid  "Up One Level"
 msgstr "ขึ้นหนึ่งไปขั้น"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "บันทึก"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
-#, fuzzy
 msgid  "D~rive"
 msgstr "ไ~ดรฟ์"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
-#, fuzzy
 msgid  "User Directory"
 msgstr "ไดเรกทอรีของผู้ใช้"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
-#, fuzzy
 msgid  "Create Directory"
 msgstr "สร้างไดเรกทอรี"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
-#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
 msgstr "คุณต้องการให้สร้างไดเรกทอรี %s หรือไม่ ?"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates: Address Book Assignment"
 msgstr "ต้นแบบ: การกำหนดสมุดที่อยู่"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
-#, fuzzy
 msgid  "Address Book Source"
 msgstr "แหล่งสมุดที่อยู่"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "แหล่งข้อมูล"
 
@@ -670,502 +653,402 @@ msgid  "~Address Data Source..."
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
-#, fuzzy
 msgid  "Table"
 msgstr "ตาราง"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
-#, fuzzy
 msgid  "Field assignment"
 msgstr "การกำหนดเขตข้อมูล"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<ไม่มี>"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "บริษัท"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "แผนก"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
-#, fuzzy
 msgid  "First name"
 msgstr "ชื่อ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
-#, fuzzy
 msgid  "Last name"
 msgstr "ชื่อสกุล"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "ถนน"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "ประเทศ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
-#, fuzzy
 msgid  "ZIP Code"
 msgstr "รหัสไปรษณีย์"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "เมือง"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "คำนำหน้าชื่อ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "ตำแหน่ง"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
-#, fuzzy
 msgid  "Addr. Form"
 msgstr "แบบฟอร์มที่อยู่"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "ชื่อย่อ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
-#, fuzzy
 msgid  "Complimentary close"
 msgstr "คำลงท้าย"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
-#, fuzzy
 msgid  "Tel: Home"
 msgstr "โทร: บ้าน"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
-#, fuzzy
 msgid  "Tel: Work"
 msgstr "โทร: ที่ทำงาน"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
-#, fuzzy
 msgid  "FAX"
 msgstr "โทรสาร"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
-#, fuzzy
 msgid  "E-mail"
 msgstr "อีเมล"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "บันทึกย่อ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
-#, fuzzy
 msgid  "User 1"
 msgstr "ผู้ใช้ 1"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
-#, fuzzy
 msgid  "User 2"
 msgstr "ผู้ใช้ 2"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
-#, fuzzy
 msgid  "User 3"
 msgstr "ผู้ใช้ 3"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
-#, fuzzy
 msgid  "User 4"
 msgstr "ผู้ใช้ 4"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "รหัส"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "รัฐ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
-#, fuzzy
 msgid  "Tel: Office"
 msgstr "โทร: ที่ทำงาน"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "เพจเจอร์"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
-#, fuzzy
 msgid  "Mobile"
 msgstr "มือถือ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
-#, fuzzy
 msgid  "Tel: Other"
 msgstr "โทร: ที่อื่น "
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ปฏิทิน"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "เชิญ"
 
 #: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
-#, fuzzy
 msgid  "Unformatted text"
 msgstr "ข้อความที่ไม่ถูกรูปแบบ"
 
 #: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "บิตแมป"
 
 #: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
-#, fuzzy
 msgid  "GDI metafile"
 msgstr "GDI metafile"
 
 #: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
-#, fuzzy
 msgid  "Formatted text [RTF]"
 msgstr "Formatted text [RTF]"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing format"
 msgstr "รูปแบบการวาด"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
-#, fuzzy
 msgid  "SVXB (StarView bitmap/animation)"
 msgstr "SVXB (StarView bitmap/animation)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
-#, fuzzy
 msgid  "Status Info from Svx Internal Link"
 msgstr "Status Info from Svx Internal Link"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
-#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (%PRODUCTNAME Link)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
-#, fuzzy
 msgid  "Netscape Bookmark"
 msgstr "Netscape Bookmark"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
-#, fuzzy
 msgid  "Star server format"
 msgstr "รูปแบบเซิร์ฟเวอร์ Star"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
-#, fuzzy
 msgid  "Star object format"
 msgstr "รูปแบบวัตถุ Star"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
-#, fuzzy
 msgid  "Applet object"
 msgstr "วัตถุแอปเพล็ต "
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
-#, fuzzy
 msgid  "Plug-in object"
 msgstr "วัตถุปลั๊กอิน"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
-#, fuzzy
 msgid  "StarWriter 3.0 object"
 msgstr "วัตถุ StarWriter 3.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 object"
 msgstr "วัตถุ StarWriter 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
-#, fuzzy
 msgid  "StarWriter 5.0 object"
 msgstr "วัตถุ StarWriter 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
 msgstr "วัตถุ StarWriter/Web 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
 msgstr "วัตถุ StarWriter/Web 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
 msgstr "วัตถุ StarWriter/Master 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
 msgstr "วัตถุ StarWriter/Master 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
-#, fuzzy
 msgid  "StarDraw object"
 msgstr "วัตถุ StarDraw"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
-#, fuzzy
 msgid  "StarDraw 4.0 object"
 msgstr "วัตถุ StarDraw 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
-#, fuzzy
 msgid  "StarImpress 5.0 object"
 msgstr "วัตถุ StarImpress 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
-#, fuzzy
 msgid  "StarDraw 5.0 object"
 msgstr "วัตถุ StarDraw 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
-#, fuzzy
 msgid  "StarCalc object"
 msgstr "วัตถุ StarCalc"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
-#, fuzzy
 msgid  "StarCalc  4.0 object"
 msgstr "วัตถุ StarCalc  4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
-#, fuzzy
 msgid  "StarCalc 5.0 object"
 msgstr "วัตถุ StarCalc 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
-#, fuzzy
 msgid  "StarChart object"
 msgstr "วัตถุ StarChart "
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
-#, fuzzy
 msgid  "StarChart 4.0 object"
 msgstr "วัตถุ StarChart 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "วัตถุ StarChart 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
-#, fuzzy
 msgid  "StarImage object"
 msgstr "วัตถุ StarImage"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
-#, fuzzy
 msgid  "StarImage 4.0 object"
 msgstr "วัตถุ StarImage 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
-#, fuzzy
 msgid  "StarImage 5.0 object"
 msgstr "วัตถุ StarImage 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
-#, fuzzy
 msgid  "StarMath object"
 msgstr "วัตถุ StarMath"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
-#, fuzzy
 msgid  "StarMath 4.0 object"
 msgstr "วัตถุ StarMath 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
-#, fuzzy
 msgid  "StarMath 5.0 object"
 msgstr "วัตถุ StarMath 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
-#, fuzzy
 msgid  "StarObject Paint object"
 msgstr "วัตถุ StarObject Paint"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
-#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
 msgstr "HTML (HyperText Markup Language)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
-#, fuzzy
 msgid  "HTML format"
 msgstr "รูปแบบ HTML"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
-#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "Biff5 (Microsoft Excel 5.0/95)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
-#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
-#, fuzzy
 msgid  "Sylk"
 msgstr "Sylk"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
-#, fuzzy
 msgid  "DDE link"
 msgstr "ลิงก์ DDE"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
-#, fuzzy
 msgid  "DIF"
 msgstr "DIF"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
-#, fuzzy
 msgid  "Microsoft Word object"
 msgstr "วัตถุ Microsoft Word"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
-#, fuzzy
 msgid  "StarFrameSet object"
 msgstr "วัตถุ StarFrameSet"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
-#, fuzzy
 msgid  "Office document object"
 msgstr "วัตถุเอกสาร Office"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
-#, fuzzy
 msgid  "Notes document info"
 msgstr "บันทึกข้อมูลของเอกสาร"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
-#, fuzzy
 msgid  "Sfx document"
 msgstr "เอกสาร Sfx"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "วัตถุ StarChart 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
-#, fuzzy
 msgid  "Graphic object"
 msgstr "วัตถุกราฟิก"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Writer"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Writer/Web"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Writer/Master"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Draw"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Impress"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Calc"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Chart"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "วัตถุ %PRODUCTNAME 6.0 Math"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
-#, fuzzy
 msgid  "Windows metafile"
 msgstr "Windows metafile"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
-#, fuzzy
 msgid  "Data source object"
 msgstr "วัตถุแหล่งข้อมูล"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
-#, fuzzy
 msgid  "Data source table"
 msgstr "ตารางแหล่งข้อมูล"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
-#, fuzzy
 msgid  "SQL query"
 msgstr "ข้อคำถาม SQL"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "ไดอะล็อก %PRODUCTNAME 6.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "เชื่อมโยง"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
-#, fuzzy
 msgid  "HTML format without comments"
 msgstr "รูปแบบ HTML โดยไม่มีความเห็น"
 
@@ -1761,301 +1644,250 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
-#, fuzzy
 msgid  "Source code"
 msgstr "Source code"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
-#, fuzzy
 msgid  "Bookmark file"
 msgstr "แฟ้มที่คั่น"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "กราฟิก"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
-#, fuzzy
 msgid  "Configuration file"
 msgstr "แฟ้มกำหนดค่า"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
-#, fuzzy
 msgid  "Application"
 msgstr "โปรแกรม"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
-#, fuzzy
 msgid  "Database table"
 msgstr "ตารางฐานข้อมูล"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
-#, fuzzy
 msgid  "System file"
 msgstr "แฟ้มระบบ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
-#, fuzzy
 msgid  "MS Word document"
 msgstr "เอกสาร MS Word "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
-#, fuzzy
 msgid  "Help file"
 msgstr "แฟ้มช่วยเหลือ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "เอกสารอินเทอร์เน็ต"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
-#, fuzzy
 msgid  "Archive file"
 msgstr "แฟ้มเก็บถาวร"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
-#, fuzzy
 msgid  "Log file"
 msgstr "แฟ้มปูมบันทึก"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Database"
 msgstr "แฟ้มฐานข้อมูลของ %PRODUCTNAME "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
 msgstr "เอกสารเค้าโครงหลักของข้อความของ %PRODUCTNAME "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Image"
 msgstr "ภาพของ %PRODUCTNAME "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
-#, fuzzy
 msgid  "Text file"
 msgstr "แฟ้มข้อความ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "ลิงก์"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "แม่แบบของ %PRODUCTNAME"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel document"
 msgstr "เอกสาร MS Excel "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel template"
 msgstr "แม่แบบของ MS Excel "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
-#, fuzzy
 msgid  "Batch file"
 msgstr "แฟ้มลำดับคำสั่ง"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
-#, fuzzy
 msgid  "File"
 msgstr "แฟ้ม"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "โฟลเดอร์"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "เอกสารข้อความ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "ตารางคำนวณ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "งานนำเสนอ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "งานวาด"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "เอกสารอินเทอร์เน็ต"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "Master document"
 msgstr "เอกสารเค้าโครงหลัก"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "สูตร"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
-#, fuzzy
 msgid  "Database"
 msgstr "Database"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "แม่แบบตารางคำนวณของ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "แม่แบบงานวาด %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "แม่แบบงานนำเสนอ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "แม่แบบเอกสารข้อความ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
-#, fuzzy
 msgid  "Local drive"
 msgstr "ไดร์ฟท้องถิ่น"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
-#, fuzzy
 msgid  "Disk drive"
 msgstr "ดิสก์ไดร์ฟ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
-#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "ไดร์ฟ CD-ROM "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
-#, fuzzy
 msgid  "Network connection"
 msgstr "การเชื่อมต่อเครือข่าย"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "เอกสาร MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "แม่แบบ MS PowerPoint "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "แสดง MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "สูตรคำนวณ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "แผนภูมิ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "งานวาด %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "ตารางคำนวณ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "งานนำเสนอ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "เอกสารข้อความ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "เอกสารเค้าโครงหลัก %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
-#, fuzzy
 msgid  "MathML Document"
 msgstr "เอกสาร MathML"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "ฐานข้อมูลของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "งานวาดของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "สูตรคำนวณของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "เอกสารเค้าโครงหลักของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "งานนำเสนอของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "ตารางคำนวณของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "ข้อความของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "แม่แบบตารางคำนวณของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "แม่แบบงานวาดของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "แม่แบบงานนำเสนอของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "แม่แบบข้อความของ OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "%PRODUCTNAME Extension"
 
@@ -2064,7 +1896,6 @@ msgid  "[None]"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
-#, fuzzy
 msgid  "Unknown"
 msgstr "ไม่รู้จัก"
 
@@ -3225,107 +3056,86 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Display IDs"
 msgstr "แสดงไอดี"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "This is the input window"
 msgstr "นี่คือหน้าต่างนำเข้าข้อมูล"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "ถ่ายโอนไปยังเครื่องมือทดสอบ"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show all windows"
 msgstr "แสดงหน้าต่างทั้งหมด"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "แสดงชื่อแบบสั้น (ถ้ามี)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Always show long-name"
 msgstr "แสดงชื่อยาวทุกครั้ง"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
-#, fuzzy
 msgid  "DisplayHID"
 msgstr "DisplayHID"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
-#, fuzzy
 msgid  "Translation"
 msgstr "การแปล"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "แ~ก้ไข"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
-#, fuzzy
 msgid  "Original Text"
 msgstr "ข้อความดั้งเดิม"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "ความคิดเห็น"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
-#, fuzzy
 msgid  "~Comment"
 msgstr "ความ~คิดเห็น"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "เ~ลือก"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "~Restore"
 msgstr "~คืนค่าเดิม"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "~ยอมรับ"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~ถัดไป"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
-#, fuzzy
 msgid  "Inplace Translation"
 msgstr "การแปลแทนที่"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
-#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "การแปลจะสูญหาย ยังต้องการดำเนินการหรือไม่ ?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
-#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "ตัวควบคุมใช้ไม่ได้มานาน ไม่สามารถทำการบันทึกการแปลได้"
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
-#, fuzzy
 msgid  "GPF occurred"
 msgstr "เกิด GPF ขึ้น"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
-#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "HelpID ไม่ตรงกับ UniqueID: "
 
@@ -3338,7 +3148,6 @@ msgid  "Tab Panel Scroll Button, forward"
 msgstr ""
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
-#, fuzzy
 msgid  "Roadmap Skeleton Demo"
 msgstr "เดโมโครงร่างโรดแมป"
 

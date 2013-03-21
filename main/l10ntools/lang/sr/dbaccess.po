@@ -73,7 +73,7 @@ msgstr "Није сачуван извор података. Користите 
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Дата наредба није SELECT израз.\nСамо упити су дозвољени."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "Нека имена табела и упита у базу су иста
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "SQL наредба која је проузроковала грешку:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,11 +221,11 @@ msgstr "Не могу да пронађем документ „$name$“"
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Не могу да сачувам документ на $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
-msgstr ""
+msgstr "Грешка при приступу извору „$name$“:\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 msgid  "There exists no folder named \"$folder$\"."
@@ -429,7 +429,7 @@ msgstr "Наведено име датотеке или директоријум
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Није могуће направити нову базу података.\nПроверите Адабас Д инсталацију, посебно променљиве „DBROOT“ и „DBWORK“."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -493,7 +493,7 @@ msgstr "Добро дошли код помоћника за пренос мак
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Овај помоћник ће вас провести кроз процес преноса макроа.\n\nПо завршетку, сви макрои који су раније били уграђени у обрасце и извештаје тренутног документа базе података ће бити премештени у сам документ. Током процеса, библиотеке ће бити преименоване по потреби.\n\nАко обрасци или извештаји позивају макрое, позиви ће бити прилагођени где год је то могуће.\n\nПре почетка процеса преласка, сви обрасци, извештаји, упити и табеле из документа ће бити затворени. Кликните „Напред“ за почетак."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -909,7 +909,7 @@ msgstr "Документ садржи обрасце или извештаје �
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Макрои треба да буду уграђени у документ базе података.\n\nМожете наставити да користите документ као и раније, ипак препоручљиво је да пренесете макрое. За пренос одаберите „Алатке > Пренеси макрое...“ у менију.\n\nДок не обавите пренос нећете бити у могућности да уградите макрое у документ базе."
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -1542,82 +1542,66 @@ msgid  "<none>"
 msgstr "<ништа>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Опције"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
-#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "Користи SQL92 ограничене називе"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
-#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Додај алиас имена табеле у SELECT изразима"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
-#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Користи речцу AS пре алиаса имена табеле"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
-#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Користи синтаксу спољног спајања „{OJ }“"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
-#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Занемари привилегије из драјвера базе"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
-#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Заменити именоване параметре са „?“"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
-#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Прикажи колоне за верзију (уколико постоје)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Користи име каталога у SELECT изразима"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
-#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Користи име шеме у SELECT изразима"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
-#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Направи индекс са ASC или DESC изразом"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
-#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Заврши линије текста са CR+LF"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
-#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Занемари информације поља валуте"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Провера уноса података за обавезна поља на форми"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
-#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "Користи датум и време сагласно са ОДБЦ-ом"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
-#, fuzzy
 msgid  "Supports primary keys"
 msgstr "Подржава примарни кључ"
 
@@ -1626,27 +1610,22 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Подразумевани"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Mixed"
 msgstr "Мешано"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "MS Access"
 msgstr "MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
-#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Поређење Булових вредности"
 
@@ -1655,77 +1634,62 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Подешавања"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "Обе~збеди направљене вредности"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
-#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "Израз ~аутоповећања"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
-#, fuzzy
 msgid  "~Query of generated values"
 msgstr "~Упит од направљених вредности"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
-#, fuzzy
 msgid  "Generated Values"
 msgstr "Направљене вредности"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
-#, fuzzy
 msgid  "Special Settings"
 msgstr "Посебна подешавања"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
-#, fuzzy
 msgid  "Advanced Settings"
 msgstr "Напредна својства"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Сачувај"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Create New Directory"
 msgstr "Направи нови директоријум"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Један ниво горе"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
-#, fuzzy
 msgid  "File ~name:"
 msgstr "~Име датотеке:"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Сачувај"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
-#, fuzzy
 msgid  "~Path:"
 msgstr "~Путања:"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Фасцикла"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Датотека већ постоји. Заменити је?"
 
@@ -1735,8 +1699,9 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "За повезивање са извором података „$name$“ потребна је лозинка."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+#, fuzzy
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Директоријум\n\n$path$\n\\не постоји. Треба ли да се направи?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1769,37 +1734,30 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "Означите табеле које програми могу да виде."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Database name"
 msgstr "~Назив базе података"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
-#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "Се~рвер / порт"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Server"
 msgstr "~Сервер"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
-#, fuzzy
 msgid  "~Port"
 msgstr "~Порт"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Подразумевано: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
-#, fuzzy
 msgid  "So~cket"
 msgstr "~Прикључак"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
-#, fuzzy
 msgid  "Named p~ipe"
 msgstr "Именована ~цев"
 
@@ -1814,32 +1772,26 @@ msgid  "User administration"
 msgstr "Корисничка администрација"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Табеле"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Упити"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Додај"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Затвори"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "Додај табеле"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Додај упит или табелу"
 
@@ -1874,7 +1826,6 @@ msgid  "Table Format"
 msgstr "Формат табеле"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "Користи каталог за базе засноване на датотекама"
 
@@ -1969,8 +1920,9 @@ msgid  "Database"
 msgstr "База података"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "На следећим страницама можете уредити детаљна подешавања повезивања.\n\nНова подешавања ће избрисати постојећа."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -1988,8 +1940,9 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "Није могуће учитати програмску библиотеку #lib# или је она оштећена. ODBC изабрани извор података није доступан."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Ова врста извора података није подржана на овој платформи.\nДозвољено вам је да мењате подешавања, али вероватно нећете успети да се повежете на базу."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2197,67 +2150,54 @@ msgid  "Insert as"
 msgstr "Уметни као"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Путања до dBASE датотека"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "Путања до текстуалних датотека"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Путања до документа са таблицом"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "Име ODBC извора података на систему"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Име MySQL базе података"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Име Oracle базе података"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Име Adabas D базе података"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
-#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "MS Access база података"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
-#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "Додатна подешавања нису потребна. Да бисте проверили да ли повезивање ради кликните на дугме „%test“."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
-#, fuzzy
 msgid  "Datasource URL"
 msgstr "УРЛ извора података"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Име домаћина"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "Име ~Мозилиног профила"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "Име ~Thunderbird профила"
 
@@ -2292,167 +2232,134 @@ msgid  "Choose a database"
 msgstr "Изабери базу"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "General"
 msgstr "Опште"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Име домаћина"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Провера корисника"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "~Корисничко име"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password required"
 msgstr "Неопходна је лозинка"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
-#, fuzzy
 msgid  "JDBC properties"
 msgstr "JDBC својства"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "Класа ~JDBC драјвера"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test Class"
 msgstr "Тест класа"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
-#, fuzzy
 msgid  "Test Connection"
 msgstr "Тест веза"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
-#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "Није пронађен Adabas D извор података на вашем систему."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
-#, fuzzy
 msgid  "Connection Test"
 msgstr "Тест повезивања"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "Веза је успешно успостављена."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection could not be established."
 msgstr "Веза не може бити успостављена."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
 msgstr "JDBC драјвер је успешно учитан."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "JDBC драјвер се није учитао."
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access file"
 msgstr "MS Access датотека"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "MS Access 2007 датотека"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
-#, fuzzy
 msgid  "Database files"
 msgstr "Датотеке базе података"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
-#, fuzzy
 msgid  "Database sizes"
 msgstr "Величине базе података"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "В~еличина (МБ):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "~Слободан меморијски простор (МБ):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
-#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "~Искоришћеност меморије (у %):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
-#, fuzzy
 msgid  "Database Statistics"
 msgstr "Статистика базе података"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
-#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Садржи системске табеле"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
-#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Садржи информације о трансакцији"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
-#, fuzzy
 msgid  "Contains all data files"
 msgstr "Садржи све датотеке са подацима"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
-#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Укупна величина датотека базе података"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
-#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Тренутно расположив простор пре прављења нове datadev датотеке."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
-#, fuzzy
 msgid  "Currently used memory"
 msgstr "Заузеће меморије"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
-#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "Не могу да прикажем информације јер за одговарајуће системске табеле нема права приступа."
 
@@ -2692,8 +2599,9 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "Подесите повезивање до MySQL базе"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Можете се повезати са MySQL базом користећи ODBC или JDBC.\nПитајте администратора система ако нисте сигурни у вези с подешавањем."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2786,8 +2694,9 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Подеси повезивање до MySQL базе користећи JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Унесите потребне информације за повезивање до MySQL базе користећи JDBC. Обратите пажњу да класа JDBC драјвера мора бити инсталирана на систему и регистрована у пакету %PRODUCTNAME.\nПитајте администратора система ако нисте сигурни у вези са подешавањем."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2850,8 +2759,9 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "Подесите повезивање до LDAP директоријума"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Унесите неопходне информације за повезивање до LDAP директоријума.\nПитајте администратора система ако нисте сигурни у вези са подешавањем."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2869,8 +2779,9 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Подесите повезивање до Adabas D базе"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Унесите име Adabas D базе на коју желите да се повежете.\nКликните „Избор...“ да бисте изабрали Adabas D базу која је већ регистована у %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2878,8 +2789,9 @@ msgid  "Set up a connection to an ADO database"
 msgstr "Подесите повезивање до ADO базе"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Унесите УРЛ ADO извора података на које желите да се повежете.\nКликните на „Избор“ да бисте подесили подешавања која се односе на добављача.\nПитајте администратора система ако нисте сигурни у вези са подешавањем."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2887,8 +2799,9 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "Подесите повезивање до ODBC базе"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Унесите име ODBC базе на коју желите да се повежете.\nКликните „Изабери...“ да бисте изабрали ODBC базу која је већ регистована у %PRODUCTNAME.\nПитајте администратора система ако нисте сигурни у вези са подешавањем."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2896,8 +2809,9 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "Подесите повезивање до JDBC базе"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Унесите неопходне информације за повезивање до JDBC базе.\nПитајте администратора система ако нисте сигурни у вези са подешавањем."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2915,8 +2829,9 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Класа Oracle JDBC ~драјвера"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Унесите неопходне информације за повезивање до Oracle базе. Обратите пажњу на то да класа JDBC драјвера мора бити инсталирана на систему и регистрована у пакету %PRODUCTNAME.\nПитајте администратора система ако нисте сигурни у вези са подешавањем."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2924,8 +2839,9 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Подесите повезивање до таблице"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Кликните „Избор...“ да изаберете %PRODUCTNAME таблицу или Microsoft Excel радну књигу.\n%PRODUCTNAME ће отворити датотеку само за читање."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3101,670 +3017,542 @@ msgid  "Socket"
 msgstr "Прикључак"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
 msgid  "Refresh"
 msgstr "Освежи"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~View Design"
 msgstr "Нови ~поглед"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Нова ~табела"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Аутоматски упит..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Нови ~упит"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "~Edit Query"
 msgstr "~Уреди упит"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Нови упит (~SQL приказ)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Уреди..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
 msgid  "Column ~Width..."
 msgstr "~Ширина колоне..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Помоћник за извештај..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Аутоматски образац..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "Систем"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
-#, fuzzy
 msgid  "Error during creation"
 msgstr "Грешка у току прављења"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Појавила се неочекивана грешка. Операција се не може извршити."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Не могу да отворим документ „$file$“."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
-#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "Табела се не може обрисати јер веза са базом података то не подржава."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~Све"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
-#, fuzzy
 msgid  "Undo:"
 msgstr "Опозови:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
-#, fuzzy
 msgid  "Redo:"
 msgstr "Понови:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
-#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Није пронађен одговарајући тип колоне за колону „#1“."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Датотека „$file$“ не постоји."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "Појавила су се упозорења при повезивању на извор базе података. Кликните „$buttontext$“ да бисте их прегледали."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Име '$#$' већ постоји.\nУнесите друго име."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-#, fuzzy
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "Проширење Sun-ов Конструктор извештаја је неопходно за извештај „$file$“."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Apply columns"
 msgstr "Примени колоне"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Type formatting"
 msgstr "Врста форматирања"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Следећа поља су већ постављена као примарни кључеви:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
-#, fuzzy
 msgid  "Assign columns"
 msgstr "Додели колоне"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Copy RTF Table"
 msgstr "Копирај RTF табелу"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Помоћ"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "~Одустани"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
-#, fuzzy
 msgid  "< ~Back"
 msgstr "< ~Назад"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next>"
 msgstr "~Напред>"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
-#, fuzzy
 msgid  "C~reate"
 msgstr "Н~аправи"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
-#, fuzzy
 msgid  "Existing columns"
 msgstr "Постојеће колоне"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
-#, fuzzy
 msgid  "Column information"
 msgstr "Подаци о колони"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
-#, fuzzy
 msgid  "Automatic type recognition"
 msgstr "Аутоматско препознавање врсте"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
-#, fuzzy
 msgid  "Lines (ma~x)"
 msgstr "Линије (~највише)"
 
 #: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Примарни кључ"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Табела извора: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Табела одредишта: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~Све"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
-#, fuzzy
 msgid  "Non~e"
 msgstr "~Ништа"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
-#, fuzzy
 msgid  "Ta~ble name"
 msgstr "Име та~беле"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Опције"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
-#, fuzzy
 msgid  "De~finition and data"
 msgstr "Де~финиција и подаци"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
-#, fuzzy
 msgid  "Def~inition"
 msgstr "Деф~иниција"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
-#, fuzzy
 msgid  "A~s table view"
 msgstr "К~ао табеларни поглед"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
-#, fuzzy
 msgid  "Append ~data"
 msgstr "Прикачи ~податак"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
-#, fuzzy
 msgid  "Use first ~line as column names"
 msgstr "Називи колона у првом ~реду"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
-#, fuzzy
 msgid  "Crea~te primary key"
 msgstr "На~прави примарни кључ"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Име"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Копирај табелу"
 
 #: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Копирај табелу"
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
-#, fuzzy
 msgid  "This table name is not valid in the current database."
 msgstr "Име табеле није исправно у тренутној бази података."
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
-#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
 msgstr "Изаберите опцију „Прошири податке“ на првој страници да бисте проширили податке у постојећој табели."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
-#, fuzzy
 msgid  "Please change the table name. It is too long."
 msgstr "Промените име табеле. Предугачко је."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Опције"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Врста"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
-#, fuzzy
 msgid  "Inner join"
 msgstr "Унутрашње спајање"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
-#, fuzzy
 msgid  "Left join"
 msgstr "Спајање лево"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
-#, fuzzy
 msgid  "Right join"
 msgstr "Спајање десно"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
-#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Потпуно (спољно) спајање"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
-#, fuzzy
 msgid  "Cross join"
 msgstr "Унакрсно спајање"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
-#, fuzzy
 msgid  "Natural"
 msgstr "Природно"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
-#, fuzzy
 msgid  "Tables involved"
 msgstr "Укључене табеле"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Fields involved"
 msgstr "Укључена поља"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
-#, fuzzy
 msgid  "Join Properties"
 msgstr "Својства спајања"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
-#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "Обратите пажњу на то да неке базе можда не подржавају ову врсту спајања."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
-#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "Укључује само записе за које су садржаји повезаних поља обе табеле идентични."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "Садржи СВЕ записе из табеле „%1“, али само записе из табеле „%2“ где су вредности повезаних поља одговарајуће."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Садржи СВЕ записе из „%1“ и из „%2“."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
-#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Садржи декартов производ за све записе из „%1“ и „%2“."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "Садржи само једну колону за сваки пар једнако именованих колона из „%1“ и „%2“."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
-#, fuzzy
 msgid  "Add Table Window"
 msgstr "Додај прозор табеле"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
-#, fuzzy
 msgid  "Move table window"
 msgstr "Помери прозор табеле"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
-#, fuzzy
 msgid  "Insert Join"
 msgstr "Убаци спајање"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
-#, fuzzy
 msgid  "Delete Join"
 msgstr "Избриши спајање"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
-#, fuzzy
 msgid  "Resize table window"
 msgstr "Промени величину прозора табеле"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Обриши колону"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "Помери колону"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "Додај колону"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Погрешан израз, табела „$name$“ не постоји!"
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Погрешан израз, име поља „$name$“ не постоји!"
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
-#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Упит обухвата више табела (#num#). Изабрана врста базе података, међутим, може да обухвати мање табела по изразу (највише #maxnum#)."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
-#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Обриши прозор табеле"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Уреди опис колоне"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "Прилагоди ширину колоне"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
-#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(непоређано);растуће;опадајуће"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
-#, fuzzy
 msgid  "(no function);Group"
 msgstr "(ништа);Групиши"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
-#, fuzzy
 msgid  "(no table)"
 msgstr "(без табеле)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
-#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "База података подржава само ређање видљивих поља."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Функције"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
-#, fuzzy
 msgid  "Table Name"
 msgstr "Име табеле"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
-#, fuzzy
 msgid  "Alias"
 msgstr "Алијас"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
-#, fuzzy
 msgid  "Distinct Values"
 msgstr "Различите вредности"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
-#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Поље;Алиас;Ређање;Видљиво;Функција;Критеријум;Или;Или"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
-#, fuzzy
 msgid  "There are too many columns."
 msgstr "Постоји превише колона"
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Услов се не може применити на поље [*]"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
-#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "Направљени SQL израз је предугачак."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
-#, fuzzy
 msgid  "Query is too complex"
 msgstr "Упит је превише сложен"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
-#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Ништа није избрано!"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
-#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Превише критеријума за претрагу"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
-#, fuzzy
 msgid  "SQL syntax error"
 msgstr "Грешка у SQL синтакси"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] не може се користити као критеријум за ређање."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
-#, fuzzy
 msgid  "There are too many tables."
 msgstr "Постоји превише табела."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
-#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Израз неће бити примењен при SQL упиту базе података."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
-#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Име поља није нађено или није јединствено."
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
-#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Спајање се не може обрадити."
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Грешка у синтакси SQL израза"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support table views."
 msgstr "База података не подржава погледе на табеле!"
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "Ова база података не подржава измену постојећих погледа на табеле."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
-#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Желите ли yместо тога да направите упит?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created."
 msgstr "Ниједан упит не може да се направи."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "За израду упита одаберите макар једно поље."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
-#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "Одговарајући извор података је обрисан. Дакле, подаци релевантни за тај извор података не могу се сачувати."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Колона „$name$“ није позната."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
-#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Колоне се могу поредити користећи само „=“."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
-#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Морате навести име колоне пре „LIKE“."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
-#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "Не могу да пронађем ову колону. Обратите пажњу на то да база података разликује велика и мала слова."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - %PRODUCTNAME Базе: уређивач упита"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME Базе: уређивач погледа"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "„$object$“ има промене.\nДа ли желите да сачувате измене?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "Не могу да рашчланим SQL наредбу која сачињава „$object$“."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "„$object$“ ће се отворити у SQL приказу."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
-#, fuzzy
 msgid  "The table view"
 msgstr "приказ табеле"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
-#, fuzzy
 msgid  "The query"
 msgstr "упит"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
-#, fuzzy
 msgid  "The SQL statement"
 msgstr "SQL израз"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
-#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "Овај упит не може бити део другог упита јер не даје скуп резултата."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
-#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Параметри активна веза (енгл. ActiveConnection) и име извора података (енгл.DataSourceName) недостају или су погрешни — не могу да покренем графички уређивач упита."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
-#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Ова релација већ постоји. Да ли желите да је уређујете или да направите нову?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Уреди..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Направи..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME База: уређивач релације"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "База података не подржава релације."
 
@@ -3773,272 +3561,222 @@ msgid  "The relation design has been changed.\\nDo you want to save the changes?
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
-#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Када обришете ову табелу, све релације које са на њу односе ће такође бити обрисане. Наставак?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Ова база не може да подржи релацију. Могуће да нису подржани страни кључеви табеле.\nПогледајте документацију базе података."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
-#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Непознати;Текст;Број;Датум и време;Датум;Време;Да/Не;Валута;Белешка;Бројач;Слика;Текст (фиксни);Децимално;Бинарно (фиксно);Бинарно;Велики цео (Big Int);Двострука прецизност;Покретни зарез;Реални;Целобројни;Мали цео (Small Int);Ситни цео (Tiny Int);SQL Null;Објекат;Различити;Структура;Поље;BLOB;CLOB;РЕФ;ОСТАЛО;Бит (фиксни)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Уметни/уклони примарни кључ"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Да"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Не"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "Растуће"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "Опадајуће"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<ништа>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Име поља"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Field Name"
 msgstr "Име поља"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field ~type"
 msgstr "Врста ~поља"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field Type"
 msgstr "Врста поља"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
-#, fuzzy
 msgid  "Field length"
 msgstr "Дужина поља"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Опис"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Column Description"
 msgstr "Опис колоне"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
-#, fuzzy
 msgid  "Input required"
 msgstr "Потребан унос"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
-#, fuzzy
 msgid  "~AutoValue"
 msgstr "~Autoматска вредност"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Field Properties"
 msgstr "Својства поља"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "Опште"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "Опис:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Table properties"
 msgstr "Својства табеле"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
-#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Текст који сте унели није елемент листе. "
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
-#, fuzzy
 msgid  "Insert Rows"
 msgstr "Уметни редове"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Примарни кључ"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
-#, fuzzy
 msgid  "Modify cell"
 msgstr "Измена ћелије"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "Обриши ред"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
-#, fuzzy
 msgid  "Modify field type"
 msgstr "Измени врсту поља"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "Уметни ред"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert new row"
 msgstr "Уметни нови ред"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Убаци/уклони примарни кључ"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
-#, fuzzy
 msgid  "~Default value"
 msgstr "~Подразумевана вредност"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
-#, fuzzy
 msgid  "~Entry required"
 msgstr "~Потребан је унос"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~Дужина"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Врста"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~Дужина"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
-#, fuzzy
 msgid  "Decimal ~places"
 msgstr "Децимална ~места"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
-#, fuzzy
 msgid  "Format example"
 msgstr "Пример формата"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Одредите подразумевану вредност за све нове записе.\nАко поље нема подразумевану вредност, одредите празну ниску."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Унесите подразумевану вредност за ово поље.\n\nКада касније унесете податке у табелу, ова линија ће бити коришћена у сваком новом запису за изабрано поље. Зато би требало да одговара формату ћелије која треба да се унесе испод."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
-#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "Активирај ову опцију уколико поље не садржи NULL вредност, нпр. корисник мора увек унети податке."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Унесите максималну дозвољену дужину текста."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "Enter the number format."
 msgstr "Унесите формат броја."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Одредите колику дужину податак може да има у овом пољу.\n\nАко је поље децимално онда је навећа дужина број који се уноси, а ако је бинарно поље онда је дужина блока податка.\nВредност ће бити правилно исправљена ако се премаши максимум за ову базу."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
-#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Одредите број децималних места дозвољених у овом пољу"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
-#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "Овде се види како ће се подаци приказати у тренутном формату (користите тастер са десне стране да бисте променили формат)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
-#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Одредите излазни формат података."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Изаберите да ли ово поље треба да само повећава своју вредност.\n\nУ ову врсту поља не можете унети податке. Сваком новом запису ће самостално бити додата вредност (увећана за један у односу на вредност у претходном запису)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "Не могу да сачувам табелу јер је име колоне „$column$“ додељено два пута."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "Колона „$column$“ припада примарном кључу. Уколико се колона обрише, примарни кључ ће такође бити обрисан. Желите ли заиста да наставите?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
-#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "Утиче на примарни кључ"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Колона"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
-#, fuzzy
 msgid  "Continue anyway?"
 msgstr "Наставити?"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-#, fuzzy
 msgid  "Warning!"
 msgstr "Упозорење!"
 
@@ -4051,12 +3789,10 @@ msgid  "The connection to the database was lost! The table design can only be us
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
-#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "Табела се не може сачувати због проблема приликом повезивања са базом."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
-#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Филтер табеле се не може подесити јер је извор података обрисан."
 
@@ -4065,133 +3801,109 @@ msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo yo
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
-#, fuzzy
 msgid  "No primary key"
 msgstr "Нема примарног кључа"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "Јединствени индекс примарног кључа је потребан за идентификацију записа податка у овој бази.\nУ ову табелу податке можете унети само ако је један од ова два структурална услова испуњен.\n\nДа ли би сада требало направити примарни кључ?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Базе: уређивач табеле"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "Није могуће изменити колону „$column$“. Да ли уместо тога обрисати колону и затим додати нови формат?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
-#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Грешка при чувању структуре табеле"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
-#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Не могу да обришем колону $column$."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
-#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "Покушавате да обришете све колоне у табели. Табела не може да постоји без колона. Да ли треба обрисати табелу из базе? Ако не треба, табела ће остати неизмењена."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
-#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Израз ~самоповећања"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Унесите SQL израз за поље које само повећава своју вредност.\n\nОвај израз ће бити директно пребачен у базу када се направи табела."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Из базе није могуће очитати информације о типовима. Уређивање\nтабеле у графичком режиму није доступно за овај извор података."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "change field name"
 msgstr "промени име поља"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "change field type"
 msgstr "промени врсту поља"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "change field description"
 msgstr "промени опис поља"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "change field attribute"
 msgstr "промени атрибут поља"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Запамти лозинку до краја сесије"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~Запамти лозинку"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Циљна база података не подржава погледе."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Циљна база не подржава примарне кључеве."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
-#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "Опис приступа података није пронаћен или опис података приступа није у могућности да достави све потребне информације."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
-#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Тренутно су подржане само табеле и упити."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
-#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Скуп резултата извора за копирање мора да подржава обележиваче."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "На позицији $pos$ није подржана изворна врста колона ($type$)."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
-#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Илегалан број иницијализационих параметара."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
-#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Грешка током иницијализације."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
-#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "Неподржана поставка у дескриптору копије извора: $name$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
-#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "За копирање упита конекција мора да подржи враћање упита."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
-#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "Задата обрада интеракције није исправна."

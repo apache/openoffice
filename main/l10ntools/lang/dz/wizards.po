@@ -445,7 +445,7 @@ msgstr "བརྒྱུད་དེ་གསར་བསྐྲུན་འབད
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "ཡིག་སྣོད་གཙོ་ཅན་ཚུ་མ་ཐོབ་ལས་ཝི་ཛརཌི་འདི་གཡོག་བཀོལ་འབད་མི་བཏུབ་པས།\nལག་ཆས་- གདམ་ཁ་ - %PRODUCTNAME- འགྲུལ་ལམ་ཚུ་གི་འོག་ལུ་ སྔོན་སྒྲིག་ སྒྲིག་སྟངས་ངོ་མ་ཚུ་ནང་འགྲུལ་ལམ་ཚུ་སླར་སྒྲིག་འབད་ནིའི་དོན་ལུ་སྔོན་སྒྲིག་ཨེབ་རྟ་འདི་ཨེབ་གཏང་།\nདེ་ལས་ཝི་ཛརཌི་འདི་ལོག་སྟེ་རང་གཡོག་བཀོལ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "གཞི་སྒྲུབ་ནང་ལུ་ས་སྒོ་ཚུ
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "ས་སྒོ་ཟུང་རྡན་དེ་ཚུ་ཨ་རྟག་རང་ཐོ་བཀོད་འབདཝ་མ་ཚད་ཐོ་ཡིག་གཡོན་ནང་ལས་སེལ་འཐུ་འབད་བཏུབ་ཨིན།\nའབད་ཚུགས་པ་ཅིན་དེ་ཚུ་གཟུགས་བརྙན་ཚུ་བཟུམ་སྦེ་ཁ་བསྒྱུར་འབདཝ་ཨིན།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "ཡན་ལག་གཞི་སྒྲུབ་འདི་ གཞི་སྒྲུབ་གཞན་མི་གཅིག་ནང་ལུ་བཙུགས་ཡོད་པའི་གཞི་སྒྲུབ་གཅིག་ཨིན།\nཐིག་ཁྲམ་ཚུའམ་འདྲི་དཔྱད་ཚུ་ གཅིག་ལས་ལྷག་པའི་མཐུན་འབྲེལ་ནང་ལས་གནད་སྡུད་སྟོན་ནིའི་དོན་ལུ་ཡན་ལག་གཞི་སྒྲུབ་ཚུ་ལག་ལེན་འཐབ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "གཞི་སྒྲུབ་ནང་ལུ་ས་སྒོ་ཚུ
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "མཐུད་ལམ་ '<FIELDNAME1>' དང་ '<FIELDNAME2>' འདི་ཚར་གཉིས་སེལ་འཐུ་འབད་ནུག  \nཨིན་རུང་མཐུད་ལམ་ཚུ་ཚར་གཅིག་རྐྱངམ་ཅིག་ལག་ལེན་འཐབ་བཏུབ་འོང་།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "གཞི་སྒྲུབ་ཀྱི་མིང་གཞི་སྒ
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "འབྲི་ཤོག་མིང་'%FORMNAME'དང་གཅིག་ཁར་ཡོད་མི་འབྲི་ཤོག་འདི་ཧེ་མ་ལས་རང་  འདུག་\nམིང་གཞན་མི་ཅིག་ གདམ་ཁ་རྐྱབ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr " ས་སྒོ་འདི་བཙུགས་མི་ཚུགས�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "མིང་'%TABLENAME'འདི་ཧེ་མ་ལས་རང་འདུག་\nམིང་གཞན་མི་ཅིག་ཐོ་བཀོད་འབད་གནང་།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "ཝེབ་ཝི་ཛརཌི།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "འ་ནི་ཝེབ་ཝི་ཛརཌི་འདི་ཁྱོད་ལུ་ཨིན་ཊར་ནེཊི་ནང་ཡིག་ཆ་ཚུ་དེབ་བསྐྲུན་འབད་ནི་ནང་གྲོགས་རམ་འབད་ནིའི་དོན་ལུ་ཨིན།\n\nའདི་གིས་ཡིག་ཆ་ཚུ་གཞི་བསྒྱུར་འབདཝ་ཨིནམ་ལས་ ཝེབ་བརའུ་ཛར་གིས་ཡང་བལྟ་ཚུགསཔ་ཨིན། དེའི་ཁ་སྐོང་ལུ་ཡིག་ཆ་ཚུ་ནང་འཛུལ་སྤྱོད་འཇམ་ནིའི་དོན་ལུ་  འབྲེལ་ལམ་ཚུ་བཅས་པའི་ནང་དོན་ཚུའི་ཤོག་ལེབ་ཀྱི་ཐིག་ཁྲམ་གཅིག་བཟོ་བཏོན་འབདཝ་ཨིན། དེ་མ་ཚད་ཝེབ་ཝི་ཛརཌི་གིས་ཁྱོད་ལུ་ ཁྱོད་རའི་ཝེབ་ས་ཁོངས་ཀྱི་བཀོད་བསྒྲིག་དང་སྒྲིག་བཀོད་ཚུ་སོལ་སྒྲིག་འབད་བཅུགཔ་ཨིན།\n\nཁྱོད་ཀྱིས་ཝེབ་ནང་ལུ་དེབ་བསྐྲུན་འབད་མི་ཡིག་ཆ་ཚུ་དུས་མཐུནམ་སྦེ་བཞག་ཚུགས་ནི་དང་ དུས་ནམ་རང་འབད་རུང་ཡིག་ཆ་ཚུ་ཁ་སྐོང་རྐྱབ་ནི་དང་རྩ་བསྐྲད་གཏང་ནི་ཚུ་འབད་ཚུགསཔ་ཨིན།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "སྔོན་ལྟ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་སྒྲིག་སྟངས་ཚུ་བཏོན་གཏང་ནི་ཨིན།\n\nཁྱོད་ཀྱིས་སྒྲིག་སྟངས་ཚུ་ཐད་རེ་འབའ་རེ་བཏོན་གཏང་ནི་ཨིན་ན? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr " སྣོད་ཐོ་ '%FILENAME' ཨེཕ་ཊི་པི་འ�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "ཨེཕ་ཊི་པི་སྣོད་ཐོ་  '%FILENAME'འདི་གནས་ཏེ་མེད།\nད་ལྟོ་སྣོད་ཐོ་གསར་བསྐྲུན་འབད་ནི་ཨིན་ན?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "གནས་ཡུལ་ཡིག་སྣོད་ '%FILENAME' འད�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "ཉེ་གནས་སྣོད་ཐོ་ '%FILENAME' འདི་གསར་བསྐྲུན་འབད་མི་བཏུབ་པས།\nརྩོམ་འབྲི་པའི་འཛུལ་སྤྱོད་ ཞིབ་དཔྱད་འབད་གནང་།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "ཉེ་གནས་སྣོད་ཐོ་ '%FILENAME' འདི་མི་གནས་པས།\nསྣོད་ཐོ་འདི་ད་ལྟོ་གསར་བསྐྲུན་འབད་ནི་ཨིན་ན?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -3049,911 +3049,729 @@ msgid  "Move down"
 msgstr "མར་སྤོ།"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "གྲོགས་རམ།(~H)"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ཆ་མེད་གཏང་།(~C)"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
-#, fuzzy
 msgid  "<< ~Back"
 msgstr "<<ལོག(~B)"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
-#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "ཤུལ་མམ། >>(~x)"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
-#, fuzzy
 msgid  "~Convert"
 msgstr "གཞི་བསྒྱུར་འབད།(~C)"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "ཁ་བསྡམས།(~C)"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
-#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 msgstr "འ་ནི་ཝི་ཛརཌི་འདི་གིས་ ཡིག་ཆ་ཚུ་%PRODUCTNAME རྩ་སྒྲིག་ནང་ལུ་དང་ མའི་ཀོརོ་སོཕཊི་ཡིག་ཚང་གི་ཡིག་ཆ་ཚུ་ ཨོ་པཱན་ཌོ་ཀུ་མེནཊི་རྩ་སྒྲིག་ནང་ལུ་གཞི་བསྒྱུར་འབདཝ་ཨིན།"
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
-#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 msgstr "མའི་ཀོརོ་སོཕཊི་ཡིག་ཆ་ཚུ་ གཞི་བསྒྱུར་འབད་བའི་སྐབས་ལུ་མཉམ་སྦྲགས་ཝི་བི་ཨེ་ མེ་ཀོརོསི་གང་རུང་ཚུ་གི་ ཁོང་རའི་ལས་འགན་རླགཔ་ཨིནམ་དྲན་གནང་།"
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
-#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "གཞི་བསྒྱུར་འབད་ནིའི་དོན་ལུ་ ཡིག་ཆའི་དབྱེ་བ་སེལ་འཐུ་འབད།:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word templates"
 msgstr "མིང་ཚིག་ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel templates"
 msgstr "ཨེགསི་སེལ་ ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "པ་ཝར་པོའིནཊི་ ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word documents"
 msgstr "མིང་ཚིག་ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel documents"
 msgstr "ཨེགསི་སེལ་ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "པ་ཝར་པོའིནཊི་ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
-#, fuzzy
 msgid  "Including subdirectories"
 msgstr "ཡན་ལག་སྣོད་ཐོ་ཚུ་གྲངས་སུ་བཙུགས་ཏེ།"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
-#, fuzzy
 msgid  "Microsoft Office"
 msgstr "མའི་ཀོརོ་སོཕཊི་ཡིག་ཚང།"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
-#, fuzzy
 msgid  "Summary:"
 msgstr "བཅུད་དོན།:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
-#, fuzzy
 msgid  "Import from:"
 msgstr "ལས་ནང་འདྲེན།:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
-#, fuzzy
 msgid  "Save to:"
 msgstr "ལུ་སྲུངས།:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
-#, fuzzy
 msgid  "Imported_Templates"
 msgstr "ནང་འདྲེན་འབད་འབདཝ་བའི་-ཊེམ་རེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
-#, fuzzy
 msgid  "Progress: "
 msgstr "ཡར་འཕེལ།: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "ཡིག་ཆ།"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
-#, fuzzy
 msgid  "Documents"
 msgstr "ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
-#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "'%1' སྣོད་ཐོ་འདི་གསར་བསྐྲུན་འབད་མི་བཏུབ་པས།: "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
-#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "'%1' སྣོད་ཐོ་འདི་གནས་ཏེ་མིན་འདུག"
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
-#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "ཁྱོད་ཀྱིས་འདི་ད་ལྟོ་རང་གསར་བསྐྲུན་འབད་ནི་ཨིན་ན?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
-#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "'<1>' ཡིག་སྣོད་འདི་ཧེ་མ་ལས་རང་གནས་ཏེ་འདུག <CR> ཁྱོད་ཀྱིས་འདི་ཚབ་སྲུང་འབད་ནི་ཨིན་ན?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
-#, fuzzy
 msgid  "Directories do not exist"
 msgstr "སྣོད་ཐོ་ཚུ་མི་གནས་པས།"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
-#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "མ་འདྲིཝ་ལས་ཁྱོད་ཀྱིས་ཡིག་ཆ་ཚུ་ཚབ་སྲུང་འབད་ནི་ཨིན་ན་?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
-#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "མེ་ཀོརོ་ཡིག་ཆ་འདི་བསྐྱར་སྦྱོང་འབད་དགོསཔ་འདུག"
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "ཡིག་ཆ་ '<1>' འདི་སྲུངས་བཏུབ་པས།"
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "ཡིག་ཆ་ '<1>' འདི་ཁ་ཕྱེ་མི་བཏུབ་པས།"
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
-#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "ཡིག་ཚད་འ་ནེམ་ཅིག་ཁར་ཁྱོད་ཀྱིས་ཐད་རེ་འབའ་རེ་གཞི་བསྒྱུར་འདི་རྩ་བསྐྲད་གཏང་ནི་ཨིན་ན?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
-#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "ཝི་ཛརཌི་ ཆ་མེད་གཏང་།"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
-#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "རེ་བ་མེད་པའི་"
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "འཛོལ་བ།"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
-#, fuzzy
 msgid  "Select a directory"
 msgstr "སྣོད་ཐོ་གཅིག་སེལ་འཐུ་འབད།"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
-#, fuzzy
 msgid  "Document Converter"
 msgstr "ཡིག་ཆ་སྒྱུར་བྱེད།"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
-#, fuzzy
 msgid  "Progress"
 msgstr "ཡར་འཕེལ།"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
-#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "འབྲེལ་བའི་ཡིག་ཆ་ཚུ་ སླར་འདྲེན་འབད་དོ།:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
-#, fuzzy
 msgid  "Converting the documents"
 msgstr "ཡིག་ཆ་ཚུ་གཞི་བསྒྱུར་འབད་དོ།"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
-#, fuzzy
 msgid  "Found:"
 msgstr "ཐོབ།:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
-#, fuzzy
 msgid  "%1 found"
 msgstr "%1 ཐོབ་ཡོདཔ།"
 
 #: source/importwizard/importwi.src#sReady.String.Text
-#, fuzzy
 msgid  "Finished"
 msgstr "རྫོགས་སོ།"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text templates"
 msgstr "ཚིག་ཡིག་ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "ཤོག་ཁྲམ་ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "པར་རིས་/གསལ་སྟོན་ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "ཡིག་ཆའི་ཨམ་ཚུ།"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text documents"
 msgstr "ཚིག་ཡིག་ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheets"
 msgstr "ཤོག་ཁྲམ་ཚུ།"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "པར་རིས་/གསལ་སྟོན་ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "ཡིག་ཆ་ཨམ་ཚུ་/མན་ངག་ཚུ།"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "ཡིག་ཆ་ཨམ་ཚུ།"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
-#, fuzzy
 msgid  "Formulas"
 msgstr "མན་ངག་ཚུ།"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
-#, fuzzy
 msgid  "Source documents"
 msgstr "འབྱུང་ཁུངས་ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
-#, fuzzy
 msgid  "Target documents"
 msgstr "དམིགས་གཏད་ཡིག་ཆ་ཚུ།"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
-#, fuzzy
 msgid  "Create log file"
 msgstr "དྲན་དེབ་ཡིག་སྣོད་གསར་བསྐྲུན་འབད།"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
-#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> ཡིག་ཆ་ཚུ་གཞི་བསྒྱུར་འབད་ཡོདཔ།"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
-#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "དྲན་དེབ་ཡིག་སྣོད་གཅིག་ཁྱོད་རའི་ལཱ་གི་སྣོད་ཐོ་ནང་གསར་བསྐྲུན་འབད་ཡོདཔ་ཨིན།"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
-#, fuzzy
 msgid  "Show log file"
 msgstr "དྲན་དེབ་ཡིག་སྣོད་སྟོན།"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
-#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "ཡན་ལག་སྣོད་ཐོ་ཚུ་ཆ་མཉམ་རང་རྩིས་ཐོ་ནང་ལུ་འབག་ནི་ཨིན།"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
-#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "དེ་ཚུ་ འོག་གི་སྣོད་ཐོ་ནང་ལུ་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་%PRODUCTNAME ཚིག་ཡིག་ ཡིག་ཆ་ཚུ་ཆ་མཉམ་རང་ ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་%PRODUCTNAME ཤོག་ཁྲམ་ཚུ་ཆ་མཉམ་རང་ ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་%PRODUCTNAME པར་རིས་དང་གསལ་སྟོན་ཡིག་ཆ་ཚུ་ཆ་མཉམ་རང་ ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་  %PRODUCTNAME མན་ངག་ཡིག་ཆ་ཚུ་ཆ་མཉམ་རང་ ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་ %PRODUCTNAME ཚིག་ཡིག་ཊེམ་པེལེཊིསི་ཚུ་ཆ་མཉམ་རང་ ནང་འདྲེན་འབད་ནི་ཨིན།"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་ %PRODUCTNAME ཐིག་ཁྲམ་ཊེམ་པེལེཊིསི་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་ %PRODUCTNAME པར་རིས་དང་གསལ་སྟོན་ཊེམ་པེལེཊིསི་ཚུ་ ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
-#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་ %PRODUCTNAME ཡིག་ཆ་ཨམ་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
-#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་མིང་ཚིག་ཡིག་ཆ་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
-#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་ ཨེགསི་སེལ་ཡིག་ཆ་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
-#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་ པ་ཝར་པོའིནཊི་ཡིག་ཆ་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
-#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་མིང་ཚིག་ཊེམ་པེལེཊིསི་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
-#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ན་ཡོད་པའི་ཨེགསི་སེལ་ཊེམ་པེལེཊིསི་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
-#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "འོག་གི་སྣོད་ཐོ་ནང་ཡོད་པའི་པ་ཝར་པོའིནཊི་ཊེམ་པེལེཊིསི་ཚུ་ཆ་མཉམ་རང་ནང་འདྲེན་འབད་ནི་ཨིན།:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME ཟླ་ཐོ།"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
-#, fuzzy
 msgid  "Back"
 msgstr "རྒྱབ།"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "རང་དོན་གྱི་གནད་སྡུད།"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
-#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "ཟླ་ཐོ་ལུ་ངལ་གསོ་ཁ་སྐོང་རྐྱབས།"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
-#, fuzzy
 msgid  "Create"
 msgstr "གསར་བསྐྲུན་འབད།"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "ཆ་མེད་གཏང་།"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ཟླ་ཐོ།"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
-#, fuzzy
 msgid  "~Year Overview"
 msgstr "ལོའི་སྤྱི་མཐོང་།(~Y)"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
-#, fuzzy
 msgid  "~Month"
 msgstr "ཟླ།(~M)"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
-#, fuzzy
 msgid  "Add holidays for"
 msgstr "གི་དོན་ལུ་ ངལ་གསོ་ཁ་སྐོང་རྐྱབས།"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
-#, fuzzy
 msgid  "USA"
 msgstr "ཡུ་ཨེསི་ཨེ།"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
-#, fuzzy
 msgid  "Time Frame"
 msgstr "ཆུ་ཚོད་གཞི་ཁྲམ།"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "ལོ།"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ཟླ།"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "རང་དོན་གྱི་གནད་སྡུད།"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "བཙུགས།(~I)"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
-#, fuzzy
 msgid  "New Event"
 msgstr "བྱུང་ལས་གསརཔ།"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "བྱུང་ལས།"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
-#, fuzzy
 msgid  "One-Time"
 msgstr "ཆུ་ཚོད་གཅིག"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
-#, fuzzy
 msgid  "Day"
 msgstr "གཟའ།"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ཟླ།"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "ལོ།"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
-#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
-#, fuzzy
 msgid  "Public holidays"
 msgstr "མི་མང་གི་གསོ།"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
-#, fuzzy
 msgid  "January"
 msgstr "སྤྱི་ཟླ་དང་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
-#, fuzzy
 msgid  "February"
 msgstr "སྤྱི་ཟླ་གཉིས་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
-#, fuzzy
 msgid  "March"
 msgstr "སྤྱི་ཟླ་གསུམ་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
-#, fuzzy
 msgid  "April"
 msgstr "སྤྱི་ཟླ་བཞི་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
-#, fuzzy
 msgid  "May"
 msgstr "སྤྱི་ཟླ་ལྔ་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
-#, fuzzy
 msgid  "June"
 msgstr "སྤྱི་ཟླ་དྲུག་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
-#, fuzzy
 msgid  "July"
 msgstr "སྤྱི་ཟླ་བདུན་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
-#, fuzzy
 msgid  "August"
 msgstr "སྤྱི་ཟླ་བརྒྱད་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
-#, fuzzy
 msgid  "September"
 msgstr "སྤྱི་ཟླ་དགུ་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
-#, fuzzy
 msgid  "October"
 msgstr "སྤྱི་ཟླ་བཅུ་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
-#, fuzzy
 msgid  "November"
 msgstr "སྤྱི་ཟླ་བཅུ་གཅིག་པ།"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
-#, fuzzy
 msgid  "December"
 msgstr "སྤྱི་ཟླ་བཅུ་གཉིས་པ།"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
-#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "ལོ་བསྟར་/ཟླ་བསྟར་བཞིན་གྱི་ཟླ་ཐོ།"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "ཟླ་ཐོ་གསར་བསྐྲུན་འབད་བའི་བསྒང་ལུ་ འཛོལ་བ་ཅིག་བྱུང་ནུག"
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
-#, fuzzy
 msgid  "Delete event entries"
 msgstr "བྱུང་ལས་ཀྱི་ཐོ་བཀོད་ཚུ་ བཏོན་གཏང་།"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
-#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ཐོ་བཀོད་ཚུ་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
-#, fuzzy
 msgid  "Workweek"
 msgstr "ལཱ་གི་བདུན་ཕྲག"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
-#, fuzzy
 msgid  "Weekend"
 msgstr "བདུན་མཐའ།"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ཟླ་ཐོ།"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ཟླ།"
 
 #: source/schedule/schedule.src#sProgress.String.Text
-#, fuzzy
 msgid  "Progress:"
 msgstr "ཡར་འཕེལ་:"
 
 #: source/template/template.src#SAMPLES.String.Text
-#, fuzzy
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
 msgstr "དཔེ་ཚད་འདི་གི་ལས་འགན་ཆ་ཚང་ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ ཊེམ་པེལེཊི་གུ་ལུ་གཞི་བཞག་ཡོད་པའི་ཡིག་ཆ་ཅིག་ གསར་བསྐྲུན་འབད།"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
-#, fuzzy
 msgid  "Remarks"
 msgstr "དྲན་གསོ།"
 
 #: source/template/template.src#STYLES.String.Text
-#, fuzzy
 msgid  "Theme Selection"
 msgstr "བརྗོད་དོན་སེལ་འཐུ།"
 
 #: source/template/template.src#STYLES + 1.String.Text
-#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
 msgstr "ཡིག་ཆ་འདི་འཛིན་པང་ལུ་སྲུང་པའི་བསྒང་ལུ་ འཛོལ་བ་! འོག་གི་བྱ་བ་འདི་འབད་བཤོལ་ མི་བཏུབ་པས།"
 
 #: source/template/template.src#STYLES + 2.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ཆ་མེད་གཏང་།(~C)"
 
 #: source/template/template.src#STYLES + 3.String.Text
-#, fuzzy
 msgid  "~OK"
 msgstr "བཏུབ།(~O)"
 
 #: source/template/template.src#AgendaDlgName.String.Text
-#, fuzzy
 msgid  "Minutes Template"
 msgstr "གྲོས་ཆོད་ ཊེམ་པེལེཊི།"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
-#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "གདམ་ཁ་འདི་ངེས་དཔྱད་འབད་དགོཔ་ཨིན།"
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
-#, fuzzy
 msgid  "Minutes Type"
 msgstr "གྲོས་ཆོད་ཚུའི་དབྱེ་བ།"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
-#, fuzzy
 msgid  "Results Minutes"
 msgstr "གྲུབ་འབྲས་ཚུ་གི་གྲོས་ཆོད་ཚུ།"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
-#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "བརྟག་ཞིབ་གྲོས་ཆོད་ཚུ།"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
-#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "དེབ་རྟགས་ 'ལེན་མཁན་' འདི་ བརླག་སྟོར་ཞུགས་པ།"
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
-#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "འབྲི་ཤོག་ཡི་གུའི་ས་སྒོ་ཚུ་ གྲངས་སུ་བཙུགས་མི་ཚུགས།"
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
-#, fuzzy
 msgid  "An error has occurred."
 msgstr "འཛོལ་བ་ཅིག་བྱུང་ནུག"
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
-#, fuzzy
 msgid  "Addressee"
 msgstr "ཡི་གེ་གཏོང་ཡུལ།"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
-#, fuzzy
 msgid  "One recipient"
 msgstr "ལེན་མཁན་གཅིག"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
-#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "ལེན་མཁན་ལེ་ཤ་ཅིག་(ཁ་བྱང་གནད་སྡུད་གཞི་རྟེན་)།"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
-#, fuzzy
 msgid  "Use of This Template"
 msgstr "ཊེམ་པེལེཊི་གི་ལག་ལེན།"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
-#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "ས་གནས་འཛིན་མི་དང་ཚབ་སྲུང་ལུ་ ཨེབ་གཏང་འབད།"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "ཚོང་སྡེ།"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "ལས་ཁུངས།"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
-#, fuzzy
 msgid  "First Name"
 msgstr "འགོ་མིང་།"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
-#, fuzzy
 msgid  "Last Name"
 msgstr "མཇུག་མིང་།"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "ཁྲོམ་ལམ།"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "རྒྱལ་ཁབ།"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
-#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "གནས་ཡུལ་/འགྲེམ་ཨང་།"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "གྲོང་སྡེ།"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "མགོ་མིང་།"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "གནས་ས།"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
-#, fuzzy
 msgid  "Form of Address"
 msgstr "ཁ་བྱང་གི་འབྲི་ཤོག"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "མིང་རྟགས་བསྡུས་པ་ཚུ།"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
-#, fuzzy
 msgid  "Salutation"
 msgstr "གུས་བཏུད།"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
-#, fuzzy
 msgid  "Home Phone"
 msgstr "ཁྱིམ་གྱི་བརྒྱུད་འཕྲིན།"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
-#, fuzzy
 msgid  "Work Phone"
 msgstr "ལཱ་གཡོག་བརྒྱུད་འཕྲིན།"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
-#, fuzzy
 msgid  "Fax"
 msgstr "དཔར་འཕྲིན།"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
-#, fuzzy
 msgid  "E-Mail"
 msgstr "གློག་འཕྲིན།"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "ཡུ་ཨར་ཨེལ།"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "དྲན་འཛིན་ཚུ།"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
-#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "གདམ་ལྡེ་ ས་སྒོ་ ༡།"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
-#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "གདམ་ལྡེ་ ས་སྒོ་ ༢།"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
-#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "གདམ་ལྡེ་ ས་སྒོ་ ༣།"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
-#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "གདམ་ལྡེ་ ས་སྒོ་ ༤།"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "ཨའི་ཌི།"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "མངའ་སྡེ།"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
-#, fuzzy
 msgid  "Office Phone"
 msgstr "ཡིག་ཚང་གི་བརྒྱུད་འཕྲིན།"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "པེ་ཇར།"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
-#, fuzzy
 msgid  "Mobile Phone"
 msgstr "འགྲུལ་འཕྲིན།"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
-#, fuzzy
 msgid  "Other Phone"
 msgstr "བརྒྱུད་འཕྲིན་གཞན།"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
-#, fuzzy
 msgid  "Calendar URL"
 msgstr "ཟླ་ཐོ་ ཡུ་ཨར་ཨེལ།"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "མགྲོན་བརྡ་འབད་ནི།"
 
 #: source/template/template.src#TextField.String.Text
-#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "ལག་ལེན་པའི་གནད་སྡུད་ས་སྒོ་འདི་ ངེས་འཛིན་མ་འབད་བས་!"
 
 #: source/template/template.src#Newsletter.String.Text
-#, fuzzy
 msgid  "General layout"
 msgstr "ཡོངས་ཁྱབ་སྒྲིག་བཀོད།"
 
 #: source/template/template.src#Newsletter + 1.String.Text
-#, fuzzy
 msgid  "Default layout"
 msgstr "སྔོན་སྒྲིག་སྒྲིག་བཀོད།"
 
 #: source/template/template.src#Newsletter + 2.String.Text
-#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "རྗེས་དྲན་གྱི་པར་འགྲེམས་སྒྲིག་བཀོད།"
 
 #: source/template/template.src#Newsletter + 3.String.Text
-#, fuzzy
 msgid  "Brochure layout"
 msgstr "དེབ་ཆུང་སྒྲིག་བཀོད།"
 
 #: source/template/template.src#Newsletter + 10.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "རྩ་སྒྲིག"
 
 #: source/template/template.src#Newsletter + 11.String.Text
-#, fuzzy
 msgid  "Single-sided"
 msgstr "ཟུར་གཅིགམ།"
 
 #: source/template/template.src#Newsletter + 12.String.Text
-#, fuzzy
 msgid  "Double-sided"
 msgstr "ཟེར་གཉིསམ།"

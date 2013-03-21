@@ -137,7 +137,7 @@ msgstr "Coba Lagi"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME tidak bisa menyimpan informasi internal yang penting karena tidak adanya ruang kosong yang mencukupi pada lokasi berikut:\n%PATH\n\nAnda tidak dapat bekerja dengan %PRODUCTNAME tanpa mengalokasikan lebih banyak ruang kosong pada lokasi tersebut.\n\nTekan tombol 'Coba Lagi' setelah Anda mengalokasikan lebih banyak ruang kosong untuk mengulang proses penyimpanan data.\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "Atu~r Ulang"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "Kesalahan terjadi saat memuat data konfigurasi antarmuka pengguna. Aplikasi akan dimatikan sekarang.\nCobalah untuk memasang ulang aplikasi."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "Kesalahan terjadi saat memuat data konfigurasi antarmuka pengguna. Aplikasi akan dimatikan sekarang.\nCobalah untuk membuang profil pengguna Anda untuk aplikasi tersebut."
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "Kesalahan terjadi saat memuat data konfigurasi antarmuka pengguna. Aplikasi akan dimatikan sekarang.\nCobalah untuk membuang profil pengguna Anda untuk aplikasi tersebut atau cobalah untuk memasang ulang aplikasi terkait."
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

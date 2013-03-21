@@ -529,367 +529,294 @@ msgid  "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "கொடுக்கப்பட்ட வேலைநாட்கள் எண்ணிகையின் முன்பு அல்லது பிறகு உள்ள தேதியின் வரிசை எண்னண தரும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
-#, fuzzy
 msgid  "Days"
 msgstr "தினங்கள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
-#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "துவக்க தேதியின் முன்பு அல்லது பிறகு உள்ள ல ேலைந்் எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "விடுமுறைகள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
-#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "விடுமுறை தினங்களுக்கான பட்டியல்(பண்டிகை, விழாக்கள், மற்றும் பல.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
-#, fuzzy
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
 msgstr " 'start date' மற்றும் 'end date' இடைப்பட்ட தினங்கள்-வருடங்களில் "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "முடிவு தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "முடிவு தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
-#, fuzzy
 msgid  "Basis"
 msgstr "அடிப்படை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
-#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "வட்டி வீத தினங்களை கணக்கிடும் அடிப்படை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
 msgstr "துவக்க தேதியின் கொடுக்கப்பட்ட மாதங்களின் எண்ணிகையின் முன்பு அல்லது பிறகு உள்ள தேதியின் தேதியின் வரிசை எண்னை தரும"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "மாதங்கள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Number of months before or after the start date"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
-#, fuzzy
 msgid  "Returns the number of the calendar week in which the specified date occurs."
 msgstr "தினம் வரும் நாள் உள்ள நாட்காட்டி வாரங்களை அளிக்கிறது."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "நாள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
-#, fuzzy
 msgid  "The date"
 msgstr "நாள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
-#, fuzzy
 msgid  "Return type"
 msgstr "திரும்பு வகை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
-#, fuzzy
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "எண் 1 லிருந்து 3, வாரம் தொடங்கும் நாளைக் குறிப்பிடுகிறது"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
-#, fuzzy
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
 msgstr "மாதத்தின் கடைசி நாளை தேர்ந்தெடுத்து அடுத்த மாதத்தின் துவக்கநாளை கண்டுப்பிடி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "மாதங்கள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Number of months before or after the start date"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
-#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "இரு தினங்களுக்கு நடுவில் உள்ள வேலை நாட்கள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "துவக்க தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "முடிவு தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "முடிவு தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "விடுமுறைகள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
-#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "விடுமுறை தினப்பட்டியல் (பண்டிகை, விழாக்கள், மற்றும் பல.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "இரட்டை படை எண் என்றால் 'சரி' என்ற மதிப்பைத் தரும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "ஒற்றை எண்ணாக இருப்பின் 'true' அளிக்கிறது"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
-#, fuzzy
 msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "எண்களுக்கான "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "எண்(கள்)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
 msgstr "எண் அல்லது மொத்த எண்களில் எதையாவது தேர்ந்தெடுத்து வகுகுணங்களை காண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
-#, fuzzy
 msgid  "Returns the sum of a power series"
 msgstr "அடுக்குகளின் கூடுதல் தொகையை அளிக்கிறது"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.3.String.Text
-#, fuzzy
 msgid  "The independent variable of the power series"
 msgstr "அடுக்கு வரிசையின் தொடர்பில்லா மதிப்பு"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.5.String.Text
-#, fuzzy
 msgid  "The initial power to which x is to be raised"
 msgstr " x உயர்த்தப்பட வேண்டிய தொடக்க மதிப்பு"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.6.String.Text
-#, fuzzy
 msgid  "M"
 msgstr "M"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.7.String.Text
-#, fuzzy
 msgid  "The increment by which to increase n for each term in the series"
 msgstr "வரிசையில் n வரை உயர்த்தப்பட வேண்டிய கூடுதல் மதிப்பு"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.8.String.Text
-#, fuzzy
 msgid  "Coefficients"
 msgstr "குணகம் "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
-#, fuzzy
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
 msgstr "மொத்தகுணகங்களை உபயோகப்பதடுத்தும் போது x யின் மாறி பெருக்கப்பட்டது"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
-#, fuzzy
 msgid  "Returns the integer portion of a division"
 msgstr "வகுத்தலில் முழு எண் பகுதியைத் தரும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
-#, fuzzy
 msgid  "Numerator"
 msgstr "மீதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
-#, fuzzy
 msgid  "The dividend"
 msgstr "வகுத்தல்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
-#, fuzzy
 msgid  "Denominator"
 msgstr "Denominator"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
-#, fuzzy
 msgid  "The divisor"
 msgstr "வகுப்பு"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
-#, fuzzy
 msgid  "Returns a number rounded to a specified multiple"
 msgstr "குறீப்பிட்ட எண்களை தேர்ந்த்தெடுக்கும் போது அவ்எண் பெருக்கப்படும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
-#, fuzzy
 msgid  "The number to round off"
 msgstr "முழுமை ஆகவேன்டிய எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.4.String.Text
-#, fuzzy
 msgid  "Multiple"
 msgstr "பெருக்கல்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.5.String.Text
-#, fuzzy
 msgid  "The multiple to which you want to round number"
 msgstr "எதை பெருக்கப்பட வேண்டுமோ அவ்எண்ணை குறிக்கப்படவேண்டும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.1.String.Text
-#, fuzzy
 msgid  "Returns the square root of a number which has been multiplied by pi"
 msgstr "பையால் பெருக்கப்பட்ட எண்ணின் வர்க மூலத்தைத் தரும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
-#, fuzzy
 msgid  "The number by which pi is multiplied"
 msgstr "பையால் பெருக்கப்பட்ட எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.1.String.Text
-#, fuzzy
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "முழு எண்குறிப்பிலா எண்ணிலிருந்து எண்ணாக குறீப்பிடு"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.2.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "கீழ்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.3.String.Text
-#, fuzzy
 msgid  "The smallest integer returned"
 msgstr "தரப்பட்ட மிகச்சிறிய முழு எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.4.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "மேல்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.5.String.Text
-#, fuzzy
 msgid  "The largest integer returned"
 msgstr "தரப்பட்ட மிகப்பெரியிறிய முழு எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.1.String.Text
-#, fuzzy
 msgid  "Returns the greatest common divisor"
 msgstr "பொதுவாக பெரிதாக உள்ள வகு எண்"
 
@@ -3880,147 +3807,118 @@ msgid  "The schedule"
 msgstr "திட்டம்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "குறிப்பிட்ட காலாளவுக்கு இடையே உள்ள வாரங்களை கணக்கிடு"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "கால இடைவெளியின் முதல் நாள்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "முடிவு தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "காலத்தின் கடைசி நாள்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "வகை"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
 msgstr "கணக்கீட்டின் வகை: வகை=0எனில் ஒரே இடைவெளிl, வகை=  எனில் நாள்காட்டி வாரம்s."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
-#, fuzzy
 msgid  "Determines the number of months in a specific period."
 msgstr "கால இடைவெளிக்கு இடையே உள்ள மாதங்கள்களை கண்டறியும்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
-#, fuzzy
 msgid  "First day of the period."
 msgstr "கால இடைவெளியின் முதல் நாள்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "முடிவு தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.5.String.Text
-#, fuzzy
 msgid  "Last day of the period."
 msgstr "காலக்கெடுவின் கடைசி நாள்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "வகை"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
 msgstr "கணக்கீட்டின் வகை: வகை=0எனில் ஒரே இடைவெளிl, வகை=  எனில் நாள்காட்டி மாதங்கள்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of years in a specific period."
 msgstr "கால இடைவெளிக்கு இடையே உள்ள வருடங்களை கணக்கிடு"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "துவக்க தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "கால இடைவெளியின் முதல் நாள்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "முடிவு தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "காலக்கெடுவின் கடைசி நாள்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "வகை"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
-#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
 msgstr "கணக்கீட்டின் வகை: வகை=0 எனில் ஒரே இடைவெளி, வகை=  எனில் நாள்காட்டி வாரம்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
-#, fuzzy
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
 msgstr "தேதி லீப் வருடம் எனில் (TRUE)1 ஐத் தரும் இல்லை எனில் 0 (FALSE)"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "விருப்பட்ட மாதத்தில் ஏதாவது ஒரு நாள்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
-#, fuzzy
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "மாதத்தின் மொத்த நாட்களை கண்டறிந்து குறிப்பிட்ட நாட்களை காண்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired month"
 msgstr "விருப்பட்ட மாதத்தில் ஏதாவது ஒரு நாள்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
-#, fuzzy
 msgid  "Returns the number of days of the year in which the date entered occurs."
 msgstr "உள்ளிடப்பட்ட தேதியின் வருடத்தில் உள்ள நாள்களைத் தரும்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "தேதி"
 

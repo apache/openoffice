@@ -113,7 +113,6 @@ msgid  "~Save As..."
 msgstr ""
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Prisiminti slaptažodį iki seanso pabaigos"
 
@@ -469,7 +468,6 @@ msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Saugumo perspėjimas: serverio liudijimas netikras"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Filtro pasirinkimas"
 
@@ -520,58 +518,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Siųsti"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "~Nepaisyti"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "~Interaktyvus"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Slapukų valdymas ateityje"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Nepaisyti"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Siųsti"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "„'${HOST}“ serveris bando įrašyti vieną ar daugiau slapukų.\nSlapukuose yra informacija, susijusi su tam tikromis URL klasėmis. Jei „%PRODUCTNAME“ programa vėliau mėginsite pasiekti dokumentą su anksčiau nustatyto slapuko klasę atitinkančiu URL adresu, „%PRODUCTNAME“ nusiųs šią informaciją į serverį. Tokiu būdu serveris gali atpažinti interneto naršyklės programos būseną, pvz., kada apsiperkama internete.\n\nBandoma įrašyti šiuos slapukus:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Sritis : ${DOMAIN}, adresas: ${PATH}, slapukas: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Slapuko gavimas"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "„%PRODUCTNAME“ įrašė serverio „${HOST}“ slapukus, kurie bus išsiųsti bandant pasiekti dokumentą „${PATH}“.\nSlapukuose yra informacija, susijusi su tam tikromis URL klasėmis. Kai kurie serveriai siunčia slapukus į „%PRODUCTNAME“, kur jie įrašomi atveriant tam tikrus dokumentus. Jei „%PRODUCTNAME“ įkelia dokumentą, kuris pagal URL priklauso vieno iš anksčiau gautų slapukų klasei, „%PRODUCTNAME“ išsiųs šią informaciją į serverį. Tokiu būdu serveris gali sekti interneto naršyklės būseną, pvz., kada apsiperkama internete.\n\nBandoma įrašyti šiuos slapukus:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Sritis : ${DOMAIN}, adresas: ${PATH}, slapukas: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Siųsti slapukus"
 

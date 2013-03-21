@@ -137,7 +137,7 @@ msgstr "保存"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "ソーステキストが長すぎて、保存もコンパイルを行うこともできません。\nコメントをいくつか削除するか、メソッドのいくつかを別のモジュールに転送します。"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "「XX」ファイルはすでにあります。"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
-msgstr ""
+msgstr "セキュリティ上の理由から、このマクロを実行できません。\n\n詳細については、セキュリティ設定を参照してください。"
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "名前は必ず入力します。"
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr ""
+msgstr "この変更のあとで、プログラムを再起動する必要があります。\n続行しますか。"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "ダイアログインポート - 名前が使われている"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
-msgstr ""
+msgstr "そのライブラリには、すでにその名前のダイアログがあります:\n\n$(ARG1)\n\nダイアログの名前を変更して現在のダイアログを保持するか、既存のダイアログを置き換えてください。\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "ダイアログインポート - 言語の不一致"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
-msgstr ""
+msgstr "インポートされるダイアログは、対象ライブラリに限らず他の言語もサポートします。\n\nダイアログで提供される追加の言語リソースを保持するには、ライブラリにその言語を追加してください。現在のライブラリのままでよければ省略してください。\n\n注意: そのダイアログでサポートされない言語には、そのダイアログのデフォルト言語のリソースが使用されます。\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"

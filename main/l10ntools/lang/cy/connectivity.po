@@ -389,7 +389,7 @@ msgstr "Nid oedd modd llwytho'r ffeil $filename$."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "Cynhyrchodd yr ymgais i lwytho'r ffeil y neges gwall canlynol ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -485,7 +485,7 @@ msgstr "Gwerth dyblyg wedi ei ganfod yn '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "Mae'r golofn '$columnname$' wedi ei diffinio fel math \"Degol\", yr hyd mwyaf yw $precision$ nod (gyda $scale$ man degol).\n\nMae'r gwerth yma \"$value$ yn hirach na'r nifer o nodau sy'n cael eu caniatau."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
@@ -605,11 +605,11 @@ msgstr "Mae angen fersiwn KDE $major$.$minor$ neu uwch ar gyfer mynediad at Lyfr
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "Mae'r fersiwn gyfredol o KDE yn rhy ddiweddar. Dim ond KDE hyd at fersiwn $major$.$minor$ sy'n hysbys ei bod yn gweithio gyda 'r cynnyrch hwn.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "Os ydych yn siŵr fod eich fersiwn chi o KDE yn gweithio, gallwch weithredu'r macro Basic canlynol er mwyn anablu gwiriad y fersiwn:\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

@@ -210,8 +210,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
-msgstr ""
+msgstr "Parçeya (%s) nehate barkirin.\nBernameya xwe ya sazkirinê bi bijartekên tamîr an jî çêkirinê bixebitîne û tamîr bike."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -313,32 +314,26 @@ msgid  "Print"
 msgstr "Çap Bike"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "~Çap bike"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
-#, fuzzy
 msgid  "/ %n"
 msgstr "/ %n"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.String.Text
-#, fuzzy
 msgid  "No pages"
 msgstr "Rûpel tune"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
-#, fuzzy
 msgid  "Print to File..."
 msgstr "Çap bike Pelê..."
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
-#, fuzzy
 msgid  "Default printer"
 msgstr "Çapera standard"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
-#, fuzzy
 msgid  "Print preview"
 msgstr "Pêşdîtina çapkirinê"
 
@@ -348,112 +343,90 @@ msgid  "Page Layout"
 msgstr "Niştecihê Rûpelê"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "Niştecih"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
-#, fuzzy
 msgid  "Pa~ges per sheet"
 msgstr "Rû~pelên serî rûpela xebatê"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
-#, fuzzy
 msgid  "16"
 msgstr "16"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
-#, fuzzy
 msgid  "Custom"
 msgstr "Taybet"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
-#, fuzzy
 msgid  "P~ages"
 msgstr "R~ûpel"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr "a~liyê"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "~Dûrayî"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "between pages"
 msgstr "navbera rûpelan de"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Margin"
 msgstr "~Valahiya Kêleka"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "to sheet border"
 msgstr "li kêlekên rûpelê"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Orientation"
 msgstr "~Bicihbûn"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "Bixweber"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
-#, fuzzy
 msgid  "Portrait"
 msgstr "Portre"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
-#, fuzzy
 msgid  "Landscape"
 msgstr "Berwar"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
-#, fuzzy
 msgid  "Order"
 msgstr "Ahengdar"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
-#, fuzzy
 msgid  "left to right, then down"
 msgstr "ji çepê bi rastê ve, paşê jêr ve"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
-#, fuzzy
 msgid  "top to bottom, then right"
 msgstr "ji jor bi jêr ve, paşê rastê ve"
 
@@ -738,116 +711,93 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
-#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<No selection possible>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "~Undo"
 msgstr "~Vegerîne"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "Jê~kirin"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~Kopîkirin"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "~Pêvekirin"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Jêbirin"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select ~All"
 msgstr "~Hemûyî hilbijêre"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
-#, fuzzy
 msgid  "~Special Character..."
 msgstr "~Karakterên Taybet..."
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
-#, fuzzy
 msgid  "Services"
 msgstr "Xizmet"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
-#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "%PRODUCTNAME'ê veşere"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
-#, fuzzy
 msgid  "Hide Others"
 msgstr "Yên din veşêre"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
-#, fuzzy
 msgid  "Show All"
 msgstr "Gîşan nîşan bide"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
-#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "Ji %PRODUCTNAME'ê derkeve"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "Temam"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Betal"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "~Erê"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "~Na"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "~Ji nû ve biceribîne"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Alîkarî"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~Zêdetir"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "~Zêdetir"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Nebîne"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "~Jê biqere"

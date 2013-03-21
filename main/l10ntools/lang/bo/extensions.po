@@ -57,7 +57,7 @@ msgstr "གཞི་གྲངས་མ་ཁུངས་ཁ་བྱང་།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME སྤྱད་ནས་མ་ལག་སྟེང་གི་ད་ཡོད་འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་ཀློག་འདོན་ཆོག་དེར་བརྟེན་རེའུ་མིག་རྣམས་པའི་ %PRODUCTNAME གཞི་གྲངས་གཅིག་འཛུགས་དགོས་དེའི་ནང་སྤྱོད་ཆོག་པའི་འཕྲིན་གཏོང་དེབ་ཚུད་ཡོད་\n\nསྣེ་སྟོང་འདིར་ཁྱེད་ལ་གཞི་གྲངས་ཁུངས་འདིའི་འཛུགས་རྒྱུར་རོགས་རམ་བྱེད།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "གཞན་པའི་ཕྱི་རོལ་གཞི་གྲངས
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "གཞི་གྲངས་ཁུངས་གསར་འཛུགས་སྐབས་ངེས་པར་དུ་བཀོད་སྒྲིག་གཞན་བྱེད་དགོས། \n\nའོག་མའི་གནོན་འཐེབ་རྡེབ་གནོན་རྗེས་གླིང་སྒྲོམ་གཅོག་ཐོན་གླིང་སྒྲོམ་དེའིནང་ཁྱེད་ཀྱིས་ད་དུང་གྲུབ་མེད་པའི་བཀོད་སྒྲིག་བྱས་ཆོག"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "བཀོད་སྒྲོག"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "གཞི་གྲངས་ཁུངས་དང་སྦྲེལ་མཐུད་འཛུགས་ཐབས་བྲལ།\nམུ་མཐུད་བཀའ་ཚིག་ལག་སྟར་སྔོན་ལ་གྲུབ་ཟིན་པའི་བཀོད་སྒྲིག་ཡོངས་ལ་ཞིབ་དཔྱད་བྱེད་རོགས་ཡང་ན་ཤོག་ལྷེ་གོང་མར་ཕྱིར་ལེན་བྱས་ནས་འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་ཁུངས་རིགས།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "བདམས་པའི་ཕྱི་ངོས་གྲངས་གཞིའི་ཁུངས་ལ་འཕྲིན་དེབ་མང་པོ་ཞིག་ཚུད་འདུག  \n རྒྱུན་སྤྱོད་ཀྱི་འཕྲིན་དེབ་ཅིག་འདེམས་རོགས་གནང་།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgstr "ཡིག་ཚགས་མ་ཚུལ་ནས་འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་ཡང་དག་པར་བེད་སྤྱོད་དགོས་ན་ངེས་པར་དུ་ %PRODUCTNAME ལ་ཡིག་དུམ་གང་དག་ནང་གཞི་གྲངས་གང་ཞིག་ཚུད་ཡོད་པ་ཤོས་དགོས་ \n\nདཔེར་ན་ཁྱེད་ཀྱིས་རང་སྒྲིག་མིང་ཡིག་དུམ་ནང་ཡང་ན་\"EMail\" སྤྱད་པའི་ནང་ཡང་ན་\"E-Mail\" འམ་\"EM\"ཡི་ཡིག་དུམ་ནང་གློག་རྡུལ་སྦྲག་ཡིག་ས་གནས་གསོར་ཉར་བྱེད་ཆོག \n\nའོག་གི་གནོན་མཐེབ་རྡེབ་གནོན་རྗེས་གཞི་གྲངས་ཁུངས་བཀོད་སྒྲིག་བྱེད་མཁོ་འདོན་བྱེད་པའི་གླེང་སྒྲོམ་གཅིག་ཁ་ཕྱེ།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "ཡིག་དུམ་གཏན་ཕབ།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་ %PRODUCTNAME འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་བསྡུ་རུབ་ཀྱི་བཀོད་སྒྲིག་ཡོད་ཚད་བྱས་ཟིན་\n\nད་སྟ་ཁྱེད་ཉིད་ %PRODUCTNAME ཁོ་ན་ནང་འཇུག་བྱས་ནས་གཞི་གྲངས་ཁུངས་འདིའི་མིང་ཐོ་བཀོད་བྱེད།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -185,7 +185,7 @@ msgstr "གནས་ཡུལ་གཞི་གྲངས། - དམིགས་
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
 msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "ད་བར་ད་དུང་ཡིག་དུམ་གཅིག་ཀྱང་གཏན་འཁེལ་བྱས་མེད། \nཁྱེད་ཀྱིས་ད་ལྟ་ཡིག་དུམ་གཏན་འཁེལ་བྱེད་ཆོག་ལ། རྗེས་སུ་ཡང་བསྐྱར་དེ་སྒྲིག་བཀོད་བྱས་ཀྱང་ཆོག:\n \"ཡིག་ཆ་-ཡིག་ཚགས་དཔེ་པང་- འཕྲིན་གཏོང་གཞི་གྲངས་ཁུངས་...\"འདེམས་བྱང་གནོན།"
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -217,7 +217,7 @@ msgstr "གཞི་གྲངས་ཁུངས།(D)"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
 msgid  "The following column names could not be assigned:\\n"
-msgstr ""
+msgstr "གཤམ་གྱི་སྟར་མིང་སྟར་སྒྲིག་བྱེད་ཐབས་བྲལ།\n"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -493,7 +493,7 @@ msgstr "ཚེད་འཛིན།"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "གཡས་ཕྱོགས་སུ་ཁྱེད་ཀྱིས་རེའུ་མིག་གཞི་གྲངས་ཁུངས་ཀྱི་གཞི་གྲངས་རེའུ་མིག་ཡོད་ཚད་མཐོང་ཐུབ་\n\n\nཤོན་ཚན་ནང་དོན་གྲུབ་པར་སྤྱོད་པའི་རྩ་བའི་གཞི་གྲངས་ཀྱི་རེའུ་མིག་ཁག་ཅིག་འདེམས་རོགས།"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "གཞི་གྲངས།"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "མིག་སྔའི་རེའུ་མིག་འདིར་ཚུད་པའི་ཚོས་འཇིན་ནི་གཞི་གྲངས་ཁུངས་གཅིག་དང་སྦྲེལ་མཐུད་བྱས་མེད།(ཡང་ན་ཆ་ཚང་མེད་)\n\n\nགཞི་གྲངས་ཁུངས་གཅིག་དང་གཞི་གྲངས་རེའུ་མིག་གཅིག་འདེམས་རོགས་\n\n\nཡིད་གཟབ་དགོས་རྒྱུད། རེའུ་མིག་ཤོག་ངོས་འདི་ཁ་བྲལ་སྐབས་བཀོད་སྒྲིག་གསར་པ་ཚང་མ་ལེགས་སེང་ནུས་པ་ཐོན།"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -817,7 +817,7 @@ msgstr "རེའུ་མིག་ཐོ།"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "གཞི་གྲངས་རིགས#type#དེ་དཔེ་རྣམ་ནང་ནས་སུབ་བམ་མི་སུབ།\n དོ་སྣང་བྱེད་རོགས།  དེས་གཞི་གྲངས་རིགས་ཀྱི་ཚོད་འཛིན་ལ་ཤུགས་རྐྱེན་སྤྲད་ཀྱི་ཡོད།"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2297,11 +2297,11 @@ msgstr "གཞི་གྲངས་རིགས་གསར་པར་མིང
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\\n Dev~ice"
-msgstr ""
+msgstr "སྒྲིག་ཆས་\nཆ་འཕྲིན།(~I)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\\nPreview"
-msgstr ""
+msgstr "སྔོན་ལྟ་འཛུགས་པ།"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "བཤར་འབེབས་འཕྲུལ་འཁོར།"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr ""
+msgstr "སྒྲིག་ཆས་%s\n  བཟོ་འདོན་བྱེད་མཁན་%s\n   བཟོ་རྟགས་%s\n  རིགས་%s\n"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."

@@ -61,7 +61,7 @@ msgstr "གསར་སྣོན་ཡིག་གཟུགས།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr ""
+msgstr "དངོས་འབྲེལ་ཡིག་གཟུགས་ཡིག་ཆ་འབྲི་བཅོས་བྱ་འདོད་དམ།\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,15 +73,15 @@ msgstr "མེད།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "ཡིག་གཟུགས་ \n%s\nཡི་སྒྲིག་གཞིའི་ཡིག་ཆ་ཪྙེད་མེད་ ( རྒྱ་སྐྱེད་མིང་.afm )དེས་ན་ཡིག་གཟུགས་འདི་སྒྲིག་འཇུག་བྱ་ཐབས་མེད། རྣམ་གཞག་ཡིག་ཆ་ནི་ ghostscript  ལས་སྐྱེ་གྲུབ་བྱས་  མ་ཟད་འདྲ་མཚུངས་ཀྱི་ཡིག་གཟུགས་དཀར་ཆག་གམ་དེའི་ཡན་ལག་དཀར་ཆག་ afm ནང་འཇོག་ཡིན།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ཡིག་གཟུགས་ཚད་འཇལ་ཡིག་ཆ་\n   %s\nའདྲ་ཕབ་བྱ་ཐབས་མེད། ཡིག་གཟུགས་འདི་སྒྲིག་འཇུག་བྱ་ཐབས་མེད།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ཡིག་གཟུགས་ཡིག་ཆ་\n %s\nའདྲ་ཕབ་བྱ་ཐབས་མེད། ཡིག་གཟུགས་འདི་སྒྲིག་འཇུག་བྱ་ཐབས་མེད།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -289,7 +289,7 @@ msgstr "ཡིག་ཆ་དེར་ཡིག་གཟུགས་ཀྱི་
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr ""
+msgstr "ཡིག་གཟུགས་འཇལ་ཚད་ཡིག་ཆ་\n\n%s\n\nབརྗེ་སྒྱུར་བྱེད་ཐབས་མེད་པའི་རྒྱུ་རྐྱེན་གཤམ་གསལ་\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -353,7 +353,7 @@ msgstr "དེ་ནི་དགོས་ངེས་ཀྱི་འདེད་
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
 msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr ""
+msgstr "་འདེད་སྒུལ་བྱ་རིམ་ \"%s1\"སུབ་ཐབས་བྲལ། ཡིག་ཆ་\n\n%s2\n\nཡག་པོ་སུབ་ཐུབ་མེད།"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

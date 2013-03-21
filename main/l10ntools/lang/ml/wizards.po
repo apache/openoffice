@@ -445,7 +445,7 @@ msgstr "മാതൃക സൃഷ്ടിക്കുക വഴി <വിസ�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "വിസാര്ഡ് പ്രവര്ത്തിപ്പിക്കാന് കഴിയുന്നില്ല പ്രധാനപ്പെട്ട ഫയലുകള് കണ്ടെടുക്കാന് സാധിക്കാത്തതു കൊണ്ടാണ‍്.  'ഉപകരണങ്ങള് - ഐച്ഛികം - %PRODUCTNAME - മാര്ഗ്ഗം' ല് ക്ലിക്ക് ചെയ്ത് 'ഡിഫോള്ട്ട് ബട്ടണ്' ക്ലിക്ക് ചെയ്ത് പുനഃപ്രാപ്തി കൈവരിച്ച് യഥാര്ത്ഥ ഡിഫോള്ട്ട് സജ്ജീകരണത്തിലാക്കുക. വീണ്ടും വിസാര്ഡ് പ്രവര്ത്തിപ്പിക്കുക"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "മണ്ഡലങ്ങള് ....ന്റെ രൂപത്തില
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "ബൈനറി മണ്ഡലങ്ങള് എപ്പോഴും ലിസ്റ്റ് ചെയ്യുകയും ഇടത്തെ ലിസ്റ്റില് നിന്നും തിരഞ്ഞെടുക്കുകയും ചെയ്യാം. \n കഴിയുമെങ്കില്  ഇവയെല്ലാം ചിത്രങ്ങളായി വ്യാഖ്യാനിക്കാം."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "ഉപരൂപമെന്നാല് മറ്റൊരു രൂപത്തില് ചേര്ത്തിരിക്കുന്നത്. \n ഉപരൂപം ഉപയോഗിച്ചു പട്ടികയില് നിന്നോ ചോദ്യത്തില് നിന്നോ ഒന്നിലധികം ബന്ധങ്ങളോടുകൂടി ഡേറ്റാ കാണിക്കാം."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "മണ്ഡലങ്ങളുടെ രൂപത്തില്"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "  '<FIELDNAME1>' ഉം  '<FIELDNAME2>' ഉം ഒരുമിച്ച് രണ്ടുപ്രാവശ്യം തിരഞ്ഞെടുത്തു. \n പക്ഷേ ബന്ധിക്കുന്നത് ഒരു പ്രാവശ്യമേ ഉപയോഗിച്ചുള്ളു."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "ഫോം നാമം സെറ്റ് ചെയ്യുക"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "'%FORMNAME'എന്ന പേരില്‍ ഒരു ഫോം നിലവിലുണ്ടു്.\nദയവായി മറ്റൊരു പേരു് തെരഞ്ഞെടുക്കുക."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "മണ്ഡലം ചേര്ക്കാന് കഴിയുന്�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME'  എന്ന നാമം നിലവിലുണ്ട്. ദയവായി മറ്റൊരു നാമം നല്കുക"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "വെബ് വിസാര്ഡ്"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "ഇന്റര്നെറ്റില് ഡോക്കുമെന്റ് പ്രസിദ്ധീകരിക്കാന് ഈ വെബ് വിസാര്ഡ് താങ്കളെ സഹായിക്കും"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "പൂര്‍വ്വദൃശ്യം"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "തിരഞ്ഞെടുത്ത സജ്ജീകരണങ്ങള് നീക്കം ചെയ്തേക്കും. താങ്കള്ക്ക്  ഈ സജ്ജീകരണങ്ങള് തീര്ച്ചയായും നീക്കം ചെയ്യണോ? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "FTP ഡയറക്ട്രിയില്   '%FILENAME'   സൃഷ്
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "FTP ഡയറക്ട്രിയില്   '%FILENAME'  നിലവിലില്ല. ഇപ്പോള് ഡയറക്ട്രി സൃഷ്ടിക്കണോ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr " '%FILENAME' സിപ് ഫയല് സൃഷ്ടിക്കാന
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr " '%FILENAME'  ലോക്കല് ഡയറക്ട്രി സൃഷ്ടിക്കാന് കഴിയുന്നില്ല. എഴുതിയ-അക്സെസ് ദയവായി പരിശോധിക്കുക"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr " '%FILENAME'  ലോക്കല് ഡയറക്ട്രി നിലവിലില്ല. ഇപ്പോള് ഡയറക്ട്രി സൃഷ്ടിക്കണോ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

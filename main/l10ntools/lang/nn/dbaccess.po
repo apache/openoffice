@@ -73,7 +73,7 @@ msgstr "Datakjelda vart ikkje lagra. Bruk grensesnittet XStorable til å lagra d
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
-msgstr ""
+msgstr "Den gjevne kommandoen er ikkje ei SELECT-setning.\nBerre spørjingar kan brukast."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -189,7 +189,7 @@ msgstr "Det finst tabellar i databasen med namn som er like eksisterande spørji
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\\n\\n$command$"
-msgstr ""
+msgstr "SQL-kommandoen som førte til denne feilen er:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,7 +221,7 @@ msgstr "Klarte ikkje finna dokumentet «$name$»."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\\n$message$"
-msgstr ""
+msgstr "Klarte ikkje lagra dokumentet:\n\n$except$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\\n$error$"
@@ -305,410 +305,330 @@ msgid  "The extension is not installed."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
-#, fuzzy
 msgid  "Database ~name"
 msgstr "Database~namn"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
-#, fuzzy
 msgid  "User settings"
 msgstr "Brukarinnstillingar"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
-#, fuzzy
 msgid  "~Control user"
 msgstr "~Kontrollbrukar"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
-#, fuzzy
 msgid  "~Administrator"
 msgstr "~Administrator"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
-#, fuzzy
 msgid  "~Domain user"
 msgstr "~Domenebrukar"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
-#, fuzzy
 msgid  "P~assword..."
 msgstr "P~assord …"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
-#, fuzzy
 msgid  "~Password..."
 msgstr "~Passord …"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
-#, fuzzy
 msgid  "Passwo~rd..."
 msgstr "Passo~rd …"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
-#, fuzzy
 msgid  "~Backup file"
 msgstr "~Tryggleikskopi"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr " …"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Database settings"
 msgstr "Databaseinnstillingar"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE"
 msgstr "S~YSLAGRINGSEINING"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "TRANSACTI~ONLOG"
 msgstr "TRANSAKSJ~ONSLOGG"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE"
 msgstr "DATALAGRINGS~EINING"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr " …"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr " …"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr " …"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Transaction ~file (MB)"
 msgstr "Transaksjons~fil (MiB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Data~base size (MB)"
 msgstr "Data~basestorleik (MiB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "Data~bufferstorleik (MiB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
-#, fuzzy
 msgid  "Backup file information"
 msgstr "Informasjon om tryggleikskopi"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
-#, fuzzy
 msgid  "Create New Adabas D Database"
 msgstr "Lag ny Adabas D-database"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
-#, fuzzy
 msgid  "No entry could be written in the configuration file."
 msgstr "Klarte ikkje skriva oppføring i oppsettsfila."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
-#, fuzzy
 msgid  "An error occurred as the DB files were being created."
 msgstr "Det oppstod ein feil då DB-filene vart laga."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
-#, fuzzy
 msgid  "An error occurred as the system tables were being created."
 msgstr "Det oppstod ein feil då systemtabellane vart laga."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
-#, fuzzy
 msgid  "The backup file entered does not exist."
 msgstr "Den valde tryggleiksfila finst ikkje."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-#, fuzzy
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
 msgstr "Eit skikkeleg filnamn kan ikkje innehalda meir enn \\'#\\' teikn."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
-#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
 msgstr "Administratoren og kontrollbrukaren kan ikkje ha same namn."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
-#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
 msgstr "Fila $name$ har ikkje fått noko namn."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
-#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
 msgstr "Du må ha administratortilgang for å kunne laga ein ny database"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
-#, fuzzy
 msgid  "The specified file name or directory does not exist."
 msgstr "Filnamnet eller mappa som vart oppgjeve finst ikkje."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
 msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Kunne ikkje laga ein ny database.\nKontroller Adabas D-installasjonen, spesielt variablane «DBROOT» og «DBWORK»."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
-#, fuzzy
 msgid  "Warning!"
 msgstr "Åtvaring!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
-#, fuzzy
 msgid  "Creating database files."
 msgstr "Lagar databasefiler."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
-#, fuzzy
 msgid  "Creating database configuration file."
 msgstr "Lagar oppsettsfil for database."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
-#, fuzzy
 msgid  "Starting database for the first time."
 msgstr "Startar databasen for første gong."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
-#, fuzzy
 msgid  "The name entered already exists."
 msgstr "Namnet du skreiv inn er brukt frå før."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
-#, fuzzy
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
 msgstr "Klarte ikkje gje standardnamn til databasefilene. Namna inneheld meir enn 40 teikn."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
-#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
 msgstr "Klarte ikkje gje standardnamn til databasefilene. Har ikkje skrivetilgang."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
-#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "Den gjeldande databasen må konverterast. Skriv inn brukarnamnet og passordet til kontrollbrukaren."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
-#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
 msgstr "Passordet kan ikkje innehalda mellomrom. Vel eit anna passord."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
-#, fuzzy
 msgid  "Database Document Macro Migration"
 msgstr "Flytting av makroar i databasedokument"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
-#, fuzzy
 msgid  "Prepare"
 msgstr "Førebu"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
-#, fuzzy
 msgid  "Backup Document"
 msgstr "Tryggleikskopier dokumentet"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
-#, fuzzy
 msgid  "Migrate"
 msgstr "Flytt over"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
-#, fuzzy
 msgid  "Summary"
 msgstr "Samandrag"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "Velkommen til vegvisaren for flytting av makroar i databasar"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Denne vegvisaren vil hjelpe deg gjennom prosessen med å flytte over makroane dine.\n\nNår flyttinga er ferdig er alle makroar som tidlegare var innebygde i skjema og rapportar flytte til databasedokumentet. I løpet av denne prosessen får biblioteka, dersom naudsynt, nye namn.\n\nDersom skjemaa og rapportane dine inneheld referansar til makroane, blir desse retta der det er mogleg.\n\nFør flyttinga kan byrja, må alle skjema, rapportar, spørjingar og tabellar lukkast. Trykk på «Neste» for å gjera dette."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
-#, fuzzy
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
 msgstr "Klarte ikkje lukka alle objekta. Lukk dei manuelt og start om att vegvisaren."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Backup your Document"
 msgstr "Tryggleikskopier dokumentet ditt"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
 msgstr "For at du skal kunne gå tilbake til slik det var før flyttinga, blir databasedokumentet tryggleikskopiert til ein stad du vel. Ingen av endringane som blir gjorde av denne vegvisaren blir gjorde med denne tryggleikskopien."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Save To:"
 msgstr "Lagra til:"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
-#, fuzzy
 msgid  "Browse ..."
 msgstr "Bla gjennom …"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
-#, fuzzy
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
 msgstr "Trykk på «Neste» for å lagra ein kopi av dokumentet og starta flyttinga."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Migration Progress"
 msgstr "Framgang i flyttinga"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
 msgstr "Databasen inneheld $forms$ skjema og $reports$ rapport(ar), som blir handsama no:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Current object:"
 msgstr "Gjeldande objekt:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Current progress:"
 msgstr "Gjeldande framgang:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Overall progress:"
 msgstr "Framgang totalt:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
-#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "dokument $current$ av $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
-#, fuzzy
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr "Alle skjema og rapportar er no handsama. Trykk på «Neste» for å sjå eit detaljert samandrag."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Summary"
 msgstr "Samandrag"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
-#, fuzzy
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr "Flyttinga er utførd. Under ser du ein logg over handlingane som er gjorde i dokumentet."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
-#, fuzzy
 msgid  "The migration was not successful. Examine the migration log below for details."
 msgstr "Flyttinga vart ikkje utførd. Sjå flytteloggen under for detaljar."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
-#, fuzzy
 msgid  "Form '$name$'"
 msgstr "Skjema «$name$»"
 
 #: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
-#, fuzzy
 msgid  "Report '$name$'"
 msgstr "Rapport «$name$»"
 
 #: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
-#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "dokument $current$ av $overall$"
 
 #: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
-#, fuzzy
 msgid  "Database Document"
 msgstr "Databasedokument"
 
 #: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
-#, fuzzy
 msgid  "saved copy to $location$"
 msgstr "lagra kopi til $location$"
 
 #: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
-#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
 msgstr "flytte $type$-bibliotek frå «$old$» til «$new$»"
 
 #: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
-#, fuzzy
 msgid  "$type$ library '$library$'"
 msgstr "$type$-biblioteket «$library$»"
 
 #: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
-#, fuzzy
 msgid  "migrating libraries ..."
 msgstr "flyttar bibliotek …"
 
 #: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic"
 msgstr "%PRODUCTNAME Basic"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
-#, fuzzy
 msgid  "JavaScript"
 msgstr "JavaScript "
 
 #: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
-#, fuzzy
 msgid  "BeanShell"
 msgstr "BeanShell "
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
-#, fuzzy
 msgid  "Java"
 msgstr "Java "
 
 #: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
-#, fuzzy
 msgid  "Python"
 msgstr "Python "
 
 #: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
-#, fuzzy
 msgid  "dialog"
 msgstr "dialog"
 
 #: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
-#, fuzzy
 msgid  "Error(s)"
 msgstr "Feil"
 
 #: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings"
 msgstr "Åtvaringar"
 
 #: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
-#, fuzzy
 msgid  "caught exception: "
 msgstr "fanga unntak: "
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
-#, fuzzy
 msgid  "You need to choose a backup location other than the document location itself."
 msgstr "Du må velja ei plassering for tryggleikskopien som ikkje er den same som dokumentplasseringa."
 
@@ -725,97 +645,78 @@ msgid  "Not applicable to read-only documents."
 msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
-#, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "Du kan ikkje bruka det same namnet på ein tabell og ein spørjing. Bruk eit namn som ikkje er brukt på ein tabell eller ei spørjing."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabell"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Spørjing"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
-#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "Tilkoplinga er ikkje ei gyldig spørjing og/eller tabelleverandør."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
-#, fuzzy
 msgid  "The given object is no table object."
 msgstr "Objektet er ikkje eit tabellobjekt."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
-#, fuzzy
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
 msgstr "Ugyldig komposisjonstype. Treng ein verdi frå com.sun.star.sdb.tools.CompositionType."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
-#, fuzzy
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
 msgstr "Ugyldig kommandotype. Berre TABLE og QUERY frå com.sun.star.sdb.CommandType kan brukast."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
-#, fuzzy
 msgid  "Create Form in Design View..."
 msgstr "Lag skjema i utformingsvising …"
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Form..."
 msgstr "Lag skjema med vegvisar …"
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Report..."
 msgstr "Lag rapport med vegvisar …"
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
-#, fuzzy
 msgid  "Create Report in Design View..."
 msgstr "Lag rapport i utformingsvising …"
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
-#, fuzzy
 msgid  "Create Query in Design View..."
 msgstr "Lag spørjing i utformingsvising …"
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
-#, fuzzy
 msgid  "Create Query in SQL View..."
 msgstr "Lag spørjing i SQL-vising …"
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Query..."
 msgstr "Lag spørjing med vegvisar …"
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
-#, fuzzy
 msgid  "Create Table in Design View..."
 msgstr "Lag tabell i utformingsvising …"
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Table..."
 msgstr "Lag tabell med vegvisar …"
 
 #: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
-#, fuzzy
 msgid  "Create View..."
 msgstr "Lag vising …"
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Forms"
 msgstr "Skjema"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Reports"
 msgstr "Rapportar"
 
@@ -860,7 +761,6 @@ msgid  "Create as View"
 msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
-#, fuzzy
 msgid  "Form Wizard..."
 msgstr "Skjemavegvisar …"
 
@@ -1035,8 +935,9 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "Dokumentet inneheld skjema eller rapportar med innebygde makroar."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+#, fuzzy
 msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Makroar bør byggjast inn i sjølve databasedokumentet.\n\nDu kan halda fram med å bruka dokumentet som før, men du blir oppfordra til å flytta over skript og makroar. Menyoppføringa «Verktøy → Flytt over makroar …» hjelper deg med dette.\n\nMerk at du ikkje kan byggja makroar inn i datadasedokumentet før denne flyttinga er gjort. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -1056,107 +957,86 @@ msgid  "The current record has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Vil du sletta de merkte dataa?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
-#, fuzzy
 msgid  "(filtered)"
 msgstr "(filtrert)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
-#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Feil ved setjing av sorteringskriteria"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
-#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Feil ved setjing av filterkriteria"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
-#, fuzzy
 msgid  "Connection lost"
 msgstr "Samband brote"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Spørjingar"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabellar"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "Rediger ~databasefil …"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-#, fuzzy
 msgid  "Registered databases ..."
 msgstr "Registrerte databasar …"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-#, fuzzy
 msgid  "Disco~nnect"
 msgstr "Kopla ~frå"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
-#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Stadfest sletting"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "Vil du sletta tabellen «%1»?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "Denne spørjinga finst frå før. Vil du sletta henne?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
-#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "Mista sambandet til databasen. Vil du kopla til igjen?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Møtte åtvaringar"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
-#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "Databasesambandet rapporterte om åtvaringar ved henting av tabellane."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "Koplar til «$name$» …"
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
-#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Hentar spørjinga $name$ …"
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
-#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Hentar tabellen $name$ …"
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
-#, fuzzy
 msgid  "No table format could be found."
 msgstr "Fann ingen tabellformat."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Klarte ikkje oppretta samband til datakjelda «$name$»."
 
@@ -1165,172 +1045,138 @@ msgid  "Rebuild"
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
-#, fuzzy
 msgid  "Column ~Format..."
 msgstr "~Kolonneformat …"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
-#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Kopier kolonne~skildring"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
-#, fuzzy
 msgid  "Table Format..."
 msgstr "Tabellformat …"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Row Height..."
 msgstr "Radhøgd …"
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
-#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Angra: Inndata"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
-#, fuzzy
 msgid  "Save current record"
 msgstr "Lagra denne posten"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
-#, fuzzy
 msgid  "Query #"
 msgstr "Spørjing #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabell #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
-#, fuzzy
 msgid  "View #"
 msgstr "Vising #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "Namnet «#» finst frå før."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
-#, fuzzy
 msgid  "No matching column names were found."
 msgstr "Fann ingen kolonnenamn som passa."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
-#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "Det oppstod ein feil. Vil du halda fram med kopieringa?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
-#, fuzzy
 msgid  "Data source table view"
 msgstr "Vis datakildetabell"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
-#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "Vis den valde tabellen eller spørjinga."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabell #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
-#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Endra SQL-setning(ar)"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
-#, fuzzy
 msgid  "Table name"
 msgstr "Tabellnamn"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
-#, fuzzy
 msgid  "Insert data"
 msgstr "Set inn data"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
-#, fuzzy
 msgid  "Delete data"
 msgstr "Slett data"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
-#, fuzzy
 msgid  "Modify data"
 msgstr "Endra data"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
-#, fuzzy
 msgid  "Alter structure"
 msgstr "Endra struktur"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
-#, fuzzy
 msgid  "Read data"
 msgstr "Les data"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
-#, fuzzy
 msgid  "Modify references"
 msgstr "Endra referansar"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
-#, fuzzy
 msgid  "Drop structure"
 msgstr "Utelatingsstruktur"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Sorter stigande"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "Sorter synkande"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
-#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "Kan ikkje kopla til SDBC-drivarhandsamaren (#servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
-#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Ingen drivar er registrert for URL-en #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
-#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "Klarte ikkje oppretta samband med URL-en #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
-#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "Kontroller dei noverande innstilingane, dvs. brukarnamn og passord."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
-#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "Sambandet var vellukka, men informasjon om databasetabellar er ikkje tilgjengeleg."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
-#, fuzzy
 msgid  "All tables"
 msgstr "Alle tabellar"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
-#, fuzzy
 msgid  "All views"
 msgstr "Alle visingar"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
-#, fuzzy
 msgid  "All tables and views"
 msgstr "Alle tabellar og visingar"
 
@@ -1725,77 +1571,62 @@ msgid  "<none>"
 msgstr "<ingen>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Innstillingar"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
-#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "Bruk SQL92-namnereglane"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
-#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Legg til tabellaliaset i SELECT-setningar"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
-#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Bruk nøkkelordet AS før tabellalias"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
-#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Bruk ytre samanslåingssyntaks «{OJ}»"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
-#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Ignorer privilegium frå databasedrivaren"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
-#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Byt ut namngjevne parametrar med «?»"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
-#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Vis versjonskolonnar (når dei er tilgjengelege)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Bruk katalognamn i SELECT-setningar"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
-#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Bruk skjemanamn i SELECT-setningar"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
-#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Lag indeks med ASC- eller DESC-setning"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
-#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Avslutt tekstlinjer med CR+LF"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
-#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Sjå vekk frå valutafeltinformasjon"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Kontroll av data i påkravde skjemafelt"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
-#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "Bruk ODBC-gyldige datouttrykk"
 
@@ -1808,27 +1639,22 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Standard"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "Mixed"
 msgstr "Blanda"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
 msgid  "MS Access"
 msgstr "MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
-#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Samanlikning av boolske verdiar"
 
@@ -1837,32 +1663,26 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Innstillingar"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "~Hent ut dei utrekna verdiane"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
-#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "~Automatisk auke"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
-#, fuzzy
 msgid  "~Query of generated values"
 msgstr "~Spørjing på utrekna verdiar"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
-#, fuzzy
 msgid  "Generated Values"
 msgstr "Genererte verdiar"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
-#, fuzzy
 msgid  "Special Settings"
 msgstr "Spesielle innstillingar"
 
@@ -1871,42 +1691,34 @@ msgid  "Advanced Settings"
 msgstr ""
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Lagra"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Create New Directory"
 msgstr "Lag ny mappe"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Eitt nivå opp"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
-#, fuzzy
 msgid  "File ~name:"
 msgstr "F~ilnamn:"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Lagra"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
-#, fuzzy
 msgid  "~Path:"
 msgstr "~Stig:"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Mappe"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Fila finst frå før. Vil du skriva over henne?"
 
@@ -1916,8 +1728,9 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "Du treng eit passord for å kopla til datakjelda «$name$»."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+#, fuzzy
 msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Mappa\n\n$path$\n\nfinst ikkje. Vil du laga henne?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1950,37 +1763,30 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "Marker dei tabellane som programma skal kunna sjå."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Database name"
 msgstr "~Databasenamn"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
-#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "~Tenar/port"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Server"
 msgstr "~Tenar"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
-#, fuzzy
 msgid  "~Port"
 msgstr "~Port"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Standard: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
-#, fuzzy
 msgid  "So~cket"
 msgstr "~Sokkel"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
-#, fuzzy
 msgid  "Named p~ipe"
 msgstr "Namngjeve ~røyr"
 
@@ -1995,32 +1801,26 @@ msgid  "User administration"
 msgstr "Brukaradministrasjon"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabellar"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Spørjingar"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Legg til"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Lukk"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "Legg til tabellar"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Legg til tabell eller spørjing"
 
@@ -2055,22 +1855,18 @@ msgid  "Table Format"
 msgstr "Tabellformat"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "Bruk katalog for filbaserte databasar"
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Connection Settings"
 msgstr "Innstillingar for tilkopling"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Vertsnamn"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
-#, fuzzy
 msgid  "~Port number"
 msgstr "~Portnummer"
 
@@ -2150,8 +1946,9 @@ msgid  "Database"
 msgstr "Database"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "På dei følgjande sidene kan du velja detaljerte innstillingar for tilkoplinga.\n\nDei nye innstillingane du vel her vil overstyra dei du har frå før."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -2169,8 +1966,9 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "Klarte ikkje henta programbiblioteket #lib#, det kan vera øydelagt. ODBC-kjeldeutvalet er ikkje tilgjengeleg."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Denne typen datakjelde er ikkje støtta på denne plattforma.\nDu kan endra innstillingane, men du vil sannsynlegvis ikkje kunna kopla til databasen likevel."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2378,67 +2176,54 @@ msgid  "Insert as"
 msgstr "Set inn som"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Stig til dBASE-filene"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "Stig til tekstfilene"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Stig til reknearket"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "Namn på ODBC-datakjelda"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Namn på MySQL-databasen"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Namn på Oracle-databasen"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Namn på Adabas D-databasen"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
-#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Microsoft Access-databasefil"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
-#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "Ingen fleire innstillingar trengst. Du kan stadfesta at tilkoplinga verkar med «%test»-knappen."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
-#, fuzzy
 msgid  "Datasource URL"
 msgstr "URL til datakjelda"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Vertsnamn"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "~Mozilla-profilnamn"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "~Thunderbird-profilnamn"
 
@@ -2473,167 +2258,134 @@ msgid  "Choose a database"
 msgstr "Vel ein database"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "General"
 msgstr "Generelt"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Vertsnamn"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Brukarautentisering"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "~Brukarnamn"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password required"
 msgstr "Krev passord"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
-#, fuzzy
 msgid  "JDBC properties"
 msgstr "JDBC-eigenskapar"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "~JDBC-drivarklasse"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test Class"
 msgstr "Testklasse"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
-#, fuzzy
 msgid  "Test Connection"
 msgstr "Testtilkopling"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
-#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "Fann ingen Adabas D-datakjelder på systemet."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
-#, fuzzy
 msgid  "Connection Test"
 msgstr "Tilkoplingstest"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "Klarte å kopla til."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection could not be established."
 msgstr "Klarte ikkje kopla til."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
 msgstr "Klarte å lasta inn JDBC-drivaren."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "Klarte ikkje å lasta inn JDBC-drivaren."
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access file"
 msgstr "MS Access-fil"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "MS Access 2007-fil"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
-#, fuzzy
 msgid  "Database files"
 msgstr "Databasefiler"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "SYS~LAGRINGSEINING:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSAKSJONSLOGG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "~DATALAGRINGSEINING:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
-#, fuzzy
 msgid  "Database sizes"
 msgstr "Databasestorleikar"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "~Storleik (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "~Ledig minne (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
-#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "~Minnebruk (i %):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
-#, fuzzy
 msgid  "Database Statistics"
 msgstr "Databasestatistikk"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
-#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Inneheld systemtabellane"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
-#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Inneheld informasjon om transaksjonen"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
-#, fuzzy
 msgid  "Contains all data files"
 msgstr "Inneheld alle datafilene"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
-#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Total storleik på databasefilene"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
-#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Tilgjengeleg plass før ny dataeiningsfil blir laga."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
-#, fuzzy
 msgid  "Currently used memory"
 msgstr "Minne som er i bruk"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
-#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "Klarte ikkje visa informasjon fordi du manglar tilgangsrettar til dei nødvendige systemtabellane."
 
@@ -2873,8 +2625,9 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "Set opp ei tilkopling til ein MySQL-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Du kan kopla til ein MySQL-database med anten ODBC eller JDBC.\nKontakt systemadministratoren dersom du er usikker på dei følgjande innstillingane."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2967,8 +2720,9 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Set opp tilkopling til ein MySQL-database med JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oppgje informasjonen som trengst for å kopla til ein MySQL-database med JDBC. Legg merke til at ein JDBC-drivarklasse må vera installert på systemet og registrert med %PRODUCTNAME.\nKontakt systemadministratoren dersom du er usikker på dei følgjande innstillingane."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -3031,8 +2785,9 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "Set opp ei tilkopling til ein LDAP-katalog"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oppgje informasjonen som trengst for å kopla til ein LDAP-katalog.\nKontakt systemadministratoren dersom du er usikker på dei følgjande innstillingane."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -3050,8 +2805,9 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Set opp ei tilkopling til ein Adabas D-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Oppgje namnet på den Adabas D-databasen du vil kopla til.\nTrykk på «Bla gjennom» for å velja ein Adabas D-database som er registrert frå før i %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -3059,8 +2815,9 @@ msgid  "Set up a connection to an ADO database"
 msgstr "Set opp ei tilkopling til ein ADO-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oppgje URL-en til den ADO-datakjelda du vil kopla til.\nTrykk på «Bla gjennom» for å setja opp innstillingar spesielt for tilbydaren.\nKontakt systemadministratoren dersom du er usikker på dei følgjande innstillingane."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -3068,8 +2825,9 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "Set opp ei tilkopling til ein ODBC-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oppgje namnet på den ODBC-databasen du vil kopla til.\nTrykk på «Bla gjennom» for å velja ein ODBC-database som er registrert frå før i %PRODUCTNAME.\nKontakt systemadministratoren dersom du er usikker på dei følgjande innstillingane."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -3077,8 +2835,9 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "Set opp ei tilkopling til ein JDBC-database"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oppgje den informasjonen som trengst for å kopla til ein JDBC-database.\nKontakt systemadministratoren dersom du er usikker på dei følgjande innstillingane."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -3096,8 +2855,9 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Oracle JDBC-~drivarklasse"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oppgje informasjonen som trengst for å kopla til ein Oracle-database. Legg merke til at ein JDBC-drivarklasse må vera installert på systemet og registrert med %PRODUCTNAME.\nKontakt systemadministratoren dersom du er usikker på dei følgjande innstillingane."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -3105,8 +2865,9 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Set opp ei tilkopling til rekneark"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Trykk på «Bla gjennom» for å velja eit %PRODUCTNAME-rekneark eller ei Microsoft Excel-arbeidsbok.\n%PRODUCTNAME vil opna denne fila i skrivesperra modus."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3282,190 +3043,154 @@ msgid  "Socket"
 msgstr "Sokkel"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
 msgid  "Refresh"
 msgstr "Oppdater"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~View Design"
 msgstr "Ny ~visingsutforming"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Ny ~tabellutforming"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Vegvisar for spørjing …"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Ny ~spørjingsutforming"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
 msgid  "~Edit Query"
 msgstr "~Rediger spørjing"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Ny S~QL-kommando"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Rediger …"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
 msgid  "Column ~Width..."
 msgstr "Kolonne~breidd …"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Vegvisar for rapportar …"
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Vegvisar for skjema …"
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "System"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
-#, fuzzy
 msgid  "Error during creation"
 msgstr "Feil ved oppretting"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Det oppstod ein uventa feil. Klarte ikkje utføra handlinga."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Klarte ikkje opna dokumentet «$file$»."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
-#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "Kan ikkje sletta tabellen fordi databasesambandet ikkje støttar dette."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~Alle"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
-#, fuzzy
 msgid  "Undo:"
 msgstr "Angra:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
-#, fuzzy
 msgid  "Redo:"
 msgstr "Gjer om:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
-#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Fann ingen tilhøyrande kolonnetype for kolonnen «#1»."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Fila «$file$» finst ikkje."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "Det kom åtvaringar ved tilkopling til datakjelda. Trykk «$buttontext$» for å sjå åtvaringane."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "Namnet «$#$» finst frå før.\nVel eit anna namn."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-#, fuzzy
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "Rapporten «$file$» krev utvidinga «Sun rapportbyggjar»."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Apply columns"
 msgstr "Bruk kolonnar"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
-#, fuzzy
 msgid  "Type formatting"
 msgstr "Formateringstype"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\\n"
-msgstr ""
+msgstr "Følgjande felt er alt sette opp som primærnøklar:\n"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
-#, fuzzy
 msgid  "Assign columns"
 msgstr "Tildel kolonnar"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
-#, fuzzy
 msgid  "Copy RTF Table"
 msgstr "Kopier RTF-tabell"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Hjelp"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "~Avbryt"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
-#, fuzzy
 msgid  "< ~Back"
 msgstr "< ~Førre"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next>"
 msgstr "~Neste >"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
-#, fuzzy
 msgid  "C~reate"
 msgstr "O~pprett"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
-#, fuzzy
 msgid  "Existing columns"
 msgstr "Eksisterande kolonnar"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
-#, fuzzy
 msgid  "Column information"
 msgstr "Kolonneinformasjon"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
-#, fuzzy
 msgid  "Automatic type recognition"
 msgstr "Automatisk typegjenkjenning"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
-#, fuzzy
 msgid  "Lines (ma~x)"
 msgstr "Linjer (~høgst)"
 
@@ -3475,74 +3200,61 @@ msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \\n"
-msgstr ""
+msgstr "Kjeldetabell: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \\n"
-msgstr ""
+msgstr "Måltabell: \n"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~Alle"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
-#, fuzzy
 msgid  "Non~e"
 msgstr "~Ingen"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
-#, fuzzy
 msgid  "Ta~ble name"
 msgstr "~Tabellnamn"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Innstillingar"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
-#, fuzzy
 msgid  "De~finition and data"
 msgstr "D~efinisjon og data"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
-#, fuzzy
 msgid  "Def~inition"
 msgstr "De~finisjon"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
-#, fuzzy
 msgid  "A~s table view"
 msgstr "~Som tabellvising"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
-#, fuzzy
 msgid  "Append ~data"
 msgstr "Legg til ~data"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
-#, fuzzy
 msgid  "Use first ~line as column names"
 msgstr "Bruk første ~linje som kolonnenamn"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
-#, fuzzy
 msgid  "Crea~te primary key"
 msgstr "~Lag primærnøkkel"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Namn"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Kopier tabell"
 
 #: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
-#, fuzzy
 msgid  "Copy table"
 msgstr "Kopier tabell"
 
@@ -3551,7 +3263,6 @@ msgid  "This table name is not valid in the current database."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
-#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
 msgstr "Vel alternativet «Legg til data» på den første sida for å leggja data til i ein eksisterande tabell."
 
@@ -3560,389 +3271,314 @@ msgid  "Please change the table name. It is too long."
 msgstr ""
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Innstillingar"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Type"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
-#, fuzzy
 msgid  "Inner join"
 msgstr "Indre samanslåing"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
-#, fuzzy
 msgid  "Left join"
 msgstr "Venstre samanslåing"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
-#, fuzzy
 msgid  "Right join"
 msgstr "Høgre samanslåing"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
-#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Full (ytre) samanslåing"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
-#, fuzzy
 msgid  "Cross join"
 msgstr "Kryssamanslåing"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
-#, fuzzy
 msgid  "Natural"
 msgstr "Naturleg"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
-#, fuzzy
 msgid  "Tables involved"
 msgstr "Involverte tabellar"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Fields involved"
 msgstr "Involverte felt"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
-#, fuzzy
 msgid  "Join Properties"
 msgstr "Eigenskapar for samanslåing"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
-#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "Legg merke til at enkelte databasar kanskje ikkje støttar denne typen samanslåing."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
-#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "Ta berre med postar der innhaldet i dei relaterte felta i begge tabellane er identisk."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "Inneheld ALLE postane frå tabellen «%1», men berre postar frå tabellen «%2» der verdiane i dei relaterte felta passar."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Inneheld ALLE postane frå «%1» og frå «%2»."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
-#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Inneheld det kartesiske produktet av ALLE postane frå «%1» og frå «%2»."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "Inneheld berre éi kolonne for kvart par av kolonnar med same namn frå «%1» og frå «%2»."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
-#, fuzzy
 msgid  "Add Table Window"
 msgstr "Legg til tabellvindauge"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
-#, fuzzy
 msgid  "Move table window"
 msgstr "Flytt tabellvindauge"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
-#, fuzzy
 msgid  "Insert Join"
 msgstr "Set inn samband"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
-#, fuzzy
 msgid  "Delete Join"
 msgstr "Slett samanslåing"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
-#, fuzzy
 msgid  "Resize table window"
 msgstr "Endra storleik på tabellvindauget"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Slett kolonne"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "Flytt kolonne"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "Legg til kolonne"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Ugyldig uttrykk. Tabellnamnet «$name$» finst ikkje."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Ugyldig uttrykk. Feltnamnet «$name$» finst ikkje."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
-#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Spørjinga dekkjer #num# tabellar. Den valde databasetypen kan berre handsama #maxnum# tabellar per setning."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
-#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Slett tabellvindauge"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Rediger kolonneskildring"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "Juster kolonnebreidd"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
-#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(ikkje sortert);stigande;synkande"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
-#, fuzzy
 msgid  "(no function);Group"
 msgstr "(ingen funksjon);Gruppe"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
-#, fuzzy
 msgid  "(no table)"
 msgstr "(ingen tabell)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
-#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "Denne databasen støttar berre sortering av synlege felt."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Funksjonar"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
-#, fuzzy
 msgid  "Table Name"
 msgstr "Tabellnamn"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
-#, fuzzy
 msgid  "Alias"
 msgstr "Alias"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
-#, fuzzy
 msgid  "Distinct Values"
 msgstr "Unike verdiar"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
-#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Felt;Alias;Tabell;Sorter;Synleg;Funksjon;Kriterium;Eller;Eller"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
-#, fuzzy
 msgid  "There are too many columns."
 msgstr "Det er for mange kolonnar."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Kan ikkje bruka vilkår på feltet [*]"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
-#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "SQL-setninga er for lang."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
-#, fuzzy
 msgid  "Query is too complex"
 msgstr "Spørjinga er for kompleks"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
-#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Ingenting er valt."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
-#, fuzzy
 msgid  "Too many search criteria"
 msgstr "For mange søkjekriterium"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
-#, fuzzy
 msgid  "SQL syntax error"
 msgstr "SQL-syntaksfeil"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "Kan ikkje bruka [*] som søkjekriterium."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
-#, fuzzy
 msgid  "There are too many tables."
 msgstr "Det er for mange tabellar."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
-#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Setninga kan ikkje brukast med SQL-dialekten til denne databasen."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
-#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Feltnamnet finst ikkje eller er ikkje eintydig"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
-#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Klarte ikkje handsama samanslåing"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Syntaksfeil i SQL-setninga"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support table views."
 msgstr "Denne databasen støttar ikkje tabellvising."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "Denne databasen støttar ikkje endring av tabellvisingar."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
-#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Vil du laga ei spørjing i staden?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created."
 msgstr "Klarte ikkje laga spørjing."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Klarte ikkje laga spørjing fordi ingen felt var valde."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
-#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "Den tilhøyrande datakjelda er sletta. Difor kan ikkje data som er knytt til datakjelda lagrast."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Kolonnenamnet «$name$» er ukjent."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
-#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Du kan berre samanlikna kolonnar ved å bruka «=»."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
-#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Du må bruka eit kolonnenamn før «LIKE»."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
-#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "Fann ikkje kolonnen. Hugs at databasen skil mellom store og små bokstavar."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " – %PRODUCTNAME Base: Spørjingsutforming"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " – %PRODUCTNAME Base: Visingsutforming"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ er endra.\nVil du lagra endringane?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ er basert på ein SQL-kommand som ikkje kunne tolkast."
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
 msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
-msgstr ""
+msgstr "$object$ vert opna i SQL-vising."
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
-#, fuzzy
 msgid  "The table view"
 msgstr "Tabellvisinga"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
-#, fuzzy
 msgid  "The query"
 msgstr "Spørjinga"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
-#, fuzzy
 msgid  "The SQL statement"
 msgstr "SQL-setninga"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
-#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "Spørjinga gir ikkje noko resultatsett, og kan difor ikkje vera ein del av ei anna spørjing."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
-#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Begge parametrane «ActiveConnection» og «DataSourceName» manglar eller er feil. Kan ikkje starta spørjingsutforminga."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
-#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Denne relasjonen finst frå før. Vil du redigera han eller laga ein ny?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Rediger …"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Lag …"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " – %PRODUCTNAME Base: Relasjonsutforming"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Databasen støttar ikkje relasjonar."
 
@@ -3951,71 +3587,58 @@ msgid  "The relation design has been changed.\\nDo you want to save the changes?
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
-#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Dersom du slettar denne tabellen, blir òg alle dei tilhøyrande relasjonane sletta. Vil du halda fram?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Databasen klarte ikkje oppretta relasjonen. Det kan henda framandnøklar ikkje er støtta for denne typen tabellar.\nDu bør sjekka databasedokumentasjonen."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
-#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Ukjent;Tekst;Tal;Dato/klokkeslett;Dato;Klokkeslett;Ja/nei;Valuta;Notat;Teljar;Bilete;Tekst (fast);Desimal;Binær (fast);Binær;Stort heiltal;Dobbel;Flyttal;Reell;Heiltal;Lite heiltal;Ekstra lite heiltal;SQL Null;Objekt;Distinkt;Struktur;Felt;BLOB;CLOB;REF;ANNA"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Set inn / fjern primærnøkkel"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Ja"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Nei"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "Stigande"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "Synkande"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<ingen>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Feltnamn"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Field Name"
 msgstr "Feltnamn"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field ~type"
 msgstr "Felt~type"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field Type"
 msgstr "Felttype"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
-#, fuzzy
 msgid  "Field length"
 msgstr "Feltlengd"
 
@@ -4138,12 +3761,14 @@ msgid  "Format example"
 msgstr "Formatdøme"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Vel ein verdi som skal visast i alle nye postar som standard.\nDersom du ikkje vil at feltet skal ha ein standardverdi, vel den tomme strengen."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+#, fuzzy
 msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Skriv inn ein standardverdi for dette feltet. \n\nNår du seinare skriv inn data i tabellen, vil denne strengen bli brukt i kvar nye post i det valde feltet. Det bør difor tilsvara celleformatet som du må skriva inn nedanfor."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 #, fuzzy
@@ -4161,8 +3786,9 @@ msgid  "Enter the number format."
 msgstr "Skriv inn talformatet."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+#, fuzzy
 msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Vel kor lange datastrengar som kan skrivast i dette feltet.\n\nDersom det er eit desimalfelt, vel du her det største talet på siffer i talet. For binærfelt gjeld det lengda på datablokka.\nVerdien vil bli retta i forhold til dette når han går over det største tilletne for denne databasen."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 #, fuzzy
@@ -4180,8 +3806,9 @@ msgid  "This is where you determine the output format of the data."
 msgstr "Her avgjer du presentasjonsformatet for dataa."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Vel dette dersom feltet skal innehalda verdiar som aukar automatisk.\n\nDu kan ikkje skriva inn datafelt av denne typen. Ein verkeleg verdi vil bli gitt kvar nye post automatisk (som eit resultat av aukinga i posten før)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 #, fuzzy
@@ -4246,8 +3873,9 @@ msgid  "No primary key"
 msgstr "Ingen primærnøkkel"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
-msgstr ""
+msgstr "Ein eintydig indeks eller ein primærnøkkel trengst for å identifisera datapostar i denne databasen.\nDu kan ikkje skriva inn data i denne tabellen dersom ikkje eitt av desse to strukturelle vilkåra er møtte.\n\nVil du laga ein primærnøkkel no?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 #, fuzzy
@@ -4280,12 +3908,14 @@ msgid  "A~uto-increment statement"
 msgstr "A~utomatisk auke"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Skriv inn eit SQL-uttrykk for aukefeltet.\n\nDette uttrykket vil bli overført direkte til databasen når tabellen blir laga."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Fann ikkje informasjon om typen i databasen.\nTabellutforminga er ikkje tilgjengeleg for denne datakjelda."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 #, fuzzy
@@ -4308,52 +3938,42 @@ msgid  "change field attribute"
 msgstr "endra feltattributt"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Hugs passordet heile økta"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~Hugs passordet"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Måldatabasen støttar ikkje visingar."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Måldatabasen støttar ikkje primærnøklar."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
-#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "Fann ingen skildrar for datatilgang, eller ingen skildrar som gav all informasjonen som trengdest."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
-#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Berre tabellar og spørjingar er støtta."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
-#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Resultatsettet til kopikjelda må støtta bokmerke."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Kolonnetypen $type$ i kolonneposisjon $pos$ er ikkje støtta."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
-#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Ugyldig tal på oppstartsparametrar."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
-#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Det oppstod ein feil under oppstarten."
 

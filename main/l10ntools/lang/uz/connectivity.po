@@ -389,7 +389,7 @@ msgstr "$filename$ faylini yuklab boʻlmadi."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
-msgstr ""
+msgstr "Faylni yuklash quyidagi xatolik xabarini berdi($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -605,11 +605,11 @@ msgstr "KDE manzillar daftariga murojaat qilish uchun KDE $major$.$minor$ versiy
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
-msgstr ""
+msgstr "Topilgan KDE versiyasi juda yangi. Faqat $major$.$minor$ versiyalar ushbu mahsulot bilan ishlay oladi.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
-msgstr ""
+msgstr "Agar KDE ishlayotganiga ishonchingiz komil boʻlsa, versiyani tekshirishni quyidagi Basic makrosini bajarish bilan toʻxtatishingiz mumkin:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."

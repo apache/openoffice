@@ -153,11 +153,11 @@ msgstr "নতুন নির্দেশিকা তৈরি করুন"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
-msgstr ""
+msgstr "'${DIR}'  নির্দেশিকাটি উপস্থিত নেই।\nআপনি কি এটি এখন তৈরি করতে চান?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "'${DIR}' নির্দেশিকাটি উপস্থিত নেই।\nআপনি কি এটি এখন তৈরি করতে চান অথবা অন্য একটি  নির্দেশিকা নির্বাচন করতে চান?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -261,7 +261,7 @@ msgstr "সামনে যেতে 'পরবর্তী' ক্লিক ক
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "নোট: এই সংস্থাপনটি রুটের সুবিধা ব্যতীত সম্পন্ন হবে। তাই আপনি কার্যকারিতা কম হবে (জাভা রানটাইম এনভায়রনমেন্ট (JRE) সংস্থাপন করা যাবে না, সিস্টেমের একত্রীকরণ করা সম্ভব নয়)।\nযদি আপনি পূর্ণ কার্যকারিতা পেতে চান তাহলে 'বাতিল' ক্লিক করুন এবং আপনার সুবিধাসমূহ রুটের সুবিধাতে পরিবর্তন করুন।"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -433,7 +433,7 @@ msgstr "বিশ্লেষণ করা হচ্ছে  ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\\nPlease wait a moment ..."
-msgstr ""
+msgstr "উপাত্ত ভান্ডার বিশ্লেষণ করা হচ্ছে\nঅনুগ্রহ করে এক মূহুর্ত অপেক্ষা করুন ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

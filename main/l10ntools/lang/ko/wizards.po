@@ -445,7 +445,7 @@ msgstr "<current_date>에 <wizard_name>을(를) 통해 만든 서식 파일"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "중요한 파일을 찾을 수 없어 마법사를 실행할 수 없습니다.\n[도구] - [옵션] - [%PRODUCTNAME] - [경로]에서 [기본값] 버튼을 클릭하여 경로를 원래 기본 설정으로 재설정하십시오.\n그런 다음 마법사를 다시 실행하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "양식 필드(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "이진 필드는 항상 나열되며 왼쪽 목록에서 선택할 수 있습니다.\n가능한 경우 이진 필드는 이미지로 해석됩니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "하위 양식은 다른 양식에 삽입된 양식입니다.\n하위 양식을 사용하여 1대다 관계를 가진 테이블 또는 쿼리의 데이터를 표시할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "양식 내의 필드"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' 및 '<FIELDNAME2>' 조인이 두 번 선택되었습니다.\n조인은 한 번만 사용할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "양식 이름을 설정하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "이름이 '%FORMNAME'인 양식이 이미 있습니다.\n다른 이름을 선택하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "데이터베이스 테이블에 허용되는 최대 필드 수인 %COUNT
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME'은(는) 이미 있는 이름입니다.\n다른 이름을 입력하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "웹 마법사"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "이 웹 마법사는 문서를 인터넷에 게시할 수 있도록 도와 줍니다.\n\n이 마법사는 웹 브라우저에서 볼 수 있도록 문서를 변환합니다. 또한 문서에 쉽게 액세스하기 위한 링크가 있는 목차 페이지를 생성합니다. 또한 웹 마법사를 사용하면 웹 사이트의 디자인 및 레이아웃을 사용자 정의할 수 있습니다.\n\n웹에 게시한 문서를 최신 상태로 유지할 수 있고 언제든지 문서를 추가하거나 제거할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "미리보기"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "선택한 설정을 삭제합니다.\n\n이 설정을 삭제하시겠습니까? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "FTP 디렉토리 '%FILENAME'을(를) 만들 수 없습니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "FTP 디렉토리 '%FILENAME'이(가) 없습니다.! \n지금 디렉토리를 만드시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Zip 파일 '%FILENAME'을(를) 만들 수 없습니다. 동일한 이름
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "로컬 디렉토리 '%FILENAME'을(를) 만들 수 없습니다. \n쓰기 권한이 있는지 확인하십시오."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "로컬 디렉토리 '%FILENAME'이(가) 없습니다. \n지금 디렉토리를 만드시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

@@ -971,12 +971,14 @@ msgid  "~Delete"
 msgstr "~വെട്ടി മാറ്റുക"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr " ചിത്ര മാപ്പ് പരിഷ്കരിച്ചു. താങ്കളക്ക് മാറ്റം സംഭരിക്കണോ ?"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr " ചിത്ര മാപ്പ് പരിഷ്കരിച്ചു. താങ്കളക്ക് മാറ്റം സംഭരിക്കണോ ?"
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1293,12 +1295,10 @@ msgid  "Line of text"
 msgstr "ടെക്സ്റ്റിലെ രേഖ"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "നിറങ്ങള്‍"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
-#, fuzzy
 msgid  "Source color"
 msgstr "ഉറവിട നിറം"
 
@@ -1385,8 +1385,9 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME രേഖ വീണ്ടെടുക്കല്‍"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
-msgstr ""
+msgstr "താഴെ പറഞ്ഞിരിക്കുന്ന രേഖകള്‍ വീണ്ടെടുക്കുന്നതിനായി, 'വീണ്ടെടുക്കുക' എന്നതു് ആമര്‍ത്തുക.\n\n രേഖ വീണ്ടെടുക്കാന്‍ പറ്റുമോ എന്നതു് 'അവസ്ഥ' എന്ന നിര വ്യക്തമാക്കുന്നു."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1399,8 +1400,9 @@ msgid  "Status of recovered documents:"
 msgstr "വിണ്ടെടുത്ത ഡോക്കുന്റുകളുടെ സ്ഥിതി"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
+#, fuzzy
 msgid  "Document Name\\tStatus"
-msgstr ""
+msgstr "രേഖയുടെ പേരു്\tഅവസ്ഥ"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1448,8 +1450,9 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "%PRODUCTNAME-നു് എന്തു് സംഭവിച്ചു എന്നു് കണ്ടുപിടിക്കുന്നതിനായി ഒരു റിപോര്‍ട്ട് തയ്യാറാക്കിയിട്ടുണ്ടു്. പിശകിനുള്ള റിപോര്‍ട്ട് പ്രയോഗത്തിലേക്ക് പോകുന്നതിയായി 'അടുത്തതു്' ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കില്‍ ഈ നടപടി ഉപേക്ഷിക്കുന്നതിനായി 'റദ്ദാക്കുക' അമര്‍ത്തുക."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
+#, fuzzy
 msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
-msgstr ""
+msgstr "നിങ്ങളുടെ രേഖകള്‍ വീണ്ടെടുത്തു.\nഅവ കാണുന്നതിനായി 'പൂര്‍ത്തിയായി' എന്നതു് ക്ലിക്ക് ചെയ്യുക."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1462,8 +1465,9 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "താങ്കള്ക്ക് തീര്ച്ചായായും %PRODUCTNAME ഡോക്കുമെന്റു വീണ്ടെടുക്കല് റദ്ദാക്കണോ"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
+#, fuzzy
 msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr ""
+msgstr "സ്വയം വീണ്ടെടുക്കല് തടസപ്പെട്ടു"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1491,8 +1495,9 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "PRODUCTNAME %PRODUCTVERSION തെറ്റ് റിപ്പോര്ട്ടിലേക്ക് സ്വാഗതം"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
+#, fuzzy
 msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
-msgstr ""
+msgstr "ഈ തെറ്റു ചൂണ്ടികാണിക്കുന്ന ഉപകരണം എങ്ങനെ %PRODUCTNAME പ്രവര്ത്തിക്കുമെന്നും അതിന്റെ ഭാവി പരിഭാഷ മെച്ചപ്പെടുത്താന്  സണ് മൈക്രോസിസ്റ്റത്തിന് അയയ്ക്കുകയും ചെയ്യും"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
 #, fuzzy
@@ -1535,8 +1540,9 @@ msgid  "~Options..."
 msgstr "ഐച്ഛികം"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.CB_ERRSEND_CONTACT.CheckBox.Text
+#, fuzzy
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "ഈ റിപ്പോര്ട്ട് അനുസരിച്ച് സണ് മൈക്രോസിസ്റ്റം എന്നെ കാണുന്നതിന‌് ഞാന് അനുവദിക്കും."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_SEND.FT_ERRSEND_EMAILADDR.FixedText.Text
 #, fuzzy
@@ -1594,8 +1600,9 @@ msgid  "~Port"
 msgstr "പോര്ട്ട്"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "ഇന്റര്നെറ്റില്  കണക്ട് ചെയ്തിരിക്കുന്ന %PRODUCTNAME തെറ്റ് റിപ്പോര്ട്ടു ചെയ്യുന്ന ഉപകരണം തെറ്റ് അയ്ക്കാന് കഴിവുള്ളതായിരിക്കണം"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -3961,8 +3968,9 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
+#, fuzzy
 msgid  "The contour has been modified.\\nDo you want to save the changes?"
-msgstr ""
+msgstr "പരിവേഷം പരിഷ്കരിച്ചു. താങ്കള്ക്ക്  മാറ്റം സംഭരിക്കണോ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -3970,8 +3978,9 @@ msgid  "Do you want to create a new contour?"
 msgstr "താങ്കള്ക്ക് പുതിയ പരിവേഷം സൃഷ്ടിക്കണോ ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
+#, fuzzy
 msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
-msgstr ""
+msgstr " പുതിയ ജേലിസ്ഥം സജ്ജീകരിക്കുന്നത് വഴി  പരിവേഷം നീക്കം ചെയ്യാന് സാധ്യതയുണ്ട്. താങ്കള്ക്ക് മുന്നോട്ടു പോകണോ?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4543,522 +4552,418 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
-#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "ത്രിമാന കറങ്ങുന്ന വസ്തു സൃഷ്ടിക്കുക"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "വസ്തുക്കള് ചേര്ക്കുക"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
-#, fuzzy
 msgid  "Number of segments"
 msgstr "ഭാഗങ്ങള്ക്ക ക്രമസംഖ്യയിടുക"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
-#, fuzzy
 msgid  "Object depth"
 msgstr "വസ്തുവിന്റെ ആഴം"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
-#, fuzzy
 msgid  "Focal length"
 msgstr "ലെന്സിന്റെ മദ്ധ്യത്തില് നിന്നും കേന്ദ്രബിന്ദുവിലേക്കുള്ള ദൂരം"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
-#, fuzzy
 msgid  "Camera position"
 msgstr "ക്യാമറയുടെ സ്ഥാനം"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
-#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "3D വസ്തു കറക്കുക"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
-#, fuzzy
 msgid  "Create extrusion object"
 msgstr "നിഷ്കാസന വസ്തു സൃഷ്ടിക്കുക"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
-#, fuzzy
 msgid  "Create rotation object"
 msgstr "കറങ്ങുന്ന വസ്തു സൃഷ്ടിക്കുക"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
-#, fuzzy
 msgid  "Split 3D object"
 msgstr "3D വസ്തു വിഭജിക്കുക"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
-#, fuzzy
 msgid  "3D Attributes"
 msgstr "ത്രിമാന ആറ്റ്റിബ്യൂട്സ്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "ത്രിമാന പ്രഭാവം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Geometry"
 msgstr "ക്ഷേത്രഗണിതം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Shading"
 msgstr "നിഴലിക്കുക"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Illumination"
 msgstr "Illumination"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Textures"
 msgstr "Textures"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Material"
 msgstr "Material"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Update"
 msgstr "പുതുക്കുക"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Assign"
 msgstr "നല്കുക"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to 3D"
 msgstr "ത്രിമാനമാക്കുക."
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "ലേത്ത് വസ്തുവായി മാറ്റുക"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "വീക്ഷണം ഓണ്/ ഓഫ്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
-#, fuzzy
 msgid  "Geometry"
 msgstr "ക്ഷേത്രഗണിതം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
-#, fuzzy
 msgid  "R~ounded edges"
 msgstr "ഉരുണ്ട അറ്റം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
-#, fuzzy
 msgid  "~Scaled depth"
 msgstr "അളന്ന ആഴം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
-#, fuzzy
 msgid  "~Rotation angle"
 msgstr "കറങ്ങുന്ന കോണം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr " ഡിഗ്രീ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Depth"
 msgstr "ആഴം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
-#, fuzzy
 msgid  "Segments"
 msgstr "ഘടകം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
-#, fuzzy
 msgid  "~Horizontal"
 msgstr "കുറുകെ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "കുത്തനെ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
-#, fuzzy
 msgid  "Normals"
 msgstr "സാധാരണ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Flat"
 msgstr "Flat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Spherical"
 msgstr "ഗോളാകാരം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Invert Normals"
 msgstr "സാധാരണമായത് തിരിക്കുക"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "രണ്ടുതലവും തിളങ്ങുന്ന"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Double-Sided"
 msgstr "ഇരുവശവും"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "രീതി"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
-#, fuzzy
 msgid  "Flat"
 msgstr "Flat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
-#, fuzzy
 msgid  "Phong"
 msgstr "ഫോംഗ്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
-#, fuzzy
 msgid  "Gouraud"
 msgstr "ഗ്വോരഡ്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "നിഴല്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "ത്രിമാന നിഴല് ഓണ്/ ഓഫ്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
-#, fuzzy
 msgid  "S~urface angle"
 msgstr "പ്രതലകോണം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
-#, fuzzy
 msgid  " degree(s)"
 msgstr " ഡിഗ്രീ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
-#, fuzzy
 msgid  "Camera"
 msgstr "ക്യാമറ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "ദൂരം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
-#, fuzzy
 msgid  "~Focal length"
 msgstr "ലെന്സിന്റെ മദ്ധ്യത്തില് നിന്നും കേന്ദ്രബിന്ദുവിലേക്കുള്ള ദൂരം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Shading"
 msgstr "നിഴലിക്കുക"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "പ്രകാശ ഉറവിടം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 1"
 msgstr "പ്രകാശ ഉറവിടം 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 2"
 msgstr "പ്രകാശ ഉറവിടം 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 3"
 msgstr "പ്രകാശ ഉറവിടം 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 4"
 msgstr "പ്രകാശ ഉറവിടം 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 5"
 msgstr "പ്രകാശ ഉറവിടം 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 6"
 msgstr "പ്രകാശ ഉറവിടം 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 7"
 msgstr "പ്രകാശ ഉറവിടം 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Light Source 8"
 msgstr "പ്രകാശ ഉറവിടെ 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "ചുറ്റുമുള്ള പ്രകാശം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "Illumination"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "രീതി"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Black & White"
 msgstr "കറുപ്പും വെളുപ്പും"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Color"
 msgstr "നിറം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
-#, fuzzy
 msgid  "~Mode"
 msgstr "രീതി"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Only Texture"
 msgstr "തന്തു മാത്രം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture and Shading"
 msgstr "തന്തുവും നിഴലും"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "തന്തുവും നിഴലും നിറവും"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
-#, fuzzy
 msgid  "~Projection X"
 msgstr "മുന്നോട്ടുന്തി നില്ക്കുന്ന  X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "സമാന്തരമായി"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Circular"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
-#, fuzzy
 msgid  "P~rojection Y"
 msgstr "മുന്നോട്ടുന്തി നില്ക്കുന്ന Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Parallel"
 msgstr "സമാന്തരമായി"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Circular"
 msgstr "Circular"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
-#, fuzzy
 msgid  "~Filtering"
 msgstr "ഫല്ട്ടറിങ്ങ്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "ഫില്ട്ടറിങ്ങ് ഓണ് /ഓഫ്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
-#, fuzzy
 msgid  "Textures"
 msgstr "Textures"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
-#, fuzzy
 msgid  "~Favorites"
 msgstr "ഇഷ്ടപ്പെട്ട"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
-#, fuzzy
 msgid  "User-defined"
 msgstr "ഉപഭോക്താവ് നിര്ണ്ണയിച്ച"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
-#, fuzzy
 msgid  "Metal"
 msgstr "ധാതു"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
-#, fuzzy
 msgid  "Gold"
 msgstr "സ്വര്ണ്ണം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
-#, fuzzy
 msgid  "Chrome"
 msgstr "ക്രോം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
-#, fuzzy
 msgid  "Plastic"
 msgstr "പ്ലാസ്റ്റിക്"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
-#, fuzzy
 msgid  "Wood"
 msgstr "തടി"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Object color"
 msgstr "വസ്തുവിന്റെ നിറം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
-#, fuzzy
 msgid  "~Illumination color"
 msgstr "തിങ്ങുന്ന നിറം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
-#, fuzzy
 msgid  "Specular"
 msgstr "അനുമാനിക്കുന്ന"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "നിറം"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
-#, fuzzy
 msgid  "I~ntensity"
 msgstr "തീവ്രത"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
-#, fuzzy
 msgid  "Material"
 msgstr "Material"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
-#, fuzzy
 msgid  "Favorite"
 msgstr "ഇഷ്ടപ്പെട്ട"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
-#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
-#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
-#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
-#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -5067,112 +4972,90 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
-#, fuzzy
 msgid  "Delete Rows"
 msgstr "നിരകള് നീക്കം ചെയ്യുക"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
-#, fuzzy
 msgid  "Save Record"
 msgstr "റിക്കോര്ഡുകള് സംഭരിക്കുക"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "ശിഥിലീകരിക്കുിക: ഡേറ്റാ പ്രവേശനം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
-#, fuzzy
 msgid  "Insert ~Column"
 msgstr "സ്തംഭം ചേര്ക്കുക"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "ടെക്സ്റ്റ് ബോക്സ്"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "ചെക്ക് ബോക്സ്"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "കോന്പോ ബോക്സ്"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "ലിസ്റ്റ് ബോക്സ്"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "തീയതി മണ്ഡലം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "സമയ മണ്ഡലം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "സംഖ്യാ മണ്ഡലം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr " കറന്സി മണ്ഡലം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "മാതൃക മണ്ഡലം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "രൂപരേഖചെയ്ത മണ്ഡലം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
-#, fuzzy
 msgid  "Date and Time Field"
 msgstr "തീയതിയുടെയും സമയത്തിന്റെയും മണ്ഡലം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Replace with"
 msgstr " മാറ്റി സ്ഥാപിക്കുക"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "സ്തംഭം നീക്കം ചെയ്യുക"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
-#, fuzzy
 msgid  "~Hide Column"
 msgstr "സ്തംഭങ്ങള് ഗുപ്തമാക്കുക"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
-#, fuzzy
 msgid  "~More..."
 msgstr "കൂടുതല്..."
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~All"
 msgstr "എല്ലാം"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
-#, fuzzy
 msgid  "~Show Columns"
 msgstr "സ്തംഭങ്ങള് കാണിക്കുക"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Column..."
 msgstr "സ്തംഭം..."
 
@@ -5187,8 +5070,9 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "ഇന്പുട്ടിന‍്'#' മണ്ഡലം ആവശ്യമാണ‍്. ദയവായി മൂല്യം പ്രവേശിപ്പിക്കുക ."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
+#, fuzzy
 msgid  "Entry already exists.\\nPlease choose another name."
-msgstr ""
+msgstr "പ്രവേശനം നിലവിലുണ്ട്. ദയവായി മറ്റൊരു പേര‍് തിരഞ്ഞെടുക്കുക."
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 #, fuzzy
@@ -5286,8 +5170,9 @@ msgid  "# records will be deleted."
 msgstr "  # റിക്കോര്ഡുകള് നീക്കം ചെയ്യണം"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
+#, fuzzy
 msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
-msgstr ""
+msgstr "താങ്കള് ശരി ക്ലിക്ക് ചെയ്യുകയാണെങ്കില് താങ്കള്ക്ക് ഈ പ്രവൃത്തി  ശിഥിലീകരിക്കാന് കഴിയില്ല!\n താങ്കള്ക്ക് ഏതെങ്കിലും വിധത്തില് തുടരണോ?"
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 #, fuzzy
@@ -5959,62 +5844,50 @@ msgid  "I~s not Null"
 msgstr "ശൂന്യമല്ലാത്ത"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Item"
 msgstr "വസ്തു ചേര്‍ക്കുക"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Element"
 msgstr "ഘടകം ചേര്ക്കുക"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Add Attribute"
 msgstr "വിശേഷത ചേര്‍ക്കുക"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "ചിട്ടപ്പെടുത്തുക"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
-#, fuzzy
 msgid  "~Models"
 msgstr "മാതൃകകള്"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~ചേര്‍ക്കുക..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "പുനഃനാമകരണം..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "നീക്കം ചെയ്യുക"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
-#, fuzzy
 msgid  "Instance"
 msgstr "ഇന്‍സ്റ്റന്‍സ്"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
-#, fuzzy
 msgid  "Submissions"
 msgstr "നിവേദനം"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
-#, fuzzy
 msgid  "Bindings"
 msgstr "തടുക്കുന്ന"
 
@@ -6024,7 +5897,6 @@ msgid  "~Instances"
 msgstr "ക്ഷണം"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~ചേര്‍ക്കുക..."
 
@@ -6518,268 +6390,218 @@ msgid  "~Edit"
 msgstr "~ചിട്ടപ്പെടുത്തുക"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
-#, fuzzy
 msgid  "Gallery"
 msgstr "ഗ്യാലറി"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
-#, fuzzy
 msgid  "Update"
 msgstr "പരിഷ്കരണം"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
-#, fuzzy
 msgid  "This file cannot be opened"
 msgstr " ഈ ഫയല് തുറക്കാന് കഴിയില്ല."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
-#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "അസാധുവായ വിഷയനാമം !"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
 msgid  "Do you really want to\\ndelete this object?"
-msgstr ""
+msgstr "താങ്കള്ക്ക് ഈ വസ്തു നീക്കം ചെയ്യണോ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
 msgid  "Do you really want to\\ndelete this theme?"
-msgstr ""
+msgstr "താങ്കള്ക്ക് ഈ വിഷയം  നീക്കം ചെയ്യണോ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
-#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "തരംഗ-ശബ്ദ ഫയല്"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
-#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "ആഡിയോ പരസ്പരം മാറ്റുന്ന ഫയല് രൂപരേഖ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
-#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU - ശബ്ദ ഫയല്"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
-#, fuzzy
 msgid  "Graphics filter"
 msgstr "ഗ്രാഫിക്സ് ഫില്ട്ടര്"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
-#, fuzzy
 msgid  "Length:"
 msgstr "നീളം"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "പരിമാണം"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
-#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "താങ്കള്ക്ക് ബന്ധിപ്പിച്ച ഫയല്  നീക്കം ചെയ്യണോ ?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
 msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
-msgstr ""
+msgstr "ഫയല് തുറക്കാന് കഴിയില്ല.\n താങ്കള്ക്ക് വോറൊരു അന്വേഷണ പാത പ്രവേശിപ്പിക്കണോ? "
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
-#, fuzzy
 msgid  "New Theme"
 msgstr "പുതിയ  വിഷയം"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "പ്രയോക്താവ്"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
 msgid  "This theme name already exists.\\nPlease choose a different one."
-msgstr ""
+msgstr "ഈ വിഷയത്തിന്റെ പേര‍് നിലവിലുണ്ട്. ദയവായി മറ്റൊരു  പേര‍് തിരഞ്ഞെടുക്കുക."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
-#, fuzzy
 msgid  "I~mport..."
 msgstr "കയറ്റുമതി"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
-#, fuzzy
 msgid  "New Theme..."
 msgstr "പുതിയ  വിഷയം"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
-#, fuzzy
 msgid  "Assign ID"
 msgstr "ID നിര്ദ്ദേശിക്കുക"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "കുത്തനെയുള്ള ടെക്സ്റ്റ്"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
-#, fuzzy
 msgid  "Path"
 msgstr "മാര്ഗ്ഗം"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
-#, fuzzy
 msgid  "Icon View"
 msgstr "ഐക്കണ് വീക്ഷണം"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
-#, fuzzy
 msgid  "Detailed View"
 msgstr "വിശദമായി വീക്ഷിക്കുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "പരിഷ്കരണം"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr " പുനഃനാമകരണം"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
-#, fuzzy
 msgid  "Assign ~ID"
 msgstr "ID നിര്ദ്ദേശിക്കുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "സവിശേഷതകള്"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~ഇടയ്ക്ക് ചേര്‍ക്കുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~പകര്‍ത്തുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
-#, fuzzy
 msgid  "Link"
 msgstr "ബന്ധിക്കുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Bac~kground"
 msgstr "പശ്ചാത്തലം"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "പൂര്‍വ്വ ദൃശ്യം"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "ശീര്ഷകം"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~പകര്‍ത്തുക"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~ഇടയ്ക്ക് ചേര്‍ക്കുക"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
-#, fuzzy
 msgid  "3D Effects"
 msgstr "ത്രിമാന പ്രഭാവം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
-#, fuzzy
 msgid  "Animations"
 msgstr "ആനിമേഷനുകള്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
-#, fuzzy
 msgid  "Bullets"
 msgstr "ബുള്ളറ്റുകള്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
-#, fuzzy
 msgid  "Office"
 msgstr "ഓഫീസ് "
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
-#, fuzzy
 msgid  "Flags"
 msgstr "പതാക"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLOWCHARTS.String.Text
-#, fuzzy
 msgid  "Flow Charts"
 msgstr "ഫ്ളോച്ചാര്ട്ട്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
-#, fuzzy
 msgid  "Emoticons"
 msgstr "ഇമോട്ടികോണ്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
-#, fuzzy
 msgid  "Pictures"
 msgstr "ചിത്രങ്ങള്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
-#, fuzzy
 msgid  "Backgrounds"
 msgstr "പിശ്ചാത്തലം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
-#, fuzzy
 msgid  "Homepage"
 msgstr "മുഖ്യ പേജ്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
-#, fuzzy
 msgid  "Interaction"
 msgstr "പരസ്പരം ബന്ധപ്പെടുക"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
-#, fuzzy
 msgid  "Maps"
 msgstr "രേഖാചിത്രം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
-#, fuzzy
 msgid  "People"
 msgstr "ആളുകള്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
-#, fuzzy
 msgid  "Surfaces"
 msgstr "ഉപരിതലം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
-#, fuzzy
 msgid  "Rulers"
 msgstr "അളവുകോലുകള്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
-#, fuzzy
 msgid  "Computers"
 msgstr "കന്പ്യൂട്ടര്"
 
@@ -6804,62 +6626,50 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
-#, fuzzy
 msgid  "Sounds"
 msgstr "ശബ്ദം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
-#, fuzzy
 msgid  "Symbols"
 msgstr "ചിഹ്നങ്ങള്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
-#, fuzzy
 msgid  "My Theme"
 msgstr "എന്റെ വിഷയം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
-#, fuzzy
 msgid  "Arrows"
 msgstr "അന്പ്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
-#, fuzzy
 msgid  "Balloons"
 msgstr "ബലൂണ്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
-#, fuzzy
 msgid  "Keyboard"
 msgstr "കീബോര്ഡ്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr " സമയം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "അവതരണം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "കലണ്ടര്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "നാവിഗേഷന്"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
-#, fuzzy
 msgid  "Communication"
 msgstr "സംസര്ഗ്ഗം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
-#, fuzzy
 msgid  "Finances"
 msgstr "സാന്പത്തികം"
 
@@ -6868,52 +6678,42 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
-#, fuzzy
 msgid  "Climate"
 msgstr "കാലാവസ്ഥ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
-#, fuzzy
 msgid  "School & University"
 msgstr "സ്കൂളും സര്‍വ്വകലാശാലയും"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
-#, fuzzy
 msgid  "Problem Solving"
 msgstr " പ്രശ്ന പരിഹാരം"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SCREENBEANS.String.Text
-#, fuzzy
 msgid  "Screen Beans"
 msgstr " സ്ക്രീന് ബീന്സ്"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR)  നിഘണ്ടു പ്രവര്ത്തിക്കുന്നു"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) അക്ഷരപരിശോധന പ്രവര്ത്തിക്കുന്നു."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR) ഹൈഫനെഷന് പ്രവര്ത്തിക്കുന്നു"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) നിഘണ്ടു സൃഷ്ടിക്കുന്നു."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) പശ്ചാത്തല ആറ്റ്റിബ്യൂട് സജ്ജീകരണം."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) ഗ്രോഫിക്സ് ലോഡുചെയ്യുന്നു."
 
@@ -6926,87 +6726,70 @@ msgid  "$(ARG1) is not supported by the spellcheck function or is not presently 
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "അക്ഷരപരിശോധന ലഭ്യമല്ല"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "ഹൈഫനേഷന് ലഭ്യമല്ല"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr " കസ്റ്റം നിഘണ്ടു $(ARG1) വായിക്കാന് കഴിയുന്നില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr " കസ്റ്റം നിഘണ്ടു $(ARG1) സൃഷ്ടിക്കാന് കഴിയുന്നില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "ഗ്രാഫിക്സ് $(ARG1) കണ്ടുപിടിക്കാനായില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "ലിങ്ക് ചെയ്തിട്ടില്ലാത്ത ഗ്രാഫിക് ലഭ്യമാക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "തിരഞ്ഞെടുത്ത ഉപാധിക്ക് ഭാഷ ഉറപ്പിച്ചിട്ടില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
-#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "ഫോം നിയന്ത്രണങ്ങള്‍ ലഭ്യമാക്കുമ്പോള്‍ പിശക് സംഭവിച്ചു. ഫോം ലേയര്‍ ലഭ്യമായില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
-#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "ഫോം നിയന്ത്രണങ്ങള്‍ ലഭ്യമാക്കുമ്പോള്‍ പിശക് സംഭവിച്ചു. ഫോം ലേയര്‍ സൂക്ഷിച്ചിട്ടില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
-#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "ബുള്ളറ്റുകള്  വായിച്ചപ്പോള് തെറ്റുണ്ടായി.  എല്ലാ ബുള്ളറ്റുകളും ലോഡു ചെയ്തിട്ടില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "അടിസ്ഥാനകോഡിലെ മാറ്റങ്ങള് നഷ്ടപ്പെട്ടു.യഥാര്ത്ഥ VBA  മാക്രോ കോഡ് പകരം സംഭരിച്ചു."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "ഡോക്കുമെന്റിലുള്ള  യഥാര്ത്ഥ VBA സംഭരിക്കാനാവില്ല."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr " സങ്കേതപദം തെറ്റാണ‌്. ഡോക്കുമെന്റ് തുറക്കാന് കഴിയില്ല"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr " ഈ ഡോക്കുമെന്റിലെ എന്ക്രിപ്ഷന് രീതി  പിന്താങ്ങിയിട്ടില്ല. മൈക്രോസോഫ്റ്റ് ഓഫീസ്  97/2000 അനുരൂപമായ സങ്കേതപദ എന്ക്രിപ്ഷന് മാത്രമേ  പിന്താങ്ങിയിട്ടുള്ളു"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
-#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "എന്ക്രിപ്റ്റ് ചെയ്ത സങ്കേതപദം ലോഡുചെയ്യുന്നത് മൈക്രോസോഫ്റ്റ് പവര് പോയിന്റ് അവതരണം പിന്താങ്ങുന്നില്ല"
 
@@ -7015,107 +6798,86 @@ msgid  "Password protection is not supported when documents are saved in a Micro
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
-#, fuzzy
 msgid  "Scale"
 msgstr "സ്കെയില്‍"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
-#, fuzzy
 msgid  "Brush"
 msgstr "ബ്രഷ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_TABSTOP.ItemList.item
-#, fuzzy
 msgid  "Tab stops"
 msgstr "ടാബ് നിര്ത്തുക"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character"
 msgstr "അക്ഷരം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONT.ItemList.item
-#, fuzzy
 msgid  "Font"
 msgstr "ഫോണ്ഡ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Font posture"
 msgstr "ഫോണ്ഡിന്റെ സ്ഥിതി"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Font weight"
 msgstr "ഫോണ്ഡിന്റെ തൂക്കം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SHADOWED.ItemList.item
-#, fuzzy
 msgid  "Shadowed"
 msgstr "ഷാഡോ ചെയ്തിട്ടുള്ള"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WORDLINEMODE.ItemList.item
-#, fuzzy
 msgid  "Individual words"
 msgstr "വാക്കുകള്‍ ഓരോന്നായി"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CONTOUR.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "ഔട്ട്ലൈന്‍"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_STRIKEOUT.ItemList.item
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "സ്ട്രൈക്ക്ത്രൂ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_UNDERLINE.ItemList.item
-#, fuzzy
 msgid  "Underline"
 msgstr "അടിവര"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Font size"
 msgstr "ഫോണ്ട് പരിമാണം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_PROPSIZE.ItemList.item
-#, fuzzy
 msgid  "Rel. Font size"
 msgstr "ഫോണ്ട് പരിമാണം സംബന്ധിച്ച്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
-#, fuzzy
 msgid  "Font color"
 msgstr "അക്ഷരസഞ്ചയത്തിനുള്ള നിറം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
-#, fuzzy
 msgid  "Kerning"
 msgstr "കെര്ണ്ണിഗ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CASEMAP.ItemList.item
-#, fuzzy
 msgid  "Effects"
 msgstr "പ്രഭാവം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language"
 msgstr "ഭാഷ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ESCAPEMENT.ItemList.item
-#, fuzzy
 msgid  "Position"
 msgstr "പദവി"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "മിന്നുന്ന"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CHARSETCOLOR.ItemList.item
-#, fuzzy
 msgid  "Character set color"
 msgstr "അക്ഷരസമൂഹത്തിന്റെ നിറം"
 
@@ -7124,512 +6886,410 @@ msgid  "Overline"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA.ItemList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "ഖണ്ഡിക"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ADJUST.ItemList.item
-#, fuzzy
 msgid  "Alignment"
 msgstr "ക്രമീകരണം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LINESPACE.ItemList.item
-#, fuzzy
 msgid  "Line spacing"
 msgstr "രേഖയുടെ അകലം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_PAGEBREAK.ItemList.item
-#, fuzzy
 msgid  "Page Break"
 msgstr "പേജ് ഖണ്ഡിക്കുക"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HYPHENZONE.ItemList.item
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ഹൈഫനേഷന്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SPLIT.ItemList.item
-#, fuzzy
 msgid  "Do not split paragraph"
 msgstr "ഖണ്ഡിക വിഭജിക്കരുത്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ORPHANS.ItemList.item
-#, fuzzy
 msgid  "Orphans"
 msgstr "വിധവ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_WIDOWS.ItemList.item
-#, fuzzy
 msgid  "Widows"
 msgstr "ഓര്ഫന്സ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ULSPACE.ItemList.item
-#, fuzzy
 msgid  "Spacing"
 msgstr "അകലമിടുക"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LRSPACE.ItemList.item
-#, fuzzy
 msgid  "Indent"
 msgstr "ഇന്ഡന്റ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_LRSPACE.ItemList.item
-#, fuzzy
 msgid  "Indent"
 msgstr "ഇന്ഡന്റ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ULSPACE.ItemList.item
-#, fuzzy
 msgid  "Spacing"
 msgstr "അകലമിടുക"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PAGE.ItemList.item
-#, fuzzy
 msgid  "Page"
 msgstr "പേജ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
-#, fuzzy
 msgid  "Page Style"
 msgstr "താളിന്റെ ശൈലി"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
-#, fuzzy
 msgid  "Keep with next paragraph"
 msgstr "അടുത്ത ഖണ്ഡികയില്‍"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_FLASH.ItemList.item
-#, fuzzy
 msgid  "Blinking"
 msgstr "മിന്നുന്ന"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_REGISTER.ItemList.item
-#, fuzzy
 msgid  "Register-true"
 msgstr "രജിസ്റ്റര്- ശരിയായ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
-#, fuzzy
 msgid  "Character background"
 msgstr "അക്ഷരത്തിന്റെ പശ്ചാത്തലം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
-#, fuzzy
 msgid  "Asian font"
 msgstr "ഏഷ്യന് ഫോണ്ട്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Size of Asian font"
 msgstr "ഏഷ്യന് ഫോണ്ഡിന്റെ പരിമാണം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language of Asian font"
 msgstr "ഏഷ്യന് ഫോണ്ഡിന്റെ ഭാഷ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Posture of Asian font"
 msgstr "ഏഷ്യന് ഫോണ്ഡിന്റെ പോസ്ചര്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Weight of Asian font"
 msgstr "ഏഷ്യന് ഫോണ്ഡിന്റെ തൂക്കം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONT.ItemList.item
-#, fuzzy
 msgid  "CTL"
 msgstr "CTL"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONTHEIGHT.ItemList.item
-#, fuzzy
 msgid  "Size of complex scripts"
 msgstr "സങ്കീര്ണ്ണ തിരക്കഥകളുടെ പരിമാണം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_LANGUAGE.ItemList.item
-#, fuzzy
 msgid  "Language of complex scripts"
 msgstr "ഭാഷയുടെ സങ്കീര്ണ്ണ തിരക്കഥകള്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_POSTURE.ItemList.item
-#, fuzzy
 msgid  "Posture of complex scripts"
 msgstr "സങ്കീര്ണ്ണ തിരക്കഥകളുടെ പോസ്ചര്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_WEIGHT.ItemList.item
-#, fuzzy
 msgid  "Weight of complex scripts"
 msgstr "സങ്കീര്ണ്ണ തിരക്കഥകളുടെ തൂക്കം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_TWO_LINES.ItemList.item
-#, fuzzy
 msgid  "Double-lined"
 msgstr "ഇരട്ട-വര"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_EMPHASISMARK.ItemList.item
-#, fuzzy
 msgid  "Emphasis mark"
 msgstr "പ്രധാന്യമുള്ളതിന്റെ അടയാളം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SCRIPTSPACE.ItemList.item
-#, fuzzy
 msgid  "Text spacing"
 msgstr "ടെക്സ്റ്റിന് അകലമിടുന്നു"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HANGPUNCTUATION.ItemList.item
-#, fuzzy
 msgid  "Hanging punctuation"
 msgstr "വികാസ ചിഹ്നം"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_FORBIDDEN_RULES.ItemList.item
-#, fuzzy
 msgid  "Forbidden characters"
 msgstr "വിലക്കപ്പെട്ട അക്ഷരങ്ങള്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ROTATED.ItemList.item
-#, fuzzy
 msgid  "Rotation"
 msgstr "കറങ്ങല്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SCALEWIDTH.ItemList.item
-#, fuzzy
 msgid  "Scale"
 msgstr "സ്കെയില്‍"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_RELIEF.ItemList.item
-#, fuzzy
 msgid  "Relief"
 msgstr "റിലീഫ്"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_PARA_VERTALIGN.ItemList.item
-#, fuzzy
 msgid  "Vertical text alignment"
 msgstr "കുത്തനെയുള്ള ടെക്സ്റ്റ് ക്രമീകരണം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_EXTRAS_CHARCOLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "അക്ഷരസഞ്ചയത്തിനുള്ള നിറം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
-#, fuzzy
 msgid  "Search"
 msgstr "അന്വേഷിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
-#, fuzzy
 msgid  "Find All"
 msgstr "എല്ലാം കണ്ടുപിടിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "മാറ്റി വയ്ക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
-#, fuzzy
 msgid  "Replace all"
 msgstr "എല്ലാം മാറ്റി വയ്ക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
-#, fuzzy
 msgid  "Character Style"
 msgstr "അക്ഷരശൈലി"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
-#, fuzzy
 msgid  "Paragraph Style"
 msgstr "ഖണ്ഡികാശൈലി"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
-#, fuzzy
 msgid  "Frame Style"
 msgstr "ഫ്രെയിമിന്റെ ശൈലി"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PAGE.String.Text
-#, fuzzy
 msgid  "Page Style"
 msgstr "താളിന്റെ ശൈലി"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "സൂത്രവാക്യം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "മൂല്യം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "കുറിപ്പ്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
-#, fuzzy
 msgid  "Solid"
 msgstr "കട്ടിയുള്ള"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "കുറുകെ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "കുത്തനെ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "ഗ്രിഡ്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DIAGCROSS.String.Text
-#, fuzzy
 msgid  "Diamond"
 msgstr "വജ്രം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
-#, fuzzy
 msgid  "Diagonal up"
 msgstr "കര്ണ്ണരേഖ മുകളില്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
-#, fuzzy
 msgid  "Diagonal down"
 msgstr "കര്ണ്ണരേഖ താഴെ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
-#, fuzzy
 msgid  "Image"
 msgstr "ചിത്രം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
-#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "കുറുകെയായി ക്രമീകരണം  ഡിഫോള്ട്ടായിടുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_LEFT.String.Text
-#, fuzzy
 msgid  "Align left"
 msgstr "ഇടത്ത് ക്രമീകരിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
-#, fuzzy
 msgid  "Centered horizontally"
 msgstr "കുത്തനെ കേന്ദ്രീകരിച്ച"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_RIGHT.String.Text
-#, fuzzy
 msgid  "Align right"
 msgstr "വലത്തേക്ക് നീക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_BLOCK.String.Text
-#, fuzzy
 msgid  "Justify"
 msgstr "സാധൂകരിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
-#, fuzzy
 msgid  "Repeat alignment"
 msgstr "ക്രമീകരണം അവര്ത്തിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
-#, fuzzy
 msgid  "Vertical alignment default"
 msgstr " കുത്തനെയുള്ള  ക്രമീകരണം ഡിഫോള്ട്ടായിടുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
-#, fuzzy
 msgid  "Align to top"
 msgstr "മുകളിലോട്ടു ക്രമീകരിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
-#, fuzzy
 msgid  "Centered vertically"
 msgstr "കുത്തനെ കേന്ദ്രീകരിച്ച"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
-#, fuzzy
 msgid  "Align to bottom"
 msgstr "താഴോട്ടു ക്രമീകരിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
-#, fuzzy
 msgid  "Default orientation"
 msgstr "ഡിഫോള്ട്ട് അനുസ്ഥാപനം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
-#, fuzzy
 msgid  "From top to bottom"
 msgstr "താഴെ നിന്നും ക്രോസ്-ഫെഡ് "
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
-#, fuzzy
 msgid  "Bottom to Top"
 msgstr "താഴെ മുതല്  മുകളില് വരെ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STACKED.String.Text
-#, fuzzy
 msgid  "Stacked"
 msgstr "കൂനകൂട്ടിയ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "പട്ടിക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
-#, fuzzy
 msgid  "Not Table"
 msgstr "പട്ടിക ഇല്ല"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
-#, fuzzy
 msgid  "Spacing enabled"
 msgstr "അകലമിടുന്നത് പ്രാപ്തമാക്കി"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
-#, fuzzy
 msgid  "Spacing disabled"
 msgstr "അകലമിടുന്നത് നിഷ്ക്രിയമാക്കി"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
-#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "ഇടവേള വയ്ക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_FALSE.String.Text
-#, fuzzy
 msgid  "Allowed to fall short of spacing interval"
 msgstr "ചെറിയ ഇടവേള അനുവദിക്കുക"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
-#, fuzzy
 msgid  "Left margin: "
 msgstr "ഇടത്തെ അരിക്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
-#, fuzzy
 msgid  "Top margin: "
 msgstr "മുകളിലെ അരിക്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
-#, fuzzy
 msgid  "Right margin: "
 msgstr "വലത്തെ അരിക്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
-#, fuzzy
 msgid  "Bottom margin: "
 msgstr "താഴത്തെ അരിക്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
-#, fuzzy
 msgid  "Page Description: "
 msgstr "പേജ് വിവരണം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
-#, fuzzy
 msgid  "Capitals"
 msgstr "വലിയ അക്ഷരം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_LOWER.String.Text
-#, fuzzy
 msgid  "Lowercase"
 msgstr "ചെറിയ അക്ഷരം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
-#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "റോമന് വലിയ അക്ഷരം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
-#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "റോമന് വലിയ അക്ഷരം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
-#, fuzzy
 msgid  "Arabic"
 msgstr "അറബിക്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
-#, fuzzy
 msgid  "Landscape"
 msgstr "ലാന്ഡ്സ്കേപ്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
-#, fuzzy
 msgid  "Portrait"
 msgstr "ഛായാചിത്രം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_LEFT.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ഇടത്ത്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_RIGHT.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "വലത്ത്"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
-#, fuzzy
 msgid  "All"
 msgstr "എല്ലാം"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
-#, fuzzy
 msgid  "Mirrored"
 msgstr "പ്രതിഫലിച്ച"
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
-#, fuzzy
 msgid  "Author: "
 msgstr "ലേഖകന് : "
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
-#, fuzzy
 msgid  "Date: "
 msgstr "തീയതി: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
-#, fuzzy
 msgid  "Text: "
 msgstr "ടെക്സ്റ്റ്: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
-#, fuzzy
 msgid  "Background color: "
 msgstr "പശ്ചാത്തല നിറം : "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
-#, fuzzy
 msgid  "Pattern color: "
 msgstr "നിറത്തിന്റെ മാതൃക : "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSH_CHAR.String.Text
-#, fuzzy
 msgid  "Character background"
 msgstr "അക്ഷരത്തിന്റെ പശ്ചാത്തലം"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
-#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr " പ്രവൃത്തി പ്രാവര്ത്തികമാക്കാന് കഴിയില്ല.ഈ പ്രവൃത്തിക്കു ആവശ്യമായ %PRODUCTNAME  പ്രോഗ്രാം മോഡ്യൂള് സ്ഥാപിച്ചിട്ടില്ല."
 
@@ -8106,52 +7766,42 @@ msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactiv
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
-#, fuzzy
 msgid  "INSRT"
 msgstr "INSRT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
-#, fuzzy
 msgid  "OVER"
 msgstr "OVER"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
-#, fuzzy
 msgid  "STD"
 msgstr "STD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
-#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
-#, fuzzy
 msgid  "ADD"
 msgstr "ADD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
-#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "ഡിജിറ്റല്‍ സിഗ്നേച്ചര്‍: രേഖയിലെ ഒപ്പ് ശരിയാണു്."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "ഡിജിറ്റല്‍ സിഗ്നേച്ചര്‍: രേഖയിലെ ഒപ്പ് ശരിയാണു്, പക്ഷേ സര്‍ട്ടിഫിക്കേറ്റുകള്‍ പരിശോധിക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "ഡിജിറ്റല്‍ സിഗ്നേച്ചര്‍: രേഖയിലെ ഒപ്പ് ഉള്ളടക്കവുമായി പൊരുത്തപ്പെടുന്നില്ല. ഈ രേഖയെ ദയവായി ആശ്രയിക്കരുതു്."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
-#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "ഡിജിറ്റല്‍ സിഗ്നേച്ചര്‍: രേഖയില്‍ ഒപ്പില്ല."
 
@@ -8160,572 +7810,458 @@ msgid  "Digital Signature: The document signature and the certificate are OK, bu
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
-#, fuzzy
 msgid  "Optimal"
 msgstr "അനുകൂലാത്മകം"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
-#, fuzzy
 msgid  "Page Width"
 msgstr "പേജ് വീതി"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
-#, fuzzy
 msgid  "Entire Page"
 msgstr "സന്പൂര്ണ്ണ പേജ്"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
-#, fuzzy
 msgid  "Average"
 msgstr "ശരാശരി"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
-#, fuzzy
 msgid  "CountA"
 msgstr "എണ്ണംA"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
-#, fuzzy
 msgid  "Count"
 msgstr "എണ്ണം"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "പരമാവധി"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "ചുരുക്കം"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "ആകത്തുക"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
-#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "ഡിജിറ്റല് കൈയ്യോപ്പുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
-#, fuzzy
 msgid  "draw object"
 msgstr "വസ്തു വരയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "വസ്തുക്കള്‍ വരയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
-#, fuzzy
 msgid  "group object"
 msgstr "വസ്തു ഗ്രൂപ്പ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
-#, fuzzy
 msgid  "group objects"
 msgstr "വസ്തുക്കളുടെ ഗ്രൂപ്പ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "blank group object"
 msgstr "ഒഴിഞ്ഞ വസ്തു ഗ്രൂപ്പ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
-#, fuzzy
 msgid  "Blank group objects"
 msgstr "ഒഴിഞ്ഞ വസ്തുക്കളുടെ ഗ്രൂപ്പ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "രേഖ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
-#, fuzzy
 msgid  "horizontal line"
 msgstr "കുറുകെയുള്ള രേഖ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
-#, fuzzy
 msgid  "Vertical line"
 msgstr "കുത്തനെയുള്ള രേഖ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
-#, fuzzy
 msgid  "diagonal line"
 msgstr "കര്ണ്ണരേഖ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "രേഖകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
-#, fuzzy
 msgid  "Rectangle"
 msgstr "ചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
-#, fuzzy
 msgid  "Rectangles"
 msgstr "ചതുര്ഭുജങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
-#, fuzzy
 msgid  "Square"
 msgstr "സമചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
-#, fuzzy
 msgid  "Squares"
 msgstr "സമചതുര്ഭുജങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
-#, fuzzy
 msgid  "Parallelogram"
 msgstr "സമാന്തരഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
-#, fuzzy
 msgid  "Parallelograms"
 msgstr "സമാന്തരഭുജങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombus"
 msgstr "സമചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
-#, fuzzy
 msgid  "Rhombuses"
 msgstr "സമചതുര്ഭുജങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "ഉരുണ്ട സമകോണചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
-#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "ഉരുണ്ട സമകോണചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
-#, fuzzy
 msgid  "rounded square"
 msgstr "ഉരുണ്ട സമകോണചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
-#, fuzzy
 msgid  "Rounded Squares"
 msgstr "ഉരുണ്ട സമകോണചതുര്ഭുജങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "ഉരുണ്ട സമചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
-#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "ഉരുണ്ട സമചതുര്ഭുജങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
-#, fuzzy
 msgid  "rounded rhombus"
 msgstr "ഉരുണ്ട സമചതുര്ഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
-#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "ഉരുണ്ട സമചതുര്ഭുജങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
-#, fuzzy
 msgid  "Circle"
 msgstr "വൃത്തം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
-#, fuzzy
 msgid  "Circles"
 msgstr "വൃത്തങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
-#, fuzzy
 msgid  "Circle sector"
 msgstr "വൃത്തഖണ്ഡം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
-#, fuzzy
 msgid  "Circle sectors"
 msgstr "വൃത്തഖണ്ഡം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "ആര്‍ക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
-#, fuzzy
 msgid  "Arcs"
 msgstr "വൃത്താംശം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "സര്‍ക്കിള്‍ സെഗ്മെന്റ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
-#, fuzzy
 msgid  "Circle segments"
 msgstr "വൃത്തഭാഗങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipse"
 msgstr "അണ്ഡവൃത്തം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
-#, fuzzy
 msgid  "Ellipses"
 msgstr "അണ്ഡവൃത്തങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "അണ്ഡവൃത്തം പൈ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
-#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "അണ്ഡവൃത്ത പൈ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arc"
 msgstr "അണ്ഡാകൃതിയിലുള്ള കമാനം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
-#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "അണ്ഡാകൃതിയിലുള്ള കമാനങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "അണ്ഡവൃത്തം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
-#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "അണ്ഡവൃത്തഭാഗം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
-#, fuzzy
 msgid  "Polygon"
 msgstr "ബഹുഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
-#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "ബഹുഭുജ %N അരിക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
-#, fuzzy
 msgid  "Polygons"
 msgstr "ബഹുഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
-#, fuzzy
 msgid  "Polyline"
 msgstr "പോളിലൈന്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
-#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "  %N  പോളിലൈനിന്റെ അരിക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
-#, fuzzy
 msgid  "Polylines"
 msgstr "പോളിലൈന്്സ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr " വളവ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr " വളവുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curve"
 msgstr " വളവ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
-#, fuzzy
 msgid  "Bézier curves"
 msgstr " വളവുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "ഫ്രീഫോം ലൈന്‍"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "തന്നെയുണ്ടായ രേഖ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Line"
 msgstr "ഫ്രീഫോം ലൈന്‍"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
-#, fuzzy
 msgid  "Freeform Lines"
 msgstr "തന്നെയുണ്ടായ രേഖ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "വളവ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "വളഞ്ഞ വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve"
 msgstr "വളവ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
-#, fuzzy
 msgid  "Curve objects"
 msgstr "വളഞ്ഞ വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Spline"
 msgstr "സാധാരണ സ്പ്ലൈന്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
-#, fuzzy
 msgid  "Natural Splines"
 msgstr "സാധാരണ സ്പ്ലൈനുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Spline"
 msgstr "സമയികമായ സ്പ്ലൈന്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
-#, fuzzy
 msgid  "Periodic Splines"
 msgstr "സമയികമായ സ്പ്ലൈനുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "ടെക്സ്റ്റ് ഫ്രെയിം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
-#, fuzzy
 msgid  "Text Frame"
 msgstr "ടെക്സ്റ്റ് ഫ്രെയിം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frame"
 msgstr "ബന്ധിച്ച ടെക്സ്റ്റ് ഫ്രെയിം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
-#, fuzzy
 msgid  "Linked text frames"
 msgstr "ബന്ധിച്ച ടെക്സ്റ്റ് ഫ്രെയിമുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "ടെക്സ്റ്റ് വസ്തുവിന‍് പാകമായ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "ടെക്സ്റ്റ് ഒബ്ജക്ടുകളുടെ വ്യാപ്തി പാകത്തിനാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "ടെക്സ്റ്റ് വസ്തുവിന‍് പാകമായ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
-#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "ടെക്സ്റ്റ് ഒബ്ജക്ടുകളുടെ വ്യാപ്തി പാകത്തിനാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title text"
 msgstr "തലക്കെട്ട് ടെക്സ്റ്റ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
-#, fuzzy
 msgid  "Title texts"
 msgstr "തലക്കെട്ട് ടെക്സ്റ്റുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Text"
 msgstr "ബാഹ്യരേഖ ടെക്സ്റ്റ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
-#, fuzzy
 msgid  "Outline Texts"
 msgstr "ബാഹ്യരേഖ ടെക്സ്റ്റ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
-#, fuzzy
 msgid  "graphic"
 msgstr "ഗ്രാഫിക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
-#, fuzzy
 msgid  "graphics"
 msgstr "ഗ്രാഫിക്സ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphic"
 msgstr "ബന്ധിച്ച ഗ്രാഫിക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
-#, fuzzy
 msgid  "Linked graphics"
 msgstr "ബന്ധിച്ച ഗ്രാഫിക്സ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic object"
 msgstr "ഒഴിഞ്ഞ ഗ്രാഫിക് വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
-#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "ഒഴിഞ്ഞ ഗ്രാഫിക് വസ്തുക്കള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "ഒഴിഞ്ഞ ലിങ്കിന്റെ ഗ്രാഫിക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
-#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "ഒഴിഞ്ഞ ലിങ്കിന്റെ ഗ്രാഫിക്സ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafile"
 msgstr "മെറ്റാഫയല്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
-#, fuzzy
 msgid  "Metafiles"
 msgstr "മെറ്റാഫയലുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafile"
 msgstr "ബന്ധിപ്പിച്ച മെറ്റാഫയല്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
-#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "ബന്ധിപ്പിച്ച മെറ്റാഫയലുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "സുതാര്യമായ ഫോണ്ഡ് വര്ക്ക് ഛായ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "ബന്ധിപ്പിച്ച ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "സുതാര്യമായ ബന്ധിപ്പിച്ച ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
-#, fuzzy
 msgid  "Bitmaps"
 msgstr "ബിറ്റ്മാപ്സ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
-#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "സുതാര്യമായ ബിറ്റ്മാപുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "ബന്ധിപ്പിച്ച ബിറ്റ്മാപ്പുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
-#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "സുതാര്യമായ ബന്ധിപ്പിച്ച ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "രൂപം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
-#, fuzzy
 msgid  "Shapes"
 msgstr "രൂപം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphic"
 msgstr "Mac ഗ്രാഫിക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
-#, fuzzy
 msgid  "Mac graphics"
 msgstr "Mac ഗ്രാഫിക്സ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "ബന്ധിച്ച Mac ഗ്രാഫിക്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
-#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "ബന്ധിച്ച Mac ഗ്രാഫിക്സ്"
 
@@ -8738,2107 +8274,1686 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
-#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "നിഗൂഡമായ വസ്തു (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
-#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "നിഗൂഡമായ (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
-#, fuzzy
 msgid  "Control"
 msgstr "നിയന്ത്രണം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
-#, fuzzy
 msgid  "Controls"
 msgstr "നിയന്ത്രണം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
-#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "നിഗൂഡമായ വസ്തു(OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
-#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "നിഗൂഡമായ വസ്തുക്കള് (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "ഫ്രെയിം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
-#, fuzzy
 msgid  "Frames"
 msgstr "ഫ്രെയിം"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "ഫ്രെയിം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "വസ്തു ഘടിപ്പിക്കുന്ന"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
-#, fuzzy
 msgid  "Object Connectors"
 msgstr "വസ്തു ഘടിപ്പിക്കുന്ന"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
-#, fuzzy
 msgid  "Callout"
 msgstr "കോളൌട്ട്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
-#, fuzzy
 msgid  "Callouts"
 msgstr "കോളൌട്ട്സ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
-#, fuzzy
 msgid  "Preview object"
 msgstr "വസ്തുവിന്റെ പ്രിവ്യൂ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
-#, fuzzy
 msgid  "Preview objects"
 msgstr "വസ്തുക്കളുടെ പ്രവ്യൂ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
-#, fuzzy
 msgid  "Dimension line"
 msgstr "പരിമാണരേഖ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
-#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "പരിമാണം നല്കുന്ന വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
-#, fuzzy
 msgid  "draw objects"
 msgstr "വസ്തുക്കള്‍ വരയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
-#, fuzzy
 msgid  "No draw object"
 msgstr "വരയ്ക്കുന്ന വസ്തുവല്ല"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
-#, fuzzy
 msgid  "and"
 msgstr "കൂടെ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
-#, fuzzy
 msgid  "draw object(s)"
 msgstr "വസ്തുക്കള് വരയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
-#, fuzzy
 msgid  "3D cube"
 msgstr "ത്രമാന സമചതുരക്കട്ട"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
-#, fuzzy
 msgid  "3D cubes"
 msgstr "ത്രമാന സമചതുരക്കട്ടകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion object"
 msgstr "നിഷ്കാസന വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
-#, fuzzy
 msgid  "Extrusion objects"
 msgstr "നിഷ്കാസനവസ്തുക്കള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
-#, fuzzy
 msgid  "3D text"
 msgstr "ത്രിമാന ടെക്സ്റ്റ്  "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
-#, fuzzy
 msgid  "3D texts"
 msgstr "ത്രിമാന ടെക്സ്റ്റുകള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
-#, fuzzy
 msgid  "rotation object"
 msgstr "കറങ്ങുന്ന വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
-#, fuzzy
 msgid  "rotation objects"
 msgstr "കറങ്ങുന്ന വസ്തുക്കള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
-#, fuzzy
 msgid  "3D object"
 msgstr "ത്രിമാന വസ്തു "
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
-#, fuzzy
 msgid  "3D objects"
 msgstr "ത്രിമാന വസ്തുക്കള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
-#, fuzzy
 msgid  "3D polygons"
 msgstr "ത്രിമാന ബഹുഭുജം"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
-#, fuzzy
 msgid  "3D scene"
 msgstr "ത്രിമാന രംഗം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
-#, fuzzy
 msgid  "3D scenes"
 msgstr "ത്രിമാന രംഗങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
-#, fuzzy
 msgid  "sphere"
 msgstr "ഗോളം"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
-#, fuzzy
 msgid  "spheres"
 msgstr "ഗോളങ്ങള്"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
-#, fuzzy
 msgid  "with copy"
 msgstr "പകര്പ്പ് സഹിതം"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
-#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "പദവിയും പരിമാണവും  %O  ആയി സജ്ജീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
-#, fuzzy
 msgid  "Delete %1"
 msgstr "%O നീക്കം ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
-#, fuzzy
 msgid  "Move %1 forward"
 msgstr "%O മുന്നോട്ട് നീങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 further back"
 msgstr "%O പിന്നോട്ട് നീങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
-#, fuzzy
 msgid  "Move %1 to front"
 msgstr "%O  മുന്നിലോട്ട് നീങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
-#, fuzzy
 msgid  "Move %1 to back"
 msgstr "%O പിറകിലോട്ട് നീങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
-#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "%O തിരിയുക"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "%O നീക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "%O വ്യാപ്തി മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "%O കറങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%O കുറുകെ തെറിപ്പിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "ഫ്ലിപ്പ് %O വെര്‍ട്ടിക്കല്‍"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%O കര്ണ്ണരേഖ തെറിപ്പിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "ഫ്ലിപ്പ് %O ഫ്രീഹാന്‍ഡ്"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Distort %O (slant)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%O വട്ടത്തില്‍ സജ്ജമാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "വട്ടത്തിലുള്ള %O വളവ്"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "%O വക്രമായ"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
-#, fuzzy
 msgid  "Undo %1"
 msgstr "%O അണ്ഡു ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Modify bézier properties of %O"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
-#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Modify bézier properties of %O"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
-#, fuzzy
 msgid  "Close %1"
 msgstr "%O  അടയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
-#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr " %O പുറത്തേയ്ക്കുള്ള ദിശ സജ്ജീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
-#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "%O ബന്ധപ്പെട്ട ഐട്രിബ്യൂട് സജ്ജീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
-#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "%O റഫറന്സ് ബിന്ദു സജ്ജീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
-#, fuzzy
 msgid  "Group %1"
 msgstr "ഗ്രൂപ്പ് %O"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
-#, fuzzy
 msgid  "Ungroup %1"
 msgstr "%O സംഘടിക്കാത്ത"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
-#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "%O  ല് ഐട്രിബ്യൂട്സ് പ്രയോഗിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
-#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "%O ല് ശൈലി പ്രയോഗിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
-#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "  %O ല് നിന്ും ശൈലി നീക്കം ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "%O  ബഹുഭുജമാക്കുക."
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
-#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "%O ബഹുഭുജങ്ങളാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
-#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "%Oവളഞ്ഞതാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
-#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "%O വളഞ്ഞതാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
-#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "%O പരിവേഷത്തിലാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
-#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "%O പരിവേഷങ്ങളിലാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
-#, fuzzy
 msgid  "Align %1"
 msgstr "%Oക്രമീകരണം"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
-#, fuzzy
 msgid  "Align %1 to top"
 msgstr "%O മുകളിലോട്ടു ക്രമീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
-#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "%O താഴോട്ടു ക്രമീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
-#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "%O മദ്ധ്യത്തില് കുത്തനെ  ക്രമീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
-#, fuzzy
 msgid  "Align %1 to left"
 msgstr "%O  ഇടത്തോട്ട് ക്രമീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
-#, fuzzy
 msgid  "Align %1 to right"
 msgstr "%O വലത്തോട്ട് ക്രമീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
-#, fuzzy
 msgid  "Vertically center %1"
 msgstr "%O മദ്ധ്യത്തില് കുത്തനെ "
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
-#, fuzzy
 msgid  "Center %1"
 msgstr "%O മദ്ധ്യഭാഗത്തില്"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
-#, fuzzy
 msgid  "Transform %1"
 msgstr " %O രൂപമാറ്റം വരുത്തുക"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr " %O യോജിപ്പിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
-#, fuzzy
 msgid  "Merge %1"
 msgstr "%O മേര്ജ്"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
-#, fuzzy
 msgid  "Subtract %1"
 msgstr "%O കുറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
-#, fuzzy
 msgid  "Intersect %1"
 msgstr "%O വിഭജിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
-#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "തിരഞ്ഞെടുത്ത വസ്തുക്കള് വിതരണം ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
-#, fuzzy
 msgid  "Combine %1"
 msgstr " %O യോജിപ്പിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "%O വേര്‍തിരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "%O വേര്‍തിരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
-#, fuzzy
 msgid  "Split %1"
 msgstr "%O വേര്‍തിരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
-#, fuzzy
 msgid  "Insert object(s)"
 msgstr "വസ്തു ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
-#, fuzzy
 msgid  "Cut %1"
 msgstr "%O മുറിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
-#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "ക്ലിപ്ബോര്ഡ് പേസ്റ്റ് ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
-#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "%O വലിച്ചു കൊണ്ടിടുക"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
-#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "വലിച്ചുകൊണ്ടിടുന്നത് ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
-#, fuzzy
 msgid  "Insert point to %1"
 msgstr "%O ലേക്ക് ബിന്ദു ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
-#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr " %O ലേക്ക് ബിന്ദു ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
-#, fuzzy
 msgid  "Move reference-point"
 msgstr "റഫറന്സ് പോയിന്റ് നീക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
-#, fuzzy
 msgid  "Geometrically change %1"
 msgstr " %O ക്ഷേത്രഗണിത മാറ്റം"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "%O നീക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "%O വ്യാപ്തി മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
-#, fuzzy
 msgid  "Rotate %1"
 msgstr "%O കറങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
-#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%O കുറുകെ തെറിപ്പിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
-#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "ഫ്ലിപ്പ് %O വെര്‍ട്ടിക്കല്‍"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
-#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%O കര്ണ്ണരേഖ തെറിപ്പിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorFree.String.Text
-#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "ഫ്ലിപ്പ് %O ഫ്രീഹാന്‍ഡ്"
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
-#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr " %O ന്റെ ബന്ധപ്പെടുന്ന ഗ്രെഡിയന്റ്"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
-#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr " %O ന്റെ ബന്ധപ്പെടുന്ന സുതാര്യത"
 
 #: source/svdraw/svdstr.src#STR_DragMethShear.String.Text
-#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Distort %O (slant)"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
-#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%O വട്ടത്തില്‍ സജ്ജമാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
-#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "വട്ടത്തിലുള്ള %O വളവ്"
 
 #: source/svdraw/svdstr.src#STR_DragMethDistort.String.Text
-#, fuzzy
 msgid  "Distort %1"
 msgstr "%O വക്രമായ"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
-#, fuzzy
 msgid  "Crop %O"
 msgstr "%O മുറിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragRectEckRad.String.Text
-#, fuzzy
 msgid  "Alter radius by %1"
 msgstr " %O വ്യാസാര്ദ്ധം മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "%O മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
-#, fuzzy
 msgid  "Resize %1"
 msgstr "%O വ്യാപ്തി മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
-#, fuzzy
 msgid  "Move %1"
 msgstr "%O നീക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
-#, fuzzy
 msgid  "Move end point of %1"
 msgstr "%O അന്തിമ ബിന്ദുവിലേക്ക് നീങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_DragCircAngle.String.Text
-#, fuzzy
 msgid  "Adjust angle by %1"
 msgstr "%O ആയി കോണം ക്രമീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
-#, fuzzy
 msgid  "Change %1"
 msgstr "%O മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
-#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "TextEdit: Paragraph %a, Row %z, Column %s"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
-#, fuzzy
 msgid  "%1 selected"
 msgstr "%O തിരഞ്ഞെടുത്ത"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
-#, fuzzy
 msgid  "Point from %1"
 msgstr "%O ല് നിന്നുള്ള ബിന്ദു"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
-#, fuzzy
 msgid  "%2 points from %1"
 msgstr "%O നിന്നുള്ള %N ബിന്ദു"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
-#, fuzzy
 msgid  "Glue point from %1"
 msgstr " %O ല് നിന്നും ഗ്ലൂ ബിന്ദു "
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
-#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "%O ല് നിന്നും  %N ഗ്ലൂ ബിന്ദു"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
-#, fuzzy
 msgid  "Mark objects"
 msgstr "വസ്തുക്കള് അടയാളപ്പെടുത്തുക"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
-#, fuzzy
 msgid  "Mark additional objects"
 msgstr "അധിക വസ്തുക്കള് അടയാളപ്പെടുത്തുക"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
-#, fuzzy
 msgid  "Mark points"
 msgstr "ബിന്ദുക്കള് അടയാളപ്പെടുത്തുക"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
-#, fuzzy
 msgid  "Mark additional points"
 msgstr "അധികമായുള്ള ബിന്ദുക്കള് അടയാളപ്പെടുത്തുക"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
-#, fuzzy
 msgid  "Mark glue points"
 msgstr "ഗ്ലൂ ബിന്ദുക്കള് അടയാളപ്പെടുത്തുക"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
-#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "അധികമായുള്ള ഗ്ലൂ ബിന്ദുക്കള് അടയാളപ്പെടുത്തുക"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
-#, fuzzy
 msgid  "Create %1"
 msgstr "%O സൃഷ്ടിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
-#, fuzzy
 msgid  "Insert %1"
 msgstr " %O ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
-#, fuzzy
 msgid  "Copy %1"
 msgstr "%O പകര്പ്പെടുക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
-#, fuzzy
 msgid  "Change object order of %1"
 msgstr "%O  ന്റെ വസ്തു ക്രമീകരണം മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
-#, fuzzy
 msgid  "Edit text of %1"
 msgstr "%O  ന്റെ ടെകസ്റ്റ് എഡിറ്റി ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
-#, fuzzy
 msgid  "Insert page"
 msgstr "പേജ് ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
-#, fuzzy
 msgid  "Delete page"
 msgstr "പേജ് നീക്കം ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
-#, fuzzy
 msgid  "Copy page"
 msgstr "പേജിന്റെ പകര്പ്പ്"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
-#, fuzzy
 msgid  "Change order of pages"
 msgstr "പേജിന്റെ ക്രമം മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Assign background page"
 msgstr "പേജിന്റെ പിന്ഭാഗം നിര്ദ്ദേശിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "പേജിന്റെ പശ്ചാത്തല ചുമതല ഇല്ലാതാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Move background page assignment"
 msgstr "പേജിന്റെ പശ്ചാത്തല ചുമതല നീക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
-#, fuzzy
 msgid  "Change background page assignment"
 msgstr "പേജിന്റെ പശ്ചാത്തല ചുമതല മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
-#, fuzzy
 msgid  "Insert document"
 msgstr "ഡോക്കുമെന്റ് ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
-#, fuzzy
 msgid  "Insert Layer"
 msgstr "ലെയര് ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
-#, fuzzy
 msgid  "Delete layer"
 msgstr "ലെയര് നീക്കം ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
-#, fuzzy
 msgid  "Change order of layers"
 msgstr "ലെയറിന്റെ ക്രമം മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_UndoObjName.String.Text
-#, fuzzy
 msgid  "Change object name of %1 to"
 msgstr "%1-നുള്ള ഒബ്ജക്ട് നാമം മാറ്റേണ്ടതു്"
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
-#, fuzzy
 msgid  "Change object title of %1"
 msgstr "%1-നുള്ള ഒബ്ജക്ട് തലക്കെട്ട് മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_UndoObjDescription.String.Text
-#, fuzzy
 msgid  "Change object description of %1"
 msgstr "%1-നുള്ള വസ്തു വിവരണം മാറ്റുക"
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "നിലവാരമുള്ള"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
-#, fuzzy
 msgid  "on"
 msgstr "തുടങ്ങുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "ഓഫ് ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
-#, fuzzy
 msgid  "yes"
 msgstr "ഉണ്ട്"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ഇല്ല"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
-#, fuzzy
 msgid  "Type 1"
 msgstr "വിഭാഗം 1"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
-#, fuzzy
 msgid  "Type 2"
 msgstr "വിഭാഗം 2"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
-#, fuzzy
 msgid  "Type 3"
 msgstr "വിഭാഗം 3"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
-#, fuzzy
 msgid  "Type 4"
 msgstr "വിഭാഗം 4"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "കുറുകെ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "കുത്തനെ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "സ്വയം പ്രവര്ത്തിക്കുന്ന"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
-#, fuzzy
 msgid  "Off"
 msgstr "നിര്ത്തുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
-#, fuzzy
 msgid  "Proportional"
 msgstr "അനുപാതികമായി"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEALLLINES.String.Text
-#, fuzzy
 msgid  "Fit to size (all rows separately) "
 msgstr "പരിമാണത്തിന‍് പാകമാകുന്ന (എല്ലാ നിരകളും പ്രത്യേകമായിട്ട്)"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
-#, fuzzy
 msgid  "Use hard attributes"
 msgstr "ഹാര്ഡ് ഐട്രിബ്യൂട്സ് ഉപയോഗിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "മുകളില്"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "മദ്ധ്യഭാഗം"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "താഴെ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire height"
 msgstr "മുഴുവന് പൊക്കവും ഉപയോഗിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "വലിച്ചു നീട്ടിയ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ഇടത്"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "മദ്ധ്യഭാഗം"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "വലത്"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
-#, fuzzy
 msgid  "Use entire width"
 msgstr "മുഴുവന് വീതിയും ഉപയോഗിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJSTRETCH.String.Text
-#, fuzzy
 msgid  "Stretched"
 msgstr "വലിച്ചു നീട്ടിയ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
-#, fuzzy
 msgid  "off"
 msgstr "ഓഫ് ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
-#, fuzzy
 msgid  "flash"
 msgstr "ഫ്ളാഷ്"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SCROLL.String.Text
-#, fuzzy
 msgid  "Scroll Through"
 msgstr "സ്ക്രോളിലൂടെ"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_ALTERNATE.String.Text
-#, fuzzy
 msgid  "alternating"
 msgstr "മാറിമാറി വരുന്ന"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SLIDE.String.Text
-#, fuzzy
 msgid  "Scroll In"
 msgstr "ഉള്ളിലേക്ക് സ്ക്രോള് ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
-#, fuzzy
 msgid  "left"
 msgstr "ഇടത്"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
-#, fuzzy
 msgid  "up"
 msgstr "മുകളില്"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
-#, fuzzy
 msgid  "right"
 msgstr "വലത്"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
-#, fuzzy
 msgid  "down"
 msgstr "താഴെ"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
-#, fuzzy
 msgid  "Standard Connector"
 msgstr "നിലവാരമുള്ള കണക്ടര്"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_THREELINES.String.Text
-#, fuzzy
 msgid  "Line Connector"
 msgstr "രേഖ യോജിപ്പിക്കുന്ന"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
-#, fuzzy
 msgid  "Straight Connector"
 msgstr "നേരെയുള്ള കണക്ടര്"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
-#, fuzzy
 msgid  "Curved Connector"
 msgstr "വളഞ്ഞ കണക്ടര്"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
-#, fuzzy
 msgid  "Standard"
 msgstr "നിലവാരമുള്ള"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
-#, fuzzy
 msgid  "Radius"
 msgstr "വ്യാസാര്ദ്ധം"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTLEFTOUTSIDE.String.Text
-#, fuzzy
 msgid  "left outside"
 msgstr "പുറത്ത് പോകുക"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTINSIDE.String.Text
-#, fuzzy
 msgid  "inside (centered)"
 msgstr "അകത്ത് (കേന്ദ്രീകരിച്ച)"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTRIGHTOUTSID.String.Text
-#, fuzzy
 msgid  "right outside"
 msgstr "വലത്തെ പുറംവശം"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
-#, fuzzy
 msgid  "automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
-#, fuzzy
 msgid  "on the line"
 msgstr "രേഖയില്"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
-#, fuzzy
 msgid  "broken line"
 msgstr "വിച്ഛേദിച്ച വര"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
-#, fuzzy
 msgid  "below the line"
 msgstr "രേഖയ്ക്ക് താഴെ"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
-#, fuzzy
 msgid  "centered"
 msgstr "കേന്ദ്രീയത"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
-#, fuzzy
 msgid  "full circle"
 msgstr "സന്പൂര്ണ്ണ വൃത്തം"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_SECT.String.Text
-#, fuzzy
 msgid  "Circle Pie"
 msgstr "വൃത്ത പൈ"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
-#, fuzzy
 msgid  "Circle segment"
 msgstr "സര്‍ക്കിള്‍ സെഗ്മെന്റ്"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
-#, fuzzy
 msgid  "Arc"
 msgstr "ആര്‍ക്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "നിഴല്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "നിഴലിന്റെ നിറം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Horizontal shadow outline"
 msgstr "കുറുകെയായ ഛായ രൂപരേഖ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "കുത്തനെയുള്ള നിഴല്പോലുള്ള ബാഹ്യരേഖ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Shadow transparency"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "ത്രിമാന നിഴല്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Perspective shadow"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Callout type"
 msgstr "കോളൌട്ട് വിഭാഗം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Given angle"
 msgstr "തന്നിരിക്കുന്ന കോണം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Angle"
 msgstr "കോണം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "വിടവ്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Exit direction"
 msgstr "പുറത്തു കടക്കുന്നതിനുള്ള ദിശ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit position"
 msgstr "ആപേക്ഷിക നിര്ഗ്ഗമ സ്ഥാനം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "പുറത്തേയ്ക്കുള്ള സ്ഥാനം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Exit Position"
 msgstr "പുറത്തേയ്ക്കുള്ള സ്ഥാനം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Line length"
 msgstr "രേഖാനീളം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "Auto line length"
 msgstr "സ്വയം പ്രവര്ത്തിക്കുന്ന വിസ്താര രേഖ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "കോര്‍ണര്‍ റേഡിയസ്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left border spacing"
 msgstr "ഇടത്തെ ബാഹ്യരേഖയുടെ അകലം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right border spacing"
 msgstr "വലതുവശത്തെ വക്കിന്റെ അകലം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper border spacing"
 msgstr "ഉയര്ന്ന അരികിന്റെ അകലം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower border spacing"
 msgstr "താണ അതിര‍ിന്റെ അകലം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit frame height"
 msgstr "സ്വയം പാകമാകുന്ന ഫ്രെയിമിന്റെ ഉയരം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Min. frame height"
 msgstr "ഫ്രെയിമിന്റെ പൊക്കം ചുരുക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Max. frame height"
 msgstr "പരമാവധി ഫ്രെയിമിന്റെ ഉയരം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit frame width"
 msgstr "സ്വയം പാകമാകുന്ന ഫ്രെയിമിന്റ് വീതി"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Min. frame width"
 msgstr "ഫ്രെയിമിന്റെ വീതി ചുരുക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Max. frame width"
 msgstr "പരമാവധി ഫ്രെയിമിന്റെ വീതി"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "എതിരെ ടെക്സ്റ്റ് ചേര്‍ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr " കുറുകെ ടെക്സ്റ്റ് ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "ടെക്സ്റ്റ് ഫ്രെയിമില്‍ കൊള്ളിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "ചുവപ്പ്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "പച്ച"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "നീല"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "തിളങ്ങുന്ന"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr " തുളച്ചു കയറുന്ന"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "ഗാമാ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Transparency"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "തിരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "ഗ്രാഫിക്സ് മോഡ്"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
-#, fuzzy
 msgid  "Various attributes"
 msgstr "വിവിധ ആറ്റ്റിബ്യൂട്സ്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Position protected"
 msgstr "സ്ഥാനം സുരക്ഷിതമാണ‍്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Size Protection"
 msgstr "പരിമാണം  സുരക്ഷിതമാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Don't print"
 msgstr "അച്ചടിക്കരുത്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
-#, fuzzy
 msgid  "Layer Indicator"
 msgstr "പടല സൂചകം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Le~vel"
 msgstr "തലം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "വസ്തുവിന്റെ പേരു്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "ആരംഭിക്കേണ്ട ആങ്കിള്‍"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
-#, fuzzy
 msgid  "Final angle"
 msgstr "അന്തിമ കോണം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
-#, fuzzy
 msgid  "X Position"
 msgstr "X സ്ഥാനം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
-#, fuzzy
 msgid  "Y Position"
 msgstr "Y സ്ഥാനം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "വീതി"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "പൊക്കം"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Rotation angle"
 msgstr "കറങ്ങുന്ന കോണ്"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Shear angle"
 msgstr "കത്രിച്ച കോണം"
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
-#, fuzzy
 msgid  "Unknown attribute"
 msgstr "അജ്ഞാത ആറ്റ്റിബ്യൂട്സ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
-#, fuzzy
 msgid  "Line style"
 msgstr "രേഖാശൈലി"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
-#, fuzzy
 msgid  "Line pattern"
 msgstr "രേഖയുടെ മാതൃക"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
-#, fuzzy
 msgid  "Line width"
 msgstr "രേഖാവീതി"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "രേഖയുടെ നിറം"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
-#, fuzzy
 msgid  "Line head"
 msgstr "രേഖാതലം"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
-#, fuzzy
 msgid  "Line end"
 msgstr "രേഖാ അന്ത്യം"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
-#, fuzzy
 msgid  "Line head width"
 msgstr "രേഖാതലത്തിന്റെ വീതി"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
-#, fuzzy
 msgid  "Line end width"
 msgstr "രേഖയുടെ അന്തിമ വീതി"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowhead"
 msgstr "മദ്ധ്യഭാഗത്തില് അന്പിന്റെ തല"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDCENTER.String.Text
-#, fuzzy
 msgid  "Center arrowend"
 msgstr "മദ്ധ്യഭാഗത്തില് അന്പിന്റെ അറ്റം"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Line transparency"
 msgstr "രേഖാ സുതാര്യത"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
-#, fuzzy
 msgid  "Line joint"
 msgstr "രേഖയുടെ ചേര്പ്പ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED2.String.Text
-#, fuzzy
 msgid  "Line reserved for 2"
 msgstr "2 ന‍് റിസര്വ്ചെയ്ത രേഖ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED3.String.Text
-#, fuzzy
 msgid  "Line reserved for 3"
 msgstr "3 ന‍് റിസര്വ്ചെയ്ത രേഖ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED4.String.Text
-#, fuzzy
 msgid  "Line reserved for 4"
 msgstr "4 ന‍് റിസര്വ്ചെയ്ത രേഖ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED5.String.Text
-#, fuzzy
 msgid  "Line reserved for 5"
 msgstr "5 ന‍് റിസര്വ്ചെയ്ത രേഖ"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Line reserved for 6"
 msgstr "6ന‍് റിസര്വ്ചെയ്ത രേഖ"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
-#, fuzzy
 msgid  "Line attributes"
 msgstr "വരയുടെ ഐട്രിബ്യൂട്സ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
-#, fuzzy
 msgid  "Fill style"
 msgstr "ഫയല് ശൈലി"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fillcolor"
 msgstr "നിറം നിറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
-#, fuzzy
 msgid  "Gradient"
 msgstr "ഗ്രേഡിയന്റ് "
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLHATCH.String.Text
-#, fuzzy
 msgid  "Hatching"
 msgstr "ഹാച്ചിംഗ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBITMAP.String.Text
-#, fuzzy
 msgid  "Fillbitmap"
 msgstr "ബിറ്റ്മാപ് നിറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Transparency"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
-#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "ഗ്രെഡിയന്റ് രീതികള് കണക്കാക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILE.String.Text
-#, fuzzy
 msgid  "Tile fill"
 msgstr "ടൈല് നിറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POS.String.Text
-#, fuzzy
 msgid  "Fillbitmap position"
 msgstr "ബിറ്റ്മാപ്പിന്റെ സ്ഥാനം നിറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEX.String.Text
-#, fuzzy
 msgid  "Fillbitmap width"
 msgstr "ബിറ്റ്മാപ്പിന്റെ വീതി നിറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEY.String.Text
-#, fuzzy
 msgid  "Height of fillbitmap"
 msgstr "നിറച്ച ബിറ്റ്മാപിന്റെ പൊക്കം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparent gradient"
 msgstr "സുതാര്യ ഗ്രെഡിയന്റ്്"
 
 #: source/svdraw/svdstr.src#SIP_XA_SECONDARYFILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill reserved for 2"
 msgstr "2 ന‍് നിറയ്ക്കുന്നത് റിസര്വ്ചെയ്ത"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZELOG.String.Text
-#, fuzzy
 msgid  "Tile size not in %"
 msgstr "% ല് ടൈല് പരിമാണമില്ല"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile offset X in %"
 msgstr "% ല് ടൈല് ഓഫ്സെറ്റ് X"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile offset Y in %"
 msgstr "% ല് ടൈല് ഓഫ്സെറ്റ് Y"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_STRETCH.String.Text
-#, fuzzy
 msgid  "Bitmap scaling"
 msgstr "ബിറ്റ്മാപ് സ്കെലിംഗ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED3.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 3"
 msgstr "3 ന‍് റിസര്വ്ചെയ്ത  ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED4.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 4"
 msgstr "4 ന‍് റിസര്വ്ചെയ്ത  ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED5.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 5"
 msgstr "5 ന‍് റിസര്വ്ചെയ്ത  ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED6.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 6"
 msgstr "6 ന‍് റിസര്വ്ചെയ്ത  ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED7.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 7"
 msgstr "7 ന‍് റിസര്വ്ചെയ്ത  ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED8.String.Text
-#, fuzzy
 msgid  "Bitmap reserved for 8"
 msgstr "8 ന‍് റിസര്വ്ചെയ്ത  ബിറ്റ്മാപ്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETX.String.Text
-#, fuzzy
 msgid  "Tile position X in %"
 msgstr "% ല് ടൈല്  X ന്റെ സ്ഥാനം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETY.String.Text
-#, fuzzy
 msgid  "Tile position Y in %"
 msgstr "% ല് ടൈല് Y യുടെസ്ഥാനം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
-#, fuzzy
 msgid  "Background fill"
 msgstr "പശ്ചാത്തലം നിറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED10.String.Text
-#, fuzzy
 msgid  "Fill reserved for 10"
 msgstr "നിറയ്ക്കുന്നത് 10 ന‍് റിസര്വ്ചെയ്ത"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED11.String.Text
-#, fuzzy
 msgid  "Fill reserved for 11"
 msgstr "നിറയ്ക്കുന്നത് 11 ന‍് റിസര്വ്ചെയ്ത"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fill reserved for 12"
 msgstr "നിറയ്ക്കുന്നത് 12 ന‍് റിസര്വ്ചെയ്ത"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
-#, fuzzy
 msgid  "Area attributes"
 msgstr "വിസ്തീര്ണ്ണ അട്രിബ്യൂട്ട്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
-#, fuzzy
 msgid  "Fontwork style"
 msgstr "ഫോണ്ട്‌വര്ക്ക് ശൈലി"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
-#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  യോജിക്കല്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
-#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  അകലം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTART.String.Text
-#, fuzzy
 msgid  "Fontwork font begin"
 msgstr "ഫോണ്ട്‌വര്ക്ക് ഫോണ്ട്  തുടക്കം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
-#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  അനുകരണം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTOUTLINE.String.Text
-#, fuzzy
 msgid  "Fontwork outline"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  ബാഹ്യരേഖ"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
-#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  നിഴല് "
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
-#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  നിഴലിന്റെ നിറം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWXVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset X"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  നിഴല് ഓഫ്സെറ്റ് X"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWYVAL.String.Text
-#, fuzzy
 msgid  "Fontwork shadow offset Y"
 msgstr "ഫോണ്ട്‌വര്ക്ക്  നിഴല് ഓഫ്സെറ്റ് Y"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
-#, fuzzy
 msgid  "Fontwork default form"
 msgstr "ഫോണ്ട്‌വര്ക്കിന്റെ  ഡിഫോള്ട്ട് രൂപം"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
-#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "ഫോണ്ട്‌വര്ക്കിന്റെ ബാഹ്യരേഖ മറയ്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
-#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "ഫോണ്ട്‌വര്ക്കിന്റെ നിഴലിന്റെ സുതാര്യത"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED2.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 2"
 msgstr "2 ന‍് റിസര്വ്ചെയ്ത ഫാണ്ട്‌വര്ക്ക്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED3.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 3"
 msgstr "3 ന‍് റിസര്വ്ചെയ്ത ഫാണ്ട്‌വര്ക്ക്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED4.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 4"
 msgstr "4 ന‍് റിസര്വ്ചെയ്ത ഫാണ്ട്‌വര്ക്ക്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED5.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 5"
 msgstr "5 ന‍് റിസര്വ്ചെയ്ത ഫാണ്ട്‌വര്ക്ക്"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED_LAST.String.Text
-#, fuzzy
 msgid  "Fontwork reserved for 6"
 msgstr "6ന‍് റിസര്വ്ചെയ്ത ഫാണ്ട്‌വര്ക്ക്"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "നിഴല്"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
-#, fuzzy
 msgid  "Shadow color"
 msgstr "നിഴലിന്റെ നിറം"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "ഛായയുടെ അകലം X"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
-#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "ഛായയുടെ അകലംY"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Shadow transparency"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
-#, fuzzy
 msgid  "3D shadow"
 msgstr "ത്രിമാന നിഴല്"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
-#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Perspective shadow"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
-#, fuzzy
 msgid  "Type of legend"
 msgstr "ഇതിഹാസ വിഭാഗം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "സ്ഥിരം പുരാവൃത്ത കോണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
-#, fuzzy
 msgid  "Legend angle"
 msgstr "ഇതിഹാസകോണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONGAP.String.Text
-#, fuzzy
 msgid  "Legend lines spacing"
 msgstr "ഇതിഹാസ വരകളുടെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCDIR.String.Text
-#, fuzzy
 msgid  "Legend exit alignment"
 msgstr "ഇതിഹാസം  നിര്ഗമിക്കുന്ന രീതിയില് അണിനിരത്തുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr " പുറത്തു കടക്കുന്നതുമായി ബന്ധപ്പെട്ട ഇതിഹാസം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
-#, fuzzy
 msgid  "Relative exit legend"
 msgstr " പുറത്തു കടക്കുന്നതുമായി ബന്ധപ്പെട്ട ഇതിഹാസം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
-#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "ആപേക്ഷിക നിര്ഗ്ഗമ ഇതിഹാസം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
-#, fuzzy
 msgid  "Legend line length"
 msgstr "ഇതിഹാസ വരയുടെ ദൈര്ഘ്യം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFITLINELEN.String.Text
-#, fuzzy
 msgid  "AutoLength of legend lines"
 msgstr "ഇതിഹാസ വരകളുടെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
-#, fuzzy
 msgid  "Corner radius"
 msgstr "കോര്‍ണര്‍ റേഡിയസ്"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Minimal frame height"
 msgstr "ചുരുങ്ങിയ ഫ്രെയിമിന്റെ പൊക്കം "
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
-#, fuzzy
 msgid  "AutoFit height"
 msgstr "സ്വയം പാകമാകുന്ന ഉയരം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
-#, fuzzy
 msgid  "Fit text to frame"
 msgstr "ടെക്സ്റ്റ് ഫ്രെയിമില്‍ കൊള്ളിക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
-#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "ഇടത്തെ ടെക്സ്റ്റ് ഫ്രെയിമിന്റെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
-#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "വലത്തെ ടെക്സ്റ്റ് ഫ്രെയിമിന്റെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
-#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "മുകളിലത്തെ  ടെക്സ്റ്റ് ഫ്രെയിമിന്റെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
-#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "താഴത്തെ ടെക്സ്റ്റ് ഫ്രെയിമിന്റെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
-#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "എതിരെ ടെക്സ്റ്റ് ചേര്‍ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
-#, fuzzy
 msgid  "Maximal frame height"
 msgstr "പരമാവധി ഫ്രെയിമിന്റെ ഉയരം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Minimal frame width"
 msgstr "ചുരുങ്ങിയ ഫ്രെയിമിന്റെ വീതി"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
-#, fuzzy
 msgid  "Maximal frame width"
 msgstr "പരമാവധി ഫ്രെയിമിന്റെ വീതി"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
-#, fuzzy
 msgid  "AutoFit width"
 msgstr "സ്വയം പാകമാകുന്ന വീതി"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
-#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr " കുറുകെ ടെക്സ്റ്റ് ചേര്ക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIKIND.String.Text
-#, fuzzy
 msgid  "Ticker"
 msgstr "ഘടികാരം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDIRECTION.String.Text
-#, fuzzy
 msgid  "Ticker direction"
 msgstr "ഘടികാരദിശ"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTARTINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker start inside"
 msgstr "ഘടികാരം ഉള്ളില് ആരംഭിക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTOPINSIDE.String.Text
-#, fuzzy
 msgid  "Ticker stop inside"
 msgstr "ഘടികാരം ഉള്ളില് നിര്ത്തുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANICOUNT.String.Text
-#, fuzzy
 msgid  "Number of ticker runs"
 msgstr "ഘടികാര പ്രവര്ത്തിക്കുന്നതിന്റെ എണ്ണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDELAY.String.Text
-#, fuzzy
 msgid  "Speed of ticker"
 msgstr "ക്ലോക്കിന്റെ ഗതി"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIAMOUNT.String.Text
-#, fuzzy
 msgid  "Ticker step size"
 msgstr "ഘടികാര സ്റ്റെപ്പ് പരിമാണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_CONTOURFRAME.String.Text
-#, fuzzy
 msgid  "Outline text flow"
 msgstr "ബാഹ്യരേഖ ടെക്സ്റ്റിന്റെ ഒഴുക്ക്"
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
-#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "സ്വയം ആകൃതി രൂപപ്പെടുത്തുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
-#, fuzzy
 msgid  "User-defined attributes"
 msgstr "ഉപഭോക്താവ് നിര്ണ്ണയിച്ച ആറ്റ്റിബ്യൂട്സ്"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
-#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "ഫോണ്ട് സ്വതന്ത്ര രേഖാ അകലം ഉപയോഗിക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_WORDWRAP.String.Text
-#, fuzzy
 msgid  "Word wrap text in shape"
 msgstr "ടെക്സ്റ്റ് ആകൃതിയില്  വാക്കിന്റെ ആവരണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_AUTOGROWSIZE.String.Text
-#, fuzzy
 msgid  "Auto grow shape to fit text"
 msgstr "ടെക്സ്റ്റിന‍് പാകമാകുന്നതിന‍് സ്വയം ആകൃതി മാറ്റുന്ന"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE18.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 18"
 msgstr "SvDraw 18ന‍് റിസര്വ്ചെയ്തു"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE19.String.Text
-#, fuzzy
 msgid  "SvDraw reserved for 19"
 msgstr "SvDraw റിസര്‌വ് ചെയ്തത് 19"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
-#, fuzzy
 msgid  "Type of connector"
 msgstr "കണക്ടര് വിഭാഗം"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 1"
 msgstr "വസ്തുവിന്റെ കുറുകെയുള്ള അകലം 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 1"
 msgstr " വസ്തുവിന്റെ കുത്തനെ അകലം 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2HORZDIST.String.Text
-#, fuzzy
 msgid  "Horz. spacing object 2"
 msgstr "വസ്തുവിന്റെ കുറുകെയുള്ള  അകലം 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2VERTDIST.String.Text
-#, fuzzy
 msgid  "Vert. spacing object 2"
 msgstr "വസ്തുവിന്റെ കുത്തനെയുള്ള അകലം 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 1"
 msgstr "വസ്തുവിന്റെ ഗ്രൂ അകലം 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2GLUEDIST.String.Text
-#, fuzzy
 msgid  "Glue spacing object 2"
 msgstr "വസ്തുവിന്റെ ഗ്രൂ അകലം 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
-#, fuzzy
 msgid  "Number of movable lines"
 msgstr "നീക്കാവുന്ന രേഖളുടെ എണ്ണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE1DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 1"
 msgstr "ഓഫ്സെറ്റ് രേഖ 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE2DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 2"
 msgstr "ഓഫ്സെറ്റ് രേഖ 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE3DELTA.String.Text
-#, fuzzy
 msgid  "Offset line 3"
 msgstr "ഓഫ്സെറ്റ് രേഖ 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
-#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "വിഭാഗ പരിമാണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTHPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - horizontal position"
 msgstr "പരിമാണ മൂല്യം - കുറുകെ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTVPOS.String.Text
-#, fuzzy
 msgid  "Dimension value - vertical position"
 msgstr "പരിമാണ മൂല്യം -കുത്തനെ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURELINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension line space"
 msgstr "പരിമാണരേഖ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension help line overhang"
 msgstr " പരിമാണ സഹായരേഖയുടെ ഓവര് ഹാങ്ങിങ്ങ്"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEDIST.String.Text
-#, fuzzy
 msgid  "Dimension help line spacing"
 msgstr "പരിമാണ സഹായരേഖയുടെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE1LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 1"
 msgstr "പരിമാണ സഹായരേഖയുടെ ബാക്‍ലോഗ് 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE2LEN.String.Text
-#, fuzzy
 msgid  "Backlog of dimension help line 2"
 msgstr "പരിമാണ സഹായരേഖയുടെ ബാക്‍ലോഗ് 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREBELOWREFEDGE.String.Text
-#, fuzzy
 msgid  "Lower edge dimensioning"
 msgstr "താഴ്ന്ന അരികിന്റെ പരിമാണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
-#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "പരിമാണ രേഖയ്ക്ക് എതിരെ പരിമാണ മൂല്യം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTUPSIDEDOWN.String.Text
-#, fuzzy
 msgid  "Rotate dimension value by 180 degree"
 msgstr "പരിമാണമൂല്യം 180 ഡിഗ്രി കറക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREOVERHANG.String.Text
-#, fuzzy
 msgid  "Dimension line overhang"
 msgstr "പരിമാണരേഖ ഓവര് ഹാങ്ങിംഗ്"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit"
 msgstr "അളവിന്റെ ഏകകം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
-#, fuzzy
 msgid  "Additional scale factor"
 msgstr "അധികമായുള്ള സ്കേല് ഫാക്ടര്"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
-#, fuzzy
 msgid  "Measure unit display"
 msgstr "അളവിന്റെ ഏകകപ്രദര്ശനം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREFORMATSTRING.String.Text
-#, fuzzy
 msgid  "Dimension value format"
 msgstr "പരിമാണ മൂല്യ രൂപരേഖ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLE.String.Text
-#, fuzzy
 msgid  "AutoPositioning of the dimension value"
 msgstr "സ്വയം സ്ഥാനപിടിക്കുന്ന പരിമാണ മൂല്യ രൂപരേഖ"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLEVIEW.String.Text
-#, fuzzy
 msgid  "Angle for the automatic positioning of the dimension value"
 msgstr "സ്വയം സ്ഥാനം പിടിക്കുന്ന പരിമാണ മൂല്യത്തിന്റെ  കോണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTISFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Determination of the dimension value angle"
 msgstr "പരിമാണ മൂല്യ കോണ് നിര്ണ്ണയിക്കല്"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTFIXEDANGLE.String.Text
-#, fuzzy
 msgid  "Angle of the dimension value"
 msgstr "പരിമാണ മൂല്യ കോണ്"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREDECIMALPLACES.String.Text
-#, fuzzy
 msgid  "Decimal places"
 msgstr "ദശാംശ സ്ഥാനം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE05.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved 5"
 msgstr "5 പരിമാണത്തിനായി റിസര്വ്ചെയ്തു"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE06.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 6"
 msgstr "6 പരിമാണത്തിനായി റിസര്വ്ചെയ്തു"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE07.String.Text
-#, fuzzy
 msgid  "Dimensioning reserved for 7"
 msgstr "7പരിമാണത്തിനായി റിസര്വ്ചെയ്തു"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
-#, fuzzy
 msgid  "Type of circle"
 msgstr "വൃത്ത വിഭാഗം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
-#, fuzzy
 msgid  "Start angle"
 msgstr "ആരംഭിക്കേണ്ട ആങ്കിള്‍"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
-#, fuzzy
 msgid  "End angle"
 msgstr "അന്തിമ കോണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE0.String.Text
-#, fuzzy
 msgid  "Circle reserved for 0"
 msgstr "0 ന‍് റിസര്വ്ഡ് വൃത്തം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE1.String.Text
-#, fuzzy
 msgid  "Circle reserved for 1"
 msgstr "1 ന‍് റിസര്വ്ഡ് വൃത്തം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE2.String.Text
-#, fuzzy
 msgid  "Circle reserved for 2"
 msgstr "2 ന‍് റിസര്വ്ഡ് വൃത്തം"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE3.String.Text
-#, fuzzy
 msgid  "Circle reserved for 3"
 msgstr " 3 ന‍് റിസര്വ്ഡ് വൃത്തം"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object position"
 msgstr "സ്ഥാനം സുരക്ഷിതമല്ല"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
-#, fuzzy
 msgid  "Protected object size"
 msgstr "സംരക്ഷിച്ച വസ്തുവിന്റെ പരിമാണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
-#, fuzzy
 msgid  "Object, printable"
 msgstr "വസ്തു, അച്ചടിക്കാവുന്ന"
 
@@ -10847,437 +9962,350 @@ msgid  "Object, visible"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
-#, fuzzy
 msgid  "Level ID"
 msgstr "തലം ID"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
-#, fuzzy
 msgid  "Layer"
 msgstr "പടലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
-#, fuzzy
 msgid  "Object name"
 msgstr "വസ്തുവിന്റെ പേരു്"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONX.String.Text
-#, fuzzy
 msgid  "Position X, complete"
 msgstr "സ്ഥാനം X, സന്പൂര്ണ്ണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y, complete"
 msgstr "സ്ഥാനം Y, സന്പൂര്ണ്ണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Total Width"
 msgstr "ആകെ വീതി"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Height, complete"
 msgstr "പൊക്കം, മുഴുവന്"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONX.String.Text
-#, fuzzy
 msgid  "Single position X"
 msgstr "ഏക സ്ഥാനം X"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONY.String.Text
-#, fuzzy
 msgid  "Single position Y"
 msgstr "ഏക സ്ഥാനം Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Single width"
 msgstr "ഏകവീതി"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Single height"
 msgstr "ഏക പൊക്കം"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
-#, fuzzy
 msgid  "Logical width"
 msgstr "യുക്താനുസൃത വീതി"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
-#, fuzzy
 msgid  "Logical height"
 msgstr "യുക്താനുസൃതമായ പൊക്കം"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEANGLE.String.Text
-#, fuzzy
 msgid  "Single rotation angle"
 msgstr "ഒരുപ്രാവശ്യം കറങ്ങുന്ന  കോണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHEARANGLE.String.Text
-#, fuzzy
 msgid  "Single shear angle"
 msgstr "ഒരുപ്രാവശ്യം ഷിയര് ചെയ്യേുന്ന കോണം"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
-#, fuzzy
 msgid  "Move horizontally"
 msgstr "കുറുകെ നീക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
-#, fuzzy
 msgid  "Move vertically"
 msgstr "കുത്തനെ നീക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
-#, fuzzy
 msgid  "Resize X, single"
 msgstr "പുനഃപരിമാണം X, ഒറ്റയ്ക്കുള്ള"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
-#, fuzzy
 msgid  "Resize Y, single"
 msgstr "പുനഃപരിമാണം   Y,  ഒറ്റയ്ക്കുള്ള"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEONE.String.Text
-#, fuzzy
 msgid  "Single rotation"
 msgstr "ഏക കറക്കം"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARONE.String.Text
-#, fuzzy
 msgid  "Single horizontal shear"
 msgstr "ഏക കുറുകെയുള്ള  ഷിയര്"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARONE.String.Text
-#, fuzzy
 msgid  "Single vertical shear"
 msgstr "ഏക കുത്തനെയുള്ള ഷിയര്"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
-#, fuzzy
 msgid  "Resize X, complete"
 msgstr "Xപുനഃപരിമാണം ചെയ്യുക, സന്പൂര്ണ്ണമായി"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
-#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Y പുനഃപരിമാണം ചെയ്യുക, സന്പൂര്ണ്ണമായി"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
-#, fuzzy
 msgid  "Rotate all"
 msgstr "എല്ലാം കറങ്ങുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear horizontal, complete"
 msgstr "സമാന്തരമായി കത്രിച്ച , സന്പൂര്ണ്ണമായി"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARALL.String.Text
-#, fuzzy
 msgid  "Shear vertical, complete"
 msgstr "കുത്തനെ കത്രിച്ച, സന്പൂര്ണ്ണമായി"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1X.String.Text
-#, fuzzy
 msgid  "Reference point 1 X"
 msgstr "റഫറന്സ് ബിന്ദു  1 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1Y.String.Text
-#, fuzzy
 msgid  "Reference point 1 Y"
 msgstr "റഫറന്സ് ബിന്ദു 1 Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2X.String.Text
-#, fuzzy
 msgid  "Reference point 2 X"
 msgstr "റഫറന്സ് ബിന്ദു  2 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2Y.String.Text
-#, fuzzy
 msgid  "Reference point 2 Y"
 msgstr "റഫറന്സ് ബിന്ദു 2 Y"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ഹൈഫനേഷന്"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
-#, fuzzy
 msgid  "Display bullets"
 msgstr "ബുള്ളറ്റുകള് പ്രദര്ശിപ്പിക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
-#, fuzzy
 msgid  "Numbering indents"
 msgstr "ഇന്ഡന്റിന‍് സംഖ്യയിടുക"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
-#, fuzzy
 msgid  "Numbering level"
 msgstr "സംഖ്യാതലം"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
-#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "ബുള്ളറ്റുകളും സംഖ്യകളും"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
-#, fuzzy
 msgid  "Indents"
 msgstr "ഇന്ഡന്റ്സ്"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
-#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "ഖണ്ഡികയുടെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
-#, fuzzy
 msgid  "Line spacing"
 msgstr "രേഖയുടെ അകലം"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
-#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "ഖണ്ഡിക ക്രമീകരിക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
-#, fuzzy
 msgid  "Tabulators"
 msgstr "പട്ടിക തയ്യാറാക്കുന്നവര്"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "ഫോണ്ടിന്റെ നിറം"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
-#, fuzzy
 msgid  "Character set"
 msgstr "അക്ഷരസമൂഹം"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
-#, fuzzy
 msgid  "Font size"
 msgstr "ഫോണ്ട് പരിമാണം"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
-#, fuzzy
 msgid  "Font width"
 msgstr "ഫോണ്ട് വീതി"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
-#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "കനത്ത"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
-#, fuzzy
 msgid  "Underline"
 msgstr "അടിവര"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OVERLINE.String.Text
-#, fuzzy
 msgid  "Overline"
 msgstr "ഓവര്‍ലൈന്‍"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
-#, fuzzy
 msgid  "Strikethrough"
 msgstr "കുറുകെ മുറിക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "ചരിഞ്ഞക്ഷരം"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "ബാഹ്യ രേഖ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
-#, fuzzy
 msgid  "Font shadow"
 msgstr "ഫോണ്ടിന്റെ ഛായ"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
-#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "സൂപ്പര്സ്ക്രിപ്റ്റ്/സബ്സ്ക്രിപ്റ്റ്"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
-#, fuzzy
 msgid  "Kerning"
 msgstr "കെര്ണ്ണിഗ്"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
-#, fuzzy
 msgid  "Manual kerning"
 msgstr "മാനുവല് കെര്ണിംഗ്"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
-#, fuzzy
 msgid  "No underline for spaces"
 msgstr "അകലങ്ങള്ക്ക് അടിവരയില്ല"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
-#, fuzzy
 msgid  "Tabulator"
 msgstr "പട്ടികപോലുള്ള"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_LINEBR.String.Text
-#, fuzzy
 msgid  "Optional line break"
 msgstr "ഐച്ഛിക രേഖാഖണ്ഡന"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
-#, fuzzy
 msgid  "Non-convertible character"
 msgstr "മാറ്റാന് കഴിയാത്ത അക്ഷരം"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "മണ്ഡലം"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "ചുവപ്പ്"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "പച്ച"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "നീല"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "തിളങ്ങുന്ന"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr " തുളച്ചു കയറുന്ന"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "ഗാമാ"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Transparency"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
-#, fuzzy
 msgid  "Invert"
 msgstr "തിരിക്കുക"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics mode"
 msgstr "ഗ്രാഫിക്സ് മോഡ്"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "ക്രോപ്"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
-#, fuzzy
 msgid  "Media object"
 msgstr "മാദ്ധ്യമ വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
-#, fuzzy
 msgid  "Media objects"
 msgstr "മാദ്ധ്യമ വസ്തു"
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
-#, fuzzy
 msgid  "Apply table attributes"
 msgstr "പട്ടികയ്ക്കുള്ള വിശേഷതകള്‍ ലഭ്യമാക്കുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
-#, fuzzy
 msgid  "AutoFormat table"
 msgstr "പട്ടിക ഓട്ടോഫോര്‍മാറ്റ് ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
-#, fuzzy
 msgid  "Insert column"
 msgstr "നിര ചേര്‍ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "വരി ചേര്‍ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
-#, fuzzy
 msgid  "Delete column"
 msgstr "നിര വെട്ടി നീക്കുക"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "വരി വെട്ടിനീക്കുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
-#, fuzzy
 msgid  "Split cells"
 msgstr "സെല്ലുകള്‍ വേര്‍തിരിക്കുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
-#, fuzzy
 msgid  "Merge cells"
 msgstr "സെല്ലുകള്‍ ചേര്‍ക്കുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
-#, fuzzy
 msgid  "Format cell"
 msgstr "സെല്‍ ഫോര്‍മാറ്റ് ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
-#, fuzzy
 msgid  "Distribute rows"
 msgstr "വരികള്‍ വിതരണം ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
-#, fuzzy
 msgid  "Distribute columns"
 msgstr "നിരകള്‍ വിതരണം ചെയ്യുക"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
-#, fuzzy
 msgid  "Table style"
 msgstr "പട്ടികയുടെ ശൈലി"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
-#, fuzzy
 msgid  "Table style settings"
 msgstr "പട്ടികയുടെ ശൈലിയ്ക്കുള്ള സജ്ജീകരണങ്ങള്‍"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "പട്ടിക"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "പട്ടികകള്‍"
 
@@ -11290,62 +10318,50 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
-#, fuzzy
 msgid  "Table Design Styles"
 msgstr "ടേബിള്‍ മാതൃക ശൈലികള്‍"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "No Fill"
 msgstr "നിറച്ചില്ല"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
-#, fuzzy
 msgid  "Pattern"
 msgstr "മാതൃക"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "അതിര‍ുകള്"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
-#, fuzzy
 msgid  "Border Style"
 msgstr "അതിര‍ിന്റെ ശൈലി"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
-#, fuzzy
 msgid  "Border Color"
 msgstr "അതിര‍ിന്റെ നിറം"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
-#, fuzzy
 msgid  "Highlighting"
 msgstr "എടുത്തുകാട്ടുന്നു"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "പശ്ചാത്തലം"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "സ്വയം പ്രവര്ത്തിക്കുന്ന"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
-#, fuzzy
 msgid  "Pages"
 msgstr "പേജുകള്"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
-#, fuzzy
 msgid  "Clear formatting"
 msgstr "വിഭാഗ നീക്കുക"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
-#, fuzzy
 msgid  "More..."
 msgstr "കൂടുതല്"
 
@@ -11354,282 +10370,226 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "നിഷ്കാസനദിശ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "വീക്ഷണ കോണം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
-#, fuzzy
 msgid  "P~arallel"
 msgstr "സമാന്തരമായി"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
-#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "നിഷ്കാസനം വടക്കുപടിഞ്ഞാറ്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
-#, fuzzy
 msgid  "Extrusion North"
 msgstr "നിഷ്കാസനവസ്തു വടക്കു"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
-#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "നിഷ്കാസനം വടക്കു കിഴക്ക്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
-#, fuzzy
 msgid  "Extrusion West"
 msgstr "നിഷ്കാസനം പടിഞ്ഞാറ്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
-#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "നിഷ്കാസനം പിന്നോട്ട് "
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
-#, fuzzy
 msgid  "Extrusion East"
 msgstr "നിഷ്കാസനം കിഴക്ക്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
-#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "നിഷ്കാസനം തെക്ക് പടിഞ്ഞാറ്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
-#, fuzzy
 msgid  "Extrusion South"
 msgstr "നിഷ്കാസനം തെക്ക്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
-#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "നിഷ്കാസനം തെക്ക് കിഴക്ക്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "നിഷ്കാസനത്തിന്റെ ആഴം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "~യഥേഷ്ടം സജ്ജമാക്കുക..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
-#, fuzzy
 msgid  "~Infinity"
 msgstr "അനന്തത"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "നിഷ്കാസന പ്രകാശം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
-#, fuzzy
 msgid  "~Bright"
 msgstr "തിളങ്ങുന്ന"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "സാധാരണ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
-#, fuzzy
 msgid  "~Dim"
 msgstr "മങ്ങിയ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
-#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "നിഷ്കാസന ഉപരിതലം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
-#, fuzzy
 msgid  "~Wire Frame"
 msgstr "വയര് ഫ്രെയിം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
-#, fuzzy
 msgid  "~Matt"
 msgstr "മാറ്റ്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
-#, fuzzy
 msgid  "~Plastic"
 msgstr "പ്ലാസ്റ്റിക്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
-#, fuzzy
 msgid  "Me~tal"
 msgstr "ധാതു"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
-#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "നിഷ്കാസനത്തിന്റെ ആഴം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "മൂല്യം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Extrusion Color"
 msgstr "നിഷ്കാസനനിറം"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0.String.Text
-#, fuzzy
 msgid  "~0 cm"
 msgstr "0 സെന്ി മീറ്റര്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1.String.Text
-#, fuzzy
 msgid  "~1 cm"
 msgstr "1 സെന്ി മീറ്റര്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2.String.Text
-#, fuzzy
 msgid  "~2.5 cm"
 msgstr "2.5 സെന്ി മീറ്റര്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3.String.Text
-#, fuzzy
 msgid  "~5 cm"
 msgstr "5 സെന്ി മീറ്റര്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
-#, fuzzy
 msgid  "10 ~cm"
 msgstr " 10 സെന്റിമീറ്റര്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
-#, fuzzy
 msgid  "0 inch"
 msgstr "0 ഇഞ്ച്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
-#, fuzzy
 msgid  "0.~5 inch"
 msgstr "0.5 ഇഞ്ച്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
-#, fuzzy
 msgid  "~1 inch"
 msgstr "1 ഇഞ്ച്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
-#, fuzzy
 msgid  "~2 inch"
 msgstr "2 ഇഞ്ച്"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
-#, fuzzy
 msgid  "~4 inch"
 msgstr "4 ഇഞ്ച്"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "ഫോണ്ട്‌വര്ക്ക് ഗ്യാലറി"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
-#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "ഫോണ്ട്‌വര്ക്ക് ശൈലി തിരഞ്ഞെടുക്കുക"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
-#, fuzzy
 msgid  "Click to edit text"
 msgstr "ടെക്സ്റ്റ എഡിറ്റു ചെയ്യാന് ക്ലിക് ചെയ്യുക"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "ഫോണ്ട്‌വര്ക്ക് യോജിക്കല്"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
-#, fuzzy
 msgid  "~Left Align"
 msgstr "ഇടതുവശം ക്രമീകരിക്കുക"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "മദ്ധ്യഭാഗം"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
-#, fuzzy
 msgid  "~Right Align"
 msgstr "വലതുവശം ക്രമീകരിക്കുക"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
-#, fuzzy
 msgid  "~Word Justify"
 msgstr "വാക്യം ചിട്ടപ്പെടുത്തുക"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
-#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "വലിച്ചു നീട്ടുന്നത് ചിട്ടപ്പെടുത്തുക"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "ഫോണ്ട് വര്‍ക്ക് ക്യാരക്ടര്‍ സ്പെയിസിങ്"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
-#, fuzzy
 msgid  "~Very Tight"
 msgstr "വളരെ ഇറുങ്ങിയ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
-#, fuzzy
 msgid  "~Tight"
 msgstr "ഇറുങ്ങിയ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
-#, fuzzy
 msgid  "~Normal"
 msgstr "സാധാരണ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
-#, fuzzy
 msgid  "~Loose"
 msgstr "അയഞ്ഞ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
-#, fuzzy
 msgid  "Very ~Loose"
 msgstr "വളരെ അയഞ്ഞ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
-#, fuzzy
 msgid  "~Custom..."
 msgstr "~യഥേഷ്ടം സജ്ജമാക്കുക..."
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_KERN_PAIRS.String.Text
-#, fuzzy
 msgid  "~Kern Character Pairs"
 msgstr "കെര്ണിംഗ് അക്ഷര ജോടികള്"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
-#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "ഫോണ്ട് വര്‍ക്ക് ക്യാരക്ടര്‍ സ്പെയിസിങ്"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
-#, fuzzy
 msgid  "~Value"
 msgstr "മൂല്യം"
 
@@ -11638,57 +10598,46 @@ msgid  "Find"
 msgstr ""
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
-#, fuzzy
 msgid  "Filters"
 msgstr "ഫില്ട്ടറുകള്"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
-#, fuzzy
 msgid  "Graphics Mode"
 msgstr "ഗ്രാഫിക്സ് പ്രകാരം"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
-#, fuzzy
 msgid  "Red"
 msgstr "ചുവപ്പ്"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
-#, fuzzy
 msgid  "Green"
 msgstr "പച്ച"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
-#, fuzzy
 msgid  "Blue"
 msgstr "നീല"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
-#, fuzzy
 msgid  "Brightness"
 msgstr "തിളങ്ങുന്ന"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
-#, fuzzy
 msgid  "Contrast"
 msgstr "തുളയ്ക്കല്"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
-#, fuzzy
 msgid  "Gamma"
 msgstr "ഗാമാ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "സുതാര്യത"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
-#, fuzzy
 msgid  "Crop"
 msgstr "ക്രോപ്"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
-#, fuzzy
 msgid  "Colors"
 msgstr "നിറങ്ങള്‍"
 
@@ -11697,112 +10646,90 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "വേണ്ടെന്ന് വയ്ക്കുവാനുള്ള പ്രവര്‍ത്തികള്‍: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "വേണ്ടെന്ന് വയ്ക്കുവാനുള്ള പ്രവര്‍ത്തികള്‍: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "വീണ്ടും ചെയ്യുവാനുള്ള പ്രവര്‍ത്തികള്‍: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
-#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "വീണ്ടും ചെയ്യുവാനുള്ള പ്രവര്‍ത്തികള്‍: $(ARG1)"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
-#, fuzzy
 msgid  "Extrusion"
 msgstr "നിഷ്കാസനം"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
-#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "നിഷ്കാസന പ്രയോഗം ഓണ്/ ഓഫ്"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
-#, fuzzy
 msgid  "Tilt Down"
 msgstr "താഴോട്ട് ചരിഞ്ഞ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
-#, fuzzy
 msgid  "Tilt Up"
 msgstr "മുകളിലോട്ട്  ചാഞ്ഞ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
-#, fuzzy
 msgid  "Tilt Left"
 msgstr "ഇടത്തോട്ട് ചാഞ്ഞ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
-#, fuzzy
 msgid  "Tilt Right"
 msgstr "വലത്തോട്ട് ചാഞ്ഞ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
-#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "നിഷ്കാസനത്തിന്റെ ആഴം മാറ്റുക"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
-#, fuzzy
 msgid  "Change Orientation"
 msgstr "നവീകരണം മാറ്റുക"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
-#, fuzzy
 msgid  "Change Projection Type"
 msgstr "എടുത്തുകാണിക്കുന്ന രീതി മാറ്റുക"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
-#, fuzzy
 msgid  "Change Lighting"
 msgstr "പ്രകാശിക്കല് മാറ്റുക"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
-#, fuzzy
 msgid  "Change Brightness"
 msgstr "തിളക്കം മാറ്റുക"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
-#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "നിഷ്കാസന നിഷ്കാസ ഉപരിതലം"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
-#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "നിഷ്കാസന നിറം മാറ്റുക"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
-#, fuzzy
 msgid  "Fontwork"
 msgstr "ഫോണ്ട്‌വര്ക്ക്"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "ഫോണ്ട്‌വര്ക്കിന്റെ പരിമാണം പ്രയോഗിക്കുക"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "ഫോണ്ട്‌വര്ക്കിന‌് ഒരേ അക്ഷര ഉയരം പ്രയോഗിക്കുക"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "ഫോണ്ട്‌വര്ക്കിന‍് ക്രമീകരണം പ്രയോഗിിക്കുക"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
-#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "ഫോണ്ട്‌വര്ക്കിന‍്  അക്ഷര അകലം  പ്രയോഗിക്കുക"
 

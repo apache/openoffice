@@ -61,11 +61,11 @@ msgstr "Ni besedila"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
 msgid  "Enter password to open file: \\n"
-msgstr ""
+msgstr "Vnesite geslo, če želite odpreti datoteko: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
 msgid  "Enter password to modify file: \\n"
-msgstr ""
+msgstr "Vnesite geslo, če želite spremeniti datoteko: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -93,7 +93,7 @@ msgstr "Dokument je v rabi"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
-msgstr ""
+msgstr "Datoteko dokumenta '$(ARG1)' je za urejanje zaklenil uporabnik:\n\n$(ARG2)\n\nDokument poskusite znova shraniti kasneje ali pa shranite kopijo dokumenta.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -413,11 +413,11 @@ msgstr "Sporočilo s strežnika:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \\n%1"
-msgstr ""
+msgstr "Vnesite ime in geslo uporabnika:\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
 msgid  "Enter user name and password for: \\n\"%2\" on %1"
-msgstr ""
+msgstr "Vnesite ime in geslo uporabnika:\n\"%2\" na %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,11 +469,11 @@ msgstr "~Pošlji"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "Strežnik '${HOST}' želi nastaviti enega ali več piškotkov.\nPiškotki vsebujejo podatke s sklicem na določene razrede URL. Če %PRODUCTNAME kasneje zahteva dokument z naslova URL, ki ustreza razredu predhodno nastavljenega piškotka, bo %PRODUCTNAME poslal te podatke na strežnik. To omogoča strežniku, da prepozna stanje spletne aplikacije, ko npr. nakupujete na spletu.\n\nNastavljeni morajo biti naslednji piškotki:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domena: ${DOMAIN}, Pot: ${PATH}, Piškotek: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
@@ -481,11 +481,11 @@ msgstr "Sprejem piškotov"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME je shranil piškotke za strežnik '${HOST}', ki bodo poslani pri zahtevi za dostop do dokumenta ${PATH}.\nPiškotki vsebujejo podatke s sklicem na določene razrede URL. Nekateri strežniki jih pošljejo %PRODUCTNAME, kjer so tudi shranjeni ob dostopu do določenih dokumentov. Če %PRODUCTNAME naloži dokument, ki glede na naslov URL ustreza razredu enega od predhodno prejetih piškotkov, bo program %PRODUCTNAME te podatke poslal na strežnik. To omogoča strežniku, da prepozna stanje spletne aplikacije, ko npr. nakupujete na spletu.\n\nNastavljeni morajo biti naslednji piškotki:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
-msgstr ""
+msgstr "Domena: ${DOMAIN}, Pot: ${PATH}, Piškotek: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -529,7 +529,7 @@ msgstr "Dokument je v rabi"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
-msgstr ""
+msgstr "Datoteko dokumenta '$(ARG1)' je za urejanje zaklenil uporabnik:\n\n$(ARG2)\n\nOdprite dokument samo za branje ali pa odprite kopijo dokumenta za urejanje.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "Dokument so spremenili drugi"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
-msgstr ""
+msgstr "Datoteka je bila spremenjena, odkar ste jo odprli v %PRODUCTNAME. Če boste shranili svojo različico dokumenta, boste prepisali spremembe, ki so jih opravili drugi.\n\nJo želite kljub temu shraniti?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "Na voljo je posodobitev za %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Dokument je nastal z novejšo različico %PRODUCTNAME. Morda vsebuje elemente ali funkcije, ki jih vaša trenutna različica še ne podpira.\n\nKliknite 'Posodobi zdaj ...', če želite pognati posodobitev prek spleta in namestiti najnovejšo različico %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -653,7 +653,7 @@ msgstr "Pozor: Če pozabite glavno geslo, ne boste mogli dostopati do z njim za�
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
-msgstr ""
+msgstr "Datoteko dokumenta '$(ARG1)' ste za urejanje zaklenili na drugem sistemu ($(ARG2)).\n\nOdprite dokument samo za branje ali pa prezrite svoj zaklep datoteke in odprite dokument za urejanje.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "~Odpri"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
-msgstr ""
+msgstr "Datoteko dokumenta '$(ARG1)' ste za urejanje zaklenili na drugem sistemu ($(ARG2)).\n\nZaprite dokument na drugem sistemu in poskusite znova s shranjevanjem ali pa prezrite lasten zaklep datoteke in shranite trenutni dokument.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

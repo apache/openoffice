@@ -141,7 +141,7 @@ msgstr "الحدود"
 
 #: mediawiki/help/wikiformats.xhp#par_id1831110
 msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
-msgstr ""
+msgstr "بغض النظر عن أنماط الجدول المخصصة للحدود والخلفية، يتم دائمًا تصدير جدول باعتباره \"<emph>prettytable\"</emph>، والذي يعمل في محرك موقع Wiki بحدود بسيطة ورأس صفحة غامق."
 
 #: mediawiki/help/wikiformats.xhp#hd_id6255073
 msgid  "Charset and special characters"
@@ -157,7 +157,7 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#bm_id3154408
 msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
@@ -165,11 +165,11 @@ msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
 msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">باستخدام @WIKIEXTENSIONPRODUCTNAME@ يُمكنك تحميل مستند نص Writer إلى خادم MediaWiki. وبعد القيام بالتحميل، يُمكن لكافة مستخدمي Wiki قراءة المستند على موقع Wiki.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#par_id6468703
 msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">اختر <item type=\"menuitem\">ملف - إرسال - إلى MediaWiki</item> لتحميل مستند Writer إلى خادم MediaWiki.</ahelp>"
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
 msgid  "System Requirements"
@@ -189,7 +189,7 @@ msgstr "Java Runtime Environment 1.4"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
 msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
-msgstr ""
+msgstr "حساب Wiki على خادم <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> مدعوم"
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
 msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
@@ -197,7 +197,7 @@ msgstr "تثبيت @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
 msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
+msgstr "قبل تثبيت @WIKIEXTENSIONPRODUCTNAME@، تأكد من أن %PRODUCTNAME يستخدم (Java Runtime Environment (JRE. للتحقق من حالة JRE، اختر <item type=\"menuitem\">أدوات - خيارات - %PRODUCTNAME - Java</item>. تأكد من تحديد \"استخدام Java runtime environment\" وتحديد مجلد Java runtime في مربع القائمة الكبير. إذا لم توجد أي JRE نشطة، فقم بتنشيط JRE 1.4 أو أحدث ثم أعد تشغيل %PRODUCTNAME."
 
 #: mediawiki/help/wiki.xhp#hd_id567339
 msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
@@ -205,7 +205,7 @@ msgstr "لتثبيت @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "في الإطار Writer، اختر <item type=\"menuitem\">أدوات - مدير التمديد</item>."
 
 #: mediawiki/help/wiki.xhp#par_id4338511
 msgid  "In the Extension Manager dialog, click Add."
@@ -221,7 +221,7 @@ msgstr "قم بإغلاق %PRODUCTNAME، وإغلاق Quickstarter أيضًا إ
 
 #: mediawiki/help/wiki.xhp#par_id265511
 msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
+msgstr "قم بإعادة تشغيل البرنامج، افتح مستندًا نصيًا، ثم اختر <item type=\"menuitem\">أدوات - خيارات - إنترنت - MediaWiki</item> لإدخال إعدادات Wiki الخاصة بك. انظر \"للاتصال بموقع Wiki\" أدناه."
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
 msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
@@ -229,7 +229,7 @@ msgstr "لإزالة @WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
 msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
-msgstr ""
+msgstr "في الإطار Writer، اختر <item type=\"menuitem\">أدوات - مدير التمديد</item>."
 
 #: mediawiki/help/wiki.xhp#par_id9504379
 msgid  "Click the plus sign (+) in front of My Extensions."
@@ -245,23 +245,23 @@ msgstr "للاتصال بموقع Wiki"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
 msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
-msgstr ""
+msgstr "ملاحظة: يمكنك تخزين اسم المستخدم الخاص بك وكلمة المرور لمربعات الحوار ذات الصلة داخل %PRODUCTNAME. سيتم تخزين كلمة المرور بطريقة آمنة، بينما يتم الاحتفاظ بالوصول بكلمة مرور رئيسية. لتمكين كلمة المرور الرئيسية، اختر <item type=\"menuitem\">أدوات - خيارات - %PRODUCTNAME - الأمان</item>."
 
 #: mediawiki/help/wiki.xhp#par_id3751640
 msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
-msgstr ""
+msgstr "ملاحظة: في حالة تعذر الاتصال بويب باستخدام خادم وكيل، أدخل معلومات الوكيل إلى <item type=\"menuitem\">أدوات - خيارات - إنترنت - وكيل</item> وقم بإعادة تشغيل البرنامج."
 
 #: mediawiki/help/wiki.xhp#par_id9533677
 msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
-msgstr ""
+msgstr "افتح مستند Writer واختر <item type=\"menuitem\">أدوات - خيارات - إنترنت - MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id368968
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
-msgstr ""
+msgstr "في مربع الحوار <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">خيارات</link>، انقر فوق إضافة."
 
 #: mediawiki/help/wiki.xhp#par_id6962187
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
-msgstr ""
+msgstr "في مربع الحوار <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>، أدخل معلومات الحساب لموقع Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id5328836
 msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
@@ -285,7 +285,7 @@ msgstr "في مربع كلمة المرور، أدخل كلمة المرور ا�
 
 #: mediawiki/help/wiki.xhp#par_id292062
 msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
-msgstr ""
+msgstr "قم بتمكين \"حفظ كلمة المرور\" ـ وهذا أمر اختياري ـ لحفظ كلمة المرور بين الجلسات. يتم استخدام كلمة المرور الرئيسية للاحتفاظ بالوصول إلى كافة كلمات المرور المحفوظة. اختر <item type=\"menuitem\">أدوات - خيارات - %PRODUCTNAME - الأمان</item> لتمكين كلمة المرور الرئيسية. يكون \"حفظ كلمة المرور\" غير متوفر عند عدم تمكين كلمة المرور الرئيسية."
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
 msgid  "To Create a New Wiki Page"
@@ -297,35 +297,35 @@ msgstr "افتح مستند Writer."
 
 #: mediawiki/help/wiki.xhp#par_id944853
 msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
-msgstr ""
+msgstr "اكتب محتوى صفحة Wiki. يُمكنك استخدام تنسيق مثل التنسيقات النصية والعناوين والحواشي السفلية وأكثر من ذلك. انظر قائمة <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"> للتنسيقات المدعومة</link>."
 
 #: mediawiki/help/wiki.xhp#par_id4566484
 msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
-msgstr ""
+msgstr "اختر ملف <item type=\"menuitem\">- إرسال - إلى MediaWiki</item>."
 
 #: mediawiki/help/wiki.xhp#par_id228278
 msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
-msgstr ""
+msgstr "في مربع الحوار <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">أرسل إلىMediaWiki</link>، حدد الإعدادات للإدخال الخاص بك."
 
 #: mediawiki/help/wiki.xhp#par_id2564165
 msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
-msgstr ""
+msgstr "<emph>خادم MediaWiki</emph>: حدد Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id5566576
 msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
-msgstr ""
+msgstr "<emph>العنوان</emph>: اكتب عنوان الصفحة. اكتب عنوان صفحة موجودة لتحل محل الصفحة بالمستند النصي الحالي لديك،. اكتب عنوانًا جديدًا لإنشاء صفحة جديدة على موقع Wiki."
 
 #: mediawiki/help/wiki.xhp#par_id9688711
 msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
-msgstr ""
+msgstr "<emph>ملخص</emph>: أدخل ملخصًا موجزًا اختياريًا لصفحتك."
 
 #: mediawiki/help/wiki.xhp#par_id4123661
 msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
-msgstr ""
+msgstr "<emph>يُعد ذلك بمثابة تحرير ثانوي</emph>:تحقق من هذا المربع لتحديد الصفحة التي تم تحميلها باعتبارها تحريرًا ثانويًا للصفحة الموجودة بالفعل بنفس العنوان."
 
 #: mediawiki/help/wiki.xhp#par_id452284
 msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
-msgstr ""
+msgstr "<emph>العرض في مستعرض ويب</emph>: تحقق من هذا المربع لفتح مستعرض النظام وعرض صفحة موقع Wiki التي تم تحميلها."
 
 #: mediawiki/help/wiki.xhp#par_id8346812
 msgid  "Click Send."
@@ -341,27 +341,27 @@ msgstr "خيارات MediaWiki"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
 msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
-msgstr ""
+msgstr "يُمكنك إضافة أو تحرير أو إزالة خوادم MediaWiki. افتح مربع الحوار بواسطة <item type=\"menuitem\">أدوات - خيارات - إنترنت - MediaWiki</item>. وبدلاً من ذلك، اختر <item type=\"menuitem\">أدوات - مدير التمديد</item>، حدد @WIKIEXTENSIONPRODUCTNAME@ وانقر فوق الزر خيارات.!"
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
 msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">انقر فوق إضافة لإضافة خادم Wiki جديد.<br/>حدد إدخالاً وانقر فوق تحرير لتحرير إعدادات الحساب.<br/>حدد إدخالاً وانقر فوق إزالة لإزالة الإدخال من القائمة.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">يقوم بفتح الحوار إضافة لإضافة إدخال جديد إلى القائمة.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\"> يقوم بفتح مربع الحوار MediaWiki لتحرير الإدخال المحدد.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">يقوم بحذف الإدخال المحدد من القائمة.</ahelp>"
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
 msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
-msgstr ""
+msgstr "في حالة النقر فوق إضافة أو تحرير، يتم فتح مربع الحوار <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>."
 
 #: mediawiki/help/wikiaccount.xhp#tit
 msgid  "MediaWiki"
@@ -377,19 +377,19 @@ msgstr "استخدم مربع الحوار MediaWiki لإضافة إعدادات
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">أدخل عنوان URL الخاص بخادم MediaWiki، والذي يبدأ بالمقطع http://</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">أدخل اسم المستخدم الخاص بك على خادم MediaWiki. اتركه فارغًا في حالة الوصول المجهول.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">أدخل كلمة المرور الخاصة بك على خادم MediaWiki. اتركها فارغة للوصول المجهول.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
 msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">قم بتمكين تخزين كلمة المرور بين الجلسات. يجب تمكين كلمة المرور الرئيسية، راجع <item type=\"menuitem\">أدوات - خيارات - %PRODUCTNAME - الأمان</item>.</ahelp>"
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
 msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
@@ -417,23 +417,23 @@ msgstr "في مربع الحوار أرسل إلى MediaWiki، حدد الإعد
 
 #: mediawiki/help/wikisend.xhp#par_id664082
 msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">حدد خادم MediaWiki حيث تريد نشر المستند الخاص بك. انقر فوق إضافة لإضافة خادم جديد إلى القائمة.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
 msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">أدخل عنوان إدخال Wiki. يُعد ذلك العنوان الرئيسي لإدخال Wiki الخاص بك. لإدخال جديد، يجب أن يكون العنوان فريدًا على ذلك Wiki. في حالة إدخال عنوان موجود، فسيحل التحميل الخاص بك محل إدخال Wiki الموجود.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
 msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
-msgstr ""
+msgstr "<ahelp hid=\".\">أدخل ملخصًا قصيرًا اختياريًا أو تعليقًا.</ahelp> انظر <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
 
 #: mediawiki/help/wikisend.xhp#par_id823999
 msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
-msgstr ""
+msgstr "<emph>يُعد ذلك تعديلاً ثانويًا</emph>: <ahelp hid=\".\">تحقق من هذا المربع لتحديد الصفحة التي تم تحميلها كتحرير ثانوي للصفحة الموجودة بالفعل بنفس العنوان.</ahelp>"
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
 msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
-msgstr ""
+msgstr "<emph>العرض في مستعرض ويب</emph>: <ahelp hid=\".\">تحقق من هذا المربع لفتح مستعرض ويب النظام وعرض صفحة Wiki التي تم تحميلها.</ahelp>"
 
 #: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
 msgid  "To Media~Wiki..."

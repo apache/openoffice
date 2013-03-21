@@ -37,11 +37,11 @@ msgstr "Endra eigenskapane for kontrollar i dialogredigeringa"
 
 #: source/text/sbasic/guide/control_properties.xhp#bm_id3145786
 msgid  "\<bookmark_value\>properties; controls in dialog editor\</bookmark_value\>\<bookmark_value\>changing;control properties\</bookmark_value\>\<bookmark_value\>controls;changing properties\</bookmark_value\>\<bookmark_value\>dialog editor;changing control properties\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>eigenskapar; kontrollar i dialogredigeringa</bookmark_value><bookmark_value>endra;kontrolleigenskapar</bookmark_value><bookmark_value>dialogredigering;endra kontrolleigenskapar</bookmark_value>"
 
 #: source/text/sbasic/guide/control_properties.xhp#hd_id3145786.1
 msgid  "\<variable id=\"control_properties\"\>\<link href=\"text/sbasic/guide/control_properties.xhp\" name=\"Changing the Properties of Controls in the Dialog Editor\"\>Changing the Properties of Controls in the Dialog Editor\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"control_properties\"><link href=\"text/sbasic/guide/control_properties.xhp\" name=\"Changing the Properties of Controls in the Dialog Editor\">Endra eigenskapane for kontrollar i dialogredigeringa</link></variable>"
 
 #: source/text/sbasic/guide/control_properties.xhp#par_id3147317.2
 msgid  "You can set the properties of control that you add to a dialog. For example, you can change the color, name, and size of a button that you added. You can change most control properties when you create or edit a dialog. However, you can only change some properties at runtime."
@@ -49,7 +49,7 @@ msgstr "Du kan endra eigenskapane til ein kontroll du legg til eit dialogvindaug
 
 #: source/text/sbasic/guide/control_properties.xhp#par_id3145749.3
 msgid  "To change the properties of a control in design mode, right-click the control, and then choose \<emph\>Properties\</emph\>."
-msgstr ""
+msgstr "For å endra eigenskapane til ein kontroll i utformingsmodus, høgreklikkar du på kontrollen og vel <emph>Eigenskapar</emph>."
 
 #: source/text/sbasic/guide/create_dialog.xhp#tit
 msgid  "Creating a Basic Dialog"
@@ -57,27 +57,27 @@ msgstr "Laga eit dialogvindauge i Basic"
 
 #: source/text/sbasic/guide/create_dialog.xhp#bm_id3149346
 msgid  "\<bookmark_value\>dialogs;creating Basic dialogs\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>dialogvindauge;laga i Basic</bookmark_value>"
 
 #: source/text/sbasic/guide/create_dialog.xhp#hd_id3149346.1
 msgid  "\<variable id=\"create_dialog\"\>\<link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"Creating a Basic Dialog\"\>Creating a Basic Dialog\</link\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"create_dialog\"><link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"Creating a Basic Dialog\">Laga eit dialogvindauge i Basic</link></variable>"
 
 #: source/text/sbasic/guide/create_dialog.xhp#par_id3163802.3
 msgid  "Choose \<emph\>Tools - Macros - Organize Dialogs\</emph\>, and then click \<emph\>New\</emph\>."
-msgstr ""
+msgstr "Vel <emph>Verktøy → Makroar → Organiser dialogvindauge</emph> og deretter <emph>Ny</emph>."
 
 #: source/text/sbasic/guide/create_dialog.xhp#par_id3150447.11
 msgid  "Enter a name for the dialog, and click OK. To rename the dialog later, right-click the name on the tab, and choose \<emph\>Rename\</emph\>. "
-msgstr ""
+msgstr "Skriv inn eit namn på dialogvindauget og trykk <emph>OK</emph>. For å endra namn seinare, høgreklikkar du på namnet på fana og deretter <emph>Endra namn</emph>. "
 
 #: source/text/sbasic/guide/create_dialog.xhp#par_idN1065F
 msgid  "Click \<emph\>Edit\</emph\>. The Basic dialog editor opens and contains a blank dialog."
-msgstr ""
+msgstr "Trykk på <emph>Rediger</emph>. Dialogredigeringa i Basic vert opna med eit tomt dialogvindauge."
 
 #: source/text/sbasic/guide/create_dialog.xhp#par_id3153726.6
 msgid  "If you do not see the \<emph\>Toolbox\</emph\> bar, click the arrow next to the \<emph\>Insert Controls \</emph\>icon to open the \<emph\>Toolbox\</emph\> bar."
-msgstr ""
+msgstr "Dersom du ikkje ser verktøylinja <emph>Verktøykasse</emph>, kan du trykkje på pila ved sidan av ikonet <emph>Set inn kontrollelement</emph> for å opne henne."
 
 #: source/text/sbasic/guide/create_dialog.xhp#par_id3148455.12
 msgid  "Click a tool and then drag in the dialog to create the control."
@@ -100,8 +100,9 @@ msgid  "Use the tools on the \<emph\>Toolbox \</emph\>of the BASIC dialog editor
 msgstr ""
 
 #: source/text/sbasic/guide/insert_control.xhp#par_id3150276.7
+#, fuzzy
 msgid  "To open the \<emph\>Toolbox\</emph\>, click the arrow next to the \<emph\>Insert Controls\</emph\> icon on the \<emph\>Macro\</emph\> toolbar."
-msgstr ""
+msgstr "Dersom du ikkje ser verktøylinja <emph>Verktøykasse</emph>, kan du trykkje på pila ved sidan av ikonet <emph>Set inn kontrollelement</emph> for å opne henne."
 
 #: source/text/sbasic/guide/insert_control.xhp#par_id3145068.3
 msgid  "Click a tool on the toolbar, for example, \<emph\>Button\</emph\>."
@@ -463,8 +464,9 @@ msgid  "BasicLibraries.LoadLibrary(\"Tools\")"
 msgstr "BasicLibraries.LoadLibrary(\"Tools\")"
 
 #: source/text/sbasic/guide/show_dialog.xhp#par_id3152463.8
+#, fuzzy
 msgid  "oDialog1 = \<link href=\"text/sbasic/guide/sample_code.xhp\" name=\"LoadDialog\"\>LoadDialog\</link\>(\"Standard\", \"Dialog1\")"
-msgstr ""
+msgstr "oDialog1 = <link href=\"text/sbasic/guide/sample_code.xhp\" name=\"LoadDialog\">LoadDialog</link>(\"Standard\", \"Dialog1\")"
 
 #: source/text/sbasic/guide/show_dialog.xhp#par_id3148646.14
 #, fuzzy
@@ -3016,52 +3018,46 @@ msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_BASICIDE_BREAKPOINTDLG_RID_PB_DEL\"\
 msgstr ""
 
 #: source/text/sbasic/shared/01/06130000.xhp#tit
-#, fuzzy
 msgid  "Macro"
 msgstr "Makro"
 
 #: source/text/sbasic/shared/01/06130000.xhp#bm_id3145786
 msgid  "\<bookmark_value\>macros; Basic IDE\</bookmark_value\>\<bookmark_value\>Basic IDE; macros\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>makroer; Basic IDE</bookmark_value><bookmark_value>Basic IDE; makroer</bookmark_value>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3145786.1
-#, fuzzy
 msgid  "Macro"
 msgstr "Makro"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3152886.2
 msgid  "\<variable id=\"makro\"\>\<ahelp hid=\".\"\>Opens the \<emph\>Macro \</emph\>dialog, where you can create, edit, organize, and run $[officename] Basic macros.\</ahelp\>\</variable\>"
-msgstr ""
+msgstr "<variable id=\"makro\"><ahelp hid=\".\">Opnar dialogvindauge for <emph>Makroar</emph> kvar du kan oppretta, redigera, organisera og køyra $[officename] Basic makroar.</ahelp></variable>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3154145.3
-#, fuzzy
 msgid  "Macro name"
 msgstr "Makronamn"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3151116.4
 msgid  "\<ahelp hid=\"BASCTL_EDIT_RID_MACROCHOOSER_RID_ED_MACRONAME\"\>Displays the name of the selected macro. To create or to change the name of a macro, enter a name here.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_EDIT_RID_MACROCHOOSER_RID_ED_MACRONAME\">Viser navnet på den valde makroen. Skriv inn eit nanm her for å oppretta eller endra navnet.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3153729.7
-#, fuzzy
 msgid  "Macro from / Save macro in"
 msgstr "Makro frå / Lagre makro i"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3153190.8
 msgid  "\<ahelp hid=\"HID_BASICIDE_LIBS\"\>Lists the libraries and the modules where you can open or save your macros. To save a macro with a particular document, open the document, and then open this dialog.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_BASICIDE_LIBS\">Lister opp bibliotekene og modulene kvar du kan opna eller lagra makroane dine. For å lagra ein makro i eit spesifikt dokument, opne dokumentet og så opne dette dialogvindauge.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3146975.11
-#, fuzzy
 msgid  "Run / Save"
 msgstr "Køyr / Lagre"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3154791.12
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_RUN\"\>Runs or saves the current macro.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_RUN\">Køyrer eller lagrer den gjeldande makroen.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3153158.15
-#, fuzzy
 msgid  "Assign"
 msgstr "Tildel"
 
@@ -3070,16 +3066,14 @@ msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ASSIGN\"\>Opens 
 msgstr ""
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3145799.17
-#, fuzzy
 msgid  "Edit"
 msgstr "Rediger"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3147127.18
 msgid  "\<ahelp hid=\".\"\>Starts the $[officename] Basic editor and opens the selected macro for editing.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Startar redigeraren for makroar og opner den valde makroen for redigering.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3149400.19
-#, fuzzy
 msgid  "New/Delete"
 msgstr "Ny/Slett"
 
@@ -3093,16 +3087,15 @@ msgstr ""
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3150749.21
 msgid  "To delete a macro, select it, and then click \<emph\>Delete\</emph\>."
-msgstr ""
+msgstr "For å sletta ein makro, vel makroen og trykk <emph>Slett</emph>."
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3153764.22
-#, fuzzy
 msgid  "Organizer"
 msgstr "Organiserer"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3148405.23
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ORG\"\>Opens the \<emph\>Macro Organizer\</emph\> dialog, where you can add, edit, or delete existing macro modules, dialogs, and libraries.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ORG\">Opnar dialogvindauge <emph>Makro Organiserar</emph>. Der kan du legga til, redigera og sletta eksisterande makromodular, dialogvindauge og bibliotek.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3166447.29
 msgid  "Module/Dialog"
@@ -3121,26 +3114,26 @@ msgid  "To copy a dialog or a module, hold down the \<switchinline select=\"sys\
 msgstr ""
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3147131.34
-#, fuzzy
 msgid  "Edit"
 msgstr "Rediger"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3149816.35
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_EDIT\"\>Opens the selected macro or dialog for editing.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_EDIT\">Opnar den valde makroen eller dialogvindauge for redigering.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3151214.36
-#, fuzzy
 msgid  "New"
 msgstr "Ny"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3154202.37
+#, fuzzy
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_NEWMOD\"\>Creates a new module.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_NEWLIB\">Opprettar eit nytt bibliotek.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3153269.40
+#, fuzzy
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_NEWDLG\"\>Creates a new dialog.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_NEWLIB\">Opprettar eit nytt bibliotek.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3154587.42
 #, fuzzy
@@ -3174,8 +3167,9 @@ msgid  "Edit"
 msgstr "Rediger"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3150518.49
+#, fuzzy
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_EDIT\"\>Opens the $[officename] Basic editor so that you can modify the selected library.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_EDIT\">Opnar redigeringsprogrammet for $[officename] basic slik at du kan redigera det valde biblioteket.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3150371.50
 #, fuzzy
@@ -3192,8 +3186,9 @@ msgid  "New"
 msgstr "Ny"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3145387.53
+#, fuzzy
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_NEWLIB\"\>Creates a new library.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_NEWLIB\">Opprettar eit nytt bibliotek.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130000.xhp#hd_id3154259.56
 #, fuzzy
@@ -3210,8 +3205,9 @@ msgid  "Append"
 msgstr "Legg til"
 
 #: source/text/sbasic/shared/01/06130000.xhp#par_id3155126.55
+#, fuzzy
 msgid  "\<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_APPEND\"\>Locate that $[officename] Basic library that you want to add to the current list, and then click Open.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_APPEND\">Lokaliser det $[officename] basic biblioteket som du vil legga til den nåverande lista og så trykk opne.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130100.xhp#tit
 #, fuzzy
@@ -3224,8 +3220,9 @@ msgid  "Change Password"
 msgstr "Endre passord"
 
 #: source/text/sbasic/shared/01/06130100.xhp#par_id3150276.2
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_PASSWORD\"\>Protects the selected library with a password.\</ahelp\> You can enter a new password, or change the current password."
-msgstr ""
+msgstr "<ahelp hid=\"HID_PASSWORD\">Beskyttar det valde biblioteket med eit passord.</ahelp> Du kan skriva inn eit nytt passord eller endra det nåverande passordet."
 
 #: source/text/sbasic/shared/01/06130100.xhp#hd_id3154285.3
 #, fuzzy
@@ -3238,8 +3235,9 @@ msgid  "Password"
 msgstr "Passord"
 
 #: source/text/sbasic/shared/01/06130100.xhp#par_id3155628.5
+#, fuzzy
 msgid  "\<ahelp hid=\"SVX:EDIT:RID_SVXDLG_PASSWORD:ED_OLD_PASSWD\"\>Enter the current password for the selected library.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SVX:EDIT:RID_SVXDLG_PASSWORD:ED_OLD_PASSWD\">Skriv inn det nåverande passordet for det valde biblioteket.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130100.xhp#hd_id3153126.6
 #, fuzzy
@@ -3252,16 +3250,18 @@ msgid  "Password"
 msgstr "Passord"
 
 #: source/text/sbasic/shared/01/06130100.xhp#par_id3159413.8
+#, fuzzy
 msgid  "\<ahelp hid=\"SVX:EDIT:RID_SVXDLG_PASSWORD:ED_NEW_PASSWD\"\>Enter a new password for the selected library.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SVX:EDIT:RID_SVXDLG_PASSWORD:ED_NEW_PASSWD\">Skriv inn eit nytt passord for det valde biblioteket.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130100.xhp#hd_id3148947.9
 msgid  "Confirm"
 msgstr ""
 
 #: source/text/sbasic/shared/01/06130100.xhp#par_id3149457.10
+#, fuzzy
 msgid  "\<ahelp hid=\"SVX:EDIT:RID_SVXDLG_PASSWORD:ED_REPEAT_PASSWD\"\>Repeat the new password for the selected library.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"SVX:EDIT:RID_SVXDLG_PASSWORD:ED_REPEAT_PASSWD\">Skriv inn det nye passordet for det valde biblioteket på nytt.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130500.xhp#tit
 #, fuzzy
@@ -3278,8 +3278,9 @@ msgid  "Append libraries"
 msgstr "Legg til bibliotek"
 
 #: source/text/sbasic/shared/01/06130500.xhp#par_id3154840.2
+#, fuzzy
 msgid  "\<ahelp hid=\".\"\>Locate that \<item type=\"productname\"\>%PRODUCTNAME\</item\> Basic library that you want to add to the current list, and then click Open.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Finn det <item type=\"productname\">%PRODUCTNAME</item> Basic-biblioteket du vil leggja til den nåverande lista og trykk på «Opna».</ahelp>"
 
 #: source/text/sbasic/shared/01/06130500.xhp#hd_id3149119.3
 #, fuzzy
@@ -3287,8 +3288,9 @@ msgid  "File name:"
 msgstr "Filnamn:"
 
 #: source/text/sbasic/shared/01/06130500.xhp#par_id3147102.4
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_BASICIDE_LIBSDLG_TREE\"\>Enter a name or the path to the library that you want to append.\</ahelp\> You can also select a library from the list."
-msgstr ""
+msgstr "<ahelp hid=\"HID_BASICIDE_LIBSDLG_TREE\">Skriv inn eit namn eller stigen til biblioteket du vil leggja til.</ahelp> Du kan òg velja eit bibliotek frå lista."
 
 #: source/text/sbasic/shared/01/06130500.xhp#hd_id3147291.5
 #, fuzzy
@@ -3301,8 +3303,9 @@ msgid  "Insert as reference (read-only)"
 msgstr "Set in som ein referanse (skrivebeskyttet)"
 
 #: source/text/sbasic/shared/01/06130500.xhp#par_id3155892.8
+#, fuzzy
 msgid  "\<ahelp hid=\"BASCTL_CHECKBOX_RID_DLG_LIBS_RID_CB_REF\"\>Adds the selected library as a read-only file. The library is reloaded each time you start \<item type=\"productname\"\>%PRODUCTNAME\</item\>.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_CHECKBOX_RID_DLG_LIBS_RID_CB_REF\">Leggjer til det valde biblioteket som ei skrivebeskytta fil. Biblioteket blir lasta på nytt kvar gang du startar <item type=\"productname\">%PRODUCTNAME</item>.</ahelp>"
 
 #: source/text/sbasic/shared/01/06130500.xhp#hd_id3145071.9
 #, fuzzy
@@ -3310,8 +3313,9 @@ msgid  "Replace existing libraries"
 msgstr "Erstatt dei eksisterande biblioteka"
 
 #: source/text/sbasic/shared/01/06130500.xhp#par_id3149812.10
+#, fuzzy
 msgid  "\<ahelp hid=\"BASCTL_CHECKBOX_RID_DLG_LIBS_RID_CB_REPL\"\>Replaces a library that has the same name with the current library.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"BASCTL_CHECKBOX_RID_DLG_LIBS_RID_CB_REPL\">Erstattar eit bibliotek som har det same namnet som det gjeldande biblioteket.</ahelp>"
 
 #: source/text/sbasic/shared/01170100.xhp#tit
 msgid  "Control and Dialog Properties"
@@ -4302,35 +4306,32 @@ msgid  "\<ahelp hid=\"HID_EVT_MOUSEEXITED\"\>This event takes place when a scrol
 msgstr ""
 
 #: source/text/sbasic/shared/02/11010000.xhp#tit
-#, fuzzy
 msgid  "Library"
 msgstr "Bibliotek"
 
 #: source/text/sbasic/shared/02/11010000.xhp#hd_id3151100.1
 msgid  "\<link href=\"text/sbasic/shared/02/11010000.xhp\" name=\"Library\"\>Library\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11010000.xhp\" name=\"Library\">Bibliotek</link>"
 
 #: source/text/sbasic/shared/02/11010000.xhp#par_id3154136.2
 msgid  "\<ahelp hid=\".uno:LibSelector\" visibility=\"visible\"\>Select the library that you want to edit.\</ahelp\> The first module of the library that you select is displayed in the Basic IDE."
-msgstr ""
+msgstr "<ahelp hid=\".uno:LibSelector\" visibility=\"visible\">Vel biblioteket du vil redigera.</ahelp> Den fyrste modulen til bibliteket du veljer visast i Basic IDE-et."
 
 #: source/text/sbasic/shared/02/11010000.xhp#par_id3149095
 msgid  "\<image src=\"res/helpimg/feldalle.png\" id=\"img_id3147576\" localize=\"true\"\>\<alt id=\"alt_id3147576\"\>List box Library\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/helpimg/feldalle.png\" id=\"img_id3147576\" localize=\"true\"><alt id=\"alt_id3147576\">Listeboksbiblioteket.</alt></image>"
 
 #: source/text/sbasic/shared/02/11010000.xhp#par_id3147654.3
-#, fuzzy
 msgid  "Library List Box"
 msgstr "Listeboksbibliotek"
 
 #: source/text/sbasic/shared/02/11020000.xhp#tit
-#, fuzzy
 msgid  "Compile"
 msgstr "Kompiler"
 
 #: source/text/sbasic/shared/02/11020000.xhp#hd_id3148983.1
 msgid  "\<link href=\"text/sbasic/shared/02/11020000.xhp\" name=\"Compile\"\>Compile\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11020000.xhp\" name=\"Compile\">Kompiler</link>"
 
 #: source/text/sbasic/shared/02/11020000.xhp#par_id3159201.2
 msgid  "\<ahelp hid=\".uno:CompileBasic\" visibility=\"visible\"\>Compiles the Basic macro.\</ahelp\> You need to compile a macro after you make changes to it, or if the macro uses single or procedure steps."
@@ -4338,55 +4339,52 @@ msgstr ""
 
 #: source/text/sbasic/shared/02/11020000.xhp#par_id3156426
 msgid  "\<image src=\"res/commandimagelist/sc_compilebasic.png\" id=\"img_id3147576\"\>\<alt id=\"alt_id3147576\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/commandimagelist/sc_compilebasic.png\" id=\"img_id3147576\"><alt id=\"alt_id3147576\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11020000.xhp#par_id3149399.3
-#, fuzzy
 msgid  "Compile"
 msgstr "Kompiler"
 
 #: source/text/sbasic/shared/02/11030000.xhp#tit
-#, fuzzy
 msgid  "Run"
 msgstr "Køyr"
 
 #: source/text/sbasic/shared/02/11030000.xhp#hd_id3153255.1
 msgid  "\<link href=\"text/sbasic/shared/02/11030000.xhp\" name=\"Run\"\>Run\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11030000.xhp\" name=\"Run\">Køyr</link>"
 
 #: source/text/sbasic/shared/02/11030000.xhp#par_id3159201.2
 msgid  "\<ahelp hid=\".uno:RunBasic\"\>Runs the first macro of the current module.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:RunBasic\">Køyrer den fyrste makroen i den gjeldande modulen.</ahelp>"
 
 #: source/text/sbasic/shared/02/11030000.xhp#par_id3156410
 msgid  "\<image id=\"img_id3153311\" src=\"res/commandimagelist/sc_runbasic.png\" width=\"0.423cm\" height=\"0.423cm\"\>\<alt id=\"alt_id3153311\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3153311\" src=\"res/commandimagelist/sc_runbasic.png\" width=\"0.423cm\" height=\"0.423cm\"><alt id=\"alt_id3153311\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11030000.xhp#par_id3154750.3
-#, fuzzy
 msgid  "Run"
 msgstr "Køyr"
 
 #: source/text/sbasic/shared/02/11040000.xhp#tit
-#, fuzzy
 msgid  "Stop"
 msgstr "Stopp"
 
 #: source/text/sbasic/shared/02/11040000.xhp#bm_id3154863
 msgid  "\<bookmark_value\>macros; stopping\</bookmark_value\>\<bookmark_value\>program stops\</bookmark_value\>\<bookmark_value\>stopping macros\</bookmark_value\>"
-msgstr ""
+msgstr "<bookmark_value>makroar; stoppar</bookmark_value><bookmark_value>programstopp</bookmark_value><bookmark_value>stoppar makroar</bookmark_value>"
 
 #: source/text/sbasic/shared/02/11040000.xhp#hd_id3154863.1
 msgid  "\<link href=\"text/sbasic/shared/02/11040000.xhp\" name=\"Stop\"\>Stop\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11040000.xhp\" name=\"Stop\">Stopp</link>"
 
 #: source/text/sbasic/shared/02/11040000.xhp#par_id3147226.2
 msgid  "\<ahelp hid=\".uno:BasicStop\"\>Stops running the current macro.\</ahelp\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>\</caseinline\>\<defaultinline\> You can also press Shift+Ctrl+Q.\</defaultinline\>\</switchinline\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:BasicStop\">Stoppar den køyrande makroen.</ahelp><switchinline select=\"sys\"><caseinline select=\"MAC\"></caseinline><defaultinline>Du kan òg trykkja på Shift+Ctrl+2.</defaultinline></switchinline>"
 
 #: source/text/sbasic/shared/02/11040000.xhp#par_id3146797
+#, fuzzy
 msgid  "\<image id=\"img_id3148538\" src=\"res/commandimagelist/sc_stop.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148538\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/11040000.xhp#par_id3150986.3
 #, fuzzy
@@ -4399,8 +4397,9 @@ msgid  "Single Step"
 msgstr "Enkeltsteg"
 
 #: source/text/sbasic/shared/02/11050000.xhp#hd_id3155934.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step\"\>Single Step\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step\">Enkeltsteg</link>"
 
 #: source/text/sbasic/shared/02/11050000.xhp#par_id3146117.2
 msgid  "\<ahelp hid=\".uno:BasicStepInto\"\>Runs the macro and stops it after the next command.\</ahelp\>"
@@ -4411,8 +4410,9 @@ msgid  "You can use this command in conjunction with the \<link href=\"text/sbas
 msgstr ""
 
 #: source/text/sbasic/shared/02/11050000.xhp#par_id3157958
+#, fuzzy
 msgid  "\<image id=\"img_id3153345\" src=\"res/commandimagelist/sc_basicstepinto.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3153345\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/11050000.xhp#par_id3147573.3
 #, fuzzy
@@ -4420,8 +4420,9 @@ msgid  "Single Step"
 msgstr "Enkeltsteg"
 
 #: source/text/sbasic/shared/02/11050000.xhp#par_id3149235.6
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11060000.xhp\" name=\"Procedure Step function\"\>Procedure Step function\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11060000.xhp\" name=\"Procedure Step\">Prosedyresteg</link>"
 
 #: source/text/sbasic/shared/02/11060000.xhp#tit
 #, fuzzy
@@ -4429,8 +4430,9 @@ msgid  "Procedure Step"
 msgstr "Prosedyresteg"
 
 #: source/text/sbasic/shared/02/11060000.xhp#hd_id3148520.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11060000.xhp\" name=\"Procedure Step\"\>Procedure Step\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11060000.xhp\" name=\"Procedure Step\">Prosedyresteg</link>"
 
 #: source/text/sbasic/shared/02/11060000.xhp#par_id3152363.2
 msgid  "\<ahelp hid=\".uno:BasicStepOver\"\>Runs the macro and stops it after the next procedure.\</ahelp\>"
@@ -4441,8 +4443,9 @@ msgid  "You can use this command in conjunction with the \<link href=\"text/sbas
 msgstr ""
 
 #: source/text/sbasic/shared/02/11060000.xhp#par_id3147576
+#, fuzzy
 msgid  "\<image id=\"img_id3143267\" src=\"res/commandimagelist/sc_basicstepover.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3143267\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/11060000.xhp#par_id3154307.3
 #, fuzzy
@@ -4450,8 +4453,9 @@ msgid  "Procedure Step"
 msgstr "Prosedyresteg"
 
 #: source/text/sbasic/shared/02/11060000.xhp#par_id3153562.6
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step function\"\>Single Step function\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step\">Enkeltsteg</link>"
 
 #: source/text/sbasic/shared/02/11070000.xhp#tit
 #, fuzzy
@@ -4459,20 +4463,24 @@ msgid  "Breakpoint"
 msgstr "Pausepunkt"
 
 #: source/text/sbasic/shared/02/11070000.xhp#hd_id3154863.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11070000.xhp\" name=\"Breakpoint\"\>Breakpoint\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11070000.xhp\" name=\"Breakpoint\">Pausepunkt</link>"
 
 #: source/text/sbasic/shared/02/11070000.xhp#par_id3155364.2
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:ToggleBreakPoint\"\>Inserts a breakpoint in the program line.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:ToggleBreakPoint\">Set inn eit pausepunkt i programlinja.</ahelp>"
 
 #: source/text/sbasic/shared/02/11070000.xhp#par_id3149346.4
+#, fuzzy
 msgid  "The breakpoint is inserted at the cursor position. Use a breakpoint to interrupt a program just before an error occurs. You can then troubleshoot the program by running it in \<link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step\"\>Single Step\</link\> mode until the error occurs. You can also use the \<link href=\"text/sbasic/shared/02/11080000.xhp\" name=\"Watch\"\>Watch\</link\> icon to check the content of the relevant variables."
-msgstr ""
+msgstr "Pausepunktet settes inn ved skrivemerket. Bruk eit pausepunkt for å få eit avbrudd i programmet rett før ein feil oppstår. Du kan då feilsøka programmet ved å køyra det i <link href=\"text/sbasic/shared/02/11050000.xhp\" name=\"Single Step\">enkeltsteg</link>-modus til feilen oppstår. Du kan òg bruka <link href=\"text/sbasic/shared/02/11080000.xhp\" name=\"Watch\">observatør</link>-ikonet for å sjeka innhaldet av dei relevante variablane."
 
 #: source/text/sbasic/shared/02/11070000.xhp#par_id3156346
+#, fuzzy
 msgid  "\<image id=\"img_id3152780\" src=\"res/commandimagelist/sc_togglebreakpoint.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3152780\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11070000.xhp#par_id3149416.3
 #, fuzzy
@@ -4485,20 +4493,24 @@ msgid  "Enable Watch"
 msgstr "Ta i bruk observatør"
 
 #: source/text/sbasic/shared/02/11080000.xhp#hd_id3154863.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11080000.xhp\" name=\"Enable Watch\"\>Enable Watch\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11080000.xhp\" name=\"Enable Watch\">Ta i bruk observatør</link>"
 
 #: source/text/sbasic/shared/02/11080000.xhp#par_id3093440.2
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:AddWatch\"\>Click this icon to view the variables in a macro. The contents of the variable are displayed in a separate window.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:AddWatch\">Trykk på dette ikonet for å visa variablane i makroen. Innhaldet i variablane visast i eit seperat vindauge.</ahelp>"
 
 #: source/text/sbasic/shared/02/11080000.xhp#par_id3147399.6
+#, fuzzy
 msgid  "Click the name of a variable to select it, then click the \<emph\>Enable Watch\</emph\> icon. The value that is assigned to the variable is displayed next to its name. This value is constantly updated."
-msgstr ""
+msgstr "Trykk på namnet til variabelen for å velja den trykk så på <emph>Ta i bruk observatør</emph>-ikonet. Verdien den variabelen har visast ved siden av namnet. Verdien oppdateres heile tida."
 
 #: source/text/sbasic/shared/02/11080000.xhp#par_id3155892
+#, fuzzy
 msgid  "\<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3147209\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/11080000.xhp#par_id3150276.3
 #, fuzzy
@@ -4515,20 +4527,24 @@ msgid  "Object Catalog"
 msgstr "Objektkatalog"
 
 #: source/text/sbasic/shared/02/11090000.xhp#hd_id3153255.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11090000.xhp\" name=\"Object Catalog\"\>Object Catalog\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11090000.xhp\" name=\"Object Catalog\">Objektkatalog</link>"
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3151384.2
+#, fuzzy
 msgid  "\<ahelp hid=\".uno:ObjectCatalog\"\>Opens the \<emph\>Objects\</emph\> dialog, where you can view Basic objects.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:ObjectCatalog\">Opnar dialogvindauget for <emph>Objekter</emph>kvar du kan sjå på Basic-objekter.</ahelp>"
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3147576.15
+#, fuzzy
 msgid  "Double click the name of a function or sub to load the module that contains that function or sub, and to position the cursor. Click the name of a module or dialog and then click the \<emph\>Show\</emph\> icon to load and display that module or dialog."
-msgstr ""
+msgstr "Dobbeltklikk på namnet til ein funksjon eller underfunksjon for å lasta modulen som innheld den funksjonen eller underfunksjonen, og for å plassera pekaren. Trykk på namnet til ein modul eller dialogvindauge og tryk på <emph>Vis</emph> ikonet for å lasta og visa dn modulen eller det dialogvindauge."
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3148538
+#, fuzzy
 msgid  "\<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3163803\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3154515.3
 #, fuzzy
@@ -4541,12 +4557,14 @@ msgid  "Show"
 msgstr "Vis"
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3155630.5
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_BASICIDE_OBJCAT_SHOW\"\>Display the source text or dialog of a selected object.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_BASICIDE_OBJCAT_SHOW\">Vis kjeldekoden eller dialogen for det valde objektet.</ahelp>"
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3153126
+#, fuzzy
 msgid  "\<image id=\"img_id3148474\" src=\"basctl/res/im01.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148474\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3148474\" src=\"basctl/res/im01.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3148474\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3147560.6
 #, fuzzy
@@ -4559,8 +4577,9 @@ msgid  "Window Area"
 msgstr "Vindaugsområde"
 
 #: source/text/sbasic/shared/02/11090000.xhp#par_id3149655.14
+#, fuzzy
 msgid  "\<ahelp hid=\"HID_BASICIDE_OBJECTCAT\"\>Displays a hierarchical view of the current $[officename] macro libraries, modules, and dialogs. To display the contents of an item in the window, double-click its name or select the name and click the \<emph\>Show\</emph\> icon.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_BASICIDE_OBJECTCAT\">Viser ein hierarkisk oversikt over $[officename] makro bibliotek, modular og dialogvindauge.  Dobbeltklikk på namnet til ein oppføring eller vel namnet og trykk på <emph>Vis</emph> for å visa innhaldet av eit element i vindauge.</ahelp>"
 
 #: source/text/sbasic/shared/02/11100000.xhp#tit
 #, fuzzy
@@ -4568,16 +4587,19 @@ msgid  "Macros"
 msgstr "Makroar"
 
 #: source/text/sbasic/shared/02/11100000.xhp#hd_id3156183.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11100000.xhp\" name=\"Macros\"\>Macros\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11100000.xhp\" name=\"Macros\">Makroar</link>"
 
 #: source/text/sbasic/shared/02/11100000.xhp#par_id3147399.2
+#, fuzzy
 msgid  "\<ahelp visibility=\"visible\" hid=\".uno:ChooseMacro\"\>Opens the \<emph\>Macro\</emph\> dialog.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp visibility=\"visible\" hid=\".uno:ChooseMacro\">Opnar dialogvindauge for<emph>Makroar</emph>.</ahelp>"
 
 #: source/text/sbasic/shared/02/11100000.xhp#par_id3148538
+#, fuzzy
 msgid  "\<image src=\"res/commandimagelist/sc_choosemacro.png\" id=\"img_id3153662\"\>\<alt id=\"alt_id3153662\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/commandimagelist/sc_choosemacro.png\" id=\"img_id3153662\"><alt id=\"alt_id3153662\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11100000.xhp#par_id3153542.3
 #, fuzzy
@@ -4590,16 +4612,19 @@ msgid  "Modules"
 msgstr "Modular"
 
 #: source/text/sbasic/shared/02/11110000.xhp#hd_id3148520.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11110000.xhp\" name=\"Modules\"\>Modules\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11110000.xhp\" name=\"Modules\">Modular</link>"
 
 #: source/text/sbasic/shared/02/11110000.xhp#par_id3156414.2
+#, fuzzy
 msgid  "\<ahelp visibility=\"visible\" hid=\".uno:ModuleDialog\"\>Click here to open the \<link href=\"text/sbasic/shared/01/06130000.xhp\" name=\"Macro Organizer\"\>\<emph\>Macro Organizer\</emph\>\</link\> dialog.\</ahelp\>"
-msgstr ""
+msgstr "<ahelp visibility=\"visible\" hid=\".uno:ModuleDialog\">Trykk her for å opna dialogvindauge «<link href=\"text/sbasic/shared/01/06130000.xhp\" name=\"Macro Organizer\"><emph>makro-organiserar</emph></link>»</ahelp>"
 
 #: source/text/sbasic/shared/02/11110000.xhp#par_id3157958
+#, fuzzy
 msgid  "\<image src=\"res/commandimagelist/sc_moduledialog.png\" id=\"img_id3155535\"\>\<alt id=\"alt_id3155535\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/commandimagelist/sc_moduledialog.png\" id=\"img_id3155535\"><alt id=\"alt_id3155535\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11110000.xhp#par_id3145383.3
 #, fuzzy
@@ -4612,16 +4637,18 @@ msgid  "Find Parentheses"
 msgstr "Finn parenteser"
 
 #: source/text/sbasic/shared/02/11120000.xhp#hd_id3149497.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11120000.xhp\" name=\"Find Parentheses\"\>Find Parentheses\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11120000.xhp\" name=\"Find Parentheses\">Finn parenteser</link>"
 
 #: source/text/sbasic/shared/02/11120000.xhp#par_id3155150.2
 msgid  "\<ahelp hid=\".uno:MatchGroup\" visibility=\"visible\"\>Highlights the text that is enclosed by two corresponding brackets. Place the text cursor in front of an opening or closing bracket, and then click this icon.\</ahelp\>"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11120000.xhp#par_id3149182
+#, fuzzy
 msgid  "\<image src=\"res/commandimagelist/sc_matchgroup.png\" id=\"img_id3155892\"\>\<alt id=\"alt_id3155892\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/commandimagelist/sc_moduledialog.png\" id=\"img_id3155535\"><alt id=\"alt_id3155535\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11120000.xhp#par_id3147276.3
 #, fuzzy
@@ -4633,8 +4660,9 @@ msgid  "Insert Source Text"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11140000.xhp#hd_id3154044.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11140000.xhp\" name=\"Insert Source Text\"\>Insert Source Text\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11090000.xhp\" name=\"Object Catalog\">Objektkatalog</link>"
 
 #: source/text/sbasic/shared/02/11140000.xhp#par_id3150702.2
 msgid  "\<ahelp hid=\".uno:LoadBasic\"\>Opens the Basic source text in the Basic IDE window.\</ahelp\>"
@@ -4645,8 +4673,9 @@ msgid  "Place the cursor in the code where you want to insert the source text, a
 msgstr ""
 
 #: source/text/sbasic/shared/02/11140000.xhp#par_id3145136
+#, fuzzy
 msgid  "\<image id=\"img_id3147571\" src=\"res/commandimagelist/sc_loadbasic.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3147571\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/11140000.xhp#par_id3145346.4
 msgid  "Insert source text"
@@ -4657,16 +4686,18 @@ msgid  "Save Source As"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11150000.xhp#hd_id3149497.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11150000.xhp\" name=\"Save Source As\"\>Save Source As\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11090000.xhp\" name=\"Object Catalog\">Objektkatalog</link>"
 
 #: source/text/sbasic/shared/02/11150000.xhp#par_id3147261.3
 msgid  "\<ahelp hid=\".uno:SaveBasicAs\"\>Saves the source code of the selected Basic macro.\</ahelp\>"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11150000.xhp#par_id3145071
+#, fuzzy
 msgid  "\<image id=\"img_id3149182\" src=\"res/commandimagelist/sc_savebasicas.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149182\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/11150000.xhp#par_id3151110.2
 msgid  "Save Source As"
@@ -4677,16 +4708,18 @@ msgid  "Step Out"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11160000.xhp#hd_id3148983.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11160000.xhp\" name=\"Step Out\"\>Step Out\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11040000.xhp\" name=\"Stop\">Stopp</link>"
 
 #: source/text/sbasic/shared/02/11160000.xhp#par_id3157898.2
 msgid  "\<ahelp hid=\".uno:BasicStepOut\" visibility=\"visible\"\>Jumps back to the previous routine in the current macro.\</ahelp\>"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11160000.xhp#par_id3156410
+#, fuzzy
 msgid  "\<image src=\"res/commandimagelist/sc_basicstepout.png\" id=\"img_id3159233\"\>\<alt id=\"alt_id3159233\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image src=\"res/commandimagelist/sc_moduledialog.png\" id=\"img_id3155535\"><alt id=\"alt_id3155535\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11160000.xhp#par_id3158421.3
 msgid  "Step Out"
@@ -4697,16 +4730,18 @@ msgid  "Manage Breakpoints"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11170000.xhp#hd_id3156183.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11170000.xhp\" name=\"Manage Breakpoints\"\>Manage Breakpoints\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11070000.xhp\" name=\"Breakpoint\">Pausepunkt</link>"
 
 #: source/text/sbasic/shared/02/11170000.xhp#par_id3152363.2
 msgid  "\<ahelp hid=\".\"\>Calls a dialog to manage breakpoints.\</ahelp\>"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11170000.xhp#par_id3143267
+#, fuzzy
 msgid  "\<image id=\"img_id3155339\" src=\"res/commandimagelist/sc_managebreakpoints.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3155339\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11170000.xhp#par_id3145383.3
 msgid  "Manage Breakpoints"
@@ -4721,8 +4756,9 @@ msgid  "Import Dialog"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11180000.xhp#hd_id3156183.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11180000.xhp\" name=\"Import Dialog\"\>Import Dialog\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11090000.xhp\" name=\"Object Catalog\">Objektkatalog</link>"
 
 #: source/text/sbasic/shared/02/11180000.xhp#par_id3152363.2
 msgid  "\<ahelp hid=\".\"\>Calls an \"Open\" dialog to import a BASIC dialog file.\</ahelp\>"
@@ -4753,8 +4789,9 @@ msgid  "Omit: The library's language settings will stay unchanged. The imported 
 msgstr ""
 
 #: source/text/sbasic/shared/02/11180000.xhp#par_id3143267
+#, fuzzy
 msgid  "\<image id=\"img_id3155339\" src=\"res/commandimagelist/sc_importdialog.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3155339\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11180000.xhp#par_id3145383.3
 msgid  "Import Dialog"
@@ -4765,16 +4802,18 @@ msgid  "Export Dialog"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11190000.xhp#hd_id3156183.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/11190000.xhp\" name=\"Export Dialog\"\>Export Dialog\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11090000.xhp\" name=\"Object Catalog\">Objektkatalog</link>"
 
 #: source/text/sbasic/shared/02/11190000.xhp#par_id3152363.2
 msgid  "\<ahelp hid=\".\"\>In the dialog editor, this command calls a \"Save as\" dialog to export the current BASIC dialog.\</ahelp\>"
 msgstr ""
 
 #: source/text/sbasic/shared/02/11190000.xhp#par_id3143267
+#, fuzzy
 msgid  "\<image id=\"img_id3155339\" src=\"res/commandimagelist/sc_exportdialog.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3155339\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/11190000.xhp#par_id3145383.3
 msgid  "Export Dialog"
@@ -4789,16 +4828,18 @@ msgid  "\<bookmark_value\>controls; in dialog editor\</bookmark_value\>\<bookmar
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#hd_id3150402.1
+#, fuzzy
 msgid  "\<link href=\"text/sbasic/shared/02/20000000.xhp\" name=\"Insert Controls\"\>Insert Controls\</link\>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/02/11090000.xhp\" name=\"Object Catalog\">Objektkatalog</link>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3147000.2
 msgid  "\<ahelp hid=\".uno:ChooseControls\"\>Opens the \<emph\>Toolbox\</emph\> bar.\</ahelp\>"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3147226
+#, fuzzy
 msgid  "\<image id=\"img_id3147571\" src=\"res/commandimagelist/sc_choosecontrols.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3147571\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153749.3
 msgid  "Insert Controls"
@@ -4817,8 +4858,9 @@ msgid  "Button"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153824
+#, fuzzy
 msgid  "\<image id=\"img_id3157909\" src=\"res/commandimagelist/sc_insertpushbutton.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3157909\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3147530.8
 msgid  "\<ahelp hid=\".uno:InsertPushbutton\"\>Adds a command button.\</ahelp\> You can use a command button to execute a command for a defined event, such as a mouse click."
@@ -4833,8 +4875,9 @@ msgid  "Image Control"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3154138
+#, fuzzy
 msgid  "\<image id=\"img_id3144760\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3144760\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3151042.11
 msgid  "\<ahelp hid=\".uno:InsertImageControl\"\>Adds a control that displays a graphic.\</ahelp\>"
@@ -4845,8 +4888,9 @@ msgid  "Check Box"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3155131
+#, fuzzy
 msgid  "\<image id=\"img_id3150439\" src=\"res/commandimagelist/sc_checkbox.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3150439\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3147317.13
 msgid  "\<ahelp hid=\".uno:Checkbox\"\>Adds a check box that you can use to turn a function on or off.\</ahelp\>"
@@ -4857,8 +4901,9 @@ msgid  "Option Button"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3155856
+#, fuzzy
 msgid  "\<image id=\"img_id3146921\" src=\"res/commandimagelist/sc_radiobutton.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3146921\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153575.15
 msgid  "\<ahelp hid=\".uno:Radiobutton\"\>Adds a button that allows a user to select from a number of options.\</ahelp\> Grouped option buttons must have consecutive tab indices. They are commonly encircled by a group box. If you have two groups of option buttons, you must insert a tab index between the tab indices of the two groups on the group frame."
@@ -4869,8 +4914,9 @@ msgid  "Label Field"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3149300
+#, fuzzy
 msgid  "\<image id=\"img_id3153415\" src=\"res/commandimagelist/sc_insertfixedtext.png\" width=\"0.0874inch\" height=\"0.0874inch\"\>\<alt id=\"alt_id3153415\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3156181.17
 msgid  "\<ahelp hid=\".uno:InsertFixedText\"\>Adds a field for displaying text labels.\</ahelp\> These labels are only for displaying predefined text, and not for entering text."
@@ -4881,8 +4927,9 @@ msgid  "Text Box"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153766
+#, fuzzy
 msgid  "\<image id=\"img_id3148996\" src=\"res/commandimagelist/sc_edit.png\" width=\"0.0874inch\" height=\"0.0874inch\"\>\<alt id=\"alt_id3148996\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153712.19
 msgid  "\<ahelp hid=\".uno:InsertEdit\"\>Adds an input box where you can enter and edit text.\</ahelp\>"
@@ -4893,8 +4940,9 @@ msgid  "List Box"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3155959
+#, fuzzy
 msgid  "\<image id=\"img_id3163808\" src=\"res/commandimagelist/sc_listbox.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3163808\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3155176.21
 msgid  "\<ahelp hid=\".uno:InsertListbox\"\>Adds a box where you can click an entry on a list.\</ahelp\>"
@@ -4905,8 +4953,9 @@ msgid  "Combo Box"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3148418
+#, fuzzy
 msgid  "\<image id=\"img_id3153200\" src=\"res/commandimagelist/sc_combobox.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3153200\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3154199.23
 msgid  "\<ahelp hid=\".uno:Combobox\"\>Adds a combo box. A combo box is a one line list box that a user can click, and then choose an entry from the list.\</ahelp\> If you want, you can make the entries in the combo box \"read only\"."
@@ -4917,8 +4966,9 @@ msgid  "Horizontal Scrollbar"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153781
+#, fuzzy
 msgid  "\<image id=\"img_id3149530\" src=\"res/commandimagelist/sc_hscrollbar.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149530\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153232.25
 msgid  "\<ahelp hid=\".uno:HScrollbar\"\>Adds a horizontal scrollbar to the dialog.\</ahelp\>"
@@ -4929,8 +4979,9 @@ msgid  "Vertical Scrollbar"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3150515
+#, fuzzy
 msgid  "\<image id=\"img_id3150203\" src=\"res/commandimagelist/sc_vscrollbar.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3150203\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3155376.27
 msgid  "\<ahelp hid=\".uno:VScrollbar\"\>Adds a vertical scrollbar to the dialog.\</ahelp\>"
@@ -4941,8 +4992,9 @@ msgid  "Group Box"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3151184
+#, fuzzy
 msgid  "\<image id=\"img_id3151335\" src=\"res/commandimagelist/sc_groupbox.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3151335\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3159622.29
 msgid  "\<ahelp hid=\".uno:Groupbox\"\>Adds a frame that you can use to visually group similar controls, such as option buttons.\</ahelp\>"
@@ -4957,8 +5009,9 @@ msgid  "Progress Bar"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3159093
+#, fuzzy
 msgid  "\<image id=\"img_id3150318\" src=\"res/commandimagelist/sc_progressbar.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150318\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3157979.32
 msgid  "\<ahelp hid=\".uno:ProgressBar\"\>Adds a progress bar to the dialog.\</ahelp\>"
@@ -4969,8 +5022,9 @@ msgid  "Horizontal Line"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3150888
+#, fuzzy
 msgid  "\<image id=\"img_id3152872\" src=\"res/commandimagelist/sc_hfixedline.png\" width=\"0.2201inch\" height=\"0.2201inch\"\>\<alt id=\"alt_id3152872\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3151000.34
 msgid  "\<ahelp hid=\".uno:HFixedLine\"\>Adds a horizontal line to the dialog.\</ahelp\>"
@@ -4981,8 +5035,9 @@ msgid  "Vertical Line"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3154913
+#, fuzzy
 msgid  "\<image id=\"img_id3153249\" src=\"res/commandimagelist/sc_vfixedline.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3153249\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3159203.36
 msgid  "\<ahelp hid=\".uno:VFixedLine\"\>Adds a vertical line to the dialog.\</ahelp\>"
@@ -4993,8 +5048,9 @@ msgid  "Date Field"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3148901
+#, fuzzy
 msgid  "\<image id=\"img_id3151010\" src=\"res/commandimagelist/sc_adddatefield.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3151010\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3154214.38
 msgid  "\<ahelp hid=\".uno:AddDateField\"\>Adds a date field.\</ahelp\>"
@@ -5009,8 +5065,9 @@ msgid  "Time Field"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3154338
+#, fuzzy
 msgid  "\<image id=\"img_id3147077\" src=\"res/commandimagelist/sc_timefield.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3147077\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3151191.41
 msgid  "\<ahelp hid=\"SID_INSERT_TIMEFIELD\"\>Adds a time field.\</ahelp\>"
@@ -5021,8 +5078,9 @@ msgid  "Numeric Field"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3146107
+#, fuzzy
 msgid  "\<image id=\"img_id3147499\" src=\"res/commandimagelist/sc_insertnumericfield.png\" width=\"0.0874inch\" height=\"0.0874inch\"\>\<alt id=\"alt_id3147499\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3147244.43
 msgid  "\<ahelp hid=\".uno:InsertNumericField\"\>Adds a numeric field.\</ahelp\>"
@@ -5033,8 +5091,9 @@ msgid  "Currency Field"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153958
+#, fuzzy
 msgid  "\<image id=\"img_id3150435\" src=\"res/commandimagelist/sc_currencyfield.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3150435\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3154064.45
 msgid  "\<ahelp hid=\".uno:InsertCurrencyField\"\>Adds a currency field.\</ahelp\>"
@@ -5045,8 +5104,9 @@ msgid  "Formatted Field"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3153162
+#, fuzzy
 msgid  "\<image id=\"img_id3152807\" src=\"res/commandimagelist/sc_formattedfield.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3152807\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3146320.47
 msgid  "\<ahelp hid=\".uno:InsertFormattedField\"\>Adds a text box where you can define the formatting for text that is inputted or outputted as well as any limiting values.\</ahelp\>"
@@ -5057,8 +5117,9 @@ msgid  "Pattern Field"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3150379
+#, fuzzy
 msgid  "\<image id=\"img_id3150032\" src=\"res/commandimagelist/sc_insertpatternfield.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3150032\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3147382.49
 msgid  "\<ahelp hid=\".uno:InsertPatternField\"\>Adds a masked field.\</ahelp\> A masked field consists of an input mask and a literal mask. The input mask determines which user data can be entered. The literal mask determines the state of the masked field when the form is loaded."
@@ -5069,8 +5130,9 @@ msgid  "File Selection"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3149194
+#, fuzzy
 msgid  "\<image id=\"img_id3149101\" src=\"res/commandimagelist/sc_filecontrol.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3149101\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3145632.51
 msgid  "\<ahelp hid=\".uno:InsertFileControl\"\>Adds a button that opens a file selection dialog.\</ahelp\>"
@@ -5081,8 +5143,9 @@ msgid  "Select"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3154903
+#, fuzzy
 msgid  "\<image id=\"img_id3150653\" src=\"res/commandimagelist/sc_drawselect.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3150653\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3148465.53
 msgid  "\<ahelp hid=\".\"\>Activates or deactivates the Selection mode. In this mode, you can select the controls in a dialog so that you can edit them.\</ahelp\>"
@@ -5093,8 +5156,9 @@ msgid  "Properties"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3148725
+#, fuzzy
 msgid  "\<image id=\"img_id3146874\" src=\"res/commandimagelist/sc_controlproperties.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3146874\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3151105.55
 msgid  "\<ahelp hid=\".uno:ShowPropBrowser\"\>Opens a dialog where you can edit the \<link href=\"text/sbasic/shared/01170100.xhp\" name=\"properties\"\>properties\</link\> of the selected control.\</ahelp\>"
@@ -5105,8 +5169,9 @@ msgid  "Activate Test Mode"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3147417
+#, fuzzy
 msgid  "\<image id=\"img_id3148883\" src=\"res/commandimagelist/sc_testmode.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3148883\"\>Icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3147209\" src=\"res/commandimagelist/sc_addwatch.png\" width=\"0.222inch\" height=\"0.222inch\"><alt id=\"alt_id3147209\">Ikokn</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id3150699.57
 msgid  "\<ahelp hid=\".uno:TestMode\"\>Starts test mode. Click the dialog closer icon to end test mode.\</ahelp\>"
@@ -5117,8 +5182,9 @@ msgid  "Manage Language"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id2320017
+#, fuzzy
 msgid  "\<image id=\"img_id2856837\" src=\"res/commandimagelist/sc_managelanguage.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id2856837\"\>Manage Language icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id1261940
 msgid  "\<ahelp hid=\".uno:ManageLanguage\"\>Opens a \<link href=\"text/sbasic/guide/translation.xhp\"\>dialog\</link\> to enable or manage multiple sets of dialog resources for multiple languages.\</ahelp\>"
@@ -5129,8 +5195,9 @@ msgid  "Tree Control"
 msgstr ""
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id7511520
+#, fuzzy
 msgid  "\<image id=\"Graphic2\" src=\"res/commandimagelist/sc_inserttreecontrol.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_\"\>Manage Language icon\</alt\>\</image\>"
-msgstr ""
+msgstr "<image id=\"img_id3163803\" src=\"res/commandimagelist/sc_objectcatalog.png\" width=\"0.1665inch\" height=\"0.1665inch\"><alt id=\"alt_id3163803\">Ikon</alt></image>"
 
 #: source/text/sbasic/shared/02/20000000.xhp#par_id9961851
 msgid  "\<ahelp hid=\".\"\>Adds a tree control that can show a hierarchical list. You can populate the list by your program, using API calls (XtreeControl).\</ahelp\>"

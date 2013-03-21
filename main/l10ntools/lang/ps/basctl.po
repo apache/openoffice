@@ -137,7 +137,7 @@ msgstr "ذخیره"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "دشروع متن ډیر لوی دی او د ژباړلواو ذخیره کولو وړ ندی.\nځینې توضیحات ړنګ کړی یا له ځینې نورو لارو څخه په بله طریقه کارواخلی."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "د <<XX>> دوتنه له مخکښي نه شتون لري"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
-msgstr ""
+msgstr "د امنیتي دلیلونو له وجهی، تاسي نشی کولای دا میکروترسره کړي\n\nد زیاتو مالوماتولپاره، امنیتي ترتیباتو ته مخه کړی."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "یو نوم باید داخل شي."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr ""
+msgstr "تاسی باید ددې تغیرڅخه وروسته پروګرام له بیا پیل کړئ.\nآیا ادامه ورکوی؟"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "دډایلاګ واردول - نوم له مخکښی نه استعمال
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
-msgstr ""
+msgstr "کتابتون له مخکښی نه د یو ډایلاګ درلودونکی دی له همغه نوم سره: \n\n$(ARG1)\n\nډایلاګ بیا ونوموئ چې موجوده ډایلاګ خوندي وساتی یا موجوده ډایلاګ ځای پرځای کړئ. \n"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "د ډایلاګ واردول - د ژبي ناورته والی"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
-msgstr ""
+msgstr "هغه  واریدیدونکی ډایلاګ  له مطلوبه ژبي څخه نوري ژبي قبلوي. \n\nدا ژبي کتابتون ته علاوه کړی چې د نورو اضافي ژبو سرچیني وساتي کوم چې د ډایلاګ په واسطه جوړي شویدي او یا هغوی له منځه یوسی چی د کتابتون له موجوده  ژبو سره پاتي شی.\n\nپاملرنه: هغه ژبې چې د ډایلاګ په واسطه نه قبلیږي د افتراضی ډایلاګ موجوده سرچینوڅخه کاراخیستل کیږي.\n"
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"

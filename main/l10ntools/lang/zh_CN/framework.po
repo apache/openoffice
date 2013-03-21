@@ -137,7 +137,7 @@ msgstr "重试"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
-msgstr ""
+msgstr "%PRODUCTNAME 无法保存重要的内部信息，原因是以下位置的可用磁盘空间不足：\n%PATH\n\n如果不为该位置分配更多的可用磁盘空间，您将无法继续使用 %PRODUCTNAME。\n\n分配更多的可用磁盘空间后，按“重试”按钮重新尝试保存数据。\n\n"
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
@@ -145,15 +145,15 @@ msgstr "重置(~R)"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
-msgstr ""
+msgstr "装入用户界面配置数据时发生错误。应用程序即将被终止。\n请尝试重新安装应用程序。"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "装入用户界面配置数据时发生错误。应用程序即将被终止。\n请尝试删除您应用程序的用户配置文件。"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "装入用户界面配置数据时发生错误。应用程序即将被终止。\n请首先尝试删除您应用程序的用户配置文件，或者重新安装应用程序。"
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

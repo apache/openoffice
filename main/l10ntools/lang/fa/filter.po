@@ -32,8 +32,9 @@ msgstr ""
 
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr ""
+msgstr "نوشتار اصلی %productname% %formatversion%"
 
 #: source/config/fragments/filters/StarWriter_5_0_GlobalDocument_ui.xcu#StarWriter 5.0/GlobalDocument.UIName
 #, fuzzy
@@ -88,8 +89,9 @@ msgid  "StarDraw 3.0 Template"
 msgstr "قالب استاردار 3.0"
 
 #: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr ""
+msgstr "نوشتار اصلی %productname% %formatversion%"
 
 #: source/config/fragments/filters/UOF_presentation_ui.xcu#UOF presentation.UIName
 msgid  "Unified Office Format presentation"
@@ -134,7 +136,6 @@ msgid  "ODF Text Document"
 msgstr ""
 
 #: source/config/fragments/filters/calc8_ui.xcu#calc8.UIName
-#, fuzzy
 msgid  "ODF Spreadsheet"
 msgstr "صفحه‌گستردهٔ نوشتارباز"
 
@@ -153,8 +154,9 @@ msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
 msgstr ""
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#impress_StarOffice_XML_Draw.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr ""
+msgstr "نقاشی %productname% %formatversion% (جلوهٔ %productname%)"
 
 #: source/config/fragments/filters/writerglobal8_ui.xcu#writerglobal8.UIName
 #, fuzzy
@@ -162,7 +164,6 @@ msgid  "ODF Master Document"
 msgstr "نوشتار اصلی نوشتارباز"
 
 #: source/config/fragments/filters/calc_HTML_WebQuery_ui.xcu#calc_HTML_WebQuery.UIName
-#, fuzzy
 msgid  "Web Page Query (%productname% Calc)"
 msgstr "پرس و جوی صفحهٔ وب (محاسب %productname%)"
 
@@ -187,8 +188,9 @@ msgid  "HTML Document (%productname% Master Document)"
 msgstr "نوشتار HTML (نوشتار اصلی %productname%)"
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#writer_web_StarOffice_XML_Writer_Web_Template.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr ""
+msgstr "قالب HTML %productname% %formatversion%"
 
 #: source/config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS Word 97 Vorlage.UIName
 #, fuzzy
@@ -196,8 +198,9 @@ msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "قالب مایکروسافت وُرد 97/2000/XP"
 
 #: source/config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#draw_StarOffice_XML_Draw_Template.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr ""
+msgstr "قالب نقاشی %productname% %formatversion%"
 
 #: source/config/fragments/filters/writerweb8_writer_ui.xcu#writerweb8_writer.UIName
 #, fuzzy
@@ -205,8 +208,9 @@ msgid  "%productname% Text (%productname% Writer/Web)"
 msgstr "متن %productname% (کاتب/وب %productname%)"
 
 #: source/config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#calc_StarOffice_XML_Calc_Template.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr ""
+msgstr "قالب صفحه‌گستردهٔ %productname% %formatversion%"
 
 #: source/config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF spreadsheet.UIName
 msgid  "Unified Office Format spreadsheet"
@@ -218,8 +222,9 @@ msgid  "StarImpress 5.0 Template"
 msgstr "قالب استارایمپرس 5.0"
 
 #: source/config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#writer_StarOffice_XML_Writer_Template.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr ""
+msgstr "قالب نوشتار متنی %productname% %formatversion%"
 
 #: source/config/fragments/filters/chart8_ui.xcu#chart8.UIName
 #, fuzzy
@@ -270,7 +275,6 @@ msgid  "StarCalc 4.0 Template"
 msgstr "قالب استارکَلک 4.0"
 
 #: source/config/fragments/filters/calc8_template_ui.xcu#calc8_template.UIName
-#, fuzzy
 msgid  "ODF Spreadsheet Template"
 msgstr "قالب صفحه‌گستردهٔ نوشتارباز"
 
@@ -397,12 +401,14 @@ msgid  "Unified Office Format text"
 msgstr ""
 
 #: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#writer_web_StarOffice_XML_Writer.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr ""
+msgstr "نوشتار متنی %productname% %formatversion% (کاتب/وب %productname%)"
 
 #: source/config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#impress_StarOffice_XML_Impress_Template.UIName
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr ""
+msgstr "قالب ارائهٔ %productname% %formatversion%"
 
 #: source/config/fragments/filters/StarDraw_5_0_Vorlage__StarImpress__ui.xcu#StarDraw 5.0 Vorlage (StarImpress).UIName
 #, fuzzy
@@ -672,13 +678,12 @@ msgid  "Chart 8"
 msgstr ""
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
-#, fuzzy
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "گزینه‌های ‎(SWF) Macromedia Flash"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\\n100: max. quality"
-msgstr ""
+msgstr "۱: حداقل کیفیت\n۱۰۰: حداکثر کیفیت"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\\nas some are at a higher level!"
@@ -690,7 +695,6 @@ msgid  "Export as PDF"
 msgstr "صدور به صورت PDF"
 
 #: source/pdf/impdialog.src#STR_PDF_EXPORT.String.Text
-#, fuzzy
 msgid  "E~xport"
 msgstr "~صدور!"
 
@@ -708,47 +712,38 @@ msgid  "General"
 msgstr "عمومی"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FL_PAGES.FixedLine.Text
-#, fuzzy
 msgid  "Range"
 msgstr "محدوده!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_ALL.RadioButton.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~همه!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RadioButton.Text
-#, fuzzy
 msgid  "~Pages"
 msgstr "~صفحات!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RadioButton.Text
-#, fuzzy
 msgid  "~Selection"
 msgstr "~انتخاب!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FixedLine.Text
-#, fuzzy
 msgid  "Images"
 msgstr "تصاویر!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RadioButton.Text
-#, fuzzy
 msgid  "~Lossless compression"
 msgstr "~فشرده‌سازی بدون خسارت!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_JPEGCOMPRESSION.RadioButton.Text
-#, fuzzy
 msgid  "~JPEG compression"
 msgstr "ف~شرده‌سازی JPEG!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FixedText.Text
-#, fuzzy
 msgid  "~Quality"
 msgstr "~کیفیت!"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CheckBox.Text
-#, fuzzy
 msgid  "~Reduce image resolution"
 msgstr "~کم کردن تفکیک‌پذیری تصویر!"
 
@@ -1339,22 +1334,18 @@ msgid  "Transformation"
 msgstr ""
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "نام"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "نوع"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "نامعلوم"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.String.Text
-#, fuzzy
 msgid  "import filter"
 msgstr "وارد کردن صافی"
 

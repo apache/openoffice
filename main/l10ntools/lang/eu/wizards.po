@@ -445,7 +445,7 @@ msgstr "Txantiloia honekin sortu da: <wizard_name>, egun honetan: <current_date>
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
-msgstr ""
+msgstr "Ezin izan da morroia exekutatu, fitxategi garrantzitsu batzuk ez direlako aurkitu.\nBide-izenak jatorrizko ezarpen lehenetsien arabera leheneratzeko, egin klik 'Tresnak - Aukerak - %PRODUCTNAME – bide-izenak'aukerako 'Lehenetsia' botoian.\nOndoren, exekutatu morroia berriro."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -553,11 +553,11 @@ msgstr "~Inprimakiko eremuak"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Eremu bitarrak beti zerrendatzen dira eta hautagarri egoten dira ezkerreko zerrendan.\nAhal bada, irudi gisa interpretatzen da."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Beste inprimaki batean txertatutako inprimakia da azpinprimakia.\nAzpinprimakiak erabil ditzakezu tauletako eta kontsultetako datuak erakusteko “batetik hainbatera” motako erlazioarekin."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "~Inprimakiko eremuak"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' eta '<FIELDNAME2>' elkartzea bi aldiz hautatu da.\nBaina elkartzeak behin bakarrik erabil daitezke."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Ezarri inprimakiaren izena"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
-msgstr ""
+msgstr "Lehendik ere badago '%FORMNAME' izeneko inprimakia.\nHautatu beste izen bat."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1597,7 +1597,7 @@ msgstr "Eremua ezin da txertatu, gainditu egiten baitu datu-baseko taulan egon d
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' izena badago.\nIdatzi beste izen bat."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2121,7 +2121,7 @@ msgstr "Web morroia"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Interneten dokumentuak argitaratzen lagunduko dizu morroi honek.\n\nDokumentuak bihurtu egingo ditu, web arakatzaile batekin ikusi ahal izateko. Gainera, aurkibide-orri bat sortuko du, dokumentuak erraz atzitzeko estekekin. Bestalde, zure web gunearen diseinua eta itxura pertsonalizatzeko aukera ere emango dizu.\n\nWeb-ean argitaratu dituzun dokumentuak eguneratuta mantendu ahal izango dituzu, eta dokumentuak gehitu edo kendu edozein unetan."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2541,7 +2541,7 @@ msgstr "Aurrebista"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Hautatutako ezarpenak ezabatu egingo dira.\n\nZiur zaude ezarpen horiek ezabatu nahi dituzula? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,7 +2609,7 @@ msgstr "'%FILENAME' FTP direktorioa ezin izan da sortu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' FTP direktorioa ez dago. \nOrain sortu nahi duzu?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr "Ezin da sortu '%FILENAME' zip fitxategia: badago lehendik izen bereko di
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
-msgstr ""
+msgstr "Ezin da sortu '%FILENAME' direktorio lokala: \nEgiaztatu idazteko baimena badaukazula."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' direktorio lokala ez dago. \nOrain sortu nahi duzu?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
