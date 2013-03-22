@@ -35,7 +35,6 @@ $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/addresstemplate.hxx,sv
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/apearcfg.hxx,svtools/apearcfg.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/asynclink.hxx,svtools/asynclink.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/brwbox.hxx,svtools/brwbox.hxx))
-$(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/button.hxx,svtools/button.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/brwhead.hxx,svtools/brwhead.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/calendar.hxx,svtools/calendar.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/cliplistener.hxx,svtools/cliplistener.hxx))

@@ -22,7 +22,6 @@
 #include "sidebar/PanelFactory.hxx"
 
 #include "text/TextPropertyPanel.hxx"
-#include "paragraph/ParaPropertyPanel.hxx"
 #include "area/AreaPropertyPanel.hxx"
 #include "graphic/GraphicPropertyPanel.hxx"
 #include "line/LinePropertyPanel.hxx"
@@ -140,16 +139,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ui::LayoutSize(-1,-1,-1));
-    }
-    if (DoesResourceEndWith("/ParaPropertyPanel"))
-    {
-        ParaPropertyPanel* pPanel = ParaPropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            //::boost::bind(&ParaPropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/AreaPropertyPanel"))

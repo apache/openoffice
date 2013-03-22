@@ -35,10 +35,7 @@
 #include <com/sun/star/ui/XUIElement.hpp>
 
 #include <boost/scoped_ptr.hpp>
-#include "TextCharacterSpacingPopup.hxx"
-#include "TextUnderlinePopup.hxx"
-#include "sidebar/ColorPopup.hxx"
-#include <vcl/vclenum.hxx>
+
 
 class FloatingWindow;
 class ToolBox;
@@ -46,12 +43,10 @@ class ToolBox;
 namespace svx { namespace sidebar {
 
 class SvxSBFontNameBox;
-class PopupControl;
-class PopupContainer;
 
 class TextPropertyPanel
     : public Control,
-       public ::sfx2::sidebar::IContextChangeReceiver,
+      public ::sfx2::sidebar::IContextChangeReceiver,
       public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:
@@ -61,26 +56,13 @@ public:
         SfxBindings* pBindings);
 
     virtual void DataChanged (const DataChangedEvent& rEvent);
-    SfxBindings* GetBindings();
-    ::sfx2::sidebar::ControllerItem& GetSpaceController();
-    long GetSelFontSize();
-    void SetSpacing(long nKern);
-    void EndSpacingPopupMode (void);
-    void EndUnderlinePopupMode (void);
-	Color GetFontColor (void) const;
-	void SetFontColor (const String& rsColorName,const Color aColor);
-	Color GetBrushColor (void) const;
-	void SetBrushColor (const String& rsColorName,const Color aColor);
-	void SetUnderline(FontUnderline	eUnderline);
-	Color& GetUnderlineColor(); 
-	void SetDefaultUnderline(FontUnderline eUnderline);
 
-    //	
+    //	void SetDefaultUnderline(FontUnderline eUnderline);
     //	USHORT GetCurrColorType();
 
     //	void SetBackColor(Color aCol);
     //	void SetColor(Color aCol);
-    //	
+    //	void SetUnderline(FontUnderline	eUnderline);
     //	void SetSpacing(long nKern);
 
     /*
@@ -96,10 +78,8 @@ public:
     //	long GetSelFontSize();
     //	SfxPropertyPageController GetSpaceController();
 //	ToolBox* GetSpacingTB();		//removed
-    //	 //
+    //	Color& GetUnderlineColor();  //
 //	void FontListChanged();
-
-
 
     enum ColorType
     {
@@ -205,10 +185,6 @@ private:
 	const FontList* mpFontList;
 	bool mbMustDelete;
 	bool mbFocusOnFontSizeCtrl;
-	TextCharacterSpacingPopup maCharSpacePopup;
-	TextUnderlinePopup maUnderlinePopup;
-	ColorPopup maFontColorPopup; 
-	ColorPopup maBrushColorPopup; 
 
     cssu::Reference<css::frame::XFrame> mxFrame;
     ::sfx2::sidebar::EnumContext maContext;
@@ -218,17 +194,7 @@ private:
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         SfxBindings* pBindings);
-	virtual ~TextPropertyPanel (void);
-
-	
-	PopupControl* CreateCharacterSpacingControl (PopupContainer* pParent);
-	DECL_LINK(SpacingClickHdl, ToolBox*);
-	PopupControl* CreateFontColorPopupControl (PopupContainer* pParent);
-	PopupControl* CreateBrushColorPopupControl (PopupContainer* pParent);
-	PopupControl* CreateUnderlinePopupControl (PopupContainer* pParent);
-	DECL_LINK(ToolBoxFontColorDropHdl, ToolBox *); //for new color picker 
-	DECL_LINK(ToolBoxHighlightDropHdl, ToolBox *);
-	DECL_LINK(ToolBoxUnderlineClickHdl, ToolBox* );
+    virtual ~TextPropertyPanel (void);
 
 	void Initialize (void);
     void SetupIcons (void);
@@ -265,11 +231,14 @@ private:
 	DECL_LINK(FontSizeLoseFocus, FontSizeBox *);
 	DECL_LINK(ToolboxFontSelectHandler, ToolBox *);
 	DECL_LINK(ToolboxIncDecSelectHdl, ToolBox *);
+	DECL_LINK(ToolBoxUnderlineClickHdl, ToolBox* );
 	DECL_LINK(ImplPopupModeEndHdl, FloatingWindow* );
+	DECL_LINK(ImplSpacingPopupModeEndHdl, FloatingWindow* );  //
+	DECL_LINK(ToolBoxFontColorDropHdl, ToolBox *);
 	DECL_LINK(ToolBoxSwScriptSelectHdl, ToolBox *);
 	DECL_LINK(ToolBoxScriptSelectHdl, ToolBox *);
-	
-	
+	DECL_LINK(SpacingClickHdl, ToolBox*);
+	DECL_LINK(ToolBoxHighlightDropHdl, ToolBox *);
 
 	void TextStyleChanged();
 

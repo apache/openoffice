@@ -197,6 +197,7 @@
           <value>10</value>
         </prop>
       </node>
+
       <node oor:name="PagePropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Page</value>
@@ -709,12 +710,12 @@
         </prop>
       </node>
 
-      <node oor:name="ParaPropertyPanel" oor:op="replace">
+      <node oor:name="ParagraphPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Paragraph</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
-          <value>ParaPropertyPanel</value>
+          <value>ParagraphPropertyPanel</value>
         </prop>
         <prop oor:name="DeckId" oor:type="xs:string">
           <value>PropertyDeck</value>
@@ -725,14 +726,14 @@
         <prop oor:name="ContextList">
           <value oor:separator=";">
             Calc,        DrawText,   visible ;
-            DrawImpress, 3DObject,   hidden ;
+            DrawImpress, 3DObject,   visible ;
             DrawImpress, Draw,       hidden  ;
             DrawImpress, DrawText,   visible ;
             DrawImpress, Graphic,    hidden  ;
             DrawImpress, Table,      visible ;
             DrawImpress, TextObject, visible ;
-            DrawImpress, 3DObject,   hidden ;
-            Writer,      Annotation, hidden ;
+            DrawImpress, 3DObject,   visible ;
+            Writer,      Annotation, visible ;
             Writer,      DrawText,   visible ;
             Writer,      Table,      visible ;
             Writer,      Text,       visible ;
@@ -740,7 +741,7 @@
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
-          <value>private:resource/toolpanel/SvxPanelFactory/ParaPropertyPanel</value>
+          <value>private:resource/toolpanel/SvxPanelFactory/Debug_NotYetImplementedPanel</value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>200</value>

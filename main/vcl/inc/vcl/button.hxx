@@ -204,9 +204,6 @@ public:
 
     void            SetToggleHdl( const Link& rLink ) { maToggleHdl = rLink; }
     const Link&     GetToggleHdl() const { return maToggleHdl; }
-
-	virtual	sal_Bool	CustomDraw( sal_uInt16 nButtonStyle, ControlState nState );
-
 };
 
 inline void PushButton::Check( sal_Bool bCheck )

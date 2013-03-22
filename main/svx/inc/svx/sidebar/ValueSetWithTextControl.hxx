@@ -85,15 +85,6 @@ public:
         const XubString* pItemHelpText );
 
     virtual void UserDraw( const UserDrawEvent& rUDEvt );
-    void SetSelItem(sal_uInt16 nSel);
-    sal_uInt16 GetSelItem()
-{
-	return 0;
-}
-    void InsertCustom(Image imgEnable, Image imgDisable, XubString str);
-    void  SetCustomTip(XubString str, sal_Bool bRealTip = sal_False);
-    void SetDefaultTip(XubString* pStrList, sal_Bool bRealTip=sal_False);
-    void SetCusEnable(bool bEnable);
 
 private:
     struct ValueSetWithTextItem
@@ -108,11 +99,6 @@ private:
 
     const tControlType meControlType;
     tItemList maItems;
-	bool			bHaveCus;
-	Image			imgCusEnable;
-	Image			imgCusDisable;
-	XubString		strLastCustom;
-	bool			bCusEnable;
 };
 
 } } // end of namespace svx::sidebar

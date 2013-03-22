@@ -394,7 +394,6 @@ void OutlineViewShell::FuTemporaryModify(SfxRequest &rReq)
 		}
 		break;
 
-		case SID_CHAR_DLG_EFFECT:
 		case SID_CHAR_DLG:
 		{
 			SetCurrentFunction( FuChar::Create( this, GetActiveWindow(), pOlView, GetDoc(), rReq ) );

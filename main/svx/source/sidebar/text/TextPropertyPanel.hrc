@@ -26,8 +26,7 @@
 #define CUSTOM_WIDTH			VS_SPACING_WIDTH - 8
 #define CUSTOM_X				POPUPPANEL_MARGIN_LARGE + OFFSET_X + 1
 #define CUSTOM_Y				OFFSET_Y + POPUPPANEL_MARGIN_SMALL * 3 + 15 * 6 + TEXT_HEIGHT
-#define VS_UNDERLINE_WIDTH	57
-#define VS_UNDERLINE_HEIGHT	 12 * 10
+
 //#define FT_TEST					1
 #define CB_SBFONT_FONT			2
 #define MB_SBFONT_FONTSIZE		3
@@ -82,11 +81,15 @@
 
 #define IMG_SPACING_D				71
 
+#define STR_QH_BOLD				72
+#define STR_QH_ITALIC			73
+#define STR_QH_UNDERLINE		74
+
 //popup window underline
 #define	VS_UNDERLINE			1
 #define PB_OPTIONS				2
-#define BMP_UNDERLINE_MORE		3
-#define BMP_UNDERLINE_MORE_H	4	
+// #define BMP_UNDERLINE_MORE		3
+// #define BMP_UNDERLINE_MORE_H	4	
 
 #define IMG_SINGLE				10
 #define IMG_DOUBLE				11
@@ -177,9 +180,6 @@
 #define STR_CUSTOM_C_TIP			72
 #define STR_CUSTOM_E_TIP			73
 #define STR_PT						74
-#define STR_QH_BOLD				75
-#define STR_QH_ITALIC			76
-#define STR_QH_UNDERLINE		77
 
 //help ids
 #define	HID_COMBO_FONT_NAME				"SVX_HID_COMBO_FONT_NAME"

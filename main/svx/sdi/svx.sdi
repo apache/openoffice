@@ -3883,30 +3883,6 @@ SfxVoidItem FontDialog SID_CHAR_DLG
 	GroupId = GID_FORMAT;
 ]
 
-SfxVoidItem FontDialogEff SID_CHAR_DLG_EFFECT
-()
-[
-	/* flags: */
-	AutoUpdate = FALSE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = TRUE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerItem;
-	Asynchron;
-
-	/* config: */
-	AccelConfig = TRUE,
-	MenuConfig = TRUE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_FORMAT;
-]
-
 //--------------------------------------------------------------------------
 SvxFontHeightItem  FontHeight SID_ATTR_CHAR_FONTHEIGHT
 
@@ -15584,60 +15560,6 @@ SfxBoolItem ProtectSize SID_ATTR_TRANSFORM_PROTECT_SIZE
 //--------------------------------------------------------------------------
 
 SfxVoidItem SvxFlipHorizontal SID_FLIP_HORIZONTAL
-[
-	/* flags: */
-	AutoUpdate = TRUE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = FALSE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerSet;
-	Synchron;
-
-	Readonly = FALSE,
-
-	/* config: */
-	AccelConfig = FALSE,
-	MenuConfig = FALSE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_EDIT;
-]
-
-//--------------------------------------------------------------------------
-
-SfxVoidItem SvxFlipVertical SID_FLIP_VERTICAL
-[
-	/* flags: */
-	AutoUpdate = TRUE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = FALSE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerSet;
-	Synchron;
-
-	Readonly = FALSE,
-
-	/* config: */
-	AccelConfig = FALSE,
-	MenuConfig = FALSE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_EDIT;
-]
-
-//--------------------------------------------------------------------------
-
-SfxBoolItem SvxAutoWidth SID_ATTR_TRANSFORM_AUTOWIDTH
 [
 	/* flags: */
 	AutoUpdate = TRUE,

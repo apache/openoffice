@@ -1131,17 +1131,6 @@ void PushButton::ImplDrawPushButton( bool bLayout )
     }
 
     sal_Bool bDropDown = ( IsSymbol() && (GetSymbol()==SYMBOL_SPIN_DOWN) && !GetText().Len() );
-	ControlState        nState = 0;
-
-	if ( mbPressed ) 						nState |= CTRL_STATE_PRESSED;
-	if ( ImplGetButtonState() & BUTTON_DRAW_PRESSED )	nState |= CTRL_STATE_PRESSED;
-	if ( HasFocus() )						nState |= CTRL_STATE_FOCUSED;
-	if ( ImplGetButtonState() & BUTTON_DRAW_DEFAULT )	nState |= CTRL_STATE_DEFAULT;
-	if ( Window::IsEnabled() ) 				nState |= CTRL_STATE_ENABLED;
-
-	if ( IsMouseOver() && aInRect.IsInside( GetPointerPosPixel() ) )
-		nState |= CTRL_STATE_ROLLOVER;
-	if( CustomDraw( nButtonStyle, nState ) ) return;
 
     if( bDropDown && (aCtrlType == CTRL_COMBOBOX || aCtrlType == CTRL_LISTBOX ) )
     {
@@ -4265,10 +4254,6 @@ TriStateBox::~TriStateBox()
 }
 
 // =======================================================================
-sal_Bool	PushButton::CustomDraw( sal_uInt16 nButtonStyle, ControlState nState )
-{
-	return sal_False;
-}
 
 DisclosureButton::DisclosureButton( Window* pParent, WinBits ) :
     CheckBox( pParent, WB_NOBORDER )

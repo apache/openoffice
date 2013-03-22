@@ -20,23 +20,67 @@
  *************************************************************/
 
 #include "precompiled_svx.hxx"
-#include "TextUnderlineControl.hxx"
-#include "TextPropertyPanel.hrc"
-#include <sfx2/sidebar/propertypanel.hrc>
-#include <svx/dialogs.hrc>
-#include <svx/dialmgr.hxx>
-#include <unotools/viewoptions.hxx>
-#include <editeng/kernitem.hxx>
-#include <sfx2/bindings.hxx>
-#include <sfx2/dispatch.hxx>
-#include <sfx2/sidebar/Theme.hxx>
-#include <editeng/udlnitem.hxx>
 
-namespace svx { namespace sidebar {
+namespace sidebar {
 
-TextUnderlineControl::TextUnderlineControl(Window* pParent, svx::sidebar::TextPropertyPanel& rPanel)
-:	svx::sidebar::PopupControl( pParent,SVX_RES(RID_POPUPPANEL_TEXTPAGE_UNDERLINE))
-,	mrTextPropertyPanel(rPanel)
+class SvxTextPropertyPage::SvxTextUnderlinePage:public SfxPopupPage
+{
+public:
+	SvxTextUnderlinePage(Window* pParent, SvxTextPropertyPage* pPage);
+	void GetFocus();
+	void SetUnderlineSelect(FontUnderline eLine);
+	virtual void Paint(const Rectangle& rect);
+	ValueSet& GetValueSet();
+	Control& GetPB();
+private:	
+	SvxTextPropertyPage* mpPage;
+	SfxBindings*		mpBindings;
+	ValueSet			maVSUnderline;
+	SymCustomButton::HoverButton			maPBOptions;
+
+	Image				maIMGSingle;
+	Image				maIMGDouble;
+	Image				maIMGBold;
+	Image				maIMGDot;
+	Image				maIMGDotBold;
+	Image				maIMGDash;
+	Image				maIMGDashLong;
+	Image				maIMGDashDot;
+	Image				maIMGDashDotDot;
+	Image				maIMGWave;
+
+	//add  for high contract
+	Image				maIMGSingleH;
+	Image				maIMGDoubleH;
+	Image				maIMGBoldH;
+	Image				maIMGDotH;
+	Image				maIMGDotBoldH;
+	Image				maIMGDashH;
+	Image				maIMGDashLongH;
+	Image				maIMGDashDotH;
+	Image				maIMGDashDotDotH;
+	Image				maIMGWaveH;
+
+	Image				maIMGSingleSel;
+	Image				maIMGDoubleSel;
+	Image				maIMGBoldSel;
+	Image				maIMGDotSel;
+	Image				maIMGDotBoldSel;
+	Image				maIMGDashSel;
+	Image				maIMGDashLongSel;
+	Image				maIMGDashDotSel;
+	Image				maIMGDashDotDotSel;
+	Image				maIMGWaveSel;
+
+	void initial();
+
+	DECL_LINK( PBClickHdl, PushButton *);
+	DECL_LINK(VSSelectHdl, void *);
+};
+
+SvxTextPropertyPage::SvxTextUnderlinePage::SvxTextUnderlinePage(Window* pParent, SvxTextPropertyPage* pPage)
+:	SfxPopupPage( pParent,SVX_RES(RID_POPUPPANEL_TEXTPAGE_UNDERLINE))
+,	mpPage(pPage)
 ,	mpBindings(NULL)
 ,	maVSUnderline( this, SVX_RES(VS_UNDERLINE))
 ,	maPBOptions	(this, SVX_RES(PB_OPTIONS),Bitmap( SVX_RES( BMP_UNDERLINE_MORE )), Bitmap( SVX_RES( BMP_UNDERLINE_MORE_H )) )
@@ -78,74 +122,95 @@ TextUnderlineControl::TextUnderlineControl(Window* pParent, svx::sidebar::TextPr
 {
 	initial();
 	FreeResource();
-	mpBindings = mrTextPropertyPanel.GetBindings();
+	if (mpPage)
+		mpBindings = mpPage->GetBindings();
+}
+void SvxTextPropertyPage::SvxTextUnderlinePage::Paint(const Rectangle& rect)
+{
+	SfxPopupPage::Paint(rect);
+	Color aOldLineColor = GetLineColor();
+	Color aOldFillColor = GetFillColor();
+
+	Point aPos = maPBOptions.GetPosPixel();	
+	Size aSize = maPBOptions.GetSizePixel();
+	Rectangle aRect( aPos, aSize );
+	aRect.Left() -= 1;
+	aRect.Top() -= 1;
+	aRect.Right() += 1;
+	aRect.Bottom() += 1;
+
+	Color aLineColor(159,173,199);
+	if(!GetSettings().GetStyleSettings().GetHighContrastMode())
+		SetLineColor(aLineColor);
+	else
+		SetLineColor(GetSettings().GetStyleSettings().GetShadowColor());
+	SetFillColor(COL_TRANSPARENT);
+	DrawRect(aRect);
+
+	SetLineColor(aOldLineColor);
+	SetFillColor(aOldFillColor);
 }
 
-void TextUnderlineControl::initial()
+void SvxTextPropertyPage::SvxTextUnderlinePage::initial()
 {
 	maPBOptions.SetDefBkColor(GetSettings().GetStyleSettings().GetHighContrastMode()?
 		GetSettings().GetStyleSettings().GetMenuColor():
-		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_DropDownBackground ));//Color(244,245,249)//for high contract
+		GetSettings().GetStyleSettings().GetPopupPanelBackgroundColor());//Color(244,245,249)//for high contract
 	maPBOptions.SetHoverBkColor(GetSettings().GetStyleSettings().GetHighContrastMode()?
 		GetSettings().GetStyleSettings().GetMenuColor():
-		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ) );//Color( 93, 120, 163 )
-	maPBOptions.SetHoverTxtColor( sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Color_PanelTitleFont ) );//Color( 255, 255, 255 )
+		GetSettings().GetStyleSettings().GetCustButtonHoverColor() );//Color( 93, 120, 163 )
+	maPBOptions.SetHoverTxtColor( GetSettings().GetStyleSettings().GetCustButtonTextHoverColor() );//Color( 255, 255, 255 )
 	maPBOptions.SetIcoPosX( 2);
-	maVSUnderline.SetColor(GetSettings().GetStyleSettings().GetHighContrastMode()?
-		GetSettings().GetStyleSettings().GetMenuColor():
-		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
-	maVSUnderline.SetBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
-		GetSettings().GetStyleSettings().GetMenuColor():
-		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+	maVSUnderline.SetColor(GetSettings().GetStyleSettings().GetMenuColor());
 
-	Link aLink = LINK( this, TextUnderlineControl, PBClickHdl ) ;
+	Link aLink = LINK( this, SvxTextUnderlinePage, PBClickHdl ) ;
 	maPBOptions.SetClickHdl(aLink);
 
 	maVSUnderline.SetStyle( maVSUnderline.GetStyle()| WB_3DLOOK |  WB_NO_DIRECTSELECT  );// WB_NAMEFIELD | WB_ITEMBORDER |WB_DOUBLEBORDER | WB_NONEFIELD |
 
 	maVSUnderline.InsertItem(1, maIMGSingle ,String(SVX_RES(STR_SINGLE)));
-	maVSUnderline.SetItemData(1, (void*)(sal_uInt64)UNDERLINE_SINGLE);
+	maVSUnderline.SetItemData(1, (void*)(ULONG)UNDERLINE_SINGLE);
 
 	maVSUnderline.InsertItem(2, maIMGDouble ,String(SVX_RES(STR_DOUBLE)));
-	maVSUnderline.SetItemData(2, (void*)(sal_uInt64)UNDERLINE_DOUBLE);
+	maVSUnderline.SetItemData(2, (void*)(ULONG)UNDERLINE_DOUBLE);
 
 	maVSUnderline.InsertItem(3, maIMGBold, String(SVX_RES(STR_BOLD)));
-	maVSUnderline.SetItemData(3,(void*)(sal_uInt64)UNDERLINE_BOLD);
+	maVSUnderline.SetItemData(3,(void*)(ULONG)UNDERLINE_BOLD);
 
 	maVSUnderline.InsertItem(4, maIMGDot, String(SVX_RES(STR_DOT)));
-	maVSUnderline.SetItemData(4,(void*)(sal_uInt64)UNDERLINE_DOTTED);
+	maVSUnderline.SetItemData(4,(void*)(ULONG)UNDERLINE_DOTTED);
 
 	maVSUnderline.InsertItem(5, maIMGDotBold, String(SVX_RES(STR_DOT_BOLD)));
-	maVSUnderline.SetItemData(5,(void*)(sal_uInt64)UNDERLINE_BOLDDOTTED);
+	maVSUnderline.SetItemData(5,(void*)(ULONG)UNDERLINE_BOLDDOTTED);
 
 	maVSUnderline.InsertItem(6, maIMGDash, String(SVX_RES(STR_DASH)));
-	maVSUnderline.SetItemData(6,(void*)(sal_uInt64)UNDERLINE_DASH);
+	maVSUnderline.SetItemData(6,(void*)(ULONG)UNDERLINE_DASH);
 
 	maVSUnderline.InsertItem(7, maIMGDashLong,String(SVX_RES(STR_DASH_LONG)));
-	maVSUnderline.SetItemData(7,(void*)(sal_uInt64)UNDERLINE_LONGDASH);
+	maVSUnderline.SetItemData(7,(void*)(ULONG)UNDERLINE_LONGDASH);
 
 	maVSUnderline.InsertItem(8, maIMGDashDot, String(SVX_RES(STR_DASH_DOT)));
-	maVSUnderline.SetItemData(8,(void*)(sal_uInt64)UNDERLINE_DASHDOT);
+	maVSUnderline.SetItemData(8,(void*)(ULONG)UNDERLINE_DASHDOT);
 
 	maVSUnderline.InsertItem(9, maIMGDashDotDot, String(SVX_RES(STR_DASH_DOT_DOT)));
-	maVSUnderline.SetItemData(9,(void*)(sal_uInt64)UNDERLINE_DASHDOTDOT);
+	maVSUnderline.SetItemData(9,(void*)(ULONG)UNDERLINE_DASHDOTDOT);
 
 	maVSUnderline.InsertItem(10, maIMGWave, String(SVX_RES(STR_WAVE)));
-	maVSUnderline.SetItemData(10,(void*)(sal_uInt64)UNDERLINE_WAVE);
+	maVSUnderline.SetItemData(10,(void*)(ULONG)UNDERLINE_WAVE);
 
 	maVSUnderline.SetColCount( 1 );
-	aLink =  LINK( this, TextUnderlineControl, VSSelectHdl ) ;
+	aLink =  LINK( this, SvxTextUnderlinePage, VSSelectHdl ) ;
     maVSUnderline.SetSelectHdl(aLink);
 
 	maVSUnderline.StartSelection();
 	maVSUnderline.Show();
 }
 
-void TextUnderlineControl::GetFocus()
+void SvxTextPropertyPage::SvxTextUnderlinePage::GetFocus()
 {
-	maVSUnderline.GrabFocus();
+	maPBOptions.GrabFocus();
 }
-void TextUnderlineControl::Rearrange(FontUnderline eLine)
+void SvxTextPropertyPage::SvxTextUnderlinePage::SetUnderlineSelect(FontUnderline eLine)
 {
 	// high contrast
 	maVSUnderline.SetItemImage(1,  GetDisplayBackground().GetColor().IsDark()? maIMGSingleH :maIMGSingle);
@@ -215,7 +280,7 @@ void TextUnderlineControl::Rearrange(FontUnderline eLine)
 		break;
 	case UNDERLINE_NONE:
 	default:
-		maVSUnderline.SelectItem(1);
+		maVSUnderline.SelectItem(1,false);
 		maVSUnderline.SetNoSelection();//add 
 		maPBOptions.GrabFocus();
 	}
@@ -227,20 +292,20 @@ void TextUnderlineControl::Rearrange(FontUnderline eLine)
 	//	maPBOptions.Enable();
 	//removed end
 }
-ValueSet& TextUnderlineControl::GetValueSet()
+ValueSet& SvxTextPropertyPage::SvxTextUnderlinePage::GetValueSet()
 {
 	return maVSUnderline;
 }
-Control& TextUnderlineControl::GetPB()
+Control& SvxTextPropertyPage::SvxTextUnderlinePage::GetPB()
 {
 	return maPBOptions;
 }
-IMPL_LINK(TextUnderlineControl, VSSelectHdl, void *, pControl)
+IMPL_LINK(SvxTextPropertyPage::SvxTextUnderlinePage, VSSelectHdl, void *, pControl)
 {
 	if(pControl == &maVSUnderline)  
 	{
-		sal_uInt16 iPos = maVSUnderline.GetSelectItemId();
-		FontUnderline eUnderline = (FontUnderline)(sal_uInt64)maVSUnderline.GetItemData( iPos );
+		USHORT iPos = maVSUnderline.GetSelectItemId();
+		FontUnderline eUnderline = (FontUnderline)(ULONG)maVSUnderline.GetItemData( iPos );
 
 		//<<modified 
 		//SvxTextLineItem aLineItem(eUnderline, SID_ATTR_CHAR_UNDERLINE);
@@ -248,21 +313,22 @@ IMPL_LINK(TextUnderlineControl, VSSelectHdl, void *, pControl)
 		//modify end>>
 
 		//<<add , this line of code will keep the new underline use pre-color
-		aLineItem.SetColor(mrTextPropertyPanel.GetUnderlineColor());   
+		aLineItem.SetColor(mpPage->GetUnderlineColor());   
 		//add end>>
 		mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_UNDERLINE, SFX_CALLMODE_RECORD, &aLineItem, 0L);
 
 		//add , for the popup page not update immediately
-		mrTextPropertyPanel.SetUnderline(eUnderline);
+		mpPage->SetUnderline(eUnderline);
 		//add end
-		//mrTextPropertyPanel.SetDefaultUnderline(eUnderline);
+		mpPage->SetDefaultUnderline(eUnderline);
 
-		mrTextPropertyPanel.EndUnderlinePopupMode();
+		if (mpPage->GetUnderlineFloatWin()->IsInPopupMode() )
+			mpPage->GetUnderlineFloatWin()->EndPopupMode();
 	}
 	return( 0L );
 }
 
-IMPL_LINK(TextUnderlineControl, PBClickHdl, PushButton *, pPBtn)
+IMPL_LINK(SvxTextPropertyPage::SvxTextUnderlinePage, PBClickHdl, PushButton *, pPBtn)
 {
 	if(pPBtn == &maPBOptions)  
 	{
@@ -272,10 +338,11 @@ IMPL_LINK(TextUnderlineControl, PBClickHdl, PushButton *, pPBtn)
 			pDisp->Execute( SID_CHAR_DLG_EFFECT, SFX_CALLMODE_ASYNCHRON );
 		}
 		//add 
-		mrTextPropertyPanel.EndUnderlinePopupMode();
+		if (mpPage->GetUnderlineFloatWin()->IsInPopupMode() )
+			mpPage->GetUnderlineFloatWin()->EndPopupMode();
 		//add end
 	}
 	return 0;
 }
 
-}}
+} // end of namespace sidebar

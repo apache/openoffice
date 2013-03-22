@@ -1038,8 +1038,8 @@ String ImpPathForDragAndCreate::getSpecialDragComment(const SdrDragStat& rDrag) 
 		}
 
 		// dx=0.00 dy=0.00                // Beide Seiten Bezier
-		// dx=0.00 dy=0.00  l=0.00 0.00? // Anfang oder Ende oder eine Seite Bezier bzw. Hebel
-		// dx=0.00 dy=0.00  l=0.00 0.00?/ l=0.00 0.00?  // Mittendrin
+		// dx=0.00 dy=0.00  l=0.00 0.00ø  // Anfang oder Ende oder eine Seite Bezier bzw. Hebel
+		// dx=0.00 dy=0.00  l=0.00 0.00ø / l=0.00 0.00ø   // Mittendrin
 		XubString aMetr;
 		Point aBeg(rDrag.GetStart());
 		Point aNow(rDrag.GetNow());

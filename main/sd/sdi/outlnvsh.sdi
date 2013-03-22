@@ -187,12 +187,6 @@ interface OutlineView
 		StateMethod = GetMenuState ;
 		 //        Cachable , HasDialog , Export ;
 	]
-	SID_CHAR_DLG_EFFECT // wj for sym2_1876
-	[
-		ExecMethod = FuTemporaryModify ;
-		StateMethod = GetMenuState ;
-		 //        Cachable , HasDialog , Export ;
-	]
 	SID_SELECTALL // ole : no, status : ?
 	[
 		ExecMethod = FuTemporary ;

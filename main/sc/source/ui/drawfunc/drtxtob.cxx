@@ -733,11 +733,10 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 			}
 			break;
 
-			case SID_CHAR_DLG_EFFECT: 
 			case SID_CHAR_DLG:						// Dialog-Button
 			case SID_ATTR_CHAR_FONT:				// Controller nicht angezeigt
 			case SID_ATTR_CHAR_FONTHEIGHT:
-				bDone = ExecuteCharDlg( aEditAttr, aNewAttr , nSlot);
+				bDone = ExecuteCharDlg( aEditAttr, aNewAttr );
 				break;
 
 			case SID_PARA_DLG:
