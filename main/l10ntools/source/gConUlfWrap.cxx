@@ -83,7 +83,7 @@ void convert_ulf::setText(char *syyText, bool bIsEnUs)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_ulf::setValue(char *syyText)
 {
-  std::string sText = copySource(syyText);
+  std::string sLang, sText = copySource(syyText);
   int         nL;
 
   sText.erase(0,1);
@@ -91,4 +91,15 @@ void convert_ulf::setValue(char *syyText)
   sText.erase(nL);
 
   mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText);
+  if (mbMergeMode)
+  {
+    // prepare to read all languages
+    mcMemory.prepareMerge();
+    for (; mcMemory.getMergeLang(sLang, sText);)
+    {
+      // Prepare tag
+      sText = sLang + " = \"" + sText + "\"\n";
+      writeSourceFile(sText);
+    }
+  }
 }
