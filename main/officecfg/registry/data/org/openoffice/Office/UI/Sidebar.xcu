@@ -43,32 +43,27 @@
           <value>100</value>
         </prop>
       </node>
-      <!--
-          <node oor:name="GalleryDeck" oor:op="replace">
-          <prop oor:name="Title" oor:type="xs:string">
+
+      <node oor:name="GalleryDeck" oor:op="replace">
+	<prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Gallery</value>
-          </prop>
-          <prop oor:name="Id" oor:type="xs:string">
+	</prop>
+	<prop oor:name="Id" oor:type="xs:string">
           <value>GalleryDeck</value>
-          </prop>
-          <prop oor:name="IconURL" oor:type="xs:string">
+	</prop>
+	<prop oor:name="IconURL" oor:type="xs:string">
           <value>private:graphicrepository/sfx2/res/symphony/hpaneldock04_sd.png</value>
-          </prop>
-          <node oor:name="ContextMatchers">
-          <node oor:name="matcher1"  oor:op="replace">
-          <prop oor:name="Application" oor:type="xs:string">
-          <value>any</value>
-          </prop>
-          <prop oor:name="ContextList">
-          <value>any</value>
-          </prop>
-          </node>
-          </node>
-          <prop oor:name="OrderIndex" oor:type="xs:int">
+	</prop>
+        <prop oor:name="ContextList">
+          <value oor:separator=";">
+            any, any, visible ;
+          </value>
+        </prop>
+	<prop oor:name="OrderIndex" oor:type="xs:int">
           <value>150</value>
-          </prop>
-          </node>
-      -->
+	</prop>
+      </node>
+
       <node oor:name="ImpressMasterPagesDeck" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">MasterPages</value>
@@ -311,35 +306,29 @@
         </prop>
       </node>
 
-      <!--
-          <node oor:name="GalleryPanel" oor:op="replace">
-          <prop oor:name="Title" oor:type="xs:string">
+      <node oor:name="GalleryPanel" oor:op="replace">
+	<prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Gallery</value>
-          </prop>
-          <prop oor:name="Id" oor:type="xs:string">
+	</prop>
+	<prop oor:name="Id" oor:type="xs:string">
           <value>GalleryPanel</value>
-          </prop>
-          <prop oor:name="DeckId" oor:type="xs:string">
+	</prop>
+	<prop oor:name="DeckId" oor:type="xs:string">
           <value>GalleryDeck</value>
-          </prop>
-          <node oor:name="ContextMatchers">
-          <node oor:name="matcher1"  oor:op="replace">
-          <prop oor:name="Application" oor:type="xs:string">
-          <value>any</value>
-          </prop>
-          <prop oor:name="ContextList">
-          <value>any</value>
-          </prop>
-          </node>
-          </node>
-          <prop oor:name="ImplementationURL" oor:type="xs:string">
+	</prop>
+        <prop oor:name="ContextList">
+          <value oor:separator=";">
+            any, any, visible ;
+          </value>
+        </prop>
+	<prop oor:name="ImplementationURL" oor:type="xs:string">
           <value>private:resource/toolpanel/SvxPanelFactory/GalleryPanel</value>
-          </prop>
-          <prop oor:name="OrderIndex" oor:type="xs:int">
+	</prop>
+	<prop oor:name="OrderIndex" oor:type="xs:int">
           <value>100</value>
-          </prop>
-          </node>
-      -->
+	</prop>
+      </node>
+
       <node oor:name="PosSizePropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Position and Size</value>

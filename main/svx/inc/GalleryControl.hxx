@@ -54,6 +54,7 @@ private:
     ::boost::scoped_ptr<GalleryBrowser1> mpBrowser1;
     ::boost::scoped_ptr<GalleryBrowser2> mpBrowser2;
 	Size maLastSize;
+    bool mbIsInitialResize;
 
     void InitSettings (void);
 

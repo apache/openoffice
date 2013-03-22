@@ -26,7 +26,7 @@
 #include "graphic/GraphicPropertyPanel.hxx"
 #include "line/LinePropertyPanel.hxx"
 #include "possize/PosSizePropertyPanel.hxx"
-#include "gallery/GalleryControl.hxx"
+#include "GalleryControl.hxx"
 #include "debug/ColorPanel.hxx"
 #include "debug/ContextPanel.hxx"
 #include "debug/NotYetImplementedPanel.hxx"
