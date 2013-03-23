@@ -132,7 +132,7 @@ class l10nMem_db
     void prepareMerge   ();
     bool getMergeLang   (std::string& sLang,
                          std::string& sText);
-
+    bool getLangList    (std::string& sLang);
 };
 
 

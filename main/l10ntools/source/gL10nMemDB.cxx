@@ -398,14 +398,28 @@ void l10nMem_db::prepareMerge()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 bool l10nMem_db::getMergeLang(std::string& sLang,
-                                std::string& sText)
+                              std::string& sText)
 {
   miCurLangInx++;
-  if (miCurLangInx >= mcLangList.size())
+  if (miCurLangInx >= (int)mcLangList.size())
     return false;
 
   // update pointers
   sLang = mcLangList[miCurLangInx];
   sText = mcENUSlist[miCurENUSinx].mcLangList[miCurLangInx].msText;
+  return true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+bool l10nMem_db::getLangList(std::string& sLang)
+{
+  miCurLangInx++;
+  if (miCurLangInx >= (int)mcLangList.size())
+    return false;
+
+  // update pointers
+  sLang = mcLangList[miCurLangInx];
   return true;
 }

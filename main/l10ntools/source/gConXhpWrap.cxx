@@ -35,10 +35,40 @@
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+lang_container::lang_container(const std::string& sLang, const std::string& sFileName)
+{
+  std::string x;
+
+  x= sLang;
+  x= sFileName;
+  // JIX: implement file open
+  // JIX: implement lang tag
+}
+
+
+
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+lang_container::lang_container()
+{
+}
+
+
+
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+lang_container::~lang_container()
+{
+  // JIX: implement close file
+}
+
+
+
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
 convert_xhp::convert_xhp(l10nMem& crMemory)
                         : convert_gen_impl(crMemory),
                           meExpectValue(VALUE_NOT_USED)
 {
+  // xhp files are written through a local routine
+  mbLoadMode = true;
 }
 
 
@@ -62,10 +92,15 @@ namespace XhpWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::execute()
 {
-  XhpWrap::yylex();
+  std::string sLang;
+  std::string sFile = msTargetPath+msSourceFile;
 
-  if (mbMergeMode)
-    writeSourceFile(msCollector);
+  // prepare list with languages
+  mcMemory.prepareMerge();
+  for (; mcMemory.getLangList(sLang); )
+    mbLanguages.push_back(lang_container(sLang, sFile));
+
+  XhpWrap::yylex();
 }
 
 
@@ -73,7 +108,7 @@ void convert_xhp::execute()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::setString(char *yytext)
 {
-  copySourceWithCollector(yytext);
+  copySourceSpecial(yytext);
 }
 
 
@@ -86,7 +121,7 @@ void convert_xhp::openTag(char *yytext)
     meExpectValue  = VALUE_IS_VALUE_TAG;
     msCollector   += "\\";
   }
-  copySourceWithCollector(yytext);
+  copySourceSpecial(yytext);
 }
 
 
@@ -94,27 +129,30 @@ void convert_xhp::openTag(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::closeTag(char *yytext)
 {
-  copySourceWithCollector(yytext);
+  STATE newState = meExpectValue;
+
   switch (meExpectValue)
   {
     case VALUE_IS_VALUE_TAG:
-         meExpectValue = VALUE_IS_VALUE;
-         msCollector.insert(msCollector.size()-1, "\\");
+         newState = VALUE_IS_VALUE;
+         msCollector   += "\\";
          break;
 
     case VALUE_IS_TAG_TRANS:
          if (msKey.size())
-           meExpectValue = VALUE_IS_VALUE;
+           newState = VALUE_IS_VALUE;
          break;
 
     case VALUE_IS_TAG:
          msKey.clear();
-         meExpectValue = VALUE_NOT_USED;
+         newState = VALUE_NOT_USED;
          break;
     case VALUE_NOT_USED:
     case VALUE_IS_VALUE:
          break;
   }
+  copySourceSpecial(yytext);
+  meExpectValue = newState;
 }
 
 
@@ -122,8 +160,8 @@ void convert_xhp::closeTag(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::setId(char *yytext)
 {
-  int          nL, nE, nX = msCollector.size();
-  std::string& sText = copySourceWithCollector(yytext);
+  int          nL, nE;
+  std::string& sText = copySourceSpecial(yytext);
 
 
   nL = sText.find("\"");
@@ -152,7 +190,7 @@ void convert_xhp::setLang(char *yytext)
 {
   int          nL, nE;
   std::string  sLang;
-  std::string& sText = copySourceWithCollector(yytext);
+  std::string& sText = copySourceSpecial(yytext, 1);
 
 
   nL = sText.find("\"");
@@ -186,8 +224,8 @@ void convert_xhp::setLang(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::setRef(char *yytext)
 {
-  int          nL, nE, nX = msCollector.size();
-  std::string& sText = copySourceWithCollector(yytext);
+  int          nL, nE;
+  std::string& sText = copySourceSpecial(yytext);
 
 
   nL = sText.find("\"");
@@ -214,7 +252,7 @@ void convert_xhp::setRef(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::openTransTag(char *yytext)
 {
-  copySource(yytext);
+  copySourceSpecial(yytext);
   msKey.clear();
   meExpectValue = VALUE_IS_TAG;
 }
@@ -230,8 +268,8 @@ void convert_xhp::closeTransTag(char *yytext)
       mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, msCollector);
     msKey.clear();
   }
-  copySource(yytext);
   meExpectValue = VALUE_NOT_USED;
+  copySourceSpecial(yytext, 2);
 }
 
 
@@ -239,7 +277,7 @@ void convert_xhp::closeTransTag(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::stopTransTag(char *yytext)
 {
-  copySource(yytext);
+  copySourceSpecial(yytext);
   meExpectValue = VALUE_NOT_USED;
 }
 
@@ -251,7 +289,7 @@ void convert_xhp::startComment(char *yytext)
   mePushValue   = meExpectValue;
   msPushCollect = msCollector;
   meExpectValue = VALUE_NOT_USED;
-  copySource(yytext);
+  copySourceSpecial(yytext);
 }
 
 
@@ -259,7 +297,7 @@ void convert_xhp::startComment(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::stopComment(char *yytext)
 {
-  copySource(yytext);
+  copySourceSpecial(yytext);
   meExpectValue = mePushValue;
   msCollector   = msPushCollect;
 }
@@ -270,7 +308,7 @@ void convert_xhp::stopComment(char *yytext)
 void convert_xhp::handleSpecial(char *yytext)
 {
   int          nX    = msCollector.size();
-  std::string& sText = copySourceWithCollector(yytext);
+  std::string& sText = copySourceSpecial(yytext);
 
 
   if (meExpectValue != VALUE_IS_VALUE || meExpectValue != VALUE_IS_VALUE_TAG)
@@ -293,7 +331,7 @@ void convert_xhp::handleSpecial(char *yytext)
 void convert_xhp::handleDataEnd(char *yytext)
 {
   int nX = msCollector.size();
-  copySourceWithCollector(yytext);
+  copySourceSpecial(yytext);
 
   if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
     msCollector.erase(nX);
@@ -304,7 +342,7 @@ void convert_xhp::handleDataEnd(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::duplicate(char *yytext)
 {
-  copySourceWithCollector(yytext);
+  copySourceSpecial(yytext);
 
   if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
     msCollector += msCollector[msCollector.size()-1];
@@ -313,7 +351,12 @@ void convert_xhp::duplicate(char *yytext)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-std::string& convert_xhp::copySourceWithCollector(char *yytext)
+std::string& convert_xhp::copySourceSpecial(char *yytext, int iType)
 {
-  return copySource(yytext, (meExpectValue == VALUE_NOT_USED || meExpectValue == VALUE_IS_TAG_TRANS));
+  iType = 0;
+  return copySource(yytext, (meExpectValue != VALUE_IS_VALUE && meExpectValue != VALUE_IS_VALUE_TAG));
+
+
+  // JIX tell copy source not to use outputfile
+  // JIX write all languages sources.
 }

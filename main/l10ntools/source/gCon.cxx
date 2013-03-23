@@ -92,12 +92,12 @@ convert_gen::~convert_gen()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-bool convert_gen::execute(const bool bMerge, const bool bLoadMode, const bool bAllowNoFile)
+bool convert_gen::execute(const bool bMerge)
 {
   convert_gen_impl::mcImpl->mbMergeMode  = bMerge;
 
   // and load file
-  if (!convert_gen_impl::mcImpl->prepareFile(bLoadMode, bAllowNoFile))
+  if (!convert_gen_impl::mcImpl->prepareFile())
     return false;
 
   // and execute conversion
@@ -143,6 +143,7 @@ void convert_gen_impl::save(const std::string& sFileName,
 {
   std::string x;
 
+  x = sFileName;
   x = sKey;
   x = sENUStext;
   x = sText;
@@ -166,7 +167,9 @@ void convert_gen_impl::endSave()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_gen_impl::convert_gen_impl(l10nMem& crMemory)
-                                  : mcMemory(crMemory),
+                                  : mbMergeMode(false),
+                                    mbLoadMode(false),
+                                    mcMemory(crMemory),
                                     miLineNo(1)
 {
 }
@@ -182,14 +185,14 @@ convert_gen_impl::~convert_gen_impl()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-bool convert_gen_impl::prepareFile(bool bLoadMode, bool bAllowNoFile)
+bool convert_gen_impl::prepareFile()
 {
   std::ifstream inputFile(msSourcePath.c_str(), std::ios::binary);
 
   
   if (!inputFile.is_open())
   {
-    if (bAllowNoFile)
+    if (mbLoadMode)
     {
       l10nMem::showWarning("Cannot open file (" + msSourcePath + ")");
       return false;
@@ -210,7 +213,7 @@ bool convert_gen_impl::prepareFile(bool bLoadMode, bool bAllowNoFile)
     throw l10nMem::showError("cannot read whole file");
   inputFile.close();
 
-  if (mbMergeMode && !bLoadMode)
+  if (mbMergeMode && !mbLoadMode)
   {
     // close previous file
     if (outputFile.is_open())
@@ -263,7 +266,8 @@ void convert_gen_impl::writeSourceFile(const std::string& line)
   if (!line.size())
     return;
 
-  outputFile.write(line.c_str(), line.size());
+  if (outputFile.is_open())
+    outputFile.write(line.c_str(), line.size());
 }
 
 

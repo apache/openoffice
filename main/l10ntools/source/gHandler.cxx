@@ -278,9 +278,7 @@ void handler::runExtractMerge(bool bMerge, bool bKid)
 
     // get converter and extract file
     convert_gen convertObj(mcMemory, msSourceDir, msTargetDir, *siSource);
-    convertObj.execute(bMerge, false, false);
-
-    //JIX runExtractMerge, handle merge
+    convertObj.execute(bMerge);
   }
 
   // and generate language file
@@ -308,7 +306,7 @@ void handler::runConvert()
 
       // get converter and extract files
       convert_gen convertObj(mcMemory, sFilePath, msTargetDir, *siSource);
-      convertObj.execute(true, true, true);
+      convertObj.execute(true);
     }
   }
 
@@ -454,7 +452,7 @@ void handler::loadL10MEM()
 
     // and load file
     mcMemory.setLanguage("", true, false);
-    convert_gen (mcMemory, sLoad, msTargetDir, sMod).execute(false, true, true);
+    convert_gen (mcMemory, sLoad, msTargetDir, sMod).execute(false);
   }
 
   // loop through all languages and load text
@@ -468,7 +466,7 @@ void handler::loadL10MEM()
     // tell system
     l10nMem::showDebug("gLang loading text from language file " + sLoad + sMod);
 
-    convert_gen(mcMemory, sLoad, msTargetDir, sMod).execute(false, true, true);
+    convert_gen(mcMemory, sLoad, msTargetDir, sMod).execute(false);
   }
 }
 

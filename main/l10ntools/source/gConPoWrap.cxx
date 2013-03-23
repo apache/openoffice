@@ -40,6 +40,8 @@ convert_po::convert_po(l10nMem& crMemory)
                         mbExpectStr(false),
                         mbFuzzy(false)
 {
+  // Po files are handled special
+  mbLoadMode = true;
 }
 
 

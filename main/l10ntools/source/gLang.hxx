@@ -90,6 +90,7 @@ class l10nMem
     void prepareMerge ();
     bool getMergeLang (std::string& sLang,
                        std::string& sText);
+    bool getLangList  (std::string& sLang);
 };
 
 
@@ -105,9 +106,7 @@ class convert_gen
     ~convert_gen();
 
     // do extract/merge
-    bool execute(const bool         bMerge,
-                 const bool         bLoadMode,
-                 const bool         bAllowNoFile);
+    bool execute(const bool bMerge);
 
     // ONLY po should implement these functions
     void startSave(const std::string& sLanguage,

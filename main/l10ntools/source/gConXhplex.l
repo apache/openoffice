@@ -154,7 +154,7 @@ IDENT [\.a-zA-Z0-9_-]+
 
 
 .|\n {
-  LOCptr->copySourceWithCollector(yytext);
+  LOCptr->copySourceSpecial(yytext);
 }
 
 

@@ -33,6 +33,20 @@
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
+class lang_container
+{
+  public:
+    lang_container(const std::string& sLang, const std::string& sFileName);
+    lang_container();
+    ~lang_container();
+
+    std::string   msLang;
+//    std::ofstream msOutFile;
+};
+
+
+
+/********************   C L A S S   D E F I N I T I O N   ********************/
 class convert_xhp : public convert_gen_impl
 {
   public:
@@ -53,19 +67,21 @@ class convert_xhp : public convert_gen_impl
     void handleSpecial(char *yytext);
     void handleDataEnd(char *yytext);
     void duplicate(char *yytext);
-    std::string& copySourceWithCollector(char *yytext);
+    std::string& copySourceSpecial(char *yytext, int iType = 0);
 
   private:
-    enum
+    typedef enum
     {
       VALUE_NOT_USED,
       VALUE_IS_TAG,
       VALUE_IS_TAG_TRANS,
       VALUE_IS_VALUE,
       VALUE_IS_VALUE_TAG
-    } meExpectValue, mePushValue;
+    } STATE;
+    STATE       meExpectValue, mePushValue;
     std::string msKey, msPushCollect;
 
-    void         execute();
+    std::vector<lang_container> mbLanguages;
+    void                        execute();
 };
 #endif

@@ -65,6 +65,7 @@ class convert_gen_impl
 
     // generic variables
     bool         mbMergeMode;
+    bool         mbLoadMode;
     std::string  msSourcePath;
     std::string  msTargetPath;
     std::string  msSourceFile;
@@ -74,15 +75,15 @@ class convert_gen_impl
 
 
     // utility functions for converters
-    void         lexRead (char *sBuf, int *nResult, int nMax_size);
+    void         lexRead        (char *sBuf, int *nResult, int nMax_size);
     void         writeSourceFile(const std::string& line);
-    std::string& copySource(char *yyText, bool bDoClear = true);
+    std::string& copySource     (char *yyText, bool bDoClear = true);
 
   protected:
     std::string  msSourceBuffer, msCopyText;
     int          miSourceReadIndex;
 
-    bool prepareFile(bool bLoadMode, bool bAllowNoFile);
+    bool prepareFile();
 
   private:
     std::ofstream outputFile;
