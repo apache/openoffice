@@ -21,8 +21,6 @@
 #ifndef GCONPO_HXX
 #define GCONPO_HXX
 #include "gCon.hxx"
-#include <iostream>
-#include <fstream>
 
 
 

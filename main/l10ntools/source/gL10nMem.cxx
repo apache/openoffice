@@ -95,8 +95,8 @@ void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK,
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
 void l10nMem::save(const std::string& sT, bool bK, bool bF)
      { l10nMem_impl::mcImpl->save(*this, sT, bK, bF); }
-void l10nMem::prepareMerge()
-     { l10nMem_impl::mcImpl->mcDb.prepareMerge(); }
+int  l10nMem::prepareMerge()
+     { return l10nMem_impl::mcImpl->mcDb.prepareMerge(); }
 void l10nMem::dumpMem(const std::string& sT)
      { l10nMem_impl::mcImpl->dumpMem(sT); }
 bool l10nMem::getMergeLang(std::string& sL, std::string& sT)
@@ -251,7 +251,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
     savePo.startSave("en_US", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
-      l10nMem_enus_entry& cE     = mcDb.mcENUSlist[iE];
+      l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
 
       // remove deleted entries
       if (cE.meState == l10nMem::ENTRY_DELETED)
@@ -270,9 +270,9 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
     savePo.startSave(mcDb.mcLangList[iL], sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
-      l10nMem_enus_entry& cE     = mcDb.mcENUSlist[iE];
-      l10nMem_lang_entry& cL     = cE.mcLangList[iL];
-      bool                bF     = cL.mbFuzzy;
+      l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
+      l10nMem_lang_entry& cL = cE.mcLangText[iL];
+      bool                bF = cL.mbFuzzy;
 
       // remove deleted entries
       if (cE.meState == l10nMem::ENTRY_DELETED)
@@ -466,7 +466,7 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
 
     // update language text
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
-    l10nMem_lang_entry& curL = curE.mcLangList[mcDb.miCurLangInx];
+    l10nMem_lang_entry& curL = curE.mcLangText[mcDb.miCurLangInx];
 
     if (sText != curL.msText)
     {

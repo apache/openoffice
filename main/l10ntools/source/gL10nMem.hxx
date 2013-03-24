@@ -64,7 +64,7 @@ class l10nMem_enus_entry
     l10nMem::ENTRY_STATE            meState;    // status information
     int                             miFileInx;  // index of file name
     int                             miLineNo;   // line number
-    std::vector<l10nMem_lang_entry> mcLangList; // language texts (index is languageId)
+    std::vector<l10nMem_lang_entry> mcLangText; // language texts (index is languageId)
 };
 
 
@@ -129,7 +129,7 @@ class l10nMem_db
                          const std::string&   sText,
                          l10nMem::ENTRY_STATE eStat);
 
-    void prepareMerge   ();
+    int  prepareMerge   ();
     bool getMergeLang   (std::string& sLang,
                          std::string& sText);
     bool getLangList    (std::string& sLang);

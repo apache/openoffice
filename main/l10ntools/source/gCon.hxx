@@ -86,7 +86,7 @@ class convert_gen_impl
     bool prepareFile();
 
   private:
-    std::ofstream outputFile;
+    std::ofstream mcOutputFile;
 
     friend class convert_gen;
 };

@@ -216,12 +216,12 @@ bool convert_gen_impl::prepareFile()
   if (mbMergeMode && !mbLoadMode)
   {
     // close previous file
-    if (outputFile.is_open())
-      outputFile.close();
+    if (mcOutputFile.is_open())
+      mcOutputFile.close();
 
     // open output file
-    outputFile.open((msTargetPath+msSourceFile).c_str(), std::ios::binary); 
-    if (!outputFile.is_open())
+    mcOutputFile.open((msTargetPath+msSourceFile).c_str(), std::ios::binary); 
+    if (!mcOutputFile.is_open())
       throw l10nMem::showError("Cannot open file (" + msTargetPath+msSourceFile + ") for writing");
   }
 
@@ -266,8 +266,8 @@ void convert_gen_impl::writeSourceFile(const std::string& line)
   if (!line.size())
     return;
 
-  if (outputFile.is_open())
-    outputFile.write(line.c_str(), line.size());
+  if (mcOutputFile.is_open())
+    mcOutputFile.write(line.c_str(), line.size());
 }
 
 
@@ -278,6 +278,11 @@ std::string& convert_gen_impl::copySource(char *yyText, bool bDoClear)
   int nL;
 
 
+  if (!yyText)
+  {
+    msCopyText.clear();
+    return msCopyText;
+  }
   msCopyText = yyText;
 
   // write text for merge

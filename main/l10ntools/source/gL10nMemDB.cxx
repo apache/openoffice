@@ -73,7 +73,7 @@ l10nMem_enus_entry::l10nMem_enus_entry(const std::string&   sKey,
 
   // add dummy language entries
   for (i = 0; i < iLangSize; ++i)
-    mcLangList.push_back(l10nMem_lang_entry("", false));
+    mcLangText.push_back(l10nMem_lang_entry("", false));
 
   // convert key to upper case
   iSize      = sKey.size();
@@ -204,7 +204,7 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
   // add language to all ENUS entries
   iSize = mcENUSlist.size();
   for (i = 0; i < iSize; ++i)
-    mcENUSlist[i].mcLangList.push_back(l10nMem_lang_entry("", false));
+    mcENUSlist[i].mcLangText.push_back(l10nMem_lang_entry("", false));
 }
 
 
@@ -245,7 +245,7 @@ void l10nMem_db::loadLangKey(int                iLineNo,
   if (!locateKey(iLineNo, sSourceFile, sKey, sOrgText, true))
     throw l10nMem::showError(".po file contains unknown filename: " + sSourceFile + " or key: " + sKey);
 
-  l10nMem_lang_entry& xCur = mcENUSlist[miCurENUSinx].mcLangList[miCurLangInx];
+  l10nMem_lang_entry& xCur = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx];
   xCur.msText  = sText;
   xCur.mbFuzzy = bFuzzy;
 }
@@ -360,7 +360,7 @@ void l10nMem_db::addKey(int                  iLineNo,
    
     // and add entry at the back (no problem since it is a new file)
     mcENUSlist.push_back(l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
-                                            mcLangList.size(), eStat));
+                                               mcLangList.size(), eStat));
     mcFileList[miCurFileInx].miEnd = miCurENUSinx;
   }
   else
@@ -389,9 +389,10 @@ void l10nMem_db::addKey(int                  iLineNo,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_db::prepareMerge()
+int l10nMem_db::prepareMerge()
 {
   miCurLangInx = 0;
+  return mcLangList.size() -1;
 }
 
 
@@ -406,7 +407,7 @@ bool l10nMem_db::getMergeLang(std::string& sLang,
 
   // update pointers
   sLang = mcLangList[miCurLangInx];
-  sText = mcENUSlist[miCurENUSinx].mcLangList[miCurLangInx].msText;
+  sText = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msText;
   return true;
 }
 
