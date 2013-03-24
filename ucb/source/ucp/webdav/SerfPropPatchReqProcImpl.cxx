@@ -165,7 +165,7 @@ serf_bucket_t * SerfPropPatchReqProcImpl::createSerfRequestBucket( serf_request_
     {
         // general header fields provided by caller
         setRequestHeaders( hdrs_bkt );
-        
+
         // request specific header fields
         if ( body_bkt != 0 && aBodyText.getLength() > 0 )
         {
