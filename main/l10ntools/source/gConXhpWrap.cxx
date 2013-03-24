@@ -401,7 +401,8 @@ std::string& convert_xhp::copySourceSpecial(char *yytext, int iType)
               writeSourceFile(msLine, i);
               mcMemory.getMergeLang(sLang, sText);
               writeSourceFile(sText,i);
-              writeSourceFile(std::string(yytext), i);
+              std::string sYY(yytext);
+              writeSourceFile(sYY, i);
             }
             msLine.clear();
             break;

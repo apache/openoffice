@@ -71,5 +71,6 @@ class convert_src : public convert_gen_impl
     void execute();
     void trim(std::string& sText);
     void buildKey(std::string& sKey);
+    void insertLanguagePart(std::string& sKey, std::string& sTextType);
 };
 #endif

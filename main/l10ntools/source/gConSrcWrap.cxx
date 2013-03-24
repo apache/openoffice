@@ -208,7 +208,11 @@ void convert_src::setNL(char *syyText, bool bMacro)
 
     sKey += "." + msCmd + "." + msTextName;
     if (msValue.size() && msValue != "-")
+    {
       mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, msValue);
+      if (mbMergeMode)
+        insertLanguagePart(sKey, msTextName);
+    }
   }
 
   if (!bMacro && mbExpectMacro)
@@ -325,4 +329,22 @@ void convert_src::buildKey(std::string& sKey)
   for (nL = 0; nL < (int)mcStack.size(); ++nL)
     if (mcStack[nL].size())
       sKey += (sKey.size() ? "." : "") + mcStack[nL];
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_src::insertLanguagePart(std::string& sKey, std::string& sTextType)
+{
+  std::string sLang, sText, sTagText;
+
+
+  // prepare to read all languages
+  mcMemory.prepareMerge();
+  for (; mcMemory.getMergeLang(sLang, sText);)
+  {
+    // Prepare tag start and end
+    sTagText = sTextType + "[ " + sLang + " ] = \"" + sText + "\"\n";
+    writeSourceFile(sTagText);
+  }
 }
