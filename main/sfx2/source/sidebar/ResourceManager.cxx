@@ -413,7 +413,7 @@ void ResourceManager::ReadContextList (
                 : rsDefaultMenuCommand);
 
         EnumContext::Application eApplication (EnumContext::GetApplicationEnum(sApplicationName));
-        bool bApplicationIsDrawAndImpress = false;
+        EnumContext::Application eApplication2 (EnumContext::Application_None);
         if (eApplication == EnumContext::Application_None
             && !sApplicationName.equals(EnumContext::GetApplicationName(EnumContext::Application_None)))
         {
@@ -433,7 +433,14 @@ void ResourceManager::ReadContextList (
                 // common to use the same context descriptions for
                 // both Draw and Impress.  This special case helps to
                 // avoid duplication in the .xcu file.
-                bApplicationIsDrawAndImpress = true;
+                eApplication = EnumContext::Application_Draw;
+                eApplication2 = EnumContext::Application_Impress;
+            }
+            else if (sApplicationName.equalsAscii("WriterAndWeb"))
+            {
+                // Another special case for Writer and WriterWeb.
+                eApplication = EnumContext::Application_Writer;
+                eApplication2 = EnumContext::Application_WriterWeb;
             }
             else
             {
@@ -460,31 +467,20 @@ void ResourceManager::ReadContextList (
             continue;
         }
 
-        if (bApplicationIsDrawAndImpress)
-        {
-            // Add the context description for both Draw and Impress. 
-            rContextList.AddContextDescription(
-                Context(
-                    EnumContext::GetApplicationName(EnumContext::Application_Draw),
-                    EnumContext::GetContextName(eContext)),
-                bIsInitiallyVisible,
-                sMenuCommand);
-            rContextList.AddContextDescription(
-                Context(
-                    EnumContext::GetApplicationName(EnumContext::Application_Impress),
-                    EnumContext::GetContextName(eContext)),
-                bIsInitiallyVisible,
-                sMenuCommand);
-        }
-        else
-        {
+        if (eApplication != EnumContext::Application_None)
             rContextList.AddContextDescription(
                 Context(
                     EnumContext::GetApplicationName(eApplication),
                     EnumContext::GetContextName(eContext)),
                 bIsInitiallyVisible,
                 sMenuCommand);
-        }
+        if (eApplication2 != EnumContext::Application_None)
+            rContextList.AddContextDescription(
+                Context(
+                    EnumContext::GetApplicationName(eApplication2),
+                    EnumContext::GetContextName(eContext)),
+                bIsInitiallyVisible,
+                sMenuCommand);
     }
 }
 

@@ -284,36 +284,36 @@ void PosSizePropertyPanel::HandleContextChange(
     sal_Int32 nLayoutMode (0);
     switch (maContext.GetCombinedContext_DI())
     {
-        case CombinedEnumContext(Application_Writer, Context_Draw):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Draw):
             nLayoutMode = 0;
             break;
 
-        case CombinedEnumContext(Application_Writer, Context_Graphic):
-		case CombinedEnumContext(Application_Writer, Context_Media):
-		case CombinedEnumContext(Application_Writer, Context_Frame):
-		case CombinedEnumContext(Application_Writer, Context_OLE):
-		case CombinedEnumContext(Application_Writer, Context_Form):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Graphic):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Media):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Frame):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_OLE):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Form):
             nLayoutMode = 1;
             break;
 
         case CombinedEnumContext(Application_Calc, Context_Draw):
-		case CombinedEnumContext(Application_Calc, Context_Graphic):
+        case CombinedEnumContext(Application_Calc, Context_Graphic):
         case CombinedEnumContext(Application_DrawImpress, Context_Draw):
         case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
         case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
             nLayoutMode = 2;
-		    break;
+            break;
 
         case CombinedEnumContext(Application_Calc, Context_Chart):
-		case CombinedEnumContext(Application_Calc, Context_Form):
-		case CombinedEnumContext(Application_Calc, Context_Media):
-		case CombinedEnumContext(Application_Calc, Context_OLE):
-		case CombinedEnumContext(Application_Calc, Context_MultiObject):
-		case CombinedEnumContext(Application_DrawImpress, Context_Media):
-		case CombinedEnumContext(Application_DrawImpress, Context_Form):
-		case CombinedEnumContext(Application_DrawImpress, Context_OLE):
-		case CombinedEnumContext(Application_DrawImpress, Context_3DObject):
-		case CombinedEnumContext(Application_DrawImpress, Context_MultiObject):
+        case CombinedEnumContext(Application_Calc, Context_Form):
+        case CombinedEnumContext(Application_Calc, Context_Media):
+        case CombinedEnumContext(Application_Calc, Context_OLE):
+        case CombinedEnumContext(Application_Calc, Context_MultiObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_Media):
+        case CombinedEnumContext(Application_DrawImpress, Context_Form):
+        case CombinedEnumContext(Application_DrawImpress, Context_OLE):
+        case CombinedEnumContext(Application_DrawImpress, Context_3DObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_MultiObject):
             nLayoutMode = 3;
             break;
     }    
@@ -866,9 +866,9 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
             if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw) 
-                        || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
-                        ) && OBJ_EDGE == eKind)
-                || OBJ_CAPTION == eKind)
+               || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
+                 ) && OBJ_EDGE == eKind)
+               || OBJ_CAPTION == eKind)
             {
                 mpFtAngle->Disable();
                 mpMtrAngle->Disable();
@@ -889,9 +889,9 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                 const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
                 if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw)
-                            || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
-                            ) && OBJ_EDGE == eKind) 
-                    || OBJ_CAPTION == eKind)
+                  || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
+                     ) && OBJ_EDGE == eKind)
+                  || OBJ_CAPTION == eKind)
                 {
                     isNoEdge = false;
                     break;
