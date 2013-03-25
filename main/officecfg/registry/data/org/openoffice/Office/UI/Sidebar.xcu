@@ -32,7 +32,7 @@
           <value>PropertyDeck</value>
         </prop>
         <prop oor:name="IconURL" oor:type="xs:string">
-          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock01.png</value>
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-property-large.png</value>
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
@@ -52,7 +52,7 @@
           <value>GalleryDeck</value>
 	</prop>
 	<prop oor:name="IconURL" oor:type="xs:string">
-          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock04_sd.png</value>
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-gallery-large.png</value>
 	</prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
@@ -66,13 +66,13 @@
 
       <node oor:name="ImpressMasterPagesDeck" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
-          <value xml:lang="en-US">MasterPages</value>
+          <value xml:lang="en-US">Master Pages</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
           <value>MasterPagesDeck</value>
         </prop>
         <prop oor:name="IconURL" oor:type="xs:string">
-          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock01_sd.png</value>
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-template-large.png</value>
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
@@ -92,7 +92,7 @@
           <value>CustomAnimationDeck</value>
         </prop>
         <prop oor:name="IconURL" oor:type="xs:string">
-          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock02_sd.png</value>
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-animation-large.png</value>
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
@@ -112,7 +112,7 @@
           <value>SlideTransitionDeck</value>
         </prop>
         <prop oor:name="IconURL" oor:type="xs:string">
-          <value>private:graphicrepository/sfx2/res/symphony/hpaneldock03_sd.png</value>
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-transition-large.png</value>
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
@@ -155,11 +155,11 @@
             DrawImpress,      OutlineText,        visible                    ;
             DrawImpress,      Table,              visible                    ;
             DrawImpress,      TextObject,         visible                    ;
-            Writer,           Annotation,         visible                    ;
-            Writer,           DrawText,           visible                    ;
-            Writer,           Table,              visible                    ;
-            Writer,           Text,               visible                    ;
-            Writer,           default,            visible                    ;
+            WriterAndWeb,     Annotation,         visible                    ;
+            WriterAndWeb,     DrawText,           visible                    ;
+            WriterAndWeb,     Table,              visible                    ;
+            WriterAndWeb,     Text,               visible                    ;
+            WriterAndWeb,     default,            visible                    ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -259,11 +259,11 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Calc,        Draw,       visible ;
-            DrawImpress, 3DObject,   visible ;
-            DrawImpress, Draw,       visible ;
-            DrawImpress, TextObject, hidden  ;
-            Writer,      Draw,       visible ;
+            Calc,         Draw,       visible ;
+            DrawImpress,  3DObject,   visible ;
+            DrawImpress,  Draw,       visible ;
+            DrawImpress,  TextObject, hidden  ;
+            WriterAndWeb, Draw,       visible ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -289,13 +289,13 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Calc,        Draw,       visible ;
-            Calc,        Graphic,    visible ;
-            DrawImpress, 3DObject,   visible ;
-            DrawImpress, Draw,       visible ;
-            DrawImpress, Graphic,    visible ;
-            DrawImpress, TextObject, hidden  ;
-            Writer,      Draw,       visible ;
+            Calc,         Draw,       visible ;
+            Calc,         Graphic,    visible ;
+            DrawImpress,  3DObject,   visible ;
+            DrawImpress,  Draw,       visible ;
+            DrawImpress,  Graphic,    visible ;
+            DrawImpress,  TextObject, hidden  ;
+            WriterAndWeb, Draw,       visible ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -344,26 +344,26 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Calc,        Chart,       visible                       ;
-            Calc,        Draw,        hidden                        ;
-            Calc,        Form,        visible                       ;
-            Calc,        Graphic,     hidden                        ;
-            Calc,        Media,       visible                       ;
-            Calc,        MultiObject, visible                       ;
-            Calc,        OLE,         visible                       ;
-            DrawImpress, 3DObject,    visible                       ;
-            DrawImpress, Draw,        hidden                        ;
-            DrawImpress, Form,        visible                       ;
-            DrawImpress, Graphic,     hidden                        ;
-            DrawImpress, Media,       visible                       ;
-            DrawImpress, MultiObject, visible                       ;
-            DrawImpress, OLE,         visible                       ;
-            DrawImpress, TextObject,  hidden                        ;
-            Writer,      Draw,        hidden                        ;
-            Writer,      Form,        visible                       ;
-            Writer,      Graphic,     visible, .uno:GraphicDialog   ;
-            Writer,      Media,       visible                       ;
-            Writer,      OLE,         visible, .uno:FrameDialog     ;
+            Calc,         Chart,       visible                       ;
+            Calc,         Draw,        hidden                        ;
+            Calc,         Form,        visible                       ;
+            Calc,         Graphic,     hidden                        ;
+            Calc,         Media,       visible                       ;
+            Calc,         MultiObject, visible                       ;
+            Calc,         OLE,         visible                       ;
+            DrawImpress,  3DObject,    visible                       ;
+            DrawImpress,  Draw,        hidden                        ;
+            DrawImpress,  Form,        visible                       ;
+            DrawImpress,  Graphic,     hidden                        ;
+            DrawImpress,  Media,       visible                       ;
+            DrawImpress,  MultiObject, visible                       ;
+            DrawImpress,  OLE,         visible                       ;
+            DrawImpress,  TextObject,  hidden                        ;
+            WriterAndWeb, Draw,        hidden                        ;
+            WriterAndWeb, Form,        visible                       ;
+            WriterAndWeb, Graphic,     visible, .uno:GraphicDialog   ;
+            WriterAndWeb, Media,       visible                       ;
+            WriterAndWeb, OLE,         visible, .uno:FrameDialog     ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -386,9 +386,9 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Calc,        Graphic,     visible   ;
-            DrawImpress, Graphic,     visible   ;
-            Writer,      Graphic,     visible   ;
+            Calc,         Graphic,     visible   ;
+            DrawImpress,  Graphic,     visible   ;
+            WriterAndWeb, Graphic,     visible   ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -714,19 +714,19 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Calc,        DrawText,   visible ;
-            DrawImpress, 3DObject,   visible ;
-            DrawImpress, Draw,       hidden  ;
-            DrawImpress, DrawText,   visible ;
-            DrawImpress, Graphic,    hidden  ;
-            DrawImpress, Table,      visible ;
-            DrawImpress, TextObject, visible ;
-            DrawImpress, 3DObject,   visible ;
-            Writer,      Annotation, visible ;
-            Writer,      DrawText,   visible ;
-            Writer,      Table,      visible ;
-            Writer,      Text,       visible ;
-            Writer,      default,    visible ;
+            Calc,         DrawText,   visible ;
+            DrawImpress,  3DObject,   visible ;
+            DrawImpress,  Draw,       hidden  ;
+            DrawImpress,  DrawText,   visible ;
+            DrawImpress,  Graphic,    hidden  ;
+            DrawImpress,  Table,      visible ;
+            DrawImpress,  TextObject, visible ;
+            DrawImpress,  3DObject,   visible ;
+            WriterAndWeb, Annotation, visible ;
+            WriterAndWeb, DrawText,   visible ;
+            WriterAndWeb, Table,      visible ;
+            WriterAndWeb, Text,       visible ;
+            WriterAndWeb, default,    visible ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -752,7 +752,7 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Writer,      Graphic,       visible ;
+            WriterAndWeb,      Graphic,       visible ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">

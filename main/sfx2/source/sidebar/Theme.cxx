@@ -358,30 +358,26 @@ void Theme::UpdateTheme (void)
             maPropertyIdToNameMap[Image_Expand],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/svtools/res/triangle_right_hc.png")
-                    : A2S("private:graphicrepository/svtools/res/triangle_right.png")));
-        //                    ? A2S("private:graphicrepository/res/plus_sch.png")
-        //                    : A2S("private:graphicrepository/res/plus.png")));
+                    ? A2S("private:graphicrepository/res/plus_sch.png")
+                    : A2S("private:graphicrepository/res/plus.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_Collapse],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/svtools/res/triangle_down_hc.png")
-                    : A2S("private:graphicrepository/svtools/res/triangle_down.png")));
-        //                    ? A2S("private:graphicrepository/res/minus_sch.png")
-        //                    : A2S("private:graphicrepository/res/minus.png")));
+                    ? A2S("private:graphicrepository/res/minus_sch.png")
+                    : A2S("private:graphicrepository/res/minus.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_TabBarMenu],
             Any(
                 mbIsHighContrastMode
                     ? A2S("private:graphicrepository/sfx2/res/menu_hc.png")
-                    : A2S("private:graphicrepository/sfx2/res/menu.png")));
+                    : A2S("private:graphicrepository/sfx2/res/symphony/open_more.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_PanelMenu],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/res/imh30823.png")
-                    : A2S("private:graphicrepository/res/im30823.png")));
+                    ? A2S("private:graphicrepository/sfx2/res/symphony/morebutton.png")
+                    : A2S("private:graphicrepository/sfx2/res/symphony/morebutton_h.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_Closer],
             Any(A2S("private:graphicrepository/sfx2/res/closedoc.png")));
