@@ -272,6 +272,11 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
     ]
+    SID_CHAR_DLG_EFFECT // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetMenuState ;
+    ]
     /* -> SVX
     SID_PARA_DLG // ole : no, status : ?
     [

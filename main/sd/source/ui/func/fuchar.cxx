@@ -26,7 +26,7 @@
 
 
 #include "fuchar.hxx"
-
+#include <svx/dialogs.hrc>
 #include <sfx2/viewfrm.hxx>
 
 #include <editeng/editdata.hxx>
@@ -87,6 +87,10 @@ void FuChar::DoExecute( SfxRequest& rReq )
 		SfxAbstractTabDialog* pDlg = pFact ? pFact->CreateSdTabCharDialog( NULL, &aNewAttr, mpDoc->GetDocSh() ) : 0;
 		if( pDlg )
 		{
+			if (rReq.GetSlot() == SID_CHAR_DLG_EFFECT)
+			{
+				pDlg->SetCurPageId(RID_SVXPAGE_CHAR_EFFECTS);
+			}
 			sal_uInt16 nResult = pDlg->Execute();
 
 			if( nResult == RET_OK )
