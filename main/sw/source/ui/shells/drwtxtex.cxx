@@ -286,6 +286,7 @@ void SwDrawTextShell::Execute( SfxRequest &rReq )
 		}
 		break;
 
+		case SID_CHAR_DLG_EFFECT: 
 		case SID_CHAR_DLG:
 		case SID_CHAR_DLG_FOR_PARAGRAPH:
 		{
@@ -317,6 +318,10 @@ void SwDrawTextShell::Execute( SfxRequest &rReq )
 
                 SfxAbstractTabDialog* pDlg = pFact->CreateSwCharDlg( pView->GetWindow(), *pView, aDlgAttr, DLG_CHAR,0, sal_True );
                 DBG_ASSERT(pDlg, "Dialogdiet fail!");
+				if (nSlot == SID_CHAR_DLG_EFFECT)
+				{
+					pDlg->SetCurPageId(TP_CHAR_EXT);
+				}
 				sal_uInt16 nRet = pDlg->Execute();
 				if(RET_OK == nRet )
                 {

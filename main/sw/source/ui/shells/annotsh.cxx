@@ -428,6 +428,7 @@ void SwAnnotationShell::Exec( SfxRequest &rReq )
 			delete pDialog;
 		}
 		break;
+		case SID_CHAR_DLG_EFFECT:
 		case SID_CHAR_DLG:
 		{
 			const SfxItemSet* pArgs = rReq.GetArgs();
@@ -452,6 +453,10 @@ void SwAnnotationShell::Exec( SfxRequest &rReq )
 
 				SfxAbstractTabDialog* pDlg = pFact->CreateSwCharDlg( rView.GetWindow(), rView, aDlgAttr, DLG_CHAR,0, sal_True );
 				DBG_ASSERT(pDlg, "Dialogdiet fail!");//CHINA001
+				if (nSlot == SID_CHAR_DLG_EFFECT)
+				{
+					pDlg->SetCurPageId(TP_CHAR_EXT);
+				}
 				sal_uInt16 nRet = pDlg->Execute();
 				if(RET_OK == nRet )
                 {
