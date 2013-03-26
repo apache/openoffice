@@ -244,11 +244,11 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
 
   //JIX save HANDLE KID
 
-  // Save en_US
+  // Save en-US
   {
     convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
 
-    savePo.startSave("en_US", sFileName);
+    savePo.startSave("en-US", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
@@ -429,7 +429,7 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     return;
   }
 
-  // Loop through all potential en_US entries
+  // Loop through all potential en-US entries
   for (iCandidate = -1, i = 0; i < iSize; ++i)
   {
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];

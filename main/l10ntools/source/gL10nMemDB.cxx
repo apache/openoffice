@@ -173,16 +173,16 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
   mbConvertMode = bConvert;
   miCurFileInx  = 0;
 
-  // With no languages selected only en_US is generated
+  // With no languages selected only en-US is generated
   if (!sLanguage.size())
   {
     miCurLangInx = 0;
     return;
   }
 
-  // en_US is loaded as master and cannot be loaded again
-  if (sLanguage == "en_US")
-    throw l10nMem::showError("en_US is loaded automatically");
+  // en-US is loaded as master and cannot be loaded again
+  if (sLanguage == "en-US")
+    throw l10nMem::showError("en-US is loaded automatically");
 
   // check if language is already loaded
   iSize = mcLangList.size();

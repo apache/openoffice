@@ -349,7 +349,7 @@ void handler::showManual()
     "genLang (c)2013 by Apache Software Foundation\n"
     "=============================================\n"
     "As part of the L10N framework for Apache Open Office (AOO),\n"
-    "genLang extracts en_US texts sources of the following types:\n"
+    "genLang extracts en-US texts sources of the following types:\n"
     "  .xrm, .xhp, .xcu, .xcs, .ulf, .tree, .src, .prop and .po\n"
     "and merges with .po files in different languages.\n"
     "genLang merges .po files with AOO sources to add languages.\n"
@@ -442,10 +442,10 @@ void handler::showManual()
 void handler::loadL10MEM()
 {
   std::string sMod  = msModuleName + ".po";
-  std::string sLoad = msPoDir + "en_US/";
+  std::string sLoad = msPoDir + "en-US/";
 
 
-  // load texts from en_US po file (master)
+  // load texts from en-US po file (master)
   {
     // tell system
     l10nMem::showDebug("gLang loading master text from file " + sLoad + sMod);

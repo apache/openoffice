@@ -58,7 +58,7 @@ void convert_db::execute()
     for (; (i = msFields[1].find('\\')) != std::string::npos;)
       msFields[1][i] = '/';
 
-    // handle en_US or lang
+    // handle en-US or lang
     mcMemory.loadEntryKey(miLineNo, msFields[1], newKey, msFields[10], msFields[10], false);
   }
 }
