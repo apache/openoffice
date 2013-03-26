@@ -32,14 +32,13 @@ PACKAGE=org.openoffice
 # --- Targets ------------------------------------------------------
 
 XCUFILES= \
-    FirstStartWizard.xcu \
     Inet.xcu \
-    Interaction.xcu \
     Setup.xcu \
     System.xcu \
-    UserProfile.xcu \
     VCL.xcu \
-
+    FirstStartWizard.xcu \
+    UserProfile.xcu \
+    Interaction.xcu
 
 MODULEFILES= \
     Inet-macosx.xcu \

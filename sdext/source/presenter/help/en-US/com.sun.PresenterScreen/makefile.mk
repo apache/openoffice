@@ -21,28 +21,27 @@
 
 
 
-# edit to match directory level 
-PRJ		= ..$/..$/..$/..
-# same for all makefiles in "helpcontent2"
-PRJNAME = helpcontent2
-# edit to match the current package
-PACKAGE = text/simpress/04
-# uniqe name (module wide);
-# using a modified form of package should do here
-TARGET  = text_simpress_04
-# edit to match the current module
-MODULE  = simpress
+PRJ=../../../../..
+PRJNAME=sdext
+TARGET=PresenterScreenHelp
+EXTNAME=PresenterScreen
 
-# --- Settings -----------------------------------------------------
+PACKAGE = com.sun.PresenterScreen
+
+# --- Settings ----------------------------------
 
 .INCLUDE : settings.mk
-.INCLUDE : $(PRJ)$/settings.pmk
 
-# this list matches the *.xhp files to process
-XHPFILES = \
-   01020000.xhp 
-	
-# --- Targets ------------------------------------------------------
+.IF "$(ENABLE_PRESENTER_SCREEN)" == "NO"
+do_nothing:
+	@echo "Presenter Screen build disabled."
+.ELSE
 
-.INCLUDE :  target.mk
+XHPFILES= \
+	presenter.xhp
+
+
+.INCLUDE : target.mk
 .INCLUDE : tg_help.mk
+
+.ENDIF
