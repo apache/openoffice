@@ -269,13 +269,6 @@ LINKLINKFILES= \
    text$/simpress$/guide$/table_insert.xhp \
    text$/simpress$/guide$/text2curve.xhp \
    text$/simpress$/guide$/vectorize.xhp \
-   text$/simpress$/minimizer$/main.xhp \
-   text$/simpress$/minimizer$/step1.xhp \
-   text$/simpress$/minimizer$/step2.xhp \
-   text$/simpress$/minimizer$/step3.xhp \
-   text$/simpress$/minimizer$/step4.xhp \
-   text$/simpress$/minimizer$/step5.xhp \
-   text$/simpress$/minimizer$/infobox.xhp \
    text$/simpress$/main0000.xhp \
    text$/simpress$/main0100.xhp \
    text$/simpress$/main0101.xhp \
