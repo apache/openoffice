@@ -20,64 +20,23 @@
  *************************************************************/
 
 #include "precompiled_svx.hxx"
+#include "TextCharacterSpacingControl.hxx"
+#include "TextPropertyPanel.hrc"
+#include <sfx2/sidebar/propertypanel.hrc>
+#include <svx/dialogs.hrc>
+#include <svx/dialmgr.hxx>
+#include <unotools/viewoptions.hxx>
+#include <editeng/kernitem.hxx>
+#include <sfx2/bindings.hxx>
+#include <sfx2/dispatch.hxx>
+#include <sfx2/sidebar/Theme.hxx>
 
-namespace sidebar {
-
-class SvxTextPropertyPage::SvxTextSpacingPage:public SfxPopupPage
-{
-public:
-	SvxTextSpacingPage(Window* pParent, SvxTextPropertyPage* pPage);
-	~SvxTextSpacingPage();
-	void GetFocus();
-	void SetControlState(bool bLBAvailable,bool bAvailable, long nKerning);
-	virtual void Paint(const Rectangle& rect);
-	//add 
-	short GetLastCustomState();
-	long  GetLastCustomValue();
-	//add end
-
-private:	
-	SvxTextPropertyPage* mpPage;
-	SfxBindings*		mpBindings;
-
-	SvxValueSetCustom	maVSSpacing;
-
-	FixedText			maLastCus;
-//	Control				maBorder;
-
-	FixedText			maFTSpacing;
-	ListBox				maLBKerning;
-	FixedText			maFTBy;
-	MetricField			maEditKerning;
-
-	Image*				mpImg;
-	Image*				mpImgSel;
-	XubString*			mpStr;
-	XubString*			mpStrTip;
-
-	Image				maImgCus;
-	Image				maImgCusGrey;
-	XubString			maStrCus;
-	XubString			maStrCusE;		//add 
-	XubString			maStrCusC;		//add 
-	XubString			maStrCusN;		//add 
-	XubString			maStrUnit;		//add 
-
-	long				mnCustomKern;
-	short				mnLastCus;		
-	bool				mbCusEnable;
-	bool				mbVS;
-
-	void initial();
-	DECL_LINK(VSSelHdl, void*);
-	DECL_LINK(KerningSelectHdl, ListBox*);
-	DECL_LINK(KerningModifyHdl,  MetricField*);
-};
-SvxTextPropertyPage::SvxTextSpacingPage::SvxTextSpacingPage(Window* pParent, SvxTextPropertyPage* pPage)
-:	SfxPopupPage( pParent,SVX_RES(RID_POPUPPANEL_TEXTPAGE_SPACING))
-,	mpPage(pPage)
+namespace svx { namespace sidebar {
+TextCharacterSpacingControl::TextCharacterSpacingControl(Window* pParent, svx::sidebar::TextPropertyPanel& rPanel)
+:	PopupControl( pParent,SVX_RES(RID_POPUPPANEL_TEXTPAGE_SPACING))
+,	mrTextPropertyPanel(rPanel)
 ,	mpBindings(NULL)
-,	maVSSpacing		(this, SVX_RES(VS_SPACING))
+,	maVSSpacing		(ValueSetWithTextControl::IMAGE_TEXT,this, SVX_RES(VS_SPACING))
 ,	maLastCus		(this, SVX_RES(FT_LASTCUSTOM))
 //,	maBorder		(this, SVX_RES(CT_BORDER))
 ,	maFTSpacing		(this, SVX_RES(FT_SPACING))
@@ -105,24 +64,23 @@ SvxTextPropertyPage::SvxTextSpacingPage::SvxTextSpacingPage(Window* pParent, Svx
 {
 	initial();
 	FreeResource();
-	if (mpPage)
-		mpBindings = mpPage->GetBindings();
-	Link aLink = LINK(this, SvxTextSpacingPage, KerningSelectHdl);
+	mpBindings = mrTextPropertyPanel.GetBindings();
+	Link aLink = LINK(this, TextCharacterSpacingControl, KerningSelectHdl);
 	maLBKerning.SetSelectHdl(aLink);
-	aLink =LINK(this, SvxTextSpacingPage, KerningModifyHdl);
+	aLink =LINK(this, TextCharacterSpacingControl, KerningModifyHdl);
 	maEditKerning.SetModifyHdl(aLink);
 
 }
-SvxTextPropertyPage::SvxTextSpacingPage::~SvxTextSpacingPage()
+TextCharacterSpacingControl::~TextCharacterSpacingControl()
 {
 	delete[] mpImg;
 	delete[] mpImgSel;
 	delete[] mpStr;
 	delete[] mpStrTip;
 }
-void SvxTextPropertyPage::SvxTextSpacingPage::Paint(const Rectangle& rect)
+/*void TextCharacterSpacingControl::Paint(const Rectangle& rect)
 {
-	SfxPopupPage::Paint(rect);
+	svx::sidebar::PopupControl::Paint(rect);
 	Color aOldLineColor = GetLineColor();
 	Color aOldFillColor = GetFillColor();
 
@@ -155,18 +113,28 @@ void SvxTextPropertyPage::SvxTextSpacingPage::Paint(const Rectangle& rect)
 
 	SetLineColor(aOldLineColor);
 	SetFillColor(aOldFillColor);
-}
-void SvxTextPropertyPage::SvxTextSpacingPage::initial()
+}*/
+void TextCharacterSpacingControl::initial()
 {
 	maVSSpacing.SetStyle( maVSSpacing.GetStyle()| WB_3DLOOK |  WB_NO_DIRECTSELECT  );
 	//for high contract
-	if(GetSettings().GetStyleSettings().GetHighContrastMode())
+	//if(GetSettings().GetStyleSettings().GetHighContrastMode())
 	{
-		maVSSpacing.SetControlBackground(GetSettings().GetStyleSettings().GetMenuColor());
-		maVSSpacing.SetColor(GetSettings().GetStyleSettings().GetMenuColor());
-		maVSSpacing.SetBackground(GetSettings().GetStyleSettings().GetMenuColor());
-		maFTSpacing.SetBackground(GetSettings().GetStyleSettings().GetMenuColor());
-		maFTBy.SetBackground(GetSettings().GetStyleSettings().GetMenuColor());
+		maVSSpacing.SetControlBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
+		GetSettings().GetStyleSettings().GetMenuColor():
+		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+		maVSSpacing.SetColor(GetSettings().GetStyleSettings().GetHighContrastMode()?
+		GetSettings().GetStyleSettings().GetMenuColor():
+		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+		maVSSpacing.SetBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
+		GetSettings().GetStyleSettings().GetMenuColor():
+		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+		maFTSpacing.SetBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
+		GetSettings().GetStyleSettings().GetMenuColor():
+		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+		maFTBy.SetBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
+		GetSettings().GetStyleSettings().GetMenuColor():
+		sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
 	}
 	mpImg = new Image[5];
 	mpImg[0] = Image(SVX_RES(IMG_VERY_TIGHT));
@@ -188,7 +156,7 @@ void SvxTextPropertyPage::SvxTextSpacingPage::initial()
 	mpStr[2] = XubString(SVX_RES(STR_NORMAL));
 	mpStr[3] = XubString(SVX_RES(STR_LOOSE));
 	mpStr[4] = XubString(SVX_RES(STR_VERY_LOOSE));
-	maVSSpacing.InsertItemSet(5, mpImg, mpImgSel,mpStr);
+	
 
 	mpStrTip = new XubString[5];
 	mpStrTip[0] = XubString(SVX_RES(STR_VERY_TIGHT_TIP));
@@ -196,26 +164,30 @@ void SvxTextPropertyPage::SvxTextSpacingPage::initial()
 	mpStrTip[2] = XubString(SVX_RES(STR_NORMAL_TIP));
 	mpStrTip[3] = XubString(SVX_RES(STR_LOOSE_TIP));
 	mpStrTip[4] = XubString(SVX_RES(STR_VERY_LOOSE_TIP));
-	maVSSpacing.SetDefaultTip(mpStr);	//modify
-	maVSSpacing.SetDefaultTip(mpStrTip, TRUE); //Add
+	//maVSSpacing.SetDefaultTip(mpStr);	//modify
+	//maVSSpacing.SetDefaultTip(mpStrTip, TRUE); //Add
+
+	for (int i=0;i<5;i++)
+		maVSSpacing.AddItem(mpImg[i], &mpImgSel[i],mpStr[i],&mpStrTip[i]);
 
 	maVSSpacing.InsertCustom(maImgCus, maImgCusGrey, maStrCus);
 	maVSSpacing.SetCustomTip(maStrCus); //Add
 
 	maVSSpacing.SetSelItem(0);			
-	Link aLink = LINK(this, SvxTextSpacingPage,VSSelHdl );
+	Link aLink = LINK(this, TextCharacterSpacingControl,VSSelHdl );
 	maVSSpacing.SetSelectHdl(aLink);
 	maVSSpacing.StartSelection();
 	maVSSpacing.Show();
 }
-void SvxTextPropertyPage::SvxTextSpacingPage::GetFocus()
+void TextCharacterSpacingControl::ToGetFocus()
 {
 	if(!mbVS)
 		maLBKerning.GrabFocus();
 	else
 		maVSSpacing.GrabFocus();
 }
-void SvxTextPropertyPage::SvxTextSpacingPage::SetControlState(bool bLBAvailable,bool bAvailable, long nKerning)
+
+void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, long nKerning)
 {
 	mbVS = true;
 	maVSSpacing.SetSelItem(0);
@@ -241,7 +213,7 @@ void SvxTextPropertyPage::SvxTextSpacingPage::SetControlState(bool bLBAvailable,
 	if( !mnLastCus ) 
 	{
 		maVSSpacing.SetCusEnable(false);
-		maVSSpacing.SetCustomTip(maStrCus,TRUE);  //LAST CUSTOM no tip defect //add 
+		maVSSpacing.SetCustomTip(maStrCus,true);  //LAST CUSTOM no tip defect //add 
 	}
 	else
 	{
@@ -251,22 +223,22 @@ void SvxTextPropertyPage::SvxTextSpacingPage::SetControlState(bool bLBAvailable,
 		{	
 			String aStrTip( maStrCusE);   //LAST CUSTOM no tip defect //add 
 			aStrTip.Append( String::CreateFromDouble( (double)mnCustomKern / 10));
-			//aStrTip.Append(String("pt", 2, RTL_TEXTENCODING_ASCII_US));
+			aStrTip.Append(String("pt", 2, RTL_TEXTENCODING_ASCII_US));
 			aStrTip.Append(maStrUnit);		// modify 
-			maVSSpacing.SetCustomTip(aStrTip,TRUE);
+			maVSSpacing.SetCustomTip(aStrTip,true);
 		}
 		else if(mnCustomKern < 0)
 		{	
 			String aStrTip(maStrCusC) ;		//LAST CUSTOM no tip defect //add 
 			aStrTip.Append( String::CreateFromDouble( (double)-mnCustomKern / 10));
-			//aStrTip.Append(String("pt", 2, RTL_TEXTENCODING_ASCII_US));
+			aStrTip.Append(String("pt", 2, RTL_TEXTENCODING_ASCII_US));
 			aStrTip.Append(maStrUnit);		// modify 
-			maVSSpacing.SetCustomTip(aStrTip,TRUE);
+			maVSSpacing.SetCustomTip(aStrTip,true);
 		}	
 		else
 		{	
 			String aStrTip(maStrCusN) ;		//LAST CUSTOM no tip defect //add 
-			maVSSpacing.SetCustomTip(aStrTip,TRUE);
+			maVSSpacing.SetCustomTip(aStrTip,true);
 		}
 		
 	}
@@ -275,10 +247,8 @@ void SvxTextPropertyPage::SvxTextSpacingPage::SetControlState(bool bLBAvailable,
 	{
 		maLBKerning.Enable();
 		maFTSpacing.Enable();
-
-		if(mpPage == NULL)
-			return;
-		SfxMapUnit eUnit = mpPage->GetSpaceController().GetCoreMetric();
+		
+		SfxMapUnit eUnit = mrTextPropertyPanel.GetSpaceController().GetCoreMetric();
         MapUnit eOrgUnit = (MapUnit)eUnit;
         MapUnit ePntUnit( MAP_POINT );			
         long nBig = maEditKerning.Normalize(nKerning);
@@ -312,7 +282,7 @@ void SvxTextPropertyPage::SvxTextSpacingPage::SetControlState(bool bLBAvailable,
             maEditKerning.Enable();
             maEditKerning.SetValue( -nKerning );
             maLBKerning.SelectEntryPos( SIDEBAR_SPACE_CONDENSED );
-            long nMax = mpPage->GetSelFontSize()/6;
+            long nMax = mrTextPropertyPanel.GetSelFontSize()/6;
             maEditKerning.SetMax( maEditKerning.Normalize( nMax ), FUNIT_POINT );
             maEditKerning.SetLast( maEditKerning.GetMax( maEditKerning.GetUnit() ) );
 			if( nKerning == -30 )
@@ -367,15 +337,15 @@ void SvxTextPropertyPage::SvxTextSpacingPage::SetControlState(bool bLBAvailable,
 	maVSSpacing.Format();
 	maVSSpacing.StartSelection();
 }
-IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
+IMPL_LINK(TextCharacterSpacingControl, VSSelHdl, void *, pControl)
 {
-//	mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
+	mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 
 	if(pControl == &maVSSpacing)  
 	{		
-		USHORT iPos = maVSSpacing.GetSelectItemId();
+		sal_uInt16 iPos = maVSSpacing.GetSelectItemId();
 		short nKern = 0;
-		SfxMapUnit eUnit = mpPage->GetSpaceController().GetCoreMetric();
+		SfxMapUnit eUnit = mrTextPropertyPanel.GetSpaceController().GetCoreMetric();
 		long nVal = 0;
 		if(iPos == 1)
 		{
@@ -383,7 +353,7 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
 			nKern = (short)maEditKerning.Denormalize(nVal);
 			SvxKerningItem aKernItem(-nKern, SID_ATTR_CHAR_KERNING);
 			mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_KERNING, SFX_CALLMODE_RECORD, &aKernItem, 0L);
-			mpPage->SetSpacing(-nKern);
+			mrTextPropertyPanel.SetSpacing(-nKern);
 			mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 		}
 		else if(iPos == 2)
@@ -392,14 +362,14 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
 			nKern = (short)maEditKerning.Denormalize(nVal);
 			SvxKerningItem aKernItem(-nKern, SID_ATTR_CHAR_KERNING);
 			mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_KERNING, SFX_CALLMODE_RECORD, &aKernItem, 0L);
-			mpPage->SetSpacing(-nKern);
+			mrTextPropertyPanel.SetSpacing(-nKern);
 			mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 		}
 		else if(iPos == 3)
 		{
 			SvxKerningItem aKernItem(0, SID_ATTR_CHAR_KERNING);
 			mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_KERNING, SFX_CALLMODE_RECORD, &aKernItem, 0L);
-			mpPage->SetSpacing(0);
+			mrTextPropertyPanel.SetSpacing(0);
 			mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 		}
 		else if(iPos == 4)
@@ -408,7 +378,7 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
 			nKern = (short)maEditKerning.Denormalize(nVal);
 			SvxKerningItem aKernItem(nKern, SID_ATTR_CHAR_KERNING);
 			mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_KERNING, SFX_CALLMODE_RECORD, &aKernItem, 0L);
-			mpPage->SetSpacing(nKern);
+			mrTextPropertyPanel.SetSpacing(nKern);
 			mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 		}
 		else if(iPos == 5)
@@ -417,7 +387,7 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
 			nKern = (short)maEditKerning.Denormalize(nVal);
 			SvxKerningItem aKernItem(nKern, SID_ATTR_CHAR_KERNING);
 			mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_KERNING, SFX_CALLMODE_RECORD, &aKernItem, 0L);
-			mpPage->SetSpacing(nKern);
+			mrTextPropertyPanel.SetSpacing(nKern);
 			mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 		}
 		else if(iPos == 6)
@@ -429,7 +399,7 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
 				nKern = (short)maEditKerning.Denormalize(nVal);
 				SvxKerningItem aKernItem(nKern , SID_ATTR_CHAR_KERNING);
 				mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_KERNING, SFX_CALLMODE_RECORD, &aKernItem, 0L);
-				mpPage->SetSpacing(nKern);
+				mrTextPropertyPanel.SetSpacing(nKern);
 				mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 			}
 			else
@@ -443,8 +413,7 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
 		}
 		
 		if(iPos < 6 || (iPos == 6 && mbCusEnable)) //add 
-			if (mpPage->GetSpacingFloatWin()->IsInPopupMode() )
-				mpPage->GetSpacingFloatWin()->EndPopupMode();
+			mrTextPropertyPanel.EndSpacingPopupMode();
 	}
 
 
@@ -452,7 +421,7 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, VSSelHdl, void *, pControl)
 	return 0;
 }
 
-IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, KerningSelectHdl, ListBox*, EMPTYARG)
+IMPL_LINK(TextCharacterSpacingControl, KerningSelectHdl, ListBox*, EMPTYARG)
 {
 	if ( maLBKerning.GetSelectEntryPos() > 0 )
 	{
@@ -476,7 +445,7 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, KerningSelectHdl, ListBox*, E
 	KerningModifyHdl( NULL );
 	return 0;
 }
-IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, KerningModifyHdl, MetricField*, EMPTYARG)
+IMPL_LINK(TextCharacterSpacingControl, KerningModifyHdl, MetricField*, EMPTYARG)
 {
 	if(maVSSpacing.GetSelItem())
 	{
@@ -485,16 +454,16 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, KerningModifyHdl, MetricField
 		Invalidate();
 		maVSSpacing.StartSelection();
 	}
-	USHORT nPos = maLBKerning.GetSelectEntryPos();
+	sal_uInt16 nPos = maLBKerning.GetSelectEntryPos();
     short nKern = 0;
-    SfxMapUnit eUnit = mpPage->GetSpaceController().GetCoreMetric();
+    SfxMapUnit eUnit = mrTextPropertyPanel.GetSpaceController().GetCoreMetric();
 	mnLastCus = SPACING_CLOSE_BY_CUS_EDIT; 
 	if ( nPos == SIDEBAR_SPACE_EXPAND || nPos == SIDEBAR_SPACE_CONDENSED )
     {
         long nTmp = static_cast<long>(maEditKerning.GetValue());
         if ( nPos == SIDEBAR_SPACE_CONDENSED )
 		{
-			long nMax =  mpPage->GetSelFontSize()/6;
+			long nMax =  mrTextPropertyPanel.GetSelFontSize()/6;
 			maEditKerning.SetMax( maEditKerning.Normalize( nMax ), FUNIT_TWIP );
 			maEditKerning.SetLast( maEditKerning.GetMax( maEditKerning.GetUnit() ) );
 			if(nTmp > maEditKerning.GetMax())
@@ -521,16 +490,16 @@ IMPL_LINK(SvxTextPropertyPage::SvxTextSpacingPage, KerningModifyHdl, MetricField
 	}
 	SvxKerningItem aKernItem(nKern, SID_ATTR_CHAR_KERNING);
 	mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_KERNING, SFX_CALLMODE_RECORD, &aKernItem, 0L);
-	mpPage->SetSpacing(nKern);
+	mrTextPropertyPanel.SetSpacing(nKern);
 	return 0;
 }
-short  SvxTextPropertyPage::SvxTextSpacingPage::GetLastCustomState()
+short  TextCharacterSpacingControl::GetLastCustomState()
 {
 	return mnLastCus;
 }
-long  SvxTextPropertyPage::SvxTextSpacingPage::GetLastCustomValue()
+long  TextCharacterSpacingControl::GetLastCustomValue()
 {
 	return mnCustomKern;
 }
 
-} // end of namespace sidebar
+}} // end of namespace sidebar
