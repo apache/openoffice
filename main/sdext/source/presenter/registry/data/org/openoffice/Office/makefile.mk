@@ -21,28 +21,24 @@
 
 
 
-# edit to match directory level 
-PRJ		= ..$/..$/..$/..
-# same for all makefiles in "helpcontent2"
-PRJNAME = helpcontent2
-# edit to match the current package
-PACKAGE = text/simpress/04
-# uniqe name (module wide);
-# using a modified form of package should do here
-TARGET  = text_simpress_04
-# edit to match the current module
-MODULE  = simpress
+PRJ=..$/..$/..$/..$/..$/..$/..
 
-# --- Settings -----------------------------------------------------
+PRJNAME=sdext
+TARGET=data_ooOffice
+PACKAGE=org.openoffice.Office
+EXTNAME=presenter
 
-.INCLUDE : settings.mk
-.INCLUDE : $(PRJ)$/settings.pmk
+.INCLUDE :  settings.mk
+.INCLUDE :  $(PRJ)$/util$/makefile.pmk
 
-# this list matches the *.xhp files to process
-XHPFILES = \
-   01020000.xhp 
-	
 # --- Targets ------------------------------------------------------
 
+XCUFILES=				\
+	Jobs.xcu			\
+    ProtocolHandler.xcu
+
+MODULEFILES=
+
+LOCALIZEDFILES=
+
 .INCLUDE :  target.mk
-.INCLUDE : tg_help.mk
