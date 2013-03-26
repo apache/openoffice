@@ -78,47 +78,10 @@ TextCharacterSpacingControl::~TextCharacterSpacingControl()
 	delete[] mpStr;
 	delete[] mpStrTip;
 }
-/*void TextCharacterSpacingControl::Paint(const Rectangle& rect)
-{
-	svx::sidebar::PopupControl::Paint(rect);
-	Color aOldLineColor = GetLineColor();
-	Color aOldFillColor = GetFillColor();
 
-	//Point aPos = maBorder.GetPosPixel();	
-	//Size aSize = maBorder.GetSizePixel();
-	Point aPos( LogicToPixel( Point( CUSTOM_X, CUSTOM_Y), MAP_APPFONT ));
-	Size aSize( LogicToPixel( Size(  CUSTOM_WIDTH, CUSTOM_HEIGHT ), MAP_APPFONT ));
-	Rectangle aRect( aPos, aSize );
-	aRect.Left() -= 1;
-	aRect.Top() -= 1;
-	aRect.Right() += 1;
-	aRect.Bottom() += 1;
-
-
-	Color aLineColor(189,201,219);
-	if(!GetSettings().GetStyleSettings().GetHighContrastMode())
-		SetLineColor(aLineColor);
-	else
-		SetLineColor(GetSettings().GetStyleSettings().GetShadowColor());
-	SetFillColor(COL_TRANSPARENT);
-	//add  for high contract
-	//if(GetSettings().GetStyleSettings().GetHighContrastMode())
-	//{
-	//	maBorder.SetBackground(GetSettings().GetStyleSettings().GetMenuColor());
-	//	maFTSpacing.SetBackground(GetSettings().GetStyleSettings().GetMenuColor());
-	//	maFTBy.SetBackground(GetSettings().GetStyleSettings().GetMenuColor());
-	//}
-	DrawRect(aRect);
-
-
-	SetLineColor(aOldLineColor);
-	SetFillColor(aOldFillColor);
-}*/
 void TextCharacterSpacingControl::initial()
 {
 	maVSSpacing.SetStyle( maVSSpacing.GetStyle()| WB_3DLOOK |  WB_NO_DIRECTSELECT  );
-	//for high contract
-	//if(GetSettings().GetStyleSettings().GetHighContrastMode())
 	{
 		maVSSpacing.SetControlBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
 		GetSettings().GetStyleSettings().GetMenuColor():
@@ -164,16 +127,13 @@ void TextCharacterSpacingControl::initial()
 	mpStrTip[2] = XubString(SVX_RES(STR_NORMAL_TIP));
 	mpStrTip[3] = XubString(SVX_RES(STR_LOOSE_TIP));
 	mpStrTip[4] = XubString(SVX_RES(STR_VERY_LOOSE_TIP));
-	//maVSSpacing.SetDefaultTip(mpStr);	//modify
-	//maVSSpacing.SetDefaultTip(mpStrTip, TRUE); //Add
 
 	for (int i=0;i<5;i++)
 		maVSSpacing.AddItem(mpImg[i], &mpImgSel[i],mpStr[i],&mpStrTip[i]);
 
-	maVSSpacing.InsertCustom(maImgCus, maImgCusGrey, maStrCus);
-	maVSSpacing.SetCustomTip(maStrCus); //Add
+    maVSSpacing.AddItem( maImgCus, 0, maStrCus, 0 );
 
-	maVSSpacing.SetSelItem(0);			
+    maVSSpacing.SetNoSelection();
 	Link aLink = LINK(this, TextCharacterSpacingControl,VSSelHdl );
 	maVSSpacing.SetSelectHdl(aLink);
 	maVSSpacing.StartSelection();
@@ -190,7 +150,7 @@ void TextCharacterSpacingControl::ToGetFocus()
 void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, long nKerning)
 {
 	mbVS = true;
-	maVSSpacing.SetSelItem(0);
+    maVSSpacing.SetNoSelection();
 	SvtViewOptions aWinOpt( E_WINDOW, SIDEBAR_SPACING_GLOBAL_VALUE );
     if ( aWinOpt.Exists() )
 	{
@@ -212,33 +172,30 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 
 	if( !mnLastCus ) 
 	{
-		maVSSpacing.SetCusEnable(false);
-		maVSSpacing.SetCustomTip(maStrCus,true);  //LAST CUSTOM no tip defect //add 
+		maVSSpacing.ReplaceItemImages(6, maImgCusGrey,0);
 	}
 	else
 	{
 		//set custom tips
-		maVSSpacing.SetCusEnable(true);
+		maVSSpacing.ReplaceItemImages(6, maImgCus,0);
 		if(mnCustomKern > 0)
 		{	
 			String aStrTip( maStrCusE);   //LAST CUSTOM no tip defect //add 
 			aStrTip.Append( String::CreateFromDouble( (double)mnCustomKern / 10));
-			aStrTip.Append(String("pt", 2, RTL_TEXTENCODING_ASCII_US));
 			aStrTip.Append(maStrUnit);		// modify 
-			maVSSpacing.SetCustomTip(aStrTip,true);
+			maVSSpacing.SetItemText(6,aStrTip);
 		}
 		else if(mnCustomKern < 0)
 		{	
 			String aStrTip(maStrCusC) ;		//LAST CUSTOM no tip defect //add 
 			aStrTip.Append( String::CreateFromDouble( (double)-mnCustomKern / 10));
-			aStrTip.Append(String("pt", 2, RTL_TEXTENCODING_ASCII_US));
 			aStrTip.Append(maStrUnit);		// modify 
-			maVSSpacing.SetCustomTip(aStrTip,true);
+			maVSSpacing.SetItemText( 6, aStrTip );
 		}	
 		else
 		{	
 			String aStrTip(maStrCusN) ;		//LAST CUSTOM no tip defect //add 
-			maVSSpacing.SetCustomTip(aStrTip,true);
+			maVSSpacing.SetItemText( 6, aStrTip );
 		}
 		
 	}
@@ -264,15 +221,15 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
             maLBKerning.SelectEntryPos( SIDEBAR_SPACE_EXPAND );
 			if(nKerning == 30)
 			{
-				maVSSpacing.SetSelItem(4);
+				maVSSpacing.SelectItem(4);
 			}
 			else if(nKerning == 60)
 			{
-				maVSSpacing.SetSelItem(5);
+				maVSSpacing.SelectItem(5);
 			}
 			else
 			{
-				maVSSpacing.SetSelItem(0);
+				maVSSpacing.SetNoSelection();
 				mbVS = false;
 			}
         }
@@ -287,21 +244,21 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
             maEditKerning.SetLast( maEditKerning.GetMax( maEditKerning.GetUnit() ) );
 			if( nKerning == -30 )
 			{
-				maVSSpacing.SetSelItem(1);
+				maVSSpacing.SelectItem(1);
 			}
 			else if( nKerning == -15 )
 			{
-				maVSSpacing.SetSelItem(2);
+				maVSSpacing.SelectItem(2);
 			}
 			else
 			{
-				maVSSpacing.SetSelItem(0);
+				maVSSpacing.SetNoSelection();
 				mbVS = false;
 			}
         }
         else
         {
-			maVSSpacing.SetSelItem(3);
+			maVSSpacing.SelectItem(3);
 			maLBKerning.SelectEntryPos( SIDEBAR_SPACE_NORMAL );
 			maFTBy.Disable();
             maEditKerning.Disable();
@@ -313,7 +270,7 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 	else if(bLBAvailable && !bAvailable)
 	{	
 		//modified 
-		maVSSpacing.SetSelItem(0);
+		maVSSpacing.SetNoSelection();
 		mbVS = false;
 		maLBKerning.Enable();
 		maFTSpacing.Enable();
@@ -324,7 +281,7 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 	}
 	else
 	{
-		maVSSpacing.SetSelItem(0);
+		maVSSpacing.SetNoSelection();
 		mbVS = false;
 		maEditKerning.SetText(String());
         maLBKerning.SetNoSelection();
@@ -435,9 +392,9 @@ IMPL_LINK(TextCharacterSpacingControl, KerningSelectHdl, ListBox*, EMPTYARG)
 		maEditKerning.Disable();
 	}
 
-	if(maVSSpacing.GetSelItem())
+    if ( maVSSpacing.GetSelectItemId() > 0 )
 	{
-		maVSSpacing.SetSelItem(0);	//modify 
+		maVSSpacing.SetNoSelection();	//modify 
 		maVSSpacing.Format();
 		Invalidate();
 		maVSSpacing.StartSelection();
@@ -447,9 +404,9 @@ IMPL_LINK(TextCharacterSpacingControl, KerningSelectHdl, ListBox*, EMPTYARG)
 }
 IMPL_LINK(TextCharacterSpacingControl, KerningModifyHdl, MetricField*, EMPTYARG)
 {
-	if(maVSSpacing.GetSelItem())
+    if ( maVSSpacing.GetSelectItemId() > 0 )
 	{
-		maVSSpacing.SetSelItem(0);	//modify 
+		maVSSpacing.SetNoSelection();	//modify 
 		maVSSpacing.Format();
 		Invalidate();
 		maVSSpacing.StartSelection();
