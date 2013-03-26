@@ -45,23 +45,23 @@
       </node>
 
       <node oor:name="GalleryDeck" oor:op="replace">
-	<prop oor:name="Title" oor:type="xs:string">
+        <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Gallery</value>
-	</prop>
-	<prop oor:name="Id" oor:type="xs:string">
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
           <value>GalleryDeck</value>
-	</prop>
-	<prop oor:name="IconURL" oor:type="xs:string">
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
           <value>private:graphicrepository/sfx2/res/symphony/sidebar-gallery-large.png</value>
-	</prop>
+        </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
             any, any, visible ;
           </value>
         </prop>
-	<prop oor:name="OrderIndex" oor:type="xs:int">
+        <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>150</value>
-	</prop>
+        </prop>
       </node>
 
       <node oor:name="ImpressMasterPagesDeck" oor:op="replace">
@@ -121,6 +121,26 @@
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>400</value>
+        </prop>
+      </node>
+
+      <node oor:name="NavigatorDeck" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Navigator</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>NavigatorDeck</value>
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-navigator-large.png</value>
+        </prop>
+        <prop oor:name="ContextList">
+          <value oor:separator=";">
+            any, any, visible ;
+          </value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>150</value>
         </prop>
       </node>
 
@@ -307,26 +327,29 @@
       </node>
 
       <node oor:name="GalleryPanel" oor:op="replace">
-	<prop oor:name="Title" oor:type="xs:string">
+        <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Gallery</value>
-	</prop>
-	<prop oor:name="Id" oor:type="xs:string">
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
           <value>GalleryPanel</value>
-	</prop>
-	<prop oor:name="DeckId" oor:type="xs:string">
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
           <value>GalleryDeck</value>
-	</prop>
+        </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
             any, any, visible ;
           </value>
         </prop>
-	<prop oor:name="ImplementationURL" oor:type="xs:string">
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
           <value>private:resource/toolpanel/SvxPanelFactory/GalleryPanel</value>
-	</prop>
-	<prop oor:name="OrderIndex" oor:type="xs:int">
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>100</value>
-	</prop>
+        </prop>
       </node>
 
       <node oor:name="PosSizePropertyPanel" oor:op="replace">
@@ -760,6 +783,32 @@
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>300</value>
+        </prop>
+      </node>
+
+      <node oor:name="SdNavigatorPanel" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Navigator</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>SdNavigatorPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>NavigatorDeck</value>
+        </prop>
+        <prop oor:name="ContextList">
+          <value oor:separator=";">
+            DrawImpress, any, visible ;
+          </value>
+        </prop>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SdPanelFactory/Navigator</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
         </prop>
       </node>
 

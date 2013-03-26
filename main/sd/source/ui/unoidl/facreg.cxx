@@ -140,11 +140,11 @@ extern uno::Sequence<OUString> SAL_CALL PresentationFactoryProvider_getSupported
 
 namespace sd { namespace sidebar {
 
-extern uno::Reference<uno::XInterface> SAL_CALL SidebarFactory_createInstance(
+extern uno::Reference<uno::XInterface> SAL_CALL PanelFactory_createInstance(
     const uno::Reference<uno::XComponentContext>& rxContext)
     throw(uno::Exception);
-extern OUString SidebarFactory_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL SidebarFactory_getSupportedServiceNames (void)
+extern OUString PanelFactory_getImplementationName(void) throw (uno::RuntimeException);
+extern uno::Sequence<OUString> SAL_CALL PanelFactory_getSupportedServiceNames (void)
     throw (uno::RuntimeException);
 
 } }
@@ -229,7 +229,7 @@ enum FactoryId
     BasicPaneFactoryFactoryId,
     BasicToolBarFactoryFactoryId,
     BasicViewFactoryFactoryId,
-    SidebarFactoryFactoryId,
+    PanelFactoryFactoryId,
     ResourceIdFactoryId,
     PresentationFactoryProviderFactoryId,
     SlideRendererFactoryId,
@@ -262,7 +262,7 @@ static ::boost::shared_ptr<FactoryMap> spFactoryMap;
         (*spFactoryMap)[BasicPaneFactory_getImplementationName()] = BasicPaneFactoryFactoryId;
         (*spFactoryMap)[BasicToolBarFactory_getImplementationName()] = BasicToolBarFactoryFactoryId;
         (*spFactoryMap)[BasicViewFactory_getImplementationName()] = BasicViewFactoryFactoryId;
-        (*spFactoryMap)[sidebar::SidebarFactory_getImplementationName()] = SidebarFactoryFactoryId;
+        (*spFactoryMap)[sidebar::PanelFactory_getImplementationName()] = PanelFactoryFactoryId;
         (*spFactoryMap)[ResourceId_getImplementationName()] = ResourceIdFactoryId;
         (*spFactoryMap)[PresentationFactoryProvider_getImplementationName()] = PresentationFactoryProviderFactoryId;
         (*spFactoryMap)[SlideRenderer_getImplementationName()] = SlideRendererFactoryId;
@@ -392,11 +392,11 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
                         sd::framework::BasicViewFactory_getSupportedServiceNames());
                     break;
 
-                case SidebarFactoryFactoryId:
+                case PanelFactoryFactoryId:
                     xComponentFactory = ::cppu::createSingleComponentFactory(
-                        sd::sidebar::SidebarFactory_createInstance,
-                        sd::sidebar::SidebarFactory_getImplementationName(),
-                        sd::sidebar::SidebarFactory_getSupportedServiceNames());
+                        sd::sidebar::PanelFactory_createInstance,
+                        sd::sidebar::PanelFactory_getImplementationName(),
+                        sd::sidebar::PanelFactory_getSupportedServiceNames());
                     break;
 
                 case ResourceIdFactoryId:
