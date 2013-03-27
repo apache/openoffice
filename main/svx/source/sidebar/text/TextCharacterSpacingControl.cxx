@@ -211,9 +211,9 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
         long nBig = maEditKerning.Normalize(nKerning);
         nKerning = LogicToLogic( nBig, eOrgUnit, ePntUnit );
 
-		if ( nKerning > 0 )
+        if ( nKerning > 0 )
         {
-			maFTBy.Enable();
+            maFTBy.Enable();
             maEditKerning.Enable();
             maEditKerning.SetMax( 9999 );
             maEditKerning.SetLast( 9999 );
@@ -229,7 +229,8 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 			}
 			else
 			{
-				maVSSpacing.SetNoSelection();
+                maVSSpacing.SetNoSelection();
+                maVSSpacing.SelectItem(0);
 				mbVS = false;
 			}
         }
@@ -252,7 +253,8 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 			}
 			else
 			{
-				maVSSpacing.SetNoSelection();
+                maVSSpacing.SetNoSelection();
+                maVSSpacing.SelectItem(0);
 				mbVS = false;
 			}
         }
@@ -270,7 +272,8 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 	else if(bLBAvailable && !bAvailable)
 	{	
 		//modified 
-		maVSSpacing.SetNoSelection();
+        maVSSpacing.SetNoSelection();
+        maVSSpacing.SelectItem(0);
 		mbVS = false;
 		maLBKerning.Enable();
 		maFTSpacing.Enable();
@@ -281,7 +284,8 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 	}
 	else
 	{
-		maVSSpacing.SetNoSelection();
+        maVSSpacing.SetNoSelection();
+        maVSSpacing.SelectItem(0);
 		mbVS = false;
 		maEditKerning.SetText(String());
         maLBKerning.SetNoSelection();
@@ -394,7 +398,8 @@ IMPL_LINK(TextCharacterSpacingControl, KerningSelectHdl, ListBox*, EMPTYARG)
 
     if ( maVSSpacing.GetSelectItemId() > 0 )
 	{
-		maVSSpacing.SetNoSelection();	//modify 
+        maVSSpacing.SetNoSelection();
+        maVSSpacing.SelectItem(0);
 		maVSSpacing.Format();
 		Invalidate();
 		maVSSpacing.StartSelection();
@@ -406,7 +411,8 @@ IMPL_LINK(TextCharacterSpacingControl, KerningModifyHdl, MetricField*, EMPTYARG)
 {
     if ( maVSSpacing.GetSelectItemId() > 0 )
 	{
-		maVSSpacing.SetNoSelection();	//modify 
+        maVSSpacing.SetNoSelection();
+        maVSSpacing.SelectItem(0);
 		maVSSpacing.Format();
 		Invalidate();
 		maVSSpacing.StartSelection();
