@@ -24,6 +24,7 @@
 #include "SwPanelFactory.hxx"
 
 #include <PagePropertyPanel.hxx>
+#include <WrapPropertyPanel.hxx>
 
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
@@ -116,6 +117,15 @@ Reference<ui::XUIElement> SAL_CALL SwPanelFactory::createUIElement (
     if (DoesResourceEndWith("/PagePropertyPanel"))
     {
         PagePropertyPanel* pPanel = PagePropertyPanel::Create( pParentWindow, pBindings );
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ui::LayoutSize(-1,-1,-1));
+    }
+    else if (DoesResourceEndWith("/WrapPropertyPanel"))
+    {
+        WrapPropertyPanel* pPanel = WrapPropertyPanel::Create( pParentWindow, xFrame, pBindings );
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,

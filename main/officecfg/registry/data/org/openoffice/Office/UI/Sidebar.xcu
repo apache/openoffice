@@ -771,18 +771,20 @@
           <value>PropertyDeck</value>
         </prop>
         <prop oor:name="DefaultMenuCommand">
-          <value>.uno:GraphicWrapDialog</value>
+          <value>.uno:ObjectWrapDialog</value>
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            WriterAndWeb,      Graphic,       visible ;
+              Writer,   Graphic, visible ;
+              Writer,   OLE,     visible ;
+              Writer,   Frame,   visible ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
-          <value>private:resource/toolpanel/SvxPanelFactory/Debug_NotYetImplementedPanel</value>
+          <value>private:resource/toolpanel/SwPanelFactory/WrapPropertyPanel</value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>300</value>
+          <value>500</value>
         </prop>
       </node>
 

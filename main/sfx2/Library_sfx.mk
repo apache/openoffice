@@ -224,6 +224,7 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/sidebar/ContextList \
 	sfx2/source/sidebar/ControlFactory \
 	sfx2/source/sidebar/ControllerItem \
+	sfx2/source/sidebar/CustomImageRadioButton \
 	sfx2/source/sidebar/Deck \
 	sfx2/source/sidebar/DeckDescriptor \
 	sfx2/source/sidebar/DeckLayouter \

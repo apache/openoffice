@@ -383,7 +383,8 @@ void SwFrameShell::Execute(SfxRequest &rReq)
 			}
 		}
 		break;
-		case FN_FORMAT_FRAME_DLG:
+        case FN_FORMAT_FRAME_DLG:
+        case FN_PROPERTY_WRAP_DLG:
 		{
 			const int nSel = rSh.GetSelectionType();
 			if (nSel & nsSelectionType::SEL_GRF)
@@ -393,34 +394,31 @@ void SwFrameShell::Execute(SfxRequest &rReq)
 			}
 			else
 			{
-				SfxItemSet aSet(GetPool(), 	RES_FRMATR_BEGIN, 		RES_FRMATR_END-1,
-											SID_ATTR_BORDER_INNER, 	SID_ATTR_BORDER_INNER,
-											FN_GET_PRINT_AREA, 		FN_GET_PRINT_AREA,
-											SID_ATTR_PAGE_SIZE, 	SID_ATTR_PAGE_SIZE,
-											SID_ATTR_BRUSH, 		SID_ATTR_BRUSH,
-											SID_ATTR_LRSPACE,		SID_ATTR_ULSPACE,
-											FN_SURROUND, 			FN_HORI_ORIENT,
-											FN_SET_FRM_NAME, 		FN_SET_FRM_NAME,
-											FN_KEEP_ASPECT_RATIO, 	FN_KEEP_ASPECT_RATIO,
-											SID_DOCFRAME, 			SID_DOCFRAME,
-											SID_HTML_MODE, 			SID_HTML_MODE,
-											FN_SET_FRM_ALT_NAME, 	FN_SET_FRM_ALT_NAME,
+                SfxItemSet aSet(GetPool(), 	RES_FRMATR_BEGIN, 		RES_FRMATR_END-1,
+                                            SID_ATTR_BORDER_INNER, 	SID_ATTR_BORDER_INNER,
+                                            FN_GET_PRINT_AREA, 		FN_GET_PRINT_AREA,
+                                            SID_ATTR_PAGE_SIZE, 	SID_ATTR_PAGE_SIZE,
+                                            SID_ATTR_BRUSH, 		SID_ATTR_BRUSH,
+                                            SID_ATTR_LRSPACE,		SID_ATTR_ULSPACE,
+                                            FN_SURROUND, 			FN_HORI_ORIENT,
+                                            FN_SET_FRM_NAME, 		FN_SET_FRM_NAME,
+                                            FN_KEEP_ASPECT_RATIO, 	FN_KEEP_ASPECT_RATIO,
+                                            SID_DOCFRAME, 			SID_DOCFRAME,
+                                            SID_HTML_MODE, 			SID_HTML_MODE,
+                                            FN_SET_FRM_ALT_NAME, 	FN_SET_FRM_ALT_NAME,
                                             FN_PARAM_CHAIN_PREVIOUS, FN_PARAM_CHAIN_NEXT,
                                             FN_OLE_IS_MATH,         FN_OLE_IS_MATH,
                                             FN_MATH_BASELINE_ALIGNMENT, FN_MATH_BASELINE_ALIGNMENT,
                                             0);
 
-				const SwViewOption* pVOpt = rSh.GetViewOptions();
-				if(nSel & nsSelectionType::SEL_OLE)
+                const SwViewOption* pVOpt = rSh.GetViewOptions();
+                if(nSel & nsSelectionType::SEL_OLE)
                     aSet.Put( SfxBoolItem(FN_KEEP_ASPECT_RATIO, pVOpt->IsKeepRatio()) );
-				aSet.Put(SfxUInt16Item(SID_HTML_MODE, ::GetHtmlMode(GetView().GetDocShell())));
-				aSet.Put(SfxStringItem(FN_SET_FRM_NAME, rSh.GetFlyName()));
+                aSet.Put(SfxUInt16Item(SID_HTML_MODE, ::GetHtmlMode(GetView().GetDocShell())));
+                aSet.Put(SfxStringItem(FN_SET_FRM_NAME, rSh.GetFlyName()));
                 if( nSel & nsSelectionType::SEL_OLE )
                 {
-                    // --> OD 2009-07-13 #i73249#
-//                    aSet.Put(SfxStringItem(FN_SET_FRM_ALT_NAME, rSh.GetAlternateText()));
                     aSet.Put( SfxStringItem( FN_SET_FRM_ALT_NAME, rSh.GetObjTitle() ) );
-                    // <--
                 }
 
 				const SwRect &rPg = rSh.GetAnyCurRect(RECT_PAGE);
@@ -468,6 +466,11 @@ void SwFrameShell::Execute(SfxRequest &rReq)
 														sal_False,
 														nDefPage);
                 DBG_ASSERT(pDlg, "Dialogdiet fail!");
+
+                if ( nSlot == FN_PROPERTY_WRAP_DLG )
+                {
+                    pDlg->SetCurPageId(TP_FRM_WRAP);
+                }
 
 				if ( pDlg->Execute() )
 				{

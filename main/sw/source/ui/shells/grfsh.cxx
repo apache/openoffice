@@ -114,7 +114,7 @@ void SwGrfShell::Execute(SfxRequest &rReq)
         break;
 		case SID_INSERT_GRAPHIC:
 		case FN_FORMAT_GRAFIC_DLG:
-		case FN_PROPERTY_SIDEBAR_GRAFIC_DLG:
+		case FN_PROPERTY_WRAP_DLG:
 		{
 			SwFlyFrmAttrMgr aMgr( sal_False, &rSh, rSh.IsFrmSelected() ?
 											   FRMMGR_TYPE_NONE : FRMMGR_TYPE_GRF);
@@ -151,10 +151,7 @@ void SwGrfShell::Execute(SfxRequest &rReq)
 			aSet.Put(SfxStringItem(FN_SET_FRM_NAME, rSh.GetFlyName()));
             if ( nSlot == FN_FORMAT_GRAFIC_DLG )
             {
-                // --> OD 2009-07-13 #i73249#
-//                aSet.Put(SfxStringItem(FN_SET_FRM_ALT_NAME, rSh.GetAlternateText()));
                 aSet.Put( SfxStringItem( FN_SET_FRM_ALT_NAME, rSh.GetObjTitle() ) );
-                // <--
             }
 
 			pRect = &rSh.GetAnyCurRect(RECT_PAGE_PRT);
@@ -233,7 +230,7 @@ void SwGrfShell::Execute(SfxRequest &rReq)
 													aSet, sal_False, DLG_FRM_GRF);
             DBG_ASSERT(pDlg, "Dialogdiet fail!");
 
-            if (nSlot == FN_PROPERTY_SIDEBAR_GRAFIC_DLG)
+            if (nSlot == FN_PROPERTY_WRAP_DLG)
                 pDlg->SetCurPageId(TP_FRM_WRAP);
             
 			if( pDlg->Execute() )

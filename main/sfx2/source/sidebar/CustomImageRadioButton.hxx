@@ -19,29 +19,28 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_CONTROL_FACTORY_HXX
-#define SFX_SIDEBAR_CONTROL_FACTORY_HXX
+#ifndef SFX_SIDEBAR_CUSTOM_IMAGE_RADIO_BUTTON_HXX
+#define SFX_SIDEBAR_CUSTOM_IMAGE_RADIO_BUTTON_HXX
 
-#include <sfx2/dllapi.h>
-#include <vcl/button.hxx>
+#include "vcl/button.hxx"
 
-class ToolBox;
+#include "sfx2/sidebar/Theme.hxx"
 
 namespace sfx2 { namespace sidebar {
 
-class ToolBoxBackground;
-
-
-class SFX2_DLLPUBLIC ControlFactory
+/** A custom image radion button with more control over used colors for sidebar
+*/
+class CustomImageRadioButton
+    : public ImageRadioButton
 {
 public:
-    static CheckBox* CreateMenuButton (Window* pParentWindow);
-    static ImageRadioButton* CreateTabItem (Window* pParentWindow);
-    static ToolBox* CreateToolBox (Window* pParentWindow, const ResId& rResId);
-    static Window* CreateToolBoxBackground (Window* pParentWindow);
-    static ImageRadioButton* CreateCustomImageRadionButton(
+    CustomImageRadioButton(
         Window* pParentWindow,
         const ResId& rResId );
+
+    virtual ~CustomImageRadioButton(void);
+
+    virtual void Paint( const Rectangle& rUpdateArea );
 };
 
 

@@ -27,6 +27,7 @@
 #include "TabItem.hxx"
 #include "SidebarToolBox.hxx"
 #include "ToolBoxBackground.hxx"
+#include "CustomImageRadioButton.hxx"
 #include <vcl/toolbox.hxx>
 
 
@@ -70,6 +71,18 @@ Window* ControlFactory::CreateToolBoxBackground (
     ToolBoxBackground* pBorderWindow = new ToolBoxBackground(pParentWindow);
     pBorderWindow->Show();
     return pBorderWindow;
+}
+
+
+
+
+ImageRadioButton* ControlFactory::CreateCustomImageRadionButton(
+    Window* pParentWindow,
+    const ResId& rResId )
+{
+    return new CustomImageRadioButton(
+        pParentWindow,
+        rResId );
 }
 
 } } // end of namespace sfx2::sidebar
