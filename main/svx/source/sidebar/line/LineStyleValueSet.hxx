@@ -18,6 +18,10 @@
  * under the License.
  * 
  *************************************************************/
+
+#ifndef SVX_SIDEBAR_LINE_STYLE_VALUE_SET_HXX
+#define SVX_SIDEBAR_LINE_STYLE_VALUE_SET_HXX
+
 /*
 #include <sfx2/sidebar/propertypanel.hrc>
 #include <sfx2/sidebar/Theme.hxx>
@@ -75,3 +79,7 @@ private:
 };
 
 } } // end of namespace svx::sidebar
+
+#endif
+
+// eof

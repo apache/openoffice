@@ -22,7 +22,7 @@
 #ifndef SVX_PROPERTYPANEL_AREAPAGE_HXX
 #define SVX_PROPERTYPANEL_AREAPAGE_HXX
 
-#include "sidebar/ColorPopup.hxx"
+#include <svx/sidebar/ColorPopup.hxx>
 #include "AreaTransparencyGradientPopup.hxx"
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>

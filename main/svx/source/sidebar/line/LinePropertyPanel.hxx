@@ -31,7 +31,7 @@
 #include <vcl/field.hxx>
 #include <boost/scoped_ptr.hpp>
 #include <boost/scoped_array.hpp>
-#include "sidebar/ColorPopup.hxx"
+#include <svx/sidebar/ColorPopup.hxx>
 #include "LineStylePopup.hxx"
 #include "LineWidthPopup.hxx"
 

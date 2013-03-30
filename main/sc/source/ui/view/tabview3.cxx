@@ -239,7 +239,21 @@ void ScTabView::InvalidateAttribs()
 	rBindings.Invalidate( SID_ALIGNBOTTOM );
 	rBindings.Invalidate( SID_ALIGNCENTERVER );
 
-	rBindings.Invalidate( SID_BACKGROUND_COLOR );
+    // stuff for sidebar panels
+    {
+        rBindings.Invalidate( SID_H_ALIGNCELL );	
+        rBindings.Invalidate( SID_V_ALIGNCELL );
+        rBindings.Invalidate( SID_ATTR_ALIGN_INDENT );
+        rBindings.Invalidate( SID_FRAME_LINECOLOR );
+        rBindings.Invalidate( SID_FRAME_LINESTYLE );
+        rBindings.Invalidate( SID_ATTR_BORDER_OUTER );
+        rBindings.Invalidate( SID_ATTR_BORDER_INNER );
+        rBindings.Invalidate( SID_SCGRIDSHOW ); 
+        rBindings.Invalidate( SID_ATTR_BORDER_DIAG_TLBR );
+        rBindings.Invalidate( SID_ATTR_BORDER_DIAG_BLTR );
+    }
+
+    rBindings.Invalidate( SID_BACKGROUND_COLOR );
 
 	rBindings.Invalidate( SID_ATTR_ALIGN_LINEBREAK );
 	rBindings.Invalidate( SID_NUMBER_FORMAT );

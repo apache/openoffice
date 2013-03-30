@@ -19,6 +19,9 @@
  * 
  *************************************************************/
 
+#ifndef SVX_SIDEBAR_LINE_STYLE_CONTROL_HXX
+#define SVX_SIDEBAR_LINE_STYLE_CONTROL_HXX
+
 #include "svx/sidebar/PopupControl.hxx"
 #include <vcl/button.hxx>
 #include "LineStyleValueSet.hxx"
@@ -65,3 +68,7 @@ private:
 };
 
 } } // end of namespace svx::sidebar
+
+#endif // SVX_SIDEBAR_LINE_STYLE_CONTROL_HXX
+
+// eof

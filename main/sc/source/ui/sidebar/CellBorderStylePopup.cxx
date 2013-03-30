@@ -19,37 +19,24 @@
  * 
  *************************************************************/
 
-#ifndef _SVX_SIDEBAR_COLOR_POPUP_HXX_
-#define _SVX_SIDEBAR_COLOR_POPUP_HXX_
+#include "precompiled_sc.hxx"
 
-#include "svx/sidebar/Popup.hxx"
+#include "CellBorderStylePopup.hxx"
+#include "CellLineStyleControl.hxx"
 
-#include <tools/color.hxx>
+namespace sc { namespace sidebar {
 
-
-namespace svx { namespace sidebar {
-
-/** Popup control that displays all named colors in a matrix.
-    The number of rows and columns of the matrix are computed from
-    the number of named colors so that both have roughly the same
-    value.
-    
-    The ColorPopup uses ColorControl as control for its content.
-*/
-class ColorPopup
-    : public Popup
+CellBorderStylePopup::CellBorderStylePopup (
+    Window* pParent,
+    const ::boost::function<svx::sidebar::PopupControl*(svx::sidebar::PopupContainer*)>& rControlCreator)
+:   Popup(pParent, rControlCreator,  ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("CellBorderStyle")))
 {
-public :
-    ColorPopup (
-        Window* pParent,
-        const ::boost::function<PopupControl*(PopupContainer*)>& rControlCreator);
-    virtual ~ColorPopup (void);
+}
 
-    void SetCurrentColor (
-        const Color aCurrentColor,
-        const bool bIsColorAvailable);
-};
+CellBorderStylePopup::~CellBorderStylePopup (void)
+{
+}
 
-} } // end of namespace svx::sidebar
+} } // end of namespace sc::sidebar
 
-#endif
+// eof

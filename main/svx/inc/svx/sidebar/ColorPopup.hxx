@@ -19,25 +19,35 @@
  * 
  *************************************************************/
 
-#ifndef SVX_SIDEBAR_POSSIZE_DIAL_CONTROL_HXX
-#define SVX_SIDEBAR_POSSIZE_DIAL_CONTROL_HXX
+#ifndef _SVX_SIDEBAR_COLOR_POPUP_HXX_
+#define _SVX_SIDEBAR_COLOR_POPUP_HXX_
 
-#include <svx/dialcontrol.hxx>
+#include "svx/sidebar/Popup.hxx"
+
+#include <tools/color.hxx>
+
 
 namespace svx { namespace sidebar {
 
-/** Provide some improvements over the standard DialControl.
+/** Popup control that displays all named colors in a matrix.
+    The number of rows and columns of the matrix are computed from
+    the number of named colors so that both have roughly the same
+    value.
+    
+    The ColorPopup uses ColorControl as control for its content.
 */
-class SidebarDialControl : public svx::DialControl
+class SVX_DLLPUBLIC ColorPopup
+    : public Popup
 {
-public:
-    SidebarDialControl (Window* pParent, const ResId& rResId);
-    virtual ~SidebarDialControl (void);
+public :
+    ColorPopup (
+        Window* pParent,
+        const ::boost::function<PopupControl*(PopupContainer*)>& rControlCreator);
+    virtual ~ColorPopup (void);
 
-    virtual void MouseButtonDown (const MouseEvent& rMEvt);
-
-protected:
-    virtual void HandleMouseEvent (const Point& rPos, bool bInitial);
+    void SetCurrentColor (
+        const Color aCurrentColor,
+        const bool bIsColorAvailable);
 };
 
 } } // end of namespace svx::sidebar

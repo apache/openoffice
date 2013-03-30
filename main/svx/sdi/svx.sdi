@@ -15689,5 +15689,81 @@ SfxBoolItem SvxAutoHeight SID_ATTR_TRANSFORM_AUTOHEIGHT
 	GroupId = GID_SPECIAL;
 ]
 
+//----------------------------------------------------------------------
+SvxLineItem BorderTLBR SID_ATTR_BORDER_DIAG_TLBR
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = FALSE,
+	GroupId = GID_FORMAT;
+]
+
+SvxLineItem BorderBLTR SID_ATTR_BORDER_DIAG_BLTR
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = FALSE,
+	GroupId = GID_FORMAT;
+]
+
+//--------------------------------------------------------------------------
+
+SfxVoidItem SCDialogBorder SID_CELL_FORMAT_BORDER
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = TRUE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerItem;
+	Asynchron;
+
+	/* config: */
+	AccelConfig = TRUE,
+	MenuConfig = TRUE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_FORMAT;
+]
+
 //--------------------------------------------------------------------------
 // eof

@@ -37,7 +37,7 @@
 #include <boost/scoped_ptr.hpp>
 #include "TextCharacterSpacingPopup.hxx"
 #include "TextUnderlinePopup.hxx"
-#include "sidebar/ColorPopup.hxx"
+#include <svx/sidebar/ColorPopup.hxx>
 #include <vcl/vclenum.hxx>
 
 class FloatingWindow;

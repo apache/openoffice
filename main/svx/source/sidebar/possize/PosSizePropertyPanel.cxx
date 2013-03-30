@@ -24,7 +24,7 @@
 #include <sfx2/sidebar/ControlFactory.hxx>
 #include "PosSizePropertyPanel.hxx"
 #include "PosSizePropertyPanel.hrc"
-#include "SidebarDialControl.hxx"
+#include <svx/sidebar/SidebarDialControl.hxx>
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
 #include <sfx2/dispatch.hxx>
@@ -180,7 +180,9 @@ void PosSizePropertyPanel::Initialize()
 	mpMtrWidth->SetAccessibleRelationLabeledBy(mpFtWidth.get());	
 	mpMtrHeight->SetAccessibleRelationLabeledBy(mpFtHeight.get());	
 	mpMtrAngle->SetAccessibleRelationLabeledBy(mpFtAngle.get());
-	//mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
+#ifdef HAS_IA2
+	mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
+#endif
 	mpFlipTbx->SetAccessibleRelationLabeledBy(mpFtFlip.get());
 
     mpMtrAngle->InsertValue(0, FUNIT_CUSTOM);

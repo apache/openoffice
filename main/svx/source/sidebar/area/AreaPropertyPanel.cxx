@@ -41,7 +41,7 @@
 #include <svx/svxitems.hrc>
 #include <vcl/toolbox.hxx>
 #include <svtools/toolbarmenu.hxx>
-#include "sidebar/ColorControl.hxx"
+#include <svx/sidebar/ColorControl.hxx>
 
 #include <boost/bind.hpp>
 

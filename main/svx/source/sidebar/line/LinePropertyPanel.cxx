@@ -53,7 +53,7 @@
 #include <svx/xlinjoit.hxx>
 #include "svx/sidebar/PopupContainer.hxx"
 #include "svx/sidebar/PopupControl.hxx"
-#include "sidebar/ColorControl.hxx"
+#include <svx/sidebar/ColorControl.hxx>
 #include "LineStyleControl.hxx"
 #include "LineWidthControl.hxx"
 #include <boost/bind.hpp>
@@ -927,7 +927,7 @@ PopupControl* LinePropertyPanel::CreateColorPopupControl (PopupContainer* pParen
         ::boost::bind(GetTransparentColor),
         ::boost::bind(&LinePropertyPanel::SetColor, this, _1, _2),
         pParent,
-        STR_AUTOMATICE);
+        &SVX_RES(STR_AUTOMATICE));
 }
 
 

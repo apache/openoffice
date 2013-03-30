@@ -56,8 +56,8 @@
 #include "TextCharacterSpacingPopup.hxx"
 #include "TextUnderlineControl.hxx"
 #include "TextUnderlinePopup.hxx"
-#include "sidebar/ColorControl.hxx"
-#include "svx/sidebar/PopupContainer.hxx"
+#include <svx/sidebar/ColorControl.hxx>
+#include <svx/sidebar/PopupContainer.hxx>
 
 
 #include <boost/bind.hpp>

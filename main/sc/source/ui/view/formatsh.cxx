@@ -1622,6 +1622,44 @@ void ScFormatShell::ExecuteAttr( SfxRequest& rReq )
 				}
 				break;
 
+			case SID_ATTR_BORDER_DIAG_TLBR:
+			case SID_ATTR_BORDER_DIAG_BLTR:
+				{
+					ScDocument* pDoc = GetViewData()->GetDocument();
+					const ScPatternAttr* pOldAttrs = pTabViewShell->GetSelectionPattern();
+					SfxItemSet* pOldSet = new SfxItemSet(pOldAttrs->GetItemSet());
+					SfxItemSet* pNewSet = new SfxItemSet(pOldAttrs->GetItemSet());
+					const SfxPoolItem* pItem = 0;
+
+                    if(SID_ATTR_BORDER_DIAG_TLBR == nSlot)
+					{
+						if(SFX_ITEM_SET == pNewAttrs->GetItemState(ATTR_BORDER_TLBR, true, &pItem))
+						{
+							SvxLineItem aItem(ATTR_BORDER_TLBR);
+							aItem.SetLine(((const SvxLineItem&)pNewAttrs->Get(ATTR_BORDER_TLBR)).GetLine());
+							pNewSet->Put(aItem);
+							rReq.AppendItem(aItem);
+							pTabViewShell->ApplyAttributes(pNewSet, pOldSet);
+						}
+					}
+					else // if( nSlot == SID_ATTR_BORDER_DIAG_BLTR )
+					{
+						if(SFX_ITEM_SET == pNewAttrs->GetItemState(ATTR_BORDER_BLTR, true, &pItem ))
+						{
+							SvxLineItem aItem(ATTR_BORDER_BLTR);
+							aItem.SetLine(((const SvxLineItem&)pNewAttrs->Get(ATTR_BORDER_BLTR)).GetLine());
+							pNewSet->Put(aItem);
+							rReq.AppendItem(aItem);
+							pTabViewShell->ApplyAttributes(pNewSet, pOldSet);
+						}
+					}
+
+                    delete pOldSet;
+					delete pNewSet;
+					rBindings.Invalidate(nSlot);
+				}
+				break;
+
 			// ATTR_BACKGROUND (=SID_ATTR_BRUSH) muss ueber zwei IDs
 			// gesetzt werden:
 			case SID_BACKGROUND_COLOR:
@@ -1700,11 +1738,184 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 			case SID_BACKGROUND_COLOR:
 			{
                 rSet.Put( SvxColorItem( rBrushItem.GetColor(), SID_BACKGROUND_COLOR ) );
+
+                if(SFX_ITEM_DONTCARE == rAttrSet.GetItemState(ATTR_BACKGROUND))
+                {
+                    rSet.InvalidateItem(SID_BACKGROUND_COLOR);
+                }
 			}
 			break;
+    		case SID_FRAME_LINESTYLE:
 			case SID_FRAME_LINECOLOR:
 			{
-                rSet.Put( SvxColorItem( pLine ? pLine->GetColor() : Color(), SID_FRAME_LINECOLOR ) );
+                // handled together because both need the cell border information for decisions
+                // rSet.Put( SvxColorItem( pLine ? pLine->GetColor() : Color(), SID_FRAME_LINECOLOR ) );
+				Color aCol = 0;
+				sal_uInt16 nOut = 0, nIn = 0, nDis = 0;
+				SvxBorderLine aLine(0,0,0,0);
+				bool bCol = 0;
+				bool bColDisable = 0, bStyleDisable = 0;
+                SvxBoxItem aBoxItem(ATTR_BORDER);
+                SvxBoxInfoItem aInfoItem(ATTR_BORDER_INNER);
+
+                pTabViewShell->GetSelectionFrame(aBoxItem, aInfoItem);
+
+				if( aBoxItem.GetTop() ) 
+				{
+					bCol = 1;
+					aCol = aBoxItem.GetTop()->GetColor() ;
+					aLine.SetColor(aCol);
+					aLine.SetOutWidth( aBoxItem.GetTop()->GetOutWidth());
+					aLine.SetInWidth( aBoxItem.GetTop()->GetInWidth());
+					aLine.SetDistance( aBoxItem.GetTop()->GetDistance());
+				}
+				
+                if( aBoxItem.GetBottom() )
+				{
+					if(bCol == 0)
+					{
+						bCol = 1;
+						aCol = aBoxItem.GetBottom()->GetColor() ;
+						aLine.SetColor(aCol);
+						aLine.SetOutWidth( aBoxItem.GetBottom()->GetOutWidth());
+						aLine.SetInWidth( aBoxItem.GetBottom()->GetInWidth());
+						aLine.SetDistance( aBoxItem.GetBottom()->GetDistance());
+					}
+					else
+					{
+						if(aCol != aBoxItem.GetBottom()->GetColor() )
+							bColDisable = 1;
+						if(!( aLine == *(aBoxItem.GetBottom())) )
+							bStyleDisable = 1;
+					}
+				}
+				
+                if( aBoxItem.GetLeft() )
+				{
+					if(bCol == 0)
+					{
+						bCol = 1;
+						aCol = aBoxItem.GetLeft()->GetColor() ;
+						aLine.SetColor(aCol);
+						aLine.SetOutWidth( aBoxItem.GetLeft()->GetOutWidth());
+						aLine.SetInWidth( aBoxItem.GetLeft()->GetInWidth());
+						aLine.SetDistance( aBoxItem.GetLeft()->GetDistance());
+					}
+					else
+					{
+						if(aCol != aBoxItem.GetLeft()->GetColor() )
+							bColDisable = 1;
+						if(!( aLine == *(aBoxItem.GetLeft())) )
+							bStyleDisable = 1;
+					}
+				}
+				
+                if( aBoxItem.GetRight() )
+				{
+					if(bCol == 0)
+					{
+						bCol = 1;
+						aCol = aBoxItem.GetRight()->GetColor() ;
+						aLine.SetColor(aCol);
+						aLine.SetOutWidth( aBoxItem.GetRight()->GetOutWidth());
+						aLine.SetInWidth( aBoxItem.GetRight()->GetInWidth());
+						aLine.SetDistance( aBoxItem.GetRight()->GetDistance());
+					}
+					else
+					{
+						if(aCol != aBoxItem.GetRight()->GetColor() )
+							bColDisable = 1;
+						if(!( aLine == *(aBoxItem.GetRight())) )
+							bStyleDisable = 1;
+					}
+				}
+				
+                if( aInfoItem.GetVert())
+				{
+					if(bCol == 0)
+					{
+						bCol = 1;
+						aCol = aInfoItem.GetVert()->GetColor() ;
+						aLine.SetColor(aCol);
+						aLine.SetOutWidth( aInfoItem.GetVert()->GetOutWidth());
+						aLine.SetInWidth( aInfoItem.GetVert()->GetInWidth());
+						aLine.SetDistance( aInfoItem.GetVert()->GetDistance());
+					}
+					else
+					{
+						if(aCol != aInfoItem.GetVert()->GetColor() )
+							bColDisable = 1;
+						if(!( aLine == *(aInfoItem.GetVert())) )
+							bStyleDisable = 1;
+					}
+				}
+				
+                if( aInfoItem.GetHori())
+				{
+					if(bCol == 0)
+					{
+						bCol = 1;
+						aCol = aInfoItem.GetHori()->GetColor() ;
+						aLine.SetColor(aCol);
+						aLine.SetOutWidth( aInfoItem.GetHori()->GetOutWidth());
+						aLine.SetInWidth( aInfoItem.GetHori()->GetInWidth());
+						aLine.SetDistance( aInfoItem.GetHori()->GetDistance());
+					}
+					else
+					{
+						if(aCol != aInfoItem.GetHori()->GetColor() )
+							bColDisable = 1;
+						if(!( aLine == *(aInfoItem.GetHori())) )
+							bStyleDisable = 1;
+					}
+				}
+
+				if( !aInfoItem.IsValid( VALID_VERT ) 
+					|| !aInfoItem.IsValid( VALID_HORI )
+					|| !aInfoItem.IsValid( VALID_LEFT )
+					|| !aInfoItem.IsValid( VALID_RIGHT )
+					|| !aInfoItem.IsValid( VALID_TOP )
+					|| !aInfoItem.IsValid( VALID_BOTTOM ) )
+				{
+					bColDisable = 1;
+					bStyleDisable = 1;
+				}
+
+				if(SID_FRAME_LINECOLOR == nWhich)
+				{
+					if(bColDisable) // if different lines have differernt colors
+					{
+						aCol = COL_TRANSPARENT;
+						rSet.Put( SvxColorItem(aCol, SID_FRAME_LINECOLOR ) );
+						rSet.InvalidateItem(SID_FRAME_LINECOLOR);
+					}
+					else if( bCol == 0 && bColDisable == 0) // if no line available
+					{
+						aCol = COL_AUTO;	
+						rSet.Put( SvxColorItem(aCol, SID_FRAME_LINECOLOR ) );
+					}
+					else
+						rSet.Put( SvxColorItem(aCol, SID_FRAME_LINECOLOR ) );
+				}
+				else // if( nWhich == SID_FRAME_LINESTYLE)
+				{
+					if(bStyleDisable) // if have several lines but don't have same style
+					{
+						aLine.SetOutWidth( 1 );
+						aLine.SetInWidth( 0 );
+						aLine.SetDistance( 0 );
+						SvxLineItem aItem(SID_FRAME_LINESTYLE);
+						aItem.SetLine(&aLine);
+						rSet.Put( aItem );
+						rSet.InvalidateItem(SID_FRAME_LINESTYLE);
+					}
+					else // all the lines have same style or no line availavle, use initial value (0,0,0,0)
+					{
+						SvxLineItem aItem(SID_FRAME_LINESTYLE);
+						aItem.SetLine(&aLine);
+						rSet.Put( aItem );
+					}
+				}
 			}
 			break;
 			case SID_ATTR_BRUSH:
@@ -1722,6 +1933,13 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 		}
 		nWhich = aIter.NextWhich();
 	}
+
+    if(nWhich)
+    {
+        // stuff for sidebar panels
+        Invalidate(SID_ATTR_ALIGN_DEGREES);
+        Invalidate(SID_ATTR_ALIGN_STACKED);  
+    }
 }
 
 //------------------------------------------------------------------
@@ -2168,3 +2386,52 @@ void ScFormatShell::StateFormatPaintbrush( SfxItemSet& rSet )
         rSet.Put( SfxBoolItem( SID_FORMATPAINTBRUSH, pViewData->GetView()->HasPaintBrush() ) );
 }
 
+void  ScFormatShell::ExecViewOptions( SfxRequest& rReq )
+{
+	ScTabViewShell*	pTabViewShell  		= GetViewData()->GetViewShell();
+	SfxBindings&		rBindings = pViewData->GetBindings();
+	const SfxItemSet*	pNewAttrs = rReq.GetArgs();
+
+	if ( pNewAttrs )
+	{
+		sal_uInt16 nSlot = rReq.GetSlot();
+
+		if( nSlot  == SID_SCGRIDSHOW)
+		{
+
+			ScViewData*				pViewData = pTabViewShell->GetViewData();
+			const ScViewOptions&	rOldOpt	  = pViewData->GetOptions();
+			ScDocShell*				pDocSh  = PTR_CAST(ScDocShell, SfxObjectShell::Current());
+			bool bState =	((const SfxBoolItem &)pNewAttrs->Get( pNewAttrs->GetPool()->GetWhich( nSlot ) )).GetValue();
+
+			if ( (bool)rOldOpt.GetOption( VOPT_GRID ) !=  bState)
+			{
+				ScViewOptions rNewOpt(rOldOpt);
+				rNewOpt.SetOption( VOPT_GRID,  bState);
+				pViewData->SetOptions( rNewOpt );	
+				pViewData->GetDocument()->SetViewOptions( rNewOpt );
+				pDocSh->SetDocumentModified();
+				//add , write the change to sc view config 
+				ScModule*			pScMod		= SC_MOD();	
+				pScMod->SetViewOptions( rNewOpt );
+				//add end
+				rBindings.Invalidate( nSlot );
+			}
+		}
+	}
+
+}
+
+void  ScFormatShell::GetViewOptions( SfxItemSet& rSet )
+{
+	ScTabViewShell* pTabViewShell = GetViewData()->GetViewShell();
+	if( pTabViewShell )
+	{
+		ScViewOptions	aViewOpt = pTabViewShell->GetViewData()->GetOptions();
+		rSet.ClearItem(SID_SCGRIDSHOW);
+		SfxBoolItem aItem( SID_SCGRIDSHOW, aViewOpt.GetOption( VOPT_GRID ) );
+		rSet.Put(aItem);
+	}
+}
+
+// eof

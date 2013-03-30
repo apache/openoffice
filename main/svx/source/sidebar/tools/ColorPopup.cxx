@@ -19,8 +19,8 @@
  * 
  *************************************************************/
 
-#include "sidebar/ColorPopup.hxx"
-#include "sidebar/ColorControl.hxx"
+#include <svx/sidebar/ColorPopup.hxx>
+#include <svx/sidebar/ColorControl.hxx>
 
 
 namespace svx { namespace sidebar {

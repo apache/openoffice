@@ -35,7 +35,7 @@ namespace svx { namespace sidebar {
 /** The ColorControl uses a ValueSet control for displaying all named
     colors in a matrix.
 */
-class ColorControl
+class SVX_DLLPUBLIC ColorControl
     : public PopupControl
 {
 public:
@@ -47,9 +47,9 @@ public:
         @param rColorSetter
             A functor for setting the color that is selected by the
             user.
-        @param nNoColorString
+        @param pNoColorStringResId
             Resource id of an optional string for the "no color"
-            string.  When a value larger than zero is given then a
+            string.  When a value is given then a
             field/button is created above the color matrix for
             selecting "no color" ie. transparent.
             When zero is given then no such field is created.            
@@ -62,7 +62,7 @@ public:
         const ::boost::function<Color(void)>& rColorGetter,
         const ::boost::function<void(String&,Color)>& rColorSetter,
         FloatingWindow* pFloatingWindow,
-        const sal_uInt32 nNoColorString);
+        const ResId* pNoColorStringResId);
     virtual ~ColorControl (void);
     
 	void GetFocus (void);

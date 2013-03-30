@@ -1269,16 +1269,8 @@
 #define SID_ATTR_LINE_JOINT                             (SID_SVX_START+1110)
 #define SID_ATTR_LINE_CAP                               (SID_SVX_START+1111)
 #define SID_ATTR_TRANSFORM_MATRIX                       (SID_SVX_START+1112)
-
-#define SID_CHAR_DLG_EFFECT					(SID_SVX_START+1113) 
-//#define SID_SVX_AREA_TRANS_TYPE                         (SID_SVX_START+1105)
-//#define SID_SVX_AREA_TRANSPARENCY                       (SID_SVX_START+1106)
-//#define SID_SVX_AREA_TRANSP_GRADIENT                    (SID_SVX_START+1107)
-//
-//#define SID_ATTR_LINE_TRANSPARENCE                      (SID_SVX_START+1108)
-//
-//#define SID_FLIP_HORIZONTAL                             (SID_SVX_START+1109)
-//#define SID_FLIP_VERTICAL                               (SID_SVX_START+1110)
+#define SID_CELL_FORMAT_BORDER                          (SID_SVX_START+1113)
+#define SID_CHAR_DLG_EFFECT                             (SID_SVX_START+1114)
 
 // IMPORTANT NOTE: adjust SID_SVX_FIRSTFREE, when adding new slot id
 #define SID_SVX_FIRSTFREE                               (SID_CHAR_DLG_EFFECT + 1)

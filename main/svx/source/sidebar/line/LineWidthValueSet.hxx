@@ -19,10 +19,11 @@
  * 
  *************************************************************/
 
+#ifndef SVX_SIDEBAR_LINE_WIDTH_VALUE_SET_HXX
+#define SVX_SIDEBAR_LINE_WIDTH_VALUE_SET_HXX
+
 #include <svtools/valueset.hxx>
-
 #include <vcl/image.hxx>
-
 
 namespace svx { namespace sidebar {
 
@@ -50,3 +51,7 @@ protected:
 };
 
 } } // end of namespace svx::sidebar
+
+#endif // SVX_SIDEBAR_LINE_WIDTH_VALUE_SET_HXX
+
+// eof

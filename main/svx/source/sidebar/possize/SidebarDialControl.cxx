@@ -19,7 +19,7 @@
  * 
  *************************************************************/
 
-#include "SidebarDialControl.hxx"
+#include <svx/sidebar/SidebarDialControl.hxx>
 #include "SidebarDialControlBmp.hxx"
 
 #include <vcl/svapp.hxx>

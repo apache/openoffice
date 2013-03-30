@@ -21,7 +21,7 @@
 
 #include "precompiled_svx.hxx"
 
-#include "sidebar/ColorControl.hxx"
+#include <svx/sidebar/ColorControl.hxx>
 #include "svx/svxids.hrc"
 #include "svx/drawitem.hxx"
 #include "svx/xtable.hxx"
@@ -96,14 +96,14 @@ ColorControl::ColorControl (
     const ::boost::function<Color(void)>& rColorGetter,
     const ::boost::function<void(String&,Color)>& rColorSetter,
     FloatingWindow* pFloatingWindow,
-    const sal_uInt32 nNoColorStringResId)
+    const ResId* pNoColorStringResId) // const sal_uInt32 nNoColorStringResId)
     : PopupControl(pParent, rControlResId),
       mpBindings(pBindings),
       maVSColor(this, rValueSetResId),
       mpFloatingWindow(pFloatingWindow),
       msNoColorString(
-          nNoColorStringResId>0
-              ? String(SVX_RES(nNoColorStringResId))
+          pNoColorStringResId
+              ? String(*pNoColorStringResId)
               : String()),
       maColorGetter(rColorGetter),
       maColorSetter(rColorSetter)
