@@ -48,7 +48,7 @@ SidebarDialControlBmp::~SidebarDialControlBmp (void)
 
 
 void SidebarDialControlBmp::DrawElements (
-    const String& rText,
+    const String& /*rText*/,
     sal_Int32 nAngle)
 {
     if (Application::GetSettings().GetLayoutRTL())		

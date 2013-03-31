@@ -919,6 +919,8 @@ IMPL_LINK( LinePropertyPanel, ChangeTransparentHdl, void *, EMPTYARG )
 
 PopupControl* LinePropertyPanel::CreateColorPopupControl (PopupContainer* pParent)
 {
+    const ResId aResId(SVX_RES(STR_AUTOMATICE));
+    
     return new ColorControl(
         pParent,
         mpBindings,
@@ -927,7 +929,7 @@ PopupControl* LinePropertyPanel::CreateColorPopupControl (PopupContainer* pParen
         ::boost::bind(GetTransparentColor),
         ::boost::bind(&LinePropertyPanel::SetColor, this, _1, _2),
         pParent,
-        &SVX_RES(STR_AUTOMATICE));
+        &aResId);
 }
 
 
