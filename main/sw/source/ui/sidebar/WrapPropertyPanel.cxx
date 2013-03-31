@@ -35,7 +35,7 @@
 #include <svl/eitem.hxx>
 #include <vcl/svapp.hxx>
 
-#include "com/sun/star/lang/IllegalArgumentException.hdl"
+#include "com/sun/star/lang/IllegalArgumentException.hpp"
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
