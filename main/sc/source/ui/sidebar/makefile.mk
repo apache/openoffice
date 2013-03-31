@@ -23,6 +23,7 @@ PRJ=..$/..$/..
 
 PRJNAME=sc
 TARGET=sidebar
+ENABLE_EXCEPTIONS=TRUE
 
 # --- Settings -----------------------------------------------------
 
