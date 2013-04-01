@@ -38,6 +38,8 @@
 #include <editeng/fontitem.hxx>
 #include <svl/poolitem.hxx>
 #include <editeng/tstpitem.hxx>
+#include <editeng/lspcitem.hxx>
+#include <editeng/ulspitem.hxx>
 #include <editeng/lrspitem.hxx>
 #include <editeng/protitem.hxx>
 #include <svx/chrtitem.hxx>

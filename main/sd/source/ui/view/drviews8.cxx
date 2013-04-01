@@ -134,6 +134,8 @@ void DrawViewShell::FuTemp01(SfxRequest& rReq)
 		break;
 
 		case SID_OUTLINE_BULLET:
+		case FN_SVX_SET_BULLET:
+		case FN_SVX_SET_NUMBER:
 		{
 			SetCurrentFunction( FuOutlineBullet::Create( this, GetActiveWindow(), mpDrawView, GetDoc(), rReq ) );
 			Cancel();

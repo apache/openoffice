@@ -174,7 +174,14 @@ interface OutlineView
         ExecMethod = FuTemporaryModify ;
         StateMethod = GetMenuState ;
     ]
-
+    FN_SVX_SET_BULLET
+    [
+   		ExecMethod = FuTemporaryModify ;
+    ]
+    FN_SVX_SET_NUMBER
+    [
+    	ExecMethod = FuTemporaryModify ;
+    ]
 	SID_OUTLINE_BULLET // ole : no, status : ?
 	[
 		ExecMethod = FuTemporaryModify ;

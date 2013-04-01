@@ -210,6 +210,24 @@ interface TextDrawText
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
 
+	SID_ATTR_PARA_LRSPACE  //for indent
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+	]
+	
+	SID_ATTR_PARA_LINESPACE // api:
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+	]
+	
+	SID_ATTR_PARA_ULSPACE
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+	]
+
 	SID_ATTR_PARA_ADJUST_LEFT // api:
 	[
 		ExecMethod = Execute ;

@@ -42,6 +42,9 @@
 #include <editeng/flditem.hxx>
 #include <editeng/fontitem.hxx>
 #include <editeng/frmdiritem.hxx>
+#include <editeng/lrspitem.hxx>
+#include <editeng/lspcitem.hxx>
+#include <editeng/ulspitem.hxx>
 #include <svx/hlnkitem.hxx>
 #include <editeng/lspcitem.hxx>
 #include <svx/svdoutl.hxx>
@@ -645,7 +648,7 @@ void lcl_RemoveFields( OutlinerView& rOutView )
 		{
 			SvUShorts aPortions;
 			rEditEng.GetPortions( (sal_uInt16)nPar, aPortions );
-			//!	GetPortions should use xub_StrLen instead of USHORT
+			//!	GetPortions should use xub_StrLen instead of sal_uInt16
 
 			for ( sal_uInt16 nPos = aPortions.Count(); nPos; )
 			{
@@ -885,6 +888,72 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 
 			pView->SetAttributes( aSetItem.GetItemSet() );
 		}
+		else if( nSlot == SID_ATTR_PARA_LRSPACE )
+		{
+			sal_uInt16 nId = SID_ATTR_PARA_LRSPACE;
+			const SvxLRSpaceItem& rItem = (const SvxLRSpaceItem&)
+				pArgs->Get( nId );
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_LRSPACE, EE_PARA_LRSPACE );
+			nId = EE_PARA_LRSPACE;
+			SvxLRSpaceItem aLRSpaceItem( rItem.GetLeft(),
+				rItem.GetRight(), rItem.GetTxtLeft(),
+				rItem.GetTxtFirstLineOfst(), nId );
+			aEditAttr.Put( aLRSpaceItem );
+//			rReq.Done( aEditAttr );
+//			pArgs = rReq.GetArgs();
+//			pView->SetAttributes( *pArgs );
+			pView->SetAttributes( aEditAttr );
+//			Invalidate(SID_ATTR_PARA_LRSPACE);
+		}
+		else if( nSlot == SID_ATTR_PARA_LINESPACE )
+		{
+			sal_uInt16 nId = SID_ATTR_PARA_LINESPACE;
+			SvxLineSpacingItem aLineSpaceItem = (const SvxLineSpacingItem&)pArgs->Get(
+																GetPool().GetWhich(nSlot));
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_SBL, EE_PARA_SBL );
+			aEditAttr.Put( aLineSpaceItem );
+//			rReq.Done( aEditAttr );
+//			pArgs = rReq.GetArgs();
+//			pView->SetAttributes( *pArgs );
+			pView->SetAttributes( aEditAttr );
+//			Invalidate(SID_ATTR_PARA_LINESPACE);
+		}
+		else if( nSlot == SID_ATTR_PARA_ULSPACE )
+		{
+			sal_uInt16 nId = SID_ATTR_PARA_ULSPACE;
+			SvxULSpaceItem aULSpaceItem = (const SvxULSpaceItem&)pArgs->Get(
+																GetPool().GetWhich(nSlot));
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_ULSPACE, EE_PARA_ULSPACE );
+			aULSpaceItem.SetWhich(EE_PARA_ULSPACE);
+			aEditAttr.Put( aULSpaceItem );
+//			rReq.Done( aEditAttr );
+//			pArgs = rReq.GetArgs();
+//			pView->SetAttributes( *pArgs );
+			pView->SetAttributes( aEditAttr );
+//			Invalidate(SID_ATTR_PARA_ULSPACE);
+		}
+		else if (bArgsInReq &&
+			(nSlot == SID_ATTR_PARA_ADJUST_LEFT || nSlot == SID_ATTR_PARA_ADJUST_CENTER || nSlot == SID_ATTR_PARA_ADJUST_RIGHT || nSlot == SID_ATTR_PARA_ADJUST_BLOCK ))
+		{
+			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());			
+			SfxItemSet	aNewAttr( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
+			switch ( nSlot )
+			{
+			case SID_ATTR_PARA_ADJUST_LEFT:
+				aNewAttr.Put( SvxAdjustItem( SVX_ADJUST_LEFT, EE_PARA_JUST ) );
+				break;
+			case SID_ATTR_PARA_ADJUST_CENTER:
+				aNewAttr.Put( SvxAdjustItem( SVX_ADJUST_CENTER, EE_PARA_JUST ) );
+				break;
+			case SID_ATTR_PARA_ADJUST_RIGHT:
+				aNewAttr.Put( SvxAdjustItem( SVX_ADJUST_RIGHT, EE_PARA_JUST ) );
+				break;
+			case SID_ATTR_PARA_ADJUST_BLOCK:
+				aNewAttr.Put( SvxAdjustItem( SVX_ADJUST_BLOCK, EE_PARA_JUST ) );
+				break;
+			}
+			pView->SetAttributes(aNewAttr);
+		}
 		else
 		{
 			// use args directly
@@ -937,24 +1006,35 @@ void __EXPORT ScDrawTextObjectBar::GetAttrState( SfxItemSet& rDestSet )
 		ScViewUtil::PutItemScript( rDestSet, aAttrSet, EE_CHAR_WEIGHT, nScript );
 	if ( rDestSet.GetItemState( EE_CHAR_ITALIC ) != SFX_ITEM_UNKNOWN )
 		ScViewUtil::PutItemScript( rDestSet, aAttrSet, EE_CHAR_ITALIC, nScript );
-
 	//	Ausrichtung
 
 	SvxAdjust eAdj = ((const SvxAdjustItem&)aAttrSet.Get(EE_PARA_JUST)).GetAdjust();
 	switch( eAdj )
 	{
-		case SVX_ADJUST_LEFT:
+	case SVX_ADJUST_LEFT:
+		{
 			rDestSet.Put( SfxBoolItem( SID_ALIGNLEFT, sal_True ) );
-			break;
-		case SVX_ADJUST_CENTER:
+			rDestSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_LEFT, sal_True ) );
+		}
+		break;
+	case SVX_ADJUST_CENTER:
+		{
 			rDestSet.Put( SfxBoolItem( SID_ALIGNCENTERHOR, sal_True ) );
-			break;
-		case SVX_ADJUST_RIGHT:
+			rDestSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_CENTER, sal_True ) );
+		}
+		break;
+	case SVX_ADJUST_RIGHT:
+		{
 			rDestSet.Put( SfxBoolItem( SID_ALIGNRIGHT, sal_True ) );
-			break;
-		case SVX_ADJUST_BLOCK:
+			rDestSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_RIGHT, sal_True ) );
+		}
+		break;
+	case SVX_ADJUST_BLOCK:
+		{
 			rDestSet.Put( SfxBoolItem( SID_ALIGNBLOCK, sal_True ) );
-			break;
+			rDestSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_BLOCK, sal_True ) );
+		}
+		break;
         default:
         {
             // added to avoid warnings
@@ -965,6 +1045,32 @@ void __EXPORT ScDrawTextObjectBar::GetAttrState( SfxItemSet& rDestSet )
     rDestSet.Put( SfxBoolItem( SID_ALIGN_ANY_HCENTER,   eAdj == SVX_ADJUST_CENTER ) );
     rDestSet.Put( SfxBoolItem( SID_ALIGN_ANY_RIGHT,     eAdj == SVX_ADJUST_RIGHT ) );
     rDestSet.Put( SfxBoolItem( SID_ALIGN_ANY_JUSTIFIED, eAdj == SVX_ADJUST_BLOCK ) );
+
+    	SvxLRSpaceItem aLR = ((const SvxLRSpaceItem&)aAttrSet.Get( EE_PARA_LRSPACE ));
+	aLR.SetWhich(SID_ATTR_PARA_LRSPACE);
+	rDestSet.Put(aLR);
+	Invalidate( SID_ATTR_PARA_LRSPACE );
+	SfxItemState eState = aAttrSet.GetItemState( EE_PARA_LRSPACE );
+	if ( eState == SFX_ITEM_DONTCARE )
+		rDestSet.InvalidateItem(SID_ATTR_PARA_LRSPACE);
+	//xuxu for Line Space
+	SvxLineSpacingItem aLineSP = ((const SvxLineSpacingItem&)aAttrSet.
+						Get( EE_PARA_SBL ));
+	aLineSP.SetWhich(SID_ATTR_PARA_LINESPACE);
+	rDestSet.Put(aLineSP);
+	Invalidate(SID_ATTR_PARA_LINESPACE);
+	eState = aAttrSet.GetItemState( EE_PARA_SBL );
+	if ( eState == SFX_ITEM_DONTCARE )
+		rDestSet.InvalidateItem(SID_ATTR_PARA_LINESPACE);
+	//xuxu for UL Space
+	SvxULSpaceItem aULSP = ((const SvxULSpaceItem&)aAttrSet.
+						Get( EE_PARA_ULSPACE ));
+	aULSP.SetWhich(SID_ATTR_PARA_ULSPACE);
+	rDestSet.Put(aULSP);
+	Invalidate(SID_ATTR_PARA_ULSPACE);
+	eState = aAttrSet.GetItemState( EE_PARA_ULSPACE );
+	if ( eState == SFX_ITEM_DONTCARE )
+		rDestSet.InvalidateItem(SID_ATTR_PARA_ULSPACE);
 
 	//	Zeilenabstand
 
@@ -995,7 +1101,7 @@ void __EXPORT ScDrawTextObjectBar::GetAttrState( SfxItemSet& rDestSet )
 
 	//	Unterstreichung
 
-	SfxItemState eState = aAttrSet.GetItemState( EE_CHAR_UNDERLINE, sal_True );
+	eState = aAttrSet.GetItemState( EE_CHAR_UNDERLINE, sal_True );
 	if ( eState == SFX_ITEM_DONTCARE )
 	{
 		rDestSet.InvalidateItem( SID_ULINE_VAL_NONE );

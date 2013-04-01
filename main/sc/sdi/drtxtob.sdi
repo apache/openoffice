@@ -83,6 +83,15 @@ interface TableDrawText
 	SID_ALIGNCENTERHOR			[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ALIGNRIGHT				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ALIGNBLOCK				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	
+	SID_ATTR_PARA_ADJUST_LEFT				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ADJUST_CENTER			    [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ADJUST_RIGHT				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ADJUST_BLOCK				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_LRSPACE                   [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_LINESPACE                 [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ULSPACE                   [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	
 	SID_ATTR_PARA_LINESPACE_10	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ATTR_PARA_LINESPACE_15	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ATTR_PARA_LINESPACE_20	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]

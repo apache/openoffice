@@ -222,6 +222,7 @@ $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/properties/e3dcompoundprop
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/properties/e3dsceneproperties.hxx,svx/sdr/properties/e3dsceneproperties.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/properties/measureproperties.hxx,svx/sdr/properties/measureproperties.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/table/tabledesign.hxx,svx/sdr/table/tabledesign.hxx))
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/table/tablecontroller.hxx,svx/sdr/table/tablecontroller.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/primitive2d/primitiveFactory2d.hxx,svx/sdr/primitive2d/primitiveFactory2d.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/primitive2d/sdrpathprimitive2d.hxx,svx/sdr/primitive2d/sdrpathprimitive2d.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sdr/primitive2d/sdrtextprimitive2d.hxx,svx/sdr/primitive2d/sdrtextprimitive2d.hxx))
@@ -566,4 +567,5 @@ $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/PopupControl.hxx,svx/s
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/SelectionAnalyzer.hxx,svx/sidebar/SelectionAnalyzer.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/SelectionChangeHandler.hxx,svx/sidebar/SelectionChangeHandler.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/ValueSetWithTextControl.hxx,svx/sidebar/ValueSetWithTextControl.hxx))
-
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/nbdtmgfact.hxx,svx/nbdtmgfact.hxx))
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/nbdtmg.hxx,svx/nbdtmg.hxx))

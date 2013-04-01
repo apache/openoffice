@@ -788,6 +788,29 @@ void SwView::ExecTabWin( SfxRequest& rReq )
         }
         break;
 
+    case SID_ATTR_PARA_ULSPACE:
+	{
+		SvxULSpaceItem aParaMargin((const SvxULSpaceItem&)rReq.
+			GetArgs()->Get(nSlot));
+
+		long nUDist = 0;
+		long nLDist = 0;
+		aParaMargin.SetUpper( aParaMargin.GetUpper() - nUDist );
+		aParaMargin.SetLower(aParaMargin.GetLower() - nLDist);
+
+		aParaMargin.SetWhich( RES_UL_SPACE );
+		SwTxtFmtColl* pColl = rSh.GetCurTxtFmtColl();
+		if(	pColl && pColl->IsAutoUpdateFmt() )
+		{
+			SfxItemSet aSet(GetPool(), RES_UL_SPACE, RES_UL_SPACE);
+			aSet.Put(aParaMargin);
+			rSh.AutoUpdatePara( pColl, aSet);
+		}
+		else
+			rSh.SetAttr( aParaMargin );
+	}
+	break;
+
     case SID_RULER_BORDERS_VERTICAL:
     case SID_RULER_BORDERS:
         {
@@ -1297,6 +1320,19 @@ void SwView::StateTabWin(SfxItemSet& rSet)
                 }
                 break;
             }
+
+	case SID_ATTR_PARA_ULSPACE:
+	{	
+		SvxULSpaceItem aUL = (const SvxULSpaceItem&)aCoreSet.Get(RES_UL_SPACE);
+		aUL.SetWhich(nWhich);
+
+		SfxItemState e = aCoreSet.GetItemState(RES_UL_SPACE);
+		if( e >= SFX_ITEM_AVAILABLE )
+			rSet.Put( aUL );
+		else
+			rSet.InvalidateItem(nWhich);
+	}
+	break;
 
         case SID_RULER_BORDER_DISTANCE:
             {

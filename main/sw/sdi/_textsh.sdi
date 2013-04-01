@@ -793,6 +793,21 @@ interface BaseText
 		ExecMethod = ExecMoveMisc ;
 		StateMethod = NoState ;
 	]
+	FN_SVX_SET_NUMBER
+	[
+		ExecMethod = ExecSetNumber;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
+	FN_SVX_SET_BULLET
+	[
+		ExecMethod = ExecSetNumber;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
+	SID_OUTLINE_BULLET // status(final|play)
+	[
+		ExecMethod = ExecEnterNum ;		
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
 
 	FN_INSERT_FOOTNOTE_DLG // status(final|play|rec)
 	[

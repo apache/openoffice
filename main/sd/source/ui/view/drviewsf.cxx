@@ -73,6 +73,10 @@
 #include "cfgids.hxx"
 #include "anminfo.hxx"
 
+#include <editeng/lspcitem.hxx>
+#include <editeng/ulspitem.hxx>
+#include <editeng/lrspitem.hxx>
+#include <editeng/escpitem.hxx>
 using ::rtl::OUString;
 using namespace ::com::sun::star;
 
@@ -302,6 +306,38 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			: nWhich;
 		switch ( nSlotId )
 		{
+			case SID_ATTR_PARA_LRSPACE:
+			{
+				SfxItemSet aAttrs( GetDoc()->GetPool() );
+				mpDrawView->GetAttributes( aAttrs );
+				SvxLRSpaceItem aLRSpace = ( (const SvxLRSpaceItem&) aAttrs.Get( EE_PARA_LRSPACE ) );
+				aLRSpace.SetWhich(SID_ATTR_PARA_LRSPACE);
+				rSet.Put(aLRSpace);
+				bAttr = sal_True;
+				Invalidate(SID_ATTR_PARA_LRSPACE);
+			}
+			break;
+			case SID_ATTR_PARA_LINESPACE:
+			{
+				SfxItemSet aAttrs( GetDoc()->GetPool() );
+				mpDrawView->GetAttributes( aAttrs );
+				SvxLineSpacingItem aLineLR = ( (const SvxLineSpacingItem&) aAttrs.Get( EE_PARA_SBL ) );
+				rSet.Put(aLineLR);
+				bAttr = sal_True;
+				Invalidate(SID_ATTR_PARA_LINESPACE);
+			}
+			break;
+			case SID_ATTR_PARA_ULSPACE:
+			{
+				SfxItemSet aAttrs( GetDoc()->GetPool() );
+				mpDrawView->GetAttributes( aAttrs );
+				SvxULSpaceItem aULSP = ( (const SvxULSpaceItem&) aAttrs.Get( EE_PARA_ULSPACE ) );
+				aULSP.SetWhich(SID_ATTR_PARA_ULSPACE);
+				rSet.Put(aULSP);
+				bAttr = sal_True;
+				Invalidate(SID_ATTR_PARA_ULSPACE);
+			}
+			break;
 			case SID_ATTR_FILL_STYLE:
 			case SID_ATTR_FILL_COLOR:
 			case SID_ATTR_FILL_GRADIENT:
@@ -318,6 +354,17 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
             case SID_ATTR_LINE_JOINT:
             case SID_ATTR_LINE_CAP:
 			case SID_ATTR_TEXT_FITTOSIZE:
+			case SID_ATTR_CHAR_FONT:
+			case SID_ATTR_CHAR_FONTHEIGHT:
+			case SID_ATTR_CHAR_SHADOWED:
+			case SID_ATTR_CHAR_POSTURE:
+			case SID_ATTR_CHAR_UNDERLINE:
+			case SID_ATTR_CHAR_STRIKEOUT:
+			case SID_ATTR_CHAR_WEIGHT:
+			case SID_ATTR_CHAR_COLOR:
+			case SID_ATTR_CHAR_KERNING:
+			case SID_SET_SUB_SCRIPT:
+			case SID_SET_SUPER_SCRIPT:
 			{
 				bAttr = sal_True;
 			}
@@ -493,25 +540,45 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 				nWhich = aNewIter.NextWhich();
 			}
 		}
+
+		SfxItemState eState = pSet->GetItemState( EE_PARA_LRSPACE );
+		if ( eState == SFX_ITEM_DONTCARE )
+		{
+			rSet.InvalidateItem(EE_PARA_LRSPACE);
+			rSet.InvalidateItem(SID_ATTR_PARA_LRSPACE);
+		}
+		eState = pSet->GetItemState( EE_PARA_SBL );
+		if ( eState == SFX_ITEM_DONTCARE )
+		{
+			rSet.InvalidateItem(EE_PARA_SBL);
+			rSet.InvalidateItem(SID_ATTR_PARA_LINESPACE);
+		}
+		eState = pSet->GetItemState( EE_PARA_ULSPACE );
+		if ( eState == SFX_ITEM_DONTCARE )
+		{
+			rSet.InvalidateItem(EE_PARA_ULSPACE);
+			rSet.InvalidateItem(SID_ATTR_PARA_ULSPACE);
+		}
+
+		SvxEscapement eEsc = (SvxEscapement) ( (const SvxEscapementItem&)
+						pSet->Get( EE_CHAR_ESCAPEMENT ) ).GetEnumValue();
+		if( eEsc == SVX_ESCAPEMENT_SUPERSCRIPT )
+		{
+			rSet.Put( SfxBoolItem( SID_SET_SUPER_SCRIPT, sal_True ) );
+		}
+		else if( eEsc == SVX_ESCAPEMENT_SUBSCRIPT )
+		{
+			rSet.Put( SfxBoolItem( SID_SET_SUB_SCRIPT, sal_True ) );
+		}
+
+		eState = pSet->GetItemState( EE_CHAR_KERNING, sal_True );
+		if ( eState == SFX_ITEM_DONTCARE )
+		{
+			rSet.InvalidateItem(EE_CHAR_KERNING);
+			rSet.InvalidateItem(SID_ATTR_CHAR_KERNING);
+		}
 		delete pSet;
 	}
-
-//    const SdrMarkList& rMarkList = mpDrawView->GetMarkedObjectList();
-//    sal_uLong nMarkCount = rMarkList.GetMarkCount();
-//    sal_Bool bDisabled = sal_False;
-//
-//    for (sal_uLong i = 0;
-//         i < nMarkCount && !bDisabled && i < 50; i++)
-//    {
-//        SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-//
-//        if (pObj->GetObjInventor() == E3dInventor)
-//        {
-//            bDisabled = sal_True;
-//            rSet.ClearItem(SDRATTR_SHADOW);
-//            rSet.DisableItem(SDRATTR_SHADOW);
-//        }
-//    }
 }
 
 

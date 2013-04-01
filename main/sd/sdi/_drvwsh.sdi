@@ -705,6 +705,14 @@ interface DrawView
         StateMethod = GetMenuState ;
 		MenuConfig = TRUE;
     ]
+    FN_SVX_SET_BULLET
+    [
+   		ExecMethod = FuTemporary ;
+    ]
+    FN_SVX_SET_NUMBER
+    [
+    	ExecMethod = FuTemporary ;
+    ]
     SID_ATTR_CHAR // ole : no, status : ?
     [
         ExecMethod = FuPermanent ;
@@ -1548,6 +1556,16 @@ interface DrawView
     [
         ExecMethod = ExecRuler ;
         StateMethod = GetRulerState ;
+    ]
+    SID_ATTR_PARA_LINESPACE
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_PARA_ULSPACE
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
     ]
     SID_ATTR_POSITION // ole : no, status : ?
     [

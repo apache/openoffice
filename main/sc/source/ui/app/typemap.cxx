@@ -108,6 +108,9 @@
 #include <editeng/crsditem.hxx>
 #include <editeng/brkitem.hxx>
 #include <editeng/charreliefitem.hxx>
+#include <editeng/lrspitem.hxx>
+#include <editeng/lspcitem.hxx>
+#include <editeng/ulspitem.hxx>
 #include <svx/rotmodit.hxx>
 #include <svx/drawitem.hxx>
 #include <svl/ilstitem.hxx>

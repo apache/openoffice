@@ -32,13 +32,15 @@
 #include <svx/selectioncontroller.hxx>
 #include <svx/svdotable.hxx>
 #include <svx/svdview.hxx>
-#include <tablemodel.hxx>
+//#include <tablemodel.hxx>
 
 class SdrObjEditView;
 class SdrObject;
 class SfxItemSet;
 
 namespace sdr { namespace table {
+
+class TableModel;
 
 const sal_Int16 SELTYPE_NONE = 0;
 const sal_Int16 SELTYPE_MOUSE = 1;
@@ -142,7 +144,8 @@ private:
 
 	DECL_LINK( UpdateHdl, void * );
 
-	TableModelRef mxTable;
+	//TableModelRef mxTable;
+	rtl::Reference< TableModel > mxTable;
 
 	CellPos maCursorFirstPos;
 	CellPos maCursorLastPos;

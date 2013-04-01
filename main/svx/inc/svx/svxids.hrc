@@ -373,6 +373,8 @@
 #define FN_NUM_BULLET_OFF       (FN_EDIT + 37)  /* Numerierung aus */
 #define FN_NUM_BULLET_ON        (FN_EDIT + 38)  /* Numerierung mit Bullets an */
 #define FN_NUM_NUMBERING_ON     (FN_EDIT + 44)  /* Numerierung an */
+#define FN_BUL_NUM_RULE_INDEX	(FN_EDIT + 120)  /* Achieving num rule index */
+#define FN_NUM_NUM_RULE_INDEX	(FN_EDIT + 121)
 
 #define FN_INSERT               (SID_SW_START +  300)
 #define FN_DELETE_BOOKMARK      (FN_INSERT + 1)
@@ -1269,11 +1271,17 @@
 #define SID_ATTR_LINE_JOINT                             (SID_SVX_START+1110)
 #define SID_ATTR_LINE_CAP                               (SID_SVX_START+1111)
 #define SID_ATTR_TRANSFORM_MATRIX                       (SID_SVX_START+1112)
+
 #define SID_CELL_FORMAT_BORDER                          (SID_SVX_START+1113)
-#define SID_CHAR_DLG_EFFECT                             (SID_SVX_START+1114)
+#define SID_CHAR_DLG_EFFECT				(SID_SVX_START+1114) 
+#define SID_ATTR_PARA_LEFT				(SID_SVX_START + 1115) 
+#define SID_ATTR_PARA_RIGHT				(SID_SVX_START + 1116)
+
+#define FN_SVX_SET_NUMBER				(RID_SVX_START + 1117)
+#define FN_SVX_SET_BULLET				(RID_SVX_START + 1118)
 
 // IMPORTANT NOTE: adjust SID_SVX_FIRSTFREE, when adding new slot id
-#define SID_SVX_FIRSTFREE                               (SID_CHAR_DLG_EFFECT + 1)
+#define SID_SVX_FIRSTFREE                               (FN_SVX_SET_BULLET + 1)
 
 // --------------------------------------------------------------------------
 // Overflow check for slot IDs

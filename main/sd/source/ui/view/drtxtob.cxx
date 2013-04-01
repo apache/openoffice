@@ -183,6 +183,8 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
             case SID_ATTR_CHAR_FONTHEIGHT:
             case SID_ATTR_CHAR_WEIGHT:
             case SID_ATTR_CHAR_POSTURE:
+		case SID_ATTR_CHAR_SHADOWED:
+            case SID_ATTR_CHAR_STRIKEOUT:
             {
                 SvxScriptSetItem aSetItem( nSlotId, GetPool() );
                 aSetItem.GetItemSet().Put( aAttrSet, sal_False );
@@ -483,6 +485,13 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 			break;
 		}
 
+		Invalidate(SID_ATTR_PARA_ADJUST_LEFT);
+		Invalidate(SID_ATTR_PARA_ADJUST_CENTER);
+		Invalidate(SID_ATTR_PARA_ADJUST_RIGHT);
+		Invalidate(SID_ATTR_PARA_ADJUST_BLOCK);
+		Invalidate(SID_ATTR_PARA_LINESPACE);
+		Invalidate(SID_ATTR_PARA_ULSPACE); 
+
         // paragraph text direction
         if( bDisableParagraphTextDirection )
         {
@@ -547,6 +556,17 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 			}
 		}
 */
+		SvxLRSpaceItem aLRSpace = ( (const SvxLRSpaceItem&) aAttrSet.Get( EE_PARA_LRSPACE ) );
+		aLRSpace.SetWhich(SID_ATTR_PARA_LRSPACE);
+		rSet.Put(aLRSpace);
+		Invalidate(SID_ATTR_PARA_LRSPACE);
+		//Added by xuxu 
+		SfxItemState eState = aAttrSet.GetItemState( EE_PARA_LRSPACE );
+		if ( eState == SFX_ITEM_DONTCARE )
+		{
+			rSet.InvalidateItem(EE_PARA_LRSPACE);
+			rSet.InvalidateItem(SID_ATTR_PARA_LRSPACE);
+		}
 		sal_uInt16 nLineSpace = (sal_uInt16) ( (const SvxLineSpacingItem&) aAttrSet.
                             Get( EE_PARA_SBL ) ).GetPropLineSpace();
 		switch( nLineSpace )

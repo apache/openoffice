@@ -4339,6 +4339,55 @@ XFormTextStyleItem FontWorkTextStyle SID_FORMTEXT_STYLE
 	GroupId = GID_SPECIAL;
 ]
 
+SvxLRSpaceItem ParaOutlineLeft SID_ATTR_PARA_LEFT
+
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = TRUE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_VIEW;
+]
+
+//--------------------------------------------------------------------------
+SvxLRSpaceItem ParaOutlineRight SID_ATTR_PARA_RIGHT
+()
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = TRUE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_VIEW;
+]
+
 //--------------------------------------------------------------------------
 SfxVoidItem FormatArea SID_ATTRIBUTES_AREA
 ()
@@ -7252,6 +7301,32 @@ SvxLineSpacingItem LineSpacing SID_ATTR_PARA_LINESPACE
 	GroupId = GID_FORMAT;
 ]
 
+SvxULSpaceItem ULSpacing SID_ATTR_PARA_ULSPACE
+
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = FALSE,
+	GroupId = GID_FORMAT;
+]
+
 //--------------------------------------------------------------------------
 SvxLineItem LineStyle SID_FRAME_LINESTYLE
 
@@ -7703,6 +7778,57 @@ SfxVoidItem OutlineBullet SID_OUTLINE_BULLET
 	StatusBarConfig = FALSE,
 	ToolBoxConfig = TRUE,
 	GroupId = GID_FORMAT;
+]
+
+SfxUInt16Item SetNumber FN_SVX_SET_NUMBER
+[	
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = FALSE,
+	GroupId = GID_SPECIAL;
+]
+
+//--------------------------------------------------------------------------
+SfxUInt16Item SetBullet FN_SVX_SET_BULLET
+[	
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = FALSE,
+	GroupId = GID_SPECIAL;
 ]
 
 //--------------------------------------------------------------------------
@@ -15584,6 +15710,60 @@ SfxBoolItem ProtectSize SID_ATTR_TRANSFORM_PROTECT_SIZE
 //--------------------------------------------------------------------------
 
 SfxVoidItem SvxFlipHorizontal SID_FLIP_HORIZONTAL
+[
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_EDIT;
+]
+
+//--------------------------------------------------------------------------
+
+SfxVoidItem SvxFlipVertical SID_FLIP_VERTICAL
+[
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_EDIT;
+]
+
+//--------------------------------------------------------------------------
+
+SfxBoolItem SvxAutoWidth SID_ATTR_TRANSFORM_AUTOWIDTH
 [
 	/* flags: */
 	AutoUpdate = TRUE,
