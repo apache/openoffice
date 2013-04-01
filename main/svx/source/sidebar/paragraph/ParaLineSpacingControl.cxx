@@ -152,8 +152,7 @@ void ParaLineSpacingControl::initial()
 	for (int i=0;i<4;i++)
 		maLineSpacing.AddItem(mpImg[i], &mpImgSel[i],mpStr[i],&mpStrTip[i]);
 
-	maLineSpacing.InsertCustom(maImgCus, maImgCusGrey, maStrCus);
-	maLineSpacing.SetCustomTip(maStrCus); //Add
+	maLineSpacing.AddItem( maImgCus, 0, maStrCus, 0 );
 
 	SetAllNoSel();
 	Link aLink = LINK(this, ParaLineSpacingControl,VSSelHdl );
@@ -264,11 +263,11 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 		mbLineSPDisable = sal_False;
 
 	if( mbLineSPDisable )
-		maLineSpacing.SetCusEnable(0);
+		maLineSpacing.ReplaceItemImages(5, maImgCusGrey,0);
 	else
 	{
-		maLineSpacing.SetCusEnable(1);
-		maLineSpacing.SetCustomTip(sHelpText,sal_True);//Modify for Sym2_7266
+		maLineSpacing.ReplaceItemImages(5, maImgCus,0);
+		maLineSpacing.SetItemText(5,sHelpText);
 	}
 
 	SfxItemState eState = currSPState;
@@ -303,7 +302,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 						mbUseLineSPCustom = DO_NOT_CUSTOM;
 						if ( LINESPACE_1 == currSPItem->GetPropLineSpace() )
 						{
-							maLineSpacing.SetSelItem(1);
+							maLineSpacing.SelectItem(1);
 							bValueSetFocus = sal_True;	//wj
 						}
 					}
@@ -317,7 +316,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 							pActLineDistFld->Disable();
 							pActLineDistFld->SetText( String() );
 							mbUseLineSPCustom = DO_NOT_CUSTOM;
-							maLineSpacing.SetSelItem(1);
+							maLineSpacing.SelectItem(1);
 							bValueSetFocus = sal_True;	//wj
 							break;
 						}
@@ -328,7 +327,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 							pActLineDistFld->SetText( String() );
 
 							mbUseLineSPCustom = DO_NOT_CUSTOM;
-							maLineSpacing.SetSelItem(3);
+							maLineSpacing.SelectItem(3);
 							bValueSetFocus = sal_True;	//wj
 							break;
 						}
@@ -339,7 +338,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 							pActLineDistFld->SetText( String() );
 							
 							mbUseLineSPCustom = DO_NOT_CUSTOM;
-							maLineSpacing.SetSelItem(4);							
+							maLineSpacing.SelectItem(4);							
 							bValueSetFocus = sal_True;	//wj
 							break;
 						}
@@ -367,13 +366,14 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 						if( currSPItem->GetPropLineSpace() == LINESPACE_115 )
 						{
 							mbUseLineSPCustom = DO_NOT_CUSTOM;
-							maLineSpacing.SetSelItem(2);
+							maLineSpacing.SelectItem(2);
 							bValueSetFocus = sal_True;	//wj
 						}
 						else
 						{
 							mbUseLineSPCustom = USE_CUSTOM;
-							maLineSpacing.SetSelItem(0);
+							maLineSpacing.SetNoSelection();
+                                                 maLineSpacing.SelectItem(0);
 						}
 					}
 					break;
@@ -395,7 +395,8 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 						}
 						pActLineDistFld->Enable();
 						pActLineDistFld->Show();
-						maLineSpacing.SetSelItem(0);
+						maLineSpacing.SetNoSelection();
+                                          maLineSpacing.SelectItem(0);
 
 						SetMetricValue( aLineDistAtMetricBox,
 							currSPItem->GetInterLineSpace(), eUnit );
@@ -424,7 +425,8 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 				}
 				pActLineDistFld->Enable();
 				pActLineDistFld->Show();
-				maLineSpacing.SetSelItem(0);
+				maLineSpacing.SetNoSelection();
+                            maLineSpacing.SelectItem(0);
 
 				SetMetricValue(aLineDistAtMetricBox, currSPItem->GetLineHeight(), eUnit);
 				aLineDist.SelectEntryPos( LLINESPACE_FIX );
@@ -450,7 +452,8 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 				}
 				pActLineDistFld->Enable();
 				pActLineDistFld->Show();
-				maLineSpacing.SetSelItem(0);
+				maLineSpacing.SetNoSelection();
+                            maLineSpacing.SelectItem(0);
 
 				SetMetricValue(aLineDistAtMetricBox, currSPItem->GetLineHeight(), eUnit);
 				aLineDist.SelectEntryPos( LLINESPACE_MIN );
@@ -464,7 +467,8 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 		aLineDist.Disable();
 		pActLineDistFld->Enable(sal_False);
 		pActLineDistFld->SetText( String() );
-		maLineSpacing.SetSelItem(0);
+		maLineSpacing.SetNoSelection();
+              maLineSpacing.SelectItem(0);
 	
 	    mbUseLineSPCustom = DO_NOT_CUSTOM;
 	}
@@ -473,7 +477,8 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 		pActLineDistFld->Enable(sal_False);
 		pActLineDistFld->SetText( String() );
 		aLineDist.SetNoSelection();
-		maLineSpacing.SetSelItem(0);
+		maLineSpacing.SetNoSelection();
+              maLineSpacing.SelectItem(0);
 		mbUseLineSPCustom = DO_NOT_CUSTOM;		
 	}
 
@@ -538,14 +543,14 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 
 void ParaLineSpacingControl::SetAllNoSel()
 {
-	maLineSpacing.SelectItem(1);	//modified by wj for sym2_5397
+	maLineSpacing.SelectItem(1);
 	maLineSpacing.SetNoSelection();
 }
 
 IMPL_LINK( ParaLineSpacingControl, LineSPDistHdl_Impl, ListBox*, pBox )
 {
 	maLineSpacing.SetNoSelection();
-	maLineSpacing.SetSelItem(0);
+       maLineSpacing.SelectItem(0);
 	maLineSpacing.Format();
 	maLineSpacing.StartSelection();
 
