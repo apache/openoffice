@@ -130,3 +130,5 @@ void  LineStyleValueSet::SetFirstSelect(bool bSel)
 
 
 } } // end of namespace svx::sidebar
+
+// eof

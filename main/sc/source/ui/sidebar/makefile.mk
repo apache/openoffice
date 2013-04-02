@@ -35,7 +35,8 @@ ENABLE_EXCEPTIONS=TRUE
 SRS1NAME=$(TARGET)
 SRC1FILES =  \
     AlignmentPropertyPanel.src          \
-    CellAppearancePropertyPanel.src
+    CellAppearancePropertyPanel.src     \
+    NumberFormatPropertyPanel.src
 
 SLOFILES = \
     $(SLO)$/ScPanelFactory.obj                  \
@@ -46,7 +47,8 @@ SLOFILES = \
     $(SLO)$/CellBorderUpdater.obj               \
     $(SLO)$/CellAppearancePropertyPanel.obj     \
     $(SLO)$/CellBorderStyleControl.obj          \
-    $(SLO)$/CellBorderStylePopup.obj
+    $(SLO)$/CellBorderStylePopup.obj            \
+    $(SLO)$/NumberFormatPropertyPanel.obj
 
 # --- Tagets -------------------------------------------------------
 

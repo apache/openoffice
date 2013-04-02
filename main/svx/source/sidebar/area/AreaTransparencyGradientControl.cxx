@@ -33,7 +33,6 @@
 namespace svx { namespace sidebar {
 
 // positioning helpers
-
 #define APOS1_1 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL), MAP_APPFONT))
 #define APOS2_1 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL + FIXED_TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL), MAP_APPFONT))
 #define APOS1_2 Point(LogicToPixel(Point(POPUPPANEL_MARGIN_HORIZONTAL+CONTROL_WIDTH+CONTROL_SPACING_HORIZONTAL,POPUPPANEL_MARGIN_VERTICAL), MAP_APPFONT))
@@ -346,3 +345,5 @@ IMPL_LINK(AreaTransparencyGradientControl, Right_Click45_Impl, void *, pControl)
 }
 
 } } // end of namespace svx::sidebar
+
+// eof

@@ -90,3 +90,5 @@ void SidebarDialControlBmp::DrawBackground()
 
 
 } } // end of namespace svx::sidebar
+
+// eof

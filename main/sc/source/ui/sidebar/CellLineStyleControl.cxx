@@ -54,19 +54,6 @@ CellLineStyleControl::~CellLineStyleControl(void)
 
 void CellLineStyleControl::Initialize()
 {
-    //if(!GetSettings().GetStyleSettings().GetHighContrastMode())
-    //{
-    //    maPushButtonMoreOptions.SetDefBkColor(GetSettings().GetStyleSettings().GetPopupPanelBackgroundColor());//Color(244,245,249)
-    //    maPushButtonMoreOptions.SetHoverBkColor(GetSettings().GetStyleSettings().GetCustButtonHoverColor());//Color( 93, 120, 163 )
-    //    maPushButtonMoreOptions.SetHoverTxtColor(GetSettings().GetStyleSettings().GetCustButtonTextHoverColor());//Color( 255, 255, 255 )
-    //}
-    //else
-    //{
-    //    maPushButtonMoreOptions.SetDefBkColor(GetSettings().GetStyleSettings().GetMenuColor());//Color(244,245,249)
-    //    maPushButtonMoreOptions.SetHoverBkColor(GetSettings().GetStyleSettings().GetMenuColor());//Color( 93, 120, 163 )
-    //    maPushButtonMoreOptions.SetHoverTxtColor(GetSettings().GetStyleSettings().GetCustButtonTextHoverColor());//Color( 255, 255, 255 )
-    //}
-
     //maPushButtonMoreOptions.SetIcoPosX(2);
     Link aLink = LINK(this, CellLineStyleControl, PBClickHdl);
     maPushButtonMoreOptions.SetClickHdl(aLink);

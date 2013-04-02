@@ -1204,3 +1204,5 @@ void PosSizePropertyPanel::DisableControls()
 
 
 } } // end of namespace svx::sidebar
+
+// eof

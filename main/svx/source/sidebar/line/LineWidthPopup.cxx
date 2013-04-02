@@ -85,3 +85,4 @@ void LineWidthPopup::PopupModeEndCallback (void)
 } } // end of namespace svx::sidebar
 
 
+// eof

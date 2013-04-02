@@ -213,3 +213,5 @@ private:
 
 
 #endif // SVX_PROPERTYPANEL_AREAPAGE_HXX
+
+// eof

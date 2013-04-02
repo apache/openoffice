@@ -7847,3 +7847,28 @@ SfxBoolItem ViewOption SID_SCGRIDSHOW
 	GroupId = GID_DATA;
 ]
 
+//--------------------------------------------------------------------------
+SfxUInt16Item NumberType SID_NUMBER_TYPE_FORMAT
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = TRUE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_VIEW;
+]

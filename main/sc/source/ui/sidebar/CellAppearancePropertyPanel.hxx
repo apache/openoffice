@@ -28,17 +28,6 @@
 #include <boost/scoped_ptr.hpp>
 #include <svx/sidebar/ColorPopup.hxx>
 
-//#include <sfx2/sectionpage.hxx>
-//#include <svx/dialcontrol.hxx>
-//#include <svx/tbxcolorupdate.hxx>
-//#include <svx/tbxlineupdate.hxx>
-//#include <vcl/fixed.hxx>
-//#include <vcl/toolbox.hxx>
-//#include <vcl/button.hxx>
-//#include <vcl/field.hxx>
-//#include <svx/svxenum.hxx>
-//#include <svx/borderline.hxx>
-
 class FixedText;
 namespace svx { class ToolboxButtonColorUpdater; }
 namespace sc { namespace sidebar { 
@@ -79,9 +68,6 @@ public:
         const SfxPoolItem* pState);
 
     SfxBindings* GetBindings();
-
-    //virtual void Paint(const Rectangle &rRect);
-    //void SetColor(Color aColor, sal_uInt16 nType);
 
 private:
     //ui controls
@@ -222,40 +208,6 @@ private:
     void Initialize();
     void SetStyleIcon();
     void UpdateControlState();
-
-
-	//popup windows
-//	SfxPopupPanelWin*		mpFloatWinColor;
-//	class ScCellBackColorPage;
-//	ScCellBackColorPage*	mpPageColor; 
-
-//	SfxPopupPanelWin*		mpFloatWinLineColor;
-//	class ScCellLineColorPage;
-//	ScCellLineColorPage*	mpPageLineColor; 
-
-//	SfxPopupPanelWin*		mpFloatWinStyle;
-//	class ScCellLineStylePage;
-//	ScCellLineStylePage*	mpPageStyle;
-
-//	SfxPopupPanelWin*		mpFloatWinBorder;
-//	class ScCellLineBorderPage;
-//	ScCellLineBorderPage*	mpPageBorder;
-
-//	void PaintRect(const ToolBox &rTB);
-
-//	ScCellBackColorPage* GetColorPage();
-//	SfxPopupPanelWin* GetColorFloatWin();
-//
-//	ScCellLineColorPage* GetLineColorPage();
-//	SfxPopupPanelWin* GetLineColorFloatWin();
-//
-//	ScCellLineStylePage* GetStylePage();
-//	SfxPopupPanelWin* GetStyleFloatWin();
-//
-//	ScCellLineBorderPage* GetBorderPage();
-//	SfxPopupPanelWin* GetBorderFloatWin();
-
-
 };
 
 } } // end of namespace ::sc::sidebar

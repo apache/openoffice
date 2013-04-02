@@ -136,14 +136,15 @@ void AlignmentPropertyPanel::Initialize()
 	//rotation control
 	mpCtrlDial->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Text Orientation")));	//wj acc
 	mpCtrlDial->SetModifyHdl(LINK( this, AlignmentPropertyPanel, RotationHdl));
-	//rotation:
+
+    //rotation
 	mpMtrAngle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Text Orientation")));	//wj acc
 	mpMtrAngle->SetModifyHdl(LINK( this, AlignmentPropertyPanel, AngleModifiedHdl));
 	mpMtrAngle->EnableAutocomplete( false );
-	//Vertical stacked
+
+    //Vertical stacked
 	mpCbStacked->SetClickHdl( LINK( this, AlignmentPropertyPanel, ClickStackHdl ) );
 
-	//wj
 	mpMtrAngle->InsertValue(0, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(45, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(90, FUNIT_CUSTOM);
@@ -153,8 +154,7 @@ void AlignmentPropertyPanel::Initialize()
 	mpMtrAngle->InsertValue(270, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(315, FUNIT_CUSTOM);
 
-	//
-	mpTBHorizontal->SetAccessibleRelationLabeledBy(mpTBHorizontal.get());
+    mpTBHorizontal->SetAccessibleRelationLabeledBy(mpTBHorizontal.get());
 	mpTBVertical->SetAccessibleRelationLabeledBy(mpTBVertical.get());
 	mpMFLeftIndent->SetAccessibleRelationLabeledBy(mpFTLeftIndent.get());
 	mpMtrAngle->SetAccessibleRelationLabeledBy(mpFtRotate.get());

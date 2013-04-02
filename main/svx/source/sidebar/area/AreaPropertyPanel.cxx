@@ -1382,3 +1382,5 @@ sal_Int32 AreaPropertyPanel::GetSelectedTransparencyTypeIndex (void) const
 }
 
 } } // end of namespace svx::sidebar
+
+// eof

@@ -82,3 +82,5 @@ void SidebarDialControl::HandleMouseEvent( const Point& rPos, bool bInitial )
 }
 
 } } // end of namespace svx::sidebar
+
+// eof

@@ -1178,3 +1178,5 @@ void LinePropertyPanel::SelectEndStyle(bool bStart)
 
 
 } } // end of namespace svx::sidebar
+
+// eof

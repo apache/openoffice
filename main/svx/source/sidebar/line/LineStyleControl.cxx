@@ -325,3 +325,5 @@ IMPL_LINK(LineStyleControl, PBStyleClickHdl, PushButton *, pPBtn)
 
 
 } } // end of namespace svx::sidebar
+
+// eof

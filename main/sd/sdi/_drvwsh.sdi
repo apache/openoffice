@@ -727,13 +727,13 @@ interface DrawView
     [
         ExecMethod = FuTemporary;
         StateMethod = GetAttrState;
-        Asynchron , Volatile , AutoUpdate ;
+        Asynchron , AutoUpdate ;
     ]
     FN_NUM_NUM_RULE_INDEX
     [
         ExecMethod = FuTemporary;
         StateMethod = GetAttrState;
-        Asynchron , Volatile , AutoUpdate ;
+        Asynchron , AutoUpdate ;
     ]
     SID_ATTR_CHAR // ole : no, status : ?
     [

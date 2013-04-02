@@ -174,3 +174,5 @@ private:
 
 
 #endif // SVX_PROPERTYPANEL_POSIZEPAGE_HXX
+
+// eof

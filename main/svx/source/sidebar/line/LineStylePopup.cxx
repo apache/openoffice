@@ -89,3 +89,5 @@ void LineStylePopup::SetStyleSelect (
 
 
 } } // end of namespace svx::sidebar
+
+// eof

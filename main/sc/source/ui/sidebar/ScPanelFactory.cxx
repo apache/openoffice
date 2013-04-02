@@ -25,6 +25,7 @@
 
 #include <AlignmentPropertyPanel.hxx>
 #include <CellAppearancePropertyPanel.hxx>
+#include <NumberFormatPropertyPanel.hxx>
 
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
@@ -123,9 +124,18 @@ Reference<ui::XUIElement> SAL_CALL ScPanelFactory::createUIElement (
             pPanel,
             ui::LayoutSize(-1,-1,-1));
     }
-    if (DoesResourceEndWith("/CellAppearancePropertyPanel"))
+    else if (DoesResourceEndWith("/CellAppearancePropertyPanel"))
     {
         CellAppearancePropertyPanel* pPanel = CellAppearancePropertyPanel::Create( pParentWindow, xFrame, pBindings );
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ui::LayoutSize(-1,-1,-1));
+    }
+    else if (DoesResourceEndWith("/NumberFormatPropertyPanel"))
+    {
+        NumberFormatPropertyPanel* pPanel = NumberFormatPropertyPanel::Create( pParentWindow, xFrame, pBindings );
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,

@@ -53,3 +53,5 @@ protected:
 } } // end of namespace svx::sidebar
 
 #endif
+
+// eof

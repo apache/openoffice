@@ -26,33 +26,12 @@
 #include <sfx2/sidebar/ControlFactory.hxx>
 #include <CellAppearancePropertyPanel.hxx>
 #include <CellAppearancePropertyPanel.hrc>
-//#include "propertypanel.hrc"
-//#include "scresid.hxx"
-//#include <sfx2/bindings.hxx>
-//#include <sfx2/dispatch.hxx>
-//#include <svx/dlgutil.hxx>
-//#include <svx/colritem.hxx>
-//#include <svx/brshitem.hxx>
-//#include <vcl/window.hxx>
-//#include <sfx2/objsh.hxx>
-//#include <svx/xtable.hxx>
-//#include <svx/drawitem.hxx>
-//#include <svx/bolnitem.hxx>
-//#include <unotools/pathoptions.hxx>
-//#include <svtools/button.hxx>
-//#include <svx/svxitems.hrc>
-//#include <com/sun/star/table/BorderLine.hpp>
-//#include <svx/boxitem.hxx>
-//#include <svl/poolitem.hxx>
-//#include <svx/numvset.hxx>
-//#include <vcl/i18nhelp.hxx>
 #include "sc.hrc"
 #include "scresid.hxx"
 #include <sfx2/bindings.hxx>
 #include <sfx2/dispatch.hxx>
 #include <vcl/fixed.hxx>
 #include <svx/tbxcolorupdate.hxx>
-//#include <vcl/toolbox.hxx>
 #include <svl/eitem.hxx>
 #include <editeng/bolnitem.hxx>
 #include <editeng/boxitem.hxx>
@@ -61,8 +40,6 @@
 #include <svx/sidebar/ColorControl.hxx>
 #include <boost/bind.hpp>
 #include <svx/sidebar/PopupContainer.hxx>
-//#include <vcl/bmpacc.hxx>
-//#include <i18npool/mslangid.hxx>
 #include <CellLineStyleControl.hxx>
 #include <CellLineStylePopup.hxx>
 #include <CellBorderUpdater.hxx>
@@ -393,23 +370,6 @@ IMPL_LINK(CellAppearancePropertyPanel, TbxCellBorderSelectHdl, ToolBox*, pToolBo
         {
             mpCellBorderStylePopup->Show(*pToolBox);
         }
-
-//		pToolBox->SetItemDown( nId, true );
-//
-//		ScCellLineBorderPage* pBorderPage = GetBorderPage();
-//
-//		Size aFloatSz = pBorderPage->GetOutputSizePixel();
-//		GetBorderFloatWin()->SetSizePixel( aFloatSz );
-//
-//		Point aPos = mpTBCellBorder->GetPosPixel();
-//		aPos = OutputToScreenPixel( aPos );
-//		Size aSize = mpTBCellBorder->GetSizePixel();
-//		Rectangle aRect( aPos, aSize );
-//
-//		GetBorderFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_NOFOCUSCLOSE|FLOATWIN_POPUPMODE_DOWN );
-//		GetBorderFloatWin()->SetPopupModeFlags(GetBorderFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
-//		pBorderPage->GetFocus();
-//	//	pBorderPage->SetCurBorderSelect(maLineColor, true);	
 	}
 	return 0;
 }
@@ -435,21 +395,6 @@ IMPL_LINK(CellAppearancePropertyPanel, TbxLineStyleSelectHdl, ToolBox*, pToolBox
             mpCellLineStylePopup->SetLineStyleSelect(mnOut, mnIn, mnDis);
             mpCellLineStylePopup->Show(*pToolBox);
         }
-
-//		pToolBox->SetItemDown( nId, true );
-//
-//		ScCellLineStylePage* pStylePage = GetStylePage();
-//		pStylePage->SetLineStyleSelect(mnOut, mnIn, mnDis);	
-//		Size aFloatSz = pStylePage->GetOutputSizePixel();
-//		GetStyleFloatWin()->SetSizePixel( aFloatSz );
-//		Point aPos = mpTBLineStyle->GetPosPixel();
-//		aPos = OutputToScreenPixel( aPos );
-//		Size aSize = mpTBLineStyle->GetSizePixel();
-//		Rectangle aRect( aPos, aSize );
-//
-//		GetStyleFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_NOFOCUSCLOSE|FLOATWIN_POPUPMODE_DOWN );
-//		GetStyleFloatWin()->SetPopupModeFlags(GetStyleFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
-//		pStylePage->GetFocus();
 	}
 	return 0;
 }
@@ -923,156 +868,6 @@ void CellAppearancePropertyPanel::UpdateControlState()
 		mpTBLineStyle->Disable();
 	}
 }
-
-//////////////////////////////////////////////////////////////////////////////
-
-
-
-
-//void CellAppearancePropertyPanel::PaintRect(const ToolBox &rTB)
-//{
-//	Point aPos = rTB.GetPosPixel();	
-//	Size aSize = rTB.GetSizePixel();
-//	Rectangle aRect( aPos, aSize );
-//	aRect.Left() -= 1;
-//	aRect.Top() -= 1;
-//	aRect.Right() += 1;
-//	aRect.Bottom() += 1;
-//	Color aOldLineColor = GetLineColor();
-//	Color aOldFillColor = GetFillColor();
-//	Color aLineColor(119,152,185);
-////	Color aLineColor = GetSettings().GetStyleSettings().GetPropertySectionTBxBorderColor();
-//	SetLineColor(aLineColor);
-//	if(!GetSettings().GetStyleSettings().GetHighContrastMode())
-//	{
-//		SetLineColor(aLineColor);
-//		SetFillColor(COL_WHITE);
-//	}
-//	else
-//	{
-//		SetLineColor(GetSettings().GetStyleSettings().GetShadowColor());
-//		SetFillColor(COL_TRANSPARENT);
-//	}
-//	DrawRect(aRect);
-//
-//	SetLineColor(aOldLineColor);
-//	SetFillColor(aOldFillColor);
-//}
-//void CellAppearancePropertyPanel::Paint(const Rectangle &rRect)
-//{	
-//	SfxSectionPage::Paint(rRect);
-//	if(mpLineColorUpdater == NULL)
-//		return;
-//
-//	PaintRect(*mpTBFillColor);
-//	PaintRect(*mpTBCellBorder);
-//	PaintRect(*mpTBLineStyle);
-//	PaintRect(*mpTBLineColor);
-//}
-//CellAppearancePropertyPanel::ScCellBackColorPage* CellAppearancePropertyPanel::GetColorPage()
-//{
-//	if (!mpFloatWinColor)
-//	{
-//		mpFloatWinColor = new SfxPopupPanelWin(this);
-//		mpFloatWinColor->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Background Color")));		//wj acc
-//		mpFloatWinColor->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageColor = new ScCellBackColorPage(mpFloatWinColor, this);
-//		mpFloatWinColor->SetBorderLineStyle( mpFloatWinColor->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpPageColor;
-//}
-//SfxPopupPanelWin* CellAppearancePropertyPanel::GetColorFloatWin()
-//{
-//	if (!mpFloatWinColor)
-//	{
-//		mpFloatWinColor = new SfxPopupPanelWin(this);
-//		mpFloatWinColor->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Background Color")));		//wj acc
-//		mpFloatWinColor->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageColor = new ScCellBackColorPage(mpFloatWinColor, this);
-//		mpFloatWinColor->SetBorderLineStyle( mpFloatWinColor->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpFloatWinColor;
-//}
-//CellAppearancePropertyPanel::ScCellLineColorPage* CellAppearancePropertyPanel::GetLineColorPage()
-//{
-//	if (!mpFloatWinLineColor)
-//	{
-//		mpFloatWinLineColor = new SfxPopupPanelWin(this);
-//		mpFloatWinLineColor->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Line Color")));		//wj acc
-//		mpFloatWinLineColor->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageLineColor = new ScCellLineColorPage(mpFloatWinLineColor, this);
-//		mpFloatWinLineColor->SetBorderLineStyle( mpFloatWinLineColor->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpPageLineColor;
-//}
-//SfxPopupPanelWin* CellAppearancePropertyPanel::GetLineColorFloatWin()
-//{
-//	if (!mpFloatWinLineColor)
-//	{
-//		mpFloatWinLineColor = new SfxPopupPanelWin(this);
-//		mpFloatWinLineColor->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Line Color")));		//wj acc
-//		mpFloatWinLineColor->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageLineColor = new ScCellLineColorPage(mpFloatWinLineColor, this);
-//		mpFloatWinLineColor->SetBorderLineStyle( mpFloatWinLineColor->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpFloatWinLineColor;
-//}
-//void  CellAppearancePropertyPanel::SetColor(Color aColor, sal_uInt16 nType)
-//{
-//	if(nType == BACK_COLOR)
-//		maBackColor = aColor;
-//	else if(nType == LINE_COLOR)
-//		maLineColor = aColor;
-//}
-//CellAppearancePropertyPanel::ScCellLineBorderPage* CellAppearancePropertyPanel::GetBorderPage()
-//{
-//	if (!mpFloatWinBorder)
-//	{
-//		mpFloatWinBorder = new SfxPopupPanelWin(this);
-//		mpFloatWinBorder->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Cell Border")));		//wj acc
-//		mpFloatWinBorder->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageBorder = new ScCellLineBorderPage(mpFloatWinBorder, this);
-//		mpFloatWinBorder->SetBorderLineStyle( mpFloatWinBorder->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpPageBorder;
-//}
-//SfxPopupPanelWin* CellAppearancePropertyPanel::GetBorderFloatWin()
-//{
-//	if (!mpFloatWinBorder)
-//	{
-//		mpFloatWinBorder = new SfxPopupPanelWin(this);
-//		mpFloatWinBorder->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Cell Border")));		//wj acc
-//		mpFloatWinBorder->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageBorder = new ScCellLineBorderPage(mpFloatWinBorder, this);
-//		mpFloatWinBorder->SetBorderLineStyle( mpFloatWinBorder->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpFloatWinBorder;
-//}
-//line Style window
-//CellAppearancePropertyPanel::ScCellLineStylePage* CellAppearancePropertyPanel::GetStylePage()
-//{
-//	if (!mpFloatWinStyle)
-//	{
-//		mpFloatWinStyle = new SfxPopupPanelWin(this);
-//		mpFloatWinStyle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Line Style")));		//wj acc
-//		mpFloatWinStyle->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageStyle = new ScCellLineStylePage(mpFloatWinStyle, this);
-//		mpFloatWinStyle->SetBorderLineStyle( mpFloatWinStyle->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpPageStyle;
-//}
-//SfxPopupPanelWin* CellAppearancePropertyPanel::GetStyleFloatWin()
-//{
-//	if (!mpFloatWinStyle)
-//	{
-//		mpFloatWinStyle = new SfxPopupPanelWin(this);
-//		mpFloatWinStyle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Line Style")));		//wj acc
-//		mpFloatWinStyle->SetPopupModeEndHdl( LINK( this, CellAppearancePropertyPanel, ImplPopupModeEndHdl ) );
-//		mpPageStyle = new ScCellLineStylePage(mpFloatWinStyle, this);
-//		mpFloatWinStyle->SetBorderLineStyle( mpFloatWinStyle->GetBorderStyle() | WINDOW_BORDER_MENU );
-//	}
-//	return mpFloatWinStyle;
-//}
 
 //////////////////////////////////////////////////////////////////////////////
 // namespace close

@@ -990,13 +990,97 @@ void ScFormatShell::ExecuteNumFormat( SfxRequest& rReq )
 			break;
 
 		case SID_NUMBER_FORMAT:
-			if ( pReqArgs )
+			//if ( pReqArgs )
+			//{
+			//	const SfxPoolItem* pItem;
+			//	if(pReqArgs->GetItemState(nSlot, sal_True, &pItem) == SFX_ITEM_SET)
+			//	{
+			//		String aCode = ((const SfxStringItem*)pItem)->GetValue();
+			//		pTabViewShell->SetNumFmtByStr( aCode );
+			//	}
+			//}
+
+            // symphony version with format interpretation
+			if(pReqArgs)
 			{
 				const SfxPoolItem* pItem;
-				if(pReqArgs->GetItemState(nSlot, sal_True, &pItem) == SFX_ITEM_SET)
+				ScDocument* pDoc = pViewData->GetDocument();
+				SvNumberFormatter* pFormatter = pDoc->GetFormatTable();
+				LanguageType eLanguage = ScGlobal::eLnge;
+				sal_Int16 eType = -1;
+				sal_uInt32 nCurrentNumberFormat;
+				
+                pDoc->GetNumberFormat(pViewData->GetCurX(), pViewData->GetCurY(), pViewData->GetTabNo(), nCurrentNumberFormat);
+				const SvNumberformat* pEntry = pFormatter->GetEntry(nCurrentNumberFormat);
+
+                if(pEntry)
+				{
+					eLanguage = pEntry->GetLanguage();
+					eType = pEntry->GetType();
+				}
+
+				//Just use eType to judge whether the command is fired for NUMBER/PERCENT/CURRENCY
+				//In sidebar, users can fire SID_NUMBER_FORMAT command by operating the related UI controls before they are disable
+				switch(eType)
+				{
+				case NUMBERFORMAT_ALL:
+				case NUMBERFORMAT_NUMBER:
+				case NUMBERFORMAT_NUMBER| NUMBERFORMAT_DEFINED:
+				case NUMBERFORMAT_PERCENT:
+				case NUMBERFORMAT_PERCENT| NUMBERFORMAT_DEFINED:
+				case NUMBERFORMAT_CURRENCY:
+				case NUMBERFORMAT_CURRENCY|NUMBERFORMAT_DEFINED:
+					eType = 0; 
+					break;
+				default:
+					eType =-1;
+				}
+				
+				if(SFX_ITEM_SET == pReqArgs->GetItemState(nSlot, true, &pItem) && eType != -1)
 				{
 					String aCode = ((const SfxStringItem*)pItem)->GetValue();
-					pTabViewShell->SetNumFmtByStr( aCode );
+					sal_uInt16 aLen = aCode.Len();
+					String* sFormat = new String[4];
+					String sTmpStr = String::CreateFromAscii(""); 
+					sal_uInt16 nCount(0);
+					sal_uInt16 nStrCount(0);
+
+					while(nCount < aLen)
+					{
+						sal_Unicode cChar = aCode.GetChar(nCount);
+
+						if(cChar == sal_Unicode(','))
+						{
+							sFormat[nStrCount] = sTmpStr;
+							sTmpStr = String::CreateFromAscii("");
+							nStrCount++;
+						}
+						else
+						{
+							sTmpStr += cChar;
+						}
+
+						nCount++;
+
+						if(nStrCount > 3)
+							break;
+					}
+
+					const sal_Bool bThousand = (sal_Bool)sFormat[0].ToInt32();
+					const sal_Bool bNegRed = (sal_Bool)sFormat[1].ToInt32();
+					const sal_uInt16 nPrecision = (sal_uInt16)sFormat[2].ToInt32();
+					const sal_uInt16 nLeadZeroes = (sal_uInt16)sFormat[3].ToInt32();
+
+					pFormatter->GenerateFormat(
+                        aCode, 
+                        nCurrentNumberFormat,//modify
+						eLanguage,
+						bThousand,
+						bNegRed,
+						nPrecision,
+						nLeadZeroes);
+					pTabViewShell->SetNumFmtByStr(aCode);
+					delete[] sFormat;
 				}
 			}
 			break;
@@ -1020,7 +1104,50 @@ void ScFormatShell::ExecuteNumFormat( SfxRequest& rReq )
 			}
 			break;
 
-		default:
+		case SID_NUMBER_TYPE_FORMAT:
+			{
+				SfxInt16Item aFormatItem((const SfxInt16Item&)rReq.GetArgs()->Get(nSlot));
+				sal_uInt16 nFormat = aFormatItem.GetValue();
+				switch(nFormat)
+				{
+				case 0:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_NUMBER); //Modify
+					break;
+				case 1:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_NUMBER, 2 ); //Modify
+					break;
+				case 2:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_PERCENT );
+					break;
+				case 3:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_CURRENCY );
+					break;
+				case 4:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_DATE );
+					break;
+				case 5:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_TIME );
+					break;
+				case 6:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_SCIENTIFIC );
+					break;
+				case 7:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_FRACTION );
+					break;
+				case 8:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_LOGICAL );
+					break;
+				case 9:
+					pTabViewShell->SetNumberFormat( NUMBERFORMAT_TEXT );
+					break;
+				default:
+					;
+				}	
+				rReq.Done();
+			}
+			break;
+
+        default:
 			DBG_ERROR("falscher Slot bei ExecuteEdit");
 			break;
 	}
@@ -2217,25 +2344,141 @@ void ScFormatShell::GetNumFormatState( SfxItemSet& rSet )
 		switch ( nWhich )
 		{
 			case SID_NUMBER_FORMAT:
+				//{
+				//	String aFormatCode;			// bleibt leer, wenn dont-care
+                //
+				//	const SfxItemSet& rAttrSet  = pTabViewShell->GetSelectionPattern()->GetItemSet();
+				//	if ( rAttrSet.GetItemState( ATTR_VALUE_FORMAT ) != SFX_ITEM_DONTCARE )
+				//	{
+				//		sal_uLong nNumberFormat = ((const SfxUInt32Item&)rAttrSet.Get(
+				//									ATTR_VALUE_FORMAT )).GetValue();
+                //
+				//		SvNumberFormatter* pFormatter = pDoc->GetFormatTable();
+				//		const SvNumberformat* pFormatEntry = pFormatter->GetEntry( nNumberFormat );
+				//		if ( pFormatEntry )
+				//			aFormatCode = pFormatEntry->GetFormatstring();
+				//	}
+                //
+				//	rSet.Put( SfxStringItem( nWhich, aFormatCode ) );
+				//}
+
+                // symphony version with format interpretation
 				{
-					String aFormatCode;			// bleibt leer, wenn dont-care
+					const SfxItemSet& rAttrSet = pTabViewShell->GetSelectionPattern()->GetItemSet();
 
-					const SfxItemSet& rAttrSet  = pTabViewShell->GetSelectionPattern()->GetItemSet();
-					if ( rAttrSet.GetItemState( ATTR_VALUE_FORMAT ) != SFX_ITEM_DONTCARE )
+					if(SFX_ITEM_DONTCARE != rAttrSet.GetItemState(ATTR_VALUE_FORMAT))
 					{
-						sal_uLong nNumberFormat = ((const SfxUInt32Item&)rAttrSet.Get(
-													ATTR_VALUE_FORMAT )).GetValue();
-
 						SvNumberFormatter* pFormatter = pDoc->GetFormatTable();
-						const SvNumberformat* pFormatEntry = pFormatter->GetEntry( nNumberFormat );
-						if ( pFormatEntry )
-							aFormatCode = pFormatEntry->GetFormatstring();
-					}
+						sal_uInt32 nNumberFormat = ((const SfxUInt32Item&)rAttrSet.Get(ATTR_VALUE_FORMAT)).GetValue();
+						sal_Bool bThousand(false);
+						sal_Bool bNegRed(false);
+						sal_uInt16 nPrecision(0);
+						sal_uInt16 nLeadZeroes(0);
 
-					rSet.Put( SfxStringItem( nWhich, aFormatCode ) );
+                        pFormatter->GetFormatSpecialInfo(nNumberFormat,bThousand, bNegRed, nPrecision, nLeadZeroes);
+						String aFormat;
+						static String sBreak = String::CreateFromAscii(",");
+						const String sThousand = String::CreateFromInt32(bThousand);
+						const String sNegRed = String::CreateFromInt32(bNegRed);
+						const String sPrecision = String::CreateFromInt32(nPrecision);
+						const String sLeadZeroes = String::CreateFromInt32(nLeadZeroes);
+
+						aFormat += sThousand;
+						aFormat += sBreak;
+						aFormat += sNegRed;
+						aFormat += sBreak;
+						aFormat += sPrecision;
+						aFormat += sBreak;
+						aFormat += sLeadZeroes;
+						aFormat += sBreak;
+
+						rSet.Put(SfxStringItem(nWhich, aFormat));
+					}
+					else
+					{
+						rSet.InvalidateItem( nWhich );
+					}
 				}
 				break;
 
+			case SID_NUMBER_TYPE_FORMAT:
+				{
+					sal_Int16 aFormatCode = -1;
+					const SfxItemSet& rAttrSet  = pTabViewShell->GetSelectionPattern()->GetItemSet();					
+					if ( rAttrSet.GetItemState( ATTR_VALUE_FORMAT ) >= SFX_ITEM_AVAILABLE ) //Modify for more robust
+					{
+						SvNumberFormatter* pFormatter = pDoc->GetFormatTable();
+						sal_uInt32 nNumberFormat = pTabViewShell->GetSelectionPattern()->GetNumberFormat( pFormatter );
+						const SvNumberformat* pFormatEntry = pFormatter->GetEntry( nNumberFormat );
+						bool bStandard = false;
+
+						if ( pFormatEntry )
+						{
+							aFormatCode = pFormatEntry->GetType();
+							bStandard = pFormatEntry->IsStandard();
+						}
+
+                        switch(aFormatCode)
+						{
+						case NUMBERFORMAT_NUMBER:
+						case NUMBERFORMAT_NUMBER| NUMBERFORMAT_DEFINED:    
+							//use format code and standard format code to judge whether it is General,
+							//if (nNumberFormat == nStandardNumberFormat)
+							if (bStandard)
+								aFormatCode = 0;
+							else
+                                aFormatCode = 1;
+							break;
+						case NUMBERFORMAT_PERCENT:
+						case NUMBERFORMAT_PERCENT| NUMBERFORMAT_DEFINED:
+							aFormatCode = 2;
+							break;
+						case NUMBERFORMAT_CURRENCY:
+						case NUMBERFORMAT_CURRENCY| NUMBERFORMAT_DEFINED:
+							aFormatCode = 3;
+							break;
+						case NUMBERFORMAT_DATE:
+						case NUMBERFORMAT_DATE| NUMBERFORMAT_DEFINED:
+							//Add
+						case NUMBERFORMAT_DATETIME:
+						case NUMBERFORMAT_DATETIME | NUMBERFORMAT_DEFINED:
+							aFormatCode = 4;
+							break;
+						case NUMBERFORMAT_TIME:
+						case NUMBERFORMAT_TIME| NUMBERFORMAT_DEFINED:
+							aFormatCode = 5;
+							break;
+						case NUMBERFORMAT_SCIENTIFIC:
+						case NUMBERFORMAT_SCIENTIFIC| NUMBERFORMAT_DEFINED:
+							aFormatCode = 6;
+							break;
+						case NUMBERFORMAT_FRACTION:
+						case NUMBERFORMAT_FRACTION| NUMBERFORMAT_DEFINED:
+							aFormatCode = 7;
+							break;
+						case NUMBERFORMAT_LOGICAL:
+						case NUMBERFORMAT_LOGICAL| NUMBERFORMAT_DEFINED:
+							aFormatCode = 8;
+							break;
+						case NUMBERFORMAT_TEXT:
+						case NUMBERFORMAT_TEXT| NUMBERFORMAT_DEFINED:
+							aFormatCode = 9;
+							break;
+						default:
+							aFormatCode = -1;	//for more roburst							
+						}
+						if( aFormatCode == -1 )
+							rSet.InvalidateItem( nWhich );
+						else
+							rSet.Put( SfxInt16Item( nWhich, aFormatCode ) );
+					}
+					else
+					{
+						rSet.InvalidateItem( nWhich );
+					}
+					
+				}
+				break;
 		}
 		nWhich = aIter.NextWhich();
 	}

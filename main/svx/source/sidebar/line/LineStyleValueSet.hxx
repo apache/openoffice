@@ -22,40 +22,6 @@
 #ifndef SVX_SIDEBAR_LINE_STYLE_VALUE_SET_HXX
 #define SVX_SIDEBAR_LINE_STYLE_VALUE_SET_HXX
 
-/*
-#include <sfx2/sidebar/propertypanel.hrc>
-#include <sfx2/sidebar/Theme.hxx>
-#include <sfx2/sidebar/ControlFactory.hxx>
-#include <LinePropertyPanel.hxx>
-#include <LinePropertyPanel.hrc>
-#include <svx/dialogs.hrc>
-#include <svx/dialmgr.hxx>
-#include <sfx2/objsh.hxx>
-#include <sfx2/bindings.hxx>
-#include <sfx2/dispatch.hxx>
-#include <svx/xlnclit.hxx>
-#include <svx/xtable.hxx>
-#include <svx/xdash.hxx>
-#include <svx/drawitem.hxx>
-#include <svx/svxitems.hrc>
-#include <unotools/pathoptions.hxx>
-#include <unotools/viewoptions.hxx>
-#include <comphelper/processfactory.hxx>
-#include <i18npool/mslangid.hxx>
-#include <svx/xlineit0.hxx>
-#include <svx/xlndsit.hxx>
-#include <vcl/svapp.hxx>
-#include <svx/xlnwtit.hxx>
-#include <vcl/lstbox.hxx>
-#include <svx/tbxcolorupdate.hxx>
-#include <vcl/toolbox.hxx>
-#include <svx/xlntrit.hxx>
-#include <svx/xlnstit.hxx>
-#include <svx/xlnedit.hxx>
-#include <svx/xlncapit.hxx>
-#include <svx/xlinjoit.hxx>
-#include <svx/sidebar/PopupControl.hxx>
-*/
 #include <svtools/valueset.hxx>
 
 namespace svx { namespace sidebar {

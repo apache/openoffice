@@ -240,3 +240,5 @@ private:
 } } // end of namespace svx::sidebar
 
 #endif
+
+// eof
