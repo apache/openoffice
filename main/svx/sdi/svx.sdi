@@ -6430,6 +6430,63 @@ SfxVoidItem DefaultNumbering FN_NUM_NUMBERING_ON
 	GroupId = GID_ENUMERATION;
 ]
 
+SfxBoolItem CurrentBulNumRule FN_BUL_NUM_RULE_INDEX
+(SfxUInt16Item On FN_PARAM_1)
+[
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = TRUE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	ImageRotation = TRUE;
+    ImageReflection = TRUE;
+    /* status: */
+	SlotType = SfxBoolItem
+
+	/* config: */
+	AccelConfig = TRUE,
+	MenuConfig = TRUE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_ENUMERATION;
+]
+SfxBoolItem CurrentNumNumRule FN_NUM_NUM_RULE_INDEX
+(SfxUInt16Item On FN_PARAM_1)
+[
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = TRUE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	ImageRotation = TRUE;
+    ImageReflection = TRUE;
+    /* status: */
+	SlotType = SfxBoolItem
+
+	/* config: */
+	AccelConfig = TRUE,
+	MenuConfig = TRUE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_ENUMERATION;
+]
+
 //--------------------------------------------------------------------------
 SfxVoidItem InsertObject SID_INSERT_OBJECT
 ( SfxGlobalNameItem ClassId SID_INSERT_OBJECT )

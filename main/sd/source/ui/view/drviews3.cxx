@@ -711,24 +711,17 @@ void  DrawViewShell::ExecRuler(SfxRequest& rReq)
 
 		case SID_ATTR_PARA_LRSPACE:
 		{
-			if( mpDrawView->IsTextEdit() )
-			{
-				sal_uInt16 nId = SID_ATTR_PARA_LRSPACE;
-				const SvxLRSpaceItem& rItem = (const SvxLRSpaceItem&)
-							pArgs->Get( nId );
+			sal_uInt16 nSlot = SID_ATTR_PARA_LRSPACE;
+			SvxLRSpaceItem aLRSpace = (const SvxLRSpaceItem&)pArgs->Get(
+				GetPool().GetWhich(nSlot));
 
-                SfxItemSet aEditAttr( GetPool(), EE_PARA_LRSPACE, EE_PARA_LRSPACE );
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_LRSPACE, EE_PARA_LRSPACE );
+			aLRSpace.SetWhich( EE_PARA_LRSPACE );
 
-                nId = EE_PARA_LRSPACE;
-				SvxLRSpaceItem aLRSpaceItem( rItem.GetLeft(),
-						rItem.GetRight(), rItem.GetTxtLeft(),
-						rItem.GetTxtFirstLineOfst(), nId );
-				aEditAttr.Put( aLRSpaceItem );
-				mpDrawView->SetAttributes( aEditAttr );
+			aEditAttr.Put( aLRSpace );
+			mpDrawView->SetAttributes( aEditAttr );
 
-				// #92557# Invalidate is missing here
-				Invalidate(SID_ATTR_PARA_LRSPACE);
-			}
+			Invalidate(SID_ATTR_PARA_LRSPACE);
 			break;
 		}
 		case SID_ATTR_LRSPACE:

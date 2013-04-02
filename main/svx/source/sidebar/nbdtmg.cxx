@@ -1,45 +1,23 @@
-/*************************************************************************
- *
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+/**************************************************************
  * 
- * Copyright IBM Corporation 2009.
- * Copyright 2009. by Sun Microsystems, Inc.
- *
- * OpenOffice.org - a multi-platform office productivity suite
- *
- * $RCSfile: nbdtmg.cxx,v $
- * $Revision: 1.00.00.0 $
- *
- * This file is part of OpenOffice.org.
- *
- * OpenOffice.org is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License version 3
- * only, as published by the Free Software Foundation.
- *
- * OpenOffice.org is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License version 3 for more details
- * (a copy is included in the LICENSE file that accompanied this code).
- *
- * You should have received a copy of the GNU Lesser General Public License
- * version 3 along with OpenOffice.org.  If not, see
- * <http://www.openoffice.org/license.html>
- * for a copy of the LGPLv3 License.
- *
- ************************************************************************/
-
-/***********************************************************************
- *
- *	Tool to Visualize Internal Data Structure for Productive Development
- *	It is a developer's tool from Lotus Symphony Documents Editor Team
- *
- *	This file provides developers of OpenOffice.org a visualize tool for tracing 
- *	the internal data structure and its parameters. 
- *
- *	Date: 05/25/2009
- *
- ***********************************************************************/
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
 #include "precompiled_svx.hxx"
 #ifndef _NBDTMG_HXX
 #include <svx/nbdtmg.hxx>
@@ -94,7 +72,6 @@
 #include <unotools/streamwrap.hxx>
 #include <unotools/ucbstreamhelper.hxx>
 #include <unotools/pathoptions.hxx>
-//#include <svtools/pathoptions.hxx>
 #include <editeng/eeitem.hxx>
 
 #include <com/sun/star/text/HoriOrientation.hpp>
@@ -131,7 +108,6 @@ typedef NumberSettings_Impl* NumberSettings_ImplPtr;
 SV_DECL_PTRARR_DEL(NumberSettingsArr_Impl,NumberSettings_ImplPtr,8,4)
 SV_IMPL_PTRARR( NumberSettingsArr_Impl, NumberSettings_ImplPtr )
 
-//extern Font& lcl_GetDefaultBulletFont();
 Font& lcl_GetDefaultBulletFont()
 {
 	static sal_Bool bInit = 0;
@@ -234,12 +210,7 @@ void NBOTypeMgrBase::StoreBulCharFmtName_impl() {
 		if ( pSet )
 		{	
 			SfxAllItemSet aSet(*pSet);
-			//const SfxPoolItem* pItem;
-			SFX_ITEMSET_ARG(&aSet,pBulletCharFmt,SfxStringItem,SID_BULLET_CHAR_FMT,sal_False);
-			//if(SFX_ITEM_SET == pSet->GetItemState(SID_BULLET_CHAR_FMT, sal_False, &pItem))
-			//	pNumCharFmtName = new String(((const SfxStringItem*)pItem)->GetValue());
-			
-			//const SfxStringItem* pBulletCharFmt = (const SfxStringItem*)(pSet->GetItem(SID_BULLET_CHAR_FMT));			
+			SFX_ITEMSET_ARG(&aSet,pBulletCharFmt,SfxStringItem,SID_BULLET_CHAR_FMT,sal_False);			
 				
 			if ( pBulletCharFmt )
 			{
@@ -254,7 +225,6 @@ String NBOTypeMgrBase::GetBulCharFmtName()
 void NBOTypeMgrBase::ImplLoad(String filename)
 {
 	bIsLoading = true;
-	//Sym3_2508 store size with stardard unit
 	SfxMapUnit		eOldCoreUnit=eCoreUnit;
 	eCoreUnit = SFX_MAPUNIT_100TH_MM;	
 	INetURLObject aFile( SvtPathOptions().GetPalettePath() );
@@ -295,7 +265,6 @@ void NBOTypeMgrBase::ImplLoad(String filename)
 void NBOTypeMgrBase::ImplStore(String filename)
 {
 	if (bIsLoading) return;
-	//Sym3_2508 store size with stardard unit
 	SfxMapUnit		eOldCoreUnit=eCoreUnit;
 	eCoreUnit = SFX_MAPUNIT_100TH_MM;	
 	INetURLObject aFile( SvtPathOptions().GetPalettePath() );
@@ -1138,7 +1107,6 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 		const Font* pFont = aFmt.GetBulletFont();
 		BulletsSettings_Impl* pEntry = (BulletsSettings_Impl*) (pActualBullets[nIndex]->pBullets);
 		pEntry->cBulletChar = cChar;
-		//Sym3_2884 provide a default font when pFont is NULL
 		pEntry->aFont = pFont?*pFont:lcl_GetDefaultBulletFont();
 		pEntry->bIsCustomized = sal_True;
 		String aStrFromRES = String(SVX_RESSTR( RID_SVXSTR_NUMBULLET_CUSTOM_BULLET_DESCRIPTION));
@@ -1182,7 +1150,6 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 					//pEntry->pGrfObj = pGrf;
 					pEntry->pGrfObj = new Graphic(*pGrf);
 					pEntry->aSize = aFmt.GetGraphicSize();
-					//Sym3_2508 use standard unit to store size
 					pEntry->aSize = OutputDevice::LogicToLogic(pEntry->aSize,(MapUnit)GetMapUnit(),MAP_100TH_MM);
 					sal_uInt16 nDIndex = mGrfTMgr->GetNBOIndexForNumRule(aNum,mLevel);
 					if (nDIndex!=(sal_uInt16)0xFFFF) pEntry->aSize=Size(0,0);
@@ -1206,7 +1173,6 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 			pActualBullets[nIndex]->nIndex = nIndex+1; //index in the tab page display,decrease 1 to the index within arr
 			pActualBullets[nIndex]->pBullets = new BulletsSettings_Impl(eNBType::BULLETS) ;
 			((BulletsSettings_Impl*)(pActualBullets[nIndex]->pBullets))->cBulletChar = cChar;
-			//Sym3_2884 provide a default font when pFont is NULL
 			((BulletsSettings_Impl*)(pActualBullets[nIndex]->pBullets))->aFont = pFont?*pFont:lcl_GetDefaultBulletFont();
 			((BulletsSettings_Impl*)(pActualBullets[nIndex]->pBullets))->bIsCustomized = sal_True;
 			((BulletsSettings_Impl*)(pActualBullets[nIndex]->pBullets))->eType = eNBType::BULLETS;
@@ -1269,7 +1235,6 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 						//((GrfBulDataRelation*)(pActualBullets[nIndex]->pBullets))->pGrfObj = pGrf;
 						((GrfBulDataRelation*)(pActualBullets[nIndex]->pBullets))->pGrfObj = new Graphic(*pGrf);
 						((GrfBulDataRelation*)(pActualBullets[nIndex]->pBullets))->pGrfObj = new Graphic(*pGrf);
-						//Sym3_2508 use standard unit to store size
 						Size aTmpSize = aFmt.GetGraphicSize();
 						aTmpSize = OutputDevice::LogicToLogic(aTmpSize,(MapUnit)GetMapUnit(),MAP_100TH_MM);
 						sal_uInt16 nDIndex = mGrfTMgr->GetNBOIndexForNumRule(aNum,mLevel);
@@ -1325,8 +1290,7 @@ sal_Bool MixBulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_
 				aFmt.SetNumberingType( SVX_NUM_CHAR_SPECIAL );
 				aFmt.SetBulletFont(&rActBulletFont);
 				aFmt.SetBulletChar(cChar );
-				aFmt.SetCharFmtName(sBulletCharFmtName);       
-				//Sym3_2398
+				aFmt.SetCharFmtName(sBulletCharFmtName);
 				String aEmptyStr;
 				aFmt.SetPrefix( aEmptyStr );					
 				aFmt.SetSuffix( aEmptyStr );
@@ -1516,7 +1480,6 @@ void NumberingTypeMgr::Init()
 				pNumEntry->nIndex = i + 1;
 				pNumEntry->nIndexDefault = i;
 				pNumEntry->pNumSetting = pNew;
-				//Modified for Sym2_7882
                 //SetItemText( i + 1, SVX_RESSTR( RID_SVXSTR_SINGLENUM_DESCRIPTIONS + i ));
 				{
 					String sText;
@@ -2080,7 +2043,6 @@ sal_Bool OutlineTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uIn
 			aFmt.SetCharFmtName(sBulletCharFmtName);
               	if (isResetSize) aFmt.SetBulletRelSize(100);
        	}
-		//Sym3_2636. Do not set indent values if no default value for this level
 		if(pNumSettingsArr->Count() > i) {
 			aFmt.SetLabelFollowedBy(pLevelSettings->eLabelFollowedBy);
 			aFmt.SetListtabPos(pLevelSettings->nTabValue);

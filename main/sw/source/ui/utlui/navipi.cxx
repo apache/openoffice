@@ -892,7 +892,7 @@ SwNavigationPI::SwNavigationPI( SfxBindings* _pBindings,
 									SV_DRAGDROP_ENABLE_TOP );
 	aContentTree.EnableAsyncDrag(sal_True);
 	aContentTree.ShowTree();
-    aContentToolBox.CheckItem(FN_SHOW_CONTENT_BOX, sal_True);
+	aContentToolBox.CheckItem(FN_SHOW_CONTENT_BOX, sal_True);
 
 // 	TreeListBox fuer Globaldokument
     aGlobalTree.SetPosSizePixel( 0, nListboxYPos, 0, 0, WINDOW_POSSIZE_Y );

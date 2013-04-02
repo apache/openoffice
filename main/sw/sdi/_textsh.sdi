@@ -732,6 +732,18 @@ interface BaseText
 		StateMethod = GetState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
+	FN_BUL_NUM_RULE_INDEX // status(final|play)
+	[
+		ExecMethod = ExecEnterNum ;
+		StateMethod = GetState ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
+	FN_NUM_NUM_RULE_INDEX // status(final|play)
+	[
+		ExecMethod = ExecEnterNum ;
+		StateMethod = GetState ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
 	FN_NUMBER_BULLETS // status(final|play)
 	[
 		ExecMethod = ExecEnterNum ;

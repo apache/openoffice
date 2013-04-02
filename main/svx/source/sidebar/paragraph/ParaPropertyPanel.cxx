@@ -1324,9 +1324,9 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 nSID, SfxItemState eS
 			maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_DEC, sal_True);
 		}
 
-		maTbxProDemote->Enable();
-		if( !mbOutLineRight && !mbOutLineLeft )
-			maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
+//		maTbxProDemote->Enable();
+//		if( !mbOutLineRight && !mbOutLineLeft )
+//			maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
 		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
 	}
 	else if( eState == SFX_ITEM_DISABLED )
@@ -1342,7 +1342,7 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 nSID, SfxItemState eS
 		else
 			maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_False);
 
-		maTbxProDemote->Disable();
+//		maTbxProDemote->Disable();
 		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
 	}
 	else
@@ -1356,7 +1356,7 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 nSID, SfxItemState eS
 			maTbxIndent_IncDec->Disable();
 		else
 			maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_False);
-		maTbxProDemote->Disable();
+//		maTbxProDemote->Disable();
 		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
 	}
 }
@@ -1439,14 +1439,14 @@ void ParaPropertyPanel::StateChangeOutLineImpl( sal_uInt16 nSID, SfxItemState eS
 	else
 		maTbxProDemote->EnableItem(BT_TBX_INDENT_PROMOTE, sal_False);
 
-	if( !mbOutLineRight && !mbOutLineLeft )
-	{
-		maTbxProDemote->EnableItem(BT_TBX_INDENT_PROMOTE, sal_True);
-		maTbxProDemote->EnableItem(BT_TBX_INDENT_DEMOTE, sal_True);
-		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
-	}
-	else 
-		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
+//	if( !mbOutLineRight && !mbOutLineLeft )
+//	{
+//		maTbxProDemote->EnableItem(BT_TBX_INDENT_PROMOTE, sal_True);
+//		maTbxProDemote->EnableItem(BT_TBX_INDENT_DEMOTE, sal_True);
+//		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
+//	}
+//	else 
+//		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
 }
 
 void ParaPropertyPanel::StateChangeIncDecImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )

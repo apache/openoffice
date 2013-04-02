@@ -699,6 +699,16 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
     ]
+    FN_NUM_BULLET_ON
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+    ]
+    FN_NUM_NUMBERING_ON
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+    ]
     SID_OUTLINE_BULLET // ole : no, status : ?
     [
         ExecMethod = FuTemporary ;
@@ -712,6 +722,18 @@ interface DrawView
     FN_SVX_SET_NUMBER
     [
     	ExecMethod = FuTemporary ;
+    ]
+    FN_BUL_NUM_RULE_INDEX
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+        Asynchron , Volatile , AutoUpdate ;
+    ]
+    FN_NUM_NUM_RULE_INDEX
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+        Asynchron , Volatile , AutoUpdate ;
     ]
     SID_ATTR_CHAR // ole : no, status : ?
     [
@@ -2631,5 +2653,75 @@ interface DrawView
     [
         ExecMethod = FuTable ;
         StateMethod = GetTableMenuState ;
+    ]
+    SID_ATTR_CHAR_FONT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_FONTHEIGHT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_WEIGHT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_POSTURE
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_UNDERLINE
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_SHADOWED
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_STRIKEOUT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_COLOR
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_KERNING
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_SET_SUB_SCRIPT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_SET_SUPER_SCRIPT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_TABLE_VERT_NONE
+    [
+        ExecMethod = ExecutePropPanelAttr ;
+        StateMethod = GetStatePropPanelAttr ;		
+    ]
+    SID_TABLE_VERT_CENTER
+    [
+        ExecMethod = ExecutePropPanelAttr ;
+        StateMethod = GetStatePropPanelAttr ;	
+    ]
+    SID_TABLE_VERT_BOTTOM
+    [
+        ExecMethod = ExecutePropPanelAttr ;
+        StateMethod = GetStatePropPanelAttr ;	
     ]
 }

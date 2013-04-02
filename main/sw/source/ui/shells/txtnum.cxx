@@ -48,7 +48,8 @@
 #include <sfx2/tabdlg.hxx>
 #include <svx/nbdtmg.hxx>
 #include <svx/nbdtmgfact.hxx>
-
+#include <sfx2/viewfrm.hxx>
+#include <sfx2/bindings.hxx>
 using namespace svx::sidebar;
 
 void SwTextShell::ExecEnterNum(SfxRequest &rReq)
@@ -58,40 +59,60 @@ void SwTextShell::ExecEnterNum(SfxRequest &rReq)
 	{
 	case FN_NUM_NUMBERING_ON:
 	{
-        SFX_REQUEST_ARG( rReq, pItem, SfxBoolItem, FN_PARAM_1 , sal_False );
-        sal_Bool bMode = !GetShell().HasNumber(); // #i29560#
-        if ( pItem )
-            bMode = pItem->GetValue();
-        else
-            rReq.AppendItem( SfxBoolItem( FN_PARAM_1, bMode ) );
+		GetShell().StartAllAction();
+		SFX_REQUEST_ARG( rReq, pItem, SfxBoolItem, FN_PARAM_1 , sal_False );
+		sal_Bool bMode = !GetShell().SelectionHasNumber(); // #i29560#
+		if ( pItem )
+			bMode = pItem->GetValue();
+		else
+			rReq.AppendItem( SfxBoolItem( FN_PARAM_1, bMode ) );
 
-        if ( bMode != (GetShell().HasNumber()) ) // #i29560#
-        {
-            rReq.Done();
-            if( bMode )
-                GetShell().NumOn();
-            else
-                GetShell().NumOrBulletOff(); // #i29560#
-        }
+		if ( bMode != (GetShell().SelectionHasNumber()) ) // #i29560#
+		{
+			rReq.Done();
+			if( bMode )
+				GetShell().NumOn();
+			else
+				GetShell().NumOrBulletOff(); // #i29560#
+		}
+		sal_Bool bNewResult = GetShell().SelectionHasNumber();
+		if (bNewResult!=bMode) {
+			SfxBindings& rBindings = GetView().GetViewFrame()->GetBindings();
+			SfxBoolItem aItem(FN_NUM_NUMBERING_ON,!bNewResult);
+			rBindings.SetState(aItem);
+			SfxBoolItem aNewItem(FN_NUM_NUMBERING_ON,bNewResult);
+			rBindings.SetState(aNewItem);
+		}
+		GetShell().EndAllAction();
 	}
 	break;
 	case FN_NUM_BULLET_ON:
 	{
-        SFX_REQUEST_ARG( rReq, pItem, SfxBoolItem, FN_PARAM_1 , sal_False );
-        sal_Bool bMode = !GetShell().HasBullet(); // #i29560#
-        if ( pItem )
-            bMode = pItem->GetValue();
-        else
-            rReq.AppendItem( SfxBoolItem( FN_PARAM_1, bMode ) );
+		GetShell().StartAllAction();
+		SFX_REQUEST_ARG( rReq, pItem, SfxBoolItem, FN_PARAM_1 , sal_False );
+		sal_Bool bMode = !GetShell().SelectionHasBullet(); // #i29560#
+		if ( pItem )
+			bMode = pItem->GetValue();
+		else
+			rReq.AppendItem( SfxBoolItem( FN_PARAM_1, bMode ) );
 
-        if ( bMode != (GetShell().HasBullet()) ) // #i29560#
-        {
-            rReq.Done();
-            if( bMode )
-                GetShell().BulletOn();
-            else
-                GetShell().NumOrBulletOff(); // #i29560#
-        }
+		if ( bMode != (GetShell().SelectionHasBullet()) ) // #i29560#
+		{
+			rReq.Done();
+			if( bMode )
+				GetShell().BulletOn();
+			else
+				GetShell().NumOrBulletOff(); // #i29560#
+		}
+		sal_Bool bNewResult = GetShell().SelectionHasBullet();
+		if (bNewResult!=bMode) {
+			SfxBindings& rBindings = GetView().GetViewFrame()->GetBindings();
+			SfxBoolItem aItem(FN_NUM_BULLET_ON,!bNewResult);
+			rBindings.SetState(aItem);
+			SfxBoolItem aNewItem(FN_NUM_BULLET_ON,bNewResult);
+			rBindings.SetState(aNewItem);
+		}
+		GetShell().EndAllAction();
 	}
 	break;
 	case FN_NUMBER_BULLETS:

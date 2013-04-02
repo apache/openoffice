@@ -132,6 +132,20 @@ void DrawViewShell::FuTemp01(SfxRequest& rReq)
 			Cancel();
 		}
 		break;
+		case FN_NUM_BULLET_ON: 
+		{
+			// The value (sal_uInt16)0xFFFF means set bullet on/off.
+			SfxUInt16Item aItem(FN_SVX_SET_BULLET, (sal_uInt16)0xFFFF);
+			GetViewFrame()->GetDispatcher()->Execute( FN_SVX_SET_BULLET, SFX_CALLMODE_RECORD, &aItem, 0L );
+		}
+		break;
+		case FN_NUM_NUMBERING_ON: 
+		{
+			// The value (sal_uInt16)0xFFFF means set bullet on/off.
+			SfxUInt16Item aItem(FN_SVX_SET_NUMBER, (sal_uInt16)0xFFFF);
+			GetViewFrame()->GetDispatcher()->Execute( FN_SVX_SET_NUMBER, SFX_CALLMODE_RECORD, &aItem, 0L );
+		}
+		break;
 
 		case SID_OUTLINE_BULLET:
 		case FN_SVX_SET_BULLET:
