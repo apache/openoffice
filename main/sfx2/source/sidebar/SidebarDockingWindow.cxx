@@ -78,7 +78,32 @@ void SidebarDockingWindow::DoDispose (void)
 
 void SidebarDockingWindow::GetFocus()
 {
-    SfxDockingWindow::GetFocus();
+    mpSidebarController->GetFocusManager().GrabFocus();
+}
+
+
+
+
+long SidebarDockingWindow::PreNotify (NotifyEvent& rEvent)
+{
+    switch (rEvent.GetType())
+    {
+        case EVENT_KEYINPUT:
+        {
+            const KeyEvent* pKeyEvent = rEvent.GetKeyEvent();
+            if (pKeyEvent != NULL)
+                return mpSidebarController->GetFocusManager().NotifyDockingWindowEvent(*pKeyEvent);
+            else
+                break;
+        }
+
+        case EVENT_GETFOCUS:
+            OSL_TRACE("");
+            break;
+
+    }
+    
+    return SfxDockingWindow::PreNotify(rEvent);
 }
 
 

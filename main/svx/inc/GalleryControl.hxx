@@ -48,6 +48,8 @@ public:
         Window* pParentWindow);
     virtual ~GalleryControl (void);
 
+    sal_Bool KeyInput( const KeyEvent& rKEvt, Window* pWindow);
+
 private:
     Gallery* mpGallery;
     ::boost::scoped_ptr<GallerySplitter> mpSplitter;
@@ -71,7 +73,6 @@ protected:
 	Graphic GetGraphic (void) const;
 	sal_Bool GetVCDrawModel (FmFormModel& rModel) const;
 	sal_Bool IsLinkage (void) const;
-    sal_Bool KeyInput( const KeyEvent& rKEvt, Window* pWindow);
 };
 
 } } // end of namespace svx::sidebar

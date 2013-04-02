@@ -206,8 +206,8 @@ sal_Int32 DeckLayouter::PlacePanels (
     // Assign heights and places.
     IterateLayoutItems(iItem,rLayoutItems)
     {
-		if (iItem->mpPanel == NULL)
-			continue;
+        if (iItem->mpPanel == NULL)
+            continue;
 
         Panel& rPanel (*iItem->mpPanel);
 
@@ -224,10 +224,6 @@ sal_Int32 DeckLayouter::PlacePanels (
                 pTitleBar->SetPosSizePixel(0, nY, nWidth, nPanelTitleBarHeight);
                 pTitleBar->Show();
                 nY += nPanelTitleBarHeight;
-
-                // Separator below the panel title bar.
-                aSeparators.push_back(nY);
-                nY += nDeckSeparatorHeight;
             }
             else
             {
@@ -267,6 +263,15 @@ sal_Int32 DeckLayouter::PlacePanels (
         else
         {
             rPanel.Hide();
+
+            // Add a separator below the collapsed panel, if it is the
+            // last panel in the deck.
+            if (iItem == rLayoutItems.end()-1)
+            {
+                // Separator below the panel title bar.
+                aSeparators.push_back(nY);
+                nY += nDeckSeparatorHeight;
+            }
         }
     }
 

@@ -54,7 +54,7 @@ Deck::Deck (
     const DeckDescriptor& rDeckDescriptor,
     Window* pParentWindow,
     const ::boost::function<void(void)>& rCloserAction)
-    : Window(pParentWindow),
+    : Window(pParentWindow, 0),
       msId(rDeckDescriptor.msId),
       maIcon(),
       msIconURL(rDeckDescriptor.msIconURL),
@@ -68,10 +68,12 @@ Deck::Deck (
 {
     SetBackground(Wallpaper());
 
-    mpScrollClipWindow->Show();
     mpScrollClipWindow->SetBackground(Wallpaper());
-    mpScrollContainer->Show();
+    mpScrollClipWindow->Show();
+
+    mpScrollContainer->SetStyle(mpScrollContainer->GetStyle() | WB_DIALOGCONTROL);
     mpScrollContainer->SetBackground(Wallpaper());
+    mpScrollContainer->Show();
 
     mpVerticalScrollBar->SetScrollHdl(LINK(this, Deck, HandleVerticalScrollBarChange));
 

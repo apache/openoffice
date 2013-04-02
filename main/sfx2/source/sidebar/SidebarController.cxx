@@ -136,6 +136,8 @@ SidebarController::~SidebarController (void)
 
 void SAL_CALL SidebarController::disposing (void)
 {
+    maFocusManager.Clear();
+
     cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
         css::ui::ContextChangeEventMultiplexer::get(
             ::comphelper::getProcessComponentContext()));
@@ -353,6 +355,8 @@ void SidebarController::SwitchToDeck (
     const DeckDescriptor& rDeckDescriptor,
     const Context& rContext)
 {
+    maFocusManager.Clear();
+
     if ( ! msCurrentDeckId.equals(rDeckDescriptor.msId))
     {
         // When the deck changes then destroy the deck and all panels
@@ -480,6 +484,11 @@ void SidebarController::SwitchToDeck (
 
     if (bHasPanelSetChanged)
         NotifyResize();
+
+    // Tell the focus manager about the new panels and tab bar
+    // buttons.
+    maFocusManager.SetPanels(aNewPanels);
+    mpTabBar->UpdateFocusManager(maFocusManager);
 }
 
 
@@ -838,6 +847,14 @@ void SidebarController::OpenDeck (void)
 
         NotifyResize();
     }
+}
+
+
+
+
+FocusManager& SidebarController::GetFocusManager (void)
+{
+    return maFocusManager;
 }
 
 

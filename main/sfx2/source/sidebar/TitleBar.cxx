@@ -26,6 +26,7 @@
 
 #include <tools/svborder.hxx>
 #include <vcl/gradient.hxx>
+#include <vcl/lineinfo.hxx>
 
 ToolbarValue::~ToolbarValue (void) {}
 
@@ -69,7 +70,7 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
     (void)rUpdateArea;
 
     // Paint title bar background.
-    Size aWindowSize( GetOutputSizePixel() );
+    Size aWindowSize (GetOutputSizePixel());
     Rectangle aTitleBarBox(
         0,
         0, 
@@ -78,7 +79,10 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
         );
 
     PaintDecoration(aTitleBarBox);
-    PaintTitle(GetTitleArea(aTitleBarBox));
+    const Rectangle aTitleBox (GetTitleArea(aTitleBarBox));
+    PaintTitle(aTitleBox);
+    if (HasFocus())
+        PaintFocus(aTitleBox);
 }
 
 
@@ -112,6 +116,14 @@ void TitleBar::SetPosSizePixel (
 
 
 
+ToolBox& TitleBar::GetToolBox (void)
+{
+    return maToolBox;
+}
+
+
+
+
 void TitleBar::HandleToolBoxItemClick (const sal_uInt16 nItemIndex)
 {
     (void)nItemIndex;
@@ -125,9 +137,7 @@ void TitleBar::PaintTitle (const Rectangle& rTitleBox)
 {
     Push(PUSH_FONT | PUSH_TEXTCOLOR);
 
-    // Use a bold font for the deck title.
     Font aFont(GetFont());
-    aFont.SetWeight(WEIGHT_BOLD);
     SetFont(aFont);
 
     // Paint title bar text.
@@ -136,7 +146,38 @@ void TitleBar::PaintTitle (const Rectangle& rTitleBox)
         rTitleBox,
         msTitle,
         TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER);
+
+    Pop();
+}
+
+
+
+
+void TitleBar::PaintFocus (const Rectangle& rFocusBox)
+{
+    Push(PUSH_FONT | PUSH_TEXTCOLOR | PUSH_LINECOLOR | PUSH_FILLCOLOR);
+
+    const Rectangle aTextBox (
+        GetTextRect(
+            rFocusBox,
+            msTitle,
+            TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER));
+    const Rectangle aLargerTextBox (
+        aTextBox.Left() - 2,
+        aTextBox.Top() - 2,
+        aTextBox.Right() + 2,
+        aTextBox.Bottom() + 2);
+
+    LineInfo aDottedStyle (LINE_DASH);
+    aDottedStyle.SetDashCount(0);
+    aDottedStyle.SetDotCount(1);
+    aDottedStyle.SetDotLen(1);
+    aDottedStyle.SetDistance(1);
     
+    SetFillColor();
+    SetLineColor(COL_BLACK);
+    DrawPolyLine(Polygon(aLargerTextBox), aDottedStyle);
+
     Pop();
 }
 

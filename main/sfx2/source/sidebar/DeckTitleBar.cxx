@@ -105,13 +105,6 @@ Rectangle DeckTitleBar::GetTitleArea (const Rectangle& rTitleBarBox)
 void DeckTitleBar::PaintDecoration (const Rectangle& rTitleBarBox)
 {
     (void)rTitleBarBox;
-        
-    Image aGripImage (Theme::GetImage(Theme::Image_Grip));
-
-    const Point aTopLeft (
-        gaLeftGripPadding,
-        (GetSizePixel().Height()-aGripImage.GetSizePixel().Height())/2);
-    DrawImage(aTopLeft, aGripImage);
 }
 
 

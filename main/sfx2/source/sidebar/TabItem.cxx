@@ -41,6 +41,7 @@ TabItem::TabItem (Window* pParentWindow)
       mbIsLeftButtonDown(false),
       mePaintType(PT_Theme)
 {
+    SetStyle(GetStyle() | WB_TABSTOP | WB_DIALOGCONTROL | WB_NOPOINTERFOCUS);
     SetBackground(Theme::GetPaint(Theme::Paint_TabBarBackground).GetWallpaper());
 #ifdef DEBUG
     SetText(A2S("TabItem"));
@@ -59,19 +60,22 @@ TabItem::~TabItem (void)
 
 void TabItem::Paint (const Rectangle& rUpdateArea)
 {
+    OSL_TRACE("TabItem::Paint");
     switch(mePaintType)
     {
         case PT_Theme:
         default:
         {
             const bool bIsSelected (IsChecked());
-            const bool bIsMouseOver (IsMouseOver());
+            const bool bIsHighlighted (IsMouseOver() || HasFocus());
             DrawHelper::DrawRoundedRectangle(
                 *this,
                 Rectangle(Point(0,0), GetSizePixel()),
-                2,
-                bIsMouseOver||bIsSelected ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
-                bIsMouseOver
+                3,
+                bIsHighlighted||bIsSelected
+                    ? Theme::GetColor(Theme::Color_TabItemBorder)
+                    : Color(0xffffffff),
+                bIsHighlighted
                     ? Theme::GetPaint(Theme::Paint_TabItemBackgroundHighlight)
                     : Theme::GetPaint(Theme::Paint_TabItemBackgroundNormal));
 
@@ -109,18 +113,12 @@ void TabItem::MouseMove (const MouseEvent& rEvent)
 
 void TabItem::MouseButtonDown (const MouseEvent& rMouseEvent)
 {
-#if 0
-    Hide();
-    ImageRadioButton::MouseButtonDown(rMouseEvent);
-    Show();
-#else
     if (rMouseEvent.IsLeft())
     {
         mbIsLeftButtonDown = true;
         CaptureMouse();
         Invalidate();
     }
-#endif
 }
 
 
@@ -128,11 +126,6 @@ void TabItem::MouseButtonDown (const MouseEvent& rMouseEvent)
 
 void TabItem::MouseButtonUp (const MouseEvent& rMouseEvent)
 {
-#if 0
-    Hide();
-    ImageRadioButton::MouseButtonUp(rMouseEvent);
-    Show();
-#else
     if (IsMouseCaptured())
         ReleaseMouse();
     
@@ -150,7 +143,6 @@ void TabItem::MouseButtonUp (const MouseEvent& rMouseEvent)
         mbIsLeftButtonDown = false;
         Invalidate();
     }
-#endif
 }
 
 

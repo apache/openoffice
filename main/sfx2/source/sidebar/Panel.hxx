@@ -58,6 +58,7 @@ public:
     bool IsTitleBarOptional (void) const;
     void SetUIElement (const cssu::Reference<css::ui::XUIElement>& rxElement);
     cssu::Reference<css::ui::XSidebarPanel> GetPanelComponent (void) const;
+    cssu::Reference<css::awt::XWindow> GetElementWindow (void);
     void SetExpanded (const bool bIsExpanded);
     bool IsExpanded (void) const;
     bool HasIdPredicate (const ::rtl::OUString& rsId) const;
@@ -79,8 +80,6 @@ private:
     bool mbIsExpanded;
     const ::boost::function<void(void)> maDeckLayoutTrigger;
     Rectangle maBoundingBox;
-
-    cssu::Reference<css::awt::XWindow> GetElementWindow (void);
 };
 typedef ::boost::shared_ptr<Panel> SharedPanel;
 typedef ::std::vector<SharedPanel> SharedPanelContainer;

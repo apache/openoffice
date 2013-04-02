@@ -35,7 +35,7 @@
 namespace sfx2 { namespace sidebar {
 
 ToolBoxBackground::ToolBoxBackground (Window* pParentWindow)
-    : Window(pParentWindow),
+    : Window(pParentWindow, WB_DIALOGCONTROL),
       maPadding(Tools::RectangleToSvBorder(Theme::GetRectangle(Theme::Rect_ToolBoxPadding)))
 {
     SetBackground(Theme::GetPaint(Theme::Paint_ToolBoxBackground).GetWallpaper());
