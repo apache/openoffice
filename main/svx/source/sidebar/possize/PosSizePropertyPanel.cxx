@@ -115,7 +115,12 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     mbInDestructor(false)
 {
 	Initialize();
-	FreeResource();	
+	FreeResource();
+
+    mpBindings->Update( SID_ATTR_TRANSFORM_WIDTH );
+    mpBindings->Update( SID_ATTR_TRANSFORM_HEIGHT );
+    mpBindings->Update( SID_ATTR_TRANSFORM_PROTECT_SIZE );
+    mpBindings->Update( SID_ATTR_METRIC );
 }
 
 
