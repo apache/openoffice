@@ -97,6 +97,11 @@ class SdrUndoFactory;
 namespace comphelper{
     class IEmbeddedHelper;
 }
+
+//IAccessibility2 Implementation 2009-----
+class ImageMap;
+//-----IAccessibility2 Implementation 2009
+
 namespace sfx2{
     class LinkManager;
 }
@@ -732,6 +737,11 @@ public:
 	bool IsInDestruction() const;
 
     static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelImplementationId();
+
+	//IAccessibility2 Implementation 2009-----
+	virtual ImageMap* GetImageMapForObject(SdrObject*){return NULL;};
+	virtual sal_Int32 GetHyperlinkCount(SdrObject*){return 0;}
+	//-----IAccessibility2 Implementation 2009
 
 	/** enables (true) or disables (false) recording of undo actions
 		If undo actions are added while undo is disabled, they are deleted.

@@ -73,6 +73,7 @@ IDLFILES=\
     XAccessibleTextAttributes.idl                   \
     XAccessibleTextMarkup.idl                       \
     XAccessibleTextSelection.idl                    \
+    XAccessibleGetAccFlowTo.idl		            \
     XAccessibleValue.idl                            \
     XMSAAService.idl
 
