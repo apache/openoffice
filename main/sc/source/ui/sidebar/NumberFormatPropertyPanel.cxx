@@ -103,6 +103,7 @@ void NumberFormatPropertyPanel::Initialize()
 	mpLbCategory->SetSelectHdl ( aLink );
 	mpLbCategory->SelectEntryPos(0);
 	mpLbCategory->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Category")));		//wj acc
+    mpLbCategory->SetDropDownLineCount(mpLbCategory->GetEntryCount());
 
 	mpTBCategory->SetItemImage(ID_NUMBER, maImgNumber);
 	mpTBCategory->SetItemImage(ID_PERCENT, maImgPercent);

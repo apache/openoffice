@@ -153,6 +153,7 @@ void AlignmentPropertyPanel::Initialize()
 	mpMtrAngle->InsertValue(225, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(270, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(315, FUNIT_CUSTOM);
+    mpMtrAngle->SetDropDownLineCount(mpMtrAngle->GetEntryCount());
 
     mpTBHorizontal->SetAccessibleRelationLabeledBy(mpTBHorizontal.get());
 	mpTBVertical->SetAccessibleRelationLabeledBy(mpTBVertical.get());

@@ -52,15 +52,15 @@ Control RID_PROPERTYPANEL_SC_NUMBERFORMAT
 		StringList [ en-US ] =
 		{
 			< "General" ; Default ; > ;
-			< "Number" ; Default ; > ;
-			< "Percent" ; Default ; > ;
-			< "Currency" ; Default ; > ;
-			< "Date" ; Default ; > ;
-			< "Time" ; Default ; > ;
-			< "Scientific" ; Default ; > ;
-			< "Fraction" ; Default ; > ;
-			< "Boolean Value" ; Default ; > ;
-			< "Text" ; Default ; > ;
+			< "Number" ;> ;
+			< "Percent" ;> ;
+			< "Currency" ;> ;
+			< "Date" ;> ;
+			< "Time" ;> ;
+			< "Scientific" ;> ;
+			< "Fraction" ;> ;
+			< "Boolean Value" ;> ;
+			< "Text" ;> ;
 		};
 	};
 	ToolBox TBX_CATEGORY

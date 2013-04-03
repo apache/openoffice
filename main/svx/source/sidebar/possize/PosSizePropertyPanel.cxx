@@ -198,7 +198,7 @@ void PosSizePropertyPanel::Initialize()
 	mpMtrAngle->InsertValue(22500, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(27000, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(31500, FUNIT_CUSTOM);
-    mpMtrAngle->SetDropDownLineCount(8);
+    mpMtrAngle->SetDropDownLineCount(mpMtrAngle->GetEntryCount());
 
     SfxViewShell* pCurSh = SfxViewShell::Current();
 	if ( pCurSh )

@@ -93,7 +93,7 @@ ColorControl::ColorControl (
     SfxBindings* pBindings,
     const ResId& rControlResId,
     const ResId& rValueSetResId,
-    const ::boost::function<Color(void)>& rColorGetter,
+    const ::boost::function<Color(void)>& rNoColorGetter,
     const ::boost::function<void(String&,Color)>& rColorSetter,
     FloatingWindow* pFloatingWindow,
     const ResId* pNoColorStringResId) // const sal_uInt32 nNoColorStringResId)
@@ -105,7 +105,7 @@ ColorControl::ColorControl (
           pNoColorStringResId
               ? String(*pNoColorStringResId)
               : String()),
-      maColorGetter(rColorGetter),
+      maNoColorGetter(rNoColorGetter),
       maColorSetter(rColorSetter)
 {
 	FreeResource();
@@ -206,13 +206,13 @@ IMPL_LINK(ColorControl, VSSelectHdl, void *, pControl)
     {
         sal_uInt16 iPos = maVSColor.GetSelectItemId();
         Color aColor = maVSColor.GetItemColor( iPos );
-        
         String aTmpStr = maVSColor.GetItemText( iPos );
-        if (aColor.GetColor() == 0
-            && aTmpStr.Equals(String::CreateFromAscii("")))
+
+        // react when the WB_NONEFIELD created entry is selected
+        if (aColor.GetColor() == 0 && aTmpStr.Equals(String::CreateFromAscii("")))
         {
-            if (maColorGetter)
-                aColor = maColorGetter();
+            if (maNoColorGetter)
+                aColor = maNoColorGetter();
         }
         if (maColorSetter)
             maColorSetter(aTmpStr, aColor);

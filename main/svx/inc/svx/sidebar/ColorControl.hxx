@@ -42,8 +42,9 @@ public:
     /** Create a new ColorControl object.
         @param rControlResId
             The resource id for the whole color control.
-        @param rColorGetter
-            A functor for setting the (default/preselected) color.
+        @param rNoColorGetter
+            A functor for getting the color which will be returned when the
+            WB_NONEFIELD is used and got selected
         @param rColorSetter
             A functor for setting the color that is selected by the
             user.
@@ -59,7 +60,7 @@ public:
         SfxBindings* pBindings,
         const ResId& rControlResId,
         const ResId& rValueSetResId,
-        const ::boost::function<Color(void)>& rColorGetter,
+        const ::boost::function<Color(void)>& rNoColorGetter,
         const ::boost::function<void(String&,Color)>& rColorSetter,
         FloatingWindow* pFloatingWindow,
         const ResId* pNoColorStringResId);
@@ -75,7 +76,7 @@ private:
 	ValueSet maVSColor;
     FloatingWindow* mpFloatingWindow;
     const String msNoColorString;
-    ::boost::function<Color(void)> maColorGetter;
+    ::boost::function<Color(void)> maNoColorGetter;
     ::boost::function<void(String&,Color)> maColorSetter;
 
 	void FillColors (void);

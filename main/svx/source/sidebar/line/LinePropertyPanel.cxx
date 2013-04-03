@@ -357,9 +357,11 @@ void LinePropertyPanel::Initialize()
 	aLink = LINK( this, LinePropertyPanel, ChangeStartHdl );
 	mpLBStart->SetSelectHdl( aLink );
 	mpLBStart->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Beginning Style")));	//wj acc
+    mpLBStart->SetDropDownLineCount(std::min(sal_uInt16(20), mpLBStart->GetEntryCount()));
 	aLink = LINK( this, LinePropertyPanel, ChangeEndHdl );
 	mpLBEnd->SetSelectHdl( aLink );
 	mpLBEnd->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Ending Style")));	//wj acc
+    mpLBEnd->SetDropDownLineCount(std::min(sal_uInt16(20), mpLBEnd->GetEntryCount()));
 
 	aLink = LINK(this, LinePropertyPanel, ChangeTransparentHdl);
 	mpMFTransparent->SetModifyHdl(aLink);
