@@ -77,6 +77,11 @@
 #include <editeng/ulspitem.hxx>
 #include <editeng/lrspitem.hxx>
 #include <editeng/escpitem.hxx>
+#include <editeng/numitem.hxx>
+#include <svx/nbdtmgfact.hxx>
+#include <svx/nbdtmg.hxx>
+
+using namespace svx::sidebar;
 using ::rtl::OUString;
 using namespace ::com::sun::star;
 
@@ -593,8 +598,8 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			{
 				sal_Bool bEnable = sal_False;
 				const SdrMarkList& rMarkList = mpDrawView->GetMarkedObjectList();
-				const ULONG nMarkCount = rMarkList.GetMarkCount();
-				for (ULONG nIndex = 0; nIndex < nMarkCount; nIndex++)
+				const sal_uInt32 nMarkCount = rMarkList.GetMarkCount();
+				for (sal_uInt32 nIndex = 0; nIndex < nMarkCount; nIndex++)
 				{
 					SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >(rMarkList.GetMark(nIndex)->GetMarkedSdrObj());
 					if (pTextObj && pTextObj->GetObjInventor() == SdrInventor)

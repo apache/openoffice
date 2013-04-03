@@ -733,7 +733,7 @@ interface DrawView
     [
         ExecMethod = FuTemporary;
         StateMethod = GetAttrState;
-        Asynchron , AutoUpdate ;
+        Asynchron  , AutoUpdate ;
     ]
     SID_ATTR_CHAR // ole : no, status : ?
     [
