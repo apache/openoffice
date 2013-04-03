@@ -34,6 +34,7 @@
 #include "EmptyPanel.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
+#include <sfx2/templdlg.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 #include <vcl/window.hxx>
 #include <rtl/ref.hxx>
@@ -198,6 +199,15 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             xFrame,
             pGalleryControl,
             ui::LayoutSize(300,-1,400));
+    }
+    else if (DoesResourceEndWith("/StyleListPanel"))
+    {
+        Window* pControl = new SfxTemplatePanelControl(pBindings, pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pControl,
+            ui::LayoutSize(0,-1,-1));
     }
     else if (DoesResourceEndWith("/Debug_ColorPanel"))
     {
