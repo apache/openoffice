@@ -182,12 +182,10 @@ private:
 
     // for fill color picker 
     svx::sidebar::PopupControl* CreateFillColorPopupControl(svx::sidebar::PopupContainer* pParent);
-    Color GetLastFillColor(void) const;
     void SetFillColor(const String& rsColorName, const Color aColor);
 
     // for line color picker 
     svx::sidebar::PopupControl* CreateLineColorPopupControl(svx::sidebar::PopupContainer* pParent);
-    Color GetLastLineColor(void) const;
     void SetLineColor(const String& rsColorName, const Color aColor);
 
     // for CellLineStyle popup

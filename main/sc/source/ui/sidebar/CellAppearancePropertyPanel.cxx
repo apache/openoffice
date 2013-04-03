@@ -52,6 +52,17 @@ using namespace cssu;
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
 //////////////////////////////////////////////////////////////////////////////
+// helpers
+
+namespace 
+{
+    Color GetTransparentColor(void)
+    {
+        return COL_TRANSPARENT;
+    }
+} // end of anonymous namespace
+
+//////////////////////////////////////////////////////////////////////////////
 // namespace open
 
 namespace sc { namespace sidebar {
@@ -67,15 +78,10 @@ svx::sidebar::PopupControl* CellAppearancePropertyPanel::CreateFillColorPopupCon
         mpBindings,
         ScResId(RID_POPUPPANEL_CELLAPPEARANCE_FILLCOLOR),
         ScResId(VS_FILLCOLOR),
-        ::boost::bind(&CellAppearancePropertyPanel::GetLastFillColor, this),
+        ::boost::bind(GetTransparentColor),
         ::boost::bind(&CellAppearancePropertyPanel::SetFillColor, this, _1, _2),
         pParent,
         &aResId);
-}
-
-Color CellAppearancePropertyPanel::GetLastFillColor(void) const
-{
-    return maBackColor;
 }
 
 void CellAppearancePropertyPanel::SetFillColor(
@@ -96,15 +102,10 @@ svx::sidebar::PopupControl* CellAppearancePropertyPanel::CreateLineColorPopupCon
         mpBindings,
         ScResId(RID_POPUPPANEL_CELLAPPEARANCE_LINECOLOR),
         ScResId(VS_LINECOLOR),
-        ::boost::bind(&CellAppearancePropertyPanel::GetLastLineColor, this),
+        ::boost::bind(GetTransparentColor),
         ::boost::bind(&CellAppearancePropertyPanel::SetLineColor, this, _1, _2),
         pParent,
         0);
-}
-
-Color CellAppearancePropertyPanel::GetLastLineColor(void) const
-{
-    return maLineColor;
 }
 
 void CellAppearancePropertyPanel::SetLineColor(
