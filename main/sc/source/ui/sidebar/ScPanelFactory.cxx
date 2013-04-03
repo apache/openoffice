@@ -26,6 +26,7 @@
 #include <AlignmentPropertyPanel.hxx>
 #include <CellAppearancePropertyPanel.hxx>
 #include <NumberFormatPropertyPanel.hxx>
+#include <navipi.hxx>
 
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
@@ -141,6 +142,15 @@ Reference<ui::XUIElement> SAL_CALL ScPanelFactory::createUIElement (
             xFrame,
             pPanel,
             ui::LayoutSize(-1,-1,-1));
+    }
+    else if (DoesResourceEndWith("/NavigatorPanel"))
+    {
+        Window* pPanel = new ScNavigatorDlg(pBindings, NULL, pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ui::LayoutSize(0,-1,-1));
     }
 #undef DoesResourceEndWith
 

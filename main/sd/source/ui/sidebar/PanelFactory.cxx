@@ -61,7 +61,7 @@ namespace {
     const static char* gsResourceNameUsedMasterPages = "/UsedMasterPages";
     const static char* gsResourceNameSlideTransitions = "/SlideTransitions";
     const static char* gsResourceNameTableDesign = "/TableDesign";
-    const static char* gsResourceNameNavigator = "/Navigator";
+    const static char* gsResourceNameNavigator = "/NavigatorPanel";
 }
 
 Reference<lang::XEventListener> mxControllerDisposeListener;
