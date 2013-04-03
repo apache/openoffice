@@ -198,7 +198,7 @@ void Theme::InitializeTheme (void)
 {
     setPropertyValue(
         maPropertyIdToNameMap[Bool_UseSymphonyIcons],
-        Any(true));
+        Any(false));
     setPropertyValue(
         maPropertyIdToNameMap[Bool_UseSystemColors],
         Any(false));
