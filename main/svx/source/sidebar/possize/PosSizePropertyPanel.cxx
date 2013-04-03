@@ -1090,7 +1090,9 @@ FieldUnit PosSizePropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPo
 	FieldUnit eUnit = FUNIT_NONE;
 
 	if ( pState && eState >= SFX_ITEM_DEFAULT )
+    {
 		eUnit = (FieldUnit)( (const SfxUInt16Item*)pState )->GetValue();
+    }
 	else
 	{
 		SfxViewFrame* pFrame = SfxViewFrame::Current();

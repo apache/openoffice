@@ -44,7 +44,6 @@ class XLineStyleItem;
 class XLineDashItem;
 class XLineStartItem;
 class XLineEndItem;
-class LineEndLB_LPP;
 class XLineEndList;
 class ListBox;
 class ToolBox;
@@ -146,8 +145,8 @@ private:
     ::boost::scoped_ptr< FixedText >                        mpFTTrancparency;
     ::boost::scoped_ptr< MetricField >                      mpMFTransparent;
     ::boost::scoped_ptr< FixedText >                        mpFTArrow;
-    ::boost::scoped_ptr< LineEndLB_LPP >                    mpLBStart;
-    ::boost::scoped_ptr< LineEndLB_LPP >                    mpLBEnd;
+    ::boost::scoped_ptr< ListBox >                          mpLBStart;
+    ::boost::scoped_ptr< ListBox >                          mpLBEnd;
     ::boost::scoped_ptr< FixedText >                        mpFTEdgeStyle;
     ::boost::scoped_ptr< ListBox >                          mpLBEdgeStyle;
     ::boost::scoped_ptr< FixedText >                        mpFTCapStyle;
