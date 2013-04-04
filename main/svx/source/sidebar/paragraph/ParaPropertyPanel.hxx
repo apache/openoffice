@@ -44,7 +44,7 @@
 #include <tools/fldunit.hxx>
 
 #include "ParaBulletsPopup.hxx"
-#include "ParanumberingPopup.hxx"
+#include "ParaNumberingPopup.hxx"
 #include "ParaLineSpacingPopup.hxx"
 
 class FloatingWindow;
@@ -123,7 +123,7 @@ private:
 	::boost::scoped_ptr<SvxRelativeField>	maLeftIndent;
 	::boost::scoped_ptr<SvxRelativeField>	maRightIndent;
 	::boost::scoped_ptr<SvxRelativeField>	maFLineIndent;
-	::boost::scoped_ptr<::svx::ToolboxButtonColorUpdater>	mpColorUpdater;	
+	::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
 	
 	/**********************************************************
 	 **
