@@ -559,12 +559,15 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
 ::rtl::OUString ResourceManager::GetModuleName (
     const cssu::Reference<css::frame::XFrame>& rxFrame)
 {
+    if ( ! rxFrame.is() || ! rxFrame->getController().is())
+        return OUString();
+    
     try
     {
         const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
         const Reference<frame::XModuleManager> xModuleManager (
-            aContext.createComponent("com.sun.star.frame.ModuleManager" ),
-            UNO_QUERY_THROW );
+            aContext.createComponent("com.sun.star.frame.ModuleManager"),
+            UNO_QUERY_THROW);
         return xModuleManager->identify(rxFrame);
     }
     catch (const Exception&)
