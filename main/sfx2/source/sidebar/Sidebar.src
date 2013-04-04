@@ -265,6 +265,23 @@ Resource RID_SIDEBAR_RESOURCE
         ImageBitmap = Bitmap { File = "symphony/sidebar-transition-small-hc.png" ;};
     };
 
+    Image IMAGE_SIDEBAR_DECK_FUNCTIONS_LARGE
+    {
+        ImageBitmap = Bitmap { File = "symphony/sidebar-functions-large.png" ;};
+    };
+    Image IMAGE_SIDEBAR_DECK_FUNCTIONS_LARGE_HC
+    {
+        ImageBitmap = Bitmap { File = "symphony/sidebar-functions-large-hc.png" ;};
+    };
+    Image IMAGE_SIDEBAR_DECK_FUNCTIONS_SMALL
+    {
+        ImageBitmap = Bitmap { File = "symphony/sidebar-functions-small.png" ;};
+    };
+    Image IMAGE_SIDEBAR_DECK_FUNCTIONS_SMALL_HC
+    {
+        ImageBitmap = Bitmap { File = "symphony/sidebar-functions-small-hc.png" ;};
+    };
+
     String STRING_CUSTOMIZATION
     {
 	Text [en-US] = "Customization";

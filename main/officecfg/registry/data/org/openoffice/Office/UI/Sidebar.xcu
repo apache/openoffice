@@ -24,6 +24,7 @@
 <oor:component-data oor:name="Sidebar" oor:package="org.openoffice.Office.UI" xmlns:install="http://openoffice.org/2004/installation" xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <node oor:name="Content">
     <node oor:name="DeckList">
+
       <node oor:name="PropertyDeck" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="en-US">Properties</value>
@@ -62,11 +63,11 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            DrawImpress, any, visible ;
+            any, any, visible ;
           </value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>150</value>
+          <value>300</value>
         </prop>
       </node>
 
@@ -89,7 +90,7 @@
           </value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>200</value>
+          <value>120</value>
         </prop>
       </node>
 
@@ -112,7 +113,7 @@
           </value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>300</value>
+          <value>140</value>
         </prop>
       </node>
 
@@ -135,7 +136,7 @@
           </value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>400</value>
+          <value>160</value>
         </prop>
       </node>
 
@@ -158,7 +159,7 @@
           </value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>150</value>
+          <value>400</value>
         </prop>
       </node>
 
@@ -181,7 +182,30 @@
           </value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
-          <value>150</value>
+          <value>200</value>
+        </prop>
+      </node>
+
+      <node oor:name="FunctionsDeck" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Functions</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>FunctionsDeck</value>
+        </prop>
+        <prop oor:name="IconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-functions-large.png</value>
+        </prop>
+        <prop oor:name="HighContrastIconURL" oor:type="xs:string">
+          <value>private:graphicrepository/sfx2/res/symphony/sidebar-functions-large-hc.png</value>
+        </prop>
+        <prop oor:name="ContextList">
+          <value oor:separator=";">
+            Calc, any, visible ;
+          </value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>500</value>
         </prop>
       </node>
 
@@ -926,6 +950,32 @@
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
           <value>private:resource/toolpanel/SvxPanelFactory/StyleListPanel</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>100</value>
+        </prop>
+      </node>
+
+      <node oor:name="FunctionsPanel" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Functions</value>
+        </prop>
+        <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>FunctionsPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>FunctionsDeck</value>
+        </prop>
+        <prop oor:name="ContextList">
+          <value oor:separator=";">
+            Calc, any, visible ;
+          </value>
+        </prop>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/ScPanelFactory/FunctionsPanel</value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>100</value>

@@ -27,6 +27,8 @@
 #include <CellAppearancePropertyPanel.hxx>
 #include <NumberFormatPropertyPanel.hxx>
 #include <navipi.hxx>
+#include <dwfunctr.hxx>
+#include "sc.hrc"
 
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
@@ -146,6 +148,15 @@ Reference<ui::XUIElement> SAL_CALL ScPanelFactory::createUIElement (
     else if (DoesResourceEndWith("/NavigatorPanel"))
     {
         Window* pPanel = new ScNavigatorDlg(pBindings, NULL, pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ui::LayoutSize(0,-1,-1));
+    }
+    else if (DoesResourceEndWith("/FunctionsPanel"))
+    {
+        Window* pPanel = new ScFunctionDockWin(pBindings, NULL, pParentWindow, ScResId(FID_FUNCTION_BOX));
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
