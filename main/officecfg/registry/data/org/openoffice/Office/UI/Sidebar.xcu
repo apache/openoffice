@@ -802,14 +802,14 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Calc,        DrawText,   visible ;
-            DrawImpress, 3DObject,   hidden ;
-            DrawImpress, Draw,       hidden  ;
-            DrawImpress, DrawText,   visible ;
-            DrawImpress, Graphic,    hidden  ;
-            DrawImpress, Table,      visible ;
-            DrawImpress, TextObject, visible ;
-            WriterAndWeb, Annotation, hidden ;
+            Calc,         DrawText,   visible ;
+            DrawImpress,  3DObject,   hidden  ;
+            DrawImpress,  Draw,       hidden  ;
+            DrawImpress,  DrawText,   visible ;
+            DrawImpress,  Graphic,    hidden  ;
+            DrawImpress,  Table,      visible ;
+            DrawImpress,  TextObject, visible ;
+            WriterAndWeb, Annotation, visible ;
             WriterAndWeb, DrawText,   visible ;
             WriterAndWeb, Table,      visible ;
             WriterAndWeb, Text,       visible ;

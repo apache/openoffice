@@ -27,7 +27,6 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
-#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <svx/xgrad.hxx>
 #include <svx/itemwin.hxx>
 #include <svx/xfillit0.hxx>
@@ -56,7 +55,6 @@ class AreaTransparencyGradientControl;
 
 class AreaPropertyPanel
 :   public Control,
-    public ::sfx2::sidebar::IContextChangeReceiver,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:
@@ -67,9 +65,6 @@ public:
 
     virtual void DataChanged(
         const DataChangedEvent& rEvent);
-
-    virtual void HandleContextChange(
-        const ::sfx2::sidebar::EnumContext aContext);
 
     virtual void NotifyItemUpdate(
         const sal_uInt16 nSId,
@@ -168,7 +163,6 @@ private:
     ::boost::scoped_ptr< SfxUInt16Item >                mpTransparanceItem;
 
     cssu::Reference<css::frame::XFrame>                 mxFrame;
-    ::sfx2::sidebar::EnumContext                        maContext;
     SfxBindings*                                        mpBindings;
 
     /// bitfield

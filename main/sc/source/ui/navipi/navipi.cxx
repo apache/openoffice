@@ -576,7 +576,7 @@ ScNavigatorDialogWrapper::ScNavigatorDialogWrapper(
                                     SfxChildWinInfo* /* pInfo */ ) :
 		SfxChildWindowContext( nId )
 {
-	pNavigator = new ScNavigatorDlg( pBind, this, pParent );
+	pNavigator = new ScNavigatorDlg( pBind, this, pParent, true );
 	SetWindow( pNavigator );
 
 	//	Einstellungen muessen anderswo gemerkt werden,
@@ -652,7 +652,8 @@ void __EXPORT ScNavigatorDialogWrapper::Resizing( Size& rSize )
 #define REGISTER_SLOT(i,id) \
 	ppBoundItems[i]=new ScNavigatorControllerItem(id,*this,rBindings);
 
-ScNavigatorDlg::ScNavigatorDlg( SfxBindings* pB, SfxChildWindowContext* pCW, Window* pParent ) :
+ScNavigatorDlg::ScNavigatorDlg( SfxBindings* pB, SfxChildWindowContext* pCW, Window* pParent,
+    const bool bUseStyleSettingsBackground) :
 		Window( pParent, ScResId(RID_SCDLG_NAVIGATOR) ),
 		rBindings	( *pB ),								// is used in CommandToolBox ctor
 		aCmdImageList( ScResId( IL_CMD ) ),
@@ -678,7 +679,8 @@ ScNavigatorDlg::ScNavigatorDlg( SfxBindings* pB, SfxChildWindowContext* pCW, Win
 		nCurCol		( 0 ),
 		nCurRow		( 0 ),
 		nCurTab		( 0 ),
-		bFirstBig	( sal_False )
+		bFirstBig	( sal_False ),
+        mbUseStyleSettingsBackground(bUseStyleSettingsBackground)
 {
 	ScNavipiCfg& rCfg = SC_MOD()->GetNavipiCfg();
 	nDropMode = rCfg.GetDragMode();
@@ -824,14 +826,22 @@ void __EXPORT ScNavigatorDlg::Resizing( Size& rNewSize )  // Size = Outputsize?
 
 void ScNavigatorDlg::Paint( const Rectangle& rRec )
 {
-	const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
-	Color aBgColor = rStyleSettings.GetFaceColor();
-	Wallpaper aBack( aBgColor );
+    if (mbUseStyleSettingsBackground)
+    {
+        const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+        Color aBgColor = rStyleSettings.GetFaceColor();
+        Wallpaper aBack( aBgColor );
 
-	SetBackground( aBack );
-	aFtCol.SetBackground( aBack );
-	aFtRow.SetBackground( aBack );
-
+        SetBackground( aBack );
+        aFtCol.SetBackground( aBack );
+        aFtRow.SetBackground( aBack );
+    }
+    else
+    {
+        aFtCol.SetBackground(Wallpaper());
+        aFtRow.SetBackground(Wallpaper());
+    }
+    
 	Window::Paint( rRec );
 }
 

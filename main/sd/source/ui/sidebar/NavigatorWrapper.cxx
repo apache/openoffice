@@ -25,6 +25,8 @@
 #include "navigatr.hrc"
 #include "ViewShellBase.hxx"
 
+#include <sfx2/sidebar/Theme.hxx>
+
 #include <boost/bind.hpp>
 
 
@@ -46,6 +48,7 @@ NavigatorWrapper::NavigatorWrapper (
     maNavigator.SetPosSizePixel(
         Point(0,0),
         GetSizePixel());
+    maNavigator.SetBackground(sfx2::sidebar::Theme::GetWallpaper(sfx2::sidebar::Theme::Paint_PanelBackground));
     maNavigator.Show();
 }
 

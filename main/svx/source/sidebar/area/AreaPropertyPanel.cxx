@@ -133,7 +133,6 @@ AreaPropertyPanel::AreaPropertyPanel(
       mpFloatTransparenceItem(),
       mpTransparanceItem(),
       mxFrame(rxFrame),
-      maContext(),
       mpBindings(pBindings),
       mbTBShow(true),
       mbColorAvail(true)
@@ -157,6 +156,9 @@ AreaPropertyPanel::~AreaPropertyPanel()
 
 void AreaPropertyPanel::Initialize()
 {
+    mpColorTextFT->SetBackground(Wallpaper());
+    mpTrspTextFT->SetBackground(Wallpaper());
+
     maGradientLinear.SetXOffset(DEFAULT_CENTERX);
     maGradientLinear.SetYOffset(DEFAULT_CENTERY);
     maGradientLinear.SetAngle(DEFAULT_ANGLE);
@@ -618,24 +620,6 @@ void AreaPropertyPanel::DataChanged(
     (void)rEvent;
     
     SetupIcons();
-}
-
-
-
-void AreaPropertyPanel::HandleContextChange(
-    const ::sfx2::sidebar::EnumContext aContext)
-{
-    if(maContext == aContext)
-    {
-        // Nothing to do.
-        return;
-    }
-
-    maContext = aContext;
-
-
-
-    // todo
 }
 
 

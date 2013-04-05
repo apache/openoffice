@@ -39,7 +39,7 @@
 #include <vcl/window.hxx>
 #include <rtl/ref.hxx>
 #include <comphelper/namedvaluecollection.hxx>
-
+#include <com/sun/star/ui/XSidebar.hpp>
 
 #include <boost/bind.hpp>
 
@@ -111,11 +111,10 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
         lang::IllegalArgumentException,
         RuntimeException)
 {
-    Reference<ui::XUIElement> xElement;
-
     const ::comphelper::NamedValueCollection aArguments (rArguments);
     Reference<frame::XFrame> xFrame (aArguments.getOrDefault("Frame", Reference<frame::XFrame>()));
     Reference<awt::XWindow> xParentWindow (aArguments.getOrDefault("ParentWindow", Reference<awt::XWindow>()));
+    Reference<ui::XSidebar> xSidebar (aArguments.getOrDefault("Sidebar", Reference<ui::XSidebar>()));
     const sal_uInt64 nBindingsValue (aArguments.getOrDefault("SfxBindings", sal_uInt64(0)));
     SfxBindings* pBindings = reinterpret_cast<SfxBindings*>(nBindingsValue);
 
@@ -133,121 +132,76 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             A2S("PanelFactory::createUIElement called without SfxBindings"),
             NULL);
 
+    Window* pControl = NULL;
+    ui::LayoutSize aLayoutSize (-1,-1,-1);
+
 #define DoesResourceEndWith(s) rsResourceURL.endsWithAsciiL(s,strlen(s))
     if (DoesResourceEndWith("/TextPropertyPanel"))
     {
-        TextPropertyPanel* pPanel = TextPropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(-1,-1,-1));
+        pControl = TextPropertyPanel::Create(pParentWindow, xFrame, pBindings, xSidebar);
     }
-    if (DoesResourceEndWith("/ParaPropertyPanel"))
+    else if (DoesResourceEndWith("/ParaPropertyPanel"))
     {
-        ParaPropertyPanel* pPanel = ParaPropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            //::boost::bind(&ParaPropertyPanel::ShowMenu, pPanel),
-            ui::LayoutSize(-1,-1,-1));
+        pControl = ParaPropertyPanel::Create(pParentWindow, xFrame, pBindings, xSidebar);
     }
     else if (DoesResourceEndWith("/AreaPropertyPanel"))
     {
-        AreaPropertyPanel* pPanel = AreaPropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(-1,-1,-1));
+        pControl = AreaPropertyPanel::Create(pParentWindow, xFrame, pBindings);
     }
     else if (DoesResourceEndWith("/GraphicPropertyPanel"))
     {
-        GraphicPropertyPanel* pPanel = GraphicPropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(-1,-1,-1));
+        pControl = GraphicPropertyPanel::Create(pParentWindow, xFrame, pBindings);
     }
     else if (DoesResourceEndWith("/LinePropertyPanel"))
     {
-        LinePropertyPanel* pPanel = LinePropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(-1,-1,-1));
+        pControl = LinePropertyPanel::Create(pParentWindow, xFrame, pBindings);
     }
     else if (DoesResourceEndWith("/PosSizePropertyPanel"))
     {
-        PosSizePropertyPanel* pPanel = PosSizePropertyPanel::Create(pParentWindow, xFrame, pBindings);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(-1,-1,-1));
+        pControl = PosSizePropertyPanel::Create(pParentWindow, xFrame, pBindings, xSidebar);
     }
     else if (DoesResourceEndWith("/GalleryPanel"))
     {
-        GalleryControl* pGalleryControl = new GalleryControl(
-            pBindings,
-            pParentWindow);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pGalleryControl,
-            ui::LayoutSize(300,-1,400));
+        pControl = new GalleryControl(pBindings, pParentWindow);
+        aLayoutSize = ui::LayoutSize(300,-1,400);
     }
     else if (DoesResourceEndWith("/StyleListPanel"))
     {
-        Window* pControl = new SfxTemplatePanelControl(pBindings, pParentWindow);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pControl,
-            ui::LayoutSize(0,-1,-1));
+        pControl = new SfxTemplatePanelControl(pBindings, pParentWindow);
+        aLayoutSize = ui::LayoutSize(0,-1,-1);
     }
     else if (DoesResourceEndWith("/Debug_ColorPanel"))
     {
-        ColorPanel* pPanel = new ColorPanel(pParentWindow);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(300,-1,400));
+        pControl = new ColorPanel(pParentWindow);
+        aLayoutSize = ui::LayoutSize(300,-1,400);
     }
     else if (DoesResourceEndWith("/Debug_ContextPanel"))
     {
-        ContextPanel* pPanel = new ContextPanel(pParentWindow);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(45,45,45));
+        pControl = new ContextPanel(pParentWindow);
+        aLayoutSize = ui::LayoutSize(45,45,45);
     }
     else if (DoesResourceEndWith("/Debug_NotYetImplementedPanel"))
     {
-        NotYetImplementedPanel* pPanel = new NotYetImplementedPanel(pParentWindow);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(20,25,25));
+        pControl = new NotYetImplementedPanel(pParentWindow);
+        aLayoutSize = ui::LayoutSize(20,25,25);
     }
     else if (DoesResourceEndWith("/EmptyPanel"))
     {
-        EmptyPanel* pPanel = new EmptyPanel(pParentWindow);
-        xElement = sfx2::sidebar::SidebarPanelBase::Create(
-            rsResourceURL,
-            xFrame,
-            pPanel,
-            ui::LayoutSize(20,-1, 50));
+        pControl = new EmptyPanel(pParentWindow);
+        aLayoutSize = ui::LayoutSize(20,-1, 50);
     }
 #undef DoesResourceEndWith
 
-    return xElement;
+    if (pControl != NULL)
+    {
+        return sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pControl,
+            aLayoutSize);
+    }
+    else
+        return Reference<ui::XUIElement>();
 }
 
 } } // end of namespace svx::sidebar

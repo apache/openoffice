@@ -185,6 +185,11 @@ PagePropertyPanel::~PagePropertyPanel()
 
 void PagePropertyPanel::Initialize()
 {
+    maFtOrientation.SetBackground(Wallpaper());
+    maFtMargin.SetBackground(Wallpaper());
+    maFtSize.SetBackground(Wallpaper());
+    maFtColumn.SetBackground(Wallpaper());
+
     // popup for page orientation
     Link aLink = LINK( this, PagePropertyPanel, ClickOrientationHdl );
     mpToolBoxOrientation->SetDropdownClickHdl( aLink );
@@ -266,13 +271,16 @@ void PagePropertyPanel::Initialize()
 
 IMPL_LINK( PagePropertyPanel, ClickOrientationHdl, ToolBox*, pToolBox )
 {
-    mpOrientationPopup.reset(
-        new ::svx::sidebar::Popup(
-            this,
-            ::boost::bind(&PagePropertyPanel::CreatePageOrientationControl, this, _1),
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page orientation")) ) );
+    if ( ! mpOrientationPopup)
+    {
+        mpOrientationPopup.reset(
+            new ::svx::sidebar::Popup(
+                this,
+                ::boost::bind(&PagePropertyPanel::CreatePageOrientationControl, this, _1),
+                ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page orientation")) ) );
+    }
     mpOrientationPopup->Show( *pToolBox );
-
+    
     return 0L;
 }
 
@@ -383,11 +391,12 @@ void PagePropertyPanel::ExecutePageLayoutChange( const bool bMirrored )
 
 IMPL_LINK( PagePropertyPanel, ClickMarginHdl, ToolBox*, pToolBox )
 {
-    mpMarginPopup.reset(
-        new ::svx::sidebar::Popup(
-            this,
-            ::boost::bind(&PagePropertyPanel::CreatePageMarginControl, this, _1),
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page margins")) ) );
+    if ( ! mpMarginPopup)
+        mpMarginPopup.reset(
+            new ::svx::sidebar::Popup(
+                this,
+                ::boost::bind(&PagePropertyPanel::CreatePageMarginControl, this, _1),
+                ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page margins")) ) );
     mpMarginPopup->Show( *pToolBox );
 
     return 0L;
@@ -428,11 +437,12 @@ void PagePropertyPanel::ExecuteSizeChange( const Paper ePaper )
 
 IMPL_LINK( PagePropertyPanel, ClickSizeHdl, ToolBox*, pToolBox )
 {
-    mpSizePopup.reset(
-        new ::svx::sidebar::Popup(
-            this,
-            ::boost::bind(&PagePropertyPanel::CreatePageSizeControl, this, _1),
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page size")) ) );
+    if ( ! mpSizePopup)
+        mpSizePopup.reset(
+            new ::svx::sidebar::Popup(
+                this,
+                ::boost::bind(&PagePropertyPanel::CreatePageSizeControl, this, _1),
+                ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page size")) ) );
     mpSizePopup->Show( *pToolBox );
 
     return 0L;
@@ -466,11 +476,12 @@ void PagePropertyPanel::ExecuteColumnChange( const sal_uInt16 nColumnType )
 
 IMPL_LINK( PagePropertyPanel, ClickColumnHdl, ToolBox*, pToolBox )
 {
-    mpColumnPopup.reset(
-        new ::svx::sidebar::Popup(
-            this,
-            ::boost::bind(&PagePropertyPanel::CreatePageColumnControl, this, _1),
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page columns")) ) );
+    if ( ! mpColumnPopup)
+        mpColumnPopup.reset(
+            new ::svx::sidebar::Popup(
+                this,
+                ::boost::bind(&PagePropertyPanel::CreatePageColumnControl, this, _1),
+                ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Page columns")) ) );
     mpColumnPopup->Show( *pToolBox );
 
     return 0L;

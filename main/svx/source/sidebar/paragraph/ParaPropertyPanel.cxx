@@ -118,7 +118,8 @@ namespace svx {namespace sidebar {
 ParaPropertyPanel* ParaPropertyPanel::Create (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 {
     if (pParent == NULL)
         throw lang::IllegalArgumentException(A2S("no parent Window given to ParaPropertyPanel::Create"), NULL, 0);
@@ -130,7 +131,8 @@ ParaPropertyPanel* ParaPropertyPanel::Create (
     return new ParaPropertyPanel(
         pParent,
         rxFrame,
-        pBindings);
+        pBindings,
+        rxSidebar);
 }
 
 void ParaPropertyPanel::HandleContextChange (
@@ -143,144 +145,129 @@ void ParaPropertyPanel::HandleContextChange (
     }
 
     maContext = aContext;
-    switch (maContext.GetCombinedContext())
+    switch (maContext.GetCombinedContext_DI())
     {
         case CombinedEnumContext(Application_Calc, Context_DrawText):
-	{
-		maTBxVertAlign->Show();
-		maTBxVertAlignBackground->Show();
-		maTBxBackColor->Hide();
-		maTBxBackColorBackground->Hide();
-		maTBxNumBullet->Hide();
-		maTBxNumBulletBackground->Hide();
-		ReSize(0);
-		maTbxIndent_IncDec->Show();
-		maTbxIndent_IncDecBackground->Show();
-		maTbxProDemote->Hide();
-		maTbxProDemoteBackground->Hide();
-	}
-	break;
-        case CombinedEnumContext(Application_Draw, Context_Draw):
-        case CombinedEnumContext(Application_Draw, Context_TextObject):
-        case CombinedEnumContext(Application_Draw, Context_Graphic):
-        case CombinedEnumContext(Application_Impress, Context_Draw):
-        case CombinedEnumContext(Application_Impress, Context_TextObject):
-        case CombinedEnumContext(Application_Impress, Context_Graphic):
-	{
-		maTBxVertAlign->Hide();
-		maTBxVertAlignBackground->Hide();
-		maTBxBackColor->Hide();
-		maTBxBackColorBackground->Hide();
-		maTBxNumBullet->Show();
-		maTBxNumBulletBackground->Show();
-		ReSize(1);
-		maTbxIndent_IncDec->Hide();
-		maTbxIndent_IncDecBackground->Hide();
-		maTbxProDemote->Show();
-		maTbxProDemoteBackground->Show();
-	}
-	break;
-        case CombinedEnumContext(Application_Draw, Context_DrawText):
-        case CombinedEnumContext(Application_Impress, Context_DrawText):
-	{
-		maTBxVertAlign->Show();
-		maTBxVertAlignBackground->Show();
-		maTBxBackColor->Hide();
-		maTBxBackColorBackground->Hide();
-		maTBxNumBullet->Show();
-		maTBxNumBulletBackground->Show();
-		ReSize(1);
-		maTbxIndent_IncDec->Hide();
-		maTbxIndent_IncDecBackground->Hide();
-		maTbxProDemote->Show();
-		maTbxProDemoteBackground->Show();
-	}
-	break;
-        case CombinedEnumContext(Application_Impress, Context_Table):
-        case CombinedEnumContext(Application_Draw, Context_Table):
-	{
-		maTBxVertAlign->Show();
-		maTBxVertAlignBackground->Show();
-		maTBxBackColor->Hide();
-		maTBxBackColorBackground->Hide();
-		maTBxNumBullet->Show();
-		maTBxNumBulletBackground->Show();
-		ReSize(1);
-		maTbxIndent_IncDec->Hide();
-		maTbxIndent_IncDecBackground->Hide();
-		maTbxProDemote->Show();
-		maTbxProDemoteBackground->Show();
-	}
-	break;
-	case CombinedEnumContext(Application_Writer, Context_Default):
-        case CombinedEnumContext(Application_Writer, Context_Text):
-	{
-		maTBxVertAlign->Hide();
-		maTBxVertAlignBackground->Hide();
-		maTBxBackColor->Show();
-		maTBxBackColorBackground->Show();
-		maTBxNumBullet->Show();
+            maTBxVertAlign->Show();
+            maTBxVertAlignBackground->Show();
+            maTBxBackColor->Hide();
+            maTBxBackColorBackground->Hide();
+            maTBxNumBullet->Hide();
+            maTBxNumBulletBackground->Hide();
+            ReSize(false);
+            maTbxIndent_IncDec->Show();
+            maTbxIndent_IncDecBackground->Show();
+            maTbxProDemote->Hide();
+            maTbxProDemoteBackground->Hide();
+            break;
+
+        case CombinedEnumContext(Application_DrawImpress, Context_Draw):
+        case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
+            maTBxVertAlign->Hide();
+		    maTBxVertAlignBackground->Hide();
+            maTBxBackColor->Hide();
+            maTBxBackColorBackground->Hide();
+            maTBxNumBullet->Show();
+            maTBxNumBulletBackground->Show();
+            ReSize(true);
+            maTbxIndent_IncDec->Hide();
+            maTbxIndent_IncDecBackground->Hide();
+            maTbxProDemote->Show();
+            maTbxProDemoteBackground->Show();
+            break;
+            
+        case CombinedEnumContext(Application_DrawImpress, Context_DrawText):
+            maTBxVertAlign->Show();
+            maTBxVertAlignBackground->Show();
+            maTBxBackColor->Hide();
+            maTBxBackColorBackground->Hide();
+            maTBxNumBullet->Show();
+            maTBxNumBulletBackground->Show();
+            ReSize(true);
+            maTbxIndent_IncDec->Hide();
+            maTbxIndent_IncDecBackground->Hide();
+            maTbxProDemote->Show();
+            maTbxProDemoteBackground->Show();
+            break;
+            
+        case CombinedEnumContext(Application_DrawImpress, Context_Table):
+            maTBxVertAlign->Show();
+            maTBxVertAlignBackground->Show();
+            maTBxBackColor->Hide();
+            maTBxBackColorBackground->Hide();
+            maTBxNumBullet->Show();
+            maTBxNumBulletBackground->Show();
+            ReSize(true);
+            maTbxIndent_IncDec->Hide();
+            maTbxIndent_IncDecBackground->Hide();
+            maTbxProDemote->Show();
+            maTbxProDemoteBackground->Show();
+            break;
+
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Default):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Text):
+            maTBxVertAlign->Hide();
+            maTBxVertAlignBackground->Hide();
+            maTBxBackColor->Show();
+            maTBxBackColorBackground->Show();
+            maTBxNumBullet->Show();
 		
-		maTBxNumBulletBackground->Show();
-		ReSize(1);
-		maTbxIndent_IncDec->Show();
-		maTbxIndent_IncDecBackground->Show();
-		maTbxProDemote->Hide();
-		maTbxProDemoteBackground->Hide();
-	}
-	break;
-        case CombinedEnumContext(Application_Writer, Context_Table):
-        {
-		maTBxVertAlign->Show();
-		maTBxVertAlignBackground->Show();
-		maTBxBackColor->Show();
-		maTBxBackColorBackground->Show();
-		maTBxNumBullet->Show();
-		maTBxNumBulletBackground->Show();
-		ReSize(1);
-		maTbxIndent_IncDec->Show();
-		maTbxIndent_IncDecBackground->Show();
-		maTbxProDemote->Hide();
-		maTbxProDemoteBackground->Hide();
-        }
-	break;
-        case CombinedEnumContext(Application_Writer, Context_DrawText):
-	{
-		maTBxVertAlign->Show();
-		maTBxVertAlignBackground->Show();
-		maTBxBackColor->Hide();
-		maTBxBackColorBackground->Hide();
-		maTBxNumBullet->Hide();
-		maTBxNumBulletBackground->Hide();
-		ReSize(0);
-		maTbxIndent_IncDec->Show();
-		maTbxIndent_IncDecBackground->Show();
-		maTbxProDemote->Hide();
-		maTbxProDemoteBackground->Hide();
-	}
-	break;
-        case CombinedEnumContext(Application_Writer, Context_Annotation):
-        {
-		maTBxVertAlign->Hide();
-		maTBxVertAlignBackground->Hide();
-		maTBxBackColor->Hide();
-		maTBxBackColorBackground->Hide();
-		maTBxNumBullet->Hide();
-		maTBxNumBulletBackground->Hide();
-		ReSize(0);
-		maTbxIndent_IncDec->Show();
-		maTbxIndent_IncDecBackground->Show();
-		maTbxProDemote->Hide();
-		maTbxProDemoteBackground->Hide();
-        }
-	break;
+            maTBxNumBulletBackground->Show();
+            ReSize(true);
+            maTbxIndent_IncDec->Show();
+            maTbxIndent_IncDecBackground->Show();
+            maTbxProDemote->Hide();
+            maTbxProDemoteBackground->Hide();
+            break;
+            
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Table):
+            maTBxVertAlign->Show();
+            maTBxVertAlignBackground->Show();
+            maTBxBackColor->Show();
+            maTBxBackColorBackground->Show();
+            maTBxNumBullet->Show();
+            maTBxNumBulletBackground->Show();
+            ReSize(true);
+            maTbxIndent_IncDec->Show();
+            maTbxIndent_IncDecBackground->Show();
+            maTbxProDemote->Hide();
+            maTbxProDemoteBackground->Hide();
+            break;
+            
+        case CombinedEnumContext(Application_WriterAndWeb, Context_DrawText):
+            maTBxVertAlign->Show();
+            maTBxVertAlignBackground->Show();
+            maTBxBackColor->Hide();
+            maTBxBackColorBackground->Hide();
+            maTBxNumBullet->Hide();
+            maTBxNumBulletBackground->Hide();
+            ReSize(false);
+            maTbxIndent_IncDec->Show();
+            maTbxIndent_IncDecBackground->Show();
+            maTbxProDemote->Hide();
+            maTbxProDemoteBackground->Hide();
+            break;
+
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Annotation):
+            maTBxVertAlign->Hide();
+            maTBxVertAlignBackground->Hide();
+            maTBxBackColor->Hide();
+            maTBxBackColorBackground->Hide();
+            maTBxNumBullet->Hide();
+            maTBxNumBulletBackground->Hide();
+            ReSize(false);
+            maTbxIndent_IncDec->Show();
+            maTbxIndent_IncDecBackground->Show();
+            maTbxProDemote->Hide();
+            maTbxProDemoteBackground->Hide();
+            break;
+
         case CombinedEnumContext(Application_Calc, Context_EditCell):
-        case CombinedEnumContext(Application_Draw, Context_Text):
-        case CombinedEnumContext(Application_Draw, Context_OutlineText):
         case CombinedEnumContext(Application_Calc, Context_Cell):
         case CombinedEnumContext(Application_Calc, Context_Pivot):
-        case CombinedEnumContext(Application_Impress, Context_Text):
-        case CombinedEnumContext(Application_Impress, Context_OutlineText):
+        case CombinedEnumContext(Application_DrawImpress, Context_Text):
+        case CombinedEnumContext(Application_DrawImpress, Context_OutlineText):
         /*{
             mpToolBoxScriptSw->Hide();
             mpToolBoxScript->Show();
@@ -291,8 +278,8 @@ void ParaPropertyPanel::HandleContextChange (
             aSize = LogicToPixel( aSize,MapMode(MAP_APPFONT) ); 
             aSize.setWidth(GetOutputSizePixel().Width());
             SetSizePixel(aSize);
-            break;
         }*/
+            break;
 
         default:
             break;
@@ -382,6 +369,9 @@ void ParaPropertyPanel::ReSize(bool bSize)
 		aSize.setWidth(GetOutputSizePixel().Width());
 		SetSizePixel(aSize);
 	}
+
+    if (mxSidebar.is())
+        mxSidebar->requestLayout();
 }
 
 void ParaPropertyPanel::EndSpacingPopupMode (void)
@@ -479,7 +469,7 @@ void ParaPropertyPanel::InitToolBoxBGColor()
 
 void ParaPropertyPanel::InitToolBoxBulletsNumbering()
 {
-	if( Application::GetSettings().GetLayoutRTL())//sym2_7380
+	if( Application::GetSettings().GetLayoutRTL())
 	{
 		maTBxNumBullet->SetItemImage( IID_BULLET, maNumBImageListRTL.GetImage( IID_BULLET ) );
 		maTBxNumBullet->SetItemImage( IID_NUMBER, maNumBImageListRTL.GetImage( IID_NUMBER ) );
@@ -519,7 +509,15 @@ void ParaPropertyPanel::InitToolBoxLineSpacing()
 
 void ParaPropertyPanel::initial()
 {
-	maFISpace1.SetImage(maSpace1);
+    maFTUL->SetBackground(Wallpaper());
+    maFTIndent->SetBackground(Wallpaper());
+    maFISpace1.SetBackground(Wallpaper());
+    maFISpace2.SetBackground(Wallpaper());
+    maFIndent1.SetBackground(Wallpaper());
+    maFIndent2.SetBackground(Wallpaper());
+    maFIndent3.SetBackground(Wallpaper());
+
+    maFISpace1.SetImage(maSpace1);
 	maFISpace2.SetImage(maSpace2);
 	maFIndent1.SetImage(maIndent3);
 	maFIndent2.SetImage(maIndent2);
@@ -1098,7 +1096,7 @@ void ParaPropertyPanel::NotifyItemUpdate( sal_uInt16 nSID, SfxItemState eState, 
 
 	if (nSID==SID_INC_INDENT || nSID==SID_DEC_INDENT)
 		StateChangeIncDecImpl( nSID, eState, pState );
-	//Sym3_1093. Add toggle state for numbering and bullet icons
+	// Add toggle state for numbering and bullet icons
 	if (nSID==FN_NUM_NUMBERING_ON || nSID==FN_NUM_BULLET_ON) 
 		StateChangeBulletNumImpl( nSID, eState, pState );
 
@@ -1472,7 +1470,7 @@ void ParaPropertyPanel::StateChangeIncDecImpl( sal_uInt16 nSID, SfxItemState eSt
 				maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_DEC, sal_False);
 	}
 }
-//Sym3_1093. Add toggle state for numbering and bullet icons
+// Add toggle state for numbering and bullet icons
 void ParaPropertyPanel::StateChangeBulletNumImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
 {
 	if (nSID==FN_NUM_NUMBERING_ON)
@@ -1514,10 +1512,10 @@ void ParaPropertyPanel::StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemSt
 
 	if ( nSID == FN_BUL_NUM_RULE_INDEX ) 
 	{
-		nBulletTypeIndex = nValue;
+		mnBulletTypeIndex = nValue;
 	}else if ( nSID == FN_NUM_NUM_RULE_INDEX ) 
 	{
-		nNumTypeIndex = nValue;
+		mnNumTypeIndex = nValue;
 	}
 }
 //End
@@ -1584,114 +1582,107 @@ PopupControl* ParaPropertyPanel::CreateBGColorPopupControl (PopupContainer* pPar
 
 ParaPropertyPanel::ParaPropertyPanel(Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
-:	Control(pParent, SVX_RES(RID_SIDEBAR_PARA_PANEL))
-//, mnContextId			(PROPERTY_CONTEXT_NOT_SUPPORT)
-//Alignment
-,maAlignToolBoxBackground(ControlFactory::CreateToolBoxBackground(this))
-, maAlignToolBox          (ControlFactory::CreateToolBox(maAlignToolBoxBackground.get(),SVX_RES(TBX_HORIZONTALALIGNMENT)))
-,maTBxVertAlignBackground(ControlFactory::CreateToolBoxBackground(this))
-, maTBxVertAlign	(ControlFactory::CreateToolBox(maTBxVertAlignBackground.get(),SVX_RES(TBX_VERT_ALIGN)))
-, maLeftPara              (SVX_RES(IMG_LEFT_PARA))
-, maCentPara              (SVX_RES(IMG_CENTER_PARA))
-, maRightPara             (SVX_RES(IMG_RIGHT_PARA))
-, maJusPara               (SVX_RES(IMG_JUSTIFY_PARA))
-, maVertImageList		  (SVX_RES(IL_VERT_ALIGN))
-, maVertImageListH		  (SVX_RES(IL_VERT_ALIGN))
-//Num&Backcolor
-,maTBxNumBulletBackground(ControlFactory::CreateToolBoxBackground(this))
-, maTBxNumBullet		  (ControlFactory::CreateToolBox(maTBxNumBulletBackground.get(),SVX_RES(TBX_NUM_BULLET)))
-,maTBxBackColorBackground(ControlFactory::CreateToolBoxBackground(this))
-, maTBxBackColor		  (ControlFactory::CreateToolBox(maTBxBackColorBackground.get(),SVX_RES(TBX_BACK_COLOR)))
-, maNumBImageList		  (SVX_RES(IL_NUM_BULLET))
-, maNumBImageListH		  (SVX_RES(ILH_NUM_BULLET))
-, maNumBImageListRTL	  (SVX_RES(IL_NUM_BULLET_RTL))	//wj sym2_7380
-, maImgBackColorHigh	  (SVX_RES(IMG_BACK_COLOR_H))
-, maImgBackColor		  (SVX_RES(IMG_BACK_COLOR))
-, mpColorUpdater		  ()
-, maColor				  (COL_AUTO)
-, mbColorAvailable		  (sal_True)
-//Paragraph spacing
-, maFTUL                  (new FixedText(this, SVX_RES(FT_SPACING)))
-,maTbxUL_IncDecBackground(ControlFactory::CreateToolBoxBackground(this))
-, maTbxUL_IncDec          (ControlFactory::CreateToolBox(maTbxUL_IncDecBackground.get(),SVX_RES(TBX_UL_INC_DEC)))
-, maParInc                (SVX_RES(IMG_PARA_INC))
-, maParDec                (SVX_RES(IMG_PARA_DEC))
-, maTopDist				  (new SvxRelativeField(this, SVX_RES(MF_ABOVE_PARASPACING)))
-, maBottomDist            (new SvxRelativeField(this, SVX_RES(MF_BELOW_PARASPACING)))
-//Indent
-, maFTIndent              (new FixedText(this, SVX_RES(FT_INDENT)))
-,maTbxIndent_IncDecBackground(ControlFactory::CreateToolBoxBackground(this))
-, maTbxIndent_IncDec      (ControlFactory::CreateToolBox(maTbxIndent_IncDecBackground.get(),SVX_RES(TBX_INDENT_INC_DEC)))
-,maTbxProDemoteBackground(ControlFactory::CreateToolBoxBackground(this))
-, maTbxProDemote          (ControlFactory::CreateToolBox(maTbxProDemoteBackground.get(),SVX_RES(TBX_INDENT_PRO_DEMOTE)))
-, maLeftIndent			  (new SvxRelativeField(this, SVX_RES(MF_BEFORE_INDENT)))
-, maRightIndent			  (new SvxRelativeField(this, SVX_RES(MF_AFTER_INDENT)))
-, maFLineIndent			  (new SvxRelativeField(this, SVX_RES(MF_FL_INDENT)))
-, maIndInc                (SVX_RES(IMG_INDENT_INC))
-, maIndDec                (SVX_RES(IMG_INDENT_DEC))
-, maIndInc_BD             (SVX_RES(IMG_INDENT_INC_BD))
-, maIndDec_BD             (SVX_RES(IMG_INDENT_DEC_BD))
-, maIndHang				  (SVX_RES(IMG_INDENT_HANG))
-, maTxtLeft               (0)
-//Line spacing
-,maLineSPTbxBackground(ControlFactory::CreateToolBoxBackground(this))
-, maLineSPTbx             (ControlFactory::CreateToolBox(maLineSPTbxBackground.get(),SVX_RES(TBX_LINESP)))
-, maSpace1                (SVX_RES(IMG_SPACE1))
-, maSpace2                (SVX_RES(IMG_SPACE2))
-, maSpace3                (SVX_RES(IMG_SPACE3))
-, maIndent1               (SVX_RES(IMG_INDENT1))
-, maIndent2               (SVX_RES(IMG_INDENT2))
-, maIndent3               (SVX_RES(IMG_INDENT3))
-, maLineSpacePopup(this, ::boost::bind(&ParaPropertyPanel::CreateLineSpacingControl, this, _1))
-, maBulletsPopup(this, ::boost::bind(&ParaPropertyPanel::CreateBulletsPopupControl, this, _1))
-, maNumberingPopup(this, ::boost::bind(&ParaPropertyPanel::CreateNumberingPopupControl, this, _1))
-, maBGColorPopup(this, ::boost::bind(&ParaPropertyPanel::CreateBGColorPopupControl, this, _1))
-//Controller
-, maLeftAlignControl      (SID_ATTR_PARA_ADJUST_LEFT, *pBindings,*this)
-, maCenterAlignControl    (SID_ATTR_PARA_ADJUST_CENTER, *pBindings,*this)
-, maRightAlignControl     (SID_ATTR_PARA_ADJUST_RIGHT, *pBindings,*this)
-, maJustifyAlignControl   (SID_ATTR_PARA_ADJUST_BLOCK, *pBindings,*this)
-, maLRSpaceControl        (SID_ATTR_PARA_LRSPACE,*pBindings,*this)
-, maLNSpaceControl        (SID_ATTR_PARA_LINESPACE, *pBindings,*this)
-, maULSpaceControl        (SID_ATTR_PARA_ULSPACE, *pBindings,*this)
-, maOutLineLeftControl    (SID_OUTLINE_LEFT, *pBindings,*this)
-, maOutLineRightControl   (SID_OUTLINE_RIGHT, *pBindings,*this)
-, maIncIndentControl	  (SID_INC_INDENT, *pBindings,*this)
-, maDecIndentControl      (SID_DEC_INDENT, *pBindings,*this)
-, maVertTop				  (SID_TABLE_VERT_NONE, *pBindings,*this)
-, maVertCenter			  (SID_TABLE_VERT_CENTER, *pBindings,*this)
-, maVertBottom			  (SID_TABLE_VERT_BOTTOM,*pBindings,*this)
-, maBulletOnOff			  (FN_NUM_BULLET_ON, *pBindings,*this)
-, maNumberOnOff			  (FN_NUM_NUMBERING_ON, *pBindings,*this)
-//Modified for Numbering&Bullets Dialog UX Enh(Story 992) by chengjh,2011.7.5
-//Add entry to transfer number rule index data
-,maBulletNumRuleIndex		(FN_BUL_NUM_RULE_INDEX, *pBindings,*this)
-,maNumNumRuleIndex		(FN_NUM_NUM_RULE_INDEX, *pBindings,*this)
-//End
-, maBackColorControl      (SID_BACKGROUND_COLOR,	*pBindings,*this)
-, m_aMetricCtl			  (SID_ATTR_METRIC, *pBindings,*this)
-//, m_eMetricUnit			  (FUNIT_INCH)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
+    : Control(pParent, SVX_RES(RID_SIDEBAR_PARA_PANEL)),
+      maAlignToolBoxBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maAlignToolBox (ControlFactory::CreateToolBox(maAlignToolBoxBackground.get(),SVX_RES(TBX_HORIZONTALALIGNMENT))),
+      maTBxVertAlignBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maTBxVertAlign (ControlFactory::CreateToolBox(maTBxVertAlignBackground.get(),SVX_RES(TBX_VERT_ALIGN))),
+      maTBxNumBulletBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maTBxNumBullet (ControlFactory::CreateToolBox(maTBxNumBulletBackground.get(),SVX_RES(TBX_NUM_BULLET))),
+      maTBxBackColorBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maTBxBackColor (ControlFactory::CreateToolBox(maTBxBackColorBackground.get(),SVX_RES(TBX_BACK_COLOR))),
+      maFTUL (new FixedText(this, SVX_RES(FT_SPACING))),
+      maTbxUL_IncDecBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maTbxUL_IncDec (ControlFactory::CreateToolBox(maTbxUL_IncDecBackground.get(),SVX_RES(TBX_UL_INC_DEC))),
+      maTopDist (new SvxRelativeField(this, SVX_RES(MF_ABOVE_PARASPACING))),
+      maBottomDist (new SvxRelativeField(this, SVX_RES(MF_BELOW_PARASPACING))),
+      maLineSPTbxBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maLineSPTbx (ControlFactory::CreateToolBox(maLineSPTbxBackground.get(),SVX_RES(TBX_LINESP))),
+      maFTIndent (new FixedText(this, SVX_RES(FT_INDENT))),
+      maTbxIndent_IncDecBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maTbxIndent_IncDec (ControlFactory::CreateToolBox(maTbxIndent_IncDecBackground.get(),SVX_RES(TBX_INDENT_INC_DEC))),
+      maTbxProDemoteBackground(ControlFactory::CreateToolBoxBackground(this)),
+      maTbxProDemote (ControlFactory::CreateToolBox(maTbxProDemoteBackground.get(),SVX_RES(TBX_INDENT_PRO_DEMOTE))),
+      maLeftIndent (new SvxRelativeField(this, SVX_RES(MF_BEFORE_INDENT))),
+      maRightIndent (new SvxRelativeField(this, SVX_RES(MF_AFTER_INDENT))),
+      maFLineIndent (new SvxRelativeField(this, SVX_RES(MF_FL_INDENT))),
+      mpColorUpdater (),
+      maFISpace1 ( this, SVX_RES( FI_SPACE1)),
+      maFISpace2 ( this, SVX_RES( FI_SPACE2)),
+      maFIndent1 ( this, SVX_RES( FI_INDENT1)),
+      maFIndent2 ( this, SVX_RES( FI_INDENT2)),
+      maFIndent3 ( this, SVX_RES( FI_INDENT3)),
+      maSpace1 (SVX_RES(IMG_SPACE1)),
+      maSpace2 (SVX_RES(IMG_SPACE2)),
+      maSpace3 (SVX_RES(IMG_SPACE3)),
+      maIndent1 (SVX_RES(IMG_INDENT1)),
+      maIndent2 (SVX_RES(IMG_INDENT2)),
+      maIndent3 (SVX_RES(IMG_INDENT3)),
+      maLeftPara (SVX_RES(IMG_LEFT_PARA)),
+      maCentPara (SVX_RES(IMG_CENTER_PARA)),
+      maRightPara (SVX_RES(IMG_RIGHT_PARA)),
+      maJusPara (SVX_RES(IMG_JUSTIFY_PARA)),
+      maIndInc (SVX_RES(IMG_INDENT_INC)),
+      maIndDec (SVX_RES(IMG_INDENT_DEC)),
+      maIndInc_BD (SVX_RES(IMG_INDENT_INC_BD)),
+      maIndDec_BD (SVX_RES(IMG_INDENT_DEC_BD)),
+      maIndHang (SVX_RES(IMG_INDENT_HANG)),
+      maParInc (SVX_RES(IMG_PARA_INC)),
+      maParDec (SVX_RES(IMG_PARA_DEC)),
+      maVertImageList (SVX_RES(IL_VERT_ALIGN)),
+      maVertImageListH (SVX_RES(IL_VERT_ALIGN)),
+      maNumBImageList (SVX_RES(IL_NUM_BULLET)),
+      maNumBImageListH (SVX_RES(ILH_NUM_BULLET)),
+      maNumBImageListRTL (SVX_RES(IL_NUM_BULLET_RTL)),
+      maImgBackColorHigh (SVX_RES(IMG_BACK_COLOR_H)),
+      maImgBackColor (SVX_RES(IMG_BACK_COLOR)),
+      maTxtLeft (0),
+      mpLnSPItem (NULL),
+      meLnSpState (SFX_ITEM_DONTCARE),
+      mbOutLineLeft (false),
+      mbOutLineRight (false),
+      maUpper (0),
+      maLower (0),
+      mnBulletTypeIndex ((sal_uInt16)0xFFFF),
+      mnNumTypeIndex ((sal_uInt16)0xFFFF),
+      maColor (COL_AUTO),
+      mbColorAvailable (true),
+ //, m_eMetricUnit			  (FUNIT_INCH)
 //, m_last_eMetricUnit      (FUNIT_INCH)
-//internal var
-, maUpper                       (0)
-, maLower                       (0)
-, mpLnSPItem					(NULL)
-, meLnSpState					(SFX_ITEM_DONTCARE)
-, maFISpace1                    ( this, SVX_RES( FI_SPACE1))
-, maFISpace2                    ( this, SVX_RES( FI_SPACE2))
-, maFIndent1                    ( this, SVX_RES( FI_INDENT1))
-, maFIndent2                    ( this, SVX_RES( FI_INDENT2))
-, maFIndent3                    ( this, SVX_RES( FI_INDENT3))
-, mbOutLineRight				(0)
-, mbOutLineLeft					(0)
-,nBulletTypeIndex ((sal_uInt16)0xFFFF)
-,nNumTypeIndex ((sal_uInt16)0xFFFF)
-//End
-,mpBindings(pBindings)
+      m_eLRSpaceUnit(),
+      m_eULSpaceUnit(),
+      maLeftAlignControl (SID_ATTR_PARA_ADJUST_LEFT, *pBindings,*this),
+      maCenterAlignControl (SID_ATTR_PARA_ADJUST_CENTER, *pBindings,*this),
+      maRightAlignControl (SID_ATTR_PARA_ADJUST_RIGHT, *pBindings,*this),
+      maJustifyAlignControl (SID_ATTR_PARA_ADJUST_BLOCK, *pBindings,*this),
+      maLRSpaceControl (SID_ATTR_PARA_LRSPACE,*pBindings,*this),
+      maLNSpaceControl (SID_ATTR_PARA_LINESPACE, *pBindings,*this),
+      maULSpaceControl (SID_ATTR_PARA_ULSPACE, *pBindings,*this),
+      maOutLineLeftControl (SID_OUTLINE_LEFT, *pBindings,*this),
+      maOutLineRightControl (SID_OUTLINE_RIGHT, *pBindings,*this),
+      maDecIndentControl (SID_DEC_INDENT, *pBindings,*this),
+      maIncIndentControl (SID_INC_INDENT, *pBindings,*this),
+      maVertTop (SID_TABLE_VERT_NONE, *pBindings,*this),
+      maVertCenter (SID_TABLE_VERT_CENTER, *pBindings,*this),
+      maVertBottom (SID_TABLE_VERT_BOTTOM,*pBindings,*this),
+      maBulletOnOff (FN_NUM_BULLET_ON, *pBindings,*this),
+      maNumberOnOff (FN_NUM_NUMBERING_ON, *pBindings,*this),
+      maBackColorControl (SID_BACKGROUND_COLOR,	*pBindings,*this),
+      m_aMetricCtl (SID_ATTR_METRIC, *pBindings,*this),
+      maBulletNumRuleIndex (FN_BUL_NUM_RULE_INDEX, *pBindings,*this),
+      maNumNumRuleIndex (FN_NUM_NUM_RULE_INDEX, *pBindings,*this),
+      maContext(),
+      mpBindings(pBindings),
+      maLineSpacePopup(this, ::boost::bind(&ParaPropertyPanel::CreateLineSpacingControl, this, _1)),
+      maBulletsPopup(this, ::boost::bind(&ParaPropertyPanel::CreateBulletsPopupControl, this, _1)),
+      maNumberingPopup(this, ::boost::bind(&ParaPropertyPanel::CreateNumberingPopupControl, this, _1)),
+      maBGColorPopup(this, ::boost::bind(&ParaPropertyPanel::CreateBGColorPopupControl, this, _1)),
+      mxSidebar(rxSidebar)
 {
 	initial();
 	FreeResource();	
 }
 
-}}
+} } // end of namespace svx::sidebar

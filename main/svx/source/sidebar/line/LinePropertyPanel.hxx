@@ -26,7 +26,6 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
-#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <vcl/fixed.hxx>
 #include <vcl/field.hxx>
 #include <boost/scoped_ptr.hpp>
@@ -95,7 +94,6 @@ class LineWidthControl;
 
 class LinePropertyPanel
 :   public Control,
-    public ::sfx2::sidebar::IContextChangeReceiver,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 private:
@@ -110,9 +108,6 @@ public:
 
     virtual void DataChanged(
         const DataChangedEvent& rEvent);
-
-    virtual void HandleContextChange(
-        const ::sfx2::sidebar::EnumContext aContext);
 
     virtual void NotifyItemUpdate(
         const sal_uInt16 nSId,
@@ -191,7 +186,6 @@ private:
     ::boost::scoped_array<Image>                            mpIMGWidthIconH;	//high contrast
 
     cssu::Reference< css::frame::XFrame >                   mxFrame;
-    ::sfx2::sidebar::EnumContext                            maContext;
     SfxBindings*                                            mpBindings;
 
     /// bitfield

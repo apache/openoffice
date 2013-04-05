@@ -135,7 +135,8 @@ long TextPropertyPanel::GetSelFontSize()
 TextPropertyPanel* TextPropertyPanel::Create (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 {
     if (pParent == NULL)
         throw lang::IllegalArgumentException(A2S("no parent Window given to TextPropertyPanel::Create"), NULL, 0);
@@ -147,7 +148,8 @@ TextPropertyPanel* TextPropertyPanel::Create (
     return new TextPropertyPanel(
         pParent,
         rxFrame,
-        pBindings);
+        pBindings,
+        rxSidebar);
 }
 
 
@@ -159,7 +161,8 @@ TextPropertyPanel* TextPropertyPanel::Create (
 TextPropertyPanel::TextPropertyPanel (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
     :	Control(pParent, SVX_RES(RID_SIDEBAR_TEXT_PANEL)),
         mpFontNameBox (new SvxSBFontNameBox(this, SVX_RES(CB_SBFONT_FONT))),
     	maFontSizeBox		(this, SVX_RES(MB_SBFONT_FONTSIZE)),
@@ -245,13 +248,11 @@ TextPropertyPanel::TextPropertyPanel (
         mbFocusOnFontSizeCtrl(false),
         mxFrame(rxFrame),
         maContext(),
-        mpBindings(pBindings)
+        mpBindings(pBindings),
+        mxSidebar(rxSidebar)
 {
 	Initialize();
 	FreeResource();
-
-    // Let the Pane draw the background.
-    SetBackground(Wallpaper());
 }
 
 
@@ -261,17 +262,6 @@ TextPropertyPanel::~TextPropertyPanel (void)
 {
     if(mbMustDelete)
         delete mpFontList;
-
-    /*AF
-	delete mpPageUnderline;
-	delete mpFloatWinUnderline;	
-
-	delete mpPageFontColor;
-	delete mpFloatWinFontColor;
-
-	delete mpPageSpacing;
-	delete mpFloatWinSpacing;
-    */
 
     // Destroy the toolbox windows.
     mpToolBoxIncDec.reset();
@@ -317,7 +307,7 @@ void TextPropertyPanel::HandleContextChange (
     }
 
     maContext = aContext;
-    switch (maContext.GetCombinedContext())
+    switch (maContext.GetCombinedContext_DI())
     {
         case CombinedEnumContext(Application_Calc, Context_Cell):
         case CombinedEnumContext(Application_Calc, Context_Pivot):
@@ -331,11 +321,13 @@ void TextPropertyPanel::HandleContextChange (
             aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
             aSize.setWidth(GetOutputSizePixel().Width());
             SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
             break;
         }
 
-        case CombinedEnumContext(Application_Writer, Context_Text):
-        case CombinedEnumContext(Application_Writer, Context_Table):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Text):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Table):
         {
             mpToolBoxScriptSw->Show();
             mpToolBoxScript->Hide();
@@ -346,6 +338,8 @@ void TextPropertyPanel::HandleContextChange (
             aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
             aSize.setWidth(GetOutputSizePixel().Width());
             SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
             break;
         }
 
@@ -361,25 +355,20 @@ void TextPropertyPanel::HandleContextChange (
             aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
             aSize.setWidth(GetOutputSizePixel().Width());
             SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
             break;
         }
 
         case CombinedEnumContext(Application_Calc, Context_EditCell):
         case CombinedEnumContext(Application_Calc, Context_DrawText):
-        case CombinedEnumContext(Application_Draw, Context_DrawText):
-        case CombinedEnumContext(Application_Draw, Context_Text):
-        case CombinedEnumContext(Application_Draw, Context_Table):
-        case CombinedEnumContext(Application_Draw, Context_OutlineText):
-        case CombinedEnumContext(Application_Draw, Context_Draw):
-        case CombinedEnumContext(Application_Draw, Context_TextObject):
-        case CombinedEnumContext(Application_Draw, Context_Graphic):
-        case CombinedEnumContext(Application_Impress, Context_DrawText):
-        case CombinedEnumContext(Application_Impress, Context_Text):
-        case CombinedEnumContext(Application_Impress, Context_Table):
-        case CombinedEnumContext(Application_Impress, Context_OutlineText):
-        case CombinedEnumContext(Application_Impress, Context_Draw):
-        case CombinedEnumContext(Application_Impress, Context_TextObject):
-        case CombinedEnumContext(Application_Impress, Context_Graphic):
+        case CombinedEnumContext(Application_DrawImpress, Context_DrawText):
+        case CombinedEnumContext(Application_DrawImpress, Context_Text):
+        case CombinedEnumContext(Application_DrawImpress, Context_Table):
+        case CombinedEnumContext(Application_DrawImpress, Context_OutlineText):
+        case CombinedEnumContext(Application_DrawImpress, Context_Draw):
+        case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
         {
             mpToolBoxScriptSw->Hide();
             mpToolBoxScript->Show();
@@ -390,6 +379,8 @@ void TextPropertyPanel::HandleContextChange (
             aSize = LogicToPixel( aSize,MapMode(MAP_APPFONT) ); 
             aSize.setWidth(GetOutputSizePixel().Width());
             SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
             break;
         }
 

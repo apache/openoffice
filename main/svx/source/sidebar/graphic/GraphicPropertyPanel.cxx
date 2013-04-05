@@ -85,7 +85,6 @@ GraphicPropertyPanel::GraphicPropertyPanel(
     msGray(SVX_RES(STR_GRAY)),
     msWater(SVX_RES(STR_WATER)),
     mxFrame(rxFrame),
-    maContext(),
     mpBindings(pBindings)
 {
     Initialize();
@@ -102,7 +101,12 @@ GraphicPropertyPanel::~GraphicPropertyPanel()
 
 void GraphicPropertyPanel::Initialize()
 {
-	mpMtrBrightness->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyBrightnessHdl ) );
+    mpFtBrightness->SetBackground(Wallpaper());
+    mpFtContrast->SetBackground(Wallpaper());
+    mpFtColorMode->SetBackground(Wallpaper());
+    mpFtTrans->SetBackground(Wallpaper());
+
+    mpMtrBrightness->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyBrightnessHdl ) );
 	mpMtrBrightness->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Brightness")));	//wj acc
 	mpMtrContrast->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyContrastHdl ) );
 	mpMtrContrast->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Contrast")));	//wj acc
@@ -265,24 +269,6 @@ void GraphicPropertyPanel::DataChanged(
     (void)rEvent;
     
     SetupIcons();
-}
-
-//////////////////////////////////////////////////////////////////////////////
-
-void GraphicPropertyPanel::HandleContextChange(
-    const ::sfx2::sidebar::EnumContext aContext)
-{
-    if(maContext == aContext)
-    {
-        // Nothing to do.
-        return;
-    }
-
-    maContext = aContext;
-
-
-
-    // todo
 }
 
 //////////////////////////////////////////////////////////////////////////////

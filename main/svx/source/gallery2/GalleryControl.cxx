@@ -30,6 +30,7 @@
 #include "galbrws2.hxx"
 #include "GallerySplitter.hxx"
 #include <vcl/svapp.hxx>
+#include <sfx2/sidebar/Theme.hxx>
 
 #include <boost/bind.hpp>
 
@@ -59,8 +60,6 @@ GalleryControl::GalleryControl (
 {
     FreeResource();
 
-    //    SetSizePixel(Size(300,600));
-    
     mpBrowser1->SelectTheme(0);
     mpBrowser1->Show(sal_True);
 
@@ -100,6 +99,11 @@ void GalleryControl::InitSettings (void)
 	mpBrowser2->SetBackground( Wallpaper( GALLERY_DLG_COLOR ) );
 	mpBrowser2->SetControlBackground( GALLERY_DLG_COLOR );
 	mpBrowser2->SetControlForeground( GALLERY_DLG_COLOR );
+
+    const Wallpaper aBackground (sfx2::sidebar::Theme::GetWallpaper(sfx2::sidebar::Theme::Paint_PanelBackground));
+	mpSplitter->SetBackground(aBackground);
+	SetBackground(aBackground);
+	mpBrowser2->SetBackground(aBackground);
 }
 
 

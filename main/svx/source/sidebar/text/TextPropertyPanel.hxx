@@ -32,7 +32,8 @@
 #include <editeng/svxenum.hxx>
 #include <editeng/fhgtitem.hxx>
 
-#include <com/sun/star/ui/XUIElement.hpp>
+//#include <com/sun/star/ui/XUIElement.hpp>
+#include <com/sun/star/ui/XSidebar.hpp>
 
 #include <boost/scoped_ptr.hpp>
 #include "TextCharacterSpacingPopup.hxx"
@@ -58,7 +59,8 @@ public:
     static TextPropertyPanel* Create (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 
     virtual void DataChanged (const DataChangedEvent& rEvent);
     SfxBindings* GetBindings();
@@ -153,7 +155,6 @@ private:
 	Image	maImgFontColorHigh;
 	Image	maImgSupScriptHigh;
 	Image	maImgSubScriptHigh;
-//	Image	maImgSpacingHigh;  // 
 	Image   maImgHighlightHigh;
 
 	FontWeight					meWeight;
@@ -188,11 +189,13 @@ private:
     cssu::Reference<css::frame::XFrame> mxFrame;
     ::sfx2::sidebar::EnumContext maContext;
     SfxBindings* mpBindings;
-    
+    cssu::Reference<css::ui::XSidebar> mxSidebar;
+        
     TextPropertyPanel (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 	virtual ~TextPropertyPanel (void);
 
 	

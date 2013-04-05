@@ -58,7 +58,8 @@ namespace svx { namespace sidebar {
 PosSizePropertyPanel::PosSizePropertyPanel(
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 :   Control(
         pParent, 
         SVX_RES(RID_SIDEBAR_POSSIZE_PANEL)),
@@ -112,7 +113,8 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     mbAutoHeight(false),
     mbAdjustEnabled(false),
     mbIsFlip(false),
-    mbInDestructor(false)
+    mbInDestructor(false),
+    mxSidebar(rxSidebar)
 {
 	Initialize();
 	FreeResource();
@@ -150,7 +152,14 @@ void PosSizePropertyPanel::ShowMenu (void)
 
 void PosSizePropertyPanel::Initialize()
 {
-	//Position : Horizontal / Vertical
+    mpFtPosX->SetBackground(Wallpaper());
+    mpFtPosY->SetBackground(Wallpaper());
+    mpFtWidth->SetBackground(Wallpaper());
+    mpFtHeight->SetBackground(Wallpaper());
+    mpFtAngle->SetBackground(Wallpaper());
+    mpFtFlip->SetBackground(Wallpaper());
+
+        //Position : Horizontal / Vertical
 	mpMtrPosX->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosXHdl ) );
 	mpMtrPosY->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosYHdl ) );
 	mpMtrPosX->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Horizontal")));	//wj acc
@@ -250,7 +259,8 @@ void PosSizePropertyPanel::SetupIcons(void)
 PosSizePropertyPanel* PosSizePropertyPanel::Create (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 {
     if (pParent == NULL)
         throw lang::IllegalArgumentException(A2S("no parent Window given to PosSizePropertyPanel::Create"), NULL, 0);
@@ -262,7 +272,8 @@ PosSizePropertyPanel* PosSizePropertyPanel::Create (
     return new PosSizePropertyPanel(
         pParent,
         rxFrame,
-        pBindings);
+        pBindings,
+        rxSidebar);
 }
 
 
@@ -362,6 +373,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT2);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
 
@@ -393,6 +406,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT3);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
 
@@ -420,6 +435,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
         
@@ -445,6 +462,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT4);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
 	}

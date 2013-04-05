@@ -55,19 +55,16 @@ void CustomImageRadioButton::Paint (const Rectangle& rUpdateArea)
     SetStateRect( aPaintRect );
 
     const Theme::ThemeItem eBackground = 
-        IsChecked() 
-        ? Theme::Paint_PanelTitleBarBackground
-        : IsMouseOver()
+        IsMouseOver()
           ? Theme::Paint_TabItemBackgroundHighlight
           : Theme::Paint_PanelBackground;
     DrawHelper::DrawRoundedRectangle(
         *this,
         aPaintRect,
-        2,
-        IsChecked() ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
+        Theme::GetInteger(Theme::Int_ButtonCornerRadius),
+        IsChecked() || IsMouseOver() ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
         Theme::GetPaint( eBackground ) );
 
-    //const Image aIcon (Button::GetModeImage(Theme::IsHighContrastMode()
     const Image aIcon (GetModeRadioImage(Theme::IsHighContrastMode()
             ? BMP_COLOR_HIGHCONTRAST
             : BMP_COLOR_NORMAL));

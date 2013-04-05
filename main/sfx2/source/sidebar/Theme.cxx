@@ -250,6 +250,9 @@ void Theme::UpdateTheme (void)
             maPropertyIdToNameMap[Int_DeckSeparatorHeight],
             Any(sal_Int32(1)));
         setPropertyValue(
+            maPropertyIdToNameMap[Int_ButtonCornerRadius],
+            Any(sal_Int32(3)));
+        setPropertyValue(
             maPropertyIdToNameMap[Color_DeckTitleFont],
             Any(sal_Int32(rStyle.GetFontColor().GetRGBColor())));
         setPropertyValue(
@@ -838,6 +841,7 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Int_TabBarTopPadding);
     AddEntry(Int_TabBarRightPadding);
     AddEntry(Int_TabBarBottomPadding);
+    AddEntry(Int_ButtonCornerRadius);
 
     AddEntry(Bool_UseSymphonyIcons);
     AddEntry(Bool_UseSystemColors);
@@ -909,6 +913,7 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Int_TabBarTopPadding:
         case Int_TabBarRightPadding:
         case Int_TabBarBottomPadding:
+        case Int_ButtonCornerRadius:
             return PT_Integer;
 
         case Bool_UseSymphonyIcons:

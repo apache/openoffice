@@ -67,8 +67,6 @@ SidebarPanelBase::SidebarPanelBase (
       msResourceURL(rsResourceURL),
       maLayoutSize(rLayoutSize)
 {
-    //    OSL_TRACE("SidebarPanelBase created at %x", this);
-
     if (mxFrame.is())
     {
         cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
@@ -78,7 +76,10 @@ SidebarPanelBase::SidebarPanelBase (
             xMultiplexer->addContextChangeEventListener(this, mxFrame->getController());
     }
     if (mpControl != NULL)
+    {
+        mpControl->SetBackground(Theme::GetWallpaper(Theme::Paint_PanelBackground));
         mpControl->Show();
+    }
 }
 
 

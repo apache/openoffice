@@ -38,6 +38,7 @@
 
 using namespace css;
 using namespace cssu;
+using ::sfx2::sidebar::ControlFactory;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
@@ -52,42 +53,51 @@ AlignmentPropertyPanel::AlignmentPropertyPanel(
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
-:   Control(
+    : Control(
         pParent, 
-        ScResId(RID_PROPERTYPANEL_SC_ALIGNMENT)),
-    mpTBHorizontal(new ToolBox(this, ScResId(TBX_HORIZONTAL_ALIGNMENT))),
-    mpTBVertical(new ToolBox(this, ScResId(TBX_VERTICAL_ALIGN))),
-    mpFTLeftIndent(new FixedText(this, ScResId(FT_LEFT_INDENT))),
-    mpMFLeftIndent(new MetricField(this, ScResId(MF_LEFT_INDENT))),
-    mpCBXWrapText(new CheckBox(this, ScResId(CBX_WRAP))),
-    mpCBXMergeCell(new CheckBox(this, ScResId(CBX_MERGE))),
-    mpFtRotate(new FixedText(this, ScResId(FT_ORIENT))),
-    mpCtrlDial(new svx::sidebar::SidebarDialControl(this, ScResId(DIAL_CONTROL))), // , true)),
-    mpMtrAngle(new MetricBox(this, ScResId(CBOX_ANGLE))),
-    mpCbStacked(new CheckBox(this, ScResId(CBX_VERT))),
-    maAlignHorControl(SID_H_ALIGNCELL, *pBindings, *this),
-    maAlignVerControl(SID_V_ALIGNCELL, *pBindings, *this),
-    maLeftIndentControl(SID_ATTR_ALIGN_INDENT, *pBindings, *this),
-    maMergeCellControl(FID_MERGE_TOGGLE, *pBindings, *this),
-    maWrapTextControl(SID_ATTR_ALIGN_LINEBREAK, *pBindings, *this),
-    maAngleControl(SID_ATTR_ALIGN_DEGREES, *pBindings, *this),
-    maStackControl(SID_ATTR_ALIGN_STACKED, *pBindings, *this),
-    maIMGAlignLeft(ScResId(IMG_ALIGN_LEFT)),
-    maIMGAlignCenter(ScResId(IMG_ALIGN_CENTER)),
-    maIMGAlignRight(ScResId(IMG_ALIGN_RIGHT)),
-    maIMGAlignJust(ScResId(IMG_ALIGN_JUST)),
-    maIMGAlignTop(ScResId(IMG_ALIGN_TOP)),
-    maIMGAlignCenterV(ScResId(IMG_ALIGN_CENTER_V)),
-    maIMGAlignBottom(ScResId(IMG_ALIGN_BOTTOM)),
-    meHorAlignState(SVX_HOR_JUSTIFY_STANDARD),
-    meVerAlignState(SVX_VER_JUSTIFY_STANDARD),
-    mbMultiDisable(false),
-    mxFrame(rxFrame),
-    maContext(),
-    mpBindings(pBindings)
+            ScResId(RID_PROPERTYPANEL_SC_ALIGNMENT)),
+      mpTBHorizontalBackground(ControlFactory::CreateToolBoxBackground(this)),
+      mpTBHorizontal(ControlFactory::CreateToolBox(
+              mpTBHorizontalBackground.get(),
+              ScResId(TBX_HORIZONTAL_ALIGNMENT))),
+      mpTBVerticalBackground(ControlFactory::CreateToolBoxBackground(this)),
+      mpTBVertical(ControlFactory::CreateToolBox(
+              mpTBVerticalBackground.get(),
+              ScResId(TBX_VERTICAL_ALIGN))),
+      mpFTLeftIndent(new FixedText(this, ScResId(FT_LEFT_INDENT))),
+      mpMFLeftIndent(new MetricField(this, ScResId(MF_LEFT_INDENT))),
+      mpCBXWrapText(new CheckBox(this, ScResId(CBX_WRAP))),
+      mpCBXMergeCell(new CheckBox(this, ScResId(CBX_MERGE))),
+      mpFtRotate(new FixedText(this, ScResId(FT_ORIENT))),
+      mpCtrlDial(new svx::sidebar::SidebarDialControl(this, ScResId(DIAL_CONTROL))), // , true)),
+      mpMtrAngle(new MetricBox(this, ScResId(CBOX_ANGLE))),
+      mpCbStacked(new CheckBox(this, ScResId(CBX_VERT))),
+      maAlignHorControl(SID_H_ALIGNCELL, *pBindings, *this),
+      maAlignVerControl(SID_V_ALIGNCELL, *pBindings, *this),
+      maLeftIndentControl(SID_ATTR_ALIGN_INDENT, *pBindings, *this),
+      maMergeCellControl(FID_MERGE_TOGGLE, *pBindings, *this),
+      maWrapTextControl(SID_ATTR_ALIGN_LINEBREAK, *pBindings, *this),
+      maAngleControl(SID_ATTR_ALIGN_DEGREES, *pBindings, *this),
+      maStackControl(SID_ATTR_ALIGN_STACKED, *pBindings, *this),
+      maIMGAlignLeft(ScResId(IMG_ALIGN_LEFT)),
+      maIMGAlignCenter(ScResId(IMG_ALIGN_CENTER)),
+      maIMGAlignRight(ScResId(IMG_ALIGN_RIGHT)),
+      maIMGAlignJust(ScResId(IMG_ALIGN_JUST)),
+      maIMGAlignTop(ScResId(IMG_ALIGN_TOP)),
+      maIMGAlignCenterV(ScResId(IMG_ALIGN_CENTER_V)),
+      maIMGAlignBottom(ScResId(IMG_ALIGN_BOTTOM)),
+      meHorAlignState(SVX_HOR_JUSTIFY_STANDARD),
+      meVerAlignState(SVX_VER_JUSTIFY_STANDARD),
+      mbMultiDisable(false),
+      mxFrame(rxFrame),
+      maContext(),
+      mpBindings(pBindings)
 {
     Initialize();
     FreeResource();
+
+    mpFTLeftIndent->SetBackground(Wallpaper());
+    mpFtRotate->SetBackground(Wallpaper());
 }
 
 //////////////////////////////////////////////////////////////////////////////

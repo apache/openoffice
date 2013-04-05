@@ -38,7 +38,6 @@ public:
     ~PreviewValueSet (void);
 
 	void SetRightMouseClickHandler (const Link& rLink);
-	virtual void Paint (const Rectangle& rRect);
     virtual void Resize (void);
     
     void SetPreviewSize (const Size& rSize);

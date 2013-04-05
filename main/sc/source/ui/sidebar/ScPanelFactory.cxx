@@ -147,7 +147,7 @@ Reference<ui::XUIElement> SAL_CALL ScPanelFactory::createUIElement (
     }
     else if (DoesResourceEndWith("/NavigatorPanel"))
     {
-        Window* pPanel = new ScNavigatorDlg(pBindings, NULL, pParentWindow);
+        Window* pPanel = new ScNavigatorDlg(pBindings, NULL, pParentWindow, false);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,

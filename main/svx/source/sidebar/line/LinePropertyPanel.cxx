@@ -194,7 +194,6 @@ LinePropertyPanel::LinePropertyPanel(
     mpIMGStyleIconH(),
     mpIMGWidthIconH(),
     mxFrame(rxFrame),
-    maContext(),
     mpBindings(pBindings),
     mbColorAvailable(true),
     mbStyleAvailable(false),
@@ -225,7 +224,15 @@ LinePropertyPanel::~LinePropertyPanel()
 
 void LinePropertyPanel::Initialize()
 {
-    mpIMGStyleIcon.reset(new Image[11]);
+    mpFTWidth->SetBackground(Wallpaper());
+    mpFTColor->SetBackground(Wallpaper());
+    mpFTStyle->SetBackground(Wallpaper());
+    mpFTTrancparency->SetBackground(Wallpaper());
+    mpFTArrow->SetBackground(Wallpaper());
+    mpFTEdgeStyle->SetBackground(Wallpaper());
+    mpFTCapStyle->SetBackground(Wallpaper());
+
+        mpIMGStyleIcon.reset(new Image[11]);
 	mpIMGStyleIcon[0] = Image(SVX_RES(IMG_LINE1_ICON));
 	mpIMGStyleIcon[1] = Image(SVX_RES(IMG_LINE2_ICON));
 	mpIMGStyleIcon[2] = Image(SVX_RES(IMG_LINE3_ICON));
@@ -376,6 +383,7 @@ LinePropertyPanel* LinePropertyPanel::Create (
 
 
 
+
 void LinePropertyPanel::DataChanged(
     const DataChangedEvent& rEvent)
 {
@@ -384,23 +392,6 @@ void LinePropertyPanel::DataChanged(
     SetupIcons();
 }
 
-
-
-void LinePropertyPanel::HandleContextChange(
-    const ::sfx2::sidebar::EnumContext aContext)
-{
-    if(maContext == aContext)
-    {
-        // Nothing to do.
-        return;
-    }
-
-    maContext = aContext;
-
-
-
-    // todo
-}
 
 
 

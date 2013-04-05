@@ -71,7 +71,7 @@ void TabItem::Paint (const Rectangle& rUpdateArea)
             DrawHelper::DrawRoundedRectangle(
                 *this,
                 Rectangle(Point(0,0), GetSizePixel()),
-                3,
+                Theme::GetInteger(Theme::Int_ButtonCornerRadius),
                 bIsHighlighted||bIsSelected
                     ? Theme::GetColor(Theme::Color_TabItemBorder)
                     : Color(0xffffffff),

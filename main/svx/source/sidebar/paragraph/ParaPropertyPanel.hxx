@@ -19,11 +19,10 @@
  * 
  *************************************************************/
 
-#ifndef SVX_SIDEBAR_PARA_PROPERTY_PAGE_HXX
-#define SVX_SIDEBAR_PARA_PROPERTY_PAGE_HXX
+#ifndef SVX_SIDEBAR_PARA_PROPERTY_PANEL_HXX
+#define SVX_SIDEBAR_PARA_PROPERTY_PANEL_HXX
 
 #include <vcl/ctrl.hxx>
-#include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <editeng/lspcitem.hxx>
@@ -33,7 +32,8 @@
 #include <editeng/svxenum.hxx>
 #include <editeng/fhgtitem.hxx>
 
-#include <com/sun/star/ui/XUIElement.hpp>
+#include <com/sun/star/frame/XFrame.hpp>
+#include <com/sun/star/ui/XSidebar.hpp>
 
 #include <boost/scoped_ptr.hpp>
 
@@ -50,6 +50,10 @@
 class FloatingWindow;
 class ToolBox;
 
+namespace css = ::com::sun::star;
+namespace cssu = ::com::sun::star::uno;
+
+
 namespace svx { namespace sidebar {
 
 class PopupControl;
@@ -64,7 +68,8 @@ public:
     static ParaPropertyPanel* Create (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 
 	virtual void DataChanged (const DataChangedEvent& rEvent);
 	SfxBindings* GetBindings();
@@ -78,11 +83,10 @@ public:
 	    const SfxPoolItem* pState);
 
 	void ShowMenu (void);
-	sal_uInt16 GetBulletTypeIndex(){ return nBulletTypeIndex; }
-	void SetBulletTypeIndex(sal_uInt16 nInd){ nBulletTypeIndex = nInd; }
-	sal_uInt16 GetNumTypeIndex(){ return nNumTypeIndex; }
-	void SetNumTypeIndex(sal_uInt16 nInd){ nNumTypeIndex = nInd; }
-	//End
+	sal_uInt16 GetBulletTypeIndex(){ return mnBulletTypeIndex; }
+	void SetBulletTypeIndex(sal_uInt16 nInd){ mnBulletTypeIndex = nInd; }
+	sal_uInt16 GetNumTypeIndex(){ return mnNumTypeIndex; }
+	void SetNumTypeIndex(sal_uInt16 nInd){ mnNumTypeIndex = nInd; }
 	FieldUnit GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState );
 
 	void EndSpacingPopupMode (void);
@@ -160,7 +164,7 @@ private:
 	ImageList	maVertImageListH;	
 	ImageList	maNumBImageList;
 	ImageList	maNumBImageListH;
-	ImageList	maNumBImageListRTL;	//sym2_7380
+	ImageList	maNumBImageListRTL;
 	Image		maImgBackColorHigh;
 	Image		maImgBackColor;
 
@@ -178,8 +182,8 @@ private:
 	long					maUpper;
 	long					maLower;
 
-	sal_uInt16			nBulletTypeIndex;
-	sal_uInt16			nNumTypeIndex;
+	sal_uInt16			mnBulletTypeIndex;
+	sal_uInt16			mnNumTypeIndex;
 	Color				maColor;
 	bool					mbColorAvailable;
 	FieldUnit						m_eMetricUnit;
@@ -188,7 +192,7 @@ private:
 	SfxMapUnit                      m_eULSpaceUnit;
 	/****************************************************************
 	**
-	** Controll Itemb
+	** Controll Items
 	**
 	*****************************************************************/
 
@@ -197,10 +201,8 @@ private:
 	::sfx2::sidebar::ControllerItem  maRightAlignControl;
 	::sfx2::sidebar::ControllerItem  maJustifyAlignControl;
 	::sfx2::sidebar::ControllerItem  maLRSpaceControl;
-	//::sfx2::sidebar::ControllerItem  maLRSpaceControl2;
 	::sfx2::sidebar::ControllerItem  maLNSpaceControl;
 	::sfx2::sidebar::ControllerItem  maULSpaceControl;
-	//::sfx2::sidebar::ControllerItem  maULSpaceControl2;
 	::sfx2::sidebar::ControllerItem  maOutLineLeftControl;
 	::sfx2::sidebar::ControllerItem  maOutLineRightControl;
 	::sfx2::sidebar::ControllerItem  maDecIndentControl;
@@ -215,20 +217,20 @@ private:
 	::sfx2::sidebar::ControllerItem  maBulletNumRuleIndex;
 	::sfx2::sidebar::ControllerItem  maNumNumRuleIndex;
 
-    cssu::Reference<css::frame::XFrame> mxFrame;
     ::sfx2::sidebar::EnumContext maContext;
     SfxBindings* mpBindings;
-
-
 	ParaLineSpacingPopup maLineSpacePopup;
 	ParaBulletsPopup maBulletsPopup;
 	ParaNumberingPopup maNumberingPopup;
 	ColorPopup maBGColorPopup; 
+    cssu::Reference<css::ui::XSidebar> mxSidebar;
+
     
     ParaPropertyPanel (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 	virtual ~ParaPropertyPanel (void);
 
 	void InitImageList(::boost::scoped_ptr<ToolBox>& rTbx, ImageList& rImglst, ImageList& rImgHlst);
@@ -251,9 +253,9 @@ private:
 	void StateChangedULImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
 	void StateChangeOutLineImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
 	void StateChangeIncDecImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
-	//Sym3_1093. Add toggle state for numbering and bullet icons
+	// Add toggle state for numbering and bullet icons
 	void StateChangeBulletNumImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
-	//Modified for Numbering&Bullets Dialog UX Enh(Story 992) by chengjh,2011.7.5
+	//Modified for Numbering&Bullets Dialog UX Enh
 	//Handing the transferred the num rule index data of the current selection
 	void StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
 	
