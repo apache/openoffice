@@ -21,30 +21,10 @@
 
 
 
-# edit to match directory level 
-PRJ		= ..$/..$/..
-# same for all makefiles in "helpcontent2"
-PRJNAME = helpcontent2
-# edit to match the current package
-PACKAGE = text/schart
-# uniqe name (module wide);
-# using a modified form of package should do here
-TARGET  = text_schart
-# edit to match the current module
-MODULE  = schart
+# --- Define module and files to be handled ------------------------
+MODULE     = help_schart
+MODULE_DIR = 00 01 02 04
+XHPFILES   = $(shell ls * */*.xhp)
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE : settings.mk
-.INCLUDE : $(PRJ)$/settings.pmk
-
-# this list matches the *.xhp files to process
-XHPFILES = \
-   main0000.xhp \
-   main0202.xhp \
-   main0503.xhp 
-	
 # --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-.INCLUDE : tg_help.mk
+.INCLUDE : ../../../make_helper.mk

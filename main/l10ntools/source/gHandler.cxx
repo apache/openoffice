@@ -191,21 +191,9 @@ void handler::checkCommandLine(int argc, char *argv[])
   }
 
   // update directories to include final /
-  nLen = msSourceDir.find("/help_");
-  if (nLen != (int)std::string::npos)
-  {
-    msSourceDir.erase(nLen+1);
-    msSourceDir.append("helpcontent2");
-  }
   nLen = msSourceDir.size();
   if (nLen && msSourceDir.at(nLen-1) != '/')
     msSourceDir.append("/");
-  nLen = msTargetDir.find("/help_");
-  if (nLen != (int)std::string::npos)
-  {
-    msTargetDir.erase(nLen+1);
-    msTargetDir.append("helpcontent2");
-  }
   nLen = msTargetDir.size();
   if (nLen && msTargetDir.at(nLen-1) != '/')
     msTargetDir.append("/");

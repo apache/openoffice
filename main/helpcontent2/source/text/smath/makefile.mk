@@ -21,39 +21,10 @@
 
 
 
-# edit to match directory level 
-PRJ		= ..$/..$/..
-# same for all makefiles in "helpcontent2"
-PRJNAME = helpcontent2
-# edit to match the current package
-PACKAGE = text/smath
-# uniqe name (module wide);
-# using a modified form of package should do here
-TARGET  = text_smath
-# edit to match the current module
-MODULE  = smath
+# --- Define module and files to be handled ------------------------
+MODULE     = help_smath
+MODULE_DIR = 00 01 02 04 guide
+XHPFILES   = $(shell ls * */*.xhp)
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE : settings.mk
-.INCLUDE : $(PRJ)$/settings.pmk
-
-# this list matches the *.xhp files to process
-XHPFILES = \
-   main0000.xhp \
-   main0100.xhp \
-   main0101.xhp \
-   main0102.xhp \
-   main0103.xhp \
-   main0105.xhp \
-   main0106.xhp \
-   main0107.xhp \
-   main0200.xhp \
-   main0202.xhp \
-   main0203.xhp \
-   main0503.xhp 
-	
 # --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-.INCLUDE : tg_help.mk
+.INCLUDE : ../../../make_helper.mk

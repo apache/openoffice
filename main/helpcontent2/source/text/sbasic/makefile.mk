@@ -19,30 +19,10 @@
 #  
 #**************************************************************
 
+# --- Define module and files to be handled ------------------------
+MODULE     = help_sbasic
+MODULE_DIR = guide shared
+XHPFILES   = $(shell ls */*.xhp)
 
-
-# edit to match directory level 
-PRJ		= ..$/..$/..$/..
-# same for all makefiles in "helpcontent2"
-PRJNAME = helpcontent2
-# edit to match the current package
-PACKAGE = text/schart/00
-# uniqe name (module wide);
-# using a modified form of package should do here
-TARGET  = text_schart_00
-# edit to match the current module
-MODULE  = schart
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE : settings.mk
-.INCLUDE : $(PRJ)$/settings.pmk
-
-# this list matches the *.xhp files to process
-XHPFILES = \
-   00000004.xhp 
-	
 # --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-.INCLUDE : tg_help.mk
+.INCLUDE : ../../../make_helper.mk

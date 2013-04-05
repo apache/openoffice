@@ -18,20 +18,7 @@
  * under the License.
  * 
  *************************************************************/
-#include "gConDB.hxx"
-#include "gConPo.hxx"
-#include "gConProp.hxx"
-#include "gConSrc.hxx"
-#include "gConTree.hxx"
-#include "gConUlf.hxx"
-#include "gConXcs.hxx"
-#include "gConXcu.hxx"
-#include "gConXrm.hxx"
 #include "gConXhp.hxx"
-//#include <algorithm>
-//#include <iostream>
-//#include <fstream>
-//#include <cstdlib>
 
 
 
@@ -85,20 +72,24 @@ namespace XhpWrap
 void convert_xhp::execute()
 {
   std::string sLang;
+  std::string sFile;
 
   // prepare list with languages
   miCntLanguages = mcMemory.prepareMerge();
-  mcOutputFiles  = new std::ofstream[miCntLanguages];
-  msLangText     = new std::string[miCntLanguages];
-
-  for (int i = 0; mcMemory.getLangList(sLang); ++i)
+  if (mbMergeMode)
   {
-    std::string sFile = msTargetPath + sLang + "/" + msSourceFile;
-    mcOutputFiles[i].open(sFile.c_str(), std::ios::binary); 
-    if (!mcOutputFiles[i].is_open())
-      throw l10nMem::showError("Cannot open file (" + sFile + ") for writing");
+    mcOutputFiles  = new std::ofstream[miCntLanguages];
+    msLangText     = new std::string[miCntLanguages];
 
-    msLangText[i] = "xml-lang=\"" + sLang + "\"";
+    for (int i = 0; mcMemory.getMergeLang(sLang, sFile); ++i)
+    {
+      sFile = msTargetPath + sLang + "/" + msSourceFile;
+      mcOutputFiles[i].open(sFile.c_str(), std::ios::binary); 
+      if (!mcOutputFiles[i].is_open())
+        throw l10nMem::showError("Cannot open file (" + sFile + ") for writing");
+
+      msLangText[i] = "xml-lang=\"" + sLang + "\"";
+    }
   }
 
   // run analyzer
@@ -376,40 +367,52 @@ std::string& convert_xhp::copySourceSpecial(char *yytext, int iType)
   switch (iType)
   {
     case 0: // Used for tokens that are to be copied 1-1, 
-            msLine += yytext;
-            if (*yytext == '\n')
+            if (mbMergeMode)
             {
-              for (i = 0; i < miCntLanguages; ++i)
-                writeSourceFile(msLine, i);
-              msLine.clear();
+              msLine += yytext;
+              if (*yytext == '\n')
+              {
+                for (i = 0; i < miCntLanguages; ++i)
+                  writeSourceFile(msLine, i);
+                msLine.clear();
+              }
             }
             break;
 
     case 1: // Used for language token, are to replaced with languages
-            for (i = 0; i < miCntLanguages; ++i)
+            if (mbMergeMode)
             {
-              writeSourceFile(msLine, i);
-              writeSourceFile(msLangText[i], i);
+              for (i = 0; i < miCntLanguages; ++i)
+              {
+                writeSourceFile(msLine, i);
+                writeSourceFile(msLangText[i], i);
+              }
+              msLine.clear();
             }
-            msLine.clear();
             break;
 
     case 2: // Used for token at end of value, language text are to be inserted and then token written
-            mcMemory.prepareMerge();
-            for (i = 0; i < miCntLanguages; ++i)
+            if (mbMergeMode)
             {
-              writeSourceFile(msLine, i);
-              mcMemory.getMergeLang(sLang, sText);
-              writeSourceFile(sText,i);
-              std::string sYY(yytext);
-              writeSourceFile(sYY, i);
+              mcMemory.prepareMerge();
+              for (i = 0; i < miCntLanguages; ++i)
+              {
+                writeSourceFile(msLine, i);
+                mcMemory.getMergeLang(sLang, sText);
+                writeSourceFile(sText,i);
+                std::string sYY(yytext);
+                writeSourceFile(sYY, i);
+              }
+              msLine.clear();
             }
-            msLine.clear();
             break;
 
     case 3: // Used for EOF 
-            for (i = 0; i < miCntLanguages; ++i)
-              writeSourceFile(msLine, i);
+            if (mbMergeMode)
+            {
+              for (i = 0; i < miCntLanguages; ++i)
+                writeSourceFile(msLine, i);
+            }
             break;
   }
   return sText;

@@ -391,8 +391,8 @@ void l10nMem_db::addKey(int                  iLineNo,
 /**********************   I M P L E M E N T A T I O N   **********************/
 int l10nMem_db::prepareMerge()
 {
-  miCurLangInx = 0;
-  return mcLangList.size() -1;
+  miCurLangInx = -1;
+  return mcLangList.size();
 }
 
 
@@ -406,21 +406,15 @@ bool l10nMem_db::getMergeLang(std::string& sLang,
     return false;
 
   // update pointers
-  sLang = mcLangList[miCurLangInx];
-  sText = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msText;
-  return true;
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-bool l10nMem_db::getLangList(std::string& sLang)
-{
-  miCurLangInx++;
-  if (miCurLangInx >= (int)mcLangList.size())
-    return false;
-
-  // update pointers
-  sLang = mcLangList[miCurLangInx];
+  if (!miCurLangInx)
+  {
+    sLang = "en-US";
+    sText = mcENUSlist[miCurENUSinx].msText;
+  }
+  else
+  {
+    sLang = mcLangList[miCurLangInx];
+    sText = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msText;
+  }
   return true;
 }

@@ -21,45 +21,10 @@
 
 
 
-# edit to match directory level 
-PRJ		= ..$/..$/..
-# same for all makefiles in "helpcontent2"
-PRJNAME = helpcontent2
-# edit to match the current package
-PACKAGE = text/shared
-# uniqe name (module wide);
-# using a modified form of package should do here
-TARGET  = text_shared
-# edit to match the current module
-MODULE  = shared
+# --- Define module and files to be handled ------------------------
+MODULE     = help_shared
+MODULE_DIR = 00 01 02 04 05 07 autokorr autopi explorer explorer/database guide optionen
+XHPFILES   = $(shell ls */*.xhp explorer/database/*.xhp)
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE : settings.mk
-.INCLUDE : $(PRJ)$/settings.pmk
-
-# this list matches the *.xhp files to process
-XHPFILES = \
-   3dsettings_toolbar.xhp \
-   fontwork_toolbar.xhp \
-   main0108.xhp \
-   main0201.xhp \
-   main0204.xhp \
-   main0208.xhp \
-   main0209.xhp \
-   main0212.xhp \
-   main0213.xhp \
-   main0214.xhp \
-   main0226.xhp \
-   main0227.xhp \
-   main0400.xhp \
-   main0500.xhp \
-   main0600.xhp \
-   main0650.xhp \
-   main0800.xhp \
-   tree_strings.xhp 
-	
 # --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-.INCLUDE : tg_help.mk
+.INCLUDE : ../../../make_helper.mk

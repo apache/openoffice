@@ -101,8 +101,6 @@ void l10nMem::dumpMem(const std::string& sT)
      { l10nMem_impl::mcImpl->dumpMem(sT); }
 bool l10nMem::getMergeLang(std::string& sL, std::string& sT)
      { return l10nMem_impl::mcImpl->mcDb.getMergeLang(sL, sT); }
-bool l10nMem::getLangList(std::string& sL)
-     { return l10nMem_impl::mcImpl->mcDb.getLangList(sL); }
 
 
 

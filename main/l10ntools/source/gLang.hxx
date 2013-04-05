@@ -77,20 +77,19 @@ class l10nMem
                         const std::string& sText,
                         bool               bIsFuzzy);
 
-    void setSourceKey (int                iLineNo,
-                       const std::string& sFilename,
-                       const std::string& sKey,
-                       const std::string& sText);
+    void setSourceKey  (int                iLineNo,
+                        const std::string& sFilename,
+                        const std::string& sKey,
+                        const std::string& sText);
 
-    void save         (const std::string& sTargetDir,
-                       bool               bKid,
-                       bool               bForce);
-    void dumpMem      (const std::string& sTargetDir);
+    void save          (const std::string& sTargetDir,
+                        bool               bKid,
+                        bool               bForce);
+    void dumpMem       (const std::string& sTargetDir);
 
-    int  prepareMerge ();
-    bool getMergeLang (std::string& sLang,
-                       std::string& sText);
-    bool getLangList  (std::string& sLang);
+    int  prepareMerge  ();
+    bool getMergeLang  (std::string& sLang,
+                        std::string& sText);
 };
 
 

@@ -21,7 +21,6 @@
 
 
 
-
 PRJ		= ..$/..
 PRJNAME = helpcontent2
 TARGET  = auxiliary
@@ -34,6 +33,7 @@ TREEFILES  = \
 	sbasic.tree \
 	simpress.tree \
 	scalc.tree \
+	sdraw.tree \
 	smath.tree \
 	schart.tree \
 	swriter.tree \
@@ -85,7 +85,6 @@ $(LOCTREEFILES) : $(COMMONMISC)/unpack.done
 
 .ENDIF			# "$(LOCALIZATION_FOUND)"=="YES"
 .ENDIF			# "$(WITH_LANG)"!=""
-
 aux_dirs .PHONY :
     echo aux_langdirs:=$(aux_langdirs) > $(LOCAL_COMMON_OUT)/inc$/aux_langs.mk
 

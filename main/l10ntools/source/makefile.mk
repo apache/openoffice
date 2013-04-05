@@ -170,12 +170,12 @@ APP7STDLIBS+= \
 APP8TARGET= genLang 
 APP8OBJS= $(OBJ)$/gLang.obj       $(OBJ)$/gL10nMem.obj    \
           $(OBJ)$/gL10nMemDB.obj  $(OBJ)$/gHandler.obj    \
-          $(OBJ)$/gConProp.obj    $(OBJ)$/gConTree.obj    \
-          $(OBJ)$/gCon.obj        $(OBJ)$/gConDB.obj      \
+          $(OBJ)$/gConProp.obj    $(OBJ)$/gCon.obj        \
+          $(OBJ)$/gConDB.obj                              \
           $(OBJ)$/gConPoWrap.obj  $(OBJ)$/gConSrcWrap.obj \
           $(OBJ)$/gConXrmWrap.obj $(OBJ)$/gConXhpWrap.obj \
           $(OBJ)$/gConXcsWrap.obj $(OBJ)$/gConXcuWrap.obj \
-          $(OBJ)$/gConUlfWrap.obj
+          $(OBJ)$/gConUlfWrap.obj $(OBJ)$/gConTreeWrap.obj
 APP8RPATH=  NONE
 APP8STDLIBS= 
 APP8LIBS= 
@@ -215,13 +215,14 @@ $(MISC)$/%_yy.c : %lex.l
 
 # Helper to suppress warnings in lex generated c code, see #i57362#
 
-$(OBJ)$/gConPoWrap.obj: $(MISC)$/gConPo_yy.c
-$(OBJ)$/gConSrcWrap.obj: $(MISC)$/gConSrc_yy.c
-$(OBJ)$/gConXcuWrap.obj: $(MISC)$/gConXcu_yy.c
-$(OBJ)$/gConXcsWrap.obj: $(MISC)$/gConXcs_yy.c
-$(OBJ)$/gConXrmWrap.obj: $(MISC)$/gConXrm_yy.c
-$(OBJ)$/gConXhpWrap.obj: $(MISC)$/gConXhp_yy.c
-$(OBJ)$/gConUlfWrap.obj: $(MISC)$/gConUlf_yy.c
+$(OBJ)$/gConPoWrap.obj:   $(MISC)$/gConPo_yy.c
+$(OBJ)$/gConSrcWrap.obj:  $(MISC)$/gConSrc_yy.c
+$(OBJ)$/gConXcuWrap.obj:  $(MISC)$/gConXcu_yy.c
+$(OBJ)$/gConXcsWrap.obj:  $(MISC)$/gConXcs_yy.c
+$(OBJ)$/gConXrmWrap.obj:  $(MISC)$/gConXrm_yy.c
+$(OBJ)$/gConXhpWrap.obj:  $(MISC)$/gConXhp_yy.c
+$(OBJ)$/gConUlfWrap.obj:  $(MISC)$/gConUlf_yy.c
+$(OBJ)$/gConTreeWrap.obj: $(MISC)$/gConTree_yy.c
 
 $(OBJ)$/src_yy_wrapper.obj: $(MISC)$/src_yy.c
 $(OBJ)$/cfg_yy_wrapper.obj: $(MISC)$/cfg_yy.c
