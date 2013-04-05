@@ -320,7 +320,6 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 					mbTBShow = false;
 					if ( pSh && pSh->GetItem( SID_GRADIENT_LIST ) )
 					{
-						// 
 						if(mpLbFillAttr->GetEntryCount() == 0)
 						{
 							SvxGradientListItem aItem( *(const SvxGradientListItem*)(
@@ -329,6 +328,8 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 							mpLbFillAttr->Clear();
 							mpLbFillAttr->Fill( aItem.GetGradientList() );	
 						}
+
+                        mpLbFillAttr->SetDropDownLineCount(std::min(sal_uInt16(20), mpLbFillAttr->GetEntryCount()));
 
 						if ( mnLastPosGradient != LISTBOX_ENTRY_NOTFOUND)
 						{
@@ -354,7 +355,6 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 					mbTBShow = false;
 					if ( pSh && pSh->GetItem( SID_HATCH_LIST ) )
 					{
-						// 
 						if(mpLbFillAttr->GetEntryCount() == 0)
 						{
 							SvxHatchListItem aItem( *(const SvxHatchListItem*)(
@@ -363,6 +363,8 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 							mpLbFillAttr->Clear();
 							mpLbFillAttr->Fill( aItem.GetHatchList() );
 						}
+
+                        mpLbFillAttr->SetDropDownLineCount(std::min(sal_uInt16(20), mpLbFillAttr->GetEntryCount()));
 
 						if ( mnLastPosHatch != LISTBOX_ENTRY_NOTFOUND )
 						{
@@ -388,7 +390,6 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 					mbTBShow = false;
 					if ( pSh && pSh->GetItem( SID_BITMAP_LIST ) )
 					{
-						// 
 						if(mpLbFillAttr->GetEntryCount() == 0)
 						{
 							SvxBitmapListItem aItem( *(const SvxBitmapListItem*)(
@@ -397,6 +398,8 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 							mpLbFillAttr->Clear();
 							mpLbFillAttr->Fill( aItem.GetBitmapList() );
 						}
+
+                        mpLbFillAttr->SetDropDownLineCount(std::min(sal_uInt16(20), mpLbFillAttr->GetEntryCount()));
 
 						if ( mnLastPosBitmap != LISTBOX_ENTRY_NOTFOUND )
 						{

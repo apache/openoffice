@@ -92,7 +92,6 @@ $(eval $(call gb_SrsTarget_add_files,svx/res,\
     svx/source/tbxctrls/fontworkgallery.src \
     svx/source/tbxctrls/grafctrl.src \
     svx/source/tbxctrls/lboxctrl.src \
-    svx/source/tbxctrls/linectrl.src \
     svx/source/tbxctrls/tbcontrl.src \
     svx/source/tbxctrls/tbunosearchcontrollers.src \
     svx/source/toolbars/extrusionbar.src \

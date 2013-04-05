@@ -54,7 +54,6 @@
 #include "svx/sidebar/PopupContainer.hxx"
 #include "svx/sidebar/PopupControl.hxx"
 #include <svx/sidebar/ColorControl.hxx>
-#include "LineStyleControl.hxx"
 #include "LineWidthControl.hxx"
 #include <boost/bind.hpp>
 
@@ -96,19 +95,28 @@ namespace {
     void FillLineEndListBox(ListBox& rListBoxStart, ListBox& rListBoxEnd, const XLineEndList& rList)
     {
         const sal_uInt32 nCount(rList.Count());
+        const String sNone(SVX_RES(RID_SVXSTR_NONE));
+
         rListBoxStart.SetUpdateMode(false);
         rListBoxEnd.SetUpdateMode(false);
+
+        rListBoxStart.Clear();
+        rListBoxEnd.Clear();
+
+        // add 'none' entries
+        rListBoxStart.InsertEntry(sNone);
+        rListBoxEnd.InsertEntry(sNone);
 
         for(sal_uInt32 i(0); i < nCount; i++)
         {
             XLineEndEntry* pEntry = rList.GetLineEnd(i);
-            const Bitmap* pBitmap = const_cast< XLineEndList& >(rList).CreateBitmapForUI(i);
+            const Bitmap aBitmap = const_cast< XLineEndList& >(rList).GetUiBitmap(i);
 
-            if(pBitmap)
+            if(!aBitmap.IsEmpty())
             {
-                Bitmap aCopyStart(*pBitmap);
-                Bitmap aCopyEnd(*pBitmap);
-                delete pBitmap;
+                Bitmap aCopyStart(aBitmap);
+                Bitmap aCopyEnd(aBitmap);
+                // delete pBitmap;
                 const Size aBmpSize(aCopyStart.GetSizePixel());
                 const Rectangle aCropRectStart(Point(), Size(aBmpSize.Width() / 2, aBmpSize.Height()));
                 const Rectangle aCropRectEnd(Point(aBmpSize.Width() / 2, 0), Size(aBmpSize.Width() / 2, aBmpSize.Height()));
@@ -133,6 +141,40 @@ namespace {
         rListBoxStart.SetUpdateMode(true);
         rListBoxEnd.SetUpdateMode(true);
     }
+
+    void FillLineStyleListBox(ListBox& rListBox, const XDashList& rList)
+    {
+        const sal_uInt32 nCount(rList.Count());
+        rListBox.SetUpdateMode(false);
+
+        rListBox.Clear();
+
+        // entry for 'none'
+        rListBox.InsertEntry(rList.GetStringForUiNoLine());
+
+        // entry for solid line
+        rListBox.InsertEntry(rList.GetStringForUiSolidLine(), rList.GetBitmapForUISolidLine());
+
+        for(sal_uInt32 i(0); i < nCount; i++)
+        {
+            XDashEntry* pEntry = rList.GetDash(i);
+            const Bitmap aBitmap = const_cast< XDashList& >(rList).GetUiBitmap(i);
+
+            if(!aBitmap.IsEmpty())
+            {
+                rListBox.InsertEntry(
+                    pEntry->GetName(),
+                    aBitmap);
+                // delete pBitmap;
+            }
+            else
+            {
+                rListBox.InsertEntry(pEntry->GetName());
+            }
+        }
+
+        rListBox.SetUpdateMode(true);
+    }
 } // end of anonymous namespace
 
 // namespace open
@@ -153,8 +195,7 @@ LinePropertyPanel::LinePropertyPanel(
     mpTBColorBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
     mpTBColor(sfx2::sidebar::ControlFactory::CreateToolBox(mpTBColorBackground.get(), SVX_RES(TB_COLOR))),
     mpFTStyle(new FixedText(this, SVX_RES(FT_STYLE))),
-    mpTBStyleBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
-    mpTBStyle(sfx2::sidebar::ControlFactory::CreateToolBox(mpTBStyleBackground.get(), SVX_RES(TB_STYLE))),
+    mpLBStyle(new ListBox(this, SVX_RES(LB_STYLE))),
     mpFTTrancparency(new FixedText(this, SVX_RES(FT_TRANSPARENT))),
     mpMFTransparent(new MetricField(this, SVX_RES(MF_TRANSPARENT))),
     mpFTArrow(new FixedText(this, SVX_RES(FT_ARROW))),
@@ -171,6 +212,7 @@ LinePropertyPanel::LinePropertyPanel(
     maStartControl(SID_ATTR_LINE_START, *pBindings, *this),
     maEndControl(SID_ATTR_LINE_END, *pBindings, *this),
     maLineEndListControl(SID_LINEEND_LIST, *pBindings, *this),
+    maLineStyleListControl(SID_DASH_LIST, *pBindings, *this),
     maTransControl(SID_ATTR_LINE_TRANSPARENCE, *pBindings, *this),
     maEdgeStyle(SID_ATTR_LINE_JOINT, *pBindings, *this),
     maCapStyle(SID_ATTR_LINE_CAP, *pBindings, *this),
@@ -182,16 +224,14 @@ LinePropertyPanel::LinePropertyPanel(
     meMapUnit(SFX_MAPUNIT_MM),
     mnWidthCoreValue(0),
     mpLineEndList(0),
+    mpLineStyleList(0),
     mpStartItem(0),
     mpEndItem(0),
     maColorPopup(this, ::boost::bind(&LinePropertyPanel::CreateColorPopupControl, this, _1)),
-    maLineStylePopup(this, ::boost::bind(&LinePropertyPanel::CreateLineStylePopupControl, this, _1)),
     maLineWidthPopup(this, ::boost::bind(&LinePropertyPanel::CreateLineWidthPopupControl, this, _1)),
     maIMGColor(SVX_RES(IMG_COLOR)),
     maIMGNone(SVX_RES(IMG_NONE_ICON)),
-    mpIMGStyleIcon(),
     mpIMGWidthIcon(),
-    mpIMGStyleIconH(),
     mpIMGWidthIconH(),
     mxFrame(rxFrame),
     mpBindings(pBindings),
@@ -214,10 +254,9 @@ LinePropertyPanel::~LinePropertyPanel()
     // Destroy the toolboxes, then their background windows.
     mpTBWidth.reset();
     mpTBColor.reset();
-    mpTBStyle.reset();
+
     mpTBWidthBackground.reset();
     mpTBColorBackground.reset();
-    mpTBStyleBackground.reset();
 }
 
 
@@ -232,19 +271,6 @@ void LinePropertyPanel::Initialize()
     mpFTEdgeStyle->SetBackground(Wallpaper());
     mpFTCapStyle->SetBackground(Wallpaper());
 
-        mpIMGStyleIcon.reset(new Image[11]);
-	mpIMGStyleIcon[0] = Image(SVX_RES(IMG_LINE1_ICON));
-	mpIMGStyleIcon[1] = Image(SVX_RES(IMG_LINE2_ICON));
-	mpIMGStyleIcon[2] = Image(SVX_RES(IMG_LINE3_ICON));
-	mpIMGStyleIcon[3] = Image(SVX_RES(IMG_LINE4_ICON));
-	mpIMGStyleIcon[4] = Image(SVX_RES(IMG_LINE5_ICON));
-	mpIMGStyleIcon[5] = Image(SVX_RES(IMG_LINE6_ICON));
-	mpIMGStyleIcon[6] = Image(SVX_RES(IMG_LINE7_ICON));
-	mpIMGStyleIcon[7] = Image(SVX_RES(IMG_LINE8_ICON));
-	mpIMGStyleIcon[8] = Image(SVX_RES(IMG_LINE9_ICON));
-	mpIMGStyleIcon[9] = Image(SVX_RES(IMG_LINE10_ICON));
-	mpIMGStyleIcon[10] = Image(SVX_RES(IMG_LINE11_ICON));
-
     mpIMGWidthIcon.reset(new Image[8]);
 	mpIMGWidthIcon[0] = Image(SVX_RES(IMG_WIDTH1_ICON));
 	mpIMGWidthIcon[1] = Image(SVX_RES(IMG_WIDTH2_ICON));
@@ -256,19 +282,6 @@ void LinePropertyPanel::Initialize()
 	mpIMGWidthIcon[7] = Image(SVX_RES(IMG_WIDTH8_ICON));
 
 	//high contrast
-    mpIMGStyleIconH.reset(new Image[11]);
-	mpIMGStyleIconH[0] = Image(SVX_RES(IMG_LINE1_ICON_H));
-	mpIMGStyleIconH[1] = Image(SVX_RES(IMG_LINE2_ICON_H));
-	mpIMGStyleIconH[2] = Image(SVX_RES(IMG_LINE3_ICON_H));
-	mpIMGStyleIconH[3] = Image(SVX_RES(IMG_LINE4_ICON_H));
-	mpIMGStyleIconH[4] = Image(SVX_RES(IMG_LINE5_ICON_H));
-	mpIMGStyleIconH[5] = Image(SVX_RES(IMG_LINE6_ICON_H));
-	mpIMGStyleIconH[6] = Image(SVX_RES(IMG_LINE7_ICON_H));
-	mpIMGStyleIconH[7] = Image(SVX_RES(IMG_LINE8_ICON_H));
-	mpIMGStyleIconH[8] = Image(SVX_RES(IMG_LINE9_ICON_H));
-	mpIMGStyleIconH[9] = Image(SVX_RES(IMG_LINE10_ICON_H));
-	mpIMGStyleIconH[10] = Image(SVX_RES(IMG_LINE11_ICON_H));
-
     mpIMGWidthIconH.reset(new Image[8]);
 	mpIMGWidthIconH[0] = Image(SVX_RES(IMG_WIDTH1_ICON_H));
 	mpIMGWidthIconH[1] = Image(SVX_RES(IMG_WIDTH2_ICON_H));
@@ -278,7 +291,6 @@ void LinePropertyPanel::Initialize()
 	mpIMGWidthIconH[5] = Image(SVX_RES(IMG_WIDTH6_ICON_H));
 	mpIMGWidthIconH[6] = Image(SVX_RES(IMG_WIDTH7_ICON_H));
 	mpIMGWidthIconH[7] = Image(SVX_RES(IMG_WIDTH8_ICON_H));
-	//end
 
 	meMapUnit = maWidthControl.GetCoreMetric();
 
@@ -293,16 +305,12 @@ void LinePropertyPanel::Initialize()
 	mpTBColor->SetDropdownClickHdl ( aLink );
 	mpTBColor->SetSelectHdl ( aLink );
 
-	mpTBStyle->SetItemImage(TBI_STYLE, mpIMGStyleIcon[0]);
-	aTbxSize = mpTBStyle->CalcWindowSizePixel() ;
-	mpTBStyle->SetOutputSizePixel( aTbxSize );
-	mpTBStyle->SetItemBits( TBI_STYLE, mpTBStyle->GetItemBits( TBI_STYLE ) | TIB_DROPDOWNONLY );
-	mpTBStyle->SetQuickHelpText(TBI_STYLE,String(SVX_RES(STR_QH_TB_STYLE))); //Add
-	mpTBStyle->SetBackground(Wallpaper());
-	mpTBStyle->SetPaintTransparent(true);
-	aLink = LINK(this, LinePropertyPanel, ToolboxStyleSelectHdl);
-	mpTBStyle->SetDropdownClickHdl ( aLink );
-	mpTBStyle->SetSelectHdl ( aLink );
+	FillLineStyleList();
+	SelectLineStyle();
+	aLink = LINK( this, LinePropertyPanel, ChangeLineStyleHdl );
+	mpLBStyle->SetSelectHdl( aLink );
+	mpLBStyle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Style")));
+    mpLBStyle->SetDropDownLineCount(std::min(sal_uInt16(20), mpLBStyle->GetEntryCount()));
 
 	mpTBWidth->SetItemImage(TBI_WIDTH, mpIMGWidthIcon[0]);
 	aTbxSize = mpTBWidth->CalcWindowSizePixel() ;
@@ -333,7 +341,7 @@ void LinePropertyPanel::Initialize()
 	
 	mpTBWidth->SetAccessibleRelationLabeledBy(mpFTWidth.get());
 	mpTBColor->SetAccessibleRelationLabeledBy(mpFTColor.get());
-	mpTBStyle->SetAccessibleRelationLabeledBy(mpFTStyle.get());
+    mpLBStyle->SetAccessibleRelationLabeledBy(mpFTStyle.get());
 	mpMFTransparent->SetAccessibleRelationLabeledBy(mpFTTrancparency.get());
 	mpLBStart->SetAccessibleRelationLabeledBy(mpFTArrow.get());
 	mpLBEnd->SetAccessibleRelationLabeledBy(mpLBEnd.get());
@@ -431,19 +439,18 @@ void LinePropertyPanel::NotifyItemUpdate(
 		    }
 		    break;
         }
-	    case SID_ATTR_LINE_STYLE:
 	    case SID_ATTR_LINE_DASH:
+	    case SID_ATTR_LINE_STYLE:
         {
 		    if( eState == SFX_ITEM_DISABLED)
 		    {
 			    mpFTStyle->Disable();
-			    mpTBStyle->Disable();
-			    mpTBStyle->SetItemImage(TBI_STYLE,maIMGNone);
+                mpLBStyle->Disable();
 		    }
 		    else
 		    {
 			    mpFTStyle->Enable();
-			    mpTBStyle->Enable();
+                mpLBStyle->Enable();
 			    if( eState  >= SFX_ITEM_DEFAULT )
 			    {
 				    if(nSID == SID_ATTR_LINE_STYLE)
@@ -474,7 +481,8 @@ void LinePropertyPanel::NotifyItemUpdate(
 				    else 
 					    mbDashAvailable = false;
 			    }
-			    SetStyleIcon();
+
+                SelectLineStyle();
 		    }
 		    break;
         }
@@ -584,6 +592,12 @@ void LinePropertyPanel::NotifyItemUpdate(
 		    FillLineEndList();
 		    SelectEndStyle(true);
 		    SelectEndStyle(false);
+		    break;
+        }
+    	case SID_DASH_LIST:
+        {
+		    FillLineStyleList();
+		    SelectLineStyle();
 		    break;
         }
         case SID_ATTR_LINE_JOINT:
@@ -722,16 +736,39 @@ IMPL_LINK(LinePropertyPanel, ToolboxColorSelectHdl,ToolBox*, pToolBox)
 
 
 
-IMPL_LINK(LinePropertyPanel, ToolboxStyleSelectHdl,ToolBox*, pToolBox)
+IMPL_LINK(LinePropertyPanel, ChangeLineStyleHdl, ToolBox*, pToolBox)
 {
-	if (pToolBox->GetCurItemId() == TBI_STYLE)
-	{
-        maLineStylePopup.SetStyleSelect(mpStyleItem.get(), mpDashItem.get(), mbStyleAvailable, mbDashAvailable);
-        maLineStylePopup.Show(*pToolBox);
-	}
-	return 0;
-}
+    const sal_uInt16 nPos(mpLBStyle->GetSelectEntryPos());
 
+    if(LISTBOX_ENTRY_NOTFOUND != nPos && nPos != mpLBStyle->GetSavedValue())
+    {
+        if(0 == nPos)
+        {
+            // XLINE_NONE
+            const XLineStyleItem aItem(XLINE_NONE);
+
+            GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_STYLE, SFX_CALLMODE_RECORD, &aItem, 0L);
+        }
+        else if(1 == nPos)
+        {
+            // XLINE_SOLID
+            const XLineStyleItem aItem(XLINE_SOLID);
+
+            GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_STYLE, SFX_CALLMODE_RECORD, &aItem, 0L);
+        }
+        else if(mpLineStyleList && mpLineStyleList->Count() > (long)(nPos - 2))
+        {
+            // XLINE_DASH
+            const XLineStyleItem aItemA(XLINE_DASH);
+            const XLineDashItem aItemB(mpLBStyle->GetSelectEntry(), mpLineStyleList->GetDash(nPos - 2)->GetDash());
+
+            GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_STYLE, SFX_CALLMODE_RECORD, &aItemA, 0L);
+            GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_DASH, SFX_CALLMODE_RECORD, &aItemB, 0L);
+        }
+    }
+
+    return 0;
+}
 
 
 
@@ -893,25 +930,9 @@ PopupControl* LinePropertyPanel::CreateColorPopupControl (PopupContainer* pParen
 
 
 
-PopupControl* LinePropertyPanel::CreateLineStylePopupControl (PopupContainer* pParent)
-{
-    return new LineStyleControl (pParent, *this);
-}
-
-
-
-
 PopupControl* LinePropertyPanel::CreateLineWidthPopupControl (PopupContainer* pParent)
 {
     return new LineWidthControl(pParent, *this);
-}
-
-
-
-
-void LinePropertyPanel::EndLineStylePopupMode (void)
-{
-    maLineStylePopup.Hide();
 }
 
 
@@ -922,50 +943,6 @@ void LinePropertyPanel::EndLineWidthPopupMode (void)
     maLineWidthPopup.Hide();
 }
 
-
-
-
-void  LinePropertyPanel::SetStyleIcon()
-{
-	if(!mbStyleAvailable)
-	{	//custome style that not listed in panel
-		mpTBStyle->SetItemImage(TBI_STYLE,maIMGNone);
-		return;
-	}
-
-    const XLineStyle eXLS(mpStyleItem ? (XLineStyle)mpStyleItem->GetValue() : XLINE_NONE);
-
-	switch(eXLS)
-	{
-	case XLINE_NONE:
-		mpTBStyle->SetItemImage(TBI_STYLE,maIMGNone);
-		break;
-	case XLINE_SOLID:
-		mpTBStyle->SetItemImage(TBI_STYLE, GetDisplayBackground().GetColor().IsDark() ? mpIMGStyleIconH[0] : mpIMGStyleIcon[0]);
-		break;
-	case XLINE_DASH:
-		if(mpDashItem && mbDashAvailable)
-		{
-			XDash aDash = mpDashItem->GetDashValue();
-			sal_uInt16 n = 0;
-			for( ; n < 10; n++ )
-			{
-				if( Dash_Set[n] == aDash )
-				{
-					mpTBStyle->SetItemImage(TBI_STYLE, GetDisplayBackground().GetColor().IsDark() ? mpIMGStyleIconH[n+1] :mpIMGStyleIcon[n+1]);
-					break;
-				}
-			}
-			if(n == 10)
-				mpTBStyle->SetItemImage(TBI_STYLE,maIMGNone);
-		}
-		else
-		{
-			mpTBStyle->SetItemImage(TBI_STYLE,maIMGNone);
-		}
-		break;
-	}
-}
 
 
 
@@ -1010,20 +987,6 @@ void LinePropertyPanel::SetWidthIcon()
 
 
 
-void LinePropertyPanel::SetLineStyleItem(XLineStyleItem* pStyle)
-{
-    mpStyleItem.reset(pStyle ? (XLineStyleItem*)pStyle->Clone() : 0);
-}
-
-
-
-void LinePropertyPanel::SetLineDashItem(XLineDashItem* pDash)
-{
-    mpDashItem.reset(pDash ? (XLineDashItem*)pDash->Clone() : 0);
-}
-
-
-
 void LinePropertyPanel::SetColor (
     const String& rsColorName,
     const Color aColor)
@@ -1051,11 +1014,6 @@ void  LinePropertyPanel::FillLineEndList()
 		mpLBStart->Enable();
 		SvxLineEndListItem aItem( *(const SvxLineEndListItem*)(pSh->GetItem( SID_LINEEND_LIST ) ) );		
 		mpLineEndList = aItem.GetLineEndList();
-		String sNone( SVX_RES( RID_SVXSTR_NONE ) );
-		mpLBStart->Clear();
-		mpLBEnd->Clear();
-		mpLBStart->InsertEntry( sNone );
-		mpLBEnd->InsertEntry( sNone );
 
         if(mpLineEndList)
 		{
@@ -1073,6 +1031,71 @@ void  LinePropertyPanel::FillLineEndList()
 }
 
 
+
+void  LinePropertyPanel::FillLineStyleList()
+{
+	SfxObjectShell* pSh = SfxObjectShell::Current();
+	if ( pSh && pSh->GetItem( SID_DASH_LIST ) )
+	{
+		mpLBStyle->Enable();
+		SvxDashListItem aItem( *(const SvxDashListItem*)(pSh->GetItem( SID_DASH_LIST ) ) );		
+		mpLineStyleList = aItem.GetDashList();
+
+        if(mpLineStyleList)
+		{
+            FillLineStyleListBox(*mpLBStyle, *mpLineStyleList);
+		}
+
+		mpLBStyle->SelectEntryPos(0);
+	}
+	else
+	{
+		mpLBStyle->Disable();
+	}
+}
+
+
+
+void LinePropertyPanel::SelectLineStyle()
+{
+	if( !mbStyleAvailable || !mbDashAvailable )
+	{
+		mpLBStyle->SetNoSelection();
+		return;
+	}
+
+    const XLineStyle eXLS(mpStyleItem ? (XLineStyle)mpStyleItem->GetValue() : XLINE_NONE);
+	bool bSelected(false);
+
+    switch(eXLS)
+    {
+        case XLINE_NONE:
+            break;
+        case XLINE_SOLID:
+			mpLBStyle->SelectEntryPos(1);
+			bSelected = true;
+            break;
+        default:
+            if(mpDashItem && mpLineStyleList)
+	        {
+		        const XDash& rDash = mpDashItem->GetDashValue();
+		        for(sal_Int32 a(0);!bSelected &&  a < mpLineStyleList->Count(); a++)
+		        {
+			        XDashEntry* pEntry = mpLineStyleList->GetDash(a);
+			        const XDash& rEntry = pEntry->GetDash();
+			        if(rDash == rEntry)
+			        {
+				        mpLBStyle->SelectEntryPos((sal_uInt16)a + 2);
+				        bSelected = true;
+			        }
+		        }
+	        }
+            break;
+    }
+	
+    if(!bSelected)
+		mpLBStyle->SelectEntryPos( 0 );
+}
 
 void LinePropertyPanel::SelectEndStyle(bool bStart)
 {

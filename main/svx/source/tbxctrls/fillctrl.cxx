@@ -333,13 +333,13 @@ void SvxFillToolBoxControl::Update( const SfxPoolItem* pState )
  						XGradientList aGradientList( aEmptyString );
 						aGradientList.Insert( pEntry );
 						aGradientList.SetDirty( sal_False );
-						Bitmap* pBmp = aGradientList.CreateBitmapForUI( 0 );
+						const Bitmap aBmp = aGradientList.GetUiBitmap( 0 );
 
-						if( pBmp )
+						if( !aBmp.IsEmpty() )
 						{
-							( (ListBox*)pFillAttrLB )->InsertEntry( pEntry->GetName(), *pBmp );
+							( (ListBox*)pFillAttrLB )->InsertEntry( pEntry->GetName(), aBmp );
 							pFillAttrLB->SelectEntryPos( pFillAttrLB->GetEntryCount() - 1 );
-							delete pBmp;
+							//delete pBmp;
 						}
 
 						aGradientList.Remove( 0 );
@@ -383,13 +383,13 @@ void SvxFillToolBoxControl::Update( const SfxPoolItem* pState )
 						XHatchList aHatchList( aEmptyString );
 						aHatchList.Insert( pEntry );
 						aHatchList.SetDirty( sal_False );
-						Bitmap* pBmp = aHatchList.CreateBitmapForUI( 0 );
+						const Bitmap aBmp = aHatchList.GetUiBitmap( 0 );
 
-						if( pBmp )
+						if( !aBmp.IsEmpty() )
 						{
-							( (ListBox*)pFillAttrLB )->InsertEntry( pEntry->GetName(), *pBmp );
+							( (ListBox*)pFillAttrLB )->InsertEntry( pEntry->GetName(), aBmp );
 							pFillAttrLB->SelectEntryPos( pFillAttrLB->GetEntryCount() - 1 );
-							delete pBmp;
+							//delete pBmp;
 						}
 
 						aHatchList.Remove( 0 );

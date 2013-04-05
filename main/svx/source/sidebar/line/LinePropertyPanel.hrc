@@ -30,7 +30,7 @@
 #define FT_WIDTH            3
 #define TB_WIDTH            4
 #define FT_STYLE            5
-#define TB_STYLE            6
+#define LB_STYLE            6
 #define FT_ARROW            7
 #define FT_TRANSPARENT      8
 #define MF_TRANSPARENT      9
@@ -41,7 +41,6 @@
 #define TBI_STYLE           14
 #define STR_QH_TB_WIDTH     15
 #define STR_QH_TB_COLOR     16
-#define STR_QH_TB_STYLE     17
 
 #define FT_EDGESTYLE        18
 #define LB_EDGESTYLE        19
@@ -50,17 +49,6 @@
 
 #define IMG_COLOR           23
 #define IMG_COLOR_NO        24
-#define IMG_LINE1_ICON      25
-#define IMG_LINE2_ICON      26
-#define IMG_LINE3_ICON      27
-#define IMG_LINE4_ICON      28
-#define IMG_LINE5_ICON      29
-#define IMG_LINE6_ICON      30
-#define IMG_LINE7_ICON      31
-#define IMG_LINE8_ICON      32
-#define IMG_LINE9_ICON      33
-#define IMG_LINE10_ICON     34
-#define IMG_LINE11_ICON     35
 #define IMG_NONE_ICON       36
 
 #define IMG_WIDTH1_ICON     41
@@ -71,18 +59,6 @@
 #define IMG_WIDTH6_ICON     46
 #define IMG_WIDTH7_ICON     47
 #define IMG_WIDTH8_ICON     48
-
-#define IMG_LINE1_ICON_H    51
-#define IMG_LINE2_ICON_H    52
-#define IMG_LINE3_ICON_H    53
-#define IMG_LINE4_ICON_H    54
-#define IMG_LINE5_ICON_H    55
-#define IMG_LINE6_ICON_H    56
-#define IMG_LINE7_ICON_H    57
-#define IMG_LINE8_ICON_H    58
-#define IMG_LINE9_ICON_H    59
-#define IMG_LINE10_ICON_H   60
-#define IMG_LINE11_ICON_H   50
 
 #define IMG_WIDTH1_ICON_H   61
 #define IMG_WIDTH2_ICON_H   62

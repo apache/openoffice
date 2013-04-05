@@ -64,9 +64,9 @@ namespace {
         return bFound ? n : -1;
     }
     class JustReleaseDeleter {public:
-            void operator() (XColorTable*) const {/* release but don't delete pointer */}
+            void operator() (XColorList*) const {/* release but don't delete pointer */}
     };
-    ::boost::shared_ptr<XColorTable> GetColorTable (void)
+    ::boost::shared_ptr<XColorList> GetColorTable (void)
     {
         SfxObjectShell* pDocSh = SfxObjectShell::Current();
         DBG_ASSERT(pDocSh!=NULL, "DocShell not found!");
@@ -75,13 +75,13 @@ namespace {
             const SfxPoolItem* pItem = pDocSh->GetItem(SID_COLOR_TABLE);
             if (pItem != NULL)
             {
-                XColorTable* pTable = ((SvxColorTableItem*)pItem)->GetColorTable();
+                XColorList* pTable = ((SvxColorTableItem*)pItem)->GetColorTable();
                 if (pTable != NULL)
-                    return ::boost::shared_ptr<XColorTable>(pTable, JustReleaseDeleter());
+                    return ::boost::shared_ptr<XColorList>(pTable, JustReleaseDeleter());
             }
         }
 
-        return ::boost::shared_ptr<XColorTable>(new XColorTable(SvtPathOptions().GetPalettePath()));
+        return ::boost::shared_ptr<XColorList>(new XColorList(SvtPathOptions().GetPalettePath()));
     }
 } // end of anonymous namespace
 
@@ -122,7 +122,7 @@ ColorControl::~ColorControl (void)
 
 void ColorControl::FillColors (void)
 {
-	::boost::shared_ptr<XColorTable> pColorTable (GetColorTable());
+	::boost::shared_ptr<XColorList> pColorTable (GetColorTable());
 
 	if (pColorTable)
 	{

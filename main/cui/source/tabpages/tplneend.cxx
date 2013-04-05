@@ -407,7 +407,7 @@ IMPL_LINK( SvxLineEndDefTabPage, ClickModifyHdl_Impl, void *, EMPTYARG )
 			pEntry->SetName( aName );
 			aEdtName.SetText( aName );
 
-			aLbLineEnds.Modify( pEntry, nPos, pLineEndList->GetBitmap( nPos ) );
+			aLbLineEnds.Modify( pEntry, nPos, &pLineEndList->GetUiBitmap( nPos ) );
 			aLbLineEnds.SelectEntryPos( nPos );
 
 			// Flag fuer modifiziert setzen
@@ -505,10 +505,10 @@ IMPL_LINK( SvxLineEndDefTabPage, ClickAddHdl_Impl, void *, EMPTYARG )
 
                 long nLineEndCount = pLineEndList->Count();
                 pLineEndList->Insert( pEntry, nLineEndCount );
-                Bitmap* pBitmap = pLineEndList->GetBitmap( nLineEndCount );
+                const Bitmap aBitmap = pLineEndList->GetUiBitmap( nLineEndCount );
 
 				// Zur ListBox hinzufuegen
-				aLbLineEnds.Append( pEntry, pBitmap );
+				aLbLineEnds.Append( pEntry, &aBitmap );
 				aLbLineEnds.SelectEntryPos( aLbLineEnds.GetEntryCount() - 1 );
 
 				// Flag fuer modifiziert setzen

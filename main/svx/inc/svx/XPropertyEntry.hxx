@@ -19,12 +19,33 @@
  * 
  *************************************************************/
 
+#ifndef _XPROPERTYENTRY_HXX
+#define _XPROPERTYENTRY_HXX
 
+#include <svx/svxdllapi.h>
+#include <tools/string.hxx>
+#include <vcl/bitmap.hxx>
 
-#include "linectrl.hrc"
+// ---------------------
+// class XPropertyEntry
 
-Bitmap RID_SVXCTRL_LINECTRL
+class SVX_DLLPUBLIC XPropertyEntry
 {
-	File = "soliline.bmp" ;
+private:
+	String  maName;
+    Bitmap  maUiBitmap;
+
+protected:
+	XPropertyEntry(const String& rName);
+	XPropertyEntry(const XPropertyEntry& rOther);
+
+public:
+    virtual ~XPropertyEntry();
+
+    void SetName(const String& rName) { maName = rName; }
+    const String& GetName() const { return maName; }
+    void SetUiBitmap(const Bitmap& rUiBitmap) { maUiBitmap = rUiBitmap; }
+    const Bitmap& GetUiBitmap() const { return maUiBitmap; }
 };
 
+#endif // _XPROPERTYENTRY_HXX

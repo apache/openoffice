@@ -19,6 +19,26 @@
  * 
  *************************************************************/
 
+// MARKER(update_precomp.py): autogen include statement, do not remove
+#include "precompiled_svx.hxx"
 
-#define RID_SVXCTRL_LINECTRL	257
+#include <svx/XPropertyEntry.hxx>
+// --------------------
 
+XPropertyEntry::XPropertyEntry(const String& rName) 
+:   maName(rName), 
+    maUiBitmap() 
+{
+}
+
+XPropertyEntry::XPropertyEntry(const XPropertyEntry& rOther)
+:   maName(rOther.maName), 
+    maUiBitmap(rOther.maUiBitmap) 
+{
+}
+
+XPropertyEntry::~XPropertyEntry() 
+{
+}
+
+// eof
