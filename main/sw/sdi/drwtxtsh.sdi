@@ -601,6 +601,25 @@ interface TextDrawText
 	[
 		StateMethod = StateDisableItems ;
 	]
+
+	SID_TABLE_VERT_NONE
+	[
+		ExecMethod = ExecDraw ;
+		StateMethod = GetStatePropPanelAttr ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
+	SID_TABLE_VERT_CENTER
+	[
+		ExecMethod = ExecDraw ;
+		StateMethod = GetStatePropPanelAttr ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
+	SID_TABLE_VERT_BOTTOM
+	[
+		ExecMethod = ExecDraw ;
+		StateMethod = GetStatePropPanelAttr ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
 }
 
 interface TextDrawFont

@@ -236,8 +236,19 @@ void SwAnnotationShell::Exec( SfxRequest &rReq )
 		case SID_ATTR_CHAR_COLOR: nEEWhich = EE_CHAR_COLOR; break;
 		case SID_ATTR_CHAR_UNDERLINE:
 		{
-		 	FontUnderline eFU = ((const SvxUnderlineItem&)aEditAttr.Get(EE_CHAR_UNDERLINE)).GetLineStyle();
-			aNewAttr.Put(SvxUnderlineItem(eFU == UNDERLINE_SINGLE ? UNDERLINE_NONE : UNDERLINE_SINGLE, EE_CHAR_UNDERLINE));
+			if( rReq.GetArgs() )
+			{
+				SFX_REQUEST_ARG( rReq, pItem, SvxUnderlineItem, SID_ATTR_CHAR_UNDERLINE , sal_False );
+				if (pItem)
+				{
+					aNewAttr.Put(*pItem);
+				}
+				else 
+				{
+					FontUnderline eFU = ( (const SvxUnderlineItem&) aEditAttr.Get( EE_CHAR_UNDERLINE ) ).GetLineStyle();
+					aNewAttr.Put( SvxUnderlineItem( eFU != UNDERLINE_NONE ?UNDERLINE_NONE : UNDERLINE_SINGLE,  EE_CHAR_UNDERLINE ) );
+				}
+			}
 			break;
 		}
 		case SID_ATTR_CHAR_OVERLINE:
@@ -698,6 +709,8 @@ void SwAnnotationShell::GetState(SfxItemSet& rSet)
             case SID_ATTR_CHAR_SHADOWED:  nEEWhich = EE_CHAR_SHADOW;break;
             case SID_ATTR_CHAR_STRIKEOUT: nEEWhich = EE_CHAR_STRIKEOUT;break;
 			case SID_ATTR_CHAR_LANGUAGE    : nEEWhich = EE_CHAR_LANGUAGE;break;
+			case SID_ATTR_CHAR_ESCAPEMENT: nEEWhich = EE_CHAR_ESCAPEMENT;break;
+			case SID_ATTR_CHAR_KERNING:	 nEEWhich = EE_CHAR_KERNING;break;
 			case FN_SET_SUPER_SCRIPT:
 			case FN_SET_SUB_SCRIPT:
 			{
@@ -839,7 +852,17 @@ void SwAnnotationShell::GetState(SfxItemSet& rSet)
 		}
 
         if(nEEWhich)
+        {
             rSet.Put(aEditAttr.Get(nEEWhich, sal_True), nWhich);
+		if(nEEWhich == EE_CHAR_KERNING)
+		{
+			SfxItemState eState = aEditAttr.GetItemState( EE_CHAR_KERNING, sal_True );
+			if ( eState == SFX_ITEM_DONTCARE )
+			{
+				rSet.InvalidateItem(EE_CHAR_KERNING);
+			}
+		}
+        }
 
         if (pPostItMgr->GetActiveSidebarWin()->GetLayoutStatus()==SwPostItHelper::DELETED)
 			rSet.DisableItem( nWhich );

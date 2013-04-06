@@ -238,6 +238,9 @@ void ScDrawView::InvalidateDrawTextAttrs()
 	rBindings.Invalidate( SID_ATTR_PARA_LINESPACE_20 );
 	rBindings.Invalidate( SID_SET_SUPER_SCRIPT );
 	rBindings.Invalidate( SID_SET_SUB_SCRIPT );
+	rBindings.Invalidate( SID_ATTR_CHAR_KERNING ); 
+	rBindings.Invalidate( SID_ATTR_CHAR_STRIKEOUT );
+	rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED ); 
 	rBindings.Invalidate( SID_TEXTDIRECTION_LEFT_TO_RIGHT );
 	rBindings.Invalidate( SID_TEXTDIRECTION_TOP_TO_BOTTOM );
 	rBindings.Invalidate( SID_ATTR_PARA_LEFT_TO_RIGHT );

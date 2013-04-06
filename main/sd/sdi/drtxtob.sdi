@@ -166,6 +166,12 @@ shell TextObjectBar
 		StateMethod = GetAttrState;
 	]
 
+	SID_ATTR_CHAR_KERNING   
+	[
+		ExecMethod = Execute;
+		StateMethod = GetCharState;
+	]
+
 	SID_PARASPACE_INCREASE  // ole : ?, status : ?
 	[
 		ExecMethod = Execute;

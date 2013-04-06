@@ -833,13 +833,13 @@ IMPL_LINK( ParaPropertyPanel, AlignStyleModifyHdl_Impl, ToolBox*, pBox )
 //==================================for Paragraph Indent=====================
 IMPL_LINK( ParaPropertyPanel, ModifyIndentHdl_Impl, SvxRelativeField*, pBox )
 {
-	SvxLRSpaceItem aMargin( SID_ATTR_LRSPACE );
+	SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
 	aMargin.SetTxtLeft( (const long)GetCoreValue( *maLeftIndent.get(), m_eLRSpaceUnit ) );
 	aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
 	aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
 
 	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+		SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 	return 0;
 }
 
@@ -862,7 +862,7 @@ IMPL_LINK(ParaPropertyPanel, ClickIndent_IncDec_Hdl_Impl, ToolBox *, pControl)
 				break;
 				default:
 				{
-					SvxLRSpaceItem aMargin( SID_ATTR_LRSPACE );
+					SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
 
 					maTxtLeft += INDENT_STEP;
 					sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
@@ -872,7 +872,7 @@ IMPL_LINK(ParaPropertyPanel, ClickIndent_IncDec_Hdl_Impl, ToolBox *, pControl)
 					aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
 
 					GetBindings()->GetDispatcher()->Execute(
-						SID_ATTR_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+						SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 				}
 			}
 		}
@@ -897,7 +897,7 @@ IMPL_LINK(ParaPropertyPanel, ClickIndent_IncDec_Hdl_Impl, ToolBox *, pControl)
 					else
 						maTxtLeft -= INDENT_STEP;
 
-					SvxLRSpaceItem aMargin( SID_ATTR_LRSPACE );
+					SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
 					
 					sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
 					nVal = OutputDevice::LogicToLogic( (long)nVal, MAP_100TH_MM, (MapUnit)m_eLRSpaceUnit );
@@ -907,20 +907,20 @@ IMPL_LINK(ParaPropertyPanel, ClickIndent_IncDec_Hdl_Impl, ToolBox *, pControl)
 					aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
 
 					GetBindings()->GetDispatcher()->Execute(
-						SID_ATTR_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+						SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 				}
 			}
 		}
 		break;
 		case ID_HANGING_INDENT:
 		{
-			SvxLRSpaceItem aMargin( SID_ATTR_LRSPACE );
+			SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
 			aMargin.SetTxtLeft( (const long)GetCoreValue( *maLeftIndent.get(), m_eLRSpaceUnit ) + (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
 			aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
 			aMargin.SetTxtFirstLineOfst( ((const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ))*(-1) );
 
 			GetBindings()->GetDispatcher()->Execute(
-				SID_ATTR_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+				SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 		}
 		break;
 	}
@@ -968,13 +968,13 @@ IMPL_LINK(ParaPropertyPanel, ClickProDemote_Hdl_Impl, ToolBox *, pControl)
 		break;
 		case SD_HANGING_INDENT:
 		{
-			SvxLRSpaceItem aMargin( SID_ATTR_LRSPACE );
+			SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
 			aMargin.SetTxtLeft( (const long)GetCoreValue( *maLeftIndent.get(), m_eLRSpaceUnit ) + (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
 			aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
 			aMargin.SetTxtFirstLineOfst( ((const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ))*(-1) );
 
 			GetBindings()->GetDispatcher()->Execute(
-				SID_ATTR_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+				SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 		}
 		break;
 	}
@@ -1000,12 +1000,12 @@ IMPL_LINK( ParaPropertyPanel, ClickLineSPDropDownHdl_Impl, ToolBox*, pBox )
 //==================================for Paragraph Spacing=====================
 IMPL_LINK( ParaPropertyPanel, ULSpaceHdl_Impl, SvxRelativeField*, pBox )
 {
-	SvxULSpaceItem aMargin( SID_ATTR_ULSPACE );
+	SvxULSpaceItem aMargin( SID_ATTR_PARA_ULSPACE );
 	aMargin.SetUpper( (sal_uInt16)GetCoreValue( *maTopDist.get(), m_eULSpaceUnit ) );
 	aMargin.SetLower( (sal_uInt16)GetCoreValue( *maBottomDist.get(), m_eULSpaceUnit ) );
 
 	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_ULSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+		SID_ATTR_PARA_ULSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 	return 0L;
 }
 
@@ -1015,7 +1015,7 @@ IMPL_LINK(ParaPropertyPanel, ClickUL_IncDec_Hdl_Impl, ToolBox *, pControl)
 		{
 	    case UL_INCREMENT:
 		     {
-				 SvxULSpaceItem aMargin( SID_ATTR_ULSPACE );
+				 SvxULSpaceItem aMargin( SID_ATTR_PARA_ULSPACE );
 
 				 maUpper += UL_STEP;
 				 sal_Int64 nVal = OutputDevice::LogicToLogic( maUpper, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
@@ -1028,12 +1028,12 @@ IMPL_LINK(ParaPropertyPanel, ClickUL_IncDec_Hdl_Impl, ToolBox *, pControl)
 	             aMargin.SetLower( (const sal_uInt16)nVal );
 
 				 GetBindings()->GetDispatcher()->Execute(
-					 SID_ATTR_ULSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+					 SID_ATTR_PARA_ULSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 			 }
 			 break;
 		case UL_DECREMENT:
 			{
-				 SvxULSpaceItem aMargin( SID_ATTR_ULSPACE );
+				 SvxULSpaceItem aMargin( SID_ATTR_PARA_ULSPACE );
 
 				 if( maUpper >= UL_STEP )
 				 {
@@ -1055,7 +1055,7 @@ IMPL_LINK(ParaPropertyPanel, ClickUL_IncDec_Hdl_Impl, ToolBox *, pControl)
 					aMargin.SetLower( DEFAULT_VALUE );
 
 				 GetBindings()->GetDispatcher()->Execute(
-					 SID_ATTR_ULSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+					 SID_ATTR_PARA_ULSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
 			}
 			break;
 		}
@@ -1100,11 +1100,9 @@ void ParaPropertyPanel::NotifyItemUpdate( sal_uInt16 nSID, SfxItemState eState, 
 	if (nSID==FN_NUM_NUMBERING_ON || nSID==FN_NUM_BULLET_ON) 
 		StateChangeBulletNumImpl( nSID, eState, pState );
 
-	//Modified for Numbering&Bullets Dialog UX Enh(Story 992) by chengjh,2011.7.5
 	//Get the num rule index data of the current selection
 	if ( nSID == FN_BUL_NUM_RULE_INDEX ||nSID == FN_NUM_NUM_RULE_INDEX) 
 		StateChangeBulletNumRuleImpl( nSID, eState, pState );
-	//End
 	
 	if ((nSID == SID_TABLE_VERT_NONE)||(nSID == SID_TABLE_VERT_CENTER)||(nSID == SID_TABLE_VERT_BOTTOM))
 	{
@@ -1397,13 +1395,13 @@ void ParaPropertyPanel::StateChangedULImpl( sal_uInt16 nSID, SfxItemState eState
 		maBottomDist->SetValue( nVal, FUNIT_100TH_MM );
 		maTbxUL_IncDec->Enable();
 	}
-	else if(nSID == SID_ATTR_ULSPACE && eState == SFX_ITEM_DISABLED )
+	else if(eState == SFX_ITEM_DISABLED )
 	{
 		maTopDist->Disable();
 		maBottomDist->Disable();
 		maTbxUL_IncDec->Disable();
 	}
-	else if (nSID == SID_ATTR_ULSPACE)
+	else
 	{
 		maTopDist->SetEmptyFieldValue();
 		maBottomDist->SetEmptyFieldValue();

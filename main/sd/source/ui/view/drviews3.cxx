@@ -32,6 +32,7 @@
 #include <editeng/lrspitem.hxx>
 #include <editeng/protitem.hxx>
 #include <editeng/frmdiritem.hxx>
+#include <editeng/adjitem.hxx>
 #include <svx/ruler.hxx>
 #ifndef _SVX_RULERITEM_HXX
 #include <svx/rulritem.hxx>
@@ -693,7 +694,50 @@ void  DrawViewShell::ExecRuler(SfxRequest& rReq)
 			Invalidate(SID_ATTR_PARA_LINESPACE);
 		}
 		break;
-			//xuxu for UL
+		case SID_ATTR_PARA_ADJUST_LEFT:
+		{
+			SvxAdjustItem aItem( SVX_ADJUST_LEFT, EE_PARA_JUST );
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_JUST, EE_PARA_JUST );
+
+			aEditAttr.Put( aItem );
+			mpDrawView->SetAttributes( aEditAttr );
+
+			Invalidate(SID_ATTR_PARA_ADJUST_LEFT);
+		}
+		break;
+		case SID_ATTR_PARA_ADJUST_CENTER:
+		{
+			SvxAdjustItem aItem( SVX_ADJUST_CENTER, EE_PARA_JUST );
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_JUST, EE_PARA_JUST );
+
+			aEditAttr.Put( aItem );
+			mpDrawView->SetAttributes( aEditAttr );
+
+			Invalidate(SID_ATTR_PARA_ADJUST_CENTER);
+		}
+		break;
+		case SID_ATTR_PARA_ADJUST_RIGHT:
+		{
+			SvxAdjustItem aItem( SVX_ADJUST_RIGHT, EE_PARA_JUST );
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_JUST, EE_PARA_JUST );
+
+			aEditAttr.Put( aItem );
+			mpDrawView->SetAttributes( aEditAttr );
+
+			Invalidate(SID_ATTR_PARA_ADJUST_RIGHT);
+		}
+		break;
+		case SID_ATTR_PARA_ADJUST_BLOCK:
+		{
+			SvxAdjustItem aItem( SVX_ADJUST_BLOCK, EE_PARA_JUST );
+			SfxItemSet aEditAttr( GetPool(), EE_PARA_JUST, EE_PARA_JUST );
+
+			aEditAttr.Put( aItem );
+			mpDrawView->SetAttributes( aEditAttr );
+
+			Invalidate(SID_ATTR_PARA_ADJUST_BLOCK);
+		}
+		break;
 		case SID_ATTR_PARA_ULSPACE:
 		{
 			sal_uInt16 nSlot = SID_ATTR_PARA_ULSPACE;

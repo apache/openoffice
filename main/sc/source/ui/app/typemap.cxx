@@ -111,6 +111,7 @@
 #include <editeng/lrspitem.hxx>
 #include <editeng/lspcitem.hxx>
 #include <editeng/ulspitem.hxx>
+#include <editeng/kernitem.hxx>
 #include <svx/rotmodit.hxx>
 #include <svx/drawitem.hxx>
 #include <svl/ilstitem.hxx>

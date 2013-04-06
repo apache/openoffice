@@ -729,7 +729,7 @@ SfxVoidItem CalculateSel FN_CALCULATE
 ]
 
 //--------------------------------------------------------------------------
-SfxBoolItem CellVertBottom FN_TABLE_VERT_BOTTOM
+SfxBoolItem SwCellVertBottom FN_TABLE_VERT_BOTTOM
 
 [
 	/* flags: */
@@ -756,7 +756,7 @@ SfxBoolItem CellVertBottom FN_TABLE_VERT_BOTTOM
 ]
 
 //--------------------------------------------------------------------------
-SfxBoolItem CellVertCenter FN_TABLE_VERT_CENTER
+SfxBoolItem SwCellVertCenter FN_TABLE_VERT_CENTER
 
 [
 	/* flags: */
@@ -783,7 +783,7 @@ SfxBoolItem CellVertCenter FN_TABLE_VERT_CENTER
 ]
 
 //--------------------------------------------------------------------------
-SfxBoolItem CellVertTop FN_TABLE_VERT_NONE
+SfxBoolItem SwCellVertTop FN_TABLE_VERT_NONE
 
 [
 	/* flags: */

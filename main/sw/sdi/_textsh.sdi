@@ -1226,6 +1226,11 @@ interface BaseText
 		ExecMethod = Execute ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
+	SID_ATTR_PARA_LRSPACE
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetAttrState;
+	]
 	FN_SELECT_PARA // status(final|play)
 	[
 		ExecMethod = Execute ;

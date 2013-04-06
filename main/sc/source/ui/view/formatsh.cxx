@@ -1236,7 +1236,10 @@ void ScFormatShell::ExecuteAlignment( SfxRequest& rReq )
                 }
             }
     }
-
+    rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );			
+    rBindings.Invalidate( SID_ATTR_PARA_ADJUST_RIGHT );
+    rBindings.Invalidate( SID_ATTR_PARA_ADJUST_BLOCK );
+    rBindings.Invalidate( SID_ATTR_PARA_ADJUST_CENTER);
     rBindings.Invalidate( SID_ALIGNLEFT );
     rBindings.Invalidate( SID_ALIGNRIGHT );
     rBindings.Invalidate( SID_ALIGNCENTERHOR );

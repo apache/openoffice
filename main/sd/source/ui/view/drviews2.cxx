@@ -104,6 +104,7 @@
 #include "unmodpg.hxx"
 #include "slideshow.hxx"
 #include "fuvect.hxx"
+#include "futext.hxx"
 #include "stlpool.hxx"
 
 // #90356#
@@ -1167,6 +1168,18 @@ void DrawViewShell::ExecChar( SfxRequest &rReq )
 			aNewAttr.Put( aItem );
 		}
 		break;
+	case SID_SHRINK_FONT_SIZE:
+    	case SID_GROW_FONT_SIZE:
+		//if (rReq.GetArgs())
+		{
+			const SvxFontListItem* pFonts = dynamic_cast<const SvxFontListItem*>(GetDocSh()->GetItem( SID_ATTR_CHAR_FONTLIST ) );
+			const FontList* pFontList = pFonts->GetFontList();
+			if( pFontList )
+			{
+				FuText::ChangeFontSize( nSId == SID_GROW_FONT_SIZE, NULL, pFontList, mpView );
+				GetViewFrame()->GetBindings().Invalidate( SID_ATTR_CHAR_FONTHEIGHT );
+			}
+		}
 	default:
 		;
 	}

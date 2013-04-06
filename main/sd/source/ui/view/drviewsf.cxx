@@ -78,6 +78,7 @@
 #include <editeng/lrspitem.hxx>
 #include <editeng/escpitem.hxx>
 #include <editeng/numitem.hxx>
+#include <editeng/adjitem.hxx>
 #include <svx/nbdtmgfact.hxx>
 #include <svx/nbdtmg.hxx>
 
@@ -311,6 +312,74 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			: nWhich;
 		switch ( nSlotId )
 		{
+			case SID_ATTR_PARA_ADJUST_LEFT:
+			{
+				SfxItemSet aAttrs( GetDoc()->GetPool() );
+				mpDrawView->GetAttributes( aAttrs );
+				
+				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
+				SvxAdjust eAdj = aItem.GetAdjust();
+				if ( eAdj == SVX_ADJUST_LEFT)
+				{
+					rSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_LEFT, sal_True ) );
+				}
+
+				bAttr = sal_True;
+
+				Invalidate(nSlotId);
+			}
+			break;
+			case SID_ATTR_PARA_ADJUST_CENTER:
+			{
+				SfxItemSet aAttrs( GetDoc()->GetPool() );
+				mpDrawView->GetAttributes( aAttrs );
+				
+				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
+				SvxAdjust eAdj = aItem.GetAdjust();
+				if ( eAdj == SVX_ADJUST_CENTER)
+				{
+					rSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_CENTER, sal_True ) );
+				}
+
+				bAttr = sal_True;
+
+				Invalidate(nSlotId);
+			}
+			break;
+			case SID_ATTR_PARA_ADJUST_RIGHT:
+			{
+				SfxItemSet aAttrs( GetDoc()->GetPool() );
+				mpDrawView->GetAttributes( aAttrs );
+				
+				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
+				SvxAdjust eAdj = aItem.GetAdjust();
+				if ( eAdj == SVX_ADJUST_RIGHT)
+				{
+					rSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_RIGHT, sal_True ) );
+				}
+
+				bAttr = sal_True;
+
+				Invalidate(nSlotId);
+			}
+			break;
+			case SID_ATTR_PARA_ADJUST_BLOCK:
+			{
+				SfxItemSet aAttrs( GetDoc()->GetPool() );
+				mpDrawView->GetAttributes( aAttrs );
+				
+				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
+				SvxAdjust eAdj = aItem.GetAdjust();
+				if ( eAdj == SVX_ADJUST_BLOCK)
+				{
+					rSet.Put( SfxBoolItem( SID_ATTR_PARA_ADJUST_BLOCK, sal_True ) );
+				}
+
+				bAttr = sal_True;
+
+				Invalidate(nSlotId);
+			}
+			break;
 			case SID_ATTR_PARA_LRSPACE:
 			{
 				SfxItemSet aAttrs( GetDoc()->GetPool() );

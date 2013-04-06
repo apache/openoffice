@@ -39,6 +39,7 @@
 #include <editeng/ulspitem.hxx>
 #include <editeng/lspcitem.hxx>
 #include <editeng/adjitem.hxx>
+#include <editeng/kernitem.hxx>
 #include <vcl/vclenum.hxx>
 #include <sfx2/app.hxx>
 #include <svl/whiter.hxx>
@@ -151,6 +152,27 @@ TextObjectBar::TextObjectBar (
 TextObjectBar::~TextObjectBar()
 {
 	SetRepeatTarget(NULL);
+}
+
+void TextObjectBar::GetCharState( SfxItemSet& rSet ) 
+{
+	SfxItemSet  aCharAttrSet( mpView->GetDoc()->GetPool() );
+	mpView->GetAttributes( aCharAttrSet );
+
+	SfxItemSet aNewAttr( mpViewShell->GetPool(),EE_ITEMS_START,EE_ITEMS_END);
+
+	aNewAttr.Put(aCharAttrSet, sal_False);
+	rSet.Put(aNewAttr, sal_False);
+
+	SvxKerningItem aKern = ( (const SvxKerningItem&) aCharAttrSet.Get( EE_CHAR_KERNING ) );
+	//aKern.SetWhich(SID_ATTR_CHAR_KERNING);
+	rSet.Put(aKern);
+
+	SfxItemState eState = aCharAttrSet.GetItemState( EE_CHAR_KERNING, sal_True );
+	if ( eState == SFX_ITEM_DONTCARE )
+	{
+		rSet.InvalidateItem(EE_CHAR_KERNING);
+	}
 }
 
 /*************************************************************************
@@ -466,7 +488,9 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 		}
 
 		// Absatzausrichtung
-        SvxAdjust eAdj = ( (const SvxAdjustItem&) aAttrSet.Get( EE_PARA_JUST ) ).GetAdjust();
+		SvxLRSpaceItem aLR = ( (const SvxLRSpaceItem&) aAttrSet.Get( EE_PARA_LRSPACE ) );
+		rSet.Put(aLR);
+		SvxAdjust eAdj = ( (const SvxAdjustItem&) aAttrSet.Get( EE_PARA_JUST ) ).GetAdjust();
 		switch( eAdj )
 		{
 			case SVX_ADJUST_LEFT:

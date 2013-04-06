@@ -857,6 +857,11 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 						aNewAttr.Put( *pDlg->GetOutputItemSet() );
 
 					delete pDlg;
+
+					SfxBindings& rBindings = pViewData->GetBindings();
+					rBindings.Invalidate( SID_TABLE_VERT_NONE );
+					rBindings.Invalidate( SID_TABLE_VERT_CENTER );
+					rBindings.Invalidate( SID_TABLE_VERT_BOTTOM );
 				}
 				break;
 		}
@@ -931,6 +936,56 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 //			pView->SetAttributes( *pArgs );
 			pView->SetAttributes( aEditAttr );
 //			Invalidate(SID_ATTR_PARA_ULSPACE);
+		}
+		else if(nSlot ==  SID_SET_SUPER_SCRIPT )
+		{
+			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
+			pView->GetAttributes(aEditAttr);	
+			SfxItemSet	aNewAttr( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
+
+			SvxEscapementItem aItem(EE_CHAR_ESCAPEMENT);
+			SvxEscapement eEsc = (SvxEscapement) ( (const SvxEscapementItem&)
+							aEditAttr.Get( EE_CHAR_ESCAPEMENT ) ).GetEnumValue();
+
+			if( eEsc == SVX_ESCAPEMENT_SUPERSCRIPT )
+				aItem.SetEscapement( SVX_ESCAPEMENT_OFF );
+			else
+				aItem.SetEscapement( SVX_ESCAPEMENT_SUPERSCRIPT );
+			aNewAttr.Put( aItem );
+			pView->SetAttributes( aNewAttr );
+		}
+		else if( nSlot ==  SID_SET_SUB_SCRIPT )
+		{
+			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
+			pView->GetAttributes(aEditAttr);	
+			SfxItemSet	aNewAttr( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
+
+			SvxEscapementItem aItem(EE_CHAR_ESCAPEMENT);
+			SvxEscapement eEsc = (SvxEscapement) ( (const SvxEscapementItem&)
+							aEditAttr.Get( EE_CHAR_ESCAPEMENT ) ).GetEnumValue();
+
+			if( eEsc == SVX_ESCAPEMENT_SUBSCRIPT )
+				aItem.SetEscapement( SVX_ESCAPEMENT_OFF );
+			else
+				aItem.SetEscapement( SVX_ESCAPEMENT_SUBSCRIPT );
+			aNewAttr.Put( aItem );
+			pView->SetAttributes( aNewAttr );
+		}
+
+		else if (bArgsInReq &&
+			( nSlot == SID_TABLE_VERT_NONE || nSlot == SID_TABLE_VERT_CENTER ||
+			  nSlot == SID_TABLE_VERT_BOTTOM ) )
+		{		
+			SdrTextVertAdjust eTVA = SDRTEXTVERTADJUST_TOP;
+			if (nSlot == SID_TABLE_VERT_CENTER)
+				eTVA = SDRTEXTVERTADJUST_CENTER;
+			else if (nSlot == SID_TABLE_VERT_BOTTOM)
+				eTVA = SDRTEXTVERTADJUST_BOTTOM;
+
+			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
+			SfxItemSet	aNewAttr( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
+			aNewAttr.Put(SdrTextVertAdjustItem(eTVA));
+			pView->SetAttributes(aNewAttr);
 		}
 		else if (bArgsInReq &&
 			(nSlot == SID_ATTR_PARA_ADJUST_LEFT || nSlot == SID_ATTR_PARA_ADJUST_CENTER || nSlot == SID_ATTR_PARA_ADJUST_RIGHT || nSlot == SID_ATTR_PARA_ADJUST_BLOCK ))
@@ -1197,3 +1252,55 @@ void ScDrawTextObjectBar::ExecuteTrans( SfxRequest& rReq )
 		}
 	}
 }
+
+void ScDrawTextObjectBar::GetStatePropPanelAttr(SfxItemSet &rSet)
+{
+	SfxWhichIter	aIter( rSet );
+	sal_uInt16			nWhich = aIter.FirstWhich();
+	
+	SdrView*			pView = pViewData->GetScDrawView();
+
+	SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
+	pView->GetAttributes(aEditAttr);
+	//SfxItemSet	aAttrs( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
+	
+	while ( nWhich )
+	{
+		sal_uInt16 nSlotId = SfxItemPool::IsWhich(nWhich)
+			? GetPool().GetSlotId(nWhich)
+			: nWhich; 
+		switch ( nSlotId )
+		{
+			case SID_TABLE_VERT_NONE:
+			case SID_TABLE_VERT_CENTER:
+			case SID_TABLE_VERT_BOTTOM:
+				sal_Bool bContour = sal_False;
+				SfxItemState eConState = aEditAttr.GetItemState( SDRATTR_TEXT_CONTOURFRAME );
+				if( eConState != SFX_ITEM_DONTCARE )
+				{
+					bContour = ( ( const SdrTextContourFrameItem& )aEditAttr.Get( SDRATTR_TEXT_CONTOURFRAME ) ).GetValue();
+				}
+				if (bContour) break;
+
+				SfxItemState eVState = aEditAttr.GetItemState( SDRATTR_TEXT_VERTADJUST );
+				//SfxItemState eHState = aAttrs.GetItemState( SDRATTR_TEXT_HORZADJUST );
+
+				//if(SFX_ITEM_DONTCARE != eVState && SFX_ITEM_DONTCARE != eHState)
+				if(SFX_ITEM_DONTCARE != eVState)
+				{					
+					SdrTextVertAdjust eTVA = (SdrTextVertAdjust)((const SdrTextVertAdjustItem&)aEditAttr.Get(SDRATTR_TEXT_VERTADJUST)).GetValue();
+					sal_Bool bSet = nSlotId == SID_TABLE_VERT_NONE && eTVA == SDRTEXTVERTADJUST_TOP||
+                            nSlotId == SID_TABLE_VERT_CENTER && eTVA == SDRTEXTVERTADJUST_CENTER ||
+                            nSlotId == SID_TABLE_VERT_BOTTOM && eTVA == SDRTEXTVERTADJUST_BOTTOM;
+					rSet.Put(SfxBoolItem(nSlotId, bSet));
+				}
+				else 
+				{
+					rSet.Put(SfxBoolItem(nSlotId, sal_False));
+				}
+				break;	
+		}
+		nWhich = aIter.NextWhich();
+	}	
+}
+

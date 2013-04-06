@@ -879,6 +879,7 @@ void SwTextShell::Execute(SfxRequest &rReq)
         case FN_NUMBER_NEWSTART_AT :
         case FN_FORMAT_DROPCAPS :
         case FN_DROP_TEXT:
+        case SID_ATTR_PARA_LRSPACE:
         {
             sal_uInt16 nWhich = GetPool().GetWhich( nSlot );
             if ( pArgs && pArgs->GetItemState( nWhich ) == SFX_ITEM_SET )
@@ -969,7 +970,15 @@ void SwTextShell::Execute(SfxRequest &rReq)
             SfxItemSet* pSet = NULL;
             if ( !bUseDialog )
             {
-                pSet = (SfxItemSet*) pArgs;
+                if ( nSlot == SID_ATTR_PARA_LRSPACE)
+		{
+			SvxLRSpaceItem aParaMargin((const SvxLRSpaceItem&)pArgs->Get(nSlot));
+			aParaMargin.SetWhich( RES_LR_SPACE);
+			aCoreSet.Put(aParaMargin);
+			pSet = &aCoreSet;
+
+		} else
+                    pSet = (SfxItemSet*) pArgs;
 
             }
             else if ( NULL != pDlg && pDlg->Execute() == RET_OK )
