@@ -59,6 +59,7 @@ interface BaseText
     SID_ATTR_BRUSH_CHAR // status()
 	[
 		ExecMethod = Execute ;
+		StateMethod = GetTxtCtrlState ; 
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
 

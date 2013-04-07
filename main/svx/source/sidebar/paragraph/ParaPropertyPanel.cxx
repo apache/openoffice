@@ -752,10 +752,10 @@ void ParaPropertyPanel::ShowMenu (void)
 
 void ParaPropertyPanel::ParaBKGStateChanged(sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState)
 {
-	if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SvxBrushItem))
+	if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SvxColorItem))
 	{
-		const SvxBrushItem* pItem =  (const SvxBrushItem*)pState;
-		maColor = pItem->GetColor();
+		const SvxColorItem* pItem =  (const SvxColorItem*)pState;
+		maColor = pItem->GetValue();
 		mbColorAvailable = sal_True;
 		mpColorUpdater->Update(maColor);
 	}
