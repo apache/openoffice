@@ -155,6 +155,9 @@ void handler::checkCommandLine(int argc, char *argv[])
       if (meWorkMode == DO_MERGE)
         throw "-t <target dir> is mandatory";
     }
+    if (!convert_gen::checkAccess(msTargetDir))
+      throw "<target dir> does not exist";
+
     if (msSourceDir.size())
     {
       if (meWorkMode == DO_GENERATE)
@@ -165,6 +168,8 @@ void handler::checkCommandLine(int argc, char *argv[])
       if (meWorkMode != DO_GENERATE)
         throw "-s <source dir> is mandatory";
     }
+    if (!convert_gen::checkAccess(msSourceDir))
+      throw "<source dir> does not exist";
 
     // Key Identification generation
     if (bKid)

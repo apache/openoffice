@@ -116,6 +116,8 @@ class convert_gen
               const std::string& sText,
               bool               bFuzzy);
     void endSave();
+    static bool checkAccess(std::string& sFile);
+    static bool createDir(std::string& sDir, std::string& sFile);
 };
 
 

@@ -29,6 +29,17 @@
 #include "gConXcu.hxx"
 #include "gConXhp.hxx"
 #include "gConXrm.hxx"
+#ifdef _WIN32
+#include <io.h>
+#include <direct.h>
+#define OS_ACCESS(x,y) _access(x,y)
+#define OS_MKDIR(x) _mkdir(x)
+#else
+#include <sys/stat.h>
+#include <sys/types.h>
+#define OS_ACCESS(x,y) access(x,y)
+#define OS_MKDIR(x)    mkdir(x,0777)
+#endif
 
 
 
@@ -166,6 +177,42 @@ void convert_gen_impl::endSave()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+bool convert_gen::checkAccess(std::string& sFile)
+{
+  return (OS_ACCESS(sFile.c_str(), 0) == 0);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+bool convert_gen::createDir(std::string& sDir, std::string& sFile)
+{
+  std::string sNewDir(sDir);
+  int         newPos, oldPos;
+
+
+  for (oldPos = 0;; oldPos = newPos +1)
+  {
+    newPos = sFile.find_first_of("/\\", oldPos);
+    if (newPos == std::string::npos)
+      break;
+
+    sNewDir += sFile.substr(oldPos, newPos-oldPos) + "/";
+
+    if (!checkAccess(sNewDir))
+    {
+      OS_MKDIR((char *)sNewDir.c_str());
+    }
+
+  }
+
+
+  return true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 convert_gen_impl::convert_gen_impl(l10nMem& crMemory)
                                   : mbMergeMode(false),
                                     mbLoadMode(false),
@@ -221,8 +268,16 @@ bool convert_gen_impl::prepareFile()
 
     // open output file
     mcOutputFile.open((msTargetPath+msSourceFile).c_str(), std::ios::binary); 
-    if (!mcOutputFile.is_open())
-      throw l10nMem::showError("Cannot open file (" + msTargetPath+msSourceFile + ") for writing");
+    if (mcOutputFile.is_open())
+      return true;
+
+    if (convert_gen::createDir(msTargetPath, msSourceFile))
+    {
+      mcOutputFile.open((msTargetPath+msSourceFile).c_str(), std::ios::binary); 
+      if (mcOutputFile.is_open())
+        return true;
+    }
+    throw l10nMem::showError("Cannot open file (" + msTargetPath+msSourceFile + ") for writing");
   }
 
   return true;

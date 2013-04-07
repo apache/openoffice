@@ -72,7 +72,7 @@ namespace XhpWrap
 void convert_xhp::execute()
 {
   std::string sLang;
-  std::string sFile;
+  std::string sFile, sFile2;
 
   // prepare list with languages
   miCntLanguages = mcMemory.prepareMerge();
@@ -83,11 +83,18 @@ void convert_xhp::execute()
 
     for (int i = 0; mcMemory.getMergeLang(sLang, sFile); ++i)
     {
-      sFile = msTargetPath + sLang + "/" + msSourceFile;
+      sFile2 = sLang + "/" + msSourceFile;
+      sFile  = msTargetPath + sFile2;
       mcOutputFiles[i].open(sFile.c_str(), std::ios::binary); 
       if (!mcOutputFiles[i].is_open())
-        throw l10nMem::showError("Cannot open file (" + sFile + ") for writing");
+      {
+        if (!convert_gen::createDir(msTargetPath, sFile2))
+          throw l10nMem::showError("Cannot create missing directories (" + sFile + ") for writing");
 
+        mcOutputFiles[i].open(sFile.c_str(), std::ios::binary); 
+        if (!mcOutputFiles[i].is_open())
+          throw l10nMem::showError("Cannot open file (" + sFile + ") for writing");
+      }
       msLangText[i] = "xml-lang=\"" + sLang + "\"";
     }
   }

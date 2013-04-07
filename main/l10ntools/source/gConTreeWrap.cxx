@@ -71,7 +71,7 @@ namespace TreeWrap
 void convert_tree::execute()
 {
   std::string sLang;
-  std::string sFile;
+  std::string sFile, sFile2;
 
   // prepare list with languages
   if (mbMergeMode)
@@ -81,10 +81,18 @@ void convert_tree::execute()
 
     for (int i = 0; mcMemory.getMergeLang(sLang, sFile); ++i)
     {
-      sFile = msTargetPath + sLang + "/" + msSourceFile;
+      sFile2 = sLang + "/" + msSourceFile;
+      sFile  = msTargetPath + sFile2;
       mcOutputFiles[i].open(sFile.c_str(), std::ios::binary); 
       if (!mcOutputFiles[i].is_open())
-        throw l10nMem::showError("Cannot open file (" + sFile + ") for writing");
+      {
+        if (!convert_gen::createDir(msTargetPath, sFile2))
+          throw l10nMem::showError("Cannot create missing directories (" + sFile + ") for writing");
+
+        mcOutputFiles[i].open(sFile.c_str(), std::ios::binary); 
+        if (!mcOutputFiles[i].is_open())
+          throw l10nMem::showError("Cannot open file (" + sFile + ") for writing");
+      }
     }
   }
 
@@ -112,10 +120,13 @@ void convert_tree::setString(char *yytext)
 
     case STATE_VAL_ID:
          msId = copySourceSpecial(yytext, 0);
+         msId.erase(msId.size()-1);
          break;
 
     case STATE_VAL_TITLE:
-         copySourceSpecial(yytext, 1);
+         std::string sText = copySourceSpecial(yytext, 1);
+         sText.erase(sText.size()-1);
+         mcMemory.setSourceKey(miLineNo, msSourceFile, msId, sText);
          break;
   }
   meStateVal = STATE_VAL_NONE;
@@ -127,7 +138,7 @@ void convert_tree::setString(char *yytext)
 void convert_tree::setState(char *yytext, STATE_TAG eNewStateTag, STATE_VAL eNewStateVAL)
 {
   copySourceSpecial(yytext, 0);
-
+  msCollector.clear();
   meStateTag = eNewStateTag;
   meStateVal = eNewStateVAL;
 }
@@ -137,6 +148,7 @@ void convert_tree::setState(char *yytext, STATE_TAG eNewStateTag, STATE_VAL eNew
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_tree::setValue(char *yytext)
 {
+  mcMemory.setSourceKey(miLineNo, msSourceFile, msId, msCollector);
   copySourceSpecial(yytext, 2);
 
   meStateTag = STATE_TAG_NONE;
@@ -149,7 +161,7 @@ void convert_tree::setValue(char *yytext)
 std::string& convert_tree::copySourceSpecial(char *yytext, int iType)
 {
   std::string& sText = copySource(yytext, false);
-  std::string  sLang;
+  std::string  sLang, sTemp;
   int          i;
 
   // Handling depends on iType
@@ -171,12 +183,12 @@ std::string& convert_tree::copySourceSpecial(char *yytext, int iType)
     case 1: // Used for title token, are to replaced with languages
             if (mbMergeMode)
             {
-//              mcMemory.xhpSearchTreeTitle(msId);
+              mcMemory.prepareMerge();
               for (i = 0; i < miCntLanguages; ++i)
               {
                 writeSourceFile(msLine, i);
-                mcMemory.getMergeLang(sLang, sText);
-                writeSourceFile(sText,i);
+                mcMemory.getMergeLang(sLang, sTemp);
+                writeSourceFile(sTemp,i);
               }
               msLine.clear();
             }
@@ -185,12 +197,12 @@ std::string& convert_tree::copySourceSpecial(char *yytext, int iType)
     case 2: // Used for token at end of value, language text are to be inserted and then token written
             if (mbMergeMode)
             {
-//              mcMemory.xhpSearchTopicTitle(msId);
+              mcMemory.prepareMerge();
               for (i = 0; i < miCntLanguages; ++i)
               {
                 writeSourceFile(msLine, i);
-                mcMemory.getMergeLang(sLang, sText);
-                writeSourceFile(sText,i);
+                mcMemory.getMergeLang(sLang, sTemp);
+                writeSourceFile(sTemp,i);
                 std::string sYY(yytext);
                 writeSourceFile(sYY, i);
               }
