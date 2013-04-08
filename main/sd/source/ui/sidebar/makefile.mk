@@ -57,8 +57,7 @@ SLOFILES =      							\
 	$(SLO)$/PreviewValueSet.obj				\
 	$(SLO)$/RecentlyUsedMasterPages.obj		\
 	$(SLO)$/RecentMasterPagesSelector.obj	\
-	$(SLO)$/SlideTransitionPanel.obj		\
-	$(SLO)$/TableDesignPanel.obj
+	$(SLO)$/SlideTransitionPanel.obj
 
 # --- Tagets -------------------------------------------------------
 

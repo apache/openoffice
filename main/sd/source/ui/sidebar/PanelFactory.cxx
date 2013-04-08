@@ -30,7 +30,6 @@
 #include "RecentMasterPagesSelector.hxx"
 #include "AllMasterPagesSelector.hxx"
 #include "CustomAnimationPanel.hxx"
-#include "TableDesignPanel.hxx"
 #include "SlideTransitionPanel.hxx"
 #include "NavigatorWrapper.hxx"
 
@@ -46,6 +45,10 @@ using namespace ::sd::framework;
 using ::rtl::OUString;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
+
+namespace sd {
+	extern ::Window * createTableDesignPanel (::Window* pParent, ViewShellBase& rBase);
+}
 
 namespace sd { namespace sidebar {
 
@@ -170,7 +173,8 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
 
     // Create a framework view.
     ::Window* pControl = NULL;
-
+    css::ui::LayoutSize aLayoutSize (-1,-1,-1);
+    
 #define EndsWith(s,t) s.endsWithAsciiL(t,strlen(t))
     if (EndsWith(rsUIElementResourceURL, gsResourceNameCustomAnimations))
         pControl = new CustomAnimationPanel(pParentWindow, *pBase);
@@ -185,7 +189,7 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameSlideTransitions))
         pControl = new SlideTransitionPanel(pParentWindow, *pBase);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameTableDesign))
-        pControl = new TableDesignPanel(pParentWindow, *pBase);
+        pControl = createTableDesignPanel(pParentWindow, *pBase);
     else if (EndsWith(rsUIElementResourceURL, gsResourceNameNavigator))
         pControl = new NavigatorWrapper(pParentWindow, *pBase, pBindings);
 #undef EndsWith
@@ -199,7 +203,7 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
         rsUIElementResourceURL,
         xFrame,
         pControl,
-        ui::LayoutSize(-1,-1,-1));
+        aLayoutSize);
 }
 
 
