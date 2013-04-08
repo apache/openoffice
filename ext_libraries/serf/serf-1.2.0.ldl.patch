@@ -1,0 +1,11 @@
+--- misc/serf-1.2.0/Makefile.in	2012-12-13 16:43:09.000000000 -0300
++++ misc/build/serf-1.2.0/Makefile.in	2013-02-25 11:11:04.107764814 -0300
+@@ -55,7 +55,7 @@ MKDIR = @mkdir_p@
+ INSTALL = @INSTALL@
+ 
+ LDFLAGS = @EXTRA_LDFLAGS@ @LDFLAGS@
+-LIBS = @EXTRA_LIBS@  @SERF_LIBS@ -lz -lssl -lcrypto
++LIBS = @EXTRA_LIBS@  @SERF_LIBS@ -lz -lssl -lcrypto -ldl
+ 
+ all: $(TARGET_LIB) $(PROGRAMS)
+ 
