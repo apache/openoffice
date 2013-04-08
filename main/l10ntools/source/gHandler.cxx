@@ -216,7 +216,9 @@ void handler::checkCommandLine(int argc, char *argv[])
   {
     current = next + 1;
     next = sLangText.find_first_of( " ", current );
-    mvLanguages.push_back(sLangText.substr(current,next-current));
+    std::string sNewLang = sLangText.substr(current,next-current);
+    if (sNewLang != "en-US")
+      mvLanguages.push_back(sLangText.substr(current,next-current));
   }
   while (next != (int)std::string::npos);
 

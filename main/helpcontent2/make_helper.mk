@@ -29,8 +29,5 @@ TARGET  = text_$(MDOULE)
 
 # --- Targets ------------------------------------------------------
 
-
-#.INCLUDE : tg_help.mk
-
 all:
-    echo $(MODULE)
+   cd $(SRC_ROOT)/helpcontent2/source; $(GENLANG) merge $(MODULE) $(SRC_ROOT)/languages/source "$(WITH_LANG)" -s . -t $(SRC_ROOT)/helpcontent2/unxlngx6.pro/misc -f $(XHPFILES)

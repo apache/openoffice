@@ -29,15 +29,7 @@ TARGET  = auxiliary
 
 .INCLUDE : settings.mk
 
-TREEFILES  = \
-	sbasic.tree \
-	simpress.tree \
-	scalc.tree \
-	sdraw.tree \
-	smath.tree \
-	schart.tree \
-	swriter.tree \
-	shared.tree
+TREEFILES  = 
 
 # --- Targets ------------------------------------------------------
 
@@ -69,12 +61,12 @@ $(COMMONMISC)$/treefiles.done : $(LOCTREEFILES)
 %.created:
 	@-$(MKDIRHIER) $(@:d) && $(TOUCH) $@
 
-$(LOCTREEFILES) : $(TREEFILES) $$(@:d)$/dir.created
+JAN : $(TREEFILES) $$(@:d)$/dir.created
 	@$(TOUCH) $@
 
 .IF "$(WITH_LANG)"!=""
 .IF "$(LOCALIZATION_FOUND)"=="YES"
-$(LOCTREEFILES) : $(TRYSDF:d:d:d:d)$/text$/shared/localize.sdf
+JAN : $(TRYSDF:d:d:d:d)$/text$/shared/localize.sdf
 .ELSE			# "$(LOCALIZATION_FOUND)"=="YES"
 $(COMMONMISC)/unpack.done : $(SOLARCOMMONSDFDIR)$/$(PRJNAME).zip
     @@-$(MKDIRHIER) $(COMMONMISC)$/$(PRJNAME)_$(TARGET)

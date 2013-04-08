@@ -1,21 +1,21 @@
 h2  helpcontent2                     :    L10N:l10n xmlhelp NULL
 h2 helpcontent2                      usr1  - all h2_mkout   h2_aux NULL
 h2 helpcontent2\prj                  get   - all h2_prj     h2_aux NULL
-h2  helpcontent2\source\auxiliary    nmake - all h2_aux NULL
-h2 helpcontent2\source\text\sbasic   nmake - all h2_sbas    h2_aux NULL
-h2 helpcontent2\source\text\scalc    nmake - all h2_scal    h2_aux NULL
-h2 helpcontent2\source\text\schart   nmake - all h2_scha    h2_aux NULL
-h2 helpcontent2\source\text\sdraw    nmake - all h2_sdra    h2_aux NULL
-h2 helpcontent2\source\text\shared   nmake - all h2_shar    h2_aux NULL
-h2 helpcontent2\source\text\simpress nmake - all h2_simp    h2_aux NULL
-h2 helpcontent2\source\text\smath    nmake - all h2_smat    h2_aux NULL
-h2 helpcontent2\source\text\swriter  nmake - all h2_swri    h2_aux NULL
-h2 helpcontent2\util\sbasic          nmake - all h2_ut_sbas h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\schart      nmake - all h2_ut_scha h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\scalc       nmake - all h2_ut_scal h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\sdraw       nmake - all h2_ut_sdra h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\sdatabase   nmake - all h2_ut_sdat h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\shared      nmake - all h2_ut_shar h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\simpress    nmake - all h2_ut_simp h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\smath       nmake - all h2_ut_smat h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
-h2	helpcontent2\util\swriter     nmake - all h2_ut_swri h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2  helpcontent2\source\auxiliary    nmake - all h2_aux NULL
+h2 helpcontent2\source\text\sbasic   nmake - all h2_sbas    NULL
+#h2 helpcontent2\source\text\scalc    nmake - all h2_scal    h2_aux NULL
+#h2 helpcontent2\source\text\schart   nmake - all h2_scha    h2_aux NULL
+#h2 helpcontent2\source\text\sdraw    nmake - all h2_sdra    h2_aux NULL
+#h2 helpcontent2\source\text\shared   nmake - all h2_shar    h2_aux NULL
+#h2 helpcontent2\source\text\simpress nmake - all h2_simp    h2_aux NULL
+#h2 helpcontent2\source\text\smath    nmake - all h2_smat    h2_aux NULL
+#h2 helpcontent2\source\text\swriter  nmake - all h2_swri    h2_aux NULL
+#h2 helpcontent2\util\sbasic          nmake - all h2_ut_sbas h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\schart      nmake - all h2_ut_scha h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\scalc       nmake - all h2_ut_scal h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\sdraw       nmake - all h2_ut_sdra h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\sdatabase   nmake - all h2_ut_sdat h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\shared      nmake - all h2_ut_shar h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\simpress    nmake - all h2_ut_simp h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\smath       nmake - all h2_ut_smat h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
+#h2	helpcontent2\util\swriter     nmake - all h2_ut_swri h2_aux h2_sbas h2_scal h2_scal h2_scha h2_sdra h2_shar h2_simp h2_smat h2_swri NULL
