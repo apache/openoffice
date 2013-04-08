@@ -399,24 +399,25 @@ IMPL_LINK( SvxLineEndDefTabPage, ClickModifyHdl_Impl, void *, EMPTYARG )
 			delete( pDlg );
 		}
 
-		// Wenn nicht vorhanden, wird Eintrag aufgenommen
-		if( bDifferent )
-		{
+        // Wenn nicht vorhanden, wird Eintrag aufgenommen
+        if( bDifferent )
+        {
             XLineEndEntry* pEntry = pLineEndList->GetLineEnd( nPos );
 
-			pEntry->SetName( aName );
-			aEdtName.SetText( aName );
+            pEntry->SetName( aName );
+            aEdtName.SetText( aName );
 
-			aLbLineEnds.Modify( pEntry, nPos, &pLineEndList->GetUiBitmap( nPos ) );
-			aLbLineEnds.SelectEntryPos( nPos );
+            const Bitmap aUiBitmap( pLineEndList->GetUiBitmap( nPos ) );
+            aLbLineEnds.Modify( pEntry, nPos, &aUiBitmap );
+            aLbLineEnds.SelectEntryPos( nPos );
 
-			// Flag fuer modifiziert setzen
-			*pnLineEndListState |= CT_MODIFIED;
+            // Flag fuer modifiziert setzen
+            *pnLineEndListState |= CT_MODIFIED;
 
-			*pPageType = 3;
-		}
-	}
-	return( 0L );
+            *pPageType = 3;
+        }
+    }
+    return( 0L );
 }
 
 //------------------------------------------------------------------------
