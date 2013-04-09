@@ -1179,18 +1179,6 @@ void SwTableShell::Execute(SfxRequest &rReq)
 			aMgr.ColWidthDlg(GetView().GetWindow());
 		}
 		break;
-        case FN_TABLE_VERT_NONE:
-		case FN_TABLE_VERT_CENTER:
-		case FN_TABLE_VERT_BOTTOM:
-		{
-			sal_uInt16 nAlign = nSlot == FN_TABLE_VERT_NONE ?
-                                text::VertOrientation::NONE :
-									nSlot == FN_TABLE_VERT_CENTER ?
-                                        text::VertOrientation::CENTER : text::VertOrientation::BOTTOM;
-			rSh.SetBoxAlign(nAlign);
-            bCallDone = sal_True;
-        }
-		break;
 		case SID_TABLE_VERT_NONE:
 		case SID_TABLE_VERT_CENTER:
 		case SID_TABLE_VERT_BOTTOM:
@@ -1335,28 +1323,18 @@ void SwTableShell::GetState(SfxItemSet &rSet)
 			case RES_UL_SPACE:
                 rSet.Put(pFmt->GetULSpace());
 			break;
-			case FN_TABLE_VERT_NONE:
-			case FN_TABLE_VERT_CENTER:
-			case FN_TABLE_VERT_BOTTOM:
-			{
-				sal_uInt16 nAlign = rSh.GetBoxAlign();
-				sal_Bool bSet = (nSlot == FN_TABLE_VERT_NONE && nAlign == text::VertOrientation::NONE) ||
-                            (nSlot == FN_TABLE_VERT_CENTER && nAlign == text::VertOrientation::CENTER) ||
-                            (nSlot == FN_TABLE_VERT_BOTTOM && nAlign == text::VertOrientation::BOTTOM);
-				rSet.Put(SfxBoolItem(nSlot, bSet));
-			}
-			break;
-			case SID_TABLE_VERT_NONE:
-			case SID_TABLE_VERT_CENTER:
-			case SID_TABLE_VERT_BOTTOM:
-			{
-				sal_uInt16 nAlign = rSh.GetBoxAlign();
-				sal_Bool bSet = nSlot == SID_TABLE_VERT_NONE && nAlign == text::VertOrientation::NONE||
+
+            case SID_TABLE_VERT_NONE:
+            case SID_TABLE_VERT_CENTER:
+            case SID_TABLE_VERT_BOTTOM:
+            {
+                sal_uInt16 nAlign = rSh.GetBoxAlign();
+                sal_Bool bSet = nSlot == SID_TABLE_VERT_NONE && nAlign == text::VertOrientation::NONE||
                             nSlot == SID_TABLE_VERT_CENTER && nAlign == text::VertOrientation::CENTER ||
                             nSlot == SID_TABLE_VERT_BOTTOM && nAlign == text::VertOrientation::BOTTOM;
-				rSet.Put(SfxBoolItem(nSlot, bSet));
-			}
-			break;
+                rSet.Put(SfxBoolItem(nSlot, bSet));
+            }
+            break;
 
 			case FN_TABLE_MODE_FIX       :
 			case FN_TABLE_MODE_FIX_PROP  :

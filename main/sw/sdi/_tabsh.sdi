@@ -63,26 +63,6 @@ interface BaseTextTable
 	]
 
 
-	FN_TABLE_VERT_NONE
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
-	]
-
-	FN_TABLE_VERT_CENTER
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
-	]
-
-	FN_TABLE_VERT_BOTTOM
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
-	]
 	SID_TABLE_VERT_NONE
 	[
 		ExecMethod = Execute ;
@@ -103,6 +83,7 @@ interface BaseTextTable
 		StateMethod = GetState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
+
 	FN_TABLE_SET_COL_WIDTH // status( final|play )
 	[
 		ExecMethod = Execute ;
