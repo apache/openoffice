@@ -176,16 +176,22 @@ Rectangle DeckLayouter::LayoutPanels (
         eMode==Preferred
             ? nTotalPreferredHeight + nTotalDecorationHeight
             : aBox.GetHeight());
+    sal_Int32 nY = rVerticalScrollBar.GetThumbPos();
+    if (nContentHeight-nY < aBox.GetHeight())
+        nY = nContentHeight-aBox.GetHeight();
+    if (nY < 0)
+        nY = 0;
     rScrollContainer.SetPosSizePixel(
         0,
-        0,
+        -nY,
         nWidth,
         nContentHeight);
 
     if (bShowVerticalScrollBar)
         SetupVerticalScrollBar(rVerticalScrollBar, nContentHeight, aBox.GetHeight());
 
-    aBox.Top() += PlacePanels(rLayoutItems, nWidth, eMode, rScrollContainer);
+    const sal_Int32 nUsedHeight (PlacePanels(rLayoutItems, nWidth, eMode, rScrollContainer));
+    aBox.Top() += nUsedHeight;
     return aBox;
 }
 
@@ -255,7 +261,6 @@ sal_Int32 DeckLayouter::PlacePanels (
             }
 
             // Place the panel.
-            OSL_TRACE("panel %d: placing @%d +%d", iItem->mnPanelIndex, nY, nPanelHeight);
             rPanel.SetPosSizePixel(0, nY, nWidth, nPanelHeight);
             
             nY += nPanelHeight;
@@ -314,7 +319,7 @@ void DeckLayouter::GetRequestedSizes (
                 // Show the title bar and a separator above and below
                 // the title bar.
                 rAvailableHeight -= nPanelTitleBarHeight;
-                rAvailableHeight -= 2*nDeckSeparatorHeight;
+                rAvailableHeight -= nDeckSeparatorHeight;
             }
             
             if (iItem->mpPanel->IsExpanded())
@@ -365,9 +370,6 @@ void DeckLayouter::DistributeHeights (
             iItem->mnWeight = nContainerHeight - nBaseHeight;
             nTotalWeight += iItem->mnWeight;
         }
-        OSL_TRACE("panel %d: base height is %d, weight is %d, min/max/pref are %d/%d/%d",
-            nIndex, nBaseHeight, iItem->mnWeight,
-            iItem->maLayoutSize.Minimum, iItem->maLayoutSize.Maximum, iItem->maLayoutSize.Preferred);
     }
 	
 	if (nTotalWeight == 0)
@@ -388,7 +390,6 @@ void DeckLayouter::DistributeHeights (
             nDistributedHeight = ::std::max<sal_Int32>(0,iItem->maLayoutSize.Maximum - nBaseHeight);
         }
         iItem->mnDistributedHeight = nDistributedHeight;
-        OSL_TRACE("panel %d: distributed height is %d", nIndex, nDistributedHeight);
         nRemainingHeightToDistribute -= nDistributedHeight;
     }
 
@@ -415,9 +416,6 @@ void DeckLayouter::DistributeHeights (
         if (iItem->maLayoutSize.Maximum < 0)
         {
             iItem->mnDistributedHeight += nAdditionalHeightPerPanel + nAdditionalHeightForFirstPanel;
-            OSL_TRACE("panel %d: additionl height is %d",
-                iItem->mnPanelIndex,
-                nAdditionalHeightPerPanel + nAdditionalHeightForFirstPanel);
             nRemainingHeightToDistribute -= nAdditionalHeightPerPanel + nAdditionalHeightForFirstPanel;
         }
     }
