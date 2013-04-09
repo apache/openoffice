@@ -24,7 +24,6 @@ import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.Collection;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -35,9 +34,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
-
 import testlib.uno.SCUtil;
-
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.lang.XComponent;
 import com.sun.star.sheet.FilterOperator;
@@ -53,7 +50,6 @@ import com.sun.star.uno.UnoRuntime;
 
 @RunWith(value = Parameterized.class)
 public class StardarFilterTest {
-	private static final UnoApp app = new UnoApp();
 	UnoApp unoApp = new UnoApp();
 	XSpreadsheetDocument scDocument = null;
 	XComponent scComponent = null;
@@ -114,6 +110,9 @@ public class StardarFilterTest {
 		this.value = value;
 	}
 
+	/**
+	 * test standard filter with very criteria
+	 */
 	@Test
 	public void testStandardFilter() throws Exception {
 		String sample = Testspace.prepareData(filename);

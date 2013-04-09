@@ -1120,9 +1120,9 @@ SwNumRule* WW8ListManager::CreateNextRule(bool bSimple)
     return pMyNumRule;
 }
 
-SwNumRule* WW8ListManager::GetNumRule(int i)
+SwNumRule* WW8ListManager::GetNumRule(sal_uInt16 i)
 {
-	if ( i >= 0 && i < maLSTInfos.size() )
+	if ( i < maLSTInfos.size() )
 		return maLSTInfos[i]->pNumRule;
 	else
 		return 0;
@@ -2586,7 +2586,7 @@ static void lcl_AddToPropertyContainer
         uno::Any aAny(C2U(""));
         xPropContainer->addProperty
             (rPropertyName,
-             static_cast<sal_Int16>(beans::PropertyAttribute::BOUND ||
+             static_cast<sal_Int16>(beans::PropertyAttribute::BOUND |
                                     beans::PropertyAttribute::REMOVABLE),
              aAny);
     }

@@ -78,6 +78,7 @@
 #include "Window.hxx"
 #include "DrawDocShell.hxx"
 #include "framework/FrameworkHelper.hxx"
+#include <svx/svdoashp.hxx>
 
 namespace sd {
 
@@ -152,25 +153,31 @@ void DrawViewShell::GetFormTextState(SfxItemSet& rSet)
 	if ( rMarkList.GetMarkCount() == 1 )
 		pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 
-	if ( pObj == NULL || !pObj->ISA(SdrTextObj) ||
-		!((SdrTextObj*) pObj)->HasText() )
+    const SdrTextObj* pTextObj = dynamic_cast< const SdrTextObj* >(pObj);
+    const bool bDeactivate(
+        !pObj ||
+        !pTextObj ||
+        !pTextObj->HasText() ||
+        dynamic_cast< const SdrObjCustomShape* >(pObj)); // #121538# no FontWork for CustomShapes
+
+    if(bDeactivate)
 	{
 // automatisches Auf/Zuklappen des FontWork-Dialog; erstmal deaktiviert
 //		if ( pDlg )
 //			pDlg->SetActive(sal_False);
 
-		rSet.DisableItem(XATTR_FORMTXTSTYLE);
-		rSet.DisableItem(XATTR_FORMTXTADJUST);
-		rSet.DisableItem(XATTR_FORMTXTDISTANCE);
-		rSet.DisableItem(XATTR_FORMTXTSTART);
-		rSet.DisableItem(XATTR_FORMTXTMIRROR);
-		rSet.DisableItem(XATTR_FORMTXTSTDFORM);
-		rSet.DisableItem(XATTR_FORMTXTHIDEFORM);
-		rSet.DisableItem(XATTR_FORMTXTOUTLINE);
-		rSet.DisableItem(XATTR_FORMTXTSHADOW);
-		rSet.DisableItem(XATTR_FORMTXTSHDWCOLOR);
-		rSet.DisableItem(XATTR_FORMTXTSHDWXVAL);
-		rSet.DisableItem(XATTR_FORMTXTSHDWYVAL);
+        rSet.DisableItem(XATTR_FORMTXTSTYLE);
+        rSet.DisableItem(XATTR_FORMTXTADJUST);
+        rSet.DisableItem(XATTR_FORMTXTDISTANCE);
+        rSet.DisableItem(XATTR_FORMTXTSTART);
+        rSet.DisableItem(XATTR_FORMTXTMIRROR);
+        rSet.DisableItem(XATTR_FORMTXTSTDFORM);
+        rSet.DisableItem(XATTR_FORMTXTHIDEFORM);
+        rSet.DisableItem(XATTR_FORMTXTOUTLINE);
+        rSet.DisableItem(XATTR_FORMTXTSHADOW);
+        rSet.DisableItem(XATTR_FORMTXTSHDWCOLOR);
+        rSet.DisableItem(XATTR_FORMTXTSHDWXVAL);
+        rSet.DisableItem(XATTR_FORMTXTSHDWYVAL);
 	}
 	else
 	{

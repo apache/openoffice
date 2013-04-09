@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
 
@@ -34,7 +32,6 @@
 #include <drawinglayer/primitive2d/polypolygonprimitive2d.hxx>
 #include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
 #include <drawinglayer/primitive2d/bitmapprimitive2d.hxx>
-#include <drawinglayer/primitive2d/metafileprimitive2d.hxx>
 #include <drawinglayer/primitive2d/maskprimitive2d.hxx>
 #include <basegfx/polygon/b2dpolygonclipper.hxx>
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
@@ -61,6 +58,7 @@
 #include <drawinglayer/primitive2d/pagepreviewprimitive2d.hxx>
 #include <drawinglayer/primitive2d/epsprimitive2d.hxx>
 #include <basegfx/polygon/b2dlinegeometry.hxx>
+#include <vcl/dibtools.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 // for PDFExtOutDevData Graphic support
@@ -1623,9 +1621,6 @@ namespace drawinglayer
 				        impStartSvtGraphicFill(pSvtGraphicFill);
 		                mpOutputDevice->DrawGradient(aToolsPolyPolygon, aVCLGradient);
 				        impEndSvtGraphicFill(pSvtGraphicFill);
-
-				        // NO usage of common own gradient randerer, not used ATM for VCL MetaFile, see text above
-				        // RenderPolyPolygonGradientPrimitive2D(static_cast< const primitive2d::PolyPolygonGradientPrimitive2D& >(rCandidate));
                     }
 
                     break;
@@ -1689,23 +1684,6 @@ namespace drawinglayer
                     }
 
 					break;
-				}
-				case PRIMITIVE2D_ID_METAFILEPRIMITIVE2D :
-				{
-                    static bool bUseMetaFilePrimitiveDecomposition(true);
-                    
-                    if(bUseMetaFilePrimitiveDecomposition)
-                    {
-                        // use new Metafile decomposition
-    					process(rCandidate.get2DDecomposition(getViewInformation2D()));
-                    }
-                    else
-                    {
-                        // direct draw of MetaFile, use default pocessing
-					    RenderMetafilePrimitive2D(static_cast< const primitive2d::MetafilePrimitive2D& >(rCandidate));
-                    }
-					
-                    break;
 				}
 				case PRIMITIVE2D_ID_MASKPRIMITIVE2D :
 				{
@@ -2062,7 +2040,8 @@ namespace drawinglayer
 			                    if(bDoSaveForVisualControl)
 			                    {
 				                    SvFileStream aNew(String(ByteString( "c:\\test.bmp" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
-				                    aNew << aBmContent;
+
+                                    WriteDIB(aBmContent, aNew, false, true);
 			                    }
 #endif
 

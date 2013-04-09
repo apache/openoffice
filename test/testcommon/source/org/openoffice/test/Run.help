@@ -19,5 +19,5 @@ System Property
 Example
 	run -Dopenoffice.home=/Applications/OpenOffice.org.app/Contents -tp bvt
 	run -Dopenoffice.home=/Applications/OpenOffice.org.app/Contents -tc bvt:bvt.gui.BasicFunctionTest,bvt.gui.FileTypeTest
-	run -Dopenoffice.pack=http://ci.apache.org/projects/openoffice/install/linux64/Apache_OpenOffice_3.5.0_Linux_x86-64_install-arc_en-US.tar.gz -tp bvt
+	run -Dopenoffice.pack=http://ci.apache.org/projects/openoffice/install/linux64/Apache_OpenOffice_4.0.0_Linux_x86-64_install-arc_en-US.tar.gz -tp bvt
 	

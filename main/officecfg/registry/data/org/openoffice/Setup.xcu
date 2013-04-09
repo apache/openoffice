@@ -27,6 +27,9 @@
 		<prop oor:name="ooName" install:module="brand">
 			<value >${PRODUCTNAME}</value>
 		</prop>
+		<prop oor:name="ooFullname" install:module="brand">
+			<value >${FULLPRODUCTNAME}</value>
+		</prop>
 		<prop oor:name="ooSetupVersion" install:module="brand">
 			<value >${PRODUCTVERSION}</value>
 		</prop>
@@ -41,10 +44,10 @@
 			<value >${PRODUCTEXTENSION}</value>
 		</prop>
 		<prop oor:name="ooXMLFileFormatVersion" install:module="brand">
-			<value >${FILEFORMATVERSION}</value>
+			<value >${OOOXMLFILEFORMATVERSION}</value>
 		</prop>
 		<prop oor:name="ooXMLFileFormatName" install:module="brand">
-			<value >${FILEFORMATNAME}</value>
+			<value >${OOOXMLFILEFORMATNAME}</value>
 		</prop>
         <prop oor:name="ooOpenSourceContext" install:module="brand">
             <value >${OPENSOURCE}</value>

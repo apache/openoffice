@@ -35,11 +35,10 @@
 #include <svx/sdr/event/eventhandler.hxx>
 #include <svx/sdrpagewindow.hxx>
 #include <svx/sdrpaintwindow.hxx>
-#include <drawinglayer/processor2d/vclprocessor2d.hxx>
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <drawinglayer/primitive2d/transformprimitive2d.hxx>
-#include <svx/sdr/contact/objectcontacttools.hxx>
 #include <com/sun/star/rendering/XSpriteCanvas.hpp>
+#include <drawinglayer/processor2d/processor2dtools.hxx>
 #include <svx/unoapi.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
@@ -179,6 +178,7 @@ namespace sdr
 			const double fCurrentTime(getPrimitiveAnimator().GetTime());
 			OutputDevice& rTargetOutDev = GetPageWindow().GetPaintWindow().GetTargetOutputDevice();
             basegfx::B2DRange aViewRange;
+            basegfx::B2DHomMatrix aViewTransformation;
 
 			// create ViewRange
             if(isOutputToRecordingMetaFile())
@@ -228,12 +228,16 @@ namespace sdr
 
 				// transform to world coordinates
                 aViewRange.transform(rTargetOutDev.GetInverseViewTransformation());
+
+                // for metafile, leave ViewTransformation empty, but for pixel renderer
+                // get it from OutputDevice
+                aViewTransformation = rTargetOutDev.GetViewTransformation();
 			}
 
 			// update local ViewInformation2D
 			const drawinglayer::geometry::ViewInformation2D aNewViewInformation2D(
 				basegfx::B2DHomMatrix(), 
-				rTargetOutDev.GetViewTransformation(), 
+				aViewTransformation, 
 				aViewRange, 
 				GetXDrawPageForSdrPage(GetSdrPage()),
 				fCurrentTime, 
@@ -246,7 +250,7 @@ namespace sdr
 
 			// if there is something to show, use a primitive processor to render it. There
 			// is a choice between VCL and Canvas processors currently. The decision is made in
-			// createBaseProcessor2DFromOutputDevice and takes into accout things like the
+			// createProcessor2DFromOutputDevice and takes into accout things like the
 			// Target is a MetaFile, a VDev or something else. The Canvas renderer is triggered
 			// currently using the shown boolean. Canvas is not yet the default.
 			if(xPrimitiveSequence.hasElements())
@@ -256,8 +260,9 @@ namespace sdr
 				pOutDev->SetLayoutMode(0); // reset, default is no BiDi/RTL
 
 				// create renderer
-                drawinglayer::processor2d::BaseProcessor2D* pProcessor2D = createBaseProcessor2DFromOutputDevice(
-                    rTargetOutDev, getViewInformation2D());
+                drawinglayer::processor2d::BaseProcessor2D* pProcessor2D = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
+                    rTargetOutDev, 
+                    getViewInformation2D());
 
 				if(pProcessor2D)
 				{

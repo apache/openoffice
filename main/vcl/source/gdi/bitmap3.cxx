@@ -904,9 +904,19 @@ sal_Bool Bitmap::ImplConvertGhosted()
 
 // ------------------------------------------------------------------------
 
-sal_Bool Bitmap::Scale( const double& rScaleX, const double& rScaleY, sal_uLong nScaleFlag )
+sal_Bool Bitmap::Scale( const double& rScaleX, const double& rScaleY, sal_uInt32 nScaleFlag )
 {
-    bool bRetval(false);
+    if(basegfx::fTools::equalZero(rScaleX) || basegfx::fTools::equalZero(rScaleY))
+    {
+        // no scale
+        return true;
+    }
+
+    if(basegfx::fTools::equal(rScaleX, 1.0) && basegfx::fTools::equal(rScaleY, 1.0))
+    {
+        // no scale
+        return true;
+    }
 
 #ifdef DBG_UTIL
     // #121233# allow to test the different scalers in debug build with source
@@ -929,84 +939,78 @@ sal_Bool Bitmap::Scale( const double& rScaleX, const double& rScaleY, sal_uLong 
     }
 #endif // DBG_UTIL
 
-    if(basegfx::fTools::equalZero(rScaleX) && basegfx::fTools::equalZero(rScaleY))
+    bool bRetval(false);
+
+    if(BMP_SCALE_BESTQUALITY == nScaleFlag)
     {
-        // no scale
-        bRetval = true;
+        // Use LANCZOS when best quality is requested
+        nScaleFlag = BMP_SCALE_LANCZOS;
     }
-    else
+    else if(BMP_SCALE_FASTESTINTERPOLATE == nScaleFlag)
     {
-        if(BMP_SCALE_BESTQUALITY == nScaleFlag)
-        {
-            // Use LANCZOS when best quality is requested
-            nScaleFlag = BMP_SCALE_LANCZOS;
-        }
-        else if(BMP_SCALE_FASTESTINTERPOLATE == nScaleFlag)
-        {
-            // Use BMP_SCALE_SUPER when speed is requested, but not worst quality
-            nScaleFlag = BMP_SCALE_SUPER;
-        }
+        // Use BMP_SCALE_SUPER when speed is requested, but not worst quality
+        nScaleFlag = BMP_SCALE_SUPER;
+    }
 
-        switch(nScaleFlag)
+    switch(nScaleFlag)
+    {
+        default:
+        case BMP_SCALE_NONE :
         {
-            default:
-            case BMP_SCALE_NONE :
+            bRetval = false;
+            break;
+        }
+        case BMP_SCALE_FAST :
+        {
+            bRetval = ImplScaleFast( rScaleX, rScaleY );
+            break;
+        }
+        case BMP_SCALE_INTERPOLATE :
+        {
+            bRetval = ImplScaleInterpolate( rScaleX, rScaleY );
+            break;
+        }
+        case BMP_SCALE_SUPER :
+        {
+            if(GetSizePixel().Width() < 2 || GetSizePixel().Height() < 2)
             {
-                bRetval = false;
-                break;
-            }
-            case BMP_SCALE_FAST :
-            {
+                // fallback to ImplScaleFast
                 bRetval = ImplScaleFast( rScaleX, rScaleY );
-                break;
             }
-            case BMP_SCALE_INTERPOLATE :
+            else
             {
-                bRetval = ImplScaleInterpolate( rScaleX, rScaleY );
-                break;
+                // #121233# use method from symphony
+                bRetval = ImplScaleSuper( rScaleX, rScaleY );
             }
-            case BMP_SCALE_SUPER :
-            {
-                if(GetSizePixel().Width() < 2 || GetSizePixel().Height() < 2)
-                {
-                    // fallback to ImplScaleFast
-                    bRetval = ImplScaleFast( rScaleX, rScaleY );
-                }
-                else
-                {
-                    // #121233# use method from symphony
-                    bRetval = ImplScaleSuper( rScaleX, rScaleY );
-                }
-                break;
-            }
-            case BMP_SCALE_LANCZOS :
-            {
-                const Lanczos3Kernel kernel;
+            break;
+        }
+        case BMP_SCALE_LANCZOS :
+        {
+            const Lanczos3Kernel kernel;
 
-                bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel);
-                break;
-            }
-            case BMP_SCALE_BICUBIC :
-            {
-                const BicubicKernel kernel;
+            bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel);
+            break;
+        }
+        case BMP_SCALE_BICUBIC :
+        {
+            const BicubicKernel kernel;
 
-                bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel );
-                break;
-            }
-            case BMP_SCALE_BILINEAR :
-            {
-                const BilinearKernel kernel;
+            bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel );
+            break;
+        }
+        case BMP_SCALE_BILINEAR :
+        {
+            const BilinearKernel kernel;
 
-                bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel );
-                break;
-            }
-            case BMP_SCALE_BOX :
-            {
-                const BoxKernel kernel;
+            bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel );
+            break;
+        }
+        case BMP_SCALE_BOX :
+        {
+            const BoxKernel kernel;
 
-                bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel );
-                break;
-            }
+            bRetval = ImplScaleConvolution( rScaleX, rScaleY, kernel );
+            break;
         }
     }
 
@@ -1022,7 +1026,7 @@ sal_Bool Bitmap::Scale( const double& rScaleX, const double& rScaleY, sal_uLong 
 
 // ------------------------------------------------------------------------
 
-sal_Bool Bitmap::Scale( const Size& rNewSize, sal_uLong nScaleFlag )
+sal_Bool Bitmap::Scale( const Size& rNewSize, sal_uInt32 nScaleFlag )
 {
 	const Size	aSize( GetSizePixel() );
 	sal_Bool		bRet;
@@ -1555,7 +1559,6 @@ sal_Bool Bitmap::ImplScaleSuper(
 									else
 										nWeightY = nMax;
 									
-									nWeightY = nWeightY ;								
 									nSumB += nWeightY * ( nSumRowB / nTotalWeightX );
 									nSumG += nWeightY * ( nSumRowG / nTotalWeightX );
 									nSumR += nWeightY * ( nSumRowR / nTotalWeightX );
@@ -1700,7 +1703,6 @@ sal_Bool Bitmap::ImplScaleSuper(
 									else
 										nWeightY = nMax;
 									
-									nWeightY = nWeightY ;								
 									nSumB += nWeightY * ( nSumRowB / nTotalWeightX );
 									nSumG += nWeightY * ( nSumRowG / nTotalWeightX );
 									nSumR += nWeightY * ( nSumRowR / nTotalWeightX );
@@ -1847,7 +1849,6 @@ sal_Bool Bitmap::ImplScaleSuper(
 									else
 										nWeightY = nMax;
 									
-									nWeightY = nWeightY ;								
 									nSumB += nWeightY * ( nSumRowB / nTotalWeightX );
 									nSumG += nWeightY * ( nSumRowG / nTotalWeightX );
 									nSumR += nWeightY * ( nSumRowR / nTotalWeightX );
@@ -1992,7 +1993,6 @@ sal_Bool Bitmap::ImplScaleSuper(
 									else
 										nWeightY = nMax;
 									
-									nWeightY = nWeightY ;								
 									nSumB += nWeightY * ( nSumRowB / nTotalWeightX );
 									nSumG += nWeightY * ( nSumRowG / nTotalWeightX );
 									nSumR += nWeightY * ( nSumRowR / nTotalWeightX );
@@ -2135,7 +2135,6 @@ sal_Bool Bitmap::ImplScaleSuper(
 									else
 										nWeightY = nMax;
 									
-									nWeightY = nWeightY ;								
 									nSumB += nWeightY * ( nSumRowB / nTotalWeightX );
 									nSumG += nWeightY * ( nSumRowG / nTotalWeightX );
 									nSumR += nWeightY * ( nSumRowR / nTotalWeightX );
@@ -2481,29 +2480,42 @@ sal_Bool Bitmap::ImplScaleConvolution(
     {
         const sal_uInt32 nInBetweenSizeHorFirst(nHeight * nNewWidth);
         const sal_uInt32 nInBetweenSizeVerFirst(nNewHeight * nWidth);
+        Bitmap aSource(*this);
 
         if(nInBetweenSizeHorFirst < nInBetweenSizeVerFirst)
         {
             if(bScaleHor)
             {
-                bResult = ImplScaleConvolutionHor(*this, aResult, fScaleX, aKernel);
+                bResult = ImplScaleConvolutionHor(aSource, aResult, fScaleX, aKernel);
             }
 
             if(bResult && bScaleVer)
             {
-                bResult = ImplScaleConvolutionVer(*this, aResult, fScaleY, aKernel);
+                if(bScaleHor)
+                {
+                    // copy partial result, independent of color depth
+                    aSource = aResult;
+                }
+
+                bResult = ImplScaleConvolutionVer(aSource, aResult, fScaleY, aKernel);
             }
         }
         else
         {
             if(bScaleVer)
             {
-                bResult = ImplScaleConvolutionVer(*this, aResult, fScaleY, aKernel);
+                bResult = ImplScaleConvolutionVer(aSource, aResult, fScaleY, aKernel);
             }
 
             if(bResult && bScaleHor)
             {
-                bResult = ImplScaleConvolutionHor(*this, aResult, fScaleX, aKernel);
+                if(bScaleVer)
+                {
+                    // copy partial result, independent of color depth
+                    aSource = aResult;
+                }
+
+                bResult = ImplScaleConvolutionHor(aSource, aResult, fScaleX, aKernel);
             }
         }
     }

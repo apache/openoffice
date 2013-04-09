@@ -526,7 +526,7 @@ public class ValidityDialogSetting {
 		scInputBarInput.activate();
 		typeKeys("13");
 		typeKeys("<enter>");
-		assertEquals("OpenOffice.org Calc", activeMsgBox.getCaption());
+		assertEquals("Apache OpenOffice Calc", activeMsgBox.getCaption());
 		// assertEquals("Invalid value.",ActiveMsgBox.getMessage()); // Can not
 		// verify in multi-language
 		activeMsgBox.ok();
