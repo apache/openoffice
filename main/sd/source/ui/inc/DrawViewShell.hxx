@@ -199,6 +199,9 @@ public:
 	void	        ExecNavigatorWin(SfxRequest& rReq);
 	void	        GetNavigatorWinState(SfxItemSet& rSet);
 
+	void         ExecutePropPanelAttr (SfxRequest& rReq);
+	void	        GetStatePropPanelAttr(SfxItemSet& rSet);
+
 	void	        ExecEffectWin(SfxRequest& rReq);
 
 	void	        Update3DWindow();
@@ -220,6 +223,8 @@ public:
 
 	void	        AttrExec (SfxRequest& rReq);
 	void	        AttrState (SfxItemSet& rSet);
+
+	void		ExecChar(SfxRequest& rReq);
 
     void            ExecuteAnnotation (SfxRequest& rRequest);
     void            GetAnnotationState (SfxItemSet& rItemSet);

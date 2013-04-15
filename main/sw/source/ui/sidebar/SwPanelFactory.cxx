@@ -24,6 +24,8 @@
 #include "SwPanelFactory.hxx"
 
 #include <PagePropertyPanel.hxx>
+#include <WrapPropertyPanel.hxx>
+#include <navipi.hxx>
 
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
@@ -120,8 +122,25 @@ Reference<ui::XUIElement> SAL_CALL SwPanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&PagePropertyPanel::ShowPageStyleFormatDialog, pPanel),
             ui::LayoutSize(-1,-1,-1));
+    }
+    else if (DoesResourceEndWith("/WrapPropertyPanel"))
+    {
+        WrapPropertyPanel* pPanel = WrapPropertyPanel::Create( pParentWindow, xFrame, pBindings );
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ui::LayoutSize(-1,-1,-1));
+    }
+    else if (DoesResourceEndWith("/NavigatorPanel"))
+    {
+        Window* pPanel = new SwNavigationPI(pBindings, NULL, pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ui::LayoutSize(0,-1,-1));
     }
 #undef DoesResourceEndWith
 

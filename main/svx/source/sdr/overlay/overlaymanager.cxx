@@ -32,8 +32,7 @@
 #include <vcl/window.hxx>
 #include <svx/sdr/overlay/overlayobject.hxx>
 #include <basegfx/matrix/b2dhommatrix.hxx>
-#include <drawinglayer/processor2d/baseprocessor2d.hxx>
-#include <svx/sdr/contact/objectcontacttools.hxx>
+#include <drawinglayer/processor2d/processor2dtools.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -55,7 +54,7 @@ namespace sdr
 				const bool bIsAntiAliasing(getDrawinglayerOpt().IsAntiAliasing());
 
 				// create processor
-				drawinglayer::processor2d::BaseProcessor2D* pProcessor = ::sdr::contact::createBaseProcessor2DFromOutputDevice(
+				drawinglayer::processor2d::BaseProcessor2D* pProcessor = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
 					rDestinationDevice, 
 					getCurrentViewInformation2D());
 
@@ -157,8 +156,14 @@ namespace sdr
 				if(OUTDEV_WINDOW == getOutputDevice().GetOutDevType())
 				{
 					const Size aOutputSizePixel(getOutputDevice().GetOutputSizePixel());
-					aViewRange = basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight());
-			        aViewRange.transform(getOutputDevice().GetInverseViewTransformation());
+
+                    // only set when we *have* a output size, else let aViewRange
+                    // stay on empty
+                    if(aOutputSizePixel.Width() && aOutputSizePixel.Height())
+                    {
+                        aViewRange = basegfx::B2DRange(0.0, 0.0, aOutputSizePixel.getWidth(), aOutputSizePixel.getHeight());
+                        aViewRange.transform(getOutputDevice().GetInverseViewTransformation());
+                    }
 				}
 
                 OverlayManager* pThis = const_cast< OverlayManager* >(this);

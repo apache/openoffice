@@ -51,13 +51,13 @@ SLOFILES =      							\
 	$(SLO)$/MasterPageDescriptor.obj		\
 	$(SLO)$/MasterPageObserver.obj			\
 	$(SLO)$/MasterPagesSelector.obj			\
+	$(SLO)$/NavigatorWrapper.obj			\
 	$(SLO)$/PanelBase.obj					\
+	$(SLO)$/PanelFactory.obj				\
 	$(SLO)$/PreviewValueSet.obj				\
 	$(SLO)$/RecentlyUsedMasterPages.obj		\
 	$(SLO)$/RecentMasterPagesSelector.obj	\
-	$(SLO)$/SidebarFactory.obj				\
-	$(SLO)$/SlideTransitionPanel.obj		\
-	$(SLO)$/TableDesignPanel.obj
+	$(SLO)$/SlideTransitionPanel.obj
 
 # --- Tagets -------------------------------------------------------
 

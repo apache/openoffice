@@ -192,3 +192,5 @@ void  LineWidthValueSet::UserDraw( const UserDrawEvent& rUDEvt )
 
 
 } } // end of namespace svx::sidebar
+
+// eof

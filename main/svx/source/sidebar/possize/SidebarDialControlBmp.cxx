@@ -28,7 +28,7 @@
 #include "PosSizePropertyPanel.hrc"
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
-
+#include <svx/svdstr.hrc>
 
 namespace svx { namespace sidebar {
 
@@ -48,7 +48,7 @@ SidebarDialControlBmp::~SidebarDialControlBmp (void)
 
 
 void SidebarDialControlBmp::DrawElements (
-    const String& rText,
+    const String& /*rText*/,
     sal_Int32 nAngle)
 {
     if (Application::GetSettings().GetLayoutRTL())		
@@ -77,16 +77,18 @@ void SidebarDialControlBmp::DrawBackground()
     SetFillColor(sfx2::sidebar::Theme::GetColor(sfx2::sidebar::Theme::Paint_PanelBackground));
     DrawRect(maRect);
 
-    const Image aImage (
+    const BitmapEx aBitmapEx(
         sfx2::sidebar::Theme::IsHighContrastMode()
             ? SVX_RES(IMG_DIACONTROL_H)
             : SVX_RES(IMG_DIACONTROL_NORMAL));
-    Size aImageSize (aImage.GetSizePixel());
+    // Size aImageSize(aBitmapEx.GetSizePixel());
     //    aImageSize.Width() -= 1;
     //    aImageSize.Height() -= 1;
     SetAntialiasing(ANTIALIASING_ENABLE_B2DDRAW |  ANTIALIASING_PIXELSNAPHAIRLINE);
-    DrawImage(maRect.TopLeft(), aImageSize, aImage);
+    DrawBitmapEx(maRect.TopLeft(), /*aImageSize,*/ aBitmapEx);
 }
 
 
 } } // end of namespace svx::sidebar
+
+// eof

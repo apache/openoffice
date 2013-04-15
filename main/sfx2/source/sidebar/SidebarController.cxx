@@ -31,6 +31,7 @@
 #include "sfx2/sidebar/Theme.hxx"
 #include "SidebarDockingWindow.hxx"
 #include "Context.hxx"
+#include "Tools.hxx"
 
 #include "sfxresid.hxx"
 #include "sfx2/sfxsids.hrc"
@@ -40,6 +41,8 @@
 #include "splitwin.hxx"
 #include <svl/smplhint.hxx>
 #include <tools/link.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
+
 #include <comphelper/componentfactory.hxx>
 #include <comphelper/processfactory.hxx>
 #include <comphelper/componentcontext.hxx>
@@ -52,6 +55,7 @@
 #include <com/sun/star/ui/XUIElementFactory.hpp>
 #include <com/sun/star/util/XURLTransformer.hpp>
 #include <com/sun/star/util/URL.hpp>
+#include <com/sun/star/rendering/XSpriteCanvas.hpp>
 
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
@@ -62,8 +66,6 @@ using namespace css;
 using namespace cssu;
 using ::rtl::OUString;
 
-#define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
-#define S2A(s) OUStringToOString(s, RTL_TEXTENCODING_ASCII_US).getStr()
 
 
 namespace sfx2 { namespace sidebar {
@@ -137,6 +139,8 @@ SidebarController::~SidebarController (void)
 
 void SAL_CALL SidebarController::disposing (void)
 {
+    maFocusManager.Clear();
+
     cssu::Reference<css::ui::XContextChangeEventMultiplexer> xMultiplexer (
         css::ui::ContextChangeEventMultiplexer::get(
             ::comphelper::getProcessComponentContext()));
@@ -237,10 +241,6 @@ void SidebarController::NotifyResize (void)
     const sal_Int32 nHeight (pParentWindow->GetSizePixel().Height());
 
     // Place the deck.
-    if ( ! mbIsDeckClosed)
-    {
-        OSL_ASSERT(mpCurrentDeck!=NULL);
-    }
     if (mpCurrentDeck)
     {
         mpCurrentDeck->SetPosSizePixel(0,0, nWidth-TabBar::GetDefaultWidth(), nHeight);
@@ -324,6 +324,16 @@ void SidebarController::UpdateConfigurations (const Context& rContext)
             msCurrentDeckId = pDeckDescriptor->msId;
             SwitchToDeck(*pDeckDescriptor, rContext);
         }
+        
+#ifdef DEBUG
+        // Show the context name in the deck title bar.
+        if (mpCurrentDeck)
+        {
+            DeckTitleBar* pTitleBar = mpCurrentDeck->GetTitleBar();
+            if (pTitleBar != NULL)
+                pTitleBar->SetTitle(msCurrentDeckTitle+A2S(" (")+rContext.msContext+A2S(")"));
+        }
+#endif
     }
 }
 
@@ -348,6 +358,8 @@ void SidebarController::SwitchToDeck (
     const DeckDescriptor& rDeckDescriptor,
     const Context& rContext)
 {
+    maFocusManager.Clear();
+
     if ( ! msCurrentDeckId.equals(rDeckDescriptor.msId))
     {
         // When the deck changes then destroy the deck and all panels
@@ -372,6 +384,26 @@ void SidebarController::SwitchToDeck (
         rDeckDescriptor.msId,
         mxFrame);
 
+    if (aPanelContextDescriptors.empty())
+    {
+        // There are no panels to be displayed in the current context.
+        if (EnumContext::GetContextEnum(rContext.msContext) != EnumContext::Context_Empty)
+        {
+            // Switch to the "empty" context and try again.
+            SwitchToDeck(
+                rDeckDescriptor,
+                Context(
+                    rContext.msApplication,
+                    EnumContext::GetContextName(EnumContext::Context_Empty)));
+            return;
+        }
+        else
+        {
+            // This is already the "empty" context. Looks like we have
+            // to live with an empty deck.
+        }
+    }
+
     if (mpCurrentDeck
         && ArePanelSetsEqual(mpCurrentDeck->GetPanels(), aPanelContextDescriptors))
     {
@@ -388,6 +420,7 @@ void SidebarController::SwitchToDeck (
                 rDeckDescriptor,
                 mpParentWindow,
                 ::boost::bind(&SidebarController::CloseDeck, this)));
+        msCurrentDeckTitle = rDeckDescriptor.msTitle;
     }
     if ( ! mpCurrentDeck)
         return;
@@ -454,6 +487,11 @@ void SidebarController::SwitchToDeck (
 
     if (bHasPanelSetChanged)
         NotifyResize();
+
+    // Tell the focus manager about the new panels and tab bar
+    // buttons.
+    maFocusManager.SetPanels(aNewPanels);
+    mpTabBar->UpdateFocusManager(maFocusManager);
 }
 
 
@@ -463,6 +501,7 @@ bool SidebarController::ArePanelSetsEqual (
     const SharedPanelContainer& rCurrentPanels,
     const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels)
 {
+#ifdef DEBUG
     OSL_TRACE("current panel list:");
     for (SharedPanelContainer::const_iterator
              iPanel(rCurrentPanels.begin()),
@@ -482,6 +521,7 @@ bool SidebarController::ArePanelSetsEqual (
     {
         OSL_TRACE("    panel %s", S2A(iId->msId));
     }
+#endif
 
     if (rCurrentPanels.size() != rRequestedPanels.size())
         return false;
@@ -525,7 +565,8 @@ SharedPanel SidebarController::CreatePanel (
     // Create the XUIElement.
     Reference<ui::XUIElement> xUIElement (CreateUIElement(
             pPanel->GetComponentInterface(),
-            pPanelDescriptor->msImplementationURL));
+            pPanelDescriptor->msImplementationURL,
+            pPanelDescriptor->mbWantsCanvas));
     if (xUIElement.is())
     {
         // Initialize the panel and add it to the active deck.
@@ -544,7 +585,8 @@ SharedPanel SidebarController::CreatePanel (
 
 Reference<ui::XUIElement> SidebarController::CreateUIElement (
     const Reference<awt::XWindowPeer>& rxWindow,
-    const ::rtl::OUString& rsImplementationURL)
+    const ::rtl::OUString& rsImplementationURL,
+    const bool bWantsCanvas)
 {
     try
     {
@@ -562,6 +604,11 @@ Reference<ui::XUIElement> SidebarController::CreateUIElement (
             aCreationArguments.put("SfxBindings", makeAny(sal_uInt64(&pSfxDockingWindow->GetBindings())));
         aCreationArguments.put("Theme", Theme::GetPropertySet());
         aCreationArguments.put("Sidebar", makeAny(Reference<ui::XSidebar>(static_cast<ui::XSidebar*>(this))));
+        if (bWantsCanvas)
+        {
+            Reference<rendering::XSpriteCanvas> xCanvas (VCLUnoHelper::GetWindow(rxWindow)->GetSpriteCanvas());
+            aCreationArguments.put("Canvas", makeAny(xCanvas));
+        }   
         
         Reference<ui::XUIElement> xUIElement(
             xUIElementFactory->createUIElement(
@@ -812,6 +859,14 @@ void SidebarController::OpenDeck (void)
 
         NotifyResize();
     }
+}
+
+
+
+
+FocusManager& SidebarController::GetFocusManager (void)
+{
+    return maFocusManager;
 }
 
 

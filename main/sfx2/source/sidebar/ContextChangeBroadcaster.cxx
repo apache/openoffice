@@ -93,9 +93,10 @@ void ContextChangeBroadcaster::BroadcastContextChange (
     if (rsContextName.getLength() == 0)
         return;
     
-    if ( ! rxFrame.is())
+    if ( ! rxFrame.is() || ! rxFrame->getController().is())
     {
-        OSL_ENSURE(false, "Activate called with invalid frame");
+        // Frame is (probably) being deleted.  Broadcasting context
+        // changes is not necessary anymore.
         return;
     }
     
@@ -116,6 +117,8 @@ void ContextChangeBroadcaster::BroadcastContextChange (
 
 OUString ContextChangeBroadcaster::GetModuleName (const cssu::Reference<css::frame::XFrame>& rxFrame)
 {
+    if ( ! rxFrame.is() || ! rxFrame->getController().is())
+        return OUString();
     OUString sModuleName;
     try
     {

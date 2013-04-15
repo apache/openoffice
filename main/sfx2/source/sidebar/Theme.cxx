@@ -198,7 +198,7 @@ void Theme::InitializeTheme (void)
 {
     setPropertyValue(
         maPropertyIdToNameMap[Bool_UseSymphonyIcons],
-        Any(true));
+        Any(false));
     setPropertyValue(
         maPropertyIdToNameMap[Bool_UseSystemColors],
         Any(false));
@@ -249,6 +249,9 @@ void Theme::UpdateTheme (void)
         setPropertyValue(
             maPropertyIdToNameMap[Int_DeckSeparatorHeight],
             Any(sal_Int32(1)));
+        setPropertyValue(
+            maPropertyIdToNameMap[Int_ButtonCornerRadius],
+            Any(sal_Int32(3)));
         setPropertyValue(
             maPropertyIdToNameMap[Color_DeckTitleFont],
             Any(sal_Int32(rStyle.GetFontColor().GetRGBColor())));
@@ -358,30 +361,26 @@ void Theme::UpdateTheme (void)
             maPropertyIdToNameMap[Image_Expand],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/svtools/res/triangle_right_hc.png")
-                    : A2S("private:graphicrepository/svtools/res/triangle_right.png")));
-        //                    ? A2S("private:graphicrepository/res/plus_sch.png")
-        //                    : A2S("private:graphicrepository/res/plus.png")));
+                    ? A2S("private:graphicrepository/res/plus_sch.png")
+                    : A2S("private:graphicrepository/res/plus.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_Collapse],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/svtools/res/triangle_down_hc.png")
-                    : A2S("private:graphicrepository/svtools/res/triangle_down.png")));
-        //                    ? A2S("private:graphicrepository/res/minus_sch.png")
-        //                    : A2S("private:graphicrepository/res/minus.png")));
+                    ? A2S("private:graphicrepository/res/minus_sch.png")
+                    : A2S("private:graphicrepository/res/minus.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_TabBarMenu],
             Any(
                 mbIsHighContrastMode
                     ? A2S("private:graphicrepository/sfx2/res/menu_hc.png")
-                    : A2S("private:graphicrepository/sfx2/res/menu.png")));
+                    : A2S("private:graphicrepository/sfx2/res/symphony/open_more.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_PanelMenu],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/res/imh30823.png")
-                    : A2S("private:graphicrepository/res/im30823.png")));
+                    ? A2S("private:graphicrepository/sfx2/res/symphony/morebutton.png")
+                    : A2S("private:graphicrepository/sfx2/res/symphony/morebutton_h.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_Closer],
             Any(A2S("private:graphicrepository/sfx2/res/closedoc.png")));
@@ -842,6 +841,7 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Int_TabBarTopPadding);
     AddEntry(Int_TabBarRightPadding);
     AddEntry(Int_TabBarBottomPadding);
+    AddEntry(Int_ButtonCornerRadius);
 
     AddEntry(Bool_UseSymphonyIcons);
     AddEntry(Bool_UseSystemColors);
@@ -913,6 +913,7 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Int_TabBarTopPadding:
         case Int_TabBarRightPadding:
         case Int_TabBarBottomPadding:
+        case Int_ButtonCornerRadius:
             return PT_Integer;
 
         case Bool_UseSymphonyIcons:

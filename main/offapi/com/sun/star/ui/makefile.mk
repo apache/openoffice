@@ -77,6 +77,7 @@ IDLFILES=\
     XModuleUIConfigurationManagerSupplier.idl   \
 	XSidebar.idl								\
 	XSidebarPanel.idl							\
+    XStatusbarItem.idl                          \
     XUIConfiguration.idl                        \
     XUIConfigurationListener.idl                \
     XUIConfigurationManager.idl                 \

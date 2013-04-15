@@ -24,6 +24,7 @@
 #include "PreviewValueSet.hxx"
 #include <vcl/image.hxx>
 
+
 namespace sd { namespace sidebar {
 
 
@@ -39,9 +40,7 @@ PreviewValueSet::PreviewValueSet (::Window* pParent)
         & ~(WB_ITEMBORDER)// | WB_MENUSTYLEVALUESET)
         //        | WB_FLATVALUESET);
         );
-
 	SetColCount(2);
-    //	SetLineCount(1);
 	SetExtraSpacing (2);
 }
 
@@ -84,18 +83,6 @@ void PreviewValueSet::MouseButtonDown (const MouseEvent& rEvent)
 
 
 
-void PreviewValueSet::Paint (const Rectangle& rRect)
-{
-    SetBackground (GetSettings().GetStyleSettings().GetWindowColor());
-
-    ValueSet::Paint (rRect);
-
-    SetBackground (Wallpaper());
-}
-
-
-
-
 void PreviewValueSet::Resize (void)
 {
     ValueSet::Resize ();
@@ -112,22 +99,12 @@ void PreviewValueSet::Resize (void)
 
 void PreviewValueSet::Rearrange (bool bForceRequestResize)
 {
-    sal_uInt16 nOldColumnCount (GetColCount());
-    sal_uInt16 nOldRowCount (GetLineCount());
-
     sal_uInt16 nNewColumnCount (CalculateColumnCount (
         GetOutputSizePixel().Width()));
     sal_uInt16 nNewRowCount (CalculateRowCount (nNewColumnCount));
 
     SetColCount(nNewColumnCount);
     SetLineCount(nNewRowCount);
-
-    if (bForceRequestResize
-        || nOldColumnCount != nNewColumnCount
-        || nOldRowCount != nNewRowCount)
-    {
-        //SIDEBAR:TODO:   mpParent->RequestResize();
-    }
 }
 
 

@@ -21,7 +21,7 @@
 
 #include "precompiled_svx.hxx"
 
-#include "sidebar/ColorControl.hxx"
+#include <svx/sidebar/ColorControl.hxx>
 #include "svx/svxids.hrc"
 #include "svx/drawitem.hxx"
 #include "svx/xtable.hxx"
@@ -64,9 +64,9 @@ namespace {
         return bFound ? n : -1;
     }
     class JustReleaseDeleter {public:
-            void operator() (XColorTable*) const {/* release but don't delete pointer */}
+            void operator() (XColorList*) const {/* release but don't delete pointer */}
     };
-    ::boost::shared_ptr<XColorTable> GetColorTable (void)
+    ::boost::shared_ptr<XColorList> GetColorTable (void)
     {
         SfxObjectShell* pDocSh = SfxObjectShell::Current();
         DBG_ASSERT(pDocSh!=NULL, "DocShell not found!");
@@ -75,13 +75,13 @@ namespace {
             const SfxPoolItem* pItem = pDocSh->GetItem(SID_COLOR_TABLE);
             if (pItem != NULL)
             {
-                XColorTable* pTable = ((SvxColorTableItem*)pItem)->GetColorTable();
+                XColorList* pTable = ((SvxColorTableItem*)pItem)->GetColorTable();
                 if (pTable != NULL)
-                    return ::boost::shared_ptr<XColorTable>(pTable, JustReleaseDeleter());
+                    return ::boost::shared_ptr<XColorList>(pTable, JustReleaseDeleter());
             }
         }
 
-        return ::boost::shared_ptr<XColorTable>(new XColorTable(SvtPathOptions().GetPalettePath()));
+        return ::boost::shared_ptr<XColorList>(new XColorList(SvtPathOptions().GetPalettePath()));
     }
 } // end of anonymous namespace
 
@@ -93,19 +93,19 @@ ColorControl::ColorControl (
     SfxBindings* pBindings,
     const ResId& rControlResId,
     const ResId& rValueSetResId,
-    const ::boost::function<Color(void)>& rColorGetter,
+    const ::boost::function<Color(void)>& rNoColorGetter,
     const ::boost::function<void(String&,Color)>& rColorSetter,
     FloatingWindow* pFloatingWindow,
-    const sal_uInt32 nNoColorStringResId)
+    const ResId* pNoColorStringResId) // const sal_uInt32 nNoColorStringResId)
     : PopupControl(pParent, rControlResId),
       mpBindings(pBindings),
       maVSColor(this, rValueSetResId),
       mpFloatingWindow(pFloatingWindow),
       msNoColorString(
-          nNoColorStringResId>0
-              ? String(SVX_RES(nNoColorStringResId))
+          pNoColorStringResId
+              ? String(*pNoColorStringResId)
               : String()),
-      maColorGetter(rColorGetter),
+      maNoColorGetter(rNoColorGetter),
       maColorSetter(rColorSetter)
 {
 	FreeResource();
@@ -122,7 +122,7 @@ ColorControl::~ColorControl (void)
 
 void ColorControl::FillColors (void)
 {
-	::boost::shared_ptr<XColorTable> pColorTable (GetColorTable());
+	::boost::shared_ptr<XColorList> pColorTable (GetColorTable());
 
 	if (pColorTable)
 	{
@@ -206,13 +206,13 @@ IMPL_LINK(ColorControl, VSSelectHdl, void *, pControl)
     {
         sal_uInt16 iPos = maVSColor.GetSelectItemId();
         Color aColor = maVSColor.GetItemColor( iPos );
-        
         String aTmpStr = maVSColor.GetItemText( iPos );
-        if (aColor.GetColor() == 0
-            && aTmpStr.Equals(String::CreateFromAscii("")))
+
+        // react when the WB_NONEFIELD created entry is selected
+        if (aColor.GetColor() == 0 && aTmpStr.Equals(String::CreateFromAscii("")))
         {
-            if (maColorGetter)
-                aColor = maColorGetter();
+            if (maNoColorGetter)
+                aColor = maNoColorGetter();
         }
         if (maColorSetter)
             maColorSetter(aTmpStr, aColor);

@@ -41,7 +41,7 @@
 #include <svx/svxitems.hrc>
 #include <vcl/toolbox.hxx>
 #include <svtools/toolbarmenu.hxx>
-#include "sidebar/ColorControl.hxx"
+#include <svx/sidebar/ColorControl.hxx>
 
 #include <boost/bind.hpp>
 
@@ -133,7 +133,6 @@ AreaPropertyPanel::AreaPropertyPanel(
       mpFloatTransparenceItem(),
       mpTransparanceItem(),
       mxFrame(rxFrame),
-      maContext(),
       mpBindings(pBindings),
       mbTBShow(true),
       mbColorAvail(true)
@@ -155,20 +154,11 @@ AreaPropertyPanel::~AreaPropertyPanel()
 
 
 
-void AreaPropertyPanel::ShowMenu (void)
-{
-    if (mpBindings != NULL)
-    {
-        SfxDispatcher* pDispatcher = mpBindings->GetDispatcher();
-        if (pDispatcher != NULL)
-            pDispatcher->Execute(SID_ATTRIBUTES_AREA, SFX_CALLMODE_ASYNCHRON);
-    }
-}
-
-
-
 void AreaPropertyPanel::Initialize()
 {
+    mpColorTextFT->SetBackground(Wallpaper());
+    mpTrspTextFT->SetBackground(Wallpaper());
+
     maGradientLinear.SetXOffset(DEFAULT_CENTERX);
     maGradientLinear.SetYOffset(DEFAULT_CENTERY);
     maGradientLinear.SetAngle(DEFAULT_ANGLE);
@@ -330,7 +320,6 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 					mbTBShow = false;
 					if ( pSh && pSh->GetItem( SID_GRADIENT_LIST ) )
 					{
-						// 
 						if(mpLbFillAttr->GetEntryCount() == 0)
 						{
 							SvxGradientListItem aItem( *(const SvxGradientListItem*)(
@@ -339,6 +328,8 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 							mpLbFillAttr->Clear();
 							mpLbFillAttr->Fill( aItem.GetGradientList() );	
 						}
+
+                        mpLbFillAttr->SetDropDownLineCount(std::min(sal_uInt16(20), mpLbFillAttr->GetEntryCount()));
 
 						if ( mnLastPosGradient != LISTBOX_ENTRY_NOTFOUND)
 						{
@@ -364,7 +355,6 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 					mbTBShow = false;
 					if ( pSh && pSh->GetItem( SID_HATCH_LIST ) )
 					{
-						// 
 						if(mpLbFillAttr->GetEntryCount() == 0)
 						{
 							SvxHatchListItem aItem( *(const SvxHatchListItem*)(
@@ -373,6 +363,8 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 							mpLbFillAttr->Clear();
 							mpLbFillAttr->Fill( aItem.GetHatchList() );
 						}
+
+                        mpLbFillAttr->SetDropDownLineCount(std::min(sal_uInt16(20), mpLbFillAttr->GetEntryCount()));
 
 						if ( mnLastPosHatch != LISTBOX_ENTRY_NOTFOUND )
 						{
@@ -398,7 +390,6 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 					mbTBShow = false;
 					if ( pSh && pSh->GetItem( SID_BITMAP_LIST ) )
 					{
-						// 
 						if(mpLbFillAttr->GetEntryCount() == 0)
 						{
 							SvxBitmapListItem aItem( *(const SvxBitmapListItem*)(
@@ -407,6 +398,8 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
 							mpLbFillAttr->Clear();
 							mpLbFillAttr->Fill( aItem.GetBitmapList() );
 						}
+
+                        mpLbFillAttr->SetDropDownLineCount(std::min(sal_uInt16(20), mpLbFillAttr->GetEntryCount()));
 
 						if ( mnLastPosBitmap != LISTBOX_ENTRY_NOTFOUND )
 						{
@@ -630,24 +623,6 @@ void AreaPropertyPanel::DataChanged(
     (void)rEvent;
     
     SetupIcons();
-}
-
-
-
-void AreaPropertyPanel::HandleContextChange(
-    const ::sfx2::sidebar::EnumContext aContext)
-{
-    if(maContext == aContext)
-    {
-        // Nothing to do.
-        return;
-    }
-
-    maContext = aContext;
-
-
-
-    // todo
 }
 
 
@@ -1394,3 +1369,5 @@ sal_Int32 AreaPropertyPanel::GetSelectedTransparencyTypeIndex (void) const
 }
 
 } } // end of namespace svx::sidebar
+
+// eof

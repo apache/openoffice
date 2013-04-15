@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 #
@@ -75,6 +75,16 @@ $main::correctVersion = 0;
 $main::OO_SDK_ZIP_HOME = "";
 $main::OO_SDK_ZIP_HOME_SUGGESTION = searchprog("zip");
 $main::zipVersion = "2.3";
+
+$main::OO_SDK_CAT_HOME = "";
+$main::OO_SDK_CAT_HOME_SUGGESTION = searchprog("cat");
+# TODO cat version
+# $main::catVersion = "";
+
+$main::OO_SDK_SED_HOME = "";
+$main::OO_SDK_SED_HOME_SUGGESTION = searchprog("sed");
+# TODO sed version
+# $main::sedVersion = "";
 
 $main::OO_SDK_CPP_HOME = "";
 $main::cppName = "gcc";
@@ -225,7 +235,7 @@ if ( $main::OFFICE_OR_URE eq "Office" )
 else
 {
     # prepare URE path
-    $main::OO_SDK_URE_HOME_SUGGESTION = "/opt/openoffice.org/ure";
+    $main::OO_SDK_URE_HOME_SUGGESTION = "/opt/openoffice/ure";
     $main::OO_SDK_URE_HOME_SUGGESTION = "" unless
         -e "$main::OO_SDK_URE_HOME_SUGGESTION/bin/uno";
     for (;;)
@@ -324,6 +334,54 @@ while ( (!$main::correctVersion) &&
 			}
 		}
 	}
+}
+
+# prepare cat path
+$main::correctVersion = 0;
+while ( (!$main::correctVersion) &&
+        ((! -d "$main::OO_SDK_CAT_HOME" ) ||
+         ((-d "$main::OO_SDK_CAT_HOME") && (! -e "$main::OO_SDK_CAT_HOME/cat"))) )
+{
+    print " Enter cat tool directory [$main::OO_SDK_CAT_HOME_SUGGESTION]: ";
+    $main::OO_SDK_CAT_HOME = readStdIn();
+    chop($main::OO_SDK_CAT_HOME);
+    if ( $main::OO_SDK_CAT_HOME eq "" )
+    {
+        $main::OO_SDK_CAT_HOME = $main::OO_SDK_CAT_HOME_SUGGESTION;
+    }
+    if ( (! -d "$main::OO_SDK_CAT_HOME") ||
+         ((-d "$main::OO_SDK_CAT_HOME") && (! -e "$main::OO_SDK_CAT_HOME/cat")) )
+    {
+        $main::OO_SDK_CAT_HOME = "";
+        print " Error: cat tool is required, please specify a cat tool directory.\n";
+    }
+    # else ...
+    # TODO check version
+    # NOTE: only Linux cat understands --version
+}
+
+# prepare sed path
+$main::correctVersion = 0;
+while ( (!$main::correctVersion) &&
+        ((! -d "$main::OO_SDK_SED_HOME" ) ||
+         ((-d "$main::OO_SDK_SED_HOME") && (! -e "$main::OO_SDK_SED_HOME/sed"))) )
+{
+    print " Enter sed tool directory [$main::OO_SDK_SED_HOME_SUGGESTION]: ";
+    $main::OO_SDK_SED_HOME = readStdIn();
+    chop($main::OO_SDK_SED_HOME);
+    if ( $main::OO_SDK_SED_HOME eq "" )
+    {
+        $main::OO_SDK_SED_HOME = $main::OO_SDK_SED_HOME_SUGGESTION;
+    }
+    if ( (! -d "$main::OO_SDK_SED_HOME") ||
+         ((-d "$main::OO_SDK_SED_HOME") && (! -e "$main::OO_SDK_SED_HOME/sed")) )
+    {
+        $main::OO_SDK_SED_HOME = "";
+        print " Error: sed tool is required, please specify a sed tool directory.\n";
+    }
+    # else ...
+    # TODO check version
+    # NOTE: only Linux sed understands --version
 }
 
 # prepare C++ compiler path
@@ -535,11 +593,8 @@ else
     $main::SDK_AUTO_DEPLOYMENT = "NO";
 }
 
-prepareScriptFile("setsdkenv_unix.sh.in", "setsdkenv_unix.sh", 1);
+prepareScriptFile("setsdkenv_unix.sh.in", "setsdkenv_unix.sh");
 chmod 0644, "$main::OO_SDK_CONFIG_HOME/$main::hostname/setsdkenv_unix.sh";
-
-prepareScriptFile("setsdkenv_unix.csh.in", "setsdkenv_unix.csh", 2);
-chmod 0644, "$main::OO_SDK_CONFIG_HOME/$main::hostname/setsdkenv_unix.csh";
 
 print "\n";
 print " ************************************************************************\n";
@@ -548,7 +603,6 @@ print " * For each time you want to use this configured SDK environment, you\n";
 print " * have to run the \"setsdkenv_unix\" script file!\n";
 print " * Alternatively can you source one of the scripts\n";
 print " *   \"$main::OO_SDK_CONFIG_HOME/$main::hostname/setsdkenv_unix.sh\"\n";
-print " *   \"$main::OO_SDK_CONFIG_HOME/$main::hostname/setsdkenv_unix.csh\"\n";
 print " * to get an environment without starting a new shell.\n";
 print " ************************************************************************\n\n";
 
@@ -657,6 +711,9 @@ sub searchprog
 
 sub searchMacOffice
 {
+	if (-d "/Applications/OpenOffice.app" ) {
+		return "/Applications/OpenOffice.app"
+	}
 	if (-d "/Applications/OpenOffice.org.app" ) {
 		return "/Applications/OpenOffice.org.app"
 	}
@@ -675,9 +732,9 @@ sub searchMacOffice
 
 sub searchoffice
 {
-	my $offset = rindex($main::sdkpath, "/openoffice.org");
+	my $offset = rindex($main::sdkpath, "/openoffice");
 	my $tmpOffice = substr($main::sdkpath, 0, $offset);
-	my $officepath = "$tmpOffice/openoffice.org$main::OO_MAJORVERSION";
+	my $officepath = "$tmpOffice/openoffice$main::OO_MAJORVERSION";
 
 #	if ( $main::OO_MINORVERSION > 0) {
 #		$officepath = "$officepath$main::OO_MINORVERSION";
@@ -761,12 +818,12 @@ sub testVersion
 
 	for ($i=0; $i <= $length; $i++ )
 	{
-		if ( @testVersion->[$i] > @mustBeVersion->[$i] )
+		if ( @testVersion[$i] > @mustBeVersion[$i] )
 		{
 			return 1; # 1 indicates a correct version
 		}
 
-		if ( @testVersion->[$i] < @mustBeVersion->[$i] )
+		if ( @testVersion[$i] < @mustBeVersion[$i] )
 		{
 			if ( $#checkOnly == 1 ) {
 				print " The command '$toolName' has the version $tmpTestVersion.\n";
@@ -794,9 +851,6 @@ sub prepareScriptFile()
 {
 	my $inputFile = shift;
 	my $outputFile = shift;
-	# shell mode 1 = sh
-	#            2 = csh
-	my $shellMode = shift;
 
 	if ( ! -d "$main::OO_SDK_CONFIG_HOME/$main::hostname" )
 	{
@@ -815,6 +869,8 @@ sub prepareScriptFile()
 		$_ =~ s#\@OO_SDK_URE_HOME\@#$main::OO_SDK_URE_HOME#go;
 		$_ =~ s#\@OO_SDK_MAKE_HOME\@#$main::OO_SDK_MAKE_HOME#go;
 		$_ =~ s#\@OO_SDK_ZIP_HOME\@#$main::OO_SDK_ZIP_HOME#go;
+        $_ =~ s#\@OO_SDK_CAT_HOME\@#$main::OO_SDK_CAT_HOME#go;
+        $_ =~ s#\@OO_SDK_SED_HOME\@#$main::OO_SDK_SED_HOME#go;
 		$_ =~ s#\@OO_SDK_CPP_HOME\@#$main::OO_SDK_CPP_HOME#go;
 		$_ =~ s#\@OO_SDK_CC_55_OR_HIGHER\@#$main::OO_SDK_CC_55_OR_HIGHER#go;
 		$_ =~ s#\@OO_SDK_JAVA_HOME\@#$main::OO_SDK_JAVA_HOME#go;

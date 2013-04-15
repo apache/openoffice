@@ -333,6 +333,17 @@ void ScEditShell::Execute( SfxRequest& rReq )
 					pTableView->SetSelection(ESelection(0,0,nPar-1,nLen));
 					if (pTopView)
 						pTopView->SetSelection(ESelection(0,0,nPar-1,nLen));
+					rBindings.Invalidate( SID_ATTR_CHAR_FONT );
+					rBindings.Invalidate( SID_ATTR_CHAR_FONTHEIGHT );
+					rBindings.Invalidate( SID_ATTR_CHAR_WEIGHT );
+					rBindings.Invalidate( SID_ATTR_CHAR_POSTURE );
+					rBindings.Invalidate( SID_ATTR_CHAR_UNDERLINE );
+					rBindings.Invalidate( SID_ATTR_CHAR_STRIKEOUT );
+					rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED ); 
+					rBindings.Invalidate( SID_ATTR_CHAR_KERNING ); 
+					rBindings.Invalidate( SID_ATTR_CHAR_COLOR );
+					rBindings.Invalidate( SID_SET_SUPER_SCRIPT );
+					rBindings.Invalidate( SID_SET_SUB_SCRIPT );
 				}
                 bSetModified = sal_False;
 			}
@@ -455,6 +466,7 @@ void ScEditShell::Execute( SfxRequest& rReq )
 			}
 			break;
 
+		case SID_CHAR_DLG_EFFECT:
 		case SID_CHAR_DLG:
 			{
 				SfxItemSet aAttrs( pTableView->GetAttribs() );
@@ -468,6 +480,10 @@ void ScEditShell::Execute( SfxRequest& rReq )
 				SfxAbstractTabDialog* pDlg = pFact->CreateScCharDlg( pViewData->GetDialogParent(), &aAttrs,
 																	 pObjSh, RID_SCDLG_CHAR );
 				DBG_ASSERT(pDlg, "Dialog create fail!");//CHINA001
+				if (nSlot == SID_CHAR_DLG_EFFECT)
+				{
+					pDlg->SetCurPageId(RID_SVXPAGE_CHAR_EFFECTS);
+				}
 				short nRet = pDlg->Execute();
 				// pDlg is needed below
 
@@ -990,6 +1006,15 @@ void ScEditShell::ExecuteAttr(SfxRequest& rReq)
 				rBindings.Invalidate( nSlot );
 			}
 			break;
+		case SID_ATTR_CHAR_KERNING:
+			{
+				if(pArgs)
+				{
+					aSet.Put ( pArgs->Get(pArgs->GetPool()->GetWhich(nSlot)));
+					rBindings.Invalidate( nSlot );  
+				}
+			}
+			break;
 	}
 
 	//
@@ -1076,6 +1101,27 @@ void ScEditShell::GetAttrState(SfxItemSet &rSet)
 	ScInputHandler* pHdl = GetMyInputHdl();
 	if ( pHdl && pHdl->IsFormulaMode() )
 		rSet.ClearItem( EE_CHAR_WEIGHT );	// hervorgehobene Klammern hier nicht
+
+	SvxEscapement eEsc = (SvxEscapement) ( (const SvxEscapementItem&)
+					aAttribs.Get( EE_CHAR_ESCAPEMENT ) ).GetEnumValue();
+	if( eEsc == SVX_ESCAPEMENT_SUPERSCRIPT )
+	{
+		rSet.Put( SfxBoolItem( SID_SET_SUPER_SCRIPT, sal_True ) );
+	}
+	else if( eEsc == SVX_ESCAPEMENT_SUBSCRIPT )
+	{
+		rSet.Put( SfxBoolItem( SID_SET_SUB_SCRIPT, sal_True ) );
+	}
+	pViewData->GetBindings().Invalidate( SID_SET_SUPER_SCRIPT );	
+	pViewData->GetBindings().Invalidate( SID_SET_SUB_SCRIPT );
+
+	eState = aAttribs.GetItemState( EE_CHAR_KERNING, sal_True );
+	pViewData->GetBindings().Invalidate( SID_ATTR_CHAR_KERNING );
+	if ( eState == SFX_ITEM_DONTCARE )
+	{
+	//	rSet.InvalidateItem( SID_ATTR_CHAR_KERNING );
+		rSet.InvalidateItem(EE_CHAR_KERNING);
+	}
 }
 
 String ScEditShell::GetSelectionText( sal_Bool bWholeWord )

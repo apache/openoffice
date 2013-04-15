@@ -85,11 +85,6 @@
             </node>
             <node oor:name="R6" oor:op="replace">
               <prop oor:name="URL">
-                <value>private:resource/view/SidebarView</value>
-              </prop>
-            </node>
-            <node oor:name="R7" oor:op="replace">
-              <prop oor:name="URL">
                 <value>private:resource/view/PresentationView</value>
               </prop>
             </node>
@@ -145,18 +140,6 @@
             <node oor:name="R4" oor:op="replace">
               <prop oor:name="URL">
                 <value>private:resource/toolpanel/SlideTransitions</value>
-              </prop>
-            </node>
-          </node>
-        </node>
-        <node  oor:name="F4" oor:op="replace">
-          <prop oor:name="ServiceName">
-            <value>org.openoffice.comp.Draw.framework.SidebarFactory</value>
-          </prop>
-          <node oor:name="ResourceList">
-            <node oor:name="P0" oor:op="replace">
-              <prop oor:name="URL">
-                <value>private:resource/pane/SidebarPane</value>
               </prop>
             </node>
           </node>

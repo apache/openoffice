@@ -2030,6 +2030,23 @@ const SfxPoolItem& SdrObject::GetObjectItem(const sal_uInt16 nWhich) const
 	return GetObjectItemSet().Get(nWhich);
 }
 
+SfxMapUnit SdrObject::GetObjectMapUnit() const
+{
+    SfxMapUnit aRetval(SFX_MAPUNIT_100TH_MM);
+    SdrItemPool* pPool = GetObjectItemPool();
+
+    if(pPool)
+    {
+        aRetval = pPool->GetMetric(0);
+    }
+    else
+    {
+        OSL_ENSURE(pPool, "SdrObjects always need a pool (!)");
+    }
+
+    return aRetval;
+}
+
 const SfxPoolItem& SdrObject::GetMergedItem(const sal_uInt16 nWhich) const
 {
 	return GetMergedItemSet().Get(nWhich);
@@ -2414,6 +2431,33 @@ SdrObject* SdrObject::GetConnectedNode(FASTBOOL /*bTail1*/) const
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+void extractLineContourFromPrimitive2DSequence(
+    const drawinglayer::primitive2d::Primitive2DSequence& rxSequence,
+    basegfx::B2DPolygonVector& rExtractedHairlines,
+    basegfx::B2DPolyPolygonVector& rExtractedLineFills)
+{
+    rExtractedHairlines.clear();
+    rExtractedLineFills.clear();
+
+    if(rxSequence.hasElements())
+    {
+        // use neutral ViewInformation
+        const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
+
+        // create extractor, process and get result
+        drawinglayer::processor2d::LineGeometryExtractor2D aExtractor(aViewInformation2D);
+        aExtractor.process(rxSequence);
+
+        // copy line results
+        rExtractedHairlines = aExtractor.getExtractedHairlines();
+
+        // copy fill rsults
+        rExtractedLineFills = aExtractor.getExtractedLineFills();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 SdrObject* SdrObject::ImpConvertToContourObj(SdrObject* pRet, sal_Bool bForceLineDash) const
 {
 	bool bNoChange(true);
@@ -2426,37 +2470,28 @@ SdrObject* SdrObject::ImpConvertToContourObj(SdrObject* pRet, sal_Bool bForceLin
 
 		if(xSequence.hasElements())
 		{
-			// use neutral ViewInformation
-			const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
+            basegfx::B2DPolygonVector aExtractedHairlines;
+            basegfx::B2DPolyPolygonVector aExtractedLineFills;
 
-			// create extractor, process and get result
-			drawinglayer::processor2d::LineGeometryExtractor2D aExtractor(aViewInformation2D);
-			aExtractor.process(xSequence);
+            extractLineContourFromPrimitive2DSequence(xSequence, aExtractedHairlines, aExtractedLineFills);
 
-			// #i102241# check for line results
-			const basegfx::B2DPolygonVector& rHairlineVector = aExtractor.getExtractedHairlines();
-
-			if(!rHairlineVector.empty())
+			if(!aExtractedHairlines.empty())
 			{
 				// for SdrObject creation, just copy all to a single Hairline-PolyPolygon
-				for(sal_uInt32 a(0); a < rHairlineVector.size(); a++)
+				for(sal_uInt32 a(0); a < aExtractedHairlines.size(); a++)
 				{
-					aMergedHairlinePolyPolygon.append(rHairlineVector[a]);
+					aMergedHairlinePolyPolygon.append(aExtractedHairlines[a]);
 				}
 			}
 
-			// #i102241# check for fill rsults
-			const basegfx::B2DPolyPolygonVector& rLineFillVector(aExtractor.getExtractedLineFills());
-
-			if(!rLineFillVector.empty())
+			// check for fill rsults
+			if(!aExtractedLineFills.empty())
 			{
 				// merge to a single PolyPolygon (OR)
-				aMergedLineFillPolyPolygon = basegfx::tools::mergeToSinglePolyPolygon(rLineFillVector);
+				aMergedLineFillPolyPolygon = basegfx::tools::mergeToSinglePolyPolygon(aExtractedLineFills);
 			}
 		}
 
-		//  || aMergedHairlinePolyPolygon.Count() removed; the conversion is ONLY
-		// useful when new closed filled polygons are created
 		if(aMergedLineFillPolyPolygon.count() || (bForceLineDash && aMergedHairlinePolyPolygon.count()))
 		{
 			SfxItemSet aSet(pRet->GetMergedItemSet());
@@ -3010,7 +3045,7 @@ sal_Bool SdrObject::TRGetBaseGeometry(basegfx::B2DHomMatrix& rMatrix, basegfx::B
 	}
 
 	// force MapUnit to 100th mm
-	SfxMapUnit eMapUnit = GetObjectItemSet().GetPool()->GetMetric(0);
+	const SfxMapUnit eMapUnit(GetObjectMapUnit());
 	if(eMapUnit != SFX_MAPUNIT_100TH_MM)
 	{
 		switch(eMapUnit)
@@ -3061,7 +3096,7 @@ void SdrObject::TRSetBaseGeometry(const basegfx::B2DHomMatrix& rMatrix, const ba
 	}
 
 	// force metric to pool metric
-	SfxMapUnit eMapUnit = GetObjectItemSet().GetPool()->GetMetric(0);
+	const SfxMapUnit eMapUnit(GetObjectMapUnit());
 	if(eMapUnit != SFX_MAPUNIT_100TH_MM)
 	{
 		switch(eMapUnit)

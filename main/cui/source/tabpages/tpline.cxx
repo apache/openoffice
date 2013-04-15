@@ -301,7 +301,7 @@ void SvxLineTabPage::FillListboxes()
 {
 	// Linienstile
 	sal_uInt16 nOldSelect = aLbLineStyle.GetSelectEntryPos();
-	aLbLineStyle.FillStyles();
+	// aLbLineStyle.FillStyles();
 	aLbLineStyle.Fill( pDashList );
 	aLbLineStyle.SelectEntryPos( nOldSelect );
 

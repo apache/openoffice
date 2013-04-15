@@ -75,7 +75,7 @@ namespace sfx2 {
 class SvxSearchItem;
 class SvxShadowItem;
 class Window;
-class XColorTable;
+class XColorList;
 class List;
 
 class ScAutoFormatData;
@@ -261,7 +261,7 @@ private:
 	SfxPrinter*			pPrinter;
 	VirtualDevice*		pVirtualDevice_100th_mm;
 	ScDrawLayer*		pDrawLayer;						// SdrModel
-	XColorTable*		pColorTable;
+	XColorList*		pColorTable;
 	ScConditionalFormatList* pCondFormList;				// bedingte Formate
 	ScValidationDataList* pValidationList;				// Gueltigkeit
 	SvNumberFormatterIndexTable*	pFormatExchangeList;			// zum Umsetzen von Zahlenformaten
@@ -417,7 +417,6 @@ private:
 
 	sal_uInt8				nAsianCompression;
 	sal_uInt8				nAsianKerning;
-    sal_Bool                bSetDrawDefaults;
 
     sal_Bool                bPastingDrawFromOtherDoc;
 
@@ -461,7 +460,7 @@ public:
 	void			GetDocStat( ScDocStat& rDocStat );
 
 	SC_DLLPUBLIC void			InitDrawLayer( SfxObjectShell* pDocShell = NULL );
-	XColorTable*	GetColorTable();
+	XColorList*	GetColorTable();
 
 	SC_DLLPUBLIC sfx2::LinkManager*		GetLinkManager() const;
 
@@ -476,8 +475,6 @@ public:
 
 	void					GetLanguage( LanguageType& rLatin, LanguageType& rCjk, LanguageType& rCtl ) const;
 	void					SetLanguage( LanguageType eLatin, LanguageType eCjk, LanguageType eCtl );
-
-    void                    SetDrawDefaults();
 
 	void						SetConsolidateDlgData( const ScConsolidateParam* pData );
 	const ScConsolidateParam*	GetConsolidateDlgData() const { return pConsolidateDlgData; }
@@ -1868,7 +1865,6 @@ private: // CLOOK-Impl-Methoden
 
 	void	UpdateDrawPrinter();
 	void	UpdateDrawLanguages();
-    void    UpdateDrawDefaults();
 	SC_DLLPUBLIC void	InitClipPtrs( ScDocument* pSourceDoc );
 
 	void	LoadDdeLinks(SvStream& rStream);

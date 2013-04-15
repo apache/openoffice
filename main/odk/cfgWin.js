@@ -22,8 +22,8 @@
 // examples of the Office Development Kit. The script duplicates the template
 // script and inserts the variables into the copied script.
 // The Script was developed for the operating systems Microsoft Windows.
-var regKeyOfficeCurrentUser = "HKEY_CURRENT_USER\\Software\\OpenOffice.org\\UNO\\InstallPath\\";
-var regKeyOfficeLocaleMachine = "HKEY_LOCAL_MACHINE\\Software\\OpenOffice.org\\UNO\\InstallPath\\";
+var regKeyOfficeCurrentUser = "HKEY_CURRENT_USER\\Software\\OpenOffice\\UNO\\InstallPath\\";
+var regKeyOfficeLocaleMachine = "HKEY_LOCAL_MACHINE\\Software\\OpenOffice\\UNO\\InstallPath\\";
 var regKeyDotNetInstallRoot = "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\.NETFramework\\InstallRoot";
 var regKeyDotNet1_1 = "HKLM\\Software\\Microsoft\\.NETFramework\\policy\\v1.1\\4322";
 var sDirDotNet1_1 = "v1.1.4322";
@@ -62,6 +62,8 @@ var oo_sdk_ure_home=getUreHome();
 
 var oo_sdk_make_home=getMakeHome();
 var oo_sdk_zip_home=getZipHome();
+var oo_sdk_cat_home=getCatHome();
+var oo_sdk_sed_home=getSedHome();
 var oo_sdk_manifest_used="";
 var oo_sdk_windowssdk="";
 var oo_sdk_cpp_home=getCppHome();
@@ -391,6 +393,110 @@ function getZipHome()
         }
         return sHome;
     }   
+}
+
+function getCatHome()
+{
+    var sSuggestedHome = WshSysEnv("OO_SDK_CAT_HOME");
+
+    while(true)
+    {
+        stdout.Write("\n Enter a cat (2.0 or higher) tools directory [" +
+                     sSuggestedHome + "]:");
+        var sHome = stdin.ReadLine();
+        if (sHome.length == 0)
+        {
+            //No user input, use default.
+            if ( ! aFileSystemObject.FolderExists(sSuggestedHome))
+            {
+                stdout.WriteLine("\n Error: Could not find directory \"" +
+                                 sSuggestedHome + "\". cat is required, please " +
+                                 "specify a cat tools directory." +
+                                 "\nYou can get cat from " +
+                                 "http://sourceforge.net/projects/unxutils/files/latest/download");
+                sSuggestedHome = "";
+                continue;
+            }
+            sHome = sSuggestedHome;
+        }
+        else
+        {
+            //validate the user input
+            if ( ! aFileSystemObject.FolderExists(sHome))
+            {
+                stdout.WriteLine("\n Error: The directory \"" + sHome +
+                                 "\" does not exist. cat is required, please " +
+                                 "specify a cat tools directory." +
+                                 "\nYou can get cat from " +
+                                 "http://sourceforge.net/projects/unxutils/files/latest/download");
+                continue;
+            }
+        }
+        //Check for the make executable
+        var sCatPath = sHome + "\\cat.exe";
+        if (! aFileSystemObject.FileExists(sCatPath))
+        {
+            stdout.WriteLine("\n Error: Could not find \"" + sCatPath +
+                             "\". cat is required, please specify a cat tools " +
+                             "directory." +
+                             "\nYou can get cat from " +
+                             "http://sourceforge.net/projects/unxutils/files/latest/download");
+            continue;
+        }
+        return sHome;
+    }
+}
+
+function getSedHome()
+{
+    var sSuggestedHome = WshSysEnv("OO_SDK_SED_HOME");
+
+    while(true)
+    {
+        stdout.Write("\n Enter a sed (3.02 or higher) tools directory [" +
+                     sSuggestedHome + "]:");
+        var sHome = stdin.ReadLine();
+        if (sHome.length == 0)
+        {
+            //No user input, use default.
+            if ( ! aFileSystemObject.FolderExists(sSuggestedHome))
+            {
+                stdout.WriteLine("\n Error: Could not find directory \"" +
+                                 sSuggestedHome + "\". sed is required, please " +
+                                 "specify a sed tools directory." +
+                                 "\nYou can get sed from " +
+                                 "http://sourceforge.net/projects/unxutils/files/latest/download");
+                sSuggestedHome = "";
+                continue;
+            }
+            sHome = sSuggestedHome;
+        }
+        else
+        {
+            //validate the user input
+            if ( ! aFileSystemObject.FolderExists(sHome))
+            {
+                stdout.WriteLine("\n Error: The directory \"" + sHome +
+                                 "\" does not exist. sed is required, please " +
+                                 "specify a sed tools directory." +
+                                 "\nYou can get sed from " +
+                                 "http://sourceforge.net/projects/unxutils/files/latest/download");
+                continue;
+            }
+        }
+        //Check for the make executable
+        var sSedPath = sHome + "\\sed.exe";
+        if (! aFileSystemObject.FileExists(sSedPath))
+        {
+            stdout.WriteLine("\n Error: Could not find \"" + sSedPath +
+                             "\". sed is required, please specify a sed tools " +
+                             "directory." +
+                             "\nYou can get sed from " +
+                             "http://sourceforge.net/projects/unxutils/files/latest/download");
+            continue;
+        }
+        return sHome;
+    }
 }
 
 function getCppHome()
@@ -813,22 +919,22 @@ function writeBatFile(fdir, file)
         "REM are necessary for building the examples of the Office Development Kit.\n" +
         "REM The Script was developed for the operating systems Windows.\n" +
         "REM The SDK name\n" +
-        "REM Example: set OO_SDK_NAME=openoffice3.0_sdk\n" +
+        "REM Example: set OO_SDK_NAME=openoffice4.0_sdk\n" +
         "set OO_SDK_NAME=" + oo_sdk_name  +
         "\n\n" +
         "REM Installation directory of the Software Development Kit.\n" +
-        "REM Example: set OO_SDK_HOME=C:\\Program Files\\OpenOffice.org\\Basic 3.0\\sdk\n" +
+        "REM Example: set OO_SDK_HOME=C:\\Program Files\\OpenOffice\\Basic 4.0\\sdk\n" +
         "set OO_SDK_HOME=" + oo_sdk_home  +
         "\n\n" +
         "REM Office installation directory.\n" +
-        "REM Example: set OFFICE_HOME=C:\\Program Files\\OpenOffice.org 3\n" +
+        "REM Example: set OFFICE_HOME=C:\\Program Files\\OpenOffice 4\n" +
         "set OFFICE_HOME=" + office_home +
         "\n\n" +
-        "REM Example: set OFFICE_HOME=C:\\Program Files\\OpenOffice.org\\Basis 3.0\n" +
+        "REM Example: set OFFICE_HOME=C:\\Program Files\\OpenOffice\\Basis 4.0\n" +
         "set OFFICE_BASE_HOME=" + office_base_home +
         "\n\n" +
         "REM URE installation directory.\n" +
-        "REM Example: set OO_SDK_URE_HOME=C:\\Program Files\\OpenOffice.org\\URE\n" +
+        "REM Example: set OO_SDK_URE_HOME=C:\\Program Files\\OpenOffice\\URE\n" +
         "set OO_SDK_URE_HOME=" + oo_sdk_ure_home +
         "\n\n" +
         "REM Directory of the make command.\n" +
@@ -838,6 +944,14 @@ function writeBatFile(fdir, file)
 		"REM Directory of the zip tool.\n" +
 		"REM Example: set OO_SDK_ZIP_HOME=D:\\infozip\\bin\n" +
 		"set OO_SDK_ZIP_HOME=" + oo_sdk_zip_home + 
+        "\n\n" +
+        "REM Directory of the cat tool.\n" +
+        "REM Example: set OO_SDK_CAT_HOME=C:\\UnxUtils\\usr\\local\\wbin\n" +
+        "set OO_SDK_CAT_HOME=" + oo_sdk_cat_home +
+        "\n\n" +
+        "REM Directory of the sed tool.\n" +
+        "REM Example: set OO_SDK_SED_HOME=C:\\UnxUtils\\usr\\local\\wbin\n" +
+        "set OO_SDK_SED_HOME=" + oo_sdk_sed_home +
         "\n\n" +
         "REM Directory of the C++ compiler.\n" + 
         "REM Example:set OO_SDK_CPP_HOME=C:\\Program Files\\Microsoft Visual Studio 9.0\\VC\\bin\n" + 
@@ -893,6 +1007,18 @@ function writeBatFile(fdir, file)
         "   goto :error\n" +
         " )\n" +
         "\n" +
+        "REM Check installation path for the cat tool.\n" +
+        "if not defined OO_SDK_CAT_HOME (\n" +
+        "   echo Error: the variable OO_SDK_CAT_HOME is missing!\n" +
+        "   goto :error\n" +
+        " )\n" +
+        "\n" +
+        "REM Check installation path for the sed tool.\n" +
+        "if not defined OO_SDK_SED_HOME (\n" +
+        "   echo Error: the variable OO_SDK_SED_HOME is missing!\n" +
+        "   goto :error\n" +
+        " )\n" +
+        "\n" +
         "REM Set library path. \n" + 
         "set LIB=%OO_SDK_HOME%\\lib;%LIB%\n" +
         "if defined CPP_WINDOWS_SDK (\n" +
@@ -944,10 +1070,16 @@ function writeBatFile(fdir, file)
         "\n" +
         "REM Add directory of the command make to the path, if necessary.\n" +
         "if defined OO_SDK_MAKE_HOME set PATH=%OO_SDK_MAKE_HOME%;%PATH%\n" + 
-        "\n" + 
-	"REM Add directory of the zip tool to the path, if necessary.\n" +
-	"if defined OO_SDK_ZIP_HOME set PATH=%OO_SDK_ZIP_HOME%;%PATH%\n" +
-        "\n" + 
+        "\n" +
+        "REM Add directory of the zip tool to the path, if necessary.\n" +
+        "if defined OO_SDK_ZIP_HOME set PATH=%OO_SDK_ZIP_HOME%;%PATH%\n" +
+        "\n" +
+        "REM Add directory of the cat tool to the path, if necessary.\n" +
+        "if defined OO_SDK_CAT_HOME set PATH=%OO_SDK_CAT_HOME%;%PATH%\n" +
+        "\n" +
+        "REM Add directory of the sed tool to the path, if necessary.\n" +
+        "if defined OO_SDK_SED_HOME set PATH=%OO_SDK_SED_HOME%;%PATH%\n" +
+        "\n" +
         "REM Add directory of the C++ compiler to the path, if necessary.\n" +
         "if defined OO_SDK_CPP_HOME set PATH=%OO_SDK_CPP_HOME%;%PATH%\n" + 
         "\n" +
@@ -979,6 +1111,8 @@ function writeBatFile(fdir, file)
         "echo  * URE = %OO_SDK_URE_HOME%\n" +
         "echo  * Make = %OO_SDK_MAKE_HOME%\n" +
         "echo  * Zip = %OO_SDK_ZIP_HOME%\n" +
+        "echo  * cat = %OO_SDK_CAT_HOME%\n" +
+        "echo  * sed = %OO_SDK_SED_HOME%\n" +
         "echo  * C++ Compiler = %OO_SDK_CPP_HOME%\n" +
         "echo  * C# and VB.NET compilers = %OO_SDK_CLI_HOME%\n" +
         "echo  * Java = %OO_SDK_JAVA_HOME%\n" +
@@ -996,6 +1130,3 @@ function writeBatFile(fdir, file)
         );
         newFile.Close();        
 }
-
-
-

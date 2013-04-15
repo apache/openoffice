@@ -140,6 +140,7 @@ using namespace vos;
 #include <com/sun/star/beans/PropertyValues.hpp>
 #include <com/sun/star/drawing/ProjectionMode.hpp>
 #include "svx/EnhancedCustomShape2d.hxx"
+#include <vcl/dibtools.hxx>
 
 using namespace ::com::sun::star    ;
 using namespace ::com::sun::star::drawing;
@@ -1708,7 +1709,7 @@ void DffPropertyReader::ApplyCustomShapeGeometryAttributes( SvStream& rIn, SfxIt
 		{
 			const rtl::OUString	sDepth( RTL_CONSTASCII_USTRINGPARAM ( "Depth" ) );
 			double fBackDepth = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DExtrudeBackward, 1270 * 360 )) / 360.0;
-			double fForeDepth = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DExtrudeForward ), 0 ) / 360.0;
+			double fForeDepth = (double)((sal_Int32)GetPropertyValue( DFF_Prop_c3DExtrudeForward, 0 )) / 360.0;
 			double fDepth = fBackDepth + fForeDepth;
 			double fFraction = fDepth != 0.0 ? fForeDepth / fDepth : 0;
 			EnhancedCustomShapeParameterPair aDepthParaPair;
@@ -6650,7 +6651,7 @@ sal_Bool SvxMSDffManager::GetBLIPDirect( SvStream& rBLIPStream, Graphic& rData, 
 		if( ( nInst & 0xFFFE ) == 0x7A8 )
 		{	// DIBs direkt holen
 			Bitmap aNew;
-			if( aNew.Read( *pGrStream, sal_False ) )
+			if( ReadDIB(aNew, *pGrStream, false) )
 			{
 				rData = Graphic( aNew );
 				nRes = GRFILTER_OK;

@@ -171,6 +171,8 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/mnuctrls/SmartTagCtl \
     svx/source/sidebar/ContextChangeEventMultiplexer \
     svx/source/sidebar/EmptyPanel \
+    svx/source/sidebar/nbdtmg \
+    svx/source/sidebar/nbdtmgfact	\
     svx/source/sidebar/PanelFactory \
     svx/source/sidebar/SelectionAnalyzer \
     svx/source/sidebar/SelectionChangeHandler \
@@ -178,15 +180,24 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/sidebar/debug/ContextPanel \
     svx/source/sidebar/debug/NotYetImplementedPanel \
     svx/source/sidebar/text/SvxSBFontNameBox \
+    svx/source/sidebar/text/TextCharacterSpacingControl \
+    svx/source/sidebar/text/TextCharacterSpacingPopup \
+    svx/source/sidebar/text/TextUnderlineControl \
+    svx/source/sidebar/text/TextUnderlinePopup \
     svx/source/sidebar/text/TextPropertyPanel \
+    svx/source/sidebar/paragraph/ParaNumberingControl \
+    svx/source/sidebar/paragraph/ParaNumberingPopup \
+    svx/source/sidebar/paragraph/ParaBulletsControl \
+    svx/source/sidebar/paragraph/ParaBulletsPopup \
+    svx/source/sidebar/paragraph/ParaLineSpacingControl \
+    svx/source/sidebar/paragraph/ParaLineSpacingPopup \
+    svx/source/sidebar/paragraph/ParaPropertyPanel \
     svx/source/sidebar/area/AreaPropertyPanel \
     svx/source/sidebar/area/AreaTransparencyGradientControl \
     svx/source/sidebar/area/AreaTransparencyGradientPopup \
     svx/source/sidebar/graphic/GraphicPropertyPanel \
     svx/source/sidebar/line/LinePropertyPanel \
-    svx/source/sidebar/line/LineStyleControl \
     svx/source/sidebar/line/LineStyleValueSet \
-    svx/source/sidebar/line/LineStylePopup \
     svx/source/sidebar/line/LineWidthControl \
     svx/source/sidebar/line/LineWidthValueSet \
     svx/source/sidebar/line/LineWidthPopup \

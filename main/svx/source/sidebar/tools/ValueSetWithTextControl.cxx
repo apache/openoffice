@@ -20,12 +20,60 @@
  *************************************************************/
 
 #include "svx/sidebar/ValueSetWithTextControl.hxx"
-
+#include <svx/dialogs.hrc>
+#include <svx/dialmgr.hxx>
 #include <sfx2/sidebar/Theme.hxx>
 
+#include <limits.h>
+#include <com/sun/star/uno/Reference.h>
+#include <com/sun/star/uno/Sequence.h>
+#include <com/sun/star/lang/Locale.hpp>
+#include <com/sun/star/style/NumberingType.hpp>
+#include <com/sun/star/lang/XMultiServiceFactory.hpp>
+#include <com/sun/star/container/XIndexAccess.hpp>
+#include <com/sun/star/text/XDefaultNumberingProvider.hpp>
+#include <com/sun/star/text/XNumberingFormatter.hpp>
+#include <com/sun/star/beans/PropertyValue.hpp>
+#include <comphelper/processfactory.hxx>
+#include <com/sun/star/text/XNumberingTypeInfo.hpp>
 #include <i18npool/mslangid.hxx>
+#include <svtools/valueset.hxx>
+#include <editeng/brshitem.hxx>
+#include <vcl/graph.hxx>
+#include <svx/nbdtmg.hxx>
+#include <svx/nbdtmgfact.hxx>
+
+using namespace com::sun::star::uno;
+using namespace com::sun::star::beans;
+using namespace com::sun::star::lang;
+using namespace com::sun::star::i18n;
+using namespace com::sun::star::text;
+using namespace com::sun::star::container;
+using namespace com::sun::star::style;
+using rtl::OUString;
+
+#define C2U(cChar) OUString::createFromAscii(cChar)
 
 namespace svx { namespace sidebar {
+static const sal_Char cValue[] = "Value";
+
+static Font& lcl_GetDefaultBulletFont()
+{
+	static sal_Bool bInit = 0;
+	static Font aDefBulletFont( UniString::CreateFromAscii(
+		                        RTL_CONSTASCII_STRINGPARAM( "StarSymbol" ) ),
+								String(), Size( 0, 14 ) );
+	if(!bInit)
+	{
+        aDefBulletFont.SetCharSet( RTL_TEXTENCODING_SYMBOL );
+		aDefBulletFont.SetFamily( FAMILY_DONTKNOW );
+		aDefBulletFont.SetPitch( PITCH_DONTKNOW );
+		aDefBulletFont.SetWeight( WEIGHT_DONTKNOW );
+		aDefBulletFont.SetTransparent( sal_True );
+		bInit = sal_True;
+	}
+	return aDefBulletFont;
+}
 
 ValueSetWithTextControl::ValueSetWithTextControl(
     const tControlType eControlType,
@@ -196,6 +244,286 @@ void ValueSetWithTextControl::UserDraw( const UserDrawEvent& rUDEvt )
 
     Invalidate( aRect );
     pDev->Pop();
+}
+
+SvxNumValueSet2::SvxNumValueSet2( Window* pParent, const ResId& rResId) :
+	ValueSet( pParent, rResId ),
+    aLineColor  ( COL_LIGHTGRAY ),    
+    pVDev       ( NULL )
+{
+	SetColCount( 3 );
+    SetLineCount( 3 );
+	SetStyle( GetStyle() | WB_ITEMBORDER );	
+}
+
+ SvxNumValueSet2::~SvxNumValueSet2()
+{
+	delete pVDev;
+}
+
+void SvxNumValueSet2::SetNumberingSettings(
+	const Sequence<Sequence<PropertyValue> >& aNum,
+	Reference<XNumberingFormatter>& xFormat,
+	const Locale& rLocale	)
+{
+	aNumSettings = aNum;
+	xFormatter = xFormat;
+	aLocale = rLocale;
+    	if(aNum.getLength() > 9)
+       	SetStyle( GetStyle()|WB_VSCROLL);
+	InsertItem( DEFAULT_NONE, DEFAULT_NONE - 1 );
+	SetItemText( DEFAULT_NONE, SVX_RESSTR( RID_SVXSTR_NUMBULLET_NONE ));
+
+    	for ( sal_Int32 i = 0; i < aNum.getLength(); i++ )
+    	{
+    		InsertItem( i + 1);
+            	if( i < 8 )
+            	{            		
+			NBOTypeMgrBase* pNumbering = NBOutlineTypeMgrFact::CreateInstance(eNBOType::NUMBERING);	
+			if ( pNumbering )
+			{
+				SetItemText( i + 1, pNumbering->GetDescription(i));
+			}
+            	}
+	}
+}
+
+void  SvxNumValueSet2::UserDraw( const UserDrawEvent& rUDEvt )
+{
+    const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
+    const Color aBackColor = rStyleSettings.GetFieldColor();
+    const Color aTextColor = rStyleSettings.GetFieldTextColor();
+
+    OutputDevice*  pDev = rUDEvt.GetDevice();
+	Rectangle aRect = rUDEvt.GetRect();
+	sal_uInt32	nItemId = rUDEvt.GetItemId();
+	long nRectWidth = aRect.GetWidth();
+	long nRectHeight = aRect.GetHeight();
+	Size aRectSize(nRectWidth, aRect.GetHeight());
+	Point aBLPos = aRect.TopLeft();
+	Font aOldFont = pDev->GetFont();
+	Color aOldColor = pDev->GetLineColor();
+    pDev->SetLineColor(aBackColor);
+    Font aFont(OutputDevice::GetDefaultFont(
+                DEFAULTFONT_UI_SANS, MsLangId::getSystemLanguage(), DEFAULTFONT_FLAGS_ONLYONE));
+
+    Size aSize = aFont.GetSize();	
+	aSize.Height() = nRectHeight/5;
+	aFont.SetColor(aTextColor);
+	aFont.SetFillColor(aBackColor);
+	aFont.SetSize( aSize );
+	pDev->SetFont(aFont);
+	pDev->SetLineColor(aTextColor);
+	if(!pVDev)
+	{
+		// Die Linien werden nur einmalig in das VirtualDevice gepainted
+		// nur die Gliederungspage bekommt es aktuell
+		pVDev = new VirtualDevice(*pDev);
+		pVDev->SetMapMode(pDev->GetMapMode());
+		pVDev->EnableRTL( IsRTLEnabled() );
+ 		pVDev->SetOutputSize( aRectSize );
+		aOrgRect = aRect;
+	
+		pVDev->SetLineColor( aBackColor );
+		pVDev->SetFillColor( aBackColor );
+		pVDev->DrawRect(aOrgRect);		
+
+        if(aBackColor == aLineColor)
+            aLineColor.Invert();
+		if(GetSettings().GetStyleSettings().GetHighContrastMode())
+			pVDev->SetLineColor(aTextColor);
+		else
+			pVDev->SetLineColor(aLineColor);
+		// Linien nur einmalig Zeichnen
+		Point aStart(aBLPos.X() + nRectWidth *30 / 100,0);
+		Point aEnd(aBLPos.X() + nRectWidth * 9 / 10,0);
+		for( sal_uInt32 i = 11; i < 100; i += 33)
+		{
+			aStart.Y() = aEnd.Y() = aBLPos.Y() + nRectHeight  * i / 100;
+			pVDev->DrawLine(aStart, aEnd);
+			aStart.Y() = aEnd.Y() = aBLPos.Y() + nRectHeight  * (i + 11) / 100;
+			pVDev->DrawLine(aStart, aEnd);
+		}		
+	}
+	if ( nItemId != DEFAULT_NONE)
+		pDev->DrawOutDev(	aRect.TopLeft(), aRectSize,
+							aOrgRect.TopLeft(), aRectSize,
+							*pVDev );
+	const OUString sValue(C2U(cValue));
+   	
+	Point aStart(aBLPos.X() + nRectWidth / 9,0);
+	if ( nItemId == DEFAULT_NONE)
+	{				
+		String sText(SVX_RESSTR( RID_SVXSTR_NUMBULLET_NONE));
+		Font aFont = pDev->GetFont();	
+		Size aSize = aFont.GetSize();	
+		aSize.Height() = nRectHeight/4;
+		aFont.SetSize( aSize );
+		pDev->SetFont(aFont);
+		long nTextWidth = pDev->GetTextWidth(sText); 
+	    long nTextHeight = pDev->GetTextHeight();
+		//GVT refine
+		while (nTextWidth>nRectWidth && aSize.Height()>4) {
+			aSize.Height() = aSize.Height()*0.9;
+			aFont.SetSize( aSize );
+			pDev->SetFont(aFont);
+			nTextWidth = pDev->GetTextWidth(sText); 
+		}
+		Point aSStart(aBLPos.X()+(nRectWidth-nTextWidth)/2, aBLPos.Y() +(nRectHeight-nTextHeight)/2);
+		pDev->DrawText(aSStart, sText);	
+		pDev->SetFont(aOldFont);
+	}
+	else
+	{
+		NBOTypeMgrBase* pNumbering = NBOutlineTypeMgrFact::CreateInstance(eNBOType::NUMBERING);
+		if ( pNumbering && nItemId <= DEFAULT_BULLET_TYPES ) 
+		{
+			for( sal_uInt32 i = 0; i < 3; i++ )
+			{
+				sal_uInt32 nY = 11 + i * 33;
+				aStart.Y() = aBLPos.Y() + nRectHeight  * nY / 100;
+				String sText;
+				sal_uInt16 nLvl = 0;
+				SvxNumRule aTempRule( 0, 10, false );
+				pNumbering->ApplyNumRule(aTempRule,nItemId -1,1<<nLvl);
+				SvxNumberFormat aNumFmt(aTempRule.GetLevel(nLvl));
+				sText=aNumFmt.GetNumStr(i+1);
+				sText.Insert( aNumFmt.GetPrefix(), 0 );
+				sText += aNumFmt.GetSuffix();
+				aStart.X() = aBLPos.X() + 2;
+				aStart.Y() -= pDev->GetTextHeight()/2;
+				pDev->DrawText(aStart, sText);		
+			}
+		}
+		pDev->SetFont(aOldFont);
+		pDev->SetLineColor(aOldColor);
+	}
+	//End
+}
+
+//===============================================================================================
+
+static const long aOffsetX[] =
+{
+	-1,//1,
+	3,//4,
+	4,//5,
+	-3,//0,
+	-1,//0,
+	3
+};
+
+SvxNumValueSet3::SvxNumValueSet3( Window* pParent, const ResId& rResId) :
+	ValueSet( pParent, rResId )    
+{
+	SetColCount( 3 );
+    SetLineCount( 4 );
+	SetStyle( GetStyle() | WB_ITEMBORDER );	
+}
+
+ SvxNumValueSet3::~SvxNumValueSet3()
+{	
+}
+
+void  SvxNumValueSet3::UserDraw( const UserDrawEvent& rUDEvt )
+{
+	Rectangle aRect = rUDEvt.GetRect();
+	OutputDevice*  pDev = rUDEvt.GetDevice();
+	sal_uInt32	nItemId = rUDEvt.GetItemId();
+	
+	long nRectHeight = aRect.GetHeight();
+	long nRectWidth = aRect.GetWidth();	
+	Point aBLPos = aRect.TopLeft();	
+	NBOTypeMgrBase* pBullets = NBOutlineTypeMgrFact::CreateInstance(eNBOType::MIXBULLETS);	
+	if ( pBullets )
+	{
+		if ( nItemId <= DEFAULT_BULLET_TYPES ) {
+			sal_uInt16 nLvl = 0;
+			SvxNumRule aTempRule( 0, 10, false );
+			pBullets->ApplyNumRule(aTempRule,nItemId -1,1<<nLvl);
+			SvxNumberFormat aFmt(aTempRule.GetLevel(nLvl));
+			sal_Int16 eNumType = aFmt.GetNumberingType();
+			if( eNumType == SVX_NUM_CHAR_SPECIAL)
+			{
+				sal_Unicode cChar = aFmt.GetBulletChar();
+			//End
+				const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
+				const Color aBackColor = rStyleSettings.GetFieldColor();	
+				const Color aTextColor = rStyleSettings.GetFieldTextColor();
+
+				Font aOldFont = pDev->GetFont();
+				Font aFont( lcl_GetDefaultBulletFont() );
+
+				Size aSize = aFont.GetSize();	
+				aSize.Height() = nRectHeight*3/6;
+				aFont.SetColor(aTextColor);
+				aFont.SetFillColor(aBackColor);
+				aFont.SetSize( aSize );
+				pDev->SetFont(aFont);
+				pDev->SetFillColor( aBackColor ); //wj
+					
+				String sText;
+				sText = cChar;
+				Font aOldBulletFont = pDev->GetFont();
+				Font aBulletFnt(aFmt.GetBulletFont() ? *aFmt.GetBulletFont() : aOldBulletFont);
+				Size aBulSize = aOldBulletFont.GetSize();	
+				aBulletFnt.SetSize(aBulSize);
+				pDev->SetFont(aBulletFnt);
+				long nTextWidth = pDev->GetTextWidth(sText); 
+	            long nTextHeight = pDev->GetTextHeight();
+				Point aStart(aBLPos.X()+(nRectWidth-nTextWidth)/2, aBLPos.Y() +(nRectHeight-nTextHeight)/2);
+				pDev->DrawText(aStart, sText);	
+				pDev->SetFont(aOldFont);
+			}else if ( eNumType == SVX_NUM_BITMAP )
+			{
+				const SvxBrushItem* pBrushItem = aFmt.GetBrush();			
+				if(pBrushItem)
+				{
+					const Graphic* pGrf = pBrushItem->GetGraphic();
+					if(pGrf)
+					{			
+						Size aSize(nRectHeight*6/20, nRectHeight*6/20);
+						Point aStart(aBLPos.X() + nRectWidth*7/20, aBLPos.Y() + nRectHeight*7/20);    
+
+						pGrf->Draw( pDev, aStart, aSize );
+					}
+				}
+			}
+		}else if ( nItemId == DEFAULT_NONE)
+		{	
+			const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
+			const Color aBackColor = rStyleSettings.GetFieldColor();	
+			const Color aTextColor = rStyleSettings.GetFieldTextColor();
+
+			Font aOldFont = pDev->GetFont();	
+			Font aFont(OutputDevice::GetDefaultFont(DEFAULTFONT_UI_SANS, MsLangId::getSystemLanguage(), DEFAULTFONT_FLAGS_ONLYONE));
+			Size aSize = aFont.GetSize();	
+			//aSize.Height() = nRectHeight/5;
+			aSize.Height() = nRectHeight/4;
+			aFont.SetColor(aTextColor);
+			aFont.SetFillColor(aBackColor);
+			aFont.SetSize( aSize );
+			pDev->SetFont(aFont);
+			pDev->SetFillColor( aBackColor ); 
+					
+			String sText(SVX_RESSTR( RID_SVXSTR_NUMBULLET_NONE));
+			
+			long nTextWidth = pDev->GetTextWidth(sText); 
+	        long nTextHeight = pDev->GetTextHeight();
+			//GVT refine
+			while (nTextWidth>nRectWidth && aSize.Height()>4) {
+				aSize.Height() = aSize.Height()*0.9;
+				aFont.SetSize( aSize );
+				pDev->SetFont(aFont);
+				nTextWidth = pDev->GetTextWidth(sText); 
+			}
+			Point aStart(aBLPos.X()+(nRectWidth-nTextWidth)/2, aBLPos.Y() +(nRectHeight-nTextHeight)/2);
+			pDev->DrawText(aStart, sText);	
+						
+			pDev->SetFont(aOldFont);
+		}
+	}
+	
 }
 
 } } // end of namespace svx::sidebar

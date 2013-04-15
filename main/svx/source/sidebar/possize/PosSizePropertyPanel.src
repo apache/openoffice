@@ -222,15 +222,6 @@ Control RID_SIDEBAR_POSSIZE_PANEL
 		Size = MAP_PIXEL( 50, 50 );
 		HelpID = HID_PROPERTY_PANEL_POSIZE_DIAL_CONTROL;
 	};
-
-	Image IMG_DIACONTROL_NORMAL
-	{
-		ImageBitmap = Bitmap{File = "rotation.png";};
-	};
-	Image IMG_DIACONTROL_H
-	{
-		ImageBitmap = Bitmap{File = "rotation_h.png";};
-	};
 };
 
 // eof

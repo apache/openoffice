@@ -37,6 +37,7 @@ public:
     enum Application
     {
         Application_Writer,
+        Application_WriterWeb,
         Application_Calc,
         Application_Draw,
         Application_Impress,
@@ -44,6 +45,9 @@ public:
         // For your convenience to avoid duplicate code in the common
         // case that Draw and Impress use identical context configurations.
         Application_DrawImpress,
+
+        // Also for your convenience for either Writer or WriterWeb.
+        Application_WriterAndWeb,
 
         // Used only by deck or panel descriptors.  Matches any
         // application.
@@ -88,6 +92,10 @@ public:
         // Used only by deck or panel descriptors.  Matches any context.
         Context_Any,
 
+        // Special context name that is only used when a deck would
+        // otherwise be empty.
+        Context_Empty,
+
         Context_Unknown,
         
         __LastContextEnum = Context_Unknown
@@ -107,9 +115,12 @@ public:
     */
     sal_Int32 GetCombinedContext(void) const;
 
-    /** This variant of the GetCombinedContext() method returns a
-        single value for both Draw and Impress application.
-        Use the Application_DrawImpress value in the CombinedEnumContext macro.
+    /** This variant of the GetCombinedContext() method treats some
+        application names as identical to each other.  Replacements
+        made are:
+            Draw or Impress     -> DrawImpress
+            Writer or WriterWeb -> WriterAndWeb
+        Use the Application_DrawImpress or Application_WriterAndWeb values in the CombinedEnumContext macro.
     */
     sal_Int32 GetCombinedContext_DI(void) const;
 

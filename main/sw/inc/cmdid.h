@@ -639,10 +639,9 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 
 #define FN_FRAME_WRAP_CONTOUR		(FN_FORMAT + 184)  /* Rahmen Kunturumlauf */
 
-#define FN_TABLE_VERT_NONE			(FN_FORMAT + 185)  /* vertikale Ausrichtung in Tabellenzellen */
-#define FN_TABLE_VERT_CENTER		(FN_FORMAT + 186)  /*  	-"-  */
-#define FN_TABLE_VERT_BOTTOM		(FN_FORMAT + 187)  /*  -"-  */
-#define FN_TABLE_SET_VERT_ALIGN		(FN_FORMAT + 188)  /*  -"-  */
+// +185..+187 removed in favor of corresponding globally available slot
+
+#define FN_TABLE_SET_VERT_ALIGN		(FN_FORMAT + 188)  /* vertical alignment in Writer table cells */
 #define FN_TABLE_MODE_FIX           (FN_FORMAT + 189)  /* Tabellenmodus */
 #define FN_TABLE_MODE_FIX_PROP      (FN_FORMAT + 190)  /*  -"-  */
 #define FN_TABLE_MODE_VARIABLE		(FN_FORMAT + 191)  /*  -"-  */
@@ -1262,7 +1261,7 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_UNO_TITLE                    (FN_FRAME + 19)
 #define FN_UNO_DESCRIPTION              (FN_FRAME + 20)
 
-#define FN_PROPERTY_SIDEBAR_GRAFIC_DLG  (FN_SIDEBAR + 0)
+#define FN_PROPERTY_WRAP_DLG            (FN_SIDEBAR + 0)
 #define SID_ATTR_PAGE_COLUMN            (FN_SIDEBAR + 1)
 #define SID_ATTR_PAGE_ULSPACE           (FN_SIDEBAR + 2)
 #define SID_ATTR_PAGE_LRSPACE           (FN_SIDEBAR + 3)

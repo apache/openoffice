@@ -98,11 +98,11 @@ Rectangle DeckLayouter::LayoutPanels (
     Rectangle aBox (PlaceVerticalScrollBar(rVerticalScrollBar, aContentArea, bShowVerticalScrollBar));
 
     const sal_Int32 nWidth (aBox.GetWidth());
-    const sal_Int32 nPanelTitleBarHeight (Theme::GetInteger(Theme::Int_PanelTitleBarHeight));
+    // const sal_Int32 nPanelTitleBarHeight (Theme::GetInteger(Theme::Int_PanelTitleBarHeight));
 
     // Prepare the separators, horizontal lines above and below the
     // panel titels.
-    const sal_Int32 nDeckSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
+    // const sal_Int32 nDeckSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
 
     // Get the requested heights of the panels and the available
     // height that is left when all panel titles and separators are
@@ -176,16 +176,22 @@ Rectangle DeckLayouter::LayoutPanels (
         eMode==Preferred
             ? nTotalPreferredHeight + nTotalDecorationHeight
             : aBox.GetHeight());
+    sal_Int32 nY = rVerticalScrollBar.GetThumbPos();
+    if (nContentHeight-nY < aBox.GetHeight())
+        nY = nContentHeight-aBox.GetHeight();
+    if (nY < 0)
+        nY = 0;
     rScrollContainer.SetPosSizePixel(
         0,
-        0,
+        -nY,
         nWidth,
         nContentHeight);
 
     if (bShowVerticalScrollBar)
         SetupVerticalScrollBar(rVerticalScrollBar, nContentHeight, aBox.GetHeight());
 
-    aBox.Top() += PlacePanels(rLayoutItems, nWidth, eMode, rScrollContainer);
+    const sal_Int32 nUsedHeight (PlacePanels(rLayoutItems, nWidth, eMode, rScrollContainer));
+    aBox.Top() += nUsedHeight;
     return aBox;
 }
 
@@ -206,8 +212,8 @@ sal_Int32 DeckLayouter::PlacePanels (
     // Assign heights and places.
     IterateLayoutItems(iItem,rLayoutItems)
     {
-		if (iItem->mpPanel == NULL)
-			continue;
+        if (iItem->mpPanel == NULL)
+            continue;
 
         Panel& rPanel (*iItem->mpPanel);
 
@@ -217,13 +223,19 @@ sal_Int32 DeckLayouter::PlacePanels (
         
         // Place the title bar.
         TitleBar* pTitleBar = rPanel.GetTitleBar();
-        pTitleBar->SetPosSizePixel(0, nY, nWidth, nPanelTitleBarHeight);
-        pTitleBar->Show();
-        nY += nPanelTitleBarHeight;
-
-        // Separator below the panel title bar.
-        aSeparators.push_back(nY);
-        nY += nDeckSeparatorHeight;
+        if (pTitleBar != NULL)
+        {
+            if (iItem->mbShowTitleBar)
+            {
+                pTitleBar->SetPosSizePixel(0, nY, nWidth, nPanelTitleBarHeight);
+                pTitleBar->Show();
+                nY += nPanelTitleBarHeight;
+            }
+            else
+            {
+                pTitleBar->Hide();
+            }
+        }
 
         if (rPanel.IsExpanded())
         {
@@ -249,7 +261,6 @@ sal_Int32 DeckLayouter::PlacePanels (
             }
 
             // Place the panel.
-            OSL_TRACE("panel %d: placing @%d +%d", iItem->mnPanelIndex, nY, nPanelHeight);
             rPanel.SetPosSizePixel(0, nY, nWidth, nPanelHeight);
             
             nY += nPanelHeight;
@@ -257,6 +268,15 @@ sal_Int32 DeckLayouter::PlacePanels (
         else
         {
             rPanel.Hide();
+
+            // Add a separator below the collapsed panel, if it is the
+            // last panel in the deck.
+            if (iItem == rLayoutItems.end()-1)
+            {
+                // Separator below the panel title bar.
+                aSeparators.push_back(nY);
+                nY += nDeckSeparatorHeight;
+            }
         }
     }
 
@@ -284,11 +304,24 @@ void DeckLayouter::GetRequestedSizes (
     IterateLayoutItems(iItem,rLayoutItems)
     {
         ui::LayoutSize aLayoutSize (ui::LayoutSize(0,0,0));
-		if (iItem->mpPanel != NULL)
+        if (iItem->mpPanel != NULL)
         {
-            rAvailableHeight -= nPanelTitleBarHeight;
-            rAvailableHeight -= 2*nDeckSeparatorHeight;
-
+            if (rLayoutItems.size() == 1
+                && iItem->mpPanel->IsTitleBarOptional())
+            {
+                // There is only one panel and its title bar is
+                // optional => hide it.
+                rAvailableHeight -= nDeckSeparatorHeight;
+                iItem->mbShowTitleBar = false;
+            }
+            else
+            {
+                // Show the title bar and a separator above and below
+                // the title bar.
+                rAvailableHeight -= nPanelTitleBarHeight;
+                rAvailableHeight -= nDeckSeparatorHeight;
+            }
+            
             if (iItem->mpPanel->IsExpanded())
             {
                 Reference<ui::XSidebarPanel> xPanel (iItem->mpPanel->GetPanelComponent());
@@ -337,9 +370,6 @@ void DeckLayouter::DistributeHeights (
             iItem->mnWeight = nContainerHeight - nBaseHeight;
             nTotalWeight += iItem->mnWeight;
         }
-        OSL_TRACE("panel %d: base height is %d, weight is %d, min/max/pref are %d/%d/%d",
-            nIndex, nBaseHeight, iItem->mnWeight,
-            iItem->maLayoutSize.Minimum, iItem->maLayoutSize.Maximum, iItem->maLayoutSize.Preferred);
     }
 	
 	if (nTotalWeight == 0)
@@ -360,7 +390,6 @@ void DeckLayouter::DistributeHeights (
             nDistributedHeight = ::std::max<sal_Int32>(0,iItem->maLayoutSize.Maximum - nBaseHeight);
         }
         iItem->mnDistributedHeight = nDistributedHeight;
-        OSL_TRACE("panel %d: distributed height is %d", nIndex, nDistributedHeight);
         nRemainingHeightToDistribute -= nDistributedHeight;
     }
 
@@ -387,9 +416,6 @@ void DeckLayouter::DistributeHeights (
         if (iItem->maLayoutSize.Maximum < 0)
         {
             iItem->mnDistributedHeight += nAdditionalHeightPerPanel + nAdditionalHeightForFirstPanel;
-            OSL_TRACE("panel %d: additionl height is %d",
-                iItem->mnPanelIndex,
-                nAdditionalHeightPerPanel + nAdditionalHeightForFirstPanel);
             nRemainingHeightToDistribute -= nAdditionalHeightPerPanel + nAdditionalHeightForFirstPanel;
         }
     }

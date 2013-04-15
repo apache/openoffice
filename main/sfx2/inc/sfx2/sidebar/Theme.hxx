@@ -127,6 +127,7 @@ public:
         Int_TabBarTopPadding,
         Int_TabBarRightPadding,
         Int_TabBarBottomPadding,
+        Int_ButtonCornerRadius,
 
         __Int_Bool,
 

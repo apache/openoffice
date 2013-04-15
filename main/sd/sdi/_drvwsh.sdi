@@ -272,6 +272,11 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
     ]
+    SID_CHAR_DLG_EFFECT // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetMenuState ;
+    ]
     /* -> SVX
     SID_PARA_DLG // ole : no, status : ?
     [
@@ -694,11 +699,41 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
     ]
+    FN_NUM_BULLET_ON
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+    ]
+    FN_NUM_NUMBERING_ON
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+    ]
     SID_OUTLINE_BULLET // ole : no, status : ?
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
 		MenuConfig = TRUE;
+    ]
+    FN_SVX_SET_BULLET
+    [
+   		ExecMethod = FuTemporary ;
+    ]
+    FN_SVX_SET_NUMBER
+    [
+    	ExecMethod = FuTemporary ;
+    ]
+    FN_BUL_NUM_RULE_INDEX
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+        Asynchron , AutoUpdate ;
+    ]
+    FN_NUM_NUM_RULE_INDEX
+    [
+        ExecMethod = FuTemporary;
+        StateMethod = GetAttrState;
+        Asynchron  , AutoUpdate ;
     ]
     SID_ATTR_CHAR // ole : no, status : ?
     [
@@ -1542,7 +1577,37 @@ interface DrawView
     SID_ATTR_PARA_LRSPACE // ole : no, status : ?
     [
         ExecMethod = ExecRuler ;
-        StateMethod = GetRulerState ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_PARA_LINESPACE
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_PARA_ULSPACE
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_PARA_ADJUST_LEFT
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_PARA_ADJUST_CENTER
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_PARA_ADJUST_RIGHT
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_PARA_ADJUST_BLOCK
+    [
+        ExecMethod = ExecRuler ;
+        StateMethod = GetAttrState ;
     ]
     SID_ATTR_POSITION // ole : no, status : ?
     [
@@ -1684,11 +1749,6 @@ interface DrawView
         StateMethod = GetFormTextState ;
     ]
     SID_FORMTEXT_SHDWYVAL // ole : no, status : ?
-    [
-        ExecMethod = ExecFormText ;
-        StateMethod = GetFormTextState ;
-    ]
-    SID_FORMTEXT_STDFORM // ole : no, status : ?
     [
         ExecMethod = ExecFormText ;
         StateMethod = GetFormTextState ;
@@ -2608,5 +2668,85 @@ interface DrawView
     [
         ExecMethod = FuTable ;
         StateMethod = GetTableMenuState ;
+    ]
+    SID_ATTR_CHAR_FONT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_FONTHEIGHT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_WEIGHT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_POSTURE
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_UNDERLINE
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_SHADOWED
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_STRIKEOUT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_COLOR
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_ATTR_CHAR_KERNING
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_SET_SUB_SCRIPT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_SET_SUPER_SCRIPT
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_SHRINK_FONT_SIZE
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_GROW_FONT_SIZE
+    [
+        ExecMethod = ExecChar ;
+        StateMethod = GetAttrState ;
+    ]
+    SID_TABLE_VERT_NONE
+    [
+        ExecMethod = ExecutePropPanelAttr ;
+        StateMethod = GetStatePropPanelAttr ;		
+    ]
+    SID_TABLE_VERT_CENTER
+    [
+        ExecMethod = ExecutePropPanelAttr ;
+        StateMethod = GetStatePropPanelAttr ;	
+    ]
+    SID_TABLE_VERT_BOTTOM
+    [
+        ExecMethod = ExecutePropPanelAttr ;
+        StateMethod = GetStatePropPanelAttr ;	
     ]
 }

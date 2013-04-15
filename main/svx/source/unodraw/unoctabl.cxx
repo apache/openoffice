@@ -44,7 +44,7 @@ using namespace ::cppu;
 class SvxUnoColorTable : public WeakImplHelper2< container::XNameContainer, lang::XServiceInfo >
 {
 private:
-	XColorTable*	pTable;
+	XColorList*	pTable;
 
 public:
 	SvxUnoColorTable() throw();
@@ -83,7 +83,7 @@ public:
 
 SvxUnoColorTable::SvxUnoColorTable() throw()
 {
-	pTable = new XColorTable( SvtPathOptions().GetPalettePath() );
+	pTable = new XColorList( SvtPathOptions().GetPalettePath() );
 }
 
 SvxUnoColorTable::~SvxUnoColorTable() throw()
@@ -135,14 +135,14 @@ void SAL_CALL SvxUnoColorTable::insertByName( const OUString& aName, const uno::
 	if( pTable )
 	{
 		XColorEntry* pEntry = new XColorEntry( Color( (ColorData)nColor ), aName  );
-		pTable->Insert( pTable->Count(), pEntry );
+		pTable->Insert( pEntry, pTable->Count() );
 	}
 }
 
 void SAL_CALL SvxUnoColorTable::removeByName( const OUString& Name )
 	throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
-	long nIndex = pTable ? ((XPropertyTable*)pTable)->Get( Name ) : -1;
+	long nIndex = pTable ? ((XPropertyList*)pTable)->Get( Name ) : -1;
 	if( nIndex == -1 )
 		throw container::NoSuchElementException();
 
@@ -157,23 +157,23 @@ void SAL_CALL SvxUnoColorTable::replaceByName( const OUString& aName, const uno:
 	if( !(aElement >>= nColor) )
 		throw lang::IllegalArgumentException();
 
-	long nIndex = pTable ? ((XPropertyTable*)pTable)->Get( aName ) : -1;
+	long nIndex = pTable ? ((XPropertyList*)pTable)->Get( aName ) : -1;
 	if( nIndex == -1  )
 		throw container::NoSuchElementException();
 
 	XColorEntry* pEntry = new XColorEntry( Color( (ColorData)nColor ), aName );
-	delete pTable->Replace( nIndex, pEntry );
+	delete pTable->Replace( pEntry, nIndex );
 }
 
 // XNameAccess
 uno::Any SAL_CALL SvxUnoColorTable::getByName( const  OUString& aName )
 	throw( container::NoSuchElementException,  lang::WrappedTargetException, uno::RuntimeException)
 {
-	long nIndex = pTable ? ((XPropertyTable*)pTable)->Get( aName ) : -1;
+	long nIndex = pTable ? ((XPropertyList*)pTable)->Get( aName ) : -1;
 	if( nIndex == -1 )
 		throw container::NoSuchElementException();
 
-	XColorEntry* pEntry = ((XColorTable*)pTable)->GetColor( nIndex );
+	XColorEntry* pEntry = ((XColorList*)pTable)->GetColor( nIndex );
 	return uno::Any( (sal_Int32) pEntry->GetColor().GetRGBColor() );
 }
 
@@ -197,7 +197,7 @@ uno::Sequence< OUString > SAL_CALL SvxUnoColorTable::getElementNames(  )
 sal_Bool SAL_CALL SvxUnoColorTable::hasByName( const OUString& aName )
 	throw( uno::RuntimeException )
 {
-	long nIndex = pTable ? ((XPropertyTable*)pTable)->Get( aName ) : -1;
+	long nIndex = pTable ? ((XPropertyList*)pTable)->Get( aName ) : -1;
 	return nIndex != -1;
 }
 

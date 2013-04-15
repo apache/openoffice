@@ -762,7 +762,7 @@ bool SdrModel::IsUndoEnabled() const
 void SdrModel::ImpCreateTables()
 {
 	// der Writer hat seinen eigenen ColorTable
-	if (!bExtColorTable) pColorTable=new XColorTable(aTablePath,(XOutdevItemPool*)pItemPool);
+	if (!bExtColorTable) pColorTable=new XColorList(aTablePath,(XOutdevItemPool*)pItemPool);
 	pDashList    =new XDashList    (aTablePath,(XOutdevItemPool*)pItemPool);
 	pLineEndList =new XLineEndList (aTablePath,(XOutdevItemPool*)pItemPool);
 	pHatchList   =new XHatchList   (aTablePath,(XOutdevItemPool*)pItemPool);
@@ -2170,22 +2170,10 @@ const ::com::sun::star::uno::Sequence< sal_Int8 >& SdrModel::getUnoTunnelImpleme
 	return *pSeq;
 }
 
-void SdrModel::SetDrawingLayerPoolDefaults()
-{
-	const String aNullStr;
-	const Color aNullLineCol(COL_DEFAULT_SHAPE_STROKE);
-	const Color aNullFillCol(COL_DEFAULT_SHAPE_FILLING);
-	const XHatch aNullHatch(aNullLineCol);
-
-	pItemPool->SetPoolDefaultItem( XFillColorItem(aNullStr,aNullFillCol) );
-	pItemPool->SetPoolDefaultItem( XFillHatchItem(pItemPool,aNullHatch) );
-	pItemPool->SetPoolDefaultItem( XLineColorItem(aNullStr,aNullLineCol) );
-}
-
 //
 // i120668, move from the header files, add delete action
 //
-void            SdrModel::SetColorTable(XColorTable* pTable)       { delete pColorTable; pColorTable=pTable; }
+void            SdrModel::SetColorTable(XColorList* pTable)       { delete pColorTable; pColorTable=pTable; }
 void            SdrModel::SetDashList(XDashList* pList)            { delete pDashList; pDashList=pList; }
 void            SdrModel::SetLineEndList(XLineEndList* pList)      { delete pLineEndList; pLineEndList=pList; }
 void            SdrModel::SetHatchList(XHatchList* pList)          { delete pHatchList; pHatchList=pList; }

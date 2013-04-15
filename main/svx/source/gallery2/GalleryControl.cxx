@@ -30,38 +30,42 @@
 #include "galbrws2.hxx"
 #include "GallerySplitter.hxx"
 #include <vcl/svapp.hxx>
+#include <sfx2/sidebar/Theme.hxx>
 
 #include <boost/bind.hpp>
 
 namespace svx { namespace sidebar {
 
+static const sal_Int32 gnInitialVerticalSplitPosition (150);
+
+
 GalleryControl::GalleryControl (
-    SfxBindings* pBindings,
+    SfxBindings* /* pBindings */,
     Window* pParentWindow)
     : Window(pParentWindow, GAL_RESID(RID_SVXDLG_GALLERYBROWSER)),
       mpGallery (Gallery::GetGalleryInstance()),
+      mpSplitter(new GallerySplitter(
+              this,
+              GAL_RESID(GALLERY_SPLITTER),
+              ::boost::bind(&GalleryControl::InitSettings, this))),
       mpBrowser1(new GalleryBrowser1(
               this,
               GAL_RESID(GALLERY_BROWSER1),
               mpGallery,
               ::boost::bind(&GalleryControl::KeyInput,this,_1,_2),
               ::boost::bind(&GalleryControl::ThemeSelectionHasChanged, this))),
-      mpSplitter(new GallerySplitter(
-              this,
-              GAL_RESID(GALLERY_SPLITTER),
-              ::boost::bind(&GalleryControl::InitSettings, this))),
       mpBrowser2(new GalleryBrowser2(this, GAL_RESID(GALLERY_BROWSER2), mpGallery)),
-      maLastSize(0,0)
+      maLastSize(GetOutputSizePixel()),
+      mbIsInitialResize(true)
 {
     FreeResource();
-    //    SetMinOutputSizePixel(maLastSize);
-    SetSizePixel(Size(300,300));
-    
+
     mpBrowser1->SelectTheme(0);
     mpBrowser1->Show(sal_True);
+
     mpBrowser2->Show(sal_True);
 
-    mpSplitter->SetHorizontal(true);
+    mpSplitter->SetHorizontal(false);
 	mpSplitter->SetSplitHdl( LINK( this, GalleryControl, SplitHdl ) );
 	mpSplitter->Show( sal_True );
 
@@ -95,6 +99,11 @@ void GalleryControl::InitSettings (void)
 	mpBrowser2->SetBackground( Wallpaper( GALLERY_DLG_COLOR ) );
 	mpBrowser2->SetControlBackground( GALLERY_DLG_COLOR );
 	mpBrowser2->SetControlForeground( GALLERY_DLG_COLOR );
+
+    const Wallpaper aBackground (sfx2::sidebar::Theme::GetWallpaper(sfx2::sidebar::Theme::Paint_PanelBackground));
+	mpSplitter->SetBackground(aBackground);
+	SetBackground(aBackground);
+	mpBrowser2->SetBackground(aBackground);
 }
 
 
@@ -107,15 +116,28 @@ void GalleryControl::Resize (void)
 
     // update hor/ver
     const Size aNewSize( GetOutputSizePixel() );
+    if (aNewSize.Width()<=0 || aNewSize.Height()<=0)
+        return;
+    
     const bool bNewLayoutHorizontal(aNewSize.Width() > aNewSize.Height());
     const bool bOldLayoutHorizontal(mpSplitter->IsHorizontal());
-    const long nSplitPos( bOldLayoutHorizontal ? mpSplitter->GetPosPixel().X() : mpSplitter->GetPosPixel().Y());
+    long nSplitPos( bOldLayoutHorizontal ? mpSplitter->GetPosPixel().X() : mpSplitter->GetPosPixel().Y());
     const long nSplitSize( bOldLayoutHorizontal ? mpSplitter->GetOutputSizePixel().Width() : mpSplitter->GetOutputSizePixel().Height());
 
     if(bNewLayoutHorizontal != bOldLayoutHorizontal)
     {
         mpSplitter->SetHorizontal(bNewLayoutHorizontal);
     }
+    else
+    {
+        if (mbIsInitialResize)
+        {
+            nSplitPos = gnInitialVerticalSplitPosition;
+            if (nSplitPos > aNewSize.Height()/2)
+                nSplitPos = aNewSize.Height()/2;
+        }
+    }
+    mbIsInitialResize = false;
 
     const long nFrameLen = LogicToPixel( Size( 3, 0 ), MAP_APPFONT ).Width();
     const long nFrameLen2 = nFrameLen << 1;

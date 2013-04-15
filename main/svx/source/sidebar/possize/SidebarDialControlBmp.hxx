@@ -23,30 +23,6 @@
 #define SVX_SIDEBAR_POSSIZE_DIAL_CONTROL_BMP_HXX
 
 #include <svx/dialcontrol.hxx>
-/*
-    
-#include <sfx2/sidebar/propertypanel.hrc>
-#include <sfx2/sidebar/Theme.hxx>
-#include <sfx2/sidebar/ControlFactory.hxx>
-#include <TransformationPropertyPanel.hxx>
-#include <TransformationPropertyPanel.hrc>
-#include <svx/dialogs.hrc>
-#include <svx/dialmgr.hxx>
-#include <sfx2/dispatch.hxx>
-#include <sfx2/bindings.hxx>
-#include <sfx2/viewsh.hxx>
-#include <sfx2/objsh.hxx>
-#include <svx/dlgutil.hxx>
-#include <unotools/viewoptions.hxx>
-#include <vcl/virdev.hxx>
-#include <vcl/svapp.hxx>
-#include <vcl/field.hxx>
-#include <vcl/fixed.hxx>
-#include <vcl/toolbox.hxx>
-#include <svx/svdview.hxx>
-#include <svl/aeitem.hxx>
-
-*/
 
 namespace svx { namespace sidebar {
 
@@ -67,3 +43,5 @@ private:
 } } // end of namespace svx::sidebar
 
 #endif
+
+// eof

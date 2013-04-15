@@ -19,19 +19,13 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
 #include <com/sun/star/i18n/WordType.hpp>
-
 #include <svtools/accessibilityoptions.hxx>
-
 #include <svx/svdedxv.hxx>
 #include <svl/solar.hrc>
-
-//#include <tools/string.h>
 #include <svl/itemiter.hxx>
 #include <vcl/msgbox.hxx>
 #include <vcl/hatch.hxx>
@@ -41,7 +35,6 @@
 #include <tools/config.hxx>
 #include <vcl/cursor.hxx>
 #include <editeng/unotext.hxx>
-
 #include <editeng/editeng.hxx>
 #include <editeng/editobj.hxx>
 #include <editeng/outlobj.hxx>
@@ -54,26 +47,25 @@
 #include "svx/svditer.hxx"
 #include "svx/svdpagv.hxx"
 #include "svx/svdpage.hxx"
-#include "svx/svdetc.hxx"   // fuer GetDraftFillColor
+#include "svx/svdetc.hxx"
 #include "svx/svdotable.hxx"
 #include <svx/selectioncontroller.hxx>
 #ifdef DBG_UTIL
 #include <svdibrow.hxx>
 #endif
-
 #include <svx/svdoutl.hxx>
-#include <svx/svddrgv.hxx>  // fuer SetSolidDragging()
-#include "svx/svdstr.hrc"   // Namen aus der Resource
-#include "svx/svdglob.hxx"  // StringCache
+#include <svx/svddrgv.hxx>
+#include "svx/svdstr.hrc"
+#include "svx/svdglob.hxx"
 #include "svx/globl3d.hxx"
 #include <editeng/outliner.hxx>
 #include <editeng/adjitem.hxx>
-
-// #98988#
 #include <svtools/colorcfg.hxx>
-#include <vcl/svapp.hxx> //add CHINA001 
+#include <vcl/svapp.hxx>
 #include <svx/sdrpaintwindow.hxx>
 #include <svx/sdrundomanager.hxx>
+#include <svx/sdr/overlay/overlaytools.hxx>
+#include <drawinglayer/processor2d/processor2dtools.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -364,44 +356,35 @@ void SdrObjEditView::ImpPaintOutlinerView(OutlinerView& rOutlView, const Rectang
 
 	if(bTextFrame && !bFitToSize) 
 	{
-		aPixRect.Left()--;
-		aPixRect.Top()--;
-		aPixRect.Right()++;
-		aPixRect.Bottom()++;
-		sal_uInt16 nPixSiz(rOutlView.GetInvalidateMore() - 1);
-			
-		{ 
-			// xPixRect Begrenzen, wegen Treiberproblem bei zu weit hinausragenden Pixelkoordinaten
-			Size aMaxXY(rTargetDevice.GetOutputSizePixel());
-			long a(2 * nPixSiz);
-			long nMaxX(aMaxXY.Width() + a);
-			long nMaxY(aMaxXY.Height() + a);
+        // completely reworked to use primitives; this ensures same look and functionality
+        const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
+        drawinglayer::processor2d::BaseProcessor2D* pProcessor = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
+            rTargetDevice, 
+            aViewInformation2D);
 
-			if (aPixRect.Left  ()<-a) aPixRect.Left()=-a;
-			if (aPixRect.Top   ()<-a) aPixRect.Top ()=-a;
-			if (aPixRect.Right ()>nMaxX) aPixRect.Right ()=nMaxX;
-			if (aPixRect.Bottom()>nMaxY) aPixRect.Bottom()=nMaxY;
-		}
+        if(pProcessor)
+        {
+            const bool bMerk(rTargetDevice.IsMapModeEnabled());
+            const basegfx::B2DRange aRange(aPixRect.Left(), aPixRect.Top(), aPixRect.Right(), aPixRect.Bottom());
+            const SvtOptionsDrawinglayer aSvtOptionsDrawinglayer;
+            const Color aHilightColor(aSvtOptionsDrawinglayer.getHilightColor());
+            const double fTransparence(aSvtOptionsDrawinglayer.GetTransparentSelectionPercent() * 0.01);
+            const sal_uInt16 nPixSiz(rOutlView.GetInvalidateMore() - 1);
+            const drawinglayer::primitive2d::Primitive2DReference xReference(
+                new drawinglayer::primitive2d::OverlayRectanglePrimitive(
+                    aRange,
+                    aHilightColor.getBColor(),
+                    fTransparence,
+                    std::max(6, nPixSiz - 2), // grow
+                    0.0, // shrink
+                    0.0));
+            const drawinglayer::primitive2d::Primitive2DSequence aSequence(&xReference, 1);
 
-		Rectangle aOuterPix(aPixRect);
-		aOuterPix.Left()-=nPixSiz;
-		aOuterPix.Top()-=nPixSiz;
-		aOuterPix.Right()+=nPixSiz;
-		aOuterPix.Bottom()+=nPixSiz;
-
-		bool bMerk(rTargetDevice.IsMapModeEnabled());
-		rTargetDevice.EnableMapMode(sal_False);
-		PolyPolygon aPolyPoly( 2 );
-
-		svtools::ColorConfig aColorConfig;
-		Color aHatchCol( aColorConfig.GetColorValue( svtools::FONTCOLOR ).nColor );
-		const Hatch aHatch( HATCH_SINGLE, aHatchCol, 3, 450 );
-
-		aPolyPoly.Insert( aOuterPix );
-		aPolyPoly.Insert( aPixRect );
-		rTargetDevice.DrawHatch( aPolyPoly, aHatch );
-
-		rTargetDevice.EnableMapMode(bMerk);
+            rTargetDevice.EnableMapMode(false);
+            pProcessor->process(aSequence);
+            rTargetDevice.EnableMapMode(bMerk);
+            delete pProcessor;
+        }
 	}
 		
 	rOutlView.ShowCursor();
@@ -2050,6 +2033,38 @@ void SdrObjEditView::OnBeginPasteOrDrop( PasteOrDropInfos* )
 void SdrObjEditView::OnEndPasteOrDrop( PasteOrDropInfos* )
 {
     // applications can derive from these virtual methods to do something before a drop or paste operation
+}
+
+sal_uInt16 SdrObjEditView::GetSelectionLevel() const
+{
+	sal_uInt16 nLevel = 0xFFFF;
+    if( IsTextEdit() )
+	{
+        DBG_ASSERT(pTextEditOutlinerView!=NULL,"SdrObjEditView::GetAttributes(): pTextEditOutlinerView=NULL");
+        DBG_ASSERT(pTextEditOutliner!=NULL,"SdrObjEditView::GetAttributes(): pTextEditOutliner=NULL");
+		if( pTextEditOutlinerView )
+		{
+			//start and end position
+			ESelection aSelect = pTextEditOutlinerView->GetSelection();
+			sal_uInt16 nStartPara = ::std::min( aSelect.nStartPara, aSelect.nEndPara );
+			sal_uInt16 nEndPara = ::std::max( aSelect.nStartPara, aSelect.nEndPara );
+			//get level from each paragraph
+			nLevel = 0;
+			for( sal_uInt16 nPara = nStartPara; nPara <= nEndPara; nPara++ )
+			{
+				sal_uInt16 nParaDepth = 1 << pTextEditOutliner->GetDepth( nPara );
+				if( !(nLevel & nParaDepth) )
+					nLevel += nParaDepth;
+			}
+			//reduce one level for Outliner Object
+			//if( nLevel > 0 && GetTextEditObject()->GetObjIdentifier() == OBJ_OUTLINETEXT )
+			//	nLevel = nLevel >> 1;
+			//no bullet paragraph selected
+			if( nLevel == 0)
+				nLevel = 0xFFFF;
+		}
+	}
+	return nLevel;
 }
 
 bool SdrObjEditView::SupportsFormatPaintbrush( sal_uInt32 nObjectInventor, sal_uInt16 nObjectIdentifier ) const

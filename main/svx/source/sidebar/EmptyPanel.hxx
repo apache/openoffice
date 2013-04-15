@@ -23,6 +23,7 @@
 #define SVX_SIDEBAR_DEBUG_EMPTY_PANEL_HXX
 
 #include <vcl/window.hxx>
+#include <vcl/ctrl.hxx>
 #include <vcl/fixed.hxx>
 
 
@@ -33,11 +34,13 @@ namespace svx { namespace sidebar {
     intentionally empty.
 */
 class EmptyPanel
-    : public Window
+    : public Control
 {
 public:
     EmptyPanel (::Window* pParent);
     virtual ~EmptyPanel (void);
+
+    virtual void Resize (void);
 
 private:
     FixedText maMessageControl;

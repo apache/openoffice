@@ -86,8 +86,6 @@ sal_Bool __EXPORT ScDocShell::InitNew( const uno::Reference < embed::XStorage >&
 		SetVisAreaOrSize( Rectangle( Point(), aSize ), sal_True );
 	}
 
-    aDocument.SetDrawDefaults();        // drawing layer defaults that are set only in InitNew
-
 	// InitOptions sets the document languages, must be called before CreateStandardStyles
     InitOptions(false);
 
@@ -171,7 +169,7 @@ void ScDocShell::InitItems()
 	else
 	{
 		//	always use global color table instead of local copy
-        PutItem( SvxColorTableItem( XColorTable::GetStdColorTable(), SID_COLOR_TABLE ) );
+        PutItem( SvxColorTableItem( XColorList::GetStdColorList(), SID_COLOR_TABLE ) );
 	}
 
 	if ( !aDocument.GetForbiddenCharacters().isValid() ||

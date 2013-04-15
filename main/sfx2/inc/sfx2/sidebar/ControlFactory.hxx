@@ -39,6 +39,9 @@ public:
     static ImageRadioButton* CreateTabItem (Window* pParentWindow);
     static ToolBox* CreateToolBox (Window* pParentWindow, const ResId& rResId);
     static Window* CreateToolBoxBackground (Window* pParentWindow);
+    static ImageRadioButton* CreateCustomImageRadionButton(
+        Window* pParentWindow,
+        const ResId& rResId );
 };
 
 

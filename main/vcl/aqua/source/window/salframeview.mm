@@ -37,6 +37,14 @@
 
 #define WHEEL_EVENT_FACTOR 1.5
 
+// for allowing fullscreen support on deployment targets < OSX 10.7
+#if !defined(MAC_OS_X_VERSION_10_7)
+    #define NSWindowCollectionBehaviorFullScreenPrimary   (1 << 7)
+    #define NSWindowCollectionBehaviorFullScreenAuxiliary (1 << 8)
+//  #define NSFullScreenWindowMask (1 << 14)
+#endif
+
+
 static sal_uInt16 ImplGetModifierMask( unsigned int nMask )
 {
     sal_uInt16 nRet = 0;
@@ -153,6 +161,25 @@ static AquaSalFrame* getMouseContainerFrame()
     pFrame->VCLToCocoa( aRect );
     NSWindow* pNSWindow = [super initWithContentRect: aRect styleMask: mpFrame->getStyleMask() backing: NSBackingStoreBuffered defer: NO ];
     [pNSWindow useOptimizedDrawing: YES]; // OSX recommendation when there are no overlapping subviews within the receiver
+
+    // enable OSX>=10.7 fullscreen options if available and useful
+    bool bAllowFullScreen = (0 == (mpFrame->mnStyle & (SAL_FRAME_STYLE_DIALOG | SAL_FRAME_STYLE_TOOLTIP | SAL_FRAME_STYLE_SYSTEMCHILD | SAL_FRAME_STYLE_FLOAT | SAL_FRAME_STYLE_TOOLWINDOW | SAL_FRAME_STYLE_INTRO)));
+    bAllowFullScreen &= (0 == (~mpFrame->mnStyle & (SAL_FRAME_STYLE_SIZEABLE)));
+    bAllowFullScreen &= (mpFrame->mpParent == NULL);
+    const SEL setCollectionBehavior = @selector(setCollectionBehavior:);
+    if( bAllowFullScreen && [pNSWindow respondsToSelector: setCollectionBehavior])
+    {
+        NSNumber* bMode = [NSNumber numberWithInt:(bAllowFullScreen ? NSWindowCollectionBehaviorFullScreenPrimary : NSWindowCollectionBehaviorFullScreenAuxiliary)];
+        [pNSWindow performSelector:setCollectionBehavior withObject:bMode];
+    }
+
+    // disable OSX>=10.7 window restoration until we support it directly
+    const SEL setRestorable = @selector(setRestorable:);
+    if( [pNSWindow respondsToSelector: setRestorable]) {
+        NSNumber* bNO = [NSNumber numberWithBool:NO];
+        [pNSWindow performSelector:setRestorable withObject:bNO];
+    }
+
     return pNSWindow;
 }
 
@@ -324,6 +351,26 @@ static AquaSalFrame* getMouseContainerFrame()
     return bRet;
 }
 
+-(void)windowDidEnterFullScreen: (NSNotification*)pNotification
+{
+    YIELD_GUARD;
+
+    if( !mpFrame || !AquaSalFrame::isAlive( mpFrame))
+        return;
+    mpFrame->mbFullScreen = true;
+    (void)pNotification;
+}
+
+-(void)windowDidExitFullScreen: (NSNotification*)pNotification
+{
+    YIELD_GUARD;
+
+    if( !mpFrame || !AquaSalFrame::isAlive( mpFrame))
+        return;
+    mpFrame->mbFullScreen = false;
+    (void)pNotification;
+}
+
 -(void)dockMenuItemTriggered: (id)sender
 {
     (void)sender;
@@ -433,7 +480,13 @@ static AquaSalFrame* getMouseContainerFrame()
 
 -(BOOL)isOpaque
 {
-    return mpFrame ? (mpFrame->getClipPath() != 0 ? NO : YES) : YES;
+	if( !mpFrame)
+		return YES;
+	if( !AquaSalFrame::isAlive( mpFrame))
+		return YES;
+	if( !mpFrame->getClipPath())
+		return YES;
+	return NO;
 }
 
 // helper class similar to a vos::OGuard for the SalYieldMutex

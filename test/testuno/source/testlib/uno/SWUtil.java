@@ -21,6 +21,7 @@
 package testlib.uno;
 
 
+import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.uno.UnoApp;
 
 import com.sun.star.beans.PropertyValue;
@@ -28,8 +29,8 @@ import com.sun.star.beans.XPropertySet;
 import com.sun.star.container.XNameAccess;
 import com.sun.star.container.XNameContainer;
 import com.sun.star.container.XNamed;
-import com.sun.star.document.XDocumentInfo;
-import com.sun.star.document.XDocumentInfoSupplier;
+import com.sun.star.document.XDocumentProperties;
+import com.sun.star.document.XDocumentPropertiesSupplier;
 import com.sun.star.frame.XStorable;
 import com.sun.star.io.IOException;
 import com.sun.star.lang.XComponent;
@@ -42,6 +43,7 @@ import com.sun.star.text.XText;
 import com.sun.star.text.XTextContent;
 import com.sun.star.text.XTextCursor;
 import com.sun.star.text.XTextDocument;
+import com.sun.star.frame.XComponentLoader;
 import com.sun.star.frame.XModel;
 import com.sun.star.frame.XController;
 import com.sun.star.uno.UnoRuntime;
@@ -117,18 +119,23 @@ public class SWUtil {
 	}
 	
 	/**
-	 * Set document properties. such as subject, title etc
+	 * Set document properties. Only supported: subject, title, author
 	 * @param document - set document information on this document
-	 * @param prop - document information, including "Subject" ,"Title", "Author", "Title", "KeyWords"
+	 * @param prop - document information, including "Subject" ,"Title", "Author"
 	 * @param propValue - value you want to set for prop
 	 * @throws Exception
 	 */
 	public static void setDocumentProperty(XTextDocument document, String prop, String propValue) throws Exception {
-		XDocumentInfoSupplier docInfoSupplier = (XDocumentInfoSupplier) UnoRuntime.queryInterface(XDocumentInfoSupplier.class, document);
-		XDocumentInfo docInfo = docInfoSupplier.getDocumentInfo();
-		XPropertySet propsDocInfo = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, docInfo);
-		propsDocInfo.setPropertyValue(prop, propValue);
-	}
+       XDocumentPropertiesSupplier docPropsSupplier = UnoRuntime.queryInterface(
+            XDocumentPropertiesSupplier.class, document);
+       XDocumentProperties docProps = docPropsSupplier.getDocumentProperties();
+        if ( prop.equals("Title"))
+            docProps.setTitle(propValue);
+        else if ( prop.equals("Author"))
+            docProps.setAuthor(propValue);
+        else if ( prop.equals("Subject"))
+            docProps.setSubject(propValue);
+    }
 	
 
 	/**
@@ -228,5 +235,32 @@ public class SWUtil {
         XStyle xStyle = (XStyle)UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));     
         XPropertySet xStyleProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xStyle);        
         xStyleProps.setPropertyValue (propertyName.toString(), propertyValue);
+	}
+	
+	public static XTextDocument saveTo_Override_reload(XTextDocument xTextDocument,String filtervalue, String url,UnoApp app) throws Exception {
+		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		PropertyValue[] aStoreProperties = new PropertyValue[2];
+		aStoreProperties[0] = new PropertyValue();
+		aStoreProperties[1] = new PropertyValue();
+		aStoreProperties[0].Name = "Override";
+		aStoreProperties[0].Value = true;
+		aStoreProperties[1].Name = "FilterName";
+		aStoreProperties[1].Value = filtervalue;
+		xStorable_odt.storeToURL(FileUtil.getUrl(url), aStoreProperties);
+		//reopen the document
+		return (XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(url));	
+ 	}
+	/**
+	 * create document from template
+	 */
+	public static XComponent newDocumentFromTemplate(String templatePath,UnoApp unoApp) throws Exception
+	{
+		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, unoApp.getDesktop());
+		PropertyValue[] pros = new PropertyValue[1];
+		pros[0] = new PropertyValue();
+		pros[0].Name = "AsTemplate";
+		pros[0].Value = new Boolean(true);				
+		XComponent component = componentLoader.loadComponentFromURL(FileUtil.getUrl(templatePath), "_blank", 0,pros);
+		return component;
 	}
 }

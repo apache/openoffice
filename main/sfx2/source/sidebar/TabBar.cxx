@@ -28,6 +28,7 @@
 #include "Paint.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 #include "Tools.hxx"
+#include "FocusManager.hxx"
 
 #include <vcl/gradient.hxx>
 #include <vcl/image.hxx>
@@ -52,7 +53,7 @@ TabBar::TabBar (
     const Reference<frame::XFrame>& rxFrame,
     const ::boost::function<void(const ::rtl::OUString&)>& rDeckActivationFunctor,
     const PopupMenuProvider& rPopupMenuProvider)
-    : Window(pParentWindow),
+    : Window(pParentWindow, WB_DIALOGCONTROL),
       mxFrame(rxFrame),
       mpMenuButton(ControlFactory::CreateMenuButton(this)),
       maItems(),
@@ -334,6 +335,25 @@ void TabBar::RestoreHideFlags (void)
     }
     if (bNeedsLayout)
         Layout();
+}
+
+
+
+
+void TabBar::UpdateFocusManager (FocusManager& rFocusManager)
+{
+    ::std::vector<Button*> aButtons;
+    aButtons.reserve(maItems.size()+1);
+    
+    aButtons.push_back(mpMenuButton.get());
+    for(ItemContainer::const_iterator
+            iItem(maItems.begin()), iEnd(maItems.end());
+        iItem!=iEnd;
+        ++iItem)
+    {
+        aButtons.push_back(iItem->mpButton.get());
+    }
+    rFocusManager.SetButtons(aButtons);
 }
 
 

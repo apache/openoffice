@@ -57,30 +57,6 @@ interface XSidebarPanel
         The height is set via the XWindow interface.
     */
     LayoutSize getHeightForWidth ( [in] long nWidth);
-
-    /** If the panel has a menu or dialog then show it now.
-    */
-    void showMenu ();
-
-    /** Return whether the panel supports (ie wants to be displayed
-        for) the given context.
-
-        The decision of whether to display a panel for a given context
-        depends on two sources of information.
-        One is the configuration
-        (org.openoffice.Office.UI/Sidebar/Content/PanelList).
-        The other is this function.
-
-        @param sApplicationName
-            Name of an application (reference of valid values needed,
-        Wiki page?)
-        @param sContextName
-            Name of the context in the scope of the application
-            (reference needed).
-    */
-    boolean isContextSupported (
-        [in] string sApplicationName,
-        [in] string sContextName);
 } ;
 
 } ; } ; } ; } ;

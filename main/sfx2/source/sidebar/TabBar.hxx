@@ -42,6 +42,7 @@ namespace cssu = ::com::sun::star::uno;
 
 namespace sfx2 { namespace sidebar {
 
+class FocusManager;
 class TabBarConfiguration;
 class TabItem;
 
@@ -84,7 +85,9 @@ public:
     const ::rtl::OUString GetDeckIdForIndex (const sal_Int32 nIndex) const;
     void ToggleHideFlag (const sal_Int32 nIndex);
     void RestoreHideFlags (void);
-    
+
+    void UpdateFocusManager (FocusManager& rFocusManager);
+
 private:
     cssu::Reference<css::frame::XFrame> mxFrame;
     ::boost::scoped_ptr<Button> mpMenuButton;

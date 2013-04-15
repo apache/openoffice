@@ -220,7 +220,6 @@ $(eval $(call gb_Library_add_exception_objects,svxcore,\
     svx/source/sdr/contact/viewcontact \
     svx/source/sdr/contact/viewcontactofsdrole2obj \
     svx/source/sdr/contact/displayinfo \
-    svx/source/sdr/contact/objectcontacttools \
     svx/source/sdr/contact/viewcontactofe3dscene \
     svx/source/sdr/contact/viewcontactofsdrrectobj \
     svx/source/sdr/contact/viewobjectcontactofsdrole2obj \
@@ -246,7 +245,7 @@ $(eval $(call gb_Library_add_exception_objects,svxcore,\
     svx/source/sdr/overlay/overlayrollingrectangle \
     svx/source/sdr/overlay/overlaytriangle \
     svx/source/sdr/overlay/overlayselection \
-    svx/source/sdr/overlay/overlayhatchrect \
+    svx/source/sdr/overlay/overlayrectangle \
     svx/source/sdr/overlay/overlaybitmapex \
     svx/source/sdr/overlay/overlaymanagerbuffered \
     svx/source/sdr/overlay/overlayhelpline \
@@ -427,6 +426,7 @@ $(eval $(call gb_Library_add_exception_objects,svxcore,\
     svx/source/xoutdev/xtabgrdt \
     svx/source/xoutdev/xtabhtch \
     svx/source/xoutdev/xtable \
+    svx/source/xoutdev/XPropertyEntry \
     svx/source/xoutdev/xtablend \
 ))
 

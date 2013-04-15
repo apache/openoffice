@@ -60,6 +60,7 @@
 #include "unmovss.hxx"
 #include <sfx2/request.hxx>
 #include <svl/itempool.hxx>
+#include <sfx2/sidebar/Theme.hxx>
 
 
 using namespace ::com::sun::star::text;
@@ -94,6 +95,9 @@ MasterPagesSelector::MasterPagesSelector (
     PreviewValueSet::SetStyle(PreviewValueSet::GetStyle() | WB_NO_DIRECTSELECT);
     PreviewValueSet::SetPreviewSize(mpContainer->GetPreviewSizePixel());
     PreviewValueSet::Show();
+
+    SetBackground(sfx2::sidebar::Theme::GetWallpaper(sfx2::sidebar::Theme::Paint_PanelBackground));
+    SetColor(sfx2::sidebar::Theme::GetColor(sfx2::sidebar::Theme::Paint_PanelBackground));
 
     Link aChangeListener (LINK(this,MasterPagesSelector,ContainerChangeListener));
     mpContainer->AddChangeListener(aChangeListener);

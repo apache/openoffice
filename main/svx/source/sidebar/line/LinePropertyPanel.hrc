@@ -30,7 +30,7 @@
 #define FT_WIDTH            3
 #define TB_WIDTH            4
 #define FT_STYLE            5
-#define TB_STYLE            6
+#define LB_STYLE            6
 #define FT_ARROW            7
 #define FT_TRANSPARENT      8
 #define MF_TRANSPARENT      9
@@ -41,7 +41,6 @@
 #define TBI_STYLE           14
 #define STR_QH_TB_WIDTH     15
 #define STR_QH_TB_COLOR     16
-#define STR_QH_TB_STYLE     17
 
 #define FT_EDGESTYLE        18
 #define LB_EDGESTYLE        19
@@ -50,17 +49,6 @@
 
 #define IMG_COLOR           23
 #define IMG_COLOR_NO        24
-#define IMG_LINE1_ICON      25
-#define IMG_LINE2_ICON      26
-#define IMG_LINE3_ICON      27
-#define IMG_LINE4_ICON      28
-#define IMG_LINE5_ICON      29
-#define IMG_LINE6_ICON      30
-#define IMG_LINE7_ICON      31
-#define IMG_LINE8_ICON      32
-#define IMG_LINE9_ICON      33
-#define IMG_LINE10_ICON     34
-#define IMG_LINE11_ICON     35
 #define IMG_NONE_ICON       36
 
 #define IMG_WIDTH1_ICON     41
@@ -71,18 +59,6 @@
 #define IMG_WIDTH6_ICON     46
 #define IMG_WIDTH7_ICON     47
 #define IMG_WIDTH8_ICON     48
-
-#define IMG_LINE1_ICON_H    51
-#define IMG_LINE2_ICON_H    52
-#define IMG_LINE3_ICON_H    53
-#define IMG_LINE4_ICON_H    54
-#define IMG_LINE5_ICON_H    55
-#define IMG_LINE6_ICON_H    56
-#define IMG_LINE7_ICON_H    57
-#define IMG_LINE8_ICON_H    58
-#define IMG_LINE9_ICON_H    59
-#define IMG_LINE10_ICON_H   60
-#define IMG_LINE11_ICON_H   50
 
 #define IMG_WIDTH1_ICON_H   61
 #define IMG_WIDTH2_ICON_H   62
@@ -101,55 +77,6 @@
 #define VS_STYLE				1
 #define PB_OPTIONS				2
 
-#define IMG_LINE1			5
-#define IMG_LINE1_S			6
-#define IMG_LINE2				7
-#define IMG_LINE2_S			8
-#define IMG_LINE3			9
-#define IMG_LINE3_S			10
-#define IMG_LINE4			11
-#define IMG_LINE4_S			12
-#define IMG_LINE5				13
-#define IMG_LINE5_S			14
-#define IMG_LINE6			15
-#define IMG_LINE6_S		16
-#define IMG_LINE7			17
-#define IMG_LINE7_S			18
-#define IMG_LINE8				19
-#define IMG_LINE8_S				20
-#define IMG_LINE9			21
-#define IMG_LINE9_S			22
-#define IMG_LINE10				23
-#define IMG_LINE10_S			24
-#define IMG_LINE11			25
-#define IMG_LINE11_S			26
-
-// #define STR_STYLE_NONE_TIP		30
-#define STR_STYLE_NONE			31
-#define STR_STYLE_LINE1			32
-#define STR_STYLE_LINE2			33
-#define STR_STYLE_LINE3			34	
-#define STR_STYLE_LINE4			35
-#define STR_STYLE_LINE5			36
-#define STR_STYLE_LINE6			37
-#define STR_STYLE_LINE7			38
-#define STR_STYLE_LINE8			39
-#define STR_STYLE_LINE9			40
-#define STR_STYLE_LINE10		41
-#define STR_STYLE_LINE11		42
-
-#define IMG_LINE1_H			43
-#define IMG_LINE2_H			44
-#define IMG_LINE3_H			45
-#define IMG_LINE4_H			46
-#define IMG_LINE5_H			47
-#define IMG_LINE6_H			48
-#define IMG_LINE7_H			49
-#define IMG_LINE8_H			50
-#define IMG_LINE9_H			51
-#define IMG_LINE10_H			52
-#define IMG_LINE11_H		53
-
 //width popup page
 #define VS_WIDTH		1
 #define MF_WIDTH		2
@@ -160,3 +87,5 @@
 #define CT_BORDER		7
 #define STR_WIDTH_LAST_CUSTOM		8
 #define STR_PT			9
+
+// eof

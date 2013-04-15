@@ -210,6 +210,8 @@ public:
 	virtual void SetUIUnit(FieldUnit eUnit);
 	virtual void SetDefTabHRuler( sal_uInt16 nDefTab );
 
+	const SfxPoolItem* GetNumBulletItem(SfxItemSet& aNewAttr, sal_uInt16& nNumItemId);
+
     sal_Bool HasRuler (void);
 	void SetRuler(sal_Bool bRuler);
 

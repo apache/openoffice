@@ -56,3 +56,5 @@ void AreaTransparencyGradientPopup::Rearrange (XFillFloatTransparenceItem* pItem
 
 
 } } // end of namespace svx::sidebar
+
+// eof

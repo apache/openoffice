@@ -106,7 +106,21 @@
           <value></value>
         </prop>
         <prop oor:name="FactoryImplementation">
-          <value>org.openoffice.comp.Draw.framework.SidebarFactory</value>
+          <value>org.openoffice.comp.Draw.framework.PanelFactory</value>
+        </prop>
+      </node>
+      <node oor:name="ScPanelFactory" oor:op="replace">
+        <prop oor:name="Type">
+          <value>toolpanel</value>
+        </prop>
+        <prop oor:name="Name">
+          <value>ScPanelFactory</value>
+        </prop>
+        <prop oor:name="Module">
+          <value></value>
+        </prop>
+        <prop oor:name="FactoryImplementation">
+          <value>org.apache.openoffice.comp.sc.sidebar.ScPanelFactory</value>
         </prop>
       </node>
       <node oor:name="SwPanelFactory" oor:op="replace">

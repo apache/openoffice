@@ -54,7 +54,7 @@ Deck::Deck (
     const DeckDescriptor& rDeckDescriptor,
     Window* pParentWindow,
     const ::boost::function<void(void)>& rCloserAction)
-    : Window(pParentWindow),
+    : Window(pParentWindow, 0),
       msId(rDeckDescriptor.msId),
       maIcon(),
       msIconURL(rDeckDescriptor.msIconURL),
@@ -68,15 +68,16 @@ Deck::Deck (
 {
     SetBackground(Wallpaper());
 
-    mpScrollClipWindow->Show();
     mpScrollClipWindow->SetBackground(Wallpaper());
-    mpScrollContainer->Show();
+    mpScrollClipWindow->Show();
+
+    mpScrollContainer->SetStyle(mpScrollContainer->GetStyle() | WB_DIALOGCONTROL);
     mpScrollContainer->SetBackground(Wallpaper());
+    mpScrollContainer->Show();
 
     mpVerticalScrollBar->SetScrollHdl(LINK(this, Deck, HandleVerticalScrollBarChange));
 
 #ifdef DEBUG
-    OSL_TRACE("creating Deck at %x", this);
     SetText(A2S("Deck"));
     mpScrollClipWindow->SetText(A2S("ScrollClipWindow"));
     mpFiller->SetText(A2S("Filler"));
@@ -89,7 +90,6 @@ Deck::Deck (
 
 Deck::~Deck (void)
 {
-    OSL_TRACE("destroying Deck at %x", this);
     Dispose();
 
     // We have to explicitly trigger the destruction of panels.
@@ -115,7 +115,6 @@ void Deck::Dispose (void)
         {
 			(*iPanel)->Dispose();
             OSL_ASSERT(iPanel->unique());
-            OSL_TRACE("panel has %d references", iPanel->use_count());
             iPanel->reset();
         }
     }
@@ -241,7 +240,7 @@ const SharedPanelContainer& Deck::GetPanels (void) const
 
 void Deck::RequestLayout (void)
 {
-    PrintWindowTree();
+    //    PrintWindowTree();
 
     DeckLayouter::LayoutDeck(
         GetContentArea(),

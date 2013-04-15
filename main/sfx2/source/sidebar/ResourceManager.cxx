@@ -22,6 +22,8 @@
 #include "precompiled_sfx2.hxx"
 
 #include "ResourceManager.hxx"
+#include "Tools.hxx"
+
 #include <unotools/confignode.hxx>
 #include <comphelper/componentcontext.hxx>
 #include <comphelper/processfactory.hxx>
@@ -37,7 +39,6 @@
 #include <map>
 
 
-#define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
 using ::rtl::OUString;
 using namespace css;
@@ -340,7 +341,7 @@ void ResourceManager::ReadPanelList (void)
             aPanelNode.getNodeValue("WantsCanvas"));
         const OUString sDefaultMenuCommand (::comphelper::getString(
                 aPanelNode.getNodeValue("DefaultMenuCommand")));
-        
+
         ReadContextList(
             aPanelNode,
             rPanelDescriptor.maContextList,
@@ -412,7 +413,7 @@ void ResourceManager::ReadContextList (
                 : rsDefaultMenuCommand);
 
         EnumContext::Application eApplication (EnumContext::GetApplicationEnum(sApplicationName));
-        bool bApplicationIsDrawAndImpress = false;
+        EnumContext::Application eApplication2 (EnumContext::Application_None);
         if (eApplication == EnumContext::Application_None
             && !sApplicationName.equals(EnumContext::GetApplicationName(EnumContext::Application_None)))
         {
@@ -432,7 +433,14 @@ void ResourceManager::ReadContextList (
                 // common to use the same context descriptions for
                 // both Draw and Impress.  This special case helps to
                 // avoid duplication in the .xcu file.
-                bApplicationIsDrawAndImpress = true;
+                eApplication = EnumContext::Application_Draw;
+                eApplication2 = EnumContext::Application_Impress;
+            }
+            else if (sApplicationName.equalsAscii("WriterAndWeb"))
+            {
+                // Another special case for Writer and WriterWeb.
+                eApplication = EnumContext::Application_Writer;
+                eApplication2 = EnumContext::Application_WriterWeb;
             }
             else
             {
@@ -459,26 +467,17 @@ void ResourceManager::ReadContextList (
             continue;
         }
 
-        if (bApplicationIsDrawAndImpress)
-        {
-            // Add the context description for both Draw and Impress. 
-            rContextList.AddContextDescription(
-                Context(
-                    EnumContext::GetApplicationName(EnumContext::Application_Draw),
-                    EnumContext::GetContextName(eContext)),
-                bIsInitiallyVisible,
-                sMenuCommand);
-            rContextList.AddContextDescription(
-                Context(
-                    EnumContext::GetApplicationName(EnumContext::Application_Impress),
-                    EnumContext::GetContextName(eContext)),
-                bIsInitiallyVisible,
-                sMenuCommand);
-        }
-        else
+        if (eApplication != EnumContext::Application_None)
             rContextList.AddContextDescription(
                 Context(
                     EnumContext::GetApplicationName(eApplication),
+                    EnumContext::GetContextName(eContext)),
+                bIsInitiallyVisible,
+                sMenuCommand);
+        if (eApplication2 != EnumContext::Application_None)
+            rContextList.AddContextDescription(
+                Context(
+                    EnumContext::GetApplicationName(eApplication2),
                     EnumContext::GetContextName(eContext)),
                 bIsInitiallyVisible,
                 sMenuCommand);
@@ -560,12 +559,15 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
 ::rtl::OUString ResourceManager::GetModuleName (
     const cssu::Reference<css::frame::XFrame>& rxFrame)
 {
+    if ( ! rxFrame.is() || ! rxFrame->getController().is())
+        return OUString();
+    
     try
     {
         const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
         const Reference<frame::XModuleManager> xModuleManager (
-            aContext.createComponent("com.sun.star.frame.ModuleManager" ),
-            UNO_QUERY_THROW );
+            aContext.createComponent("com.sun.star.frame.ModuleManager"),
+            UNO_QUERY_THROW);
         return xModuleManager->identify(rxFrame);
     }
     catch (const Exception&)

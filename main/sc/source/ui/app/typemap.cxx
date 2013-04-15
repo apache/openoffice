@@ -99,7 +99,6 @@
 #include <svx/xftshit.hxx>
 #include <svx/xftshcit.hxx>
 #include <svx/xftshxy.hxx>
-#include <svx/xftsfit.hxx>
 #include <editeng/langitem.hxx>
 #include <svx/grafctrl.hxx>
 #include <editeng/shdditem.hxx>
@@ -108,6 +107,10 @@
 #include <editeng/crsditem.hxx>
 #include <editeng/brkitem.hxx>
 #include <editeng/charreliefitem.hxx>
+#include <editeng/lrspitem.hxx>
+#include <editeng/lspcitem.hxx>
+#include <editeng/ulspitem.hxx>
+#include <editeng/kernitem.hxx>
 #include <svx/rotmodit.hxx>
 #include <svx/drawitem.hxx>
 #include <svl/ilstitem.hxx>

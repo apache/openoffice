@@ -162,6 +162,11 @@ interface BaseTextFrame
 		StateMethod = GetState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
+	SID_ATTR_TRANSFORM_PROTECT_SIZE
+	[
+		StateMethod = GetState ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
 
 	SID_ATTR_ULSPACE // status(final|play)
 	[
@@ -179,6 +184,12 @@ interface BaseTextFrame
 	]
 
 	FN_FORMAT_FRAME_DLG   // status(final|play)
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
+	FN_PROPERTY_WRAP_DLG // status(final|play)
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;

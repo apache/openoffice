@@ -51,8 +51,7 @@ namespace {
         CenterPaneId,
         FullScreenPaneId,
         LeftImpressPaneId,
-        LeftDrawPaneId,
-        SidebarPaneId
+        LeftDrawPaneId
     };
 
     static const sal_Int32 gnConfigurationUpdateStartEvent(0);

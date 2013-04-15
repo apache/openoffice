@@ -316,7 +316,7 @@ public class ShapeProperties {
 		xShape=saveAndLoadShape(1,0);
 		xPropSet = (XPropertySet) UnoRuntime.queryInterface(
 				 XPropertySet.class, xShape);
-		assertEquals("RotateAngle is not 2500", 2500 , xPropSet.getPropertyValue("RotateAngle"));
+		assertEquals("RotateAngle is not 2500", 2500L, xPropSet.getPropertyValue("RotateAngle"));
 	}
 
 

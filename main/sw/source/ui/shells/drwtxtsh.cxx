@@ -35,7 +35,6 @@
 #include <sfx2/viewfrm.hxx>
 #include <sfx2/objface.hxx>
 #include <svx/svdotext.hxx>
-#include <svx/xftsfit.hxx>
 #include <editeng/editeng.hxx>
 #include <editeng/editview.hxx>
 #include <editeng/eeitem.hxx>
@@ -80,16 +79,13 @@
 #include <uitool.hxx>
 #include <wview.hxx>
 #include <swmodule.hxx>
-
 #include <svx/xtable.hxx>
 #include <svx/svxdlg.hxx>
 #include <svx/dialogs.hrc>
-
 #include <svx/svxdlg.hxx>
 #include <svx/dialogs.hrc>
-
+#include <svx/svdoashp.hxx>
 #include <cppuhelper/bootstrap.hxx>
-
 #include "swabstdlg.hxx" //CHINA001
 #include "misc.hrc"
 
@@ -296,10 +292,9 @@ void SwDrawTextShell::ExecFormText(SfxRequest& rReq)
 	if ( rMarkList.GetMarkCount() == 1 && rReq.GetArgs() )
 	{
 		const SfxItemSet& rSet = *rReq.GetArgs();
-		const SfxPoolItem* pItem;
 
         //ask for the ViewFrame here - "this" may not be valid any longer!
-        SfxViewFrame* pVFrame = GetView().GetViewFrame();
+	// SfxViewFrame* pVFrame = GetView().GetViewFrame();
         if ( pDrView->IsTextEdit() )
 		{
             //#111733# Sometimes SdrEndTextEdit() initiates the change in selection and
@@ -310,22 +305,7 @@ void SwDrawTextShell::ExecFormText(SfxRequest& rReq)
             rTempView.AttrChangedNotify(&rSh);
 		}
 
-		if ( rSet.GetItemState(XATTR_FORMTXTSTDFORM, sal_True, &pItem) ==
-			 SFX_ITEM_SET &&
-			((const XFormTextStdFormItem*) pItem)->GetValue() != XFTFORM_NONE )
-		{
-
-			const sal_uInt16 nId = SvxFontWorkChildWindow::GetChildWindowId();
-            SvxFontWorkDialog* pDlg = (SvxFontWorkDialog*)(
-                    pVFrame->GetChildWindow(nId)->GetWindow());
-
-			pDlg->CreateStdFormObj(*pDrView, *pDrView->GetSdrPageView(),
-									rSet, *rMarkList.GetMark(0)->GetMarkedSdrObj(),
-								   ((const XFormTextStdFormItem*) pItem)->
-								   GetValue());
-		}
-		else
-			pDrView->SetAttributes(rSet);
+		pDrView->SetAttributes(rSet);
 	}
 
 }
@@ -355,23 +335,31 @@ void SwDrawTextShell::GetFormTextState(SfxItemSet& rSet)
 	if ( rMarkList.GetMarkCount() == 1 )
 		pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 
-	if ( pObj == NULL || !pObj->ISA(SdrTextObj) ||
-		!((SdrTextObj*) pObj)->HasText() )
+    const SdrTextObj* pTextObj = dynamic_cast< const SdrTextObj* >(pObj);
+    const bool bDeactivate(
+        !pObj ||
+        !pTextObj ||
+        !pTextObj->HasText() ||
+        dynamic_cast< const SdrObjCustomShape* >(pObj)); // #121538# no FontWork for CustomShapes
+
+    if (bDeactivate)
 	{
-#define	XATTR_ANZ 12
-		static const sal_uInt16 nXAttr[ XATTR_ANZ ] =
-		{ 	XATTR_FORMTXTSTYLE, XATTR_FORMTXTADJUST, XATTR_FORMTXTDISTANCE,
-			XATTR_FORMTXTSTART, XATTR_FORMTXTMIRROR, XATTR_FORMTXTSTDFORM,
-			XATTR_FORMTXTHIDEFORM, XATTR_FORMTXTOUTLINE, XATTR_FORMTXTSHADOW,
-			XATTR_FORMTXTSHDWCOLOR, XATTR_FORMTXTSHDWXVAL, XATTR_FORMTXTSHDWYVAL
-		};
-		for( sal_uInt16 i = 0; i < XATTR_ANZ; )
-			rSet.DisableItem( nXAttr[ i++ ] );
+        rSet.DisableItem(XATTR_FORMTXTSTYLE);
+        rSet.DisableItem(XATTR_FORMTXTADJUST);
+        rSet.DisableItem(XATTR_FORMTXTDISTANCE);
+        rSet.DisableItem(XATTR_FORMTXTSTART);
+        rSet.DisableItem(XATTR_FORMTXTMIRROR);
+        rSet.DisableItem(XATTR_FORMTXTHIDEFORM);
+        rSet.DisableItem(XATTR_FORMTXTOUTLINE);
+        rSet.DisableItem(XATTR_FORMTXTSHADOW);
+        rSet.DisableItem(XATTR_FORMTXTSHDWCOLOR);
+        rSet.DisableItem(XATTR_FORMTXTSHDWXVAL);
+        rSet.DisableItem(XATTR_FORMTXTSHDWYVAL);
 	}
 	else
 	{
 		if ( pDlg )
-			pDlg->SetColorTable(XColorTable::GetStdColorTable());
+			pDlg->SetColorTable(XColorList::GetStdColorList());
 
 		pDrView->GetAttributes( rSet );
 	}
@@ -583,6 +571,28 @@ void SwDrawTextShell::ExecDraw(SfxRequest &rReq)
 
 					delete( pDlg );
 				}
+			}
+			break;
+		case SID_TABLE_VERT_NONE:
+		case SID_TABLE_VERT_CENTER:
+		case SID_TABLE_VERT_BOTTOM:
+			{
+				sal_uInt16 nSId = rReq.GetSlot();
+				if (pSdrView->AreObjectsMarked())
+				{
+					SdrTextVertAdjust eTVA = SDRTEXTVERTADJUST_TOP;
+					if (nSId == SID_TABLE_VERT_CENTER)
+						eTVA = SDRTEXTVERTADJUST_CENTER;
+					else if (nSId == SID_TABLE_VERT_BOTTOM)
+						eTVA = SDRTEXTVERTADJUST_BOTTOM;
+
+					SfxItemSet aNewAttr( pSdrView->GetModel()->GetItemPool() );
+					pSdrView->GetAttributes( aNewAttr );
+					aNewAttr.Put(SdrTextVertAdjustItem(eTVA));
+					pSdrView->SetAttributes(aNewAttr);
+					rReq.Done();
+				}
+	                    
 			}
 			break;
 
@@ -904,4 +914,55 @@ void SwDrawTextShell::InsertSymbol(SfxRequest& rReq)
     SdrOutliner * pOutliner = pSdrView->GetTextEditOutliner();
     pOutliner = pSdrView->GetTextEditOutliner();
     return &pOutliner->GetUndoManager();
+}
+
+void SwDrawTextShell::GetStatePropPanelAttr(SfxItemSet &rSet)
+{
+	SfxWhichIter	aIter( rSet );
+	sal_uInt16 nWhich = aIter.FirstWhich();
+	
+	SwWrtShell &rSh = GetShell();
+	pSdrView = rSh.GetDrawView();
+
+	SfxItemSet aAttrs( pSdrView->GetModel()->GetItemPool() );
+	pSdrView->GetAttributes( aAttrs );
+	
+	while ( nWhich )
+	{
+		sal_uInt16 nSlotId = SfxItemPool::IsWhich(nWhich)
+			? GetPool().GetSlotId(nWhich)
+			: nWhich; 
+		switch ( nSlotId )
+		{
+			case SID_TABLE_VERT_NONE:
+			case SID_TABLE_VERT_CENTER:
+			case SID_TABLE_VERT_BOTTOM:
+				sal_Bool bContour = sal_False;
+				SfxItemState eConState = aAttrs.GetItemState( SDRATTR_TEXT_CONTOURFRAME );
+				if( eConState != SFX_ITEM_DONTCARE )
+				{
+					bContour = ( ( const SdrTextContourFrameItem& )aAttrs.Get( SDRATTR_TEXT_CONTOURFRAME ) ).GetValue();
+				}
+				if (bContour) break;
+
+				SfxItemState eVState = aAttrs.GetItemState( SDRATTR_TEXT_VERTADJUST );
+				//SfxItemState eHState = aAttrs.GetItemState( SDRATTR_TEXT_HORZADJUST );
+
+				//if(SFX_ITEM_DONTCARE != eVState && SFX_ITEM_DONTCARE != eHState)
+				if(SFX_ITEM_DONTCARE != eVState)
+				{					
+					SdrTextVertAdjust eTVA = (SdrTextVertAdjust)((const SdrTextVertAdjustItem&)aAttrs.Get(SDRATTR_TEXT_VERTADJUST)).GetValue();
+					sal_Bool bSet = nSlotId == SID_TABLE_VERT_NONE && eTVA == SDRTEXTVERTADJUST_TOP||
+                            nSlotId == SID_TABLE_VERT_CENTER && eTVA == SDRTEXTVERTADJUST_CENTER ||
+                            nSlotId == SID_TABLE_VERT_BOTTOM && eTVA == SDRTEXTVERTADJUST_BOTTOM;
+					rSet.Put(SfxBoolItem(nSlotId, bSet));
+				}
+				else 
+				{
+					rSet.Put(SfxBoolItem(nSlotId, sal_False));
+				}
+				break;	
+		}
+		nWhich = aIter.NextWhich();
+	}	
 }

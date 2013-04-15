@@ -47,3 +47,5 @@ public :
 } } // end of namespace svx::sidebar
 
 #endif
+
+// eof

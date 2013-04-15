@@ -22,11 +22,12 @@
 #ifndef SFX_SIDEBAR_CONTROLLER_HXX
 #define SFX_SIDEBAR_CONTROLLER_HXX
 
-#include "ResourceManager.hxx"
 #include "AsynchronousCall.hxx"
-#include "TabBar.hxx"
 #include "Context.hxx"
+#include "FocusManager.hxx"
 #include "Panel.hxx"
+#include "ResourceManager.hxx"
+#include "TabBar.hxx"
 
 #include <vcl/menu.hxx>
 
@@ -102,6 +103,8 @@ public:
     */
     void OpenDeck (void);
 
+    FocusManager& GetFocusManager (void);
+    
 private:
     ::boost::scoped_ptr<Deck> mpCurrentDeck;
     SidebarDockingWindow* mpParentWindow;
@@ -109,12 +112,14 @@ private:
     cssu::Reference<css::frame::XFrame> mxFrame;
     Context maCurrentContext;
     ::rtl::OUString msCurrentDeckId;
+    ::rtl::OUString msCurrentDeckTitle;
     AsynchronousCall maPropertyChangeForwarder;
     bool mbIsDeckClosed;
     /** Before the deck is closed the sidebar width is saved into this variable,
         so that it can be restored when the deck is reopended.
     */
     sal_Int32 mnSavedSidebarWidth;
+    FocusManager maFocusManager;
     
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
     void UpdateConfigurations (const Context& rContext);
@@ -123,7 +128,8 @@ private:
         const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels);
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
-        const ::rtl::OUString& rsImplementationURL);
+        const ::rtl::OUString& rsImplementationURL,
+        const bool bWantsCanvas);
     SharedPanel CreatePanel (
         const ::rtl::OUString& rsPanelId,
         ::Window* pParentWindow,

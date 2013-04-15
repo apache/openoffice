@@ -19,7 +19,7 @@
  * 
  *************************************************************/
 
-#include "SidebarDialControl.hxx"
+#include <svx/sidebar/SidebarDialControl.hxx>
 #include "SidebarDialControlBmp.hxx"
 
 #include <vcl/svapp.hxx>
@@ -82,3 +82,5 @@ void SidebarDialControl::HandleMouseEvent( const Point& rPos, bool bInitial )
 }
 
 } } // end of namespace svx::sidebar
+
+// eof

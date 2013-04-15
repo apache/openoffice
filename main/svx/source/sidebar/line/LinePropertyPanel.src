@@ -26,6 +26,7 @@
 
 #define TOOLBOX_WIDTH		50
 #define TOOLBOX_HEIGHT		14
+#define LISTBOX_HEIGHT      99
 
 Control RID_SIDEBAR_LINE_PANEL
 {
@@ -105,28 +106,16 @@ Control RID_SIDEBAR_LINE_PANEL
         Size = MAP_APPFONT (TOOLBOX_WIDTH  , TEXT_HEIGHT ) ;
         Text [ en-US ] = "~Style:" ;        
 	};
-	ToolBox TB_STYLE
+	ListBox LB_STYLE
 	{
-		SVLook = TRUE ;
-		Pos = MAP_APPFONT (SECTIONPAGE_MARGIN_HORIZONTAL, SECTIONPAGE_MARGIN_VERTICAL_TOP + TEXT_HEIGHT*2 + TEXT_CONTROL_SPACING_VERTICAL*2 + TOOLBOX_HEIGHT  + CONTROL_SPACING_VERTICAL) ;
-		Size = MAP_APPFONT (TOOLBOX_WIDTH ,TOOLBOX_HEIGHT ) ;
-		TabStop = TRUE ;
+		Border = TRUE ;
 		HelpID = HID_PPROPERTYPANEL_LINE_TBX_STYLE;
-		Text = "Style";
-		ItemList =
-		{
-			ToolBoxItem
-			{
-				Identifier = TBI_STYLE ;
-				DropDown = TRUE ;
-				Text [ en-US ] = "Style" ;
-				HelpID = HID_PPROPERTYPANEL_LINE_TBI_STYLE;
-			};
-		};
-	};
-	String STR_QH_TB_STYLE
-	{
-		Text [ en-US ] = "Select the style of the line.";
+		Pos = MAP_APPFONT (SECTIONPAGE_MARGIN_HORIZONTAL, SECTIONPAGE_MARGIN_VERTICAL_TOP + TEXT_HEIGHT*2 + TEXT_CONTROL_SPACING_VERTICAL*2 + TOOLBOX_HEIGHT  + CONTROL_SPACING_VERTICAL) ;
+		Size = MAP_APPFONT (TOOLBOX_WIDTH ,LISTBOX_HEIGHT ) ;
+		TabStop = TRUE ;
+		DropDown = TRUE ;
+		DDExtraWidth = TRUE ;
+		QuickHelpText [ en-US ] = "Select the style of the line.";
 	};
 	
 	FixedText FT_TRANSPARENT
@@ -164,7 +153,7 @@ Control RID_SIDEBAR_LINE_PANEL
 		Border = TRUE ;
 		HelpID = HID_PPROPERTYPANEL_LINE_LB_START;
 		Pos = MAP_APPFONT ( SECTIONPAGE_MARGIN_HORIZONTAL , SECTIONPAGE_MARGIN_VERTICAL_TOP + TEXT_HEIGHT*3 + TEXT_CONTROL_SPACING_VERTICAL*3 + TOOLBOX_HEIGHT*2  + CONTROL_SPACING_VERTICAL*2 ) ;
-		Size = MAP_APPFONT ( TOOLBOX_WIDTH , 99 ) ;
+		Size = MAP_APPFONT ( TOOLBOX_WIDTH , LISTBOX_HEIGHT ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
@@ -175,7 +164,7 @@ Control RID_SIDEBAR_LINE_PANEL
 		Border = TRUE ;
 		HelpID = HID_PPROPERTYPANEL_LINE_LB_END;
 		Pos = MAP_APPFONT ( SECTIONPAGE_MARGIN_HORIZONTAL + TOOLBOX_WIDTH + 3 , SECTIONPAGE_MARGIN_VERTICAL_TOP + TEXT_HEIGHT*3 + TEXT_CONTROL_SPACING_VERTICAL*3 + TOOLBOX_HEIGHT*2  + CONTROL_SPACING_VERTICAL*2 ) ;
-		Size = MAP_APPFONT ( TOOLBOX_WIDTH + 1, 100 ) ;
+		Size = MAP_APPFONT ( TOOLBOX_WIDTH + 1, LISTBOX_HEIGHT ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
@@ -197,7 +186,7 @@ Control RID_SIDEBAR_LINE_PANEL
 		Pos = MAP_APPFONT ( 
             SECTIONPAGE_MARGIN_HORIZONTAL , 
             SECTIONPAGE_MARGIN_VERTICAL_TOP + TEXT_HEIGHT*4 + TEXT_CONTROL_SPACING_VERTICAL*4 + TOOLBOX_HEIGHT*3  + CONTROL_SPACING_VERTICAL*3 ) ;
-		Size = MAP_APPFONT ( TOOLBOX_WIDTH , 99 ) ;
+		Size = MAP_APPFONT ( TOOLBOX_WIDTH , LISTBOX_HEIGHT ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
@@ -225,7 +214,7 @@ Control RID_SIDEBAR_LINE_PANEL
 		Pos = MAP_APPFONT ( 
             SECTIONPAGE_MARGIN_HORIZONTAL + TOOLBOX_WIDTH + 3, 
             SECTIONPAGE_MARGIN_VERTICAL_TOP + TEXT_HEIGHT*4 + TEXT_CONTROL_SPACING_VERTICAL*4 + TOOLBOX_HEIGHT*3  + CONTROL_SPACING_VERTICAL*3 ) ;
-		Size = MAP_APPFONT ( TOOLBOX_WIDTH , 99 ) ;
+		Size = MAP_APPFONT ( TOOLBOX_WIDTH , LISTBOX_HEIGHT ) ;
         TabStop = TRUE ;
         DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
@@ -247,99 +236,9 @@ Control RID_SIDEBAR_LINE_PANEL
 		ImageBitmap = Bitmap{File = "symphony/no color.png";};
 	};
 	
-	Image IMG_LINE1_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line1_s.png";};
-	};
-	Image IMG_LINE2_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line2_s.png";};
-	};
-	Image IMG_LINE3_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line3_s.png";};
-	};
-	Image IMG_LINE4_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line4_s.png";};
-	};
-	Image IMG_LINE5_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line5_s.png";};
-	};
-	Image IMG_LINE6_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line6_s.png";};
-	};
-	Image IMG_LINE7_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line7_s.png";};
-	};
-	Image IMG_LINE8_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line8_s.png";};
-	};
-	Image IMG_LINE9_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line9_s.png";};
-	};
-	Image IMG_LINE10_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line10_s.png";};
-	};
-	Image IMG_LINE11_ICON
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line11_s.png";};
-	};
 	Image IMG_NONE_ICON
 	{
 		ImageBitmap = Bitmap{File = "symphony/blank.png";};
-	};
-	
-	//high contrast for line style icon
-	Image IMG_LINE1_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line1_s_h.png";};
-	};
-	Image IMG_LINE2_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line2_s_h.png";};
-	};
-	Image IMG_LINE3_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line3_s_h.png";};
-	};
-	Image IMG_LINE4_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line4_s_h.png";};
-	};
-	Image IMG_LINE5_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line5_s_h.png";};
-	};
-	Image IMG_LINE6_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line6_s_h.png";};
-	};
-	Image IMG_LINE7_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line7_s_h.png";};
-	};
-	Image IMG_LINE8_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line8_s_h.png";};
-	};
-	Image IMG_LINE9_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line9_s_h.png";};
-	};
-	Image IMG_LINE10_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line10_s_h.png";};
-	};
-	Image IMG_LINE11_ICON_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line11_s_h.png";};
 	};
 	
 	//WIDTH ICON
@@ -438,7 +337,9 @@ Control RID_POPUPPANEL_LINEPAGE_STYLE
 	DialogControl = TRUE;
 	Border = FALSE;
 	
-	Size = MAP_APPFONT(  POPUPPANEL_MARGIN_SMALL * 2 + POPUP_BORDER_WIDTH ,  13 + POPUP_BORDER_HEIGHT + POPUPPANEL_MARGIN_SMALL * 2 + POPUPPANEL_MARGIN_LARGE);
+	Size = MAP_APPFONT(  
+        POPUPPANEL_MARGIN_SMALL * 2 + POPUP_BORDER_WIDTH ,  
+        13 + POPUP_BORDER_HEIGHT + POPUPPANEL_MARGIN_SMALL * 2 + POPUPPANEL_MARGIN_LARGE);
 	
 	Control VS_STYLE
 	{
@@ -457,190 +358,6 @@ Control RID_POPUPPANEL_LINEPAGE_STYLE
 		Size = MAP_APPFONT ( 93 , 13 );
 		TabStop = TRUE;
 		Text [ en-US ] = "~More Options...";
-	};
-	
-	String STR_STYLE_NONE
-	{
-		Text [ en-US ] = "None";
-	};
-	String STR_STYLE_LINE1
-	{
-		Text [ en-US ] = "Continuous";
-	};
-	String STR_STYLE_LINE2
-	{
-		Text [ en-US ] = "Ultrafine dashed";
-	};
-	String STR_STYLE_LINE3
-	{
-		Text [ en-US ] = "Dashed (variable)";
-	};
-	String STR_STYLE_LINE4
-	{
-		Text [ en-US ] = "Fine dashed (variable)";
-	};
-	String STR_STYLE_LINE5
-	{
-		Text [ en-US ] = "Fine dashed";
-	};
-	String STR_STYLE_LINE6
-	{
-		Text [ en-US ] = "Fine dotted";
-	};
-	String STR_STYLE_LINE7
-	{
-		Text [ en-US ] = "Ultrafine dotted (variable)";
-	};
-	String STR_STYLE_LINE8
-	{
-		Text [ en-US ] = "3 dashes 3 dots (variable)";
-	};
-	String STR_STYLE_LINE9
-	{
-		Text [ en-US ] = "2 dots 1 dash";
-	};
-	String STR_STYLE_LINE10
-	{
-		Text [ en-US ] = "Ultrafine 2 dots 3 dashes";
-	};
-	String STR_STYLE_LINE11
-	{
-		Text [ en-US ] = "Line with fine dots";
-	};
-	
-	Image IMG_LINE1
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line1.png";};
-	};
-	Image IMG_LINE1_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line1_h.png";};
-	};
-	Image IMG_LINE2
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line2.png";};
-	};
-	Image IMG_LINE2_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line2_h.png";};
-	};
-	Image IMG_LINE3
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line3.png";};
-	};
-	Image IMG_LINE3_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line3_h.png";};
-	};
-	Image IMG_LINE4
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line4.png";};
-	};
-	Image IMG_LINE4_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line4_h.png";};
-	};
-	Image IMG_LINE5
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line5.png";};
-	};
-	Image IMG_LINE5_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line5_h.png";};
-	};
-	Image IMG_LINE6
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line6.png";};
-	};
-	Image IMG_LINE6_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line6_h.png";};
-	};
-	Image IMG_LINE7
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line7.png";};
-	};
-	Image IMG_LINE7_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line7_h.png";};
-	};
-	Image IMG_LINE8
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line8.png";};
-	};
-	Image IMG_LINE8_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line8_h.png";};
-	};
-	Image IMG_LINE9
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line9.png";};
-	};
-	Image IMG_LINE9_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line9_h.png";};
-	};
-	Image IMG_LINE10
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line10.png";};
-	};
-	Image IMG_LINE10_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line10_h.png";};
-	};
-	Image IMG_LINE11
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line11.png";};
-	};
-	Image IMG_LINE11_S
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line11_h.png";};
-	};
-	
-	//high contrast
-	Image IMG_LINE1_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line1_hh.png";};
-	};
-	Image IMG_LINE2_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line2_hh.png";};
-	};
-	Image IMG_LINE3_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line3_hh.png";};
-	};
-	Image IMG_LINE4_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line4_hh.png";};
-	};
-	Image IMG_LINE5_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line5_hh.png";};
-	};
-	Image IMG_LINE6_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line6_hh.png";};
-	};
-	Image IMG_LINE7_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line7_hh.png";};
-	};
-	Image IMG_LINE8_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line8_hh.png";};
-	};
-	Image IMG_LINE9_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line9_hh.png";};
-	};
-	Image IMG_LINE10_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line10_hh.png";};
-	};
-	Image IMG_LINE11_H
-	{
-		ImageBitmap = Bitmap{File = "symphony/style_line11_hh.png";};
 	};
 };
 Control RID_POPUPPANEL_LINEPAGE_WIDTH
@@ -709,3 +426,5 @@ Control RID_POPUPPANEL_LINEPAGE_WIDTH
 		Text [ en-US ] = "pt";
 	};
 };	
+
+// eof

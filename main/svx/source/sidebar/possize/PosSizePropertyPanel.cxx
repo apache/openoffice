@@ -24,7 +24,7 @@
 #include <sfx2/sidebar/ControlFactory.hxx>
 #include "PosSizePropertyPanel.hxx"
 #include "PosSizePropertyPanel.hrc"
-#include "SidebarDialControl.hxx"
+#include <svx/sidebar/SidebarDialControl.hxx>
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
 #include <sfx2/dispatch.hxx>
@@ -58,7 +58,8 @@ namespace svx { namespace sidebar {
 PosSizePropertyPanel::PosSizePropertyPanel(
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 :   Control(
         pParent, 
         SVX_RES(RID_SIDEBAR_POSSIZE_PANEL)),
@@ -112,10 +113,16 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     mbAutoHeight(false),
     mbAdjustEnabled(false),
     mbIsFlip(false),
-    mbInDestructor(false)
+    mbInDestructor(false),
+    mxSidebar(rxSidebar)
 {
 	Initialize();
-	FreeResource();	
+	FreeResource();
+
+    mpBindings->Update( SID_ATTR_TRANSFORM_WIDTH );
+    mpBindings->Update( SID_ATTR_TRANSFORM_HEIGHT );
+    mpBindings->Update( SID_ATTR_TRANSFORM_PROTECT_SIZE );
+    mpBindings->Update( SID_ATTR_METRIC );
 }
 
 
@@ -145,7 +152,14 @@ void PosSizePropertyPanel::ShowMenu (void)
 
 void PosSizePropertyPanel::Initialize()
 {
-	//Position : Horizontal / Vertical
+    mpFtPosX->SetBackground(Wallpaper());
+    mpFtPosY->SetBackground(Wallpaper());
+    mpFtWidth->SetBackground(Wallpaper());
+    mpFtHeight->SetBackground(Wallpaper());
+    mpFtAngle->SetBackground(Wallpaper());
+    mpFtFlip->SetBackground(Wallpaper());
+
+        //Position : Horizontal / Vertical
 	mpMtrPosX->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosXHdl ) );
 	mpMtrPosY->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosYHdl ) );
 	mpMtrPosX->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Horizontal")));	//wj acc
@@ -180,7 +194,9 @@ void PosSizePropertyPanel::Initialize()
 	mpMtrWidth->SetAccessibleRelationLabeledBy(mpFtWidth.get());	
 	mpMtrHeight->SetAccessibleRelationLabeledBy(mpFtHeight.get());	
 	mpMtrAngle->SetAccessibleRelationLabeledBy(mpFtAngle.get());
-	//mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
+#ifdef HAS_IA2
+	mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
+#endif
 	mpFlipTbx->SetAccessibleRelationLabeledBy(mpFtFlip.get());
 
     mpMtrAngle->InsertValue(0, FUNIT_CUSTOM);
@@ -191,7 +207,7 @@ void PosSizePropertyPanel::Initialize()
 	mpMtrAngle->InsertValue(22500, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(27000, FUNIT_CUSTOM);
 	mpMtrAngle->InsertValue(31500, FUNIT_CUSTOM);
-    mpMtrAngle->SetDropDownLineCount(8);
+    mpMtrAngle->SetDropDownLineCount(mpMtrAngle->GetEntryCount());
 
     SfxViewShell* pCurSh = SfxViewShell::Current();
 	if ( pCurSh )
@@ -243,7 +259,8 @@ void PosSizePropertyPanel::SetupIcons(void)
 PosSizePropertyPanel* PosSizePropertyPanel::Create (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings)
+    SfxBindings* pBindings,
+    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 {
     if (pParent == NULL)
         throw lang::IllegalArgumentException(A2S("no parent Window given to PosSizePropertyPanel::Create"), NULL, 0);
@@ -255,7 +272,8 @@ PosSizePropertyPanel* PosSizePropertyPanel::Create (
     return new PosSizePropertyPanel(
         pParent,
         rxFrame,
-        pBindings);
+        pBindings,
+        rxSidebar);
 }
 
 
@@ -284,36 +302,36 @@ void PosSizePropertyPanel::HandleContextChange(
     sal_Int32 nLayoutMode (0);
     switch (maContext.GetCombinedContext_DI())
     {
-        case CombinedEnumContext(Application_Writer, Context_Draw):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Draw):
             nLayoutMode = 0;
             break;
 
-        case CombinedEnumContext(Application_Writer, Context_Graphic):
-		case CombinedEnumContext(Application_Writer, Context_Media):
-		case CombinedEnumContext(Application_Writer, Context_Frame):
-		case CombinedEnumContext(Application_Writer, Context_OLE):
-		case CombinedEnumContext(Application_Writer, Context_Form):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Graphic):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Media):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Frame):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_OLE):
+        case CombinedEnumContext(Application_WriterAndWeb, Context_Form):
             nLayoutMode = 1;
             break;
 
         case CombinedEnumContext(Application_Calc, Context_Draw):
-		case CombinedEnumContext(Application_Calc, Context_Graphic):
+        case CombinedEnumContext(Application_Calc, Context_Graphic):
         case CombinedEnumContext(Application_DrawImpress, Context_Draw):
         case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
         case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
             nLayoutMode = 2;
-		    break;
+            break;
 
         case CombinedEnumContext(Application_Calc, Context_Chart):
-		case CombinedEnumContext(Application_Calc, Context_Form):
-		case CombinedEnumContext(Application_Calc, Context_Media):
-		case CombinedEnumContext(Application_Calc, Context_OLE):
-		case CombinedEnumContext(Application_Calc, Context_MultiObject):
-		case CombinedEnumContext(Application_DrawImpress, Context_Media):
-		case CombinedEnumContext(Application_DrawImpress, Context_Form):
-		case CombinedEnumContext(Application_DrawImpress, Context_OLE):
-		case CombinedEnumContext(Application_DrawImpress, Context_3DObject):
-		case CombinedEnumContext(Application_DrawImpress, Context_MultiObject):
+        case CombinedEnumContext(Application_Calc, Context_Form):
+        case CombinedEnumContext(Application_Calc, Context_Media):
+        case CombinedEnumContext(Application_Calc, Context_OLE):
+        case CombinedEnumContext(Application_Calc, Context_MultiObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_Media):
+        case CombinedEnumContext(Application_DrawImpress, Context_Form):
+        case CombinedEnumContext(Application_DrawImpress, Context_OLE):
+        case CombinedEnumContext(Application_DrawImpress, Context_3DObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_MultiObject):
             nLayoutMode = 3;
             break;
     }    
@@ -355,6 +373,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT2);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
 
@@ -386,6 +406,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT3);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
 
@@ -413,6 +435,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
         
@@ -438,6 +462,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT4);
 			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
 			SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
 		}
 		break;
 	}
@@ -449,7 +475,7 @@ void PosSizePropertyPanel::HandleContextChange(
 
 
 
-IMPL_LINK( PosSizePropertyPanel, ChangeWidthHdl, void*, pBox )
+IMPL_LINK( PosSizePropertyPanel, ChangeWidthHdl, void*, /*pBox*/ )
 {
 	if( mpCbxScale->IsChecked() &&
 		mpCbxScale->IsEnabled() )
@@ -649,19 +675,18 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             {
                 pWidthItem = dynamic_cast< const SfxUInt32Item* >(pState);
 
-                if (pWidthItem)
-                {				
+                if(pWidthItem)
+                {
                     long mlOldWidth1 = pWidthItem->GetValue();
 
                     mlOldWidth1 = Fraction( mlOldWidth1 ) / maUIScale;
                     SetMetricValue( *mpMtrWidth, mlOldWidth1, mePoolUnit );
                     mlOldWidth = mlOldWidth1;
+                    break;
                 }
             }
-            else
-            {
-                mpMtrWidth->SetText( String());
-            }
+
+            mpMtrWidth->SetText( String());
             break;
             
         case SID_ATTR_TRANSFORM_HEIGHT:
@@ -676,156 +701,174 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                     mlOldHeight1 = Fraction( mlOldHeight1 ) / maUIScale;
                     SetMetricValue( *mpMtrHeight, mlOldHeight1, mePoolUnit );
                     mlOldHeight = mlOldHeight1;
+                    break;
                 }
             }
-            else
-            {
-                mpMtrHeight->SetText( String());
-            }
+
+            mpMtrHeight->SetText( String());
             break;
 
         case SID_ATTR_TRANSFORM_POS_X:
-        {
-            const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                long nTmp = pItem->GetValue(); 
-                nTmp = Fraction( nTmp ) / maUIScale;
-                SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
+                if(pItem)
+                {
+                    long nTmp = pItem->GetValue(); 
+                    nTmp = Fraction( nTmp ) / maUIScale;
+                    SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
+                    break;
+                }
             }
-            else
-            {
-                mpMtrPosX->SetText( String());
-            }
+
+            mpMtrPosX->SetText( String());
             break;
-        }
-        
+
         case SID_ATTR_TRANSFORM_POS_Y:
-        {
-            const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                long nTmp = pItem->GetValue(); 
-                nTmp = Fraction( nTmp ) / maUIScale;
-                SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
+                if(pItem)
+                {
+                    long nTmp = pItem->GetValue(); 
+                    nTmp = Fraction( nTmp ) / maUIScale;
+                    SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
+                    break;
+                }
             }
-            else
-            {
-                mpMtrPosY->SetText( String());
-            }
+
+            mpMtrPosY->SetText( String());
             break;
-        }
-        
+
         case SID_ATTR_TRANSFORM_ROT_X:
             if (SFX_ITEM_AVAILABLE == eState)
             {
-                mlRotX = ((const SfxInt32Item*)pState)->GetValue(); 
-                mlRotX = Fraction( mlRotX ) / maUIScale;
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+                if(pItem)
+                {
+                    mlRotX = pItem->GetValue(); 
+                    mlRotX = Fraction( mlRotX ) / maUIScale;
+                }
             }
             break;
 
         case SID_ATTR_TRANSFORM_ROT_Y:
             if (SFX_ITEM_AVAILABLE == eState)
             {
-                mlRotY = ((const SfxInt32Item*)pState)->GetValue(); 
-                mlRotY = Fraction( mlRotY ) / maUIScale;
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+                if(pItem)
+                {
+                    mlRotY = pItem->GetValue(); 
+                    mlRotY = Fraction( mlRotY ) / maUIScale;
+                }
             }
             break;
 
         case SID_ATTR_TRANSFORM_PROTECT_POS:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                // record the state of position protect
-                mbPositionProtected = pItem->GetValue();
+                if(pItem)
+                {
+                    // record the state of position protect
+                    mbPositionProtected = pItem->GetValue();
+                    break;
+                }
             }
-            else
-            {
-                mbPositionProtected = false;
-            }
+
+            mbPositionProtected = false;
             break;
-        }
 
         case SID_ATTR_TRANSFORM_PROTECT_SIZE:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                // record the state of size protect
-                mbSizeProtected = pItem->GetValue();
+                if(pItem)
+                {
+                    // record the state of size protect
+                    mbSizeProtected = pItem->GetValue();
+                    break;
+                }
             }
-            else
-            {
-                mbSizeProtected = false;
-            }
+
+            mbSizeProtected = false;
             break;
-        }
 
         case SID_ATTR_TRANSFORM_AUTOWIDTH:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
-
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
+            if(SFX_ITEM_AVAILABLE == eState)
             {
-                mbAutoWidth = pItem->GetValue();
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+                if(pItem)
+                {
+                    mbAutoWidth = pItem->GetValue();
+                }
             }
             break;
-        }
 
         case SID_ATTR_TRANSFORM_AUTOHEIGHT:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
-
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
+            if(SFX_ITEM_AVAILABLE == eState)
             {
-                mbAutoHeight = pItem->GetValue();
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+                if(pItem)
+                {
+                    mbAutoHeight = pItem->GetValue();
+                }
             }
             break;
-        }
 
         case SID_ATTR_TRANSFORM_ANGLE:
             if (eState >= SFX_ITEM_AVAILABLE)
             {
-                long nTmp = ((const SfxInt32Item*)pState)->GetValue(); 
-                mpMtrAngle->SetValue( nTmp );
-                mpDial->SetRotation( nTmp );
-                switch(nTmp)
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+                if(pItem)
                 {
-                    case 0:
-                        mpMtrAngle->SelectEntryPos(0);
-                        break;
-                    case 4500:
-                        mpMtrAngle->SelectEntryPos(1);
-                        break;
-                    case 9000:
-                        mpMtrAngle->SelectEntryPos(2);
-                        break;
-                    case 13500:
-                        mpMtrAngle->SelectEntryPos(3);
-                        break;
-                    case 18000:
-                        mpMtrAngle->SelectEntryPos(4);
-                        break;
-                    case 22500:
-                        mpMtrAngle->SelectEntryPos(5);
-                        break;
-                    case 27000:
-                        mpMtrAngle->SelectEntryPos(6);
-                        break;
-                    case 315000:
-                        mpMtrAngle->SelectEntryPos(7);
+                    long nTmp = pItem->GetValue(); 
+
+                    mpMtrAngle->SetValue( nTmp );
+                    mpDial->SetRotation( nTmp );
+
+                    switch(nTmp)
+                    {
+                        case 0:
+                            mpMtrAngle->SelectEntryPos(0);
+                            break;
+                        case 4500:
+                            mpMtrAngle->SelectEntryPos(1);
+                            break;
+                        case 9000:
+                            mpMtrAngle->SelectEntryPos(2);
+                            break;
+                        case 13500:
+                            mpMtrAngle->SelectEntryPos(3);
+                            break;
+                        case 18000:
+                            mpMtrAngle->SelectEntryPos(4);
+                            break;
+                        case 22500:
+                            mpMtrAngle->SelectEntryPos(5);
+                            break;
+                        case 27000:
+                            mpMtrAngle->SelectEntryPos(6);
+                            break;
+                        case 315000:
+                            mpMtrAngle->SelectEntryPos(7);
+                    }
+
+                    break;
                 }
             }
-            else
-            {
-                mpMtrAngle->SetText( String() );
-                mpDial->SetRotation( 0 );
-            }
+
+            mpMtrAngle->SetText( String() );
+            mpDial->SetRotation( 0 );
             break;
             
         case SID_ATTR_METRIC:
@@ -849,9 +892,9 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
             if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw) 
-                        || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
-                        ) && OBJ_EDGE == eKind)
-                || OBJ_CAPTION == eKind)
+               || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
+                 ) && OBJ_EDGE == eKind)
+               || OBJ_CAPTION == eKind)
             {
                 mpFtAngle->Disable();
                 mpMtrAngle->Disable();
@@ -872,9 +915,9 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                 const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
                 if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw)
-                            || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
-                            ) && OBJ_EDGE == eKind) 
-                    || OBJ_CAPTION == eKind)
+                  || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
+                     ) && OBJ_EDGE == eKind)
+                  || OBJ_CAPTION == eKind)
                 {
                     isNoEdge = false;
                     break;
@@ -1066,7 +1109,9 @@ FieldUnit PosSizePropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPo
 	FieldUnit eUnit = FUNIT_NONE;
 
 	if ( pState && eState >= SFX_ITEM_DEFAULT )
+    {
 		eUnit = (FieldUnit)( (const SfxUInt16Item*)pState )->GetValue();
+    }
 	else
 	{
 		SfxViewFrame* pFrame = SfxViewFrame::Current();
@@ -1180,3 +1225,5 @@ void PosSizePropertyPanel::DisableControls()
 
 
 } } // end of namespace svx::sidebar
+
+// eof

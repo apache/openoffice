@@ -205,7 +205,6 @@ Reference<ui::XUIElement> SAL_CALL SidebarFactory::createUIElement (
                 rsUIElementResourceURL,
                 xFrame,
                 pControl,
-                ::boost::function<void(void)>(),
                 ui::LayoutSize(-1,-1,-1)));
     }
     catch(Exception& rException)

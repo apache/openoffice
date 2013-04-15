@@ -49,7 +49,11 @@ ICULELIB=-licule
 ICUUCLIB=-licuuc
 ICUDATALIB=-licudata
 .ENDIF			# "$(GUI)$(COM)"=="WNTGCC"
+.IF "$(GUI)"=="OS2"
+I18NUTILLIB=-li18nutil
+.ELSE
 I18NUTILLIB=-li18nutil$(COMID)
+.ENDIF
 .INCLUDE .IGNORE : i18npool/version.mk
 I18NISOLANGLIB=-li18nisolang$(ISOLANG_MAJOR)$(COMID)
 I18NPAPERLIB=-li18npaper$(DLLPOSTFIX)
@@ -190,11 +194,7 @@ TKTLIB=-ltkt$(DLLPOSTFIX)
 SAXLIB=-lsax$(DLLPOSTFIX)
 MAILLIB=-lmail
 DOCMGRLIB=-ldmg$(DLLPOSTFIX)
-.IF "$(GUI)"=="OS2"
-BASICLIB=-lbasic
-.ELSE
 BASICLIB=-lsb$(DLLPOSTFIX)
-.ENDIF
 VBAHELPERLIB=-lvbahelper$(DLLPOSTFIX)
 DBTOOLSLIB=-ldbtools$(DLLPOSTFIX)
 HM2LIBSH=-lhmwrpdll
@@ -295,24 +295,6 @@ REDLANDLIB=$(REDLAND_LIBS)
 REDLANDLIB=-lrdf
 .ENDIF
 
-
-# #110743#
-# For BinFilters, some libs were added.
-#
-
-BFSVXLIB=-lbf_svx$(DLLPOSTFIX)
-BFSCHLIB=-lbf_ysch
-BFSMLIB=-lbf_ysm
-BFSCLIB=-lbf_sclib
-BFSDLIB=-lbf_sdlib
-BFSWLIB=-lbf_swlib
-BFOFALIB=-lbf_ofa$(DLLPOSTFIX)
-LEGACYSMGRLIB=-llegacy_binfilters$(DLLPOSTFIX)
-BFXMLOFFLIB=-lbf_xo$(DLLPOSTFIX)
-BFGOODIESLIB=-lbf_go$(DLLPOSTFIX)
-BFBASICLIB=-lbf_sb$(DLLPOSTFIX)
-BFSO3LIB=-lbf_so$(DLLPOSTFIX)
-BFSVTOOLLIB=-lbf_svt$(DLLPOSTFIX)
 
 #
 # USED_%NAME%_LIBS
@@ -493,24 +475,6 @@ CPPUNITLIB = icppunit_dll.lib
 REDLANDLIB = librdf.lib
 
 JVMFWKLIB = ijvmfwk.lib
-
-# #110743#
-# For BinFilters, some libs were added.
-#
-
-BFSVXLIB=bf_svx.lib
-BFSCHLIB=bf_ysch.lib
-BFSMLIB=bf_ysm.lib
-BFSCLIB=bf_sclib.lib
-BFSDLIB=bf_sdlib.lib
-BFSWLIB=bf_swlib.lib
-BFOFALIB=bf_ofa.lib
-BFXMLOFFLIB=ibf_xo.lib
-BFGOODIESLIB=bf_go.lib
-BFBASICLIB=bf_sb.lib
-BFSO3LIB=bf_so.lib
-LEGACYSMGRLIB=ilegacy_binfilters.lib
-BFSVTOOLLIB=bf_svt.lib
 
 SABLOT3RDLIB= $(LIBPRE) sablot.lib
 APP3RDLIB= $(LIBPRE) app.lib

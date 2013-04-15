@@ -25,6 +25,7 @@
 
 #include "DrawHelper.hxx"
 #include "Paint.hxx"
+#include "Tools.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 
 using namespace ::com::sun::star;
@@ -39,6 +40,9 @@ MenuButton::MenuButton (Window* pParentWindow)
       mbIsLeftButtonDown(false),
       mePaintType(PT_Theme)
 {
+#ifdef DEBUG
+    SetText(A2S("MenuButton"));
+#endif
 }
 
 
@@ -59,13 +63,15 @@ void MenuButton::Paint (const Rectangle& rUpdateArea)
         default:
         {
             const bool bIsSelected (IsChecked());
-            const bool bIsMouseOver (IsMouseOver());
+            const bool bIsHighlighted (IsMouseOver() || HasFocus());
             DrawHelper::DrawRoundedRectangle(
                 *this,
                 Rectangle(Point(0,0), GetSizePixel()),
-                2,
-                bIsMouseOver||bIsSelected ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
-                bIsMouseOver
+                3,
+                bIsHighlighted||bIsSelected
+                    ? Theme::GetColor(Theme::Color_TabItemBorder)
+                    : Color(0xffffffff),
+                bIsHighlighted
                     ? Theme::GetPaint(Theme::Paint_TabItemBackgroundHighlight)
                     : Theme::GetPaint(Theme::Paint_TabItemBackgroundNormal));
         

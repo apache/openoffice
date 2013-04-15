@@ -190,7 +190,7 @@ my_components += component/vcl/vcl.unx
 my_components += updchk.uno
 .END
 
-.IF "$(BUILD_SPECIAL)" != ""
+.IF "$(ENABLE_OOOIMPROVEMENT)" != ""
 my_components += oooimprovement
 .END
 
@@ -276,12 +276,6 @@ my_components += ScriptProviderForJavaScript
 .END
 .END
 
-.IF "$(WITH_BINFILTER)" != "NO"
-my_components += \
-    bf_migratefilter \
-    bindet
-.END
-
 .IF "$(WITH_LDAP)" == "YES"
 my_components += ldapbe2
 .END
@@ -311,7 +305,7 @@ my_components += \
     fps \
     ftransl \
     java_uno_accessbridge \
-    smplmail \
+    sysmail \
     sysdtrans \
     wininetbe1
 .END

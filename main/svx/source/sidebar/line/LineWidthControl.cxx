@@ -372,3 +372,5 @@ long LineWidthControl::GetTmpCustomWidth()
 
 
 } } // end of namespace svx::sidebar
+
+// eof

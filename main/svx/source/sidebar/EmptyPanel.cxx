@@ -22,15 +22,39 @@
 #include "precompiled_svx.hxx"
 
 #include "EmptyPanel.hxx"
+#include "EmptyPanel.hrc"
+#include "area/AreaPropertyPanel.hrc"
+#include "svx/dialogs.hrc"
+#include "svx/dialmgr.hxx"
+
 
 namespace svx { namespace sidebar {
 
+namespace
+{
+    class SidebarResource : public Resource
+    {
+    public:
+        SidebarResource (const ResId& rResId) : Resource(rResId) {}
+        ~SidebarResource (void) { FreeResource(); }
+    };
+}
+
+
+
+
 EmptyPanel::EmptyPanel (::Window* pParent)
-    : Window(pParent, 0),
-      maMessageControl(this, 0)
+    : Control(pParent, SVX_RES(RID_SIDEBAR_EMPTY_PANEL)),
+      maMessageControl(this, SVX_RES(FT_MESSAGE))
 {
     maMessageControl.SetPosSizePixel(5,5, 250,15);
-    maMessageControl.SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Intentionally letft blank")));
+    maMessageControl.SetStyle(WB_WORDBREAK);// | WB_NOMNEMONICS);
+    //maMessageControl.GetStyle()
+    //        & ~(WB_NOMULTILINE | WB_PATHELLIPSIS)
+    //        | WB_WORDBREAK | WB_NOMNEMONICS);
+    FreeResource();
+
+    SetBackground(Wallpaper());
     
     maMessageControl.Show();
     Show();
@@ -44,6 +68,13 @@ EmptyPanel::~EmptyPanel (void)
 }
 
 
+
+
+void EmptyPanel::Resize (void)
+{
+    const Size aSize (GetSizePixel());
+    maMessageControl.SetSizePixel(aSize);
+}
 
 
 } } // end of namespace ::svx::sidebar

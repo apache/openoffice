@@ -75,7 +75,7 @@
           List of context descriptors.  Each context descriptor is a string that contains four comma
           separated values (note that values are case sensitive):
           1  Application name. Valid values are
-                 com.sun.star.text.TextDocument or Writer
+                 com.sun.star.text.TextDocument
                  com.sun.star.sheet.SpreadsheetDocument
                  com.sun.star.presentation.PresentationDocument
                  com.sun.star.drawing.DrawingDocument
@@ -85,9 +85,12 @@
                  Calc
                  Impress
                  Draw
+
+             Shortcuts for multiple applications:
                  DrawImpress
-             The last one, DrawImpress, exists for convenience because most configuration descriptions for Impress
-             exist in identical form for Draw.
+                 WriterAndWeb
+             These shortcuts exist for even more convenience and handle the frequent case of Draw
+	     and Impress as well as Writer and WriterWeb having otherwise identical context descriptions.
              
              Special values:
                  any
@@ -97,14 +100,14 @@
               Know context names are 3DObject, Annotation, Auditing, Cell, Chart, Draw, DrawPage, DrawText,
               EditCell, Form, Frame, Graphic, HandoutPage, MasterPage, Media, Multiobj, OLE, OutlineText,
               Pivot, SlidesorterPage, Table, Text, TextObject,
-              Default
+              default
 
              Special values:
                  any
 
           3  Panel state.  One of 
-             expanded  Panel is initially visible and expanded
-             collapsed Panel is initially collapsed, ie only its title bar is visible
+             visible  Panel is initially visible and expanded
+             hidden   Panel is initially collapsed, ie only its title bar is visible
 
           4  (Optional, only used for panels) UNO command that overrides the DefaultMenuCommand.  Use 
              the special value none to override the DefaultMenuCommand to the empty string and thereby

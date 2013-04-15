@@ -71,3 +71,5 @@ private:
 };
 
 } } // end of namespace svx::sidebar
+
+// eof

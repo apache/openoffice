@@ -30,7 +30,7 @@
 #include <svx/rectenum.hxx>
 #include <svl/poolitem.hxx>
 #include <tools/fldunit.hxx>
-
+#include <com/sun/star/ui/XSidebar.hpp>
 
 class DialControl;
 class SdrView;
@@ -53,7 +53,8 @@ public:
     static PosSizePropertyPanel* Create(
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 
     virtual void DataChanged(
         const DataChangedEvent& rEvent);
@@ -141,6 +142,8 @@ private:
     bool                                    mbIsFlip : 1;
     bool                                    mbInDestructor : 1;
 
+    cssu::Reference<css::ui::XSidebar> mxSidebar;
+
     DECL_LINK( ChangePosXHdl, void * );
     DECL_LINK( ChangePosYHdl, void * );
     DECL_LINK( ChangeWidthHdl, void * );
@@ -160,7 +163,8 @@ private:
     PosSizePropertyPanel(
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~PosSizePropertyPanel();
 
     void MetricState( SfxItemState eState, const SfxPoolItem* pState );
@@ -174,3 +178,5 @@ private:
 
 
 #endif // SVX_PROPERTYPANEL_POSIZEPAGE_HXX
+
+// eof
