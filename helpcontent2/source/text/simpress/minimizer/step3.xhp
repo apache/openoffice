@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+<helpdocument version="1.0">
+    <meta>
+        <topic id="sdextPresentationMinimizerStep3xhp" indexer="include">
+            <title xml-lang="en-US" id="tit">Presentation Minimizer - Graphics</title>
+            <filename>/text/simpress/minimizer/step3.xhp</filename>
+        </topic>
+    </meta>
+    <body>
+        <section id="step3">
+        <!-- 3 Step  -->
+            <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step3" id="bm_id77665505" localize="false"/>
+            <paragraph xml-lang="en-US" id="par_id77665505b" role="heading" level="1" l10n="NEW"><link href="text/simpress/minimizer/step3.xhp" name="Presentation Minimizer - Introduction">Presentation Minimizer - Graphics</link></paragraph>
+            <paragraph xml-lang="en-US" id="par_id77665506" role="paragraph" l10n="NEW"><ahelp hid="hid/sdext:Minimizer:Wizard:Step3">Choose settings for optimizing pictures and graphics.</ahelp></paragraph>
+        </section>
+        <section id="howtoget">
+            <embed href="text/simpress/minimizer/shared.xhp#step3"/>
+        </section>
+        <!-- 3 Step Lossless compression -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step3:RBLossless" id="bm_id77665511" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665501" role="heading" level="2" l10n="NEW">Lossless compression</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503h" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step3:RBLossless">Lossless compression.</ahelp></paragraph>
+        <!-- 3 Step JPEG compression -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step3:RBJPEG" id="bm_id77665512" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665502" role="heading" level="2" l10n="NEW">JPEG compression</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503i" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step3:RBJPEG">Compress JPEG graphics.</ahelp></paragraph>
+        <!-- 3 Step Quality metric field -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step3:MFQuality" id="bm_id77665513" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665503" role="heading" level="2" l10n="NEW">Quality in percent</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503j" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step3:MFQuality">Specify the quality of the compression. A higher value means less compression.</ahelp></paragraph>
+        <!-- 3 Step Image resolution combo box -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step3:LBDPI" id="bm_id77665514" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665504" role="heading" level="2" l10n="NEW">Reduce image resolution</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503k" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step3:LBDPI">Specify the image resolution in DPI (dots per inch).</ahelp></paragraph>
+        <!-- 3 Step Delete cropped graphic areas -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step3:CBCrop" id="bm_id77665515" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665505" role="heading" level="2" l10n="NEW">Delete cropped graphic areas</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503l" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step3:CBCrop">Delete cropped graphic areas from the graphics.</ahelp></paragraph>
+        <!-- 3 Step Break links to external graphics -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step3:CBLinks" id="bm_id77665516" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665506" role="heading" level="2" l10n="NEW">Break links to external graphics</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503m" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step3:CBLinks">Break all links to external graphics.</ahelp></paragraph>
+        <paragraph role="paragraph" id="par_id3153087" xml-lang="en-US" l10n="NEW">
+            <link href="text/simpress/minimizer/step4.xhp" name="Go to Presentation Minimizer - OLE Objects">Go to Presentation Minimizer - OLE Objects</link>
+        </paragraph>
+    </body>
+</helpdocument>
