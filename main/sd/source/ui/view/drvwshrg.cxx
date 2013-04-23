@@ -31,8 +31,9 @@
 #include <svx/bmpmask.hxx>
 #include <svx/galbrws.hxx>
 #include <svx/imapdlg.hxx>
-#include <svx/colrctrl.hxx>
+#include <svx/SvxColorChildWindow.hxx>
 #include <sfx2/objface.hxx>
+#include <sfx2/sidebar/SidebarChildWindow.hxx>
 #include <svx/f3dchild.hxx>
 #include <svx/tbxcustomshapes.hxx>
 
@@ -89,6 +90,7 @@ SFX_IMPL_INTERFACE(DrawViewShell, SfxShell, SdResId(STR_DRAWVIEWSHELL))
 	SFX_CHILDWINDOW_REGISTRATION( ::sd::SpellDialogChildWindow::GetChildWindowId() );
 	SFX_CHILDWINDOW_REGISTRATION( SID_SEARCH_DLG );
 	SFX_CHILDWINDOW_REGISTRATION( ::avmedia::MediaPlayer::GetChildWindowId() );
+	SFX_CHILDWINDOW_REGISTRATION(::sfx2::sidebar::SidebarChildWindow::GetChildWindowId());
 }
 
 
@@ -115,6 +117,7 @@ SFX_IMPL_INTERFACE(GraphicViewShell, SfxShell, SdResId(STR_DRAWVIEWSHELL)) //SOH
 	SFX_CHILDWINDOW_REGISTRATION( ::sd::SpellDialogChildWindow::GetChildWindowId() );
 	SFX_CHILDWINDOW_REGISTRATION( SID_SEARCH_DLG );
 	SFX_CHILDWINDOW_REGISTRATION( ::avmedia::MediaPlayer::GetChildWindowId() );
+	SFX_CHILDWINDOW_REGISTRATION(::sfx2::sidebar::SidebarChildWindow::GetChildWindowId());
 }
 
 TYPEINIT1( GraphicViewShell, DrawViewShell );

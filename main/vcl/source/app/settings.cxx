@@ -398,10 +398,7 @@ sal_Bool KeyboardSettings::operator ==( const KeyboardSettings& rSet ) const
     if ( mpData == rSet.mpData )
         return sal_True;
 
-    if ( (mpData->mnOptions             == rSet.mpData->mnOptions) )
-        return sal_True;
-    else
-        return sal_False;
+    return (mpData->mnOptions == rSet.mpData->mnOptions);
 }
 
 // =======================================================================
@@ -1167,7 +1164,7 @@ sal_Bool MiscSettings::GetEnableATToolSupport() const
         HKEY hkey;
 
         if( ERROR_SUCCESS == RegOpenKey(HKEY_CURRENT_USER,
-            "Software\\Aapche OpenOffice\\Accessibility\\AtToolSupport",
+            "Software\\OpenOffice\\Accessibility\\AtToolSupport",
             &hkey) )
         {
             DWORD dwType;
@@ -1245,7 +1242,7 @@ void MiscSettings::SetEnableATToolSupport( sal_Bool bEnable )
 
         // If the accessibility key in the Windows registry exists, change it synchronously
 		if( ERROR_SUCCESS == RegOpenKey(HKEY_CURRENT_USER,
-			"Software\\Apache OpenOffice\\Accessibility\\AtToolSupport",
+			"Software\\OpenOffice\\Accessibility\\AtToolSupport",
 			&hkey) )
 		{
 			DWORD dwType;
@@ -1381,10 +1378,7 @@ sal_Bool NotificationSettings::operator ==( const NotificationSettings& rSet ) c
     if ( mpData == rSet.mpData )
         return sal_True;
 
-    if ( (mpData->mnOptions             == rSet.mpData->mnOptions) )
-        return sal_True;
-    else
-        return sal_False;
+    return (mpData->mnOptions == rSet.mpData->mnOptions);
 }
 
 // =======================================================================

@@ -70,86 +70,6 @@ char const aChckDash[]  = { 0x04, 0x00, 'S','O','D','L'};	// < 5.2
 char const aChckDash0[] = { 0x04, 0x00, 'S','O','D','0'};	// = 5.2
 char const aChckXML[]   = { '<', '?', 'x', 'm', 'l' };		// = 6.0
 
-// -----------------
-// class XDashTable
-// -----------------
-
-/*************************************************************************
-|*
-|* XDashTable::XDashTable()
-|*
-*************************************************************************/
-
-XDashTable::XDashTable( const String& rPath,
-							XOutdevItemPool* pInPool,
-							sal_uInt16 nInitSize, sal_uInt16 nReSize ) :
-				XPropertyTable( rPath, pInPool, nInitSize, nReSize)
-{
-	pBmpTable = new Table( nInitSize, nReSize );
-}
-
-/************************************************************************/
-
-XDashTable::~XDashTable()
-{
-}
-
-/************************************************************************/
-
-XDashEntry* XDashTable::Replace(long nIndex, XDashEntry* pEntry )
-{
-	return (XDashEntry*) XPropertyTable::Replace(nIndex, pEntry);
-}
-
-/************************************************************************/
-
-XDashEntry* XDashTable::Remove(long nIndex)
-{
-	return (XDashEntry*) XPropertyTable::Remove(nIndex, 0);
-}
-
-/************************************************************************/
-
-XDashEntry* XDashTable::GetDash(long nIndex) const
-{
-	return (XDashEntry*) XPropertyTable::Get(nIndex, 0);
-}
-
-/************************************************************************/
-
-sal_Bool XDashTable::Load()
-{
-	return( sal_False );
-}
-
-/************************************************************************/
-
-sal_Bool XDashTable::Save()
-{
-	return( sal_False );
-}
-
-/************************************************************************/
-
-sal_Bool XDashTable::Create()
-{
-	return( sal_False );
-}
-
-/************************************************************************/
-
-sal_Bool XDashTable::CreateBitmapsForUI()
-{
-	return( sal_False );
-}
-
-/************************************************************************/
-
-Bitmap* XDashTable::CreateBitmapForUI( long /*nIndex*/, sal_Bool /*bDelete*/)
-{
-	return( NULL );
-}
-
 // ----------------
 // class XDashList
 // ----------------
@@ -183,6 +103,10 @@ public:
     SdrObject* getLineObject() const { return mpLineObject; }
 };
 
+// to avoid rendering trouble (e.g. vcl renderer) and to get better AAed quality,
+// use double prerender size
+static bool bUseDoubleSize = true;
+
 void XDashList::impCreate()
 {
     if(!mpData)
@@ -193,13 +117,16 @@ void XDashList::impCreate()
         VirtualDevice* pVirDev = new VirtualDevice;
 		OSL_ENSURE(0 != pVirDev, "XDashList: no VirtualDevice created!" );
 		pVirDev->SetMapMode(MAP_100TH_MM);
-		const Size aSize(pVirDev->PixelToLogic(Size(BITMAP_WIDTH * 2, BITMAP_HEIGHT)));
+		const Size aSize(pVirDev->PixelToLogic(Size(
+            bUseDoubleSize ? getUiBitmapWidth() * 5 : getUiBitmapWidth() * 5 / 2, 
+            bUseDoubleSize ? getUiBitmapHeight() * 2 : getUiBitmapHeight())));
 		pVirDev->SetOutputSize(aSize);
         pVirDev->SetDrawMode(rStyleSettings.GetHighContrastMode()
             ? DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT
             : DRAWMODE_DEFAULT);
-    
-	    SdrModel* pSdrModel = new SdrModel();
+        pVirDev->SetBackground(rStyleSettings.GetFieldColor());
+
+        SdrModel* pSdrModel = new SdrModel();
 		OSL_ENSURE(0 != pSdrModel, "XDashList: no SdrModel created!" );
 	    pSdrModel->GetItemPool().FreezeIdRanges();
 
@@ -211,8 +138,9 @@ void XDashList::impCreate()
         pBackgroundObject->SetMergedItem(XLineStyleItem(XLINE_NONE));
         pBackgroundObject->SetMergedItem(XFillColorItem(String(), rStyleSettings.GetFieldColor()));
 
-        const basegfx::B2DPoint aStart(0, aSize.Height() / 2);
-        const basegfx::B2DPoint aEnd(aSize.Width(), aSize.Height() / 2);
+        const sal_uInt32 nHalfHeight(aSize.Height() / 2);
+        const basegfx::B2DPoint aStart(0, nHalfHeight);
+        const basegfx::B2DPoint aEnd(aSize.Width(), nHalfHeight);
 	    basegfx::B2DPolygon aPolygon;
 	    aPolygon.append(aStart);
 	    aPolygon.append(aEnd);
@@ -221,8 +149,8 @@ void XDashList::impCreate()
     	pLineObject->SetModel(pSdrModel);
         pLineObject->SetMergedItem(XLineStyleItem(XLINE_DASH));
         pLineObject->SetMergedItem(XLineColorItem(String(), rStyleSettings.GetFieldTextColor()));
-        pLineObject->SetMergedItem(XLineWidthItem(30));
-
+		const Size aLineWidth(pVirDev->PixelToLogic(Size(getUiBitmapLineWidth(), 0)));
+        pLineObject->SetMergedItem(XLineWidthItem(bUseDoubleSize ? aLineWidth.getWidth() * 2 : aLineWidth.getWidth()));
         mpData = new impXDashList(pVirDev, pSdrModel, pBackgroundObject, pLineObject);
 		OSL_ENSURE(0 != mpData, "XDashList: data creation went wrong!" );
     }
@@ -237,11 +165,13 @@ void XDashList::impDestroy()
     }
 }
 
-XDashList::XDashList(const String& rPath, XOutdevItemPool* pInPool, sal_uInt16 nInitSize, sal_uInt16 nReSize)
-:   XPropertyList(rPath, pInPool, nInitSize, nReSize),
-    mpData(0)
+XDashList::XDashList(const String& rPath, XOutdevItemPool* pInPool )
+:   XPropertyList(rPath, pInPool ),
+    mpData(0),
+    maBitmapSolidLine(),
+    maStringSolidLine(),
+    maStringNoLine()
 {
-	pBmpList = new List(nInitSize, nReSize);
 }
 
 XDashList::~XDashList()
@@ -266,19 +196,19 @@ XDashEntry* XDashList::GetDash(long nIndex) const
 
 sal_Bool XDashList::Load()
 {
-	if( bListDirty )
+	if( mbListDirty )
 	{
-		bListDirty = sal_False;
+		mbListDirty = false;
 
-		INetURLObject aURL( aPath );
+		INetURLObject aURL( maPath );
 
 		if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 		{
-			DBG_ASSERT( !aPath.Len(), "invalid URL" );
+			DBG_ASSERT( !maPath.Len(), "invalid URL" );
 			return sal_False;
 		}
 
-		aURL.Append( aName );
+		aURL.Append( maName );
 
 		if( !aURL.getExtension().getLength() )
 			aURL.setExtension( rtl::OUString( pszExtDash, 3 ) );
@@ -291,15 +221,15 @@ sal_Bool XDashList::Load()
 
 sal_Bool XDashList::Save()
 {
-	INetURLObject aURL( aPath );
+	INetURLObject aURL( maPath );
 
 	if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 	{
-		DBG_ASSERT( !aPath.Len(), "invalid URL" );
+		DBG_ASSERT( !maPath.Len(), "invalid URL" );
 		return sal_False;
 	}
 
-	aURL.Append( aName );
+	aURL.Append( maName );
 
 	if( !aURL.getExtension().getLength() )
 		aURL.setExtension( rtl::OUString( pszExtDash, 3 ) );
@@ -324,32 +254,21 @@ sal_Bool XDashList::Create()
 	return( sal_True );
 }
 
-sal_Bool XDashList::CreateBitmapsForUI()
-{
-    impCreate();
-
-    for( long i = 0; i < Count(); i++)
-	{
-		Bitmap* pBmp = CreateBitmapForUI( i, sal_False );
-		DBG_ASSERT( pBmp, "XDashList: Bitmap(UI) konnte nicht erzeugt werden!" );
-
-		if( pBmp )
-			pBmpList->Insert( pBmp, i );
-	}
-
-    impDestroy();
-
-	return( sal_True );
-}
-
-Bitmap* XDashList::CreateBitmapForUI( long nIndex, sal_Bool bDelete )
+Bitmap XDashList::ImpCreateBitmapForXDash(const XDash* pDash)
 {
     impCreate();
     VirtualDevice* pVD = mpData->getVirtualDevice();
     SdrObject* pLine = mpData->getLineObject();
 
-    pLine->SetMergedItem(XLineStyleItem(XLINE_DASH));
-    pLine->SetMergedItem(XLineDashItem(String(), GetDash(nIndex)->GetDash()));
+    if(pDash)
+    {
+        pLine->SetMergedItem(XLineStyleItem(XLINE_DASH));
+        pLine->SetMergedItem(XLineDashItem(String(), *pDash));
+    }
+    else
+    {
+        pLine->SetMergedItem(XLineStyleItem(XLINE_SOLID));
+    }
 
     sdr::contact::SdrObjectVector aObjectVector;
 	aObjectVector.push_back(mpData->getBackgroundObject());
@@ -357,17 +276,59 @@ Bitmap* XDashList::CreateBitmapForUI( long nIndex, sal_Bool bDelete )
 	sdr::contact::ObjectContactOfObjListPainter aPainter(*pVD, aObjectVector, 0);
 	sdr::contact::DisplayInfo aDisplayInfo;
 
+    pVD->Erase();
 	aPainter.ProcessDisplay(aDisplayInfo);
 
     const Point aZero(0, 0);
-	Bitmap* pBitmap = new Bitmap(pVD->GetBitmap(aZero, pVD->GetOutputSize()));
+    Bitmap aResult(pVD->GetBitmap(aZero, pVD->GetOutputSize()));
+    
+    if(bUseDoubleSize)
+    {
+        const Size aCurrentSize(aResult.GetSizePixel());
 
-	if(bDelete)
-	{
-        impDestroy();
-	}
+        aResult.Scale(Size(aCurrentSize.Width() / 2, aCurrentSize.Height() / 2), BMP_SCALE_FASTESTINTERPOLATE);
+    }
 
-	return pBitmap;
+    return aResult;
+}
+
+Bitmap XDashList::CreateBitmapForUI( long nIndex )
+{
+    const XDash& rDash = GetDash(nIndex)->GetDash();
+
+    return ImpCreateBitmapForXDash(&rDash);
+}
+
+Bitmap XDashList::GetBitmapForUISolidLine() const
+{
+    if(maBitmapSolidLine.IsEmpty())
+    {
+        const_cast< XDashList* >(this)->maBitmapSolidLine = const_cast< XDashList* >(this)->ImpCreateBitmapForXDash(0);
+    }
+
+    return maBitmapSolidLine;
+}
+
+String XDashList::GetStringForUiSolidLine() const
+{
+    if(!maStringSolidLine.Len())
+    {
+        const_cast< XDashList* >(this)->maStringSolidLine = String(ResId(RID_SVXSTR_SOLID, DIALOG_MGR()));
+    }
+
+    return maStringSolidLine;
+}
+
+String XDashList::GetStringForUiNoLine() const
+{
+    if(!maStringNoLine.Len())
+    {
+        // formally was RID_SVXSTR_INVISIBLE, but tomake equal 
+        // everywhere, use RID_SVXSTR_NONE
+        const_cast< XDashList* >(this)->maStringNoLine = String(ResId(RID_SVXSTR_NONE, DIALOG_MGR()));
+    }
+
+    return maStringNoLine;
 }
 
 //////////////////////////////////////////////////////////////////////////////

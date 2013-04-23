@@ -62,7 +62,7 @@ XHPFILES = \
    main0212.xhp \
    main0213.xhp \
    main0214.xhp \
-   main0503.xhp 
+   main0503.xhp
 	
 # --- Targets ------------------------------------------------------
 

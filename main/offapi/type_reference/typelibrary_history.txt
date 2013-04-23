@@ -198,3 +198,13 @@
 
 19/12/2012 (arielch): TaskID=121514
   Remove deprecated AWT UnoControlSimpleAnimation API
+
+23/03/2013 (arielch): TaskID=121944
+  css::ucb::XWebDAVCommandEnvironment should be derived from css::ucb::XCommandEnvironment
+
+23/03/2013 (arielch): TaskID=121945
+  css::ucb::XWebDAVCommandEnvironment::getUserRequestHeaders() should return a
+  sequence of css::beans::StringPair
+
+23/03/2013 (arielch): TaskID=121946
+  css::ucb::XWebDAVCommandEnvironment: use enums to identify WebDAV/HTTP methods

@@ -29,6 +29,7 @@
 #include <vcl/mapmod.hxx>
 #include <tools/rc.hxx>
 #include <vcl/region.hxx>
+#include <tools/color.hxx>
 
 #ifdef WNT
 #define _STLP_HAS_NATIVE_FLOAT_ABS
@@ -254,6 +255,8 @@ public:
 class Lanczos3Kernel : public Kernel
 {
 public:
+    Lanczos3Kernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 3.0; 
@@ -278,6 +281,9 @@ public:
 
 class BicubicKernel : public Kernel 
 {
+public:
+    BicubicKernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 2.0; 
@@ -305,6 +311,9 @@ class BicubicKernel : public Kernel
 
 class BilinearKernel : public Kernel 
 {
+public:
+    BilinearKernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 1.0; 
@@ -328,6 +337,9 @@ class BilinearKernel : public Kernel
 
 class BoxKernel : public Kernel 
 {
+public:
+    BoxKernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 0.5; 
@@ -871,6 +883,36 @@ public:
 	sal_Bool					Filter( BmpFilter eFilter, 
 									const BmpFilterParam* pFilterParam = NULL,
 									const Link* pProgress = NULL );
+
+    /** Draw a blend frame to the Bitmap
+
+        @param nAlpha
+        The blend value defines how strong the frame will be blended with the
+        existing content, 255 == full coverage, 0 == no frame will be drawn
+
+        @param aColorTopLeft, aColorBottomRight, aColorTopRight, aColorBottomLeft
+        The colors defining the frame. If the version without aColorTopRight and
+        aColorBottomLeft is used, these colors are linearly interpolated from
+        aColorTopLeft and aColorBottomRight using the width and height of the area
+
+        @param rTopLeft
+        The start point of the frame in pixels
+
+        @param rSize
+        The size of the frame in pixels
+     */
+    void DrawBlendFrame(
+        sal_uInt8 nAlpha = 128,
+        Color aColorTopLeft = Color(COL_WHITE), 
+        Color aColorBottomRight = Color(COL_BLACK));
+    void DrawBlendFrame(
+        const Point& rTopLeft, 
+        const Size& rSize, 
+        sal_uInt8 nAlpha = 128,
+        Color   aColorTopLeft = Color(COL_WHITE), 
+        Color   aColorTopRight = Color(COL_GRAY), 
+        Color   aColorBottomRight = Color(COL_BLACK), 
+        Color   aColorBottomLeft = Color(COL_GRAY));
 
     BitmapReadAccess*       AcquireReadAccess();
     BitmapWriteAccess*      AcquireWriteAccess();

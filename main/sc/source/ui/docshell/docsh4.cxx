@@ -32,9 +32,7 @@
 using namespace ::com::sun::star;
 
 // INCLUDE ---------------------------------------------------------------
-#if STLPORT_VERSION>=321
 #include <math.h>		// prevent conflict between exception and std::exception
-#endif
 
 #include "scitems.hxx"
 #include <sfx2/fcontnr.hxx>
@@ -568,7 +566,7 @@ void ScDocShell::Execute( SfxRequest& rReq )
 			{
 				//	passende ColorTable ist per PutItem gesetzt worden
 				SvxColorTableItem* pColItem = (SvxColorTableItem*)GetItem(SID_COLOR_TABLE);
-				XColorTable* pTable = pColItem->GetColorTable();
+				XColorList* pTable = pColItem->GetColorTable();
 				rReq.SetReturnValue(OfaPtrItem(SID_GET_COLORTABLE, pTable));
 			}
 			break;

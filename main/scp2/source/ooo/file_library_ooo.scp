@@ -1073,8 +1073,13 @@ End
 #endif
 #endif
 
+#if defined(OS2)
+STD_LIB_FILE(gid_File_Lib_Mysql,mysql)
+STD_LIB_FILE(gid_File_Lib_Odbc,odbc)
+#else
 STD_LIB_FILE(gid_File_Lib_Mysql,mysql.uno)
 STD_LIB_FILE(gid_File_Lib_Odbc,odbc.uno)
+#endif
 
 // STD_LIB_FILE( gid_File_Lib_Ofa , ofa)
 
@@ -1344,6 +1349,32 @@ File gid_File_Lib_Slideshow
     Name = "slidesho.dll";
   #else
     Name = "slideshow.uno.dll";
+  #endif
+End
+
+File gid_File_Lib_PresentationMinimizer
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = SCP2_OOO_BIN_DIR;
+  #ifdef UNX
+    Name = STRING(CONCAT2(PresentationMinimizer.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "PresentationMinimizer.dll";
+  #else
+    Name = "PresentationMinimizer.uno.dll";
+  #endif
+End
+
+File gid_File_Lib_PresenterScreen
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = SCP2_OOO_BIN_DIR;
+  #ifdef UNX
+    Name = STRING(CONCAT2(PresenterScreen.uno,UNXSUFFIX));
+  #elif defined OS2
+    Name = "PresenterScreen.dll";
+  #else
+    Name = "PresenterScreen.uno.dll";
   #endif
 End
 

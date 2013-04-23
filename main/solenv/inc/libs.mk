@@ -296,24 +296,6 @@ REDLANDLIB=-lrdf
 .ENDIF
 
 
-# #110743#
-# For BinFilters, some libs were added.
-#
-
-BFSVXLIB=-lbf_svx$(DLLPOSTFIX)
-BFSCHLIB=-lbf_ysch
-BFSMLIB=-lbf_ysm
-BFSCLIB=-lbf_sclib
-BFSDLIB=-lbf_sdlib
-BFSWLIB=-lbf_swlib
-BFOFALIB=-lbf_ofa$(DLLPOSTFIX)
-LEGACYSMGRLIB=-llegacy_binfilters$(DLLPOSTFIX)
-BFXMLOFFLIB=-lbf_xo$(DLLPOSTFIX)
-BFGOODIESLIB=-lbf_go$(DLLPOSTFIX)
-BFBASICLIB=-lbf_sb$(DLLPOSTFIX)
-BFSO3LIB=-lbf_so$(DLLPOSTFIX)
-BFSVTOOLLIB=-lbf_svt$(DLLPOSTFIX)
-
 #
 # USED_%NAME%_LIBS
 # Variablen, in denen in gueltiger Reihenfolge ALLE Libraries,
@@ -493,24 +475,6 @@ CPPUNITLIB = icppunit_dll.lib
 REDLANDLIB = librdf.lib
 
 JVMFWKLIB = ijvmfwk.lib
-
-# #110743#
-# For BinFilters, some libs were added.
-#
-
-BFSVXLIB=bf_svx.lib
-BFSCHLIB=bf_ysch.lib
-BFSMLIB=bf_ysm.lib
-BFSCLIB=bf_sclib.lib
-BFSDLIB=bf_sdlib.lib
-BFSWLIB=bf_swlib.lib
-BFOFALIB=bf_ofa.lib
-BFXMLOFFLIB=ibf_xo.lib
-BFGOODIESLIB=bf_go.lib
-BFBASICLIB=bf_sb.lib
-BFSO3LIB=bf_so.lib
-LEGACYSMGRLIB=ilegacy_binfilters.lib
-BFSVTOOLLIB=bf_svt.lib
 
 SABLOT3RDLIB= $(LIBPRE) sablot.lib
 APP3RDLIB= $(LIBPRE) app.lib

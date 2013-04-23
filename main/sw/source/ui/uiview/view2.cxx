@@ -1093,9 +1093,9 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
                     case SID_ALIGN_ANY_HCENTER  :   nAlias = SID_ATTR_PARA_ADJUST_CENTER; break;
                     case SID_ALIGN_ANY_RIGHT    :   nAlias = SID_ATTR_PARA_ADJUST_RIGHT; break;
                     case SID_ALIGN_ANY_JUSTIFIED:   nAlias = SID_ATTR_PARA_ADJUST_BLOCK; break;
-                    case SID_ALIGN_ANY_TOP      :   nAlias = FN_TABLE_VERT_NONE; break;
-                    case SID_ALIGN_ANY_VCENTER  :   nAlias = FN_TABLE_VERT_CENTER; break;
-                    case SID_ALIGN_ANY_BOTTOM   :   nAlias = FN_TABLE_VERT_BOTTOM; break;
+                    case SID_ALIGN_ANY_TOP      :   nAlias = SID_TABLE_VERT_NONE; break;
+                    case SID_ALIGN_ANY_VCENTER  :   nAlias = SID_TABLE_VERT_CENTER; break;
+                    case SID_ALIGN_ANY_BOTTOM   :   nAlias = SID_TABLE_VERT_BOTTOM; break;
                 }
             }
             else
@@ -1179,6 +1179,32 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 	SfxWhichIter aIter( rSet );
 	sal_uInt16 nWhich = aIter.FirstWhich();
 	ASSERT( nWhich, "leeres Set");
+	//IAccessibility2 Implementation 2009-----
+	if (Application::IsAccessibilityEnabled())
+	{
+		//get section chang event
+		const SwSection* CurrSect = rShell.GetCurrSection();
+		if( CurrSect )
+		{
+            String sCurrentSectionName = CurrSect->GetSectionName();
+			if(sCurrentSectionName != nOldSectionName)
+			{
+				rShell.FireSectionChangeEvent(2, 1);
+			}
+			nOldSectionName = sCurrentSectionName;
+		}
+		else if ( !(nOldSectionName.Equals(String()))  )
+		{
+			rShell.FireSectionChangeEvent(2, 1);
+			nOldSectionName = String();
+		}
+		//get column change event
+		if(rShell.bColumnChange())
+		{
+			rShell.FireColumnChangeEvent(2, 1);
+		}
+	}
+	//-----IAccessibility2 Implementation 2009
 
 	while( nWhich )
 	{
@@ -1203,7 +1229,15 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 				rShell.GetPageNumber( -1, rShell.IsCrsrVisible(), nPage, nLogPage, sDisplay );
 				rSet.Put( SfxStringItem( FN_STAT_PAGE,
 							GetPageStr( nPage, nLogPage, sDisplay) ));
-
+				//IAccessibility2 Implementation 2009-----
+				//if existing page number is not equal to old page number, send out this event.
+				if (nOldPageNum != nLogPage )
+				{
+					if (nOldPageNum != 0)
+						rShell.FirePageChangeEvent(nOldPageNum, nLogPage);
+					nOldPageNum = nLogPage;
+				}
+				//-----IAccessibility2 Implementation 2009
 				sal_uInt16 nCnt = GetWrtShell().GetPageCnt();
 				if (nPageCnt != nCnt)	// Basic benachrichtigen
 				{

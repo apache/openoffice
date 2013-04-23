@@ -2450,26 +2450,28 @@ void SwBaseShell::ExecDlg(SfxRequest &rReq)
 	if(pArgs)
 		pArgs->GetItemState( GetPool().GetWhich(nSlot), sal_False, &pItem );
 
-	switch ( nSlot )
-	{
-		case FN_FORMAT_PAGE_COLUMN_DLG:
-		case FN_FORMAT_PAGE_DLG:
-		{
-			if( !bBackground )
-			{
-				const sal_uInt16 nCurIdx = rSh.GetCurPageDesc();
-				const SwPageDesc& rPageDesc = rSh.GetPageDesc( nCurIdx );
-				//temp. View, weil die Shell nach dem Dialog nicht mehr gueltig sein muss
-				//z.B. Kopfzeile ausschalten
+    switch ( nSlot )
+    {
+        case FN_FORMAT_PAGE_DLG:
+        case FN_FORMAT_PAGE_COLUMN_DLG:
+        case FN_FORMAT_PAGE_SETTING_DLG:
+        {
+            if( !bBackground )
+            {
+                const sal_uInt16 nCurIdx = rSh.GetCurPageDesc();
+                const SwPageDesc& rPageDesc = rSh.GetPageDesc( nCurIdx );
+                //temp. View, weil die Shell nach dem Dialog nicht mehr gueltig sein muss
+                //z.B. Kopfzeile ausschalten
                 SwView& rTempView = GetView();
-                rTempView.GetDocShell()->FormatPage(rPageDesc.GetName(),
-									nSlot == FN_FORMAT_PAGE_COLUMN_DLG,
-									&rSh );
+                rTempView.GetDocShell()->FormatPage(
+                    rPageDesc.GetName(),
+                    nSlot,
+                    rSh );
                 rTempView.InvalidateRulerPos();
-			}
-		}
-		break;
-		case FN_FORMAT_BORDER_DLG:
+            }
+        }
+        break;
+        case FN_FORMAT_BORDER_DLG:
 		{
 			SfxItemSet	 aSet( rSh.GetAttrPool(),
 							   RES_BOX	  			, RES_SHADOW,

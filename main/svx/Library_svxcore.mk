@@ -177,6 +177,8 @@ $(eval $(call gb_Library_add_exception_objects,svxcore,\
     svx/source/gallery2/galmisc \
     svx/source/gallery2/galobj \
     svx/source/gallery2/galtheme \
+    svx/source/gallery2/GalleryControl \
+    svx/source/gallery2/GallerySplitter \
     svx/source/items/chrtitem \
     svx/source/items/clipfmtitem \
     svx/source/items/customshapeitem \
@@ -383,6 +385,7 @@ $(eval $(call gb_Library_add_exception_objects,svxcore,\
     svx/source/tbxctrls/fontworkgallery \
     svx/source/tbxctrls/tbcontrl \
     svx/source/tbxctrls/tbxcolorupdate \
+    svx/source/tbxctrls/SvxColorValueSet \
     svx/source/toolbars/extrusionbar \
     svx/source/toolbars/fontworkbar \
     svx/source/unodraw/gluepts \
@@ -424,6 +427,7 @@ $(eval $(call gb_Library_add_exception_objects,svxcore,\
     svx/source/xoutdev/xtabgrdt \
     svx/source/xoutdev/xtabhtch \
     svx/source/xoutdev/xtable \
+    svx/source/xoutdev/XPropertyEntry \
     svx/source/xoutdev/xtablend \
 ))
 

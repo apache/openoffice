@@ -399,24 +399,25 @@ IMPL_LINK( SvxLineEndDefTabPage, ClickModifyHdl_Impl, void *, EMPTYARG )
 			delete( pDlg );
 		}
 
-		// Wenn nicht vorhanden, wird Eintrag aufgenommen
-		if( bDifferent )
-		{
+        // Wenn nicht vorhanden, wird Eintrag aufgenommen
+        if( bDifferent )
+        {
             XLineEndEntry* pEntry = pLineEndList->GetLineEnd( nPos );
 
-			pEntry->SetName( aName );
-			aEdtName.SetText( aName );
+            pEntry->SetName( aName );
+            aEdtName.SetText( aName );
 
-			aLbLineEnds.Modify( pEntry, nPos, pLineEndList->GetBitmap( nPos ) );
-			aLbLineEnds.SelectEntryPos( nPos );
+            const Bitmap aUiBitmap( pLineEndList->GetUiBitmap( nPos ) );
+            aLbLineEnds.Modify( pEntry, nPos, &aUiBitmap );
+            aLbLineEnds.SelectEntryPos( nPos );
 
-			// Flag fuer modifiziert setzen
-			*pnLineEndListState |= CT_MODIFIED;
+            // Flag fuer modifiziert setzen
+            *pnLineEndListState |= CT_MODIFIED;
 
-			*pPageType = 3;
-		}
-	}
-	return( 0L );
+            *pPageType = 3;
+        }
+    }
+    return( 0L );
 }
 
 //------------------------------------------------------------------------
@@ -505,10 +506,10 @@ IMPL_LINK( SvxLineEndDefTabPage, ClickAddHdl_Impl, void *, EMPTYARG )
 
                 long nLineEndCount = pLineEndList->Count();
                 pLineEndList->Insert( pEntry, nLineEndCount );
-                Bitmap* pBitmap = pLineEndList->GetBitmap( nLineEndCount );
+                const Bitmap aBitmap = pLineEndList->GetUiBitmap( nLineEndCount );
 
 				// Zur ListBox hinzufuegen
-				aLbLineEnds.Append( pEntry, pBitmap );
+				aLbLineEnds.Append( pEntry, &aBitmap );
 				aLbLineEnds.SelectEntryPos( aLbLineEnds.GetEntryCount() - 1 );
 
 				// Flag fuer modifiziert setzen

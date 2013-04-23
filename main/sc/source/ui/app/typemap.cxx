@@ -99,7 +99,6 @@
 #include <svx/xftshit.hxx>
 #include <svx/xftshcit.hxx>
 #include <svx/xftshxy.hxx>
-#include <svx/xftsfit.hxx>
 #include <editeng/langitem.hxx>
 #include <svx/grafctrl.hxx>
 #include <editeng/shdditem.hxx>
@@ -108,6 +107,10 @@
 #include <editeng/crsditem.hxx>
 #include <editeng/brkitem.hxx>
 #include <editeng/charreliefitem.hxx>
+#include <editeng/lrspitem.hxx>
+#include <editeng/lspcitem.hxx>
+#include <editeng/ulspitem.hxx>
+#include <editeng/kernitem.hxx>
 #include <svx/rotmodit.hxx>
 #include <svx/drawitem.hxx>
 #include <svl/ilstitem.hxx>
@@ -127,6 +130,11 @@
 #define SvxDrawAlignItem            SfxAllEnumItem
 #define SvxChooseControlItem		SfxEnumItem
 #define avmedia_MediaItem           ::avmedia::MediaItem
+
+#include <svx/xflftrit.hxx>
+#include <svx/xlncapit.hxx>
+#include <svx/xlinjoit.hxx>
+#include <svx/AffineMatrixItem.hxx>
 
 #define SFX_TYPEMAP
 #include "scslots.hxx"

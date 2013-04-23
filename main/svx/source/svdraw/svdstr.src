@@ -1910,11 +1910,6 @@ String SIP_XA_FORMTXTSHDWYVAL
 	Text [ en-US ] = "Fontwork shadow offset Y";
 };
 
-String SIP_XA_FORMTXTSTDFORM
-{
-	Text [ en-US ] = "Fontwork default form";
-};
-
 String SIP_XA_FORMTXTHIDEFORM
 {
 	Text [ en-US ] = "Hide fontwork outline";
@@ -2873,6 +2868,16 @@ Bitmap SIP_SA_CROP_FINE_MARKERS
 Bitmap SIP_SA_ACCESSIBILITY_CROP_MARKERS
 {
 	File = "cropmarkersACC.bmp";
+};
+
+// DialControl bitmaps
+Bitmap IMG_DIACONTROL_NORMAL
+{
+    File = "rotation.png";
+};
+Bitmap IMG_DIACONTROL_H
+{
+    File = "rotation_h.png";
 };
 
 //IAccessibility2 Implementation 2009-----

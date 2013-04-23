@@ -43,6 +43,7 @@
 #include <editeng/sizeitem.hxx>
 #include <editeng/protitem.hxx>
 #include <sfx2/request.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <svl/srchitem.hxx>
 #include <svx/htmlmode.hxx>
 #include <svx/sdgluitm.hxx>
@@ -113,6 +114,7 @@ void SwGrfShell::Execute(SfxRequest &rReq)
         break;
 		case SID_INSERT_GRAPHIC:
 		case FN_FORMAT_GRAFIC_DLG:
+		case FN_DRAW_WRAP_DLG:
 		{
 			SwFlyFrmAttrMgr aMgr( sal_False, &rSh, rSh.IsFrmSelected() ?
 											   FRMMGR_TYPE_NONE : FRMMGR_TYPE_GRF);
@@ -149,10 +151,7 @@ void SwGrfShell::Execute(SfxRequest &rReq)
 			aSet.Put(SfxStringItem(FN_SET_FRM_NAME, rSh.GetFlyName()));
             if ( nSlot == FN_FORMAT_GRAFIC_DLG )
             {
-                // --> OD 2009-07-13 #i73249#
-//                aSet.Put(SfxStringItem(FN_SET_FRM_ALT_NAME, rSh.GetAlternateText()));
                 aSet.Put( SfxStringItem( FN_SET_FRM_ALT_NAME, rSh.GetObjTitle() ) );
-                // <--
             }
 
 			pRect = &rSh.GetAnyCurRect(RECT_PAGE_PRT);
@@ -230,6 +229,10 @@ void SwGrfShell::Execute(SfxRequest &rReq)
 													GetView().GetWindow(),
 													aSet, sal_False, DLG_FRM_GRF);
             DBG_ASSERT(pDlg, "Dialogdiet fail!");
+
+            if (nSlot == FN_DRAW_WRAP_DLG)
+                pDlg->SetCurPageId(TP_FRM_WRAP);
+            
 			if( pDlg->Execute() )
 			{
 				rSh.StartAllAction();
@@ -377,44 +380,43 @@ void SwGrfShell::ExecAttr( SfxRequest &rReq )
 	    if( !pArgs || SFX_ITEM_SET != pArgs->GetItemState( nSlot, sal_False, &pItem ))
 			pItem = 0;
 
-		switch( nSlot )
-		{
-			case FN_FLIP_VERT_GRAFIC:
-			case FN_FLIP_HORZ_GRAFIC:
-			{
+        switch( nSlot )
+        {
+            case SID_FLIP_VERTICAL:
+            case SID_FLIP_HORIZONTAL:
+            {
                 GetShell().GetCurAttr( aGrfSet );
-				SwMirrorGrf aMirror( (SwMirrorGrf&)aGrfSet.Get(
-													RES_GRFATR_MIRRORGRF ) );
-				sal_uInt16 nMirror = aMirror.GetValue();
-				if( FN_FLIP_VERT_GRAFIC == nSlot )
-					switch( nMirror )
-					{
+                SwMirrorGrf aMirror( (SwMirrorGrf&)aGrfSet.Get( RES_GRFATR_MIRRORGRF ) );
+                sal_uInt16 nMirror = aMirror.GetValue();
+                if ( nSlot==SID_FLIP_HORIZONTAL )
+                    switch( nMirror )
+                    {
                     case RES_MIRROR_GRAPH_DONT: nMirror = RES_MIRROR_GRAPH_VERT;
-												break;
+                                                break;
                     case RES_MIRROR_GRAPH_HOR:  nMirror = RES_MIRROR_GRAPH_BOTH;
-												break;
+                                                break;
                     case RES_MIRROR_GRAPH_VERT:   nMirror = RES_MIRROR_GRAPH_DONT;
-												break;
+                                                break;
                     case RES_MIRROR_GRAPH_BOTH: nMirror = RES_MIRROR_GRAPH_HOR;
-												break;
-					}
-				else
-					switch( nMirror )
-					{
+                                                break;
+                    }
+                else
+                    switch( nMirror )
+                    {
                     case RES_MIRROR_GRAPH_DONT: nMirror = RES_MIRROR_GRAPH_HOR;
-												break;
+                                                break;
                     case RES_MIRROR_GRAPH_VERT: nMirror = RES_MIRROR_GRAPH_BOTH;
-												break;
+                                                break;
                     case RES_MIRROR_GRAPH_HOR:    nMirror = RES_MIRROR_GRAPH_DONT;
-												break;
+                                                break;
                     case RES_MIRROR_GRAPH_BOTH: nMirror = RES_MIRROR_GRAPH_VERT;
-												break;
-					}
-				aMirror.SetValue( nMirror );
-				aGrfSet.ClearItem();
-				aGrfSet.Put( aMirror );
-			}
-			break;
+                                                break;
+                    }
+                aMirror.SetValue( nMirror );
+                aGrfSet.ClearItem();
+                aGrfSet.Put( aMirror );
+            }
+            break;
 
 		case SID_ATTR_GRAF_LUMINANCE:
 			if( pItem )
@@ -547,27 +549,27 @@ void SwGrfShell::GetAttrState(SfxItemSet &rSet)
             break;
         }
 
-        case FN_FLIP_VERT_GRAFIC:
-			if( !bParentCntProt )
-			{
+        case SID_FLIP_HORIZONTAL:
+            if( !bParentCntProt )
+            {
                 MirrorGraph nState = static_cast< MirrorGraph >(((const SwMirrorGrf &) aCoreSet.Get(
                                         RES_GRFATR_MIRRORGRF )).GetValue());
 
                 rSet.Put(SfxBoolItem( nWhich, nState == RES_MIRROR_GRAPH_VERT ||
                                               nState == RES_MIRROR_GRAPH_BOTH));
-			}
-			break;
+            }
+            break;
 
-		case FN_FLIP_HORZ_GRAFIC:
-			if( !bParentCntProt )
-			{
+        case SID_FLIP_VERTICAL:
+            if( !bParentCntProt )
+            {
                 MirrorGraph nState = static_cast< MirrorGraph >(((const SwMirrorGrf &) aCoreSet.Get(
                                         RES_GRFATR_MIRRORGRF )).GetValue());
 
                 rSet.Put(SfxBoolItem( nWhich, nState == RES_MIRROR_GRAPH_HOR ||
                                               nState == RES_MIRROR_GRAPH_BOTH));
-			}
-			break;
+            }
+            break;
 
 
 		case SID_ATTR_GRAF_LUMINANCE:
@@ -692,4 +694,5 @@ SwGrfShell::SwGrfShell(SwView &_rView) :
 {
 	SetName(String::CreateFromAscii("Graphic"));
 	SetHelpId(SW_GRFSHELL);
+    SfxShell::SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_Graphic));
 }

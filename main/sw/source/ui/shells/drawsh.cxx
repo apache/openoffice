@@ -35,7 +35,6 @@
 #include <sfx2/objface.hxx>
 #include <svl/itemiter.hxx>
 #include <svl/srchitem.hxx>
-#include <svx/xftsfit.hxx>
 #include <svx/extrusionbar.hxx>
 #include <svx/fontworkbar.hxx>
 #include <svx/tbxcustomshapes.hxx>
@@ -50,6 +49,8 @@
 #include <com/sun/star/ui/dialogs/XExecutableDialog.hpp>
 
 #include <svx/xtable.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
+#include <svx/svdoashp.hxx>
 
 #include "swundo.hxx"
 #include "wrtsh.hxx"
@@ -168,12 +169,12 @@ void SwDrawShell::Execute(SfxRequest &rReq)
 			}
 			break;
 
-        case FN_FLIP_HORZ_GRAFIC:
-			bMirror = sal_False;
-			/* no break */
-        case FN_FLIP_VERT_GRAFIC:
-			rSh.MirrorSelection( bMirror );
-			break;
+        case SID_FLIP_VERTICAL:
+            bMirror = sal_False;
+            /* no break */
+        case SID_FLIP_HORIZONTAL:
+            rSh.MirrorSelection( bMirror );
+            break;
 
 		case SID_FONTWORK:
 		{
@@ -345,15 +346,31 @@ void SwDrawShell::GetState(SfxItemSet& rSet)
 					rSet.Put( SfxBoolItem( nWhich, !GetView().IsDrawSelMode()));
 			break;
 
-			case FN_FLIP_HORZ_GRAFIC:
-				if ( !pSdrView->IsMirrorAllowed() || bProtected )
-					rSet.DisableItem( nWhich );
-				break;
+            case SID_FLIP_VERTICAL:
+                if ( !pSdrView->IsMirrorAllowed() || bProtected )
+                {
+                    rSet.DisableItem( nWhich );
+                }
+                else
+                {
+                    // TTTT - needs to be adapted in aw080:
+                    // state is not kept for drawing objects --> provide not flipped state
+                    rSet.Put( SfxBoolItem( nWhich, sal_False ) );
+                }
+                break;
 
-			case FN_FLIP_VERT_GRAFIC:
-				if ( !pSdrView->IsMirrorAllowed() || bProtected )
-					rSet.DisableItem( nWhich );
-				break;
+            case SID_FLIP_HORIZONTAL:
+                if ( !pSdrView->IsMirrorAllowed() || bProtected )
+                {
+                    rSet.DisableItem( nWhich );
+                }
+                else
+                {
+                    // TTTT - needs to be adapted in aw080:
+                    // state is not kept for drawing objects --> provide not flipped state
+                    rSet.Put( SfxBoolItem( nWhich, sal_False ) );
+                }
+                break;
 
 			case SID_FONTWORK:
 			{
@@ -384,6 +401,8 @@ SwDrawShell::SwDrawShell(SwView &_rView) :
 {
 	SetHelpId(SW_DRAWSHELL);
 	SetName(String::CreateFromAscii("Draw"));
+
+    SfxShell::SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_Draw));
 }
 
 /*************************************************************************
@@ -406,7 +425,6 @@ void SwDrawShell::ExecFormText(SfxRequest& rReq)
 	if ( rMarkList.GetMarkCount() == 1 && rReq.GetArgs() )
 	{
 		const SfxItemSet& rSet = *rReq.GetArgs();
-		const SfxPoolItem* pItem;
 
 		if ( pDrView->IsTextEdit() )
 		{
@@ -414,24 +432,7 @@ void SwDrawShell::ExecFormText(SfxRequest& rReq)
 			GetView().AttrChangedNotify(&rSh);
 		}
 
-		if ( rSet.GetItemState(XATTR_FORMTXTSTDFORM, sal_True, &pItem) ==
-			 SFX_ITEM_SET &&
-			((const XFormTextStdFormItem*) pItem)->GetValue() != XFTFORM_NONE )
-		{
-
-			const sal_uInt16 nId = SvxFontWorkChildWindow::GetChildWindowId();
-
-			SvxFontWorkDialog* pDlg = (SvxFontWorkDialog*)(GetView().GetViewFrame()->
-										GetChildWindow(nId)->GetWindow());
-
-			pDlg->CreateStdFormObj(*pDrView, *pDrView->GetSdrPageView(),
-									rSet, *rMarkList.GetMark(0)->GetMarkedSdrObj(),
-								   ((const XFormTextStdFormItem*) pItem)->
-								   GetValue());
-
-		}
-		else
-			pDrView->SetAttributes(rSet);
+		pDrView->SetAttributes(rSet);
 	}
 	if (pDrView->GetModel()->IsChanged())
 		rSh.SetModified();
@@ -465,29 +466,32 @@ void SwDrawShell::GetFormTextState(SfxItemSet& rSet)
 	if ( rMarkList.GetMarkCount() == 1 )
 		pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 
-	if ( pObj == NULL || !pObj->ISA(SdrTextObj) ||
-		!((SdrTextObj*) pObj)->HasText() )
+    const SdrTextObj* pTextObj = dynamic_cast< const SdrTextObj* >(pObj);
+    const bool bDeactivate(
+        !pObj ||
+        !pTextObj ||
+        !pTextObj->HasText() ||
+        dynamic_cast< const SdrObjCustomShape* >(pObj)); // #121538# no FontWork for CustomShapes
+
+    if(bDeactivate)
 	{
-#define	XATTR_ANZ 12
-		static const sal_uInt16 nXAttr[ XATTR_ANZ ] =
-		{
-			XATTR_FORMTXTSTYLE, XATTR_FORMTXTADJUST, XATTR_FORMTXTDISTANCE,
-			XATTR_FORMTXTSTART, XATTR_FORMTXTMIRROR, XATTR_FORMTXTSTDFORM,
-			XATTR_FORMTXTHIDEFORM, XATTR_FORMTXTOUTLINE, XATTR_FORMTXTSHADOW,
-			XATTR_FORMTXTSHDWCOLOR, XATTR_FORMTXTSHDWXVAL, XATTR_FORMTXTSHDWYVAL
-		};
-		for( sal_uInt16 i = 0; i < XATTR_ANZ; )
-			rSet.DisableItem( nXAttr[ i++ ] );
+        rSet.DisableItem(XATTR_FORMTXTSTYLE);
+        rSet.DisableItem(XATTR_FORMTXTADJUST);
+        rSet.DisableItem(XATTR_FORMTXTDISTANCE);
+        rSet.DisableItem(XATTR_FORMTXTSTART);
+        rSet.DisableItem(XATTR_FORMTXTMIRROR);
+        rSet.DisableItem(XATTR_FORMTXTHIDEFORM);
+        rSet.DisableItem(XATTR_FORMTXTOUTLINE);
+        rSet.DisableItem(XATTR_FORMTXTSHADOW);
+        rSet.DisableItem(XATTR_FORMTXTSHDWCOLOR);
+        rSet.DisableItem(XATTR_FORMTXTSHDWXVAL);
+        rSet.DisableItem(XATTR_FORMTXTSHDWYVAL);
 	}
 	else
 	{
 		if ( pDlg )
-			pDlg->SetColorTable(XColorTable::GetStdColorTable());
+			pDlg->SetColorTable(XColorList::GetStdColorList());
 
 		pDrView->GetAttributes( rSet );
 	}
 }
-
-
-
-

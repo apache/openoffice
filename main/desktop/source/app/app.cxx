@@ -409,6 +409,8 @@ namespace
 {
     struct BrandName
         : public rtl::Static< String, BrandName > {};
+    struct FullProductname
+        : public rtl::Static< String, FullProductname > {};
     struct Version
         : public rtl::Static< String, Version > {};
     struct AboutBoxVersion
@@ -430,9 +432,11 @@ void ReplaceStringHookProc( UniString& rStr )
     static int nAll = 0, nPro = 0;
 
     nAll++;
-    if ( rStr.SearchAscii( "%PRODUCT" ) != STRING_NOTFOUND )
+    if ( ( rStr.SearchAscii( "%PRODUCT" ) != STRING_NOTFOUND ) ||
+         ( rStr.SearchAscii( "%FULLPRODUCT" ) != STRING_NOTFOUND ) )
     {
         String &rBrandName = BrandName::get();
+        String& rFullProductname = FullProductname::get();
         String &rVersion = Version::get();
         String &rAboutBoxVersion = AboutBoxVersion::get();
         String &rExtension = Extension::get();
@@ -445,6 +449,10 @@ void ReplaceStringHookProc( UniString& rStr )
             Any aRet = ::utl::ConfigManager::GetDirectConfigProperty( ::utl::ConfigManager::PRODUCTNAME );
             aRet >>= aTmp;
             rBrandName = aTmp;
+
+            aRet = ::utl::ConfigManager::GetDirectConfigProperty( ::utl::ConfigManager::FULLPRODUCTNAME );
+            aRet >>= aTmp;
+            rFullProductname = aTmp;
 
             aRet = ::utl::ConfigManager::GetDirectConfigProperty( ::utl::ConfigManager::PRODUCTXMLFILEFORMATNAME );
             aRet >>= aTmp;
@@ -472,6 +480,7 @@ void ReplaceStringHookProc( UniString& rStr )
 
         nPro++;
         rStr.SearchAndReplaceAllAscii( "%PRODUCTNAME", rBrandName );
+        rStr.SearchAndReplaceAllAscii( "%FULLPRODUCTNAME", rFullProductname );
         rStr.SearchAndReplaceAllAscii( "%PRODUCTVERSION", rVersion );
         rStr.SearchAndReplaceAllAscii( "%ABOUTBOXPRODUCTVERSION", rAboutBoxVersion );
         rStr.SearchAndReplaceAllAscii( "%PRODUCTEXTENSION", rExtension );
@@ -580,7 +589,7 @@ static bool needsSynchronization(
 static ::rtl::OUString getBrandSharePreregBundledPathURL()
 {
     ::rtl::OUString url(
-        RTL_CONSTASCII_USTRINGPARAM("$BRAND_BASE_DIR/share/prereg/bundled"));
+        RTL_CONSTASCII_USTRINGPARAM("$OOO_BASE_DIR/share/prereg/bundled"));
 
     ::rtl::Bootstrap::expandMacros(url);
     return url;
@@ -874,7 +883,7 @@ static bool needsInstallBundledExtensionBlobs (
 // install bundled but non-pre-registered extension blobs
 static void installBundledExtensionBlobs()
 {
-	rtl::OUString aDirUrl( OUSTR("$BRAND_BASE_DIR/share/extensions/install"));
+	rtl::OUString aDirUrl( OUSTR("$OOO_BASE_DIR/share/extensions/install"));
 	::rtl::Bootstrap::expandMacros( aDirUrl);
 	::osl::Directory aDir( aDirUrl);
 

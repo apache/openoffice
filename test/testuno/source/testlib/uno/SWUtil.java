@@ -29,8 +29,8 @@ import com.sun.star.beans.XPropertySet;
 import com.sun.star.container.XNameAccess;
 import com.sun.star.container.XNameContainer;
 import com.sun.star.container.XNamed;
-import com.sun.star.document.XDocumentInfo;
-import com.sun.star.document.XDocumentInfoSupplier;
+import com.sun.star.document.XDocumentProperties;
+import com.sun.star.document.XDocumentPropertiesSupplier;
 import com.sun.star.frame.XStorable;
 import com.sun.star.io.IOException;
 import com.sun.star.lang.XComponent;
@@ -119,18 +119,23 @@ public class SWUtil {
 	}
 	
 	/**
-	 * Set document properties. such as subject, title etc
+	 * Set document properties. Only supported: subject, title, author
 	 * @param document - set document information on this document
-	 * @param prop - document information, including "Subject" ,"Title", "Author", "Title", "KeyWords"
+	 * @param prop - document information, including "Subject" ,"Title", "Author"
 	 * @param propValue - value you want to set for prop
 	 * @throws Exception
 	 */
 	public static void setDocumentProperty(XTextDocument document, String prop, String propValue) throws Exception {
-		XDocumentInfoSupplier docInfoSupplier = (XDocumentInfoSupplier) UnoRuntime.queryInterface(XDocumentInfoSupplier.class, document);
-		XDocumentInfo docInfo = docInfoSupplier.getDocumentInfo();
-		XPropertySet propsDocInfo = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, docInfo);
-		propsDocInfo.setPropertyValue(prop, propValue);
-	}
+       XDocumentPropertiesSupplier docPropsSupplier = UnoRuntime.queryInterface(
+            XDocumentPropertiesSupplier.class, document);
+       XDocumentProperties docProps = docPropsSupplier.getDocumentProperties();
+        if ( prop.equals("Title"))
+            docProps.setTitle(propValue);
+        else if ( prop.equals("Author"))
+            docProps.setAuthor(propValue);
+        else if ( prop.equals("Subject"))
+            docProps.setSubject(propValue);
+    }
 	
 
 	/**

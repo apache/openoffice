@@ -164,6 +164,10 @@ SvxLineDefTabPage::SvxLineDefTabPage
 	aLbLineStyles.SetSelectHdl(
 		LINK( this, SvxLineDefTabPage, SelectLinestyleHdl_Impl ) );
 
+    // #122042# switch off default adding of 'none' and 'solid' entries
+    // for this ListBox; we want to select only editable/dashed styles
+    aLbLineStyles.setAddStandardFields(false);
+
 	// Absolut (in mm) oder Relativ (in %)
 	aCbxSynchronize.SetClickHdl(
 		LINK( this, SvxLineDefTabPage, ChangeMetricHdl_Impl ) );
@@ -191,7 +195,7 @@ SvxLineDefTabPage::SvxLineDefTabPage
 
 void SvxLineDefTabPage::Construct()
 {
-	// Linienstile
+	// Line style fill; do *not* add default fields here
 	aLbLineStyles.Fill( pDashList );
 }
 
@@ -390,14 +394,17 @@ SfxTabPage* SvxLineDefTabPage::Create( Window* pWindow,
 
 IMPL_LINK( SvxLineDefTabPage, SelectLinestyleHdl_Impl, void *, p )
 {
-	if( pDashList->Count() > 0 )
+	if(pDashList->Count())
 	{
 		int nTmp = aLbLineStyles.GetSelectEntryPos();
-		if( nTmp == LISTBOX_ENTRY_NOTFOUND )
+		
+        if(LISTBOX_ENTRY_NOTFOUND == nTmp)
 		{
+            OSL_ENSURE(false, "OOps, non-existent LineDash selected (!)");
+            nTmp = 1;
 		}
-		else
-            aDash = pDashList->GetDash( nTmp )->GetDash();
+
+        aDash = pDashList->GetDash( nTmp )->GetDash();
 
 		FillDialog_Impl();
 
@@ -626,8 +633,8 @@ IMPL_LINK( SvxLineDefTabPage, ClickAddHdl_Impl, void *, EMPTYARG )
 
             long nDashCount = pDashList->Count();
             pDashList->Insert( pEntry, nDashCount );
-            Bitmap* pBitmap = pDashList->GetBitmap( nDashCount );
-			aLbLineStyles.Append( pEntry, pBitmap );
+            const Bitmap aBitmap = pDashList->GetUiBitmap( nDashCount );
+			aLbLineStyles.Append( pEntry, &aBitmap );
 
 			aLbLineStyles.SelectEntryPos( aLbLineStyles.GetEntryCount() - 1 );
 
@@ -707,8 +714,8 @@ IMPL_LINK( SvxLineDefTabPage, ClickModifyHdl_Impl, void *, EMPTYARG )
 				XDashEntry* pEntry = new XDashEntry( aDash, aName );
 
 				delete pDashList->Replace( pEntry, nPos );
-				Bitmap* pBitmap = pDashList->GetBitmap( nPos );
-				aLbLineStyles.Modify( pEntry, nPos, pBitmap );
+				const Bitmap aBitmap = pDashList->GetUiBitmap( nPos );
+				aLbLineStyles.Modify( pEntry, nPos, &aBitmap );
 
 				aLbLineStyles.SelectEntryPos( nPos );
 
