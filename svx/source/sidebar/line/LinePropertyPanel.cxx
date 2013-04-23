@@ -231,12 +231,7 @@ LinePropertyPanel::LinePropertyPanel(
     mxFrame(rxFrame),
     mpBindings(pBindings),
     mbColorAvailable(true),
-    mbStyleAvailable(false),
-    mbDashAvailable(false),
-    mbTransAvailable(true),
-    mbWidthValuable(true),
-    mbStartAvailable(true),
-    mbEndAvailable(true)
+    mbWidthValuable(true)
 {
     Initialize();
     FreeResource();
@@ -267,79 +262,79 @@ void LinePropertyPanel::Initialize()
     mpFTCapStyle->SetBackground(Wallpaper());
 
     mpIMGWidthIcon.reset(new Image[8]);
-	mpIMGWidthIcon[0] = Image(SVX_RES(IMG_WIDTH1_ICON));
-	mpIMGWidthIcon[1] = Image(SVX_RES(IMG_WIDTH2_ICON));
-	mpIMGWidthIcon[2] = Image(SVX_RES(IMG_WIDTH3_ICON));
-	mpIMGWidthIcon[3] = Image(SVX_RES(IMG_WIDTH4_ICON));
-	mpIMGWidthIcon[4] = Image(SVX_RES(IMG_WIDTH5_ICON));
-	mpIMGWidthIcon[5] = Image(SVX_RES(IMG_WIDTH6_ICON));
-	mpIMGWidthIcon[6] = Image(SVX_RES(IMG_WIDTH7_ICON));
-	mpIMGWidthIcon[7] = Image(SVX_RES(IMG_WIDTH8_ICON));
+    mpIMGWidthIcon[0] = Image(SVX_RES(IMG_WIDTH1_ICON));
+    mpIMGWidthIcon[1] = Image(SVX_RES(IMG_WIDTH2_ICON));
+    mpIMGWidthIcon[2] = Image(SVX_RES(IMG_WIDTH3_ICON));
+    mpIMGWidthIcon[3] = Image(SVX_RES(IMG_WIDTH4_ICON));
+    mpIMGWidthIcon[4] = Image(SVX_RES(IMG_WIDTH5_ICON));
+    mpIMGWidthIcon[5] = Image(SVX_RES(IMG_WIDTH6_ICON));
+    mpIMGWidthIcon[6] = Image(SVX_RES(IMG_WIDTH7_ICON));
+    mpIMGWidthIcon[7] = Image(SVX_RES(IMG_WIDTH8_ICON));
 
-	//high contrast
+    //high contrast
     mpIMGWidthIconH.reset(new Image[8]);
-	mpIMGWidthIconH[0] = Image(SVX_RES(IMG_WIDTH1_ICON_H));
-	mpIMGWidthIconH[1] = Image(SVX_RES(IMG_WIDTH2_ICON_H));
-	mpIMGWidthIconH[2] = Image(SVX_RES(IMG_WIDTH3_ICON_H));
-	mpIMGWidthIconH[3] = Image(SVX_RES(IMG_WIDTH4_ICON_H));
-	mpIMGWidthIconH[4] = Image(SVX_RES(IMG_WIDTH5_ICON_H));
-	mpIMGWidthIconH[5] = Image(SVX_RES(IMG_WIDTH6_ICON_H));
-	mpIMGWidthIconH[6] = Image(SVX_RES(IMG_WIDTH7_ICON_H));
-	mpIMGWidthIconH[7] = Image(SVX_RES(IMG_WIDTH8_ICON_H));
+    mpIMGWidthIconH[0] = Image(SVX_RES(IMG_WIDTH1_ICON_H));
+    mpIMGWidthIconH[1] = Image(SVX_RES(IMG_WIDTH2_ICON_H));
+    mpIMGWidthIconH[2] = Image(SVX_RES(IMG_WIDTH3_ICON_H));
+    mpIMGWidthIconH[3] = Image(SVX_RES(IMG_WIDTH4_ICON_H));
+    mpIMGWidthIconH[4] = Image(SVX_RES(IMG_WIDTH5_ICON_H));
+    mpIMGWidthIconH[5] = Image(SVX_RES(IMG_WIDTH6_ICON_H));
+    mpIMGWidthIconH[6] = Image(SVX_RES(IMG_WIDTH7_ICON_H));
+    mpIMGWidthIconH[7] = Image(SVX_RES(IMG_WIDTH8_ICON_H));
 
-	meMapUnit = maWidthControl.GetCoreMetric();
+    meMapUnit = maWidthControl.GetCoreMetric();
 
-	mpTBColor->SetItemImage(TBI_COLOR, maIMGColor);
-	Size aTbxSize( mpTBColor->CalcWindowSizePixel() );
-	mpTBColor->SetOutputSizePixel( aTbxSize );
-	mpTBColor->SetItemBits( TBI_COLOR, mpTBColor->GetItemBits( TBI_COLOR ) | TIB_DROPDOWNONLY );
-	mpTBColor->SetQuickHelpText(TBI_COLOR,String(SVX_RES(STR_QH_TB_COLOR))); //Add
-	mpTBColor->SetBackground(Wallpaper());
-	mpTBColor->SetPaintTransparent(true);
-	Link aLink = LINK(this, LinePropertyPanel, ToolboxColorSelectHdl);
-	mpTBColor->SetDropdownClickHdl ( aLink );
-	mpTBColor->SetSelectHdl ( aLink );
+    mpTBColor->SetItemImage(TBI_COLOR, maIMGColor);
+    Size aTbxSize( mpTBColor->CalcWindowSizePixel() );
+    mpTBColor->SetOutputSizePixel( aTbxSize );
+    mpTBColor->SetItemBits( TBI_COLOR, mpTBColor->GetItemBits( TBI_COLOR ) | TIB_DROPDOWNONLY );
+    mpTBColor->SetQuickHelpText(TBI_COLOR,String(SVX_RES(STR_QH_TB_COLOR))); //Add
+    mpTBColor->SetBackground(Wallpaper());
+    mpTBColor->SetPaintTransparent(true);
+    Link aLink = LINK(this, LinePropertyPanel, ToolboxColorSelectHdl);
+    mpTBColor->SetDropdownClickHdl ( aLink );
+    mpTBColor->SetSelectHdl ( aLink );
 
-	FillLineStyleList();
-	SelectLineStyle();
-	aLink = LINK( this, LinePropertyPanel, ChangeLineStyleHdl );
-	mpLBStyle->SetSelectHdl( aLink );
-	mpLBStyle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Style")));
+    FillLineStyleList();
+    SelectLineStyle();
+    aLink = LINK( this, LinePropertyPanel, ChangeLineStyleHdl );
+    mpLBStyle->SetSelectHdl( aLink );
+    mpLBStyle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Style")));
     mpLBStyle->AdaptDropDownLineCountToMaximum();
 
-	mpTBWidth->SetItemImage(TBI_WIDTH, mpIMGWidthIcon[0]);
-	aTbxSize = mpTBWidth->CalcWindowSizePixel() ;
-	mpTBWidth->SetOutputSizePixel( aTbxSize );
-	mpTBWidth->SetItemBits( TBI_WIDTH, mpTBWidth->GetItemBits( TBI_WIDTH ) | TIB_DROPDOWNONLY );
-	mpTBWidth->SetQuickHelpText(TBI_WIDTH,String(SVX_RES(STR_QH_TB_WIDTH))); //Add
-	mpTBWidth->SetBackground(Wallpaper());
-	mpTBWidth->SetPaintTransparent(true);
-	aLink = LINK(this, LinePropertyPanel, ToolboxWidthSelectHdl);
-	mpTBWidth->SetDropdownClickHdl ( aLink );
-	mpTBWidth->SetSelectHdl ( aLink );
+    mpTBWidth->SetItemImage(TBI_WIDTH, mpIMGWidthIcon[0]);
+    aTbxSize = mpTBWidth->CalcWindowSizePixel() ;
+    mpTBWidth->SetOutputSizePixel( aTbxSize );
+    mpTBWidth->SetItemBits( TBI_WIDTH, mpTBWidth->GetItemBits( TBI_WIDTH ) | TIB_DROPDOWNONLY );
+    mpTBWidth->SetQuickHelpText(TBI_WIDTH,String(SVX_RES(STR_QH_TB_WIDTH))); //Add
+    mpTBWidth->SetBackground(Wallpaper());
+    mpTBWidth->SetPaintTransparent(true);
+    aLink = LINK(this, LinePropertyPanel, ToolboxWidthSelectHdl);
+    mpTBWidth->SetDropdownClickHdl ( aLink );
+    mpTBWidth->SetSelectHdl ( aLink );
 
-	FillLineEndList();
-	SelectEndStyle(true);
-	SelectEndStyle(false);
-	aLink = LINK( this, LinePropertyPanel, ChangeStartHdl );
-	mpLBStart->SetSelectHdl( aLink );
-	mpLBStart->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Beginning Style")));	//wj acc
+    FillLineEndList();
+    SelectEndStyle(true);
+    SelectEndStyle(false);
+    aLink = LINK( this, LinePropertyPanel, ChangeStartHdl );
+    mpLBStart->SetSelectHdl( aLink );
+    mpLBStart->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Beginning Style")));	//wj acc
     mpLBStart->AdaptDropDownLineCountToMaximum();
-	aLink = LINK( this, LinePropertyPanel, ChangeEndHdl );
-	mpLBEnd->SetSelectHdl( aLink );
-	mpLBEnd->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Ending Style")));	//wj acc
+    aLink = LINK( this, LinePropertyPanel, ChangeEndHdl );
+    mpLBEnd->SetSelectHdl( aLink );
+    mpLBEnd->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Ending Style")));	//wj acc
     mpLBEnd->AdaptDropDownLineCountToMaximum();
 
-	aLink = LINK(this, LinePropertyPanel, ChangeTransparentHdl);
-	mpMFTransparent->SetModifyHdl(aLink);
-	mpMFTransparent->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency")));	//wj acc
-	
-	mpTBWidth->SetAccessibleRelationLabeledBy(mpFTWidth.get());
-	mpTBColor->SetAccessibleRelationLabeledBy(mpFTColor.get());
+    aLink = LINK(this, LinePropertyPanel, ChangeTransparentHdl);
+    mpMFTransparent->SetModifyHdl(aLink);
+    mpMFTransparent->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency")));	//wj acc
+    
+    mpTBWidth->SetAccessibleRelationLabeledBy(mpFTWidth.get());
+    mpTBColor->SetAccessibleRelationLabeledBy(mpFTColor.get());
     mpLBStyle->SetAccessibleRelationLabeledBy(mpFTStyle.get());
-	mpMFTransparent->SetAccessibleRelationLabeledBy(mpFTTrancparency.get());
-	mpLBStart->SetAccessibleRelationLabeledBy(mpFTArrow.get());
-	mpLBEnd->SetAccessibleRelationLabeledBy(mpLBEnd.get());
+    mpMFTransparent->SetAccessibleRelationLabeledBy(mpFTTrancparency.get());
+    mpLBStart->SetAccessibleRelationLabeledBy(mpFTArrow.get());
+    mpLBEnd->SetAccessibleRelationLabeledBy(mpLBEnd.get());
 
     aLink = LINK( this, LinePropertyPanel, ChangeEdgeStyleHdl );
     mpLBEdgeStyle->SetSelectHdl( aLink );
@@ -405,213 +400,238 @@ void LinePropertyPanel::NotifyItemUpdate(
     const bool bIsEnabled)
 {
     (void)bIsEnabled;
+    const bool bDisabled(SFX_ITEM_DISABLED == eState);
 
-	switch(nSID)
-	{
-    	case SID_ATTR_LINE_COLOR:
+    switch(nSID)
+    {
+        case SID_ATTR_LINE_COLOR:
         {
-		    if( eState == SFX_ITEM_DISABLED)
-		    { 
-			    mpFTColor->Disable();
-			    mpTBColor->Disable();
-			    mbColorAvailable = false;
-			    mpColorUpdater->Update(COL_WHITE);
-		    }
-		    else
-		    {
-			    mpFTColor->Enable();
-			    mpTBColor->Enable();
+            if(bDisabled)
+            { 
+                mpFTColor->Disable();
+                mpTBColor->Disable();
+            }
+            else
+            {
+                mpFTColor->Enable();
+                mpTBColor->Enable();
+            }
+
+            if(eState >= SFX_ITEM_DEFAULT)
+            {
                 const XLineColorItem* pItem = dynamic_cast< const XLineColorItem* >(pState);
+                if(pItem)
+                {
+                    maColor = pItem->GetColorValue();
+                    mbColorAvailable = true;
+                    mpColorUpdater->Update(maColor);
+                    break;
+                }
+            }
 
-			    if(eState >= SFX_ITEM_DEFAULT && pItem)
-			    {
-				    maColor = pItem->GetColorValue();
-				    mbColorAvailable = true;
-				    mpColorUpdater->Update(maColor);
-			    }
-			    else
-			    {
-				    mbColorAvailable = false;
-				    mpColorUpdater->Update(COL_WHITE);
-			    }	
-		    }
-		    break;
+            mbColorAvailable = false;
+            mpColorUpdater->Update(COL_WHITE);
+            break;
         }
-	    case SID_ATTR_LINE_DASH:
-	    case SID_ATTR_LINE_STYLE:
+        case SID_ATTR_LINE_DASH:
+        case SID_ATTR_LINE_STYLE:
         {
-		    if( eState == SFX_ITEM_DISABLED)
-		    {
-			    mpFTStyle->Disable();
+            if(bDisabled)
+            {
+                mpFTStyle->Disable();
                 mpLBStyle->Disable();
-		    }
-		    else
-		    {
-			    mpFTStyle->Enable();
+            }
+            else
+            {
+                mpFTStyle->Enable();
                 mpLBStyle->Enable();
-			    if( eState  >= SFX_ITEM_DEFAULT )
-			    {
-				    if(nSID == SID_ATTR_LINE_STYLE)
-				    {
-                        const XLineStyleItem* pItem = dynamic_cast< const XLineStyleItem* >(pState);
+            }
 
-                        if(pItem)
-                        {
-					        mbStyleAvailable =true;
-    					    mpStyleItem.reset(pState ? (XLineStyleItem*)pItem->Clone() : 0);
-                        }
-				    }
-				    else if(nSID == SID_ATTR_LINE_DASH)
-				    {
-                        const XLineDashItem* pItem = dynamic_cast< const XLineDashItem* >(pState);
+            if(eState  >= SFX_ITEM_DEFAULT)
+            {
+                if(nSID == SID_ATTR_LINE_STYLE)
+                {
+                    const XLineStyleItem* pItem = dynamic_cast< const XLineStyleItem* >(pState);
 
-                        if(pItem)
-                        {
-    					    mbDashAvailable = true;
-	    				    mpDashItem.reset(pState ? (XLineDashItem*)pItem->Clone() : 0);
-                        }
-				    }
-			    }
-			    else
-			    {
-				    if(nSID == SID_ATTR_LINE_STYLE)
-					    mbStyleAvailable = false;
-				    else 
-					    mbDashAvailable = false;
-			    }
+                    if(pItem)
+                    {
+                        mpStyleItem.reset(pState ? (XLineStyleItem*)pItem->Clone() : 0);
+                    }
+                }
+                else // if(nSID == SID_ATTR_LINE_DASH)
+                {
+                    const XLineDashItem* pItem = dynamic_cast< const XLineDashItem* >(pState);
 
-                SelectLineStyle();
-		    }
-		    break;
+                    if(pItem)
+                    {
+                        mpDashItem.reset(pState ? (XLineDashItem*)pItem->Clone() : 0);
+                    }
+                }
+            }
+            else
+            {
+                if(nSID == SID_ATTR_LINE_STYLE)
+                {
+                    mpStyleItem.reset(0);
+                }
+                else 
+                {
+                    mpDashItem.reset(0);
+                }
+            }
+
+            SelectLineStyle();
+            break;
         }
-    	case SID_ATTR_LINE_TRANSPARENCE:
+        case SID_ATTR_LINE_TRANSPARENCE:
         {
-		    if( eState == SFX_ITEM_DISABLED )
-		    {
-			    mpFTTrancparency->Disable();
-			    mpMFTransparent->Disable();
-			    mpMFTransparent->SetValue(0);//add 
-			    mpMFTransparent->SetText(String());
-			    mbTransAvailable = false;
-		    }
-		    else
-		    {
-			    mpFTTrancparency->Enable();
-			    mpMFTransparent->Enable();
-			    mbTransAvailable = true;
+            if(bDisabled)
+            {
+                mpFTTrancparency->Disable();
+                mpMFTransparent->Disable();
+            }
+            else
+            {
+                mpFTTrancparency->Enable();
+                mpMFTransparent->Enable();
+            }
+
+            if(eState >= SFX_ITEM_DEFAULT)
+            {
                 const XLineTransparenceItem* pItem = dynamic_cast< const XLineTransparenceItem* >(pState);
 
-                if(eState != SFX_ITEM_DONTCARE && pItem)
-			    {
-				    mnTrans = pItem->GetValue();
-				    mpMFTransparent->SetValue(mnTrans);
-			    }
-			    else
-			    {
-				    mpMFTransparent->SetValue(0);//add 
-				    mpMFTransparent->SetText(String());
-			    }
-		    }
-		    break;
+                if(pItem)
+                {
+                    mnTrans = pItem->GetValue();
+                    mpMFTransparent->SetValue(mnTrans);
+                    break;
+                }
+            }
+
+            mpMFTransparent->SetValue(0);//add 
+            mpMFTransparent->SetText(String());
+            break;
         }
-    	case SID_ATTR_LINE_WIDTH:
+        case SID_ATTR_LINE_WIDTH:
         {
-		    if(eState == SFX_ITEM_DISABLED)
-		    {
-			    mpTBWidth->Disable();
-			    mpFTWidth->Disable();
-		    }
-		    else
-		    {
-			    //enable
-			    mpTBWidth->Enable();
-			    mpFTWidth->Enable();
+            if(bDisabled)
+            {
+                mpTBWidth->Disable();
+                mpFTWidth->Disable();
+            }
+            else
+            {
+                mpTBWidth->Enable();
+                mpFTWidth->Enable();
+            }
+
+            if(eState >= SFX_ITEM_DEFAULT)
+            {
                 const XLineWidthItem* pItem = dynamic_cast< const XLineWidthItem* >(pState);
 
-			    if(eState >= SFX_ITEM_AVAILABLE && pItem)
-			    {
-				    mnWidthCoreValue = pItem->GetValue();
-				    mbWidthValuable = true;
-			    }
-			    else
-			    {
-				    mbWidthValuable = false;
-			    }
-		    }
-		    SetWidthIcon();
-		    break;
-        }
-    	case SID_ATTR_LINE_START:
-        {
-		    mpFTArrow->Enable();
-		    mpLBStart->Enable();
+                if(pItem)
+                {
+                    mnWidthCoreValue = pItem->GetValue();
+                    mbWidthValuable = true;
+                    SetWidthIcon();
+                    break;
+                }
+            }
 
-		    if(eState != SFX_ITEM_DONTCARE)
-		    {
+            mbWidthValuable = false;
+            SetWidthIcon();
+            break;
+        }
+        case SID_ATTR_LINE_START:
+        {
+            if(bDisabled)
+            {
+                mpFTArrow->Disable();
+                mpLBStart->Disable();
+            }
+            else
+            {
+                mpFTArrow->Enable();
+                mpLBStart->Enable();
+            }
+
+            if(eState >= SFX_ITEM_DEFAULT)
+            {
                 const XLineStartItem* pItem = dynamic_cast< const XLineStartItem* >(pState);
 
                 if(pItem)
                 {
-			        mbStartAvailable = true;	//add 
-			        mpStartItem.reset(pItem ? (XLineStartItem*)pItem->Clone() : 0);
-			        SelectEndStyle(true);
+                    mpStartItem.reset(pItem ? (XLineStartItem*)pItem->Clone() : 0);
+                    SelectEndStyle(true);
                     break;
                 }
-		    }
+            }
 
-            mpLBStart->SetNoSelection();
-			mbStartAvailable = false;	//add 
-		    break;
+            mpStartItem.reset(0);
+            SelectEndStyle(true);
+            break;
         }
-    	case SID_ATTR_LINE_END:
+        case SID_ATTR_LINE_END:
         {
-		    mpFTArrow->Enable();
-		    mpLBEnd->Enable();
+            if(bDisabled)
+            {
+                mpFTArrow->Disable();
+                mpLBEnd->Disable();
+            }
+            else
+            {
+                mpFTArrow->Enable();
+                mpLBEnd->Enable();
+            }
 
-		    if(eState != SFX_ITEM_DONTCARE)
-		    {
+            if(eState >= SFX_ITEM_DEFAULT)
+            {
                 const XLineEndItem* pItem = dynamic_cast< const XLineEndItem* >(pState);
 
                 if(pItem)
                 {
-			        mbEndAvailable = true;		//add 
-			        mpEndItem.reset(pItem ? (XLineEndItem*)pItem->Clone() : 0);
-			        SelectEndStyle(false);		
+                    mpEndItem.reset(pItem ? (XLineEndItem*)pItem->Clone() : 0);
+                    SelectEndStyle(false);
                     break;
                 }
-		    }
+            }
 
-            mpLBEnd->SetNoSelection();
-			mbEndAvailable = false;		//add 
-		    break;
+            mpEndItem.reset(0);
+            SelectEndStyle(false);
+            break;
         }
-    	case SID_LINEEND_LIST:
+        case SID_LINEEND_LIST:
         {
-		    FillLineEndList();
-		    SelectEndStyle(true);
-		    SelectEndStyle(false);
-		    break;
+            FillLineEndList();
+            SelectEndStyle(true);
+            SelectEndStyle(false);
+            break;
         }
-    	case SID_DASH_LIST:
+        case SID_DASH_LIST:
         {
-		    FillLineStyleList();
-		    SelectLineStyle();
-		    break;
+            FillLineStyleList();
+            SelectLineStyle();
+            break;
         }
         case SID_ATTR_LINE_JOINT:
         {
-            if(eState == SFX_ITEM_DISABLED)
+            if(bDisabled)
             {
                 mpLBEdgeStyle->Disable();
             }
             else
             {
                 mpLBEdgeStyle->Enable();
-                const XLineJointItem* pItem = dynamic_cast< const XLineJointItem* >(pState);
-                sal_uInt16 nEntryPos(0);
+            }
 
-                if(eState >= SFX_ITEM_AVAILABLE && pItem)
+            if(eState >= SFX_ITEM_DEFAULT)
+            {
+                const XLineJointItem* pItem = dynamic_cast< const XLineJointItem* >(pState);
+
+                if(pItem)
                 {
+                    sal_uInt16 nEntryPos(0);
+
                     switch(pItem->GetValue())
                     {
                         case com::sun::star::drawing::LineJoint_MIDDLE:
@@ -639,33 +659,37 @@ void LinePropertyPanel::NotifyItemUpdate(
                         default:
                             break;
                     }
-                }
 
-                if(nEntryPos)
-                {
-                    mpLBEdgeStyle->SelectEntryPos(nEntryPos - 1);
-                }
-                else
-                {
-                    mpLBEdgeStyle->SetNoSelection();
+                    if(nEntryPos)
+                    {
+                        mpLBEdgeStyle->SelectEntryPos(nEntryPos - 1);
+                        break;
+                    }
                 }
             }
+
+            mpLBEdgeStyle->SetNoSelection();
             break;
         }
         case SID_ATTR_LINE_CAP:
         {
-            if(eState == SFX_ITEM_DISABLED)
+            if(bDisabled)
             {
                 mpLBCapStyle->Disable();
             }
             else
             {
                 mpLBCapStyle->Enable();
-                const XLineCapItem* pItem = dynamic_cast< const XLineCapItem* >(pState);
-                sal_uInt16 nEntryPos(0);
+            }
 
-                if(eState >= SFX_ITEM_AVAILABLE && pItem)
+            if(eState >= SFX_ITEM_DEFAULT)
+            {
+                const XLineCapItem* pItem = dynamic_cast< const XLineCapItem* >(pState);
+
+                if(pItem)
                 {
+                    sal_uInt16 nEntryPos(0);
+
                     switch(pItem->GetValue())
                     {
                         case com::sun::star::drawing::LineCap_BUTT:
@@ -687,16 +711,15 @@ void LinePropertyPanel::NotifyItemUpdate(
                         default:
                             break;
                     }
+
+                    if(nEntryPos)
+                    {
+                        mpLBCapStyle->SelectEntryPos(nEntryPos - 1);
+                        break;
+                    }
                 }
 
-                if(nEntryPos)
-                {
-                    mpLBCapStyle->SelectEntryPos(nEntryPos - 1);
-                }
-                else
-                {
-                    mpLBCapStyle->SetNoSelection();
-                }
+                mpLBCapStyle->SetNoSelection();
             }
             break;
         }
@@ -715,7 +738,7 @@ SfxBindings* LinePropertyPanel::GetBindings()
 
 IMPL_LINK( LinePropertyPanel, ImplPopupModeEndHdl, FloatingWindow*, EMPTYARG )
 {	
-	return 0;
+    return 0;
 }
 
 
@@ -723,13 +746,13 @@ IMPL_LINK( LinePropertyPanel, ImplPopupModeEndHdl, FloatingWindow*, EMPTYARG )
 
 IMPL_LINK(LinePropertyPanel, ToolboxColorSelectHdl,ToolBox*, pToolBox)
 {
-	sal_uInt16 nId = pToolBox->GetCurItemId();
-	if(nId == TBI_COLOR)
-	{
+    sal_uInt16 nId = pToolBox->GetCurItemId();
+    if(nId == TBI_COLOR)
+    {
         maColorPopup.Show(*pToolBox);
         maColorPopup.SetCurrentColor(maColor, mbColorAvailable);
-	}
-	return 0;
+    }
+    return 0;
 }
 
 
@@ -777,18 +800,18 @@ IMPL_LINK(LinePropertyPanel, ChangeLineStyleHdl, ToolBox*, /* pToolBox */)
 
 IMPL_LINK(LinePropertyPanel, ChangeStartHdl, void*, EMPTYARG)
 {
-	sal_uInt16	nPos = mpLBStart->GetSelectEntryPos();
-	if( nPos != LISTBOX_ENTRY_NOTFOUND && nPos != mpLBStart->GetSavedValue() )
-	{
-		XLineStartItem* pItem = NULL;
-		if( nPos == 0 )
-			pItem = new XLineStartItem();
-		else if( mpLineEndList && mpLineEndList->Count() > (long) ( nPos - 1 ) )
-			pItem = new XLineStartItem( mpLBStart->GetSelectEntry(),mpLineEndList->GetLineEnd( nPos - 1 )->GetLineEnd() );
-		GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINEEND_STYLE, SFX_CALLMODE_RECORD, pItem,  0L);
-		delete pItem;
-	}
-	return 0;
+    sal_uInt16	nPos = mpLBStart->GetSelectEntryPos();
+    if( nPos != LISTBOX_ENTRY_NOTFOUND && nPos != mpLBStart->GetSavedValue() )
+    {
+        XLineStartItem* pItem = NULL;
+        if( nPos == 0 )
+            pItem = new XLineStartItem();
+        else if( mpLineEndList && mpLineEndList->Count() > (long) ( nPos - 1 ) )
+            pItem = new XLineStartItem( mpLBStart->GetSelectEntry(),mpLineEndList->GetLineEnd( nPos - 1 )->GetLineEnd() );
+        GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINEEND_STYLE, SFX_CALLMODE_RECORD, pItem,  0L);
+        delete pItem;
+    }
+    return 0;
 }
 
 
@@ -796,18 +819,18 @@ IMPL_LINK(LinePropertyPanel, ChangeStartHdl, void*, EMPTYARG)
 
 IMPL_LINK(LinePropertyPanel, ChangeEndHdl, void*, EMPTYARG)
 {
-	sal_uInt16	nPos = mpLBEnd->GetSelectEntryPos();
-	if( nPos != LISTBOX_ENTRY_NOTFOUND && nPos != mpLBEnd->GetSavedValue() )
-	{
-		XLineEndItem* pItem = NULL;
-		if( nPos == 0 )
-			pItem = new XLineEndItem();
-		else if( mpLineEndList && mpLineEndList->Count() > (long) ( nPos - 1 ) )
-			pItem = new XLineEndItem( mpLBEnd->GetSelectEntry(), mpLineEndList->GetLineEnd( nPos - 1 )->GetLineEnd() );
-		GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINEEND_STYLE, SFX_CALLMODE_RECORD, pItem,  0L);
-		delete pItem;
-	}
-	return 0;
+    sal_uInt16	nPos = mpLBEnd->GetSelectEntryPos();
+    if( nPos != LISTBOX_ENTRY_NOTFOUND && nPos != mpLBEnd->GetSavedValue() )
+    {
+        XLineEndItem* pItem = NULL;
+        if( nPos == 0 )
+            pItem = new XLineEndItem();
+        else if( mpLineEndList && mpLineEndList->Count() > (long) ( nPos - 1 ) )
+            pItem = new XLineEndItem( mpLBEnd->GetSelectEntry(), mpLineEndList->GetLineEnd( nPos - 1 )->GetLineEnd() );
+        GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINEEND_STYLE, SFX_CALLMODE_RECORD, pItem,  0L);
+        delete pItem;
+    }
+    return 0;
 }
 
 
@@ -892,12 +915,12 @@ IMPL_LINK(LinePropertyPanel, ChangeCapStyleHdl, void*, EMPTYARG)
 
 IMPL_LINK(LinePropertyPanel, ToolboxWidthSelectHdl,ToolBox*, pToolBox)
 {
-	if (pToolBox->GetCurItemId() == TBI_WIDTH)
-	{
-		maLineWidthPopup.SetWidthSelect(mnWidthCoreValue, mbWidthValuable, meMapUnit);
+    if (pToolBox->GetCurItemId() == TBI_WIDTH)
+    {
+        maLineWidthPopup.SetWidthSelect(mnWidthCoreValue, mbWidthValuable, meMapUnit);
         maLineWidthPopup.Show(*pToolBox);
-	}
-	return 0;
+    }
+    return 0;
 }
 
 
@@ -905,11 +928,11 @@ IMPL_LINK(LinePropertyPanel, ToolboxWidthSelectHdl,ToolBox*, pToolBox)
 
 IMPL_LINK( LinePropertyPanel, ChangeTransparentHdl, void *, EMPTYARG )
 {
-	sal_uInt16 nVal = (sal_uInt16)mpMFTransparent->GetValue();
-	XLineTransparenceItem aItem( nVal );
+    sal_uInt16 nVal = (sal_uInt16)mpMFTransparent->GetValue();
+    XLineTransparenceItem aItem( nVal );
 
-	GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_STYLE, SFX_CALLMODE_RECORD, &aItem, 0L);
-	return( 0L );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_LINE_STYLE, SFX_CALLMODE_RECORD, &aItem, 0L);
+    return( 0L );
 }
 
 
@@ -957,40 +980,40 @@ void LinePropertyPanel::EndLineWidthPopupMode (void)
 
 void LinePropertyPanel::SetWidthIcon(int n)
 {
-	if(n==0)
-		mpTBWidth->SetItemImage( TBI_WIDTH, maIMGNone);
-	else
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[n-1] : mpIMGWidthIcon[n-1]);
+    if(n==0)
+        mpTBWidth->SetItemImage( TBI_WIDTH, maIMGNone);
+    else
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[n-1] : mpIMGWidthIcon[n-1]);
 }
 
 
 
 void LinePropertyPanel::SetWidthIcon()
 {
-	if(!mbWidthValuable)
-	{
-		mpTBWidth->SetItemImage( TBI_WIDTH, maIMGNone);
-		return;
-	}
+    if(!mbWidthValuable)
+    {
+        mpTBWidth->SetItemImage( TBI_WIDTH, maIMGNone);
+        return;
+    }
 
-	long nVal = LogicToLogic(mnWidthCoreValue * 10,(MapUnit)meMapUnit , MAP_POINT);
+    long nVal = LogicToLogic(mnWidthCoreValue * 10,(MapUnit)meMapUnit , MAP_POINT);
 
-	if(nVal <= 6)	
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[0] : mpIMGWidthIcon[0]); 
-	else if(nVal > 6 && nVal <= 9)	
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[1] : mpIMGWidthIcon[1]);  
-	else if(nVal > 9 && nVal <= 12)	
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[2] : mpIMGWidthIcon[2]); 
-	else if(nVal > 12 && nVal <= 19)	
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[3] : mpIMGWidthIcon[3]); 
-	else if(nVal > 19 && nVal <= 26)		
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[4] : mpIMGWidthIcon[4]); 
-	else if(nVal > 26 && nVal <= 37)	
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[5] : mpIMGWidthIcon[5]); 
-	else if(nVal > 37 && nVal <=52)		
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[6] : mpIMGWidthIcon[6]); 
-	else if(nVal > 52)		
-		mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[7] : mpIMGWidthIcon[7]); 
+    if(nVal <= 6)	
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[0] : mpIMGWidthIcon[0]); 
+    else if(nVal > 6 && nVal <= 9)	
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[1] : mpIMGWidthIcon[1]);  
+    else if(nVal > 9 && nVal <= 12)	
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[2] : mpIMGWidthIcon[2]); 
+    else if(nVal > 12 && nVal <= 19)	
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[3] : mpIMGWidthIcon[3]); 
+    else if(nVal > 19 && nVal <= 26)		
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[4] : mpIMGWidthIcon[4]); 
+    else if(nVal > 26 && nVal <= 37)	
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[5] : mpIMGWidthIcon[5]); 
+    else if(nVal > 37 && nVal <=52)		
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[6] : mpIMGWidthIcon[6]); 
+    else if(nVal > 52)		
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[7] : mpIMGWidthIcon[7]); 
 
 }
 
@@ -1017,151 +1040,155 @@ void LinePropertyPanel::SetWidth(long nWidth)
 
 void  LinePropertyPanel::FillLineEndList()
 {
-	SfxObjectShell* pSh = SfxObjectShell::Current();
-	if ( pSh && pSh->GetItem( SID_LINEEND_LIST ) )
-	{
-		mpLBStart->Enable();
-		SvxLineEndListItem aItem( *(const SvxLineEndListItem*)(pSh->GetItem( SID_LINEEND_LIST ) ) );		
-		mpLineEndList = aItem.GetLineEndList();
+    SfxObjectShell* pSh = SfxObjectShell::Current();
+    if ( pSh && pSh->GetItem( SID_LINEEND_LIST ) )
+    {
+        mpLBStart->Enable();
+        SvxLineEndListItem aItem( *(const SvxLineEndListItem*)(pSh->GetItem( SID_LINEEND_LIST ) ) );		
+        mpLineEndList = aItem.GetLineEndList();
 
         if(mpLineEndList)
-		{
+        {
             FillLineEndListBox(*mpLBStart, *mpLBEnd, *mpLineEndList);
-		}
+        }
 
-		mpLBStart->SelectEntryPos(0);
-		mpLBEnd->SelectEntryPos(0);
-	}
-	else
-	{
-		mpLBStart->Disable();
-		mpLBEnd->Disable();
-	}
+        mpLBStart->SelectEntryPos(0);
+        mpLBEnd->SelectEntryPos(0);
+    }
+    else
+    {
+        mpLBStart->Disable();
+        mpLBEnd->Disable();
+    }
 }
 
 
 
 void  LinePropertyPanel::FillLineStyleList()
 {
-	SfxObjectShell* pSh = SfxObjectShell::Current();
-	if ( pSh && pSh->GetItem( SID_DASH_LIST ) )
-	{
-		mpLBStyle->Enable();
-		SvxDashListItem aItem( *(const SvxDashListItem*)(pSh->GetItem( SID_DASH_LIST ) ) );		
-		mpLineStyleList = aItem.GetDashList();
+    SfxObjectShell* pSh = SfxObjectShell::Current();
+    if ( pSh && pSh->GetItem( SID_DASH_LIST ) )
+    {
+        mpLBStyle->Enable();
+        SvxDashListItem aItem( *(const SvxDashListItem*)(pSh->GetItem( SID_DASH_LIST ) ) );		
+        mpLineStyleList = aItem.GetDashList();
 
         if(mpLineStyleList)
-		{
+        {
             FillLineStyleListBox(*mpLBStyle, *mpLineStyleList);
-		}
+        }
 
-		mpLBStyle->SelectEntryPos(0);
-	}
-	else
-	{
-		mpLBStyle->Disable();
-	}
+        mpLBStyle->SelectEntryPos(0);
+    }
+    else
+    {
+        mpLBStyle->Disable();
+    }
 }
 
 
 
 void LinePropertyPanel::SelectLineStyle()
 {
-	if( !mbStyleAvailable || !mbDashAvailable )
-	{
-		mpLBStyle->SetNoSelection();
-		return;
-	}
+    if( !mpStyleItem.get() || !mpDashItem.get() )
+    {
+        mpLBStyle->SetNoSelection();
+        return;
+    }
 
     const XLineStyle eXLS(mpStyleItem ? (XLineStyle)mpStyleItem->GetValue() : XLINE_NONE);
-	bool bSelected(false);
+    bool bSelected(false);
 
     switch(eXLS)
     {
         case XLINE_NONE:
             break;
         case XLINE_SOLID:
-			mpLBStyle->SelectEntryPos(1);
-			bSelected = true;
+            mpLBStyle->SelectEntryPos(1);
+            bSelected = true;
             break;
         default:
             if(mpDashItem && mpLineStyleList)
-	        {
-		        const XDash& rDash = mpDashItem->GetDashValue();
-		        for(sal_Int32 a(0);!bSelected &&  a < mpLineStyleList->Count(); a++)
-		        {
-			        XDashEntry* pEntry = mpLineStyleList->GetDash(a);
-			        const XDash& rEntry = pEntry->GetDash();
-			        if(rDash == rEntry)
-			        {
-				        mpLBStyle->SelectEntryPos((sal_uInt16)a + 2);
-				        bSelected = true;
-			        }
-		        }
-	        }
+            {
+                const XDash& rDash = mpDashItem->GetDashValue();
+                for(sal_Int32 a(0);!bSelected &&  a < mpLineStyleList->Count(); a++)
+                {
+                    XDashEntry* pEntry = mpLineStyleList->GetDash(a);
+                    const XDash& rEntry = pEntry->GetDash();
+                    if(rDash == rEntry)
+                    {
+                        mpLBStyle->SelectEntryPos((sal_uInt16)a + 2);
+                        bSelected = true;
+                    }
+                }
+            }
             break;
     }
-	
+    
     if(!bSelected)
-		mpLBStyle->SelectEntryPos( 0 );
+        mpLBStyle->SelectEntryPos( 0 );
 }
 
 void LinePropertyPanel::SelectEndStyle(bool bStart)
 {
-	sal_Bool bSelected(false);
+    sal_Bool bSelected(false);
 
-	if(bStart)
-	{
-		//<<add 
-		if( !mbStartAvailable )
-		{
-			mpLBStart->SetNoSelection();
-			return;
-		}
-		//add end>>
-		if(mpStartItem && mpLineEndList)
-		{
-			const basegfx::B2DPolyPolygon& rItemPolygon = mpStartItem->GetLineStartValue();
-			for(sal_Int32 a(0);!bSelected &&  a < mpLineEndList->Count(); a++)
-			{
-				XLineEndEntry* pEntry = mpLineEndList->GetLineEnd(a);
-				const basegfx::B2DPolyPolygon& rEntryPolygon = pEntry->GetLineEnd();
-				if(rItemPolygon == rEntryPolygon)
-				{
-					mpLBStart->SelectEntryPos((sal_uInt16)a + 1);
-					bSelected = true;
-				}
-			}
-		}
-		if(!bSelected)
-			mpLBStart->SelectEntryPos( 0 );
-	}
-	else
-	{
-		//<<add 
-		if( !mbEndAvailable )
-		{
-			mpLBEnd->SetNoSelection();
-			return;
-		}
-		//add end>>
-		if(mpEndItem && mpLineEndList)
-		{
-			const basegfx::B2DPolyPolygon& rItemPolygon = mpEndItem->GetLineEndValue();
-			for(sal_Int32 a(0);!bSelected &&  a < mpLineEndList->Count(); a++)
-			{
-				XLineEndEntry* pEntry = mpLineEndList->GetLineEnd(a);
-				const basegfx::B2DPolyPolygon& rEntryPolygon = pEntry->GetLineEnd();
-				if(rItemPolygon == rEntryPolygon)
-				{
-					mpLBEnd->SelectEntryPos((sal_uInt16)a + 1);
-					bSelected = true;
-				}
-			}
-		}
-		if(!bSelected)
-			mpLBEnd->SelectEntryPos( 0 );
-	}
+    if(bStart)
+    {
+        if( !mpStartItem.get() )
+        {
+            mpLBStart->SetNoSelection();
+            return;
+        }
+
+        if(mpStartItem && mpLineEndList)
+        {
+            const basegfx::B2DPolyPolygon& rItemPolygon = mpStartItem->GetLineStartValue();
+            for(sal_Int32 a(0);!bSelected &&  a < mpLineEndList->Count(); a++)
+            {
+                XLineEndEntry* pEntry = mpLineEndList->GetLineEnd(a);
+                const basegfx::B2DPolyPolygon& rEntryPolygon = pEntry->GetLineEnd();
+                if(rItemPolygon == rEntryPolygon)
+                {
+                    mpLBStart->SelectEntryPos((sal_uInt16)a + 1);
+                    bSelected = true;
+                }
+            }
+        }
+
+        if(!bSelected)
+        {
+            mpLBStart->SelectEntryPos( 0 );
+        }
+    }
+    else
+    {
+        if( !mpEndItem.get() )
+        {
+            mpLBEnd->SetNoSelection();
+            return;
+        }
+
+        if(mpEndItem && mpLineEndList)
+        {
+            const basegfx::B2DPolyPolygon& rItemPolygon = mpEndItem->GetLineEndValue();
+            for(sal_Int32 a(0);!bSelected &&  a < mpLineEndList->Count(); a++)
+            {
+                XLineEndEntry* pEntry = mpLineEndList->GetLineEnd(a);
+                const basegfx::B2DPolyPolygon& rEntryPolygon = pEntry->GetLineEnd();
+                if(rItemPolygon == rEntryPolygon)
+                {
+                    mpLBEnd->SelectEntryPos((sal_uInt16)a + 1);
+                    bSelected = true;
+                }
+            }
+        }
+
+        if(!bSelected)
+        {
+            mpLBEnd->SelectEntryPos( 0 );
+        }
+    }
 }
 
 
