@@ -1415,14 +1415,6 @@ void ParaPropertyPanel::StateChangeOutLineImpl( sal_uInt16 nSID, SfxItemState eS
 	else
 		maTbxProDemote->EnableItem(BT_TBX_INDENT_PROMOTE, sal_False);
 
-//	if( !mbOutLineRight && !mbOutLineLeft )
-//	{
-//		maTbxProDemote->EnableItem(BT_TBX_INDENT_PROMOTE, sal_True);
-//		maTbxProDemote->EnableItem(BT_TBX_INDENT_DEMOTE, sal_True);
-//		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
-//	}
-//	else 
-//		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
 }
 
 void ParaPropertyPanel::StateChangeIncDecImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
@@ -1451,52 +1443,55 @@ void ParaPropertyPanel::StateChangeIncDecImpl( sal_uInt16 nSID, SfxItemState eSt
 // Add toggle state for numbering and bullet icons
 void ParaPropertyPanel::StateChangeBulletNumImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
 {
-	if (nSID==FN_NUM_NUMBERING_ON)
-	{
-		if ( (eState >= SFX_ITEM_DEFAULT) && (pState->ISA(SfxBoolItem)))
-		{
-			const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
-			sal_Bool aBool = (sal_Bool)pItem->GetValue();
-			if (aBool) {
-				maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_CHECK);
-			} else {
-				maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_NOCHECK);
-			}
-		}
-	}
-	if (nSID==FN_NUM_BULLET_ON)
-	{
-		if ( (eState >= SFX_ITEM_DEFAULT) && (pState->ISA(SfxBoolItem)))
-		{
-			const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
-			sal_Bool aBool = (sal_Bool)pItem->GetValue();
-			if (aBool) {
-				maTBxNumBullet->SetItemState(IID_BULLET,	STATE_CHECK);
-			} else {
-				maTBxNumBullet->SetItemState(IID_BULLET,	STATE_NOCHECK);
-			}
-		}
-	}
+    if ( (eState >= SFX_ITEM_DEFAULT) && (pState->ISA(SfxBoolItem)) )
+    {
+        if (nSID==FN_NUM_NUMBERING_ON)
+        {
+            const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
+            sal_Bool aBool = (sal_Bool)pItem->GetValue();
+            if (aBool) {
+                maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_CHECK);
+            } else {
+                maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_NOCHECK);
+            }
+        }
+        else if (nSID==FN_NUM_BULLET_ON)
+        {
+            const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
+            sal_Bool aBool = (sal_Bool)pItem->GetValue();
+            if (aBool) {
+                maTBxNumBullet->SetItemState(IID_BULLET,	STATE_CHECK);
+            } else {
+                maTBxNumBullet->SetItemState(IID_BULLET,	STATE_NOCHECK);
+            }
+        }
+    }
 }
-//Modified for Numbering&Bullets Dialog UX Enh(Story 992) by chengjh,2011.7.5
-//Handing the transferred the num rule index data of the current selection
-void ParaPropertyPanel::StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemState /* eState */, const SfxPoolItem* pState )
-{
-	
-	const SfxUInt16Item* pIt = (const SfxUInt16Item*)pState;
-	sal_uInt16 nValue = (sal_uInt16)0xFFFF;
-	if ( pIt )
-		nValue = pIt->GetValue();
 
-	if ( nSID == FN_BUL_NUM_RULE_INDEX ) 
-	{
-		mnBulletTypeIndex = nValue;
-	}else if ( nSID == FN_NUM_NUM_RULE_INDEX ) 
-	{
-		mnNumTypeIndex = nValue;
-	}
+
+void ParaPropertyPanel::StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
+{
+    if ( eState >= SFX_ITEM_DEFAULT && pState->ISA(SfxUInt16Item) )
+    {
+        sal_uInt16 nValue = (sal_uInt16)0xFFFF;
+        {
+            const SfxUInt16Item* pIt = (const SfxUInt16Item*)pState;
+            if ( pIt )
+                nValue = pIt->GetValue();
+        }
+
+        if ( nSID == FN_BUL_NUM_RULE_INDEX ) 
+        {
+            mnBulletTypeIndex = nValue;
+        }
+        else if ( nSID == FN_NUM_NUM_RULE_INDEX ) 
+        {
+            mnNumTypeIndex = nValue;
+        }
+    }
 }
-//End
+
+
 FieldUnit ParaPropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState )
 {
 	FieldUnit eUnit = FUNIT_NONE;
@@ -1527,7 +1522,7 @@ FieldUnit ParaPropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPoolI
 	
 	return eUnit;
 }
-//new FixedText(this, SVX_RES(FT_COLOR))
+
 
 PopupControl* ParaPropertyPanel::CreateLineSpacingControl (PopupContainer* pParent)
 {
