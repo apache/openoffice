@@ -107,124 +107,116 @@ void GraphicPropertyPanel::Initialize()
     mpFtTrans->SetBackground(Wallpaper());
 
     mpMtrBrightness->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyBrightnessHdl ) );
-	mpMtrBrightness->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Brightness")));	//wj acc
-	mpMtrContrast->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyContrastHdl ) );
-	mpMtrContrast->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Contrast")));	//wj acc
-	mpMtrTrans->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyTransHdl ) );
-	mpMtrTrans->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency")));	//wj acc
+    mpMtrBrightness->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Brightness")));	//wj acc
+    mpMtrContrast->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyContrastHdl ) );
+    mpMtrContrast->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Contrast")));	//wj acc
+    mpMtrTrans->SetModifyHdl( LINK( this, GraphicPropertyPanel, ModifyTransHdl ) );
+    mpMtrTrans->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency")));	//wj acc
 
-	mpLBColorMode->InsertEntry( msNormal, maImgNormal );
-	mpLBColorMode->InsertEntry( msGray, maImgGray );
-	mpLBColorMode->InsertEntry( msBW, maImgBW );
-	mpLBColorMode->InsertEntry( msWater, maImgWater );
-	mpLBColorMode->SetSelectHdl( LINK( this, GraphicPropertyPanel, ClickColorModeHdl ));
-	mpLBColorMode->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Color mode")));	//wj acc
+    mpLBColorMode->InsertEntry( msNormal, maImgNormal );
+    mpLBColorMode->InsertEntry( msGray, maImgGray );
+    mpLBColorMode->InsertEntry( msBW, maImgBW );
+    mpLBColorMode->InsertEntry( msWater, maImgWater );
+    mpLBColorMode->SetSelectHdl( LINK( this, GraphicPropertyPanel, ClickColorModeHdl ));
+    mpLBColorMode->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Color mode")));	//wj acc
 
-	mpMtrRed->SetModifyHdl( LINK( this, GraphicPropertyPanel, RedHdl ) );
-	mpMtrGreen->SetModifyHdl( LINK( this, GraphicPropertyPanel, GreenHdl ) );
-	mpMtrBlue->SetModifyHdl( LINK( this, GraphicPropertyPanel, BlueHdl ) );
-	mpMtrGamma->SetModifyHdl( LINK( this, GraphicPropertyPanel, GammaHdl ) );
-	mpMtrRed->SetAccessibleName(mpMtrRed->GetQuickHelpText());	//wj acc
-	mpMtrGreen->SetAccessibleName(mpMtrGreen->GetQuickHelpText());	//wj acc
-	mpMtrBlue->SetAccessibleName(mpMtrBlue->GetQuickHelpText());		//wj acc
-	mpMtrGamma->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Gamma value")));	//wj acc
+    mpMtrRed->SetModifyHdl( LINK( this, GraphicPropertyPanel, RedHdl ) );
+    mpMtrGreen->SetModifyHdl( LINK( this, GraphicPropertyPanel, GreenHdl ) );
+    mpMtrBlue->SetModifyHdl( LINK( this, GraphicPropertyPanel, BlueHdl ) );
+    mpMtrGamma->SetModifyHdl( LINK( this, GraphicPropertyPanel, GammaHdl ) );
+    mpMtrRed->SetAccessibleName(mpMtrRed->GetQuickHelpText());	//wj acc
+    mpMtrGreen->SetAccessibleName(mpMtrGreen->GetQuickHelpText());	//wj acc
+    mpMtrBlue->SetAccessibleName(mpMtrBlue->GetQuickHelpText());		//wj acc
+    mpMtrGamma->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Gamma value")));	//wj acc
 
     mpMtrRed->SetAccessibleRelationLabeledBy(mpMtrRed.get());
-	mpMtrGreen->SetAccessibleRelationLabeledBy(mpMtrGreen.get());
-	mpMtrBlue->SetAccessibleRelationLabeledBy(mpMtrBlue.get());
-	mpMtrGamma->SetAccessibleRelationLabeledBy(mpMtrGamma.get());
-	mpMtrBrightness->SetAccessibleRelationLabeledBy(mpFtBrightness.get());	//7874
-	mpMtrContrast->SetAccessibleRelationLabeledBy(mpFtContrast.get());	//7874
-	mpMtrTrans->SetAccessibleRelationLabeledBy(mpFtTrans.get());	//7874
-	mpLBColorMode->SetAccessibleRelationLabeledBy(mpFtColorMode.get());	//7874
+    mpMtrGreen->SetAccessibleRelationLabeledBy(mpMtrGreen.get());
+    mpMtrBlue->SetAccessibleRelationLabeledBy(mpMtrBlue.get());
+    mpMtrGamma->SetAccessibleRelationLabeledBy(mpMtrGamma.get());
+    mpMtrBrightness->SetAccessibleRelationLabeledBy(mpFtBrightness.get());	//7874
+    mpMtrContrast->SetAccessibleRelationLabeledBy(mpFtContrast.get());	//7874
+    mpMtrTrans->SetAccessibleRelationLabeledBy(mpFtTrans.get());	//7874
+    mpLBColorMode->SetAccessibleRelationLabeledBy(mpFtColorMode.get());	//7874
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK( GraphicPropertyPanel, ModifyBrightnessHdl, void *, EMPTYARG )
 {
-	sal_Int16 nBright = mpMtrBrightness->GetValue();
-	SfxInt16Item aBrightItem( SID_ATTR_GRAF_LUMINANCE, nBright );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_LUMINANCE, SFX_CALLMODE_RECORD, &aBrightItem, 0L);
-	return 0L;
+    const sal_Int16 nBright = mpMtrBrightness->GetValue();
+    const SfxInt16Item aBrightItem( SID_ATTR_GRAF_LUMINANCE, nBright );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_LUMINANCE, SFX_CALLMODE_RECORD, &aBrightItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK( GraphicPropertyPanel, ModifyContrastHdl, void *, EMPTYARG )
 {
-	sal_Int16 nContrast = mpMtrContrast->GetValue();
-	SfxInt16Item aContrastItem( SID_ATTR_GRAF_CONTRAST, nContrast );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_CONTRAST, SFX_CALLMODE_RECORD, &aContrastItem, 0L);
-	return 0L;
+    const sal_Int16 nContrast = mpMtrContrast->GetValue();
+    const SfxInt16Item aContrastItem( SID_ATTR_GRAF_CONTRAST, nContrast );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_CONTRAST, SFX_CALLMODE_RECORD, &aContrastItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK( GraphicPropertyPanel, ModifyTransHdl, void *, EMPTYARG )
 {
-	sal_Int16 nTrans = mpMtrTrans->GetValue();
-	SfxInt16Item aTransItem( SID_ATTR_GRAF_TRANSPARENCE, nTrans );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_TRANSPARENCE, SFX_CALLMODE_RECORD, &aTransItem, 0L);
-	return 0L;
+    const sal_Int16 nTrans = mpMtrTrans->GetValue();
+    const SfxInt16Item aTransItem( SID_ATTR_GRAF_TRANSPARENCE, nTrans );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_TRANSPARENCE, SFX_CALLMODE_RECORD, &aTransItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK( GraphicPropertyPanel, ClickColorModeHdl, ToolBox *, /* pBox */)
 {
-	sal_Int16 nTrans = mpLBColorMode->GetSelectEntryPos();
-	SfxInt16Item aTransItem( SID_ATTR_GRAF_MODE, nTrans );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_MODE, SFX_CALLMODE_RECORD, &aTransItem, 0L);
-	return 0L;
+    const sal_Int16 nTrans = mpLBColorMode->GetSelectEntryPos();
+    const SfxInt16Item aTransItem( SID_ATTR_GRAF_MODE, nTrans );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_MODE, SFX_CALLMODE_RECORD, &aTransItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK( GraphicPropertyPanel, RedHdl, void*, EMPTYARG )
 {
-	sal_Int16 nRed = mpMtrRed->GetValue();
-	SfxInt16Item aRedItem( SID_ATTR_GRAF_RED, nRed );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_RED, SFX_CALLMODE_RECORD, &aRedItem, 0L);
-	return 0L;
+    const sal_Int16 nRed = mpMtrRed->GetValue();
+    const SfxInt16Item aRedItem( SID_ATTR_GRAF_RED, nRed );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_RED, SFX_CALLMODE_RECORD, &aRedItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK( GraphicPropertyPanel, GreenHdl, void*, EMPTYARG )
 {
-	sal_Int16 nGreen = mpMtrGreen->GetValue();
-	SfxInt16Item aGreenItem( SID_ATTR_GRAF_GREEN, nGreen );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_GREEN, SFX_CALLMODE_RECORD, &aGreenItem, 0L);
-	return 0L;
+    const sal_Int16 nGreen = mpMtrGreen->GetValue();
+    const SfxInt16Item aGreenItem( SID_ATTR_GRAF_GREEN, nGreen );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_GREEN, SFX_CALLMODE_RECORD, &aGreenItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK(GraphicPropertyPanel, BlueHdl, void *, EMPTYARG)
 {
-	sal_Int16 nBlue = mpMtrBlue->GetValue();
-	SfxInt16Item aBlueItem( SID_ATTR_GRAF_BLUE, nBlue );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_BLUE, SFX_CALLMODE_RECORD, &aBlueItem, 0L);
-	return 0L;
+    const sal_Int16 nBlue = mpMtrBlue->GetValue();
+    const SfxInt16Item aBlueItem( SID_ATTR_GRAF_BLUE, nBlue );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_BLUE, SFX_CALLMODE_RECORD, &aBlueItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 IMPL_LINK(GraphicPropertyPanel, GammaHdl, void *, EMPTYARG)
 {
-	sal_Int32 nGamma = mpMtrGamma->GetValue();
-	SfxInt32Item nGammaItem( SID_ATTR_GRAF_GAMMA, nGamma );
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_GRAF_GAMMA, SFX_CALLMODE_RECORD, &nGammaItem, 0L);
-	return 0L;
+    const sal_Int32 nGamma = mpMtrGamma->GetValue();
+    const SfxInt32Item nGammaItem( SID_ATTR_GRAF_GAMMA, nGamma );
+    GetBindings()->GetDispatcher()->Execute(SID_ATTR_GRAF_GAMMA, SFX_CALLMODE_RECORD, &nGammaItem, 0L);
+    return 0L;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -281,169 +273,201 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 {
     (void)bIsEnabled;
 
-	switch( nSID )
-	{
-	case SID_ATTR_GRAF_LUMINANCE:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpMtrBrightness->Enable();
-            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+    switch( nSID )
+    {
+        case SID_ATTR_GRAF_LUMINANCE:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpMtrBrightness->Enable();
+                const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
 
-			if(pItem)
-			{
-				sal_Int64 nBright = pItem->GetValue();
-				mpMtrBrightness->SetValue(nBright);
-			}
-		}
-		else if( eState == SFX_ITEM_DISABLED )
-			mpMtrBrightness->Disable();
-		else
-		{
-			mpMtrBrightness->Enable();
-			mpMtrBrightness->SetText( String());
-		}
-		break;
-	case SID_ATTR_GRAF_CONTRAST:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpMtrContrast->Enable();
-            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+                if(pItem)
+                {
+                    const sal_Int64 nBright = pItem->GetValue();
+                    mpMtrBrightness->SetValue(nBright);
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpMtrBrightness->Disable();
+            }
+            else
+            {
+                mpMtrBrightness->Enable();
+                mpMtrBrightness->SetText(String());
+            }
+            break;
+        }
+        case SID_ATTR_GRAF_CONTRAST:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpMtrContrast->Enable();
+                const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
 
-            if(pItem)
-			{
-				sal_Int64 nContrast = pItem->GetValue();
-				mpMtrContrast->SetValue(nContrast);
-			}
-		}
-		else if( eState == SFX_ITEM_DISABLED )
-			mpMtrContrast->Disable();
-		else
-		{
-			mpMtrContrast->Enable();
-			mpMtrContrast->SetText( String());
-		}
-		break;
-	case SID_ATTR_GRAF_TRANSPARENCE:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpMtrTrans->Enable();
-            const SfxUInt16Item* pItem = dynamic_cast< const SfxUInt16Item* >(pState);
+                if(pItem)
+                {
+                    const sal_Int64 nContrast = pItem->GetValue();
+                    mpMtrContrast->SetValue(nContrast);
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpMtrContrast->Disable();
+            }
+            else
+            {
+                mpMtrContrast->Enable();
+                mpMtrContrast->SetText(String());
+            }
+            break;
+        }
+        case SID_ATTR_GRAF_TRANSPARENCE:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpMtrTrans->Enable();
+                const SfxUInt16Item* pItem = dynamic_cast< const SfxUInt16Item* >(pState);
 
-			if(pItem)
-			{
-				sal_Int64 nTrans = pItem->GetValue();
-				mpMtrTrans->SetValue(nTrans);
-			}
-		}
-		else if( eState == SFX_ITEM_DISABLED )
-			mpMtrTrans->Disable();
-		else
-		{
-			mpMtrTrans->Enable();
-			mpMtrTrans->SetText( String());
-		}
-		break;
-	case SID_ATTR_GRAF_MODE:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpLBColorMode->Enable();
-            const SfxUInt16Item* pItem = dynamic_cast< const SfxUInt16Item* >(pState);
+                if(pItem)
+                {
+                    const sal_Int64 nTrans = pItem->GetValue();
+                    mpMtrTrans->SetValue(nTrans);
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpMtrTrans->Disable();
+            }
+            else
+            {
+                mpMtrTrans->Enable();
+                mpMtrTrans->SetText(String());
+            }
+            break;
+        }
+        case SID_ATTR_GRAF_MODE:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpLBColorMode->Enable();
+                const SfxUInt16Item* pItem = dynamic_cast< const SfxUInt16Item* >(pState);
 
-			if(pItem)
-			{
-				sal_Int64 nTrans = pItem->GetValue();
-				mpLBColorMode->SelectEntryPos(nTrans);
-			}
-		}
-		else if( eState == SFX_ITEM_DISABLED )
-			mpLBColorMode->Disable();
-		else
-		{
-			mpLBColorMode->Enable();
-			mpLBColorMode->SetNoSelection();
-		}
-		break;
-	case SID_ATTR_GRAF_RED:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpMtrRed->Enable();
-            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+                if(pItem)
+                {
+                    const sal_Int64 nTrans = pItem->GetValue();
+                    mpLBColorMode->SelectEntryPos(nTrans);
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpLBColorMode->Disable();
+            }
+            else
+            {
+                mpLBColorMode->Enable();
+                mpLBColorMode->SetNoSelection();
+            }
+            break;
+        }
+        case SID_ATTR_GRAF_RED:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpMtrRed->Enable();
+                const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
 
-			if(pItem)
-			{
-				sal_Int64 nRed = pItem->GetValue();
-				mpMtrRed->SetValue( nRed );
-			}
-		}			
-		else if( eState == SFX_ITEM_DISABLED )
-			mpMtrRed->Disable();
-		else
-		{
-			mpMtrRed->Enable();
-			mpMtrRed->SetText( String());
-		}
-		break;
-	case SID_ATTR_GRAF_GREEN:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpMtrGreen->Enable();
-            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+                if(pItem)
+                {
+                    const sal_Int64 nRed = pItem->GetValue();
+                    mpMtrRed->SetValue( nRed );
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpMtrRed->Disable();
+            }
+            else
+            {
+                mpMtrRed->Enable();
+                mpMtrRed->SetText(String());
+            }
+            break;
+        }
+        case SID_ATTR_GRAF_GREEN:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpMtrGreen->Enable();
+                const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
 
-			if(pItem)
-			{
-				sal_Int64 nGreen = pItem->GetValue();
-				mpMtrGreen->SetValue( nGreen );
-			}
-		}
-		else if( eState == SFX_ITEM_DISABLED )
-			mpMtrGreen->Disable();
-		else
-		{
-			mpMtrGreen->Enable();
-			mpMtrGreen->SetText( String());
-		}
-		break;
-	case SID_ATTR_GRAF_BLUE:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpMtrBlue->Enable();
-            const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
+                if(pItem)
+                {
+                    const sal_Int64 nGreen = pItem->GetValue();
+                    mpMtrGreen->SetValue( nGreen );
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpMtrGreen->Disable();
+            }
+            else
+            {
+                mpMtrGreen->Enable();
+                mpMtrGreen->SetText(String());
+            }
+            break;
+        }
+        case SID_ATTR_GRAF_BLUE:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpMtrBlue->Enable();
+                const SfxInt16Item* pItem = dynamic_cast< const SfxInt16Item* >(pState);
 
-			if(pItem)
-			{
-				sal_Int64 nBlue = pItem->GetValue();
-				mpMtrBlue->SetValue( nBlue );
-			}
-		}
-		else if( eState == SFX_ITEM_DISABLED )
-			mpMtrBlue->Disable();
-		else
-		{
-			mpMtrBlue->Enable();
-			mpMtrBlue->SetText( String());
-		}
-		break;
-	case SID_ATTR_GRAF_GAMMA:
-		if( eState >= SFX_ITEM_AVAILABLE)
-		{
-			mpMtrGamma->Enable();
-            const SfxUInt32Item* pItem = dynamic_cast< const SfxUInt32Item* >(pState);
+                if(pItem)
+                {
+                    const sal_Int64 nBlue = pItem->GetValue();
+                    mpMtrBlue->SetValue( nBlue );
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpMtrBlue->Disable();
+            }
+            else
+            {
+                mpMtrBlue->Enable();
+                mpMtrBlue->SetText(String());
+            }
+            break;
+        }
+        case SID_ATTR_GRAF_GAMMA:
+        {
+            if(eState >= SFX_ITEM_AVAILABLE)
+            {
+                mpMtrGamma->Enable();
+                const SfxUInt32Item* pItem = dynamic_cast< const SfxUInt32Item* >(pState);
 
-			if(pItem)
-			{
-				sal_Int64 nGamma = pItem->GetValue();
-				mpMtrGamma->SetValue( nGamma );
-			}
-		}
-		else if( eState == SFX_ITEM_DISABLED )
-			mpMtrGamma->Disable();
-		else
-		{
-			mpMtrGamma->Enable();
-			mpMtrGamma->SetText( String());
-		}
-		break;
-	}
+                if(pItem)
+                {
+                    const sal_Int64 nGamma = pItem->GetValue();
+                    mpMtrGamma->SetValue( nGamma );
+                }
+            }
+            else if(SFX_ITEM_DISABLED == eState)
+            {
+                mpMtrGamma->Disable();
+            }
+            else
+            {
+                mpMtrGamma->Enable();
+                mpMtrGamma->SetText(String());
+            }
+            break;
+        }
+    }
 }
 
 
