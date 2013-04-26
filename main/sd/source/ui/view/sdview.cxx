@@ -780,10 +780,6 @@ sal_Bool View::SdrBeginTextEdit(
 		pGivenOutlinerView, bDontDeleteOutliner,
 		bOnlyOneView, bGrabFocus);
 
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        &GetViewShell()->GetViewShellBase(),
-        ::sfx2::sidebar::EnumContext::Context_DrawText);
-
 	if (bReturn)
 	{
 		::Outliner* pOL = GetTextEditOutliner();
@@ -844,22 +840,18 @@ SdrEndTextEditKind View::SdrEndTextEdit(sal_Bool bDontDeleteReally )
 		}
 	}
 
-	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
+    GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
         sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT,
         (void*)xObj.get() );
 
-	if( xObj.is() )
-	{
-        ContextChangeEventMultiplexer::NotifyContextChange(
-            &GetViewShell()->GetViewShellBase(),
-            ::sfx2::sidebar::EnumContext::Context_Default);
-
+    if( xObj.is() )
+    {
         SdPage* pPage = dynamic_cast< SdPage* >( xObj->GetPage() );
-		if( pPage )
-			pPage->onEndTextEdit( xObj.get() );
-	}
+        if( pPage )
+            pPage->onEndTextEdit( xObj.get() );
+    }
 
-	return(eKind);
+    return(eKind);
 }
 
 // --------------------------------------------------------------------
