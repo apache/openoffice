@@ -47,6 +47,7 @@ $(eval $(call gb_Library_add_linked_libs,svx,\
 	cppu \
 	drawinglayer \
 	editeng \
+	fwk \
 	i18nisolang1 \
 	icuuc \
 	sal \
@@ -227,6 +228,7 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/table/tablertfexporter \
     svx/source/table/tablertfimporter \
     svx/source/tbxctrls/colrctrl \
+    svx/source/tbxctrls/SvxColorChildWindow \
     svx/source/tbxctrls/fillctrl \
     svx/source/tbxctrls/formatpaintbrushctrl \
     svx/source/tbxctrls/grafctrl \

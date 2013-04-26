@@ -205,8 +205,8 @@ void ParaPropertyPanel::HandleContextChange (
             maTbxProDemoteBackground->Show();
             break;
 
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Default):
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Text):
+        case CombinedEnumContext(Application_WriterVariants, Context_Default):
+        case CombinedEnumContext(Application_WriterVariants, Context_Text):
             maTBxVertAlign->Hide();
             maTBxVertAlignBackground->Hide();
             maTBxBackColor->Show();
@@ -221,7 +221,7 @@ void ParaPropertyPanel::HandleContextChange (
             maTbxProDemoteBackground->Hide();
             break;
             
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Table):
+        case CombinedEnumContext(Application_WriterVariants, Context_Table):
             maTBxVertAlign->Show();
             maTBxVertAlignBackground->Show();
             maTBxBackColor->Show();
@@ -235,7 +235,7 @@ void ParaPropertyPanel::HandleContextChange (
             maTbxProDemoteBackground->Hide();
             break;
             
-        case CombinedEnumContext(Application_WriterAndWeb, Context_DrawText):
+        case CombinedEnumContext(Application_WriterVariants, Context_DrawText):
             maTBxVertAlign->Show();
             maTBxVertAlignBackground->Show();
             maTBxBackColor->Hide();
@@ -249,7 +249,7 @@ void ParaPropertyPanel::HandleContextChange (
             maTbxProDemoteBackground->Hide();
             break;
 
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Annotation):
+        case CombinedEnumContext(Application_WriterVariants, Context_Annotation):
             maTBxVertAlign->Hide();
             maTBxVertAlignBackground->Hide();
             maTBxBackColor->Hide();
@@ -381,12 +381,14 @@ void ParaPropertyPanel::EndSpacingPopupMode (void)
 
 void ParaPropertyPanel::EndBulletsPopupMode (void)
 {
-	//maUnderlinePopup.Hide();
+	//i122054, Missed following line, for collapse the bullets popup
+	maBulletsPopup.Hide();
 }
 
 void ParaPropertyPanel::EndNumberingPopupMode (void)
 {
-	//maUnderlinePopup.Hide();
+	//i122054, Missed following line, for collapse the numbering popup
+	maNumberingPopup.Hide();
 }
 
 
@@ -475,7 +477,11 @@ void ParaPropertyPanel::InitToolBoxBulletsNumbering()
 		maTBxNumBullet->SetItemImage( IID_NUMBER, maNumBImageListRTL.GetImage( IID_NUMBER ) );
 	}
 	else
-		InitImageList(maTBxNumBullet, maNumBImageList, maNumBImageListH);
+	//i122166, the icons for numbering or bullets toolbox inside toolbar and sidebar should be the same one
+	{
+		maBulletOnOff.SetupToolBoxItem(*maTBxNumBullet, IID_BULLET);
+		maNumberOnOff.SetupToolBoxItem(*maTBxNumBullet, IID_NUMBER);
+	}
 
 	maTBxNumBullet->SetDropdownClickHdl(LINK(this,ParaPropertyPanel,NumBTbxDDHandler));
 	maTBxNumBullet->SetSelectHdl(LINK(this,ParaPropertyPanel,NumBTbxSelectHandler));
@@ -767,11 +773,6 @@ void ParaPropertyPanel::ParaBKGStateChanged(sal_uInt16 /* nSID */, SfxItemState 
 	}
 }
 
-Color ParaPropertyPanel::GetBGColor (void) const
-{
-    return maColor;
-}
-
 void ParaPropertyPanel::SetBGColor (
     const String& /* rsColorName */,
     const Color aColor)
@@ -929,56 +930,30 @@ IMPL_LINK(ParaPropertyPanel, ClickIndent_IncDec_Hdl_Impl, ToolBox *, pControl)
 
 IMPL_LINK(ParaPropertyPanel, ClickProDemote_Hdl_Impl, ToolBox *, pControl)
 {
-	switch (pControl->GetCurItemId())
-	{
-		case BT_TBX_INDENT_PROMOTE:
-		{
-			SvxLRSpaceItem aMargin( SID_ATTR_PARA_RIGHT );
+    switch (pControl->GetCurItemId())
+    {
+        case BT_TBX_INDENT_PROMOTE:
+        {
+            GetBindings()->GetDispatcher()->Execute( SID_OUTLINE_RIGHT, SFX_CALLMODE_RECORD );
+        }
+        break;
+        case BT_TBX_INDENT_DEMOTE:
+        {
+            GetBindings()->GetDispatcher()->Execute( SID_OUTLINE_LEFT, SFX_CALLMODE_RECORD );
+        }
+        break;
+        case SD_HANGING_INDENT:
+        {
+            SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
+            aMargin.SetTxtLeft( (const long)GetCoreValue( *maLeftIndent.get(), m_eLRSpaceUnit ) + (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
+            aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
+            aMargin.SetTxtFirstLineOfst( ((const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ))*(-1) );
 
-			maTxtLeft += INDENT_STEP;
-			sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
-			nVal = OutputDevice::LogicToLogic( (long)nVal, MAP_100TH_MM, (MapUnit)m_eLRSpaceUnit );
-			aMargin.SetTxtLeft( (const long)nVal );
-			aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
-			aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
-
-			GetBindings()->GetDispatcher()->Execute(
-				SID_ATTR_PARA_RIGHT, SFX_CALLMODE_RECORD, &aMargin, 0L);
-		}
-		break;
-		case BT_TBX_INDENT_DEMOTE:
-		{
-			if((maTxtLeft - INDENT_STEP) < 0)
-				maTxtLeft = DEFAULT_VALUE;
-			else
-				maTxtLeft -= INDENT_STEP;
-
-			SvxLRSpaceItem aMargin( SID_ATTR_PARA_LEFT );
-			
-			sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
-			nVal = OutputDevice::LogicToLogic( (long)nVal, MAP_100TH_MM, (MapUnit)m_eLRSpaceUnit );
-
-			aMargin.SetTxtLeft( (const long)nVal );
-			aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
-			aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
-
-			GetBindings()->GetDispatcher()->Execute(
-				SID_ATTR_PARA_LEFT, SFX_CALLMODE_RECORD, &aMargin, 0L);
-		}
-		break;
-		case SD_HANGING_INDENT:
-		{
-			SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
-			aMargin.SetTxtLeft( (const long)GetCoreValue( *maLeftIndent.get(), m_eLRSpaceUnit ) + (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
-			aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
-			aMargin.SetTxtFirstLineOfst( ((const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ))*(-1) );
-
-			GetBindings()->GetDispatcher()->Execute(
-				SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
-		}
-		break;
-	}
-	return( 0L );
+            GetBindings()->GetDispatcher()->Execute( SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+        }
+        break;
+    }
+    return( 0L );
 }
 //==================================for Paragraph Line Spacing=====================
 
@@ -1063,8 +1038,14 @@ IMPL_LINK(ParaPropertyPanel, ClickUL_IncDec_Hdl_Impl, ToolBox *, pControl)
 }
 
 //==================================for Paragraph State change=====================
-void ParaPropertyPanel::NotifyItemUpdate( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
-{	
+void ParaPropertyPanel::NotifyItemUpdate(
+    sal_uInt16 nSID,
+    SfxItemState eState,
+    const SfxPoolItem* pState,
+    const bool bIsEnabled)
+{
+    (void)bIsEnabled;
+    
 	if( nSID == SID_ATTR_METRIC )
 	{
 		m_eMetricUnit = GetCurrentUnit(eState,pState);
@@ -1113,6 +1094,9 @@ void ParaPropertyPanel::NotifyItemUpdate( sal_uInt16 nSID, SfxItemState eState, 
 		ParaBKGStateChanged(nSID, eState, pState);
 	}
 }
+
+
+
 
 void ParaPropertyPanel::StateChangedAlignmentImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
 {
@@ -1310,15 +1294,15 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 /* nSID */, SfxItemSt
 			}
 		}
 
-		maTbxIndent_IncDec->Enable();
-		maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_True);
-		if(maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text) 
-			&& maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default)
-			&& maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Table))
-		{
-			maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_INC, sal_True);
-			maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_DEC, sal_True);
-		}
+        maTbxIndent_IncDec->Enable();
+        maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_True);
+        if ( maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text) 
+             && maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default)
+             && maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Table) )
+        {
+            maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_INC, sal_True);
+            maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_DEC, sal_True);
+        }
 
 //		maTbxProDemote->Enable();
 //		if( !mbOutLineRight && !mbOutLineLeft )
@@ -1435,88 +1419,76 @@ void ParaPropertyPanel::StateChangeOutLineImpl( sal_uInt16 nSID, SfxItemState eS
 	else
 		maTbxProDemote->EnableItem(BT_TBX_INDENT_PROMOTE, sal_False);
 
-//	if( !mbOutLineRight && !mbOutLineLeft )
-//	{
-//		maTbxProDemote->EnableItem(BT_TBX_INDENT_PROMOTE, sal_True);
-//		maTbxProDemote->EnableItem(BT_TBX_INDENT_DEMOTE, sal_True);
-//		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
-//	}
-//	else 
-//		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
 }
 
 void ParaPropertyPanel::StateChangeIncDecImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
 {
-	if (nSID==SID_INC_INDENT)
-	{
-		if( pState && eState == SFX_ITEM_UNKNOWN )
-			maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_INC, sal_True);
-		else
-			if( maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text)  && 
-				maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default) &&
-			maContext.GetCombinedContext() !=  CombinedEnumContext(Application_Writer, Context_Table) )
-				maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_INC, sal_False);
-	}
-	if (nSID==SID_DEC_INDENT)
-	{
-		if( pState && eState == SFX_ITEM_UNKNOWN )
-			maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_DEC, sal_True);
-		else
-			if( maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text)  &&
-				maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default) &&
-			maContext.GetCombinedContext() !=  CombinedEnumContext(Application_Writer, Context_Table) )
-				maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_DEC, sal_False);
-	}
+    if ( ( maContext.GetCombinedContext() == CombinedEnumContext(Application_Writer, Context_Text)
+           || maContext.GetCombinedContext() == CombinedEnumContext(Application_Writer, Context_Default)
+           || maContext.GetCombinedContext() ==  CombinedEnumContext(Application_Writer, Context_Table) )
+         && ( nSID == SID_INC_INDENT || nSID == SID_DEC_INDENT ) )
+    {
+        // Writer's text shell is the only one which provides reasonable states for Slots SID_INC_INDENT and SID_DEC_INDENT
+        // - namely SFX_ITEM_UNKNOWN and SFX_ITEM_DISABLED
+        maTbxIndent_IncDec->EnableItem(
+            nSID == SID_INC_INDENT ? BT_TBX_INDENT_INC : BT_TBX_INDENT_DEC,
+            ( pState && eState == SFX_ITEM_UNKNOWN ) ? sal_True : sal_False );
+    }
 }
+
+
 // Add toggle state for numbering and bullet icons
 void ParaPropertyPanel::StateChangeBulletNumImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
 {
-	if (nSID==FN_NUM_NUMBERING_ON)
-	{
-		if ( (eState >= SFX_ITEM_DEFAULT) && (pState->ISA(SfxBoolItem)))
-		{
-			const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
-			sal_Bool aBool = (sal_Bool)pItem->GetValue();
-			if (aBool) {
-				maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_CHECK);
-			} else {
-				maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_NOCHECK);
-			}
-		}
-	}
-	if (nSID==FN_NUM_BULLET_ON)
-	{
-		if ( (eState >= SFX_ITEM_DEFAULT) && (pState->ISA(SfxBoolItem)))
-		{
-			const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
-			sal_Bool aBool = (sal_Bool)pItem->GetValue();
-			if (aBool) {
-				maTBxNumBullet->SetItemState(IID_BULLET,	STATE_CHECK);
-			} else {
-				maTBxNumBullet->SetItemState(IID_BULLET,	STATE_NOCHECK);
-			}
-		}
-	}
+    if ( (eState >= SFX_ITEM_DEFAULT) && (pState->ISA(SfxBoolItem)) )
+    {
+        if (nSID==FN_NUM_NUMBERING_ON)
+        {
+            const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
+            sal_Bool aBool = (sal_Bool)pItem->GetValue();
+            if (aBool) {
+                maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_CHECK);
+            } else {
+                maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_NOCHECK);
+            }
+        }
+        else if (nSID==FN_NUM_BULLET_ON)
+        {
+            const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
+            sal_Bool aBool = (sal_Bool)pItem->GetValue();
+            if (aBool) {
+                maTBxNumBullet->SetItemState(IID_BULLET,	STATE_CHECK);
+            } else {
+                maTBxNumBullet->SetItemState(IID_BULLET,	STATE_NOCHECK);
+            }
+        }
+    }
 }
-//Modified for Numbering&Bullets Dialog UX Enh(Story 992) by chengjh,2011.7.5
-//Handing the transferred the num rule index data of the current selection
-void ParaPropertyPanel::StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemState /* eState */, const SfxPoolItem* pState )
-{
-	
-	const SfxUInt16Item* pIt = (const SfxUInt16Item*)pState;
-	sal_uInt16 nValue = (sal_uInt16)0xFFFF;
-	if ( pIt )
-		nValue = pIt->GetValue();
 
-	if ( nSID == FN_BUL_NUM_RULE_INDEX ) 
-	{
-		mnBulletTypeIndex = nValue;
-	}else if ( nSID == FN_NUM_NUM_RULE_INDEX ) 
-	{
-		mnNumTypeIndex = nValue;
-	}
+
+void ParaPropertyPanel::StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
+{
+    if ( eState >= SFX_ITEM_DEFAULT && pState->ISA(SfxUInt16Item) )
+    {
+        sal_uInt16 nValue = (sal_uInt16)0xFFFF;
+        {
+            const SfxUInt16Item* pIt = (const SfxUInt16Item*)pState;
+            if ( pIt )
+                nValue = pIt->GetValue();
+        }
+
+        if ( nSID == FN_BUL_NUM_RULE_INDEX ) 
+        {
+            mnBulletTypeIndex = nValue;
+        }
+        else if ( nSID == FN_NUM_NUM_RULE_INDEX ) 
+        {
+            mnNumTypeIndex = nValue;
+        }
+    }
 }
-//End
+
+
 FieldUnit ParaPropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState )
 {
 	FieldUnit eUnit = FUNIT_NONE;
@@ -1547,7 +1519,7 @@ FieldUnit ParaPropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPoolI
 	
 	return eUnit;
 }
-//new FixedText(this, SVX_RES(FT_COLOR))
+
 
 PopupControl* ParaPropertyPanel::CreateLineSpacingControl (PopupContainer* pParent)
 {
@@ -1564,22 +1536,32 @@ PopupControl* ParaPropertyPanel::CreateNumberingPopupControl (PopupContainer* pP
 	return new ParaNumberingControl(pParent, *this);
 }
 
+namespace 
+{
+    Color GetNoBackgroundColor(void)
+    {
+        return COL_TRANSPARENT;
+    }
+} // end of anonymous namespace
+
 PopupControl* ParaPropertyPanel::CreateBGColorPopupControl (PopupContainer* pParent)
 {
-	return new ColorControl(
+    const ResId aResId(SVX_RES(STR_NOFILL));
+
+    return new ColorControl(
         pParent,
         mpBindings,
-        SVX_RES(RID_POPUPPANEL_TEXTPAGE_FONT_COLOR),
+        SVX_RES(RID_POPUPPANEL_PARAPAGE_BACK_COLOR),
         SVX_RES(VS_FONT_COLOR),
-        ::boost::bind(&ParaPropertyPanel::GetBGColor, this),
+        ::boost::bind(GetNoBackgroundColor),
         ::boost::bind(&ParaPropertyPanel::SetBGColor, this, _1,_2),
         pParent,
-        0);
+        &aResId);
 }
 
 
 ParaPropertyPanel::ParaPropertyPanel(Window* pParent,
-    const cssu::Reference<css::frame::XFrame>& /* rxFrame */,
+    const cssu::Reference<css::frame::XFrame>&  rxFrame ,
     SfxBindings* pBindings,
     const cssu::Reference<css::ui::XSidebar>& rxSidebar)
     : Control(pParent, SVX_RES(RID_SIDEBAR_PARA_PANEL)),
@@ -1665,8 +1647,11 @@ ParaPropertyPanel::ParaPropertyPanel(Window* pParent,
       maVertTop (SID_TABLE_VERT_NONE, *pBindings,*this),
       maVertCenter (SID_TABLE_VERT_CENTER, *pBindings,*this),
       maVertBottom (SID_TABLE_VERT_BOTTOM,*pBindings,*this),
-      maBulletOnOff (FN_NUM_BULLET_ON, *pBindings,*this),
-      maNumberOnOff (FN_NUM_NUMBERING_ON, *pBindings,*this),
+      //i122166, the icons for numbering or bullets toolbox inside toolbar and sidebar should be the same one
+      maBulletOnOff (FN_NUM_BULLET_ON, *pBindings,*this,A2S("DefaultBullet"),rxFrame),
+      maNumberOnOff (FN_NUM_NUMBERING_ON, *pBindings,*this,A2S("DefaultNumbering"),rxFrame),
+      mxFrame(rxFrame),
+      //End i122166
       maBackColorControl (SID_BACKGROUND_COLOR,	*pBindings,*this),
       m_aMetricCtl (SID_ATTR_METRIC, *pBindings,*this),
       maBulletNumRuleIndex (FN_BUL_NUM_RULE_INDEX, *pBindings,*this),

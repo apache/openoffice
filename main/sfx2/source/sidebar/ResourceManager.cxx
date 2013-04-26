@@ -279,6 +279,10 @@ void ResourceManager::ReadDeckList (void)
             aDeckNode.getNodeValue("IconURL"));
         rDeckDescriptor.msHighContrastIconURL = ::comphelper::getString(
             aDeckNode.getNodeValue("HighContrastIconURL"));
+        rDeckDescriptor.msTitleBarIconURL = ::comphelper::getString(
+            aDeckNode.getNodeValue("TitleBarIconURL"));
+        rDeckDescriptor.msHighContrastTitleBarIconURL = ::comphelper::getString(
+            aDeckNode.getNodeValue("HighContrastTitleBarIconURL"));
         rDeckDescriptor.msHelpURL = ::comphelper::getString(
             aDeckNode.getNodeValue("HelpURL"));
         rDeckDescriptor.msHelpText = rDeckDescriptor.msTitle;
@@ -331,6 +335,10 @@ void ResourceManager::ReadPanelList (void)
             aPanelNode.getNodeValue("Id"));
         rPanelDescriptor.msDeckId = ::comphelper::getString(
             aPanelNode.getNodeValue("DeckId"));
+        rPanelDescriptor.msTitleBarIconURL = ::comphelper::getString(
+            aPanelNode.getNodeValue("TitleBarIconURL"));
+        rPanelDescriptor.msHighContrastTitleBarIconURL = ::comphelper::getString(
+            aPanelNode.getNodeValue("HighContrastTitleBarIconURL"));
         rPanelDescriptor.msHelpURL = ::comphelper::getString(
             aPanelNode.getNodeValue("HelpURL"));
         rPanelDescriptor.msImplementationURL = ::comphelper::getString(
@@ -412,35 +420,41 @@ void ResourceManager::ReadContextList (
                     : sMenuCommandOverride)
                 : rsDefaultMenuCommand);
 
+        // Setup a list of application enums.  Note that the
+        // application name may result in more than one value (eg
+        // DrawImpress will result in two enums, one for Draw and one
+        // for Impress).
+        ::std::vector<EnumContext::Application> aApplications;
         EnumContext::Application eApplication (EnumContext::GetApplicationEnum(sApplicationName));
-        EnumContext::Application eApplication2 (EnumContext::Application_None);
         if (eApplication == EnumContext::Application_None
             && !sApplicationName.equals(EnumContext::GetApplicationName(EnumContext::Application_None)))
         {
             // Handle some special names: abbreviations that make
             // context descriptions more readable.
             if (sApplicationName.equalsAscii("Writer"))
-                eApplication = EnumContext::Application_Writer;
+                aApplications.push_back(EnumContext::Application_Writer);
             else if (sApplicationName.equalsAscii("Calc"))
-                eApplication = EnumContext::Application_Calc;
+                aApplications.push_back(EnumContext::Application_Calc);
             else if (sApplicationName.equalsAscii("Draw"))
-                eApplication = EnumContext::Application_Draw;
+                aApplications.push_back(EnumContext::Application_Draw);
             else if (sApplicationName.equalsAscii("Impress"))
-                eApplication = EnumContext::Application_Impress;
+                aApplications.push_back(EnumContext::Application_Impress);
             else if (sApplicationName.equalsAscii("DrawImpress"))
             {
                 // A special case among the special names:  it is
                 // common to use the same context descriptions for
                 // both Draw and Impress.  This special case helps to
                 // avoid duplication in the .xcu file.
-                eApplication = EnumContext::Application_Draw;
-                eApplication2 = EnumContext::Application_Impress;
+                aApplications.push_back(EnumContext::Application_Draw);
+                aApplications.push_back(EnumContext::Application_Impress);
             }
-            else if (sApplicationName.equalsAscii("WriterAndWeb"))
+            else if (sApplicationName.equalsAscii("WriterVariants"))
             {
-                // Another special case for Writer and WriterWeb.
-                eApplication = EnumContext::Application_Writer;
-                eApplication2 = EnumContext::Application_WriterWeb;
+                // Another special case for all Writer variants.
+                aApplications.push_back(EnumContext::Application_Writer);
+                aApplications.push_back(EnumContext::Application_WriterGlobal);
+                aApplications.push_back(EnumContext::Application_WriterWeb);
+                aApplications.push_back(EnumContext::Application_WriterXML);
             }
             else
             {
@@ -448,7 +462,13 @@ void ResourceManager::ReadContextList (
                 continue;
             }
         }
-        
+        else
+        {
+            // No conversion of the application name necessary.
+            aApplications.push_back(eApplication);
+        }
+
+        // Setup the actual context enum.
         const EnumContext::Context eContext (EnumContext::GetContextEnum(sContextName));
         if (eContext == EnumContext::Context_Unknown)
         {
@@ -456,6 +476,8 @@ void ResourceManager::ReadContextList (
             continue;
         }
 
+        // Setup the flag that controls whether a deck/pane is
+        // initially visible/expanded.
         bool bIsInitiallyVisible;
         if (sInitialState.equalsAscii("visible"))
             bIsInitiallyVisible = true;
@@ -467,20 +489,21 @@ void ResourceManager::ReadContextList (
             continue;
         }
 
-        if (eApplication != EnumContext::Application_None)
-            rContextList.AddContextDescription(
-                Context(
-                    EnumContext::GetApplicationName(eApplication),
-                    EnumContext::GetContextName(eContext)),
-                bIsInitiallyVisible,
-                sMenuCommand);
-        if (eApplication2 != EnumContext::Application_None)
-            rContextList.AddContextDescription(
-                Context(
-                    EnumContext::GetApplicationName(eApplication2),
-                    EnumContext::GetContextName(eContext)),
-                bIsInitiallyVisible,
-                sMenuCommand);
+        // Add context descriptors.
+        for (::std::vector<EnumContext::Application>::const_iterator
+                 iApplication(aApplications.begin()),
+                 iEnd(aApplications.end());
+             iApplication!=iEnd;
+             ++iApplication)
+        {
+            if (*iApplication != EnumContext::Application_None)
+                rContextList.AddContextDescription(
+                    Context(
+                        EnumContext::GetApplicationName(*iApplication),
+                        EnumContext::GetContextName(eContext)),
+                    bIsInitiallyVisible,
+                    sMenuCommand);
+        }
     }
 }
 

@@ -65,7 +65,8 @@ public:
     virtual void NotifyItemUpdate(
         const sal_uInt16 nSId,
         const SfxItemState eState,
-        const SfxPoolItem* pState);
+        const SfxPoolItem* pState,
+        const bool bIsEnabled);
 
     SfxBindings* GetBindings();
     void ShowMenu (void);
@@ -124,13 +125,21 @@ private:
     ::sfx2::sidebar::ControllerItem         maAutoHeightControl;
     ::sfx2::sidebar::ControllerItem         m_aMetricCtl;
 
-    // images from ressource
-    Image                                   maImgFlipHori;
-    Image                                   maImgFlipVert;
-
     cssu::Reference< css::frame::XFrame >   mxFrame;
     ::sfx2::sidebar::EnumContext            maContext;
     SfxBindings*                            mpBindings;
+
+    // to remember original positions for restoring these for different layouts
+    Point                                   maFtWidthOrigPos;
+    Point                                   maMtrWidthOrigPos;
+    Point                                   maFtHeightOrigPos;
+    Point                                   maMtrHeightOrigPos;
+    Point                                   maCbxScaleOrigPos;
+    Point                                   maFtAngleOrigPos;
+    Point                                   maMtrAnglOrigPos;
+    Point                                   maFlipTbxOrigPos;
+    Point                                   maDialOrigPos;
+    Point                                   maFtFlipOrigPos;
 
     /// bitfield
     bool                                    mbMtrPosXMirror : 1;
@@ -140,7 +149,6 @@ private:
     bool                                    mbAutoHeight : 1;
     bool                                    mbAdjustEnabled : 1;
     bool                                    mbIsFlip : 1;
-    bool                                    mbInDestructor : 1;
 
     cssu::Reference<css::ui::XSidebar> mxSidebar;
 
@@ -170,6 +178,8 @@ private:
     void MetricState( SfxItemState eState, const SfxPoolItem* pState );
     FieldUnit GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState );
     void DisableControls();
+    void AdaptWidthHeightScalePosition(bool bOriginal);
+    void AdaptAngleFlipDialPosition(bool bOriginal);
 };
 
 

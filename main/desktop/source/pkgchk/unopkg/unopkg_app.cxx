@@ -391,10 +391,10 @@ extern "C" int unopkg_main()
             //bootstrapped. Otherwies files could be locked by this process.
 
             //If there is no folder left in
-            //$BRAND_BASE_DIR/share/extensions
+            //$OOO_BASE_DIR/share/extensions
             //then we can delete the registration data at
             //$BUNDLED_EXTENSIONS_USER
-            if (hasNoFolder(OUSTR("$BRAND_BASE_DIR/share/extensions")))
+            if (hasNoFolder(OUSTR("$OOO_BASE_DIR/share/extensions")))
             {
                 removeFolder(OUSTR("$BUNDLED_EXTENSIONS_PREREG"));
                 //return otherwise we create the registration data again
@@ -513,9 +513,8 @@ extern "C" int unopkg_main()
                 //Now prepare the vector which tells what extension has an
                 //unaccepted license
                 vecUnaccepted.resize(vecExtUnaccepted.size() + vec_packages.size());
-                ::std::vector<bool>::iterator i_unaccepted =
-                      ::std::fill_n(vecUnaccepted.begin(),
-                                    vecExtUnaccepted.size(), true);
+                ::std::fill_n( vecUnaccepted.begin(), vecExtUnaccepted.size(), true);
+                std::vector<bool>::iterator i_unaccepted = vecUnaccepted.begin() + vecExtUnaccepted.size();
                 ::std::fill_n(i_unaccepted, vec_packages.size(), false);
                 
                 dp_misc::writeConsole(

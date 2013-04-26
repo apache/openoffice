@@ -768,6 +768,11 @@
                     <value>1</value>
                 </prop>
             </node>
+            <node oor:name=".uno:NumberFormatType" oor:op="replace">
+                <prop oor:name="Label" oor:type="xs:string">
+                    <value xml:lang="en-US">Number Format Type</value>
+                </prop>
+            </node>
             <node oor:name=".uno:ObjectMirrorHorizontal" oor:op="replace">
                 <prop oor:name="Label" oor:type="xs:string">
                     <value xml:lang="en-US">Flip Object Horizontally</value>
@@ -1205,6 +1210,11 @@
                     <value xml:lang="en-US">Validity...</value>
                 </prop>
             </node>
+            <node oor:name=".uno:ViewGridLines" oor:op="replace">
+                <prop oor:name="Label" oor:type="xs:string">
+                    <value xml:lang="en-US">View Grid lines</value>
+                </prop>
+            </node>
             <node oor:name=".uno:ViewRowColumnHeaders" oor:op="replace">
                 <prop oor:name="Label" oor:type="xs:string">
                     <value xml:lang="en-US">Column &amp; Row Headers</value>
@@ -1270,6 +1280,11 @@
             <node oor:name=".uno:FilterMenu" oor:op="replace">
                 <prop oor:name="Label" oor:type="xs:string">
                     <value xml:lang="en-US">Filter</value>
+                </prop>
+            </node>
+            <node oor:name=".uno:FormatCellBorders" oor:op="replace">
+                <prop oor:name="Label" oor:type="xs:string">
+                    <value xml:lang="en-US">Format Cell Borders</value>
                 </prop>
             </node>
             <node oor:name=".uno:GroupOutlineMenu" oor:op="replace">

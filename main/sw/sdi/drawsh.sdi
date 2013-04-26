@@ -36,14 +36,14 @@ interface TextDraw : TextDrawBase
 	SID_ATTR_LINE_START
 	[
 		ExecMethod = ExecDrawAttrArgs ;
-		StateMethod = DisableState ;
+		StateMethod = GetDrawAttrState ;
 		Export = FALSE;
 	]
 
 	SID_ATTR_LINE_END
 	[
 		ExecMethod = ExecDrawAttrArgs ;
-		StateMethod = DisableState ;
+		StateMethod = GetDrawAttrState ;
 		Export = FALSE;
 	]
 
@@ -206,12 +206,6 @@ interface TextDraw : TextDrawBase
 		StateMethod = DisableState ;
 	]
 
-    FN_FLIP_VERT_GRAFIC
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
-	]
     SID_FLIP_VERTICAL
 	[
 		ExecMethod = Execute ;
@@ -219,12 +213,6 @@ interface TextDraw : TextDrawBase
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
 
-    FN_FLIP_HORZ_GRAFIC
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
-	]
     SID_FLIP_HORIZONTAL
 	[
 		ExecMethod = Execute ;

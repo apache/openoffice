@@ -41,21 +41,20 @@ namespace svx { namespace sidebar {
 class ParaNumberingControl:public svx::sidebar::PopupControl
 {
 private:
-	SvxNumValueSet2				maNumberVS;
-	FixedImage					maFISep;
-	PushButton maMoreButton;	
-	ParaPropertyPanel&     mrParaPropertyPanel;
-	SfxBindings*		mpBindings;
-	
-	DECL_LINK(NumSelectHdl_Impl, ValueSet*);
-	DECL_LINK(MoreButtonClickHdl_Impl, void*);
+    SvxNumValueSet2 maNumberVS;
+    PushButton      maMoreButton;
+    ParaPropertyPanel&     mrParaPropertyPanel;
+    SfxBindings*    mpBindings;
+
+    DECL_LINK(NumSelectHdl_Impl, ValueSet*);
+    DECL_LINK(MoreButtonClickHdl_Impl, void*);
 
 public:
-	ParaNumberingControl(Window* pParent, svx::sidebar::ParaPropertyPanel& rPanel);
-	~ParaNumberingControl();
-	void ToGetFocus();
-	void UpdateValueSet();
-	
+    ParaNumberingControl( Window* pParent,
+                          svx::sidebar::ParaPropertyPanel& rPanel);
+    ~ParaNumberingControl();
+    void UpdateValueSet();
+    
 };
 
 

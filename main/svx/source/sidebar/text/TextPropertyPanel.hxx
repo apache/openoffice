@@ -52,7 +52,7 @@ class PopupContainer;
 
 class TextPropertyPanel
     : public Control,
-       public ::sfx2::sidebar::IContextChangeReceiver,
+      public ::sfx2::sidebar::IContextChangeReceiver,
       public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:
@@ -63,15 +63,12 @@ public:
         const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 
     virtual void DataChanged (const DataChangedEvent& rEvent);
-    SfxBindings* GetBindings();
     ::sfx2::sidebar::ControllerItem& GetSpaceController();
     long GetSelFontSize();
     void SetSpacing(long nKern);
     void EndSpacingPopupMode (void);
     void EndUnderlinePopupMode (void);
-	Color GetFontColor (void) const;
 	void SetFontColor (const String& rsColorName,const Color aColor);
-	Color GetBrushColor (void) const;
 	void SetBrushColor (const String& rsColorName,const Color aColor);
 	void SetUnderline(FontUnderline	eUnderline);
 	Color& GetUnderlineColor(); 
@@ -87,10 +84,14 @@ public:
     virtual void HandleContextChange (
         const ::sfx2::sidebar::EnumContext aContext);
 
+
+    // ControllerItem::ItemUpdateReceiverInterface
+    
     virtual void NotifyItemUpdate(
         const sal_uInt16 nSId,
         const SfxItemState eState,
-        const SfxPoolItem* pState);
+        const SfxPoolItem* pState,
+        const bool bIsEnabled);
 
 private:
 	//ui controls
@@ -129,33 +130,6 @@ private:
 	::sfx2::sidebar::ControllerItem maHighlightControl;
 	::sfx2::sidebar::ControllerItem maSDFontGrow;
 	::sfx2::sidebar::ControllerItem maSDFontShrink;
-
-	//Images
-	Image	maImgIncrease;
-	Image	maImgDecrease;
-	Image	maImgBold;
-	Image	maImgItalic;
-	Image	maImgUnderline;
-	Image	maImgStrike;
-	Image	maImgShadow;
-	Image	maImgFontColor;
-	Image	maImgSupScript;
-	Image	maImgSubScript;
-	Image   maImgHighlight;
-
-	Image				maImgNormalIcon;
-
-	Image	maImgIncreaseHigh;
-	Image	maImgDecreaseHigh;
-	Image	maImgBoldHigh;
-	Image	maImgItalicHigh;
-	Image	maImgUnderlineHigh;
-	Image	maImgStrikeHigh;
-	Image	maImgShadowHigh;
-	Image	maImgFontColorHigh;
-	Image	maImgSupScriptHigh;
-	Image	maImgSubScriptHigh;
-	Image   maImgHighlightHigh;
 
 	FontWeight					meWeight;
 	FontItalic					meItalic;
@@ -209,20 +183,13 @@ private:
 	DECL_LINK(ToolBoxUnderlineClickHdl, ToolBox* );
 
 	void Initialize (void);
-    void SetupIcons (void);
+    void SetupToolboxItems (void);
 	void InitToolBoxFont();
 	void InitToolBoxIncDec();
 	void InitToolBoxFontColor();
 	void InitToolBoxScript();
 	void InitToolBoxHighlight();
 	void InitToolBoxSpacing();
-
-	void UpdateFontBold();
-	void UpdateFontItalic();
-	void UpdateFontUnderline();
-	void UpdateFontStrikeOut();
-	void UpdateFontShadowed();
-	void UpdateFontScript();
 
 	DECL_LINK(FontSelHdl, FontNameBox *);
 	DECL_LINK(FontSizeModifyHdl, FontSizeBox *);
@@ -233,12 +200,8 @@ private:
 	DECL_LINK(ImplPopupModeEndHdl, FloatingWindow* );
 	DECL_LINK(ToolBoxSwScriptSelectHdl, ToolBox *);
 	DECL_LINK(ToolBoxScriptSelectHdl, ToolBox *);
-	
-	
 
-	void TextStyleChanged();
-
-    Image GetIcon (const ::rtl::OUString& rsURL);
+    void UpdateItem (const sal_uInt16 nSlotId);
 };
 
 } } // end of namespace ::svx::sidebar

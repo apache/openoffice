@@ -69,7 +69,8 @@ public:
     virtual void NotifyItemUpdate(
         const sal_uInt16 nSId,
         const SfxItemState eState,
-        const SfxPoolItem* pState);
+        const SfxPoolItem* pState,
+        const bool bIsEnabled);
 
     SfxBindings* GetBindings();
 
@@ -119,10 +120,6 @@ private:
     ::boost::scoped_ptr< XFillGradientItem >            mpFillGradientItem;
     ::boost::scoped_ptr< XFillHatchItem >               mpHatchItem;
     ::boost::scoped_ptr< XFillBitmapItem >              mpBitmapItem;
-    ::boost::scoped_ptr< SvxColorTableItem >            mpColorTableItem;
-    ::boost::scoped_ptr< SvxGradientListItem >          mpGradientListItem;
-    ::boost::scoped_ptr< SvxHatchListItem >             mpHatchListItem;
-    ::boost::scoped_ptr< SvxBitmapListItem >            mpBitmapListItem;
 
     ::sfx2::sidebar::ControllerItem                     maStyleControl;
     ::sfx2::sidebar::ControllerItem                     maColorControl;
@@ -166,7 +163,6 @@ private:
     SfxBindings*                                        mpBindings;
 
     /// bitfield
-    bool                                                mbTBShow : 1;
     bool                                                mbColorAvail : 1;
 
     DECL_LINK(SelectFillTypeHdl, ListBox* );

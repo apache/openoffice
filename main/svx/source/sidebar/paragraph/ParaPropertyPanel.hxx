@@ -80,13 +80,12 @@ public:
 	virtual void NotifyItemUpdate(
 	    const sal_uInt16 nSId,
 	    const SfxItemState eState,
-	    const SfxPoolItem* pState);
+	    const SfxPoolItem* pState,
+        const bool bIsEnabled);
 
 	void ShowMenu (void);
 	sal_uInt16 GetBulletTypeIndex(){ return mnBulletTypeIndex; }
-	void SetBulletTypeIndex(sal_uInt16 nInd){ mnBulletTypeIndex = nInd; }
 	sal_uInt16 GetNumTypeIndex(){ return mnNumTypeIndex; }
-	void SetNumTypeIndex(sal_uInt16 nInd){ mnNumTypeIndex = nInd; }
 	FieldUnit GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState );
 
 	void EndSpacingPopupMode (void);
@@ -217,6 +216,9 @@ private:
 	::sfx2::sidebar::ControllerItem  maBulletNumRuleIndex;
 	::sfx2::sidebar::ControllerItem  maNumNumRuleIndex;
 
+	//i122166, the icons for numbering or bullets toolbox inside toolbar and sidebar should be the same one
+	cssu::Reference<css::frame::XFrame> mxFrame;
+	//End of i122166
     ::sfx2::sidebar::EnumContext maContext;
     SfxBindings* mpBindings;
 	ParaLineSpacingPopup maLineSpacePopup;
@@ -280,7 +282,6 @@ private:
 	void InitToolBoxSpacing();
 	void InitToolBoxLineSpacing();
 
-	Color GetBGColor (void) const;
 	void SetBGColor (const String& rsColorName, const Color aColor);
 };
 

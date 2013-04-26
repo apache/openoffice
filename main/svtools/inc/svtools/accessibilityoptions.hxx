@@ -56,6 +56,14 @@ public:
     sal_Bool    IsSelectionInReadonly() const;
 	sal_Bool	GetAutoDetectSystemHC() const;
 
+    // option to activate EdgeBlending for previews in the UI (ColorValueSet, ColorDropDown,
+    // FillStyle/LineStyle previews, etc...). 0 == off, 100% == full paint, in-between == alpha
+    sal_Int16   GetEdgeBlending() const;
+
+    // option to set a maximum line count for ListBoxes; when less or equal than this count
+    // is in a ListBox, all will be shown, else a ScrollBar will be used
+    sal_Int16   GetListBoxMaximumLineCount() const;
+
     void        SetIsForPagePreviews(sal_Bool bSet);
 	void 		SetIsHelpTipsDisappear(sal_Bool bSet);
 	void 		SetIsAllowAnimatedGraphics(sal_Bool bSet);
@@ -65,6 +73,9 @@ public:
 	void		SetHelpTipSeconds(sal_Int16 nSet);
     void        SetSelectionInReadonly(sal_Bool bSet);
 	void        SetAutoDetectSystemHC(sal_Bool bSet);
+    
+    void        SetEdgeBlending(sal_Int16 nSet);
+    void        SetListBoxMaximumLineCount(sal_Int16 nSet);
 
 	sal_Bool                IsModified() const;
 	void		            Commit();

@@ -79,7 +79,8 @@ public:
     virtual void NotifyItemUpdate(
         const sal_uInt16 nSId,
         const SfxItemState eState,
-        const SfxPoolItem* pState);
+        const SfxPoolItem* pState,
+        const bool bIsEnabled);
 
     SfxBindings* GetBindings();
 
@@ -151,12 +152,7 @@ private:
 
     /// bitfield
 	bool				mbColorAvailable : 1;
-	bool				mbStyleAvailable : 1;
-	bool				mbDashAvailable : 1;
-	bool				mbTransAvailable : 1;
 	bool				mbWidthValuable : 1;
-	bool				mbStartAvailable : 1;
-	bool				mbEndAvailable : 1;
 
     void SetupIcons(void);
 	void Initialize();	

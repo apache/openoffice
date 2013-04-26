@@ -401,6 +401,9 @@ SvxBackgroundTabPage::SvxBackgroundTabPage( Window* pParent,
 	FillColorValueSets_Impl();
 
 	aBackgroundColorSet.SetSelectHdl( HDL(BackgroundColorHdl_Impl) );
+    aBackgroundColorSet.SetStyle(aBackgroundColorSet.GetStyle() | WB_ITEMBORDER | WB_NAMEFIELD | WB_NONEFIELD);
+	aBackgroundColorSet.SetText(SVX_RESSTR(RID_SVXSTR_TRANSPARENT));
+	aBackgroundColorSet.SetAccessibleName(aBackgroundColorBox.GetText());
 	FreeResource();
 
 	aBtnBrowse.SetAccessibleRelationMemberOf(&aGbFile);
@@ -1195,54 +1198,52 @@ void SvxBackgroundTabPage::FillColorValueSets_Impl()
 	SfxObjectShell* pDocSh = SfxObjectShell::Current();
 	const SfxPoolItem* pItem = NULL;
 	XColorList* pColorTable = NULL;
-	const Size aSize15x15 = Size( 15, 15 );
-	FASTBOOL bOwn = sal_False;
+	bool bOwn(false);
+    long nColorCount(0);
 
 	if ( pDocSh && ( 0 != ( pItem = pDocSh->GetItem( SID_COLOR_TABLE ) ) ) )
+    {
 		pColorTable = ( (SvxColorTableItem*)pItem )->GetColorTable();
+    }
 
 	if ( !pColorTable )
 	{
-		bOwn = sal_True;
+		bOwn = true;
 		pColorTable = new XColorList( SvtPathOptions().GetPalettePath() );
 	}
 
 	if ( pColorTable )
 	{
-		short i	= 0;
-		long nCount	= pColorTable->Count();
-		XColorEntry* pEntry	= NULL;
-		Color aColWhite( COL_WHITE );
-		String aStrWhite( EditResId( RID_SVXITEMS_COLOR_WHITE ) );
-		WinBits nBits = ( aBackgroundColorSet.GetStyle() | WB_ITEMBORDER | WB_NAMEFIELD | WB_NONEFIELD );
-		aBackgroundColorSet.SetText( SVX_RESSTR( RID_SVXSTR_TRANSPARENT ) );
-		aBackgroundColorSet.SetStyle( nBits );
-		aBackgroundColorSet.SetAccessibleName(aBackgroundColorBox.GetText());
-		for ( i = 0; i < nCount; i++ )
-		{
-            pEntry = pColorTable->GetColor(i);
-			aBackgroundColorSet.InsertItem(	i + 1, pEntry->GetColor(), pEntry->GetName() );
-		}
+        nColorCount = pColorTable->Count();
+        aBackgroundColorSet.Clear();
+        aBackgroundColorSet.addEntriesForXColorList(*pColorTable);
 
-		while ( i < 80 )
-		{
-			aBackgroundColorSet.InsertItem( i + 1, aColWhite, aStrWhite );
-			i++;
-		}
+        if(bOwn)
+        {
+		    delete pColorTable;
+        }
+    }
 
-		if ( nCount > 80 )
-		{
-			aBackgroundColorSet.SetStyle( nBits | WB_VSCROLL );
-		}
-	}
+	const WinBits nBits(aBackgroundColorSet.GetStyle() | WB_ITEMBORDER | WB_NAMEFIELD | WB_NONEFIELD);
+	aBackgroundColorSet.SetStyle(nBits);
+    aBackgroundColorSet.SetColCount(aBackgroundColorSet.getColumnCount());
 
-	if ( bOwn )
-		delete pColorTable;
+    // here we have enough space to the left, so layout with fixed column size
+    // and fixed height, adapt width. Apply the adapted width by moving the left
+    // edge of the control to the left, keeping the right edge aligned
+    // with the original position
+    const Point aCurrentPosContainer(aBorderWin.GetPosPixel());
+    const Size aCurrentSizeContainer(aBorderWin.GetOutputSizePixel());
+    const Size aCurrentSizeContent(aBackgroundColorSet.GetOutputSizePixel());
+    const Size aNewSizeContent(aBackgroundColorSet.layoutToGivenHeight(aCurrentSizeContent.Height() - 4, nColorCount));
+    static sal_Int32 nAdd = 4;
+    const Size aNewSizeContainer(aNewSizeContent.Width() + nAdd, aNewSizeContent.Height() + nAdd);
+    const Point aNewPos((aCurrentPosContainer.X() + aCurrentSizeContainer.Width()) - aNewSizeContainer.Width(), aCurrentPosContainer.Y());
 
-	aBackgroundColorSet.SetColCount( 10 );
-	aBackgroundColorSet.SetLineCount( 10 );
-	aBackgroundColorSet.CalcWindowSizePixel( aSize15x15 );
-
+    aBorderWin.SetOutputSizePixel(aNewSizeContainer);
+    aBackgroundColorSet.SetOutputSizePixel(aNewSizeContent);
+    aBackgroundColorSet.SetPosSizePixel(Point(nAdd/2, nAdd/2), aNewSizeContent);
+    aBorderWin.SetPosSizePixel(aNewPos, aNewSizeContainer);
 }
 
 //------------------------------------------------------------------------

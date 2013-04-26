@@ -1823,56 +1823,6 @@ SfxBoolItem Fields FN_VIEW_FIELDS
 ]
 
 //--------------------------------------------------------------------------
-SfxVoidItem FlipHorizontal FN_FLIP_HORZ_GRAFIC
-()
-[
-	/* flags: */
-	AutoUpdate = TRUE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = FALSE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerSet;
-	Synchron;
-
-	/* config: */
-	AccelConfig = TRUE,
-	MenuConfig = TRUE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_FORMAT;
-]
-
-//--------------------------------------------------------------------------
-SfxVoidItem FlipVertical FN_FLIP_VERT_GRAFIC
-()
-[
-	/* flags: */
-	AutoUpdate = TRUE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = FALSE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerSet;
-	Synchron;
-
-	/* config: */
-	AccelConfig = TRUE,
-	MenuConfig = TRUE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_FORMAT;
-]
-
-//--------------------------------------------------------------------------
 SvxColorItem FontColor SID_ATTR_CHAR_COLOR2
 
 [
@@ -3355,30 +3305,6 @@ SfxBoolItem Graphic FN_VIEW_GRAPHIC
 
 //--------------------------------------------------------------------------
 SfxVoidItem GraphicDialog FN_FORMAT_GRAFIC_DLG
-()
-[
-	/* flags: */
-	AutoUpdate = FALSE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = TRUE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerItem;
-	Asynchron;
-
-	/* config: */
-	AccelConfig = TRUE,
-	MenuConfig = TRUE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_GRAPHIC;
-]
-//--------------------------------------------------------------------------
-SfxVoidItem ObjectWrapDialog FN_PROPERTY_WRAP_DLG
 ()
 [
 	/* flags: */
@@ -6309,10 +6235,10 @@ SfxVoidItem PageSettingDialog FN_FORMAT_PAGE_SETTING_DLG
 	Asynchron;
 
 	/* config: */
-	AccelConfig = TRUE,
-	MenuConfig = TRUE,
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
 	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
+	ToolBoxConfig = FALSE,
 	GroupId = GID_FORMAT;
 ]
 
@@ -10256,7 +10182,7 @@ SfxVoidItem CopyHyperlinkLocation FN_COPY_HYPERLINK_LOCATION
 ]
 
 
-SfxInt16Item SwPageColumn SID_ATTR_PAGE_COLUMN
+SfxInt16Item PageColumnType SID_ATTR_PAGE_COLUMN
 
 [
     /* flags: */
@@ -10275,11 +10201,11 @@ SfxInt16Item SwPageColumn SID_ATTR_PAGE_COLUMN
     Readonly = TRUE,
 
     /* config: */
-    AccelConfig = TRUE,
-    MenuConfig = TRUE,
+    AccelConfig = FALSE,
+    MenuConfig = FALSE,
     StatusBarConfig = FALSE,
-    ToolBoxConfig = TRUE,
-    GroupId = GID_VIEW;
+    ToolBoxConfig = FALSE,
+    GroupId = GID_FORMAT;
 ]
 
 SvxLongULSpaceItem SwPageULMargin SID_ATTR_PAGE_ULSPACE
