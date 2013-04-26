@@ -19,24 +19,23 @@
  *
  *************************************************************/
 
-#ifndef __com_sun_star_frame_PopupMenuControllerFactory_idl__
-#define __com_sun_star_frame_PopupMenuControllerFactory_idl__
+#ifndef __com_sun_star_frame_ToolbarControllerFactory_idl__
+#define __com_sun_star_frame_ToolbarControllerFactory_idl__
 
 #include <com/sun/star/frame/XUIControllerFactory.idl>
 
 module com { module sun { module star { module frame {
 
-/** specifies a factory that creates instances of registered popup menu controller.
+/** specifies a factory that creates instances of registered toolbar controller.
 
     <p>
-    A popup menu controller can be registered for a command URL and a model service name.
-    A menu bar or context menu will automatically create a popup menu controller if
-    it contains a registered command URL.
+    A toolbar controller can be registered for a command URL and a model service name.
     </p>
 
     @since OOo 2.0
 */
-service PopupMenuControllerFactory : XUIControllerFactory
+
+service ToolbarControllerFactory : XUIControllerFactory
 {
     /** service constructor
      */
