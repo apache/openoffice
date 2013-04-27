@@ -26772,11 +26772,11 @@ msgid  "\<ahelp hid=\".\"\>Normally the 14 standard Postscript fonts are not emb
 msgstr ""
 
 #: text/shared/01/ref_pdf_export.xhp#hd_id080420080355360
-msgid  "Create hybrid file"
+msgid  "Embed this document inside the PDF"
 msgstr ""
 
 #: text/shared/01/ref_pdf_export.xhp#par_id0804200803553767
-msgid  "\<ahelp hid=\".\"\>When the \<link href=\"http://extensions.services.openoffice.org/project/pdfimport\"\>PDF Import Extension\</link\> is installed, this setting enables you to export the document as a .pdf file containing two file formats: PDF and ODF.\</ahelp\>"
+msgid  "\<ahelp hid=\".\"\>The document being exported will be embedded inside the PDF file.\</ahelp\> Some PDF tools or %PRODUCTNAME extensions may allow to extract the file from the PDF and save it; in this way, the orignal %PRODUCTNAME document can be edited back without the need of a PDF editing application."
 msgstr ""
 
 #: text/shared/01/ref_pdf_export.xhp#hd_id9796441
@@ -34085,46 +34085,6 @@ msgstr ""
 
 #: text/shared/02/10020000.xhp#par_id3153682.3
 msgid  "Next Page"
-msgstr ""
-
-#: text/shared/02/10030000.xhp#tit
-msgid  "To Document Begin/First Page"
-msgstr ""
-
-#: text/shared/02/10030000.xhp#hd_id3149031.1
-msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>\<link href=\"text/shared/02/10030000.xhp\" name=\"To Document Begin\"\>To Document Begin\</link\>\</caseinline\> \<defaultinline\>\<link href=\"text/shared/02/10030000.xhp\" name=\"First Page\"\>First Page\</link\>\</defaultinline\> \</switchinline\>"
-msgstr ""
-
-#: text/shared/02/10030000.xhp#par_id3153539.2
-msgid  "\<ahelp hid=\".uno:FirstPage\" visibility=\"visible\"\>Moves to the first page of the document.\</ahelp\> This function is only active when you select the \<emph\>Page Preview\</emph\> function on the \<emph\>File\</emph\> menu."
-msgstr ""
-
-#: text/shared/02/10030000.xhp#par_id3154751
-msgid  "\<image src=\"res/commandimagelist/sc_gotostartofdoc.png\" id=\"img_id3147571\"\>\<alt id=\"alt_id3147571\"\>Icon\</alt\>\</image\>"
-msgstr ""
-
-#: text/shared/02/10030000.xhp#par_id3143268.3
-msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>To Document Begin\</caseinline\> \<defaultinline\>First Page\</defaultinline\> \</switchinline\>"
-msgstr ""
-
-#: text/shared/02/10040000.xhp#tit
-msgid  "To  Document End/Last Page"
-msgstr ""
-
-#: text/shared/02/10040000.xhp#hd_id3154840.1
-msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>\<link href=\"text/shared/02/10040000.xhp\" name=\"To  Document End\"\>To  Document End\</link\>\</caseinline\> \<defaultinline\>\<link href=\"text/shared/02/10040000.xhp\" name=\"Last Page\"\>Last Page\</link\>\</defaultinline\> \</switchinline\>"
-msgstr ""
-
-#: text/shared/02/10040000.xhp#par_id3149716.2
-msgid  "\<ahelp hid=\".uno:LastPage\" visibility=\"visible\"\>Moves to the last page of the document.\</ahelp\> This function is only active when you select the \<emph\>Page Preview\</emph\> function on the \<emph\>File\</emph\> menu."
-msgstr ""
-
-#: text/shared/02/10040000.xhp#par_id3155805
-msgid  "\<image src=\"res/commandimagelist/sc_gotoendofdoc.png\" id=\"img_id3153394\"\>\<alt id=\"alt_id3153394\"\>Icon\</alt\>\</image\>"
-msgstr ""
-
-#: text/shared/02/10040000.xhp#par_id3145313.3
-msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>To Document End\</caseinline\> \<defaultinline\>Last Page\</defaultinline\> \</switchinline\>"
 msgstr ""
 
 #: text/shared/02/10100000.xhp#tit
@@ -69721,4 +69681,512 @@ msgstr ""
 
 #: shared.tree#shared/text/shared/guide/data_enter_sql.xhp
 msgid  "Executing SQL Commands"
+msgstr ""
+
+#: text/shared/02/10030000.xhp#tit
+msgid  "To Document Begin/First Page"
+msgstr ""
+
+#: text/shared/02/10030000.xhp#hd_id3149031.1
+msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>\<link href=\"text/shared/02/10030000.xhp\" name=\"To Document Begin\"\>To Document Begin\</link\>\</caseinline\> \<defaultinline\>\<link href=\"text/shared/02/10030000.xhp\" name=\"First Page\"\>First Page\</link\>\</defaultinline\> \</switchinline\>"
+msgstr ""
+
+#: text/shared/02/10030000.xhp#par_id3153539.2
+msgid  "\<ahelp hid=\".uno:FirstPage\" visibility=\"visible\"\>Moves to the first page of the document.\</ahelp\> This function is only active when you select the \<emph\>Page Preview\</emph\> function on the \<emph\>File\</emph\> menu."
+msgstr ""
+
+#: text/shared/02/10030000.xhp#par_id3154751
+msgid  "\<image src=\"res/commandimagelist/sc_gotostartofdoc.png\" id=\"img_id3147571\"\>\<alt id=\"alt_id3147571\"\>Icon\</alt\>\</image\>"
+msgstr ""
+
+#: text/shared/02/10030000.xhp#par_id3143268.3
+msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>To Document Begin\</caseinline\> \<defaultinline\>First Page\</defaultinline\> \</switchinline\>"
+msgstr ""
+
+#: text/shared/02/10040000.xhp#tit
+msgid  "To  Document End/Last Page"
+msgstr ""
+
+#: text/shared/02/10040000.xhp#hd_id3154840.1
+msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>\<link href=\"text/shared/02/10040000.xhp\" name=\"To  Document End\"\>To  Document End\</link\>\</caseinline\> \<defaultinline\>\<link href=\"text/shared/02/10040000.xhp\" name=\"Last Page\"\>Last Page\</link\>\</defaultinline\> \</switchinline\>"
+msgstr ""
+
+#: text/shared/02/10040000.xhp#par_id3149716.2
+msgid  "\<ahelp hid=\".uno:LastPage\" visibility=\"visible\"\>Moves to the last page of the document.\</ahelp\> This function is only active when you select the \<emph\>Page Preview\</emph\> function on the \<emph\>File\</emph\> menu."
+msgstr ""
+
+#: text/shared/02/10040000.xhp#par_id3155805
+msgid  "\<image src=\"res/commandimagelist/sc_gotoendofdoc.png\" id=\"img_id3153394\"\>\<alt id=\"alt_id3153394\"\>Icon\</alt\>\</image\>"
+msgstr ""
+
+#: text/shared/02/10040000.xhp#par_id3145313.3
+msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"WRITER\"\>To Document End\</caseinline\> \<defaultinline\>Last Page\</defaultinline\> \</switchinline\>"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3147571.3
+msgid  "<help_section application=\"swriter\" id=\"02\" title=\"Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3157959.4
+msgid  "<node id=\"0201\" title=\"General Information and User Interface Usage\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153527.5
+msgid  "<node id=\"0202\" title=\"Command and Menu Reference\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153311.6
+msgid  "<node id=\"020201\" title=\"Menus\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149182.7
+msgid  "<node id=\"020202\" title=\"Toolbars\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145383.8
+msgid  "<node id=\"0203\" title=\"Creating Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149812.9
+msgid  "<node id=\"0204\" title=\"Graphics in Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3166461.10
+msgid  "<node id=\"0205\" title=\"Tables in Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155136.11
+msgid  "<node id=\"0206\" title=\"Objects in Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155629.12
+msgid  "<node id=\"0207\" title=\"Sections and Frames in Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150670.13
+msgid  "<node id=\"0208\" title=\"Tables of Contents and Indexes\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153349.14
+msgid  "<node id=\"0209\" title=\"Fields in Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145120.15
+msgid  "<node id=\"0210\" title=\"Navigating Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3159400.16
+msgid  "<node id=\"0211\" title=\"Calculating in Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145674.17
+msgid  "<node id=\"0212\" title=\"Formatting Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3143229.18
+msgid  "<node id=\"021201\" title=\"Templates and Styles\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3157910.19
+msgid  "<node id=\"0213\" title=\"Special Text Elements\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148564.20
+msgid  "<node id=\"0214\" title=\"Automatic Functions\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145609.21
+msgid  "<node id=\"0215\" title=\"Numbering and Lists\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3146794.22
+msgid  "<node id=\"0216\" title=\"Spellchecking, Thesaurus, and Languages\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3159413.23
+msgid  "<node id=\"0217\" title=\"Forms in Text Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149656.24
+msgid  "<node id=\"0218\" title=\"Troubleshooting Tips\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150398.25
+msgid  "<node id=\"0219\" title=\"Loading, Saving, Importing, and Exporting\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153524.26
+msgid  "<node id=\"0220\" title=\"Master Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154367.27
+msgid  "<node id=\"0221\" title=\"Links and References\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3159152.28
+msgid  "<node id=\"0222\" title=\"Printing\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145421.29
+msgid  "<node id=\"0223\" title=\"Searching and Replacing\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150871.30
+msgid  "<help_section application=\"swriter\" id=\"06\" title=\"HTML Documents\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150768.32
+msgid  "<help_section application=\"swriter\" id=\"01\" title=\"Installation\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3147229.33
+msgid  "<help_section application=\"swriter\" id=\"10\" title=\"Common Help Topics\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3152934.34
+msgid  "<node id=\"1001\" title=\"General Information\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155429.107
+msgid  "<node id=\"1002\" title=\"%PRODUCTNAME and Microsoft Office\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153368.35
+msgid  "<node id=\"1003\" title=\"Command and Menu Reference\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3146147.36
+msgid  "<node id=\"1004\" title=\"%PRODUCTNAME Options\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145365.37
+msgid  "<node id=\"1005\" title=\"Wizards\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150487.38
+msgid  "<node id=\"100501\" title=\"Letter Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3151113.39
+msgid  "<node id=\"100502\" title=\"Fax Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156442.41
+msgid  "<node id=\"100504\" title=\"Agenda Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3146975.42
+msgid  "<node id=\"100505\" title=\"Presentation Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148617.43
+msgid  "<node id=\"100506\" title=\"HTML Export Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153143.44
+msgid  "<node id=\"100507\" title=\"Group Element Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153574.46
+msgid  "<node id=\"100509\" title=\"Forms Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3146921.47
+msgid  "<node id=\"100510\" title=\"Document Converter Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154096.48
+msgid  "<node id=\"100511\" title=\"Table Element Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3144766.49
+msgid  "<node id=\"100512\" title=\"Combo Box/List Box Wizard\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154729.108
+msgid  "<node id=\"1006\" title=\"Configuring %PRODUCTNAME\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3151076.109
+msgid  "<node id=\"1007\" title=\"Working with the User Interface\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3147125.110
+msgid  "<node id=\"1008\" title=\"Printing, Faxing, Sending\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149418.111
+msgid  "<node id=\"1009\" title=\"Drag & Drop\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154016.112
+msgid  "<node id=\"1010\" title=\"Copy and Paste\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156180.113
+msgid  "<node id=\"1011\" title=\"Databases\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150715.114
+msgid  "<node id=\"1012\" title=\"Charts and Diagrams\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154164.115
+msgid  "<node id=\"1013\" title=\"Load, Save, Import, Export\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145650.116
+msgid  "<node id=\"1014\" title=\"Links and References\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153838.117
+msgid  "<node id=\"1015\" title=\"Document Version Tracking\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150327.118
+msgid  "<node id=\"1016\" title=\"Labels and Business Cards\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153708.119
+msgid  "<node id=\"1018\" title=\"Inserting External Data\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148916.120
+msgid  "<node id=\"1019\" title=\"Automatic Functions\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3152964.121
+msgid  "<node id=\"1020\" title=\"Searching and Replacing\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153765.50
+msgid  "<node id=\"1021\" title=\"Guides\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154361.51
+msgid  "<help_section application=\"swriter\" id=\"09\" title=\"Database Functionality\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150043.122
+msgid  "<node id=\"0901\" title=\"General Information\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154254.123
+msgid  "<node id=\"0902\" title=\"Data Sources\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149565.124
+msgid  "<node id=\"0903\" title=\"Forms\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155334.125
+msgid  "<node id=\"0904\" title=\"Tables, Queries and Indexes\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149107.126
+msgid  "<node id=\"0905\" title=\"Relations\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155937.127
+msgid  "<node id=\"0906\" title=\"Reports\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153963.53
+msgid  "<help_section application=\"sbasic\" id=\"07\" title=\"Macros and Programming\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3151248.54
+msgid  "<node id=\"0701\" title=\"General Information and User Interface Usage\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154023.55
+msgid  "<node id=\"0702\" title=\"Command Reference\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149924.56
+msgid  "<node id=\"070201\" title=\"Alphabetic List of Functions, Statements, and Operators\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145769.128
+msgid  "<node id=\"070202\" title=\"Run-Time Functions, Statements, and Operators\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155606.57
+msgid  "<node id=\"0703\" title=\"Guides\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149210.59
+msgid  "<help_section application=\"scalc\" id=\"08\" title=\"Spreadsheets\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155582.60
+msgid  "<node id=\"0801\" title=\"General Information and User Interface Usage\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149033.61
+msgid  "<node id=\"0802\" title=\"Command and Menu Reference\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148630.62
+msgid  "<node id=\"080201\" title=\"Menus\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156138.63
+msgid  "<node id=\"080202\" title=\"Toolbars\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3159236.64
+msgid  "<node id=\"0803\" title=\"Functions Types and Operators\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153197.65
+msgid  "<node id=\"0804\" title=\"Loading, Saving, Importing, and Exporting\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153705.66
+msgid  "<node id=\"0805\" title=\"Formatting\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3166425.67
+msgid  "<node id=\"0806\" title=\"Filtering and Sorting\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154716.68
+msgid  "<node id=\"0807\" title=\"Printing\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150344.69
+msgid  "<node id=\"0808\" title=\"Data Ranges\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150364.70
+msgid  "<node id=\"0809\" title=\"Pivot Table\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149966.71
+msgid  "<node id=\"0810\" title=\"Scenarios\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3146811.72
+msgid  "<node id=\"0811\" title=\"References\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148421.73
+msgid  "<node id=\"0812\" title=\"Viewing, Selecting, Copying\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145258.74
+msgid  "<node id=\"0813\" title=\"Formulas and Calculations\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3145586.75
+msgid  "<node id=\"0814\" title=\"Protection\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150885.76
+msgid  "<node id=\"0815\" title=\"Miscellaneous\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150519.78
+msgid  "<help_section application=\"smath\" id=\"03\" title=\"Formulas\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155529.79
+msgid  "<node id=\"0301\" title=\"General Information and User Interface Usage\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150522.80
+msgid  "<node id=\"0302\" title=\"Command and Menu Reference\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3146978.81
+msgid  "<node id=\"0303\" title=\"Working with Formulas\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156168.83
+msgid  "<help_section application=\"simpress\" id=\"04\" title=\"Presentations and Drawings\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155129.84
+msgid  "<node id=\"0401\" title=\"General Information and User Interface Usage\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3152890.85
+msgid  "<node id=\"0402\" title=\"Command and Menu Reference\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155089.86
+msgid  "<node id=\"040201\" title=\"Presentations (%PRODUCTNAME Impress)\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153305.87
+msgid  "<node id=\"04020101\" title=\"Menus\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148841.88
+msgid  "<node id=\"04020102\" title=\"Toolbars\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156200.89
+msgid  "<node id=\"040202\" title=\"Drawings (%PRODUCTNAME Draw)\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153816.90
+msgid  "<node id=\"04020201\" title=\"Menus\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3146154.91
+msgid  "<node id=\"04020202\" title=\"Toolbars\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148866.92
+msgid  "<node id=\"0403\" title=\"Loading, Saving, Importing, and Exporting\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3151244.93
+msgid  "<node id=\"0404\" title=\"Formatting\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3149329.94
+msgid  "<node id=\"0405\" title=\"Printing\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150318.95
+msgid  "<node id=\"0406\" title=\"Effects\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3150107.96
+msgid  "<node id=\"0407\" title=\"Objects, Graphics, and Bitmaps\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154343.97
+msgid  "<node id=\"0408\" title=\"Groups and Layers\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3148604.98
+msgid  "<node id=\"0409\" title=\"Text in Presentations and Drawings\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3155269.99
+msgid  "<node id=\"0410\" title=\"Viewing\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156351.101
+msgid  "<help_section application=\"scalc\" id=\"05\" title=\"Charts and Diagrams\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156177.102
+msgid  "<node id=\"0501\" title=\"General Information\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3156036.103
+msgid  "<node id=\"0502\" title=\"Command and Menu Reference\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3153285.104
+msgid  "<node id=\"050201\" title=\"Menus\">"
+msgstr ""
+
+#: text/shared/tree_strings.xhp#par_id3154959.105
+msgid  "<node id=\"050202\" title=\"Toolbars\">"
 msgstr ""

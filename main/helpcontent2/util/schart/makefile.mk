@@ -37,7 +37,7 @@ TARGET  = util_schart
 
 #common_build_zip:=
 zip1generatedlangs=TRUE
-zip1langdirs=$(aux_alllangiso)
+zip1langdirs=$(WITH_LANG)
 ZIP1TARGET=xhp_schart
 ZIP1FLAGS= -u -r
 ZIP1DIR=$(COMMONMISC)$/$(LANGDIR)

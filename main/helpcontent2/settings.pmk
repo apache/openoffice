@@ -19,7 +19,7 @@
 #  
 # *************************************************************
 
-.INCLUDE : $(LOCAL_COMMON_OUT)/inc$/aux_langs.mk
+#.INCLUDE : $(LOCAL_COMMON_OUT)/inc$/aux_langs.mk
 
 my_cp:=$(CLASSPATH)$(PATH_SEPERATOR)$(SOLARBINDIR)$/jaxp.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/juh.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/parser.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/xt.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/unoil.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/ridl.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/jurt.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/xmlsearch.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/LuceneHelpWrapper.jar$(PATH_SEPERATOR)$(SOLARBINDIR)$/HelpIndexerTool.jar$
 

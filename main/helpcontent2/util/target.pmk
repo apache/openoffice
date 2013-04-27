@@ -21,14 +21,14 @@
 
 
 
-LINKALLTARGETS=$(foreach,i,$(aux_alllangiso) $(COMMONBIN)$/$(LINKNAME)_$i.zip)
-LINKALLADDEDDEPS=$(foreach,i,$(aux_alllangiso) $(subst,LANGUAGE,$i $(LINKADDEDDPES)))
+LINKALLTARGETS=$(foreach,i,$(WITH_LANG) $(COMMONBIN)$/$(LINKNAME)_$i.zip)
+LINKALLADDEDDEPS=$(foreach,i,$(WITH_LANG) $(subst,LANGUAGE,$i $(LINKADDEDDPES)))
 
 ALLTAR : $(LINKALLTARGETS)
 
 XSL_DIR*:=$(SOLARBINDIR)
 
-$(LINKALLTARGETS) : $(foreach,i,$(LINKLINKFILES) $(COMMONMISC)$/$$(@:b:s/_/./:e:s/.//)/$i) $(subst,LANGUAGE,$$(@:b:s/_/./:e:s/.//) $(LINKADDEDDEPS)) $(COMMONMISC)$/xhp_changed.flag 
+$(LINKALLTARGETS) : $(foreach,i,$(LINKLINKFILES) $(COMMONMISC)$/$$(@:b:s/_/./:e:s/.//)/$i) $(subst,LANGUAGE,$$(@:b:s/_/./:e:s/.//) $(LINKADDEDDEPS))
 	$(HELPLINKER) @$(mktmp -mod $(LINKNAME) -src $(COMMONMISC) -sty $(XSL_DIR)/embed.xsl -zipdir $(MISC)$/ziptmp$(@:b) -idxcaption $(XSL_DIR)/idxcaption.xsl -idxcontent $(XSL_DIR)/idxcontent.xsl -lang {$(subst,$(LINKNAME)_, $(@:b))} $(subst,LANGUAGE,{$(subst,$(LINKNAME)_, $(@:b))} $(LINKADDEDFILES)) $(foreach,i,$(LINKLINKFILES) $(COMMONMISC)$/{$(subst,$(LINKNAME)_, $(@:b))}/$i) -o $@.$(INPATH))
 .IF "$(SOLAR_JAVA)" == "TRUE"
 .IF "$(CHECK_LUCENCE_INDEXER_OUTPUT)" == ""
