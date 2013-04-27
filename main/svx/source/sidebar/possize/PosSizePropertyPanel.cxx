@@ -31,6 +31,7 @@
 #include <sfx2/bindings.hxx>
 #include <sfx2/viewsh.hxx>
 #include <sfx2/objsh.hxx>
+#include <sfx2/imagemgr.hxx>
 #include <svx/dlgutil.hxx>
 #include <unotools/viewoptions.hxx>
 #include <vcl/virdev.hxx>
@@ -101,11 +102,19 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     maAutoWidthControl(SID_ATTR_TRANSFORM_AUTOWIDTH, *pBindings, *this),
     maAutoHeightControl(SID_ATTR_TRANSFORM_AUTOHEIGHT, *pBindings, *this),
     m_aMetricCtl(SID_ATTR_METRIC, *pBindings, *this),
-    maImgFlipHori(SVX_RES(IMG_HORI_FLIP)),
-    maImgFlipVert(SVX_RES(IMG_VERT_FLIP)),
     mxFrame(rxFrame),
     maContext(),
     mpBindings(pBindings),
+    maFtWidthOrigPos(mpFtWidth->GetPosPixel()),
+    maMtrWidthOrigPos(mpMtrWidth->GetPosPixel()),
+    maFtHeightOrigPos(mpFtHeight->GetPosPixel()),
+    maMtrHeightOrigPos(mpMtrHeight->GetPosPixel()),
+    maCbxScaleOrigPos(mpCbxScale->GetPosPixel()),
+    maFtAngleOrigPos(mpFtAngle->GetPosPixel()),
+    maMtrAnglOrigPos(mpMtrAngle->GetPosPixel()),
+    maFlipTbxOrigPos(mpFlipTbx->GetPosPixel()),
+    maDialOrigPos(mpDial->GetPosPixel()),
+    maFtFlipOrigPos(mpFtFlip->GetPosPixel()),
     mbMtrPosXMirror(false),
     mbSizeProtected(false),
     mbPositionProtected(false),
@@ -113,11 +122,10 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     mbAutoHeight(false),
     mbAdjustEnabled(false),
     mbIsFlip(false),
-    mbInDestructor(false),
     mxSidebar(rxSidebar)
 {
-	Initialize();
-	FreeResource();
+    Initialize();
+    FreeResource();
 
     mpBindings->Update( SID_ATTR_TRANSFORM_WIDTH );
     mpBindings->Update( SID_ATTR_TRANSFORM_HEIGHT );
@@ -129,8 +137,6 @@ PosSizePropertyPanel::PosSizePropertyPanel(
 
 PosSizePropertyPanel::~PosSizePropertyPanel()
 {
-    mbInDestructor = true;
-
     // Destroy the background windows of the toolboxes.
     mpFlipTbx.reset();
     mpFlipTbxBackground.reset();
@@ -160,84 +166,88 @@ void PosSizePropertyPanel::Initialize()
     mpFtFlip->SetBackground(Wallpaper());
 
         //Position : Horizontal / Vertical
-	mpMtrPosX->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosXHdl ) );
-	mpMtrPosY->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosYHdl ) );
-	mpMtrPosX->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Horizontal")));	//wj acc
-	mpMtrPosY->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Vertical")));		//wj acc
-	
+    mpMtrPosX->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosXHdl ) );
+    mpMtrPosY->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosYHdl ) );
+    mpMtrPosX->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Horizontal")));	//wj acc
+    mpMtrPosY->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Vertical")));		//wj acc
+    
     //Size : Width / Height
-	mpMtrWidth->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangeWidthHdl ) );
-	mpMtrHeight->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangeHeightHdl ) );
-	mpMtrWidth->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Width")));	//wj acc
-	mpMtrHeight->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Height")));	//wj acc
-	
+    mpMtrWidth->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangeWidthHdl ) );
+    mpMtrHeight->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangeHeightHdl ) );
+    mpMtrWidth->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Width")));	//wj acc
+    mpMtrHeight->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Height")));	//wj acc
+    
     //Size : Keep ratio
-	mpCbxScale->SetClickHdl( LINK( this, PosSizePropertyPanel, ClickAutoHdl ) );
-	
+    mpCbxScale->SetClickHdl( LINK( this, PosSizePropertyPanel, ClickAutoHdl ) );
+    
     //rotation:
-	mpMtrAngle->SetModifyHdl(LINK( this, PosSizePropertyPanel, AngleModifiedHdl));
-	mpMtrAngle->EnableAutocomplete( false );
-	mpMtrAngle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Rotation")));	//wj acc
-	
+    mpMtrAngle->SetModifyHdl(LINK( this, PosSizePropertyPanel, AngleModifiedHdl));
+    mpMtrAngle->EnableAutocomplete( false );
+    mpMtrAngle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Rotation")));	//wj acc
+    
     //rotation control
-	mpDial->SetModifyHdl(LINK( this, PosSizePropertyPanel, RotationHdl));
-	
+    mpDial->SetModifyHdl(LINK( this, PosSizePropertyPanel, RotationHdl));
+    
     //flip:
-	mpFlipTbx->SetSelectHdl( LINK( this, PosSizePropertyPanel, FlipHdl) );
-	mpFlipTbx->SetItemImage(FLIP_HORIZONTAL,maImgFlipHori);
-    mpFlipTbx->SetItemImage(FLIP_VERTICAL,maImgFlipVert);
-	mpFlipTbx->SetQuickHelpText(FLIP_HORIZONTAL,String(SVX_RES(STR_QH_HORI_FLIP))); //Add
-	mpFlipTbx->SetQuickHelpText(FLIP_VERTICAL,String(SVX_RES(STR_QH_VERT_FLIP))); //Add
-	
-	mpMtrPosX->SetAccessibleRelationLabeledBy(mpFtPosX.get());	
-	mpMtrPosY->SetAccessibleRelationLabeledBy(mpFtPosY.get());	
-	mpMtrWidth->SetAccessibleRelationLabeledBy(mpFtWidth.get());	
-	mpMtrHeight->SetAccessibleRelationLabeledBy(mpFtHeight.get());	
-	mpMtrAngle->SetAccessibleRelationLabeledBy(mpFtAngle.get());
+    mpFlipTbx->SetSelectHdl( LINK( this, PosSizePropertyPanel, FlipHdl) );
+    mpFlipTbx->SetItemImage(
+        FLIP_HORIZONTAL,
+        GetImage(mxFrame, A2S(".uno:FlipHorizontal"), sal_False, Theme::IsHighContrastMode()));
+    mpFlipTbx->SetItemImage(
+        FLIP_VERTICAL,
+        GetImage(mxFrame, A2S(".uno:FlipVertical"), sal_False, Theme::IsHighContrastMode()));
+    mpFlipTbx->SetQuickHelpText(FLIP_HORIZONTAL,String(SVX_RES(STR_QH_HORI_FLIP))); //Add
+    mpFlipTbx->SetQuickHelpText(FLIP_VERTICAL,String(SVX_RES(STR_QH_VERT_FLIP))); //Add
+    
+    mpMtrPosX->SetAccessibleRelationLabeledBy(mpFtPosX.get());	
+    mpMtrPosY->SetAccessibleRelationLabeledBy(mpFtPosY.get());	
+    mpMtrWidth->SetAccessibleRelationLabeledBy(mpFtWidth.get());	
+    mpMtrHeight->SetAccessibleRelationLabeledBy(mpFtHeight.get());	
+    mpMtrAngle->SetAccessibleRelationLabeledBy(mpFtAngle.get());
 #ifdef HAS_IA2
-	mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
+    mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
 #endif
-	mpFlipTbx->SetAccessibleRelationLabeledBy(mpFtFlip.get());
+    mpFlipTbx->SetAccessibleRelationLabeledBy(mpFtFlip.get());
 
     mpMtrAngle->InsertValue(0, FUNIT_CUSTOM);
-	mpMtrAngle->InsertValue(4500, FUNIT_CUSTOM);
-	mpMtrAngle->InsertValue(9000, FUNIT_CUSTOM);
-	mpMtrAngle->InsertValue(13500, FUNIT_CUSTOM);
-	mpMtrAngle->InsertValue(18000, FUNIT_CUSTOM);
-	mpMtrAngle->InsertValue(22500, FUNIT_CUSTOM);
-	mpMtrAngle->InsertValue(27000, FUNIT_CUSTOM);
-	mpMtrAngle->InsertValue(31500, FUNIT_CUSTOM);
-    mpMtrAngle->SetDropDownLineCount(mpMtrAngle->GetEntryCount());
+    mpMtrAngle->InsertValue(4500, FUNIT_CUSTOM);
+    mpMtrAngle->InsertValue(9000, FUNIT_CUSTOM);
+    mpMtrAngle->InsertValue(13500, FUNIT_CUSTOM);
+    mpMtrAngle->InsertValue(18000, FUNIT_CUSTOM);
+    mpMtrAngle->InsertValue(22500, FUNIT_CUSTOM);
+    mpMtrAngle->InsertValue(27000, FUNIT_CUSTOM);
+    mpMtrAngle->InsertValue(31500, FUNIT_CUSTOM);
+    mpMtrAngle->AdaptDropDownLineCountToMaximum();
 
     SfxViewShell* pCurSh = SfxViewShell::Current();
-	if ( pCurSh )
-		mpView = pCurSh->GetDrawView();
-	else
-		mpView = NULL;
+    if ( pCurSh )
+        mpView = pCurSh->GetDrawView();
+    else
+        mpView = NULL;
 
-	if ( mpView != NULL )
-	{
-		maUIScale = mpView->GetModel()->GetUIScale();
+    if ( mpView != NULL )
+    {
+        maUIScale = mpView->GetModel()->GetUIScale();
 
-		const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
-		if(1 == rMarkList.GetMarkCount())
-		{
-			const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-			const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
+        const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
+        if(1 == rMarkList.GetMarkCount())
+        {
+            const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
+            const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
-			if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
-			{
-				mbAdjustEnabled = true;
-			}
-		}
-	}
-	
+            if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
+            {
+                mbAdjustEnabled = true;
+            }
+        }
+    }
+    
     mePoolUnit = maTransfWidthControl.GetCoreMetric();
-	meDlgUnit = GetModuleFieldUnit();
-	SetFieldUnit( *mpMtrPosX, meDlgUnit, true );
-	SetFieldUnit( *mpMtrPosY, meDlgUnit, true );
-	SetFieldUnit( *mpMtrWidth, meDlgUnit, true );
-	SetFieldUnit( *mpMtrHeight, meDlgUnit, true );
+    meDlgUnit = GetModuleFieldUnit();
+    SetFieldUnit( *mpMtrPosX, meDlgUnit, true );
+    SetFieldUnit( *mpMtrPosY, meDlgUnit, true );
+    SetFieldUnit( *mpMtrWidth, meDlgUnit, true );
+    SetFieldUnit( *mpMtrHeight, meDlgUnit, true );
 }
 
 
@@ -288,6 +298,46 @@ void PosSizePropertyPanel::DataChanged(
 
 
 
+void PosSizePropertyPanel::AdaptWidthHeightScalePosition(bool bOriginal)
+{
+    if(bOriginal)
+    {
+        mpFtWidth->SetPosPixel(maFtWidthOrigPos);
+        mpMtrWidth->SetPosPixel(maMtrWidthOrigPos);
+        mpFtHeight->SetPosPixel(maFtHeightOrigPos);
+        mpMtrHeight->SetPosPixel(maMtrHeightOrigPos);
+        mpCbxScale->SetPosPixel(maCbxScaleOrigPos);
+    }
+    else
+    {
+        mpFtWidth->SetPosPixel(Point(LogicToPixel(Point(FT_POSITION_X_X,FT_POSITION_X_Y), MAP_APPFONT)));
+        mpMtrWidth->SetPosPixel(Point(LogicToPixel(Point(MF_POSITION_X_X,MF_POSITION_X_Y), MAP_APPFONT)));
+        mpFtHeight->SetPosPixel(Point(LogicToPixel(Point(FT_POSITION_Y_X,FT_POSITION_Y_Y), MAP_APPFONT)));
+        mpMtrHeight->SetPosPixel(Point(LogicToPixel(Point(MF_POSITION_Y_X,MF_POSITION_Y_Y), MAP_APPFONT)));
+        mpCbxScale->SetPosPixel(Point(LogicToPixel(Point(FT_WIDTH_X,FT_WIDTH_Y), MAP_APPFONT)));
+    }
+}
+
+void PosSizePropertyPanel::AdaptAngleFlipDialPosition(bool bOriginal)
+{
+    if(bOriginal)
+    {
+        mpFtAngle->SetPosPixel(maFtAngleOrigPos);
+        mpMtrAngle->SetPosPixel(maMtrAnglOrigPos);
+        mpFlipTbx->SetPosPixel(maFlipTbxOrigPos);
+        mpDial->SetPosPixel(maDialOrigPos);
+        mpFtFlip->SetPosPixel(maFtFlipOrigPos);
+    }
+    else
+    {
+        mpFtAngle->SetPosPixel(Point(LogicToPixel(Point(FT_ANGLE_X,FT_ANGLE_Y), MAP_APPFONT)));
+        mpMtrAngle->SetPosPixel(Point(LogicToPixel(Point(MF_ANGLE_X2,MF_ANGLE_Y2), MAP_APPFONT)));
+        mpFlipTbx->SetPosPixel(Point(LogicToPixel(Point(FLIP_HORI_X2,FLIP_HORI_Y2), MAP_APPFONT)));
+        mpDial->SetPosPixel(Point(LogicToPixel(Point(ROTATE_CONTROL_X2,ROTATE_CONTROL_Y2), MAP_APPFONT)));
+        mpFtFlip->SetPosPixel(Point(LogicToPixel(Point(FT_FLIP_X2,FT_FLIP_Y2), MAP_APPFONT)));
+    }
+}
+
 void PosSizePropertyPanel::HandleContextChange(
     const ::sfx2::sidebar::EnumContext aContext)
 {
@@ -302,15 +352,15 @@ void PosSizePropertyPanel::HandleContextChange(
     sal_Int32 nLayoutMode (0);
     switch (maContext.GetCombinedContext_DI())
     {
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Draw):
+        case CombinedEnumContext(Application_WriterVariants, Context_Draw):
             nLayoutMode = 0;
             break;
 
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Graphic):
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Media):
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Frame):
-        case CombinedEnumContext(Application_WriterAndWeb, Context_OLE):
-        case CombinedEnumContext(Application_WriterAndWeb, Context_Form):
+        case CombinedEnumContext(Application_WriterVariants, Context_Graphic):
+        case CombinedEnumContext(Application_WriterVariants, Context_Media):
+        case CombinedEnumContext(Application_WriterVariants, Context_Frame):
+        case CombinedEnumContext(Application_WriterVariants, Context_OLE):
+        case CombinedEnumContext(Application_WriterVariants, Context_Form):
             nLayoutMode = 1;
             break;
 
@@ -335,297 +385,298 @@ void PosSizePropertyPanel::HandleContextChange(
             nLayoutMode = 3;
             break;
     }    
+
     switch (nLayoutMode)
     {
         case 0:
-		{
-			mpMtrWidth->SetMin( 2 );
-			mpMtrHeight->SetMin( 2 );
-			mpFtPosX->Hide();
-			mpMtrPosX->Hide();
-			mpFtPosY->Hide();
-			mpMtrPosY->Hide();
-			
+        {
+            mpMtrWidth->SetMin( 2 );
+            mpMtrHeight->SetMin( 2 );
+            mpFtPosX->Hide();
+            mpMtrPosX->Hide();
+            mpFtPosY->Hide();
+            mpMtrPosY->Hide();
+            
             //rotation
-			mpFtAngle->Show();
-			mpMtrAngle->Show();
-			mpDial->Show();
-			
+            mpFtAngle->Show();
+            mpMtrAngle->Show();
+            mpDial->Show();
+            
             //flip
-			mpFtFlip->Show();
-			mpFlipTbx->Show();
-			Size aTbxSize = mpFlipTbx->CalcWindowSizePixel();
-			mpFlipTbx->SetOutputSizePixel( aTbxSize );
-			mbIsFlip = true;
+            mpFtFlip->Show();
+            mpFlipTbx->Show();
+            Size aTbxSize = mpFlipTbx->CalcWindowSizePixel();
+            mpFlipTbx->SetOutputSizePixel( aTbxSize );
+            mbIsFlip = true;
 
-			mpFtWidth->SetPosPixel(Point(LogicToPixel(Point(FT_POSITION_X_X,FT_POSITION_X_Y), MAP_APPFONT)));
-			mpMtrWidth->SetPosPixel(Point(LogicToPixel(Point(MF_POSITION_X_X,MF_POSITION_X_Y), MAP_APPFONT)));
-			mpFtHeight->SetPosPixel(Point(LogicToPixel(Point(FT_POSITION_Y_X,FT_POSITION_Y_Y), MAP_APPFONT)));
-			mpMtrHeight->SetPosPixel(Point(LogicToPixel(Point(MF_POSITION_Y_X,MF_POSITION_Y_Y), MAP_APPFONT)));
-			mpCbxScale->SetPosPixel(Point(LogicToPixel(Point(FT_WIDTH_X,FT_WIDTH_Y), MAP_APPFONT)));
+            AdaptWidthHeightScalePosition(false);
+            AdaptAngleFlipDialPosition(false);
 
-			mpFtAngle->SetPosPixel(Point(LogicToPixel(Point(FT_ANGLE_X,FT_ANGLE_Y), MAP_APPFONT)));
-			mpMtrAngle->SetPosPixel(Point(LogicToPixel(Point(MF_ANGLE_X2,MF_ANGLE_Y2), MAP_APPFONT)));
-			mpFlipTbx->SetPosPixel(Point(LogicToPixel(Point(FLIP_HORI_X2,FLIP_HORI_Y2), MAP_APPFONT)));
-			mpDial->SetPosPixel(Point(LogicToPixel(Point(ROTATE_CONTROL_X2,ROTATE_CONTROL_Y2), MAP_APPFONT)));
-			mpFtFlip->SetPosPixel(Point(LogicToPixel(Point(FT_FLIP_X2,FT_FLIP_Y2), MAP_APPFONT)));
+            mpFtAngle->SetPosPixel(Point(LogicToPixel(Point(FT_ANGLE_X,FT_ANGLE_Y), MAP_APPFONT)));
+            mpMtrAngle->SetPosPixel(Point(LogicToPixel(Point(MF_ANGLE_X2,MF_ANGLE_Y2), MAP_APPFONT)));
+            mpFlipTbx->SetPosPixel(Point(LogicToPixel(Point(FLIP_HORI_X2,FLIP_HORI_Y2), MAP_APPFONT)));
+            mpDial->SetPosPixel(Point(LogicToPixel(Point(ROTATE_CONTROL_X2,ROTATE_CONTROL_Y2), MAP_APPFONT)));
+            mpFtFlip->SetPosPixel(Point(LogicToPixel(Point(FT_FLIP_X2,FT_FLIP_Y2), MAP_APPFONT)));
 
-			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT2);
-			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
-			SetSizePixel(aSize);
+            Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT2);
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            SetSizePixel(aSize);
             if (mxSidebar.is())
                 mxSidebar->requestLayout();
-		}
-		break;
+        }
+        break;
 
         case 1:		
-		{
-			mpMtrWidth->SetMin( 2 );
-			mpMtrHeight->SetMin( 2 );
-			mpFtPosX->Hide();
-			mpMtrPosX->Hide();
-			mpFtPosY->Hide();
-			mpMtrPosY->Hide();
+        {
+            mpMtrWidth->SetMin( 2 );
+            mpMtrHeight->SetMin( 2 );
+            mpFtPosX->Hide();
+            mpMtrPosX->Hide();
+            mpFtPosY->Hide();
+            mpMtrPosY->Hide();
         
-			//rotation
-			mpFtAngle->Hide();
-			mpMtrAngle->Hide();
-			mpDial->Hide();
-        
-			//flip
-			mpFlipTbx->Hide();
-			mpFtFlip->Hide();
-			mbIsFlip = false;
-        
-			mpFtWidth->SetPosPixel(Point(LogicToPixel(Point(FT_POSITION_X_X,FT_POSITION_X_Y), MAP_APPFONT)));
-			mpMtrWidth->SetPosPixel(Point(LogicToPixel(Point(MF_POSITION_X_X,MF_POSITION_X_Y), MAP_APPFONT)));
-			mpFtHeight->SetPosPixel(Point(LogicToPixel(Point(FT_POSITION_Y_X,FT_POSITION_Y_Y), MAP_APPFONT)));
-			mpMtrHeight->SetPosPixel(Point(LogicToPixel(Point(MF_POSITION_Y_X,MF_POSITION_Y_Y), MAP_APPFONT)));
-			mpCbxScale->SetPosPixel(Point(LogicToPixel(Point(FT_WIDTH_X,FT_WIDTH_Y), MAP_APPFONT)));
-        
-			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT3);
-			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
-			SetSizePixel(aSize);
-            if (mxSidebar.is())
-                mxSidebar->requestLayout();
-		}
-		break;
-
-        case 2:
-		{
-			mpMtrWidth->SetMin( 1 );
-			mpMtrHeight->SetMin( 1 );
-			mpFtPosX->Show();
-			mpMtrPosX->Show();
-			mpFtPosY->Show();
-			mpMtrPosY->Show();
-        
-			//rotation
-			mpFtAngle->Show();
-			mpMtrAngle->Show();
-			mpDial->Show();
+            //rotation
+            mpFtAngle->Hide();
+            mpMtrAngle->Hide();
+            mpDial->Hide();
         
             //flip
-			mpFlipTbx->Show();
-			mpFtFlip->Show();
-			Size aTbxSize = mpFlipTbx->CalcWindowSizePixel();
-			mpFlipTbx->SetOutputSizePixel( aTbxSize );
-			mbIsFlip = true;
+            mpFlipTbx->Hide();
+            mpFtFlip->Hide();
+            mbIsFlip = false;
         
-			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT);
-			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
-			SetSizePixel(aSize);
+            AdaptWidthHeightScalePosition(false);
+            AdaptAngleFlipDialPosition(true);
+        
+            Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT3);
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            SetSizePixel(aSize);
             if (mxSidebar.is())
                 mxSidebar->requestLayout();
-		}
-		break;
+        }
+        break;
+
+        case 2:
+        {
+            mpMtrWidth->SetMin( 1 );
+            mpMtrHeight->SetMin( 1 );
+            mpFtPosX->Show();
+            mpMtrPosX->Show();
+            mpFtPosY->Show();
+            mpMtrPosY->Show();
         
-		case 3:
-		{
-			mpMtrWidth->SetMin( 1 );
-			mpMtrHeight->SetMin( 1 );
-			mpFtPosX->Show();
-			mpMtrPosX->Show();
-			mpFtPosY->Show();
-			mpMtrPosY->Show();
+            //rotation
+            mpFtAngle->Show();
+            mpMtrAngle->Show();
+            mpDial->Show();
         
-			//rotation
-			mpFtAngle->Hide();
-			mpMtrAngle->Hide();
-			mpDial->Hide();
+            //flip
+            mpFlipTbx->Show();
+            mpFtFlip->Show();
+            Size aTbxSize = mpFlipTbx->CalcWindowSizePixel();
+            mpFlipTbx->SetOutputSizePixel( aTbxSize );
+            mbIsFlip = true;
         
-			//flip
-			mpFlipTbx->Hide();
-			mpFtFlip->Hide();
-			mbIsFlip = false;
-        
-			Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT4);
-			aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
-			SetSizePixel(aSize);
+            AdaptWidthHeightScalePosition(true);
+            AdaptAngleFlipDialPosition(true);
+
+            Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT);
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            SetSizePixel(aSize);
             if (mxSidebar.is())
                 mxSidebar->requestLayout();
-		}
-		break;
-	}
+        }
+        break;
+        
+        case 3:
+        {
+            mpMtrWidth->SetMin( 1 );
+            mpMtrHeight->SetMin( 1 );
+            mpFtPosX->Show();
+            mpMtrPosX->Show();
+            mpFtPosY->Show();
+            mpMtrPosY->Show();
+        
+            //rotation
+            mpFtAngle->Hide();
+            mpMtrAngle->Hide();
+            mpDial->Hide();
+        
+            //flip
+            mpFlipTbx->Hide();
+            mpFtFlip->Hide();
+            mbIsFlip = false;
+        
+            AdaptWidthHeightScalePosition(true);
+            AdaptAngleFlipDialPosition(true);
+
+            Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT4);
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            SetSizePixel(aSize);
+            if (mxSidebar.is())
+                mxSidebar->requestLayout();
+        }
+        break;
+    }
 
     //Added for windows classic theme
-	mpFlipTbx->SetBackground(Wallpaper());
-	mpFlipTbx->SetPaintTransparent(true);
+    mpFlipTbx->SetBackground(Wallpaper());
+    mpFlipTbx->SetPaintTransparent(true);
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, ChangeWidthHdl, void*, /*pBox*/ )
 {
-	if( mpCbxScale->IsChecked() &&
-		mpCbxScale->IsEnabled() )
-	{
-		long nHeight = (long) ( ((double) mlOldHeight * (double) mpMtrWidth->GetValue()) / (double) mlOldWidth );
-		if( nHeight <= mpMtrHeight->GetMax( FUNIT_NONE ) )
-		{
-			mpMtrHeight->SetUserValue( nHeight, FUNIT_NONE );
-		}
-		else
-		{
-			nHeight = (long)mpMtrHeight->GetMax( FUNIT_NONE );
-			mpMtrHeight->SetUserValue( nHeight );
-			const long nWidth = (long) ( ((double) mlOldWidth * (double) nHeight) / (double) mlOldHeight );
-			mpMtrWidth->SetUserValue( nWidth, FUNIT_NONE );
-		}
-	}
-	executeSize();
-	return 0;
+    if( mpCbxScale->IsChecked() &&
+        mpCbxScale->IsEnabled() )
+    {
+        long nHeight = (long) ( ((double) mlOldHeight * (double) mpMtrWidth->GetValue()) / (double) mlOldWidth );
+        if( nHeight <= mpMtrHeight->GetMax( FUNIT_NONE ) )
+        {
+            mpMtrHeight->SetUserValue( nHeight, FUNIT_NONE );
+        }
+        else
+        {
+            nHeight = (long)mpMtrHeight->GetMax( FUNIT_NONE );
+            mpMtrHeight->SetUserValue( nHeight );
+            const long nWidth = (long) ( ((double) mlOldWidth * (double) nHeight) / (double) mlOldHeight );
+            mpMtrWidth->SetUserValue( nWidth, FUNIT_NONE );
+        }
+    }
+    executeSize();
+    return 0;
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, ChangeHeightHdl, void *, EMPTYARG )
 {
-	if( mpCbxScale->IsChecked() &&
-		mpCbxScale->IsEnabled() )
-	{
-		long nWidth = (long) ( ((double)mlOldWidth * (double)mpMtrHeight->GetValue()) / (double)mlOldHeight );
-		if( nWidth <= mpMtrWidth->GetMax( FUNIT_NONE ) )
-		{
-			mpMtrWidth->SetUserValue( nWidth, FUNIT_NONE );
-		}
-		else
-		{
-			nWidth = (long)mpMtrWidth->GetMax( FUNIT_NONE );
-			mpMtrWidth->SetUserValue( nWidth );
-			const long nHeight = (long) ( ((double)mlOldHeight * (double)nWidth) / (double)mlOldWidth );
-			mpMtrHeight->SetUserValue( nHeight, FUNIT_NONE );
-		}
-	}
-	executeSize();
-	return 0;
+    if( mpCbxScale->IsChecked() &&
+        mpCbxScale->IsEnabled() )
+    {
+        long nWidth = (long) ( ((double)mlOldWidth * (double)mpMtrHeight->GetValue()) / (double)mlOldHeight );
+        if( nWidth <= mpMtrWidth->GetMax( FUNIT_NONE ) )
+        {
+            mpMtrWidth->SetUserValue( nWidth, FUNIT_NONE );
+        }
+        else
+        {
+            nWidth = (long)mpMtrWidth->GetMax( FUNIT_NONE );
+            mpMtrWidth->SetUserValue( nWidth );
+            const long nHeight = (long) ( ((double)mlOldHeight * (double)nWidth) / (double)mlOldWidth );
+            mpMtrHeight->SetUserValue( nHeight, FUNIT_NONE );
+        }
+    }
+    executeSize();
+    return 0;
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, ChangePosXHdl, void *, EMPTYARG )
 {
-	executePosX();
-	return 0;
+    executePosX();
+    return 0;
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, ChangePosYHdl, void *, EMPTYARG )
 {
-	executePosY();
-	return 0;
+    executePosY();
+    return 0;
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, ClickAutoHdl, void *, EMPTYARG )
 {
-	if ( mpCbxScale->IsChecked() )
-	{
-		mlOldWidth  = Max( GetCoreValue( *mpMtrWidth,  mePoolUnit ), 1L );
-		mlOldHeight = Max( GetCoreValue( *mpMtrHeight, mePoolUnit ), 1L );
-	}
+    if ( mpCbxScale->IsChecked() )
+    {
+        mlOldWidth  = Max( GetCoreValue( *mpMtrWidth,  mePoolUnit ), 1L );
+        mlOldHeight = Max( GetCoreValue( *mpMtrHeight, mePoolUnit ), 1L );
+    }
 
-	// mpCbxScale must synchronized with that on Position and Size tabpage on Shape Properties dialog
-	SvtViewOptions	aPageOpt( E_TABPAGE, String::CreateFromInt32( RID_SVXPAGE_POSITION_SIZE ) );
-	aPageOpt.SetUserItem( USERITEM_NAME, ::com::sun::star::uno::makeAny( ::rtl::OUString( String::CreateFromInt32( mpCbxScale->IsChecked() ) ) ) );
+    // mpCbxScale must synchronized with that on Position and Size tabpage on Shape Properties dialog
+    SvtViewOptions	aPageOpt( E_TABPAGE, String::CreateFromInt32( RID_SVXPAGE_POSITION_SIZE ) );
+    aPageOpt.SetUserItem( USERITEM_NAME, ::com::sun::star::uno::makeAny( ::rtl::OUString( String::CreateFromInt32( mpCbxScale->IsChecked() ) ) ) );
 
-	return 0;
+    return 0;
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, AngleModifiedHdl, void *, EMPTYARG )
 {
-	String sTmp = mpMtrAngle->GetText();
-	bool    bNegative = 0;
-	sal_Unicode nChar = sTmp.GetChar( 0 );
+    String sTmp = mpMtrAngle->GetText();
+    bool    bNegative = 0;
+    sal_Unicode nChar = sTmp.GetChar( 0 );
 
-	if( nChar == '-' )
-	{
-		bNegative = 1;
-		nChar = sTmp.GetChar( 1 );
-	}
+    if( nChar == '-' )
+    {
+        bNegative = 1;
+        nChar = sTmp.GetChar( 1 );
+    }
 
-	if( (nChar < '0') || (nChar > '9') )
-		return 0;
-	double dTmp = sTmp.ToDouble();
-	if(bNegative)
-	{
-		while(dTmp<0)
-			dTmp += 360;
-	}
-	sal_Int64 nTmp = dTmp*100;
+    if( (nChar < '0') || (nChar > '9') )
+        return 0;
+    double dTmp = sTmp.ToDouble();
+    if(bNegative)
+    {
+        while(dTmp<0)
+            dTmp += 360;
+    }
+    sal_Int64 nTmp = dTmp*100;
 
-	SfxInt32Item aAngleItem( SID_ATTR_TRANSFORM_ANGLE,(sal_uInt32) nTmp);
-	SfxInt32Item aRotXItem( SID_ATTR_TRANSFORM_ROT_X,(sal_uInt32) mlRotX);
-	SfxInt32Item aRotYItem( SID_ATTR_TRANSFORM_ROT_Y,(sal_uInt32) mlRotY);
-	
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aAngleItem, &aRotXItem, &aRotYItem, 0L );
+    SfxInt32Item aAngleItem( SID_ATTR_TRANSFORM_ANGLE,(sal_uInt32) nTmp);
+    SfxInt32Item aRotXItem( SID_ATTR_TRANSFORM_ROT_X,(sal_uInt32) mlRotX);
+    SfxInt32Item aRotYItem( SID_ATTR_TRANSFORM_ROT_Y,(sal_uInt32) mlRotY);
+    
+    GetBindings()->GetDispatcher()->Execute(
+        SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aAngleItem, &aRotXItem, &aRotYItem, 0L );
 
-	return 0;
+    return 0;
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, RotationHdl, void *, EMPTYARG )
 {
-	sal_Int32 nTmp = mpDial->GetRotation();
+    sal_Int32 nTmp = mpDial->GetRotation();
 
-	SfxInt32Item aAngleItem( SID_ATTR_TRANSFORM_ANGLE,(sal_uInt32) nTmp);
-	SfxInt32Item aRotXItem( SID_ATTR_TRANSFORM_ROT_X,(sal_uInt32) mlRotX);
-	SfxInt32Item aRotYItem( SID_ATTR_TRANSFORM_ROT_Y,(sal_uInt32) mlRotY);
-	
-	GetBindings()->GetDispatcher()->Execute(
-		SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aAngleItem, &aRotXItem, &aRotYItem, 0L );
+    SfxInt32Item aAngleItem( SID_ATTR_TRANSFORM_ANGLE,(sal_uInt32) nTmp);
+    SfxInt32Item aRotXItem( SID_ATTR_TRANSFORM_ROT_X,(sal_uInt32) mlRotX);
+    SfxInt32Item aRotYItem( SID_ATTR_TRANSFORM_ROT_Y,(sal_uInt32) mlRotY);
+    
+    GetBindings()->GetDispatcher()->Execute(
+        SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aAngleItem, &aRotXItem, &aRotYItem, 0L );
 
-	return 0;
+    return 0;
 }
 
 
 
 IMPL_LINK( PosSizePropertyPanel, FlipHdl, ToolBox*, pBox )
 {
-	switch (pBox->GetCurItemId())
-	{
-		case FLIP_HORIZONTAL:
-		{
-			SfxVoidItem aHoriItem (SID_FLIP_HORIZONTAL);
-			GetBindings()->GetDispatcher()->Execute(
-				SID_FLIP_HORIZONTAL, SFX_CALLMODE_RECORD, &aHoriItem, 0L );
-		}
-		break;
-		case FLIP_VERTICAL:
-		{
-			SfxVoidItem aVertItem (SID_FLIP_VERTICAL );
-			GetBindings()->GetDispatcher()->Execute(
-				SID_FLIP_VERTICAL, SFX_CALLMODE_RECORD, &aVertItem, 0L );
-		}
-		break;
-	}
-	return 0;
+    switch (pBox->GetCurItemId())
+    {
+        case FLIP_HORIZONTAL:
+        {
+            SfxVoidItem aHoriItem (SID_FLIP_HORIZONTAL);
+            GetBindings()->GetDispatcher()->Execute(
+                SID_FLIP_HORIZONTAL, SFX_CALLMODE_RECORD, &aHoriItem, 0L );
+        }
+        break;
+        case FLIP_VERTICAL:
+        {
+            SfxVoidItem aVertItem (SID_FLIP_VERTICAL );
+            GetBindings()->GetDispatcher()->Execute(
+                SID_FLIP_VERTICAL, SFX_CALLMODE_RECORD, &aVertItem, 0L );
+        }
+        break;
+    }
+    return 0;
 }
 
 
@@ -636,40 +687,40 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     const SfxPoolItem* pState,
     const bool /* bIsEnabled */)
 {  
-	mpFtAngle->Enable();
-	mpMtrAngle->Enable();
-	mpDial->Enable();
-	mpFtFlip->Enable();
-	mpFlipTbx->Enable();
+    mpFtAngle->Enable();
+    mpMtrAngle->Enable();
+    mpDial->Enable();
+    mpFtFlip->Enable();
+    mpFlipTbx->Enable();
 
     const SfxUInt32Item*	pWidthItem;
-	const SfxUInt32Item*	pHeightItem;		
-	
-	SfxViewShell* pCurSh = SfxViewShell::Current();
-	if ( pCurSh )
-		mpView = pCurSh->GetDrawView();
-	else
-		mpView = NULL;
+    const SfxUInt32Item*	pHeightItem;		
+    
+    SfxViewShell* pCurSh = SfxViewShell::Current();
+    if ( pCurSh )
+        mpView = pCurSh->GetDrawView();
+    else
+        mpView = NULL;
 
-	if ( mpView == NULL )
-		return;
+    if ( mpView == NULL )
+        return;
 
-	const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
+    const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
 
-	if(1 == rMarkList.GetMarkCount())
-	{
-		const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-		const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
+    if(1 == rMarkList.GetMarkCount())
+    {
+        const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
+        const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
-		if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
-			mbAdjustEnabled = true;
-		else
-			mbAdjustEnabled = false;
-	}
-	else
-		mbAdjustEnabled = false;
+        if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
+            mbAdjustEnabled = true;
+        else
+            mbAdjustEnabled = false;
+    }
+    else
+        mbAdjustEnabled = false;
 
-	switch (nSID)
+    switch (nSID)
     {
         case SID_ATTR_TRANSFORM_WIDTH:
             if ( SFX_ITEM_AVAILABLE == eState )
@@ -910,7 +961,8 @@ void PosSizePropertyPanel::NotifyItemUpdate(
         {
             sal_uInt16 nMarkObj = 0;
             bool isNoEdge = true;
-            while(rMarkList.GetMark(nMarkObj))
+            
+            while(isNoEdge && rMarkList.GetMark(nMarkObj))
             {
                 const SdrObject* pObj = rMarkList.GetMark(nMarkObj)->GetMarkedSdrObj();
                 const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
@@ -925,6 +977,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                 }
                 nMarkObj++;
             }
+
             if(!isNoEdge)
             {
                 mpFtAngle->Disable();
@@ -938,21 +991,21 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     }
 
     if(nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject))
-	{
-		mpFlipTbx->Disable();
-		mpFtFlip->Disable();
-	}
+    {
+        mpFlipTbx->Disable();
+        mpFtFlip->Disable();
+    }
 
     DisableControls();
 
-	// mpCbxScale must synchronized with that on Position and Size tabpage on Shape Properties dialog
-	SvtViewOptions	aPageOpt( E_TABPAGE, String::CreateFromInt32( RID_SVXPAGE_POSITION_SIZE ) );
-	String	sUserData;
-	::com::sun::star::uno::Any	aUserItem = aPageOpt.GetUserItem( USERITEM_NAME );
-	::rtl::OUString	aTemp;
-	if ( aUserItem >>= aTemp )
-		sUserData = String( aTemp );
-	mpCbxScale->Check( (bool)sUserData.ToInt32() );
+    // mpCbxScale must synchronized with that on Position and Size tabpage on Shape Properties dialog
+    SvtViewOptions	aPageOpt( E_TABPAGE, String::CreateFromInt32( RID_SVXPAGE_POSITION_SIZE ) );
+    String	sUserData;
+    ::com::sun::star::uno::Any	aUserItem = aPageOpt.GetUserItem( USERITEM_NAME );
+    ::rtl::OUString	aTemp;
+    if ( aUserItem >>= aTemp )
+        sUserData = String( aTemp );
+    mpCbxScale->Check( (bool)sUserData.ToInt32() );
 }
 
 
@@ -967,28 +1020,28 @@ SfxBindings* PosSizePropertyPanel::GetBindings()
 
 void PosSizePropertyPanel::executeSize()
 {
-	if ( mpMtrWidth->IsValueModified() || mpMtrHeight->IsValueModified())
-	{
-		Fraction aUIScale = mpView->GetModel()->GetUIScale();
+    if ( mpMtrWidth->IsValueModified() || mpMtrHeight->IsValueModified())
+    {
+        Fraction aUIScale = mpView->GetModel()->GetUIScale();
 
-		// get Width
-		double nWidth = (double)mpMtrWidth->GetValue( meDlgUnit );
-		nWidth = MetricField::ConvertDoubleValue( nWidth, mpMtrWidth->GetBaseValue(), mpMtrWidth->GetDecimalDigits(), meDlgUnit, FUNIT_100TH_MM );
-		long lWidth = (long)(nWidth * (double)aUIScale);
-		lWidth = OutputDevice::LogicToLogic( lWidth, MAP_100TH_MM, (MapUnit)mePoolUnit );
-		lWidth = (long)mpMtrWidth->Denormalize( lWidth );
+        // get Width
+        double nWidth = (double)mpMtrWidth->GetValue( meDlgUnit );
+        nWidth = MetricField::ConvertDoubleValue( nWidth, mpMtrWidth->GetBaseValue(), mpMtrWidth->GetDecimalDigits(), meDlgUnit, FUNIT_100TH_MM );
+        long lWidth = (long)(nWidth * (double)aUIScale);
+        lWidth = OutputDevice::LogicToLogic( lWidth, MAP_100TH_MM, (MapUnit)mePoolUnit );
+        lWidth = (long)mpMtrWidth->Denormalize( lWidth );
 
-		// get Height
-		double nHeight = (double)mpMtrHeight->GetValue( meDlgUnit );
-		nHeight = MetricField::ConvertDoubleValue( nHeight, mpMtrHeight->GetBaseValue(), mpMtrHeight->GetDecimalDigits(), meDlgUnit, FUNIT_100TH_MM );
-		long lHeight = (long)(nHeight * (double)aUIScale);
-		lHeight = OutputDevice::LogicToLogic( lHeight, MAP_100TH_MM, (MapUnit)mePoolUnit );
-		lHeight = (long)mpMtrWidth->Denormalize( lHeight );
+        // get Height
+        double nHeight = (double)mpMtrHeight->GetValue( meDlgUnit );
+        nHeight = MetricField::ConvertDoubleValue( nHeight, mpMtrHeight->GetBaseValue(), mpMtrHeight->GetDecimalDigits(), meDlgUnit, FUNIT_100TH_MM );
+        long lHeight = (long)(nHeight * (double)aUIScale);
+        lHeight = OutputDevice::LogicToLogic( lHeight, MAP_100TH_MM, (MapUnit)mePoolUnit );
+        lHeight = (long)mpMtrWidth->Denormalize( lHeight );
 
-		// put Width & Height to itemset
-		SfxUInt32Item aWidthItem( SID_ATTR_TRANSFORM_WIDTH, (sal_uInt32) lWidth);
-		SfxUInt32Item aHeightItem( SID_ATTR_TRANSFORM_HEIGHT, (sal_uInt32) lHeight);
-		SfxAllEnumItem aPointItem (SID_ATTR_TRANSFORM_SIZE_POINT, (sal_uInt16)meRP);
+        // put Width & Height to itemset
+        SfxUInt32Item aWidthItem( SID_ATTR_TRANSFORM_WIDTH, (sal_uInt32) lWidth);
+        SfxUInt32Item aHeightItem( SID_ATTR_TRANSFORM_HEIGHT, (sal_uInt32) lHeight);
+        SfxAllEnumItem aPointItem (SID_ATTR_TRANSFORM_SIZE_POINT, (sal_uInt16)meRP);
         const sal_Int32 nCombinedContext(maContext.GetCombinedContext());
 
         if( nCombinedContext == CombinedEnumContext(Application_Writer, Context_Graphic) // mnContextId == PROPERTY_CONTEXT_SW_GRAPHIC 
@@ -996,147 +1049,147 @@ void PosSizePropertyPanel::executeSize()
             )
         // if( mnContextId == PROPERTY_CONTEXT_SW_GRAPHIC || mnContextId == PROPERTY_CONTEXT_SW_OLE )
         {
-			GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aWidthItem, &aHeightItem, &aPointItem, 0L );
+            GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aWidthItem, &aHeightItem, &aPointItem, 0L );
         }
-		else
-		{
-			if ( (mpMtrWidth->IsValueModified()) && (mpMtrHeight->IsValueModified()))
-				GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aWidthItem, &aHeightItem, &aPointItem, 0L );
-			else if( mpMtrWidth->IsValueModified())
-				GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aWidthItem, &aPointItem, 0L );
-			else if ( mpMtrHeight->IsValueModified())
-				GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aHeightItem, &aPointItem, 0L );
-		}		
-	}
+        else
+        {
+            if ( (mpMtrWidth->IsValueModified()) && (mpMtrHeight->IsValueModified()))
+                GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aWidthItem, &aHeightItem, &aPointItem, 0L );
+            else if( mpMtrWidth->IsValueModified())
+                GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aWidthItem, &aPointItem, 0L );
+            else if ( mpMtrHeight->IsValueModified())
+                GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aHeightItem, &aPointItem, 0L );
+        }		
+    }
 }
 
 
 
 void PosSizePropertyPanel::executePosX()
 {
-	if ( mpMtrPosX->IsValueModified())
-	{
-		long lX = GetCoreValue( *mpMtrPosX, mePoolUnit );
-		if( mbMtrPosXMirror )
-			lX = -lX;
-		long lY = GetCoreValue( *mpMtrPosY, mePoolUnit );
+    if ( mpMtrPosX->IsValueModified())
+    {
+        long lX = GetCoreValue( *mpMtrPosX, mePoolUnit );
+        if( mbMtrPosXMirror )
+            lX = -lX;
+        long lY = GetCoreValue( *mpMtrPosY, mePoolUnit );
 
-		Size aPageSize;
-		Rectangle aRect;
-		maRect = mpView->GetAllMarkedRect();	
-		aRect = mpView->GetAllMarkedRect();
+        Size aPageSize;
+        Rectangle aRect;
+        maRect = mpView->GetAllMarkedRect();	
+        aRect = mpView->GetAllMarkedRect();
 
-		Fraction aUIScale = mpView->GetModel()->GetUIScale();
-		lX += maAnchorPos.X();
-		lX = Fraction( lX ) * aUIScale;
-		lY += maAnchorPos.Y();
-		lY = Fraction( lY ) * aUIScale;
-		
-		SfxInt32Item aPosXItem( SID_ATTR_TRANSFORM_POS_X,(sal_uInt32) lX);
-		SfxInt32Item aPosYItem( SID_ATTR_TRANSFORM_POS_Y,(sal_uInt32) lY);
-	
-		GetBindings()->GetDispatcher()->Execute(
-			SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosXItem, 0L );	
-	}
+        Fraction aUIScale = mpView->GetModel()->GetUIScale();
+        lX += maAnchorPos.X();
+        lX = Fraction( lX ) * aUIScale;
+        lY += maAnchorPos.Y();
+        lY = Fraction( lY ) * aUIScale;
+        
+        SfxInt32Item aPosXItem( SID_ATTR_TRANSFORM_POS_X,(sal_uInt32) lX);
+        SfxInt32Item aPosYItem( SID_ATTR_TRANSFORM_POS_Y,(sal_uInt32) lY);
+    
+        GetBindings()->GetDispatcher()->Execute(
+            SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosXItem, 0L );	
+    }
 }
 
 
 
 void PosSizePropertyPanel::executePosY()
 {
-	if ( mpMtrPosY->IsValueModified() )
-	{
-		long lX = GetCoreValue( *mpMtrPosX, mePoolUnit );
-		long lY = GetCoreValue( *mpMtrPosY, mePoolUnit );
+    if ( mpMtrPosY->IsValueModified() )
+    {
+        long lX = GetCoreValue( *mpMtrPosX, mePoolUnit );
+        long lY = GetCoreValue( *mpMtrPosY, mePoolUnit );
 
-		Size aPageSize;
-		Rectangle aRect;
-		maRect = mpView->GetAllMarkedRect();	
-		aRect = mpView->GetAllMarkedRect();
+        Size aPageSize;
+        Rectangle aRect;
+        maRect = mpView->GetAllMarkedRect();	
+        aRect = mpView->GetAllMarkedRect();
 
-		Fraction aUIScale = mpView->GetModel()->GetUIScale();
-		lX += maAnchorPos.X();
-		lX = Fraction( lX ) * aUIScale;
-		lY += maAnchorPos.Y();
-		lY = Fraction( lY ) * aUIScale;
-		
-		SfxInt32Item aPosXItem( SID_ATTR_TRANSFORM_POS_X,(sal_uInt32) lX);
-		SfxInt32Item aPosYItem( SID_ATTR_TRANSFORM_POS_Y,(sal_uInt32) lY);
-	
-		GetBindings()->GetDispatcher()->Execute(
-			SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosYItem, 0L );	
-	}
+        Fraction aUIScale = mpView->GetModel()->GetUIScale();
+        lX += maAnchorPos.X();
+        lX = Fraction( lX ) * aUIScale;
+        lY += maAnchorPos.Y();
+        lY = Fraction( lY ) * aUIScale;
+        
+        SfxInt32Item aPosXItem( SID_ATTR_TRANSFORM_POS_X,(sal_uInt32) lX);
+        SfxInt32Item aPosYItem( SID_ATTR_TRANSFORM_POS_Y,(sal_uInt32) lY);
+    
+        GetBindings()->GetDispatcher()->Execute(
+            SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosYItem, 0L );	
+    }
 }
 
 
 
 void PosSizePropertyPanel::MetricState( SfxItemState eState, const SfxPoolItem* pState )
 {
-	bool bPosXBlank = false;
-	bool bPosYBlank = false;
-	bool bWidthBlank = false;
-	bool bHeightBlank = false;
-	String sNull = String::CreateFromAscii("");
-	meDlgUnit = GetCurrentUnit(eState,pState);
+    bool bPosXBlank = false;
+    bool bPosYBlank = false;
+    bool bWidthBlank = false;
+    bool bHeightBlank = false;
+    String sNull = String::CreateFromAscii("");
+    meDlgUnit = GetCurrentUnit(eState,pState);
 
-	if( mpMtrPosX->GetText() == sNull )
-		bPosXBlank = true;
-	SetFieldUnit( *mpMtrPosX, meDlgUnit, true );
-	if(bPosXBlank)
-		mpMtrPosX->SetText(String());
+    if( mpMtrPosX->GetText() == sNull )
+        bPosXBlank = true;
+    SetFieldUnit( *mpMtrPosX, meDlgUnit, true );
+    if(bPosXBlank)
+        mpMtrPosX->SetText(String());
 
-	if( mpMtrPosY->GetText() == sNull )
-		bPosYBlank = true;
-	SetFieldUnit( *mpMtrPosY, meDlgUnit, true );
-	if(bPosYBlank)
-		mpMtrPosY->SetText(String());
+    if( mpMtrPosY->GetText() == sNull )
+        bPosYBlank = true;
+    SetFieldUnit( *mpMtrPosY, meDlgUnit, true );
+    if(bPosYBlank)
+        mpMtrPosY->SetText(String());
 
-	if( mpMtrWidth->GetText() == sNull )
-		bWidthBlank = true;
-	SetFieldUnit( *mpMtrWidth, meDlgUnit, true );
-	if(bWidthBlank)
-		mpMtrWidth->SetText(String());
+    if( mpMtrWidth->GetText() == sNull )
+        bWidthBlank = true;
+    SetFieldUnit( *mpMtrWidth, meDlgUnit, true );
+    if(bWidthBlank)
+        mpMtrWidth->SetText(String());
 
-	if( mpMtrHeight->GetText() == sNull )
-		bHeightBlank = true;
-	SetFieldUnit( *mpMtrHeight, meDlgUnit, true );
-	if(bHeightBlank)
-		mpMtrHeight->SetText(String());
+    if( mpMtrHeight->GetText() == sNull )
+        bHeightBlank = true;
+    SetFieldUnit( *mpMtrHeight, meDlgUnit, true );
+    if(bHeightBlank)
+        mpMtrHeight->SetText(String());
 }
 
 
 
 FieldUnit PosSizePropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState )
 {
-	FieldUnit eUnit = FUNIT_NONE;
+    FieldUnit eUnit = FUNIT_NONE;
 
-	if ( pState && eState >= SFX_ITEM_DEFAULT )
+    if ( pState && eState >= SFX_ITEM_DEFAULT )
     {
-		eUnit = (FieldUnit)( (const SfxUInt16Item*)pState )->GetValue();
+        eUnit = (FieldUnit)( (const SfxUInt16Item*)pState )->GetValue();
     }
-	else
-	{
-		SfxViewFrame* pFrame = SfxViewFrame::Current();
-		SfxObjectShell* pSh = NULL;
-		if ( pFrame )
-			pSh = pFrame->GetObjectShell();
-		if ( pSh )
-		{
-			SfxModule* pModule = pSh->GetModule();
-			if ( pModule )
-			{
-				const SfxPoolItem* pItem = pModule->GetItem( SID_ATTR_METRIC );
-				if ( pItem )
-					eUnit = (FieldUnit)( (SfxUInt16Item*)pItem )->GetValue();
-			}
-			else
-			{
-				DBG_ERRORFILE( "GetModuleFieldUnit(): no module found" );
-			}
-		}
-	}
-	
-	return eUnit;
+    else
+    {
+        SfxViewFrame* pFrame = SfxViewFrame::Current();
+        SfxObjectShell* pSh = NULL;
+        if ( pFrame )
+            pSh = pFrame->GetObjectShell();
+        if ( pSh )
+        {
+            SfxModule* pModule = pSh->GetModule();
+            if ( pModule )
+            {
+                const SfxPoolItem* pItem = pModule->GetItem( SID_ATTR_METRIC );
+                if ( pItem )
+                    eUnit = (FieldUnit)( (SfxUInt16Item*)pItem )->GetValue();
+            }
+            else
+            {
+                DBG_ERRORFILE( "GetModuleFieldUnit(): no module found" );
+            }
+        }
+    }
+    
+    return eUnit;
 }
 
 
@@ -1144,85 +1197,85 @@ FieldUnit PosSizePropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPo
 void PosSizePropertyPanel::DisableControls()
 {
     if( mbPositionProtected )
-	{	
-		// the position is protected("Position protect" option in modal dialog is checked),
-		// disable all the Position controls in sidebar
-		mpFtPosX->Disable();
-		mpMtrPosX->Disable();
-		mpFtPosY->Disable();
-		mpMtrPosY->Disable();
-		mpFtAngle->Disable();
-		mpMtrAngle->Disable();
-		mpDial->Disable();
-		mpFtFlip->Disable();
-		mpFlipTbx->Disable();
+    {	
+        // the position is protected("Position protect" option in modal dialog is checked),
+        // disable all the Position controls in sidebar
+        mpFtPosX->Disable();
+        mpMtrPosX->Disable();
+        mpFtPosY->Disable();
+        mpMtrPosY->Disable();
+        mpFtAngle->Disable();
+        mpMtrAngle->Disable();
+        mpDial->Disable();
+        mpFtFlip->Disable();
+        mpFlipTbx->Disable();
 
-		mpFtWidth->Disable();
-		mpMtrWidth->Disable();
-		mpFtHeight->Disable();
-		mpMtrHeight->Disable();
+        mpFtWidth->Disable();
+        mpMtrWidth->Disable();
+        mpFtHeight->Disable();
+        mpMtrHeight->Disable();
         mpCbxScale->Disable();
-	}
-	else
-	{
-		mpFtPosX->Enable();
-		mpMtrPosX->Enable();
-		mpFtPosY->Enable();
-		mpMtrPosY->Enable();
+    }
+    else
+    {
+        mpFtPosX->Enable();
+        mpMtrPosX->Enable();
+        mpFtPosY->Enable();
+        mpMtrPosY->Enable();
 
         //mpFtAngle->Enable();
-		//mpMtrAngle->Enable();
-		//mpDial->Enable();
-		//mpFtFlip->Enable();
-		//mpFlipTbx->Enable();
+        //mpMtrAngle->Enable();
+        //mpDial->Enable();
+        //mpFtFlip->Enable();
+        //mpFlipTbx->Enable();
 
-		if( mbSizeProtected )
-		{
-			mpFtWidth->Disable();
-			mpMtrWidth->Disable();
-			mpFtHeight->Disable();
-			mpMtrHeight->Disable();
-			mpCbxScale->Disable();
-		}
-		else
-		{
-			if(	mbAdjustEnabled )
-			{
-				if( mbAutoWidth )
-				{
-					mpFtWidth->Disable();
-					mpMtrWidth->Disable();
-					mpCbxScale->Disable();
-				}
-				else
-				{
-					mpFtWidth->Enable();
-					mpMtrWidth->Enable();
-				}
-				if( mbAutoHeight )
-				{
-					mpFtHeight->Disable();
-					mpMtrHeight->Disable();
-					mpCbxScale->Disable();
-				}
-				else
-				{
-					mpFtHeight->Enable();
-					mpMtrHeight->Enable();
-				}
-				if( !mbAutoWidth && !mbAutoHeight )
-					mpCbxScale->Enable();
-			}
-			else
-			{
-				mpFtWidth->Enable();
-				mpMtrWidth->Enable();
-				mpFtHeight->Enable();
-				mpMtrHeight->Enable();
-				mpCbxScale->Enable();
-			}
-		}
-	}
+        if( mbSizeProtected )
+        {
+            mpFtWidth->Disable();
+            mpMtrWidth->Disable();
+            mpFtHeight->Disable();
+            mpMtrHeight->Disable();
+            mpCbxScale->Disable();
+        }
+        else
+        {
+            if(	mbAdjustEnabled )
+            {
+                if( mbAutoWidth )
+                {
+                    mpFtWidth->Disable();
+                    mpMtrWidth->Disable();
+                    mpCbxScale->Disable();
+                }
+                else
+                {
+                    mpFtWidth->Enable();
+                    mpMtrWidth->Enable();
+                }
+                if( mbAutoHeight )
+                {
+                    mpFtHeight->Disable();
+                    mpMtrHeight->Disable();
+                    mpCbxScale->Disable();
+                }
+                else
+                {
+                    mpFtHeight->Enable();
+                    mpMtrHeight->Enable();
+                }
+                if( !mbAutoWidth && !mbAutoHeight )
+                    mpCbxScale->Enable();
+            }
+            else
+            {
+                mpFtWidth->Enable();
+                mpMtrWidth->Enable();
+                mpFtHeight->Enable();
+                mpMtrHeight->Enable();
+                mpCbxScale->Enable();
+            }
+        }
+    }
 }
 
 

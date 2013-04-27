@@ -38,21 +38,19 @@ namespace svx { namespace sidebar {
 
 class ParaBulletsControl:public svx::sidebar::PopupControl
 {
-private:	
-	SvxNumValueSet3				maBulletsVS;
-	FixedImage					maFISep;
-	PushButton maMoreButton;
-	ParaPropertyPanel&     mrParaPropertyPanel;
-	SfxBindings*		mpBindings;
+private:
+    SvxNumValueSet3 maBulletsVS;
+    PushButton      maMoreButton;
+    ParaPropertyPanel&     mrParaPropertyPanel;
+    SfxBindings*    mpBindings;
 
-	DECL_LINK(BulletSelectHdl_Impl, ValueSet*);
-	DECL_LINK(MoreButtonClickHdl_Impl, void*);
+    DECL_LINK(BulletSelectHdl_Impl, ValueSet*);
+    DECL_LINK(MoreButtonClickHdl_Impl, void*);
 
 public:
-	ParaBulletsControl(Window* pParent, svx::sidebar::ParaPropertyPanel& rPanel);
-	~ParaBulletsControl();
-	void ToGetFocus();	
-	void UpdateValueSet();
+    ParaBulletsControl(Window* pParent, svx::sidebar::ParaPropertyPanel& rPanel);
+    ~ParaBulletsControl();
+    void UpdateValueSet();
 };
 
 }}

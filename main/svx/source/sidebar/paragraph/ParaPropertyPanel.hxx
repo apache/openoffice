@@ -146,21 +146,10 @@ private:
 	Image  maIndent2;
 	Image  maIndent3;
 
-	Image  maLeftPara;
-	Image  maCentPara;
-	Image  maRightPara;
-	Image  maJusPara;
-
-	Image  maIndInc;
-	Image  maIndDec;
-	Image  maIndInc_BD;
-	Image  maIndDec_BD;
 	Image  maIndHang;
 	Image  maParInc;
 	Image  maParDec;
 
-	ImageList	maVertImageList;
-	ImageList	maVertImageListH;	
 	ImageList	maNumBImageList;
 	ImageList	maNumBImageListH;
 	ImageList	maNumBImageListRTL;
@@ -216,6 +205,7 @@ private:
 	::sfx2::sidebar::ControllerItem  maBulletNumRuleIndex;
 	::sfx2::sidebar::ControllerItem  maNumNumRuleIndex;
 
+    cssu::Reference<css::frame::XFrame> mxFrame;
     ::sfx2::sidebar::EnumContext maContext;
     SfxBindings* mpBindings;
 	ParaLineSpacingPopup maLineSpacePopup;
@@ -270,7 +260,6 @@ private:
 	DECL_LINK(NumBTbxDDHandler, ToolBox*);
 	DECL_LINK(ToolBoxBackColorDDHandler, ToolBox *);
 
-	void SetupIcons (void);
 	void InitToolBoxAlign();
 	void InitToolBoxVertAlign();
 	void InitToolBoxIndent();

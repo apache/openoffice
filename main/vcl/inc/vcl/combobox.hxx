@@ -115,6 +115,7 @@ public:
     // returns empty rectangle in DropDown mode,
     // else it returns the PosSize of the ListBox
 
+    void AdaptDropDownLineCountToMaximum();
     void            SetDropDownLineCount( sal_uInt16 nLines );
     sal_uInt16          GetDropDownLineCount() const;
 

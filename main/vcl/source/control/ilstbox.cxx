@@ -531,26 +531,27 @@ ImplListBoxWindow::ImplListBoxWindow( Window* pParent, WinBits nWinStyle ) :
 	mnBorder			= 1;
 	mnSelectModifier	= 0;
 	mnUserDrawEntry 	= LISTBOX_ENTRY_NOTFOUND;
-	mbTrack 			= sal_False;
-	mbImgsDiffSz		= sal_False;
-	mbTravelSelect		= sal_False;
-	mbTrackingSelect	= sal_False;
-	mbSelectionChanged	= sal_False;
-	mbMouseMoveSelect	= sal_False;
-	mbMulti 			= sal_False;
-	mbStackMode 		= sal_False;
-	mbGrabFocus 		= sal_False;
-	mbUserDrawEnabled	= sal_False;
-	mbInUserDraw		= sal_False;
-	mbReadOnly			= sal_False;
-    mbHasFocusRect      = sal_False;
-    mbRight             = ( nWinStyle & WB_RIGHT )      ? sal_True : sal_False;
-    mbCenter            = ( nWinStyle & WB_CENTER )     ? sal_True : sal_False;
-	mbSimpleMode		= ( nWinStyle & WB_SIMPLEMODE ) ? sal_True : sal_False;
-	mbSort				= ( nWinStyle & WB_SORT )       ? sal_True : sal_False;
+	mbTrack 			= false;
+	mbImgsDiffSz		= false;
+	mbTravelSelect		= false;
+	mbTrackingSelect	= false;
+	mbSelectionChanged	= false;
+	mbMouseMoveSelect	= false;
+	mbMulti 			= false;
+	mbStackMode 		= false;
+	mbGrabFocus 		= false;
+	mbUserDrawEnabled	= false;
+	mbInUserDraw		= false;
+	mbReadOnly			= false;
+    mbHasFocusRect      = false;
+    mbRight             = ( nWinStyle & WB_RIGHT );
+    mbCenter            = ( nWinStyle & WB_CENTER );
+	mbSimpleMode		= ( nWinStyle & WB_SIMPLEMODE );
+	mbSort				= ( nWinStyle & WB_SORT );
+    mbEdgeBlending      = false;
 
 	// pb: #106948# explicit mirroring for calc
-	mbMirroring			= sal_False;
+	mbMirroring			= false;
 
 	mnCurrentPos			= LISTBOX_ENTRY_NOTFOUND;
 	mnTrackingSaveSelection = LISTBOX_ENTRY_NOTFOUND;
@@ -625,7 +626,7 @@ void ImplListBoxWindow::Clear()
 	mnMaxImgHeight	= 0;
 	mnTop			= 0;
 	mnLeft			= 0;
-	mbImgsDiffSz	= sal_False;
+	mbImgsDiffSz	= false;
     ImplClearLayoutData();
 
     mnCurrentPos = LISTBOX_ENTRY_NOTFOUND;
@@ -701,9 +702,9 @@ void ImplListBoxWindow::ImplUpdateEntryMetrics( ImplEntryType& rEntry )
 		aMetrics.nImgHeight = (sal_uInt16) CalcZoom( aImgSz.Height() );
 
         if( mnMaxImgWidth && ( aMetrics.nImgWidth != mnMaxImgWidth ) )
-            mbImgsDiffSz = sal_True;
+            mbImgsDiffSz = true;
         else if ( mnMaxImgHeight && ( aMetrics.nImgHeight != mnMaxImgHeight ) )
-            mbImgsDiffSz = sal_True;
+            mbImgsDiffSz = true;
 
         if( aMetrics.nImgWidth > mnMaxImgWidth )
             mnMaxImgWidth = aMetrics.nImgWidth;
@@ -778,7 +779,7 @@ void ImplListBoxWindow::ImplCallSelect()
 	}
 
 	maSelectHdl.Call( NULL );
-	mbSelectionChanged = sal_False;
+	mbSelectionChanged = false;
 }
 
 // -----------------------------------------------------------------------
@@ -823,7 +824,7 @@ void ImplListBoxWindow::ImplShowFocusRect()
     if ( mbHasFocusRect )
         HideFocus();
     ShowFocus( maFocusRect );
-    mbHasFocusRect = sal_True;
+    mbHasFocusRect = true;
 }
 
 // -----------------------------------------------------------------------
@@ -833,7 +834,7 @@ void ImplListBoxWindow::ImplHideFocusRect()
     if ( mbHasFocusRect )
     {
         HideFocus();
-        mbHasFocusRect = sal_False;
+        mbHasFocusRect = false;
     }
 }
 
@@ -899,7 +900,7 @@ sal_uInt16 ImplListBoxWindow::GetLastVisibleEntry() const
 
 void ImplListBoxWindow::MouseButtonDown( const MouseEvent& rMEvt )
 {
-	mbMouseMoveSelect = sal_False;	// Nur bis zum ersten MouseButtonDown
+	mbMouseMoveSelect = false;	// Nur bis zum ersten MouseButtonDown
     maQuickSelectionEngine.Reset();
 
 	if ( !IsReadOnly() )
@@ -915,13 +916,13 @@ void ImplListBoxWindow::MouseButtonDown( const MouseEvent& rMEvt )
 					mnTrackingSaveSelection = LISTBOX_ENTRY_NOTFOUND;
 
 				mnCurrentPos = nSelect;
-				mbTrackingSelect = sal_True;
+				mbTrackingSelect = true;
 				//IAccessibility2 Impplementaton 2009-----
 				sal_Bool bCurPosChange = (mnCurrentPos != nSelect);
 				//SelectEntries( nSelect, LET_MBDOWN, rMEvt.IsShift(), rMEvt.IsMod1() );
 				SelectEntries( nSelect, LET_MBDOWN, rMEvt.IsShift(), rMEvt.IsMod1() ,bCurPosChange);
 				//-----IAccessibility2 Impplementaton 2009
-				mbTrackingSelect = sal_False;
+				mbTrackingSelect = false;
 				if ( mbGrabFocus )
 					GrabFocus();
 
@@ -954,10 +955,10 @@ void ImplListBoxWindow::MouseMove( const MouseEvent& rMEvt )
                 SetTopEntry( 0 );
 				if ( mbStackMode ) // #87072#, #92323#
 				{
-					mbTravelSelect = sal_True;
+					mbTravelSelect = true;
 					mnSelectModifier = rMEvt.GetModifier();
 					ImplCallSelect();
-					mbTravelSelect = sal_False;
+					mbTravelSelect = false;
 				}
 
 			}
@@ -981,15 +982,15 @@ void ImplListBoxWindow::MouseMove( const MouseEvent& rMEvt )
 					mpEntryList->IsEntrySelectable( nSelect ) &&
 					( ( nSelect != mnCurrentPos ) || !GetEntryList()->GetSelectEntryCount() || ( nSelect != GetEntryList()->GetSelectEntryPos( 0 ) ) ) )
 				{
-					mbTrackingSelect = sal_True;
+					mbTrackingSelect = true;
 					if ( SelectEntries( nSelect, LET_TRACKING, sal_False, sal_False ) )
 		            {
                         if ( mbStackMode ) // #87072#
                         {
-			                mbTravelSelect = sal_True;
+			                mbTravelSelect = true;
 			                mnSelectModifier = rMEvt.GetModifier();
 			                ImplCallSelect();
-			                mbTravelSelect = sal_False;
+			                mbTravelSelect = false;
                         }
 //IAccessibility2 Implementation 2009----
 						// When list box selection change by mouse move, notity  
@@ -1000,7 +1001,7 @@ void ImplListBoxWindow::MouseMove( const MouseEvent& rMEvt )
 						}
 //----IAccessibility2 Implementation 2009
 		            }
-					mbTrackingSelect = sal_False;
+					mbTrackingSelect = false;
 				}
 			}
 
@@ -1080,7 +1081,7 @@ void ImplListBoxWindow::SelectEntry( sal_uInt16 nPos, sal_Bool bSelect )
 			mpEntryList->SelectEntry( nPos, sal_False );
 			ImplPaint( nPos, sal_True );
 		}
-		mbSelectionChanged = sal_True;
+		mbSelectionChanged = true;
 	}
 }
 
@@ -1220,7 +1221,7 @@ sal_Bool ImplListBoxWindow::SelectEntries( sal_uInt16 nSelect, LB_EVENT_TYPE eLE
 		}
 
 		if( bSelectionChanged )
-			mbSelectionChanged = sal_True;
+			mbSelectionChanged = true;
 
 		if( bFocusChanged )
 		{
@@ -1263,9 +1264,9 @@ void ImplListBoxWindow::Tracking( const TrackingEvent& rTEvt )
 			maCancelHdl.Call( NULL );
 			if ( !mbMulti )
 			{
-				mbTrackingSelect = sal_True;
+				mbTrackingSelect = true;
 				SelectEntry( mnTrackingSaveSelection, sal_True );
-				mbTrackingSelect = sal_False;
+				mbTrackingSelect = false;
 				if ( mnTrackingSaveSelection != LISTBOX_ENTRY_NOTFOUND )
 				{
                     long nHeightDiff = mpEntryList->GetAddedHeight( mnCurrentPos, mnTop, 0 );
@@ -1278,7 +1279,7 @@ void ImplListBoxWindow::Tracking( const TrackingEvent& rTEvt )
 			}
 		}
 
-		mbTrack = sal_False;
+		mbTrack = false;
 	}
 	else
 	{
@@ -1287,14 +1288,14 @@ void ImplListBoxWindow::Tracking( const TrackingEvent& rTEvt )
 		{
 			if ( bInside )
 			{
-				mbTrack = sal_True;
+				mbTrack = true;
 			}
 
 			// Folgender Fall tritt nur auf, wenn man ganz kurz die Maustaste drueckt
 			if( rTEvt.IsTrackingEnded() && mbTrack )
 			{
 				bTrackOrQuickClick = sal_True;
-				mbTrack = sal_False;
+				mbTrack = false;
 			}
 		}
 
@@ -1335,27 +1336,27 @@ void ImplListBoxWindow::Tracking( const TrackingEvent& rTEvt )
 			{
 				if ( ( nSelect != mnCurrentPos ) || !GetEntryList()->GetSelectEntryCount() )
 				{
-					mbTrackingSelect = sal_True;
+					mbTrackingSelect = true;
 					if ( SelectEntries( nSelect, LET_TRACKING, bShift, bCtrl ) )
 		            {
                         if ( mbStackMode ) // #87734# (#87072#)
                         {
-			                mbTravelSelect = sal_True;
+			                mbTravelSelect = true;
 			                mnSelectModifier = rTEvt.GetMouseEvent().GetModifier();
 			                ImplCallSelect();
-			                mbTravelSelect = sal_False;
+			                mbTravelSelect = false;
                         }
 		            }
-					mbTrackingSelect = sal_False;
+					mbTrackingSelect = false;
 				}
 			}
 			else
 			{
 				if ( !mbMulti && GetEntryList()->GetSelectEntryCount() )
 				{
-					mbTrackingSelect = sal_True;
+					mbTrackingSelect = true;
 					SelectEntry( GetEntryList()->GetSelectEntryPos( 0 ), sal_False );
-					mbTrackingSelect = sal_False;
+					mbTrackingSelect = false;
 				}
 				else if ( mbStackMode )
                 {
@@ -1377,18 +1378,18 @@ void ImplListBoxWindow::Tracking( const TrackingEvent& rTEvt )
                             }
                             else
                             {
-					            mbTrackingSelect = sal_True;
+					            mbTrackingSelect = true;
                                 bSelectionChanged = SelectEntries( nSelect, LET_TRACKING, bShift, bCtrl );
-					            mbTrackingSelect = sal_False;
+					            mbTrackingSelect = false;
                             }
 
                             if ( bSelectionChanged )
 		                    {
-                                mbSelectionChanged = sal_True;
-			                    mbTravelSelect = sal_True;
+                                mbSelectionChanged = true;
+			                    mbTravelSelect = true;
 			                    mnSelectModifier = rTEvt.GetMouseEvent().GetModifier();
 			                    ImplCallSelect();
-			                    mbTravelSelect = sal_False;
+			                    mbTravelSelect = false;
 		                    }
 				        }
                     }
@@ -1706,10 +1707,10 @@ sal_Bool ImplListBoxWindow::ProcessKeyInput( const KeyEvent& rKEvt )
 		if(SelectEntries( nSelect, eLET, bShift, bCtrl ,bCurPosChange))
 //-----IAccessibility2 Implementation 2009
 		{
-			mbTravelSelect = sal_True;
+			mbTravelSelect = true;
 			mnSelectModifier = rKEvt.GetKeyCode().GetModifier();
 			ImplCallSelect();
-			mbTravelSelect = sal_False;
+			mbTravelSelect = false;
 		}
 	}
 
@@ -1775,10 +1776,10 @@ void ImplListBoxWindow::SelectEntry( ::vcl::StringEntryIdentifier _entry )
     mnCurrentPos = nSelect;
 	if ( SelectEntries( nSelect, LET_KEYMOVE, sal_False, sal_False ) )
 	{
-		mbTravelSelect = sal_True;
+		mbTravelSelect = true;
 		mnSelectModifier = 0;
 		ImplCallSelect();
-		mbTravelSelect = sal_False;
+		mbTravelSelect = false;
 	}
 }
 
@@ -1818,7 +1819,7 @@ void ImplListBoxWindow::ImplPaint( sal_uInt16 nPos, sal_Bool bErase, bool bLayou
 
     if ( IsUserDrawEnabled() )
     {
-        mbInUserDraw = sal_True;
+        mbInUserDraw = true;
 		mnUserDrawEntry = nPos;
 		aRect.Left() -= mnLeft;
 		if ( nPos < GetEntryList()->GetMRUCount() )
@@ -1826,7 +1827,7 @@ void ImplListBoxWindow::ImplPaint( sal_uInt16 nPos, sal_Bool bErase, bool bLayou
 		nPos = sal::static_int_cast<sal_uInt16>(nPos - GetEntryList()->GetMRUCount());
 		UserDrawEvent aUDEvt( this, aRect, nPos, 0 );
 		maUserDrawHdl.Call( &aUDEvt );
-		mbInUserDraw = sal_False;
+		mbInUserDraw = false;
 	}
 	else
 	{
@@ -1873,6 +1874,25 @@ void ImplListBoxWindow::DrawEntry( sal_uInt16 nPos, sal_Bool bDrawImage, sal_Boo
 				aImgSz.Height() = CalcZoom( aImgSz.Height() );
 				DrawImage( aPtImg, aImgSz, aImage );
 			}
+
+            const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+            const sal_uInt16 nEdgeBlendingPercent(GetEdgeBlending() ? rStyleSettings.GetEdgeBlending() : 0);
+
+            if(nEdgeBlendingPercent)
+            {
+                const Rectangle aRect(aPtImg, aImgSz);
+                Bitmap aBitmap(GetBitmap(aRect.TopLeft(), aRect.GetSize()));
+
+                if(!aBitmap.IsEmpty())
+                {
+                    const Color& rTopLeft(rStyleSettings.GetEdgeBlendingTopLeftColor());
+                    const Color& rBottomRight(rStyleSettings.GetEdgeBlendingBottomRightColor());
+                    const sal_uInt8 nAlpha((nEdgeBlendingPercent * 255) / 100);
+
+                    aBitmap.DrawBlendFrame(nAlpha, rTopLeft, rBottomRight);
+                    DrawBitmap(aRect.TopLeft(), aBitmap);
+                }
+            }
 		}
 	}
 
@@ -2261,12 +2281,14 @@ ImplListBox::ImplListBox( Window* pParent, WinBits nWinStyle ) :
 	mpVScrollBar->SetScrollHdl( aLink );
 	mpHScrollBar->SetScrollHdl( aLink );
 
-	mbVScroll		= sal_False;
-	mbHScroll		= sal_False;
-	mbAutoHScroll	= ( nWinStyle & WB_AUTOHSCROLL ) ? sal_True : sal_False;
+	mbVScroll		= false;
+	mbHScroll		= false;
+	mbAutoHScroll	= ( nWinStyle & WB_AUTOHSCROLL );
+    mbEdgeBlending  = false;
 
 	maLBWindow.SetScrollHdl( LINK( this, ImplListBox, LBWindowScrolled ) );
 	maLBWindow.SetMRUChangedHdl( LINK( this, ImplListBox, MRUChanged ) );
+    maLBWindow.SetEdgeBlending(GetEdgeBlending());
 	maLBWindow.Show();
 }
 
@@ -2436,7 +2458,7 @@ void ImplListBox::ImplCheckScrollBars()
 	{
 		if( !mbVScroll )
 			bArrange = sal_True;
-		mbVScroll = sal_True;
+		mbVScroll = true;
 
 		// Ueberpruefung des rausgescrollten Bereichs
         if( GetEntryList()->GetSelectEntryCount() == 1 &&
@@ -2449,7 +2471,7 @@ void ImplListBox::ImplCheckScrollBars()
 	{
 		if( mbVScroll )
 			bArrange = sal_True;
-		mbVScroll = sal_False;
+		mbVScroll = false;
 		SetTopEntry( 0 );
 	}
 
@@ -2465,7 +2487,7 @@ void ImplListBox::ImplCheckScrollBars()
 		{
 			if( !mbHScroll )
 				bArrange = sal_True;
-			mbHScroll = sal_True;
+			mbHScroll = true;
 
 			if ( !mbVScroll )	// ggf. brauchen wir jetzt doch einen
 			{
@@ -2473,7 +2495,7 @@ void ImplListBox::ImplCheckScrollBars()
 				if( nEntries > nMaxVisEntries )
 				{
 					bArrange = sal_True;
-					mbVScroll = sal_True;
+					mbVScroll = true;
 
 					// Ueberpruefung des rausgescrollten Bereichs
                     if( GetEntryList()->GetSelectEntryCount() == 1 &&
@@ -2493,7 +2515,7 @@ void ImplListBox::ImplCheckScrollBars()
 		{
 			if( mbHScroll )
 				bArrange = sal_True;
-			mbHScroll = sal_False;
+			mbHScroll = false;
 			SetLeftIndent( 0 );
 		}
 	}
@@ -2750,6 +2772,17 @@ XubString ImplListBox::GetMRUEntries( xub_Unicode cSep ) const
 	return aEntries;
 }
 
+// -----------------------------------------------------------------------
+
+void ImplListBox::SetEdgeBlending(bool bNew) 
+{ 
+    if(mbEdgeBlending != bNew)
+    {
+        mbEdgeBlending = bNew; 
+        maLBWindow.SetEdgeBlending(GetEdgeBlending());
+    }
+}
+
 // =======================================================================
 
 ImplWin::ImplWin( Window* pParent, WinBits nWinStyle ) :
@@ -2761,8 +2794,9 @@ ImplWin::ImplWin( Window* pParent, WinBits nWinStyle ) :
 	else
 		SetBackground( Wallpaper( GetSettings().GetStyleSettings().GetFieldColor() ) );
 
-	mbInUserDraw = sal_False;
-	mbUserDrawEnabled = sal_False;
+	mbInUserDraw = false;
+	mbUserDrawEnabled = false;
+    mbEdgeBlending = false;
 	mnItemPos = LISTBOX_ENTRY_NOTFOUND;
 }
 
@@ -2930,10 +2964,10 @@ void ImplWin::ImplDraw( bool bLayout )
 
 	if ( IsUserDrawEnabled() )
 	{
-		mbInUserDraw = sal_True;
+		mbInUserDraw = true;
 		UserDrawEvent aUDEvt( this, maFocusRect, mnItemPos, 0 );
 		maUserDrawHdl.Call( &aUDEvt );
-		mbInUserDraw = sal_False;
+		mbInUserDraw = false;
 	}
 	else
 	{
@@ -2961,13 +2995,14 @@ void ImplWin::DrawEntry( sal_Bool bDrawImage, sal_Bool bDrawText, sal_Bool bDraw
 		sal_uInt16 nStyle = 0;
 		Size aImgSz = maImage.GetSizePixel();
 		Point aPtImg( nBorder, ( ( aOutSz.Height() - aImgSz.Height() ) / 2 ) );
+        const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
 
 		// check for HC mode
 		Image *pImage = &maImage;
 
 		if( !!maImageHC )
 		{
-			if( GetSettings().GetStyleSettings().GetHighContrastMode() )
+			if( rStyleSettings.GetHighContrastMode() )
 				pImage = &maImageHC;
 		}
 
@@ -2981,6 +3016,24 @@ void ImplWin::DrawEntry( sal_Bool bDrawImage, sal_Bool bDrawText, sal_Bool bDraw
 			aImgSz.Height() = CalcZoom( aImgSz.Height() );
 			DrawImage( aPtImg, aImgSz, *pImage, nStyle );
 		}
+
+        const sal_uInt16 nEdgeBlendingPercent(GetEdgeBlending() ? rStyleSettings.GetEdgeBlending() : 0);
+
+        if(nEdgeBlendingPercent)
+        {
+            const Rectangle aRect(aPtImg, aImgSz);
+            Bitmap aBitmap(GetBitmap(aRect.TopLeft(), aRect.GetSize()));
+
+            if(!aBitmap.IsEmpty())
+            {
+                const Color& rTopLeft(rStyleSettings.GetEdgeBlendingTopLeftColor());
+                const Color& rBottomRight(rStyleSettings.GetEdgeBlendingBottomRightColor());
+                const sal_uInt8 nAlpha((nEdgeBlendingPercent * 255) / 100);
+
+                aBitmap.DrawBlendFrame(nAlpha, rTopLeft, rBottomRight);
+                DrawBitmap(aRect.TopLeft(), aBitmap);
+            }
+        }
 	}
 
 	if( bDrawText && maString.Len() )
