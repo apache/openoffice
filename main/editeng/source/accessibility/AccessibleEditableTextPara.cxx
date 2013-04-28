@@ -84,8 +84,6 @@
 using namespace std;
 //-----IAccessibility2 Implementation 2009
 #include <editeng/numitem.hxx>
-#include <sfx2/viewfrm.hxx>
-#include <sfx2/viewsh.hxx>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::beans;
