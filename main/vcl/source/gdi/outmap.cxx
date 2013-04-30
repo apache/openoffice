@@ -2322,43 +2322,16 @@ basegfx::B2DPolygon OutputDevice::LogicToLogic( const basegfx::B2DPolygon& rPoly
                                                 const MapMode& rMapModeSource,
                                                 const MapMode& rMapModeDest )
 {
-	if ( rMapModeSource == rMapModeDest )
-		return rPolySource;
+    if(rMapModeSource == rMapModeDest)
+    {
+        return rPolySource;
+    }
 
-	MapUnit eUnitSource = rMapModeSource.GetMapUnit();
-	MapUnit eUnitDest	= rMapModeDest.GetMapUnit();
-	ENTER2( eUnitSource, eUnitDest );
+    const basegfx::B2DHomMatrix aTransform(LogicToLogic(rMapModeSource, rMapModeDest));
+    basegfx::B2DPolygon aPoly(rPolySource);
 
-    basegfx::B2DHomMatrix aTransform;
-
-	if ( rMapModeSource.mpImplMapMode->mbSimple &&
-		 rMapModeDest.mpImplMapMode->mbSimple )
-	{
-		ENTER3( eUnitSource, eUnitDest );
-
-		const double fScaleFactor((double)nNumerator / (double)nDenominator);
-		aTransform.set(0, 0, fScaleFactor);
-		aTransform.set(1, 1, fScaleFactor);
-	}
-	else
-	{
-		ENTER4( rMapModeSource, rMapModeDest );
-
-		const double fScaleFactorX(  (double(aMapResSource.mnMapScNumX) *  double(aMapResDest.mnMapScDenomX))
-		                           / (double(aMapResSource.mnMapScDenomX) * double(aMapResDest.mnMapScNumX)) );
-		const double fScaleFactorY(  (double(aMapResSource.mnMapScNumY) *  double(aMapResDest.mnMapScDenomY))
-		                           / (double(aMapResSource.mnMapScDenomY) * double(aMapResDest.mnMapScNumY)) );
-		const double fZeroPointX(double(aMapResSource.mnMapOfsX) * fScaleFactorX - double(aMapResDest.mnMapOfsX));
-		const double fZeroPointY(double(aMapResSource.mnMapOfsY) * fScaleFactorY - double(aMapResDest.mnMapOfsY));
-
-		aTransform.set(0, 0, fScaleFactorX);
-		aTransform.set(1, 1, fScaleFactorY);
-		aTransform.set(0, 2, fZeroPointX);
-		aTransform.set(1, 2, fZeroPointY);
-	}
-	basegfx::B2DPolygon aPoly( rPolySource );
-	aPoly.transform( aTransform );
-	return aPoly;
+    aPoly.transform(aTransform);
+    return aPoly;
 }
 
 // -----------------------------------------------------------------------
@@ -2367,43 +2340,57 @@ basegfx::B2DPolyPolygon OutputDevice::LogicToLogic( const basegfx::B2DPolyPolygo
                                                     const MapMode& rMapModeSource,
                                                     const MapMode& rMapModeDest )
 {
-	if ( rMapModeSource == rMapModeDest )
-		return rPolySource;
+    if(rMapModeSource == rMapModeDest)
+    {
+        return rPolySource;
+    }
 
-	MapUnit eUnitSource = rMapModeSource.GetMapUnit();
-	MapUnit eUnitDest	= rMapModeDest.GetMapUnit();
-	ENTER2( eUnitSource, eUnitDest );
+    const basegfx::B2DHomMatrix aTransform(LogicToLogic(rMapModeSource, rMapModeDest));
+    basegfx::B2DPolyPolygon aPoly(rPolySource);
 
+    aPoly.transform(aTransform);
+    return aPoly;
+}
+
+// -----------------------------------------------------------------------
+
+basegfx::B2DHomMatrix OutputDevice::LogicToLogic(const MapMode& rMapModeSource, const MapMode& rMapModeDest)
+{
     basegfx::B2DHomMatrix aTransform;
 
-	if ( rMapModeSource.mpImplMapMode->mbSimple &&
-		 rMapModeDest.mpImplMapMode->mbSimple )
-	{
-		ENTER3( eUnitSource, eUnitDest );
+    if(rMapModeSource == rMapModeDest)
+    {
+        return aTransform;
+    }
 
-		const double fScaleFactor((double)nNumerator / (double)nDenominator);
-		aTransform.set(0, 0, fScaleFactor);
-		aTransform.set(1, 1, fScaleFactor);
-	}
-	else
-	{
-		ENTER4( rMapModeSource, rMapModeDest );
+    MapUnit eUnitSource = rMapModeSource.GetMapUnit();
+    MapUnit eUnitDest	= rMapModeDest.GetMapUnit();
+    ENTER2(eUnitSource, eUnitDest);
 
-		const double fScaleFactorX(  (double(aMapResSource.mnMapScNumX) *  double(aMapResDest.mnMapScDenomX))
-		                           / (double(aMapResSource.mnMapScDenomX) * double(aMapResDest.mnMapScNumX)) );
-		const double fScaleFactorY(  (double(aMapResSource.mnMapScNumY) *  double(aMapResDest.mnMapScDenomY))
-		                           / (double(aMapResSource.mnMapScDenomY) * double(aMapResDest.mnMapScNumY)) );
-		const double fZeroPointX(double(aMapResSource.mnMapOfsX) * fScaleFactorX - double(aMapResDest.mnMapOfsX));
-		const double fZeroPointY(double(aMapResSource.mnMapOfsY) * fScaleFactorY - double(aMapResDest.mnMapOfsY));
+    if(rMapModeSource.mpImplMapMode->mbSimple && rMapModeDest.mpImplMapMode->mbSimple)
+    {
+        ENTER3(eUnitSource, eUnitDest);
 
-		aTransform.set(0, 0, fScaleFactorX);
-		aTransform.set(1, 1, fScaleFactorY);
-		aTransform.set(0, 2, fZeroPointX);
-		aTransform.set(1, 2, fZeroPointY);
-	}
-	basegfx::B2DPolyPolygon aPoly( rPolySource );
-	aPoly.transform( aTransform );
-	return aPoly;
+        const double fScaleFactor((double)nNumerator / (double)nDenominator);
+        aTransform.set(0, 0, fScaleFactor);
+        aTransform.set(1, 1, fScaleFactor);
+    }
+    else
+    {
+        ENTER4(rMapModeSource, rMapModeDest);
+
+        const double fScaleFactorX((double(aMapResSource.mnMapScNumX) * double(aMapResDest.mnMapScDenomX)) / (double(aMapResSource.mnMapScDenomX) * double(aMapResDest.mnMapScNumX)));
+        const double fScaleFactorY((double(aMapResSource.mnMapScNumY) * double(aMapResDest.mnMapScDenomY)) / (double(aMapResSource.mnMapScDenomY) * double(aMapResDest.mnMapScNumY)));
+        const double fZeroPointX(double(aMapResSource.mnMapOfsX) * fScaleFactorX - double(aMapResDest.mnMapOfsX));
+        const double fZeroPointY(double(aMapResSource.mnMapOfsY) * fScaleFactorY - double(aMapResDest.mnMapOfsY));
+
+        aTransform.set(0, 0, fScaleFactorX);
+        aTransform.set(1, 1, fScaleFactorY);
+        aTransform.set(0, 2, fZeroPointX);
+        aTransform.set(1, 2, fZeroPointY);
+    }
+
+    return aTransform;
 }
 
 // -----------------------------------------------------------------------
