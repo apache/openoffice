@@ -168,19 +168,7 @@ SwDrawTextShell::SwDrawTextShell(SwView &rV) :
 __EXPORT SwDrawTextShell::~SwDrawTextShell()
 {
     if ( GetView().GetCurShell() == this )
-		rView.ResetSubShell();
-
-	//MA 13. Nov. 96: Das kommt durchaus vor #33141#:
-	//(doppel-)Klick von einem Texteditmode in ein anderes Objekt, zwischendurch
-	//wird eine andere (Draw-)Shell gepusht, die alte aber noch nicht deletet.
-	//Dann wird vor dem Flush wieder ein DrawTextShell gepusht und der Mode ist
-	//eingeschaltet. In diesem Moment wird der Dispatcher geflusht und die alte
-	//DrawTextShell zerstoert.
-//	ASSERT( !pSdrView->IsTextEdit(), "TextEdit in DTor DrwTxtSh?" );
-//    if (pSdrView->IsTextEdit())
-//		GetShell().EndTextEdit();	// Danebengeklickt, Ende mit Edit
-
-//    GetShell().Edit();
+        rView.ResetSubShell();
 }
 
 SwWrtShell& SwDrawTextShell::GetShell()
@@ -536,19 +524,18 @@ void SwDrawTextShell::ExecDraw(SfxRequest &rReq)
 		}
 		break;
 
-		case FN_ESCAPE:
-			if (pSdrView->IsTextEdit())
-			{
-				// Shellwechsel!
-				rSh.EndTextEdit();
+        case FN_ESCAPE:
+            if (pSdrView->IsTextEdit())
+            {
+                // Shellwechsel!
+                rSh.EndTextEdit();
                 SwView& rTempView = rSh.GetView();
                 rTempView.ExitDraw();
-				rSh.Edit();
-                rTempView.AttrChangedNotify(&rSh);
-				return;
-			}
-			break;
-		case FN_DRAWTEXT_ATTR_DLG:
+                rSh.Edit();
+                return;
+            }
+            break;
+        case FN_DRAWTEXT_ATTR_DLG:
 			{
 				SfxItemSet aNewAttr( pSdrView->GetModel()->GetItemPool() );
 				pSdrView->GetAttributes( aNewAttr );
