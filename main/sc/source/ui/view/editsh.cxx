@@ -921,33 +921,41 @@ void ScEditShell::ExecuteAttr(SfxRequest& rReq)
 			lcl_InvalidateUnder( rBindings );
 			break;
 
-		case SID_ATTR_CHAR_UNDERLINE:	// Toggles
-		case SID_ULINE_VAL_SINGLE:
-		case SID_ULINE_VAL_DOUBLE:
-		case SID_ULINE_VAL_DOTTED:
-			{
-				FontUnderline eOld = ((const SvxUnderlineItem&) pEditView->
-									GetAttribs().Get(EE_CHAR_UNDERLINE)).GetLineStyle();
-				FontUnderline eNew = eOld;
-				switch (nSlot)
-				{
-					case SID_ATTR_CHAR_UNDERLINE:
-						eNew = ( eOld != UNDERLINE_NONE ) ? UNDERLINE_NONE : UNDERLINE_SINGLE;
-						break;
-					case SID_ULINE_VAL_SINGLE:
-						eNew = ( eOld == UNDERLINE_SINGLE ) ? UNDERLINE_NONE : UNDERLINE_SINGLE;
-						break;
-					case SID_ULINE_VAL_DOUBLE:
-						eNew = ( eOld == UNDERLINE_DOUBLE ) ? UNDERLINE_NONE : UNDERLINE_DOUBLE;
-						break;
-					case SID_ULINE_VAL_DOTTED:
-						eNew = ( eOld == UNDERLINE_DOTTED ) ? UNDERLINE_NONE : UNDERLINE_DOTTED;
-						break;
-				}
-				aSet.Put( SvxUnderlineItem( eNew, EE_CHAR_UNDERLINE ) );
-				lcl_InvalidateUnder( rBindings );
-			}
-			break;
+        case SID_ATTR_CHAR_UNDERLINE:
+        case SID_ULINE_VAL_SINGLE:
+        case SID_ULINE_VAL_DOUBLE:
+        case SID_ULINE_VAL_DOTTED:
+            {
+                FontUnderline eOld = ((const SvxUnderlineItem&) pEditView->
+                                    GetAttribs().Get(EE_CHAR_UNDERLINE)).GetLineStyle();
+                FontUnderline eNew = eOld;
+                switch (nSlot)
+                {
+                    case SID_ATTR_CHAR_UNDERLINE:
+                        if ( pArgs )
+                        {
+                            const SvxTextLineItem& rTextLineItem = static_cast< const SvxTextLineItem& >( pArgs->Get( pArgs->GetPool()->GetWhich(nSlot) ) );
+                            eNew = rTextLineItem.GetLineStyle();
+                        }
+                        else
+                        {
+                            eNew = ( eOld != UNDERLINE_NONE ) ? UNDERLINE_NONE : UNDERLINE_SINGLE;
+                        }
+                        break;
+                    case SID_ULINE_VAL_SINGLE:
+                        eNew = ( eOld == UNDERLINE_SINGLE ) ? UNDERLINE_NONE : UNDERLINE_SINGLE;
+                        break;
+                    case SID_ULINE_VAL_DOUBLE:
+                        eNew = ( eOld == UNDERLINE_DOUBLE ) ? UNDERLINE_NONE : UNDERLINE_DOUBLE;
+                        break;
+                    case SID_ULINE_VAL_DOTTED:
+                        eNew = ( eOld == UNDERLINE_DOTTED ) ? UNDERLINE_NONE : UNDERLINE_DOTTED;
+                        break;
+                }
+                aSet.Put( SvxUnderlineItem( eNew, EE_CHAR_UNDERLINE ) );
+                lcl_InvalidateUnder( rBindings );
+            }
+            break;
 
 		case SID_ATTR_CHAR_OVERLINE:
 			{

@@ -140,35 +140,35 @@ using namespace ::com::sun::star;
 
 void SwDrawTextShell::Execute( SfxRequest &rReq )
 {
-	SwWrtShell &rSh = GetShell();
-    	OutlinerView* pOLV = pSdrView->GetTextEditOutlinerView();
-    	SfxItemSet aEditAttr(pOLV->GetAttribs());
-	SfxItemSet aNewAttr(*aEditAttr.GetPool(), aEditAttr.GetRanges());
+    SwWrtShell &rSh = GetShell();
+    OutlinerView* pOLV = pSdrView->GetTextEditOutlinerView();
+    SfxItemSet aEditAttr(pOLV->GetAttribs());
+    SfxItemSet aNewAttr(*aEditAttr.GetPool(), aEditAttr.GetRanges());
 
-	sal_uInt16 nSlot = rReq.GetSlot();
+    const sal_uInt16 nSlot = rReq.GetSlot();
 
-	sal_uInt16 nWhich = GetPool().GetWhich(nSlot);
-	const SfxItemSet *pNewAttrs = rReq.GetArgs();
+    const sal_uInt16 nWhich = GetPool().GetWhich(nSlot);
+    const SfxItemSet *pNewAttrs = rReq.GetArgs();
 
-	bool bRestoreSelection = false;
-	ESelection aOldSelection;
+    bool bRestoreSelection = false;
+    ESelection aOldSelection;
 
-	sal_uInt16 nEEWhich = 0;
-	switch (nSlot)
-	{
-		case SID_LANGUAGE_STATUS:
+    sal_uInt16 nEEWhich = 0;
+    switch (nSlot)
+    {
+        case SID_LANGUAGE_STATUS:
         {
-			aOldSelection = pOLV->GetSelection();
-			if (!pOLV->GetEditView().HasSelection())
-			{
-				bRestoreSelection	= true;
-				pOLV->GetEditView().SelectCurrentWord();
-			}
+            aOldSelection = pOLV->GetSelection();
+            if (!pOLV->GetEditView().HasSelection())
+            {
+                bRestoreSelection	= true;
+                pOLV->GetEditView().SelectCurrentWord();
+            }
 
-			bRestoreSelection = SwLangHelper::SetLanguageStatus(pOLV,rReq,GetView(),rSh);
-			break;
+            bRestoreSelection = SwLangHelper::SetLanguageStatus(pOLV,rReq,GetView(),rSh);
+            break;
         }
-        
+
         case SID_THES:
         {
             String aReplaceText;
@@ -178,8 +178,8 @@ void SwDrawTextShell::Execute( SfxRequest &rReq )
             if (aReplaceText.Len() > 0)
                 ReplaceTextWithSynonym( pOLV->GetEditView(), aReplaceText );
             break;
-        }        
-        
+        }
+
         case SID_ATTR_CHAR_FONT:
         case SID_ATTR_CHAR_FONTHEIGHT:
         case SID_ATTR_CHAR_WEIGHT:
@@ -202,12 +202,20 @@ void SwDrawTextShell::Execute( SfxRequest &rReq )
 
         case SID_ATTR_CHAR_COLOR: nEEWhich = EE_CHAR_COLOR; break;
 
-		case SID_ATTR_CHAR_UNDERLINE:
-		{
-		 	FontUnderline eFU = ((const SvxUnderlineItem&)aEditAttr.Get(EE_CHAR_UNDERLINE)).GetLineStyle();
-			aNewAttr.Put(SvxUnderlineItem(eFU == UNDERLINE_SINGLE ? UNDERLINE_NONE : UNDERLINE_SINGLE, EE_CHAR_UNDERLINE));
-		}
-		break;
+        case SID_ATTR_CHAR_UNDERLINE:
+        {
+            if ( pNewAttrs )
+            {
+                const SvxTextLineItem& rTextLineItem = static_cast< const SvxTextLineItem& >( pNewAttrs->Get( pNewAttrs->GetPool()->GetWhich(nSlot) ) );
+                aNewAttr.Put( SvxUnderlineItem( rTextLineItem.GetLineStyle(), EE_CHAR_UNDERLINE ) );
+            }
+            else
+            {
+                FontUnderline eFU = ((const SvxUnderlineItem&)aEditAttr.Get(EE_CHAR_UNDERLINE)).GetLineStyle();
+                aNewAttr.Put( SvxUnderlineItem(eFU == UNDERLINE_SINGLE ? UNDERLINE_NONE : UNDERLINE_SINGLE, EE_CHAR_UNDERLINE) );
+            }
+        }
+        break;
 
 		case SID_ATTR_CHAR_OVERLINE:
 		{
