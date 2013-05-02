@@ -38,15 +38,13 @@ namespace svx{ namespace sidebar {
 class TextUnderlineControl:public svx::sidebar::PopupControl
 {
 public:
-	TextUnderlineControl (
+    TextUnderlineControl (
         Window* pParent,
         svx::sidebar::TextPropertyPanel& rPanel,
         SfxBindings* pBindings);
-	void GetFocus();
-	void Rearrange(FontUnderline eLine);
-	ValueSet& GetValueSet();
-	Control& GetPB();
-private:	
+    void Rearrange(FontUnderline eLine);
+
+private:
 	svx::sidebar::TextPropertyPanel&     mrTextPropertyPanel;
 	SfxBindings*		mpBindings;
 	ValueSet			maVSUnderline;
