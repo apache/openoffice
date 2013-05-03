@@ -19,150 +19,46 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
 // include ---------------------------------------------------------------
-
-#ifndef SVX_LIGHT
-
 #include <com/sun/star/container/XNameContainer.hpp>
 #include "svx/XPropertyTable.hxx"
 #include <unotools/ucbstreamhelper.hxx>
 #include <vcl/svapp.hxx>
-
 #include "xmlxtexp.hxx"
 #include "xmlxtimp.hxx"
-
-#endif
-
 #include <tools/urlobj.hxx>
 #include <vcl/virdev.hxx>
-#include <svl/itemset.hxx>
-#include <sfx2/docfile.hxx>
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
 #include <svx/xtable.hxx>
-#include <svx/xpool.hxx>
-#include "svx/dlgutil.hxx"
-#include <svx/xflhtit.hxx>
-#include <svx/xflclit.hxx>
-#include <svx/xfillit0.hxx>
-
-#include <svx/svdorect.hxx>
-#include <svx/svdmodel.hxx>
-#include <svx/sdr/contact/objectcontactofobjlistpainter.hxx>
-#include <svx/sdr/contact/displayinfo.hxx>
-#include <svx/xlnclit.hxx>
+#include <drawinglayer/attribute/fillhatchattribute.hxx>
+#include <drawinglayer/primitive2d/polypolygonprimitive2d.hxx>
+#include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
+#include <drawinglayer/processor2d/processor2dtools.hxx>
+#include <basegfx/polygon/b2dpolygontools.hxx>
 
 using namespace ::com::sun::star;
 using namespace ::rtl;
 
 sal_Unicode const pszExtHatch[]	 = {'s','o','h'};
-
-char const aChckHatch[]  = { 0x04, 0x00, 'S','O','H','L'};	// < 5.2
-char const aChckHatch0[] = { 0x04, 0x00, 'S','O','H','0'};	// = 5.2
-char const aChckXML[]    = { '<', '?', 'x', 'm', 'l' };		// = 6.0
+//char const aChckHatch[]  = { 0x04, 0x00, 'S','O','H','L'};	// < 5.2
+//char const aChckHatch0[] = { 0x04, 0x00, 'S','O','H','0'};	// = 5.2
+//char const aChckXML[]    = { '<', '?', 'x', 'm', 'l' };		// = 6.0
 
 // -----------------
 // class XHatchList
 // -----------------
 
-class impXHatchList
-{
-private:
-	VirtualDevice*          mpVirtualDevice;
-	SdrModel*				mpSdrModel;
-	SdrObject*			    mpBackgroundObject;
-	SdrObject*			    mpHatchObject;
-
-public:
-    impXHatchList(VirtualDevice* pV, SdrModel* pM, SdrObject* pB, SdrObject* pH)
-    :   mpVirtualDevice(pV),
-        mpSdrModel(pM),
-        mpBackgroundObject(pB),
-        mpHatchObject(pH)
-    {}
-
-    ~impXHatchList()
-    {
-        delete mpVirtualDevice;
-        SdrObject::Free(mpBackgroundObject);
-        SdrObject::Free(mpHatchObject);
-        delete mpSdrModel;
-    }
-
-    VirtualDevice* getVirtualDevice() const { return mpVirtualDevice; }
-    SdrObject* getBackgroundObject() const { return mpBackgroundObject; }
-    SdrObject* getHatchObject() const { return mpHatchObject; }
-};
-
-void XHatchList::impCreate()
-{
-    if(!mpData)
-    {
-    	const Point aZero(0, 0);
-		const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
-
-        VirtualDevice* pVirDev = new VirtualDevice;
-		OSL_ENSURE(0 != pVirDev, "XDashList: no VirtualDevice created!" );
-		pVirDev->SetMapMode(MAP_100TH_MM);
-		const Size aSize(pVirDev->PixelToLogic(rStyleSettings.GetListBoxPreviewDefaultPixelSize()));
-		pVirDev->SetOutputSize(aSize);
-        pVirDev->SetDrawMode(rStyleSettings.GetHighContrastMode()
-            ? DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT
-            : DRAWMODE_DEFAULT);
-        pVirDev->SetBackground(rStyleSettings.GetFieldColor());
-
-        SdrModel* pSdrModel = new SdrModel();
-		OSL_ENSURE(0 != pSdrModel, "XDashList: no SdrModel created!" );
-	    pSdrModel->GetItemPool().FreezeIdRanges();
-
-        const Size aSinglePixel(pVirDev->PixelToLogic(Size(1, 1)));
-        const Rectangle aBackgroundSize(aZero, Size(aSize.getWidth() - aSinglePixel.getWidth(), aSize.getHeight() - aSinglePixel.getHeight()));
-        SdrObject* pBackgroundObject = new SdrRectObj(aBackgroundSize);
-		OSL_ENSURE(0 != pBackgroundObject, "XDashList: no BackgroundObject created!" );
-    	pBackgroundObject->SetModel(pSdrModel);
-        pBackgroundObject->SetMergedItem(XFillStyleItem(XFILL_SOLID));
-        pBackgroundObject->SetMergedItem(XFillColorItem(String(), rStyleSettings.GetFieldColor()));
-        pBackgroundObject->SetMergedItem(XLineStyleItem(XLINE_SOLID));
-        pBackgroundObject->SetMergedItem(XLineColorItem(String(), Color(COL_BLACK)));
-
-        SdrObject* pHatchObject = new SdrRectObj(aBackgroundSize);
-		OSL_ENSURE(0 != pHatchObject, "XDashList: no HatchObject created!" );
-    	pHatchObject->SetModel(pSdrModel);
-        pHatchObject->SetMergedItem(XFillStyleItem(XFILL_HATCH));
-        pHatchObject->SetMergedItem(XLineStyleItem(XLINE_NONE));
-
-        mpData = new impXHatchList(pVirDev, pSdrModel, pBackgroundObject, pHatchObject);
-		OSL_ENSURE(0 != mpData, "XDashList: data creation went wrong!" );
-    }
-}
-
-void XHatchList::impDestroy()
-{
-    if(mpData)
-    {
-        delete mpData;
-        mpData = 0;
-    }
-}
-
-XHatchList::XHatchList(const String& rPath, XOutdevItemPool* pInPool)
-:   XPropertyList(rPath, pInPool),
-    mpData(0)
+XHatchList::XHatchList(const String& rPath )
+:   XPropertyList(rPath)
 {
 }
 
 XHatchList::~XHatchList()
 {
-    if(mpData)
-    {
-        delete mpData;
-        mpData = 0;
-    }
 }
 
 XHatchEntry* XHatchList::Replace(XHatchEntry* pEntry, long nIndex )
@@ -172,15 +68,15 @@ XHatchEntry* XHatchList::Replace(XHatchEntry* pEntry, long nIndex )
 
 XHatchEntry* XHatchList::Remove(long nIndex)
 {
-	return (XHatchEntry*) XPropertyList::Remove(nIndex, 0);
+	return (XHatchEntry*) XPropertyList::Remove(nIndex);
 }
 
 XHatchEntry* XHatchList::GetHatch(long nIndex) const
 {
-	return (XHatchEntry*) XPropertyList::Get(nIndex, 0);
+	return (XHatchEntry*) XPropertyList::Get(nIndex);
 }
 
-sal_Bool XHatchList::Load()
+bool XHatchList::Load()
 {
 	if( mbListDirty )
 	{
@@ -190,8 +86,8 @@ sal_Bool XHatchList::Load()
 
 		if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 		{
-			DBG_ASSERT( !maPath.Len(), "invalid URL" );
-			return sal_False;
+			OSL_ENSURE( !maPath.Len(), "invalid URL" );
+			return false;
 		}
 
 		aURL.Append( maName );
@@ -202,17 +98,18 @@ sal_Bool XHatchList::Load()
 		uno::Reference< container::XNameContainer > xTable( SvxUnoXHatchTable_createInstance( this ), uno::UNO_QUERY );
 		return SvxXMLXTableImport::load( aURL.GetMainURL( INetURLObject::NO_DECODE ), xTable );
 	}
-	return( sal_False );
+
+    return false;
 }
 
-sal_Bool XHatchList::Save()
+bool XHatchList::Save()
 {
 	INetURLObject aURL( maPath );
 
 	if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 	{
-		DBG_ASSERT( !maPath.Len(), "invalid URL" );
-		return sal_False;
+		OSL_ENSURE( !maPath.Len(), "invalid URL" );
+		return false;
 	}
 
 	aURL.Append( maName );
@@ -224,7 +121,7 @@ sal_Bool XHatchList::Save()
 	return SvxXMLXTableExportComponent::save( aURL.GetMainURL( INetURLObject::NO_DECODE ), xTable );
 }
 
-sal_Bool XHatchList::Create()
+bool XHatchList::Create()
 {
 	XubString aStr( SVX_RES( RID_SVXSTR_HATCH ) );
 	xub_StrLen nLen;
@@ -237,29 +134,115 @@ sal_Bool XHatchList::Create()
 	aStr.SetChar(nLen, sal_Unicode('3'));
 	Insert(new XHatchEntry(XHatch(RGB_Color(COL_BLUE ),XHATCH_TRIPLE,120,  0),aStr));
 
-	return( sal_True );
+	return true;
 }
 
 Bitmap XHatchList::CreateBitmapForUI( long nIndex )
 {
-    impCreate();
-    VirtualDevice* pVD = mpData->getVirtualDevice();
-    SdrObject* pHatchObject = mpData->getHatchObject();
+    Bitmap aRetval;
+    OSL_ENSURE(nIndex < Count(), "OOps, access out of range (!)");
 
-    pHatchObject->SetMergedItem(XFillStyleItem(XFILL_HATCH));
-    pHatchObject->SetMergedItem(XFillHatchItem(String(), GetHatch(nIndex)->GetHatch()));
+    if(nIndex < Count())
+    {
+        const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+        const Size& rSize = rStyleSettings.GetListBoxPreviewDefaultPixelSize();
 
-    sdr::contact::SdrObjectVector aObjectVector;
-	aObjectVector.push_back(mpData->getBackgroundObject());
-	aObjectVector.push_back(pHatchObject);
-	sdr::contact::ObjectContactOfObjListPainter aPainter(*pVD, aObjectVector, 0);
-	sdr::contact::DisplayInfo aDisplayInfo;
+        // prepare polygon geometry for rectangle
+        const basegfx::B2DPolygon aRectangle(
+            basegfx::tools::createPolygonFromRect(
+                basegfx::B2DRange(0.0, 0.0, rSize.Width(), rSize.Height())));
 
-    pVD->Erase();
-	aPainter.ProcessDisplay(aDisplayInfo);
+        const XHatch& rHatch = GetHatch(nIndex)->GetHatch();
+        drawinglayer::attribute::HatchStyle aHatchStyle(drawinglayer::attribute::HATCHSTYLE_TRIPLE);
 
-    const Point aZero(0, 0);
-	return pVD->GetBitmap(aZero, pVD->GetOutputSize());
+        switch(rHatch.GetHatchStyle())
+        {
+            case XHATCH_SINGLE : 
+            {
+                aHatchStyle = drawinglayer::attribute::HATCHSTYLE_SINGLE; 
+                break;
+            }
+            case XHATCH_DOUBLE : 
+            {
+                aHatchStyle = drawinglayer::attribute::HATCHSTYLE_DOUBLE; 
+                break;
+            }
+            default : 
+            {
+                aHatchStyle = drawinglayer::attribute::HATCHSTYLE_TRIPLE; // XHATCH_TRIPLE
+                break;
+            }
+        }
+
+        const basegfx::B2DHomMatrix aScaleMatrix(OutputDevice::LogicToLogic(MAP_100TH_MM, MAP_PIXEL));
+        const basegfx::B2DVector aScaleVector(aScaleMatrix * basegfx::B2DVector(1.0, 0.0));
+        const double fScaleValue(aScaleVector.getLength());
+
+        const drawinglayer::attribute::FillHatchAttribute aFillHatch(
+            aHatchStyle,
+            (double)rHatch.GetDistance() * fScaleValue,
+            (double)rHatch.GetAngle() * F_PI1800,
+            rHatch.GetColor().getBColor(),
+            3, // same default as VCL, a minimum of three discrete units (pixels) offset
+            false);
+
+        const basegfx::BColor aBlack(0.0, 0.0, 0.0);
+        const drawinglayer::primitive2d::Primitive2DReference aHatchPrimitive(
+            new drawinglayer::primitive2d::PolyPolygonHatchPrimitive2D(
+                basegfx::B2DPolyPolygon(aRectangle),
+                aBlack,
+                aFillHatch));
+
+        const drawinglayer::primitive2d::Primitive2DReference aBlackRectanglePrimitive(
+            new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(
+                aRectangle,
+                aBlack));
+
+        // prepare VirtualDevice
+        VirtualDevice aVirtualDevice;
+        const drawinglayer::geometry::ViewInformation2D aNewViewInformation2D;
+
+        aVirtualDevice.SetOutputSizePixel(rSize);
+        aVirtualDevice.SetDrawMode(rStyleSettings.GetHighContrastMode()
+            ? DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT
+            : DRAWMODE_DEFAULT);
+
+        if(rStyleSettings.GetUIPreviewUsesCheckeredBackground())
+        {
+            const Point aNull(0, 0);
+            static const sal_uInt32 nLen(8);
+            static const Color aW(COL_WHITE);
+            static const Color aG(0xef, 0xef, 0xef);
+
+            aVirtualDevice.DrawCheckered(aNull, rSize, nLen, aW, aG);
+        }
+        else
+        {
+            aVirtualDevice.SetBackground(rStyleSettings.GetFieldColor());
+            aVirtualDevice.Erase();
+        }
+
+        // create processor and draw primitives
+        drawinglayer::processor2d::BaseProcessor2D* pProcessor2D = drawinglayer::processor2d::createPixelProcessor2DFromOutputDevice(
+            aVirtualDevice, 
+            aNewViewInformation2D);
+
+        if(pProcessor2D)
+        {
+            drawinglayer::primitive2d::Primitive2DSequence aSequence(2);
+
+            aSequence[0] = aHatchPrimitive;
+            aSequence[1] = aBlackRectanglePrimitive;
+
+            pProcessor2D->process(aSequence);
+            delete pProcessor2D;
+        }
+
+        // get result bitmap and scale
+        aRetval = aVirtualDevice.GetBitmap(Point(0, 0), aVirtualDevice.GetOutputSizePixel());
+    }
+
+    return aRetval;
 }
 
 //////////////////////////////////////////////////////////////////////////////

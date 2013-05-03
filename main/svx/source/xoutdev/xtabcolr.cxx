@@ -19,24 +19,15 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
-
-#ifndef SVX_LIGHT
 
 #include <com/sun/star/container/XNameContainer.hpp>
 #include "svx/XPropertyTable.hxx"
 #include <unotools/ucbstreamhelper.hxx>
-
 #include <unotools/pathoptions.hxx>
-
 #include "xmlxtexp.hxx"
 #include "xmlxtimp.hxx"
-
-#endif
-
 #include <sfx2/docfile.hxx>
 #include <tools/urlobj.hxx>
 #include <svx/dialogs.hrc>
@@ -61,10 +52,10 @@ static char const aChckXML[]    = { '<', '?', 'x', 'm', 'l' };		// = 6.0
 |*
 *************************************************************************/
 
-static XColorList* pStaticGlobalColorList = 0;
+static XColorListSharedPtr aStaticGlobalColorList;
 
-XColorList::XColorList( const String& rPath, XOutdevItemPool* pInPool ) :
-				XPropertyList( rPath, pInPool )
+XColorList::XColorList( const String& rPath ) :
+				XPropertyList( rPath )
 {
 }
 
@@ -85,19 +76,19 @@ XColorEntry* XColorList::Replace(XColorEntry* pEntry, long nIndex )
 
 XColorEntry* XColorList::Remove(long nIndex)
 {
-	return (XColorEntry*) XPropertyList::Remove(nIndex, 0);
+	return (XColorEntry*) XPropertyList::Remove(nIndex);
 }
 
 /************************************************************************/
 
 XColorEntry* XColorList::GetColor(long nIndex) const
 {
-	return (XColorEntry*) XPropertyList::Get(nIndex, 0);
+	return (XColorEntry*) XPropertyList::Get(nIndex);
 }
 
 /************************************************************************/
 
-sal_Bool XColorList::Load()
+bool XColorList::Load()
 {
 	if( mbListDirty )
 	{
@@ -107,8 +98,8 @@ sal_Bool XColorList::Load()
 
 		if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 		{
-			DBG_ASSERT( !maPath.Len(), "invalid URL" );
-			return sal_False;
+			OSL_ENSURE( !maPath.Len(), "invalid URL" );
+			return false;
 		}
 
 		aURL.Append( maName );
@@ -119,19 +110,20 @@ sal_Bool XColorList::Load()
 		uno::Reference< container::XNameContainer > xTable( SvxUnoXColorTable_createInstance( this ), uno::UNO_QUERY );
 		return SvxXMLXTableImport::load( aURL.GetMainURL( INetURLObject::NO_DECODE ), xTable );
 	}
-	return( sal_False );
+
+	return false;
 }
 
 /************************************************************************/
 
-sal_Bool XColorList::Save()
+bool XColorList::Save()
 {
 	INetURLObject aURL( maPath );
 
 	if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 	{
-		DBG_ASSERT( !maPath.Len(), "invalid URL" );
-		return sal_False;
+		OSL_ENSURE( !maPath.Len(), "invalid URL" );
+		return false;
 	}
 
 	aURL.Append( maName );
@@ -145,7 +137,7 @@ sal_Bool XColorList::Save()
 
 /************************************************************************/
 
-sal_Bool XColorList::Create()
+bool XColorList::Create()
 {
 	XubString aStr;
 	xub_StrLen nLen;
@@ -440,11 +432,14 @@ Bitmap XColorList::CreateBitmapForUI( long /*nIndex*/ )
 
 /************************************************************************/
 
-XColorList* XColorList::GetStdColorList()
+XColorListSharedPtr XColorList::GetStdColorList()
 {
-	if ( !pStaticGlobalColorList )
-		pStaticGlobalColorList = new XColorList( SvtPathOptions().GetPalettePath() );
-	return pStaticGlobalColorList;
+    if ( !aStaticGlobalColorList.get() )
+    {
+        aStaticGlobalColorList = XPropertyListFactory::CreateSharedXColorList(SvtPathOptions().GetPalettePath());
+    }
+
+    return aStaticGlobalColorList;
 }
 
 // eof

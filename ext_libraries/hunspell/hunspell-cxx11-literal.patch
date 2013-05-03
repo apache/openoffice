@@ -1,0 +1,11 @@
+--- misc/hunspell-1.3.2/src/tools/hunspell.cxx	2013-04-19 15:49:08.000000000 +0200
++++ misc/build/hunspell-1.3.2/src/tools/hunspell.cxx	2013-04-19 15:48:51.000000000 +0200
+@@ -20,7 +20,7 @@
+ #define HUNSPELL_VERSION VERSION
+ #define INPUTLEN 50
+ 
+-#define HUNSPELL_PIPE_HEADING "@(#) International Ispell Version 3.2.06 (but really Hunspell "VERSION")\n"
++#define HUNSPELL_PIPE_HEADING "@(#) International Ispell Version 3.2.06 (but really Hunspell " VERSION ")\n"
+ #define HUNSPELL_HEADING "Hunspell "
+ 
+ //for debugging only

@@ -87,6 +87,7 @@
                  com.sun.star.text.GlobalDocument
                  com.sun.star.text.WebDocument
                  com.sun.star.xforms.XMLFormDocument
+                 com.sun.star.sdb.FormDesign
                  com.sun.star.sheet.SpreadsheetDocument
                  com.sun.star.presentation.PresentationDocument
                  com.sun.star.drawing.DrawingDocument
@@ -205,6 +206,12 @@
           <desc>Index used for ordering panels inside a deck.  Smaller values correspond to positions nearer to the top of the deck.</desc>
         </info>
         <value>10000</value>
+      </prop>
+      <prop oor:name="ShowForReadOnlyDocument" oor:type="xs:boolean">
+        <info>
+          <desc>This flag controls whether the panel is shown when the document in the edit view is read only.</desc>
+        </info>
+        <value>false</value>
       </prop>
       <prop oor:name="WantsCanvas" oor:type="xs:boolean">
         <info>

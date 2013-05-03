@@ -1086,6 +1086,10 @@ public:
                                                  const MapMode&    rMapModeSource,
                                                  const MapMode&    rMapModeDest );
 
+    // create a mapping transformation from rMapModeSource to rMapModeDest (the above methods
+    // for B2DPoly/Polygons use this internally anyways to transform the B2DPolygon)
+    static basegfx::B2DHomMatrix LogicToLogic(const MapMode& rMapModeSource, const MapMode& rMapModeDest);
+
     Size                GetOutputSizePixel() const
                             { return Size( mnOutWidth, mnOutHeight ); }
     long				GetOutputWidthPixel() const { return mnOutWidth; }

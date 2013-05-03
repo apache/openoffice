@@ -19,7 +19,7 @@
  * 
  *************************************************************/
 
-#include <sfx2/sidebar/propertypanel.hrc>
+#include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include <sfx2/sidebar/Theme.hxx>
 #include <sfx2/sidebar/ControlFactory.hxx>
 #include "PosSizePropertyPanel.hxx"
@@ -913,6 +913,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                             break;
                         case 315000:
                             mpMtrAngle->SelectEntryPos(7);
+                            break;
                     }
 
                     break;

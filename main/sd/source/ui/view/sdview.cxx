@@ -97,6 +97,7 @@
 #include <drawinglayer/primitive2d/textprimitive2d.hxx>
 #include <svx/unoapi.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include "DrawController.hxx"
 
 #include <numeric>
 
@@ -780,37 +781,38 @@ sal_Bool View::SdrBeginTextEdit(
 		pGivenOutlinerView, bDontDeleteOutliner,
 		bOnlyOneView, bGrabFocus);
 
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        &GetViewShell()->GetViewShellBase(),
-        ::sfx2::sidebar::EnumContext::Context_DrawText);
+    if ( mpViewSh )
+    {
+        mpViewSh->GetViewShellBase().GetDrawController().FireSelectionChangeListener();
+    }
 
-	if (bReturn)
-	{
-		::Outliner* pOL = GetTextEditOutliner();
+    if (bReturn)
+    {
+        ::Outliner* pOL = GetTextEditOutliner();
 
-		if( pObj && pObj->GetPage() )
-		{
-			Color aBackground;
-			if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_TABLE )
-			{
-				aBackground = GetTextEditBackgroundColor(*this);
-			}
-			else
-			{
-				aBackground = pObj->GetPage()->GetPageBackgroundColor(pPV);
-			}
+        if( pObj && pObj->GetPage() )
+        {
+            Color aBackground;
+            if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_TABLE )
+            {
+                aBackground = GetTextEditBackgroundColor(*this);
+            }
+            else
+            {
+                aBackground = pObj->GetPage()->GetPageBackgroundColor(pPV);
+            }
             if (pOL != NULL)
                 pOL->SetBackgroundColor( aBackground  );
-		}
+        }
 
         if (pOL != NULL)
         {
             pOL->SetParaInsertedHdl(LINK(this, View, OnParagraphInsertedHdl));
             pOL->SetParaRemovingHdl(LINK(this, View, OnParagraphRemovingHdl));
         }
-	}
+    }
 
-	return(bReturn);
+    return(bReturn);
 }
 
 /** ends current text editing */
@@ -844,22 +846,23 @@ SdrEndTextEditKind View::SdrEndTextEdit(sal_Bool bDontDeleteReally )
 		}
 	}
 
-	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
+    GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
         sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT,
         (void*)xObj.get() );
 
-	if( xObj.is() )
-	{
-        ContextChangeEventMultiplexer::NotifyContextChange(
-            &GetViewShell()->GetViewShellBase(),
-            ::sfx2::sidebar::EnumContext::Context_Default);
+    if( xObj.is() )
+    {
+        if ( mpViewSh )
+        {
+            mpViewSh->GetViewShellBase().GetDrawController().FireSelectionChangeListener();
+        }
 
         SdPage* pPage = dynamic_cast< SdPage* >( xObj->GetPage() );
-		if( pPage )
-			pPage->onEndTextEdit( xObj.get() );
-	}
+        if( pPage )
+            pPage->onEndTextEdit( xObj.get() );
+    }
 
-	return(eKind);
+    return(eKind);
 }
 
 // --------------------------------------------------------------------

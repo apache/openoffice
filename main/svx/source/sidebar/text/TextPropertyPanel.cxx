@@ -42,7 +42,7 @@
 #include <sfx2/dispatch.hxx>
 #include <sfx2/objsh.hxx>
 #include <sfx2/viewsh.hxx>
-#include <sfx2/sidebar/propertypanel.hrc>
+#include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include <sfx2/sidebar/ControlFactory.hxx>
 #include <sfx2/sidebar/Theme.hxx>
 #include "sfx2/imagemgr.hxx"
@@ -82,10 +82,8 @@ namespace svx { namespace sidebar {
 #define TEXT_SECTIONPAGE_HEIGHT_S   SECTIONPAGE_MARGIN_VERTICAL_TOP + CBOX_HEIGHT  + ( TOOLBOX_ITEM_HEIGHT + 2 ) + CONTROL_SPACING_VERTICAL * 1 + SECTIONPAGE_MARGIN_VERTICAL_BOT
 #define TEXT_SECTIONPAGE_HEIGHT		SECTIONPAGE_MARGIN_VERTICAL_TOP + CBOX_HEIGHT  + ( TOOLBOX_ITEM_HEIGHT + 2 ) * 2 + CONTROL_SPACING_VERTICAL * 2 + SECTIONPAGE_MARGIN_VERTICAL_BOT
 
-//
 
-//end
-PopupControl* TextPropertyPanel::CreateCharacterSpacingControl (PopupContainer* pParent)
+    PopupControl* TextPropertyPanel::CreateCharacterSpacingControl (PopupContainer* pParent)
 {
     return new TextCharacterSpacingControl(pParent, *this, mpBindings);
 }
@@ -146,8 +144,7 @@ long TextPropertyPanel::GetSelFontSize()
 TextPropertyPanel* TextPropertyPanel::Create (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings,
-    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
+    SfxBindings* pBindings)
 {
     if (pParent == NULL)
         throw lang::IllegalArgumentException(A2S("no parent Window given to TextPropertyPanel::Create"), NULL, 0);
@@ -159,8 +156,7 @@ TextPropertyPanel* TextPropertyPanel::Create (
     return new TextPropertyPanel(
         pParent,
         rxFrame,
-        pBindings,
-        rxSidebar);
+        pBindings);
 }
 
 
@@ -172,13 +168,12 @@ TextPropertyPanel* TextPropertyPanel::Create (
 TextPropertyPanel::TextPropertyPanel (
     Window* pParent,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
-    SfxBindings* pBindings,
-    const cssu::Reference<css::ui::XSidebar>& rxSidebar)
-    :	Control(pParent, SVX_RES(RID_SIDEBAR_TEXT_PANEL)),
+    SfxBindings* pBindings)
+    :   Control(pParent, SVX_RES(RID_SIDEBAR_TEXT_PANEL)),
         mpFontNameBox (new SvxSBFontNameBox(this, SVX_RES(CB_SBFONT_FONT))),
-    	maFontSizeBox		(this, SVX_RES(MB_SBFONT_FONTSIZE)),
-    	mpToolBoxIncDecBackground(ControlFactory::CreateToolBoxBackground(this)),
-    	mpToolBoxIncDec(ControlFactory::CreateToolBox(
+        maFontSizeBox		(this, SVX_RES(MB_SBFONT_FONTSIZE)),
+        mpToolBoxIncDecBackground(ControlFactory::CreateToolBoxBackground(this)),
+        mpToolBoxIncDec(ControlFactory::CreateToolBox(
                 mpToolBoxIncDecBackground.get(),
                 SVX_RES(TB_INCREASE_DECREASE))),
         mpToolBoxFontBackground(ControlFactory::CreateToolBoxBackground(this)),
@@ -233,8 +228,7 @@ TextPropertyPanel::TextPropertyPanel (
         maBrushColorPopup(this, ::boost::bind(&TextPropertyPanel::CreateBrushColorPopupControl, this, _1)),
         mxFrame(rxFrame),
         maContext(),
-        mpBindings(pBindings),
-        mxSidebar(rxSidebar)
+        mpBindings(pBindings)
 {
 	Initialize();
 	FreeResource();
@@ -290,57 +284,36 @@ void TextPropertyPanel::HandleContextChange (
     {
         case CombinedEnumContext(Application_Calc, Context_Cell):
         case CombinedEnumContext(Application_Calc, Context_Pivot):
-        {
-            mpToolBoxScript->Hide();
-		    mpToolBoxScriptSw->Hide();
-            mpToolBoxSpacing->Hide();
+            mpToolBoxScriptSw->Hide();
             mpToolBoxHighlight->Hide();
-			
-            Size aSize(PROPERTYPAGE_WIDTH,TEXT_SECTIONPAGE_HEIGHT_S);
-            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
-            aSize.setWidth(GetOutputSizePixel().Width());
-            SetSizePixel(aSize);
-            if (mxSidebar.is())
-                mxSidebar->requestLayout();
+            mpToolBoxScript->Disable();
+            mpToolBoxSpacing->Disable();
             break;
-        }
+
+        case CombinedEnumContext(Application_Calc, Context_EditCell):
+        case CombinedEnumContext(Application_Calc, Context_DrawText):
+            mpToolBoxScriptSw->Hide();
+            mpToolBoxHighlight->Hide();
+            mpToolBoxScript->Enable();
+            mpToolBoxSpacing->Enable();
+            break;
 
         case CombinedEnumContext(Application_WriterVariants, Context_Text):
         case CombinedEnumContext(Application_WriterVariants, Context_Table):
-        {
             mpToolBoxScriptSw->Show();
             mpToolBoxScript->Hide();
             mpToolBoxHighlight->Show();
             mpToolBoxSpacing->Show();
-
-            Size aSize(PROPERTYPAGE_WIDTH, TEXT_SECTIONPAGE_HEIGHT);
-            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
-            aSize.setWidth(GetOutputSizePixel().Width());
-            SetSizePixel(aSize);
-            if (mxSidebar.is())
-                mxSidebar->requestLayout();
             break;
-        }
 
         case CombinedEnumContext(Application_WriterVariants, Context_DrawText):
         case CombinedEnumContext(Application_WriterVariants, Context_Annotation):
-        {
             mpToolBoxScriptSw->Show();
             mpToolBoxScript->Hide();
             mpToolBoxSpacing->Show();
             mpToolBoxHighlight->Hide();
-
-            Size aSize(PROPERTYPAGE_WIDTH,TEXT_SECTIONPAGE_HEIGHT);
-            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
-            aSize.setWidth(GetOutputSizePixel().Width());
-            SetSizePixel(aSize);
-            if (mxSidebar.is())
-                mxSidebar->requestLayout();
             break;
-        }
 
-        case CombinedEnumContext(Application_Calc, Context_EditCell):
-        case CombinedEnumContext(Application_Calc, Context_DrawText):
         case CombinedEnumContext(Application_DrawImpress, Context_DrawText):
         case CombinedEnumContext(Application_DrawImpress, Context_Text):
         case CombinedEnumContext(Application_DrawImpress, Context_Table):
@@ -348,20 +321,11 @@ void TextPropertyPanel::HandleContextChange (
         case CombinedEnumContext(Application_DrawImpress, Context_Draw):
         case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
         case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
-        {
             mpToolBoxScriptSw->Hide();
             mpToolBoxScript->Show();
             mpToolBoxSpacing->Show();
             mpToolBoxHighlight->Hide();
-
-            Size aSize(PROPERTYPAGE_WIDTH,TEXT_SECTIONPAGE_HEIGHT);
-            aSize = LogicToPixel( aSize,MapMode(MAP_APPFONT) ); 
-            aSize.setWidth(GetOutputSizePixel().Width());
-            SetSizePixel(aSize);
-            if (mxSidebar.is())
-                mxSidebar->requestLayout();
             break;
-        }
 
         default:
             break;
@@ -401,7 +365,7 @@ void TextPropertyPanel::Initialize (void)
     maFontSizeBox.Fill(&aFontInfo,mpFontList);
     maFontSizeBox.SetAccessibleName(maFontSizeBox.GetQuickHelpText());
 
-	//toolbox
+    //toolbox
     SetupToolboxItems();
     InitToolBoxIncDec();
     InitToolBoxFont();
@@ -438,7 +402,6 @@ void TextPropertyPanel::Initialize (void)
     mbColorAvailable = true;
     maBackColor = COL_AUTO;
     mbBackColorAvailable = true;
-    meColorType = FONT_COLOR;
     meEscape = SVX_ESCAPEMENT_OFF;
     mbSuper = false;
     mbSub = false;
@@ -458,29 +421,19 @@ void TextPropertyPanel::Initialize (void)
 
     //set handler
     mpFontNameBox->SetBindings(mpBindings);
-    //add 
     Link aLink = LINK(this, TextPropertyPanel, FontSelHdl);
     mpFontNameBox->SetSelectHdl(aLink);
-    //add end
-	
     aLink = LINK(this, TextPropertyPanel, FontSizeModifyHdl);
     maFontSizeBox.SetModifyHdl(aLink);
-    //add 
     aLink = LINK(this, TextPropertyPanel, FontSizeSelHdl);
     maFontSizeBox.SetSelectHdl(aLink);
-    //add end
     aLink = LINK(this, TextPropertyPanel, FontSizeLoseFocus);
     maFontSizeBox.SetLoseFocusHdl(aLink);
 
-    // add
-    long aSizeBoxHeight = maFontSizeBox.GetSizePixel().getHeight();;
-    Point aPosFontSize = maFontSizeBox.GetPosPixel();
-    long aPosY = aPosFontSize.getY();
-    Point pTBIncDec = mpToolBoxIncDec->GetPosPixel();
-    long aIncDecHeight = mpToolBoxIncDec->GetSizePixel().getHeight();
-    pTBIncDec.setY(aPosY+aSizeBoxHeight/2-aIncDecHeight/2);
-    mpToolBoxIncDec->SetPosPixel(pTBIncDec);
-    //end
+    Size aSize(PROPERTYPAGE_WIDTH, TEXT_SECTIONPAGE_HEIGHT);
+    aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+    aSize.setWidth(GetOutputSizePixel().Width());
+    SetSizePixel(aSize);
 }
 
 void TextPropertyPanel::EndSpacingPopupMode (void)
@@ -578,10 +531,10 @@ void TextPropertyPanel::SetupToolboxItems (void)
     maSDFontShrink.SetupToolBoxItem(*mpToolBoxIncDec, TBI_DECREASE);
 
     maWeightControl.SetupToolBoxItem(*mpToolBoxFont, TBI_BOLD);
-	maItalicControl.SetupToolBoxItem(*mpToolBoxFont, TBI_ITALIC);
-	maUnderlineControl.SetupToolBoxItem(*mpToolBoxFont, TBI_UNDERLINE);
-	maStrikeControl.SetupToolBoxItem(*mpToolBoxFont, TBI_STRIKEOUT);
-	maShadowControl.SetupToolBoxItem(*mpToolBoxFont, TBI_SHADOWED);
+    maItalicControl.SetupToolBoxItem(*mpToolBoxFont, TBI_ITALIC);
+    maUnderlineControl.SetupToolBoxItem(*mpToolBoxFont, TBI_UNDERLINE);
+    maStrikeControl.SetupToolBoxItem(*mpToolBoxFont, TBI_STRIKEOUT);
+    maShadowControl.SetupToolBoxItem(*mpToolBoxFont, TBI_SHADOWED);
 
     maFontColorControl.SetupToolBoxItem(*mpToolBoxFontColor, TBI_FONTCOLOR);
     //for sw
@@ -611,7 +564,7 @@ IMPL_LINK( TextPropertyPanel, FontSelHdl, FontNameBox*, pBox )
 	}
 	return 0;
 }
-//add end
+
 IMPL_LINK( TextPropertyPanel, FontSizeModifyHdl, FontSizeBox*, pSizeBox )
 {
 	if (pSizeBox == &maFontSizeBox)
@@ -628,7 +581,7 @@ IMPL_LINK( TextPropertyPanel, FontSizeModifyHdl, FontSizeBox*, pSizeBox )
 	}
 	return 0;
 }
-//add 
+
 IMPL_LINK( TextPropertyPanel, FontSizeSelHdl, FontSizeBox*, pSizeBox )
 {
 	if ( !pSizeBox->IsTravelSelect() )
@@ -644,7 +597,7 @@ IMPL_LINK( TextPropertyPanel, FontSizeSelHdl, FontSizeBox*, pSizeBox )
 	
 	return 0;
 }
-//add end
+
 IMPL_LINK(TextPropertyPanel, FontSizeLoseFocus, FontSizeBox*, pSizeBox)
 {
 	if(pSizeBox == &maFontSizeBox)
@@ -656,9 +609,9 @@ IMPL_LINK(TextPropertyPanel, FontSizeLoseFocus, FontSizeBox*, pSizeBox)
 
 IMPL_LINK(TextPropertyPanel, ToolboxFontSelectHandler, ToolBox*, pToolBox)
 {
-	const sal_uInt16 nId = pToolBox->GetCurItemId();
+    const sal_uInt16 nId = pToolBox->GetCurItemId();
 
-	switch (nId)
+    switch (nId)
     {
         case TBI_BOLD:
         {
@@ -701,6 +654,7 @@ IMPL_LINK(TextPropertyPanel, ToolboxFontSelectHandler, ToolBox*, pToolBox)
                 mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_UNDERLINE, SFX_CALLMODE_RECORD, &aLineItem, 0L);
             }
             UpdateItem(SID_ATTR_CHAR_UNDERLINE);
+            break;
         }
         case TBI_STRIKEOUT:
         {
@@ -723,8 +677,8 @@ IMPL_LINK(TextPropertyPanel, ToolboxFontSelectHandler, ToolBox*, pToolBox)
             UpdateItem(SID_ATTR_CHAR_SHADOWED);
             break;
         }
-	}
-	return 0;
+    }
+    return 0;
 }
 
 
@@ -732,9 +686,9 @@ IMPL_LINK(TextPropertyPanel, ToolboxFontSelectHandler, ToolBox*, pToolBox)
 
 IMPL_LINK(TextPropertyPanel, ToolboxIncDecSelectHdl, ToolBox*, pToolBox)
 {
-	const sal_uInt16 nId = pToolBox->GetCurItemId();
+    const sal_uInt16 nId = pToolBox->GetCurItemId();
 
-	// font size +/- enhancement in sd
+    // font size +/- enhancement in sd
     switch (maContext.GetCombinedContext_DI())
     {
         case CombinedEnumContext(Application_DrawImpress, Context_DrawText):
@@ -859,8 +813,6 @@ IMPL_LINK(TextPropertyPanel, ToolBoxFontColorDropHdl,ToolBox*, pToolBox)
 	const sal_uInt16 nId = pToolBox->GetCurItemId();
 	if(nId == TBI_FONTCOLOR)
 	{
-		meColorType = FONT_COLOR;
-
 		pToolBox->SetItemDown( nId, true );
 
 		maFontColorPopup.Show(*pToolBox);
@@ -942,8 +894,6 @@ IMPL_LINK(TextPropertyPanel, ToolBoxHighlightDropHdl, ToolBox*, pToolBox)
 	const sal_uInt16 nId = pToolBox->GetCurItemId();
 	if(nId == TBI_HIGHLIGHT)
 	{
-		meColorType = BACK_COLOR;
-
 		pToolBox->SetItemDown( nId, true );
 		maBrushColorPopup.Show(*pToolBox);
 		maBrushColorPopup.SetCurrentColor(maBackColor, mbBackColorAvailable);
@@ -971,22 +921,14 @@ IMPL_LINK(TextPropertyPanel, SpacingClickHdl, ToolBox*, pToolBox)
 
 
 
-IMPL_LINK( TextPropertyPanel, ImplPopupModeEndHdl, FloatingWindow*, EMPTYARG )
-{	
-	return 0;
-}
-
-
-
-
 void TextPropertyPanel::NotifyItemUpdate (
     const sal_uInt16 nSID,
     const SfxItemState eState,
     const SfxPoolItem* pState,
     const bool bIsEnabled)
 {
-	switch(nSID)
-	{
+    switch(nSID)
+    {
         case SID_ATTR_CHAR_FONT:
         {
             bool bIsControlEnabled (bIsEnabled);
@@ -1027,11 +969,11 @@ void TextPropertyPanel::NotifyItemUpdate (
                 UpdateItem(SID_GROW_FONT_SIZE);
             }
             else
-            {			
+            {
                 mpHeightItem = NULL;
                 maFontSizeBox.SetText( String() );
                 //increase decrease diabled when multi-seletion have different font size
-			
+
                 // font size +/- enhancement in sd
                 switch(maContext.GetCombinedContext_DI())
                 {
@@ -1139,15 +1081,15 @@ void TextPropertyPanel::NotifyItemUpdate (
                 const SvxColorItem* pItem =  (const SvxColorItem*)pState;
                 maColor = pItem->GetValue();
                 mbColorAvailable = true;
-				if (mpFontColorUpdater)
-	                mpFontColorUpdater->Update(maColor);
+                if (mpFontColorUpdater)
+                    mpFontColorUpdater->Update(maColor);
             }
             else
             {
                 mbColorAvailable = false;
                 maColor.SetColor(COL_AUTO);
-				if (mpFontColorUpdater)
-					mpFontColorUpdater->Update(maColor);
+                if (mpFontColorUpdater)
+                    mpFontColorUpdater->Update(maColor);
             }
             mpToolBoxFontColor->EnableItem(TBI_FONTCOLOR, bIsEnabled);
             break;

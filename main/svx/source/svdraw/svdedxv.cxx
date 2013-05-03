@@ -689,12 +689,12 @@ sal_Bool SdrObjEditView::SdrBeginTextEdit(
             aMinTextEditArea.Move(aPvOfs.X(),aPvOfs.Y());
             pTextEditCursorMerker=pWin->GetCursor();
 
-	        aHdl.SetMoveOutside(sal_True);
+            aHdl.SetMoveOutside(sal_True);
 
-			// #i72757#
-			// Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
-			// to call AdjustMarkHdl() always.
-			AdjustMarkHdl();
+            // #i72757#
+            // Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
+            // to call AdjustMarkHdl() always.
+            AdjustMarkHdl();
 
             pTextEditOutlinerView=ImpMakeOutlinerView(pWin,!bEmpty,pGivenOutlinerView);
 
@@ -1027,10 +1027,10 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(sal_Bool bDontDeleteReally)
 				((SdrTextObj*)pTEObj)->SetTextAnimationAllowed(sal_True);
 			}
 
-			// #i72757#
-			// Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
-			// to call AdjustMarkHdl() always.
-			AdjustMarkHdl();
+            // #i72757#
+            // Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
+            // to call AdjustMarkHdl() always.
+            AdjustMarkHdl();
         }
         // alle OutlinerViews loeschen
         for (sal_uIntPtr i=pTEOutliner->GetViewCount(); i>0;)
