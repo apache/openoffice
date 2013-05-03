@@ -1204,6 +1204,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 		{
 			// if no object was inserted, insert a picture
 			InsertMetaFile( aDataHelper, rPos, pImageMap, true );
+            bReturn = true;
 		}
 	}
 	
@@ -1271,9 +1272,31 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 	
     if(!bReturn && (!bLink || pPickObj) && CHECK_FORMAT_TRANS(FORMAT_BITMAP))
 	{
-		BitmapEx aBmpEx;
+        BitmapEx aBmpEx;
 
-		if( aDataHelper.GetBitmapEx( FORMAT_BITMAP, aBmpEx ) )
+        // get basic Bitmap data
+        aDataHelper.GetBitmapEx(FORMAT_BITMAP, aBmpEx);
+
+        if(aBmpEx.IsEmpty())
+        {
+            // if this did not work, try to get graphic formats and convert these to bitmap
+            Graphic aGraphic;
+
+            if(aDataHelper.GetGraphic(FORMAT_GDIMETAFILE, aGraphic))
+            {
+                aBmpEx = aGraphic.GetBitmapEx();
+            }
+            else if(aDataHelper.GetGraphic(SOT_FORMATSTR_ID_SVXB, aGraphic))
+            {
+                aBmpEx = aGraphic.GetBitmapEx();
+            }
+            else if(aDataHelper.GetGraphic(FORMAT_BITMAP, aGraphic))
+            {
+                aBmpEx = aGraphic.GetBitmapEx();
+            }
+        }
+
+        if(!aBmpEx.IsEmpty())
 		{
 			Point aInsertPos( rPos );
 
@@ -1300,7 +1323,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			InsertGraphic( aBmpEx, mnAction, aInsertPos, NULL, pImageMap );
 			bReturn = true;
 		}
-	}
+    }
 
     if(!bReturn && pPickObj && CHECK_FORMAT_TRANS( SOT_FORMATSTR_ID_XFA ) )
 	{
