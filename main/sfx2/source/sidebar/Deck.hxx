@@ -64,7 +64,13 @@ public:
     const SharedPanelContainer& GetPanels (void) const;
     void RequestLayout (void);
     ::Window* GetPanelParentWindow (void);
-    
+
+    /** Try to make the panel completely visible.
+        When the whole panel does not fit then make its top visible
+        and it off at the bottom.
+    */
+    void ShowPanel (const Panel& rPanel);
+
     virtual void Paint (const Rectangle& rUpdateArea);
     virtual void DataChanged (const DataChangedEvent& rEvent);
 
