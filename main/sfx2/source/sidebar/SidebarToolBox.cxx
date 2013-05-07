@@ -24,7 +24,7 @@
 #include "SidebarToolBox.hxx"
 #include "ToolBoxBackground.hxx"
 #include "sfx2/sidebar/Theme.hxx"
-#include "Tools.hxx"
+#include "sfx2/sidebar/Tools.hxx"
 
 #include <vcl/gradient.hxx>
 
@@ -155,5 +155,22 @@ void SidebarToolBox::SetPosSizePixel (
 }
 
 
+
+
+long SidebarToolBox::Notify (NotifyEvent& rEvent)
+{
+    if (rEvent.GetType() == EVENT_KEYINPUT)
+    {
+        if (rEvent.GetKeyEvent()->GetKeyCode().GetCode() == KEY_TAB)
+        {
+            // Special handling for transferring handling of KEY_TAB
+            // that becomes necessary because of our parent that is
+            // not the dialog but a background control.
+            return DockingWindow::Notify(rEvent);
+        }
+    }
+    return ToolBox::Notify(rEvent);
+}
+      
 
 } } // end of namespace sfx2::sidebar

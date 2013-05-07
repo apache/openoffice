@@ -6185,6 +6185,32 @@
             </info>
             <value>25</value>
           </prop>
+          <prop oor:name="ColorValueSetColumnCount" oor:type="xs:short">
+            <info>
+              <author>ALG</author>
+              <desc>
+                This option controls how many columns the ColorValueSets (the matrix-organized dialogs for color select)
+                will have. The default is 12 and this is aligned with the layout of the standard color palette. thus, when you
+                change this value, you should know what you do. This setting also influences some width-oriented layouts in
+                dialogs where this ColorValueSets are used, e.g. FillStyle dialog.
+              </desc>
+              <label>Defines the number of columns that will be shown in a ColorValueSet.</label>
+            </info>
+            <value>12</value>
+          </prop>
+          <prop oor:name="PreviewUsesCheckeredBackground" oor:type="xs:boolean">
+            <info>
+              <author>ALG</author>
+              <desc>
+                This option allows to make previews (e.g. UI previews for object attirbutes) show the content with a checkeded 
+                background to allow simple identification and better preview of transparent content, e.g. when a draw object
+                is filled with a transparent graphic (SVG or bitmap) the preview will show the checkered background shine
+                through, so the user can identify that the fill has transparency with a single look.
+              </desc>
+              <label>Shows previews with shining through checkered background to visualize transparency.</label>
+            </info>
+            <value>false</value>
+          </prop>
         </group>
  		<set oor:name="OfficeObjects" oor:node-type="ObjectNames">
  			<info>

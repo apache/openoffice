@@ -181,8 +181,6 @@ private:
         const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
         const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const;
     void ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) const;
-    css::util::URL GetURL (const ::rtl::OUString& rsCommand) const;
-    cssu::Reference<css::frame::XDispatch> GetDispatch (const css::util::URL& rURL) const;
     ::boost::shared_ptr<PopupMenu> CreatePopupMenu (
         const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
         const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const;
@@ -211,6 +209,12 @@ private:
     SfxSplitWindow* GetSplitWindow (void);
     void ProcessNewWidth (const sal_Int32 nNewWidth);
     void UpdateCloseIndicator (const bool bIsIndicatorVisible);
+
+    /** Typically called when a panel is focused via keyboard.
+        Tries to scroll the deck up or down to make the given panel
+        completely visible.
+    */
+    void ShowPanel (const Panel& rPanel);
     
     virtual void SAL_CALL disposing (void);
 };

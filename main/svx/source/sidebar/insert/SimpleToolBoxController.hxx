@@ -19,48 +19,36 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_DOCKING_WINDOW_HXX
-#define SFX_SIDEBAR_DOCKING_WINDOW_HXX
+#ifndef SVX_SIDEBAR_INSERT_SIMPLE_TOOLBOX_CONTROLLER_HXX
+#define SVX_SIDEBAR_INSERT_SIMPLE_TOOLBOX_CONTROLLER_HXX
 
-#include "sfx2/dockwin.hxx"
-#include "sfx2/dockwin.hxx"
-#include "Sidebar.hxx"
+#include <svtools/toolboxcontroller.hxx>
 
-#include <rtl/ref.hxx>
+namespace css = ::com::sun::star;
+namespace cssu = ::com::sun::star::uno;
 
-namespace sfx2 { namespace sidebar {
+namespace svx { namespace sidebar {
 
-class SidebarChildWindow;
-
-class SidebarController;
-
-class SidebarDockingWindow
-    : public SfxDockingWindow
+class SimpleToolBoxController : public svt::ToolboxController
 {
 public:
-    SidebarDockingWindow(
-        SfxBindings* pBindings,
-        SidebarChildWindow& rChildWindow,
-        Window* pParent,
-        WinBits nBits);
-    virtual ~SidebarDockingWindow (void);
+    SimpleToolBoxController(
+        const cssu::Reference<css::frame::XFrame>& rxFrame,
+        ToolBox& rToolBox,
+        const sal_uInt16 nItTemId,
+        const rtl::OUString& rsComand);
+    virtual ~SimpleToolBoxController (void);
 
-    virtual sal_Bool Close (void);
-    
-    SfxChildWindow* GetChildWindow (void);
-
-protected:
-    // Window overridables
-    virtual void GetFocus (void);
+    // XStatusListener
+    virtual void SAL_CALL statusChanged (const css::frame::FeatureStateEvent& rEvent)
+        throw (cssu::RuntimeException);
 
 private:
-    ::rtl::Reference<sfx2::sidebar::SidebarController> mpSidebarController;
-
-    void DoDispose (void);
+    ToolBox& mrToolbox;
+    const sal_uInt16 mnItemId;
 };
 
-
-} } // end of namespace sfx2::sidebar
+} } // end of namespace svx::sidebar
 
 
 #endif
