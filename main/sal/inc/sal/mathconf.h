@@ -54,7 +54,9 @@ extern "C" {
 
 
 /* SAL_MATH_FINITE(d): test double d on INFINITY, NaN et al. */
-#if defined( WNT)
+#ifdef __STDC__
+    #define SAL_MATH_FINITE(d) isfinite(d)
+#elif defined( WNT)
 #define SAL_MATH_FINITE(d) _finite(d)
 #elif defined OS2
 #define SAL_MATH_FINITE(d) finite(d)
