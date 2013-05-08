@@ -44,9 +44,11 @@ namespace basegfx
 class WinSalBitmap;
 
 //////////////////////////////////////////////////////////////////////////////
-// Helper class to manage Gdiplus::Bitmap instances created from WinSalBitmap
+// Helper class to manage Gdiplus::Bitmap instances created from WinSalBitmap,
+// and Gdiplus::GraphicsPath instances created from basegfx::B2DPolygon or
+// basegfx::B2DPolyPolygon
 
-class GdiPlusObjectBuffer : public basegfx::cache::cmanager, public Timer
+class GdiPlusObjectBuffer : public basegfx::cache::manager, public Timer
 {
 private:
 protected:

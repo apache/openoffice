@@ -32,7 +32,7 @@ namespace basegfx
 {
     namespace cache
     {
-        void cmanager::removeNode(node& rNode)
+        void manager::removeNode(node& rNode)
         {
             ::osl::MutexGuard aGuard(m_aMutex);
 
@@ -59,7 +59,7 @@ namespace basegfx
             }
         }
 
-        void cmanager::insertNode(node& rNode)
+        void manager::insertNode(node& rNode)
         {
             ::osl::MutexGuard aGuard(m_aMutex);
             rNode.mpNext = rNode.mpPrev = 0;
@@ -87,13 +87,13 @@ namespace basegfx
             }
         }
 
-        cmanager::cmanager(sal_uInt32 nLifetime)
+        manager::manager(sal_uInt32 nLifetime)
         :   mnLifetime(nLifetime),
             mpNodes(0)
         {
         }
 
-        cmanager::~cmanager()
+        manager::~manager()
         {
             ::osl::MutexGuard aGuard(m_aMutex);
 
@@ -103,20 +103,20 @@ namespace basegfx
             }
         }
 
-        void cmanager::onEmpty()
+        void manager::onEmpty()
         {
         }
 
-        void cmanager::onFilled()
+        void manager::onFilled()
         {
         }
 
-        const node* cmanager::getEntry(const cacheable& rCacheable)
+        const node* manager::getEntry(const cacheable& rCacheable)
         {
             return rCacheable.getNode();
         }
 
-        void cmanager::trigger()
+        void manager::trigger()
         {
             ::osl::MutexGuard aGuard(m_aMutex);
             node* pCurr = mpNodes;
@@ -137,7 +137,7 @@ namespace basegfx
             }
         }
         
-        void cmanager::flush()
+        void manager::flush()
         {
             ::osl::MutexGuard aGuard(m_aMutex);
 
@@ -155,7 +155,7 @@ namespace basegfx
 {
     namespace cache
     {
-        node::node(cmanager& rManager, const cacheable& rCacheable) 
+        node::node(manager& rManager, const cacheable& rCacheable) 
         :   mpNext(0),
             mpPrev(0),
             mrManager(rManager), 

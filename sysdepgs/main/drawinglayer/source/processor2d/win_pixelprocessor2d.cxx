@@ -68,6 +68,20 @@ namespace
 
         rGraphics.SetTransform(&aMatrix);
     }
+
+    bool isVisible(Gdiplus::Graphics& rGraphics, const basegfx::B2DRange& rRange)
+    {
+        if(rRange.isEmpty())
+        {
+            return false;
+        }
+
+        return rGraphics.IsVisible(
+            Gdiplus::REAL(rRange.getMinX()),
+            Gdiplus::REAL(rRange.getMinY()),
+            Gdiplus::REAL(rRange.getWidth()),
+            Gdiplus::REAL(rRange.getHeight()));
+    }
 } // end of anonymous namespace
 
 //////////////////////////////////////////////////////////////////////////////
@@ -82,7 +96,6 @@ namespace drawinglayer
         :   BaseProcessor2D(rViewInformation),
             mrOutDev(rOutDev),
             mpGraphics(0),
-            maGraphics(),
             maBColorModifierStack(),
             maCurrentTransformation(),
             maDrawinglayerOpt()
@@ -126,43 +139,20 @@ namespace drawinglayer
 
             // create Gdiplus::Graphics entry for new OutputDevice
             SystemGraphicsData aSystemGraphicsData(mrOutDev.GetSystemGfxData());
-            Gdiplus::Graphics* pGraphics = new Gdiplus::Graphics(aSystemGraphicsData.hDC);
-
-            pushGraphics(*pGraphics);
+            mpGraphics = new Gdiplus::Graphics(aSystemGraphicsData.hDC);
             setAntialiasing(getGraphics(), getOptionsDrawinglayer().IsAntiAliasing());
             setMatrix(getGraphics(), getCurrentTransformation());
         }
 
         Win_PixelProcessor2D::~Win_PixelProcessor2D()
         {
-            popGraphics();
-            OSL_ENSURE(maGraphics.empty(), "Mismatch in push/popGraphics (!)");
+            delete mpGraphics;
 
             // restore MapMode
             mrOutDev.Pop();
 
             // restore AntiAliasing
             mrOutDev.SetAntialiasing(mrOutDev.GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
-        }
-
-        void Win_PixelProcessor2D::pushGraphics(Gdiplus::Graphics& rNew)
-        {
-            maGraphics.push_back(&rNew);
-            mpGraphics = &rNew;
-        }
-
-        void Win_PixelProcessor2D::popGraphics()
-        {
-            if(maGraphics.empty())
-            {
-                OSL_ENSURE(false, "OOps, push/popGraphics mismatch (!)");
-            }
-            else
-            {
-                delete mpGraphics;
-                mpGraphics = maGraphics.back();
-                maGraphics.pop_back();
-            }
         }
 
         void Win_PixelProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate)
@@ -177,35 +167,40 @@ namespace drawinglayer
 
                     if(!rBitmapEx.IsEmpty())
                     {
-                        const boost::shared_ptr< Gdiplus::Bitmap > aBitmap(getBufferedGdiPlusBitmapFromBitmapEx(rBitmapEx));
+                        const basegfx::B2DRange aRange(rBitmapPrimitive2D.getB2DRange(getViewInformation2D()));
 
-                        if(aBitmap.get())
+                        if(isVisible(getGraphics(), aRange))
                         {
-                            const basegfx::B2DHomMatrix aCurrent(getCurrentTransformation() * rBitmapPrimitive2D.getTransform());
-                            Gdiplus::PointF aDestPoints[3];
-                            Gdiplus::ImageAttributes aAttributes;
+                            const boost::shared_ptr< Gdiplus::Bitmap > aBitmap(getBufferedGdiPlusBitmapFromBitmapEx(rBitmapEx));
 
-                            setMatrix(getGraphics(), aCurrent);
-                            aDestPoints[0].X = Gdiplus::REAL(0.0);
-                            aDestPoints[0].Y = Gdiplus::REAL(0.0);
-                            aDestPoints[1].X = Gdiplus::REAL(1.0);
-                            aDestPoints[1].Y = Gdiplus::REAL(0.0);
-                            aDestPoints[2].X = Gdiplus::REAL(0.0);
-                            aDestPoints[2].Y = Gdiplus::REAL(1.0);
-                            aAttributes.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
-                            getGraphics().DrawImage(
-                                aBitmap.get(), 
-                                aDestPoints, 
-                                3,
-                                Gdiplus::REAL(0.0),
-                                Gdiplus::REAL(0.0),
-                                Gdiplus::REAL(aBitmap->GetWidth()),
-                                Gdiplus::REAL(aBitmap->GetHeight()),
-                                Gdiplus::UnitPixel,
-                                &aAttributes,
-                                0,
-                                0);
-                            setMatrix(getGraphics(), getCurrentTransformation());
+                            if(aBitmap.get())
+                            {
+                                const basegfx::B2DHomMatrix aCurrent(getCurrentTransformation() * rBitmapPrimitive2D.getTransform());
+                                Gdiplus::PointF aDestPoints[3];
+                                Gdiplus::ImageAttributes aAttributes;
+
+                                setMatrix(getGraphics(), aCurrent);
+                                aDestPoints[0].X = Gdiplus::REAL(0.0);
+                                aDestPoints[0].Y = Gdiplus::REAL(0.0);
+                                aDestPoints[1].X = Gdiplus::REAL(1.0);
+                                aDestPoints[1].Y = Gdiplus::REAL(0.0);
+                                aDestPoints[2].X = Gdiplus::REAL(0.0);
+                                aDestPoints[2].Y = Gdiplus::REAL(1.0);
+                                aAttributes.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
+                                getGraphics().DrawImage(
+                                    aBitmap.get(), 
+                                    aDestPoints, 
+                                    3,
+                                    Gdiplus::REAL(0.0),
+                                    Gdiplus::REAL(0.0),
+                                    Gdiplus::REAL(aBitmap->GetWidth()),
+                                    Gdiplus::REAL(aBitmap->GetHeight()),
+                                    Gdiplus::UnitPixel,
+                                    &aAttributes,
+                                    0,
+                                    0);
+                                setMatrix(getGraphics(), getCurrentTransformation());
+                            }
                         }
                     }
 
@@ -214,6 +209,12 @@ namespace drawinglayer
                 case PRIMITIVE2D_ID_POINTARRAYPRIMITIVE2D:
                 {
                     const primitive2d::PointArrayPrimitive2D& rPointArrayPrimitive2D = static_cast< const primitive2d::PointArrayPrimitive2D& >(rCandidate);
+                    const basegfx::B2DRange aRange(rPointArrayPrimitive2D.getB2DRange(getViewInformation2D()));
+
+                    if(isVisible(getGraphics(), aRange))
+                    {
+                    }
+
                     break;
                 }
                 case PRIMITIVE2D_ID_POLYGONHAIRLINEPRIMITIVE2D:
@@ -223,15 +224,20 @@ namespace drawinglayer
 
                     if(rPolygon.count())
                     {
-                        const boost::shared_ptr< Gdiplus::GraphicsPath > aPath(getBufferedGdiPlusGraphicsPathFromB2DPolygon(rPolygon));
+                        const basegfx::B2DRange aRange(rPolygonHairlinePrimitive2D.getB2DRange(getViewInformation2D()));
 
-                        if(aPath.get())
+                        if(isVisible(getGraphics(), aRange))
                         {
-                            const basegfx::BColor aBColor(getBColorModifierStack().getModifiedColor(rPolygonHairlinePrimitive2D.getBColor()));
-                            const Gdiplus::Color aColor(BYTE(aBColor.getRed() * 255.0), BYTE(aBColor.getGreen() * 255.0), BYTE(aBColor.getBlue() * 255.0));
-                            const Gdiplus::Pen aPen(aColor, 1.0);
+                            const boost::shared_ptr< Gdiplus::GraphicsPath > aPath(getBufferedGdiPlusGraphicsPathFromB2DPolygon(rPolygon));
 
-                            getGraphics().DrawPath(&aPen, aPath.get());
+                            if(aPath.get())
+                            {
+                                const basegfx::BColor aBColor(getBColorModifierStack().getModifiedColor(rPolygonHairlinePrimitive2D.getBColor()));
+                                const Gdiplus::Color aColor(BYTE(aBColor.getRed() * 255.0), BYTE(aBColor.getGreen() * 255.0), BYTE(aBColor.getBlue() * 255.0));
+                                const Gdiplus::Pen aPen(aColor, 1.0);
+
+                                getGraphics().DrawPath(&aPen, aPath.get());
+                            }
                         }
                     }
 
@@ -244,15 +250,20 @@ namespace drawinglayer
 
                     if(rPolyPolygon.count())
                     {
-                        const boost::shared_ptr< Gdiplus::GraphicsPath > aPath(getBufferedGdiPlusGraphicsPathFromB2DPolyPolygon(rPolyPolygon));
+                        const basegfx::B2DRange aRange(rPolyPolygonColorPrimitive2D.getB2DRange(getViewInformation2D()));
 
-                        if(aPath.get())
+                        if(isVisible(getGraphics(), aRange))
                         {
-                            const basegfx::BColor aBColor(getBColorModifierStack().getModifiedColor(rPolyPolygonColorPrimitive2D.getBColor()));
-                            const Gdiplus::Color aColor(BYTE(aBColor.getRed() * 255.0), BYTE(aBColor.getGreen() * 255.0), BYTE(aBColor.getBlue() * 255.0));
-                            const Gdiplus::SolidBrush aBrush(aColor);
+                            const boost::shared_ptr< Gdiplus::GraphicsPath > aPath(getBufferedGdiPlusGraphicsPathFromB2DPolyPolygon(rPolyPolygon));
 
-                            getGraphics().FillPath(&aBrush, aPath.get());
+                            if(aPath.get())
+                            {
+                                const basegfx::BColor aBColor(getBColorModifierStack().getModifiedColor(rPolyPolygonColorPrimitive2D.getBColor()));
+                                const Gdiplus::Color aColor(BYTE(aBColor.getRed() * 255.0), BYTE(aBColor.getGreen() * 255.0), BYTE(aBColor.getBlue() * 255.0));
+                                const Gdiplus::SolidBrush aBrush(aColor);
+
+                                getGraphics().FillPath(&aBrush, aPath.get());
+                            }
                         }
                     }
                     break;
@@ -262,16 +273,218 @@ namespace drawinglayer
                 case PRIMITIVE2D_ID_TRANSPARENCEPRIMITIVE2D:
                 {
                     const primitive2d::TransparencePrimitive2D& rTransparencePrimitive2D = static_cast< const primitive2d::TransparencePrimitive2D& >(rCandidate);
+
+                    if(rTransparencePrimitive2D.getTransparence().hasElements())
+                    {
+                        basegfx::B2DRange aRange(rTransparencePrimitive2D.getB2DRange(getViewInformation2D()));
+
+                        if(isVisible(getGraphics(), aRange))
+                        {
+                            const sal_uInt32 nFullWidth(mrOutDev.GetOutputSizePixel().Width());
+                            const sal_uInt32 nFullHeight(mrOutDev.GetOutputSizePixel().Height());
+
+                            aRange.transform(getCurrentTransformation());
+                            aRange.intersect(basegfx::B2DRange(0.0, 0.0, nFullWidth, nFullHeight));
+
+                            if(!aRange.isEmpty())
+                            {
+                                // prepare bitmap and graphics for child content
+                                const sal_uInt32 nLeft(floor(aRange.getMinX()));
+                                const sal_uInt32 nTop(floor(aRange.getMinY()));
+                                const sal_uInt32 nRight(ceil(aRange.getMaxX()));
+                                const sal_uInt32 nBottom(ceil(aRange.getMaxY()));
+                                const sal_uInt32 nWidth(nRight - nLeft);
+                                const sal_uInt32 nHeight(nBottom - nTop);
+                                Gdiplus::Bitmap aBitmap(nWidth, nHeight, PixelFormat32bppRGB);
+                                Gdiplus::Graphics aBitmapGraphics(&aBitmap);
+
+                                // create new transformation
+                                const basegfx::B2DHomMatrix aLastCurrentTransformation(getCurrentTransformation());
+                                basegfx::B2DHomMatrix aNewTransformation(aLastCurrentTransformation);
+                                aNewTransformation.translate(nLeft * -1.0, nTop * -1.0);
+                                setCurrentTransformation(aNewTransformation);
+
+                                // set clipping, AntiAliasing and transformation
+                                aBitmapGraphics.SetClip(&getGraphics(), Gdiplus::CombineModeReplace);
+                                setAntialiasing(aBitmapGraphics, getOptionsDrawinglayer().IsAntiAliasing());
+                                setMatrix(aBitmapGraphics, getCurrentTransformation());
+
+                                // make the Bitmap the graphics target
+                                Gdiplus::Graphics* pOriginal = mpGraphics;
+                                mpGraphics = &aBitmapGraphics;
+
+                                // do process children
+                                process(rTransparencePrimitive2D.getChildren());
+
+                                // restore last target
+                                mpGraphics = pOriginal;
+
+                                // create bitmap and graphics for alpha
+                                Gdiplus::Bitmap aAlphaBitmap(nWidth, nHeight, PixelFormat32bppRGB);
+                                Gdiplus::Graphics aAlphaBitmapGraphics(&aAlphaBitmap);
+
+                                // set clipping, AntiAliasing and transformation
+                                aAlphaBitmapGraphics.SetClip(&getGraphics(), Gdiplus::CombineModeReplace);
+                                setAntialiasing(aAlphaBitmapGraphics, getOptionsDrawinglayer().IsAntiAliasing());
+                                setMatrix(aAlphaBitmapGraphics, getCurrentTransformation());
+                                
+                                // make the Bitmap the graphics target
+                                mpGraphics = &aAlphaBitmapGraphics;
+
+                                // activate gray mode
+                                //const basegfx::BColorModifier aGrayModifier(
+                                //    basegfx::BColor(), 
+                                //    0.5, 
+                                //    basegfx::BCOLORMODIFYMODE_GRAY);
+                                //getBColorModifierStack().push(aGrayModifier);
+
+                                // do process children
+                                process(rTransparencePrimitive2D.getTransparence());
+
+                                // deactivate gray mode
+                                //getBColorModifierStack().pop();
+
+                                // restore last target
+                                mpGraphics = pOriginal;
+
+                                // restore transformations
+                                setCurrentTransformation(aLastCurrentTransformation);
+
+                                if(false)
+                                {
+                                    // flush to ensure results
+                                    aBitmapGraphics.Flush(Gdiplus::FlushIntentionSync);
+                                    aAlphaBitmapGraphics.Flush(Gdiplus::FlushIntentionSync);
+
+                                    // copy aAlphaBitmap content as alpha to aBitmapGraphics
+                                    Gdiplus::ImageAttributes aImageAttributes;
+                                    const Gdiplus::REAL aWeight(1.0f / 3.0f);
+                                    const Gdiplus::ColorMatrix colorMatrix = {
+                                       0.0f, 0.0f, 0.0f, aWeight, 0.0f,
+                                       0.0f, 0.0f, 0.0f, aWeight, 0.0f,
+                                       0.0f, 0.0f, 0.0f, aWeight, 0.0f,
+                                       0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+                                       0.0f, 0.0f, 0.0f, 0.0f, 1.0f};
+
+                                    aImageAttributes.SetColorMatrix(
+                                        &colorMatrix,
+                                        Gdiplus::ColorMatrixFlagsDefault,
+                                        Gdiplus::ColorAdjustTypeDefault);
+                                    setMatrix(aBitmapGraphics, basegfx::B2DHomMatrix());
+                                    aBitmapGraphics.SetCompositingMode(Gdiplus::CompositingModeSourceCopy);
+                                    aBitmapGraphics.DrawImage(
+                                        &aAlphaBitmap,
+                                        Gdiplus::Rect(0, 0, nWidth, nHeight),
+                                        0, 0, nWidth, nHeight,
+                                        Gdiplus::UnitPixel,
+                                        &aImageAttributes);
+                                }
+                                else
+                                {
+                                    // mix aAlphaBitmap's colors as alpha channel to aBitmap
+                                    Gdiplus::Color aColor;
+                                    Gdiplus::Color aAlphaColor;
+                                    static bool bDoCopy(true);
+                                    
+                                    if(bDoCopy)
+                                    {
+                                        for(INT y(0); y < nHeight; y++)
+                                        {
+                                            for(INT x(0); x < nWidth; x++)
+                                            {
+                                                aBitmap.GetPixel(x, y, &aColor);
+                                                //const sal_uInt16 aAlphaA(aColor.GetAlpha());
+                                                //
+                                                //if(aAlphaA)
+                                                //{
+                                                    aAlphaBitmap.GetPixel(x, y, &aAlphaColor);
+                                                    sal_uInt16 aAlpha((
+                                                        (aAlphaColor.GetRed() * 77) + 
+                                                        (aAlphaColor.GetGreen() * 151) + 
+                                                        (aAlphaColor.GetBlue() * 28)) >> 8);
+
+                                                //    if(0xff != aAlphaA)
+                                                //    {
+                                                //        aAlpha = 256 - (((256 - aAlpha) * (256 - aAlphaA)) >> 8);
+                                                //    }
+
+                                                    aBitmap.SetPixel(
+                                                        x, 
+                                                        y, 
+                                                        Gdiplus::Color(
+                                                            aAlpha, 
+                                                            aColor.GetRed(), 
+                                                            aColor.GetGreen(), 
+                                                            aColor.GetBlue()));
+                                                //}
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // copy content
+                                setMatrix(getGraphics(), basegfx::B2DHomMatrix());
+                                getGraphics().DrawImage(
+                                    &aBitmap, 
+                                    INT(nLeft), 
+                                    INT(nTop), 
+                                    INT(aBitmap.GetWidth()), 
+                                    INT(aBitmap.GetHeight()));
+                                setMatrix(getGraphics(), getCurrentTransformation());
+                            }
+                        }
+                    }
+
                     break;
                 }
                 case PRIMITIVE2D_ID_INVERTPRIMITIVE2D:
                 {
                     const primitive2d::InvertPrimitive2D& rInvertPrimitive2D = static_cast< const primitive2d::InvertPrimitive2D& >(rCandidate);
+                    basegfx::B2DRange aRange(rInvertPrimitive2D.getB2DRange(getViewInformation2D()));
+
+                    if(isVisible(getGraphics(), aRange))
+                    {
+                        aRange.transform(getCurrentTransformation());
+                    }
+
                     break;
                 }
                 case PRIMITIVE2D_ID_MASKPRIMITIVE2D:
                 {
                     const primitive2d::MaskPrimitive2D& rMaskPrimitive2D = static_cast< const primitive2d::MaskPrimitive2D& >(rCandidate);
+
+                    if(rMaskPrimitive2D.getChildren().hasElements())
+                    {
+                        const basegfx::B2DPolyPolygon& rMask = rMaskPrimitive2D.getMask();
+
+                        if(rMask.count())
+                        {
+                            const basegfx::B2DRange aRange(rMaskPrimitive2D.getB2DRange(getViewInformation2D()));
+
+                            if(isVisible(getGraphics(), aRange))
+                            {
+                                const boost::shared_ptr< Gdiplus::GraphicsPath > aMaskPath(getBufferedGdiPlusGraphicsPathFromB2DPolyPolygon(rMask));
+
+                                if(aMaskPath.get())
+                                {
+                                    // save current clip region
+                                    const Gdiplus::GraphicsState aState = getGraphics().Save();
+
+                                    // add clip to current
+                                    getGraphics().SetClip(
+                                        aMaskPath.get(),
+                                        Gdiplus::CombineModeIntersect);
+
+                                    // do process children
+                                    process(rMaskPrimitive2D.getChildren());
+
+                                    // restore clip region
+                                    getGraphics().Restore(aState);
+                                }
+                            }
+                        }
+                    }
+
                     break;
                 }
                 case PRIMITIVE2D_ID_MODIFIEDCOLORPRIMITIVE2D:

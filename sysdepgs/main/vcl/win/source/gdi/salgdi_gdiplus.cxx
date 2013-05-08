@@ -59,13 +59,15 @@
 #include <impbmp.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
-
+// cached entry for a Gdiplus::Bitmap which may be constructed from a single
+// WinSalBitmap or two (when transparence is used). This class should only
+// be used by GdiPlusObjectBuffer
 class GdiPlusBitmapBufferNode : public basegfx::cache::node
 {
 private:
     boost::shared_ptr< Gdiplus::Bitmap >       maGdiPlusBitmapPtr;
 
-protected:
+    // conversion helpers
     Gdiplus::Bitmap* createGdiPlusBitmap(const WinSalBitmap& rBitmapSource);
     Gdiplus::Bitmap* createGdiPlusBitmap(const WinSalBitmap& rBitmapSource, const WinSalBitmap& rAlphaSource);
 
@@ -80,13 +82,15 @@ public:
 };
 
 //////////////////////////////////////////////////////////////////////////////
-
+// cached entry for Gdiplus::GraphicsPath which may be constructed from a
+// basegfx::B2DPolyPolygon or basegfx::B2DPolygon. This class should only
+// be used by GdiPlusObjectBuffer
 class GdiPlusGraphicsPathBufferNode : public basegfx::cache::node
 {
 private:
     boost::shared_ptr< Gdiplus::GraphicsPath >       maGdiPlusGraphicsPathPtr;
 
-protected:
+    // conversion helpers
     Gdiplus::GraphicsPath* createGdiPlusGraphicsPath(const basegfx::B2DPolygon& rSource);
     Gdiplus::GraphicsPath* createGdiPlusGraphicsPath(const basegfx::B2DPolyPolygon& rSource);
 
@@ -105,7 +109,7 @@ public:
 //////////////////////////////////////////////////////////////////////////////
 
 GdiPlusObjectBuffer::GdiPlusObjectBuffer()
-:   basegfx::cache::cmanager(30), // keep for 30 seconds
+:   basegfx::cache::manager(30), // keep for 30 lifetime rounds
     Timer()
 {
     SetTimeout(1000); // one second
@@ -198,7 +202,10 @@ void GdiPlusObjectBuffer::onFilled()
 
 void GdiPlusObjectBuffer::Timeout()
 {
-    trigger();
+    if(!empty())
+    {
+        trigger();
+    }
 
     if(!empty())
     {

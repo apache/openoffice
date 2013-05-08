@@ -97,6 +97,7 @@ namespace drawinglayer
             // tooling
             void pushOutputDevice(OutputDevice& rNew);
             void popOutputDevice();
+            OutputDevice* getInitialOutputDevice() const { if(mnOutputDevices.empty()) return 0; return mnOutputDevices[0]; }
             OutputDevice& getOutputDevice() const { OSL_ENSURE(0 != mpOutputDevice, "0 == mpOutputDevice (!)"); return *mpOutputDevice; }
 
             // access to transformation stack

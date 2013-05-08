@@ -93,10 +93,19 @@ namespace drawinglayer
 		VclPixelProcessor2D::~VclPixelProcessor2D()
 		{
             // restore MapMode
-   			getOutputDevice().Pop();
+            OutputDevice* pOriginalDevice = getInitialOutputDevice();
 
-            // restore AntiAliasing
-            getOutputDevice().SetAntialiasing(getOutputDevice().GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
+            if(pOriginalDevice)
+            {
+                pOriginalDevice->Pop();
+
+                // restore AntiAliasing
+                pOriginalDevice->SetAntialiasing(getOutputDevice().GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
+            }
+            else
+            {
+                OSL_ENSURE(false, "OOps, no initial OutputDevice (!)");
+            }
 		}
 
 		void VclPixelProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate)

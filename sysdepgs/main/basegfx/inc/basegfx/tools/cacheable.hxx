@@ -31,17 +31,24 @@ namespace basegfx
 {
     namespace cache
     {
-        // helper class to allow caching of a c++ object with tooling. To
+        // Helper class to allow caching of a c++ object with tooling. To
         // be able to use this, the object you want to cache needs to be derived 
         // from this tooling class. It just adds a pointer for managing purposes,
         // but needs no virtuality and only this include file. For more info on how 
-        // to cache these objects, see the coc::cmanager and node
-        // clases in the same namespace (normally in the file coc_manager.hxx in 
-        // the same dir as this file)
+        // to cache these objects, see the coc::cmanager and node clases in the same 
+        // namespace.
+        // To use cached instances of this class, ask your manager class derived from
+        // the 'manager' class of this namespace for an entry, it will then either have
+        // an instance or construct one and add it to the manager.
+        // You may still incarnate instances yourself without a manager, these will just
+        // not get cached (and there is currently no way to add them to caching after
+        // incarnation).
+        // The default constructor/destructor will do the needed handling, so an instance
+        // can just be deleted, independent of being cached or not.
         class cacheable
         {
         private:
-            friend class cmanager;
+            friend class manager;
             friend class node;
 
             // the managing data node
@@ -52,8 +59,8 @@ namespace basegfx
             const node* getNode() const { return mpNode; }
 
         protected:
-            // call this always when the original data changes, will remove
-            // all evtl. cached instances
+            // this needs always to be called when the original data changes, it will remove
+            // all evtl. cached instances from the manager
             void onChange() { if(mpNode) delete mpNode; mpNode = 0; }
 
         public:
