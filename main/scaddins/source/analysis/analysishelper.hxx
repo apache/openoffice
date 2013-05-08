@@ -43,7 +43,6 @@
 #endif
 
 #include <boost/tr1/complex.hpp>
-using namespace boost::math;
 #ifndef double_complex
 typedef std::complex<double>		double_complex;
 #endif
