@@ -99,7 +99,7 @@ private:
     int                     mnWidth;
     int                     mnHeight;
 
-    long                    mnVersion;
+    int                     mnVersion;
     oslCondition            maSizeCondition;
 };
 
