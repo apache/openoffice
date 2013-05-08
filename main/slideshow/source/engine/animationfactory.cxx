@@ -603,7 +603,7 @@ namespace slideshow
             {
                 return ::boost::shared_ptr< AnimationBase >( 
                     new GenericAnimation< AnimationBase, 
-                    					  ::std::identity< typename AnimationBase::ValueType > >( 
+                                              std::identity< typename AnimationBase::ValueType > >( 
                                               rShapeManager,
                                               nFlags,
                                               pIsValid,
@@ -611,8 +611,8 @@ namespace slideshow
                                               pGetValue,
                                               pSetValue,
                                               // no modification necessary, use identity functor here
-                                              ::std::identity< typename AnimationBase::ValueType >(),
-                                              ::std::identity< typename AnimationBase::ValueType >() ) );
+                                              std::identity< typename AnimationBase::ValueType >(),
+                                              std::identity< typename AnimationBase::ValueType >()));
             }
 
             class Scaler
