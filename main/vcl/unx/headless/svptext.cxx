@@ -338,7 +338,7 @@ bool SvpSalGraphics::AddTempDevFont( ImplDevFontList*,
 sal_Bool SvpSalGraphics::CreateFontSubset(
     const rtl::OUString& rToFile,
     const ImplFontData* pFont,
-    sal_Int32* pGlyphIDs,
+    sal_GlyphId* pGlyphIDs,
     sal_uInt8* pEncoding,
     sal_Int32* pWidths,
     int nGlyphCount,

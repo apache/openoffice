@@ -358,7 +358,7 @@ class SubsetterContext
 public:
 	virtual ~SubsetterContext( void);
 	virtual bool emitAsType1( class Type1Emitter&,
-				const long* pGlyphIDs, const U8* pEncoding,
+				const sal_GlyphId* pGlyphIDs, const U8* pEncoding,
 				GlyphWidth* pGlyphWidths, int nGlyphCount, FontSubsetInfo& ) = 0;
 };
 
@@ -383,7 +383,7 @@ public:
 
 	void	initialCffRead( void);
 	bool	emitAsType1( class Type1Emitter&,
-				const long* pGlyphIDs, const U8* pEncoding,
+				const sal_GlyphId* pGlyphIDs, const U8* pEncoding,
 				GlyphWidth* pGlyphWidths, int nGlyphCount, FontSubsetInfo& );
 
 	// used by charstring converter
@@ -425,7 +425,7 @@ private:
 	const char*	getString( int nStringID);
 	int			getFDSelect( int nGlyphIndex) const;
 	int			getGlyphSID( int nGlyphIndex) const;
-	const char* getGlyphName( int nGlyphIndex);
+	const char* getGlyphName( sal_GlyphId nGlyphIndex);
 
 	void	read2push( void);
 	void	pop2write( void);
@@ -1840,7 +1840,7 @@ int CffSubsetterContext::getGlyphSID( int nGlyphIndex) const
 // --------------------------------------------------------------------
 
 // NOTE: the result becomes invalid with the next call to this method
-const char* CffSubsetterContext::getGlyphName( int nGlyphIndex)
+const char* CffSubsetterContext::getGlyphName( sal_GlyphId nGlyphIndex)
 {
 	// the first glyph is always the .notdef glyph
 	const char* pGlyphName = ".notdef";
@@ -2081,7 +2081,7 @@ void Type1Emitter::emitValVector( const char* pLineHead, const char* pLineTail,
 // --------------------------------------------------------------------
 
 bool CffSubsetterContext::emitAsType1( Type1Emitter& rEmitter,
-	const long* pReqGlyphIDs, const U8* pReqEncoding,
+	const sal_GlyphId* pReqGlyphIDs, const U8* pReqEncoding,
 	GlyphWidth* pGlyphWidths, int nGlyphCount, FontSubsetInfo& rFSInfo)
 {
 	// prepare some fontdirectory details

@@ -104,7 +104,7 @@ public:
     virtual bool			AddTempDevFont( ImplDevFontList*, const String& rFileURL, const String& rFontName );
     virtual sal_Bool			CreateFontSubset( const rtl::OUString& rToFile,
                                               const ImplFontData*,
-                                              sal_Int32* pGlyphIDs,
+                                              sal_GlyphId* pGlyphIDs,
                                               sal_uInt8* pEncoding,
                                               sal_Int32* pWidths,
                                               int nGlyphs,

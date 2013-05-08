@@ -136,9 +136,9 @@ static const struct ExceptionalKey
 
 static AquaSalFrame* getMouseContainerFrame()
 {
-    int nWindows = 0;
+    NSInteger nWindows = 0;
     NSCountWindows( &nWindows );
-    int* pWindows = (int*)alloca( nWindows * sizeof(int) );
+    NSInteger* pWindows = (NSInteger*)alloca( nWindows * sizeof(NSInteger) );
     // note: NSWindowList is supposed to be in z-order front to back
     NSWindowList( nWindows, pWindows );
     AquaSalFrame* pDispatchFrame = NULL;
@@ -162,6 +162,7 @@ static AquaSalFrame* getMouseContainerFrame()
     NSWindow* pNSWindow = [super initWithContentRect: aRect styleMask: mpFrame->getStyleMask() backing: NSBackingStoreBuffered defer: NO ];
     [pNSWindow useOptimizedDrawing: YES]; // OSX recommendation when there are no overlapping subviews within the receiver
 
+try {
     // enable OSX>=10.7 fullscreen options if available and useful
     bool bAllowFullScreen = (0 == (mpFrame->mnStyle & (SAL_FRAME_STYLE_DIALOG | SAL_FRAME_STYLE_TOOLTIP | SAL_FRAME_STYLE_SYSTEMCHILD | SAL_FRAME_STYLE_FLOAT | SAL_FRAME_STYLE_TOOLWINDOW | SAL_FRAME_STYLE_INTRO)));
     bAllowFullScreen &= (0 == (~mpFrame->mnStyle & (SAL_FRAME_STYLE_SIZEABLE)));
@@ -169,16 +170,21 @@ static AquaSalFrame* getMouseContainerFrame()
     const SEL setCollectionBehavior = @selector(setCollectionBehavior:);
     if( bAllowFullScreen && [pNSWindow respondsToSelector: setCollectionBehavior])
     {
-        NSNumber* bMode = [NSNumber numberWithInt:(bAllowFullScreen ? NSWindowCollectionBehaviorFullScreenPrimary : NSWindowCollectionBehaviorFullScreenAuxiliary)];
-        [pNSWindow performSelector:setCollectionBehavior withObject:bMode];
+        int bMode=(bAllowFullScreen ? NSWindowCollectionBehaviorFullScreenPrimary : NSWindowCollectionBehaviorFullScreenAuxiliary);
+        [pNSWindow performSelector:setCollectionBehavior withObject:(id)bMode];
     }
 
     // disable OSX>=10.7 window restoration until we support it directly
     const SEL setRestorable = @selector(setRestorable:);
     if( [pNSWindow respondsToSelector: setRestorable]) {
-        NSNumber* bNO = [NSNumber numberWithBool:NO];
-        [pNSWindow performSelector:setRestorable withObject:bNO];
+//        NSNumber* bNO = [NSNumber numberWithBool:NO];
+        [pNSWindow performSelector:setRestorable withObject:(id)NO];
     }
+}
+catch(NSException* e)
+{
+    fprintf(stderr,"NSException: \"%s\"\n",[[e reason] UTF8String]);//######
+}
 
     return pNSWindow;
 }
@@ -1637,7 +1643,7 @@ private:
     return nil;
 }
 
-- (unsigned int)characterIndexForPoint:(NSPoint)thePoint
+- (NSUInteger)characterIndexForPoint:(NSPoint)thePoint
 {
     (void)thePoint;
     // FIXME
@@ -1699,7 +1705,7 @@ private:
 }
 
 -(id)parentAttribute {
-    return (NSView *) mpFrame -> mpWindow;
+    return (NSView *) mpFrame -> mpNSWindow;
 }
 
 -(::com::sun::star::accessibility::XAccessibleContext *)accessibleContext
@@ -1719,7 +1725,7 @@ private:
 
 -(NSView *)viewElementForParent
 {
-    return (NSView *) mpFrame -> mpWindow;
+    return (NSView *) mpFrame -> mpNSWindow;
 }
 
 -(void)registerMouseEventListener: (id)theListener

@@ -1194,7 +1194,7 @@ int FreetypeServerFont::GetRawGlyphIndex( sal_UCS4 aChar ) const
         sal_Size nTempSize;
         sal_uInt32 nCvtInfo;
 
-        // assume that modern UCS4 fonts have unicode CMAPs
+        // assume that modern UTF32 fonts have unicode CMAPs
 	// => no encoding remapping to unicode is needed
         if( aChar > 0xFFFF )
             return 0;

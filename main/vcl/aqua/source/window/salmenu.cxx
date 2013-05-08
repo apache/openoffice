@@ -255,7 +255,7 @@ AquaSalMenu::AquaSalMenu( bool bMenuBar ) :
     if( ! mbMenuBar )
     {
         mpMenu = [[SalNSMenu alloc] initWithMenu: this];
-        [mpMenu setDelegate: mpMenu];
+        [mpMenu setDelegate:(id<NSMenuDelegate>)mpMenu];
     }
     else
     {
@@ -351,9 +351,9 @@ bool AquaSalMenu::ShowNativePopupMenu(FloatingWindow * pWin, const Rectangle& rR
 
     // get the pointers
     AquaSalFrame * pParentAquaSalFrame = (AquaSalFrame *) pWin->ImplGetWindowImpl()->mpRealParent->ImplGetFrame();
-    NSWindow * pParentNSWindow = pParentAquaSalFrame->mpWindow;
+    NSWindow * pParentNSWindow = pParentAquaSalFrame->mpNSWindow;
     NSView * pParentNSView = [pParentNSWindow contentView];
-    NSView * pPopupNSView = ((AquaSalFrame *) pWin->ImplGetWindow()->ImplGetFrame())->mpView;
+    NSView * pPopupNSView = ((AquaSalFrame *) pWin->ImplGetWindow()->ImplGetFrame())->mpNSView;
     NSRect popupFrame = [pPopupNSView frame];
     
     // since we manipulate the menu below (removing entries)

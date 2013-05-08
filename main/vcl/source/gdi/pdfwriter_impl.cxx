@@ -3155,7 +3155,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitSystemFont( const ImplFontDa
         
         OUString aTmpName;
         osl_createTempFile( NULL, NULL, &aTmpName.pData );
-        sal_Int32 pGlyphIDs[ 256 ];
+        sal_GlyphId pGlyphIDs[ 256 ];
         sal_uInt8 pEncoding[ 256 ];
         sal_Ucs   pUnicodes[ 256 ];
         sal_Int32 pDuWidths[ 256 ];
@@ -4051,7 +4051,7 @@ bool PDFWriterImpl::emitFonts()
     {
         for( FontEmitList::iterator lit = it->second.m_aSubsets.begin(); lit != it->second.m_aSubsets.end(); ++lit )
         {
-            sal_Int32 pGlyphIDs[ 256 ];
+            sal_GlyphId pGlyphIDs[ 256 ];
             sal_Int32 pWidths[ 256 ];
             sal_uInt8 pEncoding[ 256 ];
             sal_Int32 pEncToUnicodeIndex[ 256 ];

@@ -3626,7 +3626,7 @@ bool PrintFontManager::createFontSubset(
                                         FontSubsetInfo& rInfo,
                                         fontID nFont,
                                         const OUString& rOutFile,
-                                        sal_Int32* pGlyphIDs,
+                                        sal_GlyphId* pGlyphIDs,
                                         sal_uInt8* pNewEncoding,
                                         sal_Int32* pWidths,
                                         int nGlyphs,

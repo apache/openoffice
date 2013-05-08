@@ -233,7 +233,7 @@ public:
     // public SalGraphics methods, the interface to teh independent vcl part
 
     // get device resolution
-    virtual void			GetResolution( long& rDPIX, long& rDPIY );
+    virtual void			GetResolution( sal_Int32& rDPIX, sal_Int32& rDPIY );
     // get the depth of the device
     virtual USHORT			GetBitCount();
     // get the width of the device
@@ -288,7 +288,7 @@ public:
     // as "undefined character"
     virtual sal_Bool			CreateFontSubset( const rtl::OUString& rToFile,
                                               const ImplFontData* pFont,
-                                              long* pGlyphIDs,
+                                              sal_GlyphId* pGlyphIDs,
                                               sal_uInt8* pEncoding,
                                               sal_Int32* pWidths,
                                               int nGlyphs,

@@ -466,9 +466,9 @@
     for( std::list< AquaSalFrame* >::const_iterator it = pSalData->maPresentationFrames.begin();
          it != pSalData->maPresentationFrames.end(); ++it )
     {
-        [(*it)->mpWindow setLevel: NSPopUpMenuWindowLevel];
-        if( [(*it)->mpWindow isVisible] )
-            [(*it)->mpWindow orderFront: NSApp];
+        [(*it)->mpNSWindow setLevel: NSPopUpMenuWindowLevel];
+        if( [(*it)->mpNSWindow isVisible] )
+            [(*it)->mpNSWindow orderFront: NSApp];
     }
 }
 
@@ -492,7 +492,7 @@
     for( std::list< AquaSalFrame* >::const_iterator it = pSalData->maPresentationFrames.begin();
          it != pSalData->maPresentationFrames.end(); ++it )
     {
-        [(*it)->mpWindow setLevel: NSNormalWindowLevel];
+        [(*it)->mpNSWindow setLevel: NSNormalWindowLevel];
     }
 }
 

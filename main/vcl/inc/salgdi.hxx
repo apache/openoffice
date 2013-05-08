@@ -32,6 +32,7 @@
 #include "vos/thread.hxx"
 #include "vcl/outdev.hxx"
 #include "vcl/salnativewidgets.hxx"
+#include "sallayout.hxx"
 
 #include <map>
 
@@ -42,8 +43,6 @@ class ImplFontMetricData;
 struct ImplKernPairData;
 class ImplFontData;
 class ImplFontCharMap;
-class SalLayout;
-class ImplLayoutArgs;
 class Rectangle;
 class FontSubsetInfo;
 class OutputDevice;
@@ -264,7 +263,7 @@ public:
     // as "undefined character"
     virtual sal_Bool			CreateFontSubset( const rtl::OUString& rToFile,
                                               const ImplFontData* pFont,
-                                              sal_Int32* pGlyphIDs,
+                                              sal_GlyphId* pGlyphIDs,
                                               sal_uInt8* pEncoding,
                                               sal_Int32* pWidths,
                                               int nGlyphs,

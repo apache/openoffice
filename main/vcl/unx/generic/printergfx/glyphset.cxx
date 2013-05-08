@@ -814,7 +814,7 @@ static void CreatePSUploadableFont( TrueTypeFont* pSrcFont, FILE* pTmpFile,
     std::stable_sort( aSorted.begin(), aSorted.end() );
     
     std::vector< sal_uChar > aEncoding( nGlyphCount );
-    std::vector< long > aRequestedGlyphs( nGlyphCount );
+    std::vector< sal_GlyphId > aRequestedGlyphs( nGlyphCount );
 
     for( int i = 0; i < nGlyphCount; i++ )
     {

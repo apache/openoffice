@@ -1328,7 +1328,7 @@ SystemFontData X11SalGraphics::GetSysFontData( int nFallbacklevel ) const
 sal_Bool X11SalGraphics::CreateFontSubset(
                                    const rtl::OUString& rToFile,
                                    const ImplFontData* pFont,
-                                   sal_Int32* pGlyphIDs,
+                                   sal_GlyphId* pGlyphIDs,
                                    sal_uInt8* pEncoding,
                                    sal_Int32* pWidths,
                                    int nGlyphCount,
