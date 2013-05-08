@@ -22,54 +22,75 @@
 #ifndef SYSTEM_STL_HASHMAP
 #define SYSTEM_STL_HASHMAP
 
-#ifdef GCC
+#ifdef HAVE_STL_INCLUDE_PATH
+	// TODO: use computed include file name
+	#include_next <unordered_map>
+#else // fall back to boost/tr1
+	#include <boost/tr1/unordered_map.hpp>
+	#undef TR1_NS
+	#define TR1_NS std::tr1
+#endif
 
-# include <functional>
 
-# define _BACKWARD_BACKWARD_WARNING_H 1
-# include <ext/hash_map>
-# undef _BACKWARD_BACKWARD_WARNING_H
-
-namespace __gnu_cxx
-{
-    template<> struct hash < std::string >
-    {
-        size_t operator()(const std::string & x) const
-        {
-            return hash< const char* >()(x.c_str());
-        }
-    };
-
-    template<> struct hash< long long int >
-    { 
-        size_t operator()(long long int __x) const 
-        { 
-            return __x; 
-        } 
-    };
-
-    template<> struct hash< unsigned long long int >
-    { 
-        size_t operator()(unsigned long long int __x) const 
-        { 
-            return __x; 
-        } 
-    };
-}
+#ifndef NO_STLPORT4_EMULATION
 
 namespace std
 {
-# ifndef __GXX_EXPERIMENTAL_CXX0X__
-	using __gnu_cxx::hash;
-# endif
-	using __gnu_cxx::hash_map;
-	using __gnu_cxx::hash_multimap;
-}
-
-#else
-# error UNSUPPORTED COMPILER
+#ifdef TR1_NS
+using TR1_NS::hash;
+using TR1_NS::unordered_map;
+using TR1_NS::unordered_multimap;
 #endif
 
+template<
+	typename K,
+	typename T,
+	typename H = hash<K>,
+	typename E = equal_to<K>,
+	typename A = allocator<pair<K,T> > >
+class hash_map
+:	public unordered_map<K,T,H,E,A>
+{
+public:
+	typedef unordered_map<K,T,H,E,A> _super;
+	typedef typename _super::mapped_type data_type;
+
+	hash_map( void) {}
+	hash_map( size_t n) : _super( n) {}
+	hash_map& operator=( const hash_map& r) { hash_map t(r); _super::swap(t); return *this;} //####################
+
+	void resize( size_t n) { _super::rehash(n); }
+private:
+	// setting the hasher dynamically is not supported in the emulation!
+	hash_map( size_t, const H&, const E& rE=E(), const A& rA=A()); // not implemented
+};
+
+template<
+	typename K,
+	typename T,
+	typename H = hash<K>,
+	typename E = equal_to<K>,
+	typename A = allocator<pair<K,T> > >
+class hash_multimap
+:	public unordered_multimap<K,T,H,E,A>
+{
+public:
+	typedef unordered_multimap<K,T,H,E,A> _super;
+	typedef typename _super::mapped_type data_type;
+
+	hash_multimap( void) {}
+	hash_multimap( size_t n) : _super( n) {}
+	hash_multimap& operator=( const hash_multimap& r) { hash_multimap t(r); _super::swap(t); return *this;}//####################
+
+	void resize( size_t n) { _super::rehash(n); }
+private:
+	// setting the hasher dynamically is not supported in the emulation!
+	hash_multimap( size_t, const H&, const E& rE=E(), const A& rA=A()); // not implemented
+};
+
+} // namespace std
+
+#endif // NO_STLPORT4_EMULATION
 
 #endif
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
+

@@ -22,25 +22,67 @@
 #ifndef SYSTEM_STL_HASHSET
 #define SYSTEM_STL_HASHSET
 
-#ifdef GCC
+#ifdef HAVE_STL_INCLUDE_PATH
+	// TODO: use computed include file name
+	#include_next <unordered_set>
+#else // fall back to boost/tr1
+	#include <boost/tr1/unordered_set.hpp>
+	#undef TR1_NS
+	#define TR1_NS std::tr1
+#endif
 
-# include <functional>
 
-# define _BACKWARD_BACKWARD_WARNING_H 1
-# include <ext/hash_set>
-# undef _BACKWARD_BACKWARD_WARNING_H 
+#ifndef NO_STLPORT4_EMULATION
 
 namespace std
 {
-# ifndef __GXX_EXPERIMENTAL_CXX0X__
-	using __gnu_cxx::hash;
-# endif
-	using __gnu_cxx::hash_set;
-	using __gnu_cxx::hash_multiset;
-}
-#else
-# error UNSUPPORTED COMPILER
-#endif
+#ifdef TR1_NS
+using TR1_NS::hash;
+using TR1_NS::unordered_set;
+using TR1_NS::unordered_multiset;
+#endif // TR1_NS
+
+template<
+	typename K,
+	typename H = hash<K>,
+	typename E = equal_to<K>,
+	typename A = allocator<K> >
+class hash_set
+:	public unordered_set<K,H,E,A>
+{
+	typedef unordered_set<K,H,E,A> _super;
+public:
+	hash_set( void) {}
+	hash_set( size_t n) : _super(n) {}
+	hash_set& operator=(const hash_set& r) { hash_set t(r); _super::swap(t); return *this;};//#################
+	void resize( size_t n) { _super::rehash( n); }
+private:
+	// setting the hasher dynamically is not supported in the emulation!
+	hash_set( size_t, const H&, const E& rE=E(), const A& rA=A()); // not implemented
+};
+
+template<
+	typename K,
+	typename H = hash<K>,
+	typename E = equal_to<K>,
+	typename A = allocator<K> >
+class hash_multiset
+:	public unordered_multiset<K,H,E,A>
+{
+	typedef unordered_multiset<K,H,E,A> _super;
+public:
+	hash_multiset( void) {}
+	hash_multiset( size_t n) : _super( n) {}
+	hash_multiset& operator=(const hash_multiset& r) { hash_multiset t(r); _super::swap(t); return *this;}//#################
+	void resize( size_t n) { _super::rehash( n); }
+private:
+	// setting the hasher dynamically is not supported in the emulation!
+	hash_multiset( size_t, const H&, const E& rE=E(), const A& rA=A()); // not implemented
+};
+
+} // namespace std
+
+#endif // NO_STLPORT4_EMULATION
 
 #endif
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
+
