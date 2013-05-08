@@ -40,10 +40,10 @@ SLOFILES = \
 
 # Disable optimization for cppinterfaceproxy.cxx -
 # attribute constructor / destructor do not get called otherwise.
-.IF "$(COM)" == "GCC"
+#.IF "$(COM)" == "GCC"
 NOOPTFILES = \
     $(SLO)$/cppinterfaceproxy.obj
-.ENDIF
+#.ENDIF
 
 
 .INCLUDE: target.mk

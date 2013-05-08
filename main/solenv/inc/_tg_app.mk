@@ -18,6 +18,16 @@
 #  under the License.
 #  
 # *************************************************************
+
+.IF "$(OS)" != "MACOSX"
+CC_PATH=""
+.ELSE
+CC_PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/"
+# TODO: better use something like
+#    CC_PATH=$(shell dirname $(CC))/
+# instead and taking into account that $(CC) may already contain compiler options
+.ENDIF
+
 # unroll begin
 
 .IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
@@ -44,6 +54,11 @@ APP1RPATH*=OOO
 LINKFLAGSRUNPATH_$(APP1RPATH)*=/ERROR:/Bad_APP1RPATH_value
 .IF "$(OS)" != "MACOSX"
 APP1LINKFLAGS+=$(LINKFLAGSRUNPATH_$(APP1RPATH))
+.ELSE
+CC_PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/"
+# TODO: better use something like
+#    CC_PATH=$(shell dirname $(CC))/
+# instead and taking into account that $(CC) may already contain compiler options
 .ENDIF
 
 .IF "$(APP1STACK)" != ""
@@ -117,8 +132,8 @@ $(APP1TARGETN): $(APP1OBJS) $(APP1LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_1.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP1RPATH) $@
@@ -377,8 +392,8 @@ $(APP2TARGETN): $(APP2OBJS) $(APP2LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_2.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP2RPATH) $@
@@ -637,8 +652,8 @@ $(APP3TARGETN): $(APP3OBJS) $(APP3LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_3.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP3RPATH) $@
@@ -897,8 +912,8 @@ $(APP4TARGETN): $(APP4OBJS) $(APP4LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_4.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP4RPATH) $@
@@ -1157,8 +1172,8 @@ $(APP5TARGETN): $(APP5OBJS) $(APP5LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_5.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP5RPATH) $@
@@ -1417,8 +1432,8 @@ $(APP6TARGETN): $(APP6OBJS) $(APP6LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_6.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP6RPATH) $@
@@ -1677,8 +1692,8 @@ $(APP7TARGETN): $(APP7OBJS) $(APP7LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_7.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP7RPATH) $@
@@ -1937,8 +1952,8 @@ $(APP8TARGETN): $(APP8OBJS) $(APP8LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_8.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP8RPATH) $@
@@ -2197,8 +2212,8 @@ $(APP9TARGETN): $(APP9OBJS) $(APP9LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_9.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP9RPATH) $@
@@ -2457,8 +2472,8 @@ $(APP10TARGETN): $(APP10OBJS) $(APP10LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_10.cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP10RPATH) $@

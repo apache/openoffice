@@ -22,7 +22,8 @@
 
 
 GUI := UNX
-COM := GCC
+COM := CXX
+COMID := cxx
 
 # Darwin mktemp -t expects a prefix, not a pattern
 gb_MKTEMP ?= /usr/bin/mktemp -t gbuild.
@@ -56,19 +57,23 @@ gb_OSDEFS := \
 gb_COMPILERDEFS := \
 	-D$(COM) \
 	-DHAVE_GCC_VISIBILITY_FEATURE \
-	-DCPPU_ENV=gcc3 \
+	-DCPPU_ENV=$(COMID) \
 	-DGXX_INCLUDE_PATH=$(GXX_INCLUDE_PATH) \
 
 ifeq ($(CPUNAME),POWERPC)
 gb_CPUDEFS := -DPOWERPC -DPPC
-else
+else ifeq ($(CPUNAME),INTEL)
 gb_CPUDEFS := -DX86
+else ifeq ($(CPUNAME),X86_64)
+gb_CPUDEFS := -DX86_64
 endif
 
 ifeq ($(strip $(SYSBASE)),)
-gb_SDKDIR := /Developer/SDKs/MacOSX10.4u.sdk
+#SDK_PATH := `xcodebuild -version -sdk macosx$(MACOSX_DEPLOYMENT_TARGET) Path`
+SDK_PATH := /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+gb_SDKDIR := $(SDK_PATH)
 else
-gb_SDKDIR := $(SYSBASE)/MacOSX10.4u.sdk
+gb_SDKDIR := $(SYSBASE)/MacOSX10.7.sdk
 endif
 
 
@@ -86,6 +91,7 @@ gb_CFLAGS := \
 
 gb_CXXFLAGS := \
 	-isysroot $(gb_SDKDIR) \
+	-DHAVE_STL_INCLUDE_PATH -I../v1/ \
 	-Wall \
 	-Wendif-labels \
 	-Wextra \
@@ -96,11 +102,9 @@ gb_CXXFLAGS := \
 	-fno-common \
 	-fno-strict-aliasing \
 	-fsigned-char \
-	-malign-natural \
 	-pipe \
 	#-Wshadow \ break in compiler headers already
 	#-fsigned-char \ might be removed?
-	#-malign-natural \ might be removed?
 
 # these are to get g++ to switch to Objective-C++ mode
 # (see toolkit module for a case where it is necessary to do it this way)
@@ -113,12 +117,11 @@ endif
 
 gb_LinkTarget_EXCEPTIONFLAGS := \
 	-DEXCEPTIONS_ON \
-	-fexceptions \
-	-fno-enforce-eh-specs \
+	-fexceptions
 
 gb_LinkTarget_NOEXCEPTIONFLAGS := \
 	-DEXCEPTIONS_OFF \
-	-fno-exceptions \
+	-fno-exceptions
 
 gb_LinkTarget_LDFLAGS := \
 	-Wl,-syslibroot,$(gb_SDKDIR) \
@@ -300,20 +303,10 @@ gb_Library_TARGETTYPEFLAGS := -dynamiclib -single_module
 gb_Library_SYSPRE := lib
 gb_Library_UNOVERPRE := $(gb_Library_SYSPRE)uno_
 gb_Library_PLAINEXT := .dylib
-gb_Library_RTEXT := gcc3$(gb_Library_PLAINEXT)
-ifeq ($(gb_PRODUCT),$(true))
-gb_Library_STLEXT := port_gcc$(gb_Library_PLAINEXT)
-else
-gb_Library_STLEXT := port_gcc_stldebug$(gb_Library_PLAINEXT)
-endif
+gb_Library_RTEXT := $(COMID)$(gb_Library_PLAINEXT)
 
-ifeq ($(CPUNAME),INTEL)
 gb_Library_OOOEXT := $(gb_Library_PLAINEXT)
 gb_Library_UNOEXT := .uno$(gb_Library_PLAINEXT)
-else # ifeq ($(CPUNAME),POWERPC)
-gb_Library_OOOEXT := $(gb_Library_PLAINEXT)
-gb_Library_UNOEXT := .uno$(gb_Library_PLAINEXT)
-endif
 
 gb_Library__FRAMEWORKS := \
 	Cocoa \

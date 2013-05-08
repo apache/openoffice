@@ -42,10 +42,8 @@ CDEFS+=-DGLIBC=2 -D_PTHREADS -D_REENTRANT -DNO_PTHREAD_PRIORITY $(PROCESSOR_DEFI
 # done in setsolar/configure now. left here for documentation
 #MACOSX_DEPLOYMENT_TARGET=10.7
 #.EXPORT: MACOSX_DEPLOYMENT_TARGET
-CDEFS+=-DQUARTZ
-#SDK_PATH=`xcodebuild -version -sdk macosx$(MACOSX_DEPLOYMENT_TARGET) Path`
-SDK_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
-EXTRA_CDEFS*=-isysroot $(SDK_PATH)
+CDEFS+=-DQUARTZ 
+EXTRA_CDEFS*=-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
 # Name of library where static data members are initialized
 # STATICLIBNAME=static$(DLLPOSTFIX)
@@ -66,7 +64,7 @@ SOLAR_JAVA*=TRUE
 
 # architecture dependent flags for the C and C++ compiler that can be changed by
 # exporting the variable ARCH_FLAGS="..." in the shell, which is used to start build
-ARCH_FLAGS*= -arch i386
+ARCH_FLAGS*=
 
 # Specify the compiler to use.  NOTE:  MacOS X should always specify
 # c++ for C++ compilation as it does certain C++ specific things
@@ -75,18 +73,14 @@ ARCH_FLAGS*= -arch i386
 # cc = C compiler to use
 # objc = Objective C compiler to use
 # objcpp = Objective C++ compiler to use
-CXX*=g++
-CC*=gcc
+CXX*=clang++
+CC*=clang
 objc*=$(CC)
 objcpp*=$(CXX)
 
-EXTRA_CFLAGS=$(ARCH_FLAGS)
+EXTRA_CFLAGS=
 
-.IF "$(COM)"=="GCC"
-    CFLAGS=-fsigned-char -fmessage-length=0 -malign-natural -c $(EXTRA_CFLAGS)
-.ELSE
-    CFLAGS=-fsigned-char -fmessage-length=0 -c $(EXTRA_CFLAGS)
-.ENDIF
+CFLAGS=-fsigned-char -fmessage-length=0 -c $(EXTRA_CFLAGS)
 
 .IF "$(DISABLE_DEPRECATION_WARNING)" == "TRUE"
 CFLAGS+=-Wno-deprecated-declarations
@@ -95,11 +89,7 @@ CFLAGS+=-Wno-deprecated-declarations
 #  Compilation flags
 # ---------------------------------
 # Normal C compilation flags
-.IF "$(COM)"=="GCC"
-    CFLAGSCC=-pipe -fsigned-char -malign-natural $(ARCH_FLAGS)
-.ELSE
-    CFLAGSCC=-pipe -fsigned-char $(ARCH_FLAGS)
-.ENDIF
+CFLAGSCC=-pipe -fsigned-char
 
 # Normal Objective C compilation flags
 #OBJCFLAGS=-no-precomp
@@ -116,13 +106,7 @@ CFLAGSEXCEPTIONS=-fexceptions
 CFLAGS_NO_EXCEPTIONS=-fno-exceptions
 
 # Normal C++ compilation flags
-.IF "$(COM)"=="GCC"
-    CFLAGSEXCEPTIONS+=-fexceptions -fno-enforce-eh-specs
-    CFLAGSCXX=-pipe -malign-natural -fsigned-char -Wno-long-double $(ARCH_FLAGS)
-.ELSE ####
-    CFLAGSEXCEPTIONS+=-fexceptions
-    CFLAGSCXX=-pipe -fsigned-char -Wno-long-double $(ARCH_FLAGS)
-.ENDIF
+CFLAGSCXX=-pipe -std=c++11 -fsigned-char
 
 CFLAGSCXX+= -Wno-ctor-dtor-privacy
 
@@ -156,7 +140,6 @@ CFLAGSNOOPT=-O0
 # -Wshadow does not work for C++ as /usr/include/c++/4.0.0/ext/hashtable.h
 # l. 717 contains a declaration of __cur2 shadowing the declaration at l. 705,
 # in template code for which a #pragma gcc system_header would not work:
-# -Wextra doesn not work for gcc-3.3
 CFLAGSWARNCC=-Wall -Wendif-labels
 CFLAGSWARNCXX=$(CFLAGSWARNCC) -Wno-ctor-dtor-privacy -Wno-non-virtual-dtor
 CFLAGSWALLCC=$(CFLAGSWARNCC)
@@ -168,31 +151,15 @@ CFLAGSWERRCC=-Werror
 # COMPILER_WARN_ERRORS=TRUE here (see settings.mk):
 COMPILER_WARN_ERRORS=TRUE
 
-#special settings form environment
+#special settings from environment
 CDEFS+=$(EXTRA_CDEFS)
 
-STDLIBCPP=-lc++
+# ---------------------------------
+#  STL library names
+# ---------------------------------
 
-# ---------------------------------
-#  STLport library names
-# ---------------------------------
-.IF "$(USE_STLP_DEBUG)" != ""
-.IF "$(STLPORT_VER)" >= "500"
-LIBSTLPORT=-lstlportstlg
-LIBSTLPORTST=$(STATIC) -lstlportstlg
-.ELSE
-LIBSTLPORT=-lstlport_gcc_stldebug
-LIBSTLPORTST=$(SOLARVERSION)/$(INPATH)/lib/libstlport_gcc_stldebug.a
-.ENDIF
-.ELSE # "$(USE_STLP_DEBUG" != ""
-.IF "$(STLPORT_VER)" >= "500"
-LIBSTLPORT=-lstlport
-LIBSTLPORTST=$(STATIC) -lstlport
-.ELSE
-LIBSTLPORT=-lstlport_gcc
-LIBSTLPORTST=$(SOLARVERSION)/$(INPATH)/lib/libstlport_gcc.a
-.ENDIF
-.ENDIF # "$(USE_STLP_DEBUG" != ""
+CDEFS+=-DHAVE_STL_INCLUDE_PATH -I../v1/
+STDLIBCPP=-lc++
 
 # ---------------------------------
 #  Link stage flags
@@ -201,8 +168,10 @@ LIBSTLPORTST=$(SOLARVERSION)/$(INPATH)/lib/libstlport_gcc.a
 LINK*=$(CXX)
 LINKC*=$(CC)
 
+###LINKFLAGSDEFS*=-Wl,-multiply_defined,suppress
 # assure backwards-compatibility
-EXTRA_LINKFLAGS*=$(ARCH_FLAGS) -L$(SDK_PATH)
+###EXTRA_LINKFLAGS*=-Wl,-syslibroot,/Developer/SDKs/MacOSX10.4u.sdk
+EXTRA_LINKFLAGS*=-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 # Very long install_names are needed so that install_name_tool -change later on
 # does not complain that "larger updated load commands do not fit:"
 LINKFLAGSRUNPATH_URELIB=-install_name '@__________________________________________________URELIB/$(@:f)'
@@ -215,8 +184,16 @@ LINKFLAGSRUNPATH_BOXT=
 LINKFLAGSRUNPATH_NONE=-install_name '@__________________________________________________NONE/$(@:f)'
 LINKFLAGS=$(LINKFLAGSDEFS)
 
+# [ed] 5/14/02 If we're building for aqua, add in the objc runtime library into our link line
+.IF "$(GUIBASE)" == "aqua"
+	LINKFLAGS+=-lobjc
+	# Sometimes we still use files that would be in a GUIBASE="unx" specific directory
+	# because they really aren't GUIBASE specific, so we've got to account for that here.
+	INCGUI+= -I$(PRJ)/unx/inc
+.ENDIF
+
 #special settings form environment
-LINKFLAGS+=$(EXTRA_LINKFLAGS) $(ARCH_FLAGS)
+LINKFLAGS+=$(EXTRA_LINKFLAGS)
 
 # Random link flags dealing with different cases of linking
 
@@ -247,11 +224,8 @@ LINKVERSIONMAPFLAG=-Wl,-map -Wl,
 
 SONAME_SWITCH=-Wl,-h
 
-.IF "$(COM)"=="GCC"
-    STDLIBCPP=-stdlib=libc++
-.ELSE
-    STDLIBCPP=-lc++
-.ENDIF
+###    STDLIBCPP=-stdlib=libc++
+STDLIBCPP=-lc++
 
 STDOBJVCL=$(L)/salmain.o
 STDOBJGUI=
@@ -259,10 +233,17 @@ STDSLOGUI=
 STDOBJCUI=
 STDSLOCUI=
 
-STDLIBCUIMT=CPPRUNTIME -lm
-STDLIBGUIMT=-framework Carbon -framework Cocoa -lpthread CPPRUNTIME -lm
-STDSHLCUIMT=-lpthread CPPRUNTIME -lm
-STDSHLGUIMT=-framework Carbon -framework CoreFoundation -framework Cocoa -lpthread CPPRUNTIME -lm -objc
+.IF "$(GUIBASE)" == "aqua"
+	STDLIBCUIMT=CPPRUNTIME -lm
+	STDLIBGUIMT=-framework Carbon -framework Cocoa -lpthread CPPRUNTIME -lm
+	STDSHLCUIMT=-lpthread CPPRUNTIME -lm
+	STDSHLGUIMT=-framework Carbon -framework CoreFoundation -framework Cocoa -lpthread CPPRUNTIME -lm
+.ELSE
+	STDLIBCUIMT= CPPRUNTIME -lm
+	STDLIBGUIMT=-lX11 -lpthread CPPRUNTIME -lm
+	STDSHLCUIMT=-lpthread CPPRUNTIME -lm
+	STDSHLGUIMT=-lX11 -lXext -lpthread CPPRUNTIME -lm -framework CoreFoundation
+.ENDIF
 
 LIBMGR=ar
 LIBFLAGS=-r

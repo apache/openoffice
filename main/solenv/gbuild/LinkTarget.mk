@@ -526,8 +526,8 @@ endif
 endef
 
 define gb_LinkTarget_add_cxxobject
-$(call gb_LinkTarget_get_target,$(1)) : CXXOBJECTS += $(2)
-$(call gb_LinkTarget_get_clean_target,$(1)) : CXXOBJECTS += $(2)
+$(call gb_LinkTarget_get_target,$(1)) : CXXOBJECTS+=$(2)
+$(call gb_LinkTarget_get_clean_target,$(1)) : CXXOBJECTS+=$(2)
 
 $(call gb_LinkTarget_get_target,$(1)) : $(call gb_CxxObject_get_target,$(2))
 $(call gb_CxxObject_get_target,$(2)) : | $(call gb_LinkTarget_get_headers_target,$(1))

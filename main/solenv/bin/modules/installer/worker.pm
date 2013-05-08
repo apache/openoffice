@@ -2259,9 +2259,13 @@ sub get_platform_name
 	{
 		$platformname = "Win32Intel";
 	}
-	elsif ( $installer::globals::compiler =~ /^unxmacxi/ )
+	elsif(( $installer::globals::compiler =~ /^unxmac.i/ ))
 	{
 		$platformname = "MacOSXIntel";
+	}
+	elsif ( $installer::globals::compiler =~ /^unxmaccx/ )
+	{
+		$platformname = "MacOSXX86-64";
 	}
 	elsif ( $installer::globals::compiler =~ /^unxmacxp/ )
 	{

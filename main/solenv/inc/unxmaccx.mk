@@ -19,27 +19,19 @@
 #  
 #**************************************************************
 
+# Mac OSX specific defines
 
+PROCESSOR_DEFINES=-DX86_64
 
-package macosxotoolhelper;
-require Exporter;
-our @ISA = Exporter;
-our @EXPORT = otoolD;
+DLLPOSTFIX=
 
-use File::Basename;
-$::CC_PATH=(fileparse( $ENV{"CC"}))[1];
+# flags to enable build with symbols; required by crashdump feature
+.IF "$(ENABLE_SYMBOLS)"=="SMALL"
+CFLAGSENABLESYMBOLS=-g1
+.ELSE
+CFLAGSENABLESYMBOLS=-g
+.ENDIF
 
-sub otoolD($) {
-    my ($file) = @_;
-    my $call = "otool -D $file";
-    open(IN, "-|", $call) or die "cannot $call";
-    my $line = <IN>;
-    if( $line !~ /^\Q$file\E:\n$/ ) {
-        die "unexpected otool -D output (\"$line\", expecting \"$file:\")";
-    }
-    $line = <IN>;
-    <IN> == undef or die "unexpected otool -D output";
-    close(IN);
-    return $line;
-}
+# Include generic Mac OS X makefile
+.INCLUDE : unxmacc.mk
 

@@ -146,6 +146,10 @@ bool recursivelyFindType(
     // in a specifc order.  In theory, that need not hold for any given
     // platform; in practice, it seems to work well on all supported platforms:
  next:
+#if 1 //###############
+if( !type->ppBaseTypes && type->nBaseTypes!=0)
+    return false; // break here to debug this scenario
+#endif //##############
     for (sal_Int32 i = 0; i < type->nBaseTypes; ++i) {
         if (i > 0) {
             *offset += sizeof (void *);

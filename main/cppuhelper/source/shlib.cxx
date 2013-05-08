@@ -395,8 +395,8 @@ Reference< XInterface > SAL_CALL loadSharedLibComponentFactory(
                     rtl::OString libName(rtl::OUStringToOString(rLibName, RTL_TEXTENCODING_ASCII_US));
                     rtl::OString implName(rtl::OUStringToOString(rImplName, RTL_TEXTENCODING_ASCII_US));
                     rtl::OString envDcp(rtl::OUStringToOString(env.getTypeName(), RTL_TEXTENCODING_ASCII_US));
-                    
-                    fprintf(stderr, "loadSharedLibComponentFactory envDcp: %-12.12s  implName: %30.30s  libName: %-15.15s\n", envDcp.getStr(), implName.getStr() + (implName.getLength() > 30 ? implName.getLength() - 30 : 0), libName.getStr());
+
+                    fprintf(stderr, "loadSharedLibComponentFactory envDcp: %-12.12s  implName: %30.30s  libName: %s\n", envDcp.getStr(), implName.getStr() + (implName.getLength() > 30 ? implName.getLength() - 30 : 0), libName.getStr());
                 }
 #endif
 

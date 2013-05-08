@@ -45,7 +45,7 @@ $(WORKDIR)/Clean/OutDir/lib/%$(gb_Library_PLAINEXT) :
 			$(AUXTARGETS))
 
 # EVIL: gb_StaticLibrary and gb_Library need the same deliver rule because they are indistinguishable on windows
-$(gb_Library_OUTDIRLOCATION)/%$(gb_Library_PLAINEXT) : 
+$(gb_Library_OUTDIRLOCATION)/%$(gb_Library_PLAINEXT) :
 	$(call gb_Helper_abbreviate_dirs,\
 		$(call gb_Deliver_deliver,$<,$@) \
 			$(foreach target,$(AUXTARGETS), && $(call gb_Deliver_deliver,$(dir $<)/$(notdir $(target)),$(target))))

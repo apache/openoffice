@@ -49,6 +49,8 @@ APP$(TNR)RPATH*=OOO
 LINKFLAGSRUNPATH_$(APP$(TNR)RPATH)*=/ERROR:/Bad_APP$(TNR)RPATH_value
 .IF "$(OS)" != "MACOSX"
 APP$(TNR)LINKFLAGS+=$(LINKFLAGSRUNPATH_$(APP$(TNR)RPATH))
+.ELSE
+CC_PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/"
 .ENDIF
 
 .IF "$(APP$(TNR)STACK)" != ""
@@ -122,8 +124,8 @@ $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 	@+source $(MISC)/$(TARGET).$(@:b)_$(TNR).cmd
 # Need to strip __objcInit symbol to avoid duplicate symbols when loading
 # libraries at runtime
-	@-nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
-	@strip -i -R $(MISC)/$(@:b).strip -X $@
+	@-$(CC_PATH)nm $@ | grep -v ' U ' | $(AWK) '{ print $$NF }' | grep -F -x '__objcInit' > $(MISC)/$(@:b).strip
+	@$(CC_PATH)strip -i -R $(MISC)/$(@:b).strip -X $@
 	@ls -l $@
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP$(TNR)RPATH) $@
