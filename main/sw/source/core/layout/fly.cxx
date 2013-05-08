@@ -2990,8 +2990,8 @@ sal_Bool SwFlyFrm::IsPageNumberingFrm()
 	if (pNextLink || pPrevLink)//Linked...
 		return false;
 
-	SwFrmFmt* pFmt = NULL;
-	if ((pFmt = GetFmt()))
+	SwFrmFmt* pFmt = GetFmt();
+	if( pFmt )
 	{
 		if (pLower && pLower->GetNext() && pFmt->GetCol().GetNumCols()>1)//Has more than 1 column...
 			return false;
