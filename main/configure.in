@@ -1743,18 +1743,18 @@ if test \( "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes" \) -a "$GCC" = "yes"; th
    fi
    if test "$_os" = "Darwin" -a "$GCCVER" -ge "040100" ; then
       if test -z "$save_CC" -a -x "$GCC_HOME/bin/gcc-4.0" ; then
-         export CC=$GCC_HOME/bin/gcc-4.0
+#         export CC=$GCC_HOME/bin/gcc-4.0
           dnl  export CC to have it available in set_soenv -> config.guess
          GCCVER2=`"$CC" -dumpversion | $AWK -F. '{ print \$1*10000+\$2*100+\$3 }'`
          if test "$GCCVER2" -ge "040000" -a "$GCCVER2" -lt "040100" ; then
             GCCVER=$GCCVER2
          fi
       fi
-      if test "$GCCVER" -ge "040100" ; then
-         AC_MSG_ERROR([You need to use the gcc-4.0 compiler (gcc $_gcc_version won't work with the MacOSX10.4u.sdk) - set CC accordingly])
-      else
+#      if test "$GCCVER" -ge "040100" ; then
+#         AC_MSG_ERROR([You need to use the gcc-4.0 compiler (gcc $_gcc_version won't work with the MacOSX10.4u.sdk) - set CC accordingly])
+#      else
          AC_MSG_RESULT([implicitly using CC=$CC])
-      fi
+#      fi
    else
       AC_MSG_RESULT([checked (gcc $_gcc_version)])
    fi
@@ -2401,22 +2401,22 @@ if test "$GXX" = "yes"; then
    _gpp_version=`$CXX -dumpversion`
    _gpp_majmin=`echo $_gpp_version | $AWK -F. '{ print \$1*100+\$2 }'`
 
-   if test "$_os" = "Darwin" -a "$_gpp_majmin" -ge "401" ; then
-      if test -z "$save_CXX" -a -x "$GCC_HOME/bin/g++-4.0" ; then
-         CXX=$GCC_HOME/bin/g++-4.0
-         _gpp_majmin_2=`"$CXX" -dumpversion | $AWK -F. '{ print \$1*100+\$2 }'`
-         if test "$_gpp_majmin_2" -ge "400" -a "$_gpp_majmin_2" -lt "401" ; then
-            _gpp_majmin=$_gpp_majmin_2
-         fi
-      fi
-      if test "$_gpp_majmin" -ge "401" ; then
-         AC_MSG_ERROR([You need to use the g++-4.0 compiler (g++ $_gpp_version won't work with the MacOSX10.4u.sdk) - set CXX accordingly])
-      else
-         AC_MSG_RESULT([implicitly using CXX=$CXX])
-      fi
-   else
+#   if test "$_os" = "Darwin" -a "$_gpp_majmin" -ge "401" ; then
+#      if test -z "$save_CXX" -a -x "$GCC_HOME/bin/g++-4.0" ; then
+#         CXX=$GCC_HOME/bin/g++-4.0
+#         _gpp_majmin_2=`"$CXX" -dumpversion | $AWK -F. '{ print \$1*100+\$2 }'`
+#         if test "$_gpp_majmin_2" -ge "400" -a "$_gpp_majmin_2" -lt "401" ; then
+#            _gpp_majmin=$_gpp_majmin_2
+#         fi
+#      fi
+#      if test "$_gpp_majmin" -ge "401" ; then
+#         AC_MSG_ERROR([You need to use the g++-4.0 compiler (g++ $_gpp_version won't work with the MacOSX10.4u.sdk) - set CXX accordingly])
+#      else
+#         AC_MSG_RESULT([implicitly using CXX=$CXX])
+#      fi
+#   else
       AC_MSG_RESULT([checked (g++ $_gpp_version)])
-   fi
+#   fi
 
    if test "$_gpp_majmin" = "304"; then
       AC_MSG_CHECKING([whether $CXX has the enum bug])
@@ -2915,6 +2915,7 @@ fi
 dnl ===================================================================
 dnl system stl sanity tests
 dnl ===================================================================
+if false ; then # TODO: update TR1 compliant STLs
 if test "$USE_SYSTEM_STL" = "YES"; then
    AC_MSG_CHECKING([if hash_map will be in __gnu_cxx namespace])
    AC_LANG_PUSH([C++])
@@ -3001,6 +3002,7 @@ _ACEOF
 
    AC_LANG_POP([C++])
 fi
+fi # endof TODO: update TR1 compliant STLs
 
 AC_SUBST(HAVE_GCC_VISIBILITY_FEATURE)
 
@@ -4088,26 +4090,15 @@ dnl ===================================================================
 AC_MSG_CHECKING([which python to use])
 if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    with_system_python=yes
-
-   _python="/Library/Frameworks/Python.framework/Versions/Current/bin/python" 
-   _python_version=`$_python -c "import platform; print platform.python_version();"`
-   
-   if test "$_python_version" = "2.7.4" ; then
-      AC_MSG_RESULT([compiling against system python (version $_python_version)])
-
-	  _python_ver=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
-	  
-   	  PYTHON_CFLAGS="-I/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
-   else
-		AC_MSG_ERROR([Python 2.7.4 is required])
-   fi
-
+   AC_MSG_RESULT([compiling against MacOSX10.7u.sdk (python version 2.7)])
+###   PYTHON_CFLAGS="-I/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3"
+   PYTHON_CFLAGS="-I/Applications/Xcode.app/Contents/Developer//Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/python2.7"
    PYTHON_LIBS="-framework Python"
 elif test -n "$with_system_python" -o -n "$with_system_libs" && \
 	test "$with_system_python" != "no"; then
    with_system_python=yes
    AC_MSG_RESULT([external])
-   AM_PATH_PYTHON([2.3])
+   AM_PATH_PYTHON([2.7])
 
    python_include=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('INCLUDEPY'));"`
    python_version=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`

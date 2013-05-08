@@ -759,29 +759,41 @@ elsif ( $platform =~ m/os2/ )
 elsif ( $platform =~ m/darwin/ ) 
 {     print "Setting Mac OS X/Darwin specific values... ";
       $BIG_SVX        = "TRUE";
-      $COM            = "GCC";
       $COMPATH        = '@COMPATH@'; 
-      if ($platform =~ m/^i[3456]86/)
+      print "Darwin platform = " . $platform ." ";
+      if( $CC =~ "gcc" )
       {
-          print "Setting values for Mac OS X/Darwin on x86... ";
+          print "Setting values for MacOSX/Darwin for Xcode<=3";
+          $COM            = "GCC";
           $outfile        = "MacOSXX86Env.Set"; 
           $CPU            = "I";
           $CPUNAME        = "INTEL";
           $OUTPATH        = "unxmacxi";
       }
-      elsif ($platform =~ m/^powerpc/)
+      elsif ($platform =~ m/^i[3456]86/)
       {
-          print "Setting values for Mac OS X/Darwin on PowerPC... ";
-          $outfile        = "MacOSXPPCEnv.Set"; 
-          $CPU            = "P";
-          $CPUNAME        = "POWERPC";
-          $OUTPATH        = "unxmacxp";
+          print "Setting values for MacOSX/Darwin on x86_32... ";
+          $COM            = "CLANG";
+          $outfile        = "MacOSXX32Env.Set"; 
+          $CPU            = "I";
+          $CPUNAME        = "INTEL";
+          $OUTPATH        = "unxmacci";
       }
-      if (@GCCVER@ >= 30401) {
-	  $CVER           = "C341";
-      } else {
-	  $CVER           = "C300";
+      elsif ($platform =~ m/^x86_64/)
+      {
+          print "Setting values for MacOSX/Darwin on x86_64... ";
+          $COM            = "CLANG";
+          $outfile        = "MacOSXX64Env.Set";
+          $CPU            = "X";
+          $CPUNAME        = "X86_64";
+          $OUTPATH        = "unxmaccx";
       }
+      else
+      {
+	  print "\nset_soenv: Unknown MacOSX/Darwin platform: $platform\n";
+	  exit 1;
+      }
+      $CVER           = "DUMMY_CVER";
       $GUI            = "UNX";
       $GVER           = "VCL";
       $INPATH         = $OUTPATH.$PROEXT;
@@ -954,7 +966,7 @@ if ($STLPORT4 ne $no_stl) {
 } else {
         $ps_STLPORT_LIB         = "";
         $L_STLPORT_LIB          = "";
-        $STLPORT_stlport        = $I.$SRC_ROOT.$SOLVER.$ds.$UPD.$ds.$INPATH.$INC.$ds."stl";
+        $STLPORT_stlport        = $I."/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/";
         $STLPORT_inc_stlport    = "";
 }
 
@@ -994,12 +1006,10 @@ $XINC                 = PathFormat('@XINC@'); # X11 includes
 
 # Mac OS X/Darwin only variables.
 if ( $platform =~ m/darwin/ )
-{  $FRAMEWORKSHOME       = $ds."Developer".$ds."SDKs".$ds."MacOSX10.4u.sdk".$ds."System".$ds."Library".$ds."Frameworks";
-   if ( $XLIB eq "no_x_libraries" ) {
-      $GUIBASE  = "aqua";
-   } else {
-      $GUIBASE  = "unx";
-   }
+{
+    $FRAMEWORKSHOME = $ds."Applications".$ds."Xcode.app".$ds."Contents".$ds."Developer".$ds."Platforms".$ds."MacOSX.platform";
+    $FRAMEWORKSHOME .= $ds."Developer".$ds."SDKs".$ds."MacOSX10.7.sdk".$ds."System".$ds."Library".$ds."Frameworks";
+    $GUIBASE  = "aqua";
 }
 
 # The project's workstamp.
@@ -1512,14 +1522,8 @@ elsif ($platform =~ m/cygwin/)
    }
 }
 elsif ($platform =~ m/darwin/)
-{  $SOLARINC         .= $STLPORT_stlport.
-						$I.$FRAMEWORKSHOME.$ds."JavaVM.framework".$ds."Versions".$ds."Current".$ds."Headers".
-                        $I.$FRAMEWORKSHOME.$ds."JavaVM.framework".$ds."Headers";
-   # [ed] 6/15/02 Add in X11 headers as appropriate for the build
-   if ($GUIBASE eq "unx") {
-      $SOLARINC      .= $I.$XINC.
-                        $I.$XINC.$ds."freetype2";
-   }
+{  $SOLARINC .= $STLPORT_stlport.
+                $I.$FRAMEWORKSHOME.$ds."JavaVM.framework".$ds."Headers";
 }
 else
 {  AddWarning( "set_soenv", "$platform not configured for system dependant include dir" );
@@ -1755,10 +1759,10 @@ if ( $platform =~ m/darwin/ )
 {
 # MAXOSX_DEPLOYMENT_TARGET : The minimum version required to run the build,
 # build can assume functions/libraries of that version to be available
-# unless you want to do runtime checks for 10.5 api, you also want to use the 10.4 sdk
+# unless you want to do runtime checks for 10.5 api, you also want to use the 10.7 sdk
 # (safer/easier than dealing with the MAC_OS_X_VERSION_MAX_ALLOWED macro)
 # http://developer.apple.com/technotes/tn2002/tn2064.html
-    ToFile( "MACOSX_DEPLOYMENT_TARGET",       "10.4",       "e" );
+    ToFile( "MACOSX_DEPLOYMENT_TARGET",       "10.7",       "e" );
 }
 
 #
