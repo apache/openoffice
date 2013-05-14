@@ -67,7 +67,6 @@ maSpacing1       (SVX_RES(IMG_SPACING1)),
 maSpacing115     (SVX_RES(IMG_SPACING115)),
 maSpacing15      (SVX_RES(IMG_SPACING15)),
 maSpacing2       (SVX_RES(IMG_SPACING2)),
-maLPCustom       (SVX_RES(IMG_SPACINGLCUSTOM)),
 maSelSpacing1    (SVX_RES(IMG_SEL_SPACING1)),
 maSelSpacing115  (SVX_RES(IMG_SEL_SPACING115)),
 maSelSpacing15   (SVX_RES(IMG_SEL_SPACING15)),
@@ -105,75 +104,63 @@ ParaLineSpacingControl::~ParaLineSpacingControl()
 
 void ParaLineSpacingControl::initial()
 {
-	//maLineSpacing.SetStyle( maLineSpacing.GetStyle()| WB_3DLOOK |  WB_NO_DIRECTSELECT  );
-	//maLineSpacing.SetControlBackground(GetSettings().GetStyleSettings().GetMenuColor());
-	//maLineSpacing.SetColor(GetSettings().GetStyleSettings().GetMenuColor());
-	//maLineSpacing.SetMinFont();
+    maLineSpacing.SetStyle( maLineSpacing.GetStyle()| WB_3DLOOK |  WB_NO_DIRECTSELECT  );
 
-	maLineSpacing.SetControlBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
-	GetSettings().GetStyleSettings().GetMenuColor():
-	sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
-	maLineSpacing.SetColor(GetSettings().GetStyleSettings().GetHighContrastMode()?
-	GetSettings().GetStyleSettings().GetMenuColor():
-	sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
-	maLineSpacing.SetBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
-	GetSettings().GetStyleSettings().GetMenuColor():
-	sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
-	//maFTSpacing.SetBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
-	//GetSettings().GetStyleSettings().GetMenuColor():
-	//sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
-	//maFTBy.SetBackground(GetSettings().GetStyleSettings().GetHighContrastMode()?
-	//GetSettings().GetStyleSettings().GetMenuColor():
-	//sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+    maLineSpacing.SetControlBackground( 
+        GetSettings().GetStyleSettings().GetHighContrastMode()
+        ? GetSettings().GetStyleSettings().GetMenuColor()
+        : sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+    maLineSpacing.SetColor(
+        GetSettings().GetStyleSettings().GetHighContrastMode()
+        ? GetSettings().GetStyleSettings().GetMenuColor()
+        : sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
+    maLineSpacing.SetBackground(
+        GetSettings().GetStyleSettings().GetHighContrastMode()
+        ? GetSettings().GetStyleSettings().GetMenuColor()
+        : sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
 
-	mpImg = new Image[4];
-	mpImg[0] = maSpacing1;
-	mpImg[1] = maSpacing115;
-	mpImg[2] = maSpacing15;
-	mpImg[3] = maSpacing2;
+    mpImg = new Image[4];
+    mpImg[0] = maSpacing1;
+    mpImg[1] = maSpacing115;
+    mpImg[2] = maSpacing15;
+    mpImg[3] = maSpacing2;
 
-	mpImgSel = new Image[4];
-	mpImgSel[0] = maSelSpacing1;
-	mpImgSel[1] = maSelSpacing115;
-	mpImgSel[2] = maSelSpacing15;
-	mpImgSel[3] = maSelSpacing2;
+    mpImgSel = new Image[4];
+    mpImgSel[0] = maSelSpacing1;
+    mpImgSel[1] = maSelSpacing115;
+    mpImgSel[2] = maSelSpacing15;
+    mpImgSel[3] = maSelSpacing2;
 
-	mpStr = new XubString[4];
-	mpStr[0] = XubString(SVX_RES(STR_SPACING1));
-	mpStr[1] = XubString(SVX_RES(STR_SPACING115));
-	mpStr[2] = XubString(SVX_RES(STR_SPACING15));
-	mpStr[3] = XubString(SVX_RES(STR_SPACING2));
+    mpStr = new XubString[4];
+    mpStr[0] = XubString(SVX_RES(STR_SPACING1));
+    mpStr[1] = XubString(SVX_RES(STR_SPACING115));
+    mpStr[2] = XubString(SVX_RES(STR_SPACING15));
+    mpStr[3] = XubString(SVX_RES(STR_SPACING2));
 
-	mpStrTip = new XubString[4];
-	mpStrTip[0] = XubString(SVX_RES(STR_LS_SINGLE));
-	mpStrTip[1] = XubString(SVX_RES(STR_LS_115));
-	mpStrTip[2] = XubString(SVX_RES(STR_LS_15));
-	mpStrTip[3] = XubString(SVX_RES(STR_LS_DOUBLE));
-	for (int i=0;i<4;i++)
-		maLineSpacing.AddItem(mpImg[i], &mpImgSel[i],mpStr[i],&mpStrTip[i]);
+    mpStrTip = new XubString[4];
+    mpStrTip[0] = XubString(SVX_RES(STR_LS_SINGLE));
+    mpStrTip[1] = XubString(SVX_RES(STR_LS_115));
+    mpStrTip[2] = XubString(SVX_RES(STR_LS_15));
+    mpStrTip[3] = XubString(SVX_RES(STR_LS_DOUBLE));
+    for (int i=0;i<4;i++)
+        maLineSpacing.AddItem(mpImg[i], &mpImgSel[i],mpStr[i],&mpStrTip[i]);
 
-	maLineSpacing.AddItem( maImgCus, 0, maStrCus, 0 );
+    maLineSpacing.AddItem( maImgCus, 0, maStrCus, 0 );
 
-	SetAllNoSel();
-	Link aLink = LINK(this, ParaLineSpacingControl,VSSelHdl );
-	maLineSpacing.SetSelectHdl(aLink);
-	maLineSpacing.StartSelection();
-	maLineSpacing.Show();
+    SetAllNoSel();
+    Link aLink = LINK(this, ParaLineSpacingControl,VSSelHdl );
+    maLineSpacing.SetSelectHdl(aLink);
+    maLineSpacing.StartSelection();
+    maLineSpacing.Show();
 
-	aLink = LINK( this, ParaLineSpacingControl, LineSPDistHdl_Impl );
-	aLineDist.SetSelectHdl(aLink);
-	aLineDist.SelectEntryPos( LLINESPACE_1 ) ;
-	aLink = LINK( this, ParaLineSpacingControl, LineSPDistAtHdl_Impl );
-	aLineDistAtPercentBox.SetModifyHdl( aLink );
-	aLineDistAtMetricBox.SetModifyHdl( aLink );
+    aLink = LINK( this, ParaLineSpacingControl, LineSPDistHdl_Impl );
+    aLineDist.SetSelectHdl(aLink);
+    aLineDist.SelectEntryPos( LLINESPACE_1 ) ;
+    aLink = LINK( this, ParaLineSpacingControl, LineSPDistAtHdl_Impl );
+    aLineDistAtPercentBox.SetModifyHdl( aLink );
+    aLineDistAtMetricBox.SetModifyHdl( aLink );
 }
-void ParaLineSpacingControl::ToGetFocus(bool bType)
-{
-	if(!bType)
-		aLineDist.GrabFocus();
-	else
-		maLineSpacing.GrabFocus();	//wj
-}
+
 
 void ParaLineSpacingControl::PopupModeEndCallback()
 {
@@ -484,24 +471,6 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 
 	aLineDist.SaveValue();
 
-	/*sal_uInt16 nID = pBox->GetCurItemId();
-	pBox->SetItemDown(nID, sal_True);
-
-	Size aFloatSz = GetOutputSizePixel();
-
-	GetLineSPFloatWin()->SetSizePixel( aFloatSz );
-
-	Point aPos=maLineSPTbx->GetPosPixel();
-	aPos.setX(aPos.getX());
-	aPos = OutputToScreenPixel( aPos );
-	Size aSize = maLineSPTbx->GetSizePixel();
-	Rectangle aRect( aPos, aSize );
-
-	GetLineSPFloatWin()->StartPopupMode( aRect, FLOATWIN_POPUPMODE_DOWN | FLOATWIN_POPUPMODE_NOFOCUSCLOSE);
-	GetLineSPFloatWin()->SetPopupModeFlags(GetLineSPFloatWin()->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOAPPFOCUSCLOSE );
-
-	pLineSPPage->ToGetFocus(bValueSetFocus);
-	*/
 	sal_uInt16 uCount = aLineDist.GetEntryCount();
 	if( uCount == LLINESPACE_FIX + 1 )
 	{
