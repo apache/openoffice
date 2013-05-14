@@ -737,7 +737,8 @@ sub is_unstripped {
 sub initialize_strip {
     if ((!defined $ENV{DISABLE_STRIP}) || ($ENV{DISABLE_STRIP} eq "")) {
         $strip .= 'guw ' if ($^O eq 'cygwin');
-        $strip .= $::CC_PATH . 'strip';
+        $strip .= $::CC_PATH if (-e $::CC_PATH.'/strip');
+        $strip .= 'strip';
         $strip .= " -x" if ($ENV{OS} eq 'MACOSX');
         $strip .= " -R '.comment' -s" if ($ENV{OS} eq 'LINUX');
     };
