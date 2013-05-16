@@ -39,6 +39,8 @@ class ToolBox;
 
 namespace svx { namespace sidebar {
 
+/** This panel provides buttons for inserting shapes into a document.
+*/
 class InsertPropertyPanel
     : public Control
 {
@@ -49,12 +51,12 @@ public:
     virtual ~InsertPropertyPanel (void);
 
 private:
-	::boost::scoped_ptr<Window> mpStandardShapesBackground;
+    ::boost::scoped_ptr<Window> mpStandardShapesBackground;
     ::boost::scoped_ptr<ToolBox> mpStandardShapesToolBox;
-	::boost::scoped_ptr<Window> mpCustomShapesBackground;
+    ::boost::scoped_ptr<Window> mpCustomShapesBackground;
     ::boost::scoped_ptr<ToolBox> mpCustomShapesToolBox;
     const cssu::Reference<css::frame::XFrame> mxFrame;
-
+    
     DECL_LINK(WindowEventListener, VclSimpleEvent*);
 };
 
