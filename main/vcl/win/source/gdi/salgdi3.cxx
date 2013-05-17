@@ -2701,7 +2701,7 @@ int ScopedTrueTypeFont::open(void * pBuffer, sal_uInt32 nLen,
 }
 
 sal_Bool WinSalGraphics::CreateFontSubset( const rtl::OUString& rToFile,
-    const ImplFontData* pFont, long* pGlyphIDs, sal_uInt8* pEncoding,
+    const ImplFontData* pFont, sal_GlyphId* pGlyphIDs, sal_uInt8* pEncoding,
     sal_Int32* pGlyphWidths, int nGlyphCount, FontSubsetInfo& rInfo )
 {
     // TODO: use more of the central font-subsetting code, move stuff there if needed
@@ -2744,7 +2744,7 @@ sal_Bool WinSalGraphics::CreateFontSubset( const rtl::OUString& rToFile,
 		const ImplFontCharMap* pCharMap = pWinFontData->GetImplFontCharMap();
 		pCharMap->AddReference();
 		
-		long nRealGlyphIds[ 256 ];
+		sal_GlyphId nRealGlyphIds[ 256 ];
 		for( int i = 0; i < nGlyphCount; ++i )
 		{
 			// TODO: remap notdef glyph if needed

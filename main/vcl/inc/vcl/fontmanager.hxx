@@ -643,7 +643,7 @@ public:
     bool createFontSubset( FontSubsetInfo&,
                            fontID nFont,
                            const rtl::OUString& rOutFile,
-                           sal_Int32* pGlyphIDs,
+                           sal_uInt32* pGlyphIDs,
                            sal_uInt8* pNewEncoding,
                            sal_Int32* pWidths,
                            int nGlyphs,

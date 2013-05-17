@@ -3700,7 +3700,7 @@ bool PrintFontManager::createFontSubset(
 	{
 		rInfo.LoadFont( FontSubsetInfo::CFF_FONT, pCffBytes, nCffLength );
 #if 1 // TODO: remove 16bit->long conversion when related methods handle non-16bit glyphids
-		long aRequestedGlyphs[256];
+		sal_GlyphId aRequestedGlyphs[256];
 		for( int i = 0; i < nGlyphs; ++i )
 			aRequestedGlyphs[i] = pGID[i];
 #endif
