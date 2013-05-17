@@ -25,12 +25,15 @@
 #ifdef HAVE_STL_INCLUDE_PATH
 	// TODO: use computed include file name
 	#include_next <forward_list>
+#elif defined(_MSC_VER)
+	#include <../../VC/include/list>
+	#define STLP4_SLIST_WITH_LIST
 #else // fall back to boost/tr1 (forward_list or plain list)
 	#include <boost/config.hpp>
 	#ifndef BOOST_NO_0X_HDR_FORWARD_LIST
-		#include <boost/tr1/tr1/forward_list.hpp>
+		#include <boost/tr1/tr1/forward_list>
 	#else // fall back to the classic list
-		#include <boost/tr1/tr1/list.hpp>
+		#include <boost/tr1/tr1/list>
 		#define STLP4_SLIST_WITH_LIST
 	#endif
 #endif

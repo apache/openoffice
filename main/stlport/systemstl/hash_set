@@ -25,10 +25,12 @@
 #ifdef HAVE_STL_INCLUDE_PATH
 	// TODO: use computed include file name
 	#include_next <unordered_set>
+#elif defined(_MSC_VER)
+	#include <../../VC/include/unordered_set>
+	#define STLP4_EMUBASE_NS ::std::tr1
 #else // fall back to boost/tr1
-	#include <boost/tr1/unordered_set.hpp>
-	#undef TR1_NS
-	#define TR1_NS std::tr1
+	#include <boost/tr1/tr1/unordered_set>
+	#define STLP4_EMUBASE_NS ::boost
 #endif
 
 
@@ -36,48 +38,64 @@
 
 namespace std
 {
-#ifdef TR1_NS
-using TR1_NS::hash;
-using TR1_NS::unordered_set;
-using TR1_NS::unordered_multiset;
-#endif // TR1_NS
+#ifdef STLP4_EMUBASE_NS
+	using STLP4_EMUBASE_NS::hash;
+	using STLP4_EMUBASE_NS::unordered_set;
+	using STLP4_EMUBASE_NS::unordered_multiset;
+	#undef STLP4_EMUBASE_NS
+#endif
+
 
 template<
-	typename K,
-	typename H = hash<K>,
-	typename E = equal_to<K>,
-	typename A = allocator<K> >
+	typename __K,
+	typename __H = hash<__K>,
+	typename __E = equal_to<__K>,
+	typename __A = allocator<__K> >
 class hash_set
-:	public unordered_set<K,H,E,A>
+:	public unordered_set<__K,__H,__E,__A>
 {
-	typedef unordered_set<K,H,E,A> _super;
+	typedef unordered_set<__K,__H,__E,__A> _super;
 public:
 	hash_set( void) {}
 	hash_set( size_t n) : _super(n) {}
-	hash_set& operator=(const hash_set& r) { hash_set t(r); _super::swap(t); return *this;};//#################
 	void resize( size_t n) { _super::rehash( n); }
+
+#ifdef BOOST_TR1_UNORDERED_SET_INCLUDED // workaround pre-BOOST_UNORDERED_USE_MOVE problem 
+	// in derived classes the copy assignment operator can only be declared implicitly if
+	// its base class's assignment operator has the canonical signature.
+	// boost's assignment operators don't have this canonical signature when move-semantics are enabled
+	hash_set& operator=( const hash_set& r) { hash_set c(r); this->swap(c); return *this; }
+#endif
+
 private:
 	// setting the hasher dynamically is not supported in the emulation!
-	hash_set( size_t, const H&, const E& rE=E(), const A& rA=A()); // not implemented
+	hash_set( size_t, const __H&, const __E& rE=__E(), const __A& rA=__A()); // not implemented
 };
 
 template<
-	typename K,
-	typename H = hash<K>,
-	typename E = equal_to<K>,
-	typename A = allocator<K> >
+	typename __K,
+	typename __H = hash<__K>,
+	typename __E = equal_to<__K>,
+	typename __A = allocator<__K> >
 class hash_multiset
-:	public unordered_multiset<K,H,E,A>
+:	public unordered_multiset<__K,__H,__E,__A>
 {
-	typedef unordered_multiset<K,H,E,A> _super;
+	typedef unordered_multiset<__K,__H,__E,__A> _super;
 public:
 	hash_multiset( void) {}
 	hash_multiset( size_t n) : _super( n) {}
-	hash_multiset& operator=(const hash_multiset& r) { hash_multiset t(r); _super::swap(t); return *this;}//#################
 	void resize( size_t n) { _super::rehash( n); }
+
+#ifdef BOOST_TR1_UNORDERED_SET_INCLUDED // workaround pre-BOOST_UNORDERED_USE_MOVE problem 
+	// in derived classes the copy assignment operator can only be declared implicitly if
+	// its base class's assignment operator has the canonical signature.
+	// boost's assignment operators don't have this canonical signature when move-semantics are enabled
+	hash_multiset& operator=( const hash_multiset& r) { hash_multiset c(r); this->swap(c); return *this; }
+#endif
+
 private:
 	// setting the hasher dynamically is not supported in the emulation!
-	hash_multiset( size_t, const H&, const E& rE=E(), const A& rA=A()); // not implemented
+	hash_multiset( size_t, const __H&, const __E& rE=__E(), const __A& rA=__A()); // not implemented
 };
 
 } // namespace std

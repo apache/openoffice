@@ -25,8 +25,11 @@
 #ifdef HAVE_STL_INCLUDE_PATH
 	// TODO: use computed include file name
 	#include_next <numeric>
+#elif defined(_MSC_VER)
+	#include <../../VC/include/numeric>
 #else // fall back to boost/tr1
-	#include <boost/tr1/tr1/numeric.hpp>
+	#include <boost/tr1/tr1/numeric>
+// template<typename I, typename V> inline void iota( I first, I last, V value) { while(first!=last) *(first++) = value++; }
 #endif
 
 #endif

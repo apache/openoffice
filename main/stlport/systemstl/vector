@@ -25,8 +25,10 @@
 #ifdef HAVE_STL_INCLUDE_PATH
 	// TODO: use computed include file name
 	#include_next <vector>
+#elif defined(_MSC_VER)
+	#include <../../VC/include/vector>
 #else // fall back to boost/tr1
-	#include <boost/tr1/tr1/vector.hpp>
+	#include <boost/tr1/tr1/vector>
 #endif
 
 
@@ -37,9 +39,10 @@ namespace std
     typedef vector<bool> bit_vector;
 }
 
+// workaround some STL implementations having problems with their vector<bool>::count() specialization
 inline int std_bitset_count( std::bit_vector::const_iterator it, std::bit_vector::const_iterator itEnd, bool bValue)
 {
-#if false && defined(_LIBCPP___BIT_REFERENCE) // TODO: reenable for libc++ >= r156543/r156546/etc.
+#if 0 && defined(_LIBCPP___BIT_REFERENCE) // TODO: reenable for libc++ >= r156543/r156546/etc.
 	int nCount = std::count( it, itEnd, bValue);
 #else
 	int nCount = 0;

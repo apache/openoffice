@@ -22,14 +22,19 @@
 #ifndef SYSTEM_STL_FUNCTIONAL
 #define SYSTEM_STL_FUNCTIONAL
 
-#ifdef HAVE_STL_INCLUDE_PATH
+#undef HASH_NS
+#if defined(HAVE_STL_INCLUDE_PATH)
 	// TODO: use computed include file name
 	#include_next <functional>
+#elif defined(_MSC_VER)
+	#include <../../VC/include/functional>
+#if 1 // TODO: enable only when std::_Swap_adl is not available
+	// note: VS2008SP1 has known problems after a security update (KB971092,KB974479,KB974223)
+	namespace std{ template<class _T> void _Swap_adl(_T& l, _T& r) {swap(l,r);} }
+#endif	
 #else // fall back to boost/tr1
-	#include <boost/tr1/functional.hpp>
-	#undef TR1_NS
-	#define TR1_NS std::tr1
-	#define TR1_INNER_NS tr1
+	#include <boost/tr1/tr1/functional>
+	#include <boost/functional/hash.hpp>
 #endif
 
 
@@ -43,8 +48,6 @@ template< typename T, typename U> struct project2nd : public binary_function<T,U
 template<typename P> struct select1st : public unary_function<P, typename P::first_type> { const typename P::first_type& operator()(const P& p) const { return p.first; }};
 template<typename P> struct select2nd : public unary_function<P, typename P::second_type> { const typename P::second_type& operator()(const P& p) const { return p.second; }};
 
-//template<typename I, typename V> inline void iota( I first, I last, V value) { while(first!=last) *(first++) = value++; }
-
 #if (defined(_MSC_VER) && (_MSC_VER >= 1600)) || defined(__GXX_EXPERIMENTAL_CXX0X__)
 template<typename T> inline T&& forward( typename identity<T>::type&& t) { return t; }
 #endif // C++11 move semantics
@@ -52,34 +55,14 @@ template<typename T> inline T&& forward( typename identity<T>::type&& t) { retur
 template<typename Op1, typename Op2> class unary_compose : public unary_function<typename Op2::argument_type, typename Op1::result_type> 
 {
 protected:
-  Op1 aOp1;
-  Op2 aOp2;
+	Op1 aOp1;
+	Op2 aOp2;
 public:
-  unary_compose( const Op1& rOp1, const Op2& rOp2) : aOp1(rOp1), aOp2(rOp2) {}
-  typename Op1::result_type operator()( const typename Op2::argument_type& x) const { return aOp1(aOp2(x)); }
+	unary_compose( const Op1& rOp1, const Op2& rOp2) : aOp1(rOp1), aOp2(rOp2) {}
+	typename Op1::result_type operator()( const typename Op2::argument_type& x) const { return aOp1(aOp2(x)); }
 };
 
 template<typename Op1, typename Op2> inline unary_compose<Op1,Op2> compose1( const Op1& rOp1, const Op2& rOp2) { return unary_compose<Op1,Op2>(rOp1, rOp2); }
-
-// empty equal_to specializations to detect invocations
-// that are dangerous because their semantic might
-// differ significantly from the stlport<=4 semantic
-template<> struct equal_to<const signed char*> {void operator()(void){}};
-template<> struct equal_to<const unsigned char*> {void operator()(void){}};
-
-#if defined(TR1_INNER_NS)
-namespace TR1_INNER_NS {
-#endif
-    // empty hash specializations to detect invocations
-    // that are dangerous because their semantic might
-    // differ significantly from the stlport<=4 semantic
-    template<> struct hash<char*> {void operator()(void){}};
-    template<> struct hash<const unsigned char*> {void operator()(){}};
-    template<> struct hash<const signed char*> {void operator()(){}};
-#if defined(TR1_INNER_NS)
-}
-using TR1_NS::hash;
-#endif
 
 } // namespace std
 
