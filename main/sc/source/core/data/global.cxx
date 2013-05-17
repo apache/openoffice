@@ -1677,13 +1677,15 @@ xub_StrLen ScFuncDesc::getSuppressedArgumentCount() const
 // 
 void ScFuncDesc::fillVisibleArgumentMapping(::std::vector<sal_uInt16>& _rArguments) const 
 {
+    _rArguments.resize( nArgCount);
+
     if (!bHasSuppressedArgs || !pDefArgFlags)
     {
-        _rArguments.resize( nArgCount);
-        ::std::iota( _rArguments.begin(), _rArguments.end(), 0);
+        ::std::vector<sal_uInt16>::iterator it = _rArguments.begin();
+        for( sal_uInt16 n = 0; n < nArgCount; ++n, ++it )
+            *it = n;
     }
 
-    _rArguments.reserve( nArgCount);
     sal_uInt16 nArgs = nArgCount;
     if (nArgs >= PAIRED_VAR_ARGS)
 	    nArgs -= PAIRED_VAR_ARGS - 2;
