@@ -30,6 +30,7 @@
 // includes
 
 #include <com/sun/star/frame/UntitledNumbersConst.hpp>
+#include <algorithm>
 
 //_______________________________________________
 // namespace
