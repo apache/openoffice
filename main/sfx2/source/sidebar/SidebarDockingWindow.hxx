@@ -52,7 +52,10 @@ public:
 protected:
     // Window overridables
     virtual void GetFocus (void);
-    virtual long PreNotify (NotifyEvent& rEvent);
+
+    virtual SfxChildAlignment CheckAlignment (
+        SfxChildAlignment eCurrentAlignment,
+        SfxChildAlignment eRequestedAlignment);
 
 private:
     ::rtl::Reference<sfx2::sidebar::SidebarController> mpSidebarController;

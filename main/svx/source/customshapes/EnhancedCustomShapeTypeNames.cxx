@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 #include "svx/EnhancedCustomShapeTypeNames.hxx"
@@ -34,7 +32,7 @@ struct TCheck
 		return strcmp( s1, s2 ) == 0;
 	}
 };
-typedef std::hash_map< const char*, MSO_SPT, std::hash<const char*>, TCheck> TypeNameHashMap;
+typedef std::hash_map< const char*, MSO_SPT, rtl::CStringHash, rtl::CStringEqual> TypeNameHashMap;
 static TypeNameHashMap* pHashMap = NULL;
 static ::osl::Mutex& getHashMapMutex()
 {

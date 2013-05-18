@@ -155,6 +155,11 @@ DrawViewShell::DrawViewShell( SfxViewFrame* pFrame, ViewShellBase& rViewShellBas
     Construct(GetDocSh(), ePageKind);
 
     mpSelectionChangeHandler->Connect();
+
+	if (mpFrameView->GetViewShEditMode(mePageKind) == EM_PAGE)
+        SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_DrawPage));
+	else
+        SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_MasterPage));
 }
 
 /*************************************************************************
@@ -866,14 +871,10 @@ void DrawViewShell::GetAnnotationState (SfxItemSet& rItemSet )
 }
 
 
+
+
 EnumContext::Context DrawViewShell::GetContextForSelection (void) const
 {
-    if (mpDrawView->GetMarkedObjectList().GetMarkCount() == 1)
-        if (mpDrawView->GetTextEditObject() != NULL)
-            if (mpDrawView->GetTextEditOutlinerView() != NULL)
-				return EnumContext::Context_DrawText;
-
-    // All other cases are handled by the SelectionAnalyzer.
     return ::svx::sidebar::SelectionAnalyzer::GetContextForSelection_SD(
         mpDrawView->GetMarkedObjectList(),
         meEditMode == EM_MASTERPAGE,

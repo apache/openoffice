@@ -124,7 +124,7 @@ void TitleBar::SetPosSizePixel (
 
     // Place the toolbox.
     const sal_Int32 nToolBoxWidth (maToolBox.GetItemPosRect(0).GetWidth());
-    maToolBox.SetPosSizePixel(nWidth-nToolBoxWidth,0,nToolBoxWidth,nHeight);
+    maToolBox.SetPosSizePixel(nWidth-nToolBoxWidth,0, nToolBoxWidth,nHeight, WINDOW_POSSIZE_POSSIZE);
     maToolBox.Show();
 }
 
@@ -132,6 +132,14 @@ void TitleBar::SetPosSizePixel (
 
 
 ToolBox& TitleBar::GetToolBox (void)
+{
+    return maToolBox;
+}
+
+
+
+
+const ToolBox& TitleBar::GetToolBox (void) const
 {
     return maToolBox;
 }
@@ -186,6 +194,10 @@ void TitleBar::PaintTitle (const Rectangle& rTitleBox)
 void TitleBar::PaintFocus (const Rectangle& rFocusBox)
 {
     Push(PUSH_FONT | PUSH_TEXTCOLOR | PUSH_LINECOLOR | PUSH_FILLCOLOR);
+
+    Font aFont(GetFont());
+    aFont.SetWeight(WEIGHT_BOLD);
+    SetFont(aFont);
 
     const Rectangle aTextBox (
         GetTextRect(

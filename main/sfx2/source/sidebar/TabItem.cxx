@@ -25,7 +25,7 @@
 
 #include "DrawHelper.hxx"
 #include "Paint.hxx"
-#include "Tools.hxx"
+#include "sfx2/sidebar/Tools.hxx"
 
 #include "sfx2/sidebar/Theme.hxx"
 
@@ -60,7 +60,6 @@ TabItem::~TabItem (void)
 
 void TabItem::Paint (const Rectangle& rUpdateArea)
 {
-    OSL_TRACE("TabItem::Paint");
     switch(mePaintType)
     {
         case PT_Theme:
@@ -88,12 +87,12 @@ void TabItem::Paint (const Rectangle& rUpdateArea)
                 (GetSizePixel().Height() - aIconSize.Height())/2);
             DrawImage(
                 aIconLocation,
-                aIcon);
+                aIcon,
+                IsEnabled() ? 0 : IMAGE_DRAW_DISABLE);
             break;
         }
         case PT_Native:
             Button::Paint(rUpdateArea);
-            //            DrawImage(maIconPosition, maIcon);
             break;
     }
 }

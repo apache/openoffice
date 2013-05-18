@@ -25,19 +25,22 @@
 #include "Deck.hxx"
 #include "DeckTitleBar.hxx"
 #include "Panel.hxx"
+#include "PanelTitleBar.hxx"
 #include "SidebarPanel.hxx"
 #include "SidebarResource.hxx"
 #include "TabBar.hxx"
 #include "sfx2/sidebar/Theme.hxx"
+#include "sfx2/sidebar/SidebarChildWindow.hxx"
+#include "sfx2/sidebar/Tools.hxx"
 #include "SidebarDockingWindow.hxx"
 #include "Context.hxx"
-#include "Tools.hxx"
 
 #include "sfxresid.hxx"
 #include "sfx2/sfxsids.hrc"
 #include "sfx2/titledockwin.hxx"
 #include "sfxlocal.hrc"
 #include <vcl/floatwin.hxx>
+#include <vcl/fixed.hxx>
 #include "splitwin.hxx"
 #include <svl/smplhint.hxx>
 #include <tools/link.hxx>
@@ -69,6 +72,15 @@ using ::rtl::OUString;
 
 #undef VERBOSE
 
+namespace
+{
+    const static OUString gsReadOnlyCommandName (A2S(".uno:EditDoc"));
+    const static sal_Int32 gnMaximumSidebarWidth (400);
+    const static sal_Int32 gnWidthCloseThreshold (70);
+    const static sal_Int32 gnWidthOpenThreshold (40);
+}
+
+
 namespace sfx2 { namespace sidebar {
 
 namespace {
@@ -81,6 +93,10 @@ namespace {
         MID_FIRST_PANEL,
         MID_FIRST_HIDE = 1000
     };
+
+    /** When in doubt, show this deck.
+    */
+    static const ::rtl::OUString gsDefaultDeckId(A2S("PropertyDeck"));
 }
 
 
@@ -93,15 +109,25 @@ SidebarController::SidebarController (
       mpTabBar(new TabBar(
               mpParentWindow,
               rxFrame,
-              ::boost::bind(&SidebarController::SwitchToDeck, this, _1),
+              ::boost::bind(&SidebarController::OpenThenSwitchToDeck, this, _1),
               ::boost::bind(&SidebarController::ShowPopupMenu, this, _1,_2,_3))),
       mxFrame(rxFrame),
       maCurrentContext(OUString(), OUString()),
-      msCurrentDeckId(A2S("PropertyDeck")),
+      maRequestedContext(),
+      msCurrentDeckId(gsDefaultDeckId),
+      msCurrentDeckTitle(),
       maPropertyChangeForwarder(::boost::bind(&SidebarController::BroadcastPropertyChange, this)),
       maContextChangeUpdate(::boost::bind(&SidebarController::UpdateConfigurations, this)),
-      mbIsDeckClosed(false),
-      mnSavedSidebarWidth(pParentWindow->GetSizePixel().Width())
+      mbIsDeckRequestedOpen(),
+      mbIsDeckOpen(),
+      mbCanDeckBeOpened(true),
+      mnSavedSidebarWidth(pParentWindow->GetSizePixel().Width()),
+      maFocusManager(::boost::bind(&SidebarController::ShowPanel, this, _1)),
+      mxReadOnlyModeDispatch(),
+      mbIsDocumentReadOnly(false),
+      mpSplitWindow(NULL),
+      mnWidthOnSplitterButtonDown(0),
+      mpCloseIndicator()
 {
     if (pParentWindow == NULL)
     {
@@ -126,6 +152,13 @@ SidebarController::SidebarController (
         A2S(""),
         static_cast<css::beans::XPropertyChangeListener*>(this));
 
+    // Get the dispatch object as preparation to listen for changes of
+    // the read-only state.
+    const util::URL aURL (Tools::GetURL(gsReadOnlyCommandName));
+    mxReadOnlyModeDispatch = Tools::GetDispatch(mxFrame, aURL);
+    if (mxReadOnlyModeDispatch.is())
+        mxReadOnlyModeDispatch->addStatusListener(this, aURL);
+
     SwitchToDeck(A2S("default"));
 }
 
@@ -149,6 +182,14 @@ void SAL_CALL SidebarController::disposing (void)
     if (xMultiplexer.is())
         xMultiplexer->removeAllContextChangeEventListeners(
             static_cast<css::ui::XContextChangeEventListener*>(this));
+
+    if (mxReadOnlyModeDispatch.is())
+        mxReadOnlyModeDispatch->removeStatusListener(this, Tools::GetURL(gsReadOnlyCommandName));
+    if (mpSplitWindow != NULL)
+    {
+        mpSplitWindow->RemoveEventListener(LINK(this, SidebarController, WindowEventHandler));
+        mpSplitWindow = NULL;
+    }
 
     if (mpParentWindow != NULL)
     {
@@ -211,6 +252,28 @@ void SAL_CALL SidebarController::propertyChange (const css::beans::PropertyChang
 
 
 
+void SAL_CALL SidebarController::statusChanged (const css::frame::FeatureStateEvent& rEvent)
+    throw(cssu::RuntimeException)
+{
+    bool bIsReadWrite (true);
+    if (rEvent.IsEnabled)
+        rEvent.State >>= bIsReadWrite;
+
+    if (mbIsDocumentReadOnly != !bIsReadWrite)
+    {
+        mbIsDocumentReadOnly = !bIsReadWrite;
+
+        // Force the current deck to update its panel list.
+        if ( ! mbIsDocumentReadOnly)
+            msCurrentDeckId = gsDefaultDeckId;
+        maCurrentContext = Context();
+        maContextChangeUpdate.RequestCall();
+    }
+}
+
+
+
+
 void SAL_CALL SidebarController::requestLayout (void)
     throw(cssu::RuntimeException)
 {
@@ -245,12 +308,36 @@ void SidebarController::NotifyResize (void)
     const sal_Int32 nWidth (pParentWindow->GetSizePixel().Width());
     const sal_Int32 nHeight (pParentWindow->GetSizePixel().Height());
 
+    mbIsDeckOpen = (nWidth > TabBar::GetDefaultWidth());
+    
+    if (mnSavedSidebarWidth <= 0)
+        mnSavedSidebarWidth = nWidth;
+    
+    bool bIsDeckVisible;
+    if (mbCanDeckBeOpened)
+    {
+        const bool bIsOpening (nWidth > mnWidthOnSplitterButtonDown);
+        if (bIsOpening)
+            bIsDeckVisible = nWidth >= TabBar::GetDefaultWidth() + gnWidthOpenThreshold;
+        else
+            bIsDeckVisible = nWidth >= TabBar::GetDefaultWidth() + gnWidthCloseThreshold;
+        mbIsDeckRequestedOpen = bIsDeckVisible;
+        UpdateCloseIndicator(!bIsDeckVisible);
+    }
+    else
+        bIsDeckVisible = false;
+    
     // Place the deck.
     if (mpCurrentDeck)
     {
-        mpCurrentDeck->SetPosSizePixel(0,0, nWidth-TabBar::GetDefaultWidth(), nHeight);
-        mpCurrentDeck->Show();
-        mpCurrentDeck->RequestLayout();
+        if (bIsDeckVisible)
+        {
+            mpCurrentDeck->SetPosSizePixel(0,0, nWidth-TabBar::GetDefaultWidth(), nHeight);
+            mpCurrentDeck->Show();
+            mpCurrentDeck->RequestLayout();
+        }
+        else
+            mpCurrentDeck->Hide();
     }
 
     // Place the tab bar.
@@ -265,26 +352,34 @@ void SidebarController::NotifyResize (void)
             pTitleBar->SetCloserVisible(CanModifyChildWindowWidth());
     }
 
-    if (nWidth > TabBar::GetDefaultWidth())
-        mnSavedSidebarWidth = nWidth;
-    
     RestrictWidth();
-#ifdef VERBOSE
-    if (mpCurrentDeck)
-    {
-        mpCurrentDeck->PrintWindowTree();
-        sal_Int32 nPanelIndex (0);
-        for (SharedPanelContainer::const_iterator
-                 iPanel(mpCurrentDeck->GetPanels().begin()),
-                 iEnd(mpCurrentDeck->GetPanels().end());
-             iPanel!=iEnd;
-             ++iPanel,++nPanelIndex)
-        {
-            OSL_TRACE("panel %d:", nPanelIndex);
-            (*iPanel)->PrintWindowTree();
-        }
+}
+
+
+
+
+void SidebarController::ProcessNewWidth (const sal_Int32 nNewWidth)
+{
+    if ( ! mbIsDeckRequestedOpen)
+        return;
+
+    if (mbIsDeckRequestedOpen.get())
+     {
+        // Deck became large enough to be shown.  Show it.
+        mnSavedSidebarWidth = nNewWidth;
+        RequestOpenDeck();
     }
-#endif
+    else
+    {
+        // Deck became too small.  Close it completely.
+        // If window is wider than the tab bar then mark the deck as being visible, even when it its not.
+        // This is to trigger an adjustment of the width to the width of the tab bar.
+        mbIsDeckOpen = true;
+        RequestCloseDeck();
+
+        if (mnWidthOnSplitterButtonDown > TabBar::GetDefaultWidth())
+            mnSavedSidebarWidth = mnWidthOnSplitterButtonDown;
+    }
 }
 
 
@@ -296,43 +391,53 @@ void SidebarController::UpdateConfigurations (void)
     {
         maCurrentContext = maRequestedContext;
 
-        // Notify the tab bar about the updated set of decks.
-        ResourceManager::IdContainer aDeckIds;
+        // Find the set of decks that could be displayed for the new context.
+        ResourceManager::DeckContextDescriptorContainer aDecks;
         ResourceManager::Instance().GetMatchingDecks (
-            aDeckIds,
+            aDecks,
             maCurrentContext,
+            mbIsDocumentReadOnly,
             mxFrame);
-        mpTabBar->SetDecks(aDeckIds);
 
-        // Check if the current deck is among the matching decks.
-        bool bCurrentDeckMatches (false);
-        for (ResourceManager::IdContainer::const_iterator
-                 iDeck(aDeckIds.begin()),
-                 iEnd(aDeckIds.end());
+        // Notify the tab bar about the updated set of decks.
+        mpTabBar->SetDecks(aDecks);
+
+        // Find the new deck.  By default that is the same as the old
+        // one.  If that is not set or not enabled, then choose the
+        // first enabled deck.
+        OUString sNewDeckId;
+        for (ResourceManager::DeckContextDescriptorContainer::const_iterator
+                 iDeck(aDecks.begin()),
+                 iEnd(aDecks.end());
              iDeck!=iEnd;
              ++iDeck)
         {
-            if (iDeck->equals(msCurrentDeckId))
+            if (iDeck->mbIsEnabled)
             {
-                bCurrentDeckMatches = true;
-                break;
+                if (iDeck->msId.equals(msCurrentDeckId))
+                {
+                    sNewDeckId = msCurrentDeckId;
+                    break;
+                }
+                else if (sNewDeckId.getLength() == 0)
+                    sNewDeckId = iDeck->msId;
             }
         }
 
-        DeckDescriptor const* pDeckDescriptor = NULL;
-        if ( ! bCurrentDeckMatches)
-            pDeckDescriptor = ResourceManager::Instance().GetBestMatchingDeck(maCurrentContext, mxFrame);
-        else
-            pDeckDescriptor = ResourceManager::Instance().GetDeckDescriptor(msCurrentDeckId);
-        if (pDeckDescriptor != NULL)
+        if (sNewDeckId.getLength() == 0)
         {
-            msCurrentDeckId = pDeckDescriptor->msId;
-            SwitchToDeck(*pDeckDescriptor, maCurrentContext);
-
-            // Tell the tab bar to highlight the button associated
-            // with the deck.
-            mpTabBar->HighlightDeck(msCurrentDeckId);
+            // We did not find a valid deck.
+            RequestCloseDeck();
+            return;
         }
+
+        // Tell the tab bar to highlight the button associated
+        // with the deck.
+        mpTabBar->HighlightDeck(sNewDeckId);
+        
+        SwitchToDeck(
+            *ResourceManager::Instance().GetDeckDescriptor(sNewDeckId),
+            maCurrentContext);
         
 #ifdef DEBUG
         // Show the context name in the deck title bar.
@@ -349,10 +454,20 @@ void SidebarController::UpdateConfigurations (void)
 
 
 
+void SidebarController::OpenThenSwitchToDeck (
+    const ::rtl::OUString& rsDeckId)
+{
+    RequestOpenDeck();
+    SwitchToDeck(rsDeckId);
+}
+
+
+
+
 void SidebarController::SwitchToDeck (
     const ::rtl::OUString& rsDeckId)
 {
-    if ( ! msCurrentDeckId.equals(rsDeckId) || mbIsDeckClosed)
+    if ( ! msCurrentDeckId.equals(rsDeckId) || ! mbIsDeckOpen)
     {
         const DeckDescriptor* pDeckDescriptor = ResourceManager::Instance().GetDeckDescriptor(rsDeckId);
         if (pDeckDescriptor != NULL)
@@ -381,9 +496,7 @@ void SidebarController::SwitchToDeck (
 
         msCurrentDeckId = rDeckDescriptor.msId;
     }
-
-    // Reopen the deck when necessary.
-    OpenDeck();
+    mpTabBar->HighlightDeck(msCurrentDeckId);
 
     // Determine the panels to display in the deck.
     ResourceManager::PanelContextDescriptorContainer aPanelContextDescriptors;
@@ -413,14 +526,6 @@ void SidebarController::SwitchToDeck (
         }
     }
 
-    if (mpCurrentDeck
-        && ArePanelSetsEqual(mpCurrentDeck->GetPanels(), aPanelContextDescriptors))
-    {
-        // Requested set of panels is identical to the current set of
-        // panels => Nothing to do.
-        return;
-    }
-    
     // Provide a configuration and Deck object.
     if ( ! mpCurrentDeck)
     {
@@ -428,7 +533,7 @@ void SidebarController::SwitchToDeck (
             new Deck(
                 rDeckDescriptor,
                 mpParentWindow,
-                ::boost::bind(&SidebarController::CloseDeck, this)));
+                ::boost::bind(&SidebarController::RequestCloseDeck, this)));
         msCurrentDeckTitle = rDeckDescriptor.msTitle;
     }
     if ( ! mpCurrentDeck)
@@ -446,6 +551,11 @@ void SidebarController::SwitchToDeck (
         const ResourceManager::PanelContextDescriptor& rPanelContexDescriptor (
             aPanelContextDescriptors[nReadIndex]);
 
+        // Determine if the panel can be displayed.
+        const bool bIsPanelVisible (!mbIsDocumentReadOnly || rPanelContexDescriptor.mbShowForReadOnlyDocuments);
+        if ( ! bIsPanelVisible)
+            continue;
+        
         // Find the corresponding panel among the currently active
         // panels.
         SharedPanelContainer::const_iterator iPanel (::std::find_if(
@@ -456,24 +566,29 @@ void SidebarController::SwitchToDeck (
         {
             // Panel already exists in current deck.  Reuse it.
             aNewPanels[nWriteIndex] = *iPanel;
+            aNewPanels[nWriteIndex]->SetExpanded(rPanelContexDescriptor.mbIsInitiallyVisible);
         }
         else
         {
             // Panel does not yet exist.  Create it.
             aNewPanels[nWriteIndex] = CreatePanel(
                 rPanelContexDescriptor.msId,
-                mpCurrentDeck->GetPanelParentWindow());
+                mpCurrentDeck->GetPanelParentWindow(),
+                rPanelContexDescriptor.mbIsInitiallyVisible,
+                rContext);
             bHasPanelSetChanged = true;
         }
         if (aNewPanels[nWriteIndex] != NULL)
         {
-            // Depending on the context we have to collapse the panel.
-            aNewPanels[nWriteIndex]->SetExpanded(rPanelContexDescriptor.mbIsInitiallyVisible);
-            // Depending on the context we have to apply the show menu functor.
-            aNewPanels[nWriteIndex]->SetShowMenuFunctor(
-                rPanelContexDescriptor.msMenuCommand.getLength()>0
-                ? ::boost::bind(&SidebarController::ShowDetailMenu,this,rPanelContexDescriptor.msMenuCommand)
-                : ::boost::function<void(void)>() );
+            // Depending on the context we have to change the command
+            // for the "more options" dialog.
+            PanelTitleBar* pTitleBar = aNewPanels[nWriteIndex]->GetTitleBar();
+            if (pTitleBar != NULL)
+            {
+                pTitleBar->SetMoreOptionsCommand(
+                    rPanelContexDescriptor.msMenuCommand,
+                    mxFrame);
+            }
 
             ++nWriteIndex;
         }
@@ -497,6 +612,7 @@ void SidebarController::SwitchToDeck (
 
     // Tell the focus manager about the new panels and tab bar
     // buttons.
+    maFocusManager.SetDeckTitle(mpCurrentDeck->GetTitleBar());
     maFocusManager.SetPanels(aNewPanels);
     mpTabBar->UpdateFocusManager(maFocusManager);
     UpdateTitleBarIcons();
@@ -509,28 +625,6 @@ bool SidebarController::ArePanelSetsEqual (
     const SharedPanelContainer& rCurrentPanels,
     const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels)
 {
-#ifdef VERBOSE
-    OSL_TRACE("current panel list:");
-    for (SharedPanelContainer::const_iterator
-             iPanel(rCurrentPanels.begin()),
-             iEnd(rCurrentPanels.end());
-         iPanel!=iEnd;
-         ++iPanel)
-    {
-        OSL_TRACE("    panel %s", S2A((*iPanel)->GetId()));
-    }
-
-    OSL_TRACE("requested panels: ");
-    for (ResourceManager::PanelContextDescriptorContainer::const_iterator
-             iId(rRequestedPanels.begin()),
-             iEnd(rRequestedPanels.end());
-         iId!=iEnd;
-         ++iId)
-    {
-        OSL_TRACE("    panel %s", S2A(iId->msId));
-    }
-#endif
-
     if (rCurrentPanels.size() != rRequestedPanels.size())
         return false;
     for (sal_Int32 nIndex=0,nCount=rCurrentPanels.size(); nIndex<nCount; ++nIndex)
@@ -538,6 +632,11 @@ bool SidebarController::ArePanelSetsEqual (
         if (rCurrentPanels[nIndex] == NULL)
             return false;
         if ( ! rCurrentPanels[nIndex]->GetId().equals(rRequestedPanels[nIndex].msId))
+            return false;
+
+        // Check if the panels still can be displayed.  This may not be the case when
+        // the document just become rea-only. 
+        if (mbIsDocumentReadOnly && ! rRequestedPanels[nIndex].mbShowForReadOnlyDocuments)
             return false;
     }
     return true;
@@ -548,7 +647,9 @@ bool SidebarController::ArePanelSetsEqual (
 
 SharedPanel SidebarController::CreatePanel (
     const OUString& rsPanelId,
-    ::Window* pParentWindow )
+    ::Window* pParentWindow,
+    const bool bIsInitiallyExpanded,
+    const Context& rContext)
 {
     const PanelDescriptor* pPanelDescriptor = ResourceManager::Instance().GetPanelDescriptor(rsPanelId);
     if (pPanelDescriptor == NULL)
@@ -558,13 +659,16 @@ SharedPanel SidebarController::CreatePanel (
     SharedPanel pPanel (new Panel(
         *pPanelDescriptor,
         pParentWindow,
-        ::boost::bind(&Deck::RequestLayout, mpCurrentDeck.get()) ) );
+        bIsInitiallyExpanded,
+        ::boost::bind(&Deck::RequestLayout, mpCurrentDeck.get()),
+        ::boost::bind(&SidebarController::GetCurrentContext, this)));
 
     // Create the XUIElement.
     Reference<ui::XUIElement> xUIElement (CreateUIElement(
             pPanel->GetComponentInterface(),
             pPanelDescriptor->msImplementationURL,
-            pPanelDescriptor->mbWantsCanvas));
+            pPanelDescriptor->mbWantsCanvas,
+            rContext));
     if (xUIElement.is())
     {
         // Initialize the panel and add it to the active deck.
@@ -584,7 +688,8 @@ SharedPanel SidebarController::CreatePanel (
 Reference<ui::XUIElement> SidebarController::CreateUIElement (
     const Reference<awt::XWindowPeer>& rxWindow,
     const ::rtl::OUString& rsImplementationURL,
-    const bool bWantsCanvas)
+    const bool bWantsCanvas,
+    const Context& rContext)
 {
     try
     {
@@ -607,6 +712,8 @@ Reference<ui::XUIElement> SidebarController::CreateUIElement (
             Reference<rendering::XSpriteCanvas> xCanvas (VCLUnoHelper::GetWindow(rxWindow)->GetSpriteCanvas());
             aCreationArguments.put("Canvas", makeAny(xCanvas));
         }   
+        aCreationArguments.put("ApplicationName", makeAny(rContext.msApplication));
+        aCreationArguments.put("ContextName", makeAny(rContext.msContext));
         
         Reference<ui::XUIElement> xUIElement(
             xUIElementFactory->createUIElement(
@@ -634,14 +741,13 @@ Reference<ui::XUIElement> SidebarController::CreateUIElement (
 
 IMPL_LINK(SidebarController, WindowEventHandler, VclWindowEvent*, pEvent)
 {
-    if (pEvent != NULL)
+    if (pEvent==NULL)
+        return sal_False;
+
+    if (pEvent->GetWindow() == mpParentWindow)
     {
         switch (pEvent->GetId())
         {
-            case VCLEVENT_WINDOW_GETFOCUS:
-            case VCLEVENT_WINDOW_LOSEFOCUS:
-                break;
-                
             case VCLEVENT_WINDOW_SHOW:
             case VCLEVENT_WINDOW_RESIZE:
                 NotifyResize();
@@ -659,9 +765,33 @@ IMPL_LINK(SidebarController, WindowEventHandler, VclWindowEvent*, pEvent)
                 dispose();
                 break;
                 
+            case VCLEVENT_WINDOW_PAINT:
+                OSL_TRACE("Paint");
+                break;
+
             default:
                 break;
         }
+    }
+    else if (pEvent->GetWindow()==mpSplitWindow && mpSplitWindow!=NULL)
+    {
+        switch (pEvent->GetId())
+        {
+            case VCLEVENT_WINDOW_MOUSEBUTTONDOWN:
+                mnWidthOnSplitterButtonDown = mpParentWindow->GetSizePixel().Width();
+                break;
+
+            case VCLEVENT_WINDOW_MOUSEBUTTONUP:
+            {
+                ProcessNewWidth(mpParentWindow->GetSizePixel().Width());
+                mnWidthOnSplitterButtonDown = 0;
+                break;
+            }
+
+            case SFX_HINT_DYING:
+                dispose();
+                break;
+         }
     }
 
     return sal_True;
@@ -691,16 +821,8 @@ void SidebarController::ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) co
 {
     try
     {
-        util::URL aURL;
-        aURL.Complete = rsMenuCommand;
-
-        const ::comphelper::ComponentContext aComponentContext (::comphelper::getProcessServiceFactory());
-        const Reference<util::XURLTransformer> xParser (
-            aComponentContext.createComponent("com.sun.star.util.URLTransformer"),
-            UNO_QUERY_THROW);
-        xParser->parseStrict(aURL);
-        Reference<frame::XDispatchProvider> xProvider (mxFrame, UNO_QUERY_THROW);
-        Reference<frame::XDispatch> xDispatch (xProvider->queryDispatch(aURL, OUString(), 0));
+        const util::URL aURL (Tools::GetURL(rsMenuCommand));
+        Reference<frame::XDispatch> xDispatch (Tools::GetDispatch(mxFrame, aURL));
         if (xDispatch.is())
             xDispatch->dispatch(aURL, Sequence<beans::PropertyValue>());
     }
@@ -827,35 +949,54 @@ IMPL_LINK(SidebarController, OnMenuItemSelected, Menu*, pMenu)
 
 
 
-void SidebarController::CloseDeck (void)
+void SidebarController::RequestCloseDeck (void)
 {
-    if ( ! mbIsDeckClosed)
-    {
-        mbIsDeckClosed = true;
-        if ( ! mpParentWindow->IsFloatingMode())
-            mnSavedSidebarWidth = SetChildWindowWidth(TabBar::GetDefaultWidth());
-        mpParentWindow->SetStyle(mpParentWindow->GetStyle() & ~WB_SIZEABLE);
-        
-        if (mpCurrentDeck)
-            mpCurrentDeck->Hide();
-            
-        NotifyResize();
-    }
+    mbIsDeckRequestedOpen = false;
+    UpdateDeckOpenState();
 }
 
 
 
 
-void SidebarController::OpenDeck (void)
+void SidebarController::RequestOpenDeck (void)
 {
-    if (mbIsDeckClosed)
+    mbIsDeckRequestedOpen = true;
+    UpdateDeckOpenState();
+}
+
+
+
+
+void SidebarController::UpdateDeckOpenState (void)
+{
+    if ( ! mbIsDeckRequestedOpen)
+        // No state requested.
+        return;
+
+    // Update (change) the open state when it either has not yet been initialized
+    // or when its value differs from the requested state.
+    if ( ! mbIsDeckOpen
+        || mbIsDeckOpen.get() != mbIsDeckRequestedOpen.get())
     {
-        mbIsDeckClosed = false;
-        SetChildWindowWidth(mnSavedSidebarWidth);
+        if (mbIsDeckRequestedOpen.get())
+        {
+            if (mnSavedSidebarWidth <= TabBar::GetDefaultWidth())
+                SetChildWindowWidth(SidebarChildWindow::GetDefaultWidth(mpParentWindow));
+            else
+                SetChildWindowWidth(mnSavedSidebarWidth);
+        }
+        else
+        {
+            if ( ! mpParentWindow->IsFloatingMode())
+                mnSavedSidebarWidth = SetChildWindowWidth(TabBar::GetDefaultWidth());
+            if (mnWidthOnSplitterButtonDown > TabBar::GetDefaultWidth())
+                mnSavedSidebarWidth = mnWidthOnSplitterButtonDown;
+            mpParentWindow->SetStyle(mpParentWindow->GetStyle() & ~WB_SIZEABLE);
+        }
 
-        if (mpCurrentDeck)
-            mpCurrentDeck->Show();
-
+        mbIsDeckOpen = mbIsDeckRequestedOpen.get();
+        if (mbIsDeckOpen.get() && mpCurrentDeck)
+            mpCurrentDeck->Show(mbIsDeckOpen.get());
         NotifyResize();
     }
 }
@@ -871,21 +1012,21 @@ FocusManager& SidebarController::GetFocusManager (void)
 
 
 
-bool SidebarController::CanModifyChildWindowWidth (void) const
+bool SidebarController::CanModifyChildWindowWidth (void)
 {
-    SfxSplitWindow* pSplitWindow = dynamic_cast<SfxSplitWindow*>(mpParentWindow->GetParent());
+    SfxSplitWindow* pSplitWindow = GetSplitWindow();
     if (pSplitWindow == NULL)
-    {
-        return 0;
-    }
+        return false;
 
     sal_uInt16 nRow (0xffff);
     sal_uInt16 nColumn (0xffff);
-    pSplitWindow->GetWindowPos(mpParentWindow, nColumn, nRow);
-
-    sal_uInt16 nRowCount (pSplitWindow->GetWindowCount(nColumn));
-
-    return nRowCount == 1;
+    if (pSplitWindow->GetWindowPos(mpParentWindow, nColumn, nRow))
+    {
+        sal_uInt16 nRowCount (pSplitWindow->GetWindowCount(nColumn));
+        return nRowCount==1;
+    }
+    else
+        return false;
 }
 
 
@@ -893,7 +1034,7 @@ bool SidebarController::CanModifyChildWindowWidth (void) const
 
 sal_Int32 SidebarController::SetChildWindowWidth (const sal_Int32 nNewWidth)
 {
-    SfxSplitWindow* pSplitWindow = dynamic_cast<SfxSplitWindow*>(mpParentWindow->GetParent());
+    SfxSplitWindow* pSplitWindow = GetSplitWindow();
     if (pSplitWindow == NULL)
         return 0;
 
@@ -911,7 +1052,8 @@ sal_Int32 SidebarController::SetChildWindowWidth (const sal_Int32 nNewWidth)
         Size(nNewWidth, aWindowSize.Height()),
         nColumn,
         nRow);
-        
+    static_cast<SplitWindow*>(pSplitWindow)->Split();
+
     return static_cast<sal_Int32>(nColumnWidth);
 }
 
@@ -920,23 +1062,76 @@ sal_Int32 SidebarController::SetChildWindowWidth (const sal_Int32 nNewWidth)
 
 void SidebarController::RestrictWidth (void)
 {
-    SfxSplitWindow* pSplitWindow = dynamic_cast<SfxSplitWindow*>(mpParentWindow->GetParent());
+    SfxSplitWindow* pSplitWindow = GetSplitWindow();
     if (pSplitWindow != NULL)
     {
         const sal_uInt16 nId (pSplitWindow->GetItemId(mpParentWindow));
         const sal_uInt16 nSetId (pSplitWindow->GetSet(nId));
-        // Minimum width is always that of the tabbar.
-        const sal_Int32 nMinimumWidth (TabBar::GetDefaultWidth());
-        // Maximum width depends on whether the deck is open or closed.
-        const sal_Int32 nMaximumWidth (
-            mbIsDeckClosed
-                ? TabBar::GetDefaultWidth()
-                : 400);
         pSplitWindow->SetItemSizeRange(
             nSetId,
-            Range(nMinimumWidth, nMaximumWidth));
-        if (nMinimumWidth == nMaximumWidth)
-            pSplitWindow->SetItemSize(nSetId, nMinimumWidth);
+            Range(TabBar::GetDefaultWidth(), gnMaximumSidebarWidth));
+    }
+}
+
+
+
+
+SfxSplitWindow* SidebarController::GetSplitWindow (void)
+{
+    if (mpParentWindow != NULL)
+    {
+        SfxSplitWindow* pSplitWindow = dynamic_cast<SfxSplitWindow*>(mpParentWindow->GetParent());
+        if (pSplitWindow != mpSplitWindow)
+        {
+            if (mpSplitWindow != NULL)
+                mpSplitWindow->RemoveEventListener(LINK(this, SidebarController, WindowEventHandler));
+
+            mpSplitWindow = pSplitWindow;
+            
+            if (mpSplitWindow != NULL)
+                mpSplitWindow->AddEventListener(LINK(this, SidebarController, WindowEventHandler));
+        }
+        return mpSplitWindow;
+    }
+    else
+        return NULL;
+}
+
+
+
+
+void SidebarController::UpdateCloseIndicator (const bool bCloseAfterDrag)
+{
+    if (mpParentWindow == NULL)
+        return;
+
+    if (bCloseAfterDrag)
+    {
+        // Make sure that the indicator exists.
+        if ( ! mpCloseIndicator)
+        {
+            mpCloseIndicator.reset(new FixedImage(mpParentWindow));
+            FixedImage* pFixedImage = static_cast<FixedImage*>(mpCloseIndicator.get());
+            const Image aImage (Theme::GetImage(Theme::Image_CloseIndicator));
+            pFixedImage->SetImage(aImage);
+            pFixedImage->SetSizePixel(aImage.GetSizePixel());
+            pFixedImage->SetBackground(Theme::GetWallpaper(Theme::Paint_DeckBackground));
+        }
+        
+        // Place and show the indicator.
+        const Size aWindowSize (mpParentWindow->GetSizePixel());
+        const Size aImageSize (mpCloseIndicator->GetSizePixel());
+        mpCloseIndicator->SetPosPixel(
+            Point(
+                aWindowSize.Width() - TabBar::GetDefaultWidth() - aImageSize.Width(),
+                (aWindowSize.Height() - aImageSize.Height())/2));
+        mpCloseIndicator->Show();
+    }
+    else
+    {
+        // Hide but don't delete the indicator.
+        if (mpCloseIndicator)
+            mpCloseIndicator->Hide();
     }
 }
 
@@ -982,6 +1177,23 @@ void SidebarController::UpdateTitleBarIcons (void)
                : pPanelDescriptor->msTitleBarIconURL);
         (*iPanel)->GetTitleBar()->SetIcon(Tools::GetImage(sIconURL, mxFrame));
     }
+}
+
+
+
+
+void SidebarController::ShowPanel (const Panel& rPanel)
+{
+    if (mpCurrentDeck)
+        mpCurrentDeck->ShowPanel(rPanel);
+}
+
+
+
+
+Context SidebarController::GetCurrentContext (void) const
+{
+    return maCurrentContext;
 }
 
 

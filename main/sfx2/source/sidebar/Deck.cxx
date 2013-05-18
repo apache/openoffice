@@ -26,10 +26,11 @@
 #include "DeckLayouter.hxx"
 #include "DrawHelper.hxx"
 #include "DeckTitleBar.hxx"
+#include "PanelTitleBar.hxx"
 #include "Paint.hxx"
 #include "Panel.hxx"
 #include "ToolBoxBackground.hxx"
-#include "Tools.hxx"
+#include "sfx2/sidebar/Tools.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 
 #include <vcl/dockwin.hxx>
@@ -220,6 +221,64 @@ void Deck::DataChanged (const DataChangedEvent& rEvent)
 
 
 
+long Deck::Notify (NotifyEvent& rEvent)
+{
+    if (rEvent.GetType() == EVENT_COMMAND)
+    {
+        CommandEvent* pCommandEvent = reinterpret_cast<CommandEvent*>(rEvent.GetData());
+        if (pCommandEvent != NULL)
+            switch (pCommandEvent->GetCommand())
+            {
+                case COMMAND_WHEEL:
+                    return ProcessWheelEvent(pCommandEvent, rEvent)
+                        ? sal_True
+                        : sal_False;
+
+                default:
+                    break;
+            }
+    }
+    
+    return Window::Notify(rEvent);
+}
+
+
+
+
+bool Deck::ProcessWheelEvent (
+    CommandEvent* pCommandEvent,
+    NotifyEvent& rEvent)
+{
+    if ( ! mpVerticalScrollBar)
+        return false;
+    if ( ! mpVerticalScrollBar->IsVisible())
+        return false;
+
+    // Ignore all wheel commands from outside the vertical scroll bar.
+    // Otherwise after a scroll we might land on a spin field and
+    // subsequent wheel events would change the value of that control.
+    if (rEvent.GetWindow() != mpVerticalScrollBar.get())
+        return true;
+
+    // Get the wheel data and check that it describes a valid vertical
+    // scroll.
+    const CommandWheelData* pData = pCommandEvent->GetWheelData();
+    if (pData==NULL
+        || pData->GetModifier()
+        || pData->GetMode() != COMMAND_WHEEL_SCROLL
+        || pData->IsHorz())
+        return false;
+
+    // Execute the actual scroll action.
+    long nDelta = pData->GetDelta();
+    mpVerticalScrollBar->DoScroll(
+        mpVerticalScrollBar->GetThumbPos() - nDelta);
+    return true;
+}
+
+
+
+
 void Deck::SetPanels (const SharedPanelContainer& rPanels)
 {
     maPanels = rPanels;
@@ -240,8 +299,6 @@ const SharedPanelContainer& Deck::GetPanels (void) const
 
 void Deck::RequestLayout (void)
 {
-    //    PrintWindowTree();
-
     DeckLayouter::LayoutDeck(
         GetContentArea(),
         maPanels,
@@ -250,8 +307,6 @@ void Deck::RequestLayout (void)
         *mpScrollContainer,
         *mpFiller,
         *mpVerticalScrollBar);
-
-    Invalidate();
 }
 
 
@@ -260,6 +315,38 @@ void Deck::RequestLayout (void)
 ::Window* Deck::GetPanelParentWindow (void)
 {
     return mpScrollContainer.get();
+}
+
+
+
+
+void Deck::ShowPanel (const Panel& rPanel)
+{
+    if (mpVerticalScrollBar && mpVerticalScrollBar->IsVisible())
+    {
+        // Get vertical extent of the panel.
+        sal_Int32 nPanelTop (rPanel.GetPosPixel().Y());
+        const sal_Int32 nPanelBottom (nPanelTop + rPanel.GetSizePixel().Height() - 1);
+        // Add the title bar into the extent.
+        if (rPanel.GetTitleBar() != NULL && rPanel.GetTitleBar()->IsVisible())
+            nPanelTop = rPanel.GetTitleBar()->GetPosPixel().Y();
+
+        // Determine what the new thumb position should be like.
+        // When the whole panel does not fit then make its top visible
+        // and it off at the bottom.
+        sal_Int32 nNewThumbPos (mpVerticalScrollBar->GetThumbPos());
+        if (nPanelBottom >= nNewThumbPos+mpVerticalScrollBar->GetVisibleSize())
+            nNewThumbPos = nPanelBottom - mpVerticalScrollBar->GetVisibleSize();
+        if (nPanelTop < nNewThumbPos)
+            nNewThumbPos = nPanelTop;
+        
+        mpVerticalScrollBar->SetThumbPos(nNewThumbPos);
+        mpScrollContainer->SetPosPixel(
+            Point(
+                mpScrollContainer->GetPosPixel().X(),
+                -nNewThumbPos));
+
+    }    
 }
 
 
@@ -385,5 +472,6 @@ void Deck::ScrollContainerWindow::SetSeparators (const ::std::vector<sal_Int32>&
 {
     maSeparators = rSeparators;
 }
+
 
 } } // end of namespace sfx2::sidebar

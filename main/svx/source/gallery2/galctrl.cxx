@@ -300,14 +300,25 @@ void GalleryPreview::PreviewMedia( const INetURLObject& rURL )
 
 // ------------------------------------------------------------------------
 
-void drawCheckered(OutputDevice& rOut, const Point& rPos, const Size& rSize)
+void drawTransparenceBackground(OutputDevice& rOut, const Point& rPos, const Size& rSize)
 {
-    // draw checkered background
-    static const sal_uInt32 nLen(8);
-    static const Color aW(COL_WHITE);
-    static const Color aG(0xef, 0xef, 0xef);
+    const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
 
-    rOut.DrawCheckered(rPos, rSize, nLen, aW, aG);
+    if(rStyleSettings.GetPreviewUsesCheckeredBackground())
+    {
+        // draw checkered background
+        static const sal_uInt32 nLen(8);
+        static const Color aW(COL_WHITE);
+        static const Color aG(0xef, 0xef, 0xef);
+
+        rOut.DrawCheckered(rPos, rSize, nLen, aW, aG);
+    }
+    else
+    {
+        rOut.SetLineColor();
+        rOut.SetFillColor(rStyleSettings.GetFieldColor());
+        rOut.DrawRect(Rectangle(rPos, rSize));
+    }
 }
 
 // -------------------
@@ -365,85 +376,160 @@ void GalleryIconView::UserDraw( const UserDrawEvent& rUDEvt )
 {
 	const sal_uInt16 nId = rUDEvt.GetItemId();
 
-	if( nId && mpTheme )
-	{
-		SgaObject* pObj = mpTheme->AcquireObject( nId - 1 );
+    if( nId && mpTheme )
+    {
+        const Rectangle& rRect = rUDEvt.GetRect();
+        const Size aSize(rRect.GetWidth(), rRect.GetHeight());
+        BitmapEx aBitmapEx;
+        Size aPreparedSize;
+        String aItemTextTitle;
+        String aItemTextPath;
 
-		if( pObj )
-		{
-			const Rectangle&	rRect = rUDEvt.GetRect();
-			OutputDevice*		pDev = rUDEvt.GetDevice();
-			Graphic 			aGraphic;
-            bool bTransparent(false);
+        mpTheme->GetPreviewBitmapExAndStrings(nId - 1, aBitmapEx, aPreparedSize, aItemTextTitle, aItemTextPath);
 
-			if( pObj->IsThumbBitmap() )
-			{
-				BitmapEx aBitmapEx;
+        bool bNeedToCreate(aBitmapEx.IsEmpty());
 
-				if( pObj->GetObjKind() == SGA_OBJ_SOUND )
-                {
-                    Bitmap aTemp = pObj->GetThumbBmp().GetBitmap();
-                    
-                    aTemp.Replace( COL_LIGHTMAGENTA, COL_WHITE );
-                    aBitmapEx = BitmapEx(aTemp);
-                }
-                else
-                {
-                    aBitmapEx = pObj->GetThumbBmp();
-                    bTransparent = aBitmapEx.IsTransparent();
-                }
+        if(!bNeedToCreate && !aItemTextTitle.Len())
+        {
+            bNeedToCreate = true;
+        }
 
-				if( ( pDev->GetBitCount() <= 8 ) && ( aBitmapEx.GetBitCount() >= 8 ) )
-                {
-					aBitmapEx.Dither( BMP_DITHER_FLOYD );
-                }
+        if(!bNeedToCreate && aPreparedSize != aSize)
+        {
+            bNeedToCreate = true;
+        }
 
-				aGraphic = aBitmapEx;
-			}
-			else
+        if(bNeedToCreate)
+        {
+            SgaObject* pObj = mpTheme->AcquireObject(nId - 1);
+
+            if(pObj)
             {
-				aGraphic = pObj->GetThumbMtf();
-                bTransparent = true;
+                aBitmapEx = pObj->createPreviewBitmapEx(aSize);
+                aItemTextTitle = GalleryBrowser2::GetItemText(*mpTheme, *pObj, GALLERY_ITEM_TITLE);
+
+                mpTheme->SetPreviewBitmapExAndStrings(nId - 1, aBitmapEx, aSize, aItemTextTitle, aItemTextPath);
+                mpTheme->ReleaseObject(pObj);
+            }
+        }
+
+        if(!aBitmapEx.IsEmpty())
+        {
+            const Size aBitmapExSizePixel(aBitmapEx.GetSizePixel());
+            const Point aPos(
+                ((aSize.Width() - aBitmapExSizePixel.Width()) >> 1) + rRect.Left(),
+                ((aSize.Height() - aBitmapExSizePixel.Height()) >> 1) + rRect.Top());
+            OutputDevice* pDev = rUDEvt.GetDevice();
+
+            if(aBitmapEx.IsTransparent())
+            {
+                // draw checkered background
+                drawTransparenceBackground(*pDev, aPos, aBitmapExSizePixel);
             }
 
-			Size aSize( aGraphic.GetSizePixel( pDev ) );
+            pDev->DrawBitmapEx(aPos, aBitmapEx);
+        }
 
-			if ( aSize.Width() && aSize.Height() )
-			{
-				if( ( aSize.Width() > rRect.GetWidth() ) || ( aSize.Height() > rRect.GetHeight() ) )
-				{
-					Point			aNewPos;
-					const double	fBmpWH	= (double) aSize.Width() / aSize.Height();
-					const double	fThmpWH = (double) rRect.GetWidth() / rRect.GetHeight();
+        SetItemText(nId, aItemTextTitle);
 
-					// Bitmap an Thumbgroesse anpassen
-					if ( fBmpWH < fThmpWH )
-					{
-						aSize.Width() = (long) ( rRect.GetHeight() * fBmpWH );
-						aSize.Height()= rRect.GetHeight();
-					}
-					else
-					{
-						aSize.Width() = rRect.GetWidth();
-						aSize.Height()= (long) ( rRect.GetWidth() / fBmpWH );
-					}
-				}
-
-				const Point aPos( ( ( rRect.GetWidth() - aSize.Width() ) >> 1 ) + rRect.Left(),
-								  ( ( rRect.GetHeight() - aSize.Height() ) >> 1 ) + rRect.Top() );
-
-                if(bTransparent)
-                {
-                    // draw checkered background
-                    drawCheckered(*pDev, aPos, aSize);
-                }
-
-				aGraphic.Draw( pDev, aPos, aSize );
-			}
-
-			SetItemText( nId, GalleryBrowser2::GetItemText( *mpTheme, *pObj, GALLERY_ITEM_TITLE) );
-			mpTheme->ReleaseObject( pObj );
-		}
+		//SgaObject* pObj = mpTheme->AcquireObject( nId - 1 );
+        //
+		//if( pObj )
+		//{
+        //    const Rectangle& rRect = rUDEvt.GetRect();
+        //    const Size aSize(rRect.GetWidth(), rRect.GetHeight());
+        //    const BitmapEx aBitmapEx(pObj->createPreviewBitmapEx(aSize));
+        //    const Size aBitmapExSizePixel(aBitmapEx.GetSizePixel());
+        //
+        //    if(!aBitmapEx.IsEmpty())
+        //    {
+        //        const Point aPos(
+        //            ((aSize.Width() - aBitmapExSizePixel.Width()) >> 1) + rRect.Left(),
+        //            ((aSize.Height() - aBitmapExSizePixel.Height()) >> 1) + rRect.Top());
+        //        OutputDevice* pDev = rUDEvt.GetDevice();
+        //
+        //        if(aBitmapEx.IsTransparent())
+        //        {
+        //            // draw checkered background
+        //            drawTransparenceBackground(*pDev, aPos, aBitmapExSizePixel);
+        //        }
+        //
+        //        pDev->DrawBitmapEx(aPos, aBitmapEx);
+        //    }
+        //
+		//	//const Rectangle&	rRect = rUDEvt.GetRect();
+		//	//OutputDevice*		pDev = rUDEvt.GetDevice();
+		//	//Graphic 			aGraphic;
+        //    //bool bTransparent(false);
+        //    //
+		//	//if( pObj->IsThumbBitmap() )
+		//	//{
+		//	//	BitmapEx aBitmapEx;
+        //    //
+		//	//	if( pObj->GetObjKind() == SGA_OBJ_SOUND )
+        //    //    {
+        //    //        Bitmap aTemp = pObj->GetThumbBmp().GetBitmap();
+        //    //        
+        //    //        aTemp.Replace( COL_LIGHTMAGENTA, COL_WHITE );
+        //    //        aBitmapEx = BitmapEx(aTemp);
+        //    //    }
+        //    //    else
+        //    //    {
+        //    //        aBitmapEx = pObj->GetThumbBmp();
+        //    //        bTransparent = aBitmapEx.IsTransparent();
+        //    //    }
+        //    //
+		//	//	if( ( pDev->GetBitCount() <= 8 ) && ( aBitmapEx.GetBitCount() >= 8 ) )
+        //    //    {
+		//	//		aBitmapEx.Dither( BMP_DITHER_FLOYD );
+        //    //    }
+        //    //
+		//	//	aGraphic = aBitmapEx;
+		//	//}
+		//	//else
+        //    //{
+		//	//	aGraphic = pObj->GetThumbMtf();
+        //    //    bTransparent = true;
+        //    //}
+        //    //
+		//	//Size aSize( aGraphic.GetSizePixel( pDev ) );
+        //    //
+		//	//if ( aSize.Width() && aSize.Height() )
+		//	//{
+		//	//	if( ( aSize.Width() > rRect.GetWidth() ) || ( aSize.Height() > rRect.GetHeight() ) )
+		//	//	{
+		//	//		Point			aNewPos;
+		//	//		const double	fBmpWH	= (double) aSize.Width() / aSize.Height();
+		//	//		const double	fThmpWH = (double) rRect.GetWidth() / rRect.GetHeight();
+        //    //
+		//	//		// Bitmap an Thumbgroesse anpassen
+		//	//		if ( fBmpWH < fThmpWH )
+		//	//		{
+		//	//			aSize.Width() = (long) ( rRect.GetHeight() * fBmpWH );
+		//	//			aSize.Height()= rRect.GetHeight();
+		//	//		}
+		//	//		else
+		//	//		{
+		//	//			aSize.Width() = rRect.GetWidth();
+		//	//			aSize.Height()= (long) ( rRect.GetWidth() / fBmpWH );
+		//	//		}
+		//	//	}
+        //    //
+		//	//	const Point aPos( ( ( rRect.GetWidth() - aSize.Width() ) >> 1 ) + rRect.Left(),
+		//	//					  ( ( rRect.GetHeight() - aSize.Height() ) >> 1 ) + rRect.Top() );
+        //    //
+        //    //    if(bTransparent)
+        //    //    {
+        //    //        // draw checkered background
+        //    //        drawTransparenceBackground(*pDev, aPos, aSize);
+        //    //    }
+        //    //
+		//	//	aGraphic.Draw( pDev, aPos, aSize );
+		//	//}
+        //
+		//	SetItemText( nId, GalleryBrowser2::GetItemText( *mpTheme, *pObj, GALLERY_ITEM_TITLE) );
+		//	mpTheme->ReleaseObject( pObj );
+		//}
 	}
 }
 
@@ -626,80 +712,171 @@ void GalleryListView::PaintField( OutputDevice& rDev, const Rectangle& rRect, sa
 
 	if( mpTheme && ( mnCurRow < mpTheme->GetObjectCount() ) )
 	{
-    	SgaObject* pObj = mpTheme->AcquireObject( mnCurRow );
+        const Size aSize(rRect.GetHeight(), rRect.GetHeight());
+        BitmapEx aBitmapEx;
+        Size aPreparedSize;
+        String aItemTextTitle;
+        String aItemTextPath;
 
-		if( pObj )
-		{
-            const long nTextPosY = rRect.Top() + ( ( rRect.GetHeight() - rDev.GetTextHeight() ) >> 1 );
+        mpTheme->GetPreviewBitmapExAndStrings(mnCurRow, aBitmapEx, aPreparedSize, aItemTextTitle, aItemTextPath);
 
-            if( GALLERY_BRWBOX_TITLE == nColumnId )
+        bool bNeedToCreate(aBitmapEx.IsEmpty());
+
+        if(!bNeedToCreate && GALLERY_BRWBOX_TITLE == nColumnId && !aItemTextTitle.Len())
+        {
+            bNeedToCreate = true;
+        }
+
+        if(!bNeedToCreate && GALLERY_BRWBOX_PATH == nColumnId && !aItemTextPath.Len())
+        {
+            bNeedToCreate = true;
+        }
+
+        if(!bNeedToCreate && aPreparedSize != aSize)
+        {
+            bNeedToCreate = true;
+        }
+
+        if(bNeedToCreate)
+        {
+            SgaObject* pObj = mpTheme->AcquireObject(mnCurRow);
+
+            if(pObj)
             {
-                Rectangle       aOutputRect( rRect.TopLeft(), Size( rRect.GetHeight(), rRect.GetHeight() ) );
-    			GraphicObject   aGrfObj;
-                bool bTransparent(false);
+                aBitmapEx = pObj->createPreviewBitmapEx(aSize);
+                aItemTextTitle = GalleryBrowser2::GetItemText(*mpTheme, *pObj, GALLERY_ITEM_TITLE);
+                aItemTextPath = GalleryBrowser2::GetItemText(*mpTheme, *pObj, GALLERY_ITEM_PATH);
 
-                if( pObj->GetObjKind() == SGA_OBJ_SOUND )
-                {
-                    aGrfObj = Graphic( BitmapEx( GAL_RESID( RID_SVXBMP_GALLERY_MEDIA ) ) );
-                }
-                else if( pObj->IsThumbBitmap() )
-                {
-                    const BitmapEx aBitmapEx(pObj->GetThumbBmp());
-
-                    bTransparent = aBitmapEx.IsTransparent();
-				    aGrfObj = Graphic(aBitmapEx);
-                }
-			    else
-                {
-				    aGrfObj = Graphic( pObj->GetThumbMtf() );
-                    bTransparent = true;
-                }
-
-			    Size aSize( rDev.LogicToPixel( aGrfObj.GetPrefSize(), aGrfObj.GetPrefMapMode() ) );
-
-			    if( aSize.Width() && aSize.Height() )
-			    {
-				    if( ( aSize.Width() > aOutputRect.GetWidth() ) || ( aSize.Height() > aOutputRect.GetHeight() ) )
-				    {
-					    Point			aNewPos;
-					    const double	fBmpWH	= (double) aSize.Width() / aSize.Height();
-					    const double	fThmpWH = (double) aOutputRect.GetWidth() / aOutputRect.GetHeight();
-
-					    // Bitmap an Thumbgroesse anpassen
-					    if ( fBmpWH < fThmpWH )
-					    {
-						    aSize.Width() = (long) ( aOutputRect.GetHeight() * fBmpWH );
-						    aSize.Height()= aOutputRect.GetHeight();
-					    }
-					    else
-					    {
-						    aSize.Width() = aOutputRect.GetWidth();
-						    aSize.Height()= (long) ( aOutputRect.GetWidth() / fBmpWH );
-					    }
-				    }
-
-                    aSize.Width() = Max( aSize.Width(), 4L );
-                    aSize.Height() = Max( aSize.Height(), 4L );
-
-				    const Point aPos( ( ( aOutputRect.GetWidth() - aSize.Width() ) >> 1 ) + aOutputRect.Left(),
-								      ( ( aOutputRect.GetHeight() - aSize.Height() ) >> 1 ) + aOutputRect.Top() );
-
-                    if(bTransparent)
-                    {
-                        // draw checkered background
-                        drawCheckered(rDev, aPos, aSize);
-                    }
-
-                    aGrfObj.Draw( &rDev, aPos, aSize );
-			    }
-
-			    rDev.DrawText( Point( aOutputRect.Right() + 6, nTextPosY ), GalleryBrowser2::GetItemText( *mpTheme, *pObj, GALLERY_ITEM_TITLE ) );
+                mpTheme->SetPreviewBitmapExAndStrings(mnCurRow, aBitmapEx, aSize, aItemTextTitle, aItemTextPath);
+                mpTheme->ReleaseObject(pObj);
             }
-            else if( GALLERY_BRWBOX_PATH == nColumnId )
-                rDev.DrawText( Point( rRect.Left(), nTextPosY ), GalleryBrowser2::GetItemText( *mpTheme, *pObj, GALLERY_ITEM_PATH ) );
+        }
 
-		    mpTheme->ReleaseObject( pObj );
-		}
+        const long nTextPosY(rRect.Top() + ((rRect.GetHeight() - rDev.GetTextHeight()) >> 1));
+
+        if(GALLERY_BRWBOX_TITLE == nColumnId)
+        {
+            if(!aBitmapEx.IsEmpty())
+            {
+                const Size aBitmapExSizePixel(aBitmapEx.GetSizePixel());
+                const Point aPos(
+                    ((aSize.Width() - aBitmapExSizePixel.Width()) >> 1) + rRect.Left(),
+                    ((aSize.Height() - aBitmapExSizePixel.Height()) >> 1) + rRect.Top());
+
+                if(aBitmapEx.IsTransparent())
+                {
+                    // draw checkered background
+                    drawTransparenceBackground(rDev, aPos, aBitmapExSizePixel);
+                }
+
+                rDev.DrawBitmapEx(aPos, aBitmapEx);
+            }
+
+            rDev.DrawText(Point(rRect.Left() + rRect.GetHeight() + 6, nTextPosY), aItemTextTitle);
+        }
+        else if(GALLERY_BRWBOX_PATH == nColumnId)
+        {
+            rDev.DrawText(Point(rRect.Left(), nTextPosY), aItemTextPath);
+        }
+
+
+        //SgaObject* pObj = mpTheme->AcquireObject( mnCurRow );
+        //
+		//if( pObj )
+		//{
+        //    const long nTextPosY = rRect.Top() + ( ( rRect.GetHeight() - rDev.GetTextHeight() ) >> 1 );
+        //
+        //    if( GALLERY_BRWBOX_TITLE == nColumnId )
+        //    {
+        //        const Size aSize(rRect.GetHeight(), rRect.GetHeight());
+        //        const BitmapEx aBitmapEx(pObj->createPreviewBitmapEx(aSize));
+        //        const Size aBitmapExSizePixel(aBitmapEx.GetSizePixel());
+        //
+        //        if(!aBitmapEx.IsEmpty())
+        //        {
+        //            const Point aPos(
+        //                ((aSize.Width() - aBitmapExSizePixel.Width()) >> 1) + rRect.Left(),
+        //                ((aSize.Height() - aBitmapExSizePixel.Height()) >> 1) + rRect.Top());
+        //
+        //            if(aBitmapEx.IsTransparent())
+        //            {
+        //                // draw checkered background
+        //                drawTransparenceBackground(rDev, aPos, aBitmapExSizePixel);
+        //            }
+        //
+        //            rDev.DrawBitmapEx(aPos, aBitmapEx);
+        //        }
+        //
+        //
+        //        //Rectangle       aOutputRect( rRect.TopLeft(), Size( rRect.GetHeight(), rRect.GetHeight() ) );
+    	//		//GraphicObject   aGrfObj;
+        //        //bool bTransparent(false);
+        //        //
+        //        //if( pObj->GetObjKind() == SGA_OBJ_SOUND )
+        //        //{
+        //        //    aGrfObj = Graphic( BitmapEx( GAL_RESID( RID_SVXBMP_GALLERY_MEDIA ) ) );
+        //        //}
+        //        //else if( pObj->IsThumbBitmap() )
+        //        //{
+        //        //    const BitmapEx aBitmapEx(pObj->GetThumbBmp());
+        //        //
+        //        //    bTransparent = aBitmapEx.IsTransparent();
+		//		//    aGrfObj = Graphic(aBitmapEx);
+        //        //}
+		//	    //else
+        //        //{
+		//		//    aGrfObj = Graphic( pObj->GetThumbMtf() );
+        //        //    bTransparent = true;
+        //        //}
+        //        //
+		//	    //Size aSize( rDev.LogicToPixel( aGrfObj.GetPrefSize(), aGrfObj.GetPrefMapMode() ) );
+        //        //
+		//	    //if( aSize.Width() && aSize.Height() )
+		//	    //{
+		//		//    if( ( aSize.Width() > aOutputRect.GetWidth() ) || ( aSize.Height() > aOutputRect.GetHeight() ) )
+		//		//    {
+		//		//	    Point			aNewPos;
+		//		//	    const double	fBmpWH	= (double) aSize.Width() / aSize.Height();
+		//		//	    const double	fThmpWH = (double) aOutputRect.GetWidth() / aOutputRect.GetHeight();
+        //        //
+		//		//	    // Bitmap an Thumbgroesse anpassen
+		//		//	    if ( fBmpWH < fThmpWH )
+		//		//	    {
+		//		//		    aSize.Width() = (long) ( aOutputRect.GetHeight() * fBmpWH );
+		//		//		    aSize.Height()= aOutputRect.GetHeight();
+		//		//	    }
+		//		//	    else
+		//		//	    {
+		//		//		    aSize.Width() = aOutputRect.GetWidth();
+		//		//		    aSize.Height()= (long) ( aOutputRect.GetWidth() / fBmpWH );
+		//		//	    }
+		//		//    }
+        //        //
+        //        //    aSize.Width() = Max( aSize.Width(), 4L );
+        //        //    aSize.Height() = Max( aSize.Height(), 4L );
+        //        //
+		//		//    const Point aPos( ( ( aOutputRect.GetWidth() - aSize.Width() ) >> 1 ) + aOutputRect.Left(),
+		//		//				      ( ( aOutputRect.GetHeight() - aSize.Height() ) >> 1 ) + aOutputRect.Top() );
+        //        //
+        //        //    if(bTransparent)
+        //        //    {
+        //        //        // draw checkered background
+        //        //        drawTransparenceBackground(rDev, aPos, aSize);
+        //        //    }
+        //        //
+        //        //    aGrfObj.Draw( &rDev, aPos, aSize );
+		//	    //}
+        //
+        //        // aOutputRect.Right() is here rRect.Left() + rRect.GetHeight()
+		//	    rDev.DrawText( Point( rRect.Left() + rRect.GetHeight() + 6, nTextPosY ), GalleryBrowser2::GetItemText( *mpTheme, *pObj, GALLERY_ITEM_TITLE ) );
+        //    }
+        //    else if( GALLERY_BRWBOX_PATH == nColumnId )
+        //    {
+        //        rDev.DrawText( Point( rRect.Left(), nTextPosY ), GalleryBrowser2::GetItemText( *mpTheme, *pObj, GALLERY_ITEM_PATH ) );
+        //    }
+        //
+		//    mpTheme->ReleaseObject( pObj );
+		//}
 	}
 
     rDev.Pop();

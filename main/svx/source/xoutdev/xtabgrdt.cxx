@@ -19,42 +19,26 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
 // include ---------------------------------------------------------------
-
-#ifndef SVX_LIGHT
-
 #include <com/sun/star/container/XNameContainer.hpp>
 #include "svx/XPropertyTable.hxx"
 #include <unotools/ucbstreamhelper.hxx>
-
 #include "xmlxtexp.hxx"
 #include "xmlxtimp.hxx"
-
-#endif
-
 #include <tools/urlobj.hxx>
 #include <vcl/virdev.hxx>
-#include <svl/itemset.hxx>
-#include <sfx2/docfile.hxx>
 #include <svx/dialogs.hrc>
 #include <svx/dialmgr.hxx>
 #include <svx/xtable.hxx>
-#include <svx/xpool.hxx>
-#include <svx/xfillit0.hxx>
-#include <svx/xflgrit.hxx>
-
-#include <svx/svdorect.hxx>
-#include <svx/svdmodel.hxx>
-#include <svx/sdr/contact/objectcontactofobjlistpainter.hxx>
-#include <svx/sdr/contact/displayinfo.hxx>
 #include <vcl/svapp.hxx>
-#include <svx/xlnclit.hxx>
-#include <svx/xgrscit.hxx>
+#include <drawinglayer/attribute/fillgradientattribute.hxx>
+#include <drawinglayer/primitive2d/polypolygonprimitive2d.hxx>
+#include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
+#include <drawinglayer/processor2d/processor2dtools.hxx>
+#include <basegfx/polygon/b2dpolygontools.hxx>
 
 #define GLOBALOVERFLOW
 
@@ -62,99 +46,21 @@ using namespace com::sun::star;
 using namespace rtl;
 
 sal_Unicode const pszExtGradient[]	= {'s','o','g'};
-
-char const aChckGradient[]  = { 0x04, 0x00, 'S','O','G','L'};	// < 5.2
-char const aChckGradient0[] = { 0x04, 0x00, 'S','O','G','0'};	// = 5.2
-char const aChckXML[]       = { '<', '?', 'x', 'm', 'l' };		// = 6.0
+//char const aChckGradient[]  = { 0x04, 0x00, 'S','O','G','L'};	// < 5.2
+//char const aChckGradient0[] = { 0x04, 0x00, 'S','O','G','0'};	// = 5.2
+//char const aChckXML[]       = { '<', '?', 'x', 'm', 'l' };		// = 6.0
 
 // --------------------
 // class XGradientList
 // --------------------
 
-class impXGradientList
-{
-private:
-	VirtualDevice*          mpVirtualDevice;
-	SdrModel*				mpSdrModel;
-	SdrObject*			    mpBackgroundObject;
-
-public:
-    impXGradientList(VirtualDevice* pV, SdrModel* pM, SdrObject* pB)
-    :   mpVirtualDevice(pV),
-        mpSdrModel(pM),
-        mpBackgroundObject(pB)
-    {}
-
-    ~impXGradientList()
-    {
-        delete mpVirtualDevice;
-        SdrObject::Free(mpBackgroundObject);
-        delete mpSdrModel;
-    }
-
-    VirtualDevice* getVirtualDevice() const { return mpVirtualDevice; }
-    SdrObject* getBackgroundObject() const { return mpBackgroundObject; }
-};
-
-void XGradientList::impCreate()
-{
-    if(!mpData)
-    {
-    	const Point aZero(0, 0);
-		const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
-
-        VirtualDevice* pVirDev = new VirtualDevice;
-		OSL_ENSURE(0 != pVirDev, "XGradientList: no VirtualDevice created!" );
-		pVirDev->SetMapMode(MAP_100TH_MM);
-        const Size& rSize = rStyleSettings.GetListBoxPreviewDefaultPixelSize();
-		const Size aSize(pVirDev->PixelToLogic(rSize));
-		pVirDev->SetOutputSize(aSize);
-        pVirDev->SetDrawMode(rStyleSettings.GetHighContrastMode()
-            ? DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT
-            : DRAWMODE_DEFAULT);
-        pVirDev->SetBackground(rStyleSettings.GetFieldColor());
-
-	    SdrModel* pSdrModel = new SdrModel();
-		OSL_ENSURE(0 != pSdrModel, "XGradientList: no SdrModel created!" );
-	    pSdrModel->GetItemPool().FreezeIdRanges();
-
-        const Size aSinglePixel(pVirDev->PixelToLogic(Size(1, 1)));
-        const Rectangle aBackgroundSize(aZero, Size(aSize.getWidth() - aSinglePixel.getWidth(), aSize.getHeight() - aSinglePixel.getHeight()));
-        SdrObject* pBackgroundObject = new SdrRectObj(aBackgroundSize);
-		OSL_ENSURE(0 != pBackgroundObject, "XGradientList: no BackgroundObject created!" );
-    	pBackgroundObject->SetModel(pSdrModel);
-        pBackgroundObject->SetMergedItem(XFillStyleItem(XFILL_GRADIENT));
-        pBackgroundObject->SetMergedItem(XLineStyleItem(XLINE_SOLID));
-        pBackgroundObject->SetMergedItem(XLineColorItem(String(), Color(COL_BLACK)));
-        pBackgroundObject->SetMergedItem(XGradientStepCountItem(sal_uInt16((rSize.Width() + rSize.Height()) / 3)));
-
-        mpData = new impXGradientList(pVirDev, pSdrModel, pBackgroundObject);
-		OSL_ENSURE(0 != mpData, "XGradientList: data creation went wrong!" );
-    }
-}
-
-void XGradientList::impDestroy()
-{
-    if(mpData)
-    {
-        delete mpData;
-        mpData = 0;
-    }
-}
-
-XGradientList::XGradientList( const String& rPath, XOutdevItemPool* pInPool )
-:   XPropertyList(rPath, pInPool ),
-    mpData(0)
+XGradientList::XGradientList( const String& rPath )
+:   XPropertyList(rPath )
 {
 }
 
 XGradientList::~XGradientList()
 {
-    if(mpData)
-    {
-        delete mpData;
-        mpData = 0;
-    }
 }
 
 XGradientEntry* XGradientList::Replace(XGradientEntry* pEntry, long nIndex )
@@ -164,15 +70,15 @@ XGradientEntry* XGradientList::Replace(XGradientEntry* pEntry, long nIndex )
 
 XGradientEntry* XGradientList::Remove(long nIndex)
 {
-	return( (XGradientEntry*) XPropertyList::Remove( nIndex, 0 ) );
+	return( (XGradientEntry*) XPropertyList::Remove( nIndex ) );
 }
 
 XGradientEntry* XGradientList::GetGradient(long nIndex) const
 {
-	return( (XGradientEntry*) XPropertyList::Get( nIndex, 0 ) );
+	return( (XGradientEntry*) XPropertyList::Get( nIndex ) );
 }
 
-sal_Bool XGradientList::Load()
+bool XGradientList::Load()
 {
 	if( mbListDirty )
 	{
@@ -183,7 +89,7 @@ sal_Bool XGradientList::Load()
 		if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 		{
 			DBG_ASSERT( !maPath.Len(), "invalid URL" );
-			return sal_False;
+			return false;
 		}
 
 		aURL.Append( maName );
@@ -195,17 +101,18 @@ sal_Bool XGradientList::Load()
 		return SvxXMLXTableImport::load( aURL.GetMainURL( INetURLObject::NO_DECODE ), xTable );
 
 	}
-	return( sal_False );
+
+    return false;
 }
 
-sal_Bool XGradientList::Save()
+bool XGradientList::Save()
 {
 	INetURLObject aURL( maPath );
 
 	if( INET_PROT_NOT_VALID == aURL.GetProtocol() )
 	{
 		DBG_ASSERT( !maPath.Len(), "invalid URL" );
-		return sal_False;
+		return false;
 	}
 
 	aURL.Append( maName );
@@ -217,7 +124,7 @@ sal_Bool XGradientList::Save()
 	return SvxXMLXTableExportComponent::save( aURL.GetMainURL( INetURLObject::NO_DECODE ), xTable );
 }
 
-sal_Bool XGradientList::Create()
+bool XGradientList::Create()
 {
 	XubString aStr( SVX_RES( RID_SVXSTR_GRADIENT ) );
 	xub_StrLen nLen;
@@ -236,29 +143,131 @@ sal_Bool XGradientList::Create()
 	aStr.SetChar(nLen, sal_Unicode('6'));
 	Insert(new XGradientEntry(XGradient(RGB_Color(COL_MAGENTA),RGB_Color(COL_YELLOW ),XGRAD_RECT	  , 1900,60,60,50,100,100),aStr));
 
-	return( sal_True );
+	return true;
 }
 
-Bitmap XGradientList::CreateBitmapForUI( long nIndex )
+Bitmap XGradientList::CreateBitmapForUI(long nIndex)
 {
-    impCreate();
-    VirtualDevice* pVD = mpData->getVirtualDevice();
-    SdrObject* pBackgroundObject = mpData->getBackgroundObject();
+    Bitmap aRetval;
+    OSL_ENSURE(nIndex < Count(), "OOps, access out of range (!)");
 
-	const SfxItemSet& rItemSet = pBackgroundObject->GetMergedItemSet();
-    pBackgroundObject->SetMergedItem(XFillStyleItem(XFILL_GRADIENT));
-    pBackgroundObject->SetMergedItem(XFillGradientItem(rItemSet.GetPool(), GetGradient(nIndex)->GetGradient()));
+    if(nIndex < Count()) 
+    {
+        const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+        const Size& rSize = rStyleSettings.GetListBoxPreviewDefaultPixelSize();
 
-    sdr::contact::SdrObjectVector aObjectVector;
-	aObjectVector.push_back(pBackgroundObject);
-	sdr::contact::ObjectContactOfObjListPainter aPainter(*pVD, aObjectVector, 0);
-	sdr::contact::DisplayInfo aDisplayInfo;
+        // prepare polygon geometry for rectangle
+        const basegfx::B2DPolygon aRectangle(
+            basegfx::tools::createPolygonFromRect(
+                basegfx::B2DRange(0.0, 0.0, rSize.Width(), rSize.Height())));
 
-    pVD->Erase();
-	aPainter.ProcessDisplay(aDisplayInfo);
+        const XGradient& rGradient = GetGradient(nIndex)->GetGradient();
+        const sal_uInt16 nStartIntens(rGradient.GetStartIntens());
+        basegfx::BColor aStart(rGradient.GetStartColor().getBColor());
 
-    const Point aZero(0, 0);
-	return pVD->GetBitmap(aZero, pVD->GetOutputSize());
+        if(nStartIntens != 100)
+        {
+            const basegfx::BColor aBlack;
+            aStart = interpolate(aBlack, aStart, (double)nStartIntens * 0.01);
+        }
+
+        const sal_uInt16 nEndIntens(rGradient.GetEndIntens());
+        basegfx::BColor aEnd(rGradient.GetEndColor().getBColor());
+
+        if(nEndIntens != 100)
+        {
+            const basegfx::BColor aBlack;
+            aEnd = interpolate(aBlack, aEnd, (double)nEndIntens * 0.01);
+        }
+
+        drawinglayer::attribute::GradientStyle aGradientStyle(drawinglayer::attribute::GRADIENTSTYLE_RECT);
+
+        switch(rGradient.GetGradientStyle())
+        {
+            case XGRAD_LINEAR : 
+            {
+                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_LINEAR;
+                break;
+            }
+            case XGRAD_AXIAL : 
+            {
+                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_AXIAL;
+                break;
+            }
+            case XGRAD_RADIAL : 
+            {
+                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_RADIAL;
+                break;
+            }
+            case XGRAD_ELLIPTICAL : 
+            {
+                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_ELLIPTICAL;
+                break;
+            }
+            case XGRAD_SQUARE : 
+            {
+                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_SQUARE; 
+                break;
+            }
+            default : 
+            {
+                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_RECT; // XGRAD_RECT
+                break;
+            }
+        }
+
+        const sal_uInt16 nSteps((rSize.Width() + rSize.Height()) / 3);
+        const drawinglayer::attribute::FillGradientAttribute aFillGradient(
+            aGradientStyle,
+            (double)rGradient.GetBorder() * 0.01,
+            (double)rGradient.GetXOffset() * 0.01,
+            (double)rGradient.GetYOffset() * 0.01,
+            (double)rGradient.GetAngle() * F_PI1800,
+            aStart,
+            aEnd,
+            nSteps);
+
+        const drawinglayer::primitive2d::Primitive2DReference aGradientPrimitive(
+            new drawinglayer::primitive2d::PolyPolygonGradientPrimitive2D(
+                basegfx::B2DPolyPolygon(aRectangle),
+                aFillGradient));
+
+        const basegfx::BColor aBlack(0.0, 0.0, 0.0);
+        const drawinglayer::primitive2d::Primitive2DReference aBlackRectanglePrimitive(
+            new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(
+                aRectangle,
+                aBlack));
+
+        // prepare VirtualDevice
+        VirtualDevice aVirtualDevice;
+        const drawinglayer::geometry::ViewInformation2D aNewViewInformation2D;
+
+        aVirtualDevice.SetOutputSizePixel(rSize);
+        aVirtualDevice.SetDrawMode(rStyleSettings.GetHighContrastMode()
+            ? DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT
+            : DRAWMODE_DEFAULT);
+
+        // create processor and draw primitives
+        drawinglayer::processor2d::BaseProcessor2D* pProcessor2D = drawinglayer::processor2d::createPixelProcessor2DFromOutputDevice(
+            aVirtualDevice, 
+            aNewViewInformation2D);
+
+        if(pProcessor2D)
+        {
+            drawinglayer::primitive2d::Primitive2DSequence aSequence(2);
+
+            aSequence[0] = aGradientPrimitive;
+            aSequence[1] = aBlackRectanglePrimitive;
+
+            pProcessor2D->process(aSequence);
+            delete pProcessor2D;
+        }
+
+        // get result bitmap and scale
+        aRetval = aVirtualDevice.GetBitmap(Point(0, 0), aVirtualDevice.GetOutputSizePixel());
+    }
+
+    return aRetval;
 }
 
 //////////////////////////////////////////////////////////////////////////////

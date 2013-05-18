@@ -64,9 +64,16 @@ public:
     const SharedPanelContainer& GetPanels (void) const;
     void RequestLayout (void);
     ::Window* GetPanelParentWindow (void);
-    
+
+    /** Try to make the panel completely visible.
+        When the whole panel does not fit then make its top visible
+        and it off at the bottom.
+    */
+    void ShowPanel (const Panel& rPanel);
+
     virtual void Paint (const Rectangle& rUpdateArea);
     virtual void DataChanged (const DataChangedEvent& rEvent);
+    virtual long Notify (NotifyEvent& rEvent);
 
     void PrintWindowTree (void);
     void PrintWindowTree (const ::std::vector<Panel*>& rPanels);
@@ -97,8 +104,9 @@ private:
     ::boost::scoped_ptr<ScrollBar> mpVerticalScrollBar;
     
     DECL_LINK(HandleVerticalScrollBarChange,void*);
-
-    
+    bool ProcessWheelEvent (
+        CommandEvent* pCommandEvent,
+        NotifyEvent& rEvent);
 };
 
 

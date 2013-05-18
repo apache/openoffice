@@ -19,24 +19,16 @@
  * 
  *************************************************************/
 
-#ifndef SYSTEM_STL_ROPE
-#define SYSTEM_STL_ROPE
+#include "precompiled_sfx2.hxx"
 
-#include <functional>
-#include <numeric>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 
-#ifdef GCC
 
-#include <ext/rope>
+namespace sfx2 { namespace sidebar {
 
-namespace std
+
+IContextChangeReceiver::~IContextChangeReceiver (void)
 {
-	using __gnu_cxx::rope;
 }
-#else
-#error UNSUPPORTED COMPILER
-#endif
 
-
-#endif
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
+} } // end of namespace ::sd::sidebar

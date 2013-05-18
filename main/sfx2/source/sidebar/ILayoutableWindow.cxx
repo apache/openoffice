@@ -19,52 +19,16 @@
  * 
  *************************************************************/
 
+#include "precompiled_sfx2.hxx"
+
+#include <sfx2/sidebar/ILayoutableWindow.hxx>
 
 
-#include "enumdlg.hrc"
-#include "celltempl.hrc"
-#include <svx/dialogs.hrc>
+namespace sfx2 { namespace sidebar {
 
-TabDialog TAB_CELL_TEMPLATE
+
+ILayoutableWindow::~ILayoutableWindow (void)
 {
-	OutputSize = TRUE ;
-	SVLook = TRUE ;
-	Moveable = TRUE ;
-	Text [ en-US ] = "Cell Style" ;
+}
 
-	Size = MAP_APPFONT ( 289 , 176 ) ;
-
-	TabControl 1
-	{
-		OutputSize = TRUE ;
-		Pos = MAP_APPFONT ( 3 , 3 ) ;
-		Size = MAP_APPFONT ( 260 , 135 ) ;
-		PageList =
-		{
-			PageItem
-			{
-				Identifier = RID_SVXPAGE_CHAR_NAME ;
-				PageResID = RID_SVXPAGE_CHAR_NAME ;
-				Text [ en-US ] = "Font" ;
-			};
-			PageItem
-			{
-				Identifier = RID_SVXPAGE_CHAR_EFFECTS ;
-				PageResID = RID_SVXPAGE_CHAR_EFFECTS ;
-				Text [ en-US ] = "Font Effects" ;
-			};
-			PageItem
-			{
-				Identifier = RID_SVXPAGE_BORDER;
-				PageResID = RID_SVXPAGE_BORDER;
-				Text [ en-US ] = "Borders" ;
-			};
-			PageItem
-			{
-				Identifier = RID_SVXPAGE_AREA;
-				PageResID = RID_SVXPAGE_AREA;
-				Text [ en-US ] = "Background";
-			};
-		};
-	};
-};
+} } // end of namespace ::sd::sidebar

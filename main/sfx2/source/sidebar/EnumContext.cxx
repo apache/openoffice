@@ -88,21 +88,39 @@ sal_Int32 EnumContext::GetCombinedContext (void) const
 
 sal_Int32 EnumContext::GetCombinedContext_DI (void) const
 {
-    switch (meApplication)
-    {
-        case Application_Draw:
-        case Application_Impress:
-            return CombinedEnumContext(Application_DrawImpress, meContext);
-            
-        case Application_Writer:
-        case Application_WriterGlobal:
-        case Application_WriterWeb:
-        case Application_WriterXML:
-            return CombinedEnumContext(Application_WriterVariants, meContext);
-            
-        default:
-            return CombinedEnumContext(meApplication, meContext);
-    }
+    return CombinedEnumContext(GetApplication_DI(), meContext);
+}
+
+
+
+
+EnumContext::Application EnumContext::GetApplication_DI (void) const
+{
+     switch (meApplication)
+     {
+         case Application_Draw:
+         case Application_Impress:
+            return Application_DrawImpress;
+             
+         case Application_Writer:
+         case Application_WriterGlobal:
+         case Application_WriterWeb:
+         case Application_WriterXML:
+         case Application_WriterForm:
+         case Application_WriterReport:
+             return Application_WriterVariants;
+             
+         default:
+             return meApplication;
+     }
+}
+
+
+
+
+EnumContext::Application EnumContext::GetApplication (void) const
+{
+    return meApplication;
 }
 
 
@@ -163,6 +181,8 @@ void EnumContext::ProvideApplicationContainers (void)
         AddEntry(A2S("com.sun.star.text.GlobalDocument"), EnumContext::Application_WriterGlobal);
         AddEntry(A2S("com.sun.star.text.WebDocument"), EnumContext::Application_WriterWeb);
         AddEntry(A2S("com.sun.star.xforms.XMLFormDocument"), EnumContext::Application_WriterXML);
+        AddEntry(A2S("com.sun.star.sdb.FormDesign"), EnumContext::Application_WriterForm);
+        AddEntry(A2S("com.sun.star.sdb.TextReportDesign"), EnumContext::Application_WriterReport);
         AddEntry(A2S("com.sun.star.sheet.SpreadsheetDocument"), EnumContext::Application_Calc);
         AddEntry(A2S("com.sun.star.drawing.DrawingDocument"), EnumContext::Application_Draw);
         AddEntry(A2S("com.sun.star.presentation.PresentationDocument"), EnumContext::Application_Impress);

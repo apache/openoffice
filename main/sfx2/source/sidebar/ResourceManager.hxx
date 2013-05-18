@@ -48,10 +48,6 @@ class ResourceManager
 public:
     static ResourceManager& Instance (void);
 
-    const DeckDescriptor* GetBestMatchingDeck (
-        const Context& rContext,
-        const cssu::Reference<css::frame::XFrame>& rxFrame);
-
     const DeckDescriptor* GetDeckDescriptor (
         const ::rtl::OUString& rsDeckId) const;
     const PanelDescriptor* GetPanelDescriptor (
@@ -68,19 +64,28 @@ public:
         const ::rtl::OUString& rsDeckId,
         const bool bIsEnabled);
 
-    typedef ::std::vector<rtl::OUString> IdContainer;
+    class DeckContextDescriptor
+    {
+    public:
+        ::rtl::OUString msId;
+        bool mbIsEnabled;
+    };
+    typedef ::std::vector<DeckContextDescriptor> DeckContextDescriptorContainer;
+    
     class PanelContextDescriptor
     {
     public:
         ::rtl::OUString msId;
         ::rtl::OUString msMenuCommand;
         bool mbIsInitiallyVisible;
+        bool mbShowForReadOnlyDocuments;
     };
     typedef ::std::vector<PanelContextDescriptor> PanelContextDescriptorContainer;
     
-    const IdContainer& GetMatchingDecks (
-        IdContainer& rDeckDescriptors,
+    const DeckContextDescriptorContainer& GetMatchingDecks (
+        DeckContextDescriptorContainer& rDeckDescriptors,
         const Context& rContext,
+        const bool bIsDocumentReadOnly,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
     const PanelContextDescriptorContainer& GetMatchingPanels (
@@ -89,8 +94,13 @@ public:
         const ::rtl::OUString& rsDeckId,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
-    static ::rtl::OUString GetModuleName (
-        const cssu::Reference<css::frame::XFrame>& rxFrame);
+    /** Remember the expansions state per panel and context.
+        This is not persistent past application end.
+    */
+    void StorePanelExpansionState (
+        const ::rtl::OUString& rsPanelId,
+        const bool bExpansionState,
+        const Context& rContext);
 
 private:
     ResourceManager (void);
@@ -117,6 +127,10 @@ private:
     void GetToolPanelNodeNames (
         ::std::vector<rtl::OUString>& rMatchingNames,
         const ::utl::OConfigurationTreeRoot aRoot) const;
+    bool IsDeckEnabled (
+        const ::rtl::OUString& rsDeckId,
+        const Context& rContext,
+        const cssu::Reference<css::frame::XFrame>& rxFrame) const;
 };
 
 

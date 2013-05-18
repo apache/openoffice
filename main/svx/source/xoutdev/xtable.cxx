@@ -19,14 +19,11 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
 #include <svx/xtable.hxx>
 #include <svx/xpool.hxx>
-#include <svx/svdobj.hxx>
 #include <svx/svdpool.hxx>
 
 #define GLOBALOVERFLOW
@@ -43,115 +40,188 @@ Color RGB_Color( ColorData nColorName )
 	return aRGBColor;
 }
 
-// --------------------
-// class XPropertyList
-// --------------------
+//////////////////////////////////////////////////////////////////////////////
+// class XColorEntry
 
-XPropertyList::XPropertyList( const String& rPath, XOutdevItemPool* pInPool ) :
-			maName			( pszStandard, 8 ),
-			maPath			( rPath ),
-			mpXPool			( pInPool ),
-			maList			( 16, 16 ),
-			mbListDirty		(true)
+XColorEntry::XColorEntry(const Color& rColor, const String& rName)
+:   XPropertyEntry(rName), 
+    aColor(rColor) 
 {
-	if( !mpXPool )
-	{
-		mpXPool = static_cast< XOutdevItemPool* >(&SdrObject::GetGlobalDrawObjectItemPool());
-	}
 }
 
-/*************************************************************************
-|*
-|* XPropertyList::~XPropertyList()
-|*
-*************************************************************************/
+XColorEntry::XColorEntry(const XColorEntry& rOther)
+:   XPropertyEntry(rOther), 
+aColor(rOther.aColor) 
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// class XLineEndEntry
+
+XLineEndEntry::XLineEndEntry(const basegfx::B2DPolyPolygon& rB2DPolyPolygon, const String& rName)
+:   XPropertyEntry(rName),
+    aB2DPolyPolygon(rB2DPolyPolygon)
+{
+}
+
+XLineEndEntry::XLineEndEntry(const XLineEndEntry& rOther)
+:   XPropertyEntry(rOther), 
+    aB2DPolyPolygon(rOther.aB2DPolyPolygon)
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// class XDashEntry
+
+XDashEntry::XDashEntry(const XDash& rDash, const String& rName)
+:   XPropertyEntry(rName), 
+    aDash(rDash) 
+{
+}
+
+XDashEntry::XDashEntry(const XDashEntry& rOther)
+:   XPropertyEntry(rOther), 
+aDash(rOther.aDash) 
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// class XHatchEntry
+
+XHatchEntry::XHatchEntry(const XHatch& rHatch, const String& rName)
+:   XPropertyEntry(rName), 
+    aHatch(rHatch) 
+{
+}
+
+XHatchEntry::XHatchEntry(const XHatchEntry& rOther)
+:   XPropertyEntry(rOther), 
+    aHatch(rOther.aHatch) 
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// class XGradientEntry
+
+XGradientEntry::XGradientEntry(const XGradient& rGradient, const String& rName)
+:   XPropertyEntry(rName), 
+    aGradient(rGradient) 
+{
+}
+
+XGradientEntry::XGradientEntry(const XGradientEntry& rOther)
+:   XPropertyEntry(rOther), 
+    aGradient(rOther.aGradient) 
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// class XBitmapEntry
+
+XBitmapEntry::XBitmapEntry(const GraphicObject& rGraphicObject, const String& rName)
+:   XPropertyEntry(rName), 
+    maGraphicObject(rGraphicObject) 
+{
+}
+
+XBitmapEntry::XBitmapEntry(const XBitmapEntry& rOther) 
+:   XPropertyEntry(rOther), 
+    maGraphicObject(rOther.maGraphicObject) 
+{
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// class XPropertyList
+
+XPropertyList::XPropertyList( const String& rPath ) :
+			maName			( pszStandard, 8 ),
+			maPath			( rPath ),
+			maContent(),
+			mbListDirty		(true)
+{
+}
 
 XPropertyList::~XPropertyList()
 {
-	XPropertyEntry* pEntry = (XPropertyEntry*)maList.First();
-	for( sal_uIntPtr nIndex = 0; nIndex < maList.Count(); nIndex++ )
-	{
-		delete pEntry;
-		pEntry = (XPropertyEntry*)maList.Next();
-	}
+    while(!maContent.empty())
+    {
+        delete maContent.back();
+        maContent.pop_back();
+    }
 }
-
-/*************************************************************************
-|*
-|* XPropertyList::Clear()
-|*
-*************************************************************************/
 
 void XPropertyList::Clear()
 {
-	maList.Clear();
+    while(!maContent.empty())
+    {
+        delete maContent.back();
+        maContent.pop_back();
+    }
 }
-
-/************************************************************************/
 
 long XPropertyList::Count() const
 {
-	if( mbListDirty )
-	{
-		// ( (XPropertyList*) this )->bListDirty = sal_False; <- im Load()
-		if( !( (XPropertyList*) this )->Load() )
-			( (XPropertyList*) this )->Create();
-	}
-	return( maList.Count() );
+    if( mbListDirty )
+    {
+        if(!const_cast< XPropertyList* >(this)->Load())
+        {
+            const_cast< XPropertyList* >(this)->Create();
+        }
+    }
+
+    return maContent.size();
 }
 
-/*************************************************************************
-|*
-|* XPropertyEntry* XPropertyList::Get()
-|*
-*************************************************************************/
-
-XPropertyEntry* XPropertyList::Get( long nIndex, sal_uInt16 /*nDummy*/) const
+XPropertyEntry* XPropertyList::Get( long nIndex ) const
 {
-	if( mbListDirty )
-	{
-		// ( (XPropertyList*) this )->bListDirty = sal_False; <- im Load()
-		if( !( (XPropertyList*) this )->Load() )
-			( (XPropertyList*) this )->Create();
-	}
-	return (XPropertyEntry*) maList.GetObject( (sal_uIntPtr) nIndex );
+    if( mbListDirty )
+    {
+        if(!const_cast< XPropertyList* >(this)->Load())
+        {
+            const_cast< XPropertyList* >(this)->Create();
+        }
+    }
+
+    const long nObjectCount(maContent.size());
+
+    if(nIndex >= nObjectCount)
+    {
+        return 0;
+    }
+
+    return maContent[nIndex];
 }
 
-/*************************************************************************
-|*
-|* XPropertyList::Get()
-|*
-*************************************************************************/
-
-long XPropertyList::Get(const XubString& rName)
+long XPropertyList::GetIndex(const XubString& rName) const
 {
-	if( mbListDirty )
-	{
-		//bListDirty = sal_False;
-		if( !Load() )
-			Create();
-	}
-	long nPos = 0;
-	XPropertyEntry* pEntry = (XPropertyEntry*)maList.First();
-	while (pEntry && pEntry->GetName() != rName)
-	{
-		nPos++;
-		pEntry = (XPropertyEntry*)maList.Next();
-	}
-	if (!pEntry) nPos = -1;
-	return nPos;
-}
+    if( mbListDirty )
+    {
+        if(!const_cast< XPropertyList* >(this)->Load())
+        {
+            const_cast< XPropertyList* >(this)->Create();
+        }
+    }
 
-/*************************************************************************
-|*
-|* Bitmap* XPropertyList::GetBitmap()
-|*
-*************************************************************************/
+    ::std::vector< XPropertyEntry* >::const_iterator aStart(maContent.begin());
+    const ::std::vector< XPropertyEntry* >::const_iterator aEnd(maContent.end());
+
+    for(long a(0); aStart != aEnd; a++, aStart++)
+    {
+        const XPropertyEntry* pEntry = *aStart;
+
+        if(pEntry && pEntry->GetName() == rName)
+        {
+            return a;
+        }
+    }
+
+    return -1;
+}
 
 Bitmap XPropertyList::GetUiBitmap( long nIndex ) const
 {
     Bitmap aRetval;
-    XPropertyEntry* pEntry = (XPropertyEntry*)maList.GetObject((sal_uIntPtr)nIndex);
+    XPropertyEntry* pEntry = Get(nIndex);
 
     if(pEntry)
     {
@@ -164,43 +234,65 @@ Bitmap XPropertyList::GetUiBitmap( long nIndex ) const
         }
     }
 
-	return aRetval;
+    return aRetval;
 }
-
-/*************************************************************************
-|*
-|* void XPropertyList::Insert()
-|*
-*************************************************************************/
 
 void XPropertyList::Insert( XPropertyEntry* pEntry, long nIndex )
 {
-	maList.Insert( pEntry, (sal_uIntPtr) nIndex );
-}
+    if(pEntry)
+    {
+        const long nObjectCount(maContent.size());
 
-/*************************************************************************
-|*
-|* void XPropertyList::Replace()
-|*
-*************************************************************************/
+        if(static_cast< long >(LIST_APPEND) == nIndex || nIndex >= nObjectCount)
+        {
+            maContent.push_back(pEntry);
+        }
+        else
+        {
+            maContent.insert(maContent.begin() + nIndex, pEntry);
+        }
+    }
+}
 
 XPropertyEntry* XPropertyList::Replace( XPropertyEntry* pEntry, long nIndex )
 {
-	return  (XPropertyEntry*) maList.Replace( pEntry, (sal_uIntPtr) nIndex );
+    XPropertyEntry* pRetval = 0;
+
+    if(pEntry)
+    {
+        const long nObjectCount(maContent.size());
+
+        if(nIndex < nObjectCount)
+        {
+            pRetval = maContent[nIndex];
+            maContent[nIndex] = pEntry;
+        }
+    }
+
+    return pRetval;
 }
 
-/*************************************************************************
-|*
-|* void XPropertyList::Remove()
-|*
-*************************************************************************/
-
-XPropertyEntry* XPropertyList::Remove( long nIndex, sal_uInt16 /*nDummy*/)
+XPropertyEntry* XPropertyList::Remove( long nIndex )
 {
-	return (XPropertyEntry*) maList.Remove( (sal_uIntPtr) nIndex );
-}
+    XPropertyEntry* pRetval = 0;
+    const long nObjectCount(maContent.size());
 
-/************************************************************************/
+    if(nIndex < nObjectCount)
+    {
+        if(nIndex + 1 == nObjectCount)
+        {
+            pRetval = maContent.back();
+            maContent.pop_back();
+        }
+        else
+        {
+            pRetval = maContent[nIndex];
+            maContent.erase(maContent.begin() + nIndex);
+        }
+    }
+
+    return pRetval;
+}
 
 void XPropertyList::SetName( const String& rString )
 {
@@ -210,4 +302,37 @@ void XPropertyList::SetName( const String& rString )
 	}
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
+XColorListSharedPtr XPropertyListFactory::CreateSharedXColorList( const String& rPath )
+{
+    return XColorListSharedPtr(new XColorList(rPath));
+}
+
+XLineEndListSharedPtr XPropertyListFactory::CreateSharedXLineEndList( const String& rPath )
+{
+    return XLineEndListSharedPtr(new XLineEndList(rPath));
+}
+
+XDashListSharedPtr XPropertyListFactory::CreateSharedXDashList( const String& rPath )
+{
+    return XDashListSharedPtr(new XDashList(rPath));
+}
+
+XHatchListSharedPtr XPropertyListFactory::CreateSharedXHatchList( const String& rPath )
+{
+    return XHatchListSharedPtr(new XHatchList(rPath));
+}
+
+XGradientListSharedPtr XPropertyListFactory::CreateSharedXGradientList( const String& rPath )
+{
+    return XGradientListSharedPtr(new XGradientList(rPath));
+}
+
+XBitmapListSharedPtr XPropertyListFactory::CreateSharedXBitmapList( const String& rPath )
+{
+    return XBitmapListSharedPtr(new XBitmapList(rPath));
+}
+
+//////////////////////////////////////////////////////////////////////////////
 // eof

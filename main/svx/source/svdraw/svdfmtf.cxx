@@ -75,6 +75,9 @@
 #include <svx/xflbmtit.hxx>
 #include <svx/xflbstit.hxx>
 #include <svx/svdpntv.hxx>
+#include <basegfx/polygon/b2dpolypolygontools.hxx>
+#include <svx/svditer.hxx>
+#include <svx/svdogrp.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -129,8 +132,18 @@ ImpSdrGDIMetaFileImport::~ImpSdrGDIMetaFileImport()
 
 void ImpSdrGDIMetaFileImport::DoLoopActions(GDIMetaFile& rMtf, SvdProgressInfo* pProgrInfo, sal_uInt32* pActionsToReport)
 {
-	for( MetaAction* pAct = rMtf.FirstAction(); pAct; pAct = rMtf.NextAction() )
-	{
+    const sal_uLong nCount(rMtf.GetActionCount());
+
+    for(sal_uLong a(0); a < nCount; a++)
+    {
+        MetaAction* pAct = rMtf.GetAction(a);
+
+        if(!pAct)
+        {
+            OSL_ENSURE(false, "OOps, no action at valid position (!)");
+            pAct = rMtf.GetAction(0);
+        }
+
 		switch (pAct->GetType())
 		{
 			case META_PIXEL_ACTION          : DoAction((MetaPixelAction          &)*pAct); break;
@@ -474,56 +487,130 @@ void ImpSdrGDIMetaFileImport::InsertObj(SdrObject* pObj, bool bScale)
     	const SdrLayerID aOldLayer(pObj->GetLayer());
     	const SfxItemSet aOldItemSet(pObj->GetMergedItemSet());
         const SdrGrafObj* pSdrGrafObj = dynamic_cast< SdrGrafObj* >(pObj);
-        BitmapEx aBitmapEx;
+        const SdrTextObj* pSdrTextObj = dynamic_cast< SdrTextObj* >(pObj);
 
-        if(pSdrGrafObj)
+        if(pSdrTextObj && pSdrTextObj->HasText())
         {
-        	aBitmapEx = pSdrGrafObj->GetGraphic().GetBitmapEx();
-        }
-
-        SdrObject::Free(pObj);
-
-        if(!aOldRange.isEmpty())
-        {
-            // clip against ClipRegion
-            const basegfx::B2DPolyPolygon aNewPoly(
-                basegfx::tools::clipPolyPolygonOnPolyPolygon(
-                    aPoly, 
-                    maClip, 
-                    true, 
-                    aPoly.isClosed() ? false : true));
-            const basegfx::B2DRange aNewRange(aNewPoly.getB2DRange());
-            
-            if(!aNewRange.isEmpty())
+            // all text objects are created from ImportText and have no line or fill attributes, so
+            // it is okay to concentrate on the text itself
+            while(true)
             {
-                pObj = new SdrPathObj(
-                    aNewPoly.isClosed() ? OBJ_POLY : OBJ_PLIN, 
-                    aNewPoly);
-            
-		        pObj->SetLayer(aOldLayer);
-		        pObj->SetMergedItemSet(aOldItemSet);
+                const basegfx::B2DPolyPolygon aTextContour(pSdrTextObj->TakeContour());
+                const basegfx::B2DRange aTextRange(aTextContour.getB2DRange());
+                const basegfx::B2DRange aClipRange(maClip.getB2DRange());
 
-                if(!!aBitmapEx)
+                // no overlap -> completely outside
+                if(!aClipRange.overlaps(aTextRange))
                 {
-                    // aNewRange is inside of aOldRange and defines which part of aBitmapEx is used
-                    const double fScaleX(aBitmapEx.GetSizePixel().Width() / (aOldRange.getWidth() ? aOldRange.getWidth() : 1.0));
-                    const double fScaleY(aBitmapEx.GetSizePixel().Height() / (aOldRange.getHeight() ? aOldRange.getHeight() : 1.0));
-                    basegfx::B2DRange aPixel(aNewRange);
-                    basegfx::B2DHomMatrix aTrans;
+                    SdrObject::Free(pObj);
+                    break;
+                }
 
-                    aTrans.translate(-aOldRange.getMinX(), -aOldRange.getMinY());
-                    aTrans.scale(fScaleX, fScaleY);
-                    aPixel.transform(aTrans);
+                // when the clip is a rectangle fast check for inside is possible
+                if(basegfx::tools::isRectangle(maClip) && aClipRange.isInside(aTextRange))
+                {
+                    // completely inside ClipRect
+                    break;
+                }
 
-                    const BitmapEx aClippedBitmap(
-                        aBitmapEx, 
-                        Point(floor(std::max(0.0, aPixel.getMinX())), floor(std::max(0.0, aPixel.getMinY()))), 
-                        Size(ceil(aPixel.getWidth()), ceil(aPixel.getHeight())));
+                // here text needs to be clipped; to do so, convert to SdrObjects with polygons
+                // and add these recursively. Delete original object, do not add in this run
+                SdrObject* pConverted = pSdrTextObj->ConvertToPolyObj(true, true);
+                SdrObject::Free(pObj);
 
-                    pObj->SetMergedItem(XFillStyleItem(XFILL_BITMAP));
-                    pObj->SetMergedItem(XFillBitmapItem(String(), Graphic(aClippedBitmap)));
-                    pObj->SetMergedItem(XFillBmpTileItem(false));
-                    pObj->SetMergedItem(XFillBmpStretchItem(true));
+                if(pConverted)
+                {
+                    // recursively add created conversion; per definition this shall not
+                    // contain further SdrTextObjs. Visit only non-group objects
+                    SdrObjListIter aIter(*pConverted, IM_DEEPNOGROUPS);
+
+                    // work with clones; the created conversion may contain group objects
+                    // and when working with the original objects the loop itself could
+                    // break and the cleanup later would be pretty complicated (only delete group
+                    // objects, are these empty, ...?)
+                    while(aIter.IsMore()) 
+                    {
+                        SdrObject* pCandidate = aIter.Next();
+                        OSL_ENSURE(pCandidate && 0 == dynamic_cast< SdrObjGroup* >(pCandidate), "SdrObjListIter with IM_DEEPNOGROUPS error (!)");
+                        SdrObject* pNewClone = pCandidate->Clone();
+
+                        if(pNewClone)
+                        {
+                            InsertObj(pNewClone, false);
+                        }
+                        else
+                        {
+                            OSL_ENSURE(false, "SdrObject::Clone() failed (!)");
+                        }
+                    }
+
+                    // cleanup temporary conversion objects
+                    SdrObject::Free(pConverted);
+                }
+
+                break;
+            }
+        }
+        else
+        {
+            BitmapEx aBitmapEx;
+
+            if(pSdrGrafObj)
+            {
+                aBitmapEx = pSdrGrafObj->GetGraphic().GetBitmapEx();
+            }
+
+            SdrObject::Free(pObj);
+
+            if(!aOldRange.isEmpty())
+            {
+                // clip against ClipRegion
+                const basegfx::B2DPolyPolygon aNewPoly(
+                    basegfx::tools::clipPolyPolygonOnPolyPolygon(
+                        aPoly, 
+                        maClip, 
+                        true, 
+                        aPoly.isClosed() ? false : true));
+                const basegfx::B2DRange aNewRange(aNewPoly.getB2DRange());
+            
+                if(!aNewRange.isEmpty())
+                {
+                    pObj = new SdrPathObj(
+                        aNewPoly.isClosed() ? OBJ_POLY : OBJ_PLIN, 
+                        aNewPoly);
+
+                    pObj->SetLayer(aOldLayer);
+                    pObj->SetMergedItemSet(aOldItemSet);
+
+                    if(!!aBitmapEx)
+                    {
+                        // aNewRange is inside of aOldRange and defines which part of aBitmapEx is used
+                        const double fScaleX(aBitmapEx.GetSizePixel().Width() / (aOldRange.getWidth() ? aOldRange.getWidth() : 1.0));
+                        const double fScaleY(aBitmapEx.GetSizePixel().Height() / (aOldRange.getHeight() ? aOldRange.getHeight() : 1.0));
+                        basegfx::B2DRange aPixel(aNewRange);
+                        basegfx::B2DHomMatrix aTrans;
+
+                        aTrans.translate(-aOldRange.getMinX(), -aOldRange.getMinY());
+                        aTrans.scale(fScaleX, fScaleY);
+                        aPixel.transform(aTrans);
+
+                        const Size aOrigSizePixel(aBitmapEx.GetSizePixel());
+                        const Point aClipTopLeft(
+                            basegfx::fround(floor(std::max(0.0, aPixel.getMinX()))), 
+                            basegfx::fround(floor(std::max(0.0, aPixel.getMinY()))));
+                        const Size aClipSize(
+                            basegfx::fround(ceil(std::min((double)aOrigSizePixel.Width(), aPixel.getWidth()))),
+                            basegfx::fround(ceil(std::min((double)aOrigSizePixel.Height(), aPixel.getHeight()))));
+                        const BitmapEx aClippedBitmap(
+                            aBitmapEx, 
+                            aClipTopLeft,
+                            aClipSize);
+
+                        pObj->SetMergedItem(XFillStyleItem(XFILL_BITMAP));
+                        pObj->SetMergedItem(XFillBitmapItem(String(), Graphic(aClippedBitmap)));
+                        pObj->SetMergedItem(XFillBmpTileItem(false));
+                        pObj->SetMergedItem(XFillBmpStretchItem(true));
+                    }
                 }
             }
         }
@@ -942,19 +1029,22 @@ void ImpSdrGDIMetaFileImport::ImportText( const Point& rPos, const XubString& rS
 	Rectangle aTextRect( aPos, aSize );
 	SdrRectObj* pText =new SdrRectObj( OBJ_TEXT, aTextRect );
 
-	if ( aFnt.GetWidth() || ( rAct.GetType() == META_STRETCHTEXT_ACTION ) )
+	pText->SetMergedItem ( SdrTextUpperDistItem (0));
+	pText->SetMergedItem ( SdrTextLowerDistItem (0));
+	pText->SetMergedItem ( SdrTextRightDistItem (0));
+	pText->SetMergedItem ( SdrTextLeftDistItem (0));
+
+    if ( aFnt.GetWidth() || ( rAct.GetType() == META_STRETCHTEXT_ACTION ) )
 	{
 		pText->ClearMergedItem( SDRATTR_TEXT_AUTOGROWWIDTH );
 		pText->SetMergedItem( SdrTextAutoGrowHeightItem( false ) );
 		// don't let the margins eat the space needed for the text
-		pText->SetMergedItem ( SdrTextUpperDistItem (0));
-		pText->SetMergedItem ( SdrTextLowerDistItem (0));
-		pText->SetMergedItem ( SdrTextRightDistItem (0));
-		pText->SetMergedItem ( SdrTextLeftDistItem (0));
 		pText->SetMergedItem( SdrTextFitToSizeTypeItem( SDRTEXTFIT_ALLLINES ) );
 	}
 	else
+    {
 		pText->SetMergedItem( SdrTextAutoGrowWidthItem( true ) );
+    }
 
 	pText->SetModel(mpModel);
 	pText->SetLayer(mnLayer);
@@ -1010,7 +1100,11 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpAction& rAct)
 	Rectangle aRect(rAct.GetPoint(),rAct.GetBitmap().GetSizePixel());
 	aRect.Right()++; aRect.Bottom()++;
     SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
-	InsertObj(pGraf);
+
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
+    InsertObj(pGraf);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaBmpScaleAction& rAct)
@@ -1018,7 +1112,11 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpScaleAction& rAct)
 	Rectangle aRect(rAct.GetPoint(),rAct.GetSize());
 	aRect.Right()++; aRect.Bottom()++;
     SdrGrafObj* pGraf=new SdrGrafObj(Graphic(rAct.GetBitmap()),aRect);
-	InsertObj(pGraf);
+
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
+    InsertObj(pGraf);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExAction& rAct)
@@ -1026,7 +1124,11 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExAction& rAct)
 	Rectangle aRect(rAct.GetPoint(),rAct.GetBitmapEx().GetSizePixel());
 	aRect.Right()++; aRect.Bottom()++;
     SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
-	InsertObj(pGraf);
+
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
+    InsertObj(pGraf);
 }
 
 void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExScaleAction& rAct)
@@ -1034,6 +1136,10 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExScaleAction& rAct)
 	Rectangle aRect(rAct.GetPoint(),rAct.GetSize());
 	aRect.Right()++; aRect.Bottom()++;
     SdrGrafObj* pGraf=new SdrGrafObj( rAct.GetBitmapEx(), aRect );
+
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
 	InsertObj(pGraf);
 }
 
@@ -1158,23 +1264,19 @@ void ImpSdrGDIMetaFileImport::DoAction( MetaCommentAction& rAct, GDIMetaFile* pM
 					aXGradient.SetEndIntens(rGrad.GetEndIntensity());
 					aXGradient.SetSteps(rGrad.GetSteps());
 
-            		if(maVD.IsLineColor())
-                    {
-                        // switch line off; when there was one there will be a
-                        // META_POLYLINE_ACTION following creating another object
-    		            const Color aLineColor(maVD.GetLineColor());
-    		            maVD.SetLineColor();
-                        SetAttributes(pPath);
-    		            maVD.SetLineColor(aLineColor);
-                    }
-                    else
-                    {
-                        SetAttributes(pPath);
-                    }
+                    // no need to use SetAttributes(..) here since line and fill style
+                    // need to be set individually
+                    // SetAttributes(pPath);
 
-					aGradAttr.Put(XFillStyleItem(XFILL_GRADIENT));
-					aGradAttr.Put(XFillGradientItem(&mpModel->GetItemPool(), aXGradient));
-					pPath->SetMergedItemSet(aGradAttr);
+                    // switch line off; when there was one there will be a
+                    // META_POLYLINE_ACTION following creating another object
+                    aGradAttr.Put(XLineStyleItem(XLINE_NONE));
+
+                    // add detected gradient fillstyle
+                    aGradAttr.Put(XFillStyleItem(XFILL_GRADIENT));
+                    aGradAttr.Put(XFillGradientItem(&mpModel->GetItemPool(), aXGradient));
+
+                    pPath->SetMergedItemSet(aGradAttr);
 
 					InsertObj(pPath);
 				}
@@ -1215,9 +1317,11 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpScalePartAction& rAct)
     aRect.Right()++; 
     aRect.Bottom()++;
     aBitmap.Crop(Rectangle(rAct.GetSrcPoint(), rAct.GetSrcSize()));
-
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmap, aRect);
 
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
     InsertObj(pGraf);
 }
 
@@ -1229,9 +1333,11 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExScalePartAction& rAct)
     aRect.Right()++; 
     aRect.Bottom()++;
     aBitmapEx.Crop(Rectangle(rAct.GetSrcPoint(), rAct.GetSrcSize()));
-
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmapEx, aRect);
 
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
     InsertObj(pGraf);
 }
 
@@ -1240,11 +1346,12 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaMaskAction& rAct)
 	Rectangle aRect(rAct.GetPoint(), rAct.GetBitmap().GetSizePixel());
     BitmapEx aBitmapEx(rAct.GetBitmap(), rAct.GetColor());
 
-    aRect.Right()++; 
-    aRect.Bottom()++;
-    
+    aRect.Right()++; aRect.Bottom()++;
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmapEx, aRect);
 
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
     InsertObj(pGraf);
 }
 
@@ -1253,11 +1360,12 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaMaskScaleAction& rAct)
 	Rectangle aRect(rAct.GetPoint(), rAct.GetSize());
     BitmapEx aBitmapEx(rAct.GetBitmap(), rAct.GetColor());
 
-    aRect.Right()++; 
-    aRect.Bottom()++;
-    
+    aRect.Right()++; aRect.Bottom()++;
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmapEx, aRect);
 
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
     InsertObj(pGraf);
 }
 
@@ -1266,12 +1374,13 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaMaskScalePartAction& rAct)
 	Rectangle aRect(rAct.GetDestPoint(), rAct.GetDestSize());
     BitmapEx aBitmapEx(rAct.GetBitmap(), rAct.GetColor());
 	
-    aRect.Right()++; 
-    aRect.Bottom()++;
+    aRect.Right()++; aRect.Bottom()++;
     aBitmapEx.Crop(Rectangle(rAct.GetSrcPoint(), rAct.GetSrcSize()));
-
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmapEx, aRect);
 
+    // This action is not creating line and fill, set directly, do not use SetAttributes(..)
+    pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+    pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
     InsertObj(pGraf);
 }
 
@@ -1416,6 +1525,9 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
     if(rMtf.GetActionCount())
     {
 	    const Rectangle aRect(rAct.GetPoint(),rAct.GetSize());
+
+        Rectangle aHairline;
+        const Rectangle aBoundRect(rMtf.GetBoundRect(*Application::GetDefaultDevice(), &aHairline));
 
         // convert metafile sub-content to BitmapEx
         BitmapEx aBitmapEx(
@@ -1585,6 +1697,11 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
             // create and add object
             SdrGrafObj* pGraf = new SdrGrafObj(aBitmapEx, aRect);
 
+            // for MetaFloatTransparentAction, do not use SetAttributes(...)
+            // since these metafile content is not used to draw line/fill
+            // dependent of these setting at the device content
+            pGraf->SetMergedItem(XLineStyleItem(XLINE_NONE));
+            pGraf->SetMergedItem(XFillStyleItem(XFILL_NONE));
             InsertObj(pGraf);
         }
     }

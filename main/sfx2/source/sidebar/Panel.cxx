@@ -26,9 +26,10 @@
 #include "PanelDescriptor.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 #include "Paint.hxx"
+#include "ResourceManager.hxx"
 
 #ifdef DEBUG
-#include "Tools.hxx"
+#include "sfx2/sidebar/Tools.hxx"
 #include "Deck.hxx"
 #endif
 
@@ -52,7 +53,9 @@ namespace sfx2 { namespace sidebar {
 Panel::Panel (
     const PanelDescriptor& rPanelDescriptor,
     Window* pParentWindow,
-    const ::boost::function<void(void)>& rDeckLayoutTrigger )
+    const bool bIsInitiallyExpanded,
+    const ::boost::function<void(void)>& rDeckLayoutTrigger,
+    const ::boost::function<Context(void)>& rContextAccess)
     : Window(pParentWindow),
       msPanelId(rPanelDescriptor.msId),
       mpTitleBar(new PanelTitleBar(
@@ -62,13 +65,13 @@ Panel::Panel (
       mbIsTitleBarOptional(rPanelDescriptor.mbIsTitleBarOptional),
       mxElement(),
       mxPanelComponent(),
-      mbIsExpanded(true),
-      maDeckLayoutTrigger(rDeckLayoutTrigger)
+      mbIsExpanded(bIsInitiallyExpanded),
+      maDeckLayoutTrigger(rDeckLayoutTrigger),
+      maContextAccess(rContextAccess)
 {
     SetBackground(Theme::GetPaint(Theme::Paint_PanelBackground).GetWallpaper());
 
 #ifdef DEBUG
-    OSL_TRACE("creating Panel at %x", this);
     SetText(A2S("Panel"));
 #endif
 }
@@ -78,19 +81,7 @@ Panel::Panel (
 
 Panel::~Panel (void)
 {
-    OSL_TRACE("destroying Panel at %x", this);
     Dispose();
-}
-
-
-
-
-void Panel::SetShowMenuFunctor( const ::boost::function<void(void)>& rShowMenuFunctor )
-{
-    if ( mpTitleBar.get() )
-    {
-        mpTitleBar->SetMenuAction( rShowMenuFunctor );
-    }
 }
 
 
@@ -126,7 +117,7 @@ void Panel::Dispose (void)
 
 
 
-TitleBar* Panel::GetTitleBar (void) const
+PanelTitleBar* Panel::GetTitleBar (void) const
 {
     return mpTitleBar.get();
 }
@@ -160,6 +151,12 @@ void Panel::SetExpanded (const bool bIsExpanded)
     {
         mbIsExpanded = bIsExpanded;
         maDeckLayoutTrigger();
+
+        if (maContextAccess)
+            ResourceManager::Instance().StorePanelExpansionState(
+                msPanelId,
+                bIsExpanded,
+                maContextAccess());
     }
 }
 

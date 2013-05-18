@@ -37,22 +37,22 @@ namespace sfx2 { namespace sidebar {
 
 
 SidebarDockingWindow::SidebarDockingWindow(
-    SfxBindings* pBindings,
+    SfxBindings* pSfxBindings,
     SidebarChildWindow& rChildWindow,
-    Window* pParent,
+    Window* pParentWindow,
     WinBits nBits)
-    : SfxDockingWindow(pBindings, &rChildWindow, pParent, nBits),
+    : SfxDockingWindow(pSfxBindings, &rChildWindow, pParentWindow, nBits),
       mpSidebarController()
 {
     // Get the XFrame from the bindings.
-    if (pBindings==NULL || pBindings->GetDispatcher()==NULL)
+    if (pSfxBindings==NULL || pSfxBindings->GetDispatcher()==NULL)
     {
-        OSL_ASSERT(pBindings!=NULL);
-        OSL_ASSERT(pBindings->GetDispatcher()!=NULL);
+        OSL_ASSERT(pSfxBindings!=NULL);
+        OSL_ASSERT(pSfxBindings->GetDispatcher()!=NULL);
     }
     else
     {
-        const SfxViewFrame* pViewFrame = pBindings->GetDispatcher()->GetFrame();
+        const SfxViewFrame* pViewFrame = pSfxBindings->GetDispatcher()->GetFrame();
         const SfxFrame& rFrame = pViewFrame->GetFrame();
         mpSidebarController.set(new sfx2::sidebar::SidebarController(this, rFrame.GetFrameInterface()));
     }
@@ -84,31 +84,6 @@ void SidebarDockingWindow::GetFocus()
 
 
 
-long SidebarDockingWindow::PreNotify (NotifyEvent& rEvent)
-{
-    switch (rEvent.GetType())
-    {
-        case EVENT_KEYINPUT:
-        {
-            const KeyEvent* pKeyEvent = rEvent.GetKeyEvent();
-            if (pKeyEvent != NULL)
-                return mpSidebarController->GetFocusManager().NotifyDockingWindowEvent(*pKeyEvent);
-            else
-                break;
-        }
-
-        case EVENT_GETFOCUS:
-            OSL_TRACE("");
-            break;
-
-    }
-    
-    return SfxDockingWindow::PreNotify(rEvent);
-}
-
-
-
-
 SfxChildWindow* SidebarDockingWindow::GetChildWindow (void)
 {
     return GetChildWindow_Impl();
@@ -123,13 +98,43 @@ sal_Bool SidebarDockingWindow::Close (void)
     {
         // Do not close the floating window.
         // Dock it and close just the deck instead.
-        mpSidebarController->CloseDeck();
+        mpSidebarController->RequestCloseDeck();
         SetFloatingMode(sal_False);
         mpSidebarController->NotifyResize();
         return sal_False;
     }
     else
         return SfxDockingWindow::Close();
+}
+
+
+
+
+SfxChildAlignment SidebarDockingWindow::CheckAlignment (
+    SfxChildAlignment eCurrentAlignment,
+    SfxChildAlignment eRequestedAlignment)
+{
+    switch (eRequestedAlignment)
+    {
+        case SFX_ALIGN_TOP:
+        case SFX_ALIGN_HIGHESTTOP:
+        case SFX_ALIGN_LOWESTTOP:
+        case SFX_ALIGN_BOTTOM:
+        case SFX_ALIGN_LOWESTBOTTOM:
+        case SFX_ALIGN_HIGHESTBOTTOM:
+            return eCurrentAlignment;
+
+        case SFX_ALIGN_LEFT:
+        case SFX_ALIGN_RIGHT:
+        case SFX_ALIGN_FIRSTLEFT:
+        case SFX_ALIGN_LASTLEFT:
+        case SFX_ALIGN_FIRSTRIGHT:
+        case SFX_ALIGN_LASTRIGHT:
+            return eRequestedAlignment;
+
+        default:
+            return eRequestedAlignment;
+    }
 }
 
 

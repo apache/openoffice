@@ -345,10 +345,13 @@
         <prop oor:name="ContextList">
           <value oor:separator=";">
             Calc,           Draw,       visible ;
+            Calc,           OLE,        hidden  ;
             DrawImpress,    3DObject,   visible ;
             DrawImpress,    Draw,       visible ;
             DrawImpress,    TextObject, hidden  ;
+            DrawImpress,    OLE,        hidden  ;
             WriterVariants, Draw,       visible ;
+            WriterVariants, OLE,        hidden, .uno:FrameDialog ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -376,11 +379,14 @@
           <value oor:separator=";">
             Calc,           Draw,       visible ;
             Calc,           Graphic,    visible ;
+            Calc,           OLE,        hidden  ;
             DrawImpress,    3DObject,   visible ;
             DrawImpress,    Draw,       visible ;
             DrawImpress,    Graphic,    visible ;
             DrawImpress,    TextObject, hidden  ;
+            DrawImpress,    OLE,        hidden  ;
             WriterVariants, Draw,       visible ;
+            WriterVariants, OLE,        hidden, .uno:FrameDialog ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -740,12 +746,13 @@
           <value>PropertyDeck</value>
         </prop>
         <prop oor:name="DefaultMenuCommand">
-          <value>.uno:FormatCellDialg</value>
+          <value>.uno:FormatCellDialog</value>
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
             Calc,  Auditing, visible ;
             Calc,  Cell,     visible ;
+            Calc,  EditCell, visible ;
             Calc,  default,  visible ;
             Calc,  Pivot,    visible ;
           </value>
@@ -775,6 +782,7 @@
           <value oor:separator=";">
             Calc,  Auditing, hidden ;
             Calc,  Cell,     hidden ;
+            Calc,  EditCell, hidden ;
             Calc,  default,  hidden ;
             Calc,  Pivot,    hidden ;
           </value>
@@ -859,6 +867,9 @@
         <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
           <value>true</value>
         </prop>
+        <prop oor:name="ShowForReadOnlyDocument" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
         <prop oor:name="Id" oor:type="xs:string">
           <value>SwNavigatorPanel</value>
         </prop>
@@ -885,6 +896,9 @@
         <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
           <value>true</value>
         </prop>
+        <prop oor:name="ShowForReadOnlyDocument" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
         <prop oor:name="Id" oor:type="xs:string">
           <value>ScNavigatorPanel</value>
         </prop>
@@ -909,6 +923,9 @@
           <value xml:lang="en-US">Navigator</value>
         </prop>
         <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
+          <value>true</value>
+        </prop>
+        <prop oor:name="ShowForReadOnlyDocument" oor:type="xs:boolean">
           <value>true</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
@@ -979,6 +996,29 @@
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>100</value>
+        </prop>
+      </node>
+
+      <node oor:name="InsertPropertyPanel" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Insert Shapes</value>
+        </prop>
+        <prop oor:name="Id" oor:type="xs:string">
+          <value>InsertPropertyPanel</value>
+        </prop>
+        <prop oor:name="DeckId" oor:type="xs:string">
+          <value>PropertyDeck</value>
+        </prop>
+        <prop oor:name="ContextList">
+          <value oor:separator=";">
+            Draw, any, visible ;
+          </value>
+        </prop>
+        <prop oor:name="ImplementationURL" oor:type="xs:string">
+          <value>private:resource/toolpanel/SvxPanelFactory/InsertPropertyPanel</value>
+        </prop>
+        <prop oor:name="OrderIndex" oor:type="xs:int">
+          <value>50</value>
         </prop>
       </node>
 

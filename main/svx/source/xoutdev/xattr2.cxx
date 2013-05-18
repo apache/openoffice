@@ -222,6 +222,9 @@ SfxItemPresentation XLineJointItem::GetPresentation( SfxItemPresentation ePres,	
 				case( com::sun::star::drawing::LineJoint_ROUND ):
 					nId = RID_SVXSTR_LINEJOINT_ROUND;
 				break;
+
+				default:
+				break;
 			}
 
 			if( nId )

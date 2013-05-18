@@ -47,6 +47,7 @@ $(eval $(call gb_Library_add_linked_libs,svx,\
 	cppu \
 	drawinglayer \
 	editeng \
+	fwe \
 	fwk \
 	i18nisolang1 \
 	icuuc \
@@ -213,6 +214,7 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/sidebar/tools/PopupContainer \
     svx/source/sidebar/tools/Popup \
     svx/source/sidebar/tools/ValueSetWithTextControl \
+    svx/source/sidebar/insert/InsertPropertyPanel \
     svx/source/stbctrls/pszctrl \
     svx/source/stbctrls/insctrl \
     svx/source/stbctrls/selctrl \
