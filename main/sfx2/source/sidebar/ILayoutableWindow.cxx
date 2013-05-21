@@ -19,32 +19,16 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_LAYOUTABLE_WINDOW_INTERFACE_HXX
-#define SFX_SIDEBAR_LAYOUTABLE_WINDOW_INTERFACE_HXX
+#include "precompiled_sfx2.hxx"
 
-#include "sfx2/dllapi.h"
-#include <tools/gen.hxx>
-#include <sal/types.h>
+#include <sfx2/sidebar/ILayoutableWindow.hxx>
 
-#include <com/sun/star/ui/LayoutSize.hpp>
-
-class Window;
 
 namespace sfx2 { namespace sidebar {
 
 
-class SFX2_DLLPUBLIC ILayoutableWindow
+ILayoutableWindow::~ILayoutableWindow (void)
 {
-public:
-    virtual ~ILayoutableWindow (void);
-
-    /** Return the preferred height with the constraint, that the
-        window will be set to the given width.
-    */
-    virtual ::com::sun::star::ui::LayoutSize GetHeightForWidth (const sal_Int32 nWidth) = 0;
-};
-
+}
 
 } } // end of namespace ::sd::sidebar
-
-#endif

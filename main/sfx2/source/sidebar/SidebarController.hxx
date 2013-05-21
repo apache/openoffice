@@ -116,7 +116,7 @@ public:
     void RequestOpenDeck (void);
 
     FocusManager& GetFocusManager (void);
-    
+
 private:
     ::boost::scoped_ptr<Deck> mpCurrentDeck;
     SidebarDockingWindow* mpParentWindow;
@@ -163,16 +163,20 @@ private:
     /** Make maRequestedContext the current context.
     */
     void UpdateConfigurations (void);
+    
     bool ArePanelSetsEqual (
         const SharedPanelContainer& rCurrentPanels,
         const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels);
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
         const ::rtl::OUString& rsImplementationURL,
-        const bool bWantsCanvas);
+        const bool bWantsCanvas,
+        const Context& rContext);
     SharedPanel CreatePanel (
         const ::rtl::OUString& rsPanelId,
-        ::Window* pParentWindow );
+        ::Window* pParentWindow,
+        const bool bIsInitiallyExpanded,
+        const Context& rContext);
     void SwitchToDeck (
         const DeckDescriptor& rDeckDescriptor,
         const Context& rContext);
@@ -215,7 +219,9 @@ private:
         completely visible.
     */
     void ShowPanel (const Panel& rPanel);
-    
+
+    Context GetCurrentContext (void) const;
+
     virtual void SAL_CALL disposing (void);
 };
 

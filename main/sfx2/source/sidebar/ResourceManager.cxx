@@ -447,6 +447,7 @@ void ResourceManager::ReadContextList (
                 aApplications.push_back(EnumContext::Application_WriterWeb);
                 aApplications.push_back(EnumContext::Application_WriterXML);
                 aApplications.push_back(EnumContext::Application_WriterForm);
+                aApplications.push_back(EnumContext::Application_WriterReport);
             }
             else
             {
@@ -505,7 +506,7 @@ void ResourceManager::ReadContextList (
 void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
 {
     // Get module name for given frame.
-    ::rtl::OUString sModuleName (GetModuleName(rxFrame));
+    ::rtl::OUString sModuleName (Tools::GetModuleName(rxFrame));
     if (sModuleName.getLength() == 0)
         return;
     if (maProcessedApplications.find(sModuleName) != maProcessedApplications.end())
@@ -572,26 +573,26 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
 
 
 
-::rtl::OUString ResourceManager::GetModuleName (
-    const cssu::Reference<css::frame::XFrame>& rxFrame)
+void ResourceManager::StorePanelExpansionState (
+    const ::rtl::OUString& rsPanelId,
+    const bool bExpansionState,
+    const Context& rContext)
 {
-    if ( ! rxFrame.is() || ! rxFrame->getController().is())
-        return OUString();
-    
-    try
+    for (PanelContainer::iterator
+             iPanel(maPanels.begin()),
+             iEnd(maPanels.end());
+         iPanel!=iEnd;
+         ++iPanel)
     {
-        const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
-        const Reference<frame::XModuleManager> xModuleManager (
-            aContext.createComponent("com.sun.star.frame.ModuleManager"),
-            UNO_QUERY_THROW);
-        return xModuleManager->identify(rxFrame);
+        if (iPanel->msId.equals(rsPanelId))
+        {
+            ContextList::Entry* pEntry (
+                iPanel->maContextList.GetMatch (rContext));
+            if (pEntry != NULL)
+                pEntry->mbIsInitiallyVisible = bExpansionState;
+        }
     }
-    catch (const Exception&)
-    {
-        DBG_UNHANDLED_EXCEPTION();
-    }
-    return OUString();
-}   
+}
 
 
 

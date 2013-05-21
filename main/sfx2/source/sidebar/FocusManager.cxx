@@ -24,6 +24,7 @@
 #include "FocusManager.hxx"
 #include "Panel.hxx"
 #include "DeckTitleBar.hxx"
+#include "PanelTitleBar.hxx"
 #include "sfx2/sidebar/Tools.hxx"
 #include "TitleBar.hxx"
 #include <vcl/button.hxx>
@@ -194,11 +195,13 @@ FocusManager::FocusLocation FocusManager::GetFocusLocation (const Window& rWindo
 {
     // Check the deck title.
     if (mpDeckTitleBar != NULL)
+    {
         if (mpDeckTitleBar == &rWindow)
             return FocusLocation(PC_DeckTitle, -1);
         else if (&mpDeckTitleBar->GetToolBox() == &rWindow)
             return FocusLocation(PC_DeckToolBox, -1);
-
+    }
+    
     // Search the panels.
     for (sal_Int32 nIndex=0,nCount(maPanels.size()); nIndex<nCount; ++nIndex)
     {
@@ -282,7 +285,7 @@ bool FocusManager::IsDeckTitleVisible (void) const
 
 void FocusManager::FocusPanel (const sal_Int32 nPanelIndex)
 {
-    if (nPanelIndex<0 || nPanelIndex>=maPanels.size())
+    if (nPanelIndex<0 || nPanelIndex>=static_cast<sal_Int32>(maPanels.size()))
         return;
     Panel& rPanel (*maPanels[nPanelIndex]);
     TitleBar* pTitleBar = rPanel.GetTitleBar();
@@ -496,7 +499,7 @@ void FocusManager::HandleKeyEvent (
                 case PC_PanelToolBox:
                 case PC_PanelContent:
                     // Go to next panel.
-                    if (aLocation.mnIndex < maPanels.size()-1)
+                    if (aLocation.mnIndex < static_cast<sal_Int32>(maPanels.size())-1)
                         FocusPanel(aLocation.mnIndex+1);
                     else
                         FocusButton(0);
@@ -510,7 +513,7 @@ void FocusManager::HandleKeyEvent (
 
                 case PC_TabBar:
                     // Go to next tab bar item.
-                    if (aLocation.mnIndex < maButtons.size()-1)
+                    if (aLocation.mnIndex < static_cast<sal_Int32>(maButtons.size())-1)
                         FocusButton(aLocation.mnIndex + 1);
                     else if (IsDeckTitleVisible())
                         FocusDeckTitle();
@@ -557,6 +560,10 @@ IMPL_LINK(FocusManager, WindowEventListener, VclSimpleEvent*, pEvent)
         case VCLEVENT_WINDOW_GETFOCUS:
         case VCLEVENT_WINDOW_LOSEFOCUS:
             pSource->Invalidate();
+            return 1;
+
+        default:
+            break;
     }
 
     return 0;
@@ -611,14 +618,14 @@ IMPL_LINK(FocusManager, ChildEventListener, VclSimpleEvent*, pEvent)
                         break;
                 }
             }
-            break;
+            return 1;
         }
 
         default:
             break;
     }
 
-    return 1;
+    return 0;
 }
 
 

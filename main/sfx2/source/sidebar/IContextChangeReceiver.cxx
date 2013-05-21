@@ -19,36 +19,16 @@
  * 
  *************************************************************/
 
-#ifndef SVX_SIDEBAR_INSERT_SIMPLE_TOOLBOX_CONTROLLER_HXX
-#define SVX_SIDEBAR_INSERT_SIMPLE_TOOLBOX_CONTROLLER_HXX
+#include "precompiled_sfx2.hxx"
 
-#include <svtools/toolboxcontroller.hxx>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 
-namespace css = ::com::sun::star;
-namespace cssu = ::com::sun::star::uno;
 
-namespace svx { namespace sidebar {
+namespace sfx2 { namespace sidebar {
 
-class SimpleToolBoxController : public svt::ToolboxController
+
+IContextChangeReceiver::~IContextChangeReceiver (void)
 {
-public:
-    SimpleToolBoxController(
-        const cssu::Reference<css::frame::XFrame>& rxFrame,
-        ToolBox& rToolBox,
-        const sal_uInt16 nItTemId,
-        const rtl::OUString& rsComand);
-    virtual ~SimpleToolBoxController (void);
+}
 
-    // XStatusListener
-    virtual void SAL_CALL statusChanged (const css::frame::FeatureStateEvent& rEvent)
-        throw (cssu::RuntimeException);
-
-private:
-    ToolBox& mrToolbox;
-    const sal_uInt16 mnItemId;
-};
-
-} } // end of namespace svx::sidebar
-
-
-#endif
+} } // end of namespace ::sd::sidebar
