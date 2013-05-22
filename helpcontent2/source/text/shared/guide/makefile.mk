@@ -150,6 +150,7 @@ XHPFILES = \
    redlining_versions.xhp \
    round_corner.xhp \
    scripting.xhp \
+   sidebar_window.xhp \
    space_hyphen.xhp \
    spadmin.xhp \
    standard_template.xhp \
