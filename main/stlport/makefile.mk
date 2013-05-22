@@ -44,7 +44,6 @@ all:
 $(INCCOM)$/stlport$/functional \
 $(INCCOM)$/stlport$/hash_map \
 $(INCCOM)$/stlport$/hash_set \
-$(INCCOM)$/stlport$/numeric \
 $(INCCOM)$/stlport$/slist \
 $(INCCOM)$/stlport$/vector: systemstl$/$$(@:f)
     $(MKDIRHIER) $(@:d)
