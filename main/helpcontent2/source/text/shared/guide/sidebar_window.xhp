@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textsharedguidesidebar_windowxhp" indexer="include">
+<title id="tit" xml-lang="en-US">Sidebar Window</title>
+<filename>/text/shared/guide/sidebar_window.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0010">
+  <bookmark_value>Sidebar</bookmark_value>
+</bookmark>
+<paragraph id="hd_id0100" xml-lang="en-US" role="heading" level="1" l10n="NEW">Sidebar Window
+</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_SIDEBAR_WINDOW" id="bm_id0020"/>
+<paragraph xml-lang="en-US" id="par_id0001" role="paragraph" l10n="NEW">
+  <ahelp hid="SFX2_HID_SIDEBAR_WINDOW">The sidebar provides frequently used tools, grouped in decks. Click on a tab in the vertical tab bar to choose a deck.</ahelp>
+</paragraph>
+<paragraph xml-lang="en-US" id="hd_id0200" role="heading" level="2" l10n="NEW">Tab Bar</paragraph>
+<paragraph xml-lang="en-US" id="hd_id0300" role="heading" level="3" l10n="NEW">Configuration Menu Button</paragraph>
+<table id="tbl_id1000">
+  <tablerow>
+    <tablecell><paragraph xml-lang="en-US" id="par_id1001" role="tablecontent" l10n="NEW"><image id="img_id1002" src="sfx2/res/symphony/open_more.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id1002">Configuration Menu</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id1003" role="tablecontent" l10n="NEW">
+The drop-down list of the configuration menu button has two parts.</paragraph>
+      <list type="unordered">
+        <listitem>
+          <paragraph xml-lang="en-US" id="par_id1004" role="tablecontent" l10n="NEW">Choose an item in the upper part of the list to switch between the currently available panel decks.</paragraph>
+        </listitem>
+        <listitem>
+          <paragraph xml-lang="en-US" id="par_id1005" role="tablecontent" l10n="NEW">To undock or dock the sidebar window use the <item type="menuitem">Undock</item> or <item type="menuitem">Dock</item> item respectively.</paragraph>
+          <paragraph xml-lang="en-US" id="par_id1006" role="tablecontent" l10n="NEW">Use the sub-list of the item <item type="menuitem">Customization</item> to enable or disable a deck or to restore the default configuration.</paragraph>
+        </listitem>
+      </list>
+    </tablecell>
+  </tablerow>
+</table>
+
+<paragraph xml-lang="en-US" id="hd_id0400" role="heading" level="3" l10n="NEW">Deck Tabs</paragraph>
+<table id="tbl_id2000">
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2001" role="tablecontent" l10n="NEW"><image id="img_id2001" src="sfx2/res/symphony/sidebar-property-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2001">Property deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2002" role="tablecontent" l10n="NEW">The <item type="menuitem">Properties</item> deck provides panels for object formatting like font, background color, or object size. The content depends on the currently selected object.</paragraph>
+    </tablecell>
+  </tablerow>
+
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2003" role="tablecontent" l10n="NEW"><image id="img_id2003" src="sfx2/res/symphony/sidebar-style-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2003">Styles and Formatting deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2004" role="tablecontent" l10n="NEW">The <item type="menuitem">Styles and Formatting</item> deck contains the <switchinline select="appl">
+        <caseinline select="CALC"><link href="text/scalc/01/05100000.xhp" name="styles">Styles and Formatting</link></caseinline>
+        <caseinline select="DRAW"><link href="text/simpress/01/05100000.xhp" name="styles">Styles and Formatting</link></caseinline>
+        <caseinline select="IMPRESS"><link href="text/simpress/01/05100000.xhp" name="styles">Styles and Formatting</link></caseinline>
+        <defaultinline><link href="text/swriter/01/05140000.xhp" name="styles">Styles and Formatting</link></defaultinline>
+        </switchinline> window.</paragraph>
+    </tablecell>
+  </tablerow>
+
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2005" role="tablecontent" l10n="NEW"><image id="img_id2005" src="sfx2/res/symphony/sidebar-gallery-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2005">Gallery deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2006" role="tablecontent" l10n="NEW">The <item type="menuitem">Gallery</item> deck contains the <link href="text/shared/01/gallery.xhp" name="gallery">Gallery</link> window.</paragraph>
+    </tablecell>
+  </tablerow>
+
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2007" role="tablecontent" l10n="NEW"><image id="img_id2007" src="sfx2/res/symphony/sidebar-navigator-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2007">Navigator deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2008" role="tablecontent" l10n="NEW">The <item type="menuitem">Navigator</item> deck contains the <switchinline select="appl">
+        <caseinline select="CALC"><link href="text/scalc/01/02110000.xhp" name="navigator">Navigator</link></caseinline>
+        <caseinline select="DRAW"><link href="text/simpress/01/02110000.xhp" name="navigator">Navigator</link></caseinline>
+        <caseinline select="IMPRESS"><link href="text/simpress/01/02110000.xhp" name="navigator">Navigator</link></caseinline>
+        <defaultinline><link href="text/swriter/01/02110000.xhp" name="navigator">Navigator</link></defaultinline>
+        </switchinline> window.</paragraph>
+    </tablecell>
+  </tablerow>
+
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2009" role="tablecontent" l10n="NEW"><image id="img_id2009" src="sfx2/res/symphony/sidebar-functions-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2009">Function list deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2010" role="tablecontent" l10n="NEW">
+        The <item type="menuitem">Functions</item> deck contains the <link href="text/scalc/01/04080000.xhp" name="functions">Function List</link> window. This deck is only available for spreadsheets.</paragraph>
+    </tablecell>
+  </tablerow>
+
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2011" role="tablecontent" l10n="NEW"><image id="img_id2011" src="sfx2/res/symphony/sidebar-template-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2011">Master Pages deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2012" role="tablecontent" l10n="NEW">The <item type="menuitem">Master Pages</item> deck lists currently used, recently used, and available master pages. Right-click a master page thumbnail for a sub-menu to apply or edit the master page. This deck is only available for presentations.</paragraph>
+    </tablecell>
+  </tablerow>
+
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2013" role="tablecontent" l10n="NEW"><image id="img_id2013" src="sfx2/res/symphony/sidebar-animation-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2013">Custom Animation deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2014" role="tablecontent" l10n="NEW">The <item type="menuitem">Custom Animation</item> deck provides tools to apply animation effects to presentation and graphic objects on your slide. This deck is only available for presentations.</paragraph>
+    </tablecell>
+  </tablerow>
+
+  <tablerow>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2015" role="tablecontent" l10n="NEW"><image id="img_id2015" src="sfx2/res/symphony/sidebar-transition-large.png" width="0.25in" height="0.25in"><alt xml-lang="en-US" id="alt_id2015">Slide Transition deck</alt></image></paragraph>
+    </tablecell>
+    <tablecell>
+      <paragraph xml-lang="en-US" id="par_id2016" role="tablecontent" l10n="NEW">The <item type="menuitem">Slide Transition</item> deck provides tools to apply a special effect that plays when you display a slide. This deck is only available for presentations.</paragraph>
+    </tablecell>
+  </tablerow>
+</table>
+<paragraph xml-lang="en-US" id="par_id0002" role="paragraph" l10n="NEW">The sidebar is available in WRITER, CALC, IMPRESS, and DRAW application.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id0500" role="heading" level="2" l10n="NEW">Sidebar Window Handling</paragraph>
+<paragraph xml-lang="en-US" id="par_id0003" role="paragraph" l10n="NEW">The sidebar is a <link href="text/shared/guide/autohide.xhp" name="docking">dockable window</link>. However, you cannot dock it to the bottom or top edge of the working area but only to the left or right edge. The sensitive area for the <switchinline select="sys"><caseinline select="MAC">Command-</caseinline><defaultinline>Ctrl-</defaultinline></switchinline>double-click method of docking is small, so make sure you click the sidebar window and not its content.</paragraph>
+<paragraph xml-lang="en-US" id="par_id0004" role="paragraph" l10n="NEW">In a docked sidebar window the <item type="menuitem">Close Sidebar Deck</item> button in the upper-right corner of the title area minimizes the current deck, but keeps the tab bar open. To reopen the deck click the corresponding tab or drag the sidebar window frame. To close the sidebar window completely uncheck <item type="menuitem">Sidebar</item> in the View menu.
+</paragraph>
+<paragraph xml-lang="en-US" id="par_id0005" role="paragraph" l10n="NEW">For decks with several panels click the panel title area to toggle between expanded and minimized state of the panel.</paragraph>
+<paragraph xml-lang="en-US" id="par_id0006" role="paragraph" l10n="NEW">The <item type="menuitem">More Options</item> button at the top-right of a panel title opens a dialog which provides additional settings. Not all panels have this feature.</paragraph>
+</body>
+</helpdocument>
