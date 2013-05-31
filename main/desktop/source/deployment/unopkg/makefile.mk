@@ -35,6 +35,9 @@ SRC1FILES = \
 
 SLOFILES = 
 
+BOOTSTRAP_SERVICE=TRUE
+CPPUMAKERFLAGS=
+
 .INCLUDE : ..$/target.pmk
 .INCLUDE : target.mk
 

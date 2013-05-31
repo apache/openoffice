@@ -19,36 +19,43 @@
  * 
  *************************************************************/
 
-#ifndef SVX_SIDEBAR_INSERT_SIMPLE_TOOLBOX_CONTROLLER_HXX
-#define SVX_SIDEBAR_INSERT_SIMPLE_TOOLBOX_CONTROLLER_HXX
+#ifndef SFX_SIDEBAR_CONTROLLER_FACTORY_HXX
+#define SFX_SIDEBAR_CONTROLLER_FACTORY_HXX
 
-#include <svtools/toolboxcontroller.hxx>
+#include "sfx2/dllapi.h"
+#include <com/sun/star/awt/XWindow.hpp>
+#include <com/sun/star/frame/XFrame.hpp>
+#include <com/sun/star/frame/XToolbarController.hpp>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
 
-namespace svx { namespace sidebar {
+class ToolBox;
 
-class SimpleToolBoxController : public svt::ToolboxController
+namespace sfx2 { namespace sidebar {
+
+/** Convenience class for the easy creation of toolbox controllers.
+*/
+class SFX2_DLLPUBLIC ControllerFactory
 {
 public:
-    SimpleToolBoxController(
+    static cssu::Reference<css::frame::XToolbarController> CreateToolBoxController(
+        ToolBox* pToolBox,
+        const sal_uInt16 nItemId,
+        const ::rtl::OUString& rsCommandName,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        ToolBox& rToolBox,
-        const sal_uInt16 nItTemId,
-        const rtl::OUString& rsComand);
-    virtual ~SimpleToolBoxController (void);
-
-    // XStatusListener
-    virtual void SAL_CALL statusChanged (const css::frame::FeatureStateEvent& rEvent)
-        throw (cssu::RuntimeException);
+        const cssu::Reference<css::awt::XWindow>& rxParentWindow,
+        const sal_Int32 nItemWidth);
 
 private:
-    ToolBox& mrToolbox;
-    const sal_uInt16 mnItemId;
+    static cssu::Reference<css::frame::XToolbarController> CreateToolBarController(
+        ToolBox* pToolBox,
+        const ::rtl::OUString& rsCommandName,
+        const cssu::Reference<css::frame::XFrame>& rxFrame,
+        const sal_Int32 nWidth);
 };
 
-} } // end of namespace svx::sidebar
 
+} } // end of namespace sfx2::sidebar
 
 #endif

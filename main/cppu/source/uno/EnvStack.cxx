@@ -42,7 +42,7 @@ struct SAL_DLLPRIVATE oslThreadIdentifier_equal
 
 bool oslThreadIdentifier_equal::operator()(oslThreadIdentifier s1, oslThreadIdentifier s2) const
 {
-	bool result = s1 == s2;
+	bool result = (s1 == s2);
 
 	return result;
 }
@@ -92,7 +92,7 @@ static uno_Environment * s_getCurrent(void)
 
 	osl::MutexGuard guard(s_threadMap_mutex);
 	ThreadMap::iterator iEnv = s_threadMap.find(threadId);
-	if(iEnv != s_threadMap.end())
+	if( iEnv != s_threadMap.end())
 		pEnv = iEnv->second;
 
 	return pEnv;

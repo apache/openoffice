@@ -25,6 +25,7 @@
 #include "Deck.hxx"
 #include "DeckTitleBar.hxx"
 #include "Panel.hxx"
+#include "PanelTitleBar.hxx"
 #include "SidebarPanel.hxx"
 #include "SidebarResource.hxx"
 #include "TabBar.hxx"
@@ -92,6 +93,10 @@ namespace {
         MID_FIRST_PANEL,
         MID_FIRST_HIDE = 1000
     };
+
+    /** When in doubt, show this deck.
+    */
+    static const ::rtl::OUString gsDefaultDeckId(A2S("PropertyDeck"));
 }
 
 
@@ -105,11 +110,12 @@ SidebarController::SidebarController (
               mpParentWindow,
               rxFrame,
               ::boost::bind(&SidebarController::OpenThenSwitchToDeck, this, _1),
-              ::boost::bind(&SidebarController::ShowPopupMenu, this, _1,_2,_3))),
+              ::boost::bind(&SidebarController::ShowPopupMenu, this, _1,_2))),
       mxFrame(rxFrame),
       maCurrentContext(OUString(), OUString()),
       maRequestedContext(),
-      msCurrentDeckId(A2S("PropertyDeck")),
+      mnRequestedForceFlags(SwitchFlag_NoForce),
+      msCurrentDeckId(gsDefaultDeckId),
       msCurrentDeckTitle(),
       maPropertyChangeForwarder(::boost::bind(&SidebarController::BroadcastPropertyChange, this)),
       maContextChangeUpdate(::boost::bind(&SidebarController::UpdateConfigurations, this)),
@@ -204,6 +210,8 @@ void SAL_CALL SidebarController::disposing (void)
     Theme::GetPropertySet()->removePropertyChangeListener(
         A2S(""),
         static_cast<css::beans::XPropertyChangeListener*>(this));
+
+    maContextChangeUpdate.CancelRequest();
 }
 
 
@@ -259,7 +267,10 @@ void SAL_CALL SidebarController::statusChanged (const css::frame::FeatureStateEv
         mbIsDocumentReadOnly = !bIsReadWrite;
 
         // Force the current deck to update its panel list.
-        SwitchToDeck(msCurrentDeckId);
+        if ( ! mbIsDocumentReadOnly)
+            msCurrentDeckId = gsDefaultDeckId;
+        mnRequestedForceFlags |= SwitchFlag_ForceSwitch;
+        maContextChangeUpdate.RequestCall();
     }
 }
 
@@ -379,7 +390,8 @@ void SidebarController::ProcessNewWidth (const sal_Int32 nNewWidth)
 
 void SidebarController::UpdateConfigurations (void)
 {
-    if (maCurrentContext != maRequestedContext)
+    if (maCurrentContext != maRequestedContext
+        || mnRequestedForceFlags!=SwitchFlag_NoForce)
     {
         maCurrentContext = maRequestedContext;
 
@@ -459,7 +471,9 @@ void SidebarController::OpenThenSwitchToDeck (
 void SidebarController::SwitchToDeck (
     const ::rtl::OUString& rsDeckId)
 {
-    if ( ! msCurrentDeckId.equals(rsDeckId) || ! mbIsDeckOpen)
+    if ( ! msCurrentDeckId.equals(rsDeckId)
+        || ! mbIsDeckOpen
+        || mnRequestedForceFlags!=SwitchFlag_NoForce)
     {
         const DeckDescriptor* pDeckDescriptor = ResourceManager::Instance().GetDeckDescriptor(rsDeckId);
         if (pDeckDescriptor != NULL)
@@ -476,7 +490,12 @@ void SidebarController::SwitchToDeck (
 {
     maFocusManager.Clear();
 
-    if ( ! msCurrentDeckId.equals(rDeckDescriptor.msId))
+    const bool bForceNewDeck ((mnRequestedForceFlags&SwitchFlag_ForceNewDeck)!=0);
+    const bool bForceNewPanels ((mnRequestedForceFlags&SwitchFlag_ForceNewPanels)!=0);
+    mnRequestedForceFlags = SwitchFlag_NoForce;
+
+    if ( ! msCurrentDeckId.equals(rDeckDescriptor.msId)
+        || bForceNewDeck)
     {
         // When the deck changes then destroy the deck and all panels
         // and create everything new.
@@ -488,6 +507,7 @@ void SidebarController::SwitchToDeck (
 
         msCurrentDeckId = rDeckDescriptor.msId;
     }
+    mpTabBar->HighlightDeck(msCurrentDeckId);
 
     // Determine the panels to display in the deck.
     ResourceManager::PanelContextDescriptorContainer aPanelContextDescriptors;
@@ -516,20 +536,6 @@ void SidebarController::SwitchToDeck (
             // to live with an empty deck.
         }
     }
-
-    if (mpCurrentDeck
-        && ArePanelSetsEqual(mpCurrentDeck->GetPanels(), aPanelContextDescriptors))
-    {
-        // Requested set of panels is identical to the current set of
-        // panels => Nothing to do.
-        return;
-    }
-
-        // When the document is read-only, check if there are any panels that can still be displayed.
-    if (mbIsDocumentReadOnly)
-    {
-    }
-
 
     // Provide a configuration and Deck object.
     if ( ! mpCurrentDeck)
@@ -560,13 +566,23 @@ void SidebarController::SwitchToDeck (
         const bool bIsPanelVisible (!mbIsDocumentReadOnly || rPanelContexDescriptor.mbShowForReadOnlyDocuments);
         if ( ! bIsPanelVisible)
             continue;
-        
+
         // Find the corresponding panel among the currently active
         // panels.
-        SharedPanelContainer::const_iterator iPanel (::std::find_if(
+        SharedPanelContainer::const_iterator iPanel;
+        if (bForceNewPanels)
+        {
+            // All panels have to be created in any case.  There is no
+            // point in searching already existing panels.
+            iPanel = rCurrentPanels.end();
+        }
+        else
+        {
+            iPanel = ::std::find_if(
                 rCurrentPanels.begin(),
                 rCurrentPanels.end(),
-                ::boost::bind(&Panel::HasIdPredicate, _1, ::boost::cref(rPanelContexDescriptor.msId))));
+                ::boost::bind(&Panel::HasIdPredicate, _1, ::boost::cref(rPanelContexDescriptor.msId)));
+        }
         if (iPanel != rCurrentPanels.end())
         {
             // Panel already exists in current deck.  Reuse it.
@@ -575,20 +591,26 @@ void SidebarController::SwitchToDeck (
         }
         else
         {
-            // Panel does not yet exist.  Create it.
+            // Panel does not yet exist or creation of new panels is forced.
+            // Create it.
             aNewPanels[nWriteIndex] = CreatePanel(
                 rPanelContexDescriptor.msId,
                 mpCurrentDeck->GetPanelParentWindow(),
-                rPanelContexDescriptor.mbIsInitiallyVisible);
+                rPanelContexDescriptor.mbIsInitiallyVisible,
+                rContext);
             bHasPanelSetChanged = true;
         }
         if (aNewPanels[nWriteIndex] != NULL)
         {
-            // Depending on the context we have to apply the show menu functor.
-            aNewPanels[nWriteIndex]->SetShowMenuFunctor(
-                rPanelContexDescriptor.msMenuCommand.getLength()>0
-                ? ::boost::bind(&SidebarController::ShowDetailMenu,this,rPanelContexDescriptor.msMenuCommand)
-                : ::boost::function<void(void)>() );
+            // Depending on the context we have to change the command
+            // for the "more options" dialog.
+            PanelTitleBar* pTitleBar = aNewPanels[nWriteIndex]->GetTitleBar();
+            if (pTitleBar != NULL)
+            {
+                pTitleBar->SetMoreOptionsCommand(
+                    rPanelContexDescriptor.msMenuCommand,
+                    mxFrame);
+            }
 
             ++nWriteIndex;
         }
@@ -621,34 +643,11 @@ void SidebarController::SwitchToDeck (
 
 
 
-bool SidebarController::ArePanelSetsEqual (
-    const SharedPanelContainer& rCurrentPanels,
-    const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels)
-{
-    if (rCurrentPanels.size() != rRequestedPanels.size())
-        return false;
-    for (sal_Int32 nIndex=0,nCount=rCurrentPanels.size(); nIndex<nCount; ++nIndex)
-    {
-        if (rCurrentPanels[nIndex] == NULL)
-            return false;
-        if ( ! rCurrentPanels[nIndex]->GetId().equals(rRequestedPanels[nIndex].msId))
-            return false;
-
-        // Check if the panels still can be displayed.  This may not be the case when
-        // the document just become rea-only. 
-        if (mbIsDocumentReadOnly && ! rRequestedPanels[nIndex].mbShowForReadOnlyDocuments)
-            return false;
-    }
-    return true;
-}
-
-
-
-
 SharedPanel SidebarController::CreatePanel (
     const OUString& rsPanelId,
     ::Window* pParentWindow,
-    const bool bIsInitiallyExpanded)
+    const bool bIsInitiallyExpanded,
+    const Context& rContext)
 {
     const PanelDescriptor* pPanelDescriptor = ResourceManager::Instance().GetPanelDescriptor(rsPanelId);
     if (pPanelDescriptor == NULL)
@@ -666,7 +665,8 @@ SharedPanel SidebarController::CreatePanel (
     Reference<ui::XUIElement> xUIElement (CreateUIElement(
             pPanel->GetComponentInterface(),
             pPanelDescriptor->msImplementationURL,
-            pPanelDescriptor->mbWantsCanvas));
+            pPanelDescriptor->mbWantsCanvas,
+            rContext));
     if (xUIElement.is())
     {
         // Initialize the panel and add it to the active deck.
@@ -686,7 +686,8 @@ SharedPanel SidebarController::CreatePanel (
 Reference<ui::XUIElement> SidebarController::CreateUIElement (
     const Reference<awt::XWindowPeer>& rxWindow,
     const ::rtl::OUString& rsImplementationURL,
-    const bool bWantsCanvas)
+    const bool bWantsCanvas,
+    const Context& rContext)
 {
     try
     {
@@ -709,6 +710,8 @@ Reference<ui::XUIElement> SidebarController::CreateUIElement (
             Reference<rendering::XSpriteCanvas> xCanvas (VCLUnoHelper::GetWindow(rxWindow)->GetSpriteCanvas());
             aCreationArguments.put("Canvas", makeAny(xCanvas));
         }   
+        aCreationArguments.put("ApplicationName", makeAny(rContext.msApplication));
+        aCreationArguments.put("ContextName", makeAny(rContext.msContext));
         
         Reference<ui::XUIElement> xUIElement(
             xUIElementFactory->createUIElement(
@@ -754,6 +757,8 @@ IMPL_LINK(SidebarController, WindowEventHandler, VclWindowEvent*, pEvent)
                 Theme::HandleDataChange();
                 UpdateTitleBarIcons();
                 mpParentWindow->Invalidate();
+                mnRequestedForceFlags |= SwitchFlag_ForceNewDeck | SwitchFlag_ForceNewPanels;
+                maContextChangeUpdate.RequestCall();
                 break;
                 
             case SFX_HINT_DYING:
@@ -797,10 +802,9 @@ IMPL_LINK(SidebarController, WindowEventHandler, VclWindowEvent*, pEvent)
 
 void SidebarController::ShowPopupMenu (
     const Rectangle& rButtonBox,
-    const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
-    const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const
+    const ::std::vector<TabBar::DeckMenuData>& rMenuData) const
 {
-    ::boost::shared_ptr<PopupMenu> pMenu = CreatePopupMenu(rDeckSelectionData, rDeckShowData);
+    ::boost::shared_ptr<PopupMenu> pMenu = CreatePopupMenu(rMenuData);
     pMenu->SetSelectHdl(LINK(this, SidebarController, OnMenuItemSelected));
         
     // pass toolbox button rect so the menu can stay open on button up
@@ -832,9 +836,9 @@ void SidebarController::ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) co
 
 
 ::boost::shared_ptr<PopupMenu> SidebarController::CreatePopupMenu (
-    const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
-    const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const
+    const ::std::vector<TabBar::DeckMenuData>& rMenuData) const
 {
+    // Create the top level popup menu.
     ::boost::shared_ptr<PopupMenu> pMenu (new PopupMenu());
     FloatingWindow* pMenuWindow = dynamic_cast<FloatingWindow*>(pMenu->GetWindow());
     if (pMenuWindow != NULL)
@@ -842,21 +846,36 @@ void SidebarController::ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) co
         pMenuWindow->SetPopupModeFlags(pMenuWindow->GetPopupModeFlags() | FLOATWIN_POPUPMODE_NOMOUSEUPCLOSE);
     }
 
+    // Create sub menu for customization (hiding of deck tabs.)
+    PopupMenu* pCustomizationMenu = new PopupMenu();
+
     SidebarResource aLocalResource;
     
     // Add one entry for every tool panel element to individually make
     // them visible or hide them.
+    sal_Int32 nIndex (0);
+    for(::std::vector<TabBar::DeckMenuData>::const_iterator
+            iItem(rMenuData.begin()),
+            iEnd(rMenuData.end());
+        iItem!=iEnd;
+        ++iItem,++nIndex)
     {
-        sal_Int32 nIndex (MID_FIRST_PANEL);
-        for(::std::vector<TabBar::DeckMenuData>::const_iterator
-                iItem(rDeckSelectionData.begin()),
-                iEnd(rDeckSelectionData.end());
-            iItem!=iEnd;
-            ++iItem)
+        const sal_Int32 nMenuIndex (nIndex+MID_FIRST_PANEL);
+        pMenu->InsertItem(nMenuIndex, iItem->msDisplayName, MIB_RADIOCHECK);
+        pMenu->CheckItem(nMenuIndex, iItem->mbIsCurrentDeck ? sal_True : sal_False);
+        pMenu->EnableItem(nMenuIndex, (iItem->mbIsEnabled&&iItem->mbIsActive) ? sal_True : sal_False);
+
+        const sal_Int32 nSubMenuIndex (nIndex+MID_FIRST_HIDE);
+        if (iItem->mbIsCurrentDeck)
         {
-            pMenu->InsertItem(nIndex, iItem->get<0>(), MIB_RADIOCHECK);
-            pMenu->CheckItem(nIndex, iItem->get<2>());
-            ++nIndex;
+            // Don't allow the currently visible deck to be disabled.
+            pCustomizationMenu->InsertItem(nSubMenuIndex, iItem->msDisplayName, MIB_RADIOCHECK);
+            pCustomizationMenu->CheckItem(nSubMenuIndex, sal_True);
+        }
+        else
+        {
+            pCustomizationMenu->InsertItem(nSubMenuIndex, iItem->msDisplayName, MIB_CHECKABLE);
+            pCustomizationMenu->CheckItem(nSubMenuIndex, iItem->mbIsActive ? sal_True : sal_False);
         }
     }
 
@@ -867,22 +886,6 @@ void SidebarController::ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) co
         pMenu->InsertItem(MID_LOCK_TASK_PANEL, String(SfxResId(STR_SFX_DOCK)));
     else
         pMenu->InsertItem(MID_UNLOCK_TASK_PANEL, String(SfxResId(STR_SFX_UNDOCK)));
-
-    // Add sub menu for customization (hiding of deck tabs.)
-    PopupMenu* pCustomizationMenu = new PopupMenu();
-    {
-        sal_Int32 nIndex (MID_FIRST_HIDE);
-        for(::std::vector<TabBar::DeckMenuData>::const_iterator
-                iItem(rDeckShowData.begin()),
-                iEnd(rDeckShowData.end());
-            iItem!=iEnd;
-            ++iItem)
-        {
-            pCustomizationMenu->InsertItem(nIndex, iItem->get<0>(), MIB_CHECKABLE);
-            pCustomizationMenu->CheckItem(nIndex, iItem->get<2>());
-            ++nIndex;
-        }
-    }
 
     pCustomizationMenu->InsertSeparator();
     pCustomizationMenu->InsertItem(MID_RESTORE_DEFAULT, String(SfxResId(STRING_RESTORE)));
@@ -929,7 +932,8 @@ IMPL_LINK(SidebarController, OnMenuItemSelected, Menu*, pMenu)
                 if (nIndex >= MID_FIRST_PANEL && nIndex<MID_FIRST_HIDE)
                     SwitchToDeck(mpTabBar->GetDeckIdForIndex(nIndex - MID_FIRST_PANEL));
                 else if (nIndex >=MID_FIRST_HIDE)
-                    mpTabBar->ToggleHideFlag(nIndex-MID_FIRST_HIDE);
+                    if (pMenu->GetItemBits(nIndex) == MIB_CHECKABLE)
+                        mpTabBar->ToggleHideFlag(nIndex-MID_FIRST_HIDE);
             }
             catch (RuntimeException&)
             {
@@ -1015,11 +1019,13 @@ bool SidebarController::CanModifyChildWindowWidth (void)
 
     sal_uInt16 nRow (0xffff);
     sal_uInt16 nColumn (0xffff);
-    pSplitWindow->GetWindowPos(mpParentWindow, nColumn, nRow);
-
-    sal_uInt16 nRowCount (pSplitWindow->GetWindowCount(nColumn));
-
-    return nRowCount==1;
+    if (pSplitWindow->GetWindowPos(mpParentWindow, nColumn, nRow))
+    {
+        sal_uInt16 nRowCount (pSplitWindow->GetWindowCount(nColumn));
+        return nRowCount==1;
+    }
+    else
+        return false;
 }
 
 
@@ -1071,17 +1077,23 @@ void SidebarController::RestrictWidth (void)
 
 SfxSplitWindow* SidebarController::GetSplitWindow (void)
 {
-    if (mpSplitWindow == NULL)
+    if (mpParentWindow != NULL)
     {
-        if (mpParentWindow != NULL)
+        SfxSplitWindow* pSplitWindow = dynamic_cast<SfxSplitWindow*>(mpParentWindow->GetParent());
+        if (pSplitWindow != mpSplitWindow)
         {
-            mpSplitWindow = dynamic_cast<SfxSplitWindow*>(mpParentWindow->GetParent());
+            if (mpSplitWindow != NULL)
+                mpSplitWindow->RemoveEventListener(LINK(this, SidebarController, WindowEventHandler));
+
+            mpSplitWindow = pSplitWindow;
+            
             if (mpSplitWindow != NULL)
                 mpSplitWindow->AddEventListener(LINK(this, SidebarController, WindowEventHandler));
         }
+        return mpSplitWindow;
     }
-
-    return mpSplitWindow;
+    else
+        return NULL;
 }
 
 

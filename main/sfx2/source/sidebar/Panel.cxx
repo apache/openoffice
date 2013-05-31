@@ -87,27 +87,9 @@ Panel::~Panel (void)
 
 
 
-void Panel::SetShowMenuFunctor( const ::boost::function<void(void)>& rShowMenuFunctor )
-{
-    if ( mpTitleBar.get() )
-    {
-        mpTitleBar->SetMenuAction( rShowMenuFunctor );
-    }
-}
-
-
-
-
 void Panel::Dispose (void)
 {
     mxPanelComponent = NULL;
-
-    if (mxElement.is())
-    {
-        Reference<lang::XComponent> xComponent (mxElement->getRealInterface(), UNO_QUERY);
-        if (xComponent.is())
-            xComponent->dispose();
-    }
 
     {    
         Reference<lang::XComponent> xComponent (mxElement, UNO_QUERY);
@@ -128,7 +110,7 @@ void Panel::Dispose (void)
 
 
 
-TitleBar* Panel::GetTitleBar (void) const
+PanelTitleBar* Panel::GetTitleBar (void) const
 {
     return mpTitleBar.get();
 }

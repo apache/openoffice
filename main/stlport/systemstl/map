@@ -19,39 +19,17 @@
  * 
  *************************************************************/
 
-#ifndef SFX_SIDEBAR_TOOLBOX_HXX
-#define SFX_SIDEBAR_TOOLBOX_HXX
+#ifndef SYSTEM_STL_MAP
+#define SYSTEM_STL_MAP
 
-#include "vcl/toolbox.hxx"
-
-
-namespace sfx2 { namespace sidebar {
-
-class SidebarToolBox
-    : public ToolBox
-{
-public:
-    SidebarToolBox (Window* pParentWindow, const ResId& rResId);
-    virtual ~SidebarToolBox (void);
-
-    void SetBorderWindow (const Window* pBorderWindow);
-    virtual void Paint (const Rectangle& rRect);
-
-    virtual Point GetPosPixel (void) const;
-    virtual void SetPosSizePixel (
-        long nX,
-        long nY,
-        long nWidth,
-        long nHeight,
-        sal_uInt16 nFlags);
-    virtual long Notify (NotifyEvent& rEvent);
-
-private:
-    bool mbParentIsBorder;
-    Image maItemSeparator;
-};
-
-
-} } // end of namespace sfx2::sidebar
+#ifdef HAVE_STL_INCLUDE_PATH
+	// TODO: use computed include file name
+	#include_next <map>
+#elif defined(_MSC_VER)
+	#include <../../VC/include/map>
+#else // fall back to boost/tr1
+	#include <boost/tr1/tr1/map>
+#endif
 
 #endif
+

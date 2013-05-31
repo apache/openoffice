@@ -1344,6 +1344,7 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
 			case com::sun::star::drawing::LineJoint_NONE : maLBEdgeStyle.SelectEntryPos(1); break;
 			case com::sun::star::drawing::LineJoint_MITER : maLBEdgeStyle.SelectEntryPos(2); break;
 			case com::sun::star::drawing::LineJoint_BEVEL : maLBEdgeStyle.SelectEntryPos(3); break;
+			default: break;
 		}
 	}
 	else

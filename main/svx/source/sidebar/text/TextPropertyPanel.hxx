@@ -26,6 +26,7 @@
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/IContextChangeReceiver.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 
 #include <svtools/ctrlbox.hxx>
 #include <svx/tbxcolorupdate.hxx>
@@ -33,6 +34,7 @@
 #include <editeng/fhgtitem.hxx>
 
 #include <com/sun/star/ui/XSidebar.hpp>
+#include <com/sun/star/frame/XToolbarController.hpp>
 
 #include <boost/scoped_ptr.hpp>
 #include "TextCharacterSpacingPopup.hxx"
@@ -58,16 +60,16 @@ public:
     static TextPropertyPanel* Create (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const ::sfx2::sidebar::EnumContext& rContext);
 
     virtual void DataChanged (const DataChangedEvent& rEvent);
+
     ::sfx2::sidebar::ControllerItem& GetSpaceController();
     long GetSelFontSize();
     void SetSpacing(long nKern);
     void EndSpacingPopupMode (void);
     void EndUnderlinePopupMode (void);
-    void SetFontColor (const String& rsColorName,const Color aColor);
-    void SetBrushColor (const String& rsColorName,const Color aColor);
     void SetUnderline(FontUnderline eUnderline);
     Color& GetUnderlineColor();
     void SetDefaultUnderline(FontUnderline eUnderline);
@@ -99,6 +101,8 @@ private:
     ::boost::scoped_ptr<ToolBox> mpToolBoxSpacing;
     ::boost::scoped_ptr<Window> mpToolBoxFontColorBackground;
     ::boost::scoped_ptr<ToolBox> mpToolBoxFontColor;
+    ::boost::scoped_ptr<Window> mpToolBoxFontColorBackgroundSW;
+    ::boost::scoped_ptr<ToolBox> mpToolBoxFontColorSW;
     ::boost::scoped_ptr<Window> mpToolBoxHighlightBackground;
     ::boost::scoped_ptr<ToolBox> mpToolBoxHighlight;
     ::boost::scoped_ptr<ToolboxButtonColorUpdater> mpFontColorUpdater;
@@ -112,12 +116,10 @@ private:
     ::sfx2::sidebar::ControllerItem maUnderlineControl;
     ::sfx2::sidebar::ControllerItem maStrikeControl;
     ::sfx2::sidebar::ControllerItem maShadowControl;
-    ::sfx2::sidebar::ControllerItem maFontColorControl;
     ::sfx2::sidebar::ControllerItem maScriptControlSw;
     ::sfx2::sidebar::ControllerItem maSuperScriptControl;
     ::sfx2::sidebar::ControllerItem maSubScriptControl;
     ::sfx2::sidebar::ControllerItem maSpacingControl;
-    ::sfx2::sidebar::ControllerItem maHighlightControl;
     ::sfx2::sidebar::ControllerItem maSDFontGrow;
     ::sfx2::sidebar::ControllerItem maSDFontShrink;
 
@@ -129,10 +131,6 @@ private:
     FontStrikeout				meStrike;
     bool mbWeightAvailable;
     bool mbPostureAvailable;
-    Color						maColor;
-    bool mbColorAvailable;
-    Color						maBackColor;
-    bool mbBackColorAvailable;
     SvxEscapement				meEscape;  //for sw
     bool						mbSuper;
     bool						mbSub;
@@ -146,8 +144,6 @@ private:
     bool mbFocusOnFontSizeCtrl;
     TextCharacterSpacingPopup maCharSpacePopup;
     TextUnderlinePopup maUnderlinePopup;
-    ColorPopup maFontColorPopup; 
-    ColorPopup maBrushColorPopup; 
 
     cssu::Reference<css::frame::XFrame> mxFrame;
     ::sfx2::sidebar::EnumContext maContext;
@@ -156,26 +152,21 @@ private:
     TextPropertyPanel (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
-        SfxBindings* pBindings);
+        SfxBindings* pBindings,
+        const ::sfx2::sidebar::EnumContext& rContext);
     virtual ~TextPropertyPanel (void);
 
 
     PopupControl* CreateCharacterSpacingControl (PopupContainer* pParent);
-    PopupControl* CreateFontColorPopupControl (PopupContainer* pParent);
-    PopupControl* CreateBrushColorPopupControl (PopupContainer* pParent);
     PopupControl* CreateUnderlinePopupControl (PopupContainer* pParent);
     DECL_LINK(SpacingClickHdl, ToolBox*);
-    DECL_LINK(ToolBoxFontColorDropHdl, ToolBox *); //for new color picker 
-    DECL_LINK(ToolBoxHighlightDropHdl, ToolBox *);
     DECL_LINK(ToolBoxUnderlineClickHdl, ToolBox* );
 
     void Initialize (void);
     void SetupToolboxItems (void);
     void InitToolBoxFont();
     void InitToolBoxIncDec();
-    void InitToolBoxFontColor();
     void InitToolBoxScript();
-    void InitToolBoxHighlight();
     void InitToolBoxSpacing();
 
     DECL_LINK(FontSelHdl, FontNameBox *);
@@ -188,6 +179,13 @@ private:
     DECL_LINK(ToolBoxScriptSelectHdl, ToolBox *);
 
     void UpdateItem (const sal_uInt16 nSlotId);
+
+    /** Depending on the given context make one of the toolboxes
+        mpToolBoxFontColor and mpToolBoxFontColorSW visible.  Both
+        occupy the same space.
+    */
+    void UpdateFontColorToolbox (
+        const ::sfx2::sidebar::EnumContext aContext);
 };
 
 } } // end of namespace ::svx::sidebar

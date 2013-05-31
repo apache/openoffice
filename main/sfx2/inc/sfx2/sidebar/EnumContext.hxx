@@ -41,6 +41,7 @@ public:
         Application_WriterWeb,
         Application_WriterXML,
         Application_WriterForm,
+        Application_WriterReport,
         Application_Calc,
         Application_Draw,
         Application_Impress,
@@ -128,7 +129,11 @@ public:
     sal_Int32 GetCombinedContext_DI(void) const;
 
     const ::rtl::OUString& GetApplicationName (void) const;
+    Application GetApplication (void) const;
+    Application GetApplication_DI (void) const;
+
     const ::rtl::OUString& GetContextName (void) const;
+    Context GetContext (void) const;
 
     bool operator == (const EnumContext aOther);
     bool operator != (const EnumContext aOther);

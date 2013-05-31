@@ -2917,19 +2917,8 @@ dnl system stl sanity tests
 dnl ===================================================================
 if false ; then # TODO: update TR1 compliant STLs
 if test "$USE_SYSTEM_STL" = "YES"; then
-   AC_MSG_CHECKING([if hash_map will be in __gnu_cxx namespace])
+   AC_MSG_CHECKING([system stl sanity])
    AC_LANG_PUSH([C++])
-
-   AC_TRY_COMPILE([#include <ext/hash_map>
-using namespace __gnu_cxx;
-],[hash_map<int, int> t; return 0;],
-  ac_cv_cxx_have_ext_hash_map=yes, ac_cv_cxx_have_ext_hash_map=no)
-
-   if test "$ac_cv_cxx_have_ext_hash_map" = "no"; then
-      AC_MSG_ERROR([Can't find hash_map. Try with --with-stlport])
-   else
-      AC_MSG_RESULT([$ac_cv_cxx_have_ext_hash_map])
-   fi
 
    if test "$HAVE_GCC_VISIBILITY_FEATURE" = "TRUE"; then
       AC_MSG_CHECKING([if STL headers are visibility safe])
@@ -4091,7 +4080,6 @@ AC_MSG_CHECKING([which python to use])
 if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    with_system_python=yes
    AC_MSG_RESULT([compiling against MacOSX10.7u.sdk (python version 2.7)])
-###   PYTHON_CFLAGS="-I/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3"
    PYTHON_CFLAGS="-I/Applications/Xcode.app/Contents/Developer//Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/python2.7"
    PYTHON_LIBS="-framework Python"
 elif test -n "$with_system_python" -o -n "$with_system_libs" && \

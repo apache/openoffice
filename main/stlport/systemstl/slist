@@ -28,11 +28,9 @@
 #elif defined(_MSC_VER)
 	#include <../../VC/include/list>
 	#define STLP4_SLIST_WITH_LIST
-#ifndef _HAS_ITERATOR_DEBUGGING
 	// MSVC's list would cause a lot of expression-result-unused warnings
 	// unless it is compiled in iterator-debugging mode. Silence this noise
 	#pragma warning(disable:4555)
-#endif // _HAS_ITERATOR_DEBUGGING
 #else // fall back to boost/tr1 (forward_list or plain list)
 	#include <boost/config.hpp>
 	#ifndef BOOST_NO_0X_HDR_FORWARD_LIST

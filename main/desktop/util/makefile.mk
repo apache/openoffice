@@ -38,6 +38,9 @@ UWINAPILIB =
 
 VERINFONAME=verinfo
 
+BOOTSTRAP_SERVICE=TRUE
+###CPPUMAKERFLAGS=
+
 # --- Resourcen ----------------------------------------------------
 
 .IF "$(GUI)" == "WNT"

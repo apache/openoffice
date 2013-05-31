@@ -72,7 +72,7 @@ void AsynchronousCall::CancelRequest (void)
     if (mnCallId != 0)
     {
         Application::RemoveUserEvent(mnCallId);
-        mnCallId = -1;
+        mnCallId = 0;
     }
 }
 

@@ -906,7 +906,7 @@ void FontNameBox::UserDraw( const UserDrawEvent& rUDEvt )
         rUDEvt.GetDevice()->DrawText( aPos, aString );
 
         rUDEvt.GetDevice()->SetFont( aOldFont );
-        DrawEntry( rUDEvt, sal_False, sal_False);   // draw seperator
+        DrawEntry( rUDEvt, sal_False, sal_False);   // draw separator
     }
     else
     {

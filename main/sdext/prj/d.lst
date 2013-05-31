@@ -3,8 +3,6 @@ mkdir: %_DEST%\bin%_EXT%\pdfimport
 ..\%__SRC%\bin\pdfunzip.* %_DEST%\bin%_EXT%\pdfunzip.*
 ..\%__SRC%\bin\pdfimport.oxt %_DEST%\bin%_EXT%\pdfimport\pdfimport.oxt
 
-
-
 mkdir: %COMMON_DEST%\res%_EXT%
 ..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
 
@@ -25,7 +23,9 @@ mkdir: %_DEST%\xml%_EXT%
 ..\%__SRC%\misc\PresenterScreen.component %_DEST%\xml%_EXT%\PresenterScreen.component
 
 ..\%__SRC%\bin\PresentationMinimizer*.dll %_DEST%\bin%_EXT%\PresentationMinimizer*.dll
+..\%__SRC%\bin\PreMin*.dll %_DEST%\bin%_EXT%\PreMin*.dll
 ..\%__SRC%\lib\PresentationMinimizer*.so %_DEST%\lib%_EXT%
 ..\%__SRC%\bin\PresenterScreen*.dll %_DEST%\bin%_EXT%\PresenterScreen*.dll
+..\%__SRC%\bin\PreScr*.dll %_DEST%\bin%_EXT%\PreScr*.dll
 ..\%__SRC%\lib\PresenterScreen*.so %_DEST%\lib%_EXT%
 ..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib

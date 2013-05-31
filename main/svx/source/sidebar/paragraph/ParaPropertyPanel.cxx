@@ -416,6 +416,10 @@ void ParaPropertyPanel::InitToolBoxIndent()
 	maRightIndent->SetModifyHdl( aLink );
 	maFLineIndent->SetModifyHdl( aLink );
 
+    maLeftIndent->SetAccessibleName(maLeftIndent->GetQuickHelpText());
+	maRightIndent->SetAccessibleName(maRightIndent->GetQuickHelpText());
+	maFLineIndent->SetAccessibleName(maFLineIndent->GetQuickHelpText());
+
     const bool bIsHighContrastModeActive (Theme::IsHighContrastMode());
 
 	if( Application::GetSettings().GetLayoutRTL())
@@ -483,6 +487,9 @@ void ParaPropertyPanel::InitToolBoxSpacing()
 	Link aLink = LINK( this, ParaPropertyPanel, ULSpaceHdl_Impl );
 	maTopDist->SetModifyHdl(aLink);
 	maBottomDist->SetModifyHdl( aLink );
+
+    maTopDist->SetAccessibleName(maTopDist->GetQuickHelpText());
+    maBottomDist->SetAccessibleName(maBottomDist->GetQuickHelpText());
 
 	maTbxUL_IncDec->SetItemImage(TOOLBOX_ITEM1, maParInc);
 	maTbxUL_IncDec->SetItemImage(TOOLBOX_ITEM2, maParDec);
@@ -835,86 +842,86 @@ IMPL_LINK( ParaPropertyPanel, ModifyIndentHdl_Impl, SvxRelativeField*, /* pBox *
 
 IMPL_LINK(ParaPropertyPanel, ClickIndent_IncDec_Hdl_Impl, ToolBox *, pControl)
 {
-	switch (pControl->GetCurItemId())
-	{
-		case INDENT_INCREMENT:
-		{
-			switch (maContext.GetCombinedContext())
-			{
-				case CombinedEnumContext(Application_Writer, Context_Default):
-				case CombinedEnumContext(Application_Writer, Context_Text):
-				case CombinedEnumContext(Application_Writer, Context_Table):
-				{
-					SfxBoolItem aMargin( SID_INC_INDENT, sal_True );
-					GetBindings()->GetDispatcher()->Execute(
-						SID_INC_INDENT, SFX_CALLMODE_RECORD, &aMargin, 0L);
-				}
-				break;
-				default:
-				{
-					SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
+    switch (pControl->GetCurItemId())
+    {
+    case INDENT_INCREMENT:
+        {
+            switch (maContext.GetCombinedContext_DI())
+            {
+            case CombinedEnumContext(Application_WriterVariants, Context_Default):
+            case CombinedEnumContext(Application_WriterVariants, Context_Text):
+            case CombinedEnumContext(Application_WriterVariants, Context_Table):
+                {
+                    SfxBoolItem aMargin( SID_INC_INDENT, sal_True );
+                    GetBindings()->GetDispatcher()->Execute(
+                        SID_INC_INDENT, SFX_CALLMODE_RECORD, &aMargin, 0L);
+                }
+                break;
+            default:
+                {
+                    SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
 
-					maTxtLeft += INDENT_STEP;
-					sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
-					nVal = OutputDevice::LogicToLogic( (long)nVal, MAP_100TH_MM, (MapUnit)m_eLRSpaceUnit );
-					aMargin.SetTxtLeft( (const long)nVal );
-					aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
-					aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
+                    maTxtLeft += INDENT_STEP;
+                    sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
+                    nVal = OutputDevice::LogicToLogic( (long)nVal, MAP_100TH_MM, (MapUnit)m_eLRSpaceUnit );
+                    aMargin.SetTxtLeft( (const long)nVal );
+                    aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
+                    aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
 
-					GetBindings()->GetDispatcher()->Execute(
-						SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
-				}
-			}
-		}
-		break;
-		case INDENT_DECREMENT:
-		{
-			switch (maContext.GetCombinedContext())
-			{
-				case CombinedEnumContext(Application_Writer, Context_Default):
-				case CombinedEnumContext(Application_Writer, Context_Text):
-				case CombinedEnumContext(Application_Writer, Context_Table):
-				{
-					SfxBoolItem aMargin( SID_DEC_INDENT, sal_True );
-					GetBindings()->GetDispatcher()->Execute(
-						SID_DEC_INDENT, SFX_CALLMODE_RECORD, &aMargin, 0L);
-				}
-				break;
-				default:
-				{
-					if((maTxtLeft - INDENT_STEP) < 0)
-						maTxtLeft = DEFAULT_VALUE;
-					else
-						maTxtLeft -= INDENT_STEP;
+                    GetBindings()->GetDispatcher()->Execute(
+                        SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+                }
+            }
+        }
+        break;
+    case INDENT_DECREMENT:
+        {
+            switch (maContext.GetCombinedContext_DI())
+            {
+            case CombinedEnumContext(Application_WriterVariants, Context_Default):
+            case CombinedEnumContext(Application_WriterVariants, Context_Text):
+            case CombinedEnumContext(Application_WriterVariants, Context_Table):
+                {
+                    SfxBoolItem aMargin( SID_DEC_INDENT, sal_True );
+                    GetBindings()->GetDispatcher()->Execute(
+                        SID_DEC_INDENT, SFX_CALLMODE_RECORD, &aMargin, 0L);
+                }
+                break;
+            default:
+                {
+                    if((maTxtLeft - INDENT_STEP) < 0)
+                        maTxtLeft = DEFAULT_VALUE;
+                    else
+                        maTxtLeft -= INDENT_STEP;
 
-					SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
-					
-					sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
-					nVal = OutputDevice::LogicToLogic( (long)nVal, MAP_100TH_MM, (MapUnit)m_eLRSpaceUnit );
+                    SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
 
-					aMargin.SetTxtLeft( (const long)nVal );
-					aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
-					aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
+                    sal_Int64 nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
+                    nVal = OutputDevice::LogicToLogic( (long)nVal, MAP_100TH_MM, (MapUnit)m_eLRSpaceUnit );
 
-					GetBindings()->GetDispatcher()->Execute(
-						SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
-				}
-			}
-		}
-		break;
-		case ID_HANGING_INDENT:
-		{
-			SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
-			aMargin.SetTxtLeft( (const long)GetCoreValue( *maLeftIndent.get(), m_eLRSpaceUnit ) + (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
-			aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
-			aMargin.SetTxtFirstLineOfst( ((const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ))*(-1) );
+                    aMargin.SetTxtLeft( (const long)nVal );
+                    aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
+                    aMargin.SetTxtFirstLineOfst( (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
 
-			GetBindings()->GetDispatcher()->Execute(
-				SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
-		}
-		break;
-	}
-	return( 0L );
+                    GetBindings()->GetDispatcher()->Execute(
+                        SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+                }
+            }
+        }
+        break;
+    case ID_HANGING_INDENT:
+        {
+            SvxLRSpaceItem aMargin( SID_ATTR_PARA_LRSPACE );
+            aMargin.SetTxtLeft( (const long)GetCoreValue( *maLeftIndent.get(), m_eLRSpaceUnit ) + (const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ) );
+            aMargin.SetRight( (const long)GetCoreValue( *maRightIndent.get(), m_eLRSpaceUnit ) );
+            aMargin.SetTxtFirstLineOfst( ((const short)GetCoreValue( *maFLineIndent.get(), m_eLRSpaceUnit ))*(-1) );
+
+            GetBindings()->GetDispatcher()->Execute(
+                SID_ATTR_PARA_LRSPACE, SFX_CALLMODE_RECORD, &aMargin, 0L);
+        }
+        break;
+    }
+    return( 0L );
 }
 
 IMPL_LINK(ParaPropertyPanel, ClickProDemote_Hdl_Impl, ToolBox *, pControl)
@@ -1034,54 +1041,73 @@ void ParaPropertyPanel::NotifyItemUpdate(
     const bool bIsEnabled)
 {
     (void)bIsEnabled;
-    
-	if( nSID == SID_ATTR_METRIC )
-	{
-		m_eMetricUnit = GetCurrentUnit(eState,pState);
-		if( m_eMetricUnit!=m_last_eMetricUnit )
-		{
-			SetFieldUnit( *maLeftIndent.get(), m_eMetricUnit );
-			SetFieldUnit( *maRightIndent.get(), m_eMetricUnit );
-			SetFieldUnit( *maFLineIndent.get(), m_eMetricUnit );
-			SetFieldUnit( *maTopDist.get(), m_eMetricUnit );
-			SetFieldUnit( *maBottomDist.get(), m_eMetricUnit );
-		}
-		m_last_eMetricUnit = m_eMetricUnit;
-	}
 
-	if( nSID == SID_ATTR_PARA_LRSPACE )
-		StateChangedIndentImpl( nSID, eState, pState );		
+    switch (nSID)
+    {
+    case SID_ATTR_METRIC:
+        {
+            m_eMetricUnit = GetCurrentUnit(eState,pState);
+            if( m_eMetricUnit!=m_last_eMetricUnit )
+            {
+                SetFieldUnit( *maLeftIndent.get(), m_eMetricUnit );
+                SetFieldUnit( *maRightIndent.get(), m_eMetricUnit );
+                SetFieldUnit( *maFLineIndent.get(), m_eMetricUnit );
+                SetFieldUnit( *maTopDist.get(), m_eMetricUnit );
+                SetFieldUnit( *maBottomDist.get(), m_eMetricUnit );
+            }
+            m_last_eMetricUnit = m_eMetricUnit;
+        }
+        break;
 
-	if( nSID == SID_ATTR_PARA_LINESPACE )	
-		StateChangedLnSPImpl( nSID, eState, pState );	
+    case SID_ATTR_PARA_LRSPACE:
+        StateChangedIndentImpl( nSID, eState, pState );
+        break;
 
-	if( nSID == SID_ATTR_PARA_ULSPACE)
-		StateChangedULImpl( nSID, eState, pState );
+    case SID_ATTR_PARA_LINESPACE:
+        StateChangedLnSPImpl( nSID, eState, pState );
+        break;
 
-	if (nSID==SID_ATTR_PARA_ADJUST_LEFT || nSID==SID_ATTR_PARA_ADJUST_CENTER || nSID==SID_ATTR_PARA_ADJUST_RIGHT || nSID==SID_ATTR_PARA_ADJUST_BLOCK)
-		StateChangedAlignmentImpl( nSID, eState, pState );
+    case SID_ATTR_PARA_ULSPACE:
+        StateChangedULImpl( nSID, eState, pState );
+        break;
 
-	if (nSID==SID_OUTLINE_LEFT || nSID==SID_OUTLINE_RIGHT)
-		StateChangeOutLineImpl( nSID, eState, pState );
+    case SID_ATTR_PARA_ADJUST_LEFT:
+    case SID_ATTR_PARA_ADJUST_CENTER:
+    case SID_ATTR_PARA_ADJUST_RIGHT:
+    case SID_ATTR_PARA_ADJUST_BLOCK:
+        StateChangedAlignmentImpl( nSID, eState, pState );
+        break;
 
-	if (nSID==SID_INC_INDENT || nSID==SID_DEC_INDENT)
-		StateChangeIncDecImpl( nSID, eState, pState );
-	// Add toggle state for numbering and bullet icons
-	if (nSID==FN_NUM_NUMBERING_ON || nSID==FN_NUM_BULLET_ON) 
-		StateChangeBulletNumImpl( nSID, eState, pState );
+    case SID_OUTLINE_LEFT:
+    case SID_OUTLINE_RIGHT:
+        StateChangeOutLineImpl( nSID, eState, pState );
+        break;
 
-	//Get the num rule index data of the current selection
-	if ( nSID == FN_BUL_NUM_RULE_INDEX ||nSID == FN_NUM_NUM_RULE_INDEX) 
-		StateChangeBulletNumRuleImpl( nSID, eState, pState );
-	
-	if ((nSID == SID_TABLE_VERT_NONE)||(nSID == SID_TABLE_VERT_CENTER)||(nSID == SID_TABLE_VERT_BOTTOM))
-	{
-		VertStateChanged( nSID, eState, pState);
-	}
-	else if (nSID == SID_BACKGROUND_COLOR)
-	{
-		ParaBKGStateChanged(nSID, eState, pState);
-	}
+    case SID_INC_INDENT:
+    case SID_DEC_INDENT:
+        StateChangeIncDecImpl( nSID, eState, pState );
+        break;
+
+    case FN_NUM_NUMBERING_ON:
+    case FN_NUM_BULLET_ON:
+        StateChangeBulletNumImpl( nSID, eState, pState );
+        break;
+
+    case FN_BUL_NUM_RULE_INDEX:
+    case FN_NUM_NUM_RULE_INDEX:
+        StateChangeBulletNumRuleImpl( nSID, eState, pState );
+        break;
+
+    case SID_TABLE_VERT_NONE:
+    case SID_TABLE_VERT_CENTER:
+    case SID_TABLE_VERT_BOTTOM:
+        VertStateChanged( nSID, eState, pState);
+        break;
+
+    case SID_BACKGROUND_COLOR:
+        ParaBKGStateChanged(nSID, eState, pState);
+        break;
+    }
 }
 
 
@@ -1174,160 +1200,146 @@ void ParaPropertyPanel::StateChangedAlignmentImpl( sal_uInt16 nSID, SfxItemState
 
 void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 /* nSID */, SfxItemState eState, const SfxPoolItem* pState )
 {
-	switch (maContext.GetCombinedContext())
-	{
-		
-		case CombinedEnumContext(Application_Writer, Context_DrawText):
-		case CombinedEnumContext(Application_Calc, Context_DrawText):
-		case CombinedEnumContext(Application_Writer, Context_Annotation):
-		{
-			maLeftIndent->SetMin( DEFAULT_VALUE );
-			maRightIndent->SetMin( DEFAULT_VALUE );
-			maFLineIndent->SetMin( DEFAULT_VALUE );
-			maTbxIndent_IncDec->Show();
-			maTbxProDemote->Hide();
-		}
-		break;
-		case CombinedEnumContext(Application_Draw, Context_DrawText):
-        	case CombinedEnumContext(Application_Impress, Context_DrawText):
-		case CombinedEnumContext(Application_Draw, Context_Draw):
-		case CombinedEnumContext(Application_Draw, Context_TextObject):
-		case CombinedEnumContext(Application_Draw, Context_Graphic):
-		case CombinedEnumContext(Application_Impress, Context_Draw):
-		case CombinedEnumContext(Application_Impress, Context_TextObject):
-		case CombinedEnumContext(Application_Impress, Context_Graphic):
-		case CombinedEnumContext(Application_Impress, Context_Table):
-        	case CombinedEnumContext(Application_Draw, Context_Table):
-		{
-    		maLeftIndent->SetMin( DEFAULT_VALUE );
-			maRightIndent->SetMin( DEFAULT_VALUE );
-			maFLineIndent->SetMin( DEFAULT_VALUE );
-			maTbxIndent_IncDec->Hide();
-			maTbxProDemote->Show();
-		}
-		break;
-		case CombinedEnumContext(Application_Writer, Context_Default):
-		case CombinedEnumContext(Application_Writer, Context_Text):
-		case CombinedEnumContext(Application_Writer, Context_Table):
-		{
-			maLeftIndent->SetMin( NEGA_MAXVALUE, FUNIT_100TH_MM );
-			maRightIndent->SetMin( NEGA_MAXVALUE, FUNIT_100TH_MM );
-			maFLineIndent->SetMin( NEGA_MAXVALUE, FUNIT_100TH_MM );
-			maTbxIndent_IncDec->Show();
-			maTbxProDemote->Hide();
-		}
-		break;
-	}
+    switch (maContext.GetCombinedContext_DI())
+    {
 
-	if( pState && eState >= SFX_ITEM_AVAILABLE )
-	{
-		SvxLRSpaceItem* pSpace = ( SvxLRSpaceItem*)pState;
-		maTxtLeft = pSpace->GetTxtLeft();
-		maTxtLeft = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)m_eLRSpaceUnit, MAP_100TH_MM );
-		maTxtLeft = OutputDevice::LogicToLogic( maTxtLeft, MAP_100TH_MM, (MapUnit)(SFX_MAPUNIT_TWIP) );
+    case CombinedEnumContext(Application_WriterVariants, Context_DrawText):
+    case CombinedEnumContext(Application_WriterVariants, Context_Annotation):
+    case CombinedEnumContext(Application_Calc, Context_DrawText):
+        {
+            maLeftIndent->SetMin( DEFAULT_VALUE );
+            maRightIndent->SetMin( DEFAULT_VALUE );
+            maFLineIndent->SetMin( DEFAULT_VALUE );
+            maTbxIndent_IncDec->Show();
+            maTbxProDemote->Hide();
+        }
+        break;
+    case CombinedEnumContext(Application_DrawImpress, Context_DrawText):
+    case CombinedEnumContext(Application_DrawImpress, Context_Draw):
+    case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
+    case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
+    case CombinedEnumContext(Application_DrawImpress, Context_Table):
+        {
+            maLeftIndent->SetMin( DEFAULT_VALUE );
+            maRightIndent->SetMin( DEFAULT_VALUE );
+            maFLineIndent->SetMin( DEFAULT_VALUE );
+            maTbxIndent_IncDec->Hide();
+            maTbxProDemote->Show();
+        }
+        break;
+    case CombinedEnumContext(Application_WriterVariants, Context_Default):
+    case CombinedEnumContext(Application_WriterVariants, Context_Text):
+    case CombinedEnumContext(Application_WriterVariants, Context_Table):
+        {
+            maLeftIndent->SetMin( NEGA_MAXVALUE, FUNIT_100TH_MM );
+            maRightIndent->SetMin( NEGA_MAXVALUE, FUNIT_100TH_MM );
+            maFLineIndent->SetMin( NEGA_MAXVALUE, FUNIT_100TH_MM );
+            maTbxIndent_IncDec->Show();
+            maTbxProDemote->Hide();
+        }
+        break;
+    }
 
-		long aTxtRight = pSpace->GetRight();
-		aTxtRight = OutputDevice::LogicToLogic( aTxtRight, (MapUnit)m_eLRSpaceUnit, MAP_100TH_MM );
-		aTxtRight = OutputDevice::LogicToLogic( aTxtRight, MAP_100TH_MM, (MapUnit)(SFX_MAPUNIT_TWIP) );
+    if( pState && eState >= SFX_ITEM_AVAILABLE )
+    {
+        SvxLRSpaceItem* pSpace = ( SvxLRSpaceItem*)pState;
+        maTxtLeft = pSpace->GetTxtLeft();
+        maTxtLeft = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)m_eLRSpaceUnit, MAP_100TH_MM );
+        maTxtLeft = OutputDevice::LogicToLogic( maTxtLeft, MAP_100TH_MM, (MapUnit)(SFX_MAPUNIT_TWIP) );
 
-		long aTxtFirstLineOfst = pSpace->GetTxtFirstLineOfst();
-		aTxtFirstLineOfst = OutputDevice::LogicToLogic( aTxtFirstLineOfst, (MapUnit)m_eLRSpaceUnit, MAP_100TH_MM );
-		aTxtFirstLineOfst = OutputDevice::LogicToLogic( aTxtFirstLineOfst, MAP_100TH_MM, (MapUnit)(SFX_MAPUNIT_TWIP) );
+        long aTxtRight = pSpace->GetRight();
+        aTxtRight = OutputDevice::LogicToLogic( aTxtRight, (MapUnit)m_eLRSpaceUnit, MAP_100TH_MM );
+        aTxtRight = OutputDevice::LogicToLogic( aTxtRight, MAP_100TH_MM, (MapUnit)(SFX_MAPUNIT_TWIP) );
 
-		long nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
-		nVal = (long)maLeftIndent->Normalize( (long)nVal );
-		maLeftIndent->SetValue( nVal, FUNIT_100TH_MM );
+        long aTxtFirstLineOfst = pSpace->GetTxtFirstLineOfst();
+        aTxtFirstLineOfst = OutputDevice::LogicToLogic( aTxtFirstLineOfst, (MapUnit)m_eLRSpaceUnit, MAP_100TH_MM );
+        aTxtFirstLineOfst = OutputDevice::LogicToLogic( aTxtFirstLineOfst, MAP_100TH_MM, (MapUnit)(SFX_MAPUNIT_TWIP) );
 
-		if(maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text) && 
-			maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default) &&
-			maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Table))
-		{
-			maFLineIndent->SetMin( nVal*(-1), FUNIT_100TH_MM );
-		}
+        long nVal = OutputDevice::LogicToLogic( maTxtLeft, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
+        nVal = (long)maLeftIndent->Normalize( (long)nVal );
+        maLeftIndent->SetValue( nVal, FUNIT_100TH_MM );
 
-		long nrVal = OutputDevice::LogicToLogic( aTxtRight, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
-		nrVal = (long)maRightIndent->Normalize( (long)nrVal );
-	    maRightIndent->SetValue( nrVal, FUNIT_100TH_MM );
+        if ( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)
+             && maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Default)
+             && maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Table))
+        {
+            maFLineIndent->SetMin( nVal*(-1), FUNIT_100TH_MM );
+        }
 
-		long nfVal = OutputDevice::LogicToLogic( aTxtFirstLineOfst, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
-		nfVal = (long)maFLineIndent->Normalize( (long)nfVal );
-		maFLineIndent->SetValue( nfVal, FUNIT_100TH_MM );	
+        long nrVal = OutputDevice::LogicToLogic( aTxtRight, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
+        nrVal = (long)maRightIndent->Normalize( (long)nrVal );
+        maRightIndent->SetValue( nrVal, FUNIT_100TH_MM );
 
-		switch (maContext.GetCombinedContext())
-		{
-			case CombinedEnumContext(Application_Writer, Context_DrawText):
-			case CombinedEnumContext(Application_Writer, Context_Text):
-			case CombinedEnumContext(Application_Writer, Context_Default):
-			case CombinedEnumContext(Application_Writer, Context_Table):
-			case CombinedEnumContext(Application_Writer, Context_Annotation):
-			{
-				maLeftIndent->SetMax( MAX_SW - nrVal, FUNIT_100TH_MM );
-				maRightIndent->SetMax( MAX_SW - nVal, FUNIT_100TH_MM );
-				maFLineIndent->SetMax( MAX_SW - nVal - nrVal, FUNIT_100TH_MM );
-			}
-			break;
-			case CombinedEnumContext(Application_Draw, Context_DrawText):
-			case CombinedEnumContext(Application_Draw, Context_Draw):
-        		case CombinedEnumContext(Application_Draw, Context_Table):
-			case CombinedEnumContext(Application_Draw, Context_TextObject):
-			case CombinedEnumContext(Application_Draw, Context_Graphic):
-			case CombinedEnumContext(Application_Impress, Context_TextObject):
-        		case CombinedEnumContext(Application_Impress, Context_DrawText):
-			case CombinedEnumContext(Application_Impress, Context_Table):
-			case CombinedEnumContext(Application_Impress, Context_Draw):
-			case CombinedEnumContext(Application_Impress, Context_Graphic):
-			{
-				maLeftIndent->SetMax( MAX_SC_SD - nrVal, FUNIT_100TH_MM );
-				maRightIndent->SetMax( MAX_SC_SD - nVal, FUNIT_100TH_MM );
-				maFLineIndent->SetMax( MAX_SC_SD - nVal - nrVal, FUNIT_100TH_MM );
-			}
-		}
+        long nfVal = OutputDevice::LogicToLogic( aTxtFirstLineOfst, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
+        nfVal = (long)maFLineIndent->Normalize( (long)nfVal );
+        maFLineIndent->SetValue( nfVal, FUNIT_100TH_MM );	
+
+        switch (maContext.GetCombinedContext_DI())
+        {
+        case CombinedEnumContext(Application_WriterVariants, Context_DrawText):
+        case CombinedEnumContext(Application_WriterVariants, Context_Text):
+        case CombinedEnumContext(Application_WriterVariants, Context_Default):
+        case CombinedEnumContext(Application_WriterVariants, Context_Table):
+        case CombinedEnumContext(Application_WriterVariants, Context_Annotation):
+            {
+                maLeftIndent->SetMax( MAX_SW - nrVal, FUNIT_100TH_MM );
+                maRightIndent->SetMax( MAX_SW - nVal, FUNIT_100TH_MM );
+                maFLineIndent->SetMax( MAX_SW - nVal - nrVal, FUNIT_100TH_MM );
+            }
+            break;
+        case CombinedEnumContext(Application_DrawImpress, Context_DrawText):
+        case CombinedEnumContext(Application_DrawImpress, Context_Draw):
+        case CombinedEnumContext(Application_DrawImpress, Context_Table):
+        case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
+            {
+                maLeftIndent->SetMax( MAX_SC_SD - nrVal, FUNIT_100TH_MM );
+                maRightIndent->SetMax( MAX_SC_SD - nVal, FUNIT_100TH_MM );
+                maFLineIndent->SetMax( MAX_SC_SD - nVal - nrVal, FUNIT_100TH_MM );
+            }
+        }
 
         maTbxIndent_IncDec->Enable();
         maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_True);
-        if ( maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text) 
-             && maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default)
-             && maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Table) )
+        if ( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text) 
+             && maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Default)
+             && maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Table) )
         {
             maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_INC, sal_True);
             maTbxIndent_IncDec->EnableItem(BT_TBX_INDENT_DEC, sal_True);
         }
 
-//		maTbxProDemote->Enable();
-//		if( !mbOutLineRight && !mbOutLineLeft )
-//			maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
-		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
-	}
-	else if( eState == SFX_ITEM_DISABLED )
-	{
-		maLeftIndent-> Disable();
-		maRightIndent->Disable();
-		maFLineIndent->Disable();
-		maTbxIndent_IncDec->Disable();
-		if( maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text)  && 
-			maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default) &&
-			maContext.GetCombinedContext() !=  CombinedEnumContext(Application_Writer, Context_Table) )
-			maTbxIndent_IncDec->Disable();
-		else
-			maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_False);
+        maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_True);
+    }
+    else if( eState == SFX_ITEM_DISABLED )
+    {
+        maLeftIndent-> Disable();
+        maRightIndent->Disable();
+        maFLineIndent->Disable();
+        maTbxIndent_IncDec->Disable();
+        if( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)  && 
+            maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Default) &&
+            maContext.GetCombinedContext_DI() !=  CombinedEnumContext(Application_WriterVariants, Context_Table) )
+            maTbxIndent_IncDec->Disable();
+        else
+            maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_False);
 
-//		maTbxProDemote->Disable();
-		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
-	}
-	else
-	{
-		maLeftIndent->SetEmptyFieldValue();
-		maRightIndent->SetEmptyFieldValue();
-		maFLineIndent->SetEmptyFieldValue();
-		if( maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Text)  && 
-			maContext.GetCombinedContext() != CombinedEnumContext(Application_Writer, Context_Default) &&
-			maContext.GetCombinedContext() !=  CombinedEnumContext(Application_Writer, Context_Table) )
-			maTbxIndent_IncDec->Disable();
-		else
-			maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_False);
-//		maTbxProDemote->Disable();
-		maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
-	}
+        //		maTbxProDemote->Disable();
+        maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
+    }
+    else
+    {
+        maLeftIndent->SetEmptyFieldValue();
+        maRightIndent->SetEmptyFieldValue();
+        maFLineIndent->SetEmptyFieldValue();
+        if( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)  && 
+            maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Default) &&
+            maContext.GetCombinedContext_DI() !=  CombinedEnumContext(Application_WriterVariants, Context_Table) )
+            maTbxIndent_IncDec->Disable();
+        else
+            maTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_False);
+        maTbxProDemote->EnableItem(SD_HANGING_INDENT, sal_False);
+    }
 }
 
 void ParaPropertyPanel::StateChangedLnSPImpl( sal_uInt16 /* nSID */, SfxItemState eState, const SfxPoolItem* pState )
@@ -1412,9 +1424,9 @@ void ParaPropertyPanel::StateChangeOutLineImpl( sal_uInt16 nSID, SfxItemState eS
 
 void ParaPropertyPanel::StateChangeIncDecImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState )
 {
-    if ( ( maContext.GetCombinedContext() == CombinedEnumContext(Application_Writer, Context_Text)
-           || maContext.GetCombinedContext() == CombinedEnumContext(Application_Writer, Context_Default)
-           || maContext.GetCombinedContext() ==  CombinedEnumContext(Application_Writer, Context_Table) )
+    if ( ( maContext.GetCombinedContext_DI() == CombinedEnumContext(Application_WriterVariants, Context_Text)
+           || maContext.GetCombinedContext_DI() == CombinedEnumContext(Application_WriterVariants, Context_Default)
+           || maContext.GetCombinedContext_DI() ==  CombinedEnumContext(Application_WriterVariants, Context_Table) )
          && ( nSID == SID_INC_INDENT || nSID == SID_DEC_INDENT ) )
     {
         // Writer's text shell is the only one which provides reasonable states for Slots SID_INC_INDENT and SID_DEC_INDENT
@@ -1431,25 +1443,19 @@ void ParaPropertyPanel::StateChangeBulletNumImpl( sal_uInt16 nSID, SfxItemState 
 {
     if ( (eState >= SFX_ITEM_DEFAULT) && (pState->ISA(SfxBoolItem)) )
     {
+        const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
+        const sal_Bool aBool = (sal_Bool)pItem->GetValue();
         if (nSID==FN_NUM_NUMBERING_ON)
         {
-            const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
-            sal_Bool aBool = (sal_Bool)pItem->GetValue();
-            if (aBool) {
-                maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_CHECK);
-            } else {
-                maTBxNumBullet->SetItemState(IID_NUMBER,	STATE_NOCHECK);
-            }
+            maTBxNumBullet->SetItemState(
+                IID_NUMBER,
+                aBool ? STATE_CHECK : STATE_NOCHECK );
         }
         else if (nSID==FN_NUM_BULLET_ON)
         {
-            const SfxBoolItem* pItem= (const SfxBoolItem*)pState;
-            sal_Bool aBool = (sal_Bool)pItem->GetValue();
-            if (aBool) {
-                maTBxNumBullet->SetItemState(IID_BULLET,	STATE_CHECK);
-            } else {
-                maTBxNumBullet->SetItemState(IID_BULLET,	STATE_NOCHECK);
-            }
+            maTBxNumBullet->SetItemState(
+                IID_BULLET,
+                aBool ? STATE_CHECK : STATE_NOCHECK );
         }
     }
 }

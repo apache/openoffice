@@ -1131,6 +1131,7 @@ LINKLINKFILES= \
    text$/shared$/guide$/redlining_versions.xhp \
    text$/shared$/guide$/round_corner.xhp \
    text$/shared$/guide$/scripting.xhp \
+   text$/shared$/guide$/sidebar_window.xhp \
    text$/shared$/guide$/space_hyphen.xhp \
    text$/shared$/guide$/spadmin.xhp \
    text$/shared$/guide$/standard_template.xhp \

@@ -447,6 +447,7 @@ void ResourceManager::ReadContextList (
                 aApplications.push_back(EnumContext::Application_WriterWeb);
                 aApplications.push_back(EnumContext::Application_WriterXML);
                 aApplications.push_back(EnumContext::Application_WriterForm);
+                aApplications.push_back(EnumContext::Application_WriterReport);
             }
             else
             {
@@ -505,7 +506,7 @@ void ResourceManager::ReadContextList (
 void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
 {
     // Get module name for given frame.
-    ::rtl::OUString sModuleName (GetModuleName(rxFrame));
+    ::rtl::OUString sModuleName (Tools::GetModuleName(rxFrame));
     if (sModuleName.getLength() == 0)
         return;
     if (maProcessedApplications.find(sModuleName) != maProcessedApplications.end())
@@ -545,20 +546,27 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
         rDeckDescriptor.msId = rsNodeName;
         rDeckDescriptor.msIconURL = ::comphelper::getString(aChildNode.getNodeValue("ImageURL"));
         rDeckDescriptor.msHighContrastIconURL = rDeckDescriptor.msIconURL;
+        rDeckDescriptor.msTitleBarIconURL = OUString();
+        rDeckDescriptor.msHighContrastTitleBarIconURL = OUString();
         rDeckDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
         rDeckDescriptor.msHelpText = rDeckDescriptor.msTitle;
-        rDeckDescriptor.maContextList.AddContextDescription(Context(sModuleName, A2S("any")), true, OUString());
         rDeckDescriptor.mbIsEnabled = true;
+        rDeckDescriptor.mnOrderIndex = 100000 + nReadIndex;
+        rDeckDescriptor.maContextList.AddContextDescription(Context(sModuleName, A2S("any")), true, OUString());
 
         PanelDescriptor& rPanelDescriptor (maPanels[nPanelWriteIndex++]);
         rPanelDescriptor.msTitle = ::comphelper::getString(aChildNode.getNodeValue("UIName"));
         rPanelDescriptor.mbIsTitleBarOptional = true;
         rPanelDescriptor.msId = rsNodeName;
         rPanelDescriptor.msDeckId = rsNodeName;
+        rPanelDescriptor.msTitleBarIconURL = OUString();
+        rPanelDescriptor.msHighContrastTitleBarIconURL = OUString();
         rPanelDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
-        rPanelDescriptor.maContextList.AddContextDescription(Context(sModuleName, A2S("any")), true, OUString());
         rPanelDescriptor.msImplementationURL = rsNodeName;
+        rPanelDescriptor.mnOrderIndex = 100000 + nReadIndex;
         rPanelDescriptor.mbShowForReadOnlyDocuments = false;
+        rPanelDescriptor.mbWantsCanvas = false;
+        rPanelDescriptor.maContextList.AddContextDescription(Context(sModuleName, A2S("any")), true, OUString());
     }
 
     // When there where invalid nodes then we have to adapt the size
@@ -592,30 +600,6 @@ void ResourceManager::StorePanelExpansionState (
         }
     }
 }
-
-
-
-
-::rtl::OUString ResourceManager::GetModuleName (
-    const cssu::Reference<css::frame::XFrame>& rxFrame)
-{
-    if ( ! rxFrame.is() || ! rxFrame->getController().is())
-        return OUString();
-    
-    try
-    {
-        const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
-        const Reference<frame::XModuleManager> xModuleManager (
-            aContext.createComponent("com.sun.star.frame.ModuleManager"),
-            UNO_QUERY_THROW);
-        return xModuleManager->identify(rxFrame);
-    }
-    catch (const Exception&)
-    {
-        DBG_UNHANDLED_EXCEPTION();
-    }
-    return OUString();
-}   
 
 
 

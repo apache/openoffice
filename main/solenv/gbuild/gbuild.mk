@@ -162,6 +162,11 @@ gb_GLOBALDEFS := \
 	$(gb_COMPILERDEFS) \
 	$(gb_CPUDEFS) \
 
+ifneq ($(USE_SYSTEM_STL),YES)
+gb_GLOBALDEFS += \
+	-DSTLPORT_VERSION=$(STLPORT_VER)
+endif
+
 ifeq ($(gb_PRODUCT),$(true))
 gb_GLOBALDEFS += \
 	-DPRODUCT \

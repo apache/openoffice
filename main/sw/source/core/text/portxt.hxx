@@ -23,6 +23,7 @@
 #ifndef _PORTXT_HXX
 #define _PORTXT_HXX
 
+#include <cstddef>
 #include <tools/mempool.hxx>
 
 #include "porlin.hxx"

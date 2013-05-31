@@ -65,7 +65,7 @@ $(eval $(call gb_Library_add_linked_libs,sfx,\
 	stl \
 	svl \
 	svt \
-	tk \
+	ootk \
 	tl \
 	ucbhelper \
 	utl \
@@ -218,12 +218,15 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/sidebar/SidebarController \
 	sfx2/source/sidebar/SidebarPanelBase \
 	sfx2/source/sidebar/SidebarToolBox \
+	sfx2/source/sidebar/Accessible \
+	sfx2/source/sidebar/AccessibleTitleBar \
 	sfx2/source/sidebar/AsynchronousCall \
 	sfx2/source/sidebar/CommandInfoProvider \
 	sfx2/source/sidebar/Context \
 	sfx2/source/sidebar/ContextChangeBroadcaster \
 	sfx2/source/sidebar/ContextList \
 	sfx2/source/sidebar/ControlFactory \
+	sfx2/source/sidebar/ControllerFactory \
 	sfx2/source/sidebar/ControllerItem \
 	sfx2/source/sidebar/CustomImageRadioButton \
 	sfx2/source/sidebar/Deck \
@@ -234,6 +237,8 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/sidebar/EnumContext \
 	sfx2/source/sidebar/FocusManager \
 	sfx2/source/sidebar/MenuButton \
+	sfx2/source/sidebar/IContextChangeReceiver \
+	sfx2/source/sidebar/ILayoutableWindow \
 	sfx2/source/sidebar/Paint \
 	sfx2/source/sidebar/Panel \
 	sfx2/source/sidebar/PanelDescriptor \

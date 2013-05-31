@@ -39,6 +39,8 @@ class ToolBox;
 
 namespace svx { namespace sidebar {
 
+/** This panel provides buttons for inserting shapes into a document.
+*/
 class InsertPropertyPanel
     : public Control
 {
@@ -49,45 +51,13 @@ public:
     virtual ~InsertPropertyPanel (void);
 
 private:
-	::boost::scoped_ptr<Window> mpStandardShapesBackground;
+    ::boost::scoped_ptr<Window> mpStandardShapesBackground;
     ::boost::scoped_ptr<ToolBox> mpStandardShapesToolBox;
-	::boost::scoped_ptr<Window> mpCustomShapesBackground;
+    ::boost::scoped_ptr<Window> mpCustomShapesBackground;
     ::boost::scoped_ptr<ToolBox> mpCustomShapesToolBox;
-    class ItemDescriptor
-    {
-    public:
-        cssu::Reference<css::frame::XToolbarController> mxController;
-        css::util::URL maURL;
-        rtl::OUString msCurrentCommand;
-        cssu::Reference<css::frame::XDispatch> mxDispatch;
-    };
-    typedef ::std::map<sal_uInt16, ItemDescriptor> ControllerContainer;
-    ControllerContainer maControllers;
     const cssu::Reference<css::frame::XFrame> mxFrame;
-
-    /** Add listeners to toolbox and update its size to match its
-        content.
-    */
-    void SetupToolBox (ToolBox& rToolBox);
-    cssu::Reference<css::frame::XToolbarController> GetControllerForItemId (
-        const sal_uInt16 nItemId) const;
-    ToolBox* GetToolBoxForItemId (const sal_uInt16 nItemId) const;
-    sal_uInt16 GetItemIdForSubToolbarName (
-        const ::rtl::OUString& rsCOmmandName) const;
     
-    /** Create toolbox controller for one item.
-    */
-    void CreateController (
-        const sal_uInt16 nItemId);
-    void UpdateIcons (void);
-
-    DECL_LINK(DropDownClickHandler, ToolBox*);
-    DECL_LINK(ClickHandler, ToolBox*);
-    DECL_LINK(DoubleClickHandler, ToolBox*);
-    DECL_LINK(SelectHandler, ToolBox*);
     DECL_LINK(WindowEventListener, VclSimpleEvent*);
-    DECL_LINK(Activate, ToolBox*);
-    DECL_LINK(Deactivate, ToolBox*);
 };
 
 

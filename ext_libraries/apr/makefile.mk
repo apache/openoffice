@@ -44,15 +44,14 @@ APRVERSION=$(APR_MAJOR).$(APR_MINOR).$(APR_MICRO)
 TARFILE_NAME=$(PRJNAME)-$(APRVERSION)
 TARFILE_MD5=97262fe54dddaf583eaaee3497a426e1
 
-PATCH_FILES=apr-1.4.5.patch
+PATCH_FILES= $(TARFILE_NAME).patch
 
 .IF "$(OS)"=="WNT"
 
+PATCH_FILES+= $(TARFILE_NAME)-windows.patch
 CONFIGURE_ACTION=cp include/apr.hw include/apr.h
 BUILD_DIR=
 BUILD_ACTION=INCLUDE="$(INCLUDE);./include"  nmake -f Makefile.win buildall
-
-#INSTALL_ACTION=cp Release/libapr-1.lib $(OUTDIR)/lib/libapr-1.lib
 
 .ELIF "$(GUI)" == "OS2"
 
@@ -62,8 +61,8 @@ BUILD_ACTION=INCLUDE="$(INCLUDE);./include"  nmake -f Makefile.win buildall
 .ELSE
 
 CONFIGURE_DIR=
-CONFIGURE_ACTION=.$/configure --prefix=$(OUTDIR) --includedir=$(OUTDIR)$/inc$/apr
-CONFIGURE_FLAGS=
+CONFIGURE_ACTION=.$/configure
+CONFIGURE_FLAGS=--prefix=$(OUTDIR) --includedir=$(OUTDIR)$/inc$/apr
 
 BUILD_DIR=$(CONFIGURE_DIR)
 BUILD_ACTION=$(GNUMAKE) --debug=b

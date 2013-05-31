@@ -53,6 +53,7 @@ private:
         typedef boost::unordered_map< rtl::OUString, Node > Children;
 
         Node(): startInclude(false) {}
+        void clear() { startInclude=false; children.clear(); }
 
         Children children;
         bool startInclude;
