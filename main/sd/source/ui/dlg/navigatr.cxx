@@ -86,63 +86,74 @@ SdNavigatorWin::SdNavigatorWin(
       maImageList		( SdResId( IL_NAVIGATR ) ),
       maImageListH	( SdResId( ILH_NAVIGATR ) )
 {
-	maTlbObjects.SetViewFrame( mpBindings->GetDispatcher()->GetFrame() );
+    maTlbObjects.SetViewFrame( mpBindings->GetDispatcher()->GetFrame() );
 
-	FreeResource();
+    FreeResource();
 
     maTlbObjects.SetAccessibleName(String(SdResId(STR_OBJECTS_TREE)));
 
-	mpNavigatorCtrlItem = new SdNavigatorControllerItem( SID_NAVIGATOR_STATE, this, mpBindings, rUpdateRequest);
-	mpPageNameCtrlItem = new SdPageNameControllerItem( SID_NAVIGATOR_PAGENAME, this, mpBindings, rUpdateRequest);
-	mpDocList = new List();
+    mpNavigatorCtrlItem = new SdNavigatorControllerItem( SID_NAVIGATOR_STATE, this, mpBindings, rUpdateRequest);
+    mpPageNameCtrlItem = new SdPageNameControllerItem( SID_NAVIGATOR_PAGENAME, this, mpBindings, rUpdateRequest);
+    mpDocList = new List();
 
-	ApplyImageList(); // load images *before* calculating sizes to get something useful !!!
+    ApplyImageList(); // load images *before* calculating sizes to get something useful !!!
 
-	Size aTbxSize( maToolbox.CalcWindowSizePixel() );
-	maToolbox.SetOutputSizePixel( aTbxSize );
-	maToolbox.SetSelectHdl( LINK( this, SdNavigatorWin, SelectToolboxHdl ) );
-	maToolbox.SetClickHdl( LINK( this, SdNavigatorWin, ClickToolboxHdl ) );
+    Size aTbxSize( maToolbox.CalcWindowSizePixel() );
+    maToolbox.SetOutputSizePixel( aTbxSize );
+    maToolbox.SetSelectHdl( LINK( this, SdNavigatorWin, SelectToolboxHdl ) );
+    maToolbox.SetClickHdl( LINK( this, SdNavigatorWin, ClickToolboxHdl ) );
     maToolbox.SetDropdownClickHdl( LINK(this, SdNavigatorWin, DropdownClickToolBoxHdl) );
     maToolbox.SetItemBits( TBI_DRAGTYPE, maToolbox.GetItemBits( TBI_DRAGTYPE ) | TIB_DROPDOWNONLY );
 
     // Shape filter drop down menu.
-    maToolbox.SetItemBits(TBI_SHAPE_FILTER,
+    maToolbox.SetItemBits(
+        TBI_SHAPE_FILTER,
         maToolbox.GetItemBits(TBI_SHAPE_FILTER) | TIB_DROPDOWNONLY);
         
-	// TreeListBox
+    // TreeListBox
     // set position below toolbox
     long nListboxYPos = maToolbox.GetPosPixel().Y() + maToolbox.GetSizePixel().Height() + 4;
     maTlbObjects.SetPosSizePixel( 0, nListboxYPos, 0, 0, WINDOW_POSSIZE_Y );
-	maTlbObjects.SetDoubleClickHdl( LINK( this, SdNavigatorWin, ClickObjectHdl ) );
-	maTlbObjects.SetSelectionMode( SINGLE_SELECTION );
+    maTlbObjects.SetDoubleClickHdl( LINK( this, SdNavigatorWin, ClickObjectHdl ) );
+    maTlbObjects.SetSelectionMode( SINGLE_SELECTION );
     // set focus to listbox, otherwise it is in the toolbox which is only useful
     // for keyboard navigation
     maTlbObjects.GrabFocus();
 
-	// DragTypeListBox
-	maLbDocs.SetSelectHdl( LINK( this, SdNavigatorWin, SelectDocumentHdl ) );
+    // DragTypeListBox
+    maLbDocs.SetSelectHdl( LINK( this, SdNavigatorWin, SelectDocumentHdl ) );
     // set position below treelistbox
     nListboxYPos = maTlbObjects.GetPosPixel().Y() + maTlbObjects.GetSizePixel().Height() + 4;
     maLbDocs.SetPosSizePixel( 0, nListboxYPos, 0, 0, WINDOW_POSSIZE_Y );
 
+    // assure that tool box is at least as wide as the tree list box
+    {
+        const Size aTlbSize( maTlbObjects.GetOutputSizePixel() );
+        if ( aTlbSize.Width() > aTbxSize.Width() )
+        {
+            maToolbox.SetPosSizePixel( 0, 0, aTlbSize.Width(), 0, WINDOW_POSSIZE_WIDTH );
+            aTbxSize = maToolbox.GetOutputSizePixel();
+        }
+    }
+
     // set min outputsize after all sizes are known
-    long nFullHeight = nListboxYPos + maLbDocs.GetSizePixel().Height() + 4;
-	maSize = GetOutputSizePixel();
+    const long nFullHeight = nListboxYPos + maLbDocs.GetSizePixel().Height() + 4;
+    maSize = GetOutputSizePixel();
     if( maSize.Height() < nFullHeight )
     {
         maSize.Height() = nFullHeight;
         SetOutputSizePixel( maSize );
     }
     maMinSize = maSize;
-    long nMinWidth = 2*maToolbox.GetPosPixel().X() + aTbxSize.Width(); // never clip the toolbox
+    const long nMinWidth = 2*maToolbox.GetPosPixel().X() + aTbxSize.Width(); // never clip the toolbox
     if( nMinWidth > maMinSize.Width() )
         maMinSize.Width() = nMinWidth;
-	maMinSize.Height() -= 40;
+    maMinSize.Height() -= 40;
     SfxDockingWindow* pDockingParent = dynamic_cast<SfxDockingWindow*>(GetParent());
-	if (pDockingParent != NULL)
+    if (pDockingParent != NULL)
         pDockingParent->SetMinOutputSizePixel( maMinSize );
 
-	// InitTlb; Wird ueber Slot initiiert
+    // InitTlb; Wird ueber Slot initiiert
     if (rUpdateRequest)
         rUpdateRequest();
 }

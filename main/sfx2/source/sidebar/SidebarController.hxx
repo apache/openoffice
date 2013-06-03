@@ -102,6 +102,17 @@ public:
     
     void NotifyResize (void);
 
+    /** In some situations it is necessary to force an update of the
+        current deck and its panels.  One reason is a change of the
+        view scale.  Some panels can handle this only when
+        constructed.  In this case we have to a context change and
+        also force that all panels are destroyed and created new.
+    */
+    const static sal_Int32 SwitchFlag_NoForce = 0x00;
+    const static sal_Int32 SwitchFlag_ForceSwitch = 0x01;
+    const static sal_Int32 SwitchFlag_ForceNewDeck = 0x02;
+    const static sal_Int32 SwitchFlag_ForceNewPanels = 0x02;
+    
     void SwitchToDeck (
         const ::rtl::OUString& rsDeckId);
     void OpenThenSwitchToDeck (
@@ -124,6 +135,8 @@ private:
     cssu::Reference<css::frame::XFrame> mxFrame;
     Context maCurrentContext;
     Context maRequestedContext;
+    /// Use a combination of SwitchFlag_* as value.
+    sal_Int32 mnRequestedForceFlags;
     ::rtl::OUString msCurrentDeckId;
     ::rtl::OUString msCurrentDeckTitle;
     AsynchronousCall maPropertyChangeForwarder;
@@ -164,9 +177,6 @@ private:
     */
     void UpdateConfigurations (void);
     
-    bool ArePanelSetsEqual (
-        const SharedPanelContainer& rCurrentPanels,
-        const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels);
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
         const ::rtl::OUString& rsImplementationURL,
@@ -182,12 +192,10 @@ private:
         const Context& rContext);
     void ShowPopupMenu (
         const Rectangle& rButtonBox,
-        const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
-        const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const;
+        const ::std::vector<TabBar::DeckMenuData>& rMenuData) const;
     void ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) const;
     ::boost::shared_ptr<PopupMenu> CreatePopupMenu (
-        const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
-        const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const;
+        const ::std::vector<TabBar::DeckMenuData>& rMenuData) const;
     DECL_LINK(OnMenuItemSelected, Menu*);
     void BroadcastPropertyChange (void);
 

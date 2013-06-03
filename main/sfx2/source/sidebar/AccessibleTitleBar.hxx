@@ -19,28 +19,35 @@
  * 
  *************************************************************/
 
+#ifndef SFX_SIDEBAR_ACCESSIBLE_TITLE_BAR_HXX
+#define SFX_SIDEBAR_ACCESSIBLE_TITLE_BAR_HXX
+
+#include <toolkit/awt/vclxaccessiblecomponent.hxx>
+#include <com/sun/star/accessibility/XAccessible.hpp>
 
 
-// MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_dbaccess.hxx"
-#include "statusbarontroller.hxx"
-#ifndef _DBU_REGHELPER_HXX_
-#include "dbu_reghelper.hxx"
+namespace css = ::com::sun::star;
+namespace cssu = ::com::sun::star::uno;
+
+namespace sfx2 { namespace sidebar {
+
+class TitleBar;
+
+class AccessibleTitleBar
+    : public VCLXAccessibleComponent
+{
+public:
+    static cssu::Reference<css::accessibility::XAccessible> Create (TitleBar& rTitleBar);
+    
+protected:
+    virtual void FillAccessibleStateSet (utl::AccessibleStateSetHelper& rStateSet);
+
+private:
+    AccessibleTitleBar (VCLXWindow* pWindow);
+    virtual ~AccessibleTitleBar (void);
+};
+    
+
+} } // end of namespace sfx2::sidebar
+
 #endif
-
-extern "C" void SAL_CALL createRegistryInfo_OStatusbarController()
-{
-	static ::dbaui::OMultiInstanceAutoRegistration< ::dbaui::OStatusbarController> aAutoRegistration;
-}
-namespace dbaui
-{
-	using namespace svt;
-	using namespace com::sun::star::uno;
-	using namespace com::sun::star::beans;
-	using namespace com::sun::star::lang;
-	using namespace ::com::sun::star::frame;
-	using namespace ::com::sun::star::util;
-
-	IMPLEMENT_SERVICE_INFO1_STATIC(OStatusbarController,"com.sun.star.sdb.ApplicationStatusbarController","com.sun.star.frame.StatusbarController")
-	IMPLEMENT_FORWARD_XINTERFACE2(OStatusbarController,StatusbarController,OStatusbarController_BASE)
-}
