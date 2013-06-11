@@ -83,13 +83,13 @@ CONFIGURE_FLAGS=								\
 	--with-iconv="no"				
 
 
-# Use our own expat on the Mac.  Maybe we should do this on Linux, too?
-.IF "$(OS)" == "MACOSX"
+# Use our own expat on the Mac.  Maybe we should do this on Linux, too? Yes!
+.IF "$(OS)" == "MACOSX" || ("$(OS)" == "LINUX" && "$(SYSTEM_EXPAT)"!="YES")
 
 CONFIGURE_FLAGS+= --with-expat=$(OUTDIR)
 # The non-standard names of our expat libraries (yes, plural) make 
 # a special handling in apr-utils configure necessary.
-PATCH_FILES+= $(TARFILE_NAME).mac.expat.patch
+PATCH_FILES+= $(TARFILE_NAME).expat.patch
 
 .ENDIF
 
