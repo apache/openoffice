@@ -1,11 +1,12 @@
---- misc/apr-util-1.4.1/build/apu-conf.m4	2011-08-08 11:32:27.000000000 +0200
-+++ misc/build/apr-util-1.4.1/build/apu-conf.m4	2012-02-22 16:39:05.000000000 +0100
-@@ -87,8 +87,13 @@
+--- misc/apr-util-1.4.1/build/apu-conf.m4	2011-08-08 06:32:27.000000000 -0300
++++ misc/build/apr-util-1.4.1/build/apu-conf.m4	2013-06-12 20:09:05.877947541 -0300
+@@ -87,8 +87,14 @@ dnl be dropped later.
  dnl
  AC_DEFUN([APU_SYSTEM_EXPAT], [
   
 +  APU_TRY_EXPAT_LINK([OpenOffice expat], apu_cv_expat_openoffice,
-+     [expat.h], [-lexpat_xmlparse -lexpat_xmltok])
++     [expat.h], [-L"$SOLARLIBDIR" -lexpat_xmlparse -lexpat_xmltok],
++     [APR_ADDTO(APRUTIL_INCLUDES, [-I"$SOLARINCDIR"/external])] )
 +
 +  if test $apu_has_expat = 0; then
    APU_TRY_EXPAT_LINK([Expat 1.95.x], apu_cv_expat_system, 
