@@ -1,6 +1,6 @@
---- misc/serf-1.2.0/Makefile.in	2012-12-13 16:43:09.000000000 -0300
-+++ misc/build/serf-1.2.0/Makefile.in	2013-02-25 11:11:04.107764814 -0300
-@@ -55,7 +55,7 @@ MKDIR = @mkdir_p@
+--- misc/serf-1.2.1/Makefile.in	2013-06-03 15:21:14.000000000 -0300
++++ misc/build/serf-1.2.1/Makefile.in	2013-06-07 12:31:04.416862903 -0300
+@@ -56,7 +56,7 @@ MKDIR = @mkdir_p@
  INSTALL = @INSTALL@
  
  LDFLAGS = @EXTRA_LDFLAGS@ @LDFLAGS@

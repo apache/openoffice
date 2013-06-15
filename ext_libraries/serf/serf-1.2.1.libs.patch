@@ -1,6 +1,6 @@
---- misc/serf-1.2.0/configure.in	2012-12-08 16:45:28.000000000 -0300
-+++ misc/build/serf-1.2.0/configure.in	2013-02-25 11:11:04.106764823 -0300
-@@ -199,7 +199,7 @@ AC_SEARCH_LIBS(fabs, m)
+--- misc/serf-1.2.1/configure.in	2013-06-03 14:52:41.000000000 -0300
++++ misc/build/serf-1.2.1/configure.in	2013-06-07 12:27:36.914098933 -0300
+@@ -257,7 +257,7 @@ AC_SEARCH_LIBS(fabs, m)
  
  libs=""
  if test -n "$apu_config"; then

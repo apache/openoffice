@@ -1,5 +1,5 @@
---- misc/serf-1.2.0/serf_private.h	2012-11-09 12:31:43.000000000 -0300
-+++ misc/build/serf-1.2.0/serf_private.h	2013-02-26 04:02:51.927213864 -0300
+--- misc/serf-1.2.1/serf_private.h	2013-06-03 14:22:51.000000000 -0300
++++ misc/build/serf-1.2.1/serf_private.h	2013-06-07 12:33:34.432688365 -0300
 @@ -32,12 +32,18 @@
  
  /* Internal logging facilities, set flag to 1 to enable console logging for
