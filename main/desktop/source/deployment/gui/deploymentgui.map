@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,22 +17,12 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
-
-
-
-# To be included after settings.mk
-
-# Although the deployment gui shared library is a UNO component, it also exports
-# some C++ functionality:
-.IF "$(OS)" == "WNT"
-.IF "$(COM)" == "GCC"
-DEPLOYMENTGUILIB = -ldeploymentgui$(DLLPOSTFIX).uno
-.ELSE
-DEPLOYMENTGUILIB = ideploymentgui$(DLLPOSTFIX).uno.lib
-.ENDIF
-.ELIF "$(OS)" == "OS2"
-DEPLOYMENTGUILIB = -ldeplgui
-.ELSE
-DEPLOYMENTGUILIB = -ldeploymentgui$(DLLPOSTFIX).uno
-.ENDIF
+###############################################################
+UDK_3_0_0 {
+    global:
+		component_getImplementationEnvironment;
+		component_getFactory;
+		handleVersionException;
+	local:
+	*;
+};
