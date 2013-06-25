@@ -48,7 +48,7 @@ TARFILE_MD5=2b5f1ca58d6ef30f18f1415b65bed81c
 PATCH_FILES=coinmp-1.6.0.patch coinmp-1.6.0-clang.patch
 
 .IF "$(COM)"=="MSC"
-BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|Win32"
+BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|Win32"
 .ELSE
 CONFIGURE_ACTION=./configure
 #CONFIGURE_FLAGS=--disable-pkg-config --disable-bzlib --disable-zlib CC='$(CC) $(ARCH_FLAGS)' CXX='$(CXX) $(ARCH_FLAGS)' CFLAGS='$(ARCH_FLAGS) -Wc,-arch -Wc,i386' CPPFLAGS='$(ARCH_FLAGS)' LDFLAGS='$(ARCH_FLAGS)' compiler_flags='$(ARCH_FLAGS)'

@@ -156,6 +156,34 @@ void PosSizePropertyPanel::ShowMenu (void)
 
 
 
+namespace
+{
+    bool hasText(const SdrView& rSdrView)
+    {
+        const SdrMarkList& rMarkList = rSdrView.GetMarkedObjectList();
+
+        if(1 == rMarkList.GetMarkCount())
+        {
+            const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
+            const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
+
+            if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind))
+            {
+                const SdrTextObj* pSdrTextObj = dynamic_cast< const SdrTextObj* >(pObj);
+
+                if(pSdrTextObj && pSdrTextObj->HasText())
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+} // end of anonymous namespace
+
+
+
 void PosSizePropertyPanel::Initialize()
 {
     mpFtPosX->SetBackground(Wallpaper());
@@ -228,18 +256,7 @@ void PosSizePropertyPanel::Initialize()
     if ( mpView != NULL )
     {
         maUIScale = mpView->GetModel()->GetUIScale();
-
-        const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
-        if(1 == rMarkList.GetMarkCount())
-        {
-            const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-            const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
-
-            if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
-            {
-                mbAdjustEnabled = true;
-            }
-        }
+        mbAdjustEnabled = hasText(*mpView);
     }
     
     mePoolUnit = maTransfWidthControl.GetCoreMetric();
@@ -705,20 +722,12 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     if ( mpView == NULL )
         return;
 
-    const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
+    mbAdjustEnabled = hasText(*mpView);
 
-    if(1 == rMarkList.GetMarkCount())
-    {
-        const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-        const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
-
-        if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
-            mbAdjustEnabled = true;
-        else
-            mbAdjustEnabled = false;
-    }
-    else
-        mbAdjustEnabled = false;
+    // Pool unit and dialog unit may have changed, make sure that we
+    // have the current values.
+    mePoolUnit = maTransfWidthControl.GetCoreMetric();
+    meDlgUnit = GetModuleFieldUnit();
 
     switch (nSID)
     {
@@ -732,6 +741,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                     long mlOldWidth1 = pWidthItem->GetValue();
 
                     mlOldWidth1 = Fraction( mlOldWidth1 ) / maUIScale;
+                    SetFieldUnit( *mpMtrWidth, meDlgUnit, true );
                     SetMetricValue( *mpMtrWidth, mlOldWidth1, mePoolUnit );
                     mlOldWidth = mlOldWidth1;
                     break;
@@ -751,6 +761,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                     long mlOldHeight1 = pHeightItem->GetValue();
 
                     mlOldHeight1 = Fraction( mlOldHeight1 ) / maUIScale;
+                    SetFieldUnit( *mpMtrHeight, meDlgUnit, true );
                     SetMetricValue( *mpMtrHeight, mlOldHeight1, mePoolUnit );
                     mlOldHeight = mlOldHeight1;
                     break;
@@ -769,6 +780,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                 {
                     long nTmp = pItem->GetValue(); 
                     nTmp = Fraction( nTmp ) / maUIScale;
+                    SetFieldUnit( *mpMtrPosX, meDlgUnit, true );
                     SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
                     break;
                 }
@@ -786,6 +798,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                 {
                     long nTmp = pItem->GetValue(); 
                     nTmp = Fraction( nTmp ) / maUIScale;
+                    SetFieldUnit( *mpMtrPosY, meDlgUnit, true );
                     SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
                     break;
                 }
@@ -933,6 +946,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     }
 
     const sal_Int32 nCombinedContext(maContext.GetCombinedContext_DI());
+    const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
 
     switch (rMarkList.GetMarkCount())
     {
