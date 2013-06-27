@@ -47,77 +47,70 @@
 
 void SwEditShell::DeleteSel( SwPaM& rPam, sal_Bool* pUndo )
 {
-	// nur bei Selektion
-	if( !rPam.HasMark() || *rPam.GetPoint() == *rPam.GetMark())
-		return;
+    // only on a selection
+    if ( !rPam.HasMark() || *rPam.GetPoint() == *rPam.GetMark())
+        return;
 
-	// besteht eine Selection in einer Tabelle ?
-	// dann nur den Inhalt der selektierten Boxen loeschen
-	// jetzt gibt es 2 Faelle die beachtet werden muessen:
-	//	1. Point und Mark stehen in einer Box, Selection normal loeschen
-	//	2. Point und Mark stehen in unterschiedlichen Boxen, alle
-	// selektierten Boxen suchen in den Inhalt loeschen
+    // besteht eine Selection in einer Tabelle ?
+    // dann nur den Inhalt der selektierten Boxen loeschen
+    // jetzt gibt es 2 Faelle die beachtet werden muessen:
+    //	1. Point und Mark stehen in einer Box, Selection normal loeschen
+    //	2. Point und Mark stehen in unterschiedlichen Boxen, alle
+    // selektierten Boxen suchen in den Inhalt loeschen
 
-	//Comment:If the point is outside of a table and the mark point is in the a table cell,
-	//			should go throw the following code
-	if( (rPam.GetNode()->FindTableNode() || rPam.GetNode(sal_False)->FindTableNode()) &&
-		rPam.GetNode()->StartOfSectionNode() !=
-		rPam.GetNode(sal_False)->StartOfSectionNode() )
-	{
-		// in Tabellen das Undo gruppieren
-		if( pUndo && !*pUndo )
+    if( rPam.GetNode()->FindTableNode() &&
+        rPam.GetNode()->StartOfSectionNode() != rPam.GetNode(sal_False)->StartOfSectionNode() )
+    {
+        // in Tabellen das Undo gruppieren
+        if( pUndo && !*pUndo )
         {
             GetDoc()->GetIDocumentUndoRedo().StartUndo( UNDO_START, NULL );
-			*pUndo = sal_True;
-		}
-		SwPaM aDelPam( *rPam.Start() );
-		const SwPosition* pEndSelPos = rPam.End();
-		do {
-			aDelPam.SetMark();
-			SwNode* pNd = aDelPam.GetNode();
-			//Comment:If the point is outside of table, select the table start node as the end node of current selection node
-			const SwNode& rEndNd = !rPam.GetNode()->FindTableNode() && !pNd->FindTableNode()?
-						*(SwNode*)(rPam.GetNode(sal_False)->FindTableNode())
-						:
-						*pNd->EndOfSectionNode();
-			if( pEndSelPos->nNode.GetIndex() <= rEndNd.GetIndex() )
-			{
-				*aDelPam.GetPoint() = *pEndSelPos;
-				pEndSelPos = 0;		// Pointer als Flag missbrauchen
-			}
-			else
-			{
-				// dann ans Ende der Section
-				aDelPam.GetPoint()->nNode = rEndNd;
-				aDelPam.Move( fnMoveBackward, fnGoCntnt );
-			}
-				// geschuetze Boxen ueberspringen !
-			//For i117395, in some situation, the node would be hidden or invisible, which makes the frame of it unavailable
-			//So verify it before use it.
-			SwCntntFrm* pFrm = NULL;
-			if( !pNd->IsCntntNode() ||
-				!((pFrm=((SwCntntNode*)pNd)->getLayoutFrm( GetLayout() ))!=NULL && pFrm->IsProtected()) )
-			{
-				// alles loeschen
-				GetDoc()->DeleteAndJoin( aDelPam );
-				SaveTblBoxCntnt( aDelPam.GetPoint() );
-			}
+            *pUndo = sal_True;
+        }
+        SwPaM aDelPam( *rPam.Start() );
+        const SwPosition* pEndSelPos = rPam.End();
+        do {
+            aDelPam.SetMark();
+            SwNode* pNd = aDelPam.GetNode();
+            const SwNode& rEndNd = *pNd->EndOfSectionNode();
+            if( pEndSelPos->nNode.GetIndex() <= rEndNd.GetIndex() )
+            {
+                *aDelPam.GetPoint() = *pEndSelPos;
+                pEndSelPos = 0;		// Pointer als Flag missbrauchen
+            }
+            else
+            {
+                // dann ans Ende der Section
+                aDelPam.GetPoint()->nNode = rEndNd;
+                aDelPam.Move( fnMoveBackward, fnGoCntnt );
+            }
+            // geschuetze Boxen ueberspringen !
+            //For i117395, in some situation, the node would be hidden or invisible, which makes the frame of it unavailable
+            //So verify it before use it.
+            SwCntntFrm* pFrm = NULL;
+            if( !pNd->IsCntntNode() ||
+                !((pFrm=((SwCntntNode*)pNd)->getLayoutFrm( GetLayout() ))!=NULL && pFrm->IsProtected()) )
+            {
+                // alles loeschen
+                GetDoc()->DeleteAndJoin( aDelPam );
+                SaveTblBoxCntnt( aDelPam.GetPoint() );
+            }
 
-			if( !pEndSelPos )				// am Ende der Selection
-				break;
-			aDelPam.DeleteMark();
-			aDelPam.Move( fnMoveForward, fnGoCntnt );	// naechste Box
-		} while( pEndSelPos );
-	}
-	else
-	{
-			// alles loeschen		
-		GetDoc()->DeleteAndJoin( rPam );
-		SaveTblBoxCntnt( rPam.GetPoint() );
-	}
+            if( !pEndSelPos )				// am Ende der Selection
+                break;
+            aDelPam.DeleteMark();
+            aDelPam.Move( fnMoveForward, fnGoCntnt );	// naechste Box
+        } while( pEndSelPos );
+    }
+    else
+    {
+        // alles loeschen
+        GetDoc()->DeleteAndJoin( rPam );
+        SaveTblBoxCntnt( rPam.GetPoint() );
+    }
 
-	// Selection wird nicht mehr benoetigt.
-	rPam.DeleteMark();
+    // Selection wird nicht mehr benoetigt.
+    rPam.DeleteMark();
 }
 
 
