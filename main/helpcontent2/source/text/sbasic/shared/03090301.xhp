@@ -63,8 +63,8 @@
 <paragraph role="paragraph" id="par_id3154097" xml-lang="en-US" l10n="U" oldref="22">dim iInputa as Single</paragraph>
 <paragraph role="paragraph" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="23">dim iInputb as Single</paragraph>
 <paragraph role="paragraph" id="par_id3153416" xml-lang="en-US" l10n="U" oldref="24">dim iInputc as Single</paragraph>
-<paragraph role="paragraph" id="par_id3146970" xml-lang="en-US" l10n="U" oldref="25">iInputa = Int(InputBox$ "Enter the first number: ","NumberInput"))</paragraph>
-<paragraph role="paragraph" id="par_id3150329" xml-lang="en-US" l10n="U" oldref="26">iInputb = Int(InputBox$ "Enter the second number: ","NumberInput"))</paragraph>
+<paragraph role="paragraph" id="par_id3146970" xml-lang="en-US" l10n="U" oldref="25">iInputa = Int(InputBox$ ("Enter the first number: ","NumberInput"))</paragraph>
+<paragraph role="paragraph" id="par_id3150329" xml-lang="en-US" l10n="U" oldref="26">iInputb = Int(InputBox$ ("Enter the second number: ","NumberInput"))</paragraph>
 <paragraph role="paragraph" id="par_id3156277" xml-lang="en-US" l10n="U" oldref="27">iInputc=iInputa</paragraph>
 <paragraph role="paragraph" id="par_id3150321" xml-lang="en-US" l10n="U" oldref="28">GoSub SquareRoot</paragraph>
 <paragraph role="paragraph" id="par_id3154756" xml-lang="en-US" l10n="U" oldref="29">Print "The square root of";iInputa;" is";iInputc</paragraph>
