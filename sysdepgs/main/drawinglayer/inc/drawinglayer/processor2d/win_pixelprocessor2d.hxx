@@ -38,9 +38,15 @@
 
 #include <GdiPlus.h>
 
+#undef min
+#undef max
+
 //////////////////////////////////////////////////////////////////////////////
 // predefines
 class OutputDevice;
+class VirtualDevice;
+class Gdiplus::Graphics;
+class Gdiplus::Bitmap;
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -56,8 +62,17 @@ namespace drawinglayer
         class Win_PixelProcessor2D : public BaseProcessor2D
         {
         private:
-            // the OutputDevice started with
-            OutputDevice&                           mrOutDev;
+            // current pixel output size
+            sal_uInt32                              mnWidth;
+            sal_uInt32                              mnHeight;
+
+            // buffer devices used for TransparencePrimitive2D
+            Gdiplus::Bitmap*                        mpBitmapContent;
+            Gdiplus::Graphics*                      mpGraphicsContent;
+            Gdiplus::Bitmap*                        mpBitmapMask;
+            Gdiplus::Graphics*                      mpGraphicsMask;
+            Gdiplus::Bitmap*                        mpBitmapAlpha;
+            Gdiplus::Graphics*                      mpGraphicsAlpha;
 
             // the current Gdiplus::Graphics and the stack
             Gdiplus::Graphics*                      mpGraphics;

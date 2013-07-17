@@ -127,7 +127,7 @@ namespace drawinglayer
         // tooling
         void VclProcessor2D::pushOutputDevice(OutputDevice& rNew)
         {
-            mnOutputDevices.push_back(&rNew);
+            mnOutputDevices.push_back(mpOutputDevice);
             mpOutputDevice = &rNew;
         }
 
@@ -1630,12 +1630,14 @@ namespace drawinglayer
             }
 
             rOutDev.SetDigitLanguage(eLang);
-            pushOutputDevice(rOutDev);
+
+            mpOutputDevice = &rOutDev;
+            mnOutputDevices.push_back(&rOutDev);
 		}
 
 		VclProcessor2D::~VclProcessor2D()
 		{
-            popOutputDevice();
+            mnOutputDevices.pop_back();
             OSL_ENSURE(mnOutputDevices.empty(), "Mismatch in push/popOutputDevices (!)");
 		}
 	} // end of namespace processor2d

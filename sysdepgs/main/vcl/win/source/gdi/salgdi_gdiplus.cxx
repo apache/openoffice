@@ -65,7 +65,8 @@
 class GdiPlusBitmapBufferNode : public basegfx::cache::node
 {
 private:
-    boost::shared_ptr< Gdiplus::Bitmap >       maGdiPlusBitmapPtr;
+    boost::shared_ptr< Gdiplus::Bitmap >        maGdiPlusBitmapPtr;
+    const WinSalBitmap*                         mpAssociatedAlphaSource;
 
     // conversion helpers
     Gdiplus::Bitmap* createGdiPlusBitmap(const WinSalBitmap& rBitmapSource);
@@ -79,6 +80,7 @@ public:
     virtual ~GdiPlusBitmapBufferNode();
 
     boost::shared_ptr< Gdiplus::Bitmap > getGdiPlusBitmapPtr() const { return maGdiPlusBitmapPtr; }
+    const WinSalBitmap* getAssociatedAlphaSource() const { return mpAssociatedAlphaSource; }
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -130,6 +132,15 @@ boost::shared_ptr< Gdiplus::Bitmap > GdiPlusObjectBuffer::getGdiPlusBitmapFromWi
     if(aSize.Width() && aSize.Height())
     {
         const GdiPlusBitmapBufferNode* pEntry = static_cast< const GdiPlusBitmapBufferNode* >(getEntry(rBitmapSource));
+
+        if(pEntry && pEntry->getAssociatedAlphaSource() != pAlphaSource)
+        {
+            // need to destroy since the associated alpha has changed (only alpha, not content,
+            // this can happen since BitmapEx uses two bitmaps. Hopefully this can be simplified
+            // in the future to just use RGBA Bitmaps)
+            delete pEntry;
+            pEntry = 0;
+        }
 
         if(!pEntry)
         {
@@ -454,7 +465,8 @@ GdiPlusBitmapBufferNode::GdiPlusBitmapBufferNode(
     const WinSalBitmap& rBitmapSource, 
     const WinSalBitmap* pAlphaSource)
 :   basegfx::cache::node(rBuffer, rBitmapSource),
-    maGdiPlusBitmapPtr()
+    maGdiPlusBitmapPtr(),
+    mpAssociatedAlphaSource(pAlphaSource)
 {
     if(pAlphaSource)
     {

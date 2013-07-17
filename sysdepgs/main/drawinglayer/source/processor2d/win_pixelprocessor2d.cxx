@@ -37,6 +37,7 @@
 #include <drawinglayer/primitive2d/maskprimitive2d.hxx>
 #include <drawinglayer/primitive2d/modifiedcolorprimitive2d.hxx>
 #include <drawinglayer/primitive2d/transformprimitive2d.hxx>
+#include <vcl/virdev.hxx>
 //#include <GdiPlusEnums.h>
 //#include <GdiPlusColor.h>
 
@@ -94,65 +95,29 @@ namespace drawinglayer
             const geometry::ViewInformation2D& rViewInformation, 
             OutputDevice& rOutDev)
         :   BaseProcessor2D(rViewInformation),
-            mrOutDev(rOutDev),
+            mnWidth(rOutDev.GetOutputSizePixel().Width()),
+            mnHeight(rOutDev.GetOutputSizePixel().Height()),
             mpGraphics(0),
             maBColorModifierStack(),
             maCurrentTransformation(),
             maDrawinglayerOpt()
         {
-            // set digit language, derived from SvtCTLOptions to have the correct
-            // number display for arabic/hindi numerals
-            const SvtCTLOptions aSvtCTLOptions;
-            LanguageType eLang(LANGUAGE_SYSTEM);
-
-            if(SvtCTLOptions::NUMERALS_HINDI == aSvtCTLOptions.GetCTLTextNumerals())
-            {
-                eLang = LANGUAGE_ARABIC_SAUDI_ARABIA;
-            }
-            else if(SvtCTLOptions::NUMERALS_ARABIC == aSvtCTLOptions.GetCTLTextNumerals())
-            {
-                eLang = LANGUAGE_ENGLISH;
-            }
-            else
-            {
-                eLang = (LanguageType)Application::GetSettings().GetLanguage();
-            }
-
-            mrOutDev.SetDigitLanguage(eLang);
-
             // prepare getCurrentTransformation() matrix with viewTransformation to target directly to pixels
             setCurrentTransformation(rViewInformation.getObjectToViewTransformation());
 
-            // prepare output directly to pixels
-            mrOutDev.Push(PUSH_MAPMODE);
-            mrOutDev.SetMapMode();
-
-            // react on AntiAliasing settings
-            if(getOptionsDrawinglayer().IsAntiAliasing())
-            {
-                mrOutDev.SetAntialiasing(mrOutDev.GetAntialiasing() | ANTIALIASING_ENABLE_B2DDRAW);
-            }
-            else
-            {
-                mrOutDev.SetAntialiasing(mrOutDev.GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
-            }
-
             // create Gdiplus::Graphics entry for new OutputDevice
-            SystemGraphicsData aSystemGraphicsData(mrOutDev.GetSystemGfxData());
+            SystemGraphicsData aSystemGraphicsData(rOutDev.GetSystemGfxData());
             mpGraphics = new Gdiplus::Graphics(aSystemGraphicsData.hDC);
+
+            // init AntiAliasing and transformation
             setAntialiasing(getGraphics(), getOptionsDrawinglayer().IsAntiAliasing());
             setMatrix(getGraphics(), getCurrentTransformation());
         }
 
         Win_PixelProcessor2D::~Win_PixelProcessor2D()
         {
+            // cleanup Gdiplus::Graphics
             delete mpGraphics;
-
-            // restore MapMode
-            mrOutDev.Pop();
-
-            // restore AntiAliasing
-            mrOutDev.SetAntialiasing(mrOutDev.GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
         }
 
         void Win_PixelProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate)
@@ -280,156 +245,187 @@ namespace drawinglayer
 
                         if(isVisible(getGraphics(), aRange))
                         {
-                            const sal_uInt32 nFullWidth(mrOutDev.GetOutputSizePixel().Width());
-                            const sal_uInt32 nFullHeight(mrOutDev.GetOutputSizePixel().Height());
-
                             aRange.transform(getCurrentTransformation());
-                            aRange.intersect(basegfx::B2DRange(0.0, 0.0, nFullWidth, nFullHeight));
+                            aRange.intersect(basegfx::B2DRange(0.0, 0.0, mnWidth, mnHeight));
 
                             if(!aRange.isEmpty())
                             {
-                                // prepare bitmap and graphics for child content
+                                // get involved pixel sizes
                                 const sal_uInt32 nLeft(floor(aRange.getMinX()));
                                 const sal_uInt32 nTop(floor(aRange.getMinY()));
                                 const sal_uInt32 nRight(ceil(aRange.getMaxX()));
                                 const sal_uInt32 nBottom(ceil(aRange.getMaxY()));
                                 const sal_uInt32 nWidth(nRight - nLeft);
                                 const sal_uInt32 nHeight(nBottom - nTop);
-                                Gdiplus::Bitmap aBitmap(nWidth, nHeight, PixelFormat32bppRGB);
-                                Gdiplus::Graphics aBitmapGraphics(&aBitmap);
 
-                                // create new transformation
+                                // basic mechanism is: Allocate Gdi+ Bitmaps for content, mask and alpha, create
+                                // GDI+ Graphics for them (to paint to these). Use RGBA for content, RGB only for
+                                // mask and alpha. Mix these together (unfortunately GDI+ has no mechanism to mix
+                                // or copy/mix these when blitting) and paint the result as GDI+ Bitmap.
+                                //
+                                // It would also be possible to first fill the content bitmap with the target content,
+                                // but GDI+ seems not to provide a mechanism to get this data (a Bitmap from a Graphics).
+                                // When this would be possible, creating mask could be avoided, but alpha still would
+                                // need to be copied handish to content.
+                                // This could evtl. be done by starting the whole renderer with getting a GDI+ Bitmap
+                                // from the given OutputDevice and always have a Bitmap as render target. This would
+                                // lead in the direction to always have renderers which rander to Bitmaps, not to
+                                // OutputDevices in general, a valid thought anyways.
+                                Gdiplus::Bitmap aBitmapContent(nWidth, nHeight, PixelFormat32bppARGB);
+                                Gdiplus::Graphics aGraphicsContent(&aBitmapContent);
+                                Gdiplus::Bitmap aBitmapMask(nWidth, nHeight, PixelFormat24bppRGB);
+                                Gdiplus::Graphics aGraphicsMask(&aBitmapMask);
+                                Gdiplus::Bitmap aBitmapAlpha(nWidth, nHeight, PixelFormat24bppRGB);
+                                Gdiplus::Graphics aGraphicsAlpha(&aBitmapAlpha);
+
+                                // create new transformation and set
                                 const basegfx::B2DHomMatrix aLastCurrentTransformation(getCurrentTransformation());
                                 basegfx::B2DHomMatrix aNewTransformation(aLastCurrentTransformation);
                                 aNewTransformation.translate(nLeft * -1.0, nTop * -1.0);
                                 setCurrentTransformation(aNewTransformation);
 
-                                // set clipping, AntiAliasing and transformation
-                                aBitmapGraphics.SetClip(&getGraphics(), Gdiplus::CombineModeReplace);
-                                setAntialiasing(aBitmapGraphics, getOptionsDrawinglayer().IsAntiAliasing());
-                                setMatrix(aBitmapGraphics, getCurrentTransformation());
+                                // clear both
+                                const Gdiplus::SolidBrush aClearingBrush(Gdiplus::Color(255, 255, 255, 255));
 
-                                // make the Bitmap the graphics target
+                                aGraphicsContent.FillRectangle(
+                                    &aClearingBrush,
+                                    (INT)0,
+                                    (INT)0,
+                                    (INT)nWidth,
+                                    (INT)nHeight);
+                                aGraphicsMask.FillRectangle(
+                                    &aClearingBrush,
+                                    (INT)0,
+                                    (INT)0,
+                                    (INT)nWidth,
+                                    (INT)nHeight);
+                                aGraphicsAlpha.FillRectangle(
+                                    &aClearingBrush,
+                                    (INT)0,
+                                    (INT)0,
+                                    (INT)nWidth,
+                                    (INT)nHeight);
+
+                                // set other values
+                                const Gdiplus::GraphicsState aStateContent(aGraphicsContent.Save());
+                                const Gdiplus::GraphicsState aStateMask(aGraphicsMask.Save());
+                                const Gdiplus::GraphicsState aStateAlpha(aGraphicsAlpha.Save());
+
+                                setAntialiasing(aGraphicsContent, getOptionsDrawinglayer().IsAntiAliasing());
+                                setMatrix(aGraphicsContent, getCurrentTransformation());
+                                aGraphicsContent.SetClip(&getGraphics(), Gdiplus::CombineModeReplace);
+
+                                setAntialiasing(aGraphicsMask, getOptionsDrawinglayer().IsAntiAliasing());
+                                setMatrix(aGraphicsMask, getCurrentTransformation());
+                                aGraphicsMask.SetClip(&getGraphics(), Gdiplus::CombineModeReplace);
+
+                                setAntialiasing(aGraphicsAlpha, getOptionsDrawinglayer().IsAntiAliasing());
+                                setMatrix(aGraphicsAlpha, getCurrentTransformation());
+                                aGraphicsAlpha.SetClip(&getGraphics(), Gdiplus::CombineModeReplace);
+
+                                // make content the graphics target, for Gdiplus::Graphics and OutputDevice
                                 Gdiplus::Graphics* pOriginal = mpGraphics;
-                                mpGraphics = &aBitmapGraphics;
+                                const sal_uInt32 nOrigWidth(mnWidth);
+                                const sal_uInt32 nOrigHeight(mnHeight);
+                                mpGraphics = &aGraphicsContent;
+                                mnWidth = nWidth;
+                                mnHeight = nHeight;
 
                                 // do process children
                                 process(rTransparencePrimitive2D.getChildren());
 
-                                // restore last target
-                                mpGraphics = pOriginal;
+                                // target to mask
+                                mpGraphics = &aGraphicsMask;
 
-                                // create bitmap and graphics for alpha
-                                Gdiplus::Bitmap aAlphaBitmap(nWidth, nHeight, PixelFormat32bppRGB);
-                                Gdiplus::Graphics aAlphaBitmapGraphics(&aAlphaBitmap);
+                                // do process children as black to create mask
+                                const basegfx::BColor aBlack(0.0, 0.0, 0.0);
+                                const basegfx::BColorModifier aBColorModifier(aBlack);
 
-                                // set clipping, AntiAliasing and transformation
-                                aAlphaBitmapGraphics.SetClip(&getGraphics(), Gdiplus::CombineModeReplace);
-                                setAntialiasing(aAlphaBitmapGraphics, getOptionsDrawinglayer().IsAntiAliasing());
-                                setMatrix(aAlphaBitmapGraphics, getCurrentTransformation());
-                                
-                                // make the Bitmap the graphics target
-                                mpGraphics = &aAlphaBitmapGraphics;
+                                getBColorModifierStack().push(aBColorModifier);
+                                process(rTransparencePrimitive2D.getChildren());
+                                getBColorModifierStack().pop();
 
-                                // activate gray mode
-                                //const basegfx::BColorModifier aGrayModifier(
-                                //    basegfx::BColor(), 
-                                //    0.5, 
-                                //    basegfx::BCOLORMODIFYMODE_GRAY);
-                                //getBColorModifierStack().push(aGrayModifier);
+                                // target to alpha
+                                mpGraphics = &aGraphicsAlpha;
 
-                                // do process children
+                                // do process transparency
                                 process(rTransparencePrimitive2D.getTransparence());
 
-                                // deactivate gray mode
-                                //getBColorModifierStack().pop();
-
-                                // restore last target
+                                // restore graphics target and trans, flush
                                 mpGraphics = pOriginal;
+                                mnWidth = nOrigWidth;
+                                mnHeight = nOrigHeight;
 
-                                // restore transformations
                                 setCurrentTransformation(aLastCurrentTransformation);
+                                aGraphicsContent.Flush(Gdiplus::FlushIntentionSync);
+                                aGraphicsContent.Restore(aStateContent);
+                                aGraphicsMask.Flush(Gdiplus::FlushIntentionSync);
+                                aGraphicsMask.Restore(aStateMask);
+                                aGraphicsAlpha.Flush(Gdiplus::FlushIntentionSync);
+                                aGraphicsAlpha.Restore(aStateAlpha);
 
-                                if(false)
+                                // copy alpha to content
+                                const Gdiplus::Rect aRect(0, 0, nWidth, nHeight);
+                                Gdiplus::BitmapData aBitmapDataContent;
+                                Gdiplus::BitmapData aBitmapDataMask;
+                                Gdiplus::BitmapData aBitmapDataAlpha;
+
+                                aBitmapContent.LockBits(&aRect, Gdiplus::ImageLockModeWrite, PixelFormat32bppARGB, &aBitmapDataContent);
+                                aBitmapMask.LockBits(&aRect, Gdiplus::ImageLockModeRead, PixelFormat24bppRGB, &aBitmapDataMask);
+                                aBitmapAlpha.LockBits(&aRect, Gdiplus::ImageLockModeRead, PixelFormat24bppRGB, &aBitmapDataAlpha);
+                                sal_uInt8* pTargetLineContent = (sal_uInt8*)aBitmapDataContent.Scan0;
+                                sal_uInt8* pSourceLineMask = (sal_uInt8*)aBitmapDataMask.Scan0;
+                                sal_uInt8* pSourceLineAlpha = (sal_uInt8*)aBitmapDataAlpha.Scan0;
+
+                                for(sal_uInt32 y(0); y < nHeight; y++)
                                 {
-                                    // flush to ensure results
-                                    aBitmapGraphics.Flush(Gdiplus::FlushIntentionSync);
-                                    aAlphaBitmapGraphics.Flush(Gdiplus::FlushIntentionSync);
+                                    sal_uInt8* pTargetPixelContent = pTargetLineContent;
+                                    sal_uInt8* pSourcePixelMask = pSourceLineMask;
+                                    sal_uInt8* pSourcePixelAlpha = pSourceLineAlpha;
 
-                                    // copy aAlphaBitmap content as alpha to aBitmapGraphics
-                                    Gdiplus::ImageAttributes aImageAttributes;
-                                    const Gdiplus::REAL aWeight(1.0f / 3.0f);
-                                    const Gdiplus::ColorMatrix colorMatrix = {
-                                       0.0f, 0.0f, 0.0f, aWeight, 0.0f,
-                                       0.0f, 0.0f, 0.0f, aWeight, 0.0f,
-                                       0.0f, 0.0f, 0.0f, aWeight, 0.0f,
-                                       0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-                                       0.0f, 0.0f, 0.0f, 0.0f, 1.0f};
-
-                                    aImageAttributes.SetColorMatrix(
-                                        &colorMatrix,
-                                        Gdiplus::ColorMatrixFlagsDefault,
-                                        Gdiplus::ColorAdjustTypeDefault);
-                                    setMatrix(aBitmapGraphics, basegfx::B2DHomMatrix());
-                                    aBitmapGraphics.SetCompositingMode(Gdiplus::CompositingModeSourceCopy);
-                                    aBitmapGraphics.DrawImage(
-                                        &aAlphaBitmap,
-                                        Gdiplus::Rect(0, 0, nWidth, nHeight),
-                                        0, 0, nWidth, nHeight,
-                                        Gdiplus::UnitPixel,
-                                        &aImageAttributes);
-                                }
-                                else
-                                {
-                                    // mix aAlphaBitmap's colors as alpha channel to aBitmap
-                                    Gdiplus::Color aColor;
-                                    Gdiplus::Color aAlphaColor;
-                                    static bool bDoCopy(true);
-                                    
-                                    if(bDoCopy)
+                                    for(sal_uInt32 x(0); x < nWidth; x++)
                                     {
-                                        for(INT y(0); y < nHeight; y++)
+                                        const sal_uInt16 aMask(*pSourcePixelMask++);
+                                        pSourcePixelMask += 2;
+
+                                        if(0xff == aMask)
                                         {
-                                            for(INT x(0); x < nWidth; x++)
-                                            {
-                                                aBitmap.GetPixel(x, y, &aColor);
-                                                //const sal_uInt16 aAlphaA(aColor.GetAlpha());
-                                                //
-                                                //if(aAlphaA)
-                                                //{
-                                                    aAlphaBitmap.GetPixel(x, y, &aAlphaColor);
-                                                    sal_uInt16 aAlpha((
-                                                        (aAlphaColor.GetRed() * 77) + 
-                                                        (aAlphaColor.GetGreen() * 151) + 
-                                                        (aAlphaColor.GetBlue() * 28)) >> 8);
+                                            pSourcePixelAlpha += 3;
+                                            pTargetPixelContent += 3;
+                                            *pTargetPixelContent++ = 0;
+                                        }
+                                        else
+                                        {
+                                            sal_uInt16 aAlpha = 0x00ff - (((sal_uInt16)*pSourcePixelAlpha++ * 28 +
+                                                (sal_uInt16)*pSourcePixelAlpha++ * 151 +
+                                                (sal_uInt16)*pSourcePixelAlpha++ * 77) >> 8);
 
-                                                //    if(0xff != aAlphaA)
-                                                //    {
-                                                //        aAlpha = 256 - (((256 - aAlpha) * (256 - aAlphaA)) >> 8);
-                                                //    }
+                                            aAlpha = ((0x00ff - aMask) * aAlpha) >> 8;
 
-                                                    aBitmap.SetPixel(
-                                                        x, 
-                                                        y, 
-                                                        Gdiplus::Color(
-                                                            aAlpha, 
-                                                            aColor.GetRed(), 
-                                                            aColor.GetGreen(), 
-                                                            aColor.GetBlue()));
-                                                //}
-                                            }
+                                            pTargetPixelContent += 3;
+                                            *pTargetPixelContent++ = sal_uInt8(aAlpha);
                                         }
                                     }
+
+                                    pTargetLineContent += aBitmapDataContent.Stride;
+                                    pSourceLineMask += aBitmapDataMask.Stride;
+                                    pSourceLineAlpha += aBitmapDataAlpha.Stride;
                                 }
 
-                                // copy content
+                                aBitmapAlpha.UnlockBits(&aBitmapDataAlpha);
+                                aBitmapMask.UnlockBits(&aBitmapDataMask);
+                                aBitmapContent.UnlockBits(&aBitmapDataContent);
+
                                 setMatrix(getGraphics(), basegfx::B2DHomMatrix());
                                 getGraphics().DrawImage(
-                                    &aBitmap, 
-                                    INT(nLeft), 
-                                    INT(nTop), 
-                                    INT(aBitmap.GetWidth()), 
-                                    INT(aBitmap.GetHeight()));
+                                    &aBitmapContent,
+                                    (INT)nLeft,
+                                    (INT)nTop,
+                                    (INT)0,
+                                    (INT)0,
+                                    (INT)nWidth,
+                                    (INT)nHeight,
+                                    Gdiplus::UnitPixel);
                                 setMatrix(getGraphics(), getCurrentTransformation());
                             }
                         }
@@ -468,7 +464,7 @@ namespace drawinglayer
                                 if(aMaskPath.get())
                                 {
                                     // save current clip region
-                                    const Gdiplus::GraphicsState aState = getGraphics().Save();
+                                    const Gdiplus::GraphicsState aState(getGraphics().Save());
 
                                     // add clip to current
                                     getGraphics().SetClip(
