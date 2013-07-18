@@ -109,8 +109,7 @@ struct SdrModelImpl
 
 DBG_NAME(SdrModel)
 TYPEINIT1(SdrModel,SfxBroadcaster);
-void SdrModel::ImpCtor(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* _pEmbeddedHelper,
-	bool bUseExtColorTable, bool bLoadRefCounts)
+void SdrModel::ImpCtor(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* _pEmbeddedHelper,bool bLoadRefCounts)
 {
 	mpImpl = new SdrModelImpl;
 	mpImpl->mpUndoManager=0;
@@ -144,7 +143,6 @@ void SdrModel::ImpCtor(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* _pEmbe
 	mbUndoEnabled=true;
 	nProgressPercent=0;
 	nLoadVersion=0;
-	bExtColorTable=sal_False;
 	mbChanged = sal_False;
 	bInfoChanged=sal_False;
 	bPagNumsDirty=sal_False;
@@ -162,12 +160,6 @@ void SdrModel::ImpCtor(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* _pEmbe
 	nStreamCompressMode=COMPRESSMODE_NONE;
 	nStreamNumberFormat=NUMBERFORMAT_INT_BIGENDIAN;
 	nDefaultTabulator=0;
-	pColorTable=NULL;
-	pDashList=NULL;
-	pLineEndList=NULL;
-	pHatchList=NULL;
-	pGradientList=NULL;
-	pBitmapList=NULL;
 	mpNumberFormatter = NULL;
 	bTransparentTextFrames=sal_False;
 	bStarDrawPreviewMode = sal_False;
@@ -179,15 +171,13 @@ void SdrModel::ImpCtor(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* _pEmbe
 	mbKernAsianPunctuation = sal_False;
     mbAddExtLeading = sal_False;
 	mnHandoutPageCount = 0;
-
+    mbDisableTextEditUsesCommonUndoManager = false;
     SvxAsianConfig aAsian;
 	mnCharCompressType = aAsian.GetCharDistanceCompression();
 
 #ifdef OSL_LITENDIAN
 	nStreamNumberFormat=NUMBERFORMAT_INT_LITTLEENDIAN;
 #endif
-	bExtColorTable=bUseExtColorTable;
-
 	if ( pPool == NULL )
     {
 		pItemPool=new SdrItemPool(0L, bLoadRefCounts);
@@ -222,8 +212,6 @@ void SdrModel::ImpCtor(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* _pEmbe
 
 	pHitTestOutliner = SdrMakeOutliner( OUTLINERMODE_TEXTOBJECT, this );
 	ImpSetOutlinerDefaults(pHitTestOutliner, sal_True);
-
-	ImpCreateTables();
 }
 
 SdrModel::SdrModel(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* pPers, sal_Bool bLoadRefCounts):
@@ -235,7 +223,7 @@ SdrModel::SdrModel(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* pPers, sal
 #endif
 
 	DBG_CTOR(SdrModel,NULL);
-	ImpCtor(pPool,pPers,sal_False, (FASTBOOL)bLoadRefCounts);
+	ImpCtor(pPool,pPers,(FASTBOOL)bLoadRefCounts);
 }
 
 SdrModel::SdrModel(const String& rPath, SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* pPers, sal_Bool bLoadRefCounts):
@@ -248,32 +236,7 @@ SdrModel::SdrModel(const String& rPath, SfxItemPool* pPool, ::comphelper::IEmbed
 #endif
 
 	DBG_CTOR(SdrModel,NULL);
-	ImpCtor(pPool,pPers,sal_False, (FASTBOOL)bLoadRefCounts);
-}
-
-SdrModel::SdrModel(SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* pPers, FASTBOOL bUseExtColorTable, sal_Bool bLoadRefCounts):
-	maMaPag(1024,32,32),
-	maPages(1024,32,32)
-{
-#ifdef TIMELOG
-    RTL_LOGFILE_CONTEXT_AUTHOR ( aLog, "svx", "aw93748", "SdrModel::SdrModel(...)" );
-#endif
-
-	DBG_CTOR(SdrModel,NULL);
-	ImpCtor(pPool,pPers,bUseExtColorTable, (FASTBOOL)bLoadRefCounts);
-}
-
-SdrModel::SdrModel(const String& rPath, SfxItemPool* pPool, ::comphelper::IEmbeddedHelper* pPers, FASTBOOL bUseExtColorTable, sal_Bool bLoadRefCounts):
-	maMaPag(1024,32,32),
-	maPages(1024,32,32),
-	aTablePath(rPath)
-{
-#ifdef TIMELOG
-    RTL_LOGFILE_CONTEXT_AUTHOR ( aLog, "svx", "aw93748", "SdrModel::SdrModel(...)" );
-#endif
-
-	DBG_CTOR(SdrModel,NULL);
-	ImpCtor(pPool,pPers,bUseExtColorTable, (FASTBOOL)bLoadRefCounts);
+	ImpCtor(pPool,pPers,(FASTBOOL)bLoadRefCounts);
 }
 
 SdrModel::SdrModel(const SdrModel& /*rSrcModel*/):
@@ -359,15 +322,6 @@ SdrModel::~SdrModel()
 
 	if( mpForbiddenCharactersTable )
 		mpForbiddenCharactersTable->release();
-
-	// Tabellen, Listen und Paletten loeschen
-	if (!bExtColorTable)
-		delete pColorTable;
-	delete pDashList;
-	delete pLineEndList;
-	delete pHatchList;
-	delete pGradientList;
-	delete pBitmapList;
 
 	if(mpNumberFormatter)
 		delete mpNumberFormatter;
@@ -758,17 +712,6 @@ bool SdrModel::IsUndoEnabled() const
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-void SdrModel::ImpCreateTables()
-{
-	// der Writer hat seinen eigenen ColorTable
-	if (!bExtColorTable) pColorTable=new XColorTable(aTablePath,(XOutdevItemPool*)pItemPool);
-	pDashList    =new XDashList    (aTablePath,(XOutdevItemPool*)pItemPool);
-	pLineEndList =new XLineEndList (aTablePath,(XOutdevItemPool*)pItemPool);
-	pHatchList   =new XHatchList   (aTablePath,(XOutdevItemPool*)pItemPool);
-	pGradientList=new XGradientList(aTablePath,(XOutdevItemPool*)pItemPool);
-	pBitmapList  =new XBitmapList  (aTablePath,(XOutdevItemPool*)pItemPool);
-}
 
 // #116168#
 void SdrModel::ClearModel(sal_Bool bCalledFromDestructor)
@@ -1222,20 +1165,20 @@ void SdrModel::TakeUnitStr(FieldUnit eUnit, XubString& rStr)
 		}
 		case FUNIT_100TH_MM:
 		{
-			sal_Char aText[] = "/100mm";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "/100mm";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_MM     :
 		{
-			sal_Char aText[] = "mm";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "mm";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_CM     :
 		{
-			sal_Char aText[] = "cm";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "cm";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_M      :
@@ -1246,26 +1189,26 @@ void SdrModel::TakeUnitStr(FieldUnit eUnit, XubString& rStr)
 		}
 		case FUNIT_KM     :
 		{
-			sal_Char aText[] = "km";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "km";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_TWIP   :
 		{
-			sal_Char aText[] = "twip";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "twip";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_POINT  :
 		{
-			sal_Char aText[] = "pt";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "pt";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_PICA   :
 		{
 			sal_Char aText[] = "pica";
-			rStr = UniString(aText, sizeof(aText-1));
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_INCH   :
@@ -1276,14 +1219,14 @@ void SdrModel::TakeUnitStr(FieldUnit eUnit, XubString& rStr)
 		}
 		case FUNIT_FOOT   :
 		{
-			sal_Char aText[] = "ft";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "ft";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_MILE   :
 		{
-			sal_Char aText[] = "mile(s)";
-			rStr = UniString(aText, sizeof(aText-1));
+			const sal_Char aText[] = "mile(s)";
+			rStr = UniString(aText, sizeof(aText)-1);
 			break;
 		}
 		case FUNIT_PERCENT:
@@ -2170,15 +2113,97 @@ const ::com::sun::star::uno::Sequence< sal_Int8 >& SdrModel::getUnoTunnelImpleme
 	return *pSeq;
 }
 
-//
-// i120668, move from the header files, add delete action
-//
-void            SdrModel::SetColorTable(XColorTable* pTable)       { delete pColorTable; pColorTable=pTable; }
-void            SdrModel::SetDashList(XDashList* pList)            { delete pDashList; pDashList=pList; }
-void            SdrModel::SetLineEndList(XLineEndList* pList)      { delete pLineEndList; pLineEndList=pList; }
-void            SdrModel::SetHatchList(XHatchList* pList)          { delete pHatchList; pHatchList=pList; }
-void            SdrModel::SetGradientList(XGradientList* pList)    { delete pGradientList; pGradientList=pList; }
-void            SdrModel::SetBitmapList(XBitmapList* pList)        { delete pBitmapList; pBitmapList=pList; }
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void SdrModel::SetColorTableAtSdrModel(XColorListSharedPtr aTable)
+{ 
+    maColorTable = aTable; 
+}
+
+XColorListSharedPtr SdrModel::GetColorTableFromSdrModel() const                    
+{ 
+    if(!maColorTable.get())
+    {
+        const_cast< SdrModel* >(this)->maColorTable = XPropertyListFactory::CreateSharedXColorList(aTablePath);
+    }
+
+    return maColorTable; 
+}
+
+void SdrModel::SetDashListAtSdrModel(XDashListSharedPtr aList)            
+{ 
+    maDashList = aList; 
+}
+
+XDashListSharedPtr SdrModel::GetDashListFromSdrModel() const                      
+{ 
+    if(!maDashList.get())
+    {
+        const_cast< SdrModel* >(this)->maDashList = XPropertyListFactory::CreateSharedXDashList(aTablePath);
+    }
+
+    return maDashList; 
+}
+
+void SdrModel::SetLineEndListAtSdrModel(XLineEndListSharedPtr aList)      
+{ 
+    maLineEndList = aList; 
+}
+
+XLineEndListSharedPtr SdrModel::GetLineEndListFromSdrModel() const                   
+{ 
+    if(!maLineEndList.get())
+    {
+        const_cast< SdrModel* >(this)->maLineEndList = XPropertyListFactory::CreateSharedXLineEndList(aTablePath);
+    }
+
+    return maLineEndList; 
+}
+
+void SdrModel::SetHatchListAtSdrModel(XHatchListSharedPtr aList)          
+{ 
+    maHatchList = aList; 
+}
+
+XHatchListSharedPtr SdrModel::GetHatchListFromSdrModel() const                     
+{ 
+    if(!maHatchList.get())
+    {
+        const_cast< SdrModel* >(this)->maHatchList = XPropertyListFactory::CreateSharedXHatchList(aTablePath);
+    }
+
+    return maHatchList; 
+}
+
+void SdrModel::SetGradientListAtSdrModel(XGradientListSharedPtr aList)    
+{ 
+    maGradientList = aList; 
+}
+
+XGradientListSharedPtr SdrModel::GetGradientListFromSdrModel() const                  
+{ 
+    if(!maGradientList.get())
+    {
+        const_cast< SdrModel* >(this)->maGradientList = XPropertyListFactory::CreateSharedXGradientList(aTablePath);
+    }
+
+    return maGradientList; 
+}
+
+void SdrModel::SetBitmapListAtSdrModel(XBitmapListSharedPtr aList)        
+{ 
+    maBitmapList = aList; 
+}
+
+XBitmapListSharedPtr SdrModel::GetBitmapListFromSdrModel() const                    
+{ 
+    if(!maBitmapList.get())
+    {
+        const_cast< SdrModel* >(this)->maBitmapList = XPropertyListFactory::CreateSharedXBitmapList(aTablePath);
+    }
+
+    return maBitmapList; 
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -689,12 +689,12 @@ sal_Bool SdrObjEditView::SdrBeginTextEdit(
             aMinTextEditArea.Move(aPvOfs.X(),aPvOfs.Y());
             pTextEditCursorMerker=pWin->GetCursor();
 
-	        aHdl.SetMoveOutside(sal_True);
+            aHdl.SetMoveOutside(sal_True);
 
-			// #i72757#
-			// Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
-			// to call AdjustMarkHdl() always.
-			AdjustMarkHdl();
+            // #i72757#
+            // Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
+            // to call AdjustMarkHdl() always.
+            AdjustMarkHdl();
 
             pTextEditOutlinerView=ImpMakeOutlinerView(pWin,!bEmpty,pGivenOutlinerView);
 
@@ -768,7 +768,7 @@ sal_Bool SdrObjEditView::SdrBeginTextEdit(
 			if( mxSelectionController.is() )
 				mxSelectionController->onSelectionHasChanged();
 
-            if(IsUndoEnabled())
+            if(IsUndoEnabled() && GetModel() && !GetModel()->GetDisableTextEditUsesCommonUndoManager())
             {
                 SdrUndoManager* pSdrUndoManager = getSdrUndoManagerForEnhancedTextEdit();
             
@@ -854,7 +854,7 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(sal_Bool bDontDeleteReally)
     SdrUndoManager* pUndoEditUndoManager = 0;
     bool bNeedToUndoSavedRedoTextEdit(false);
 
-    if(IsUndoEnabled() && GetModel() && pTEObj && pTEOutliner)
+    if(IsUndoEnabled() && GetModel() && pTEObj && pTEOutliner && !GetModel()->GetDisableTextEditUsesCommonUndoManager())
     {
         // change back the UndoManager to the remembered original one
         ::svl::IUndoManager* pOriginal = pTEOutliner->SetUndoManager(mpOldTextEditUndoManager);
@@ -1027,10 +1027,10 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(sal_Bool bDontDeleteReally)
 				((SdrTextObj*)pTEObj)->SetTextAnimationAllowed(sal_True);
 			}
 
-			// #i72757#
-			// Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
-			// to call AdjustMarkHdl() always.
-			AdjustMarkHdl();
+            // #i72757#
+            // Since IsMarkHdlWhenTextEdit() is ignored, it is necessary
+            // to call AdjustMarkHdl() always.
+            AdjustMarkHdl();
         }
         // alle OutlinerViews loeschen
         for (sal_uIntPtr i=pTEOutliner->GetViewCount(); i>0;)
@@ -2033,6 +2033,38 @@ void SdrObjEditView::OnBeginPasteOrDrop( PasteOrDropInfos* )
 void SdrObjEditView::OnEndPasteOrDrop( PasteOrDropInfos* )
 {
     // applications can derive from these virtual methods to do something before a drop or paste operation
+}
+
+sal_uInt16 SdrObjEditView::GetSelectionLevel() const
+{
+	sal_uInt16 nLevel = 0xFFFF;
+    if( IsTextEdit() )
+	{
+        DBG_ASSERT(pTextEditOutlinerView!=NULL,"SdrObjEditView::GetAttributes(): pTextEditOutlinerView=NULL");
+        DBG_ASSERT(pTextEditOutliner!=NULL,"SdrObjEditView::GetAttributes(): pTextEditOutliner=NULL");
+		if( pTextEditOutlinerView )
+		{
+			//start and end position
+			ESelection aSelect = pTextEditOutlinerView->GetSelection();
+			sal_uInt16 nStartPara = ::std::min( aSelect.nStartPara, aSelect.nEndPara );
+			sal_uInt16 nEndPara = ::std::max( aSelect.nStartPara, aSelect.nEndPara );
+			//get level from each paragraph
+			nLevel = 0;
+			for( sal_uInt16 nPara = nStartPara; nPara <= nEndPara; nPara++ )
+			{
+				sal_uInt16 nParaDepth = 1 << pTextEditOutliner->GetDepth( nPara );
+				if( !(nLevel & nParaDepth) )
+					nLevel += nParaDepth;
+			}
+			//reduce one level for Outliner Object
+			//if( nLevel > 0 && GetTextEditObject()->GetObjIdentifier() == OBJ_OUTLINETEXT )
+			//	nLevel = nLevel >> 1;
+			//no bullet paragraph selected
+			if( nLevel == 0)
+				nLevel = 0xFFFF;
+		}
+	}
+	return nLevel;
 }
 
 bool SdrObjEditView::SupportsFormatPaintbrush( sal_uInt32 nObjectInventor, sal_uInt16 nObjectIdentifier ) const

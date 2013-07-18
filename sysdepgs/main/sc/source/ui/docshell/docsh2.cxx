@@ -152,12 +152,12 @@ void ScDocShell::InitItems()
 	ScDrawLayer* pDrawLayer = aDocument.GetDrawLayer();
 	if (pDrawLayer)
 	{
-        PutItem( SvxColorTableItem  ( pDrawLayer->GetColorTable(), SID_COLOR_TABLE ) );
-        PutItem( SvxGradientListItem( pDrawLayer->GetGradientList(), SID_GRADIENT_LIST ) );
-        PutItem( SvxHatchListItem   ( pDrawLayer->GetHatchList(), SID_HATCH_LIST ) );
-        PutItem( SvxBitmapListItem  ( pDrawLayer->GetBitmapList(), SID_BITMAP_LIST ) );
-        PutItem( SvxDashListItem    ( pDrawLayer->GetDashList(), SID_DASH_LIST ) );
-        PutItem( SvxLineEndListItem ( pDrawLayer->GetLineEndList(), SID_LINEEND_LIST ) );
+        PutItem( SvxColorTableItem  ( pDrawLayer->GetColorTableFromSdrModel(), SID_COLOR_TABLE ) );
+        PutItem( SvxGradientListItem( pDrawLayer->GetGradientListFromSdrModel(), SID_GRADIENT_LIST ) );
+        PutItem( SvxHatchListItem   ( pDrawLayer->GetHatchListFromSdrModel(), SID_HATCH_LIST ) );
+        PutItem( SvxBitmapListItem  ( pDrawLayer->GetBitmapListFromSdrModel(), SID_BITMAP_LIST ) );
+        PutItem( SvxDashListItem    ( pDrawLayer->GetDashListFromSdrModel(), SID_DASH_LIST ) );
+        PutItem( SvxLineEndListItem ( pDrawLayer->GetLineEndListFromSdrModel(), SID_LINEEND_LIST ) );
 
 			//	andere Anpassungen nach dem Anlegen des DrawLayers
 
@@ -169,7 +169,7 @@ void ScDocShell::InitItems()
 	else
 	{
 		//	always use global color table instead of local copy
-        PutItem( SvxColorTableItem( XColorTable::GetStdColorTable(), SID_COLOR_TABLE ) );
+        PutItem( SvxColorTableItem( XColorList::GetStdColorList(), SID_COLOR_TABLE ) );
 	}
 
 	if ( !aDocument.GetForbiddenCharacters().isValid() ||

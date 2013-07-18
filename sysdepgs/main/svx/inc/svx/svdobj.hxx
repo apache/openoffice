@@ -40,6 +40,7 @@
 #include <svx/sdrobjectuser.hxx>
 #include "svx/svxdllapi.h"
 #include "svx/shapeproperty.hxx"
+#include <svl/poolitem.hxx>
 
 //************************************************************
 //   Vorausdeklarationen
@@ -855,6 +856,9 @@ protected:
 	void SetObjectItemSet(const SfxItemSet& rSet);
 	const SfxPoolItem& GetObjectItem(const sal_uInt16 nWhich) const;
 
+    // get SfxMapUnit the object is using
+    SfxMapUnit GetObjectMapUnit() const;
+
 public:
 	// syntactical sugar for ItemSet accesses
 	void SetMergedItemSetAndBroadcast(const SfxItemSet& rSet, sal_Bool bClearAllItems = sal_False);
@@ -1120,6 +1124,9 @@ public:
 	// might be resized
 	Rectangle GetBLIPSizeRectangle() const;
 	void SetBLIPSizeRectangle( const Rectangle& aRect );
+
+    // #121917#
+    virtual bool HasText() const;
 
 protected:
     void    impl_setUnoShape( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape );

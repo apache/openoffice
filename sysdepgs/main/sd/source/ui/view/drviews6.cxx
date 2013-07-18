@@ -46,8 +46,7 @@
 #ifndef _IMAPDLG_HXX
 #include <svx/imapdlg.hxx>
 #endif
-#include <svx/xftsfit.hxx>
-#include <svx/colrctrl.hxx>
+#include <svx/SvxColorChildWindow.hxx>
 #include <svx/f3dchild.hxx>
 #include "optsitem.hxx"
 #include <svx/extrusionbar.hxx>
@@ -78,6 +77,13 @@
 #include "Window.hxx"
 #include "DrawDocShell.hxx"
 #include "framework/FrameworkHelper.hxx"
+#include <svx/svdoashp.hxx>
+#include <sfx2/sidebar/Sidebar.hxx>
+
+namespace {
+    static const ::rtl::OUString CustomAnimationPanelId (RTL_CONSTASCII_USTRINGPARAM("CustomAnimationPanel"));
+    static const ::rtl::OUString SlideTransitionPanelId (RTL_CONSTASCII_USTRINGPARAM("SlideTransitionPanel"));
+}
 
 namespace sd {
 
@@ -101,34 +107,11 @@ void DrawViewShell::ExecFormText(SfxRequest& rReq)
 		 mpDrawView && !mpDrawView->IsPresObjSelected() )
 	{
 		const SfxItemSet& rSet = *rReq.GetArgs();
-		const SfxPoolItem* pItem;
 
 		if ( mpDrawView->IsTextEdit() )
 			mpDrawView->SdrEndTextEdit();
 
-		if ( rSet.GetItemState(XATTR_FORMTXTSTDFORM, sal_True, &pItem) ==
-			 SFX_ITEM_SET &&
-			((const XFormTextStdFormItem*) pItem)->GetValue() != XFTFORM_NONE )
-		{
-
-			sal_uInt16 nId = SvxFontWorkChildWindow::GetChildWindowId();
-
-			SvxFontWorkDialog* pDlg = (SvxFontWorkDialog*)GetViewFrame()->
-										GetChildWindow(nId)->GetWindow();
-
-			pDlg->CreateStdFormObj(*mpDrawView, *mpDrawView->GetSdrPageView(),
-									rSet, *rMarkList.GetMark(0)->GetMarkedSdrObj(),
-								   ((const XFormTextStdFormItem*) pItem)->
-								   GetValue());
-
-			if(HasCurrentFunction(SID_BEZIER_EDIT))
-			{	// ggf. die richtige Editfunktion aktivieren
-				GetViewFrame()->GetDispatcher()->Execute(SID_SWITCH_POINTEDIT,
-									SFX_CALLMODE_ASYNCHRON | SFX_CALLMODE_RECORD);
-			}
-		}
-		else
-			mpDrawView->SetAttributes(rSet);
+		mpDrawView->SetAttributes(rSet);
 	}
 }
 
@@ -152,32 +135,37 @@ void DrawViewShell::GetFormTextState(SfxItemSet& rSet)
 	if ( rMarkList.GetMarkCount() == 1 )
 		pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 
-	if ( pObj == NULL || !pObj->ISA(SdrTextObj) ||
-		!((SdrTextObj*) pObj)->HasText() )
+    const SdrTextObj* pTextObj = dynamic_cast< const SdrTextObj* >(pObj);
+    const bool bDeactivate(
+        !pObj ||
+        !pTextObj ||
+        !pTextObj->HasText() ||
+        dynamic_cast< const SdrObjCustomShape* >(pObj)); // #121538# no FontWork for CustomShapes
+
+    if(bDeactivate)
 	{
 // automatisches Auf/Zuklappen des FontWork-Dialog; erstmal deaktiviert
 //		if ( pDlg )
 //			pDlg->SetActive(sal_False);
 
-		rSet.DisableItem(XATTR_FORMTXTSTYLE);
-		rSet.DisableItem(XATTR_FORMTXTADJUST);
-		rSet.DisableItem(XATTR_FORMTXTDISTANCE);
-		rSet.DisableItem(XATTR_FORMTXTSTART);
-		rSet.DisableItem(XATTR_FORMTXTMIRROR);
-		rSet.DisableItem(XATTR_FORMTXTSTDFORM);
-		rSet.DisableItem(XATTR_FORMTXTHIDEFORM);
-		rSet.DisableItem(XATTR_FORMTXTOUTLINE);
-		rSet.DisableItem(XATTR_FORMTXTSHADOW);
-		rSet.DisableItem(XATTR_FORMTXTSHDWCOLOR);
-		rSet.DisableItem(XATTR_FORMTXTSHDWXVAL);
-		rSet.DisableItem(XATTR_FORMTXTSHDWYVAL);
+        rSet.DisableItem(XATTR_FORMTXTSTYLE);
+        rSet.DisableItem(XATTR_FORMTXTADJUST);
+        rSet.DisableItem(XATTR_FORMTXTDISTANCE);
+        rSet.DisableItem(XATTR_FORMTXTSTART);
+        rSet.DisableItem(XATTR_FORMTXTMIRROR);
+        rSet.DisableItem(XATTR_FORMTXTHIDEFORM);
+        rSet.DisableItem(XATTR_FORMTXTOUTLINE);
+        rSet.DisableItem(XATTR_FORMTXTSHADOW);
+        rSet.DisableItem(XATTR_FORMTXTSHDWCOLOR);
+        rSet.DisableItem(XATTR_FORMTXTSHDWXVAL);
+        rSet.DisableItem(XATTR_FORMTXTSHDWYVAL);
 	}
 	else
 	{
 		if ( pDlg )
 		{
 //			pDlg->SetActive();
-			pDlg->SetColorTable(GetDoc()->GetColorTable());
+			pDlg->SetColorTable(GetDoc()->GetColorTableFromSdrModel());
 		}
 
 		SfxItemSet aSet( GetDoc()->GetPool() );
@@ -438,7 +426,7 @@ void DrawViewShell::GetBmpMaskState( SfxItemSet& rSet )
 		pDlg = (SvxBmpMask*) ( GetViewFrame()->GetChildWindow( nId )->GetWindow() );
 
 		if ( pDlg->NeedsColorTable() )
-			pDlg->SetColorTable( GetDoc()->GetColorTable() );
+			pDlg->SetColorTable( GetDoc()->GetColorTableFromSdrModel() );
 	}
 
 	if ( rMarkList.GetMarkCount() == 1 )
@@ -592,10 +580,10 @@ void DrawViewShell::FuTemp04(SfxRequest& rReq)
 
 		case SID_CUSTOM_ANIMATION_PANEL:
 		{
-            // Make the slide transition panel visible (expand it) in the
-            // tool pane.
-            framework::FrameworkHelper::Instance(GetViewShellBase())->RequestTaskPanel(
-                framework::FrameworkHelper::msCustomAnimationTaskPanelURL);
+            // Make the slide transition panel visible in the sidebar.
+            ::sfx2::sidebar::Sidebar::ShowPanel(
+                CustomAnimationPanelId,
+                GetViewFrame()->GetFrame().GetFrameInterface());
 
 			Cancel();
 			rReq.Done ();
@@ -604,10 +592,10 @@ void DrawViewShell::FuTemp04(SfxRequest& rReq)
 
 		case SID_SLIDE_TRANSITIONS_PANEL:
 		{
-            // Make the slide transition panel visible (expand it) in the
-            // tool pane.
-            framework::FrameworkHelper::Instance(GetViewShellBase())->RequestTaskPanel(
-                framework::FrameworkHelper::msSlideTransitionTaskPanelURL);
+            // Make the slide transition panel visible in the sidebar.
+            ::sfx2::sidebar::Sidebar::ShowPanel(
+                SlideTransitionPanelId,
+                GetViewFrame()->GetFrame().GetFrameInterface());
 
 			Cancel();
 			rReq.Done ();

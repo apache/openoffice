@@ -43,9 +43,9 @@ public:
 	SfxUndoAction*			GetDrawUndo()		{ return pDrawUndo; }
 	void					ForgetDrawUndo();
 
-	virtual sal_Bool			IsLinked();
-	virtual void			SetLinked( sal_Bool bIsLinked );
-	virtual void			Undo();
+    virtual void SetLinkToSfxLinkUndoAction(SfxLinkUndoAction* pSfxLinkUndoAction);
+
+    virtual void			Undo();
 	virtual void			Redo();
 	virtual void			Repeat(SfxRepeatTarget& rTarget);
 	virtual sal_Bool			CanRepeat(SfxRepeatTarget& rTarget) const;

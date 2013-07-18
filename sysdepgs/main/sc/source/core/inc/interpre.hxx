@@ -44,7 +44,9 @@
 // This header must be included before including any Boost
 // math function.
 //
+#ifndef BOOST_MATH_OVERFLOW_ERROR_POLICY
 #define BOOST_MATH_OVERFLOW_ERROR_POLICY errno_on_error
+#endif
 
 class ScDocument;
 class SbxVariable;
@@ -609,13 +611,6 @@ void ScGetDate();
 void ScGetTime();
 void ScGetDiffDate();
 void ScGetDiffDate360();
-void ScPower();
-void ScAmpersand();
-void ScAdd();
-void ScSub();
-void ScMul();
-void ScDiv();
-void ScPow();
 void ScCurrent();
 void ScStyle();
 void ScDde();
@@ -669,6 +664,13 @@ void ScIntercept();
 double ScGetGCD(double fx, double fy);
 void ScGCD();
 void ScLCM();
+void ScPower();
+void ScAmpersand();
+void ScAdd();
+void ScSub();
+void ScMul();
+void ScDiv();
+void ScPow();
 //-------------------------- Matrixfunktionen ---------------------------------
 
 void ScMatValue();

@@ -283,7 +283,7 @@ String NameOrIndex::CheckNamedItem( const NameOrIndex* pCheckItem, const sal_uIn
 			int nIndex;
 			for( nIndex = 0; nIndex < nCount; nIndex++ )
 			{
-				XPropertyEntry* pEntry = pDefaults->Get( nIndex, 0 );
+				XPropertyEntry* pEntry = pDefaults->Get( nIndex );
 				if( pEntry )
 				{
 					bool bFound = false;
@@ -471,17 +471,30 @@ SvStream& XColorItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 
 /*************************************************************************
 |*
-|*	  const XColor& XColorItem::GetColorValue(const XColorTable* pTable) const
+|*	  const XColor& XColorItem::GetColorValue(const XColorList* pTable) const
 |*
 \************************************************************************/
 
-const Color& XColorItem::GetColorValue(const XColorTable* pTable) const
+const Color& XColorItem::GetColorValue() const
 {
-	if (!IsIndex())
-		return aColor;
-	else
-		return pTable->GetColor(GetIndex())->GetColor();
+    if(!IsIndex())
+    {
+        return aColor;
+    }
 
+    OSL_ENSURE(false, "Acces to Indexed XColorItem needs to use the call which hands over a XColorListSharedPtr (!)");
+
+    return aColor;
+}
+
+const Color& XColorItem::GetColorValue(const XColorListSharedPtr aTable) const
+{
+    if(!IsIndex())
+    {
+        return aColor;
+    }
+
+    return aTable->GetColor(GetIndex())->GetColor();
 }
 
 sal_Bool XColorItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8 /*nMemberId*/) const
@@ -1047,7 +1060,7 @@ SvStream& XLineDashItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 
 /*************************************************************************
 |*
-|*	  const XDash& XLineDashItem::GetValue(const XDashTable* pTable) const
+|*	  const XDash& XLineDashItem::GetValue(const XDashList* pTable) const
 |*
 |*	  Beschreibung
 |*	  Ersterstellung	15.11.94
@@ -1055,7 +1068,7 @@ SvStream& XLineDashItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 |*
 *************************************************************************/
 
-const XDash& XLineDashItem::GetDashValue(const XDashTable* pTable) const // GetValue -> GetDashValue
+const XDash& XLineDashItem::GetDashValue(const XDashList* pTable) const // GetValue -> GetDashValue
 {
 	if (!IsIndex())
 		return aDash;
@@ -1369,7 +1382,7 @@ XLineDashItem* XLineDashItem::checkForUniqueItem( SdrModel* pModel ) const
 																pModel->GetStyleSheetPool() ? &pModel->GetStyleSheetPool()->GetPool() : NULL,
 																XLineDashItem::CompareValueFunc,
 																RID_SVXSTR_DASH11,
-																pModel->GetDashList() );
+																pModel->GetDashListFromSdrModel().get() );
 
 		// if the given name is not valid, replace it!
 		if( aUniqueName != GetName() )
@@ -1868,7 +1881,7 @@ SvStream& XLineStartItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 
 /*************************************************************************
 |*
-|*	  const basegfx::B2DPolyPolygon& XLineStartItem::GetValue(const XLineEndTable* pTable)
+|*	  const basegfx::B2DPolyPolygon& XLineStartItem::GetValue(const XLineEndList* pTable)
 |*											   const
 |*
 |*	  Beschreibung
@@ -1877,7 +1890,7 @@ SvStream& XLineStartItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 |*
 *************************************************************************/
 
-basegfx::B2DPolyPolygon XLineStartItem::GetLineStartValue(const XLineEndTable* pTable) const
+basegfx::B2DPolyPolygon XLineStartItem::GetLineStartValue(const XLineEndList* pTable) const
 {
 	if (!IsIndex())
 	{
@@ -2340,7 +2353,7 @@ SvStream& XLineEndItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 
 /*************************************************************************
 |*
-|*	  const basegfx::B2DPolyPolygon& XLineEndItem::GetValue(const XLineEndTable* pTable) const
+|*	  const basegfx::B2DPolyPolygon& XLineEndItem::GetValue(const XLineEndList* pTable) const
 |*
 |*	  Beschreibung
 |*	  Ersterstellung	15.11.94
@@ -2348,7 +2361,7 @@ SvStream& XLineEndItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 |*
 *************************************************************************/
 
-basegfx::B2DPolyPolygon XLineEndItem::GetLineEndValue(const XLineEndTable* pTable) const
+basegfx::B2DPolyPolygon XLineEndItem::GetLineEndValue(const XLineEndList* pTable) const
 {
 	if (!IsIndex())
 	{
@@ -3713,7 +3726,7 @@ SvStream& XFillGradientItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) co
 
 /*************************************************************************
 |*
-|*	  const XGradient& XFillGradientItem::GetValue(const XGradientTable* pTable)
+|*	  const XGradient& XFillGradientItem::GetValue(const XGradientList* pTable)
 |*																   const
 |*
 |*	  Beschreibung
@@ -3722,7 +3735,7 @@ SvStream& XFillGradientItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) co
 |*
 *************************************************************************/
 
-const XGradient& XFillGradientItem::GetGradientValue(const XGradientTable* pTable) const // GetValue -> GetGradientValue
+const XGradient& XFillGradientItem::GetGradientValue(const XGradientList* pTable) const // GetValue -> GetGradientValue
 {
 	if (!IsIndex())
 		return aGradient;
@@ -4013,7 +4026,7 @@ XFillGradientItem* XFillGradientItem::checkForUniqueItem( SdrModel* pModel ) con
 																pModel->GetStyleSheetPool() ? &pModel->GetStyleSheetPool()->GetPool() : NULL,
 																XFillGradientItem::CompareValueFunc,
 																RID_SVXSTR_GRADIENT,
-																pModel->GetGradientList() );
+																pModel->GetGradientListFromSdrModel().get() );
 
 		// if the given name is not valid, replace it!
 		if( aUniqueName != GetName() )
@@ -4423,7 +4436,7 @@ SvStream& XFillHatchItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 
 /*************************************************************************
 |*
-|*	  const XHatch& XFillHatchItem::GetValue(const XHatchTable* pTable) const
+|*	  const XHatch& XFillHatchItem::GetValue(const XHatchList* pTable) const
 |*
 |*	  Beschreibung
 |*	  Ersterstellung	15.11.94
@@ -4431,7 +4444,7 @@ SvStream& XFillHatchItem::Store( SvStream& rOut, sal_uInt16 nItemVersion ) const
 |*
 *************************************************************************/
 
-const XHatch& XFillHatchItem::GetHatchValue(const XHatchTable* pTable) const // GetValue -> GetHatchValue
+const XHatch& XFillHatchItem::GetHatchValue(const XHatchList* pTable) const // GetValue -> GetHatchValue
 {
 	if (!IsIndex())
 		return aHatch;
@@ -4654,7 +4667,7 @@ XFillHatchItem* XFillHatchItem::checkForUniqueItem( SdrModel* pModel ) const
 																pModel->GetStyleSheetPool() ? &pModel->GetStyleSheetPool()->GetPool() : NULL,
 																XFillHatchItem::CompareValueFunc,
 																RID_SVXSTR_HATCH10,
-																pModel->GetHatchList() );
+																pModel->GetHatchListFromSdrModel().get() );
 
 		// if the given name is not valid, replace it!
 		if( aUniqueName != GetName() )
@@ -5452,113 +5465,6 @@ SfxPoolItem* XFormTextShadowYValItem::Clone(SfxItemPool* /*pPool*/) const
 SfxPoolItem* XFormTextShadowYValItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/) const
 {
 	return new XFormTextShadowYValItem(rIn);
-}
-
-//---------------------------
-// class XFormTextStdFormItem
-//---------------------------
-TYPEINIT1_AUTOFACTORY(XFormTextStdFormItem, SfxEnumItem);
-
-/*************************************************************************
-|*
-|*	  XFormTextStdFormItem::XFormTextStdFormItem()
-|*
-|*	  Beschreibung
-|*	  Ersterstellung	27.06.95
-|*	  Letzte Aenderung	27.06.95
-|*
-*************************************************************************/
-
-XFormTextStdFormItem::XFormTextStdFormItem(XFormTextStdForm eFormTextStdForm) :
-	SfxEnumItem(
-        XATTR_FORMTXTSTDFORM, sal::static_int_cast< sal_uInt16 >(eFormTextStdForm))
-{
-}
-
-/*************************************************************************
-|*
-|*	  XFormTextStdFormItem::XFormTextStdFormItem(SvStream& rIn)
-|*
-|*	  Beschreibung
-|*	  Ersterstellung	27.06.95
-|*	  Letzte Aenderung	27.06.95
-|*
-*************************************************************************/
-
-XFormTextStdFormItem::XFormTextStdFormItem(SvStream& rIn) :
-	SfxEnumItem(XATTR_FORMTXTSTDFORM, rIn)
-{
-}
-
-/*************************************************************************
-|*
-|*	  XFormTextStdFormItem::Clone(SfxItemPool* pPool) const
-|*
-|*	  Beschreibung
-|*	  Ersterstellung	27.06.95
-|*	  Letzte Aenderung	27.06.95
-|*
-*************************************************************************/
-
-SfxPoolItem* XFormTextStdFormItem::Clone(SfxItemPool* /*pPool*/) const
-{
-	return new XFormTextStdFormItem( *this );
-}
-
-/*************************************************************************
-|*
-|*	  SfxPoolItem* XFormTextStdFormItem::Create(SvStream& rIn, sal_uInt16 nVer) const
-|*
-|*	  Beschreibung
-|*	  Ersterstellung	27.06.95
-|*	  Letzte Aenderung	27.06.95
-|*
-*************************************************************************/
-
-SfxPoolItem* XFormTextStdFormItem::Create(SvStream& rIn, sal_uInt16 /*nVer*/) const
-{
-	return new XFormTextStdFormItem(rIn);
-}
-
-
-/*************************************************************************
-|*
-|*
-|*
-\*************************************************************************/
-
-sal_uInt16 XFormTextStdFormItem::GetValueCount() const
-{
-	return 3;
-}
-
-/*************************************************************************
-|*
-|*
-|*
-\*************************************************************************/
-
-// #FontWork#
-sal_Bool XFormTextStdFormItem::QueryValue( uno::Any& rVal, sal_uInt8 /*nMemberId*/) const
-{
-	rVal <<= (sal_Int32)GetValue();
-	return sal_True;
-}
-
-/*************************************************************************
-|*
-|*
-|*
-\*************************************************************************/
-
-// #FontWork#
-sal_Bool XFormTextStdFormItem::PutValue( const uno::Any& rVal, sal_uInt8 /*nMemberId*/)
-{
-	sal_Int32 nValue = 0;
-	rVal >>= nValue;
-	SetValue(sal::static_int_cast< sal_uInt16 >(nValue));
-
-	return sal_True;
 }
 
 // --------------------------

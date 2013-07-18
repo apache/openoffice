@@ -47,13 +47,8 @@
 #include "userdat.hxx"
 #include "docsh.hxx"
 
-// forwards -> galwrap.cxx (wg. CLOOKs)
-
-sal_uInt16	GallerySGA_FORMAT_GRAPHIC();
-Graphic GalleryGetGraphic		();
-sal_Bool	GalleryIsLinkage		();
-String	GalleryGetFullPath		();
-String	GalleryGetFilterName	();
+#include <svx/galleryitem.hxx>
+#include <com/sun/star/gallery/GalleryItemType.hpp>
 
 // forwards -> imapwrap.cxx (wg. CLOOKs)
 
@@ -109,49 +104,36 @@ void ScTabViewShell::GetChildWinState( SfxItemSet& rSet )
 
 void ScTabViewShell::ExecGallery( SfxRequest& rReq )
 {
-	const SfxItemSet* pArgs = rReq.GetArgs();
+    const SfxItemSet* pArgs = rReq.GetArgs();
 
-	if ( pArgs )
-	{
-		const SfxPoolItem* pItem = NULL;
-		SfxItemState eState = pArgs->GetItemState(SID_GALLERY_FORMATS, sal_True, &pItem);
-		if ( eState == SFX_ITEM_SET )
-		{
-			sal_uInt32 nFormats = ((const SfxUInt32Item*)pItem)->GetValue();
+    SFX_ITEMSET_ARG( pArgs, pGalleryItem, SvxGalleryItem, SID_GALLERY_FORMATS, sal_False );
+    if ( !pGalleryItem )
+        return;
 
-			/******************************************************************
-			* Graphik einfuegen
-			******************************************************************/
-			if ( nFormats & GallerySGA_FORMAT_GRAPHIC() )
-			{
-				MakeDrawLayer();
+    sal_Int8 nType( pGalleryItem->GetType() );
+    if ( nType == com::sun::star::gallery::GalleryItemType::GRAPHIC )
+    {
+        MakeDrawLayer();
 
-				Graphic aGraphic = GalleryGetGraphic();
-				Point 	aPos     = GetInsertPos();
+        Graphic aGraphic( pGalleryItem->GetGraphic() );
+        Point 	aPos     = GetInsertPos();
 
-				String aPath, aFilter;
-				if ( GalleryIsLinkage() )			// als Link einfuegen?
-				{
-					aPath = GalleryGetFullPath();
-					aFilter = GalleryGetFilterName();
-				}
+        String aPath, aFilter;
+        if ( pGalleryItem->IsLink() ) // als Link einfuegen?
+        {
+            aPath = pGalleryItem->GetURL();
+            aFilter = pGalleryItem->GetFilterName();
+        }
 
-				PasteGraphic( aPos, aGraphic, aPath, aFilter );
-			}
-			else if ( nFormats & SGA_FORMAT_SOUND )
-			{
-				//	#98115# for sounds (linked or not), insert a hyperlink button,
-				//	like in Impress and Writer
-
-				GalleryExplorer* pGal = SVX_GALLERY();
-				if ( pGal )
-				{
-        		    const SfxStringItem aMediaURLItem( SID_INSERT_AVMEDIA, pGal->GetURL().GetMainURL( INetURLObject::NO_DECODE ) );
-       			    GetViewFrame()->GetDispatcher()->Execute( SID_INSERT_AVMEDIA, SFX_CALLMODE_SYNCHRON, &aMediaURLItem, 0L );
-				}
-			}
-		}
-	}
+        PasteGraphic( aPos, aGraphic, aPath, aFilter );
+    }
+    else if ( nType == com::sun::star::gallery::GalleryItemType::MEDIA )
+    {
+        //	#98115# for sounds (linked or not), insert a hyperlink button,
+        //	like in Impress and Writer
+        const SfxStringItem aMediaURLItem( SID_INSERT_AVMEDIA, pGalleryItem->GetURL() );
+        GetViewFrame()->GetDispatcher()->Execute( SID_INSERT_AVMEDIA, SFX_CALLMODE_SYNCHRON, &aMediaURLItem, 0L );
+    }
 }
 
 void ScTabViewShell::GetGalleryState( SfxItemSet& /* rSet */ )

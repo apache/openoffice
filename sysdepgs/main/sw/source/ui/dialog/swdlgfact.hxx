@@ -498,14 +498,14 @@ public:
 												sal_Bool			bFmt 	 = sal_False,
 												sal_uInt16			nDefPage = 0,
 												const String* 	pFmtStr  = 0); //add for SwFrmDlg
-	virtual SfxAbstractTabDialog*		CreateTemplateDialog( int nResId,
-												Window*             pParent,
-												SfxStyleSheetBase&  rBase,
-												sal_uInt16              nRegion,
-												sal_Bool 				bColumn = sal_False,
-												SwWrtShell* 		pActShell = 0,
-												sal_Bool 				bNew = sal_False ); //add for SwTemplateDlg
-	virtual AbstractGlossaryDlg*		CreateGlossaryDlg( int nResId,
+    virtual SfxAbstractTabDialog*		CreateTemplateDialog( int nResId,
+                                                Window*             pParent,
+                                                SfxStyleSheetBase&  rBase,
+                                                sal_uInt16              nRegion,
+                                                const sal_uInt16 nSlot = 0,
+                                                SwWrtShell* 		pActShell = 0,
+                                                sal_Bool 				bNew = sal_False ); //add for SwTemplateDlg
+    virtual AbstractGlossaryDlg*		CreateGlossaryDlg( int nResId,
 												SfxViewFrame* pViewFrame, 
 												SwGlossaryHdl* pGlosHdl, 
 												SwWrtShell *pWrtShell); //add for SwGlossaryDlg

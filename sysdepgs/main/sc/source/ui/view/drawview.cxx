@@ -225,6 +225,10 @@ void ScDrawView::InvalidateDrawTextAttrs()
 	rBindings.Invalidate( SID_ULINE_VAL_DOTTED );
 	rBindings.Invalidate( SID_ATTR_CHAR_OVERLINE );
 	rBindings.Invalidate( SID_ATTR_CHAR_COLOR );
+	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );			
+	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_RIGHT );
+	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_BLOCK );
+	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_CENTER);
 	rBindings.Invalidate( SID_ALIGNLEFT );
 	rBindings.Invalidate( SID_ALIGNCENTERHOR );
 	rBindings.Invalidate( SID_ALIGNRIGHT );
@@ -234,6 +238,9 @@ void ScDrawView::InvalidateDrawTextAttrs()
 	rBindings.Invalidate( SID_ATTR_PARA_LINESPACE_20 );
 	rBindings.Invalidate( SID_SET_SUPER_SCRIPT );
 	rBindings.Invalidate( SID_SET_SUB_SCRIPT );
+	rBindings.Invalidate( SID_ATTR_CHAR_KERNING ); 
+	rBindings.Invalidate( SID_ATTR_CHAR_STRIKEOUT );
+	rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED ); 
 	rBindings.Invalidate( SID_TEXTDIRECTION_LEFT_TO_RIGHT );
 	rBindings.Invalidate( SID_TEXTDIRECTION_TOP_TO_BOTTOM );
 	rBindings.Invalidate( SID_ATTR_PARA_LEFT_TO_RIGHT );
@@ -580,6 +587,60 @@ void ScDrawView::MarkListHasChanged()
 
 }
 
+sal_Bool ScDrawView::SdrBeginTextEdit(
+    SdrObject* pObj,
+    SdrPageView* pPV,
+    ::Window* pWinL,
+    sal_Bool bIsNewObj,
+    SdrOutliner* pGivenOutliner,
+    OutlinerView* pGivenOutlinerView,
+    sal_Bool bDontDeleteOutliner,
+    sal_Bool bOnlyOneView,
+    sal_Bool bGrabFocus )
+{
+    const sal_Bool bRet = FmFormView::SdrBeginTextEdit(
+        pObj, pPV, pWinL, bIsNewObj,
+        pGivenOutliner, pGivenOutlinerView, bDontDeleteOutliner,
+        bOnlyOneView, bGrabFocus );
+
+    ScTabViewShell* pViewSh = pViewData->GetViewShell();
+    if ( pViewSh->GetViewFrame() )
+    {
+        SfxFrame& rFrame = pViewSh->GetViewFrame()->GetFrame();
+        uno::Reference< frame::XController > xController = rFrame.GetController();
+        if (xController.is())
+        {
+            ScTabViewObj* pImp = ScTabViewObj::getImplementation( xController );
+            if (pImp)
+                pImp->SelectionChanged();
+        }
+    }
+
+    return bRet;
+}
+
+
+SdrEndTextEditKind ScDrawView::SdrEndTextEdit( sal_Bool bDontDeleteReally )
+{
+    const SdrEndTextEditKind eRet = FmFormView::SdrEndTextEdit( bDontDeleteReally );
+
+    ScTabViewShell* pViewSh = pViewData->GetViewShell();
+    if ( pViewSh->GetViewFrame() )
+    {
+        SfxFrame& rFrame = pViewSh->GetViewFrame()->GetFrame();
+        uno::Reference< frame::XController > xController = rFrame.GetController();
+        if (xController.is())
+        {
+            ScTabViewObj* pImp = ScTabViewObj::getImplementation( xController );
+            if (pImp)
+                pImp->SelectionChanged();
+        }
+    }
+
+    return eRet;
+}
+
+
 void __EXPORT ScDrawView::ModelHasChanged()
 {
 	SdrObject* pEditObj = GetTextEditObject();
@@ -774,7 +835,7 @@ void ScDrawView::DeleteMarked()
             DBG_ASSERT( aNoteData.mpCaption == pCaptObj, "ScDrawView::DeleteMarked - caption object does not match" );
             // collect the drawing undo action created while deleting the note
             if( bUndo )
-                pDrawLayer->BeginCalcUndo();
+                pDrawLayer->BeginCalcUndo(false);
             // delete the note (already removed from document above)
             delete pNote;
             // add the undo action for the note

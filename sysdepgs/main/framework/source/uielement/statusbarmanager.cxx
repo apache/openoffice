@@ -43,19 +43,19 @@
 #include <helper/mischelper.hxx>
 
 #include <com/sun/star/frame/XFrame.hpp>
-#include <com/sun/star/frame/XStatusListener.hpp>
-#include <com/sun/star/util/XUpdatable.hpp>
+#include <com/sun/star/frame/StatusbarControllerFactory.hpp>
 #include <com/sun/star/ui/ItemStyle.hpp>
 #include <com/sun/star/ui/ItemType.hpp>
 #include <com/sun/star/lang/XMultiComponentFactory.hpp>
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/awt/Command.hpp>
-#include <com/sun/star/ui/XStatusbarItem.hdl>
+#include <com/sun/star/ui/XStatusbarItem.hpp>
 #include <com/sun/star/lang/DisposedException.hpp>
 
 #include <toolkit/helper/vclunohelper.hxx>
 
 #include <svtools/statusbarcontroller.hxx>
+#include <comphelper/processfactory.hxx>
 
 #include <vcl/status.hxx>
 #include <vcl/svapp.hxx>
@@ -95,9 +95,8 @@ struct lcl_UpdateController : public std::unary_function< typename MAP::value_ty
     {
         try
         {
-            uno::Reference< util::XUpdatable > xUpdatable( rElement.second, uno::UNO_QUERY );
-            if ( xUpdatable.is() )
-                xUpdatable->update();
+            if ( rElement.second.is() )
+                rElement.second->update();
         }
         catch ( uno::Exception& )
         {
@@ -112,9 +111,8 @@ struct lcl_RemoveController : public std::unary_function< typename MAP::value_ty
     {
         try
         {
-            uno::Reference< lang::XComponent > xComponent( rElement.second, uno::UNO_QUERY );
-            if ( xComponent.is() )
-                xComponent->dispose();
+            if ( rElement.second.is() )
+                rElement.second->dispose();
         }
         catch ( uno::Exception& )
         {
@@ -188,10 +186,8 @@ StatusBarManager::StatusBarManager(
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::StatusBarManager" );
 
-    if ( m_xServiceManager.is() )
-        m_xStatusbarControllerRegistration = uno::Reference< css::frame::XUIControllerRegistration >( 
-                                                    m_xServiceManager->createInstance( SERVICENAME_STATUSBARCONTROLLERFACTORY ), 
-                                                    uno::UNO_QUERY );
+    m_xStatusbarControllerFactory = frame::StatusbarControllerFactory::create(
+        ::comphelper::getProcessComponentContext());
 
     m_pStatusBar->SetClickHdl( LINK( this, StatusBarManager, Click ) );
     m_pStatusBar->SetDoubleClickHdl( LINK( this, StatusBarManager, DoubleClick ) );
@@ -369,7 +365,6 @@ rtl::OUString StatusBarManager::RetrieveLabelFromCommand( const rtl::OUString& a
 void StatusBarManager::CreateControllers()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::CreateControllers" );
-    uno::Reference< lang::XMultiComponentFactory > xStatusbarControllerFactory( m_xStatusbarControllerRegistration, uno::UNO_QUERY );
     uno::Reference< uno::XComponentContext > xComponentContext;
     uno::Reference< beans::XPropertySet > xProps( m_xServiceManager, uno::UNO_QUERY );
     uno::Reference< awt::XWindow > xStatusbarWindow = VCLUnoHelper::GetInterface( m_pStatusBar );
@@ -383,62 +378,64 @@ void StatusBarManager::CreateControllers()
         if ( nId == 0 )
             continue;
 
-        rtl::OUString                            aCommandURL( m_pStatusBar->GetItemCommand( nId ));
-        sal_Bool                                 bInit( sal_True );
-        uno::Reference< frame::XStatusListener > xController;
+        rtl::OUString aCommandURL( m_pStatusBar->GetItemCommand( nId ));
+        sal_Bool bInit( sal_True );
+        uno::Reference< frame::XStatusbarController > xController;
         AddonStatusbarItemData *pItemData = static_cast< AddonStatusbarItemData *>( m_pStatusBar->GetItemData( nId ) );
         uno::Reference< ui::XStatusbarItem > xStatusbarItem(
             static_cast< cppu::OWeakObject *>( new StatusbarItem( m_pStatusBar, pItemData, nId, aCommandURL ) ),
             uno::UNO_QUERY );
 
-        svt::StatusbarController* pController( 0 );
+        beans::PropertyValue aPropValue;
+        std::vector< uno::Any > aPropVector;
+
+        aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CommandURL" ));
+        aPropValue.Value    <<= aCommandURL;
+        aPropVector.push_back( uno::makeAny( aPropValue ) );
+
+        aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ModuleIdentifier" ));
+        aPropValue.Value    <<= m_aModuleIdentifier;
+        aPropVector.push_back( uno::makeAny( aPropValue ) );
+
+        aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Frame" ));
+        aPropValue.Value    <<= m_xFrame;
+        aPropVector.push_back( uno::makeAny( aPropValue ) );
+
+        // TODO remove this
+        aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ServiceManager" ));
+        aPropValue.Value    <<= m_xServiceManager;
+        aPropVector.push_back( uno::makeAny( aPropValue ) );
+
+        aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ParentWindow" ));
+        aPropValue.Value    <<= xStatusbarWindow;
+        aPropVector.push_back( uno::makeAny( aPropValue ) );
+
+        // TODO still needing with the css::ui::XStatusbarItem?
+        aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Identifier" ));
+        aPropValue.Value    <<= nId;
+        aPropVector.push_back( uno::makeAny( aPropValue ) );
+
+        aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StatusbarItem" ));
+        aPropValue.Value    <<= xStatusbarItem;
+        aPropVector.push_back( uno::makeAny( aPropValue ) );
+
+        uno::Sequence< uno::Any > aArgs( comphelper::containerToSequence( aPropVector ) );
 
         // 1º) UNO Statusbar controllers, registered in Controllers.xcu
-        if ( m_xStatusbarControllerRegistration.is() && 
-             m_xStatusbarControllerRegistration->hasController( aCommandURL, m_aModuleIdentifier ))
+        if ( m_xStatusbarControllerFactory.is() &&
+             m_xStatusbarControllerFactory->hasController( aCommandURL, m_aModuleIdentifier ))
         {
-            if ( xStatusbarControllerFactory.is() )
-            {
-                beans::PropertyValue aPropValue;
-                std::vector< uno::Any > aPropVector;
-
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ModuleName" ));
-                aPropValue.Value    = uno::makeAny( m_aModuleIdentifier );
-                aPropVector.push_back( uno::makeAny( aPropValue ) );
-
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Frame" ));
-                aPropValue.Value    = uno::makeAny( m_xFrame );
-                aPropVector.push_back( uno::makeAny( aPropValue ) );
-
-                // TODO remove this
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ServiceManager" ));
-                aPropValue.Value    = uno::makeAny( m_xServiceManager );
-                aPropVector.push_back( uno::makeAny( aPropValue ) );
-
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ParentWindow" ));
-                aPropValue.Value    = uno::makeAny( xStatusbarWindow );
-                aPropVector.push_back( uno::makeAny( aPropValue ) );
-
-                // TODO still needing with the css::ui::XStatusbarItem?
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Identifier" ));
-                aPropValue.Value    = uno::makeAny( nId );
-                aPropVector.push_back( uno::makeAny( aPropValue ) );
-
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StatusbarItem" ));
-                aPropValue.Value    <<= xStatusbarItem;
-                aPropVector.push_back( uno::makeAny( aPropValue ) );
-
-                uno::Sequence< uno::Any > aArgs( comphelper::containerToSequence( aPropVector ) );
-                xController = uno::Reference< frame::XStatusListener >( 
-                                xStatusbarControllerFactory->createInstanceWithArgumentsAndContext(	
-                                    aCommandURL, aArgs, xComponentContext ),
-                                uno::UNO_QUERY );
-                bInit = sal_False; // Initialization is done through the factory service
-            }
+            xController = uno::Reference< frame::XStatusbarController >(
+                            m_xStatusbarControllerFactory->createInstanceWithArgumentsAndContext(
+                                aCommandURL, aArgs, xComponentContext ),
+                            uno::UNO_QUERY );
+            bInit = sal_False; // Initialization is done through the factory service
         }
-  
+
         if ( !xController.is() )
         {
+            svt::StatusbarController* pController( 0 );
+
             // 2º) Old SFX2 Statusbar controllers
             pController = CreateStatusBarController( m_xFrame, m_pStatusBar, nId, aCommandURL );
             if ( !pController )
@@ -459,40 +456,15 @@ void StatusBarManager::CreateControllers()
             }
 
             if ( pController )
-                xController = uno::Reference< frame::XStatusListener >( 
+                xController = uno::Reference< frame::XStatusbarController >(
                                 static_cast< ::cppu::OWeakObject *>( pController ), 
                                 uno::UNO_QUERY );
         }
 
         m_aControllerMap[nId] = xController;
-        uno::Reference< lang::XInitialization > xInit( xController, uno::UNO_QUERY );
-
-        if ( xInit.is() )
+        if ( bInit )
         {
-            if ( bInit )
-            {
-                beans::PropertyValue aPropValue;
-                uno::Sequence< uno::Any > aArgs( 6 );
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Frame" ));
-                aPropValue.Value    = uno::makeAny( m_xFrame );
-                aArgs[0] = uno::makeAny( aPropValue );
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CommandURL" ));
-                aPropValue.Value    = uno::makeAny( aCommandURL );
-                aArgs[1] = uno::makeAny( aPropValue );
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ServiceManager" ));
-                aPropValue.Value    = uno::makeAny( m_xServiceManager );
-                aArgs[2] = uno::makeAny( aPropValue );
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ParentWindow" ));
-                aPropValue.Value    = uno::makeAny( xStatusbarWindow );
-                aArgs[3] = uno::makeAny( aPropValue );
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Identifier" ));
-                aPropValue.Value    = uno::makeAny( nId );
-                aArgs[4] = uno::makeAny( aPropValue );
-                aPropValue.Name     = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StatusbarItem" ));
-                aPropValue.Value    <<= xStatusbarItem;
-                aArgs[5] = uno::makeAny( aPropValue );
-                xInit->initialize( aArgs );
-            }
+            xController->initialize( aArgs );
         }
     }
 
@@ -677,7 +649,7 @@ void StatusBarManager::UserDraw( const UserDrawEvent& rUDEvt )
     StatusBarControllerMap::const_iterator it = m_aControllerMap.find( nId );
     if (( nId > 0 ) && ( it != m_aControllerMap.end() ))
     {
-        uno::Reference< frame::XStatusbarController > xController( it->second, uno::UNO_QUERY );
+        uno::Reference< frame::XStatusbarController > xController( it->second );
         if ( xController.is() && rUDEvt.GetDevice() )
         {
             uno::Reference< awt::XGraphics > xGraphics =
@@ -707,7 +679,7 @@ void StatusBarManager::Command( const CommandEvent& rEvt )
         StatusBarControllerMap::const_iterator it = m_aControllerMap.find( nId );
         if (( nId > 0 ) && ( it != m_aControllerMap.end() ))
         {
-            uno::Reference< frame::XStatusbarController > xController( it->second, uno::UNO_QUERY );
+            uno::Reference< frame::XStatusbarController > xController( it->second );
             if ( xController.is() )
             {
                 awt::Point aPos;
@@ -736,7 +708,7 @@ void StatusBarManager::MouseButton( const MouseEvent& rMEvt ,sal_Bool ( SAL_CALL
         StatusBarControllerMap::const_iterator it = m_aControllerMap.find( nId );
         if (( nId > 0 ) && ( it != m_aControllerMap.end() ))
         {
-            uno::Reference< frame::XStatusbarController > xController( it->second, uno::UNO_QUERY );
+            uno::Reference< frame::XStatusbarController > xController( it->second );
             if ( xController.is() )
             {
                 ::com::sun::star::awt::MouseEvent aMouseEvent;
@@ -773,7 +745,7 @@ IMPL_LINK( StatusBarManager, Click, StatusBar*, EMPTYARG )
     StatusBarControllerMap::const_iterator it = m_aControllerMap.find( nId );
     if (( nId > 0 ) && ( it != m_aControllerMap.end() ))
     {
-        uno::Reference< frame::XStatusbarController > xController( it->second, uno::UNO_QUERY );
+        uno::Reference< frame::XStatusbarController > xController( it->second );
         if ( xController.is() )
         {
             const Point aVCLPos = m_pStatusBar->GetPointerPosPixel();
@@ -796,7 +768,7 @@ IMPL_LINK( StatusBarManager, DoubleClick, StatusBar*, EMPTYARG )
     StatusBarControllerMap::const_iterator it = m_aControllerMap.find( nId );
     if (( nId > 0 ) && ( it != m_aControllerMap.end() ))
     {
-        uno::Reference< frame::XStatusbarController > xController( it->second, uno::UNO_QUERY );
+        uno::Reference< frame::XStatusbarController > xController( it->second );
         if ( xController.is() )
         {
             const Point aVCLPos = m_pStatusBar->GetPointerPosPixel();

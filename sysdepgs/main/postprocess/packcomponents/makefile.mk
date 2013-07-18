@@ -35,6 +35,24 @@ GTK_TWO_FOUR=$(shell @+-$(PKG_CONFIG) --exists 'gtk+-2.0 >= 2.4.0' && echo YES)
 .END
 
 my_components = \
+    acceptor \
+    binaryurp \
+    bootstrap \
+    connector \
+    introspection \
+    invocadapt \
+    invocation \
+    javaloader \
+    javavm \
+    juh \
+    namingservice \
+    proxyfac \
+    reflection \
+    stocservices \
+    streams \
+    textinstream \
+    textoutstream \
+    uuresolver \
     abp \
     adabasui \
     analysis \
@@ -72,7 +90,7 @@ my_components = \
     component/sw/util/sw \
     component/sw/util/swd \
     component/sw/util/vbaswobj \
-    component/toolkit/util/tk \
+    component/toolkit/util/ootk \
     component/unoxml/source/rdf/unordf \
     component/unoxml/source/service/unoxml \
     component/xmloff/source/transform/xof \
@@ -110,6 +128,7 @@ my_components = \
     lnth \
     localebe1 \
     log \
+	mailmerge \
     mcnttype \
     migrationoo2 \
     msfilter \
@@ -174,7 +193,9 @@ my_components = \
     xmlfd \
     xmx \
     xsltdlg \
-    xstor
+    xstor \
+    PresentationMinimizer \
+    PresenterScreen
 
 .IF "$(OS)" == "MACOSX"
 my_components += component/vcl/vcl.macosx
@@ -274,12 +295,6 @@ my_components += ScriptProviderForBeanShell
 .IF "$(ENABLE_JAVASCRIPT)" == "YES"
 my_components += ScriptProviderForJavaScript
 .END
-.END
-
-.IF "$(WITH_BINFILTER)" != "NO"
-my_components += \
-    bf_migratefilter \
-    bindet
 .END
 
 .IF "$(WITH_LDAP)" == "YES"

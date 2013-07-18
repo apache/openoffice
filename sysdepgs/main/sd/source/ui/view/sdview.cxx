@@ -51,11 +51,13 @@
 
 #include <svx/dialogs.hrc>
 #include <sfx2/viewfrm.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <svx/svdopage.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 #include <svx/xlndsit.hxx>
 #include <svx/xlineit0.hxx>
 #include <svx/xlnclit.hxx>
+#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include <vcl/virdev.hxx>
 
 #include "app.hrc"
@@ -79,6 +81,7 @@
 #include <svx/sdr/contact/viewobjectcontact.hxx>
 #include <svx/sdr/contact/viewcontact.hxx>
 #include <svx/sdr/contact/displayinfo.hxx>
+#include <svx/svdotable.hxx>
 #include "EventMultiplexer.hxx"
 #include "ViewShellBase.hxx"
 #include "ViewShellManager.hxx"
@@ -89,15 +92,18 @@
 #include <drawinglayer/primitive2d/textlayoutdevice.hxx>
 #include <drawinglayer/primitive2d/groupprimitive2d.hxx>
 #include <svx/sdr/contact/objectcontact.hxx>
+#include <svx/sdr/table/tablecontroller.hxx>
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <drawinglayer/primitive2d/textprimitive2d.hxx>
 #include <svx/unoapi.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include "DrawController.hxx"
 
 #include <numeric>
 
 using namespace com::sun::star;
 using namespace com::sun::star::uno;
+using namespace sdr::table;
 namespace sd {
 
 #ifndef SO2_DECL_SVINPLACEOBJECT_DEFINED
@@ -775,29 +781,38 @@ sal_Bool View::SdrBeginTextEdit(
 		pGivenOutlinerView, bDontDeleteOutliner,
 		bOnlyOneView, bGrabFocus);
 
-	if (bReturn)
-	{
-		::Outliner* pOL = GetTextEditOutliner();
+    if ( mpViewSh )
+    {
+        mpViewSh->GetViewShellBase().GetDrawController().FireSelectionChangeListener();
+    }
 
-		if( pObj && pObj->GetPage() )
-		{
-			Color aBackground;
-			if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_TABLE )
-			{
-				aBackground = GetTextEditBackgroundColor(*this);
-			}
-			else
-			{
-				aBackground = pObj->GetPage()->GetPageBackgroundColor(pPV);
-			}
-			pOL->SetBackgroundColor( aBackground  );
-		}
+    if (bReturn)
+    {
+        ::Outliner* pOL = GetTextEditOutliner();
 
-		pOL->SetParaInsertedHdl(LINK(this, View, OnParagraphInsertedHdl));
-		pOL->SetParaRemovingHdl(LINK(this, View, OnParagraphRemovingHdl));
-	}
+        if( pObj && pObj->GetPage() )
+        {
+            Color aBackground;
+            if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_TABLE )
+            {
+                aBackground = GetTextEditBackgroundColor(*this);
+            }
+            else
+            {
+                aBackground = pObj->GetPage()->GetPageBackgroundColor(pPV);
+            }
+            if (pOL != NULL)
+                pOL->SetBackgroundColor( aBackground  );
+        }
 
-	return(bReturn);
+        if (pOL != NULL)
+        {
+            pOL->SetParaInsertedHdl(LINK(this, View, OnParagraphInsertedHdl));
+            pOL->SetParaRemovingHdl(LINK(this, View, OnParagraphRemovingHdl));
+        }
+    }
+
+    return(bReturn);
 }
 
 /** ends current text editing */
@@ -831,16 +846,23 @@ SdrEndTextEditKind View::SdrEndTextEdit(sal_Bool bDontDeleteReally )
 		}
 	}
 
-	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT, (void*)xObj.get() );
+    GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
+        sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT,
+        (void*)xObj.get() );
 
-	if( xObj.is() )
-	{
-		SdPage* pPage = dynamic_cast< SdPage* >( xObj->GetPage() );
-		if( pPage )
-			pPage->onEndTextEdit( xObj.get() );
-	}
+    if( xObj.is() )
+    {
+        if ( mpViewSh )
+        {
+            mpViewSh->GetViewShellBase().GetDrawController().FireSelectionChangeListener();
+        }
 
-	return(eKind);
+        SdPage* pPage = dynamic_cast< SdPage* >( xObj->GetPage() );
+        if( pPage )
+            pPage->onEndTextEdit( xObj.get() );
+    }
+
+    return(eKind);
 }
 
 // --------------------------------------------------------------------
@@ -1312,6 +1334,188 @@ void View::OnEndPasteOrDrop( PasteOrDropInfos* pInfos )
 			}
 		}
 	}
+}
+
+bool View::ShouldToggleOn(
+    const bool bBulletOnOffMode,
+    const bool bNormalBullet)
+{
+	// If setting bullets/numbering by the dialog, always should toggle on.
+	if (!bBulletOnOffMode)
+		return sal_True;
+	SdrModel* pSdrModel = GetModel();
+	if (!pSdrModel)
+		return sal_False;
+
+	sal_Bool bToggleOn = sal_False;
+	SdrOutliner* pOutliner = SdrMakeOutliner(OUTLINERMODE_TEXTOBJECT, pSdrModel);
+	sal_uInt32 nMarkCount = GetMarkedObjectCount();
+	for (sal_uInt32 nIndex = 0; nIndex < nMarkCount && !bToggleOn; nIndex++)
+	{
+		SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >(GetMarkedObjectByIndex(nIndex));
+		if (!pTextObj || pTextObj->IsTextEditActive())
+			continue;
+		if (pTextObj->ISA(SdrTableObj))
+		{
+			SdrTableObj* pTableObj = dynamic_cast< SdrTableObj* >(pTextObj);
+			if (!pTableObj)
+				continue;
+			CellPos aStart, aEnd;
+			SvxTableController* pTableController = dynamic_cast< SvxTableController* >(getSelectionController().get());
+			if (pTableController)
+			{
+				pTableController->getSelectedCells(aStart, aEnd);
+			}
+			else
+			{
+				aStart = pTableObj->getFirstCell();
+				aEnd = pTableObj->getLastCell();
+			}
+			sal_Int32 nColCount = pTableObj->getColumnCount();
+			for (sal_Int32 nRow = aStart.mnRow; nRow <= aEnd.mnRow && !bToggleOn; nRow++)
+			{
+				for (sal_Int32 nCol = aStart.mnCol; nCol <= aEnd.mnCol && !bToggleOn; nCol++)
+				{
+					sal_Int32 nIndex = nRow * nColCount + nCol;
+					SdrText* pText = pTableObj->getText(nIndex);
+					if (!pText || !pText->GetOutlinerParaObject())
+						continue;
+					pOutliner->SetText(*(pText->GetOutlinerParaObject()));
+					sal_Int16 nStatus = pOutliner->GetBulletsNumberingStatus();
+					bToggleOn = ((bNormalBullet && nStatus != 0) || (!bNormalBullet && nStatus != 1)) ? sal_True : bToggleOn;
+					pOutliner->Clear();
+				}
+			}
+		}
+		else
+		{
+			OutlinerParaObject* pParaObj = pTextObj->GetOutlinerParaObject();
+			if (!pParaObj)
+				continue;
+			pOutliner->SetText(*pParaObj);
+			sal_Int16 nStatus = pOutliner->GetBulletsNumberingStatus();
+			bToggleOn = ((bNormalBullet && nStatus != 0) || (!bNormalBullet && nStatus != 1)) ? sal_True : bToggleOn;
+			pOutliner->Clear();
+		}
+	}
+	delete pOutliner;
+	return bToggleOn;
+}
+
+void View::ChangeMarkedObjectsBulletsNumbering(
+    const bool bToggle,
+    const bool bHandleBullets,
+    const SvxNumRule* pNumRule,
+    const bool bSwitchOff )
+{
+    SdrModel* pSdrModel = GetModel();
+    Window* pWindow = dynamic_cast< Window* >(GetFirstOutputDevice());
+    if (!pSdrModel || !pWindow)
+        return;
+
+    const bool bUndoEnabled = pSdrModel->IsUndoEnabled();
+    SdrUndoGroup* pUndoGroup = bUndoEnabled ? new SdrUndoGroup(*pSdrModel) : 0;
+
+    const bool bToggleOn =
+        bSwitchOff
+        ? false
+        : ShouldToggleOn( bToggle, bHandleBullets );
+
+    SdrOutliner* pOutliner = SdrMakeOutliner(OUTLINERMODE_TEXTOBJECT, pSdrModel);
+    OutlinerView* pOutlinerView = new OutlinerView(pOutliner, pWindow);
+
+    const sal_uInt32 nMarkCount = GetMarkedObjectCount();
+	for (sal_uInt32 nIndex = 0; nIndex < nMarkCount; nIndex++)
+	{
+		SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >(GetMarkedObjectByIndex(nIndex));
+		if (!pTextObj || pTextObj->IsTextEditActive())
+			continue;
+		if (pTextObj->ISA(SdrTableObj))
+		{
+			SdrTableObj* pTableObj = dynamic_cast< SdrTableObj* >(pTextObj);
+			if (!pTableObj)
+				continue;
+			CellPos aStart, aEnd;
+			SvxTableController* pTableController = dynamic_cast< SvxTableController* >(getSelectionController().get());
+			if (pTableController)
+			{
+				pTableController->getSelectedCells(aStart, aEnd);
+			}
+			else
+			{
+				aStart = pTableObj->getFirstCell();
+				aEnd = pTableObj->getLastCell();
+			}
+			sal_Int32 nColCount = pTableObj->getColumnCount();
+			for (sal_Int32 nRow = aStart.mnRow; nRow <= aEnd.mnRow; nRow++)
+			{
+				for (sal_Int32 nCol = aStart.mnCol; nCol <= aEnd.mnCol; nCol++)
+				{
+					sal_Int32 nIndex = nRow * nColCount + nCol;
+					SdrText* pText = pTableObj->getText(nIndex);
+					if (!pText || !pText->GetOutlinerParaObject())
+						continue;
+
+					pOutliner->SetText(*(pText->GetOutlinerParaObject()));
+					if (bUndoEnabled)
+					{
+						SdrUndoObjSetText* pTxtUndo = dynamic_cast< SdrUndoObjSetText* >(pSdrModel->GetSdrUndoFactory().CreateUndoObjectSetText(*pTextObj, nIndex));
+						pUndoGroup->AddAction(pTxtUndo);
+					}
+                    if ( !bToggleOn )
+                    {
+                        pOutlinerView->SwitchOffBulletsNumbering();
+                    }
+                    else
+                    {
+                        pOutlinerView->ApplyBulletsNumbering( bHandleBullets, pNumRule, bToggle );
+                    }
+					sal_uInt32 nParaCount = pOutliner->GetParagraphCount();
+					pText->SetOutlinerParaObject(pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount));
+					pOutliner->Clear();
+				}
+			}
+			// Broadcast the object change event.
+			if (!pTextObj->AdjustTextFrameWidthAndHeight())
+			{
+				pTextObj->SetChanged();
+				pTextObj->BroadcastObjectChange();
+			}
+		}
+		else
+		{
+			OutlinerParaObject* pParaObj = pTextObj->GetOutlinerParaObject();
+			if (!pParaObj)
+				continue;
+			pOutliner->SetText(*pParaObj);
+			if (bUndoEnabled)
+			{
+				SdrUndoObjSetText* pTxtUndo = dynamic_cast< SdrUndoObjSetText* >(pSdrModel->GetSdrUndoFactory().CreateUndoObjectSetText(*pTextObj, 0));
+				pUndoGroup->AddAction(pTxtUndo);
+			}
+            if ( !bToggleOn )
+            {
+                pOutlinerView->SwitchOffBulletsNumbering();
+            }
+            else
+            {
+                pOutlinerView->ApplyBulletsNumbering( bHandleBullets, pNumRule, bToggle );
+            }
+			sal_uInt32 nParaCount = pOutliner->GetParagraphCount();
+			pTextObj->SetOutlinerParaObject(pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount));
+			pOutliner->Clear();
+		}
+	}
+
+    if ( bUndoEnabled && pUndoGroup->GetActionCount() > 0 )
+    {
+        pSdrModel->BegUndo();
+        pSdrModel->AddUndo(pUndoGroup);
+        pSdrModel->EndUndo();
+    }
+
+    delete pOutliner;
+    delete pOutlinerView;
 }
 
 } // end of namespace sd

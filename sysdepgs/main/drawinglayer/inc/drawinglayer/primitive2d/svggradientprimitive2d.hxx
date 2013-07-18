@@ -95,6 +95,9 @@ namespace drawinglayer
         class SvgGradientHelper
         {
         private:
+            /// the extra gradient transform
+            basegfx::B2DHomMatrix       maGradientTransform;
+
             /// geometric definition, the geometry to be filled
             basegfx::B2DPolyPolygon		maPolyPolygon;
 
@@ -149,13 +152,16 @@ namespace drawinglayer
         public:
             /// constructor
             SvgGradientHelper(
+                const basegfx::B2DHomMatrix& rGradientTransform,
                 const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const SvgGradientEntryVector& rGradientEntries,
                 const basegfx::B2DPoint& rStart,
                 bool bUseUnitCoordinates,
                 SpreadMethod aSpreadMethod = Spread_pad);
+            virtual ~SvgGradientHelper();
 
             /// data read access
+            const basegfx::B2DHomMatrix& getGradientTransform() const { return maGradientTransform; }
             const basegfx::B2DPolyPolygon& getPolyPolygon() const { return maPolyPolygon; }
             const SvgGradientEntryVector& getGradientEntries() const { return maGradientEntries; }
             const basegfx::B2DPoint& getStart() const { return maStart; }
@@ -163,7 +169,7 @@ namespace drawinglayer
             SpreadMethod getSpreadMethod() const { return maSpreadMethod; }
 
             /// compare operator
-            virtual bool operator==(const SvgGradientHelper& rSvgGradientHelper) const;
+            bool operator==(const SvgGradientHelper& rSvgGradientHelper) const;
         };
     } // end of namespace primitive2d
 } // end of namespace drawinglayer
@@ -198,6 +204,7 @@ namespace drawinglayer
         public:
             /// constructor
             SvgLinearGradientPrimitive2D(
+                const basegfx::B2DHomMatrix& rGradientTransform,
                 const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const SvgGradientEntryVector& rGradientEntries,
                 const basegfx::B2DPoint& rStart,
@@ -266,6 +273,7 @@ namespace drawinglayer
         public:
             /// constructor
             SvgRadialGradientPrimitive2D(
+                const basegfx::B2DHomMatrix& rGradientTransform,
                 const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const SvgGradientEntryVector& rGradientEntries,
                 const basegfx::B2DPoint& rStart,

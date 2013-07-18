@@ -1932,7 +1932,7 @@ void SvxSwPosSizeTabPage::SetView( const SdrView* pSdrView )
         SdrObjKind eKind = (SdrObjKind) pObj->GetObjIdentifier();
         if( ( pObj->GetObjInventor() == SdrInventor ) &&
             ( eKind==OBJ_TEXT || eKind==OBJ_TITLETEXT || eKind==OBJ_OUTLINETEXT) &&
-            ( (SdrTextObj*) pObj )->HasText() )
+            pObj->HasText() )
         {
             DBG_ERROR("AutoWidth/AutoHeight should be enabled");
         }

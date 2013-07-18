@@ -156,8 +156,8 @@ static AquaSalFrame* getMouseContainerFrame()
 {
 	mDraggingDestinationHandler = nil;
     mpFrame = pFrame;
-    NSRect aRect = { { pFrame->maGeometry.nX, pFrame->maGeometry.nY },
-                     { pFrame->maGeometry.nWidth, pFrame->maGeometry.nHeight } };
+    NSRect aRect = NSMakeRect( pFrame->maGeometry.nX, pFrame->maGeometry.nY,
+                     pFrame->maGeometry.nWidth, pFrame->maGeometry.nHeight);
     pFrame->VCLToCocoa( aRect );
     NSWindow* pNSWindow = [super initWithContentRect: aRect styleMask: mpFrame->getStyleMask() backing: NSBackingStoreBuffered defer: NO ];
     [pNSWindow useOptimizedDrawing: YES]; // OSX recommendation when there are no overlapping subviews within the receiver
@@ -169,14 +169,15 @@ static AquaSalFrame* getMouseContainerFrame()
     const SEL setCollectionBehavior = @selector(setCollectionBehavior:);
     if( bAllowFullScreen && [pNSWindow respondsToSelector: setCollectionBehavior])
     {
-        NSNumber* bMode = [NSNumber numberWithInt:(bAllowFullScreen ? NSWindowCollectionBehaviorFullScreenPrimary : NSWindowCollectionBehaviorFullScreenAuxiliary)];
-        [pNSWindow performSelector:setCollectionBehavior withObject:bMode];
+        const int bMode= (bAllowFullScreen ? NSWindowCollectionBehaviorFullScreenPrimary : NSWindowCollectionBehaviorFullScreenAuxiliary);
+        [pNSWindow performSelector:setCollectionBehavior withObject:(id)bMode];
     }
 
     // disable OSX>=10.7 window restoration until we support it directly
     const SEL setRestorable = @selector(setRestorable:);
-    if( [pNSWindow respondsToSelector: setRestorable])
-        [pNSWindow performSelector:setRestorable withObject:NO];
+    if( [pNSWindow respondsToSelector: setRestorable]) {
+        [pNSWindow performSelector:setRestorable withObject:(id)NO];
+    }
 
     return pNSWindow;
 }
@@ -460,7 +461,7 @@ static AquaSalFrame* getMouseContainerFrame()
     if( mpFrame && AquaSalFrame::isAlive( mpFrame ) )
     {
         // FIXME: does this leak the returned NSCursor of getCurrentCursor ?
-        NSRect aRect = { { 0, 0 }, { mpFrame->maGeometry.nWidth, mpFrame->maGeometry.nHeight } };
+        const NSRect aRect = NSMakeRect( 0, 0, mpFrame->maGeometry.nWidth, mpFrame->maGeometry.nHeight);
         [self addCursorRect: aRect cursor: mpFrame->getCurrentCursor()];
     }
 }
@@ -478,7 +479,13 @@ static AquaSalFrame* getMouseContainerFrame()
 
 -(BOOL)isOpaque
 {
-    return mpFrame ? (mpFrame->getClipPath() != 0 ? NO : YES) : YES;
+	if( !mpFrame)
+		return YES;
+	if( !AquaSalFrame::isAlive( mpFrame))
+		return YES;
+	if( !mpFrame->getClipPath())
+		return YES;
+	return NO;
 }
 
 // helper class similar to a vos::OGuard for the SalYieldMutex

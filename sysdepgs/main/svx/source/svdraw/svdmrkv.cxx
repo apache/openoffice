@@ -54,6 +54,8 @@
 #include <svx/sdrpaintwindow.hxx>
 #include <svx/sdrpagewindow.hxx>
 #include <svx/sdrhittesthelper.hxx>
+#include <svx/svdocapt.hxx>
+#include <svx/svdograf.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -715,6 +717,12 @@ void SdrMarkView::SetMarkHandles()
 				}
 			}
 		}
+
+        // #122142# for captions in TextEdit, force to FrameHdls to get the special text selection
+        if(!bFrmHdl && pMarkedObj && bSingleTextObjMark && dynamic_cast< SdrCaptionObj* >(pMarkedObj))
+        {
+            bFrmHdl = true;
+        }
 		
 		if (bFrmHdl) 
 		{
@@ -754,6 +762,56 @@ void SdrMarkView::SetMarkHandles()
                 }
                 else if( eDragMode==SDRDRAG_CROP )
 				{
+                    const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(pMarkedObj);
+
+                    if(pSdrGrafObj)
+                    {
+                        const SdrGrafCropItem& rCrop = static_cast< const SdrGrafCropItem& >(pSdrGrafObj->GetMergedItem(SDRATTR_GRAFCROP));
+
+                        if(rCrop.GetLeft() || rCrop.GetTop() || rCrop.GetRight() ||rCrop.GetBottom())
+                        {
+                            basegfx::B2DHomMatrix aMatrix;
+                            basegfx::B2DPolyPolygon aPolyPolygon;
+
+                            pSdrGrafObj->TRGetBaseGeometry(aMatrix, aPolyPolygon);
+
+                            // decompose to have current translate and scale
+                            basegfx::B2DVector aScale, aTranslate;
+                            double fRotate, fShearX;
+
+                            aMatrix.decompose(aScale, aTranslate, fRotate, fShearX);
+
+                            if(!aScale.equalZero())
+                            {
+                                // get crop scale
+                                const basegfx::B2DVector aCropScaleFactor(
+                                    pSdrGrafObj->GetGraphicObject().calculateCropScaling(
+                                        aScale.getX(),
+                                        aScale.getY(),
+                                        rCrop.GetLeft(),
+                                        rCrop.GetTop(),
+                                        rCrop.GetRight(),
+                                        rCrop.GetBottom()));
+
+                                // apply crop scale
+                                const double fCropLeft(rCrop.GetLeft() * aCropScaleFactor.getX());
+                                const double fCropTop(rCrop.GetTop() * aCropScaleFactor.getY());
+                                const double fCropRight(rCrop.GetRight() * aCropScaleFactor.getX());
+                                const double fCropBottom(rCrop.GetBottom() * aCropScaleFactor.getY());
+
+                                aHdl.AddHdl(
+                                    new SdrCropViewHdl(
+                                        aMatrix,
+                                        pSdrGrafObj->GetGraphicObject().GetGraphic(),
+                                        fCropLeft,
+                                        fCropTop,
+                                        fCropRight,
+                                        fCropBottom,
+                                        pSdrGrafObj->IsMirrored()));
+                            }
+                        }
+                    }
+    
 					aHdl.AddHdl(new SdrCropHdl(aRect.TopLeft()     ,HDL_UPLFT));
 					aHdl.AddHdl(new SdrCropHdl(aRect.TopCenter()   ,HDL_UPPER));
 					aHdl.AddHdl(new SdrCropHdl(aRect.TopRight()    ,HDL_UPRGT));
@@ -870,11 +928,11 @@ void SdrMarkView::SetMarkHandles()
 		// Drehpunkt/Spiegelachse
 		AddDragModeHdl(eDragMode);
 
-		// add custom handles (used by other apps, e.g. AnchorPos)
-		AddCustomHdl();
-
 		// sort handles
 		aHdl.Sort();
+
+		// add custom handles (used by other apps, e.g. AnchorPos)
+		AddCustomHdl();
 
 		// #105722# try to restore focus handle index from remembered values
 		if(bSaveOldFocus)

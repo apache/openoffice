@@ -1903,7 +1903,20 @@ void __EXPORT ScGridWindow::MouseButtonUp( const MouseEvent& rMEvt )
 	}
 
 	if (DrawMouseButtonUp(rMEvt))       // includes format paint brush handling for drawing objects
-		return;
+    {
+        ScTabViewShell* pViewShell = pViewData->GetViewShell();
+        SfxBindings& rBindings=pViewShell->GetViewFrame()->GetBindings();
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_WIDTH);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_HEIGHT);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_POS_X);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_POS_Y);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_ANGLE);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_ROT_X);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_ROT_Y);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_AUTOWIDTH);
+        rBindings.Invalidate(SID_ATTR_TRANSFORM_AUTOHEIGHT);
+        return;
+    }
 
 	rMark.SetMarking(sal_False);
 
@@ -3077,8 +3090,21 @@ void __EXPORT ScGridWindow::KeyInput(const KeyEvent& rKEvt)
 		if (pViewData->GetDocShell()->GetProgress())
 			return;
 
-		if (DrawKeyInput(rKEvt))
+        if (DrawKeyInput(rKEvt))
+        {
+            const KeyCode& rKeyCode = rKEvt.GetKeyCode();
+            if (rKeyCode.GetCode() == KEY_DOWN
+                || rKeyCode.GetCode() == KEY_UP
+                || rKeyCode.GetCode() == KEY_LEFT
+                || rKeyCode.GetCode() == KEY_RIGHT)
+            {
+                ScTabViewShell* pViewShell = pViewData->GetViewShell();
+                SfxBindings& rBindings = pViewShell->GetViewFrame()->GetBindings();
+                rBindings.Invalidate(SID_ATTR_TRANSFORM_POS_X);
+                rBindings.Invalidate(SID_ATTR_TRANSFORM_POS_Y);
+ 			}
 			return;
+        }
 
 		if (!pViewData->GetView()->IsDrawSelMode() && !DrawHasMarkedObj())	//	keine Eingaben im Zeichenmodus
 		{															//! DrawShell abfragen !!!
@@ -3538,6 +3564,13 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 		else
 		{
 			sal_Int8 nMyAction = rEvt.mnAction;
+			
+			// clear DND_ACTION_LINK when other actions are set. The usage below cannot handle
+			// multiple set values
+			if((nMyAction & DND_ACTION_LINK) && (nMyAction & (DND_ACTION_COPYMOVE)))
+			{
+			    nMyAction &= ~DND_ACTION_LINK;
+			}
 
 			if ( !rData.pDrawTransfer ||
 					!IsMyModel(rData.pDrawTransfer->GetDragSourceView()) )		// drawing within the document
@@ -3547,7 +3580,7 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 			ScDocument* pThisDoc = pViewData->GetDocument();
 			SdrObject* pHitObj = pThisDoc->GetObjectAtPoint(
 						pViewData->GetTabNo(), PixelToLogic(rEvt.maPosPixel) );
-			if ( pHitObj && nMyAction == DND_ACTION_LINK && !rData.pDrawTransfer )
+			if ( pHitObj && nMyAction == DND_ACTION_LINK ) // && !rData.pDrawTransfer )
 			{
 				if ( IsDropFormatSupported(SOT_FORMATSTR_ID_SVXB)
 					|| IsDropFormatSupported(SOT_FORMAT_GDIMETAFILE)
@@ -4165,8 +4198,9 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 	}
 
 	Point aLogicPos = PixelToLogic(aPos);
+	sal_Bool bIsLink = ( rEvt.mnAction == DND_ACTION_LINK );
 
-	if (rData.pDrawTransfer)
+	if (!bIsLink && rData.pDrawTransfer)
 	{
 		sal_uInt16 nFlags = rData.pDrawTransfer->GetDragSourceFlags();
 
@@ -4201,8 +4235,6 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 			return rEvt.mnAction;
 		}
 	}
-
-	sal_Bool bIsLink = ( rEvt.mnAction == DND_ACTION_LINK );
 
 	ScDocument* pThisDoc = pViewData->GetDocument();
 	SdrObject* pHitObj = pThisDoc->GetObjectAtPoint( pViewData->GetTabNo(), PixelToLogic(aPos) );

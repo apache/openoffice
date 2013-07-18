@@ -74,7 +74,8 @@ ModulePrefix( "Sw" )
 	include "wtextsh.sdi"
 
 	include "_drwbase.sdi"
-	include "drwbassh.sdi"
+    include "sidebar.sdi"
+    include "drwbassh.sdi"
 	include "wdrwbase.sdi"
 
 	include "_formsh.sdi"

@@ -537,6 +537,7 @@ void Svx3DWin::Reset()
 
 	// Nichts selektieren, um Fehler beim erstselektieren zu vermeiden
 	aCtlLightPreview.GetSvx3DLightControl().SelectLight(0);
+	aCtlLightPreview.CheckSelection();
 }
 
 bool Svx3DWin::GetUILightState( ImageButton& aBtn ) const
@@ -3222,7 +3223,7 @@ void Svx3DWin::DocumentReload()
 // -----------------------------------------------------------------------
 void Svx3DWin::InitColorLB( const SdrModel* pDoc )
 {
-	aLbLight1.Fill( pDoc->GetColorTable() );
+	aLbLight1.Fill( pDoc->GetColorTableFromSdrModel() );
 	aLbLight2.CopyEntries( aLbLight1 );
 	aLbLight3.CopyEntries( aLbLight1 );
 	aLbLight4.CopyEntries( aLbLight1 );

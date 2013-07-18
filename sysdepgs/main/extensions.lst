@@ -34,19 +34,13 @@
 # Some extensions that are installed indepently of the language.
 
 # the presenter console extension
-[ language=all && ENABLE_PRESENTER_SCREEN=YES ]
-    file://presenter/presenter-screen.oxt
-
-# the presentation minimizer
-[ language=all && ENABLE_MINIMIZER=YES ]
-    file://minimizer/presentation-minimizer.oxt
-
-
+# [ language=all && ENABLE_XXX ]
+#    file://XXX.oxt
 
 # English dictionary
 [ language=en.* || language=de || language=it ]
-    b7ce02d25eb302e5b23572cdccaea461 http://numbertext.org/tmp/dict-en.oxt
-    
+    b7ce02d25eb302e5b23572cdccaea461 http://sourceforge.net/projects/aoo-extensions/files/17102/0/dict-en.oxt/download "dict-en.oxt"
+
 # English (USA, en_US) dictionary
 [ language==nl || language==ru ]
     e2eab80772ab1aa09716954219351a80 http://sourceforge.net/projects/aoo-extensions/files/1470/1/en_US.oxt/download "en_US.oxt"
@@ -84,6 +78,10 @@
 [ language=ru ]
     a63512bc487d7378bbe2e44f59d5ef45 http://sourceforge.net/projects/aoo-extensions/files/3233/2/dict_ru_RU-0.3.6.oxt/download "dict_ru_RU-0.3.6.oxt"
 
+# Slovak dictionary.
+[ language=sk ]
+    5a7cec122a215c9f6a906ecb8ad46ee6 http://sourceforge.net/projects/aoo-extensions/files/1143/11/dict-sk.oxt/download "dict-sk.oxt"
+
 # Slovenian dictionary.
 [ language=sl ]
     cfc3e4da22a3bb9f3f5fa7ae443f6407 http://sourceforge.net/projects/aoo-extensions/files/3280/5/pack-sl.oxt "pack-sl.oxt"
@@ -102,7 +100,7 @@
 
 # Scottish Gaelic.
 [ language=gd ]
-    d645b36c5d4fc52c18ac180453b48b5c http://sourceforge.net/projects/aoo-extensions/files/4587/7/hunspell-gd-2.5.oxt/download "hunspell-gd-2.5.oxt"
+    867d5509958a867fec1096b445fe4cec http://sourceforge.net/projects/aoo-extensions/files/4587/8/hunspell-gd-2.6.oxt/download "hunspell-gd-2.6.oxt"
 
 # Basque.
 [ language=eu ]
@@ -119,11 +117,11 @@
 
 # Norwegian.
 [ language=nb ]
-    18bbb57caee07d276ef21a0e88859664 http://sourceforge.net/projects/aoo-extensions/files/5955/0/dict-no-ooo330.oxt/download "dict-no-ooo330.oxt"
+    e6ca009bc6aa3d70d8b7d66138b1c28d http://sourceforge.net/projects/aoo-extensions/files/1216/6/dictionary-no-NO-2.1.oxt/download "dictionary-no-NO-2.1.oxt"
 
 # Swedish.
 [ language=sv ]
-    249b3bd3d9de4928ab8c809623dc9c4f http://sourceforge.net/projects/aoo-extensions/files/5959/0/dict-sv.oxt/download "dict-sv.oxt"
+    32ab4edf1496a7cf5469ee1643eb0128 http://sourceforge.net/projects/aoo-extensions/files/5959/1/dict-sv.oxt/download "dict-sv.oxt"
 
 # Korean.
 [ language=ko ]

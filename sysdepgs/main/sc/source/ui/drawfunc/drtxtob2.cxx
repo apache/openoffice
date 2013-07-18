@@ -39,7 +39,7 @@
 #include <sfx2/request.hxx>
 #include <sot/formats.hxx>
 #include <svl/whiter.hxx>
-
+#include <svx/svdoashp.hxx>
 #include "sc.hrc"
 #include "drtxtob.hxx"
 #include "viewdata.hxx"
@@ -200,30 +200,11 @@ void ScDrawTextObjectBar::ExecFormText(SfxRequest& rReq)
 	if ( rMarkList.GetMarkCount() == 1 && rReq.GetArgs() )
 	{
 		const SfxItemSet& rSet = *rReq.GetArgs();
-		const SfxPoolItem* pItem;
 
 		if ( pDrView->IsTextEdit() )
 			pDrView->ScEndTextEdit();
 
-		if (	SFX_ITEM_SET ==
-				rSet.GetItemState(XATTR_FORMTXTSTDFORM, sal_True, &pItem)
-			 && XFTFORM_NONE !=
-				((const XFormTextStdFormItem*) pItem)->GetValue() )
-		{
-
-			sal_uInt16 nId				= SvxFontWorkChildWindow::GetChildWindowId();
-			SfxViewFrame* pViewFrm	= pViewData->GetViewShell()->GetViewFrame();
-			SvxFontWorkDialog* pDlg	= (SvxFontWorkDialog*)
-									   (pViewFrm->
-											GetChildWindow(nId)->GetWindow());
-
-			pDlg->CreateStdFormObj(*pDrView, *pDrView->GetSdrPageView(),
-									rSet, *rMarkList.GetMark(0)->GetMarkedSdrObj(),
-								   ((const XFormTextStdFormItem*) pItem)->
-								   GetValue());
-		}
-		else
-			pDrView->SetAttributes(rSet);
+		pDrView->SetAttributes(rSet);
 	}
 }
 
@@ -242,8 +223,14 @@ void ScDrawTextObjectBar::GetFormTextState(SfxItemSet& rSet)
 	if ( rMarkList.GetMarkCount() == 1 )
 		pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 
-	if ( pObj == NULL || !pObj->ISA(SdrTextObj) ||
-		!((SdrTextObj*) pObj)->HasText() )
+    const SdrTextObj* pTextObj = dynamic_cast< const SdrTextObj* >(pObj);
+    const bool bDeactivate(
+        !pObj ||
+        !pTextObj ||
+        !pTextObj->HasText() ||
+        dynamic_cast< const SdrObjCustomShape* >(pObj)); // #121538# no FontWork for CustomShapes
+
+    if(bDeactivate)
 	{
 		if ( pDlg )
 			pDlg->SetActive(sal_False);
@@ -253,7 +240,6 @@ void ScDrawTextObjectBar::GetFormTextState(SfxItemSet& rSet)
 		rSet.DisableItem(XATTR_FORMTXTDISTANCE);
 		rSet.DisableItem(XATTR_FORMTXTSTART);
 		rSet.DisableItem(XATTR_FORMTXTMIRROR);
-		rSet.DisableItem(XATTR_FORMTXTSTDFORM);
 		rSet.DisableItem(XATTR_FORMTXTHIDEFORM);
 		rSet.DisableItem(XATTR_FORMTXTOUTLINE);
 		rSet.DisableItem(XATTR_FORMTXTSHADOW);
@@ -270,15 +256,15 @@ void ScDrawTextObjectBar::GetFormTextState(SfxItemSet& rSet)
 			if ( pDocSh )
 			{
                 const SfxPoolItem*  pItem = pDocSh->GetItem( SID_COLOR_TABLE );
-				XColorTable*		pColorTable = NULL;
+				XColorListSharedPtr aColorTable;
 
 				if ( pItem )
-					pColorTable = ((SvxColorTableItem*)pItem)->GetColorTable();
+					aColorTable = static_cast< const SvxColorTableItem* >(pItem)->GetColorTable();
 
 				pDlg->SetActive();
 
-				if ( pColorTable )
-					pDlg->SetColorTable( pColorTable );
+				if ( aColorTable )
+					pDlg->SetColorTable( aColorTable );
 				else
 					{ DBG_ERROR( "ColorList not found :-/" ); }
 			}

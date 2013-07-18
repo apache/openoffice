@@ -29,6 +29,18 @@
 #include <vcl/mapmod.hxx>
 #include <tools/rc.hxx>
 #include <vcl/region.hxx>
+#include <tools/color.hxx>
+
+#ifdef WNT
+#define _STLP_HAS_NATIVE_FLOAT_ABS
+#endif
+
+#include <boost/math/special_functions/sinc.hpp>
+
+using namespace boost::math::policies;
+typedef policy<
+	promote_double<false>
+> SincPolicy;
 
 // -----------
 // - Defines -
@@ -243,6 +255,8 @@ public:
 class Lanczos3Kernel : public Kernel
 {
 public:
+    Lanczos3Kernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 3.0; 
@@ -261,13 +275,15 @@ public:
         }
 
         x *= M_PI;
-
-        return sin(x) / x;
+        return boost::math::sinc_pi(x, SincPolicy());
     }
 };
 
 class BicubicKernel : public Kernel 
 {
+public:
+    BicubicKernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 2.0; 
@@ -295,6 +311,9 @@ class BicubicKernel : public Kernel
 
 class BilinearKernel : public Kernel 
 {
+public:
+    BilinearKernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 1.0; 
@@ -318,6 +337,9 @@ class BilinearKernel : public Kernel
 
 class BoxKernel : public Kernel 
 {
+public:
+    BoxKernel( void) {}
+
     virtual double GetWidth() const
     { 
         return 0.5; 

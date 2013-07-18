@@ -206,8 +206,7 @@ ScDrawLayer::ScDrawLayer( ScDocument* pDocument, const String& rName ) :
 				 NULL, 							// SfxItemPool* Pool
 				 pGlobalDrawPersist ?
 				 	pGlobalDrawPersist :
-				 	( pDocument ? pDocument->GetDocumentShell() : NULL ),
-				 sal_True ),		// bUseExtColorTable (is set below)
+				 	( pDocument ? pDocument->GetDocumentShell() : NULL )),
 	aName( rName ),
 	pDoc( pDocument ),
 	pUndoGroup( NULL ),
@@ -224,12 +223,12 @@ ScDrawLayer::ScDrawLayer( ScDocument* pDocument, const String& rName ) :
 		SetObjectShell( pObjSh );
 
 		// set color table
-        SvxColorTableItem* pColItem = (SvxColorTableItem*) pObjSh->GetItem( SID_COLOR_TABLE );
-		XColorTable* pXCol = pColItem ? pColItem->GetColorTable() : XColorTable::GetStdColorTable();
-		SetColorTable( pXCol );
+        const SvxColorTableItem* pColItem = static_cast< const SvxColorTableItem* >(pObjSh->GetItem( SID_COLOR_TABLE ));
+		XColorListSharedPtr aXCol = pColItem ? pColItem->GetColorTable() : XColorList::GetStdColorList();
+		SetColorTableAtSdrModel( aXCol );
 	}
 	else
-		SetColorTable( XColorTable::GetStdColorTable() );
+		SetColorTableAtSdrModel( XColorList::GetStdColorList() );
 
 	SetSwapGraphics(sal_True);
 //	SetSwapAsynchron(sal_True);		// an der View
@@ -861,10 +860,10 @@ void ScDrawLayer::AddCalcUndo( SdrUndoAction* pUndo )
 		delete pUndo;
 }
 
-void ScDrawLayer::BeginCalcUndo()
+void ScDrawLayer::BeginCalcUndo(bool bDisableTextEditUsesCommonUndoManager)
 {
 //! DBG_ASSERT( !bRecording, "BeginCalcUndo ohne GetCalcUndo" );
-
+    SetDisableTextEditUsesCommonUndoManager(bDisableTextEditUsesCommonUndoManager);
 	DELETEZ(pUndoGroup);
 	bRecording = sal_True;
 }
@@ -876,6 +875,7 @@ SdrUndoGroup* ScDrawLayer::GetCalcUndo()
 	SdrUndoGroup* pRet = pUndoGroup;
 	pUndoGroup = NULL;
 	bRecording = sal_False;
+    SetDisableTextEditUsesCommonUndoManager(false);
 	return pRet;
 }
 

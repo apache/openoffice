@@ -409,24 +409,8 @@ namespace drawinglayer
 		// direct draw of transformed BitmapEx primitive
 		void VclProcessor2D::RenderBitmapPrimitive2D(const primitive2d::BitmapPrimitive2D& rBitmapCandidate)
 		{
-            // check local ViewPort
-            const basegfx::B2DRange& rDiscreteViewPort(getViewInformation2D().getDiscreteViewport());
-            const basegfx::B2DHomMatrix aLocalTransform(getCurrentTransformation() * rBitmapCandidate.getTransform());
-
-            if(!rDiscreteViewPort.isEmpty())
-            {
-                // check if we are visible
-                basegfx::B2DRange aUnitRange(0.0, 0.0, 1.0, 1.0);
-
-                aUnitRange.transform(aLocalTransform);
-
-                if(!aUnitRange.overlaps(rDiscreteViewPort))
-                {
-                    return;
-                }
-            }
-
             BitmapEx aBitmapEx(rBitmapCandidate.getBitmapEx());
+            const basegfx::B2DHomMatrix aLocalTransform(getCurrentTransformation() * rBitmapCandidate.getTransform());
 
 			if(getBColorModifierStack().count())
 			{
@@ -463,7 +447,8 @@ namespace drawinglayer
 #if defined(MACOSX)
 				const AlphaMask aMaskBmp( aContent.GetSizePixel());
 #else
-				const Bitmap aMaskBmp( aContent.GetSizePixel(), 1);
+				Bitmap aMaskBmp( aContent.GetSizePixel(), 1);
+                aMaskBmp.Erase(Color(COL_BLACK)); // #122758# Initialize to non-transparent
 #endif
 				aBitmapEx = BitmapEx(aContent, aMaskBmp);
 			}
@@ -793,86 +778,6 @@ namespace drawinglayer
                 process(rPolygonCandidate.get2DDecomposition(getViewInformation2D()));
             }
         }
-
-		// direct draw of PolyPolygon with color
-		void VclProcessor2D::RenderPolyPolygonColorPrimitive2D(const primitive2d::PolyPolygonColorPrimitive2D& rPolygonCandidate)
-		{
-			const basegfx::BColor aPolygonColor(getBColorModifierStack().getModifiedColor(rPolygonCandidate.getBColor()));
-			getOutputDevice().SetFillColor(Color(aPolygonColor));
-			getOutputDevice().SetLineColor();
-
-			basegfx::B2DPolyPolygon aLocalPolyPolygon(rPolygonCandidate.getB2DPolyPolygon());
-			aLocalPolyPolygon.transform(getCurrentTransformation());
-
-            static bool bCheckTrapezoidDecomposition(false);
-            static bool bShowOutlinesThere(false);
-            if(bCheckTrapezoidDecomposition)
-            {
-                // clip against discrete ViewPort
-                const basegfx::B2DRange& rDiscreteViewport = getViewInformation2D().getDiscreteViewport();
-                aLocalPolyPolygon = basegfx::tools::clipPolyPolygonOnRange(
-                    aLocalPolyPolygon, rDiscreteViewport, true, false);
-
-                if(aLocalPolyPolygon.count())
-                {
-                    // subdivide
-                    aLocalPolyPolygon = basegfx::tools::adaptiveSubdivideByDistance(
-                        aLocalPolyPolygon, 0.5);
-
-                    // trapezoidize
-                    basegfx::B2DTrapezoidVector aB2DTrapezoidVector;
-                    basegfx::tools::trapezoidSubdivide(aB2DTrapezoidVector, aLocalPolyPolygon);
-
-                    const sal_uInt32 nCount(aB2DTrapezoidVector.size());
-
-                    if(nCount)
-                    {
-                        basegfx::BColor aInvPolygonColor(aPolygonColor);
-                        aInvPolygonColor.invert();
-
-                        for(sal_uInt32 a(0); a < nCount; a++)
-                        {
-                            const basegfx::B2DPolygon aTempPolygon(aB2DTrapezoidVector[a].getB2DPolygon());
-
-                            if(bShowOutlinesThere)
-                            {
-                                getOutputDevice().SetFillColor(Color(aPolygonColor));
-			                    getOutputDevice().SetLineColor();
-                            }
-
-                            getOutputDevice().DrawPolygon(aTempPolygon);
-
-                            if(bShowOutlinesThere)
-                            {
-                                getOutputDevice().SetFillColor();
-        		                getOutputDevice().SetLineColor(Color(aInvPolygonColor));
-    	    		            getOutputDevice().DrawPolyLine(aTempPolygon, 0.0);
-                            }
-                        }
-                    }
-                }
-            }
-            else
-            {
-			    getOutputDevice().DrawPolyPolygon(aLocalPolyPolygon);
-
-                if(0 != getPolygonStrokePrimitive2DCounter()
-                    && getOptionsDrawinglayer().IsAntiAliasing()
-                    && (getOutputDevice().GetAntialiasing() & ANTIALIASING_ENABLE_B2DDRAW))
-                {
-                    // when AA is on and this filled polygons are the result of stroked line geometry,
-                    // draw the geometry once extra as lines to avoid AA 'gaps' between partial polygons
-			        getOutputDevice().SetFillColor();
-			        getOutputDevice().SetLineColor(Color(aPolygonColor));
-                    const sal_uInt32 nCount(aLocalPolyPolygon.count());
-
-                    for(sal_uInt32 a(0); a < nCount; a++)
-                    {
-                        getOutputDevice().DrawPolyLine(aLocalPolyPolygon.getB2DPolygon(a), 0.0);
-                    }
-                }
-            }
-		}
 
 		// mask group. Force output to VDev and create mask from given mask
 		void VclProcessor2D::RenderMaskPrimitive2DPixel(const primitive2d::MaskPrimitive2D& rMaskCandidate)
@@ -1395,7 +1300,10 @@ namespace drawinglayer
             {
                 const basegfx::BColor aColorA(getBColorModifierStack().getModifiedColor(rCandidate.getColorA()));
                 const basegfx::BColor aColorB(getBColorModifierStack().getModifiedColor(rCandidate.getColorB()));
-                const double fDiscreteUnit((getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 0.0)).getLength());
+
+                // calculate discrete unit in WorldCoordinates; use diagonal (1.0, 1.0) and divide by sqrt(2)
+                const basegfx::B2DVector aDiscreteVector(getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 1.0));
+                const double fDiscreteUnit(aDiscreteVector.getLength() * (1.0 / 1.414213562373));
 
                 // use color distance and discrete lengths to calculate step count
                 const sal_uInt32 nSteps(calculateStepsForSvgGradient(aColorA, aColorB, fDelta, fDiscreteUnit));
@@ -1437,7 +1345,10 @@ namespace drawinglayer
             {
                 const basegfx::BColor aColorA(getBColorModifierStack().getModifiedColor(rCandidate.getColorA()));
                 const basegfx::BColor aColorB(getBColorModifierStack().getModifiedColor(rCandidate.getColorB()));
-                const double fDiscreteUnit((getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 0.0)).getLength());
+
+                // calculate discrete unit in WorldCoordinates; use diagonal (1.0, 1.0) and divide by sqrt(2)
+                const basegfx::B2DVector aDiscreteVector(getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 1.0));
+                const double fDiscreteUnit(aDiscreteVector.getLength() * (1.0 / 1.414213562373));
 
                 // use color distance and discrete lengths to calculate step count
                 const sal_uInt32 nSteps(calculateStepsForSvgGradient(aColorA, aColorB, fDeltaScale, fDiscreteUnit));

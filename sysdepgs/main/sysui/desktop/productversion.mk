@@ -42,15 +42,15 @@ PKGDIR=$(BIN)
 # CAUTION! here the parsing result from openoffice.lst is NOT available, so this is hardcoded
 # but should not be.
 # It has to be equal to PRODUCTNAME:l:s/\s/\_/g - see solenv/bin/modules/installer/setupscript.pm
-PRODUCTLIST = apache_openoffice
+PRODUCTLIST = openoffice
 
 # default values to minimize maintainance effort
 
 # CAUTION! $(OOOBASEVERSION) from openoffice.lst NOT available (!)
-PRODUCTVERSION = 3.5
+PRODUCTVERSION = 4.0
 
 # CAUTION! $(BRANDPACKAGEVERSION) from openoffice.lst NOT available (!)
-PRODUCTVERSIONSHORT = 3
+PRODUCTVERSIONSHORT = 4
 
 PKGVERSION = $(PRODUCTVERSION)
 # gnome-vfs treats everything behind the last '.' as an icon extension, 
@@ -66,11 +66,11 @@ ICONVERSION = $(PRODUCTVERSIONSHORT:s/.//g)
 UNIXWRAPPERNAME *= '$${{UNIXPRODUCTNAME}}$${{BRANDPACKAGEVERSION}}'
 
 # CAUTION! $(UNIXBASISROOTNAME) from openoffice.lst NOT available (!)
-PRODUCTNAME.apache_openoffice = Apache OpenOffice
+PRODUCTNAME.openoffice = OpenOffice
 
-PRODUCTVERSION.apache_openoffice = $(PRODUCTVERSION)
-PRODUCTVERSIONSHORT.apache_openoffice = $(PRODUCTVERSIONSHORT)
-PKGVERSION.apache_openoffice = $(PKGVERSION)
-UNIXFILENAME.apache_openoffice = $(PRODUCTNAME.apache_openoffice:l:s/ /_/g)$(PRODUCTVERSIONSHORT.apache_openoffice)
-ICONPREFIX.apache_openoffice = $(UNIXFILENAME.apache_openoffice:s/.//g)
+PRODUCTVERSION.openoffice = $(PRODUCTVERSION)
+PRODUCTVERSIONSHORT.openoffice = $(PRODUCTVERSIONSHORT)
+PKGVERSION.openoffice = $(PKGVERSION)
+UNIXFILENAME.openoffice = $(PRODUCTNAME.openoffice:l:s/ /_/g)$(PRODUCTVERSIONSHORT.openoffice)
+ICONPREFIX.openoffice = $(UNIXFILENAME.openoffice:s/.//g)
 
