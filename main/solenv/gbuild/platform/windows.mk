@@ -115,7 +115,7 @@ gb_CFLAGS := \
 	-wd4800 \
 	-wd4820 \
 	-wd4826 \
-	-Zc:forScope,wchar_t- \
+	-Zc:wchar_t- \
 	-Zm500 \
 
 gb_CXXFLAGS := \
@@ -161,7 +161,7 @@ gb_CXXFLAGS := \
 	-wd4800 \
 	-wd4820 \
 	-wd4826 \
-	-Zc:forScope,wchar_t- \
+	-Zc:wchar_t- \
 	-Zm500 \
 
 gb_STDLIBS := \
@@ -484,7 +484,7 @@ ifeq ($(USE_SYSTEM_STL),YES)
 ifeq ($(gb_PRODUCT),$(true))
 gb_Library_STLEXT := msvcprt.lib
 else
-gb_Library_STLEXT := msvcprtd.lib
+gb_Library_STLEXT := msvcprt.lib
 endif
 else
 ifeq ($(gb_PRODUCT),$(true))

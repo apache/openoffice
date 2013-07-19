@@ -840,7 +840,9 @@ void SvxPositionSizeTabPage::Construct()
 		const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 		const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
-		if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
+		if((pObj->GetObjInventor() == SdrInventor) && 
+            (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && 
+            pObj->HasText())
 		{
 			mbAdjustDisabled = false;
 			maFlAdjust.Enable();

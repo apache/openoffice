@@ -126,9 +126,9 @@ if ( true )
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    SHA1 = 30b29bd9214d50887abcc20cf82096aaaf5d1d61
-    name = serf-1.2.0.tar.bz2
-    URL1 = http://serf.googlecode.com/files/serf-1.2.0.tar.bz2
+    SHA1 = f65fbbd72926c8e7cf0dbd4ada03b0d226f461fd
+    name = serf-1.2.1.tar.bz2
+    URL1 = http://serf.googlecode.com/files/serf-1.2.1.tar.bz2
     URL2 = $(OOO_EXTRAS)$(SHA1)-$(name)
 
 if (SOLAR_JAVA==TRUE && (ENABLE_MEDIAWIKI==YES || ENABLE_REPORTBUILDER==YES))
@@ -217,9 +217,9 @@ if (ENABLE_MEDIAWIKI == YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_PYTHON != YES)
-    MD5 = 62704ea0f125923208d84ff0568f7d50
-    name = Python-2.7.4.tar.bz2
-    URL1 = http://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.bz2
+    MD5 =  6334b666b7ff2038c761d7b27ba699c1
+    name = Python-2.7.5.tar.bz2
+    URL1 = http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tar.bz2
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_BOOST!=YES || (OS==SOLARIS && COM!=GCC))

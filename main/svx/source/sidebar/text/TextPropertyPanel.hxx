@@ -27,6 +27,7 @@
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <sfx2/sidebar/EnumContext.hxx>
+#include <sfx2/sidebar/GridLayouter.hxx>
 
 #include <svtools/ctrlbox.hxx>
 #include <svx/tbxcolorupdate.hxx>
@@ -84,6 +85,9 @@ public:
         const SfxItemState eState,
         const SfxPoolItem* pState,
         const bool bIsEnabled);
+
+    // Inherited from vcl Window.
+    virtual void Resize (void);
 
 private:
     //ui controls
@@ -148,7 +152,8 @@ private:
     cssu::Reference<css::frame::XFrame> mxFrame;
     ::sfx2::sidebar::EnumContext maContext;
     SfxBindings* mpBindings;
-        
+    ::sfx2::sidebar::GridLayouter maLayouter;
+
     TextPropertyPanel (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,

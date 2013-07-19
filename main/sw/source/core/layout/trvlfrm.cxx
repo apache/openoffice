@@ -2007,175 +2007,164 @@ inline void Sub( SwRegionRects& rRegion, const SwRect& rRect )
 
 void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
 {
-	SwPosition *pStartPos = rCrsr.Start(),
-			   *pEndPos   = rCrsr.GetPoint() == pStartPos ?
-							rCrsr.GetMark() : rCrsr.GetPoint();
+    SwPosition *pStartPos = rCrsr.Start(),
+               *pEndPos   = rCrsr.GetPoint() == pStartPos ? rCrsr.GetMark() : rCrsr.GetPoint();
 
-	ViewShell *pSh = GetCurrShell();
+    ViewShell *pSh = GetCurrShell();
 
-// --> FME 2004-06-08 #i12836# enhanced pdf
-	SwRegionRects aRegion( pSh && !pSh->GetViewOptions()->IsPDFExport() ?
+    SwRegionRects aRegion( pSh && !pSh->GetViewOptions()->IsPDFExport() ?
                            pSh->VisArea() :
                            Frm() );
-// <--
     if( !pStartPos->nNode.GetNode().IsCntntNode() ||
         !pStartPos->nNode.GetNode().GetCntntNode()->getLayoutFrm(this) ||
         ( pStartPos->nNode != pEndPos->nNode &&
           ( !pEndPos->nNode.GetNode().IsCntntNode() ||
             !pEndPos->nNode.GetNode().GetCntntNode()->getLayoutFrm(this) ) ) )
     {
-        /* For SelectAll we will need something like this later on...
-        const SwFrm* pPageFrm = GetLower();
-        while( pPageFrm )
-        {
-            SwRect aTmp( pPageFrm->Prt() );
-            aTmp.Pos() += pPageFrm->Frm().Pos();
-            Sub( aRegion, aTmp );
-            pPageFrm = pPageFrm->GetNext();
-        }
-		aRegion.Invert();
-        rCrsr.Remove( 0, rCrsr.Count() );
-        rCrsr.Insert( &aRegion, 0 );
-        */
         return;
     }
 
-	//Erstmal die CntntFrms zum Start und End besorgen, die brauch ich auf
-	//jedenfall.
+    //Erstmal die CntntFrms zum Start und End besorgen, die brauch ich auf
+    //jedenfall.
     SwCntntFrm const* pStartFrm = pStartPos->nNode.GetNode().
-		GetCntntNode()->getLayoutFrm( this, &rCrsr.GetSttPos(), pStartPos );
+        GetCntntNode()->getLayoutFrm( this, &rCrsr.GetSttPos(), pStartPos );
 
     SwCntntFrm const* pEndFrm   = pEndPos->nNode.GetNode().
-		GetCntntNode()->getLayoutFrm( this, &rCrsr.GetEndPos(), pEndPos );
+        GetCntntNode()->getLayoutFrm( this, &rCrsr.GetEndPos(), pEndPos );
 
-	ASSERT( (pStartFrm && pEndFrm), "Keine CntntFrms gefunden." );
+    ASSERT( (pStartFrm && pEndFrm), "Keine CntntFrms gefunden." );
 
-	//Damit die FlyFrms, in denen selektierte Frames stecken, nicht
-	//abgezogen werden
+    //Damit die FlyFrms, in denen selektierte Frames stecken, nicht
+    //abgezogen werden
     SwSortedObjs aSortObjs;
-	if ( pStartFrm->IsInFly() )
-	{
+    if ( pStartFrm->IsInFly() )
+    {
         const SwAnchoredObject* pObj = pStartFrm->FindFlyFrm();
         aSortObjs.Insert( *(const_cast<SwAnchoredObject*>(pObj)) );
         const SwAnchoredObject* pObj2 = pEndFrm->FindFlyFrm();
-        aSortObjs.Insert( *(const_cast<SwAnchoredObject*>(pObj2)) );
-	}
+        ASSERT( pObj2 != NULL, "SwRootFrm::CalcFrmRects(..) - FlyFrame missing - looks like an invalid selection" );
+        if ( pObj2 != NULL && pObj2 != pObj )
+        {
+            aSortObjs.Insert( *(const_cast<SwAnchoredObject*>(pObj2)) );
+        }
+    }
 
-	//Fall 4: Tabellenselection
-	if( bIsTblMode )
-	{
-		const SwFrm *pCell = pStartFrm->GetUpper();
-		while ( !pCell->IsCellFrm() )
-			pCell = pCell->GetUpper();
-		SwRect aTmp( pCell->Prt() );
-		aTmp.Pos() += pCell->Frm().Pos();
-		aRegion.ChangeOrigin( aTmp );
-		aRegion.Remove( 0, aRegion.Count() );
-		aRegion.Insert( aTmp, 0 );
-	}
-	else
-	{
-		// falls eine nicht erlaubte Selection besteht, dann korrigiere das
-		// nicht erlaubt ist Header/Footer/TableHeadline ueber 2 Seiten
-		do {	// middle check loop
-			const SwLayoutFrm* pSttLFrm = pStartFrm->GetUpper();
-			const sal_uInt16 cHdFtTblHd = FRM_HEADER | FRM_FOOTER | FRM_TAB;
-			while( pSttLFrm &&
-				! (cHdFtTblHd & pSttLFrm->GetType() ))
-				pSttLFrm = pSttLFrm->GetUpper();
-			if( !pSttLFrm )
-				break;
-			const SwLayoutFrm* pEndLFrm = pEndFrm->GetUpper();
-			while( pEndLFrm &&
-				! (cHdFtTblHd & pEndLFrm->GetType() ))
-				pEndLFrm = pEndLFrm->GetUpper();
-			if( !pEndLFrm )
-				break;
+    //Fall 4: Tabellenselection
+    if( bIsTblMode )
+    {
+        const SwFrm *pCell = pStartFrm->GetUpper();
+        while ( !pCell->IsCellFrm() )
+            pCell = pCell->GetUpper();
+        SwRect aTmp( pCell->Prt() );
+        aTmp.Pos() += pCell->Frm().Pos();
+        aRegion.ChangeOrigin( aTmp );
+        aRegion.Remove( 0, aRegion.Count() );
+        aRegion.Insert( aTmp, 0 );
+    }
+    else
+    {
+        // falls eine nicht erlaubte Selection besteht, dann korrigiere das
+        // nicht erlaubt ist Header/Footer/TableHeadline ueber 2 Seiten
+        do {	// middle check loop
+            const SwLayoutFrm* pSttLFrm = pStartFrm->GetUpper();
+            const sal_uInt16 cHdFtTblHd = FRM_HEADER | FRM_FOOTER | FRM_TAB;
+            while( pSttLFrm &&
+                ! (cHdFtTblHd & pSttLFrm->GetType() ))
+                pSttLFrm = pSttLFrm->GetUpper();
+            if( !pSttLFrm )
+                break;
+            const SwLayoutFrm* pEndLFrm = pEndFrm->GetUpper();
+            while( pEndLFrm &&
+                ! (cHdFtTblHd & pEndLFrm->GetType() ))
+                pEndLFrm = pEndLFrm->GetUpper();
+            if( !pEndLFrm )
+                break;
 
-			ASSERT( pEndLFrm->GetType() == pSttLFrm->GetType(),
-					"Selection ueber unterschiedliche Inhalte" );
-			switch( pSttLFrm->GetType() )
-			{
-			case FRM_HEADER:
-			case FRM_FOOTER:
-				// auf unterschiedlichen Seiten ??
-				// dann immer auf die Start-Seite
-				if( pEndLFrm->FindPageFrm() != pSttLFrm->FindPageFrm() )
-				{
-					// End- auf den Start-CntntFrame setzen
-					if( pStartPos == rCrsr.GetPoint() )
-						pEndFrm = pStartFrm;
-					else
-						pStartFrm = pEndFrm;
-				}
-				break;
-			case FRM_TAB:
-				// auf unterschiedlichen Seiten ??
-				// existiert
-				// dann teste auf Tabelle-Headline
-				{
-					const SwTabFrm* pTabFrm = (SwTabFrm*)pSttLFrm;
-					if( ( pTabFrm->GetFollow() ||
-						  ((SwTabFrm*)pEndLFrm)->GetFollow() ) &&
+            ASSERT( pEndLFrm->GetType() == pSttLFrm->GetType(),
+                "Selection ueber unterschiedliche Inhalte" );
+            switch( pSttLFrm->GetType() )
+            {
+            case FRM_HEADER:
+            case FRM_FOOTER:
+                // auf unterschiedlichen Seiten ??
+                // dann immer auf die Start-Seite
+                if( pEndLFrm->FindPageFrm() != pSttLFrm->FindPageFrm() )
+                {
+                    // End- auf den Start-CntntFrame setzen
+                    if( pStartPos == rCrsr.GetPoint() )
+                        pEndFrm = pStartFrm;
+                    else
+                        pStartFrm = pEndFrm;
+                }
+                break;
+            case FRM_TAB:
+                // auf unterschiedlichen Seiten ??
+                // existiert
+                // dann teste auf Tabelle-Headline
+                {
+                    const SwTabFrm* pTabFrm = (SwTabFrm*)pSttLFrm;
+                    if( ( pTabFrm->GetFollow() ||
+                        ((SwTabFrm*)pEndLFrm)->GetFollow() ) &&
                         pTabFrm->GetTable()->GetRowsToRepeat() > 0 &&
-						pTabFrm->GetLower() != ((SwTabFrm*)pEndLFrm)->GetLower() &&
+                        pTabFrm->GetLower() != ((SwTabFrm*)pEndLFrm)->GetLower() &&
                         ( lcl_IsInRepeatedHeadline( pStartFrm ) ||
-                          lcl_IsInRepeatedHeadline( pEndFrm ) ) )
-					{
-						// End- auf den Start-CntntFrame setzen
-						if( pStartPos == rCrsr.GetPoint() )
-							pEndFrm = pStartFrm;
-						else
-							pStartFrm = pEndFrm;
-					}
-				}
-				break;
-			}
-		} while( sal_False );
+                        lcl_IsInRepeatedHeadline( pEndFrm ) ) )
+                    {
+                        // End- auf den Start-CntntFrame setzen
+                        if( pStartPos == rCrsr.GetPoint() )
+                            pEndFrm = pStartFrm;
+                        else
+                            pStartFrm = pEndFrm;
+                    }
+                }
+                break;
+            }
+        } while( sal_False );
 
-		SwCrsrMoveState aTmpState( MV_NONE );
-		aTmpState.b2Lines = sal_True;
+        SwCrsrMoveState aTmpState( MV_NONE );
+        aTmpState.b2Lines = sal_True;
         aTmpState.bNoScroll = sal_True;
         aTmpState.nCursorBidiLevel = pStartFrm->IsRightToLeft() ? 1 : 0;
 
         //CntntRects zu Start- und EndFrms.
-		SwRect aStRect, aEndRect;
-		pStartFrm->GetCharRect( aStRect, *pStartPos, &aTmpState );
-		Sw2LinesPos *pSt2Pos = aTmpState.p2Lines;
-		aTmpState.p2Lines = NULL;
+        SwRect aStRect, aEndRect;
+        pStartFrm->GetCharRect( aStRect, *pStartPos, &aTmpState );
+        Sw2LinesPos *pSt2Pos = aTmpState.p2Lines;
+        aTmpState.p2Lines = NULL;
         aTmpState.nCursorBidiLevel = pEndFrm->IsRightToLeft() ? 1 : 0;
 
         pEndFrm->GetCharRect  ( aEndRect, *pEndPos, &aTmpState );
-		Sw2LinesPos *pEnd2Pos = aTmpState.p2Lines;
+        Sw2LinesPos *pEnd2Pos = aTmpState.p2Lines;
 
-		SwRect aStFrm ( pStartFrm->UnionFrm( sal_True ) );
-		aStFrm.Intersection( pStartFrm->PaintArea() );
-		SwRect aEndFrm( pStartFrm == pEndFrm ? aStFrm :
-											   pEndFrm->UnionFrm( sal_True ) );
-		if( pStartFrm != pEndFrm )
-			aEndFrm.Intersection( pEndFrm->PaintArea() );
+        SwRect aStFrm ( pStartFrm->UnionFrm( sal_True ) );
+        aStFrm.Intersection( pStartFrm->PaintArea() );
+        SwRect aEndFrm( pStartFrm == pEndFrm ? aStFrm : pEndFrm->UnionFrm( sal_True ) );
+        if( pStartFrm != pEndFrm )
+        {
+            aEndFrm.Intersection( pEndFrm->PaintArea() );
+        }
         SWRECTFN( pStartFrm )
         const sal_Bool bR2L = pStartFrm->IsRightToLeft();
         const sal_Bool bEndR2L = pEndFrm->IsRightToLeft();
 
         // If there's no doubleline portion involved or start and end are both
-		// in the same doubleline portion, all works fine, but otherwise
-		// we need the following...
-		if( pSt2Pos != pEnd2Pos && ( !pSt2Pos || !pEnd2Pos ||
+        // in the same doubleline portion, all works fine, but otherwise
+        // we need the following...
+        if( pSt2Pos != pEnd2Pos && ( !pSt2Pos || !pEnd2Pos ||
             pSt2Pos->aPortion != pEnd2Pos->aPortion ) )
-		{
-			// If we have a start(end) position inside a doubleline portion
-			// the surrounded part of the doubleline portion is subtracted
-			// from the region and the aStRect(aEndRect) is set to the
-			// end(start) of the doubleline portion.
+        {
+            // If we have a start(end) position inside a doubleline portion
+            // the surrounded part of the doubleline portion is subtracted
+            // from the region and the aStRect(aEndRect) is set to the
+            // end(start) of the doubleline portion.
             if( pSt2Pos )
-			{
+            {
                 SwRect aTmp( aStRect );
 
                 // BiDi-Portions are swimming against the current.
                 const sal_Bool bPorR2L = ( MT_BIDI == pSt2Pos->nMultiType ) ?
-                                           ! bR2L :
-                                             bR2L;
+                    ! bR2L :
+                bR2L;
 
                 if( MT_BIDI == pSt2Pos->nMultiType &&
                     (pSt2Pos->aPortion2.*fnRect->fnGetWidth)() )
@@ -2214,7 +2203,7 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
                 }
 
                 aTmp.Intersection( aStFrm );
-				Sub( aRegion, aTmp );
+                Sub( aRegion, aTmp );
 
                 SwTwips nTmp = (pSt2Pos->aLine.*fnRect->fnGetBottom)();
                 if( MT_ROT_90 != pSt2Pos->nMultiType &&
@@ -2241,10 +2230,10 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
                         (pSt2Pos->aPortion.*fnRect->fnGetLeft)() :
                         (pSt2Pos->aPortion.*fnRect->fnGetRight)() );
                 (aStRect.*fnRect->fnSetWidth)( 1 );
-			}
+            }
 
             if( pEnd2Pos )
-			{
+            {
                 SWRECTFNX( pEndFrm )
                 SwRect aTmp( aEndRect );
 
@@ -2290,7 +2279,7 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
                 }
 
                 aTmp.Intersection( aEndFrm );
-				Sub( aRegion, aTmp );
+                Sub( aRegion, aTmp );
 
                 // The next statement means neither ruby nor rotate(90):
                 if( !( MT_RUBY & pEnd2Pos->nMultiType ) )
@@ -2321,8 +2310,8 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
                         (pEnd2Pos->aPortion.*fnRectX->fnGetRight)() :
                         (pEnd2Pos->aPortion.*fnRectX->fnGetLeft)() );
                 (aEndRect.*fnRectX->fnSetWidth)( 1 );
-			}
-		}
+            }
+        }
         else if( pSt2Pos && pEnd2Pos &&
                  MT_BIDI == pSt2Pos->nMultiType &&
                  MT_BIDI == pEnd2Pos->nMultiType &&
@@ -2367,38 +2356,38 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
             }
         }
 
-		// The charrect may be outside the paintarea (for cursortravelling)
-		// but the selection has to be restricted to the paintarea
-		if( aStRect.Left() < aStFrm.Left() )
-			aStRect.Left( aStFrm.Left() );
-		else if( aStRect.Left() > aStFrm.Right() )
-			aStRect.Left( aStFrm.Right() );
-		SwTwips nTmp = aStRect.Right();
-		if( nTmp < aStFrm.Left() )
-			aStRect.Right( aStFrm.Left() );
-		else if( nTmp > aStFrm.Right() )
-			aStRect.Right( aStFrm.Right() );
-		if( aEndRect.Left() < aEndFrm.Left() )
-			aEndRect.Left( aEndFrm.Left() );
-		else if( aEndRect.Left() > aEndFrm.Right() )
-			aEndRect.Left( aEndFrm.Right() );
-		nTmp = aEndRect.Right();
-		if( nTmp < aEndFrm.Left() )
-			aEndRect.Right( aEndFrm.Left() );
-		else if( nTmp > aEndFrm.Right() )
-			aEndRect.Right( aEndFrm.Right() );
+        // The charrect may be outside the paintarea (for cursortravelling)
+        // but the selection has to be restricted to the paintarea
+        if( aStRect.Left() < aStFrm.Left() )
+            aStRect.Left( aStFrm.Left() );
+        else if( aStRect.Left() > aStFrm.Right() )
+            aStRect.Left( aStFrm.Right() );
+        SwTwips nTmp = aStRect.Right();
+        if( nTmp < aStFrm.Left() )
+            aStRect.Right( aStFrm.Left() );
+        else if( nTmp > aStFrm.Right() )
+            aStRect.Right( aStFrm.Right() );
+        if( aEndRect.Left() < aEndFrm.Left() )
+            aEndRect.Left( aEndFrm.Left() );
+        else if( aEndRect.Left() > aEndFrm.Right() )
+            aEndRect.Left( aEndFrm.Right() );
+        nTmp = aEndRect.Right();
+        if( nTmp < aEndFrm.Left() )
+            aEndRect.Right( aEndFrm.Left() );
+        else if( nTmp > aEndFrm.Right() )
+            aEndRect.Right( aEndFrm.Right() );
 
-		if( pStartFrm == pEndFrm )
-		{
+        if( pStartFrm == pEndFrm )
+        {
             sal_Bool bSameRotatedOrBidi = pSt2Pos && pEnd2Pos &&
                 ( MT_BIDI & pSt2Pos->nMultiType ) &&
                 pSt2Pos->aPortion == pEnd2Pos->aPortion;
             //case 1: (Same frame and same row)
             if( bSameRotatedOrBidi ||
                 (aStRect.*fnRect->fnGetTop)() == (aEndRect.*fnRect->fnGetTop)() )
-			{
-				Point aTmpSt( aStRect.Pos() );
-				Point aTmpEnd( aEndRect.Right(), aEndRect.Bottom() );
+            {
+                Point aTmpSt( aStRect.Pos() );
+                Point aTmpEnd( aEndRect.Right(), aEndRect.Bottom() );
                 if( bSameRotatedOrBidi || bR2L )
                 {
                     if( aTmpSt.Y() > aTmpEnd.Y() )
@@ -2415,39 +2404,39 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
                     }
                 }
 
-				SwRect aTmp = SwRect( aTmpSt, aTmpEnd );
-				// Bug 34888: falls Inhalt selektiert ist, der keinen Platz
-				//			  einnimmt (z.B. PostIts,RefMarks, TOXMarks),
-				//			  dann mindestens die Breite des Crsr setzen.
+                SwRect aTmp = SwRect( aTmpSt, aTmpEnd );
+                // Bug 34888: falls Inhalt selektiert ist, der keinen Platz
+                //			  einnimmt (z.B. PostIts,RefMarks, TOXMarks),
+                //			  dann mindestens die Breite des Crsr setzen.
                 if( 1 == (aTmp.*fnRect->fnGetWidth)() &&
                     pStartPos->nContent.GetIndex() !=
                     pEndPos->nContent.GetIndex() )
-				{
-					OutputDevice* pOut = pSh->GetOut();
-					long nCrsrWidth = pOut->GetSettings().GetStyleSettings().
-										GetCursorSize();
+                {
+                    OutputDevice* pOut = pSh->GetOut();
+                    long nCrsrWidth = pOut->GetSettings().GetStyleSettings().
+                        GetCursorSize();
                     (aTmp.*fnRect->fnSetWidth)( pOut->PixelToLogic(
-                                              Size( nCrsrWidth, 0 ) ).Width() );
-				}
-				aTmp.Intersection( aStFrm );
-				Sub( aRegion, aTmp );
-			}
+                        Size( nCrsrWidth, 0 ) ).Width() );
+                }
+                aTmp.Intersection( aStFrm );
+                Sub( aRegion, aTmp );
+            }
             //case 2: (Same frame, but not the same line)
-			else
-			{
-				SwTwips lLeft, lRight;
-				if( pSt2Pos && pEnd2Pos && pSt2Pos->aPortion == pEnd2Pos->aPortion )
-				{
+            else
+            {
+                SwTwips lLeft, lRight;
+                if( pSt2Pos && pEnd2Pos && pSt2Pos->aPortion == pEnd2Pos->aPortion )
+                {
                     lLeft = (pSt2Pos->aPortion.*fnRect->fnGetLeft)();
                     lRight = (pSt2Pos->aPortion.*fnRect->fnGetRight)();
-				}
-				else
-				{
+                }
+                else
+                {
                     lLeft = (pStartFrm->Frm().*fnRect->fnGetLeft)() +
-                            (pStartFrm->Prt().*fnRect->fnGetLeft)();
+                        (pStartFrm->Prt().*fnRect->fnGetLeft)();
                     lRight = (pStartFrm->Frm().*fnRect->fnGetLeft)() +
-                             (pStartFrm->Prt().*fnRect->fnGetRight)();
-				}
+                        (pStartFrm->Prt().*fnRect->fnGetRight)();
+                }
                 if( lLeft < (aStFrm.*fnRect->fnGetLeft)() )
                     lLeft = (aStFrm.*fnRect->fnGetLeft)();
                 if( lRight > (aStFrm.*fnRect->fnGetRight)() )
@@ -2479,11 +2468,11 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
                 else
                     (aSubRect.*fnRect->fnSetLeft)( lLeft );
                 Sub( aRegion, aSubRect );
-			}
-		}
+            }
+        }
         //case 3: (Different frames, maybe with ohther frames between
-		else
-		{
+        else
+        {
             //The startframe first...
             SwRect aSubRect( aStRect );
             if( bR2L )
@@ -2500,69 +2489,63 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
             }
 
             //Now the frames between, if there are any
-			sal_Bool bBody = pStartFrm->IsInDocBody();
+            sal_Bool bBody = pStartFrm->IsInDocBody();
             const SwTableBox* pCellBox = pStartFrm->GetUpper()->IsCellFrm() ?
-                                         ((SwCellFrm*)pStartFrm->GetUpper())->GetTabBox() : 0;
+                ((SwCellFrm*)pStartFrm->GetUpper())->GetTabBox() : 0;
             const SwCntntFrm *pCntnt = pStartFrm->GetNextCntntFrm();
-			SwRect aPrvRect;
+            SwRect aPrvRect;
 
-            // --> OD 2006-01-24 #123908# - introduce robust code:
-            // The stacktrace issue reveals that <pCntnt> could be NULL.
-            // One root cause found by AMA - see #130650#
             ASSERT( pCntnt,
-                    "<SwRootFrm::CalcFrmRects(..)> - no content frame. This is a serious defect -> please inform OD" );
+                "<SwRootFrm::CalcFrmRects(..)> - no content frame. This is a serious defect -> please inform OD" );
             while ( pCntnt && pCntnt != pEndFrm )
-            // <--
             {
-				if ( pCntnt->IsInFly() )
-				{
+                if ( pCntnt->IsInFly() )
+                {
                     const SwAnchoredObject* pObj = pCntnt->FindFlyFrm();
                     aSortObjs.Insert( *(const_cast<SwAnchoredObject*>(pObj)) );
-				}
+                }
 
-				// Consider only frames which have the same IsInDocBody value like pStartFrm
+                // Consider only frames which have the same IsInDocBody value like pStartFrm
                 // If pStartFrm is inside a SwCellFrm, consider only frames which are inside the
                 // same cell frame (or its follow cell)
                 const SwTableBox* pTmpCellBox = pCntnt->GetUpper()->IsCellFrm() ?
-                                                ((SwCellFrm*)pCntnt->GetUpper())->GetTabBox() : 0;
+                    ((SwCellFrm*)pCntnt->GetUpper())->GetTabBox() : 0;
                 if ( bBody == pCntnt->IsInDocBody() &&
                     ( !pCellBox || pCellBox == pTmpCellBox ) )
                 {
-					SwRect aCRect( pCntnt->UnionFrm( sal_True ) );
-					aCRect.Intersection( pCntnt->PaintArea() );
-					if( aCRect.IsOver( aRegion.GetOrigin() ))
-					{
-						SwRect aTmp( aPrvRect );
-						aTmp.Union( aCRect );
-						if ( (aPrvRect.Height() * aPrvRect.Width() +
-							aCRect.Height()   * aCRect.Width()) ==
-							(aTmp.Height() * aTmp.Width()) )
-						{
-							aPrvRect.Union( aCRect );
-						}
-						else
-						{
-							if ( aPrvRect.HasArea() )
-								Sub( aRegion, aPrvRect );
-							aPrvRect = aCRect;
-						}
-					}
-				}
-				pCntnt = pCntnt->GetNextCntntFrm();
-                // --> OD 2006-01-24 #123908#
+                    SwRect aCRect( pCntnt->UnionFrm( sal_True ) );
+                    aCRect.Intersection( pCntnt->PaintArea() );
+                    if( aCRect.IsOver( aRegion.GetOrigin() ))
+                    {
+                        SwRect aTmp( aPrvRect );
+                        aTmp.Union( aCRect );
+                        if ( (aPrvRect.Height() * aPrvRect.Width() +
+                            aCRect.Height()   * aCRect.Width()) ==
+                            (aTmp.Height() * aTmp.Width()) )
+                        {
+                            aPrvRect.Union( aCRect );
+                        }
+                        else
+                        {
+                            if ( aPrvRect.HasArea() )
+                                Sub( aRegion, aPrvRect );
+                            aPrvRect = aCRect;
+                        }
+                    }
+                }
+                pCntnt = pCntnt->GetNextCntntFrm();
                 ASSERT( pCntnt,
-                        "<SwRootFrm::CalcFrmRects(..)> - no content frame. This is a serious defect -> please inform OD" );
-                // <--
-			}
-			if ( aPrvRect.HasArea() )
-				Sub( aRegion, aPrvRect );
+                    "<SwRootFrm::CalcFrmRects(..)> - no content frame. This is a serious defect -> please inform OD" );
+            }
+            if ( aPrvRect.HasArea() )
+                Sub( aRegion, aPrvRect );
 
             //At least the endframe...
             bVert = pEndFrm->IsVertical();
             bRev = pEndFrm->IsReverse();
             //Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
             fnRect = bVert ? ( bRev ? fnRectVL2R : ( pEndFrm->IsVertLR() ? fnRectVertL2R : fnRectVert ) ) :
-                             ( bRev ? fnRectB2T : fnRectHori );
+                ( bRev ? fnRectB2T : fnRectHori );
             nTmpTwips = (aEndRect.*fnRect->fnGetTop)();
             if( (aEndFrm.*fnRect->fnGetTop)() != nTmpTwips )
             {
@@ -2576,82 +2559,86 @@ void SwRootFrm::CalcFrmRects( SwShellCrsr &rCrsr, sal_Bool bIsTblMode )
             else
                 (aSubRect.*fnRect->fnSetLeft)( (aEndFrm.*fnRect->fnGetLeft)() );
             Sub( aRegion, aSubRect );
-		}
+        }
 
-//		aRegion.Compress( sal_False );
-		aRegion.Invert();
-		delete pSt2Pos;
-		delete pEnd2Pos;
-	}
+        aRegion.Invert();
+        delete pSt2Pos;
+        delete pEnd2Pos;
+    }
 
-	//Flys mit Durchlauf ausstanzen. Nicht ausgestanzt werden Flys:
-	//- die Lower des StartFrm/EndFrm sind (FlyInCnt und alle Flys die wiederum
-	//	darin sitzen)
-	//- in der Z-Order ueber denjenigen Flys stehen in denen sich der StartFrm
-	//	befindet.
-	const SwPageFrm *pPage		= pStartFrm->FindPageFrm();
-	const SwPageFrm *pEndPage	= pEndFrm->FindPageFrm();
+    //Flys mit Durchlauf ausstanzen. Nicht ausgestanzt werden Flys:
+    //- die Lower des StartFrm/EndFrm sind (FlyInCnt und alle Flys die wiederum
+    //	darin sitzen)
+    //- in der Z-Order ueber denjenigen Flys stehen in denen sich der StartFrm
+    //	befindet.
+    const SwPageFrm *pPage		= pStartFrm->FindPageFrm();
+    const SwPageFrm *pEndPage	= pEndFrm->FindPageFrm();
 
     while ( pPage )
-	{
-		if ( pPage->GetSortedObjs() )
-		{
+    {
+        if ( pPage->GetSortedObjs() )
+        {
             const SwSortedObjs &rObjs = *pPage->GetSortedObjs();
-			for ( sal_uInt16 i = 0; i < rObjs.Count(); ++i )
-			{
+            for ( sal_uInt16 i = 0; i < rObjs.Count(); ++i )
+            {
                 SwAnchoredObject* pAnchoredObj = rObjs[i];
                 if ( !pAnchoredObj->ISA(SwFlyFrm) )
-					continue;
+                    continue;
                 const SwFlyFrm* pFly = static_cast<const SwFlyFrm*>(pAnchoredObj);
                 const SwVirtFlyDrawObj* pObj = pFly->GetVirtDrawObj();
-				const SwFmtSurround &rSur = pFly->GetFmt()->GetSurround();
-				if ( !pFly->IsAnLower( pStartFrm ) &&
-					 (rSur.GetSurround() != SURROUND_THROUGHT &&
-					  !rSur.IsContour()) )
-				{
+                const SwFmtSurround &rSur = pFly->GetFmt()->GetSurround();
+                if ( !pFly->IsAnLower( pStartFrm ) &&
+                    (rSur.GetSurround() != SURROUND_THROUGHT &&
+                    !rSur.IsContour()) )
+                {
                     if ( aSortObjs.Contains( *pAnchoredObj ) )
-						continue;
+                        continue;
 
-					sal_Bool bSub = sal_True;
-					const sal_uInt32 nPos = pObj->GetOrdNum();
-					for ( sal_uInt16 k = 0; bSub && k < aSortObjs.Count(); ++k )
-					{
+                    sal_Bool bSub = sal_True;
+                    const sal_uInt32 nPos = pObj->GetOrdNum();
+                    for ( sal_uInt16 k = 0; bSub && k < aSortObjs.Count(); ++k )
+                    {
                         ASSERT( aSortObjs[k]->ISA(SwFlyFrm),
-                                "<SwRootFrm::CalcFrmRects(..)> - object in <aSortObjs> of unexcepted type" );
+                            "<SwRootFrm::CalcFrmRects(..)> - object in <aSortObjs> of unexcepted type" );
                         const SwFlyFrm* pTmp = static_cast<SwFlyFrm*>(aSortObjs[k]);
-						do
-						{	if ( nPos < pTmp->GetVirtDrawObj()->GetOrdNumDirect() )
-								bSub = sal_False;
-							else
+                        do
+                        {
+                            if ( nPos < pTmp->GetVirtDrawObj()->GetOrdNumDirect() )
+                            {
+                                bSub = sal_False;
+                            }
+                            else
+                            {
                                 pTmp = pTmp->GetAnchorFrm()->FindFlyFrm();
-						} while ( bSub && pTmp );
-					}
-					if ( bSub )
-						Sub( aRegion, pFly->Frm() );
-				}
-			}
-		}
-		if ( pPage == pEndPage )
-			break;
-		else
-			pPage = (SwPageFrm*)pPage->GetNext();
-	}
+                            }
+                        } while ( bSub && pTmp );
+                    }
+                    if ( bSub )
+                        Sub( aRegion, pFly->Frm() );
+                }
+            }
+        }
+        if ( pPage == pEndPage )
+            break;
+        else
+            pPage = (SwPageFrm*)pPage->GetNext();
+    }
 
-	//Weil's besser aussieht noch die DropCaps ausschliessen.
-	SwRect aDropRect;
-	if ( pStartFrm->IsTxtFrm() )
-	{
-		if ( ((SwTxtFrm*)pStartFrm)->GetDropRect( aDropRect ) )
-			Sub( aRegion, aDropRect );
-	}
-	if ( pEndFrm != pStartFrm && pEndFrm->IsTxtFrm() )
-	{
-		if ( ((SwTxtFrm*)pEndFrm)->GetDropRect( aDropRect ) )
-			Sub( aRegion, aDropRect );
-	}
+    //Weil's besser aussieht noch die DropCaps ausschliessen.
+    SwRect aDropRect;
+    if ( pStartFrm->IsTxtFrm() )
+    {
+        if ( ((SwTxtFrm*)pStartFrm)->GetDropRect( aDropRect ) )
+            Sub( aRegion, aDropRect );
+    }
+    if ( pEndFrm != pStartFrm && pEndFrm->IsTxtFrm() )
+    {
+        if ( ((SwTxtFrm*)pEndFrm)->GetDropRect( aDropRect ) )
+            Sub( aRegion, aDropRect );
+    }
 
-	rCrsr.Remove( 0, rCrsr.Count() );
-	rCrsr.Insert( &aRegion, 0 );
+    rCrsr.Remove( 0, rCrsr.Count() );
+    rCrsr.Insert( &aRegion, 0 );
 }
 
 

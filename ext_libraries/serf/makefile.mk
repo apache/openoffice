@@ -44,7 +44,7 @@ LIBSERFVERSION=$(SERF_MAJOR).$(SERF_MINOR).$(SERF_MICRO)
 TARFILE_NAME=$(PRJNAME)-$(LIBSERFVERSION)
 # This is the SHA1 checksum, not MD5 but tg_ext.mk does not now about this and,
 # thankfully, does not care.
-TARFILE_MD5=30b29bd9214d50887abcc20cf82096aaaf5d1d61
+TARFILE_MD5=f65fbbd72926c8e7cf0dbd4ada03b0d226f461fd
 
 PATCH_FILES=
 

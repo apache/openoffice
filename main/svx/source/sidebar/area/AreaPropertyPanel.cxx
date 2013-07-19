@@ -25,6 +25,7 @@
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include <sfx2/sidebar/Theme.hxx>
 #include <sfx2/sidebar/ControlFactory.hxx>
+#include <sfx2/sidebar/Layouter.hxx>
 #include <AreaPropertyPanel.hxx>
 #include <AreaPropertyPanel.hrc>
 #include <svx/dialogs.hrc>
@@ -47,6 +48,7 @@
 
 using namespace css;
 using namespace cssu;
+using ::sfx2::sidebar::Layouter;
 using ::sfx2::sidebar::Theme;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
@@ -130,10 +132,41 @@ AreaPropertyPanel::AreaPropertyPanel(
       mpTransparanceItem(),
       mxFrame(rxFrame),
       mpBindings(pBindings),
-      mbColorAvail(true)
+      mbColorAvail(true),
+      maLayouter(*this)
 {
     Initialize();
     FreeResource();
+
+    // Setup the grid layouter.
+    const sal_Int32 nMappedMboxWidth (Layouter::MapWidth(*this, MBOX_WIDTH));
+        
+    maLayouter.GetCell(0,0).SetControl(*mpColorTextFT).SetGridWidth(3);
+    maLayouter.GetCell(1,0).SetControl(*mpLbFillType);
+    maLayouter.GetCell(1,2,0).SetControl(*mpToolBoxColorBackground).SetFixedWidth();
+    maLayouter.GetCell(1,2,1).SetControl(*mpLbFillAttr);
+
+    maLayouter.GetCell(2,0).SetControl(*mpTrspTextFT).SetGridWidth(3);
+    maLayouter.GetCell(3,0).SetControl(*mpLBTransType);
+    maLayouter.GetCell(3,2,0).SetControl(*mpMTRTransparent);
+    maLayouter.GetCell(3,2,1).SetControl(*mpBTNGradient);
+
+    maLayouter.GetColumn(0)
+        .SetWeight(1)
+        .SetLeftPadding(Layouter::MapWidth(*this,SECTIONPAGE_MARGIN_HORIZONTAL))
+        .SetMinimumWidth(nMappedMboxWidth);
+    maLayouter.GetColumn(1)
+        .SetWeight(0)
+        .SetMinimumWidth(Layouter::MapWidth(*this, CONTROL_SPACING_HORIZONTAL));
+    maLayouter.GetColumn(2)
+        .SetWeight(1)
+        .SetMinimumWidth(nMappedMboxWidth)
+        .SetRightPadding(Layouter::MapWidth(*this,SECTIONPAGE_MARGIN_HORIZONTAL));
+
+    // Make controls that display text handle short widths more
+    // graceful.
+    Layouter::PrepareForLayouting(*mpColorTextFT);
+    Layouter::PrepareForLayouting(*mpTrspTextFT);
 }
 
 
@@ -282,8 +315,11 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
         mpLbFillAttr->Clear();
         SfxObjectShell* pSh = SfxObjectShell::Current();
         const XFillStyleItem aXFillStyleItem(eXFS);
-        GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_STYLE, SFX_CALLMODE_RECORD, &aXFillStyleItem, 0L); 
 
+        // #122676# Do no longer trigger two Execute calls, one for SID_ATTR_FILL_STYLE
+        // and one for setting the fill attribute itself, but add two SfxPoolItems to the
+        // call to get just one action at the SdrObject and to create only one Undo action, too.
+        // Checked that this works in all apps.
         switch( eXFS )
         {
             case XFILL_NONE:
@@ -292,6 +328,10 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
                 mpToolBoxColor->Hide();
                 mpLbFillType->Selected();
                 mpLbFillAttr->Disable();
+                
+                // #122676# need to call a single SID_ATTR_FILL_STYLE change
+                GetBindings()->GetDispatcher()->Execute(
+                    SID_ATTR_FILL_STYLE, SFX_CALLMODE_RECORD, &aXFillStyleItem, 0L); 
                 break;
             }
             case XFILL_SOLID:
@@ -301,7 +341,10 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
                 const String aTmpStr;
                 const Color aColor = maLastColor;
                 const XFillColorItem aXFillColorItem( aTmpStr, aColor );
-                GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_COLOR, SFX_CALLMODE_RECORD, &aXFillColorItem, 0L);
+
+                // #122676# change FillStyle and Color in one call
+                GetBindings()->GetDispatcher()->Execute(
+                    SID_ATTR_FILL_COLOR, SFX_CALLMODE_RECORD, &aXFillColorItem, &aXFillStyleItem, 0L);
                 break;
             }
             case XFILL_GRADIENT:
@@ -329,7 +372,10 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
                         {
                             const XGradient aGradient = aItem.GetGradientList()->GetGradient(mnLastPosGradient)->GetGradient();
                             const XFillGradientItem aXFillGradientItem(mpLbFillAttr->GetEntry(mnLastPosGradient), aGradient);
-                            GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_GRADIENT, SFX_CALLMODE_RECORD, &aXFillGradientItem, 0L);
+
+                            // #122676# change FillStyle and Gradient in one call
+                            GetBindings()->GetDispatcher()->Execute(
+                                SID_ATTR_FILL_GRADIENT, SFX_CALLMODE_RECORD, &aXFillGradientItem, &aXFillStyleItem, 0L);
                             mpLbFillAttr->SelectEntryPos(mnLastPosGradient);
                         }
                     }
@@ -365,7 +411,10 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
                         {
                             const XHatch aHatch = aItem.GetHatchList()->GetHatch(mnLastPosHatch)->GetHatch();
                             const XFillHatchItem aXFillHatchItem(mpLbFillAttr->GetSelectEntry(), aHatch);
-                            GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_HATCH, SFX_CALLMODE_RECORD, &aXFillHatchItem, 0L);
+
+                            // #122676# change FillStyle and Hatch in one call
+                            GetBindings()->GetDispatcher()->Execute(
+                                SID_ATTR_FILL_HATCH, SFX_CALLMODE_RECORD, &aXFillHatchItem, &aXFillStyleItem, 0L);
                             mpLbFillAttr->SelectEntryPos(mnLastPosHatch);
                         }
                     }
@@ -401,7 +450,10 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
                         {
                             const XBitmapEntry* pXBitmapEntry = aItem.GetBitmapList()->GetBitmap(mnLastPosBitmap);
                             const XFillBitmapItem aXFillBitmapItem(mpLbFillAttr->GetSelectEntry(), pXBitmapEntry->GetGraphicObject());
-                            GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_BITMAP, SFX_CALLMODE_RECORD, &aXFillBitmapItem, 0L);
+
+                            // #122676# change FillStyle and Bitmap in one call
+                            GetBindings()->GetDispatcher()->Execute(
+                                SID_ATTR_FILL_BITMAP, SFX_CALLMODE_RECORD, &aXFillBitmapItem, &aXFillStyleItem, 0L);
                             mpLbFillAttr->SelectEntryPos(mnLastPosBitmap);
                         }
                     }
@@ -423,6 +475,8 @@ IMPL_LINK( AreaPropertyPanel, SelectFillTypeHdl, ListBox *, pToolBox )
                 mpLbFillType->Selected();
             }
         }
+
+        maLayouter.Layout();
     }
 
     return 0;
@@ -438,26 +492,21 @@ IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pToolBox )
 
     if(pToolBox)
     {
-        if((XFillStyle) meLastXFS != eXFS)
-        {
-            GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_STYLE, SFX_CALLMODE_RECORD, &aXFillStyleItem, 0L);
-        }
+        // #122676# dependent from bFillStyleChange, do execute a single or two
+        // changes in one Execute call
+        const bool bFillStyleChange((XFillStyle) meLastXFS != eXFS);
 
         switch(eXFS)
         {
             case XFILL_SOLID:
-            //{
-            //	//String aTmpStr = mpLbFillAttr->GetSelectEntry();
-            //	//Color aColor = mpLbFillAttr->GetSelectEntryColor();
-            //	//if(aColor.GetColor() == 0 && aTmpStr.Equals(String::CreateFromAscii("")))
-            //	String aTmpStr;
-            //	Color aColor = maLastColor;
-            //	XFillColorItem aXFillColorItem( aTmpStr, aColor );
-            //	GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_COLOR, SFX_CALLMODE_RECORD, &aXFillColorItem, 0L);
-            //	maLastColor = aColor;
-            //}
-            break;
-
+            {
+                if(bFillStyleChange)
+                {
+                    // #122676# Single FillStyle change call needed here
+                    GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_STYLE, SFX_CALLMODE_RECORD, &aXFillStyleItem, 0L);
+                }
+                break;
+            }
             case XFILL_GRADIENT:
             {
                 sal_uInt16 nPos = mpLbFillAttr->GetSelectEntryPos();
@@ -475,7 +524,11 @@ IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pToolBox )
                     {
                         const XGradient aGradient = aItem.GetGradientList()->GetGradient(nPos)->GetGradient();
                         const XFillGradientItem aXFillGradientItem(mpLbFillAttr->GetSelectEntry(), aGradient);
-                        GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_GRADIENT, SFX_CALLMODE_RECORD, &aXFillGradientItem, 0L);
+
+                        // #122676# Change FillStale and Gradinet in one call
+                        GetBindings()->GetDispatcher()->Execute(
+                            SID_ATTR_FILL_GRADIENT, SFX_CALLMODE_RECORD, &aXFillGradientItem, 
+                            bFillStyleChange ? &aXFillStyleItem : 0L, 0L);
                     }
                 }
 
@@ -502,7 +555,11 @@ IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pToolBox )
                     {
                         const XHatch aHatch = aItem.GetHatchList()->GetHatch(nPos)->GetHatch();
                         const XFillHatchItem aXFillHatchItem( mpLbFillAttr->GetSelectEntry(), aHatch);
-                        GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_HATCH, SFX_CALLMODE_RECORD, &aXFillHatchItem, 0L);
+
+                        // #122676# Change FillStale and Hatch in one call
+                        GetBindings()->GetDispatcher()->Execute(
+                            SID_ATTR_FILL_HATCH, SFX_CALLMODE_RECORD, &aXFillHatchItem, 
+                            bFillStyleChange ? &aXFillStyleItem : 0L, 0L);
                     }
                 }
 
@@ -529,7 +586,11 @@ IMPL_LINK( AreaPropertyPanel, SelectFillAttrHdl, ListBox*, pToolBox )
                     {
                         const XBitmapEntry* pXBitmapEntry = aItem.GetBitmapList()->GetBitmap(nPos);
                         const XFillBitmapItem aXFillBitmapItem(mpLbFillAttr->GetSelectEntry(), pXBitmapEntry->GetGraphicObject());
-                        GetBindings()->GetDispatcher()->Execute(SID_ATTR_FILL_BITMAP, SFX_CALLMODE_RECORD, &aXFillBitmapItem, 0L);
+
+                        // #122676# Change FillStale and Bitmap in one call
+                        GetBindings()->GetDispatcher()->Execute(
+                            SID_ATTR_FILL_BITMAP, SFX_CALLMODE_RECORD, &aXFillBitmapItem, 
+                            bFillStyleChange ? &aXFillStyleItem : 0L, 0L);
                     }
                 }
 
@@ -667,6 +728,7 @@ void AreaPropertyPanel::ImpUpdateTransparencies()
             else if(nValue <= 100)
             {
                 mpLBTransType->Enable();
+                mpTrspTextFT->Enable();
                 mpLBTransType->SelectEntryPos(1);
                 mpBTNGradient->Hide();
                 mpMTRTransparent->Show();
@@ -690,6 +752,7 @@ void AreaPropertyPanel::ImpUpdateTransparencies()
                 Image* pImage = 0;
 
                 mpLBTransType->Enable();
+                mpTrspTextFT->Enable();
                 mpMTRTransparent->Hide();
                 mpBTNGradient->Enable();
                 mpBTNGradient->Show();
@@ -747,6 +810,7 @@ void AreaPropertyPanel::ImpUpdateTransparencies()
         if(bZeroValue)
         {
             mpLBTransType->Enable();
+            mpTrspTextFT->Enable();
             mpLBTransType->SelectEntryPos(0);
             mpBTNGradient->Hide();
             mpMTRTransparent->Enable();
@@ -758,6 +822,8 @@ void AreaPropertyPanel::ImpUpdateTransparencies()
     {
         // no transparency at all
         mpLBTransType->SetNoSelection();
+        mpLBTransType->Disable();
+        mpTrspTextFT->Disable();
         mpMTRTransparent->Disable();
         mpMTRTransparent->Show();
         mpBTNGradient->Disable();
@@ -840,6 +906,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
             if(bDisabled)
             {
                 mpLbFillType->Disable(); 
+                mpColorTextFT->Disable(); 
                 mpLbFillType->SetNoSelection();
                 mpLbFillAttr->Show();
                 mpLbFillAttr->Disable();
@@ -857,6 +924,7 @@ void AreaPropertyPanel::NotifyItemUpdate(
                 {
                     mpStyleItem.reset(dynamic_cast< XFillStyleItem* >(pItem->Clone()));
                     mpLbFillType->Enable();
+                    mpColorTextFT->Enable();
                     XFillStyle eXFS = (XFillStyle)mpStyleItem->GetValue();
                     meLastXFS = eXFS;
                     mpLbFillType->SelectEntryPos(sal::static_int_cast< sal_uInt16 >(eXFS));
@@ -1102,6 +1170,8 @@ void AreaPropertyPanel::NotifyItemUpdate(
             break;
         }
     }
+
+    maLayouter.Layout();
 }
 
 
@@ -1431,6 +1501,16 @@ sal_Int32 AreaPropertyPanel::GetSelectedTransparencyTypeIndex (void) const
 {
     return mpLBTransType->GetSelectEntryPos();
 }
+
+
+
+
+void AreaPropertyPanel::Resize (void)
+{
+    maLayouter.Layout();
+}
+
+
 
 } } // end of namespace svx::sidebar
 

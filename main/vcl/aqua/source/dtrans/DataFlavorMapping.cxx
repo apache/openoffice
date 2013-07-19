@@ -549,9 +549,10 @@ DataFlavor DataFlavorMapper::systemToOpenOfficeFlavor( const NSString* systemDat
 	return oOOFlavor;
 }
 
-const NSString* DataFlavorMapper::openOfficeToSystemFlavor( const DataFlavor& oOOFlavor) const
+const NSString* DataFlavorMapper::openOfficeToSystemFlavor( const DataFlavor& oOOFlavor, bool& rbInternal) const
 {
     const NSString* sysFlavor = NULL;
+    rbInternal = false;
     
 	for( size_t i = 0; i < SIZE_FLAVOR_MAP; ++i )
 	{
@@ -561,18 +562,17 @@ const NSString* DataFlavorMapper::openOfficeToSystemFlavor( const DataFlavor& oO
 		}
 	}
 
-        return sysFlavor;
-}
-        
-NSString* DataFlavorMapper::internalOpenOfficeToSystemFlavor(const DataFlavor& oOOFlavor) const
-{
-    NSString* sysFlavor = NULL;
-    OfficeOnlyTypes::const_iterator it = maOfficeOnlyTypes.find( oOOFlavor.MimeType );
-    if( it == maOfficeOnlyTypes.end() )
-        sysFlavor = maOfficeOnlyTypes[ oOOFlavor.MimeType ] = OUStringToNSString( oOOFlavor.MimeType );
-    else
-        sysFlavor = it->second;
-	
+    if(!sysFlavor)
+    {
+        rbInternal = true;
+        OfficeOnlyTypes::const_iterator it = maOfficeOnlyTypes.find( oOOFlavor.MimeType );
+
+        if( it == maOfficeOnlyTypes.end() )
+            sysFlavor = maOfficeOnlyTypes[ oOOFlavor.MimeType ] = OUStringToNSString( oOOFlavor.MimeType );
+        else
+            sysFlavor = it->second;
+    }
+
     return sysFlavor;
 }
 
@@ -709,7 +709,7 @@ NSArray* DataFlavorMapper::flavorSequenceToTypesArray(const com::sun::star::uno:
   sal_uInt32 nFlavors = flavors.getLength();
   NSMutableArray* array = [[NSMutableArray alloc] initWithCapacity: 1];
 
-  bool bNeedDummyInternalFlavor (true);
+  bool bNeedDummyInternalFlavor(false);
   
   for (sal_uInt32 i = 0; i < nFlavors; i++)
   {
@@ -720,11 +720,7 @@ NSArray* DataFlavorMapper::flavorSequenceToTypesArray(const com::sun::star::uno:
       }
       else
       {
-          const NSString* str = openOfficeToSystemFlavor(flavors[i]);
-          if (str == NULL)
-              str = internalOpenOfficeToSystemFlavor(flavors[i]);
-          else
-              bNeedDummyInternalFlavor = false;
+          const NSString* str = openOfficeToSystemFlavor(flavors[i], bNeedDummyInternalFlavor);
           
           if (str != NULL)
           {
